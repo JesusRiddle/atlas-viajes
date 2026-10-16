@@ -1,0 +1,1 @@
+Descomprime todo y abre index.html. Edita textos e itinerarios en data.js; estilos en style.css; estructura en app.js. Las fotos están en photos/. Los mapas requieren Internet. Puedes usar VS Code con Live Server. Los cambios locales no actualizan la URL publicada: devuelve el proyecto editado para publicarlo en el mismo sitio.
