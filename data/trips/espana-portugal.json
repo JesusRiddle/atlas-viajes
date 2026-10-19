@@ -843,5 +843,7 @@
     "passeig-gracia": "Gran avenida del Eixample donde se concentran edificios modernistas, entre ellos varias obras de Gaudí. Sus fachadas convierten el paseo en una visita arquitectónica.",
     "batllo": "Una casa de Gaudí que convierte fachada, escaleras y azotea en un universo orgánico. El interior merece una visita pausada.",
     "dali-figueres": "El antiguo teatro de Figueres convertido en el universo de Salvador Dalí: una visita dedicada a su imaginación y a su obra."
-  }
+  },
+  "formatName": true,
+  "layoutClass": "trip-espana-portugal"
 }
