@@ -304,7 +304,7 @@
     {
       "n": 1,
       "date": "2026-11-26",
-      "title": "Vuelo CDMX a Milano: Salida de CDMX (AICM) → Escala en Madrid-Barajas (MAD) → Llegada a Milano Malpensa (MXP)",
+      "title": "Vuelo CDMX a Milano: Aeropuerto de CDMX (AICM) → Escala en Madrid-Barajas (MAD) → Llegada a Milano Malpensa (MXP)",
       "base": "En vuelo / Malpensa",
       "headerPlaces": [
         "MEX",
@@ -328,8 +328,7 @@
           "label": "Autobús gratuito T1–T2",
           "url": "https://www.milanomalpensa-airport.com/en/from-to/connections-with-terminals"
         }
-      ],
-      "fullTitle": "*Vuelo CDMX a Milano:* Aeropuerto de *CDMX (AICM)* → Escala en *Madrid-Barajas (MAD)* → Llegada a *Milano Malpensa (MXP)*"
+      ]
     },
     {
       "n": 2,
