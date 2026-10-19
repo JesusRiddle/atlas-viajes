@@ -429,7 +429,63 @@
   ],
   "family": {
     "label": "Suiza ferroviaria · invierno 2026",
-    "note": "Glacier Express + Bernina hacia Italia",
-    "other": "suiza"
+    "note": "Glacier Express + Bernina hacia Italia"
+  },
+  "comparison": {
+    "group": "suiza",
+    "title": "Dos maneras de conocer los Alpes",
+    "intro": "Dos itinerarios independientes con estaciones, actividades y presupuestos distintos.",
+    "experience": "Glacier Express, Bernina, Engadina y Milán",
+    "trains": "Trenes panorámicos y conexión a Italia",
+    "conditions": "Invierno, días cortos y mayor protagonismo del transporte",
+    "airports": "MEX → ZRH / MXP → MEX",
+    "vacation": "Saldo de 2026"
+  },
+  "railAppendix": {
+    "title": "Horarios: qué está publicado y qué falta cerrar",
+    "headers": [
+      "Tramo y fecha",
+      "Horario de referencia",
+      "Estado al 2 oct 2026"
+    ],
+    "rows": [
+      [
+        "Glacier · 12 dic",
+        "PE 920 Zermatt 07:50 → St. Moritz 15:37. Alternativa PE 902: 08:50 → 16:37.",
+        "Horario oficial de invierno publicado. Asiento pendiente; reservas de diciembre desde mediados de octubre."
+      ],
+      [
+        "Conexión · 14 dic",
+        "St. Moritz → Pontresina en tren local; llegar antes de 09:55.",
+        "09:55 es objetivo de margen, no un tren confirmado. Elegir servicio local al reservar."
+      ],
+      [
+        "Bernina · 14 dic",
+        "951 Pontresina 10:25 → Tirano 12:49.",
+        "Horario oficial 2027 válido desde 13 dic. Reservas anunciadas para 13 oct. El directo de St. Moritz 16:14 → 18:39 aprovecha menos luz."
+      ],
+      [
+        "Tirano → Milán · 14 dic",
+        "Unas 2½ horas. Ejemplo actual: 14:08 → aproximadamente 16:40.",
+        "El ejemplo no confirma conexión en diciembre: cambia el horario el 13 dic. Dejar 60–90 min entre trenes."
+      ],
+      [
+        "Vuelos · 5 y 16 dic",
+        "MEX → ZRH / MXP → MEX con conexiones europeas.",
+        "Pendiente de cotización. No se presenta oferta ni salida confirmada."
+      ]
+    ],
+    "priceTitle": "Tarifas útiles para cotizar",
+    "prices": [
+      [
+        "Glacier Express",
+        "CHF 159 segunda clase + CHF 54 de asiento = CHF 213 como referencia. Confirmar precio de invierno. Con pase válido sigue siendo necesaria la reserva del asiento."
+      ],
+      [
+        "Bernina y tramo italiano",
+        "Referencia RhB vigente hasta 12 dic: St. Moritz–Tirano CHF 33 y suplemento CHF 40 del servicio 951. Trenord €12.50 y Malpensa Express €15; confirmar tarifas."
+      ]
+    ],
+    "note": "Referencias orientativas incluidas en los cálculos de transporte. No sumarlas otra vez. Tarifas y horarios pueden cambiar."
   }
 }

@@ -499,8 +499,17 @@
   ],
   "family": {
     "label": "Suiza a pie · temporada cálida 2027",
-    "note": "Valles, pueblos y lagos · trenes entre bases",
-    "other": "suiza-italia"
+    "note": "Valles, pueblos y lagos · trenes entre bases"
   },
-  "sourceNote": "Suiza de postal: revisión del 4 de octubre de 2026 para septiembre de 2027. Presupuesto orientativo y servicios de 2027 pendientes de confirmación salvo calendario citado."
+  "sourceNote": "Suiza de postal: revisión del 4 de octubre de 2026 para septiembre de 2027. Presupuesto orientativo y servicios de 2027 pendientes de confirmación salvo calendario citado.",
+  "comparison": {
+    "group": "suiza",
+    "title": "Dos maneras de conocer los Alpes",
+    "intro": "Dos itinerarios independientes con estaciones, actividades y presupuestos distintos.",
+    "experience": "First Cliff Walk, valles, pueblos y lagos; Gornergrat",
+    "trains": "Traslados entre bases, Luzern–Interlaken Express y Gornergrat",
+    "conditions": "Temporada cálida, caminatas recortables y días de margen",
+    "airports": "MEX → ZRH / ZRH → MEX",
+    "vacation": "Saldo de 2027"
+  }
 }
