@@ -1,0 +1,190 @@
+{
+  "id": "san-antonio",
+  "name": "San Antonio",
+  "flag": "🇺🇸",
+  "start": "2026-12-03",
+  "end": "2026-12-07",
+  "tag": "Cinco días bien aprovechados",
+  "intro": "Cuatro noches para recorrer el River Walk, conocer la historia del Alamo y visitar las misiones de San Antonio. Es una escapada corta, con vuelo relativamente breve y una sola base, que permite añadir un segundo viaje al año sin otra travesía transatlántica.",
+  "bases": [
+    [
+      "San Antonio",
+      4
+    ]
+  ],
+  "flight": "La ruta propuesta sale del Aeropuerto Internacional de Ciudad de México (MEX) y llega a San Antonio International (SAT). Busca vuelos sin escalas de Aeroméxico, Volaris o Viva, según fechas y aeropuerto de salida.\n\nSi aparece una opción desde el Aeropuerto Felipe Ángeles (NLU), comprueba el tiempo y el coste para llegar hasta allí. El presupuesto y el recorrido de partida de esta guía utilizan MEX.",
+  "local": "Desde el aeropuerto de San Antonio, un taxi o un vehículo solicitado por aplicación suele tardar unos 15–30 minutos en llegar al centro.\n\nEl River Walk y las visitas centrales se pueden combinar a pie. Las misiones están más separadas entre sí, por lo que una excursión organizada o traslados en coche facilitan la jornada. No es necesario alquilar un automóvil para todo el viaje.",
+  "climate": "En diciembre, las temperaturas pueden situarse aproximadamente entre 7 y 19 °C, aunque un frente frío puede hacerlas bajar. Lleva una chaqueta y comprueba el pronóstico antes de salir.\n\nLa iluminación de temporada añade atractivo a los paseos por el río. Las caminatas más largas se pueden reservar para las horas centrales del día.",
+  "solo": "Es una escapada sencilla para viajar solo: vuelo corto, visitas concentradas y posibilidad de resolver los servicios turísticos en inglés. Dormir en el centro facilita regresar al hotel para descansar antes de salir a cenar.\n\nFunciona bien como complemento de un viaje más largo. Cuatro noches permiten conocer sus principales atractivos sin llenar la agenda de traslados a otras ciudades.",
+  "costs": [
+    [
+      "Vuelos",
+      4000,
+      6500
+    ],
+    [
+      "4 noches en habitación privada",
+      6000,
+      9000
+    ],
+    [
+      "Comida",
+      3000,
+      4500
+    ],
+    [
+      "Transporte",
+      1100,
+      1800
+    ],
+    [
+      "Entradas y excursiones",
+      1500,
+      2500
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      1700,
+      2700
+    ]
+  ],
+  "tips": [
+    "El programa dedica cuatro noches a San Antonio. Añadir Austin requeriría ampliar el viaje o reducir tiempo en las visitas ya previstas.",
+    "Comprueba impuestos y cargos adicionales al comparar hoteles. Si no vas a alquilar coche, el estacionamiento no aporta valor a tu reserva.",
+    "El Alamo y las misiones del parque histórico ofrecen visitas distintas. Comprueba qué parte necesita reserva y si las exhibiciones que deseas ver tienen coste adicional."
+  ],
+  "sources": [
+    [
+      "Turismo oficial",
+      "https://www.visitsanantonio.com/"
+    ],
+    [
+      "Misiones: NPS",
+      "https://www.nps.gov/saan/index.htm"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-03",
+      "title": "llegada junto al río",
+      "base": "San Antonio",
+      "places": [
+        "riverwalk"
+      ],
+      "am": "Vuela desde Ciudad de México a San Antonio según el horario reservado.",
+      "pm": "Tras la llegada, toma un taxi o vehículo por aplicación al hotel y deja la maleta.",
+      "night": "Si la hora lo permite, da un primer paseo por el River Walk, la red de senderos y restaurantes junto al río.",
+      "mobility": "Desde el aeropuerto de San Antonio al centro, el taxi o vehículo por aplicación tarda unos 15–30 minutos según tráfico.",
+      "spend": 850,
+      "note": ""
+    },
+    {
+      "n": 2,
+      "date": "2026-12-04",
+      "title": "el Álamo y el centro histórico",
+      "base": "San Antonio",
+      "places": [
+        "alamo",
+        "san-fernando-cathedral"
+      ],
+      "am": "Visita el Alamo para conocer este conjunto histórico y su papel en la historia de Texas. Revisa qué reserva corresponde a los espacios que deseas recorrer.",
+      "pm": "Continúa por el centro hasta la Catedral de San Fernando y sus alrededores, combinando la visita con una pausa para comer.",
+      "night": "Cena en el centro, cerca de tu alojamiento.",
+      "mobility": "El Alamo, la catedral y los paseos del centro se conectan a pie, con pausas para comer y descansar.",
+      "spend": 1200,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-12-05",
+      "title": "las misiones",
+      "base": "San Antonio",
+      "places": [
+        "mission-san-jose",
+        "mission-concepcion"
+      ],
+      "am": "Realiza una excursión o utiliza traslados en coche para conocer Mission San José, uno de los grandes conjuntos misionales de la ciudad.",
+      "pm": "Continúa a Mission Concepción y dedica tiempo a sus edificios y entorno. Ambas visitas ayudan a entender la historia colonial y religiosa de la región.",
+      "night": "Regresa al centro para cenar.",
+      "mobility": "Utiliza una excursión organizada o traslados en coche entre las misiones. No están lo bastante cerca para tratarlas como un paseo corto entre monumentos.",
+      "spend": 1600,
+      "note": ""
+    },
+    {
+      "n": 4,
+      "date": "2026-12-06",
+      "title": "Pearl y barrios",
+      "base": "San Antonio",
+      "places": [
+        "pearl-san-antonio",
+        "san-antonio-art-museum"
+      ],
+      "am": "Pasea por Pearl, una antigua zona cervecera transformada en un conjunto de restaurantes, comercios y espacios públicos.",
+      "pm": "Si te interesa el arte, añade el Museo de Arte de San Antonio; consulta su horario. También puedes dejar la tarde libre para un último paseo junto al río.",
+      "night": "Prepara la maleta y cena sin prisas.",
+      "mobility": "Llega a Pearl en autobús o vehículo por aplicación y recorre la zona a pie. Organiza otro traslado si añades el museo y prefieres reducir la caminata.",
+      "spend": 1100,
+      "note": "",
+      "optionalPlaces": [
+        "san-antonio-art-museum"
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2026-12-07",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Trasládate al aeropuerto de San Antonio con tiempo para los controles y toma el vuelo de regreso a Ciudad de México.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 3,
+  "profile": {
+    "pace": "Relajado",
+    "solo": "Muy fácil",
+    "weather": "Media",
+    "why": "Cuatro noches en una base y visitas concentradas permiten descansar. Predominan los paseos al aire libre, adaptables a las horas menos frías.",
+    "weatherWhy": "La lluvia o un frente frío pueden acortar los paseos por River Walk y las misiones; el museo ofrece una alternativa bajo techo.",
+    "soloWhy": "Una base céntrica, las visitas concentradas y los traslados en coche a las misiones permiten organizar la escapada con facilidad usando tu inglés."
+  },
+  "experiences": [
+    "Paseos junto al agua en River Walk",
+    "La historia del Alamo y la Catedral de San Fernando",
+    "Los conjuntos de San José y Concepción",
+    "Comer y pasear en el antiguo complejo cervecero Pearl",
+    "Una visita opcional al Museo de Arte de San Antonio"
+  ],
+  "routeCities": [
+    "San Antonio"
+  ],
+  "cover": "riverwalk",
+  "stays": [
+    [
+      "San Antonio",
+      "Downtown o River Walk son las zonas sugeridas para las cuatro noches en habitación privada."
+    ],
+    [
+      "Al reservar",
+      "Revisa impuestos y cargos adicionales. Para este itinerario no necesitas estacionamiento."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "San Antonio",
+      "coords": [
+        29.4241,
+        -98.4936
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    }
+  ]
+}

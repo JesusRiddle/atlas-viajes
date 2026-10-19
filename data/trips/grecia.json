@@ -1,0 +1,465 @@
+{
+  "id": "grecia",
+  "name": "Grecia histórica",
+  "flag": "🇬🇷",
+  "start": "2026-11-21",
+  "end": "2026-12-07",
+  "tag": "Templos y monasterios",
+  "intro": "La Grecia clásica se descubre aquí junto a pequeñas ciudades costeras y monasterios suspendidos sobre la roca. Empezarás en Atenas, continuarás hacia Nafplio para explorar la Argólida y dedicarás varias noches a Meteora. Volverás a Atenas la víspera del vuelo: conocerás tres zonas, con una breve segunda estancia en la capital.",
+  "bases": [
+    [
+      "Atenas",
+      6
+    ],
+    [
+      "Nafplio",
+      4
+    ],
+    [
+      "Kalambaka / Meteora",
+      4
+    ],
+    [
+      "Atenas",
+      1
+    ]
+  ],
+  "flight": "Volarás de Ciudad de México (MEX) a Atenas, al aeropuerto Eleftherios Venizelos (ATH), cambiando de avión en una ciudad europea como Madrid, París, Frankfurt o Ámsterdam.\n\nCompra los trayectos de cada sentido dentro de una misma reserva. Así la aerolínea podrá gestionar la conexión si un retraso afecta al siguiente vuelo, de acuerdo con las condiciones del billete. El regreso saldrá de Atenas y tendrá una conexión antes de llegar a México.",
+  "local": "Entre Atenas y Nafplio puedes utilizar los autobuses interurbanos de KTEL; el trayecto suele ocupar unas 2–2½ horas.\n\nEl día más largo será el traslado de Nafplio a Meteora. En transporte público puede requerir pasar de nuevo por Atenas y sumar unas 7–9 horas, incluidas las esperas. Un traslado contratado puede simplificar el recorrido, aunque encarece el viaje.\n\nPara volver de Meteora a Atenas, calcula unas 4½–6 horas según el servicio disponible. Habrá que comprobar si se realiza en autobús o combinando tren y autobús; el plan no depende de que exista un tren directo.",
+  "climate": "Atenas puede tener temperaturas cercanas a 9–17 °C. En Meteora hará más frío y puede haber niebla, especialmente a primeras horas.\n\nLos yacimientos arqueológicos suelen tener jornadas de visita más cortas en invierno. Dedicaremos las mañanas a los templos y ruinas, y dejaremos las tardes para museos, cafés o paseos breves.",
+  "solo": "Atenas resulta cómoda para viajar solo y puedes comunicarte en inglés en los principales servicios turísticos. Las excursiones rurales necesitan algo más de preparación porque hay menos frecuencias de autobús y cada monasterio tiene sus propios días de apertura.\n\nEn Meteora, una excursión local con transporte permite disfrutar de los miradores y visitar dos monasterios sin resolver cada desplazamiento por tu cuenta. Los días adicionales sirven para descansar o recuperar una visita si la niebla impide apreciar el paisaje.",
+  "costs": [
+    [
+      "Vuelos",
+      17000,
+      26000
+    ],
+    [
+      "15 noches en habitación privada",
+      19000,
+      28000
+    ],
+    [
+      "Comida",
+      8500,
+      12000
+    ],
+    [
+      "Transporte y traslado largo",
+      5000,
+      8000
+    ],
+    [
+      "Entradas y excursiones",
+      5000,
+      7500
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      4000,
+      6000
+    ]
+  ],
+  "tips": [
+    "Dedica el traslado de Nafplio a Meteora únicamente a viajar e instalarte. No conviene reservar una visita importante para la tarde de llegada.",
+    "Delfos se visita en una excursión desde Atenas, por lo que podrás regresar a dormir al mismo hotel.",
+    "Si prefieres reducir cambios de alojamiento, otra opción es dormir sólo en Atenas y Meteora. La contrapartida sería conocer la Argólida en excursiones largas por carretera.",
+    "Confirma los días de apertura de los monasterios antes de contratar el recorrido. Las fotos muestran las visitas propuestas, pero el orden puede cambiar para encontrar cada recinto abierto."
+  ],
+  "sources": [
+    [
+      "Turismo oficial de Grecia",
+      "https://www.visitgreece.gr/en"
+    ],
+    [
+      "Nafplio",
+      "https://www.visitgreece.gr/en/mainland/Peloponnese/Nafplio"
+    ],
+    [
+      "Buses Argólida",
+      "https://www.ktelargolida.gr/en/homepage-en/"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-11-21",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "La ruta aérea propuesta enlaza Ciudad de México (MEX) con Atenas (ATH) mediante una escala. Comprueba el tiempo de conexión y el aeropuerto utilizado.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-11-22",
+      "title": "la primera mirada a Plaka",
+      "base": "Atenas",
+      "places": [
+        "plaka"
+      ],
+      "am": "Tras llegar al aeropuerto de Atenas, dirígete al hotel y deja el equipaje.",
+      "pm": "Da un paseo suave por Plaka, el barrio de calles estrechas situado a los pies de la Acrópolis. Es una primera toma de contacto que puedes acortar si estás cansado.",
+      "night": "Cena cerca del hotel y descansa después del vuelo.",
+      "mobility": "El traslado del aeropuerto de Atenas al centro toma aproximadamente 40–70 minutos según el medio elegido y el tráfico.",
+      "spend": 1000,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-11-23",
+      "title": "la colina de los templos",
+      "base": "Atenas",
+      "places": [
+        "acropolis",
+        "acropolis-museum"
+      ],
+      "am": "Sube a la Acrópolis en la franja reservada. Recorre el conjunto de templos, con el Partenón como gran referencia, y reserva tiempo para contemplar Atenas desde la colina.",
+      "pm": "Después de comer, visita el Museo de la Acrópolis. Sus piezas y explicaciones te ayudarán a comprender lo que acabas de ver en el yacimiento.",
+      "night": "Vuelve al alojamiento sin añadir otra gran visita.",
+      "mobility": "Las visitas se conectan principalmente a pie. La Acrópolis tiene pendientes y superficies irregulares; usa calzado cómodo y evita apurar la hora de entrada.",
+      "spend": 1900,
+      "note": ""
+    },
+    {
+      "n": 4,
+      "date": "2026-11-24",
+      "title": "el Ágora y la vida de Monastiraki",
+      "base": "Atenas",
+      "places": [
+        "ancient-agora",
+        "monastiraki"
+      ],
+      "am": "Recorre el Ágora Antigua, donde se desarrollaba buena parte de la vida pública de la Atenas clásica.",
+      "pm": "Continúa por Monastiraki, entre plazas, comercios y calles animadas. Puedes alargar el paseo o hacer una pausa en una terraza según el tiempo.",
+      "night": "Cena en el centro y regresa al hotel.",
+      "mobility": "Recorre el Ágora y Monastiraki a pie; utiliza el metro para salir del hotel o regresar si queda lejos.",
+      "spend": 1300,
+      "note": ""
+    },
+    {
+      "n": 5,
+      "date": "2026-11-25",
+      "title": "el oráculo de Delfos",
+      "base": "Atenas",
+      "places": [
+        "delphi",
+        "delphi-museum"
+      ],
+      "am": "Sal temprano en una excursión a Delfos, el santuario de montaña que albergaba el célebre oráculo de Apolo.",
+      "pm": "Combina el recorrido por el yacimiento con su museo, donde se conservan piezas que permiten imaginar la importancia del lugar. Lleva calzado cómodo para desniveles y escalones.",
+      "night": "Regresa a Atenas después de una jornada larga; deja la cena cerca del hotel.",
+      "mobility": "La excursión a Delfos suele ocupar unas 10–11 horas, con cerca de 2½–3 horas de carretera por sentido. Comprueba el lugar de recogida.",
+      "spend": 2600,
+      "note": "Delfos ocupa una jornada completa desde Atenas. Meteora se visita más adelante, durante una estancia propia."
+    },
+    {
+      "n": 6,
+      "date": "2026-11-26",
+      "title": "museos y barrios",
+      "base": "Atenas",
+      "places": [
+        "national-archaeological-athens",
+        "syntagma"
+      ],
+      "am": "Dedica la mañana al Museo Arqueológico Nacional. Es una colección extensa: elige unas salas y recórrelas con calma en lugar de intentar verlo todo.",
+      "pm": "Pasea por la plaza Syntagma y sus alrededores. La tarde queda ligera para compensar el tiempo de museo.",
+      "night": "Cena en Atenas y disfruta la misma base una noche más.",
+      "mobility": "Utiliza metro o taxi para llegar al museo. El paseo de la tarde puede adaptarse a tu energía.",
+      "spend": 1400,
+      "note": ""
+    },
+    {
+      "n": 7,
+      "date": "2026-11-27",
+      "title": "un día de descanso o vistas desde el Licabeto",
+      "base": "Atenas",
+      "places": [
+        "lycabettus"
+      ],
+      "am": "Reserva esta mañana para descansar o recuperar una visita que la lluvia haya desplazado.",
+      "pm": "Si no hay pendientes y el cielo está despejado, puedes subir al monte Licabeto para contemplar Atenas desde otro mirador. Es una actividad opcional.",
+      "night": "Prepara el equipaje para viajar a Nafplio.",
+      "mobility": "Combina caminata y metro para las visitas pendientes. Si eliges Licabeto, comprueba cómo llegar al acceso del funicular o utiliza taxi para reducir la subida.",
+      "spend": 950,
+      "note": "Este día libre permite recuperar una visita aplazada por lluvia o por un retraso del vuelo.",
+      "optionalPlaces": [
+        "lycabettus"
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2026-11-28",
+      "title": "llegada y calles de herencia veneciana",
+      "base": "Nafplio",
+      "places": [
+        "nafplio"
+      ],
+      "am": "Toma el autobús interurbano a Nafplio y trasládate desde la llegada hasta tu alojamiento.",
+      "pm": "Pasea por el casco antiguo, de calles peatonales y balcones, y continúa hacia el frente marítimo.",
+      "night": "Cena en Nafplio y disfruta una noche tranquila.",
+      "mobility": "El autobús interurbano KTEL de Atenas a Nafplio tarda unas 2–2½ horas, a las que se suman los traslados entre terminales y hoteles.",
+      "spend": 1300,
+      "note": ""
+    },
+    {
+      "n": 9,
+      "date": "2026-11-29",
+      "title": "la Grecia anterior a los clásicos",
+      "base": "Nafplio",
+      "places": [
+        "mycenae"
+      ],
+      "am": "Viaja a Micenas mediante una excursión o un traslado reservado. Este yacimiento permite conocer una civilización anterior a la Grecia de los grandes templos clásicos.",
+      "pm": "Recorre las fortificaciones y las áreas incluidas en la entrada, dejando tiempo para el museo si está abierto. Regresa a Nafplio para descansar.",
+      "night": "Cena en el casco antiguo.",
+      "mobility": "Reserva una excursión o taxi para Micenas y acuerda la espera o recogida de regreso. No dependas de encontrar un autobús frecuente justo a la salida del yacimiento.",
+      "spend": 2300,
+      "note": ""
+    },
+    {
+      "n": 10,
+      "date": "2026-11-30",
+      "title": "el teatro de Epidauro",
+      "base": "Nafplio",
+      "places": [
+        "epidaurus"
+      ],
+      "am": "Dedica la mañana al santuario de Epidauro y a su gran teatro, famoso por su conservación y acústica.",
+      "pm": "Recorre el resto del conjunto que permita tu entrada antes de regresar a Nafplio. Si contratas Micenas y Epidauro en una misma excursión, esta jornada queda libre para descansar.",
+      "night": "Disfruta una cena sin prisas.",
+      "mobility": "Utiliza un traslado contratado para Epidauro. Si un mismo recorrido incluye Micenas y Epidauro, puedes concentrar ambas excursiones en un día y dejar otro libre.",
+      "spend": 2200,
+      "note": ""
+    },
+    {
+      "n": 11,
+      "date": "2026-12-01",
+      "title": "fortaleza y mar",
+      "base": "Nafplio",
+      "places": [
+        "palamidi"
+      ],
+      "am": "Conoce la fortaleza de Palamidi, construida sobre la ciudad. Un taxi hasta el acceso evita afrontar toda la subida a pie.",
+      "pm": "Regresa al centro y pasea junto al mar. Mantén la tarde ligera: mañana tendrás el traslado más largo de la ruta.",
+      "night": "Prepara el equipaje y confirma dónde sale el primer transporte.",
+      "mobility": "Un taxi facilita la subida a Palamidi. Después, realiza a pie los paseos por el centro y el frente marítimo.",
+      "spend": 1300,
+      "note": ""
+    },
+    {
+      "n": 12,
+      "date": "2026-12-02",
+      "title": "hacia los monasterios en las rocas",
+      "base": "Kalambaka",
+      "places": [],
+      "am": "Sal temprano de Nafplio hacia la zona de Meteora, siguiendo la combinación de transportes confirmada antes del viaje.",
+      "pm": "Dedica la jornada al traslado y sus conexiones. Lleva agua y algo de comida, y deja margen entre servicios.",
+      "night": "Al llegar a Kalambaka o Kastraki, instálate y cena. No hay visitas a monasterios previstas esta noche.",
+      "mobility": "El traslado de Nafplio a Meteora puede ocupar 7–9 horas con esperas y conexiones. Confirma la combinación disponible; dedica todo el día al transporte.",
+      "spend": 2500,
+      "note": "La jornada está dedicada al transporte. No hay visita a monasterios prevista al llegar."
+    },
+    {
+      "n": 13,
+      "date": "2026-12-03",
+      "title": "Meteora desde dentro",
+      "base": "Kalambaka",
+      "places": [
+        "great-meteoron",
+        "varlaam"
+      ],
+      "am": "Recorre Meteora en una excursión local o minibús. El Gran Meteoro y Varlaam son dos visitas propuestas, sujetas a sus días de apertura.",
+      "pm": "Conoce los monasterios que estén disponibles y detente en miradores durante el recorrido. La visita combina interiores religiosos, escaleras y vistas de las grandes formaciones rocosas.",
+      "night": "Regresa al alojamiento para descansar.",
+      "mobility": "Una excursión en minibús facilita conectar monasterios y miradores en unas 4–5 horas. En cada monasterio puede haber escaleras.",
+      "spend": 1900,
+      "note": "Lleva ropa que cubra hombros y rodillas y consulta las normas de cada monasterio. Algunos accesos incluyen bastantes escaleras."
+    },
+    {
+      "n": 14,
+      "date": "2026-12-04",
+      "title": "miradores y pueblos",
+      "base": "Kalambaka",
+      "places": [
+        "kastraki",
+        "meteora"
+      ],
+      "am": "Pasea por Kastraki, el pequeño pueblo situado bajo las rocas de Meteora.",
+      "pm": "Reserva un recorrido corto en taxi o excursión para los miradores que hayan quedado pendientes. Evita convertir la carretera entre monasterios en una caminata improvisada.",
+      "night": "Cena en el pueblo; vuelve al alojamiento antes de caminar por tramos sin iluminación.",
+      "mobility": "Usa taxi o una excursión corta para los miradores. Camina por el pueblo y evita circular a pie por carretera después de oscurecer.",
+      "spend": 1600,
+      "note": ""
+    },
+    {
+      "n": 15,
+      "date": "2026-12-05",
+      "title": "margen para niebla o descanso",
+      "base": "Kalambaka",
+      "places": [
+        "st-stephen-meteora"
+      ],
+      "am": "Este día permite reorganizar las visitas si la niebla o los cierres afectaron al programa.",
+      "pm": "Como visita adicional, puedes conocer el monasterio de San Esteban si está abierto. Si ya estás satisfecho con el recorrido, dedica la tarde al descanso y a preparar el regreso.",
+      "night": "Confirma el transporte del día siguiente a Atenas.",
+      "mobility": "Organiza un traslado local si visitas otro monasterio. Si eliges descansar, no necesitas una nueva excursión.",
+      "spend": 1100,
+      "note": "",
+      "optionalPlaces": [
+        "st-stephen-meteora"
+      ]
+    },
+    {
+      "n": 16,
+      "date": "2026-12-06",
+      "title": "regreso desde Meteora y última noche",
+      "base": "Atenas",
+      "places": [],
+      "am": "Regresa a Atenas en el servicio disponible y confirmado para esa fecha.",
+      "pm": "Deja el equipaje en el hotel de la última noche y descansa. Esta jornada protege el vuelo del día siguiente al evitar una conexión larga desde Meteora el mismo día.",
+      "night": "Cena cerca del alojamiento y prepara la salida al aeropuerto.",
+      "mobility": "El regreso desde la zona de Meteora a Atenas puede ocupar unas 4½–6 horas según el servicio disponible. Comprueba la operación real del autobús o tren antes de reservar.",
+      "spend": 1800,
+      "note": ""
+    },
+    {
+      "n": 17,
+      "date": "2026-12-07",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Trasládate al aeropuerto de Atenas para volar a Ciudad de México con la escala indicada en tu billete.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 11,
+  "profile": {
+    "pace": "Equilibrado",
+    "solo": "Requiere más atención",
+    "weather": "Media",
+    "why": "Los días de margen compensan los traslados, pero autobuses rurales y aperturas de monasterios requieren coordinación; Meteora puede tener niebla.",
+    "weatherWhy": "La niebla puede ocultar los miradores de Meteora y la lluvia dificultar las visitas a yacimientos; los días de margen permiten reorganizar parte del recorrido.",
+    "soloWhy": "Los autobuses rurales, el traslado hacia Meteora y los días de apertura de los monasterios requieren más planificación que las visitas urbanas de Atenas."
+  },
+  "experiences": [
+    "Los templos de la Acrópolis sobre Atenas",
+    "El santuario y el museo de Delfos",
+    "Calles venecianas de Nafplio",
+    "Micenas y el teatro de Epidauro",
+    "Monasterios y miradores entre las rocas de Meteora"
+  ],
+  "routeCities": [
+    "Atenas",
+    "Delfos",
+    "Nafplio",
+    "Kalambaka",
+    "Kastraki"
+  ],
+  "cover": "meteora",
+  "stays": [
+    [
+      "Atenas",
+      "Plaka, Koukaki o Syntagma permiten una base práctica para las visitas."
+    ],
+    [
+      "Nafplio",
+      "El casco antiguo es una buena opción; confirma cómo llegar con la maleta."
+    ],
+    [
+      "Kalambaka",
+      "Busca alojamiento cerca del punto de salida de los tours a Meteora."
+    ],
+    [
+      "Alternativa: Kastraki",
+      "Tiene un entorno más escénico, pero resulta menos cómodo si no cuentas con transporte."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Atenas",
+      "coords": [
+        37.9838,
+        23.7275
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Delfos",
+      "coords": [
+        38.4794,
+        22.4939
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "Nafplio",
+      "coords": [
+        37.5673,
+        22.8016
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 3
+    },
+    {
+      "name": "Micenas",
+      "coords": [
+        37.7308,
+        22.7561
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Epidauro",
+      "coords": [
+        37.5981,
+        23.0745
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Kalambaka",
+      "coords": [
+        39.7066,
+        21.6274
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 6
+    },
+    {
+      "name": "Kastraki",
+      "coords": [
+        39.7167,
+        21.6186
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 7
+    }
+  ]
+}

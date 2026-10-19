@@ -1,0 +1,435 @@
+{
+  "id": "suiza-italia",
+  "name": "Suiza + norte de Italia",
+  "flag": "🇨🇭 🇮🇹",
+  "start": "2026-12-05",
+  "end": "2026-12-16",
+  "tag": "Dos trenes legendarios, de los Alpes a Italia",
+  "intro": "Conserva el corazón de Suiza panorámica —Lucerna, Zermatt y el Glacier Express— y transforma el regreso en otro paisaje. Después de dos noches en St. Moritz, cruza el Bernina hacia Tirano y sigue a Milán. El tren te lleva hacia tu siguiente destino, sin repetir el trayecto de vuelta. Mantienes 12 días, diez noches y cuatro bases.",
+  "bases": [
+    [
+      "Lucerna",
+      3
+    ],
+    [
+      "Zermatt",
+      3
+    ],
+    [
+      "St. Moritz",
+      2
+    ],
+    [
+      "Milán",
+      2
+    ]
+  ],
+  "flight": "Cotiza una sola reserva multidestino, también llamada open-jaw: Ciudad de México (MEX) → Zúrich (ZRH) el 5 de diciembre y Milán Malpensa (MXP) → Ciudad de México (MEX) el 16. Compara conexiones en Frankfurt o Múnich y equipaje incluido.\n\nNo se encontró una tarifa reservable verificada para esta combinación exacta. El rango de $20,000–$32,000 MXN es una provisión para comparar, no una oferta. Exige llegada a MEX el 16 para conservar los ocho días laborales; aterrizar el 17 añadiría un día natural y laboral.",
+  "local": "Hasta St. Moritz sigues la ruta original: Lucerna, Zermatt y Glacier Express. El 14 de diciembre toma un tren local temprano a Pontresina, donde abordarás el Bernina Express 951 de las 10:25 a Tirano, llegada 12:49.\n\nEn invierno ese servicio no parte de St. Moritz: la conexión local es necesaria. Desde Tirano continuarás en Trenord a Milano Centrale, unas 2½ horas. Deja al menos 60–90 minutos para enlazar sin correr; el horario italiano posterior al 13 de diciembre requiere confirmación.",
+  "climate": "En diciembre, Lucerna puede rondar los 0–7 °C y las zonas de montaña registrar temperaturas bajo cero. Es más probable encontrar nieve en las cumbres y los pasos alpinos que en las calles de una ciudad.\n\nLas nubes pueden ocultar el Cervino o las vistas desde Gornergrat. Por eso hay días de margen en Zermatt: podrás escoger la jornada más despejada para subir al mirador.",
+  "solo": "La señalización de las estaciones y el uso habitual del inglés en servicios turísticos hacen que Suiza sea cómoda para viajar solo. Los trayectos están pensados para disfrutar del paisaje, aunque deberás cargar tu equipaje al cambiar de tren.\n\nUna maleta manejable hará mucha diferencia. También conviene planear con cuidado el presupuesto: alojamiento, comidas y transportes de montaña representan una parte importante del coste total.",
+  "costs": [
+    [
+      "Vuelos multidestino · estimación",
+      20000,
+      32000
+    ],
+    [
+      "10 noches privadas · Suiza 8 + Milán 2",
+      22000,
+      33000
+    ],
+    [
+      "Comida",
+      10500,
+      15000
+    ],
+    [
+      "Trenes y reservas Glacier + Bernina",
+      13000,
+      18000
+    ],
+    [
+      "Montaña y entradas",
+      5000,
+      8000
+    ],
+    [
+      "Seguro y reserva para imprevistos",
+      5000,
+      7500
+    ]
+  ],
+  "tips": [
+    "El Glacier Express sigue siendo el recorrido principal; Bernina añade un cruce hacia Italia, no una excursión de ida y vuelta.",
+    "La conexión por Pontresina permite tomar el Bernina con luz en diciembre. El tren local exacto y el tramo italiano se confirman con el horario definitivo.",
+    "Los panorámicos necesitan reserva incluso con un pase válido. No sumes un pase completo y billetes equivalentes sin comparar antes.",
+    "Dos noches en Milán dejan una jornada urbana completa y separan el largo día de tren del vuelo de regreso."
+  ],
+  "sources": [
+    [
+      "Glacier Express: calendario",
+      "https://www.glacierexpress.ch/en/timetable"
+    ],
+    [
+      "Reserva y billete",
+      "https://www.glacierexpress.ch/en/book-now"
+    ],
+    [
+      "Gornergrat: horario",
+      "https://www.gornergrat.ch/en/pages/timetable-gornergrat-bahn"
+    ],
+    [
+      "SBB: reservas",
+      "https://www.sbb.ch/en/help-and-contact/products-services/reservations/seat-reservations/switzerland-and-europe.html"
+    ],
+    [
+      "Glacier Express · horario invierno 2026/27",
+      "https://glacierexpress.ch/server/uploads/ap-uploads/cbb187dbd0ce0af62c628ad7d769b389.pdf"
+    ],
+    [
+      "Glacier Express · precios individuales",
+      "https://www.glacierexpress.ch/en/price?anchor=luggage-information"
+    ],
+    [
+      "Bernina Express · horario oficial 2027",
+      "https://assets.eu.ctfassets.net/h76myjvzsgnd/4fqCulSvO2RjAST53PBE0O/69e950e6f3ecd621d43572af739e2d3a/260219_RhB_Factsheet_2027_Bernina_Express_inkl._Bus_A4_en_final.pdf"
+    ],
+    [
+      "RhB · reservas Bernina",
+      "https://www.rhb.ch/en/panoramic-journeys/bernina-express/"
+    ],
+    [
+      "Trenord · Milán–Tirano, duración y tarifa",
+      "https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/"
+    ],
+    [
+      "Trenord · horario vigente para comparar",
+      "https://www.trenord.it/fileadmin/contenuti/TRENORD/2-Linee_e_orari/Orario_ferroviario/ORARIO_in_vigore/Q180_giugno_2026.pdf"
+    ],
+    [
+      "Malpensa Express · preguntas y tarifas",
+      "https://www.malpensaexpress.it/en/information-and-assistance/support/faq/"
+    ],
+    [
+      "RhB · tarifas de referencia hasta el 12 dic 2026",
+      "https://www.tirano-mediavaltellina.it/wp-content/uploads/2025/08/Orario_RhB_2026-Inverno.pdf"
+    ],
+    [
+      "Lufthansa · México–Zúrich",
+      "https://www.lufthansa.com/lhg/mx/en/o-d/cy-cy/mexico-city-zurich"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-05",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "Volarás desde Ciudad de México (MEX) hacia Zúrich (ZRH), con la escala europea que corresponda a la reserva elegida.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-12-06",
+      "title": "el primer paseo entre lago y puente",
+      "base": "Lucerna",
+      "places": [
+        "lucerne",
+        "kapellbrucke"
+      ],
+      "am": "Tras aterrizar en Zúrich, toma el tren a Lucerna y deja la maleta en el hotel.",
+      "pm": "Pasea por el casco antiguo y cruza el Kapellbrücke, el puente de madera que une las orillas del río Reuss. Es una primera visita cómoda después del vuelo.",
+      "night": "Cena en Lucerna y descansa.",
+      "mobility": "Desde el aeropuerto de Zúrich, el tren hacia Lucerna tarda aproximadamente 1–1¼ horas. Después, camina o utiliza un traslado corto hasta el hotel.",
+      "spend": 1600,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-12-07",
+      "title": "el lago de los Cuatro Cantones",
+      "base": "Lucerna",
+      "places": [
+        "lake-lucerne"
+      ],
+      "am": "Dedica la mañana al paseo junto al lago de los Cuatro Cantones, rodeado de montañas.",
+      "pm": "Si el horario de invierno y el tiempo lo permiten, añade un recorrido en barco. Comprueba el puerto de salida y la duración antes de comprar; también puedes quedarte en la ribera y disfrutar una tarde tranquila.",
+      "night": "Regresa a tu hotel en Lucerna.",
+      "mobility": "El paseo por la ribera se hace a pie. Si eliges navegar, comprueba el muelle, el horario de invierno y el billete para ese recorrido.",
+      "spend": 2000,
+      "note": ""
+    },
+    {
+      "n": 4,
+      "date": "2026-12-08",
+      "title": "un mirador o un refugio cultural",
+      "base": "Lucerna",
+      "places": [
+        "rigi",
+        "swiss-transport-museum"
+      ],
+      "am": "Elige la excursión al monte Rigi si el cielo está despejado y los transportes funcionan. El ascenso en tren de cremallera forma parte de la experiencia.",
+      "pm": "La alternativa es el Museo Suizo del Transporte, en Lucerna, dedicado a trenes, aviación y movilidad. Son dos propuestas para elegir según el clima, no dos visitas que debas completar el mismo día.",
+      "night": "Cena en Lucerna y prepara la maleta para Zermatt.",
+      "mobility": "La subida a Rigi combina transportes hasta su tren de cremallera, según la ruta elegida. Para el Museo Suizo del Transporte, utiliza transporte urbano desde Lucerna.",
+      "spend": 3000,
+      "note": "Confirma los servicios de montaña antes de salir. El programa no depende de Pilatus, cuyos transportes pueden tener pausas de mantenimiento.",
+      "optionalPlaces": [
+        "rigi",
+        "swiss-transport-museum"
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2026-12-09",
+      "title": "camino al Cervino",
+      "base": "Zermatt",
+      "places": [
+        "zermatt"
+      ],
+      "am": "Viaja en tren a Zermatt, con los cambios que indique el horario seleccionado. Lleva la maleta que puedas mover cómodamente entre andenes.",
+      "pm": "Instálate y pasea por el pueblo, a los pies del Cervino. No añadas una subida de montaña a esta jornada de traslado.",
+      "night": "Cena cerca del alojamiento.",
+      "mobility": "El recorrido ferroviario de Lucerna a Zermatt tarda unas 3½–4½ horas con cambios de tren. Consulta el itinerario completo antes de comprar.",
+      "spend": 2500,
+      "note": ""
+    },
+    {
+      "n": 6,
+      "date": "2026-12-10",
+      "title": "Gornergrat y glaciares",
+      "base": "Zermatt",
+      "places": [
+        "gornergrat"
+      ],
+      "am": "Si hay buena visibilidad, sube en el tren de cremallera al Gornergrat. El recorrido permite ver cómo el pueblo da paso al paisaje de alta montaña.",
+      "pm": "Disfruta los miradores y las vistas del Cervino y los glaciares desde las zonas habilitadas. No es necesario hacer senderismo para aprovechar la visita.",
+      "night": "Baja a Zermatt y cena con calma.",
+      "mobility": "El tren de cremallera de Zermatt al Gornergrat tarda unos 35 minutos por sentido. En altura, camina únicamente por accesos habilitados.",
+      "spend": 3600,
+      "note": ""
+    },
+    {
+      "n": 7,
+      "date": "2026-12-11",
+      "title": "un margen para el Matterhorn",
+      "base": "Zermatt",
+      "places": [
+        "matterhorn-museum"
+      ],
+      "am": "Este día deja una segunda oportunidad para subir al Gornergrat si el tiempo del día anterior fue desfavorable.",
+      "pm": "Si ya hiciste la excursión, conoce el Museo del Cervino, que explica la historia de Zermatt y de las primeras ascensiones, y dedica el resto de la tarde al descanso.",
+      "night": "Prepara el equipaje para la jornada del tren panorámico.",
+      "mobility": "Recorre Zermatt a pie o en autobús eléctrico. Si este día reemplaza la subida al Gornergrat, repite la organización de transporte prevista para el día anterior.",
+      "spend": 1600,
+      "note": "No se ha previsto esquiar ni caminar por todas las rutas de montaña. Los accesos dependerán del estado del terreno.",
+      "optionalPlaces": [
+        "matterhorn-museum"
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2026-12-12",
+      "title": "Glacier Express, de Zermatt a la Engadina",
+      "base": "St. Moritz",
+      "places": [
+        "glacier"
+      ],
+      "am": "El horario oficial de invierno publica para el 12 de diciembre el Glacier Express PE 920: Zermatt 07:50 → St. Moritz 15:37. Es la primera opción por sus horas de luz. Desayuna antes o lleva algo preparado y embarca con billete y reserva de asiento.",
+      "pm": "Disfruta del recorrido panorámico por valles y pasos alpinos. La alternativa PE 902 sale a las 08:50 y llega a las 16:37: termina más tarde y aprovecha menos luz al final.",
+      "night": "Al llegar a St. Moritz, ve directamente al hotel y cena cerca.",
+      "mobility": "Glacier Express directo, 7 h 47 min según el horario de invierno 2026/27 publicado. La operación prevista no equivale a tener asiento disponible.",
+      "spend": 4000,
+      "note": "Las reservas de diciembre se anuncian desde mediados de octubre. Precio individual de referencia publicado: CHF 159 en segunda clase más CHF 54 de asiento; confirma la tarifa de tu fecha. Un pase válido puede cubrir el billete, pero no elimina la reserva adicional."
+    },
+    {
+      "n": 9,
+      "date": "2026-12-13",
+      "title": "Engadina de invierno",
+      "base": "St. Moritz",
+      "places": [
+        "stmoritz",
+        "pontresina"
+      ],
+      "am": "Recorre St. Moritz a un ritmo tranquilo después del largo trayecto del día anterior.",
+      "pm": "Si el tiempo acompaña, acércate a Pontresina en transporte regional para conocer otro pueblo de la Engadina. Elige paseos urbanos despejados y evita rutas heladas.",
+      "night": "Vuelve al mismo hotel en St. Moritz.",
+      "mobility": "Los trayectos locales entre St. Moritz y pueblos próximos como Pontresina pueden tomar unos 15–30 minutos. Consulta el tren o autobús que mejor se ajuste a tu paseo.",
+      "spend": 1900,
+      "note": "",
+      "optionalPlaces": [
+        "pontresina"
+      ]
+    },
+    {
+      "n": 10,
+      "date": "2026-12-14",
+      "title": "Bernina Express: de los Alpes a Italia",
+      "base": "Milán",
+      "places": [
+        "bernina-line",
+        "tirano"
+      ],
+      "am": "Sal de St. Moritz en un tren local que llegue a Pontresina con al menos 30 minutos de margen. El horario oficial 2027 publica el Bernina Express 951 a las 10:25, con llegada a Tirano a las 12:49. El cruce alpino ocupa las horas centrales del día.",
+      "pm": "Come en Tirano y continúa en tren hacia Milán. El horario italiano actual ofrece, como referencia, 14:08 → aproximadamente 16:40; aún debes confirmar el equivalente para el 14 de diciembre. La basílica de la Madonna di Tirano es opcional sólo si eliges un tren posterior y tienes tiempo para caminar con tu equipaje.",
+      "night": "Llega a Milano Centrale, ve al hotel y cena cerca. Hoy no añadas una visita al Duomo.",
+      "mobility": "Tren local St. Moritz–Pontresina + Bernina Express a Tirano + Trenord a Milano Centrale. Los billetes y la reserva del panorámico se comprueban por separado; deja margen entre operadores.",
+      "spend": 3400,
+      "note": "RhB anuncia la apertura de reservas de la nueva temporada el 13 de octubre. No uses el 09:17 desde St. Moritz: corresponde al verano. El directo invernal de las 16:14 llega a Tirano a las 18:39 y sacrifica luz, por eso no es la opción recomendada.",
+      "optionalPlaces": [
+        "tirano"
+      ]
+    },
+    {
+      "n": 11,
+      "date": "2026-12-15",
+      "title": "mármol, galerías y un castillo",
+      "base": "Milán",
+      "places": [
+        "milan-duomo",
+        "milan-galleria",
+        "milan-castello"
+      ],
+      "am": "Comienza en la plaza del Duomo y visita la catedral con la entrada correspondiente. Si deseas subir a las terrazas, reserva y contempla el tiempo adicional.",
+      "pm": "Cruza la Galleria Vittorio Emanuele II, con su cubierta de vidrio, y continúa hacia el Castello Sforzesco para conocer sus patios y exteriores. Las colecciones del castillo son opcionales y no se plantean como otra visita completa.",
+      "night": "Cena en Milán y prepara el traslado al aeropuerto.",
+      "mobility": "Centro a pie, con metro para acortar el regreso al hotel. No necesitas coche.",
+      "spend": 1800,
+      "note": "Las terrazas del Duomo dependen de acceso y condiciones; elige un ritmo cómodo y reserva sólo los interiores que realmente quieras visitar."
+    },
+    {
+      "n": 12,
+      "date": "2026-12-16",
+      "title": "vuelo a casa desde Malpensa",
+      "base": "Regreso",
+      "places": [],
+      "am": "Entrega el hotel y dirígete a Malpensa. Como referencia, Malpensa Express tarda 51 minutos entre Milano Centrale y la terminal 1.",
+      "pm": "Vuela desde MXP hacia MEX con la conexión que hayas reservado. Añade al traslado el margen de unas tres horas en el aeropuerto.",
+      "night": "Llegada prevista a Ciudad de México el 16 de diciembre, sujeta al itinerario aéreo elegido.",
+      "mobility": "Tren Malpensa Express: tarifa publicada de €15 por sentido, más vuelo internacional. Confirma terminal y horario.",
+      "spend": 650,
+      "note": "Si el vuelo elegido aterriza el 17, esta alternativa pasará a 13 días naturales y nueve laborales. No cierres las vacaciones hasta comprobarlo."
+    }
+  ],
+  "work": 8,
+  "profile": {
+    "pace": "Intenso",
+    "solo": "Fácil",
+    "weather": "Alta",
+    "why": "Dos grandes jornadas panorámicas y un enlace entre operadores hacia Milán exigen más organización. La visibilidad alpina condiciona parte de la experiencia.",
+    "weatherWhy": "La visibilidad condiciona Gornergrat y los paisajes del Glacier y el Bernina; las condiciones invernales pueden alterar accesos de montaña y conexiones.",
+    "soloWhy": "La red ferroviaria facilita el recorrido, pero enlazar el tren local, el Bernina y el servicio italiano exige coordinar horarios y reservas de distintos operadores."
+  },
+  "experiences": [
+    "Lucerna junto al lago de los Cuatro Cantones",
+    "Zermatt y los miradores del Cervino",
+    "Cruzar Suiza en el Glacier Express",
+    "Bajar de los Alpes a Tirano en el Bernina Express",
+    "El Duomo y la galería de vidrio de Milán"
+  ],
+  "routeCities": [
+    "Lucerna",
+    "Zermatt",
+    "St. Moritz",
+    "Tirano",
+    "Milán"
+  ],
+  "cover": "bernina-line",
+  "stays": [
+    [
+      "Lucerna",
+      "Busca alojamiento cerca de la estación para facilitar las llegadas y salidas en tren."
+    ],
+    [
+      "Zermatt",
+      "Elige un hotel accesible desde la estación, preferiblemente sin una subida larga con equipaje."
+    ],
+    [
+      "St. Moritz o Pontresina",
+      "Prioriza una conexión cómoda con el transporte regional."
+    ],
+    [
+      "Milán · 2 noches",
+      "Elige cerca de Centrale para facilitar Tirano y Malpensa, o en el centro junto al metro. Comprueba la ruta a pie con la maleta."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Lucerna",
+      "coords": [
+        47.0502,
+        8.3093
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Zermatt",
+      "coords": [
+        46.0207,
+        7.7491
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 2
+    },
+    {
+      "name": "St. Moritz",
+      "coords": [
+        46.4908,
+        9.8355
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 3
+    },
+    {
+      "name": "Pontresina",
+      "coords": [
+        46.4913,
+        9.9024
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Tirano",
+      "coords": [
+        46.2164,
+        10.1699
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Milán",
+      "coords": [
+        45.4642,
+        9.19
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 6
+    }
+  ],
+  "family": {
+    "label": "Suiza ferroviaria · invierno 2026",
+    "note": "Glacier Express + Bernina hacia Italia",
+    "other": "suiza"
+  }
+}

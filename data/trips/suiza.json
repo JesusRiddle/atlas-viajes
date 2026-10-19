@@ -1,0 +1,505 @@
+{
+  "id": "suiza",
+  "name": "Suiza de postal",
+  "flag": "🇨🇭",
+  "start": "2027-09-04",
+  "end": "2027-09-17",
+  "tag": "Valles, lagos y pueblos alpinos · septiembre 2027",
+  "intro": "Lucerna, Oberland bernés y Zermatt: un viaje para caminar dentro del paisaje, con trenes entre bases y seis noches en el valle de Lauterbrunnen. First Cliff Walk, lagos de montaña y pueblos sin tráfico ordinario sustituyen la jornada completa del Glacier Express. Tres bases principales y una última noche en Zúrich para proteger el regreso.",
+  "bases": [
+    [
+      "Lucerna",
+      2
+    ],
+    [
+      "Lauterbrunnen",
+      6
+    ],
+    [
+      "Zermatt",
+      3
+    ],
+    [
+      "Zúrich / aeropuerto",
+      1
+    ]
+  ],
+  "flight": "Ventana propuesta: salir de Ciudad de México (MEX) el sábado 4 de septiembre de 2027, llegar a Zúrich (ZRH) el domingo 5 y regresar a MEX el viernes 17. Busca ida y vuelta con una conexión europea en una misma reserva. Compara duración total, equipaje y margen de conexión. No hay vuelos ni precios confirmados para esas fechas.\n\nAl 4 de octubre de 2026, parte de septiembre de 2027 puede quedar fuera del calendario de venta de algunas aerolíneas. Espera a que se pueda cotizar también el regreso antes de fijar hoteles no reembolsables. El programa supone llegada a México el día 17; si el billete llega el 18, serán 15 días naturales.",
+  "local": "Aeropuerto de Zúrich → Lucerna: aproximadamente 1–1¼ horas. Lucerna → Interlaken Ost: alrededor de 1 h 50 min en el Luzern–Interlaken Express; después, conexión a Lauterbrunnen. Calcula 2½–3 horas en total entre estaciones de ambas bases. Este sí es un trayecto panorámico dentro de la ruta.\n\nDesde Lauterbrunnen explorarás Wengen, Mürren y Grindelwald en tren y teleférico, regresando al mismo hotel. Oeschinensee exige la excursión más larga: reserva el día completo. Lauterbrunnen → Zermatt requiere unas 3–4 horas, y Zermatt → Zúrich unas 3½–4 horas, con conexiones. Son estimaciones para planear, no horarios confirmados de 2027.\n\nCompara Swiss Half Fare Card + billetes con Swiss Travel Pass y un pase regional para los días del Oberland. La Half Fare Card cuesta actualmente CHF 150 por un mes y reduce el precio de muchos transportes; no es un billete ilimitado. Revisa cobertura y precios de 2027 antes de decidir. No compres varios pases con coberturas duplicadas.",
+  "climate": "La primera quincena de septiembre es mi ventana preferida para esta ruta: permite plantear lagos y caminatas de temporada cálida, después del pico vacacional de mediados de julio a mediados de agosto. Alternativa: finales de junio o primera mitad de julio de 2027, comprobando nieve residual en senderos altos. La elección es por temporada, no por una previsión del tiempo ni por una oferta de vuelos.\n\nEn septiembre todavía puede llover, nevar en altura o amanecer con niebla. Lleva capas, impermeable y calzado de senderismo con agarre. No se garantiza ver el Cervino ni reflejos en los lagos. El día libre del Oberland y el margen de Zermatt permiten mover excursiones según visibilidad.\n\nOeschinensee ya publica operación de verano del 24 de abril al 19 de septiembre de 2027. Aun así, apertura del teleférico no significa que todos los senderos estén habilitados. First, sus accesos y cada ruta a pie deben revisarse para 2027 y de nuevo antes de salir. En diciembre, los lagos y senderos de estas fotos no ofrecen la misma experiencia.",
+  "solo": "Viaje fácil de organizar por libre con inglés B2, señalización ferroviaria y una maleta manejable. Las caminatas son opcionales y se pueden acortar: el ritmo se vuelve más activo el día de First y más largo el de Oeschinensee. No hace falta coche.\n\nLa base del Oberland será Lauterbrunnen, cerca de la estación: equilibra Wengen, Mürren y las salidas hacia otros valles. Dormir en Wengen es una alternativa con más ambiente de montaña, pero añade una subida en tren con la maleta y tiempo a las excursiones. Recalcula los traslados si cambias la base.",
+  "costs": [
+    [
+      "Vuelos MEX–ZRH ida y vuelta · estimación 2027",
+      22000,
+      32000
+    ],
+    [
+      "12 noches · habitación privada y baño propio",
+      31000,
+      44000
+    ],
+    [
+      "Comidas durante el viaje",
+      13000,
+      18000
+    ],
+    [
+      "Trenes, buses y tarjeta/pase elegido",
+      8000,
+      12000
+    ],
+    [
+      "First, Gornergrat, Oeschinensee y accesos locales",
+      6000,
+      9000
+    ],
+    [
+      "Seguro y margen para imprevistos",
+      6000,
+      9000
+    ]
+  ],
+  "tips": [
+    "Calendario recomendado, no reserva: 4–17 septiembre de 2027. Son 14 días naturales, 12 noches de hotel y 10 días de lunes a viernes. Si tu empresa da libre el 16 de septiembre, podrían ser 9 días de vacaciones; confírmalo con Recursos Humanos. Este viaje no consume el saldo que vence en 2026.",
+    "Presupuesto de planeación para una persona viajando sola, sin compartir habitación. Los hoteles equivalen aproximadamente a $2,580–$3,670 MXN por noche. Son provisiones, no cotizaciones ni disponibilidad comprobada de 2027. Si la oferta privada del valle supera ese rango, amplía presupuesto antes de reservar.",
+    "Modelo orientativo: 1 CHF = 22–25 MXN como supuesto de conversión para planear, no cotización actual ni pronóstico. Trenes/pase y montaña suman $14,000–$21,000 MXN; el pase se paga una sola vez y los billetes cubiertos no vuelven a sumarse. Recalcula con tarifas, descuentos y cambio reales.",
+    "Los gastos diarios son referencias de comidas, movilidad y visitas sin vuelo ni hotel. Ya están dentro del total por categorías; no se suman otra vez. Los días de margen no presupuestan una segunda subida a First o Gornergrat.",
+    "Prioriza First Cliff Walk, Lauterbrunnen/Wengen, Mürren, Oeschinensee y Gornergrat. Bachalpsee y Riffelsee se hacen sólo con sendero abierto y energía suficiente. No añadí Jungfraujoch, Schilthorn, actividades de aventura ni restaurantes cerrados: aumentarían coste o carga del programa.",
+    "First Cliff Walk tiene exposición a la altura. Puedes omitir la pasarela y conservar el mirador y el día de montaña. No uses una foto soleada como garantía del aspecto que tendrá el lugar.",
+    "Oeschinensee es el día con más transporte: sal temprano y limita la caminata al acceso sencillo al lago. Si no compensa el esfuerzo o no hay condiciones, usa Interlaken y un paseo junto a sus lagos como alternativa; no añadas otra base sólo por esta visita.",
+    "Reserva alojamiento cancelable y decide las subidas de montaña según pronóstico, dentro de las condiciones de venta. Confirma el último descenso y las conexiones; no conviertas un sendero cerrado en una obligación por seguir el calendario."
+  ],
+  "sources": [
+    [
+      "Suiza Turismo · temporada alta",
+      "https://help.myswitzerland.com/hc/en-us/articles/213130009-When-is-the-high-season-in-Switzerland"
+    ],
+    [
+      "Suiza Turismo · Luzern–Interlaken Express",
+      "https://www.myswitzerland.com/en-ie/experiences/luzern-interlaken-express/"
+    ],
+    [
+      "SBB · horarios y billetes",
+      "https://www.sbb.ch/en"
+    ],
+    [
+      "SBB · Swiss Half Fare Card",
+      "https://www.sbb.ch/en/offers/swiss-half-fare-card"
+    ],
+    [
+      "Jungfrau · Grindelwald-First y teleférico",
+      "https://www.jungfrau.ch/en-gb/grindelwaldfirst/"
+    ],
+    [
+      "Jungfrau · caminata a Bachalpsee",
+      "https://www.jungfrau.ch/en-gb/grindelwaldfirst/lake-bachalpsee/"
+    ],
+    [
+      "Jungfrau · estado de operación",
+      "https://www.jungfrau.ch/en-gb/live/operating-info/"
+    ],
+    [
+      "Jungfrau · pases y entradas",
+      "https://www.jungfrau.ch/en-gb/prices-and-tickets/"
+    ],
+    [
+      "Oeschinensee · calendario publicado 2027",
+      "https://www.oeschinensee.ch/en/tarife-fahrplan/"
+    ],
+    [
+      "Oeschinensee · senderos y accesos",
+      "https://www.oeschinensee.ch/en/wandern/"
+    ],
+    [
+      "Gornergrat · horario",
+      "https://www.gornergrat.ch/en/pages/timetable-gornergrat-bahn"
+    ],
+    [
+      "Gornergrat · Riffelsee",
+      "https://www.gornergrat.ch/en/stories/riffelsee-lake"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-09-04",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa equipaje, documentos y la conexión de tu reserva.",
+      "pm": "Traslado a MEX para llegar unas tres horas antes de la salida internacional.",
+      "night": "Vuelo nocturno hacia Europa; la primera noche de hotel será al llegar a Suiza.",
+      "mobility": "MEX → conexión europea → ZRH. Horario por cotizar.",
+      "spend": 650,
+      "note": "El día 1 no tiene visitas ni hotel en Suiza."
+    },
+    {
+      "n": 2,
+      "date": "2027-09-05",
+      "title": "llegada y primer paseo junto al río",
+      "base": "Lucerna",
+      "places": [
+        "lucerne",
+        "kapellbrucke"
+      ],
+      "am": "Al llegar a ZRH, recoge equipaje y toma el tren hacia Lucerna.",
+      "pm": "Deja la maleta y, según la hora y el cansancio, recorre Kapellbrücke y unas calles del casco antiguo.",
+      "night": "Cena cerca del hotel y descansa.",
+      "mobility": "ZRH → Lucerna, aproximadamente 1–1¼ h en tren; después a pie o transporte urbano.",
+      "spend": 1900,
+      "note": "Una llegada tardía desplaza el paseo al día siguiente. Lucerna merece verla de día: tu paso anterior fue muy breve."
+    },
+    {
+      "n": 3,
+      "date": "2027-09-06",
+      "title": "puentes y lago, con tiempo",
+      "base": "Lucerna",
+      "places": [
+        "kapellbrucke",
+        "lake-lucerne"
+      ],
+      "am": "Recorre el casco antiguo y el río Reuss sin prisa; puedes volver a Spreuerbrücke y acercarte a San Leodegar.",
+      "pm": "Paseo por el lago de los Cuatro Cantones. Si el tiempo y el horario convienen, elige un barco corto de 1–2 horas, sin añadir otra montaña.",
+      "night": "Cena en Lucerna y prepara el traslado del día siguiente.",
+      "mobility": "A pie y, opcionalmente, barco. Confirma recorrido y cobertura de tu billete o pase.",
+      "spend": 2100,
+      "note": "Con lluvia persistente, cambia el barco por el Museo Suizo del Transporte; escoge una alternativa, no ambas."
+    },
+    {
+      "n": 4,
+      "date": "2027-09-07",
+      "title": "Tren panorámico hacia el valle",
+      "base": "Lauterbrunnen",
+      "places": [
+        "interlaken",
+        "lauterbrunnen"
+      ],
+      "am": "Viaja en el Luzern–Interlaken Express. El trayecto es parte de la experiencia y evita una jornada entera en un tren panorámico.",
+      "pm": "Conecta hacia Lauterbrunnen, instala tu base para seis noches y da un paseo corto por el pueblo.",
+      "night": "Cena en el valle; revisa el pronóstico de los próximos días.",
+      "mobility": "Lucerna → Interlaken Ost, unos 1 h 50 min; conexión a Lauterbrunnen. Total orientativo 2½–3 h entre estaciones.",
+      "spend": 2400,
+      "note": "No se programa una subida de montaña el día de cambio de hotel. Los días 5–9 pueden intercambiarse sin mover alojamiento."
+    },
+    {
+      "n": 5,
+      "date": "2027-09-08",
+      "title": "el valle y una escapada a Wengen",
+      "base": "Lauterbrunnen",
+      "places": [
+        "lauterbrunnen",
+        "wengen"
+      ],
+      "am": "Camina por el valle y busca las vistas de Staubbach desde los accesos públicos. Regresa cuando te apetezca; no hace falta completar una ruta larga.",
+      "pm": "Sube en tren a Wengen y pasea entre chalets y miradores del valle. Toma tiempo para comer y sentarte frente al paisaje.",
+      "night": "Regresa a dormir a Lauterbrunnen.",
+      "mobility": "Paseos a pie y tren Lauterbrunnen–Wengen, aproximadamente 15 min por sentido.",
+      "spend": 1900,
+      "note": "Plan suave: 3–6 km a lo largo del día, recortables. No se presupone abierto el acceso detrás de la cascada."
+    },
+    {
+      "n": 6,
+      "date": "2027-09-09",
+      "title": "Grindelwald-First y First Cliff Walk",
+      "base": "Lauterbrunnen",
+      "places": [
+        "grindelwald",
+        "first-cliff-walk",
+        "bachalpsee"
+      ],
+      "am": "Viaja a Grindelwald y toma el teleférico a First. Recorre First Cliff Walk si está habilitado; la pasarela es la prioridad del día.",
+      "pm": "Si el sendero está abierto y te encuentras bien, camina a Bachalpsee: unas dos horas ida y vuelta de marcha, más pausas. Si no, disfruta el mirador y baja a pasear por Grindelwald.",
+      "night": "Regresa a Lauterbrunnen para cenar y dormir.",
+      "mobility": "Lauterbrunnen → Grindelwald vía Zweilütschinen, aproximadamente 40–60 min; añade acceso a la estación del teleférico y unos 25 min de góndola por sentido.",
+      "spend": 3200,
+      "note": "Reserva 3 horas para Bachalpsee contando fotos y descanso; no es un paseo llano urbano. Confirma el último descenso antes de caminar. Sin Flyer, Glider, carts ni otras actividades con coste adicional.",
+      "optionalPlaces": [
+        "bachalpsee"
+      ]
+    },
+    {
+      "n": 7,
+      "date": "2027-09-10",
+      "title": "Mürren y sus miradores",
+      "base": "Lauterbrunnen",
+      "places": [
+        "murren"
+      ],
+      "am": "Sube hacia Mürren mediante los transportes que estén operativos, por Grütschalp o por Stechelberg.",
+      "pm": "Pasea por el pueblo y sus miradores. Si buscas más caminata y la ruta está habilitada, recorre un tramo señalizado hacia Winteregg y vuelve en tren.",
+      "night": "Cena y descansa en Lauterbrunnen.",
+      "mobility": "Tren, teleférico y bus según el acceso elegido; calcula 30–60 min por sentido con esperas. Todo el día sin maletas.",
+      "spend": 2300,
+      "note": "Jornada de 2–5 km a tu medida. No incluye subir al Schilthorn; conserva una tarde tranquila después de First."
+    },
+    {
+      "n": 8,
+      "date": "2027-09-11",
+      "title": "el lago Oeschinensee",
+      "base": "Lauterbrunnen",
+      "places": [
+        "oeschinensee"
+      ],
+      "am": "Sal temprano hacia Kandersteg, con conexiones en Interlaken y Spiez. Camina o usa transporte local hasta el teleférico.",
+      "pm": "Sube y toma el acceso sencillo a la orilla: unos 30 min desde la estación superior. Almuerza, disfruta del lago y vuelve por la misma ruta.",
+      "night": "Regresa a Lauterbrunnen; deja el resto de la noche libre.",
+      "mobility": "Calcula 2–2½ h en tren por sentido hasta Kandersteg, más acceso al teleférico, esperas y la caminata. Es una excursión de día completo.",
+      "spend": 2900,
+      "note": "Teleférico de verano 2027 publicado hasta el 19 de septiembre, sujeto a operación. Comprueba reserva de franja, senderos abiertos y último descenso. Sin circuito alto Heuberg; si no hay condiciones, usa el día de margen."
+    },
+    {
+      "n": 9,
+      "date": "2027-09-12",
+      "title": "un día de margen en el Oberland",
+      "base": "Lauterbrunnen",
+      "places": [
+        "lauterbrunnen",
+        "interlaken"
+      ],
+      "am": "Recupera First u Oeschinensee si una jornada anterior tuvo mala visibilidad. Si ya completaste las visitas, empieza sin alarma.",
+      "pm": "Descansa en el valle o pasea por Interlaken y alguna ribera cercana, sin convertir la tarde en otra excursión obligatoria.",
+      "night": "Última noche en Lauterbrunnen; prepara el equipaje.",
+      "mobility": "A pie o tren local. Si recuperas una excursión pendiente, utiliza su logística y presupuesto una sola vez.",
+      "spend": 1600,
+      "note": "Es un margen meteorológico real, no un día para añadir Jungfraujoch por obligación. Interlaken es opcional.",
+      "optionalPlaces": [
+        "interlaken"
+      ]
+    },
+    {
+      "n": 10,
+      "date": "2027-09-13",
+      "title": "de los valles al Cervino",
+      "base": "Zermatt",
+      "places": [
+        "zermatt"
+      ],
+      "am": "Tren hacia Zermatt con las conexiones que marque SBB, normalmente vía Interlaken, Spiez y Visp.",
+      "pm": "Instálate y conoce el pueblo; busca un primer mirador del Cervino si las nubes lo permiten.",
+      "night": "Cena cerca del hotel y consulta la previsión para la subida de montaña.",
+      "mobility": "Lauterbrunnen → Zermatt, aproximadamente 3–4 h en tren con cambios. Camina al hotel o usa su traslado eléctrico si lo ofrece.",
+      "spend": 2500,
+      "note": "No se añade Gornergrat esta tarde. Tendrás dos días completos para elegir el mejor cielo."
+    },
+    {
+      "n": 11,
+      "date": "2027-09-14",
+      "title": "Gornergrat y Riffelsee",
+      "base": "Zermatt",
+      "places": [
+        "gornergrat",
+        "riffelsee"
+      ],
+      "am": "Sube en tren de cremallera al Gornergrat si hay buena visibilidad. Disfruta los miradores sin hacer una caminata larga obligatoria.",
+      "pm": "En el descenso, Riffelsee es una parada opcional desde Rotenboden si el camino está habilitado. Vuelve a la estación con margen y baja en tren.",
+      "night": "Cena y descanso en Zermatt.",
+      "mobility": "Tren de cremallera, unos 35 min hasta Gornergrat. Para Riffelsee, añade paseo corto desde Rotenboden y tiempo para volver cuesta arriba.",
+      "spend": 3300,
+      "note": "El reflejo requiere poco viento y cielo abierto. Sin condiciones, permanece en los miradores habilitados. Confirma que el billete admite las paradas previstas.",
+      "optionalPlaces": [
+        "riffelsee"
+      ]
+    },
+    {
+      "n": 12,
+      "date": "2027-09-15",
+      "title": "una segunda oportunidad para la montaña o descanso",
+      "base": "Zermatt",
+      "places": [
+        "zermatt",
+        "matterhorn-museum"
+      ],
+      "am": "Si el día anterior no hubo visibilidad, utiliza hoy para Gornergrat. Si ya subiste, pasea por el casco antiguo y sus miradores.",
+      "pm": "Opcional: Museo del Cervino o una tarde tranquila en el pueblo. No se programa otra cumbre de pago.",
+      "night": "Última noche alpina, en el mismo hotel.",
+      "mobility": "A pie o autobús eléctrico; si recuperas Gornergrat, sigue su organización del día anterior.",
+      "spend": 1600,
+      "note": "Este margen reduce el riesgo de perder la gran vista, pero no garantiza que despeje. La subida pendiente no se cuenta dos veces en el presupuesto.",
+      "optionalPlaces": [
+        "matterhorn-museum"
+      ]
+    },
+    {
+      "n": 13,
+      "date": "2027-09-16",
+      "title": "paseo por el casco antiguo antes del regreso",
+      "base": "Zúrich / aeropuerto",
+      "places": [
+        "zurich"
+      ],
+      "am": "Viaja a Zúrich y deja el equipaje en el hotel de la última noche.",
+      "pm": "Si te apetece, paseo corto por el casco antiguo y el Limmat. La ciudad es una escala logística, no otra base larga.",
+      "night": "Cena temprano y deja preparada la salida a ZRH.",
+      "mobility": "Zermatt → Zúrich, unas 3½–4 h en tren con cambios; añade el trayecto al hotel elegido.",
+      "spend": 2600,
+      "note": "No se incluye Basilea. La noche final evita un traslado largo desde Zermatt el mismo día del vuelo."
+    },
+    {
+      "n": 14,
+      "date": "2027-09-17",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Entrega la habitación y sal al aeropuerto con el margen que requiera tu vuelo.",
+      "pm": "ZRH → conexión europea → MEX en una misma reserva.",
+      "night": "Llegada a México según el billete; no des por hecho que todas las conexiones llegan el mismo día.",
+      "mobility": "Tren local a ZRH y vuelos reservados. Horario y equipaje por confirmar.",
+      "spend": 650,
+      "note": "El calendario termina el 17 de septiembre de 2027 y cuenta ese viernes como laboral. Comprueba fecha real de llegada antes de pedir vacaciones."
+    }
+  ],
+  "work": 10,
+  "profile": {
+    "pace": "Equilibrado / activo",
+    "solo": "Fácil",
+    "weather": "Alta",
+    "why": "Tres bases principales con 2, 6 y 3 noches, más una noche logística en Zúrich. Excursiones a pie y un día de margen en cada región alpina; Oeschinensee es la jornada más larga.",
+    "weatherWhy": "La visibilidad y el estado de senderos condicionan First, los lagos y el Cervino incluso en septiembre. Las visitas de montaña pueden intercambiarse dentro de cada estancia.",
+    "soloWhy": "Sin coche y con buenas conexiones; viajar solo es sencillo, pero los senderos exigen más criterio que un recorrido urbano. No seguir rutas cerradas."
+  },
+  "experiences": [
+    "Lucerna de día, sus puentes y el lago",
+    "El Luzern–Interlaken Express como traslado panorámico",
+    "Lauterbrunnen, Wengen y Mürren sin cambiar de hotel",
+    "Grindelwald-First y la pasarela First Cliff Walk",
+    "Bachalpsee y Oeschinensee, según estado del sendero",
+    "El Cervino desde Gornergrat y Riffelsee opcional"
+  ],
+  "routeCities": [
+    "Lucerna",
+    "Interlaken",
+    "Lauterbrunnen",
+    "Wengen",
+    "Grindelwald",
+    "Mürren",
+    "Kandersteg",
+    "Zermatt",
+    "Zúrich"
+  ],
+  "cover": "lauterbrunnen",
+  "stays": [
+    [
+      "Lucerna · 2 noches",
+      "Cerca de la estación o el casco antiguo, con acceso sencillo desde el tren."
+    ],
+    [
+      "Lauterbrunnen · 6 noches",
+      "Prioriza habitación privada con baño propio cerca de la estación; confirma horarios de recepción, acceso con maleta y disponibilidad cancelable. Wengen es una alternativa, con traslados por recalcular."
+    ],
+    [
+      "Zermatt · 3 noches",
+      "Cerca de la estación, sin pendientes largas con equipaje; confirma traslado del hotel si queda lejos."
+    ],
+    [
+      "Zúrich · 1 noche",
+      "Junto a la estación central o con buena conexión a ZRH. Elige según la hora real del vuelo."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Lucerna",
+      "coords": [
+        47.0502,
+        8.3093
+      ],
+      "base": true,
+      "kind": "Base para dormir",
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Interlaken",
+      "coords": [
+        46.6863,
+        7.8632
+      ],
+      "base": false,
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Lauterbrunnen",
+      "coords": [
+        46.5935,
+        7.909
+      ],
+      "base": true,
+      "kind": "Base para dormir",
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Wengen",
+      "coords": [
+        46.6059,
+        7.9219
+      ],
+      "base": false,
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Grindelwald",
+      "coords": [
+        46.6242,
+        8.0414
+      ],
+      "base": false,
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "order": 5
+    },
+    {
+      "name": "Mürren",
+      "coords": [
+        46.5594,
+        7.8926
+      ],
+      "base": false,
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "order": 6
+    },
+    {
+      "name": "Kandersteg",
+      "coords": [
+        46.4956,
+        7.6733
+      ],
+      "base": false,
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "order": 7
+    },
+    {
+      "name": "Zermatt",
+      "coords": [
+        46.0207,
+        7.7491
+      ],
+      "base": true,
+      "kind": "Base para dormir",
+      "optional": false,
+      "order": 8
+    },
+    {
+      "name": "Zúrich",
+      "coords": [
+        47.3769,
+        8.5417
+      ],
+      "base": true,
+      "kind": "Base para dormir",
+      "optional": false,
+      "order": 9
+    }
+  ],
+  "family": {
+    "label": "Suiza a pie · temporada cálida 2027",
+    "note": "Valles, pueblos y lagos · trenes entre bases",
+    "other": "suiza-italia"
+  }
+}

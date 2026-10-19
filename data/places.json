@@ -1,0 +1,1182 @@
+{
+  "sagrada": {
+    "name": "Sagrada Familia",
+    "desc": "La basílica de Gaudí transforma la luz en color entre columnas que parecen árboles. Aquí sí entrarás; reserva una franja de mañana."
+  },
+  "guell": {
+    "name": "Park Güell",
+    "desc": "Jardín modernista sobre Barcelona, con mosaicos, columnas inclinadas y vistas urbanas. La zona monumental requiere entrada."
+  },
+  "batllo": {
+    "name": "Casa Batlló",
+    "desc": "Una casa de Gaudí que convierte fachada, escaleras y azotea en un universo orgánico. El interior merece una visita pausada."
+  },
+  "gotico": {
+    "name": "Barrio Gótico",
+    "desc": "Calles medievales, plazas pequeñas y la catedral en el núcleo histórico de Barcelona. Ideal para caminar sin un horario rígido."
+  },
+  "santpau": {
+    "name": "Recinto Modernista de Sant Pau",
+    "desc": "Antiguo hospital de pabellones modernistas, cerámica y jardines. Una de las visitas arquitectónicas más bonitas de Barcelona."
+  },
+  "montjuic": {
+    "name": "Montjuïc",
+    "desc": "Colina de Barcelona con jardines, museos y miradores hacia la ciudad y el puerto. El paseo puede combinarse con una visita al Museo Nacional de Arte de Cataluña."
+  },
+  "prado": {
+    "name": "Museo del Prado",
+    "desc": "Pinacoteca esencial para Velázquez, Goya y el arte europeo. Selecciona obras clave para evitar una visita agotadora."
+  },
+  "palacio": {
+    "name": "Palacio Real de Madrid",
+    "desc": "Residencia ceremonial con salones, escalinatas y decoración monumental. La visita interior se reserva por separado."
+  },
+  "retiro": {
+    "name": "Parque del Retiro",
+    "desc": "Jardín histórico madrileño con estanque y paseos arbolados. El Palacio de Cristal puede tener cierres por obras; el parque basta para disfrutarlo."
+  },
+  "toledo": {
+    "name": "Toledo",
+    "desc": "Ciudad amurallada sobre el Tajo: catedral, callejuelas y herencia cristiana, judía e islámica. Conviene recorrerla a pie con pausas."
+  },
+  "alcazar": {
+    "name": "Real Alcázar de Sevilla",
+    "desc": "Palacio vivo de patios mudéjares y jardines. La visita combina arquitectura islámica y transformaciones cristianas."
+  },
+  "catedral": {
+    "name": "Catedral de Sevilla y Giralda",
+    "desc": "Gran catedral gótica junto a un antiguo alminar convertido en campanario. Las rampas de la Giralda permiten vistas amplias de la ciudad."
+  },
+  "plazaespana": {
+    "name": "Plaza de España, Sevilla",
+    "desc": "Conjunto de ladrillo y azulejos de la exposición de 1929, con canales y bancos dedicados a provincias españolas."
+  },
+  "cordoba": {
+    "name": "Mezquita-Catedral de Córdoba",
+    "desc": "Bosque de columnas y arcos bicolores dentro de un edificio transformado a lo largo de siglos. El principal motivo para visitar Córdoba."
+  },
+  "alhambra": {
+    "name": "Alhambra y Generalife",
+    "desc": "Palacios nazaríes, fortaleza y jardines sobre Granada. La hora de Palacios Nazaríes es estricta: compra primero esta entrada."
+  },
+  "albaicin": {
+    "name": "Albaicín",
+    "desc": "Barrio de origen medieval con casas blancas y miradores hacia la Alhambra. Cuestas y empedrado: lleva calzado cómodo."
+  },
+  "malaga": {
+    "name": "Alcazaba de Málaga",
+    "desc": "Fortificación palaciega musulmana sobre el centro, con patios y vistas al puerto. Se combina con el teatro romano a sus pies."
+  },
+  "ronda": {
+    "name": "Puente Nuevo de Ronda",
+    "desc": "Puente monumental sobre el desfiladero del Tajo, entre las dos partes de la ciudad. Los miradores muestran por qué merece la excursión."
+  },
+  "marienplatz": {
+    "name": "Marienplatz",
+    "desc": "Plaza central de Múnich, dominada por el ayuntamiento neogótico. En diciembre es el corazón de la experiencia navideña."
+  },
+  "neuschwanstein": {
+    "name": "Castillo de Neuschwanstein",
+    "desc": "Palacio romántico de Luis II en las estribaciones alpinas. El interior sólo se visita con turno; los accesos exteriores dependen del hielo."
+  },
+  "nymphenburg": {
+    "name": "Palacio de Nymphenburg",
+    "desc": "Residencia barroca de verano de la casa bávara. En invierno prioriza el interior y un paseo breve por sus jardines."
+  },
+  "salzburg": {
+    "name": "Salzburgo",
+    "desc": "Ciudad barroca austríaca entre montañas, con fortaleza y calles históricas. Se visita desde Múnich sin cambiar de hotel."
+  },
+  "zugspitze": {
+    "name": "Zugspitze",
+    "desc": "La cima más alta de Alemania, accesible mediante transporte de montaña. Las vistas dependen de nubes y viento; el día debe ser intercambiable."
+  },
+  "nuremberg": {
+    "name": "Núremberg",
+    "desc": "Ciudad de castillo, iglesias y mercados navideños. La excursión en tren ofrece un contraste medieval con Múnich."
+  },
+  "lucerne": {
+    "name": "Lucerna",
+    "desc": "Ciudad junto al lago de los Cuatro Cantones, conocida por su puente de madera y casco histórico. Una base suave para empezar Suiza."
+  },
+  "zermatt": {
+    "name": "Zermatt y el Cervino",
+    "desc": "Pueblo alpino sin tráfico privado ordinario, a los pies del Matterhorn. La silueta del monte sólo aparece si la visibilidad acompaña."
+  },
+  "gornergrat": {
+    "name": "Gornergrat",
+    "desc": "Mirador alpino al que asciende un tren de cremallera desde Zermatt. Ofrece vistas de glaciares y grandes cumbres."
+  },
+  "glacier": {
+    "name": "Glacier Express",
+    "desc": "Tren panorámico entre Zermatt y St. Moritz por valles, gargantas y pasos alpinos. El recorrido completo ocupa casi todo un día."
+  },
+  "stmoritz": {
+    "name": "St. Moritz",
+    "desc": "Localidad de la Engadina con lago y arquitectura alpina. Buen punto final para un viaje donde los trayectos importan tanto como las ciudades."
+  },
+  "belem": {
+    "name": "Torre de Belém",
+    "desc": "Torre de Belém, fortificación junto al Tajo y uno de los monumentos más conocidos de Lisboa. Su exterior forma parte del paseo; consulta por separado la disponibilidad del interior."
+  },
+  "jeronimos": {
+    "name": "Monasterio de los Jerónimos",
+    "desc": "Claustro y templo manuelinos de piedra tallada. Es la visita arquitectónica clave de Belém."
+  },
+  "alfama": {
+    "name": "Alfama",
+    "desc": "Barrio de callejuelas y miradores en Lisboa. Combina caminata, tranvía cuando resulte práctico y una noche de fado."
+  },
+  "pena": {
+    "name": "Palacio da Pena",
+    "desc": "Palacio romántico de colores en las montañas de Sintra. Reserva horario y cuenta tiempo para subir desde el pueblo."
+  },
+  "regaleira": {
+    "name": "Quinta da Regaleira",
+    "desc": "Finca de jardines simbólicos, grutas y pozo iniciático. Se disfruta con tiempo y zapatos que no resbalen."
+  },
+  "ribeira": {
+    "name": "Ribeira de Porto",
+    "desc": "Frente histórico del Duero, con fachadas coloridas y puente de hierro. La orilla de Gaia ofrece la mejor vista del conjunto."
+  },
+  "lello": {
+    "name": "Livraria Lello",
+    "desc": "Librería histórica de Porto con escalera escultórica y decoración neogótica. Requiere entrada y puede estar muy concurrida."
+  },
+  "douro": {
+    "name": "Valle del Douro",
+    "desc": "Valle portugués de viñedos en terrazas junto al río Duero. Una excursión permite combinar miradores y bodegas; las actividades concretas dependen del recorrido contratado."
+  },
+  "guimaraes": {
+    "name": "Guimarães",
+    "desc": "Centro histórico portugués de plazas, casas antiguas y castillo. Una excursión tranquila desde Porto."
+  },
+  "coimbra": {
+    "name": "Coimbra",
+    "desc": "Ciudad universitaria sobre el Mondego. Universidad histórica, biblioteca y calles empinadas; es una excursión opcional desde Porto."
+  },
+  "acropolis": {
+    "name": "Acrópolis de Atenas",
+    "desc": "Colina de templos clásicos dominada por el Partenón. La visita exterior es prioritaria con luz y tiempo seco."
+  },
+  "delphi": {
+    "name": "Delfos",
+    "desc": "Santuario de Apolo sobre una ladera montañosa, con museo arqueológico. Se puede visitar como excursión organizada desde Atenas."
+  },
+  "meteora": {
+    "name": "Meteora",
+    "desc": "Paisaje de grandes pilares de roca coronados por monasterios. Sus miradores permiten apreciar el conjunto y la relación entre arquitectura y montaña."
+  },
+  "nafplio": {
+    "name": "Nafplio",
+    "desc": "Antigua capital griega con casas neoclásicas, calles venecianas y fortaleza. Una base pequeña para explorar la Argólida."
+  },
+  "mycenae": {
+    "name": "Micenas",
+    "desc": "Ciudadela de la Edad de Bronce con la Puerta de los Leones y tumbas monumentales. Ayuda a entender una Grecia anterior a Atenas clásica."
+  },
+  "epidaurus": {
+    "name": "Epidauro",
+    "desc": "Santuario antiguo de curación cuyo teatro es famoso por proporciones y acústica. Se combina con Micenas mediante traslado contratado."
+  },
+  "palermo": {
+    "name": "Catedral de Palermo",
+    "desc": "Catedral que reúne transformaciones de distintas épocas y refleja la mezcla cultural de Palermo. La fotografía muestra el monumento que visitarás durante el recorrido por el centro."
+  },
+  "monreale": {
+    "name": "Catedral de Monreale",
+    "desc": "Templo normando con mosaicos dorados y claustro. Es una de las visitas artísticas más impresionantes de Sicilia."
+  },
+  "agrigento": {
+    "name": "Valle de los Templos, Agrigento",
+    "desc": "Conjunto de templos griegos en una cresta de la antigua Akragas. En invierno disfruta las primeras horas de luz."
+  },
+  "ortigia": {
+    "name": "Ortigia, Siracusa",
+    "desc": "Isla histórica de Siracusa con catedral, plazas de piedra clara y paseos junto al mar. Merece un día entero."
+  },
+  "noto": {
+    "name": "Noto",
+    "desc": "Ciudad de fachadas barrocas en piedra dorada, reconstruida después del terremoto de 1693. Ideal para una excursión pausada."
+  },
+  "catania": {
+    "name": "Catania",
+    "desc": "Ciudad barroca al pie del Etna, construida en buena parte con piedra volcánica. Mercados y Piazza Duomo dan carácter al recorrido."
+  },
+  "etna": {
+    "name": "Etna",
+    "desc": "Volcán activo de Sicilia. Una excursión guiada adapta el acceso a actividad volcánica, nieve y viento; no promete llegar a los cráteres de cima."
+  },
+  "taormina": {
+    "name": "Taormina",
+    "desc": "Ciudad elevada con teatro antiguo y vistas al mar y al Etna. La visita cultural funciona también fuera de temporada de playa."
+  },
+  "hagia": {
+    "name": "Santa Sofía",
+    "desc": "Monumento bizantino transformado en mezquita. El circuito turístico y el acceso para culto son distintos; comprueba la entrada correspondiente."
+  },
+  "blue": {
+    "name": "Mezquita Azul",
+    "desc": "Mezquita otomana de grandes cúpulas y azulejería. La entrada turística se adapta a horarios de oración y requiere vestimenta apropiada."
+  },
+  "topkapi": {
+    "name": "Palacio Topkapı",
+    "desc": "Antigua residencia de los sultanes otomanos, formada por patios y pabellones. El harén puede requerir una modalidad de entrada específica."
+  },
+  "cappadocia": {
+    "name": "Capadocia",
+    "desc": "Paisaje de toba volcánica, chimeneas de hadas e iglesias excavadas. Cuatro noches permiten margen meteorológico para el globo."
+  },
+  "ephesus": {
+    "name": "Éfeso",
+    "desc": "Ciudad romana con calles de mármol, teatro y Biblioteca de Celso. Las casas aterrazadas suelen tener un acceso adicional."
+  },
+  "izmir": {
+    "name": "Izmir",
+    "desc": "Ciudad portuaria del Egeo, con paseo Kordon y bazar Kemeraltı. Es una base práctica para visitar Éfeso."
+  },
+  "capitol": {
+    "name": "Capitolio de Estados Unidos",
+    "desc": "Sede del Congreso en Washington. El tour interior requiere reserva; la visita no implica acceso a las cámaras legislativas."
+  },
+  "lincoln": {
+    "name": "Lincoln Memorial",
+    "desc": "Monumento dedicado a Abraham Lincoln al extremo del National Mall, frente al estanque reflectante."
+  },
+  "smithsonian": {
+    "name": "Museos Smithsonian",
+    "desc": "Conjunto de museos públicos de arte, ciencia e historia. Muchos son gratuitos; algunos necesitan pases con hora."
+  },
+  "georgetown": {
+    "name": "Georgetown",
+    "desc": "Barrio histórico de Washington con casas de ladrillo, calles comerciales y ribera del Potomac."
+  },
+  "frenchquarter": {
+    "name": "French Quarter",
+    "desc": "Núcleo histórico de Nueva Orleans, de balcones de hierro, patios y arquitectura criolla. Combina paseo diurno y música en vivo."
+  },
+  "gardendistrict": {
+    "name": "Garden District",
+    "desc": "Barrio de grandes casas históricas y jardines. Una ruta guiada permite entender su arquitectura sin acceder a propiedades privadas."
+  },
+  "bayou": {
+    "name": "Bayous de Luisiana",
+    "desc": "Humedales de cipreses y canales cerca de Nueva Orleans. En diciembre importa el paisaje; no se garantiza ver caimanes."
+  },
+  "strip": {
+    "name": "Las Vegas Strip",
+    "desc": "Avenida de grandes hoteles temáticos, arquitectura de espectáculo y salas de entretenimiento. Las distancias a pie son mayores de lo que parecen."
+  },
+  "hoover": {
+    "name": "Hoover Dam",
+    "desc": "Presa sobre el Colorado, junto al lago Mead. Los tours de interior y miradores tienen acceso y reservas diferentes."
+  },
+  "grandcanyon": {
+    "name": "Grand Canyon, South Rim",
+    "desc": "Borde sur del gran cañón del Colorado, dentro del parque nacional. No es Grand Canyon West ni Skywalk; el trayecto desde Vegas es largo."
+  },
+  "alamo": {
+    "name": "The Alamo",
+    "desc": "Antigua misión y lugar histórico de la revolución texana. Reserva el acceso y distingue iglesia de exhibiciones de pago."
+  },
+  "riverwalk": {
+    "name": "San Antonio River Walk",
+    "desc": "Paseo urbano junto al río, entre puentes, restaurantes y vegetación. En diciembre puede disfrutarse de la iluminación estacional."
+  },
+  "missions": {
+    "name": "Misiones de San Antonio",
+    "desc": "Conjunto de misiones históricas al sur de la ciudad, reconocido por UNESCO. Un tour facilita recorrer varios templos sin coche propio."
+  },
+  "marrakech": {
+    "name": "Marrakech",
+    "desc": "Ciudad de medina, zocos y jardines, con la plaza Jemaa el-Fna como centro social. Un guía local mejora la primera orientación."
+  },
+  "bahia": {
+    "name": "Palacio de la Bahía",
+    "desc": "Palacio marroquí de patios, techos pintados y artesanía. Una buena introducción a la arquitectura de Marrakech."
+  },
+  "essaouira": {
+    "name": "Essaouira",
+    "desc": "Ciudad costera amurallada de puertas azules, puerto y fortificaciones. Un cambio de ambiente que no exige recorrer todo Marruecos."
+  },
+  "majorelle": {
+    "name": "Jardín Majorelle",
+    "desc": "Jardín de plantas y arquitectura azul intenso en Marrakech. La entrada se compra en el canal oficial con horario."
+  },
+  "agafay": {
+    "name": "Agafay",
+    "desc": "Paisaje pedregoso a las afueras de Marrakech. Sirve para una experiencia de atardecer, pero no es el Sahara ni tiene sus dunas."
+  },
+  "zurich": {
+    "name": "Zúrich, casco antiguo",
+    "desc": "Calles históricas a ambos lados del Limmat, iglesias y fachadas junto al río. La última noche aquí protege la conexión de regreso."
+  },
+  "alexandria": {
+    "name": "Old Town Alexandria",
+    "desc": "Centro histórico de casas de ladrillo y calles junto al Potomac, en Virginia. Una excursión fácil desde Washington en Metro y transporte local."
+  },
+  "residenz": {
+    "name": "Residenz de Múnich",
+    "desc": "Gran complejo palaciego de los gobernantes bávaros, con patios y salas ceremoniales. Una visita interior especialmente útil en días fríos."
+  },
+  "barcelona-cathedral": {
+    "name": "Catedral de Barcelona",
+    "desc": "Catedral gótica del centro histórico de Barcelona, con una fachada de agujas y relieves. La imagen muestra el exterior que conocerás durante el primer paseo."
+  },
+  "born-barcelona": {
+    "name": "Paseo del Born",
+    "desc": "Paseo arbolado del barrio del Born, rodeado de edificios históricos y pequeños comercios. Es una buena zona para descubrir Barcelona a pie y hacer una pausa entre visitas."
+  },
+  "passeig-gracia": {
+    "name": "Passeig de Gràcia",
+    "desc": "Gran avenida del Eixample donde se concentran edificios modernistas, entre ellos varias obras de Gaudí. Sus fachadas convierten el paseo en una visita arquitectónica."
+  },
+  "pedrera": {
+    "name": "Casa Milà · La Pedrera",
+    "desc": "Casa Milà, conocida como La Pedrera, es un edificio de Gaudí reconocible por su fachada ondulante y sus balcones de hierro. La foto muestra el exterior; entrar requiere una visita adicional."
+  },
+  "mnac": {
+    "name": "Museo Nacional de Arte de Cataluña",
+    "desc": "Museo Nacional de Arte de Cataluña, instalado en el Palau Nacional de Montjuïc. Reúne colecciones de arte y se alza sobre una amplia escalinata con vistas de Barcelona."
+  },
+  "port-vell": {
+    "name": "Port Vell",
+    "desc": "El antiguo puerto de Barcelona, abierto hoy al paseo junto al agua. La imagen muestra el Moll de la Fusta, uno de sus espacios peatonales frente a los barcos."
+  },
+  "santa-cruz-seville": {
+    "name": "Barrio de Santa Cruz",
+    "desc": "Barrio histórico de Sevilla formado por callejuelas, pequeñas plazas y casas con patios. El paseo permite disfrutar su arquitectura entre las grandes visitas monumentales."
+  },
+  "roman-bridge-cordoba": {
+    "name": "Puente romano de Córdoba",
+    "desc": "Puente de origen romano sobre el Guadalquivir, junto al casco histórico de Córdoba. Es uno de los mejores lugares para contemplar la silueta de la ciudad."
+  },
+  "juderia-cordoba": {
+    "name": "Judería de Córdoba",
+    "desc": "Antiguo barrio judío de Córdoba, de calles estrechas y fachadas blancas. La foto muestra el monumento a Maimónides, filósofo y médico nacido en la ciudad."
+  },
+  "maria-luisa": {
+    "name": "Parque de María Luisa",
+    "desc": "Gran parque sevillano de senderos, estanques y jardines, junto a la Plaza de España. La imagen muestra la Isleta de los Patos, uno de sus rincones para detenerse a descansar."
+  },
+  "triana": {
+    "name": "Triana y su puente",
+    "desc": "Barrio de Sevilla situado al otro lado del Guadalquivir, asociado a la cerámica y al flamenco. Su puente enlaza las dos orillas y da acceso al paseo por el barrio."
+  },
+  "casa-pilatos": {
+    "name": "Casa de Pilatos",
+    "desc": "Palacio sevillano que combina detalles mudéjares y renacentistas. Su patio, los azulejos y las galerías permiten disfrutar una visita de arquitectura a una escala más íntima."
+  },
+  "malaga-cathedral": {
+    "name": "Catedral de Málaga",
+    "desc": "Catedral renacentista que sobresale entre las calles del centro de Málaga. Su torre inacabada explica el apodo popular de «La Manquita»."
+  },
+  "malaga-port": {
+    "name": "Puerto de Málaga",
+    "desc": "El puerto de Málaga conecta el centro histórico con el mar. Sus muelles y paseos ofrecen una primera mirada al paisaje costero de la ciudad."
+  },
+  "malaga-roman-theatre": {
+    "name": "Teatro romano de Málaga",
+    "desc": "Restos del teatro romano situados a los pies de la Alcazaba. Ambos monumentos permiten reconocer distintas etapas de la historia de Málaga en un mismo entorno."
+  },
+  "picasso-malaga": {
+    "name": "Museo Picasso Málaga",
+    "desc": "Museo dedicado a Pablo Picasso, nacido en Málaga, instalado en el Palacio de Buenavista. La imagen muestra su acceso; las colecciones se conocen durante la visita interior."
+  },
+  "gibralfaro": {
+    "name": "Gibralfaro",
+    "desc": "Castillo situado en lo alto de una colina sobre Málaga. Sus murallas ofrecen panorámicas de la ciudad y el puerto; llegar implica una subida que puedes reducir con transporte."
+  },
+  "muelle-uno": {
+    "name": "Muelle Uno",
+    "desc": "Zona peatonal del puerto de Málaga, con locales y terrazas junto al agua. Es un paseo adecuado para terminar el día después de las visitas del centro."
+  },
+  "san-nicolas-granada": {
+    "name": "Mirador de San Nicolás",
+    "desc": "Mirador del Albaicín desde el que se contempla la Alhambra al otro lado del valle. La fotografía muestra la fortaleza desde este punto de observación."
+  },
+  "ronda-old-town": {
+    "name": "Palacio de Mondragón",
+    "desc": "Palacio de Mondragón, en el casco antiguo de Ronda, conocido por sus patios y su museo. Su exterior forma parte del paseo; entrar queda a tu elección."
+  },
+  "malagueta": {
+    "name": "Playa de la Malagueta",
+    "desc": "Playa urbana próxima al centro de Málaga. Su paseo marítimo permite caminar y descansar frente al Mediterráneo sin organizar otra excursión."
+  },
+  "plaza-mayor-madrid": {
+    "name": "Plaza Mayor de Madrid",
+    "desc": "Gran plaza porticada en el corazón del Madrid histórico. La estatua de Felipe III preside este espacio rodeado de fachadas uniformes y terrazas."
+  },
+  "puerta-sol": {
+    "name": "Puerta del Sol",
+    "desc": "Plaza central de Madrid y punto de encuentro de varias calles comerciales. El reloj de la Real Casa de Correos es la referencia de las campanadas de fin de año."
+  },
+  "letras-madrid": {
+    "name": "Plaza de Santa Ana",
+    "desc": "Plaza de Santa Ana, en el barrio de las Letras, vinculado a la historia literaria de Madrid. Sus terrazas y edificios sirven de pausa durante el paseo por el centro."
+  },
+  "almudena": {
+    "name": "Catedral de la Almudena",
+    "desc": "Catedral de Madrid, situada frente al Palacio Real. Su fachada y su entorno completan el recorrido monumental por esta zona de la ciudad."
+  },
+  "plaza-oriente": {
+    "name": "Plaza de Oriente",
+    "desc": "Plaza ajardinada entre el Palacio Real y el Teatro Real. Sus paseos y esculturas permiten una pausa entre las visitas del centro de Madrid."
+  },
+  "gran-via": {
+    "name": "Gran Vía de Madrid",
+    "desc": "Avenida madrileña conocida por sus edificios del siglo XX, teatros y comercios. La foto muestra el edificio de Telefónica, una de sus siluetas más reconocibles."
+  },
+  "toledo-cathedral": {
+    "name": "Catedral de Toledo",
+    "desc": "Gran catedral gótica del casco histórico de Toledo. Su arquitectura y sus colecciones hacen de ella una de las visitas principales de la excursión."
+  },
+  "santa-maria-blanca-toledo": {
+    "name": "Santa María la Blanca",
+    "desc": "Antigua sinagoga toledana, reconocible por sus columnas blancas y arcos de herradura. Su interior permite conocer parte de la herencia judía de la ciudad."
+  },
+  "mirador-valle-toledo": {
+    "name": "Mirador del Valle",
+    "desc": "Punto panorámico al otro lado del Tajo desde el que se aprecia el conjunto de Toledo. Su ubicación requiere un traslado adicional desde el casco histórico."
+  },
+  "baixa-lisbon": {
+    "name": "Praça do Comércio",
+    "desc": "Praça do Comércio, plaza monumental de Lisboa abierta al Tajo."
+  },
+  "deutsches-museum": {
+    "name": "Deutsches Museum",
+    "desc": "Museo de ciencia y tecnología situado junto al río Isar."
+  },
+  "grossmunster": {
+    "name": "Grossmünster",
+    "desc": "Iglesia Grossmünster, reconocible por sus dos torres en Zúrich."
+  },
+  "dom-luis-bridge": {
+    "name": "Puente de Dom Luís I",
+    "desc": "Puente de Dom Luís I sobre el río Duero."
+  },
+  "munich-town-hall": {
+    "name": "Nuevo Ayuntamiento de Múnich",
+    "desc": "Ayuntamiento neogótico de Múnich en la plaza Marienplatz."
+  },
+  "tile-museum-lisbon": {
+    "name": "Museo Nacional del Azulejo",
+    "desc": "Museo Nacional del Azulejo, instalado en el antiguo convento de Madre de Deus."
+  },
+  "discoveries-monument": {
+    "name": "Monumento a los Descubrimientos",
+    "desc": "Monumento a los Descubrimientos junto al Tajo, en Belém."
+  },
+  "st-lorenz-nuremberg": {
+    "name": "Iglesia de San Lorenzo, Núremberg",
+    "desc": "Iglesia gótica de San Lorenzo en Núremberg."
+  },
+  "getreidegasse": {
+    "name": "Getreidegasse",
+    "desc": "Calle histórica de Salzburgo conocida por sus letreros de hierro."
+  },
+  "garmisch": {
+    "name": "Garmisch-Partenkirchen",
+    "desc": "Localidad bávara al pie de los Alpes."
+  },
+  "santa-justa": {
+    "name": "Elevador de Santa Justa",
+    "desc": "Ascensor de hierro que une distintos niveles del centro de Lisboa."
+  },
+  "nuremberg-castle": {
+    "name": "Castillo imperial de Núremberg",
+    "desc": "Castillo imperial que domina el casco antiguo de Núremberg."
+  },
+  "frauenkirche-munich": {
+    "name": "Frauenkirche · Catedral de Múnich",
+    "desc": "Catedral de Múnich reconocible por sus dos torres con cúpulas."
+  },
+  "alte-pinakothek": {
+    "name": "Alte Pinakothek",
+    "desc": "Museo de pintura europea en el barrio de los museos de Múnich."
+  },
+  "hohensalzburg": {
+    "name": "Fortaleza de Hohensalzburg",
+    "desc": "Fortaleza situada sobre la ciudad de Salzburgo."
+  },
+  "sintra-national-palace": {
+    "name": "Palacio Nacional de Sintra",
+    "desc": "Palacio de Sintra, reconocible por sus dos grandes chimeneas cónicas."
+  },
+  "sao-jorge": {
+    "name": "Castillo de São Jorge",
+    "desc": "Castillo de São Jorge, situado sobre una colina de Lisboa."
+  },
+  "chiado": {
+    "name": "Chiado",
+    "desc": "Largo do Chiado, en el barrio histórico y comercial de Lisboa."
+  },
+  "sao-bento": {
+    "name": "Estación de São Bento",
+    "desc": "Estación de São Bento en el centro de Oporto."
+  },
+  "clerigos": {
+    "name": "Torre de los Clérigos",
+    "desc": "Torre de los Clérigos, campanario emblemático de Oporto."
+  },
+  "guimaraes-castle": {
+    "name": "Castillo de Guimarães",
+    "desc": "Castillo medieval de Guimarães."
+  },
+  "braganza-palace": {
+    "name": "Palacio de los Duques de Braganza",
+    "desc": "Palacio de los Duques de Braganza, en Guimarães."
+  },
+  "palacio-bolsa": {
+    "name": "Palacio de la Bolsa",
+    "desc": "Palacio de la Bolsa, edificio histórico del centro de Oporto."
+  },
+  "kapellbrucke": {
+    "name": "Kapellbrücke",
+    "desc": "Puente de la Capilla, puente cubierto de madera de Lucerna."
+  },
+  "pontresina": {
+    "name": "Pontresina",
+    "desc": "Pontresina, localidad de la Alta Engadina."
+  },
+  "bernina-line": {
+    "name": "Línea ferroviaria del Bernina",
+    "desc": "Tren del Bernina junto al Lago Bianco, en los Alpes suizos."
+  },
+  "lake-lucerne": {
+    "name": "Lago de los Cuatro Cantones",
+    "desc": "Lago de Lucerna, rodeado por paisajes de los Alpes suizos."
+  },
+  "rigi": {
+    "name": "Rigi",
+    "desc": "Macizo del Rigi, sobre el lago de Lucerna."
+  },
+  "matterhorn-museum": {
+    "name": "Museo del Cervino",
+    "desc": "Museo del Cervino, dedicado a la historia de Zermatt y la montaña."
+  },
+  "gaia-waterfront": {
+    "name": "Vila Nova de Gaia",
+    "desc": "Desde la ribera de Vila Nova de Gaia se contempla el frente histórico de Porto al otro lado del Duero. El paseo permite disfrutar esta perspectiva y acercarse a las bodegas de la zona."
+  },
+  "viktualienmarkt": {
+    "name": "Viktualienmarkt",
+    "desc": "Mercado al aire libre en el centro histórico de Múnich."
+  },
+  "swiss-transport-museum": {
+    "name": "Museo Suizo del Transporte",
+    "desc": "Museo Suizo del Transporte, en Lucerna."
+  },
+  "dc-mall": {
+    "name": "National Mall",
+    "desc": "Gran explanada de Washington que conecta museos, zonas verdes y monumentos. Es el eje de varios paseos del viaje y una buena primera aproximación a la ciudad."
+  },
+  "library-congress": {
+    "name": "Biblioteca del Congreso · Edificio Thomas Jefferson",
+    "desc": "El edificio Thomas Jefferson de la Biblioteca del Congreso destaca por su fachada monumental y sus interiores ornamentados."
+  },
+  "air-space": {
+    "name": "Museo Nacional del Aire y el Espacio",
+    "desc": "El museo del National Mall reúne aeronaves y vehículos de exploración espacial; la imagen muestra una de sus salas."
+  },
+  "natural-history-dc": {
+    "name": "Museo Nacional de Historia Natural",
+    "desc": "El museo de historia natural del Smithsonian, reconocible por su cúpula, alberga colecciones de ciencias naturales."
+  },
+  "national-gallery-dc": {
+    "name": "Galería Nacional de Arte",
+    "desc": "El edificio oeste de la National Gallery of Art presenta una fachada clásica y colecciones de pintura y escultura."
+  },
+  "vietnam-memorial": {
+    "name": "Memorial de los Veteranos de Vietnam",
+    "desc": "Los muros de granito negro del memorial recuerdan a los militares estadounidenses fallecidos o desaparecidos en la guerra de Vietnam."
+  },
+  "korean-memorial": {
+    "name": "Memorial de los Veteranos de la Guerra de Corea",
+    "desc": "El memorial de la guerra de Corea combina esculturas, un muro y espacios de recuerdo junto al National Mall."
+  },
+  "arlington": {
+    "name": "Cementerio Nacional de Arlington",
+    "desc": "Las hileras de lápidas de Arlington forman uno de los cementerios militares más conocidos de Estados Unidos."
+  },
+  "dupont-circle": {
+    "name": "Dupont Circle",
+    "desc": "La fuente y el parque de Dupont Circle sirven como punto de encuentro en este barrio de Washington."
+  },
+  "jackson-square": {
+    "name": "Jackson Square",
+    "desc": "Jackson Square es una plaza histórica del French Quarter, presidida por la catedral de San Luis."
+  },
+  "st-louis-cathedral": {
+    "name": "Catedral de San Luis, Nueva Orleans",
+    "desc": "La catedral de San Luis, con sus tres torres, es uno de los edificios más reconocibles de Nueva Orleans."
+  },
+  "st-charles-streetcar": {
+    "name": "Tranvía de St. Charles",
+    "desc": "El tranvía de St. Charles recorre una avenida histórica entre casas, robles y barrios de Nueva Orleans."
+  },
+  "magazine-street": {
+    "name": "Magazine Street",
+    "desc": "Magazine Street concentra comercios, cafés y fachadas de barrio a lo largo de Nueva Orleans."
+  },
+  "wwii-museum": {
+    "name": "Museo Nacional de la Segunda Guerra Mundial",
+    "desc": "El National WWII Museum presenta la historia de la Segunda Guerra Mundial mediante exposiciones y testimonios."
+  },
+  "frenchmen-street": {
+    "name": "Frenchmen Street",
+    "desc": "Frenchmen Street es una zona de música en directo; sus locales y vida nocturna ofrecen una escena distinta del French Quarter."
+  },
+  "bellagio-fountains": {
+    "name": "Fuentes del Bellagio",
+    "desc": "Las fuentes del Bellagio realizan espectáculos de agua en el lago situado frente al hotel."
+  },
+  "venetian-vegas": {
+    "name": "The Venetian Las Vegas",
+    "desc": "The Venetian recrea elementos de la arquitectura veneciana en uno de los grandes complejos del Strip."
+  },
+  "bellagio-conservatory": {
+    "name": "Jardín interior del Bellagio",
+    "desc": "El invernadero del Bellagio presenta instalaciones florales y decoraciones que cambian según la temporada."
+  },
+  "fremont-street": {
+    "name": "Fremont Street Experience",
+    "desc": "Fremont Street Experience reúne casinos y entretenimiento bajo una gran cubierta luminosa en el centro de Las Vegas."
+  },
+  "san-fernando-cathedral": {
+    "name": "Catedral de San Fernando",
+    "desc": "La catedral de San Fernando se levanta en el centro histórico de San Antonio, junto a Main Plaza."
+  },
+  "pearl-san-antonio": {
+    "name": "Pearl, San Antonio",
+    "desc": "El antiguo complejo de la cervecería Pearl conserva edificios industriales dentro de un distrito de comercios y gastronomía."
+  },
+  "san-antonio-art-museum": {
+    "name": "Museo de Arte de San Antonio",
+    "desc": "El San Antonio Museum of Art ocupa edificios de una antigua cervecería junto al río San Antonio."
+  },
+  "mission-san-jose": {
+    "name": "Misión de San José",
+    "desc": "La misión de San José conserva una iglesia y un recinto histórico dentro del parque de las misiones de San Antonio."
+  },
+  "mission-concepcion": {
+    "name": "Misión Concepción",
+    "desc": "Mission Concepción conserva su iglesia histórica de piedra y forma parte del conjunto de misiones de San Antonio."
+  },
+  "sultanahmet-square": {
+    "name": "Plaza de Sultanahmet · Antiguo Hipódromo",
+    "desc": "La plaza de Sultanahmet ocupa el antiguo Hipódromo de Constantinopla y conserva sus monumentos y obeliscos."
+  },
+  "basilica-cistern": {
+    "name": "Cisterna Basílica",
+    "desc": "La Cisterna Basílica es un gran depósito subterráneo sostenido por columnas, bajo el casco histórico de Estambul."
+  },
+  "gulhane": {
+    "name": "Parque Gülhane",
+    "desc": "El parque Gülhane ofrece caminos arbolados junto al recinto del palacio de Topkapi."
+  },
+  "bosphorus": {
+    "name": "Estrecho del Bósforo",
+    "desc": "El Bósforo separa los lados europeo y asiático de Estambul; sus orillas se recorren también en ferry."
+  },
+  "kadikoy": {
+    "name": "Kadıköy",
+    "desc": "Kadıköy es un distrito de la orilla asiática de Estambul, con muelles, calles comerciales y restaurantes."
+  },
+  "grand-bazaar": {
+    "name": "Gran Bazar de Estambul",
+    "desc": "El Gran Bazar reúne calles cubiertas y puestos comerciales en el centro histórico de Estambul."
+  },
+  "suleymaniye": {
+    "name": "Mezquita de Süleymaniye",
+    "desc": "La mezquita de Süleymaniye destaca por sus cúpulas y minaretes sobre una de las colinas de Estambul."
+  },
+  "spice-bazaar": {
+    "name": "Bazar de las Especias",
+    "desc": "El Bazar de las Especias reúne puestos de especias, dulces y otros productos bajo galerías cubiertas."
+  },
+  "galata-tower": {
+    "name": "Torre de Gálata",
+    "desc": "La torre de Gálata es un hito del barrio de Beyoğlu y un mirador sobre Estambul."
+  },
+  "istiklal": {
+    "name": "Avenida İstiklal",
+    "desc": "La avenida İstiklal es un eje peatonal de Beyoğlu, con comercios, edificios históricos y tranvía."
+  },
+  "goreme-town": {
+    "name": "Göreme",
+    "desc": "Göreme se extiende entre formaciones rocosas de Capadocia y sirve de base para explorar la región."
+  },
+  "goreme-open-air": {
+    "name": "Museo al Aire Libre de Göreme",
+    "desc": "El museo al aire libre de Göreme conserva iglesias y espacios excavados en la roca."
+  },
+  "derinkuyu": {
+    "name": "Ciudad subterránea de Derinkuyu",
+    "desc": "Derinkuyu permite recorrer pasajes y cámaras de una ciudad subterránea excavada en la roca."
+  },
+  "ihlara": {
+    "name": "Valle de Ihlara",
+    "desc": "El valle de Ihlara sigue el río Melendiz entre paredes rocosas y vegetación."
+  },
+  "uchisar": {
+    "name": "Uçhisar",
+    "desc": "El pueblo de Uçhisar rodea una gran formación rocosa que funciona como castillo y mirador de Capadocia."
+  },
+  "kordon-izmir": {
+    "name": "Paseo marítimo de Kordon",
+    "desc": "El Kordon es el paseo marítimo de Esmirna, con zonas verdes junto a la bahía."
+  },
+  "kemeralti": {
+    "name": "Kemeraltı",
+    "desc": "Kemeraltı es el barrio comercial histórico de Esmirna, con calles de mercado y comercios tradicionales."
+  },
+  "celsus": {
+    "name": "Biblioteca de Celso",
+    "desc": "La fachada reconstruida de la biblioteca de Celso es uno de los monumentos más reconocibles de Éfeso."
+  },
+  "ephesus-terrace-houses": {
+    "name": "Casas de la Terraza de Éfeso",
+    "desc": "Las casas en terraza de Éfeso permiten ver viviendas antiguas con restos de decoración y espacios domésticos."
+  },
+  "plaka": {
+    "name": "Plaka",
+    "desc": "Barrio histórico situado a los pies de la Acrópolis, con calles estrechas, casas de poca altura y pequeñas plazas. Es una primera aproximación tranquila a Atenas."
+  },
+  "acropolis-museum": {
+    "name": "Museo de la Acrópolis",
+    "desc": "Museo que conserva esculturas y hallazgos procedentes de la Acrópolis. Complementa la visita a la colina al explicar sus templos y la decoración que los acompañaba."
+  },
+  "ancient-agora": {
+    "name": "Ágora Antigua de Atenas",
+    "desc": "Recinto arqueológico del antiguo centro de la vida pública de Atenas. Entre sus restos se comprende cómo se organizaban el comercio, los encuentros y la actividad cívica."
+  },
+  "monastiraki": {
+    "name": "Monastiraki",
+    "desc": "Plaza y barrio del centro de Atenas, entre monumentos, comercios y calles animadas. Permite combinar el paseo histórico con una tarde más cotidiana."
+  },
+  "delphi-museum": {
+    "name": "Museo Arqueológico de Delfos",
+    "desc": "Museo dedicado a los hallazgos del santuario de Delfos. Sus esculturas y objetos ayudan a comprender la importancia religiosa y artística del antiguo oráculo."
+  },
+  "national-archaeological-athens": {
+    "name": "Museo Arqueológico Nacional de Atenas",
+    "desc": "Gran museo de Atenas dedicado a las culturas de la antigua Grecia. Sus colecciones abarcan distintas épocas y merecen seleccionar unas salas para visitarlas con calma."
+  },
+  "syntagma": {
+    "name": "Plaza Syntagma",
+    "desc": "Plaza central de Atenas, frente al Parlamento griego. Funciona como punto de referencia para orientarse en la ciudad y conectar varios barrios."
+  },
+  "lycabettus": {
+    "name": "Monte Licabeto",
+    "desc": "Colina que sobresale sobre los edificios de Atenas y ofrece vistas amplias de la ciudad. La subida es una propuesta opcional para una tarde despejada."
+  },
+  "palamidi": {
+    "name": "Fortaleza de Palamidi",
+    "desc": "Fortaleza veneciana construida sobre Nafplio, con murallas y vistas del golfo. Llegar en taxi al acceso reduce el esfuerzo de la subida desde el pueblo."
+  },
+  "great-meteoron": {
+    "name": "Gran Meteoro",
+    "desc": "Monasterio construido en la cima de una gran roca de Meteora. Su visita permite conocer espacios religiosos y contemplar el paisaje desde una posición elevada."
+  },
+  "varlaam": {
+    "name": "Monasterio de Varlaam",
+    "desc": "Monasterio de Meteora asentado sobre una formación rocosa. Combina edificios religiosos y vistas de los pilares vecinos; el acceso incluye escaleras."
+  },
+  "kastraki": {
+    "name": "Kastraki",
+    "desc": "Pueblo situado a los pies de las rocas de Meteora. Sus casas y calles ofrecen una perspectiva del paisaje distinta a la de los miradores elevados."
+  },
+  "st-stephen-meteora": {
+    "name": "Monasterio de San Esteban",
+    "desc": "Monasterio que domina la llanura desde uno de los promontorios de Meteora. Es una visita adicional propuesta para el día flexible, sujeta al calendario de apertura."
+  },
+  "quattro-canti": {
+    "name": "Quattro Canti",
+    "desc": "Cruce barroco de Palermo cuyas cuatro esquinas tienen fachadas curvas con esculturas. Es un punto de referencia para empezar a recorrer el centro histórico."
+  },
+  "norman-palace": {
+    "name": "Palacio de los Normandos",
+    "desc": "Palacio histórico de Palermo que fue sede de los gobernantes normandos de Sicilia. En su conjunto se encuentra la Capilla Palatina."
+  },
+  "palatine-chapel": {
+    "name": "Capilla Palatina",
+    "desc": "Capilla del Palacio de los Normandos, famosa por sus mosaicos dorados. Su decoración refleja la convivencia de tradiciones artísticas en la Sicilia medieval."
+  },
+  "teatro-massimo": {
+    "name": "Teatro Massimo",
+    "desc": "Gran teatro de ópera de Palermo, con una fachada monumental y amplia escalinata. Puedes contemplarlo desde fuera o reservar una visita guiada al interior."
+  },
+  "kalsa": {
+    "name": "La Kalsa",
+    "desc": "Barrio histórico de Palermo de plazas, iglesias y palacios. La imagen muestra uno de sus jardines, una pausa verde durante el recorrido a pie."
+  },
+  "palazzo-abatellis": {
+    "name": "Palazzo Abatellis",
+    "desc": "Palacio de Palermo que alberga una importante colección de arte siciliano. Es la visita cultural opcional del día más tranquilo en la ciudad."
+  },
+  "syracuse-cathedral": {
+    "name": "Catedral de Siracusa",
+    "desc": "Catedral de Siracusa, en Ortigia, construida aprovechando elementos de un antiguo templo. Su fachada barroca preside una amplia plaza de piedra clara."
+  },
+  "neapolis-syracuse": {
+    "name": "Teatro Griego de Siracusa",
+    "desc": "Teatro griego del parque arqueológico de Neápolis, en Siracusa. El conjunto está fuera de Ortigia y requiere reservar tiempo para el traslado y la visita."
+  },
+  "noto-cathedral": {
+    "name": "Catedral de Noto",
+    "desc": "Catedral situada sobre una escalinata en el centro barroco de Noto. Su fachada de piedra clara forma parte del conjunto monumental que distingue a la ciudad."
+  },
+  "taormina-theatre": {
+    "name": "Teatro Antiguo de Taormina",
+    "desc": "Teatro antiguo situado sobre la costa de Taormina. Su emplazamiento permite disfrutar al mismo tiempo la arquitectura y el paisaje del mar y las montañas."
+  },
+  "catania-fish-market": {
+    "name": "Mercado de pescado de Catania",
+    "desc": "Mercado tradicional del centro de Catania, con puestos de pescado y alimentos. La visita tiene más sentido durante su actividad comercial, que debes comprobar para ese día."
+  },
+  "benedictine-catania": {
+    "name": "Monasterio Benedictino de Catania",
+    "desc": "Antiguo monasterio de Catania con patios y espacios monumentales. Una visita guiada permite conocer su arquitectura y las transformaciones del conjunto."
+  },
+  "jemaa-el-fna": {
+    "name": "Jemaa el-Fna",
+    "desc": "Gran plaza de la medina de Marrakech, conocida por su actividad cotidiana y su ambiente al atardecer. Es un punto de encuentro entre mercados y calles del casco antiguo."
+  },
+  "ben-youssef-madrasa": {
+    "name": "Madrasa Ben Youssef",
+    "desc": "Antigua escuela coránica de Marrakech, organizada alrededor de un patio decorado con madera, yesería y azulejos. Es una visita para apreciar de cerca la artesanía del edificio."
+  },
+  "marrakech-museum": {
+    "name": "Museo de Marrakech",
+    "desc": "Museo instalado en un palacio histórico de Marrakech. La gran lámpara de su patio interior muestra la escala y riqueza decorativa del edificio."
+  },
+  "essaouira-port": {
+    "name": "Puerto de Essaouira",
+    "desc": "Puerto pesquero de Essaouira, donde las embarcaciones y la actividad de los trabajadores forman parte del paisaje cotidiano de la ciudad."
+  },
+  "essaouira-ramparts": {
+    "name": "Murallas de Essaouira",
+    "desc": "Fortificaciones de piedra frente al Atlántico que protegían Essaouira. El paseo permite observar las murallas y la costa desde los accesos habilitados."
+  },
+  "essaouira-beach": {
+    "name": "Playa de Essaouira",
+    "desc": "Amplia playa atlántica junto a Essaouira. Es una propuesta para caminar y contemplar el mar; en esta época del año el programa no depende de bañarse."
+  },
+  "eibsee": {
+    "name": "Lago Eibsee",
+    "desc": "El lago Eibsee en otoño, con las montañas del Wetterstein al fondo."
+  },
+  "fussen": {
+    "name": "Casco histórico de Füssen",
+    "desc": "Plaza y fuente del casco histórico de Füssen, entre Reichenstraße y Ritterstraße."
+  },
+  "oberammergau": {
+    "name": "Fachadas pintadas de Oberammergau",
+    "desc": "Escena urbana con fachadas pintadas de Oberammergau."
+  },
+  "linderhof": {
+    "name": "Palacio de Linderhof",
+    "desc": "Vista del palacio de Linderhof en Baviera."
+  },
+  "vienna-stephansdom": {
+    "name": "Stephansdom · catedral de San Esteban",
+    "desc": "Catedral de San Esteban, en el centro histórico de Viena."
+  },
+  "vienna-graben": {
+    "name": "Graben",
+    "desc": "La calle Graben, paseo peatonal del centro de Viena."
+  },
+  "vienna-peterskirche": {
+    "name": "Peterskirche · iglesia de San Pedro",
+    "desc": "Fachada de la iglesia barroca de San Pedro, en Viena."
+  },
+  "vienna-cafe-central": {
+    "name": "Café Central · Palacio Ferstel",
+    "desc": "Exterior del Café Central en el Palais Ferstel, Viena."
+  },
+  "vienna-hofburg": {
+    "name": "Palacio de Hofburg",
+    "desc": "Fachada de la Neue Burg, parte del complejo imperial Hofburg."
+  },
+  "vienna-heldenplatz": {
+    "name": "Heldenplatz",
+    "desc": "Heldenplatz, plaza monumental junto al palacio Hofburg."
+  },
+  "vienna-volksgarten": {
+    "name": "Volksgarten",
+    "desc": "Jardines del Volksgarten en el centro de Viena."
+  },
+  "vienna-parliament": {
+    "name": "Parlamento de Austria",
+    "desc": "Edificio del Parlamento austríaco en la Ringstrasse de Viena."
+  },
+  "vienna-opera": {
+    "name": "Ópera Estatal de Viena",
+    "desc": "Fachada de la Ópera Estatal de Viena."
+  },
+  "vienna-schonbrunn": {
+    "name": "Palacio de Schönbrunn",
+    "desc": "Palacio de Schönbrunn, antigua residencia de verano de los Habsburgo."
+  },
+  "vienna-belvedere": {
+    "name": "Palacio Belvedere",
+    "desc": "Palacio del Belvedere, conjunto barroco de Viena."
+  },
+  "bratislava": {
+    "name": "Casco histórico de Bratislava",
+    "desc": "Plaza principal del casco antiguo de Bratislava, con el antiguo Ayuntamiento y la fuente de Roland."
+  },
+  "vienna-rathaus": {
+    "name": "Rathaus · Ayuntamiento de Viena",
+    "desc": "Mercado navideño en Rathausplatz, ante el Ayuntamiento de Viena."
+  },
+  "tirano": {
+    "name": "Tirano y basílica de la Madonna di Tirano",
+    "desc": "Tirano se extiende en el valle de Valtellina; la basílica de la Madonna di Tirano destaca entre las construcciones del pueblo."
+  },
+  "milan-duomo": {
+    "name": "Duomo de Milán",
+    "desc": "El Duomo domina la plaza central de Milán con su fachada de mármol, agujas y esculturas góticas."
+  },
+  "milan-galleria": {
+    "name": "Galleria Vittorio Emanuele II",
+    "desc": "La Galleria Vittorio Emanuele II reúne tiendas y cafés bajo una cubierta de hierro y vidrio, junto al Duomo."
+  },
+  "milan-castello": {
+    "name": "Castello Sforzesco",
+    "desc": "El Castello Sforzesco conserva sus torres y patios históricos y alberga museos municipales de Milán."
+  },
+  "interlaken": {
+    "name": "Interlaken",
+    "desc": "Interlaken es una localidad del Oberland bernés, situada entre los lagos de Thun y Brienz y rodeada de montañas."
+  },
+  "lauterbrunnen": {
+    "name": "Valle de Lauterbrunnen",
+    "desc": "El valle de Lauterbrunnen combina prados, pequeños núcleos alpinos y altas paredes rocosas con cascadas."
+  },
+  "grindelwald": {
+    "name": "Grindelwald",
+    "desc": "El valle de Grindelwald visto desde First. Desde el pueblo sube el teleférico; después de la excursión regresarás a Lauterbrunnen."
+  },
+  "first-cliff-walk": {
+    "name": "First Cliff Walk",
+    "desc": "Pasarela junto a una pared rocosa y mirador sobre el paisaje alpino de Grindelwald-First. Depende de la operación y el clima; se puede omitir si incomoda la altura."
+  },
+  "bachalpsee": {
+    "name": "Bachalpsee",
+    "desc": "Lago de montaña al que se llega caminando desde First. La imagen muestra condiciones despejadas de temporada cálida; la excursión depende del sendero y la visibilidad."
+  },
+  "wengen": {
+    "name": "Wengen",
+    "desc": "Pueblo alpino accesible en tren desde Lauterbrunnen. La foto lo muestra desde Männlichen como referencia; el programa pasea por Wengen sin subir a ese mirador."
+  },
+  "murren": {
+    "name": "Mürren",
+    "desc": "Pueblo sobre los acantilados del valle de Lauterbrunnen. Una excursión para pasear entre chalets y detenerse a mirar las montañas."
+  },
+  "oeschinensee": {
+    "name": "Oeschinensee",
+    "desc": "Lago alpino cerca de Kandersteg. Esta foto panorámica fue tomada desde una zona elevada; el programa visita la orilla por el acceso sencillo y no incluye el circuito alto de Heuberg."
+  },
+  "riffelsee": {
+    "name": "Riffelsee",
+    "desc": "Lago cercano a Rotenboden, con posible reflejo del Cervino cuando no hay viento y el cielo está despejado. Parada opcional dentro del día de Gornergrat."
+  },
+  "debod-madrid": {
+    "name": "Templo de Debod",
+    "desc": "Templo del antiguo Egipto reconstruido en Madrid, junto a un mirador ideal para empezar el viaje con un paseo al atardecer."
+  },
+  "zamora-cathedral": {
+    "name": "Catedral de Zamora",
+    "desc": "Catedral románica de Zamora, reconocible por su cimborrio de influencia bizantina y su torre de piedra."
+  },
+  "zamora-duero": {
+    "name": "Zamora junto al Duero",
+    "desc": "El Duero acompaña la silueta histórica de Zamora; sus riberas ofrecen perspectivas del casco antiguo y de la catedral."
+  },
+  "dali-figueres": {
+    "name": "Teatro-Museo Dalí",
+    "desc": "El antiguo teatro de Figueres convertido en el universo de Salvador Dalí: una visita dedicada a su imaginación y a su obra."
+  },
+  "san-juan-reyes-toledo": {
+    "name": "Monasterio de San Juan de los Reyes",
+    "desc": "Monasterio de Toledo fundado por los Reyes Católicos, una de las grandes obras del gótico isabelino."
+  },
+  "segovia-aqueduct": {
+    "name": "Acueducto de Segovia",
+    "desc": "La gran arquería romana marca la entrada al casco histórico de Segovia y ofrece la primera parada monumental de la excursión."
+  },
+  "segovia-alcazar": {
+    "name": "Alcázar de Segovia",
+    "desc": "Detalle de la entrada y el foso del Alcázar de Segovia, antigua fortaleza y residencia real situada sobre un promontorio."
+  },
+  "segovia-pradera-san-marcos": {
+    "name": "Pradera de San Marcos",
+    "desc": "Vista del Alcázar desde el entorno de la Pradera de San Marcos, la parada recomendada para fotografiar la silueta del castillo desde el valle."
+  },
+  "emilia-piazza": {
+    "name": "Basilica di San Petronio · Piazza Maggiore",
+    "desc": "La fachada de San Petronio preside Piazza Maggiore, uno de los grandes espacios monumentales de Bologna."
+  },
+  "emilia-nettuno": {
+    "name": "Fontana del Nettuno",
+    "desc": "La fuente renacentista de Neptuno es uno de los símbolos del centro de Bologna."
+  },
+  "emilia-porticos": {
+    "name": "Portici di Via dell’Indipendenza",
+    "desc": "Galerías cubiertas acompañan el paseo por Bologna entre comercios y edificios históricos."
+  },
+  "emilia-stefano": {
+    "name": "Piazza Santo Stefano",
+    "desc": "La plaza de Santo Stefano, en Bologna, reúne pórticos y fachadas históricas junto al conjunto de iglesias del mismo nombre."
+  },
+  "emilia-sanluca": {
+    "name": "Santuario della Madonna di San Luca",
+    "desc": "El santuario corona una colina de Bologna y ofrece una excursión entre arquitectura y paisaje."
+  },
+  "emilia-parma": {
+    "name": "Duomo di Parma · Battistero di Parma",
+    "desc": "La plaza episcopal de Parma reúne la catedral románica y el baptisterio de mármol rosado."
+  },
+  "emilia-farnese": {
+    "name": "Teatro Farnese",
+    "desc": "Un monumental teatro de madera ocupa el Palazzo della Pilotta en Parma."
+  },
+  "emilia-vitale": {
+    "name": "Basilica di San Vitale",
+    "desc": "Los mosaicos bizantinos de esta basílica de Ravenna envuelven el presbiterio en figuras y colores."
+  },
+  "emilia-galla": {
+    "name": "Mausoleo di Galla Placidia",
+    "desc": "Un pequeño edificio de Ravenna custodia uno de los conjuntos de mosaicos más célebres de la ciudad."
+  },
+  "emilia-castello": {
+    "name": "Castello Estense",
+    "desc": "La fortaleza de ladrillo y su foso recuerdan el poder de la familia Este en Ferrara."
+  },
+  "emilia-diamanti": {
+    "name": "Palazzo dei Diamanti",
+    "desc": "Miles de piezas de mármol en punta de diamante dan carácter a este palacio renacentista de Ferrara."
+  },
+  "emilia-pepoli": {
+    "name": "Palazzo Pepoli",
+    "desc": "Este palacio medieval de Bologna es una puerta de entrada a la historia de la ciudad."
+  },
+  "emilia-anatomico": {
+    "name": "Teatro Anatomico del Archiginnasio",
+    "desc": "La sala de madera donde se enseñaba anatomía recuerda la tradición universitaria de Bologna."
+  },
+  "emilia-modena": {
+    "name": "Duomo di Modena",
+    "desc": "Una obra maestra del románico preside el conjunto monumental de Piazza Grande en Modena."
+  },
+  "emilia-albinelli": {
+    "name": "Mercato Albinelli",
+    "desc": "La fuente de la portadora de fruta adorna el mercado cubierto de Modena, una parada para descubrir los sabores de la región."
+  },
+  "matera-barisano": {
+    "name": "Sasso Barisano",
+    "desc": "Casas de piedra y terrazas escalonadas dibujan el barrio histórico de Matera."
+  },
+  "matera-belvedere": {
+    "name": "Belvedere Luigi Guerricchio",
+    "desc": "Este mirador junto a Piazza Vittorio Veneto abre la primera vista sobre los Sassi de Matera."
+  },
+  "matera-caveoso": {
+    "name": "Sasso Caveoso",
+    "desc": "Viviendas excavadas y la roca de Santa Maria de Idris muestran el paisaje rupestre de Matera."
+  },
+  "matera-murgia": {
+    "name": "Murgia Materana",
+    "desc": "El paisaje de barrancos y cuevas de la Murgia se extiende frente a la ciudad de Matera."
+  },
+  "lecce-oronzo": {
+    "name": "Piazza Sant’Oronzo",
+    "desc": "La plaza central de Lecce reúne distintas épocas de la ciudad en el primer paseo."
+  },
+  "lecce-duomo": {
+    "name": "Piazza Duomo",
+    "desc": "La catedral de Lecce preside una plaza monumental de piedra clara."
+  },
+  "lecce-croce": {
+    "name": "Basilica di Santa Croce",
+    "desc": "Detalle del rosetón de Santa Croce, rodeado de la ornamentación tallada que distingue el barroco de Lecce."
+  },
+  "ostuni-white": {
+    "name": "Città Bianca",
+    "desc": "Las casas encaladas de Ostuni forman un laberinto de callejones y vistas abiertas."
+  },
+  "ostuni-cathedral": {
+    "name": "Catedral de Ostuni",
+    "desc": "La catedral corona el casco antiguo de Ostuni con su gran rosetón."
+  },
+  "bari-vecchia": {
+    "name": "Bari Vecchia",
+    "desc": "Calles estrechas y vida cotidiana acompañan el paseo por el centro antiguo de Bari."
+  },
+  "bari-nicola-front": {
+    "name": "Basilica di San Nicola",
+    "desc": "La basílica románica de San Nicola es uno de los principales monumentos de Bari Vecchia."
+  },
+  "alberobello-aia": {
+    "name": "Aia Piccola",
+    "desc": "Este barrio de Alberobello permite recorrer los trulli entre pequeñas calles residenciales."
+  },
+  "locorotondo-center": {
+    "name": "Locorotondo",
+    "desc": "La arquitectura blanca de Locorotondo invita a caminar por su centro histórico."
+  },
+  "alberobello-monti": {
+    "name": "Trulli de Alberobello",
+    "desc": "Las casas de piedra con techos cónicos distinguen el paisaje urbano de Alberobello."
+  },
+  "monopoli-oldport": {
+    "name": "Puerto viejo de Monopoli",
+    "desc": "Barcas y fachadas históricas enmarcan el puerto viejo de Monopoli."
+  },
+  "polignano-lama": {
+    "name": "Lama Monachile",
+    "desc": "La pequeña cala entre acantilados es la vista más reconocible de Polignano a Mare."
+  },
+  "bari-svevo": {
+    "name": "Castello Svevo",
+    "desc": "La fortaleza de Bari conserva murallas, torres y espacios de su historia medieval."
+  },
+  "bari-theatre": {
+    "name": "Teatro Petruzzelli",
+    "desc": "El gran teatro de Bari destaca por su fachada monumental; el interior depende de las visitas disponibles."
+  },
+  "italy16-duomo": {
+    "name": "Duomo di Milano",
+    "desc": "El Duomo domina la plaza central de Milano con su fachada de mármol, agujas y esculturas góticas."
+  },
+  "italy16-castello": {
+    "name": "Castello Sforzesco",
+    "desc": "El Castello Sforzesco conserva sus torres y patios históricos y alberga museos municipales de Milano."
+  },
+  "italy16-grazie": {
+    "name": "Santa Maria delle Grazie",
+    "desc": "La iglesia milanesa junto al refectorio que conserva L’Ultima Cena."
+  },
+  "italy16-david": {
+    "name": "David di Michelangelo",
+    "desc": "El David original en la Galleria dell’Accademia de Firenze."
+  },
+  "italy16-cupola": {
+    "name": "Cupola di Brunelleschi",
+    "desc": "La gran cúpula de Santa Maria del Fiore sobre los tejados de Firenze."
+  },
+  "italy16-uffizi": {
+    "name": "Gallerie degli Uffizi",
+    "desc": "El patio de los Uffizi, puerta de entrada al gran museo del Renacimiento."
+  },
+  "italy16-compianto": {
+    "name": "Compianto sul Cristo morto",
+    "desc": "Detalle del Cristo yacente del Compianto de Niccolò dell’Arca en Santa Maria della Vita, Bologna."
+  },
+  "italy16-ferrari": {
+    "name": "Museo Enzo Ferrari",
+    "desc": "El interior del museo dedicado a Enzo Ferrari en Modena."
+  }
+}

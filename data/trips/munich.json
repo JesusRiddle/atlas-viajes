@@ -1,0 +1,393 @@
+{
+  "id": "munich",
+  "name": "Múnich y Baviera",
+  "flag": "🇩🇪",
+  "start": "2026-12-04",
+  "end": "2026-12-13",
+  "tag": "Una cama, muchos paisajes",
+  "intro": "Instálate ocho noches en Múnich y descubre Baviera a través de sus palacios, mercados navideños y paisajes alpinos. Cada excursión termina en el mismo hotel: podrás visitar el castillo de Neuschwanstein, conocer Salzburgo y acercarte a las montañas sin cargar la maleta de una ciudad a otra.",
+  "bases": [
+    [
+      "Múnich",
+      8
+    ]
+  ],
+  "flight": "La propuesta es volar de Ciudad de México (MEX) al aeropuerto Franz Josef Strauss de Múnich (MUC) y regresar por la misma ruta. Lufthansa ofrece vuelos sin escalas; la disponibilidad y el horario concreto deberán comprobarse para las fechas elegidas.\n\nEl vuelo de ida suele ser nocturno y ronda las once horas. El regreso toma más tiempo por la dirección del trayecto, por lo que conviene revisar la hora de llegada a México antes de cerrar las vacaciones.",
+  "local": "Desde el aeropuerto llegarás al centro de Múnich en el S-Bahn, la red de trenes suburbanos, en unos 40–50 minutos. Para las excursiones, el tren a Salzburgo tarda aproximadamente 1½–2 horas y el ICE, tren de alta velocidad, llega a Núremberg en unas 1–1¼ horas.\n\nPara Neuschwanstein puedes reservar una excursión desde Múnich o tomar un tren a Füssen y después un autobús hasta Hohenschwangau, el pueblo desde el que se sube al castillo. Por tu cuenta, calcula unas 2½–3 horas de transporte por sentido. Para subir a Zugspitze, viajarás primero a Garmisch-Partenkirchen y continuarás en tren de montaña o teleférico.",
+  "climate": "En diciembre, Múnich suele tener temperaturas cercanas a −2–6 °C. En las montañas hará bastante más frío: necesitarás abrigo, guantes y calzado con buen agarre. Puede nevar, aunque no se puede asegurar que la ciudad esté cubierta de nieve.\n\nLos días son cortos, por lo que las excursiones comenzarán temprano. El mercado navideño de Marienplatz está previsto del 20 de noviembre al 24 de diciembre de 2026; sus luces y puestos serán parte del ambiente de tus tardes en la ciudad.",
+  "solo": "Con tu nivel de inglés puedes desenvolverte en hoteles, restaurantes y las principales atracciones turísticas. No necesitas hablar alemán para disfrutar este recorrido.\n\nMúnich será tu base durante todo el viaje: dormirás en el mismo hotel y visitarás los alrededores mediante excursiones de un día. Para organizar los trayectos en tren puedes utilizar DB Navigator, la aplicación de los ferrocarriles alemanes, donde podrás consultar horarios y conexiones.\n\nPara visitar el castillo de Neuschwanstein, considera una excursión organizada desde Múnich. Tendrás resuelto el transporte y podrás seguir las explicaciones de un guía en inglés; antes de reservar, revisa si también incluye la entrada al castillo.\n\nEl itinerario intercala las excursiones más largas con días tranquilos en Múnich. Después de una jornada en los Alpes, tendrás tiempo para recorrer palacios, disfrutar los mercados navideños y descansar.",
+  "costs": [
+    [
+      "Vuelos",
+      19000,
+      28000
+    ],
+    [
+      "8 noches en habitación privada",
+      13000,
+      18500
+    ],
+    [
+      "Comida",
+      6000,
+      8500
+    ],
+    [
+      "Transporte",
+      2500,
+      4000
+    ],
+    [
+      "Entradas y excursiones",
+      5500,
+      8500
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      3500,
+      5000
+    ]
+  ],
+  "tips": [
+    "La salida propuesta del 4 de diciembre coincide con los últimos días del viaje a España. Si eliges hacer ambos, mueve Múnich al 11–20 de diciembre y vuelve a cotizar vuelos y alojamiento.",
+    "El puente Marienbrücke, famoso por la vista de Neuschwanstein, puede cerrar por nieve o hielo. La visita al castillo no garantiza que puedas acceder al puente.",
+    "Elige el día de Zugspitze después de consultar el pronóstico. Si la cima está cubierta de nubes o hay viento fuerte, cambia esa excursión por un día de museo en Múnich.",
+    "Esta propuesta mantiene una sola base en Múnich. Rothenburg y Berchtesgaden quedan fuera para no saturar las jornadas. Si quieres conocer Viena, elige la alternativa independiente Múnich + Viena de 15 días y dos bases."
+  ],
+  "sources": [
+    [
+      "Mercado oficial 2026",
+      "https://www.muenchen.de/en/events/munich-christkindlmarkt-info-about-christmas-market"
+    ],
+    [
+      "Excursiones oficiales",
+      "https://www.munich.travel/en/categories/book/excursions"
+    ],
+    [
+      "Castillo: acceso",
+      "https://www.neuschwanstein.de/englisch/tourist/howtoget.htm?pubDate=20250725"
+    ],
+    [
+      "Lufthansa MEX–MUC",
+      "https://www.lufthansa.com/lhg/de/de/o-d/cy-cy/mexiko-stadt-muenchen"
+    ],
+    [
+      "DB Navigator · aplicación para trenes",
+      "https://int.bahn.de/en/booking-information/db-navigator"
+    ],
+    [
+      "Viktualienmarkt · horarios",
+      "https://www.viktualienmarkt-muenchen.de/en/opening-hours/"
+    ],
+    [
+      "Zugspitze · tarifas invierno 2026/27",
+      "https://zugspitze.de/en/Service-information/Tickets-rates/Winter-26-27"
+    ],
+    [
+      "Zugspitze · recorrido circular y Eibsee",
+      "https://zugspitze.de/en/Our-mountain-worlds/Highlights/Zugspitze-Round-Trip"
+    ],
+    [
+      "Linderhof · precios y accesos",
+      "https://www.schlosslinderhof.de/englisch/tourist/admiss.htm"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-04",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "La opción propuesta es volar de Ciudad de México (MEX) a Múnich (MUC), sin escalas si hay un servicio adecuado para estas fechas.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-12-05",
+      "title": "bienvenido a la Navidad bávara",
+      "base": "Múnich",
+      "places": [
+        "marienplatz",
+        "munich-town-hall"
+      ],
+      "am": "Al llegar al aeropuerto de Múnich, toma el tren suburbano hacia el centro y deja el equipaje en el hotel.",
+      "pm": "Comienza con un paseo por Marienplatz, la plaza principal, y contempla la fachada del Nuevo Ayuntamiento. Si el mercado navideño está abierto en tus fechas, podrás recorrer sus puestos sin añadir otra visita.",
+      "night": "Cena cerca del hotel y descansa después del vuelo.",
+      "mobility": "El tren suburbano S-Bahn conecta el aeropuerto con el centro en unos 40–50 minutos. Después, realiza un paseo corto a pie.",
+      "spend": 950,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-12-06",
+      "title": "palacio y calles históricas",
+      "base": "Múnich",
+      "places": [
+        "nymphenburg",
+        "frauenkirche-munich",
+        "viktualienmarkt"
+      ],
+      "am": "Dedica la mañana al Palacio de Nymphenburg, antigua residencia de verano de los gobernantes de Baviera. Combina sus salas con un paseo corto por los jardines que estén abiertos.",
+      "pm": "Regresa al centro para conocer la Frauenkirche, la catedral de las dos torres, y el entorno del mercado Viktualienmarkt. Si coincide con domingo, cuenta con pasear por la plaza: muchos puestos estarán cerrados.",
+      "night": "Cena en una cervecería tradicional; puedes pedir mesa individual o compartir una mesa larga cuando el establecimiento lo permita.",
+      "mobility": "Para Nymphenburg, combina el transporte urbano según la ubicación del hotel; calcula unos 30–45 minutos desde el centro. Regresa en tranvía, autobús o metro para las visitas de la tarde.",
+      "spend": 1400,
+      "note": ""
+    },
+    {
+      "n": 4,
+      "date": "2026-12-07",
+      "title": "Neuschwanstein y, con luz, Füssen",
+      "base": "Múnich",
+      "places": [
+        "neuschwanstein",
+        "fussen"
+      ],
+      "am": "Sal temprano hacia Hohenschwangau, el pueblo desde el que se accede al castillo de Neuschwanstein. Una excursión organizada facilita el transporte desde Múnich, pero debes comprobar si incluye la entrada al castillo.",
+      "pm": "Visita Neuschwanstein en el turno reservado y disfruta sus miradores abiertos. Después, si el horario y la luz lo permiten, dedica 45–60 minutos al casco antiguo de Füssen: fachadas de colores y calles pequeñas para pasear antes del regreso.",
+      "night": "Regresa a Múnich y deja la noche libre: el conjunto de traslados y visita ocupa prácticamente todo el día.",
+      "mobility": "Una excursión desde Múnich suele ocupar unas 10–11 horas. Por tu cuenta, combina tren hacia Füssen, autobús a Hohenschwangau y el acceso al castillo; calcula cerca de 3 horas por sentido, según conexiones.",
+      "spend": 2900,
+      "note": "Reserva una entrada temprana y deja Füssen antes de anochecer. Si eliges un tour, confirma que contemple esta parada: muchos combinan otros palacios y no visitan Füssen. El puente Marienbrücke puede cerrar por hielo; Linderhof no se añade a esta jornada.",
+      "optionalPlaces": [
+        "fussen"
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2026-12-08",
+      "title": "Arte, residencia y pausa",
+      "base": "Múnich",
+      "places": [
+        "residenz",
+        "alte-pinakothek"
+      ],
+      "am": "Después de la excursión al castillo, comienza más tarde. Puedes visitar la Residenz, el gran palacio urbano de los antiguos gobernantes bávaros.",
+      "pm": "Si prefieres pintura a palacios, elige la Alte Pinakothek como alternativa a la Residenz. No hace falta completar ambos museos; reserva el resto de la tarde para café y descanso.",
+      "night": "Da un paseo breve por el centro iluminado y cena sin prisas.",
+      "mobility": "Llega al museo elegido caminando o en U-Bahn, el metro de Múnich. La tarde permite pocos traslados y más descanso.",
+      "spend": 1400,
+      "note": "",
+      "optionalPlaces": [
+        "residenz",
+        "alte-pinakothek"
+      ]
+    },
+    {
+      "n": 6,
+      "date": "2026-12-09",
+      "title": "excursión a Salzburgo, fortaleza y calles históricas",
+      "base": "Múnich",
+      "places": [
+        "salzburg",
+        "hohensalzburg",
+        "getreidegasse"
+      ],
+      "am": "Viaja en tren a Salzburgo, en Austria, y recorre Getreidegasse, la calle histórica de fachadas estrechas y letreros de hierro.",
+      "pm": "Sube a la fortaleza de Hohensalzburg en funicular y contempla la ciudad desde lo alto. Después, vuelve al casco antiguo para comer y pasear.",
+      "night": "Regresa en el tren previsto a Múnich; seguirás durmiendo en el mismo hotel.",
+      "mobility": "El tren Múnich–Salzburgo tarda aproximadamente 1½–2 horas por sentido. En Salzburgo, camina por el centro y utiliza el funicular para subir a la fortaleza.",
+      "spend": 2200,
+      "note": "Si eliges un billete regional, revisa desde qué hora es válido los días laborales y qué trenes admite antes de comprar."
+    },
+    {
+      "n": 7,
+      "date": "2026-12-10",
+      "title": "Zugspitze y el lago Eibsee",
+      "base": "Múnich",
+      "places": [
+        "zugspitze",
+        "eibsee",
+        "garmisch"
+      ],
+      "am": "Sal temprano de Múnich hacia Garmisch-Partenkirchen. Si el pronóstico permite disfrutar las vistas, sube a Zugspitze: puedes ascender en tren de cremallera y continuar a la cumbre por el teleférico del glaciar, según los servicios operativos.",
+      "pm": "Baja por el teleférico hacia Eibsee y reserva 45–75 minutos de luz para caminar por un tramo accesible de la orilla. El lago es una parte importante de la excursión, no una parada de paso. No necesitas rodearlo por completo. Garmisch queda como paseo opcional únicamente si sobra tiempo.",
+      "night": "Regresa a Múnich. Si hay viento fuerte o mala visibilidad, intercambia esta jornada con un día de ciudad.",
+      "mobility": "Tren Múnich–Garmisch, transportes de montaña y regreso desde Eibsee hacia Garmisch en tren de cremallera o autobús según horario. Calcula 9–11 horas en total. El orden exacto se ajusta al tiempo y a las últimas salidas.",
+      "spend": 3100,
+      "note": "El billete peatonal de ida y vuelta de Zugspitze para invierno 2026/27 está publicado desde €70.50 online o €78 en taquilla; incluye los transportes de montaña indicados por el operador, no el tren desde Múnich. Venta prevista desde mediados de noviembre. Con hielo o mal tiempo, limita el paseo junto al lago y cambia el día de montaña por el día de ciudad.",
+      "optionalPlaces": [
+        "garmisch"
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2026-12-11",
+      "title": "Núremberg medieval",
+      "base": "Múnich",
+      "places": [
+        "nuremberg-castle",
+        "st-lorenz-nuremberg",
+        "nuremberg"
+      ],
+      "am": "Toma un tren de alta velocidad hacia Núremberg y comienza por su casco histórico, dominado por el castillo imperial.",
+      "pm": "Recorre las calles medievales y conoce la iglesia de San Lorenzo. El mercado navideño se añade al paseo únicamente si su calendario coincide con tu visita.",
+      "night": "Vuelve a Múnich después de una cena temprana o cena al llegar, según el tren elegido.",
+      "mobility": "El tren de alta velocidad ICE llega a Núremberg en unas 1–1¼ horas por sentido. Dentro del casco histórico, las visitas se conectan principalmente a pie.",
+      "spend": 2000,
+      "note": ""
+    },
+    {
+      "n": 9,
+      "date": "2026-12-12",
+      "title": "Ciencia, paseos y una última tarde libre",
+      "base": "Múnich",
+      "places": [
+        "deutsches-museum",
+        "oberammergau",
+        "linderhof"
+      ],
+      "am": "Aprovecha la última mañana para el Deutsches Museum, dedicado a la ciencia y la tecnología, si te interesa esta visita. Es una opción especialmente útil si el tiempo no invita a caminar.",
+      "pm": "Deja margen para compras, un café o una visita pendiente. Si ya usaste el museo como alternativa al día de montaña, disfruta esta tarde libre.",
+      "night": "Prepara la maleta y revisa el trayecto al aeropuerto antes de la última cena.",
+      "mobility": "Utiliza transporte urbano para el Deutsches Museum y camina por el centro según tus planes de la tarde.",
+      "spend": 1100,
+      "note": "Alternativa para quien prefiera otro palacio: sustituye este día libre por Oberammergau y Linderhof, sin añadir una excursión extra al calendario. Oberammergau destaca por sus fachadas pintadas; Linderhof es el pequeño palacio de Luis II. En invierno no cuentes con la Gruta de Venus ni los edificios estivales del parque. Entrada al palacio publicada: €11; traslado o tour se cotiza aparte y puede superar el gasto diario previsto. Si estás cansado, conserva el museo y el descanso.",
+      "optionalPlaces": [
+        "deutsches-museum",
+        "oberammergau",
+        "linderhof"
+      ]
+    },
+    {
+      "n": 10,
+      "date": "2026-12-13",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Toma el S-Bahn o un taxi hacia el aeropuerto de Múnich con margen para los controles. El vuelo de regreso termina en Ciudad de México según el itinerario reservado.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 6,
+  "profile": {
+    "pace": "Intenso",
+    "solo": "Fácil",
+    "weather": "Alta",
+    "why": "Una sola base reduce los traslados con equipaje entre destinos, pero cuatro excursiones largas en ocho días completos requieren madrugar. La cumbre y el lago dependen del tiempo.",
+    "weatherWhy": "Zugspitze y Eibsee pierden gran parte de su atractivo con poca visibilidad o viento; conviene intercambiar esa excursión con un día de ciudad.",
+    "soloWhy": "Una sola base y las conexiones ferroviarias simplifican la organización, pero las excursiones al castillo y a la montaña requieren coordinar varios transportes o contratar un tour."
+  },
+  "experiences": [
+    "Luces navideñas en Marienplatz",
+    "Neuschwanstein y, si queda luz, las calles de Füssen",
+    "Zugspitze y un paseo junto al Eibsee",
+    "Getreidegasse y la fortaleza de Salzburgo",
+    "El castillo imperial y las calles de Núremberg"
+  ],
+  "routeCities": [
+    "Múnich",
+    "Füssen",
+    "Salzburgo",
+    "Garmisch-Partenkirchen",
+    "Núremberg"
+  ],
+  "cover": "neuschwanstein",
+  "stays": [
+    [
+      "Múnich",
+      "Elige Altstadt o una calle tranquila cerca de Hauptbahnhof, la estación central, o de una parada de metro."
+    ],
+    [
+      "Una sola base",
+      "Reserva la misma habitación privada durante las ocho noches y realiza las excursiones desde allí."
+    ],
+    [
+      "Antes de reservar",
+      "Revisa la distancia a pie entre la estación y el hotel, y los comentarios sobre ruido."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Múnich",
+      "coords": [
+        48.1372,
+        11.5756
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Hohenschwangau",
+      "coords": [
+        47.5554,
+        10.7375
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "Füssen",
+      "coords": [
+        47.5696,
+        10.7004
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 3
+    },
+    {
+      "name": "Salzburgo",
+      "coords": [
+        47.8095,
+        13.055
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Garmisch-Partenkirchen",
+      "coords": [
+        47.4917,
+        11.0955
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Núremberg",
+      "coords": [
+        49.4521,
+        11.0767
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Oberammergau",
+      "coords": [
+        47.5981,
+        11.0641
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 7
+    }
+  ],
+  "family": {
+    "label": "Baviera · versión compacta",
+    "note": "10 días · 1 base en Múnich",
+    "other": "munich-viena"
+  }
+}

@@ -1,1 +1,7 @@
-Descomprime todo y abre index.html. Edita textos e itinerarios en data.js; estilos en style.css; estructura en app.js. Las fotos están en photos/. Los mapas requieren Internet. Puedes usar VS Code con Live Server. Los cambios locales no actualizan la URL publicada: devuelve el proyecto editado para publicarlo en el mismo sitio.
+EDICIÓN RÁPIDA DEL ATLAS
+
+1. Orden y visibilidad: edita modules.js. Cada viaje tiene available: true/false; el orden de la lista define la numeración.
+2. Contenido de un viaje: edita data/trips/<id>.json; guarda en UTF-8 y respeta el formato JSON.
+3. Lugares reutilizados en galerías: data/places.json. Fotos: photos.js y carpeta photos/.
+4. Prueba desde un servidor local HTTP (por ejemplo, Live Server en VS Code); abrir index.html como file:// no permite fetch de los JSON.
+5. Comprueba inicio, #comparar, #vacaciones, una ficha y su mapa antes de publicar.

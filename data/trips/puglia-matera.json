@@ -1,0 +1,404 @@
+{
+  "id": "puglia-matera",
+  "name": "Puglia + Matera: trulli, barroco y ciudades de piedra",
+  "flag": "🇮🇹",
+  "start": "2027-09-18",
+  "end": "2027-09-28",
+  "tag": "EL SUR BLANCO DE ITALIA",
+  "routeCities": [
+    "Matera",
+    "Lecce",
+    "Ostuni",
+    "Bari",
+    "Alberobello",
+    "Locorotondo",
+    "Polignano a Mare",
+    "Monopoli"
+  ],
+  "bases": [
+    [
+      "Matera",
+      2
+    ],
+    [
+      "Lecce",
+      3
+    ],
+    [
+      "Bari",
+      4
+    ]
+  ],
+  "work": 7,
+  "costs": [
+    [
+      "Vuelos internacionales con una conexión · estimación",
+      22000,
+      32000
+    ],
+    [
+      "9 noches en habitación privada",
+      17000,
+      25000
+    ],
+    [
+      "Comidas · 11 días",
+      7000,
+      10000
+    ],
+    [
+      "Trenes, buses, aeropuerto y taxis locales",
+      5000,
+      8000
+    ],
+    [
+      "Entradas, Murgia y excursión al Valle d’Itria",
+      5000,
+      9000
+    ],
+    [
+      "Seguro y reserva para imprevistos",
+      4000,
+      6000
+    ]
+  ],
+  "profile": {
+    "pace": "Equilibrado",
+    "solo": "Fácil",
+    "weather": "Media",
+    "why": "Dos noches en Matera, tres en Lecce y cuatro en Bari permiten conocer el sur con excursiones y sólo dos cambios de hotel.",
+    "soloWhy": "Los principales corredores se resuelven en tren y las bases son manejables; Alberobello y Locorotondo requieren algo más de planificación.",
+    "weatherWhy": "Matera, los pueblos blancos y especialmente Polignano y Monopoli se disfrutan más con buen tiempo, aunque el viaje conserva suficiente patrimonio interior."
+  },
+  "intro": "La piedra cambia de forma a cada etapa: cuevas habitadas en Matera, fachadas barrocas en Lecce y trulli de tejados cónicos en el Valle d’Itria. Tres bases abren el camino a pueblos blancos, puertos del Adriático y tardes de paseo, con tiempo para ver Matera iluminada y volver al mismo hotel después de cada excursión.",
+  "flight": "Salida desde Ciudad de México (MEX) el 18 de septiembre de 2027 hacia Bari (BRI), buscando una sola conexión en una misma reserva. Llegada prevista el 19; regreso desde Bari el 28, también con una conexión. No se añaden visitas ni hotel en Roma u otra ciudad de enlace.\n\nSeptiembre de 2027 es una propuesta: no se consideran confirmados vuelos, tarifas ni horarios de transporte. Cuando abra la venta, compara conexiones que permitan llegar a Matera sin prisas. Confirma que el regreso aterrice en MEX el 28 para mantener los siete días laborales.",
+  "local": "Llegada a Bari → Matera: prioriza bus directo desde BRI si encaja con el vuelo; como alternativa, enlaza por Bari Centrale. El servicio del domingo debe confirmarse específicamente: no supongas que habrá el mismo tren o frecuencia que un día laborable.\n\nMatera → Lecce: vuelve primero a Bari en bus o servicio FAL y continúa en tren. Reserva buena parte de la mañana para el traslado y deja margen entre operadores; no es un enlace directo. Lecce → Bari: unos 1 h 25–1 h 35 en servicios rápidos, más en otros trenes.\n\nOstuni se visita desde Lecce en tren y shuttle o taxi desde la estación, situada fuera del casco. Para Alberobello y Locorotondo, prioriza una excursión organizada o transfer compartido desde Bari que incluya ambas poblaciones. Polignano a Mare y Monopoli se enlazan por tren desde Bari. Todas las excursiones regresan al mismo hotel.",
+  "climate": "Septiembre permite dedicar tiempo a la costa y a los paseos al aire libre, aunque aún puede hacer calor y también llover. Lleva protección solar, agua y calzado con buen agarre para la piedra y las escaleras.\n\nEn Matera aprovecha las primeras y últimas horas del día. La costa puede tener viento o mar agitado: el programa se basa en miradores y pueblos, no depende de bañarse ni de una salida en barco.",
+  "solo": "Las tres bases mantienen manejable el equipaje. El tramo más delicado es la llegada dominical a Matera y su posterior enlace a Lecce por Bari; deja tiempos amplios y evita la última salida del día.\n\nEn Matera hay escaleras incluso cuando un hotel anuncia ascensor. Confirma el acceso desde la calle y el punto donde puede dejarte un taxi. Para el Valle d’Itria, una excursión compartida simplifica la jornada sin necesidad de alquilar coche.",
+  "experiences": [
+    "Contemplar los Sassi de Matera al atardecer y de noche.",
+    "Descubrir el barroco de Santa Croce y Piazza Duomo en Lecce.",
+    "Recorrer los callejones blancos de Ostuni y Locorotondo.",
+    "Pasear entre trulli en Alberobello.",
+    "Asomarte al Adriático en Polignano y al puerto viejo de Monopoli.",
+    "Ver preparar orecchiette en Bari Vecchia y cenar junto al mar."
+  ],
+  "tips": [
+    "Reserva dos noches en Matera, tres en Lecce y cuatro en Bari; las excursiones no añaden hoteles.",
+    "La llegada a Bari es en domingo: confirma bus BRI–Matera y su alternativa por Bari antes de fijar el vuelo.",
+    "Prefiere alojamiento con recepción, consigna, ascensor cuando sea posible y acceso sencillo desde la calle.",
+    "Elige tour o transfer compartido que incluya Alberobello y Locorotondo; confirma puntos de recogida, tiempo libre y regreso.",
+    "Presupuesto preliminar de $60,000–$90,000 MXN por persona, sujeto a tarifas de septiembre de 2027.",
+    "Esta ruta usa siete días de lunes a viernes en 2027: no consume el saldo que vence en 2026."
+  ],
+  "sources": [
+    [
+      "Bari aeropuerto · buses y enlaces a Matera",
+      "https://bari.airports.aeroportidipuglia.eu/en/da-e-per-gli-aeroporti/type/bus/"
+    ],
+    [
+      "Ferrovie Appulo Lucane · horarios y avisos",
+      "https://ferrovieappulolucane.it/"
+    ],
+    [
+      "Trenitalia · reservas",
+      "https://www.trenitalia.com/"
+    ],
+    [
+      "Puglia · turismo oficial",
+      "https://www.viaggiareinpuglia.it/"
+    ],
+    [
+      "Matera · turismo oficial",
+      "https://www.aptbasilicata.it/"
+    ],
+    [
+      "Teatro Petruzzelli · programación y visitas",
+      "https://www.fondazionepetruzzelli.it/"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-09-18",
+      "title": "vuelo hacia Bari con una conexión",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Prepara documentación y equipaje para las tres bases.",
+      "pm": "Traslado a MEX con la antelación requerida por la aerolínea.",
+      "night": "Vuelo internacional con una conexión hacia Bari.",
+      "mobility": "Busca MEX → conexión europea → BRI en una sola reserva. La escala no se convierte en una visita ni en otra noche de hotel.",
+      "spend": 600,
+      "note": ""
+    },
+    {
+      "n": 2,
+      "date": "2027-09-19",
+      "title": "llegada desde Bari y atardecer en los Sassi",
+      "base": "Matera",
+      "places": [
+        "matera-barisano",
+        "matera-belvedere"
+      ],
+      "am": "Llegada a Bari y continuación hacia Matera. Prioriza el bus directo desde BRI cuando su horario permita una conexión holgada.",
+      "pm": "Deja la maleta en el hotel cerca de Piazza Vittorio Veneto o del borde de los Sassi. Primer paseo por la plaza, Belvedere Luigi Guerricchio y Sasso Barisano.",
+      "night": "Atardecer, cena y primera noche en Matera.",
+      "mobility": "Bus directo BRI → Matera sujeto a horario; alternativa por Bari Centrale con bus o servicio disponible ese domingo. Comprueba la parada de llegada en Matera y añade taxi si queda lejos del hotel.",
+      "spend": 1300,
+      "note": "Evita llegar con la maleta a zonas profundas de los Sassi. Confirma el transporte del domingo de 2027; si el vuelo llega tarde, prioriza un traslado reservado."
+    },
+    {
+      "n": 3,
+      "date": "2027-09-20",
+      "title": "cuevas, iglesias rupestres y miradores",
+      "base": "Matera",
+      "places": [
+        "matera-caveoso",
+        "matera-murgia"
+      ],
+      "am": "Sasso Caveoso y Sasso Barisano, Casa Grotta e iglesias rupestres, eligiendo accesos compatibles y dejando pausas en las escaleras.",
+      "pm": "Catedral y Palombaro Lungo. Después, miradores de la Murgia Materana mediante shuttle, taxi o tour corto reservado.",
+      "night": "Cena y paseo para ver los Sassi iluminados; segunda noche en Matera.",
+      "mobility": "Casco antiguo a pie; para la Murgia reserva transporte de ida y vuelta. No des por hecho que bajar y cruzar la gravina a pie sea el acceso más sencillo.",
+      "spend": 1900,
+      "note": "Es lunes: comprueba cada horario y el acceso guiado al Palombaro. Si no caben todos los interiores, prioriza los que más te interesen sin sacrificar la tarde y noche en Matera."
+    },
+    {
+      "n": 4,
+      "date": "2027-09-21",
+      "title": "llegada desde Matera y primer paseo barroco",
+      "base": "Lecce",
+      "places": [
+        "lecce-oronzo"
+      ],
+      "am": "Traslado Matera → Bari. Continúa en tren hacia Lecce dejando margen entre operadores y para encontrar el andén.",
+      "pm": "Hotel en el centro histórico o cerca de Porta Napoli. Primera tarde en Piazza Sant’Oronzo y las calles barrocas.",
+      "night": "Cena tranquila y descanso en Lecce.",
+      "mobility": "Matera → Bari en bus o FAL según el servicio disponible, seguido de tren Bari → Lecce. Reserva media jornada para este cambio de base; evita cadenas de conexiones cortas.",
+      "spend": 1400,
+      "note": ""
+    },
+    {
+      "n": 5,
+      "date": "2027-09-22",
+      "title": "Santa Croce y las plazas barrocas",
+      "base": "Lecce",
+      "places": [
+        "lecce-duomo",
+        "lecce-croce"
+      ],
+      "am": "Basilica di Santa Croce y exterior del Palazzo dei Celestini, con tiempo para los detalles tallados en piedra.",
+      "pm": "Piazza Sant’Oronzo, anfiteatro romano según acceso y Piazza Duomo. Pasea por las calles del centro sin añadir excursiones.",
+      "night": "Tarde prolongada y cena en Lecce.",
+      "mobility": "Recorrido a pie por el centro histórico, con pausa al mediodía si hace calor.",
+      "spend": 1500,
+      "note": "Comprueba entradas y horas de culto; ver una plaza o una fachada no implica que todos los edificios puedan visitarse por dentro."
+    },
+    {
+      "n": 6,
+      "date": "2027-09-23",
+      "title": "excursión a Ostuni, la ciudad blanca",
+      "base": "Lecce",
+      "places": [
+        "ostuni-white",
+        "ostuni-cathedral"
+      ],
+      "am": "Tren hacia Ostuni. Desde la estación usa shuttle o taxi para subir a la Città Bianca.",
+      "pm": "Catedral, callejones blancos y miradores hacia los olivares y el Adriático. Tiempo para comer y pasear sin añadir otra población.",
+      "night": "Regreso a dormir a Lecce.",
+      "mobility": "Lecce → Ostuni en tren, seguido de transporte local. Reserva o comprueba también la bajada a la estación; ésta queda fuera del casco histórico.",
+      "spend": 1600,
+      "note": ""
+    },
+    {
+      "n": 7,
+      "date": "2027-09-24",
+      "title": "llegada desde Lecce y calles de orecchiette",
+      "base": "Bari",
+      "places": [
+        "bari-vecchia",
+        "bari-nicola-front"
+      ],
+      "am": "Tren directo de Lecce a Bari y equipaje en el hotel, preferentemente en Murat o cerca de Bari Centrale.",
+      "pm": "Bari Vecchia, Basilica di San Nicola, Catedral y Arco Basso, conocido por las orecchiette; después, paseo por el Lungomare.",
+      "night": "Cena y primera noche en Bari.",
+      "mobility": "Lecce → Bari: aproximadamente 1 h 25–1 h 35 en servicios rápidos, más en otros trenes. Casco antiguo y paseo marítimo a pie.",
+      "spend": 1400,
+      "note": "Elabora el paseo según las horas de acceso a las iglesias; ver preparación de pasta en la calle depende de que haya actividad ese día."
+    },
+    {
+      "n": 8,
+      "date": "2027-09-25",
+      "title": "Alberobello y Locorotondo, el Valle d’Itria",
+      "base": "Bari",
+      "places": [
+        "alberobello-aia",
+        "locorotondo-center",
+        "alberobello-monti"
+      ],
+      "am": "Salida desde Bari en tour de día o transfer compartido. Alberobello: Rione Monti, Aia Piccola y sus trulli de piedra con tejados cónicos.",
+      "pm": "Continúa a Locorotondo y recorre su centro blanco, con tiempo para comer y disfrutar las vistas.",
+      "night": "Regreso al mismo hotel en Bari.",
+      "mobility": "Prioriza una excursión que incluya ambas localidades para evitar combinaciones regionales incómodas. Comprueba la duración de cada parada y el punto de recogida.",
+      "spend": 2800,
+      "note": "La excursión está presupuestada como referencia, no reservada. No añadas hotel en los pueblos ni otra parada que reduzca demasiado el tiempo libre."
+    },
+    {
+      "n": 9,
+      "date": "2027-09-26",
+      "title": "Polignano y Monopoli, balcones al Adriático",
+      "base": "Bari",
+      "places": [
+        "polignano-lama",
+        "monopoli-oldport"
+      ],
+      "am": "Tren de Bari a Polignano a Mare. Lama Monachile, balcones y casco histórico, sin depender de una actividad de baño.",
+      "pm": "Tren corto a Monopoli: puerto viejo, Catedral y centro histórico.",
+      "night": "Regreso en tren para dormir en Bari.",
+      "mobility": "Bari → Polignano a Mare → Monopoli → Bari en tren. Comprueba frecuencias de domingo y el último regreso antes de salir.",
+      "spend": 1700,
+      "note": "Si hay lluvia o viento fuerte, reduce el tiempo en los balcones y aprovecha los interiores. No se incluye excursión en barco."
+    },
+    {
+      "n": 10,
+      "date": "2027-09-27",
+      "title": "castillo, teatro y una última tarde libre",
+      "base": "Bari",
+      "places": [
+        "bari-svevo",
+        "bari-theatre"
+      ],
+      "am": "Castello Svevo según apertura y paseo por Bari Vecchia.",
+      "pm": "Teatro Petruzzelli si hay visita disponible, mercado o comida y tiempo libre. Trani puede sustituir parte del día como excursión opcional, sin otra base.",
+      "night": "Cena de despedida y equipaje preparado para el vuelo.",
+      "mobility": "Paseo urbano a pie. Si eliges Trani, consulta trenes directos y regreso; no lo sumes a todas las visitas de Bari.",
+      "spend": 1400,
+      "note": "Es lunes y el día funciona como margen por clima o retrasos. Las visitas interiores y Trani son alternativas según aperturas y energía, no obligaciones acumulativas.",
+      "optionalPlaces": [
+        "bari-theatre"
+      ]
+    },
+    {
+      "n": 11,
+      "date": "2027-09-28",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Check-out y traslado a BRI con la antelación exigida por la aerolínea.",
+      "pm": "Vuelo de regreso con una conexión.",
+      "night": "Llegada a MEX según el horario contratado.",
+      "mobility": "Bari → aeropuerto en tren, bus o taxi según ubicación y horario. Confirma que llegas a México el 28 de septiembre.",
+      "spend": 700,
+      "note": ""
+    }
+  ],
+  "cover": "alberobello-monti",
+  "stays": [
+    [
+      "Matera · 2 noches",
+      "Piazza Vittorio Veneto o borde de los Sassi. Evita zonas profundas con muchas escaleras y confirma el punto de llegada del taxi."
+    ],
+    [
+      "Lecce · 3 noches",
+      "Centro histórico o Porta Napoli, con acceso sencillo desde la estación mediante paseo o taxi."
+    ],
+    [
+      "Bari · 4 noches",
+      "Murat o cerca de Bari Centrale para facilitar las excursiones y el aeropuerto."
+    ],
+    [
+      "Equipaje y comodidad",
+      "Prioriza hotel/aparthotel con recepción, consigna y ascensor cuando sea posible. Verifica la accesibilidad desde la calle: un ascensor no elimina las escaleras exteriores, especialmente en Matera."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Matera",
+      "coords": [
+        40.6663,
+        16.6043
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Lecce",
+      "coords": [
+        40.3515,
+        18.175
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Ostuni",
+      "coords": [
+        40.7295,
+        17.577
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Bari",
+      "coords": [
+        41.1171,
+        16.8719
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Alberobello",
+      "coords": [
+        40.7864,
+        17.2404
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 5
+    },
+    {
+      "name": "Locorotondo",
+      "coords": [
+        40.7541,
+        17.327
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 6
+    },
+    {
+      "name": "Polignano a Mare",
+      "coords": [
+        40.9951,
+        17.2196
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 7
+    },
+    {
+      "name": "Monopoli",
+      "coords": [
+        40.9517,
+        17.3012
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 8
+    }
+  ]
+}
