@@ -18,3 +18,5 @@ CONTENIDO PERSONALIZADO DEL VIAJE
 - lodgingSummary y heroLodgingSummary permiten ajustar la descripción de alojamientos.
 - planningDetails define los textos de reservas críticas y tours, si aplica. No hay que editar app.js para cambiarlos.
 - La sección Mis vacaciones combina varios itinerarios y sigue siendo información global.
+
+- cardHighlights e introHighlights son listas de nombres que aparecen en negritas; routeHighlights resalta los nombres de las localidades del recorrido. Para actualizarlos, edita el JSON del viaje.

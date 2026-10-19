@@ -1331,5 +1331,28 @@
   "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",
   "heroLodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta provisional)",
   "budgetPreliminary": true,
-  "railCurrencyNote": "Equivalencias MXN aproximadas."
+  "railCurrencyNote": "Equivalencias MXN aproximadas.",
+  "cardHighlights": [
+    "Milano",
+    "Firenze",
+    "Bologna",
+    "Ravenna",
+    "Parma",
+    "Ferrara",
+    "Modena",
+    "Malpensa"
+  ],
+  "introHighlights": [
+    "Lombardia",
+    "Milano",
+    "Bologna",
+    "Emilia-Romagna",
+    "Parma",
+    "Modena",
+    "Ravenna",
+    "Ferrara",
+    "Toscana",
+    "Firenze"
+  ],
+  "routeHighlights": true
 }
