@@ -1362,5 +1362,30 @@
     "Moxy"
   ],
   "emphasisStyle": true,
-  "linkRailInText": true
+  "linkRailInText": true,
+  "placeDescriptions": {
+    "italy16-duomo": "El Duomo domina la plaza central de Milano con su fachada de mármol, agujas y esculturas góticas.",
+    "milan-galleria": "La Galleria Vittorio Emanuele II reúne tiendas y cafés bajo una cubierta de hierro y vidrio, junto al Duomo.",
+    "italy16-grazie": "La iglesia milanesa junto al refectorio que conserva L’Ultima Cena.",
+    "italy16-castello": "El Castello Sforzesco conserva sus torres y patios históricos y alberga museos municipales de Milano.",
+    "emilia-piazza": "La fachada de San Petronio preside Piazza Maggiore, uno de los grandes espacios monumentales de Bologna.",
+    "emilia-nettuno": "La fuente renacentista de Neptuno es uno de los símbolos del centro de Bologna.",
+    "emilia-stefano": "La plaza de Santo Stefano, en Bologna, reúne pórticos y fachadas históricas junto al conjunto de iglesias del mismo nombre.",
+    "emilia-vitale": "Los mosaicos bizantinos de esta basílica de Ravenna envuelven el presbiterio en figuras y colores.",
+    "emilia-galla": "Un pequeño edificio de Ravenna custodia uno de los conjuntos de mosaicos más célebres de la ciudad.",
+    "emilia-parma": "La plaza episcopal de Parma reúne la catedral románica y el baptisterio de mármol rosado.",
+    "emilia-farnese": "Un monumental teatro de madera ocupa el Palazzo della Pilotta en Parma.",
+    "emilia-sanluca": "El santuario corona una colina de Bologna y ofrece una excursión entre arquitectura y paisaje.",
+    "emilia-anatomico": "La sala de madera donde se enseñaba anatomía recuerda la tradición universitaria de Bologna.",
+    "emilia-castello": "La fortaleza de ladrillo y su foso recuerdan el poder de la familia Este en Ferrara.",
+    "emilia-diamanti": "Miles de piezas de mármol en punta de diamante dan carácter a este palacio renacentista de Ferrara.",
+    "italy16-david": "El David original en la Galleria dell’Accademia de Firenze.",
+    "italy16-cupola": "La gran cúpula de Santa Maria del Fiore sobre los tejados de Firenze.",
+    "italy16-uffizi": "El patio de los Uffizi, puerta de entrada al gran museo del Renacimiento.",
+    "emilia-modena": "Una obra maestra del románico preside el conjunto monumental de Piazza Grande en Modena.",
+    "emilia-albinelli": "La fuente de la portadora de fruta adorna el mercado cubierto de Modena, una parada para descubrir los sabores de la región.",
+    "italy16-ferrari": "El interior del museo dedicado a Enzo Ferrari en Modena.",
+    "italy16-compianto": "Detalle del Cristo yacente del Compianto de Niccolò dell’Arca en Santa Maria della Vita, Bologna.",
+    "emilia-porticos": "Galerías cubiertas acompañan el paseo por Bologna entre comercios y edificios históricos."
+  }
 }

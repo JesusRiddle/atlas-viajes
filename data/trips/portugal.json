@@ -373,5 +373,30 @@
       "base": false,
       "order": 5
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "pena": "Palacio romántico de colores en las montañas de Sintra. Reserva horario y cuenta tiempo para subir desde el pueblo.",
+    "baixa-lisbon": "Praça do Comércio, plaza monumental de Lisboa abierta al Tajo.",
+    "santa-justa": "Ascensor de hierro que une distintos niveles del centro de Lisboa.",
+    "jeronimos": "Claustro y templo manuelinos de piedra tallada. Es la visita arquitectónica clave de Belém.",
+    "belem": "Torre de Belém, fortificación junto al Tajo y uno de los monumentos más conocidos de Lisboa. Su exterior forma parte del paseo; consulta por separado la disponibilidad del interior.",
+    "discoveries-monument": "Monumento a los Descubrimientos junto al Tajo, en Belém.",
+    "sao-jorge": "Castillo de São Jorge, situado sobre una colina de Lisboa.",
+    "alfama": "Barrio de callejuelas y miradores en Lisboa. Combina caminata, tranvía cuando resulte práctico y una noche de fado.",
+    "chiado": "Largo do Chiado, en el barrio histórico y comercial de Lisboa.",
+    "regaleira": "Finca de jardines simbólicos, grutas y pozo iniciático. Se disfruta con tiempo y zapatos que no resbalen.",
+    "sintra-national-palace": "Palacio de Sintra, reconocible por sus dos grandes chimeneas cónicas.",
+    "tile-museum-lisbon": "Museo Nacional del Azulejo, instalado en el antiguo convento de Madre de Deus.",
+    "sao-bento": "Estación de São Bento en el centro de Oporto.",
+    "ribeira": "Frente histórico del Duero, con fachadas coloridas y puente de hierro. La orilla de Gaia ofrece la mejor vista del conjunto.",
+    "dom-luis-bridge": "Puente de Dom Luís I sobre el río Duero.",
+    "lello": "Librería histórica de Porto con escalera escultórica y decoración neogótica. Requiere entrada y puede estar muy concurrida.",
+    "clerigos": "Torre de los Clérigos, campanario emblemático de Oporto.",
+    "douro": "Valle portugués de viñedos en terrazas junto al río Duero. Una excursión permite combinar miradores y bodegas; las actividades concretas dependen del recorrido contratado.",
+    "guimaraes": "Centro histórico portugués de plazas, casas antiguas y castillo. Una excursión tranquila desde Porto.",
+    "guimaraes-castle": "Castillo medieval de Guimarães.",
+    "braganza-palace": "Palacio de los Duques de Braganza, en Guimarães.",
+    "gaia-waterfront": "Desde la ribera de Vila Nova de Gaia se contempla el frente histórico de Porto al otro lado del Duero. El paseo permite disfrutar esta perspectiva y acercarse a las bodegas de la zona.",
+    "palacio-bolsa": "Palacio de la Bolsa, edificio histórico del centro de Oporto."
+  }
 }

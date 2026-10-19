@@ -389,5 +389,28 @@
     "label": "Baviera · versión compacta",
     "note": "10 días · 1 base en Múnich",
     "other": "munich-viena"
+  },
+  "placeDescriptions": {
+    "neuschwanstein": "Palacio romántico de Luis II en las estribaciones alpinas. El interior sólo se visita con turno; los accesos exteriores dependen del hielo.",
+    "marienplatz": "Plaza central de Múnich, dominada por el ayuntamiento neogótico. En diciembre es el corazón de la experiencia navideña.",
+    "munich-town-hall": "Ayuntamiento neogótico de Múnich en la plaza Marienplatz.",
+    "nymphenburg": "Residencia barroca de verano de la casa bávara. En invierno prioriza el interior y un paseo breve por sus jardines.",
+    "frauenkirche-munich": "Catedral de Múnich reconocible por sus dos torres con cúpulas.",
+    "viktualienmarkt": "Mercado al aire libre en el centro histórico de Múnich.",
+    "fussen": "Plaza y fuente del casco histórico de Füssen, entre Reichenstraße y Ritterstraße.",
+    "residenz": "Gran complejo palaciego de los gobernantes bávaros, con patios y salas ceremoniales. Una visita interior especialmente útil en días fríos.",
+    "alte-pinakothek": "Museo de pintura europea en el barrio de los museos de Múnich.",
+    "salzburg": "Ciudad barroca austríaca entre montañas, con fortaleza y calles históricas. Se visita desde Múnich sin cambiar de hotel.",
+    "hohensalzburg": "Fortaleza situada sobre la ciudad de Salzburgo.",
+    "getreidegasse": "Calle histórica de Salzburgo conocida por sus letreros de hierro.",
+    "zugspitze": "La cima más alta de Alemania, accesible mediante transporte de montaña. Las vistas dependen de nubes y viento; el día debe ser intercambiable.",
+    "eibsee": "El lago Eibsee en otoño, con las montañas del Wetterstein al fondo.",
+    "garmisch": "Localidad bávara al pie de los Alpes.",
+    "nuremberg-castle": "Castillo imperial que domina el casco antiguo de Núremberg.",
+    "st-lorenz-nuremberg": "Iglesia gótica de San Lorenzo en Núremberg.",
+    "nuremberg": "Ciudad de castillo, iglesias y mercados navideños. La excursión en tren ofrece un contraste medieval con Múnich.",
+    "deutsches-museum": "Museo de ciencia y tecnología situado junto al río Isar.",
+    "oberammergau": "Escena urbana con fachadas pintadas de Oberammergau.",
+    "linderhof": "Vista del palacio de Linderhof en Baviera."
   }
 }
