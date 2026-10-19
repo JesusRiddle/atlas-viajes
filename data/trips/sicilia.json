@@ -411,5 +411,27 @@
       "base": false,
       "order": 7
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "ortigia": "Isla histórica de Siracusa con catedral, plazas de piedra clara y paseos junto al mar. Merece un día entero.",
+    "quattro-canti": "Cruce barroco de Palermo cuyas cuatro esquinas tienen fachadas curvas con esculturas. Es un punto de referencia para empezar a recorrer el centro histórico.",
+    "norman-palace": "Palacio histórico de Palermo que fue sede de los gobernantes normandos de Sicilia. En su conjunto se encuentra la Capilla Palatina.",
+    "palatine-chapel": "Capilla del Palacio de los Normandos, famosa por sus mosaicos dorados. Su decoración refleja la convivencia de tradiciones artísticas en la Sicilia medieval.",
+    "palermo": "Catedral que reúne transformaciones de distintas épocas y refleja la mezcla cultural de Palermo. La fotografía muestra el monumento que visitarás durante el recorrido por el centro.",
+    "monreale": "Templo normando con mosaicos dorados y claustro. Es una de las visitas artísticas más impresionantes de Sicilia.",
+    "agrigento": "Conjunto de templos griegos en una cresta de la antigua Akragas. En invierno disfruta las primeras horas de luz.",
+    "teatro-massimo": "Gran teatro de ópera de Palermo, con una fachada monumental y amplia escalinata. Puedes contemplarlo desde fuera o reservar una visita guiada al interior.",
+    "kalsa": "Barrio histórico de Palermo de plazas, iglesias y palacios. La imagen muestra uno de sus jardines, una pausa verde durante el recorrido a pie.",
+    "palazzo-abatellis": "Palacio de Palermo que alberga una importante colección de arte siciliano. Es la visita cultural opcional del día más tranquilo en la ciudad.",
+    "catania": "Ciudad barroca al pie del Etna, construida en buena parte con piedra volcánica. Mercados y Piazza Duomo dan carácter al recorrido.",
+    "syracuse-cathedral": "Catedral de Siracusa, en Ortigia, construida aprovechando elementos de un antiguo templo. Su fachada barroca preside una amplia plaza de piedra clara.",
+    "neapolis-syracuse": "Teatro griego del parque arqueológico de Neápolis, en Siracusa. El conjunto está fuera de Ortigia y requiere reservar tiempo para el traslado y la visita.",
+    "noto": "Ciudad de fachadas barrocas en piedra dorada, reconstruida después del terremoto de 1693. Ideal para una excursión pausada.",
+    "noto-cathedral": "Catedral situada sobre una escalinata en el centro barroco de Noto. Su fachada de piedra clara forma parte del conjunto monumental que distingue a la ciudad.",
+    "etna": "Volcán activo de Sicilia. Una excursión guiada adapta el acceso a actividad volcánica, nieve y viento; no promete llegar a los cráteres de cima.",
+    "taormina": "Ciudad elevada con teatro antiguo y vistas al mar y al Etna. La visita cultural funciona también fuera de temporada de playa.",
+    "taormina-theatre": "Teatro antiguo situado sobre la costa de Taormina. Su emplazamiento permite disfrutar al mismo tiempo la arquitectura y el paisaje del mar y las montañas.",
+    "catania-fish-market": "Mercado tradicional del centro de Catania, con puestos de pescado y alimentos. La visita tiene más sentido durante su actividad comercial, que debes comprobar para ese día.",
+    "benedictine-catania": "Antiguo monasterio de Catania con patios y espacios monumentales. Una visita guiada permite conocer su arquitectura y las transformaciones del conjunto."
+  }
 }

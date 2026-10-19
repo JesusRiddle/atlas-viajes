@@ -432,5 +432,32 @@
       "base": false,
       "order": 7
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "cappadocia": "Paisaje de toba volcánica, chimeneas de hadas e iglesias excavadas. Cuatro noches permiten margen meteorológico para el globo.",
+    "sultanahmet-square": "La plaza de Sultanahmet ocupa el antiguo Hipódromo de Constantinopla y conserva sus monumentos y obeliscos.",
+    "hagia": "Monumento bizantino transformado en mezquita. El circuito turístico y el acceso para culto son distintos; comprueba la entrada correspondiente.",
+    "blue": "Mezquita otomana de grandes cúpulas y azulejería. La entrada turística se adapta a horarios de oración y requiere vestimenta apropiada.",
+    "basilica-cistern": "La Cisterna Basílica es un gran depósito subterráneo sostenido por columnas, bajo el casco histórico de Estambul.",
+    "topkapi": "Antigua residencia de los sultanes otomanos, formada por patios y pabellones. El harén puede requerir una modalidad de entrada específica.",
+    "gulhane": "El parque Gülhane ofrece caminos arbolados junto al recinto del palacio de Topkapi.",
+    "bosphorus": "El Bósforo separa los lados europeo y asiático de Estambul; sus orillas se recorren también en ferry.",
+    "kadikoy": "Kadıköy es un distrito de la orilla asiática de Estambul, con muelles, calles comerciales y restaurantes.",
+    "grand-bazaar": "El Gran Bazar reúne calles cubiertas y puestos comerciales en el centro histórico de Estambul.",
+    "suleymaniye": "La mezquita de Süleymaniye destaca por sus cúpulas y minaretes sobre una de las colinas de Estambul.",
+    "spice-bazaar": "El Bazar de las Especias reúne puestos de especias, dulces y otros productos bajo galerías cubiertas.",
+    "galata-tower": "La torre de Gálata es un hito del barrio de Beyoğlu y un mirador sobre Estambul.",
+    "istiklal": "La avenida İstiklal es un eje peatonal de Beyoğlu, con comercios, edificios históricos y tranvía.",
+    "goreme-town": "Göreme se extiende entre formaciones rocosas de Capadocia y sirve de base para explorar la región.",
+    "goreme-open-air": "El museo al aire libre de Göreme conserva iglesias y espacios excavados en la roca.",
+    "derinkuyu": "Derinkuyu permite recorrer pasajes y cámaras de una ciudad subterránea excavada en la roca.",
+    "ihlara": "El valle de Ihlara sigue el río Melendiz entre paredes rocosas y vegetación.",
+    "uchisar": "El pueblo de Uçhisar rodea una gran formación rocosa que funciona como castillo y mirador de Capadocia.",
+    "kordon-izmir": "El Kordon es el paseo marítimo de Esmirna, con zonas verdes junto a la bahía.",
+    "ephesus": "Ciudad romana con calles de mármol, teatro y Biblioteca de Celso. Las casas aterrazadas suelen tener un acceso adicional.",
+    "celsus": "La fachada reconstruida de la biblioteca de Celso es uno de los monumentos más reconocibles de Éfeso.",
+    "ephesus-terrace-houses": "Las casas en terraza de Éfeso permiten ver viviendas antiguas con restos de decoración y espacios domésticos.",
+    "kemeralti": "Kemeraltı es el barrio comercial histórico de Esmirna, con calles de mercado y comercios tradicionales.",
+    "izmir": "Ciudad portuaria del Egeo, con paseo Kordon y bazar Kemeraltı. Es una base práctica para visitar Éfeso."
+  }
 }

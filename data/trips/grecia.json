@@ -461,5 +461,26 @@
       "base": false,
       "order": 7
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "meteora": "Paisaje de grandes pilares de roca coronados por monasterios. Sus miradores permiten apreciar el conjunto y la relación entre arquitectura y montaña.",
+    "plaka": "Barrio histórico situado a los pies de la Acrópolis, con calles estrechas, casas de poca altura y pequeñas plazas. Es una primera aproximación tranquila a Atenas.",
+    "acropolis": "Colina de templos clásicos dominada por el Partenón. La visita exterior es prioritaria con luz y tiempo seco.",
+    "acropolis-museum": "Museo que conserva esculturas y hallazgos procedentes de la Acrópolis. Complementa la visita a la colina al explicar sus templos y la decoración que los acompañaba.",
+    "ancient-agora": "Recinto arqueológico del antiguo centro de la vida pública de Atenas. Entre sus restos se comprende cómo se organizaban el comercio, los encuentros y la actividad cívica.",
+    "monastiraki": "Plaza y barrio del centro de Atenas, entre monumentos, comercios y calles animadas. Permite combinar el paseo histórico con una tarde más cotidiana.",
+    "delphi": "Santuario de Apolo sobre una ladera montañosa, con museo arqueológico. Se puede visitar como excursión organizada desde Atenas.",
+    "delphi-museum": "Museo dedicado a los hallazgos del santuario de Delfos. Sus esculturas y objetos ayudan a comprender la importancia religiosa y artística del antiguo oráculo.",
+    "national-archaeological-athens": "Gran museo de Atenas dedicado a las culturas de la antigua Grecia. Sus colecciones abarcan distintas épocas y merecen seleccionar unas salas para visitarlas con calma.",
+    "syntagma": "Plaza central de Atenas, frente al Parlamento griego. Funciona como punto de referencia para orientarse en la ciudad y conectar varios barrios.",
+    "lycabettus": "Colina que sobresale sobre los edificios de Atenas y ofrece vistas amplias de la ciudad. La subida es una propuesta opcional para una tarde despejada.",
+    "nafplio": "Antigua capital griega con casas neoclásicas, calles venecianas y fortaleza. Una base pequeña para explorar la Argólida.",
+    "mycenae": "Ciudadela de la Edad de Bronce con la Puerta de los Leones y tumbas monumentales. Ayuda a entender una Grecia anterior a Atenas clásica.",
+    "epidaurus": "Santuario antiguo de curación cuyo teatro es famoso por proporciones y acústica. Se combina con Micenas mediante traslado contratado.",
+    "palamidi": "Fortaleza veneciana construida sobre Nafplio, con murallas y vistas del golfo. Llegar en taxi al acceso reduce el esfuerzo de la subida desde el pueblo.",
+    "great-meteoron": "Monasterio construido en la cima de una gran roca de Meteora. Su visita permite conocer espacios religiosos y contemplar el paisaje desde una posición elevada.",
+    "varlaam": "Monasterio de Meteora asentado sobre una formación rocosa. Combina edificios religiosos y vistas de los pilares vecinos; el acceso incluye escaleras.",
+    "kastraki": "Pueblo situado a los pies de las rocas de Meteora. Sus casas y calles ofrecen una perspectiva del paisaje distinta a la de los miradores elevados.",
+    "st-stephen-meteora": "Monasterio que domina la llanura desde uno de los promontorios de Meteora. Es una visita adicional propuesta para el día flexible, sujeta al calendario de apertura."
+  }
 }

@@ -252,5 +252,20 @@
       "base": false,
       "order": 3
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "capitol": "Sede del Congreso en Washington. El tour interior requiere reserva; la visita no implica acceso a las cámaras legislativas.",
+    "dc-mall": "Gran explanada de Washington que conecta museos, zonas verdes y monumentos. Es el eje de varios paseos del viaje y una buena primera aproximación a la ciudad.",
+    "library-congress": "El edificio Thomas Jefferson de la Biblioteca del Congreso destaca por su fachada monumental y sus interiores ornamentados.",
+    "air-space": "El museo del National Mall reúne aeronaves y vehículos de exploración espacial; la imagen muestra una de sus salas.",
+    "natural-history-dc": "El museo de historia natural del Smithsonian, reconocible por su cúpula, alberga colecciones de ciencias naturales.",
+    "national-gallery-dc": "El edificio oeste de la National Gallery of Art presenta una fachada clásica y colecciones de pintura y escultura.",
+    "lincoln": "Monumento dedicado a Abraham Lincoln al extremo del National Mall, frente al estanque reflectante.",
+    "vietnam-memorial": "Los muros de granito negro del memorial recuerdan a los militares estadounidenses fallecidos o desaparecidos en la guerra de Vietnam.",
+    "korean-memorial": "El memorial de la guerra de Corea combina esculturas, un muro y espacios de recuerdo junto al National Mall.",
+    "arlington": "Las hileras de lápidas de Arlington forman uno de los cementerios militares más conocidos de Estados Unidos.",
+    "georgetown": "Barrio histórico de Washington con casas de ladrillo, calles comerciales y ribera del Potomac.",
+    "dupont-circle": "La fuente y el parque de Dupont Circle sirven como punto de encuentro en este barrio de Washington.",
+    "alexandria": "Centro histórico de casas de ladrillo y calles junto al Potomac, en Virginia. Una excursión fácil desde Washington en Metro y transporte local."
+  }
 }

@@ -511,5 +511,23 @@
     "conditions": "Temporada cálida, caminatas recortables y días de margen",
     "airports": "MEX → ZRH / ZRH → MEX",
     "vacation": "Saldo de 2027"
+  },
+  "placeDescriptions": {
+    "lauterbrunnen": "El valle de Lauterbrunnen combina prados, pequeños núcleos alpinos y altas paredes rocosas con cascadas.",
+    "lucerne": "Ciudad junto al lago de los Cuatro Cantones, conocida por su puente de madera y casco histórico. Una base suave para empezar Suiza.",
+    "kapellbrucke": "Puente de la Capilla, puente cubierto de madera de Lucerna.",
+    "lake-lucerne": "Lago de Lucerna, rodeado por paisajes de los Alpes suizos.",
+    "interlaken": "Interlaken es una localidad del Oberland bernés, situada entre los lagos de Thun y Brienz y rodeada de montañas.",
+    "wengen": "Pueblo alpino accesible en tren desde Lauterbrunnen. La foto lo muestra desde Männlichen como referencia; el programa pasea por Wengen sin subir a ese mirador.",
+    "grindelwald": "El valle de Grindelwald visto desde First. Desde el pueblo sube el teleférico; después de la excursión regresarás a Lauterbrunnen.",
+    "first-cliff-walk": "Pasarela junto a una pared rocosa y mirador sobre el paisaje alpino de Grindelwald-First. Depende de la operación y el clima; se puede omitir si incomoda la altura.",
+    "bachalpsee": "Lago de montaña al que se llega caminando desde First. La imagen muestra condiciones despejadas de temporada cálida; la excursión depende del sendero y la visibilidad.",
+    "murren": "Pueblo sobre los acantilados del valle de Lauterbrunnen. Una excursión para pasear entre chalets y detenerse a mirar las montañas.",
+    "oeschinensee": "Lago alpino cerca de Kandersteg. Esta foto panorámica fue tomada desde una zona elevada; el programa visita la orilla por el acceso sencillo y no incluye el circuito alto de Heuberg.",
+    "zermatt": "Pueblo alpino sin tráfico privado ordinario, a los pies del Matterhorn. La silueta del monte sólo aparece si la visibilidad acompaña.",
+    "gornergrat": "Mirador alpino al que asciende un tren de cremallera desde Zermatt. Ofrece vistas de glaciares y grandes cumbres.",
+    "riffelsee": "Lago cercano a Rotenboden, con posible reflejo del Cervino cuando no hay viento y el cielo está despejado. Parada opcional dentro del día de Gornergrat.",
+    "matterhorn-museum": "Museo del Cervino, dedicado a la historia de Zermatt y la montaña.",
+    "zurich": "Calles históricas a ambos lados del Limmat, iglesias y fachadas junto al río. La última noche aquí protege la conexión de regreso."
   }
 }
