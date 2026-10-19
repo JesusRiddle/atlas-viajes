@@ -20,3 +20,9 @@ CONTENIDO PERSONALIZADO DEL VIAJE
 - La sección Mis vacaciones combina varios itinerarios y sigue siendo información global.
 
 - cardHighlights e introHighlights son listas de nombres que aparecen en negritas; routeHighlights resalta los nombres de las localidades del recorrido. Para actualizarlos, edita el JSON del viaje.
+
+CATÁLOGO Y AUTONOMÍA
+- data/places.json agrupa nombres y fotos con créditos. Los textos de las visitas se editan en placeDescriptions del JSON de cada viaje.
+- boldCityNames y emphasisStyle, si existen, controlan negritas sin identificar una ruta en JavaScript.
+- comparison y railAppendix son datos propios de cada ruta. Si solo una ruta está activa, no se muestra comparativa cruzada.
+- data/vacations.json contiene los textos globales de vacaciones; el listado se genera desde los viajes habilitados.
