@@ -294,5 +294,18 @@
       "base": true,
       "order": 2
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "bahia": "Palacio marroquí de patios, techos pintados y artesanía. Una buena introducción a la arquitectura de Marrakech.",
+    "marrakech": "Ciudad de medina, zocos y jardines, con la plaza Jemaa el-Fna como centro social. Un guía local mejora la primera orientación.",
+    "jemaa-el-fna": "Gran plaza de la medina de Marrakech, conocida por su actividad cotidiana y su ambiente al atardecer. Es un punto de encuentro entre mercados y calles del casco antiguo.",
+    "majorelle": "Jardín de plantas y arquitectura azul intenso en Marrakech. La entrada se compra en el canal oficial con horario.",
+    "ben-youssef-madrasa": "Antigua escuela coránica de Marrakech, organizada alrededor de un patio decorado con madera, yesería y azulejos. Es una visita para apreciar de cerca la artesanía del edificio.",
+    "marrakech-museum": "Museo instalado en un palacio histórico de Marrakech. La gran lámpara de su patio interior muestra la escala y riqueza decorativa del edificio.",
+    "agafay": "Paisaje pedregoso a las afueras de Marrakech. Sirve para una experiencia de atardecer, pero no es el Sahara ni tiene sus dunas.",
+    "essaouira": "Ciudad costera amurallada de puertas azules, puerto y fortificaciones. Un cambio de ambiente que no exige recorrer todo Marruecos.",
+    "essaouira-port": "Puerto pesquero de Essaouira, donde las embarcaciones y la actividad de los trabajadores forman parte del paisaje cotidiano de la ciudad.",
+    "essaouira-ramparts": "Fortificaciones de piedra frente al Atlántico que protegían Essaouira. El paseo permite observar las murallas y la costa desde los accesos habilitados.",
+    "essaouira-beach": "Amplia playa atlántica junto a Essaouira. Es una propuesta para caminar y contemplar el mar; en esta época del año el programa no depende de bañarse."
+  }
 }

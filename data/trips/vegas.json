@@ -202,5 +202,14 @@
       "base": true,
       "order": 1
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "strip": "Avenida de grandes hoteles temáticos, arquitectura de espectáculo y salas de entretenimiento. Las distancias a pie son mayores de lo que parecen.",
+    "bellagio-fountains": "Las fuentes del Bellagio realizan espectáculos de agua en el lago situado frente al hotel.",
+    "venetian-vegas": "The Venetian recrea elementos de la arquitectura veneciana en uno de los grandes complejos del Strip.",
+    "bellagio-conservatory": "El invernadero del Bellagio presenta instalaciones florales y decoraciones que cambian según la temporada.",
+    "hoover": "Presa sobre el Colorado, junto al lago Mead. Los tours de interior y miradores tienen acceso y reservas diferentes.",
+    "grandcanyon": "Borde sur del gran cañón del Colorado, dentro del parque nacional. No es Grand Canyon West ni Skywalk; el trayecto desde Vegas es largo.",
+    "fremont-street": "Fremont Street Experience reúne casinos y entretenimiento bajo una gran cubierta luminosa en el centro de Las Vegas."
+  }
 }

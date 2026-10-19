@@ -209,5 +209,16 @@
       "base": true,
       "order": 1
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "frenchquarter": "Núcleo histórico de Nueva Orleans, de balcones de hierro, patios y arquitectura criolla. Combina paseo diurno y música en vivo.",
+    "jackson-square": "Jackson Square es una plaza histórica del French Quarter, presidida por la catedral de San Luis.",
+    "st-louis-cathedral": "La catedral de San Luis, con sus tres torres, es uno de los edificios más reconocibles de Nueva Orleans.",
+    "gardendistrict": "Barrio de grandes casas históricas y jardines. Una ruta guiada permite entender su arquitectura sin acceder a propiedades privadas.",
+    "st-charles-streetcar": "El tranvía de St. Charles recorre una avenida histórica entre casas, robles y barrios de Nueva Orleans.",
+    "magazine-street": "Magazine Street concentra comercios, cafés y fachadas de barrio a lo largo de Nueva Orleans.",
+    "bayou": "Humedales de cipreses y canales cerca de Nueva Orleans. En diciembre importa el paisaje; no se garantiza ver caimanes.",
+    "wwii-museum": "El National WWII Museum presenta la historia de la Segunda Guerra Mundial mediante exposiciones y testimonios.",
+    "frenchmen-street": "Frenchmen Street es una zona de música en directo; sus locales y vida nocturna ofrecen una escena distinta del French Quarter."
+  }
 }

@@ -186,5 +186,14 @@
       "base": true,
       "order": 1
     }
-  ]
+  ],
+  "placeDescriptions": {
+    "riverwalk": "Paseo urbano junto al río, entre puentes, restaurantes y vegetación. En diciembre puede disfrutarse de la iluminación estacional.",
+    "alamo": "Antigua misión y lugar histórico de la revolución texana. Reserva el acceso y distingue iglesia de exhibiciones de pago.",
+    "san-fernando-cathedral": "La catedral de San Fernando se levanta en el centro histórico de San Antonio, junto a Main Plaza.",
+    "mission-san-jose": "La misión de San José conserva una iglesia y un recinto histórico dentro del parque de las misiones de San Antonio.",
+    "mission-concepcion": "Mission Concepción conserva su iglesia histórica de piedra y forma parte del conjunto de misiones de San Antonio.",
+    "pearl-san-antonio": "El antiguo complejo de la cervecería Pearl conserva edificios industriales dentro de un distrito de comercios y gastronomía.",
+    "san-antonio-art-museum": "El San Antonio Museum of Art ocupa edificios de una antigua cervecería junto al río San Antonio."
+  }
 }

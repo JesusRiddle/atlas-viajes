@@ -401,5 +401,25 @@
       "order": 8
     }
   ],
-  "sourceNote": "Propuesta revisada el 6 de octubre de 2026. Presupuesto preliminar; confirma disponibilidad, aperturas y transportes para las fechas indicadas. Los servicios de septiembre de 2027 no están confirmados."
+  "sourceNote": "Propuesta revisada el 6 de octubre de 2026. Presupuesto preliminar; confirma disponibilidad, aperturas y transportes para las fechas indicadas. Los servicios de septiembre de 2027 no están confirmados.",
+  "placeDescriptions": {
+    "alberobello-monti": "Las casas de piedra con techos cónicos distinguen el paisaje urbano de Alberobello.",
+    "matera-barisano": "Casas de piedra y terrazas escalonadas dibujan el barrio histórico de Matera.",
+    "matera-belvedere": "Este mirador junto a Piazza Vittorio Veneto abre la primera vista sobre los Sassi de Matera.",
+    "matera-caveoso": "Viviendas excavadas y la roca de Santa Maria de Idris muestran el paisaje rupestre de Matera.",
+    "matera-murgia": "El paisaje de barrancos y cuevas de la Murgia se extiende frente a la ciudad de Matera.",
+    "lecce-oronzo": "La plaza central de Lecce reúne distintas épocas de la ciudad en el primer paseo.",
+    "lecce-duomo": "La catedral de Lecce preside una plaza monumental de piedra clara.",
+    "lecce-croce": "Detalle del rosetón de Santa Croce, rodeado de la ornamentación tallada que distingue el barroco de Lecce.",
+    "ostuni-white": "Las casas encaladas de Ostuni forman un laberinto de callejones y vistas abiertas.",
+    "ostuni-cathedral": "La catedral corona el casco antiguo de Ostuni con su gran rosetón.",
+    "bari-vecchia": "Calles estrechas y vida cotidiana acompañan el paseo por el centro antiguo de Bari.",
+    "bari-nicola-front": "La basílica románica de San Nicola es uno de los principales monumentos de Bari Vecchia.",
+    "alberobello-aia": "Este barrio de Alberobello permite recorrer los trulli entre pequeñas calles residenciales.",
+    "locorotondo-center": "La arquitectura blanca de Locorotondo invita a caminar por su centro histórico.",
+    "polignano-lama": "La pequeña cala entre acantilados es la vista más reconocible de Polignano a Mare.",
+    "monopoli-oldport": "Barcas y fachadas históricas enmarcan el puerto viejo de Monopoli.",
+    "bari-svevo": "La fortaleza de Bari conserva murallas, torres y espacios de su historia medieval.",
+    "bari-theatre": "El gran teatro de Bari destaca por su fachada monumental; el interior depende de las visitas disponibles."
+  }
 }
