@@ -11,3 +11,10 @@ TÍTULOS DE LOS DÍAS
 - Si title contiene ':', todo lo anterior al primer ':' aparece en negritas.
 - Si title no contiene ':', el encabezado utiliza automáticamente city (si existe) o base, seguido de title.
 - city es la localidad visitada; base es el lugar donde se duerme (y se muestra en la navegación lateral). No los dupliques dentro de title, salvo que quieras un encabezado especial.
+
+CONTENIDO PERSONALIZADO DEL VIAJE
+- En data/trips/<id>.json actualiza cover, stays, mapPoints, family, fechas, days, costes y sources.
+- sourceNote modifica el aviso final; budgetNote la aclaración del presupuesto; budgetPreliminary la etiqueta de estimación.
+- lodgingSummary y heroLodgingSummary permiten ajustar la descripción de alojamientos.
+- planningDetails define los textos de reservas críticas y tours, si aplica. No hay que editar app.js para cambiarlos.
+- La sección Mis vacaciones combina varios itinerarios y sigue siendo información global.

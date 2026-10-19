@@ -458,7 +458,8 @@
           "Check-in desde 15:00: confirmar depósito anticipado. Si no es posible, KiPoint dentro de Bologna Centrale, zona oeste / andén 7 Oeste, y comenzar las visitas sin maleta."
         ],
         "ticket": "Frecciarossa Standard; alternativa Italo Smart. Condiciones de cambio en la nota única de billetes.",
-        "total": "€22.90 (≈ $467 MXN)"
+        "total": "€22.90 (≈ $467 MXN)",
+        "linkRailOperators": true
       },
       "noteLinks": [
         {
@@ -531,7 +532,8 @@
           "Continuar a pie por Tomba di Dante / San Francesco → Battistero Neoniano / Museo Arcivescovile → San Vitale / Galla Placidia. Reservar las franjas según este orden; adaptarlo si el guía contratado fija otro punto de encuentro."
         ],
         "ticket": "Regionale · 2ª clase; no hace falta alta velocidad.",
-        "total": "€17.00 (≈ $347 MXN)"
+        "total": "€17.00 (≈ $347 MXN)",
+        "linkRailOperators": true
       },
       "noteLinks": [
         {
@@ -592,7 +594,8 @@
           "Desde Pilotta, Duomo di Parma, Battistero y el resto del centro se recorren a pie."
         ],
         "ticket": "Regionale · 2ª clase.",
-        "total": "€17.00 (≈ $347 MXN)"
+        "total": "€17.00 (≈ $347 MXN)",
+        "linkRailOperators": true
       },
       "noteLinks": [
         {
@@ -696,7 +699,8 @@
           "Seguir Castello → Palazzo dei Diamanti → Palazzo Schifanoia → centro. Via delle Volte / Cattedrale quedan sujetas al tiempo disponible. Para el tren de las 17:05, salir del centro a más tardar a las 16:15 y llegar a la estación hacia las 16:45–16:50; si se prolonga el paseo, elegir las 18:05 con billete válido."
         ],
         "ticket": "Regionale · 2ª clase.",
-        "total": "€11.00 (≈ $224 MXN)"
+        "total": "€11.00 (≈ $224 MXN)",
+        "linkRailOperators": true
       },
       "noteLinks": [
         {
@@ -764,7 +768,8 @@
           "A pie: Galleria dell’Accademia → Duomo / Cupola del Brunelleschi → centro histórico → Gallerie degli Uffizi. Si se reserva Corridoio Vasariano, continuar desde Oltrarno / Palazzo Pitti hacia Ponte Vecchio sin volver a Uffizi. Llegar a Firenze S. M. Novella hacia 19:40–19:45."
         ],
         "ticket": "Frecciarossa Standard / Italo Smart. Accademia: entrada 08:15–08:30; Cupola: acceso 10:30, duración aprox. 45 min; Uffizi: 13:30. Horarios elegidos, pendientes de compra. Corridoio 16:45: PENDIENTE DE RESERVA.",
-        "total": "€26.80 (≈ $546 MXN)"
+        "total": "€26.80 (≈ $546 MXN)",
+        "linkRailOperators": true
       },
       "noteLinks": [
         {
@@ -838,7 +843,8 @@
           "Sólo con Acetaia Marchi confirmada por escrito para una persona el 5 dic: tomar taxi a Strada Casette 3, esquina Strada Fossa Monda Nord 126, y luego al museo (12–20 min y €15–20 ≈ $306–$408 MXN por trayecto, estimados). Reorganizar la mañana según el horario confirmado."
         ],
         "ticket": "Regionale · 2ª clase.",
-        "total": "€9.00 (≈ $184 MXN) · sin taxis de Acetaia"
+        "total": "€9.00 (≈ $184 MXN) · sin taxis de Acetaia",
+        "linkRailOperators": true
       },
       "noteLinks": [
         {
@@ -1315,5 +1321,15 @@
       "optional": false,
       "order": 7
     }
-  ]
+  ],
+  "planningDetails": {
+    "reservationNote": "Horarios elegidos, pendientes de compra. Coordinar las tres entradas de Firenze antes de reservar por separado.",
+    "tourIntro": "Los tours guiados aportan contexto en Ravenna, Bologna y Modena. Hay opciones en italiano, español e inglés según operador. Realizar los traslados entre ciudades por cuenta propia en tren; contratar guía sólo donde interese una explicación adicional.",
+    "tourNote": "Operadores, precios y disponibilidad pendientes de verificar. Acetaia Marchi requiere confirmar visita, horario y admisión individual."
+  },
+  "sourceNote": "Logística ferroviaria y alojamiento de Bologna revisados el 8 de octubre de 2026 con cotizaciones del viajero, no reservas. Confirmar calendario invernal de Ravenna y disponibilidad de Acetaia Marchi.",
+  "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",
+  "heroLodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta provisional)",
+  "budgetPreliminary": true,
+  "railCurrencyNote": "Equivalencias MXN aproximadas."
 }
