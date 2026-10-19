@@ -36,6 +36,7 @@
       updated: "2026-10-01",
       edited: "2026-10-04"
     };
+    window.PHOTOS = Object.fromEntries(Object.entries(places).map(([id, item]) => [id, item.photo]));
     window.ATLAS_MAP_POINTS = Object.fromEntries(trips.map(trip => [trip.id, trip.mapPoints]));
     return window.ATLAS;
   })();
