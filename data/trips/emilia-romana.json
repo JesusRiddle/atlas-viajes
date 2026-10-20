@@ -1387,5 +1387,6 @@
     "italy16-ferrari": "El interior del museo dedicado a Enzo Ferrari en Modena.",
     "italy16-compianto": "Detalle del Cristo yacente del Compianto de Niccolò dell’Arca en Santa Maria della Vita, Bologna.",
     "emilia-porticos": "Galerías cubiertas acompañan el paseo por Bologna entre comercios y edificios históricos."
-  }
+  },
+  "railExclusions": "Trenes principales elegidos; excluye transporte urbano, taxis y Marconi Express."
 }

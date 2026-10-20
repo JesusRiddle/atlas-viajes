@@ -619,33 +619,6 @@
     70000,
     105000
   ],
-  "barcelonaOptions": [
-    [
-      "MNAC · arte y vistas de Montjuïc",
-      "Sábado 5 desde las 15:00: €0 ($0 MXN), con reserva anticipada. Cierre invernal publicado: 18:00.",
-      "Sustituiría el paseo libre Gòtic/Born del regreso de Figueres, sólo si estás en el museo con unas 2 horas útiles. Si los trenes no dejan margen, exigiría renunciar a Figueres: no se propone hacerlo. El domingo 6 es gratuito por ser primer domingo, pero no encaja con el vuelo de las 13:45."
-    ],
-    [
-      "Barceloneta + Bus Nàutic ALSA",
-      "Paseo por barrio y playa: €0 ($0 MXN). Barco: €1.90 (aprox. $39 MXN) por trayecto; cruce de unos 10 minutos, no crucero panorámico. Confirmar horario y servicio por meteorología.",
-      "Sustituiría parte del paseo Gòtic/Born de la tarde del 3 o del regreso del 5; si eliges este bloque, no añadir también Arc de Triomf y Ciutadella en esa misma franja. Calcula 1.5–2 horas con acceso, espera y paseo."
-    ],
-    [
-      "Salts Bar + Montjuïc",
-      "Consumo según carta; no se presenta como experiencia de coste cero. Apertura de diciembre pendiente de confirmar.",
-      "Sustituiría la tarde libre del regreso del 5, incluido el paseo Gòtic/Born y su extensión Arc/Ciutadella. Calcula 2–3 horas con traslados. Puede combinarse con MNAC sólo con más margen real; no se suman ambos por defecto."
-    ],
-    [
-      "Búnkers del Carmel · Turó de la Rovira",
-      "€0 ($0 MXN). Horario del recinto en invierno: 09:00–17:30; requiere subida y tiempo de transporte.",
-      "El viernes 4 sustituiría Sant Pau o Park Güell, según las reservas, para llegar con luz. No sustituye sólo una cena: cierra temprano. Se mantiene fuera del programa base para conservar ambas visitas."
-    ],
-    [
-      "Torre Glòries · exterior",
-      "Contemplar la torre desde la calle: €0 ($0 MXN). El mirador interior requiere entrada de pago, pendiente de cotizar si se elige.",
-      "Sustituiría parte del paseo libre Gòtic/Born del 3 o del 5. Calcula 45–75 minutos con desplazamientos para el exterior; no merece añadir un traslado sólo por figurar como gratuito."
-    ]
-  ],
   "cover": "zamora-duero",
   "stays": [
     [
@@ -845,5 +818,43 @@
     "dali-figueres": "El antiguo teatro de Figueres convertido en el universo de Salvador Dalí: una visita dedicada a su imaginación y a su obra."
   },
   "formatName": true,
-  "layoutClass": "trip-espana-portugal"
+  "layoutClass": "trip-espana-portugal",
+  "optionalSection": {
+    "eyebrow": "Elige según tus prioridades",
+    "title": "Barcelona: excursiones y paseos opcionales.",
+    "intro": "Alternativas al programa, no visitas adicionales. Las paradas breves integradas en los días 13 y 15 dependen del tiempo disponible y no desplazan las visitas principales.",
+    "columns": [
+      "Opción",
+      "Precio y condiciones",
+      "Qué sustituiría y por qué"
+    ],
+    "rows": [
+      [
+        "MNAC · arte y vistas de Montjuïc",
+        "Sábado 5 desde las 15:00: €0 ($0 MXN), con reserva anticipada. Cierre invernal publicado: 18:00.",
+        "Sustituiría el paseo libre Gòtic/Born del regreso de Figueres, sólo si estás en el museo con unas 2 horas útiles. Si los trenes no dejan margen, exigiría renunciar a Figueres: no se propone hacerlo. El domingo 6 es gratuito por ser primer domingo, pero no encaja con el vuelo de las 13:45."
+      ],
+      [
+        "Barceloneta + Bus Nàutic ALSA",
+        "Paseo por barrio y playa: €0 ($0 MXN). Barco: €1.90 (aprox. $39 MXN) por trayecto; cruce de unos 10 minutos, no crucero panorámico. Confirmar horario y servicio por meteorología.",
+        "Sustituiría parte del paseo Gòtic/Born de la tarde del 3 o del regreso del 5; si eliges este bloque, no añadir también Arc de Triomf y Ciutadella en esa misma franja. Calcula 1.5–2 horas con acceso, espera y paseo."
+      ],
+      [
+        "Salts Bar + Montjuïc",
+        "Consumo según carta; no se presenta como experiencia de coste cero. Apertura de diciembre pendiente de confirmar.",
+        "Sustituiría la tarde libre del regreso del 5, incluido el paseo Gòtic/Born y su extensión Arc/Ciutadella. Calcula 2–3 horas con traslados. Puede combinarse con MNAC sólo con más margen real; no se suman ambos por defecto."
+      ],
+      [
+        "Búnkers del Carmel · Turó de la Rovira",
+        "€0 ($0 MXN). Horario del recinto en invierno: 09:00–17:30; requiere subida y tiempo de transporte.",
+        "El viernes 4 sustituiría Sant Pau o Park Güell, según las reservas, para llegar con luz. No sustituye sólo una cena: cierra temprano. Se mantiene fuera del programa base para conservar ambas visitas."
+      ],
+      [
+        "Torre Glòries · exterior",
+        "Contemplar la torre desde la calle: €0 ($0 MXN). El mirador interior requiere entrada de pago, pendiente de cotizar si se elige.",
+        "Sustituiría parte del paseo libre Gòtic/Born del 3 o del 5. Calcula 45–75 minutos con desplazamientos para el exterior; no merece añadir un traslado sólo por figurar como gratuito."
+      ]
+    ],
+    "note": "Condiciones consultadas el 15 de octubre de 2026. Conversión orientativa: €1 = $20.60 MXN. Confirmar aperturas, reserva y tarifas para diciembre. Casa Batlló mantiene su visita condicionada o fachada gratuita, sin eliminar ninguna visita del programa."
+  }
 }
