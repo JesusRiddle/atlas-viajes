@@ -20,26 +20,45 @@ window.AtlasDay = function (ctx) {
         const firstDay = t.days.findIndex(day => day.hotel === d.hotel);
         if (firstDay !== t.days.indexOf(d)) return '';
 
-        const date = new Date(`${hotel.checkIn || d.date}T12:00:00Z`);
-        const checkInDate = Number.isNaN(date.getTime())
-            ? esc(hotel.checkIn || d.date)
-            : esc(new Intl.DateTimeFormat('es-MX', {
-                dateStyle: 'full',
-                timeZone: 'UTC'
-            }).format(date));
+        const formatter = new Intl.DateTimeFormat('es-MX', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric',
+            timeZone: 'UTC'
+        });
+        const parseDate = value => {
+            if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(value || '')) return null;
+            const date = new Date(value + 'T12:00:00Z');
+            return Number.isNaN(date.getTime()) ? null : date;
+        };
+        const checkIn = parseDate(hotel.checkIn || d.date);
+        const checkOut = parseDate(hotel.checkOut);
+        const formatDate = (date, raw) => date ? esc(formatter.format(date)) : esc(raw || 'Por definir');
+        const nights = checkIn && checkOut
+            ? Math.round((checkOut.getTime() - checkIn.getTime()) / 86400000)
+            : null;
+        const duration = nights > 0
+            ? `${nights} ${nights === 1 ? 'noche' : 'noches'}`
+            : 'Por definir';
 
         return `<aside class="hotel-checkin" aria-label="Información de llegada al alojamiento">
             <div class="hotel-checkin-heading">
                 <span class="hotel-checkin-symbol" aria-hidden="true">⌂</span>
                 <div>
-                    <h4>Llegada al alojamiento · Check-in</h4>
-                    <small>${checkInDate}</small>
+                    <h4>Llegada al alojamiento</h4>
+                    ${hotel.status ? `<small>${esc(hotel.status)}</small>` : ''}
                 </div>
             </div>
             <div class="hotel-checkin-body">
-                <p class="hotel-checkin-name"><strong>${esc(hotel.name)}</strong></p>
-                ${hotel.status ? `<p class="hotel-checkin-status">${esc(hotel.status)}</p>` : ''}
+                <p class="hotel-checkin-name"><strong>${hotel.mapsUrl
+                    ? `<a href="${esc(hotel.mapsUrl)}" target="_blank" rel="noopener noreferrer">${esc(hotel.name)}</a>`
+                    : esc(hotel.name)}</strong></p>
                 ${hotel.address ? `<p class="hotel-checkin-address"><span aria-hidden="true">⌖</span><span>${esc(hotel.address)}</span></p>` : ''}
+                <div class="hotel-checkin-dates">
+                    <div><small>CHECK-IN</small><strong>${formatDate(checkIn, hotel.checkIn || d.date)}</strong></div>
+                    <div><small>CHECK-OUT</small><strong>${formatDate(checkOut, hotel.checkOut)}</strong></div>
+                    <div><small>DURACIÓN</small><strong>${duration}</strong></div>
+                </div>
                 ${hotel.notes ? `<p class="hotel-checkin-notes"><strong>Nota:</strong> ${esc(hotel.notes)}</p>` : ''}
                 ${hotel.url ? `<p class="hotel-checkin-link"><a href="${esc(hotel.url)}" target="_blank" rel="noopener noreferrer">${esc(hotel.linkLabel || 'Ver alojamiento')}</a></p>` : ''}
             </div>
