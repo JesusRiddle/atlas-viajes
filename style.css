@@ -400,3 +400,46 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
 .dailycost-standalone>strong {display:inline;font-size:13px}
 .dailycost-standalone>span {display:inline;margin-left:10px;font-weight:600}
 .dailycost-standalone small {max-width:none;margin-top:2px;color:var(--muted)}
+
+/* Aviso logístico: contenido libre con enlaces agrupados. */
+.logistics-notice {
+  margin-top:16px;
+  padding:16px 18px;
+  border:1px solid #efdcd0;
+  border-radius:8px;
+  background:#fff7f2;
+  color:var(--ink);
+}
+.logistics-heading {display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.logistics-symbol {
+  display:grid;
+  place-items:center;
+  width:32px;
+  height:32px;
+  border-radius:6px;
+  flex-shrink:0;
+  color:#ac6544;
+  background:#fbe8dc;
+}
+.logistics-heading h4 {margin:0;font:600 14px/1.4 Arial,Helvetica,sans-serif;color:#823f24}
+.logistics-copy p {margin:0 0 9px;font-size:14px;line-height:1.65}
+.logistics-copy p:last-child {margin-bottom:0}
+.logistics-copy strong {font-weight:600}
+.logistics-links {margin-top:13px;padding-top:12px;border-top:1px solid #efdcd0}
+.logistics-links-heading {display:flex;align-items:center;gap:7px;margin-bottom:10px;color:#823f24;font-size:12px}
+.logistics-link-list {display:flex;flex-wrap:wrap;gap:7px}
+.logistics-link-list a,.logistics-link-list a:visited {
+  display:inline-block;
+  padding:5px 9px;
+  border:1px solid #ead8cb;
+  border-radius:5px;
+  background:#fff;
+  color:#754b39;
+  font-size:12px;
+  line-height:1.4;
+  text-decoration:none;
+}
+.logistics-link-list a:hover,.logistics-link-list a:focus-visible {
+  text-decoration:underline;
+  border-color:#cfa78f;
+}
