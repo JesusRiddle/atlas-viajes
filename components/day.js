@@ -27,7 +27,7 @@ window.AtlasDay = function (ctx) {
             timeZone: 'UTC'
         });
         const parseDate = value => {
-            if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(value || '')) return null;
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(value || '')) return null;
             const date = new Date(value + 'T12:00:00Z');
             return Number.isNaN(date.getTime()) ? null : date;
         };
@@ -50,14 +50,18 @@ window.AtlasDay = function (ctx) {
                 </div>
             </div>
             <div class="hotel-checkin-body">
+                <div class="hotel-checkin-main">
+                    <div class="hotel-checkin-details">
                 <p class="hotel-checkin-name"><strong>${hotel.mapsUrl
                     ? `<a href="${esc(hotel.mapsUrl)}" target="_blank" rel="noopener noreferrer">${esc(hotel.name)}</a>`
                     : esc(hotel.name)}</strong></p>
                 ${hotel.address ? `<p class="hotel-checkin-address"><span aria-hidden="true">⌖</span><span>${esc(hotel.address)}</span></p>` : ''}
+                    </div>
                 <div class="hotel-checkin-dates">
                     <div><small>CHECK-IN</small><strong>${formatDate(checkIn, hotel.checkIn || d.date)}</strong></div>
                     <div><small>CHECK-OUT</small><strong>${formatDate(checkOut, hotel.checkOut)}</strong></div>
                     <div><small>DURACIÓN</small><strong>${duration}</strong></div>
+                </div>
                 </div>
                 ${hotel.notes ? `<p class="hotel-checkin-notes"><strong>Nota:</strong> ${esc(hotel.notes)}</p>` : ''}
                 ${hotel.url ? `<p class="hotel-checkin-link"><a href="${esc(hotel.url)}" target="_blank" rel="noopener noreferrer">${esc(hotel.linkLabel || 'Ver alojamiento')}</a></p>` : ''}
