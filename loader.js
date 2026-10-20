@@ -17,9 +17,8 @@
       return response.json();
     }
     const active = modules.filter(module => module.available);
-    const [places, vacations, ...trips] = await Promise.all([
+    const [places, ...trips] = await Promise.all([
       load("data/places.json"),
-      load("data/vacations.json"),
       ...active.map(module => load("data/trips/" + module.file))
     ]);
     if (!places || typeof places !== "object" || Array.isArray(places)) {
@@ -34,7 +33,6 @@
     window.ATLAS = {
       places,
       trips,
-      vacations,
       updated: "2026-10-01",
       edited: "2026-10-04"
     };

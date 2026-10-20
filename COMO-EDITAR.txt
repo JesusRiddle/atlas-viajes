@@ -2,9 +2,9 @@ EDICIÓN RÁPIDA DEL ATLAS
 
 1. Orden y visibilidad: edita modules.js. Cada viaje tiene available: true/false; el orden de la lista define la numeración.
 2. Contenido de un viaje: edita data/trips/<id>.json; guarda en UTF-8 y respeta el formato JSON.
-3. Lugares reutilizados en galerías: data/places.json. Fotos: photos.js y carpeta photos/.
+3. Lugares reutilizados en galerías: data/places.json. Archivos fotográficos: carpeta photos/.
 4. Prueba desde un servidor local HTTP (por ejemplo, Live Server en VS Code); abrir index.html como file:// no permite fetch de los JSON.
-5. Comprueba inicio, #comparar, #vacaciones, una ficha y su mapa antes de publicar.
+5. Comprueba inicio, #comparar, una ficha y su mapa antes de publicar.
 
 TÍTULOS DE LOS DÍAS
 - Edita únicamente title. No existe fullTitle.
@@ -17,7 +17,6 @@ CONTENIDO PERSONALIZADO DEL VIAJE
 - sourceNote modifica el aviso final; budgetNote la aclaración del presupuesto; budgetPreliminary la etiqueta de estimación.
 - lodgingSummary y heroLodgingSummary permiten ajustar la descripción de alojamientos.
 - planningDetails define los textos de reservas críticas y tours, si aplica. No hay que editar app.js para cambiarlos.
-- La sección Mis vacaciones combina varios itinerarios y sigue siendo información global.
 
 - cardHighlights e introHighlights son listas de nombres que aparecen en negritas; routeHighlights resalta los nombres de las localidades del recorrido. Para actualizarlos, edita el JSON del viaje.
 
@@ -25,4 +24,3 @@ CATÁLOGO Y AUTONOMÍA
 - data/places.json agrupa nombres y fotos con créditos. Los textos de las visitas se editan en placeDescriptions del JSON de cada viaje.
 - boldCityNames y emphasisStyle, si existen, controlan negritas sin identificar una ruta en JavaScript.
 - comparison y railAppendix son datos propios de cada ruta. Si solo una ruta está activa, no se muestra comparativa cruzada.
-- data/vacations.json contiene los textos globales de vacaciones; el listado se genera desde los viajes habilitados.
