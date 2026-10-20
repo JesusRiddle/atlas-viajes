@@ -27,6 +27,17 @@ window.AtlasSections = function (ctx) {
         return Number.isNaN(date.getTime()) ? esc(value) : esc(dateFormatter.format(date));
     }
 
+    // Iconos SVG locales: no requieren dependencias ni peticiones externas.
+    function hotelIcon(name) {
+        const paths = {
+            location: '<path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',
+            rate: '<rect x="2" y="5" width="20" height="15" rx="2"/><path d="M2 9h20"/><path d="M16 15h2"/>',
+            conditions: '<circle cx="12" cy="12" r="10"/><path d="M12 11v6"/><path d="M12 7h.01"/>',
+            link: '<path d="M14 3h7v7"/><path d="M10 14 21 3"/><path d="M21 13v7a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h7"/>'
+        };
+        return `<svg class="hotel-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths[name]}</svg>`;
+    }
+
     function hotelCard(h) {
         const dates = h.checkIn || h.checkOut
             ? `<div class="hotel-dates">
@@ -36,13 +47,13 @@ window.AtlasSections = function (ctx) {
             : '';
         return `<article class="hotel-card">
             <h4>${esc(h.city)} · <em>${esc(h.name)}</em></h4>
-            ${h.address ? `<p class="hotel-address">${esc(h.address)}</p>` : ''}
+            ${h.address ? `<p class="hotel-address hotel-icon-line">${hotelIcon('location')}<span>${esc(h.address)}</span></p>` : ''}
             ${dates}
-            ${h.rate ? `<p class="hotel-rate">${esc(h.rate)}</p>` : ''}
-            ${h.rateConditions ? `<p class="hotel-rate-conditions">${esc(h.rateConditions)}</p>` : ''}
+            ${h.rate ? `<p class="hotel-rate hotel-icon-line">${hotelIcon('rate')}<span>${esc(h.rate)}</span></p>` : ''}
+            ${h.rateConditions ? `<p class="hotel-rate-conditions hotel-icon-line">${hotelIcon('conditions')}<span>${esc(h.rateConditions)}</span></p>` : ''}
             ${h.status ? `<p class="hotel-status"><strong>Estado:</strong> ${esc(h.status)}</p>` : ''}
             ${h.notes ? `<p class="hotel-notes"><strong>Nota:</strong> ${esc(h.notes)}</p>` : ''}
-            ${h.url ? `<a class="hotel-link" href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.linkLabel || 'Ver alojamiento')}</a>` : ''}
+            ${h.url ? `<a class="hotel-link hotel-icon-line" href="${esc(h.url)}" target="_blank" rel="noopener">${hotelIcon('link')}<span>${esc(h.linkLabel || 'Ver alojamiento')}</span></a>` : ''}
         </article>`;
     }
 
@@ -50,7 +61,7 @@ window.AtlasSections = function (ctx) {
         return `<article class="hotel-card hotel-card-suggested">
             <h4>${esc(city)}</h4>
             <p class="hotel-description">${esc(description)}</p>
-            ${url ? `<a class="hotel-link" href="${esc(url)}" target="_blank" rel="noopener">${esc(linkLabel || 'Ver alojamiento')}</a>` : ''}
+            ${url ? `<a class="hotel-link hotel-icon-line" href="${esc(url)}" target="_blank" rel="noopener">${hotelIcon('link')}<span>${esc(linkLabel || 'Ver alojamiento')}</span></a>` : ''}
         </article>`;
     }
 
