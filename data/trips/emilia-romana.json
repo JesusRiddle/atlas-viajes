@@ -1325,7 +1325,9 @@
   "planningDetails": {
     "reservationNote": "Horarios elegidos, pendientes de compra. Coordinar las tres entradas de Firenze antes de reservar por separado.",
     "tourIntro": "Los tours guiados aportan contexto en Ravenna, Bologna y Modena. Hay opciones en italiano, español e inglés según operador. Realizar los traslados entre ciudades por cuenta propia en tren; contratar guía sólo donde interese una explicación adicional.",
-    "tourNote": "Operadores, precios y disponibilidad pendientes de verificar. Acetaia Marchi requiere confirmar visita, horario y admisión individual."
+    "tourNote": "Operadores, precios y disponibilidad pendientes de verificar. Acetaia Marchi requiere confirmar visita, horario y admisión individual.",
+    "reservationTitle": "Reservas críticas",
+    "toursTitle": "Tours locales que aportan valor"
   },
   "sourceNote": "Logística ferroviaria y alojamiento de Bologna revisados el 8 de octubre de 2026 con cotizaciones del viajero, no reservas. Confirmar calendario invernal de Ravenna y disponibilidad de Acetaia Marchi.",
   "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",

@@ -33,3 +33,5 @@ COMPONENTES DEL ATLAS
 - components/home.js: portada, tarjetas y comparación general.
 - components/trip.js: composición de la ficha del viaje.
 - Para modificar las opciones de cualquier destino usa optionalSection en su propio JSON. No modifiques JavaScript para añadirlas.
+
+- planningDetails.reservationTitle y planningDetails.toursTitle permiten cambiar los encabezados de los bloques especiales sin editar componentes.
