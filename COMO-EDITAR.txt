@@ -35,3 +35,13 @@ COMPONENTES DEL ATLAS
 - Para modificar las opciones de cualquier destino usa optionalSection en su propio JSON. No modifiques JavaScript para añadirlas.
 
 - planningDetails.reservationTitle y planningDetails.toursTitle permiten cambiar los encabezados de los bloques especiales sin editar componentes.
+
+HOTELES CONCRETOS (SIN DUPLICAR INFORMACIÓN)
+- En data/trips/<id>.json, agrega un objeto hotels con claves cortas y únicas por viaje.
+- Guarda allí name, city, address, checkIn, checkOut, status, rate, notes y opcionalmente url/linkLabel.
+- Para indicar dónde duermes un día, escribe en ese día: "hotel": "clave-del-hotel". No hace falta repetir sus datos.
+- El primer día que utiliza ese identificador muestra automáticamente los detalles del hotel en un bloque de llegada/check-in; los días restantes solo muestran su nombre.
+- El campo base sigue indicando la localidad visitada o la ciudad base actual; no lo sustituyas por el nombre del hotel.
+- La sección «Dónde dormir» genera automáticamente la lista desde hotels. stays continúa siendo opcional para recomendaciones generales sin hotel seleccionado.
+- Si todavía no elegiste hotel, no agregues hotel en ese día y deja los alojamientos recomendados en stays.
+- No uses datos bancarios o códigos de reserva en JSON públicos de GitHub.

@@ -318,7 +318,7 @@
       "night": "Llegada al *Aeropuerto Milano Malpensa (MXP)* a las *22:10 hrs*. Desde la *Terminal 1*, tomar el autobús gratuito hacia la *Terminal 2* y caminar al hotel *Moxy Milano Malpensa Airport* para realizar el check-in.",
       "mobility": "Traslado interno *T1 → T2*: Utiliza el autobús gratuito del aeropuerto *(10-15 min de trayecto)*. Sigue los letreros de conexión entre terminales y toma el acceso peatonal directo al hotel (5 min a pie). Confirma tu terminal exacta de llegada y los horarios nocturnos del autobús.",
       "spend": null,
-      "note": "Pernocta breve en Hotel *Moxy Milano Malpensa Airport* · 1 noche · Tarifa de referencia: €127 (≈ $2,590 MXN), flexible y sin desayuno.\nRecomendación: Regístrate gratis en Marriott Bonvoy e inicia sesión antes de reservar online para asegurar esta tarifa de miembro (sujeto a disponibilidad).\nNota operativa: Hotel preseleccionado, pendiente de reserva. Es indispensable dar aviso al alojamiento sobre la llegada de madrugada.",
+      "note": "",
       "noteLinks": [
         {
           "label": "Moxy Milano Malpensa Airport · reserva oficial",
@@ -328,7 +328,8 @@
           "label": "Autobús gratuito T1–T2",
           "url": "https://www.milanomalpensa-airport.com/en/from-to/connections-with-terminals"
         }
-      ]
+      ],
+      "hotel": "moxy-malpensa"
     },
     {
       "n": 2,
@@ -352,7 +353,7 @@
       "night": "*1.* Pasear por la *Piazza Gae Aulenti* y contemplar *Bosco Verticale* desde el exterior (gratuito; edificios residenciales sin visita interior).\n*2.* Cenar por la zona y caminar de regreso al *B&B Hotel Milano Aosta* para descansar.",
       "mobility": "- *Hotel → Centro:* Metro línea M3 desde estación *Centrale FS* hasta *Duomo* (12 min; billete ATM €2.20 válido por 90 min).\n- *Centro histórico:* Conexiones a pie (5–15 min entre puntos) ruta *Duomo* → *Scala* → *Brera*.\n- *Retorno:* A pie desde *Brera* hacia *Gae Aulenti* (25 min) y finalmente de regreso al hotel (25 min).",
       "spend": null,
-      "note": "- *Hotel preseleccionado:* *B&B Hotel Milano Aosta* (Piazza Duca d'Aosta 16).\n- *Condiciones:* 2 noches, tarifa de referencia €283 TOTAL (≈ $5,770 MXN). Tarifa *B&me Breakfast Flex* (incluye desayuno). Requiere registro gratuito en *B&me*.\n- *Aviso logístico:* Jornada de alta actividad. Asegurar margen de tiempo suficiente para comer entre la visita al *Duomo* y el horario reservado en *Brera*.",
+      "note": "- *Aviso logístico:* Jornada de alta actividad. Asegurar margen de tiempo suficiente para comer entre la visita al *Duomo* y el horario reservado en *Brera*.",
       "noteLinks": [
         {
           "label": "B&B Hotel Milano Aosta · reserva oficial",
@@ -378,7 +379,8 @@
           "label": "Metro ATM · tarifas",
           "url": "https://www.atm.it/en/VIAGGIACONNOI/BIGLIETTI/Pages/tickets_milan.aspx"
         }
-      ]
+      ],
+      "hotel": "bb-milano-aosta"
     },
     {
       "n": 3,
@@ -413,7 +415,8 @@
           "label": "Castello Sforzesco · museos",
           "url": "https://www.milanocastello.it/"
         }
-      ]
+      ],
+      "hotel": "bb-milano-aosta"
     },
     {
       "n": 4,
@@ -441,7 +444,7 @@
       "night": "*1.* Regresar a *HouSmart Milazzo 5*, recoger el equipaje si quedó en consigna y realizar el check-in (disponible desde las 15:00).\n*2.* Salir a cenar por el centro de *Bologna* y probar alguna especialidad local, como *tagliatelle al ragù* o *tortellini in brodo*.\n*3.* Regresar al apartamento para descansar. Primera de ocho noches en *Bologna*.",
       "mobility": "• *Hotel → Milano Centrale:* Caminar 3–5 min desde *B&B Hotel Milano Aosta*.\n• *Milano → Bologna:* Tren *Frecciarossa 9613*, salida prevista 08:30 y llegada 09:34 (1 h 04 min). Reserva obligatoria.\n• *Bologna Centrale → Alojamiento:* Caminar 5–10 min hasta *HouSmart Milazzo 5*, Via Milazzo 5.\n• *Alojamiento → Piazza Maggiore:* Caminar aproximadamente 20 min por *Via dell’Indipendenza*.\n• *Centro monumental:* Recorridos a pie de 5–15 min entre *Piazza Maggiore*, *Quadrilatero*, *Le Due Torri* y *Santo Stefano*.\n• *Santo Stefano → Finestrella:* Caminar aproximadamente 15 min hasta *Via Piella*.\n• *Finestrella → Alojamiento:* Caminar aproximadamente 10–15 min. No se requiere transporte público durante las visitas.",
       "spend": null,
-      "note": "• *Tren:* Confirmar horario definitivo y reservar *Frecciarossa 9613* antes del viaje. Llegar a *Milano Centrale* con 15–20 min de anticipación.\n• *Alojamiento:* Confirmar instrucciones de self check-in y posibilidad de dejar equipaje antes de las 15:00. *KiPoint* es una alternativa de pago pendiente de cotizar.\n• *San Petronio:* Capillas de pago abiertas de 10:00 a 17:30 (último acceso 17:15). Recorrido de tres capillas €5; no requiere reserva individual. No se permite ingresar con maletas.\n• *Torre dell’Orologio:* Entrada €10 con horario reservado. Accesos cada 20 min; último ingreso a las 18:20. No dispone de ascensor.\n• *Le Due Torri:* *Torre degli Asinelli* y *Torre Garisenda* cerradas. Respetar el perímetro de seguridad.\n• *Santo Stefano:* El domingo, complejo monumental abierto de 09:30 a 12:30 y de 15:30 a 19:00. Evitar celebraciones religiosas.\n• *Archiginnasio:* Visita programada para el miércoles; no incluir este día.\n• *Tour guiado:* Opcional, siempre que no duplique los monumentos y entradas ya previstos.",
+      "note": "• *Tren:* Confirmar horario definitivo y reservar *Frecciarossa 9613* antes del viaje. Llegar a *Milano Centrale* con 15–20 min de anticipación.\n• *San Petronio:* Capillas de pago abiertas de 10:00 a 17:30 (último acceso 17:15). Recorrido de tres capillas €5; no requiere reserva individual. No se permite ingresar con maletas.\n• *Torre dell’Orologio:* Entrada €10 con horario reservado. Accesos cada 20 min; último ingreso a las 18:20. No dispone de ascensor.\n• *Le Due Torri:* *Torre degli Asinelli* y *Torre Garisenda* cerradas. Respetar el perímetro de seguridad.\n• *Santo Stefano:* El domingo, complejo monumental abierto de 09:30 a 12:30 y de 15:30 a 19:00. Evitar celebraciones religiosas.\n• *Archiginnasio:* Visita programada para el miércoles; no incluir este día.\n• *Tour guiado:* Opcional, siempre que no duplique los monumentos y entradas ya previstos.",
       "rail": {
         "legs": [
           [
@@ -482,7 +485,8 @@
           "label": "Santo Stefano · horarios",
           "url": "https://www.bolognawelcome.com/it/luoghi/edifici-religiosi/complesso-di-santo-stefano"
         }
-      ]
+      ],
+      "hotel": "housmart-milazzo"
     },
     {
       "n": 5,
@@ -544,7 +548,8 @@
           "label": "Tarifas y calendario · Ravenna Turismo",
           "url": "https://www.turismo.ra.it/cultura-e-storia/monumenti-unesco/mausoleo-galla-placidia"
         }
-      ]
+      ],
+      "hotel": "housmart-milazzo"
     },
     {
       "n": 6,
@@ -610,7 +615,8 @@
           "label": "Duomo y Battistero · visita",
           "url": "https://www.piazzaduomoparma.com/orari-e-permessi-di-visita/"
         }
-      ]
+      ],
+      "hotel": "housmart-milazzo"
     },
     {
       "n": 7,
@@ -649,7 +655,8 @@
           "label": "Archiginnasio · reserva oficial",
           "url": "https://www.bolognawelcome.com/en/experiences/331861/Palazzo-dell-Archiginnasio-and-Teatro-Anatomico---Guided-or-audio-guided-tour"
         }
-      ]
+      ],
+      "hotel": "housmart-milazzo"
     },
     {
       "n": 8,
@@ -715,7 +722,8 @@
           "label": "Schifanoia · visita",
           "url": "https://www.museiferrara.it/museo-schifanoia-e-museo-lapidario/visita/"
         }
-      ]
+      ],
+      "hotel": "housmart-milazzo"
     },
     {
       "n": 9,
@@ -792,7 +800,8 @@
           "label": "Brunelleschi Pass · acceso y equipaje",
           "url": "https://duomo.firenze.it/it/720/brunelleschi-pass"
         }
-      ]
+      ],
+      "hotel": "housmart-milazzo"
     },
     {
       "n": 10,
@@ -863,7 +872,8 @@
           "label": "Modena · visitas y reservas",
           "url": "https://www.visitmodena.it/"
         }
-      ]
+      ],
+      "hotel": "housmart-milazzo"
     },
     {
       "n": 11,
@@ -900,7 +910,8 @@
           "label": "Museo Civico Archeologico",
           "url": "https://www.museibologna.it/archeologico/"
         }
-      ]
+      ],
+      "hotel": "housmart-milazzo"
     },
     {
       "n": 12,
@@ -1220,29 +1231,7 @@
   "costExclusions": "Este subtotal sólo suma vuelos, los tres alojamientos, trenes interurbanos y las entradas principales de Firenze. No suma las tarifas de otras visitas ya detalladas en los días, alimentación, transporte urbano, Malpensa Express, Marconi Express, taxis, tours, compras ni posibles tasas de alojamiento o cambios de tarifa. Es parcial; el presupuesto global sigue siendo $65,000–$90,000 MXN por persona, preliminar.",
   "exchangeNote": "Equivalencias informativas con la referencia acordada el 8 de octubre de 2026: €1 ≈ $20.39 MXN. No es una tarifa garantizada de banco o tarjeta; el importe real puede variar al comprar.",
   "cover": "italy16-duomo",
-  "stays": [
-    [
-      "Malpensa · 26–27 nov · 1 pernocta provisional",
-      "Moxy Milano Malpensa Airport, Terminal 2 · referencia €127 (≈ $2,590 MXN), tarifa de miembro flexible, sin desayuno. Registrarse gratis en Marriott Bonvoy e iniciar sesión antes de reservar online para acceder a la tarifa de miembro disponible. No reservado; avisar de llegada tardía.",
-      "https://www.marriott.com/en-us/hotels/milox-moxy-milan-malpensa-airport/overview/",
-      "Moxy · reserva oficial"
-    ],
-    [
-      "Milano · 27–29 nov · 2 noches",
-      "B&B Hotel Milano Aosta, Piazza Duca d’Aosta 16, frente a Milano Centrale. Preseleccionado: B&me Breakfast Flex, €283 (≈ $5,770 MXN) TOTAL por 2 noches, con desayuno y cancelación flexible según cotización. Registro B&me gratuito. No reservado; confirmar precio final y depósito anticipado de equipaje.",
-      "https://www.hotel-bb.com/en/hotel/milano-aosta",
-      "B&B Hotel Milano Aosta · reserva oficial"
-    ],
-    [
-      "Bologna · HouSmart Milazzo 5 · 29 nov–7 dic · 8 noches",
-      "Via Milazzo 5, 40121 Bologna. Apartamento completo de 1 dormitorio · 38 m² · 1 adulto. Precio encontrado: MXN $13,881 TOTAL por 8 noches; candidato, no reservado. Aproximadamente 5 min a pie de Bologna Centrale, práctico para todas las excursiones. Check-in previsto desde las 15:00. Sin recepción: confirmar self check-in y depósito anticipado de equipaje. Si no lo permiten, KiPoint, consigna oficial dentro de Bologna Centrale, zona oeste / andén 7 Oeste.",
-      "https://www.booking.com/hotel/it/housmart-milazzo-5.html"
-    ],
-    [
-      "Dos bases turísticas + una pernocta provisional",
-      "Tres alojamientos en total. Mantener HouSmart Milazzo 5 como base durante ocho noches; confirmar acceso y custodia de equipaje antes de llegar."
-    ]
-  ],
+  "stays": [],
   "mapPoints": [
     {
       "name": "Milano",
@@ -1390,5 +1379,43 @@
     "italy16-compianto": "Detalle del Cristo yacente del Compianto de Niccolò dell’Arca en Santa Maria della Vita, Bologna.",
     "emilia-porticos": "Galerías cubiertas acompañan el paseo por Bologna entre comercios y edificios históricos."
   },
-  "railExclusions": "Trenes principales elegidos; excluye transporte urbano, taxis y Marconi Express."
+  "railExclusions": "Trenes principales elegidos; excluye transporte urbano, taxis y Marconi Express.",
+  "hotels": {
+    "moxy-malpensa": {
+      "name": "Moxy Milano Malpensa Airport",
+      "city": "Malpensa",
+      "address": "Terminal 2, aeropuerto de Milano Malpensa",
+      "checkIn": "2026-11-26",
+      "checkOut": "2026-11-27",
+      "status": "Preseleccionado · no reservado",
+      "rate": "€127 (≈ $2,590 MXN) total · 1 noche · tarifa de miembro flexible, sin desayuno",
+      "notes": "Registrarse gratis en Marriott Bonvoy e iniciar sesión antes de reservar. Avisar de llegada de madrugada.",
+      "url": "https://www.marriott.com/en-us/hotels/milox-moxy-milan-malpensa-airport/overview/",
+      "linkLabel": "Reserva oficial"
+    },
+    "bb-milano-aosta": {
+      "name": "B&B Hotel Milano Aosta",
+      "city": "Milano",
+      "address": "Piazza Duca d’Aosta 16, frente a Milano Centrale",
+      "checkIn": "2026-11-27",
+      "checkOut": "2026-11-29",
+      "status": "Preseleccionado · no reservado",
+      "rate": "€283 (≈ $5,770 MXN) total · 2 noches · B&me Breakfast Flex con desayuno y cancelación flexible según cotización",
+      "notes": "Requiere registro gratuito B&me. Confirmar precio final y posibilidad de dejar equipaje antes del check-in.",
+      "url": "https://www.hotel-bb.com/en/hotel/milano-aosta",
+      "linkLabel": "Reserva oficial"
+    },
+    "housmart-milazzo": {
+      "name": "HouSmart Milazzo 5",
+      "city": "Bologna",
+      "address": "Via Milazzo 5, 40121 Bologna",
+      "checkIn": "2026-11-29",
+      "checkOut": "2026-12-07",
+      "status": "Candidato · no reservado",
+      "rate": "$13,881 MXN total · 8 noches · apartamento completo de 1 dormitorio, 38 m², 1 adulto",
+      "notes": "Aproximadamente 5 min a pie de Bologna Centrale. Check-in desde las 15:00, sin recepción: confirmar self check-in y consigna anticipada. Alternativa de equipaje: KiPoint en Bologna Centrale, zona oeste / andén 7 Oeste.",
+      "url": "https://www.booking.com/hotel/it/housmart-milazzo-5.html",
+      "linkLabel": "Ver alojamiento"
+    }
+  }
 }
