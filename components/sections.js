@@ -46,8 +46,8 @@ window.AtlasSections = function (ctx) {
               </div>`
             : '';
         return `<article class="hotel-card">
-            <h4>${esc(h.city)} · <em>${esc(h.name)}</em></h4>
-            ${h.address ? `<p class="hotel-address hotel-icon-line">${hotelIcon('location')}${h.mapsUrl ? `<a href="${esc(h.mapsUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Ver dirección en Google Maps: ${esc(h.address)}">${esc(h.address)}</a>` : `<span>${esc(h.address)}</span>`}</p>` : ''}
+            <h4>${esc(h.city)} · <em>${h.mapsUrl ? `<a class="hotel-name-map" href="${esc(h.mapsUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${esc(h.name)} en Google Maps">${esc(h.name)}</a>` : esc(h.name)}</em></h4>
+            ${h.address ? `<p class="hotel-address hotel-icon-line">${hotelIcon('location')}<span>${esc(h.address)}</span></p>` : ''}
             ${dates}
             ${h.rate ? `<p class="hotel-rate hotel-icon-line">${hotelIcon('rate')}<span>${esc(h.rate)}</span></p>` : ''}
             ${h.rateConditions ? `<p class="hotel-rate-conditions hotel-icon-line">${hotelIcon('conditions')}<span>${esc(h.rateConditions)}</span></p>` : ''}
@@ -67,7 +67,7 @@ window.AtlasSections = function (ctx) {
 
     function stayParagraphs(id) {
         const trip = trips.find(t => t.id === id);
-        const hotels = Object.values(trip?.hotels || {});
+        const hotels = trip?.hotels || [];
         const suggested = stays[id] || [];
         return `<div class="stay-list hotel-grid">
             ${hotels.map(hotelCard).join('')}
