@@ -163,3 +163,39 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   text-decoration:underline;
   text-underline-offset:2px;
 }
+
+/* Tipografía uniforme de tarjetas de alojamiento; evita herencias de .stay-list. */
+.stay-list.hotel-grid .hotel-card{
+  font-size:14px;
+  line-height:1.55;
+}
+.stay-list.hotel-grid .hotel-card h4{
+  font-size:15px;
+  line-height:1.4;
+}
+.stay-list.hotel-grid .hotel-card p,
+.stay-list.hotel-grid .hotel-card .hotel-link{
+  font-size:14px;
+  line-height:1.55;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address,
+.stay-list.hotel-grid .hotel-card .hotel-rate-conditions,
+.stay-list.hotel-grid .hotel-card .hotel-description{
+  font-size:13px;
+  line-height:1.5;
+}
+.stay-list.hotel-grid .hotel-card .hotel-dates small{
+  font-size:11px;
+}
+.stay-list.hotel-grid .hotel-card .hotel-dates strong{
+  font-size:14px;
+}
+.stay-list.hotel-grid .hotel-card strong{
+  margin-bottom:0;
+}
+.stay-list.hotel-grid .hotel-card .hotel-icon-line > span{
+  display:inline;
+  font-size:inherit;
+  line-height:inherit;
+  color:inherit;
+}
