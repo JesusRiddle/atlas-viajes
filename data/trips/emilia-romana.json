@@ -329,7 +329,7 @@
           "url": "https://www.milanomalpensa-airport.com/en/from-to/connections-with-terminals"
         }
       ],
-      "hotel": "moxy-malpensa"
+      "hotel": "hotel-1"
     },
     {
       "n": 2,
@@ -380,7 +380,7 @@
           "url": "https://www.atm.it/en/VIAGGIACONNOI/BIGLIETTI/Pages/tickets_milan.aspx"
         }
       ],
-      "hotel": "bb-milano-aosta"
+      "hotel": "hotel-2"
     },
     {
       "n": 3,
@@ -416,7 +416,7 @@
           "url": "https://www.milanocastello.it/"
         }
       ],
-      "hotel": "bb-milano-aosta"
+      "hotel": "hotel-2"
     },
     {
       "n": 4,
@@ -486,7 +486,7 @@
           "url": "https://www.bolognawelcome.com/it/luoghi/edifici-religiosi/complesso-di-santo-stefano"
         }
       ],
-      "hotel": "housmart-milazzo"
+      "hotel": "hotel-3"
     },
     {
       "n": 5,
@@ -549,7 +549,7 @@
           "url": "https://www.turismo.ra.it/cultura-e-storia/monumenti-unesco/mausoleo-galla-placidia"
         }
       ],
-      "hotel": "housmart-milazzo"
+      "hotel": "hotel-3"
     },
     {
       "n": 6,
@@ -616,7 +616,7 @@
           "url": "https://www.piazzaduomoparma.com/orari-e-permessi-di-visita/"
         }
       ],
-      "hotel": "housmart-milazzo"
+      "hotel": "hotel-3"
     },
     {
       "n": 7,
@@ -656,7 +656,7 @@
           "url": "https://www.bolognawelcome.com/en/experiences/331861/Palazzo-dell-Archiginnasio-and-Teatro-Anatomico---Guided-or-audio-guided-tour"
         }
       ],
-      "hotel": "housmart-milazzo"
+      "hotel": "hotel-3"
     },
     {
       "n": 8,
@@ -723,7 +723,7 @@
           "url": "https://www.museiferrara.it/museo-schifanoia-e-museo-lapidario/visita/"
         }
       ],
-      "hotel": "housmart-milazzo"
+      "hotel": "hotel-3"
     },
     {
       "n": 9,
@@ -801,7 +801,7 @@
           "url": "https://duomo.firenze.it/it/720/brunelleschi-pass"
         }
       ],
-      "hotel": "housmart-milazzo"
+      "hotel": "hotel-3"
     },
     {
       "n": 10,
@@ -873,7 +873,7 @@
           "url": "https://www.visitmodena.it/"
         }
       ],
-      "hotel": "housmart-milazzo"
+      "hotel": "hotel-3"
     },
     {
       "n": 11,
@@ -911,7 +911,7 @@
           "url": "https://www.museibologna.it/archeologico/"
         }
       ],
-      "hotel": "housmart-milazzo"
+      "hotel": "hotel-3"
     },
     {
       "n": 12,
@@ -1380,8 +1380,9 @@
     "emilia-porticos": "Galerías cubiertas acompañan el paseo por Bologna entre comercios y edificios históricos."
   },
   "railExclusions": "Trenes principales elegidos; excluye transporte urbano, taxis y Marconi Express.",
-  "hotels": {
-    "moxy-malpensa": {
+  "hotels": [
+    {
+      "id": "hotel-1",
       "name": "Moxy Milano Malpensa Airport",
       "city": "Malpensa",
       "address": "Terminal 2, aeropuerto de Milano Malpensa",
@@ -1395,7 +1396,8 @@
       "url": "https://www.marriott.com/en-us/hotels/milox-moxy-milan-malpensa-airport/overview/",
       "linkLabel": "Reserva oficial"
     },
-    "bb-milano-aosta": {
+    {
+      "id": "hotel-2",
       "name": "B&B Hotel Milano Aosta",
       "city": "Milano",
       "address": "Piazza Duca d’Aosta 16, frente a Milano Centrale",
@@ -1409,7 +1411,8 @@
       "url": "https://www.hotel-bb.com/en/hotel/milano-aosta",
       "linkLabel": "Reserva oficial"
     },
-    "housmart-milazzo": {
+    {
+      "id": "hotel-3",
       "name": "HouSmart Milazzo 5",
       "city": "Bologna",
       "address": "Via Milazzo 5, 40121 Bologna",
@@ -1423,7 +1426,7 @@
       "url": "https://www.booking.com/hotel/it/housmart-milazzo-5.html",
       "linkLabel": "Ver alojamiento"
     }
-  },
+  ],
   "seasonality": {
     "summary": "Por definir",
     "months": {
