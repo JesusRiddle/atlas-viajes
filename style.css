@@ -222,3 +222,31 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   font-size:15px;
   line-height:1.6;
 }
+
+/* Encabezados diarios: título principal y metadatos visualmente secundarios. */
+.day summary .night-hotel{
+  margin:7px 0 0;
+  font-size:13px;
+  line-height:1.5;
+  font-weight:400;
+  color:var(--muted);
+}
+.day summary .night-hotel strong{
+  display:inline;
+  font:inherit;
+  font-weight:600;
+  color:var(--ink);
+}
+.day summary .day-places{
+  font-size:13px;
+  line-height:1.5;
+  font-weight:400;
+  color:var(--muted);
+  margin-top:8px;
+}
+.day summary .day-places strong{
+  display:inline;
+  font-size:inherit;
+  line-height:inherit;
+  font-weight:600;
+}
