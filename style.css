@@ -154,3 +154,12 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
 .hotel-card .hotel-link .hotel-icon{
   margin-top:0;
 }
+
+/* Enlace a Maps: conserva el tamaño y estilo del nombre del alojamiento. */
+.hotel-card h4 .hotel-name-map,
+.hotel-card h4 .hotel-name-map:visited{
+  color:inherit;
+  font:inherit;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
