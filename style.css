@@ -199,3 +199,26 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   line-height:inherit;
   color:inherit;
 }
+
+/* Tipografía explícita por componente: evita tamaños heredados por accidente. */
+.subnav select{
+  font-size:14px;
+  line-height:1.5;
+}
+.baseroute .basepill{
+  font-size:15px;
+  line-height:1.5;
+}
+.baseroute .basepill small{
+  font-size:13px;
+  line-height:1.45;
+}
+.experience-panel .experience-list{
+  font-size:15px;
+  line-height:1.6;
+}
+.reservation-planning .tips,
+.panel .stay-list:not(.hotel-grid){
+  font-size:15px;
+  line-height:1.6;
+}
