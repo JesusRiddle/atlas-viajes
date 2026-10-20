@@ -280,6 +280,7 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   color:#21585e;
   font-size:23px;
 }
+.hotel-checkin-symbol svg{display:block}
 .hotel-checkin-heading h4 {
   margin:0;
   color:#24545a;
@@ -294,14 +295,15 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
 .hotel-checkin-body {padding-top:12px}
 .hotel-checkin-main {
   display:grid;
-  grid-template-columns:minmax(0,1fr) minmax(235px,auto);
+  grid-template-columns:minmax(0,1fr) max-content;
   align-items:start;
-  gap:18px;
-  padding-bottom:13px;
+  gap:22px;
+  padding-bottom:12px;
 }
 .hotel-checkin-details {min-width:0}
 .hotel-checkin-body p {margin:0 0 9px;font-size:14px;line-height:1.55}
-.hotel-checkin-name strong {font-size:15px}
+.hotel-checkin-name {margin-bottom:5px!important}
+.hotel-checkin-name strong {font-size:15px;font-weight:600}
 .hotel-checkin-name a,.hotel-checkin-name a:visited {
   color:inherit;
   font:inherit;
@@ -309,7 +311,7 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   text-underline-offset:2px;
 }
 .hotel-checkin-address {display:flex;align-items:flex-start;gap:8px;color:#52656a}
-.hotel-checkin-address>span:first-child {color:#607c80;font-size:18px;line-height:1.2}
+.hotel-checkin-address>span:first-child {color:#607c80;display:flex;align-items:center;padding-top:2px}
 .hotel-checkin-dates {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
@@ -331,11 +333,11 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   font-weight:600;
   white-space:nowrap;
 }
-.hotel-checkin-notes {padding-top:12px;border-top:1px solid #c9ddde}
+.hotel-checkin-notes {padding-top:12px;border-top:1px solid #c9ddde;font-size:13px!important;line-height:1.6!important}
 .hotel-checkin-notes strong {display:inline;font-size:inherit}
 .hotel-checkin-body .hotel-checkin-link {margin-bottom:0}
-.hotel-checkin-link a {font-size:14px;color:#24545a}
-@media(max-width:780px) {
+.hotel-checkin-link a {font-size:13px;color:#24545a}
+@media(max-width:860px) {
   .hotel-checkin-main {grid-template-columns:minmax(0,1fr)}
   .hotel-checkin-dates {grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 }
