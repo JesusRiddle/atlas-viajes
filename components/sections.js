@@ -77,10 +77,6 @@ window.AtlasSections = function (ctx) {
     function knownCostPanel(t) {
         if (!t.knownCosts?.length) return ''; return `<article class="panel rail-summary" style="margin-top:20px"><h3>Partidas conocidas · referencia parcial</h3><div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Importe de referencia</th></tr></thead><tbody>${t.knownCosts.map(([label, value]) => `<tr><td>${esc(label)}</td><td>${esc(value)}</td></tr>`).join('')}</tbody></table></div><p class="tiny">${esc(t.costExclusions)}</p><p class="tiny">${esc(t.exchangeNote)}</p></article>`;
     }
-    function railBlock(d) {
-        if (!d.rail) return '';
-        const r = d.rail; return `<div class="rail-compact" aria-label="Logística ferroviaria"><h4>Trenes y llegada</h4><ul>${r.legs.map(([label, text]) => `<li${label.startsWith('Plan B') ? ' class="rail-plan-b"' : ''}><strong>${label.startsWith('Plan B') ? 'Plan B' + esc(label.slice(6)) : '🚆 ' + esc(label)}</strong> · ${r.linkRailOperators ? railLinks(text) : esc(text)}</li>`).join('')}<li>🎟️ ${r.linkRailOperators ? railLinks(r.ticket) : esc(r.ticket)}</li>${r.arrival.map(text => `<li>📍 ${esc(text)}</li>`).join('')}</ul><p><strong>Referencia ferroviaria: ${esc(r.total)}</strong></p></div>`;
-    }
     function railPlanning(t) {
         if (!t.railSummary) return ''; return `<article class="panel rail-summary" style="margin-top:20px"><h3>Trenes · referencia cotizada</h3><p>${t.railSummary.map(([route, cost]) => `${esc(route)}: <strong>${esc(cost)}</strong>`).join(' · ')}</p><p><strong>Total ferroviario actual de referencia: ${esc(t.railTotal)} / persona.</strong> ${esc(t.railExclusions || 'No incluye transporte urbano ni traslados adicionales.')} ${esc(t.railCurrencyNote || 'Sin conversión fija a MXN.')}</p><p class="tiny">Horarios y precios observados por el viajero para las fechas exactas, no billetes comprados. Pueden cambiar hasta la compra. Los Plan B no se suman al total.</p><h4>🎟️ Billetes y flexibilidad</h4><ul class="rail-ticket-notes">${t.ticketNotes.map(([label, text]) => `<li><strong>${esc(label)}:</strong> ${esc(text)}</li>`).join('')}</ul></article>`;
     }
@@ -118,7 +114,6 @@ window.AtlasSections = function (ctx) {
         reservationPlanning,
         stayParagraphs,
         knownCostPanel,
-        railBlock,
         railPlanning,
         variants,
         railAppendix,
