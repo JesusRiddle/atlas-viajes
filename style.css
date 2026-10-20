@@ -67,3 +67,47 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
 @media(max-width:1000px){.season-months{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:680px){.season-months{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.season-month{min-height:110px;padding:10px 7px}}
 @media print{.season-months{grid-template-columns:repeat(6,minmax(0,1fr))}.season-month{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+
+/* Tarjetas de alojamiento: mantienen la cuadrícula de dos columnas del Atlas. */
+.stay-list.hotel-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  align-items:stretch;
+}
+.hotel-card{
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:var(--paper);
+  overflow-wrap:anywhere;
+}
+.hotel-card h4{margin:0 0 9px;font-size:15px;line-height:1.4}
+.hotel-card h4 em{font-weight:inherit}
+.hotel-card p{margin:0 0 12px;line-height:1.55}
+.hotel-card .hotel-address{color:var(--muted);margin-bottom:16px}
+.hotel-dates{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  padding:12px 0;
+  border-top:1px solid var(--line);
+  margin-bottom:10px;
+}
+.hotel-dates div{display:flex;flex-direction:column;gap:3px}
+.hotel-dates small{color:var(--muted);font-size:11px;letter-spacing:.035em}
+.hotel-dates strong{font-size:14px;line-height:1.4}
+.hotel-card .hotel-rate{font-weight:600}
+.hotel-card .hotel-status{color:var(--muted)}
+.hotel-card .hotel-notes{margin-top:4px}
+.hotel-card .hotel-link{align-self:flex-start;margin-top:auto;padding-top:6px}
+@media(max-width:680px){
+  .stay-list.hotel-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media print{
+  .hotel-card{break-inside:avoid}
+}
