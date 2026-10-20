@@ -502,8 +502,12 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
  #plan .overview-editorial{gap:14px;margin:20px 0}
  #plan .overview-intro{padding:18px}
  #plan .overview-intro .lead{font-size:15px;line-height:1.6}
- #plan .overview-stays .baseroute{grid-template-columns:1fr}
- #plan .overview-stays .basepill{padding:12px 14px;gap:5px}
+ #plan .overview-stays .baseroute{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ #plan .overview-stays .basepill{padding:10px 8px;gap:5px;overflow-wrap:anywhere}
+ #plan .overview-stays .basepill strong{font-size:12px;line-height:1.3}
+ #plan .overview-stays .basepill small{font-size:11px;line-height:1.3;padding-top:6px}
+ #plan .overview-stays .basepill>.overview-icon{width:15px;height:15px}
+ #plan .overview-stays .basepill-number{font-size:10px}
  #plan .overview-editorial .budget-teaser{padding:20px}
  #plan .overview-editorial .budget-teaser strong{font-size:clamp(27px,7vw,36px)}
 }
