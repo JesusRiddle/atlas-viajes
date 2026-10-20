@@ -127,3 +127,30 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   line-height:1.5;
   font-weight:400;
 }
+
+/* Iconos discretos, alineados con el texto de cada alojamiento. */
+.hotel-card .hotel-icon-line{
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+}
+.hotel-card .hotel-icon-line > span{
+  display:inline;
+  min-width:0;
+  color:inherit;
+  font-size:inherit;
+  line-height:inherit;
+}
+.hotel-card .hotel-icon{
+  flex:none;
+  width:16px;
+  height:16px;
+  margin-top:3px;
+  color:var(--muted);
+}
+.hotel-card .hotel-link.hotel-icon-line{
+  align-items:center;
+}
+.hotel-card .hotel-link .hotel-icon{
+  margin-top:0;
+}
