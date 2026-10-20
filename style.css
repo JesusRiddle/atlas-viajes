@@ -453,3 +453,9 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   text-decoration:underline;
   border-color:#cfa78f;
 }
+
+/* Lectura del itinerario diario: cuerpo de Mañana, Tarde y Noche. */
+.daycontent .schedule p {
+  font-size:14px;
+  line-height:1.65;
+}
