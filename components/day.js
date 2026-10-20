@@ -15,9 +15,35 @@ window.AtlasDay = function (ctx) {
     function hotelCheckIn(t, d) {
         const hotel = hotelForDay(t, d);
         if (!hotel) return '';
-        const index = t.days.findIndex(day => day.hotel === d.hotel);
-        if (index !== t.days.indexOf(d)) return '';
-        return `<div class="daynote hotel-checkin"><strong>🏨 Hotel · llegada / check-in</strong><p><strong>${esc(hotel.name)}</strong>${hotel.status ? ' · ' + esc(hotel.status) : ''}</p>${hotel.address ? `<p><strong>Dirección:</strong> ${esc(hotel.address)}</p>` : ''}${hotel.rate ? `<p><strong>Tarifa revisada:</strong> ${esc(hotel.rate)}</p>` : ''}${hotel.rateConditions ? `<p><strong>Condiciones:</strong> ${esc(hotel.rateConditions)}</p>` : ''}${hotel.notes ? `<p>${esc(hotel.notes)}</p>` : ''}${hotel.url ? `<p><a href="${esc(hotel.url)}" target="_blank" rel="noopener">${esc(hotel.linkLabel || 'Ver alojamiento')}</a></p>` : ''}</div>`;
+
+        // Mostrar la ficha únicamente el primer día asignado al alojamiento.
+        const firstDay = t.days.findIndex(day => day.hotel === d.hotel);
+        if (firstDay !== t.days.indexOf(d)) return '';
+
+        const date = new Date(`${hotel.checkIn || d.date}T12:00:00Z`);
+        const checkInDate = Number.isNaN(date.getTime())
+            ? esc(hotel.checkIn || d.date)
+            : esc(new Intl.DateTimeFormat('es-MX', {
+                dateStyle: 'full',
+                timeZone: 'UTC'
+            }).format(date));
+
+        return `<aside class="hotel-checkin" aria-label="Información de llegada al alojamiento">
+            <div class="hotel-checkin-heading">
+                <span class="hotel-checkin-symbol" aria-hidden="true">⌂</span>
+                <div>
+                    <h4>Llegada al alojamiento · Check-in</h4>
+                    <small>${checkInDate}</small>
+                </div>
+            </div>
+            <div class="hotel-checkin-body">
+                <p class="hotel-checkin-name"><strong>${esc(hotel.name)}</strong></p>
+                ${hotel.status ? `<p class="hotel-checkin-status">${esc(hotel.status)}</p>` : ''}
+                ${hotel.address ? `<p class="hotel-checkin-address"><span aria-hidden="true">⌖</span><span>${esc(hotel.address)}</span></p>` : ''}
+                ${hotel.notes ? `<p class="hotel-checkin-notes"><strong>Nota:</strong> ${esc(hotel.notes)}</p>` : ''}
+                ${hotel.url ? `<p class="hotel-checkin-link"><a href="${esc(hotel.url)}" target="_blank" rel="noopener noreferrer">${esc(hotel.linkLabel || 'Ver alojamiento')}</a></p>` : ''}
+            </div>
+        </aside>`;
     }
     function day(d) { const t = trips.find(x => x.days.includes(d)); return `<details class="day" id="dia-${d.n}" open><summary><span class="daynum">${String(d.n).padStart(2, '0')}</span><div><h3>${formatDayTitle(d)}</h3><span class="day-date">Día ${d.n} · ${long(d.date)}</span>${t ? nightHotel(t,d) : ''}${d.headerPlaces ? `<span class="day-places">${d.headerPlaces.map(esc).join(' • ')}</span>` : d.places.length ? `<span class="day-places">${d.places.map(key => esc(places[key].name) + ((d.optionalPlaces || []).includes(key) ? ' <span class="summary-optional">(opcional)</span>' : '')).join(' • ')}</span>` : ''}</div></summary><div class="daycontent">${d.places.length ? `<div class="gallery ${d.places.length === 1 ? 'single' : ''}">${d.places.map(key => figure(key, (d.optionalPlaces || []).includes(key), false)).join('')}</div>${d.optionalPlaces?.length ? '<p class="gallery-explanation">Las fotografías marcadas «Opción del día» muestran alternativas o visitas opcionales. El programa explica cuáles elegir según tus intereses, el tiempo y tu energía.</p>' : ''}` : ''}<div class="schedule"><div><label>Mañana</label><p>${readable(d.am)}</p></div><div><label>Tarde</label><p>${readable(d.pm)}</p></div><div><label>Noche</label><p>${readable(d.night)}</p></div></div><div class="mobility"><div><strong>Cómo te mueves</strong><p>${readable(d.mobility)}</p></div><div class="dailycost"><strong>Gasto estimado del día</strong>${d.spend === null ? 'Por cotizar<small>Sin importe diario confirmado.<br>Rango global en el presupuesto.</small>' : `${money(d.spend)} MXN<small>Comidas, visitas y movilidad.<br>Ya contemplado en el presupuesto total.</small>`}</div></div>${railBlock(d)}${t ? hotelCheckIn(t,d) : ''}${d.note ? `<div class="daynote">${String(d.note).split('\n').map(readable).join('<br>')}${d.noteLinks ? `<p class="day-links">${d.noteLinks.map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener">${esc(link.label)}</a>`).join(' · ')}</p>` : ''}${d.noteLink ? `<p><a href="${esc(d.noteLink.url)}" target="_blank" rel="noopener">${readable(d.noteLink.label)}</a></p>` : ''}</div>` : ''}</div></details>`; }
     return { img, caption, figure, day, hotelForDay };
