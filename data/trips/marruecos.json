@@ -307,5 +307,58 @@
     "essaouira-port": "Puerto pesquero de Essaouira, donde las embarcaciones y la actividad de los trabajadores forman parte del paisaje cotidiano de la ciudad.",
     "essaouira-ramparts": "Fortificaciones de piedra frente al Atlántico que protegían Essaouira. El paseo permite observar las murallas y la costa desde los accesos habilitados.",
     "essaouira-beach": "Amplia playa atlántica junto a Essaouira. Es una propuesta para caminar y contemplar el mar; en esta época del año el programa no depende de bañarse."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
   }
 }
