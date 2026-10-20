@@ -7,6 +7,17 @@ window.AtlasTrip = function (ctx) {
         railAppendix, optionsSection, seasonality, knownCostPanel, home,
         loadGallery, printGuide
     } = ctx;
+    // SVG decorativos integrados, sin dependencias externas.
+    function overviewIcon(name) {
+        const paths = {
+            compass: '<circle cx="12" cy="12" r="9"/><path d="m16.2 7.8-2.7 5.7-5.7 2.7 2.7-5.7z"/>',
+            pin: '<path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',
+            bed: '<path d="M3 18v-8m0 6h18m0 2v-8M3 10V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3M3 12h18"/>',
+            wallet: '<rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 9h18m-6 5h3"/>',
+            arrow: '<path d="M5 19 19 5M9 5h10v10"/>'
+        };
+        return `<svg class="overview-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths[name]}</svg>`;
+    }
     function tripPage(id) {
         const t = trips.find(x => x.id === id);
         if (!t) {
@@ -42,18 +53,26 @@ window.AtlasTrip = function (ctx) {
             `<select aria-label="Cambiar destino" id="dest-select">${trips.map(x => `<option value="${x.id}" ${x.id === id ? 'selected' : ''}>${x.flag} ${esc(x.name)}</option>`).join('')}</select>`,
             `</div>`,
             `<section class="wrap" id="plan">`,
-            `<div class="overview">`,
-            `<div>`,
+            `<div class="overview overview-editorial">`,
+            `<div class="overview-intro">`,
+            `<div class="overview-kicker">${overviewIcon('compass')}<span>Panorama del viaje</span></div>`,
+            `<h2 class="overview-heading">La esencia de tu recorrido.</h2>`,
             `<p class="lead">${highlightWords(t.intro, t.introHighlights)}</p>`,
-            `<p class="trip-route" aria-label="Ciudades del recorrido">${t.routeCities.map(esc).join(' • ')}</p>`,
-            `<div class="baseroute">${t.bases.map((x, i) => `<div class="basepill"><strong>${i + 1}. ${esc(x[0])}</strong><small>${x[1]} ${x[1] === 1 ? 'noche' : 'noches'}</small></div>`).join('')}</div>`,
+            `<div class="overview-route-block">`,
+            `<h3 class="overview-subheading">${overviewIcon('pin')} Ciudades del recorrido</h3>`,
+            `<div class="trip-route" aria-label="Ciudades del recorrido">${t.routeCities.map(city => `<span class="trip-route-city">${esc(city)}</span>`).join('')}</div>`,
+            `</div>`,
+            `</div>`,
+            `<div class="overview-stays">`,
+            `<div class="overview-stays-heading"><h3 class="overview-subheading">${overviewIcon('bed')} Tus alojamientos</h3><span>${t.bases.length} ${t.bases.length === 1 ? 'estancia' : 'estancias'}</span></div>`,
+            `<div class="baseroute">${t.bases.map((x, i) => `<div class="basepill"><span class="basepill-number">${String(i + 1).padStart(2, '0')}</span>${overviewIcon('bed')}<strong>${esc(x[0])}</strong><small>${x[1]} ${x[1] === 1 ? 'noche' : 'noches'}</small></div>`).join('')}</div>`,
             `</div>`,
             `<aside class="budget-teaser">`,
             `<div>`,
-            `<span class="eyebrow">Tu inversión aproximada</span>`,
+            `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
             `<strong>${price(t)}</strong>`,
             `<p>MXN · una persona · habitación privada · viaje completo</p>`,
-            `<a href="#viaje/${id}/costes">Ver desglose</a>`,
+            `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `</div>`,
             `</aside>`,
             `</div>${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${railPlanning(t)}<div class="factgrid">`,
