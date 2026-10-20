@@ -49,3 +49,21 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
 .mobility p {
   white-space: pre-line;
 }
+/* Temporadas: estados por mes */
+.seasonality-section .section-title{margin-bottom:22px}
+.season-months{list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;padding:0;margin:0}
+.season-month{min-width:0;border:1px solid transparent;border-radius:9px;padding:13px 9px;min-height:112px;display:flex;flex-direction:column;gap:5px;overflow-wrap:anywhere}
+.season-month>strong{font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.season-month .season-state{font-size:12px;font-weight:700}
+.season-month small{font-size:12px;line-height:1.35}
+.season-pending{background:#eee4fa;border-color:#c6a5e7;color:#50316d}
+.season-recommended{background:#d9eddd;border-color:#a3d2af;color:#255535}
+.season-conditional{background:#fff0c4;border-color:#eac56d;color:#684c0c}
+.season-avoid{background:#f5dedf;border-color:#dfa7ad;color:#7f3338}
+.season-legend{display:flex;gap:12px 20px;flex-wrap:wrap;margin:17px 0;font-size:13px;color:var(--muted)}
+.season-legend span{display:inline-flex;align-items:center;gap:7px}
+.season-swatch{height:14px;width:14px;display:inline-block;border:1px solid currentColor;border-radius:4px}
+.season-summary{font-size:14px;line-height:1.6}
+@media(max-width:1000px){.season-months{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:680px){.season-months{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.season-month{min-height:110px;padding:10px 7px}}
+@media print{.season-months{grid-template-columns:repeat(6,minmax(0,1fr))}.season-month{-webkit-print-color-adjust:exact;print-color-adjust:exact}}

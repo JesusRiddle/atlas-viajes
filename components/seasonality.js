@@ -1,0 +1,30 @@
+// Calendario de temporadas: contenido independiente en el JSON de cada itinerario.
+window.AtlasSeasonality = function (ctx) {
+    'use strict';
+    const { esc } = ctx;
+    const names = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+    const states = {
+        pending: { label: 'Por definir', css: 'pending' },
+        recommended: { label: 'Recomendado', css: 'recommended' },
+        conditional: { label: 'Condicional', css: 'conditional' },
+        avoid: { label: 'Poco recomendable', css: 'avoid' }
+    };
+    function seasonality(trip) {
+        const data = trip.seasonality;
+        if (!data?.months) return '';
+        const blocks = names.map((name, i) => {
+            const key = String(i + 1).padStart(2, '0');
+            const item = data.months[key] || { status: 'pending', description: 'Por definir' };
+            const state = states[item.status] || states.pending;
+            const note = item.description || 'Por definir';
+            return `<li class="season-month season-${state.css}" aria-label="${esc(name + ': ' + state.label + '. ' + note)}"><strong>${esc(name.slice(0,3))}</strong><span class="season-state">${esc(state.label)}</span><small>${esc(note)}</small></li>`;
+        }).join('');
+        return `<section class="section wrap seasonality-section" id="temporadas" aria-labelledby="seasonality-heading">
+            <div class="section-title"><div><p class="eyebrow orange">Cuándo viajar</p><h2 id="seasonality-heading">Temporadas recomendadas.</h2></div><p>Evaluación del itinerario completo, considerando las actividades y ciudades que incluye.</p></div>
+            <ul class="season-months" aria-label="Temporadas de enero a diciembre">${blocks}</ul>
+            <div class="season-legend" aria-label="Leyenda de estados">${Object.values(states).map(state => `<span><i class="season-swatch season-${state.css}" aria-hidden="true"></i>${esc(state.label)}</span>`).join('')}</div>
+            <p class="season-summary"><strong>Resumen:</strong> ${esc(data.summary || 'Por definir')}</p>
+        </section>`;
+    }
+    return { seasonality };
+};

@@ -45,3 +45,12 @@ HOTELES CONCRETOS (SIN DUPLICAR INFORMACIÓN)
 - La sección «Dónde dormir» genera automáticamente la lista desde hotels. stays continúa siendo opcional para recomendaciones generales sin hotel seleccionado.
 - Si todavía no elegiste hotel, no agregues hotel en ese día y deja los alojamientos recomendados en stays.
 - No uses datos bancarios o códigos de reserva en JSON públicos de GitHub.
+
+TEMPORADAS RECOMENDADAS
+- Edita seasonality en data/trips/<id>.json de cada viaje, sin tocar JavaScript.
+- summary: resumen general de la temporada del itinerario.
+- months: claves "01" hasta "12", enero a diciembre.
+- En cada mes, status y description son la evaluación y justificación mensual.
+- Estados disponibles: pending = morado (Por definir), recommended = verde, conditional = amarillo, avoid = rojo.
+- Actualmente son 12 meses morados por viaje, SIN evaluación real.
+- La sección aparece antes de «Día por día» y se accede desde «Temporadas».
