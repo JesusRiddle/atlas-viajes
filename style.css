@@ -534,27 +534,95 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   font-weight:600;
 }
 
-/* Ficha neutra y compacta de llegada, independiente de las advertencias .daynote. */
-.hotel-checkin{
+/* Ficha de check-in: identidad visual propia, sin estilo de advertencia. */
+.hotel-checkin {
   margin-top:18px;
   padding:16px 18px;
-  background:var(--paper);
-  border:1px solid var(--line);
-  border-radius:7px;
+  border:1px solid #c9ddde;
+  border-radius:8px;
+  background:#eaf3f3;
+  color:var(--ink);
   font-size:14px;
   line-height:1.55;
 }
-.hotel-checkin-heading{display:flex;gap:10px;align-items:center;padding-bottom:11px;border-bottom:1px solid var(--line)}
-.hotel-checkin-symbol{display:grid;place-items:center;width:28px;height:28px;border-radius:5px;background:var(--pale);color:var(--ink);font-size:20px;flex-shrink:0}
-.hotel-checkin-heading h4{margin:0;font:600 14px/1.4 Arial,Helvetica,sans-serif}
-.hotel-checkin-heading small{display:block;margin-top:3px;font-size:12px;color:var(--muted)}
-.hotel-checkin-body{padding-top:11px}
-.hotel-checkin-body p{margin:0 0 9px;font-size:14px;line-height:1.55}
-.hotel-checkin-body p:last-child{margin-bottom:0}
-.hotel-checkin-name strong{font-size:15px}
-.hotel-checkin-body .hotel-checkin-status{font-size:13px;color:var(--muted)}
-.hotel-checkin-address{display:flex;gap:8px;align-items:flex-start}
-.hotel-checkin-address>span:first-child{color:var(--muted);font-size:18px;line-height:1.2}
-.hotel-checkin-notes{padding-top:9px;border-top:1px solid var(--line)}
-.hotel-checkin-notes strong{display:inline;font-size:inherit}
-.hotel-checkin-link a{font-size:14px}
+.hotel-checkin-heading {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding-bottom:12px;
+  border-bottom:1px solid #c9ddde;
+}
+.hotel-checkin-symbol {
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+  width:32px;
+  height:32px;
+  border-radius:6px;
+  background:#d6e9e8;
+  color:#21585e;
+  font-size:23px;
+}
+.hotel-checkin-heading h4 {
+  margin:0;
+  color:#24545a;
+  font:600 14px/1.4 Arial,Helvetica,sans-serif;
+}
+.hotel-checkin-heading small {
+  display:block;
+  margin-top:3px;
+  color:#607c80;
+  font-size:12px;
+}
+.hotel-checkin-body {padding-top:12px}
+.hotel-checkin-main {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(235px,auto);
+  align-items:start;
+  gap:18px;
+  padding-bottom:13px;
+}
+.hotel-checkin-details {min-width:0}
+.hotel-checkin-body p {margin:0 0 9px;font-size:14px;line-height:1.55}
+.hotel-checkin-name strong {font-size:15px}
+.hotel-checkin-name a,.hotel-checkin-name a:visited {
+  color:inherit;
+  font:inherit;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.hotel-checkin-address {display:flex;align-items:flex-start;gap:8px;color:#52656a}
+.hotel-checkin-address>span:first-child {color:#607c80;font-size:18px;line-height:1.2}
+.hotel-checkin-dates {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  min-width:0;
+}
+.hotel-checkin-dates>div {min-width:0}
+.hotel-checkin-dates small {
+  display:block;
+  color:#607c80;
+  font-size:11px;
+  letter-spacing:.035em;
+}
+.hotel-checkin-dates strong {
+  display:block;
+  margin-top:3px;
+  font-size:13px;
+  line-height:1.4;
+  font-weight:600;
+  white-space:nowrap;
+}
+.hotel-checkin-notes {padding-top:12px;border-top:1px solid #c9ddde}
+.hotel-checkin-notes strong {display:inline;font-size:inherit}
+.hotel-checkin-body .hotel-checkin-link {margin-bottom:0}
+.hotel-checkin-link a {font-size:14px;color:#24545a}
+@media(max-width:780px) {
+  .hotel-checkin-main {grid-template-columns:minmax(0,1fr)}
+  .hotel-checkin-dates {grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+}
+@media(max-width:380px) {
+  .hotel-checkin-dates {grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hotel-checkin-dates strong {white-space:normal}
+}
