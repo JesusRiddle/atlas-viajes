@@ -39,6 +39,7 @@ window.AtlasSections = function (ctx) {
             ${h.address ? `<p class="hotel-address">${esc(h.address)}</p>` : ''}
             ${dates}
             ${h.rate ? `<p class="hotel-rate">${esc(h.rate)}</p>` : ''}
+            ${h.rateConditions ? `<p class="hotel-rate-conditions">${esc(h.rateConditions)}</p>` : ''}
             ${h.status ? `<p class="hotel-status"><strong>Estado:</strong> ${esc(h.status)}</p>` : ''}
             ${h.notes ? `<p class="hotel-notes"><strong>Nota:</strong> ${esc(h.notes)}</p>` : ''}
             ${h.url ? `<a class="hotel-link" href="${esc(h.url)}" target="_blank" rel="noopener">${esc(h.linkLabel || 'Ver alojamiento')}</a>` : ''}
