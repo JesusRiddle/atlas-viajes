@@ -482,13 +482,13 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 #plan .trip-route-city{display:inline-flex;align-items:center;padding:3px 10px;border:1px solid #dce4e5;border-radius:999px;background:white;color:var(--ink);font-size:12px;font-weight:600}
 #plan .overview-stays-heading{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:9px}
 #plan .overview-stays-heading>span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1px;font-weight:700}
-#plan .overview-stays .baseroute{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:0}
-#plan .overview-stays .basepill{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:5px;background:white;border:1px solid var(--line);border-radius:8px;padding:12px 14px;transition:border-color .18s ease,box-shadow .18s ease}
+#plan .overview-stays .baseroute{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:0;align-items:start}
+#plan .overview-stays .basepill{min-width:0;display:grid;grid-template-columns:1fr auto;align-content:start;gap:3px 6px;background:white;border:1px solid var(--line);border-radius:8px;padding:10px 12px;transition:border-color .18s ease,box-shadow .18s ease}
 #plan .overview-stays .basepill:hover{border-color:#abbfc4;box-shadow:0 5px 18px rgba(16,42,51,.07)}
 #plan .basepill-number{font-size:11px;font-weight:700;color:#8b421f;letter-spacing:1px}
-#plan .overview-stays .basepill>.overview-icon{color:#58717a}
-#plan .overview-stays .basepill strong{font-size:15px;line-height:1.5}
-#plan .overview-stays .basepill small{padding-top:6px;margin-top:auto;border-top:1px solid var(--line);width:100%;font-size:13px;color:var(--muted)}
+#plan .overview-stays .basepill>.overview-icon{color:#58717a;grid-column:2;grid-row:1;width:16px;height:16px}
+#plan .overview-stays .basepill strong{grid-column:1/-1;font-size:14px;line-height:1.35}
+#plan .overview-stays .basepill small{grid-column:1/-1;padding-top:4px;margin-top:2px;border-top:1px solid var(--line);width:100%;font-size:12px;line-height:1.3;color:var(--muted)}
 #plan .overview-editorial .budget-teaser{display:block;width:100%;background:var(--ink);color:white;border-radius:8px;padding:20px 24px}
 #plan .overview-editorial .budget-teaser .eyebrow{display:flex;align-items:center;gap:10px;color:var(--gold);font-size:11px;letter-spacing:1.4px;margin-bottom:7px}
 #plan .overview-editorial .budget-teaser strong{font-size:clamp(28px,3.3vw,36px);white-space:normal;overflow-wrap:anywhere;margin:0 0 6px}
@@ -503,7 +503,7 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
  #plan .overview-intro{padding:18px}
  #plan .overview-intro .lead{font-size:15px;line-height:1.6}
  #plan .overview-stays .baseroute{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
- #plan .overview-stays .basepill{padding:10px 8px;gap:5px;overflow-wrap:anywhere}
+ #plan .overview-stays .basepill{padding:8px;gap:3px;overflow-wrap:anywhere}
  #plan .overview-stays .basepill strong{font-size:12px;line-height:1.3}
  #plan .overview-stays .basepill small{font-size:11px;line-height:1.3;padding-top:6px}
  #plan .overview-stays .basepill>.overview-icon{width:15px;height:15px}
