@@ -1388,7 +1388,8 @@
       "checkIn": "2026-11-26",
       "checkOut": "2026-11-27",
       "status": "Preseleccionado · no reservado",
-      "rate": "€127 (≈ $2,590 MXN) total · 1 noche · tarifa de miembro flexible, sin desayuno",
+      "rate": "€127 (≈ $2,590 MXN) total · 1 noche",
+      "rateConditions": "Tarifa de miembro flexible, sin desayuno",
       "notes": "Registrarse gratis en Marriott Bonvoy e iniciar sesión antes de reservar. Avisar de llegada de madrugada.",
       "url": "https://www.marriott.com/en-us/hotels/milox-moxy-milan-malpensa-airport/overview/",
       "linkLabel": "Reserva oficial"
@@ -1400,7 +1401,8 @@
       "checkIn": "2026-11-27",
       "checkOut": "2026-11-29",
       "status": "Preseleccionado · no reservado",
-      "rate": "€283 (≈ $5,770 MXN) total · 2 noches · B&me Breakfast Flex con desayuno y cancelación flexible según cotización",
+      "rate": "€283 (≈ $5,770 MXN) total · 2 noches",
+      "rateConditions": "B&me Breakfast Flex con desayuno y cancelación flexible según cotización",
       "notes": "Requiere registro gratuito B&me. Confirmar precio final y posibilidad de dejar equipaje antes del check-in.",
       "url": "https://www.hotel-bb.com/en/hotel/milano-aosta",
       "linkLabel": "Reserva oficial"
@@ -1412,7 +1414,8 @@
       "checkIn": "2026-11-29",
       "checkOut": "2026-12-07",
       "status": "Candidato · no reservado",
-      "rate": "$13,881 MXN total · 8 noches · apartamento completo de 1 dormitorio, 38 m², 1 adulto",
+      "rate": "$13,881 MXN total · 8 noches",
+      "rateConditions": "Apartamento completo de 1 dormitorio, 38 m², 1 adulto",
       "notes": "Aproximadamente 5 min a pie de Bologna Centrale. Check-in desde las 15:00, sin recepción: confirmar self check-in y consigna anticipada. Alternativa de equipaje: KiPoint en Bologna Centrale, zona oeste / andén 7 Oeste.",
       "url": "https://www.booking.com/hotel/it/housmart-milazzo-5.html",
       "linkLabel": "Ver alojamiento"
