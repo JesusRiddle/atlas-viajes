@@ -111,3 +111,19 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
 @media print{
   .hotel-card{break-inside:avoid}
 }
+
+/* Datos de hotel: neutralizar la tipografía de la antigua lista de alojamientos. */
+.hotel-card .hotel-dates strong,
+.hotel-card .hotel-status strong,
+.hotel-card .hotel-notes strong{
+  display:inline;
+  font-size:inherit;
+  line-height:inherit;
+  margin:0;
+}
+.hotel-card .hotel-rate-conditions{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+  font-weight:400;
+}
