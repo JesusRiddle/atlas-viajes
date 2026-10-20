@@ -42,8 +42,8 @@ strong.atlas-city{display:inline;font-family:inherit;font-size:inherit;line-heig
 /* Option 1: inline emphasis inherits the surrounding text size. */
 .trip-espana-portugal .day h3>strong{display:inline;font-family:inherit;font-size:inherit;line-height:inherit;margin:0}
 
-/* Compact logistics, used only by the Emilia itinerary. */
-em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-compact{font-size:14px;line-height:1.5;margin-top:16px;border-top:1px solid var(--line);padding-top:12px}.rail-compact h4{margin:0 0 8px}.rail-compact ul,.rail-ticket-notes{list-style:none;padding:0;margin:0}.rail-compact li,.rail-ticket-notes li{margin:5px 0}.rail-compact .rail-plan-b{color:var(--muted);padding-left:10px;border-left:2px solid var(--line)}.rail-compact p{margin:8px 0 0}.rail-summary{font-size:14px}.rail-summary h4{margin:14px 0 8px}
+/* Énfasis de lugares y estilos del resumen ferroviario general. */
+em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-ticket-notes{list-style:none;padding:0;margin:0}.rail-ticket-notes li{margin:5px 0}.rail-summary{font-size:14px}.rail-summary h4{margin:14px 0 8px}
 
 .schedule p,
 .mobility p {
