@@ -529,5 +529,58 @@
     "riffelsee": "Lago cercano a Rotenboden, con posible reflejo del Cervino cuando no hay viento y el cielo está despejado. Parada opcional dentro del día de Gornergrat.",
     "matterhorn-museum": "Museo del Cervino, dedicado a la historia de Zermatt y la montaña.",
     "zurich": "Calles históricas a ambos lados del Limmat, iglesias y fachadas junto al río. La última noche aquí protege la conexión de regreso."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
   }
 }

@@ -482,5 +482,58 @@
     "varlaam": "Monasterio de Meteora asentado sobre una formación rocosa. Combina edificios religiosos y vistas de los pilares vecinos; el acceso incluye escaleras.",
     "kastraki": "Pueblo situado a los pies de las rocas de Meteora. Sus casas y calles ofrecen una perspectiva del paisaje distinta a la de los miradores elevados.",
     "st-stephen-meteora": "Monasterio que domina la llanura desde uno de los promontorios de Meteora. Es una visita adicional propuesta para el día flexible, sujeta al calendario de apertura."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
   }
 }

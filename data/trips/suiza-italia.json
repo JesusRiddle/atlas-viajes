@@ -505,5 +505,58 @@
     "milan-duomo": "El Duomo domina la plaza central de Milán con su fachada de mármol, agujas y esculturas góticas.",
     "milan-galleria": "La Galleria Vittorio Emanuele II reúne tiendas y cafés bajo una cubierta de hierro y vidrio, junto al Duomo.",
     "milan-castello": "El Castello Sforzesco conserva sus torres y patios históricos y alberga museos municipales de Milán."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
   }
 }

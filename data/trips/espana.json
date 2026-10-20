@@ -607,5 +607,58 @@
     "mirador-valle-toledo": "Punto panorámico al otro lado del Tajo desde el que se aprecia el conjunto de Toledo. Su ubicación requiere un traslado adicional desde el casco histórico.",
     "prado": "Pinacoteca esencial para Velázquez, Goya y el arte europeo. Selecciona obras clave para evitar una visita agotadora.",
     "retiro": "Jardín histórico madrileño con estanque y paseos arbolados. El Palacio de Cristal puede tener cierres por obras; el parque basta para disfrutarlo."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
   }
 }

@@ -398,5 +398,58 @@
     "braganza-palace": "Palacio de los Duques de Braganza, en Guimarães.",
     "gaia-waterfront": "Desde la ribera de Vila Nova de Gaia se contempla el frente histórico de Porto al otro lado del Duero. El paseo permite disfrutar esta perspectiva y acercarse a las bodegas de la zona.",
     "palacio-bolsa": "Palacio de la Bolsa, edificio histórico del centro de Oporto."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
   }
 }
