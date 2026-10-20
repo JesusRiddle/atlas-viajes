@@ -43,7 +43,7 @@ window.AtlasDay = function (ctx) {
 
         return `<aside class="hotel-checkin" aria-label="Información de llegada al alojamiento">
             <div class="hotel-checkin-heading">
-                <span class="hotel-checkin-symbol" aria-hidden="true">⌂</span>
+                <span class="hotel-checkin-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18v-7m18 7v-7M3 15h18M5 15V8a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v7M5 11h14"/></svg></span>
                 <div>
                     <h4>Llegada al alojamiento</h4>
                     ${hotel.status ? `<small>${esc(hotel.status)}</small>` : ''}
@@ -55,7 +55,7 @@ window.AtlasDay = function (ctx) {
                 <p class="hotel-checkin-name"><strong>${hotel.mapsUrl
                     ? `<a href="${esc(hotel.mapsUrl)}" target="_blank" rel="noopener noreferrer">${esc(hotel.name)}</a>`
                     : esc(hotel.name)}</strong></p>
-                ${hotel.address ? `<p class="hotel-checkin-address"><span aria-hidden="true">⌖</span><span>${esc(hotel.address)}</span></p>` : ''}
+                ${hotel.address ? `<p class="hotel-checkin-address"><span aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span>${esc(hotel.address)}</span></p>` : ''}
                     </div>
                 <div class="hotel-checkin-dates">
                     <div><small>CHECK-IN</small><strong>${formatDate(checkIn, hotel.checkIn || d.date)}</strong></div>
