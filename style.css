@@ -459,3 +459,8 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   font-size:14px;
   line-height:1.65;
 }
+
+/* Espacio entre indicaciones independientes de Mañana, Tarde y Noche. */
+.daycontent .schedule p + p {
+  margin-top:11px;
+}
