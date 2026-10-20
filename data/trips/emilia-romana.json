@@ -318,7 +318,7 @@
       "night": "Llegada al *Aeropuerto Milano Malpensa (MXP)* a las *22:10 hrs*. Desde la *Terminal 1*, tomar el autobús gratuito hacia la *Terminal 2* y caminar al hotel *Moxy Milano Malpensa Airport* para realizar el check-in.",
       "mobility": "Traslado interno *T1 → T2*: Utiliza el autobús gratuito del aeropuerto *(10-15 min de trayecto)*. Sigue los letreros de conexión entre terminales y toma el acceso peatonal directo al hotel (5 min a pie). Confirma tu terminal exacta de llegada y los horarios nocturnos del autobús.",
       "spend": null,
-      "note": "",
+      "note": "Importante: El vuelo sale a las *00:05 del jueves 26 de noviembre*, por lo que debes presentarte en el AICM *la noche del miércoles 25*. En Madrid, confirma que ambos vuelos estén en la misma reserva y, si documentas equipaje, que esté etiquetado hasta Milano; durante la conexión, sigue las indicaciones hacia tu puerta y considera el control de pasaportes para entrar al espacio Schengen. Como llegarás a Malpensa a las *22:10*, *avisa al Moxy de tu llegada nocturna* y confirma la posibilidad de hacer el check-in después de medianoche si se retrasa el vuelo.",
       "noteLinks": [
         {
           "label": "Moxy Milano Malpensa Airport · reserva oficial",
@@ -1392,7 +1392,7 @@
       "status": "Preseleccionado · no reservado",
       "rate": "€127 (≈ $2,590 MXN) total · 1 noche",
       "rateConditions": "Tarifa de miembro flexible, sin desayuno",
-      "notes": "Registrarse gratis en Marriott Bonvoy e iniciar sesión antes de reservar. Avisar de llegada de madrugada.",
+      "notes": "Registrarse gratis en Marriott Bonvoy e iniciar sesión antes de reservar. Avisar de llegada nocturna y confirmar check-in después de medianoche si hubiera retrasos.",
       "url": "https://www.marriott.com/en-us/hotels/milox-moxy-milan-malpensa-airport/overview/",
       "linkLabel": "Reserva oficial"
     },
