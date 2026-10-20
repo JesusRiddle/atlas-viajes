@@ -47,7 +47,7 @@ window.AtlasSections = function (ctx) {
             : '';
         return `<article class="hotel-card">
             <h4>${esc(h.city)} · <em>${esc(h.name)}</em></h4>
-            ${h.address ? `<p class="hotel-address hotel-icon-line">${hotelIcon('location')}<span>${esc(h.address)}</span></p>` : ''}
+            ${h.address ? `<p class="hotel-address hotel-icon-line">${hotelIcon('location')}${h.mapsUrl ? `<a href="${esc(h.mapsUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Ver dirección en Google Maps: ${esc(h.address)}">${esc(h.address)}</a>` : `<span>${esc(h.address)}</span>`}</p>` : ''}
             ${dates}
             ${h.rate ? `<p class="hotel-rate hotel-icon-line">${hotelIcon('rate')}<span>${esc(h.rate)}</span></p>` : ''}
             ${h.rateConditions ? `<p class="hotel-rate-conditions hotel-icon-line">${hotelIcon('conditions')}<span>${esc(h.rateConditions)}</span></p>` : ''}
