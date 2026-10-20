@@ -6,7 +6,7 @@ window.AtlasDay = function (ctx) {
     function figure(key, optional = false, deferred = false) { return `<figure><button type="button" class="photo-open" aria-label="Ampliar foto: ${esc(places[key].name)}">${img(key, '', false, deferred)}<span class="photo-zoom" aria-hidden="true">Ampliar ↗</span></button>${caption(key, optional)}</figure>`; }
     function hotelForDay(t, d) {
         if (!d.hotel) return null;
-        return t.hotels?.[d.hotel] || null;
+        return t.hotels?.find(hotel => hotel.id === d.hotel) || null;
     }
     function nightHotel(t, d) {
         const hotel = hotelForDay(t, d);
