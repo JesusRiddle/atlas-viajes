@@ -345,3 +345,58 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-c
   .hotel-checkin-dates {grid-template-columns:repeat(2,minmax(0,1fr))}
   .hotel-checkin-dates strong {white-space:normal}
 }
+
+/* Movilidad del día: texto libre, sin alterar el contenido del JSON. */
+.daycontent .mobility-card {
+  display:block;
+  margin-top:16px;
+  padding:16px 18px;
+  border:1px solid #ded9cb;
+  border-radius:8px;
+  background:#f7f5ed;
+  color:var(--ink);
+  font-size:14px;
+  line-height:1.6;
+}
+.mobility-card h4 {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin:0 0 12px;
+  font:600 14px/1.4 Arial,Helvetica,sans-serif;
+  color:#5e563f;
+}
+.mobility-card .mobility-icon {
+  display:grid;
+  place-items:center;
+  flex:none;
+  width:29px;
+  height:29px;
+  border-radius:6px;
+  background:#eae3d2;
+  color:#625638;
+  font-size:17px;
+}
+.mobility-card .mobility-copy p {
+  margin:0 0 9px;
+  font-size:14px;
+  line-height:1.65;
+  overflow-wrap:break-word;
+}
+.mobility-card .mobility-copy p:last-child {margin-bottom:0}
+.mobility-card .mobility-copy strong {font-weight:600}
+.daycontent .dailycost-standalone {
+  box-sizing:border-box;
+  width:100%;
+  margin-top:18px;
+  padding:10px 14px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:var(--pale);
+  text-align:left;
+  white-space:normal;
+  font-size:13px;
+}
+.dailycost-standalone>strong {display:inline;font-size:13px}
+.dailycost-standalone>span {display:inline;margin-left:10px;font-weight:600}
+.dailycost-standalone small {max-width:none;margin-top:2px;color:var(--muted)}
