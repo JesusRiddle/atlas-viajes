@@ -857,6 +857,6 @@ html{scroll-padding-top:78px}
 #plan .overview-editorial .budget-teaser .budget-detail-link{padding:0;border:0;font-size:13px;text-decoration:none}
 #plan .overview-editorial .budget-teaser .budget-detail-link:hover{text-decoration:underline}
 #plan .overview-editorial .budget-teaser .budget-exchange{margin-top:20px;padding-top:12px;border-top:1px solid #365059;color:#adbec5}
-#plan .overview-editorial .budget-teaser .budget-exchange summary{cursor:pointer;font-size:12px;line-height:1.5}
-#plan .overview-editorial .budget-teaser .budget-exchange-values{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:10px;font-size:12px;line-height:1.6;color:#dae5e8}
+#plan .overview-editorial .budget-teaser .budget-exchange-label{font-size:12px;line-height:1.5}
+#plan .overview-editorial .budget-teaser .budget-exchange-values{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:6px;font-size:12px;line-height:1.6;color:#dae5e8}
 @media(max-width:680px){#plan .overview-editorial .budget-teaser{padding:21px 22px}}
