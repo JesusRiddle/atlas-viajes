@@ -45,6 +45,17 @@ window.AtlasTrip = function (ctx) {
             '</h3><div class="fact-copy">' +
             solo + '</div></article></div>' + (compact ? '</section>' : '');
     }
+    function climateCard(t) {
+        return '<article class="overview-climate-card"><h3><span class="section-icon" aria-hidden="true">☀</span>Clima y luz</h3>' +
+            '<div class="fact-copy">' + factParagraphs(t.climate) + '</div></article>';
+    }
+    function practicalAdvice(t) {
+        return '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
+            '<h3><span class="section-icon" aria-hidden="true">◎</span>Ritmo y consejos prácticos</h3>' +
+            '<div class="overview-practical-grid">' +
+            t.solo.split(/\\n\\s*\\n/).filter(Boolean).map(part => '<div class="practical-item">' +
+                readable(part) + '</div>').join('') + '</div></section>';
+    }
     function overviewStays(t, inline = false) {
         const nights = t.bases.reduce((sum, base) => sum + Number(base[1] || 0), 0);
         const caption = inline
@@ -109,6 +120,7 @@ window.AtlasTrip = function (ctx) {
             `${t.id === 'emilia-romana' ? overviewStays(t, true) : ''} `,
             `</div>`,
             `${t.id === 'emilia-romana' ? '' : overviewStays(t)}`,
+            `${t.id === 'emilia-romana' ? '<div class="overview-side">' : ''}`,
             `<aside class="budget-teaser">`,
             `<div>`,
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
@@ -120,8 +132,9 @@ window.AtlasTrip = function (ctx) {
             `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `</div>`,
             `</aside>`,
+            `${t.id === 'emilia-romana' ? climateCard(t) + '</div>' : ''}`,
             `</div>`,
-            `${t.id === 'emilia-romana' ? adviceCards(t) : ''}`,
+            `${t.id === 'emilia-romana' ? practicalAdvice(t) : ''}`,
             `${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
             `${t.id === 'emilia-romana' ? '' : adviceCards(t)}`,
             `<article class="panel" style="margin-top:20px">`,
