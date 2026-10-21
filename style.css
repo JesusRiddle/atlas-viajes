@@ -645,3 +645,33 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 .budget-ledger .budget-subtotal td{font-weight:700;background:#f7f9f9}
 .budget-ledger .budget-range{border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:14px}
 @media(max-width:680px){.budget-ledger table{font-size:12px}.budget-ledger th,.budget-ledger td{padding:9px 10px}}
+
+
+/* Desktop: lectura y estados de interacción de traslados y presupuesto. */
+@media screen and (min-width: 851px) {
+  #traslados .mt-card>summary {
+    grid-template-columns: 50px minmax(180px,1.1fr) minmax(230px,1.5fr) minmax(145px,.8fr) 16px;
+  }
+  #traslados .mt-route strong,
+  #traslados .mt-journey strong {overflow-wrap:anywhere}
+  #traslados .mt-price {font-variant-numeric:tabular-nums}
+  #traslados .mt-selectors label {max-width:360px}
+}
+#traslados .mt-card>summary:hover {background:#f8fafb}
+#traslados .mt-card>summary:focus-visible {outline:3px solid #dc5c2e;outline-offset:-3px}
+#traslados .mt-selectors select {width:100%;min-height:42px;font-size:14px;line-height:1.35}
+#traslados .mt-selectors select:focus-visible {outline:3px solid #dc5c2e;outline-offset:2px;border-color:#dc5c2e}
+.budget-ledger .scrolltable {max-width:100%}
+.budget-ledger table {table-layout:fixed}
+.budget-ledger table th:first-child,
+.budget-ledger table td:first-child {width:54%;white-space:normal;overflow-wrap:anywhere}
+.budget-ledger table th:nth-child(2),
+.budget-ledger table th:nth-child(3) {text-align:right}
+.budget-ledger table th:nth-child(2),
+.budget-ledger table td:nth-child(2) {width:22%}
+.budget-ledger table th:nth-child(3),
+.budget-ledger table td:nth-child(3) {width:24%}
+.budget-ledger .budget-subtotal td {border-top:1px solid var(--line)}
+@media screen and (min-width: 851px) {
+  .budget-ledger table th,.budget-ledger table td {padding:12px 14px}
+}
