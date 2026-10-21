@@ -285,8 +285,21 @@ test('tarjeta diaria presenta partidas registradas, no inventa comidas ni asigna
     const firenze = view.render(trip, trip.days.find(d => d.n === 9));
     assert.ok(firenze.includes('Firenze · entradas imprescindibles'));
     assert.ok(firenze.includes('Bologna ↔ Firenze'));
-    assert.ok(firenze.includes('Subtotal parcial'));
+    assert.ok(firenze.includes('Subtotal conocido de esta jornada'));
     const outbound = view.render(trip, trip.days[0]);
-    assert.ok(outbound.includes('vuelo redondo se contabiliza únicamente en el total'));
+    assert.ok(outbound.includes('El vuelo se contabiliza en el presupuesto global'));
     assert.ok(!outbound.includes('20,060'));
+});
+
+test('días sin cotización no se presentan como gasto cero y las notas son contextuales', () => {
+    const view = ctx.window.AtlasDayBudget;
+    const free = view.render(trip, trip.days.find(d => d.n === 12));
+    assert.ok(free.includes('Sin partidas cotizadas'));
+    assert.ok(free.includes('Presupuesto diario incompleto'));
+    const input = JSON.parse(JSON.stringify(trip));
+    input.expenses.push({ id: 'food-sample', category: 'food', concept: 'Alimentación', date: '2026-11-30',
+        cost: { amount: 350, currency: 'MXN' } });
+    const updated = view.render(input, input.days.find(d => d.n === 5));
+    assert.ok(updated.includes('Alimentación'));
+    assert.ok(!updated.includes('verificar comidas'));
 });
