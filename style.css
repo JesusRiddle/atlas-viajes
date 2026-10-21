@@ -924,3 +924,19 @@ html{scroll-padding-top:78px}
 
 /* La cuadrícula de alojamientos usa el número real de estancias (hasta cuatro por fila en Desktop). */
 @media(min-width:1001px){#plan .overview-intro .overview-stays-inline .baseroute{grid-template-columns:repeat(var(--stay-columns,3),minmax(0,1fr))}}
+
+/* Mapa: compactar el encabezado y el pie sin reducir la superficie interactiva. */
+@media screen and (min-width:761px){
+ .trip-map-section .trip-map-header{margin-bottom:9px;column-gap:22px}
+ .trip-map-section .trip-map-cities{padding-top:0;padding-left:19px}
+ .trip-map-section .trip-map-cities .map-city-list{margin-top:8px;gap:6px}
+ .trip-map-section .trip-map-cities .map-city-list a{height:62px;min-height:62px;padding:6px 7px;gap:2px;border-radius:10px}
+}
+@media screen{
+ .trip-map-section{padding-bottom:16px}
+ .trip-map-section .map-status{margin:7px 0 0;line-height:1.4}
+}
+@media screen and (max-width:760px){
+ .trip-map-section .trip-map-header{row-gap:11px;margin-bottom:11px}
+ .trip-map-section .trip-map-cities .map-city-list a{height:64px;min-height:64px}
+}
