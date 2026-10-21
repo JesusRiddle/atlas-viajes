@@ -980,3 +980,9 @@ html{scroll-padding-top:78px}
 .trip-map-section .trip-map-footer{justify-content:flex-start}
 .trip-map-section .trip-map-footer .map-status:empty{display:none}
 .trip-map-section .trip-map-footer .map-legend{justify-content:flex-start;margin:0}
+
+/* Tarjetas de ciudad: control del mapa, no enlace externo. */
+.trip-map-section .trip-map-cities .map-city-list .map-city-select{width:100%;height:62px;min-height:62px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;padding:6px 7px;border:1px solid #dce4e5;border-radius:10px;background:#fff;color:var(--ink);text-align:left;font:inherit;cursor:pointer}
+.trip-map-section .map-city-select:hover{border-color:#a8bdc3;background:#f9fcfc}
+.trip-map-section .map-city-select:focus-visible{outline:3px solid #dc5c2e;outline-offset:2px}
+@media(max-width:760px){.trip-map-section .trip-map-cities .map-city-list .map-city-select{height:64px;min-height:64px}}
