@@ -110,7 +110,7 @@ test('cambiar Frecciarossa por Italo modifica solo el tren seleccionado y el tot
         assert.equal(afterEntry.mxn - beforeEntry.mxn,
             budget.convert({ amount: 25.9, currency: 'EUR' }, trip.exchangeRates) -
             budget.convert({ amount: 22.9, currency: 'EUR' }, trip.exchangeRates));
-        assert.equal(current.knownTotalMXN - baseline.knownTotalMXN,
+        assert.equal(Math.round((current.knownTotalMXN - baseline.knownTotalMXN) * 100) / 100,
             Math.round((afterEntry.mxn - beforeEntry.mxn) * 100) / 100);
         assert.deepEqual(current.entries.filter(e => e.id !== id), baseline.entries.filter(e => e.id !== id));
         assert.equal(JSON.stringify(trip), before);
