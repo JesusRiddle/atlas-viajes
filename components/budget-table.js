@@ -33,7 +33,9 @@ window.AtlasBudgetTable = (() => {
                 (expenses.get(entry.id)?.category || 'other');
             if (!grouped.has(category)) grouped.set(category, []);
             grouped.get(category).push({
-                ...entry, label: transport?.title || expenses.get(entry.id)?.concept || entry.id
+                ...entry, label: (transport?.title || expenses.get(entry.id)?.concept || entry.id) +
+                    (expenses.get(entry.id)?.status === 'estimated' ? ' · estimado' :
+                    expenses.get(entry.id)?.status === 'quoted' ? ' · cotizado' : '')
             });
         }
         const markup = [];
@@ -58,6 +60,16 @@ window.AtlasBudgetTable = (() => {
             markup.push('<tr class="budget-subtotal"><td>Subtotal' +
                 '</td><td></td><td class="budget-amount">' + pesos(subtotal) +
                 (items.some(x => x.mxn === null) ? ' + pendientes' : '') + '</td></tr>');
+        }
+        const optional = (trip.expenses || []).filter(item => item.optional);
+        if (optional.length) {
+            markup.push('<tr class="budget-category"><th colspan="3" scope="rowgroup">Opcionales · no incluidos en subtotal</th></tr>');
+            optional.forEach(item => {
+                const mxn = budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN);
+                markup.push('<tr class="budget-item budget-optional"><td>' + esc(item.concept) +
+                    '</td><td class="budget-amount">' + esc(original(item.cost)) +
+                    '</td><td class="budget-amount">' + (mxn === null ? 'Por cotizar' : pesos(mxn)) + '</td></tr>');
+            });
         }
         markup.push('<tr class="totalrow"><td>Subtotal conocido · parcial</td><td></td><td class="budget-amount">' +
             pesos(result.knownTotalMXN) + '</td></tr>');
