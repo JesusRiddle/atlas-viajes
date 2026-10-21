@@ -36,7 +36,7 @@ window.AtlasDayBudget = (() => {
         });
         return '<section class="day-budget" data-day-budget="' + esc(day.n) +
             '" aria-label="Presupuesto de la jornada"><div class="day-budget-heading"><div><h4>Gastos registrados del día</h4>' +
-            '<small>Subtotal conocido de esta jornada</small></div><strong>' +
+            '<small>Subtotal registrado de esta jornada</small></div><strong>' +
             (hasAmounts ? pesos(info.totalMXN) : 'Sin partidas cotizadas') +
             '</strong></div>' + (lines || '<p class="day-budget-empty">Todavía no hay partidas asignadas.</p>') +
             (info.partial ? '<p class="day-budget-pending">Hay partidas sin cotizar.</p>' : '') +
