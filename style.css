@@ -975,3 +975,8 @@ html{scroll-padding-top:78px}
  .trip-map-section .trip-map-footer{align-items:flex-start;flex-direction:column;gap:8px}
  .trip-map-section .trip-map-footer .map-legend{justify-content:flex-start}
 }
+
+/* Leyenda como único contenido habitual del pie del mapa. */
+.trip-map-section .trip-map-footer{justify-content:flex-start}
+.trip-map-section .trip-map-footer .map-status:empty{display:none}
+.trip-map-section .trip-map-footer .map-legend{justify-content:flex-start;margin:0}
