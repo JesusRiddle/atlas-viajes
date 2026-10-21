@@ -848,3 +848,15 @@ html{scroll-padding-top:78px}
  .subnav select{width:auto;min-width:112px;max-width:135px;font-size:11px;padding:6px 4px}
 }
 @media print{.triphero{height:180px}.triphero h1{font-size:32px}}
+
+/* Tarjeta de inversión: jerarquía clara y detalles secundarios plegables. */
+#plan .overview-editorial .budget-teaser{padding:24px 26px}
+#plan .overview-editorial .budget-teaser .eyebrow{margin-bottom:12px}
+#plan .overview-editorial .budget-teaser>div>strong{font-size:clamp(27px,2.85vw,34px);line-height:1.15;margin:0 0 9px;letter-spacing:-.02em}
+#plan .overview-editorial .budget-teaser .budget-context{font-size:13px;color:#c1d1d6;margin:0 0 21px;line-height:1.45}
+#plan .overview-editorial .budget-teaser .budget-detail-link{padding:0;border:0;font-size:13px;text-decoration:none}
+#plan .overview-editorial .budget-teaser .budget-detail-link:hover{text-decoration:underline}
+#plan .overview-editorial .budget-teaser .budget-exchange{margin-top:20px;padding-top:12px;border-top:1px solid #365059;color:#adbec5}
+#plan .overview-editorial .budget-teaser .budget-exchange summary{cursor:pointer;font-size:12px;line-height:1.5}
+#plan .overview-editorial .budget-teaser .budget-exchange-values{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:10px;font-size:12px;line-height:1.6;color:#dae5e8}
+@media(max-width:680px){#plan .overview-editorial .budget-teaser{padding:21px 22px}}
