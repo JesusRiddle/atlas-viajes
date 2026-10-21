@@ -6,7 +6,7 @@ window.AtlasSeasonality = function (ctx) {
     const states = {
         pending: { label: 'Por definir', css: 'pending' },
         recommended: { label: 'Recomendado', css: 'recommended' },
-        conditional: { label: 'Con reservas', css: 'conditional' },
+        conditional: { label: 'Aceptable', css: 'conditional' },
         avoid: { label: 'Poco recomendable', css: 'avoid' }
     };
     function seasonality(trip) {
