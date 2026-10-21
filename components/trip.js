@@ -8,6 +8,7 @@ window.AtlasTrip = function (ctx) {
         loadGallery, printGuide
     } = ctx;
     let releaseTransport = null;
+    let releaseBudget = null;
     // SVG decorativos integrados, sin dependencias externas.
     function overviewIcon(name) {
         const paths = {
@@ -21,6 +22,7 @@ window.AtlasTrip = function (ctx) {
     }
     function tripPage(id) {
         if (releaseTransport) { releaseTransport(); releaseTransport = null; }
+        if (releaseBudget) { releaseBudget(); releaseBudget = null; }
         const t = trips.find(x => x.id === id);
         if (!t) {
             home();
@@ -130,29 +132,7 @@ window.AtlasTrip = function (ctx) {
             `</div>`,
             `<p>Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.</p>`,
             `</div>`,
-            `<div class="budgetgrid">`,
-            `<div class="scrolltable">`,
-            `<table>`,
-            `<thead>`,
-            `<tr>`,
-            `<th>Concepto</th>`,
-            `<th>Desde</th>`,
-            `<th>Hasta</th>`,
-            `</tr>`,
-            `</thead>`,
-            `<tbody>${t.costs.map(x => `<tr><td>${esc(x[0])}</td><td>${x[1] === null ? 'Por cotizar' : money(x[1])}</td><td>${x[2] === null ? 'Por cotizar' : money(x[2])}</td></tr>`).join('')}<tr class="totalrow">`,
-            `<td>${t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo'}</td>`,
-            `<td>${money(low)}</td>`,
-            `<td>${money(high)}</td>`,
-            `</tr>`,
-            `</tbody>`,
-            `</table>${t.budgetNote ? `<p class="tiny">${esc(t.budgetNote)}</p>` : ''}<p class="tiny">Vuelos de ida y vuelta, estancias indicadas, comidas, transporte y visitas incluidos como estimación. Compras, tratamientos y la obtención de una nueva visa de Estados Unidos no están incluidos. Las alternativas del programa deben elegirse al cotizar las entradas; añadir visitas o espectáculos puede aumentar el total. Los precios dependen de las fechas y de la disponibilidad.</p>`,
-            `</div>`,
-            `<article class="panel">`,
-            `<h3>Las decisiones que importan</h3>`,
-            `<ul class="tips">${t.tips.map(s => `<li>${esc(s)}</li>`).join('')}</ul>`,
-            `</article>`,
-            `</div>${knownCostPanel(t)}</section>`,
+            `${t.majorTransport?.length ? window.AtlasBudgetTable.render(t) : ''}${!t.majorTransport?.length ? '<div class="budgetgrid"><div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Desde</th><th>Hasta</th></tr></thead><tbody>' + t.costs.map(x => '<tr><td>' + esc(x[0]) + '</td><td>' + (x[1] === null ? 'Por cotizar' : money(x[1])) + '</td><td>' + (x[2] === null ? 'Por cotizar' : money(x[2])) + '</td></tr>').join('') + '<tr class="totalrow"><td>' + (t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo') + '</td><td>' + money(low) + '</td><td>' + money(high) + '</td></tr></tbody></table></div></div>' + knownCostPanel(t) : ''}</section>`,
             `<section class="section wrap" id="fuentes">`,
             `<p class="eyebrow orange">Fuentes y reservas</p>`,
             `<h2>Consulta el canal oficial.</h2>`,
@@ -162,6 +142,7 @@ window.AtlasTrip = function (ctx) {
         ].join('');
         window.AtlasGallery.init(main);
         releaseTransport = window.AtlasMajorTransport.mount(main, t);
+        releaseBudget = window.AtlasBudgetTable.mount(main, t);
         window.AtlasTravel.initMap(t);
         document.querySelector('#dest-select').addEventListener('change', e => {
             location.hash = 'viaje/' + e.target.value;
@@ -178,6 +159,7 @@ window.AtlasTrip = function (ctx) {
         document.querySelector('#print').addEventListener('click', printGuide);
     }
     function cleanup() {
+        if (releaseBudget) { releaseBudget(); releaseBudget = null; }
         if (releaseTransport) { releaseTransport(); releaseTransport = null; }
     }
     return { tripPage, cleanup };
