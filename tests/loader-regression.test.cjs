@@ -53,3 +53,14 @@ test('el loader permite stays ausente pero rechaza stays con tipo incorrecto', a
     await assert.doesNotReject(run(trip));
     await assert.rejects(run({ ...trip, stays: 'inválido' }), /Contenido incompleto/);
 });
+
+test('la limpieza de la vista de viaje es segura y repetible al navegar', () => {
+    const window = {};
+    vm.runInNewContext(fs.readFileSync('components/trip.js', 'utf8'), { window });
+    const trip = window.AtlasTrip({});
+    assert.equal(typeof trip.cleanup, 'function');
+    assert.doesNotThrow(() => { trip.cleanup(); trip.cleanup(); });
+    const source = fs.readFileSync('components/trip.js', 'utf8');
+    assert.ok(source.includes('cleanup();'));
+    assert.ok(source.includes('mountView(t);'));
+});
