@@ -325,7 +325,9 @@
     {
       "n": 1,
       "date": "2026-11-26",
-      "transportRefs": ["flight-international"],
+      "transportRefs": [
+        "flight-international"
+      ],
       "title": "Vuelo CDMX a Milano: Aeropuerto de CDMX (AICM) → Escala en Madrid-Barajas (MAD) → Llegada a Milano Malpensa (MXP)",
       "base": "En vuelo / Malpensa",
       "headerPlaces": [
@@ -443,7 +445,9 @@
     {
       "n": 4,
       "date": "2026-11-29",
-      "transportRefs": ["train-milano-bologna"],
+      "transportRefs": [
+        "train-milano-bologna"
+      ],
       "title": "Milano → Bologna y el centro monumental",
       "base": "Bologna",
       "headerPlaces": [
@@ -495,7 +499,9 @@
     {
       "n": 5,
       "date": "2026-11-30",
-      "transportRefs": ["train-bologna-ravenna"],
+      "transportRefs": [
+        "train-bologna-ravenna"
+      ],
       "title": "la luz de los mosaicos bizantinos",
       "base": "Ravenna",
       "headerPlaces": [
@@ -532,7 +538,9 @@
     {
       "n": 6,
       "date": "2026-12-01",
-      "transportRefs": ["train-bologna-parma"],
+      "transportRefs": [
+        "train-bologna-parma"
+      ],
       "title": "románico, Leonardo y Teatro Farnese",
       "base": "Parma",
       "headerPlaces": [
@@ -613,7 +621,9 @@
     {
       "n": 8,
       "date": "2026-12-03",
-      "transportRefs": ["train-bologna-ferrara"],
+      "transportRefs": [
+        "train-bologna-ferrara"
+      ],
       "title": "Castello Estense y grandes maestros modernos",
       "base": "Ferrara",
       "headerPlaces": [
@@ -654,7 +664,9 @@
     {
       "n": 9,
       "date": "2026-12-04",
-      "transportRefs": ["train-bologna-firenze"],
+      "transportRefs": [
+        "train-bologna-firenze"
+      ],
       "title": "David, Cupola y Uffizi",
       "base": "Firenze",
       "headerPlaces": [
@@ -706,7 +718,9 @@
     {
       "n": 10,
       "date": "2026-12-05",
-      "transportRefs": ["train-bologna-modena"],
+      "transportRefs": [
+        "train-bologna-modena"
+      ],
       "title": "románico, mercado y Museo Enzo Ferrari",
       "base": "Modena",
       "headerPlaces": [
@@ -790,7 +804,9 @@
     {
       "n": 12,
       "date": "2026-12-07",
-      "transportRefs": ["flight-international"],
+      "transportRefs": [
+        "flight-international"
+      ],
       "title": "Bologna → Madrid → CDMX",
       "base": "Regreso",
       "headerPlaces": [
@@ -876,7 +892,7 @@
   ],
   "exchangeRates": {
     "EUR": 20.6451,
-    "USD": 18.4200
+    "USD": 18.42
   },
   "exchangeRateSnapshot": {
     "date": "2026-10-20",
@@ -960,13 +976,23 @@
                   "from": "MEX",
                   "to": "MAD",
                   "departure": "2026-11-26T00:05:00-06:00",
-                  "operator": "Iberia"
+                  "arrival": "2026-11-26T17:10:00+01:00",
+                  "departureTerminal": "1",
+                  "arrivalTerminal": "4S",
+                  "operator": "Iberia",
+                  "flightNumber": "IB312",
+                  "aircraft": "Airbus A350"
                 },
                 {
                   "from": "MAD",
                   "to": "MXP",
+                  "departure": "2026-11-26T19:55:00+01:00",
                   "arrival": "2026-11-26T22:10:00+01:00",
-                  "operator": "Iberia"
+                  "departureTerminal": "4",
+                  "arrivalTerminal": "1",
+                  "operator": "Iberia",
+                  "flightNumber": "IB803",
+                  "aircraft": "Airbus A320"
                 }
               ]
             },
@@ -977,13 +1003,26 @@
                   "from": "BLQ",
                   "to": "MAD",
                   "departure": "2026-12-07T12:25:00+01:00",
-                  "operator": "Air Nostrum"
+                  "arrival": "2026-12-07T14:55:00+01:00",
+                  "departureTerminal": null,
+                  "arrivalTerminal": null,
+                  "arrivalTerminalQuoted": "4S",
+                  "arrivalTerminalExpected": "4",
+                  "terminalNote": "Cotización indica T4S, pero Air Nostrum suele operar en T4; confirmar con Iberia/Aena antes del viaje.",
+                  "operator": "Air Nostrum para Iberia",
+                  "flightNumber": "IB1238",
+                  "aircraft": "Bombardier CRJ1000"
                 },
                 {
                   "from": "MAD",
                   "to": "MEX",
+                  "departure": "2026-12-07T16:50:00+01:00",
                   "arrival": "2026-12-07T22:10:00-06:00",
-                  "operator": "Iberia"
+                  "departureTerminal": "4S",
+                  "arrivalTerminal": "1",
+                  "operator": "Iberia",
+                  "flightNumber": "IB311",
+                  "aircraft": "Airbus A350-900"
                 }
               ]
             }
@@ -993,19 +1032,108 @@
               "id": "basic",
               "name": "Turista Básica",
               "price": {
-                "amount": 18754,
+                "amount": 20060,
                 "currency": "MXN"
               },
               "baggage": {
-                "personalItem": null,
-                "cabin": null,
-                "checked": null
+                "personalItem": {
+                  "pieces": 1,
+                  "dimensionsCm": [
+                    30,
+                    40,
+                    15
+                  ]
+                },
+                "cabin": {
+                  "pieces": 1,
+                  "weightKg": 10,
+                  "dimensionsCm": [
+                    56,
+                    40,
+                    25
+                  ]
+                },
+                "checked": {
+                  "pieces": 0
+                }
               },
-              "changes": null,
-              "refunds": null
+              "changes": "Cambios con cargo; penalización y diferencia tarifaria por confirmar.",
+              "refunds": "No reembolsable según cotización."
+            },
+            {
+              "id": "optimal",
+              "name": "Turista Óptima",
+              "price": {
+                "amount": 23330,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": {
+                  "pieces": 1,
+                  "dimensionsCm": [
+                    30,
+                    40,
+                    15
+                  ]
+                },
+                "cabin": {
+                  "pieces": 1,
+                  "weightKg": 10,
+                  "dimensionsCm": [
+                    56,
+                    40,
+                    25
+                  ]
+                },
+                "checked": {
+                  "pieces": 1,
+                  "weightKg": 23
+                }
+              },
+              "changes": "Cambios con cargo; penalización y diferencia tarifaria por confirmar.",
+              "refunds": "No reembolsable según cotización."
+            },
+            {
+              "id": "comfort",
+              "name": "Turista Confort",
+              "price": {
+                "amount": 26215,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": {
+                  "pieces": 1,
+                  "dimensionsCm": [
+                    30,
+                    40,
+                    15
+                  ]
+                },
+                "cabin": {
+                  "pieces": 1,
+                  "weightKg": 10,
+                  "dimensionsCm": [
+                    56,
+                    40,
+                    25
+                  ]
+                },
+                "checked": {
+                  "pieces": 1,
+                  "weightKg": 23
+                }
+              },
+              "changes": "Cambios con cargo; penalización y diferencia tarifaria por confirmar.",
+              "refunds": "Reembolso parcial según cotización; condiciones exactas por confirmar."
             }
           ],
-          "notes": "Cotización histórica de referencia, sin reserva. Franquicia de equipaje, número de vuelo y condiciones pendientes de confirmar."
+          "notes": "Cotización Google Flights/Iberia para 1 pasajero en Turista, vuelos en una misma reserva, no comprados. Básica no incluye maleta documentada; equipaje adicional y penalizaciones exactas pendientes de cotización. Ida: conexión Madrid T4S→T4 (2 h 45 min). Regreso: escala 1 h 55 min, terminal de llegada IB1238 contradictoria entre fuentes; confirmar. Los precios pueden variar.",
+          "quotedAt": "2026-10-20",
+          "sources": [
+            "https://www.iberia.com/es/clases-tarifas/turista/",
+            "https://www.iberia.com/es/equipajes/franquicia-bodega/",
+            "https://www.aena.es/es/adolfo-suarez-madrid-barajas/servicios-del-aeropuerto/conexion-de-vuelos.html"
+          ]
         }
       ]
     },
