@@ -1088,3 +1088,6 @@ html{scroll-padding-top:78px}
 #temporadas .season-months{grid-template-columns:repeat(6,minmax(0,1fr))}
 @media(max-width:920px){#temporadas .season-months{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:560px){#temporadas .season-months{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Iconos meteorológicos opcionales para meses evaluados; colores de estado intactos. */
+.season-month .season-weather-icon{display:block;width:19px;height:19px;flex:none;margin:2px 0 1px;opacity:.9}
