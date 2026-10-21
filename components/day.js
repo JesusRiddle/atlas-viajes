@@ -92,6 +92,7 @@ window.AtlasDay = function (ctx) {
     }
     function legacyDailySpend(d) {
         return '<div class="dailycost dailycost-standalone"><div class="dailycost-label">' +
+            '<span class="dailycost-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="14" rx="2"/><path d="M3 10h18M6 6V4a1 1 0 0 1 1-1h11"/><path d="M16 15h2"/></svg></span>' +
             '<div><strong>Gasto estimado del día</strong><small>Comidas, visitas y movilidad</small></div></div>' +
             '<div class="dailycost-value"><strong>' + (d.spend == null ? 'Por cotizar' : money(d.spend) + ' MXN') +
             '</strong><small>' + (d.spend == null ? 'Contemplado en el rango global' : 'Incluido en el presupuesto total') +
