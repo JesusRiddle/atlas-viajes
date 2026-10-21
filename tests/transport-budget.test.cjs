@@ -187,3 +187,53 @@ test('cambio de tarifa de vuelo actualiza presupuesto sin sumar tarifas alternat
         selections.reset(trip.id);
     }
 });
+
+test('los días muestran el transporte vinculado y siguen el selector Frecciarossa/Italo', () => {
+    vm.runInContext(fs.readFileSync('components/day.js', 'utf8'), ctx, { filename: 'components/day.js' });
+    const esc = value => String(value).replace(/&/g, '&amp;');
+    const view = ctx.window.AtlasDay({ trips: [trip], esc, places: {}, photos: {} });
+    const day4 = trip.days.find(day => day.n === 4);
+    const original = JSON.stringify(trip);
+    try {
+        const before = view.transportSummary(trip, day4);
+        assert.ok(before.includes('Frecciarossa 9613'));
+        assert.ok(before.includes('08:30'));
+        assert.ok(before.includes('22.9'));
+        selections.set(trip, 'train-milano-bologna', 'B', 'smart');
+        const after = view.transportSummary(trip, day4);
+        assert.ok(after.includes('Italo'));
+        assert.ok(after.includes('09:40'));
+        assert.ok(after.includes('25.9'));
+        assert.ok(!after.includes('Frecciarossa 9613'));
+        assert.equal(JSON.stringify(trip), original);
+    } finally {
+        selections.reset(trip.id);
+    }
+});
+
+test('referencias diarias de vuelos muestran solo el sentido correcto', () => {
+    const view = ctx.window.AtlasDay({ trips: [trip], esc: String, places: {}, photos: {} });
+    const outbound = view.transportSummary(trip, trip.days[0]);
+    const returning = view.transportSummary(trip, trip.days.at(-1));
+    assert.ok(outbound.includes('MEX → MAD'));
+    assert.ok(outbound.includes('MAD → MXP'));
+    assert.ok(!outbound.includes('BLQ → MAD'));
+    assert.ok(returning.includes('BLQ → MAD'));
+    assert.ok(returning.includes('MAD → MEX'));
+    assert.ok(!returning.includes('MEX → MAD'));
+    assert.equal(budget.summary(trip).entries.filter(e => e.id === 'flight-international').length, 1);
+});
+
+test('cinco excursiones muestran ambos tramos desde los datos estructurados', () => {
+    const view = ctx.window.AtlasDay({ trips: [trip], esc: String, places: {}, photos: {} });
+    for (const number of [5, 6, 8, 9, 10]) {
+        const day = trip.days.find(x => x.n === number);
+        const html = view.transportSummary(trip, day);
+        const ref = day.transportRefs[0];
+        const journey = trip.majorTransport.find(t => t.id === ref).options[0].journeys[0];
+        for (const segment of journey.segments) {
+            assert.ok(html.includes(segment.from + ' → ' + segment.to));
+            assert.ok(html.includes(segment.departure.slice(11, 16)));
+        }
+    }
+});
