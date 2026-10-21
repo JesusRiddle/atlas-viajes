@@ -129,7 +129,7 @@ window.AtlasMajorTransport = (() => {
         return '<details class="mt-card" data-transport="' + esc(transport.id) + '">' +
             '<summary><span class="mt-kind">' + esc(label) + '</span>' +
             '<span class="mt-route"><strong>' + esc(transport.title) + '</strong><small>' +
-            esc(option.provider || '') + (transport.day ? ' · Día ' + transport.day : '') + '</small></span>' +
+            (transport.type === 'train' ? (transport.day ? 'Día ' + transport.day : '') : esc(option.provider || '') + (transport.day ? ' · Día ' + transport.day : '')) + '</small></span>' +
             '<span class="mt-inline">' + summary + '</span>' +
             '<span class="mt-price"><strong>' + esc(formatMoney(price)) + '</strong><small>' +
             (converted === null ? 'MXN pendiente de conversión' :
