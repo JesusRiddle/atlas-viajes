@@ -348,3 +348,14 @@ test('limpieza preserva las once noches y el presupuesto de referencia', () => {
     budget.currentSummary(trip);
     assert.equal(JSON.stringify(trip), snapshot);
 });
+
+test('Iberia: terminal IB1238 pendiente y condiciones no presentadas como confirmadas', () => {
+    const flight = trip.majorTransport.find(t => t.id === 'flight-international');
+    const option = flight.options[0];
+    const arrival = option.journeys[1].segments[0];
+    assert.equal(arrival.arrivalTerminal, null);
+    assert.ok(arrival.terminalNote.includes('no confirmada'));
+    assert.ok(option.notes.includes('penalizaciones'));
+    assert.ok(option.sources.some(source => source.includes('aena.es')));
+    assert.equal(budget.summary(trip).entries.filter(e => e.id === flight.id).length, 1);
+});
