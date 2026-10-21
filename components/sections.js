@@ -32,7 +32,7 @@ window.AtlasSections = function (ctx) {
         if (!t.planningDetails) return '';
         const p = t.planningDetails;
         const groups = (t.reservations || []).map(([title, items], groupIndex) => `
-            <section class="reservation-group">
+            <section class="reservation-group ${groupIndex === 0 ? 'reservation-priority-very-high' : groupIndex === 1 ? 'reservation-priority-high' : ''}">
                 <div class="reservation-group-heading">
                     <h4>${esc(title)}</h4>
                     <span class="reservation-count" aria-label="${items.length} reservas">${items.length}</span>
