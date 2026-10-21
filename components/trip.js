@@ -10,6 +10,7 @@ window.AtlasTrip = function (ctx) {
     let releaseTransport = null;
     let releaseBudget = null;
     let releaseDayTransport = null;
+    let releaseDayBudget = null;
     // SVG decorativos integrados, sin dependencias externas.
     function overviewIcon(name) {
         const paths = {
@@ -76,6 +77,7 @@ window.AtlasTrip = function (ctx) {
         if (releaseTransport) { releaseTransport(); releaseTransport = null; }
         if (releaseBudget) { releaseBudget(); releaseBudget = null; }
         if (releaseDayTransport) { releaseDayTransport(); releaseDayTransport = null; }
+        if (releaseDayBudget) { releaseDayBudget(); releaseDayBudget = null; }
         const t = trips.find(x => x.id === id);
         if (!t) {
             home();
@@ -175,6 +177,7 @@ window.AtlasTrip = function (ctx) {
         releaseTransport = window.AtlasMajorTransport.mount(main, t);
         releaseBudget = window.AtlasBudgetTable.mount(main, t);
         releaseDayTransport = mountTransport(main, t);
+        releaseDayBudget = window.AtlasDayBudget.mount(main, t);
         window.AtlasTravel.initMap(t);
         document.querySelector('#dest-select').addEventListener('change', e => {
             location.hash = 'viaje/' + e.target.value;
@@ -191,6 +194,7 @@ window.AtlasTrip = function (ctx) {
         document.querySelector('#print').addEventListener('click', printGuide);
     }
     function cleanup() {
+        if (releaseDayBudget) { releaseDayBudget(); releaseDayBudget = null; }
         if (releaseDayTransport) { releaseDayTransport(); releaseDayTransport = null; }
         if (releaseBudget) { releaseBudget(); releaseBudget = null; }
         if (releaseTransport) { releaseTransport(); releaseTransport = null; }
