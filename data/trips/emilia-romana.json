@@ -1154,7 +1154,9 @@
                   "from": "Milano Centrale",
                   "to": "Bologna Centrale",
                   "departure": "2026-11-29T08:30:00+01:00",
-                  "arrival": "2026-11-29T09:34:00+01:00"
+                  "arrival": "2026-11-29T09:34:00+01:00",
+                  "service": "Frecciarossa 9613",
+                  "operator": "Trenitalia"
                 }
               ]
             }
@@ -1187,7 +1189,9 @@
                   "from": "Milano Centrale",
                   "to": "Bologna Centrale",
                   "departure": "2026-11-29T09:40:00+01:00",
-                  "arrival": "2026-11-29T10:54:00+01:00"
+                  "arrival": "2026-11-29T10:54:00+01:00",
+                  "operator": "Italo",
+                  "service": "Italo directo"
                 }
               ]
             }
@@ -1227,13 +1231,17 @@
                   "from": "Bologna",
                   "to": "Ravenna",
                   "departure": "2026-11-30T08:05:00+01:00",
-                  "arrival": "2026-11-30T09:17:00+01:00"
+                  "arrival": "2026-11-30T09:17:00+01:00",
+                  "service": "Regionale 17543",
+                  "operator": "Trenitalia"
                 },
                 {
                   "from": "Ravenna",
                   "to": "Bologna",
                   "departure": "2026-11-30T17:43:00+01:00",
-                  "arrival": "2026-11-30T18:55:00+01:00"
+                  "arrival": "2026-11-30T18:55:00+01:00",
+                  "service": "Regionale 17558",
+                  "operator": "Trenitalia"
                 }
               ]
             }
@@ -1273,13 +1281,17 @@
                   "from": "Bologna",
                   "to": "Parma",
                   "departure": "2026-12-01T07:50:00+01:00",
-                  "arrival": "2026-12-01T08:58:00+01:00"
+                  "arrival": "2026-12-01T08:58:00+01:00",
+                  "service": "Regionale 2462",
+                  "operator": "Trenitalia"
                 },
                 {
                   "from": "Parma",
                   "to": "Bologna",
                   "departure": "2026-12-01T17:27:00+01:00",
-                  "arrival": "2026-12-01T18:25:00+01:00"
+                  "arrival": "2026-12-01T18:25:00+01:00",
+                  "service": "Regionale 3935",
+                  "operator": "Trenitalia"
                 }
               ]
             }
@@ -1319,13 +1331,17 @@
                   "from": "Bologna",
                   "to": "Ferrara",
                   "departure": "2026-12-03T08:10:00+01:00",
-                  "arrival": "2026-12-03T08:41:00+01:00"
+                  "arrival": "2026-12-03T08:41:00+01:00",
+                  "service": "Regionale 3966",
+                  "operator": "Trenitalia"
                 },
                 {
                   "from": "Ferrara",
                   "to": "Bologna",
                   "departure": "2026-12-03T18:05:00+01:00",
-                  "arrival": "2026-12-03T18:45:00+01:00"
+                  "arrival": "2026-12-03T18:45:00+01:00",
+                  "service": "Regionale 3983",
+                  "operator": "Trenitalia"
                 }
               ]
             }
@@ -1365,13 +1381,17 @@
                   "from": "Bologna",
                   "to": "Firenze",
                   "departure": "2026-12-04T06:27:00+01:00",
-                  "arrival": "2026-12-04T07:04:00+01:00"
+                  "arrival": "2026-12-04T07:04:00+01:00",
+                  "service": "Frecciarossa 9505",
+                  "operator": "Trenitalia"
                 },
                 {
                   "from": "Firenze",
                   "to": "Bologna",
                   "departure": "2026-12-04T20:05:00+01:00",
-                  "arrival": "2026-12-04T20:43:00+01:00"
+                  "arrival": "2026-12-04T20:43:00+01:00",
+                  "service": "Italo",
+                  "operator": "Italo"
                 }
               ]
             }
@@ -1411,13 +1431,17 @@
                   "from": "Bologna",
                   "to": "Modena",
                   "departure": "2026-12-05T07:23:00+01:00",
-                  "arrival": "2026-12-05T07:55:00+01:00"
+                  "arrival": "2026-12-05T07:55:00+01:00",
+                  "service": "Regionale 19584",
+                  "operator": "Trenitalia"
                 },
                 {
                   "from": "Modena",
                   "to": "Bologna",
                   "departure": "2026-12-05T17:52:00+01:00",
-                  "arrival": "2026-12-05T18:20:00+01:00"
+                  "arrival": "2026-12-05T18:20:00+01:00",
+                  "service": "Regionale 3933",
+                  "operator": "Trenitalia"
                 }
               ]
             }
