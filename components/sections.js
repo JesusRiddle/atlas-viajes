@@ -55,7 +55,7 @@ window.AtlasSections = function (ctx) {
             <h3>${esc(p.reservationTitle || 'Reservas críticas')}</h3>
             ${p.reservationNote ? `<p class="reservation-intro">${esc(p.reservationNote)}</p>` : ''}
             <div class="reservation-groups">${groups}</div>
-        </article><details class="panel" style="margin-top:20px"><summary><strong>${esc(p.toursTitle || 'Tours locales que aportan valor')}</strong></summary><p>${esc(p.tourIntro)}</p><div class="stay-list">${t.tours.map(([city, note]) => `<p><strong>${esc(city)}</strong><span>${esc(note)}</span></p>`).join('')}</div><p class="tiny">${esc(p.tourNote)}</p></details>`;
+        </article>`;
     }
     const dateFormatter = new Intl.DateTimeFormat('es-MX', {
         day: 'numeric',
