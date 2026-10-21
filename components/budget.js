@@ -101,7 +101,9 @@ window.AtlasBudget = (() => {
         const knownTotalMXN = round(entries.reduce((sum, e) => sum + (e.mxn ?? 0), 0));
         const pending = entries.filter(e => e.mxn === null).map(e => e.id);
         // Las partidas heredadas aún no migradas no pueden darse por contabilizadas.
-        const migrationPending = Boolean(trip.knownCosts?.length || trip.hotels?.length);
+        const coveredHotels = new Set((trip.expenses || []).map(item => item.hotelId).filter(Boolean));
+        const migrationPending = (trip.hotels || []).some(hotel => !coveredHotels.has(hotel.id)) ||
+            Boolean(trip.knownCosts?.length && !(trip.expenses || []).length);
         return {
             knownTotalMXN, partial: pending.length > 0 || issues.length > 0 || migrationPending,
             migrationPending, pending, issues, byCategory, byDay, entries,
