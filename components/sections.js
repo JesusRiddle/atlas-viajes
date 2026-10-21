@@ -7,7 +7,26 @@ window.AtlasSections = function (ctx) {
         return f ? `<p class="family-label">${esc(f.label)}<span>${esc(f.note)}</span></p>` : '';
     }
     function experiencePanel(t) {
-        return `<article class="panel experience-panel"><h3>Así se siente este viaje</h3><ul class="experience-list">${t.experiences.map(x => `<li>${esc(x)}</li>`).join('')}</ul><p class="tiny">${esc(t.profile.why)}</p></article>`;
+        const experiences = (t.experiences || []).map((item, index) => {
+            const isObject = item && typeof item === 'object';
+            const city = isObject ? item.city : '';
+            const description = isObject ? item.description : item;
+            return `<li class="experience-card">
+                <div class="experience-card-meta">${city ? `<span>${esc(city)}</span>` : '<span>Experiencia destacada</span>'}<small>${String(index + 1).padStart(2, '0')}</small></div>
+                <p>${esc(description || '')}</p>
+            </li>`;
+        }).join('');
+        const note = t.profile?.why ? `<div class="experience-note">
+            <div class="experience-note-heading"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17V5h16v12M2 17h20M7 21h10M8 9h8M8 13h5"/></svg><strong>Un viaje con pocas maletas</strong></div>
+            <p>${esc(t.profile.why)}</p>
+        </div>` : '';
+        return `<article class="panel experience-panel">
+            <div class="experience-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3ZM19 17l.7 2.3L22 20l-2.3.7L19 23l-.7-2.3L16 20l2.3-.7L19 17Z"/></svg><span>Lo que hace especial este viaje</span></div>
+            <h3>Experiencias para recordar.</h3>
+            <p class="experience-intro">Arte extraordinario, ciudades históricas y experiencias que dan identidad al recorrido.</p>
+            <ul class="experience-list">${experiences}</ul>
+            ${note}
+        </article>`;
     }
     function reservationPlanning(t) {
         if (!t.planningDetails) return '';
