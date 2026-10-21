@@ -130,7 +130,7 @@ window.AtlasTrip = function (ctx) {
             `<p class="eyebrow orange">Una persona · MXN</p>`,
             `<h2>Lo que cuesta el viaje.</h2>`,
             `</div>`,
-            `<p>Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.</p>`,
+            `<p>${t.majorTransport?.length ? 'Costos registrados y convertidos a MXN. El desglose es parcial mientras existan partidas por cotizar.' : 'Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.'}</p>`,
             `</div>`,
             `${t.majorTransport?.length ? window.AtlasBudgetTable.render(t) : ''}${!t.majorTransport?.length ? '<div class="budgetgrid"><div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Desde</th><th>Hasta</th></tr></thead><tbody>' + t.costs.map(x => '<tr><td>' + esc(x[0]) + '</td><td>' + (x[1] === null ? 'Por cotizar' : money(x[1])) + '</td><td>' + (x[2] === null ? 'Por cotizar' : money(x[2])) + '</td></tr>').join('') + '<tr class="totalrow"><td>' + (t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo') + '</td><td>' + money(low) + '</td><td>' + money(high) + '</td></tr></tbody></table></div></div>' + knownCostPanel(t) : ''}</section>`,
             `<section class="section wrap" id="fuentes">`,
