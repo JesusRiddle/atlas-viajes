@@ -22,7 +22,7 @@ window.AtlasTransportModel = (() => {
     // Las fechas deben contener el desfase UTC explícito: 2026-11-26T00:05:00-06:00.
     function instant(value) {
         if (typeof value !== 'string' ||
-            !/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}(?::\\d{2})?(?:Z|[+-]\\d{2}:\\d{2})$/.test(value)) return null;
+            !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2})?(?:Z|[+-]\d{2}:\d{2})$/.test(value)) return null;
         const time = Date.parse(value);
         return Number.isFinite(time) ? time : null;
     }
