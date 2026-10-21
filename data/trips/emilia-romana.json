@@ -959,8 +959,10 @@
               "direction": "oneway",
               "segments": [
                 {
-                  "from": "Milano",
-                  "to": "Bologna"
+                  "from": "Milano Centrale",
+                  "to": "Bologna Centrale",
+                  "departure": "2026-11-29T08:30:00+01:00",
+                  "arrival": "2026-11-29T09:34:00+01:00"
                 }
               ]
             }
@@ -968,7 +970,7 @@
           "fares": [
             {
               "id": "reference",
-              "name": "Tarifa de referencia",
+              "name": "Standard · referencia",
               "price": {
                 "amount": 22.9,
                 "currency": "EUR"
@@ -977,7 +979,40 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar.",
+          "provider": "Trenitalia · Frecciarossa 9613"
+        },
+        {
+          "id": "B",
+          "provider": "Italo · directo",
+          "status": "quoted",
+          "selectedFare": "smart",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Bologna Centrale",
+                  "departure": "2026-11-29T09:40:00+01:00",
+                  "arrival": "2026-11-29T10:54:00+01:00"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "smart",
+              "name": "Smart · referencia",
+              "price": {
+                "amount": 25.9,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Alternativa ya contemplada en la movilidad del día 4; tarifa orientativa, sin reserva. Billetes no intercambiables entre operadores."
         }
       ]
     },
