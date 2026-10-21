@@ -40,21 +40,24 @@ window.AtlasMajorTransport = (() => {
         }).filter(Boolean).join(' · ') || 'Equipaje por confirmar';
     }
     function journeyLabel(journey) {
-        const s = model.journeySummary(journey);
+        const summary = model.journeySummary(journey);
         const first = journey.segments[0], last = journey.segments.at(-1);
-        const direction = journey.direction === 'return' ? 'Regreso' :
-            journey.direction === 'outbound' ? 'Ida' : journey.direction === 'roundtrip' ? 'Ida y vuelta' : 'Trayecto';
         const roundtrip = journey.direction === 'roundtrip';
-        return '<div class="mt-journey"><strong>' + esc(direction) + ': ' + esc(s.from) +
-            (roundtrip ? ' ↔ ' : ' → ') + esc(roundtrip ? journey.segments[0]?.to : s.to) +
-            '</strong><span>' + (roundtrip ? journey.segments.length + ' trayectos · horarios por confirmar'
-                : esc(clock(first?.departure)) + ' – ' + esc(clock(last?.arrival)) +
-                  ' · ' + minutes(s.durationMinutes) + ' · ' + s.stops +
-                  (s.stops === 1 ? ' escala' : ' escalas') +
-                  (s.connectionPoints.length ? ' (' + esc(s.connectionPoints.join(', ')) + ')' : '')) +
+        if (roundtrip) {
+            return '<div class="mt-journey"><strong>Ida y vuelta · ' +
+                journey.segments.length + ' trayectos</strong><span>Horarios cotizados · sujetos a confirmación</span></div>';
+        }
+        const direction = journey.direction === 'return' ? 'Regreso' :
+            journey.direction === 'outbound' ? 'Ida' : 'Trayecto';
+        return '<div class="mt-journey"><strong>' + esc(direction) + ': ' + esc(summary.from) +
+            ' → ' + esc(summary.to) + '</strong><span>' +
+            esc(clock(first?.departure)) + ' – ' + esc(clock(last?.arrival)) +
+            ' · ' + minutes(summary.durationMinutes) + ' · ' + summary.stops +
+            (summary.stops === 1 ? ' escala' : ' escalas') +
+            (summary.connectionPoints.length ? ' (' + esc(summary.connectionPoints.join(', ')) + ')' : '') +
             '</span></div>';
     }
-    const airportNames = {
+        const airportNames = {
         MEX: 'Ciudad de México',
         MAD: 'Madrid-Barajas',
         MXP: 'Milano Malpensa',
@@ -74,7 +77,7 @@ window.AtlasMajorTransport = (() => {
         const segments = journey.segments || [];
         return segments.map((seg, i) => {
             const connection = i && segments[i - 1].arrival && seg.departure
-                ? '<p class="mt-connection">Escala: ' +
+                ? '<p class="mt-connection">' + (journey.direction === 'roundtrip' && !isFlight ? 'Tiempo en destino: ' : 'Escala: ') +
                     minutes(model.durationMinutes(segments[i - 1].arrival, seg.departure)) + '</p>' : '';
             const route = isFlight ? airportLabel(seg.from) + ' → ' + airportLabel(seg.to)
                 : '<strong>' + esc(seg.from) + '</strong> → <strong>' + esc(seg.to) + '</strong>';
