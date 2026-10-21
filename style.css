@@ -1016,3 +1016,8 @@ html{scroll-padding-top:78px}
 #traslados .mt-flight-list .mt-segment{padding-left:13px;padding-right:8px}
 #traslados .mt-flight-list .mt-connection{margin:4px 0 4px 13px}
 #traslados .mt-flight-list .mt-segment-route strong{display:inline;font-size:inherit;line-height:inherit;margin:0;font-weight:700}
+
+/* Trenes: operador destacado antes de horarios y duración. */
+#traslados .mt-train-meta{display:flex;justify-content:flex-end;align-items:baseline;flex-wrap:wrap;gap:3px 7px;color:var(--muted);font-size:13px;text-align:right}
+#traslados .mt-train-meta strong{color:var(--ink);font-size:inherit;line-height:inherit;font-weight:700}
+@media(max-width:760px){#traslados .mt-train-meta{justify-content:flex-start;text-align:left}}
