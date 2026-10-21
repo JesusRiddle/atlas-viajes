@@ -96,6 +96,19 @@ window.AtlasMajorTransport = (() => {
                 '"><span class="mt-segment-route">' + route + '</span>' + details + '</div>';
         }).join('');
     }
+    function transportKind(type) {
+        const shapes = {
+            flight: '<path d="M21 3 3 10l7 3 3 8 8-18Z"/><path d="m10 13 5-5"/>',
+            train: '<rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 10h14M8 14h2m4 0h2M8 21l2-3m6 3-2-3"/>',
+            bus: '<rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 10h16M7 15h2m6 0h2M7 19v2m10-2v2"/>',
+            ferry: '<path d="M3 16 6 9h12l3 7-9 5-9-5ZM9 9V5h6v4M2 22c2-1 3-1 5 0s3 1 5 0 3-1 5 0 3 1 5 0"/>',
+            default: '<path d="M3 17h18M5 17l3-7h8l3 7M8 10V7h8v3"/><circle cx="8" cy="19" r="1"/><circle cx="16" cy="19" r="1"/>'
+        };
+        const labels = { flight: 'Vuelo', train: 'Tren', bus: 'Bus', ferry: 'Ferry' };
+        const svg = '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+            (shapes[type] || shapes.default) + '</svg>';
+        return '<span class="mt-kind-inner">' + svg + '<span>' + (labels[type] || 'Traslado') + '</span></span>';
+    }
     function card(trip, transport, current) {
         const selection = current[transport.id] || {};
         const optionId = selection.option || transport.selectedOption;
@@ -104,7 +117,7 @@ window.AtlasMajorTransport = (() => {
         const fare = option.fares.find(f => f.id === fareId) || option.fares[0];
         const price = budget.selectedTransportPrice(transport, { option: option.id, fare: fare.id });
         const converted = budget.convert(price, trip.exchangeRates || {});
-        const label = transport.type === 'flight' ? 'Vuelo' : transport.type === 'train' ? 'Tren' : 'Traslado';
+
         const summary = option.journeys.map(journeyLabel).join('');
         const options = transport.options.map(o => '<option value="' + esc(o.id) + '"' +
             (o.id === option.id ? ' selected' : '') + '>Opción ' + esc(o.id) +
@@ -127,7 +140,7 @@ window.AtlasMajorTransport = (() => {
                 segmentDetails(j, transport.type === 'flight') + '</div>';
         }).join('');
         return '<details class="mt-card" data-transport="' + esc(transport.id) + '">' +
-            '<summary><span class="mt-kind">' + esc(label) + '</span>' +
+            '<summary><span class="mt-kind">' + transportKind(transport.type) + '</span>' +
             '<span class="mt-route"><strong>' + esc(transport.title) + '</strong><small>' +
             (transport.type === 'train' ? (transport.day ? 'Día ' + transport.day : '') : esc(option.provider || '') + (transport.day ? ' · Día ' + transport.day : '')) + '</small></span>' +
             '<span class="mt-inline">' + summary + '</span>' +
