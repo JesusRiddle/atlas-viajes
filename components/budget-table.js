@@ -40,22 +40,22 @@ window.AtlasBudgetTable = (() => {
         for (const [key, title] of groups) {
             const items = grouped.get(key) || [];
             // Mantener las partidas aún sin cotizar dentro de su categoría.
-            const pendingLabel = key === 'food' ? 'Alimentación pendiente de desglose' :
-                key === 'other' ? 'Transporte urbano y otros gastos' : null;
+            const pendingLabel = key === 'food' ? 'Pendiente de desglose' :
+                key === 'other' ? 'Pendiente de desglose' : null;
             if (!items.length && !pendingLabel) continue;
             markup.push('<tr class="budget-category"><th colspan="3" scope="rowgroup">' + esc(title) + '</th></tr>');
             if (!items.length) {
-                markup.push('<tr class="budget-pending"><td>' + esc(pendingLabel) +
+                markup.push('<tr class="budget-item budget-pending"><td>' + esc(pendingLabel) +
                     '</td><td></td><td class="budget-amount">Por cotizar</td></tr>');
                 continue;
             }
             for (const item of items) {
-                markup.push('<tr><td>' + esc(item.label) + '</td><td class="budget-amount">' +
+                markup.push('<tr class="budget-item"><td>' + esc(item.label) + '</td><td class="budget-amount">' +
                     esc(original(item.cost)) + '</td><td class="budget-amount">' +
                     (item.mxn === null ? 'Por cotizar / convertir' : pesos(item.mxn)) + '</td></tr>');
             }
             const subtotal = items.reduce((sum, item) => sum + (item.mxn ?? 0), 0);
-            markup.push('<tr class="budget-subtotal"><td>Subtotal · ' + esc(title) +
+            markup.push('<tr class="budget-subtotal"><td>Subtotal' +
                 '</td><td></td><td class="budget-amount">' + pesos(subtotal) +
                 (items.some(x => x.mxn === null) ? ' + pendientes' : '') + '</td></tr>');
         }
