@@ -1010,3 +1010,9 @@ html{scroll-padding-top:78px}
  #traslados .mt-flight-list .mt-segment{grid-template-columns:minmax(0,1fr);gap:2px}
  #traslados .mt-flight-list .mt-flight-meta{justify-content:flex-start;text-align:left}
 }
+
+/* Jerarquía visual de ida y regreso: banda tenue y tramos sangrados. */
+#traslados .mt-flight-list .mt-leg-heading{background:#f1f5f6;border:1px solid var(--line);border-radius:5px;padding:8px 11px;margin:8px 0 5px}
+#traslados .mt-flight-list .mt-segment{padding-left:13px;padding-right:8px}
+#traslados .mt-flight-list .mt-connection{margin:4px 0 4px 13px}
+#traslados .mt-flight-list .mt-segment-route strong{display:inline;font-size:inherit;line-height:inherit;margin:0;font-weight:700}
