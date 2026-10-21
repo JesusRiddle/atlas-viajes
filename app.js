@@ -4,7 +4,7 @@ window.ATLAS_READY.then(() => {
     const photos = window.PHOTOS;
     const main = document.querySelector('main');
     const covers = Object.fromEntries(trips.map(t => [t.id, t.cover]));
-    const stays = Object.fromEntries(trips.map(t => [t.id, t.stays]));
+    const stays = Object.fromEntries(trips.map(t => [t.id, Array.isArray(t.stays) ? t.stays : []]));
     function loadGallery(scope) {
         scope.querySelectorAll('img[data-src]').forEach(image => {
             image.src = image.dataset.src;
