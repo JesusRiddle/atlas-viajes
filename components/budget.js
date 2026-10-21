@@ -72,7 +72,7 @@ window.AtlasBudget = (() => {
             register(item.id, 'transport', cost, dates, item.paidMXN);
         }
         for (const item of trip.expenses || []) {
-            if (item.includedInTransport) continue;
+            if (item.includedInTransport || item.optional) continue;
             register(item.id, item.category || 'other', item.cost, expenseDates(item), item.paidMXN);
         }
         const byDay = Object.fromEntries((trip.days || []).map(d => [d.date, { date: d.date, totalMXN: 0, entries: [], partial: false }]));
