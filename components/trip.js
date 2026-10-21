@@ -90,6 +90,7 @@ window.AtlasTrip = function (ctx) {
             return;
         }
         main.classList.toggle('trip-espana-portugal', t.layoutClass === 'trip-espana-portugal');
+        main.classList.toggle('trip-emilia', t.id === 'emilia-romana');
         document.title = t.name + ' · Atlas de Viajes';
         const [low, high] = sums(t);
         const rank = trips.indexOf(t) + 1;
