@@ -885,11 +885,13 @@
                 {
                   "from": "MEX",
                   "to": "MAD",
+                  "departure": "2026-11-26T00:05:00-06:00",
                   "operator": "Iberia"
                 },
                 {
                   "from": "MAD",
                   "to": "MXP",
+                  "arrival": "2026-11-26T22:10:00+01:00",
                   "operator": "Iberia"
                 }
               ]
@@ -900,11 +902,13 @@
                 {
                   "from": "BLQ",
                   "to": "MAD",
+                  "departure": "2026-12-07T12:25:00+01:00",
                   "operator": "Air Nostrum"
                 },
                 {
                   "from": "MAD",
                   "to": "MEX",
+                  "arrival": "2026-12-07T22:10:00-06:00",
                   "operator": "Iberia"
                 }
               ]
