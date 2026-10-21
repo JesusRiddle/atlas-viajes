@@ -64,7 +64,7 @@ window.AtlasDay = function (ctx) {
                 </div>
                 </div>
                 ${hotel.notes ? `<p class="hotel-checkin-notes"><strong>Nota:</strong> ${esc(hotel.notes)}</p>` : ''}
-                ${hotel.url ? `<p class="hotel-checkin-link"><a href="${esc(hotel.url)}" target="_blank" rel="noopener noreferrer">${esc(hotel.linkLabel || 'Ver alojamiento')}</a></p>` : ''}
+                ${(hotel.links?.length ? hotel.links : hotel.url ? [{url:hotel.url,label:hotel.linkLabel || 'Ver alojamiento'}] : []).length ? `<div class="entity-links hotel-checkin-link">${(hotel.links?.length ? hotel.links : [{url:hotel.url,label:hotel.linkLabel || 'Ver alojamiento'}]).map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)}</a>`).join('')}</div>` : ''}
             </div>
         </aside>`;
     }
