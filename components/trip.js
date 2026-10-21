@@ -98,7 +98,7 @@ window.AtlasTrip = function (ctx) {
             : t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
                 readable(part) + '</div>').join('');
         return '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
-            '<h3>' + overviewIcon('practical') + ' Ritmo y consejos prácticos</h3>' +
+
             '<div class="overview-practical-grid' + (indicators ? ' practical-indicators' : '') + '">' +
             content + '</div></section>';
     }
