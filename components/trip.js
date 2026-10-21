@@ -75,7 +75,7 @@ window.AtlasTrip = function (ctx) {
             solo: { label: 'Muy recomendable', tone: 'green', prefix: 'Muy recomendable. ' },
             pace: { label: 'Moderado–activo', tone: 'orange', prefix: 'Moderado–activo. ' },
             language: { label: 'Fácil', tone: 'green', prefix: '' },
-            currency: { label: 'Tarjetas aceptadas', tone: 'green', prefix: 'Tarjetas ampliamente aceptadas; ' }
+            currency: { label: 'Tarjetas aceptadas', tone: 'green', prefix: '' }
         } : {};
         const badgeMarkup = item => {
             const info = badges[item.id];
