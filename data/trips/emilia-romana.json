@@ -50,13 +50,34 @@
   "climate": "Finales de noviembre y primeros de diciembre pueden traer frío, lluvia y niebla. Los portici de Bologna ayudan durante los paseos; llevar impermeable y calzado cómodo.\n\nConcentrar las vistas exteriores en las horas de luz y confirmar las últimas admisiones de invierno, especialmente en Ravenna y Ferrara. El programa tiene baja dependencia del clima, pero las terrazas y los miradores pueden verse afectados.",
   "solo": "Dos bases turísticas, Milano y Bologna, más una noche técnica en Malpensa. Dejar el equipaje en el alojamiento o consigna al llegar y llevar sólo lo necesario a las excursiones.\n\nRitmo equilibrado / activo, con almuerzos y tiempo para las colecciones. Firenze concentra tres reservas y la subida a Cupola del Brunelleschi por 463 escalones, sin ascensor. San Luca se visita con transporte, sin recorrer todo el portico a pie.\n\nHay tours en italiano, español e inglés según operador. Los traslados entre ciudades se realizan por cuenta propia en tren.",
   "experiences": [
-    "Contemplar L’Ultima Cena de Leonardo da Vinci y la Pietà Rondanini de Michelangelo en Milano.",
-    "Descubrir los portici de Bologna, San Luca y el Teatro Anatomico.",
-    "Leer la historia bizantina en los mosaicos de Ravenna con un guía local.",
-    "Conocer Teatro Farnese y buscar La Scapiliata en la Galleria Nazionale de Parma.",
-    "Recorrer Castello Estense, Palazzo Schifanoia y la exposición de Palazzo dei Diamanti en Ferrara.",
-    "Ver el David, subir a la Cupola del Brunelleschi y dedicar 2.5–3 horas a Gallerie degli Uffizi en Firenze.",
-    "Explorar Modena entre románico, gastronomía y Museo Enzo Ferrari."
+    {
+      "city": "Milano",
+      "description": "Contemplar La Última Cena de Leonardo da Vinci y la última escultura de Michelangelo."
+    },
+    {
+      "city": "Bologna",
+      "description": "Caminar bajo sus pórticos históricos y descubrir San Luca y el Teatro Anatómico."
+    },
+    {
+      "city": "Ravenna",
+      "description": "Descifrar la historia del Imperio bizantino a través de sus mosaicos."
+    },
+    {
+      "city": "Parma",
+      "description": "Admirar el Teatro Farnese y las obras maestras de la Galería Nacional."
+    },
+    {
+      "city": "Ferrara",
+      "description": "Explorar palacios renacentistas y la exposición de grandes maestros en Palazzo dei Diamanti."
+    },
+    {
+      "city": "Firenze",
+      "description": "Contemplar el David, ascender a la cúpula de Brunelleschi y recorrer los Uffizi."
+    },
+    {
+      "city": "Modena",
+      "description": "Descubrir su patrimonio románico, gastronomía y legado automovilístico."
+    }
   ],
   "tips": [
     "Presupuesto preliminar: $65,000–$90,000 MXN por persona. Actualmente hay alrededor de $44.8k–$45.2k MXN en partidas principales ya identificadas, pero todavía faltan entradas, transporte local, alimentación y otros gastos.",
