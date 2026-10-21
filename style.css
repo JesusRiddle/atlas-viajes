@@ -1134,3 +1134,16 @@ html{scroll-padding-top:78px}
 #costes .budget-section-panel .section-title{margin-bottom:22px}
 @media(max-width:680px){#costes .budget-section-panel{padding:16px}}
 @media print{#costes .budget-section-panel{padding:0;border:0;background:white}}
+
+/* Presupuesto: dar prioridad al título y compactar la descripción lateral. */
+@media(min-width:761px){
+  #costes .budget-section-panel .section-title{display:grid;grid-template-columns:minmax(0,1fr) minmax(210px,32%);align-items:center;gap:24px}
+  #costes .budget-section-panel .section-title>div{min-width:0}
+  #costes .budget-section-panel .section-title h2{font-size:clamp(24px,2.4vw,30px);white-space:nowrap}
+  #costes .budget-section-panel .section-title>p{font-size:13px;line-height:1.5;margin:0;max-width:none}
+}
+@media(max-width:760px){
+  #costes .budget-section-panel .section-title{display:block}
+  #costes .budget-section-panel .section-title h2{white-space:normal}
+  #costes .budget-section-panel .section-title>p{font-size:13px;line-height:1.5;margin-top:10px}
+}
