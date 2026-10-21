@@ -1048,3 +1048,8 @@ html{scroll-padding-top:78px}
 .seasonality-section .seasonality-kicker{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
 .seasonality-section .seasonality-heading-icon{width:17px;height:17px;flex:none}
 .seasonality-section #seasonality-heading{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0;color:var(--ink)}
+
+/* Encabezados editoriales: itinerario y presupuesto. */
+#dias .atlas-section-kicker,#costes .atlas-section-kicker{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
+#dias .atlas-section-kicker svg,#costes .atlas-section-kicker svg{width:17px;height:17px;flex:none}
+#dias .section-title h2,#costes .section-title h2{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0;color:var(--ink)}
