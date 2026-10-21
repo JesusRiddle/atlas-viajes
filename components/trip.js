@@ -139,12 +139,13 @@ window.AtlasTrip = function (ctx) {
             `<div>`,
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
             `<strong>${price(t)}</strong>`,
-            `<p>MXN · una persona · habitación privada · viaje completo</p>`,
-            `${t.exchangeRates && t.exchangeRateSnapshot ? '<p class="budget-exchange">Tipo de cambio de referencia · ' +
-                esc(t.exchangeRateSnapshot.date) + '<span>€1 = $' + Number(t.exchangeRates.EUR).toFixed(4) +
-                ' MXN · US$1 = $' + Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span></p>' : ''}`,
-            `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
-            `</div>`,
+            `<p class="budget-context">MXN · 1 persona · viaje completo</p>`,
+            `<a class="budget-detail-link" href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
+            `${t.exchangeRates && t.exchangeRateSnapshot ? '<details class="budget-exchange"><summary>Tipos de cambio · ' +
+                esc(t.exchangeRateSnapshot.date) + '</summary><div class="budget-exchange-values"><span>EUR 1 = $' +
+                Number(t.exchangeRates.EUR).toFixed(4) + ' MXN</span><span>USD 1 = $' +
+                Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span></div></details>' : ''}`,
+                        `</div>`,
             `</aside>`,
             `${t.id === 'emilia-romana' ? climateCard(t) + '</div>' : ''}`,
             `</div>`,
