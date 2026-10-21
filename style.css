@@ -716,3 +716,14 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 #plan .overview-editorial .overview-intro{align-self:start}
 #plan .overview-editorial .overview-side{align-self:start}
 #plan .overview-practical-grid .practical-item{padding:0;margin:0}
+
+/* Panorama: respiración vertical sin forzar la altura de la columna. */
+@media(min-width:1001px){
+  #plan .overview-intro{padding:27px 25px 28px}
+  #plan .overview-heading{margin:9px 0 16px}
+  #plan .overview-intro .lead{line-height:1.72}
+  #plan .overview-route-block{margin-top:23px;padding-top:19px}
+  #plan .overview-intro .overview-stays-inline{margin-top:25px;padding-top:20px}
+  #plan .overview-intro .overview-stays-inline .overview-stays-heading{margin-bottom:14px}
+  #plan .overview-intro .overview-stays-inline .basepill{padding:12px 12px}
+}
