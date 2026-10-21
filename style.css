@@ -966,3 +966,12 @@ html{scroll-padding-top:78px}
 .trip-map-section .trip-map-cities{border-top:0;padding-top:0}
 .trip-map-section .trip-map-cities .map-city-list{margin-top:0}
 @media screen and (max-width:760px){.trip-map-section .trip-map-cities{border-top:0;padding-top:0}}
+
+/* Pie del mapa: instrucciones a la izquierda y leyenda a la derecha. */
+.trip-map-section .trip-map-footer{display:flex;align-items:center;justify-content:space-between;gap:12px 22px;margin-top:8px}
+.trip-map-section .trip-map-footer .map-status{flex:1;min-width:0;margin:0}
+.trip-map-section .trip-map-footer .map-legend{flex:none;display:flex;justify-content:flex-end;flex-wrap:wrap;gap:7px 15px;margin:0}
+@media(max-width:760px){
+ .trip-map-section .trip-map-footer{align-items:flex-start;flex-direction:column;gap:8px}
+ .trip-map-section .trip-map-footer .map-legend{justify-content:flex-start}
+}
