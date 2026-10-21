@@ -2043,5 +2043,27 @@
       }
     }
   },
-  "heroEyebrow": "Italia en tren: siete ciudades desde Milano y Bologna"
+  "heroEyebrow": "Italia en tren: siete ciudades desde Milano y Bologna",
+  "practicalIndicators": [
+    {
+      "id": "solo",
+      "title": "Viajar solo",
+      "text": "Muy recomendable. Ciudades fáciles de recorrer y bien conectadas. Precaución con carteristas."
+    },
+    {
+      "id": "pace",
+      "title": "Ritmo",
+      "text": "Moderado–activo. Excursiones frecuentes en tren, varias salidas temprano y bastante caminata. Pocos cambios de hotel."
+    },
+    {
+      "id": "language",
+      "title": "Idioma",
+      "text": "Italiano (principal). Inglés ampliamente utilizado en zonas turísticas."
+    },
+    {
+      "id": "currency",
+      "title": "Moneda local",
+      "text": "Euro (€). Tarjetas ampliamente aceptadas; llevar algo de efectivo."
+    }
+  ]
 }
