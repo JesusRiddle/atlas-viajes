@@ -1,7 +1,7 @@
 // Cálculo financiero de datos estructurados; independiente del DOM y del formato visual.
 window.AtlasBudget = (() => {
     'use strict';
-    const transportModel = window.AtlasTransportModel;
+    // El cálculo permanece independiente de la interfaz y de la persistencia.
     const validMoney = x => x && typeof x === 'object' && Number.isFinite(x.amount) &&
         x.amount >= 0 && typeof x.currency === 'string' && /^[A-Z]{3}$/.test(x.currency);
     const round = amount => Math.round((amount + Number.EPSILON) * 100) / 100;
@@ -101,7 +101,7 @@ window.AtlasBudget = (() => {
         const knownTotalMXN = round(entries.reduce((sum, e) => sum + (e.mxn ?? 0), 0));
         const pending = entries.filter(e => e.mxn === null).map(e => e.id);
         // Las partidas heredadas aún no migradas no pueden darse por contabilizadas.
-        const migrationPending = Boolean((trip.knownCosts?.length || trip.hotels?.length) && !trip.expenses?.length);
+        const migrationPending = Boolean(trip.knownCosts?.length || trip.hotels?.length);
         return {
             knownTotalMXN, partial: pending.length > 0 || issues.length > 0 || migrationPending,
             migrationPending, pending, issues, byCategory, byDay, entries,
@@ -111,5 +111,10 @@ window.AtlasBudget = (() => {
         };
     }
 
-    return { convert, selectedTransportPrice, transportComparison, nightsByDate, expenseDates, summary };
+    // Recalcula con las selecciones temporales; sin mutar el JSON original.
+    function currentSummary(trip) {
+        return summary(trip, window.AtlasSelections?.get(trip.id) || {});
+    }
+
+    return { convert, selectedTransportPrice, transportComparison, nightsByDate, expenseDates, summary, currentSummary };
 })();
