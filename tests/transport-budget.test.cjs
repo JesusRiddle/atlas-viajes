@@ -331,3 +331,20 @@ test('JSON modular sin resúmenes ferroviarios ni notas cambiarias heredadas', (
     assert.equal(trip.days.length, 12);
     assert.equal(trip.majorTransport.length, 7);
 });
+
+test('limpieza preserva las once noches y el presupuesto de referencia', () => {
+    const dates = trip.days.slice(0, -1);
+    assert.equal(dates.length, 11);
+    for (const day of dates) {
+        const hotel = trip.hotels.find(item => item.id === day.hotel);
+        assert.ok(hotel, 'Hospedaje ausente en día ' + day.n);
+        assert.ok(day.date >= hotel.checkIn && day.date < hotel.checkOut,
+            'Fecha fuera de estancia en día ' + day.n);
+    }
+    assert.equal(trip.days.at(-1).hotel, undefined);
+    assert.deepEqual([...budget.summary(trip).planningRangeMXN], [65000, 90000]);
+    assert.equal(trip.exchangeRates.EUR, 20.6451);
+    const snapshot = JSON.stringify(trip);
+    budget.currentSummary(trip);
+    assert.equal(JSON.stringify(trip), snapshot);
+});
