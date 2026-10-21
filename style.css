@@ -634,3 +634,7 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 #traslados .mt-total-line strong{white-space:nowrap}
 #traslados .mt-total-known{border-top:1px solid var(--line);padding-top:12px;margin-top:5px}
 #traslados .mt-total-notice{margin:7px 0 0;color:var(--muted);font-size:12px;line-height:1.55}
+
+/* Cotizaciones de referencia del presupuesto preliminar. */
+.budget-teaser .budget-exchange{border-top:1px solid #ffffff35;padding-top:11px;margin-top:12px;font-size:12px;color:#d2e0e4;line-height:1.55}
+.budget-teaser .budget-exchange span{display:block;color:#fff;font-weight:600;font-size:12px}
