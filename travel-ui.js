@@ -7,7 +7,8 @@ function mapSection(t){
 const points=window.ATLAS_MAP_POINTS[t.id]||[];
 const icon='<svg class="trip-map-heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/></svg>';
 return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
-<div class="trip-map-heading" id="map-title">${icon}<span>TU VIAJE EN EL MAPA</span></div>
+<div class="trip-map-heading">${icon}<span>EXPLORA TU DESTINO</span></div>
+<h3 class="trip-map-title" id="map-title">Tu viaje en el mapa.</h3>
 <p class="trip-map-description">Descubre las ciudades de tu recorrido y explora cada destino en el mapa interactivo.</p>
 <div class="map-legend"><span>Base para dormir</span><span>Visita del recorrido</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div>
 <div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>
