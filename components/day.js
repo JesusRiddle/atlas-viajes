@@ -100,11 +100,12 @@ window.AtlasDay = function (ctx) {
                 const journeys = option.journeys.filter(j => j.direction === 'roundtrip' ||
                     j.segments.some(seg => seg.departure?.startsWith(d.date)));
                 const routes = journeys.map(j => {
-                    const first = j.segments[0], last = j.segments.at(-1);
                     const hour = date => date ? date.slice(11, 16) : '';
-                    return '<div class="day-transport-route">' + esc(first.from + ' → ' + last.to) +
-                        (hour(first.departure) ? ' · ' + esc(hour(first.departure)) : '') +
-                        (hour(last.arrival) ? '–' + esc(hour(last.arrival)) : '') + '</div>';
+                    return j.segments.map(seg =>
+                        '<div class="day-transport-route">' + esc(seg.from + ' → ' + seg.to) +
+                        (hour(seg.departure) ? ' · ' + esc(hour(seg.departure)) : '') +
+                        (hour(seg.arrival) ? '–' + esc(hour(seg.arrival)) : '') + '</div>'
+                    ).join('');
                 }).join('');
                 const price = window.AtlasBudget.selectedTransportPrice(item, current);
                 const mxn = window.AtlasBudget.convert(price, t.exchangeRates || {});
