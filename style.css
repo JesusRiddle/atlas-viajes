@@ -671,3 +671,12 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 .budget-ledger .totalrow td{font-size:16px;font-weight:700}
 .budget-ledger .budget-range{border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:14px}
 @media(max-width:680px){.budget-ledger table{font-size:12px}.budget-ledger .budget-item td,.budget-ledger .budget-subtotal td{padding:9px 10px;font-size:12px}.budget-ledger .budget-category th{font-size:15px;padding:11px 10px 10px}.budget-ledger .totalrow td{font-size:14px}}
+
+/* Consejos compactos para el viaje modular de Emilia-Romagna. */
+.factgrid-compact{gap:18px;margin-top:24px}
+.factgrid-compact article{min-width:0;border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:6px;padding:18px 20px;background:#fff}
+.factgrid-compact h3{margin:0 0 10px;font-size:17px}
+.factgrid-compact .fact-copy p{font-size:14px;line-height:1.6;margin:9px 0 0}
+.factgrid-compact .fact-copy p:first-child{margin-top:0}
+@media(max-width:680px){.factgrid-compact{gap:12px}.factgrid-compact article{padding:15px 16px}}
+@media print{.factgrid-compact article{break-inside:avoid}}
