@@ -77,14 +77,6 @@
       "description": "Descubrir su patrimonio románico, gastronomía y legado automovilístico."
     }
   ],
-  "tips": [
-    "Presupuesto preliminar: $65,000–$90,000 MXN por persona. Actualmente hay alrededor de $44.8k–$45.2k MXN en partidas principales ya identificadas, pero todavía faltan entradas, transporte local, alimentación y otros gastos.",
-    "Once noches: Malpensa 1, Milano 2 y Bologna 8. Mantener la misma habitación en Bologna del 29 de noviembre al 7 de diciembre.",
-    "MEX 00:05 del jueves 26 implica llegar al aeropuerto el miércoles 25 por la noche.",
-    "Coordinar primero la franja de Cupola del Brunelleschi y después Accademia y Uffizi; los tres son imprescindibles.",
-    "Ferrara requiere comprobar la última entrada de Palazzo Schifanoia y coordinarla con Castello Estense y las 1.5–2 h de Palazzo dei Diamanti.",
-    "No hay vuelos, hoteles, trenes ni entradas presentados como reservados. Los horarios propuestos están sujetos a disponibilidad."
-  ],
   "sources": [
     [
       "Cenacolo Vinciano · entradas septiembre–diciembre 2026",
@@ -1728,33 +1720,6 @@
       ]
     }
   ],
-  "railSummary": [
-    [
-      "Milano → Bologna",
-      "€22.90 (≈ $467 MXN)"
-    ],
-    [
-      "Bologna ↔ Ravenna",
-      "€17.00 (≈ $347 MXN)"
-    ],
-    [
-      "Bologna ↔ Parma",
-      "€17.00 (≈ $347 MXN)"
-    ],
-    [
-      "Bologna ↔ Ferrara",
-      "€11.00 (≈ $224 MXN)"
-    ],
-    [
-      "Bologna ↔ Firenze",
-      "€26.80 (≈ $546 MXN)"
-    ],
-    [
-      "Bologna ↔ Modena",
-      "€9.00 (≈ $184 MXN)"
-    ]
-  ],
-  "railTotal": "€103.70 (≈ $2,114 MXN)",
   "ticketNotes": [
     [
       "Regionale",
@@ -1922,10 +1887,7 @@
     "Duomo",
     "David"
   ],
-  "costExclusions": "Este subtotal sólo suma vuelos, los tres alojamientos, trenes interurbanos y las entradas principales de Firenze. No suma las tarifas de otras visitas ya detalladas en los días, alimentación, transporte urbano, Malpensa Express, Marconi Express, taxis, tours, compras ni posibles tasas de alojamiento o cambios de tarifa. Es parcial; el presupuesto global sigue siendo $65,000–$90,000 MXN por persona, preliminar.",
-  "exchangeNote": "Equivalencias informativas con la referencia acordada el 8 de octubre de 2026: €1 ≈ $20.39 MXN. No es una tarifa garantizada de banco o tarjeta; el importe real puede variar al comprar.",
   "cover": "italy16-duomo",
-  "stays": [],
   "mapPoints": [
     {
       "name": "Milano",
@@ -2013,7 +1975,6 @@
   "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",
   "heroLodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta provisional)",
   "budgetPreliminary": true,
-  "railCurrencyNote": "Equivalencias MXN aproximadas.",
   "cardHighlights": [
     "Milano",
     "Firenze",
@@ -2037,12 +1998,6 @@
     "Firenze"
   ],
   "routeHighlights": true,
-  "boldCityNames": [
-    "Milano",
-    "Firenze",
-    "Malpensa",
-    "Moxy"
-  ],
   "emphasisStyle": true,
   "linkRailInText": true,
   "placeDescriptions": {
@@ -2070,7 +2025,6 @@
     "italy16-compianto": "Detalle del Cristo yacente del Compianto de Niccolò dell’Arca en Santa Maria della Vita, Bologna.",
     "emilia-porticos": "Galerías cubiertas acompañan el paseo por Bologna entre comercios y edificios históricos."
   },
-  "railExclusions": "Trenes principales elegidos; excluye transporte urbano, taxis y Marconi Express.",
   "hotels": [
     {
       "id": "hotel-1",
