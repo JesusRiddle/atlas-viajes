@@ -727,3 +727,58 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
   #plan .overview-intro .overview-stays-inline .overview-stays-heading{margin-bottom:14px}
   #plan .overview-intro .overview-stays-inline .basepill{padding:12px 12px}
 }
+
+/* Desktop QA: sistema visual coherente para las secciones del itinerario modular. */
+@media (min-width:1001px){
+  #plan .overview-editorial{column-gap:20px;row-gap:18px}
+  #plan .overview-editorial .overview-side{gap:18px}
+  #plan .overview-intro .overview-stays-inline .baseroute{align-items:stretch}
+  #plan .overview-intro .overview-stays-inline .basepill{height:100%}
+  #plan .overview-practical{margin-top:24px;margin-bottom:32px}
+}
+#plan .overview-climate-card,#plan .overview-practical,#traslados .mt-card,.budget-ledger{
+  border-color:var(--line);
+}
+#plan .overview-climate-card h3,#plan .overview-practical h3{line-height:1.35}
+#plan .overview-practical-grid{column-gap:34px;row-gap:18px}
+#plan .overview-practical-grid .practical-item{line-height:1.65}
+#plan .overview-practical-grid .practical-item strong{font-weight:700}
+#plan .overview-climate-card .fact-copy p{line-height:1.65}
+.trip-map-section .map-legend{flex-wrap:wrap;line-height:1.5}
+.trip-map-section .map-city-list{row-gap:9px}
+.trip-map-section .map-city-list a{min-height:30px;align-items:center;transition:border-color .18s ease,background-color .18s ease}
+#traslados .mt-list{gap:12px}
+#traslados .mt-card{transition:border-color .18s ease,box-shadow .18s ease}
+#traslados .mt-card[open]{border-color:#bdccd1;box-shadow:0 7px 23px rgba(16,42,51,.045)}
+#traslados .mt-card>summary{min-height:76px}
+#traslados .mt-card>summary:focus-visible{outline-offset:-3px}
+#traslados .mt-card[open]>summary{background:#f7f9fa}
+#traslados .mt-route strong{font-weight:700;line-height:1.45}
+#traslados .mt-inline{gap:5px}
+#traslados .mt-journey{font-size:12px;line-height:1.5}
+#traslados .mt-journey strong{font-size:12px}
+#traslados .mt-journey span{font-size:12px}
+#traslados .mt-details{padding:18px 20px 20px}
+#traslados .mt-segment{padding:9px 0;align-items:baseline;line-height:1.55}
+#traslados .mt-segment:last-child{border-bottom:0}
+#traslados .mt-selectors{gap:14px}
+#traslados .mt-selectors label{font-size:13px;font-weight:600}
+#traslados .mt-baggage{line-height:1.6;padding:12px 14px}
+#traslados .mt-note,#traslados .mt-footnote{line-height:1.6}
+.budget-ledger table{line-height:1.5}
+.budget-ledger .budget-item td{vertical-align:top}
+.budget-ledger .budget-category th{letter-spacing:0}
+.budget-ledger .budget-subtotal td{vertical-align:middle}
+.budget-ledger .budget-range{line-height:1.6}
+@media (max-width:850px){
+  #traslados .mt-card>summary{min-height:0}
+  #traslados .mt-details{padding:14px 16px 16px}
+}
+@media (max-width:680px){
+  #traslados .mt-segment{flex-wrap:wrap;gap:3px}
+  #traslados .mt-segment small{text-align:left}
+  #plan .overview-practical-grid{row-gap:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  #traslados .mt-card,.trip-map-section .map-city-list a{transition:none}
+}
