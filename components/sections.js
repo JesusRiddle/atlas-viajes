@@ -46,6 +46,7 @@ window.AtlasSections = function (ctx) {
                         <div class="reservation-item-copy">
                             ${label ? `<strong>${esc(label)}</strong>` : ''}
                             <p>${esc(description || '')}</p>
+                            ${structured && item.links?.length ? `<div class="entity-links">${item.links.map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)}</a>`).join('')}</div>` : ''}
                         </div>
                     </li>`;
                 }).join('')}</ol>
@@ -96,7 +97,7 @@ window.AtlasSections = function (ctx) {
             ${h.rateConditions ? `<p class="hotel-rate-conditions hotel-icon-line">${hotelIcon('conditions')}<span>${esc(h.rateConditions)}</span></p>` : ''}
             ${h.status ? `<p class="hotel-status"><strong>Estado:</strong> ${esc(h.status)}</p>` : ''}
             ${h.notes ? `<p class="hotel-notes"><strong>Nota:</strong> ${esc(h.notes)}</p>` : ''}
-            ${h.url ? `<a class="hotel-link hotel-icon-line" href="${esc(h.url)}" target="_blank" rel="noopener">${hotelIcon('link')}<span>${esc(h.linkLabel || 'Ver alojamiento')}</span></a>` : ''}
+            ${(h.links?.length ? h.links : h.url ? [{label:h.linkLabel || 'Ver alojamiento',url:h.url}] : []).length ? `<div class="entity-links hotel-entity-links">${(h.links?.length ? h.links : [{label:h.linkLabel || 'Ver alojamiento',url:h.url}]).map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${hotelIcon('link')}<span>${esc(link.label)}</span></a>`).join('')}${h.mapsUrl ? `<a href="${esc(h.mapsUrl)}" target="_blank" rel="noopener noreferrer">${hotelIcon('location')}<span>Google Maps</span></a>` : ''}</div>` : ''}
         </article>`;
     }
 
