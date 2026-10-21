@@ -942,16 +942,281 @@
       "status": "quoted"
     },
     {
-      "id": "firenze-entradas-base",
+      "id": "firenze-accademia",
       "category": "activities",
-      "concept": "Firenze · entradas imprescindibles (sin Corridoio)",
+      "concept": "Firenze · Accademia",
       "date": "2026-12-04",
       "cost": {
-        "amount": 83,
+        "amount": 24,
         "currency": "EUR"
       },
-      "status": "quoted",
-      "notes": "Importe conjunto histórico pendiente de desglose individual; Corridoio Vasariano no incluido. No agregar entradas individuales duplicadas hasta sustituir esta partida."
+      "status": "estimated",
+      "notes": "Precio de referencia del itinerario; sin compra"
+    },
+    {
+      "id": "firenze-cupola",
+      "category": "activities",
+      "concept": "Firenze · Brunelleschi Pass",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 30,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio de referencia del itinerario; sin compra"
+    },
+    {
+      "id": "firenze-uffizi",
+      "category": "activities",
+      "concept": "Firenze · Uffizi",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 29,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio de referencia del itinerario; sin compra"
+    },
+    {
+      "id": "ravenna-mosaicos",
+      "category": "activities",
+      "concept": "Ravenna · billete combinado monumentos",
+      "date": "2026-11-30",
+      "cost": {
+        "amount": 14.5,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "parma-pilotta",
+      "category": "activities",
+      "concept": "Parma · Complesso della Pilotta",
+      "date": "2026-12-01",
+      "cost": {
+        "amount": 18,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "parma-battistero",
+      "category": "activities",
+      "concept": "Parma · Battistero y Museo Diocesano",
+      "date": "2026-12-01",
+      "cost": {
+        "amount": 12,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "ferrara-myfe",
+      "category": "activities",
+      "concept": "Ferrara · MyFE Card",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 20,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "modena-ferrari",
+      "category": "activities",
+      "concept": "Modena · Museo Enzo Ferrari",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 27,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "modena-ghirlandina",
+      "category": "activities",
+      "concept": "Modena · Torre Ghirlandina",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 6,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "bologna-marconi",
+      "category": "other",
+      "concept": "Bologna · Marconi Express al aeropuerto",
+      "date": "2026-12-07",
+      "cost": {
+        "amount": 12.8,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Trayecto al aeropuerto, no incluido en vuelos"
+    },
+    {
+      "id": "food-day-01",
+      "category": "food",
+      "concept": "Alimentación · día 1",
+      "date": "2026-11-26",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-02",
+      "category": "food",
+      "concept": "Alimentación · día 2",
+      "date": "2026-11-27",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-03",
+      "category": "food",
+      "concept": "Alimentación · día 3",
+      "date": "2026-11-28",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-04",
+      "category": "food",
+      "concept": "Alimentación · día 4",
+      "date": "2026-11-29",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-05",
+      "category": "food",
+      "concept": "Alimentación · día 5",
+      "date": "2026-11-30",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-06",
+      "category": "food",
+      "concept": "Alimentación · día 6",
+      "date": "2026-12-01",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-07",
+      "category": "food",
+      "concept": "Alimentación · día 7",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-08",
+      "category": "food",
+      "concept": "Alimentación · día 8",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-09",
+      "category": "food",
+      "concept": "Alimentación · día 9",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-10",
+      "category": "food",
+      "concept": "Alimentación · día 10",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-11",
+      "category": "food",
+      "concept": "Alimentación · día 11",
+      "date": "2026-12-06",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-12",
+      "category": "food",
+      "concept": "Alimentación · día 12",
+      "date": "2026-12-07",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "firenze-corridoio",
+      "category": "activities",
+      "concept": "Firenze · Corridoio Vasariano",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 20,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Visita opcional, no incluida en el subtotal",
+      "optional": true
     }
   ],
   "majorTransport": [
