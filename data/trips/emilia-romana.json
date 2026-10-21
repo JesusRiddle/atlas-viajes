@@ -1991,7 +1991,7 @@
     }
   ],
   "seasonality": {
-    "summary": "Noviembre y diciembre son viables para museos, ciudades y gastronomía, pero exigen abrigo, flexibilidad ante lluvia y aprovechar la luz diurna. El resto de los meses está pendiente de evaluación.",
+    "summary": "Enero es poco recomendable por el frío y los días cortos; febrero mejora ligeramente, aunque requiere abrigo. Noviembre y diciembre también son viables con reservas. Los demás meses siguen pendientes de evaluación.",
     "months": {
       "10": {
         "status": "pending",
@@ -2006,12 +2006,12 @@
         "description": "Frío (máx. 7–11 °C), atardecer temprano y ambiente navideño. Abrigarse bien."
       },
       "01": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "avoid",
+        "description": "Muy frío (máx. 6–9 °C), heladas, niebla y poca luz. Menos turistas, pero excursiones menos cómodas."
       },
       "02": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "conditional",
+        "description": "Frío (máx. 9–12 °C), pero días más largos y menos turistas. Viable con abrigo y flexibilidad."
       },
       "03": {
         "status": "pending",
