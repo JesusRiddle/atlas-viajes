@@ -325,6 +325,7 @@
     {
       "n": 1,
       "date": "2026-11-26",
+      "transportRefs": ["flight-international"],
       "title": "Vuelo CDMX a Milano: Aeropuerto de CDMX (AICM) → Escala en Madrid-Barajas (MAD) → Llegada a Milano Malpensa (MXP)",
       "base": "En vuelo / Malpensa",
       "headerPlaces": [
@@ -442,6 +443,7 @@
     {
       "n": 4,
       "date": "2026-11-29",
+      "transportRefs": ["train-milano-bologna"],
       "title": "Milano → Bologna y el centro monumental",
       "base": "Bologna",
       "headerPlaces": [
@@ -493,6 +495,7 @@
     {
       "n": 5,
       "date": "2026-11-30",
+      "transportRefs": ["train-bologna-ravenna"],
       "title": "la luz de los mosaicos bizantinos",
       "base": "Ravenna",
       "headerPlaces": [
@@ -529,6 +532,7 @@
     {
       "n": 6,
       "date": "2026-12-01",
+      "transportRefs": ["train-bologna-parma"],
       "title": "románico, Leonardo y Teatro Farnese",
       "base": "Parma",
       "headerPlaces": [
@@ -609,6 +613,7 @@
     {
       "n": 8,
       "date": "2026-12-03",
+      "transportRefs": ["train-bologna-ferrara"],
       "title": "Castello Estense y grandes maestros modernos",
       "base": "Ferrara",
       "headerPlaces": [
@@ -649,6 +654,7 @@
     {
       "n": 9,
       "date": "2026-12-04",
+      "transportRefs": ["train-bologna-firenze"],
       "title": "David, Cupola y Uffizi",
       "base": "Firenze",
       "headerPlaces": [
@@ -700,6 +706,7 @@
     {
       "n": 10,
       "date": "2026-12-05",
+      "transportRefs": ["train-bologna-modena"],
       "title": "románico, mercado y Museo Enzo Ferrari",
       "base": "Modena",
       "headerPlaces": [
@@ -783,6 +790,7 @@
     {
       "n": 12,
       "date": "2026-12-07",
+      "transportRefs": ["flight-international"],
       "title": "Bologna → Madrid → CDMX",
       "base": "Regreso",
       "headerPlaces": [
