@@ -991,3 +991,8 @@ html{scroll-padding-top:78px}
 @media(min-width:681px){#plan .reservation-groups{align-items:stretch}#plan .reservation-groups>.reservation-group{height:100%}}
 #plan .reservation-priority-very-high .reservation-count{color:#a52727;background:#fff0ef;border-color:#f0c4c2}
 #plan .reservation-priority-high .reservation-count{color:#795300;background:#fff5c7;border-color:#e7cd70}
+
+/* En Desktop, ordenar las experiencias por columna (de arriba abajo). */
+@media screen and (min-width:681px){
+ #plan .experience-panel .experience-list.experience-column-order{grid-auto-flow:column;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(var(--experience-rows),auto)}
+}
