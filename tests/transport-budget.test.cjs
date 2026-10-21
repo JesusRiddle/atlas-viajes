@@ -248,5 +248,5 @@ test('operadores y números de servicio sobreviven a la integración diaria', ()
     assert.ok(ravenna.includes('Regionale 17543'));
     assert.ok(ravenna.includes('Regionale 17558'));
     const flight = view.transportSummary(trip, trip.days[0]);
-    assert.ok(flight.includes('Billete redondo'));
+    assert.ok(flight.includes('Precio ida y vuelta'));
 });
