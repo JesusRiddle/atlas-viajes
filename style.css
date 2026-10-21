@@ -961,3 +961,8 @@ html{scroll-padding-top:78px}
  .trip-map-section .trip-map-top .map-legend{flex:none;justify-content:flex-end;margin:0}
 }
 @media screen and (max-width:1000px){.trip-map-section .trip-map-top .map-legend{margin-top:12px}}
+
+/* Sin título ni línea divisoria antes de las tarjetas del mapa. */
+.trip-map-section .trip-map-cities{border-top:0;padding-top:0}
+.trip-map-section .trip-map-cities .map-city-list{margin-top:0}
+@media screen and (max-width:760px){.trip-map-section .trip-map-cities{border-top:0;padding-top:0}}
