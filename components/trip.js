@@ -90,7 +90,6 @@ window.AtlasTrip = function (ctx) {
             return;
         }
         main.classList.toggle('trip-espana-portugal', t.layoutClass === 'trip-espana-portugal');
-        main.classList.toggle('trip-emilia', t.id === 'emilia-romana');
         document.title = t.name + ' · Atlas de Viajes';
         const [low, high] = sums(t);
         const rank = trips.indexOf(t) + 1;
@@ -127,12 +126,12 @@ window.AtlasTrip = function (ctx) {
             `<div class="overview-intro">`,
             `<div class="overview-kicker">${overviewIcon('compass')}<span>Panorama del viaje</span></div>`,
             `<h2 class="overview-heading">La esencia de tu recorrido.</h2>`,
-            `<p class="lead">${t.id === 'emilia-romana' ? esc('De Milano a Firenze, con Bologna como base para descubrir en tren el patrimonio y los sabores de Emilia-Romagna.') : highlightWords(t.intro, t.introHighlights)}</p>`,
-            `${t.id === 'emilia-romana' ? '<div class="overview-trip-stats"><span>12 días</span><span>7 ciudades</span><span>11 noches</span><span>3 alojamientos</span></div>' : '<div class="overview-route-block">'}`,
-            `${t.id === 'emilia-romana' ? '' : `<h3 class="overview-subheading">${overviewIcon('pin')} Ciudades del recorrido</h3>`}`,
-            `${t.id === 'emilia-romana' ? '' : `<div class="trip-route" aria-label="Ciudades del recorrido">${t.routeCities.map(city => `<span class="trip-route-city">${esc(city)}</span>`).join('')}</div>`}`,
+            `<p class="lead">${highlightWords(t.intro, t.introHighlights)}</p>`,
+            `<div class="overview-route-block">`,
+            `<h3 class="overview-subheading">${overviewIcon('pin')} Ciudades del recorrido</h3>`,
+            `<div class="trip-route" aria-label="Ciudades del recorrido">${t.routeCities.map(city => `<span class="trip-route-city">${esc(city)}</span>`).join('')}</div>`,
             `</div>`,
-            
+            `${t.id === 'emilia-romana' ? overviewStays(t, true) : ''} `,
             `</div>`,
             `${t.id === 'emilia-romana' ? '' : overviewStays(t)}`,
             `${t.id === 'emilia-romana' ? '<div class="overview-side">' : ''}`,
@@ -150,8 +149,8 @@ window.AtlasTrip = function (ctx) {
             `</aside>`,
             `${t.id === 'emilia-romana' ? climateCard(t) + '</div>' : ''}`,
             `</div>`,
-            `${t.id === 'emilia-romana' ? overviewStays(t, true) : ''}`,
-            `${window.AtlasTravel.mapSection(t)}${t.id === 'emilia-romana' ? practicalAdvice(t) : ''}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
+            `${t.id === 'emilia-romana' ? practicalAdvice(t) : ''}`,
+            `${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
             `${t.id === 'emilia-romana' ? '' : adviceCards(t)}`,
             `<article class="panel" id="alojamientos" style="margin-top:20px">`,
             `<h3>`,
