@@ -18,7 +18,8 @@ window.AtlasDayBudget = (() => {
         const lines = info.entries.map(entry => {
             const item = transports.get(entry.id) || expenses.get(entry.id);
             const category = transports.has(entry.id) ? 'transport' : (item?.category || 'other');
-            const label = item?.concept || item?.title || names[category];
+            const label = (item?.concept || item?.title || names[category]) +
+                (item?.status === 'estimated' ? ' · estimado' : item?.status === 'quoted' ? ' · cotizado' : '');
             return '<div class="day-budget-line"><span>' + esc(label) + '</span><strong>' +
                 (entry.mxn === null ? 'Por cotizar' : pesos(entry.mxn)) + '</strong></div>';
         }).join('');
