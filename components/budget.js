@@ -65,7 +65,10 @@ window.AtlasBudget = (() => {
             const cost = selectedTransportPrice(item, selection);
             const day = Number.isInteger(item.day) ? trip.days?.find(d => d.n === item.day) : null;
             // No repartir billetes redondos de avión entre la ida y el regreso.
-            const dates = day ? [day.date] : [];
+            const referencedDays = (trip.days || []).filter(d => d.transportRefs?.includes(item.id));
+            // Solo asignar trenes a una jornada inequívoca; vuelos redondos quedan globales.
+            const dates = day ? [day.date] : item.type !== 'flight' && referencedDays.length === 1
+                ? [referencedDays[0].date] : [];
             register(item.id, 'transport', cost, dates, item.paidMXN);
         }
         for (const item of trip.expenses || []) {
