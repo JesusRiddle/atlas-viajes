@@ -1034,3 +1034,7 @@ html{scroll-padding-top:78px}
 /* Iconos lineales para cada medio de transporte. */
 #traslados .mt-kind-inner{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 #traslados .mt-kind-inner svg{flex:none;width:16px;height:16px}
+
+/* Icono lineal del encabezado de movilidad. */
+#traslados .mt-kicker-icon{display:inline-flex;align-items:center;gap:8px}
+#traslados .mt-kicker-icon svg{flex:none;width:16px;height:16px}
