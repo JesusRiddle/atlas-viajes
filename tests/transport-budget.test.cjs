@@ -189,6 +189,7 @@ test('cambio de tarifa de vuelo actualiza presupuesto sin sumar tarifas alternat
 });
 
 test('los días muestran el transporte vinculado y siguen el selector Frecciarossa/Italo', () => {
+    vm.runInContext(fs.readFileSync('components/day-transport.js', 'utf8'), ctx, { filename: 'components/day-transport.js' });
     vm.runInContext(fs.readFileSync('components/day.js', 'utf8'), ctx, { filename: 'components/day.js' });
     const esc = value => String(value).replace(/&/g, '&amp;');
     const view = ctx.window.AtlasDay({ trips: [trip], esc, places: {}, photos: {} });
