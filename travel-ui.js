@@ -13,10 +13,12 @@ const stayLabel = point => {
 const icon='<svg class="trip-map-heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/></svg>';
 return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 <div class="trip-map-header">
+<div class="trip-map-top">
 <div class="trip-map-intro">
 <div class="trip-map-heading">${icon}<span>EXPLORA TU DESTINO</span></div>
 <h3 class="trip-map-title" id="map-title">Tu viaje en el mapa.</h3>
 <p class="trip-map-description">Explora las ciudades del recorrido en el mapa interactivo.</p>
+</div>
 <div class="map-legend"><span>Base para dormir</span><span>Visita del recorrido</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div>
 </div>
 ${points.length ? `<div class="trip-map-cities"><div class="map-locations-heading"><svg class="map-city-heading-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Ciudades del recorrido</span></div>
