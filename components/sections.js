@@ -20,7 +20,7 @@ window.AtlasSections = function (ctx) {
             <div class="experience-note-heading"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17V5h16v12M2 17h20M7 21h10M8 9h8M8 13h5"/></svg><strong>Un viaje con pocas maletas</strong></div>
             <p>${esc(t.profile.why)}</p>
         </div>` : '';
-        return `<article class="panel experience-panel">
+        return `<article class="panel experience-panel" id="experiencias">
             <div class="experience-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3ZM19 17l.7 2.3L22 20l-2.3.7L19 23l-.7-2.3L16 20l2.3-.7L19 17Z"/></svg><span>Lo que hace especial este viaje</span></div>
             <h3>Experiencias para recordar.</h3>
             <p class="experience-intro">Arte extraordinario, ciudades históricas y experiencias que dan identidad al recorrido.</p>
@@ -51,7 +51,7 @@ window.AtlasSections = function (ctx) {
                     </li>`;
                 }).join('')}</ol>
             </section>`).join('');
-        return `<article class="panel reservation-panel">
+        return `<article class="panel reservation-panel" id="reservas">
             <div class="reservation-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 5 3 3 5-5"/></svg><span>Antes de viajar</span></div>
             <h3>${esc(p.reservationTitle || 'Reservas críticas')}</h3>
             ${p.reservationNote ? `<p class="reservation-intro">${esc(p.reservationNote)}</p>` : ''}
