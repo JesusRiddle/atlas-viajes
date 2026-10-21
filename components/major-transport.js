@@ -120,7 +120,6 @@ window.AtlasMajorTransport = (() => {
             '<h2>Traslados principales.</h2><p>Compara las alternativas, tarifas y condiciones de tus vuelos y trenes.</p></div>' +
             '<div class="mt-list">' + trip.majorTransport.map(item => card(trip, item, current)).join('') + '</div>' +
             '<p class="mt-footnote">Cotizaciones de referencia, no reservas confirmadas. Las elecciones son temporales y no modifican el itinerario guardado.</p>' +
-            '<div class="mt-total" aria-live="polite"></div>' +
             (trip.ticketNotes?.length ? '<details class="mt-tickets"><summary>Billetes y flexibilidad</summary>' +
                 '<ul>' + trip.ticketNotes.map(([name, note]) => '<li><strong>' + esc(name) +
                 ':</strong> ' + esc(note) + '</li>').join('') + '</ul></details>' : '') +
@@ -149,48 +148,10 @@ window.AtlasMajorTransport = (() => {
             host.replaceWith(next);
             host = next;
             host.addEventListener('change', change);
-            updateTotal(next);
             if (focusedId && focusedField) {
                 const matchingCard = [...next.querySelectorAll('.mt-card')].find(item => item.dataset.transport === focusedId);
                 matchingCard?.querySelector('select[data-field="' + focusedField + '"]')?.focus({ preventScroll: true });
             }
-        }
-        function updateTotal(element) {
-            const result = budget.currentSummary(trip);
-            const transportEntries = result.entries.filter(entry => trip.majorTransport.some(t => t.id === entry.id));
-            const currencies = new Map();
-            for (const entry of transportEntries) {
-                if (!entry.cost || !Number.isFinite(entry.cost.amount)) continue;
-                const code = entry.cost.currency;
-                currencies.set(code, (currencies.get(code) || 0) + entry.cost.amount);
-            }
-            const flights = transportEntries.filter(entry => trip.majorTransport.find(t => t.id === entry.id)?.type === 'flight');
-            const trains = transportEntries.filter(entry => trip.majorTransport.find(t => t.id === entry.id)?.type === 'train');
-            const nativeTotal = items => {
-                const grouped = new Map();
-                for (const item of items) {
-                    if (item.cost && Number.isFinite(item.cost.amount)) {
-                        const currency = item.cost.currency;
-                        grouped.set(currency, (grouped.get(currency) || 0) + item.cost.amount);
-                    }
-                }
-                return [...grouped].map(([currency, amount]) => formatMoney({ currency, amount })).join(' + ') || 'Por cotizar';
-            };
-            const unconverted = transportEntries.filter(entry => entry.mxn === null);
-            const pendingPrice = unconverted.filter(entry => entry.cost?.amount == null).length;
-            const pendingCurrency = [...new Set(unconverted.filter(entry => entry.cost?.amount != null).map(entry => entry.cost.currency))];
-            const node = element.querySelector('.mt-total');
-            node.innerHTML = '<div class="mt-total-head"><strong>Resumen de traslados</strong><small>Cotizaciones de referencia</small></div>' +
-                '<div class="mt-total-line"><span>Vuelos internacionales</span><strong>' + esc(nativeTotal(flights)) + '</strong></div>' +
-                '<div class="mt-total-line"><span>Trenes principales</span><strong>' + esc(nativeTotal(trains)) + '</strong></div>' +
-                '<div class="mt-total-line mt-total-known"><span>Subtotal convertido conocido</span><strong>$' +
-                number.format(transportEntries.reduce((sum, entry) => sum + (entry.mxn ?? 0), 0)) +
-                ' MXN</strong></div>' +
-                '<p class="mt-total-notice">Subtotal parcial, no es el costo total del viaje.' +
-                (pendingCurrency.length ? ' Pendiente convertir ' + esc(pendingCurrency.join(', ')) + '.' : '') +
-                (pendingPrice ? ' ' + pendingPrice + ' traslado(s) sin precio.' : '') +
-                (result.migrationPending ? ' Hoteles, entradas y otros gastos pendientes de integrar.' : '') +
-                '</p>';
         }
         const change = e => {
             const select = e.target.closest('select[data-field]');
@@ -206,7 +167,6 @@ window.AtlasMajorTransport = (() => {
         };
         host.addEventListener('change', change);
         const unsubscribe = selections.subscribe(tripId => { if (tripId === trip.id && root.isConnected) refresh(); });
-        updateTotal(host);
         return () => { host.removeEventListener('change', change); unsubscribe(); };
     }
     return { render, mount };
