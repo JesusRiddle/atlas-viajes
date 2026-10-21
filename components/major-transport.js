@@ -77,7 +77,7 @@ window.AtlasMajorTransport = (() => {
                 ? '<p class="mt-connection">Escala: ' +
                     minutes(model.durationMinutes(segments[i - 1].arrival, seg.departure)) + '</p>' : '';
             const route = isFlight ? airportLabel(seg.from) + ' → ' + airportLabel(seg.to)
-                : esc(seg.from) + ' → ' + esc(seg.to);
+                : '<strong>' + esc(seg.from) + '</strong> → <strong>' + esc(seg.to) + '</strong>';
             const duration = esc(clock(seg.departure)) + ' – ' + esc(clock(seg.arrival)) +
                 ' · ' + minutes(model.durationMinutes(seg.departure, seg.arrival));
             const details = isFlight
@@ -109,12 +109,20 @@ window.AtlasMajorTransport = (() => {
         const fares = option.fares.map(f => '<option value="' + esc(f.id) + '"' +
             (f.id === fare.id ? ' selected' : '') + '>' + esc(f.name || f.id) +
             ' · ' + esc(formatMoney(f.price)) + '</option>').join('');
-        const detail = option.journeys.map(j =>
-            '<div class="mt-legs">' +
-            (transport.type === 'flight' ? '<h4 class="mt-leg-heading">' +
-                esc(j.direction === 'outbound' ? 'Ida' : j.direction === 'return' ? 'Regreso' : 'Trayecto') +
-                esc(journeyDate(j, trip)) + '</h4>' : '') +
-            segmentDetails(j, transport.type === 'flight') + '</div>').join('');
+        const detail = option.journeys.map(j => {
+            const departureDate = j.segments?.[0]?.departure?.slice(0, 10);
+            const startDate = trip.start?.slice(0, 10);
+            const dateNumber = date => Date.parse(date + 'T00:00:00Z');
+            const index = departureDate && startDate
+                ? Math.round((dateNumber(departureDate) - dateNumber(startDate)) / 86400000) + 1 : transport.day;
+            const dayLabel = Number.isFinite(index) && index > 0 ? 'Día ' + String(index).padStart(2, '0') + ' · ' : '';
+            const direction = j.direction === 'outbound' ? 'Ida' : j.direction === 'return' ? 'Regreso' : '';
+            return '<div class="mt-legs">' +
+                '<h4 class="mt-leg-heading">' + esc(dayLabel) +
+                (direction ? esc(direction) + esc(journeyDate(j, trip)) :
+                    esc(journeyDate(j, trip).replace(/^ · /, ''))) + '</h4>' +
+                segmentDetails(j, transport.type === 'flight') + '</div>';
+        }).join('');
         return '<details class="mt-card" data-transport="' + esc(transport.id) + '">' +
             '<summary><span class="mt-kind">' + esc(label) + '</span>' +
             '<span class="mt-route"><strong>' + esc(transport.title) + '</strong><small>' +
