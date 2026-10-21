@@ -29,11 +29,15 @@ window.AtlasMajorTransport = (() => {
         const first = journey.segments[0], last = journey.segments.at(-1);
         const direction = journey.direction === 'return' ? 'Regreso' :
             journey.direction === 'outbound' ? 'Ida' : journey.direction === 'roundtrip' ? 'Ida y vuelta' : 'Trayecto';
-        return '<div class="mt-journey"><strong>' + esc(direction) + ': ' + esc(s.from) + ' → ' + esc(s.to) +
-            '</strong><span>' + esc(clock(first?.departure)) + ' – ' + esc(clock(last?.arrival)) +
-            ' · ' + minutes(s.durationMinutes) + ' · ' + s.stops +
-            (s.stops === 1 ? ' escala' : ' escalas') + (s.connectionPoints.length ? ' (' +
-                esc(s.connectionPoints.join(', ')) + ')' : '') + '</span></div>';
+        const roundtrip = journey.direction === 'roundtrip';
+        return '<div class="mt-journey"><strong>' + esc(direction) + ': ' + esc(s.from) +
+            (roundtrip ? ' ↔ ' : ' → ') + esc(roundtrip ? journey.segments[0]?.to : s.to) +
+            '</strong><span>' + (roundtrip ? journey.segments.length + ' trayectos · horarios por confirmar'
+                : esc(clock(first?.departure)) + ' – ' + esc(clock(last?.arrival)) +
+                  ' · ' + minutes(s.durationMinutes) + ' · ' + s.stops +
+                  (s.stops === 1 ? ' escala' : ' escalas') +
+                  (s.connectionPoints.length ? ' (' + esc(s.connectionPoints.join(', ')) + ')' : '')) +
+            '</span></div>';
     }
     function segmentDetails(journey) {
         const segments = journey.segments || [];
