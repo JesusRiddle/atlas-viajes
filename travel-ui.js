@@ -5,6 +5,11 @@ let leafletPromise=null,activeMap=null,mapObserver=null;
 function leaflet(){if(leafletPromise)return leafletPromise;leafletPromise=Promise.all([new Promise((resolve,reject)=>{const css=document.createElement('link');css.rel='stylesheet';css.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';css.integrity='sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';css.crossOrigin='anonymous';css.onload=resolve;css.onerror=reject;document.head.append(css);}),new Promise((resolve,reject)=>{if(window.L){resolve();return;}const script=document.createElement('script');script.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';script.integrity='sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';script.crossOrigin='anonymous';script.onload=resolve;script.onerror=reject;document.head.append(script);})]).then(()=>window.L);return leafletPromise;}
 function mapSection(t){
 const points=window.ATLAS_MAP_POINTS[t.id]||[];
+const nightsByBase = new Map((t.bases || []).map(([name, nights]) => [String(name).toLocaleLowerCase('es'), Number(nights)]));
+const stayLabel = point => {
+  const nights = nightsByBase.get(String(point.name).toLocaleLowerCase('es'));
+  return Number.isFinite(nights) && nights > 0 ? nights + (nights === 1 ? ' noche' : ' noches') : point.base ? 'Base' : 'Excursión';
+};
 const icon='<svg class="trip-map-heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/></svg>';
 return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 <div class="trip-map-header">
@@ -15,7 +20,7 @@ return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 <div class="map-legend"><span>Base para dormir</span><span>Visita del recorrido</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div>
 </div>
 ${points.length ? `<div class="trip-map-cities"><div class="map-locations-heading"><span>Localidades del recorrido</span></div>
-<ul class="map-city-list">${points.map(p=>`<li><a href="https://www.openstreetmap.org/?mlat=${p.coords[0]}&mlon=${p.coords[1]}#map=12/${p.coords[0]}/${p.coords[1]}" target="_blank" rel="noopener noreferrer">${p.order}. ${esc(p.name)}</a>${p.optional?' <small>(opcional)</small>':''}</li>`).join('')}</ul></div>` : ''}
+<ul class="map-city-list">${points.map(p=>`<li><a href="https://www.openstreetmap.org/?mlat=${p.coords[0]}&mlon=${p.coords[1]}#map=12/${p.coords[0]}/${p.coords[1]}" target="_blank" rel="noopener noreferrer">${p.order}. ${esc(p.name)}<small class="map-city-stay">${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></a></li>`).join('')}</ul></div>` : ''}
 </div>
 <div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>
 <p class="map-status" role="status">El mapa se carga al llegar a esta sección.</p>
