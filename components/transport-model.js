@@ -34,7 +34,7 @@ window.AtlasTransportModel = (() => {
     }
 
     function journeySummary(journey) {
-        const segments = journey?.segments || [];
+        const segments = Array.isArray(journey?.segments) ? journey.segments : [];
         const first = segments[0], last = segments[segments.length - 1];
         const flightsOrLegs = segments.map(s => durationMinutes(s.departure, s.arrival));
         const layovers = segments.slice(1).map((segment, i) =>
@@ -88,6 +88,7 @@ window.AtlasTransportModel = (() => {
         const errors = [];
         if (!transport || typeof transport !== 'object') return ['Transporte inválido'];
         if (!transport.id || !transport.type) errors.push('Faltan id o type');
+        if (!['flight', 'train', 'bus', 'ferry'].includes(transport.type)) errors.push('Tipo de transporte desconocido');
         if (!Array.isArray(transport.options) || !transport.options.length) return [...errors, 'Sin opciones'];
         const ids = new Set();
         for (const option of transport.options) {
@@ -108,7 +109,7 @@ window.AtlasTransportModel = (() => {
                 }
                 for (const error of validateBaggage(fare.baggage)) errors.push(option.id + '/' + fare.id + ': ' + error);
             }
-            if (Array.isArray(option.journeys)) {
+            if (Array.isArray(option.journeys) && option.journeys.length) {
                 option.journeys.forEach((journey, i) => {
                     for (const error of validateJourney(journey)) errors.push(option.id + '/trayecto ' + (i + 1) + ': ' + error);
                 });
@@ -122,10 +123,23 @@ window.AtlasTransportModel = (() => {
     function validateTrip(trip) {
         const issues = [];
         const ids = new Set();
+        const refs = new Map();
         for (const item of trip?.majorTransport || []) {
             if (ids.has(item.id)) issues.push(item.id + ': ID de transporte duplicado');
             ids.add(item.id);
+            refs.set(item.id, item);
             for (const error of validateTransport(item)) issues.push(item.id + ': ' + error);
+        }
+        for (const day of trip?.days || []) {
+            const local = new Set();
+            for (const ref of day.transportRefs || []) {
+                if (local.has(ref)) issues.push('Día ' + day.n + ': transporte repetido ' + ref);
+                local.add(ref);
+                if (!refs.has(ref)) issues.push('Día ' + day.n + ': referencia desconocida ' + ref);
+                else if (refs.get(ref).day != null && refs.get(ref).day !== day.n) {
+                    issues.push('Día ' + day.n + ': fecha no coincide para ' + ref);
+                }
+            }
         }
         return issues;
     }
