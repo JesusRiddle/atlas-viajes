@@ -100,9 +100,11 @@ window.AtlasBudget = (() => {
         }
         const knownTotalMXN = round(entries.reduce((sum, e) => sum + (e.mxn ?? 0), 0));
         const pending = entries.filter(e => e.mxn === null).map(e => e.id);
+        // Las partidas heredadas aún no migradas no pueden darse por contabilizadas.
+        const migrationPending = Boolean((trip.knownCosts?.length || trip.hotels?.length) && !trip.expenses?.length);
         return {
-            knownTotalMXN, partial: pending.length > 0 || issues.length > 0,
-            pending, issues, byCategory, byDay, entries,
+            knownTotalMXN, partial: pending.length > 0 || issues.length > 0 || migrationPending,
+            migrationPending, pending, issues, byCategory, byDay, entries,
             // El rango de planeación es independiente; no se suma a las partidas.
             planningRangeMXN: trip.budgetRange || (trip.budgetPreliminary && trip.costs?.length === 1
                 ? trip.costs[0].slice(1, 3) : null)
