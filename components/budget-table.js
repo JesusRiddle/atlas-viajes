@@ -39,8 +39,16 @@ window.AtlasBudgetTable = (() => {
         const markup = [];
         for (const [key, title] of groups) {
             const items = grouped.get(key) || [];
-            if (!items.length) continue;
+            // Mantener las partidas aún sin cotizar dentro de su categoría.
+            const pendingLabel = key === 'food' ? 'Alimentación pendiente de desglose' :
+                key === 'other' ? 'Transporte urbano y otros gastos' : null;
+            if (!items.length && !pendingLabel) continue;
             markup.push('<tr class="budget-category"><th colspan="3" scope="rowgroup">' + esc(title) + '</th></tr>');
+            if (!items.length) {
+                markup.push('<tr class="budget-pending"><td>' + esc(pendingLabel) +
+                    '</td><td></td><td class="budget-amount">Por cotizar</td></tr>');
+                continue;
+            }
             for (const item of items) {
                 markup.push('<tr><td>' + esc(item.label) + '</td><td class="budget-amount">' +
                     esc(original(item.cost)) + '</td><td class="budget-amount">' +
@@ -51,9 +59,6 @@ window.AtlasBudgetTable = (() => {
                 '</td><td></td><td class="budget-amount">' + pesos(subtotal) +
                 (items.some(x => x.mxn === null) ? ' + pendientes' : '') + '</td></tr>');
         }
-        // Mostrar tipos de gastos aún sin datos estructurados, sin fingir que cuestan cero.
-        if (!grouped.get('food')?.length) markup.push('<tr><td>Alimentación</td><td></td><td class="budget-amount">Por cotizar</td></tr>');
-        if (!grouped.get('other')?.length) markup.push('<tr><td>Transporte urbano y otros gastos</td><td></td><td class="budget-amount">Por cotizar</td></tr>');
         markup.push('<tr class="totalrow"><td>Subtotal conocido · parcial</td><td></td><td class="budget-amount">' +
             pesos(result.knownTotalMXN) + '</td></tr>');
         return {
