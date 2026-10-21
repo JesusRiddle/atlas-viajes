@@ -1147,3 +1147,6 @@ html{scroll-padding-top:78px}
   #costes .budget-section-panel .section-title h2{white-space:normal}
   #costes .budget-section-panel .section-title>p{font-size:13px;line-height:1.5;margin-top:10px}
 }
+
+/* Sangría suave para conceptos individuales; categorías, subtotales e importes no cambian. */
+#costes .budget-ledger .budget-item td:first-child{padding-left:24px}
