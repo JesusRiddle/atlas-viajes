@@ -283,7 +283,7 @@ test('tarjeta diaria presenta partidas registradas, no inventa comidas ni asigna
     vm.runInContext(fs.readFileSync('components/day-budget.js', 'utf8'), ctx, { filename: 'components/day-budget.js' });
     const view = ctx.window.AtlasDayBudget;
     const firenze = view.render(trip, trip.days.find(d => d.n === 9));
-    assert.ok(firenze.includes('Firenze · entradas imprescindibles'));
+    assert.ok(firenze.includes('Firenze · Accademia'));
     assert.ok(firenze.includes('Bologna ↔ Firenze'));
     assert.ok(firenze.includes('Subtotal conocido de esta jornada'));
     const outbound = view.render(trip, trip.days[0]);
