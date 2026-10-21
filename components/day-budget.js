@@ -22,13 +22,27 @@ window.AtlasDayBudget = (() => {
             return '<div class="day-budget-line"><span>' + esc(label) + '</span><strong>' +
                 (entry.mxn === null ? 'Por cotizar' : pesos(entry.mxn)) + '</strong></div>';
         }).join('');
+        const hasAmounts = info.entries.some(entry => entry.mxn !== null);
+        const registered = new Set((trip.expenses || []).filter(item =>
+            info.entries.some(entry => entry.id === item.id)).map(item => item.category));
+        const pendingCategories = [
+            !registered.has('food') ? 'comidas' : null,
+            !registered.has('localTransport') ? 'movilidad urbana' : null,
+            'otros gastos que aún no estén registrados'
+        ].filter(Boolean).join(', ');
+        const flightOutside = (day.transportRefs || []).some(id => {
+            const transport = transports.get(id);
+            return transport?.type === 'flight' && !info.entries.some(entry => entry.id === id);
+        });
         return '<section class="day-budget" data-day-budget="' + esc(day.n) +
             '" aria-label="Presupuesto de la jornada"><div class="day-budget-heading"><div><h4>Gastos registrados del día</h4>' +
-            '<small>Importes asignados a esta jornada</small></div><strong>' + pesos(info.totalMXN) +
+            '<small>Subtotal conocido de esta jornada</small></div><strong>' +
+            (hasAmounts ? pesos(info.totalMXN) : 'Sin partidas cotizadas') +
             '</strong></div>' + (lines || '<p class="day-budget-empty">Todavía no hay partidas asignadas.</p>') +
             (info.partial ? '<p class="day-budget-pending">Hay partidas sin cotizar.</p>' : '') +
-            '<p class="day-budget-disclaimer">Subtotal parcial: no incluye comidas, movilidad urbana ni otros gastos aún sin registrar.' +
-            (day.transportRefs?.includes('flight-international') ? ' El vuelo redondo se contabiliza únicamente en el total del viaje.' : '') +
+            '<p class="day-budget-disclaimer">Presupuesto diario incompleto: pendiente de registrar o verificar ' +
+            esc(pendingCategories) + '.' +
+            (flightOutside ? ' El vuelo se contabiliza en el presupuesto global, no en este día.' : '') +
             '</p></section>';
     }
     function mount(root, trip) {
