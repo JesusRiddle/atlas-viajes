@@ -1991,7 +1991,7 @@
     }
   ],
   "seasonality": {
-    "summary": "Enero es poco recomendable por el frío y los días cortos; febrero mejora ligeramente, aunque requiere abrigo. Noviembre y diciembre también son viables con reservas. Los demás meses siguen pendientes de evaluación.",
+    "summary": "Abril destaca entre los meses evaluados por sus temperaturas templadas y días largos; marzo es aceptable, aunque variable. Enero es poco recomendable; febrero, noviembre y diciembre presentan inconvenientes estacionales. De mayo a octubre todavía falta evaluar.",
     "months": {
       "10": {
         "status": "pending",
@@ -2014,12 +2014,12 @@
         "description": "Frío (máx. 9–12 °C), pero días más largos y menos turistas. Viable con abrigo y flexibilidad."
       },
       "03": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "conditional",
+        "description": "Primavera temprana (máx. 14–16 °C), más luz y turismo moderado; mañanas frías y tiempo variable."
       },
       "04": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "recommended",
+        "description": "Clima templado (máx. 18–20 °C) y días largos; ideal para excursiones, con posibles lluvias y más turistas en Semana Santa."
       },
       "05": {
         "status": "pending",
