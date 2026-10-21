@@ -10,7 +10,7 @@ window.AtlasSeasonality = function (ctx) {
         avoid: { label: 'Desaconsejable', css: 'avoid' }
     };
     const weatherIcons = {
-        snow: '<path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0Z"/><path d="M12 10v7"/><path d="M4 4v8M1 8h6M1.2 5.2l5.6 5.6M6.8 5.2l-5.6 5.6"/>',
+        snow: '<path d="M12 2v20M4 7l16 10M20 7 4 17M9 5l3 3 3-3M9 19l3-3 3 3"/>',
         cloudy: '<path d="M20 16a4 4 0 0 0-4-4 5.5 5.5 0 0 0-10.7-1.5A4 4 0 0 0 7 18h12a3 3 0 0 0 1-2Z"/>',
         partlyCloudy: '<path d="M12 2v2m-6.4.6L7 6m11-1.4L16.6 6M3 11h2m14 0h2M8 11a4 4 0 0 1 8-1"/><path d="M18 19a4 4 0 0 0-1-7.9 5 5 0 0 0-9.5 1.4A3.5 3.5 0 0 0 8 19h10Z"/>',
         hot: '<path d="M14 14.8V5a2 2 0 0 0-4 0v9.8a4 4 0 1 0 4 0Z"/><path d="M12 10v7"/><circle cx="19" cy="6" r="2.2"/><path d="M19 1v1m0 8v1m-5-5h1m8 0h-1m-6.5-3.5.7.7m5.6 5.6.7.7m0-7-.7.7m-5.6 5.6-.7.7"/>',
