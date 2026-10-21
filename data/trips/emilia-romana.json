@@ -1991,7 +1991,7 @@
     }
   ],
   "seasonality": {
-    "summary": "Abril y mayo destacan por su equilibrio entre clima agradable y horas de luz. Junio permite aprovechar días largos, pero aumenta el calor y la afluencia. Enero es poco recomendable; febrero, marzo, noviembre y diciembre son aceptables con inconvenientes. Julio a octubre siguen pendientes de evaluar.",
+    "summary": "Abril y mayo son los meses más favorables entre los evaluados. Junio es aceptable por sus días largos, aunque caluroso. Julio y agosto son poco recomendables para tantas caminatas urbanas, especialmente por el calor y los posibles cierres de Ferragosto. Enero también es poco recomendable; febrero, marzo, noviembre y diciembre son aceptables con inconvenientes. Septiembre y octubre siguen pendientes.",
     "months": {
       "10": {
         "status": "pending",
@@ -2038,12 +2038,14 @@
         "icon": "sun"
       },
       "07": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "avoid",
+        "description": "Verano intenso (máx. 30–33 °C), bochorno y alta afluencia. El calor dificulta las caminatas y excursiones.",
+        "icon": "sun"
       },
       "08": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "avoid",
+        "description": "Calor fuerte (máx. 30–33 °C); Ferragosto trae cierres o cambios de horario. Menos cómodo para recorrer ciudades.",
+        "icon": "sun"
       },
       "09": {
         "status": "pending",
