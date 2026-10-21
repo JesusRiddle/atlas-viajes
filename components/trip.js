@@ -113,7 +113,7 @@ window.AtlasTrip = function (ctx) {
             `<a href="#viaje/${id}/temporadas">Temporadas</a>`,
             `<a href="#viaje/${id}/dias">Día por día</a>`,
             `<a href="#viaje/${id}/costes">Presupuesto</a>`,
-            `<a href="#viaje/${id}/fuentes">Fuentes</a>`,
+            `${t.sources?.length ? `<a href="#viaje/${id}/fuentes">Fuentes</a>` : ''}',
             `</div>`,
             `<select aria-label="Cambiar destino" id="dest-select">${trips.map(x => `<option value="${x.id}" ${x.id === id ? 'selected' : ''}>${x.flag} ${esc(x.name)}</option>`).join('')}</select>`,
             `</div>`,
@@ -172,12 +172,12 @@ window.AtlasTrip = function (ctx) {
             `<p>${t.majorTransport?.length ? 'Costos registrados y convertidos a MXN. El desglose es parcial mientras existan partidas por cotizar.' : 'Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.'}</p>`,
             `</div>`,
             `${t.majorTransport?.length ? window.AtlasBudgetTable.render(t) : ''}${!t.majorTransport?.length ? '<div class="budgetgrid"><div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Desde</th><th>Hasta</th></tr></thead><tbody>' + t.costs.map(x => '<tr><td>' + esc(x[0]) + '</td><td>' + (x[1] === null ? 'Por cotizar' : money(x[1])) + '</td><td>' + (x[2] === null ? 'Por cotizar' : money(x[2])) + '</td></tr>').join('') + '<tr class="totalrow"><td>' + (t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo') + '</td><td>' + money(low) + '</td><td>' + money(high) + '</td></tr></tbody></table></div></div>' + knownCostPanel(t) : ''}</section>`,
-            `<section class="section wrap" id="fuentes">`,
-            `<p class="eyebrow orange">Fuentes y reservas</p>`,
-            `<h2>Consulta el canal oficial.</h2>`,
-            `<div class="sources">${t.sources.map(x => `<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join('')}</div>`,
-            `<p class="tiny">${esc(t.sourceNote || 'Planeación de referencia: 1 de octubre de 2026. Textos y galerías revisados el 2 de octubre.')} Comprueba calendarios y tarifas para tus fechas antes de comprar; las fotografías muestran los lugares, no el clima que tendrás durante el viaje.</p>`,
-            `</section>`
+            `${t.sources?.length ? `<section class="section wrap" id="fuentes">` : ''}',
+            `${t.sources?.length ? `<p class="eyebrow orange">Fuentes y reservas</p>` : ''}',
+            `${t.sources?.length ? `<h2>Consulta el canal oficial.</h2>` : ''}',
+            `${t.sources?.length ? `<div class="sources">${t.sources.map(x => `<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join('')}</div>` : ''}',
+            `${t.sources?.length ? `<p class="tiny">${esc(t.sourceNote || 'Planeación de referencia: 1 de octubre de 2026. Textos y galerías revisados el 2 de octubre.')} Comprueba calendarios y tarifas para tus fechas antes de comprar; las fotografías muestran los lugares, no el clima que tendrás durante el viaje.</p>` : ''}',
+            `${t.sources?.length ? '</section>' : ''}`
         ].join('');
         window.AtlasGallery.init(main);
         mountView(t);
