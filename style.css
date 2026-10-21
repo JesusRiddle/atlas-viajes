@@ -1030,3 +1030,7 @@ html{scroll-padding-top:78px}
 #traslados .mt-leg-list .mt-connection{margin:4px 0 4px 13px;font-size:12px}
 #traslados .mt-leg-list .mt-train-meta,#traslados .mt-leg-list .mt-flight-meta{font-size:13px;line-height:1.4}
 @media(max-width:760px){#traslados .mt-leg-list .mt-segment{grid-template-columns:minmax(0,1fr)}#traslados .mt-leg-list .mt-train-meta,#traslados .mt-leg-list .mt-flight-meta{justify-content:flex-start;text-align:left}}
+
+/* Iconos lineales para cada medio de transporte. */
+#traslados .mt-kind-inner{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+#traslados .mt-kind-inner svg{flex:none;width:16px;height:16px}
