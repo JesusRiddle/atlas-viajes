@@ -19,7 +19,7 @@ return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 <p class="trip-map-description">Explora las ciudades del recorrido en el mapa interactivo.</p>
 <div class="map-legend"><span>Base para dormir</span><span>Visita del recorrido</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div>
 </div>
-${points.length ? `<div class="trip-map-cities"><div class="map-locations-heading"><span>Localidades del recorrido</span></div>
+${points.length ? `<div class="trip-map-cities"><div class="map-locations-heading"><svg class="map-city-heading-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Ciudades del recorrido</span></div>
 <ul class="map-city-list">${points.map(p=>`<li><a href="https://www.openstreetmap.org/?mlat=${p.coords[0]}&mlon=${p.coords[1]}#map=12/${p.coords[0]}/${p.coords[1]}" target="_blank" rel="noopener noreferrer"><span class="map-city-name">${p.order}. ${esc(p.name)}</span><small class="map-city-stay">${Number(nightsByBase.get(String(p.name).toLocaleLowerCase("es"))) > 0 ? '<svg class="map-city-bed" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7m18 11V7M3 15h18M5 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M5 12h14"/></svg>' : ""}${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></a></li>`).join('')}</ul></div>` : ''}
 </div>
 <div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>
