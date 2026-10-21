@@ -167,7 +167,7 @@ window.AtlasMajorTransport = (() => {
         if (!trip.majorTransport?.length) return '';
         const current = selections.get(trip.id);
         return '<section class="major-transport" id="traslados" aria-label="Traslados principales">' +
-            '<div class="mt-heading"><span class="mt-kicker mt-kicker-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17h16M6 17V8l6-4 6 4v9M9 10h6M9 13h6"/><circle cx="7" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></svg> Movilidad y conexiones</span>' +
+            '<div class="mt-heading"><span class="mt-kicker mt-kicker-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 10h14M8 14h2m4 0h2M8 21l2-3m6 3-2-3"/></svg> Movilidad y conexiones</span>' +
             '<h2>Traslados principales.</h2><p>Compara las alternativas, tarifas y condiciones de tus vuelos y trenes.</p></div>' +
             '<div class="mt-list">' + trip.majorTransport.map(item => card(trip, item, current)).join('') + '</div>' +
             '<p class="mt-footnote">Cotizaciones de referencia, no reservas confirmadas. Las elecciones son temporales y no modifican el itinerario guardado.</p>' +
