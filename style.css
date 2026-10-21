@@ -862,7 +862,7 @@ html{scroll-padding-top:78px}
 @media(max-width:680px){#plan .overview-editorial .budget-teaser{padding:21px 22px}}
 
 /* Encabezado del mapa: ciudades en columna lateral sin alterar los controles Leaflet. */
-.trip-map-section .trip-map-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,37%);align-items:start;column-gap:28px;margin-bottom:14px}
+.trip-map-section .trip-map-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(440px,44%);align-items:start;column-gap:28px;margin-bottom:14px}
 .trip-map-section .trip-map-intro{min-width:0}
 .trip-map-section .trip-map-cities{min-width:0;padding:3px 0 0 24px;border-left:1px solid var(--line)}
 .trip-map-section .trip-map-cities .map-locations-heading{padding:0;border:0;font-size:12px}
@@ -939,4 +939,9 @@ html{scroll-padding-top:78px}
 @media screen and (max-width:760px){
  .trip-map-section .trip-map-header{row-gap:11px;margin-bottom:11px}
  .trip-map-section .trip-map-cities .map-city-list a{height:64px;min-height:64px}
+}
+
+/* Dar más espacio a las ciudades sin romper el diseño apilado en Mobile. */
+@media screen and (min-width:761px) and (max-width:1080px){
+ .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,48%)}
 }
