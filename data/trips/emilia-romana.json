@@ -866,6 +866,320 @@
       ]
     ]
   ],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Vuelos internacionales · México ↔ Italia",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Iberia",
+          "status": "quoted",
+          "selectedFare": "basic",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "MAD",
+                  "operator": "Iberia"
+                },
+                {
+                  "from": "MAD",
+                  "to": "MXP",
+                  "operator": "Iberia"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "BLQ",
+                  "to": "MAD",
+                  "operator": "Air Nostrum"
+                },
+                {
+                  "from": "MAD",
+                  "to": "MEX",
+                  "operator": "Iberia"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "basic",
+              "name": "Turista Básica",
+              "price": {
+                "amount": 18754,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": null,
+                "cabin": null,
+                "checked": null
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Cotización histórica de referencia, sin reserva. Franquicia de equipaje, número de vuelo y condiciones pendientes de confirmar."
+        }
+      ]
+    },
+    {
+      "id": "train-milano-bologna",
+      "type": "train",
+      "title": "Milano → Bologna",
+      "day": 4,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano",
+                  "to": "Bologna"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 22.9,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-ravenna",
+      "type": "train",
+      "title": "Bologna ↔ Ravenna",
+      "day": 5,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Ravenna"
+                },
+                {
+                  "from": "Ravenna",
+                  "to": "Bologna"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 17,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-parma",
+      "type": "train",
+      "title": "Bologna ↔ Parma",
+      "day": 6,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Parma"
+                },
+                {
+                  "from": "Parma",
+                  "to": "Bologna"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 17,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-ferrara",
+      "type": "train",
+      "title": "Bologna ↔ Ferrara",
+      "day": 8,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Ferrara"
+                },
+                {
+                  "from": "Ferrara",
+                  "to": "Bologna"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 11,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-firenze",
+      "type": "train",
+      "title": "Bologna ↔ Firenze",
+      "day": 9,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Firenze"
+                },
+                {
+                  "from": "Firenze",
+                  "to": "Bologna"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 26.8,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-modena",
+      "type": "train",
+      "title": "Bologna ↔ Modena",
+      "day": 10,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Modena"
+                },
+                {
+                  "from": "Modena",
+                  "to": "Bologna"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 9,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ]
+    }
+  ],
   "railSummary": [
     [
       "Milano → Bologna",
