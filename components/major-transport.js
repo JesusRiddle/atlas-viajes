@@ -60,7 +60,16 @@ window.AtlasMajorTransport = (() => {
         MXP: 'Milano Malpensa',
         BLQ: 'Bologna Marconi'
     };
-    const airportLabel = code => esc(code) + (airportNames[code] ? ' (' + esc(airportNames[code]) + ')' : '');
+    const airportLabel = code => {
+        const name = airportNames[code];
+        if (!name) return esc(code);
+        const city = code === 'MEX' ? 'Ciudad de México' :
+            code === 'MAD' ? 'Madrid' : code === 'MXP' ? 'Milano' : code === 'BLQ' ? 'Bologna' : '';
+        const highlighted = city && name.startsWith(city)
+            ? '<strong>' + esc(city) + '</strong>' + esc(name.slice(city.length))
+            : esc(name);
+        return esc(code) + ' (' + highlighted + ')';
+    };
     function segmentDetails(journey, isFlight = false) {
         const segments = journey.segments || [];
         return segments.map((seg, i) => {
