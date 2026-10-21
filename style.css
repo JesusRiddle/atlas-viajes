@@ -921,3 +921,6 @@ html{scroll-padding-top:78px}
  #plan .overview-editorial>.overview-side{height:100%;min-height:0;align-self:stretch}
  #plan .overview-editorial>.overview-side{justify-content:space-between}
 }
+
+/* La cuadrícula de alojamientos usa el número real de estancias (hasta cuatro por fila en Desktop). */
+@media(min-width:1001px){#plan .overview-intro .overview-stays-inline .baseroute{grid-template-columns:repeat(var(--stay-columns,3),minmax(0,1fr))}}
