@@ -74,6 +74,222 @@ window.AtlasTrip = function (ctx) {
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
             `<strong>${price(t)}</strong>`,
             `<p>MXN · una persona · habitación privada · viaje completo</p>`,
+            `<p class="budget-exchange">${t.exchangeRates && t.exchangeRateSnapshot ?
+                'Tipo de cambio de referencia · ' + esc(t.exchangeRateSnapshot.date) + '<span>€1 = 
+            `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
+            `</div>`,
+            `</aside>`,
+            `</div>${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}<div class="factgrid">`,
+            `<article>`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">✈</span>Salida y llegada · vuelos</h3>`,
+            `<div class="fact-copy">${factParagraphs(t.flight)}</div>`,
+            `</article>`,
+            `<article>`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">↔</span>Entre ciudades</h3>`,
+            `<div class="fact-copy">${factParagraphs(t.local)}</div>`,
+            `</article>`,
+            `<article>`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">☀</span>Clima y luz</h3>`,
+            `<div class="fact-copy">`,
+            `<p class="profile-summary">`,
+            `<strong>Dependencia del clima: ${esc(t.profile.weather)}.</strong> ${readable(t.profile.weatherWhy)}</p>${factParagraphs(t.climate)}</div>`,
+            `</article>`,
+            `<article>`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">◎</span>Ritmo y viajar solo</h3>`,
+            `<div class="fact-copy">`,
+            `<p class="profile-summary">`,
+            `<strong>Viajando solo: ${esc(t.profile.solo)}.</strong> ${readable(t.profile.soloWhy)}</p>${factParagraphs(t.solo)}</div>`,
+            `</article>`,
+            `</div>`,
+            `<article class="panel" style="margin-top:20px">`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">⌂</span>Dónde dormir</h3>${stayParagraphs(id)}</article>${!t.planningDetails ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>${variants(t)}${railAppendix(t)}${seasonality(t)}<section class="section wrap" id="dias">`,
+            `<div class="section-title">`,
+            `<div>`,
+            `<p class="eyebrow orange">El viaje, con tiempo para disfrutarlo</p>`,
+            `<h2>Día por día.</h2>`,
+            `</div>`,
+            `<div>`,
+            `<button class="printbutton" id="expand">Contraer todos los días</button> <button class="printbutton" id="print">Imprimir / guardar PDF</button>`,
+            `</div>`,
+            `</div>`,
+            `<div class="itinerary-layout">`,
+            `<aside class="daynav" aria-label="Días del itinerario">${t.days.map(d => `<a href="#viaje/${id}/dia-${d.n}"><strong>Día ${d.n} · ${short(d.date)}</strong>${esc(d.base)}${hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : ''}</a>`).join('')}</aside>`,
+            `<div class="days">${t.days.map(day).join('')}</div>`,
+            `</div>`,
+            `</section>${optionsSection(t)}<section class="section wrap" id="costes">`,
+            `<div class="section-title">`,
+            `<div>`,
+            `<p class="eyebrow orange">Una persona · MXN</p>`,
+            `<h2>Lo que cuesta el viaje.</h2>`,
+            `</div>`,
+            `<p>Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.</p>`,
+            `</div>`,
+            `<div class="budgetgrid">`,
+            `<div class="scrolltable">`,
+            `<table>`,
+            `<thead>`,
+            `<tr>`,
+            `<th>Concepto</th>`,
+            `<th>Desde</th>`,
+            `<th>Hasta</th>`,
+            `</tr>`,
+            `</thead>`,
+            `<tbody>${t.costs.map(x => `<tr><td>${esc(x[0])}</td><td>${x[1] === null ? 'Por cotizar' : money(x[1])}</td><td>${x[2] === null ? 'Por cotizar' : money(x[2])}</td></tr>`).join('')}<tr class="totalrow">`,
+            `<td>${t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo'}</td>`,
+            `<td>${money(low)}</td>`,
+            `<td>${money(high)}</td>`,
+            `</tr>`,
+            `</tbody>`,
+            `</table>${t.budgetNote ? `<p class="tiny">${esc(t.budgetNote)}</p>` : ''}<p class="tiny">Vuelos de ida y vuelta, estancias indicadas, comidas, transporte y visitas incluidos como estimación. Compras, tratamientos y la obtención de una nueva visa de Estados Unidos no están incluidos. Las alternativas del programa deben elegirse al cotizar las entradas; añadir visitas o espectáculos puede aumentar el total. Los precios dependen de las fechas y de la disponibilidad.</p>`,
+            `</div>`,
+            `<article class="panel">`,
+            `<h3>Las decisiones que importan</h3>`,
+            `<ul class="tips">${t.tips.map(s => `<li>${esc(s)}</li>`).join('')}</ul>`,
+            `</article>`,
+            `</div>${knownCostPanel(t)}</section>`,
+            `<section class="section wrap" id="fuentes">`,
+            `<p class="eyebrow orange">Fuentes y reservas</p>`,
+            `<h2>Consulta el canal oficial.</h2>`,
+            `<div class="sources">${t.sources.map(x => `<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join('')}</div>`,
+            `<p class="tiny">${esc(t.sourceNote || 'Planeación de referencia: 1 de octubre de 2026. Textos y galerías revisados el 2 de octubre.')} Comprueba calendarios y tarifas para tus fechas antes de comprar; las fotografías muestran los lugares, no el clima que tendrás durante el viaje.</p>`,
+            `</section>`
+        ].join('');
+        window.AtlasGallery.init(main);
+        releaseTransport = window.AtlasMajorTransport.mount(main, t);
+        window.AtlasTravel.initMap(t);
+        document.querySelector('#dest-select').addEventListener('change', e => {
+            location.hash = 'viaje/' + e.target.value;
+        });
+        document.querySelector('#expand').addEventListener('click', e => {
+            const all = [...document.querySelectorAll('.day')];
+            const opening = all.some(x => !x.open);
+            all.forEach(x => {
+                x.open = opening;
+                if (opening) loadGallery(x);
+            });
+            e.target.textContent = opening ? 'Contraer todos los días' : 'Desplegar todos los días';
+        });
+        document.querySelector('#print').addEventListener('click', printGuide);
+    }
+    function cleanup() {
+        if (releaseTransport) { releaseTransport(); releaseTransport = null; }
+    }
+    return { tripPage, cleanup };
+};
+ +
+                Number(t.exchangeRates.EUR).toFixed(4) + ' MXN · US$1 = 
+            `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
+            `</div>`,
+            `</aside>`,
+            `</div>${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}<div class="factgrid">`,
+            `<article>`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">✈</span>Salida y llegada · vuelos</h3>`,
+            `<div class="fact-copy">${factParagraphs(t.flight)}</div>`,
+            `</article>`,
+            `<article>`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">↔</span>Entre ciudades</h3>`,
+            `<div class="fact-copy">${factParagraphs(t.local)}</div>`,
+            `</article>`,
+            `<article>`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">☀</span>Clima y luz</h3>`,
+            `<div class="fact-copy">`,
+            `<p class="profile-summary">`,
+            `<strong>Dependencia del clima: ${esc(t.profile.weather)}.</strong> ${readable(t.profile.weatherWhy)}</p>${factParagraphs(t.climate)}</div>`,
+            `</article>`,
+            `<article>`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">◎</span>Ritmo y viajar solo</h3>`,
+            `<div class="fact-copy">`,
+            `<p class="profile-summary">`,
+            `<strong>Viajando solo: ${esc(t.profile.solo)}.</strong> ${readable(t.profile.soloWhy)}</p>${factParagraphs(t.solo)}</div>`,
+            `</article>`,
+            `</div>`,
+            `<article class="panel" style="margin-top:20px">`,
+            `<h3>`,
+            `<span class="section-icon" aria-hidden="true">⌂</span>Dónde dormir</h3>${stayParagraphs(id)}</article>${!t.planningDetails ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>${variants(t)}${railAppendix(t)}${seasonality(t)}<section class="section wrap" id="dias">`,
+            `<div class="section-title">`,
+            `<div>`,
+            `<p class="eyebrow orange">El viaje, con tiempo para disfrutarlo</p>`,
+            `<h2>Día por día.</h2>`,
+            `</div>`,
+            `<div>`,
+            `<button class="printbutton" id="expand">Contraer todos los días</button> <button class="printbutton" id="print">Imprimir / guardar PDF</button>`,
+            `</div>`,
+            `</div>`,
+            `<div class="itinerary-layout">`,
+            `<aside class="daynav" aria-label="Días del itinerario">${t.days.map(d => `<a href="#viaje/${id}/dia-${d.n}"><strong>Día ${d.n} · ${short(d.date)}</strong>${esc(d.base)}${hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : ''}</a>`).join('')}</aside>`,
+            `<div class="days">${t.days.map(day).join('')}</div>`,
+            `</div>`,
+            `</section>${optionsSection(t)}<section class="section wrap" id="costes">`,
+            `<div class="section-title">`,
+            `<div>`,
+            `<p class="eyebrow orange">Una persona · MXN</p>`,
+            `<h2>Lo que cuesta el viaje.</h2>`,
+            `</div>`,
+            `<p>Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.</p>`,
+            `</div>`,
+            `<div class="budgetgrid">`,
+            `<div class="scrolltable">`,
+            `<table>`,
+            `<thead>`,
+            `<tr>`,
+            `<th>Concepto</th>`,
+            `<th>Desde</th>`,
+            `<th>Hasta</th>`,
+            `</tr>`,
+            `</thead>`,
+            `<tbody>${t.costs.map(x => `<tr><td>${esc(x[0])}</td><td>${x[1] === null ? 'Por cotizar' : money(x[1])}</td><td>${x[2] === null ? 'Por cotizar' : money(x[2])}</td></tr>`).join('')}<tr class="totalrow">`,
+            `<td>${t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo'}</td>`,
+            `<td>${money(low)}</td>`,
+            `<td>${money(high)}</td>`,
+            `</tr>`,
+            `</tbody>`,
+            `</table>${t.budgetNote ? `<p class="tiny">${esc(t.budgetNote)}</p>` : ''}<p class="tiny">Vuelos de ida y vuelta, estancias indicadas, comidas, transporte y visitas incluidos como estimación. Compras, tratamientos y la obtención de una nueva visa de Estados Unidos no están incluidos. Las alternativas del programa deben elegirse al cotizar las entradas; añadir visitas o espectáculos puede aumentar el total. Los precios dependen de las fechas y de la disponibilidad.</p>`,
+            `</div>`,
+            `<article class="panel">`,
+            `<h3>Las decisiones que importan</h3>`,
+            `<ul class="tips">${t.tips.map(s => `<li>${esc(s)}</li>`).join('')}</ul>`,
+            `</article>`,
+            `</div>${knownCostPanel(t)}</section>`,
+            `<section class="section wrap" id="fuentes">`,
+            `<p class="eyebrow orange">Fuentes y reservas</p>`,
+            `<h2>Consulta el canal oficial.</h2>`,
+            `<div class="sources">${t.sources.map(x => `<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join('')}</div>`,
+            `<p class="tiny">${esc(t.sourceNote || 'Planeación de referencia: 1 de octubre de 2026. Textos y galerías revisados el 2 de octubre.')} Comprueba calendarios y tarifas para tus fechas antes de comprar; las fotografías muestran los lugares, no el clima que tendrás durante el viaje.</p>`,
+            `</section>`
+        ].join('');
+        window.AtlasGallery.init(main);
+        releaseTransport = window.AtlasMajorTransport.mount(main, t);
+        window.AtlasTravel.initMap(t);
+        document.querySelector('#dest-select').addEventListener('change', e => {
+            location.hash = 'viaje/' + e.target.value;
+        });
+        document.querySelector('#expand').addEventListener('click', e => {
+            const all = [...document.querySelectorAll('.day')];
+            const opening = all.some(x => !x.open);
+            all.forEach(x => {
+                x.open = opening;
+                if (opening) loadGallery(x);
+            });
+            e.target.textContent = opening ? 'Contraer todos los días' : 'Desplegar todos los días';
+        });
+        document.querySelector('#print').addEventListener('click', printGuide);
+    }
+    function cleanup() {
+        if (releaseTransport) { releaseTransport(); releaseTransport = null; }
+    }
+    return { tripPage, cleanup };
+};
+ +
+                Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span>' : ''}</p>`,
             `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `</div>`,
             `</aside>`,
