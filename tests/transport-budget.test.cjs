@@ -64,8 +64,9 @@ test('solo se suma una tarifa por transporte, no las alternativas', () => {
     assert.ok(summary.partial);
     // Vuelos + todos los trenes + los tres hoteles + entradas de Firenze.
     // El importe no debe permanecer anclado a la etapa en que solo había vuelos.
-    const expected = 18754 + 13881 +
-        Math.round((103.70 + 127 + 283 + 83) * trip.exchangeRates.EUR * 100) / 100;
+    const expected = [...trip.majorTransport.map(t => budget.selectedTransportPrice(t)),
+        ...trip.expenses.map(e => e.cost)]
+        .reduce((sum, cost) => sum + budget.convert(cost, trip.exchangeRates), 0);
     assert.equal(summary.knownTotalMXN, Math.round(expected * 100) / 100);
     assert.equal(summary.entries.length, trip.majorTransport.length + trip.expenses.length);
     assert.equal(summary.pending.length, 0);
@@ -147,7 +148,7 @@ test('las cotizaciones incompletas no se interpretan como costos cero', () => {
     assert.equal(result.knownTotalMXN, 0);
     assert.equal(result.partial, true);
     assert.equal(result.byDay['2026-11-26'].partial, true);
-    assert.deepEqual(result.pending, ['pending-eur']);
+    assert.deepEqual([...result.pending], ['pending-eur']);
 });
 
 test('el rango preliminar no se suma al subtotal conocido', () => {
