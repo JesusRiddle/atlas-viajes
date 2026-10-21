@@ -99,13 +99,14 @@
       "mobility": "Traslado interno *T1 → T2*: Utiliza el autobús gratuito del aeropuerto *(10-15 min de trayecto)*. Sigue los letreros de conexión entre terminales y toma el acceso peatonal directo al hotel (5 min a pie). Confirma tu terminal exacta de llegada y los horarios nocturnos del autobús.",
       "spend": null,
       "note": "Importante: El vuelo sale a las *00:05 del jueves 26 de noviembre*, por lo que debes presentarte en el AICM *la noche del miércoles 25*. En Madrid, confirma que ambos vuelos estén en la misma reserva y, si documentas equipaje, que esté etiquetado hasta Milano; durante la conexión, sigue las indicaciones hacia tu puerta y considera el control de pasaportes para entrar al espacio Schengen. Como llegarás a Malpensa a las *22:10*, *avisa al Moxy de tu llegada nocturna* y confirma la posibilidad de hacer el check-in después de medianoche si se retrasa el vuelo.",
-      "noteLinks": [
+      "noteLinks": [],
+      "hotel": "hotel-1",
+      "mobilityLinks": [
         {
           "label": "Autobús gratuito T1–T2",
           "url": "https://www.milanomalpensa-airport.com/en/from-to/connections-with-terminals"
         }
-      ],
-      "hotel": "hotel-1"
+      ]
     },
     {
       "n": 2,
@@ -144,6 +145,17 @@
           "url": "https://www.museoscala.org/"
         },
         {
+          "label": "Duomo di Milano · entradas",
+          "url": "https://www.duomomilano.it/"
+        },
+        {
+          "label": "Pinacoteca di Brera",
+          "url": "https://pinacotecabrera.org/"
+        }
+      ],
+      "hotel": "hotel-2",
+      "mobilityLinks": [
+        {
           "label": "Malpensa Express · billetes",
           "url": "https://www.malpensaexpress.it/en/travel-documents/tickets/"
         },
@@ -152,19 +164,10 @@
           "url": "https://www.atm.it/en/VIAGGIACONNOI/BIGLIETTI/Pages/tickets_milan.aspx"
         },
         {
-          "label": "Duomo di Milano · entradas",
-          "url": "https://www.duomomilano.it/"
-        },
-        {
-          "label": "Pinacoteca di Brera",
-          "url": "https://pinacotecabrera.org/"
-        },
-        {
           "label": "Malpensa Express",
           "url": "https://www.malpensaexpress.it/"
         }
-      ],
-      "hotel": "hotel-2"
+      ]
     },
     {
       "n": 3,
@@ -230,10 +233,6 @@
       "note": "• *Tren:* Horarios y tarifas de *Frecciarossa* e *Italo* provisionales: confirmar el servicio elegido y sus condiciones antes de comprar. Llegar a *Milano Centrale* con 15–20 min de anticipación. Si se pierde un tren, revisar las condiciones del billete antes de intentar viajar con otro operador.\n• *San Petronio:* Capillas de pago abiertas de 10:00 a 17:30 (último acceso 17:15). Recorrido de tres capillas €5; no requiere reserva individual. No se permite ingresar con maletas.\n• *Torre dell’Orologio:* Entrada €10 con horario reservado. Accesos cada 20 min; último ingreso a las 18:20. No dispone de ascensor.\n• *Le Due Torri:* *Torre degli Asinelli* y *Torre Garisenda* cerradas. Respetar el perímetro de seguridad.\n• *Santo Stefano:* El domingo, complejo monumental abierto de 09:30 a 12:30 y de 15:30 a 19:00. Evitar celebraciones religiosas.\n• *Archiginnasio:* Visita programada para el miércoles; no incluir este día.\n• *Tour guiado:* Opcional, siempre que no duplique los monumentos y entradas ya previstos.",
       "noteLinks": [
         {
-          "label": "KiPoint · ubicación y servicio",
-          "url": "https://www.bolognawelcome.com/it/altro/altro/deposito-bagagli--kipoint-bologna-centrale"
-        },
-        {
           "label": "Torre dell’Orologio · turismo oficial",
           "url": "https://www.bolognawelcome.com/"
         },
@@ -250,7 +249,13 @@
           "url": "https://www.bolognawelcome.com/it/area-stampa/press-news-asinelli-tower-closing"
         }
       ],
-      "hotel": "hotel-3"
+      "hotel": "hotel-3",
+      "mobilityLinks": [
+        {
+          "label": "KiPoint · ubicación y servicio",
+          "url": "https://www.bolognawelcome.com/it/altro/altro/deposito-bagagli--kipoint-bologna-centrale"
+        }
+      ]
     },
     {
       "n": 5,
@@ -358,7 +363,9 @@
       "mobility": "• *Alojamiento → San Luca:* Caminar 15–20 min hasta la parada *San Pietro*. Tomar autobús 20 dirección *Casalecchio* hasta *Villa Spada* y conectar con el 58 dirección *Basilica di San Luca*. Prever 50–60 min desde el centro, según conexiones.\n• *Portico di San Luca:* Recorrer únicamente un tramo próximo al santuario. Regresar a la parada superior para tomar el autobús.\n• *San Luca → Centro:* Tomar el 58 hasta *Villa Spada* y conectar con el 20 dirección centro. Consultar horarios antes del regreso.\n• *Centro → Palazzo Poggi:* Caminar hasta *Via Zamboni 33* (10–15 min desde *Piazza Maggiore*).\n• *Palazzo Poggi → Archiginnasio:* Caminar 10–15 min hasta *Piazza Galvani 1*.\n• *Archiginnasio → San Domenico:* Caminar aproximadamente 10 min hasta *Piazza San Domenico 13*.\n• *San Domenico → Alojamiento:* Caminar aproximadamente 25 min hasta *HouSmart Milazzo 5*.\n• *Transporte TPER:* Billete urbano €2.30 (≈ $47 MXN), válido 75 min con transbordos. Prever otro billete para el regreso.\n• *Plan B:* Taxi directo a *San Luca* (20–30 min; estimado €25–35 por trayecto). Confirmar precio y recogida.",
       "spend": null,
       "note": "• *San Luca:* Santuario abierto diariamente de 07:00 a 18:00 en invierno. Acceso gratuito, salvo actividades opcionales de pago.\n• *Autobús 58:* Consultar horarios de ida y regreso en TPER. Frecuencia limitada y posibles esperas prolongadas.\n• *Palazzo Poggi:* Visita breve prevista hacia las 13:15. La *Sala Alma Mater* tiene acceso gratuito; confirmar disponibilidad del patio y de la sala. El museo completo cierra los miércoles a las 16:00 y no está incluido en el plan.\n• *Archiginnasio:* Reservar *Teatro Anatomico* preferentemente a las 14:30. Entrada con audioguía €10. Presentarse 10 min antes con celular y audífonos.\n• *Sala dello Stabat Mater:* Incluida con la entrada del *Teatro Anatomico*, sujeta a disponibilidad. Biblioteca no abierta a visitas turísticas.\n• *San Domenico:* Abierta los miércoles de 07:00 a 13:00 y de 15:30 a 20:00. Visitar después de las 15:30, fuera del culto.\n• *Michelangelo:* Identificar en la *Arca di San Domenico* las esculturas *San Petronio*, *San Procolo* y el ángel portacandelabro.\n• *Flexibilidad:* Si se retrasa el regreso de *San Luca*, reducir o eliminar la visita breve a *Palazzo Poggi* para respetar la reserva del *Archiginnasio*.\n• *San Luca Express:* Transporte turístico opcional, sujeto a operación. La ruta principal utiliza autobuses TPER.",
-      "noteLinks": [
+      "noteLinks": [],
+      "hotel": "hotel-3",
+      "mobilityLinks": [
         {
           "label": "San Luca · cómo llegar",
           "url": "https://www.bolognawelcome.com/en/blog/san-luca"
@@ -367,8 +374,7 @@
           "label": "TPER · horarios y líneas",
           "url": "https://www.tper.it/"
         }
-      ],
-      "hotel": "hotel-3"
+      ]
     },
     {
       "n": 8,
@@ -550,7 +556,8 @@
       "mobility": "• *Alojamiento → Bologna Centrale:* Caminar 5–10 min desde *HouSmart Milazzo 5* hasta el acceso del *Marconi Express* por *Via de’ Carracci*.\n• *Bologna Centrale → Aeropuerto BLQ:* Tomar *Marconi Express* (7–8 min de recorrido). Servicio habitual de 05:40 a 00:00, con frecuencias variables de 7–15 min.\n• *Estación aeroportuaria → Terminal:* Seguir el pasillo cubierto hasta la planta de salidas (5–10 min).\n• *Tiempo total previsto:* Reservar 45–60 min desde el alojamiento hasta la terminal, incluyendo caminatas y espera.\n• *Plan B:* Taxi directo desde *HouSmart Milazzo 5* hasta BLQ (20–30 min; estimado €25–35 ≈ $510–$714 MXN, sujeto a tráfico y suplementos).\n• *Conexión en Madrid:* Verificar la puerta de llegada de *IB1238*. Normalmente la conexión Schengen → México requiere pasar de *T4 a T4S* con el tren automático y control de pasaportes de salida; algunos vuelos Schengen pueden llegar a T4S. Seguir las señales y pantallas de conexiones, sin abandonar la zona de tránsito.\n• *Aeropuerto MEX → Casa:* Traslado por cuenta propia según la terminal de llegada.",
       "spend": null,
       "note": "• *Vuelo:* Itinerario previsto BLQ 12:25 → MAD → MEX 22:10. Confirmar vuelos, terminales y horarios en la reserva definitiva de Iberia.\n• *Marconi Express:* Billete sencillo €12.80. Acceso en *Bologna Centrale* por el vestíbulo de *Via de’ Carracci*. Pago con tarjeta contactless o billete digital.\n• *Servicio aeroportuario:* Consultar posibles interrupciones del *Marconi Express* la víspera. En caso de suspensión, utilizar el transporte sustitutorio oficial si mantiene el margen previsto o tomar taxi.\n• *Llegada a BLQ:* Objetivo 09:15–09:25, aproximadamente 3 h antes de la salida. Evitar retrasar el check-out.\n• *Check-in:* Realizar check-in online de Iberia cuando esté disponible. Descargar ambas tarjetas de embarque y verificar la asignación de asientos.\n• *Conexión en Madrid:* Escala prevista de 1 h 55 min. La conexión habitual es T4 → T4S mediante tren automático y control de pasaportes, aunque la llegada de IB1238 podría asignarse a T4S. Consultar terminal y puerta efectivas. No programar actividades ni compras durante la conexión.\n• *Reserva aérea:* Priorizar ambos vuelos en un solo billete para contar con protección de conexión. Si son reservas separadas, la escala resulta arriesgada y requiere reconsideración.\n• *Equipaje:* Confirmar límites de cabina de Iberia y Air Nostrum. Llevar pasaporte, documentos, medicamentos y objetos de valor en el equipaje personal.\n• *Fin del viaje:* 7 de diciembre de 2026. Total: 12 días naturales y 8 días laborales. Los traslados aeroportuarios no forman parte del total de trenes interurbanos.\n• *Tarifas Iberia:* Las penalizaciones de cambios, diferencia de tarifa, condiciones de reembolso y precio de la maleta documentada dependen de la reserva concreta. Revisar el detalle de Básica, Óptima y Confort antes de comprar; ninguna cifra adicional está confirmada.",
-      "noteLinks": [
+      "noteLinks": [],
+      "mobilityLinks": [
         {
           "label": "Marconi Express · tarifas y servicio",
           "url": "https://www.marconiexpress.it/biglietti/tariffe-e-validita/"
@@ -1871,7 +1878,6 @@
     "reservationNote": "Horarios elegidos, pendientes de compra. Coordinar las tres entradas de Firenze antes de reservar por separado.",
     "reservationTitle": "Reservas críticas"
   },
-  "sourceNote": "Logística ferroviaria y alojamiento de Bologna revisados el 8 de octubre de 2026 con cotizaciones del viajero, no reservas. Confirmar calendario invernal de Ravenna y disponibilidad de Acetaia Marchi.",
   "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",
   "heroLodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta provisional)",
   "budgetPreliminary": true,
@@ -1938,8 +1944,6 @@
       "rate": "€127 (≈ $2,590 MXN) total · 1 noche",
       "rateConditions": "Tarifa de miembro flexible, sin desayuno",
       "notes": "Registrarse gratis en Marriott Bonvoy e iniciar sesión antes de reservar. Avisar de llegada nocturna y confirmar check-in después de medianoche si hubiera retrasos.",
-      "url": "https://www.marriott.com/en-us/hotels/milox-moxy-milan-malpensa-airport/overview/",
-      "linkLabel": "Reserva oficial",
       "links": [
         {
           "label": "Reserva oficial",
@@ -1959,8 +1963,6 @@
       "rate": "€283 (≈ $5,770 MXN) total · 2 noches",
       "rateConditions": "B&me Breakfast Flex con desayuno y cancelación flexible según cotización",
       "notes": "Requiere registro gratuito B&me. Confirmar precio final y posibilidad de dejar equipaje antes del check-in.",
-      "url": "https://www.hotel-bb.com/en/hotel/milano-aosta",
-      "linkLabel": "Reserva oficial",
       "links": [
         {
           "label": "Reserva oficial",
@@ -1980,8 +1982,6 @@
       "rate": "$13,881 MXN total · 8 noches",
       "rateConditions": "Apartamento completo de 1 dormitorio, 38 m², 1 adulto",
       "notes": "Check-in desde las 15:00, sin recepción presencial: confirmar con antelación las instrucciones de self check-in y la posibilidad de dejar el equipaje antes de esa hora. Si no ofrecen consigna, utilizar KiPoint en Bologna Centrale, zona oeste / andén 7 Oeste, y comenzar las visitas sin maleta. Verificar previamente horarios y disponibilidad del servicio.",
-      "url": "https://www.booking.com/hotel/it/housmart-milazzo-5.html",
-      "linkLabel": "Ver alojamiento",
       "links": [
         {
           "label": "Booking.com",
