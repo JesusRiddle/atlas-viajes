@@ -1999,27 +1999,33 @@
       },
       "11": {
         "status": "conditional",
-        "description": "Fresco y lluvioso (máx. 12–16 °C). Menos turistas, pero días cortos y posible niebla."
+        "description": "Fresco y lluvioso (máx. 12–16 °C). Menos turistas, pero días cortos y posible niebla.",
+        "icon": "cloudy"
       },
       "12": {
         "status": "conditional",
-        "description": "Frío (máx. 7–11 °C), atardecer temprano y ambiente navideño. Abrigarse bien."
+        "description": "Frío (máx. 7–11 °C), atardecer temprano y ambiente navideño. Abrigarse bien.",
+        "icon": "snow"
       },
       "01": {
         "status": "avoid",
-        "description": "Muy frío (máx. 6–9 °C), heladas, niebla y poca luz. Menos turistas, pero excursiones menos cómodas."
+        "description": "Muy frío (máx. 6–9 °C), heladas, niebla y poca luz. Menos turistas, pero excursiones menos cómodas.",
+        "icon": "snow"
       },
       "02": {
         "status": "conditional",
-        "description": "Frío (máx. 9–12 °C), pero días más largos y menos turistas. Viable con abrigo y flexibilidad."
+        "description": "Frío (máx. 9–12 °C), pero días más largos y menos turistas. Viable con abrigo y flexibilidad.",
+        "icon": "partlyCloudy"
       },
       "03": {
         "status": "conditional",
-        "description": "Primavera temprana (máx. 14–16 °C), más luz y turismo moderado; mañanas frías y tiempo variable."
+        "description": "Primavera temprana (máx. 14–16 °C), más luz y turismo moderado; mañanas frías y tiempo variable.",
+        "icon": "partlyCloudy"
       },
       "04": {
         "status": "recommended",
-        "description": "Clima templado (máx. 18–20 °C) y días largos; ideal para excursiones, con posibles lluvias y más turistas en Semana Santa."
+        "description": "Clima templado (máx. 18–20 °C) y días largos; ideal para excursiones, con posibles lluvias y más turistas en Semana Santa.",
+        "icon": "sun"
       },
       "05": {
         "status": "pending",
