@@ -639,14 +639,6 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 .budget-teaser .budget-exchange{border-top:1px solid #ffffff35;padding-top:11px;margin-top:12px;font-size:12px;color:#d2e0e4;line-height:1.55}
 .budget-teaser .budget-exchange span{display:block;color:#fff;font-weight:600;font-size:12px}
 
-/* Tabla consolidada de costos: conservar legibilidad de importes. */
-.budget-ledger .budget-category th{text-align:left;background:var(--pale);color:var(--ink);font-size:13px;padding:10px 14px;border-top:1px solid var(--line)}
-.budget-ledger .budget-amount{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
-.budget-ledger .budget-subtotal td{font-weight:700;background:#f7f9f9}
-.budget-ledger .budget-range{border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:14px}
-@media(max-width:680px){.budget-ledger table{font-size:12px}.budget-ledger th,.budget-ledger td{padding:9px 10px}}
-
-
 /* Desktop: lectura y estados de interacción de traslados y presupuesto. */
 @media screen and (min-width: 851px) {
   #traslados .mt-card>summary {
@@ -661,40 +653,21 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 #traslados .mt-card>summary:focus-visible {outline:3px solid #dc5c2e;outline-offset:-3px}
 #traslados .mt-selectors select {width:100%;min-height:42px;font-size:14px;line-height:1.35}
 #traslados .mt-selectors select:focus-visible {outline:3px solid #dc5c2e;outline-offset:2px;border-color:#dc5c2e}
-.budget-ledger .scrolltable {max-width:100%}
-.budget-ledger table {table-layout:fixed}
-.budget-ledger table th:first-child,
-.budget-ledger table td:first-child {width:54%;white-space:normal;overflow-wrap:anywhere}
-.budget-ledger table th:nth-child(2),
-.budget-ledger table th:nth-child(3) {text-align:right}
-.budget-ledger table th:nth-child(2),
-.budget-ledger table td:nth-child(2) {width:22%}
-.budget-ledger table th:nth-child(3),
-.budget-ledger table td:nth-child(3) {width:24%}
-.budget-ledger .budget-subtotal td {border-top:1px solid var(--line)}
-@media screen and (min-width: 851px) {
-  .budget-ledger table th,.budget-ledger table td {padding:12px 14px}
-}
-
-/* Jerarquía editorial de la tabla de presupuesto. */
-.budget-ledger .budget-category th {
-  background:#e7edef;
-  border-top:2px solid #b9c8cc;
-  padding:10px 14px;
-  font-size:13px;
-  letter-spacing:.15px;
-}
-.budget-ledger .budget-subtotal td {
-  background:#eaf0f1 !important;
-  border-top:1px solid #b9c8cc;
-  font-weight:700;
-}
-.budget-ledger .budget-pending td {color:var(--muted)}
-.budget-ledger .budget-pending .budget-amount {font-style:italic}
-@media screen and (min-width: 851px) {
-  .budget-ledger tbody tr:not(.budget-category):not(.budget-subtotal):not(.totalrow) td {
-    padding-top:9px;
-    padding-bottom:9px;
-  }
-  .budget-ledger .budget-subtotal td {padding-top:10px;padding-bottom:10px}
-}
+/* Tabla de presupuesto: jerarquía visual uniforme, sin rayado alternado. */
+.budget-ledger .scrolltable{max-width:100%}
+.budget-ledger table{table-layout:fixed;font-size:14px;line-height:1.45}
+.budget-ledger table th:first-child,.budget-ledger table td:first-child{width:54%;white-space:normal;overflow-wrap:anywhere}
+.budget-ledger table th:nth-child(2),.budget-ledger table td:nth-child(2){width:22%}
+.budget-ledger table th:nth-child(3),.budget-ledger table td:nth-child(3){width:24%}
+.budget-ledger table th:nth-child(2),.budget-ledger table th:nth-child(3),.budget-ledger .budget-amount{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.budget-ledger tbody td{background:white}
+.budget-ledger th,.budget-ledger td{font-style:normal}
+.budget-ledger .budget-category th{background:#e7edef;color:var(--ink);border-top:10px solid white;border-bottom:1px solid #c9d5d8;padding:14px 14px 12px;font-size:17px;font-weight:700;line-height:1.25;letter-spacing:0;text-align:left}
+.budget-ledger .budget-item td{padding:10px 14px;font-size:14px;font-weight:400;color:var(--ink)}
+.budget-ledger .budget-pending td{color:var(--muted)}
+.budget-ledger .budget-subtotal td{background:#f3f6f7!important;border-top:1px solid #d6e0e3;padding:10px 14px;font-size:14px;font-weight:400}
+.budget-ledger .budget-subtotal td:first-child{font-weight:600}
+.budget-ledger .budget-subtotal .budget-amount{font-weight:700}
+.budget-ledger .totalrow td{font-size:16px;font-weight:700}
+.budget-ledger .budget-range{border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:14px}
+@media(max-width:680px){.budget-ledger table{font-size:12px}.budget-ledger .budget-item td,.budget-ledger .budget-subtotal td{padding:9px 10px;font-size:12px}.budget-ledger .budget-category th{font-size:15px;padding:11px 10px 10px}.budget-ledger .totalrow td{font-size:14px}}
