@@ -185,7 +185,7 @@ window.AtlasTrip = function (ctx) {
             `${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
             `${t.id === 'emilia-romana' ? '' : adviceCards(t)}`,
             `<article class="panel" id="alojamientos" style="margin-top:20px">`,
-            `<div class="hotel-section-heading"><div class="hotel-section-kicker">${overviewIcon('bed')}<span>Tu estancia</span></div><h2>Dónde dormir.</h2></div>`,
+            `<div class="hotel-section-heading"><div class="hotel-section-kicker">${overviewIcon('bed')}<span>Tu estancia</span></div><h2>Tus alojamientos.</h2></div>`,
             `${stayParagraphs(id)}</article>${!t.planningDetails ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>${variants(t)}${railAppendix(t)}${seasonality(t)}<section class="section wrap" id="dias">`,
             `<div class="section-title">`,
             `<div>`,
