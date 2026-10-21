@@ -904,3 +904,12 @@ html{scroll-padding-top:78px}
 #plan .overview-climate-card h3,#plan .overview-intro>.overview-practical h3{display:flex;align-items:center;gap:8px}
 #plan .overview-climate-card h3 .overview-icon,#plan .overview-intro>.overview-practical h3 .overview-icon{flex:none;width:18px;height:18px}
 #plan .overview-intro>.overview-practical + .overview-stays-inline{border-top:0;margin-top:0;padding-top:15px}
+
+/* Indicadores prácticos del viaje: icono, título y dato breve. */
+#plan .overview-practical-grid.practical-indicators{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 20px}
+#plan .practical-indicator{display:flex;align-items:flex-start;gap:9px;min-width:0}
+#plan .practical-indicator-icon{display:inline-flex;flex:none;color:var(--ink);margin-top:2px}
+#plan .practical-indicator>div{min-width:0}
+#plan .practical-indicator strong{display:block;font-size:13px;line-height:1.35}
+#plan .practical-indicator p{margin:3px 0 0;color:var(--muted);font-size:13px;line-height:1.5}
+@media(max-width:680px){#plan .overview-practical-grid.practical-indicators{grid-template-columns:1fr;gap:14px}}
