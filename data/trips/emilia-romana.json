@@ -706,7 +706,7 @@
         },
         {
           "title": "Trenes de alta velocidad",
-          "description": "Milano → Bologna y Bologna ↔ Firenze: servicios cotizados para las fechas exactas; verificar disponibilidad y condiciones al comprar."
+          "description": "Billetes de Milano a Bologna y de Bologna a Firenze (ida y vuelta). Tarifas cotizadas; confirmar disponibilidad y condiciones antes de comprar."
         }
       ]
     ]
@@ -1876,7 +1876,7 @@
   ],
   "planningDetails": {
     "reservationNote": "Horarios elegidos, pendientes de compra. Coordinar las tres entradas de Firenze antes de reservar por separado.",
-    "reservationTitle": "Reservas críticas"
+    "reservationTitle": "Reservaciones importantes"
   },
   "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",
   "heroLodgingSummary": "3 alojamientos",
