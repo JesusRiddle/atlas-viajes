@@ -5,9 +5,9 @@ window.AtlasSeasonality = function (ctx) {
     const names = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
     const states = {
         pending: { label: 'Por definir', css: 'pending' },
-        recommended: { label: 'Recomendado', css: 'recommended' },
+        recommended: { label: 'Recomendable', css: 'recommended' },
         conditional: { label: 'Aceptable', css: 'conditional' },
-        avoid: { label: 'Desaconsejado', css: 'avoid' }
+        avoid: { label: 'Desaconsejable', css: 'avoid' }
     };
     const weatherIcons = {
         snow: '<path d="M12 2v20M4 7l16 10M20 7 4 17M9 5l3 3 3-3M9 19l3-3 3 3"/>',
@@ -42,7 +42,7 @@ window.AtlasSeasonality = function (ctx) {
             <div class="seasonality-panel">
             <div class="section-title"><div><p class="eyebrow orange seasonality-kicker atlas-editorial-kicker"><svg class="seasonality-heading-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-9 4 2 2 4-4"/></svg><span>Cuándo viajar</span></p><h2 id="seasonality-heading" class="atlas-editorial-title">Temporadas recomendadas.</h2><p class="seasonality-intro">Compara los meses según el clima, la afluencia turística y la comodidad del recorrido.</p></div></div>
             <ul class="season-months" aria-label="Temporadas de enero a diciembre">${blocks}</ul>
-            <div class="season-legend" aria-label="Leyenda de estados">${Object.values(states).map(state => `<span><i class="season-swatch season-${state.css}" aria-hidden="true"></i>${esc(state.label)}</span>`).join('')}</div>
+            
             <p class="season-summary"><strong>Resumen:</strong> ${highlightedSummary(data.summary || 'Por definir', data.months)}</p>
             </div>
         </section>`;
