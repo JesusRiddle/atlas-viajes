@@ -35,7 +35,7 @@ window.AtlasDayTransport = (() => {
                     mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
                     '</span></div>' + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
                     '<small>' + esc(option.provider || '') + ' · ' +
-                    esc(fare.name || fare.id) + '</small></div>';
+                    esc(fare.name || fare.id) + (item.type === 'flight' ? ' · Precio ida y vuelta' : '') + '</small></div>';
             }).join('') + '<p>Referencia del traslado completo, ya contabilizada en el presupuesto.</p></section>';
     }
     function mountTransport(root, trip) {
