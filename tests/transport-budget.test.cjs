@@ -250,3 +250,43 @@ test('operadores y números de servicio sobreviven a la integración diaria', ()
     const flight = view.transportSummary(trip, trip.days[0]);
     assert.ok(flight.includes('Precio ida y vuelta'));
 });
+
+test('trenes referenciados se asignan al día sin duplicar el subtotal global', () => {
+    const result = budget.summary(trip);
+    for (const day of trip.days.filter(d => d.transportRefs?.some(ref => ref.startsWith('train-')))) {
+        const ref = day.transportRefs.find(id => id.startsWith('train-'));
+        assert.equal(result.byDay[day.date].entries.filter(e => e.id === ref).length, 1);
+    }
+    assert.equal(result.byDay[trip.days[0].date].entries.some(e => e.id === 'flight-international'), false);
+    assert.equal(result.byDay[trip.days.at(-1).date].entries.some(e => e.id === 'flight-international'), false);
+    const allocated = Object.values(result.byDay).reduce((sum, day) => sum + day.totalMXN, 0);
+    const flight = result.entries.find(e => e.id === 'flight-international');
+    assert.equal(Math.round((allocated + flight.mxn) * 100) / 100, result.knownTotalMXN);
+});
+
+test('presupuesto diario responde al cambio de tren sin modificar los alojamientos', () => {
+    const date = '2026-11-29';
+    const original = budget.currentSummary(trip).byDay[date].totalMXN;
+    const other = budget.currentSummary(trip).byDay['2026-11-30'].totalMXN;
+    selections.set(trip, 'train-milano-bologna', 'B', 'smart');
+    try {
+        const changed = budget.currentSummary(trip);
+        assert.equal(Math.round((changed.byDay[date].totalMXN - original) * 100) / 100,
+            budget.convert({ amount: 3, currency: 'EUR' }, trip.exchangeRates));
+        assert.equal(changed.byDay['2026-11-30'].totalMXN, other);
+    } finally {
+        selections.reset(trip.id);
+    }
+});
+
+test('tarjeta diaria presenta partidas registradas, no inventa comidas ni asigna vuelos redondos', () => {
+    vm.runInContext(fs.readFileSync('components/day-budget.js', 'utf8'), ctx, { filename: 'components/day-budget.js' });
+    const view = ctx.window.AtlasDayBudget;
+    const firenze = view.render(trip, trip.days.find(d => d.n === 9));
+    assert.ok(firenze.includes('Firenze · entradas imprescindibles'));
+    assert.ok(firenze.includes('Bologna ↔ Firenze'));
+    assert.ok(firenze.includes('Subtotal parcial'));
+    const outbound = view.render(trip, trip.days[0]);
+    assert.ok(outbound.includes('vuelo redondo se contabiliza únicamente en el total'));
+    assert.ok(!outbound.includes('20,060'));
+});
