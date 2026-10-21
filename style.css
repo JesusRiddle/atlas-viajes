@@ -1053,3 +1053,8 @@ html{scroll-padding-top:78px}
 #dias .atlas-section-kicker,#costes .atlas-section-kicker{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
 #dias .atlas-section-kicker svg,#costes .atlas-section-kicker svg{width:17px;height:17px;flex:none}
 #dias .section-title h2,#costes .section-title h2{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0;color:var(--ink)}
+
+/* Jerarquía editorial compartida: temporadas y presupuesto. */
+#temporadas .atlas-editorial-kicker,#costes .atlas-editorial-kicker{display:flex;align-items:center;gap:8px;margin:0;color:#92502b;font-size:11px;font-weight:700;letter-spacing:1.3px;line-height:1.4;text-transform:uppercase}
+#temporadas .atlas-editorial-kicker svg,#costes .atlas-editorial-kicker svg{width:17px;height:17px;flex:none}
+#temporadas .atlas-editorial-title,#costes .atlas-editorial-title{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;font-weight:700;color:var(--ink);margin:6px 0 0}
