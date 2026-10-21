@@ -63,11 +63,24 @@ window.AtlasTrip = function (ctx) {
             '<div class="fact-copy">' + factParagraphs(t.climate) + '</div></article>';
     }
     function practicalAdvice(t) {
+        const icons = {
+            solo: '<circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>',
+            pace: '<path d="m3 17 5-5 4 4 5-8 4 3"/><path d="M3 21h18"/>',
+            language: '<path d="m5 8 6 6m-7 0 7-7M3 5h11M9 3v2m4 16 5-11 5 11m-8-4h6"/>',
+            currency: '<rect x="2" y="5" width="20" height="15" rx="2"/><path d="M2 9h20M6 15h4"/>'
+        };
+        const indicators = Array.isArray(t.practicalIndicators) ? t.practicalIndicators : null;
+        const content = indicators
+            ? indicators.map(item => '<div class="practical-indicator">' +
+                '<span class="practical-indicator-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' +
+                (icons[item.id] || icons.solo) + '</svg></span>' +
+                '<div><strong>' + esc(item.title) + '</strong><p>' + esc(item.text) + '</p></div></div>').join('')
+            : t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
+                readable(part) + '</div>').join('');
         return '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
             '<h3>' + overviewIcon('practical') + ' Ritmo y consejos prácticos</h3>' +
-            '<div class="overview-practical-grid">' +
-            t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
-                readable(part) + '</div>').join('') + '</div></section>';
+            '<div class="overview-practical-grid' + (indicators ? ' practical-indicators' : '') + '">' +
+            content + '</div></section>';
     }
     function overviewStays(t, inline = false) {
         const nights = t.bases.reduce((sum, base) => sum + Number(base[1] || 0), 0);
