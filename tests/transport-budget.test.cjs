@@ -62,7 +62,13 @@ test('solo se suma una tarifa por transporte, no las alternativas', () => {
     assert.equal(trains.length, 6);
     assert.equal(trains.reduce((sum, x) => sum + x.cost.amount, 0).toFixed(2), '103.70');
     assert.ok(summary.partial);
-    assert.equal(summary.knownTotalMXN, 18754);
+    // Vuelos + todos los trenes + los tres hoteles + entradas de Firenze.
+    // El importe no debe permanecer anclado a la etapa en que solo había vuelos.
+    const expected = 18754 + 13881 +
+        Math.round((103.70 + 127 + 283 + 83) * trip.exchangeRates.EUR * 100) / 100;
+    assert.equal(summary.knownTotalMXN, Math.round(expected * 100) / 100);
+    assert.equal(summary.entries.length, trip.majorTransport.length + trip.expenses.length);
+    assert.equal(summary.pending.length, 0);
 });
 
 test('sin tipo de cambio EUR no se inventa una conversión', () => {
@@ -87,4 +93,66 @@ test('distribución hotelera por noche preserva el importe', () => {
     const result = budget.summary(sample);
     assert.equal(result.knownTotalMXN, 100);
     assert.equal(Object.values(result.byDay).reduce((n, x) => n + x.totalMXN, 0), 100);
+});
+
+test('cambiar Frecciarossa por Italo modifica solo el tren seleccionado y el total', () => {
+    const id = 'train-milano-bologna';
+    const baseline = budget.summary(trip);
+    const before = JSON.stringify(trip);
+    selections.set(trip, id, 'B', 'smart');
+    try {
+        const current = budget.currentSummary(trip);
+        const beforeEntry = baseline.entries.find(e => e.id === id);
+        const afterEntry = current.entries.find(e => e.id === id);
+        assert.equal(beforeEntry.cost.amount, 22.9);
+        assert.equal(afterEntry.cost.amount, 25.9);
+        assert.equal(afterEntry.mxn - beforeEntry.mxn,
+            budget.convert({ amount: 25.9, currency: 'EUR' }, trip.exchangeRates) -
+            budget.convert({ amount: 22.9, currency: 'EUR' }, trip.exchangeRates));
+        assert.equal(current.knownTotalMXN - baseline.knownTotalMXN,
+            Math.round((afterEntry.mxn - beforeEntry.mxn) * 100) / 100);
+        assert.deepEqual(current.entries.filter(e => e.id !== id), baseline.entries.filter(e => e.id !== id));
+        assert.equal(JSON.stringify(trip), before);
+    } finally {
+        selections.reset(trip.id);
+    }
+});
+
+test('pesos pagados prevalecen sobre divisas y el tipo de cambio de referencia', () => {
+    assert.equal(budget.convert({ amount: 100, currency: 'EUR' }, { EUR: 20 }, 1750), 1750);
+    assert.equal(budget.convert({ amount: 13881, currency: 'MXN' }, {}), 13881);
+    assert.equal(budget.convert({ amount: 100, currency: 'EUR' }, { EUR: 0 }), null);
+    assert.equal(budget.convert({ amount: 100, currency: 'USD' }, { USD: 18.42 }), 1842);
+});
+
+test('los alojamientos se cuentan una sola vez y se distribuyen por sus noches', () => {
+    const result = budget.summary(trip);
+    for (const item of trip.expenses.filter(e => e.category === 'lodging')) {
+        const entry = result.entries.find(e => e.id === item.id);
+        const allocations = Object.values(result.byDay).flatMap(d =>
+            d.entries.filter(e => e.id === item.id));
+        assert.equal(allocations.length, item.nights);
+        assert.equal(Math.round(allocations.reduce((sum, e) => sum + e.mxn, 0) * 100) / 100, entry.mxn);
+    }
+});
+
+test('las cotizaciones incompletas no se interpretan como costos cero', () => {
+    const sample = {
+        id: 'pending', exchangeRates: {},
+        days: [{ n: 1, date: '2026-11-26' }],
+        expenses: [{ id: 'pending-eur', category: 'activities',
+            date: '2026-11-26', cost: { amount: 10, currency: 'EUR' } }]
+    };
+    const result = budget.summary(sample);
+    assert.equal(result.knownTotalMXN, 0);
+    assert.equal(result.partial, true);
+    assert.equal(result.byDay['2026-11-26'].partial, true);
+    assert.deepEqual(result.pending, ['pending-eur']);
+});
+
+test('el rango preliminar no se suma al subtotal conocido', () => {
+    const result = budget.summary(trip);
+    assert.equal(result.planningRangeMXN[0], 65000);
+    assert.equal(result.planningRangeMXN[1], 90000);
+    assert.ok(result.knownTotalMXN < result.planningRangeMXN[0]);
 });
