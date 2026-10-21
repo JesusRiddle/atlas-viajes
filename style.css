@@ -913,3 +913,11 @@ html{scroll-padding-top:78px}
 #plan .practical-indicator strong{display:block;font-size:13px;line-height:1.35}
 #plan .practical-indicator p{margin:3px 0 0;color:var(--muted);font-size:13px;line-height:1.5}
 @media(max-width:680px){#plan .overview-practical-grid.practical-indicators{grid-template-columns:1fr;gap:14px}}
+
+/* Columnas del panorama: misma altura basada en el contenido, sin alturas fijas. */
+@media(min-width:1001px){
+ #plan .overview-editorial{align-items:stretch}
+ #plan .overview-editorial>.overview-intro,
+ #plan .overview-editorial>.overview-side{height:100%;min-height:0;align-self:stretch}
+ #plan .overview-editorial>.overview-side{justify-content:space-between}
+}
