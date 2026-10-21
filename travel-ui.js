@@ -7,14 +7,18 @@ function mapSection(t){
 const points=window.ATLAS_MAP_POINTS[t.id]||[];
 const icon='<svg class="trip-map-heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/></svg>';
 return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
+<div class="trip-map-header">
+<div class="trip-map-intro">
 <div class="trip-map-heading">${icon}<span>EXPLORA TU DESTINO</span></div>
 <h3 class="trip-map-title" id="map-title">Tu viaje en el mapa.</h3>
-<p class="trip-map-description">Descubre las ciudades de tu recorrido y explora cada destino en el mapa interactivo.</p>
+<p class="trip-map-description">Explora las ciudades del recorrido en el mapa interactivo.</p>
 <div class="map-legend"><span>Base para dormir</span><span>Visita del recorrido</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div>
+</div>
+${points.length ? `<div class="trip-map-cities"><div class="map-locations-heading"><span>Localidades del recorrido</span></div>
+<ul class="map-city-list">${points.map(p=>`<li><a href="https://www.openstreetmap.org/?mlat=${p.coords[0]}&mlon=${p.coords[1]}#map=12/${p.coords[0]}/${p.coords[1]}" target="_blank" rel="noopener noreferrer">${p.order}. ${esc(p.name)}</a>${p.optional?' <small>(opcional)</small>':''}</li>`).join('')}</ul></div>` : ''}
+</div>
 <div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>
 <p class="map-status" role="status">El mapa se carga al llegar a esta sección.</p>
-<div class="map-locations-heading"><span>Localidades del recorrido</span></div>
-<ul class="map-city-list">${points.map(p=>`<li><a href="https://www.openstreetmap.org/?mlat=${p.coords[0]}&mlon=${p.coords[1]}#map=12/${p.coords[0]}/${p.coords[1]}" target="_blank" rel="noopener noreferrer">${p.order}. ${esc(p.name)}</a>${p.optional?' <small>(opcional)</small>':''}</li>`).join('')}</ul>
 ${t.id==='emilia-romana'?'':`<p class="tiny">Pines de referencia de cada localidad, no direcciones de hoteles ni un trazado exacto del trayecto. Las excursiones a paisajes y monumentos se detallan en el programa diario.</p>`}
 </section>`;
 }
