@@ -874,6 +874,19 @@
       ]
     ]
   ],
+  "exchangeRates": {
+    "EUR": 20.6451,
+    "USD": 18.4200
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-10-20",
+    "baseCurrency": "MXN",
+    "description": "Pesos mexicanos por unidad de divisa. Tasas de referencia de planeación, no tasas de compra.",
+    "sources": {
+      "EUR": "https://www.tasamira.com/mx/tipo-de-cambio/",
+      "USD": "https://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CF102&locale=es&sector=19"
+    }
+  },
   "majorTransport": [
     {
       "id": "flight-international",
