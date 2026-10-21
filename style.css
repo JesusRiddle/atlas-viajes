@@ -807,3 +807,13 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 .day-budget-disclaimer,.day-budget-pending{color:var(--muted);font-size:12px;line-height:1.55;margin:12px 0 0}
 @media(max-width:680px){.day-budget{padding:15px}.day-budget-heading>strong{font-size:18px}.day-budget-line{gap:10px;font-size:13px}.day-budget-line strong{font-size:13px}}
 @media print{.day-budget{break-inside:avoid}}
+
+/* Enlaces contextuales de hoteles, reservas y traslados. */
+.entity-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+.entity-links a{display:inline-flex;align-items:center;gap:6px;max-width:100%;padding:7px 11px;border:1px solid var(--line,#dce3e7);border-radius:9px;background:var(--surface,#fff);color:inherit;font-size:12px;font-weight:600;line-height:1.35;text-decoration:none;overflow-wrap:anywhere;transition:border-color .15s ease,background .15s ease}
+.entity-links a:hover,.entity-links a:focus-visible{border-color:var(--accent,#dc7b3b);background:var(--surface-soft,#f8f5f1)}
+.hotel-entity-links{margin-top:auto;padding-top:12px}
+.hotel-entity-links .hotel-icon{flex:none}
+#plan .reservation-item-copy .entity-links{margin-top:9px}
+#traslados .mt-details .entity-links{padding-top:5px}
+@media(max-width:540px){.entity-links{gap:6px}.entity-links a{font-size:12px;padding:7px 9px}}
