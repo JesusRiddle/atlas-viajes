@@ -54,17 +54,33 @@ window.AtlasMajorTransport = (() => {
                   (s.connectionPoints.length ? ' (' + esc(s.connectionPoints.join(', ')) + ')' : '')) +
             '</span></div>';
     }
-    function segmentDetails(journey) {
+    const airportNames = {
+        MEX: 'Ciudad de México',
+        MAD: 'Madrid-Barajas',
+        MXP: 'Milano Malpensa',
+        BLQ: 'Bologna Marconi'
+    };
+    const airportLabel = code => esc(code) + (airportNames[code] ? ' (' + esc(airportNames[code]) + ')' : '');
+    function segmentDetails(journey, isFlight = false) {
         const segments = journey.segments || [];
         return segments.map((seg, i) => {
             const connection = i && segments[i - 1].arrival && seg.departure
                 ? '<p class="mt-connection">Escala: ' +
                     minutes(model.durationMinutes(segments[i - 1].arrival, seg.departure)) + '</p>' : '';
-            return connection + '<div class="mt-segment"><span>' + esc(seg.from) + ' → ' + esc(seg.to) +
-                '</span><small>' + esc(clock(seg.departure)) + ' – ' + esc(clock(seg.arrival)) +
-                ' · ' + minutes(model.durationMinutes(seg.departure, seg.arrival)) +
-                (seg.operator ? ' · ' + esc(seg.operator) : '') +
-                (seg.flightNumber ? ' · ' + esc(seg.flightNumber) : '') + '</small></div>';
+            const route = isFlight ? airportLabel(seg.from) + ' → ' + airportLabel(seg.to)
+                : esc(seg.from) + ' → ' + esc(seg.to);
+            const duration = esc(clock(seg.departure)) + ' – ' + esc(clock(seg.arrival)) +
+                ' · ' + minutes(model.durationMinutes(seg.departure, seg.arrival));
+            const details = isFlight
+                ? '<span class="mt-flight-meta">' +
+                    (seg.operator ? '<strong>' + esc(seg.operator) + '</strong>' : '') +
+                    (seg.flightNumber ? '<span>' + esc(seg.flightNumber) + '</span>' : '') +
+                    '<span>' + duration + '</span></span>'
+                : '<small>' + duration +
+                    (seg.operator ? ' · ' + esc(seg.operator) : '') +
+                    (seg.flightNumber ? ' · ' + esc(seg.flightNumber) : '') + '</small>';
+            return connection + '<div class="mt-segment' + (isFlight ? ' mt-flight-segment' : '') +
+                '"><span class="mt-segment-route">' + route + '</span>' + details + '</div>';
         }).join('');
     }
     function card(trip, transport, current) {
@@ -88,7 +104,7 @@ window.AtlasMajorTransport = (() => {
             (transport.type === 'flight' ? '<h4 class="mt-leg-heading">' +
                 esc(j.direction === 'outbound' ? 'Ida' : j.direction === 'return' ? 'Regreso' : 'Trayecto') +
                 esc(journeyDate(j, trip)) + '</h4>' : '') +
-            segmentDetails(j) + '</div>').join('');
+            segmentDetails(j, transport.type === 'flight') + '</div>').join('');
         return '<details class="mt-card" data-transport="' + esc(transport.id) + '">' +
             '<summary><span class="mt-kind">' + esc(label) + '</span>' +
             '<span class="mt-route"><strong>' + esc(transport.title) + '</strong><small>' +
@@ -105,7 +121,7 @@ window.AtlasMajorTransport = (() => {
             esc(transport.title) + '">' + fares + '</select></label></div>' +
             (transport.type === 'flight' ? '<p class="mt-baggage">' +
                 esc(baggageLabel(fare.baggage)) + '</p>' : '') +
-            '<div class="mt-leg-list">' + detail + '</div>' +
+            '<div class="mt-leg-list' + (transport.type === 'flight' ? ' mt-flight-list' : '') + '">' + detail + '</div>' +
             '<div class="mt-terms"><span><strong>Cambios:</strong> ' + esc(fare.changes || 'Por confirmar') +
             '</span><span><strong>Reembolsos:</strong> ' + esc(fare.refunds || 'Por confirmar') +
             '</span></div>' +
