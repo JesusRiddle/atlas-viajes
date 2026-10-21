@@ -11,7 +11,9 @@ window.AtlasMajorTransport = (() => {
         if (!cost || !Number.isFinite(cost.amount)) return 'Por cotizar';
         const amount = cost.amount.toLocaleString('es-MX', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
         return cost.currency === 'EUR' ? '€' + amount :
-            cost.currency === 'MXN' ? '
+            cost.currency === 'MXN' ? String.fromCharCode(36) + number.format(cost.amount) + ' MXN' :
+            amount + ' ' + cost.currency;
+    };
     const journeyDate = (journey, trip) => {
         const departure = journey.segments?.[0]?.departure;
         const day = departure?.slice(0, 10) ||
