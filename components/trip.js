@@ -75,7 +75,7 @@ window.AtlasTrip = function (ctx) {
             `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `</div>`,
             `</aside>`,
-            `</div>${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${railPlanning(t)}<div class="factgrid">`,
+            `</div>${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}<div class="factgrid">`,
             `<article>`,
             `<h3>`,
             `<span class="section-icon" aria-hidden="true">✈</span>Salida y llegada · vuelos</h3>`,
@@ -156,6 +156,7 @@ window.AtlasTrip = function (ctx) {
             `</section>`
         ].join('');
         window.AtlasGallery.init(main);
+        window.AtlasMajorTransport.mount(main, t);
         window.AtlasTravel.initMap(t);
         document.querySelector('#dest-select').addEventListener('change', e => {
             location.hash = 'viaje/' + e.target.value;
