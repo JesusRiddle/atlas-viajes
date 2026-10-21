@@ -3,12 +3,13 @@ window.AtlasTrip = function (ctx) {
     const {
         trips, main, covers, esc, money, range, short, sums, price, img,
         readable, highlightWords, baseLabel, experiencePanel, reservationPlanning,
-        railPlanning, factParagraphs, stayParagraphs, day, hotelForDay, variants,
+        railPlanning, factParagraphs, stayParagraphs, day, hotelForDay, mountTransport, variants,
         railAppendix, optionsSection, seasonality, knownCostPanel, home,
         loadGallery, printGuide
     } = ctx;
     let releaseTransport = null;
     let releaseBudget = null;
+    let releaseDayTransport = null;
     // SVG decorativos integrados, sin dependencias externas.
     function overviewIcon(name) {
         const paths = {
@@ -74,6 +75,7 @@ window.AtlasTrip = function (ctx) {
     function tripPage(id) {
         if (releaseTransport) { releaseTransport(); releaseTransport = null; }
         if (releaseBudget) { releaseBudget(); releaseBudget = null; }
+        if (releaseDayTransport) { releaseDayTransport(); releaseDayTransport = null; }
         const t = trips.find(x => x.id === id);
         if (!t) {
             home();
@@ -172,6 +174,7 @@ window.AtlasTrip = function (ctx) {
         window.AtlasGallery.init(main);
         releaseTransport = window.AtlasMajorTransport.mount(main, t);
         releaseBudget = window.AtlasBudgetTable.mount(main, t);
+        releaseDayTransport = mountTransport(main, t);
         window.AtlasTravel.initMap(t);
         document.querySelector('#dest-select').addEventListener('change', e => {
             location.hash = 'viaje/' + e.target.value;
@@ -188,6 +191,7 @@ window.AtlasTrip = function (ctx) {
         document.querySelector('#print').addEventListener('click', printGuide);
     }
     function cleanup() {
+        if (releaseDayTransport) { releaseDayTransport(); releaseDayTransport = null; }
         if (releaseBudget) { releaseBudget(); releaseBudget = null; }
         if (releaseTransport) { releaseTransport(); releaseTransport = null; }
     }
