@@ -141,10 +141,10 @@ window.AtlasTrip = function (ctx) {
             `<strong>${price(t)}</strong>`,
             `<p class="budget-context">MXN · 1 persona · viaje completo</p>`,
             `<a class="budget-detail-link" href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
-            `${t.exchangeRates && t.exchangeRateSnapshot ? '<details class="budget-exchange"><summary>Tipos de cambio · ' +
-                esc(t.exchangeRateSnapshot.date) + '</summary><div class="budget-exchange-values"><span>EUR 1 = $' +
+            `${t.exchangeRates && t.exchangeRateSnapshot ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipos de cambio · ' +
+                esc(t.exchangeRateSnapshot.date) + '</div><div class="budget-exchange-values"><span>EUR 1 = $' +
                 Number(t.exchangeRates.EUR).toFixed(4) + ' MXN</span><span>USD 1 = $' +
-                Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span></div></details>' : ''}`,
+                Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span></div></div>' : ''}`,
                         `</div>`,
             `</aside>`,
             `${t.id === 'emilia-romana' ? climateCard(t) + '</div>' : ''}`,
