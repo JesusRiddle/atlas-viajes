@@ -1160,3 +1160,7 @@ html{scroll-padding-top:78px}
 #costes .budget-ledger .budget-chevron{display:inline-block;flex:none;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .15s ease}
 #costes .budget-ledger .budget-toggle[aria-expanded="false"] .budget-chevron{transform:rotate(-45deg)}
 #costes .budget-ledger tr[hidden]{display:none!important}
+
+/* Partidas del presupuesto: descripciones uniformes, sin negritas ni cursivas. */
+#costes .budget-ledger .budget-item td:first-child,
+#costes .budget-ledger .budget-item td:first-child *{font-weight:400;font-style:normal;text-decoration:none;font-family:Arial,Helvetica,sans-serif}
