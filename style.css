@@ -899,3 +899,8 @@ html{scroll-padding-top:78px}
 /* Título de localidades unificado con el del panorama. */
 .trip-map-section .trip-map-cities .map-locations-heading{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700}
 .trip-map-section .trip-map-cities .map-city-heading-icon{flex:none;color:var(--ink)}
+
+/* Iconos lineales uniformes y un solo separador sobre los alojamientos. */
+#plan .overview-climate-card h3,#plan .overview-intro>.overview-practical h3{display:flex;align-items:center;gap:8px}
+#plan .overview-climate-card h3 .overview-icon,#plan .overview-intro>.overview-practical h3 .overview-icon{flex:none;width:18px;height:18px}
+#plan .overview-intro>.overview-practical + .overview-stays-inline{border-top:0;margin-top:0;padding-top:15px}
