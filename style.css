@@ -996,3 +996,17 @@ html{scroll-padding-top:78px}
 @media screen and (min-width:681px){
  #plan .experience-panel .experience-list.experience-column-order{grid-auto-flow:column;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(var(--experience-rows),auto)}
 }
+
+/* Vuelos: filas compactas y datos de operación legibles. */
+#traslados .mt-flight-list .mt-legs{padding:0}
+#traslados .mt-flight-list .mt-legs+.mt-legs{margin-top:10px}
+#traslados .mt-flight-list .mt-leg-heading{margin:9px 0 3px;padding-bottom:5px}
+#traslados .mt-flight-list .mt-segment{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:6px 16px;padding:6px 0;font-size:13px;line-height:1.4}
+#traslados .mt-flight-list .mt-segment-route{min-width:0}
+#traslados .mt-flight-list .mt-flight-meta{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:3px 7px;color:var(--muted);font-size:13px;text-align:right}
+#traslados .mt-flight-list .mt-flight-meta strong{color:var(--ink);font-weight:700}
+#traslados .mt-flight-list .mt-connection{margin:3px 0;font-size:12px}
+@media(max-width:760px){
+ #traslados .mt-flight-list .mt-segment{grid-template-columns:minmax(0,1fr);gap:2px}
+ #traslados .mt-flight-list .mt-flight-meta{justify-content:flex-start;text-align:left}
+}
