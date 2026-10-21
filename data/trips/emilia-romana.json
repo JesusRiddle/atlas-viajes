@@ -1564,8 +1564,7 @@
           "label": "Trenitalia · Economy",
           "url": "https://www.trenitalia.com/es/ofertas/el-billete-economy.html"
         }
-      ],
-      "previewType": "bus"
+      ]
     },
     {
       "id": "train-bologna-modena",
@@ -1625,8 +1624,7 @@
           "label": "Trenitalia · Biglietto Digitale Regionale",
           "url": "https://www.trenitalia.com/es/informacion/billete-digital-regional.html"
         }
-      ],
-      "previewType": "ferry"
+      ]
     }
   ],
   "ticketNotes": [
