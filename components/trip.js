@@ -40,7 +40,9 @@ window.AtlasTrip = function (ctx) {
                 factParagraphs(t.local) + '</div></article>' : '') +
             '<article><h3><span class="section-icon" aria-hidden="true">☀</span>Clima y luz</h3><div class="fact-copy">' +
             climate + '</div></article>' +
-            '<article><h3><span class="section-icon" aria-hidden="true">◎</span>Ritmo y viajar solo</h3><div class="fact-copy">' +
+            '<article><h3><span class="section-icon" aria-hidden="true">◎</span>' +
+            (compact ? 'Ritmo y consejos prácticos' : 'Ritmo y viajar solo') +
+            '</h3><div class="fact-copy">' +
             solo + '</div></article></div>' + (compact ? '</section>' : '');
     }
     function tripPage(id) {
