@@ -1083,7 +1083,7 @@ html{scroll-padding-top:78px}
 @media print{#temporadas .seasonality-panel{background:white;border:0;padding:0}}
 
 /* Temporadas a todo el ancho disponible, igual que Traslados. */
-#temporadas.atlas-panel-section{display:block}
+#temporadas.atlas-panel-section{display:block;width:100%;max-width:none;margin:22px 0}
 #temporadas .seasonality-panel{width:100%;grid-column:auto}
 #temporadas .season-months{grid-template-columns:repeat(6,minmax(0,1fr))}
 @media(max-width:920px){#temporadas .season-months{grid-template-columns:repeat(3,minmax(0,1fr))}}
