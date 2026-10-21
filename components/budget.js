@@ -105,7 +105,7 @@ window.AtlasBudget = (() => {
         const migrationPending = (trip.hotels || []).some(hotel => !coveredHotels.has(hotel.id)) ||
             Boolean(trip.knownCosts?.length && !(trip.expenses || []).length);
         return {
-            knownTotalMXN, partial: pending.length > 0 || issues.length > 0 || migrationPending,
+            knownTotalMXN, partial: pending.length > 0 || issues.length > 0 || migrationPending || trip.budgetPreliminary === true,
             migrationPending, pending, issues, byCategory, byDay, entries,
             // El rango de planeación es independiente; no se suma a las partidas.
             planningRangeMXN: trip.budgetRange || (trip.budgetPreliminary && trip.costs?.length === 1
