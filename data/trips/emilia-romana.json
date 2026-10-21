@@ -1,6 +1,6 @@
 {
   "id": "emilia-romana",
-  "name": "Milano + Emilia-Romagna + Firenze: arte, mosaicos y sabores",
+  "name": "Milano, Bologna y Firenze · Emilia-Romagna",
   "flag": "🇮🇹",
   "start": "2026-11-26",
   "end": "2026-12-07",
@@ -1879,7 +1879,7 @@
     "reservationTitle": "Reservas críticas"
   },
   "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",
-  "heroLodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta provisional)",
+  "heroLodgingSummary": "3 alojamientos",
   "budgetPreliminary": true,
   "cardHighlights": [
     "Milano",
@@ -2042,5 +2042,6 @@
         "description": "Por definir"
       }
     }
-  }
+  },
+  "heroEyebrow": "Italia en tren: siete ciudades desde Milano y Bologna"
 }
