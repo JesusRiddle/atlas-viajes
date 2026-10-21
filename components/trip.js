@@ -189,7 +189,7 @@ window.AtlasTrip = function (ctx) {
             `${stayParagraphs(id)}</article>${!t.planningDetails ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>${variants(t)}${railAppendix(t)}<section class="section wrap atlas-panel-section" id="dias"><article class="panel itinerary-panel">`,
             `<div class="section-title">`,
             `<div>`,
-            `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 15h3m-3 3h7"/></svg><span>El viaje, con tiempo para disfrutarlo</span></p>`,
+            `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 15h3m-3 3h7"/></svg><span>Itinerario</span></p>`,
             `<h2>Día por día.</h2>`,
             `</div>`,
             `<div>`,
