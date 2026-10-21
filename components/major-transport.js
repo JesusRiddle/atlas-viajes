@@ -141,7 +141,12 @@ window.AtlasMajorTransport = (() => {
             const unconverted = result.entries.filter(entry => entry.mxn === null);
             const missing = unconverted.filter(entry => entry.cost?.amount == null);
             const foreign = unconverted.filter(entry => entry.cost?.amount != null && entry.cost?.currency !== 'MXN');
-            node.textContent = 'Importe convertido conocido: 
+            node.textContent = 'Importe convertido conocido: $' + number.format(result.knownTotalMXN) +
+                ' MXN (no es el costo total). ' +
+                (foreign.length ? foreign.map(entry => entry.id + ': ' + formatMoney(entry.cost)).join(' · ') +
+                    ' sin tipo de cambio. ' : '') +
+                (missing.length ? missing.length + ' partidas sin precio. ' : '') +
+                (result.migrationPending ? 'Hoteles y otras partidas pendientes de migración.' : '');
         }
         const change = e => {
             const select = e.target.closest('select[data-field]');
@@ -159,33 +164,6 @@ window.AtlasMajorTransport = (() => {
         const unsubscribe = selections.subscribe(tripId => { if (tripId === trip.id && root.isConnected) refresh(); });
         updateTotal(host);
         return () => { host.removeEventListener('change', change); unsubscribe(); };
-    }
-    return { render, mount };
-})();
- + number.format(result.knownTotalMXN) +
-                ' MXN (no es el costo total). ' +
-                (foreign.length ? foreign.map(entry => entry.id + ': ' + formatMoney(entry.cost)).join(' · ') +
-                    ' sin tipo de cambio. ' : '') +
-                (missing.length ? missing.length + ' partidas sin precio. ' : '') +
-                (result.migrationPending ? 'Hoteles y otras partidas pendientes de migración.' : '');
-
-        }
-        const change = e => {
-            const select = e.target.closest('select[data-field]');
-            if (!select) return;
-            const item = select.closest('.mt-card');
-            const transport = trip.majorTransport.find(t => t.id === item?.dataset.transport);
-            if (!transport) return;
-            const current = selections.get(trip.id)[transport.id] || {};
-            const optionId = select.dataset.field === 'option' ? select.value : (current.option || transport.selectedOption);
-            const option = transport.options.find(o => o.id === optionId);
-            const fareId = select.dataset.field === 'fare' ? select.value : option.selectedFare;
-            selections.set(trip, transport.id, optionId, fareId);
-        };
-        root.addEventListener('change', change);
-        const unsubscribe = selections.subscribe(tripId => { if (tripId === trip.id && root.isConnected) refresh(); });
-        updateTotal(host);
-        return () => { root.removeEventListener('change', change); unsubscribe(); };
     }
     return { render, mount };
 })();
