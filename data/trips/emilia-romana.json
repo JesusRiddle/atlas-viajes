@@ -887,6 +887,59 @@
       "USD": "https://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CF102&locale=es&sector=19"
     }
   },
+  "expenses": [
+    {
+      "id": "lodging-moxy-malpensa",
+      "category": "lodging",
+      "concept": "Moxy Milano Malpensa Airport · 1 noche",
+      "hotelId": "hotel-1",
+      "date": "2026-11-26",
+      "nights": 1,
+      "cost": {
+        "amount": 127,
+        "currency": "EUR"
+      },
+      "status": "quoted"
+    },
+    {
+      "id": "lodging-milano-aosta",
+      "category": "lodging",
+      "concept": "B&B Hotel Milano Aosta · 2 noches",
+      "hotelId": "hotel-2",
+      "date": "2026-11-27",
+      "nights": 2,
+      "cost": {
+        "amount": 283,
+        "currency": "EUR"
+      },
+      "status": "quoted"
+    },
+    {
+      "id": "lodging-housmart-milazzo",
+      "category": "lodging",
+      "concept": "HouSmart Milazzo 5 · 8 noches",
+      "hotelId": "hotel-3",
+      "date": "2026-11-29",
+      "nights": 8,
+      "cost": {
+        "amount": 13881,
+        "currency": "MXN"
+      },
+      "status": "quoted"
+    },
+    {
+      "id": "firenze-entradas-base",
+      "category": "activities",
+      "concept": "Firenze · entradas imprescindibles (sin Corridoio)",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 83,
+        "currency": "EUR"
+      },
+      "status": "quoted",
+      "notes": "Importe conjunto histórico pendiente de desglose individual; Corridoio Vasariano no incluido. No agregar entradas individuales duplicadas hasta sustituir esta partida."
+    }
+  ],
   "majorTransport": [
     {
       "id": "flight-international",
