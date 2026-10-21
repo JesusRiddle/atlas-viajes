@@ -877,3 +877,12 @@ html{scroll-padding-top:78px}
 /* Estancias y excursiones dentro de cada localidad del mapa. */
 .trip-map-section .trip-map-cities .map-city-list a{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;padding:7px 11px;border-radius:12px;line-height:1.25}
 .trip-map-section .trip-map-cities .map-city-list .map-city-stay{display:block;margin:0;font-size:11px;line-height:1.35;font-weight:400;color:var(--muted)}
+
+/* Tarjetas uniformes para todas las localidades. */
+.trip-map-section .trip-map-cities .map-city-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.trip-map-section .trip-map-cities .map-city-list li{display:block;min-width:0;margin:0}
+.trip-map-section .trip-map-cities .map-city-list a{width:100%;height:76px;min-height:76px;box-sizing:border-box;padding:9px 8px;align-items:flex-start;justify-content:center;overflow-wrap:break-word}
+.trip-map-section .trip-map-cities .map-city-list .map-city-stay{display:flex;align-items:center;gap:4px;white-space:nowrap}
+.trip-map-section .trip-map-cities .map-city-bed{flex:none;vertical-align:middle}
+@media(max-width:1080px){.trip-map-section .trip-map-cities .map-city-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.trip-map-section .trip-map-cities .map-city-list{grid-template-columns:repeat(auto-fit,minmax(96px,1fr))}}
