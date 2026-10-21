@@ -27,7 +27,7 @@ window.AtlasSeasonality = function (ctx) {
             const item = data.months[key] || { status: 'pending', description: 'Por definir' };
             const state = states[item.status] || states.pending;
             const note = item.description || 'Por definir';
-            return `<li class="season-month season-${state.css}" aria-label="${esc(name + ': ' + state.label + '. ' + note)}"><strong>${esc(name.slice(0,3))}</strong>${weatherIcon(item.icon)}<span class="season-state">${esc(state.label)}</span><small>${esc(note)}</small></li>`;
+            return `<li class="season-month season-${state.css}" aria-label="${esc(name + ': ' + state.label + '. ' + note)}"><div class="season-month-heading"><strong>${esc(name.slice(0,3))}</strong>${weatherIcon(item.icon)}</div><span class="season-state">${esc(state.label)}</span><small>${esc(note)}</small></li>`;
         }).join('');
         return `<section class="section wrap seasonality-section atlas-panel-section" id="temporadas" aria-labelledby="seasonality-heading">
             <div class="seasonality-panel">
