@@ -1186,4 +1186,8 @@ html{scroll-padding-top:78px}
 @media(max-width:680px){#dias .day-rail{flex-basis:67px}#dias .daynum{width:49px;min-width:49px;height:52px}#dias .daynum-value{font-size:23px}#dias .day-badge-date{font-size:10px}}
 
 /* Lectura jerárquica: metadatos ligeramente indentados respecto del título. */
-#dias .day-main>.night-hotel,#dias .day-main>.day-places{padding-left:10px}
+#dias .day-main>.night-hotel,#dias .day-main>.day-places{padding-left:0}
+
+/* Centrar el bloque de número y fecha respecto a la altura del resumen diario. */
+#dias .day summary{align-items:center}
+#dias .day-rail{align-self:center}
