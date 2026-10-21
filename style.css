@@ -1038,3 +1038,8 @@ html{scroll-padding-top:78px}
 /* Icono lineal del encabezado de movilidad. */
 #traslados .mt-kicker-icon{display:inline-flex;align-items:center;gap:8px}
 #traslados .mt-kicker-icon svg{flex:none;width:16px;height:16px}
+
+/* Encabezado editorial de alojamientos, coherente con otras secciones. */
+#alojamientos .hotel-section-kicker{display:flex;align-items:center;gap:8px;color:#92502b;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
+#alojamientos .hotel-section-kicker .overview-icon{width:17px;height:17px;flex:none}
+#alojamientos .hotel-section-heading h2{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0 18px;color:var(--ink)}
