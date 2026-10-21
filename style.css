@@ -638,3 +638,10 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 /* Cotizaciones de referencia del presupuesto preliminar. */
 .budget-teaser .budget-exchange{border-top:1px solid #ffffff35;padding-top:11px;margin-top:12px;font-size:12px;color:#d2e0e4;line-height:1.55}
 .budget-teaser .budget-exchange span{display:block;color:#fff;font-weight:600;font-size:12px}
+
+/* Tabla consolidada de costos: conservar legibilidad de importes. */
+.budget-ledger .budget-category th{text-align:left;background:var(--pale);color:var(--ink);font-size:13px;padding:10px 14px;border-top:1px solid var(--line)}
+.budget-ledger .budget-amount{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.budget-ledger .budget-subtotal td{font-weight:700;background:#f7f9f9}
+.budget-ledger .budget-range{border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:14px}
+@media(max-width:680px){.budget-ledger table{font-size:12px}.budget-ledger th,.budget-ledger td{padding:9px 10px}}
