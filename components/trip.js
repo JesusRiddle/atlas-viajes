@@ -45,6 +45,21 @@ window.AtlasTrip = function (ctx) {
             '</h3><div class="fact-copy">' +
             solo + '</div></article></div>' + (compact ? '</section>' : '');
     }
+    function overviewStays(t, inline = false) {
+        const nights = t.bases.reduce((sum, base) => sum + Number(base[1] || 0), 0);
+        const caption = inline
+            ? nights + ' noches · ' + t.bases.length + (t.bases.length === 1 ? ' estancia' : ' estancias')
+            : t.bases.length + (t.bases.length === 1 ? ' estancia' : ' estancias');
+        return '<div class="overview-stays' + (inline ? ' overview-stays-inline' : '') + '">' +
+            '<div class="overview-stays-heading"><h3 class="overview-subheading">' +
+            overviewIcon('bed') + (inline ? ' Dónde dormirás' : ' Tus alojamientos') +
+            '</h3><span>' + caption + '</span></div>' +
+            '<div class="baseroute">' + t.bases.map((x, i) =>
+                '<div class="basepill"><span class="basepill-number">' + String(i + 1).padStart(2, '0') +
+                '</span>' + overviewIcon('bed') + '<strong>' + esc(x[0]) + '</strong><small>' +
+                x[1] + ' ' + (x[1] === 1 ? 'noche' : 'noches') + '</small></div>'
+            ).join('') + '</div></div>';
+    }
     function tripPage(id) {
         if (releaseTransport) { releaseTransport(); releaseTransport = null; }
         if (releaseBudget) { releaseBudget(); releaseBudget = null; }
@@ -91,11 +106,9 @@ window.AtlasTrip = function (ctx) {
             `<h3 class="overview-subheading">${overviewIcon('pin')} Ciudades del recorrido</h3>`,
             `<div class="trip-route" aria-label="Ciudades del recorrido">${t.routeCities.map(city => `<span class="trip-route-city">${esc(city)}</span>`).join('')}</div>`,
             `</div>`,
+            `${t.id === 'emilia-romana' ? overviewStays(t, true) : ''} `,
             `</div>`,
-            `<div class="overview-stays">`,
-            `<div class="overview-stays-heading"><h3 class="overview-subheading">${overviewIcon('bed')} Tus alojamientos</h3><span>${t.bases.length} ${t.bases.length === 1 ? 'estancia' : 'estancias'}</span></div>`,
-            `<div class="baseroute">${t.bases.map((x, i) => `<div class="basepill"><span class="basepill-number">${String(i + 1).padStart(2, '0')}</span>${overviewIcon('bed')}<strong>${esc(x[0])}</strong><small>${x[1]} ${x[1] === 1 ? 'noche' : 'noches'}</small></div>`).join('')}</div>`,
-            `</div>`,
+            `${t.id === 'emilia-romana' ? '' : overviewStays(t)}`,
             `<aside class="budget-teaser">`,
             `<div>`,
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
