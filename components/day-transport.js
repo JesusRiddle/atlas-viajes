@@ -21,7 +21,8 @@ window.AtlasDayTransport = (() => {
                     return j.segments.map(seg =>
                         '<div class="day-transport-route">' + esc(seg.from + ' → ' + seg.to) +
                         (hour(seg.departure) ? ' · ' + esc(hour(seg.departure)) : '') +
-                        (hour(seg.arrival) ? '–' + esc(hour(seg.arrival)) : '') + '</div>'
+                        (hour(seg.arrival) ? '–' + esc(hour(seg.arrival)) : '') +
+                        (seg.service ? ' · ' + esc(seg.service) : '') + '</div>'
                     ).join('');
                 }).join('');
                 const price = window.AtlasBudget.selectedTransportPrice(item, current);
@@ -32,7 +33,8 @@ window.AtlasDayTransport = (() => {
                 return '<div class="day-transport-item"><div class="day-transport-head"><strong>' + esc(item.title) +
                     '</strong><span>' + esc(amount) + (mxn != null && price.currency !== 'MXN' ? ' · ≈ $' +
                     mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
-                    '</span></div>' + routes + '<small>' + esc(option.provider || '') + ' · ' +
+                    '</span></div>' + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
+                    '<small>' + esc(option.provider || '') + ' · ' +
                     esc(fare.name || fare.id) + '</small></div>';
             }).join('') + '<p>Referencia del traslado completo, ya contabilizada en el presupuesto.</p></section>';
     }
