@@ -782,3 +782,15 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 @media (prefers-reduced-motion:reduce){
   #traslados .mt-card,.trip-map-section .map-city-list a{transition:none}
 }
+
+/* Traslados de cada jornada: una vista enlazada a majorTransport. */
+.daycontent .day-transport{margin:22px 0 0;padding:17px 19px;border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:7px;background:#fff}
+.day-transport h4{font:700 16px Arial,Helvetica,sans-serif;color:var(--ink);margin:0 0 11px}
+.day-transport-item+.day-transport-item{border-top:1px solid var(--line);padding-top:13px;margin-top:13px}
+.day-transport-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;line-height:1.5}
+.day-transport-head span{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.day-transport-route{font-size:14px;line-height:1.55;color:var(--ink);padding-top:5px}
+.day-transport-item small{display:block;margin-top:5px;color:var(--muted);font-size:12px;line-height:1.45}
+.day-transport>p{color:var(--muted);font-size:12px;line-height:1.55;margin:13px 0 0}
+@media(max-width:680px){.daycontent .day-transport{padding:15px}.day-transport-head{display:block}.day-transport-head span{display:block;text-align:left;margin-top:3px}}
+@media print{.daycontent .day-transport{break-inside:avoid}}
