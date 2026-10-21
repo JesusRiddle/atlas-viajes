@@ -26,6 +26,8 @@ window.AtlasTrip = function (ctx) {
             compass: '<circle cx="12" cy="12" r="9"/><path d="m16.2 7.8-2.7 5.7-5.7 2.7 2.7-5.7z"/>',
             pin: '<path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/>',
             bed: '<path d="M3 18v-8m0 6h18m0 2v-8M3 10V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3M3 12h18"/>',
+            sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/>',
+            practical: '<circle cx="12" cy="12" r="9"/><path d="m16.2 7.8-2.7 5.7-5.7 2.7 2.7-5.7z"/>',
             wallet: '<rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 9h18m-6 5h3"/>',
             arrow: '<path d="M5 19 19 5M9 5h10v10"/>'
         };
@@ -49,7 +51,7 @@ window.AtlasTrip = function (ctx) {
                 factParagraphs(t.flight) + '</div></article>' +
                 '<article><h3><span class="section-icon" aria-hidden="true">↔</span>Entre ciudades</h3><div class="fact-copy">' +
                 factParagraphs(t.local) + '</div></article>' : '') +
-            '<article><h3><span class="section-icon" aria-hidden="true">☀</span>Clima y luz</h3><div class="fact-copy">' +
+            '<article><h3>' + overviewIcon('sun') + ' Clima y luz</h3><div class="fact-copy">' +
             climate + '</div></article>' +
             '<article><h3><span class="section-icon" aria-hidden="true">◎</span>' +
             (compact ? 'Ritmo y consejos prácticos' : 'Ritmo y viajar solo') +
@@ -62,7 +64,7 @@ window.AtlasTrip = function (ctx) {
     }
     function practicalAdvice(t) {
         return '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
-            '<h3><span class="section-icon" aria-hidden="true">◎</span>Ritmo y consejos prácticos</h3>' +
+            '<h3>' + overviewIcon('practical') + ' Ritmo y consejos prácticos</h3>' +
             '<div class="overview-practical-grid">' +
             t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
                 readable(part) + '</div>').join('') + '</div></section>';
