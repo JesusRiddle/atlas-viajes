@@ -301,7 +301,8 @@ test('días sin cotización no se presentan como gasto cero y las notas son cont
         cost: { amount: 350, currency: 'MXN' } });
     const updated = view.render(input, input.days.find(d => d.n === 5));
     assert.ok(updated.includes('Alimentación'));
-    assert.ok(updated.includes('Alimentación'));
+    assert.ok(updated.includes('Alimentación · día 5 · estimado'));
+    assert.ok(!updated.includes('verificar comidas'));
 });
 
 test('el desglose nuevo excluye opcionales y conserva exactamente las entradas de Firenze', () => {
@@ -310,4 +311,13 @@ test('el desglose nuevo excluye opcionales y conserva exactamente las entradas d
     assert.equal(results.entries.filter(x => x.id.startsWith('firenze-') && x.category === 'activities').length, 3);
     assert.equal(trip.expenses.filter(x => x.category === 'food' && !x.optional).length, trip.days.length);
     assert.equal(results.byDay['2026-12-07'].entries.some(x => x.id === 'bologna-marconi'), true);
+});
+
+test('el JSON carece de presupuestos históricos duplicados y etiqueta importes diarios', () => {
+    assert.equal(Object.prototype.hasOwnProperty.call(trip, 'knownCosts'), false);
+    const view = ctx.window.AtlasDayBudget;
+    const day = view.render(trip, trip.days.find(d => d.n === 9));
+    assert.ok(day.includes('Firenze · Accademia · estimado'));
+    const first = view.render(trip, trip.days[0]);
+    assert.ok(first.includes('Moxy Milano Malpensa Airport · 1 noche · cotizado'));
 });
