@@ -675,3 +675,26 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 @media screen and (min-width: 851px) {
   .budget-ledger table th,.budget-ledger table td {padding:12px 14px}
 }
+
+/* Jerarquía editorial de la tabla de presupuesto. */
+.budget-ledger .budget-category th {
+  background:#e7edef;
+  border-top:2px solid #b9c8cc;
+  padding:10px 14px;
+  font-size:13px;
+  letter-spacing:.15px;
+}
+.budget-ledger .budget-subtotal td {
+  background:#eaf0f1 !important;
+  border-top:1px solid #b9c8cc;
+  font-weight:700;
+}
+.budget-ledger .budget-pending td {color:var(--muted)}
+.budget-ledger .budget-pending .budget-amount {font-style:italic}
+@media screen and (min-width: 851px) {
+  .budget-ledger tbody tr:not(.budget-category):not(.budget-subtotal):not(.totalrow) td {
+    padding-top:9px;
+    padding-bottom:9px;
+  }
+  .budget-ledger .budget-subtotal td {padding-top:10px;padding-bottom:10px}
+}
