@@ -31,7 +31,31 @@ window.AtlasSections = function (ctx) {
     function reservationPlanning(t) {
         if (!t.planningDetails) return '';
         const p = t.planningDetails;
-        return `<article class="panel" style="margin-top:20px"><h3>${esc(p.reservationTitle || 'Reservas críticas')}</h3><p class="tiny">${esc(p.reservationNote)}</p><div class="factgrid">${t.reservations.map(([title, items]) => `<div><h4>${esc(title)}</h4><ol class="tips">${items.map(item => `<li>${esc(item)}</li>`).join('')}</ol></div>`).join('')}</div></article><details class="panel" style="margin-top:20px"><summary><strong>${esc(p.toursTitle || 'Tours locales que aportan valor')}</strong></summary><p>${esc(p.tourIntro)}</p><div class="stay-list">${t.tours.map(([city, note]) => `<p><strong>${esc(city)}</strong><span>${esc(note)}</span></p>`).join('')}</div><p class="tiny">${esc(p.tourNote)}</p></details>`;
+        const groups = (t.reservations || []).map(([title, items], groupIndex) => `
+            <section class="reservation-group">
+                <div class="reservation-group-heading">
+                    <h4>${esc(title)}</h4>
+                    <span class="reservation-count" aria-label="${items.length} reservas">${items.length}</span>
+                </div>
+                <ol class="reservation-list">${items.map((item, index) => {
+                    const structured = item && typeof item === 'object' && !Array.isArray(item);
+                    const label = structured ? item.title : '';
+                    const description = structured ? item.description : item;
+                    return `<li class="reservation-item">
+                        <span class="reservation-number" aria-hidden="true">${String(index + 1).padStart(2, '0')}</span>
+                        <div class="reservation-item-copy">
+                            ${label ? `<strong>${esc(label)}</strong>` : ''}
+                            <p>${esc(description || '')}</p>
+                        </div>
+                    </li>`;
+                }).join('')}</ol>
+            </section>`).join('');
+        return `<article class="panel reservation-panel">
+            <div class="reservation-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 5 3 3 5-5"/></svg><span>Antes de viajar</span></div>
+            <h3>${esc(p.reservationTitle || 'Reservas críticas')}</h3>
+            ${p.reservationNote ? `<p class="reservation-intro">${esc(p.reservationNote)}</p>` : ''}
+            <div class="reservation-groups">${groups}</div>
+        </article><details class="panel" style="margin-top:20px"><summary><strong>${esc(p.toursTitle || 'Tours locales que aportan valor')}</strong></summary><p>${esc(p.tourIntro)}</p><div class="stay-list">${t.tours.map(([city, note]) => `<p><strong>${esc(city)}</strong><span>${esc(note)}</span></p>`).join('')}</div><p class="tiny">${esc(p.tourNote)}</p></details>`;
     }
     const dateFormatter = new Intl.DateTimeFormat('es-MX', {
         day: 'numeric',
