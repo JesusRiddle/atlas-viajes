@@ -69,12 +69,32 @@ window.AtlasTrip = function (ctx) {
             language: '<path d="m5 8 6 6m-7 0 7-7M3 5h11M9 3v2m4 16 5-11 5 11m-8-4h6"/>',
             currency: '<rect x="2" y="5" width="20" height="15" rx="2"/><path d="M2 9h20M6 15h4"/>'
         };
+        // Presentación experimental: etiquetas de lectura rápida para este itinerario.
         const indicators = Array.isArray(t.practicalIndicators) ? t.practicalIndicators : null;
+        const badges = t.id === 'emilia-romana' ? {
+            solo: { label: 'Muy recomendable', tone: 'green', prefix: 'Muy recomendable. ' },
+            pace: { label: 'Moderado–activo', tone: 'orange', prefix: 'Moderado–activo. ' },
+            language: { label: 'Fácil', tone: 'green', prefix: '' },
+            currency: { label: 'Tarjetas aceptadas', tone: 'green', prefix: 'Tarjetas ampliamente aceptadas; ' }
+        } : {};
+        const badgeMarkup = item => {
+            const info = badges[item.id];
+            if (!info) return '';
+            const palette = info.tone === 'orange'
+                ? 'color:#965015;background:#fff1db;border:1px solid #ebcd9c;'
+                : 'color:#236145;background:#e8f5ee;border:1px solid #bddac9;';
+            return '<span style="display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:700;line-height:1.6;margin-right:5px;white-space:nowrap;' +
+                palette + '">' + esc(info.label) + '</span>';
+        };
+        const description = item => {
+            const prefix = badges[item.id]?.prefix;
+            return prefix && item.text.startsWith(prefix) ? item.text.slice(prefix.length) : item.text;
+        };
         const content = indicators
             ? indicators.map(item => '<div class="practical-indicator">' +
                 '<span class="practical-indicator-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' +
                 (icons[item.id] || icons.solo) + '</svg></span>' +
-                '<div><strong>' + esc(item.title) + '</strong><p>' + esc(item.text) + '</p></div></div>').join('')
+                '<div><strong>' + esc(item.title) + '</strong><p>' + badgeMarkup(item) + esc(description(item)) + '</p></div></div>').join('')
             : t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
                 readable(part) + '</div>').join('');
         return '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
