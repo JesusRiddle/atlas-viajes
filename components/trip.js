@@ -7,6 +7,7 @@ window.AtlasTrip = function (ctx) {
         railAppendix, optionsSection, seasonality, knownCostPanel, home,
         loadGallery, printGuide
     } = ctx;
+    let releaseTransport = null;
     // SVG decorativos integrados, sin dependencias externas.
     function overviewIcon(name) {
         const paths = {
@@ -19,6 +20,7 @@ window.AtlasTrip = function (ctx) {
         return `<svg class="overview-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths[name]}</svg>`;
     }
     function tripPage(id) {
+        if (releaseTransport) { releaseTransport(); releaseTransport = null; }
         const t = trips.find(x => x.id === id);
         if (!t) {
             home();
@@ -156,7 +158,7 @@ window.AtlasTrip = function (ctx) {
             `</section>`
         ].join('');
         window.AtlasGallery.init(main);
-        window.AtlasMajorTransport.mount(main, t);
+        releaseTransport = window.AtlasMajorTransport.mount(main, t);
         window.AtlasTravel.initMap(t);
         document.querySelector('#dest-select').addEventListener('change', e => {
             location.hash = 'viaje/' + e.target.value;
@@ -172,5 +174,8 @@ window.AtlasTrip = function (ctx) {
         });
         document.querySelector('#print').addEventListener('click', printGuide);
     }
-    return { tripPage };
+    function cleanup() {
+        if (releaseTransport) { releaseTransport(); releaseTransport = null; }
+    }
+    return { tripPage, cleanup };
 };
