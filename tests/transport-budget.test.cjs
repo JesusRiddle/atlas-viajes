@@ -321,3 +321,13 @@ test('el JSON carece de presupuestos históricos duplicados y etiqueta importes 
     const first = view.render(trip, trip.days[0]);
     assert.ok(first.includes('Moxy Milano Malpensa Airport · 1 noche · cotizado'));
 });
+
+test('JSON modular sin resúmenes ferroviarios ni notas cambiarias heredadas', () => {
+    for (const field of ['railSummary', 'railTotal', 'railExclusions', 'railCurrencyNote',
+        'costExclusions', 'exchangeNote', 'stays', 'tips', 'boldCityNames', 'knownCosts']) {
+        assert.equal(Object.prototype.hasOwnProperty.call(trip, field), false, field);
+    }
+    assert.equal(trip.ticketNotes.length > 0, true);
+    assert.equal(trip.days.length, 12);
+    assert.equal(trip.majorTransport.length, 7);
+});
