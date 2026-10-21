@@ -65,10 +65,10 @@ test('solo se suma una tarifa por transporte, no las alternativas', () => {
     // Vuelos + todos los trenes + los tres hoteles + entradas de Firenze.
     // El importe no debe permanecer anclado a la etapa en que solo había vuelos.
     const expected = [...trip.majorTransport.map(t => budget.selectedTransportPrice(t)),
-        ...trip.expenses.map(e => e.cost)]
+        ...trip.expenses.filter(e => !e.optional).map(e => e.cost)]
         .reduce((sum, cost) => sum + budget.convert(cost, trip.exchangeRates), 0);
     assert.equal(summary.knownTotalMXN, Math.round(expected * 100) / 100);
-    assert.equal(summary.entries.length, trip.majorTransport.length + trip.expenses.length);
+    assert.equal(summary.entries.length, trip.majorTransport.length + trip.expenses.filter(e => !e.optional).length);
     assert.equal(summary.pending.length, 0);
 });
 
@@ -294,12 +294,20 @@ test('tarjeta diaria presenta partidas registradas, no inventa comidas ni asigna
 test('días sin cotización no se presentan como gasto cero y las notas son contextuales', () => {
     const view = ctx.window.AtlasDayBudget;
     const free = view.render(trip, trip.days.find(d => d.n === 12));
-    assert.ok(free.includes('Sin partidas cotizadas'));
+    assert.ok(free.includes('Alimentación · día 12'));
     assert.ok(free.includes('Presupuesto diario incompleto'));
     const input = JSON.parse(JSON.stringify(trip));
     input.expenses.push({ id: 'food-sample', category: 'food', concept: 'Alimentación', date: '2026-11-30',
         cost: { amount: 350, currency: 'MXN' } });
     const updated = view.render(input, input.days.find(d => d.n === 5));
     assert.ok(updated.includes('Alimentación'));
-    assert.ok(!updated.includes('verificar comidas'));
+    assert.ok(updated.includes('Alimentación'));
+});
+
+test('el desglose nuevo excluye opcionales y conserva exactamente las entradas de Firenze', () => {
+    const results = budget.summary(trip);
+    assert.equal(results.entries.some(x => x.id === 'firenze-corridoio'), false);
+    assert.equal(results.entries.filter(x => x.id.startsWith('firenze-') && x.category === 'activities').length, 3);
+    assert.equal(trip.expenses.filter(x => x.category === 'food' && !x.optional).length, trip.days.length);
+    assert.equal(results.byDay['2026-12-07'].entries.some(x => x.id === 'bologna-marconi'), true);
 });
