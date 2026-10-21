@@ -1063,3 +1063,12 @@ html{scroll-padding-top:78px}
 #temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{background:var(--pale);border:1px solid var(--line);border-radius:5px;padding:28px;width:90%;max-width:1224px;margin:22px auto;box-sizing:border-box}
 @media(max-width:680px){#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{padding:16px}}
 @media print{#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{background:white;border:0;padding:0}}
+
+/* Temporadas adopta las proporciones y superficie del panel Panorama. */
+#temporadas.atlas-panel-section{background:linear-gradient(130deg,#f7f9f9,#f1f5f6);border:1px solid var(--line);border-radius:8px;padding:27px 25px 28px}
+#temporadas .section-title{margin-bottom:22px}
+#temporadas .seasonality-kicker.atlas-editorial-kicker{gap:7px;color:#8b421f;font-size:11px;letter-spacing:1.7px;line-height:1.5;font-weight:700}
+#temporadas #seasonality-heading.atlas-editorial-title{font-family:var(--serif);font-size:clamp(24px,2.5vw,30px);font-weight:400;letter-spacing:-.6px;line-height:1.25;margin:6px 0 10px}
+#temporadas .section-title .seasonality-intro{max-width:83ch;color:var(--ink);font-size:16px;line-height:1.55;margin:0}
+@media(max-width:680px){#temporadas.atlas-panel-section{padding:20px}}
+@media print{#temporadas.atlas-panel-section{background:white;border:0;padding:0}}
