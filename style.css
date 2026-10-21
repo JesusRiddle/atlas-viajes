@@ -954,3 +954,10 @@ html{scroll-padding-top:78px}
  .trip-map-section .trip-map-cities .map-city-list li{min-width:0}
  .trip-map-section .trip-map-cities .map-city-list a{width:100%;min-height:62px;height:62px}
 }
+
+/* Leyenda alineada a la derecha del encabezado, ciudades en fila inferior. */
+@media screen and (min-width:1001px){
+ .trip-map-section .trip-map-top{display:flex;align-items:center;justify-content:space-between;gap:24px}
+ .trip-map-section .trip-map-top .map-legend{flex:none;justify-content:flex-end;margin:0}
+}
+@media screen and (max-width:1000px){.trip-map-section .trip-map-top .map-legend{margin-top:12px}}
