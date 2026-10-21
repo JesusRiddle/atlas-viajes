@@ -107,9 +107,14 @@ window.AtlasMajorTransport = (() => {
             '</section>';
     }
     function mount(root, trip) {
-        const host = root.querySelector('#traslados');
+        let host = root.querySelector('#traslados');
         if (!host) return () => {};
         function refresh() {
+            if (!host.isConnected) return;
+            const active = document.activeElement;
+            const focusedCard = active?.closest?.('.mt-card');
+            const focusedId = focusedCard?.dataset.transport;
+            const focusedField = active?.dataset?.field;
             const previous = [...host.querySelectorAll('.mt-card[open]')].map(x => x.dataset.transport);
             const frame = document.createElement('div');
             frame.innerHTML = render(trip);
@@ -120,14 +125,50 @@ window.AtlasMajorTransport = (() => {
             }
             const ticket = host.querySelector('.mt-tickets');
             if (ticket?.open) next.querySelector('.mt-tickets').open = true;
+            host.removeEventListener('change', change);
             host.replaceWith(next);
+            host = next;
+            host.addEventListener('change', change);
             updateTotal(next);
+            if (focusedId && focusedField) {
+                const matchingCard = [...next.querySelectorAll('.mt-card')].find(item => item.dataset.transport === focusedId);
+                matchingCard?.querySelector('select[data-field="' + focusedField + '"]')?.focus({ preventScroll: true });
+            }
         }
         function updateTotal(element) {
             const result = budget.currentSummary(trip);
             const node = element.querySelector('.mt-total');
-            node.textContent = 'Subtotal estructurado conocido: $' + number.format(result.knownTotalMXN) +
-                ' MXN · ' + (result.partial ? 'Presupuesto parcial; faltan partidas o conversiones.' : 'Partidas completas.');
+            const unconverted = result.entries.filter(entry => entry.mxn === null);
+            const missing = unconverted.filter(entry => entry.cost?.amount == null);
+            const foreign = unconverted.filter(entry => entry.cost?.amount != null && entry.cost?.currency !== 'MXN');
+            node.textContent = 'Importe convertido conocido: 
+        }
+        const change = e => {
+            const select = e.target.closest('select[data-field]');
+            if (!select) return;
+            const item = select.closest('.mt-card');
+            const transport = trip.majorTransport.find(t => t.id === item?.dataset.transport);
+            if (!transport) return;
+            const current = selections.get(trip.id)[transport.id] || {};
+            const optionId = select.dataset.field === 'option' ? select.value : (current.option || transport.selectedOption);
+            const option = transport.options.find(o => o.id === optionId);
+            const fareId = select.dataset.field === 'fare' ? select.value : option.selectedFare;
+            selections.set(trip, transport.id, optionId, fareId);
+        };
+        host.addEventListener('change', change);
+        const unsubscribe = selections.subscribe(tripId => { if (tripId === trip.id && root.isConnected) refresh(); });
+        updateTotal(host);
+        return () => { host.removeEventListener('change', change); unsubscribe(); };
+    }
+    return { render, mount };
+})();
+ + number.format(result.knownTotalMXN) +
+                ' MXN (no es el costo total). ' +
+                (foreign.length ? foreign.map(entry => entry.id + ': ' + formatMoney(entry.cost)).join(' · ') +
+                    ' sin tipo de cambio. ' : '') +
+                (missing.length ? missing.length + ' partidas sin precio. ' : '') +
+                (result.migrationPending ? 'Hoteles y otras partidas pendientes de migración.' : '');
+
         }
         const change = e => {
             const select = e.target.closest('select[data-field]');
