@@ -1091,3 +1091,8 @@ html{scroll-padding-top:78px}
 
 /* Iconos meteorológicos opcionales para meses evaluados; colores de estado intactos. */
 .season-month .season-weather-icon{display:block;width:19px;height:19px;flex:none;margin:2px 0 1px;opacity:.9}
+
+/* Mes e icono meteorológico alineados en el encabezado de cada tarjeta. */
+.season-month .season-month-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:21px}
+.season-month .season-month-heading strong{font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.season-month .season-month-heading .season-weather-icon{margin:0 0 0 auto;flex:none}
