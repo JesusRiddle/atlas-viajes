@@ -20,6 +20,29 @@ window.AtlasTrip = function (ctx) {
         };
         return `<svg class="overview-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${paths[name]}</svg>`;
     }
+    // Una sola vista de consejos; cambia únicamente su ubicación para Emilia-Romagna.
+    function adviceCards(t) {
+        const compact = t.id === 'emilia-romana';
+        const title = compact
+            ? '<div class="advice-heading"><span class="eyebrow orange">Consejos para este viaje</span></div>'
+            : '';
+        const climate = compact ? factParagraphs(t.climate) :
+            '<p class="profile-summary"><strong>Dependencia del clima: ' + esc(t.profile.weather) +
+            '.</strong> ' + readable(t.profile.weatherWhy) + '</p>' + factParagraphs(t.climate);
+        const solo = compact ? factParagraphs(t.solo) :
+            '<p class="profile-summary"><strong>Viajando solo: ' + esc(t.profile.solo) +
+            '.</strong> ' + readable(t.profile.soloWhy) + '</p>' + factParagraphs(t.solo);
+        return (compact ? '<section class="overview-advice" aria-label="Consejos para este viaje">' + title : '') +
+            '<div class="factgrid' + (compact ? ' factgrid-compact' : '') + '">' +
+            (!compact ? '<article><h3><span class="section-icon" aria-hidden="true">✈</span>Salida y llegada · vuelos</h3><div class="fact-copy">' +
+                factParagraphs(t.flight) + '</div></article>' +
+                '<article><h3><span class="section-icon" aria-hidden="true">↔</span>Entre ciudades</h3><div class="fact-copy">' +
+                factParagraphs(t.local) + '</div></article>' : '') +
+            '<article><h3><span class="section-icon" aria-hidden="true">☀</span>Clima y luz</h3><div class="fact-copy">' +
+            climate + '</div></article>' +
+            '<article><h3><span class="section-icon" aria-hidden="true">◎</span>Ritmo y viajar solo</h3><div class="fact-copy">' +
+            solo + '</div></article></div>' + (compact ? '</section>' : '');
+    }
     function tripPage(id) {
         if (releaseTransport) { releaseTransport(); releaseTransport = null; }
         if (releaseBudget) { releaseBudget(); releaseBudget = null; }
@@ -82,16 +105,10 @@ window.AtlasTrip = function (ctx) {
             `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `</div>`,
             `</aside>`,
-            `</div>${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
-            `${t.id === 'emilia-romana' ? '<div class="factgrid factgrid-compact" aria-label="Consejos para este viaje">' :
-                '<div class="factgrid">'}`,
-            `${t.id === 'emilia-romana' ? '' : '<article><h3><span class="section-icon" aria-hidden="true">✈</span>Salida y llegada · vuelos</h3><div class="fact-copy">' + factParagraphs(t.flight) + '</div></article>'}`,
-            `${t.id === 'emilia-romana' ? '' : '<article><h3><span class="section-icon" aria-hidden="true">↔</span>Entre ciudades</h3><div class="fact-copy">' + factParagraphs(t.local) + '</div></article>'}`,
-            `<article><h3><span class="section-icon" aria-hidden="true">☀</span>Clima y luz</h3><div class="fact-copy">`,
-            `<p class="profile-summary"><strong>Dependencia del clima: ${esc(t.profile.weather)}.</strong> ${readable(t.profile.weatherWhy)}</p>${factParagraphs(t.climate)}</div></article>`,
-            `<article><h3><span class="section-icon" aria-hidden="true">◎</span>Ritmo y viajar solo</h3><div class="fact-copy">`,
-            `<p class="profile-summary"><strong>Viajando solo: ${esc(t.profile.solo)}.</strong> ${readable(t.profile.soloWhy)}</p>${factParagraphs(t.solo)}</div></article>`,
             `</div>`,
+            `${t.id === 'emilia-romana' ? adviceCards(t) : ''}`,
+            `${window.AtlasTravel.mapSection(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
+            `${t.id === 'emilia-romana' ? '' : adviceCards(t)}`,
             `<article class="panel" style="margin-top:20px">`,
             `<h3>`,
             `<span class="section-icon" aria-hidden="true">⌂</span>Dónde dormir</h3>${stayParagraphs(id)}</article>${!t.planningDetails ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>${variants(t)}${railAppendix(t)}${seasonality(t)}<section class="section wrap" id="dias">`,
