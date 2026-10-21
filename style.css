@@ -860,3 +860,16 @@ html{scroll-padding-top:78px}
 #plan .overview-editorial .budget-teaser .budget-exchange-label{font-size:12px;line-height:1.5}
 #plan .overview-editorial .budget-teaser .budget-exchange-values{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:6px;font-size:12px;line-height:1.6;color:#dae5e8}
 @media(max-width:680px){#plan .overview-editorial .budget-teaser{padding:21px 22px}}
+
+/* Encabezado del mapa: ciudades en columna lateral sin alterar los controles Leaflet. */
+.trip-map-section .trip-map-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,37%);align-items:start;column-gap:28px;margin-bottom:14px}
+.trip-map-section .trip-map-intro{min-width:0}
+.trip-map-section .trip-map-cities{min-width:0;padding:3px 0 0 24px;border-left:1px solid var(--line)}
+.trip-map-section .trip-map-cities .map-locations-heading{padding:0;border:0;font-size:12px}
+.trip-map-section .trip-map-cities .map-city-list{margin:10px 0 0;gap:7px}
+.trip-map-section .trip-map-cities .map-city-list a{font-size:12px}
+@media(max-width:760px){
+ .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr);row-gap:14px}
+ .trip-map-section .trip-map-cities{padding:12px 0 0;border-left:0;border-top:1px solid var(--line)}
+}
+@media print{.trip-map-section .trip-map-header{display:block}.trip-map-section .trip-map-cities{margin-top:12px;border:0;padding:0}}
