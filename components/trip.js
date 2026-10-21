@@ -7,10 +7,19 @@ window.AtlasTrip = function (ctx) {
         railAppendix, optionsSection, seasonality, knownCostPanel, home,
         loadGallery, printGuide
     } = ctx;
-    let releaseTransport = null;
-    let releaseBudget = null;
-    let releaseDayTransport = null;
-    let releaseDayBudget = null;
+    // Cada vista registra sus suscripciones y las libera al navegar.
+    let disposeView = [];
+    function cleanup() {
+        for (const dispose of disposeView.splice(0).reverse()) dispose();
+    }
+    function mountView(trip) {
+        disposeView = [
+            window.AtlasMajorTransport.mount(main, trip),
+            window.AtlasBudgetTable.mount(main, trip),
+            mountTransport(main, trip),
+            window.AtlasDayBudget.mount(main, trip)
+        ].filter(dispose => typeof dispose === 'function');
+    }
     // SVG decorativos integrados, sin dependencias externas.
     function overviewIcon(name) {
         const paths = {
@@ -74,10 +83,7 @@ window.AtlasTrip = function (ctx) {
             ).join('') + '</div></div>';
     }
     function tripPage(id) {
-        if (releaseTransport) { releaseTransport(); releaseTransport = null; }
-        if (releaseBudget) { releaseBudget(); releaseBudget = null; }
-        if (releaseDayTransport) { releaseDayTransport(); releaseDayTransport = null; }
-        if (releaseDayBudget) { releaseDayBudget(); releaseDayBudget = null; }
+        cleanup();
         const t = trips.find(x => x.id === id);
         if (!t) {
             home();
@@ -174,10 +180,7 @@ window.AtlasTrip = function (ctx) {
             `</section>`
         ].join('');
         window.AtlasGallery.init(main);
-        releaseTransport = window.AtlasMajorTransport.mount(main, t);
-        releaseBudget = window.AtlasBudgetTable.mount(main, t);
-        releaseDayTransport = mountTransport(main, t);
-        releaseDayBudget = window.AtlasDayBudget.mount(main, t);
+        mountView(t);
         window.AtlasTravel.initMap(t);
         document.querySelector('#dest-select').addEventListener('change', e => {
             location.hash = 'viaje/' + e.target.value;
@@ -192,12 +195,6 @@ window.AtlasTrip = function (ctx) {
             e.target.textContent = opening ? 'Contraer todos los días' : 'Desplegar todos los días';
         });
         document.querySelector('#print').addEventListener('click', printGuide);
-    }
-    function cleanup() {
-        if (releaseDayBudget) { releaseDayBudget(); releaseDayBudget = null; }
-        if (releaseDayTransport) { releaseDayTransport(); releaseDayTransport = null; }
-        if (releaseBudget) { releaseBudget(); releaseBudget = null; }
-        if (releaseTransport) { releaseTransport(); releaseTransport = null; }
     }
     return { tripPage, cleanup };
 };
