@@ -53,7 +53,7 @@ window.AtlasTrip = function (ctx) {
         return '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
             '<h3><span class="section-icon" aria-hidden="true">◎</span>Ritmo y consejos prácticos</h3>' +
             '<div class="overview-practical-grid">' +
-            t.solo.split(/\\n\\s*\\n/).filter(Boolean).map(part => '<div class="practical-item">' +
+            t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
                 readable(part) + '</div>').join('') + '</div></section>';
     }
     function overviewStays(t, inline = false) {
