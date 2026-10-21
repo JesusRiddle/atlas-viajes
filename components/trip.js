@@ -74,7 +74,7 @@ window.AtlasTrip = function (ctx) {
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
             `<strong>${price(t)}</strong>`,
             `<p>MXN · una persona · habitación privada · viaje completo</p>`,
-            `<p class="budget-exchange">${t.exchangeRates && t.exchangeRateSnapshot ?
+            `${t.exchangeRates && t.exchangeRateSnapshot ? '<p class="budget-exchange">
                 'Tipo de cambio de referencia · ' + esc(t.exchangeRateSnapshot.date) + '<span>€1 = 
             `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `</div>`,
@@ -289,7 +289,7 @@ window.AtlasTrip = function (ctx) {
     return { tripPage, cleanup };
 };
  +
-                Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span>' : ''}</p>`,
+                Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span></p>' : ''}`,
             `<a href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `</div>`,
             `</aside>`,
