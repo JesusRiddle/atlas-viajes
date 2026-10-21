@@ -238,3 +238,15 @@ test('cinco excursiones muestran ambos tramos desde los datos estructurados', ()
         }
     }
 });
+
+test('operadores y números de servicio sobreviven a la integración diaria', () => {
+    const view = ctx.window.AtlasDay({ trips: [trip], esc: String, places: {}, photos: {} });
+    const firenze = view.transportSummary(trip, trip.days.find(d => d.n === 9));
+    assert.ok(firenze.includes('Frecciarossa 9505'));
+    assert.ok(firenze.includes('Italo'));
+    const ravenna = view.transportSummary(trip, trip.days.find(d => d.n === 5));
+    assert.ok(ravenna.includes('Regionale 17543'));
+    assert.ok(ravenna.includes('Regionale 17558'));
+    const flight = view.transportSummary(trip, trip.days[0]);
+    assert.ok(flight.includes('Billete redondo'));
+});
