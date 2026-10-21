@@ -85,9 +85,10 @@ window.AtlasMajorTransport = (() => {
                     (seg.operator ? '<strong>' + esc(seg.operator) + '</strong>' : '') +
                     (seg.flightNumber ? '<span>' + esc(seg.flightNumber) + '</span>' : '') +
                     '<span>' + duration + '</span></span>'
-                : '<small>' + duration +
-                    (seg.operator ? ' · ' + esc(seg.operator) : '') +
-                    (seg.flightNumber ? ' · ' + esc(seg.flightNumber) : '') + '</small>';
+                : '<span class="mt-train-meta">' +
+                    (seg.operator ? '<strong>' + esc(seg.operator) + '</strong>' : '') +
+                    (seg.flightNumber ? '<span>' + esc(seg.flightNumber) + '</span>' : '') +
+                    '<span>' + duration + '</span></span>';
             return connection + '<div class="mt-segment' + (isFlight ? ' mt-flight-segment' : '') +
                 '"><span class="mt-segment-route">' + route + '</span>' + details + '</div>';
         }).join('');
