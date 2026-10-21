@@ -710,3 +710,9 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 @media(max-width:1000px){#plan .overview-editorial .overview-side{grid-column:1;grid-row:auto}}
 @media(max-width:680px){#plan .overview-editorial .overview-side{gap:12px}#plan .overview-practical{margin:18px 0 24px;padding:16px}#plan .overview-practical-grid{grid-template-columns:1fr;gap:12px}#plan .overview-climate-card{padding:16px}}
 @media print{#plan .overview-editorial .overview-side{break-inside:avoid}#plan .overview-practical-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* El contenido izquierdo conserva su altura natural; no estirar al alto de clima. */
+#plan .overview-editorial{align-items:start}
+#plan .overview-editorial .overview-intro{align-self:start}
+#plan .overview-editorial .overview-side{align-self:start}
+#plan .overview-practical-grid .practical-item{padding:0;margin:0}
