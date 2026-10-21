@@ -688,3 +688,10 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 #plan .overview-advice .factgrid-compact{margin:0;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
 #plan .overview-advice .factgrid-compact article{height:100%;border-color:var(--line);border-top:3px solid var(--ink);background:#fff}
 @media(max-width:680px){#plan .overview-advice{margin:20px 0 24px}#plan .overview-advice .factgrid-compact{grid-template-columns:1fr;gap:12px}}
+
+/* Estancias integradas en el panorama de Emilia-Romagna. */
+#plan .overview-intro .overview-stays-inline{margin-top:18px;padding-top:15px;border-top:1px solid var(--line)}
+#plan .overview-intro .overview-stays-inline .overview-stays-heading{margin-bottom:10px}
+#plan .overview-intro .overview-stays-inline .baseroute{gap:8px}
+#plan .overview-intro .overview-stays-inline .basepill{padding:9px 11px}
+@media(max-width:680px){#plan .overview-intro .overview-stays-inline{margin-top:15px;padding-top:13px}#plan .overview-intro .overview-stays-inline .overview-stays-heading>span{font-size:10px;letter-spacing:.6px}}
