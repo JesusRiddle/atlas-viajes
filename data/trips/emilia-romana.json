@@ -2036,17 +2036,17 @@
       "06": {
         "status": "conditional",
         "description": "Caluroso (27–29 °C), días largos, más turistas y caminatas exigentes.",
-        "icon": "sun"
+        "icon": "hot"
       },
       "07": {
         "status": "avoid",
         "description": "Mucho calor (30–33 °C), bochorno y alta afluencia turística.",
-        "icon": "sun"
+        "icon": "hot"
       },
       "08": {
         "status": "avoid",
         "description": "Calor intenso (30–33 °C) y posibles cierres por Ferragosto.",
-        "icon": "sun"
+        "icon": "hot"
       },
       "09": {
         "status": "recommended",
