@@ -1096,3 +1096,24 @@ html{scroll-padding-top:78px}
 .season-month .season-month-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:21px}
 .season-month .season-month-heading strong{font-size:13px;letter-spacing:.04em;text-transform:uppercase}
 .season-month .season-month-heading .season-weather-icon{margin:0 0 0 auto;flex:none}
+
+/* Calendario editorial: tarjetas aireadas y colores de estado suaves. */
+#temporadas .season-months{gap:12px;margin-top:18px}
+#temporadas .season-month{border-radius:12px;padding:14px;min-height:154px;gap:9px;box-shadow:0 1px 2px rgba(16,42,51,.035);align-items:flex-start}
+#temporadas .season-month-heading{width:100%;min-height:20px}
+#temporadas .season-month-heading strong{font-size:13px;letter-spacing:.08em}
+#temporadas .season-weather-icon{width:18px;height:18px}
+#temporadas .season-state{display:inline-flex;align-items:center;align-self:flex-start;width:auto;max-width:100%;padding:4px 9px;border-radius:999px;font-size:11px;font-weight:700;line-height:1.2}
+#temporadas .season-month-description{margin:0;font-size:12px;line-height:1.5;color:var(--ink);overflow-wrap:anywhere}
+#temporadas .season-pending{background:#f8f3fb;border-color:#d6c2e5;color:#654280}
+#temporadas .season-pending .season-state{background:#ebddf7;color:#653b97}
+#temporadas .season-recommended{background:#f1f8f2;border-color:#bbd8c2;color:#246a3d}
+#temporadas .season-recommended .season-state{background:#dceee1;color:#246a3d}
+#temporadas .season-conditional{background:#fffaed;border-color:#e8ce90;color:#805a0c}
+#temporadas .season-conditional .season-state{background:#f8eac5;color:#795200}
+#temporadas .season-avoid{background:#fcf2f2;border-color:#e5b7ba;color:#a13d43}
+#temporadas .season-avoid .season-state{background:#f5dfe0;color:#8b3037}
+#temporadas .season-legend{gap:10px 18px;margin:19px 0 0;font-size:12px}
+#temporadas .season-swatch{width:11px;height:11px;border-radius:3px}
+#temporadas .season-summary{border-top:1px solid var(--line);padding-top:15px;margin-top:17px;font-size:13px;line-height:1.65}
+@media(max-width:560px){#temporadas .season-month{padding:12px;min-height:142px}#temporadas .season-state{font-size:10px;padding:4px 7px}}
