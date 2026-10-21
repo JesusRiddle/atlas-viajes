@@ -98,7 +98,7 @@ window.AtlasMajorTransport = (() => {
     }
     function transportKind(type) {
         const shapes = {
-            flight: '<path d="M17.5 21 15 13 3 9.5V6l12 2 2.5-5h2l-.7 6.2L22 12v2l-3.2.5.7 6.5h-2Z" transform="rotate(-45 12 12)"/>',
+            flight: '<path d="M22 16v-2l-8-5V3.5a2 2 0 0 0-4 0V9l-8 5v2l8-2.5V19l-2 1.5V22l4-1 4 1v-1.5L14 19v-5.5L22 16Z"/>',
             train: '<rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 10h14M8 14h2m4 0h2M8 21l2-3m6 3-2-3"/>',
             bus: '<rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 10h16M7 15h2m6 0h2M7 19v2m10-2v2"/>',
             ferry: '<path d="M3 16 6 9h12l3 7-9 5-9-5ZM9 9V5h6v4M2 22c2-1 3-1 5 0s3 1 5 0 3-1 5 0 3 1 5 0"/>',
