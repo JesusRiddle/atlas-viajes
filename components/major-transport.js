@@ -98,7 +98,7 @@ window.AtlasMajorTransport = (() => {
     }
     function transportKind(type) {
         const shapes = {
-            flight: '<path d="M21 3 3 10l7 3 3 8 8-18Z"/><path d="m10 13 5-5"/>',
+            flight: '<path d="M17.5 21 15 13 3 9.5V6l12 2 2.5-5h2l-.7 6.2L22 12v2l-3.2.5.7 6.5h-2Z" transform="rotate(-45 12 12)"/>',
             train: '<rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 10h14M8 14h2m4 0h2M8 21l2-3m6 3-2-3"/>',
             bus: '<rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 10h16M7 15h2m6 0h2M7 19v2m10-2v2"/>',
             ferry: '<path d="M3 16 6 9h12l3 7-9 5-9-5ZM9 9V5h6v4M2 22c2-1 3-1 5 0s3 1 5 0 3-1 5 0 3 1 5 0"/>',
@@ -140,7 +140,7 @@ window.AtlasMajorTransport = (() => {
                 segmentDetails(j, transport.type === 'flight') + '</div>';
         }).join('');
         return '<details class="mt-card" data-transport="' + esc(transport.id) + '">' +
-            '<summary><span class="mt-kind">' + transportKind(transport.type) + '</span>' +
+            '<summary><span class="mt-kind">' + transportKind(transport.previewType || transport.type) + '</span>' +
             '<span class="mt-route"><strong>' + esc(transport.title) + '</strong><small>' +
             (transport.type === 'train' ? (transport.day ? 'Día ' + transport.day : '') : esc(option.provider || '') + (transport.day ? ' · Día ' + transport.day : '')) + '</small></span>' +
             '<span class="mt-inline">' + summary + '</span>' +
