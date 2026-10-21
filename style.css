@@ -886,3 +886,6 @@ html{scroll-padding-top:78px}
 .trip-map-section .trip-map-cities .map-city-bed{flex:none;vertical-align:middle}
 @media(max-width:1080px){.trip-map-section .trip-map-cities .map-city-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:760px){.trip-map-section .trip-map-cities .map-city-list{grid-template-columns:repeat(auto-fit,minmax(96px,1fr))}}
+
+/* El número y el nombre de cada ciudad no deben dividirse. */
+.trip-map-section .trip-map-cities .map-city-list .map-city-name{display:block;white-space:nowrap;font-size:11.5px;letter-spacing:-.15px}
