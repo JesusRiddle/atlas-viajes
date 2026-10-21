@@ -1995,62 +1995,62 @@
     "months": {
       "10": {
         "status": "recommended",
-        "description": "Otoñal y templado (máx. 19–22 °C), menos turistas y buenas caminatas; más lluvias y menos luz.",
+        "description": "Otoñal (19–22 °C), menos turistas; aumenta la lluvia y baja la luz.",
         "icon": "partlyCloudy"
       },
       "11": {
         "status": "conditional",
-        "description": "Fresco y lluvioso (máx. 12–16 °C). Menos turistas, pero días cortos y posible niebla.",
+        "description": "Fresco (12–16 °C), lluvia y niebla; menos turistas y días cortos.",
         "icon": "cloudy"
       },
       "12": {
         "status": "conditional",
-        "description": "Frío (máx. 7–11 °C), atardecer temprano y ambiente navideño. Abrigarse bien.",
+        "description": "Frío (7–11 °C), poca luz y ambiente navideño.",
         "icon": "snow"
       },
       "01": {
         "status": "avoid",
-        "description": "Muy frío (máx. 6–9 °C), heladas, niebla y poca luz. Menos turistas, pero excursiones menos cómodas.",
+        "description": "Muy frío (6–9 °C), niebla y poca luz. Excursiones menos cómodas.",
         "icon": "snow"
       },
       "02": {
         "status": "conditional",
-        "description": "Frío (máx. 9–12 °C), pero días más largos y menos turistas. Viable con abrigo y flexibilidad.",
+        "description": "Frío (9–12 °C), más luz y menos turistas. Conviene llevar abrigo.",
         "icon": "partlyCloudy"
       },
       "03": {
         "status": "conditional",
-        "description": "Primavera temprana (máx. 14–16 °C), más luz y turismo moderado; mañanas frías y tiempo variable.",
+        "description": "Primavera fresca (14–16 °C), más luz y clima variable.",
         "icon": "partlyCloudy"
       },
       "04": {
         "status": "recommended",
-        "description": "Clima templado (máx. 18–20 °C) y días largos; ideal para excursiones, con posibles lluvias y más turistas en Semana Santa.",
+        "description": "Templado (18–20 °C), días largos y excelentes excursiones. Posibles lluvias.",
         "icon": "sun"
       },
       "05": {
         "status": "recommended",
-        "description": "Templado (máx. 22–25 °C), casi 15 h de luz e ideal para excursiones; posibles lluvias y más turistas.",
+        "description": "Agradable (22–25 °C), mucha luz y buenas excursiones. Posibles lluvias.",
         "icon": "partlyCloudy"
       },
       "06": {
         "status": "conditional",
-        "description": "Caluroso (máx. 27–29 °C) y días muy largos; aumentan las aglomeraciones y el calor al caminar.",
+        "description": "Caluroso (27–29 °C), días largos, más turistas y caminatas exigentes.",
         "icon": "sun"
       },
       "07": {
         "status": "avoid",
-        "description": "Verano intenso (máx. 30–33 °C), bochorno y alta afluencia. El calor dificulta las caminatas y excursiones.",
+        "description": "Mucho calor (30–33 °C), bochorno y alta afluencia turística.",
         "icon": "sun"
       },
       "08": {
         "status": "avoid",
-        "description": "Calor fuerte (máx. 30–33 °C); Ferragosto trae cierres o cambios de horario. Menos cómodo para recorrer ciudades.",
+        "description": "Calor intenso (30–33 °C) y posibles cierres por Ferragosto.",
         "icon": "sun"
       },
       "09": {
         "status": "recommended",
-        "description": "Agradable (máx. 25–27 °C), días aún largos e ideal para excursiones; persisten turistas y posibles lluvias.",
+        "description": "Agradable (25–27 °C), aún con buena luz y posibles lluvias.",
         "icon": "sun"
       }
     }
