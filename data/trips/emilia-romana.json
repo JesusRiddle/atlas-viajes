@@ -1991,19 +1991,19 @@
     }
   ],
   "seasonality": {
-    "summary": "Por definir",
+    "summary": "Noviembre y diciembre son viables para museos, ciudades y gastronomía, pero exigen abrigo, flexibilidad ante lluvia y aprovechar la luz diurna. El resto de los meses está pendiente de evaluación.",
     "months": {
       "10": {
         "status": "pending",
         "description": "Por definir"
       },
       "11": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "conditional",
+        "description": "Fresco y lluvioso (máx. 12–16 °C). Menos turistas, pero días cortos y posible niebla."
       },
       "12": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "conditional",
+        "description": "Frío (máx. 7–11 °C), atardecer temprano y ambiente navideño. Abrigarse bien."
       },
       "01": {
         "status": "pending",
