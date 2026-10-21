@@ -840,22 +840,55 @@
     [
       "Prioridad muy alta",
       [
-        "Cenacolo Vinciano: reserva obligatoria; revisar entradas oficiales adicionales o visita guiada legítima con acceso si se agota la individual.",
-        "Galleria dell’Accademia — horario elegido 08:15–08:30 · €24.00 (≈ $489 MXN); reservar/verificar disponibilidad.",
-        "Cupola del Brunelleschi — acceso elegido 10:30 · duración aprox. 45 min · Brunelleschi Pass €30 (≈ $612 MXN) · pendiente de compra. Llegar al complejo hacia las 10:00 para el depósito obligatorio de mochila/bolsas; llevar identificación y acceder por Porta della Mandorla.",
-        "Gallerie degli Uffizi — 13:30 · entrada nominativa comprada antes del día de visita · €29.00 (≈ $591 MXN).",
-        "Corridoio Vasariano — suplemento independiente · horario objetivo 16:45 · €20.00 (≈ $408 MXN) · PENDIENTE DE RESERVA."
+        {
+          "title": "Cenacolo Vinciano",
+          "description": "Reserva obligatoria; revisar entradas oficiales adicionales o visita guiada legítima con acceso si se agota la individual."
+        },
+        {
+          "title": "Galleria dell’Accademia",
+          "description": "Horario elegido 08:15–08:30 · €24.00 (≈ $489 MXN); reservar/verificar disponibilidad."
+        },
+        {
+          "title": "Cupola del Brunelleschi",
+          "description": "Acceso elegido 10:30 · duración aprox. 45 min · Brunelleschi Pass €30 (≈ $612 MXN) · pendiente de compra. Llegar al complejo hacia las 10:00 para el depósito obligatorio de mochila/bolsas; llevar identificación y acceder por Porta della Mandorla."
+        },
+        {
+          "title": "Gallerie degli Uffizi",
+          "description": "Horario elegido 13:30 · entrada nominativa que debe comprarse antes de la visita · €29.00 (≈ $591 MXN)."
+        },
+        {
+          "title": "Corridoio Vasariano",
+          "description": "Visita opcional. Suplemento independiente · horario objetivo 16:45 · €20.00 (≈ $408 MXN) · pendiente de reserva."
+        }
       ]
     ],
     [
       "Prioridad alta",
       [
-        "Acetaia Marchi, experiencia opcional: solicitar confirmación por escrito de apertura, horario, admisión individual y precio para el 5 de diciembre. Las condiciones publicadas limitan los sábados a abril–octubre y anuncian mínimo dos personas; el plan principal es Museo Enzo Ferrari y centro histórico.",
-        "Torre dell’Orologio, Bologna: reservar como mirador sustituto de Torre degli Asinelli.",
-        "Teatro Anatomico del Archiginnasio: reserva para el miércoles 2 de diciembre.",
-        "Billete de 5 monumentos de Ravenna: reservar franjas de acceso y confirmar calendario invernal.",
-        "Palazzo dei Diamanti: entrada a Da Monet a Van Gogh a Kandinsky. Nuovi sguardi sulla natura e la modernità.",
-        "Alta velocidad Milano → Bologna y Bologna ↔ Firenze: servicios cotizados para las fechas exactas; verificar disponibilidad y condiciones al comprar."
+        {
+          "title": "Acetaia Marchi",
+          "description": "Experiencia opcional: solicitar confirmación por escrito de apertura, horario, admisión individual y precio para el 5 de diciembre. Las condiciones publicadas limitan los sábados a abril–octubre y anuncian mínimo dos personas; el plan principal es Museo Enzo Ferrari y centro histórico."
+        },
+        {
+          "title": "Torre dell’Orologio, Bologna",
+          "description": "Reservar como mirador sustituto de Torre degli Asinelli."
+        },
+        {
+          "title": "Teatro Anatomico del Archiginnasio",
+          "description": "Reservar para el miércoles 2 de diciembre."
+        },
+        {
+          "title": "Billete de 5 monumentos de Ravenna",
+          "description": "Reservar franjas de acceso y confirmar calendario invernal."
+        },
+        {
+          "title": "Palazzo dei Diamanti",
+          "description": "Entrada a Da Monet a Van Gogh a Kandinsky. Nuovi sguardi sulla natura e la modernità."
+        },
+        {
+          "title": "Trenes de alta velocidad",
+          "description": "Milano → Bologna y Bologna ↔ Firenze: servicios cotizados para las fechas exactas; verificar disponibilidad y condiciones al comprar."
+        }
       ]
     ]
   ],
