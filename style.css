@@ -1043,3 +1043,8 @@ html{scroll-padding-top:78px}
 #alojamientos .hotel-section-kicker{display:flex;align-items:center;gap:8px;color:#92502b;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
 #alojamientos .hotel-section-kicker .overview-icon{width:17px;height:17px;flex:none}
 #alojamientos .hotel-section-heading h2{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0 18px;color:var(--ink)}
+
+/* Encabezado de temporadas alineado con el sistema editorial de alojamientos. */
+.seasonality-section .seasonality-kicker{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
+.seasonality-section .seasonality-heading-icon{width:17px;height:17px;flex:none}
+.seasonality-section #seasonality-heading{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0;color:var(--ink)}
