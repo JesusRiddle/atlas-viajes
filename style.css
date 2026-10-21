@@ -680,3 +680,11 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 .factgrid-compact .fact-copy p:first-child{margin-top:0}
 @media(max-width:680px){.factgrid-compact{gap:12px}.factgrid-compact article{padding:15px 16px}}
 @media print{.factgrid-compact article{break-inside:avoid}}
+
+/* Consejos del viaje junto al panorama, después de los alojamientos. */
+#plan .overview-advice{margin:24px 0 28px}
+#plan .overview-advice .advice-heading{margin-bottom:12px}
+#plan .overview-advice .advice-heading .eyebrow{font-size:12px;letter-spacing:1.4px;margin:0}
+#plan .overview-advice .factgrid-compact{margin:0;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+#plan .overview-advice .factgrid-compact article{height:100%;border-color:var(--line);border-top:3px solid var(--ink);background:#fff}
+@media(max-width:680px){#plan .overview-advice{margin:20px 0 24px}#plan .overview-advice .factgrid-compact{grid-template-columns:1fr;gap:12px}}
