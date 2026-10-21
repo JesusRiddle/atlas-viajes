@@ -71,12 +71,12 @@ window.AtlasBudgetTable = (() => {
                     '</td><td class="budget-amount">' + (mxn === null ? 'Por cotizar' : pesos(mxn)) + '</td></tr>');
             });
         }
-        markup.push('<tr class="totalrow"><td>Subtotal conocido · parcial</td><td></td><td class="budget-amount">' +
+        markup.push('<tr class="totalrow"><td>Subtotal registrado · cotizado + estimado</td><td></td><td class="budget-amount">' +
             pesos(result.knownTotalMXN) + '</td></tr>');
         return {
             html: markup.join(''),
             note: 'Los importes en MXN usan el tipo de cambio de referencia del viaje. ' +
-                'No incluye gastos pendientes de cotizar ni constituye el costo total.',
+                'Incluye cotizaciones y supuestos estimados; no es un total confirmado ni incluye pendientes.',
             result
         };
     }
