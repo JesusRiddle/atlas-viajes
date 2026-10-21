@@ -111,7 +111,7 @@ window.AtlasTrip = function (ctx) {
             '<div class="overview-stays-heading"><h3 class="overview-subheading">' +
             overviewIcon('bed') + (inline ? ' Dónde dormirás' : ' Tus alojamientos') +
             '</h3><span>' + caption + '</span></div>' +
-            '<div class="baseroute">' + t.bases.map((x, i) =>
+            '<div class="baseroute" style="--stay-columns:' + Math.min(Math.max(t.bases.length, 1), 4) + '">' + t.bases.map((x, i) =>
                 '<div class="basepill"><span class="basepill-number">' + String(i + 1).padStart(2, '0') +
                 '</span>' + overviewIcon('bed') + '<strong>' + esc(x[0]) + '</strong><small>' +
                 x[1] + ' ' + (x[1] === 1 ? 'noche' : 'noches') + '</small></div>'
