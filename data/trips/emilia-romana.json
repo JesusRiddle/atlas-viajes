@@ -1991,7 +1991,7 @@
     }
   ],
   "seasonality": {
-    "summary": "Abril destaca entre los meses evaluados por sus temperaturas templadas y días largos; marzo es aceptable, aunque variable. Enero es poco recomendable; febrero, noviembre y diciembre presentan inconvenientes estacionales. De mayo a octubre todavía falta evaluar.",
+    "summary": "Abril y mayo destacan por su equilibrio entre clima agradable y horas de luz. Junio permite aprovechar días largos, pero aumenta el calor y la afluencia. Enero es poco recomendable; febrero, marzo, noviembre y diciembre son aceptables con inconvenientes. Julio a octubre siguen pendientes de evaluar.",
     "months": {
       "10": {
         "status": "pending",
@@ -2028,12 +2028,14 @@
         "icon": "sun"
       },
       "05": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "recommended",
+        "description": "Templado (máx. 22–25 °C), casi 15 h de luz e ideal para excursiones; posibles lluvias y más turistas.",
+        "icon": "partlyCloudy"
       },
       "06": {
-        "status": "pending",
-        "description": "Por definir"
+        "status": "conditional",
+        "description": "Caluroso (máx. 27–29 °C) y días muy largos; aumentan las aglomeraciones y el calor al caminar.",
+        "icon": "sun"
       },
       "07": {
         "status": "pending",
