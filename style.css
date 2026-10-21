@@ -986,3 +986,8 @@ html{scroll-padding-top:78px}
 .trip-map-section .map-city-select:hover{border-color:#a8bdc3;background:#f9fcfc}
 .trip-map-section .map-city-select:focus-visible{outline:3px solid #dc5c2e;outline-offset:2px}
 @media(max-width:760px){.trip-map-section .trip-map-cities .map-city-list .map-city-select{height:64px;min-height:64px}}
+
+/* Reservaciones: igual altura en Desktop; contador según prioridad. */
+@media(min-width:681px){#plan .reservation-groups{align-items:stretch}#plan .reservation-groups>.reservation-group{height:100%}}
+#plan .reservation-priority-very-high .reservation-count{color:#a52727;background:#fff0ef;border-color:#f0c4c2}
+#plan .reservation-priority-high .reservation-count{color:#795300;background:#fff5c7;border-color:#e7cd70}
