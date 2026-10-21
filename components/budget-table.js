@@ -45,14 +45,15 @@ window.AtlasBudgetTable = (() => {
             const pendingLabel = key === 'food' ? 'Pendiente de desglose' :
                 key === 'other' ? 'Pendiente de desglose' : null;
             if (!items.length && !pendingLabel) continue;
-            markup.push('<tr class="budget-category"><th colspan="3" scope="rowgroup">' + esc(title) + '</th></tr>');
+            markup.push('<tr class="budget-category"><th colspan="3" scope="rowgroup"><button type="button" class="budget-toggle" data-budget-toggle="' + esc(key) + '" aria-expanded="true" aria-label="Contraer ' + esc(title) + '"><span class="budget-chevron" aria-hidden="true"></span>' + esc(title) + '</button></th></tr>');
             if (!items.length) {
-                markup.push('<tr class="budget-item budget-pending"><td>' + esc(pendingLabel) +
+                markup.push('<tr class="budget-item budget-pending" data-budget-group="' + esc(key) + '"><td>' + esc(pendingLabel) +
                     '</td><td></td><td class="budget-amount">Por cotizar</td></tr>');
+                markup.push('<tr class="budget-subtotal"><td>Subtotal</td><td></td><td class="budget-amount">$0.00 + pendientes</td></tr>');
                 continue;
             }
             for (const item of items) {
-                markup.push('<tr class="budget-item"><td>' + esc(item.label) + '</td><td class="budget-amount">' +
+                markup.push('<tr class="budget-item" data-budget-group="' + esc(key) + '"><td>' + esc(item.label) + '</td><td class="budget-amount">' +
                     esc(original(item.cost)) + '</td><td class="budget-amount">' +
                     (item.mxn === null ? 'Por cotizar / convertir' : pesos(item.mxn)) + '</td></tr>');
             }
@@ -63,13 +64,15 @@ window.AtlasBudgetTable = (() => {
         }
         const optional = (trip.expenses || []).filter(item => item.optional);
         if (optional.length) {
-            markup.push('<tr class="budget-category"><th colspan="3" scope="rowgroup">Opcionales · no incluidos en subtotal</th></tr>');
+            markup.push('<tr class="budget-category"><th colspan="3" scope="rowgroup"><button type="button" class="budget-toggle" data-budget-toggle="optional" aria-expanded="true" aria-label="Contraer opcionales"><span class="budget-chevron" aria-hidden="true"></span>Opcionales · no incluidos en subtotal</button></th></tr>');
             optional.forEach(item => {
                 const mxn = budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN);
-                markup.push('<tr class="budget-item budget-optional"><td>' + esc(item.concept) +
+                markup.push('<tr class="budget-item budget-optional" data-budget-group="optional"><td>' + esc(item.concept) +
                     '</td><td class="budget-amount">' + esc(original(item.cost)) +
                     '</td><td class="budget-amount">' + (mxn === null ? 'Por cotizar' : pesos(mxn)) + '</td></tr>');
             });
+            const optionalSubtotal = optional.reduce((sum, item) => sum + (budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN) ?? 0), 0);
+            markup.push('<tr class="budget-subtotal"><td>Subtotal opcional · no incluido</td><td></td><td class="budget-amount">' + pesos(optionalSubtotal) + '</td></tr>');
         }
         markup.push('<tr class="totalrow"><td>Subtotal registrado · cotizado + estimado</td><td></td><td class="budget-amount">' +
             pesos(result.knownTotalMXN) + '</td></tr>');
@@ -95,14 +98,36 @@ window.AtlasBudgetTable = (() => {
     function mount(root, trip) {
         const host = root.querySelector('#budget-ledger');
         if (!host) return () => {};
+        const collapsed = new Set();
+        const applyCollapsed = () => {
+            host.querySelectorAll('[data-budget-toggle]').forEach(button => {
+                const key = button.dataset.budgetToggle;
+                const isCollapsed = collapsed.has(key);
+                button.setAttribute('aria-expanded', String(!isCollapsed));
+                button.setAttribute('aria-label', (isCollapsed ? 'Expandir ' : 'Contraer ') + button.textContent.trim());
+            });
+            host.querySelectorAll('[data-budget-group]').forEach(row => {
+                row.hidden = collapsed.has(row.dataset.budgetGroup);
+            });
+        };
+        const onClick = event => {
+            const button = event.target.closest('[data-budget-toggle]');
+            if (!button || !host.contains(button)) return;
+            const key = button.dataset.budgetToggle;
+            if (collapsed.has(key)) collapsed.delete(key);
+            else collapsed.add(key);
+            applyCollapsed();
+        };
+        host.addEventListener('click', onClick);
         const refresh = () => {
             if (!host.isConnected) return;
             const next = rows(trip);
             host.querySelector('[data-budget-rows]').innerHTML = next.html;
             host.querySelector('[data-budget-note]').textContent = next.note;
+            applyCollapsed();
         };
         const unsubscribe = selections.subscribe(tripId => { if (tripId === trip.id) refresh(); });
-        return unsubscribe;
+        return () => { host.removeEventListener('click', onClick); unsubscribe(); };
     }
     return { render, mount };
 })();
