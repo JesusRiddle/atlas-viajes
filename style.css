@@ -1060,6 +1060,6 @@ html{scroll-padding-top:78px}
 #temporadas .atlas-editorial-title,#costes .atlas-editorial-title{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;font-weight:700;color:var(--ink);margin:6px 0 0}
 
 /* Unificar las superficies de temporadas, itinerario y presupuesto con los paneles del Atlas. */
-#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{background:var(--pale);border:1px solid var(--line);border-radius:5px;padding:28px;margin-top:22px;margin-bottom:22px;box-sizing:border-box}
+#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{background:var(--pale);border:1px solid var(--line);border-radius:5px;padding:28px;width:90%;max-width:1224px;margin:22px auto;box-sizing:border-box}
 @media(max-width:680px){#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{padding:16px}}
 @media print{#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{background:white;border:0;padding:0}}
