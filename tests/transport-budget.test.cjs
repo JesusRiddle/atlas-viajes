@@ -157,3 +157,33 @@ test('el rango preliminar no se suma al subtotal conocido', () => {
     assert.equal(result.planningRangeMXN[1], 90000);
     assert.ok(result.knownTotalMXN < result.planningRangeMXN[0]);
 });
+
+test('vuelos Iberia: cuatro segmentos completos, escalas y tres tarifas', () => {
+    const flight = trip.majorTransport.find(t => t.id === 'flight-international');
+    const option = flight.options.find(o => o.id === 'A');
+    const [outbound, returning] = option.journeys.map(model.journeySummary);
+    assert.equal(outbound.durationMinutes, 905);
+    assert.equal(returning.durationMinutes, 1005);
+    assert.equal(outbound.layoverMinutes[0], 165);
+    assert.equal(returning.layoverMinutes[0], 115);
+    assert.deepEqual([...option.journeys.flatMap(j => j.segments.map(s => s.flightNumber))],
+        ['IB312', 'IB803', 'IB1238', 'IB311']);
+    assert.deepEqual([...option.fares.map(f => f.price.amount)], [20060, 23330, 26215]);
+    assert.equal(option.fares[0].baggage.checked.pieces, 0);
+    assert.equal(option.fares[1].baggage.checked.pieces, 1);
+    assert.equal(option.fares[2].baggage.checked.pieces, 1);
+    assert.equal(option.journeys[1].segments[0].arrivalTerminal, null);
+});
+
+test('cambio de tarifa de vuelo actualiza presupuesto sin sumar tarifas alternativas', () => {
+    const flight = trip.majorTransport.find(t => t.id === 'flight-international');
+    const initial = budget.currentSummary(trip).knownTotalMXN;
+    selections.set(trip, flight.id, 'A', 'optimal');
+    try {
+        const next = budget.currentSummary(trip);
+        assert.equal(next.knownTotalMXN - initial, 3270);
+        assert.equal(next.entries.filter(e => e.id === flight.id).length, 1);
+    } finally {
+        selections.reset(trip.id);
+    }
+});
