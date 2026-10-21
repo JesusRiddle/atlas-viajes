@@ -21,7 +21,7 @@ window.AtlasSeasonality = function (ctx) {
     }
     function highlightedSummary(summary, months) {
         const monthNames = Object.fromEntries(names.map((name, i) => [name.toLocaleLowerCase('es'), String(i + 1).padStart(2, '0')]));
-        return String(summary).split(/\\b(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\\b/gi).map((piece) => {
+        return String(summary).split(/\b(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)\b/gi).map((piece) => {
             const key = monthNames[piece.toLocaleLowerCase('es')];
             if (!key) return esc(piece);
             const state = states[months?.[key]?.status] || states.pending;
