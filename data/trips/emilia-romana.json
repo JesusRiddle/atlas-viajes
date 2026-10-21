@@ -2062,8 +2062,8 @@
     },
     {
       "id": "currency",
-      "title": "Moneda local",
-      "text": "Euro (€). Tarjetas ampliamente aceptadas; llevar algo de efectivo."
+      "title": "Pagos y moneda",
+      "text": "Euro (€). Llevar algo de efectivo para compras pequeñas."
     }
   ]
 }
