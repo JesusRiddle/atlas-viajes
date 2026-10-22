@@ -1375,3 +1375,51 @@ html{scroll-padding-top:78px}
 #dias .day .daycontent details.day-budget > summary > strong{margin-left:auto;text-align:right;min-width:0;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums}
 #dias .day .daycontent details.day-budget:not([open]) > summary.day-budget-heading{padding-bottom:0;margin-bottom:0;border-bottom:0}
 @media(max-width:680px){#dias .day .daycontent details.day-budget > summary.day-budget-heading{gap:8px}#dias .day .daycontent details.day-budget > summary > strong{font-size:14px}}
+
+/* Presupuesto diario en verde olivo suave, con cifras alineadas sin líneas divisorias. */
+#dias .day .daycontent details.day-budget{
+  background:#f3f5ec;
+  border-color:#d9dfcd;
+  color:#2f3d2d;
+}
+#dias .day .daycontent details.day-budget > summary.day-budget-heading{
+  padding-bottom:0;
+  margin-bottom:12px;
+  border-bottom:0;
+}
+#dias .day .daycontent details.day-budget > summary .day-budget-symbol{
+  background:#e5ead9;
+  color:#536649;
+}
+#dias .day .daycontent details.day-budget > summary .day-budget-title h4{
+  color:#384a35;
+}
+#dias .day .daycontent details.day-budget > summary > strong{
+  color:#344b31;
+  font-size:17px;
+}
+#dias .day .daycontent details.day-budget .day-budget-line{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) max-content;
+  align-items:baseline;
+  gap:12px;
+  padding:8px 11px;
+  border:0;
+  border-radius:5px;
+  background:rgba(255,255,255,.47);
+  margin:5px 0;
+}
+#dias .day .daycontent details.day-budget .day-budget-line strong{
+  color:#344b31;
+  font-weight:650;
+  font-variant-numeric:tabular-nums;
+  text-align:right;
+}
+#dias .day .daycontent details.day-budget .day-budget-disclaimer,
+#dias .day .daycontent details.day-budget .day-budget-pending{
+  color:#66745d;
+}
+@media(max-width:680px){
+  #dias .day .daycontent details.day-budget .day-budget-line{gap:8px;padding:8px}
+  #dias .day .daycontent details.day-budget .day-budget-line strong{white-space:nowrap}
+}
