@@ -1563,3 +1563,13 @@ html{scroll-padding-top:78px}
  #dias .day .daycontent .day-transport .day-train-timeline .mt-station-name{max-width:76px;font-size:9px}
  #dias .day .daycontent .day-transport .day-train-timeline .flight-line-duration{white-space:normal;font-size:10px;padding:2px 4px}
 }
+
+/* Cronologías de trenes diarios: ida y regreso más compactos. */
+#dias .day .daycontent .day-transport .day-train-timeline{margin:5px 0 3px}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-train-leg{min-height:35px}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-train-direction{margin:1px 0 0;line-height:1.2}
+#dias .day .daycontent .day-transport .day-train-timeline .flight-endpoint{gap:1px}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-station-name{line-height:1.15}
+@media(max-width:680px){
+ #dias .day .daycontent .day-transport .day-train-timeline .mt-train-leg{min-height:43px}
+}
