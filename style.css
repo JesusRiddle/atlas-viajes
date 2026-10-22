@@ -1692,3 +1692,36 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 @media(max-width:680px){
  #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{column-gap:7px}
 }
+
+/* Calendario editorial: mes protagonista, temperatura secundaria, estado como único acento. */
+#temporadas .season-months{gap:12px}
+#temporadas .season-month{
+  min-height:158px;padding:15px;
+  background:#fff;border:1px solid #d9e1e4;border-radius:9px;
+  box-shadow:0 2px 9px rgba(16,42,51,.035);
+  color:var(--ink);gap:9px;
+}
+#temporadas .season-month-heading{min-height:20px;align-items:center}
+#temporadas .season-month-heading .season-temperature{
+  font-size:12px;font-weight:500;letter-spacing:0;
+  color:var(--muted);font-variant-numeric:tabular-nums;
+}
+#temporadas .season-month .season-month-name{
+  display:block;font-family:Georgia,'Times New Roman',serif;
+  font-size:23px;font-weight:600;letter-spacing:-.035em;
+  line-height:1.18;color:var(--ink);
+}
+#temporadas .season-month .season-weather-icon{color:var(--season-accent);opacity:.85}
+#temporadas .season-month .season-state{
+  color:var(--season-accent);background:var(--season-tint);
+  padding:4px 9px;font-weight:600;
+}
+#temporadas .season-month-description{color:var(--muted);font-size:12px;line-height:1.5}
+#temporadas .season-recommended{--season-accent:#467b67;--season-tint:#eaf3ed}
+#temporadas .season-conditional{--season-accent:#9b783a;--season-tint:#f8f1e5}
+#temporadas .season-avoid{--season-accent:#b75b59;--season-tint:#f8ebea}
+#temporadas .season-pending{--season-accent:#716486;--season-tint:#f1edf5}
+@media(max-width:560px){
+ #temporadas .season-month{min-height:151px;padding:12px;gap:8px}
+ #temporadas .season-month .season-month-name{font-size:21px}
+}

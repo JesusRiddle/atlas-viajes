@@ -28,7 +28,11 @@ window.AtlasSeasonality = function (ctx) {
             const item = data.months[key] || { status: 'pending', description: 'Por definir' };
             const state = states[item.status] || states.pending;
             const note = item.description || 'Por definir';
-            return `<li class="season-month season-${state.css}" aria-label="${esc(name + ': ' + state.label + '. ' + note)}"><div class="season-month-heading"><strong>${esc(name.slice(0,3))}</strong>${weatherIcon(item.icon)}</div><span class="season-state">${esc(state.label)}</span><p class="season-month-description">${esc(note)}</p></li>`;
+            const match = note.match(/\(?\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*[–—-]\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*°\s*C\s*\)?/i);
+            const temperature = match ? match[0].replace(/[()]/g, '').trim() : '';
+            const description = match ? (note.slice(0, match.index) + note.slice(match.index + match[0].length))
+                .replace(/\s+,/g, ',').replace(/\s{2,}/g, ' ').trim() : note;
+            return `<li class="season-month season-${state.css}" aria-label="${esc(name + ': ' + state.label + '. ' + note)}"><div class="season-month-heading"><span class="season-temperature">${temperature ? esc(temperature) : '—'}</span>${weatherIcon(item.icon)}</div><strong class="season-month-name">${esc(name)}</strong><span class="season-state">${esc(state.label)}</span><p class="season-month-description">${esc(description || note)}</p></li>`;
         }).join('');
         return `<section class="section wrap seasonality-section atlas-panel-section" id="temporadas" aria-labelledby="seasonality-heading">
             <div class="seasonality-panel">
