@@ -29,7 +29,7 @@ window.AtlasDayTransport = (() => {
                         const previous = segments[i - 1];
                         const layover = previous && elapsed(previous.arrival, seg.departure);
                         const stop = previous ? '<div class="flight-layover"><span class="flight-layover-dot" aria-hidden="true"></span>Escala en ' + esc(seg.from) + (layover ? ' · ' + esc(layover) : ' · duración por confirmar') + '</div>' : '';
-                        return stop + '<div class="flight-leg"><div class="flight-endpoint"><strong>' + esc(hour(seg.departure)) + '</strong><span>' + esc(seg.from) + '</span></div>' +
+                        return stop + '<div class="flight-leg" aria-label="' + esc(seg.from + ' → ' + seg.to) + '"><span class="flight-route-label" hidden>' + esc(seg.from + ' → ' + seg.to) + '</span><div class="flight-endpoint"><strong>' + esc(hour(seg.departure)) + '</strong><span>' + esc(seg.from) + '</span></div>' +
                             '<div class="flight-leg-middle"><span>' + esc(elapsed(seg.departure, seg.arrival) || 'Duración pendiente') + '</span><div class="flight-line" aria-hidden="true"><i></i></div></div>' +
                             '<div class="flight-endpoint flight-endpoint-arrival"><strong>' + esc(hour(seg.arrival)) + '</strong><span>' + esc(seg.to) + '</span></div></div>';
                     }).join('');
@@ -53,7 +53,7 @@ window.AtlasDayTransport = (() => {
                 return '<div class="day-transport-item"><div class="day-transport-head"><strong><span class="day-transport-kind" aria-hidden="true">' + (icons[item.type] || '➜') + '</span>' + esc(item.title) +
                     '</strong><span>' + esc(amount) + (mxn != null && price.currency !== 'MXN' ? ' · ≈ $' +
                     mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
-                    '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
+                    '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Precio ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
                     (item.type === 'flight' ? '' : '<small>' + (option.provider ? esc(option.provider) + ' · ' : '') +
                     esc(fare.name || fare.id) + '</small>') + '</div>';
             }).join('') + '<p>Referencia del traslado completo, ya contabilizada en el presupuesto.</p></div>';
