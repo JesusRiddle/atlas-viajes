@@ -1573,3 +1573,9 @@ html{scroll-padding-top:78px}
 @media(max-width:680px){
  #dias .day .daycontent .day-transport .day-train-timeline .mt-train-leg{min-height:43px}
 }
+
+/* Destacar etiquetas de los avisos igual que las rutas, con el acento ámbar. */
+#dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row > strong:first-child{
+  color:#88682e;
+  font-weight:700;
+}
