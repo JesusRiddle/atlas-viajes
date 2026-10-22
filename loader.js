@@ -40,7 +40,7 @@
       merge(normalized, template);
       // Existing full trips keep their normal renderer; partial new trips start as drafts.
       if (!Object.hasOwn(raw, "status")) normalized.status = isMinimal ? "draft" : null;
-      if (!isMinimal && !Object.hasOwn(raw, "seasonality")) normalized.seasonality = null;
+      if (!isMinimal && normalized.status !== "draft" && !Object.hasOwn(raw, "seasonality")) normalized.seasonality = null;
       const arrays = ["routeCities","bases","costs","experiences","days","reservations","expenses",
         "majorTransport","ticketNotes","attractionTerms","mapPoints","hotels","stays",
         "practicalIndicators","tips","sources","cardHighlights",
