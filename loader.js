@@ -25,7 +25,7 @@
           typeof raw.name !== "string" || !raw.name.trim()) {
         throw new Error("Identidad inválida en " + module.file + ": id y name son obligatorios.");
       }
-      const isMinimal = !Object.hasOwn(raw, "status") && !raw.cover && !raw.start && !raw.end;
+      const isMinimal = !Object.hasOwn(raw, "status") && !raw.cover;
       const normalized = clone(raw);
       const merge = (target, defaults) => {
         for (const [key, fallback] of Object.entries(defaults)) {
@@ -39,6 +39,7 @@
       merge(normalized, template);
       // Existing full trips keep their normal renderer; partial new trips start as drafts.
       if (!Object.hasOwn(raw, "status")) normalized.status = isMinimal ? "draft" : null;
+      if (!isMinimal && !Object.hasOwn(raw, "seasonality")) normalized.seasonality = null;
       const arrays = ["routeCities","bases","costs","experiences","days","reservations","expenses",
         "majorTransport","ticketNotes","attractionTerms","mapPoints","hotels","stays",
         "practicalIndicators","tips","sources","routeHighlights","cardHighlights",
