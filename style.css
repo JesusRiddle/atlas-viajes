@@ -1932,3 +1932,14 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   .atlas-home-hero .atlas-home-hero-image{height:215px}
   .atlas-home-hero .atlas-home-stats strong{font-size:20px}
 }
+
+/* Inicio visual: la fotografía ocupa la mayor parte del hero. */
+.atlas-home-hero{grid-template-columns:minmax(0,.66fr) minmax(0,1.34fr);gap:clamp(20px,3vw,38px);padding-top:26px;padding-bottom:24px}
+.atlas-home-hero .atlas-home-lead{margin:14px 0 0}
+.atlas-home-hero .atlas-home-hero-image{height:400px}
+.atlas-home-hero .atlas-home-hero-image .photo-overlay{background:linear-gradient(180deg,transparent 72%,#102a3355)}
+@media(max-width:800px){
+ .atlas-home-hero{grid-template-columns:1fr;gap:16px}
+ .atlas-home-hero .atlas-home-hero-image{height:300px}
+}
+@media(max-width:680px){.atlas-home-hero .atlas-home-hero-image{height:250px}}
