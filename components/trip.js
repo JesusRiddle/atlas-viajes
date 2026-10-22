@@ -177,9 +177,9 @@ window.AtlasTrip = function (ctx) {
         switch (key) {
             case 'plan':
                 return true; // The master overview renders defined and pending fields incrementally.
-            case 'mapa': return !!t.mapPoints.length;
+            case 'mapa': return true;
             case 'temporadas': return !!t.seasonality?.months;
-            case 'experiencias': return !!t.experiences.length;
+            case 'experiencias': return true;
             case 'reservas': return !!(t.planningDetails && t.reservations.length);
             case 'traslados': return !!t.majorTransport.length;
             case 'alojamientos': return !!(t.hotels.length || t.stays.length);
@@ -338,7 +338,7 @@ window.AtlasTrip = function (ctx) {
         main.innerHTML = tripShell(t, id, content);
         window.AtlasGallery.init(main);
         mountView(t);
-        if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
+        if (t.mapPoints?.some(p => Array.isArray(p.coords) && p.coords.length === 2 && p.coords.every(Number.isFinite))) window.AtlasTravel.initMap(t);
         bindTripSelector();
         document.querySelector('#expand')?.addEventListener('click', e => {
             const all = [...document.querySelectorAll('.day')];
