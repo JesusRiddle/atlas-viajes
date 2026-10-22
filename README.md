@@ -4,21 +4,17 @@ Sitio de itinerarios y presupuestos: **https://jesusriddle.github.io/atlas-viaje
 
 ## Crear un viaje nuevo
 
-Con Node.js, ejecutar **uno** de estos comandos desde la raíz del repositorio:
+Crear un borrador vacío desde la raíz del repositorio:
 
 ```bash
-# Desde cero
 node scripts/new-trip.cjs mi-viaje "Nombre del viaje"
-
-# Basado en un viaje antiguo
-node scripts/new-trip.cjs mi-viaje "Nombre del viaje" --from espana-portugal
 ```
 
-El comando crea `data/trips/mi-viaje.json` y registra el viaje en `modules.js` con `available: false` (oculto). Rechaza IDs repetidos y no modifica el viaje original. Desde un viaje antiguo solo copia ciudades y experiencias como **referencias por revisar**; no copia fechas, reservas ni precios.
+El comando crea `data/trips/mi-viaje.json` y registra el viaje en `modules.js` con `available: false` (oculto). Rechaza IDs repetidos. **No lee, copia ni modifica viajes antiguos.**
 
 Completar progresivamente el JSON siguiendo [`_template.json`](data/trips/_template.json) y el [contrato de datos](docs/trip-data-contract.md). `null`, campos omitidos y listas vacías indican pendientes; nunca usar `0` para un precio desconocido. El modelo visual es **Emilia-Romagna** y sus nueve secciones, no sus datos.
 
-Tras verificar Desktop/Mobile, activar el nuevo registro cambiando `available` a `true`. Para más detalles sobre viajes antiguos: [piloto de reutilización](docs/legacy-migration-pilot.md).
+Si buscas inspiración en un viaje antiguo, proporciona su JSON a la IA como **contexto** y decide junto con ella, campo por campo, qué añadir al JSON nuevo. No existe ninguna migración automática. Tras verificar Desktop/Mobile, activar el registro con `available: true`.
 
 ## Probar localmente
 
