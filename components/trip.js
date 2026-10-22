@@ -119,7 +119,7 @@ window.AtlasTrip = function (ctx) {
     }
     // Estructura común de navegación: la información pendiente nunca oculta secciones.
     function tripNavigation(t, id, expanded = false) {
-        const sections = sectionDefinitions.map(({ id, label }) => [id, label]);
+        const sections = sectionDefinitions.map(([id, label]) => [id, label]);
         const visible = expanded ? sections : sections.filter(([key]) =>
             !(['temporadas','experiencias','reservas','traslados'].includes(key)) ||
             (key === 'temporadas' && t.seasonality) ||
@@ -140,29 +140,15 @@ window.AtlasTrip = function (ctx) {
         });
     }
     const sectionDefinitions = [
-        { id: 'plan', label: 'Panorama', title: 'La esencia de tu recorrido.',
-            fields: t => [['Descripción general', t.intro], ['Ciudades', t.routeCities], ['Bases para dormir', t.bases], ['Clima', t.climate]] },
-        { id: 'mapa', label: 'Mapa', title: 'Tu viaje en el mapa.',
-            fields: t => [['Ubicaciones', (t.mapPoints || []).map(p => p.name || p.city || 'Ubicación')]],
-            ready: t => t.mapPoints?.length > 0, render: t => window.AtlasTravel.mapSection(t) },
-        { id: 'temporadas', label: 'Temporadas', title: 'Temporadas recomendadas.',
-            fields: t => [['Evaluación de meses', (() => {
-                const count = Object.values(t.seasonality?.months || {}).filter(m => m?.status && m.status !== 'pending').length;
-                return count ? count + ' de 12 meses evaluados' : null;
-            })()]], ready: t => !!t.seasonality?.months, render: t => seasonality(t) },
-        { id: 'experiencias', label: 'Experiencias', title: 'Experiencias para recordar.',
-            fields: t => [['Actividades destacadas', t.experiences]],
-            ready: t => t.experiences?.length > 0, render: t => '<section class="section draft-trip-section">' + experiencePanel(t) + '</section>' },
-        { id: 'reservas', label: 'Reservaciones', title: 'Reservaciones importantes.',
-            fields: t => [['Reservas necesarias', t.reservations]] },
-        { id: 'traslados', label: 'Traslados', title: 'Movilidad y conexiones.',
-            fields: t => [['Traslados principales', (t.majorTransport || []).map(item => item.title || item.id)]] },
-        { id: 'alojamientos', label: 'Dónde dormir', title: 'Tus alojamientos.',
-            fields: t => [['Hoteles', t.hotels], ['Estancias', t.bases]] },
-        { id: 'dias', label: 'Día por día', title: 'Día por día.',
-            fields: t => [['Días del itinerario', (t.days || []).map(item => item.title || 'Día ' + item.n)]] },
-        { id: 'costes', label: 'Presupuesto', title: 'Lo que cuesta el viaje.',
-            fields: t => [['Partidas', (t.expenses || []).map(item => item.concept || item.id)], ['Costos presupuestados', t.costs]] }
+        ['plan', 'Panorama', 'La esencia de tu recorrido.'],
+        ['mapa', 'Mapa', 'Tu viaje en el mapa.'],
+        ['temporadas', 'Temporadas', 'Temporadas recomendadas.'],
+        ['experiencias', 'Experiencias', 'Experiencias para recordar.'],
+        ['reservas', 'Reservaciones', 'Reservaciones importantes.'],
+        ['traslados', 'Traslados', 'Movilidad y conexiones.'],
+        ['alojamientos', 'Dónde dormir', 'Tus alojamientos.'],
+        ['dias', 'Día por día', 'Día por día.'],
+        ['costes', 'Presupuesto', 'Lo que cuesta el viaje.']
     ];
     // All trips use the master page shell. Missing data only changes section content.
     function tripShell(t, id, content) {
@@ -335,9 +321,9 @@ window.AtlasTrip = function (ctx) {
             `${t.sources?.length ? '</section>' : ''}`
             ].join('')
         };
-        return sectionDefinitions.map(section => {
-            if (canRenderFullTrip(t) || sectionReady(t, section.id)) return parts[section.id]();
-            return pendingPanel(section.id, section.title, masterPanelClass[section.id]);
+        return sectionDefinitions.map(([id, label, title]) => {
+            if (canRenderFullTrip(t) || sectionReady(t, id)) return parts[id]();
+            return pendingPanel(id, title, masterPanelClass[id]);
         }).join('') + parts.fuentes();
     }
     function tripPage(id) {
