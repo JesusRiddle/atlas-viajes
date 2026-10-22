@@ -1,0 +1,94 @@
+{
+  "id": "nuevo-viaje",
+  "name": "Nuevo destino",
+  "flag": "",
+  "status": "draft",
+  "start": null,
+  "end": null,
+  "tag": "Por definir",
+  "routeCities": [],
+  "bases": [],
+  "work": null,
+  "costs": [],
+  "profile": {
+    "pace": null,
+    "solo": null,
+    "weather": null
+  },
+  "intro": null,
+  "climate": null,
+  "solo": null,
+  "flight": null,
+  "local": null,
+  "experiences": [],
+  "days": [],
+  "reservations": [],
+  "exchangeRates": {},
+  "exchangeRateSnapshot": null,
+  "expenses": [],
+  "majorTransport": [],
+  "ticketNotes": [],
+  "attractionTerms": [],
+  "cover": null,
+  "mapPoints": [],
+  "planningDetails": null,
+  "lodgingSummary": null,
+  "heroLodgingSummary": null,
+  "budgetPreliminary": true,
+  "hotels": [],
+  "stays": [],
+  "seasonality": {
+    "summary": null,
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  },
+  "practicalIndicators": []
+}
