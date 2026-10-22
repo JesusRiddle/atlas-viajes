@@ -5,7 +5,7 @@ window.AtlasTrip = function (ctx) {
         readable, highlightWords, baseLabel, experiencePanel, reservationPlanning,
         railPlanning, factParagraphs, stayParagraphs, day, hotelForDay, mountTransport, variants,
         railAppendix, optionsSection, seasonality, knownCostPanel, home,
-        loadGallery, printGuide
+        loadGallery, printGuide, canRenderFullTrip
     } = ctx;
     // Cada vista registra sus suscripciones y las libera al navegar.
     let disposeView = [];
@@ -306,7 +306,7 @@ window.AtlasTrip = function (ctx) {
             home();
             return;
         }
-        if (t.status === 'draft') {
+        if (!canRenderFullTrip(t)) {
             main.classList.remove('trip-espana-portugal');
             document.title = t.name + ' · Atlas de Viajes';
             main.innerHTML = tripShell(t, id, pendingTripSections(t), true);
