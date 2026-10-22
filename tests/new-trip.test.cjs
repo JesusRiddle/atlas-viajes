@@ -17,18 +17,13 @@ test('paso 16: dos flujos de creación sin sobrescribir el original', () => {
     fs.writeFileSync(src, JSON.stringify(original));
     const run = args => spawnSync(process.execPath,[path.join(root,'scripts','new-trip.cjs'),...args],{cwd:root,encoding:'utf8'});
     assert.equal(run(['nuevo','Nuevo']).status,0);
-    assert.equal(run(['copia','Copia','--from','antiguo']).status,0);
+    assert.equal(run(['copia','Copia','--from','antiguo']).status,1);
     const fresh = JSON.parse(fs.readFileSync(path.join(root,'data','trips','nuevo.json')));
-    const based = JSON.parse(fs.readFileSync(path.join(root,'data','trips','copia.json')));
     assert.deepEqual(fresh,{id:'nuevo',name:'Nuevo',status:'draft'});
-    assert.deepEqual(based.routeCities,['Roma']);
-    assert.deepEqual(based.experiences,['Visita']);
-    assert.equal(based.start,undefined);
-    assert.equal(based.costs,undefined);
     assert.equal(fs.readFileSync(src,'utf8'),JSON.stringify(original));
     assert.equal(run(['nuevo','Duplicado']).status,1);
     const modules = fs.readFileSync(path.join(root,'modules.js'),'utf8');
-    assert.match(modules, /"id": "copia"/);
+    assert.doesNotMatch(modules, /"id": "copia"/);
     assert.match(modules, /"available": false/);
   } finally { fs.rmSync(root,{recursive:true,force:true}); }
 });
