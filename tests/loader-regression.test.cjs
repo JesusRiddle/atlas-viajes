@@ -143,7 +143,9 @@ test('un viaje mínimo comparte encabezado, navegación y nueve anclas del model
     const ctx = {
         trips: [trip], main, covers: {}, esc: String, sums: () => [0, 0],
         canRenderFullTrip: () => false, seasonality: () => '<section id="temporadas"></section>',
-        mountTransport: () => () => {}, experiencePanel: () => '<article id="experiencias"></article>', home() {}
+        mountTransport: () => () => {}, experiencePanel: () => '<article id="experiencias"></article>',
+        reservationPlanning: () => '<article id="reservas"></article>',
+        stayParagraphs: () => '<div class="hotel-grid"></div>', home() {}
     };
     const view = window.AtlasTrip(ctx);
     assert.doesNotThrow(() => view.tripPage('japon'));
@@ -176,7 +178,9 @@ test('Panorama incremental utiliza los contenedores maestros sin inventar presup
         sums: () => [0, 0], canRenderFullTrip: () => false,
         highlightWords: text => text, mountTransport: () => () => {},
         seasonality: () => '<section id="temporadas"></section>',
-        experiencePanel: () => '<article id="experiencias"></article>', home() {}
+        experiencePanel: () => '<article id="experiencias"></article>',
+        reservationPlanning: () => '<article id="reservas"></article>',
+        stayParagraphs: () => '<div class="hotel-grid"></div>', home() {}
     };
     window.AtlasTrip(ctx).tripPage('japon');
     const html = main.innerHTML;
