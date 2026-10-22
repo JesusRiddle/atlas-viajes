@@ -1230,7 +1230,7 @@ html{scroll-padding-top:78px}
 .flight-line-duration{position:relative;z-index:1;display:inline-block;padding:2px 12px;background:#fff;color:var(--muted);font-size:12px;white-space:nowrap;line-height:1.4}
 .flight-line:before,.flight-line:after{content:"";position:absolute;top:50%;width:8px;height:8px;border:2px solid var(--ink);background:#fff;border-radius:50%;transform:translateY(-50%)}
 .flight-line:before{left:-5px}.flight-line:after{right:-5px}
-.flight-layover{display:flex;align-items:center;justify-content:center;gap:7px;margin:10px 0;padding:3px 0;background:transparent;color:var(--muted);font-size:11px;font-weight:500;line-height:1.5}
+.flight-layover{display:flex;align-items:center;justify-content:center;gap:7px;margin:4px 0;padding:1px 0;background:transparent;color:#5e563f;font-size:11px;font-weight:600;line-height:1.5}
 .flight-layover:before,.flight-layover:after{content:"";height:1px;max-width:45px;flex:1;background:#e4e5e3}
 .flight-layover-dot{width:5px;height:5px;flex:none;border-radius:50%;background:#a0a7a6}
 .flight-summary{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:16px;padding-top:11px;border-top:1px solid #e5e1d8;color:var(--muted);font-size:12px}
