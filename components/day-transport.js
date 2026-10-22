@@ -56,7 +56,7 @@ window.AtlasDayTransport = (() => {
                     '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Precio ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
                     (item.type === 'flight' ? '' : '<small>' + (option.provider ? esc(option.provider) + ' · ' : '') +
                     esc(fare.name || fare.id) + '</small>') + '</div>';
-            }).join('') + '<p>Referencia del traslado completo, ya contabilizada en el presupuesto.</p></div>';
+            }).join('') + '</div>';
     }
     function mountTransport(root, trip) {
         if (!trip.majorTransport?.length) return () => {};
