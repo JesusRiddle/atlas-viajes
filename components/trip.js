@@ -165,12 +165,11 @@ window.AtlasTrip = function (ctx) {
             fields: t => [['Partidas', (t.expenses || []).map(item => item.concept || item.id)], ['Costos presupuestados', t.costs]] }
     ];
     function draftDisplay(value) {
-        if (value === 'no_aplica') return '<span class="draft-na">No aplica</span>';
-        if (value == null || value === '' || Array.isArray(value) && !value.length)
-            return '<span class="draft-pending">Por definir</span>';
-        if (Array.isArray(value)) return esc(value.map(item => Array.isArray(item) ? item[0] :
-            item && typeof item === 'object' ? item.name || item.title || item.city || item.label || item.id || 'Elemento definido' : item).join(' · '));
-        return esc(String(value));
+        return window.AtlasEmptyState.render(value, item =>
+            Array.isArray(item) ? esc(item.map(entry => Array.isArray(entry) ? entry[0] :
+                entry && typeof entry === 'object' ?
+                    entry.name || entry.title || entry.city || entry.label || entry.id || 'Elemento definido' : entry).join(' · ')) :
+            esc(String(item)));
     }
     function renderPendingSection(section, t) {
         if (section.ready?.(t)) return section.render(t);
