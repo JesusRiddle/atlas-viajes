@@ -2124,7 +2124,3 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   .subnav>div{width:100%;min-width:0}
 }
 
-/* El texto introductorio del panorama se presenta sin negritas, incluso con resaltado automático de ciudades. */
-.overview-intro > p.lead strong,
-.overview-intro > p.lead b,
-.overview-intro > p.lead .atlas-city{font-weight:400}
