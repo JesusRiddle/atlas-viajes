@@ -5,6 +5,7 @@ let leafletPromise=null,activeMap=null,mapObserver=null;
 function leaflet(){if(leafletPromise)return leafletPromise;leafletPromise=Promise.all([new Promise((resolve,reject)=>{const css=document.createElement('link');css.rel='stylesheet';css.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';css.integrity='sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';css.crossOrigin='anonymous';css.onload=resolve;css.onerror=reject;document.head.append(css);}),new Promise((resolve,reject)=>{if(window.L){resolve();return;}const script=document.createElement('script');script.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';script.integrity='sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';script.crossOrigin='anonymous';script.onload=resolve;script.onerror=reject;document.head.append(script);})]).then(()=>window.L);return leafletPromise;}
 function mapSection(t){
 const points=(window.ATLAS_MAP_POINTS?.[t.id] || t.mapPoints || []).filter(p => p && typeof p.name === 'string');
+const positioned=points.filter(p => Array.isArray(p.coords) && p.coords.length === 2 && p.coords.every(Number.isFinite));
 const nightsByBase = new Map((t.bases || []).map(([name, nights]) => [String(name).toLocaleLowerCase('es'), Number(nights)]));
 const stayLabel = point => {
   const nights = nightsByBase.get(String(point.name).toLocaleLowerCase('es'));
@@ -24,7 +25,7 @@ return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 ${points.length ? `<div class="trip-map-cities">
 <ul class="map-city-list">${points.map(p=>`<li><button type="button" class="map-city-select" data-map-order="${p.order}" aria-label="Mostrar ${esc(p.name)} en el mapa"><span class="map-city-name">${p.order}. ${esc(p.name)}</span><small class="map-city-stay">${Number(nightsByBase.get(String(p.name).toLocaleLowerCase("es"))) > 0 ? '<svg class="map-city-bed" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7m18 11V7M3 15h18M5 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M5 12h14"/></svg>' : ""}${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></button></li>`).join('')}</ul></div>` : ''}
 </div>
-${points.length ? `<div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>` : `<div class="trip-map trip-map-pending"><p class="draft-pending">Por definir</p></div>`}
+${positioned.length ? `<div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>` : `<div class="trip-map trip-map-pending"><p class="draft-pending">Por definir</p></div>`}
 <div class="trip-map-footer"><p class="map-status" role="status">${points.length ? "El mapa se carga al llegar a esta sección." : "Ubicaciones por definir."}</p>
 <div class="map-legend"><span>Base para dormir</span><span>Excursión sin alojamiento</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div></div>
 ${t.id==='emilia-romana'?'':`<p class="tiny">Pines de referencia de cada localidad, no direcciones de hoteles ni un trazado exacto del trayecto. Las excursiones a paisajes y monumentos se detallan en el programa diario.</p>`}
