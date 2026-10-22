@@ -164,31 +164,42 @@ window.AtlasTrip = function (ctx) {
         { id: 'costes', label: 'Presupuesto', title: 'Lo que cuesta el viaje.',
             fields: t => [['Partidas', (t.expenses || []).map(item => item.concept || item.id)], ['Costos presupuestados', t.costs]] }
     ];
-    function draftDisplay(value) {
-        return window.AtlasEmptyState.render(value, item =>
-            Array.isArray(item) ? esc(item.map(entry => Array.isArray(entry) ? entry[0] :
-                entry && typeof entry === 'object' ?
-                    entry.name || entry.title || entry.city || entry.label || entry.id || 'Elemento definido' : entry).join(' · ')) :
-            esc(String(item)));
+    // All trips use the master page shell. Missing data only changes section content.
+    function tripShell(t, id, content) {
+        return tripHero(t, id) + tripNavigation(t, id, true) + content;
     }
-    function renderPendingSection(section, t) {
-        if (section.ready?.(t)) return section.render(t);
-        return '<section class="section draft-trip-section atlas-panel-section" id="' + section.id + '"><article class="panel draft-trip-panel">' +
-            '<p class="eyebrow orange atlas-editorial-kicker">' + esc(section.label) + '</p><h2>' + esc(section.title) + '</h2>' +
-            '<div class="draft-fields">' + section.fields(t).map(([field, value]) =>
-                '<div><strong>' + esc(field) + '</strong>' + draftDisplay(value) + '</div>').join('') +
-            '</div></article></section>';
+    function pendingPanel(id, title, cssClass, label = 'Por definir') {
+        return '<section class="section wrap atlas-panel-section" id="' + id + '">' +
+            '<article class="panel ' + cssClass + '"><h2>' + esc(title) +
+            '</h2><p class="draft-pending">' + esc(label) + '</p></article></section>';
     }
-    function pendingTripSections(t) {
-        return sectionDefinitions.map(section => renderPendingSection(section, t)).join('');
+    function sectionReady(t, key) {
+        switch (key) {
+            case 'plan':
+                return !!(t.intro && t.climate && t.bases.length && t.routeCities.length && t.work !== null);
+            case 'mapa': return !!t.mapPoints.length;
+            case 'temporadas': return !!t.seasonality?.months;
+            case 'experiencias': return !!t.experiences.length;
+            case 'reservas': return !!(t.planningDetails && t.reservations.length);
+            case 'traslados': return !!t.majorTransport.length;
+            case 'alojamientos': return !!(t.hotels.length || t.stays.length);
+            case 'dias': return !!(t.days.length && t.days.every(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places)));
+            case 'costes': return !!(t.majorTransport.length || t.expenses.length || t.costs.length);
+            default: return false;
+        }
     }
-    // Shared outer layout: the data state changes content, not the page composition.
-    function tripShell(t, id, content, isDraft = false) {
-        return tripHero(t, id, isDraft) + tripNavigation(t, id, isDraft) +
-            (isDraft ? '<div class="wrap draft-trip-content">' + content + '</div>' : content);
-    }
-    function tripHero(t, id, isDraft = false) {
-        if (isDraft) return pendingTripHero(t);
+    const masterPanelClass = {
+        plan: 'overview overview-editorial',
+        mapa: 'trip-map-section',
+        temporadas: 'seasonality-panel',
+        experiencias: 'experience-panel',
+        reservas: 'reservation-panel',
+        traslados: 'major-transport',
+        alojamientos: 'hotel-grid',
+        dias: 'itinerary-panel',
+        costes: 'budget-section-panel'
+    };
+    function tripHero(t, id) {
         const rank = trips.indexOf(t) + 1;
         return [
             `<section class="triphero">${img(covers[id], '', true)}<div class="wrap">`,
@@ -202,12 +213,6 @@ window.AtlasTrip = function (ctx) {
             `<span>${esc(t.heroLodgingSummary || baseLabel(t.bases.length))}</span>`,
             '</div></div></section>'
         ].join('');
-    }
-    function pendingTripHero(t) {
-        const dateRange = t.start && t.end ? esc(t.start + ' – ' + t.end) : '<span class="draft-pending">Por definir</span>';
-        return '<section class="draft-hero wrap"><a href="#" class="breadcrumb">← Regresar</a>' +
-            '<p class="eyebrow orange">Viaje en planeación</p><h1>' + esc((t.flag ? t.flag + ' ' : '') + t.name) + '</h1>' +
-            '<p>Fechas: ' + dateRange + ' · Presupuesto: <span class="draft-pending">Por definir</span></p></section>';
     }
     function fullSectionMarkup(t, id, low, high) {
         const parts = {
@@ -297,7 +302,10 @@ window.AtlasTrip = function (ctx) {
             `${t.sources?.length ? '</section>' : ''}`
             ].join('')
         };
-        return sectionDefinitions.map(section => parts[section.id]()).join('') + parts.fuentes();
+        return sectionDefinitions.map(section => {
+            if (canRenderFullTrip(t) || sectionReady(t, section.id)) return parts[section.id]();
+            return pendingPanel(section.id, section.title, masterPanelClass[section.id]);
+        }).join('') + parts.fuentes();
     }
     function tripPage(id) {
         cleanup();
@@ -306,24 +314,16 @@ window.AtlasTrip = function (ctx) {
             home();
             return;
         }
-        if (!canRenderFullTrip(t)) {
-            main.classList.remove('trip-espana-portugal');
-            document.title = t.name + ' · Atlas de Viajes';
-            main.innerHTML = tripShell(t, id, pendingTripSections(t), true);
-            bindTripSelector();
-            if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
-            return;
-        }
         main.classList.toggle('trip-espana-portugal', t.layoutClass === 'trip-espana-portugal');
         document.title = t.name + ' · Atlas de Viajes';
-        const [low, high] = sums(t);
+        const [low, high] = canRenderFullTrip(t) || sectionReady(t, 'costes') ? sums(t) : [null, null];
         const content = fullSectionMarkup(t, id, low, high);
         main.innerHTML = tripShell(t, id, content);
         window.AtlasGallery.init(main);
         mountView(t);
-        window.AtlasTravel.initMap(t);
+        if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
         bindTripSelector();
-        document.querySelector('#expand').addEventListener('click', e => {
+        document.querySelector('#expand')?.addEventListener('click', e => {
             const all = [...document.querySelectorAll('.day')];
             const opening = all.some(x => !x.open);
             all.forEach(x => {
@@ -332,7 +332,7 @@ window.AtlasTrip = function (ctx) {
             });
             e.target.textContent = opening ? 'Contraer todos los días' : 'Desplegar todos los días';
         });
-        document.querySelector('#print').addEventListener('click', printGuide);
+        document.querySelector('#print')?.addEventListener('click', printGuide);
     }
     return { tripPage, cleanup };
 };
