@@ -1675,3 +1675,20 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 #dias .day .daycontent .day-transport .day-transport-head .day-transport-kind{
   display:inline-flex;flex:none;margin:0 6px 0 0;
 }
+
+/* Categorías de gastos: iconografía discreta y estado subordinado al concepto. */
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{
+  grid-template-columns:18px minmax(0,1fr) max-content;
+  align-items:center;column-gap:9px;
+}
+#dias .day .daycontent .day-budget .day-budget-category-icon{
+  display:flex;align-items:center;justify-content:center;
+  width:18px;height:18px;color:#507a64;flex:none;
+}
+#dias .day .daycontent .day-budget .day-budget-category-icon svg{display:block}
+#dias .day .daycontent .day-budget .day-budget-status{
+  display:block;margin-top:2px;font-size:11px;line-height:1.25;color:#657b6d;
+}
+@media(max-width:680px){
+ #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{column-gap:7px}
+}
