@@ -157,3 +157,34 @@ test('un viaje mínimo comparte encabezado, navegación y nueve anclas del model
     }
     assert.doesNotMatch(main.innerHTML, /draft-trip-section|draft-hero/);
 });
+
+test('Panorama incremental utiliza los contenedores maestros sin inventar presupuesto', () => {
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const sample = { ...template, id: 'japon', name: 'Japón', intro: 'Una ruta por Japón' };
+    const main = { innerHTML: '', classList: { toggle() {} } };
+    const window = {
+        AtlasGallery: { init() {} },
+        AtlasMajorTransport: { mount: () => () => {} },
+        AtlasBudgetTable: { mount: () => () => {} },
+        AtlasDayBudget: { mount: () => () => {} },
+        AtlasTravel: { initMap() {} }
+    };
+    const document = { querySelector: () => null };
+    vm.runInNewContext(fs.readFileSync('components/trip.js', 'utf8'), { window, document });
+    const ctx = {
+        trips: [sample], main, covers: {}, esc: String,
+        sums: () => [0, 0], canRenderFullTrip: () => false,
+        highlightWords: text => text, mountTransport: () => () => {},
+        home() {}
+    };
+    window.AtlasTrip(ctx).tripPage('japon');
+    const html = main.innerHTML;
+    assert.match(html, /class="overview overview-editorial"/);
+    assert.match(html, /Una ruta por Japón/);
+    assert.match(html, /class="overview-side"/);
+    assert.match(html, /class="overview-climate-card"/);
+    assert.match(html, /class="budget-teaser"/);
+    assert.match(html, /class="overview-stays overview-stays-inline"/);
+    assert.doesNotMatch(html, /\$0|NaN|undefined|Invalid Date/);
+    assert.doesNotMatch(html, /draft-trip-panel/);
+});
