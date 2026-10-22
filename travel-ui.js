@@ -22,11 +22,11 @@ return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 </div>
 
 </div>
-${points.length ? `<div class="trip-map-cities">
-<ul class="map-city-list">${points.map(p=>`<li><button type="button" class="map-city-select" data-map-order="${p.order}" aria-label="Mostrar ${esc(p.name)} en el mapa"><span class="map-city-name">${p.order}. ${esc(p.name)}</span><small class="map-city-stay">${Number(nightsByBase.get(String(p.name).toLocaleLowerCase("es"))) > 0 ? '<svg class="map-city-bed" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7m18 11V7M3 15h18M5 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M5 12h14"/></svg>' : ""}${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></button></li>`).join('')}</ul></div>` : ''}
+${positioned.length ? `<div class="trip-map-cities">
+<ul class="map-city-list">${positioned.map(p=>`<li><button type="button" class="map-city-select" data-map-order="${p.order}" aria-label="Mostrar ${esc(p.name)} en el mapa"><span class="map-city-name">${p.order}. ${esc(p.name)}</span><small class="map-city-stay">${Number(nightsByBase.get(String(p.name).toLocaleLowerCase("es"))) > 0 ? '<svg class="map-city-bed" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7m18 11V7M3 15h18M5 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M5 12h14"/></svg>' : ""}${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></button></li>`).join('')}</ul></div>` : ''}
 </div>
 ${positioned.length ? `<div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>` : `<div class="trip-map trip-map-pending"><p class="draft-pending">Por definir</p></div>`}
-<div class="trip-map-footer"><p class="map-status" role="status">${points.length ? "El mapa se carga al llegar a esta sección." : "Ubicaciones por definir."}</p>
+<div class="trip-map-footer"><p class="map-status" role="status">${positioned.length ? "El mapa se carga al llegar a esta sección." : "Coordenadas por definir."}</p>
 <div class="map-legend"><span>Base para dormir</span><span>Excursión sin alojamiento</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div></div>
 ${t.id==='emilia-romana'?'':`<p class="tiny">Pines de referencia de cada localidad, no direcciones de hoteles ni un trazado exacto del trayecto. Las excursiones a paisajes y monumentos se detallan en el programa diario.</p>`}
 </section>`;
