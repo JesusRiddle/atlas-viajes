@@ -176,7 +176,7 @@ window.AtlasTrip = function (ctx) {
     function sectionReady(t, key) {
         switch (key) {
             case 'plan':
-                return !!(t.intro && t.climate && t.bases.length && t.routeCities.length && t.work !== null);
+                return false; // Panorama incremental belongs to step 5.
             case 'mapa': return !!t.mapPoints.length;
             case 'temporadas': return !!t.seasonality?.months;
             case 'experiencias': return !!t.experiences.length;
@@ -202,15 +202,15 @@ window.AtlasTrip = function (ctx) {
     function tripHero(t, id) {
         const rank = trips.indexOf(t) + 1;
         return [
-            `<section class="triphero">${img(covers[id], '', true)}<div class="wrap">`,
+            `<section class="triphero">${t.cover ? img(covers[id], '', true) : ''}<div class="wrap">`,
             `<a class="breadcrumb" href="#"><span aria-hidden="true">←</span> Regresar</a>`,
-            `<p class="eyebrow hero-eyebrow">Viaje #${rank}: ${esc(t.heroEyebrow || t.tag)}</p>`,
+            `<p class="eyebrow hero-eyebrow">Viaje #${rank}: ${esc(t.heroEyebrow || t.tag || 'En planeación')}</p>`,
             `<h1>${esc(t.name)}</h1>`,
             '<div class="hero-meta">',
-            `<span>${range(t)}</span>`,
-            `<span>${t.days.length} días naturales</span>`,
-            `<span>${t.work} días laborales</span>`,
-            `<span>${esc(t.heroLodgingSummary || baseLabel(t.bases.length))}</span>`,
+            `<span>${t.start && t.end ? range(t) : 'Por definir'}</span>`,
+            `<span>${t.days.length ? t.days.length + ' días naturales' : 'Duración por definir'}</span>`,
+            `<span>${t.work === null ? 'Días laborales por definir' : t.work + ' días laborales'}</span>`,
+            `<span>${t.heroLodgingSummary ? esc(t.heroLodgingSummary) : t.bases.length ? esc(baseLabel(t.bases.length)) : 'Alojamientos por definir'}</span>`,
             '</div></div></section>'
         ].join('');
     }
