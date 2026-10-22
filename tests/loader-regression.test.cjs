@@ -421,7 +421,7 @@ test('paso 15: un viaje nuevo completo no pierde datos estructurados al cargar',
     vm.runInNewContext(fs.readFileSync('loader.js','utf8'), { window, fetch });
     const trip = (await window.ATLAS_READY).trips[0];
     for (const field of ['days','hotels','mapPoints','majorTransport','expenses','routeCities','experiences']) {
-        assert.deepEqual(trip[field], complete[field], 'No cambiar ' + field);
+        assert.equal(JSON.stringify(trip[field]), JSON.stringify(complete[field]), 'No cambiar ' + field);
     }
     assert.equal(trip.id, complete.id);
     assert.equal(trip.name, complete.name);
