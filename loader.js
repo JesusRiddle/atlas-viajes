@@ -42,10 +42,13 @@
       if (!isMinimal && !Object.hasOwn(raw, "seasonality")) normalized.seasonality = null;
       const arrays = ["routeCities","bases","costs","experiences","days","reservations","expenses",
         "majorTransport","ticketNotes","attractionTerms","mapPoints","hotels","stays",
-        "practicalIndicators","tips","sources","routeHighlights","cardHighlights",
+        "practicalIndicators","tips","sources","cardHighlights",
         "introHighlights","knownCosts","railSummary"];
       for (const key of arrays) {
         if (!Array.isArray(normalized[key])) throw new Error("Campo " + key + " inválido en " + module.file + ": debe ser un array.");
+      }
+      if (!Array.isArray(normalized.routeHighlights) && typeof normalized.routeHighlights !== "boolean") {
+        throw new Error("Campo routeHighlights inválido en " + module.file + ": debe ser un booleano o un array.");
       }
       for (const key of ["profile","exchangeRates","placeDescriptions"]) {
         if (!plainObject(normalized[key])) throw new Error("Campo " + key + " inválido en " + module.file + ": debe ser objeto.");
