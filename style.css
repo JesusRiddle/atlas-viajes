@@ -1451,7 +1451,7 @@ html{scroll-padding-top:78px}
 #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{
   display:block;
   margin:0;
-  padding:12px 15px;
+  padding:9px 15px;
   border:0;
   border-radius:0;
   background:transparent;
@@ -1483,5 +1483,5 @@ html{scroll-padding-top:78px}
 @media(max-width:680px){
   #dias .day .daycontent .mobility-card .mobility-copy .mobility-step,
   #dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row,
-  #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{padding:11px 12px}
+  #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{padding:8px 12px}
 }
