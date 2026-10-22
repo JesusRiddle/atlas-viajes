@@ -1191,3 +1191,19 @@ html{scroll-padding-top:78px}
 /* Centrar el bloque de número y fecha respecto a la altura del resumen diario. */
 #dias .day summary{align-items:center}
 #dias .day-rail{align-self:center}
+
+/* Viajes en planeación: superficies y estados explícitos sin cifras artificiales. */
+.draft-card-cover{min-height:190px;background:linear-gradient(135deg,#e7eef0,#f7f9f9);display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:var(--serif);font-size:20px;position:relative}
+.draft-card-cover .rank{position:absolute;top:12px;left:12px}
+.draft-trip-content{padding-bottom:35px}
+.draft-hero{padding-top:35px;padding-bottom:22px}
+.draft-hero h1{font-family:var(--serif);font-size:clamp(28px,4vw,42px);margin:8px 0}
+.draft-trip-section{padding:12px 0}
+.draft-trip-panel{background:linear-gradient(130deg,#f7f9f9,#f1f5f6);border-radius:8px;padding:26px}
+.draft-trip-panel h2{font-size:clamp(24px,2.5vw,30px);margin:4px 0 20px}
+.draft-fields{display:grid;gap:10px}
+.draft-fields>div{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:10px}
+.draft-fields strong{font-size:13px;font-weight:600}
+.draft-pending,.draft-na{display:inline-block;color:var(--muted);font-size:13px;font-weight:400}
+.draft-na{font-style:italic}
+@media(max-width:680px){.draft-trip-panel{padding:17px}.draft-fields>div{flex-direction:column;gap:3px}.draft-card-cover{min-height:125px}}
