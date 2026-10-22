@@ -1,11 +1,11 @@
 {
   "id": "nuevo-viaje",
   "name": "Nuevo destino",
-  "flag": "",
+  "flag": null,
   "status": "draft",
   "start": null,
   "end": null,
-  "tag": "Por definir",
+  "tag": null,
   "routeCities": [],
   "bases": [],
   "work": null,
@@ -42,51 +42,51 @@
     "months": {
       "10": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "11": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "12": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "01": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "02": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "03": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "04": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "05": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "06": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "07": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "08": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       },
       "09": {
         "status": "pending",
-        "description": "Por definir"
+        "description": null
       }
     }
   },
