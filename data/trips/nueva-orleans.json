@@ -1,0 +1,278 @@
+{
+  "id": "nueva-orleans",
+  "name": "Nueva Orleans",
+  "flag": "🇺🇸",
+  "start": "2026-12-03",
+  "end": "2026-12-09",
+  "tag": "Arquitectura y música",
+  "intro": "Balcones de hierro, casas históricas, cocina criolla y música en vivo dan forma a esta semana en Nueva Orleans. Tendrás seis noches en el mismo hotel y tiempo para caminar por sus barrios. Una excursión a los humedales de Luisiana añadirá paisaje al recorrido urbano.",
+  "bases": [
+    [
+      "Nueva Orleans",
+      6
+    ]
+  ],
+  "flight": "Volarás de Ciudad de México (MEX) al aeropuerto Louis Armstrong de Nueva Orleans (MSY), normalmente con una conexión en Estados Unidos. Puedes comparar rutas que cambien de avión en Houston (IAH), Dallas-Fort Worth (DFW) o Atlanta (ATL).\n\nBusca ambos vuelos de cada sentido en una misma reserva. Así tendrás una conexión gestionada por la aerolínea si un retraso afecta al siguiente tramo, según las condiciones del billete. El regreso seguirá una ruta similar.",
+  "local": "El traslado del aeropuerto al centro suele tomar unos 25–45 minutos en coche, según el tráfico. Puedes utilizar un taxi, un vehículo solicitado por aplicación o revisar la alternativa en autobús.\n\nEl French Quarter se disfruta caminando; para acercarte al Garden District puedes utilizar el tranvía de St. Charles. La excursión a los bayous, los humedales y canales de la región, conviene contratarla con transporte de ida y vuelta desde la ciudad.",
+  "climate": "Diciembre suele ser relativamente suave, con temperaturas orientativas de 9–19 °C, aunque puede llover o entrar un frente frío. Lleva una chaqueta y algo para protegerte del agua.\n\nEn el paseo por los humedales, el paisaje de cipreses será el principal atractivo. Con frío, los animales pueden ser menos visibles; no conviene elegir la excursión dando por hecho que verás caimanes.",
+  "solo": "Con tu inglés puedes organizarte con facilidad. Los recorridos guiados a pie y los pequeños locales de música ofrecen oportunidades para conocer gente sin depender de un acompañante.\n\nAlojarte cerca del French Quarter facilita los paseos diurnos. Por la noche, utiliza transporte para volver al hotel si el trayecto pasa por calles poco concurridas.",
+  "costs": [
+    [
+      "Vuelos con escala",
+      7000,
+      11000
+    ],
+    [
+      "6 noches en habitación privada",
+      10000,
+      14500
+    ],
+    [
+      "Comida",
+      5000,
+      7000
+    ],
+    [
+      "Transporte",
+      1500,
+      2300
+    ],
+    [
+      "Excursiones, música en directo y entradas",
+      2500,
+      4200
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      2300,
+      3500
+    ]
+  ],
+  "tips": [
+    "Busca hotel en el French Quarter, el distrito de negocios o Warehouse District, valorando tanto la ubicación como el precio. Revisa el trayecto real hasta los lugares que visitarás.",
+    "Bourbon Street puede ser muy ruidosa por la noche. Una calle cercana y más tranquila suele ofrecer mejor descanso.",
+    "Revisa la programación de jazz y el precio de entrada de cada local. El itinerario propone noches de música, pero no presupone la actuación de un artista concreto."
+  ],
+  "sources": [
+    [
+      "Turismo oficial",
+      "https://www.neworleans.com/"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-03",
+      "title": "llegada a la ciudad criolla",
+      "base": "Nueva Orleans",
+      "places": [
+        "frenchquarter"
+      ],
+      "am": "Vuela desde Ciudad de México a Nueva Orleans, realizando la conexión prevista en tu reserva.",
+      "pm": "Tras la llegada, ve al hotel y deja el equipaje.",
+      "night": "Si la hora lo permite, da un paseo breve por el French Quarter, el barrio de balcones y calles históricas. Si llegas tarde, cena y deja la visita para mañana.",
+      "mobility": "El vuelo propuesto tiene una conexión en Estados Unidos. Desde el aeropuerto de Nueva Orleans al hotel, calcula unos 25–45 minutos en taxi o vehículo por aplicación.",
+      "spend": 950,
+      "note": ""
+    },
+    {
+      "n": 2,
+      "date": "2026-12-04",
+      "title": "balcones, patios y plazas",
+      "base": "Nueva Orleans",
+      "places": [
+        "jackson-square",
+        "st-louis-cathedral"
+      ],
+      "am": "Conoce Jackson Square, la plaza que articula el corazón histórico de la ciudad, y el exterior de la Catedral de San Luis.",
+      "pm": "Recorre con calma las calles del French Quarter y sus patios accesibles. Una visita guiada a pie puede ayudarte a entender la mezcla de influencias de la ciudad.",
+      "night": "Cena y, si te apetece, elige un local con música en directo; revisa si cobra entrada o consumo mínimo.",
+      "mobility": "Recorre el French Quarter a pie, con pausas entre plazas, calles y patios.",
+      "spend": 1600,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-12-05",
+      "title": "Garden District en tranvía",
+      "base": "Nueva Orleans",
+      "places": [
+        "gardendistrict",
+        "st-charles-streetcar",
+        "magazine-street"
+      ],
+      "am": "Toma el tranvía de St. Charles y acércate al Garden District para pasear entre mansiones, jardines y grandes árboles.",
+      "pm": "Continúa por Magazine Street, con tiendas y cafés donde hacer una pausa. No hace falta recorrer toda la calle, que es muy larga.",
+      "night": "Vuelve al hotel en tranvía o vehículo solicitado por aplicación.",
+      "mobility": "Combina el tranvía de St. Charles con caminatas por Garden District y Magazine Street. Revisa las paradas útiles para el regreso.",
+      "spend": 1500,
+      "note": ""
+    },
+    {
+      "n": 4,
+      "date": "2026-12-06",
+      "title": "Cipreses y agua",
+      "base": "Nueva Orleans",
+      "places": [
+        "bayou"
+      ],
+      "am": "Sal en una excursión a los humedales de Luisiana. Comprueba si incluye recogida en la ciudad y qué tipo de embarcación utiliza.",
+      "pm": "Disfruta el paisaje de agua y cipreses durante el recorrido. La fauna visible depende de la estación y la temperatura; los avistamientos no están garantizados.",
+      "night": "Regresa a Nueva Orleans y cena sin otra actividad exigente.",
+      "mobility": "La excursión a los humedales puede ocupar unas 4–6 horas. Comprueba que incluya el transporte de ida y vuelta desde Nueva Orleans.",
+      "spend": 2400,
+      "note": "Con temperaturas bajas puede verse menos fauna. El interés de la excursión también está en el paisaje; no se garantizan avistamientos de caimanes."
+    },
+    {
+      "n": 5,
+      "date": "2026-12-07",
+      "title": "historia y gastronomía",
+      "base": "Nueva Orleans",
+      "places": [
+        "wwii-museum"
+      ],
+      "am": "Dedica la mañana al Museo Nacional de la Segunda Guerra Mundial. Sus exposiciones son extensas, por lo que conviene elegir las partes que más te interesan.",
+      "pm": "Continúa la visita si te apetece o reserva la tarde para una comida tranquila y descanso. Comprueba cuáles de sus experiencias requieren entrada adicional.",
+      "night": "Disfruta la gastronomía local en un restaurante cuyo menú te resulte atractivo.",
+      "mobility": "Llega al museo a pie o en vehículo por aplicación, según la ubicación de tu hotel. El resto del día requiere pocos traslados.",
+      "spend": 1900,
+      "note": ""
+    },
+    {
+      "n": 6,
+      "date": "2026-12-08",
+      "title": "un día libre y música en Frenchmen Street",
+      "base": "Nueva Orleans",
+      "places": [
+        "frenchmen-street"
+      ],
+      "am": "Empieza sin prisa y aprovecha para repetir el paseo que más te haya gustado o hacer pequeñas compras.",
+      "pm": "Descansa y prepara parte del equipaje antes de salir. No hay una nueva visita con horario obligatorio.",
+      "night": "Acércate a Frenchmen Street para escuchar música en directo en uno de sus locales. Elige el concierto según la programación y organiza el regreso al hotel.",
+      "mobility": "Usa caminata y tranvía durante el día. Para el regreso nocturno desde Frenchmen Street, elige un vehículo por aplicación si no quieres caminar.",
+      "spend": 1300,
+      "note": ""
+    },
+    {
+      "n": 7,
+      "date": "2026-12-09",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Volarás desde Nueva Orleans (MSY) a Ciudad de México mediante la conexión estadounidense de tu reserva. Comprueba equipaje y tiempo de escala.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 5,
+  "profile": {
+    "pace": "Relajado",
+    "solo": "Fácil",
+    "weather": "Media",
+    "why": "Una base y jornadas abiertas dejan espacio para descansar. Conviene planear el regreso nocturno; lluvia y frío afectan al paseo por los humedales.",
+    "weatherWhy": "La lluvia puede alterar el paseo por los bayous y las caminatas urbanas; con frío puede observarse menos fauna en los humedales.",
+    "soloWhy": "Una base, paseos a pie y excursiones compartidas facilitan la estancia, pero conviene organizar el transporte de regreso tras salir a escuchar música por la noche."
+  },
+  "experiences": [
+    "Balcones y patios del French Quarter",
+    "Jackson Square frente a la Catedral de San Luis",
+    "El tranvía de St. Charles y las casas del Garden District",
+    "Cipreses y agua en los bayous",
+    "Música en Frenchmen Street"
+  ],
+  "routeCities": [
+    "Nueva Orleans"
+  ],
+  "cover": "frenchquarter",
+  "hotels": [],
+  "stays": [
+    [
+      "Nueva Orleans",
+      "Busca una calle tranquila del French Quarter, el distrito central de negocios —conocido como CBD— o Warehouse District, la antigua zona de almacenes. Valora poder volver cómodamente al hotel después de los paseos."
+    ],
+    [
+      "Para descansar",
+      "Evita habitaciones con ventana directamente a Bourbon Street por el ruido nocturno."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Nueva Orleans",
+      "coords": [
+        29.9511,
+        -90.0715
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    }
+  ],
+  "placeDescriptions": {
+    "frenchquarter": "Núcleo histórico de Nueva Orleans, de balcones de hierro, patios y arquitectura criolla. Combina paseo diurno y música en vivo.",
+    "jackson-square": "Jackson Square es una plaza histórica del French Quarter, presidida por la catedral de San Luis.",
+    "st-louis-cathedral": "La catedral de San Luis, con sus tres torres, es uno de los edificios más reconocibles de Nueva Orleans.",
+    "gardendistrict": "Barrio de grandes casas históricas y jardines. Una ruta guiada permite entender su arquitectura sin acceder a propiedades privadas.",
+    "st-charles-streetcar": "El tranvía de St. Charles recorre una avenida histórica entre casas, robles y barrios de Nueva Orleans.",
+    "magazine-street": "Magazine Street concentra comercios, cafés y fachadas de barrio a lo largo de Nueva Orleans.",
+    "bayou": "Humedales de cipreses y canales cerca de Nueva Orleans. En diciembre importa el paisaje; no se garantiza ver caimanes.",
+    "wwii-museum": "El National WWII Museum presenta la historia de la Segunda Guerra Mundial mediante exposiciones y testimonios.",
+    "frenchmen-street": "Frenchmen Street es una zona de música en directo; sus locales y vida nocturna ofrecen una escena distinta del French Quarter."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

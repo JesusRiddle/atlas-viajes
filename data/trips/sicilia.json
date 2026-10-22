@@ -1,0 +1,491 @@
+{
+  "id": "sicilia",
+  "name": "Sicilia, dos orillas de historia",
+  "flag": "🇮🇹",
+  "start": "2026-11-20",
+  "end": "2026-12-03",
+  "tag": "Italia que se siente nueva",
+  "intro": "Dos ciudades serán tu punto de partida para descubrir una Sicilia de mosaicos dorados, templos griegos y fachadas barrocas. Desde Palermo conocerás Monreale y Agrigento; desde Catania saldrás hacia Siracusa, Noto, Taormina y el Etna. Tendrás seis noches en cada base y días más tranquilos entre las excursiones.",
+  "bases": [
+    [
+      "Palermo",
+      6
+    ],
+    [
+      "Catania",
+      6
+    ]
+  ],
+  "flight": "Busca un vuelo de Ciudad de México (MEX) a Palermo, al aeropuerto Falcone Borsellino (PMO). Algunas combinaciones permiten una conexión europea; otras requieren dos, por lo que hay que comparar el tiempo total de viaje.\n\nEl regreso saldrá del aeropuerto Fontanarossa de Catania (CTA), con una o más conexiones antes de México. La opción «multidestino» del buscador permite comprar la llegada a Palermo y el regreso desde Catania en una sola reserva, evitando atravesar la isla nuevamente para tomar el avión.",
+  "local": "El cambio de Palermo a Catania se hará en autobús interurbano, con una duración orientativa de 2½–3½ horas.\n\nDesde Catania, calcula aproximadamente 1–1½ horas para llegar a Siracusa, 1½–2 horas a Noto y 1–1½ horas a Taormina, según el servicio. Si eliges tren para Taormina, necesitarás además subir desde la estación hasta el centro histórico.\n\nAgrigento será la excursión más larga desde Palermo: unas 2–2½ horas por sentido, más el traslado al Valle de los Templos. Reservar una excursión con recogida puede hacer más sencillo ese día.",
+  "climate": "En la costa, las temperaturas pueden rondar los 10–20 °C, con días frescos y posibilidad de lluvia. Es una buena propuesta para disfrutar ciudades y monumentos; el programa no depende de bañarse en el mar.\n\nEl Etna tiene condiciones distintas a las de la costa. Puede haber nieve, viento o restricciones por actividad volcánica, por lo que el recorrido se adaptará a la zona que las autoridades permitan visitar.",
+  "solo": "Tus conocimientos de italiano te ayudarán a resolver hoteles, restaurantes y billetes. En Palermo y Catania podrás hacer buena parte de las visitas a pie, mientras que las excursiones se organizarán en autobús o con operadores locales.\n\nViajar sin coche evita preocuparte por estacionamiento y conducción urbana. La clave será comprobar las frecuencias de regreso, especialmente fuera de la temporada alta.",
+  "costs": [
+    [
+      "Vuelos",
+      19000,
+      28000
+    ],
+    [
+      "12 noches en habitación privada",
+      15500,
+      22500
+    ],
+    [
+      "Comida",
+      7500,
+      10500
+    ],
+    [
+      "Buses y transporte",
+      3500,
+      5500
+    ],
+    [
+      "Entradas y excursiones",
+      6000,
+      9000
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      4000,
+      5500
+    ]
+  ],
+  "tips": [
+    "La propuesta mantiene sólo dos hoteles. Si quisieras disfrutar Siracusa también de noche, podrías añadir una estancia allí, a cambio de otro traslado con equipaje.",
+    "Reserva el Etna con un operador autorizado y pregunta qué altura y servicios incluye. El recorrido no garantiza llegar a los cráteres de la cima.",
+    "La excursión a Agrigento puede ocupar 10–12 horas. Una recogida organizada facilita el viaje, y el día siguiente conviene mantener un ritmo más suave.",
+    "Los tiempos de transporte son aproximados. Antes de reservar visitas, confirma los horarios de invierno y el último autobús o tren de regreso."
+  ],
+  "sources": [
+    [
+      "Sicilia: turismo oficial",
+      "https://www.visitsicily.info/en/"
+    ],
+    [
+      "Ruta cultural oficial",
+      "https://www.visitsicily.info/es/proposta/7-giorni-alla-scoperta-delle-meraviglie-della-sicilia/"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-11-20",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "La ruta propuesta vuela de Ciudad de México (MEX) a Palermo (PMO) con una escala en Europa. Comprueba que los tramos se vendan dentro de una misma reserva.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-11-21",
+      "title": "el primer paseo",
+      "base": "Palermo",
+      "places": [
+        "quattro-canti"
+      ],
+      "am": "Tras aterrizar en Palermo, dirígete al centro y deja el equipaje en el hotel.",
+      "pm": "Da un primer paseo hasta Quattro Canti, el cruce barroco que ayuda a orientarse en el casco histórico. Ajusta la caminata a cómo te sientas después del vuelo.",
+      "night": "Cena cerca del alojamiento.",
+      "mobility": "El traslado del aeropuerto de Palermo al centro tarda aproximadamente 45–60 minutos. La primera visita se hace a pie.",
+      "spend": 950,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-11-22",
+      "title": "palacios normandos",
+      "base": "Palermo",
+      "places": [
+        "norman-palace",
+        "palatine-chapel",
+        "palermo"
+      ],
+      "am": "Visita el Palacio de los Normandos y la Capilla Palatina, conocida por sus mosaicos. Comprueba al reservar qué dependencias estarán abiertas ese día.",
+      "pm": "Continúa hasta la Catedral de Palermo y recorre sus alrededores. Separa la visita básica de los accesos adicionales, como tejados o salas con entrada propia.",
+      "night": "Cena en el centro histórico.",
+      "mobility": "El Palacio de los Normandos y la catedral permiten un recorrido compacto a pie. Ajusta la distancia total a la ubicación de tu hotel.",
+      "spend": 1900,
+      "note": "Comprueba el acceso a la Capilla Palatina y a las salas del palacio: pueden tener horarios o restricciones diferentes."
+    },
+    {
+      "n": 4,
+      "date": "2026-11-23",
+      "title": "el oro de Monreale",
+      "base": "Palermo",
+      "places": [
+        "monreale"
+      ],
+      "am": "Viaja a Monreale para conocer su catedral, cuyo interior está cubierto de mosaicos dorados.",
+      "pm": "Añade el claustro si está abierto y te interesa, y deja tiempo para comer y contemplar las vistas antes de regresar a Palermo.",
+      "night": "Disfruta una noche tranquila en la misma base.",
+      "mobility": "Llega a Monreale en autobús o taxi; calcula unos 30–60 minutos por sentido según tráfico y punto de salida.",
+      "spend": 1600,
+      "note": ""
+    },
+    {
+      "n": 5,
+      "date": "2026-11-24",
+      "title": "templos griegos en Agrigento",
+      "base": "Palermo",
+      "places": [
+        "agrigento"
+      ],
+      "am": "Sal temprano hacia Agrigento. Una excursión organizada simplifica esta jornada, especialmente si incluye el traslado hasta la entrada del Valle de los Templos.",
+      "pm": "Recorre el yacimiento griego, con tiempo para caminar entre los templos y parar a comer. No añadas otra ciudad: los traslados ya ocupan varias horas.",
+      "night": "Regresa a Palermo y cena cerca del hotel.",
+      "mobility": "El traslado hacia Agrigento toma unas 2–2½ horas por sentido, más el acceso al Valle de los Templos. Una excursión con transporte simplifica esta jornada larga.",
+      "spend": 2700,
+      "note": ""
+    },
+    {
+      "n": 6,
+      "date": "2026-11-25",
+      "title": "mercados y teatro",
+      "base": "Palermo",
+      "places": [
+        "teatro-massimo",
+        "kalsa"
+      ],
+      "am": "Acércate al Teatro Massimo y reserva su visita guiada si quieres conocer el interior. Después, puedes completar la mañana con un paseo por los mercados del centro.",
+      "pm": "Recorre La Kalsa, un barrio histórico de plazas y palacios. Deja espacio para sentarte a comer y mirar la ciudad sin otra reserva ajustada.",
+      "night": "Cena en Palermo; una función en el teatro sería una actividad opcional que conviene cotizar aparte.",
+      "mobility": "Conecta a pie el teatro, los paseos del centro y La Kalsa. Mantén margen entre cualquier visita reservada.",
+      "spend": 1450,
+      "note": ""
+    },
+    {
+      "n": 7,
+      "date": "2026-11-26",
+      "title": "arte siciliano y tiempo para mirar",
+      "base": "Palermo",
+      "places": [
+        "palazzo-abatellis"
+      ],
+      "am": "Si te interesa el arte, visita el Palazzo Abatellis, sede de una colección de arte siciliano. Comprueba su calendario antes de fijarlo como visita de la mañana.",
+      "pm": "El resto del día queda libre para una visita pendiente, cafés o descanso. Esta pausa equilibra la excursión larga a Agrigento.",
+      "night": "Prepara la maleta para cambiar de costa.",
+      "mobility": "Llega al Palazzo Abatellis a pie o en transporte urbano según tu alojamiento. La tarde tiene pocos desplazamientos.",
+      "spend": 1000,
+      "note": "",
+      "optionalPlaces": [
+        "palazzo-abatellis"
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2026-11-27",
+      "title": "cambio de costa",
+      "base": "Catania",
+      "places": [
+        "catania"
+      ],
+      "am": "Viaja en autobús de Palermo a Catania y deja el equipaje en el hotel.",
+      "pm": "Descubre la Piazza del Duomo y el centro histórico, donde la piedra volcánica marca el aspecto de los edificios.",
+      "night": "Cena cerca del alojamiento.",
+      "mobility": "El autobús de Palermo a Catania tarda aproximadamente 2½–3½ horas. Añade el transporte desde y hacia las terminales.",
+      "spend": 1450,
+      "note": ""
+    },
+    {
+      "n": 9,
+      "date": "2026-11-28",
+      "title": "Ortigia y Siracusa",
+      "base": "Catania",
+      "places": [
+        "ortigia",
+        "syracuse-cathedral",
+        "neapolis-syracuse"
+      ],
+      "am": "Viaja a Siracusa y comienza por Ortigia, la isla que concentra su casco antiguo.",
+      "pm": "Recorre sus calles y visita la catedral, construida incorporando elementos de un antiguo templo. El parque arqueológico de Neápolis es una opción adicional: exige salir de Ortigia y ajustar los tiempos; puedes elegirlo en lugar de un paseo más largo.",
+      "night": "Regresa a Catania en el servicio previsto.",
+      "mobility": "Siracusa se alcanza en autobús o tren en unas 1–1½ horas por sentido desde Catania. Si añades Neápolis, reserva tiempo para un traslado urbano desde Ortigia.",
+      "spend": 1900,
+      "note": "Noto tiene su propia excursión al día siguiente, de modo que puedas disfrutar Siracusa sin apresurar las visitas.",
+      "optionalPlaces": [
+        "neapolis-syracuse"
+      ]
+    },
+    {
+      "n": 10,
+      "date": "2026-11-29",
+      "title": "Barroco dorado en Noto",
+      "base": "Catania",
+      "places": [
+        "noto",
+        "noto-cathedral"
+      ],
+      "am": "Viaja a Noto y recorre su eje monumental, conocido por las fachadas barrocas de piedra clara.",
+      "pm": "Conoce la catedral y disfruta las calles cercanas con una pausa para comer. El interés del día está en caminar y observar los edificios sin correr.",
+      "night": "Vuelve a Catania para dormir en el mismo hotel.",
+      "mobility": "El trayecto a Noto puede tomar unas 1½–2 horas por sentido, según el servicio y sus conexiones. Verifica el regreso antes de salir.",
+      "spend": 1900,
+      "note": ""
+    },
+    {
+      "n": 11,
+      "date": "2026-11-30",
+      "title": "Etna, un paisaje vivo",
+      "base": "Catania",
+      "places": [
+        "etna"
+      ],
+      "am": "Sal en una excursión al Etna que especifique la altitud y los accesos incluidos. El volcán se visita según las condiciones meteorológicas y las restricciones del momento.",
+      "pm": "Explora los paisajes de lava autorizados con el guía. No des por hecho que cualquier excursión llega a la cumbre o incluye teleférico y vehículos especiales.",
+      "night": "Regresa a Catania. Si la salida se cancela, aprovecha una visita urbana pendiente.",
+      "mobility": "La excursión al Etna puede ocupar 6–9 horas. Comprueba la recogida, la altitud prevista y los transportes incluidos dentro del recorrido.",
+      "spend": 3100,
+      "note": "Antes de pagar, revisa las condiciones de cancelación por clima o restricciones del volcán. Si no se puede salir, aprovecha un museo o un paseo por Catania."
+    },
+    {
+      "n": 12,
+      "date": "2026-12-01",
+      "title": "Taormina sobre el mar",
+      "base": "Catania",
+      "places": [
+        "taormina",
+        "taormina-theatre"
+      ],
+      "am": "Viaja a Taormina y recorre sus calles peatonales, situadas en una ladera sobre el mar.",
+      "pm": "Visita el teatro antiguo, cuyo emplazamiento combina arquitectura y paisaje. Deja tiempo para comer y regresar a la parada o estación con margen.",
+      "night": "Vuelve a Catania.",
+      "mobility": "El autobús a Taormina puede tardar unas 1–1½ horas. Si eliges tren, recuerda que la estación está abajo y necesitarás otro transporte para subir al pueblo.",
+      "spend": 1850,
+      "note": ""
+    },
+    {
+      "n": 13,
+      "date": "2026-12-02",
+      "title": "mercado del pescado y monasterio benedictino",
+      "base": "Catania",
+      "places": [
+        "catania-fish-market",
+        "benedictine-catania"
+      ],
+      "am": "Acércate al mercado del pescado cuando esté funcionando para conocer una faceta cotidiana de Catania.",
+      "pm": "Si deseas una última visita cultural, reserva el recorrido del Monasterio de los Benedictinos. También puedes dejar la tarde libre para descansar y preparar la maleta.",
+      "night": "Cena temprano y revisa el traslado al aeropuerto.",
+      "mobility": "Las visitas de Catania se conectan a pie; puedes usar taxi para acortar el regreso al hotel.",
+      "spend": 1000,
+      "note": "",
+      "optionalPlaces": [
+        "benedictine-catania"
+      ]
+    },
+    {
+      "n": 14,
+      "date": "2026-12-03",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Volarás desde Catania (CTA) hacia Ciudad de México (MEX) con la escala europea de tu reserva.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 10,
+  "profile": {
+    "pace": "Equilibrado",
+    "solo": "Requiere más atención",
+    "weather": "Media",
+    "why": "Dos bases y días de pausa equilibran las excursiones. Sin coche hay que vigilar las frecuencias; el Etna es la visita más sensible al tiempo.",
+    "weatherWhy": "Viento, nieve o mal tiempo pueden limitar la excursión al Etna; la lluvia también afecta los paseos al aire libre por Agrigento y Taormina.",
+    "soloWhy": "Viajar sin coche exige comprobar los autobuses y las últimas salidas de cada excursión, aunque tu italiano facilita hoteles, restaurantes y billetes."
+  },
+  "experiences": [
+    "Mosaicos de la Capilla Palatina y Monreale",
+    "Templos griegos en Agrigento",
+    "Las calles de Ortigia y su catedral",
+    "Fachadas barrocas de Noto",
+    "Lava del Etna y vistas desde Taormina"
+  ],
+  "routeCities": [
+    "Palermo",
+    "Monreale",
+    "Agrigento",
+    "Catania",
+    "Siracusa",
+    "Noto",
+    "Taormina"
+  ],
+  "cover": "ortigia",
+  "hotels": [],
+  "stays": [
+    [
+      "Palermo",
+      "Prioriza el centro histórico y comprueba que el trayecto desde la estación sea sencillo."
+    ],
+    [
+      "Catania",
+      "Busca cerca de Piazza Duomo o de las conexiones de transporte interurbano."
+    ],
+    [
+      "Antes de reservar",
+      "Consulta reseñas recientes sobre ruido y acceso al alojamiento."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Palermo",
+      "coords": [
+        38.1157,
+        13.3615
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Monreale",
+      "coords": [
+        38.0813,
+        13.2895
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "Agrigento",
+      "coords": [
+        37.3111,
+        13.5765
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 3
+    },
+    {
+      "name": "Catania",
+      "coords": [
+        37.5079,
+        15.083
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 4
+    },
+    {
+      "name": "Siracusa",
+      "coords": [
+        37.0755,
+        15.2866
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Noto",
+      "coords": [
+        36.8924,
+        15.0657
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Taormina",
+      "coords": [
+        37.8516,
+        15.2853
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 7
+    }
+  ],
+  "placeDescriptions": {
+    "ortigia": "Isla histórica de Siracusa con catedral, plazas de piedra clara y paseos junto al mar. Merece un día entero.",
+    "quattro-canti": "Cruce barroco de Palermo cuyas cuatro esquinas tienen fachadas curvas con esculturas. Es un punto de referencia para empezar a recorrer el centro histórico.",
+    "norman-palace": "Palacio histórico de Palermo que fue sede de los gobernantes normandos de Sicilia. En su conjunto se encuentra la Capilla Palatina.",
+    "palatine-chapel": "Capilla del Palacio de los Normandos, famosa por sus mosaicos dorados. Su decoración refleja la convivencia de tradiciones artísticas en la Sicilia medieval.",
+    "palermo": "Catedral que reúne transformaciones de distintas épocas y refleja la mezcla cultural de Palermo. La fotografía muestra el monumento que visitarás durante el recorrido por el centro.",
+    "monreale": "Templo normando con mosaicos dorados y claustro. Es una de las visitas artísticas más impresionantes de Sicilia.",
+    "agrigento": "Conjunto de templos griegos en una cresta de la antigua Akragas. En invierno disfruta las primeras horas de luz.",
+    "teatro-massimo": "Gran teatro de ópera de Palermo, con una fachada monumental y amplia escalinata. Puedes contemplarlo desde fuera o reservar una visita guiada al interior.",
+    "kalsa": "Barrio histórico de Palermo de plazas, iglesias y palacios. La imagen muestra uno de sus jardines, una pausa verde durante el recorrido a pie.",
+    "palazzo-abatellis": "Palacio de Palermo que alberga una importante colección de arte siciliano. Es la visita cultural opcional del día más tranquilo en la ciudad.",
+    "catania": "Ciudad barroca al pie del Etna, construida en buena parte con piedra volcánica. Mercados y Piazza Duomo dan carácter al recorrido.",
+    "syracuse-cathedral": "Catedral de Siracusa, en Ortigia, construida aprovechando elementos de un antiguo templo. Su fachada barroca preside una amplia plaza de piedra clara.",
+    "neapolis-syracuse": "Teatro griego del parque arqueológico de Neápolis, en Siracusa. El conjunto está fuera de Ortigia y requiere reservar tiempo para el traslado y la visita.",
+    "noto": "Ciudad de fachadas barrocas en piedra dorada, reconstruida después del terremoto de 1693. Ideal para una excursión pausada.",
+    "noto-cathedral": "Catedral situada sobre una escalinata en el centro barroco de Noto. Su fachada de piedra clara forma parte del conjunto monumental que distingue a la ciudad.",
+    "etna": "Volcán activo de Sicilia. Una excursión guiada adapta el acceso a actividad volcánica, nieve y viento; no promete llegar a los cráteres de cima.",
+    "taormina": "Ciudad elevada con teatro antiguo y vistas al mar y al Etna. La visita cultural funciona también fuera de temporada de playa.",
+    "taormina-theatre": "Teatro antiguo situado sobre la costa de Taormina. Su emplazamiento permite disfrutar al mismo tiempo la arquitectura y el paisaje del mar y las montañas.",
+    "catania-fish-market": "Mercado tradicional del centro de Catania, con puestos de pescado y alimentos. La visita tiene más sentido durante su actividad comercial, que debes comprobar para ese día.",
+    "benedictine-catania": "Antiguo monasterio de Catania con patios y espacios monumentales. Una visita guiada permite conocer su arquitectura y las transformaciones del conjunto."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

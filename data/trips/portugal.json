@@ -1,0 +1,456 @@
+{
+  "id": "portugal",
+  "name": "Portugal de palacios y azulejos",
+  "flag": "🇵🇹",
+  "start": "2026-11-16",
+  "end": "2026-11-28",
+  "tag": "Dos bases, ritmo suave",
+  "intro": "Lisboa y Porto serán tus dos hogares durante este recorrido de palacios, azulejos y calles junto al agua. Desde Lisboa conocerás Sintra; desde Porto podrás pasear por Guimarães y explorar el valle del Douro. Es una ruta especialmente atractiva si disfrutas la arquitectura y prefieres dedicar varios días a cada ciudad.",
+  "bases": [
+    [
+      "Lisboa",
+      6
+    ],
+    [
+      "Porto",
+      5
+    ]
+  ],
+  "flight": "Volarás de Ciudad de México (MEX) a Lisboa, al aeropuerto Humberto Delgado (LIS), con una conexión en Europa. Entre las rutas a comparar están las que cambian de avión en Madrid, París o Ámsterdam.\n\nEl regreso puede salir del aeropuerto Francisco Sá Carneiro de Porto (OPO), hacer una conexión europea y continuar a México. Busca una reserva con llegada a Lisboa y salida de Porto: así evitarás volver a Lisboa únicamente para tomar el avión.",
+  "local": "Entre Lisboa y Porto tomarás un tren Alfa Pendular o Intercidades, servicios que conectan ambas ciudades en unas tres horas.\n\nPara visitar Sintra, saldrás de la estación Rossio de Lisboa y viajarás unos 40–50 minutos; después necesitarás un autobús o taxi local para subir a los palacios. Desde Porto, Guimarães está a unas 1–1½ horas en tren. El valle del Douro se puede conocer en una excursión organizada o en tren hacia Régua y Pinhão, combinando el paisaje ferroviario con una visita a bodega.",
+  "climate": "Como orientación, Lisboa puede tener temperaturas de 11–19 °C y Porto de 8–16 °C. En noviembre son posibles la lluvia y el viento, especialmente en el norte.\n\nDejaremos flexibilidad para visitar Sintra y el Douro en los días con mejor pronóstico. Los museos, palacios y cafés ofrecen alternativas agradables cuando el tiempo invita a quedarse bajo techo.",
+  "solo": "Con inglés y tus conocimientos de portugués podrás resolver la mayor parte de las situaciones del viaje. Tener sólo dos hoteles facilita la organización, y las excursiones se pueden hacer en transporte público o con un grupo.\n\nLisboa y Porto tienen muchas cuestas. Lleva zapatos cómodos y utiliza el transporte para cambiar de barrio cuando una caminata resulte demasiado larga. Sintra tendrá dos jornadas distintas para que puedas disfrutar los palacios sin correr entre entradas con hora.",
+  "costs": [
+    [
+      "Vuelos con escala",
+      17000,
+      25000
+    ],
+    [
+      "11 noches en habitación privada",
+      14500,
+      20500
+    ],
+    [
+      "Comida",
+      6500,
+      9500
+    ],
+    [
+      "Trenes y transporte",
+      3000,
+      4500
+    ],
+    [
+      "Entradas y excursiones",
+      4500,
+      6500
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      3500,
+      5000
+    ]
+  ],
+  "tips": [
+    "El Palacio da Pena y la Quinta da Regaleira se visitan en días distintos. Así tendrás tiempo para sus jardines y para pasear por Sintra.",
+    "Comprueba si la Torre de Belém está abierta antes de reservar. Aunque su interior no se pueda visitar, podrás disfrutar del exterior y dedicar tiempo al Monasterio de los Jerónimos.",
+    "En noviembre, revisa qué paseos en barco siguen funcionando en el Douro. El tren, los miradores y una bodega permiten disfrutar del valle aunque no haya un crucero conveniente.",
+    "Si te atrae especialmente la historia universitaria, Coimbra puede sustituir la excursión a Guimarães. Se mantendrían las dos bases de alojamiento."
+  ],
+  "sources": [
+    [
+      "Clima oficial",
+      "https://www.visitportugal.com/en/weather"
+    ],
+    [
+      "Pena: entradas oficiales",
+      "https://bilheteira.parquesdesintra.pt/info/parque-e-palacio-da-pena/1202/home"
+    ],
+    [
+      "CP: Alfa Pendular",
+      "https://www.cp.pt/info/en/alfa-pendular-train"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-11-16",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "La propuesta conecta Ciudad de México (MEX) con Lisboa (LIS) mediante una escala en Europa. Calcula unas 14–18 horas en total según conexión, sin contar el acceso al aeropuerto.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-11-17",
+      "title": "la primera tarde en la Baixa",
+      "base": "Lisboa",
+      "places": [
+        "baixa-lisbon",
+        "santa-justa"
+      ],
+      "am": "Tras llegar a Lisboa, ve al hotel y deja el equipaje.",
+      "pm": "Pasea por la Baixa, el centro de calles trazadas en cuadrícula, hasta la Praça do Comércio. Acércate al exterior del elevador de Santa Justa; subir es opcional y dependerá de la fila y de tus ganas.",
+      "night": "Cena cerca del alojamiento para que la primera jornada sea ligera.",
+      "mobility": "Desde el aeropuerto de Lisboa hasta el centro, calcula unos 25–45 minutos en metro o taxi. Continúa a pie por la Baixa.",
+      "spend": 850,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-11-18",
+      "title": "Piedra manuelina en Belém",
+      "base": "Lisboa",
+      "places": [
+        "jeronimos",
+        "belem",
+        "discoveries-monument"
+      ],
+      "am": "Viaja al barrio de Belém y dedica la mañana al Monasterio de los Jerónimos, conocido por su claustro y su arquitectura manuelina.",
+      "pm": "Continúa por la ribera del Tajo hasta el Monumento a los Descubrimientos y el entorno de la Torre de Belém. El paseo exterior permite disfrutarlos aunque alguna visita interior no esté disponible.",
+      "night": "Regresa al centro de Lisboa para cenar.",
+      "mobility": "Belém se alcanza en tren, tranvía o autobús. El trayecto puede tomar unos 25–45 minutos según el punto de salida; las visitas se conectan caminando junto al río.",
+      "spend": 1450,
+      "note": "Comprueba los horarios y posibles cierres de los monumentos de Belém antes de reservar el día."
+    },
+    {
+      "n": 4,
+      "date": "2026-11-19",
+      "title": "Sintra, un palacio entre nubes",
+      "base": "Lisboa",
+      "places": [
+        "pena"
+      ],
+      "am": "Toma el tren a Sintra y continúa en transporte local hasta el Palacio da Pena, situado en lo alto de la sierra. Respeta la hora de acceso de tu entrada.",
+      "pm": "Recorre el palacio y la parte de sus jardines que resulte cómoda según el clima. Después, baja al pueblo para comer y pasear sin intentar añadir otro gran palacio.",
+      "night": "Vuelve a Lisboa y descansa en el mismo hotel.",
+      "mobility": "El tren a Sintra tarda unos 40–50 minutos desde Lisboa. Después necesitarás transporte local hasta Pena y caminar hasta su acceso; revisa estas conexiones antes de elegir la hora de entrada.",
+      "spend": 1750,
+      "note": ""
+    },
+    {
+      "n": 5,
+      "date": "2026-11-20",
+      "title": "del castillo a Alfama y Chiado",
+      "base": "Lisboa",
+      "places": [
+        "sao-jorge",
+        "alfama",
+        "chiado"
+      ],
+      "am": "Conoce el castillo de São Jorge y sus miradores sobre los tejados de Lisboa. Un taxi para la subida puede ayudarte a reservar energía.",
+      "pm": "Desciende por las calles de Alfama, el antiguo barrio de callejuelas, y continúa hacia Chiado para una pausa de café y librerías.",
+      "night": "Si te interesa escuchar fado, reserva una cena con actuación y comprueba el precio del menú y del espectáculo.",
+      "mobility": "Combina caminatas con metro, tranvía o taxi para reducir las subidas. Alfama tiene pendientes y pavimento irregular.",
+      "spend": 1700,
+      "note": ""
+    },
+    {
+      "n": 6,
+      "date": "2026-11-21",
+      "title": "excursión a Sintra y los jardines de Regaleira",
+      "base": "Lisboa",
+      "places": [
+        "regaleira",
+        "sintra-national-palace"
+      ],
+      "am": "Regresa a Sintra para visitar la Quinta da Regaleira, una finca de jardines, grutas y construcciones simbólicas. Lleva calzado con buen agarre.",
+      "pm": "Pasea por el centro de Sintra. El Palacio Nacional, reconocible por sus grandes chimeneas, es una segunda visita opcional si te quedan tiempo y energía.",
+      "night": "Regresa a Lisboa; no necesitas cambiar de alojamiento para esta segunda excursión.",
+      "mobility": "Vuelve a Sintra en tren, con unos 40–50 minutos por sentido. Regaleira se alcanza caminando desde el centro del pueblo; el trayecto desde la estación añade tiempo.",
+      "spend": 1600,
+      "note": "Los jardines y escaleras de Regaleira pueden resbalar con lluvia. Evita acumular más de dos visitas interiores en Sintra.",
+      "optionalPlaces": [
+        "sintra-national-palace"
+      ]
+    },
+    {
+      "n": 7,
+      "date": "2026-11-22",
+      "title": "azulejos y una tarde a tu ritmo",
+      "base": "Lisboa",
+      "places": [
+        "tile-museum-lisbon"
+      ],
+      "am": "Dedica la mañana al Museo Nacional del Azulejo si su calendario permite la visita. Sus colecciones ayudan a entender la cerámica que has visto en fachadas, iglesias y estaciones.",
+      "pm": "Deja la tarde libre para descansar o completar un paseo pendiente. También funciona como margen si la lluvia obligó a reorganizar un día anterior.",
+      "night": "Prepara la maleta para el traslado a Porto.",
+      "mobility": "Llega al Museo del Azulejo en autobús o taxi según la ubicación del hotel. Deja el resto de los traslados al mínimo.",
+      "spend": 1000,
+      "note": "",
+      "optionalPlaces": [
+        "tile-museum-lisbon"
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2026-11-23",
+      "title": "llegada en tren y paseo por la Ribeira",
+      "base": "Porto",
+      "places": [
+        "sao-bento",
+        "ribeira",
+        "dom-luis-bridge"
+      ],
+      "am": "Viaja en tren de Lisboa a Porto y deja el equipaje en el alojamiento.",
+      "pm": "Conoce el vestíbulo de azulejos de la estación de São Bento y baja hacia Ribeira, el barrio situado junto al río Duero. Desde la orilla verás el puente de Dom Luís I.",
+      "night": "Cena cerca del río o del hotel, según las cuestas que quieras afrontar al final del día.",
+      "mobility": "El tren Lisboa–Porto tarda aproximadamente 3 horas, más los traslados urbanos. Comprueba la estación de llegada y cómo continuar desde allí al hotel.",
+      "spend": 1500,
+      "note": ""
+    },
+    {
+      "n": 9,
+      "date": "2026-11-24",
+      "title": "libros, azulejos y la torre de los Clérigos",
+      "base": "Porto",
+      "places": [
+        "lello",
+        "clerigos"
+      ],
+      "am": "Visita la librería Lello con entrada reservada y continúa hasta el conjunto de los Clérigos. La subida a la torre es opcional y requiere escaleras.",
+      "pm": "Recorre las calles del centro, deteniéndote en sus fachadas y comercios. Deja tiempo para almorzar sin otra reserva inmediatamente después.",
+      "night": "Disfruta una cena tranquila en Porto.",
+      "mobility": "Las visitas del centro de Porto se hacen a pie, con cuestas. Puedes recurrir al metro o a un taxi para los tramos más incómodos.",
+      "spend": 1600,
+      "note": ""
+    },
+    {
+      "n": 10,
+      "date": "2026-11-25",
+      "title": "Douro sin prisa",
+      "base": "Porto",
+      "places": [
+        "douro"
+      ],
+      "am": "Sal en una excursión al valle del Duero. Antes de reservar, revisa el tiempo de carretera y si incluye miradores, una bodega y comida.",
+      "pm": "Disfruta los paisajes de viñedos y las visitas acordadas. Los paseos en barco dependen del servicio y del tiempo; no son una parte garantizada de cualquier excursión.",
+      "night": "Regresa a Porto. Si el pronóstico anuncia lluvia intensa, intenta mover esta salida a otro día.",
+      "mobility": "Una excursión por el valle del Duero puede ocupar unas 9–11 horas. Comprueba el punto de recogida y los servicios incluidos; los transportes y barcos de invierno requieren revisar horarios.",
+      "spend": 2400,
+      "note": "Si el pronóstico anuncia lluvia intensa, intenta intercambiar la excursión por una jornada urbana."
+    },
+    {
+      "n": 11,
+      "date": "2026-11-26",
+      "title": "Guimarães medieval",
+      "base": "Porto",
+      "places": [
+        "guimaraes",
+        "guimaraes-castle",
+        "braganza-palace"
+      ],
+      "am": "Viaja en tren a Guimarães y acércate al castillo que recuerda los orígenes del reino de Portugal.",
+      "pm": "Conoce el Palacio de los Duques de Braganza y pasea por las plazas del casco histórico. Combina las entradas con tiempo para comer.",
+      "night": "Vuelve a Porto sin cambiar de hotel.",
+      "mobility": "El tren Porto–Guimarães tarda aproximadamente 1–1½ horas por sentido. Desde la estación, continúa al centro histórico a pie o en taxi.",
+      "spend": 1400,
+      "note": "Guimarães es la excursión incluida en este programa. Coimbra sería una alternativa que requiere reorganizar el transporte y reservar la biblioteca de su universidad si deseas visitarla."
+    },
+    {
+      "n": 12,
+      "date": "2026-11-27",
+      "title": "Palacio de la Bolsa y la otra orilla",
+      "base": "Porto",
+      "places": [
+        "gaia-waterfront",
+        "palacio-bolsa"
+      ],
+      "am": "Cruza hacia Vila Nova de Gaia para contemplar Porto desde la otra orilla. Si te interesa el vino, puedes añadir una visita reservada a una bodega.",
+      "pm": "Regresa al centro para una visita guiada al Palacio de la Bolsa, sujeta al horario disponible. Deja el resto del día para un último paseo y preparar el equipaje.",
+      "night": "Cena temprano y revisa el transporte al aeropuerto.",
+      "mobility": "Combina caminata, metro y taxi entre Porto y Gaia según las cuestas que quieras evitar. Verifica el acceso a cada visita antes de cruzar el río.",
+      "spend": 1500,
+      "note": ""
+    },
+    {
+      "n": 13,
+      "date": "2026-11-28",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Volarás desde Porto (OPO) a Ciudad de México (MEX) con una escala europea. Conviene comprar todos los tramos dentro de una misma reserva.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 10,
+  "profile": {
+    "pace": "Equilibrado",
+    "solo": "Fácil",
+    "weather": "Media",
+    "why": "Dos bases, Sintra repartida en dos días y una jornada flexible en Lisboa. La lluvia afecta especialmente a jardines y paisajes del Douro.",
+    "weatherWhy": "La lluvia y el viento pueden limitar los jardines de Sintra y las vistas del Douro; los paseos en barco dependen del servicio y del tiempo.",
+    "soloWhy": "Dos bases conectadas por tren y excursiones en transporte público facilitan el viaje, con apoyo de tu portugués y del inglés para resolver los servicios."
+  },
+  "experiences": [
+    "Azulejos y piedra manuelina en Belém",
+    "Palacios y jardines de Sintra",
+    "Callejuelas de Alfama y cafés de Chiado",
+    "La Ribeira de Porto frente al puente de Dom Luís I",
+    "Viñedos del Douro y plazas de Guimarães"
+  ],
+  "routeCities": [
+    "Lisboa",
+    "Sintra",
+    "Porto",
+    "Guimarães",
+    "Vila Nova de Gaia"
+  ],
+  "cover": "pena",
+  "hotels": [],
+  "stays": [
+    [
+      "Lisboa",
+      "Busca alojamiento en Baixa o Chiado, barrios céntricos con acceso al transporte. Comprueba que el edificio tenga ascensor y cómo llegar con la maleta por sus calles en pendiente."
+    ],
+    [
+      "Porto",
+      "El centro o Cedofeita son buenas opciones. Revisa cuántas escaleras hay para llegar a la habitación."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Lisboa",
+      "coords": [
+        38.7223,
+        -9.1393
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Sintra",
+      "coords": [
+        38.8029,
+        -9.3817
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "Porto",
+      "coords": [
+        41.1579,
+        -8.6291
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 3
+    },
+    {
+      "name": "Guimarães",
+      "coords": [
+        41.4425,
+        -8.2918
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Vila Nova de Gaia",
+      "coords": [
+        41.1336,
+        -8.6174
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 5
+    }
+  ],
+  "placeDescriptions": {
+    "pena": "Palacio romántico de colores en las montañas de Sintra. Reserva horario y cuenta tiempo para subir desde el pueblo.",
+    "baixa-lisbon": "Praça do Comércio, plaza monumental de Lisboa abierta al Tajo.",
+    "santa-justa": "Ascensor de hierro que une distintos niveles del centro de Lisboa.",
+    "jeronimos": "Claustro y templo manuelinos de piedra tallada. Es la visita arquitectónica clave de Belém.",
+    "belem": "Torre de Belém, fortificación junto al Tajo y uno de los monumentos más conocidos de Lisboa. Su exterior forma parte del paseo; consulta por separado la disponibilidad del interior.",
+    "discoveries-monument": "Monumento a los Descubrimientos junto al Tajo, en Belém.",
+    "sao-jorge": "Castillo de São Jorge, situado sobre una colina de Lisboa.",
+    "alfama": "Barrio de callejuelas y miradores en Lisboa. Combina caminata, tranvía cuando resulte práctico y una noche de fado.",
+    "chiado": "Largo do Chiado, en el barrio histórico y comercial de Lisboa.",
+    "regaleira": "Finca de jardines simbólicos, grutas y pozo iniciático. Se disfruta con tiempo y zapatos que no resbalen.",
+    "sintra-national-palace": "Palacio de Sintra, reconocible por sus dos grandes chimeneas cónicas.",
+    "tile-museum-lisbon": "Museo Nacional del Azulejo, instalado en el antiguo convento de Madre de Deus.",
+    "sao-bento": "Estación de São Bento en el centro de Oporto.",
+    "ribeira": "Frente histórico del Duero, con fachadas coloridas y puente de hierro. La orilla de Gaia ofrece la mejor vista del conjunto.",
+    "dom-luis-bridge": "Puente de Dom Luís I sobre el río Duero.",
+    "lello": "Librería histórica de Porto con escalera escultórica y decoración neogótica. Requiere entrada y puede estar muy concurrida.",
+    "clerigos": "Torre de los Clérigos, campanario emblemático de Oporto.",
+    "douro": "Valle portugués de viñedos en terrazas junto al río Duero. Una excursión permite combinar miradores y bodegas; las actividades concretas dependen del recorrido contratado.",
+    "guimaraes": "Centro histórico portugués de plazas, casas antiguas y castillo. Una excursión tranquila desde Porto.",
+    "guimaraes-castle": "Castillo medieval de Guimarães.",
+    "braganza-palace": "Palacio de los Duques de Braganza, en Guimarães.",
+    "gaia-waterfront": "Desde la ribera de Vila Nova de Gaia se contempla el frente histórico de Porto al otro lado del Duero. El paseo permite disfrutar esta perspectiva y acercarse a las bodegas de la zona.",
+    "palacio-bolsa": "Palacio de la Bolsa, edificio histórico del centro de Oporto."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

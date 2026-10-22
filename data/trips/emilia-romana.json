@@ -1,0 +1,2081 @@
+{
+  "id": "emilia-romana",
+  "name": "Milano, Bologna y Firenze · Emilia-Romagna",
+  "flag": "🇮🇹",
+  "start": "2026-11-26",
+  "end": "2026-12-07",
+  "tag": "DOS BASES TURÍSTICAS, SIETE CIUDADES, ITALIA EN TREN",
+  "routeCities": [
+    "Milano",
+    "Bologna",
+    "Ravenna",
+    "Parma",
+    "Ferrara",
+    "Firenze",
+    "Modena"
+  ],
+  "bases": [
+    [
+      "Aeropuerto de Malpensa",
+      1
+    ],
+    [
+      "Milano",
+      2
+    ],
+    [
+      "Bologna",
+      8
+    ]
+  ],
+  "work": 8,
+  "costs": [
+    [
+      "Viaje completo · presupuesto preliminar, pendiente de desglose cotizado",
+      65000,
+      90000
+    ]
+  ],
+  "profile": {
+    "pace": "Equilibrado / activo",
+    "solo": "Muy fácil",
+    "weather": "Baja",
+    "why": "Dos bases turísticas principales y una noche técnica en Malpensa: tres alojamientos, once noches y cinco excursiones desde Bologna. Firenze y Ferrara concentran las jornadas más activas.",
+    "soloWhy": "Trenes entre ciudades y ocho noches en una misma habitación de Bologna facilitan las excursiones sin equipaje.",
+    "weatherWhy": "Arte, museos y monumentos interiores sostienen el programa; lluvia y niebla pueden afectar terrazas, torres y vistas."
+  },
+  "intro": "Inicia en la región de Lombardia con la elegancia arquitectónica y de moda en Milano, para luego establecer base en Bologna, el epicentro universitario y gastronómico de la región de Emilia-Romagna. Desde allí recorrerás las joyas de esta misma región: los sabores tradicionales de Parma, el legado balsámico y automotriz de Modena, los mosaicos bizantinos de Ravenna y las murallas renacentistas de Ferrara. El viaje se completa cruzando a la región Toscana para admirar el deslumbrante arte de Firenze.",
+  "climate": "En las fechas elegidas encontrarás un clima *frío y húmedo*, con temperaturas de *8–13 °C (día) y 1–6 °C (noche)*. Posibles lluvias, niebla y heladas ocasionales; la nieve es poco frecuente.\n\n*Qué llevar:* Abrigo de invierno, suéteres, bufanda, guantes ligeros, paraguas compacto y calzado cómodo e impermeable.\n\n*Horas de luz:* Amanece alrededor de las *7:30* y anochece entre las *16:35 y 16:45*. Aprovecha las horas de luz para exteriores y miradores; deja museos y actividades bajo techo para la tarde. Los pórticos de Bologna son ideales para pasear cuando llueve.",
+  "solo": "*Viajar solo:* Muy recomendable. Ciudades seguras en términos generales, bien conectadas por tren y fáciles de recorrer a pie. Mantén precauciones habituales contra carteristas en estaciones y zonas turísticas.\n\n*Ritmo:* Equilibrado–activo. Tres alojamientos en 11 noches, con Bologna como base durante ocho. Las excursiones evitan cambiar de hotel, pero Firenze y Ferrara serán los días más intensos.\n\n*Idioma:* Italiano. El inglés es relativamente fácil de utilizar en hoteles, estaciones y atracciones turísticas, especialmente en Milano y Firenze; menos habitual en comercios pequeños. Conviene conocer frases básicas en italiano.\n\n*Moneda:* Euro (€). Las tarjetas se aceptan ampliamente, pero conviene llevar algo de efectivo para compras pequeñas. No necesitas cambiar dinero a otra moneda.",
+  "experiences": [
+    {
+      "city": "Milano",
+      "description": "Contemplar La Última Cena de Leonardo da Vinci y la última escultura de Michelangelo."
+    },
+    {
+      "city": "Bologna",
+      "description": "Caminar bajo sus pórticos históricos y descubrir San Luca y el Teatro Anatómico."
+    },
+    {
+      "city": "Ravenna",
+      "description": "Descifrar la historia del Imperio bizantino a través de sus mosaicos."
+    },
+    {
+      "city": "Parma",
+      "description": "Admirar el Teatro Farnese y las obras maestras de la Galería Nacional."
+    },
+    {
+      "city": "Ferrara",
+      "description": "Explorar palacios renacentistas y la exposición de grandes maestros en Palazzo dei Diamanti."
+    },
+    {
+      "city": "Firenze",
+      "description": "Contemplar el David, ascender a la cúpula de Brunelleschi y recorrer los Uffizi."
+    },
+    {
+      "city": "Modena",
+      "description": "Descubrir su patrimonio románico, gastronomía y legado automovilístico."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-11-26",
+      "transportRefs": [
+        "flight-international"
+      ],
+      "title": "Vuelo CDMX a Milano: Aeropuerto de CDMX (AICM) → Escala en Madrid-Barajas (MAD) → Llegada a Milano Malpensa (MXP)",
+      "base": "En vuelo / Malpensa",
+      "headerPlaces": [
+        "MEX",
+        "MAD",
+        "MXP",
+        "Pernocta en Moxy Milano Malpensa Airport"
+      ],
+      "places": [],
+      "am": "Presentarse en el *Aeropuerto Internacional de la Ciudad de México (MEX)* la noche del *miércoles 25 de noviembre* 3 horas antes (*9:05 PM*). Abordar el vuelo de *Iberia* con salida a las *00:05 hrs del jueves 26* hacia *Milano Malpensa (MXP)*. Duración total del viaje: *15 h 05 min*.",
+      "pm": "Realizar la conexión en el *Aeropuerto de Madrid-Barajas (MAD)*. Tiempo de escala: *2 h 45 min*. Abordar el vuelo de continuación hacia *Milano*.",
+      "night": "Llegada al *Aeropuerto Milano Malpensa (MXP)* a las *22:10 hrs*. Desde la *Terminal 1*, tomar el autobús gratuito hacia la *Terminal 2* y caminar al hotel *Moxy Milano Malpensa Airport* para realizar el check-in.",
+      "mobility": "Traslado interno *T1 → T2*: Utiliza el autobús gratuito del aeropuerto *(10-15 min de trayecto)*. Sigue los letreros de conexión entre terminales y toma el acceso peatonal directo al hotel (5 min a pie). Confirma tu terminal exacta de llegada y los horarios nocturnos del autobús.",
+      "spend": null,
+      "note": "Importante: El vuelo sale a las *00:05 del jueves 26 de noviembre*, por lo que debes presentarte en el AICM *la noche del miércoles 25*. En Madrid, confirma que ambos vuelos estén en la misma reserva y, si documentas equipaje, que esté etiquetado hasta Milano; durante la conexión, sigue las indicaciones hacia tu puerta y considera el control de pasaportes para entrar al espacio Schengen. Como llegarás a Malpensa a las *22:10*, *avisa al Moxy de tu llegada nocturna* y confirma la posibilidad de hacer el check-in después de medianoche si se retrasa el vuelo.",
+      "noteLinks": [],
+      "hotel": "hotel-1",
+      "mobilityLinks": [
+        {
+          "label": "Autobús gratuito T1–T2",
+          "url": "https://www.milanomalpensa-airport.com/en/from-to/connections-with-terminals"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "date": "2026-11-27",
+      "title": "Duomo, Brera y la ciudad contemporánea",
+      "base": "Milano",
+      "headerPlaces": [
+        "Duomo di Milano",
+        "Terrazze del Duomo",
+        "Galleria Vittorio Emanuele II",
+        "Teatro alla Scala",
+        "Pinacoteca di Brera",
+        "Piazza Gae Aulenti"
+      ],
+      "places": [
+        "italy16-duomo",
+        "milan-galleria"
+      ],
+      "am": "*1.* Hacer check-out y tomar el tren aeroportuario *Malpensa Express* desde Terminal 2 hasta Milano Centrale (aprox. 57–58 min; €15 (≈ $306 MXN) por persona). \n*2.* Caminar al *B&B Hotel Milano Aosta* (3–5 min) y solicitar resguardo de equipaje. \n*3.* Tomar el metro hacia el centro. Recorrer el Duomo di Milano y subir en ascensor a las Terrazze del Duomo. Duración: 2 horas. Requiere reserva previa (Combo Lift €26 aprox).",
+      "pm": "*1.* Caminar por la *Galleria Vittorio Emanuele II* hasta llegar a la *Piazza della Scala* para apreciar la fachada del *Teatro alla Scala*. \n*2.* Ingresar al *Museo Teatrale alla Scala* solo si queda margen de tiempo (compra anticipada recomendable; acceso a la sala sujeto a ensayos).\n*3.* Visitar la *Pinacoteca di Brera* (reserva obligatoria con horario) y dedicar unas 2 horas a la colección.\n*4.* Pasear después a pie por las calles de *Brera*.",
+      "night": "*1.* Pasear por la *Piazza Gae Aulenti* y contemplar *Bosco Verticale* desde el exterior (gratuito; edificios residenciales sin visita interior).\n*2.* Cenar por la zona y caminar de regreso al *B&B Hotel Milano Aosta* para descansar.",
+      "mobility": "- *Hotel → Centro:* Metro línea M3 desde estación *Centrale FS* hasta *Duomo* (12 min; billete ATM €2.20 válido por 90 min).\n- *Centro histórico:* Conexiones a pie (5–15 min entre puntos) ruta *Duomo* → *Scala* → *Brera*.\n- *Retorno:* A pie desde *Brera* hacia *Gae Aulenti* (25 min) y finalmente de regreso al hotel (25 min).",
+      "spend": null,
+      "note": "- *Aviso logístico:* Jornada de alta actividad. Asegurar margen de tiempo suficiente para comer entre la visita al *Duomo* y el horario reservado en *Brera*.",
+      "noteLinks": [
+        {
+          "label": "Duomo · entradas",
+          "url": "https://www.duomomilano.it/en/access-updates-for-the-milan-duomo-monumental-complex/"
+        },
+        {
+          "label": "Brera · reserva",
+          "url": "https://pinacotecabrera.org/visita/ingressi/"
+        },
+        {
+          "label": "Museo Teatrale alla Scala",
+          "url": "https://www.museoscala.org/"
+        },
+        {
+          "label": "Duomo di Milano · entradas",
+          "url": "https://www.duomomilano.it/"
+        },
+        {
+          "label": "Pinacoteca di Brera",
+          "url": "https://pinacotecabrera.org/"
+        }
+      ],
+      "hotel": "hotel-2",
+      "mobilityLinks": [
+        {
+          "label": "Malpensa Express · billetes",
+          "url": "https://www.malpensaexpress.it/en/travel-documents/tickets/"
+        },
+        {
+          "label": "Metro ATM · tarifas",
+          "url": "https://www.atm.it/en/VIAGGIACONNOI/BIGLIETTI/Pages/tickets_milan.aspx"
+        },
+        {
+          "label": "Malpensa Express",
+          "url": "https://www.malpensaexpress.it/"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "date": "2026-11-28",
+      "title": "Leonardo, Michelangelo y Navigli",
+      "base": "Milano",
+      "headerPlaces": [
+        "Cenacolo Vinciano",
+        "Santa Maria delle Grazie",
+        "Castello Sforzesco",
+        "Museo Pietà Rondanini",
+        "Parco Sempione",
+        "Arco della Pace",
+        "Navigli"
+      ],
+      "places": [
+        "italy16-grazie",
+        "italy16-castello"
+      ],
+      "am": "*1.* Desayunar en el hotel y trasladarse a *Santa Maria delle Grazie*.\n*2.* Visitar el *Museo del Cenacolo Vinciano* para contemplar *L’Ultima Cena* de *Leonardo da Vinci*. Presentarse 30 minutos antes con identificación oficial y entrada nominativa. Duración: 15 minutos. Reserva obligatoria (€15 aprox.).\n*3.* Visitar el interior de *Santa Maria delle Grazie*, incluyendo la tribuna de *Bramante*. Acceso gratuito, sujeto a horarios de culto.\n*4.* Continuar hacia el *Castello Sforzesco*, según el horario reservado.",
+      "pm": "*1.* Caminar hasta el *Castello Sforzesco* y recorrer sus patios interiores, incluyendo la *Torre del Filarete*. Acceso gratuito.\n*2.* Visitar el *Museo della Pietà Rondanini* para contemplar la última escultura de *Michelangelo*. Duración: 30–45 minutos. Entrada general a los museos del castillo: €10 aprox. Último acceso: 16:30.\n*3.* Atravesar a pie el *Parco Sempione*, desde el castillo hasta el *Arco della Pace* (15–20 minutos). Acceso gratuito.\n*4.* Visitar el *Arco della Pace* y tomar fotografías desde la *Piazza Sempione*. Visita exterior gratuita.",
+      "night": "*1.* Trasladarse al barrio de *Navigli* y recorrer a pie las orillas del *Naviglio Grande*, incluyendo sus puentes peatonales.\n*2.* Continuar hacia la *Darsena di Milano* y pasear por los alrededores del antiguo puerto. Acceso gratuito.\n*3.* Cenar en alguno de los restaurantes del *Naviglio Grande* o disfrutar de un tradicional *aperitivo milanese*.\n*4.* Regresar en metro al *B&B Hotel Milano Aosta* para descansar.",
+      "mobility": "• *Hotel → Cenacolo:* Tomar la línea M2 (verde) desde *Centrale FS*, dirección *Abbiategrasso/Assago Forum*, hasta *Cadorna FN* (12–15 min). Caminar 10–12 min hasta *Santa Maria delle Grazie*.\n• *Cenacolo → Castello Sforzesco:* Caminar 15–20 min hasta *Piazza Castello*.\n• *Castello → Arco della Pace:* Atravesar el *Parco Sempione* a pie (15–20 min).\n• *Arco della Pace → Navigli:* Caminar 20–25 min hasta *Cadorna FN*. Tomar M2 dirección *Abbiategrasso/Assago Forum* hasta *Porta Genova FS* (10 min). Caminar 5–10 min hasta *Naviglio Grande*.\n• *Navigli → Hotel:* Desde *Porta Genova FS*, tomar M2 dirección *Gessate/Cologno Nord* hasta *Centrale FS* (20 min). Caminar al hotel.\n• *Transporte:* Billete ATM €2.20 (≈ $45 MXN), válido durante 90 min. Tiempos estimados sin esperas.",
+      "spend": null,
+      "note": "• *Cenacolo:* Entrada para el 28 de noviembre pendiente de confirmación. Priorizar esta reserva antes de organizar el resto del día.\n• *Disponibilidad:* Si se agotan las entradas individuales, consultar nuevas liberaciones oficiales o tours que incluyan expresamente el acceso.\n• *Identificación:* Entrada nominativa. Presentarse 30 min antes con identificación oficial y comprobante de reserva.\n• *Santa Maria delle Grazie:* Acceso gratuito fuera de celebraciones religiosas. Confirmar horarios de visita.\n• *Castello Sforzesco:* Museos abiertos habitualmente de 10:00 a 17:30; último acceso a las 16:30. Patios gratuitos.\n• *Almuerzo:* Reservar 45–60 min para comer antes o después de la visita al castillo, según el horario del *Cenacolo*.\n• *Flexibilidad:* Si la reserva del *Cenacolo* es por la tarde, reorganizar las visitas para no perder el acceso al museo de *Michelangelo*.\n• *Reservas y tarifas:* Verificar horarios, precios y cierres extraordinarios en los sitios oficiales antes del viaje.",
+      "noteLinks": [
+        {
+          "label": "Castello Sforzesco · museos",
+          "url": "https://www.milanocastello.it/"
+        }
+      ],
+      "hotel": "hotel-2"
+    },
+    {
+      "n": 4,
+      "date": "2026-11-29",
+      "transportRefs": [
+        "train-milano-bologna"
+      ],
+      "title": "Milano → Bologna y el centro monumental",
+      "base": "Bologna",
+      "headerPlaces": [
+        "Milano Centrale",
+        "Bologna Centrale",
+        "Piazza Maggiore",
+        "Basilica di San Petronio",
+        "Fontana del Nettuno",
+        "Quadrilatero",
+        "Le Due Torri",
+        "Complesso di Santo Stefano",
+        "Torre dell’Orologio"
+      ],
+      "places": [
+        "emilia-piazza",
+        "emilia-nettuno",
+        "emilia-stefano"
+      ],
+      "am": "*1.* Hacer check-out del *B&B Hotel Milano Aosta* y caminar a *Milano Centrale*. Tomar el tren de alta velocidad seleccionado hacia *Bologna Centrale* (consultar horarios y tarifa en *Cómo trasladarte*).\n*2.* Caminar hasta *HouSmart Milazzo 5* (5–10 min) y dejar el equipaje, previa autorización. Si no admite depósito anticipado, utilizar *KiPoint* en la estación (de pago).\n*3.* Caminar hacia *Piazza Maggiore* (20 min) y recorrer la plaza, la *Fontana del Nettuno* y el exterior de *Palazzo d’Accursio*. Acceso gratuito.\n*4.* Entrar a la *Basilica di San Petronio* (10:00–18:00; acceso principal gratuito). Visitar opcionalmente las capillas *Bolognini (dei Re Magi)*, *San Sebastiano* y *San Vincenzo Ferrer* (€5 ≈ $102 MXN; sin reserva individual).",
+      "pm": "*1.* Recorrer las calles del *Quadrilatero* y almorzar en alguno de sus restaurantes o mercados gastronómicos.\n*2.* Regresar a *Piazza Maggiore* y subir a la *Torre dell’Orologio*, en *Palazzo d’Accursio*, para disfrutar de las vistas de *Bologna*. Entrada €10 (≈ $204 MXN); reservar horario. Ascenso por escaleras, sin ascensor.\n*3.* Caminar hacia *Le Due Torri* (*Asinelli* y *Garisenda*) y contemplarlas desde las zonas exteriores habilitadas. Acceso gratuito; torres cerradas al público.\n*4.* Visitar el *Complesso di Santo Stefano* a partir de las 15:30. Recorrer sus iglesias y patios interiores (45–60 min). Entrada gratuita con donativo voluntario; sujeto a celebraciones religiosas.\n*5.* Acercarse a la *Finestrella di Via Piella* para contemplar el *Canale delle Moline* desde su pequeña ventana. Parada exterior gratuita (10 min).",
+      "night": "*1.* Regresar a *HouSmart Milazzo 5*, recoger el equipaje si quedó en consigna y realizar el check-in (disponible desde las 15:00).\n*2.* Salir a cenar por el centro de *Bologna* y probar alguna especialidad local, como *tagliatelle al ragù* o *tortellini in brodo*.\n*3.* Regresar al apartamento para descansar. Primera de ocho noches en *Bologna*.",
+      "mobility": "• *Hotel → Milano Centrale:* Caminar 3–5 min desde *B&B Hotel Milano Aosta*.\n• *Bologna Centrale → Alojamiento:* Salir hacia *Piazza Medaglie d’Oro* y caminar unos 5–10 min hasta *HouSmart Milazzo 5*, Via Milazzo 5.\n• *Alojamiento → Piazza Maggiore:* Caminar aproximadamente 20 min por *Via dell’Indipendenza*.\n• *Centro monumental:* A pie entre *Piazza Maggiore*, *Quadrilatero*, *Le Due Torri* y *Santo Stefano* (5–15 min entre puntos).\n• *Santo Stefano → Finestrella:* Caminar aproximadamente 15 min hasta *Via Piella*.\n• *Finestrella → Alojamiento:* Caminar aproximadamente 10–15 min. No se requiere transporte público durante las visitas.",
+      "spend": null,
+      "note": "• *Tren:* Horarios y tarifas de *Frecciarossa* e *Italo* provisionales: confirmar el servicio elegido y sus condiciones antes de comprar. Llegar a *Milano Centrale* con 15–20 min de anticipación. Si se pierde un tren, revisar las condiciones del billete antes de intentar viajar con otro operador.\n• *San Petronio:* Capillas de pago abiertas de 10:00 a 17:30 (último acceso 17:15). Recorrido de tres capillas €5; no requiere reserva individual. No se permite ingresar con maletas.\n• *Torre dell’Orologio:* Entrada €10 con horario reservado. Accesos cada 20 min; último ingreso a las 18:20. No dispone de ascensor.\n• *Le Due Torri:* *Torre degli Asinelli* y *Torre Garisenda* cerradas. Respetar el perímetro de seguridad.\n• *Santo Stefano:* El domingo, complejo monumental abierto de 09:30 a 12:30 y de 15:30 a 19:00. Evitar celebraciones religiosas.\n• *Archiginnasio:* Visita programada para el miércoles; no incluir este día.\n• *Tour guiado:* Opcional, siempre que no duplique los monumentos y entradas ya previstos.",
+      "noteLinks": [
+        {
+          "label": "Torre dell’Orologio · turismo oficial",
+          "url": "https://www.bolognawelcome.com/"
+        },
+        {
+          "label": "San Petronio · capillas y horarios",
+          "url": "https://www.basilicadisanpetronio.org/info-e-orari/"
+        },
+        {
+          "label": "Santo Stefano · horarios",
+          "url": "https://www.bolognawelcome.com/it/luoghi/edifici-religiosi/complesso-di-santo-stefano"
+        },
+        {
+          "label": "Torre degli Asinelli · cierre",
+          "url": "https://www.bolognawelcome.com/it/area-stampa/press-news-asinelli-tower-closing"
+        }
+      ],
+      "hotel": "hotel-3",
+      "mobilityLinks": [
+        {
+          "label": "KiPoint · ubicación y servicio",
+          "url": "https://www.bolognawelcome.com/it/altro/altro/deposito-bagagli--kipoint-bologna-centrale"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2026-11-30",
+      "transportRefs": [
+        "train-bologna-ravenna"
+      ],
+      "title": "la luz de los mosaicos bizantinos",
+      "base": "Ravenna",
+      "headerPlaces": [
+        "Basilica di San Vitale",
+        "Mausoleo di Galla Placidia",
+        "Battistero Neoniano",
+        "Cappella di Sant’Andrea",
+        "Tomba di Dante",
+        "Basilica di San Francesco",
+        "Basilica di Sant’Apollinare Nuovo"
+      ],
+      "places": [
+        "emilia-vitale",
+        "emilia-galla"
+      ],
+      "am": "*1.* Desayunar y caminar desde *HouSmart Milazzo 5* hasta *Bologna Centrale*. Tomar el tren *Regionale* hacia *Ravenna* (aprox. 1 h 15 min; consultar horario previsto).\n*2.* Desde la estación de *Ravenna*, caminar 8–10 min hasta la *Basilica di Sant’Apollinare Nuovo*. Visitar sus mosaicos bizantinos (30–40 min). Entrada incluida en el billete combinado.\n*3.* Caminar hasta la *Tomba di Dante* (5–10 min) y visitar el sepulcro de *Dante Alighieri*. Acceso gratuito (10–15 min).\n*4.* Visitar la cercana *Basilica di San Francesco* y contemplar su cripta inundada. Acceso gratuito; iluminación de la cripta €1 (≈ $20 MXN). Realizar la visita antes de las 12:00.\n*5.* Caminar hasta el *Battistero Neoniano* (5–10 min) y contemplar los mosaicos de su cúpula (15–20 min). Entrada incluida en el billete combinado; reservar franja horaria.\n*6.* Visitar el *Museo Arcivescovile* y la *Cappella di Sant’Andrea*, situados junto al baptisterio. Recorrer sus salas y contemplar los mosaicos de la capilla (30–40 min). Entrada incluida; reservar franja horaria.",
+      "pm": "*1.* Almorzar en el centro histórico de *Ravenna* (45–60 min). Probar alguna especialidad local, como *cappelletti al ragù* o *piadina romagnola*.\n*2.* Caminar hasta la *Basilica di San Vitale* (10–15 min) y recorrer su interior, prestando especial atención a los mosaicos de *Giustiniano* y *Teodora*. Duración: 45–60 min. Entrada incluida en el billete combinado.\n*3.* Visitar el vecino *Mausoleo di Galla Placidia* y contemplar sus mosaicos, especialmente la bóveda estrellada. Duración: 15–20 min. Entrada incluida; reservar franja horaria.\n*4.* Disfrutar del tiempo restante paseando por el centro histórico o tomando un café antes de regresar a la estación.",
+      "night": "*1.* Caminar desde *San Vitale* o el centro histórico hasta la estación *Ravenna* (15–20 min). Llegar con al menos 15 min de anticipación.\n*2.* Tomar el tren *Regionale* de regreso a *Bologna Centrale* (salida prevista 17:43; confirmar horario definitivo).\n*3.* Cenar cerca de *Bologna Centrale* o del alojamiento y regresar a *HouSmart Milazzo 5* para descansar.",
+      "mobility": "• *HouSmart Milazzo 5 → Bologna Centrale:* Caminar aproximadamente 5–10 min desde el alojamiento hasta la estación.\n• *Plan B de ida:* *Regionale 17545*, salida a las 09:05 y llegada a *Ravenna* a las 10:17. Directo, 1 h 12 min. Tarifa de referencia: €8.50 (≈ $173 MXN). Si se utiliza, reorganizar las visitas de la mañana.\n• *Estación de Ravenna → Sant’Apollinare Nuovo:* Caminar unos 700 m (8–10 min).\n• *Recorrido monumental a pie:* *Sant’Apollinare Nuovo* → *Tomba di Dante / San Francesco* (5–10 min) → *Battistero Neoniano / Museo Arcivescovile* (5–10 min) → *San Vitale* (10–15 min) → *Galla Placidia* (en el mismo complejo). Ajustar el orden a las franjas reservadas o al punto de encuentro del guía.\n• *San Vitale → Estación de Ravenna:* Caminar 15–20 min y llegar con al menos 15 min de anticipación.\n• *Plan B de regreso:* *Regionale 17560*, salida a las 18:43 y llegada a *Bologna Centrale* a las 19:55. Directo, 1 h 12 min. Tarifa de referencia: €8.50 (≈ $173 MXN).\n• *Bologna Centrale → Alojamiento:* Caminar aproximadamente 5–10 min hasta *HouSmart Milazzo 5*. Los monumentos de Ravenna se recorren a pie, sin autobuses.\n• *Coste ferroviario estimado de ida y vuelta:* €17.00 (≈ $347 MXN), sin otros transportes. Horarios y precios pendientes de confirmación.",
+      "spend": null,
+      "note": "• *Billete combinado:* Comprar el *Itinerario 5 monumenti* (€14.50 ≈ $296 MXN). Válido 7 días, con una entrada por monumento. Incluye *Sant’Apollinare Nuovo*, *San Vitale*, *Galla Placidia*, *Battistero Neoniano* y *Museo Arcivescovile / Cappella di Sant’Andrea*.\n• *Reservas:* Comprar online y seleccionar las franjas obligatorias, especialmente para *Galla Placidia*, *Battistero Neoniano* y *Museo Arcivescovile*.\n• *Horarios de invierno:* Confirmar el calendario aplicable al 30 de noviembre de 2026. No utilizar los horarios de verano, vigentes hasta el 1 de noviembre.\n• *Último acceso:* Prever terminar los monumentos antes de las 17:00, sujeto a confirmación de los horarios de invierno.\n• *Trenes:* Confirmar en *Trenitalia* los horarios definitivos de ida y regreso antes del viaje y comprobar las condiciones y validez del billete regional.\n• *Orden de visitas:* Ajustar los monumentos a las franjas reservadas. Si se utiliza el tren de ida de las 09:05, priorizar los accesos con horario y reducir las paradas secundarias.\n• *Regreso:* Planificar las visitas para tomar el tren de las 17:43. Como alternativa, considerar el de las 18:43 si está disponible, teniendo en cuenta los horarios de cierre.\n• *Guía de mosaicos:* Opcional. Si se contrata, preferir guía especializado en patrimonio bizantino, con coordinación de entradas y respeto a las franjas reservadas. No hace falta transporte guiado desde Bologna.",
+      "noteLinks": [
+        {
+          "label": "Tarifas y calendario · Ravenna Turismo",
+          "url": "https://www.turismo.ra.it/cultura-e-storia/monumenti-unesco/mausoleo-galla-placidia"
+        }
+      ],
+      "hotel": "hotel-3"
+    },
+    {
+      "n": 6,
+      "date": "2026-12-01",
+      "transportRefs": [
+        "train-bologna-parma"
+      ],
+      "title": "románico, Leonardo y Teatro Farnese",
+      "base": "Parma",
+      "headerPlaces": [
+        "Piazza Duomo",
+        "Duomo di Parma",
+        "Battistero di Parma",
+        "San Giovanni Evangelista",
+        "Complesso Monumentale della Pilotta",
+        "Teatro Farnese",
+        "Galleria Nazionale"
+      ],
+      "places": [
+        "emilia-parma",
+        "emilia-farnese"
+      ],
+      "am": "*1.* Desayunar en el alojamiento y caminar hasta *Bologna Centrale*. Tomar el tren *Regionale* hacia *Parma* (aprox. 1 h; confirmar horario).\n*2.* Desde la estación de *Parma*, caminar 10–15 min hasta el *Complesso Monumentale della Pilotta*. Ingresar a partir de las 09:00. Entrada general €18 (≈ $367 MXN), válida para los museos del complejo; sin reserva de horario obligatoria.\n*3.* Visitar el *Teatro Farnese* y continuar por la *Galleria Nazionale*, buscando *La Scapigliata* de *Leonardo da Vinci*, *La Schiava Turca* de *Parmigianino* y las obras disponibles de *Correggio*. Dedicar 2.5–3 horas al conjunto. Algunas salas abren a las 10:30.",
+      "pm": "*1.* Almorzar en el centro de *Parma* (45–60 min). Probar especialidades locales como *Prosciutto di Parma*, *Parmigiano Reggiano* o *tortelli d’erbetta*.\n*2.* Caminar 10 min hasta *Piazza Duomo* y visitar el *Duomo di Parma*. Contemplar la cúpula pintada por *Correggio* y la *Deposizione* de *Benedetto Antelami*. Duración: 30–45 min. Acceso gratuito para visitantes individuales.\n*3.* Visitar el *Battistero di Parma*, junto al Duomo, y contemplar sus frescos y esculturas medievales. Continuar al *Museo Diocesano* (visita opcional incluida). Entrada conjunta €12 (≈ $245 MXN), válida durante 2 días. Comprar online o en *Vicolo del Vescovado 3/a*. Duración: 45–60 min.\n*4.* Caminar hasta *San Giovanni Evangelista*, detrás del Duomo. Visitar la iglesia y contemplar la cúpula de *Correggio* y los frescos de *Parmigianino*. Acceso gratuito. Prever 20–30 min y respetar los horarios de culto.",
+      "night": "*1.* Caminar desde *San Giovanni Evangelista* hasta la estación de *Parma* (15–20 min). Llegar con al menos 15 min de anticipación.\n*2.* Tomar el tren *Regionale* de regreso a *Bologna Centrale* (salida prevista 17:27; confirmar horario y posibles modificaciones).\n*3.* Cenar cerca de la estación o del alojamiento y regresar a *HouSmart Milazzo 5* para descansar.",
+      "mobility": "• *HouSmart Milazzo 5 → Bologna Centrale:* Caminar aproximadamente 5–10 min desde el alojamiento hasta la estación.\n• *Plan B de ida:* Tren *Regionale 3904*, salida prevista a las 08:33 y llegada a *Parma* a las 09:31. Directo, 58 min. Tarifa de referencia: €8.50 (≈ $173 MXN). Si se utiliza, ajustar el inicio de la visita a la *Pilotta*.\n• *Estación de Parma → Pilotta:* Caminar unos 10–15 min por *Viale Bottego* y *Strada Garibaldi* hacia *Piazzale della Pace* y el *Complesso Monumentale della Pilotta*.\n• *Pilotta → Piazza Duomo:* Caminar aproximadamente 10 min por el centro histórico.\n• *Duomo → Battistero:* Ambos monumentos están en *Piazza Duomo*, a pocos pasos.\n• *Battistero → San Giovanni Evangelista:* Caminar 2–3 min, rodeando el Duomo.\n• *San Giovanni → Estación de Parma:* Caminar aproximadamente 15–20 min y llegar con al menos 15 min de anticipación.\n• *Plan B de regreso:* Tren *Regionale 17419*, salida prevista a las 17:58 y llegada a *Bologna Centrale* a las 19:10. Directo, 1 h 12 min. Tarifa de referencia: €8.50 (≈ $173 MXN).\n• *Bologna Centrale → HouSmart Milazzo 5:* Caminar aproximadamente 5–10 min desde la estación. Todo el recorrido turístico de Parma se realiza a pie, sin autobuses.\n• *Coste ferroviario estimado de ida y vuelta:* €17.00 (≈ $347 MXN). Horarios y tarifas sujetos a confirmación.",
+      "spend": null,
+      "note": "• *Pilotta:* Abierta de martes a domingo de 09:00 a 19:00 (último acceso 18:00). Entrada conjunta €18, sin franja horaria obligatoria. Las salas norte de la *Galleria Nazionale* abren a las 10:30.\n• *Obras de arte:* Confirmar la exhibición de *La Scapigliata* antes del viaje. El *Compianto su Cristo morto* de *Correggio* estará prestado a Dresde hasta enero de 2027.\n• *Duomo:* Acceso gratuito para visitantes individuales, de 07:45 a 19:20. Visitas suspendidas durante celebraciones religiosas.\n• *Battistero y Museo Diocesano:* Abiertos diariamente de 10:00 a 18:00 (último acceso 17:45). Entrada conjunta €12; compra online o en *Vicolo del Vescovado 3/a*.\n• *San Giovanni Evangelista:* Entrada gratuita. La iglesia cierra al mediodía; programar su visita por la tarde y confirmar el horario de reapertura.\n• *Camera di San Paolo:* Cerrada por restauración desde el 31 de agosto de 2026 hasta la primavera de 2027. No incluir en el recorrido.\n• *Trenes y posibles alteraciones:* Hay modificaciones programadas en la línea *Bologna–Parma* hasta el 5 de diciembre de 2026. Antes del viaje, comprobar en *Trenitalia* si los servicios previstos operan normalmente o tienen cambios de horario, transbordos o autobuses sustitutorios. No considerar garantizados los trenes ni los planes B hasta confirmar los horarios definitivos.\n• *Prioridad del día:* La *Pilotta* es el principal objetivo de la mañana. Si el tren llega tarde, reducir actividades secundarias antes que recortar el *Teatro Farnese* o la *Galleria Nazionale*. Ante alteraciones del regreso, confirmar la última conexión viable hacia Bologna.\n• *Visita gastronómica:* Opcional, únicamente si no reduce el tiempo destinado a la *Pilotta* y los monumentos de *Piazza Duomo*.",
+      "noteLinks": [
+        {
+          "label": "Pilotta · entradas",
+          "url": "https://complessopilotta.it/biglietti/"
+        },
+        {
+          "label": "Pilotta · horarios",
+          "url": "https://complessopilotta.it/orari/"
+        },
+        {
+          "label": "Duomo y Battistero · visita",
+          "url": "https://www.piazzaduomoparma.com/orari-e-permessi-di-visita/"
+        },
+        {
+          "label": "Complesso Monumentale della Pilotta",
+          "url": "https://complessopilotta.it/"
+        }
+      ],
+      "hotel": "hotel-3"
+    },
+    {
+      "n": 7,
+      "date": "2026-12-02",
+      "title": "San Luca, Archiginnasio y Michelangelo",
+      "base": "Bologna",
+      "headerPlaces": [
+        "Santuario della Madonna di San Luca",
+        "Portico di San Luca",
+        "Archiginnasio",
+        "Teatro Anatomico",
+        "Sala dello Stabat Mater",
+        "Basilica di San Domenico",
+        "Arca di San Domenico"
+      ],
+      "places": [
+        "emilia-sanluca",
+        "emilia-anatomico"
+      ],
+      "am": "*1.* Desayunar en el alojamiento y trasladarse al *Santuario della Madonna di San Luca*. Tomar el autobús 20 hasta *Villa Spada* y conectar con la línea 58 hasta *Basilica di San Luca* (aprox. 50–60 min, según conexiones).\n*2.* Visitar el *Santuario della Madonna di San Luca* y recorrer su interior (30–40 min). Acceso gratuito, fuera de celebraciones religiosas.\n*3.* Pasear por un tramo del *Portico di San Luca* y disfrutar de las vistas de *Bologna* (20–30 min). No es necesario recorrer los 666 arcos. Terraza panorámica *San Luca Sky Experience* opcional, de pago.\n*4.* Regresar al centro en los autobuses 58 y 20. Consultar previamente los horarios para evitar esperas prolongadas.",
+      "pm": "*1.* Almorzar en el centro histórico de *Bologna* (45–60 min).\n*2.* Caminar hasta el *Palazzo Poggi* (Via Zamboni 33), sede del Rectorado de la *Università di Bologna*. Visitar el patio histórico y la *Sala Alma Mater*, espacio multimedia gratuito sobre la universidad fundada en 1088. Duración: 20–30 min. Museo completo opcional, no previsto.\n*3.* Caminar hasta el *Palazzo dell’Archiginnasio*, antigua sede de la *Università di Bologna*. Recorrer sus patios y galerías interiores. Acceso general gratuito.\n*4.* Visitar el *Teatro Anatomico* con audioguía (€10 ≈ $204 MXN; duración 40 min). Reservar preferentemente a las 14:30, presentarse 10 min antes y llevar celular con audífonos. Acceder también a la *Sala dello Stabat Mater* si está disponible.\n*5.* Caminar hasta la *Basilica di San Domenico* y contemplar la *Arca di San Domenico*, incluyendo las tres esculturas de *Michelangelo*: *San Petronio*, *San Procolo* y el ángel portacandelabro. Duración: 30–45 min. Acceso gratuito, después de las 15:30.",
+      "night": "*1.* Pasear por el centro histórico de *Bologna* y cenar en alguno de sus restaurantes o trattorias.\n*2.* Regresar caminando a *HouSmart Milazzo 5* (20–25 min desde *Piazza Maggiore*) para descansar.",
+      "mobility": "• *Alojamiento → San Luca:* Caminar 15–20 min hasta la parada *San Pietro*. Tomar autobús 20 dirección *Casalecchio* hasta *Villa Spada* y conectar con el 58 dirección *Basilica di San Luca*. Prever 50–60 min desde el centro, según conexiones.\n• *Portico di San Luca:* Recorrer únicamente un tramo próximo al santuario. Regresar a la parada superior para tomar el autobús.\n• *San Luca → Centro:* Tomar el 58 hasta *Villa Spada* y conectar con el 20 dirección centro. Consultar horarios antes del regreso.\n• *Centro → Palazzo Poggi:* Caminar hasta *Via Zamboni 33* (10–15 min desde *Piazza Maggiore*).\n• *Palazzo Poggi → Archiginnasio:* Caminar 10–15 min hasta *Piazza Galvani 1*.\n• *Archiginnasio → San Domenico:* Caminar aproximadamente 10 min hasta *Piazza San Domenico 13*.\n• *San Domenico → Alojamiento:* Caminar aproximadamente 25 min hasta *HouSmart Milazzo 5*.\n• *Transporte TPER:* Billete urbano €2.30 (≈ $47 MXN), válido 75 min con transbordos. Prever otro billete para el regreso.\n• *Plan B:* Taxi directo a *San Luca* (20–30 min; estimado €25–35 por trayecto). Confirmar precio y recogida.",
+      "spend": null,
+      "note": "• *San Luca:* Santuario abierto diariamente de 07:00 a 18:00 en invierno. Acceso gratuito, salvo actividades opcionales de pago.\n• *Autobús 58:* Consultar horarios de ida y regreso en TPER. Frecuencia limitada y posibles esperas prolongadas.\n• *Palazzo Poggi:* Visita breve prevista hacia las 13:15. La *Sala Alma Mater* tiene acceso gratuito; confirmar disponibilidad del patio y de la sala. El museo completo cierra los miércoles a las 16:00 y no está incluido en el plan.\n• *Archiginnasio:* Reservar *Teatro Anatomico* preferentemente a las 14:30. Entrada con audioguía €10. Presentarse 10 min antes con celular y audífonos.\n• *Sala dello Stabat Mater:* Incluida con la entrada del *Teatro Anatomico*, sujeta a disponibilidad. Biblioteca no abierta a visitas turísticas.\n• *San Domenico:* Abierta los miércoles de 07:00 a 13:00 y de 15:30 a 20:00. Visitar después de las 15:30, fuera del culto.\n• *Michelangelo:* Identificar en la *Arca di San Domenico* las esculturas *San Petronio*, *San Procolo* y el ángel portacandelabro.\n• *Flexibilidad:* Si se retrasa el regreso de *San Luca*, reducir o eliminar la visita breve a *Palazzo Poggi* para respetar la reserva del *Archiginnasio*.\n• *San Luca Express:* Transporte turístico opcional, sujeto a operación. La ruta principal utiliza autobuses TPER.",
+      "noteLinks": [],
+      "hotel": "hotel-3",
+      "mobilityLinks": [
+        {
+          "label": "San Luca · cómo llegar",
+          "url": "https://www.bolognawelcome.com/en/blog/san-luca"
+        },
+        {
+          "label": "TPER · horarios y líneas",
+          "url": "https://www.tper.it/"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2026-12-03",
+      "transportRefs": [
+        "train-bologna-ferrara"
+      ],
+      "title": "Castello Estense y grandes maestros modernos",
+      "base": "Ferrara",
+      "headerPlaces": [
+        "Castello Estense",
+        "Torre dei Leoni",
+        "Palazzo dei Diamanti",
+        "Da Monet a Van Gogh a Kandinsky",
+        "Corso Ercole I d’Este",
+        "Palazzo Schifanoia",
+        "Via delle Volte"
+      ],
+      "places": [
+        "emilia-castello",
+        "emilia-diamanti"
+      ],
+      "am": "*1.* Desayunar en el alojamiento y tomar el tren *Regionale* desde *Bologna Centrale* hasta *Ferrara*. Caminar aproximadamente 20 min hasta el *Castello Estense*.\n*2.* Contemplar el exterior del *Castello Estense*, sus torres y el foso. Comprar o activar la tarjeta turística *MyFE* en la taquilla antes de ingresar.\n*3.* Visitar el interior del *Castello Estense* a partir de las 10:00. Recorrer sus salones, antiguas prisiones y dependencias ducales (1.5 h). Entrada individual €12 (≈ $245 MXN), incluida con *MyFE*.\n*4.* Subir a la *Torre dei Leoni* si está habilitada para disfrutar de las vistas de *Ferrara*. Suplemento individual €2 (≈ $41 MXN), incluido con *MyFE*.\n*5.* Caminar hasta la *Cattedrale di San Giorgio* (5 min) y visitar su interior antes de las 12:00, fuera del culto. Acceso gratuito. La fachada permanece parcialmente cubierta por trabajos de restauración.",
+      "pm": "*1.* Caminar por *Corso Ercole I d’Este* hasta el *Quadrivio degli Angeli* (10–15 min). Contemplar los palacios renacentistas de esta intersección histórica, núcleo de la *Addizione Erculea*, reconocida por la UNESCO.\n*2.* Admirar la fachada del *Palazzo dei Diamanti*, revestida con aproximadamente 8,500 bloques de mármol tallados en punta de diamante. Tomar fotografías desde el *Quadrivio degli Angeli*.\n*3.* Visitar la exposición *Da Monet a Van Gogh a Kandinsky* en *Palazzo dei Diamanti* (12:15 aprox.; duración 1.5–2 h). Entrada €16 (≈ $326 MXN) con audioguía incluida; €14 (≈ $286 MXN) con *MyFE*. Reserva online recomendable, con suplemento de €1.50 (≈ $31 MXN).\n*4.* Almorzar en el centro de *Ferrara* (40–50 min), antes de continuar hacia *Palazzo Schifanoia*.\n*5.* Caminar hasta *Palazzo Schifanoia* (25–30 min) y visitar el *Salone dei Mesi*, con sus frescos renacentistas dedicados al calendario y la astrología (15:15 aprox.; duración 1 h). Entrada individual €12 (≈ $245 MXN), incluida con *MyFE*.\n*6.* Pasear por *Via delle Volte*, recorriendo sus calles medievales y pasajes abovedados (15–20 min). Continuar hacia *Piazza Trento e Trieste* y el entorno de la catedral, según el tiempo disponible.",
+      "night": "*1.* Caminar desde el centro histórico hasta la estación *Ferrara* (30–35 min). Priorizar el regreso previsto a las 18:05 para disfrutar el recorrido sin prisas. Llegar al menos 15 min antes.\n*2.* Tomar el tren *Regionale* hacia *Bologna Centrale*. El servicio de las 17:05 queda como alternativa únicamente si las visitas terminan con suficiente anticipación. Confirmar ambos horarios en *Trenitalia*.\n*3.* Cenar cerca de *Bologna Centrale* o del alojamiento y regresar a *HouSmart Milazzo 5* para descansar.",
+      "mobility": "• *HouSmart Milazzo 5 → Bologna Centrale:* Caminar aproximadamente 5–10 min desde el alojamiento hasta la estación.\n• *Plan B de ida:* *Regionale 3970*, salida prevista a las 09:10 y llegada a *Ferrara* a las 09:41. Directo, 31 min. Tarifa de referencia: €5.50 (≈ $112 MXN). Si se utiliza, ajustar la mañana a la apertura del *Castello Estense* a las 10:00.\n• *Estación de Ferrara → Castello Estense:* Caminar aproximadamente 1.5 km (20 min), llegando con margen antes de la apertura.\n• *Castello → Cattedrale:* Caminar unos 5 min hasta *Piazza della Cattedrale*.\n• *Cattedrale → Palazzo dei Diamanti:* Caminar 10–15 min por *Corso Ercole I d’Este*, pasando por el *Quadrivio degli Angeli*.\n• *Palazzo dei Diamanti → Schifanoia:* Caminar aproximadamente 25–30 min; reservar tiempo para almorzar.\n• *Schifanoia → Via delle Volte:* Caminar aproximadamente 10 min, si queda tiempo después de los museos.\n• *Centro / Via delle Volte → Estación de Ferrara:* Caminar unos 30–35 min, según el punto de partida. Para el tren de las 17:05, salir del centro a más tardar a las 16:15 y llegar a la estación alrededor de las 16:45–16:50.\n• *Alternativa de regreso más temprano:* *Regionale 3981*, salida prevista de *Ferrara* a las 17:05 y llegada a *Bologna Centrale* a las 17:45. Directo, 40 min. Tarifa de referencia: €5.50 (≈ $112 MXN). Tomarlo solo si el recorrido termina con margen suficiente.\n• *Bologna Centrale → HouSmart Milazzo 5:* Caminar aproximadamente 5–10 min desde la estación. En Ferrara el recorrido es a pie; prever varias caminatas de 20–35 min.\n• *Coste ferroviario estimado de ida y vuelta:* €11.00 (≈ $224 MXN), sujeto a horarios, disponibilidad y condiciones del billete regional.",
+      "spend": null,
+      "note": "• *MyFE Card:* Comprar la tarjeta de 2 días por €20 (≈ $408 MXN). Incluye *Castello Estense*, *Torre dei Leoni* y *Palazzo Schifanoia*, además de tarifa reducida en *Palazzo dei Diamanti* (€14). Ahorro estimado de €8 frente a las entradas individuales, si se visita la torre.\n• *Compra MyFE:* Disponible online en *myfecard.it* o en la taquilla del castillo. La compra online puede tardar aproximadamente 60 min en emitirse. Activar en el primer museo y conservar la tarjeta para los demás accesos.\n• *Castello Estense:* Abierto de 10:00 a 18:00; cierra los martes. Entrada individual €12 y subida a la torre €2 adicionales. Reserva anticipada recomendable.\n• *Restauración del castillo:* La *Via Coperta* permanece cerrada por obras iniciadas en septiembre de 2026. El recorrido museístico está previsto abierto hasta el 31 de diciembre. Confirmar disponibilidad de la *Torre dei Leoni*.\n• *Cattedrale di San Giorgio:* Abierta los jueves de 07:30 a 12:00 y de 15:30 a 19:00, fuera del culto. Fachada parcialmente cubierta por andamios.\n• *Palazzo dei Diamanti:* Exposición *Da Monet a Van Gogh a Kandinsky* confirmada del 19/09/2026 al 10/01/2027. Abierta de 09:30 a 19:30; última entrada 18:30. Audioguía incluida. Reserva online con suplemento de €1.50.\n• *Palazzo Schifanoia:* Abierto jueves de 10:00 a 19:00; último acceso 18:00. Entrada individual €12 o incluida con *MyFE*. Reserva gratuita recomendable.\n• *Pinacoteca Nazionale:* Situada en el mismo *Palazzo dei Diamanti* e incluida con *MyFE*. No incorporarla al plan base para evitar reducir el tiempo destinado a *Schifanoia*.\n• *Trenes:* Confirmar en *Trenitalia* los servicios y horarios definitivos de ida y regreso antes de comprar; los cuatro trenes son referencias, no reservas confirmadas. Se prefiere el regreso de las 18:05 para mantener el ritmo de visitas; el de las 17:05 solo conviene si se termina antes y el billete utilizado es válido para ese servicio.\n• *Prioridades y margen de regreso:* Mantener las visitas interiores al *Castello Estense*, *Palazzo dei Diamanti* y *Palazzo Schifanoia*. Si hay retrasos, reducir *Via delle Volte* u otras paradas secundarias antes que sacrificar los museos. Para tomar el tren de las 17:05, salir del centro a más tardar a las 16:15; si las visitas se prolongan, utilizar el de las 18:05 solamente tras confirmar que opera y que el billete es válido.\n• *Guía local:* Opcional para *Castello Estense* o el centro renacentista, siempre que no interfiera con las entradas de *Palazzo dei Diamanti* y *Palazzo Schifanoia*.",
+      "noteLinks": [
+        {
+          "label": "Castello Estense · entradas",
+          "url": "https://www.castelloestense.it/it/informazioni/tariffe-1"
+        },
+        {
+          "label": "Schifanoia · visita",
+          "url": "https://www.museiferrara.it/museo-schifanoia-e-museo-lapidario/visita/"
+        },
+        {
+          "label": "Ferrara · turismo oficial",
+          "url": "https://www.inferrara.it/"
+        }
+      ],
+      "hotel": "hotel-3"
+    },
+    {
+      "n": 9,
+      "date": "2026-12-04",
+      "transportRefs": [
+        "train-bologna-firenze"
+      ],
+      "title": "David, Cupola y Uffizi",
+      "base": "Firenze",
+      "headerPlaces": [
+        "Galleria dell’Accademia",
+        "David di Michelangelo",
+        "Cupola del Brunelleschi",
+        "Piazza del Duomo",
+        "Gallerie degli Uffizi",
+        "Corridoio Vasariano (pendiente de reserva)",
+        "Piazza della Signoria",
+        "Loggia dei Lanzi",
+        "Ponte Vecchio"
+      ],
+      "places": [
+        "italy16-david",
+        "italy16-cupola",
+        "italy16-uffizi"
+      ],
+      "am": "*1.* Tomar el tren de alta velocidad desde *Bologna Centrale* hasta *Firenze Santa Maria Novella* (llegada prevista 07:04). Desayunar cerca de la estación entre las 07:10 y las 07:40.\n*2.* Caminar 13–15 min hasta la *Galleria dell’Accademia*. Presentarse hacia las 08:00 para ingresar en la franja reservada de 08:15–08:30. Entrada €24 (≈ $489 MXN), incluida la reserva.\n*3.* Contemplar el *David di Michelangelo* y las esculturas inacabadas *Prigioni*, además de las principales salas de la galería. Duración: 60–75 min.\n*4.* Caminar 10 min hasta *Piazza del Duomo*. Depositar la mochila o bolsas medianas/grandes en la consigna oficial de *Piazza Duomo 38/r*. Dirigirse a *Porta della Mandorla*, en el lado norte de la catedral, para el acceso reservado a las 10:30.\n*5.* Subir a la *Cupola del Brunelleschi* (463 escalones, sin ascensor). Contemplar los frescos del interior y las vistas panorámicas de *Firenze*. Duración aproximada: 45 min. *Brunelleschi Pass* €30 (≈ $612 MXN); entrada nominativa con horario obligatorio.\n*6.* Visitar brevemente el *Museo dell’Opera del Duomo*, incluido en el pase. Priorizar la *Pietà Bandini* de *Michelangelo*, la *Maddalena penitente* de *Donatello* y las puertas originales del Paraíso de *Lorenzo Ghiberti*. Duración: 40–45 min.\n*7.* Recoger las pertenencias de la consigna y almorzar cerca de *Piazza del Duomo* antes de continuar hacia *Uffizi*. Si hay retrasos, reducir la visita al Museo dell’Opera; el interior de la catedral y el *Battistero di San Giovanni* quedan opcionales.",
+      "pm": "*1.* Caminar 10–15 min hacia *Piazza della Signoria*. Contemplar el *Palazzo Vecchio*, la réplica del *David* y las esculturas de la *Loggia dei Lanzi*. Acceso exterior gratuito.\n*2.* Presentarse en las *Gallerie degli Uffizi* con anticipación para la entrada prevista a las 13:30. Entrada nominativa anticipada €29 (≈ $591 MXN); reserva pendiente.\n*3.* Recorrer *Uffizi* durante 2.5–3 h, priorizando *La nascita di Venere* y *La Primavera* de *Botticelli*, *L’Annunciazione* de *Leonardo da Vinci*, *Tondo Doni* de *Michelangelo*, obras de *Raffaello* y *Medusa* de *Caravaggio*. Seguir el recorrido del museo y verificar las salas disponibles.\n*4.* *Corridoio Vasariano* opcional, únicamente con reserva confirmada para las 16:45. Presentarse a las 16:40 en la *Sala D19* del primer piso de *Uffizi*. Suplemento €20 (≈ $408 MXN) para titulares de entrada a Uffizi, sujeto a disponibilidad. Duración: 45 min. Recorrido de sentido único con salida hacia *Palazzo Pitti*.\n*5.* Si no se consigue entrada al *Corridoio Vasariano*, finalizar la visita a *Uffizi* sin prisas y continuar hacia *Ponte Vecchio*.",
+      "night": "*1.* Pasear por *Ponte Vecchio* y las calles próximas al río *Arno*. Si se realizó el *Corridoio Vasariano*, comenzar desde *Palazzo Pitti* y cruzar el puente en dirección al centro.\n*2.* Cenar temprano en el centro histórico de *Firenze*, dejando margen suficiente para llegar a la estación.\n*3.* Caminar hasta *Firenze Santa Maria Novella* (20–25 min desde *Ponte Vecchio*). Llegar entre las 19:40 y las 19:45.\n*4.* Tomar el tren *Italo* previsto a las 20:05 hacia *Bologna Centrale* (llegada estimada 20:43). Regresar a *HouSmart Milazzo 5* para descansar.",
+      "mobility": "• *HouSmart Milazzo 5 → Bologna Centrale:* Caminar aproximadamente 5–10 min desde el alojamiento; prever margen para la salida temprana.\n• *Plan B de ida:* *Italo* directo, salida a las 06:57 y llegada a *Firenze Santa Maria Novella* a las 07:35 (38 min). Tarifa Smart desde €10.90 (≈ $222 MXN). La entrada prevista a la *Accademia* es a las 08:15–08:30: si se usa este tren, abreviar u omitir el desayuno y dirigirse directamente al museo.\n• *Firenze SMN → Galleria dell’Accademia:* Con el tren principal, desayunar cerca de la estación hacia las 07:10–07:40 y salir a pie alrededor de las 07:45. Caminar 13–15 min por *Via Nazionale / Via Guelfa / Via Ricasoli* hasta el museo, con objetivo de llegada hacia las 08:00.\n• *Accademia → Duomo:* Caminar unos 10 min hasta *Piazza del Duomo*. Para subir a la *Cupola*, utilizar el acceso de *Porta della Mandorla*, lado norte de la catedral; dejar mochilas y bolsas medianas o grandes en la consigna oficial de *Piazza Duomo 38/r*.\n• *Cupola → Museo dell’Opera del Duomo:* Caminar 3–5 min hasta *Piazza del Duomo 9*. Recuperar las pertenencias antes de dirigirse a *Uffizi*.\n• *Duomo → Piazza della Signoria → Uffizi:* Caminar 10–15 min por *Via dei Calzaiuoli*.\n• *Uffizi → Ponte Vecchio:* Caminar aproximadamente 5 min. Si se realiza el *Corridoio Vasariano*, la salida es por *Palazzo Pitti*, en *Oltrarno*: continuar desde allí hacia *Ponte Vecchio* sin regresar al interior de Uffizi.\n• *Ponte Vecchio / centro → Firenze SMN:* Caminar aproximadamente 20–25 min, según el punto de salida. Procurar estar en la estación entre las 19:40 y las 19:45.\n• *Plan B de regreso:* *Frecciarossa 8528*, salida prevista a las 20:36 y llegada a *Bologna Centrale* a las 21:13. Directo, 37 min. Tarifa desde €17.90 (≈ $365 MXN). Verificar disponibilidad: un billete de Italo no sirve automáticamente para Frecciarossa.\n• *Bologna Centrale → HouSmart Milazzo 5:* Caminar aproximadamente 5–10 min. Las visitas de Firenze se realizan a pie; no se requiere autobús ni tranvía.",
+      "spend": null,
+      "note": "• *Reservas prioritarias:* Comprar primero *Accademia* (08:15–08:30), *Cupola* (10:30) y *Uffizi* (13:30). Son horarios previstos, todavía no confirmados.\n• *Accademia:* Entrada €20 + reserva €4 = €24. La franja 08:15–08:30 corresponde al acceso, no a la duración de la visita.\n• *Brunelleschi Pass:* €30. Incluye *Cupola*, *Museo dell’Opera del Duomo*, *Battistero*, *Campanile di Giotto* y *Santa Reparata*. Válido durante 3 días naturales desde la fecha seleccionada; un acceso por monumento.\n• *Cupola:* Subida de 463 escalones sin ascensor. Reserva nominativa obligatoria, con tolerancia máxima de 5 min de retraso. Llevar identificación oficial.\n• *Consigna del Duomo:* Depositar antes de la subida mochilas, maletas y bolsas medianas/grandes en *Piazza Duomo 38/r*. Recuperar las pertenencias antes de dirigirse a *Uffizi*. No utilizar trípodes ni palos para selfies dentro de los monumentos.\n• *Museo dell’Opera:* Visita selectiva de 40–45 min, priorizando *Pietà Bandini*, *Maddalena penitente* y *Porta del Paradiso*. Entrada incluida en el pase, sin costo adicional.\n• *Cattedrale y Battistero:* Interiores opcionales según tiempo disponible. La catedral tiene acceso gratuito; los mosaicos de la bóveda del *Battistero* permanecen ocultos por restauración.\n• *Uffizi:* Entrada anticipada €29. Reservar al menos 2.5–3 h para las colecciones principales. Confirmar posibles cierres de salas y préstamos de obras.\n• *Corridoio Vasariano:* Abierto habitualmente de martes a domingo, con última franja a las 16:45. Reserva obligatoria. Suplemento €20 sobre la entrada individual de Uffizi, sujeto a cupo; no garantizar compra espontánea. Existe entrada combinada anticipada *Uffizi + Corridoio* de €47, cuyo acceso a Uffizi se programa 2 h antes del corredor.\n• *Corridoio y equipaje:* No permite mochilas voluminosas. La salida es por *Palazzo Pitti* y no se puede regresar al interior de Uffizi; evitar utilizar su guardarropa.\n• *Presupuesto de entradas:* Accademia €24 + Brunelleschi Pass €30 + Uffizi €29 = €83 (≈ $1,692 MXN). Con suplemento independiente del Corridoio: €103 (≈ $2,100 MXN). Si se utiliza la entrada combinada anticipada Uffizi + Corridoio: €101 en total.\n• *Trenes y puntualidad:* Confirmar horarios y disponibilidad de los cuatro servicios antes de comprar. Priorizar la ida de las 06:27 para llegar a tiempo a *Accademia* (08:15–08:30). Con el Plan B de las 06:57, abreviar u omitir el desayuno y dirigirse directamente al museo; no asumir tolerancia por retrasos ferroviarios. Las tarifas de *Frecciarossa* e *Italo* tienen condiciones propias y sus billetes no son intercambiables.\n• *Regreso:* Priorizar el tren de las 20:05 y estar en *Firenze Santa Maria Novella* a las 19:40–19:45. El tren de las 20:36 es una alternativa sujeta a disponibilidad y billete válido. Si se realiza el *Corridoio Vasariano*, salir hacia la estación desde *Palazzo Pitti / Ponte Vecchio*, sin regresar a *Uffizi*.\n• *Visita guiada:* Considerarla para *Accademia* o *Uffizi* sólo si incluye los accesos y respeta la reserva de la *Cupola*. Priorizar las entradas individuales.",
+      "noteLinks": [
+        {
+          "label": "Cupola · visita",
+          "url": "https://duomo.firenze.it/en/visit/plan-your-visit"
+        }
+      ],
+      "hotel": "hotel-3"
+    },
+    {
+      "n": 10,
+      "date": "2026-12-05",
+      "transportRefs": [
+        "train-bologna-modena"
+      ],
+      "title": "románico, mercado y Museo Enzo Ferrari",
+      "base": "Modena",
+      "headerPlaces": [
+        "Museo Enzo Ferrari",
+        "Mercato Albinelli",
+        "Piazza Grande",
+        "Duomo di Modena",
+        "Torre Ghirlandina",
+        "Palazzo Comunale",
+        "Acetaia Marchi (sólo con confirmación)"
+      ],
+      "places": [
+        "emilia-modena",
+        "emilia-albinelli",
+        "italy16-ferrari"
+      ],
+      "am": "*1.* Desayunar en *Bologna* y tomar el tren *Regionale* desde *Bologna Centrale* hasta *Modena*. Caminar 8–10 min desde la estación hasta el *Museo Enzo Ferrari*.\n*2.* Visitar el *Museo Enzo Ferrari* desde las 09:30. Recorrer la exposición de automóviles, la casa natal y el antiguo taller familiar de *Enzo Ferrari*. Duración: 1.5–2 h. Entrada €27 (≈ $551 MXN); compra anticipada recomendable.\n*3.* Visitar la exposición temporal *The Greatest Hits – Music Legends and their Ferraris*, incluida en el museo. Buscar los vehículos de *Eric Clapton*, *J Balvin* y otros músicos. Exposición programada hasta febrero de 2027.\n*4.* Caminar 15–20 min hacia el centro histórico y llegar a *Piazza Grande*, conjunto Patrimonio Mundial de la UNESCO. Contemplar la fachada del *Duomo di Modena*, sus relieves de *Wiligelmo* y la *Torre Ghirlandina*.\n*5.* Visitar el interior del *Duomo di Modena*, incluyendo la cripta de *San Geminiano* y las esculturas de *Guido Mazzoni*. Duración: 30–40 min. Acceso principal gratuito, fuera del culto. Presbiterio elevado y sacristía opcionales (€3 ≈ $61 MXN).",
+      "pm": "*1.* Caminar 3–5 min hasta el *Mercato Albinelli* (Via Luigi Albinelli 13). Recorrer sus puestos de productos regionales y almorzar. Buscar *Parmigiano Reggiano*, *Aceto Balsamico Tradizionale di Modena*, *tigelle* y *gnocco fritto*. Acceso gratuito; compras y comida aparte. Prever 45–60 min.\n*2.* Regresar a *Piazza Grande* y visitar las *Sale Storiche del Palazzo Comunale* hacia las 13:30. Recorrer las salas históricas y contemplar la célebre *Secchia Rapita*. Duración: 30 min. Entrada gratuita los sábados, con reserva obligatoria.\n*3.* Subir a la *Torre Ghirlandina* en la franja prevista de las 14:15. Recorrer sus salas históricas hasta la *Sala dei Torresani* (aprox. 200 escalones). Entrada €6 (≈ $122 MXN); reserva horaria obligatoria. No se permite acceder a la cima.\n*4.* Visitar opcionalmente los *Musei del Duomo* (15:15 aprox.) para conocer las esculturas originales y la historia del conjunto UNESCO. Duración: 30–40 min. Entrada €6 (≈ $122 MXN), con acceso incluido al presbiterio y sacristía del Duomo.\n*5.* Disfrutar del tiempo restante en *Piazza Grande* y las calles del centro antes de regresar a la estación. La *Galleria Estense* queda como alternativa al museo automovilístico, no como visita adicional obligatoria.",
+      "night": "*1.* Caminar desde *Piazza Grande* hasta la estación *Modena* (20–25 min). Llegar con al menos 15 min de anticipación.\n*2.* Tomar el tren *Regionale* previsto a las 17:52 hacia *Bologna Centrale*. Confirmar el horario definitivo.\n*3.* Cenar cerca del alojamiento y regresar a *HouSmart Milazzo 5* para descansar.",
+      "mobility": "• *HouSmart Milazzo 5 → Bologna Centrale:* Caminar aproximadamente 5–10 min desde el alojamiento hasta la estación.\n• *Plan B de ida:* *Regionale 2462*, salida prevista de *Bologna Centrale* a las 07:50 y llegada a *Modena* a las 08:21. Directo, 31 min. Tarifa de referencia: €4.50 (≈ $92 MXN).\n• *Estación de Modena → Museo Enzo Ferrari:* Desayunar cerca de la estación si queda tiempo y caminar aproximadamente 8–10 min hasta *Via Paolo Ferrari 85*. El museo abre a las 09:30 según el calendario de referencia.\n• *Museo Enzo Ferrari → Piazza Grande:* Caminar aproximadamente 15–20 min hacia el centro histórico.\n• *Duomo → Mercato Albinelli:* Caminar 3–5 min hasta *Via Luigi Albinelli 13*.\n• *Mercato Albinelli → Palazzo Comunale:* Caminar unos 5 min hasta *Piazza Grande 16*.\n• *Palazzo Comunale → Torre Ghirlandina:* Los dos monumentos están en el mismo conjunto, a pocos pasos.\n• *Ghirlandina → Musei del Duomo:* Caminar 2–3 min hasta *Via Lanfranco* (visita opcional).\n• *Centro → Estación de Modena:* Caminar unos 20–25 min. Llegar con al menos 15 min de anticipación.\n• *Plan B de regreso:* Consultar el siguiente *Regionale* disponible en *Trenitalia*. No asumir un horario alternativo sin confirmación ni pagar *InterCity* o *Frecciarossa* solo para ahorrar unos minutos.\n• *Alternativa excepcional · Acetaia Marchi:* Solo si la visita individual del 5 de diciembre está confirmada por escrito, tomar taxi hasta *Strada Casette 3*, esquina *Strada Fossa Monda Nord 126*, y después continuar en taxi al *Museo Enzo Ferrari*. Traslados estimados de 12–20 min y €15–20 (≈ $306–$408 MXN) por trayecto; reorganizar la mañana según el horario acordado.\n• *Bologna Centrale → HouSmart Milazzo 5:* Caminar aproximadamente 5–10 min. El recorrido principal por Modena es a pie, sin necesidad de autobuses ni taxis.\n• *Coste ferroviario estimado de ida y vuelta:* €9.00 (≈ $184 MXN), sin taxis opcionales para Acetaia Marchi. Horarios y tarifas sujetos a confirmación.",
+      "spend": null,
+      "note": "• *Museo Enzo Ferrari:* Abierto de 09:30 a 18:00 en diciembre. Entrada individual €27; compra anticipada recomendable. La entrada no incluye el museo de *Maranello*.\n• *The Greatest Hits:* Exposición temporal confirmada hasta el 16/02/2027. Incluida en la visita al museo automovilístico.\n• *Mercato Albinelli:* Los sábados de invierno abre de 07:00 a 19:00, según el calendario publicado. Los restaurantes sirven almuerzos generalmente de 12:00 a 15:00.\n• *Duomo:* Visitas turísticas de lunes a sábado entre las 10:00 y las 17:00, salvo celebraciones. Acceso principal gratuito. Presbiterio y sacristía €3 adicionales.\n• *Palazzo Comunale:* Los sábados abre de 13:00 a 15:00, con entrada gratuita y reserva obligatoria. Horario objetivo 13:30, pendiente de confirmación. La visita dura 30 min.\n• *Torre Ghirlandina:* Abierta de 09:30 a 18:00 en invierno. Reservar preferentemente la franja de las 14:15 (€6). Aproximadamente 200 escalones; acceso permitido hasta la *Sala dei Torresani*, no hasta la cima.\n• *Musei del Duomo:* Abiertos los sábados de 10:00 a 14:00 y de 15:00 a 19:00. Entrada €6, incluye el presbiterio y la sacristía. Visita opcional si se mantiene el horario previsto.\n• *Acetaia Marchi:* No confirmada para el sábado 05/12. El productor limita las visitas ordinarias de sábado a abril–octubre y establece un mínimo de 2 personas. Solicitar autorización excepcional para una persona, horario y precio en *tours@acetaiamarchi.com*. Sólo incorporarla si existe confirmación escrita y se reorganizan las reservas del día.\n• *Acetaia Comunale:* Cerrada por restauración desde el 19/10/2026, sin fecha de reapertura confirmada. No incluirla como alternativa.\n• *Galleria Estense:* Alternativa cultural al *Museo Enzo Ferrari* (€8 ≈ $163 MXN). Abierta los sábados de 08:30 a 19:15. No añadirla al recorrido principal.\n• *Reservas prioritarias:* Confirmar primero *Palazzo Comunale* (13:30) y *Torre Ghirlandina* (14:15). Son horarios propuestos, no reservas realizadas.\n• *Trenes y regreso:* Los trenes propuestos de ida y regreso son referencias pendientes de confirmación en *Trenitalia*. Priorizar el regreso de las 17:52; si cambia o se cancela, consultar el siguiente *Regionale* disponible y sus condiciones antes de comprar otro billete. Llegar a la estación con al menos 15 min de anticipación.\n• *Acetaia Marchi y prioridades:* Incorporar la visita únicamente si se confirma por escrito para una persona el sábado 5 de diciembre, con hora y precio definidos. El desvío requiere taxis y reorganizar la mañana; no poner en riesgo las reservas prioritarias de *Palazzo Comunale* (13:30) y *Torre Ghirlandina* (14:15).\n• *Tour gastronómico:* Alternativa opcional con transporte por verificar; no debe desplazar el programa principal ni las reservas del día.",
+      "noteLinks": [
+        {
+          "label": "Museo Enzo Ferrari · entradas",
+          "url": "https://www.ferrari.com/en-EN/museums/enzo-ferrari-modena"
+        },
+        {
+          "label": "Modena · visitas y reservas",
+          "url": "https://www.visitmodena.it/"
+        }
+      ],
+      "hotel": "hotel-3"
+    },
+    {
+      "n": 11,
+      "date": "2026-12-06",
+      "title": "pintura, escultura y patrimonio de Bologna",
+      "base": "Bologna",
+      "headerPlaces": [
+        "Pinacoteca Nazionale di Bologna",
+        "Santuario di Santa Maria della Vita",
+        "Compianto sul Cristo morto",
+        "Museo Civico Archeologico",
+        "centro storico"
+      ],
+      "places": [
+        "italy16-compianto",
+        "emilia-porticos"
+      ],
+      "am": "*1.* Desayunar en el alojamiento y caminar hasta la *Pinacoteca Nazionale di Bologna* (20–25 min). Ingresar a partir de las 09:00. Entrada gratuita por ser el primer domingo del mes.\n*2.* Recorrer la *Pinacoteca Nazionale* (aprox. 2 h), priorizando la *Estasi di Santa Cecilia* de *Raffaello*, el *Polittico* de *Giotto*, la *Strage degli innocenti* de *Guido Reni* y las obras de los *Carracci*. Confirmar su exhibición en las salas disponibles.\n*3.* Caminar 5–10 min hasta el *Oratorio di Santa Cecilia* (Via Zamboni 15). Contemplar el ciclo de frescos renacentistas de *Francesco Francia*, *Lorenzo Costa* y *Amico Aspertini*. Duración: 20–30 min. Entrada gratuita.\n*4.* Caminar 10–15 min hasta *Santa Maria della Vita* (Via Clavature 8–10). Contemplar el *Compianto sul Cristo morto* de *Niccolò dell’Arca* y recorrer el *Oratorio dei Battuti*, incluyendo el *Transito della Vergine* de *Alfonso Lombardi*. Duración: 45–60 min. Entrada €8 (≈ $163 MXN), con audioguía incluida.",
+      "pm": "*1.* Almorzar en el centro histórico de *Bologna* (45–60 min).\n*2.* Recorrer a pie los *Portici di Bologna*, Patrimonio Mundial de la UNESCO. Seguir la ruta *Piazza Maggiore* → *Portico del Pavaglione* → *Quadrilatero* → *Piazza Santo Stefano*. Duración: 1–1.5 h. Recorrido gratuito, sin reservas.\n*3.* Caminar hacia *Strada Maggiore* y recorrer la *Antica Fiera di Santa Lucia*, mercado navideño bajo el *Portico dei Servi*, junto a *Santa Maria dei Servi*. Visitar sus puestos de artesanías, adornos y dulces tradicionales. Acceso gratuito.\n*4.* Disfrutar del ambiente navideño de *Bologna* al anochecer y pasear por las calles iluminadas del centro histórico.",
+      "night": "*1.* Disfrutar de la última cena del viaje en una trattoria tradicional de *Bologna*.\n*2.* Regresar caminando a *HouSmart Milazzo 5* y preparar el equipaje, documentos y traslado al aeropuerto para el vuelo del día siguiente.",
+      "mobility": "• *Alojamiento → Pinacoteca:* Caminar 20–25 min desde *HouSmart Milazzo 5* hasta *Via delle Belle Arti 56*.\n• *Pinacoteca → Oratorio di Santa Cecilia:* Caminar 5–10 min hasta *Via Zamboni 15*.\n• *Oratorio → Santa Maria della Vita:* Caminar 10–15 min hasta *Via Clavature 8–10*.\n• *Ruta Portici UNESCO:* Recorrer a pie *Piazza Maggiore* → *Portico del Pavaglione* → *Quadrilatero* → *Piazza Santo Stefano* (1–1.5 h, incluyendo paradas).\n• *Piazza Santo Stefano → Fiera di Santa Lucia:* Caminar 5–10 min hasta *Strada Maggiore*, junto a *Santa Maria dei Servi*.\n• *Fiera → Alojamiento:* Caminar aproximadamente 25–30 min hasta *HouSmart Milazzo 5*.\n• *Transporte local:* Jornada completamente peatonal, sin necesidad de autobuses.",
+      "spend": null,
+      "note": "• *Pinacoteca Nazionale:* Abierta los domingos de 09:00 a 19:00 (último acceso 18:30). Entrada gratuita el 06/12 por la iniciativa *Domenica al Museo*. Tarifa ordinaria €12. Prever mayor afluencia.\n• *Obras destacadas:* Confirmar posibles préstamos o cierres de salas. Verificar el regreso del *Polittico* de *Giotto*, prestado temporalmente a Rumanía.\n• *Oratorio di Santa Cecilia:* Entrada gratuita. Horario dominical de referencia: 10:00–13:00 y 14:00–18:00. Visitar por la mañana aprovechando su cercanía a la Pinacoteca.\n• *Santa Maria della Vita:* Abierta de 10:00 a 18:30 (último ingreso 18:00). Entrada €8; preventa online €1 adicional. Incluye *Compianto*, *Oratorio dei Battuti* y audioguía para celular. Llevar audífonos.\n• *Portici UNESCO:* Recorrido gratuito y sin reservas. Aprovechar para completar visitas pendientes del centro histórico, sin añadir museos adicionales.\n• *Antica Fiera di Santa Lucia:* Mercado navideño anunciado del 06/11 al 27/12/2026, aproximadamente de 09:00 a 20:00. Ubicado bajo el *Portico dei Servi*.\n• *Villaggio di Natale Francese:* Mercado navideño adicional en *Piazza Minghetti*, previsto del 5 al 8 de diciembre. Opcional si queda tiempo.\n• *Última noche:* Preparar equipaje, documentación y traslado al aeropuerto. Confirmar el horario de salida del vuelo del día siguiente.\n• *Prioridades:* Mantener *Pinacoteca Nazionale*, *Santa Maria della Vita*, el recorrido por los *Portici UNESCO* y la *Fiera di Santa Lucia*. Reducir las paradas secundarias si se prolongan las visitas de la mañana.",
+      "noteLinks": [
+        {
+          "label": "Pinacoteca Nazionale · visita",
+          "url": "https://www.bolognawelcome.com/it/luoghi/musei-e-gallerie-darte/pinacoteca-nazionale-di-bologna"
+        },
+        {
+          "label": "Santa Maria della Vita · entrada",
+          "url": "https://genusbononiae.it/santa-maria-della-vita-complesso-monumentale/"
+        },
+        {
+          "label": "Museo Civico Archeologico",
+          "url": "https://www.museibologna.it/archeologico/"
+        }
+      ],
+      "hotel": "hotel-3"
+    },
+    {
+      "n": 12,
+      "date": "2026-12-07",
+      "transportRefs": [
+        "flight-international"
+      ],
+      "title": "Bologna → Madrid → CDMX",
+      "base": "Regreso",
+      "headerPlaces": [
+        "Bologna Centrale",
+        "Aeroporto di Bologna Guglielmo Marconi",
+        "MAD",
+        "MEX"
+      ],
+      "places": [],
+      "am": "*1.* Desayunar en *HouSmart Milazzo 5*, revisar el apartamento, recoger todas las pertenencias y realizar el check-out.\n*2.* Salir del alojamiento hacia las 08:30 y caminar 5–10 min hasta *Bologna Centrale*. Dirigirse al acceso del *Marconi Express* en el vestíbulo de *Via de’ Carracci*.\n*3.* Tomar el tren automático *Marconi Express* hacia el *Aeroporto Guglielmo Marconi (BLQ)*. Trayecto de 7–8 min; billete €12.80 (≈ $261 MXN). Se puede pagar directamente con tarjeta contactless en los torniquetes.\n*4.* Seguir el pasillo cubierto hasta la terminal, en la planta de salidas. Objetivo de llegada: 09:15–09:25, aproximadamente 3 h antes del vuelo.\n*5.* Realizar los trámites de Iberia, pasar el control de seguridad y localizar la puerta de embarque. Desayunar algo adicional o comprar comida para el viaje si queda tiempo.",
+      "pm": "*1.* Tomar el vuelo *Bologna (BLQ) → Madrid (MAD)*, salida prevista a las 12:25. Operado por *Air Nostrum* para *Iberia*; confirmar número de vuelo y horario definitivo.\n*2.* Realizar la conexión en el *Aeropuerto Adolfo Suárez Madrid-Barajas*. Tiempo previsto: 1 h 55 min. Seguir las señales de conexiones hacia *T4S*, utilizar el tren automático interno y pasar el control de pasaportes de salida del espacio Schengen.\n*3.* Dirigirse directamente a la puerta asignada al vuelo *Iberia Madrid → Ciudad de México (MEX)*. Confirmar terminal y horario en las pantallas del aeropuerto. No salir a la zona pública ni recoger equipaje si ambos vuelos están emitidos en una misma reserva y el equipaje está documentado hasta México.\n*4.* Embarcar en el vuelo transatlántico hacia *CDMX*.",
+      "night": "*1.* Llegar al *Aeropuerto Internacional de la Ciudad de México (MEX)* a las 22:10 del lunes 7 de diciembre, según el itinerario aéreo de referencia.\n*2.* Pasar el control migratorio, recoger equipaje documentado si corresponde y realizar los trámites aduaneros.\n*3.* Trasladarse a casa. Fin del viaje por *Milano*, *Emilia-Romagna* y *Firenze*.",
+      "mobility": "• *Alojamiento → Bologna Centrale:* Caminar 5–10 min desde *HouSmart Milazzo 5* hasta el acceso del *Marconi Express* por *Via de’ Carracci*.\n• *Bologna Centrale → Aeropuerto BLQ:* Tomar *Marconi Express* (7–8 min de recorrido). Servicio habitual de 05:40 a 00:00, con frecuencias variables de 7–15 min.\n• *Estación aeroportuaria → Terminal:* Seguir el pasillo cubierto hasta la planta de salidas (5–10 min).\n• *Tiempo total previsto:* Reservar 45–60 min desde el alojamiento hasta la terminal, incluyendo caminatas y espera.\n• *Plan B:* Taxi directo desde *HouSmart Milazzo 5* hasta BLQ (20–30 min; estimado €25–35 ≈ $510–$714 MXN, sujeto a tráfico y suplementos).\n• *Conexión en Madrid:* Verificar la puerta de llegada de *IB1238*. Normalmente la conexión Schengen → México requiere pasar de *T4 a T4S* con el tren automático y control de pasaportes de salida; algunos vuelos Schengen pueden llegar a T4S. Seguir las señales y pantallas de conexiones, sin abandonar la zona de tránsito.\n• *Aeropuerto MEX → Casa:* Traslado por cuenta propia según la terminal de llegada.",
+      "spend": null,
+      "note": "• *Vuelo:* Itinerario previsto BLQ 12:25 → MAD → MEX 22:10. Confirmar vuelos, terminales y horarios en la reserva definitiva de Iberia.\n• *Marconi Express:* Billete sencillo €12.80. Acceso en *Bologna Centrale* por el vestíbulo de *Via de’ Carracci*. Pago con tarjeta contactless o billete digital.\n• *Servicio aeroportuario:* Consultar posibles interrupciones del *Marconi Express* la víspera. En caso de suspensión, utilizar el transporte sustitutorio oficial si mantiene el margen previsto o tomar taxi.\n• *Llegada a BLQ:* Objetivo 09:15–09:25, aproximadamente 3 h antes de la salida. Evitar retrasar el check-out.\n• *Check-in:* Realizar check-in online de Iberia cuando esté disponible. Descargar ambas tarjetas de embarque y verificar la asignación de asientos.\n• *Conexión en Madrid:* Escala prevista de 1 h 55 min. La conexión habitual es T4 → T4S mediante tren automático y control de pasaportes, aunque la llegada de IB1238 podría asignarse a T4S. Consultar terminal y puerta efectivas. No programar actividades ni compras durante la conexión.\n• *Reserva aérea:* Priorizar ambos vuelos en un solo billete para contar con protección de conexión. Si son reservas separadas, la escala resulta arriesgada y requiere reconsideración.\n• *Equipaje:* Confirmar límites de cabina de Iberia y Air Nostrum. Llevar pasaporte, documentos, medicamentos y objetos de valor en el equipaje personal.\n• *Fin del viaje:* 7 de diciembre de 2026. Total: 12 días naturales y 8 días laborales. Los traslados aeroportuarios no forman parte del total de trenes interurbanos.\n• *Tarifas Iberia:* Las penalizaciones de cambios, diferencia de tarifa, condiciones de reembolso y precio de la maleta documentada dependen de la reserva concreta. Revisar el detalle de Básica, Óptima y Confort antes de comprar; ninguna cifra adicional está confirmada.",
+      "noteLinks": [],
+      "mobilityLinks": [
+        {
+          "label": "Marconi Express · tarifas y servicio",
+          "url": "https://www.marconiexpress.it/biglietti/tariffe-e-validita/"
+        },
+        {
+          "label": "Marconi Express",
+          "url": "https://www.marconiexpress.it/"
+        }
+      ]
+    }
+  ],
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Cenacolo Vinciano",
+          "description": "Reserva obligatoria; revisar entradas oficiales adicionales o visita guiada legítima con acceso si se agota la individual.",
+          "links": [
+            {
+              "label": "Cenacolo · reserva oficial",
+              "url": "https://cenacolovinciano.org/"
+            },
+            {
+              "label": "Cenacolo Vinciano · entradas septiembre–diciembre 2026",
+              "url": "https://cenacolovinciano.org/en/news-ed-eventi/september-december-2026-tickets-will-go-on-sale/"
+            }
+          ]
+        },
+        {
+          "title": "Galleria dell’Accademia",
+          "description": "Horario elegido 08:15–08:30 · €24.00 (≈ $489 MXN); reservar/verificar disponibilidad.",
+          "links": [
+            {
+              "label": "Accademia · entradas",
+              "url": "https://www.galleriaaccademiafirenze.it/en/tickets/"
+            },
+            {
+              "label": "Galleria dell’Accademia · visita",
+              "url": "https://www.galleriaaccademiafirenze.it/en/visit/"
+            }
+          ]
+        },
+        {
+          "title": "Cupola del Brunelleschi",
+          "description": "Acceso elegido 10:30 · duración aprox. 45 min · Brunelleschi Pass €30 (≈ $612 MXN) · pendiente de compra. Llegar al complejo hacia las 10:00 para el depósito obligatorio de mochila/bolsas; llevar identificación y acceder por Porta della Mandorla.",
+          "links": [
+            {
+              "label": "Brunelleschi Pass · acceso y equipaje",
+              "url": "https://duomo.firenze.it/it/720/brunelleschi-pass"
+            }
+          ]
+        },
+        {
+          "title": "Gallerie degli Uffizi",
+          "description": "Horario elegido 13:30 · entrada nominativa que debe comprarse antes de la visita · €29.00 (≈ $591 MXN).",
+          "links": [
+            {
+              "label": "Uffizi · compra oficial",
+              "url": "https://tickets.uffizi.it/"
+            },
+            {
+              "label": "Gallerie degli Uffizi",
+              "url": "https://www.uffizi.it/gli-uffizi"
+            }
+          ]
+        },
+        {
+          "title": "Corridoio Vasariano",
+          "description": "Visita opcional. Suplemento independiente · horario objetivo 16:45 · €20.00 (≈ $408 MXN) · pendiente de reserva.",
+          "links": [
+            {
+              "label": "Corridoio · reglas del suplemento",
+              "url": "https://www.uffizi.it/en/notices/rules-for-accessing-the-vasari-corridor"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Acetaia Marchi",
+          "description": "Experiencia opcional: solicitar confirmación por escrito de apertura, horario, admisión individual y precio para el 5 de diciembre. Las condiciones publicadas limitan los sábados a abril–octubre y anuncian mínimo dos personas; el plan principal es Museo Enzo Ferrari y centro histórico.",
+          "links": [
+            {
+              "label": "Acetaia Marchi · condiciones",
+              "url": "https://www.acetaiamarchi.com/en/experiences/"
+            },
+            {
+              "label": "VisitModena · Acetaia Marchi",
+              "url": "https://www.visitmodena.it/en/discover-modena/land-of-flavors/the-vinegar-factories/acetaia-marchi"
+            }
+          ]
+        },
+        {
+          "title": "Torre dell’Orologio, Bologna",
+          "description": "Reservar como mirador sustituto de Torre degli Asinelli."
+        },
+        {
+          "title": "Teatro Anatomico del Archiginnasio",
+          "description": "Reservar para el miércoles 2 de diciembre.",
+          "links": [
+            {
+              "label": "Archiginnasio · reserva oficial",
+              "url": "https://www.bolognawelcome.com/en/experiences/331861/Palazzo-dell-Archiginnasio-and-Teatro-Anatomico---Guided-or-audio-guided-tour"
+            },
+            {
+              "label": "Archiginnasio · horarios",
+              "url": "https://www.archiginnasio.it/palazzo-dell-archiginnasio"
+            }
+          ]
+        },
+        {
+          "title": "Billete de 5 monumentos de Ravenna",
+          "description": "Reservar franjas de acceso y confirmar calendario invernal.",
+          "links": [
+            {
+              "label": "Mosaicos · compra oficial",
+              "url": "https://ticketoffice.ravennamosaici.it/METOperaRavennaWeb/home.jsp?L=it"
+            },
+            {
+              "label": "Ravenna · billete de mosaicos",
+              "url": "https://www.ravennamosaici.it/"
+            },
+            {
+              "label": "Ravenna · calendario publicado del Battistero Neoniano",
+              "url": "https://www.turismo.ra.it/cultura-e-storia/edifici-religiosi/battistero-neoniano"
+            }
+          ]
+        },
+        {
+          "title": "Palazzo dei Diamanti",
+          "description": "Entrada a Da Monet a Van Gogh a Kandinsky. Nuovi sguardi sulla natura e la modernità.",
+          "links": [
+            {
+              "label": "Palazzo dei Diamanti · reserva",
+              "url": "https://www.palazzodiamanti.it/contenuti-mostre/organizza-la-tua-visita/"
+            },
+            {
+              "label": "Palazzo dei Diamanti · exposición 2026–2027",
+              "url": "https://www.palazzodiamanti.it/mostre/da-monet-a-van-gogh-a-kandinsky/"
+            }
+          ]
+        },
+        {
+          "title": "Trenes de alta velocidad",
+          "description": "Tarifas cotizadas para las fechas del viaje. Confirmar disponibilidad y condiciones antes de comprar."
+        }
+      ]
+    ]
+  ],
+  "exchangeRates": {
+    "EUR": 20.6451,
+    "USD": 18.42
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-10-20",
+    "baseCurrency": "MXN",
+    "description": "Pesos mexicanos por unidad de divisa. Tasas de referencia de planeación, no tasas de compra.",
+    "sources": {
+      "EUR": "https://www.tasamira.com/mx/tipo-de-cambio/",
+      "USD": "https://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CF102&locale=es&sector=19"
+    }
+  },
+  "expenses": [
+    {
+      "id": "lodging-moxy-malpensa",
+      "category": "lodging",
+      "concept": "Moxy Milano Malpensa Airport · 1 noche",
+      "hotelId": "hotel-1",
+      "date": "2026-11-26",
+      "nights": 1,
+      "cost": {
+        "amount": 127,
+        "currency": "EUR"
+      },
+      "status": "quoted"
+    },
+    {
+      "id": "lodging-milano-aosta",
+      "category": "lodging",
+      "concept": "B&B Hotel Milano Aosta · 2 noches",
+      "hotelId": "hotel-2",
+      "date": "2026-11-27",
+      "nights": 2,
+      "cost": {
+        "amount": 283,
+        "currency": "EUR"
+      },
+      "status": "quoted"
+    },
+    {
+      "id": "lodging-housmart-milazzo",
+      "category": "lodging",
+      "concept": "HouSmart Milazzo 5 · 8 noches",
+      "hotelId": "hotel-3",
+      "date": "2026-11-29",
+      "nights": 8,
+      "cost": {
+        "amount": 13881,
+        "currency": "MXN"
+      },
+      "status": "quoted"
+    },
+    {
+      "id": "firenze-accademia",
+      "category": "activities",
+      "concept": "Firenze · Accademia",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 24,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio de referencia del itinerario; sin compra"
+    },
+    {
+      "id": "firenze-cupola",
+      "category": "activities",
+      "concept": "Firenze · Brunelleschi Pass",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 30,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio de referencia del itinerario; sin compra"
+    },
+    {
+      "id": "firenze-uffizi",
+      "category": "activities",
+      "concept": "Firenze · Uffizi",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 29,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio de referencia del itinerario; sin compra"
+    },
+    {
+      "id": "ravenna-mosaicos",
+      "category": "activities",
+      "concept": "Ravenna · billete combinado monumentos",
+      "date": "2026-11-30",
+      "cost": {
+        "amount": 14.5,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "parma-pilotta",
+      "category": "activities",
+      "concept": "Parma · Complesso della Pilotta",
+      "date": "2026-12-01",
+      "cost": {
+        "amount": 18,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "parma-battistero",
+      "category": "activities",
+      "concept": "Parma · Battistero y Museo Diocesano",
+      "date": "2026-12-01",
+      "cost": {
+        "amount": 12,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "ferrara-myfe",
+      "category": "activities",
+      "concept": "Ferrara · MyFE Card",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 20,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "modena-ferrari",
+      "category": "activities",
+      "concept": "Modena · Museo Enzo Ferrari",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 27,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "modena-ghirlandina",
+      "category": "activities",
+      "concept": "Modena · Torre Ghirlandina",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 6,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Precio previsto del itinerario; confirmar"
+    },
+    {
+      "id": "bologna-marconi",
+      "category": "other",
+      "concept": "Bologna · Marconi Express al aeropuerto",
+      "date": "2026-12-07",
+      "cost": {
+        "amount": 12.8,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Trayecto al aeropuerto, no incluido en vuelos"
+    },
+    {
+      "id": "food-day-01",
+      "category": "food",
+      "concept": "Alimentación · día 1",
+      "date": "2026-11-26",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-02",
+      "category": "food",
+      "concept": "Alimentación · día 2",
+      "date": "2026-11-27",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-03",
+      "category": "food",
+      "concept": "Alimentación · día 3",
+      "date": "2026-11-28",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-04",
+      "category": "food",
+      "concept": "Alimentación · día 4",
+      "date": "2026-11-29",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-05",
+      "category": "food",
+      "concept": "Alimentación · día 5",
+      "date": "2026-11-30",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-06",
+      "category": "food",
+      "concept": "Alimentación · día 6",
+      "date": "2026-12-01",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-07",
+      "category": "food",
+      "concept": "Alimentación · día 7",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-08",
+      "category": "food",
+      "concept": "Alimentación · día 8",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-09",
+      "category": "food",
+      "concept": "Alimentación · día 9",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-10",
+      "category": "food",
+      "concept": "Alimentación · día 10",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-11",
+      "category": "food",
+      "concept": "Alimentación · día 11",
+      "date": "2026-12-06",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "food-day-12",
+      "category": "food",
+      "concept": "Alimentación · día 12",
+      "date": "2026-12-07",
+      "cost": {
+        "amount": 35,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación: €35 diarios por persona; no es cotización ni gasto pagado"
+    },
+    {
+      "id": "firenze-corridoio",
+      "category": "activities",
+      "concept": "Firenze · Corridoio Vasariano",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 20,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Visita opcional, no incluida en el subtotal",
+      "optional": true
+    }
+  ],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Vuelos internacionales · México ↔ Italia",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Iberia",
+          "status": "quoted",
+          "selectedFare": "basic",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "MAD",
+                  "departure": "2026-11-26T00:05:00-06:00",
+                  "arrival": "2026-11-26T17:10:00+01:00",
+                  "departureTerminal": "1",
+                  "arrivalTerminal": "4S",
+                  "operator": "Iberia",
+                  "flightNumber": "IB312",
+                  "aircraft": "Airbus A350"
+                },
+                {
+                  "from": "MAD",
+                  "to": "MXP",
+                  "departure": "2026-11-26T19:55:00+01:00",
+                  "arrival": "2026-11-26T22:10:00+01:00",
+                  "departureTerminal": "4",
+                  "arrivalTerminal": "1",
+                  "operator": "Iberia",
+                  "flightNumber": "IB803",
+                  "aircraft": "Airbus A320"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "BLQ",
+                  "to": "MAD",
+                  "departure": "2026-12-07T12:25:00+01:00",
+                  "arrival": "2026-12-07T14:55:00+01:00",
+                  "departureTerminal": null,
+                  "arrivalTerminal": null,
+                  "arrivalTerminalQuoted": "4S",
+                  "arrivalTerminalExpected": "4",
+                  "terminalNote": "Iberia y Aena indican T4 como terminal habitual de Air Nostrum y vuelos Schengen; excepcionalmente pueden operar en T4S. La cotización anterior indicaba T4S. Terminal de IB1238 el 07/12/2026 no confirmada: comprobar tarjeta de embarque y pantallas de Aena.",
+                  "operator": "Air Nostrum para Iberia",
+                  "flightNumber": "IB1238",
+                  "aircraft": "Bombardier CRJ1000"
+                },
+                {
+                  "from": "MAD",
+                  "to": "MEX",
+                  "departure": "2026-12-07T16:50:00+01:00",
+                  "arrival": "2026-12-07T22:10:00-06:00",
+                  "departureTerminal": "4S",
+                  "arrivalTerminal": "1",
+                  "operator": "Iberia",
+                  "flightNumber": "IB311",
+                  "aircraft": "Airbus A350-900"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "basic",
+              "name": "Turista Básica",
+              "price": {
+                "amount": 20060,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": {
+                  "pieces": 1,
+                  "dimensionsCm": [
+                    30,
+                    40,
+                    15
+                  ]
+                },
+                "cabin": {
+                  "pieces": 1,
+                  "weightKg": 10,
+                  "dimensionsCm": [
+                    56,
+                    40,
+                    25
+                  ]
+                },
+                "checked": {
+                  "pieces": 0
+                }
+              },
+              "changes": "Cambios con cargo; penalización y diferencia tarifaria por confirmar.",
+              "refunds": "No reembolsable según cotización."
+            },
+            {
+              "id": "optimal",
+              "name": "Turista Óptima",
+              "price": {
+                "amount": 23330,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": {
+                  "pieces": 1,
+                  "dimensionsCm": [
+                    30,
+                    40,
+                    15
+                  ]
+                },
+                "cabin": {
+                  "pieces": 1,
+                  "weightKg": 10,
+                  "dimensionsCm": [
+                    56,
+                    40,
+                    25
+                  ]
+                },
+                "checked": {
+                  "pieces": 1,
+                  "weightKg": 23
+                }
+              },
+              "changes": "Cambios con cargo; penalización y diferencia tarifaria por confirmar.",
+              "refunds": "No reembolsable según cotización."
+            },
+            {
+              "id": "comfort",
+              "name": "Turista Confort",
+              "price": {
+                "amount": 26215,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": {
+                  "pieces": 1,
+                  "dimensionsCm": [
+                    30,
+                    40,
+                    15
+                  ]
+                },
+                "cabin": {
+                  "pieces": 1,
+                  "weightKg": 10,
+                  "dimensionsCm": [
+                    56,
+                    40,
+                    25
+                  ]
+                },
+                "checked": {
+                  "pieces": 1,
+                  "weightKg": 23
+                }
+              },
+              "changes": "Cambios con cargo; penalización y diferencia tarifaria por confirmar.",
+              "refunds": "Reembolso parcial según cotización; condiciones exactas por confirmar."
+            }
+          ],
+          "notes": "Cotización orientativa del 20/10/2026, 1 pasajero, no comprada. Verificar vuelos y condiciones en una sola reserva antes de pagar. Ida en MAD: conexión habitual T4S → T4 y control de pasaportes para entrada Schengen (2 h 45 min según itinerario). Regreso: BLQ → MAD normalmente llega a T4 (Air Nostrum), con posibilidad excepcional T4S; conexión habitual T4 → T4S y control de pasaportes de salida Schengen (1 h 55 min). Comprobar puertas y terminales asignadas antes de viajar. El equipaje adicional, las diferencias tarifarias, penalizaciones por cambios y eventuales devoluciones requieren cotización y condiciones específicas de reserva.",
+          "quotedAt": "2026-10-20",
+          "sources": [
+            "https://www.iberia.com/mx/preguntas-frecuentes/tarifas/",
+            "https://www.iberia.com/mx/cambios-y-reembolsos/",
+            "https://www.iberia.com/es/preguntas-frecuentes/aeropuerto-madrid/",
+            "https://www.aena.es/es/adolfo-suarez-madrid-barajas/servicios-del-aeropuerto/conexion-de-vuelos.html",
+            "https://agencias.iberia.com/content/iberia-agencias/language-masters/es/informacion-viaje/equipajes/equipaje-facturable.html"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Iberia · condiciones y vuelos",
+          "url": "https://www.iberia.com/"
+        }
+      ]
+    },
+    {
+      "id": "train-milano-bologna",
+      "type": "train",
+      "title": "Milano → Bologna",
+      "day": 4,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Bologna Centrale",
+                  "departure": "2026-11-29T08:30:00+01:00",
+                  "arrival": "2026-11-29T09:34:00+01:00",
+                  "service": "Frecciarossa 9613",
+                  "operator": "Trenitalia"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Standard · referencia",
+              "price": {
+                "amount": 22.9,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar.",
+          "provider": "Trenitalia · Frecciarossa 9613"
+        },
+        {
+          "id": "B",
+          "provider": "Italo · directo",
+          "status": "quoted",
+          "selectedFare": "smart",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Bologna Centrale",
+                  "departure": "2026-11-29T09:40:00+01:00",
+                  "arrival": "2026-11-29T10:54:00+01:00",
+                  "operator": "Italo",
+                  "service": "Italo directo"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "smart",
+              "name": "Smart · referencia",
+              "price": {
+                "amount": 25.9,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Alternativa ya contemplada en la movilidad del día 4; tarifa orientativa, sin reserva. Billetes no intercambiables entre operadores."
+        }
+      ],
+      "links": [
+        {
+          "label": "Trenitalia · trenes",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Italo · trenes",
+          "url": "https://www.italotreno.com/"
+        },
+        {
+          "label": "Trenitalia · Economy",
+          "url": "https://www.trenitalia.com/es/ofertas/el-billete-economy.html"
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-ravenna",
+      "type": "train",
+      "title": "Bologna ↔ Ravenna",
+      "day": 5,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Ravenna",
+                  "departure": "2026-11-30T08:05:00+01:00",
+                  "arrival": "2026-11-30T09:17:00+01:00",
+                  "service": "Regionale 17543",
+                  "operator": "Trenitalia"
+                },
+                {
+                  "from": "Ravenna",
+                  "to": "Bologna",
+                  "departure": "2026-11-30T17:43:00+01:00",
+                  "arrival": "2026-11-30T18:55:00+01:00",
+                  "service": "Regionale 17558",
+                  "operator": "Trenitalia"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 17,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ],
+      "links": [
+        {
+          "label": "Trenitalia · trenes",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Trenitalia · Biglietto Digitale Regionale",
+          "url": "https://www.trenitalia.com/es/informacion/billete-digital-regional.html"
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-parma",
+      "type": "train",
+      "title": "Bologna ↔ Parma",
+      "day": 6,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Parma",
+                  "departure": "2026-12-01T07:50:00+01:00",
+                  "arrival": "2026-12-01T08:58:00+01:00",
+                  "service": "Regionale 2462",
+                  "operator": "Trenitalia"
+                },
+                {
+                  "from": "Parma",
+                  "to": "Bologna",
+                  "departure": "2026-12-01T17:27:00+01:00",
+                  "arrival": "2026-12-01T18:25:00+01:00",
+                  "service": "Regionale 3935",
+                  "operator": "Trenitalia"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 17,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ],
+      "links": [
+        {
+          "label": "Trenitalia · trenes",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Trenitalia · Biglietto Digitale Regionale",
+          "url": "https://www.trenitalia.com/es/informacion/billete-digital-regional.html"
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-ferrara",
+      "type": "train",
+      "title": "Bologna ↔ Ferrara",
+      "day": 8,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Ferrara",
+                  "departure": "2026-12-03T08:10:00+01:00",
+                  "arrival": "2026-12-03T08:41:00+01:00",
+                  "service": "Regionale 3966",
+                  "operator": "Trenitalia"
+                },
+                {
+                  "from": "Ferrara",
+                  "to": "Bologna",
+                  "departure": "2026-12-03T18:05:00+01:00",
+                  "arrival": "2026-12-03T18:45:00+01:00",
+                  "service": "Regionale 3983",
+                  "operator": "Trenitalia"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 11,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ],
+      "links": [
+        {
+          "label": "Trenitalia · trenes",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Trenitalia · Biglietto Digitale Regionale",
+          "url": "https://www.trenitalia.com/es/informacion/billete-digital-regional.html"
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-firenze",
+      "type": "train",
+      "title": "Bologna ↔ Firenze",
+      "day": 9,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Firenze",
+                  "departure": "2026-12-04T06:27:00+01:00",
+                  "arrival": "2026-12-04T07:04:00+01:00",
+                  "service": "Frecciarossa 9505",
+                  "operator": "Trenitalia"
+                },
+                {
+                  "from": "Firenze",
+                  "to": "Bologna",
+                  "departure": "2026-12-04T20:05:00+01:00",
+                  "arrival": "2026-12-04T20:43:00+01:00",
+                  "service": "Italo",
+                  "operator": "Italo"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 26.8,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ],
+      "links": [
+        {
+          "label": "Trenitalia · trenes",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Italo · trenes",
+          "url": "https://www.italotreno.com/"
+        },
+        {
+          "label": "Trenitalia · Economy",
+          "url": "https://www.trenitalia.com/es/ofertas/el-billete-economy.html"
+        }
+      ]
+    },
+    {
+      "id": "train-bologna-modena",
+      "type": "train",
+      "title": "Bologna ↔ Modena",
+      "day": 10,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Bologna",
+                  "to": "Modena",
+                  "departure": "2026-12-05T07:23:00+01:00",
+                  "arrival": "2026-12-05T07:55:00+01:00",
+                  "service": "Regionale 19584",
+                  "operator": "Trenitalia"
+                },
+                {
+                  "from": "Modena",
+                  "to": "Bologna",
+                  "departure": "2026-12-05T17:52:00+01:00",
+                  "arrival": "2026-12-05T18:20:00+01:00",
+                  "service": "Regionale 3933",
+                  "operator": "Trenitalia"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa de referencia",
+              "price": {
+                "amount": 9,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia cotizada previamente; servicio y condiciones definitivas por confirmar."
+        }
+      ],
+      "links": [
+        {
+          "label": "Trenitalia · trenes",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Trenitalia · Biglietto Digitale Regionale",
+          "url": "https://www.trenitalia.com/es/informacion/billete-digital-regional.html"
+        }
+      ]
+    }
+  ],
+  "ticketNotes": [
+    [
+      "Regionale",
+      "Biglietto Digitale Regionale, 2ª clase: se valida automáticamente a la salida programada. Cambiar la hora antes de esa salida; una vez activado, ya no se puede modificar y sólo vale para el tren seleccionado."
+    ],
+    [
+      "Frecciarossa",
+      "Nivel Standard. Economy permite un cambio antes de la salida, pagando la diferencia aplicable respecto de Base. El precio observado no garantiza una tarifa flexible."
+    ],
+    [
+      "Italo",
+      "Ambiente Smart; precio y condiciones según tarifa disponible."
+    ],
+    [
+      "Flexibilidad / Plan B",
+      "Preferir Economy/Flex si el incremento es razonable. Un Plan B requiere billete válido para ese servicio: una promoción no permite subir automáticamente al siguiente tren ni cambiar de operador."
+    ]
+  ],
+  "attractionTerms": [
+    "Cappella di San Vincenzo Ferrer",
+    "Cappella di San Sebastiano",
+    "Basilica di San Petronio · Piazza Maggiore",
+    "Aeroporto di Bologna Guglielmo Marconi",
+    "Duomo di Parma · Battistero di Parma",
+    "Santuario della Madonna di San Luca",
+    "Cattedrale di Santa Maria del Fiore",
+    "Complesso Monumentale della Pilotta",
+    "Santuario di Santa Maria della Vita",
+    "Teatro Anatomico del Archiginnasio",
+    "Basilica di Sant’Apollinare Nuovo",
+    "Portici di Via dell’Indipendenza",
+    "Da Monet a Van Gogh a Kandinsky",
+    "Pinacoteca Nazionale di Bologna",
+    "Galleria Vittorio Emanuele II",
+    "Moxy Milano Malpensa Airport",
+    "Firenze Santa Maria Novella",
+    "Museo del Cenacolo Vinciano",
+    "Complesso di Santo Stefano",
+    "Battistero di San Giovanni",
+    "Mausoleo di Galla Placidia",
+    "Compianto sul Cristo morto",
+    "Palazzo dell’Archiginnasio",
+    "Basilica di San Francesco",
+    "Museo Teatrale alla Scala",
+    "Sant’Apollinare in Classe",
+    "Finestrella di Via Piella",
+    "Cattedrale di San Giorgio",
+    "Museo Civico Archeologico",
+    "Santa Maria delle Grazie",
+    "San Giovanni Evangelista",
+    "Prigioni di Michelangelo",
+    "Basilica di San Petronio",
+    "Basilica di San Domenico",
+    "Galleria dell’Accademia",
+    "Sala dello Stabat Mater",
+    "Cupola del Brunelleschi",
+    "Cappella di Sant’Andrea",
+    "Strada Fossa Monda Nord",
+    "Santa Maria della Vita",
+    "Cupola di Brunelleschi",
+    "Portico del Pavaglione",
+    "B&B Hotel Milano Aosta",
+    "Basilica di San Vitale",
+    "Corso Ercole I d’Este",
+    "Firenze S. M. Novella",
+    "Gallerie degli Uffizi",
+    "Museo Pietà Rondanini",
+    "David di Michelangelo",
+    "Piazza della Signoria",
+    "Piazza Medaglie d’Oro",
+    "Torre degli Asinelli",
+    "Palazzo dei Diamanti",
+    "Arca di San Domenico",
+    "Piazza Santo Stefano",
+    "Cappella dei Re Magi",
+    "Porta della Mandorla",
+    "Corridoio Vasariano",
+    "Pinacoteca di Brera",
+    "Piazza Duca d’Aosta",
+    "Battistero di Parma",
+    "Museo Arcivescovile",
+    "Battistero Neoniano",
+    "Portico di San Luca",
+    "Fontana del Nettuno",
+    "Torre dell’Orologio",
+    "Piazzale della Pace",
+    "Camera di San Paolo",
+    "Museo Enzo Ferrari",
+    "Galleria Nazionale",
+    "Piazza della Scala",
+    "HouSmart Milazzo 5",
+    "Piazza Gae Aulenti",
+    "Terrazze del Duomo",
+    "Palazzo d’Accursio",
+    "Castello Sforzesco",
+    "Palazzo Schifanoia",
+    "Cappella Bolognini",
+    "Brunelleschi Pass",
+    "Mercato Albinelli",
+    "Cenacolo Vinciano",
+    "Teatro alla Scala",
+    "Torre Ghirlandina",
+    "Castello Estense",
+    "Strada Garibaldi",
+    "Piazza del Duomo",
+    "Palazzo Comunale",
+    "Bologna Centrale",
+    "Teatro Anatomico",
+    "Galleria Estense",
+    "Loggia dei Lanzi",
+    "Piazza Maggiore",
+    "Bosco Verticale",
+    "Museo Diocesano",
+    "Via delle Volte",
+    "Milano Centrale",
+    "Torre dei Leoni",
+    "Salone dei Mesi",
+    "Pietà Rondanini",
+    "Duomo di Modena",
+    "Cavour/Giardini",
+    "Duomo di Milano",
+    "Arco della Pace",
+    "Tomba di Dante",
+    "Acetaia Marchi",
+    "Galla Placidia",
+    "Strada Casette",
+    "Duomo di Parma",
+    "Parco Sempione",
+    "Teatro Farnese",
+    "Viale Bottego",
+    "L’Ultima Cena",
+    "Via Nazionale",
+    "La Scapiliata",
+    "Santo Stefano",
+    "Ponte Vecchio",
+    "Archiginnasio",
+    "zona de Dante",
+    "Palazzo Pitti",
+    "Piazza Grande",
+    "Quadrilatero",
+    "San Petronio",
+    "Piazza Duomo",
+    "Via Ricasoli",
+    "Le Due Torri",
+    "Via Milazzo",
+    "Firenze SMN",
+    "Villa Spada",
+    "Via Guelfa",
+    "San Pietro",
+    "Battistero",
+    "Accademia",
+    "Sala D19",
+    "San Luca",
+    "Prigioni",
+    "Cenacolo",
+    "Oltrarno",
+    "Navigli",
+    "Darsena",
+    "KiPoint",
+    "Pilotta",
+    "Cupola",
+    "Boboli",
+    "Uffizi",
+    "Brera",
+    "Duomo",
+    "David"
+  ],
+  "cover": "italy16-duomo",
+  "mapPoints": [
+    {
+      "name": "Milano",
+      "coords": [
+        45.4642,
+        9.19
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Bologna",
+      "coords": [
+        44.4949,
+        11.3426
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Ravenna",
+      "coords": [
+        44.4184,
+        12.2035
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Parma",
+      "coords": [
+        44.8015,
+        10.3279
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Ferrara",
+      "coords": [
+        44.835,
+        11.6198
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 5
+    },
+    {
+      "name": "Firenze",
+      "coords": [
+        43.7696,
+        11.2558
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 6
+    },
+    {
+      "name": "Modena",
+      "coords": [
+        44.6471,
+        10.9252
+      ],
+      "kind": "Visita del recorrido",
+      "base": false,
+      "optional": false,
+      "order": 7
+    }
+  ],
+  "planningDetails": {
+    "reservationNote": "Horarios elegidos, pendientes de compra. Coordinar las tres entradas de Firenze antes de reservar por separado.",
+    "reservationTitle": "Reservaciones importantes"
+  },
+  "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",
+  "heroLodgingSummary": "3 alojamientos",
+  "budgetPreliminary": true,
+  "cardHighlights": [
+    "Milano",
+    "Firenze",
+    "Bologna",
+    "Ravenna",
+    "Parma",
+    "Ferrara",
+    "Modena",
+    "Malpensa"
+  ],
+  "introHighlights": [
+    "Lombardia",
+    "Milano",
+    "Bologna",
+    "Emilia-Romagna",
+    "Parma",
+    "Modena",
+    "Ravenna",
+    "Ferrara",
+    "Toscana",
+    "Firenze"
+  ],
+  "routeHighlights": true,
+  "emphasisStyle": true,
+  "linkRailInText": true,
+  "placeDescriptions": {
+    "italy16-duomo": "El Duomo domina la plaza central de Milano con su fachada de mármol, agujas y esculturas góticas.",
+    "milan-galleria": "La Galleria Vittorio Emanuele II reúne tiendas y cafés bajo una cubierta de hierro y vidrio, junto al Duomo.",
+    "italy16-grazie": "La iglesia milanesa junto al refectorio que conserva L’Ultima Cena.",
+    "italy16-castello": "El Castello Sforzesco conserva sus torres y patios históricos y alberga museos municipales de Milano.",
+    "emilia-piazza": "La fachada de San Petronio preside Piazza Maggiore, uno de los grandes espacios monumentales de Bologna.",
+    "emilia-nettuno": "La fuente renacentista de Neptuno es uno de los símbolos del centro de Bologna.",
+    "emilia-stefano": "La plaza de Santo Stefano, en Bologna, reúne pórticos y fachadas históricas junto al conjunto de iglesias del mismo nombre.",
+    "emilia-vitale": "Los mosaicos bizantinos de esta basílica de Ravenna envuelven el presbiterio en figuras y colores.",
+    "emilia-galla": "Un pequeño edificio de Ravenna custodia uno de los conjuntos de mosaicos más célebres de la ciudad.",
+    "emilia-parma": "La plaza episcopal de Parma reúne la catedral románica y el baptisterio de mármol rosado.",
+    "emilia-farnese": "Un monumental teatro de madera ocupa el Palazzo della Pilotta en Parma.",
+    "emilia-sanluca": "El santuario corona una colina de Bologna y ofrece una excursión entre arquitectura y paisaje.",
+    "emilia-anatomico": "La sala de madera donde se enseñaba anatomía recuerda la tradición universitaria de Bologna.",
+    "emilia-castello": "La fortaleza de ladrillo y su foso recuerdan el poder de la familia Este en Ferrara.",
+    "emilia-diamanti": "Miles de piezas de mármol en punta de diamante dan carácter a este palacio renacentista de Ferrara.",
+    "italy16-david": "El David original en la Galleria dell’Accademia de Firenze.",
+    "italy16-cupola": "La gran cúpula de Santa Maria del Fiore sobre los tejados de Firenze.",
+    "italy16-uffizi": "El patio de los Uffizi, puerta de entrada al gran museo del Renacimiento.",
+    "emilia-modena": "Una obra maestra del románico preside el conjunto monumental de Piazza Grande en Modena.",
+    "emilia-albinelli": "La fuente de la portadora de fruta adorna el mercado cubierto de Modena, una parada para descubrir los sabores de la región.",
+    "italy16-ferrari": "El interior del museo dedicado a Enzo Ferrari en Modena.",
+    "italy16-compianto": "Detalle del Cristo yacente del Compianto de Niccolò dell’Arca en Santa Maria della Vita, Bologna.",
+    "emilia-porticos": "Galerías cubiertas acompañan el paseo por Bologna entre comercios y edificios históricos."
+  },
+  "hotels": [
+    {
+      "id": "hotel-1",
+      "name": "Moxy Milano Malpensa Airport",
+      "city": "Malpensa",
+      "address": "Terminal 2, aeropuerto de Milano Malpensa",
+      "mapsUrl": "https://maps.app.goo.gl/wqKbvJcWkSCW2MxJA",
+      "checkIn": "2026-11-26",
+      "checkOut": "2026-11-27",
+      "status": "Preseleccionado · no reservado",
+      "rate": "€127 (≈ $2,590 MXN) total · 1 noche",
+      "rateConditions": "Tarifa de miembro flexible, sin desayuno",
+      "notes": "Registrarse gratis en Marriott Bonvoy e iniciar sesión antes de reservar. Avisar de llegada nocturna y confirmar check-in después de medianoche si hubiera retrasos.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://www.marriott.com/en-us/hotels/milox-moxy-milan-malpensa-airport/overview/"
+        }
+      ]
+    },
+    {
+      "id": "hotel-2",
+      "name": "B&B Hotel Milano Aosta",
+      "city": "Milano",
+      "address": "Piazza Duca d’Aosta 16, frente a Milano Centrale",
+      "mapsUrl": "https://maps.app.goo.gl/Ei9Htz2HPEYXZ47e7",
+      "checkIn": "2026-11-27",
+      "checkOut": "2026-11-29",
+      "status": "Preseleccionado · no reservado",
+      "rate": "€283 (≈ $5,770 MXN) total · 2 noches",
+      "rateConditions": "B&me Breakfast Flex con desayuno y cancelación flexible según cotización",
+      "notes": "Requiere registro gratuito B&me. Confirmar precio final y posibilidad de dejar equipaje antes del check-in.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://www.hotel-bb.com/en/hotel/milano-aosta"
+        }
+      ]
+    },
+    {
+      "id": "hotel-3",
+      "name": "HouSmart Milazzo 5",
+      "city": "Bologna",
+      "address": "Via Milazzo 5, 40121 Bologna",
+      "mapsUrl": "https://maps.app.goo.gl/XsJm1Vjtq9smcfQE9",
+      "checkIn": "2026-11-29",
+      "checkOut": "2026-12-07",
+      "status": "Candidato · no reservado",
+      "rate": "$13,881 MXN total · 8 noches",
+      "rateConditions": "Apartamento completo de 1 dormitorio, 38 m², 1 adulto",
+      "notes": "Check-in desde las 15:00, sin recepción presencial: confirmar con antelación las instrucciones de self check-in y la posibilidad de dejar el equipaje antes de esa hora. Si no ofrecen consigna, utilizar KiPoint en Bologna Centrale, zona oeste / andén 7 Oeste, y comenzar las visitas sin maleta. Verificar previamente horarios y disponibilidad del servicio.",
+      "links": [
+        {
+          "label": "Booking.com",
+          "url": "https://www.booking.com/hotel/it/housmart-milazzo-5.html"
+        }
+      ]
+    }
+  ],
+  "seasonality": {
+    "summary": "Abril, mayo, septiembre y octubre ofrecen el mejor equilibrio para este recorrido urbano y cultural. Febrero, marzo, junio, noviembre y diciembre son aceptables con inconvenientes de frío, calor o lluvia; enero, julio y agosto resultan menos cómodos por temperaturas extremas y, en agosto, posibles cierres por Ferragosto.",
+    "months": {
+      "10": {
+        "status": "recommended",
+        "description": "Otoñal (19–22 °C), menos turistas; aumenta la lluvia y baja la luz.",
+        "icon": "partlyCloudy"
+      },
+      "11": {
+        "status": "conditional",
+        "description": "Fresco (12–16 °C), lluvia y niebla; menos turistas y días cortos.",
+        "icon": "cloudy"
+      },
+      "12": {
+        "status": "conditional",
+        "description": "Frío (7–11 °C), poca luz y ambiente navideño.",
+        "icon": "snow"
+      },
+      "01": {
+        "status": "avoid",
+        "description": "Muy frío (6–9 °C), niebla y poca luz. Excursiones menos cómodas.",
+        "icon": "snow"
+      },
+      "02": {
+        "status": "conditional",
+        "description": "Frío (9–12 °C), más luz y menos turistas. Conviene llevar abrigo.",
+        "icon": "partlyCloudy"
+      },
+      "03": {
+        "status": "conditional",
+        "description": "Primavera fresca (14–16 °C), más luz y clima variable.",
+        "icon": "partlyCloudy"
+      },
+      "04": {
+        "status": "recommended",
+        "description": "Templado (18–20 °C), días largos y excelentes excursiones. Posibles lluvias.",
+        "icon": "sun"
+      },
+      "05": {
+        "status": "recommended",
+        "description": "Agradable (22–25 °C), mucha luz y buenas excursiones. Posibles lluvias.",
+        "icon": "partlyCloudy"
+      },
+      "06": {
+        "status": "conditional",
+        "description": "Caluroso (27–29 °C), días largos, más turistas y caminatas exigentes.",
+        "icon": "hot"
+      },
+      "07": {
+        "status": "avoid",
+        "description": "Mucho calor (30–33 °C), bochorno y alta afluencia turística.",
+        "icon": "hot"
+      },
+      "08": {
+        "status": "avoid",
+        "description": "Calor intenso (30–33 °C) y posibles cierres por Ferragosto.",
+        "icon": "hot"
+      },
+      "09": {
+        "status": "recommended",
+        "description": "Agradable (25–27 °C), aún con buena luz y posibles lluvias.",
+        "icon": "sun"
+      }
+    }
+  },
+  "heroEyebrow": "Italia en tren: siete ciudades desde Milano y Bologna",
+  "practicalIndicators": [
+    {
+      "id": "solo",
+      "title": "Viajar solo",
+      "text": "Muy recomendable. Ciudades fáciles de recorrer y bien conectadas. Precaución con carteristas."
+    },
+    {
+      "id": "pace",
+      "title": "Ritmo",
+      "text": "Moderado–activo. Excursiones frecuentes en tren, varias salidas temprano y bastante caminata. Pocos cambios de hotel."
+    },
+    {
+      "id": "language",
+      "title": "Idioma",
+      "text": "Italiano (principal). Inglés ampliamente utilizado en zonas turísticas."
+    },
+    {
+      "id": "currency",
+      "title": "Pagos y moneda",
+      "text": "Euro (€). Llevar algo de efectivo para compras pequeñas."
+    }
+  ]
+}

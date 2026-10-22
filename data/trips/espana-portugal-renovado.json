@@ -1,0 +1,25 @@
+{
+  "id": "espana-portugal-renovado",
+  "name": "España + Portugal: arte, Al-Ándalus y Lisboa",
+  "status": "draft",
+  "routeCities": [
+    "Madrid",
+    "Zamora",
+    "Toledo",
+    "Segovia",
+    "Lisboa",
+    "Sintra",
+    "Sevilla",
+    "Córdoba",
+    "Granada",
+    "Barcelona",
+    "Figueres"
+  ],
+  "experiences": [
+    "El románico de Zamora y un paseo junto al Duero con tiempo propio.",
+    "Palacios de Sintra entre jardines, escalinatas y bosque.",
+    "Patios del Alcázar, la Mezquita de Córdoba y arte nazarí en la Alhambra.",
+    "Pastéis en Belém, una noche por Alfama y flamenco en Sevilla.",
+    "Las formas de Gaudí en Barcelona y el universo de Dalí en Figueres."
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "id": "munich-viena",
+  "name": "Múnich + Viena navideñas",
+  "flag": "🇩🇪 🇦🇹",
+  "start": "2026-12-07",
+  "end": "2026-12-21",
+  "tag": "Navidad imperial entre Baviera y Viena",
+  "intro": "Dos ciudades para instalarte y dos maneras de vivir diciembre. Primero, Múnich reúne palacios bávaros, mercados y excursiones a los Alpes sin cambiar de hotel. Después, un solo traslado en tren te lleva a Viena: avenidas imperiales, grandes palacios y plazas iluminadas. Son 15 días naturales y 11 de lunes a viernes, con regreso previsto a México el 21 de diciembre.",
+  "bases": [
+    [
+      "Múnich",
+      8
+    ],
+    [
+      "Viena",
+      5
+    ]
+  ],
+  "flight": "Busca una reserva multidestino: Ciudad de México (MEX) → Múnich (MUC) el 7 de diciembre y Viena (VIE) → Ciudad de México (MEX) el 21. El primer tramo puede ser sin escalas; para volver desde Viena, compara una conexión protegida en Frankfurt o Múnich.\n\nLa estimación de vuelos no es una oferta reservable. Comprueba equipaje y llegada a MEX el día 21: si aterrizas el 22, necesitarás 12 días laborales en vez de 11.",
+  "local": "Desde el aeropuerto llegarás al centro de Múnich en el S-Bahn, la red de trenes suburbanos, en unos 40–50 minutos. Para las excursiones, el tren a Salzburgo tarda aproximadamente 1½–2 horas y el ICE, tren de alta velocidad, llega a Núremberg en unas 1–1¼ horas.\n\nPara Neuschwanstein puedes reservar una excursión desde Múnich o tomar un tren a Füssen y después un autobús hasta Hohenschwangau, el pueblo desde el que se sube al castillo. Por tu cuenta, calcula unas 2½–3 horas de transporte por sentido. Para subir a Zugspitze, viajarás primero a Garmisch-Partenkirchen y continuarás en tren de montaña o teleférico.\n\nEl 16 de diciembre cambiarás de base una sola vez: tren directo Múnich–Viena, aproximadamente 4–4½ horas. WESTbahn publica recorridos de unas 4 h 03 min hacia Wien Westbahnhof; confirma la salida exacta después del cambio de horario ferroviario del 13 de diciembre. En Viena combinarás caminatas y metro.",
+  "climate": "En diciembre, Múnich suele tener temperaturas cercanas a −2–6 °C. En las montañas hará bastante más frío: necesitarás abrigo, guantes y calzado con buen agarre. Puede nevar, aunque no se puede asegurar que la ciudad esté cubierta de nieve.\n\nLos días son cortos, por lo que las excursiones comenzarán temprano. El mercado navideño de Marienplatz está previsto del 20 de noviembre al 24 de diciembre de 2026; sus luces y puestos serán parte del ambiente de tus tardes en la ciudad.\n\nViena también exige abrigo y paseos adaptados a las pocas horas de luz. Reserva las fachadas y jardines para el día, y los mercados iluminados para la tarde. Las fotos muestran los lugares, no garantizan nieve para la visita.",
+  "solo": "Ocho noches en Múnich y cinco en Viena permiten deshacer la maleta sólo dos veces. Las excursiones bávaras parten y regresan a Múnich; Salzburgo y Núremberg no se convierten en bases.\n\nEn Viena, el paseo imperial está planteado como un recorrido exterior con pausas. No pretende visitar todos los interiores en un día. Bratislava es opcional: puedes conservar esa jornada para descansar o entrar a un museo pendiente en Viena.",
+  "costs": [
+    [
+      "Vuelos multidestino · estimación",
+      21000,
+      32000
+    ],
+    [
+      "13 noches privadas · 8 Múnich + 5 Viena",
+      22000,
+      32500
+    ],
+    [
+      "Comida",
+      9000,
+      12500
+    ],
+    [
+      "Trenes y transporte urbano",
+      5500,
+      8500
+    ],
+    [
+      "Entradas, montaña y excursiones",
+      7000,
+      11000
+    ],
+    [
+      "Seguro y reserva para imprevistos",
+      4500,
+      6500
+    ]
+  ],
+  "tips": [
+    "Esta alternativa usa exactamente 11 días de lunes a viernes. Combinada con los 15 de España sumaría 26: no cabe íntegra en un saldo de 22 días.",
+    "Mantén Zugspitze y Eibsee en el día con mejor visibilidad, intercambiándolo con una jornada de ciudad.",
+    "Oberammergau y Linderhof son una sustitución opcional; Rothenburg y Berchtesgaden no se añaden.",
+    "Las fechas de mercados están publicadas, pero las visitas a palacios y los transportes requieren reserva o comprobación propia."
+  ],
+  "sources": [
+    [
+      "Mercado oficial 2026",
+      "https://www.muenchen.de/en/events/munich-christkindlmarkt-info-about-christmas-market"
+    ],
+    [
+      "Excursiones oficiales",
+      "https://www.munich.travel/en/categories/book/excursions"
+    ],
+    [
+      "Castillo: acceso",
+      "https://www.neuschwanstein.de/englisch/tourist/howtoget.htm?pubDate=20250725"
+    ],
+    [
+      "Lufthansa MEX–MUC",
+      "https://www.lufthansa.com/lhg/de/de/o-d/cy-cy/mexiko-stadt-muenchen"
+    ],
+    [
+      "DB Navigator · aplicación para trenes",
+      "https://int.bahn.de/en/booking-information/db-navigator"
+    ],
+    [
+      "Viktualienmarkt · horarios",
+      "https://www.viktualienmarkt-muenchen.de/en/opening-hours/"
+    ],
+    [
+      "Zugspitze · tarifas invierno 2026/27",
+      "https://zugspitze.de/en/Service-information/Tickets-rates/Winter-26-27"
+    ],
+    [
+      "Zugspitze · recorrido circular y Eibsee",
+      "https://zugspitze.de/en/Our-mountain-worlds/Highlights/Zugspitze-Round-Trip"
+    ],
+    [
+      "Linderhof · precios y accesos",
+      "https://www.schlosslinderhof.de/englisch/tourist/admiss.htm"
+    ],
+    [
+      "Viena · mercados navideños 2026",
+      "https://www.wien.info/en/now-on/christmas/christmas-markets-342664"
+    ],
+    [
+      "WESTbahn · Múnich–Viena",
+      "https://westbahn.de/en/news/our-travel-destinations/vienna/"
+    ],
+    [
+      "Café Central · estado de reapertura",
+      "https://cafecentral.wien/en/"
+    ],
+    [
+      "Schönbrunn · entradas oficiales",
+      "https://www.schoenbrunn.at/en/"
+    ],
+    [
+      "ÖBB · excursión a Bratislava",
+      "https://www.oebb.at/en/regionale-angebote/ueberregionale-angebote/bratislava-ticket"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-07",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "La opción propuesta es volar de Ciudad de México (MEX) a Múnich (MUC), sin escalas si hay un servicio adecuado para estas fechas.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-12-08",
+      "title": "bienvenido a la Navidad bávara",
+      "base": "Múnich",
+      "places": [
+        "marienplatz",
+        "munich-town-hall"
+      ],
+      "am": "Al llegar al aeropuerto de Múnich, toma el tren suburbano hacia el centro y deja el equipaje en el hotel.",
+      "pm": "Comienza con un paseo por Marienplatz, la plaza principal, y contempla la fachada del Nuevo Ayuntamiento. Si el mercado navideño está abierto en tus fechas, podrás recorrer sus puestos sin añadir otra visita.",
+      "night": "Cena cerca del hotel y descansa después del vuelo.",
+      "mobility": "El tren suburbano S-Bahn conecta el aeropuerto con el centro en unos 40–50 minutos. Después, realiza un paseo corto a pie.",
+      "spend": 950,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-12-09",
+      "title": "palacio y calles históricas",
+      "base": "Múnich",
+      "places": [
+        "nymphenburg",
+        "frauenkirche-munich",
+        "viktualienmarkt"
+      ],
+      "am": "Dedica la mañana al Palacio de Nymphenburg, antigua residencia de verano de los gobernantes de Baviera. Combina sus salas con un paseo corto por los jardines que estén abiertos.",
+      "pm": "Regresa al centro para conocer la Frauenkirche, la catedral de las dos torres, y el entorno del mercado Viktualienmarkt. Si coincide con domingo, cuenta con pasear por la plaza: muchos puestos estarán cerrados.",
+      "night": "Cena en una cervecería tradicional; puedes pedir mesa individual o compartir una mesa larga cuando el establecimiento lo permita.",
+      "mobility": "Para Nymphenburg, combina el transporte urbano según la ubicación del hotel; calcula unos 30–45 minutos desde el centro. Regresa en tranvía, autobús o metro para las visitas de la tarde.",
+      "spend": 1400,
+      "note": ""
+    },
+    {
+      "n": 4,
+      "date": "2026-12-10",
+      "title": "Neuschwanstein y, con luz, Füssen",
+      "base": "Múnich",
+      "places": [
+        "neuschwanstein",
+        "fussen"
+      ],
+      "am": "Sal temprano hacia Hohenschwangau, el pueblo desde el que se accede al castillo de Neuschwanstein. Una excursión organizada facilita el transporte desde Múnich, pero debes comprobar si incluye la entrada al castillo.",
+      "pm": "Visita Neuschwanstein en el turno reservado y disfruta sus miradores abiertos. Después, si el horario y la luz lo permiten, dedica 45–60 minutos al casco antiguo de Füssen: fachadas de colores y calles pequeñas para pasear antes del regreso.",
+      "night": "Regresa a Múnich y deja la noche libre: el conjunto de traslados y visita ocupa prácticamente todo el día.",
+      "mobility": "Una excursión desde Múnich suele ocupar unas 10–11 horas. Por tu cuenta, combina tren hacia Füssen, autobús a Hohenschwangau y el acceso al castillo; calcula cerca de 3 horas por sentido, según conexiones.",
+      "spend": 2900,
+      "note": "Reserva una entrada temprana y deja Füssen antes de anochecer. Si eliges un tour, confirma que contemple esta parada: muchos combinan otros palacios y no visitan Füssen. El puente Marienbrücke puede cerrar por hielo; Linderhof no se añade a esta jornada.",
+      "optionalPlaces": [
+        "fussen"
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2026-12-11",
+      "title": "Arte, residencia y pausa",
+      "base": "Múnich",
+      "places": [
+        "residenz",
+        "alte-pinakothek"
+      ],
+      "am": "Después de la excursión al castillo, comienza más tarde. Puedes visitar la Residenz, el gran palacio urbano de los antiguos gobernantes bávaros.",
+      "pm": "Si prefieres pintura a palacios, elige la Alte Pinakothek como alternativa a la Residenz. No hace falta completar ambos museos; reserva el resto de la tarde para café y descanso.",
+      "night": "Da un paseo breve por el centro iluminado y cena sin prisas.",
+      "mobility": "Llega al museo elegido caminando o en U-Bahn, el metro de Múnich. La tarde permite pocos traslados y más descanso.",
+      "spend": 1400,
+      "note": "",
+      "optionalPlaces": [
+        "residenz",
+        "alte-pinakothek"
+      ]
+    },
+    {
+      "n": 6,
+      "date": "2026-12-12",
+      "title": "excursión a Salzburgo, fortaleza y calles históricas",
+      "base": "Múnich",
+      "places": [
+        "salzburg",
+        "hohensalzburg",
+        "getreidegasse"
+      ],
+      "am": "Viaja en tren a Salzburgo, en Austria, y recorre Getreidegasse, la calle histórica de fachadas estrechas y letreros de hierro.",
+      "pm": "Sube a la fortaleza de Hohensalzburg en funicular y contempla la ciudad desde lo alto. Después, vuelve al casco antiguo para comer y pasear.",
+      "night": "Regresa en el tren previsto a Múnich; seguirás durmiendo en el mismo hotel.",
+      "mobility": "El tren Múnich–Salzburgo tarda aproximadamente 1½–2 horas por sentido. En Salzburgo, camina por el centro y utiliza el funicular para subir a la fortaleza.",
+      "spend": 2200,
+      "note": "Si eliges un billete regional, revisa desde qué hora es válido los días laborales y qué trenes admite antes de comprar."
+    },
+    {
+      "n": 7,
+      "date": "2026-12-13",
+      "title": "Zugspitze y el lago Eibsee",
+      "base": "Múnich",
+      "places": [
+        "zugspitze",
+        "eibsee",
+        "garmisch"
+      ],
+      "am": "Sal temprano de Múnich hacia Garmisch-Partenkirchen. Si el pronóstico permite disfrutar las vistas, sube a Zugspitze: puedes ascender en tren de cremallera y continuar a la cumbre por el teleférico del glaciar, según los servicios operativos.",
+      "pm": "Baja por el teleférico hacia Eibsee y reserva 45–75 minutos de luz para caminar por un tramo accesible de la orilla. El lago es una parte importante de la excursión, no una parada de paso. No necesitas rodearlo por completo. Garmisch queda como paseo opcional únicamente si sobra tiempo.",
+      "night": "Regresa a Múnich. Si hay viento fuerte o mala visibilidad, intercambia esta jornada con un día de ciudad.",
+      "mobility": "Tren Múnich–Garmisch, transportes de montaña y regreso desde Eibsee hacia Garmisch en tren de cremallera o autobús según horario. Calcula 9–11 horas en total. El orden exacto se ajusta al tiempo y a las últimas salidas.",
+      "spend": 3100,
+      "note": "El billete peatonal de ida y vuelta de Zugspitze para invierno 2026/27 está publicado desde €70.50 online o €78 en taquilla; incluye los transportes de montaña indicados por el operador, no el tren desde Múnich. Venta prevista desde mediados de noviembre. Con hielo o mal tiempo, limita el paseo junto al lago y cambia el día de montaña por el día de ciudad.",
+      "optionalPlaces": [
+        "garmisch"
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2026-12-14",
+      "title": "Núremberg medieval",
+      "base": "Múnich",
+      "places": [
+        "nuremberg-castle",
+        "st-lorenz-nuremberg",
+        "nuremberg"
+      ],
+      "am": "Toma un tren de alta velocidad hacia Núremberg y comienza por su casco histórico, dominado por el castillo imperial.",
+      "pm": "Recorre las calles medievales y conoce la iglesia de San Lorenzo. El mercado navideño se añade al paseo únicamente si su calendario coincide con tu visita.",
+      "night": "Vuelve a Múnich después de una cena temprana o cena al llegar, según el tren elegido.",
+      "mobility": "El tren de alta velocidad ICE llega a Núremberg en unas 1–1¼ horas por sentido. Dentro del casco histórico, las visitas se conectan principalmente a pie.",
+      "spend": 2000,
+      "note": ""
+    },
+    {
+      "n": 9,
+      "date": "2026-12-15",
+      "title": "ciencia y paseos, con una excursión alternativa",
+      "base": "Múnich",
+      "places": [
+        "deutsches-museum",
+        "oberammergau",
+        "linderhof"
+      ],
+      "am": "Aprovecha la última mañana para el Deutsches Museum, dedicado a la ciencia y la tecnología, si te interesa esta visita. Es una opción especialmente útil si el tiempo no invita a caminar.",
+      "pm": "Deja margen para compras, un café o una visita pendiente. Si ya usaste el museo como alternativa al día de montaña, disfruta esta tarde libre.",
+      "night": "Cena en Múnich y prepara la maleta para el tren de mañana.",
+      "mobility": "Utiliza transporte urbano para el Deutsches Museum y camina por el centro según tus planes de la tarde.",
+      "spend": 1100,
+      "note": "Alternativa para quien prefiera otro palacio: sustituye este día libre por Oberammergau y Linderhof, sin añadir una excursión extra al calendario. Oberammergau destaca por sus fachadas pintadas; Linderhof es el pequeño palacio de Luis II. En invierno no cuentes con la Gruta de Venus ni los edificios estivales del parque. Entrada al palacio publicada: €11; traslado o tour se cotiza aparte y puede superar el gasto diario previsto. Si estás cansado, conserva el museo y el descanso.",
+      "optionalPlaces": [
+        "deutsches-museum",
+        "oberammergau",
+        "linderhof"
+      ]
+    },
+    {
+      "n": 10,
+      "date": "2026-12-16",
+      "title": "llegada en tren desde Múnich",
+      "base": "Viena",
+      "places": [],
+      "am": "Desayuna y sal hacia la estación con la maleta. Elige un tren de mañana para llegar a Viena con tiempo de instalarte.",
+      "pm": "Viaja a Viena, llega al hotel y familiarízate con el barrio. Hoy no hace falta completar monumentos.",
+      "night": "Cena cerca del alojamiento y descansa para la caminata de mañana.",
+      "mobility": "Tren directo de unas 4–4½ horas. WESTbahn llega a Westbahnhof; otros servicios pueden llegar a Hauptbahnhof. Elige el hotel y el traslado urbano según la estación del billete.",
+      "spend": 1800,
+      "note": "La tarifa publicitada desde €23.99 es una referencia promocional, no una cotización para el 16 de diciembre. Confirma precio y horario antes de reservar."
+    },
+    {
+      "n": 11,
+      "date": "2026-12-17",
+      "title": "ruta imperial a pie, de la catedral al Ring",
+      "base": "Viena",
+      "places": [
+        "vienna-stephansdom",
+        "vienna-graben",
+        "vienna-peterskirche",
+        "vienna-cafe-central",
+        "vienna-hofburg",
+        "vienna-heldenplatz",
+        "vienna-volksgarten",
+        "vienna-parliament",
+        "vienna-rathaus",
+        "vienna-opera"
+      ],
+      "am": "Comienza en Stephansdom, la catedral de San Esteban. Sigue por Graben y entra brevemente en Peterskirche si está abierta. Continúa hacia el Palacio Ferstel, donde está Café Central: contempla el edificio y haz una pausa para café en un establecimiento abierto.",
+      "pm": "Camina hacia Hofburg y Heldenplatz. Cruza por Volksgarten si sus accesos están abiertos; después contempla Parlamento y Rathaus. La secuencia reúne plazas, jardines y fachadas sin convertir cada parada en una visita de museo.",
+      "night": "Disfruta el mercado de Rathaus y continúa hacia la Ópera para ver su exterior iluminado; puedes acortar este último tramo en tranvía. Cena al terminar.",
+      "mobility": "Aproximadamente 5–6 km de paseo repartidos durante el día, con comida y descansos. Metro o tranvía permiten omitir tramos si hace demasiado frío.",
+      "spend": 1700,
+      "note": "Café Central anuncia obras y aún no confirma su reapertura. La ruta conserva el edificio, pero no promete tomar café en su interior. Hofburg y Ópera se contemplan por fuera; una visita guiada o función requiere otra reserva y tiempo adicional."
+    },
+    {
+      "n": 12,
+      "date": "2026-12-18",
+      "title": "Schönbrunn: un palacio para disfrutar despacio",
+      "base": "Viena",
+      "places": [
+        "vienna-schonbrunn"
+      ],
+      "am": "Viaja a Schönbrunn y recorre las salas incluidas en la entrada que reserves. Deja que esta visita sea el centro del día.",
+      "pm": "Pasea por los sectores abiertos de los jardines, sin contar con los servicios estivales, y come con calma.",
+      "night": "Recorre el mercado navideño frente al palacio y vuelve a tu hotel.",
+      "mobility": "Metro y caminata hasta el acceso. Reserva medio día largo para palacio, exteriores y mercado.",
+      "spend": 2500,
+      "note": "Mercado de Schönbrunn anunciado del 6 de noviembre de 2026 al 6 de enero de 2027. El Sisi Pass publicado a €60 agrupa varias atracciones; sólo conviene si también visitarás las demás, no lo sumes a entradas equivalentes."
+    },
+    {
+      "n": 13,
+      "date": "2026-12-19",
+      "title": "Belvedere: arte y luces de Navidad",
+      "base": "Viena",
+      "places": [
+        "vienna-belvedere"
+      ],
+      "am": "Dedica la mañana al Belvedere Superior y su colección de arte, eligiendo una entrada con horario.",
+      "pm": "Disfruta la arquitectura y los jardines accesibles. Deja una pausa amplia para comer y descansar.",
+      "night": "Visita el mercado junto al Belvedere, anunciado del 20 de noviembre al 31 de diciembre de 2026.",
+      "mobility": "Tranvía, metro y tramos a pie según tu hotel. No es necesario contratar un coche.",
+      "spend": 2300,
+      "note": "Prioriza el Belvedere Superior; añadir otras exposiciones depende del interés y del presupuesto. Los jardines de invierno no lucen como en una fotografía de primavera."
+    },
+    {
+      "n": 14,
+      "date": "2026-12-20",
+      "title": "últimos paseos o excursión a Bratislava",
+      "base": "Viena",
+      "places": [
+        "bratislava"
+      ],
+      "am": "Opción tranquila: comienza sin prisa, vuelve a tu zona favorita de Viena o reserva el interior de Hofburg si te interesa. Alternativa: sal temprano en tren hacia Bratislava.",
+      "pm": "Si eliges Bratislava, pasea por su casco antiguo, come y regresa con margen. Si te quedas en Viena, aprovecha cafés, compras y descanso antes del vuelo.",
+      "night": "Duerme en el mismo hotel de Viena y prepara el equipaje. Bratislava no añade otra base.",
+      "mobility": "ÖBB publica trenes regionales Viena–Bratislava de alrededor de una hora. Confirma estación de llegada y conexiones urbanas; el Bratislava-Ticket incluye transporte urbano el primer día según sus condiciones.",
+      "spend": 1700,
+      "note": "El presupuesto base contempla una jornada en Viena. Para Bratislava, sustituye los gastos previstos por la cotización del billete y las visitas que elijas; reserva aproximadamente $800–$1,400 MXN adicionales si la excursión supera esa partida. Es una alternativa, no una obligación.",
+      "optionalPlaces": [
+        "bratislava"
+      ]
+    },
+    {
+      "n": 15,
+      "date": "2026-12-21",
+      "title": "vuelo a Ciudad de México desde Viena",
+      "base": "Regreso",
+      "places": [],
+      "am": "Entrega la habitación y llega al aeropuerto de Viena con unas tres horas de margen para tu vuelo.",
+      "pm": "Vuela a Ciudad de México con la conexión europea incluida en tu reserva.",
+      "night": "Llegada prevista a MEX el 21 de diciembre; verifica la fecha exacta del billete antes de solicitar vacaciones.",
+      "mobility": "Transporte urbano o tren al aeropuerto VIE y vuelo con conexión protegida hacia MEX.",
+      "spend": 650,
+      "note": "El calendario de 11 días laborales exige llegar a México el día 21. No hay un vuelo específico cotizado ni reservado."
+    }
+  ],
+  "work": 11,
+  "profile": {
+    "pace": "Equilibrado",
+    "solo": "Fácil",
+    "weather": "Alta",
+    "why": "El bloque bávaro concentra las excursiones; cinco noches en Viena dejan más tiempo para palacios y pausas. Los Alpes siguen dependiendo del clima.",
+    "weatherWhy": "La poca visibilidad o el viento pueden afectar Zugspitze y Eibsee; en Viena, lluvia o frío intenso pueden acortar los paseos imperiales y por los mercados.",
+    "soloWhy": "El tren entre Múnich y Viena y sus redes urbanas facilitan los traslados, mientras que las excursiones bávaras requieren más coordinación."
+  },
+  "experiences": [
+    "Mercados navideños de Múnich y Núremberg",
+    "Neuschwanstein y los paisajes del Eibsee",
+    "Una escapada a Salzburgo desde el mismo hotel",
+    "De Stephansdom a Hofburg por la Viena imperial",
+    "Schönbrunn y Belvedere entre arte y mercados"
+  ],
+  "routeCities": [
+    "Múnich",
+    "Füssen",
+    "Salzburgo",
+    "Garmisch-Partenkirchen",
+    "Núremberg",
+    "Viena"
+  ],
+  "cover": "vienna-rathaus",
+  "hotels": [],
+  "stays": [
+    [
+      "Múnich · 8 noches",
+      "Conserva una habitación privada en Altstadt o cerca de Hauptbahnhof y realiza todas las excursiones desde allí."
+    ],
+    [
+      "Viena · 5 noches",
+      "Busca en Innere Stadt o junto a una estación de metro en los distritos 2–9. Comprueba la conexión con la estación donde termine tu tren y con el aeropuerto."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Múnich",
+      "coords": [
+        48.1372,
+        11.5756
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Hohenschwangau",
+      "coords": [
+        47.5554,
+        10.7375
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "Füssen",
+      "coords": [
+        47.5696,
+        10.7004
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 3
+    },
+    {
+      "name": "Salzburgo",
+      "coords": [
+        47.8095,
+        13.055
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Garmisch-Partenkirchen",
+      "coords": [
+        47.4917,
+        11.0955
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Núremberg",
+      "coords": [
+        49.4521,
+        11.0767
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Oberammergau",
+      "coords": [
+        47.5981,
+        11.0641
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 7
+    },
+    {
+      "name": "Viena",
+      "coords": [
+        48.2082,
+        16.3738
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 8
+    },
+    {
+      "name": "Bratislava",
+      "coords": [
+        48.1486,
+        17.1077
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 9
+    }
+  ],
+  "family": {
+    "label": "Baviera · versión ampliada navideña",
+    "note": "15 días · 2 bases: Múnich y Viena"
+  },
+  "placeDescriptions": {
+    "vienna-rathaus": "Mercado navideño en Rathausplatz, ante el Ayuntamiento de Viena.",
+    "marienplatz": "Plaza central de Múnich, dominada por el ayuntamiento neogótico. En diciembre es el corazón de la experiencia navideña.",
+    "munich-town-hall": "Ayuntamiento neogótico de Múnich en la plaza Marienplatz.",
+    "nymphenburg": "Residencia barroca de verano de la casa bávara. En invierno prioriza el interior y un paseo breve por sus jardines.",
+    "frauenkirche-munich": "Catedral de Múnich reconocible por sus dos torres con cúpulas.",
+    "viktualienmarkt": "Mercado al aire libre en el centro histórico de Múnich.",
+    "neuschwanstein": "Palacio romántico de Luis II en las estribaciones alpinas. El interior sólo se visita con turno; los accesos exteriores dependen del hielo.",
+    "fussen": "Plaza y fuente del casco histórico de Füssen, entre Reichenstraße y Ritterstraße.",
+    "residenz": "Gran complejo palaciego de los gobernantes bávaros, con patios y salas ceremoniales. Una visita interior especialmente útil en días fríos.",
+    "alte-pinakothek": "Museo de pintura europea en el barrio de los museos de Múnich.",
+    "salzburg": "Ciudad barroca austríaca entre montañas, con fortaleza y calles históricas. Se visita desde Múnich sin cambiar de hotel.",
+    "hohensalzburg": "Fortaleza situada sobre la ciudad de Salzburgo.",
+    "getreidegasse": "Calle histórica de Salzburgo conocida por sus letreros de hierro.",
+    "zugspitze": "La cima más alta de Alemania, accesible mediante transporte de montaña. Las vistas dependen de nubes y viento; el día debe ser intercambiable.",
+    "eibsee": "El lago Eibsee en otoño, con las montañas del Wetterstein al fondo.",
+    "garmisch": "Localidad bávara al pie de los Alpes.",
+    "nuremberg-castle": "Castillo imperial que domina el casco antiguo de Núremberg.",
+    "st-lorenz-nuremberg": "Iglesia gótica de San Lorenzo en Núremberg.",
+    "nuremberg": "Ciudad de castillo, iglesias y mercados navideños. La excursión en tren ofrece un contraste medieval con Múnich.",
+    "deutsches-museum": "Museo de ciencia y tecnología situado junto al río Isar.",
+    "oberammergau": "Escena urbana con fachadas pintadas de Oberammergau.",
+    "linderhof": "Vista del palacio de Linderhof en Baviera.",
+    "vienna-stephansdom": "Catedral de San Esteban, en el centro histórico de Viena.",
+    "vienna-graben": "La calle Graben, paseo peatonal del centro de Viena.",
+    "vienna-peterskirche": "Fachada de la iglesia barroca de San Pedro, en Viena.",
+    "vienna-cafe-central": "Exterior del Café Central en el Palais Ferstel, Viena.",
+    "vienna-hofburg": "Fachada de la Neue Burg, parte del complejo imperial Hofburg.",
+    "vienna-heldenplatz": "Heldenplatz, plaza monumental junto al palacio Hofburg.",
+    "vienna-volksgarten": "Jardines del Volksgarten en el centro de Viena.",
+    "vienna-parliament": "Edificio del Parlamento austríaco en la Ringstrasse de Viena.",
+    "vienna-opera": "Fachada de la Ópera Estatal de Viena.",
+    "vienna-schonbrunn": "Palacio de Schönbrunn, antigua residencia de verano de los Habsburgo.",
+    "vienna-belvedere": "Palacio del Belvedere, conjunto barroco de Viena.",
+    "bratislava": "Plaza principal del casco antiguo de Bratislava, con el antiguo Ayuntamiento y la fuente de Roland."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

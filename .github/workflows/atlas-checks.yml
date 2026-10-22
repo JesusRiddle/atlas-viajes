@@ -1,0 +1,35 @@
+name: Atlas checks
+
+on:
+  push:
+    branches:
+      - refactor/atlas-viajes-modulares-20261019
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regression:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript syntax
+        run: |
+          find . -type f \( -name '*.js' -o -name '*.cjs' \) -not -path './.git/*' -print0 | xargs -0 -n1 node --check
+      - name: Validate trip JSON
+        run: |
+          node -e "const fs=require('node:fs');for(const f of fs.readdirSync('data/trips').filter(f=>f.endsWith('.json'))){JSON.parse(fs.readFileSync('data/trips/'+f,'utf8'));}"
+      - name: Run regression tests
+        run: node --test tests/*.test.cjs
+      - name: Install Chromium browser for UI regression
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Desktop and Mobile browser smoke tests
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 &
+          node tests/browser-smoke.cjs

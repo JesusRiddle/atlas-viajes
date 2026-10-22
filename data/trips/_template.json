@@ -1,0 +1,122 @@
+{
+  "id": "nuevo-viaje",
+  "name": "Nuevo destino",
+  "flag": null,
+  "status": "draft",
+  "start": null,
+  "end": null,
+  "tag": null,
+  "routeCities": [],
+  "bases": [],
+  "work": null,
+  "costs": [],
+  "profile": {
+    "pace": null,
+    "paceWhy": null,
+    "solo": null,
+    "soloWhy": null,
+    "weather": null,
+    "weatherWhy": null,
+    "why": null
+  },
+  "intro": null,
+  "climate": null,
+  "solo": null,
+  "flight": null,
+  "local": null,
+  "experiences": [],
+  "days": [],
+  "reservations": [],
+  "exchangeRates": {},
+  "exchangeRateSnapshot": null,
+  "expenses": [],
+  "majorTransport": [],
+  "ticketNotes": [],
+  "attractionTerms": [],
+  "cover": null,
+  "mapPoints": [],
+  "planningDetails": null,
+  "lodgingSummary": null,
+  "heroLodgingSummary": null,
+  "budgetPreliminary": true,
+  "hotels": [],
+  "stays": [],
+  "seasonality": {
+    "summary": null,
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": null
+      },
+      "11": {
+        "status": "pending",
+        "description": null
+      },
+      "12": {
+        "status": "pending",
+        "description": null
+      },
+      "01": {
+        "status": "pending",
+        "description": null
+      },
+      "02": {
+        "status": "pending",
+        "description": null
+      },
+      "03": {
+        "status": "pending",
+        "description": null
+      },
+      "04": {
+        "status": "pending",
+        "description": null
+      },
+      "05": {
+        "status": "pending",
+        "description": null
+      },
+      "06": {
+        "status": "pending",
+        "description": null
+      },
+      "07": {
+        "status": "pending",
+        "description": null
+      },
+      "08": {
+        "status": "pending",
+        "description": null
+      },
+      "09": {
+        "status": "pending",
+        "description": null
+      }
+    }
+  },
+  "practicalIndicators": [],
+  "tips": [],
+  "sources": [],
+  "sourceNote": null,
+  "budgetRange": null,
+  "budgetNote": null,
+  "placeDescriptions": {},
+  "optionalSection": null,
+  "family": null,
+  "layoutClass": null,
+  "formatName": false,
+  "routeHighlights": [],
+  "cardHighlights": [],
+  "introHighlights": [],
+  "boldCityNames": false,
+  "emphasisStyle": false,
+  "linkRailInText": false,
+  "knownCosts": [],
+  "costExclusions": null,
+  "exchangeNote": null,
+  "railSummary": [],
+  "railTotal": null,
+  "railExclusions": null,
+  "railCurrencyNote": null,
+  "heroEyebrow": null
+}

@@ -1,0 +1,3253 @@
+{
+  "sagrada": {
+    "name": "Sagrada Familia",
+    "photo": {
+      "src": "photos/sagrada.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASF_maig_2_cropped.jpg",
+      "author": "Canaan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Canaan"
+    }
+  },
+  "guell": {
+    "name": "Park Güell",
+    "photo": {
+      "src": "photos/guell.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AParc_guell_-_panoramio.jpg",
+      "author": "essetefano",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "essetefano"
+    }
+  },
+  "batllo": {
+    "name": "Casa Batlló",
+    "photo": {
+      "src": "photos/batllo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ACasa_Batllo_Overview_Barcelona_Spain_cut.jpg",
+      "author": "ChristianSchd",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "ChristianSchd"
+    }
+  },
+  "gotico": {
+    "name": "Barrio Gótico",
+    "photo": {
+      "src": "photos/gotico.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABarcelona_-_Carrer_del_Bisbe.jpg",
+      "author": "Llull",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Llull"
+    }
+  },
+  "santpau": {
+    "name": "Recinto Modernista de Sant Pau",
+    "photo": {
+      "src": "photos/santpau.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AHospital_Sant_Pau%2C_main_facade.jpg",
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Thomas Ledl"
+    }
+  },
+  "montjuic": {
+    "name": "Montjuïc",
+    "photo": {
+      "src": "photos/montjuic.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AFale_-_Spain_-_Barcelona_-_8.jpg",
+      "author": "Fabio Alessandro Locati",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Fabio Alessandro Locati"
+    }
+  },
+  "prado": {
+    "name": "Museo del Prado",
+    "photo": {
+      "src": "photos/prado.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AMuseo_del_Prado_2016_%2825185969599%29.jpg",
+      "author": "Emilio J. Rodríguez Posada",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Emilio J. Rodríguez Posada"
+    }
+  },
+  "palacio": {
+    "name": "Palacio Real de Madrid",
+    "photo": {
+      "src": "photos/palacio.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ARoyal_Palace_of_Madrid_viewed_from_a_distance.jpg",
+      "author": "Sheila1988",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Sheila1988"
+    }
+  },
+  "retiro": {
+    "name": "Parque del Retiro",
+    "photo": {
+      "src": "photos/retiro.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AMADRID_051116_MXALX_041.jpg",
+      "author": "Max Alexander / PromoMadrid",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Max Alexander / PromoMadrid"
+    }
+  },
+  "toledo": {
+    "name": "Toledo",
+    "photo": {
+      "src": "photos/toledo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AToledo_%2837737041515%29.jpg",
+      "author": "Dmitry Dzhus from London",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Dmitry Dzhus from London"
+    }
+  },
+  "alcazar": {
+    "name": "Real Alcázar de Sevilla",
+    "photo": {
+      "src": "photos/alcazar.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASevilla-2-2_%2848040287512%29-edit.jpg",
+      "author": "Ajay Suresh from New York, NY, USA. Edited by MenkinAlRire",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Ajay Suresh from New York, NY, USA. Edited by MenkinAlRire"
+    }
+  },
+  "catedral": {
+    "name": "Catedral de Sevilla y Giralda",
+    "photo": {
+      "src": "photos/catedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASevilla_Cathedral_-_Southeast.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Ingo Mehling"
+    }
+  },
+  "plazaespana": {
+    "name": "Plaza de España, Sevilla",
+    "photo": {
+      "src": "photos/plazaespana.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3A9._Mai_1929%2C_an_diesem_Tag_wurde_die_Iberoamerikanische_Ausstellung_in_Sevilla_er%C3%B6ffnet._19.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Holger Uwe Schmitt"
+    }
+  },
+  "cordoba": {
+    "name": "Mezquita-Catedral de Córdoba",
+    "photo": {
+      "src": "photos/cordoba.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AMosque_Cordoba_edited.jpg",
+      "author": "Timor Espallargas",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "attribution": "Timor Espallargas"
+    }
+  },
+  "alhambra": {
+    "name": "Alhambra y Generalife",
+    "photo": {
+      "src": "photos/alhambra.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ADawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg",
+      "author": "Jebulon",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Jebulon"
+    }
+  },
+  "albaicin": {
+    "name": "Albaicín",
+    "photo": {
+      "src": "photos/albaicin.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AEl_Albayz%C3%ADn_panorama_%282010%29.jpg",
+      "author": "Bert K.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Bert K."
+    }
+  },
+  "malaga": {
+    "name": "Alcazaba de Málaga",
+    "photo": {
+      "src": "photos/malaga.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AAlcazaba_de_M%C3%A1laga_001.JPG",
+      "author": "Américo Toledano",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Américo Toledano"
+    }
+  },
+  "ronda": {
+    "name": "Puente Nuevo de Ronda",
+    "photo": {
+      "src": "photos/ronda.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3A%22Puente_Nuevo%22_de_Ronda.jpg",
+      "author": "Andbog",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Andbog"
+    }
+  },
+  "marienplatz": {
+    "name": "Marienplatz",
+    "photo": {
+      "src": "photos/marienplatz.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ARathaus_and_Marienplatz_from_Peterskirche_-_August_2006.jpg",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Diliff"
+    }
+  },
+  "neuschwanstein": {
+    "name": "Castillo de Neuschwanstein",
+    "photo": {
+      "src": "photos/neuschwanstein.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASchloss_Neuschwanstein_2013.jpg",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Thomas Wolf, www.foto-tw.de"
+    }
+  },
+  "nymphenburg": {
+    "name": "Palacio de Nymphenburg",
+    "photo": {
+      "src": "photos/nymphenburg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AImage-Schloss_Nymphenburg_Munich_CC_edit3.jpg",
+      "author": "Original:  Richard Bartz, Munich aka Makro Freak \nDerivative work:  Crassic",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "attribution": "Original:  Richard Bartz, Munich aka Makro Freak \nDerivative work:  Crassic"
+    }
+  },
+  "salzburg": {
+    "name": "Salzburgo",
+    "photo": {
+      "src": "photos/salzburg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASalzburg_-_Salzburger_Dom_02_-_2018-08-20.jpg",
+      "author": "Rafa Esteve",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Rafa Esteve"
+    }
+  },
+  "zugspitze": {
+    "name": "Zugspitze",
+    "photo": {
+      "src": "photos/zugspitze.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AZugspitzeJubilaeumsgratHoellental.JPG",
+      "author": "Christian Nawroth",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Christian Nawroth"
+    }
+  },
+  "nuremberg": {
+    "name": "Núremberg",
+    "photo": {
+      "src": "photos/nuremberg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ANassauer_Haus_N%C3%BCrnberg_DSCF2831.jpg",
+      "author": "Martina Nolte",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Foto: Martina Nolte, Lizenz: Creative Commons by-sa-3.0 de"
+    }
+  },
+  "lucerne": {
+    "name": "Lucerna",
+    "photo": {
+      "src": "photos/lucerne.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ALuzern_Kapellbr%C3%BCcke_1180623.jpg",
+      "author": "Ermell",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Ermell"
+    }
+  },
+  "zermatt": {
+    "name": "Zermatt y el Cervino",
+    "photo": {
+      "src": "photos/zermatt.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3A00_106_0604_Zmutt_-_Zermatt_%28CH%29.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "W. Bulach"
+    }
+  },
+  "gornergrat": {
+    "name": "Gornergrat",
+    "photo": {
+      "src": "photos/gornergrat.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AGornergrat.jpg",
+      "author": "Johnw",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "attribution": "Johnw"
+    }
+  },
+  "glacier": {
+    "name": "Glacier Express",
+    "photo": {
+      "src": "photos/glacier.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AGlacierLandwasser.jpg",
+      "author": "Champer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Champer"
+    }
+  },
+  "stmoritz": {
+    "name": "St. Moritz",
+    "photo": {
+      "src": "photos/stmoritz.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AExterior_Winter_2016_17_Fotograf_Romano_Salis_%2821%29.jpg",
+      "author": "Travelleronthego49",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Travelleronthego49"
+    }
+  },
+  "belem": {
+    "name": "Torre de Belém",
+    "photo": {
+      "src": "photos/belem.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Torre_Belém_April_2009-4a.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Alvesgaspar / CC BY-SA 3.0"
+    }
+  },
+  "jeronimos": {
+    "name": "Monasterio de los Jerónimos",
+    "photo": {
+      "src": "photos/jeronimos.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Jerónimos_April_2009-4.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Alvesgaspar / CC BY-SA 3.0"
+    }
+  },
+  "alfama": {
+    "name": "Alfama",
+    "photo": {
+      "src": "photos/alfama.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lisbon_alfalma.jpg",
+      "author": "© Arne Müseler",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Photo: Arne Müseler / arne-mueseler.com / CC BY-SA 3.0"
+    }
+  },
+  "pena": {
+    "name": "Palacio da Pena",
+    "photo": {
+      "src": "photos/pena.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sintra_Portugal_Palácio_da_Pena-01.jpg",
+      "author": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Photo by CEphoto, Uwe Aranas / CC BY-SA 3.0"
+    }
+  },
+  "regaleira": {
+    "name": "Quinta da Regaleira",
+    "photo": {
+      "src": "photos/regaleira.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Quinta_da_Regaleira,_Sintra,_Portugal,_2019-05-25,_DD_56.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Diego Delso / CC BY-SA 4.0"
+    }
+  },
+  "ribeira": {
+    "name": "Ribeira de Porto",
+    "photo": {
+      "src": "photos/ribeira.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ribeira_do_porto.jpg",
+      "author": "Gustavo Motta",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Gustavo Motta / CC BY-SA 3.0"
+    }
+  },
+  "lello": {
+    "name": "Livraria Lello",
+    "photo": {
+      "src": "photos/lello.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lello_Bookshop_9_April_2026.jpg",
+      "author": "Guinness323",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Guinness323 / CC0 1.0"
+    }
+  },
+  "douro": {
+    "name": "Valle del Douro",
+    "photo": {
+      "src": "photos/douro.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Rio_Douro_-_Portugal_(32615481975)_(cropped).jpg",
+      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Vitor Oliveira from Torres Vedras, PORTUGAL / CC BY-SA 2.0"
+    }
+  },
+  "guimaraes": {
+    "name": "Guimarães",
+    "photo": {
+      "src": "photos/guimaraes.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Guimaraes-Portugal.jpg",
+      "author": "Otto Domes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Otto Domes / CC BY-SA 4.0"
+    }
+  },
+  "coimbra": {
+    "name": "Coimbra",
+    "photo": {
+      "src": "photos/coimbra.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Coimbra_November_2012-7.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Alvesgaspar"
+    }
+  },
+  "acropolis": {
+    "name": "Acrópolis de Atenas",
+    "photo": {
+      "src": "photos/acropolis.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:1029_Acropolis_of_Athens_in_Greece_at_night_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Giles Laurent / CC BY-SA 4.0"
+    }
+  },
+  "delphi": {
+    "name": "Delfos",
+    "photo": {
+      "src": "photos/delphi.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Delphi,_Greece_-_panoramio.jpg",
+      "author": "tamara semina",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "tamara semina / CC BY-SA 3.0"
+    }
+  },
+  "meteora": {
+    "name": "Meteora",
+    "photo": {
+      "src": "photos/meteora.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Meteora's_monastery_2.jpg",
+      "author": "Stathis floros",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Stathis floros / CC BY-SA 4.0"
+    }
+  },
+  "nafplio": {
+    "name": "Nafplio",
+    "photo": {
+      "src": "photos/nafplio.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Δημαρχείο_Ναυπλίου,_Nafplio_Town_Hall.jpg",
+      "author": "Apaleutos25",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Apaleutos25 / CC BY-SA 4.0"
+    }
+  },
+  "mycenae": {
+    "name": "Micenas",
+    "photo": {
+      "src": "photos/mycenae.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Path_upto_the_Lion_Gate,_Mycenae_(28693130016).jpg",
+      "author": "Andy Hay from UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Andy Hay from UK / CC BY 2.0"
+    }
+  },
+  "epidaurus": {
+    "name": "Epidauro",
+    "photo": {
+      "src": "photos/epidaurus.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_great_theater_of_Epidaurus,_designed_by_Polykleitos_the_Younger_in_the_4th_century_BC,_Sanctuary_of_Asklepeios_at_Epidaurus,_Greece_(14015010416).jpg",
+      "author": "Carole Raddato from FRANKFURT, Germany",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Carole Raddato from FRANKFURT, Germany / CC BY-SA 2.0"
+    }
+  },
+  "palermo": {
+    "name": "Catedral de Palermo",
+    "photo": {
+      "src": "photos/palermo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Panoramica_Cattedrale_di_Palermo.jpg",
+      "author": "Kiban",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Kiban / CC BY-SA 3.0"
+    }
+  },
+  "monreale": {
+    "name": "Catedral de Monreale",
+    "photo": {
+      "src": "photos/monreale.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:\"Die_Kathedrale_zeigt_in_besonders_eindrucksvoller_Weise_den_normannisch-arabisch-byzantinischen_Baustil\"_02.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Holger Uwe Schmitt / CC BY-SA 4.0"
+    }
+  },
+  "agrigento": {
+    "name": "Valle de los Templos, Agrigento",
+    "photo": {
+      "src": "photos/agrigento.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Concordiatempel_Tempio_della_Temple_of_Concordia_de_la_Concorde_Tal_der_Tempel_Valle_dei_Templi_Agrigento_Sizilien_Foto_Wolfgang_Pehlemann_DSC07490.jpg",
+      "author": "Wolfgang Pehlemann",
+      "license": "CC BY-SA 3.0 DE",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Wolfgang Pehlemann / CC BY-SA 3.0 DE"
+    }
+  },
+  "ortigia": {
+    "name": "Ortigia, Siracusa",
+    "photo": {
+      "src": "photos/ortigia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ortigia_dall'alto.jpg",
+      "author": "Agostino Artnoir Sella",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Agostino Artnoir Sella / CC BY-SA 2.0"
+    }
+  },
+  "noto": {
+    "name": "Noto",
+    "photo": {
+      "src": "photos/noto.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Noto_BW_2025-04-26_10-12-43_(cropped).jpg",
+      "author": "Berthold Werner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Berthold Werner / CC BY-SA 4.0"
+    }
+  },
+  "catania": {
+    "name": "Catania",
+    "photo": {
+      "src": "photos/catania.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza_duomo_Catania.jpg",
+      "author": "Giuseppe Pappa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Giuseppe Pappa / CC BY-SA 4.0"
+    }
+  },
+  "etna": {
+    "name": "Etna",
+    "photo": {
+      "src": "photos/etna.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Etna.jpg",
+      "author": "Yure13",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Yure13 / CC BY-SA 3.0"
+    }
+  },
+  "taormina": {
+    "name": "Taormina",
+    "photo": {
+      "src": "photos/taormina.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_coast_of_Taormina_(view_from_the_southeast).jpg",
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Carsten Steger / CC BY-SA 4.0"
+    }
+  },
+  "hagia": {
+    "name": "Santa Sofía",
+    "photo": {
+      "src": "photos/hagia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Haghia_Sophia.jpg",
+      "author": "Cpodwrites",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Cpodwrites / CC BY-SA 3.0"
+    }
+  },
+  "blue": {
+    "name": "Mezquita Azul",
+    "photo": {
+      "src": "photos/blue.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Istanbul_(34223582516)_(cropped).jpg",
+      "author": "Pedro Szekely from Los Angeles, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Pedro Szekely from Los Angeles, USA / CC BY-SA 2.0"
+    }
+  },
+  "topkapi": {
+    "name": "Palacio Topkapı",
+    "photo": {
+      "src": "photos/topkapi.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Topkapı_-_01.jpg",
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Carlos Delgado / CC BY-SA 3.0"
+    }
+  },
+  "cappadocia": {
+    "name": "Capadocia",
+    "photo": {
+      "src": "photos/cappadocia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:CappadociaBalloons.jpg",
+      "author": "İlkerkatik",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "İlkerkatik / CC BY-SA 3.0"
+    }
+  },
+  "ephesus": {
+    "name": "Éfeso",
+    "photo": {
+      "src": "photos/ephesus.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ephesus_Celsus_Library_Façade.jpg",
+      "author": "Benh LIEU SONG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Benh LIEU SONG / CC BY-SA 3.0"
+    }
+  },
+  "izmir": {
+    "name": "Izmir",
+    "photo": {
+      "src": "photos/izmir.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:A_panoramic_view_of_the_Alsancak_quarter_in_Izmir.jpg",
+      "author": "A.Savin",
+      "license": "Free Art License",
+      "licenseUrl": "https://artlibre.org/licence/lal/en/",
+      "attribution": "A.Savin, Wikipedia / Free Art License"
+    }
+  },
+  "capitol": {
+    "name": "Capitolio de Estados Unidos",
+    "photo": {
+      "src": "photos/capitol.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:US_Capitol_east_side.JPG",
+      "author": "Martin Falbisoner (1978–)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Martin Falbisoner (1978–) / CC BY-SA 3.0"
+    }
+  },
+  "lincoln": {
+    "name": "Lincoln Memorial",
+    "photo": {
+      "src": "photos/lincoln.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lincoln_Memorial_east_side.JPG",
+      "author": "Martin Falbisoner (1978–)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Martin Falbisoner (1978–) / CC BY-SA 3.0"
+    }
+  },
+  "smithsonian": {
+    "name": "Museos Smithsonian",
+    "photo": {
+      "src": "photos/smithsonian.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Smithsonian_Building_Sunlight.jpg",
+      "author": "Nate Lee",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Nate Lee / CC BY-SA 4.0"
+    }
+  },
+  "georgetown": {
+    "name": "Georgetown",
+    "photo": {
+      "src": "photos/georgetown.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Riggs_Bank,_Georgetown.jpg",
+      "author": "Ben Schumin",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attribution": "Ben Schumin / CC BY-SA 2.5"
+    }
+  },
+  "frenchquarter": {
+    "name": "French Quarter",
+    "photo": {
+      "src": "photos/frenchquarter.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:French_Quarter,_looking_north_with_Mississippi_River_to_the_right_2011.jpg",
+      "author": "Chris Litherland",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Chris Litherland / CC BY-SA 3.0"
+    }
+  },
+  "gardendistrict": {
+    "name": "Garden District",
+    "photo": {
+      "src": "photos/gardendistrict.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:20080622_St._Charles_St._Trolley_behind_tree_with_Mardi_Gras_beads.JPG",
+      "author": "TonyTheTiger",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "TonyTheTiger / CC BY-SA 3.0"
+    }
+  },
+  "bayou": {
+    "name": "Bayous de Luisiana",
+    "photo": {
+      "src": "photos/bayou.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Atchafalaya_Basin.jpg",
+      "author": "U.S. Army Corps of Engineers, photographer not specified or unknown",
+      "license": "Public domain (US federal government)",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Atchafalaya_Basin.jpg",
+      "attribution": "U.S. Army Corps of Engineers, photographer not specified or unknown / Public domain (US federal government)"
+    }
+  },
+  "strip": {
+    "name": "Las Vegas Strip",
+    "photo": {
+      "src": "photos/strip.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Las_Vegas_Strip_09_2017_4897.jpg",
+      "author": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Mariordo (Mario Roberto Durán Ortiz) / CC BY-SA 4.0"
+    }
+  },
+  "hoover": {
+    "name": "Hoover Dam",
+    "photo": {
+      "src": "photos/hoover.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2017_Aerial_view_Hoover_Dam_4774.jpg",
+      "author": "Mariordo (Mario Roberto Durán Ortiz)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Mariordo (Mario Roberto Durán Ortiz) / CC BY-SA 4.0"
+    }
+  },
+  "grandcanyon": {
+    "name": "Grand Canyon, South Rim",
+    "photo": {
+      "src": "photos/grandcanyon.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Canyon_River_Tree_(165872763).jpeg",
+      "author": "Lennart Sikkema",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "Lennart Sikkema / CC BY 3.0"
+    }
+  },
+  "alamo": {
+    "name": "The Alamo",
+    "photo": {
+      "src": "photos/alamo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Alamo_pano.jpg",
+      "author": "Daniel Schwen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Daniel Schwen / CC BY-SA 4.0"
+    }
+  },
+  "riverwalk": {
+    "name": "San Antonio River Walk",
+    "photo": {
+      "src": "photos/riverwalk.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Riverwalk20.jpg",
+      "author": "Kkmd (talk · contribs)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Kkmd (talk · contribs) / CC BY-SA 3.0"
+    }
+  },
+  "missions": {
+    "name": "Misiones de San Antonio",
+    "photo": {
+      "src": "photos/missions.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mission_Concepcion_San_Antonio.JPG",
+      "author": "Liveon001 ©Travis Witt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Liveon001 ©Travis Witt / CC BY-SA 3.0"
+    }
+  },
+  "marrakech": {
+    "name": "Marrakech",
+    "photo": {
+      "src": "photos/marrakech.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pavillon_Menaragärten.jpg",
+      "author": "Acp",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Acp / CC BY-SA 3.0"
+    }
+  },
+  "bahia": {
+    "name": "Palacio de la Bahía",
+    "photo": {
+      "src": "photos/bahia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bahia_Palace_large_court.jpg",
+      "author": "Val Traveler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Val Traveler / CC BY-SA 4.0"
+    }
+  },
+  "essaouira": {
+    "name": "Essaouira",
+    "photo": {
+      "src": "photos/essaouira.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:\"Ein_Schmelztiegel_der_Kulturen\"._16.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Holger Uwe Schmitt / CC BY-SA 4.0"
+    }
+  },
+  "majorelle": {
+    "name": "Jardín Majorelle",
+    "photo": {
+      "src": "photos/majorelle.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Le_jardin_des_majorelle_40.JPG",
+      "author": "Viault",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Viault / CC BY-SA 3.0"
+    }
+  },
+  "agafay": {
+    "name": "Agafay",
+    "photo": {
+      "src": "photos/agafay.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Agafay.jpg",
+      "author": "Josephhassane",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Josephhassane / CC0 1.0"
+    }
+  },
+  "zurich": {
+    "name": "Zúrich, casco antiguo",
+    "photo": {
+      "src": "photos/zurich.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:ZH_Grossmuenster_Limmat.JPG",
+      "author": "Drahnreb",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "attribution": "Drahnreb"
+    }
+  },
+  "alexandria": {
+    "name": "Old Town Alexandria",
+    "photo": {
+      "src": "photos/alexandria.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Alexandria_City_Hall_-_south_façade.jpg",
+      "author": "APK",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "APK / CC BY-SA 4.0"
+    }
+  },
+  "residenz": {
+    "name": "Residenz de Múnich",
+    "photo": {
+      "src": "photos/residenz.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Munich_Residenz.jpg",
+      "author": "Carsten Steger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Carsten Steger"
+    }
+  },
+  "barcelona-cathedral": {
+    "name": "Catedral de Barcelona",
+    "photo": {
+      "src": "photos/barcelona-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Barcelona_Cathedral_Saint_Eulalia.jpg",
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Fernando"
+    }
+  },
+  "born-barcelona": {
+    "name": "Paseo del Born",
+    "photo": {
+      "src": "photos/born-barcelona.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Barcelona_-_El_Born._Passeig_del_Born.jpg",
+      "author": "Fred Romero",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Fred Romero"
+    }
+  },
+  "passeig-gracia": {
+    "name": "Passeig de Gràcia",
+    "photo": {
+      "src": "photos/passeig-gracia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Via_Barcelona_Casa_Mil%C3%A0.JPG",
+      "author": "Andrew",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Andrew"
+    }
+  },
+  "pedrera": {
+    "name": "Casa Milà · La Pedrera",
+    "photo": {
+      "src": "photos/pedrera.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Casa_Mil%C3%A0%2C_general_view.jpg",
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Thomas Ledl"
+    }
+  },
+  "mnac": {
+    "name": "Museo Nacional de Arte de Cataluña",
+    "photo": {
+      "src": "photos/mnac.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Museu_nacional_d%27art_de_catalunya_2.jpg",
+      "author": "Jvhertum",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Jvhertum"
+    }
+  },
+  "port-vell": {
+    "name": "Port Vell",
+    "photo": {
+      "src": "photos/port-vell.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Port_Vell,_El_moll_de_la_Fusta.jpg",
+      "author": "NeusCGarcia",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "NeusCGarcia"
+    }
+  },
+  "santa-cruz-seville": {
+    "name": "Barrio de Santa Cruz",
+    "photo": {
+      "src": "photos/santa-cruz-seville.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:SevillaBarrioDeSantaCruz01.jpg",
+      "author": "Si B",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Si B"
+    }
+  },
+  "roman-bridge-cordoba": {
+    "name": "Puente romano de Córdoba",
+    "photo": {
+      "src": "photos/roman-bridge-cordoba.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Puente_Romano_Cordoba.jpg",
+      "author": "Rafesmar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Rafesmar"
+    }
+  },
+  "juderia-cordoba": {
+    "name": "Judería de Córdoba",
+    "photo": {
+      "src": "photos/juderia-cordoba.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cordoba,_Spain_(11174916253).jpg",
+      "author": "Wolfgang Manousek from Dormagen, Germany",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Wolfgang Manousek from Dormagen, Germany"
+    }
+  },
+  "maria-luisa": {
+    "name": "Parque de María Luisa",
+    "photo": {
+      "src": "photos/maria-luisa.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Isleta_de_los_patos_pml_2012001.jpg",
+      "author": "Anual",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Anual"
+    }
+  },
+  "triana": {
+    "name": "Triana y su puente",
+    "photo": {
+      "src": "photos/triana.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Guadalquivir_y_puente_de_Triana,_Sevilla,_Espa%C3%B1a,_2015.jpg",
+      "author": "Benjamín Núñez González",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Benjamín Núñez González"
+    }
+  },
+  "casa-pilatos": {
+    "name": "Casa de Pilatos",
+    "photo": {
+      "src": "photos/casa-pilatos.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Casa_de_Pilatos-Sevilla.jpg",
+      "author": "Kiko León",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Kiko León"
+    }
+  },
+  "malaga-cathedral": {
+    "name": "Catedral de Málaga",
+    "photo": {
+      "src": "photos/malaga-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:254_Jahre_dauerte_es_bis_der_Bau_der_Kathedrale_von_Malaga_vollendet_war._02.jpg",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Holger Uwe Schmitt"
+    }
+  },
+  "malaga-port": {
+    "name": "Puerto de Málaga",
+    "photo": {
+      "src": "photos/malaga-port.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Port_of_M%C3%A1laga_(22999244322).jpg",
+      "author": "Adrian Scottow from London, England",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Adrian Scottow from London, England"
+    }
+  },
+  "malaga-roman-theatre": {
+    "name": "Teatro romano de Málaga",
+    "photo": {
+      "src": "photos/malaga-roman-theatre.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Roman_Malaga.jpg",
+      "author": "andynash",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "andynash"
+    }
+  },
+  "picasso-malaga": {
+    "name": "Museo Picasso Málaga",
+    "photo": {
+      "src": "photos/picasso-malaga.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:MuseoPicassoMalaga.jpg",
+      "author": "Llecco",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Llecco"
+    }
+  },
+  "gibralfaro": {
+    "name": "Gibralfaro",
+    "photo": {
+      "src": "photos/gibralfaro.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Castillo_de_Gibralfaro,_OCT2015.jpg",
+      "author": "Jwh",
+      "license": "CC BY-SA 3.0 lu",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/lu/deed.en",
+      "attribution": "Jwh"
+    }
+  },
+  "muelle-uno": {
+    "name": "Muelle Uno",
+    "photo": {
+      "src": "photos/muelle-uno.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Muelle_1_puerto_de_m%C3%A1laga.jpg",
+      "author": "paolotrabattoni.it",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "paolotrabattoni.it"
+    }
+  },
+  "san-nicolas-granada": {
+    "name": "Mirador de San Nicolás",
+    "photo": {
+      "src": "photos/san-nicolas-granada.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Granada_-_View_from_Mirador_de_San_Nicol%C3%A1s_-_01.jpg",
+      "author": "Benjamin Smith",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Benjamin Smith"
+    }
+  },
+  "ronda-old-town": {
+    "name": "Palacio de Mondragón",
+    "photo": {
+      "src": "photos/ronda-old-town.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Palacio_de_Mondragon_-_Plaza_Mondrag%C3%B3n,_Ronda_(14661139774).jpg",
+      "author": "Elliott Brown from Birmingham, United Kingdom",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Elliott Brown from Birmingham, United Kingdom"
+    }
+  },
+  "malagueta": {
+    "name": "Playa de la Malagueta",
+    "photo": {
+      "src": "photos/malagueta.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Malaguetabeach2_%28cropped%292.jpg",
+      "author": "Matt Biddulph",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Matt Biddulph"
+    }
+  },
+  "plaza-mayor-madrid": {
+    "name": "Plaza Mayor de Madrid",
+    "photo": {
+      "src": "photos/plaza-mayor-madrid.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Madrid_May_2014-42a.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Alvesgaspar"
+    }
+  },
+  "puerta-sol": {
+    "name": "Puerta del Sol",
+    "photo": {
+      "src": "photos/puerta-sol.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Madrid_Puerta_del_Sol_(49882844387).jpg",
+      "author": "Jorge Franganillo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Jorge Franganillo"
+    }
+  },
+  "letras-madrid": {
+    "name": "Plaza de Santa Ana",
+    "photo": {
+      "src": "photos/letras-madrid.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Plaza_de_Santa_Ana_(Madrid)_02.jpg",
+      "author": "Luis García (Zaqarbal)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Luis García (Zaqarbal)"
+    }
+  },
+  "almudena": {
+    "name": "Catedral de la Almudena",
+    "photo": {
+      "src": "photos/almudena.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Catedral_de_la_Almudena_-_130826_211731.jpg",
+      "author": "Barcex",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Barcex"
+    }
+  },
+  "plaza-oriente": {
+    "name": "Plaza de Oriente",
+    "photo": {
+      "src": "photos/plaza-oriente.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Madrid_-_Royal_Palace_of_Madrid_-_20171027160239.jpg",
+      "author": "Oliver Gargan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Oliver Gargan"
+    }
+  },
+  "gran-via": {
+    "name": "Gran Vía de Madrid",
+    "photo": {
+      "src": "photos/gran-via.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Edificio_Telef%C3%B3nica_%28Gran_V%C3%ADa_28%2C_Madrid%29_05.jpg",
+      "author": "Luis García (Zaqarbal)",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "attribution": "Luis García (Zaqarbal)"
+    }
+  },
+  "toledo-cathedral": {
+    "name": "Catedral de Toledo",
+    "photo": {
+      "src": "photos/toledo-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:FP_Toledo_Cathedral_2025_-_West_fa%C3%A7ade.jpg",
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Fernando"
+    }
+  },
+  "santa-maria-blanca-toledo": {
+    "name": "Santa María la Blanca",
+    "photo": {
+      "src": "photos/santa-maria-blanca-toledo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Mar%C3%ADa_la_Blanca_-_Arcos.jpg",
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Fernando"
+    }
+  },
+  "mirador-valle-toledo": {
+    "name": "Mirador del Valle",
+    "photo": {
+      "src": "photos/mirador-valle-toledo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Toledo_-_Panorama_desde_Mirador_del_Valle.jpg",
+      "author": "Rafesmar",
+      "license": "CC BY-SA 3.0 es",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/deed.en",
+      "attribution": "Rafesmar"
+    }
+  },
+  "baixa-lisbon": {
+    "name": "Praça do Comércio",
+    "photo": {
+      "src": "photos/baixa-lisbon.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Empty_Pra%C3%A7a_do_Com%C3%A9rcio_during_the_COVID-19_lockdown,_Lisbon,_Portugal_julesvernex2.jpg",
+      "author": "Jules Verne Times Two",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Jules Verne Times Two"
+    }
+  },
+  "deutsches-museum": {
+    "name": "Deutsches Museum",
+    "photo": {
+      "src": "photos/deutsches-museum.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Deutsches_Museum_Portrait_4.jpg",
+      "author": "Burkhard Mücke",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Burkhard Mücke"
+    }
+  },
+  "grossmunster": {
+    "name": "Grossmünster",
+    "photo": {
+      "src": "photos/grossmunster.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Grossm%C3%BCnster_-_M%C3%BCnsterhof_2014-05-23_12-08-43.JPG",
+      "author": "Roland zh",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Roland zh"
+    }
+  },
+  "dom-luis-bridge": {
+    "name": "Puente de Dom Luís I",
+    "photo": {
+      "src": "photos/dom-luis-bridge.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Dom_Lu%C3%ADs_I_Bridge_(36961760686).jpg",
+      "author": "Deensel",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Deensel"
+    }
+  },
+  "munich-town-hall": {
+    "name": "Nuevo Ayuntamiento de Múnich",
+    "photo": {
+      "src": "photos/munich-town-hall.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Neues_Rathaus_M%C3%BCnchen_2018.jpg",
+      "author": "Steffen Flor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Steffen Flor"
+    }
+  },
+  "tile-museum-lisbon": {
+    "name": "Museo Nacional del Azulejo",
+    "photo": {
+      "src": "photos/tile-museum-lisbon.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Convento_da_Madre_de_Deus_-_Lisboa_-_Portugal_(46913633574).jpg",
+      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Vitor Oliveira from Torres Vedras, PORTUGAL"
+    }
+  },
+  "discoveries-monument": {
+    "name": "Monumento a los Descubrimientos",
+    "photo": {
+      "src": "photos/discoveries-monument.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Padr%C3%A3o_Descobrimentos_April_2009-3c.jpg",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Alvesgaspar"
+    }
+  },
+  "st-lorenz-nuremberg": {
+    "name": "Iglesia de San Lorenzo, Núremberg",
+    "photo": {
+      "src": "photos/st-lorenz-nuremberg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:N%C3%BCrnberg_St._Lorenz_T%C3%BCrme_Totale.jpg",
+      "author": "jailbird",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "attribution": "jailbird"
+    }
+  },
+  "getreidegasse": {
+    "name": "Getreidegasse",
+    "photo": {
+      "src": "photos/getreidegasse.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Getreidegasse_am_Nachmittag,_Salzburg.jpg",
+      "author": "Snotty",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Snotty"
+    }
+  },
+  "garmisch": {
+    "name": "Garmisch-Partenkirchen",
+    "photo": {
+      "src": "photos/garmisch.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Garmisch-Partenkirchen.JPG",
+      "author": "Octagon",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "Octagon"
+    }
+  },
+  "santa-justa": {
+    "name": "Elevador de Santa Justa",
+    "photo": {
+      "src": "photos/santa-justa.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Elevador_de_Santa_Justa_from_Rua_de_Santa_Justa.jpg",
+      "author": "Dicklyon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Dicklyon"
+    }
+  },
+  "nuremberg-castle": {
+    "name": "Castillo imperial de Núremberg",
+    "photo": {
+      "src": "photos/nuremberg-castle.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:N%C3%BCrnberg_Burg_ArM.jpg",
+      "author": "ArtMechanic",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "ArtMechanic"
+    }
+  },
+  "frauenkirche-munich": {
+    "name": "Frauenkirche · Catedral de Múnich",
+    "photo": {
+      "src": "photos/frauenkirche-munich.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Frauenkirche_Munich_-_View_from_Peterskirche_Tower2.jpg",
+      "author": "Diliff",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "attribution": "Diliff"
+    }
+  },
+  "alte-pinakothek": {
+    "name": "Alte Pinakothek",
+    "photo": {
+      "src": "photos/alte-pinakothek.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Alte_Pinakothek_2009.jpg",
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "Photo: Andreas Praefcke"
+    }
+  },
+  "hohensalzburg": {
+    "name": "Fortaleza de Hohensalzburg",
+    "photo": {
+      "src": "photos/hohensalzburg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Salzburg_-_Festung_Hohensalzburg.JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "C.Stadler/Bwag"
+    }
+  },
+  "sintra-national-palace": {
+    "name": "Palacio Nacional de Sintra",
+    "photo": {
+      "src": "photos/sintra-national-palace.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Palacio_Nacional,_Sintra,_Portugal,_2019-05-25,_DD_89.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Diego Delso"
+    }
+  },
+  "sao-jorge": {
+    "name": "Castillo de São Jorge",
+    "photo": {
+      "src": "photos/sao-jorge.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:LisbonCastle.jpg",
+      "author": "fulviusbsas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "fulviusbsas"
+    }
+  },
+  "chiado": {
+    "name": "Chiado",
+    "photo": {
+      "src": "photos/chiado.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lisbon_10064_Lisboa_Pra%C3%A7a_Lu%C3%ADs_de_Cam%C3%B5es_2006_Luca_Galuzzi_(cropped).jpg",
+      "author": "Luca Galuzzi (Lucag)",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "attribution": "Luca Galuzzi (Lucag)"
+    }
+  },
+  "sao-bento": {
+    "name": "Estación de São Bento",
+    "photo": {
+      "src": "photos/sao-bento.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Esta%C3%A7%C3%A3o_Ferrovi%C3%A1ria_de_Porto_-_S%C3%A3o_Bento.JPG",
+      "author": "HombreDHojalata",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "HombreDHojalata"
+    }
+  },
+  "clerigos": {
+    "name": "Torre de los Clérigos",
+    "photo": {
+      "src": "photos/clerigos.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Torre_de_los_Cl%C3%A9rigos,_Oporto,_Portugal,_2012-05-09,_DD_01.JPG",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Diego Delso"
+    }
+  },
+  "guimaraes-castle": {
+    "name": "Castillo de Guimarães",
+    "photo": {
+      "src": "photos/guimaraes-castle.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Castelo_de_Guimar%C3%A3es1.jpg",
+      "author": "Hugo Ferreira",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Hugo Ferreira"
+    }
+  },
+  "braganza-palace": {
+    "name": "Palacio de los Duques de Braganza",
+    "photo": {
+      "src": "photos/braganza-palace.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:DJI_0156pa%C3%A7o_duques_bragan%C3%A7a.jpg",
+      "author": "LUIS MIGUEL JORGE DUARTE",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "LUIS MIGUEL JORGE DUARTE"
+    }
+  },
+  "palacio-bolsa": {
+    "name": "Palacio de la Bolsa",
+    "photo": {
+      "src": "photos/palacio-bolsa.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Palacio_da_Bolsa_in_Porto_(2).jpg",
+      "author": "Krzysztof Golik",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Krzysztof Golik"
+    }
+  },
+  "kapellbrucke": {
+    "name": "Kapellbrücke",
+    "photo": {
+      "src": "photos/kapellbrucke.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Kapellbruecke.JPG",
+      "author": "Simon Koopmann",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "attribution": "Simon Koopmann"
+    }
+  },
+  "pontresina": {
+    "name": "Pontresina",
+    "photo": {
+      "src": "photos/pontresina.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Pontresina_Dorf.jpg",
+      "author": "Adrian Michael",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Adrian Michael"
+    }
+  },
+  "bernina-line": {
+    "name": "Línea ferroviaria del Bernina",
+    "photo": {
+      "src": "photos/bernina-line.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:RhB_ABe_4-4_III_mit_Bernina-Express_am_Lago_Bianco.jpg",
+      "author": "Kabelleger / David Gubler (http://www.bahnbilder.ch)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Kabelleger / David Gubler (http://www.bahnbilder.ch)"
+    }
+  },
+  "lake-lucerne": {
+    "name": "Lago de los Cuatro Cantones",
+    "photo": {
+      "src": "photos/lake-lucerne.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Vierwaldstaettersee.jpg",
+      "author": "Ttrainer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Ttrainer"
+    }
+  },
+  "rigi": {
+    "name": "Rigi",
+    "photo": {
+      "src": "photos/rigi.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lauerzersee.jpg",
+      "author": "Roland Zumbühl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Roland Zumbühl"
+    }
+  },
+  "matterhorn-museum": {
+    "name": "Museo del Cervino",
+    "photo": {
+      "src": "photos/matterhorn-museum.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Matterhorn_museum.jpg",
+      "author": "Iter1",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Matterhorn_museum.jpg",
+      "attribution": "Iter1"
+    }
+  },
+  "gaia-waterfront": {
+    "name": "Vila Nova de Gaia",
+    "photo": {
+      "src": "photos/gaia-waterfront.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Vila_Nova_de_Gaia_063DSC_0212_(49048680592)_(cropped).jpg",
+      "author": "János Korom Dr.  >14 Million views from Wien, Austria",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "János Korom Dr.  >14 Million views from Wien, Austria"
+    }
+  },
+  "viktualienmarkt": {
+    "name": "Viktualienmarkt",
+    "photo": {
+      "src": "photos/viktualienmarkt.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_Viktualienmarkt_2011.jpg",
+      "author": "Helmlechner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Helmlechner"
+    }
+  },
+  "swiss-transport-museum": {
+    "name": "Museo Suizo del Transporte",
+    "photo": {
+      "src": "photos/swiss-transport-museum.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:00_9020_Luzern_(CH)_-_Verkehrshaus.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "W. Bulach"
+    }
+  },
+  "dc-mall": {
+    "name": "National Mall",
+    "photo": {
+      "src": "photos/dc-mall.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ANational_Mall_2026.jpg",
+      "author": "APK",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "APK"
+    }
+  },
+  "library-congress": {
+    "name": "Biblioteca del Congreso · Edificio Thomas Jefferson",
+    "photo": {
+      "src": "photos/library-congress.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AThomas_Jefferson_Building-1.jpg",
+      "author": "Smash the Iron Cage",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Smash the Iron Cage"
+    }
+  },
+  "air-space": {
+    "name": "Museo Nacional del Aire y el Espacio",
+    "photo": {
+      "src": "photos/air-space.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:NationalAirAndSpaceMuseum_10290010.jpg",
+      "author": "Túrelio",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attribution": "Túrelio"
+    }
+  },
+  "natural-history-dc": {
+    "name": "Museo Nacional de Historia Natural",
+    "photo": {
+      "src": "photos/natural-history-dc.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ANational_Museum_of_Natural_History_with_Dome_-_2026_%2855256470365%29.jpg",
+      "author": "ajay_suresh",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ajay_suresh"
+    }
+  },
+  "national-gallery-dc": {
+    "name": "Galería Nacional de Arte",
+    "photo": {
+      "src": "photos/national-gallery-dc.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ANational_Gallery_of_Art.jpg",
+      "author": "Smash the Iron Cage",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Smash the Iron Cage"
+    }
+  },
+  "vietnam-memorial": {
+    "name": "Memorial de los Veteranos de Vietnam",
+    "photo": {
+      "src": "photos/vietnam-memorial.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AVietnam_Veterans_Memorial%2C_District_of_Columbia_%28e6fd6a4f-ae3f-475d-89a1-58238649c845%29.jpg",
+      "author": "National Park Service (NPS)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File%3AVietnam_Veterans_Memorial%2C_District_of_Columbia_%28e6fd6a4f-ae3f-475d-89a1-58238649c845%29.jpg",
+      "attribution": "National Park Service (NPS)"
+    }
+  },
+  "korean-memorial": {
+    "name": "Memorial de los Veteranos de la Guerra de Corea",
+    "photo": {
+      "src": "photos/korean-memorial.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AKorean_War_Veteran%27s_Memorial.jpg",
+      "author": "Dontkickthebaby",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Dontkickthebaby"
+    }
+  },
+  "arlington": {
+    "name": "Cementerio Nacional de Arlington",
+    "photo": {
+      "src": "photos/arlington.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AArlington_National_Cemetery_on_a_Sunday_Morning.jpg",
+      "author": "Clynnwersch",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Clynnwersch"
+    }
+  },
+  "dupont-circle": {
+    "name": "Dupont Circle",
+    "photo": {
+      "src": "photos/dupont-circle.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ADupontcircle.jpg",
+      "author": "RyanGWU82",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "RyanGWU82"
+    }
+  },
+  "jackson-square": {
+    "name": "Jackson Square",
+    "photo": {
+      "src": "photos/jackson-square.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AJackson_Square_New_Orleans.jpg",
+      "author": "Aashish Lamichhane",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Aashish Lamichhane"
+    }
+  },
+  "st-louis-cathedral": {
+    "name": "Catedral de San Luis, Nueva Orleans",
+    "photo": {
+      "src": "photos/st-louis-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASt._Louis_Cathedral_%28New_Orleans%29.jpg",
+      "author": "Royalpt78",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Royalpt78"
+    }
+  },
+  "st-charles-streetcar": {
+    "name": "Tranvía de St. Charles",
+    "photo": {
+      "src": "photos/st-charles-streetcar.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AHistoric_St._Charles_streetcar.jpg",
+      "author": "Bjctbone",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Bjctbone"
+    }
+  },
+  "magazine-street": {
+    "name": "Magazine Street",
+    "photo": {
+      "src": "photos/magazine-street.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AMagazine_Street%2C_12th_Ward_of_New_Orleans%2C_20_August_2025_-_35.jpg",
+      "author": "Infrogmation",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Infrogmation"
+    }
+  },
+  "wwii-museum": {
+    "name": "Museo Nacional de la Segunda Guerra Mundial",
+    "photo": {
+      "src": "photos/wwii-museum.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AThe_National_World_War_II_Museum_%2827748358075%29.jpg",
+      "author": "Tony Webster from Minneapolis, Minnesota, United States",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Tony Webster from Minneapolis, Minnesota, United States"
+    }
+  },
+  "frenchmen-street": {
+    "name": "Frenchmen Street",
+    "photo": {
+      "src": "photos/frenchmen-street.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3APartying_on_Frenchmen_Street.jpg",
+      "author": "Gary J. Wood",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Gary J. Wood"
+    }
+  },
+  "bellagio-fountains": {
+    "name": "Fuentes del Bellagio",
+    "photo": {
+      "src": "photos/bellagio-fountains.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AFountains_of_Bellagio.jpg",
+      "author": "Supercarwaar",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Supercarwaar"
+    }
+  },
+  "venetian-vegas": {
+    "name": "The Venetian Las Vegas",
+    "photo": {
+      "src": "photos/venetian-vegas.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AThe_Venetian_Las_Vegas.jpg",
+      "author": "Julian Lupyan",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Julian Lupyan"
+    }
+  },
+  "bellagio-conservatory": {
+    "name": "Jardín interior del Bellagio",
+    "photo": {
+      "src": "photos/bellagio-conservatory.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Conservatory_at_the_Bellagio.jpg",
+      "author": "Jon Sullivan",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Conservatory_at_the_Bellagio.jpg",
+      "attribution": "Jon Sullivan"
+    }
+  },
+  "fremont-street": {
+    "name": "Fremont Street Experience",
+    "photo": {
+      "src": "photos/fremont-street.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AFremont_Street_Experience.jpg",
+      "author": "Peter Angritt",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Peter Angritt"
+    }
+  },
+  "san-fernando-cathedral": {
+    "name": "Catedral de San Fernando",
+    "photo": {
+      "src": "photos/san-fernando-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:San_Fernando_Cathedral,_San_Antonio,_TX.jpg",
+      "author": "Jumpy542",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Jumpy542"
+    }
+  },
+  "pearl-san-antonio": {
+    "name": "Pearl, San Antonio",
+    "photo": {
+      "src": "photos/pearl-san-antonio.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3APearlBreweryCurrent03.JPG",
+      "author": "Brownings",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Brownings"
+    }
+  },
+  "san-antonio-art-museum": {
+    "name": "Museo de Arte de San Antonio",
+    "photo": {
+      "src": "photos/san-antonio-art-museum.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASan_Antonio_Museum_of_Art_%2816652192717%29.jpg",
+      "author": "Nan Palmero from San Antonio, TX, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Nan Palmero from San Antonio, TX, USA"
+    }
+  },
+  "mission-san-jose": {
+    "name": "Misión de San José",
+    "photo": {
+      "src": "photos/mission-san-jose.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mission_San_Jose'_-_San_Antonio,_TX.jpg",
+      "author": "Dgdrby",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Dgdrby"
+    }
+  },
+  "mission-concepcion": {
+    "name": "Misión Concepción",
+    "photo": {
+      "src": "photos/mission-concepcion.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AMission-Concepcion.jpg",
+      "author": "The Jacobin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "The Jacobin"
+    }
+  },
+  "sultanahmet-square": {
+    "name": "Plaza de Sultanahmet · Antiguo Hipódromo",
+    "photo": {
+      "src": "photos/sultanahmet-square.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AHippodrome_of_Constantinople.jpg",
+      "author": "Yair Haklai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Yair Haklai"
+    }
+  },
+  "basilica-cistern": {
+    "name": "Cisterna Basílica",
+    "photo": {
+      "src": "photos/basilica-cistern.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABasilica_Cistern_in_2026_05.jpg",
+      "author": "Joseolgon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Joseolgon"
+    }
+  },
+  "gulhane": {
+    "name": "Parque Gülhane",
+    "photo": {
+      "src": "photos/gulhane.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AG%C3%BClhane_Park_in_2026.jpg",
+      "author": "Joseolgon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Joseolgon"
+    }
+  },
+  "bosphorus": {
+    "name": "Estrecho del Bósforo",
+    "photo": {
+      "src": "photos/bosphorus.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ABosphorus_in_2026_04.jpg",
+      "author": "Joseolgon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Joseolgon"
+    }
+  },
+  "kadikoy": {
+    "name": "Kadıköy",
+    "photo": {
+      "src": "photos/kadikoy.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AKad%C4%B1k%C3%B6y_%2828042026%29.jpg",
+      "author": "Kadı",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Kadı"
+    }
+  },
+  "grand-bazaar": {
+    "name": "Gran Bazar de Estambul",
+    "photo": {
+      "src": "photos/grand-bazaar.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AGrand_Bazaar_Istanbul.jpg",
+      "author": "Dmgultekin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Dmgultekin"
+    }
+  },
+  "suleymaniye": {
+    "name": "Mezquita de Süleymaniye",
+    "photo": {
+      "src": "photos/suleymaniye.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AS%C3%BCleymaniye_Mosque.jpg",
+      "author": "İhsan Deniz Kılıçoğlu",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "İhsan Deniz Kılıçoğlu"
+    }
+  },
+  "spice-bazaar": {
+    "name": "Bazar de las Especias",
+    "photo": {
+      "src": "photos/spice-bazaar.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASpice_Bazaar_---Egyptian_Bazaar.jpg",
+      "author": "Zara1992",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Zara1992"
+    }
+  },
+  "galata-tower": {
+    "name": "Torre de Gálata",
+    "photo": {
+      "src": "photos/galata-tower.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AGalata-Tower.jpg",
+      "author": "Mohemedşebir Farook",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Mohemedşebir Farook"
+    }
+  },
+  "istiklal": {
+    "name": "Avenida İstiklal",
+    "photo": {
+      "src": "photos/istiklal.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AIstiklal_Avenue_in_Istanbul_-_Turkey.jpg",
+      "author": "Mark Ahsmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Mark Ahsmann"
+    }
+  },
+  "goreme-town": {
+    "name": "Göreme",
+    "photo": {
+      "src": "photos/goreme-town.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AView_of_G%C3%B6reme.jpg",
+      "author": "Halil SAYIM",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Halil SAYIM"
+    }
+  },
+  "goreme-open-air": {
+    "name": "Museo al Aire Libre de Göreme",
+    "photo": {
+      "src": "photos/goreme-open-air.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Goreme_Open_Air_Museum,_G%C3%B6reme_A%C3%A7%C4%B1k_Hava_M%C3%BCzesi_(52399381460).jpg",
+      "author": "Sonse",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Sonse"
+    }
+  },
+  "derinkuyu": {
+    "name": "Ciudad subterránea de Derinkuyu",
+    "photo": {
+      "src": "photos/derinkuyu.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:DerinkuyuUndergroundCity01.jpg",
+      "author": "Cactus26",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Cactus26"
+    }
+  },
+  "ihlara": {
+    "name": "Valle de Ihlara",
+    "photo": {
+      "src": "photos/ihlara.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AIhlaravalley_river.jpg",
+      "author": "Timeheritage",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Timeheritage"
+    }
+  },
+  "uchisar": {
+    "name": "Uçhisar",
+    "photo": {
+      "src": "photos/uchisar.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Uçhisar.jpg",
+      "author": "katpatuka",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Uçhisar.jpg",
+      "attribution": "katpatuka"
+    }
+  },
+  "kordon-izmir": {
+    "name": "Paseo marítimo de Kordon",
+    "photo": {
+      "src": "photos/kordon-izmir.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AKordon%2C_Izmir.jpg",
+      "author": "Ömer K. İnce",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Ömer K. İnce"
+    }
+  },
+  "kemeralti": {
+    "name": "Kemeraltı",
+    "photo": {
+      "src": "photos/kemeralti.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ATR_Izmir_asv2020-02_img06_Kemeralt%C4%B1.jpg",
+      "author": "A.Savin",
+      "license": "Free Art License",
+      "licenseUrl": "https://artlibre.org/licence/lal/en/",
+      "attribution": "A.Savin"
+    }
+  },
+  "celsus": {
+    "name": "Biblioteca de Celso",
+    "photo": {
+      "src": "photos/celsus.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ALibrary_of_Celsus.jpg",
+      "author": "Carl Campbell",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Carl Campbell"
+    }
+  },
+  "ephesus-terrace-houses": {
+    "name": "Casas de la Terraza de Éfeso",
+    "photo": {
+      "src": "photos/ephesus-terrace-houses.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ATerrace_houses%2C_Ephesus.jpg",
+      "author": "CherryX",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "CherryX"
+    }
+  },
+  "plaka": {
+    "name": "Plaka",
+    "photo": {
+      "src": "photos/plaka.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Plaka.jpg",
+      "author": "Odd",
+      "license": "Attribution",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Plaka.jpg",
+      "attribution": "Odd"
+    }
+  },
+  "acropolis-museum": {
+    "name": "Museo de la Acrópolis",
+    "photo": {
+      "src": "photos/acropolis-museum.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ANew_Acropolis_Museum_building_in_Athens%2C_Greece.jpg",
+      "author": "philip.mallis",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "philip.mallis"
+    }
+  },
+  "ancient-agora": {
+    "name": "Ágora Antigua de Atenas",
+    "photo": {
+      "src": "photos/ancient-agora.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AAncient_Agora_of_Athens.jpg",
+      "author": "DerHexer",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "DerHexer"
+    }
+  },
+  "monastiraki": {
+    "name": "Monastiraki",
+    "photo": {
+      "src": "photos/monastiraki.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AMonastiraki_square.jpg",
+      "author": "Georgekok-Greece",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Georgekok-Greece"
+    }
+  },
+  "delphi-museum": {
+    "name": "Museo Arqueológico de Delfos",
+    "photo": {
+      "src": "photos/delphi-museum.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ADelphi_-_Museum.jpg",
+      "author": "Rabe!",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Rabe!"
+    }
+  },
+  "national-archaeological-athens": {
+    "name": "Museo Arqueológico Nacional de Atenas",
+    "photo": {
+      "src": "photos/national-archaeological-athens.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:National_Archaeological_Museum_Athens_building.jpg",
+      "author": "Dimboukas (talk)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:National_Archaeological_Museum_Athens_building.jpg",
+      "attribution": "Dimboukas (talk)"
+    }
+  },
+  "syntagma": {
+    "name": "Plaza Syntagma",
+    "photo": {
+      "src": "photos/syntagma.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ASyntagma_Square.jpg",
+      "author": "Giorgoos",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File%3ASyntagma_Square.jpg",
+      "attribution": "Giorgoos"
+    }
+  },
+  "lycabettus": {
+    "name": "Monte Licabeto",
+    "photo": {
+      "src": "photos/lycabettus.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AView_of_Lycabettus_Hill_from_the_Acropolis_in_Athens-.jpg",
+      "author": "Yair-haklai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Yair-haklai"
+    }
+  },
+  "palamidi": {
+    "name": "Fortaleza de Palamidi",
+    "photo": {
+      "src": "photos/palamidi.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3APalamidi_fortress_1.jpg",
+      "author": "Aristoboylos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Aristoboylos"
+    }
+  },
+  "great-meteoron": {
+    "name": "Gran Meteoro",
+    "photo": {
+      "src": "photos/great-meteoron.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AGreat_Meteoron_Monastery_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Bernard Gagnon"
+    }
+  },
+  "varlaam": {
+    "name": "Monasterio de Varlaam",
+    "photo": {
+      "src": "photos/varlaam.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Monastery_of_Varlaam.jpg",
+      "author": "Sofia Bressan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Sofia Bressan"
+    }
+  },
+  "kastraki": {
+    "name": "Kastraki",
+    "photo": {
+      "src": "photos/kastraki.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AMeteora_Kastraki.jpg",
+      "author": "Dimitris Eleftheriou",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Dimitris Eleftheriou"
+    }
+  },
+  "st-stephen-meteora": {
+    "name": "Monasterio de San Esteban",
+    "photo": {
+      "src": "photos/st-stephen-meteora.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AMonastery_of_St._Stephan_Meteora.jpg",
+      "author": "Jolovema",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Jolovema"
+    }
+  },
+  "quattro-canti": {
+    "name": "Quattro Canti",
+    "photo": {
+      "src": "photos/quattro-canti.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Quattro_Canti.jpg",
+      "author": "Dedda71",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "Dedda71"
+    }
+  },
+  "norman-palace": {
+    "name": "Palacio de los Normandos",
+    "photo": {
+      "src": "photos/norman-palace.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3A0573_-_Palermo_-_Palazzo_dei_Normanni_-_Facciata_posteriore_-_Foto_Giovanni_Dall%27Orto%2C_28-Sept-2006.jpg",
+      "author": "G.dallorto",
+      "license": "Attribution",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File%3A0573_-_Palermo_-_Palazzo_dei_Normanni_-_Facciata_posteriore_-_Foto_Giovanni_Dall%27Orto%2C_28-Sept-2006.jpg",
+      "attribution": "G.dallorto"
+    }
+  },
+  "palatine-chapel": {
+    "name": "Capilla Palatina",
+    "photo": {
+      "src": "photos/palatine-chapel.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ACapella_Palatina_interior01.jpg",
+      "author": "Martin van Baal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Martin van Baal"
+    }
+  },
+  "teatro-massimo": {
+    "name": "Teatro Massimo",
+    "photo": {
+      "src": "photos/teatro-massimo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3APalermo%2C_Teatro_Massimo_-_panoramio.jpg",
+      "author": "Carlo Pelagalli",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Carlo Pelagalli"
+    }
+  },
+  "kalsa": {
+    "name": "La Kalsa",
+    "photo": {
+      "src": "photos/kalsa.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AKalsa%2C_Palermo%2C_Italy_-_panoramio.jpg",
+      "author": "trolvag",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "trolvag"
+    }
+  },
+  "palazzo-abatellis": {
+    "name": "Palazzo Abatellis",
+    "photo": {
+      "src": "photos/palazzo-abatellis.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3APalermo-Palazzo-Abatellis-bjs2007-01.jpg",
+      "author": "Bjs",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Bjs"
+    }
+  },
+  "syracuse-cathedral": {
+    "name": "Catedral de Siracusa",
+    "photo": {
+      "src": "photos/syracuse-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Syracuse_Cathedral_010_2392.jpg",
+      "author": "Ludvig14",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Ludvig14"
+    }
+  },
+  "neapolis-syracuse": {
+    "name": "Teatro Griego de Siracusa",
+    "photo": {
+      "src": "photos/neapolis-syracuse.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Greek_theatre_Syracuse.jpg",
+      "author": "Giles Turnbull from Bradford on Avon, UK",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Giles Turnbull from Bradford on Avon, UK"
+    }
+  },
+  "noto-cathedral": {
+    "name": "Catedral de Noto",
+    "photo": {
+      "src": "photos/noto-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ACattedraleNoto-1.jpg",
+      "author": "Federico Alfio Maria Vinci",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Federico Alfio Maria Vinci"
+    }
+  },
+  "taormina-theatre": {
+    "name": "Teatro Antiguo de Taormina",
+    "photo": {
+      "src": "photos/taormina-theatre.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ancient_theatre_of_Taormina.jpg",
+      "author": "CHMunro",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "CHMunro"
+    }
+  },
+  "catania-fish-market": {
+    "name": "Mercado de pescado de Catania",
+    "photo": {
+      "src": "photos/catania-fish-market.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AFish_market_in_Catania.jpg",
+      "author": "PennyLane24",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "PennyLane24"
+    }
+  },
+  "benedictine-catania": {
+    "name": "Monasterio Benedictino de Catania",
+    "photo": {
+      "src": "photos/benedictine-catania.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Catania%2C_ex_Monastero_dei_Benedettini_13.jpg",
+      "author": "Carmelovunque",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Carmelovunque"
+    }
+  },
+  "jemaa-el-fna": {
+    "name": "Jemaa el-Fna",
+    "photo": {
+      "src": "photos/jemaa-el-fna.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3AJemaa_el-Fnaa_-_panoramio.jpg",
+      "author": "Alexey Komarov",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "Alexey Komarov"
+    }
+  },
+  "ben-youssef-madrasa": {
+    "name": "Madrasa Ben Youssef",
+    "photo": {
+      "src": "photos/ben-youssef-madrasa.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ben_Youssef_Madrasa_DSCF5986.jpg",
+      "author": "R Prazeres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "R Prazeres"
+    }
+  },
+  "marrakech-museum": {
+    "name": "Museo de Marrakech",
+    "photo": {
+      "src": "photos/marrakech-museum.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Marrakesh_museum_DSCF9240.jpg",
+      "author": "R Prazeres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "R Prazeres"
+    }
+  },
+  "essaouira-port": {
+    "name": "Puerto de Essaouira",
+    "photo": {
+      "src": "photos/essaouira-port.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Boats_in_the_port_at_Essaouira.jpg",
+      "author": "jonl1973 from Bristol, United Kingdom",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "jonl1973 from Bristol, United Kingdom"
+    }
+  },
+  "essaouira-ramparts": {
+    "name": "Murallas de Essaouira",
+    "photo": {
+      "src": "photos/essaouira-ramparts.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File%3ARamparts_of_Essaouira.JPG",
+      "author": "Kayaky",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "Kayaky"
+    }
+  },
+  "essaouira-beach": {
+    "name": "Playa de Essaouira",
+    "photo": {
+      "src": "photos/essaouira-beach.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Beach_Essaouira.jpg",
+      "author": "mountassir mourazik",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "mountassir mourazik"
+    }
+  },
+  "eibsee": {
+    "name": "Lago Eibsee",
+    "photo": {
+      "src": "photos/eibsee.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Eibsee_im_Herbst._Blickrichtung_Waxenstein_im_Wettersteingebirge.jpg",
+      "author": "Matt8cc",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Matt8cc / CC BY-SA 4.0"
+    }
+  },
+  "fussen": {
+    "name": "Casco histórico de Füssen",
+    "photo": {
+      "src": "photos/fussen.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Altstadt-Fuessen-JR-E-4504-2020-06-22.jpg",
+      "author": "Johannes Robalotoff",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Johannes Robalotoff / CC BY-SA 3.0 de"
+    }
+  },
+  "oberammergau": {
+    "name": "Fachadas pintadas de Oberammergau",
+    "photo": {
+      "src": "photos/oberammergau.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Oberammergau_L%C3%BCftlmalerei_Stra%C3%9Fenszene.jpg",
+      "author": "Photo: Andreas Praefcke",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "attribution": "Photo: Andreas Praefcke / CC BY 3.0"
+    }
+  },
+  "linderhof": {
+    "name": "Palacio de Linderhof",
+    "photo": {
+      "src": "photos/linderhof.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Linderhof_Palace.JPG",
+      "author": "Galaxylady1110",
+      "license": "CC BY-SA 3.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "attribution": "Galaxylady1110 / CC BY-SA 3.0 de"
+    }
+  },
+  "vienna-stephansdom": {
+    "name": "Stephansdom · catedral de San Esteban",
+    "photo": {
+      "src": "photos/vienna-stephansdom.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Stephansdom_(1).JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "C.Stadler/Bwag / CC BY-SA 4.0"
+    }
+  },
+  "vienna-graben": {
+    "name": "Graben",
+    "photo": {
+      "src": "photos/vienna-graben.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Graben_(2).JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "C.Stadler/Bwag / CC BY-SA 4.0"
+    }
+  },
+  "vienna-peterskirche": {
+    "name": "Peterskirche · iglesia de San Pedro",
+    "photo": {
+      "src": "photos/vienna-peterskirche.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Peterskirche_(1).JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "C.Stadler/Bwag / CC BY-SA 4.0"
+    }
+  },
+  "vienna-cafe-central": {
+    "name": "Café Central · Palacio Ferstel",
+    "photo": {
+      "src": "photos/vienna-cafe-central.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Palais_Ferstel.jpg",
+      "author": "User:Florian Prischl",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Palais_Ferstel.jpg",
+      "attribution": "User:Florian Prischl / Public domain"
+    }
+  },
+  "vienna-hofburg": {
+    "name": "Palacio de Hofburg",
+    "photo": {
+      "src": "photos/vienna-hofburg.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Neue_Hofburg.JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 3.0 at",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+      "attribution": "C.Stadler/Bwag / CC BY-SA 3.0 at"
+    }
+  },
+  "vienna-heldenplatz": {
+    "name": "Heldenplatz",
+    "photo": {
+      "src": "photos/vienna-heldenplatz.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Heldenplatz.JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "C.Stadler/Bwag / CC BY 4.0"
+    }
+  },
+  "vienna-volksgarten": {
+    "name": "Volksgarten",
+    "photo": {
+      "src": "photos/vienna-volksgarten.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Volksgarten_(b).JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "C.Stadler/Bwag / CC BY-SA 4.0"
+    }
+  },
+  "vienna-parliament": {
+    "name": "Parlamento de Austria",
+    "photo": {
+      "src": "photos/vienna-parliament.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Parlamentsgeb%C3%A4ude.JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "C.Stadler/Bwag / CC BY-SA 4.0"
+    }
+  },
+  "vienna-opera": {
+    "name": "Ópera Estatal de Viena",
+    "photo": {
+      "src": "photos/vienna-opera.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wiener_Staatsoper_Front.jpg",
+      "author": "Wiener Staatsoper GmbH",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Wiener Staatsoper GmbH / CC BY-SA 4.0"
+    }
+  },
+  "vienna-schonbrunn": {
+    "name": "Palacio de Schönbrunn",
+    "photo": {
+      "src": "photos/vienna-schonbrunn.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Sch%C3%B6nbrunn.JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "C.Stadler/Bwag / CC BY-SA 4.0"
+    }
+  },
+  "vienna-belvedere": {
+    "name": "Palacio Belvedere",
+    "photo": {
+      "src": "photos/vienna-belvedere.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Palacio_Belvedere,_Viena,_Austria,_2020-02-01,_DD_93-95_HDR.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Diego Delso / CC BY-SA 4.0"
+    }
+  },
+  "bratislava": {
+    "name": "Casco histórico de Bratislava",
+    "photo": {
+      "src": "photos/bratislava.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Hlavn%C3%A9_n%C3%A1mestie-The_napoleonic_soldier,_Old_Town_Hall_and_Roland_Fountain-Bratislava.JPG",
+      "author": "https://www.flickr.com/photos/jlascar/",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "https://www.flickr.com/photos/jlascar/ / CC BY 2.0"
+    }
+  },
+  "vienna-rathaus": {
+    "name": "Rathaus · Ayuntamiento de Viena",
+    "photo": {
+      "src": "photos/vienna-rathaus.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wien_-_Christkindlmarkt,_Rathausplatz.JPG",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "C.Stadler/Bwag / CC BY-SA 4.0"
+    }
+  },
+  "tirano": {
+    "name": "Tirano y basílica de la Madonna di Tirano",
+    "photo": {
+      "src": "photos/tirano.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tirano-Santuario_Madonna_Basilica-view_from_Santa_Perpetua-04.jpg",
+      "author": "Asurnipal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Asurnipal / CC BY-SA 4.0"
+    }
+  },
+  "milan-duomo": {
+    "name": "Duomo de Milán",
+    "photo": {
+      "src": "photos/milan-duomo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_from_Piazza_del_Duomo.jpg",
+      "author": "Jiuguang Wang",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Jiuguang Wang / CC BY-SA 3.0"
+    }
+  },
+  "milan-galleria": {
+    "name": "Galleria Vittorio Emanuele II",
+    "photo": {
+      "src": "photos/milan-galleria.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Galleria_Vittorio_Emanuele_II,_Milan,_interior.jpg",
+      "author": "Gerda Arendt",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Gerda Arendt / CC0 1.0"
+    }
+  },
+  "milan-castello": {
+    "name": "Castello Sforzesco",
+    "photo": {
+      "src": "photos/milan-castello.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Castello_Sforzesco_milano.jpg",
+      "author": "Simone Priori",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Simone Priori / CC BY-SA 4.0"
+    }
+  },
+  "interlaken": {
+    "name": "Interlaken",
+    "photo": {
+      "src": "photos/interlaken.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Interlaken_view_(19-03-2017).jpg",
+      "author": "Einaz80",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Einaz80 / CC BY-SA 4.0"
+    }
+  },
+  "lauterbrunnen": {
+    "name": "Valle de Lauterbrunnen",
+    "photo": {
+      "src": "photos/lauterbrunnen.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lauterbrunnen_valley.jpg",
+      "author": "Jmblanco74",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Jmblanco74 / CC BY-SA 3.0"
+    }
+  },
+  "grindelwald": {
+    "name": "Grindelwald",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Grindelwald_Town_and_the_Alps.jpg/1280px-Grindelwald_Town_and_the_Alps.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Grindelwald_Town_and_the_Alps.jpg",
+      "author": "Sabrina Schreiber",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sabrina Schreiber · encuadre adaptable a pantalla"
+    }
+  },
+  "first-cliff-walk": {
+    "name": "First Cliff Walk",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/First_Cliff_Walk.jpg/1280px-First_Cliff_Walk.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:First_Cliff_Walk.jpg",
+      "author": "Blanky75",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Blanky75 · encuadre adaptable a pantalla"
+    }
+  },
+  "bachalpsee": {
+    "name": "Bachalpsee",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Bachalpsee_reflection.jpg/1280px-Bachalpsee_reflection.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bachalpsee_reflection.jpg",
+      "author": "Ryan Gsell",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Ryan Gsell · encuadre adaptable a pantalla"
+    }
+  },
+  "wengen": {
+    "name": "Wengen",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Wengen_and_Lauterbrunnen_valley_from_Mannlichen.jpg/1280px-Wengen_and_Lauterbrunnen_valley_from_Mannlichen.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Wengen_and_Lauterbrunnen_valley_from_Mannlichen.jpg",
+      "author": "Kevin Hadley",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Kevin Hadley · encuadre adaptable a pantalla"
+    }
+  },
+  "murren": {
+    "name": "Mürren",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Murren_Village_Summer.jpg/1280px-Murren_Village_Summer.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Murren_Village_Summer.jpg",
+      "author": "Nguyen Lynh",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Nguyen Lynh · encuadre adaptable a pantalla"
+    }
+  },
+  "oeschinensee": {
+    "name": "Oeschinensee",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Oeschinen_Lake_%28Oeschinensee%29_panorama_from_above_140622_2.jpg/1280px-Oeschinen_Lake_%28Oeschinensee%29_panorama_from_above_140622_2.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Oeschinen_Lake_(Oeschinensee)_panorama_from_above_140622_2.jpg",
+      "author": "Bob Tan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Bob Tan · encuadre adaptable a pantalla"
+    }
+  },
+  "riffelsee": {
+    "name": "Riffelsee",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Riffelsee_mit_Matterhorn.jpg/1280px-Riffelsee_mit_Matterhorn.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Riffelsee_mit_Matterhorn.jpg",
+      "author": "Whgler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Whgler · encuadre adaptable a pantalla"
+    }
+  },
+  "debod-madrid": {
+    "name": "Templo de Debod",
+    "photo": {
+      "src": "photos/debod-madrid.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:TemploDeDebod.jpg",
+      "author": "Kadellar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Kadellar · CC BY-SA 3.0 · Tamaño reducido"
+    }
+  },
+  "zamora-cathedral": {
+    "name": "Catedral de Zamora",
+    "photo": {
+      "src": "photos/zamora-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Zamora_Cathedral%2C_Spain.jpg",
+      "author": "Heparina1985",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Heparina1985 · CC BY-SA 4.0 · Tamaño reducido"
+    }
+  },
+  "zamora-duero": {
+    "name": "Zamora junto al Duero",
+    "photo": {
+      "src": "photos/zamora-duero.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Zamora_-_R%C3%ADo_Duero_y_Catedral_08.jpg",
+      "author": "Zarateman",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Zarateman · CC0 1.0 · Tamaño reducido"
+    }
+  },
+  "dali-figueres": {
+    "name": "Teatro-Museo Dalí",
+    "photo": {
+      "src": "photos/dali-figueres.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Teatre_Museu_Dal%C3%AD_Fa%C3%A7ana.JPG",
+      "author": "Kippelboy",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Kippelboy · CC BY-SA 3.0 · Tamaño reducido"
+    }
+  },
+  "san-juan-reyes-toledo": {
+    "name": "Monasterio de San Juan de los Reyes",
+    "photo": {
+      "src": "photos/san-juan-reyes-toledo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:San_Juan_de_los_Reyes_Toledo_Vista_Exterior.jpg",
+      "author": "Ana Aranguren",
+      "license": "CC BY-SA 3.0 ES",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/",
+      "attribution": "Ana Aranguren · CC BY-SA 3.0 ES · Tamaño reducido"
+    }
+  },
+  "segovia-aqueduct": {
+    "name": "Acueducto de Segovia",
+    "photo": {
+      "src": "photos/segovia-aqueduct.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Acueducto_en_Segovia.jpg",
+      "author": "Amaia.G",
+      "license": "CC BY-SA 3.0 ES",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/es/",
+      "attribution": "Amaia.G / Wikimedia Commons · CC BY-SA 3.0 ES · Redimensionada y comprimida para web."
+    }
+  },
+  "segovia-alcazar": {
+    "name": "Alcázar de Segovia",
+    "photo": {
+      "src": "photos/segovia-alcazar.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Segovia_-_Entrada_alcázar_-_121017.jpg",
+      "author": "Barcex",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Barcex / Wikimedia Commons · CC BY-SA 3.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "segovia-pradera-san-marcos": {
+    "name": "Pradera de San Marcos",
+    "photo": {
+      "src": "photos/segovia-pradera-san-marcos.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:El_Alcazar_de_Segovia.jpg",
+      "author": "Ovejacósmica",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Ovejacósmica / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "emilia-piazza": {
+    "name": "Basilica di San Petronio · Piazza Maggiore",
+    "photo": {
+      "src": "photos/emilia-piazza.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bologna,_San_Petronio_on_Piazza_Maggiore_(2).jpg",
+      "author": "Armin Kleiner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Armin Kleiner · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-nettuno": {
+    "name": "Fontana del Nettuno",
+    "photo": {
+      "src": "photos/emilia-nettuno.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Fontana_del_Nettuno-Bologna.jpg",
+      "author": "Yair Haklai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Yair Haklai · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-porticos": {
+    "name": "Portici di Via dell’Indipendenza",
+    "photo": {
+      "src": "photos/emilia-porticos.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bologna_portici_via_indipendenza.jpg",
+      "author": "Stefano Pistis",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Stefano Pistis · CC BY-SA 3.0 · Imagen reducida"
+    }
+  },
+  "emilia-stefano": {
+    "name": "Piazza Santo Stefano",
+    "photo": {
+      "src": "photos/emilia-stefano.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Santo_Stefano_Bologna.jpg",
+      "author": "Monymar71",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Monymar71 · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-sanluca": {
+    "name": "Santuario della Madonna di San Luca",
+    "photo": {
+      "src": "photos/emilia-sanluca.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sanctuary_of_San_Luca,_Bologna,_Italy.jpg",
+      "author": "Serenapaliria",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Serenapaliria · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-parma": {
+    "name": "Duomo di Parma · Battistero di Parma",
+    "photo": {
+      "src": "photos/emilia-parma.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Duomo_e_Battistero_di_Parma.jpg",
+      "author": "Carlo Ferrari.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Carlo Ferrari. · CC BY-SA 3.0 · Imagen reducida"
+    }
+  },
+  "emilia-farnese": {
+    "name": "Teatro Farnese",
+    "photo": {
+      "src": "photos/emilia-farnese.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Parma,_Teatro_Farnese_(3).jpg",
+      "author": "Palickap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Palickap · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-vitale": {
+    "name": "Basilica di San Vitale",
+    "photo": {
+      "src": "photos/emilia-vitale.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:San_Vitale,_Ravenna,_Italy,_Choir_mosaics.JPG",
+      "author": "Arnoldius",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Arnoldius · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-galla": {
+    "name": "Mausoleo di Galla Placidia",
+    "photo": {
+      "src": "photos/emilia-galla.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ravenna_galla_placidia.jpg",
+      "author": "Gianlucab1964",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Gianlucab1964 · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-castello": {
+    "name": "Castello Estense",
+    "photo": {
+      "src": "photos/emilia-castello.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Castello_Estense.jpg",
+      "author": "Nicola Bisi",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Nicola Bisi · CC BY-SA 3.0 · Imagen reducida"
+    }
+  },
+  "emilia-diamanti": {
+    "name": "Palazzo dei Diamanti",
+    "photo": {
+      "src": "photos/emilia-diamanti.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Palazzo_dei_Diamanti_--_Ferrara.jpg",
+      "author": "Vanni Lazzari",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Vanni Lazzari · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-pepoli": {
+    "name": "Palazzo Pepoli",
+    "photo": {
+      "src": "photos/emilia-pepoli.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bologna,_Palazzo_Pepoli_Vecchio.jpg",
+      "author": "Armin Kleiner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Armin Kleiner · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-anatomico": {
+    "name": "Teatro Anatomico del Archiginnasio",
+    "photo": {
+      "src": "photos/emilia-anatomico.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Anatomical_theatre_of_the_Archiginnasio,_Bologna,_Italy_-_1_general_view.JPG",
+      "author": "Luca Borghi",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+      "attribution": "Luca Borghi · Public domain · Imagen reducida"
+    }
+  },
+  "emilia-modena": {
+    "name": "Duomo di Modena",
+    "photo": {
+      "src": "photos/emilia-modena.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Modena,_duomo.jpg",
+      "author": "Palickap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Palickap · CC BY-SA 4.0 · Imagen reducida"
+    }
+  },
+  "emilia-albinelli": {
+    "name": "Mercato Albinelli",
+    "photo": {
+      "src": "photos/emilia-albinelli.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Modena,_Mercato_di_Via_Albinelli.JPG",
+      "author": "Francesca Ferrari",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Francesca Ferrari · CC BY-SA 3.0 · Imagen reducida"
+    }
+  },
+  "matera-barisano": {
+    "name": "Sasso Barisano",
+    "photo": {
+      "src": "photos/matera-barisano.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sasso_Barisano.jpg",
+      "author": "Multimotyl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Multimotyl / Wikimedia Commons · CC BY-SA 3.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "matera-belvedere": {
+    "name": "Belvedere Luigi Guerricchio",
+    "photo": {
+      "src": "photos/matera-belvedere.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Matera%2C_belvedere_luigi_guerricchio.jpg",
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "Sailko / Wikimedia Commons · CC BY 3.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "matera-caveoso": {
+    "name": "Sasso Caveoso",
+    "photo": {
+      "src": "photos/matera-caveoso.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Matera_sasso_caveoso.JPG",
+      "author": "Francorov at it.wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Francorov at it.wikipedia / Wikimedia Commons · CC BY-SA 3.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "matera-murgia": {
+    "name": "Murgia Materana",
+    "photo": {
+      "src": "photos/matera-murgia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:070_Coves_de_la_Murgia_Timone_%28Matera%29%2C_des_de_Via_Muro%2C_al_Sasso_Caveoso.jpg",
+      "author": "Enric",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Enric / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "lecce-oronzo": {
+    "name": "Piazza Sant’Oronzo",
+    "photo": {
+      "src": "photos/lecce-oronzo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza_Sant%27Oronzo_%28Lecce%29.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Bernard Gagnon / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "lecce-duomo": {
+    "name": "Piazza Duomo",
+    "photo": {
+      "src": "photos/lecce-duomo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lecce_duomo.jpg",
+      "author": "Alessio Lojk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Alessio Lojk / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "lecce-croce": {
+    "name": "Basilica di Santa Croce",
+    "photo": {
+      "src": "photos/lecce-croce.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lecce_SANTA_CROCE.jpg",
+      "author": "Chiocciolasud",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Chiocciolasud / Wikimedia Commons · CC BY-SA 3.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "ostuni-white": {
+    "name": "Città Bianca",
+    "photo": {
+      "src": "photos/ostuni-white.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Panorama_Ostuni.jpg",
+      "author": "Costantino Cafaro",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Costantino Cafaro / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "ostuni-cathedral": {
+    "name": "Catedral de Ostuni",
+    "photo": {
+      "src": "photos/ostuni-cathedral.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cathedral_%28Ostuni%29.jpg",
+      "author": "Cavaliere grande",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Cavaliere grande / Wikimedia Commons · CC BY-SA 3.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "bari-vecchia": {
+    "name": "Bari Vecchia",
+    "photo": {
+      "src": "photos/bari-vecchia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bari_Vecchia_%2840106893452%29.jpg",
+      "author": "Evelyn Hill from Rome, Italy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Evelyn Hill from Rome, Italy / Wikimedia Commons · CC BY 2.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "bari-nicola-front": {
+    "name": "Basilica di San Nicola",
+    "photo": {
+      "src": "photos/bari-nicola-front.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bari%2C_San_Nicola%2C_south_facade.jpg",
+      "author": "Palickap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Palickap / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "alberobello-aia": {
+    "name": "Aia Piccola",
+    "photo": {
+      "src": "photos/alberobello-aia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Alberobello_-_Trulli_del_Rione_Aia_Piccola_-_05.jpg",
+      "author": "Benjamin Smith",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Benjamin Smith / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "locorotondo-center": {
+    "name": "Locorotondo",
+    "photo": {
+      "src": "photos/locorotondo-center.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Locorotondo_%2806%29.jpg",
+      "author": "Palickap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Palickap / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "alberobello-monti": {
+    "name": "Trulli de Alberobello",
+    "photo": {
+      "src": "photos/alberobello-monti.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Alberobello_trulli.JPG",
+      "author": "Pizzaemandolino",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Pizzaemandolino / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "monopoli-oldport": {
+    "name": "Puerto viejo de Monopoli",
+    "photo": {
+      "src": "photos/monopoli-oldport.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Porto_di_Monopoli.jpg",
+      "author": "Monopoli91 at Italian Wikipedia",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Monopoli91 at Italian Wikipedia / Wikimedia Commons · CC BY-SA 3.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "polignano-lama": {
+    "name": "Lama Monachile",
+    "photo": {
+      "src": "photos/polignano-lama.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lama_Monachile_Polignano.jpg",
+      "author": "Riccardo Noya",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Riccardo Noya / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "bari-svevo": {
+    "name": "Castello Svevo",
+    "photo": {
+      "src": "photos/bari-svevo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bari%2C_castello_svevo.jpg",
+      "author": "Horcrux92",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Horcrux92 / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "bari-theatre": {
+    "name": "Teatro Petruzzelli",
+    "photo": {
+      "src": "photos/bari-theatre.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Teatro_Petruzzelli_Bari.jpg",
+      "author": "Miki Petrelli",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Miki Petrelli / Wikimedia Commons · CC BY-SA 4.0 · Redimensionada y comprimida para web."
+    }
+  },
+  "italy16-duomo": {
+    "name": "Duomo di Milano",
+    "photo": {
+      "src": "photos/milan-duomo.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_from_Piazza_del_Duomo.jpg",
+      "author": "Jiuguang Wang",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Jiuguang Wang / CC BY-SA 3.0"
+    }
+  },
+  "italy16-castello": {
+    "name": "Castello Sforzesco",
+    "photo": {
+      "src": "photos/milan-castello.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Castello_Sforzesco_milano.jpg",
+      "author": "Simone Priori",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Simone Priori / CC BY-SA 4.0"
+    }
+  },
+  "italy16-grazie": {
+    "name": "Santa Maria delle Grazie",
+    "photo": {
+      "src": "photos/italy16-grazie.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chiese_di_Santa_Maria_delle_Grazie,_Milano-Italia.jpg",
+      "author": "Julian.Schindler",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "attribution": "Julian.Schindler",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Chiese_di_Santa_Maria_delle_Grazie%2C_Milano-Italia.jpg/1280px-Chiese_di_Santa_Maria_delle_Grazie%2C_Milano-Italia.jpg"
+    }
+  },
+  "italy16-david": {
+    "name": "David di Michelangelo",
+    "photo": {
+      "src": "photos/italy16-david.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Michelangelo%27s_David_2015.jpg",
+      "author": "Livioandronico2013",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Livioandronico2013",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Michelangelo%27s_David_2015.jpg/1280px-Michelangelo%27s_David_2015.jpg"
+    }
+  },
+  "italy16-cupola": {
+    "name": "Cupola di Brunelleschi",
+    "photo": {
+      "src": "photos/italy16-cupola.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cupola_di_santa_maria_del_fiore_dal_campanile_di_giotto,_01.JPG",
+      "author": "sailko",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "attribution": "sailko",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Cupola_di_santa_maria_del_fiore_dal_campanile_di_giotto%2C_01.JPG"
+    }
+  },
+  "italy16-uffizi": {
+    "name": "Gallerie degli Uffizi",
+    "photo": {
+      "src": "photos/italy16-uffizi.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Firenze_-_Florence_-_Portico_degli_Uffizi_-_Uffizi_Courtyard_-_View_West_towards_Ponte_Vecchio.jpg",
+      "author": "Txllxt TxllxT",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Txllxt TxllxT",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Firenze_-_Florence_-_Portico_degli_Uffizi_-_Uffizi_Courtyard_-_View_West_towards_Ponte_Vecchio.jpg/1280px-Firenze_-_Florence_-_Portico_degli_Uffizi_-_Uffizi_Courtyard_-_View_West_towards_Ponte_Vecchio.jpg"
+    }
+  },
+  "italy16-compianto": {
+    "name": "Compianto sul Cristo morto",
+    "photo": {
+      "src": "photos/italy16-compianto.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Compianto_sul_Cristo_morto_(Bologna)_2.jpg",
+      "author": "Autor no indicado (Wikimedia Commons)",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+      "attribution": "Wikimedia Commons",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Compianto_sul_Cristo_morto_%28Bologna%29_2.jpg/1280px-Compianto_sul_Cristo_morto_%28Bologna%29_2.jpg"
+    }
+  },
+  "italy16-ferrari": {
+    "name": "Museo Enzo Ferrari",
+    "photo": {
+      "src": "photos/italy16-ferrari.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Interior_of_the_Museo_Enzo_Ferrari,_Modena,_2019,_12.jpg",
+      "author": "Chris Olszewski",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Chris Olszewski",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Interior_of_the_Museo_Enzo_Ferrari%2C_Modena%2C_2019%2C_12.jpg/1280px-Interior_of_the_Museo_Enzo_Ferrari%2C_Modena%2C_2019%2C_12.jpg"
+    }
+  }
+}

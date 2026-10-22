@@ -1,0 +1,325 @@
+{
+  "id": "washington",
+  "name": "Washington D.C.",
+  "flag": "🇺🇸",
+  "start": "2026-12-03",
+  "end": "2026-12-09",
+  "tag": "Una escapada cultural",
+  "intro": "Una semana para recorrer los grandes monumentos de Washington y elegir con calma entre sus museos. Dormirás seis noches en la misma ciudad, con paseos por Georgetown y una excursión a Alexandria. El plan combina visitas bajo techo con recorridos al aire libre, una mezcla útil para diciembre.",
+  "bases": [
+    [
+      "Washington D.C.",
+      6
+    ]
+  ],
+  "flight": "La propuesta es volar de Ciudad de México (MEX) al aeropuerto Washington Dulles (IAD) y regresar por la misma ruta. Busca opciones sin escalas de Aeroméxico o United para las fechas elegidas.\n\nEl aeropuerto Ronald Reagan (DCA) queda más cerca del centro, pero desde México suele implicar cambiar de avión. Conviene comparar el precio y el tiempo completo hasta el hotel antes de decidir.",
+  "local": "Desde Dulles, la Silver Line —la línea plateada del metro— permite llegar al centro en unos 55–75 minutos. El metro también facilita las salidas hacia Arlington y Alexandria.\n\nEl National Mall es la gran zona de jardines donde se encuentran muchos monumentos y museos. Parece compacto en el mapa, pero las distancias son amplias; por eso cada jornada agrupa visitas cercanas y deja tiempo para descansar.",
+  "climate": "En diciembre puedes encontrar temperaturas de aproximadamente 0–10 °C, además de viento, lluvia o alguna nevada. Lleva abrigo y una capa exterior que proteja del agua.\n\nLos museos permiten ajustar el recorrido al tiempo: si un día no invita a caminar por el Mall, puedes intercambiarlo con una jornada dedicada a colecciones de arte, historia o ciencia.",
+  "solo": "Es un destino cómodo para viajar solo con tu inglés. Alojándote cerca de una estación de metro podrás llegar a los principales puntos del recorrido sin alquilar coche.\n\nLos días de museo no necesitan comenzar de madrugada. Conviene elegir una o dos colecciones por jornada y disfrutarlas, en lugar de intentar visitar todos los museos de la institución Smithsonian.",
+  "costs": [
+    [
+      "Vuelos",
+      6500,
+      10500
+    ],
+    [
+      "6 noches en habitación privada",
+      10000,
+      14500
+    ],
+    [
+      "Comida",
+      4500,
+      6500
+    ],
+    [
+      "Transporte",
+      1100,
+      1800
+    ],
+    [
+      "Entradas y actividades",
+      1000,
+      2000
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      2200,
+      3200
+    ]
+  ],
+  "tips": [
+    "Muchos museos Smithsonian son gratuitos, pero algunos, como el Museo Nacional del Aire y el Espacio, requieren reservar un pase con hora de entrada.",
+    "Reserva la visita al Capitolio y consulta por separado las condiciones de acceso al Cementerio Nacional de Arlington. Son visitas distintas y no comparten una entrada.",
+    "Las fechas propuestas coinciden parcialmente con España. Para combinar ambos viajes, puedes mover Washington al 12–18 de diciembre y revisar nuevamente vuelos y hoteles."
+  ],
+  "sources": [
+    [
+      "Smithsonian: planificación",
+      "https://www.si.edu/visit?os=a"
+    ],
+    [
+      "Pases Air and Space",
+      "https://airandspace.si.edu/visit/museum-dc"
+    ],
+    [
+      "Aeroméxico",
+      "https://www.aeromexico.com/"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-03",
+      "title": "llegada y primera vista del Mall",
+      "base": "Washington D.C.",
+      "places": [
+        "dc-mall"
+      ],
+      "am": "Sal de Ciudad de México en el vuelo reservado hacia Washington.",
+      "pm": "Después de los trámites de llegada, toma el metro o un taxi hasta el hotel. La duración de estos trámites determinará cuánto tiempo queda libre.",
+      "night": "Si llegas con energía y aún es buena hora, da un primer paseo por el National Mall. Si aterrizas tarde, deja esta visita para los días siguientes.",
+      "mobility": "Desde el aeropuerto de Dulles, la línea Silver del metro tarda aproximadamente 55–75 minutos en llegar al centro. Un taxi es otra opción según equipaje y ubicación del hotel.",
+      "spend": 900,
+      "note": "El primer paseo depende de la hora real de llegada. Si aterrizas tarde, las visitas comienzan al día siguiente."
+    },
+    {
+      "n": 2,
+      "date": "2026-12-04",
+      "title": "Capitolio y Biblioteca",
+      "base": "Washington D.C.",
+      "places": [
+        "capitol",
+        "library-congress"
+      ],
+      "am": "Conoce el Capitolio mediante la visita que hayas reservado. Es la sede del Congreso de Estados Unidos y una de las referencias arquitectónicas de la ciudad.",
+      "pm": "Continúa hacia la Biblioteca del Congreso para contemplar sus espacios históricos, con la reserva de acceso que corresponda.",
+      "night": "Cena cerca del alojamiento; ambas visitas pueden ocupar buena parte del día.",
+      "mobility": "Combina metro y caminata para llegar al Capitolio y a la Biblioteca del Congreso. Deja margen entre sus horas de entrada.",
+      "spend": 950,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-12-05",
+      "title": "ciencia y grandes colecciones",
+      "base": "Washington D.C.",
+      "places": [
+        "air-space",
+        "natural-history-dc",
+        "national-gallery-dc"
+      ],
+      "am": "Elige un museo como visita principal: el Museo del Aire y el Espacio si te atrae la aviación, o el de Historia Natural si prefieres ciencias y grandes colecciones.",
+      "pm": "La Galería Nacional de Arte es otra alternativa para quien prefiera pintura y escultura. Las fotos muestran las opciones; no necesitas recorrer los tres museos en una jornada.",
+      "night": "Disfruta una cena tranquila después de un día de interiores.",
+      "mobility": "Usa el metro para acercarte al National Mall y camina hasta el museo que hayas elegido.",
+      "spend": 1000,
+      "note": "",
+      "optionalPlaces": [
+        "air-space",
+        "natural-history-dc",
+        "national-gallery-dc"
+      ]
+    },
+    {
+      "n": 4,
+      "date": "2026-12-06",
+      "title": "memoria junto al Potomac",
+      "base": "Washington D.C.",
+      "places": [
+        "lincoln",
+        "vietnam-memorial",
+        "korean-memorial",
+        "arlington"
+      ],
+      "am": "Recorre el monumento a Lincoln y los memoriales de las guerras de Vietnam y Corea, próximos entre sí en el extremo occidental del Mall.",
+      "pm": "Si te quedan energía y tiempo, cruza a Arlington para visitar el cementerio nacional. De lo contrario, termina el paseo junto al Potomac y reserva Arlington para otra ocasión.",
+      "night": "Regresa al hotel; será una jornada de bastante caminata.",
+      "mobility": "La ruta entre memoriales implica una caminata larga. Para Arlington, utiliza metro o taxi y deja tiempo para los controles de acceso.",
+      "spend": 1100,
+      "note": "",
+      "optionalPlaces": [
+        "arlington"
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2026-12-07",
+      "title": "Georgetown y arquitectura",
+      "base": "Washington D.C.",
+      "places": [
+        "georgetown",
+        "dupont-circle"
+      ],
+      "am": "Pasea por Georgetown para conocer sus calles residenciales, fachadas y comercios.",
+      "pm": "Continúa hacia Dupont Circle si te apetece otro barrio de arquitectura urbana y cafés. Puedes usar autobús o taxi entre las dos zonas.",
+      "night": "Cena en el barrio que más te haya gustado o vuelve al centro.",
+      "mobility": "Llega a Georgetown en autobús o taxi y continúa a pie. Para Dupont Circle, elige otro traslado urbano si quieres evitar una caminata extensa.",
+      "spend": 1150,
+      "note": ""
+    },
+    {
+      "n": 6,
+      "date": "2026-12-08",
+      "title": "Alexandria o un museo pendiente",
+      "base": "Washington D.C.",
+      "places": [
+        "alexandria"
+      ],
+      "am": "Viaja a Alexandria para pasear por su casco histórico, al otro lado del área metropolitana.",
+      "pm": "Recorre las calles cercanas al río y almuerza con calma. Si llueve de manera persistente, sustituye la excursión por uno de los museos que no elegiste el día 3.",
+      "night": "Regresa a Washington y prepara el equipaje.",
+      "mobility": "La combinación de metro y traslado local hacia Old Town Alexandria puede tomar unos 45–60 minutos por sentido. Consulta el recorrido desde tu hotel.",
+      "spend": 1200,
+      "note": "Si llueve, sustituye Alexandria por uno de los museos pendientes en Washington."
+    },
+    {
+      "n": 7,
+      "date": "2026-12-09",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Toma metro o taxi hacia Dulles y añade el tiempo necesario para documentar antes del vuelo a Ciudad de México.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 5,
+  "profile": {
+    "pace": "Relajado",
+    "solo": "Muy fácil",
+    "weather": "Baja",
+    "why": "Una base y museos intercambiables permiten reducir caminatas con mal tiempo; metro y visitas concentradas facilitan moverse solo.",
+    "weatherWhy": "El frío, la lluvia o la nieve pueden acortar los paseos por el Mall y Alexandria; los museos permiten mantener buena parte del viaje bajo techo.",
+    "soloWhy": "Una sola base, el metro y las visitas concentradas permiten organizar los días con facilidad usando tu inglés."
+  },
+  "experiences": [
+    "Las salas del Capitolio y la Biblioteca del Congreso",
+    "Elegir ciencia o arte entre grandes museos",
+    "Los memoriales de Lincoln, Vietnam y Corea",
+    "Fachadas y cafés de Georgetown",
+    "Alexandria o una colección pendiente, según el tiempo"
+  ],
+  "routeCities": [
+    "Washington D.C.",
+    "Alexandria"
+  ],
+  "cover": "capitol",
+  "hotels": [],
+  "stays": [
+    [
+      "Washington D.C.",
+      "Busca en Dupont Circle, Foggy Bottom o Downtown, la zona central de negocios. Prioriza una estación de metro próxima para llegar a museos y monumentos sin coche."
+    ],
+    [
+      "Al comparar hoteles",
+      "Valora el precio final junto con el tiempo de traslado diario; un hotel periférico puede añadir recorridos largos."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Washington D.C.",
+      "coords": [
+        38.9072,
+        -77.0369
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Arlington",
+      "coords": [
+        38.8799,
+        -77.1068
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "Alexandria",
+      "coords": [
+        38.8048,
+        -77.0469
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 3
+    }
+  ],
+  "placeDescriptions": {
+    "capitol": "Sede del Congreso en Washington. El tour interior requiere reserva; la visita no implica acceso a las cámaras legislativas.",
+    "dc-mall": "Gran explanada de Washington que conecta museos, zonas verdes y monumentos. Es el eje de varios paseos del viaje y una buena primera aproximación a la ciudad.",
+    "library-congress": "El edificio Thomas Jefferson de la Biblioteca del Congreso destaca por su fachada monumental y sus interiores ornamentados.",
+    "air-space": "El museo del National Mall reúne aeronaves y vehículos de exploración espacial; la imagen muestra una de sus salas.",
+    "natural-history-dc": "El museo de historia natural del Smithsonian, reconocible por su cúpula, alberga colecciones de ciencias naturales.",
+    "national-gallery-dc": "El edificio oeste de la National Gallery of Art presenta una fachada clásica y colecciones de pintura y escultura.",
+    "lincoln": "Monumento dedicado a Abraham Lincoln al extremo del National Mall, frente al estanque reflectante.",
+    "vietnam-memorial": "Los muros de granito negro del memorial recuerdan a los militares estadounidenses fallecidos o desaparecidos en la guerra de Vietnam.",
+    "korean-memorial": "El memorial de la guerra de Corea combina esculturas, un muro y espacios de recuerdo junto al National Mall.",
+    "arlington": "Las hileras de lápidas de Arlington forman uno de los cementerios militares más conocidos de Estados Unidos.",
+    "georgetown": "Barrio histórico de Washington con casas de ladrillo, calles comerciales y ribera del Potomac.",
+    "dupont-circle": "La fuente y el parque de Dupont Circle sirven como punto de encuentro en este barrio de Washington.",
+    "alexandria": "Centro histórico de casas de ladrillo y calles junto al Potomac, en Virginia. Una excursión fácil desde Washington en Metro y transporte local."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

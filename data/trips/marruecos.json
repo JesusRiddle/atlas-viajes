@@ -1,0 +1,365 @@
+{
+  "id": "marruecos",
+  "name": "Marruecos con dos bases",
+  "flag": "🇲🇦",
+  "start": "2026-11-19",
+  "end": "2026-11-29",
+  "tag": "Medina y costa, sin cruzar el país",
+  "intro": "Este recorrido se concentra en dos ambientes distintos: los patios, jardines y mercados de Marrakech, y las murallas frente al Atlántico de Essaouira. Tendrás tiempo para orientarte en las calles de la medina y descansar entre visitas. Una tarde en Agafay añade un paisaje árido cercano, sin emprender la larga ruta hacia las dunas del Sahara.",
+  "bases": [
+    [
+      "Marrakech",
+      6
+    ],
+    [
+      "Essaouira",
+      3
+    ]
+  ],
+  "flight": "Busca un vuelo de Ciudad de México (MEX) a Marrakech-Menara (RAK), con conexión europea, normalmente en Madrid o París. Algunas combinaciones requieren dos cambios de avión; compara el tiempo total y no sólo el precio.\n\nPara regresar desde Essaouira, la propuesta principal es un traslado por carretera al aeropuerto de Marrakech y un vuelo por la tarde. Si el vuelo sale temprano, conviene añadir una noche final en Marrakech. También se puede comparar el aeropuerto de Essaouira (ESU), aunque sus conexiones deben encajar realmente con el viaje a México.",
+  "local": "El autobús entre Marrakech y Essaouira tarda unas tres horas; un traslado privado suele ocupar aproximadamente 2½–3 horas. Será el único cambio de ciudad con equipaje durante la estancia.\n\nAgafay está a unos 45–60 minutos de Marrakech por carretera y se puede visitar durante una tarde, regresando al mismo alojamiento. El Sahara queda demasiado lejos para plantearlo como una excursión cómoda de un día desde Marrakech.",
+  "climate": "A finales de noviembre, Marrakech puede tener temperaturas de unos 10–22 °C. Las tardes suelen permitir paseos agradables, pero refresca al caer el sol.\n\nEn Essaouira puede soplar bastante viento junto al mar. Para Agafay lleva una prenda de abrigo: la cena y el regreso se realizarán después del atardecer.",
+  "solo": "Viajar solo requiere algo más de preparación que en las rutas europeas. Para tu primera visita a la medina, el centro histórico de calles estrechas, conviene contratar un guía acreditado que te ayude a orientarte.\n\nUn riad es una casa tradicional organizada alrededor de un patio, muchas veces convertida en alojamiento. Elige uno que explique bien cómo llegar y ofrezca recogida si el taxi no puede acceder a su calle. Reserva los traslados con antelación y acuerda el precio de cualquier servicio antes de aceptarlo.",
+  "costs": [
+    [
+      "Vuelos",
+      18500,
+      28000
+    ],
+    [
+      "9 noches en habitación privada en riad/hotel",
+      10000,
+      15500
+    ],
+    [
+      "Comida",
+      4500,
+      6500
+    ],
+    [
+      "Autobuses y traslados",
+      3500,
+      6000
+    ],
+    [
+      "Entradas, guía y Agafay",
+      4500,
+      7500
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      3500,
+      5500
+    ]
+  ],
+  "tips": [
+    "Agafay tiene un paisaje pedregoso. La experiencia consiste en disfrutar la amplitud del paisaje y el atardecer; las grandes dunas del Sahara requerirían otro recorrido.",
+    "Sólo cambiarás una vez de ciudad durante la estancia. Dentro de la medina, caminar con un guía el primer día puede hacer más cómodas las visitas posteriores.",
+    "Si el regreso sale temprano de Marrakech, añade una noche allí y ajusta las vacaciones. No conviene depender de un traslado largo desde Essaouira de madrugada.",
+    "Las relaciones entre personas del mismo sexo están criminalizadas en Marruecos. Ten presente ese marco legal al decidir si te sentirías cómodo viajando allí."
+  ],
+  "sources": [
+    [
+      "Turismo oficial",
+      "https://www.visitmorocco.com/es"
+    ],
+    [
+      "Guía de viaje SRE",
+      "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/374-marruecos"
+    ],
+    [
+      "Seguridad y leyes",
+      "https://www.gov.uk/foreign-travel-advice/morocco/safety-and-security"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-11-19",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "La ruta propuesta enlaza Ciudad de México (MEX) con Marrakech (RAK) mediante una escala europea. Comprueba la conexión y el equipaje incluido.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-11-20",
+      "title": "el primer paseo por la medina",
+      "base": "Marrakech",
+      "places": [
+        "marrakech"
+      ],
+      "am": "Tras aterrizar en Marrakech, utiliza el traslado acordado con tu alojamiento. Si el hotel está en una calle peatonal de la medina, confirma dónde te recogerán para el último tramo.",
+      "pm": "Instálate y da un paseo corto por el entorno. La medina es la ciudad antigua amurallada, formada por una red de callejuelas y mercados.",
+      "night": "Cena cerca del alojamiento y descansa.",
+      "mobility": "El traslado del aeropuerto a la medina tarda aproximadamente 20–40 minutos. Puede haber un tramo final a pie si tu alojamiento está dentro de una calle peatonal.",
+      "spend": 850,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-11-21",
+      "title": "patios y artesanía",
+      "base": "Marrakech",
+      "places": [
+        "bahia",
+        "jemaa-el-fna"
+      ],
+      "am": "Visita el Palacio de la Bahía para conocer sus patios, decoración y jardines. Una visita guiada puede ayudarte a orientarte también en la medina.",
+      "pm": "Recorre algunos zocos, los mercados de artesanía y productos cotidianos, sin intentar abarcar todos sus callejones.",
+      "night": "Acércate a la plaza Jemaa el-Fna para observar su ambiente y cena en un lugar con precios claros.",
+      "mobility": "Realiza el recorrido a pie. Un guía para esta primera jornada completa puede ayudarte a orientarte entre palacio, mercados y plaza.",
+      "spend": 1800,
+      "note": ""
+    },
+    {
+      "n": 4,
+      "date": "2026-11-22",
+      "title": "azul Majorelle",
+      "base": "Marrakech",
+      "places": [
+        "majorelle"
+      ],
+      "am": "Visita el Jardín Majorelle en la franja reservada. El recorrido combina vegetación, senderos y edificios de su característico azul intenso.",
+      "pm": "Regresa con calma y dedica la tarde a cafés, tiendas o descanso. Las entradas a museos cercanos no se dan por incluidas en el billete del jardín.",
+      "night": "Cena y disfruta una noche tranquila.",
+      "mobility": "Un taxi facilita el trayecto hasta Majorelle. Acuerda la recogida o consulta con el alojamiento cómo organizar el regreso.",
+      "spend": 1600,
+      "note": ""
+    },
+    {
+      "n": 5,
+      "date": "2026-11-23",
+      "title": "Ben Youssef y el museo de la ciudad",
+      "base": "Marrakech",
+      "places": [
+        "ben-youssef-madrasa",
+        "marrakech-museum"
+      ],
+      "am": "Conoce la madrasa Ben Youssef, una antigua escuela coránica organizada alrededor de un patio con rica decoración.",
+      "pm": "Puedes completar la jornada con el Museo de Marrakech, instalado en un palacio histórico cercano. Alterna los interiores con pausas para caminar y comer.",
+      "night": "Regresa al alojamiento; pide indicaciones si prefieres evitar callejones poco claros al anochecer.",
+      "mobility": "Conecta a pie las visitas de la medina y utiliza taxi para los trayectos exteriores si tu hotel queda lejos.",
+      "spend": 1200,
+      "note": ""
+    },
+    {
+      "n": 6,
+      "date": "2026-11-24",
+      "title": "Agafay al atardecer",
+      "base": "Marrakech",
+      "places": [
+        "agafay"
+      ],
+      "am": "Deja la mañana libre para descansar o para una visita pendiente en Marrakech.",
+      "pm": "Sal en una excursión hacia Agafay, un paisaje de colinas pedregosas próximo a la ciudad. La propuesta es contemplar la luz del atardecer; no es un viaje a las grandes dunas del Sahara.",
+      "night": "Si contrataste una cena como parte de la excursión, disfrútala antes del traslado de regreso. Comprueba las inclusiones y la hora de llegada al hotel.",
+      "mobility": "Agafay queda aproximadamente a 45–60 minutos por carretera desde Marrakech. Contrata el traslado de ida y vuelta dentro de la excursión de tarde y noche.",
+      "spend": 2600,
+      "note": "La propuesta no incluye quad ni paseos con animales. Cualquier actividad adicional debe elegirse y cotizarse por separado."
+    },
+    {
+      "n": 7,
+      "date": "2026-11-25",
+      "title": "descanso y hammam opcional",
+      "base": "Marrakech",
+      "places": [],
+      "am": "Empieza el día más tarde y disfruta el alojamiento.",
+      "pm": "Puedes reservar un hammam, el baño tradicional, si te interesa. Pide antes una explicación del servicio, su duración y precio; es una experiencia opcional.",
+      "night": "Cena y prepara la maleta para salir hacia la costa.",
+      "mobility": "La jornada requiere pocos desplazamientos: camina por el entorno o utiliza taxi si reservas un hammam más alejado.",
+      "spend": 1000,
+      "note": ""
+    },
+    {
+      "n": 8,
+      "date": "2026-11-26",
+      "title": "llegada a la costa atlántica",
+      "base": "Essaouira",
+      "places": [
+        "essaouira"
+      ],
+      "am": "Viaja en autobús a Essaouira y continúa hasta el alojamiento.",
+      "pm": "Da un primer paseo por la medina para descubrir sus fachadas claras y calles cercanas al Atlántico.",
+      "night": "Cena en la ciudad y descansa.",
+      "mobility": "El autobús Marrakech–Essaouira tarda alrededor de 3 horas. Añade los traslados entre hotel y terminal en ambos extremos.",
+      "spend": 1300,
+      "note": ""
+    },
+    {
+      "n": 9,
+      "date": "2026-11-27",
+      "title": "puerto y fortificaciones",
+      "base": "Essaouira",
+      "places": [
+        "essaouira-port",
+        "essaouira-ramparts"
+      ],
+      "am": "Recorre el puerto pesquero y observa la actividad desde las zonas accesibles al público.",
+      "pm": "Continúa por las fortificaciones y los miradores junto al mar. Lleva una capa que te proteja del viento, incluso si hace sol.",
+      "night": "Cena en Essaouira.",
+      "mobility": "El puerto y las fortificaciones se conectan a pie desde la medina. Ajusta el paseo al viento y al estado de los accesos.",
+      "spend": 950,
+      "note": ""
+    },
+    {
+      "n": 10,
+      "date": "2026-11-28",
+      "title": "un día costero lento",
+      "base": "Essaouira",
+      "places": [
+        "essaouira-beach"
+      ],
+      "am": "Pasea por la playa de Essaouira, especialmente agradable para caminar y contemplar el paisaje costero.",
+      "pm": "Dedica la última tarde a descansar o a recorrer las calles que más te hayan gustado. El programa no presupone clima para bañarse.",
+      "night": "Prepara el equipaje y confirma la hora del traslado a Marrakech.",
+      "mobility": "El paseo por la playa y las calles próximas se hace a pie. No necesitas contratar una excursión.",
+      "spend": 900,
+      "note": ""
+    },
+    {
+      "n": 11,
+      "date": "2026-11-29",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Sal de Essaouira en el traslado reservado hacia el aeropuerto de Marrakech. Si el vuelo obliga a salir demasiado temprano, traslada la última noche a Marrakech.",
+      "pm": "Toma el vuelo desde Marrakech y realiza la conexión europea indicada en la reserva.",
+      "night": "Llegarás a Ciudad de México según la fecha y hora del billete. Una conexión larga puede hacer que la llegada sea al día siguiente.",
+      "mobility": "Desde Essaouira hasta el aeropuerto de Marrakech, calcula unas 2½–3 horas por carretera más unas 3 horas de anticipación aeroportuaria. Esta propuesta necesita un vuelo de tarde; si el horario es temprano, duerme la noche anterior en Marrakech.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 7,
+  "profile": {
+    "pace": "Relajado",
+    "solo": "Requiere más atención",
+    "weather": "Media",
+    "why": "Dos bases con tardes libres y descanso. La medina y los traslados requieren preparación; viento y lluvia influyen en Essaouira y Agafay.",
+    "weatherWhy": "El viento y la lluvia pueden restar comodidad a la costa de Essaouira y a la salida al atardecer en Agafay.",
+    "soloWhy": "Orientarse en la medina y coordinar la llegada al riad y los traslados entre bases exige preparación, por lo que resultan útiles la recogida acordada y un guía local."
+  },
+  "experiences": [
+    "Patios y decoración del Palacio de la Bahía",
+    "Colores y artesanía en los zocos de Marrakech",
+    "El azul del Jardín Majorelle",
+    "Atardecer entre las colinas de Agafay",
+    "Puerto, murallas y paseos de Essaouira"
+  ],
+  "routeCities": [
+    "Marrakech",
+    "Essaouira"
+  ],
+  "cover": "bahia",
+  "hotels": [],
+  "stays": [
+    [
+      "Marrakech",
+      "Un riad es una casa tradicional con patio, adaptada como alojamiento. Elige uno con recogida organizada e instrucciones claras para llegar desde el punto donde puede detenerse el taxi."
+    ],
+    [
+      "Essaouira",
+      "Busca en una zona accesible de la medina o en el borde del centro."
+    ],
+    [
+      "Comodidad",
+      "Confirma que la habitación tenga calefacción y baño privado."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Marrakech",
+      "coords": [
+        31.6295,
+        -7.9811
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Essaouira",
+      "coords": [
+        31.5085,
+        -9.7595
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 2
+    }
+  ],
+  "placeDescriptions": {
+    "bahia": "Palacio marroquí de patios, techos pintados y artesanía. Una buena introducción a la arquitectura de Marrakech.",
+    "marrakech": "Ciudad de medina, zocos y jardines, con la plaza Jemaa el-Fna como centro social. Un guía local mejora la primera orientación.",
+    "jemaa-el-fna": "Gran plaza de la medina de Marrakech, conocida por su actividad cotidiana y su ambiente al atardecer. Es un punto de encuentro entre mercados y calles del casco antiguo.",
+    "majorelle": "Jardín de plantas y arquitectura azul intenso en Marrakech. La entrada se compra en el canal oficial con horario.",
+    "ben-youssef-madrasa": "Antigua escuela coránica de Marrakech, organizada alrededor de un patio decorado con madera, yesería y azulejos. Es una visita para apreciar de cerca la artesanía del edificio.",
+    "marrakech-museum": "Museo instalado en un palacio histórico de Marrakech. La gran lámpara de su patio interior muestra la escala y riqueza decorativa del edificio.",
+    "agafay": "Paisaje pedregoso a las afueras de Marrakech. Sirve para una experiencia de atardecer, pero no es el Sahara ni tiene sus dunas.",
+    "essaouira": "Ciudad costera amurallada de puertas azules, puerto y fortificaciones. Un cambio de ambiente que no exige recorrer todo Marruecos.",
+    "essaouira-port": "Puerto pesquero de Essaouira, donde las embarcaciones y la actividad de los trabajadores forman parte del paisaje cotidiano de la ciudad.",
+    "essaouira-ramparts": "Fortificaciones de piedra frente al Atlántico que protegían Essaouira. El paseo permite observar las murallas y la costa desde los accesos habilitados.",
+    "essaouira-beach": "Amplia playa atlántica junto a Essaouira. Es una propuesta para caminar y contemplar el mar; en esta época del año el programa no depende de bañarse."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

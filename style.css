@@ -1,4 +1,4 @@
-:root{--ink:#102a33;--muted:#52656a;--line:#d9e1e4;--paper:#fff;--pale:#f1f5f6;--accent:#ed744b;--gold:#ffbd69;--green:#b8ddc2;--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;color:var(--ink);background:var(--paper);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6}a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}button,select{font:inherit}button,a,summary,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid #dc5c2e;outline-offset:5px}header{height:86px;padding:0 5%;display:flex;gap:30px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:2px}.brand small{display:block;font-size:12px;letter-spacing:1px;font-weight:400}.brand-icon{background:var(--ink);color:var(--gold);width:44px;height:44px;display:grid;place-items:center;font-family:var(--serif);font-size:30px;border-radius:50%}nav{display:flex;gap:28px}nav a{text-decoration:none;font-size:14px}.download,.button{display:inline-block;background:var(--ink);color:#fff;border:0;padding:11px 20px;text-decoration:none;font-size:14px;border-radius:4px}.button.secondary{background:transparent;border:1px solid var(--line);color:var(--ink)}.wrap{max-width:1360px;margin:auto;padding:0 5%}.eyebrow{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin:0 0 14px}.orange{color:#b64620}h1,h2,h3{font-weight:400;line-height:1.08;margin:0;font-family:var(--serif)}h1{font-size:clamp(42px,5.2vw,76px);letter-spacing:-2px}h2{font-size:clamp(32px,3.5vw,50px);letter-spacing:-1px}h3{font-size:28px}.home-intro{display:grid;grid-template-columns:1fr 1.08fr;min-height:460px;gap:50px;align-items:center;padding-top:40px;padding-bottom:40px}.home-intro p{max-width:480px;color:var(--muted)}.intro-photo{position:relative;min-height:370px;height:100%;border-radius:4px;overflow:hidden}.intro-photo img{width:100%;height:100%;object-fit:cover;position:absolute}.photo-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,#102a33b8)}.intro-caption{position:absolute;bottom:24px;left:26px;color:#fff}.intro-caption strong{font-family:var(--serif);font-size:32px;display:block}.intro-caption span{font-size:14px}.quickstats{display:flex;gap:30px;border-top:1px solid var(--line);padding-top:18px;margin-top:22px}.quickstats strong{font-size:26px;display:block}.quickstats span{font-size:13px;color:var(--muted)}.section{padding-top:60px;padding-bottom:60px}.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:26px;gap:25px}.section-title p{margin:0;color:var(--muted);max-width:470px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.tripcard{text-decoration:none;border:1px solid var(--line);border-radius:5px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;background:white}.tripcard:hover{transform:translateY(-4px);box-shadow:0 12px 32px #102a3315}.cardphoto{height:220px;position:relative;overflow:hidden}.cardphoto img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.tripcard:hover img{transform:scale(1.035)}.rank{position:absolute;left:16px;top:16px;background:white;color:var(--ink);border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font-weight:700}.cardbody{padding:22px;flex:1}.cardbody .eyebrow{font-size:11px;color:#9e3d1a;margin-bottom:10px}.cardbody h3{font-size:29px}.carddates{font-size:14px;color:var(--muted);margin:12px 0}.cardfacts{display:flex;gap:9px;flex-wrap:wrap;font-size:12px}.cardfacts span{background:var(--pale);padding:3px 8px;border-radius:3px}.cardbottom{display:flex;align-items:center;justify-content:space-between;margin-top:20px;border-top:1px solid var(--line);padding-top:16px}.cardbottom strong{font-size:19px}.cardbottom small{font-size:12px;color:var(--muted)}.band{background:var(--ink);color:#fff;padding:45px 0}.band h2{font-size:36px}.band p{color:#d2e0e4}.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}.band .eyebrow{color:var(--gold)}.panel{padding:28px;background:var(--pale);border:1px solid var(--line);border-radius:5px}.panel h3{margin-bottom:15px}.panel p{margin:0}.scrolltable{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th{text-align:left;font-weight:700;background:var(--ink);color:white;padding:14px 16px;white-space:nowrap}td{border-bottom:1px solid var(--line);padding:14px 16px}tr:nth-child(even) td{background:var(--pale)}.notebox{font-size:14px;color:var(--muted);padding:18px 0}.triphero{position:relative;height:430px;background:var(--ink);color:white}.triphero img{position:absolute;width:100%;height:100%;object-fit:cover;filter:brightness(.65)}.triphero:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#102a33b8,transparent)}.triphero .wrap{position:relative;z-index:1;padding-top:42px;padding-bottom:32px;height:100%;display:flex;flex-direction:column;justify-content:end}.breadcrumb{font-size:14px;position:absolute;top:28px;text-decoration:none}.triphero h1{max-width:750px;font-size:clamp(42px,5vw,70px)}.triphero .eyebrow{color:var(--gold)}.hero-meta{display:flex;gap:25px;flex-wrap:wrap;margin-top:18px;font-size:15px}.subnav{border-bottom:1px solid var(--line);background:white;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 5%;flex-wrap:wrap}.subnav div{display:flex;gap:22px;flex-wrap:wrap}.subnav a{font-size:14px;text-decoration:none}.subnav select{max-width:270px;border:1px solid var(--line);padding:8px;background:white;border-radius:3px}.overview{display:grid;grid-template-columns:1.8fr 1fr;gap:35px;margin-top:38px}.lead{font-size:20px;line-height:1.65;max-width:760px}.factgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}.factgrid article{border-top:3px solid var(--ink);padding-top:17px}.factgrid h3{font-family:Arial,sans-serif;font-size:17px;font-weight:700}.factgrid p{font-size:15px;color:var(--muted)}.budget-teaser{background:var(--ink);color:white;padding:30px;border-radius:5px;align-self:start}.budget-teaser strong{font-family:var(--serif);font-size:38px;display:block;line-height:1.2;margin:12px 0}.budget-teaser p{font-size:14px;color:#d2e0e4}.budget-teaser a{color:var(--gold)}.baseroute{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.basepill{background:var(--pale);border:1px solid var(--line);padding:12px 18px;border-radius:4px;flex:1;min-width:140px}.basepill small{display:block;color:var(--muted)}.itinerary-layout{display:grid;grid-template-columns:180px 1fr;gap:32px;margin-top:30px}.daynav{position:sticky;top:105px;align-self:start;max-height:72vh;overflow:auto;border-left:1px solid var(--line)}.daynav a{display:block;padding:7px 12px;text-decoration:none;font-size:13px;color:var(--muted)}.daynav a:hover{color:var(--ink);background:var(--pale)}.daynav a>strong:first-child{display:block;font-size:14px;color:var(--ink)}.days{min-width:0}.day{border:1px solid var(--line);border-radius:5px;margin-bottom:24px;overflow:hidden}.day summary{display:flex;list-style:none;gap:20px;padding:22px;cursor:pointer;align-items:center;background:var(--pale)}.day summary::-webkit-details-marker{display:none}.day summary:after{content:'+';font-size:27px;margin-left:auto}.day[open] summary:after{content:'−'}.daynum{background:var(--ink);color:var(--gold);font-family:var(--serif);width:55px;height:55px;min-width:55px;display:grid;place-items:center;font-size:29px;border-radius:4px}.day summary h3{font-size:25px}.day-date{font-size:13px;color:var(--muted);display:block;margin-top:4px}.daycontent{padding:22px}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.gallery.single{grid-template-columns:1fr}.gallery.single figure{display:grid;grid-template-columns:1fr 1fr;align-items:center;background:var(--pale)}figure{margin:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}figure img{display:block;width:100%;height:245px;object-fit:cover}figcaption{padding:18px}figcaption>strong{font-family:var(--serif);font-size:24px;line-height:1.2;display:block}figcaption p{font-size:14px;color:var(--muted);margin:10px 0}.credit{font-size:12px;color:var(--muted);line-height:1.5}.schedule{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:25px}.schedule label{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:#a94321;font-weight:700}.schedule p{font-size:15px;margin:5px 0}.mobility{background:var(--pale);padding:16px 18px;margin-top:20px;display:grid;grid-template-columns:1fr auto;gap:20px;font-size:14px}.mobility>div>strong{display:block}.dailycost{text-align:right;white-space:nowrap}.daynote{padding:14px 16px;border-left:3px solid var(--accent);background:#fff7f2;font-size:14px;margin-top:18px}.budgetgrid{display:grid;grid-template-columns:1.25fr 1fr;gap:35px}.totalrow td{background:var(--ink)!important;color:white;font-size:18px;font-weight:700}.tips{padding-left:20px;font-size:15px}.tips li{padding:7px 0}.sources a{display:block;padding:10px 0;font-size:14px}.creditsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.creditsgrid article{border-bottom:1px solid var(--line);padding:14px 0;font-size:14px}.creditsgrid strong{display:block}.method p,.method li{max-width:900px;font-size:16px}.method li{margin-bottom:12px}.vacation-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.pill{display:inline-block;padding:4px 10px;background:#edf5ef;color:#29513b;font-size:12px;border-radius:3px;margin-bottom:12px}.tiny{font-size:13px;color:var(--muted)}footer{padding:45px 5%;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:40px;background:var(--pale)}footer strong{letter-spacing:2px}footer p,footer a{font-size:13px;max-width:430px;color:var(--muted)}.skip{position:fixed;left:15px;top:-70px;background:var(--ink);color:white;padding:12px;z-index:30}.skip:focus{top:10px}.noscript{padding:30px}.source-warning{background:#fff7f2;border-left:3px solid var(--accent);padding:18px;margin:24px 0;font-size:14px}.printbutton{border:1px solid var(--line);background:white;border-radius:4px;padding:8px 14px;font-size:14px}@media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}.itinerary-layout{grid-template-columns:1fr}.daynav{display:none}.overview{grid-template-columns:1fr}.budget-teaser{display:flex;gap:24px;align-items:center}.budget-teaser strong{font-size:32px;white-space:nowrap}.creditsgrid{grid-template-columns:repeat(2,1fr)}}@media(max-width:680px){header{height:auto;min-height:74px;padding:12px 5%;gap:15px;flex-wrap:wrap}header nav{order:3;width:100%;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:10px}header .download{font-size:12px;padding:9px 12px}.brand small{font-size:12px}.home-intro{grid-template-columns:1fr;gap:22px;padding-top:30px}.intro-photo{height:270px;min-height:270px}.quickstats{gap:25px}h1{letter-spacing:-1px}.section{padding:40px 0}.section-title{display:block}.section-title p{margin-top:14px}.cards{grid-template-columns:1fr}.cardphoto{height:245px}.band-grid,.factgrid,.budgetgrid,.vacation-grid{grid-template-columns:1fr;gap:25px}.triphero{height:380px}.hero-meta{gap:12px;font-size:13px}.subnav{gap:12px}.subnav div{gap:15px}.subnav select{max-width:none;width:100%}.lead{font-size:18px}.budget-teaser{display:block}.baseroute{gap:8px}.basepill{min-width:130px;padding:10px}.gallery,.gallery.single,.gallery.single figure{display:block}figure{margin-bottom:18px}figure img{height:235px}.schedule{grid-template-columns:1fr;gap:16px}.mobility{grid-template-columns:1fr}.dailycost{text-align:left}.day summary{padding:16px;gap:12px}.day summary h3{font-size:22px}.day-date{font-size:12px}.daycontent{padding:16px}.daynum{width:45px;min-width:45px;height:45px;font-size:25px}.creditsgrid{grid-template-columns:1fr}footer{display:block}footer>div+div{margin-top:25px}html{scroll-padding-top:135px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}@media print{header,footer,.subnav,.daynav,.download,.printbutton,.breadcrumb{display:none!important}.wrap{max-width:none;padding:0}.triphero{height:180px;print-color-adjust:exact}.section{padding:20px 0}.day{break-inside:avoid}.daycontent{display:block!important}.overview,.budgetgrid{display:block}.itinerary-layout{display:block}.budget-teaser{print-color-adjust:exact}.gallery.single figure{grid-template-columns:1fr 1fr}body{font-size:12px}figure img{height:150px}.source-warning{font-size:12px}.schedule p{font-size:12px}.triphero h1{font-size:40px}.creditsgrid{grid-template-columns:repeat(3,1fr)}}
+:root{--ink:#102a33;--muted:#52656a;--line:#d9e1e4;--paper:#fff;--pale:#f1f5f6;--accent:#ed744b;--gold:#ffbd69;--green:#b8ddc2;--serif:Georgia,'Times New Roman',serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;color:var(--ink);background:var(--paper);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6}a{color:inherit;text-decoration-thickness:1px;text-underline-offset:4px}button,select{font:inherit}button,a,summary,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:focus-visible,a:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid #dc5c2e;outline-offset:5px}header{height:86px;padding:0 5%;display:flex;gap:30px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#fff;position:static}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:800;letter-spacing:2px}.brand small{display:block;font-size:12px;letter-spacing:1px;font-weight:400}.brand-icon{background:var(--ink);color:var(--gold);width:44px;height:44px;display:grid;place-items:center;font-family:var(--serif);font-size:30px;border-radius:50%}nav{display:flex;gap:28px}nav a{text-decoration:none;font-size:14px}.download,.button{display:inline-block;background:var(--ink);color:#fff;border:0;padding:11px 20px;text-decoration:none;font-size:14px;border-radius:4px}.button.secondary{background:transparent;border:1px solid var(--line);color:var(--ink)}.wrap{max-width:1360px;margin:auto;padding:0 5%}.eyebrow{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin:0 0 14px}.orange{color:#b64620}h1,h2,h3{font-weight:400;line-height:1.08;margin:0;font-family:var(--serif)}h1{font-size:clamp(42px,5.2vw,76px);letter-spacing:-2px}h2{font-size:clamp(32px,3.5vw,50px);letter-spacing:-1px}h3{font-size:28px}.home-intro{display:grid;grid-template-columns:1fr 1.08fr;min-height:460px;gap:50px;align-items:center;padding-top:40px;padding-bottom:40px}.home-intro p{max-width:480px;color:var(--muted)}.intro-photo{position:relative;min-height:370px;height:100%;border-radius:4px;overflow:hidden}.intro-photo img{width:100%;height:100%;object-fit:cover;position:absolute}.photo-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,#102a33b8)}.intro-caption{position:absolute;bottom:24px;left:26px;color:#fff}.intro-caption strong{font-family:var(--serif);font-size:32px;display:block}.intro-caption span{font-size:14px}.quickstats{display:flex;gap:30px;border-top:1px solid var(--line);padding-top:18px;margin-top:22px}.quickstats strong{font-size:26px;display:block}.quickstats span{font-size:13px;color:var(--muted)}.section{padding-top:60px;padding-bottom:60px}.section-title{display:flex;justify-content:space-between;align-items:end;margin-bottom:26px;gap:25px}.section-title p{margin:0;color:var(--muted);max-width:470px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.tripcard{text-decoration:none;border:1px solid var(--line);border-radius:5px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s;background:white}.tripcard:hover{transform:translateY(-4px);box-shadow:0 12px 32px #102a3315}.cardphoto{height:220px;position:relative;overflow:hidden}.cardphoto img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.tripcard:hover img{transform:scale(1.035)}.rank{position:absolute;left:16px;top:16px;background:white;color:var(--ink);border-radius:50%;width:34px;height:34px;display:grid;place-items:center;font-weight:700}.cardbody{padding:22px;flex:1}.cardbody .eyebrow{font-size:11px;color:#9e3d1a;margin-bottom:10px}.cardbody h3{font-size:29px}.carddates{font-size:14px;color:var(--muted);margin:12px 0}.cardfacts{display:flex;gap:9px;flex-wrap:wrap;font-size:12px}.cardfacts span{background:var(--pale);padding:3px 8px;border-radius:3px}.cardbottom{display:flex;align-items:center;justify-content:space-between;margin-top:20px;border-top:1px solid var(--line);padding-top:16px}.cardbottom strong{font-size:19px}.cardbottom small{font-size:12px;color:var(--muted)}.band{background:var(--ink);color:#fff;padding:45px 0}.band h2{font-size:36px}.band p{color:#d2e0e4}.band-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px}.band .eyebrow{color:var(--gold)}.panel{padding:28px;background:var(--pale);border:1px solid var(--line);border-radius:5px}.panel h3{margin-bottom:15px}.panel p{margin:0}.scrolltable{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th{text-align:left;font-weight:700;background:var(--ink);color:white;padding:14px 16px;white-space:nowrap}td{border-bottom:1px solid var(--line);padding:14px 16px}tr:nth-child(even) td{background:var(--pale)}.notebox{font-size:14px;color:var(--muted);padding:18px 0}.triphero{position:relative;height:430px;background:var(--ink);color:white}.triphero img{position:absolute;width:100%;height:100%;object-fit:cover;filter:brightness(.65)}.triphero:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#102a33b8,transparent)}.triphero .wrap{position:relative;z-index:1;padding-top:42px;padding-bottom:32px;height:100%;display:flex;flex-direction:column;justify-content:end}.breadcrumb{font-size:14px;position:absolute;top:28px;text-decoration:none}.triphero h1{max-width:750px;font-size:clamp(42px,5vw,70px)}.triphero .eyebrow{color:var(--gold)}.hero-meta{display:flex;gap:25px;flex-wrap:wrap;margin-top:18px;font-size:15px}.subnav{border-bottom:1px solid var(--line);background:white;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 5%;flex-wrap:wrap}.subnav div{display:flex;gap:22px;flex-wrap:wrap}.subnav a{font-size:14px;text-decoration:none}.subnav select{max-width:270px;border:1px solid var(--line);padding:8px;background:white;border-radius:3px}.overview{display:grid;grid-template-columns:1.8fr 1fr;gap:35px;margin-top:38px}.lead{font-size:20px;line-height:1.65;max-width:760px}.factgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:28px}.factgrid article{border-top:3px solid var(--ink);padding-top:17px}.factgrid h3{font-family:Arial,sans-serif;font-size:17px;font-weight:700}.factgrid p{font-size:15px;color:var(--muted)}.budget-teaser{background:var(--ink);color:white;padding:30px;border-radius:5px;align-self:start}.budget-teaser strong{font-family:var(--serif);font-size:38px;display:block;line-height:1.2;margin:12px 0}.budget-teaser p{font-size:14px;color:#d2e0e4}.budget-teaser a{color:var(--gold)}.baseroute{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.basepill{background:var(--pale);border:1px solid var(--line);padding:12px 18px;border-radius:4px;flex:1;min-width:140px}.basepill small{display:block;color:var(--muted)}.itinerary-layout{display:grid;grid-template-columns:180px 1fr;gap:32px;margin-top:30px}.daynav{position:sticky;top:105px;align-self:start;max-height:72vh;overflow:auto;border-left:1px solid var(--line)}.daynav a{display:block;padding:7px 12px;text-decoration:none;font-size:13px;color:var(--muted)}.daynav a:hover{color:var(--ink);background:var(--pale)}.daynav a>strong:first-child{display:block;font-size:14px;color:var(--ink)}.days{min-width:0}.day{border:1px solid var(--line);border-radius:5px;margin-bottom:24px;overflow:hidden}.day summary{display:flex;list-style:none;gap:20px;padding:22px;cursor:pointer;align-items:center;background:var(--pale)}.day summary::-webkit-details-marker{display:none}.day summary:after{content:'+';font-size:27px;margin-left:auto}.day[open] summary:after{content:'−'}.daynum{background:var(--ink);color:var(--gold);font-family:var(--serif);width:55px;height:55px;min-width:55px;display:grid;place-items:center;font-size:29px;border-radius:4px}.day summary h3{font-size:25px}.day-date{font-size:13px;color:var(--muted);display:block;margin-top:4px}.daycontent{padding:22px}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.gallery.single{grid-template-columns:1fr}.gallery.single figure{display:grid;grid-template-columns:1fr 1fr;align-items:center;background:var(--pale)}figure{margin:0;border:1px solid var(--line);border-radius:4px;overflow:hidden}figure img{display:block;width:100%;height:245px;object-fit:cover}figcaption{padding:18px}figcaption>strong{font-family:var(--serif);font-size:24px;line-height:1.2;display:block}figcaption p{font-size:14px;color:var(--muted);margin:10px 0}.credit{font-size:12px;color:var(--muted);line-height:1.5}.schedule{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:25px}.schedule label{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;color:#a94321;font-weight:700}.schedule p{font-size:15px;margin:5px 0}.mobility{background:var(--pale);padding:16px 18px;margin-top:20px;display:grid;grid-template-columns:1fr auto;gap:20px;font-size:14px}.mobility>div>strong{display:block}.dailycost{text-align:right;white-space:nowrap}.daynote{padding:14px 16px;border-left:3px solid var(--accent);background:#fff7f2;font-size:14px;margin-top:18px}.budgetgrid{display:grid;grid-template-columns:1.25fr 1fr;gap:35px}.totalrow td{background:var(--ink)!important;color:white;font-size:18px;font-weight:700}.tips{padding-left:20px;font-size:15px}.tips li{padding:7px 0}.sources a{display:block;padding:10px 0;font-size:14px}.creditsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.creditsgrid article{border-bottom:1px solid var(--line);padding:14px 0;font-size:14px}.creditsgrid strong{display:block}.method p,.method li{max-width:900px;font-size:16px}.method li{margin-bottom:12px}.pill{display:inline-block;padding:4px 10px;background:#edf5ef;color:#29513b;font-size:12px;border-radius:3px;margin-bottom:12px}.tiny{font-size:13px;color:var(--muted)}footer{padding:45px 5%;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:40px;background:var(--pale)}footer strong{letter-spacing:2px}footer p,footer a{font-size:13px;max-width:430px;color:var(--muted)}.skip{position:fixed;left:15px;top:-70px;background:var(--ink);color:white;padding:12px;z-index:30}.skip:focus{top:10px}.noscript{padding:30px}.source-warning{background:#fff7f2;border-left:3px solid var(--accent);padding:18px;margin:24px 0;font-size:14px}.printbutton{border:1px solid var(--line);background:white;border-radius:4px;padding:8px 14px;font-size:14px}@media(max-width:1000px){.cards{grid-template-columns:repeat(2,1fr)}.itinerary-layout{grid-template-columns:1fr}.daynav{display:none}.overview{grid-template-columns:1fr}.budget-teaser{display:flex;gap:24px;align-items:center}.budget-teaser strong{font-size:32px;white-space:nowrap}.creditsgrid{grid-template-columns:repeat(2,1fr)}}@media(max-width:680px){header{height:auto;min-height:74px;padding:12px 5%;gap:15px;flex-wrap:wrap}header nav{order:3;width:100%;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:10px}header .download{font-size:12px;padding:9px 12px}.brand small{font-size:12px}.home-intro{grid-template-columns:1fr;gap:22px;padding-top:30px}.intro-photo{height:270px;min-height:270px}.quickstats{gap:25px}h1{letter-spacing:-1px}.section{padding:40px 0}.section-title{display:block}.section-title p{margin-top:14px}.cards{grid-template-columns:1fr}.cardphoto{height:245px}.band-grid,.factgrid,.budgetgrid{grid-template-columns:1fr;gap:25px}.triphero{height:380px}.hero-meta{gap:12px;font-size:13px}.subnav{gap:12px}.subnav div{gap:15px}.subnav select{max-width:none;width:100%}.lead{font-size:18px}.budget-teaser{display:block}.baseroute{gap:8px}.basepill{min-width:130px;padding:10px}.gallery,.gallery.single,.gallery.single figure{display:block}figure{margin-bottom:18px}figure img{height:235px}.schedule{grid-template-columns:1fr;gap:16px}.mobility{grid-template-columns:1fr}.dailycost{text-align:left}.day summary{padding:16px;gap:12px}.day summary h3{font-size:22px}.day-date{font-size:12px}.daycontent{padding:16px}.daynum{width:45px;min-width:45px;height:45px;font-size:25px}.creditsgrid{grid-template-columns:1fr}footer{display:block}footer>div+div{margin-top:25px}html{scroll-padding-top:135px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}@media print{header,footer,.subnav,.daynav,.download,.printbutton,.breadcrumb{display:none!important}.wrap{max-width:none;padding:0}.triphero{height:180px;print-color-adjust:exact}.section{padding:20px 0}.day{break-inside:avoid}.daycontent{display:block!important}.overview,.budgetgrid{display:block}.itinerary-layout{display:block}.budget-teaser{print-color-adjust:exact}.gallery.single figure{grid-template-columns:1fr 1fr}body{font-size:12px}figure img{height:150px}.source-warning{font-size:12px}.schedule p{font-size:12px}.triphero h1{font-size:40px}.creditsgrid{grid-template-columns:repeat(3,1fr)}}
 
 /* Readable travel logistics */
 .section-icon{display:inline-grid;place-items:center;width:1.7em;height:1.7em;margin-right:.55em;color:#a94321;background:#fff2e9;border-radius:50%;font-family:Arial,sans-serif;font-size:.8em;vertical-align:middle}
@@ -42,10 +42,2155 @@ strong.atlas-city{display:inline;font-family:inherit;font-size:inherit;line-heig
 /* Option 1: inline emphasis inherits the surrounding text size. */
 .trip-espana-portugal .day h3>strong{display:inline;font-family:inherit;font-size:inherit;line-height:inherit;margin:0}
 
-/* Compact logistics, used only by the Emilia itinerary. */
-em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-compact{font-size:14px;line-height:1.5;margin-top:16px;border-top:1px solid var(--line);padding-top:12px}.rail-compact h4{margin:0 0 8px}.rail-compact ul,.rail-ticket-notes{list-style:none;padding:0;margin:0}.rail-compact li,.rail-ticket-notes li{margin:5px 0}.rail-compact .rail-plan-b{color:var(--muted);padding-left:10px;border-left:2px solid var(--line)}.rail-compact p{margin:8px 0 0}.rail-summary{font-size:14px}.rail-summary h4{margin:14px 0 8px}
+/* Énfasis de lugares y estilos del resumen ferroviario general. */
+em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-ticket-notes{list-style:none;padding:0;margin:0}.rail-ticket-notes li{margin:5px 0}.rail-summary{font-size:14px}.rail-summary h4{margin:14px 0 8px}
 
 .schedule p,
 .mobility p {
   white-space: pre-line;
+}
+/* Temporadas: estados por mes */
+.seasonality-section .section-title{margin-bottom:22px}
+.season-months{list-style:none;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;padding:0;margin:0}
+.season-month{min-width:0;border:1px solid transparent;border-radius:9px;padding:13px 9px;min-height:112px;display:flex;flex-direction:column;gap:5px;overflow-wrap:anywhere}
+.season-month>strong{font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.season-month .season-state{font-size:12px;font-weight:700}
+.season-month small{font-size:12px;line-height:1.35}
+.season-pending{background:#eee4fa;border-color:#c6a5e7;color:#50316d}
+.season-recommended{background:#d9eddd;border-color:#a3d2af;color:#255535}
+.season-conditional{background:#fff0c4;border-color:#eac56d;color:#684c0c}
+.season-avoid{background:#f5dedf;border-color:#dfa7ad;color:#7f3338}
+.season-legend{display:flex;gap:12px 20px;flex-wrap:wrap;margin:17px 0;font-size:13px;color:var(--muted)}
+.season-legend span{display:inline-flex;align-items:center;gap:7px}
+.season-swatch{height:14px;width:14px;display:inline-block;border:1px solid currentColor;border-radius:4px}
+.season-summary{font-size:14px;line-height:1.6}
+@media(max-width:1000px){.season-months{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:680px){.season-months{grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.season-month{min-height:110px;padding:10px 7px}}
+@media print{.season-months{grid-template-columns:repeat(6,minmax(0,1fr))}.season-month{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+
+/* Tarjetas de alojamiento: mantienen la cuadrícula de dos columnas del Atlas. */
+.stay-list.hotel-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+  align-items:stretch;
+}
+.hotel-card{
+  display:flex;
+  flex-direction:column;
+  min-width:0;
+  padding:18px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:var(--paper);
+  overflow-wrap:anywhere;
+}
+.hotel-card h4{margin:0 0 9px;font-size:15px;line-height:1.4}
+.hotel-card h4 em{font-weight:inherit}
+.hotel-card p{margin:0 0 12px;line-height:1.55}
+.hotel-card .hotel-address{color:var(--muted);margin-bottom:16px}
+.hotel-dates{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  padding:12px 0;
+  border-top:1px solid var(--line);
+  margin-bottom:10px;
+}
+.hotel-dates div{display:flex;flex-direction:column;gap:3px}
+.hotel-dates small{color:var(--muted);font-size:11px;letter-spacing:.035em}
+.hotel-dates strong{font-size:14px;line-height:1.4}
+.hotel-card .hotel-rate{font-weight:600}
+.hotel-card .hotel-status{color:var(--muted)}
+.hotel-card .hotel-notes{margin-top:4px}
+.hotel-card .hotel-link{align-self:flex-start;margin-top:auto;padding-top:6px}
+@media(max-width:680px){
+  .stay-list.hotel-grid{grid-template-columns:minmax(0,1fr)}
+}
+@media print{
+  .hotel-card{break-inside:avoid}
+}
+
+/* Datos de hotel: neutralizar la tipografía de la antigua lista de alojamientos. */
+.hotel-card .hotel-dates strong,
+.hotel-card .hotel-status strong,
+.hotel-card .hotel-notes strong{
+  display:inline;
+  font-size:inherit;
+  line-height:inherit;
+  margin:0;
+}
+.hotel-card .hotel-rate-conditions{
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+  font-weight:400;
+}
+
+/* Iconos discretos, alineados con el texto de cada alojamiento. */
+.hotel-card .hotel-icon-line{
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
+}
+.hotel-card .hotel-icon-line > span{
+  display:inline;
+  min-width:0;
+  color:inherit;
+  font-size:inherit;
+  line-height:inherit;
+}
+.hotel-card .hotel-icon{
+  flex:none;
+  width:16px;
+  height:16px;
+  margin-top:3px;
+  color:var(--muted);
+}
+.hotel-card .hotel-link.hotel-icon-line{
+  align-items:center;
+}
+.hotel-card .hotel-link .hotel-icon{
+  margin-top:0;
+}
+
+/* Enlace a Maps: conserva el tamaño y estilo del nombre del alojamiento. */
+.hotel-card h4 .hotel-name-map,
+.hotel-card h4 .hotel-name-map:visited{
+  color:inherit;
+  font:inherit;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+
+/* Tipografía uniforme de tarjetas de alojamiento; evita herencias de .stay-list. */
+.stay-list.hotel-grid .hotel-card{
+  font-size:14px;
+  line-height:1.55;
+}
+.stay-list.hotel-grid .hotel-card h4{
+  font-size:15px;
+  line-height:1.4;
+}
+.stay-list.hotel-grid .hotel-card p,
+.stay-list.hotel-grid .hotel-card .hotel-link{
+  font-size:14px;
+  line-height:1.55;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address,
+.stay-list.hotel-grid .hotel-card .hotel-rate-conditions,
+.stay-list.hotel-grid .hotel-card .hotel-description{
+  font-size:13px;
+  line-height:1.5;
+}
+.stay-list.hotel-grid .hotel-card .hotel-dates small{
+  font-size:11px;
+}
+.stay-list.hotel-grid .hotel-card .hotel-dates strong{
+  font-size:14px;
+}
+.stay-list.hotel-grid .hotel-card strong{
+  margin-bottom:0;
+}
+.stay-list.hotel-grid .hotel-card .hotel-icon-line > span{
+  display:inline;
+  font-size:inherit;
+  line-height:inherit;
+  color:inherit;
+}
+
+/* Tipografía explícita por componente: evita tamaños heredados por accidente. */
+.subnav select{
+  font-size:14px;
+  line-height:1.5;
+}
+.baseroute .basepill{
+  font-size:15px;
+  line-height:1.5;
+}
+.baseroute .basepill small{
+  font-size:13px;
+  line-height:1.45;
+}
+.experience-panel .experience-list{
+  font-size:15px;
+  line-height:1.6;
+}
+.reservation-planning .tips,
+.panel .stay-list:not(.hotel-grid){
+  font-size:15px;
+  line-height:1.6;
+}
+
+/* Encabezados diarios: título principal y metadatos visualmente secundarios. */
+.day summary .night-hotel{
+  margin:7px 0 0;
+  font-size:13px;
+  line-height:1.5;
+  font-weight:400;
+  color:var(--muted);
+}
+.day summary .night-hotel strong{
+  display:inline;
+  font:inherit;
+  font-weight:600;
+  color:var(--ink);
+}
+.day summary .day-places{
+  font-size:13px;
+  line-height:1.5;
+  font-weight:400;
+  color:var(--muted);
+  margin-top:8px;
+}
+.day summary .day-places strong{
+  display:inline;
+  font-size:inherit;
+  line-height:inherit;
+  font-weight:600;
+}
+
+/* Ficha de check-in: identidad visual propia, sin estilo de advertencia. */
+.hotel-checkin {
+  margin-top:18px;
+  padding:16px 18px;
+  border:1px solid #c9ddde;
+  border-radius:8px;
+  background:#eaf3f3;
+  color:var(--ink);
+  font-size:14px;
+  line-height:1.55;
+}
+.hotel-checkin-heading {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding-bottom:12px;
+  border-bottom:1px solid #c9ddde;
+}
+.hotel-checkin-symbol {
+  display:grid;
+  place-items:center;
+  flex-shrink:0;
+  width:32px;
+  height:32px;
+  border-radius:6px;
+  background:#d6e9e8;
+  color:#21585e;
+  font-size:23px;
+}
+.hotel-checkin-symbol svg{display:block}
+.hotel-checkin-heading h4 {
+  margin:0;
+  color:#24545a;
+  font:600 14px/1.4 Arial,Helvetica,sans-serif;
+}
+.hotel-checkin-heading small {
+  display:block;
+  margin-top:3px;
+  color:#607c80;
+  font-size:12px;
+}
+.hotel-checkin-body {padding-top:12px}
+.hotel-checkin-main {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) max-content;
+  align-items:start;
+  gap:22px;
+  padding-bottom:12px;
+}
+.hotel-checkin-details {min-width:0}
+.hotel-checkin-body p {margin:0 0 9px;font-size:14px;line-height:1.55}
+.hotel-checkin-name {margin-bottom:5px!important}
+.hotel-checkin-name strong {font-size:15px;font-weight:600}
+.hotel-checkin-name a,.hotel-checkin-name a:visited {
+  color:inherit;
+  font:inherit;
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+.hotel-checkin-address {display:flex;align-items:flex-start;gap:8px;color:#52656a}
+.hotel-checkin-address>span:first-child {color:#607c80;display:flex;align-items:center;padding-top:2px}
+.hotel-checkin-dates {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:12px;
+  min-width:0;
+}
+.hotel-checkin-dates>div {min-width:0}
+.hotel-checkin-dates small {
+  display:block;
+  color:#607c80;
+  font-size:11px;
+  letter-spacing:.035em;
+}
+.hotel-checkin-dates strong {
+  display:block;
+  margin-top:3px;
+  font-size:13px;
+  line-height:1.4;
+  font-weight:600;
+  white-space:nowrap;
+}
+.hotel-checkin-notes {padding-top:12px;border-top:1px solid #c9ddde;font-size:13px!important;line-height:1.6!important}
+.hotel-checkin-notes strong {display:inline;font-size:inherit}
+.hotel-checkin-body .hotel-checkin-link {margin-bottom:0}
+.hotel-checkin-link a {font-size:13px;color:#24545a}
+@media(max-width:860px) {
+  .hotel-checkin-main {grid-template-columns:minmax(0,1fr)}
+  .hotel-checkin-dates {grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+}
+@media(max-width:380px) {
+  .hotel-checkin-dates {grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hotel-checkin-dates strong {white-space:normal}
+}
+
+/* Movilidad del día: texto libre, sin alterar el contenido del JSON. */
+.daycontent .mobility-card {
+  display:block;
+  margin-top:16px;
+  padding:16px 18px;
+  border:1px solid #ded9cb;
+  border-radius:8px;
+  background:#f7f5ed;
+  color:var(--ink);
+  font-size:14px;
+  line-height:1.6;
+}
+.mobility-card h4 {
+  display:flex;
+  align-items:center;
+  gap:9px;
+  margin:0 0 12px;
+  font:600 14px/1.4 Arial,Helvetica,sans-serif;
+  color:#5e563f;
+}
+.mobility-card .mobility-icon {
+  display:grid;
+  place-items:center;
+  flex:none;
+  width:29px;
+  height:29px;
+  border-radius:6px;
+  background:#eae3d2;
+  color:#625638;
+  font-size:17px;
+}
+.mobility-card .mobility-copy p {
+  margin:0 0 9px;
+  font-size:14px;
+  line-height:1.65;
+  overflow-wrap:break-word;
+}
+.mobility-card .mobility-copy p:last-child {margin-bottom:0}
+.mobility-card .mobility-copy strong {font-weight:600}
+.daycontent .dailycost-standalone {
+  box-sizing:border-box;
+  width:100%;
+  margin-top:18px;
+  padding:12px 14px;
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:var(--pale);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  text-align:left;
+  white-space:normal;
+}
+.dailycost-label {display:flex;align-items:center;gap:10px;min-width:0}
+.dailycost-icon {display:grid;place-items:center;flex:none;width:34px;height:34px;background:#e0e9ec;border-radius:6px;color:var(--muted)}
+.dailycost-label strong {display:block;font-size:14px;line-height:1.45;font-weight:600}
+.dailycost-label small,.dailycost-value small {display:block;margin:2px 0 0;max-width:none;font-size:12px;line-height:1.45;color:var(--muted)}
+.dailycost-value {flex:none;text-align:right}
+.dailycost-value>strong {display:block;font-size:18px;line-height:1.3;font-weight:650;font-variant-numeric:tabular-nums}
+@media(max-width:500px) {
+  .daycontent .dailycost-standalone {flex-wrap:wrap}
+  .dailycost-value {width:100%;text-align:left;padding-left:44px}
+}
+
+/* Aviso logístico: contenido libre con enlaces agrupados. */
+.logistics-notice {
+  margin-top:16px;
+  padding:16px 18px;
+  border:1px solid #efdcd0;
+  border-radius:8px;
+  background:#fff7f2;
+  color:var(--ink);
+}
+.logistics-heading {display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.logistics-symbol {
+  display:grid;
+  place-items:center;
+  width:32px;
+  height:32px;
+  border-radius:6px;
+  flex-shrink:0;
+  color:#ac6544;
+  background:#fbe8dc;
+}
+.logistics-heading h4 {margin:0;font:600 14px/1.4 Arial,Helvetica,sans-serif;color:#823f24}
+.logistics-copy p {margin:0 0 9px;font-size:14px;line-height:1.65}
+.logistics-copy p:last-child {margin-bottom:0}
+.logistics-copy strong {font-weight:600}
+.logistics-links {margin-top:13px;padding-top:12px;border-top:1px solid #efdcd0}
+.logistics-links-heading {display:flex;align-items:center;gap:7px;margin-bottom:10px;color:#823f24;font-size:12px}
+.logistics-link-list {display:flex;flex-wrap:wrap;gap:7px}
+.logistics-link-list a,.logistics-link-list a:visited {
+  display:inline-block;
+  padding:5px 9px;
+  border:1px solid #ead8cb;
+  border-radius:5px;
+  background:#fff;
+  color:#754b39;
+  font-size:12px;
+  line-height:1.4;
+  text-decoration:none;
+}
+.logistics-link-list a:hover,.logistics-link-list a:focus-visible {
+  text-decoration:underline;
+  border-color:#cfa78f;
+}
+
+/* Lectura del itinerario diario: cuerpo de Mañana, Tarde y Noche. */
+.daycontent .schedule p {
+  font-size:14px;
+  line-height:1.65;
+}
+
+/* Espacio entre indicaciones independientes de Mañana, Tarde y Noche. */
+.daycontent .schedule p + p {
+  margin-top:11px;
+}
+
+
+/* Resumen editorial de cada viaje: estilos deliberadamente acotados a #plan. */
+#plan .overview-editorial{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:12px 20px;margin:22px 0 24px}
+#plan .overview-editorial .overview-intro{grid-column:1;grid-row:1}
+#plan .overview-editorial .overview-stays{grid-column:1;grid-row:2;min-width:0}
+#plan .overview-editorial .budget-teaser{grid-column:2;grid-row:1;align-self:start;min-width:0}
+#plan .overview-intro{padding:20px 24px;background:linear-gradient(130deg,#f7f9f9,#f1f5f6);border:1px solid var(--line);border-radius:8px}
+#plan .overview-kicker{display:flex;align-items:center;gap:7px;color:#8b421f;font-size:11px;letter-spacing:1.7px;text-transform:uppercase;font-weight:700}
+#plan .overview-icon{display:inline-block;flex:0 0 auto;vertical-align:middle}
+#plan .overview-heading{font-size:clamp(24px,2.5vw,30px);margin:6px 0 10px;letter-spacing:-.6px}
+#plan .overview-intro .lead{max-width:83ch;font-size:16px;line-height:1.55;margin:0;color:var(--ink)}
+#plan .overview-route-block{border-top:1px solid var(--line);margin-top:15px;padding-top:12px}
+#plan .overview-subheading{display:flex;align-items:center;gap:7px;font-family:Arial,Helvetica,sans-serif;font-size:13px;line-height:1.5;font-weight:700}
+#plan .overview-route-block .trip-route{display:flex;flex-wrap:wrap;gap:5px;margin:8px 0 0}
+#plan .trip-route-city{display:inline-flex;align-items:center;padding:3px 10px;border:1px solid #dce4e5;border-radius:999px;background:white;color:var(--ink);font-size:12px;font-weight:600}
+#plan .overview-stays-heading{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:9px}
+#plan .overview-stays-heading>span{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:1px;font-weight:700}
+#plan .overview-stays .baseroute{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:0;align-items:start}
+#plan .overview-stays .basepill{min-width:0;display:grid;grid-template-columns:1fr auto;align-content:start;gap:3px 6px;background:white;border:1px solid var(--line);border-radius:8px;padding:10px 12px;transition:border-color .18s ease,box-shadow .18s ease}
+#plan .overview-stays .basepill:hover{border-color:#abbfc4;box-shadow:0 5px 18px rgba(16,42,51,.07)}
+#plan .basepill-number{font-size:11px;font-weight:700;color:#8b421f;letter-spacing:1px}
+#plan .overview-stays .basepill>.overview-icon{color:#58717a;grid-column:2;grid-row:1;width:16px;height:16px}
+#plan .overview-stays .basepill strong{grid-column:1/-1;font-size:14px;line-height:1.35}
+#plan .overview-stays .basepill small{grid-column:1/-1;padding-top:4px;margin-top:2px;border-top:1px solid var(--line);width:100%;font-size:12px;line-height:1.3;color:var(--muted)}
+#plan .overview-editorial .budget-teaser{display:block;width:100%;background:var(--ink);color:white;border-radius:8px;padding:20px 24px}
+#plan .overview-editorial .budget-teaser .eyebrow{display:flex;align-items:center;gap:10px;color:var(--gold);font-size:11px;letter-spacing:1.4px;margin-bottom:7px}
+#plan .overview-editorial .budget-teaser strong{font-size:clamp(28px,3.3vw,36px);white-space:normal;overflow-wrap:anywhere;margin:0 0 6px}
+#plan .overview-editorial .budget-teaser p{margin:0 0 10px;line-height:1.45}
+#plan .overview-editorial .budget-teaser a{display:inline-flex;align-items:center;gap:8px;padding-top:9px;border-top:1px solid #38525b;text-decoration:underline;text-underline-offset:5px;color:var(--gold);font-size:14px;font-weight:700}
+@media(max-width:1000px){
+ #plan .overview-editorial{grid-template-columns:minmax(0,1fr)}
+ #plan .overview-editorial .overview-intro,#plan .overview-editorial .overview-stays,#plan .overview-editorial .budget-teaser{grid-column:1;grid-row:auto}
+}
+@media(max-width:680px){
+ #plan .overview-editorial{gap:14px;margin:20px 0}
+ #plan .overview-intro{padding:18px}
+ #plan .overview-intro .lead{font-size:15px;line-height:1.6}
+ #plan .overview-stays .baseroute{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ #plan .overview-stays .basepill{padding:8px;gap:3px;overflow-wrap:anywhere}
+ #plan .overview-stays .basepill strong{font-size:12px;line-height:1.3}
+ #plan .overview-stays .basepill small{font-size:11px;line-height:1.3;padding-top:6px}
+ #plan .overview-stays .basepill>.overview-icon{width:15px;height:15px}
+ #plan .overview-stays .basepill-number{font-size:10px}
+ #plan .overview-editorial .budget-teaser{padding:20px}
+ #plan .overview-editorial .budget-teaser strong{font-size:clamp(27px,7vw,36px)}
+}
+@media(prefers-reduced-motion:reduce){#plan .overview-stays .basepill{transition:none}}
+@media print{
+ #plan .overview-editorial{display:block}
+ #plan .overview-intro,#plan .overview-stays,#plan .budget-teaser{break-inside:avoid;margin-bottom:16px}
+ #plan .overview-stays .baseroute{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #plan .overview-stays .basepill{box-shadow:none}
+}
+
+
+/* Mapa editorial: conserva Leaflet, marcadores, estado y enlaces existentes. */
+.trip-map-section{margin-top:24px;padding:22px 24px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(130deg,#f7f9f9,#f1f5f6)}
+.trip-map-section .trip-map-heading{display:flex;align-items:center;gap:9px;color:#8b421f;font-size:12px;letter-spacing:1.5px;font-weight:700;line-height:1.4}
+.trip-map-heading-icon{flex:none}
+.trip-map-section .trip-map-description{margin:9px 0 12px;font-size:14px;line-height:1.55;color:var(--muted)}
+.trip-map-section .map-legend{display:flex;gap:8px 18px;margin:0 0 13px;font-size:12px;color:var(--ink)}
+.trip-map-section .map-legend span{display:inline-flex;align-items:center;gap:6px}
+.trip-map-section .map-legend span::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--ink);margin:0}
+.trip-map-section .map-legend span:nth-child(2)::before{background:#b64620}
+.trip-map-section .map-legend span:nth-child(3)::before{background:#6c6c6c}
+.trip-map-section .trip-map{height:390px;border-radius:7px;border:1px solid var(--line);overflow:hidden;background:var(--pale)}
+.trip-map-section .map-status{margin:9px 0 12px;font-size:12px;line-height:1.5;color:var(--muted)}
+.trip-map-section .map-locations-heading{font-size:13px;font-weight:700;border-top:1px solid var(--line);padding-top:12px}
+.trip-map-section .map-city-list{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 4px;padding:0;list-style:none}
+.trip-map-section .map-city-list li{display:inline-flex;align-items:center;gap:4px}
+.trip-map-section .map-city-list a{display:inline-flex;align-items:center;padding:4px 10px;border:1px solid #dce4e5;border-radius:999px;background:white;color:var(--ink);font-size:12px;font-weight:600;text-decoration:none;line-height:1.5}
+.trip-map-section .map-city-list a:hover{border-color:#a8bdc3;background:#f9fcfc}
+.trip-map-section .map-city-list a:focus-visible{outline:3px solid #dc5c2e;outline-offset:2px}
+.trip-map-section .map-city-list small{font-size:11px;color:var(--muted)}
+@media(max-width:680px){.trip-map-section{padding:16px 12px;margin-top:18px}.trip-map-section .trip-map{height:320px}.trip-map-section .map-legend{gap:6px 12px}}
+@media print{.trip-map-section{background:white;padding:10px;border:0}.trip-map-section .map-city-list{display:block}.trip-map-section .map-city-list li{display:inline-block;margin:0 5px 5px 0}}
+
+
+/* Experiencias editoriales, compatibles con cadenas y objetos en el JSON. */
+#plan .experience-panel{padding:22px 24px;margin-top:20px;background:#f7f9f9;border-radius:8px}
+#plan .experience-kicker{display:flex;align-items:center;gap:8px;color:#8b421f;text-transform:uppercase;font-size:11px;letter-spacing:1.4px;font-weight:700}
+#plan .experience-panel h3{font-size:clamp(25px,2.7vw,32px);margin:7px 0 8px}
+#plan .experience-intro{font-size:14px;color:var(--muted);line-height:1.55;margin:0 0 16px}
+#plan .experience-panel .experience-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:0;margin:0;list-style:none;font-size:14px;line-height:1.5}
+#plan .experience-card{border:1px solid var(--line);border-radius:7px;background:white;padding:12px 14px;min-width:0}
+#plan .experience-card-meta{display:flex;justify-content:space-between;gap:8px;margin-bottom:6px;color:#8b421f;font-size:11px;font-weight:700;letter-spacing:.9px;text-transform:uppercase}
+#plan .experience-card-meta small{font-size:11px;color:var(--muted)}
+#plan .experience-panel .experience-card p{font-size:14px;line-height:1.5;margin:0}
+#plan .experience-note{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+#plan .experience-note-heading{display:flex;align-items:center;gap:8px;font-size:13px}
+#plan .experience-note p{margin:5px 0 0;font-size:13px;line-height:1.5;color:var(--muted)}
+.trip-map-section .trip-map-title{font-family:var(--serif);font-size:clamp(25px,2.7vw,32px);line-height:1.15;font-weight:400;margin:7px 0 8px}
+@media(max-width:680px){#plan .experience-panel{padding:17px 14px}#plan .experience-panel .experience-list{grid-template-columns:1fr;gap:7px}#plan .experience-card{padding:10px 12px}}
+@media print{#plan .experience-card{break-inside:avoid}}
+
+/* Reservas críticas: presentación editorial y estructura JSON compatible. */
+#plan .reservation-panel{margin-top:20px;padding:22px 24px;background:#f7f9f9;border-radius:8px}
+#plan .reservation-kicker{display:flex;align-items:center;gap:8px;color:#8b421f;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase}
+#plan .reservation-panel h3{margin:7px 0 8px;font-size:clamp(25px,2.7vw,32px)}
+#plan .reservation-panel .reservation-intro{margin:0 0 16px;color:var(--muted);font-size:14px;line-height:1.55}
+#plan .reservation-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
+#plan .reservation-group{min-width:0;padding:15px 16px;border:1px solid var(--line);border-radius:8px;background:white}
+#plan .reservation-group-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-bottom:10px;border-bottom:1px solid var(--line)}
+#plan .reservation-group-heading h4{margin:0;font-size:15px;line-height:1.4}
+#plan .reservation-count{display:inline-grid;place-items:center;min-width:27px;height:27px;padding:0 6px;border:1px solid var(--line);border-radius:999px;color:var(--ink);font-size:12px;font-weight:700}
+#plan .reservation-list{list-style:none;margin:0;padding:0}
+#plan .reservation-item{display:flex;align-items:flex-start;gap:10px;padding:11px 0}
+#plan .reservation-item+.reservation-item{border-top:1px solid #e9edef}
+#plan .reservation-number{font-size:11px;line-height:1.6;color:#8b421f;font-weight:700;flex:none}
+#plan .reservation-item-copy{min-width:0}
+#plan .reservation-item-copy strong{display:block;font-size:14px;line-height:1.4}
+#plan .reservation-item-copy p{margin:3px 0 0;font-size:13px;line-height:1.55;color:var(--muted)}
+@media(max-width:680px){#plan .reservation-panel{padding:17px 14px}#plan .reservation-groups{grid-template-columns:1fr;gap:9px}#plan .reservation-group{padding:12px}#plan .reservation-item{padding:9px 0}}
+@media print{#plan .reservation-item{break-inside:avoid}}
+
+/* Traslados principales: filas compactas y detalles expandibles. */
+#traslados{margin:22px 0;background:#f7f9f9;border:1px solid var(--line);border-radius:9px;padding:22px 24px}
+#traslados .mt-kicker{display:block;font-size:11px;font-weight:700;color:#92502b;letter-spacing:1.3px;text-transform:uppercase}
+#traslados .mt-heading h2{font-family:var(--serif);font-size:clamp(25px,3vw,34px);margin:6px 0}
+#traslados .mt-heading p{margin:0 0 17px;color:var(--muted);font-size:14px}
+#traslados .mt-list{display:grid;gap:9px}
+#traslados .mt-card{background:white;border:1px solid var(--line);border-radius:8px;min-width:0;overflow:hidden}
+#traslados .mt-card>summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:50px minmax(145px,1.1fr) minmax(150px,1.5fr) minmax(125px,.8fr) 16px;gap:12px;align-items:center;padding:14px 15px}
+#traslados .mt-card>summary::-webkit-details-marker{display:none}
+#traslados .mt-card[open]>summary{border-bottom:1px solid var(--line)}
+#traslados .mt-kind{font-size:11px;font-weight:700;color:#8c4b2a}
+#traslados .mt-route{min-width:0}
+#traslados .mt-route strong{display:block;font-size:14px;line-height:1.4}
+#traslados .mt-route small{color:var(--muted);font-size:12px}
+#traslados .mt-inline{display:grid;gap:3px;min-width:0}
+#traslados .mt-journey{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap;font-size:11px;line-height:1.5}
+#traslados .mt-journey strong{font-size:12px}
+#traslados .mt-journey span{color:var(--muted)}
+#traslados .mt-price{text-align:right}
+#traslados .mt-price strong{display:block;white-space:nowrap;font-size:16px}
+#traslados .mt-price small{display:block;color:var(--muted);font-size:11px}
+#traslados .mt-chevron{font-size:21px;color:var(--muted);transition:transform .2s}
+#traslados .mt-card[open] .mt-chevron{transform:rotate(180deg)}
+#traslados .mt-details{padding:14px 16px 16px}
+#traslados .mt-selectors{display:flex;gap:12px;flex-wrap:wrap}
+#traslados .mt-selectors label{flex:1;min-width:145px;font-size:12px;color:var(--muted);display:grid;gap:6px}
+#traslados .mt-selectors select{max-width:100%;border:1px solid var(--line);border-radius:6px;padding:9px;background:white;color:var(--ink);font:inherit}
+#traslados .mt-baggage{margin:12px 0;padding:10px;background:var(--pale);border-radius:5px;font-size:12px}
+#traslados .mt-legs{padding:4px 0}
+#traslados .mt-segment{display:flex;justify-content:space-between;gap:14px;padding:6px 0;font-size:12px;border-bottom:1px solid #eef0f1}
+#traslados .mt-segment small{color:var(--muted);text-align:right}
+#traslados .mt-connection{margin:5px 0;font-size:11px;color:#92502b}
+#traslados .mt-terms{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:12px;font-size:12px}
+#traslados .mt-note,#traslados .mt-footnote{font-size:12px;color:var(--muted);line-height:1.5}
+#traslados .mt-total{margin:12px 0;font-size:12px;font-weight:600}
+#traslados .mt-tickets{margin-top:12px;padding:12px 15px;background:white;border:1px solid var(--line);border-radius:7px;font-size:13px}
+#traslados .mt-tickets summary{cursor:pointer;font-weight:700}
+#traslados .mt-tickets li{margin:8px 0;line-height:1.5}
+@media(max-width:850px){#traslados .mt-card>summary{grid-template-columns:44px 1fr auto 16px}#traslados .mt-inline{grid-column:2 / 4;grid-row:2}#traslados .mt-price{grid-column:3;grid-row:1}#traslados .mt-chevron{grid-column:4;grid-row:1}}
+@media(max-width:550px){#traslados{padding:16px 12px}#traslados .mt-card>summary{padding:12px 10px;gap:7px;grid-template-columns:1fr auto 16px}#traslados .mt-kind{grid-column:1 / -1}#traslados .mt-route{grid-column:1;grid-row:2}#traslados .mt-price{grid-column:2;grid-row:2}#traslados .mt-chevron{grid-column:3;grid-row:2}#traslados .mt-inline{grid-column:1 / -1;grid-row:3}#traslados .mt-details{padding:12px 10px}#traslados .mt-segment{display:grid;gap:3px}#traslados .mt-segment small{text-align:left}}
+@media print{#traslados .mt-card{break-inside:avoid}#traslados .mt-details{display:block!important}}
+
+
+/* Refinamientos Desktop de la comparativa de traslados. */
+#traslados .mt-leg-heading{font:700 13px Arial,Helvetica,sans-serif;color:var(--ink);margin:16px 0 7px;padding-bottom:7px;border-bottom:1px solid var(--line)}
+#traslados .mt-legs+.mt-legs{margin-top:16px}
+#traslados .mt-total{margin:14px 0 4px;padding:15px 17px;border:1px solid var(--line);border-radius:7px;background:#fff;font-size:13px;font-weight:400}
+#traslados .mt-total-head,.mt-total-line{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+#traslados .mt-total-head{padding-bottom:9px;border-bottom:1px solid var(--line);margin-bottom:5px}
+#traslados .mt-total-head small{color:var(--muted);font-size:11px}
+#traslados .mt-total-line{padding:7px 0}
+#traslados .mt-total-line strong{white-space:nowrap}
+#traslados .mt-total-known{border-top:1px solid var(--line);padding-top:12px;margin-top:5px}
+#traslados .mt-total-notice{margin:7px 0 0;color:var(--muted);font-size:12px;line-height:1.55}
+
+/* Cotizaciones de referencia del presupuesto preliminar. */
+.budget-teaser .budget-exchange{border-top:1px solid #ffffff35;padding-top:11px;margin-top:12px;font-size:12px;color:#d2e0e4;line-height:1.55}
+.budget-teaser .budget-exchange span{display:block;color:#fff;font-weight:600;font-size:12px}
+
+/* Desktop: lectura y estados de interacción de traslados y presupuesto. */
+@media screen and (min-width: 851px) {
+  #traslados .mt-card>summary {
+    grid-template-columns: 50px minmax(180px,1.1fr) minmax(230px,1.5fr) minmax(145px,.8fr) 16px;
+  }
+  #traslados .mt-route strong,
+  #traslados .mt-journey strong {overflow-wrap:anywhere}
+  #traslados .mt-price {font-variant-numeric:tabular-nums}
+  #traslados .mt-selectors label {max-width:360px}
+}
+#traslados .mt-card>summary:hover {background:#f8fafb}
+#traslados .mt-card>summary:focus-visible {outline:3px solid #dc5c2e;outline-offset:-3px}
+#traslados .mt-selectors select {width:100%;min-height:42px;font-size:14px;line-height:1.35}
+#traslados .mt-selectors select:focus-visible {outline:3px solid #dc5c2e;outline-offset:2px;border-color:#dc5c2e}
+/* Tabla de presupuesto: jerarquía visual uniforme, sin rayado alternado. */
+.budget-ledger .scrolltable{max-width:100%}
+.budget-ledger table{table-layout:fixed;font-size:14px;line-height:1.45}
+.budget-ledger table th:first-child,.budget-ledger table td:first-child{width:54%;white-space:normal;overflow-wrap:anywhere}
+.budget-ledger table th:nth-child(2),.budget-ledger table td:nth-child(2){width:22%}
+.budget-ledger table th:nth-child(3),.budget-ledger table td:nth-child(3){width:24%}
+.budget-ledger table th:nth-child(2),.budget-ledger table th:nth-child(3),.budget-ledger .budget-amount{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+.budget-ledger tbody td{background:white}
+.budget-ledger th,.budget-ledger td{font-style:normal}
+.budget-ledger .budget-category th{background:#e7edef;color:var(--ink);border-top:10px solid white;border-bottom:1px solid #c9d5d8;padding:14px 14px 12px;font-size:17px;font-weight:700;line-height:1.25;letter-spacing:0;text-align:left}
+.budget-ledger .budget-item td{padding:10px 14px;font-size:14px;font-weight:400;color:var(--ink)}
+.budget-ledger .budget-pending td{color:var(--muted)}
+.budget-ledger .budget-subtotal td{background:#f3f6f7!important;border-top:1px solid #d6e0e3;padding:10px 14px;font-size:14px;font-weight:400}
+.budget-ledger .budget-subtotal td:first-child{font-weight:600}
+.budget-ledger .budget-subtotal .budget-amount{font-weight:700}
+.budget-ledger .totalrow td{font-size:16px;font-weight:700}
+.budget-ledger .budget-range{border-top:1px solid var(--line);padding-top:13px;margin-top:16px;font-size:14px}
+@media(max-width:680px){.budget-ledger table{font-size:12px}.budget-ledger .budget-item td,.budget-ledger .budget-subtotal td{padding:6px 10px;font-size:12px;line-height:1.35}.budget-ledger .budget-category th{font-size:13px;padding:8px 10px 7px;border-top-width:7px}.budget-ledger .totalrow td{font-size:13px;padding:9px 10px}}
+
+/* Consejos compactos para el viaje modular de Emilia-Romagna. */
+.factgrid-compact{gap:18px;margin-top:24px}
+.factgrid-compact article{min-width:0;border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:6px;padding:18px 20px;background:#fff}
+.factgrid-compact h3{margin:0 0 10px;font-size:17px}
+.factgrid-compact .fact-copy p{font-size:14px;line-height:1.6;margin:9px 0 0}
+.factgrid-compact .fact-copy p:first-child{margin-top:0}
+@media(max-width:680px){.factgrid-compact{gap:12px}.factgrid-compact article{padding:15px 16px}}
+@media print{.factgrid-compact article{break-inside:avoid}}
+
+/* Consejos del viaje junto al panorama, después de los alojamientos. */
+#plan .overview-advice{margin:24px 0 28px}
+#plan .overview-advice .advice-heading{margin-bottom:12px}
+#plan .overview-advice .advice-heading .eyebrow{font-size:12px;letter-spacing:1.4px;margin:0}
+#plan .overview-advice .factgrid-compact{margin:0;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+#plan .overview-advice .factgrid-compact article{height:100%;border-color:var(--line);border-top:3px solid var(--ink);background:#fff}
+@media(max-width:680px){#plan .overview-advice{margin:20px 0 24px}#plan .overview-advice .factgrid-compact{grid-template-columns:1fr;gap:12px}}
+
+/* Estancias integradas en el panorama de Emilia-Romagna. */
+#plan .overview-intro .overview-stays-inline{margin-top:18px;padding-top:15px;border-top:1px solid var(--line)}
+#plan .overview-intro .overview-stays-inline .overview-stays-heading{margin-bottom:10px}
+#plan .overview-intro .overview-stays-inline .baseroute{gap:8px}
+#plan .overview-intro .overview-stays-inline .basepill{padding:9px 11px}
+@media(max-width:680px){#plan .overview-intro .overview-stays-inline{margin-top:15px;padding-top:13px}#plan .overview-intro .overview-stays-inline .overview-stays-heading>span{font-size:10px;letter-spacing:.6px}}
+
+/* Panorama de Emilia-Romagna: inversión + clima en columna lateral. */
+#plan .overview-editorial .overview-side{grid-column:2;grid-row:1;min-width:0;display:flex;flex-direction:column;gap:16px}
+#plan .overview-editorial .overview-side .budget-teaser{grid-column:auto;grid-row:auto}
+#plan .overview-climate-card,#plan .overview-practical{border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:7px;background:#fff;padding:18px 20px;min-width:0}
+#plan .overview-climate-card h3,#plan .overview-practical h3{font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:700;margin:0 0 12px}
+#plan .overview-climate-card .fact-copy p{font-size:14px;line-height:1.55;color:var(--muted);margin:0 0 11px}
+#plan .overview-climate-card .fact-copy p:last-child{margin-bottom:0}
+#plan .overview-practical{margin:22px 0 28px}
+#plan .overview-practical-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px;font-size:14px;line-height:1.55;color:var(--muted)}
+#plan .overview-practical-grid .practical-item{min-width:0}
+#plan .overview-practical-grid strong{color:var(--ink)}
+@media(max-width:1000px){#plan .overview-editorial .overview-side{grid-column:1;grid-row:auto}}
+@media(max-width:680px){#plan .overview-editorial .overview-side{gap:12px}#plan .overview-practical{margin:18px 0 24px;padding:16px}#plan .overview-practical-grid{grid-template-columns:1fr;gap:12px}#plan .overview-climate-card{padding:16px}}
+@media print{#plan .overview-editorial .overview-side{break-inside:avoid}#plan .overview-practical-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* El contenido izquierdo conserva su altura natural; no estirar al alto de clima. */
+#plan .overview-editorial{align-items:start}
+#plan .overview-editorial .overview-intro{align-self:start}
+#plan .overview-editorial .overview-side{align-self:start}
+#plan .overview-practical-grid .practical-item{padding:0;margin:0}
+
+/* Panorama: respiración vertical sin forzar la altura de la columna. */
+@media(min-width:1001px){
+  #plan .overview-intro{padding:27px 25px 28px}
+  #plan .overview-heading{margin:9px 0 16px}
+  #plan .overview-intro .lead{line-height:1.72}
+  #plan .overview-route-block{margin-top:23px;padding-top:19px}
+  #plan .overview-intro .overview-stays-inline{margin-top:25px;padding-top:20px}
+  #plan .overview-intro .overview-stays-inline .overview-stays-heading{margin-bottom:14px}
+  #plan .overview-intro .overview-stays-inline .basepill{padding:12px 12px}
+}
+
+/* Desktop QA: sistema visual coherente para las secciones del itinerario modular. */
+@media (min-width:1001px){
+  #plan .overview-editorial{column-gap:20px;row-gap:18px}
+  #plan .overview-editorial .overview-side{gap:18px}
+  #plan .overview-intro .overview-stays-inline .baseroute{align-items:stretch}
+  #plan .overview-intro .overview-stays-inline .basepill{height:100%}
+  #plan .overview-practical{margin-top:24px;margin-bottom:32px}
+}
+#plan .overview-climate-card,#plan .overview-practical,#traslados .mt-card,.budget-ledger{
+  border-color:var(--line);
+}
+#plan .overview-climate-card h3,#plan .overview-practical h3{line-height:1.35}
+#plan .overview-practical-grid{column-gap:34px;row-gap:18px}
+#plan .overview-practical-grid .practical-item{line-height:1.65}
+#plan .overview-practical-grid .practical-item strong{font-weight:700}
+#plan .overview-climate-card .fact-copy p{line-height:1.65}
+.trip-map-section .map-legend{flex-wrap:wrap;line-height:1.5}
+.trip-map-section .map-city-list{row-gap:9px}
+.trip-map-section .map-city-list a{min-height:30px;align-items:center;transition:border-color .18s ease,background-color .18s ease}
+#traslados .mt-list{gap:12px}
+#traslados .mt-card{transition:border-color .18s ease,box-shadow .18s ease}
+#traslados .mt-card[open]{border-color:#bdccd1;box-shadow:0 7px 23px rgba(16,42,51,.045)}
+#traslados .mt-card>summary{min-height:76px}
+#traslados .mt-card>summary:focus-visible{outline-offset:-3px}
+#traslados .mt-card[open]>summary{background:#f7f9fa}
+#traslados .mt-route strong{font-weight:700;line-height:1.45}
+#traslados .mt-inline{gap:5px}
+#traslados .mt-journey{font-size:12px;line-height:1.5}
+#traslados .mt-journey strong{font-size:12px}
+#traslados .mt-journey span{font-size:12px}
+#traslados .mt-details{padding:18px 20px 20px}
+#traslados .mt-segment{padding:9px 0;align-items:baseline;line-height:1.55}
+#traslados .mt-segment:last-child{border-bottom:0}
+#traslados .mt-selectors{gap:14px}
+#traslados .mt-selectors label{font-size:13px;font-weight:600}
+#traslados .mt-baggage{line-height:1.6;padding:12px 14px}
+#traslados .mt-note,#traslados .mt-footnote{line-height:1.6}
+.budget-ledger table{line-height:1.5}
+.budget-ledger .budget-item td{vertical-align:top}
+.budget-ledger .budget-category th{letter-spacing:0}
+.budget-ledger .budget-subtotal td{vertical-align:middle}
+.budget-ledger .budget-range{line-height:1.6}
+@media (max-width:850px){
+  #traslados .mt-card>summary{min-height:0}
+  #traslados .mt-details{padding:14px 16px 16px}
+}
+@media (max-width:680px){
+  #traslados .mt-segment{flex-wrap:wrap;gap:3px}
+  #traslados .mt-segment small{text-align:left}
+  #plan .overview-practical-grid{row-gap:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  #traslados .mt-card,.trip-map-section .map-city-list a{transition:none}
+}
+
+/* Traslados de cada jornada: una vista enlazada a majorTransport. */
+.daycontent .day-transport{margin:22px 0 0;padding:17px 19px;border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:7px;background:#fff}
+.day-transport h4{font:700 16px Arial,Helvetica,sans-serif;color:var(--ink);margin:0 0 11px}
+.day-transport-item+.day-transport-item{border-top:1px solid var(--line);padding-top:13px;margin-top:13px}
+.day-transport-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;line-height:1.5}
+.day-transport-head span{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.day-transport-route{font-size:14px;line-height:1.55;color:var(--ink);padding-top:5px}
+.day-transport-item small{display:block;margin-top:5px;color:var(--muted);font-size:12px;line-height:1.45}
+.day-transport>p{color:var(--muted);font-size:12px;line-height:1.55;margin:13px 0 0}
+@media(max-width:680px){.daycontent .day-transport{padding:15px}.day-transport-head{display:block}.day-transport-head span{display:block;text-align:left;margin-top:3px}}
+@media print{.daycontent .day-transport{break-inside:avoid}}
+
+/* Presupuesto por jornada: partidas asignadas sin duplicar costos globales. */
+.day-budget{margin-top:20px;border:1px solid var(--line);border-radius:8px;background:#f8fafb;padding:18px 20px}
+.day-budget-heading{display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:8px}
+.day-budget-heading h4{font:700 16px Arial,Helvetica,sans-serif;margin:0;color:var(--ink)}
+.day-budget-heading small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.day-budget-heading>strong{font-size:20px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.day-budget-line{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid #e2e8ea;font-size:14px;line-height:1.5}
+.day-budget-line span{min-width:0}.day-budget-line strong{white-space:nowrap;font-weight:650;font-variant-numeric:tabular-nums}
+.day-budget-empty{margin:8px 0;font-size:14px;color:var(--muted)}
+.day-budget-disclaimer,.day-budget-pending{color:var(--muted);font-size:12px;line-height:1.55;margin:12px 0 0}
+@media(max-width:680px){.day-budget{padding:15px}.day-budget-heading>strong{font-size:18px}.day-budget-line{gap:10px;font-size:13px}.day-budget-line strong{font-size:13px}}
+@media print{.day-budget{break-inside:avoid}}
+
+/* Enlaces contextuales de hoteles, reservas y traslados. */
+.entity-links{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+.entity-links a{display:inline-flex;align-items:center;gap:6px;max-width:100%;padding:7px 11px;border:1px solid var(--line,#dce3e7);border-radius:9px;background:var(--surface,#fff);color:inherit;font-size:12px;font-weight:600;line-height:1.35;text-decoration:none;overflow-wrap:anywhere;transition:border-color .15s ease,background .15s ease}
+.entity-links a:hover,.entity-links a:focus-visible{border-color:var(--accent,#dc7b3b);background:var(--surface-soft,#f8f5f1)}
+.hotel-entity-links{margin-top:auto;padding-top:12px}
+.hotel-entity-links .hotel-icon{flex:none}
+#plan .reservation-item-copy .entity-links{margin-top:9px}
+#traslados .mt-details .entity-links{padding-top:5px}
+@media(max-width:540px){.entity-links{gap:6px}.entity-links a{font-size:12px;padding:7px 9px}}
+
+/* Navegación compacta y hero editorial (Desktop / Mobile). */
+body>header{height:56px;min-height:56px;padding-block:4px}
+body>header .brand-icon{width:36px;height:36px;flex:0 0 36px;display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1;padding:0 0 2px}
+body>header .brand{gap:9px}
+.triphero{height:310px}
+.triphero .wrap{padding-top:38px;padding-bottom:24px}
+.triphero h1{max-width:1050px;font-size:clamp(30px,3.7vw,48px);line-height:1.12;letter-spacing:-.025em}
+.triphero .breadcrumb{top:18px;font-size:13px}
+.triphero .breadcrumb span{margin-right:5px}
+.triphero .hero-eyebrow{font-size:12px;line-height:1.35;letter-spacing:.05em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.triphero .hero-meta{gap:10px 18px;margin-top:13px;font-size:13px}
+.subnav{position:sticky;top:0;z-index:60;flex-wrap:nowrap;gap:14px;padding:9px 5%;box-shadow:0 3px 10px #102a3310}
+.subnav>div{min-width:0;flex:1;display:flex;gap:20px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:thin;overscroll-behavior-x:contain}
+.subnav a{white-space:nowrap;font-size:13px;padding:6px 0}
+.subnav select{flex:none;min-width:150px;max-width:230px;font-size:12px}
+html{scroll-padding-top:78px}
+#plan,#mapa,#experiencias,#reservas,#traslados,#alojamientos,#temporadas,#dias,#costes,#fuentes{scroll-margin-top:78px}
+@media(max-width:680px){
+ body>header{height:auto;min-height:54px;padding:6px 5%;gap:8px}
+ body>header nav{order:initial;width:auto;border:0;padding:0;gap:12px}
+ body>header nav a{font-size:12px}
+ .triphero{height:285px}
+ .triphero h1{font-size:clamp(28px,7.6vw,38px)}
+ .triphero .wrap{padding-bottom:20px}
+ .triphero .hero-meta{font-size:12px;gap:7px 12px}
+ .subnav{display:flex;flex-wrap:nowrap;padding:8px 4%;gap:8px}
+ .subnav>div{gap:15px}
+ .subnav select{width:auto;min-width:112px;max-width:135px;font-size:11px;padding:6px 4px}
+}
+@media print{.triphero{height:180px}.triphero h1{font-size:32px}}
+
+/* Tarjeta de inversión: jerarquía clara y detalles secundarios plegables. */
+#plan .overview-editorial .budget-teaser{padding:24px 26px}
+#plan .overview-editorial .budget-teaser .eyebrow{margin-bottom:12px}
+#plan .overview-editorial .budget-teaser>div>strong{font-size:clamp(27px,2.85vw,34px);line-height:1.15;margin:0 0 9px;letter-spacing:-.02em}
+#plan .overview-editorial .budget-teaser .budget-context{font-size:13px;color:#c1d1d6;margin:0 0 21px;line-height:1.45}
+#plan .overview-editorial .budget-teaser .budget-detail-link{padding:0;border:0;font-size:13px;text-decoration:none}
+#plan .overview-editorial .budget-teaser .budget-detail-link:hover{text-decoration:underline}
+#plan .overview-editorial .budget-teaser .budget-exchange{margin-top:20px;padding-top:12px;border-top:1px solid #365059;color:#adbec5}
+#plan .overview-editorial .budget-teaser .budget-exchange-label{font-size:12px;line-height:1.5}
+#plan .overview-editorial .budget-teaser .budget-exchange-values{display:flex;flex-wrap:wrap;gap:4px 18px;padding-top:6px;font-size:12px;line-height:1.6;color:#dae5e8}
+@media(max-width:680px){#plan .overview-editorial .budget-teaser{padding:21px 22px}}
+
+/* Encabezado del mapa: ciudades en columna lateral sin alterar los controles Leaflet. */
+.trip-map-section .trip-map-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(440px,44%);align-items:start;column-gap:28px;margin-bottom:14px}
+.trip-map-section .trip-map-intro{min-width:0}
+.trip-map-section .trip-map-cities{min-width:0;padding:3px 0 0 24px;border-left:1px solid var(--line)}
+.trip-map-section .trip-map-cities .map-locations-heading{padding:0;border:0;font-size:12px}
+.trip-map-section .trip-map-cities .map-city-list{margin:10px 0 0;gap:7px}
+.trip-map-section .trip-map-cities .map-city-list a{font-size:12px}
+@media(max-width:760px){
+ .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr);row-gap:14px}
+ .trip-map-section .trip-map-cities{padding:12px 0 0;border-left:0;border-top:1px solid var(--line)}
+}
+@media print{.trip-map-section .trip-map-header{display:block}.trip-map-section .trip-map-cities{margin-top:12px;border:0;padding:0}}
+
+/* Estancias y excursiones dentro de cada localidad del mapa. */
+.trip-map-section .trip-map-cities .map-city-list a{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;padding:7px 11px;border-radius:12px;line-height:1.25}
+.trip-map-section .trip-map-cities .map-city-list .map-city-stay{display:block;margin:0;font-size:11px;line-height:1.35;font-weight:400;color:var(--muted)}
+
+/* Tarjetas uniformes para todas las localidades. */
+.trip-map-section .trip-map-cities .map-city-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.trip-map-section .trip-map-cities .map-city-list li{display:block;min-width:0;margin:0}
+.trip-map-section .trip-map-cities .map-city-list a{width:100%;height:76px;min-height:76px;box-sizing:border-box;padding:9px 8px;align-items:flex-start;justify-content:center;overflow-wrap:break-word}
+.trip-map-section .trip-map-cities .map-city-list .map-city-stay{display:flex;align-items:center;gap:4px;white-space:nowrap}
+.trip-map-section .trip-map-cities .map-city-bed{flex:none;vertical-align:middle}
+@media(max-width:1080px){.trip-map-section .trip-map-cities .map-city-list{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){.trip-map-section .trip-map-cities .map-city-list{grid-template-columns:repeat(auto-fit,minmax(96px,1fr))}}
+
+/* El número y el nombre de cada ciudad no deben dividirse. */
+.trip-map-section .trip-map-cities .map-city-list .map-city-name{display:block;white-space:nowrap;font-size:11.5px;letter-spacing:-.15px}
+
+/* Vista experimental: consejos integrados en el panorama de Emilia-Romagna. */
+#plan .overview-intro>.overview-practical{margin:18px 0 19px;padding:14px 0 16px;background:transparent;border:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0}
+#plan .overview-intro>.overview-practical h3{font-size:14px;margin:0 0 10px}
+#plan .overview-intro>.overview-practical-grid{gap:10px 18px;font-size:13px;line-height:1.5}
+@media(max-width:680px){#plan .overview-intro>.overview-practical{margin:15px 0;padding:13px 0}}
+
+/* Título de localidades unificado con el del panorama. */
+.trip-map-section .trip-map-cities .map-locations-heading{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700}
+.trip-map-section .trip-map-cities .map-city-heading-icon{flex:none;color:var(--ink)}
+
+/* Iconos lineales uniformes y un solo separador sobre los alojamientos. */
+#plan .overview-climate-card h3,#plan .overview-intro>.overview-practical h3{display:flex;align-items:center;gap:8px}
+#plan .overview-climate-card h3 .overview-icon,#plan .overview-intro>.overview-practical h3 .overview-icon{flex:none;width:18px;height:18px}
+#plan .overview-intro>.overview-practical + .overview-stays-inline{border-top:0;margin-top:0;padding-top:15px}
+
+/* Indicadores prácticos del viaje: icono, título y dato breve. */
+#plan .overview-practical-grid.practical-indicators{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 20px}
+#plan .practical-indicator{display:flex;align-items:flex-start;gap:9px;min-width:0}
+#plan .practical-indicator-icon{display:inline-flex;flex:none;color:var(--ink);margin-top:2px}
+#plan .practical-indicator>div{min-width:0}
+#plan .practical-indicator strong{display:block;font-size:13px;line-height:1.35}
+#plan .practical-indicator p{margin:3px 0 0;color:var(--muted);font-size:13px;line-height:1.5}
+@media(max-width:680px){#plan .overview-practical-grid.practical-indicators{grid-template-columns:1fr;gap:14px}}
+
+/* Columnas del panorama: misma altura basada en el contenido, sin alturas fijas. */
+@media(min-width:1001px){
+ #plan .overview-editorial{align-items:stretch}
+ #plan .overview-editorial>.overview-intro,
+ #plan .overview-editorial>.overview-side{height:100%;min-height:0;align-self:stretch}
+ #plan .overview-editorial>.overview-side{justify-content:space-between}
+}
+
+/* La cuadrícula de alojamientos usa el número real de estancias (hasta cuatro por fila en Desktop). */
+@media(min-width:1001px){#plan .overview-intro .overview-stays-inline .baseroute{grid-template-columns:repeat(var(--stay-columns,3),minmax(0,1fr))}}
+
+/* Mapa: compactar el encabezado y el pie sin reducir la superficie interactiva. */
+@media screen and (min-width:761px){
+ .trip-map-section .trip-map-header{margin-bottom:9px;column-gap:22px}
+ .trip-map-section .trip-map-cities{padding-top:0;padding-left:19px}
+ .trip-map-section .trip-map-cities .map-city-list{margin-top:8px;gap:6px}
+ .trip-map-section .trip-map-cities .map-city-list a{height:62px;min-height:62px;padding:6px 7px;gap:2px;border-radius:10px}
+}
+@media screen{
+ .trip-map-section{padding-bottom:16px}
+ .trip-map-section .map-status{margin:7px 0 0;line-height:1.4}
+}
+@media screen and (max-width:760px){
+ .trip-map-section .trip-map-header{row-gap:11px;margin-bottom:11px}
+ .trip-map-section .trip-map-cities .map-city-list a{height:64px;min-height:64px}
+}
+
+/* Dar más espacio a las ciudades sin romper el diseño apilado en Mobile. */
+@media screen and (min-width:761px) and (max-width:1080px){
+ .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,48%)}
+}
+
+/* Las siete ciudades comparten una sola fila a todo el ancho en Desktop. */
+@media screen and (min-width:1001px){
+ .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr);row-gap:13px}
+ .trip-map-section .trip-map-cities{border-left:0;border-top:1px solid var(--line);padding:12px 0 0}
+ .trip-map-section .trip-map-cities .map-city-list{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:9px}
+ .trip-map-section .trip-map-cities .map-city-list li{min-width:0}
+ .trip-map-section .trip-map-cities .map-city-list a{width:100%;min-height:62px;height:62px}
+}
+
+/* Leyenda alineada a la derecha del encabezado, ciudades en fila inferior. */
+@media screen and (min-width:1001px){
+ .trip-map-section .trip-map-top{display:flex;align-items:center;justify-content:space-between;gap:24px}
+ .trip-map-section .trip-map-top .map-legend{flex:none;justify-content:flex-end;margin:0}
+}
+@media screen and (max-width:1000px){.trip-map-section .trip-map-top .map-legend{margin-top:12px}}
+
+/* Sin título ni línea divisoria antes de las tarjetas del mapa. */
+.trip-map-section .trip-map-cities{border-top:0;padding-top:0}
+.trip-map-section .trip-map-cities .map-city-list{margin-top:0}
+@media screen and (max-width:760px){.trip-map-section .trip-map-cities{border-top:0;padding-top:0}}
+
+/* Pie del mapa: instrucciones a la izquierda y leyenda a la derecha. */
+.trip-map-section .trip-map-footer{display:flex;align-items:center;justify-content:space-between;gap:12px 22px;margin-top:8px}
+.trip-map-section .trip-map-footer .map-status{flex:1;min-width:0;margin:0}
+.trip-map-section .trip-map-footer .map-legend{flex:none;display:flex;justify-content:flex-end;flex-wrap:wrap;gap:7px 15px;margin:0}
+@media(max-width:760px){
+ .trip-map-section .trip-map-footer{align-items:flex-start;flex-direction:column;gap:8px}
+ .trip-map-section .trip-map-footer .map-legend{justify-content:flex-start}
+}
+
+/* Leyenda como único contenido habitual del pie del mapa. */
+.trip-map-section .trip-map-footer{justify-content:flex-start}
+.trip-map-section .trip-map-footer .map-status:empty{display:none}
+.trip-map-section .trip-map-footer .map-legend{justify-content:flex-start;margin:0}
+
+/* Tarjetas de ciudad: control del mapa, no enlace externo. */
+.trip-map-section .trip-map-cities .map-city-list .map-city-select{width:100%;height:62px;min-height:62px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;padding:6px 7px;border:1px solid #dce4e5;border-radius:10px;background:#fff;color:var(--ink);text-align:left;font:inherit;cursor:pointer}
+.trip-map-section .map-city-select:hover{border-color:#a8bdc3;background:#f9fcfc}
+.trip-map-section .map-city-select:focus-visible{outline:3px solid #dc5c2e;outline-offset:2px}
+@media(max-width:760px){.trip-map-section .trip-map-cities .map-city-list .map-city-select{height:64px;min-height:64px}}
+
+/* Reservaciones: igual altura en Desktop; contador según prioridad. */
+@media(min-width:681px){#plan .reservation-groups{align-items:stretch}#plan .reservation-groups>.reservation-group{height:100%}}
+#plan .reservation-priority-very-high .reservation-count{color:#a52727;background:#fff0ef;border-color:#f0c4c2}
+#plan .reservation-priority-high .reservation-count{color:#795300;background:#fff5c7;border-color:#e7cd70}
+
+/* En Desktop, ordenar las experiencias por columna (de arriba abajo). */
+@media screen and (min-width:681px){
+ #plan .experience-panel .experience-list.experience-column-order{grid-auto-flow:column;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(var(--experience-rows),auto)}
+}
+
+/* Vuelos: filas compactas y datos de operación legibles. */
+#traslados .mt-flight-list .mt-legs{padding:0}
+#traslados .mt-flight-list .mt-legs+.mt-legs{margin-top:10px}
+#traslados .mt-flight-list .mt-leg-heading{margin:9px 0 3px;padding-bottom:5px}
+#traslados .mt-flight-list .mt-segment{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:6px 16px;padding:6px 0;font-size:13px;line-height:1.4}
+#traslados .mt-flight-list .mt-segment-route{min-width:0}
+#traslados .mt-flight-list .mt-flight-meta{display:flex;justify-content:flex-end;flex-wrap:wrap;gap:3px 7px;color:var(--muted);font-size:13px;text-align:right}
+#traslados .mt-flight-list .mt-flight-meta strong{color:var(--ink);font-weight:700}
+#traslados .mt-flight-list .mt-connection{margin:3px 0;font-size:12px}
+@media(max-width:760px){
+ #traslados .mt-flight-list .mt-segment{grid-template-columns:minmax(0,1fr);gap:2px}
+ #traslados .mt-flight-list .mt-flight-meta{justify-content:flex-start;text-align:left}
+}
+
+/* Jerarquía visual de ida y regreso: banda tenue y tramos sangrados. */
+#traslados .mt-flight-list .mt-leg-heading{background:#f1f5f6;border:1px solid var(--line);border-radius:5px;padding:8px 11px;margin:8px 0 5px}
+#traslados .mt-flight-list .mt-segment{padding-left:13px;padding-right:8px}
+#traslados .mt-flight-list .mt-connection{margin:4px 0 4px 13px}
+#traslados .mt-flight-list .mt-segment-route strong{display:inline;font-size:inherit;line-height:inherit;margin:0;font-weight:700}
+
+/* Trenes: operador destacado antes de horarios y duración. */
+#traslados .mt-train-meta{display:flex;justify-content:flex-end;align-items:baseline;flex-wrap:wrap;gap:3px 7px;color:var(--muted);font-size:13px;text-align:right}
+#traslados .mt-train-meta strong{color:var(--ink);font-size:inherit;line-height:inherit;font-weight:700}
+@media(max-width:760px){#traslados .mt-train-meta{justify-content:flex-start;text-align:left}}
+
+/* Encabezados por día y tramos uniformes para trenes y vuelos. */
+#traslados .mt-leg-list .mt-leg-heading{background:#f1f5f6;border:1px solid var(--line);border-radius:5px;padding:8px 11px;margin:8px 0 5px;font:700 13px/1.4 Arial,Helvetica,sans-serif}
+#traslados .mt-leg-list .mt-segment{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);align-items:center;gap:5px 14px;padding:6px 8px 6px 13px;font-size:13px;line-height:1.4}
+#traslados .mt-leg-list .mt-segment-route{min-width:0;font-size:13px;line-height:1.4}
+#traslados .mt-leg-list .mt-segment-route strong{display:inline;margin:0;font-size:inherit;line-height:inherit;font-weight:700}
+#traslados .mt-leg-list .mt-connection{margin:4px 0 4px 13px;font-size:12px}
+#traslados .mt-leg-list .mt-train-meta,#traslados .mt-leg-list .mt-flight-meta{font-size:13px;line-height:1.4}
+@media(max-width:760px){#traslados .mt-leg-list .mt-segment{grid-template-columns:minmax(0,1fr)}#traslados .mt-leg-list .mt-train-meta,#traslados .mt-leg-list .mt-flight-meta{justify-content:flex-start;text-align:left}}
+
+/* Iconos lineales para cada medio de transporte. */
+#traslados .mt-kind-inner{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+#traslados .mt-kind-inner svg{flex:none;width:16px;height:16px}
+
+/* Icono lineal del encabezado de movilidad. */
+#traslados .mt-kicker-icon{display:inline-flex;align-items:center;gap:8px}
+#traslados .mt-kicker-icon svg{flex:none;width:16px;height:16px}
+
+/* Encabezado editorial de alojamientos, coherente con otras secciones. */
+#alojamientos .hotel-section-kicker{display:flex;align-items:center;gap:8px;color:#92502b;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
+#alojamientos .hotel-section-kicker .overview-icon{width:17px;height:17px;flex:none}
+#alojamientos .hotel-section-heading h2{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0 18px;color:var(--ink)}
+
+/* Encabezado de temporadas alineado con el sistema editorial de alojamientos. */
+.seasonality-section .seasonality-kicker{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
+.seasonality-section .seasonality-heading-icon{width:17px;height:17px;flex:none}
+.seasonality-section #seasonality-heading{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0;color:var(--ink)}
+
+/* Encabezados editoriales: itinerario y presupuesto. */
+#dias .atlas-section-kicker,#costes .atlas-section-kicker{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:700;letter-spacing:1.3px;text-transform:uppercase}
+#dias .atlas-section-kicker svg,#costes .atlas-section-kicker svg{width:17px;height:17px;flex:none}
+#dias .section-title h2,#costes .section-title h2{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;margin:6px 0;color:var(--ink)}
+
+/* Jerarquía editorial compartida: temporadas y presupuesto. */
+#temporadas .atlas-editorial-kicker,#dias .atlas-editorial-kicker,#costes .atlas-editorial-kicker{display:flex;align-items:center;gap:8px;margin:0;color:#92502b;font-size:11px;font-weight:700;letter-spacing:1.3px;line-height:1.4;text-transform:uppercase}
+#temporadas .atlas-editorial-kicker svg,#costes .atlas-editorial-kicker svg{width:17px;height:17px;flex:none}
+#temporadas .atlas-editorial-title,#costes .atlas-editorial-title{font-family:var(--serif);font-size:clamp(25px,3vw,34px);line-height:1.2;font-weight:700;color:var(--ink);margin:6px 0 0}
+
+/* Unificar las superficies de temporadas, itinerario y presupuesto con los paneles del Atlas. */
+#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{background:var(--pale);border:1px solid var(--line);border-radius:5px;padding:28px;width:90%;max-width:1224px;margin:22px auto;box-sizing:border-box}
+@media(max-width:680px){#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{padding:16px}}
+@media print{#temporadas.atlas-panel-section,#dias.atlas-panel-section,#costes.atlas-panel-section{background:white;border:0;padding:0}}
+
+/* Temporadas adopta las proporciones y superficie del panel Panorama. */
+#temporadas.atlas-panel-section{background:linear-gradient(130deg,#f7f9f9,#f1f5f6);border:1px solid var(--line);border-radius:8px;padding:27px 25px 28px}
+#temporadas .section-title{margin-bottom:22px}
+#temporadas .seasonality-kicker.atlas-editorial-kicker{gap:7px;color:#8b421f;font-size:11px;letter-spacing:1.7px;line-height:1.5;font-weight:700}
+#temporadas #seasonality-heading.atlas-editorial-title{font-family:var(--serif);font-size:clamp(24px,2.5vw,30px);font-weight:400;letter-spacing:-.6px;line-height:1.25;margin:6px 0 10px}
+#temporadas .section-title .seasonality-intro{max-width:none;color:var(--muted);font-size:14px;line-height:1.55;margin:0}
+@media(max-width:680px){#temporadas.atlas-panel-section{padding:20px}}
+@media print{#temporadas.atlas-panel-section{background:white;border:0;padding:0}}
+
+/* Temporadas: mismo ancho de columna y superficie que el panel izquierdo de Panorama. */
+#temporadas.atlas-panel-section{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(280px,1fr);gap:20px;background:transparent;border:0;border-radius:0;padding:0}
+#temporadas .seasonality-panel{grid-column:1;min-width:0;background:linear-gradient(130deg,#f7f9f9,#f1f5f6);border:1px solid var(--line);border-radius:8px;padding:27px 25px 28px}
+#temporadas .season-months{grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+#temporadas .season-month{min-height:95px;padding:11px 9px}
+@media(max-width:920px){#temporadas.atlas-panel-section{grid-template-columns:minmax(0,1fr)}#temporadas .season-months{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){#temporadas .seasonality-panel{padding:20px}#temporadas .season-months{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media print{#temporadas .seasonality-panel{background:white;border:0;padding:0}}
+
+/* Temporadas a todo el ancho disponible, igual que Traslados. */
+#temporadas.atlas-panel-section{display:block;width:100%;max-width:none;margin:22px 0}
+#temporadas .seasonality-panel{width:100%;grid-column:auto}
+#temporadas .season-months{grid-template-columns:repeat(6,minmax(0,1fr))}
+@media(max-width:920px){#temporadas .season-months{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:560px){#temporadas .season-months{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Iconos meteorológicos opcionales para meses evaluados; colores de estado intactos. */
+.season-month .season-weather-icon{display:block;width:19px;height:19px;flex:none;margin:2px 0 1px;opacity:.9}
+
+/* Mes e icono meteorológico alineados en el encabezado de cada tarjeta. */
+.season-month .season-month-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:21px}
+.season-month .season-month-heading strong{font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.season-month .season-month-heading .season-weather-icon{margin:0 0 0 auto;flex:none}
+
+/* Calendario editorial: tarjetas aireadas y colores de estado suaves. */
+#temporadas .season-months{gap:12px;margin-top:18px}
+#temporadas .season-month{border-radius:12px;padding:14px;min-height:154px;gap:9px;box-shadow:0 1px 2px rgba(16,42,51,.035);align-items:flex-start}
+#temporadas .season-month-heading{width:100%;min-height:20px}
+#temporadas .season-month-heading strong{font-size:13px;letter-spacing:.08em}
+#temporadas .season-weather-icon{width:18px;height:18px}
+#temporadas .season-state{display:inline-flex;align-items:center;align-self:flex-start;width:auto;max-width:100%;padding:4px 9px;border-radius:999px;font-size:11px;font-weight:700;line-height:1.2}
+#temporadas .season-month-description{margin:0;font-size:12px;line-height:1.5;color:var(--ink);overflow-wrap:anywhere}
+#temporadas .season-pending{background:#f8f3fb;border-color:#d6c2e5;color:#654280}
+#temporadas .season-pending .season-state{background:#ebddf7;color:#653b97}
+#temporadas .season-recommended{background:#f1f8f2;border-color:#bbd8c2;color:#246a3d}
+#temporadas .season-recommended .season-state{background:#dceee1;color:#246a3d}
+#temporadas .season-conditional{background:#fffaed;border-color:#e8ce90;color:#805a0c}
+#temporadas .season-conditional .season-state{background:#f8eac5;color:#795200}
+#temporadas .season-avoid{background:#fcf2f2;border-color:#e5b7ba;color:#a13d43}
+#temporadas .season-avoid .season-state{background:#f5dfe0;color:#8b3037}
+#temporadas .season-legend{gap:10px 18px;margin:19px 0 0;font-size:12px}
+#temporadas .season-swatch{width:11px;height:11px;border-radius:3px}
+#temporadas .season-summary{border-top:1px solid var(--line);padding-top:15px;margin-top:17px;font-size:13px;line-height:1.65}
+@media(max-width:560px){#temporadas .season-month{padding:12px;min-height:142px}#temporadas .season-state{font-size:10px;padding:4px 7px}}
+
+/* Meses citados en el resumen: pequeñas etiquetas según el estado del calendario. */
+#temporadas .season-summary-month{display:inline-block;vertical-align:baseline;padding:1px 7px;margin:0 1px;border:1px solid currentColor;border-radius:999px;font-size:.9em;font-weight:700;line-height:1.5;white-space:nowrap;box-shadow:none}
+
+/* Día por día: superficie editorial en article.panel, sin doble fondo en section. */
+#dias.atlas-panel-section{background:transparent;border:0;border-radius:0;padding:0}
+#dias .itinerary-panel{padding:28px;background:#fff;border:1px solid var(--line);border-radius:8px}
+#dias .itinerary-panel .section-title{margin-bottom:22px}
+@media(max-width:680px){#dias .itinerary-panel{padding:16px}}
+@media print{#dias .itinerary-panel{padding:0;border:0;background:white}}
+
+/* Presupuesto: misma superficie editorial que Día por día. */
+#costes.atlas-panel-section{background:transparent;border:0;border-radius:0;padding:0}
+#costes .budget-section-panel{padding:28px;background:linear-gradient(130deg,#f7f9f9,#f1f5f6);border:1px solid var(--line);border-radius:8px}
+#costes .budget-section-panel .section-title{margin-bottom:22px}
+@media(max-width:680px){#costes .budget-section-panel{padding:16px}}
+@media print{#costes .budget-section-panel{padding:0;border:0;background:white}}
+
+/* Presupuesto: dar prioridad al título y compactar la descripción lateral. */
+@media(min-width:761px){
+  #costes .budget-section-panel .section-title{display:grid;grid-template-columns:minmax(0,1fr) minmax(210px,32%);align-items:center;gap:24px}
+  #costes .budget-section-panel .section-title>div{min-width:0}
+  #costes .budget-section-panel .section-title h2{font-size:clamp(24px,2.4vw,30px);white-space:nowrap}
+  #costes .budget-section-panel .section-title>p{font-size:13px;line-height:1.5;margin:0;max-width:none}
+}
+@media(max-width:760px){
+  #costes .budget-section-panel .section-title{display:block}
+  #costes .budget-section-panel .section-title h2{white-space:normal}
+  #costes .budget-section-panel .section-title>p{font-size:13px;line-height:1.5;margin-top:10px}
+}
+
+/* Sangría suave para conceptos individuales; categorías, subtotales e importes no cambian. */
+#costes .budget-ledger .budget-item td:first-child{padding-left:24px}
+
+/* Tabla compacta y categorías plegables; encabezado y subtotal siempre visibles. */
+#costes .budget-ledger .budget-item td{padding-top:4px;padding-bottom:4px;font-size:11.5px;line-height:1.3}
+#costes .budget-ledger .budget-subtotal td{padding-top:5px;padding-bottom:5px;font-size:11.5px;line-height:1.3}
+#costes .budget-ledger .budget-category th{padding:0;font-size:12.5px;border-top-width:5px}
+#costes .budget-ledger .budget-toggle{width:100%;display:flex;align-items:center;gap:9px;text-align:left;background:transparent;border:0;padding:7px 10px;font:inherit;font-weight:700;color:inherit;cursor:pointer}
+#costes .budget-ledger .budget-toggle:hover{background:rgba(16,42,51,.055)}
+#costes .budget-ledger .budget-chevron{display:inline-block;flex:none;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform .15s ease}
+#costes .budget-ledger .budget-toggle[aria-expanded="false"] .budget-chevron{transform:rotate(-45deg)}
+#costes .budget-ledger tr[hidden]{display:none!important}
+
+/* Partidas del presupuesto: descripciones uniformes, sin negritas ni cursivas. */
+#costes .budget-ledger .budget-item td:first-child,
+#costes .budget-ledger .budget-item td:first-child *{font-weight:400;font-style:normal;text-decoration:none;font-family:Arial,Helvetica,sans-serif}
+
+/* Jerarquía compacta y respirable para encabezados de los días. */
+#dias .day summary{padding:16px 18px;gap:16px;align-items:center}
+#dias .day summary h3{font-size:clamp(18px,1.65vw,21px);line-height:1.25;letter-spacing:-.2px;margin:0 0 8px}
+#dias .day summary .day-date{font-size:12px;line-height:1.4;margin-top:0}
+#dias .day summary .night-hotel{margin-top:6px;font-size:12px;line-height:1.4}
+#dias .day summary .day-places{font-size:12px;line-height:1.45;margin-top:6px}
+#dias .daynum{width:48px;min-width:48px;height:48px;font-size:25px}
+#dias .day summary:after{font-size:23px}
+@media(max-width:680px){#dias .day summary{padding:13px;gap:11px}#dias .day summary h3{font-size:18px;line-height:1.28}#dias .daynum{width:42px;min-width:42px;height:42px;font-size:23px}}
+
+/* Día, número y fecha breve reunidos en la columna izquierda. */
+#dias .day summary{align-items:flex-start}
+#dias .day-rail{flex:0 0 78px;display:flex;flex-direction:column;align-items:center;gap:7px;min-width:0}
+#dias .daynum{width:54px;min-width:54px;height:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;line-height:1;padding:5px 3px}
+#dias .daynum-label{font-family:Arial,Helvetica,sans-serif;font-size:10px;font-weight:500;letter-spacing:.09em;color:#e1e9ec;text-transform:uppercase}
+#dias .daynum-value{font-family:var(--serif);font-size:25px;line-height:1;font-weight:700;color:var(--gold)}
+#dias .day-badge-date{font-size:11px;color:var(--muted);line-height:1.3;text-align:center;white-space:nowrap}
+#dias .day-main{min-width:0;flex:1}
+@media(max-width:680px){#dias .day-rail{flex-basis:67px}#dias .daynum{width:49px;min-width:49px;height:52px}#dias .daynum-value{font-size:23px}#dias .day-badge-date{font-size:10px}}
+
+/* Lectura jerárquica: metadatos ligeramente indentados respecto del título. */
+#dias .day-main>.night-hotel,#dias .day-main>.day-places{padding-left:0}
+
+/* Centrar el bloque de número y fecha respecto a la altura del resumen diario. */
+#dias .day summary{align-items:center}
+#dias .day-rail{align-self:center}
+
+/* Viajes en planeación: superficies y estados explícitos sin cifras artificiales. */
+.draft-card-cover{min-height:190px;background:linear-gradient(135deg,#e7eef0,#f7f9f9);display:flex;align-items:center;justify-content:center;color:var(--muted);font-family:var(--serif);font-size:20px;position:relative}
+.draft-card-cover .rank{position:absolute;top:12px;left:12px}
+.draft-trip-content{padding-bottom:35px}
+.draft-hero{padding-top:35px;padding-bottom:22px}
+.draft-hero h1{font-family:var(--serif);font-size:clamp(28px,4vw,42px);margin:8px 0}
+.draft-trip-section{padding:12px 0}
+.draft-trip-panel{background:linear-gradient(130deg,#f7f9f9,#f1f5f6);border-radius:8px;padding:26px}
+.draft-trip-panel h2{font-size:clamp(24px,2.5vw,30px);margin:4px 0 20px}
+.draft-fields{display:grid;gap:10px}
+.draft-fields>div{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:10px}
+.draft-fields strong{font-size:13px;font-weight:600}
+.draft-pending,.draft-na{display:inline-block;color:var(--muted);font-size:13px;font-weight:400}
+.draft-na{font-style:italic}
+@media(max-width:680px){.draft-trip-panel{padding:17px}.draft-fields>div{flex-direction:column;gap:3px}.draft-card-cover{min-height:125px}}
+
+/* Traslados principales integrados en la tarjeta de movilidad de cada día. */
+.daycontent .mobility-card .day-transport{margin:0 0 15px;padding:0 0 15px;border:0;border-bottom:1px solid #ded9cb;border-radius:0;background:transparent}
+.daycontent .mobility-card .day-transport-item{padding:12px 13px;border:1px solid #d8deda;border-radius:7px;background:#fff}
+.daycontent .mobility-card .day-transport-item+.day-transport-item{margin-top:10px}
+.day-transport-kind{display:inline-flex;align-items:center;justify-content:center;margin-right:9px;font-size:17px;vertical-align:middle}
+@media(max-width:680px){.daycontent .mobility-card .day-transport-item{padding:12px}}
+
+/* Cronología horizontal de vuelos dentro de Cómo trasladarte. */
+.flight-fare{margin:2px 0 14px!important}
+.flight-timeline{margin-top:12px}
+.flight-leg{display:grid;grid-template-columns:76px minmax(0,1fr) 76px;align-items:center;gap:12px}
+.flight-endpoint{display:flex;flex-direction:column;gap:1px;font-size:13px;font-variant-numeric:tabular-nums}
+.flight-endpoint strong{display:inline-block;align-self:flex-start;box-sizing:border-box;width:55px;text-align:center;padding:3px 5px;border-radius:5px;background:#f0f4f5;color:#22455a;font-size:13px;font-weight:700;letter-spacing:.015em;line-height:1.3}
+.flight-endpoint-arrival strong{align-self:flex-end}
+.flight-endpoint span{box-sizing:border-box;display:block;width:55px;text-align:center;font-weight:650;color:var(--ink)}
+.flight-endpoint-arrival span{align-self:flex-end}
+.flight-endpoint-arrival{text-align:right}
+.flight-leg-middle{text-align:center;min-width:0;font-size:12px;color:var(--muted)}
+.flight-line{position:relative;display:flex;align-items:center;justify-content:center;height:2px;margin:9px 5px;background:var(--ink)}
+.flight-line-duration{position:relative;z-index:1;display:inline-block;padding:2px 12px;background:#fff;color:var(--muted);font-size:12px;white-space:nowrap;line-height:1.4}
+.flight-line:before,.flight-line:after{content:"";position:absolute;top:50%;width:8px;height:8px;border:2px solid var(--ink);background:#fff;border-radius:50%;transform:translateY(-50%)}
+.flight-line:before{left:-5px}.flight-line:after{right:-5px}
+.flight-layover{display:flex;align-items:center;justify-content:center;gap:7px;margin:4px 0;padding:1px 0;background:transparent;color:#5e563f;font-size:11px;font-weight:600;line-height:1.5}
+.flight-layover:before,.flight-layover:after{content:"";height:1px;max-width:45px;flex:1;background:#e4e5e3}
+.flight-layover-dot{width:5px;height:5px;flex:none;border-radius:50%;background:#a0a7a6}
+.flight-summary{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:16px;padding-top:11px;border-top:1px solid #e5e1d8;color:var(--muted);font-size:12px}
+.flight-summary strong{color:var(--ink);margin-right:4px}
+@media(max-width:680px){.flight-leg{grid-template-columns:58px minmax(0,1fr) 58px;gap:6px}.flight-endpoint strong{font-size:12px;width:49px;padding:3px 4px}.flight-endpoint span{width:49px}.flight-line-duration{padding:2px 6px;font-size:11px}.flight-endpoint{font-size:11px}.flight-summary{gap:7px 14px}}
+@media print{.flight-leg,.flight-layover{break-inside:avoid}}
+
+/* Indicador de llegada en días posteriores a la salida del itinerario. */
+.flight-endpoint strong{white-space:nowrap}
+.flight-day-offset{position:relative;top:-.12em;margin-left:1px;font-size:9px;font-weight:700;line-height:0;color:#5e563f}
+
+/* Cronología de ida y regreso en Traslados principales: comparte diseño con el itinerario diario. */
+#traslados .mt-flight-timeline{margin:13px 12px 15px}
+#traslados .mt-flight-timeline .flight-leg-middle{align-self:center}
+#traslados .mt-flight-number{color:#5e563f;font-size:11px;font-weight:700;letter-spacing:.01em}
+#traslados .mt-flight-timeline .flight-leg{grid-template-columns:110px minmax(0,1fr) 110px;gap:10px}
+#traslados .mt-flight-timeline .mt-airport-name{display:block;max-width:110px;color:var(--muted);font-size:10px;font-weight:400;line-height:1.2;text-align:center}
+#traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{align-self:flex-end}
+#traslados .mt-flight-timeline .flight-line-duration{white-space:nowrap}
+@media(max-width:550px){#traslados .mt-flight-timeline .flight-leg{grid-template-columns:71px minmax(0,1fr) 71px;gap:4px}#traslados .mt-flight-timeline .mt-airport-name{font-size:9px;max-width:71px}#traslados .mt-flight-number{font-size:10px}#traslados .mt-flight-timeline .flight-line-duration{font-size:10px;padding:2px 4px}}
+#traslados .mt-flight-timeline .flight-summary{margin-top:14px}
+@media(max-width:550px){#traslados .mt-flight-timeline{margin:12px 0 14px}}
+
+/* Datos de viaje en el encabezado, con salto natural en pantallas pequeñas. */
+#traslados .mt-flight-list .mt-flight-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px 18px}
+#traslados .mt-flight-heading-title{flex:0 1 auto}
+#traslados .mt-flight-heading-stats{display:flex;align-items:baseline;justify-content:flex-end;flex-wrap:wrap;gap:5px 15px;font:400 11px/1.5 Arial,Helvetica,sans-serif;color:var(--ink)}
+#traslados .mt-flight-heading-stats b{font-weight:700;margin-right:3px}
+#traslados .mt-flight-timeline .mt-airport-name{overflow-wrap:normal;word-break:normal;white-space:normal;background:transparent!important;padding:0!important;border:0!important;box-shadow:none!important}
+#traslados .mt-flight-timeline .mt-airport-name strong,#traslados .mt-flight-timeline .mt-airport-name em,#traslados .mt-flight-timeline .mt-airport-name span{display:inline!important;width:auto!important;padding:0!important;margin:0!important;background:transparent!important;box-shadow:none!important;color:inherit!important;font:inherit!important;text-align:inherit!important}
+@media(max-width:680px){#traslados .mt-flight-heading-stats{justify-content:flex-start;width:100%;gap:3px 12px}}
+
+/* Alinear los nombres de aeropuertos con la columna de hora y código IATA. */
+#traslados .mt-flight-timeline .flight-endpoint .mt-airport-name{box-sizing:border-box;width:55px;max-width:none;align-self:flex-start;text-align:center;overflow:visible}
+#traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{align-self:flex-end}
+@media(max-width:680px){#traslados .mt-flight-timeline .flight-endpoint .mt-airport-name{width:49px}}
+
+/* Horarios de los vuelos: tipografía discreta en ambas líneas de tiempo. */
+.flight-timeline .flight-endpoint strong{font-size:11px;font-weight:400;letter-spacing:0}
+@media(max-width:680px){.flight-timeline .flight-endpoint strong{font-size:11px;font-weight:400}}
+
+/* Compactar únicamente las escalas de Traslados principales sin solapar aeropuertos. */
+#traslados .mt-flight-timeline .flight-layover{margin:0;padding:0;min-height:15px;line-height:1.3}
+#traslados .mt-flight-timeline .flight-leg{min-height:64px}
+@media(max-width:680px){#traslados .mt-flight-timeline .flight-layover{margin:2px 0;min-height:17px}#traslados .mt-flight-timeline .flight-leg{min-height:70px}}
+
+/* Centrado real de hora, código IATA y nombre; aprovechar el ancho en Desktop. */
+#traslados .mt-flight-timeline .flight-leg{grid-template-columns:100px minmax(0,1fr) 100px;gap:8px;min-height:55px}
+#traslados .mt-flight-timeline .flight-endpoint{align-items:center;min-width:0;text-align:center}
+#traslados .mt-flight-timeline .flight-endpoint strong,
+#traslados .mt-flight-timeline .flight-endpoint span{align-self:center;text-align:center}
+#traslados .mt-flight-timeline .flight-endpoint .mt-airport-name,
+#traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{align-self:center;width:max-content;max-width:150px;white-space:nowrap;text-align:center;overflow:visible}
+#traslados .mt-flight-timeline .flight-layover{min-height:12px;margin:0;padding:0}
+@media(max-width:680px){
+  #traslados .mt-flight-timeline .flight-leg{grid-template-columns:76px minmax(0,1fr) 76px;gap:4px;min-height:67px}
+  #traslados .mt-flight-timeline .flight-endpoint .mt-airport-name,
+  #traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{width:100%;max-width:76px;white-space:normal;overflow-wrap:normal}
+  #traslados .mt-flight-timeline .flight-layover{min-height:16px;margin:2px 0}
+}
+
+/* Cronología más compacta solo en Cómo trasladarte (sin nombres largos de aeropuerto). */
+.daycontent .mobility-card .day-transport .flight-leg{min-height:34px}
+.daycontent .mobility-card .day-transport .flight-layover{margin:0;padding:0;min-height:13px;line-height:1.25}
+@media(max-width:680px){.daycontent .mobility-card .day-transport .flight-leg{min-height:36px}.daycontent .mobility-card .day-transport .flight-layover{min-height:15px}}
+
+/* Timeline ferroviario: conserva el lenguaje visual de los vuelos, con estaciones completas. */
+#traslados .mt-train-timeline{margin:10px 10px 12px}
+#traslados .mt-train-timeline .mt-train-leg{grid-template-columns:165px minmax(0,1fr) 165px;min-height:46px;gap:8px}
+#traslados .mt-train-timeline .flight-endpoint{align-items:center;min-width:0;text-align:center}
+#traslados .mt-train-timeline .flight-endpoint strong{align-self:center}
+#traslados .mt-train-timeline .flight-endpoint .mt-station-name{display:block;width:auto;max-width:165px;align-self:center;white-space:nowrap;color:var(--muted);font-size:10px;font-weight:400;line-height:1.2;text-align:center}
+#traslados .mt-train-timeline .mt-train-direction{margin:6px 0 0;text-align:center;color:var(--ink);font-size:11px;font-weight:700}
+#traslados .mt-train-timeline .flight-line-duration{white-space:nowrap}
+@media(max-width:680px){
+ #traslados .mt-train-timeline{margin:9px 0}
+ #traslados .mt-train-timeline .mt-train-leg{grid-template-columns:76px minmax(0,1fr) 76px;gap:4px;min-height:62px}
+ #traslados .mt-train-timeline .flight-endpoint .mt-station-name{max-width:76px;white-space:normal;overflow-wrap:normal;font-size:9px}
+ #traslados .mt-train-timeline .flight-line-duration{font-size:10px;padding:2px 4px;white-space:normal}
+ #traslados .mt-train-timeline .mt-flight-number{font-size:10px}
+}
+
+/* Tarjetas plegables del itinerario: abiertas por defecto, sin afectar los días. */
+.daycontent details.atlas-day-fold > summary{cursor:pointer;list-style:none;position:relative;padding-right:30px}
+.daycontent details.atlas-day-fold > summary::-webkit-details-marker{display:none}
+.daycontent details.atlas-day-fold > summary::after{content:"";position:absolute;right:5px;top:50%;width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-65%) rotate(45deg);opacity:.65;transition:transform .15s}
+.daycontent details.atlas-day-fold:not([open]) > summary::after{transform:translateY(-35%) rotate(-45deg)}
+.daycontent details.atlas-day-fold > summary:focus-visible{outline:2px solid #dc5c2e;outline-offset:3px;border-radius:5px}
+.daycontent details.atlas-day-fold:not([open]) > summary{margin-bottom:0}
+.daycontent details.atlas-day-fold.hotel-checkin:not([open]),.daycontent details.atlas-day-fold.logistics-notice:not([open]),.daycontent details.atlas-day-fold.mobility-card:not([open]),.daycontent details.atlas-day-fold.day-budget:not([open]){padding-bottom:16px}
+.daycontent details.atlas-day-fold.day-budget:not([open]) .day-budget-heading{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.daycontent details.atlas-day-fold.dailycost-standalone > summary{display:flex;justify-content:space-between;align-items:center;gap:12px}
+
+/* Impedir que el estilo del resumen de jornada se aplique a tarjetas internas. */
+#dias .day .daycontent details.atlas-day-fold > summary{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px;
+  min-height:0;
+  margin:0;
+  padding:0 24px 0 0;
+  background:transparent;
+  border-radius:0;
+  line-height:1.4;
+}
+#dias .day .daycontent details.atlas-day-fold > summary::after,
+#dias .day[open] .daycontent details.atlas-day-fold > summary::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:3px;
+  margin:0;
+  width:7px;
+  height:7px;
+  border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;
+  transform:translateY(-65%) rotate(45deg);
+  font-size:0;
+  opacity:.65;
+}
+#dias .day .daycontent details.atlas-day-fold:not([open]) > summary::after{
+  transform:translateY(-35%) rotate(-45deg);
+}
+#dias .day .daycontent details.atlas-day-fold > summary:hover{background:transparent}
+#dias .day .daycontent details.mobility-card > summary h4{margin:0}
+#dias .day .daycontent details.atlas-day-fold.hotel-checkin > summary{padding-bottom:10px;border-bottom:1px solid #c9ddde}
+#dias .day .daycontent details.atlas-day-fold.logistics-notice > summary{margin-bottom:12px}
+#dias .day .daycontent details.atlas-day-fold.day-budget > summary{padding-bottom:12px;margin-bottom:8px}
+#dias .day .daycontent details.atlas-day-fold:not([open]) > summary{margin-bottom:0;padding-bottom:0;border-bottom:0}
+
+/* Separar el encabezado plegable de Cómo trasladarte de su contenido. */
+#dias .day .daycontent details.mobility-card[open] > summary{padding-bottom:0;margin-bottom:12px;border-bottom:0}
+#dias .day .daycontent details.mobility-card:not([open]) > summary{padding-bottom:0;margin-bottom:0;border-bottom:0}
+
+/* Presupuesto diario: título compacto, icono y subtotal a la derecha. */
+#dias .day .daycontent details.day-budget > summary.day-budget-heading{display:flex;align-items:center;gap:10px;padding:0 26px 12px 0;margin:0 0 9px;border-bottom:1px solid var(--line)}
+#dias .day .daycontent details.day-budget > summary .day-budget-symbol{display:grid;place-items:center;flex:none;width:32px;height:32px;border-radius:6px;background:#e0e9ec;color:#52656a}
+#dias .day .daycontent details.day-budget > summary .day-budget-title{min-width:0}
+#dias .day .daycontent details.day-budget > summary .day-budget-title h4{margin:0;font:600 14px/1.4 Arial,Helvetica,sans-serif}
+#dias .day .daycontent details.day-budget > summary .day-budget-title small{display:block;margin-top:2px;font-size:12px;line-height:1.35}
+#dias .day .daycontent details.day-budget > summary > strong{margin-left:auto;text-align:right;min-width:0;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums}
+#dias .day .daycontent details.day-budget:not([open]) > summary.day-budget-heading{padding-bottom:0;margin-bottom:0;border-bottom:0}
+@media(max-width:680px){#dias .day .daycontent details.day-budget > summary.day-budget-heading{gap:8px}#dias .day .daycontent details.day-budget > summary > strong{font-size:14px}}
+
+/* Presupuesto diario en verde olivo suave, con cifras alineadas sin líneas divisorias. */
+#dias .day .daycontent details.day-budget{
+  background:#f3f5ec;
+  border-color:#d9dfcd;
+  color:#2f3d2d;
+}
+#dias .day .daycontent details.day-budget > summary.day-budget-heading{
+  padding-bottom:0;
+  margin-bottom:12px;
+  border-bottom:0;
+}
+#dias .day .daycontent details.day-budget > summary .day-budget-symbol{
+  background:#e5ead9;
+  color:#536649;
+}
+#dias .day .daycontent details.day-budget > summary .day-budget-title h4{
+  color:#384a35;
+}
+#dias .day .daycontent details.day-budget > summary > strong{
+  color:#344b31;
+  font-size:17px;
+}
+#dias .day .daycontent details.day-budget .day-budget-line{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) max-content;
+  align-items:baseline;
+  gap:12px;
+  padding:8px 11px;
+  border:0;
+  border-radius:5px;
+  background:rgba(255,255,255,.47);
+  margin:5px 0;
+}
+#dias .day .daycontent details.day-budget .day-budget-line strong{
+  color:#344b31;
+  font-weight:650;
+  font-variant-numeric:tabular-nums;
+  text-align:right;
+}
+#dias .day .daycontent details.day-budget .day-budget-disclaimer,
+#dias .day .daycontent details.day-budget .day-budget-pending{
+  color:#66745d;
+}
+@media(max-width:680px){
+  #dias .day .daycontent details.day-budget .day-budget-line{gap:8px;padding:8px}
+  #dias .day .daycontent details.day-budget .day-budget-line strong{white-space:nowrap}
+}
+
+/* Movilidad local: instrucciones separadas sin introducir nuevos campos JSON. */
+#dias .day .daycontent .mobility-card .mobility-copy{display:grid;gap:0;margin-top:8px;border:1px solid #e4dfd2;border-radius:7px;overflow:hidden;background:rgba(255,255,255,.66)}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step{margin:0;padding:12px 15px;font-size:13px;line-height:1.65;color:var(--ink);overflow-wrap:anywhere}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step+.mobility-step{border-top:1px solid #ebe7dc}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step>strong:first-child{color:#5e563f;font-weight:700}
+#dias .day .daycontent .mobility-card .mobility-copy em{font-style:normal}
+@media(max-width:680px){#dias .day .daycontent .mobility-card .mobility-copy .mobility-step{padding:11px 12px;font-size:13px}}
+
+/* Lenguaje común de filas para movilidad, logística y presupuesto. */
+#dias .day .daycontent .mobility-card .mobility-copy,
+#dias .day .daycontent .logistics-notice .logistics-copy,
+#dias .day .daycontent .day-budget .day-budget-rows{
+  display:grid;
+  gap:0;
+  border:1px solid var(--info-border);
+  border-radius:7px;
+  overflow:hidden;
+  background:var(--info-surface);
+}
+#dias .day .daycontent .mobility-card{--info-border:#e4dfd2;--info-divider:#ebe7dc;--info-surface:rgba(255,255,255,.66)}
+#dias .day .daycontent .logistics-notice{--info-border:#efdcd0;--info-divider:#f0e1d7;--info-surface:rgba(255,255,255,.65)}
+#dias .day .daycontent .day-budget{--info-border:#d9dfcd;--info-divider:#e2e8d9;--info-surface:rgba(255,255,255,.55)}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step,
+#dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row,
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{
+  display:block;
+  margin:0;
+  padding:9px 15px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  font-size:13px;
+  line-height:1.65;
+  overflow-wrap:anywhere;
+}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step+.mobility-step,
+#dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row+.atlas-info-row,
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line+.day-budget-line{
+  border-top:1px solid var(--info-divider);
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) max-content;
+  align-items:baseline;
+  column-gap:12px;
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line strong{
+  color:#344b31;
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-empty{
+  padding:12px 15px;
+  margin:0;
+}
+#dias .day .daycontent .logistics-notice .logistics-copy{margin-bottom:0}
+@media(max-width:680px){
+  #dias .day .daycontent .mobility-card .mobility-copy .mobility-step,
+  #dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row,
+  #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{padding:8px 12px}
+}
+
+/* Paleta 2 — Mineral contemporánea: cuatro tarjetas del itinerario maestro.
+   Se aplica a las tarjetas modulares sin alterar markup ni datos. */
+#dias .day .daycontent .hotel-checkin{
+  background:#eaf0f7;border-color:#cbd9e7;
+}
+#dias .day .daycontent .hotel-checkin-heading{border-bottom-color:#cbd9e7}
+#dias .day .daycontent .hotel-checkin-symbol{background:#dae6f2;color:#456c92}
+#dias .day .daycontent .hotel-checkin-heading h4,
+#dias .day .daycontent .hotel-checkin-link a{color:#456c92}
+#dias .day .daycontent .hotel-checkin-heading small,
+#dias .day .daycontent .hotel-checkin-address,
+#dias .day .daycontent .hotel-checkin-address>span:first-child{color:#526f88}
+#dias .day .daycontent .hotel-checkin-notes{border-top-color:#cbd9e7}
+#dias .day .daycontent .mobility-card{
+  background:#efedf7;border-color:#d8d2e7;
+  --info-border:#d8d2e7;--info-divider:#e3deee;
+  --info-surface:rgba(255,255,255,.68);
+}
+#dias .day .daycontent .mobility-card h4,
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step>strong:first-child{color:#706791}
+#dias .day .daycontent .mobility-card .mobility-icon{background:#e1dcef;color:#706791}
+#dias .day .daycontent .mobility-card .day-transport{border-bottom-color:#d8d2e7}
+#dias .day .daycontent .logistics-notice{
+  background:#faf1e1;border-color:#ead8b5;
+  --info-border:#ead8b5;--info-divider:#ede1c9;
+  --info-surface:rgba(255,255,255,.7);
+}
+#dias .day .daycontent .logistics-notice .logistics-symbol{background:#f1e3c6;color:#a17b3f}
+#dias .day .daycontent .logistics-notice .logistics-heading h4,
+#dias .day .daycontent .logistics-notice .logistics-links-heading{color:#88682e}
+#dias .day .daycontent .logistics-notice .logistics-links{border-top-color:#ead8b5}
+#dias .day .daycontent .logistics-notice .logistics-link-list a{border-color:#e6d3ac;color:#806430}
+#dias .day .daycontent .logistics-notice .logistics-link-list a:hover{border-color:#b49352}
+#dias .day .daycontent .day-budget{
+  background:#ebf2ed;border-color:#cadccf;color:#304c3b;
+  --info-border:#cadccf;--info-divider:#dbe9df;
+  --info-surface:rgba(255,255,255,.68);
+}
+#dias .day .daycontent .day-budget .day-budget-symbol{background:#dce9df;color:#507a64}
+#dias .day .daycontent .day-budget .day-budget-title h4,
+#dias .day .daycontent .day-budget > summary > strong,
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line strong{color:#406a55}
+#dias .day .daycontent .day-budget .day-budget-disclaimer,
+#dias .day .daycontent .day-budget .day-budget-pending{color:#5b7465}
+
+/* Actividades por momento del día: lectura editorial en bloques compactos. */
+#dias .day .daycontent .schedule{gap:12px;align-items:stretch}
+#dias .day .daycontent .schedule-period{--period-bg:#faf3e8;--period-accent:#a75f2c;--period-divider:#eadfce;min-width:0;padding:12px 10px 10px;background:var(--period-bg);border-radius:8px}
+#dias .day .daycontent .schedule-afternoon{--period-bg:#f4f1e8;--period-accent:#816c47;--period-divider:#e3ded0}
+#dias .day .daycontent .schedule-evening{--period-bg:#edf2f8;--period-accent:#526b88;--period-divider:#dce5f0}
+#dias .day .daycontent .schedule-period>label{display:flex;align-items:center;gap:7px;color:var(--period-accent);font-size:12px;font-weight:700;letter-spacing:1.25px;margin:0 0 9px}
+#dias .day .daycontent .schedule-period>label span{font-size:17px;line-height:1;letter-spacing:0}
+#dias .day .daycontent .schedule-items{border:1px solid var(--period-divider);border-radius:6px;background:rgba(255,255,255,.77);overflow:hidden}
+#dias .day .daycontent .schedule-item{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:start;gap:7px;padding:9px 8px}
+#dias .day .daycontent .schedule-item+.schedule-item{border-top:1px solid var(--period-divider)}
+#dias .day .daycontent .schedule-item-number{display:grid;place-items:center;min-height:21px;border-radius:4px;background:var(--period-bg);font-size:11px;font-weight:700;line-height:1.3;color:var(--period-accent)}
+#dias .day .daycontent .schedule-item p{margin:0;font-size:13px;line-height:1.65;overflow-wrap:anywhere}
+@media(max-width:680px){
+  #dias .day .daycontent .schedule{gap:12px}
+  #dias .day .daycontent .schedule-period{padding:11px 10px}
+  #dias .day .daycontent .schedule-item{padding:9px 10px}
+}
+
+/* Cronología ferroviaria en Cómo trasladarte: mismas convenciones que en Traslados principales. */
+#dias .day .daycontent .day-transport .day-train-timeline{margin:10px 0 8px}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-train-leg{grid-template-columns:116px minmax(0,1fr) 116px;gap:8px;min-height:48px}
+#dias .day .daycontent .day-transport .day-train-timeline .flight-endpoint{align-items:center;min-width:0;text-align:center}
+#dias .day .daycontent .day-transport .day-train-timeline .flight-endpoint strong{align-self:center}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-station-name{display:block;align-self:center;text-align:center;max-width:116px;font-size:10px;line-height:1.3;font-weight:400;color:var(--muted);overflow-wrap:break-word}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-train-direction{text-align:center;font-size:11px;font-weight:700;color:var(--ink);margin:5px 0 1px}
+#dias .day .daycontent .day-transport .day-train-timeline .flight-line-duration{white-space:nowrap}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-flight-number{font-size:10px}
+@media(max-width:680px){
+ #dias .day .daycontent .day-transport .day-train-timeline .mt-train-leg{grid-template-columns:76px minmax(0,1fr) 76px;gap:4px;min-height:60px}
+ #dias .day .daycontent .day-transport .day-train-timeline .mt-station-name{max-width:76px;font-size:9px}
+ #dias .day .daycontent .day-transport .day-train-timeline .flight-line-duration{white-space:normal;font-size:10px;padding:2px 4px}
+}
+
+/* Cronologías de trenes diarios: ida y regreso más compactos. */
+#dias .day .daycontent .day-transport .day-train-timeline{margin:5px 0 3px}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-train-leg{min-height:35px}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-train-direction{margin:1px 0 0;line-height:1.2}
+#dias .day .daycontent .day-transport .day-train-timeline .flight-endpoint{gap:1px}
+#dias .day .daycontent .day-transport .day-train-timeline .mt-station-name{line-height:1.15}
+@media(max-width:680px){
+ #dias .day .daycontent .day-transport .day-train-timeline .mt-train-leg{min-height:43px}
+}
+
+/* Destacar etiquetas de los avisos igual que las rutas, con el acento ámbar. */
+#dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row > strong:first-child{
+  color:#88682e;
+  font-weight:700;
+}
+
+/* Gastos diarios: formato uniforme; ningún énfasis automático en conceptos. */
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-concept{
+  font-size:13px;
+  font-weight:400;
+  font-style:normal;
+  color:var(--ink);
+  min-width:0;
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-concept em,
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-concept strong{
+  font-style:normal;
+  font-weight:400;
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-status{
+  font-size:12px;
+  font-weight:400;
+  color:#657b6d;
+}
+
+/* Acercar las actividades de Mañana/Tarde/Noche al carrusel superior. */
+#dias .day .daycontent .schedule{margin-top:14px}
+@media(max-width:680px){#dias .day .daycontent .schedule{margin-top:12px}}
+
+/* Jornadas sin galería: evitar el hueco bajo la cabecera del día. */
+#dias .day .daycontent:not(:has(> .gallery)) .schedule{margin-top:0}
+
+/* Galería diaria: fotografías protagonistas y fichas editoriales compactas. */
+#dias .day .daycontent .gallery.carousel-track{gap:14px;padding-bottom:6px}
+#dias .day .daycontent .carousel-track>figure{flex-basis:calc((100% - 14px)/2)}
+#dias .day .daycontent .gallery figure{
+  background:#fff;border:1px solid #dbe3e7;border-radius:9px;
+  box-shadow:0 3px 12px rgba(16,42,51,.045);
+}
+#dias .day .daycontent .gallery figure .photo-open{overflow:hidden}
+#dias .day .daycontent .gallery figure .photo-open img{
+  height:225px;object-fit:cover;transition:transform .22s ease;
+}
+@media(hover:hover){#dias .day .daycontent .gallery figure .photo-open:hover img{transform:scale(1.025)}}
+#dias .day .daycontent .gallery figure .photo-zoom{font-size:11px;font-weight:600;border-radius:5px;padding:5px 9px;right:9px;bottom:9px}
+#dias .day .daycontent .gallery figure figcaption{padding:13px 16px 15px}
+#dias .day .daycontent .gallery figure figcaption>strong{
+  display:block;font-family:Georgia,'Times New Roman',serif;
+  font-size:20px;font-weight:600;line-height:1.23;
+}
+#dias .day .daycontent .gallery figure figcaption p{
+  font-size:13px;line-height:1.5;color:var(--muted);margin:6px 0 0;
+}
+/* Ocultar créditos en las tarjetas, manteniéndolos en la vista ampliada. */
+#dias .day .daycontent .gallery figure figcaption .credit{display:none}
+#dias .day .daycontent .gallery.single figure>.photo-open img{height:100%;min-height:225px}
+#dias .day .daycontent .carousel-controls{margin:7px 0 9px}
+@media(max-width:680px){
+  #dias .day .daycontent .carousel-track>figure{flex-basis:100%}
+  #dias .day .daycontent .gallery figure .photo-open img{height:215px}
+  #dias .day .daycontent .gallery figure figcaption{padding:12px 14px 14px}
+  #dias .day .daycontent .gallery figure figcaption>strong{font-size:19px}
+  #dias .day .daycontent .gallery.single figure>.photo-open img{height:215px;min-height:0}
+}
+@media(prefers-reduced-motion:reduce){#dias .day .daycontent .gallery figure .photo-open img{transition:none}}
+
+/* Footer mínimo: una sola franja con información útil. */
+footer.atlas-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:8px 20px;
+  padding:14px 5%;margin:0;
+  background:#f6f8f8;border-top:1px solid var(--line);
+  color:var(--muted);font:12px/1.4 Arial,Helvetica,sans-serif;
+}
+footer.atlas-footer strong{
+  color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.08em;
+}
+footer.atlas-footer strong span{font-weight:400;letter-spacing:0}
+footer.atlas-footer a{color:var(--ink);font-size:12px;text-decoration:none}
+footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:underline}
+@media(max-width:680px){
+  footer.atlas-footer{padding:13px 5%;gap:6px 12px}
+  footer.atlas-footer strong{width:100%}
+}
+
+/* Cabecera de tren diario: ruta e importe en una línea incluso en móvil. */
+#dias .day .daycontent .day-transport .day-transport-head{
+  display:flex;flex-direction:row;align-items:center;justify-content:space-between;
+  gap:8px;min-width:0;
+}
+#dias .day .daycontent .day-transport .day-transport-head>strong{
+  display:flex;align-items:center;min-width:0;flex:1 1 auto;
+  font-size:13px;line-height:1.4;
+}
+#dias .day .daycontent .day-transport .day-transport-head>span{
+  flex:0 0 auto;white-space:nowrap;text-align:right;margin:0;
+  font-size:12px;line-height:1.4;
+}
+#dias .day .daycontent .day-transport .day-transport-head .day-transport-kind{
+  display:inline-flex;flex:none;margin:0 6px 0 0;
+}
+
+/* Categorías de gastos: iconografía discreta y estado subordinado al concepto. */
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{
+  grid-template-columns:18px minmax(0,1fr) max-content;
+  align-items:center;column-gap:9px;
+}
+#dias .day .daycontent .day-budget .day-budget-category-icon{
+  display:flex;align-items:center;justify-content:center;
+  width:18px;height:18px;color:#507a64;flex:none;
+}
+#dias .day .daycontent .day-budget .day-budget-category-icon svg{display:block}
+#dias .day .daycontent .day-budget .day-budget-status{
+  display:block;margin-top:2px;font-size:11px;line-height:1.25;color:#657b6d;
+}
+@media(max-width:680px){
+ #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{column-gap:7px}
+}
+
+/* Calendario editorial: mes protagonista, temperatura secundaria, estado como único acento. */
+#temporadas .season-months{gap:12px}
+#temporadas .season-month{
+  min-height:158px;padding:15px;
+  background:#fff;border:1px solid #d9e1e4;border-radius:9px;
+  box-shadow:0 2px 9px rgba(16,42,51,.035);
+  color:var(--ink);gap:9px;
+}
+#temporadas .season-month-heading{min-height:20px;align-items:center}
+#temporadas .season-month-heading .season-temperature{
+  font-size:12px;font-weight:500;letter-spacing:0;
+  color:var(--muted);font-variant-numeric:tabular-nums;
+}
+#temporadas .season-month .season-month-name{
+  display:block;font-family:Georgia,'Times New Roman',serif;
+  font-size:23px;font-weight:600;letter-spacing:-.035em;
+  line-height:1.18;color:var(--ink);
+}
+#temporadas .season-month .season-weather-icon{color:var(--season-accent);opacity:.85}
+#temporadas .season-month .season-state{
+  color:var(--season-accent);background:var(--season-tint);
+  padding:4px 9px;font-weight:600;
+}
+#temporadas .season-month-description{color:var(--muted);font-size:12px;line-height:1.5}
+#temporadas .season-recommended{--season-accent:#467b67;--season-tint:#eaf3ed}
+#temporadas .season-conditional{--season-accent:#9b783a;--season-tint:#f8f1e5}
+#temporadas .season-avoid{--season-accent:#b75b59;--season-tint:#f8ebea}
+#temporadas .season-pending{--season-accent:#716486;--season-tint:#f1edf5}
+@media(max-width:560px){
+ #temporadas .season-month{min-height:151px;padding:12px;gap:8px}
+ #temporadas .season-month .season-month-name{font-size:21px}
+}
+
+/* Meses: evitar saltos dentro de nombres y etiquetas a seis columnas. */
+#temporadas .season-month .season-month-name{
+  font-size:clamp(14px,1.45vw,20px);
+  line-height:1.2;
+  letter-spacing:-.045em;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+}
+#temporadas .season-month .season-state{
+  font-size:10px;
+  line-height:1.25;
+  white-space:nowrap;
+  max-width:none;
+  padding:4px 7px;
+}
+#temporadas .season-month .season-temperature{font-size:11px;white-space:nowrap}
+@media(max-width:1150px){
+  #temporadas .season-months{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  #temporadas .season-months{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #temporadas .season-month .season-month-name{font-size:19px}
+}
+@media(max-width:560px){
+  #temporadas .season-months{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #temporadas .season-month .season-month-name{font-size:clamp(17px,4vw,21px)}
+  #temporadas .season-month .season-state{white-space:normal}
+}
+
+/* Actividades del día: tres columnas editoriales, sin tarjetas coloreadas anidadas. */
+#dias .day .daycontent .schedule{gap:20px;align-items:start}
+#dias .day .daycontent .schedule-period,
+#dias .day .daycontent .schedule-afternoon,
+#dias .day .daycontent .schedule-evening{
+  background:transparent;border:0;border-radius:0;box-shadow:none;
+  padding:0;min-height:0;
+}
+#dias .day .daycontent .schedule-period>label{
+  padding:0 0 9px;margin:0 0 2px;
+  border-bottom:1px solid #dce3e6;
+}
+#dias .day .daycontent .schedule-period .schedule-items{
+  background:transparent;border:0;border-radius:0;overflow:visible;
+}
+#dias .day .daycontent .schedule-period .schedule-item{
+  background:transparent;border-radius:0;
+  padding:10px 0;gap:9px;grid-template-columns:22px minmax(0,1fr);
+}
+#dias .day .daycontent .schedule-period .schedule-item+.schedule-item{
+  border-top:1px solid #e8edef;
+}
+#dias .day .daycontent .schedule-period .schedule-item-number{
+  background:#f0f3f4;color:#60717a;
+  border-radius:4px;min-height:21px;
+}
+#dias .day .daycontent .schedule-period .schedule-item p{
+  font-size:13px;line-height:1.65;
+}
+@media(max-width:680px){
+  #dias .day .daycontent .schedule{gap:15px}
+  #dias .day .daycontent .schedule-period .schedule-item{padding:9px 0}
+}
+
+/* Separación editorial después de la galería y sus controles. */
+#dias .day .daycontent:has(> .gallery) > .schedule,
+#dias .day .daycontent:has(> .photo-carousel) > .schedule{
+  margin-top:24px;
+}
+@media(max-width:680px){
+  #dias .day .daycontent:has(> .gallery) > .schedule,
+  #dias .day .daycontent:has(> .photo-carousel) > .schedule{margin-top:20px}
+}
+
+/* Portada: tarjetas compactas, fotografía protagonista y precio con MXN en la misma línea. */
+#viajes .cards{gap:18px;align-items:stretch}
+#viajes .atlas-home-card{border-radius:9px;border-color:#d9e1e4;box-shadow:0 2px 10px rgba(16,42,51,.035)}
+#viajes .atlas-home-card .cardphoto{height:190px}
+#viajes .atlas-home-card .rank{top:11px;left:11px;width:27px;height:27px;font-size:12px;border-radius:6px;background:#fff;color:var(--ink);box-shadow:0 1px 5px #102a3320}
+#viajes .atlas-home-card .cardbody{padding:16px 18px 17px;display:flex;flex-direction:column;gap:7px;min-width:0}
+#viajes .atlas-home-card .eyebrow{margin:0;color:#8b421f;font-size:10px;line-height:1.4;letter-spacing:.1em;max-height:2.8em;overflow:hidden}
+#viajes .atlas-home-card h3{font-size:clamp(20px,2.1vw,25px);line-height:1.12;letter-spacing:-.025em;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#viajes .atlas-home-card .card-route{font-size:12px;line-height:1.45;color:var(--muted);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#viajes .atlas-home-card .carddates{font-size:12px;line-height:1.4;color:var(--muted);margin:3px 0 0}
+#viajes .atlas-home-card .cardfacts{gap:6px;margin-top:1px}
+#viajes .atlas-home-card .cardfacts span{background:transparent;border:0;padding:0;font-size:11px;color:var(--muted)}
+#viajes .atlas-home-card .cardfacts span+span::before{content:"·";margin-right:6px;color:#98a5aa}
+#viajes .atlas-home-card .cardbottom{margin-top:auto;padding-top:12px;border-top:1px solid #e1e8eb;gap:8px;align-items:center}
+#viajes .atlas-home-card .card-price{min-width:0;display:flex;flex-direction:column;gap:3px}
+#viajes .atlas-home-card .card-price>small{font-size:10px;line-height:1.3;color:var(--muted)}
+#viajes .atlas-home-card .card-price>strong{font-size:clamp(16px,1.65vw,20px);line-height:1.25;letter-spacing:-.025em;font-weight:750;color:var(--ink);overflow-wrap:normal}
+#viajes .atlas-home-card .card-currency{display:inline;font-size:11px;white-space:nowrap;font-weight:600;letter-spacing:0;color:var(--muted)}
+#viajes .atlas-home-card .card-estimate{font-size:10px}
+#viajes .atlas-home-card .card-arrow{font-size:20px;color:#52656a;flex:none;line-height:1}
+@media(max-width:680px){
+ #viajes .cards{gap:15px}
+ #viajes .atlas-home-card .cardphoto{height:185px}
+ #viajes .atlas-home-card .cardbody{padding:15px 16px}
+ #viajes .atlas-home-card h3{font-size:23px}
+ #viajes .atlas-home-card .card-price>strong{font-size:19px}
+}
+
+/* Ajuste final de portada: título t.name completo y metadatos agrupados sin huecos. */
+#viajes .atlas-home-card .cardbody{gap:7px;padding:15px 17px 16px}
+#viajes .atlas-home-card .card-overview{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:11px;line-height:1.4}
+#viajes .atlas-home-card .card-overview .card-duration,
+#viajes .atlas-home-card .card-overview .card-overview-location{color:#8b421f;font-weight:700;white-space:nowrap}
+#viajes .atlas-home-card .card-overview .carddates{margin:0;font-size:11px}
+#viajes .atlas-home-card h3{
+  font-family:var(--serif);font-weight:500;font-size:clamp(20px,1.9vw,24px);
+  line-height:1.14;letter-spacing:-.025em;
+  display:block;overflow:visible;max-height:none;
+  -webkit-line-clamp:unset;
+  overflow-wrap:break-word;
+}
+#viajes .atlas-home-card h3 strong,#viajes .atlas-home-card h3 em{font-weight:inherit;font-style:normal}
+#viajes .atlas-home-card .card-route{font-size:12px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#viajes .atlas-home-card .cardfacts{display:flex;gap:7px 12px;align-items:baseline;margin-top:1px;flex-wrap:wrap}
+#viajes .atlas-home-card .cardfacts span{font-size:11px;line-height:1.4}
+#viajes .atlas-home-card .cardfacts span+span::before{content:none}
+#viajes .atlas-home-card .cardfacts span:nth-child(2){overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+#viajes .atlas-home-card .cardbottom{margin-top:9px;padding-top:11px}
+#viajes .atlas-home-card .card-price{gap:4px}
+#viajes .atlas-home-card .card-price>strong{font-variant-numeric:tabular-nums;line-height:1.3;font-size:clamp(16px,1.65vw,20px)}
+#viajes .atlas-home-card .card-currency{display:inline-block;vertical-align:baseline;white-space:nowrap}
+@media(max-width:680px){
+  #viajes .atlas-home-card h3{font-size:23px}
+  #viajes .atlas-home-card .card-overview{font-size:11px}
+}
+
+/* Comparativa de portada: tabla editorial y legible, con desplazamiento en móvil. */
+.home-comparison{padding-top:32px;padding-bottom:48px}
+.home-comparison .section-title{margin-bottom:17px}
+.home-comparison .section-title h2{font-size:clamp(25px,2.7vw,34px);letter-spacing:-.025em}
+.home-comparison .comparison-scroll{overflow-x:auto;border:1px solid #d9e1e4;border-radius:9px;background:#fff;scrollbar-width:thin}
+.home-comparison .comparison-table{width:100%;min-width:980px;border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:12px;line-height:1.45}
+.home-comparison .comparison-table th{padding:13px 12px;background:#edf2f4;color:#52656a;font-size:11px;font-weight:700;text-align:left;white-space:normal;border-bottom:1px solid #d9e1e4}
+.home-comparison .comparison-table th small{font-size:10px;font-weight:400}
+.home-comparison .comparison-table td{padding:14px 12px;border-bottom:1px solid #e5eaec;vertical-align:middle;background:transparent;color:var(--ink);overflow-wrap:normal;word-break:normal}
+.home-comparison .comparison-table tbody tr:last-child td{border-bottom:0}
+.home-comparison .comparison-table tbody tr:nth-child(even) td{background:#f8fafb}
+.home-comparison .comparison-table tbody tr:hover td{background:#f0f5f6}
+.home-comparison .comparison-table th:nth-child(1){width:27%}
+.home-comparison .comparison-table th:nth-child(2){width:13%}
+.home-comparison .comparison-table th:nth-child(3){width:10%}
+.home-comparison .comparison-table th:nth-child(4){width:6%}
+.home-comparison .comparison-table th:nth-child(5){width:10%}
+.home-comparison .comparison-table th:nth-child(6){width:11%}
+.home-comparison .comparison-table th:nth-child(7){width:8%}
+.home-comparison .comparison-table th:nth-child(8){width:15%}
+.home-comparison .comparison-destination a{display:flex;align-items:flex-start;gap:9px;color:var(--ink);font-weight:600;text-decoration:none;line-height:1.4}
+.home-comparison .comparison-destination a:hover{text-decoration:underline;text-decoration-color:#8b421f}
+.home-comparison .comparison-rank{display:inline-grid;place-items:center;flex:0 0 23px;height:23px;background:#edf2f4;color:#52656a;border-radius:5px;font-size:11px}
+.home-comparison .comparison-number,.home-comparison .comparison-price{font-variant-numeric:tabular-nums}
+.home-comparison .comparison-number small{color:var(--muted);font-size:11px}
+.home-comparison .comparison-price strong{font-size:12px;white-space:normal;line-height:1.5}
+.home-comparison .comparison-price strong small{font-size:10px;font-weight:500;white-space:nowrap;color:var(--muted)}
+.home-comparison .comparison-price>span{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+@media(max-width:680px){.home-comparison{padding-top:24px}.home-comparison .comparison-table{min-width:940px}.home-comparison .comparison-table td{padding:12px 10px}}
+
+/* Home móvil: margen lateral discreto sin alterar las tarjetas ni la tabla. */
+@media(max-width:680px){
+  #viajes.wrap,
+  .home-comparison.wrap{padding-left:12px;padding-right:12px}
+}
+
+/* Home hero editorial: información esencial y fotografía sin títulos repetidos. */
+.atlas-home-hero{
+  display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  gap:clamp(25px,4.2vw,56px);align-items:center;
+  min-height:0;padding-top:32px;padding-bottom:30px;
+}
+.atlas-home-hero-copy{min-width:0}
+.atlas-home-hero .eyebrow{font-size:11px;letter-spacing:.15em;margin:0 0 12px}
+.atlas-home-hero h1{font-size:clamp(41px,4.6vw,63px);letter-spacing:-.055em;line-height:1.06;max-width:12ch}
+.atlas-home-hero .atlas-home-lead{font-size:15px;line-height:1.65;color:var(--muted);max-width:41ch;margin:15px 0 20px}
+.atlas-home-hero-cta{display:inline-flex;align-items:center;gap:18px;border-radius:6px;padding:10px 16px;font-size:13px}
+.atlas-home-hero-cta span{font-size:16px;line-height:1}
+.atlas-home-hero .atlas-home-stats{
+  display:flex;gap:0;border-top:1px solid var(--line);
+  margin-top:24px;padding-top:14px;justify-content:space-between;
+  max-width:420px;
+}
+.atlas-home-hero .atlas-home-stats>div{flex:1;min-width:0}
+.atlas-home-hero .atlas-home-stats strong{font-size:22px;line-height:1.15;font-weight:700;margin:0}
+.atlas-home-hero .atlas-home-stats span{font-size:11px;display:block;margin-top:4px;color:var(--muted)}
+.atlas-home-hero .atlas-home-hero-image{
+  height:350px;min-height:0;border-radius:9px;overflow:hidden;
+  box-shadow:0 5px 20px #102a3310;
+}
+.atlas-home-hero .atlas-home-hero-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.atlas-home-hero .atlas-home-hero-image .photo-overlay{background:linear-gradient(180deg,transparent 57%,#102a3385)}
+.atlas-home-hero .atlas-home-hero-image .intro-caption{bottom:17px;left:20px}
+.atlas-home-hero .atlas-home-hero-image .intro-caption span{font-size:10px;letter-spacing:.16em;font-weight:700}
+@media(max-width:800px){
+  .atlas-home-hero{grid-template-columns:1fr;gap:18px;padding-top:25px;padding-bottom:18px}
+  .atlas-home-hero h1{font-size:clamp(38px,8.2vw,53px)}
+  .atlas-home-hero .atlas-home-lead{margin:12px 0 16px}
+  .atlas-home-hero .atlas-home-stats{margin-top:19px}
+  .atlas-home-hero .atlas-home-hero-image{height:250px}
+}
+@media(max-width:680px){
+  .atlas-home-hero.wrap{padding-left:12px;padding-right:12px}
+  .atlas-home-hero .atlas-home-hero-image{height:215px}
+  .atlas-home-hero .atlas-home-stats strong{font-size:20px}
+}
+
+/* Inicio visual: la fotografía ocupa la mayor parte del hero. */
+.atlas-home-hero{grid-template-columns:minmax(0,.66fr) minmax(0,1.34fr);gap:clamp(20px,3vw,38px);padding-top:26px;padding-bottom:24px}
+.atlas-home-hero .atlas-home-lead{margin:14px 0 0}
+.atlas-home-hero .atlas-home-hero-image{height:400px}
+.atlas-home-hero .atlas-home-hero-image .photo-overlay{background:linear-gradient(180deg,transparent 72%,#102a3355)}
+@media(max-width:800px){
+ .atlas-home-hero{grid-template-columns:1fr;gap:16px}
+ .atlas-home-hero .atlas-home-hero-image{height:300px}
+}
+@media(max-width:680px){.atlas-home-hero .atlas-home-hero-image{height:250px}}
+
+/* Portadas animadas solo con hover real; una imagen de reemplazo por tarjeta. */
+#viajes .atlas-home-card .cardphoto{isolation:isolate}
+#viajes .atlas-home-card .cardphoto .cardphoto-slide{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;pointer-events:none;z-index:1;
+  transition:opacity .55s ease;
+}
+#viajes .atlas-home-card .cardphoto .cardphoto-slide.visible{opacity:1}
+#viajes .atlas-home-card .cardphoto .rank{z-index:2}
+@media(prefers-reduced-motion:reduce){#viajes .atlas-home-card .cardphoto .cardphoto-slide{display:none;transition:none}}
+
+/* Portada inmersiva: un solo plano visual, sin columnas ni textos aislados. */
+.atlas-home-hero.atlas-home-hero-immersive{
+  display:block;min-height:0;padding-top:24px;padding-bottom:12px;
+}
+.atlas-home-hero-immersive .atlas-home-hero-image{
+  position:relative;height:clamp(340px,37vw,440px);min-height:0;
+  border-radius:11px;box-shadow:0 7px 25px rgba(16,42,51,.10);
+  isolation:isolate;
+}
+.atlas-home-hero-immersive .atlas-home-hero-image img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:center 50%;
+}
+.atlas-home-hero-immersive .atlas-home-hero-image .photo-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(10,29,37,.88) 0%,rgba(10,29,37,.72) 28%,rgba(10,29,37,.18) 69%,rgba(10,29,37,.04) 100%);
+}
+.atlas-home-hero-immersive .atlas-home-hero-copy{
+  position:absolute;z-index:2;left:clamp(24px,5vw,68px);bottom:clamp(28px,5vw,60px);
+  max-width:min(460px,56%);color:#fff;
+}
+.atlas-home-hero-immersive .eyebrow{color:#f3ca99;font-size:11px;letter-spacing:.18em;margin:0 0 12px}
+.atlas-home-hero-immersive h1{
+  font-size:clamp(42px,5.5vw,70px);font-weight:400;line-height:1.06;
+  letter-spacing:-.045em;max-width:12ch;color:#fff;
+}
+.atlas-home-hero-immersive .atlas-home-lead{
+  color:#f1f5f5;font-size:15px;line-height:1.6;
+  max-width:38ch;margin:17px 0 0;
+}
+@media(max-width:800px){
+  .atlas-home-hero.atlas-home-hero-immersive{display:block;padding-top:16px;padding-bottom:8px}
+  .atlas-home-hero-immersive .atlas-home-hero-image{height:400px}
+  .atlas-home-hero-immersive .atlas-home-hero-image .photo-overlay{
+    background:linear-gradient(0deg,rgba(10,29,37,.89),rgba(10,29,37,.43) 58%,rgba(10,29,37,.06) 100%);
+  }
+  .atlas-home-hero-immersive .atlas-home-hero-copy{left:25px;right:25px;bottom:30px;max-width:calc(100% - 50px)}
+  .atlas-home-hero-immersive h1{font-size:clamp(39px,7vw,56px)}
+}
+@media(max-width:680px){
+  .atlas-home-hero-immersive .atlas-home-hero-image{height:370px}
+  .atlas-home-hero-immersive .atlas-home-hero-copy{left:20px;right:20px;bottom:22px;max-width:calc(100% - 40px)}
+  .atlas-home-hero-immersive .atlas-home-lead{font-size:13px;margin-top:12px}
+  .atlas-home-hero-immersive h1{font-size:clamp(36px,9.6vw,48px)}
+}
+
+/* Portadas del Home: zoom-in cinematográfico sutil durante el hover. */
+@media(hover:hover) and (pointer:fine){
+  #viajes .atlas-home-card .cardphoto>img:not(.cardphoto-slide),
+  #viajes .atlas-home-card .cardphoto .cardphoto-slide{
+    transform:scale(1);
+    transition:transform 2.15s linear,opacity .55s ease;
+    transform-origin:center center;
+  }
+  #viajes .atlas-home-card .cardphoto:hover>img:not(.cardphoto-slide),
+  #viajes .atlas-home-card .cardphoto:hover .cardphoto-slide{
+    transform:scale(1.065);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #viajes .atlas-home-card .cardphoto>img,
+  #viajes .atlas-home-card .cardphoto .cardphoto-slide{
+    transform:none!important;transition:none!important;
+  }
+}
+
+/* Reiniciar el zoom por fotografía, no solo al entrar en hover. */
+@keyframes atlas-cover-zoom-cycle{
+  from{transform:scale(1)}
+  to{transform:scale(1.065)}
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  #viajes .atlas-home-card .cardphoto img.cardphoto-zoom-cycle{
+    animation:atlas-cover-zoom-cycle 2s linear both;
+  }
+}
+
+/* Alternar el sentido del zoom en cada fotografía consecutiva. */
+@keyframes atlas-cover-zoom-out{
+  from{transform:scale(1.065)}
+  to{transform:scale(1)}
+}
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  #viajes .atlas-home-card .cardphoto img.cardphoto-zoom-cycle.cardphoto-zoom-out{
+    animation-name:atlas-cover-zoom-out;
+  }
+}
+
+/* Fundido real: dos capas independientes; la entrante se superpone durante 650 ms. */
+#viajes .atlas-home-card .cardphoto .cardphoto-slide{
+  opacity:0;
+  transition:opacity .65s ease-in-out,transform 2s linear;
+  will-change:opacity,transform;
+}
+#viajes .atlas-home-card .cardphoto .cardphoto-slide.visible{opacity:1}
+#viajes .atlas-home-card .cardphoto .rank{z-index:3}
+
+/* Hero de viaje dividido: fotografía nítida y panel editorial independiente. */
+.triphero.triphero-split{
+  display:grid;grid-template-columns:minmax(0,46%) minmax(0,54%);
+  height:auto;min-height:300px;background:#102a33;color:#fff;
+  overflow:hidden;isolation:isolate;
+}
+.triphero.triphero-split::after{display:none}
+.triphero-split .triphero-split-info{
+  min-width:0;display:flex;align-items:center;
+  padding:38px clamp(24px,4.4vw,72px);
+}
+.triphero-split .triphero-split-info-inner{width:100%;max-width:660px;min-width:0}
+.triphero-split .breadcrumb{
+  position:static;display:inline-flex;align-items:center;
+  margin-bottom:26px;font-size:13px;text-decoration:none;color:#dbe7eb;
+}
+.triphero-split .breadcrumb:hover{text-decoration:underline}
+.triphero-split .hero-eyebrow{
+  margin:0 0 11px;color:#ffbd69;font-size:11px;
+  white-space:normal;overflow:visible;text-overflow:clip;
+}
+.triphero-split h1{
+  max-width:none;font-size:clamp(29px,3.3vw,47px);
+  line-height:1.13;letter-spacing:-.025em;overflow-wrap:break-word;
+}
+.triphero-split .hero-meta{
+  display:flex;flex-wrap:wrap;gap:8px 15px;
+  margin-top:21px;padding-top:15px;border-top:1px solid #ffffff30;
+  font-size:12px;color:#dfebee;
+}
+.triphero-split .triphero-split-photo{position:relative;min-height:300px;overflow:hidden;background:#e8eff0}
+.triphero-split .triphero-split-photo img{
+  position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;filter:none;display:block;
+}
+@media(max-width:680px){
+  .triphero.triphero-split{display:flex;flex-direction:column;min-height:0;height:auto}
+  .triphero-split .triphero-split-photo{order:0;height:215px;min-height:0}
+  .triphero-split .triphero-split-info{order:1;padding:22px 16px 24px;display:block}
+  .triphero-split .breadcrumb{margin-bottom:17px}
+  .triphero-split h1{font-size:clamp(28px,7vw,37px)}
+  .triphero-split .hero-meta{margin-top:16px;gap:7px 13px}
+}
+@media print{
+  .triphero.triphero-split{height:auto;min-height:0;display:grid;grid-template-columns:1fr 1fr}
+  .triphero-split .triphero-split-photo{min-height:180px}
+}
+
+/* Ajustes finos del hero editorial: título más equilibrado y encuadre alto. */
+.triphero-split h1{font-size:clamp(27px,3vw,42px)}
+.triphero-split .triphero-split-photo img{object-position:center 28%}
+@media(max-width:680px){
+ .triphero-split h1{font-size:clamp(26px,6.4vw,34px)}
+ .triphero-split .triphero-split-photo img{object-position:center 25%}
+}
+
+/* Metadatos del hero con iconos dorados compactos. */
+.triphero-split .hero-meta>span{display:inline-flex;align-items:center;gap:6px;line-height:1.5}
+.triphero-split .hero-meta-icon{color:#ffbd69;flex:none;width:15px;height:15px}
+
+/* Refinamiento exclusivo móvil del hero de viaje y su navegación. */
+@media(max-width:680px){
+  .triphero-split .triphero-split-photo{height:190px;min-height:0}
+  .triphero-split .triphero-split-info{padding:18px 16px 20px}
+  .triphero-split .breadcrumb{margin-bottom:12px}
+  .triphero-split .hero-eyebrow{margin-bottom:8px}
+  .triphero-split .hero-meta{margin-top:13px;padding-top:12px}
+  .subnav select{display:none}
+  .subnav{padding-left:12px;padding-right:12px}
+  .subnav>div{width:100%;min-width:0}
+}
+
+
+/* Temporadas: mismo borde superior de acento que la tarjeta Clima y luz. */
+#temporadas .season-month{
+  border-top:3px solid var(--season-accent,#52656a);
+  padding-top:12px;
+}
+@media(max-width:560px){
+  #temporadas .season-month{padding-top:10px}
+}
+
+/* Temporadas: misma sombra sutil al hover que las tarjetas de alojamiento. */
+@media(hover:hover) and (pointer:fine){
+  #temporadas .season-month{
+    transition:box-shadow .2s ease,border-color .2s ease;
+  }
+  #temporadas .season-month:hover{
+    box-shadow:0 5px 18px rgba(16,42,51,.07);
+    border-right-color:#abbfc4;
+    border-bottom-color:#abbfc4;
+    border-left-color:#abbfc4;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #temporadas .season-month{transition:none}
+}
+
+/* Mapa del viaje: misma sombra discreta de Temporadas en sección y ciudades. */
+@media(hover:hover) and (pointer:fine){
+  .trip-map-section{
+    transition:box-shadow .2s ease,border-color .2s ease;
+  }
+  .trip-map-section:hover{
+    box-shadow:0 5px 18px rgba(16,42,51,.07);
+    border-color:#abbfc4;
+  }
+  .trip-map-section .trip-map-cities .map-city-list .map-city-select,
+  .trip-map-section .trip-map-cities .map-city-list a{
+    transition:box-shadow .2s ease,border-color .2s ease,background-color .18s ease;
+  }
+  .trip-map-section .trip-map-cities .map-city-list .map-city-select:hover,
+  .trip-map-section .trip-map-cities .map-city-list a:hover{
+    box-shadow:0 5px 18px rgba(16,42,51,.07);
+    border-color:#abbfc4;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .trip-map-section,
+  .trip-map-section .trip-map-cities .map-city-list .map-city-select,
+  .trip-map-section .trip-map-cities .map-city-list a{transition:none}
+}
+
+/* Hero de viaje: fundidos fotográficos con zoom alternado de 4 segundos. */
+.triphero-split .triphero-split-photo .triphero-slide{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:center 28%;filter:none;opacity:0;pointer-events:none;
+  transition:opacity .7s ease-in-out;will-change:opacity,transform;
+}
+.triphero-split .triphero-split-photo .triphero-slide.is-visible{opacity:1}
+@keyframes atlas-hero-zoom-in{from{transform:scale(1)}to{transform:scale(1.065)}}
+@keyframes atlas-hero-zoom-out{from{transform:scale(1.065)}to{transform:scale(1)}}
+.triphero-split .triphero-split-photo .triphero-zoom-in{animation:atlas-hero-zoom-in 4s linear both}
+.triphero-split .triphero-split-photo .triphero-zoom-out{animation:atlas-hero-zoom-out 4s linear both}
+@media(max-width:680px){
+ .triphero-split .triphero-split-photo .triphero-slide{object-position:center 25%}
+}
+@media(prefers-reduced-motion:reduce){
+ .triphero-split .triphero-split-photo .triphero-slide{display:none;transition:none;animation:none}
+ .triphero-split .triphero-split-photo .triphero-zoom-in,
+ .triphero-split .triphero-split-photo .triphero-zoom-out{animation:none}
 }

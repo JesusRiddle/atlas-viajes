@@ -1,25 +1,27 @@
-# 🌍 Atlas de Viajes
+# Atlas de Viajes
 
-Sitio web personal para explorar, organizar y comparar opciones de viaje, con itinerarios detallados, destinos, actividades, presupuestos estimados y recomendaciones.
+Sitio de itinerarios y presupuestos: **https://jesusriddle.github.io/atlas-viajes/**. HTML, CSS, JavaScript y JSON; publicado con GitHub Pages.
 
-El objetivo es facilitar la planificación de viajes, reuniendo en un solo lugar la información necesaria para evaluar diferentes destinos y elegir la mejor experiencia.
+## Crear un viaje nuevo
 
-## 🔗 Sitio web
+Crear un borrador vacío desde la raíz del repositorio:
 
-**[Ver Atlas de Viajes](https://jesusriddle.github.io/atlas-viajes/)**
+```bash
+node scripts/new-trip.cjs mi-viaje "Nombre del viaje"
+```
 
-## ✨ Características
+El comando crea `data/trips/mi-viaje.json` y registra el viaje en `modules.js` con `available: false` (oculto). Rechaza IDs repetidos. **No lee, copia ni modifica viajes antiguos.**
 
-- Itinerarios organizados por días.
-- Presupuestos y comparativas entre destinos.
-- Información sobre lugares de interés, actividades y experiencias.
-- Mapas, fotografías y enlaces útiles.
-- Diseño adaptable a dispositivos móviles y computadoras.
+Completar progresivamente el JSON siguiendo [`_template.json`](data/trips/_template.json) y el [contrato de datos](docs/trip-data-contract.md). `null`, campos omitidos y listas vacías indican pendientes; nunca usar `0` para un precio desconocido. El modelo visual es **Emilia-Romagna** y sus nueve secciones, no sus datos.
 
-## 🛠️ Tecnologías
+Si buscas inspiración en un viaje antiguo, proporciona su JSON a la IA como **contexto** y decide junto con ella, campo por campo, qué añadir al JSON nuevo. No existe ninguna migración automática. Tras verificar Desktop/Mobile, activar el registro con `available: true`.
 
-HTML, CSS y JavaScript, con publicación mediante GitHub Pages.
+## Probar localmente
 
----
+```bash
+python3 -m http.server 8765
+# Abrir http://localhost:8765/
+node --test tests/*.test.cjs
+```
 
-Proyecto personal en constante actualización.
+No abrir `index.html` mediante `file://`; los JSON se obtienen con `fetch`. GitHub Actions también comprueba sintaxis, JSON y pruebas de navegador Desktop/Mobile con Chromium. Los cambios se hacen en una branch de trabajo; **no fusionar a `main` sin autorización**.

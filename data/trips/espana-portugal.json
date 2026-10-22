@@ -1,0 +1,914 @@
+{
+  "id": "espana-portugal",
+  "name": "España + Portugal: arte, Al-Ándalus y Lisboa",
+  "flag": "🇪🇸🇵🇹",
+  "start": "2026-11-21",
+  "end": "2026-12-06",
+  "tag": "DOS PAÍSES, CINCO BASES, CERO RELLENO",
+  "work": 10,
+  "intro": "De los atardeceres de Madrid al románico de Zamora y las siluetas de Segovia; de los palacios de Sintra a los patios de Al-Ándalus y las formas de Gaudí y Dalí. Dieciséis días enlazan España y Portugal con cinco bases estratégicas, excursiones sin equipaje y una jornada completa para descubrir Zamora con el tiempo que merece. Es una ruta intensa: concentra grandes visitas y aprovecha vuelos directos para salvar las distancias más largas.",
+  "routeCities": [
+    "Madrid",
+    "Zamora",
+    "Toledo",
+    "Segovia",
+    "Lisboa",
+    "Sintra",
+    "Sevilla",
+    "Córdoba",
+    "Granada",
+    "Barcelona",
+    "Figueres"
+  ],
+  "bases": [
+    [
+      "Madrid",
+      4
+    ],
+    [
+      "Lisboa",
+      3
+    ],
+    [
+      "Sevilla",
+      2
+    ],
+    [
+      "Granada",
+      2
+    ],
+    [
+      "Barcelona",
+      3
+    ]
+  ],
+  "flight": "Aeroméxico internacional multidestino · referencia confirmada aportada por el viajero: AM21 · 21 nov · Ciudad de México (MEX) 22:05 → Madrid (MAD) 15:40 del domingo 22 · directo · 10 h 35 min · Boeing 787. AM38 · 6 dic · Barcelona (BCN) 13:45 → Ciudad de México (MEX) 19:40 · directo · 12 h 55 min · Boeing 787-9. Horas locales. Total cotizado: $18,977.46 MXN, con aumento de equipaje de mano a 15 kg en ambos vuelos. La cotización no acredita por sí sola la emisión de billetes.\n\nTAP · vuelos seleccionados: TP1013 · 26 nov · Madrid (MAD) 12:10 → Lisboa (LIS) 12:30 · directo · 1 h 20 min. TP1104 · 29 nov · Lisboa (LIS) 13:20 → Sevilla (SVQ) 15:20 · directo · 1 h. Portugal tiene una hora menos que España peninsular: las horas locales no equivalen a la duración del vuelo.\n\nCotización conjunta TAP: €213.25 por ambos vuelos con los extras seleccionados. La tarifa base permite 10 kg de cabina y se añadió la opción de equipaje correspondiente; comprueba en el desglose la pieza y modalidad contratadas. El importe se conserva en euros: su equivalente en MXN depende del tipo de cambio aplicado.\n\n3 dic · vuelo directo Granada → Barcelona · horario por confirmar. Vueling publica la ruta, pero no se ha verificado un servicio concreto para ese día. Preferir mañana o mediodía para conservar una tarde útil. Número de vuelo, tarifa y equipaje pendientes; no reservar una entrada rígida al llegar hasta confirmar el horario.",
+  "local": "Zamora, Toledo y Segovia son excursiones de ida y vuelta desde Madrid; Sintra desde Lisboa y Figueres desde Barcelona. Córdoba se visita en ruta Sevilla → Córdoba → Granada, con equipaje en consigna durante el paseo y sin regresar a Sevilla.\n\nZamora: alta velocidad desde Madrid-Chamartín, aproximadamente 1 h–1 h 10 por sentido en servicios rápidos. Toledo: Avant desde Madrid-Puerta de Atocha, unos 30–35 min; acceso al casco histórico por Safont / Granadal y sus escaleras mecánicas.\n\nSegovia: AVE/Avant desde Madrid-Chamartín Clara Campoamor hasta Segovia-Guiomar, aproximadamente 25–30 min por sentido. Conexión urbana en bus 11/12 o taxi; confirma parada y recorrido vigentes. Regreso a Madrid para dormir en el mismo hotel; el vuelo a Lisboa sale al día siguiente.\n\nSintra: tren desde Lisboa-Rossio, unos 40 min por sentido, más transporte local a Pena. Figueres: Barcelona-Sants → Figueres-Vilafant, unos 45–60 min según servicio, más acceso al Teatre-Museu Dalí.\n\n1 dic · Sevilla → Córdoba + Córdoba → Granada: horario ferroviario por confirmar. Renfe publica ambas rutas; no se ha podido verificar una combinación concreta para el 1 de diciembre de 2026. Confirmar salida temprana, continuación a última hora de la tarde y consigna segura cerca de la estación, incluidos sus horarios de recogida, antes de comprar entradas. No se presupone que la estación disponga de consigna.",
+  "climate": "Finales de noviembre y principios de diciembre invitan a alternar palacios, catedrales y cafés con paseos al aire libre. Lleva capas, abrigo ligero, impermeable y calzado cómodo para adoquines y cuestas. Madrid, Zamora, Toledo y Granada pueden sentirse especialmente frías al amanecer y de noche.\n\nLa luz se acaba temprano: prioriza jardines, miradores y el Duero antes del atardecer. En Sintra, deja margen para lluvia y desplazamientos lentos entre palacios.",
+  "solo": "Ritmo intenso: cuatro cambios de alojamiento, tres vuelos dentro de Europa y varias excursiones requieren preparar billetes y horarios con antelación. Conserva las noches de llegada para cenar y descansar.\n\nLleva entradas y billetes descargados. Para las cuestas de Toledo, Sintra o Granada puedes combinar caminatas con transporte local o taxi. Una recepción que guarde el equipaje es parte esencial de esta ruta.",
+  "profile": {
+    "pace": "Intenso",
+    "solo": "Fácil",
+    "weather": "Media",
+    "why": "Cinco bases conectan palacios, ciudades históricas y excursiones de día; la variedad exige madrugar y reservar las visitas principales.",
+    "soloWhy": "España y Portugal tienen buena infraestructura turística y gran parte del recorrido es sencilla en tren o vuelo directo, aunque cinco bases y varios cambios requieren organización.",
+    "weatherWhy": "La lluvia puede afectar especialmente Sintra, los miradores de Granada, Zamora y algunas visitas exteriores de Barcelona, pero la mayoría de los atractivos principales tiene alternativas interiores."
+  },
+  "experiences": [
+    "El románico de Zamora y un paseo junto al Duero con tiempo propio.",
+    "Palacios de Sintra entre jardines, escalinatas y bosque.",
+    "Patios del Alcázar, la Mezquita de Córdoba y arte nazarí en la Alhambra.",
+    "Pastéis en Belém, una noche por Alfama y flamenco en Sevilla.",
+    "Las formas de Gaudí en Barcelona y el universo de Dalí en Figueres."
+  ],
+  "costs": [
+    [
+      "Aeroméxico multidestino · cotización con cabina de 15 kg",
+      18977.46,
+      18977.46
+    ],
+    [
+      "14 noches en habitación privada · provisión pendiente de recotizar",
+      20000,
+      29000
+    ],
+    [
+      "Vuelos europeos · TAP €213.25 + Granada–Barcelona por cotizar",
+      null,
+      null
+    ],
+    [
+      "Trenes, traslados y transporte urbano",
+      7000,
+      10000
+    ],
+    [
+      "Comidas · 16 días · provisión por revisar",
+      8000,
+      11000
+    ],
+    [
+      "Entradas principales y flamenco",
+      7000,
+      10000
+    ],
+    [
+      "Seguro y reserva para imprevistos",
+      4000,
+      7000
+    ]
+  ],
+  "tips": [
+    "Presupuesto global preliminar conservado: $70,000–$105,000 MXN por persona. No es una nueva suma de las partidas: falta recotizar 14 noches, ajustar comidas y confirmar Granada–Barcelona. No es una oferta disponible.",
+    "Aeroméxico: $18,977.46 MXN. TAP: €213.25 por los dos vuelos con extras seleccionados, sin conversión fija a pesos. Cotizaciones aportadas por el viajero, sujetas a las condiciones finales.",
+    "Prioriza hotel o aparthotel con recepción, ascensor y custodia de equipaje. Para Córdoba, verifica y reserva una consigna segura cerca de la estación, con recogida compatible con el tren a Granada.",
+    "Reserva la Alhambra para la mañana del 2 de diciembre, con hora de Palacios Nazaríes. El vuelo a Barcelona queda para el día siguiente.",
+    "Sintra: sólo Pena y Regaleira como grandes interiores. Reserva con margen para transporte, comida, lluvia y niebla.",
+    "16 días naturales y 10 días laborales / 10 días de vacaciones. Si eliges únicamente esta opción, de 22 días quedan 12 disponibles.",
+    "Zamora conserva un día completo por su significado personal y su vínculo con Zamora, Michoacán.",
+    "En Barcelona prioriza Sagrada Família, Sant Pau y Park Güell con reservas separadas. Casa Batlló al llegar sólo si se confirma el vuelo temprano; de lo contrario, el día 14 según margen y energía.",
+    "Barcelona: las paradas breves de Boqueria y Arc de Triomf/Ciutadella dependen del vuelo, los trenes y la luz; no recortar las visitas principales. Casa Batlló conserva su alternativa de fachada gratuita. Las excursiones y paseos opcionales indican qué bloque sustituyen, no se acumulan al plan base. Conversión orientativa de las nuevas opciones: €1 = $20.60 MXN, consulta del 15 oct 2026; el cargo real depende del banco."
+  ],
+  "sources": [
+    [
+      "Renfe · Madrid–Zamora y estación de salida",
+      "https://www.renfe.com/es/es/inspirate/rutas/madrid-zamora"
+    ],
+    [
+      "Renfe · trenes y reservas",
+      "https://www.renfe.com/"
+    ],
+    [
+      "Alhambra · visita general y horarios",
+      "https://www.alhambra-patronato.es/visita/alhambra-y-generalife-visita-diurna-general"
+    ],
+    [
+      "Vueling · Granada–Barcelona",
+      "https://www.vueling.com/es/vuelos-baratos-de-granada-a-barcelona"
+    ],
+    [
+      "TAP · Lisboa–Sevilla",
+      "https://www.flytap.com/es_es/vuelos-desde-lisboa-a-sevilla"
+    ],
+    [
+      "Teatro-Museo Dalí · visita oficial",
+      "https://www.salvador-dali.org/es/visita/teatro-museo-dali/"
+    ],
+    [
+      "Parques de Sintra · Palacio da Pena",
+      "https://www.parquesdesintra.pt/"
+    ],
+    [
+      "Quinta da Regaleira · información y entradas",
+      "https://www.regaleira.pt/"
+    ],
+    [
+      "Real Alcázar de Sevilla",
+      "https://www.alcazarsevilla.org/"
+    ],
+    [
+      "Sagrada Família · entradas",
+      "https://sagradafamilia.org/"
+    ],
+    [
+      "Iberia · vuelos multidestino",
+      "https://www.iberia.com/"
+    ],
+    [
+      "Aeroméxico · vuelos",
+      "https://www.aeromexico.com/"
+    ],
+    [
+      "Segovia · autobuses urbanos y taxis",
+      "https://www.turismodesegovia.com/es/moverse-por-la-ciudad"
+    ],
+    [
+      "Segovia · Pradera de San Marcos y valle del Clamores",
+      "https://www.turismodesegovia.com/es/turismo-de-naturaleza/rutas/el-valle-del-clamores"
+    ],
+    [
+      "Toledo · acceso por Safont / Granadal",
+      "https://turismo.toledo.es/prepara-tu-viaje/preguntas-frecuentes.html"
+    ],
+    [
+      "Iberia · Madrid–Lisboa",
+      "https://www.iberia.com/es/vuelos-baratos/Madrid-Lisboa/"
+    ],
+    [
+      "Renfe · Sevilla–Córdoba",
+      "https://www.renfe.com/es/es/experiencias/rutas/sevilla-cordoba"
+    ],
+    [
+      "Renfe · Córdoba–Granada",
+      "https://www.renfe.com/es/es/inspirate/rutas/cordoba-granada"
+    ],
+    [
+      "Catedral de Sevilla · horarios",
+      "https://www.catedraldesevilla.es/visita-cultural/horarios-y-tarifas/"
+    ],
+    [
+      "Pena · horarios y entrada con hora",
+      "https://www.parquesdesintra.pt/en/parks-monuments/park-and-national-palace-of-pena/essential-visit/"
+    ],
+    [
+      "Regaleira · horarios y reservas",
+      "https://www.regaleira.pt/pt/visitas"
+    ],
+    [
+      "MNAC · horarios y gratuidad",
+      "https://www.museunacional.cat/es/horarios-y-precios"
+    ],
+    [
+      "Bus Nàutic · tarifas",
+      "https://www.busnautic.es/tarifas"
+    ],
+    [
+      "Turó de la Rovira · horario y acceso",
+      "https://guia.barcelona.cat/es/detall/turo-de-la-rovira-museu-d-historia-de-barcelona_99400267435.html"
+    ],
+    [
+      "Boqueria · horarios",
+      "https://www.boqueria.barcelona/contacto"
+    ],
+    [
+      "Salts Montjuïc · apertura y carta",
+      "https://www.saltsmontjuic.com/"
+    ],
+    [
+      "TKO Tacos · Barcelona",
+      "https://tkotacos.com/taqueria-mexicana/restaurantes/donde-comer/barcelona/"
+    ],
+    [
+      "Mirador Torre Glòries · condiciones",
+      "https://www.miradortorreglories.com/preguntas-frecuentes/"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-11-21",
+      "title": "salida hacia Madrid",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Prepara documentación y equipaje de mano de hasta 15 kg según la tarifa configurada.",
+      "pm": "Traslado a MEX con aproximadamente tres horas de anticipación: llegada objetivo al aeropuerto hacia las 19:05.",
+      "night": "AM21 · salida MEX 22:05 hacia Madrid. No se programan visitas.",
+      "mobility": "Directo · 10 h 35 min · Boeing 787. Llegada a MAD el domingo 22 a las 15:40, hora local.",
+      "spend": 650,
+      "note": "Referencia de vuelo aportada por el viajero. Primera noche de hotel: 22 de noviembre.",
+      "city": "Ciudad de México",
+      "headerPlaces": [
+        "MEX → MAD · Aeroméxico AM21"
+      ]
+    },
+    {
+      "n": 2,
+      "date": "2026-11-22",
+      "title": "llegada y primera tarde/noche",
+      "base": "Madrid",
+      "places": [
+        "debod-madrid"
+      ],
+      "am": "En vuelo hacia Madrid.",
+      "pm": "Llegada MAD 15:40. Inmigración, equipaje, traslado al hotel y check-in antes de salir a pasear.",
+      "night": "Plaza de España, Gran Vía y paseo nocturno por el centro histórico según energía. Cena cerca del hotel.",
+      "mobility": "MAD → centro en transporte público o taxi; calcula aproximadamente 40–60 minutos, según terminal y alojamiento. Combina metro y caminata para el parque.",
+      "spend": 900,
+      "note": "Templo de Debod y memorial de La Veneno, en Parque del Oeste, sólo si la llegada real y la energía lo permiten; de lo contrario, moverlos a una noche posterior tras las excursiones. Debod se plantea por el exterior.",
+      "city": "Madrid",
+      "headerPlaces": [
+        "Plaza de España",
+        "Gran Vía",
+        "centro histórico",
+        "Debod / La Veneno (flexible)"
+      ]
+    },
+    {
+      "n": 3,
+      "date": "2026-11-23",
+      "title": "románico, Duero y casco histórico",
+      "base": "Madrid",
+      "places": [
+        "zamora-cathedral",
+        "zamora-duero"
+      ],
+      "am": "Tren de alta velocidad directo desde Madrid-Chamartín. Desde la estación, traslado al casco histórico: Plaza Mayor y patrimonio románico, deteniéndote en las iglesias que estén abiertas.",
+      "pm": "Catedral, castillo, Portillo de la Lealtad, miradores y paseo junto al Duero. Deja tiempo para comer y disfrutar esta visita de especial significado personal.",
+      "night": "Regreso en tren a Madrid para dormir en el mismo hotel.",
+      "mobility": "Madrid-Chamartín → Zamora en alta velocidad: aproximadamente 1 h–1 h 10 por sentido en los servicios rápidos. Añade el acceso a Chamartín y unos 20–35 minutos entre la estación de Zamora y el casco histórico, a pie o en taxi.",
+      "spend": 1700,
+      "note": "Jornada de especial significado por el vínculo con Zamora, Michoacán. Al ser lunes, confirma los interiores abiertos; conserva casco histórico, entorno del Castillo y Duero como recorrido principal.",
+      "city": "Zamora (excursión desde Madrid)",
+      "headerPlaces": [
+        "casco histórico",
+        "Catedral",
+        "Castillo",
+        "románico",
+        "miradores del Duero"
+      ]
+    },
+    {
+      "n": 4,
+      "date": "2026-11-24",
+      "title": "tres culturas, Catedral y Judería",
+      "base": "Madrid",
+      "places": [
+        "mirador-valle-toledo",
+        "toledo-cathedral",
+        "toledo",
+        "san-juan-reyes-toledo"
+      ],
+      "am": "Salida desde Madrid-Puerta de Atocha en tren Avant a Toledo, unos 30–35 minutos. Desde la estación camina hacia Safont / Granadal y utiliza las escaleras mecánicas de Safont para subir al casco histórico evitando la subida completa a pie. Empieza por Zocodover y el exterior del Alcázar.",
+      "pm": "Visita la Catedral y continúa por el barrio judío hacia San Juan de los Reyes. Santo Tomé puede añadirse si encaja con el tiempo disponible. El Mirador del Valle queda como opción final si el horario permite, preferentemente en taxi por estar fuera del casco histórico.",
+      "night": "Tren Avant de regreso a Madrid y noche en el mismo hotel.",
+      "mobility": "Madrid-Puerta de Atocha → Toledo: Avant, aproximadamente 30–35 minutos por sentido. Desde la estación, sigue a pie hacia Safont / Granadal y sus escaleras mecánicas; todavía habrá tramos de caminata y adoquines. Para el Mirador del Valle usa taxi y acuerda el regreso con margen para el tren.",
+      "spend": 1700,
+      "note": "Reserva el tren de regreso. Zocodover, exterior del Alcázar, Catedral, barrio judío y San Juan de los Reyes forman el recorrido principal; Santo Tomé y Mirador del Valle dependen del tiempo disponible.",
+      "optionalPlaces": [
+        "mirador-valle-toledo"
+      ],
+      "city": "Toledo (excursión desde Madrid)",
+      "headerPlaces": [
+        "Zocodover",
+        "Catedral",
+        "Santo Tomé / El Greco",
+        "Judería",
+        "San Juan de los Reyes",
+        "Mirador del Valle (según luz)"
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2026-11-25",
+      "title": "Acueducto, Catedral, Alcázar y Pradera de San Marcos",
+      "base": "Madrid",
+      "places": [
+        "segovia-aqueduct",
+        "segovia-alcazar",
+        "segovia-pradera-san-marcos"
+      ],
+      "am": "AVE/Avant desde Madrid-Chamartín a Segovia-Guiomar. Conexión al centro en bus 11/12 o taxi. Acueducto, casco histórico y Catedral.",
+      "pm": "Visita al Alcázar y fotografía desde Pradera de San Marcos, aprovechando la luz. Regreso a Madrid sin cambiar de hotel.",
+      "night": "Cena en Madrid. Si quedaron pendientes y hay energía, paseo exterior por Debod y Parque del Oeste / memorial de La Veneno.",
+      "mobility": "Madrid-Chamartín ↔ Segovia-Guiomar: aproximadamente 25–30 min por sentido. Añade transporte urbano y esperas. Desde la pradera, taxi a Guiomar si evita rehacer la subida.",
+      "spend": 1300,
+      "note": "No hay vuelo ni check-out este día. Confirma horarios de interiores, bus y tren de regreso; aprovecha la luz para la pradera.",
+      "city": "Segovia (excursión desde Madrid)",
+      "headerPlaces": [
+        "Acueducto",
+        "casco histórico",
+        "Catedral",
+        "Alcázar",
+        "Pradera de San Marcos"
+      ]
+    },
+    {
+      "n": 6,
+      "date": "2026-11-26",
+      "title": "vuelo de mediodía y primera tarde portuguesa",
+      "base": "Lisboa",
+      "places": [
+        "baixa-lisbon",
+        "chiado"
+      ],
+      "am": "Check-out en Madrid y traslado a MAD con la antelación indicada por TAP. TP1013: salida 12:10.",
+      "pm": "Llegada LIS 12:30, hora portuguesa. Traslado al hotel, dejar equipaje y check-in cuando esté disponible. Paseo compacto por Baixa, Praça do Comércio y Chiado.",
+      "night": "Mirador y cena según energía, sin acumular interiores.",
+      "mobility": "TAP TP1013 · MAD 12:10 → LIS 12:30 · directo · duración real 1 h 20 min. Lisboa tiene una hora menos que Madrid.",
+      "spend": null,
+      "note": "Horario seleccionado aportado por el viajero. Evita reservar una entrada rígida después del vuelo.",
+      "city": "Madrid → Lisboa",
+      "headerPlaces": [
+        "Baixa",
+        "Praça do Comércio",
+        "Chiado",
+        "mirador"
+      ]
+    },
+    {
+      "n": 7,
+      "date": "2026-11-27",
+      "title": "Belém, Alfama y miradores",
+      "base": "Lisboa",
+      "places": [
+        "jeronimos",
+        "discoveries-monument",
+        "belem",
+        "alfama"
+      ],
+      "am": "Belém: visita al Monasterio de los Jerónimos, parada en Pastéis de Belém y paseo por el Monumento a los Descubrimientos y el exterior de la Torre de Belém.",
+      "pm": "Alfama y miradores. Castelo de São Jorge sólo si los horarios y la energía lo permiten.",
+      "night": "Cena y paseo breve antes de volver al mismo hotel.",
+      "mobility": "Tranvía, tren urbano o taxi hacia Belém; el resto combina transporte urbano y caminatas. Belém no queda junto al centro histórico.",
+      "spend": 1600,
+      "note": "Museu Nacional do Azulejo puede sustituir parte del recorrido con lluvia si está abierto; no se añade como obligación. Torre de Belém por el exterior si continúa cualquier limitación de acceso.",
+      "city": "Lisboa",
+      "headerPlaces": [
+        "Mosteiro dos Jerónimos",
+        "Belém",
+        "Torre de Belém (exterior)",
+        "Pastéis de Belém",
+        "Alfama",
+        "miradores"
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2026-11-28",
+      "title": "Palacio da Pena, Quinta da Regaleira, Boca do Inferno y Cascais",
+      "base": "Lisboa",
+      "places": [
+        "pena",
+        "regaleira"
+      ],
+      "am": "Salida desde Lisboa en una excursión organizada de día completo. Visita al Palacio da Pena con entrada incluida en la variante recomendada y tiempo libre en el centro histórico de Sintra para pasear y hacer una pausa.",
+      "pm": "Quinta da Regaleira, con entrada incluida y recorrido por sus jardines y el Poço Iniciático según las condiciones de acceso. Continuación hacia Boca do Inferno y tiempo libre en Cascais para disfrutar la costa sin añadir interiores extra.",
+      "night": "Regreso organizado a Lisboa y descanso en el mismo alojamiento.",
+      "mobility": "Traslados organizados desde y hacia Lisboa y entre las paradas del tour. Transporte y entradas a Pena y Regaleira se coordinan con el operador al contratar la variante indicada; confirmar punto de encuentro y horario para el 28 de noviembre.",
+      "spend": 2000,
+      "note": "Variante recomendada: Palacio da Pena + Quinta da Regaleira, además de Boca do Inferno y Cascais, con tiempo libre en el centro histórico de Sintra. Excursión de día completo: aprovecha las pausas y evita interiores adicionales para mantener un ritmo cómodo. No añadir Monserrate al plan base. El orden y el tiempo en cada parada dependen del operador y del clima; confirmar disponibilidad, inclusiones y condiciones antes de reservar. Tour de referencia, no reserva confirmada.",
+      "city": "Sintra + costa de Cascais (excursión desde Lisboa)",
+      "headerPlaces": [
+        "Palacio da Pena",
+        "centro histórico de Sintra",
+        "Quinta da Regaleira",
+        "Poço Iniciático",
+        "Boca do Inferno",
+        "Cascais"
+      ],
+      "noteLink": {
+        "label": "Tour recomendado: Excursión de 1 día a Sintra, Pena, Regaleira, Boca do Inferno y Cascais",
+        "url": "https://www.getyourguide.com/es-mx/lisboa-l42/desde-lisboa-excursion-de-1-dia-a-sintra-pena-regaleira-y-cascais-t1351048/"
+      }
+    },
+    {
+      "n": 9,
+      "date": "2026-11-29",
+      "title": "vuelo de mediodía y primera tarde andaluza",
+      "base": "Sevilla",
+      "places": [
+        "plazaespana",
+        "maria-luisa",
+        "santa-cruz-seville"
+      ],
+      "am": "Check-out en Lisboa y traslado a LIS con la antelación exigida por TAP.",
+      "pm": "TP1104 · LIS 13:20 → SVQ 15:20. Traslado al hotel y check-in. Plaza de España y Parque de María Luisa sólo si todavía hay luz y margen real.",
+      "night": "Santa Cruz, paseo central y tapas tras el anochecer.",
+      "mobility": "TAP TP1104 · directo · duración real 1 h. Al pasar de Portugal a España adelantas el reloj una hora. Desde SVQ, bus de aeropuerto o taxi.",
+      "spend": 1100,
+      "note": "No fijar una visita con entrada rígida inmediatamente después del vuelo. Si la llegada se retrasa, acorta el paseo.",
+      "city": "Lisboa → Sevilla",
+      "headerPlaces": [
+        "Plaza de España (según luz)",
+        "Parque de María Luisa (según luz)",
+        "Santa Cruz"
+      ]
+    },
+    {
+      "n": 10,
+      "date": "2026-11-30",
+      "title": "Real Alcázar, Catedral, Giralda y noche flamenca",
+      "base": "Sevilla",
+      "places": [
+        "alcazar",
+        "catedral",
+        "santa-cruz-seville",
+        "triana"
+      ],
+      "am": "Real Alcázar con entrada reservada por la mañana; disfruta sus patios y jardines sin añadir visitas antes.",
+      "pm": "Catedral y Giralda con margen después del Alcázar; paseo por Santa Cruz. Triana o ribera sólo según ritmo.",
+      "night": "Flamenco con reserva, cena y regreso al hotel.",
+      "mobility": "Recorrido principalmente a pie; usa tranvía o taxi si quieres reducir caminata entre el conjunto monumental y el parque.",
+      "spend": 2300,
+      "note": "Reserva Alcázar y Catedral con margen para comer. No se fijan horas de entrada: confirmar calendarios oficiales del lunes 30 de noviembre antes de comprar. Flamenco con reserva.",
+      "city": "Sevilla",
+      "headerPlaces": [
+        "Real Alcázar",
+        "Catedral",
+        "Giralda",
+        "Santa Cruz",
+        "Triana / ribera (según ritmo)",
+        "flamenco"
+      ]
+    },
+    {
+      "n": 11,
+      "date": "2026-12-01",
+      "title": "Mezquita-Catedral, Judería y puente romano",
+      "base": "Granada",
+      "places": [
+        "cordoba",
+        "juderia-cordoba",
+        "roman-bridge-cordoba"
+      ],
+      "am": "Check-out temprano en Sevilla y tren a Córdoba. Deja el equipaje en una consigna segura reservada cerca de la estación antes de visitar la Mezquita-Catedral.",
+      "pm": "Judería, Calleja de las Flores y Puente Romano. Alcázar de los Reyes Cristianos sólo si encaja sin prisas. Recoge el equipaje antes del cierre de la consigna.",
+      "night": "Continuación en tren Córdoba → Granada a última hora de la tarde, según horario disponible, y check-in en Granada. No regresar a Sevilla.",
+      "mobility": "Sevilla → Córdoba + Córdoba → Granada · horario ferroviario por confirmar para el 1 de diciembre de 2026. Renfe publica ambos trayectos, pero no se ha verificado una combinación concreta para esta fecha.",
+      "spend": 1800,
+      "note": "Confirmar ambos billetes, tiempo útil de visita y horario de consigna como un conjunto antes de comprar entradas. No se dan números de tren ni horas sin verificar.",
+      "city": "Córdoba (visita en ruta hacia Granada)",
+      "headerPlaces": [
+        "Mezquita-Catedral",
+        "Judería",
+        "Calleja de las Flores",
+        "Puente Romano"
+      ]
+    },
+    {
+      "n": 12,
+      "date": "2026-12-02",
+      "title": "Alhambra, Albaicín y Mirador de San Nicolás",
+      "base": "Granada",
+      "places": [
+        "alhambra",
+        "albaicin",
+        "san-nicolas-granada"
+      ],
+      "am": "Mañana completa en la Alhambra: Palacios Nazaríes, Alcazaba y Generalife. Reserva el horario de Palacios Nazaríes y llega con margen.",
+      "pm": "Pausa para comer. Carrera del Darro, Albaicín y Mirador de San Nicolás aprovechando la luz y el atardecer.",
+      "night": "Cena y descanso en el mismo hotel de Granada.",
+      "mobility": "Autobús local o taxi para las subidas; paseos por el Albaicín a ritmo cómodo. Sin aeropuerto ni cambio de alojamiento este día.",
+      "spend": 1900,
+      "note": "Dedica unas 3–4 h al conjunto de la Alhambra y ajusta el paseo a tu energía. No acumules más interiores.",
+      "city": "Granada",
+      "headerPlaces": [
+        "Alhambra",
+        "Palacios Nazaríes",
+        "Alcazaba",
+        "Generalife",
+        "Carrera del Darro",
+        "Albaicín",
+        "Mirador de San Nicolás"
+      ]
+    },
+    {
+      "n": 13,
+      "date": "2026-12-03",
+      "title": "traslado aéreo y primera tarde catalana",
+      "base": "Barcelona",
+      "places": [
+        "gotico",
+        "born-barcelona"
+      ],
+      "am": "Check-out y traslado a GRX. Buscar vuelo directo de mañana o mediodía hacia Barcelona; horario por confirmar.",
+      "pm": "Traslado desde BCN al hotel y check-in. Barrio Gótico y Born según hora real de llegada. Integra una parada breve en Mercat de la Boqueria dentro del paseo por La Rambla, sin reservar una visita adicional: entrada gratuita, compras aparte; horario publicado de lunes a sábado, 08:00–20:30. Si el vuelo deja poco tiempo, pasa la parada al regreso de Figueres, sin recortar Dalí.",
+      "night": "Casa Batlló sólo si se confirma una llegada suficientemente temprana y queda margen; de lo contrario, trasladarla al día 14. Cena cercana.",
+      "mobility": "Vuelo directo Granada → Barcelona · horario por confirmar para el 3 de diciembre. No se ha confirmado número, precio ni equipaje. Añade trayectos hotel–aeropuerto y antelación de embarque.",
+      "spend": null,
+      "note": "No fijar entradas rígidas esta tarde hasta confirmar el vuelo. Si llega tarde, conserva sólo un paseo breve. TKO Tacos queda como alternativa para una comida o cena ya prevista, no como traslado especial: tacos desde €1 (aprox. $21 MXN), según producto y carta vigente; bebidas y otros platos aparte.",
+      "city": "Granada → Barcelona",
+      "headerPlaces": [
+        "Boqueria (parada breve, según llegada)",
+        "Barrio Gótico",
+        "Born",
+        "paseo central",
+        "Casa Batlló (condicionada)"
+      ]
+    },
+    {
+      "n": 14,
+      "date": "2026-12-04",
+      "title": "Gaudí y modernismo",
+      "base": "Barcelona",
+      "places": [
+        "sagrada",
+        "santpau",
+        "guell",
+        "passeig-gracia",
+        "batllo"
+      ],
+      "am": "Sagrada Família con entrada de mañana y continuación al Recinto Modernista de Sant Pau.",
+      "pm": "Park Güell con luz natural y margen para transporte y comida. Después, Passeig de Gràcia y exterior de Casa Milà.",
+      "night": "Casa Batlló si quedó pendiente y cabe con margen; de lo contrario, disfrutar su fachada y cenar por el Eixample.",
+      "mobility": "Combina metro, autobús y caminata; Park Güell está en una zona elevada. Deja margen entre entradas para transporte y comida.",
+      "spend": 2400,
+      "note": "Escalona Sagrada Família, Sant Pau y Park Güell. No reserves cuatro entradas consecutivas sin margen. Casa Batlló requiere ajustar el resto del día si deseas entrar.",
+      "city": "Barcelona",
+      "headerPlaces": [
+        "Sagrada Família",
+        "Sant Pau",
+        "Park Güell",
+        "Passeig de Gràcia",
+        "Casa Batlló",
+        "Casa Milà (exterior)"
+      ]
+    },
+    {
+      "n": 15,
+      "date": "2026-12-05",
+      "title": "Teatre-Museu Dalí y despedida catalana",
+      "base": "Barcelona",
+      "places": [
+        "dali-figueres",
+        "gotico",
+        "born-barcelona"
+      ],
+      "am": "Alta velocidad desde Barcelona-Sants a Figueres-Vilafant y traslado al Teatro-Museo Dalí. Dedica la mañana y, si lo deseas, las primeras horas de la tarde a su universo surrealista.",
+      "pm": "Regreso a Barcelona a media tarde cuando el horario ferroviario lo permita. Completa Gòtic y Born pendientes. Como extensión breve del paseo del Born, incorpora Arc de Triomf y Parc de la Ciutadella sólo si quedan luz y energía; acceso gratuito a los espacios exteriores, sin añadir zoo ni actividades de pago. Si ya anocheció o el regreso se retrasa, conserva el paseo original. Boqueria sólo si quedó pendiente y permite su horario, sin acelerar la visita a Dalí.",
+      "night": "Regreso a dormir en Barcelona, cena de despedida y preparación del equipaje para el vuelo.",
+      "mobility": "Barcelona-Sants → Figueres-Vilafant: tren de alta velocidad, aproximadamente 45–60 minutos por sentido, según servicio. Figueres-Vilafant no está junto al Teatro-Museo Dalí: añade autobús, taxi o unos 25–30 minutos a pie. Regreso a Barcelona-Sants.",
+      "spend": 1900,
+      "note": "Reserva Teatre-Museu Dalí como prioridad absoluta y coordina trenes con el acceso desde Figueres-Vilafant. Confirmar apertura y plazas para el sábado 5 de diciembre.",
+      "city": "Figueres (excursión desde Barcelona)",
+      "headerPlaces": [
+        "Teatre-Museu Dalí",
+        "Gòtic / Born al regreso",
+        "Arc de Triomf / Ciutadella (según luz y margen)"
+      ]
+    },
+    {
+      "n": 16,
+      "date": "2026-12-06",
+      "title": "regreso a Ciudad de México",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Desayuno, check-out y traslado a BCN para llegar aproximadamente a las 10:45, tres horas antes de la salida. No programar visitas con entrada.",
+      "pm": "Aeroméxico AM38 · BCN 13:45 → MEX 19:40 · directo · 12 h 55 min · Boeing 787-9.",
+      "night": "Llegada a Ciudad de México a las 19:40 del domingo 6 de diciembre, hora local.",
+      "mobility": "Hotel → BCN en transporte público o taxi; llega con unas tres horas de antelación al vuelo internacional.",
+      "spend": 700,
+      "note": "Referencia confirmada aportada por el viajero. Equipaje de mano configurado a 15 kg; comprobar condiciones finales del billete.",
+      "city": "Barcelona",
+      "headerPlaces": [
+        "BCN → MEX · Aeroméxico AM38"
+      ]
+    }
+  ],
+  "budgetRange": [
+    70000,
+    105000
+  ],
+  "cover": "zamora-duero",
+  "hotels": [],
+  "stays": [
+    [
+      "Madrid · 22–26 nov · 4 noches",
+      "Barrio de las Letras o Atocha; Zamora y Segovia salen de Chamartín. Conserva el mismo hotel durante las tres excursiones y haz check-out el 26 para el vuelo de mediodía."
+    ],
+    [
+      "Lisboa · 26–29 nov · 3 noches",
+      "Rossio, Baixa o Chiado; confirma ascensor y acceso sin escaleras con la maleta."
+    ],
+    [
+      "Sevilla · 29 nov–1 dic · 2 noches",
+      "Prado de San Sebastián, Puerta de la Carne o borde de Santa Cruz. Check-out temprano el 1 de diciembre para continuar vía Córdoba."
+    ],
+    [
+      "Granada · 1–3 dic · 2 noches",
+      "Centro, Realejo o Plaza Nueva; prioriza acceso cómodo con equipaje. La Alhambra se visita el día 2 y el vuelo a Barcelona se busca para el día 3."
+    ],
+    [
+      "Barcelona · 3–6 dic · 3 noches",
+      "Eixample o Passeig de Gràcia, con conexiones al aeropuerto y a Sants."
+    ],
+    [
+      "Equipaje y recepción",
+      "Prioriza hotel/aparthotel con recepción, ascensor y consigna. En Córdoba reserva custodia segura cerca de la estación y confirma recogida antes del tren a Granada."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Madrid",
+      "coords": [
+        40.4168,
+        -3.7038
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Zamora",
+      "coords": [
+        41.5033,
+        -5.7446
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "Toledo",
+      "coords": [
+        39.8628,
+        -4.0273
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 3
+    },
+    {
+      "name": "Segovia",
+      "coords": [
+        40.9429,
+        -4.1088
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Lisboa",
+      "coords": [
+        38.7223,
+        -9.1393
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 5
+    },
+    {
+      "name": "Sintra",
+      "coords": [
+        38.8029,
+        -9.3817
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Sevilla",
+      "coords": [
+        37.3891,
+        -5.9845
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 7
+    },
+    {
+      "name": "Córdoba",
+      "coords": [
+        37.8882,
+        -4.7794
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 8
+    },
+    {
+      "name": "Granada",
+      "coords": [
+        37.1773,
+        -3.5986
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 9
+    },
+    {
+      "name": "Barcelona",
+      "coords": [
+        41.3874,
+        2.1686
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 10
+    },
+    {
+      "name": "Figueres",
+      "coords": [
+        42.2666,
+        2.9614
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 11
+    }
+  ],
+  "sourceNote": "España + Portugal: propuesta revisada el 8 de octubre de 2026. Vuelos y cotizaciones aportados por el viajero. Horario ferroviario del 1 dic y vuelo Granada–Barcelona del 3 dic pendientes de confirmar. Presupuesto global preliminar conservado, sin recotizar hoteles.",
+  "budgetPreliminary": true,
+  "budgetNote": "TAP: €213.25 en total por ambos vuelos y extras seleccionados. Sin conversión fija a MXN. El rango global de $70,000–$105,000 se conserva como referencia preliminar y no es la suma actualizada de estas partidas: faltan recotizar alojamiento, comidas y Granada–Barcelona.",
+  "routeHighlights": true,
+  "boldCityNames": [
+    "Cascais"
+  ],
+  "emphasisStyle": true,
+  "placeDescriptions": {
+    "zamora-duero": "El Duero acompaña la silueta histórica de Zamora; sus riberas ofrecen perspectivas del casco antiguo y de la catedral.",
+    "debod-madrid": "Templo del antiguo Egipto reconstruido en Madrid, junto a un mirador ideal para empezar el viaje con un paseo al atardecer.",
+    "zamora-cathedral": "Catedral románica de Zamora, reconocible por su cimborrio de influencia bizantina y su torre de piedra.",
+    "mirador-valle-toledo": "Punto panorámico al otro lado del Tajo desde el que se aprecia el conjunto de Toledo. Su ubicación requiere un traslado adicional desde el casco histórico.",
+    "toledo-cathedral": "Gran catedral gótica del casco histórico de Toledo. Su arquitectura y sus colecciones hacen de ella una de las visitas principales de la excursión.",
+    "toledo": "Ciudad amurallada sobre el Tajo: catedral, callejuelas y herencia cristiana, judía e islámica. Conviene recorrerla a pie con pausas.",
+    "san-juan-reyes-toledo": "Monasterio de Toledo fundado por los Reyes Católicos, una de las grandes obras del gótico isabelino.",
+    "segovia-aqueduct": "La gran arquería romana marca la entrada al casco histórico de Segovia y ofrece la primera parada monumental de la excursión.",
+    "segovia-alcazar": "Detalle de la entrada y el foso del Alcázar de Segovia, antigua fortaleza y residencia real situada sobre un promontorio.",
+    "segovia-pradera-san-marcos": "Vista del Alcázar desde el entorno de la Pradera de San Marcos, la parada recomendada para fotografiar la silueta del castillo desde el valle.",
+    "baixa-lisbon": "Praça do Comércio, plaza monumental de Lisboa abierta al Tajo.",
+    "chiado": "Largo do Chiado, en el barrio histórico y comercial de Lisboa.",
+    "jeronimos": "Claustro y templo manuelinos de piedra tallada. Es la visita arquitectónica clave de Belém.",
+    "discoveries-monument": "Monumento a los Descubrimientos junto al Tajo, en Belém.",
+    "belem": "Torre de Belém, fortificación junto al Tajo y uno de los monumentos más conocidos de Lisboa. Su exterior forma parte del paseo; consulta por separado la disponibilidad del interior.",
+    "alfama": "Barrio de callejuelas y miradores en Lisboa. Combina caminata, tranvía cuando resulte práctico y una noche de fado.",
+    "pena": "Palacio romántico de colores en las montañas de Sintra. Reserva horario y cuenta tiempo para subir desde el pueblo.",
+    "regaleira": "Finca de jardines simbólicos, grutas y pozo iniciático. Se disfruta con tiempo y zapatos que no resbalen.",
+    "plazaespana": "Conjunto de ladrillo y azulejos de la exposición de 1929, con canales y bancos dedicados a provincias españolas.",
+    "maria-luisa": "Gran parque sevillano de senderos, estanques y jardines, junto a la Plaza de España. La imagen muestra la Isleta de los Patos, uno de sus rincones para detenerse a descansar.",
+    "santa-cruz-seville": "Barrio histórico de Sevilla formado por callejuelas, pequeñas plazas y casas con patios. El paseo permite disfrutar su arquitectura entre las grandes visitas monumentales.",
+    "alcazar": "Palacio vivo de patios mudéjares y jardines. La visita combina arquitectura islámica y transformaciones cristianas.",
+    "catedral": "Gran catedral gótica junto a un antiguo alminar convertido en campanario. Las rampas de la Giralda permiten vistas amplias de la ciudad.",
+    "triana": "Barrio de Sevilla situado al otro lado del Guadalquivir, asociado a la cerámica y al flamenco. Su puente enlaza las dos orillas y da acceso al paseo por el barrio.",
+    "cordoba": "Bosque de columnas y arcos bicolores dentro de un edificio transformado a lo largo de siglos. El principal motivo para visitar Córdoba.",
+    "juderia-cordoba": "Antiguo barrio judío de Córdoba, de calles estrechas y fachadas blancas. La foto muestra el monumento a Maimónides, filósofo y médico nacido en la ciudad.",
+    "roman-bridge-cordoba": "Puente de origen romano sobre el Guadalquivir, junto al casco histórico de Córdoba. Es uno de los mejores lugares para contemplar la silueta de la ciudad.",
+    "alhambra": "Palacios nazaríes, fortaleza y jardines sobre Granada. La hora de Palacios Nazaríes es estricta: compra primero esta entrada.",
+    "albaicin": "Barrio de origen medieval con casas blancas y miradores hacia la Alhambra. Cuestas y empedrado: lleva calzado cómodo.",
+    "san-nicolas-granada": "Mirador del Albaicín desde el que se contempla la Alhambra al otro lado del valle. La fotografía muestra la fortaleza desde este punto de observación.",
+    "gotico": "Calles medievales, plazas pequeñas y la catedral en el núcleo histórico de Barcelona. Ideal para caminar sin un horario rígido.",
+    "born-barcelona": "Paseo arbolado del barrio del Born, rodeado de edificios históricos y pequeños comercios. Es una buena zona para descubrir Barcelona a pie y hacer una pausa entre visitas.",
+    "sagrada": "La basílica de Gaudí transforma la luz en color entre columnas que parecen árboles. Aquí sí entrarás; reserva una franja de mañana.",
+    "santpau": "Antiguo hospital de pabellones modernistas, cerámica y jardines. Una de las visitas arquitectónicas más bonitas de Barcelona.",
+    "guell": "Jardín modernista sobre Barcelona, con mosaicos, columnas inclinadas y vistas urbanas. La zona monumental requiere entrada.",
+    "passeig-gracia": "Gran avenida del Eixample donde se concentran edificios modernistas, entre ellos varias obras de Gaudí. Sus fachadas convierten el paseo en una visita arquitectónica.",
+    "batllo": "Una casa de Gaudí que convierte fachada, escaleras y azotea en un universo orgánico. El interior merece una visita pausada.",
+    "dali-figueres": "El antiguo teatro de Figueres convertido en el universo de Salvador Dalí: una visita dedicada a su imaginación y a su obra."
+  },
+  "formatName": true,
+  "layoutClass": "trip-espana-portugal",
+  "optionalSection": {
+    "eyebrow": "Elige según tus prioridades",
+    "title": "Barcelona: excursiones y paseos opcionales.",
+    "intro": "Alternativas al programa, no visitas adicionales. Las paradas breves integradas en los días 13 y 15 dependen del tiempo disponible y no desplazan las visitas principales.",
+    "columns": [
+      "Opción",
+      "Precio y condiciones",
+      "Qué sustituiría y por qué"
+    ],
+    "rows": [
+      [
+        "MNAC · arte y vistas de Montjuïc",
+        "Sábado 5 desde las 15:00: €0 ($0 MXN), con reserva anticipada. Cierre invernal publicado: 18:00.",
+        "Sustituiría el paseo libre Gòtic/Born del regreso de Figueres, sólo si estás en el museo con unas 2 horas útiles. Si los trenes no dejan margen, exigiría renunciar a Figueres: no se propone hacerlo. El domingo 6 es gratuito por ser primer domingo, pero no encaja con el vuelo de las 13:45."
+      ],
+      [
+        "Barceloneta + Bus Nàutic ALSA",
+        "Paseo por barrio y playa: €0 ($0 MXN). Barco: €1.90 (aprox. $39 MXN) por trayecto; cruce de unos 10 minutos, no crucero panorámico. Confirmar horario y servicio por meteorología.",
+        "Sustituiría parte del paseo Gòtic/Born de la tarde del 3 o del regreso del 5; si eliges este bloque, no añadir también Arc de Triomf y Ciutadella en esa misma franja. Calcula 1.5–2 horas con acceso, espera y paseo."
+      ],
+      [
+        "Salts Bar + Montjuïc",
+        "Consumo según carta; no se presenta como experiencia de coste cero. Apertura de diciembre pendiente de confirmar.",
+        "Sustituiría la tarde libre del regreso del 5, incluido el paseo Gòtic/Born y su extensión Arc/Ciutadella. Calcula 2–3 horas con traslados. Puede combinarse con MNAC sólo con más margen real; no se suman ambos por defecto."
+      ],
+      [
+        "Búnkers del Carmel · Turó de la Rovira",
+        "€0 ($0 MXN). Horario del recinto en invierno: 09:00–17:30; requiere subida y tiempo de transporte.",
+        "El viernes 4 sustituiría Sant Pau o Park Güell, según las reservas, para llegar con luz. No sustituye sólo una cena: cierra temprano. Se mantiene fuera del programa base para conservar ambas visitas."
+      ],
+      [
+        "Torre Glòries · exterior",
+        "Contemplar la torre desde la calle: €0 ($0 MXN). El mirador interior requiere entrada de pago, pendiente de cotizar si se elige.",
+        "Sustituiría parte del paseo libre Gòtic/Born del 3 o del 5. Calcula 45–75 minutos con desplazamientos para el exterior; no merece añadir un traslado sólo por figurar como gratuito."
+      ]
+    ],
+    "note": "Condiciones consultadas el 15 de octubre de 2026. Conversión orientativa: €1 = $20.60 MXN. Confirmar aperturas, reserva y tarifas para diciembre. Casa Batlló mantiene su visita condicionada o fachada gratuita, sin eliminar ninguna visita del programa."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

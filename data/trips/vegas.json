@@ -1,0 +1,269 @@
+{
+  "id": "vegas",
+  "name": "Las Vegas y el Gran Cañón",
+  "flag": "🇺🇸",
+  "start": "2026-12-03",
+  "end": "2026-12-08",
+  "tag": "Espectáculos y paisaje",
+  "intro": "Las Vegas combina hoteles de fantasía, espectáculos nocturnos y paisajes del desierto. Dormirás cinco noches en el mismo hotel y realizarás excursiones a Hoover Dam y al borde sur del Grand Canyon. La salida al cañón será larga; el día siguiente queda más ligero para que puedas recuperarte.",
+  "bases": [
+    [
+      "Las Vegas",
+      5
+    ]
+  ],
+  "flight": "Busca un vuelo sin escalas de Ciudad de México (MEX) al aeropuerto Harry Reid de Las Vegas (LAS), con Aeroméxico o Volaris según las fechas disponibles. El regreso puede hacerse por la misma ruta.\n\nEl aeropuerto está cerca de la zona de hoteles del Strip. El traslado suele ocupar unos 15–30 minutos en coche, dependiendo del tráfico y del hotel elegido.",
+  "local": "El Strip es la avenida de los grandes hoteles. Puedes recorrer a pie una zona por vez y utilizar el monorraíl o un vehículo por aplicación para las distancias largas.\n\nLa visita a Hoover Dam, la presa del río Colorado, ocupa unas 4–6 horas en excursión organizada. El Grand Canyon South Rim, o borde sur del parque nacional, queda mucho más lejos: unas 4½–5½ horas de carretera por sentido y una jornada total de 14–16 horas.\n\nGrand Canyon West está más cerca de Vegas, pero es un destino distinto, con otras vistas y entradas. Esta propuesta se refiere al parque nacional y su borde sur.",
+  "climate": "En diciembre, Las Vegas puede rondar los 4–15 °C. En el Grand Canyon South Rim hará más frío y puede haber nieve o hielo.\n\nAntes de la excursión al cañón, el operador deberá comprobar las carreteras y los accesos. Lleva ropa de abrigo aunque la tarde anterior en Las Vegas haya sido templada.",
+  "solo": "Es fácil viajar solo con inglés y contratar excursiones compartidas. Un hotel bien ubicado te ayudará a combinar paseos y espectáculos con menos desplazamientos.\n\nLos tours privados y la habitación individual elevan el coste. Para este viaje, las excursiones en grupo suelen ser más razonables; también conviene dejar libre la mañana posterior al Grand Canyon para descansar.",
+  "costs": [
+    [
+      "Vuelos",
+      5000,
+      8500
+    ],
+    [
+      "5 noches, impuestos y cargos del hotel",
+      8500,
+      13500
+    ],
+    [
+      "Comida",
+      4000,
+      6000
+    ],
+    [
+      "Transporte local",
+      1200,
+      2000
+    ],
+    [
+      "Excursiones y espectáculos",
+      7000,
+      10500
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      2300,
+      3500
+    ]
+  ],
+  "tips": [
+    "Compara el precio final del hotel, con impuestos y resort fees, los cargos adicionales que algunos hoteles cobran por noche. La tarifa anunciada inicialmente puede no incluirlos.",
+    "El parque nacional Grand Canyon cobra un suplemento de US$100 a visitantes no residentes de 16 años o más, salvo que entren con un pase válido que lo cubra. El presupuesto contempla ese importe; confirma si tu excursión ya lo incluye.",
+    "El Skywalk se encuentra en Grand Canyon West y no forma parte de esta visita al South Rim. El borde norte, North Rim, no es la alternativa prevista para diciembre.",
+    "Si no quieres pasar 14–16 horas en una excursión, puedes dormir una noche cerca del cañón. Reduce el cansancio, pero exige cambiar de hotel y ajustar el itinerario."
+  ],
+  "sources": [
+    [
+      "Grand Canyon: invierno",
+      "https://www.nps.gov/grca/planyourvisit/winter-visits.htm"
+    ],
+    [
+      "Tarifas 2026",
+      "https://home.nps.gov/grca/planyourvisit/fees.htm"
+    ],
+    [
+      "Suplemento tours",
+      "https://www.nps.gov/aboutus/commercial-tours-and-nonresident-fees.htm?pubDate=20260421"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-03",
+      "title": "el Strip al encenderse",
+      "base": "Las Vegas",
+      "places": [
+        "strip",
+        "bellagio-fountains"
+      ],
+      "am": "Vuela desde Ciudad de México a Las Vegas según el horario reservado.",
+      "pm": "Trasládate al hotel y deja el equipaje. Las distancias entre grandes hoteles pueden parecer menores de lo que son: comienza por el entorno de tu alojamiento.",
+      "night": "Si la hora de llegada lo permite, pasea por el Strip y contempla las fuentes del Bellagio durante una función programada.",
+      "mobility": "Desde el aeropuerto de Las Vegas al hotel, calcula unos 15–30 minutos en taxi o vehículo por aplicación, según tráfico y ubicación.",
+      "spend": 900,
+      "note": ""
+    },
+    {
+      "n": 2,
+      "date": "2026-12-04",
+      "title": "hoteles que son un espectáculo",
+      "base": "Las Vegas",
+      "places": [
+        "venetian-vegas",
+        "bellagio-conservatory"
+      ],
+      "am": "Recorre The Venetian, un complejo hotelero inspirado en Venecia, con canales y espacios interiores temáticos.",
+      "pm": "Continúa hacia el jardín interior del Bellagio para ver el montaje disponible en esas fechas. Divide el paseo con una pausa para comer y utiliza transporte cuando las distancias sean largas.",
+      "night": "Puedes reservar un espectáculo como actividad opcional. Revisa horario, ubicación y precio final antes de elegir.",
+      "mobility": "Combina caminatas con monorraíl o vehículo por aplicación. Las entradas de los hoteles pueden quedar lejos unas de otras, aunque parezcan cercanas en el mapa.",
+      "spend": 2300,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-12-05",
+      "title": "excursión a la presa Hoover",
+      "base": "Las Vegas",
+      "places": [
+        "hoover"
+      ],
+      "am": "Realiza una excursión a Hoover Dam, la gran presa construida sobre el río Colorado.",
+      "pm": "Recorre los miradores y las áreas incluidas en tu excursión. Comprueba si el precio cubre solamente los exteriores o también alguna visita interior.",
+      "night": "Regresa a Las Vegas con tiempo para una cena tranquila.",
+      "mobility": "Una excursión a Hoover Dam ocupa aproximadamente 4–6 horas, según visitas y recogidas incluidas.",
+      "spend": 2300,
+      "note": ""
+    },
+    {
+      "n": 4,
+      "date": "2026-12-06",
+      "title": "excursión al Gran Cañón, South Rim",
+      "base": "Las Vegas",
+      "places": [
+        "grandcanyon"
+      ],
+      "am": "Sal muy temprano en una excursión al South Rim, el borde sur del Parque Nacional del Gran Cañón. El traslado por carretera ocupa varias horas.",
+      "pm": "Disfruta los miradores incluidos en el recorrido y mantente en los accesos habilitados. En invierno, hielo y nieve pueden afectar el programa.",
+      "night": "Vuelve tarde a Las Vegas. Es la jornada más exigente del viaje: no reserves un espectáculo al regreso.",
+      "mobility": "La salida al South Rim puede durar unas 14–16 horas, con cerca de 4½–5½ horas de carretera por sentido. Confirma el punto de recogida y la hora estimada de regreso.",
+      "spend": 4800,
+      "note": "Es una jornada especialmente larga. Confirma el precio total de entrada para tu condición de visitante y las condiciones de cancelación si hay nieve."
+    },
+    {
+      "n": 5,
+      "date": "2026-12-07",
+      "title": "descanso y Fremont Street si queda energía",
+      "base": "Las Vegas",
+      "places": [
+        "fremont-street"
+      ],
+      "am": "Descansa después de la larga excursión del día anterior.",
+      "pm": "Dedica la tarde a una comida tranquila o al hotel, sin añadir compras o visitas por obligación.",
+      "night": "Si tienes energía, visita Fremont Street para conocer el centro histórico y su gran cubierta luminosa. Después, vuelve al hotel y prepara la maleta.",
+      "mobility": "Para Fremont Street, utiliza autobús o vehículo por aplicación según la ubicación del hotel. Organiza también el regreso.",
+      "spend": 1400,
+      "note": ""
+    },
+    {
+      "n": 6,
+      "date": "2026-12-08",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Trasládate del hotel al aeropuerto de Las Vegas con el margen de anticipación necesario para el vuelo a Ciudad de México.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 4,
+  "profile": {
+    "pace": "Intenso",
+    "solo": "Fácil",
+    "weather": "Alta",
+    "why": "El viaje es corto y la excursión al South Rim ocupa una jornada muy larga. Los tours facilitan la logística, pero nieve y hielo pueden alterar el cañón.",
+    "weatherWhy": "La nieve, el hielo o el mal tiempo pueden afectar las carreteras y los miradores del Grand Canyon South Rim, la excursión más larga del viaje.",
+    "soloWhy": "Un hotel bien ubicado y excursiones compartidas simplifican la logística, aunque el día del Grand Canyon exige madrugar y pasar muchas horas en carretera."
+  },
+  "experiences": [
+    "Las fuentes del Bellagio al anochecer",
+    "Canales interiores de The Venetian",
+    "La escala monumental de Hoover Dam",
+    "Miradores del Grand Canyon South Rim",
+    "Luces de Fremont Street después del descanso"
+  ],
+  "routeCities": [
+    "Las Vegas"
+  ],
+  "cover": "strip",
+  "hotels": [],
+  "stays": [
+    [
+      "Las Vegas",
+      "El Strip central facilita los recorridos y el acceso a espectáculos."
+    ],
+    [
+      "Precio final",
+      "Compara el precio con impuestos y resort fees, los cargos adicionales que muchos hoteles cobran por noche por sus instalaciones y servicios. Añade el coste de los taxis si el hotel queda lejos de las visitas."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Las Vegas",
+      "coords": [
+        36.1699,
+        -115.1398
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    }
+  ],
+  "placeDescriptions": {
+    "strip": "Avenida de grandes hoteles temáticos, arquitectura de espectáculo y salas de entretenimiento. Las distancias a pie son mayores de lo que parecen.",
+    "bellagio-fountains": "Las fuentes del Bellagio realizan espectáculos de agua en el lago situado frente al hotel.",
+    "venetian-vegas": "The Venetian recrea elementos de la arquitectura veneciana en uno de los grandes complejos del Strip.",
+    "bellagio-conservatory": "El invernadero del Bellagio presenta instalaciones florales y decoraciones que cambian según la temporada.",
+    "hoover": "Presa sobre el Colorado, junto al lago Mead. Los tours de interior y miradores tienen acceso y reservas diferentes.",
+    "grandcanyon": "Borde sur del gran cañón del Colorado, dentro del parque nacional. No es Grand Canyon West ni Skywalk; el trayecto desde Vegas es largo.",
+    "fremont-street": "Fremont Street Experience reúne casinos y entretenimiento bajo una gran cubierta luminosa en el centro de Las Vegas."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

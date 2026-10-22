@@ -1,0 +1,665 @@
+{
+  "id": "espana",
+  "name": "España: ciudades, arte y Andalucía",
+  "flag": "🇪🇸",
+  "start": "2026-11-16",
+  "end": "2026-12-05",
+  "tag": "La primera elección",
+  "intro": "Veinte días para descubrir las formas de Gaudí en Barcelona, los palacios y patios de Andalucía y las grandes colecciones de Madrid. Dormirás en Barcelona, Sevilla, Málaga y Madrid; desde estas cuatro ciudades visitarás Córdoba, Granada, Ronda y Toledo sin cambiar de hotel cada mañana. La ruta incluye todas las ciudades que elegiste y reserva jornadas más tranquilas entre las excursiones largas.",
+  "bases": [
+    [
+      "Barcelona",
+      4
+    ],
+    [
+      "Sevilla",
+      5
+    ],
+    [
+      "Málaga",
+      5
+    ],
+    [
+      "Madrid",
+      4
+    ]
+  ],
+  "flight": "Saldrás del Aeropuerto Internacional de Ciudad de México (MEX) y llegarás a Barcelona-El Prat (BCN). La propuesta es buscar un vuelo sin escalas de Aeroméxico o Emirates que encaje con tus fechas.\n\nRegresarás desde Madrid-Barajas (MAD) a Ciudad de México (MEX), buscando un vuelo sin escalas de Iberia o Aeroméxico. Al comprar, elige la opción «varias ciudades» o «multidestino»: permite llegar a Barcelona y volver desde Madrid dentro de la misma reserva, sin regresar al punto donde comenzó el viaje.",
+  "local": "Los cambios de hotel se harán en tren: Barcelona–Sevilla en AVE, el tren de alta velocidad, tarda aproximadamente 5½–6½ horas; Sevilla–Málaga, unas 2–3 horas; y Málaga–Madrid, unas 3 horas.\n\nDesde Sevilla visitarás Córdoba, a unos 45–60 minutos en tren. Desde Málaga podrás llegar a Granada en aproximadamente 1½–2 horas y a Ronda en unas 2–2½ horas en autobús o excursión organizada. Desde Madrid, el tren a Toledo tarda unos 35 minutos. Estos tiempos corresponden a cada trayecto; habrá que añadir el traslado entre estación y alojamiento.",
+  "climate": "Barcelona y Madrid tendrán un ambiente fresco, mientras que Andalucía suele ofrecer tardes más suaves. Como referencia para preparar la maleta, contempla temperaturas de unos 6–19 °C, según ciudad y momento del día.\n\nLleva varias capas y una chaqueta para lluvia. Con aproximadamente diez horas de luz, conviene visitar jardines, miradores y barrios históricos durante el día, y dejar museos o cenas para el final de la jornada.",
+  "solo": "Es una de las rutas más sencillas para viajar solo: puedes comunicarte en español y combinar trenes con recorridos a pie. Cada hotel servirá como punto de partida durante varias noches, de modo que no tendrás que reorganizar la maleta todos los días.\n\nGranada y Toledo tienen cuestas y calles empedradas; conviene alternar caminatas con pausas y usar un taxi para alguna subida si lo prefieres. En Barcelona, presta especial atención a tus pertenencias en el transporte y los lugares concurridos.",
+  "costs": [
+    [
+      "Vuelos internacionales",
+      17000,
+      25000
+    ],
+    [
+      "18 noches, habitación privada",
+      26000,
+      35000
+    ],
+    [
+      "Comida, 20 días",
+      10500,
+      14500
+    ],
+    [
+      "Trenes y transporte urbano",
+      6500,
+      9500
+    ],
+    [
+      "Entradas y excursiones",
+      6500,
+      9500
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      4500,
+      6500
+    ]
+  ],
+  "tips": [
+    "Reserva primero una entrada de la Alhambra que incluya los Palacios Nazaríes. Su hora de acceso determinará a qué hora necesitas llegar a Granada.",
+    "La excursión a Granada supone salir temprano de Málaga y regresar de noche. Si prefieres conocerla con más calma, puedes trasladar allí una noche de Málaga, aunque eso añade un cambio de hotel.",
+    "El tren de Barcelona a Sevilla ocupará buena parte del día. Lleva algo para comer y deja la tarde de llegada para instalarte y dar un paseo breve.",
+    "El recorrido usa 15 días de lunes a viernes. Podrían ser 14 días de vacaciones si tu empresa te da libre el 16 de noviembre; confírmalo antes de solicitar el permiso."
+  ],
+  "sources": [
+    [
+      "Renfe: rutas y reservas",
+      "https://www.renfe.com/es/es/inspirate/rutas"
+    ],
+    [
+      "Sagrada Familia: entradas oficiales",
+      "https://sagradafamilia.org/es/tickets?lang=0"
+    ],
+    [
+      "Alhambra: visita oficial",
+      "https://www.alhambra-patronato.es/"
+    ],
+    [
+      "Aeroméxico: Barcelona",
+      "https://www.aeromexico.com/es_mx/vuelos-desde-ciudad-de-mexico-a-barcelona"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-11-16",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "El vuelo propuesto une Ciudad de México (MEX) con Barcelona (BCN). Un servicio sin escalas dura aproximadamente 11–12 horas; comprueba el horario al reservar.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-11-17",
+      "title": "el primer paseo por el Barrio Gótico",
+      "base": "Barcelona",
+      "places": [
+        "gotico",
+        "barcelona-cathedral"
+      ],
+      "am": "Al llegar a Barcelona, trasládate al centro y deja el equipaje en el hotel. Si la habitación aún no está disponible, solicita que guarden tu maleta.",
+      "pm": "Da un primer paseo por el Barrio Gótico y conoce el exterior de la Catedral de Barcelona. Sus calles y plazas permiten una llegada tranquila, sin depender de una entrada con horario.",
+      "night": "Cena cerca del hotel y descansa para adaptarte al cambio de horario.",
+      "mobility": "Desde el aeropuerto de Barcelona hasta el centro, calcula unos 35–60 minutos en transporte público o taxi. El paseo puede sumar entre 3 y 5 km; acórtalo si estás cansado.",
+      "spend": 850,
+      "note": "No se da por hecho que la habitación esté disponible al llegar por la mañana. Pregunta si el hotel puede guardar la maleta mientras paseas."
+    },
+    {
+      "n": 3,
+      "date": "2026-11-18",
+      "title": "la luz de Gaudí",
+      "base": "Barcelona",
+      "places": [
+        "sagrada",
+        "santpau"
+      ],
+      "am": "Entra a la Sagrada Familia y dedica unas dos horas a descubrir sus columnas, vitrales y fachadas con audioguía.",
+      "pm": "Camina hacia el Recinto Modernista de Sant Pau, un antiguo hospital de pabellones y jardines. Después podrás pasear por las calles del Eixample.",
+      "night": "Cena por la zona y regresa al hotel a descansar.",
+      "mobility": "Usa el metro para llegar a la Sagrada Familia. Desde allí, el recinto de Sant Pau queda a unos 15–20 minutos a pie.",
+      "spend": 1700,
+      "note": "Reserva ambas visitas y deja al menos una hora entre sus turnos para caminar, salir del recinto anterior y pasar el siguiente control."
+    },
+    {
+      "n": 4,
+      "date": "2026-11-19",
+      "title": "mosaicos y casas imposibles",
+      "base": "Barcelona",
+      "places": [
+        "guell",
+        "batllo",
+        "passeig-gracia",
+        "pedrera"
+      ],
+      "am": "Visita Park Güell por la mañana para recorrer sus mosaicos, caminos y miradores con tiempo.",
+      "pm": "Continúa con el interior de Casa Batlló y un paseo por Passeig de Gràcia. La Pedrera es una visita adicional opcional: puedes admirar la fachada y entrar sólo si deseas dedicar más tiempo a Gaudí.",
+      "night": "Acércate al barrio de Gràcia para cenar antes de volver al hotel.",
+      "mobility": "Combina metro y autobús para llegar al Park Güell. El traslado desde el parque hasta el Eixample puede ocupar unos 30–45 minutos.",
+      "spend": 2100,
+      "note": ""
+    },
+    {
+      "n": 5,
+      "date": "2026-11-20",
+      "title": "Montjuïc, arte y vistas al puerto",
+      "base": "Barcelona",
+      "places": [
+        "montjuic",
+        "mnac",
+        "port-vell",
+        "born-barcelona"
+      ],
+      "am": "Recorre los jardines y miradores de Montjuïc para contemplar Barcelona desde lo alto.",
+      "pm": "Puedes entrar al Museu Nacional d’Art de Catalunya, conocido como MNAC, o dedicar la tarde al Port Vell y al barrio del Born. Son alternativas para elegir según tu energía.",
+      "night": "Disfruta una última cena en Barcelona y prepara la maleta para el tren del día siguiente.",
+      "mobility": "Llega a Montjuïc en metro y funicular. El teleférico es una opción adicional; después puedes bajar hacia el puerto en transporte público.",
+      "spend": 1100,
+      "note": "El paseo por Montjuïc no depende de que haya un espectáculo de la Fuente Mágica. Consulta su programación si quieres añadirlo.",
+      "optionalPlaces": [
+        "mnac"
+      ]
+    },
+    {
+      "n": 6,
+      "date": "2026-11-21",
+      "title": "en tren hacia Andalucía",
+      "base": "Sevilla",
+      "places": [
+        "santa-cruz-seville"
+      ],
+      "am": "Entrega la habitación y dirígete a Barcelona Sants para tomar el AVE, el tren de alta velocidad, hacia Sevilla Santa Justa.",
+      "pm": "Al llegar, instala tus cosas en el hotel y dedica la tarde a un paseo breve por el centro.",
+      "night": "Acércate a Santa Cruz, el barrio de callejuelas junto a los grandes monumentos, para cenar tapas.",
+      "mobility": "El AVE, el tren de alta velocidad, tarda aproximadamente 5½–6½ horas entre Barcelona y Sevilla. Añade los trayectos de acceso a las estaciones y unos 15–30 minutos hasta el hotel de Sevilla.",
+      "spend": 1900,
+      "note": "Córdoba tiene su propia jornada de excursión. No conviene añadirla como parada durante este largo cambio de hotel."
+    },
+    {
+      "n": 7,
+      "date": "2026-11-22",
+      "title": "patios reales y Giralda",
+      "base": "Sevilla",
+      "places": [
+        "alcazar",
+        "catedral"
+      ],
+      "am": "Reserva unas tres horas para el Real Alcázar: recorrerás sus palacios, patios y jardines sin tener que apresurarte.",
+      "pm": "Visita la Catedral de Sevilla y, si te apetece la subida, la Giralda. Deja una pausa para comer entre ambos monumentos.",
+      "night": "Pasea por las calles de Santa Cruz antes de volver al hotel.",
+      "mobility": "Las visitas del centro de Sevilla se conectan a pie. El conjunto del paseo puede sumar unos 5–7 km; distribuye las paradas para descansar.",
+      "spend": 1650,
+      "note": "Reserva las entradas del Real Alcázar y de la catedral con los datos y horarios exigidos por cada recinto."
+    },
+    {
+      "n": 8,
+      "date": "2026-11-23",
+      "title": "Córdoba, un bosque de arcos",
+      "base": "Sevilla",
+      "places": [
+        "cordoba",
+        "juderia-cordoba",
+        "roman-bridge-cordoba"
+      ],
+      "am": "Toma un tren temprano a Córdoba y dedica la primera visita a la Mezquita-Catedral.",
+      "pm": "Recorre la Judería y el puente romano. Podrás añadir algún patio abierto al público, según la temporada y el tiempo disponible.",
+      "night": "Regresa en tren a Sevilla y cena con calma cerca de tu alojamiento.",
+      "mobility": "Toma un tren de ida y vuelta entre Sevilla y Córdoba, de unos 45–60 minutos por trayecto. Desde la estación de Córdoba, continúa al centro histórico a pie, en autobús o taxi.",
+      "spend": 1800,
+      "note": "Compra los trenes de ida y vuelta. Esta visita se centra en la ciudad y la Mezquita-Catedral; no depende de que se celebre el Festival de los Patios."
+    },
+    {
+      "n": 9,
+      "date": "2026-11-24",
+      "title": "Plaza de España, jardines y Triana",
+      "base": "Sevilla",
+      "places": [
+        "plazaespana",
+        "maria-luisa",
+        "triana"
+      ],
+      "am": "Pasea por la Plaza de España y los jardines del parque de María Luisa.",
+      "pm": "Cruza hacia Triana para conocer sus calles, la zona del mercado y la ribera del Guadalquivir.",
+      "night": "Asiste a un espectáculo de flamenco en un tablao reservado con antelación.",
+      "mobility": "Puedes conectar los paseos a pie y recurrir al autobús si quieres reducir la caminata entre el parque y Triana.",
+      "spend": 1500,
+      "note": ""
+    },
+    {
+      "n": 10,
+      "date": "2026-11-25",
+      "title": "Casa de Pilatos y una tarde libre",
+      "base": "Sevilla",
+      "places": [
+        "casa-pilatos"
+      ],
+      "am": "Conoce la Casa de Pilatos, un palacio sevillano donde se mezclan patios, azulejos y detalles renacentistas.",
+      "pm": "Deja la tarde libre para cafés, compras pequeñas o descanso. También puedes aprovecharla para una visita pendiente de los días anteriores.",
+      "night": "Cena y prepara el equipaje para continuar hacia Málaga.",
+      "mobility": "La jornada se resuelve caminando por el centro de Sevilla, con unos 3–5 km ajustables a tu energía.",
+      "spend": 1100,
+      "note": "Esta jornada puede intercambiarse con otra de Sevilla si llueve o no hay entradas para la fecha inicialmente prevista."
+    },
+    {
+      "n": 11,
+      "date": "2026-11-26",
+      "title": "la catedral y el puerto",
+      "base": "Málaga",
+      "places": [
+        "malaga-cathedral",
+        "malaga-port"
+      ],
+      "am": "Viaja en tren de Sevilla a Málaga y deja el equipaje en el hotel.",
+      "pm": "Da un primer paseo por el centro histórico, conoce el exterior de la catedral y continúa hacia el puerto.",
+      "night": "Cena en el centro y descansa después del traslado.",
+      "mobility": "El tren de Sevilla a Málaga tarda aproximadamente 2–3 horas. Desde la estación María Zambrano, calcula otros 10–20 minutos hasta el centro según el transporte elegido.",
+      "spend": 1500,
+      "note": ""
+    },
+    {
+      "n": 12,
+      "date": "2026-11-27",
+      "title": "fortalezas y arte",
+      "base": "Málaga",
+      "places": [
+        "malaga",
+        "malaga-roman-theatre",
+        "picasso-malaga",
+        "gibralfaro",
+        "muelle-uno"
+      ],
+      "am": "Visita la Alcazaba y el teatro romano situado a sus pies para conocer dos etapas de la historia de Málaga.",
+      "pm": "Elige entre el Museo Picasso, si prefieres una tarde de arte, y el castillo de Gibralfaro, si buscas vistas. Ambas opciones aparecen en la galería para que puedas decidir.",
+      "night": "Pasea por Muelle Uno, la zona peatonal del puerto, antes de cenar.",
+      "mobility": "La Alcazaba, el teatro romano y el Museo Picasso se conectan a pie. Para subir a Gibralfaro, un autobús o taxi evita la cuesta más exigente.",
+      "spend": 1400,
+      "note": "",
+      "optionalPlaces": [
+        "picasso-malaga",
+        "gibralfaro"
+      ]
+    },
+    {
+      "n": 13,
+      "date": "2026-11-28",
+      "title": "Granada: el gran día nazarí",
+      "base": "Málaga",
+      "places": [
+        "alhambra",
+        "albaicin",
+        "san-nicolas-granada"
+      ],
+      "am": "Sal temprano en tren hacia Granada y continúa hasta la Alhambra. Reserva unas tres o cuatro horas para el conjunto y respeta la hora concreta de entrada a los Palacios Nazaríes.",
+      "pm": "Después de comer, recorre el Albaicín y acércate al mirador de San Nicolás para contemplar la Alhambra desde el otro lado del valle.",
+      "night": "Regresa a Málaga en el tren reservado. Será una jornada larga, por lo que conviene llevar el regreso resuelto.",
+      "mobility": "El tren Málaga–Granada tarda aproximadamente 1½–2 horas por sentido. Añade autobús o taxi para la Alhambra y el centro. Entre traslados y visitas, reserva unas 11–13 horas en total.",
+      "spend": 2300,
+      "note": "Es un día exigente. Confirma primero la hora de los Palacios Nazaríes y después los trenes; una entrada muy tardía puede dejar poco margen para volver a Málaga."
+    },
+    {
+      "n": 14,
+      "date": "2026-11-29",
+      "title": "Ronda y su abismo",
+      "base": "Málaga",
+      "places": [
+        "ronda",
+        "ronda-old-town"
+      ],
+      "am": "Viaja a Ronda en autobús o en una excursión organizada desde Málaga.",
+      "pm": "Contempla el Puente Nuevo y recorre las calles del casco antiguo. Los exteriores del Palacio de Mondragón ayudan a situar el paseo; su visita interior queda a tu elección.",
+      "night": "Vuelve a Málaga para dormir en el mismo hotel.",
+      "mobility": "El autobús o una excursión organizada a Ronda requiere alrededor de 2–2½ horas por sentido. El conjunto de la salida puede ocupar 9–11 horas.",
+      "spend": 2100,
+      "note": "Si el autobús deja pocas horas útiles en Ronda, compara una excursión organizada que resuelva ida y vuelta."
+    },
+    {
+      "n": 15,
+      "date": "2026-11-30",
+      "title": "un respiro mediterráneo",
+      "base": "Málaga",
+      "places": [
+        "malagueta"
+      ],
+      "am": "Empieza más tarde y disfruta un paseo por la playa de la Malagueta, con tiempo para sentarte frente al mar.",
+      "pm": "Dedica la tarde a descansar o a la visita que haya quedado pendiente en Málaga. No hay una nueva entrada obligatoria.",
+      "night": "Cena sin prisas y prepara el equipaje para Madrid.",
+      "mobility": "Pasea por la zona de la Malagueta y utiliza transporte urbano para regresar al hotel si lo necesitas.",
+      "spend": 950,
+      "note": ""
+    },
+    {
+      "n": 16,
+      "date": "2026-12-01",
+      "title": "llegada en AVE y paseo por el centro",
+      "base": "Madrid",
+      "places": [
+        "plaza-mayor-madrid",
+        "puerta-sol",
+        "letras-madrid"
+      ],
+      "am": "Toma el AVE de Málaga a Madrid y trasládate al hotel para dejar la maleta.",
+      "pm": "Descubre la Plaza Mayor, la Puerta del Sol y las calles del barrio de las Letras, con una pausa por la plaza de Santa Ana.",
+      "night": "Cena por el centro antes de regresar al alojamiento.",
+      "mobility": "El AVE de Málaga a Madrid tarda unas 3 horas. Desde Atocha hasta el hotel, calcula unos 15–30 minutos adicionales.",
+      "spend": 1700,
+      "note": ""
+    },
+    {
+      "n": 17,
+      "date": "2026-12-02",
+      "title": "Palacio Real, Almudena y Gran Vía",
+      "base": "Madrid",
+      "places": [
+        "palacio",
+        "almudena",
+        "plaza-oriente",
+        "gran-via"
+      ],
+      "am": "Visita el Palacio Real y conoce los alrededores de la Catedral de la Almudena.",
+      "pm": "Continúa por la Plaza de Oriente y la Gran Vía, alternando el paseo con alguna parada para café.",
+      "night": "Si te apetece, reserva un musical para esta noche. Es una actividad opcional cuyo coste se añade al presupuesto base.",
+      "mobility": "Combina metro y recorridos a pie por el centro de Madrid. Elige el transporte según la ubicación de tu hotel y del espectáculo, si lo reservas.",
+      "spend": 1600,
+      "note": "El musical es opcional. Como referencia de planeación, añade unos 1,000–2,000 MXN y confirma el precio real del espectáculo elegido."
+    },
+    {
+      "n": 18,
+      "date": "2026-12-03",
+      "title": "Toledo, tres herencias",
+      "base": "Madrid",
+      "places": [
+        "toledo",
+        "toledo-cathedral",
+        "santa-maria-blanca-toledo",
+        "mirador-valle-toledo"
+      ],
+      "am": "Viaja en tren a Toledo y sube al centro histórico en autobús o taxi para comenzar la visita con menos esfuerzo.",
+      "pm": "Conoce la catedral y el barrio judío, donde se encuentra Santa María la Blanca. Si el horario lo permite, termina en el mirador del Valle antes de volver a la estación.",
+      "night": "Regresa en tren a Madrid y cena cerca del hotel.",
+      "mobility": "El tren de Madrid a Toledo tarda unos 35 minutos por sentido. Desde la estación, un autobús o taxi facilita la subida al casco histórico; para el mirador del Valle, considera un taxi.",
+      "spend": 1550,
+      "note": ""
+    },
+    {
+      "n": 19,
+      "date": "2026-12-04",
+      "title": "arte y jardines",
+      "base": "Madrid",
+      "places": [
+        "prado",
+        "retiro"
+      ],
+      "am": "Dedica unas dos horas y media o tres al Museo del Prado, eligiendo las salas y obras que más te interesen.",
+      "pm": "Pasea por el parque del Retiro y reserva tiempo para tus últimas compras o para descansar.",
+      "night": "Disfruta la última cena y deja preparada la maleta para el vuelo.",
+      "mobility": "Combina metro y caminata. Entre el Prado, el Retiro y los paseos del centro puedes recorrer unos 4–6 km.",
+      "spend": 1200,
+      "note": ""
+    },
+    {
+      "n": 20,
+      "date": "2026-12-05",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "Calcula unos 40–70 minutos desde el hotel hasta Madrid-Barajas, según ubicación y tráfico, además del tiempo de anticipación del vuelo a Ciudad de México.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 15,
+  "profile": {
+    "pace": "Equilibrado",
+    "solo": "Muy fácil",
+    "weather": "Media",
+    "why": "Cuatro bases en veinte días, con pausas entre excursiones largas; el idioma facilita el viaje y los museos permiten adaptarse a la lluvia.",
+    "weatherWhy": "La lluvia puede restar comodidad a los jardines de la Alhambra, los miradores de Ronda y Toledo y los paseos urbanos; los museos permiten reorganizar las jornadas.",
+    "soloWhy": "El idioma, los trenes entre bases y las visitas a pie facilitan la ruta, aunque conviene coordinar las entradas y las excursiones largas."
+  },
+  "experiences": [
+    "Los vitrales y mosaicos de Gaudí en Barcelona",
+    "Patios del Alcázar y calles de Triana",
+    "Arcos de la Mezquita-Catedral de Córdoba",
+    "La Alhambra frente al Albaicín",
+    "Madrid entre el Palacio Real y el Prado"
+  ],
+  "routeCities": [
+    "Barcelona",
+    "Sevilla",
+    "Córdoba",
+    "Málaga",
+    "Granada",
+    "Ronda",
+    "Madrid",
+    "Toledo"
+  ],
+  "cover": "alhambra",
+  "hotels": [],
+  "stays": [
+    [
+      "Barcelona",
+      "Busca alojamiento en el Eixample, cerca de una estación de metro."
+    ],
+    [
+      "Sevilla",
+      "Santa Cruz o el centro son buenas bases para llegar fácilmente a las visitas."
+    ],
+    [
+      "Málaga",
+      "Elige el centro histórico o los alrededores de la estación María Zambrano."
+    ],
+    [
+      "Madrid",
+      "Prioriza el barrio de las Letras, Sol o Atocha."
+    ],
+    [
+      "Al elegir habitación",
+      "Comprueba que tenga ventana y ventilación; revisa las fotos antes de reservar."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Barcelona",
+      "coords": [
+        41.3874,
+        2.1686
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Sevilla",
+      "coords": [
+        37.3891,
+        -5.9845
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 2
+    },
+    {
+      "name": "Córdoba",
+      "coords": [
+        37.8882,
+        -4.7794
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 3
+    },
+    {
+      "name": "Málaga",
+      "coords": [
+        36.7213,
+        -4.4214
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 4
+    },
+    {
+      "name": "Granada",
+      "coords": [
+        37.1773,
+        -3.5986
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Ronda",
+      "coords": [
+        36.7462,
+        -5.1612
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Madrid",
+      "coords": [
+        40.4168,
+        -3.7038
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 7
+    },
+    {
+      "name": "Toledo",
+      "coords": [
+        39.8628,
+        -4.0273
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 8
+    }
+  ],
+  "placeDescriptions": {
+    "alhambra": "Palacios nazaríes, fortaleza y jardines sobre Granada. La hora de Palacios Nazaríes es estricta: compra primero esta entrada.",
+    "gotico": "Calles medievales, plazas pequeñas y la catedral en el núcleo histórico de Barcelona. Ideal para caminar sin un horario rígido.",
+    "barcelona-cathedral": "Catedral gótica del centro histórico de Barcelona, con una fachada de agujas y relieves. La imagen muestra el exterior que conocerás durante el primer paseo.",
+    "sagrada": "La basílica de Gaudí transforma la luz en color entre columnas que parecen árboles. Aquí sí entrarás; reserva una franja de mañana.",
+    "santpau": "Antiguo hospital de pabellones modernistas, cerámica y jardines. Una de las visitas arquitectónicas más bonitas de Barcelona.",
+    "guell": "Jardín modernista sobre Barcelona, con mosaicos, columnas inclinadas y vistas urbanas. La zona monumental requiere entrada.",
+    "batllo": "Una casa de Gaudí que convierte fachada, escaleras y azotea en un universo orgánico. El interior merece una visita pausada.",
+    "passeig-gracia": "Gran avenida del Eixample donde se concentran edificios modernistas, entre ellos varias obras de Gaudí. Sus fachadas convierten el paseo en una visita arquitectónica.",
+    "pedrera": "Casa Milà, conocida como La Pedrera, es un edificio de Gaudí reconocible por su fachada ondulante y sus balcones de hierro. La foto muestra el exterior; entrar requiere una visita adicional.",
+    "montjuic": "Colina de Barcelona con jardines, museos y miradores hacia la ciudad y el puerto. El paseo puede combinarse con una visita al Museo Nacional de Arte de Cataluña.",
+    "mnac": "Museo Nacional de Arte de Cataluña, instalado en el Palau Nacional de Montjuïc. Reúne colecciones de arte y se alza sobre una amplia escalinata con vistas de Barcelona.",
+    "port-vell": "El antiguo puerto de Barcelona, abierto hoy al paseo junto al agua. La imagen muestra el Moll de la Fusta, uno de sus espacios peatonales frente a los barcos.",
+    "born-barcelona": "Paseo arbolado del barrio del Born, rodeado de edificios históricos y pequeños comercios. Es una buena zona para descubrir Barcelona a pie y hacer una pausa entre visitas.",
+    "santa-cruz-seville": "Barrio histórico de Sevilla formado por callejuelas, pequeñas plazas y casas con patios. El paseo permite disfrutar su arquitectura entre las grandes visitas monumentales.",
+    "alcazar": "Palacio vivo de patios mudéjares y jardines. La visita combina arquitectura islámica y transformaciones cristianas.",
+    "catedral": "Gran catedral gótica junto a un antiguo alminar convertido en campanario. Las rampas de la Giralda permiten vistas amplias de la ciudad.",
+    "cordoba": "Bosque de columnas y arcos bicolores dentro de un edificio transformado a lo largo de siglos. El principal motivo para visitar Córdoba.",
+    "juderia-cordoba": "Antiguo barrio judío de Córdoba, de calles estrechas y fachadas blancas. La foto muestra el monumento a Maimónides, filósofo y médico nacido en la ciudad.",
+    "roman-bridge-cordoba": "Puente de origen romano sobre el Guadalquivir, junto al casco histórico de Córdoba. Es uno de los mejores lugares para contemplar la silueta de la ciudad.",
+    "plazaespana": "Conjunto de ladrillo y azulejos de la exposición de 1929, con canales y bancos dedicados a provincias españolas.",
+    "maria-luisa": "Gran parque sevillano de senderos, estanques y jardines, junto a la Plaza de España. La imagen muestra la Isleta de los Patos, uno de sus rincones para detenerse a descansar.",
+    "triana": "Barrio de Sevilla situado al otro lado del Guadalquivir, asociado a la cerámica y al flamenco. Su puente enlaza las dos orillas y da acceso al paseo por el barrio.",
+    "casa-pilatos": "Palacio sevillano que combina detalles mudéjares y renacentistas. Su patio, los azulejos y las galerías permiten disfrutar una visita de arquitectura a una escala más íntima.",
+    "malaga-cathedral": "Catedral renacentista que sobresale entre las calles del centro de Málaga. Su torre inacabada explica el apodo popular de «La Manquita».",
+    "malaga-port": "El puerto de Málaga conecta el centro histórico con el mar. Sus muelles y paseos ofrecen una primera mirada al paisaje costero de la ciudad.",
+    "malaga": "Fortificación palaciega musulmana sobre el centro, con patios y vistas al puerto. Se combina con el teatro romano a sus pies.",
+    "malaga-roman-theatre": "Restos del teatro romano situados a los pies de la Alcazaba. Ambos monumentos permiten reconocer distintas etapas de la historia de Málaga en un mismo entorno.",
+    "picasso-malaga": "Museo dedicado a Pablo Picasso, nacido en Málaga, instalado en el Palacio de Buenavista. La imagen muestra su acceso; las colecciones se conocen durante la visita interior.",
+    "gibralfaro": "Castillo situado en lo alto de una colina sobre Málaga. Sus murallas ofrecen panorámicas de la ciudad y el puerto; llegar implica una subida que puedes reducir con transporte.",
+    "muelle-uno": "Zona peatonal del puerto de Málaga, con locales y terrazas junto al agua. Es un paseo adecuado para terminar el día después de las visitas del centro.",
+    "albaicin": "Barrio de origen medieval con casas blancas y miradores hacia la Alhambra. Cuestas y empedrado: lleva calzado cómodo.",
+    "san-nicolas-granada": "Mirador del Albaicín desde el que se contempla la Alhambra al otro lado del valle. La fotografía muestra la fortaleza desde este punto de observación.",
+    "ronda": "Puente monumental sobre el desfiladero del Tajo, entre las dos partes de la ciudad. Los miradores muestran por qué merece la excursión.",
+    "ronda-old-town": "Palacio de Mondragón, en el casco antiguo de Ronda, conocido por sus patios y su museo. Su exterior forma parte del paseo; entrar queda a tu elección.",
+    "malagueta": "Playa urbana próxima al centro de Málaga. Su paseo marítimo permite caminar y descansar frente al Mediterráneo sin organizar otra excursión.",
+    "plaza-mayor-madrid": "Gran plaza porticada en el corazón del Madrid histórico. La estatua de Felipe III preside este espacio rodeado de fachadas uniformes y terrazas.",
+    "puerta-sol": "Plaza central de Madrid y punto de encuentro de varias calles comerciales. El reloj de la Real Casa de Correos es la referencia de las campanadas de fin de año.",
+    "letras-madrid": "Plaza de Santa Ana, en el barrio de las Letras, vinculado a la historia literaria de Madrid. Sus terrazas y edificios sirven de pausa durante el paseo por el centro.",
+    "palacio": "Residencia ceremonial con salones, escalinatas y decoración monumental. La visita interior se reserva por separado.",
+    "almudena": "Catedral de Madrid, situada frente al Palacio Real. Su fachada y su entorno completan el recorrido monumental por esta zona de la ciudad.",
+    "plaza-oriente": "Plaza ajardinada entre el Palacio Real y el Teatro Real. Sus paseos y esculturas permiten una pausa entre las visitas del centro de Madrid.",
+    "gran-via": "Avenida madrileña conocida por sus edificios del siglo XX, teatros y comercios. La foto muestra el edificio de Telefónica, una de sus siluetas más reconocibles.",
+    "toledo": "Ciudad amurallada sobre el Tajo: catedral, callejuelas y herencia cristiana, judía e islámica. Conviene recorrerla a pie con pausas.",
+    "toledo-cathedral": "Gran catedral gótica del casco histórico de Toledo. Su arquitectura y sus colecciones hacen de ella una de las visitas principales de la excursión.",
+    "santa-maria-blanca-toledo": "Antigua sinagoga toledana, reconocible por sus columnas blancas y arcos de herradura. Su interior permite conocer parte de la herencia judía de la ciudad.",
+    "mirador-valle-toledo": "Punto panorámico al otro lado del Tajo desde el que se aprecia el conjunto de Toledo. Su ubicación requiere un traslado adicional desde el casco histórico.",
+    "prado": "Pinacoteca esencial para Velázquez, Goya y el arte europeo. Selecciona obras clave para evitar una visita agotadora.",
+    "retiro": "Jardín histórico madrileño con estanque y paseos arbolados. El Palacio de Cristal puede tener cierres por obras; el parque basta para disfrutarlo."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}

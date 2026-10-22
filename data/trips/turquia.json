@@ -1,0 +1,517 @@
+{
+  "id": "turquia",
+  "name": "Turquía después del 15",
+  "flag": "🇹🇷",
+  "start": "2026-11-18",
+  "end": "2026-12-02",
+  "tag": "Impresionante, con clima variable",
+  "intro": "Comenzarás entre las cúpulas y los palacios de Estambul, pasarás cuatro noches entre las formaciones rocosas de Capadocia y terminarás en Izmir, junto al Egeo. La ruta utiliza tres hoteles principales y dos desplazamientos aéreos dentro de Turquía. Noviembre permite hacer el recorrido, aunque el clima puede impedir el vuelo en globo.",
+  "bases": [
+    [
+      "Estambul",
+      6
+    ],
+    [
+      "Göreme / Capadocia",
+      4
+    ],
+    [
+      "Izmir",
+      3
+    ]
+  ],
+  "flight": "Para llegar a Estambul (IST) desde Ciudad de México (MEX), Turkish Airlines ofrece itinerarios que pueden hacer una parada en Cancún (CUN). Revisa el detalle del vuelo: que se venda como directo no siempre significa que vuele sin detenerse. También puedes comparar opciones que cambien de avión en Europa.\n\nAl terminar el viaje, saldrás del aeropuerto Adnan Menderes de Izmir (ADB), conectarás en Estambul y continuarás a México. Antes de comprar, verifica las escalas y la fecha de llegada de cada tramo.",
+  "local": "Desde Estambul volarás a Nevşehir (NAV) o Kayseri (ASR), los aeropuertos que dan acceso a Capadocia. El vuelo tarda unas 1–1½ horas; después tomarás un traslado hasta tu hotel en Göreme.\n\nPara continuar desde Capadocia a Izmir, habrá que comprobar si opera un vuelo sin escalas en esa fecha. Si necesitas cambiar de avión en Estambul, reserva unas 4–6 horas para el recorrido aéreo completo, además de los traslados al hotel.\n\nEstambul tiene dos aeropuertos, IST y SAW, muy separados entre sí. Elige una conexión que use el mismo aeropuerto. Desde Izmir, la excursión a Éfeso requiere aproximadamente 1–1½ horas de transporte por sentido.",
+  "climate": "Estambul suele ser fresca y húmeda en estas fechas, con una referencia de 8–15 °C. Capadocia es más fría y puede tener temperaturas bajo cero por la noche.\n\nLos globos despegan sólo cuando las condiciones y la autorización del día lo permiten. Las cuatro noches en Göreme ofrecen varias oportunidades para intentarlo, pero el vuelo no se puede garantizar.",
+  "solo": "En los hoteles y servicios turísticos más habituales puedes comunicarte en inglés. Para que el viaje resulte cómodo, conviene reservar los traslados entre aeropuerto y hotel en Capadocia y utilizar excursiones locales para los lugares más dispersos.\n\nEn las ciudades podrás combinar transporte público con paseos a pie. Si tomas un taxi, comprueba el uso del taxímetro o acuerda claramente el precio antes de comenzar el trayecto.",
+  "costs": [
+    [
+      "Vuelos internacionales",
+      19000,
+      28000
+    ],
+    [
+      "13 noches en habitación privada",
+      15000,
+      22000
+    ],
+    [
+      "Comida",
+      6500,
+      9500
+    ],
+    [
+      "Vuelos internos y traslados",
+      4500,
+      7000
+    ],
+    [
+      "Entradas, tours y globo",
+      8500,
+      13500
+    ],
+    [
+      "Seguro de viaje y reserva para imprevistos",
+      4000,
+      6000
+    ]
+  ],
+  "tips": [
+    "El presupuesto reserva una cantidad para un vuelo en globo. Antes de pagarlo, revisa cómo se reprograma o devuelve el dinero si el clima obliga a cancelar.",
+    "El pasaporte mexicano ordinario requiere visa. Consulta en evisa.gov.tr si cumples las condiciones de la visa electrónica de 30 días y una sola entrada.",
+    "En Santa Sofía, el recorrido turístico es distinto del acceso destinado al culto. Topkapı tiene un día de cierre semanal: adapta el orden de las visitas al calendario confirmado.",
+    "Pamukkale quedaría para otra ocasión. Incluirlo en esta ruta añadiría más carretera y podría requerir otra noche de hotel."
+  ],
+  "sources": [
+    [
+      "Turkish: ruta desde México",
+      "https://www.turkishairlines.com/en-mx/book-flights-from-mexico"
+    ],
+    [
+      "Capadocia oficial",
+      "https://goturkiye.com/es/cappadocia"
+    ],
+    [
+      "Visas oficiales",
+      "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa/default.en.mfa"
+    ]
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-11-18",
+      "title": "salida desde CDMX",
+      "base": "En vuelo",
+      "places": [],
+      "am": "Revisa el horario del vuelo, prepara el equipaje y deja a mano el pasaporte y los documentos de la reserva.",
+      "pm": "Organiza el traslado al Aeropuerto Internacional de Ciudad de México para llegar unas tres horas antes de la salida. La hora concreta dependerá del vuelo que reserves.",
+      "night": "Comienza el viaje en el vuelo reservado. La primera noche de hotel está prevista para el día de llegada al destino; durante el trayecto, comprueba las conexiones y la hora local.",
+      "mobility": "Vuela desde Ciudad de México hacia Estambul según el itinerario reservado. Si aparece Cancún como parada o una escala en otra ciudad, revisa si debes cambiar de avión y la duración total.",
+      "spend": 650,
+      "note": "Jornada dedicada al vuelo, sin visitas turísticas programadas."
+    },
+    {
+      "n": 2,
+      "date": "2026-11-19",
+      "title": "el primer vistazo a Sultanahmet",
+      "base": "Estambul",
+      "places": [
+        "sultanahmet-square"
+      ],
+      "am": "Tras aterrizar en Estambul, dirígete al hotel. El traslado puede ser largo según el aeropuerto, la ruta y el tráfico.",
+      "pm": "Da un paseo corto por Sultanahmet, la zona histórica situada entre grandes mezquitas y monumentos. Deja las entradas principales para mañana.",
+      "night": "Cena cerca del alojamiento y descansa.",
+      "mobility": "El traslado desde el aeropuerto de Estambul al centro puede tomar unos 60–100 minutos, según ruta y tráfico. Confirma el aeropuerto de llegada antes de contratarlo.",
+      "spend": 950,
+      "note": ""
+    },
+    {
+      "n": 3,
+      "date": "2026-11-20",
+      "title": "cúpulas e historia",
+      "base": "Estambul",
+      "places": [
+        "hagia",
+        "blue",
+        "basilica-cistern"
+      ],
+      "am": "Conoce Santa Sofía y la Mezquita Azul respetando los accesos para visitantes y las pausas por oración. Sus grandes cúpulas cuentan etapas diferentes de la historia de Estambul.",
+      "pm": "Puedes completar el día con la Cisterna Basílica, un antiguo depósito subterráneo de agua sostenido por columnas. Si las primeras visitas se alargan, trasládala a otro día.",
+      "night": "Cena en el casco histórico.",
+      "mobility": "Las visitas de Sultanahmet se conectan a pie. Respeta el tiempo de acceso y los controles de cada monumento.",
+      "spend": 2200,
+      "note": "",
+      "optionalPlaces": [
+        "basilica-cistern"
+      ]
+    },
+    {
+      "n": 4,
+      "date": "2026-11-21",
+      "title": "los patios de los sultanes",
+      "base": "Estambul",
+      "places": [
+        "topkapi",
+        "gulhane"
+      ],
+      "am": "Dedica la mañana al Palacio de Topkapi, antigua residencia de los sultanes otomanos. Comprueba qué áreas incluye la entrada elegida.",
+      "pm": "Pasea por el parque Gülhane, junto al palacio, y reserva tiempo para una comida tranquila.",
+      "night": "Regresa al hotel a tu ritmo, a pie o en tranvía según la ubicación.",
+      "mobility": "Combina caminata y tranvía para llegar a Topkapi y regresar desde Gülhane, según la ubicación del hotel.",
+      "spend": 2200,
+      "note": ""
+    },
+    {
+      "n": 5,
+      "date": "2026-11-22",
+      "title": "el Bósforo y la otra orilla",
+      "base": "Estambul",
+      "places": [
+        "bosphorus",
+        "kadikoy"
+      ],
+      "am": "Toma un ferry para contemplar el Bósforo desde el agua. Elige una ruta y duración concretas antes de embarcar; no todos los barcos hacen el mismo recorrido.",
+      "pm": "Conoce Kadıköy, en la orilla asiática, entre calles comerciales, mercados y cafés.",
+      "night": "Regresa en ferry o transporte urbano al lado donde está tu hotel.",
+      "mobility": "Utiliza ferry y transporte urbano. La navegación puede durar entre 30 y 90 minutos según la ruta elegida; confirma los muelles de salida y regreso.",
+      "spend": 1400,
+      "note": ""
+    },
+    {
+      "n": 6,
+      "date": "2026-11-23",
+      "title": "bazares y mezquitas",
+      "base": "Estambul",
+      "places": [
+        "grand-bazaar",
+        "suleymaniye",
+        "spice-bazaar"
+      ],
+      "am": "Recorre el Gran Bazar cuando esté abierto, con tiempo para observar los talleres y comercios sin sentir obligación de comprar.",
+      "pm": "Continúa hacia la mezquita de Süleymaniye y el Bazar de las Especias. Organiza las visitas religiosas alrededor de sus horarios para turistas.",
+      "night": "Cena cerca del hotel. Si el Gran Bazar cierra ese día, intercambia esta jornada con otra de Estambul.",
+      "mobility": "Recorre los bazares y la zona de Süleymaniye a pie, con apoyo del tranvía para los extremos de la ruta.",
+      "spend": 1150,
+      "note": "Comprueba el día de cierre del Gran Bazar y reorganiza esta jornada si coincide con tu visita."
+    },
+    {
+      "n": 7,
+      "date": "2026-11-24",
+      "title": "Galata y día flexible",
+      "base": "Estambul",
+      "places": [
+        "galata-tower",
+        "istiklal"
+      ],
+      "am": "Acércate a la torre de Gálata y recorre el barrio. La entrada al mirador es opcional; el paseo exterior también permite disfrutar el conjunto.",
+      "pm": "Continúa por la avenida İstiklal y deja parte de la tarde para compras o una visita que haya quedado pendiente.",
+      "night": "Prepara la maleta para volar a Capadocia.",
+      "mobility": "Utiliza tranvía, metro o funicular para llegar a la zona de Gálata e İstiklal, y recorre las calles a pie.",
+      "spend": 1200,
+      "note": ""
+    },
+    {
+      "n": 8,
+      "date": "2026-11-25",
+      "title": "hacia el paisaje de roca",
+      "base": "Göreme",
+      "places": [
+        "goreme-town"
+      ],
+      "am": "Vuela hacia el aeropuerto de Nevşehir o Kayseri, según la conexión reservada, y continúa en traslado contratado hasta Göreme.",
+      "pm": "Instálate y da un paseo por el pueblo para conocer el paisaje de roca y las construcciones excavadas.",
+      "night": "Cena y confirma la recogida del globo si has contratado esa experiencia.",
+      "mobility": "El vuelo doméstico dura aproximadamente 1–1½ horas; añade unos 40–80 minutos de traslado a Göreme, según el aeropuerto. Reserva recogida y alojamiento con el mismo aeropuerto confirmado.",
+      "spend": 2000,
+      "note": ""
+    },
+    {
+      "n": 9,
+      "date": "2026-11-26",
+      "title": "amanecer entre chimeneas",
+      "base": "Göreme",
+      "places": [
+        "cappadocia",
+        "goreme-open-air"
+      ],
+      "am": "Si las autoridades autorizan los vuelos y has reservado la actividad, comienza antes del amanecer con el paseo en globo. Su realización depende del viento y puede cancelarse.",
+      "pm": "Después de descansar y desayunar, visita el Museo al Aire Libre de Göreme, un conjunto de iglesias excavadas en la roca.",
+      "night": "Cena temprano después de haber madrugado.",
+      "mobility": "El operador del globo debe indicar la recogida y el regreso. Para el museo al aire libre, utiliza taxi, excursión local o un paseo si las condiciones y distancia desde el hotel te resultan cómodas.",
+      "spend": 5200,
+      "note": "El vuelo en globo depende de autorización meteorológica. Si se cancela, pregunta por una de las siguientes mañanas; no puede garantizarse."
+    },
+    {
+      "n": 10,
+      "date": "2026-11-27",
+      "title": "valles y ciudades subterráneas",
+      "base": "Göreme",
+      "places": [
+        "derinkuyu",
+        "ihlara"
+      ],
+      "am": "Reserva una excursión que incluya una ciudad subterránea, como Derinkuyu, y comprueba el recorrido exacto antes de pagar. Sus pasadizos pueden resultar incómodos si no te gustan los espacios estrechos.",
+      "pm": "El valle de Ihlara puede completar la ruta si está incluido en el programa contratado. Pregunta cuánto se camina y qué tramos se visitan para elegir una excursión acorde con tu energía.",
+      "night": "Regresa a Göreme para dormir.",
+      "mobility": "Una excursión por ciudades subterráneas y valles suele ocupar unas 7–9 horas. Comprueba las paradas exactas y cuánto se camina.",
+      "spend": 2300,
+      "note": ""
+    },
+    {
+      "n": 11,
+      "date": "2026-11-28",
+      "title": "margen para clima y paisaje",
+      "base": "Göreme",
+      "places": [
+        "uchisar"
+      ],
+      "am": "Si el globo se canceló, esta mañana deja una nueva oportunidad, siempre que haya disponibilidad y condiciones adecuadas.",
+      "pm": "Conoce Uçhisar y su gran formación rocosa fortificada. Puedes dedicar el resto del día a descansar o a un recorrido corto por los paisajes cercanos.",
+      "night": "Prepara el equipaje para viajar al Egeo.",
+      "mobility": "Un taxi o una excursión corta permite visitar Uçhisar. Si se reprograma el globo, coordina la recogida con el operador.",
+      "spend": 1500,
+      "note": "El presupuesto contempla un solo vuelo en globo. Reprogramar por cancelación no significa reservar y pagar varios vuelos."
+    },
+    {
+      "n": 12,
+      "date": "2026-11-29",
+      "title": "llegada al Egeo y paseo por Kordon",
+      "base": "Izmir",
+      "places": [
+        "kordon-izmir"
+      ],
+      "am": "Vuela hacia Izmir, con la conexión que figure en tu reserva, y trasládate al hotel.",
+      "pm": "Si el horario lo permite, pasea por Kordon, el frente marítimo de la ciudad. Si llegas tarde, prioriza instalarte y descansar.",
+      "night": "Cena cerca del alojamiento.",
+      "mobility": "El viaje a Izmir puede ocupar un bloque de 4–6 horas si requiere conexión, además del margen aeroportuario. Evita reservas que exijan cambiar entre los aeropuertos IST y SAW en Estambul.",
+      "spend": 2300,
+      "note": "Una conexión que obliga a cambiar entre los aeropuertos IST y SAW añade un traslado largo por Estambul. Evítala al elegir estos vuelos internos."
+    },
+    {
+      "n": 13,
+      "date": "2026-11-30",
+      "title": "Éfeso en mármol",
+      "base": "Izmir",
+      "places": [
+        "ephesus",
+        "celsus",
+        "ephesus-terrace-houses"
+      ],
+      "am": "Sal en una excursión o traslado reservado hacia Éfeso. Recorre la antigua ciudad, donde las calles y edificios permiten imaginar la vida de una gran urbe romana.",
+      "pm": "Dedica tiempo a la Biblioteca de Celso y, si eliges su entrada adicional, a las Casas de la Terraza, que conservan espacios domésticos y decoración.",
+      "night": "Regresa a Izmir para cenar.",
+      "mobility": "El traslado de Izmir a Éfeso toma aproximadamente 1–1½ horas por sentido. Una excursión o vehículo reservado facilita llegar al yacimiento y volver.",
+      "spend": 2800,
+      "note": "",
+      "optionalPlaces": [
+        "ephesus-terrace-houses"
+      ]
+    },
+    {
+      "n": 14,
+      "date": "2026-12-01",
+      "title": "Kemeraltı y paseos sin prisas",
+      "base": "Izmir",
+      "places": [
+        "kemeralti",
+        "izmir"
+      ],
+      "am": "Recorre el bazar de Kemeraltı, una red de calles comerciales del centro de Izmir.",
+      "pm": "Pasea por los alrededores de la plaza Konak y deja tiempo libre para descansar y preparar la maleta.",
+      "night": "Disfruta la última cena y confirma el traslado al aeropuerto.",
+      "mobility": "Recorre Kemeraltı y la zona de Konak a pie, utilizando transporte urbano para volver al hotel si queda lejos.",
+      "spend": 1000,
+      "note": ""
+    },
+    {
+      "n": 15,
+      "date": "2026-12-02",
+      "title": "vuelo a Ciudad de México",
+      "base": "Regreso",
+      "places": [],
+      "am": "Desayuna, entrega la habitación y sal hacia el aeropuerto con tiempo suficiente para el traslado y los controles de salida.",
+      "pm": "Tomarás el vuelo de regreso. Si hay que cambiar de avión, conviene que los tramos estén en una misma reserva para que la aerolínea gestione la conexión.",
+      "night": "Llegarás a Ciudad de México a la hora indicada en el billete. Comprueba la fecha de llegada antes de pedir vacaciones, porque una conexión larga puede añadir un día.",
+      "mobility": "La ruta propuesta sale de Izmir (ADB), conecta en Estambul (IST) y continúa hacia Ciudad de México. Compra los tramos en una misma reserva cuando sea posible.",
+      "spend": 650,
+      "note": "Comprueba la fecha real de llegada a Ciudad de México. Una conexión larga puede añadir un día al viaje."
+    }
+  ],
+  "work": 11,
+  "profile": {
+    "pace": "Equilibrado",
+    "solo": "Requiere más atención",
+    "weather": "Alta",
+    "why": "Las pausas y cuatro noches en Göreme dan margen, pero dos vuelos internos y traslados contratados añaden organización. El globo depende del viento.",
+    "weatherWhy": "Los vuelos en globo de Capadocia pueden cancelarse por viento u otras condiciones meteorológicas; las cuatro noches en Göreme dejan margen para intentarlo.",
+    "soloWhy": "Los dos vuelos internos, los traslados aeroportuarios y las excursiones a lugares dispersos requieren más coordinación que una ruta exclusivamente urbana."
+  },
+  "experiences": [
+    "Cúpulas de Santa Sofía y la Mezquita Azul",
+    "Cruzar el Bósforo en ferry",
+    "Bazares y patios del Palacio Topkapi",
+    "Iglesias excavadas en Göreme y valles de Capadocia",
+    "Las columnas de Éfeso y la Biblioteca de Celso"
+  ],
+  "routeCities": [
+    "Estambul",
+    "Göreme",
+    "Uçhisar",
+    "Izmir"
+  ],
+  "cover": "cappadocia",
+  "hotels": [],
+  "stays": [
+    [
+      "Estambul",
+      "Sultanahmet facilita las visitas a monumentos; Karaköy es otra base práctica para moverte."
+    ],
+    [
+      "Göreme",
+      "Elige un hotel con buena calefacción y traslado organizado. Además de la terraza, revisa la comodidad de la habitación."
+    ],
+    [
+      "Izmir",
+      "Alsancak y el centro permiten salir a pasear y cenar con facilidad. Comprueba también el punto de recogida de la excursión a Éfeso."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Estambul",
+      "coords": [
+        41.0082,
+        28.9784
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Göreme",
+      "coords": [
+        38.6431,
+        34.8289
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 2
+    },
+    {
+      "name": "Derinkuyu",
+      "coords": [
+        38.3753,
+        34.734
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 3
+    },
+    {
+      "name": "Ihlara",
+      "coords": [
+        38.2387,
+        34.3061
+      ],
+      "kind": "Visita opcional",
+      "optional": true,
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Uçhisar",
+      "coords": [
+        38.628,
+        34.805
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Izmir",
+      "coords": [
+        38.4237,
+        27.1428
+      ],
+      "kind": "Base para dormir",
+      "optional": false,
+      "base": true,
+      "order": 6
+    },
+    {
+      "name": "Éfeso",
+      "coords": [
+        37.9396,
+        27.3416
+      ],
+      "kind": "Visita del recorrido",
+      "optional": false,
+      "base": false,
+      "order": 7
+    }
+  ],
+  "placeDescriptions": {
+    "cappadocia": "Paisaje de toba volcánica, chimeneas de hadas e iglesias excavadas. Cuatro noches permiten margen meteorológico para el globo.",
+    "sultanahmet-square": "La plaza de Sultanahmet ocupa el antiguo Hipódromo de Constantinopla y conserva sus monumentos y obeliscos.",
+    "hagia": "Monumento bizantino transformado en mezquita. El circuito turístico y el acceso para culto son distintos; comprueba la entrada correspondiente.",
+    "blue": "Mezquita otomana de grandes cúpulas y azulejería. La entrada turística se adapta a horarios de oración y requiere vestimenta apropiada.",
+    "basilica-cistern": "La Cisterna Basílica es un gran depósito subterráneo sostenido por columnas, bajo el casco histórico de Estambul.",
+    "topkapi": "Antigua residencia de los sultanes otomanos, formada por patios y pabellones. El harén puede requerir una modalidad de entrada específica.",
+    "gulhane": "El parque Gülhane ofrece caminos arbolados junto al recinto del palacio de Topkapi.",
+    "bosphorus": "El Bósforo separa los lados europeo y asiático de Estambul; sus orillas se recorren también en ferry.",
+    "kadikoy": "Kadıköy es un distrito de la orilla asiática de Estambul, con muelles, calles comerciales y restaurantes.",
+    "grand-bazaar": "El Gran Bazar reúne calles cubiertas y puestos comerciales en el centro histórico de Estambul.",
+    "suleymaniye": "La mezquita de Süleymaniye destaca por sus cúpulas y minaretes sobre una de las colinas de Estambul.",
+    "spice-bazaar": "El Bazar de las Especias reúne puestos de especias, dulces y otros productos bajo galerías cubiertas.",
+    "galata-tower": "La torre de Gálata es un hito del barrio de Beyoğlu y un mirador sobre Estambul.",
+    "istiklal": "La avenida İstiklal es un eje peatonal de Beyoğlu, con comercios, edificios históricos y tranvía.",
+    "goreme-town": "Göreme se extiende entre formaciones rocosas de Capadocia y sirve de base para explorar la región.",
+    "goreme-open-air": "El museo al aire libre de Göreme conserva iglesias y espacios excavados en la roca.",
+    "derinkuyu": "Derinkuyu permite recorrer pasajes y cámaras de una ciudad subterránea excavada en la roca.",
+    "ihlara": "El valle de Ihlara sigue el río Melendiz entre paredes rocosas y vegetación.",
+    "uchisar": "El pueblo de Uçhisar rodea una gran formación rocosa que funciona como castillo y mirador de Capadocia.",
+    "kordon-izmir": "El Kordon es el paseo marítimo de Esmirna, con zonas verdes junto a la bahía.",
+    "ephesus": "Ciudad romana con calles de mármol, teatro y Biblioteca de Celso. Las casas aterrazadas suelen tener un acceso adicional.",
+    "celsus": "La fachada reconstruida de la biblioteca de Celso es uno de los monumentos más reconocibles de Éfeso.",
+    "ephesus-terrace-houses": "Las casas en terraza de Éfeso permiten ver viviendas antiguas con restos de decoración y espacios domésticos.",
+    "kemeralti": "Kemeraltı es el barrio comercial histórico de Esmirna, con calles de mercado y comercios tradicionales.",
+    "izmir": "Ciudad portuaria del Egeo, con paseo Kordon y bazar Kemeraltı. Es una base práctica para visitar Éfeso."
+  },
+  "seasonality": {
+    "summary": "Por definir",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "11": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "12": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "01": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "02": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "03": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "04": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "05": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "06": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "07": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "08": {
+        "status": "pending",
+        "description": "Por definir"
+      },
+      "09": {
+        "status": "pending",
+        "description": "Por definir"
+      }
+    }
+  }
+}
