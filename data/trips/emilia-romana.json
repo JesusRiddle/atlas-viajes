@@ -31,9 +31,9 @@
   "work": 8,
   "costs": [
     [
-      "Viaje completo · presupuesto preliminar, pendiente de desglose cotizado",
-      65000,
-      90000
+      "Viaje completo · presupuesto estimado con cotizaciones y gastos previstos",
+      58000,
+      65000
     ]
   ],
   "profile": {
@@ -1880,7 +1880,7 @@
   },
   "lodgingSummary": "3 alojamientos (2 bases turísticas + 1 pernocta breve)",
   "heroLodgingSummary": "3 alojamientos",
-  "budgetPreliminary": true,
+  "budgetPreliminary": false,
   "cardHighlights": [
     "Milano",
     "Firenze",
