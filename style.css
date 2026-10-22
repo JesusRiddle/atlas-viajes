@@ -1363,5 +1363,15 @@ html{scroll-padding-top:78px}
 #dias .day .daycontent details.atlas-day-fold:not([open]) > summary{margin-bottom:0;padding-bottom:0;border-bottom:0}
 
 /* Separar el encabezado plegable de Cómo trasladarte de su contenido. */
-#dias .day .daycontent details.mobility-card[open] > summary{padding-bottom:12px;margin-bottom:14px;border-bottom:1px solid #ded9cb}
+#dias .day .daycontent details.mobility-card[open] > summary{padding-bottom:0;margin-bottom:12px;border-bottom:0}
 #dias .day .daycontent details.mobility-card:not([open]) > summary{padding-bottom:0;margin-bottom:0;border-bottom:0}
+
+/* Presupuesto diario: título compacto, icono y subtotal a la derecha. */
+#dias .day .daycontent details.day-budget > summary.day-budget-heading{display:flex;align-items:center;gap:10px;padding:0 26px 12px 0;margin:0 0 9px;border-bottom:1px solid var(--line)}
+#dias .day .daycontent details.day-budget > summary .day-budget-symbol{display:grid;place-items:center;flex:none;width:32px;height:32px;border-radius:6px;background:#e0e9ec;color:#52656a}
+#dias .day .daycontent details.day-budget > summary .day-budget-title{min-width:0}
+#dias .day .daycontent details.day-budget > summary .day-budget-title h4{margin:0;font:600 14px/1.4 Arial,Helvetica,sans-serif}
+#dias .day .daycontent details.day-budget > summary .day-budget-title small{display:block;margin-top:2px;font-size:12px;line-height:1.35}
+#dias .day .daycontent details.day-budget > summary > strong{margin-left:auto;text-align:right;min-width:0;font-size:16px;font-weight:700;font-variant-numeric:tabular-nums}
+#dias .day .daycontent details.day-budget:not([open]) > summary.day-budget-heading{padding-bottom:0;margin-bottom:0;border-bottom:0}
+@media(max-width:680px){#dias .day .daycontent details.day-budget > summary.day-budget-heading{gap:8px}#dias .day .daycontent details.day-budget > summary > strong{font-size:14px}}
