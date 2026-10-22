@@ -1245,6 +1245,11 @@ html{scroll-padding-top:78px}
 /* Cronología de ida y regreso en Traslados principales: comparte diseño con el itinerario diario. */
 #traslados .mt-flight-timeline{margin:13px 12px 15px}
 #traslados .mt-flight-timeline .flight-leg-middle{align-self:center}
-#traslados .mt-flight-number{margin-top:12px;text-align:center;color:#5e563f;font-size:11px;font-weight:700;letter-spacing:.04em}
+#traslados .mt-flight-number{color:#5e563f;font-size:11px;font-weight:700;letter-spacing:.01em}
+#traslados .mt-flight-timeline .flight-leg{grid-template-columns:110px minmax(0,1fr) 110px;gap:10px}
+#traslados .mt-flight-timeline .mt-airport-name{display:block;max-width:110px;color:var(--muted);font-size:10px;font-weight:400;line-height:1.2;text-align:center}
+#traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{align-self:flex-end}
+#traslados .mt-flight-timeline .flight-line-duration{white-space:nowrap}
+@media(max-width:550px){#traslados .mt-flight-timeline .flight-leg{grid-template-columns:71px minmax(0,1fr) 71px;gap:4px}#traslados .mt-flight-timeline .mt-airport-name{font-size:9px;max-width:71px}#traslados .mt-flight-number{font-size:10px}#traslados .mt-flight-timeline .flight-line-duration{font-size:10px;padding:2px 4px}}
 #traslados .mt-flight-timeline .flight-summary{margin-top:14px}
 @media(max-width:550px){#traslados .mt-flight-timeline{margin:12px 0 14px}}
