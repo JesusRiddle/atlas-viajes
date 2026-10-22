@@ -2133,3 +2133,19 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 @media(max-width:560px){
   #temporadas .season-month{padding-top:10px}
 }
+
+/* Temporadas: misma sombra sutil al hover que las tarjetas de alojamiento. */
+@media(hover:hover) and (pointer:fine){
+  #temporadas .season-month{
+    transition:box-shadow .2s ease,border-color .2s ease;
+  }
+  #temporadas .season-month:hover{
+    box-shadow:0 5px 18px rgba(16,42,51,.07);
+    border-right-color:#abbfc4;
+    border-bottom-color:#abbfc4;
+    border-left-color:#abbfc4;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #temporadas .season-month{transition:none}
+}
