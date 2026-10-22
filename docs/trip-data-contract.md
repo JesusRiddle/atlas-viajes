@@ -10,13 +10,13 @@ Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON con
 | `""` | Texto no capturado (tolerado como entrada) | «Por definir»; preferir `null` |
 | `[]` | Colección aún sin elementos registrados | «Por definir» en la sección, no «ninguno» ni «0» |
 | `{}` | Objeto estructurado sin propiedades informadas (por ejemplo, tipos de cambio) | «Por definir» para la información relevante |
-| `"no_aplica"` | Se evaluó el campo y **no corresponde a este viaje** | «No aplica» |
+| `"no_aplica"` | Se evaluó el campo escalar y **no corresponde a este viaje** | «No aplica» |
 | `0` | Cantidad o costo **conocido y realmente cero** | Mostrar cero con su unidad; nunca usar como sustituto de pendiente |
 | `false` | Respuesta negativa confirmada | Mostrar el estado negativo real, no «Por definir» |
 | `"pending"` | Estado de temporada pendiente de estudiar | Tarjeta morada «Por definir» |
 | `"draft"` | Etapa de planificación del viaje; no equivale a campos vacíos | Mostrar contenido progresivamente |
 
-**Importante:** `null` y `[]` no significan que algo no exista ni que sea gratis. `"no_aplica"` se reserva a atributos escalares u opciones que el modelo permita; no debe sustituir colecciones, fechas, objetos, montos ni el identificador. No mezclar estados de información con el contenido visible: «Por definir» y «No aplica» son textos de UI, no datos de negocio.
+**Importante:** `null` y `[]` no significan que algo no exista ni que sea gratis. `"no_aplica"` se reserva a atributos escalares u opciones que el modelo permita; no debe sustituir colecciones, fechas, objetos, montos ni el identificador. Usar únicamente `no_aplica` (no `not_applicable`) como valor canónico. No mezclar estados de información con el contenido visible: «Por definir» y «No aplica» son textos de UI, no datos de negocio.
 
 ## Reglas por familia de campos
 - **Identidad:** `id` (slug único, minúsculas, dígitos y guiones) y `name` (texto no vacío) obligatorios. `flag` puede ser `null`. El número y orden del viaje proceden de `modules.js`, no del JSON.
@@ -25,10 +25,17 @@ Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON con
 - **Colecciones:** `routeCities`, `bases`, `days`, `hotels`, `stays`, `mapPoints`, `majorTransport`, `expenses`, `costs`, `reservations` y similares se inicializan como `[]`. Una colección vacía significa «sin registros todavía», no «no se visitarán ciudades».
 - **Dinero:** importe pendiente = `null`, importe confirmado de cero = `0`. Un costo conocido necesita moneda. `exchangeRates: {}` indica tipos de cambio pendientes; no convertir sin cotización válida. Un subtotal acumulado de entradas conocidas puede ser cero matemático, pero debe mostrarse como pendiente si no hay partidas suficientes para afirmar un total.
 - **Duraciones y cantidades:** `work: null` = días laborales por definir; `work: 0` = exactamente cero días laborales. Las noches no se presuponen a partir de bases vacías.
+- **Campos opcionales:** la plantilla incluye también extensiones de los viajes existentes (`tips`, `sources`, `knownCosts`, `railSummary`, `family`, `placeDescriptions`, etc.). Las banderas de presentación empiezan en `false` porque expresan una función desactivada, no un dato turístico desconocido.
 - **Temporadas:** deben existir 12 claves `01`…`12`; cada mes empieza con `{ "status": "pending", "description": null }`. Estados válidos: `pending`, `recommended`, `conditional`, `avoid`. `icon` es opcional, y no sustituye `status`.
 - **Portadas y mapa:** `cover: null` significa imagen sin asignar, no imagen rota. `mapPoints: []` representa ubicaciones pendientes; no crear pines falsos.
 - **Reserva o transporte:** colección vacía = aún no se han definido. Si no aplica una categoría a un viaje, ese estado debe documentarse explícitamente en el modelo futuro; no inferirlo de `[]`.
 - **Perfil:** los atributos de `profile` pueden estar en `null`. Nunca inferir ritmo, facilidad para viajar solo ni clima de un borrador sin investigar.
+
+## Alcance real de los pasos 1–2 y pendientes
+- La plantilla se puede copiar y publicar como borrador **si se conserva su estructura**. Aún no basta un archivo literal de dos propiedades: el cargador exige `days` y `mapPoints` como arrays. La normalización del paso 3 resolverá esto.
+- La vista `draft` es transitoria y simplificada: al rellenar algunos campos no se convierten todavía en componentes completos, y algunos valores (en especial el presupuesto) continúan mostrándose como pendientes. Esto corresponde a los pasos 4–6.
+- Los textos «Por definir» y «No aplica» pertenecen a la interfaz y deben derivarse de valores semánticos; no se guardan como campos ficticios.
+- El orden JSON de las claves mensuales puede variar porque las claves `"10"`, `"11"` y `"12"` son índices enteros en JavaScript. La interfaz debe ordenar por los meses 01–12, no depender del orden de inserción del objeto.
 
 ## Visualización obligatoria
 1. Mantener visibles todas las secciones del viaje, aunque estén pendientes.
