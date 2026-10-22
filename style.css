@@ -1296,3 +1296,19 @@ html{scroll-padding-top:78px}
 .daycontent .mobility-card .day-transport .flight-leg{min-height:34px}
 .daycontent .mobility-card .day-transport .flight-layover{margin:0;padding:0;min-height:13px;line-height:1.25}
 @media(max-width:680px){.daycontent .mobility-card .day-transport .flight-leg{min-height:36px}.daycontent .mobility-card .day-transport .flight-layover{min-height:15px}}
+
+/* Timeline ferroviario: conserva el lenguaje visual de los vuelos, con estaciones completas. */
+#traslados .mt-train-timeline{margin:10px 10px 12px}
+#traslados .mt-train-timeline .mt-train-leg{grid-template-columns:165px minmax(0,1fr) 165px;min-height:46px;gap:8px}
+#traslados .mt-train-timeline .flight-endpoint{align-items:center;min-width:0;text-align:center}
+#traslados .mt-train-timeline .flight-endpoint strong{align-self:center}
+#traslados .mt-train-timeline .flight-endpoint .mt-station-name{display:block;width:auto;max-width:165px;align-self:center;white-space:nowrap;font-size:11px;font-weight:500;line-height:1.35;text-align:center}
+#traslados .mt-train-timeline .mt-train-direction{margin:6px 0 0;text-align:center;color:#5e563f;font-size:11px;font-weight:600}
+#traslados .mt-train-timeline .flight-line-duration{white-space:nowrap}
+@media(max-width:680px){
+ #traslados .mt-train-timeline{margin:9px 0}
+ #traslados .mt-train-timeline .mt-train-leg{grid-template-columns:76px minmax(0,1fr) 76px;gap:4px;min-height:62px}
+ #traslados .mt-train-timeline .flight-endpoint .mt-station-name{max-width:76px;white-space:normal;overflow-wrap:normal;font-size:10px}
+ #traslados .mt-train-timeline .flight-line-duration{font-size:10px;padding:2px 4px;white-space:normal}
+ #traslados .mt-train-timeline .mt-flight-number{font-size:10px}
+}

@@ -125,6 +125,24 @@ window.AtlasMajorTransport = (() => {
         }).join('');
         return '<div class="flight-timeline mt-flight-timeline">' + parts + '</div>';
     }
+    function trainJourneyTimeline(journey) {
+        const segments = journey.segments || [];
+        if (!segments.length) return '';
+        const roundtrip = journey.direction === 'roundtrip';
+        const rows = segments.map((segment, index) => {
+            const direction = roundtrip ? (index === 0 ? 'Ida' : index === segments.length - 1 ? 'Regreso' : 'Trayecto ' + (index + 1)) : '';
+            const label = direction ? '<div class="mt-train-direction">' + esc(direction) + '</div>' : '';
+            return label + '<div class="flight-leg mt-train-leg" aria-label="' + esc(segment.from + ' → ' + segment.to) + '">' +
+                '<div class="flight-endpoint"><strong>' + esc(clock(segment.departure)) + '</strong><span class="mt-station-name">' + esc(segment.from) + '</span></div>' +
+                '<div class="flight-leg-middle"><div class="flight-line"><span class="flight-line-duration">' +
+                esc(minutes(model.durationMinutes(segment.departure, segment.arrival))) +
+                (segment.service ? ' <span class="mt-flight-number">· ' + esc(segment.service) + '</span>' : '') +
+                '</span></div></div>' +
+                '<div class="flight-endpoint flight-endpoint-arrival"><strong>' + esc(clock(segment.arrival)) +
+                '</strong><span class="mt-station-name">' + esc(segment.to) + '</span></div></div>';
+        }).join('');
+        return '<div class="flight-timeline mt-train-timeline">' + rows + '</div>';
+    }
     function transportKind(type) {
         const shapes = {
             flight: '<path d="M22 16v-2l-8-5V3.5a2 2 0 0 0-4 0V9l-8 5v2l8-2.5V19l-2 1.5V22l4-1 4 1v-1.5L14 19v-5.5L22 16Z"/>',
@@ -163,16 +181,16 @@ window.AtlasMajorTransport = (() => {
             const dayLabel = Number.isFinite(index) && index > 0 ? 'Día ' + String(index).padStart(2, '0') + ' · ' : '';
             const direction = j.direction === 'outbound' ? 'Ida' : j.direction === 'return' ? 'Regreso' : '';
             return '<div class="mt-legs">' +
-                '<h4 class="mt-leg-heading' + (transport.type === 'flight' ? ' mt-flight-heading' : '') + '"><span class="mt-flight-heading-title">' + esc(dayLabel) +
+                '<h4 class="mt-leg-heading' + ((transport.type === 'flight' || transport.type === 'train') ? ' mt-flight-heading' : '') + '"><span class="mt-flight-heading-title">' + esc(dayLabel) +
                 (direction ? esc(direction) + esc(journeyDate(j, trip)) :
                     esc(journeyDate(j, trip).replace(/^ · /, ''))) + '</span>' +
-                (transport.type === 'flight' && j.segments?.length ? (() => {
+                ((transport.type === 'flight' || transport.type === 'train') && j.segments?.length ? (() => {
                     const info = model.journeySummary(j);
                     return '<span class="mt-flight-heading-stats"><span><b>Duración total</b> ' + esc(minutes(info.durationMinutes)) +
                         '</span><span><b>Escalas</b> ' + info.stops + '</span><span><b>Llegada</b> ' +
                         esc(clock(j.segments[j.segments.length - 1].arrival)) + '</span></span>';
                 })() : '') + '</h4>' +
-                (transport.type === 'flight' ? flightJourneyTimeline(j) : segmentDetails(j, false)) + '</div>';
+                (transport.type === 'flight' ? flightJourneyTimeline(j) : transport.type === 'train' ? trainJourneyTimeline(j) : segmentDetails(j, false)) + '</div>';
         }).join('');
         return '<details class="mt-card" data-transport="' + esc(transport.id) + '">' +
             '<summary><span class="mt-kind">' + transportKind(transport.previewType || transport.type) + '</span>' +
@@ -190,7 +208,7 @@ window.AtlasMajorTransport = (() => {
             esc(transport.title) + '">' + fares + '</select></label></div>' +
             (transport.type === 'flight' ? '<p class="mt-baggage">' +
                 esc(baggageLabel(fare.baggage)) + '</p>' : '') +
-            '<div class="mt-leg-list' + (transport.type === 'flight' ? ' mt-flight-list' : '') + '">' + detail + '</div>' +
+            '<div class="mt-leg-list' + ((transport.type === 'flight' || transport.type === 'train') ? ' mt-flight-list' : '') + '">' + detail + '</div>' +
             '<div class="mt-terms"><span><strong>Cambios:</strong> ' + esc(fare.changes || 'Por confirmar') +
             '</span><span><strong>Reembolsos:</strong> ' + esc(fare.refunds || 'Por confirmar') +
             '</span></div>' +

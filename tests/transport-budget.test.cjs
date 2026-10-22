@@ -212,6 +212,18 @@ test('los días muestran el transporte vinculado y siguen el selector Frecciaros
     }
 });
 
+test('Traslados principales muestra trenes en timeline y distingue el regreso de una escala', () => {
+    vm.runInContext(fs.readFileSync('components/major-transport.js', 'utf8'), ctx, { filename: 'components/major-transport.js' });
+    const html = ctx.window.AtlasMajorTransport.render(trip);
+    assert.ok(html.includes('mt-train-timeline'));
+    assert.ok(html.includes('Milano Centrale'));
+    assert.ok(html.includes('Bologna Centrale'));
+    assert.ok(html.includes('Frecciarossa 9613'));
+    assert.ok(html.includes('Regionale 17543'));
+    assert.ok(html.includes('Regionale 17558'));
+    assert.ok(html.includes('mt-train-direction'));
+});
+
 test('Traslados principales muestra cronologías de ida y regreso con sus números de vuelo', () => {
     vm.runInContext(fs.readFileSync('components/major-transport.js', 'utf8'), ctx, { filename: 'components/major-transport.js' });
     const html = ctx.window.AtlasMajorTransport.render(trip);
