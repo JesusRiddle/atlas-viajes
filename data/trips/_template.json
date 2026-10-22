@@ -12,8 +12,11 @@
   "costs": [],
   "profile": {
     "pace": null,
+    "paceWhy": null,
     "solo": null,
-    "weather": null
+    "soloWhy": null,
+    "weather": null,
+    "weatherWhy": null
   },
   "intro": null,
   "climate": null,
@@ -90,5 +93,28 @@
       }
     }
   },
-  "practicalIndicators": []
+  "practicalIndicators": [],
+  "tips": [],
+  "sources": [],
+  "sourceNote": null,
+  "budgetRange": null,
+  "budgetNote": null,
+  "placeDescriptions": {},
+  "optionalSection": null,
+  "family": null,
+  "layoutClass": null,
+  "formatName": false,
+  "routeHighlights": [],
+  "cardHighlights": [],
+  "introHighlights": [],
+  "boldCityNames": false,
+  "emphasisStyle": false,
+  "linkRailInText": false,
+  "knownCosts": [],
+  "costExclusions": null,
+  "exchangeNote": null,
+  "railSummary": [],
+  "railTotal": null,
+  "railExclusions": null,
+  "railCurrencyNote": null
 }
