@@ -344,3 +344,36 @@ test('el alta mínima queda oculta hasta activar el módulo y conserva los 17 vi
     assert.equal(atlas.trips[0].mapPoints.length, 0);
     assert.equal(atlas.trips[0].seasonality.months['01'].status, 'pending');
 });
+
+test('migración piloto preserva contenido sin copiar fechas ni precios heredados', async () => {
+    const catalog = loadCatalog();
+    assert.equal(catalog.filter(m => m.available).length, 17);
+    const module = catalog.find(m => m.id === 'espana-portugal-renovado');
+    assert.ok(module);
+    assert.equal(module.available, false);
+    const source = JSON.parse(fs.readFileSync('data/trips/espana-portugal.json','utf8'));
+    const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-renovado.json','utf8'));
+    assert.equal(migrated.name, source.name);
+    assert.equal(migrated.intro, source.intro);
+    assert.deepEqual(migrated.routeCities, source.routeCities);
+    assert.deepEqual(migrated.experiences, source.experiences);
+    for (const field of ['start','end','work','costs','expenses','majorTransport','days','reservations','budgetRange','hotels','stays','seasonality']) {
+        assert.equal(Object.hasOwn(migrated, field), false, field + ' should not be copied without review');
+    }
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json','utf8'));
+    const window = { ATLAS_MODULES: [{ ...module, available: true }] };
+    const sources = {
+        'data/places.json': {},
+        'data/trips/_template.json': template,
+        'data/trips/espana-portugal-renovado.json': migrated
+    };
+    const fetch = async url => ({ ok: Object.hasOwn(sources, url), status: 404,
+        json: async () => sources[url] });
+    vm.runInNewContext(fs.readFileSync('loader.js','utf8'), { window, fetch });
+    const trip = (await window.ATLAS_READY).trips[0];
+    assert.equal(trip.start, null);
+    assert.equal(trip.end, null);
+    assert.equal(trip.days.length, 0);
+    assert.equal(trip.expenses.length, 0);
+    assert.equal(trip.seasonality.months['01'].status, 'pending');
+});
