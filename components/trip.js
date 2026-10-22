@@ -144,9 +144,9 @@ window.AtlasTrip = function (ctx) {
             location.hash = 'viaje/' + e.target.value;
         });
     }
-    function draftPage(t) {
+    function pendingTripSections(t) {
         const display = value => {
-            if (value === 'not_applicable' || value === 'no_aplica') return '<span class="draft-na">No aplica</span>';
+            if (value === 'no_aplica') return '<span class="draft-na">No aplica</span>';
             if (value === null || value === undefined || value === '' ||
                 (Array.isArray(value) && value.length === 0)) return '<span class="draft-pending">Por definir</span>';
             if (Array.isArray(value)) {
@@ -186,13 +186,13 @@ window.AtlasTrip = function (ctx) {
                     '<div><strong>' + esc(field) + '</strong>' + display(value) + '</div>').join('') +
                 '</div></article></section>';
         }).join('');
-        main.innerHTML = '<section class="draft-hero wrap"><a href="#" class="breadcrumb">← Regresar</a>' +
-            '<p class="eyebrow orange">Viaje en planeación</p><h1>' + esc(t.flag ? t.flag + ' ' + t.name : t.name) + '</h1>' +
-            '<p>Fechas: ' + display(dateRange) + ' · Presupuesto: ' + display(null) + '</p></section>' +
-            tripNavigation(t, t.id, true) + '<div class="wrap draft-trip-content">' + sectionsHtml + '</div>';
-        bindTripSelector();
-        if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
-        document.title = t.name + ' · Atlas de Viajes';
+        return sectionsHtml;
+    }
+    function pendingTripHero(t) {
+        const dateRange = t.start && t.end ? esc(t.start + ' – ' + t.end) : '<span class="draft-pending">Por definir</span>';
+        return '<section class="draft-hero wrap"><a href="#" class="breadcrumb">← Regresar</a>' +
+            '<p class="eyebrow orange">Viaje en planeación</p><h1>' + esc((t.flag ? t.flag + ' ' : '') + t.name) + '</h1>' +
+            '<p>Fechas: ' + dateRange + ' · Presupuesto: <span class="draft-pending">Por definir</span></p></section>';
     }
     function tripPage(id) {
         cleanup();
@@ -202,7 +202,12 @@ window.AtlasTrip = function (ctx) {
             return;
         }
         if (t.status === 'draft') {
-            draftPage(t);
+            main.classList.remove('trip-espana-portugal');
+            document.title = t.name + ' · Atlas de Viajes';
+            main.innerHTML = pendingTripHero(t) + tripNavigation(t, id, true) +
+                '<div class="wrap draft-trip-content">' + pendingTripSections(t) + '</div>';
+            bindTripSelector();
+            if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
             return;
         }
         main.classList.toggle('trip-espana-portugal', t.layoutClass === 'trip-espana-portugal');
