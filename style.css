@@ -1602,3 +1602,6 @@ html{scroll-padding-top:78px}
 /* Acercar las actividades de Mañana/Tarde/Noche al carrusel superior. */
 #dias .day .daycontent .schedule{margin-top:14px}
 @media(max-width:680px){#dias .day .daycontent .schedule{margin-top:12px}}
+
+/* Jornadas sin galería: evitar el hueco bajo la cabecera del día. */
+#dias .day .daycontent:not(:has(> .gallery)) .schedule{margin-top:0}
