@@ -1639,3 +1639,22 @@ html{scroll-padding-top:78px}
   #dias .day .daycontent .gallery.single figure>.photo-open img{height:215px;min-height:0}
 }
 @media(prefers-reduced-motion:reduce){#dias .day .daycontent .gallery figure .photo-open img{transition:none}}
+
+/* Footer mínimo: una sola franja con información útil. */
+footer.atlas-footer{
+  display:flex;align-items:center;justify-content:space-between;
+  flex-wrap:wrap;gap:8px 20px;
+  padding:14px 5%;margin:0;
+  background:#f6f8f8;border-top:1px solid var(--line);
+  color:var(--muted);font:12px/1.4 Arial,Helvetica,sans-serif;
+}
+footer.atlas-footer strong{
+  color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.08em;
+}
+footer.atlas-footer strong span{font-weight:400;letter-spacing:0}
+footer.atlas-footer a{color:var(--ink);font-size:12px;text-decoration:none}
+footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:underline}
+@media(max-width:680px){
+  footer.atlas-footer{padding:13px 5%;gap:6px 12px}
+  footer.atlas-footer strong{width:100%}
+}
