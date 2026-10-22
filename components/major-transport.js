@@ -96,6 +96,38 @@ window.AtlasMajorTransport = (() => {
                 '"><span class="mt-segment-route">' + route + '</span>' + details + '</div>';
         }).join('');
     }
+    // Reutiliza las clases de la cronología diaria para una presentación coherente.
+    // La fecha local del primer segmento es la referencia para +1, +2, etc.
+    function flightJourneyTimeline(journey) {
+        const segments = journey.segments || [];
+        if (!segments.length) return '';
+        const origin = segments[0].departure?.slice(0, 10);
+        const offset = arrival => {
+            const target = arrival?.slice(0, 10);
+            if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(origin || '') || !/^\\d{4}-\\d{2}-\\d{2}$/.test(target || '')) return 0;
+            return Math.max(0, Math.round((Date.parse(target + 'T00:00:00Z') - Date.parse(origin + 'T00:00:00Z')) / 86400000));
+        };
+        const parts = segments.map((segment, index) => {
+            const previous = segments[index - 1];
+            const wait = previous ? model.durationMinutes(previous.arrival, segment.departure) : null;
+            const connection = previous ? '<div class="flight-layover"><span class="flight-layover-dot" aria-hidden="true"></span>Escala en ' + esc(segment.from) +
+                ' · ' + minutes(wait) + '</div>' : '';
+            const nextDay = offset(segment.arrival);
+            const badge = nextDay ? '<sup class="flight-day-offset" aria-label="' + nextDay + ' días después">+' + nextDay + '</sup>' : '';
+            return connection + '<div class="flight-leg" aria-label="' + esc(segment.from + ' → ' + segment.to) + '">' +
+                '<div class="flight-endpoint"><strong>' + esc(clock(segment.departure)) + '</strong><span>' + esc(segment.from) + '</span></div>' +
+                '<div class="flight-leg-middle"><div class="flight-line"><span class="flight-line-duration">' +
+                esc(minutes(model.durationMinutes(segment.departure, segment.arrival))) + '</span></div>' +
+                (segment.flightNumber ? '<div class="mt-flight-number">' + esc(segment.flightNumber) + '</div>' : '') + '</div>' +
+                '<div class="flight-endpoint flight-endpoint-arrival"><strong>' + esc(clock(segment.arrival)) + badge +
+                '</strong><span>' + esc(segment.to) + '</span></div></div>';
+        }).join('');
+        const total = model.journeySummary(journey);
+        return '<div class="flight-timeline mt-flight-timeline">' + parts +
+            '<div class="flight-summary"><span><strong>Duración total</strong> ' + esc(minutes(total.durationMinutes)) +
+            '</span><span><strong>Escalas</strong> ' + total.stops + '</span><span><strong>Llegada</strong> ' +
+            esc(clock(segments[segments.length - 1].arrival)) + '</span></div></div>';
+    }
     function transportKind(type) {
         const shapes = {
             flight: '<path d="M22 16v-2l-8-5V3.5a2 2 0 0 0-4 0V9l-8 5v2l8-2.5V19l-2 1.5V22l4-1 4 1v-1.5L14 19v-5.5L22 16Z"/>',
@@ -137,7 +169,7 @@ window.AtlasMajorTransport = (() => {
                 '<h4 class="mt-leg-heading">' + esc(dayLabel) +
                 (direction ? esc(direction) + esc(journeyDate(j, trip)) :
                     esc(journeyDate(j, trip).replace(/^ · /, ''))) + '</h4>' +
-                segmentDetails(j, transport.type === 'flight') + '</div>';
+                (transport.type === 'flight' ? flightJourneyTimeline(j) : segmentDetails(j, false)) + '</div>';
         }).join('');
         return '<details class="mt-card" data-transport="' + esc(transport.id) + '">' +
             '<summary><span class="mt-kind">' + transportKind(transport.previewType || transport.type) + '</span>' +

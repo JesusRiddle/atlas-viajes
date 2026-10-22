@@ -212,6 +212,19 @@ test('los días muestran el transporte vinculado y siguen el selector Frecciaros
     }
 });
 
+test('Traslados principales muestra cronologías de ida y regreso con sus números de vuelo', () => {
+    vm.runInContext(fs.readFileSync('components/major-transport.js', 'utf8'), ctx, { filename: 'components/major-transport.js' });
+    const html = ctx.window.AtlasMajorTransport.render(trip);
+    const flight = html.slice(html.indexOf('data-transport="flight-international"'), html.indexOf('</details>', html.indexOf('data-transport="flight-international"')));
+    assert.ok(flight.includes('mt-flight-timeline'));
+    for (const code of ['IB312', 'IB803', 'IB1238', 'IB311']) assert.ok(flight.includes(code), code);
+    assert.ok(flight.includes('Escala en MAD'));
+    assert.ok(flight.includes('10 h 05 min'));
+    assert.ok(flight.includes('12 h 20 min'));
+    assert.ok(flight.includes('Día 01'));
+    assert.ok(flight.includes('Día 12'));
+});
+
 test('referencias diarias de vuelos muestran solo el sentido correcto', () => {
     const view = ctx.window.AtlasDay({ trips: [trip], esc: String, places: {}, photos: {} });
     const outbound = view.transportSummary(trip, trip.days[0]);
