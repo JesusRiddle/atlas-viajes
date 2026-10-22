@@ -1891,3 +1891,44 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   #viajes.wrap,
   .home-comparison.wrap{padding-left:12px;padding-right:12px}
 }
+
+/* Home hero editorial: información esencial y fotografía sin títulos repetidos. */
+.atlas-home-hero{
+  display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);
+  gap:clamp(25px,4.2vw,56px);align-items:center;
+  min-height:0;padding-top:32px;padding-bottom:30px;
+}
+.atlas-home-hero-copy{min-width:0}
+.atlas-home-hero .eyebrow{font-size:11px;letter-spacing:.15em;margin:0 0 12px}
+.atlas-home-hero h1{font-size:clamp(41px,4.6vw,63px);letter-spacing:-.055em;line-height:1.06;max-width:12ch}
+.atlas-home-hero .atlas-home-lead{font-size:15px;line-height:1.65;color:var(--muted);max-width:41ch;margin:15px 0 20px}
+.atlas-home-hero-cta{display:inline-flex;align-items:center;gap:18px;border-radius:6px;padding:10px 16px;font-size:13px}
+.atlas-home-hero-cta span{font-size:16px;line-height:1}
+.atlas-home-hero .atlas-home-stats{
+  display:flex;gap:0;border-top:1px solid var(--line);
+  margin-top:24px;padding-top:14px;justify-content:space-between;
+  max-width:420px;
+}
+.atlas-home-hero .atlas-home-stats>div{flex:1;min-width:0}
+.atlas-home-hero .atlas-home-stats strong{font-size:22px;line-height:1.15;font-weight:700;margin:0}
+.atlas-home-hero .atlas-home-stats span{font-size:11px;display:block;margin-top:4px;color:var(--muted)}
+.atlas-home-hero .atlas-home-hero-image{
+  height:350px;min-height:0;border-radius:9px;overflow:hidden;
+  box-shadow:0 5px 20px #102a3310;
+}
+.atlas-home-hero .atlas-home-hero-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.atlas-home-hero .atlas-home-hero-image .photo-overlay{background:linear-gradient(180deg,transparent 57%,#102a3385)}
+.atlas-home-hero .atlas-home-hero-image .intro-caption{bottom:17px;left:20px}
+.atlas-home-hero .atlas-home-hero-image .intro-caption span{font-size:10px;letter-spacing:.16em;font-weight:700}
+@media(max-width:800px){
+  .atlas-home-hero{grid-template-columns:1fr;gap:18px;padding-top:25px;padding-bottom:18px}
+  .atlas-home-hero h1{font-size:clamp(38px,8.2vw,53px)}
+  .atlas-home-hero .atlas-home-lead{margin:12px 0 16px}
+  .atlas-home-hero .atlas-home-stats{margin-top:19px}
+  .atlas-home-hero .atlas-home-hero-image{height:250px}
+}
+@media(max-width:680px){
+  .atlas-home-hero.wrap{padding-left:12px;padding-right:12px}
+  .atlas-home-hero .atlas-home-hero-image{height:215px}
+  .atlas-home-hero .atlas-home-stats strong{font-size:20px}
+}
