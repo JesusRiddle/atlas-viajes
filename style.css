@@ -1485,3 +1485,48 @@ html{scroll-padding-top:78px}
   #dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row,
   #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{padding:8px 12px}
 }
+
+/* Paleta 2 — Mineral contemporánea: cuatro tarjetas del itinerario maestro.
+   Se aplica a las tarjetas modulares sin alterar markup ni datos. */
+#dias .day .daycontent .hotel-checkin{
+  background:#eaf0f7;border-color:#cbd9e7;
+}
+#dias .day .daycontent .hotel-checkin-heading{border-bottom-color:#cbd9e7}
+#dias .day .daycontent .hotel-checkin-symbol{background:#dae6f2;color:#456c92}
+#dias .day .daycontent .hotel-checkin-heading h4,
+#dias .day .daycontent .hotel-checkin-link a{color:#456c92}
+#dias .day .daycontent .hotel-checkin-heading small,
+#dias .day .daycontent .hotel-checkin-address,
+#dias .day .daycontent .hotel-checkin-address>span:first-child{color:#526f88}
+#dias .day .daycontent .hotel-checkin-notes{border-top-color:#cbd9e7}
+#dias .day .daycontent .mobility-card{
+  background:#efedf7;border-color:#d8d2e7;
+  --info-border:#d8d2e7;--info-divider:#e3deee;
+  --info-surface:rgba(255,255,255,.68);
+}
+#dias .day .daycontent .mobility-card h4,
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step>strong:first-child{color:#706791}
+#dias .day .daycontent .mobility-card .mobility-icon{background:#e1dcef;color:#706791}
+#dias .day .daycontent .mobility-card .day-transport{border-bottom-color:#d8d2e7}
+#dias .day .daycontent .logistics-notice{
+  background:#faf1e1;border-color:#ead8b5;
+  --info-border:#ead8b5;--info-divider:#ede1c9;
+  --info-surface:rgba(255,255,255,.7);
+}
+#dias .day .daycontent .logistics-notice .logistics-symbol{background:#f1e3c6;color:#a17b3f}
+#dias .day .daycontent .logistics-notice .logistics-heading h4,
+#dias .day .daycontent .logistics-notice .logistics-links-heading{color:#88682e}
+#dias .day .daycontent .logistics-notice .logistics-links{border-top-color:#ead8b5}
+#dias .day .daycontent .logistics-notice .logistics-link-list a{border-color:#e6d3ac;color:#806430}
+#dias .day .daycontent .logistics-notice .logistics-link-list a:hover{border-color:#b49352}
+#dias .day .daycontent .day-budget{
+  background:#ebf2ed;border-color:#cadccf;color:#304c3b;
+  --info-border:#cadccf;--info-divider:#dbe9df;
+  --info-surface:rgba(255,255,255,.68);
+}
+#dias .day .daycontent .day-budget .day-budget-symbol{background:#dce9df;color:#507a64}
+#dias .day .daycontent .day-budget .day-budget-title h4,
+#dias .day .daycontent .day-budget > summary > strong,
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line strong{color:#406a55}
+#dias .day .daycontent .day-budget .day-budget-disclaimer,
+#dias .day .daycontent .day-budget .day-budget-pending{color:#5b7465}
