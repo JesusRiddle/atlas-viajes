@@ -117,6 +117,33 @@ window.AtlasTrip = function (ctx) {
                 x[1] + ' ' + (x[1] === 1 ? 'noche' : 'noches') + '</small></div>'
             ).join('') + '</div></div>';
     }
+    // Estructura común de navegación: la información pendiente nunca oculta secciones.
+    function tripNavigation(t, id, expanded = false) {
+        const sections = [
+            ['plan', 'Panorama'], ['mapa', 'Mapa'], ['temporadas', 'Temporadas'],
+            ['experiencias', 'Experiencias'], ['reservas', 'Reservaciones'],
+            ['traslados', 'Traslados'], ['alojamientos', 'Dónde dormir'],
+            ['dias', 'Día por día'], ['costes', 'Presupuesto']
+        ];
+        const visible = expanded ? sections : sections.filter(([key]) =>
+            !(['temporadas','experiencias','reservas','traslados'].includes(key)) ||
+            (key === 'temporadas' && t.seasonality) ||
+            (key === 'experiencias' && t.experiences?.length) ||
+            (key === 'reservas' && t.planningDetails && t.reservations?.length) ||
+            (key === 'traslados' && t.majorTransport?.length));
+        return '<nav class="subnav" aria-label="Secciones del viaje"><div>' +
+            visible.map(([key,label]) => '<a href="#viaje/' + esc(id) + '/' + key + '">' + label + '</a>').join('') +
+            (t.sources?.length ? '<a href="#viaje/' + esc(id) + '/fuentes">Fuentes</a>' : '') +
+            '</div><select aria-label="Cambiar destino" id="dest-select">' +
+            trips.map(x => '<option value="' + esc(x.id) + '"' + (x.id === id ? ' selected' : '') + '>' +
+                esc((x.flag ? x.flag + ' ' : '') + x.name) + '</option>').join('') +
+            '</select></nav>';
+    }
+    function bindTripSelector() {
+        document.querySelector('#dest-select')?.addEventListener('change', e => {
+            location.hash = 'viaje/' + e.target.value;
+        });
+    }
     function draftPage(t) {
         const display = value => {
             if (value === 'not_applicable' || value === 'no_aplica') return '<span class="draft-na">No aplica</span>';
@@ -154,9 +181,8 @@ window.AtlasTrip = function (ctx) {
         main.innerHTML = '<section class="draft-hero wrap"><a href="#" class="breadcrumb">← Regresar</a>' +
             '<p class="eyebrow orange">Viaje en planeación</p><h1>' + esc(t.flag ? t.flag + ' ' + t.name : t.name) + '</h1>' +
             '<p>Fechas: ' + display(dateRange) + ' · Presupuesto: ' + display(null) + '</p></section>' +
-            '<nav class="subnav" aria-label="Secciones del viaje"><div>' +
-            sections.map(([id,label])=>'<a href="#viaje/' + esc(t.id) + '/' + id + '">' + esc(label) + '</a>').join('') +
-            '</div></nav><div class="wrap draft-trip-content">' + sectionsHtml + '</div>';
+            tripNavigation(t, t.id, true) + '<div class="wrap draft-trip-content">' + sectionsHtml + '</div>';
+        bindTripSelector();
         document.title = t.name + ' · Atlas de Viajes';
     }
     function tripPage(id) {
@@ -187,21 +213,7 @@ window.AtlasTrip = function (ctx) {
             `</div>`,
             `</div>`,
             `</section>`,
-            `<nav class="subnav" aria-label="Secciones del viaje">`,
-            `<div>`,
-            `<a href="#viaje/${id}/plan">Panorama</a>`,
-            `<a href="#viaje/${id}/mapa">Mapa</a>`,
-            `${t.seasonality ? `<a href="#viaje/${id}/temporadas">Temporadas</a>` : ''}`,
-            `${t.experiences?.length ? `<a href="#viaje/${id}/experiencias">Experiencias</a>` : ''}`,
-            `${t.planningDetails && t.reservations?.length ? `<a href="#viaje/${id}/reservas">Reservaciones</a>` : ''}`,
-            `${t.majorTransport?.length ? `<a href="#viaje/${id}/traslados">Traslados</a>` : ''}`,
-            `<a href="#viaje/${id}/alojamientos">Dónde dormir</a>`,
-            `<a href="#viaje/${id}/dias">Día por día</a>`,
-            `<a href="#viaje/${id}/costes">Presupuesto</a>`,
-            `${t.sources?.length ? `<a href="#viaje/${id}/fuentes">Fuentes</a>` : ''}`,
-            `</div>`,
-            `<select aria-label="Cambiar destino" id="dest-select">${trips.map(x => `<option value="${x.id}" ${x.id === id ? 'selected' : ''}>${x.flag} ${esc(x.name)}</option>`).join('')}</select>`,
-            `</nav>`,
+            tripNavigation(t, id),
             `<section class="wrap" id="plan">`,
             `<div class="overview overview-editorial">`,
             `<div class="overview-intro">`,
@@ -265,9 +277,7 @@ window.AtlasTrip = function (ctx) {
         window.AtlasGallery.init(main);
         mountView(t);
         window.AtlasTravel.initMap(t);
-        document.querySelector('#dest-select').addEventListener('change', e => {
-            location.hash = 'viaje/' + e.target.value;
-        });
+        bindTripSelector();
         document.querySelector('#expand').addEventListener('click', e => {
             const all = [...document.querySelectorAll('.day')];
             const opening = all.some(x => !x.open);
