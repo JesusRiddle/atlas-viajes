@@ -2111,3 +2111,15 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 /* Metadatos del hero con iconos dorados compactos. */
 .triphero-split .hero-meta>span{display:inline-flex;align-items:center;gap:6px;line-height:1.5}
 .triphero-split .hero-meta-icon{color:#ffbd69;flex:none;width:15px;height:15px}
+
+/* Refinamiento exclusivo móvil del hero de viaje y su navegación. */
+@media(max-width:680px){
+  .triphero-split .triphero-split-photo{height:190px;min-height:0}
+  .triphero-split .triphero-split-info{padding:18px 16px 20px}
+  .triphero-split .breadcrumb{margin-bottom:12px}
+  .triphero-split .hero-eyebrow{margin-bottom:8px}
+  .triphero-split .hero-meta{margin-top:13px;padding-top:12px}
+  .subnav select{display:none}
+  .subnav{padding-left:12px;padding-right:12px}
+  .subnav>div{width:100%;min-width:0}
+}
