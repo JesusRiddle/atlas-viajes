@@ -29,15 +29,17 @@ window.AtlasSections = function (ctx) {
         </article>`;
     }
     function reservationPlanning(t) {
-        if (!t.planningDetails) return '';
-        const p = t.planningDetails;
-        const groups = (t.reservations || []).map(([title, items], groupIndex) => `
+        const p = t.planningDetails || {};
+        const groups = (t.reservations || []).map((group, groupIndex) => {
+            const [title, items] = Array.isArray(group) ? group : [group?.title, group?.items];
+            const safeItems = Array.isArray(items) ? items : [];
+            return `
             <section class="reservation-group ${groupIndex === 0 ? 'reservation-priority-very-high' : groupIndex === 1 ? 'reservation-priority-high' : ''}">
                 <div class="reservation-group-heading">
                     <h4>${esc(title)}</h4>
-                    <span class="reservation-count" aria-label="${items.length} reservas">${items.length}</span>
+                    <span class="reservation-count" aria-label="${safeItems.length} reservas">${safeItems.length}</span>
                 </div>
-                <ol class="reservation-list">${items.map((item, index) => {
+                <ol class="reservation-list">${safeItems.map((item, index) => {
                     const structured = item && typeof item === 'object' && !Array.isArray(item);
                     const label = structured ? item.title : '';
                     const description = structured ? item.description : item;
@@ -50,12 +52,13 @@ window.AtlasSections = function (ctx) {
                         </div>
                     </li>`;
                 }).join('')}</ol>
-            </section>`).join('');
+            </section>`;
+        }).join('');
         return `<article class="panel reservation-panel" id="reservas">
             <div class="reservation-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 5 3 3 5-5"/></svg><span>Antes de viajar</span></div>
             <h3>${esc(p.reservationTitle || 'Reservas críticas')}</h3>
             ${p.reservationNote ? `<p class="reservation-intro">${esc(p.reservationNote)}</p>` : ''}
-            <div class="reservation-groups">${groups}</div>
+            <div class="reservation-groups">${groups || '<p class="draft-pending">Por definir</p>'}</div>
         </article>`;
     }
     const dateFormatter = new Intl.DateTimeFormat('es-MX', {
@@ -90,7 +93,7 @@ window.AtlasSections = function (ctx) {
               </div>`
             : '';
         return `<article class="hotel-card">
-            <h4>${esc(h.city)} · <em>${h.mapsUrl ? `<a class="hotel-name-map" href="${esc(h.mapsUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${esc(h.name)} en Google Maps">${esc(h.name)}</a>` : esc(h.name)}</em></h4>
+            <h4>${esc(h.city || 'Por definir')} · <em>${h.mapsUrl ? `<a class="hotel-name-map" href="${esc(h.mapsUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${esc(h.name)} en Google Maps">${esc(h.name || 'Por definir')}</a>` : esc(h.name || 'Por definir')}</em></h4>
             ${h.address ? `<p class="hotel-address hotel-icon-line">${hotelIcon('location')}<span>${esc(h.address)}</span></p>` : ''}
             ${dates}
             ${h.rate ? `<p class="hotel-rate hotel-icon-line">${hotelIcon('rate')}<span>${esc(h.rate)}</span></p>` : ''}
@@ -116,6 +119,7 @@ window.AtlasSections = function (ctx) {
         return `<div class="stay-list hotel-grid">
             ${hotels.map(hotelCard).join('')}
             ${suggested.map(suggestedStayCard).join('')}
+            ${!hotels.length && !suggested.length ? '<article class="hotel-card"><p class="draft-pending">Por definir</p></article>' : ''}
         </div>`;
     }
     function knownCostPanel(t) {
