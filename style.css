@@ -2000,3 +2000,23 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   .atlas-home-hero-immersive .atlas-home-lead{font-size:13px;margin-top:12px}
   .atlas-home-hero-immersive h1{font-size:clamp(36px,9.6vw,48px)}
 }
+
+/* Portadas del Home: zoom-in cinematográfico sutil durante el hover. */
+@media(hover:hover) and (pointer:fine){
+  #viajes .atlas-home-card .cardphoto>img:not(.cardphoto-slide),
+  #viajes .atlas-home-card .cardphoto .cardphoto-slide{
+    transform:scale(1);
+    transition:transform 2.15s linear,opacity .55s ease;
+    transform-origin:center center;
+  }
+  #viajes .atlas-home-card .cardphoto:hover>img:not(.cardphoto-slide),
+  #viajes .atlas-home-card .cardphoto:hover .cardphoto-slide{
+    transform:scale(1.065);
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  #viajes .atlas-home-card .cardphoto>img,
+  #viajes .atlas-home-card .cardphoto .cardphoto-slide{
+    transform:none!important;transition:none!important;
+  }
+}

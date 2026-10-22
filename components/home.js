@@ -69,7 +69,7 @@ window.AtlasHome = function (ctx) {
             frame.addEventListener('mouseenter', () => {
                 if (timer !== null) return;
                 token++;
-                timer = setInterval(advance, 3000);
+                timer = setInterval(advance, 2000);
                 hoverTimers.add(timer);
             });
             frame.addEventListener('mouseleave', stop);
