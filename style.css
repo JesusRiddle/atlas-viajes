@@ -1605,3 +1605,37 @@ html{scroll-padding-top:78px}
 
 /* Jornadas sin galería: evitar el hueco bajo la cabecera del día. */
 #dias .day .daycontent:not(:has(> .gallery)) .schedule{margin-top:0}
+
+/* Galería diaria: fotografías protagonistas y fichas editoriales compactas. */
+#dias .day .daycontent .gallery.carousel-track{gap:14px;padding-bottom:6px}
+#dias .day .daycontent .carousel-track>figure{flex-basis:calc((100% - 14px)/2)}
+#dias .day .daycontent .gallery figure{
+  background:#fff;border:1px solid #dbe3e7;border-radius:9px;
+  box-shadow:0 3px 12px rgba(16,42,51,.045);
+}
+#dias .day .daycontent .gallery figure .photo-open{overflow:hidden}
+#dias .day .daycontent .gallery figure .photo-open img{
+  height:225px;object-fit:cover;transition:transform .22s ease;
+}
+@media(hover:hover){#dias .day .daycontent .gallery figure .photo-open:hover img{transform:scale(1.025)}}
+#dias .day .daycontent .gallery figure .photo-zoom{font-size:11px;font-weight:600;border-radius:5px;padding:5px 9px;right:9px;bottom:9px}
+#dias .day .daycontent .gallery figure figcaption{padding:13px 16px 15px}
+#dias .day .daycontent .gallery figure figcaption>strong{
+  display:block;font-family:Georgia,'Times New Roman',serif;
+  font-size:20px;font-weight:600;line-height:1.23;
+}
+#dias .day .daycontent .gallery figure figcaption p{
+  font-size:13px;line-height:1.5;color:var(--muted);margin:6px 0 0;
+}
+/* Ocultar créditos en las tarjetas, manteniéndolos en la vista ampliada. */
+#dias .day .daycontent .gallery figure figcaption .credit{display:none}
+#dias .day .daycontent .gallery.single figure>.photo-open img{height:100%;min-height:225px}
+#dias .day .daycontent .carousel-controls{margin:7px 0 9px}
+@media(max-width:680px){
+  #dias .day .daycontent .carousel-track>figure{flex-basis:100%}
+  #dias .day .daycontent .gallery figure .photo-open img{height:215px}
+  #dias .day .daycontent .gallery figure figcaption{padding:12px 14px 14px}
+  #dias .day .daycontent .gallery figure figcaption>strong{font-size:19px}
+  #dias .day .daycontent .gallery.single figure>.photo-open img{height:215px;min-height:0}
+}
+@media(prefers-reduced-motion:reduce){#dias .day .daycontent .gallery figure .photo-open img{transition:none}}
