@@ -1530,3 +1530,21 @@ html{scroll-padding-top:78px}
 #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line strong{color:#406a55}
 #dias .day .daycontent .day-budget .day-budget-disclaimer,
 #dias .day .daycontent .day-budget .day-budget-pending{color:#5b7465}
+
+/* Actividades por momento del día: lectura editorial en bloques compactos. */
+#dias .day .daycontent .schedule{gap:12px;align-items:stretch}
+#dias .day .daycontent .schedule-period{--period-bg:#faf3e8;--period-accent:#a75f2c;--period-divider:#eadfce;min-width:0;padding:12px 10px 10px;background:var(--period-bg);border-radius:8px}
+#dias .day .daycontent .schedule-afternoon{--period-bg:#f4f1e8;--period-accent:#816c47;--period-divider:#e3ded0}
+#dias .day .daycontent .schedule-evening{--period-bg:#edf2f8;--period-accent:#526b88;--period-divider:#dce5f0}
+#dias .day .daycontent .schedule-period>label{display:flex;align-items:center;gap:7px;color:var(--period-accent);font-size:12px;font-weight:700;letter-spacing:1.25px;margin:0 0 9px}
+#dias .day .daycontent .schedule-period>label span{font-size:17px;line-height:1;letter-spacing:0}
+#dias .day .daycontent .schedule-items{border:1px solid var(--period-divider);border-radius:6px;background:rgba(255,255,255,.77);overflow:hidden}
+#dias .day .daycontent .schedule-item{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:start;gap:7px;padding:9px 8px}
+#dias .day .daycontent .schedule-item+.schedule-item{border-top:1px solid var(--period-divider)}
+#dias .day .daycontent .schedule-item-number{display:grid;place-items:center;min-height:21px;border-radius:4px;background:var(--period-bg);font-size:11px;font-weight:700;line-height:1.3;color:var(--period-accent)}
+#dias .day .daycontent .schedule-item p{margin:0;font-size:13px;line-height:1.65;overflow-wrap:anywhere}
+@media(max-width:680px){
+  #dias .day .daycontent .schedule{gap:12px}
+  #dias .day .daycontent .schedule-period{padding:11px 10px}
+  #dias .day .daycontent .schedule-item{padding:9px 10px}
+}
