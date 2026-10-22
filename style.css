@@ -1323,3 +1323,41 @@ html{scroll-padding-top:78px}
 .daycontent details.atlas-day-fold.hotel-checkin:not([open]),.daycontent details.atlas-day-fold.logistics-notice:not([open]),.daycontent details.atlas-day-fold.mobility-card:not([open]),.daycontent details.atlas-day-fold.day-budget:not([open]){padding-bottom:16px}
 .daycontent details.atlas-day-fold.day-budget:not([open]) .day-budget-heading{border-bottom:0;padding-bottom:0;margin-bottom:0}
 .daycontent details.atlas-day-fold.dailycost-standalone > summary{display:flex;justify-content:space-between;align-items:center;gap:12px}
+
+/* Impedir que el estilo del resumen de jornada se aplique a tarjetas internas. */
+#dias .day .daycontent details.atlas-day-fold > summary{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px;
+  min-height:0;
+  margin:0;
+  padding:0 24px 0 0;
+  background:transparent;
+  border-radius:0;
+  line-height:1.4;
+}
+#dias .day .daycontent details.atlas-day-fold > summary::after,
+#dias .day[open] .daycontent details.atlas-day-fold > summary::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:3px;
+  margin:0;
+  width:7px;
+  height:7px;
+  border-right:2px solid currentColor;
+  border-bottom:2px solid currentColor;
+  transform:translateY(-65%) rotate(45deg);
+  font-size:0;
+  opacity:.65;
+}
+#dias .day .daycontent details.atlas-day-fold:not([open]) > summary::after{
+  transform:translateY(-35%) rotate(-45deg);
+}
+#dias .day .daycontent details.atlas-day-fold > summary:hover{background:transparent}
+#dias .day .daycontent details.mobility-card > summary h4{margin:0}
+#dias .day .daycontent details.atlas-day-fold.hotel-checkin > summary{padding-bottom:10px;border-bottom:1px solid #c9ddde}
+#dias .day .daycontent details.atlas-day-fold.logistics-notice > summary{margin-bottom:12px}
+#dias .day .daycontent details.atlas-day-fold.day-budget > summary{padding-bottom:12px;margin-bottom:8px}
+#dias .day .daycontent details.atlas-day-fold:not([open]) > summary{margin-bottom:0;padding-bottom:0;border-bottom:0}
