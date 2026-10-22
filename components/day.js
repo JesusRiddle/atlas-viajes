@@ -84,7 +84,7 @@ window.AtlasDay = function (ctx) {
             <summary class="logistics-heading"><span class="logistics-symbol">${icon}</span><h4>Aviso logístico</h4></summary>
             ${note ? `<div class="logistics-copy">${note.split('\n').map(line => `<p>${readable(line)}</p>`).join('')}</div>` : ''}
             ${links.length ? `<div class="logistics-links"><div class="logistics-links-heading">${linkIcon}<strong>Enlaces útiles</strong></div><div class="logistics-link-list">${links.map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${readable(link.label)}</a>`).join('')}</div></div>` : ''}
-        </aside>`;
+        </details>`;
     }
 
     function scheduleText(value) {
