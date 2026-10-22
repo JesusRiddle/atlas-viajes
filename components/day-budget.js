@@ -35,16 +35,16 @@ window.AtlasDayBudget = (() => {
             const transport = transports.get(id);
             return transport?.type === 'flight' && !info.entries.some(entry => entry.id === id);
         });
-        return '<section class="day-budget" data-day-budget="' + esc(day.n) +
-            '" aria-label="Presupuesto de la jornada"><div class="day-budget-heading"><div><h4>Gastos registrados del día</h4>' +
+        return '<details class="day-budget atlas-day-fold" open data-day-budget="' + esc(day.n) +
+            '" aria-label="Presupuesto de la jornada"><summary class="day-budget-heading"><div><h4>Gastos registrados del día</h4>' +
             '<small>Subtotal registrado de esta jornada</small></div><strong>' +
             (hasAmounts ? pesos(info.totalMXN) : 'Sin partidas cotizadas') +
-            '</strong></div>' + (lines || '<p class="day-budget-empty">Todavía no hay partidas asignadas.</p>') +
+            '</strong></summary>' + (lines || '<p class="day-budget-empty">Todavía no hay partidas asignadas.</p>') +
             (info.partial ? '<p class="day-budget-pending">Hay partidas sin cotizar.</p>' : '') +
             '<p class="day-budget-disclaimer">Presupuesto diario incompleto: pendiente de registrar o verificar ' +
             esc(pendingCategories) + '.' +
             (flightOutside ? ' El vuelo se contabiliza en el presupuesto global, no en este día.' : '') +
-            '</p></section>';
+            '</p></details>';
     }
     function mount(root, trip) {
         if (!trip?.majorTransport?.length) return () => {};
@@ -52,7 +52,7 @@ window.AtlasDayBudget = (() => {
             if (id !== trip.id || !root.isConnected) return;
             for (const day of trip.days) {
                 const node = root.querySelector('[data-day-budget="' + day.n + '"]');
-                if (node) node.outerHTML = render(trip, day);
+                if (node) { const expanded = node.open; node.outerHTML = render(trip, day); const replacement = root.querySelector('[data-day-budget="' + day.n + '"]'); if (replacement) replacement.open = expanded; }
             }
         });
     }

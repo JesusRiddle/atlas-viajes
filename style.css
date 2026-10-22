@@ -1312,3 +1312,14 @@ html{scroll-padding-top:78px}
  #traslados .mt-train-timeline .flight-line-duration{font-size:10px;padding:2px 4px;white-space:normal}
  #traslados .mt-train-timeline .mt-flight-number{font-size:10px}
 }
+
+/* Tarjetas plegables del itinerario: abiertas por defecto, sin afectar los días. */
+.daycontent details.atlas-day-fold > summary{cursor:pointer;list-style:none;position:relative;padding-right:30px}
+.daycontent details.atlas-day-fold > summary::-webkit-details-marker{display:none}
+.daycontent details.atlas-day-fold > summary::after{content:"";position:absolute;right:5px;top:50%;width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-65%) rotate(45deg);opacity:.65;transition:transform .15s}
+.daycontent details.atlas-day-fold:not([open]) > summary::after{transform:translateY(-35%) rotate(-45deg)}
+.daycontent details.atlas-day-fold > summary:focus-visible{outline:2px solid #dc5c2e;outline-offset:3px;border-radius:5px}
+.daycontent details.atlas-day-fold:not([open]) > summary{margin-bottom:0}
+.daycontent details.atlas-day-fold.hotel-checkin:not([open]),.daycontent details.atlas-day-fold.logistics-notice:not([open]),.daycontent details.atlas-day-fold.mobility-card:not([open]),.daycontent details.atlas-day-fold.day-budget:not([open]){padding-bottom:16px}
+.daycontent details.atlas-day-fold.day-budget:not([open]) .day-budget-heading{border-bottom:0;padding-bottom:0;margin-bottom:0}
+.daycontent details.atlas-day-fold.dailycost-standalone > summary{display:flex;justify-content:space-between;align-items:center;gap:12px}
