@@ -188,7 +188,8 @@ window.AtlasTrip = function (ctx) {
     function tripHero(t, id) {
         const rank = trips.indexOf(t) + 1;
         return [
-            `<section class="triphero">${t.cover ? img(covers[id], '', true) : ''}<div class="wrap">`,
+            '<section class="triphero triphero-split"><div class="triphero-split-info">',
+            '<div class="triphero-split-info-inner">',
             `<a class="breadcrumb" href="#"><span aria-hidden="true">←</span> Regresar</a>`,
             `<p class="eyebrow hero-eyebrow">Viaje #${rank}: ${esc(t.heroEyebrow || t.tag || 'En planeación')}</p>`,
             `<h1>${esc(t.name)}</h1>`,
@@ -197,7 +198,9 @@ window.AtlasTrip = function (ctx) {
             `<span>${t.days.length ? t.days.length + ' días naturales' : 'Duración por definir'}</span>`,
             `<span>${t.work === null ? 'Días laborales por definir' : t.work + ' días laborales'}</span>`,
             `<span>${t.heroLodgingSummary ? esc(t.heroLodgingSummary) : t.bases.length ? esc(baseLabel(t.bases.length)) : 'Alojamientos por definir'}</span>`,
-            '</div></div></section>'
+            '</div></div></div>',
+            `<div class="triphero-split-photo">${t.cover ? img(covers[id], '', true) : ''}</div>`,
+            '</section>'
         ].join('');
     }
     function fullSectionMarkup(t, id, low, high) {
