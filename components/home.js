@@ -9,20 +9,21 @@ window.AtlasHome = function (ctx) {
     }
     function card(t, i) {
         if (!canRenderFullTrip(t)) return draftCard(t, i);
-        const title = t.cardHighlights ? highlightWords(t.name, t.cardHighlights) : t.formatName ? readable(t.name) : esc(t.name);
-        const cities = t.routeCities.map(x => t.routeHighlights ? '<strong class="atlas-city">' + esc(x) + '</strong>' : esc(x)).join(' • ');
+        const title = esc(t.name);
+        const cities = t.routeCities.map(x => esc(x)).join(' · ');
+        const lodging = t.lodgingSummary || baseLabel(t.bases.length);
         return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
             '<div class="cardphoto">' + img(covers[t.id], '', false, false, true) + '<span class="rank">' + (i + 1) + '</span></div>' +
-            '<div class="cardbody"><p class="eyebrow">' + esc(t.tag) + '</p>' +
-            '<h3 id="card-' + esc(t.id) + '">' + (t.flag || '') + ' ' + title + '</h3>' +
-            '<p class="card-route">' + cities + '</p>' +
-            '<p class="carddates">' + range(t) + '</p>' +
-            '<div class="cardfacts"><span>' + t.days.length + ' días naturales</span><span>' + t.work +
-            ' laborales</span><span>' + esc(t.lodgingSummary || baseLabel(t.bases.length)) + '</span></div>' +
-            '<div class="cardbottom"><div class="card-price"><small>Presupuesto estimado por persona</small>' +
-            '<strong>' + price(t) + ' <span class="card-currency">MXN</span></strong>' +
-            (t.budgetPreliminary ? '<small class="card-estimate">Preliminar</small>' : '') +
-            '</div><span class="card-arrow" aria-hidden="true">↗</span></div></div></a>';
+            '<div class="cardbody"><div class="card-overview"><span class="card-duration">' + t.days.length +
+            ' días</span><span class="carddates">' + range(t) + '</span></div>' +
+            '<h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
+            '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' +
+            '<div class="cardfacts"><span>' + t.work + ' laborales</span><span title="' + esc(lodging) + '">' +
+            esc(lodging) + '</span></div>' +
+            '<div class="cardbottom"><div class="card-price"><small>Presupuesto estimado por persona' +
+            (t.budgetPreliminary ? ' · preliminar' : '') + '</small>' +
+            '<strong>' + price(t) + ' <span class="card-currency">MXN</span></strong></div>' +
+            '<span class="card-arrow" aria-hidden="true">↗</span></div></div></a>';
     }
     function comparison() {
         const items = trips.filter(canRenderFullTrip);
