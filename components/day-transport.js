@@ -7,8 +7,7 @@ window.AtlasDayTransport = (() => {
     function transportSummary(t, d) {
         if (!d.transportRefs?.length) return '';
         const selections = window.AtlasSelections.get(t.id);
-        return '<section class="day-transport" data-day-transport="' + esc(d.n) + '">' +
-            '<h4>Traslados vinculados</h4>' + d.transportRefs.map(id => {
+        return '<div class="day-transport" data-day-transport="' + esc(d.n) + '">' + d.transportRefs.map(id => {
                 const item = t.majorTransport?.find(x => x.id === id);
                 if (!item) return '';
                 const current = selections[id] || {};
@@ -30,13 +29,14 @@ window.AtlasDayTransport = (() => {
                 const amount = price && Number.isFinite(price.amount)
                     ? (price.currency === 'EUR' ? '€' : '$') + price.amount.toLocaleString('es-MX', { maximumFractionDigits: 2 }) +
                         (price.currency === 'MXN' ? ' MXN' : '') : 'Por cotizar';
-                return '<div class="day-transport-item"><div class="day-transport-head"><strong>' + esc(item.title) +
+                const icons = { flight: '✈', train: '🚆', bus: '🚌', ferry: '⛴' };
+                return '<div class="day-transport-item"><div class="day-transport-head"><strong><span class="day-transport-kind" aria-hidden="true">' + (icons[item.type] || '➜') + '</span>' + esc(item.title) +
                     '</strong><span>' + esc(amount) + (mxn != null && price.currency !== 'MXN' ? ' · ≈ $' +
                     mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
                     '</span></div>' + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
                     '<small>' + (option.provider ? esc(option.provider) + ' · ' : '') +
                     esc(fare.name || fare.id) + (item.type === 'flight' ? ' · Precio ida y vuelta' : '') + '</small></div>';
-            }).join('') + '<p>Referencia del traslado completo, ya contabilizada en el presupuesto.</p></section>';
+            }).join('') + '<p>Referencia del traslado completo, ya contabilizada en el presupuesto.</p></div>';
     }
     function mountTransport(root, trip) {
         if (!trip.majorTransport?.length) return () => {};

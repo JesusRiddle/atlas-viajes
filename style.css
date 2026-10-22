@@ -1207,3 +1207,10 @@ html{scroll-padding-top:78px}
 .draft-pending,.draft-na{display:inline-block;color:var(--muted);font-size:13px;font-weight:400}
 .draft-na{font-style:italic}
 @media(max-width:680px){.draft-trip-panel{padding:17px}.draft-fields>div{flex-direction:column;gap:3px}.draft-card-cover{min-height:125px}}
+
+/* Traslados principales integrados en la tarjeta de movilidad de cada día. */
+.daycontent .mobility-card .day-transport{margin:0 0 15px;padding:0 0 15px;border:0;border-bottom:1px solid #ded9cb;border-radius:0;background:transparent}
+.daycontent .mobility-card .day-transport-item{padding:12px 13px;border:1px solid #d8deda;border-radius:7px;background:#fff}
+.daycontent .mobility-card .day-transport-item+.day-transport-item{margin-top:10px}
+.day-transport-kind{display:inline-flex;align-items:center;justify-content:center;margin-right:9px;font-size:17px;vertical-align:middle}
+@media(max-width:680px){.daycontent .mobility-card .day-transport-item{padding:12px}}
