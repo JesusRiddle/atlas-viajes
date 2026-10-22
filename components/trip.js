@@ -210,25 +210,9 @@ window.AtlasTrip = function (ctx) {
             '<p class="eyebrow orange">Viaje en planeación</p><h1>' + esc((t.flag ? t.flag + ' ' : '') + t.name) + '</h1>' +
             '<p>Fechas: ' + dateRange + ' · Presupuesto: <span class="draft-pending">Por definir</span></p></section>';
     }
-    function tripPage(id) {
-        cleanup();
-        const t = trips.find(x => x.id === id);
-        if (!t) {
-            home();
-            return;
-        }
-        if (t.status === 'draft') {
-            main.classList.remove('trip-espana-portugal');
-            document.title = t.name + ' · Atlas de Viajes';
-            main.innerHTML = tripShell(t, id, pendingTripSections(t), true);
-            bindTripSelector();
-            if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
-            return;
-        }
-        main.classList.toggle('trip-espana-portugal', t.layoutClass === 'trip-espana-portugal');
-        document.title = t.name + ' · Atlas de Viajes';
-        const [low, high] = sums(t);
-        const content = [
+    function fullSectionMarkup(t, id, low, high) {
+        const parts = {
+            plan: () => [
             `<section class="wrap" id="plan">`,
             `<div class="overview overview-editorial">`,
             `<div class="overview-intro">`,
@@ -255,11 +239,30 @@ window.AtlasTrip = function (ctx) {
             `</aside>`,
             `${t.id === 'emilia-romana' ? climateCard(t) + '</div>' : ''}`,
             `</div>`,
-            `${window.AtlasTravel.mapSection(t)}${seasonality(t)}${experiencePanel(t)}${reservationPlanning(t)}${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
+            ].join(''),
+            mapa: () => [
+            `${window.AtlasTravel.mapSection(t)}`,
+            ].join(''),
+            temporadas: () => [
+            `${seasonality(t)}`,
+            ].join(''),
+            experiencias: () => [
+            `${experiencePanel(t)}`,
+            ].join(''),
+            reservas: () => [
+            `${reservationPlanning(t)}`,
+            ].join(''),
+            traslados: () => [
+            `${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
+            ].join(''),
+            alojamientos: () => [
             `${t.id === 'emilia-romana' ? '' : adviceCards(t)}`,
             `<article class="panel" id="alojamientos" style="margin-top:20px">`,
             `<div class="hotel-section-heading"><div class="hotel-section-kicker">${overviewIcon('bed')}<span>Tu estancia</span></div><h2>Tus alojamientos.</h2></div>`,
-            `${stayParagraphs(id)}</article>${!t.planningDetails ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>${variants(t)}${railAppendix(t)}<section class="section wrap atlas-panel-section" id="dias"><article class="panel itinerary-panel">`,
+            `${stayParagraphs(id)}</article>${!t.planningDetails ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section><article class="panel itinerary-panel">`,
+            ].join(''),
+            dias: () => [
+            `${variants(t)}${railAppendix(t)}<section class="section wrap atlas-panel-section" id="dias"><article class="panel itinerary-panel">`,
             `<div class="section-title">`,
             `<div>`,
             `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 15h3m-3 3h7"/></svg><span>Itinerario</span></p>`,
@@ -273,7 +276,10 @@ window.AtlasTrip = function (ctx) {
             `<aside class="daynav" aria-label="Días del itinerario">${t.days.map(d => `<a href="#viaje/${id}/dia-${d.n}"><strong>Día ${d.n} · ${short(d.date)}</strong>${esc(d.base)}${hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : ''}</a>`).join('')}</aside>`,
             `<div class="days">${t.days.map(day).join('')}</div>`,
             `</div>`,
-            `</article></section>${optionsSection(t)}<section class="section wrap atlas-panel-section" id="costes"><article class="panel budget-section-panel">`,
+            `</article></section><article class="panel budget-section-panel">`,
+            ].join(''),
+            costes: () => [
+            `${optionsSection(t)}<section class="section wrap atlas-panel-section" id="costes"><article class="panel budget-section-panel">`,
             `<div class="section-title">`,
             `<div>`,
             `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18m-6 5h3"/></svg><span>Una persona · MXN</span></p>`,
@@ -282,13 +288,37 @@ window.AtlasTrip = function (ctx) {
             `<p>${t.majorTransport?.length ? 'Consulta los gastos estimados del viaje en pesos mexicanos. El total se completará conforme se definan los costos pendientes.' : 'Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.'}</p>`,
             `</div>`,
             `${t.majorTransport?.length ? window.AtlasBudgetTable.render(t) : ''}${!t.majorTransport?.length ? '<div class="budgetgrid"><div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Desde</th><th>Hasta</th></tr></thead><tbody>' + t.costs.map(x => '<tr><td>' + esc(x[0]) + '</td><td>' + (x[1] === null ? 'Por cotizar' : money(x[1])) + '</td><td>' + (x[2] === null ? 'Por cotizar' : money(x[2])) + '</td></tr>').join('') + '<tr class="totalrow"><td>' + (t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo') + '</td><td>' + money(low) + '</td><td>' + money(high) + '</td></tr></tbody></table></div></div>' + knownCostPanel(t) : ''}</article></section>`,
+            ].join(''),
+            fuentes: () => [
             `${t.sources?.length ? `<section class="section wrap" id="fuentes">` : ''}`,
             `${t.sources?.length ? `<p class="eyebrow orange">Fuentes y reservas</p>` : ''}`,
             `${t.sources?.length ? `<h2>Consulta el canal oficial.</h2>` : ''}`,
             `${t.sources?.length ? `<div class="sources">${t.sources.map(x => `<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join('')}</div>` : ''}`,
             `${t.sources?.length ? `<p class="tiny">${esc(t.sourceNote || 'Planeación de referencia: 1 de octubre de 2026. Textos y galerías revisados el 2 de octubre.')} Comprueba calendarios y tarifas para tus fechas antes de comprar; las fotografías muestran los lugares, no el clima que tendrás durante el viaje.</p>` : ''}`,
             `${t.sources?.length ? '</section>' : ''}`
-        ].join('');
+            ].join('')
+        };
+        return sectionDefinitions.map(section => parts[section.id]()).join('') + parts.fuentes();
+    }
+    function tripPage(id) {
+        cleanup();
+        const t = trips.find(x => x.id === id);
+        if (!t) {
+            home();
+            return;
+        }
+        if (t.status === 'draft') {
+            main.classList.remove('trip-espana-portugal');
+            document.title = t.name + ' · Atlas de Viajes';
+            main.innerHTML = tripShell(t, id, pendingTripSections(t), true);
+            bindTripSelector();
+            if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
+            return;
+        }
+        main.classList.toggle('trip-espana-portugal', t.layoutClass === 'trip-espana-portugal');
+        document.title = t.name + ' · Atlas de Viajes';
+        const [low, high] = sums(t);
+        const content = fullSectionMarkup(t, id, low, high);
         main.innerHTML = tripShell(t, id, content);
         window.AtlasGallery.init(main);
         mountView(t);
