@@ -89,7 +89,7 @@ test('el loader permite stays ausente y rechaza colecciones de tipo incorrecto',
     }
     await assert.doesNotReject(run(trip));
     await assert.rejects(run({ ...trip, stays: 'inválido' }), /Campo stays inválido/);
-    await assert.rejects(run({ ...trip, days: null }), /Campo days inválido/);
+    await assert.rejects(run({ ...trip, days: 'inválido' }), /Campo days inválido/);
     await assert.rejects(run({ ...trip, id: 'otro' }), /Identidad inválida/);
 });
 
