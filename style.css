@@ -1789,3 +1789,13 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   #dias .day .daycontent .schedule{gap:15px}
   #dias .day .daycontent .schedule-period .schedule-item{padding:9px 0}
 }
+
+/* Separación editorial después de la galería y sus controles. */
+#dias .day .daycontent:has(> .gallery) > .schedule,
+#dias .day .daycontent:has(> .photo-carousel) > .schedule{
+  margin-top:24px;
+}
+@media(max-width:680px){
+  #dias .day .daycontent:has(> .gallery) > .schedule,
+  #dias .day .daycontent:has(> .photo-carousel) > .schedule{margin-top:20px}
+}
