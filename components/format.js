@@ -48,5 +48,23 @@ window.AtlasFormat = function (ctx) {
         }
         return '<strong>' + esc(d.city || d.base) + ': </strong>' + esc(title);
     }
-    return { money, short, long, range, sums, price, esc, railLinks, readable, factParagraphs, highlightWords, formatDayTitle };
+    // Readiness depends on data, never on the editorial planning status.
+    // Until every specialized component accepts partial data (step 5), use its
+    // full renderer only when all required inputs are present.
+    function canRenderFullTrip(t) {
+        return !!(t && typeof t.cover === 'string' && t.cover &&
+            typeof t.start === 'string' && typeof t.end === 'string' &&
+            typeof t.intro === 'string' && t.intro.trim() &&
+            typeof t.climate === 'string' && typeof t.solo === 'string' &&
+            typeof t.flight === 'string' && typeof t.local === 'string' &&
+            Array.isArray(t.days) && t.days.length > 0 &&
+            t.days.every(d => d && d.date && Number.isInteger(d.n) && Array.isArray(d.places)) &&
+            Array.isArray(t.bases) && t.bases.length > 0 &&
+            Array.isArray(t.routeCities) && t.routeCities.length > 0 &&
+            Number.isInteger(t.work) && t.work >= 0 &&
+            t.profile && t.profile.pace && t.profile.solo && t.profile.weather &&
+            (Array.isArray(t.budgetRange) && t.budgetRange.length === 2 ||
+                Array.isArray(t.costs) && t.costs.length > 0));
+    }
+    return { money, short, long, range, sums, price, esc, railLinks, readable, factParagraphs, highlightWords, formatDayTitle, canRenderFullTrip };
 };
