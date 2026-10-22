@@ -172,17 +172,26 @@ window.AtlasTrip = function (ctx) {
             ['dias', 'Día por día', 'Día por día.', [['Días del itinerario', (t.days || []).map(item => item.title || 'Día ' + item.n)]]],
             ['costes', 'Presupuesto', 'Lo que cuesta el viaje.', [['Partidas', (t.expenses || []).map(item => item.concept || item.id)], ['Costos presupuestados', t.costs]]]
         ];
-        const sectionsHtml = sections.map(([id, label, title, fields]) =>
-            '<section class="section draft-trip-section" id="' + id + '"><article class="panel draft-trip-panel">' +
-            '<p class="eyebrow orange">' + esc(label) + '</p><h2>' + esc(title) + '</h2>' +
-            '<div class="draft-fields">' + fields.map(([field, value]) =>
-                '<div><strong>' + esc(field) + '</strong>' + display(value) + '</div>').join('') +
-            '</div></article></section>').join('');
+        const sectionsHtml = sections.map(([id, label, title, fields]) => {
+            // Reutilizar componentes reales cuando sus datos ya estén presentes.
+            if (id === 'temporadas' && t.seasonality?.months) return seasonality(t);
+            if (id === 'mapa' && t.mapPoints?.length) return window.AtlasTravel.mapSection(t);
+            if (id === 'experiencias' && t.experiences?.length) {
+                return '<section class="section draft-trip-section" id="experiencias">' +
+                    experiencePanel(t) + '</section>';
+            }
+            return '<section class="section draft-trip-section atlas-panel-section" id="' + id + '"><article class="panel draft-trip-panel">' +
+                '<p class="eyebrow orange atlas-editorial-kicker">' + esc(label) + '</p><h2>' + esc(title) + '</h2>' +
+                '<div class="draft-fields">' + fields.map(([field, value]) =>
+                    '<div><strong>' + esc(field) + '</strong>' + display(value) + '</div>').join('') +
+                '</div></article></section>';
+        }).join('');
         main.innerHTML = '<section class="draft-hero wrap"><a href="#" class="breadcrumb">← Regresar</a>' +
             '<p class="eyebrow orange">Viaje en planeación</p><h1>' + esc(t.flag ? t.flag + ' ' + t.name : t.name) + '</h1>' +
             '<p>Fechas: ' + display(dateRange) + ' · Presupuesto: ' + display(null) + '</p></section>' +
             tripNavigation(t, t.id, true) + '<div class="wrap draft-trip-content">' + sectionsHtml + '</div>';
         bindTripSelector();
+        if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
         document.title = t.name + ' · Atlas de Viajes';
     }
     function tripPage(id) {
