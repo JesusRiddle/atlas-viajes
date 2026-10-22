@@ -1303,7 +1303,7 @@ html{scroll-padding-top:78px}
 #traslados .mt-train-timeline .flight-endpoint{align-items:center;min-width:0;text-align:center}
 #traslados .mt-train-timeline .flight-endpoint strong{align-self:center}
 #traslados .mt-train-timeline .flight-endpoint .mt-station-name{display:block;width:auto;max-width:165px;align-self:center;white-space:nowrap;color:var(--muted);font-size:10px;font-weight:400;line-height:1.2;text-align:center}
-#traslados .mt-train-timeline .mt-train-direction{margin:6px 0 0;text-align:center;color:#5e563f;font-size:11px;font-weight:600}
+#traslados .mt-train-timeline .mt-train-direction{margin:6px 0 0;text-align:center;color:var(--ink);font-size:11px;font-weight:700}
 #traslados .mt-train-timeline .flight-line-duration{white-space:nowrap}
 @media(max-width:680px){
  #traslados .mt-train-timeline{margin:9px 0}
