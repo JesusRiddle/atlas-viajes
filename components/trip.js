@@ -188,6 +188,27 @@ window.AtlasTrip = function (ctx) {
         }).join('');
         return sectionsHtml;
     }
+    // Shared outer layout: the data state changes content, not the page composition.
+    function tripShell(t, id, content, isDraft = false) {
+        return tripHero(t, id, isDraft) + tripNavigation(t, id, isDraft) +
+            (isDraft ? '<div class="wrap draft-trip-content">' + content + '</div>' : content);
+    }
+    function tripHero(t, id, isDraft = false) {
+        if (isDraft) return pendingTripHero(t);
+        const rank = trips.indexOf(t) + 1;
+        return [
+            `<section class="triphero">${img(covers[id], '', true)}<div class="wrap">`,
+            `<a class="breadcrumb" href="#"><span aria-hidden="true">←</span> Regresar</a>`,
+            `<p class="eyebrow hero-eyebrow">Viaje #${rank}: ${esc(t.heroEyebrow || t.tag)}</p>`,
+            `<h1>${esc(t.name)}</h1>`,
+            '<div class="hero-meta">',
+            `<span>${range(t)}</span>`,
+            `<span>${t.days.length} días naturales</span>`,
+            `<span>${t.work} días laborales</span>`,
+            `<span>${esc(t.heroLodgingSummary || baseLabel(t.bases.length))}</span>`,
+            '</div></div></section>'
+        ].join('');
+    }
     function pendingTripHero(t) {
         const dateRange = t.start && t.end ? esc(t.start + ' – ' + t.end) : '<span class="draft-pending">Por definir</span>';
         return '<section class="draft-hero wrap"><a href="#" class="breadcrumb">← Regresar</a>' +
@@ -204,8 +225,7 @@ window.AtlasTrip = function (ctx) {
         if (t.status === 'draft') {
             main.classList.remove('trip-espana-portugal');
             document.title = t.name + ' · Atlas de Viajes';
-            main.innerHTML = pendingTripHero(t) + tripNavigation(t, id, true) +
-                '<div class="wrap draft-trip-content">' + pendingTripSections(t) + '</div>';
+            main.innerHTML = tripShell(t, id, pendingTripSections(t), true);
             bindTripSelector();
             if (t.mapPoints?.length) window.AtlasTravel.initMap(t);
             return;
@@ -213,21 +233,7 @@ window.AtlasTrip = function (ctx) {
         main.classList.toggle('trip-espana-portugal', t.layoutClass === 'trip-espana-portugal');
         document.title = t.name + ' · Atlas de Viajes';
         const [low, high] = sums(t);
-        const rank = trips.indexOf(t) + 1;
-        main.innerHTML = [
-            `<section class="triphero">${img(covers[id], '', true)}<div class="wrap">`,
-            `<a class="breadcrumb" href="#"><span aria-hidden="true">←</span> Regresar</a>`,
-            `<p class="eyebrow hero-eyebrow">Viaje #${rank}: ${esc(t.heroEyebrow || t.tag)}</p>`,
-            `<h1>${esc(t.name)}</h1>`,
-            `<div class="hero-meta">`,
-            `<span>${range(t)}</span>`,
-            `<span>${t.days.length} días naturales</span>`,
-            `<span>${t.work} días laborales</span>`,
-            `<span>${esc(t.heroLodgingSummary || baseLabel(t.bases.length))}</span>`,
-            `</div>`,
-            `</div>`,
-            `</section>`,
-            tripNavigation(t, id),
+        const content = [
             `<section class="wrap" id="plan">`,
             `<div class="overview overview-editorial">`,
             `<div class="overview-intro">`,
@@ -288,6 +294,7 @@ window.AtlasTrip = function (ctx) {
             `${t.sources?.length ? `<p class="tiny">${esc(t.sourceNote || 'Planeación de referencia: 1 de octubre de 2026. Textos y galerías revisados el 2 de octubre.')} Comprueba calendarios y tarifas para tus fechas antes de comprar; las fotografías muestran los lugares, no el clima que tendrás durante el viaje.</p>` : ''}`,
             `${t.sources?.length ? '</section>' : ''}`
         ].join('');
+        main.innerHTML = tripShell(t, id, content);
         window.AtlasGallery.init(main);
         mountView(t);
         window.AtlasTravel.initMap(t);
