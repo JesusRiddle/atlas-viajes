@@ -1755,3 +1755,37 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   #temporadas .season-month .season-month-name{font-size:clamp(17px,4vw,21px)}
   #temporadas .season-month .season-state{white-space:normal}
 }
+
+/* Actividades del día: tres columnas editoriales, sin tarjetas coloreadas anidadas. */
+#dias .day .daycontent .schedule{gap:20px;align-items:start}
+#dias .day .daycontent .schedule-period,
+#dias .day .daycontent .schedule-afternoon,
+#dias .day .daycontent .schedule-evening{
+  background:transparent;border:0;border-radius:0;box-shadow:none;
+  padding:0;min-height:0;
+}
+#dias .day .daycontent .schedule-period>label{
+  padding:0 0 9px;margin:0 0 2px;
+  border-bottom:1px solid #dce3e6;
+}
+#dias .day .daycontent .schedule-period .schedule-items{
+  background:transparent;border:0;border-radius:0;overflow:visible;
+}
+#dias .day .daycontent .schedule-period .schedule-item{
+  background:transparent;border-radius:0;
+  padding:10px 0;gap:9px;grid-template-columns:22px minmax(0,1fr);
+}
+#dias .day .daycontent .schedule-period .schedule-item+.schedule-item{
+  border-top:1px solid #e8edef;
+}
+#dias .day .daycontent .schedule-period .schedule-item-number{
+  background:#f0f3f4;color:#60717a;
+  border-radius:4px;min-height:21px;
+}
+#dias .day .daycontent .schedule-period .schedule-item p{
+  font-size:13px;line-height:1.65;
+}
+@media(max-width:680px){
+  #dias .day .daycontent .schedule{gap:15px}
+  #dias .day .daycontent .schedule-period .schedule-item{padding:9px 0}
+}
