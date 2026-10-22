@@ -149,7 +149,7 @@ test('un viaje mínimo comparte encabezado, navegación y nueve anclas del model
     };
     const view = window.AtlasTrip(ctx);
     assert.doesNotThrow(() => view.tripPage('japon'));
-    assert.match(main.innerHTML, /class="triphero"/);
+    assert.match(main.innerHTML, /class="triphero triphero-split"/);
     assert.match(main.innerHTML, /Duración por definir/);
     assert.match(main.innerHTML, /Días laborales por definir/);
     assert.doesNotMatch(main.innerHTML, /Invalid Date|undefined|NaN|0 días naturales/);
