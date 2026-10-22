@@ -2124,3 +2124,12 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   .subnav>div{width:100%;min-width:0}
 }
 
+
+/* Temporadas: mismo borde superior de acento que la tarjeta Clima y luz. */
+#temporadas .season-month{
+  border-top:3px solid var(--season-accent,#52656a);
+  padding-top:12px;
+}
+@media(max-width:560px){
+  #temporadas .season-month{padding-top:10px}
+}
