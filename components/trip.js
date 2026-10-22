@@ -176,7 +176,7 @@ window.AtlasTrip = function (ctx) {
     function sectionReady(t, key) {
         switch (key) {
             case 'plan':
-                return false; // Panorama incremental belongs to step 5.
+                return true; // The master overview renders defined and pending fields incrementally.
             case 'mapa': return !!t.mapPoints.length;
             case 'temporadas': return !!t.seasonality?.months;
             case 'experiencias': return !!t.experiences.length;
@@ -215,6 +215,23 @@ window.AtlasTrip = function (ctx) {
         ].join('');
     }
     function fullSectionMarkup(t, id, low, high) {
+        const complete = canRenderFullTrip(t);
+        const masterOverview = t.id === 'emilia-romana' || !complete;
+        const pending = () => '<span class="draft-pending">Por definir</span>';
+        const hasBases = t.bases.length > 0;
+        const overviewIntro = typeof t.intro === 'string' && t.intro.trim()
+            ? highlightWords(t.intro, t.introHighlights) : pending();
+        const overviewClimate = typeof t.climate === 'string' && t.climate.trim()
+            ? climateCard(t) : '<article class="overview-climate-card"><h3>' +
+                overviewIcon('sun') + ' Clima y luz</h3><div class="fact-copy"><p>' + pending() + '</p></div></article>';
+        const overviewAdvice = Array.isArray(t.practicalIndicators) && t.practicalIndicators.length
+            ? practicalAdvice(t) : '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
+                '<div class="overview-practical-grid"><p>' + pending() + '</p></div></section>';
+        const overviewBases = hasBases ? overviewStays(t, true) :
+            '<div class="overview-stays overview-stays-inline"><div class="overview-stays-heading">' +
+            '<h3 class="overview-subheading">' + overviewIcon('bed') +
+            ' Dónde dormirás</h3></div><p>' + pending() + '</p></div>';
+        const overviewPrice = complete ? price(t) : pending();
         const parts = {
             plan: () => [
             `<section class="wrap" id="plan">`,
@@ -222,26 +239,26 @@ window.AtlasTrip = function (ctx) {
             `<div class="overview-intro">`,
             `<div class="overview-kicker">${overviewIcon('compass')}<span>Panorama del viaje</span></div>`,
             `<h2 class="overview-heading">La esencia de tu recorrido.</h2>`,
-            `<p class="lead">${highlightWords(t.intro, t.introHighlights)}</p>`,
-            `${t.id === 'emilia-romana' ? practicalAdvice(t) : ''}`,
-            `${t.id === 'emilia-romana' ? '' : `<div class="overview-route-block"><h3 class="overview-subheading">${overviewIcon('pin')} Ciudades del recorrido</h3><div class="trip-route" aria-label="Ciudades del recorrido">${t.routeCities.map(city => `<span class="trip-route-city">${esc(city)}</span>`).join('')}</div></div>`}`,
-            `${t.id === 'emilia-romana' ? overviewStays(t, true) : ''} `,
+            `<p class="lead">${overviewIntro}</p>`,
+            `${masterOverview ? (complete ? practicalAdvice(t) : overviewAdvice) : ''}`,
+            `${masterOverview ? '' : `<div class="overview-route-block"><h3 class="overview-subheading">${overviewIcon('pin')} Ciudades del recorrido</h3><div class="trip-route" aria-label="Ciudades del recorrido">${t.routeCities.map(city => `<span class="trip-route-city">${esc(city)}</span>`).join('')}</div></div>`}`,
+            `${masterOverview ? (complete ? overviewStays(t, true) : overviewBases) : ''} `,
             `</div>`,
-            `${t.id === 'emilia-romana' ? '' : overviewStays(t)}`,
-            `${t.id === 'emilia-romana' ? '<div class="overview-side">' : ''}`,
+            `${masterOverview ? '' : overviewStays(t)}`,
+            `${masterOverview ? '<div class="overview-side">' : ''}`,
             `<aside class="budget-teaser">`,
             `<div>`,
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
-            `<strong>${price(t)}</strong>`,
+            `<strong>${overviewPrice}</strong>`,
             `<p class="budget-context">MXN · 1 persona · viaje completo</p>`,
             `<a class="budget-detail-link" href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
-            `${t.exchangeRates && t.exchangeRateSnapshot ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipos de cambio · ' +
+            `${complete && t.exchangeRates && t.exchangeRateSnapshot ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipos de cambio · ' +
                 esc(t.exchangeRateSnapshot.date) + '</div><div class="budget-exchange-values"><span>EUR 1 = $' +
                 Number(t.exchangeRates.EUR).toFixed(4) + ' MXN</span><span>USD 1 = $' +
                 Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span></div></div>' : ''}`,
                         `</div>`,
             `</aside>`,
-            `${t.id === 'emilia-romana' ? climateCard(t) + '</div>' : ''}`,
+            `${masterOverview ? (complete ? climateCard(t) : overviewClimate) + '</div>' : ''}`,
             `</div>`,
             ].join(''),
             mapa: () => [
