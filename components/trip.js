@@ -183,8 +183,8 @@ window.AtlasTrip = function (ctx) {
             case 'reservas': return true;
             case 'traslados': return true;
             case 'alojamientos': return true;
-            case 'dias': return !!(t.days.length && t.days.every(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places)));
-            case 'costes': return !!(t.majorTransport.length || t.expenses.length || t.costs.length);
+            case 'dias': return true;
+            case 'costes': return true;
             default: return false;
         }
     }
@@ -232,6 +232,22 @@ window.AtlasTrip = function (ctx) {
             '<h3 class="overview-subheading">' + overviewIcon('bed') +
             ' Dónde dormirás</h3></div><p>' + pending() + '</p></div>';
         const overviewPrice = complete ? price(t) : pending();
+        const completeDays = complete && t.days.every(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places));
+        const partialDays = () => t.days.length ? t.days.map((d, index) =>
+            '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
+            '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p>' +
+            (d?.base ? '<p>' + esc(d.base) + '</p>' : '') + '</article>').join('') :
+            '<p class="draft-pending">Por definir</p>';
+        const partialBudget = () => {
+            if (t.majorTransport.length || t.expenses.length) return window.AtlasBudgetTable.render(t) ||
+                '<p class="draft-pending">Por cotizar</p>';
+            if (t.costs.length) return '<div class="budgetgrid"><div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Desde</th><th>Hasta</th></tr></thead><tbody>' +
+                t.costs.map(row => '<tr><td>' + esc(row[0]) + '</td><td>' +
+                    (Number.isFinite(row[1]) ? money(row[1]) : 'Por cotizar') + '</td><td>' +
+                    (Number.isFinite(row[2]) ? money(row[2]) : 'Por cotizar') +
+                    '</td></tr>').join('') + '</tbody></table></div></div>';
+            return '<p class="draft-pending">Por definir</p>';
+        };
         const parts = {
             plan: () => [
             `<section class="wrap" id="plan">`,
@@ -283,19 +299,19 @@ window.AtlasTrip = function (ctx) {
             `${stayParagraphs(id)}</article>${!t.planningDetails && canRenderFullTrip(t) ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>`,
             ].join(''),
             dias: () => [
-            `${variants(t)}${railAppendix(t)}<section class="section wrap atlas-panel-section" id="dias"><article class="panel itinerary-panel">`,
+            `${completeDays ? variants(t) + railAppendix(t) : ''}<section class="section wrap atlas-panel-section" id="dias"><article class="panel itinerary-panel">`,
             `<div class="section-title">`,
             `<div>`,
             `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 15h3m-3 3h7"/></svg><span>Itinerario</span></p>`,
             `<h2>Día por día.</h2>`,
             `</div>`,
             `<div>`,
-            `<button class="printbutton" id="expand">Contraer todos los días</button> <button class="printbutton" id="print">Imprimir / guardar PDF</button>`,
+            `${completeDays ? '<button class="printbutton" id="expand">Contraer todos los días</button> <button class="printbutton" id="print">Imprimir / guardar PDF</button>' : ''}`,
             `</div>`,
             `</div>`,
             `<div class="itinerary-layout">`,
-            `<aside class="daynav" aria-label="Días del itinerario">${t.days.map(d => `<a href="#viaje/${id}/dia-${d.n}"><strong>Día ${d.n} · ${short(d.date)}</strong>${esc(d.base)}${hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : ''}</a>`).join('')}</aside>`,
-            `<div class="days">${t.days.map(day).join('')}</div>`,
+            `${completeDays ? '<aside class="daynav" aria-label="Días del itinerario">' + t.days.map(d => '<a href="#viaje/' + id + '/dia-' + d.n + '"><strong>Día ' + d.n + ' · ' + short(d.date) + '</strong>' + esc(d.base) + (hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : '') + '</a>').join('') + '</aside>' : ''}`,
+            `<div class="days">${completeDays ? t.days.map(day).join('') : partialDays()}</div>`,
             `</div>`,
             `</article></section>`,
             ].join(''),
@@ -308,7 +324,7 @@ window.AtlasTrip = function (ctx) {
             `</div>`,
             `<p>${t.majorTransport?.length ? 'Consulta los gastos estimados del viaje en pesos mexicanos. El total se completará conforme se definan los costos pendientes.' : 'Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.'}</p>`,
             `</div>`,
-            `${t.majorTransport?.length ? window.AtlasBudgetTable.render(t) : ''}${!t.majorTransport?.length ? '<div class="budgetgrid"><div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Desde</th><th>Hasta</th></tr></thead><tbody>' + t.costs.map(x => '<tr><td>' + esc(x[0]) + '</td><td>' + (x[1] === null ? 'Por cotizar' : money(x[1])) + '</td><td>' + (x[2] === null ? 'Por cotizar' : money(x[2])) + '</td></tr>').join('') + '<tr class="totalrow"><td>' + (t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo') + '</td><td>' + money(low) + '</td><td>' + money(high) + '</td></tr></tbody></table></div></div>' + knownCostPanel(t) : ''}</article></section>`,
+            `${!complete ? partialBudget() : (t.majorTransport?.length ? window.AtlasBudgetTable.render(t) : '')}${complete && !t.majorTransport?.length ? '<div class="budgetgrid"><div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Desde</th><th>Hasta</th></tr></thead><tbody>' + t.costs.map(x => '<tr><td>' + esc(x[0]) + '</td><td>' + (x[1] === null ? 'Por cotizar' : money(x[1])) + '</td><td>' + (x[2] === null ? 'Por cotizar' : money(x[2])) + '</td></tr>').join('') + '<tr class="totalrow"><td>' + (t.budgetPreliminary ? 'Rango global preliminar conservado' : 'Total completo') + '</td><td>' + money(low) + '</td><td>' + money(high) + '</td></tr></tbody></table></div></div>' + knownCostPanel(t) : ''}</article></section>`,
             ].join(''),
             fuentes: () => [
             `${t.sources?.length ? `<section class="section wrap" id="fuentes">` : ''}`,
