@@ -27,7 +27,7 @@
     trips.forEach((trip, index) => {
       if (!trip || trip.id !== active[index].id || !Array.isArray(trip.days) ||
           !Array.isArray(trip.mapPoints) ||
-          (trip.stays != null && !Array.isArray(trip.stays)) || !trip.cover) {
+          (trip.stays != null && !Array.isArray(trip.stays)) || (!trip.cover && trip.status !== "draft")) {
         throw new Error("Contenido incompleto o identificador incorrecto en " + active[index].file);
       }
     });
