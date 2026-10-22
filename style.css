@@ -1291,3 +1291,8 @@ html{scroll-padding-top:78px}
   #traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{width:100%;max-width:76px;white-space:normal;overflow-wrap:normal}
   #traslados .mt-flight-timeline .flight-layover{min-height:16px;margin:2px 0}
 }
+
+/* Cronología más compacta solo en Cómo trasladarte (sin nombres largos de aeropuerto). */
+.daycontent .mobility-card .day-transport .flight-leg{min-height:34px}
+.daycontent .mobility-card .day-transport .flight-layover{margin:0;padding:0;min-height:13px;line-height:1.25}
+@media(max-width:680px){.daycontent .mobility-card .day-transport .flight-leg{min-height:36px}.daycontent .mobility-card .day-transport .flight-layover{min-height:15px}}
