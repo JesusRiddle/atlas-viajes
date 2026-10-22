@@ -1278,7 +1278,7 @@ html{scroll-padding-top:78px}
 @media(max-width:680px){#traslados .mt-flight-timeline .flight-layover{margin:2px 0;min-height:17px}#traslados .mt-flight-timeline .flight-leg{min-height:70px}}
 
 /* Centrado real de hora, código IATA y nombre; aprovechar el ancho en Desktop. */
-#traslados .mt-flight-timeline .flight-leg{grid-template-columns:150px minmax(0,1fr) 150px;gap:8px;min-height:55px}
+#traslados .mt-flight-timeline .flight-leg{grid-template-columns:100px minmax(0,1fr) 100px;gap:8px;min-height:55px}
 #traslados .mt-flight-timeline .flight-endpoint{align-items:center;min-width:0;text-align:center}
 #traslados .mt-flight-timeline .flight-endpoint strong,
 #traslados .mt-flight-timeline .flight-endpoint span{align-self:center;text-align:center}
