@@ -7,14 +7,29 @@ window.AtlasHome = function (ctx) {
             '<div class="cardbody"><p class="eyebrow">En planeación</p><h3>' + esc(t.flag || '') + ' ' + esc(t.name) +
             '</h3><p>Fechas · Por definir</p><p>Itinerario · Por definir</p><div class="cardbottom"><strong>Presupuesto por definir</strong></div></div></a>';
     }
+    function cardCountries(flag) {
+        const symbols = Array.from(String(flag || ''));
+        const names = new Intl.DisplayNames(['es'], { type: 'region' });
+        const countries = [];
+        for (let i = 0; i + 1 < symbols.length; i++) {
+            const a = symbols[i].codePointAt(0), b = symbols[i + 1].codePointAt(0);
+            if (a >= 0x1f1e6 && a <= 0x1f1ff && b >= 0x1f1e6 && b <= 0x1f1ff) {
+                const code = String.fromCharCode(a - 0x1f1e6 + 65, b - 0x1f1e6 + 65);
+                countries.push(names.of(code));
+                i++;
+            }
+        }
+        return countries.join(' + ');
+    }
     function card(t, i) {
         if (!canRenderFullTrip(t)) return draftCard(t, i);
         const title = esc(t.name);
+        const country = cardCountries(t.flag);
         const cities = t.routeCities.map(x => esc(x)).join(' · ');
         const lodging = t.lodgingSummary || baseLabel(t.bases.length);
         return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
             '<div class="cardphoto">' + img(covers[t.id], '', false, false, true) + '<span class="rank">' + (i + 1) + '</span></div>' +
-            '<div class="cardbody"><div class="card-overview"><span class="card-duration">' + t.days.length +
+            '<div class="cardbody"><div class="card-overview"><span class="card-overview-location">' + (country ? esc(country) + ' · ' : '') + t.days.length +
             ' días</span><span class="carddates">' + range(t) + '</span></div>' +
             '<h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
             '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' +
