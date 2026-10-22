@@ -7,6 +7,76 @@ window.AtlasHome = function (ctx) {
             '<div class="cardbody"><p class="eyebrow">En planeación</p><h3>' + esc(t.flag || '') + ' ' + esc(t.name) +
             '</h3><p>Fechas · Por definir</p><p>Itinerario · Por definir</p><div class="cardbottom"><strong>Presupuesto por definir</strong></div></div></a>';
     }
+    // Fotos ya registradas en los días del viaje; no se descargan hasta hacer hover.
+    const cardSlides = new Map(trips.map(trip => {
+        const keys = [covers[trip.id], ...(trip.days || []).flatMap(day => day.places || [])];
+        const seen = new Set();
+        const sources = keys.map(key => photos[key]?.src).filter(src => {
+            if (!src || seen.has(src)) return false;
+            seen.add(src);
+            return true;
+        });
+        return [trip.id, sources];
+    }));
+    const hoverTimers = new Set();
+    function mountCoverSlideshow() {
+        if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches ||
+            window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        document.querySelectorAll('#viajes .atlas-home-card').forEach(card => {
+            const tripId = card.getAttribute('href')?.replace('#viaje/', '');
+            const sources = cardSlides.get(tripId) || [];
+            const frame = card.querySelector('.cardphoto');
+            if (!frame || sources.length < 2) return;
+            const original = frame.querySelector('img');
+            const overlay = document.createElement('img');
+            overlay.className = 'cardphoto-slide';
+            overlay.alt = '';
+            overlay.setAttribute('aria-hidden', 'true');
+            overlay.decoding = 'async';
+            frame.insertBefore(overlay, frame.querySelector('.rank'));
+            let index = 0;
+            let timer = null;
+            let token = 0;
+            let busy = false;
+            const stop = () => {
+                token++;
+                if (timer !== null) { clearInterval(timer); hoverTimers.delete(timer); timer = null; }
+                index = 0;
+                busy = false;
+                overlay.classList.remove('visible');
+            };
+            const advance = () => {
+                if (!frame.isConnected || document.hidden) { stop(); return; }
+                if (busy) return;
+                busy = true;
+                const next = (index + 1) % sources.length;
+                const currentToken = token;
+                const preload = new Image();
+                preload.onload = () => {
+                    if (currentToken !== token) return;
+                    overlay.src = sources[next];
+                    overlay.classList.add('visible');
+                    index = next;
+                    busy = false;
+                    if (next === 0) {
+                        // Al completar la vuelta recuperamos la portada original.
+                        overlay.classList.remove('visible');
+                    }
+                };
+                preload.onerror = () => { if (currentToken === token) busy = false; };
+                preload.src = sources[next];
+            };
+            frame.addEventListener('mouseenter', () => {
+                if (timer !== null) return;
+                token++;
+                timer = setInterval(advance, 3000);
+                hoverTimers.add(timer);
+            });
+            frame.addEventListener('mouseleave', stop);
+            card.addEventListener('click', stop);
+            document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
+        });
+    }
     function cardCountries(flag) {
         const symbols = Array.from(String(flag || ''));
         const names = new Intl.DisplayNames(['es'], { type: 'region' });
@@ -58,6 +128,6 @@ window.AtlasHome = function (ctx) {
                 ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
     }
-    function home() { document.title = 'Atlas de viajes · Viajes 2026–2027'; main.innerHTML = `<section class="home-intro wrap atlas-home-hero" aria-labelledby="atlas-home-title"><div class="atlas-home-hero-copy"><p class="eyebrow orange">ATLAS DE VIAJES · 2026–2027</p><h1 id="atlas-home-title">La vida es un viaje.</h1><p class="atlas-home-lead">Rutas desde CDMX, itinerarios detallados y presupuestos para elegir tu próxima aventura.</p></div><div class="intro-photo atlas-home-hero-image"><img src="photos/atlas-world-hero.webp" alt="Ilustración de destinos entre montañas, ciudades y costas" loading="eager" fetchpriority="high" decoding="async"><div class="photo-overlay"></div><div class="intro-caption"><span>EXPLORA EL MUNDO A TU RITMO</span></div></div></section><section class="section wrap" id="viajes" style="padding-top:25px"><div class="section-title"><div><p class="eyebrow orange">Caminos por descubrir</p><h2>Elige tu siguiente historia.</h2></div><p>Entre ciudades históricas, mercados, palacios y paisajes de montaña, encuentra la ruta que más te inspira.</p></div><div class="cards">${trips.map(card).join('')}</div></section>${comparison()}`; }
+    function home() { document.title = 'Atlas de viajes · Viajes 2026–2027'; main.innerHTML = `<section class="home-intro wrap atlas-home-hero" aria-labelledby="atlas-home-title"><div class="atlas-home-hero-copy"><p class="eyebrow orange">ATLAS DE VIAJES · 2026–2027</p><h1 id="atlas-home-title">La vida es un viaje.</h1><p class="atlas-home-lead">Rutas desde CDMX, itinerarios detallados y presupuestos para elegir tu próxima aventura.</p></div><div class="intro-photo atlas-home-hero-image"><img src="photos/atlas-world-hero.webp" alt="Ilustración de destinos entre montañas, ciudades y costas" loading="eager" fetchpriority="high" decoding="async"><div class="photo-overlay"></div><div class="intro-caption"><span>EXPLORA EL MUNDO A TU RITMO</span></div></div></section><section class="section wrap" id="viajes" style="padding-top:25px"><div class="section-title"><div><p class="eyebrow orange">Caminos por descubrir</p><h2>Elige tu siguiente historia.</h2></div><p>Entre ciudades históricas, mercados, palacios y paisajes de montaña, encuentra la ruta que más te inspira.</p></div><div class="cards">${trips.map(card).join('')}</div></section>${comparison()}`; mountCoverSlideshow(); }
     return { card, comparison, home };
 };
