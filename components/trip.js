@@ -1,7 +1,7 @@
 window.AtlasTrip = function (ctx) {
     'use strict';
     const {
-        trips, main, covers, esc, money, range, short, sums, price, img,
+        trips, main, covers, photos, esc, money, range, short, sums, price, img,
         readable, highlightWords, baseLabel, experiencePanel, reservationPlanning,
         railPlanning, factParagraphs, stayParagraphs, day, hotelForDay, mountTransport, variants,
         railAppendix, optionsSection, seasonality, knownCostPanel, home,
@@ -339,6 +339,96 @@ window.AtlasTrip = function (ctx) {
             return pendingPanel(id, title, masterPanelClass[id]);
         }).join('') + parts.fuentes();
     }
+    // Presentación del hero: fuentes existentes, precarga gradual y pausa fuera de pantalla.
+    function mountHeroSlideshow(trip) {
+        const frame = main.querySelector('.triphero-split-photo');
+        if (!frame || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return () => {};
+        const sources = [...new Set([trip.cover, ...(trip.days || []).flatMap(day => day.places || [])]
+            .map(key => photos[key]?.src).filter(Boolean))];
+        if (sources.length < 2) return () => {};
+        const base = frame.querySelector('img');
+        if (!base) return () => {};
+        const layers = [0, 1].map(() => {
+            const node = document.createElement('img');
+            node.className = 'triphero-slide';
+            node.alt = '';
+            node.setAttribute('aria-hidden', 'true');
+            node.decoding = 'async';
+            frame.appendChild(node);
+            return node;
+        });
+        let index = 0, front = -1, tick = null, fadeTimer = null, generation = 0, loading = false;
+        let inView = false;
+        const zoom = (node, number) => {
+            node.classList.remove('triphero-zoom-in', 'triphero-zoom-out');
+            void node.offsetWidth;
+            node.classList.add(number % 2 ? 'triphero-zoom-out' : 'triphero-zoom-in');
+        };
+        const advance = () => {
+            if (!inView || document.hidden || loading || !frame.isConnected) return;
+            loading = true;
+            const next = (index + 1) % sources.length;
+            const gen = generation;
+            if (next === 0) {
+                zoom(base, next);
+                if (front >= 0) layers[front].classList.remove('is-visible');
+                index = 0;
+                front = -1;
+                loading = false;
+                return;
+            }
+            const preload = new Image();
+            preload.onload = () => {
+                if (generation !== gen || !inView || document.hidden) return;
+                const target = front === 0 ? 1 : 0;
+                const incoming = layers[target];
+                const outgoing = front >= 0 ? layers[front] : null;
+                incoming.classList.remove('is-visible', 'triphero-zoom-in', 'triphero-zoom-out');
+                incoming.src = sources[next];
+                incoming.style.zIndex = '2';
+                if (outgoing) outgoing.style.zIndex = '1';
+                void incoming.offsetWidth;
+                incoming.classList.add('is-visible');
+                zoom(incoming, next);
+                if (fadeTimer !== null) clearTimeout(fadeTimer);
+                fadeTimer = setTimeout(() => {
+                    if (generation === gen && outgoing) outgoing.classList.remove('is-visible');
+                    fadeTimer = null;
+                }, 750);
+                front = target;
+                index = next;
+                loading = false;
+            };
+            preload.onerror = () => { if (generation === gen) loading = false; };
+            preload.src = sources[next];
+        };
+        const pause = () => {
+            generation++;
+            if (tick !== null) { clearInterval(tick); tick = null; }
+            if (fadeTimer !== null) { clearTimeout(fadeTimer); fadeTimer = null; }
+            loading = false;
+        };
+        const sync = () => {
+            if (inView && !document.hidden) {
+                if (tick === null) {
+                    if (index === 0) zoom(base, 0);
+                    tick = setInterval(advance, 4000);
+                }
+            } else pause();
+        };
+        const onVisibility = () => sync();
+        document.addEventListener('visibilitychange', onVisibility);
+        const observer = new IntersectionObserver(entries => {
+            inView = entries[0]?.isIntersecting || false;
+            sync();
+        }, { threshold: 0.1 });
+        observer.observe(frame);
+        return () => {
+            pause();
+            observer.disconnect();
+            document.removeEventListener('visibilitychange', onVisibility);
+        };
+    }
     function tripPage(id) {
         cleanup();
         const t = trips.find(x => x.id === id);
@@ -353,6 +443,7 @@ window.AtlasTrip = function (ctx) {
         main.innerHTML = tripShell(t, id, content);
         window.AtlasGallery.init(main);
         mountView(t);
+        disposeView.push(mountHeroSlideshow(t));
         if (t.mapPoints?.some(p => Array.isArray(p.coords) && p.coords.length === 2 && p.coords.every(Number.isFinite))) window.AtlasTravel.initMap(t);
         bindTripSelector();
         document.querySelector('#expand')?.addEventListener('click', e => {
