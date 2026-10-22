@@ -1831,7 +1831,8 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 /* Ajuste final de portada: título t.name completo y metadatos agrupados sin huecos. */
 #viajes .atlas-home-card .cardbody{gap:7px;padding:15px 17px 16px}
 #viajes .atlas-home-card .card-overview{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:11px;line-height:1.4}
-#viajes .atlas-home-card .card-overview .card-duration{color:#8b421f;font-weight:700;white-space:nowrap}
+#viajes .atlas-home-card .card-overview .card-duration,
+#viajes .atlas-home-card .card-overview .card-overview-location{color:#8b421f;font-weight:700;white-space:nowrap}
 #viajes .atlas-home-card .card-overview .carddates{margin:0;font-size:11px}
 #viajes .atlas-home-card h3{
   font-family:var(--serif);font-weight:500;font-size:clamp(20px,1.9vw,24px);
