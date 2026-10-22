@@ -27,11 +27,11 @@ function create() {
     if (Array.isArray(source.routeCities)) trip.routeCities = source.routeCities.filter(city => typeof city === 'string');
     if (Array.isArray(source.experiences)) trip.experiences = source.experiences.filter(item => typeof item === 'string');
   }
-  const insertion = /\n\];\s*$/;
+  const insertion = /\];\s*$/;
   if (!insertion.test(catalog)) throw new Error('modules.js no tiene el formato esperado');
   const entry = '  {\n    "id": ' + JSON.stringify(id) + ',\n    "file": ' + JSON.stringify(id + '.json') + ',\n    "available": false\n  }';
-  const last = catalog.replace(insertion, '\n];');
-  const index = last.lastIndexOf('\n];');
+  const last = catalog.replace(insertion, '];');
+  const index = last.lastIndexOf('];');
   const rewritten = last.slice(0, index).replace(/\s*$/, '') + ',\n' + entry + last.slice(index);
   fs.writeFileSync(destination, JSON.stringify(trip, null, 2) + '\n', { flag: 'wx' });
   try { fs.writeFileSync(catalogPath, rewritten); }
