@@ -1262,3 +1262,8 @@ html{scroll-padding-top:78px}
 #traslados .mt-flight-timeline .mt-airport-name{overflow-wrap:normal;word-break:normal;white-space:normal;background:transparent!important;padding:0!important;border:0!important;box-shadow:none!important}
 #traslados .mt-flight-timeline .mt-airport-name strong,#traslados .mt-flight-timeline .mt-airport-name em,#traslados .mt-flight-timeline .mt-airport-name span{display:inline!important;width:auto!important;padding:0!important;margin:0!important;background:transparent!important;box-shadow:none!important;color:inherit!important;font:inherit!important;text-align:inherit!important}
 @media(max-width:680px){#traslados .mt-flight-heading-stats{justify-content:flex-start;width:100%;gap:3px 12px}}
+
+/* Alinear los nombres de aeropuertos con la columna de hora y código IATA. */
+#traslados .mt-flight-timeline .flight-endpoint .mt-airport-name{box-sizing:border-box;width:55px;max-width:none;align-self:flex-start;text-align:center;overflow:visible}
+#traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{align-self:flex-end}
+@media(max-width:680px){#traslados .mt-flight-timeline .flight-endpoint .mt-airport-name{width:49px}}
