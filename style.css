@@ -1267,3 +1267,7 @@ html{scroll-padding-top:78px}
 #traslados .mt-flight-timeline .flight-endpoint .mt-airport-name{box-sizing:border-box;width:55px;max-width:none;align-self:flex-start;text-align:center;overflow:visible}
 #traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{align-self:flex-end}
 @media(max-width:680px){#traslados .mt-flight-timeline .flight-endpoint .mt-airport-name{width:49px}}
+
+/* Horarios de los vuelos: tipografía discreta en ambas líneas de tiempo. */
+.flight-timeline .flight-endpoint strong{font-size:11px;font-weight:400;letter-spacing:0}
+@media(max-width:680px){.flight-timeline .flight-endpoint strong{font-size:11px;font-weight:400}}
