@@ -76,12 +76,21 @@ window.AtlasDayTransport = (() => {
                 const amount = price && Number.isFinite(price.amount)
                     ? (price.currency === 'EUR' ? '€' : '$') + price.amount.toLocaleString('es-MX', { maximumFractionDigits: 2 }) +
                         (price.currency === 'MXN' ? ' MXN' : '') : 'Por cotizar';
+                // El número de servicio ya está visible en la cronología; evitar repetirlo en el pie.
+                const providerLabel = item.type === 'train'
+                    ? (option.journeys || []).flatMap(j => j.segments || []).reduce((label, seg) => {
+                        const service = seg.service?.trim();
+                        return service && label.includes(service)
+                            ? label.replace(service, '').replace(/\s*[·–-]\s*$/, '').trim()
+                            : label;
+                    }, option.provider || '')
+                    : (option.provider || '');
                 const icons = { flight: '✈', train: '🚆', bus: '🚌', ferry: '⛴' };
                 return '<div class="day-transport-item"><div class="day-transport-head"><strong><span class="day-transport-kind" aria-hidden="true">' + (icons[item.type] || '➜') + '</span>' + esc(item.title) +
                     '</strong><span>' + esc(amount) + (mxn != null && price.currency !== 'MXN' ? ' · ≈ $' +
                     mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
                     '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Precio ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
-                    (item.type === 'flight' ? '' : '<small>' + (option.provider ? esc(option.provider) + ' · ' : '') +
+                    (item.type === 'flight' ? '' : '<small>' + (providerLabel ? esc(providerLabel) + ' · ' : '') +
                     esc(fare.name || fare.id) + '</small>') + '</div>';
             }).join('') + '</div>';
     }
