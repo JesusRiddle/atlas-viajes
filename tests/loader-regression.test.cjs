@@ -40,18 +40,57 @@ test('coexisten viajes con hoteles estructurados y viajes heredados con stays', 
     assert.ok(stays['espana-portugal'].length > 0);
 });
 
-test('el loader permite stays ausente pero rechaza stays con tipo incorrecto', async () => {
-    const modules = [{ id: 'emilia-romana', file: 'emilia-romana.json', available: true }];
+test('el loader normaliza un viaje mínimo sin alterar Emilia-Romagna', async () => {
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const emilia = JSON.parse(fs.readFileSync('data/trips/emilia-romana.json', 'utf8'));
+    const modules = [
+        { id: 'emilia-romana', file: 'emilia-romana.json', available: true },
+        { id: 'japon', file: 'japon.json', available: true }
+    ];
+    const sources = {
+        'data/places.json': {},
+        'data/trips/_template.json': template,
+        'data/trips/emilia-romana.json': emilia,
+        'data/trips/japon.json': { id: 'japon', name: 'Japón' }
+    };
+    const window = { ATLAS_MODULES: modules };
+    const fetch = async url => ({ ok: Object.hasOwn(sources, url), status: 404,
+        json: async () => sources[url] });
+    vm.runInNewContext(fs.readFileSync('loader.js', 'utf8'), { window, fetch });
+    const atlas = await window.ATLAS_READY;
+    const japan = atlas.trips.find(t => t.id === 'japon');
+    assert.equal(japan.status, 'draft');
+    assert.equal(japan.start, null);
+    assert.equal(japan.work, null);
+    assert.equal(japan.days.length, 0);
+    assert.equal(japan.mapPoints.length, 0);
+    assert.equal(japan.seasonality.months['01'].status, 'pending');
+    assert.equal(atlas.trips[0].id, emilia.id);
+    assert.equal(atlas.trips[0].majorTransport.length, emilia.majorTransport.length);
+    assert.equal(atlas.trips[0].days.length, emilia.days.length);
+    assert.equal(atlas.trips[0].routeHighlights, emilia.routeHighlights);
+});
+
+test('el loader permite stays ausente y rechaza colecciones de tipo incorrecto', async () => {
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
     const trip = JSON.parse(fs.readFileSync('data/trips/emilia-romana.json', 'utf8'));
-    const mock = data => ({ ok: true, json: async () => data });
+    const modules = [{ id: 'emilia-romana', file: 'emilia-romana.json', available: true }];
     async function run(value) {
         const window = { ATLAS_MODULES: modules };
-        const fetch = async url => mock(url === 'data/places.json' ? {} : value);
+        const data = {
+            'data/places.json': {},
+            'data/trips/_template.json': template,
+            'data/trips/emilia-romana.json': value
+        };
+        const fetch = async url => ({ ok: Object.hasOwn(data, url),
+            status: 404, json: async () => data[url] });
         vm.runInNewContext(fs.readFileSync('loader.js', 'utf8'), { window, fetch });
         return window.ATLAS_READY;
     }
     await assert.doesNotReject(run(trip));
-    await assert.rejects(run({ ...trip, stays: 'inválido' }), /Contenido incompleto/);
+    await assert.rejects(run({ ...trip, stays: 'inválido' }), /Campo stays inválido/);
+    await assert.rejects(run({ ...trip, days: null }), /Campo days inválido/);
+    await assert.rejects(run({ ...trip, id: 'otro' }), /Identidad inválida/);
 });
 
 test('la limpieza de la vista de viaje es segura y repetible al navegar', () => {
