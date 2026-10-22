@@ -104,7 +104,7 @@ window.AtlasMajorTransport = (() => {
         const origin = segments[0].departure?.slice(0, 10);
         const offset = arrival => {
             const target = arrival?.slice(0, 10);
-            if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(origin || '') || !/^\\d{4}-\\d{2}-\\d{2}$/.test(target || '')) return 0;
+            if (!/^\d{4}-\d{2}-\d{2}$/.test(origin || '') || !/^\d{4}-\d{2}-\d{2}$/.test(target || '')) return 0;
             return Math.max(0, Math.round((Date.parse(target + 'T00:00:00Z') - Date.parse(origin + 'T00:00:00Z')) / 86400000));
         };
         const parts = segments.map((segment, index) => {
