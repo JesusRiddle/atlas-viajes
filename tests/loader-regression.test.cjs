@@ -274,3 +274,11 @@ test('la composición mínima presenta reservaciones, traslados y hoteles con su
     assert.match(main.innerHTML, /Por definir/);
     assert.doesNotMatch(main.innerHTML, /confirma los vuelos para estas fechas/);
 });
+
+test('el mapa no ofrece botones de localidad sin coordenadas válidas', () => {
+    const source = fs.readFileSync('travel-ui.js', 'utf8');
+    assert.match(source, /positioned\.map\(p=>/);
+    assert.match(source, /positioned\.length \? `<div id="trip-map"/);
+    assert.match(source, /Coordenadas por definir/);
+    assert.match(source, /Array\.isArray\(p\.coords\)/);
+});
