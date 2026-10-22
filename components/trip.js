@@ -341,7 +341,7 @@ window.AtlasTrip = function (ctx) {
     }
     // Presentación del hero: fuentes existentes, precarga gradual y pausa fuera de pantalla.
     function mountHeroSlideshow(trip) {
-        const frame = main.querySelector('.triphero-split-photo');
+        const frame = typeof main.querySelector === 'function' ? main.querySelector('.triphero-split-photo') : null;
         if (!frame || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return () => {};
         const sources = [...new Set([trip.cover, ...(trip.days || []).flatMap(day => day.places || [])]
             .map(key => photos[key]?.src).filter(Boolean))];
