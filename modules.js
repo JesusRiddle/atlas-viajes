@@ -85,5 +85,10 @@ window.ATLAS_MODULES = [
     "id": "puglia-matera",
     "file": "puglia-matera.json",
     "available": true
+  },
+  {
+    "id": "nuevo-viaje",
+    "file": "nuevo-viaje.json",
+    "available": false
   }
 ];
