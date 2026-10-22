@@ -118,26 +118,42 @@ window.AtlasTrip = function (ctx) {
             ).join('') + '</div></div>';
     }
     function draftPage(t) {
+        const display = value => {
+            if (value === 'not_applicable' || value === 'no_aplica') return '<span class="draft-na">No aplica</span>';
+            if (value === null || value === undefined || value === '' ||
+                (Array.isArray(value) && value.length === 0)) return '<span class="draft-pending">Por definir</span>';
+            if (Array.isArray(value)) {
+                const labels = value.map(item => Array.isArray(item) ? item[0] :
+                    typeof item === 'object' ? (item.name || item.title || item.city || item.label || item.id || 'Elemento definido') : item);
+                return esc(labels.join(' · '));
+            }
+            return esc(String(value));
+        };
+        const monthValues = t.seasonality?.months ? Object.values(t.seasonality.months) : [];
+        const assessed = monthValues.filter(month => month?.status && month.status !== 'pending').length;
+        const months = assessed ? assessed + ' de 12 meses evaluados' : null;
+        const dateRange = t.start && t.end ? t.start + ' – ' + t.end : null;
         const sections = [
-            ['plan', 'Panorama', 'La esencia de tu recorrido.', ['Descripción general', 'Ciudades y bases', 'Clima y recomendaciones']],
-            ['mapa', 'Mapa', 'Tu viaje en el mapa.', ['Ciudades y ubicaciones']],
-            ['temporadas', 'Temporadas', 'Temporadas recomendadas.', ['Evaluación mensual']],
-            ['experiencias', 'Experiencias', 'Experiencias para recordar.', ['Actividades y lugares destacados']],
-            ['reservas', 'Reservaciones', 'Reservaciones importantes.', ['Reservas necesarias']],
-            ['traslados', 'Traslados', 'Movilidad y conexiones.', ['Vuelos, trenes y otros traslados']],
-            ['alojamientos', 'Dónde dormir', 'Tus alojamientos.', ['Hoteles y estancias']],
-            ['dias', 'Día por día', 'Día por día.', ['Jornadas y actividades']],
-            ['costes', 'Presupuesto', 'Lo que cuesta el viaje.', ['Partidas e importes']]
+            ['plan', 'Panorama', 'La esencia de tu recorrido.', [
+                ['Descripción general', t.intro], ['Ciudades', t.routeCities], ['Bases para dormir', t.bases], ['Clima', t.climate]]],
+            ['mapa', 'Mapa', 'Tu viaje en el mapa.', [['Ubicaciones', (t.mapPoints || []).map(point => point.name || point.city || 'Ubicación')]]],
+            ['temporadas', 'Temporadas', 'Temporadas recomendadas.', [['Evaluación de meses', months]]],
+            ['experiencias', 'Experiencias', 'Experiencias para recordar.', [['Actividades destacadas', t.experiences]]],
+            ['reservas', 'Reservaciones', 'Reservaciones importantes.', [['Reservas necesarias', t.reservations]]],
+            ['traslados', 'Traslados', 'Movilidad y conexiones.', [['Traslados principales', (t.majorTransport || []).map(item => item.title || item.id)]]],
+            ['alojamientos', 'Dónde dormir', 'Tus alojamientos.', [['Hoteles', t.hotels], ['Estancias', t.bases]]],
+            ['dias', 'Día por día', 'Día por día.', [['Días del itinerario', (t.days || []).map(item => item.title || 'Día ' + item.n)]]],
+            ['costes', 'Presupuesto', 'Lo que cuesta el viaje.', [['Partidas', (t.expenses || []).map(item => item.concept || item.id)], ['Costos presupuestados', t.costs]]]
         ];
-        const empty = '<span class="draft-pending">Por definir</span>';
-        const sectionsHtml = sections.map(([id,label,title,fields]) =>
+        const sectionsHtml = sections.map(([id, label, title, fields]) =>
             '<section class="section draft-trip-section" id="' + id + '"><article class="panel draft-trip-panel">' +
             '<p class="eyebrow orange">' + esc(label) + '</p><h2>' + esc(title) + '</h2>' +
-            '<div class="draft-fields">' + fields.map(field => '<div><strong>' + esc(field) + '</strong>' + empty + '</div>').join('') +
+            '<div class="draft-fields">' + fields.map(([field, value]) =>
+                '<div><strong>' + esc(field) + '</strong>' + display(value) + '</div>').join('') +
             '</div></article></section>').join('');
         main.innerHTML = '<section class="draft-hero wrap"><a href="#" class="breadcrumb">← Regresar</a>' +
             '<p class="eyebrow orange">Viaje en planeación</p><h1>' + esc(t.flag ? t.flag + ' ' + t.name : t.name) + '</h1>' +
-            '<p>Fechas, itinerario y presupuesto: <strong>Por definir</strong></p></section>' +
+            '<p>Fechas: ' + display(dateRange) + ' · Presupuesto: ' + display(null) + '</p></section>' +
             '<nav class="subnav" aria-label="Secciones del viaje"><div>' +
             sections.map(([id,label])=>'<a href="#viaje/' + esc(t.id) + '/' + id + '">' + esc(label) + '</a>').join('') +
             '</div></nav><div class="wrap draft-trip-content">' + sectionsHtml + '</div>';
