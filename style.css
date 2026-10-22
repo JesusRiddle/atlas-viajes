@@ -1598,3 +1598,7 @@ html{scroll-padding-top:78px}
   font-weight:400;
   color:#657b6d;
 }
+
+/* Acercar las actividades de Mañana/Tarde/Noche al carrusel superior. */
+#dias .day .daycontent .schedule{margin-top:14px}
+@media(max-width:680px){#dias .day .daycontent .schedule{margin-top:12px}}
