@@ -345,7 +345,8 @@ test('días sin cotización no se presentan como gasto cero y las notas son cont
         cost: { amount: 350, currency: 'MXN' } });
     const updated = view.render(input, input.days.find(d => d.n === 5));
     assert.ok(updated.includes('Alimentación'));
-    assert.ok(updated.includes('Alimentación · día 5 · estimado'));
+    assert.ok(updated.includes('Alimentación · día 5'));
+    assert.ok(updated.includes('class="day-budget-status">estimado</small>'));
     assert.ok(!updated.includes('verificar comidas'));
 });
 
@@ -361,9 +362,11 @@ test('el JSON carece de presupuestos históricos duplicados y etiqueta importes 
     assert.equal(Object.prototype.hasOwnProperty.call(trip, 'knownCosts'), false);
     const view = ctx.window.AtlasDayBudget;
     const day = view.render(trip, trip.days.find(d => d.n === 9));
-    assert.ok(day.includes('Firenze · Accademia · estimado'));
+    assert.ok(day.includes('Firenze · Accademia'));
+    assert.ok(day.includes('class="day-budget-status">estimado</small>'));
     const first = view.render(trip, trip.days[0]);
-    assert.ok(first.includes('Moxy Milano Malpensa Airport · 1 noche · cotizado'));
+    assert.ok(first.includes('Moxy Milano Malpensa Airport · 1 noche'));
+    assert.ok(first.includes('class="day-budget-status">cotizado</small>'));
 });
 
 test('JSON modular sin resúmenes ferroviarios ni notas cambiarias heredadas', () => {
