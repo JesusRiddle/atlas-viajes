@@ -126,3 +126,34 @@ test('plantilla universal: identidad mínima, estados pendientes y meses complet
     source = { ...source, seasonality: { months: { '02': { status: 'invalid' } } } };
     await assert.rejects(run(), /Temporada 02 inválida/);
 });
+
+test('un viaje mínimo comparte encabezado, navegación y nueve anclas del modelo maestro', () => {
+    const raw = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const trip = { ...raw, id: 'japon', name: 'Japón' };
+    const main = { innerHTML: '', classList: { toggle() {} } };
+    const window = {
+        AtlasGallery: { init() {} },
+        AtlasMajorTransport: { mount: () => () => {} },
+        AtlasBudgetTable: { mount: () => () => {} },
+        AtlasDayBudget: { mount: () => () => {} },
+        AtlasTravel: { initMap() {} },
+    };
+    const document = { querySelector: () => null };
+    vm.runInNewContext(fs.readFileSync('components/trip.js', 'utf8'), { window, document });
+    const ctx = {
+        trips: [trip], main, covers: {}, esc: String, sums: () => [0, 0],
+        canRenderFullTrip: () => false, seasonality: () => '<section id="temporadas"></section>',
+        mountTransport: () => () => {}, home() {}
+    };
+    const view = window.AtlasTrip(ctx);
+    assert.doesNotThrow(() => view.tripPage('japon'));
+    assert.match(main.innerHTML, /class="triphero"/);
+    assert.match(main.innerHTML, /Duración por definir/);
+    assert.match(main.innerHTML, /Días laborales por definir/);
+    assert.doesNotMatch(main.innerHTML, /Invalid Date|undefined|NaN|0 días naturales/);
+    for (const id of ['plan','mapa','temporadas','experiencias','reservas','traslados','alojamientos','dias','costes']) {
+        assert.ok(main.innerHTML.includes('id="' + id + '"'), id + ' sin sección');
+        assert.ok(main.innerHTML.includes('#viaje/japon/' + id), id + ' sin navegación');
+    }
+    assert.doesNotMatch(main.innerHTML, /draft-trip-section|draft-hero/);
+});
