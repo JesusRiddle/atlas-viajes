@@ -376,3 +376,53 @@ test('migración piloto preserva contenido sin copiar fechas ni precios heredado
     assert.equal(trip.expenses.length, 0);
     assert.equal(trip.seasonality.months['01'].status, 'pending');
 });
+
+test('paso 15: template universal preserva información parcial, cero y falso sin mutar origen', async () => {
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const original = {
+        id: 'prueba-universal', name: 'Prueba universal', status: 'draft',
+        start: '2027-02-03', end: null, work: 0, budgetPreliminary: false,
+        profile: { pace: 0, solo: false },
+        routeCities: ['Tokio'], experiences: ['Un paseo de prueba'],
+        days: [{ n: 1, title: 'Llegada', base: 'Tokio' }],
+        costs: [['Transporte', null, null]],
+        seasonality: { months: { '02': { status: 'recommended', description: 'Temporada elegida' } } }
+    };
+    const snapshot = JSON.stringify(original);
+    const window = { ATLAS_MODULES: [{ id: original.id, file: original.id + '.json', available: true }] };
+    const fetch = async url => ({ ok: true, json: async () =>
+        url === 'data/places.json' ? {} : url === 'data/trips/_template.json' ? template : original });
+    vm.runInNewContext(fs.readFileSync('loader.js','utf8'), { window, fetch });
+    const trip = (await window.ATLAS_READY).trips[0];
+    assert.equal(JSON.stringify(original), snapshot, 'la carga no debe modificar los datos fuente');
+    assert.equal(trip.status, 'draft');
+    assert.equal(trip.start, '2027-02-03');
+    assert.equal(trip.end, null);
+    assert.equal(trip.work, 0);
+    assert.equal(trip.budgetPreliminary, false);
+    assert.equal(trip.profile.pace, 0);
+    assert.equal(trip.profile.solo, false);
+    assert.equal(trip.profile.weather, null);
+    assert.equal(trip.days.length, 1);
+    assert.equal(trip.costs[0][1], null);
+    assert.equal(Object.keys(trip.seasonality.months).length, 12);
+    assert.equal(trip.seasonality.months['02'].status, 'recommended');
+    assert.equal(trip.seasonality.months['01'].status, 'pending');
+    assert.equal(trip.majorTransport.length, 0);
+    assert.equal(trip.expenses.length, 0);
+});
+
+test('paso 15: un viaje nuevo completo no pierde datos estructurados al cargar', async () => {
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const complete = JSON.parse(fs.readFileSync('data/trips/emilia-romana.json', 'utf8'));
+    const window = { ATLAS_MODULES: [{ id: complete.id, file: complete.id + '.json', available: true }] };
+    const fetch = async url => ({ ok: true, json: async () =>
+        url === 'data/places.json' ? {} : url === 'data/trips/_template.json' ? template : complete });
+    vm.runInNewContext(fs.readFileSync('loader.js','utf8'), { window, fetch });
+    const trip = (await window.ATLAS_READY).trips[0];
+    for (const field of ['days','hotels','mapPoints','majorTransport','expenses','routeCities','experiences']) {
+        assert.deepEqual(trip[field], complete[field], 'No cambiar ' + field);
+    }
+    assert.equal(trip.id, complete.id);
+    assert.equal(trip.name, complete.name);
+});
