@@ -1855,3 +1855,33 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   #viajes .atlas-home-card h3{font-size:23px}
   #viajes .atlas-home-card .card-overview{font-size:11px}
 }
+
+/* Comparativa de portada: tabla editorial y legible, con desplazamiento en móvil. */
+.home-comparison{padding-top:32px;padding-bottom:48px}
+.home-comparison .section-title{margin-bottom:17px}
+.home-comparison .section-title h2{font-size:clamp(25px,2.7vw,34px);letter-spacing:-.025em}
+.home-comparison .comparison-scroll{overflow-x:auto;border:1px solid #d9e1e4;border-radius:9px;background:#fff;scrollbar-width:thin}
+.home-comparison .comparison-table{width:100%;min-width:980px;border-collapse:separate;border-spacing:0;table-layout:fixed;font-size:12px;line-height:1.45}
+.home-comparison .comparison-table th{padding:13px 12px;background:#edf2f4;color:#52656a;font-size:11px;font-weight:700;text-align:left;white-space:normal;border-bottom:1px solid #d9e1e4}
+.home-comparison .comparison-table th small{font-size:10px;font-weight:400}
+.home-comparison .comparison-table td{padding:14px 12px;border-bottom:1px solid #e5eaec;vertical-align:middle;background:transparent;color:var(--ink);overflow-wrap:normal;word-break:normal}
+.home-comparison .comparison-table tbody tr:last-child td{border-bottom:0}
+.home-comparison .comparison-table tbody tr:nth-child(even) td{background:#f8fafb}
+.home-comparison .comparison-table tbody tr:hover td{background:#f0f5f6}
+.home-comparison .comparison-table th:nth-child(1){width:27%}
+.home-comparison .comparison-table th:nth-child(2){width:13%}
+.home-comparison .comparison-table th:nth-child(3){width:10%}
+.home-comparison .comparison-table th:nth-child(4){width:6%}
+.home-comparison .comparison-table th:nth-child(5){width:10%}
+.home-comparison .comparison-table th:nth-child(6){width:11%}
+.home-comparison .comparison-table th:nth-child(7){width:8%}
+.home-comparison .comparison-table th:nth-child(8){width:15%}
+.home-comparison .comparison-destination a{display:flex;align-items:flex-start;gap:9px;color:var(--ink);font-weight:600;text-decoration:none;line-height:1.4}
+.home-comparison .comparison-destination a:hover{text-decoration:underline;text-decoration-color:#8b421f}
+.home-comparison .comparison-rank{display:inline-grid;place-items:center;flex:0 0 23px;height:23px;background:#edf2f4;color:#52656a;border-radius:5px;font-size:11px}
+.home-comparison .comparison-number,.home-comparison .comparison-price{font-variant-numeric:tabular-nums}
+.home-comparison .comparison-number small{color:var(--muted);font-size:11px}
+.home-comparison .comparison-price strong{font-size:12px;white-space:normal;line-height:1.5}
+.home-comparison .comparison-price strong small{font-size:10px;font-weight:500;white-space:nowrap;color:var(--muted)}
+.home-comparison .comparison-price>span{display:block;color:var(--muted);font-size:10px;margin-top:3px}
+@media(max-width:680px){.home-comparison{padding-top:24px}.home-comparison .comparison-table{min-width:940px}.home-comparison .comparison-table td{padding:12px 10px}}
