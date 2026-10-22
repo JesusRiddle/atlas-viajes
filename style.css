@@ -1799,3 +1799,31 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   #dias .day .daycontent:has(> .gallery) > .schedule,
   #dias .day .daycontent:has(> .photo-carousel) > .schedule{margin-top:20px}
 }
+
+/* Portada: tarjetas compactas, fotografía protagonista y precio con MXN en la misma línea. */
+#viajes .cards{gap:18px;align-items:stretch}
+#viajes .atlas-home-card{border-radius:9px;border-color:#d9e1e4;box-shadow:0 2px 10px rgba(16,42,51,.035)}
+#viajes .atlas-home-card .cardphoto{height:190px}
+#viajes .atlas-home-card .rank{top:11px;left:11px;width:27px;height:27px;font-size:12px;border-radius:6px;background:#fff;color:var(--ink);box-shadow:0 1px 5px #102a3320}
+#viajes .atlas-home-card .cardbody{padding:16px 18px 17px;display:flex;flex-direction:column;gap:7px;min-width:0}
+#viajes .atlas-home-card .eyebrow{margin:0;color:#8b421f;font-size:10px;line-height:1.4;letter-spacing:.1em;max-height:2.8em;overflow:hidden}
+#viajes .atlas-home-card h3{font-size:clamp(20px,2.1vw,25px);line-height:1.12;letter-spacing:-.025em;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+#viajes .atlas-home-card .card-route{font-size:12px;line-height:1.45;color:var(--muted);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+#viajes .atlas-home-card .carddates{font-size:12px;line-height:1.4;color:var(--muted);margin:3px 0 0}
+#viajes .atlas-home-card .cardfacts{gap:6px;margin-top:1px}
+#viajes .atlas-home-card .cardfacts span{background:transparent;border:0;padding:0;font-size:11px;color:var(--muted)}
+#viajes .atlas-home-card .cardfacts span+span::before{content:"·";margin-right:6px;color:#98a5aa}
+#viajes .atlas-home-card .cardbottom{margin-top:auto;padding-top:12px;border-top:1px solid #e1e8eb;gap:8px;align-items:center}
+#viajes .atlas-home-card .card-price{min-width:0;display:flex;flex-direction:column;gap:3px}
+#viajes .atlas-home-card .card-price>small{font-size:10px;line-height:1.3;color:var(--muted)}
+#viajes .atlas-home-card .card-price>strong{font-size:clamp(16px,1.65vw,20px);line-height:1.25;letter-spacing:-.025em;font-weight:750;color:var(--ink);overflow-wrap:normal}
+#viajes .atlas-home-card .card-currency{display:inline;font-size:11px;white-space:nowrap;font-weight:600;letter-spacing:0;color:var(--muted)}
+#viajes .atlas-home-card .card-estimate{font-size:10px}
+#viajes .atlas-home-card .card-arrow{font-size:20px;color:#52656a;flex:none;line-height:1}
+@media(max-width:680px){
+ #viajes .cards{gap:15px}
+ #viajes .atlas-home-card .cardphoto{height:185px}
+ #viajes .atlas-home-card .cardbody{padding:15px 16px}
+ #viajes .atlas-home-card h3{font-size:23px}
+ #viajes .atlas-home-card .card-price>strong{font-size:19px}
+}

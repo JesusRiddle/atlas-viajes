@@ -7,7 +7,23 @@ window.AtlasHome = function (ctx) {
             '<div class="cardbody"><p class="eyebrow">En planeación</p><h3>' + esc(t.flag || '') + ' ' + esc(t.name) +
             '</h3><p>Fechas · Por definir</p><p>Itinerario · Por definir</p><div class="cardbottom"><strong>Presupuesto por definir</strong></div></div></a>';
     }
-    function card(t, i) { if (!canRenderFullTrip(t)) return draftCard(t, i); return `<a class="tripcard" href="#viaje/${t.id}" aria-labelledby="card-${t.id}"><div class="cardphoto">${img(covers[t.id], '', false, false, true)}<span class="rank">${i + 1}</span></div><div class="cardbody"><p class="eyebrow">${esc(t.tag)}</p><h3 id="card-${t.id}">${t.flag} ${t.cardHighlights ? highlightWords(t.name, t.cardHighlights) : t.formatName ? readable(t.name) : esc(t.name)}</h3><p class="card-route">${t.routeCities.map(x => t.routeHighlights ? `<strong class="atlas-city">${esc(x)}</strong>` : esc(x)).join(' • ')}</p>${familyLabel(t)}<p class="carddates">${range(t)}</p><div class="cardfacts"><span>${t.days.length} días naturales</span><span>${t.work} días laborales</span><span>${esc(t.lodgingSummary || baseLabel(t.bases.length))}</span></div><div class="cardbottom"><strong>${price(t)}</strong><small>MXN / persona${t.budgetPreliminary ? ' · preliminar' : ''}</small></div></div></a>`; }
+    function card(t, i) {
+        if (!canRenderFullTrip(t)) return draftCard(t, i);
+        const title = t.cardHighlights ? highlightWords(t.name, t.cardHighlights) : t.formatName ? readable(t.name) : esc(t.name);
+        const cities = t.routeCities.map(x => t.routeHighlights ? '<strong class="atlas-city">' + esc(x) + '</strong>' : esc(x)).join(' • ');
+        return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
+            '<div class="cardphoto">' + img(covers[t.id], '', false, false, true) + '<span class="rank">' + (i + 1) + '</span></div>' +
+            '<div class="cardbody"><p class="eyebrow">' + esc(t.tag) + '</p>' +
+            '<h3 id="card-' + esc(t.id) + '">' + (t.flag || '') + ' ' + title + '</h3>' +
+            '<p class="card-route">' + cities + '</p>' +
+            '<p class="carddates">' + range(t) + '</p>' +
+            '<div class="cardfacts"><span>' + t.days.length + ' días naturales</span><span>' + t.work +
+            ' laborales</span><span>' + esc(t.lodgingSummary || baseLabel(t.bases.length)) + '</span></div>' +
+            '<div class="cardbottom"><div class="card-price"><small>Presupuesto estimado por persona</small>' +
+            '<strong>' + price(t) + ' <span class="card-currency">MXN</span></strong>' +
+            (t.budgetPreliminary ? '<small class="card-estimate">Preliminar</small>' : '') +
+            '</div><span class="card-arrow" aria-hidden="true">↗</span></div></div></a>';
+    }
     function comparison() {
         const items = trips.filter(canRenderFullTrip);
         return `<section class="section wrap"><div class="section-title"><div><p class="eyebrow orange">Las opciones, en números</p><h2>Compara sin perderte.</h2></div><p>Los viajes están ordenados según tus preferencias: arquitectura, pocos cambios de hotel y facilidad para viajar solo. Las fechas propuestas son alternativas entre las que puedes elegir.</p></div><p class="comparison-key">Valoración del itinerario actual: el ritmo considera excursiones y descansos; la facilidad, transportes y orientación; y el clima, cuánto condiciona las visitas principales. Una sola base no implica necesariamente un viaje relajado.</p><div class="scrolltable"><table><thead><tr><th>Viaje</th><th>Fechas</th><th>Días / laborales</th><th>Bases</th><th>Ritmo</th><th>Viajando solo</th><th>Dependencia del clima</th><th>Coste total MXN</th></tr></thead><tbody>${items.map((t, i) => `<tr><td><a href="#viaje/${t.id}">${i + 1}. ${t.cardHighlights ? highlightWords(t.name, t.cardHighlights) : t.formatName ? readable(t.name) : esc(t.name)}</a></td><td>${range(t)}</td><td>${t.days.length} / ${t.work}</td><td>${t.bases.length}</td><td>${esc(t.profile.pace)}</td><td>${esc(t.profile.solo)}</td><td>${esc(t.profile.weather)}</td><td>${price(t)}${t.budgetPreliminary ? ' · preliminar' : ''}</td></tr>`).join('')}</tbody></table></div><p class="notebox">Los días laborales se indican como referencia de cada itinerario. Algunas propuestas coinciden en fechas y se presentan como alternativas independientes. Comprueba los horarios, tarifas y servicios antes de reservar.</p></section>`; }
