@@ -27,6 +27,7 @@
       }
       const isMinimal = !Object.hasOwn(raw, "status") && !raw.cover;
       const normalized = clone(raw);
+      // Unknown or incomplete values must not be mistaken for actual trip data.
       const merge = (target, defaults) => {
         for (const [key, fallback] of Object.entries(defaults)) {
           if (!Object.hasOwn(target, key) || target[key] === null && (Array.isArray(fallback) || plainObject(fallback))) {
@@ -55,6 +56,17 @@
       }
       if (normalized.seasonality !== null && !plainObject(normalized.seasonality)) {
         throw new Error("seasonality inválido en " + module.file);
+      }
+      if (normalized.seasonality?.months !== undefined) {
+        if (!plainObject(normalized.seasonality.months)) throw new Error("Meses de temporada inválidos en " + module.file);
+        for (let month = 1; month <= 12; month++) {
+          const key = String(month).padStart(2, "0");
+          const item = normalized.seasonality.months[key];
+          if (!plainObject(item) || !["pending", "recommended", "conditional", "avoid"].includes(item.status) ||
+              !(item.description === null || typeof item.description === "string")) {
+            throw new Error("Temporada " + key + " inválida en " + module.file);
+          }
+        }
       }
       for (const key of ["start","end"]) {
         const value = normalized[key];
