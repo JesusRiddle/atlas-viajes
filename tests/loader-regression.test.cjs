@@ -219,3 +219,54 @@ test('Experiencias vacías o parciales mantienen el panel maestro sin inventar d
     assert.match(partial, /Explorar Asakusa/);
     assert.doesNotMatch(partial, /Por definir/);
 });
+
+test('reservaciones y alojamientos admiten registros vacíos y parciales', () => {
+    const window = {};
+    vm.runInNewContext(fs.readFileSync('components/sections.js', 'utf8'), { window });
+    const trip = { id: 'japon', name: 'Japón', hotels: [], stays: [], reservations: [], planningDetails: null };
+    const sections = window.AtlasSections({ trips: [trip], stays: { japon: [] }, esc: String });
+    assert.match(sections.reservationPlanning(trip), /class="panel reservation-panel"/);
+    assert.match(sections.reservationPlanning(trip), /Por definir/);
+    assert.match(sections.stayParagraphs('japon'), /class="hotel-card"/);
+    assert.match(sections.stayParagraphs('japon'), /Por definir/);
+    trip.reservations = [['Prioritarias', [{ title: 'Museo', description: 'Entrada sin confirmar' }]]];
+    assert.match(sections.reservationPlanning(trip), /Entrada sin confirmar/);
+    trip.hotels = [{ city: 'Tokio', name: 'Hotel por elegir', checkIn: '2026-11-01' }];
+    const hotels = sections.stayParagraphs('japon');
+    assert.match(hotels, /Hotel por elegir/);
+    assert.doesNotMatch(hotels, /undefined|Invalid Date/);
+});
+
+test('la composición mínima presenta reservaciones, traslados y hoteles con sus anclas maestras', () => {
+    const raw = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const trip = { ...raw, id: 'japon', name: 'Japón' };
+    const main = { innerHTML: '', classList: { toggle() {} } };
+    const window = {
+        AtlasGallery: { init() {} },
+        AtlasMajorTransport: { mount: () => () => {} },
+        AtlasBudgetTable: { mount: () => () => {} },
+        AtlasDayBudget: { mount: () => () => {} },
+        AtlasTravel: { initMap() {}, mapSection: () => '<section id="mapa"></section>' }
+    };
+    const document = { querySelector: () => null };
+    vm.runInNewContext(fs.readFileSync('components/trip.js', 'utf8'), { window, document });
+    const sections = (() => {
+        const w = {};
+        vm.runInNewContext(fs.readFileSync('components/sections.js', 'utf8'), { window: w });
+        return w.AtlasSections({ trips: [trip], stays: { japon: [] }, esc: String });
+    })();
+    const ctx = {
+        trips: [trip], main, covers: {}, esc: String, sums: () => [0,0],
+        canRenderFullTrip: () => false, mountTransport: () => () => {},
+        seasonality: () => '<section id="temporadas"></section>',
+        experiencePanel: () => '<article id="experiencias"></article>',
+        reservationPlanning: sections.reservationPlanning,
+        stayParagraphs: sections.stayParagraphs, home() {}
+    };
+    window.AtlasTrip(ctx).tripPage('japon');
+    for (const id of ['reservas','traslados','alojamientos']) {
+        assert.match(main.innerHTML, new RegExp('id="' + id + '"'));
+    }
+    assert.match(main.innerHTML, /Por definir/);
+    assert.doesNotMatch(main.innerHTML, /confirma los vuelos para estas fechas/);
+});
