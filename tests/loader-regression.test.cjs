@@ -354,10 +354,9 @@ test('migración piloto preserva contenido sin copiar fechas ni precios heredado
     const source = JSON.parse(fs.readFileSync('data/trips/espana-portugal.json','utf8'));
     const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-renovado.json','utf8'));
     assert.equal(migrated.name, source.name);
-    assert.equal(migrated.intro, source.intro);
     assert.deepEqual(migrated.routeCities, source.routeCities);
     assert.deepEqual(migrated.experiences, source.experiences);
-    for (const field of ['start','end','work','costs','expenses','majorTransport','days','reservations','budgetRange','hotels','stays','seasonality']) {
+    for (const field of ['intro','start','end','work','costs','expenses','majorTransport','days','reservations','budgetRange','hotels','stays','seasonality']) {
         assert.equal(Object.hasOwn(migrated, field), false, field + ' should not be copied without review');
     }
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json','utf8'));
