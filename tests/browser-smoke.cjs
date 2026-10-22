@@ -6,7 +6,8 @@ const assert = require('node:assert/strict');
 (async () => {
   const browser = await chromium.launch({ headless: true });
   const catalog = fs.readFileSync('modules.js', 'utf8');
-  const destinations = ['emilia-romana', 'espana-portugal', 'nuevo-viaje', 'espana-portugal-renovado'];
+  const destinations = [...catalog.matchAll(/"id": "([a-z0-9-]+)"/g)].map(match => match[1]);
+  assert.equal(destinations.length, 19);
   const anchors = ['plan', 'mapa', 'temporadas', 'experiencias', 'reservas', 'traslados', 'alojamientos', 'dias', 'costes'];
   try {
     for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
