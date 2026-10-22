@@ -2107,3 +2107,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
  .triphero-split h1{font-size:clamp(26px,6.4vw,34px)}
  .triphero-split .triphero-split-photo img{object-position:center 25%}
 }
+
+/* Metadatos del hero con iconos dorados compactos. */
+.triphero-split .hero-meta>span{display:inline-flex;align-items:center;gap:6px;line-height:1.5}
+.triphero-split .hero-meta-icon{color:#ffbd69;flex:none;width:15px;height:15px}

@@ -185,6 +185,15 @@ window.AtlasTrip = function (ctx) {
         dias: 'itinerary-panel',
         costes: 'budget-section-panel'
     };
+    function heroMetaIcon(type) {
+        const paths = {
+            calendar: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/>',
+            duration: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+            work: '<rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/>',
+            lodging: '<path d="M3 18V9m0 7h18m0 2V9M3 11h18M6 11V7h6v4"/>'
+        };
+        return '<svg class="hero-meta-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + paths[type] + '</svg>';
+    }
     function tripHero(t, id) {
         const rank = trips.indexOf(t) + 1;
         const heroLabel = t.id === 'emilia-romana' ? 'Italia en tren' : (t.heroEyebrow || t.tag || 'En planeación');
@@ -195,10 +204,10 @@ window.AtlasTrip = function (ctx) {
             `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')} · ${esc(heroLabel)}</p>`,
             `<h1>${esc(t.name)}</h1>`,
             '<div class="hero-meta">',
-            `<span>${t.start && t.end ? range(t) : 'Por definir'}</span>`,
-            `<span>${t.days.length ? t.days.length + ' días naturales' : 'Duración por definir'}</span>`,
-            `<span>${t.work === null ? 'Días laborales por definir' : t.work + ' días laborales'}</span>`,
-            `<span>${t.heroLodgingSummary ? esc(t.heroLodgingSummary) : t.bases.length ? esc(baseLabel(t.bases.length)) : 'Alojamientos por definir'}</span>`,
+            `<span>${heroMetaIcon('calendar')}${t.start && t.end ? range(t) : 'Por definir'}</span>`,
+            `<span>${heroMetaIcon('duration')}${t.days.length ? t.days.length + ' días naturales' : 'Duración por definir'}</span>`,
+            `<span>${heroMetaIcon('work')}${t.work === null ? 'Días laborales por definir' : t.work + ' días laborales'}</span>`,
+            `<span>${heroMetaIcon('lodging')}${t.heroLodgingSummary ? esc(t.heroLodgingSummary) : t.bases.length ? esc(baseLabel(t.bases.length)) : 'Alojamientos por definir'}</span>`,
             '</div></div></div>',
             `<div class="triphero-split-photo">${t.cover ? img(covers[id], '', true) : ''}</div>`,
             '</section>'
