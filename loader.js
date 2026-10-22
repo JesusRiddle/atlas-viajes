@@ -16,21 +16,63 @@
       if (!response.ok) throw new Error("No se pudo cargar " + url + " (" + response.status + ").");
       return response.json();
     }
+    const plainObject = value => value !== null && typeof value === "object" && !Array.isArray(value);
+    const clone = value => JSON.parse(JSON.stringify(value));
+    // Defaults source: the same template used when creating a new trip.
+    // Merge only missing/null structural containers; never replace supplied values, including 0 and false.
+    function normalizeTrip(raw, module, template) {
+      if (!plainObject(raw) || raw.id !== module.id ||
+          typeof raw.name !== "string" || !raw.name.trim()) {
+        throw new Error("Identidad inválida en " + module.file + ": id y name son obligatorios.");
+      }
+      const isMinimal = !Object.hasOwn(raw, "status") && !raw.cover && !raw.start && !raw.end;
+      const normalized = clone(raw);
+      const merge = (target, defaults) => {
+        for (const [key, fallback] of Object.entries(defaults)) {
+          if (!Object.hasOwn(target, key) || target[key] === null && (Array.isArray(fallback) || plainObject(fallback))) {
+            target[key] = clone(fallback);
+          } else if (plainObject(fallback) && plainObject(target[key])) {
+            merge(target[key], fallback);
+          }
+        }
+      };
+      merge(normalized, template);
+      // An identity-only trip is automatically a draft; legacy trips are unchanged.
+      if (isMinimal) normalized.status = "draft";
+      const arrays = ["routeCities","bases","costs","experiences","days","reservations","expenses",
+        "majorTransport","ticketNotes","attractionTerms","mapPoints","hotels","stays",
+        "practicalIndicators","tips","sources","routeHighlights","cardHighlights",
+        "introHighlights","knownCosts","railSummary"];
+      for (const key of arrays) {
+        if (!Array.isArray(normalized[key])) throw new Error("Campo " + key + " inválido en " + module.file + ": debe ser un array.");
+      }
+      for (const key of ["profile","exchangeRates","placeDescriptions"]) {
+        if (!plainObject(normalized[key])) throw new Error("Campo " + key + " inválido en " + module.file + ": debe ser objeto.");
+      }
+      if (normalized.seasonality !== null && !plainObject(normalized.seasonality)) {
+        throw new Error("seasonality inválido en " + module.file);
+      }
+      for (const key of ["start","end"]) {
+        const value = normalized[key];
+        if (value !== null && (typeof value !== "string" ||
+            !/^\\d{4}-\\d{2}-\\d{2}$/.test(value) ||
+            Number.isNaN(Date.parse(value + "T12:00:00Z")) ||
+            new Date(value + "T12:00:00Z").toISOString().slice(0, 10) !== value)) {
+          throw new Error("Fecha " + key + " inválida en " + module.file);
+        }
+      }
+      return normalized;
+    }
     const active = modules.filter(module => module.available);
-    const [places, ...trips] = await Promise.all([
+    const [places, template, ...loadedTrips] = await Promise.all([
       load("data/places.json"),
+      load("data/trips/_template.json"),
       ...active.map(module => load("data/trips/" + module.file))
     ]);
-    if (!places || typeof places !== "object" || Array.isArray(places)) {
-      throw new Error("data/places.json no es un objeto válido.");
-    }
-    trips.forEach((trip, index) => {
-      if (!trip || trip.id !== active[index].id || !Array.isArray(trip.days) ||
-          !Array.isArray(trip.mapPoints) ||
-          (trip.stays != null && !Array.isArray(trip.stays)) || (!trip.cover && trip.status !== "draft")) {
-        throw new Error("Contenido incompleto o identificador incorrecto en " + active[index].file);
-      }
-    });
+    if (!plainObject(places)) throw new Error("data/places.json no es un objeto válido.");
+    if (!plainObject(template) || !Array.isArray(template.days) ||
+        !Array.isArray(template.mapPoints)) throw new Error("_template.json no es válido.");
+    const trips = loadedTrips.map((trip, index) => normalizeTrip(trip, active[index], template));
     window.ATLAS = {
       places,
       trips,
