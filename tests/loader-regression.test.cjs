@@ -314,3 +314,33 @@ test('Día por día y Presupuesto muestran pendientes sin totales ficticios', ()
     assert.doesNotMatch(main.innerHTML, /0\.00|\$0|NaN|undefined|Invalid Date|Total completo/);
     assert.doesNotMatch(main.innerHTML, /id="expand"|id="print"/);
 });
+
+test('el alta mínima queda oculta hasta activar el módulo y conserva los 17 viajes', async () => {
+    const catalog = loadCatalog();
+    const sample = catalog.find(item => item.id === 'nuevo-viaje');
+    assert.ok(sample);
+    assert.equal(sample.available, false);
+    assert.equal(catalog.filter(item => item.available).length, 17);
+    assert.equal(sample.file, 'nuevo-viaje.json');
+    const minimal = JSON.parse(fs.readFileSync('data/trips/nuevo-viaje.json', 'utf8'));
+    assert.deepEqual(minimal, { id: 'nuevo-viaje', name: 'Nuevo destino' });
+
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const modules = [{ ...sample, available: true }];
+    const window = { ATLAS_MODULES: modules };
+    const sources = {
+        'data/places.json': {},
+        'data/trips/_template.json': template,
+        'data/trips/nuevo-viaje.json': minimal
+    };
+    const fetch = async url => ({ ok: Object.hasOwn(sources, url), status: 404,
+        json: async () => sources[url] });
+    vm.runInNewContext(fs.readFileSync('loader.js', 'utf8'), { window, fetch });
+    const atlas = await window.ATLAS_READY;
+    assert.equal(atlas.trips.length, 1);
+    assert.equal(atlas.trips[0].id, 'nuevo-viaje');
+    assert.equal(atlas.trips[0].status, 'draft');
+    assert.equal(atlas.trips[0].days.length, 0);
+    assert.equal(atlas.trips[0].mapPoints.length, 0);
+    assert.equal(atlas.trips[0].seasonality.months['01'].status, 'pending');
+});
