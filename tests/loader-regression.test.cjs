@@ -175,6 +175,7 @@ test('Panorama incremental utiliza los contenedores maestros sin inventar presup
         trips: [sample], main, covers: {}, esc: String,
         sums: () => [0, 0], canRenderFullTrip: () => false,
         highlightWords: text => text, mountTransport: () => () => {},
+        seasonality: () => '<section id="temporadas"></section>',
         home() {}
     };
     window.AtlasTrip(ctx).tripPage('japon');
