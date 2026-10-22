@@ -1423,3 +1423,11 @@ html{scroll-padding-top:78px}
   #dias .day .daycontent details.day-budget .day-budget-line{gap:8px;padding:8px}
   #dias .day .daycontent details.day-budget .day-budget-line strong{white-space:nowrap}
 }
+
+/* Movilidad local: instrucciones separadas sin introducir nuevos campos JSON. */
+#dias .day .daycontent .mobility-card .mobility-copy{display:grid;gap:0;margin-top:8px;border:1px solid #e4dfd2;border-radius:7px;overflow:hidden;background:rgba(255,255,255,.66)}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step{margin:0;padding:12px 15px;font-size:13px;line-height:1.65;color:var(--ink);overflow-wrap:anywhere}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step+.mobility-step{border-top:1px solid #ebe7dc}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step>strong:first-child{color:#5e563f;font-weight:700}
+#dias .day .daycontent .mobility-card .mobility-copy em{font-style:normal}
+@media(max-width:680px){#dias .day .daycontent .mobility-card .mobility-copy .mobility-step{padding:11px 12px;font-size:13px}}
