@@ -136,7 +136,7 @@ test('un viaje mínimo comparte encabezado, navegación y nueve anclas del model
         AtlasMajorTransport: { mount: () => () => {} },
         AtlasBudgetTable: { mount: () => () => {} },
         AtlasDayBudget: { mount: () => () => {} },
-        AtlasTravel: { initMap() {} },
+        AtlasTravel: { initMap() {}, mapSection: () => '<section id="mapa"></section>' },
     };
     const document = { querySelector: () => null };
     vm.runInNewContext(fs.readFileSync('components/trip.js', 'utf8'), { window, document });
@@ -167,7 +167,7 @@ test('Panorama incremental utiliza los contenedores maestros sin inventar presup
         AtlasMajorTransport: { mount: () => () => {} },
         AtlasBudgetTable: { mount: () => () => {} },
         AtlasDayBudget: { mount: () => () => {} },
-        AtlasTravel: { initMap() {} }
+        AtlasTravel: { initMap() {}, mapSection: () => '<section id="mapa"></section>' }
     };
     const document = { querySelector: () => null };
     vm.runInNewContext(fs.readFileSync('components/trip.js', 'utf8'), { window, document });
