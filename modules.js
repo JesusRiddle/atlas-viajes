@@ -90,5 +90,10 @@ window.ATLAS_MODULES = [
     "id": "nuevo-viaje",
     "file": "nuevo-viaje.json",
     "available": false
+  },
+  {
+    "id": "espana-portugal-renovado",
+    "file": "espana-portugal-renovado.json",
+    "available": false
   }
 ];
