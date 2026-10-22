@@ -1658,3 +1658,20 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   footer.atlas-footer{padding:13px 5%;gap:6px 12px}
   footer.atlas-footer strong{width:100%}
 }
+
+/* Cabecera de tren diario: ruta e importe en una línea incluso en móvil. */
+#dias .day .daycontent .day-transport .day-transport-head{
+  display:flex;flex-direction:row;align-items:center;justify-content:space-between;
+  gap:8px;min-width:0;
+}
+#dias .day .daycontent .day-transport .day-transport-head>strong{
+  display:flex;align-items:center;min-width:0;flex:1 1 auto;
+  font-size:13px;line-height:1.4;
+}
+#dias .day .daycontent .day-transport .day-transport-head>span{
+  flex:0 0 auto;white-space:nowrap;text-align:right;margin:0;
+  font-size:12px;line-height:1.4;
+}
+#dias .day .daycontent .day-transport .day-transport-head .day-transport-kind{
+  display:inline-flex;flex:none;margin:0 6px 0 0;
+}
