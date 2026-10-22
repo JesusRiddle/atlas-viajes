@@ -187,11 +187,12 @@ window.AtlasTrip = function (ctx) {
     };
     function tripHero(t, id) {
         const rank = trips.indexOf(t) + 1;
+        const heroLabel = t.id === 'emilia-romana' ? 'Italia en tren' : (t.heroEyebrow || t.tag || 'En planeación');
         return [
             '<section class="triphero triphero-split"><div class="triphero-split-info">',
             '<div class="triphero-split-info-inner">',
             `<a class="breadcrumb" href="#"><span aria-hidden="true">←</span> Regresar</a>`,
-            `<p class="eyebrow hero-eyebrow">Viaje #${rank}: ${esc(t.heroEyebrow || t.tag || 'En planeación')}</p>`,
+            `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')} · ${esc(heroLabel)}</p>`,
             `<h1>${esc(t.name)}</h1>`,
             '<div class="hero-meta">',
             `<span>${t.start && t.end ? range(t) : 'Por definir'}</span>`,

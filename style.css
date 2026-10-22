@@ -2099,3 +2099,11 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   .triphero.triphero-split{height:auto;min-height:0;display:grid;grid-template-columns:1fr 1fr}
   .triphero-split .triphero-split-photo{min-height:180px}
 }
+
+/* Ajustes finos del hero editorial: título más equilibrado y encuadre alto. */
+.triphero-split h1{font-size:clamp(27px,3vw,42px)}
+.triphero-split .triphero-split-photo img{object-position:center 28%}
+@media(max-width:680px){
+ .triphero-split h1{font-size:clamp(26px,6.4vw,34px)}
+ .triphero-split .triphero-split-photo img{object-position:center 25%}
+}
