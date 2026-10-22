@@ -1253,3 +1253,12 @@ html{scroll-padding-top:78px}
 @media(max-width:550px){#traslados .mt-flight-timeline .flight-leg{grid-template-columns:71px minmax(0,1fr) 71px;gap:4px}#traslados .mt-flight-timeline .mt-airport-name{font-size:9px;max-width:71px}#traslados .mt-flight-number{font-size:10px}#traslados .mt-flight-timeline .flight-line-duration{font-size:10px;padding:2px 4px}}
 #traslados .mt-flight-timeline .flight-summary{margin-top:14px}
 @media(max-width:550px){#traslados .mt-flight-timeline{margin:12px 0 14px}}
+
+/* Datos de viaje en el encabezado, con salto natural en pantallas pequeñas. */
+#traslados .mt-flight-list .mt-flight-heading{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:5px 18px}
+#traslados .mt-flight-heading-title{flex:0 1 auto}
+#traslados .mt-flight-heading-stats{display:flex;align-items:baseline;justify-content:flex-end;flex-wrap:wrap;gap:5px 15px;font:400 11px/1.5 Arial,Helvetica,sans-serif;color:var(--ink)}
+#traslados .mt-flight-heading-stats b{font-weight:700;margin-right:3px}
+#traslados .mt-flight-timeline .mt-airport-name{overflow-wrap:normal;word-break:normal;white-space:normal;background:transparent!important;padding:0!important;border:0!important;box-shadow:none!important}
+#traslados .mt-flight-timeline .mt-airport-name strong,#traslados .mt-flight-timeline .mt-airport-name em,#traslados .mt-flight-timeline .mt-airport-name span{display:inline!important;width:auto!important;padding:0!important;margin:0!important;background:transparent!important;box-shadow:none!important;color:inherit!important;font:inherit!important;text-align:inherit!important}
+@media(max-width:680px){#traslados .mt-flight-heading-stats{justify-content:flex-start;width:100%;gap:3px 12px}}

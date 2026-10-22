@@ -123,11 +123,7 @@ window.AtlasMajorTransport = (() => {
                 '<div class="flight-endpoint flight-endpoint-arrival"><strong>' + esc(clock(segment.arrival)) + badge +
                 '</strong><span>' + esc(segment.to) + '</span><small class="mt-airport-name">' + esc(airportNames[segment.to] || segment.to) + '</small></div></div>';
         }).join('');
-        const total = model.journeySummary(journey);
-        return '<div class="flight-timeline mt-flight-timeline">' + parts +
-            '<div class="flight-summary"><span><strong>Duración total</strong> ' + esc(minutes(total.durationMinutes)) +
-            '</span><span><strong>Escalas</strong> ' + total.stops + '</span><span><strong>Llegada</strong> ' +
-            esc(clock(segments[segments.length - 1].arrival)) + '</span></div></div>';
+        return '<div class="flight-timeline mt-flight-timeline">' + parts + '</div>';
     }
     function transportKind(type) {
         const shapes = {
@@ -167,9 +163,15 @@ window.AtlasMajorTransport = (() => {
             const dayLabel = Number.isFinite(index) && index > 0 ? 'Día ' + String(index).padStart(2, '0') + ' · ' : '';
             const direction = j.direction === 'outbound' ? 'Ida' : j.direction === 'return' ? 'Regreso' : '';
             return '<div class="mt-legs">' +
-                '<h4 class="mt-leg-heading">' + esc(dayLabel) +
+                '<h4 class="mt-leg-heading' + (transport.type === 'flight' ? ' mt-flight-heading' : '') + '"><span class="mt-flight-heading-title">' + esc(dayLabel) +
                 (direction ? esc(direction) + esc(journeyDate(j, trip)) :
-                    esc(journeyDate(j, trip).replace(/^ · /, ''))) + '</h4>' +
+                    esc(journeyDate(j, trip).replace(/^ · /, ''))) + '</span>' +
+                (transport.type === 'flight' && j.segments?.length ? (() => {
+                    const info = model.journeySummary(j);
+                    return '<span class="mt-flight-heading-stats"><span><b>Duración total</b> ' + esc(minutes(info.durationMinutes)) +
+                        '</span><span><b>Escalas</b> ' + info.stops + '</span><span><b>Llegada</b> ' +
+                        esc(clock(j.segments[j.segments.length - 1].arrival)) + '</span></span>';
+                })() : '') + '</h4>' +
                 (transport.type === 'flight' ? flightJourneyTimeline(j) : segmentDetails(j, false)) + '</div>';
         }).join('');
         return '<details class="mt-card" data-transport="' + esc(transport.id) + '">' +

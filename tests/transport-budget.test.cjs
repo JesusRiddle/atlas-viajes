@@ -223,6 +223,10 @@ test('Traslados principales muestra cronologías de ida y regreso con sus númer
     assert.ok(flight.includes('12 h 20 min'));
     assert.ok(flight.includes('Día 01'));
     assert.ok(flight.includes('Día 12'));
+    assert.equal((flight.match(/mt-flight-heading-stats/g) || []).length, 2);
+    assert.equal((flight.match(/class="flight-summary"/g) || []).length, 0);
+    assert.ok(flight.includes('Ciudad de México'));
+    assert.ok(flight.includes('Milano Malpensa'));
 });
 
 test('referencias diarias de vuelos muestran solo el sentido correcto', () => {
