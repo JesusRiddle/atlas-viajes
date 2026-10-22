@@ -68,7 +68,7 @@ test('el loader normaliza un viaje mínimo sin alterar Emilia-Romagna', async ()
     assert.equal(atlas.trips[0].id, emilia.id);
     assert.equal(atlas.trips[0].majorTransport.length, emilia.majorTransport.length);
     assert.equal(atlas.trips[0].days.length, emilia.days.length);
-    assert.equal(atlas.trips[0].routeHighlights, emilia.routeHighlights);
+    assert.deepEqual(Array.from(atlas.trips[0].routeHighlights), emilia.routeHighlights);
 });
 
 test('el loader permite stays ausente y rechaza colecciones de tipo incorrecto', async () => {
