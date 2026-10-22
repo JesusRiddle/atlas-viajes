@@ -1,7 +1,7 @@
-# Contrato de datos para viajes del Atlas (paso 2)
+# Contrato de datos para viajes del Atlas (actualizado en paso 3)
 
 ## Objetivo
-Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON contiene **datos**, nunca textos de presentación que simulen datos. La interfaz resuelve los estados vacíos. Estas reglas se aplicarán en el cargador y los componentes durante los pasos 3–6; su existencia aquí no implica todavía compatibilidad total con datos parciales.
+Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON contiene **datos**, nunca textos de presentación que simulen datos. La interfaz resuelve los estados vacíos. El cargador ya normaliza viajes mínimos y estructuras parciales; la presentación visual completamente unificada sigue pendiente de los pasos 4–8.
 
 ## Valores y significado
 | Representación JSON | Significado | Presentación |
@@ -31,8 +31,8 @@ Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON con
 - **Reserva o transporte:** colección vacía = aún no se han definido. Si no aplica una categoría a un viaje, ese estado debe documentarse explícitamente en el modelo futuro; no inferirlo de `[]`.
 - **Perfil:** los atributos de `profile` pueden estar en `null`. Nunca inferir ritmo, facilidad para viajar solo ni clima de un borrador sin investigar.
 
-## Alcance real de los pasos 1–2 y pendientes
-- La plantilla se puede copiar y publicar como borrador **si se conserva su estructura**. Aún no basta un archivo literal de dos propiedades: el cargador exige `days` y `mapPoints` como arrays. La normalización del paso 3 resolverá esto.
+## Alcance real hasta el paso 3 y pendientes
+- Basta un JSON literal con `id` y `name` registrado en `modules.js`: `loader.js` completa los contenedores y las temporadas desde `_template.json`. No es necesario copiar todas las propiedades del template para crear el JSON.
 - La vista `draft` es transitoria y simplificada: al rellenar algunos campos no se convierten todavía en componentes completos, y algunos valores (en especial el presupuesto) continúan mostrándose como pendientes. Esto corresponde a los pasos 4–6.
 - Los textos «Por definir» y «No aplica» pertenecen a la interfaz y deben derivarse de valores semánticos; no se guardan como campos ficticios.
 - El orden JSON de las claves mensuales puede variar porque las claves `"10"`, `"11"` y `"12"` son índices enteros en JavaScript. La interfaz debe ordenar por los meses 01–12, no depender del orden de inserción del objeto.
@@ -46,7 +46,7 @@ Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON con
 6. Mantener el comportamiento de viajes completos existentes.
 
 ## Alta de un nuevo viaje
-Copiar `data/trips/_template.json` a `data/trips/<id>.json`, editar inicialmente `id` y `name` y registrar `{ "id": "<id>", "file": "<id>.json", "available": true }` en `modules.js`. La plantilla **no** debe registrarse como viaje real.
+Crear `data/trips/<id>.json` con únicamente `id` y `name` (o copiar `_template.json` si se desea editar el esquema completo) y registrar `{ "id": "<id>", "file": "<id>.json", "available": true }` en `modules.js`. La plantilla **no** debe registrarse como viaje real.
 
 ## Próximos pasos técnicos
-En el paso 3, normalizar y validar los datos contra este contrato antes del render; en los pasos 4–6, hacer que los componentes consuman estados seguros en lugar de valores falsos. La documentación pública de uso se consolidará en el README en el **paso 10**.
+El paso 3 garantiza el contrato estructural y valida los doce estados mensuales. En los pasos 4–8, unificar renderizado y admitir progresivamente los valores parciales con el diseño maestro. La documentación pública de uso se consolidará en el README en el **paso 12**.
