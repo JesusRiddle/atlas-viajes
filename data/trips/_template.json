@@ -16,7 +16,8 @@
     "solo": null,
     "soloWhy": null,
     "weather": null,
-    "weatherWhy": null
+    "weatherWhy": null,
+    "why": null
   },
   "intro": null,
   "climate": null,
@@ -116,5 +117,6 @@
   "railSummary": [],
   "railTotal": null,
   "railExclusions": null,
-  "railCurrencyNote": null
+  "railCurrencyNote": null,
+  "heroEyebrow": null
 }
