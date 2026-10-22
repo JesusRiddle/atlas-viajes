@@ -189,3 +189,33 @@ test('Panorama incremental utiliza los contenedores maestros sin inventar presup
     assert.doesNotMatch(html, /\$0|NaN|undefined|Invalid Date/);
     assert.doesNotMatch(html, /draft-trip-panel/);
 });
+
+test('Temporadas renderiza los doce meses con pendientes y valores conocidos', () => {
+    const window = {};
+    vm.runInNewContext(fs.readFileSync('components/seasonality.js', 'utf8'), { window });
+    const months = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8')).seasonality.months;
+    months['03'] = { status: 'recommended', description: 'Clima templado' };
+    const html = window.AtlasSeasonality({ esc: String }).seasonality({ seasonality: { months } });
+    assert.equal((html.match(/class="season-month season-/g) || []).length, 12);
+    assert.match(html, /Clima templado/);
+    assert.match(html, /season-recommended/);
+    assert.match(html, /season-pending/);
+    assert.match(html, /id="temporadas"/);
+});
+
+test('Experiencias vacías o parciales mantienen el panel maestro sin inventar destinos', () => {
+    const window = {};
+    vm.runInNewContext(fs.readFileSync('components/sections.js', 'utf8'), { window });
+    const factory = window.AtlasSections({ trips: [], stays: {}, esc: String });
+    const empty = factory.experiencePanel({ id: 'japon', experiences: [], profile: {} });
+    assert.match(empty, /id="experiencias"/);
+    assert.match(empty, /class="panel experience-panel"/);
+    assert.match(empty, /Por definir/);
+    assert.doesNotMatch(empty, /Arte extraordinario/);
+    const partial = factory.experiencePanel({ id: 'japon', experiences: [
+        { city: 'Tokio', description: 'Explorar Asakusa' }
+    ], profile: {} });
+    assert.match(partial, /Tokio/);
+    assert.match(partial, /Explorar Asakusa/);
+    assert.doesNotMatch(partial, /Por definir/);
+});
