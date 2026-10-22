@@ -117,11 +117,41 @@ window.AtlasTrip = function (ctx) {
                 x[1] + ' ' + (x[1] === 1 ? 'noche' : 'noches') + '</small></div>'
             ).join('') + '</div></div>';
     }
+    function draftPage(t) {
+        const sections = [
+            ['plan', 'Panorama', 'La esencia de tu recorrido.', ['Descripción general', 'Ciudades y bases', 'Clima y recomendaciones']],
+            ['mapa', 'Mapa', 'Tu viaje en el mapa.', ['Ciudades y ubicaciones']],
+            ['temporadas', 'Temporadas', 'Temporadas recomendadas.', ['Evaluación mensual']],
+            ['experiencias', 'Experiencias', 'Experiencias para recordar.', ['Actividades y lugares destacados']],
+            ['reservas', 'Reservaciones', 'Reservaciones importantes.', ['Reservas necesarias']],
+            ['traslados', 'Traslados', 'Movilidad y conexiones.', ['Vuelos, trenes y otros traslados']],
+            ['alojamientos', 'Dónde dormir', 'Tus alojamientos.', ['Hoteles y estancias']],
+            ['dias', 'Día por día', 'Día por día.', ['Jornadas y actividades']],
+            ['costes', 'Presupuesto', 'Lo que cuesta el viaje.', ['Partidas e importes']]
+        ];
+        const empty = '<span class="draft-pending">Por definir</span>';
+        const sectionsHtml = sections.map(([id,label,title,fields]) =>
+            '<section class="section draft-trip-section" id="' + id + '"><article class="panel draft-trip-panel">' +
+            '<p class="eyebrow orange">' + esc(label) + '</p><h2>' + esc(title) + '</h2>' +
+            '<div class="draft-fields">' + fields.map(field => '<div><strong>' + esc(field) + '</strong>' + empty + '</div>').join('') +
+            '</div></article></section>').join('');
+        main.innerHTML = '<section class="draft-hero wrap"><a href="#" class="breadcrumb">← Regresar</a>' +
+            '<p class="eyebrow orange">Viaje en planeación</p><h1>' + esc(t.flag ? t.flag + ' ' + t.name : t.name) + '</h1>' +
+            '<p>Fechas, itinerario y presupuesto: <strong>Por definir</strong></p></section>' +
+            '<nav class="subnav" aria-label="Secciones del viaje"><div>' +
+            sections.map(([id,label])=>'<a href="#viaje/' + esc(t.id) + '/' + id + '">' + esc(label) + '</a>').join('') +
+            '</div></nav><div class="wrap draft-trip-content">' + sectionsHtml + '</div>';
+        document.title = t.name + ' · Atlas de Viajes';
+    }
     function tripPage(id) {
         cleanup();
         const t = trips.find(x => x.id === id);
         if (!t) {
             home();
+            return;
+        }
+        if (t.status === 'draft') {
+            draftPage(t);
             return;
         }
         main.classList.toggle('trip-espana-portugal', t.layoutClass === 'trip-espana-portugal');
