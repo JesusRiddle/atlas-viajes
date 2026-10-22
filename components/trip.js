@@ -202,7 +202,7 @@ window.AtlasTrip = function (ctx) {
             '<div class="triphero-split-info-inner">',
             `<a class="breadcrumb" href="#"><span aria-hidden="true">←</span> Regresar</a>`,
             `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')} · ${esc(heroLabel)}</p>`,
-            `<h1>${esc(t.name)}</h1>`,
+            `<h1>${t.id === 'emilia-romana' ? highlightWords(t.name, ['Milano', 'Bologna', 'Firenze']) : esc(t.name)}</h1>`,
             '<div class="hero-meta">',
             `<span>${heroMetaIcon('calendar')}${t.start && t.end ? range(t) : 'Por definir'}</span>`,
             `<span>${heroMetaIcon('duration')}${t.days.length ? t.days.length + ' días naturales' : 'Duración por definir'}</span>`,
