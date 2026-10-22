@@ -43,8 +43,8 @@ window.AtlasHome = function (ctx) {
                 if (timer !== null) { clearInterval(timer); hoverTimers.delete(timer); timer = null; }
                 index = 0;
                 busy = false;
-                overlay.classList.remove('visible', 'cardphoto-zoom-cycle');
-                original.classList.remove('cardphoto-zoom-cycle');
+                overlay.classList.remove('visible', 'cardphoto-zoom-cycle', 'cardphoto-zoom-out');
+                original.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
             };
             const advance = () => {
                 if (!frame.isConnected || document.hidden) { stop(); return; }
@@ -55,18 +55,19 @@ window.AtlasHome = function (ctx) {
                 const preload = new Image();
                 preload.onload = () => {
                     if (currentToken !== token) return;
-                    overlay.classList.remove('cardphoto-zoom-cycle');
+                    overlay.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
                     overlay.src = sources[next];
                     overlay.classList.add('visible');
                     // Reiniciar el zoom en cada cambio, incluso al reutilizar el mismo img.
                     void overlay.offsetWidth;
                     overlay.classList.add('cardphoto-zoom-cycle');
+                    if (next % 2 === 1) overlay.classList.add('cardphoto-zoom-out');
                     index = next;
                     busy = false;
                     if (next === 0) {
                         // Al completar la vuelta recuperamos la portada original.
-                        overlay.classList.remove('visible', 'cardphoto-zoom-cycle');
-                        original.classList.remove('cardphoto-zoom-cycle');
+                        overlay.classList.remove('visible', 'cardphoto-zoom-cycle', 'cardphoto-zoom-out');
+                        original.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
                         void original.offsetWidth;
                         original.classList.add('cardphoto-zoom-cycle');
                     }
@@ -77,7 +78,7 @@ window.AtlasHome = function (ctx) {
             frame.addEventListener('mouseenter', () => {
                 if (timer !== null) return;
                 token++;
-                original.classList.remove('cardphoto-zoom-cycle');
+                original.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
                 void original.offsetWidth;
                 original.classList.add('cardphoto-zoom-cycle');
                 timer = setInterval(advance, 2000);
