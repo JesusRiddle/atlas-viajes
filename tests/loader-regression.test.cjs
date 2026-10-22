@@ -282,3 +282,35 @@ test('el mapa no ofrece botones de localidad sin coordenadas válidas', () => {
     assert.match(source, /Coordenadas por definir/);
     assert.match(source, /Array\.isArray\(p\.coords\)/);
 });
+
+test('Día por día y Presupuesto muestran pendientes sin totales ficticios', () => {
+    const raw = JSON.parse(fs.readFileSync('data/trips/_template.json','utf8'));
+    const trip = { ...raw, id: 'japon', name: 'Japón', days: [
+        { n: 1, title: 'Tokio: llegada', base: 'Tokio' },
+        { n: 2, title: 'Kioto: explorar' }
+    ], costs: [['Tren', null, null]] };
+    const main = { innerHTML: '', classList: { toggle() {} } };
+    const window = { AtlasGallery: { init() {} },
+        AtlasMajorTransport: { mount: () => () => {} },
+        AtlasBudgetTable: { mount: () => () => {} },
+        AtlasDayBudget: { mount: () => () => {} },
+        AtlasTravel: { mapSection: () => '<section id="mapa"></section>', initMap() {} } };
+    const document = { querySelector: () => null };
+    vm.runInNewContext(fs.readFileSync('components/trip.js','utf8'), {window,document});
+    const ctx = { trips:[trip], main, covers:{}, esc:String, sums:() => [0,0],
+        canRenderFullTrip: () => false, mountTransport: () => () => {},
+        seasonality: () => '<section id="temporadas"></section>',
+        experiencePanel: () => '<article id="experiencias"></article>',
+        reservationPlanning: () => '<article id="reservas"></article>',
+        stayParagraphs: () => '<div class="hotel-grid"></div>',
+        home() {} };
+    window.AtlasTrip(ctx).tripPage('japon');
+    assert.match(main.innerHTML, /id="dias"/);
+    assert.match(main.innerHTML, /Tokio: llegada/);
+    assert.match(main.innerHTML, /Fecha por definir/);
+    assert.match(main.innerHTML, /id="costes"/);
+    assert.match(main.innerHTML, /Tren/);
+    assert.match(main.innerHTML, /Por cotizar/);
+    assert.doesNotMatch(main.innerHTML, /0\.00|\$0|NaN|undefined|Invalid Date|Total completo/);
+    assert.doesNotMatch(main.innerHTML, /id="expand"|id="print"/);
+});
