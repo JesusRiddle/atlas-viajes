@@ -328,7 +328,8 @@ test('tarjeta diaria presenta partidas registradas, no inventa comidas ni asigna
     const firenze = view.render(trip, trip.days.find(d => d.n === 9));
     assert.ok(firenze.includes('Firenze · Accademia'));
     assert.ok(firenze.includes('Bologna ↔ Firenze'));
-    assert.ok(firenze.includes('Subtotal registrado de esta jornada'));
+    assert.ok(firenze.includes('Gastos registrados del día'));
+    assert.ok(!firenze.includes('Subtotal registrado de esta jornada'));
     const outbound = view.render(trip, trip.days[0]);
     assert.ok(outbound.includes('El vuelo se contabiliza en el presupuesto global'));
     assert.ok(!outbound.includes('20,060'));
