@@ -56,7 +56,7 @@ window.AtlasFormat = function (ctx) {
             typeof t.start === 'string' && typeof t.end === 'string' &&
             typeof t.intro === 'string' && t.intro.trim() &&
             typeof t.climate === 'string' && typeof t.solo === 'string' &&
-            typeof t.flight === 'string' && typeof t.local === 'string' &&
+            (t.id === 'emilia-romana' || typeof t.flight === 'string' && typeof t.local === 'string') &&
             Array.isArray(t.days) && t.days.length > 0 &&
             t.days.every(d => d && d.date && Number.isInteger(d.n) && Array.isArray(d.places)) &&
             Array.isArray(t.bases) && t.bases.length > 0 &&
