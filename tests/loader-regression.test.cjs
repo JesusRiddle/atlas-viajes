@@ -103,3 +103,26 @@ test('la limpieza de la vista de viaje es segura y repetible al navegar', () => 
     assert.ok(source.includes('cleanup();'));
     assert.ok(source.includes('mountView(t);'));
 });
+
+test('plantilla universal: identidad mínima, estados pendientes y meses completos', async () => {
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const window = { ATLAS_MODULES: [{ id: 'japon', file: 'japon.json', available: true }] };
+    let source = { id: 'japon', name: 'Japón', seasonality: { months: { '02': { status: 'recommended', description: 'Cerezos tempranos' } } } };
+    const fetch = async url => ({ ok: true, json: async () => url === 'data/places.json' ? {} :
+        url === 'data/trips/_template.json' ? template : source });
+    const run = async () => {
+        vm.runInNewContext(fs.readFileSync('loader.js', 'utf8'), { window, fetch });
+        return window.ATLAS_READY;
+    };
+    const data = await run();
+    const trip = data.trips[0];
+    assert.equal(trip.seasonality.months['02'].status, 'recommended');
+    assert.equal(trip.seasonality.months['02'].description, 'Cerezos tempranos');
+    assert.equal(trip.seasonality.months['01'].status, 'pending');
+    assert.equal(Object.keys(trip.seasonality.months).length, 12);
+    assert.equal(trip.work, null);
+    assert.equal(trip.bases.length, 0);
+    assert.equal(trip.status, 'draft');
+    source = { ...source, seasonality: { months: { '02': { status: 'invalid' } } } };
+    await assert.rejects(run(), /Temporada 02 inválida/);
+});
