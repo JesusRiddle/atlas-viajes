@@ -276,7 +276,7 @@ window.AtlasTrip = function (ctx) {
             `<aside class="daynav" aria-label="Días del itinerario">${t.days.map(d => `<a href="#viaje/${id}/dia-${d.n}"><strong>Día ${d.n} · ${short(d.date)}</strong>${esc(d.base)}${hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : ''}</a>`).join('')}</aside>`,
             `<div class="days">${t.days.map(day).join('')}</div>`,
             `</div>`,
-            `</article></section><article class="panel budget-section-panel">`,
+            `</article></section>`,
             ].join(''),
             costes: () => [
             `${optionsSection(t)}<section class="section wrap atlas-panel-section" id="costes"><article class="panel budget-section-panel">`,
