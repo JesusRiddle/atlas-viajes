@@ -180,9 +180,9 @@ window.AtlasTrip = function (ctx) {
             case 'mapa': return true;
             case 'temporadas': return !!t.seasonality?.months;
             case 'experiencias': return true;
-            case 'reservas': return !!(t.planningDetails && t.reservations.length);
-            case 'traslados': return !!t.majorTransport.length;
-            case 'alojamientos': return !!(t.hotels.length || t.stays.length);
+            case 'reservas': return true;
+            case 'traslados': return true;
+            case 'alojamientos': return true;
             case 'dias': return !!(t.days.length && t.days.every(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places)));
             case 'costes': return !!(t.majorTransport.length || t.expenses.length || t.costs.length);
             default: return false;
@@ -274,13 +274,13 @@ window.AtlasTrip = function (ctx) {
             `${reservationPlanning(t)}`,
             ].join(''),
             traslados: () => [
-            `${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : railPlanning(t)}`,
+            `${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : (canRenderFullTrip(t) ? railPlanning(t) : '<section class="major-transport" id="traslados"><div class="mt-heading"><span class="mt-kicker">Movilidad y conexiones</span><h2>Traslados principales.</h2></div><p class="draft-pending">Por definir</p></section>')}`,
             ].join(''),
             alojamientos: () => [
-            `${t.id === 'emilia-romana' ? '' : adviceCards(t)}`,
+            `${t.id === 'emilia-romana' || !canRenderFullTrip(t) ? '' : adviceCards(t)}`,
             `<article class="panel" id="alojamientos" style="margin-top:20px">`,
             `<div class="hotel-section-heading"><div class="hotel-section-kicker">${overviewIcon('bed')}<span>Tu estancia</span></div><h2>Tus alojamientos.</h2></div>`,
-            `${stayParagraphs(id)}</article>${!t.planningDetails ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>`,
+            `${stayParagraphs(id)}</article>${!t.planningDetails && canRenderFullTrip(t) ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>`,
             ].join(''),
             dias: () => [
             `${variants(t)}${railAppendix(t)}<section class="section wrap atlas-panel-section" id="dias"><article class="panel itinerary-panel">`,
