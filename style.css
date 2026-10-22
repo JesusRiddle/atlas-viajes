@@ -1579,3 +1579,22 @@ html{scroll-padding-top:78px}
   color:#88682e;
   font-weight:700;
 }
+
+/* Gastos diarios: formato uniforme; ningún énfasis automático en conceptos. */
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-concept{
+  font-size:13px;
+  font-weight:400;
+  font-style:normal;
+  color:var(--ink);
+  min-width:0;
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-concept em,
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-concept strong{
+  font-style:normal;
+  font-weight:400;
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-status{
+  font-size:12px;
+  font-weight:400;
+  color:#657b6d;
+}

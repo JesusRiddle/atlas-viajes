@@ -18,10 +18,11 @@ window.AtlasDayBudget = (() => {
         const lines = info.entries.map(entry => {
             const item = transports.get(entry.id) || expenses.get(entry.id);
             const category = transports.has(entry.id) ? 'transport' : (item?.category || 'other');
-            const label = (item?.concept || item?.title || names[category]) +
-                (item?.status === 'estimated' ? ' · estimado' : item?.status === 'quoted' ? ' · cotizado' : '');
-            return '<div class="day-budget-line"><span>' + esc(label) + '</span><strong>' +
-                (entry.mxn === null ? 'Por cotizar' : pesos(entry.mxn)) + '</strong></div>';
+            const concept = item?.concept || item?.title || names[category];
+            const status = item?.status === 'estimated' ? 'estimado' : item?.status === 'quoted' ? 'cotizado' : '';
+            return '<div class="day-budget-line"><span class="day-budget-concept">' + esc(concept) +
+                (status ? '<small class="day-budget-status"> · ' + esc(status) + '</small>' : '') +
+                '</span><strong>' + (entry.mxn === null ? 'Por cotizar' : pesos(entry.mxn)) + '</strong></div>';
         }).join('');
         const hasAmounts = info.entries.some(entry => entry.mxn !== null);
         const registered = new Set((trip.expenses || []).filter(item =>
