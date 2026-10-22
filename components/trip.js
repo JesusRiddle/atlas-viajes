@@ -119,12 +119,7 @@ window.AtlasTrip = function (ctx) {
     }
     // Estructura común de navegación: la información pendiente nunca oculta secciones.
     function tripNavigation(t, id, expanded = false) {
-        const sections = [
-            ['plan', 'Panorama'], ['mapa', 'Mapa'], ['temporadas', 'Temporadas'],
-            ['experiencias', 'Experiencias'], ['reservas', 'Reservaciones'],
-            ['traslados', 'Traslados'], ['alojamientos', 'Dónde dormir'],
-            ['dias', 'Día por día'], ['costes', 'Presupuesto']
-        ];
+        const sections = sectionDefinitions.map(({ id, label }) => [id, label]);
         const visible = expanded ? sections : sections.filter(([key]) =>
             !(['temporadas','experiencias','reservas','traslados'].includes(key)) ||
             (key === 'temporadas' && t.seasonality) ||
@@ -144,49 +139,49 @@ window.AtlasTrip = function (ctx) {
             location.hash = 'viaje/' + e.target.value;
         });
     }
+    const sectionDefinitions = [
+        { id: 'plan', label: 'Panorama', title: 'La esencia de tu recorrido.',
+            fields: t => [['Descripción general', t.intro], ['Ciudades', t.routeCities], ['Bases para dormir', t.bases], ['Clima', t.climate]] },
+        { id: 'mapa', label: 'Mapa', title: 'Tu viaje en el mapa.',
+            fields: t => [['Ubicaciones', (t.mapPoints || []).map(p => p.name || p.city || 'Ubicación')]],
+            ready: t => t.mapPoints?.length > 0, render: t => window.AtlasTravel.mapSection(t) },
+        { id: 'temporadas', label: 'Temporadas', title: 'Temporadas recomendadas.',
+            fields: t => [['Evaluación de meses', (() => {
+                const count = Object.values(t.seasonality?.months || {}).filter(m => m?.status && m.status !== 'pending').length;
+                return count ? count + ' de 12 meses evaluados' : null;
+            })()]], ready: t => !!t.seasonality?.months, render: t => seasonality(t) },
+        { id: 'experiencias', label: 'Experiencias', title: 'Experiencias para recordar.',
+            fields: t => [['Actividades destacadas', t.experiences]],
+            ready: t => t.experiences?.length > 0, render: t => '<section class="section draft-trip-section">' + experiencePanel(t) + '</section>' },
+        { id: 'reservas', label: 'Reservaciones', title: 'Reservaciones importantes.',
+            fields: t => [['Reservas necesarias', t.reservations]] },
+        { id: 'traslados', label: 'Traslados', title: 'Movilidad y conexiones.',
+            fields: t => [['Traslados principales', (t.majorTransport || []).map(item => item.title || item.id)]] },
+        { id: 'alojamientos', label: 'Dónde dormir', title: 'Tus alojamientos.',
+            fields: t => [['Hoteles', t.hotels], ['Estancias', t.bases]] },
+        { id: 'dias', label: 'Día por día', title: 'Día por día.',
+            fields: t => [['Días del itinerario', (t.days || []).map(item => item.title || 'Día ' + item.n)]] },
+        { id: 'costes', label: 'Presupuesto', title: 'Lo que cuesta el viaje.',
+            fields: t => [['Partidas', (t.expenses || []).map(item => item.concept || item.id)], ['Costos presupuestados', t.costs]] }
+    ];
+    function draftDisplay(value) {
+        if (value === 'no_aplica') return '<span class="draft-na">No aplica</span>';
+        if (value == null || value === '' || Array.isArray(value) && !value.length)
+            return '<span class="draft-pending">Por definir</span>';
+        if (Array.isArray(value)) return esc(value.map(item => Array.isArray(item) ? item[0] :
+            item && typeof item === 'object' ? item.name || item.title || item.city || item.label || item.id || 'Elemento definido' : item).join(' · '));
+        return esc(String(value));
+    }
+    function renderPendingSection(section, t) {
+        if (section.ready?.(t)) return section.render(t);
+        return '<section class="section draft-trip-section atlas-panel-section" id="' + section.id + '"><article class="panel draft-trip-panel">' +
+            '<p class="eyebrow orange atlas-editorial-kicker">' + esc(section.label) + '</p><h2>' + esc(section.title) + '</h2>' +
+            '<div class="draft-fields">' + section.fields(t).map(([field, value]) =>
+                '<div><strong>' + esc(field) + '</strong>' + draftDisplay(value) + '</div>').join('') +
+            '</div></article></section>';
+    }
     function pendingTripSections(t) {
-        const display = value => {
-            if (value === 'no_aplica') return '<span class="draft-na">No aplica</span>';
-            if (value === null || value === undefined || value === '' ||
-                (Array.isArray(value) && value.length === 0)) return '<span class="draft-pending">Por definir</span>';
-            if (Array.isArray(value)) {
-                const labels = value.map(item => Array.isArray(item) ? item[0] :
-                    typeof item === 'object' ? (item.name || item.title || item.city || item.label || item.id || 'Elemento definido') : item);
-                return esc(labels.join(' · '));
-            }
-            return esc(String(value));
-        };
-        const monthValues = t.seasonality?.months ? Object.values(t.seasonality.months) : [];
-        const assessed = monthValues.filter(month => month?.status && month.status !== 'pending').length;
-        const months = assessed ? assessed + ' de 12 meses evaluados' : null;
-        const dateRange = t.start && t.end ? t.start + ' – ' + t.end : null;
-        const sections = [
-            ['plan', 'Panorama', 'La esencia de tu recorrido.', [
-                ['Descripción general', t.intro], ['Ciudades', t.routeCities], ['Bases para dormir', t.bases], ['Clima', t.climate]]],
-            ['mapa', 'Mapa', 'Tu viaje en el mapa.', [['Ubicaciones', (t.mapPoints || []).map(point => point.name || point.city || 'Ubicación')]]],
-            ['temporadas', 'Temporadas', 'Temporadas recomendadas.', [['Evaluación de meses', months]]],
-            ['experiencias', 'Experiencias', 'Experiencias para recordar.', [['Actividades destacadas', t.experiences]]],
-            ['reservas', 'Reservaciones', 'Reservaciones importantes.', [['Reservas necesarias', t.reservations]]],
-            ['traslados', 'Traslados', 'Movilidad y conexiones.', [['Traslados principales', (t.majorTransport || []).map(item => item.title || item.id)]]],
-            ['alojamientos', 'Dónde dormir', 'Tus alojamientos.', [['Hoteles', t.hotels], ['Estancias', t.bases]]],
-            ['dias', 'Día por día', 'Día por día.', [['Días del itinerario', (t.days || []).map(item => item.title || 'Día ' + item.n)]]],
-            ['costes', 'Presupuesto', 'Lo que cuesta el viaje.', [['Partidas', (t.expenses || []).map(item => item.concept || item.id)], ['Costos presupuestados', t.costs]]]
-        ];
-        const sectionsHtml = sections.map(([id, label, title, fields]) => {
-            // Reutilizar componentes reales cuando sus datos ya estén presentes.
-            if (id === 'temporadas' && t.seasonality?.months) return seasonality(t);
-            if (id === 'mapa' && t.mapPoints?.length) return window.AtlasTravel.mapSection(t);
-            if (id === 'experiencias' && t.experiences?.length) {
-                return '<section class="section draft-trip-section" id="experiencias">' +
-                    experiencePanel(t) + '</section>';
-            }
-            return '<section class="section draft-trip-section atlas-panel-section" id="' + id + '"><article class="panel draft-trip-panel">' +
-                '<p class="eyebrow orange atlas-editorial-kicker">' + esc(label) + '</p><h2>' + esc(title) + '</h2>' +
-                '<div class="draft-fields">' + fields.map(([field, value]) =>
-                    '<div><strong>' + esc(field) + '</strong>' + display(value) + '</div>').join('') +
-                '</div></article></section>';
-        }).join('');
-        return sectionsHtml;
+        return sectionDefinitions.map(section => renderPendingSection(section, t)).join('');
     }
     // Shared outer layout: the data state changes content, not the page composition.
     function tripShell(t, id, content, isDraft = false) {
