@@ -1276,3 +1276,18 @@ html{scroll-padding-top:78px}
 #traslados .mt-flight-timeline .flight-layover{margin:0;padding:0;min-height:15px;line-height:1.3}
 #traslados .mt-flight-timeline .flight-leg{min-height:64px}
 @media(max-width:680px){#traslados .mt-flight-timeline .flight-layover{margin:2px 0;min-height:17px}#traslados .mt-flight-timeline .flight-leg{min-height:70px}}
+
+/* Centrado real de hora, código IATA y nombre; aprovechar el ancho en Desktop. */
+#traslados .mt-flight-timeline .flight-leg{grid-template-columns:150px minmax(0,1fr) 150px;gap:8px;min-height:55px}
+#traslados .mt-flight-timeline .flight-endpoint{align-items:center;min-width:0;text-align:center}
+#traslados .mt-flight-timeline .flight-endpoint strong,
+#traslados .mt-flight-timeline .flight-endpoint span{align-self:center;text-align:center}
+#traslados .mt-flight-timeline .flight-endpoint .mt-airport-name,
+#traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{align-self:center;width:max-content;max-width:150px;white-space:nowrap;text-align:center;overflow:visible}
+#traslados .mt-flight-timeline .flight-layover{min-height:12px;margin:0;padding:0}
+@media(max-width:680px){
+  #traslados .mt-flight-timeline .flight-leg{grid-template-columns:76px minmax(0,1fr) 76px;gap:4px;min-height:67px}
+  #traslados .mt-flight-timeline .flight-endpoint .mt-airport-name,
+  #traslados .mt-flight-timeline .flight-endpoint-arrival .mt-airport-name{width:100%;max-width:76px;white-space:normal;overflow-wrap:normal}
+  #traslados .mt-flight-timeline .flight-layover{min-height:16px;margin:2px 0}
+}
