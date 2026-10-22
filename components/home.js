@@ -28,22 +28,30 @@ window.AtlasHome = function (ctx) {
             const frame = card.querySelector('.cardphoto');
             if (!frame || sources.length < 2) return;
             const original = frame.querySelector('img');
-            const overlay = document.createElement('img');
-            overlay.className = 'cardphoto-slide';
-            overlay.alt = '';
-            overlay.setAttribute('aria-hidden', 'true');
-            overlay.decoding = 'async';
-            frame.insertBefore(overlay, frame.querySelector('.rank'));
-            let index = 0;
-            let timer = null;
-            let token = 0;
-            let busy = false;
+            // Dos capas permiten fundir entre fotos sin reemplazar la fuente de la capa visible.
+            const layers = [0, 1].map(() => {
+                const layer = document.createElement('img');
+                layer.className = 'cardphoto-slide';
+                layer.alt = '';
+                layer.setAttribute('aria-hidden', 'true');
+                layer.decoding = 'async';
+                frame.insertBefore(layer, frame.querySelector('.rank'));
+                return layer;
+            });
+            let index = 0, active = -1, timer = null, token = 0, busy = false;
+            const zoom = (image, out) => {
+                image.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
+                void image.offsetWidth;
+                image.classList.add('cardphoto-zoom-cycle');
+                if (out) image.classList.add('cardphoto-zoom-out');
+            };
             const stop = () => {
                 token++;
                 if (timer !== null) { clearInterval(timer); hoverTimers.delete(timer); timer = null; }
                 index = 0;
+                active = -1;
                 busy = false;
-                overlay.classList.remove('visible', 'cardphoto-zoom-cycle', 'cardphoto-zoom-out');
+                layers.forEach(layer => layer.classList.remove('visible', 'cardphoto-zoom-cycle', 'cardphoto-zoom-out'));
                 original.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
             };
             const advance = () => {
@@ -52,25 +60,33 @@ window.AtlasHome = function (ctx) {
                 busy = true;
                 const next = (index + 1) % sources.length;
                 const currentToken = token;
+                if (next === 0) {
+                    // Desvanecer la última foto y revelar la portada original.
+                    zoom(original, false);
+                    layers.forEach(layer => layer.classList.remove('visible'));
+                    index = 0;
+                    active = -1;
+                    busy = false;
+                    return;
+                }
                 const preload = new Image();
                 preload.onload = () => {
                     if (currentToken !== token) return;
-                    overlay.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
-                    overlay.src = sources[next];
-                    overlay.classList.add('visible');
-                    // Reiniciar el zoom en cada cambio, incluso al reutilizar el mismo img.
-                    void overlay.offsetWidth;
-                    overlay.classList.add('cardphoto-zoom-cycle');
-                    if (next % 2 === 1) overlay.classList.add('cardphoto-zoom-out');
+                    const incomingIndex = active === 0 ? 1 : 0;
+                    const incoming = layers[incomingIndex];
+                    const outgoing = active >= 0 ? layers[active] : original;
+                    incoming.classList.remove('visible', 'cardphoto-zoom-cycle', 'cardphoto-zoom-out');
+                    incoming.src = sources[next];
+                    // Situar la capa entrante por encima y comenzar desde opacidad cero.
+                    incoming.style.zIndex = '2';
+                    if (outgoing !== original) outgoing.style.zIndex = '1';
+                    void incoming.offsetWidth;
+                    incoming.classList.add('visible');
+                    zoom(incoming, next % 2 === 1);
+                    if (outgoing !== original) outgoing.classList.remove('visible');
+                    active = incomingIndex;
                     index = next;
                     busy = false;
-                    if (next === 0) {
-                        // Al completar la vuelta recuperamos la portada original.
-                        overlay.classList.remove('visible', 'cardphoto-zoom-cycle', 'cardphoto-zoom-out');
-                        original.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
-                        void original.offsetWidth;
-                        original.classList.add('cardphoto-zoom-cycle');
-                    }
                 };
                 preload.onerror = () => { if (currentToken === token) busy = false; };
                 preload.src = sources[next];
@@ -78,9 +94,7 @@ window.AtlasHome = function (ctx) {
             frame.addEventListener('mouseenter', () => {
                 if (timer !== null) return;
                 token++;
-                original.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
-                void original.offsetWidth;
-                original.classList.add('cardphoto-zoom-cycle');
+                zoom(original, false);
                 timer = setInterval(advance, 2000);
                 hoverTimers.add(timer);
             });
