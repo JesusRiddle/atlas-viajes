@@ -1954,3 +1954,49 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 #viajes .atlas-home-card .cardphoto .cardphoto-slide.visible{opacity:1}
 #viajes .atlas-home-card .cardphoto .rank{z-index:2}
 @media(prefers-reduced-motion:reduce){#viajes .atlas-home-card .cardphoto .cardphoto-slide{display:none;transition:none}}
+
+/* Portada inmersiva: un solo plano visual, sin columnas ni textos aislados. */
+.atlas-home-hero.atlas-home-hero-immersive{
+  display:block;min-height:0;padding-top:24px;padding-bottom:12px;
+}
+.atlas-home-hero-immersive .atlas-home-hero-image{
+  position:relative;height:clamp(340px,37vw,440px);min-height:0;
+  border-radius:11px;box-shadow:0 7px 25px rgba(16,42,51,.10);
+  isolation:isolate;
+}
+.atlas-home-hero-immersive .atlas-home-hero-image img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  object-position:center 50%;
+}
+.atlas-home-hero-immersive .atlas-home-hero-image .photo-overlay{
+  position:absolute;inset:0;z-index:1;
+  background:linear-gradient(90deg,rgba(10,29,37,.88) 0%,rgba(10,29,37,.72) 28%,rgba(10,29,37,.18) 69%,rgba(10,29,37,.04) 100%);
+}
+.atlas-home-hero-immersive .atlas-home-hero-copy{
+  position:absolute;z-index:2;left:clamp(24px,5vw,68px);bottom:clamp(28px,5vw,60px);
+  max-width:min(460px,56%);color:#fff;
+}
+.atlas-home-hero-immersive .eyebrow{color:#f3ca99;font-size:11px;letter-spacing:.18em;margin:0 0 12px}
+.atlas-home-hero-immersive h1{
+  font-size:clamp(42px,5.5vw,70px);font-weight:400;line-height:1.06;
+  letter-spacing:-.045em;max-width:12ch;color:#fff;
+}
+.atlas-home-hero-immersive .atlas-home-lead{
+  color:#f1f5f5;font-size:15px;line-height:1.6;
+  max-width:38ch;margin:17px 0 0;
+}
+@media(max-width:800px){
+  .atlas-home-hero.atlas-home-hero-immersive{display:block;padding-top:16px;padding-bottom:8px}
+  .atlas-home-hero-immersive .atlas-home-hero-image{height:400px}
+  .atlas-home-hero-immersive .atlas-home-hero-image .photo-overlay{
+    background:linear-gradient(0deg,rgba(10,29,37,.89),rgba(10,29,37,.43) 58%,rgba(10,29,37,.06) 100%);
+  }
+  .atlas-home-hero-immersive .atlas-home-hero-copy{left:25px;right:25px;bottom:30px;max-width:calc(100% - 50px)}
+  .atlas-home-hero-immersive h1{font-size:clamp(39px,7vw,56px)}
+}
+@media(max-width:680px){
+  .atlas-home-hero-immersive .atlas-home-hero-image{height:370px}
+  .atlas-home-hero-immersive .atlas-home-hero-copy{left:20px;right:20px;bottom:22px;max-width:calc(100% - 40px)}
+  .atlas-home-hero-immersive .atlas-home-lead{font-size:13px;margin-top:12px}
+  .atlas-home-hero-immersive h1{font-size:clamp(36px,9.6vw,48px)}
+}
