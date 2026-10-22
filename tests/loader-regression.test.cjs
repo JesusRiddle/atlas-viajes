@@ -143,7 +143,7 @@ test('un viaje mínimo comparte encabezado, navegación y nueve anclas del model
     const ctx = {
         trips: [trip], main, covers: {}, esc: String, sums: () => [0, 0],
         canRenderFullTrip: () => false, seasonality: () => '<section id="temporadas"></section>',
-        mountTransport: () => () => {}, home() {}
+        mountTransport: () => () => {}, experiencePanel: () => '<article id="experiencias"></article>', home() {}
     };
     const view = window.AtlasTrip(ctx);
     assert.doesNotThrow(() => view.tripPage('japon'));
@@ -176,7 +176,7 @@ test('Panorama incremental utiliza los contenedores maestros sin inventar presup
         sums: () => [0, 0], canRenderFullTrip: () => false,
         highlightWords: text => text, mountTransport: () => () => {},
         seasonality: () => '<section id="temporadas"></section>',
-        home() {}
+        experiencePanel: () => '<article id="experiencias"></article>', home() {}
     };
     window.AtlasTrip(ctx).tripPage('japon');
     const html = main.innerHTML;
