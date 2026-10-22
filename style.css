@@ -1069,7 +1069,7 @@ html{scroll-padding-top:78px}
 #temporadas .section-title{margin-bottom:22px}
 #temporadas .seasonality-kicker.atlas-editorial-kicker{gap:7px;color:#8b421f;font-size:11px;letter-spacing:1.7px;line-height:1.5;font-weight:700}
 #temporadas #seasonality-heading.atlas-editorial-title{font-family:var(--serif);font-size:clamp(24px,2.5vw,30px);font-weight:400;letter-spacing:-.6px;line-height:1.25;margin:6px 0 10px}
-#temporadas .section-title .seasonality-intro{max-width:83ch;color:var(--ink);font-size:16px;line-height:1.55;margin:0}
+#temporadas .section-title .seasonality-intro{max-width:none;color:var(--muted);font-size:14px;line-height:1.55;margin:0}
 @media(max-width:680px){#temporadas.atlas-panel-section{padding:20px}}
 @media print{#temporadas.atlas-panel-section{background:white;border:0;padding:0}}
 
