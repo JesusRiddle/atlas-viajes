@@ -47,7 +47,25 @@ window.AtlasDayTransport = (() => {
                     return '<div class="flight-timeline" aria-label="Itinerario aéreo">' + rows +
                         '<div class="flight-summary"><span><strong>Duración total</strong> ' + esc(total || 'Por confirmar') + '</span><span><strong>Escalas</strong> ' + stops + '</span><span><strong>Llegada</strong> ' + esc(hour(segments[segments.length - 1].arrival)) + '</span></div></div>';
                 };
-                const routes = item.type === 'flight' ? journeys.map(flightTimeline).join('') : journeys.map(j =>
+                const trainTimeline = journey => {
+                    const segments = journey.segments || [];
+                    if (!segments.length) return '';
+                    const roundtrip = journey.direction === 'roundtrip';
+                    const rows = segments.map((seg, index) => {
+                        const direction = roundtrip ? (index === 0 ? 'Ida' : index === segments.length - 1 ? 'Regreso' : 'Trayecto ' + (index + 1)) : '';
+                        const label = direction ? '<div class="mt-train-direction">' + esc(direction) + '</div>' : '';
+                        return label + '<div class="flight-leg mt-train-leg" aria-label="' + esc(seg.from + ' → ' + seg.to) + '">' +
+                            '<div class="flight-endpoint"><strong>' + esc(hour(seg.departure)) + '</strong><span class="mt-station-name">' + esc(seg.from) + '</span></div>' +
+                            '<div class="flight-leg-middle"><div class="flight-line"><span class="flight-line-duration">' +
+                            esc(elapsed(seg.departure, seg.arrival) || 'Duración pendiente') +
+                            (seg.service ? ' <span class="mt-flight-number">· ' + esc(seg.service) + '</span>' : '') +
+                            '</span></div></div>' +
+                            '<div class="flight-endpoint flight-endpoint-arrival"><strong>' + esc(hour(seg.arrival)) +
+                            '</strong><span class="mt-station-name">' + esc(seg.to) + '</span></div></div>';
+                    }).join('');
+                    return '<div class="flight-timeline mt-train-timeline day-train-timeline">' + rows + '</div>';
+                };
+                const routes = item.type === 'flight' ? journeys.map(flightTimeline).join('') : item.type === 'train' ? journeys.map(trainTimeline).join('') : journeys.map(j =>
                     j.segments.map(seg => '<div class="day-transport-route">' + esc(seg.from + ' → ' + seg.to) +
                         (hour(seg.departure) !== '—' ? ' · ' + esc(hour(seg.departure)) : '') +
                         (hour(seg.arrival) !== '—' ? '–' + esc(hour(seg.arrival)) : '') +
