@@ -30,7 +30,7 @@ window.AtlasDayTransport = (() => {
                         const layover = previous && elapsed(previous.arrival, seg.departure);
                         const stop = previous ? '<div class="flight-layover"><span class="flight-layover-dot" aria-hidden="true"></span>Escala en ' + esc(seg.from) + (layover ? ' · ' + esc(layover) : ' · duración por confirmar') + '</div>' : '';
                         return stop + '<div class="flight-leg" aria-label="' + esc(seg.from + ' → ' + seg.to) + '"><span class="flight-route-label" hidden>' + esc(seg.from + ' → ' + seg.to) + '</span><div class="flight-endpoint"><strong>' + esc(hour(seg.departure)) + '</strong><span>' + esc(seg.from) + '</span></div>' +
-                            '<div class="flight-leg-middle"><span>' + esc(elapsed(seg.departure, seg.arrival) || 'Duración pendiente') + '</span><div class="flight-line" aria-hidden="true"><i></i></div></div>' +
+                            '<div class="flight-leg-middle"><div class="flight-line"><span class="flight-line-duration">' + esc(elapsed(seg.departure, seg.arrival) || 'Duración pendiente') + '</span></div></div>' +
                             '<div class="flight-endpoint flight-endpoint-arrival"><strong>' + esc(hour(seg.arrival)) + '</strong><span>' + esc(seg.to) + '</span></div></div>';
                     }).join('');
                     const total = elapsed(segments[0].departure, segments[segments.length - 1].arrival);
