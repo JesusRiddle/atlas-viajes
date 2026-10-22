@@ -1431,3 +1431,57 @@ html{scroll-padding-top:78px}
 #dias .day .daycontent .mobility-card .mobility-copy .mobility-step>strong:first-child{color:#5e563f;font-weight:700}
 #dias .day .daycontent .mobility-card .mobility-copy em{font-style:normal}
 @media(max-width:680px){#dias .day .daycontent .mobility-card .mobility-copy .mobility-step{padding:11px 12px;font-size:13px}}
+
+/* Lenguaje común de filas para movilidad, logística y presupuesto. */
+#dias .day .daycontent .mobility-card .mobility-copy,
+#dias .day .daycontent .logistics-notice .logistics-copy,
+#dias .day .daycontent .day-budget .day-budget-rows{
+  display:grid;
+  gap:0;
+  border:1px solid var(--info-border);
+  border-radius:7px;
+  overflow:hidden;
+  background:var(--info-surface);
+}
+#dias .day .daycontent .mobility-card{--info-border:#e4dfd2;--info-divider:#ebe7dc;--info-surface:rgba(255,255,255,.66)}
+#dias .day .daycontent .logistics-notice{--info-border:#efdcd0;--info-divider:#f0e1d7;--info-surface:rgba(255,255,255,.65)}
+#dias .day .daycontent .day-budget{--info-border:#d9dfcd;--info-divider:#e2e8d9;--info-surface:rgba(255,255,255,.55)}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step,
+#dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row,
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{
+  display:block;
+  margin:0;
+  padding:12px 15px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  font-size:13px;
+  line-height:1.65;
+  overflow-wrap:anywhere;
+}
+#dias .day .daycontent .mobility-card .mobility-copy .mobility-step+.mobility-step,
+#dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row+.atlas-info-row,
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line+.day-budget-line{
+  border-top:1px solid var(--info-divider);
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) max-content;
+  align-items:baseline;
+  column-gap:12px;
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-line strong{
+  color:#344b31;
+  text-align:right;
+  font-variant-numeric:tabular-nums;
+}
+#dias .day .daycontent .day-budget .day-budget-rows .day-budget-empty{
+  padding:12px 15px;
+  margin:0;
+}
+#dias .day .daycontent .logistics-notice .logistics-copy{margin-bottom:0}
+@media(max-width:680px){
+  #dias .day .daycontent .mobility-card .mobility-copy .mobility-step,
+  #dias .day .daycontent .logistics-notice .logistics-copy .atlas-info-row,
+  #dias .day .daycontent .day-budget .day-budget-rows .day-budget-line{padding:11px 12px}
+}

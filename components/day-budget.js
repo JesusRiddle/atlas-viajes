@@ -39,7 +39,7 @@ window.AtlasDayBudget = (() => {
             '" aria-label="Presupuesto de la jornada"><summary class="day-budget-heading"><span class="day-budget-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><div class="day-budget-title"><h4>Gastos registrados del día</h4>' +
             '</div><strong>' +
             (hasAmounts ? pesos(info.totalMXN) : 'Sin partidas cotizadas') +
-            '</strong></summary>' + (lines || '<p class="day-budget-empty">Todavía no hay partidas asignadas.</p>') +
+            '</strong></summary>' + '<div class="day-budget-rows atlas-info-rows">' + (lines || '<p class="day-budget-empty">Todavía no hay partidas asignadas.</p>') + '</div>' +
             (info.partial ? '<p class="day-budget-pending">Hay partidas sin cotizar.</p>' : '') +
             '<p class="day-budget-disclaimer">Presupuesto diario incompleto: pendiente de registrar o verificar ' +
             esc(pendingCategories) + '.' +

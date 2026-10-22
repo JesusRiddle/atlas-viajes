@@ -82,7 +82,7 @@ window.AtlasDay = function (ctx) {
         const linkIcon = '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.1 0l-2 2a5 5 0 0 0 7.1 7.1l1.1-1.1"/></svg>';
         return `<details class="logistics-notice atlas-day-fold" aria-label="Aviso logístico" open>
             <summary class="logistics-heading"><span class="logistics-symbol">${icon}</span><h4>Aviso logístico</h4></summary>
-            ${note ? `<div class="logistics-copy">${note.split('\n').map(line => `<p>${readable(line)}</p>`).join('')}</div>` : ''}
+            ${note ? `<div class="logistics-copy">${note.split(/\n+/).filter(line => line.trim()).map(line => `<p class="atlas-info-row">${readable(line.replace(/^\s*[-•]\s*/, ''))}</p>`).join('')}</div>` : ''}
             ${links.length ? `<div class="logistics-links"><div class="logistics-links-heading">${linkIcon}<strong>Enlaces útiles</strong></div><div class="logistics-link-list">${links.map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${readable(link.label)}</a>`).join('')}</div></div>` : ''}
         </details>`;
     }
