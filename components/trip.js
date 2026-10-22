@@ -290,7 +290,7 @@ window.AtlasTrip = function (ctx) {
             `${reservationPlanning(t)}`,
             ].join(''),
             traslados: () => [
-            `${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : (canRenderFullTrip(t) ? railPlanning(t) : '<section class="major-transport" id="traslados"><div class="mt-heading"><span class="mt-kicker">Movilidad y conexiones</span><h2>Traslados principales.</h2></div><p class="draft-pending">Por definir</p></section>')}`,
+            `${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : (canRenderFullTrip(t) ? '<section id="traslados" class="section wrap atlas-panel-section">' + (railPlanning(t) || '<article class="panel major-transport"><h2>Traslados principales.</h2><p class="draft-pending">Por definir</p></article>') + '</section>' : '<section class="major-transport" id="traslados"><div class="mt-heading"><span class="mt-kicker">Movilidad y conexiones</span><h2>Traslados principales.</h2></div><p class="draft-pending">Por definir</p></section>')}`,
             ].join(''),
             alojamientos: () => [
             `${t.id === 'emilia-romana' || !canRenderFullTrip(t) ? '' : adviceCards(t)}`,
