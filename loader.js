@@ -37,8 +37,8 @@
         }
       };
       merge(normalized, template);
-      // An identity-only trip is automatically a draft; legacy trips are unchanged.
-      if (isMinimal) normalized.status = "draft";
+      // Existing full trips keep their normal renderer; partial new trips start as drafts.
+      if (!Object.hasOwn(raw, "status")) normalized.status = isMinimal ? "draft" : null;
       const arrays = ["routeCities","bases","costs","experiences","days","reservations","expenses",
         "majorTransport","ticketNotes","attractionTerms","mapPoints","hotels","stays",
         "practicalIndicators","tips","sources","routeHighlights","cardHighlights",
