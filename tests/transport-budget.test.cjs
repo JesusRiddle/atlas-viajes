@@ -225,6 +225,20 @@ test('referencias diarias de vuelos muestran solo el sentido correcto', () => {
     assert.equal(budget.summary(trip).entries.filter(e => e.id === 'flight-international').length, 1);
 });
 
+test('los vuelos muestran +1/+2 solo al llegar en días locales posteriores a la salida inicial', () => {
+    const copied = JSON.parse(JSON.stringify(trip));
+    const flight = copied.majorTransport.find(t => t.id === 'flight-international');
+    const outbound = flight.options[0].journeys[0].segments;
+    outbound[0].arrival = '2026-11-27T17:10:00+01:00';
+    outbound[1].departure = '2026-11-27T19:55:00+01:00';
+    outbound[1].arrival = '2026-11-28T22:10:00+01:00';
+    const html = ctx.window.AtlasDayTransport.render(copied, copied.days[0]);
+    assert.match(html, /17:10<sup class="flight-day-offset"[^>]*>\+1<\/sup>/);
+    assert.match(html, /22:10<sup class="flight-day-offset"[^>]*>\+2<\/sup>/);
+    const usual = ctx.window.AtlasDayTransport.render(trip, trip.days[0]);
+    assert.doesNotMatch(usual, /flight-day-offset/);
+});
+
 test('cinco excursiones muestran ambos tramos desde los datos estructurados', () => {
     const view = ctx.window.AtlasDay({ trips: [trip], esc: String, places: {}, photos: {} });
     for (const number of [5, 6, 8, 9, 10]) {
