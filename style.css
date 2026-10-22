@@ -1725,3 +1725,33 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
  #temporadas .season-month{min-height:151px;padding:12px;gap:8px}
  #temporadas .season-month .season-month-name{font-size:21px}
 }
+
+/* Meses: evitar saltos dentro de nombres y etiquetas a seis columnas. */
+#temporadas .season-month .season-month-name{
+  font-size:clamp(14px,1.45vw,20px);
+  line-height:1.2;
+  letter-spacing:-.045em;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+}
+#temporadas .season-month .season-state{
+  font-size:10px;
+  line-height:1.25;
+  white-space:nowrap;
+  max-width:none;
+  padding:4px 7px;
+}
+#temporadas .season-month .season-temperature{font-size:11px;white-space:nowrap}
+@media(max-width:1150px){
+  #temporadas .season-months{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  #temporadas .season-months{grid-template-columns:repeat(3,minmax(0,1fr))}
+  #temporadas .season-month .season-month-name{font-size:19px}
+}
+@media(max-width:560px){
+  #temporadas .season-months{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #temporadas .season-month .season-month-name{font-size:clamp(17px,4vw,21px)}
+  #temporadas .season-month .season-state{white-space:normal}
+}
