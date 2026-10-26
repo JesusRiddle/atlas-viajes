@@ -31,7 +31,7 @@
     ]
   ],
   "work": 8,
-  "intro": "Ruta provisional por Piamonte, Liguria y Toscana con tres bases y viajes en tren. La visita al Cenacolo Vinciano (La Última Cena) es imprescindible y condiciona los días en Milano: reservar primero la entrada nominativa para martes 6 de abril (o miércoles 7 como respaldo) antes de cerrar servicios no modificables. Vuelos, hoteles y entradas aún sin comprar.",
+  "intro": "El viaje comienza en Milano, entre el Duomo, la Galleria Vittorio Emanuele II y La Última Cena de Leonardo da Vinci, antes de descubrir en Torino el Museo Egizio y sus elegantes plazas. Continúa hacia la costa de Liguria para recorrer Portovenere y los coloridos pueblos de Cinque Terre. De camino a Toscana, las murallas y la Torre Guinigi de Lucca dan paso a Firenze, donde esperan el David de Michelangelo, la Cúpula de Brunelleschi y los Uffizi. El recorrido culmina con las calles medievales, la Piazza del Campo y la Catedral de Siena.",
   "days": [
     {
       "n": 1,
@@ -363,9 +363,24 @@
     }
   ],
   "introHighlights": [
-    "Piamonte",
+    "Milano",
+    "Duomo",
+    "Galleria Vittorio Emanuele II",
+    "La Última Cena",
+    "Torino",
+    "Museo Egizio",
     "Liguria",
+    "Portovenere",
+    "Cinque Terre",
     "Toscana",
-    "Milano"
+    "Lucca",
+    "Torre Guinigi",
+    "Firenze",
+    "David",
+    "Cúpula de Brunelleschi",
+    "Uffizi",
+    "Siena",
+    "Piazza del Campo",
+    "Catedral de Siena"
   ]
 }
