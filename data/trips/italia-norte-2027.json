@@ -387,28 +387,28 @@
     {
       "id": "solo",
       "title": "Viajar solo",
-      "text": "Recorrido cómodo para hacerlo por tu cuenta, con conexiones sencillas en tren y ciudades fáciles de explorar a pie. Para la parada en Lucca, conviene confirmar una consigna.",
+      "text": "Ciudades fáciles de recorrer por tu cuenta y bien conectadas por tren. La consigna en Lucca debe confirmarse.",
       "badge": "Muy recomendable",
       "tone": "green"
     },
     {
       "id": "pace",
       "title": "Ritmo",
-      "text": "Ritmo equilibrado, con jornadas intensas de visitas alternadas con momentos para pasear sin prisa. Habrá algunas mañanas tempranas, pero también margen para descansar y ajustar planes.",
+      "text": "Jornadas de visitas y caminatas a un ritmo moderado–activo, con algunos días exigentes y otros más flexibles para pasear sin prisa.",
       "badge": "Moderado–activo",
       "tone": "orange"
     },
     {
       "id": "language",
       "title": "Idioma",
-      "text": "Italiano. El inglés suele ser útil en hoteles, museos y estaciones turísticas; hablar italiano facilita las interacciones locales.",
+      "text": "Italiano (principal). Inglés ampliamente utilizado en zonas turísticas.",
       "badge": "Fácil",
       "tone": "green"
     },
     {
       "id": "currency",
       "title": "Pagos y moneda",
-      "text": "Euro (€). Conviene llevar algo de efectivo para gastos pequeños, revisar las comisiones de tu banco y elegir el cobro en euros si la terminal ofrece conversión.",
+      "text": "Euro (€). Llevar algo de efectivo para compras pequeñas; si la terminal ofrece conversión, elegir euros.",
       "badge": "Tarjetas aceptadas",
       "tone": "green"
     }
