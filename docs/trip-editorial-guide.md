@@ -66,6 +66,7 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 ### 9. Presupuesto (`costes`)
 **Campos:** `costs`, `expenses`, `exchangeRates`, `exchangeRateSnapshot`, `budgetPreliminary`, `knownCosts`.
 **Cómo:** desglose con moneda original y MXN cuando hay conversión sustentada; mostrar rango realista y fecha de cotización. Separar precio base, impuestos, equipaje y extras. Si falta información, conservar `null`.
+**Alimentación:** presupuestar cada jornada según ciudad, tipo de visita, número de comidas efectivas y tiempos de vuelo, sin importar un monto idéntico para todos los días. Comparar precios públicos recientes de desayunos, comida informal, trattorias y refrigerios; son referencias, no menús reservados. Considerar opciones sin lactosa cuando corresponda, cargos de servicio/coperto y agua/café. Si se presupuesta directamente en MXN, registrar `status: estimated` y aclarar que no es una cotización ni conversión a tipo de cambio confirmado. Evitar contabilizar una comida ya incluida en el vuelo o el hotel; mantener margen para variabilidad por destino. Actualizar los tests de sumas tras modificar partidas y no llamar «total del viaje» a un subtotal con transportes y entradas pendientes.
 **No incluir:** presupuestos cerrados construidos con ceros de relleno.
 
 ## Orden obligatorio de construcción · nuevos viajes
