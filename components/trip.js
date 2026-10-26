@@ -71,14 +71,21 @@ window.AtlasTrip = function (ctx) {
         };
         // Presentación experimental: etiquetas de lectura rápida para este itinerario.
         const indicators = Array.isArray(t.practicalIndicators) ? t.practicalIndicators : null;
-        const badges = t.id === 'emilia-romana' ? {
+        const legacyBadges = {
             solo: { label: 'Muy recomendable', tone: 'green', prefix: 'Muy recomendable. ' },
             pace: { label: 'Moderado–activo', tone: 'orange', prefix: 'Moderado–activo. ' },
             language: { label: 'Fácil', tone: 'green', prefix: '' },
             currency: { label: 'Tarjetas aceptadas', tone: 'green', prefix: '' }
-        } : {};
+        };
+        // Backward compatibility: old Emilia-Romagna data predates per-trip badge fields.
+        const badgeInfo = item => {
+            if (typeof item.badge === 'string' && item.badge.trim()) {
+                return { label: item.badge.trim(), tone: item.tone === 'orange' ? 'orange' : 'green', prefix: '' };
+            }
+            return t.id === 'emilia-romana' ? legacyBadges[item.id] : null;
+        };
         const badgeMarkup = item => {
-            const info = badges[item.id];
+            const info = badgeInfo(item);
             if (!info) return '';
             const palette = info.tone === 'orange'
                 ? 'color:#965015;background:#fff1db;border:1px solid #ebcd9c;'
@@ -87,7 +94,7 @@ window.AtlasTrip = function (ctx) {
                 palette + '">' + esc(info.label) + '</span>';
         };
         const description = item => {
-            const prefix = badges[item.id]?.prefix;
+            const prefix = badgeInfo(item)?.prefix;
             return prefix && item.text.startsWith(prefix) ? item.text.slice(prefix.length) : item.text;
         };
         const content = indicators
