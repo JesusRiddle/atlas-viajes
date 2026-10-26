@@ -107,3 +107,29 @@ test('Italia 2027: fechas, noches y viajes de ida y vuelta coherentes', () => {
   const source = fs.readFileSync('components/major-transport.js', 'utf8');
   assert.match(source, /Array\.isArray\(item\)/, 'Las notas deben admitir objetos y arreglos');
 });
+
+test('el manual y AGENTS establecen el orden de armado antes de publicar', () => {
+  const guide = fs.readFileSync('docs/trip-editorial-guide.md', 'utf8');
+  const agents = fs.readFileSync('AGENTS.md', 'utf8');
+  const readme = fs.readFileSync('README.md', 'utf8');
+  for (const section of ['Fase 0', 'Fase 1', 'Fase 2', 'Fase 3', 'Mapa', 'Temporadas', 'Experiencias', 'Movilidad y conexiones', 'Presupuesto']) {
+    assert.ok(guide.includes(section), 'Falta paso: ' + section);
+  }
+  assert.match(agents, /Fase 0/);
+  assert.match(readme, /Orden:/);
+});
+
+test('Italia 2027 mantiene vuelos cotizados y trenes futuros sin precios inventados', () => {
+  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
+  assert.match(trip.flight, /16,683 MXN/);
+  assert.match(trip.flight, /no comprada/i);
+  const flight = trip.majorTransport.find(t => t.id === 'flight-international');
+  assert.equal(flight.options[0].status, 'quoted');
+  assert.equal(flight.options[0].fares[0].price.amount, 16683);
+  assert.equal(flight.options[0].fares[0].price.currency, 'MXN');
+  for (const t of trip.majorTransport.filter(t => t.id !== 'flight-international')) {
+    const o = t.options[0];
+    assert.equal(o.status, 'planning', t.id);
+    assert.equal(o.fares[0].price, null, t.id);
+  }
+});
