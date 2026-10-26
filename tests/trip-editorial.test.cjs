@@ -27,3 +27,17 @@ test('el viaje Italia 2027 mantiene introducción turística con resaltados exis
   }
   assert.doesNotMatch(trip.intro, /reservar primero|aún sin comprar|entrada nominativa|servicios no modificables/i);
 });
+
+test('los 12 meses evaluados contienen rango de temperatura visible', () => {
+  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
+  const pattern = /[-−]?\d{1,2}(?:[.,]\d+)?\s*[–—-]\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*°\s*C/i;
+  const months = trip.seasonality.months;
+  assert.equal(Object.keys(months).length, 12);
+  for (let month = 1; month <= 12; month++) {
+    const key = String(month).padStart(2, '0');
+    assert.ok(months[key], 'Falta mes ' + key);
+    if (months[key].status !== 'pending') {
+      assert.match(months[key].description, pattern, 'Mes sin temperatura visible: ' + key);
+    }
+  }
+});
