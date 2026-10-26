@@ -9,3 +9,6 @@ Antes de crear, modificar o auditar un viaje:
 6. Hacer cambios en una rama, verificar pruebas y visualización. No hacer merge a `main` ni eliminar viajes existentes sin aprobación.
 
 Si un requisito del usuario contradice una regla editorial, discutir o documentar la excepción antes de introducirla; prevalecen los datos confirmados del usuario sobre ejemplos de plantillas.
+
+## Orden de trabajo obligatorio
+Seguir **Fase 0 → Fase 1 → Fase 2 (secciones 5–13) → Fase 3** de `docs/trip-editorial-guide.md`. Antes de redactar cada sección comprobar sus dependencias y el diseño maestro de Emilia-Romagna; al terminar, ejecutar las validaciones pertinentes y corregir errores antes de avanzar. No completar primero los textos y después inventar logística para justificarlos. Respetar la concisión solicitada: información concreta, no paja.
