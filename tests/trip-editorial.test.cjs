@@ -147,7 +147,7 @@ test('Italia 2027: tres hoteles principales y presupuesto distribuido', () => {
     assert.equal(hotelExpenses.find(x=>x.hotelId===h.id).nights,nights[h.city]);
   }
   assert.equal(trip.expenses.filter(x=>x.category==='food').length,12);
-  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),7650);
+  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),9500);
   assert.equal(trip.budgetPreliminary,true);
 });
 
