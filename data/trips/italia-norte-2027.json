@@ -317,5 +317,22 @@
       "base": false,
       "order": 8
     }
+  ],
+  "ticketNotes": [
+    {
+      "title": "Cotización aérea de referencia · Aeroméxico",
+      "status": "quoted",
+      "quotedAt": "2026-10-26",
+      "route": "MEX → MXP (3 abril 2027, 22:30–18:20 +1); MXP → MEX (14 abril 2027, 23:05–04:00 +1)",
+      "carrier": "Aeroméxico",
+      "fare": "Básica",
+      "price": {
+        "amount": 16683,
+        "currency": "MXN"
+      },
+      "baggage": "Una maleta de mano incluida; equipaje documentado con cargo. Verificar límites de peso y artículo personal antes de compra.",
+      "conditions": "Sin cambios voluntarios ni reembolsos según pantalla de cotización.",
+      "note": "Tarifa redonda de Google Flights, no comprada ni garantizada; llegada a México el 15 abril. Comparar multidestino MEX→MXP / FCO→MEX antes de decidir."
+    }
   ]
 }
