@@ -60,6 +60,7 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 ### 8. Día por día (`dias`)
 **Campos:** `days`, con `n`, `date`, `title`, `base`, `am`, `pm`, `night`, `mobility`, `note`, `headerPlaces`, `places`, `transportRefs`, `spend` según necesidad.
 **Cómo:** mañana, tarde, noche y traslados coherentes; priorizar lo obligatorio, horarios de cierre, descansos, distancias, carga física, clima y contingencias. Mantener título específico y no duplicar instrucciones largas entre `intro` y notas.
+**Días de vuelos internacionales:** describir check-in, objetivo de llegada al aeropuerto, tramos con fecha y hora local, cambio de día, inmigración, equipaje y conexión terrestre realista. En vuelos nocturnos, separar salida y llegada (+1 día) sin asignar actividades a horas incompatibles. Usar `headerPlaces` y `transportRefs` con IDs reales; billetes redondos se contabilizan una sola vez en presupuesto. Si el vuelo fue cotizado pero no comprado, indicarlo una vez en `note`; conservar horarios de tren no cotizados como pendientes y evitar cifras inventadas. No repetir instrucciones en cada bloque.
 **No incluir:** cinco museos en una sola jornada sin márgenes ni afirmaciones de reservas no hechas.
 
 ### 9. Presupuesto (`costes`)
