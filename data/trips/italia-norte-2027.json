@@ -40,7 +40,7 @@
       "base": "En vuelo",
       "am": "1. Verificar pasaporte, documentación de viaje y equipaje permitido en la tarifa Básica de Aeroméxico.\n2. Consultar el estado del vuelo y realizar check-in en línea cuando se habilite.",
       "pm": "1. Salir con margen hacia el Aeropuerto Internacional de la Ciudad de México (MEX).\n2. Objetivo orientativo: estar en la terminal hacia las 19:30, unas 3 horas antes de la salida cotizada. Confirmar terminal y cierre de mostradores en la reserva.",
-      "night": "1. Pasar controles de seguridad y localizar la puerta de embarque.\n2. Vuelo directo Aeroméxico MEX → Milano Malpensa (MXP), salida cotizada el sábado 3 de abril a las 22:30.\n3. Pasar la noche a bordo; llegada prevista el domingo 4 de abril a las 18:20, hora de Italia.",
+      "night": "1. Pasar controles de seguridad y localizar la puerta de embarque.\n2. Vuelo directo Aeroméxico MEX → Milano Malpensa (MXP), salida cotizada el sábado 3 de abril a las 22:30.\n3. Pasar la noche a bordo; la llegada está prevista para el domingo 4 de abril a las 18:20, hora de Italia.",
       "mobility": "Vuelo directo MEX → MXP; sin escalas. Salida cotizada 22:30 (CDMX) y llegada 18:20 del 4 de abril (Milano). La hora y terminal definitivas deben confirmarse antes del viaje.",
       "note": "Cotización de referencia del 26/10/2026: vuelo redondo Aeroméxico Básica por $16,683 MXN, sin compra. Confirmar franquicia de equipaje de mano, terminal, horario definitivo y condiciones de cambio. El vuelo internacional se cuenta una sola vez en el presupuesto general.",
       "spend": null,
@@ -64,7 +64,10 @@
       "mobility": "Aeropuerto Malpensa → Milano, tren aeroportuario por confirmar.",
       "note": "Vuelo cotizado, no comprado. No fijar entradas ni actividades el día de llegada.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "airport-arrival"
+      ]
     },
     {
       "n": 3,
@@ -77,7 +80,10 @@
       "mobility": "Tren Milano Centrale ↔ Torino Porta Nuova / Porta Susa. Comparar servicios disponibles; no hay billetes emitidos.",
       "note": "Museo Egizio, lunes 5: horario habitual 09:00–14:00 según museoegizio.it; reservar entrada anticipadamente y confirmar horario específico de 2027.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "train-torino"
+      ]
     },
     {
       "n": 4,
@@ -103,7 +109,11 @@
       "mobility": "Tren Milano → La Spezia; autobús a Portovenere.",
       "note": "Portovenere es flexible y subordinado a La Última Cena. Con boleto Cenacolo miércoles 7, verificar si cabe Portovenere por la tarde; si no, priorizar llegada y descanso en La Spezia. No mover Cinque Terre del jueves 8 sin volver a evaluar pronóstico y conexiones.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "train-milano-la-spezia",
+        "bus-portovenere"
+      ]
     },
     {
       "n": 6,
@@ -116,7 +126,10 @@
       "mobility": "Tren regional entre pueblos.",
       "note": "No depender de senderos abiertos. Los cinco pueblos son objetivo flexible; verificar condiciones.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "train-cinque-terre"
+      ]
     },
     {
       "n": 7,
@@ -129,7 +142,11 @@
       "mobility": "Trenes regionales, con conexiones por verificar.",
       "note": "Consigna comprobada como servicio existente frente a Lucca FS según oficina de turismo (Piazzale Ricasoli 503); verificar horario y disponibilidad del viernes 9 abril 2027. Si no funciona, seguir directamente a Firenze.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "train-la-spezia-lucca",
+        "train-lucca-firenze"
+      ]
     },
     {
       "n": 8,
@@ -168,7 +185,10 @@
       "mobility": "Autobús interurbano o tren, por comparar.",
       "note": "No mezclar Siena con San Gimignano; revisar horarios de la catedral.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "train-siena"
+      ]
     },
     {
       "n": 11,
@@ -190,9 +210,9 @@
       "base": "En vuelo / regreso",
       "am": "1. Desayunar, revisar pertenencias y realizar check-out en Firenze.\n2. Trasladarse a Firenze Santa Maria Novella y tomar un tren de alta velocidad hacia Milano Centrale. Seleccionar una salida con margen amplio; el horario de abril de 2027 aún no está cotizado.",
       "pm": "1. En Milano Centrale, enlazar con Malpensa Express hacia el aeropuerto; revisar estación de salida y terminal asignada.\n2. Objetivo: llegar a Milano Malpensa entre las 18:30 y las 19:00, unas 4 horas antes del vuelo de las 23:05.\n3. Realizar check-in, seguridad y control de pasaportes de salida del espacio Schengen.",
-      "night": "1. Embarcar en el vuelo directo Aeroméxico MXP → MEX, salida cotizada el miércoles 14 de abril a las 23:05, hora de Italia.\n2. Llegada prevista a Ciudad de México el jueves 15 de abril a las 04:00, hora local. Trámites migratorios y regreso a casa.",
+      "night": "1. Embarcar en el vuelo directo Aeroméxico MXP → MEX, salida cotizada el miércoles 14 de abril a las 23:05, hora de Italia.\n2. Pasar la noche a bordo. Llegada prevista a CDMX el jueves 15 de abril a las 04:00, hora local.",
       "mobility": "Firenze SMN → Milano Centrale: tren de alta velocidad, sin horario reservado. Milano Centrale → Malpensa: Malpensa Express, con frecuencia y terminal por confirmar. Vuelo directo MXP → MEX a las 23:05 (cotizado, no comprado).",
-      "note": "Reservar ambos trayectos ferroviarios con margen para incidencias: no son una conexión protegida con el vuelo. Los trenes siguen sin cotizar; consultar los horarios antes de decidir la salida de Firenze. El vuelo llega a México el 15 de abril, aunque el último día de actividades en Italia es el 14.",
+      "note": "Reservar ambos trayectos ferroviarios con margen para incidencias: no son una conexión protegida con el vuelo. Los trenes siguen sin cotizar; consultar los horarios antes de decidir la salida de Firenze. El vuelo llega a México el 15 de abril, aunque el último día de actividades en Italia es el 14. Tras aterrizar el 15 de abril, realizar migración, aduana y traslado a casa.",
       "spend": null,
       "places": [],
       "headerPlaces": [
@@ -914,14 +934,14 @@
           "selectedFare": "ref",
           "journeys": [
             {
-              "direction": "outbound",
+              "direction": "oneway",
               "segments": [
                 {
                   "from": "La Spezia Centrale",
                   "to": "Riomaggiore",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Trenitalia · regional 5 Terre Express"
+                  "operator": "Trenitalia · regional"
                 }
               ]
             },
@@ -929,11 +949,11 @@
               "direction": "return",
               "segments": [
                 {
-                  "from": "Riomaggiore",
+                  "from": "Monterosso al Mare",
                   "to": "La Spezia Centrale",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Trenitalia · regional 5 Terre Express"
+                  "operator": "Trenitalia · regional"
                 }
               ]
             }
@@ -947,7 +967,7 @@
               "refunds": null
             }
           ],
-          "notes": "8 abril: traslados adicionales entre Manarola, Vernazza y eventualmente Corniglia/Monterosso. Cinque Terre Treno Card 2026 de 1 día: €22/€29.50/€35 según afluencia, no tarifa confirmada para 2027. Comparar con billetes sencillos; no incluir tarjeta y billetes a la vez.",
+          "notes": "8 abril: iniciar por Riomaggiore, seguir a Manarola y Vernazza, con Corniglia/Monterosso opcionales. Regreso ejemplificado desde Monterosso; si terminas en otro pueblo, ajustar el origen. Tramos intermedios no cotizados. Comparar billetes sencillos con la Cinque Terre Treno Card de 2027, sin duplicar gastos.",
           "quotedAt": null
         }
       ],
@@ -1227,7 +1247,7 @@
       "status": "Candidato principal · no reservado",
       "rate": "Estimación de planeación: $6,300 MXN total · 3 noches ($2,100/noche). No es cotización.",
       "rateConditions": "Precio objetivo supuesto, habitación individual con baño privado. Confirmar total con impuestos, disponibilidad y cancelación para abril de 2027.",
-      "notes": "Elegido por conveniencia por estar frente a Milano Centrale. Tiene habitaciones individuales con baño privado; comprobar tarifa final y disponibilidad para 3 noches.",
+      "notes": "Frente a Milano Centrale; comprobar tarifa final para tres noches y posibles ruidos exteriores.",
       "links": [
         {
           "label": "Consultar alojamiento oficial",
@@ -1245,7 +1265,7 @@
       "status": "Candidato principal · no reservado",
       "rate": "Estimación de planeación: $4,000 MXN total · 2 noches ($2,000/noche). No es cotización.",
       "rateConditions": "Precio objetivo supuesto, habitación individual con baño privado. Confirmar total con impuestos, disponibilidad y cancelación para abril de 2027.",
-      "notes": "alojamientos a pocos pasos de La Spezia Centrale y baño privado. Confirmar edificio asignado, escaleras, horarios de recepción y cancelación.",
+      "notes": "A pocos pasos de La Spezia Centrale. Confirmar edificio asignado, escaleras, recepción y consigna.",
       "links": [
         {
           "label": "Consultar alojamiento oficial",
@@ -1263,7 +1283,7 @@
       "status": "Candidato principal · no reservado",
       "rate": "Estimación de planeación: $11,500 MXN total · 5 noches ($2,300/noche). No es cotización.",
       "rateConditions": "Precio objetivo supuesto, habitación individual con baño privado. Confirmar total con impuestos, disponibilidad y cancelación para abril de 2027.",
-      "notes": "a unos cuatro minutos de Firenze SMN, habitaciones con baño privado. Comparar tarifa de cinco noches y cancelación.",
+      "notes": "A pocos minutos de Firenze SMN. Confirmar tarifa de cinco noches, condiciones de cancelación y accesibilidad.",
       "links": [
         {
           "label": "Consultar alojamiento oficial",
@@ -1321,11 +1341,11 @@
       "concept": "Alimentación · día 1",
       "date": "2027-04-03",
       "cost": {
-        "amount": 700,
+        "amount": 300,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Estimación reducida por vuelo nocturno; comidas incluidas a bordo dependen de tarifa y servicio."
     },
     {
       "id": "food-day-02",
@@ -1333,11 +1353,11 @@
       "concept": "Alimentación · día 2",
       "date": "2027-04-04",
       "cost": {
-        "amount": 700,
+        "amount": 350,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Estimación reducida: llegada a Milano por la tarde. Alimentación en aeropuerto/estación o cena."
     },
     {
       "id": "food-day-03",
