@@ -1345,7 +1345,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Estimación reducida por vuelo nocturno; comidas incluidas a bordo dependen de tarifa y servicio."
+      "notes": "Supuesto de planeación, no cotización: Cena ligera o compras antes de volar; revisar alimentos incluidos a bordo. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-02",
@@ -1353,11 +1353,11 @@
       "concept": "Alimentación · día 2",
       "date": "2027-04-04",
       "cost": {
-        "amount": 350,
+        "amount": 450,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Estimación reducida: llegada a Milano por la tarde. Alimentación en aeropuerto/estación o cena."
+      "notes": "Supuesto de planeación, no cotización: Llegada a las 18:20: cena y bebida; no presupuestar tres comidas. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-03",
@@ -1365,11 +1365,11 @@
       "concept": "Alimentación · día 3",
       "date": "2027-04-05",
       "cost": {
-        "amount": 700,
+        "amount": 850,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Torino: desayuno rápido, comida y cena al regreso. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-04",
@@ -1377,11 +1377,11 @@
       "concept": "Alimentación · día 4",
       "date": "2027-04-06",
       "cost": {
-        "amount": 700,
+        "amount": 950,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Milano: comida y cena en zonas turísticas, café y refrigerio. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-05",
@@ -1389,11 +1389,11 @@
       "concept": "Alimentación · día 5",
       "date": "2027-04-07",
       "cost": {
-        "amount": 700,
+        "amount": 850,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Traslado a Liguria y posible Portovenere: comida práctica y cena. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-06",
@@ -1401,11 +1401,11 @@
       "concept": "Alimentación · día 6",
       "date": "2027-04-08",
       "cost": {
-        "amount": 700,
+        "amount": 900,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Cinque Terre: comida junto a los pueblos, bebida y cena. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-07",
@@ -1413,11 +1413,11 @@
       "concept": "Alimentación · día 7",
       "date": "2027-04-09",
       "cost": {
-        "amount": 700,
+        "amount": 850,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Lucca y traslado: comida sencilla, refrigerio y cena en Firenze. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-08",
@@ -1425,11 +1425,11 @@
       "concept": "Alimentación · día 8",
       "date": "2027-04-10",
       "cost": {
-        "amount": 700,
+        "amount": 950,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Firenze: desayuno, comida, cena y refrigerios entre museos. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-09",
@@ -1437,11 +1437,11 @@
       "concept": "Alimentación · día 9",
       "date": "2027-04-11",
       "cost": {
-        "amount": 700,
+        "amount": 950,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Firenze: comidas y cena en trattoria, sin menú de lujo. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-10",
@@ -1449,11 +1449,11 @@
       "concept": "Alimentación · día 10",
       "date": "2027-04-12",
       "cost": {
-        "amount": 700,
+        "amount": 850,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Siena: comida durante excursión y cena al volver. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-11",
@@ -1461,11 +1461,11 @@
       "concept": "Alimentación · día 11",
       "date": "2027-04-13",
       "cost": {
-        "amount": 700,
+        "amount": 950,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Firenze: comidas, cena y refrigerios del último día completo. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     },
     {
       "id": "food-day-12",
@@ -1473,11 +1473,11 @@
       "concept": "Alimentación · día 12",
       "date": "2027-04-14",
       "cost": {
-        "amount": 700,
+        "amount": 650,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
+      "notes": "Supuesto de planeación, no cotización: Traslado a Malpensa y vuelo nocturno: comida, refrigerio y cena según servicio a bordo. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
     }
   ]
 }
