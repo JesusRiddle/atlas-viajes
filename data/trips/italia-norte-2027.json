@@ -231,7 +231,7 @@
     }
   ],
   "flight": "Vuelo directo CDMX ↔ Milano Malpensa como alternativa por cotizar. Fechas, equipaje y horarios sin confirmar; no hay billetes comprados.",
-  "local": "Priorizar Milano Centrale (excursión Torino y salida hacia La Spezia), La Spezia Centrale (trenes a Cinque Terre) y Firenze SMN / centro (Siena y regreso). Portovenere: autobús 11/P de ATC desde La Spezia. Lucca: parada solo con consigna validada frente a estación. Regreso: Firenze SMN → Milano Centrale → Malpensa Express; verificar calendarios de abril de 2027 antes de comprar.",
+  "local": "Bases ferroviarias: Milano Centrale (Torino y salida a Liguria), La Spezia Centrale (Cinque Terre) y Firenze SMN (Siena y regreso). Portovenere por ATC si el horario permite; Lucca solo con consigna comprobada. Los trenes de abril de 2027 aún no están cotizados: los tiempos son referencias de servicios habituales y las tarifas consultadas corresponden a 2026.",
   "climate": "En abril tendrás un clima *primaveral y variable*: *Milano y Torino, 15–18 °C de día y 5–9 °C de noche*; *Liguria, 16–19 °C y 9–12 °C*; *Toscana, 17–20 °C y 6–10 °C*. Son rangos habituales, no un pronóstico. Puede llover y hacer viento en la costa.\n\n*Qué llevar:* Chamarra impermeable y cortaviento, suéter ligero, ropa por capas, pantalones largos, tenis con buena suela y paraguas compacto. Todo compatible con tu equipaje de cabina.\n\n*Horas de luz:* Del 4 al 14 de abril, amanecerá aproximadamente entre *6:35 y 7:00* y anochecerá entre *19:40 y 20:00* (hora local). Aprovecha la luz para Cinque Terre, Portovenere y miradores; verifica el estado de senderos y barcos si llueve.",
   "solo": "Preferir alojamientos próximos a estaciones y consigna confirmada para Lucca.",
   "lodgingSummary": "Zonas a cotizar sin reserva: Milano Centrale, preferiblemente lado Via Vitruvio / Via Napo Torriani (4–7 abril, 3 noches); La Spezia Centrale, acceso peatonal a la estación (7–9 abril, 2); Firenze entre Santa Maria Novella y Duomo, ideal 10–15 minutos a pie de Firenze SMN (9–14 abril, 5).",
@@ -608,5 +608,580 @@
         }
       ]
     ]
+  ],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Vuelos directos · México ↔ Milano",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Aeroméxico · vuelo directo",
+          "status": "quoted",
+          "selectedFare": "basic",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "MXP",
+                  "departure": "2027-04-03T22:30:00-06:00",
+                  "arrival": "2027-04-04T18:20:00+02:00",
+                  "operator": "Aeroméxico"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "MXP",
+                  "to": "MEX",
+                  "departure": "2027-04-14T23:05:00+02:00",
+                  "arrival": "2027-04-15T04:00:00-06:00",
+                  "operator": "Aeroméxico"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "basic",
+              "name": "Básica · cotización del 26/10/2026",
+              "price": {
+                "amount": 16683,
+                "currency": "MXN"
+              },
+              "changes": "No permitidos según cotización",
+              "refunds": "No reembolsable según cotización"
+            }
+          ],
+          "quotedAt": "2026-10-26",
+          "notes": "Referencia aportada por el viajero, no comprada; verificar vuelo y equipaje de cabina antes de pagar."
+        }
+      ],
+      "links": [
+        {
+          "label": "Aeroméxico · vuelos",
+          "url": "https://www.aeromexico.com/"
+        }
+      ]
+    },
+    {
+      "id": "airport-arrival",
+      "type": "train",
+      "title": "Malpensa → Milano Centrale",
+      "day": 2,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenord · Malpensa Express",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Malpensa Aeroporto",
+                  "to": "Milano Centrale",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenord · Malpensa Express"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": {
+                "amount": 15,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "~51 min, servicios aproximadamente cada 30 min; tarifa oficial actual €15 por sentido. Llegada 4 abril y traslado al hotel. Verificar estación terminal y últimos servicios.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenord.it/en/linee-e-orari/il-nostro-servizio/malpensa-express/"
+        }
+      ]
+    },
+    {
+      "id": "train-torino",
+      "type": "train",
+      "title": "Milano ↔ Torino · excursión",
+      "day": 3,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenitalia · Regionale Veloce / Frecciarossa",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Torino Porta Nuova",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · Regionale Veloce / Frecciarossa"
+                },
+                {
+                  "from": "Torino Porta Nuova",
+                  "to": "Milano Centrale",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · Regionale Veloce / Frecciarossa"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "5 abril: para el Museo Egizio a primera hora conviene comparar alta velocidad (~1 h–1 h 15) frente a regional (~1 h 55). Referencias consultadas: regional ~€13 por trayecto; alta velocidad variable ~€33–€65. El horario exacto y estación de llegada deben cotizarse para el lunes.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Consultar alternativa",
+          "url": "https://www.italotreno.com/"
+        }
+      ]
+    },
+    {
+      "id": "train-milano-la-spezia",
+      "type": "train",
+      "title": "Milano Centrale → La Spezia Centrale",
+      "day": 5,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenitalia · Intercity / Regionale",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "La Spezia Centrale",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · Intercity / Regionale"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "7 abril: buscar Intercity directo, habitualmente unas 3–4 h. Dejar margen para el Cenacolo como plan B por la mañana; Portovenere puede sacrificarse. Tarifa y tren de abril 2027 pendientes.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenitalia.com/"
+        }
+      ]
+    },
+    {
+      "id": "bus-portovenere",
+      "type": "bus",
+      "title": "La Spezia ↔ Portovenere · opcional",
+      "day": 5,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "ATC Esercizio · autobús",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "La Spezia",
+                  "to": "Portovenere",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "ATC Esercizio · autobús"
+                },
+                {
+                  "from": "Portovenere",
+                  "to": "La Spezia",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "ATC Esercizio · autobús"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "7 abril: autobús urbano/suburbano hacia Portovenere, alrededor de 30–45 min por sentido. Comprobar línea P/11/P, frecuencia y punto de salida al acercarse la fecha; ferry sujeto a temporada y mar.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.atcesercizio.it/"
+        }
+      ]
+    },
+    {
+      "id": "train-cinque-terre",
+      "type": "train",
+      "title": "La Spezia ↔ Cinque Terre",
+      "day": 6,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenitalia · regional 5 Terre Express",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "La Spezia Centrale",
+                  "to": "Riomaggiore",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · regional 5 Terre Express"
+                },
+                {
+                  "from": "Riomaggiore",
+                  "to": "La Spezia Centrale",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · regional 5 Terre Express"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "8 abril: traslados adicionales entre Manarola, Vernazza y eventualmente Corniglia/Monterosso. Cinque Terre Treno Card 2026 de 1 día: €22/€29.50/€35 según afluencia, no tarifa confirmada para 2027. Comparar con billetes sencillos; no incluir tarjeta y billetes a la vez.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.parconazionale5terre.it/page.php?id=158"
+        },
+        {
+          "label": "Consultar alternativa",
+          "url": "https://www.trenitalia.com/es/conexiones/explora-5-terre.html"
+        }
+      ]
+    },
+    {
+      "id": "train-la-spezia-lucca",
+      "type": "train",
+      "title": "La Spezia Centrale → Lucca",
+      "day": 7,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenitalia · regional",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "La Spezia Centrale",
+                  "to": "Pisa Centrale",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · regional"
+                },
+                {
+                  "from": "Pisa Centrale",
+                  "to": "Lucca",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · regional"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "9 abril: prever ~1 h 30–2 h con cambio en Pisa según combinación. Visitar Lucca solo si está confirmada la consigna para llevar equipaje; si no, ir directo a Firenze.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenitalia.com/"
+        }
+      ]
+    },
+    {
+      "id": "train-lucca-firenze",
+      "type": "train",
+      "title": "Lucca → Firenze S. M. Novella",
+      "day": 7,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenitalia · regional",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Lucca",
+                  "to": "Firenze S. M. Novella",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · regional"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "9 abril: habitualmente ~1 h 20–1 h 45; hay trenes directos. Comprar billete regional con tiempo de visita flexible. Referencia comercial desde €8.90, no tarifa garantizada para la fecha.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenitalia.com/"
+        }
+      ]
+    },
+    {
+      "id": "train-siena",
+      "type": "train",
+      "title": "Firenze ↔ Siena · excursión",
+      "day": 10,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenitalia · regional",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Firenze S. M. Novella",
+                  "to": "Siena",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · regional"
+                },
+                {
+                  "from": "Siena",
+                  "to": "Firenze S. M. Novella",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · regional"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "12 abril: directos habituales ~1 h 30 por trayecto y billete comercial desde €9.80 por sentido. La estación de Siena está fuera del casco antiguo: considerar subida a pie/escaleras móviles o valorar autobús directo.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenitalia.com/"
+        }
+      ]
+    },
+    {
+      "id": "train-firenze-milano",
+      "type": "train",
+      "title": "Firenze SMN → Milano Centrale",
+      "day": 12,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenitalia · Frecciarossa / Italo",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Firenze S. M. Novella",
+                  "to": "Milano Centrale",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenitalia · Frecciarossa / Italo"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "14 abril: alta velocidad directa ~1 h 54–2 h. Escoger salida con amplio colchón para enlazar Malpensa Express y estar en MXP alrededor de 18:30–19:00; evitar billetes de tren con conexión demasiado justa.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Consultar alternativa",
+          "url": "https://www.italotreno.com/"
+        }
+      ]
+    },
+    {
+      "id": "airport-return",
+      "type": "train",
+      "title": "Milano Centrale → Malpensa",
+      "day": 12,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenord · Malpensa Express",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Malpensa Aeroporto",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenord · Malpensa Express"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Orientativo · pendiente de cotización",
+              "price": {
+                "amount": 15,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "14 abril: ~51 min, €15 por sentido de referencia oficial. Conexión posterior al tren desde Firenze; llegar al aeropuerto con unas 4 horas de margen para vuelo a las 23:05.",
+          "quotedAt": null
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenord.it/en/linee-e-orari/il-nostro-servizio/malpensa-express/"
+        }
+      ]
+    }
   ]
 }
