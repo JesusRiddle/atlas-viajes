@@ -1441,9 +1441,5 @@
       "status": "estimated",
       "notes": "Supuesto presupuestario de $700 MXN diarios; revisar consumo y tipo de cambio."
     }
-  ],
-  "budgetRange": [
-    55000,
-    75000
   ]
 }
