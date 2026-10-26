@@ -37,74 +37,285 @@
       "n": 1,
       "date": "2027-04-03",
       "title": "Vuelo CDMX → Milano",
-      "base": "En vuelo"
+      "base": "En vuelo",
+      "am": "1. Preparar equipaje y documentos.",
+      "pm": "1. Traslado al aeropuerto.",
+      "night": "1. Vuelo internacional nocturno propuesto.",
+      "mobility": "Vuelo directo MEX → MXP por cotizar.",
+      "note": "No existe reserva ni horario confirmado.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 2,
       "date": "2027-04-04",
       "title": "Llegada a Milano",
-      "base": "Milano"
+      "base": "Milano",
+      "am": "1. Llegada prevista a Milano; sin entradas programadas.",
+      "pm": "1. Trámites migratorios y traslado a Milano.",
+      "night": "1. Check-in y descanso.",
+      "mobility": "Aeropuerto Malpensa → Milano, tren aeroportuario por confirmar.",
+      "note": "No fijar actividades con boleto el día de llegada.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 3,
       "date": "2027-04-05",
       "title": "Milano: centro histórico y principales visitas",
-      "base": "Milano"
+      "base": "Milano",
+      "am": "1. Duomo y terrazas; Galleria Vittorio Emanuele II.",
+      "pm": "1. Piazza della Scala, Castello Sforzesco y barrio Brera.",
+      "night": "1. Paseo por Navigli.",
+      "mobility": "Metro y recorridos a pie.",
+      "note": "Lunes: Brera y Última Cena pueden estar cerrados; reasignar esas entradas a una fecha disponible o reconsiderar la distribución.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 4,
       "date": "2027-04-06",
       "title": "Torino: excursión en tren",
-      "base": "Milano"
+      "base": "Milano",
+      "am": "1. Tren a Torino y Museo Egizio.",
+      "pm": "1. Piazza Castello, Palazzo Reale o Mole Antonelliana / Museo del Cinema.",
+      "night": "1. Regreso y noche en Milano.",
+      "mobility": "Tren Milano ↔ Torino.",
+      "note": "Priorizar Egizio y solo una segunda visita interior; revisar horarios.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 5,
       "date": "2027-04-07",
       "title": "Milano → La Spezia · Portovenere",
-      "base": "La Spezia"
+      "base": "La Spezia",
+      "am": "1. Check-out, tren a La Spezia y dejar equipaje.",
+      "pm": "1. Portovenere: Chiesa di San Pietro, Grotta di Byron y paseo marítimo.",
+      "night": "1. Regreso a La Spezia.",
+      "mobility": "Tren Milano → La Spezia; autobús a Portovenere.",
+      "note": "Castello Doria opcional. Barcos sujetos a operación y meteorología.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 6,
       "date": "2027-04-08",
       "title": "Cinque Terre en tren",
-      "base": "La Spezia"
+      "base": "La Spezia",
+      "am": "1. Cinque Terre: Riomaggiore y Manarola.",
+      "pm": "1. Corniglia, Vernazza y Monterosso, adaptando ritmo al día.",
+      "night": "1. Regreso a La Spezia.",
+      "mobility": "Tren regional entre pueblos.",
+      "note": "No depender de senderos abiertos. Los cinco pueblos son objetivo flexible; verificar condiciones.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 7,
       "date": "2027-04-09",
       "title": "La Spezia → Lucca → Firenze",
-      "base": "Firenze"
+      "base": "Firenze",
+      "am": "1. Tren La Spezia → Lucca; consigna de equipaje.",
+      "pm": "1. Murallas de Lucca, Piazza dell'Anfiteatro y Torre Guinigi; tren a Firenze.",
+      "night": "1. Check-in y paseo nocturno por Firenze.",
+      "mobility": "Trenes regionales, con conexiones por verificar.",
+      "note": "Sin consigna segura en Lucca, seguir directo a Firenze y evitar viajar con maletas durante la visita.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 8,
       "date": "2027-04-10",
       "title": "Firenze I: David, Duomo y Uffizi",
-      "base": "Firenze"
+      "base": "Firenze",
+      "am": "1. Galleria dell'Accademia: David; Duomo y Cúpula.",
+      "pm": "1. Galleria degli Uffizi, con pausa para almorzar.",
+      "night": "1. Ponte Vecchio y Arno.",
+      "mobility": "Centro histórico a pie.",
+      "note": "Reservar Accademia, Cúpula y Uffizi en horarios compatibles; no acumular visitas sin margen.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 9,
       "date": "2027-04-11",
       "title": "Firenze II: arte y miradores",
-      "base": "Firenze"
+      "base": "Firenze",
+      "am": "1. Basilica di Santa Croce y Museo del Bargello, si abre.",
+      "pm": "1. Oltrarno, San Miniato al Monte y Piazzale Michelangelo.",
+      "night": "1. Atardecer y cena en Firenze.",
+      "mobility": "A pie y autobús si hace falta.",
+      "note": "Domingo: confirmar horarios religiosos y de museos; intercambiar actividades según aperturas.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 10,
       "date": "2027-04-12",
       "title": "Siena: excursión desde Firenze",
-      "base": "Firenze"
+      "base": "Firenze",
+      "am": "1. Excursión a Siena: Piazza del Campo y centro medieval.",
+      "pm": "1. Duomo di Siena, Libreria Piccolomini y paseo.",
+      "night": "1. Regreso a Firenze.",
+      "mobility": "Autobús interurbano o tren, por comparar.",
+      "note": "No mezclar Siena con San Gimignano; revisar horarios de la catedral.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 11,
       "date": "2027-04-13",
       "title": "Firenze: día flexible y visitas pendientes",
-      "base": "Firenze"
+      "base": "Firenze",
+      "am": "1. Día colchón: Museo dell'Opera del Duomo u otras reservas pendientes.",
+      "pm": "1. Tiempo libre para mercados, paseo y compras.",
+      "night": "1. Preparar maleta y descansar.",
+      "mobility": "A pie en Firenze.",
+      "note": "Reservar margen para lluvia, cansancio o cambios. No sumar excursiones adicionales.",
+      "spend": null,
+      "places": []
     },
     {
       "n": 12,
       "date": "2027-04-14",
       "title": "Firenze → Milano Malpensa · vuelo de regreso",
-      "base": "En vuelo"
+      "base": "En vuelo",
+      "am": "1. Check-out y viaje hacia Milano.",
+      "pm": "1. Conexión hacia Malpensa, check-in y controles.",
+      "night": "1. Vuelo MXP → CDMX propuesto.",
+      "mobility": "Tren Firenze → Milano y enlace a MXP.",
+      "note": "Dejar margen amplio entre tren y vuelo intercontinental; reconsiderar última noche en Milano si conviene.",
+      "spend": null,
+      "places": []
     }
   ],
-  "budgetPreliminary": true
+  "budgetPreliminary": true,
+  "profile": {
+    "pace": "Equilibrado / activo",
+    "paceWhy": "Días de ciudad y cambios de base con margen de descanso.",
+    "solo": "Fácil con planificación",
+    "soloWhy": "Recorridos ferroviarios y consigna de equipaje por confirmar.",
+    "weather": "Media",
+    "weatherWhy": "La lluvia puede afectar costas y panorámicas.",
+    "why": "Destinos nuevos en Piamonte, Liguria y Toscana con tres bases."
+  },
+  "experiences": [
+    {
+      "city": "Milano",
+      "description": "Duomo, Brera y la Última Cena si se obtiene reserva."
+    },
+    {
+      "city": "Torino",
+      "description": "Museo Egizio y arquitectura saboyana."
+    },
+    {
+      "city": "Portovenere",
+      "description": "Chiesa di San Pietro y miradores costeros."
+    },
+    {
+      "city": "Cinque Terre",
+      "description": "Pueblos coloridos unidos por tren."
+    },
+    {
+      "city": "Lucca",
+      "description": "Murallas y Torre Guinigi."
+    },
+    {
+      "city": "Firenze",
+      "description": "David, Duomo, Uffizi y panorámicas."
+    },
+    {
+      "city": "Siena",
+      "description": "Piazza del Campo y Duomo."
+    }
+  ],
+  "flight": "Vuelo directo CDMX ↔ Milano Malpensa como alternativa por cotizar. Fechas, equipaje y horarios sin confirmar; no hay billetes comprados.",
+  "local": "Trenes Milano ↔ Torino, Milano → La Spezia, La Spezia → Lucca → Firenze, Firenze ↔ Siena y Firenze → Malpensa; autobús para Portovenere y tren regional para Cinque Terre.",
+  "climate": "Abril: primavera con lluvias posibles; verificar estado de senderos y navegación.",
+  "solo": "Preferir alojamientos próximos a estaciones y consigna confirmada para Lucca.",
+  "lodgingSummary": "Bases propuestas sin reserva: Milano 4–7 abril (3 noches); La Spezia 7–9 abril (2); Firenze 9–14 abril (5).",
+  "heroLodgingSummary": "Bases propuestas sin reserva: Milano 4–7 abril (3 noches); La Spezia 7–9 abril (2); Firenze 9–14 abril (5).",
+  "mapPoints": [
+    {
+      "name": "Milano",
+      "coords": [
+        45.4642,
+        9.19
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Torino",
+      "coords": [
+        45.0703,
+        7.6869
+      ],
+      "kind": "Excursión / parada",
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "La Spezia",
+      "coords": [
+        44.1025,
+        9.8241
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "order": 3
+    },
+    {
+      "name": "Portovenere",
+      "coords": [
+        44.0517,
+        9.8368
+      ],
+      "kind": "Excursión / parada",
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Vernazza (Cinque Terre)",
+      "coords": [
+        44.135,
+        9.6849
+      ],
+      "kind": "Excursión / parada",
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Lucca",
+      "coords": [
+        43.8429,
+        10.5027
+      ],
+      "kind": "Excursión / parada",
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Firenze",
+      "coords": [
+        43.7696,
+        11.2558
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "order": 7
+    },
+    {
+      "name": "Siena",
+      "coords": [
+        43.3188,
+        11.3308
+      ],
+      "kind": "Excursión / parada",
+      "base": false,
+      "order": 8
+    }
+  ]
 }
