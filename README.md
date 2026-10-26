@@ -12,6 +12,8 @@ node scripts/new-trip.cjs mi-viaje "Nombre del viaje"
 
 El comando crea `data/trips/mi-viaje.json` y registra el viaje en `modules.js` con `available: false` (oculto). Rechaza IDs repetidos. **No lee, copia ni modifica viajes antiguos.**
 
+Antes de redactar, consultar [AGENTS.md](AGENTS.md) y la [guía editorial de las nueve secciones](docs/trip-editorial-guide.md); la guía define qué va en cada sección, qué debe excluirse y cómo usar `introHighlights` para las negritas del panorama.
+
 Completar progresivamente el JSON siguiendo [`_template.json`](data/trips/_template.json) y el [contrato de datos](docs/trip-data-contract.md). `null`, campos omitidos y listas vacías indican pendientes; nunca usar `0` para un precio desconocido. El modelo visual es **Emilia-Romagna** y sus nueve secciones, no sus datos.
 
 Si buscas inspiración en un viaje antiguo, proporciona su JSON a la IA como **contexto** y decide junto con ella, campo por campo, qué añadir al JSON nuevo. No existe ninguna migración automática. Tras verificar Desktop/Mobile, activar el registro con `available: true`.
