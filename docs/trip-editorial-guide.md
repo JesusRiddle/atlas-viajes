@@ -47,7 +47,7 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 
 ### 6. Traslados (`traslados`)
 **Campos:** `majorTransport`, `local` y referencias `days[].transportRefs` donde corresponda.
-**Cómo:** origen/destino, operadores, trasbordos, estimaciones realistas puerta a puerta, equipaje, flexibilidad y enlaces. Distinguir horarios publicados para la fecha exacta de frecuencias habituales.
+**Cómo:** completar `majorTransport` para vuelos, trenes interurbanos, aeropuerto y desplazamientos determinantes. Cada tarjeta necesita `id`, `type`, `title`, `options` con `journeys` y `fares`, y enlaces oficiales. Documentar origen/destino, operadores, cambios de estación, transbordos, tiempos de referencia, equipaje, flexibilidad y conexiones críticas. **No inventar horarios ni números de servicio:** mientras no exista una búsqueda fechada y verificable, mantener `departure` y `arrival` en `null`, opción `status: planning` y precio `null`; los tiempos y tarifas históricas pueden figurar en `notes` con año y aclaración. Solo usar `quoted` con fecha `quotedAt` y precio real observado. Los segmentos de vuelos con horas verificadas deben llevar desfase UTC. En conexiones de aeropuerto, proteger márgenes amplios y revisar estación/terminal. Para tarjetas turísticas, evitar doble conteo de pases y billetes sencillos. Diferenciar transporte opcional del indispensable y asegurar correspondencia con las jornadas y presupuesto.
 **No incluir:** números de tren/vuelo inventados o precios sin fecha de cotización.
 
 ### 7. Dónde dormir (`alojamientos`)
