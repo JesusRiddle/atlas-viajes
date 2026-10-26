@@ -2194,3 +2194,20 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
  .triphero-split .triphero-split-photo .triphero-zoom-in,
  .triphero-split .triphero-split-photo .triphero-zoom-out{animation:none}
 }
+
+/* Nombres largos en tarjetas del mapa: dos líneas dentro del tamaño existente. */
+.trip-map-section .trip-map-cities .map-city-list .map-city-select{
+  min-width:0;
+  overflow:hidden;
+}
+.trip-map-section .trip-map-cities .map-city-list .map-city-name{
+  max-width:100%;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  line-height:1.2;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  line-clamp:2;
+  overflow:hidden;
+}
