@@ -477,5 +477,136 @@
         "icon": "sun"
       }
     }
-  }
+  },
+  "planningDetails": {
+    "reservationTitle": "Reservas críticas",
+    "reservationNote": "Ninguna entrada está comprada. Reservar primero el Cenacolo de Milano (6 de abril; 7 como respaldo) y después coordinar las entradas con horario de Firenze. Enlaces oficiales y precios actuales orientativos: reconfirmar para abril de 2027."
+  },
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "La Última Cena · Cenacolo Vinciano (Milano)",
+          "description": "Imprescindible. Martes 6 de abril, cualquier horario; respaldo miércoles 7 por la mañana, antes de salir hacia La Spezia. Reserva nominativa obligatoria, visita de 15 min y llegada 30 min antes. Apertura trimestral anunciada para diciembre de 2026 (febrero–abril de 2027), sin día u hora exactos publicados. Buscar entrada general o visita guiada oficial en italiano/inglés; de agotarse, comprobar nuevas liberaciones. No cerrar vuelos inflexibles sin resolver esta visita.",
+          "links": [
+            {
+              "label": "Reserva oficial · Vivaticket",
+              "url": "https://cenacolovinciano.vivaticket.it/"
+            },
+            {
+              "label": "Normas y calendario oficial",
+              "url": "https://cenacolovinciano.org/en/info/"
+            }
+          ]
+        },
+        {
+          "title": "Galleria dell’Accademia · David (Firenze)",
+          "description": "Sábado 10 de abril, preferentemente a primera hora (08:15–08:30), antes de la Cúpula. Visita esencial: reservar franja horaria oficial para evitar filas y coordinar el resto del día. Tarifa general publicada de referencia €20, más posibles gastos de reserva; verificar precio 2027.",
+          "links": [
+            {
+              "label": "Accademia · entradas oficiales",
+              "url": "https://www.galleriaaccademiafirenze.it/en/tickets/"
+            },
+            {
+              "label": "Horarios y restricciones",
+              "url": "https://www.galleriaaccademiafirenze.it/en/visit/"
+            }
+          ]
+        },
+        {
+          "title": "Cúpula de Brunelleschi · Brunelleschi Pass (Firenze)",
+          "description": "Sábado 10 de abril, después de Accademia, con margen de desplazamiento; horario objetivo aproximado 11:00–11:30, no reservado. El Pass (€30 de referencia) exige elegir fecha y hora inmodificables para la subida (463 escalones). Entrada nominativa con documento y depósito obligatorio de bolsas en consigna oficial; incluye Museo dell’Opera y otros monumentos durante tres días.",
+          "links": [
+            {
+              "label": "Brunelleschi Pass oficial",
+              "url": "https://duomo.firenze.it/en/720/brunelleschi-pass"
+            },
+            {
+              "label": "Comprar y consultar normas",
+              "url": "https://tickets.duomo.firenze.it/en/support/service"
+            }
+          ]
+        },
+        {
+          "title": "Gallerie degli Uffizi (Firenze)",
+          "description": "Domingo 11 de abril, reservar acceso temprano para disfrutar la colección sin comprometer Santa Croce por la tarde. Entrada general anticipada de referencia €29; verificar tarifa, calendario y cupos para 2027. Comprar por la plataforma oficial.",
+          "links": [
+            {
+              "label": "Entradas Uffizi oficiales",
+              "url": "https://tickets.uffizi.it/"
+            },
+            {
+              "label": "Tarifas y condiciones",
+              "url": "https://www.uffizi.it/en/tickets"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Museo Egizio (Torino)",
+          "description": "Lunes 5 de abril, reservar entrada para las 09:00–09:30 y viajar temprano desde Milano: los lunes el museo abre habitualmente de 09:00 a 14:00, con último acceso una hora antes. La compra de entradas es en línea; verificar disponibilidad y festivos.",
+          "links": [
+            {
+              "label": "Horarios y compra oficial",
+              "url": "https://www.museoegizio.it/en/info/hours/"
+            }
+          ]
+        },
+        {
+          "title": "Duomo y terrazas de Milano",
+          "description": "Martes 6 de abril, encajar una franja de visita alrededor del horario confirmado del Cenacolo. Revisar modalidades y acceso a terrazas, sin comprar una entrada que se solape con La Última Cena.",
+          "links": [
+            {
+              "label": "Duomo Milano · sitio oficial",
+              "url": "https://www.duomomilano.it/"
+            }
+          ]
+        },
+        {
+          "title": "Pinacoteca di Brera (Milano)",
+          "description": "Martes 6 de abril, opción de museo si encaja después de fijar el Cenacolo y el Duomo. Consultar horario y reserva en el sitio oficial; si el día queda cargado, priorizar el paseo por Brera.",
+          "links": [
+            {
+              "label": "Pinacoteca di Brera · oficial",
+              "url": "https://pinacotecabrera.org/"
+            }
+          ]
+        },
+        {
+          "title": "Duomo y Libreria Piccolomini (Siena)",
+          "description": "Lunes 12 de abril, excursión desde Firenze. Comparar el pase para el complejo monumental y verificar qué incluye, horarios religiosos y acceso a la Libreria Piccolomini.",
+          "links": [
+            {
+              "label": "Opera del Duomo Siena · oficial",
+              "url": "https://operaduomo.siena.it/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Cinque Terre · trenes y senderos",
+          "description": "Jueves 8 de abril, comparar trenes regionales individuales frente a la Cinque Terre Treno Card según número de desplazamientos y tarifa vigente. Comprobar cierres de senderos, alertas y estado del mar poco antes de salir; no comprar experiencias dependientes del clima con demasiada anticipación.",
+          "links": [
+            {
+              "label": "Parque Nacional Cinque Terre",
+              "url": "https://www.parconazionale5terre.it/"
+            }
+          ]
+        },
+        {
+          "title": "Santa Croce, Bargello y Torre Guinigi",
+          "description": "Visitas sujetas a horarios, disponibilidad y ritmo: Santa Croce el domingo 11 por la tarde, Bargello el martes 13 y Torre Guinigi durante la escala en Lucca el viernes 9. Confirmar aperturas y entradas cerca de la fecha; ninguna debe desplazar las reservas imprescindibles."
+        }
+      ]
+    ]
+  ]
 }
