@@ -34,7 +34,7 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 **Cómo:** los doce meses con estado y justificación concreta de clima, masificación, festividades y disponibilidad. Anotar incertidumbre y no inferir seguridad futura a partir de noticias de hoy.
 **No incluir:** predicciones meteorológicas de fechas lejanas como hechos.
 
-### 4. Experiencias (`experiencias`)
+**Criterio de temporada:** documentar los doce meses (`01`–`12`) con `status` (`recommended`, `conditional`, `avoid` o `pending` cuando falte investigación), `description` de una o dos frases e `icon` compatible con el renderizador si corresponde. Comparar el recorrido completo, no solo una ciudad: temperaturas y horas de luz, lluvia/viento, ocupación y precios, eventos y festivos, operativa de barcos o senderos y apertura de atracciones. El `summary` sintetiza los mejores meses y los que implican concesiones, justificando por qué. Evitar marcar todos los meses como ideales, o tomar el icono como evidencia de un pronóstico. Eventos fechados —como ferias— deben verificarse en fuente oficial y explicarse como condiciones de la ventana específica, no como una característica permanente del mes. En temporada baja, servicios reducidos no significa cierre total. Evitar porcentajes, precios o temperaturas demasiado precisos sin documentación.\n\n### 4. Experiencias (`experiencias`)
 **Campos:** `experiences`.
 **Cómo:** cada experiencia debe explicar por qué merece la pena; conectar ciudad y atractivo singular. Seleccionar lo más distintivo y evitar repetición literal de `intro`.
 **No incluir:** frases vacías («un lugar maravilloso») ni listas indiscriminadas de atracciones.
