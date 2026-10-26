@@ -406,66 +406,66 @@
     }
   ],
   "seasonality": {
-    "summary": "Para este recorrido de museos y ciudades combinado con Portovenere y Cinque Terre, abril, mayo y septiembre ofrecen el mejor equilibrio entre temperatura y actividades al aire libre. Marzo, junio y octubre son buenas alternativas condicionadas por festivos, calor, lluvia o afluencia. En pleno verano hay más congestión y calor; en invierno los pueblos están tranquilos, pero los días cortos y servicios costeros reducidos hacen menos completo el viaje. Abril de 2027 encaja bien: Semana Santa termina el 29 de marzo, mientras el Salone del Mobile de Milano comienza el 13 de abril, cuando el plan ya no contempla dormir allí. La meteorología y las aperturas de senderos deben verificarse cerca de la salida.",
+    "summary": "Rangos mensuales orientativos de temperaturas máximas diurnas para el conjunto de Milano, Torino, Liguria y Toscana; son referencias climatológicas generales, no pronósticos ni valores uniformes entre ciudades. Para este recorrido de museos y ciudades combinado con Portovenere y Cinque Terre, abril, mayo y septiembre ofrecen el mejor equilibrio entre temperatura y actividades al aire libre. Marzo, junio y octubre son buenas alternativas condicionadas por festivos, calor, lluvia o afluencia. En pleno verano hay más congestión y calor; en invierno los pueblos están tranquilos, pero los días cortos y servicios costeros reducidos hacen menos completo el viaje. Abril de 2027 encaja bien: Semana Santa termina el 29 de marzo, mientras el Salone del Mobile de Milano comienza el 13 de abril, cuando el plan ya no contempla dormir allí. La meteorología y las aperturas de senderos deben verificarse cerca de la salida.",
     "months": {
       "10": {
         "status": "conditional",
-        "description": "Otoño agradable al principio y menor afluencia; aumenta el riesgo de lluvias fuertes y cierres de senderos/barcos.",
+        "description": "17–22 °C. Otoño agradable al principio y menor afluencia; aumenta el riesgo de lluvias fuertes y cierres de senderos/barcos.",
         "icon": "partlyCloudy"
       },
       "11": {
         "status": "avoid",
-        "description": "Lluvia, días cortos y servicios costeros reducidos; las ciudades siguen siendo visitables, pero la costa pierde atractivo.",
+        "description": "11–16 °C. Lluvia, días cortos y servicios costeros reducidos; las ciudades siguen siendo visitables, pero la costa pierde atractivo.",
         "icon": "cloudy"
       },
       "12": {
         "status": "avoid",
-        "description": "Frío, poca luz y operativa costera limitada; ambiente festivo en ciudades pero itinerario panorámico menos favorable.",
+        "description": "7–12 °C. Frío, poca luz y operativa costera limitada; ambiente festivo en ciudades pero itinerario panorámico menos favorable.",
         "icon": "snow"
       },
       "01": {
         "status": "avoid",
-        "description": "Frío, días cortos y mayor probabilidad de mal tiempo en Liguria; algunos servicios costeros reducen frecuencia.",
+        "description": "6–11 °C. Frío, días cortos y mayor probabilidad de mal tiempo en Liguria; algunos servicios costeros reducen frecuencia.",
         "icon": "snow"
       },
       "02": {
         "status": "avoid",
-        "description": "Ciudades menos concurridas, pero frío y poca luz; senderos y barcos pueden sufrir limitaciones.",
+        "description": "9–13 °C. Ciudades menos concurridas, pero frío y poca luz; senderos y barcos pueden sufrir limitaciones.",
         "icon": "cloudy"
       },
       "03": {
         "status": "conditional",
-        "description": "Inicio de primavera, temperaturas variables y lluvias posibles. Atención a Semana Santa y al estado de senderos.",
+        "description": "13–17 °C. Inicio de primavera, temperaturas variables y lluvias posibles. Atención a Semana Santa y al estado de senderos.",
         "icon": "partlyCloudy"
       },
       "04": {
         "status": "recommended",
-        "description": "Primavera fresca, paisajes verdes y buenas caminatas. Posibles lluvias; Semana Santa y Salone del Mobile elevan demanda en fechas concretas.",
+        "description": "16–20 °C. Primavera fresca, paisajes verdes y buenas caminatas. Posibles lluvias; Semana Santa y Salone del Mobile elevan demanda en fechas concretas.",
         "icon": "partlyCloudy"
       },
       "05": {
         "status": "recommended",
-        "description": "Temperaturas suaves y días largos, ideales para costa y ciudades; crecen las visitas y las tarifas en lugares populares.",
+        "description": "20–24 °C. Temperaturas suaves y días largos, ideales para costa y ciudades; crecen las visitas y las tarifas en lugares populares.",
         "icon": "sun"
       },
       "06": {
         "status": "conditional",
-        "description": "Muchísima luz y servicios costeros activos, pero empiezan el calor urbano y la mayor afluencia turística.",
+        "description": "25–29 °C. Muchísima luz y servicios costeros activos, pero empiezan el calor urbano y la mayor afluencia turística.",
         "icon": "hot"
       },
       "07": {
         "status": "avoid",
-        "description": "Calor y multitudes en Cinque Terre y Firenze; senderismo más incómodo al mediodía y hospedaje demandado.",
+        "description": "28–33 °C. Calor y multitudes en Cinque Terre y Firenze; senderismo más incómodo al mediodía y hospedaje demandado.",
         "icon": "hot"
       },
       "08": {
         "status": "avoid",
-        "description": "Calor intenso, costa muy concurrida y vacaciones de Ferragosto con posibles cierres de comercios urbanos.",
+        "description": "28–33 °C. Calor intenso, costa muy concurrida y vacaciones de Ferragosto con posibles cierres de comercios urbanos.",
         "icon": "hot"
       },
       "09": {
         "status": "recommended",
-        "description": "Temperaturas más cómodas tras el verano, mar aún templado y buenas excursiones; septiembre conserva demanda alta.",
+        "description": "23–27 °C. Temperaturas más cómodas tras el verano, mar aún templado y buenas excursiones; septiembre conserva demanda alta.",
         "icon": "sun"
       }
     }
