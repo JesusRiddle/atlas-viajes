@@ -96,6 +96,11 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 **Regla de dependencias:** este orden es editorial, no una licencia para retrasar decisiones logísticas importantes. Antes de prometer una experiencia, comprobar que caben su transporte, horario, cierre y posible reserva. Si una cotización obliga a cambiar la ruta, actualizar primero el esqueleto, luego panorama/mapa/reservas/días/presupuesto. Evitar datos contradictorios entre secciones.
 
 ## Control de calidad antes de avanzar de sección
+- Vincular cada traslado indispensable con el día correspondiente mediante `days[].transportRefs` y validar que el ID exista en `majorTransport`. Para vuelos redondos, el mismo ID puede estar en salida y regreso sin duplicar el costo.
+- En rutas turísticas con varias paradas (p. ej. Cinque Terre), no representar un falso regreso desde la primera parada si se espera terminar en otra. Explicitar origen de regreso provisional y tramos intermedios pendientes.
+- Ajustar presupuestos diarios según vuelo nocturno, llegada vespertina y comidas a bordo; no presupuestar automáticamente alimentación completa el día de llegada o salida sin examinar el horario.
+- Al cambiar importes en el JSON, actualizar inmediatamente las pruebas que fijan sumas y comprobar que los datos de presupuesto no duplican cargos.
+
 - Verificar fechas consecutivas, vuelos nocturnos y momento real de llegada; no programar actividades anteriores al aterrizaje.
 - Comprobar que noches por base = noches del calendario, excluyendo noches de vuelo; cualquier precio hotelero debe coincidir con noches y tipo de habitación del viajero.
 - Revisar nombres, días, estados y cotizaciones en todos los campos duplicados (`flight`, `days`, `majorTransport`, `ticketNotes`): una tarifa ya cotizada no debe figurar como «por cotizar» ni como comprada.
