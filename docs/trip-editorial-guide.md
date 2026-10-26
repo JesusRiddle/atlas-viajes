@@ -53,6 +53,7 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 ### 7. Dónde dormir (`alojamientos`)
 **Campos:** `hotels`, `bases`, `lodgingSummary`, `heroLodgingSummary`.
 **Cómo:** cuadrar fechas y noches; priorizar zonas según estaciones y recorridos; para hoteles concretos, verificar habitación privada, baño, impuestos, cancelación, políticas y tarifa. No usar hotel como «reservado» si solo es candidato.
+**Comparación de candidatos:** investigar preferentemente tres opciones por base (ubicación respecto a estación, habitación y baño privados, recepción, ruido, equipaje, reseñas y precio). Guardar en `hotels` mediante objetos con `id`, `city`, `name`, `address`, `checkIn`, `checkOut`, `status`, `rate`, `rateConditions`, `notes` y `links`, según el contrato del renderizador. Si falta tarifa para fechas y ocupación exactas, escribir «Por cotizar», nunca usar una tarifa de otro día o de dos huéspedes como comprobante. Etiquetar cada hotel como «Candidato · no reservado» y no inferir cancelación gratuita por la política general del sitio: depende de habitación y tarifa. Incluir impuestos de ciudad al verificar el total. Diferenciar recomendación de reserva o cotización.
 **No incluir:** habitaciones gratuitas o promociones supuestas.
 
 ### 8. Día por día (`dias`)
