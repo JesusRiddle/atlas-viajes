@@ -361,5 +361,11 @@
       "priority": "No comprar entradas incompatibles; organizar otros horarios alrededor del Cenacolo.",
       "fallback": "Primera preferencia martes 6 en cualquier horario; respaldo miércoles 7 temprano y retrasar traslado a La Spezia, sacrificando Portovenere si hace falta. Si no hay cupo confirmado, reconsiderar fechas antes de adquirir vuelos no reembolsables."
     }
+  ],
+  "introHighlights": [
+    "Piamonte",
+    "Liguria",
+    "Toscana",
+    "Milano"
   ]
 }
