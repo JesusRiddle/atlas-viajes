@@ -36,15 +36,22 @@
     {
       "n": 1,
       "date": "2027-04-03",
-      "title": "Vuelo CDMX → Milano",
+      "title": "CDMX → Milano · vuelo directo nocturno",
       "base": "En vuelo",
-      "am": "1. Preparar equipaje y documentos.",
-      "pm": "1. Traslado al aeropuerto.",
-      "night": "1. Vuelo directo Aeroméxico MEX → MXP, salida cotizada 22:30.",
-      "mobility": "Aeroméxico directo MEX → MXP; horario sujeto a nueva comprobación.",
-      "note": "Vuelo cotizado, no comprado. Llegada a Milano el domingo 4 de abril a las 18:20 (hora local).",
+      "am": "1. Verificar pasaporte, documentación de viaje y equipaje permitido en la tarifa Básica de Aeroméxico.\n2. Consultar el estado del vuelo y realizar check-in en línea cuando se habilite.",
+      "pm": "1. Salir con margen hacia el Aeropuerto Internacional de la Ciudad de México (MEX).\n2. Objetivo orientativo: estar en la terminal hacia las 19:30, unas 3 horas antes de la salida cotizada. Confirmar terminal y cierre de mostradores en la reserva.",
+      "night": "1. Pasar controles de seguridad y localizar la puerta de embarque.\n2. Vuelo directo Aeroméxico MEX → Milano Malpensa (MXP), salida cotizada el sábado 3 de abril a las 22:30.\n3. Pasar la noche a bordo; llegada prevista el domingo 4 de abril a las 18:20, hora de Italia.",
+      "mobility": "Vuelo directo MEX → MXP; sin escalas. Salida cotizada 22:30 (CDMX) y llegada 18:20 del 4 de abril (Milano). La hora y terminal definitivas deben confirmarse antes del viaje.",
+      "note": "Cotización de referencia del 26/10/2026: vuelo redondo Aeroméxico Básica por $16,683 MXN, sin compra. Confirmar franquicia de equipaje de mano, terminal, horario definitivo y condiciones de cambio. El vuelo internacional se cuenta una sola vez en el presupuesto general.",
       "spend": null,
-      "places": []
+      "places": [],
+      "headerPlaces": [
+        "Aeropuerto Internacional de la Ciudad de México (MEX)",
+        "Milano Malpensa (MXP) · llegada el 4 de abril"
+      ],
+      "transportRefs": [
+        "flight-international"
+      ]
     },
     {
       "n": 2,
@@ -179,15 +186,26 @@
     {
       "n": 12,
       "date": "2027-04-14",
-      "title": "Firenze → Milano Malpensa · vuelo de regreso",
-      "base": "En vuelo",
-      "am": "1. Check-out y viaje hacia Milano.",
-      "pm": "1. Conexión hacia Malpensa, check-in y controles.",
-      "night": "1. Vuelo de regreso MXP → MEX, salida cotizada 23:05.",
-      "mobility": "Tren Firenze → Milano y enlace a MXP.",
-      "note": "Vuelo Aeroméxico MXP → MEX (14/04, 23:05) cotizado y NO comprado. Reservar tren de salida de Firenze con margen; meta de llegada al aeropuerto 18:30–19:00, sujeto a conexiones disponibles. No dejar el traslado para la tarde avanzada.",
+      "title": "Firenze → Milano Malpensa → CDMX · vuelo directo",
+      "base": "En vuelo / regreso",
+      "am": "1. Desayunar, revisar pertenencias y realizar check-out en Firenze.\n2. Trasladarse a Firenze Santa Maria Novella y tomar un tren de alta velocidad hacia Milano Centrale. Seleccionar una salida con margen amplio; el horario de abril de 2027 aún no está cotizado.",
+      "pm": "1. En Milano Centrale, enlazar con Malpensa Express hacia el aeropuerto; revisar estación de salida y terminal asignada.\n2. Objetivo: llegar a Milano Malpensa entre las 18:30 y las 19:00, unas 4 horas antes del vuelo de las 23:05.\n3. Realizar check-in, seguridad y control de pasaportes de salida del espacio Schengen.",
+      "night": "1. Embarcar en el vuelo directo Aeroméxico MXP → MEX, salida cotizada el miércoles 14 de abril a las 23:05, hora de Italia.\n2. Llegada prevista a Ciudad de México el jueves 15 de abril a las 04:00, hora local. Trámites migratorios y regreso a casa.",
+      "mobility": "Firenze SMN → Milano Centrale: tren de alta velocidad, sin horario reservado. Milano Centrale → Malpensa: Malpensa Express, con frecuencia y terminal por confirmar. Vuelo directo MXP → MEX a las 23:05 (cotizado, no comprado).",
+      "note": "Reservar ambos trayectos ferroviarios con margen para incidencias: no son una conexión protegida con el vuelo. Los trenes siguen sin cotizar; consultar los horarios antes de decidir la salida de Firenze. El vuelo llega a México el 15 de abril, aunque el último día de actividades en Italia es el 14.",
       "spend": null,
-      "places": []
+      "places": [],
+      "headerPlaces": [
+        "Firenze Santa Maria Novella",
+        "Milano Centrale",
+        "Milano Malpensa (MXP)",
+        "Ciudad de México (MEX) · llegada el 15 de abril"
+      ],
+      "transportRefs": [
+        "train-firenze-milano",
+        "airport-return",
+        "flight-international"
+      ]
     }
   ],
   "budgetPreliminary": true,
