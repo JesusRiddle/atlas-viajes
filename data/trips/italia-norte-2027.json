@@ -62,26 +62,26 @@
     {
       "n": 3,
       "date": "2027-04-05",
-      "title": "Milano: centro histórico y principales visitas",
+      "title": "Torino: Museo Egizio y centro saboyano",
       "base": "Milano",
-      "am": "1. Duomo y terrazas; Galleria Vittorio Emanuele II.",
-      "pm": "1. Piazza della Scala, Castello Sforzesco y barrio Brera.",
-      "night": "1. Paseo por Navigli.",
-      "mobility": "Metro y recorridos a pie.",
-      "note": "Lunes: Brera y Última Cena pueden estar cerrados; reasignar esas entradas a una fecha disponible o reconsiderar la distribución.",
+      "am": "1. Tren temprano desde Milano; Museo Egizio con reserva hacia las 09:30. El lunes habitualmente cierra a las 14:00.",
+      "pm": "1. Piazza Castello, Palazzo Madama y paseo por Piazza San Carlo. Mole Antonelliana desde exterior si alcanza.",
+      "night": "1. Regreso en tren a Milano; cena y descanso.",
+      "mobility": "Tren Milano Centrale ↔ Torino Porta Nuova / Porta Susa. Comparar servicios disponibles; no hay billetes emitidos.",
+      "note": "El Museo Egizio requiere reserva online. No programar el Museo del Cinema como visita obligatoria en esta jornada.",
       "spend": null,
       "places": []
     },
     {
       "n": 4,
       "date": "2027-04-06",
-      "title": "Torino: excursión en tren",
+      "title": "Milano: Última Cena, Duomo y Brera",
       "base": "Milano",
-      "am": "1. Tren a Torino y Museo Egizio.",
-      "pm": "1. Piazza Castello, Palazzo Reale o Mole Antonelliana / Museo del Cinema.",
-      "night": "1. Regreso y noche en Milano.",
-      "mobility": "Tren Milano ↔ Torino.",
-      "note": "Priorizar Egizio y solo una segunda visita interior; revisar horarios.",
+      "am": "1. Prioridad de reserva: Cenacolo Vinciano (La Última Cena) en el horario que se consiga; traslado en metro.",
+      "pm": "1. Duomo y terrazas, Galleria Vittorio Emanuele II y Pinacoteca di Brera con horarios escalonados.",
+      "night": "1. Paseo breve por barrio Brera o Navigli; cena.",
+      "mobility": "Metro y caminatas por Milano. Reservas anticipadas para Cenacolo, terrazas del Duomo y Brera.",
+      "note": "Jornada cultural exigente: si la Última Cena solo está disponible a una hora conflictiva, reordenar y dejar Castello Sforzesco como exterior/opcional.",
       "spend": null,
       "places": []
     },
@@ -120,33 +120,33 @@
       "pm": "1. Murallas de Lucca, Piazza dell'Anfiteatro y Torre Guinigi; tren a Firenze.",
       "night": "1. Check-in y paseo nocturno por Firenze.",
       "mobility": "Trenes regionales, con conexiones por verificar.",
-      "note": "Sin consigna segura en Lucca, seguir directo a Firenze y evitar viajar con maletas durante la visita.",
+      "note": "Consigna comprobada como servicio existente frente a Lucca FS según oficina de turismo (Piazzale Ricasoli 503); verificar horario y disponibilidad del viernes 9 abril 2027. Si no funciona, seguir directamente a Firenze.",
       "spend": null,
       "places": []
     },
     {
       "n": 8,
       "date": "2027-04-10",
-      "title": "Firenze I: David, Duomo y Uffizi",
+      "title": "Firenze I: David, Cúpula y Museo dell'Opera",
       "base": "Firenze",
-      "am": "1. Galleria dell'Accademia: David; Duomo y Cúpula.",
-      "pm": "1. Galleria degli Uffizi, con pausa para almorzar.",
-      "night": "1. Ponte Vecchio y Arno.",
+      "am": "1. Galleria dell'Accademia (David) con entrada reservada temprano; continuación al Duomo.",
+      "pm": "1. Ascenso reservado a la Cúpula de Brunelleschi y visita al Museo dell'Opera del Duomo, dejando pausas amplias.",
+      "night": "1. Paseo por Piazza della Signoria o Ponte Vecchio.",
       "mobility": "Centro histórico a pie.",
-      "note": "Reservar Accademia, Cúpula y Uffizi en horarios compatibles; no acumular visitas sin margen.",
+      "note": "La Cúpula requiere franja horaria nominativa y no modificable. En sábado cierra antes que entre semana: reservar con margen. Uffizi pasa al domingo.",
       "spend": null,
       "places": []
     },
     {
       "n": 9,
       "date": "2027-04-11",
-      "title": "Firenze II: arte y miradores",
+      "title": "Firenze II: Uffizi, Santa Croce y paseo histórico",
       "base": "Firenze",
-      "am": "1. Basilica di Santa Croce y Museo del Bargello, si abre.",
-      "pm": "1. Oltrarno, San Miniato al Monte y Piazzale Michelangelo.",
-      "night": "1. Atardecer y cena en Firenze.",
+      "am": "1. Galleria degli Uffizi temprano, preferiblemente con reserva.",
+      "pm": "1. Basilica di Santa Croce desde las 14:00 (horario habitual dominical).",
+      "night": "1. Cena tranquila por el centro.",
       "mobility": "A pie y autobús si hace falta.",
-      "note": "Domingo: confirmar horarios religiosos y de museos; intercambiar actividades según aperturas.",
+      "note": "No programar Santa Croce el domingo por la mañana; comprobar calendario litúrgico y horarios 2027.",
       "spend": null,
       "places": []
     },
@@ -166,13 +166,13 @@
     {
       "n": 11,
       "date": "2027-04-13",
-      "title": "Firenze: día flexible y visitas pendientes",
+      "title": "Firenze III: Bargello, Oltrarno y miradores",
       "base": "Firenze",
-      "am": "1. Día colchón: Museo dell'Opera del Duomo u otras reservas pendientes.",
-      "pm": "1. Tiempo libre para mercados, paseo y compras.",
-      "night": "1. Preparar maleta y descansar.",
+      "am": "1. Museo Nazionale del Bargello temprano, sujeto a horario 2027.",
+      "pm": "1. Oltrarno, Basilica di San Miniato al Monte y Piazzale Michelangelo al atardecer.",
+      "night": "1. Cena y preparación ligera del traslado ferroviario del miércoles.",
       "mobility": "A pie en Firenze.",
-      "note": "Reservar margen para lluvia, cansancio o cambios. No sumar excursiones adicionales.",
+      "note": "Mantener la tarde con flexibilidad; Museo dell'Opera puede desplazarse aquí si fue necesario. El primer martes del mes ya habrá pasado.",
       "spend": null,
       "places": []
     },
@@ -185,7 +185,7 @@
       "pm": "1. Conexión hacia Malpensa, check-in y controles.",
       "night": "1. Vuelo MXP → CDMX propuesto.",
       "mobility": "Tren Firenze → Milano y enlace a MXP.",
-      "note": "Dejar margen amplio entre tren y vuelo intercontinental; reconsiderar última noche en Milano si conviene.",
+      "note": "Vuelo Aeroméxico MXP → MEX (14/04, 23:05) cotizado y NO comprado. Reservar tren de salida de Firenze con margen; meta de llegada al aeropuerto 18:30–19:00, sujeto a conexiones disponibles. No dejar el traslado para la tarde avanzada.",
       "spend": null,
       "places": []
     }
@@ -231,11 +231,11 @@
     }
   ],
   "flight": "Vuelo directo CDMX ↔ Milano Malpensa como alternativa por cotizar. Fechas, equipaje y horarios sin confirmar; no hay billetes comprados.",
-  "local": "Trenes Milano ↔ Torino, Milano → La Spezia, La Spezia → Lucca → Firenze, Firenze ↔ Siena y Firenze → Malpensa; autobús para Portovenere y tren regional para Cinque Terre.",
+  "local": "Priorizar Milano Centrale (excursión Torino y salida hacia La Spezia), La Spezia Centrale (trenes a Cinque Terre) y Firenze SMN / centro (Siena y regreso). Portovenere: autobús 11/P de ATC desde La Spezia. Lucca: parada solo con consigna validada frente a estación. Regreso: Firenze SMN → Milano Centrale → Malpensa Express; verificar calendarios de abril de 2027 antes de comprar.",
   "climate": "Abril: primavera con lluvias posibles; verificar estado de senderos y navegación.",
   "solo": "Preferir alojamientos próximos a estaciones y consigna confirmada para Lucca.",
-  "lodgingSummary": "Bases propuestas sin reserva: Milano 4–7 abril (3 noches); La Spezia 7–9 abril (2); Firenze 9–14 abril (5).",
-  "heroLodgingSummary": "Bases propuestas sin reserva: Milano 4–7 abril (3 noches); La Spezia 7–9 abril (2); Firenze 9–14 abril (5).",
+  "lodgingSummary": "Zonas a cotizar sin reserva: Milano Centrale, preferiblemente lado Via Vitruvio / Via Napo Torriani (4–7 abril, 3 noches); La Spezia Centrale, acceso peatonal a la estación (7–9 abril, 2); Firenze entre Santa Maria Novella y Duomo, ideal 10–15 minutos a pie de Firenze SMN (9–14 abril, 5).",
+  "heroLodgingSummary": "Zonas a cotizar sin reserva: Milano Centrale, preferiblemente lado Via Vitruvio / Via Napo Torriani (4–7 abril, 3 noches); La Spezia Centrale, acceso peatonal a la estación (7–9 abril, 2); Firenze entre Santa Maria Novella y Duomo, ideal 10–15 minutos a pie de Firenze SMN (9–14 abril, 5).",
   "mapPoints": [
     {
       "name": "Milano",
@@ -333,6 +333,19 @@
       "baggage": "Una maleta de mano incluida; equipaje documentado con cargo. Verificar límites de peso y artículo personal antes de compra.",
       "conditions": "Sin cambios voluntarios ni reembolsos según pantalla de cotización.",
       "note": "Tarifa redonda de Google Flights, no comprada ni garantizada; llegada a México el 15 abril. Comparar multidestino MEX→MXP / FCO→MEX antes de decidir."
+    },
+    {
+      "title": "Auditoría logística y reservas · octubre 2026",
+      "status": "planning",
+      "note": "Intercambiadas jornadas de Torino (lunes 5) y Milano (martes 6) para respetar cierres habituales. Firenze: Accademia + Cúpula sábado 10; Uffizi + Santa Croce domingo 11; Siena lunes 12; Bargello martes 13. Duraciones, precios y trenes concretos aún por cotizar.",
+      "sources": [
+        "https://www.museoegizio.it/en/info/hours/",
+        "https://www.santacroceopera.it/en/organise-your-visit/",
+        "https://duomo.firenze.it/en/visit/plan-your-visit",
+        "https://www.turismo.lucca.it/en/information/FAQ%3A-How-and-why-in-Lucca/",
+        "https://www.trenord.it/en/linee-e-orari/il-nostro-servizio/malpensa-express/",
+        "https://www.cinqueterre.it/en/how-to-get-there-and-get-around/"
+      ]
     }
   ]
 }
