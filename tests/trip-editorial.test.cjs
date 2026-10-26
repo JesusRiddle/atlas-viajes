@@ -29,15 +29,18 @@ test('el viaje Italia 2027 mantiene introducción turística con resaltados exis
 });
 
 test('los 12 meses evaluados contienen rango de temperatura visible', () => {
-  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
+  const drafts = fs.readdirSync('data/trips').filter(name => name.endsWith('.json') && !name.startsWith('_')).map(name => ({name, trip: JSON.parse(fs.readFileSync(path.join('data/trips', name), 'utf8'))})).filter(({trip}) => trip.status === 'draft' && trip.seasonality?.months);
+  assert.ok(drafts.length, 'Sin viajes borrador para validar');
   const pattern = /[-−]?\d{1,2}(?:[.,]\d+)?\s*[–—-]\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*°\s*C/i;
-  const months = trip.seasonality.months;
-  assert.equal(Object.keys(months).length, 12);
-  for (let month = 1; month <= 12; month++) {
-    const key = String(month).padStart(2, '0');
-    assert.ok(months[key], 'Falta mes ' + key);
-    if (months[key].status !== 'pending') {
-      assert.match(months[key].description, pattern, 'Mes sin temperatura visible: ' + key);
+  for (const {name, trip} of drafts) {
+    const months = trip.seasonality.months;
+    assert.equal(Object.keys(months).length, 12, name + ': número de meses');
+    for (let month = 1; month <= 12; month++) {
+      const key = String(month).padStart(2, '0');
+      assert.ok(months[key], name + ': falta mes ' + key);
+      if (months[key].status !== 'pending') {
+        assert.match(months[key].description, pattern, name + ': mes sin temperatura visible ' + key);
+      }
     }
   }
 });
