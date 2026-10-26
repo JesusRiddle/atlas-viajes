@@ -225,8 +225,7 @@ window.AtlasMajorTransport = (() => {
             '<div class="mt-list">' + trip.majorTransport.map(item => card(trip, item, current)).join('') + '</div>' +
             '<p class="mt-footnote">Cotizaciones de referencia, no reservas confirmadas. Las elecciones son temporales y no modifican el itinerario guardado.</p>' +
             (trip.ticketNotes?.length ? '<details class="mt-tickets"><summary>Billetes y flexibilidad</summary>' +
-                '<ul>' + trip.ticketNotes.map(([name, note]) => '<li><strong>' + esc(name) +
-                ':</strong> ' + esc(note) + '</li>').join('') + '</ul></details>' : '') +
+                '<ul>' + trip.ticketNotes.map(item => { const name = Array.isArray(item) ? item[0] : item?.title; const note = Array.isArray(item) ? item[1] : (item?.note || item?.rules || item?.conditions || item?.fallback || 'Consultar detalles de reserva'); return '<li><strong>' + esc(name || 'Nota') + ':</strong> ' + esc(note) + '</li>'; }).join('') + '</ul></details>' : '') +
             '</section>';
     }
     function mount(root, trip) {
