@@ -234,8 +234,8 @@
   "local": "Bases ferroviarias: Milano Centrale (Torino y salida a Liguria), La Spezia Centrale (Cinque Terre) y Firenze SMN (Siena y regreso). Portovenere por ATC si el horario permite; Lucca solo con consigna comprobada. Los trenes de abril de 2027 aún no están cotizados: los tiempos son referencias de servicios habituales y las tarifas consultadas corresponden a 2026.",
   "climate": "En abril tendrás un clima *primaveral y variable*: *Milano y Torino, 15–18 °C de día y 5–9 °C de noche*; *Liguria, 16–19 °C y 9–12 °C*; *Toscana, 17–20 °C y 6–10 °C*. Son rangos habituales, no un pronóstico. Puede llover y hacer viento en la costa.\n\n*Qué llevar:* Chamarra impermeable y cortaviento, suéter ligero, ropa por capas, pantalones largos, tenis con buena suela y paraguas compacto. Todo compatible con tu equipaje de cabina.\n\n*Horas de luz:* Del 4 al 14 de abril, amanecerá aproximadamente entre *6:35 y 7:00* y anochecerá entre *19:40 y 20:00* (hora local). Aprovecha la luz para Cinque Terre, Portovenere y miradores; verifica el estado de senderos y barcos si llueve.",
   "solo": "Preferir alojamientos próximos a estaciones y consigna confirmada para Lucca.",
-  "lodgingSummary": "Zonas a cotizar sin reserva: Milano Centrale, preferiblemente lado Via Vitruvio / Via Napo Torriani (4–7 abril, 3 noches); La Spezia Centrale, acceso peatonal a la estación (7–9 abril, 2); Firenze entre Santa Maria Novella y Duomo, ideal 10–15 minutos a pie de Firenze SMN (9–14 abril, 5). Presupuesto por habitación individual con baño privado: $1,800–$2,500 MXN por noche; preferir cancelación gratuita y precio con impuestos.",
-  "heroLodgingSummary": "10 noches en tres bases: Milano (3), La Spezia (2) y Firenze (5). Hoteles pendientes de selección.",
+  "lodgingSummary": "Tres bases y diez noches: Milano 4–7 abril (3), La Spezia 7–9 (2) y Firenze 9–14 (5). Nueve alojamientos candidatos, ninguno reservado ni cotizado para abril de 2027. Presupuesto: $1,800–$2,500 MXN por noche para 1 adulto, habitación y baño privados; preferir impuestos incluidos y cancelación gratuita.",
+  "heroLodgingSummary": "10 noches · Milano (3), La Spezia (2) y Firenze (5). Alojamiento en evaluación; sin reservas confirmadas.",
   "mapPoints": [
     {
       "name": "Milano",
@@ -1194,6 +1194,170 @@
         {
           "label": "Horarios y billetes oficiales",
           "url": "https://www.trenord.it/en/linee-e-orari/il-nostro-servizio/malpensa-express/"
+        }
+      ]
+    }
+  ],
+  "hotels": [
+    {
+      "id": "milano-aosta",
+      "city": "Milano",
+      "name": "B&B HOTEL Milano Aosta",
+      "address": "Piazza Duca d’Aosta 16, Milano",
+      "checkIn": "2027-04-04",
+      "checkOut": "2027-04-07",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Opción preferente por estar frente a Milano Centrale. Tiene habitaciones individuales con baño privado; comprobar tarifa final y disponibilidad para 3 noches.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.hotel-bb.com/en/hotel/milano-aosta"
+        }
+      ]
+    },
+    {
+      "id": "milano-central",
+      "city": "Milano",
+      "name": "B&B HOTEL Milano Central Station",
+      "address": "Via Napo Torriani 9, Milano",
+      "checkIn": "2027-04-04",
+      "checkOut": "2027-04-07",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Alternativa práctica cerca de Centrale; dispone de habitación individual con baño privado. Verificar aislamiento acústico y política flexible.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.hotel-bb.com/en/hotel/milano-central-station"
+        }
+      ]
+    },
+    {
+      "id": "milano-berna",
+      "city": "Milano",
+      "name": "Hotel Berna",
+      "address": "Via Napo Torriani 18, Milano",
+      "checkIn": "2027-04-04",
+      "checkOut": "2027-04-07",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Alternativa con buen servicio y ubicación ferroviaria; verificar si la habitación individual cabe en presupuesto y si está en edificio principal o anexo.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.hotelberna.com/"
+        }
+      ]
+    },
+    {
+      "id": "spezia-dane",
+      "city": "La Spezia",
+      "name": "Affittacamere Casa Danè",
+      "address": "Via Pietro Paleocapa 4 / Piazzale Medaglie d’Oro 3, La Spezia",
+      "checkIn": "2027-04-07",
+      "checkOut": "2027-04-09",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Primera candidata: alojamientos a pocos pasos de La Spezia Centrale y baño privado. Confirmar edificio asignado, escaleras, horarios de recepción y cancelación.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.casadane.it/en/"
+        }
+      ]
+    },
+    {
+      "id": "spezia-venezia",
+      "city": "La Spezia",
+      "name": "Hotel Venezia",
+      "address": "Via Pietro Paleocapa 8, La Spezia",
+      "checkIn": "2027-04-07",
+      "checkOut": "2027-04-09",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Hotel a unos 50 m de la estación, con habitación individual y consigna. Confirmar horario de check-in, tarifa y ruido de la vía.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.hotelvenezialaspezia.it/en/3-star-hotel-la-spezia"
+        }
+      ]
+    },
+    {
+      "id": "spezia-mary",
+      "city": "La Spezia",
+      "name": "Hotel Mary",
+      "address": "Via Fiume 177, La Spezia",
+      "checkIn": "2027-04-07",
+      "checkOut": "2027-04-09",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Alternativa funcional frente a la estación con baño privado y recepción 24 h. Habitaciones compactas: revisar fotos y precio total.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.hotelmary.it/"
+        }
+      ]
+    },
+    {
+      "id": "firenze-miacara",
+      "city": "Firenze",
+      "name": "Hotel Mia Cara & SPA",
+      "address": "Via Faenza 90r, Firenze",
+      "checkIn": "2027-04-09",
+      "checkOut": "2027-04-14",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Primera candidata: a unos cuatro minutos de Firenze SMN, habitaciones con baño privado. Comparar tarifa de cinco noches y cancelación.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.hotelmiacaraspa.it/en"
+        }
+      ]
+    },
+    {
+      "id": "firenze-alba",
+      "city": "Firenze",
+      "name": "Hotel Alba Palace",
+      "address": "Via della Scala 22, Firenze",
+      "checkIn": "2027-04-09",
+      "checkOut": "2027-04-14",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Alternativa céntrica con habitación individual economy y baño privado. Confirmar dimensiones, ascensor y precio por cinco noches.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.hotelalbafirenze.it/en/hotel-rooms-florence-center"
+        }
+      ]
+    },
+    {
+      "id": "firenze-nazioni",
+      "city": "Firenze",
+      "name": "Hotel Delle Nazioni",
+      "address": "Via Luigi Alamanni 15, Firenze",
+      "checkIn": "2027-04-09",
+      "checkOut": "2027-04-14",
+      "status": "Candidato · no reservado",
+      "rate": "Por cotizar para 1 adulto · habitación y baño privados",
+      "rateConditions": "Objetivo: $1,800–$2,500 MXN por noche, impuestos incluidos; confirmar cancelación gratuita.",
+      "notes": "Alternativa muy próxima a Firenze SMN, con baños privados. Revisar aislamiento frente al tranvía y posibilidad de habitación tranquila.",
+      "links": [
+        {
+          "label": "Consultar alojamiento oficial",
+          "url": "https://www.hoteldellenazioni.it/"
         }
       ]
     }
