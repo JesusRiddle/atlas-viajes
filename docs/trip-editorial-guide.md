@@ -65,14 +65,32 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 **Cómo:** desglose con moneda original y MXN cuando hay conversión sustentada; mostrar rango realista y fecha de cotización. Separar precio base, impuestos, equipaje y extras. Si falta información, conservar `null`.
 **No incluir:** presupuestos cerrados construidos con ceros de relleno.
 
-## Proceso obligatorio de creación
-1. Leer `AGENTS.md`, esta guía, contrato de datos, plantilla y estándar visual.
-2. Crear branch desde `main`, ejecutar `node scripts/new-trip.cjs <id> "Nombre"` cuando se trabaje localmente o reproducir exactamente su alta: JSON independiente y entrada inactiva en `modules.js`. Nunca clonar el JSON antiguo.
-3. Acordar prioridades, destinos, fechas, aeropuertos y noches antes de poblar detalles. Registrar los asuntos pendientes en sus campos, nunca en `intro`.
-4. Redactar una narración `intro` coherente con el recorrido y su `introHighlights`; completar progresivamente las nueve secciones conforme a los datos disponibles.
-5. Pasar lista de verificación: días consecutivos y fechas reales, suma de noches, cierres, conexiones, prioridad de reservas, mapa, enlaces y costos; comprobar Desktop/Mobile.
-6. Ejecutar `node --test tests/*.test.cjs` y, cuando corresponda, pruebas de navegador. No afirmar pruebas no ejecutadas.
-7. Publicar solo tras revisión y autorización explícita; preservar viajes existentes.
+## Orden obligatorio de construcción · nuevos viajes
+**Fase 0 · Preparación:** leer `AGENTS.md`, esta guía, `docs/trip-data-contract.md`, `data/trips/_template.json` y las referencias del viaje maestro. Abrir rama; crear nuevo JSON inactivo (`available: false`) sin copiar itinerarios antiguos. Recoger restricciones personales (fechas, presupuesto, ritmo, equipaje, habitaciones y prioridades).
+
+**Fase 1 · Esqueleto logístico (antes de escribir narrativa):**
+1. Fijar fechas, aeropuerto de ida/vuelta, restricciones por festivos y vacaciones; distinguir vuelo comprado, cotizado y pendiente.
+2. Definir ciudades, excursiones realistas, bases hoteleras y número de noches. Validar suma de noches y días de vuelo; evitar maletas en visitas intermedias sin consigna verificada.
+3. Crear los doce días o el número correspondiente con **fecha, ciudad base, actividad esencial y desplazamiento clave**, sin completar todavía horarios ficticios. Revisar días de cierre, transporte y disponibilidad de reservas imprescindibles.
+4. Identificar **reservas críticas** y sus dependencias. Si una visita condiciona todo el viaje (p. ej. Cenacolo), señalar fecha preferente, alternativa y decisión que debe esperar; no comprar servicios inflexibles incompatibles.
+
+**Fase 2 · Secciones visibles, en este orden:**
+5. **Panorama:** `intro` + `introHighlights`, `practicalIndicators` con cuatro badges, `climate` con temperaturas/ropa/luz y `bases`. Basarse solo en la ruta ya validada.
+6. **Mapa:** `mapPoints` con orden geográfico, coordenadas comprobadas y bases/visitas, sin nombres demasiado largos.
+7. **Temporadas:** doce meses `01`–`12`, estado, icono, temperatura extraíble y explicación. Si hay regiones climáticas distintas, aclarar el alcance.
+8. **Experiencias:** tarjetas por destino, 18–35 palabras cada una, actividades distintivas sin relleno ni reiteraciones.
+9. **Reservas críticas:** `planningDetails` y `reservations` en prioridades, enlaces oficiales y alternativas. Actualizar cualquier condición de reserva descubierta en Fase 1.
+10. **Movilidad y conexiones:** vuelos, trenes, aeropuertos y transporte imprescindible en `majorTransport`; los horarios/valores no cotizados quedan `null`. Distinguir trayectos de ida y vuelta de transbordos.
+11. **Dónde dormir:** introducir zonas y luego alojamientos concretos con noches, fechas y estado de cotización; respetar presupuesto **por habitación**, no confundir con precio por persona.
+12. **Día por día (detallado):** completar AM/PM/noche, tiempos puerta a puerta, notas, descansos, contingencias, referencias de transportes y actividades compatibles con reservas; refinar el esqueleto inicial, no reescribir la ruta sin justificar cambios.
+13. **Presupuesto:** desglosar confirmado/cotizado/estimado/pendiente, moneda de origen, conversión fechada a MXN y extras; jamás transformar `null` en cero inventado.
+
+**Fase 3 · Auditoría transversal y publicación:**
+14. Al terminar **cada sección**, comprobar formato de Emilia-Romagna y guía editorial, ausencia de paja, renderizado correcto, campos requeridos, dependencia con secciones previas y consistencia de datos repetidos.
+15. Ejecutar `node --test tests/*.test.cjs`, validadores disponibles y pruebas Desktop/Mobile. Corregir fallas antes de avanzar; documentar cuando no sea posible ejecutar alguna prueba.
+16. Revisar presupuesto/fechas/condiciones con el usuario; pasar el registro a `available: true` solo cuando proceda; **no fusionar a `main` sin autorización explícita**.
+
+**Regla de dependencias:** este orden es editorial, no una licencia para retrasar decisiones logísticas importantes. Antes de prometer una experiencia, comprobar que caben su transporte, horario, cierre y posible reserva. Si una cotización obliga a cambiar la ruta, actualizar primero el esqueleto, luego panorama/mapa/reservas/días/presupuesto. Evitar datos contradictorios entre secciones.
 
 ## Control de calidad antes de avanzar de sección
 - Verificar fechas consecutivas, vuelos nocturnos y momento real de llegada; no programar actividades anteriores al aterrizaje.
