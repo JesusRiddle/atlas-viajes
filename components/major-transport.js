@@ -14,9 +14,11 @@ window.AtlasMajorTransport = (() => {
             cost.currency === 'MXN' ? String.fromCharCode(36) + number.format(cost.amount) + ' MXN' :
             amount + ' ' + cost.currency;
     };
-    const journeyDate = (journey, trip) => {
+    const journeyDate = (journey, trip, transportDay) => {
         const departure = journey.segments?.[0]?.departure;
-        const day = departure?.slice(0, 10) ||
+        const plannedDay = Number.isInteger(transportDay) && trip.start
+            ? new Date(Date.parse(trip.start + 'T12:00:00Z') + (transportDay - 1) * 86400000).toISOString().slice(0, 10) : null;
+        const day = departure?.slice(0, 10) || plannedDay ||
             (journey.direction === 'outbound' ? trip.start : journey.direction === 'return' ? trip.end : null);
         if (!day) return '';
         const parsed = new Date(day + 'T12:00:00Z');
@@ -182,8 +184,8 @@ window.AtlasMajorTransport = (() => {
             const direction = j.direction === 'outbound' ? 'Ida' : j.direction === 'return' ? 'Regreso' : '';
             return '<div class="mt-legs">' +
                 '<h4 class="mt-leg-heading' + ((transport.type === 'flight' || transport.type === 'train') ? ' mt-flight-heading' : '') + '"><span class="mt-flight-heading-title">' + esc(dayLabel) +
-                (direction ? esc(direction) + esc(journeyDate(j, trip)) :
-                    esc(journeyDate(j, trip).replace(/^ · /, ''))) + '</span>' +
+                (direction ? esc(direction) + esc(journeyDate(j, trip, transport.day)) :
+                    esc(journeyDate(j, trip, transport.day).replace(/^ · /, ''))) + '</span>' +
                 ((transport.type === 'flight' || transport.type === 'train') && j.segments?.length ? (() => {
                     const info = model.journeySummary(j);
                     return '<span class="mt-flight-heading-stats"><span><b>Duración total</b> ' + esc(minutes(info.durationMinutes)) +
