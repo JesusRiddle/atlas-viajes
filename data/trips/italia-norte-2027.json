@@ -1,0 +1,110 @@
+{
+  "id": "italia-norte-2027",
+  "name": "Italia 2027: Piamonte, Cinque Terre y Toscana",
+  "flag": "🇮🇹",
+  "status": "draft",
+  "start": "2027-04-03",
+  "end": "2027-04-14",
+  "tag": "BORRADOR · RUTA Y VUELOS POR CONFIRMAR",
+  "routeCities": [
+    "Milano",
+    "Torino",
+    "La Spezia",
+    "Portovenere",
+    "Cinque Terre",
+    "Lucca",
+    "Firenze",
+    "Siena"
+  ],
+  "bases": [
+    [
+      "Milano",
+      3
+    ],
+    [
+      "La Spezia",
+      2
+    ],
+    [
+      "Firenze",
+      5
+    ]
+  ],
+  "work": 8,
+  "intro": "Propuesta provisional de viaje en tren por Piamonte, Liguria y Toscana. Fechas, transportes, alojamientos y reservas sujetos a verificación; ningún vuelo está comprado.",
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-04-03",
+      "title": "Vuelo CDMX → Milano",
+      "base": "En vuelo"
+    },
+    {
+      "n": 2,
+      "date": "2027-04-04",
+      "title": "Llegada a Milano",
+      "base": "Milano"
+    },
+    {
+      "n": 3,
+      "date": "2027-04-05",
+      "title": "Milano: centro histórico y principales visitas",
+      "base": "Milano"
+    },
+    {
+      "n": 4,
+      "date": "2027-04-06",
+      "title": "Torino: excursión en tren",
+      "base": "Milano"
+    },
+    {
+      "n": 5,
+      "date": "2027-04-07",
+      "title": "Milano → La Spezia · Portovenere",
+      "base": "La Spezia"
+    },
+    {
+      "n": 6,
+      "date": "2027-04-08",
+      "title": "Cinque Terre en tren",
+      "base": "La Spezia"
+    },
+    {
+      "n": 7,
+      "date": "2027-04-09",
+      "title": "La Spezia → Lucca → Firenze",
+      "base": "Firenze"
+    },
+    {
+      "n": 8,
+      "date": "2027-04-10",
+      "title": "Firenze I: David, Duomo y Uffizi",
+      "base": "Firenze"
+    },
+    {
+      "n": 9,
+      "date": "2027-04-11",
+      "title": "Firenze II: arte y miradores",
+      "base": "Firenze"
+    },
+    {
+      "n": 10,
+      "date": "2027-04-12",
+      "title": "Siena: excursión desde Firenze",
+      "base": "Firenze"
+    },
+    {
+      "n": 11,
+      "date": "2027-04-13",
+      "title": "Firenze: día flexible y visitas pendientes",
+      "base": "Firenze"
+    },
+    {
+      "n": 12,
+      "date": "2027-04-14",
+      "title": "Firenze → Milano Malpensa · vuelo de regreso",
+      "base": "En vuelo"
+    }
+  ],
+  "budgetPreliminary": true
+}
