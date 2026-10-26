@@ -203,31 +203,31 @@
   "experiences": [
     {
       "city": "Milano",
-      "description": "Quedarte frente a La Última Cena de Leonardo da Vinci, un encuentro con el arte que justifica organizar el viaje con antelación. Después, contemplar el Duomo desde sus terrazas y dejarte llevar por las calles de Brera."
+      "description": "Contemplar La Última Cena de Leonardo da Vinci, recorrer las terrazas del Duomo y pasear por las calles de Brera."
     },
     {
       "city": "Torino",
-      "description": "Viajar miles de años en el Museo Egizio y volver a la elegancia de los cafés históricos y las plazas porticadas. Una jornada entre faraones, palacios y el carácter señorial del Piamonte."
+      "description": "Explorar las colecciones del Museo Egizio y recorrer las plazas porticadas y los cafés históricos de la antigua capital saboyana."
     },
     {
       "city": "Portovenere",
-      "description": "Seguir las fachadas de colores hasta la iglesia de San Pietro, asomada al mar sobre las rocas. Disfrutar de las vistas del golfo y del encanto marinero sin necesidad de llenar la tarde de visitas."
+      "description": "Caminar entre las fachadas de colores del puerto hasta la iglesia de San Pietro, situada sobre las rocas, con vistas al golfo."
     },
     {
       "city": "Cinque Terre",
-      "description": "Pasar de un pueblo a otro en tren, descubriendo callejones, puertos diminutos y casas de colores entre terrazas de viñedos. Buscar un mirador en Manarola y detenerte a saborear el paisaje, no solo a fotografiarlo."
+      "description": "Recorrer los pueblos en tren, pasear por sus callejones y admirar las casas de colores y terrazas de viñedos desde los miradores de Manarola."
     },
     {
       "city": "Lucca",
-      "description": "Pasear sobre las murallas arboladas que rodean la ciudad, entrar en la singular Piazza dell’Anfiteatro y, si el tiempo alcanza, subir a la Torre Guinigi entre las copas de sus encinas."
+      "description": "Pasear por las murallas arboladas, conocer la Piazza dell’Anfiteatro y, si el tiempo alcanza, subir a la Torre Guinigi."
     },
     {
       "city": "Firenze",
-      "description": "Volver con tiempo para mirar de verdad al David de Michelangelo, subir a la cúpula de Brunelleschi y recorrer los Uffizi sin prisas de excursión. Terminar alguna tarde con las vistas desde San Miniato al Monte o Piazzale Michelangelo."
+      "description": "Contemplar el David de Michelangelo, subir a la cúpula de Brunelleschi, recorrer los Uffizi y disfrutar las vistas desde San Miniato al Monte."
     },
     {
       "city": "Siena",
-      "description": "Entrar a la Piazza del Campo por una calle medieval y descubrir de golpe su forma de concha; después, maravillarte con el mármol del Duomo y los colores de la Libreria Piccolomini. Una ciudad para recorrer con calma y curiosidad."
+      "description": "Recorrer las calles medievales hasta la Piazza del Campo y visitar el Duomo, con sus mármoles y los frescos de la Libreria Piccolomini."
     }
   ],
   "flight": "Vuelo directo CDMX ↔ Milano Malpensa como alternativa por cotizar. Fechas, equipaje y horarios sin confirmar; no hay billetes comprados.",
