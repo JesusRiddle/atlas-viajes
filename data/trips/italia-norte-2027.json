@@ -700,15 +700,12 @@
             {
               "id": "ref",
               "name": "Orientativo · pendiente de cotización",
-              "price": {
-                "amount": 15,
-                "currency": "EUR"
-              },
+              "price": null,
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "~51 min, servicios aproximadamente cada 30 min; tarifa oficial actual €15 por sentido. Llegada 4 abril y traslado al hotel. Verificar estación terminal y últimos servicios.",
+          "notes": "~51 min, servicios aproximadamente cada 30 min; tarifa histórica de referencia €15 por sentido. Llegada 4 abril y traslado al hotel. Verificar estación terminal y últimos servicios.",
           "quotedAt": null
         }
       ],
@@ -733,7 +730,7 @@
           "selectedFare": "ref",
           "journeys": [
             {
-              "direction": "roundtrip",
+              "direction": "outbound",
               "segments": [
                 {
                   "from": "Milano Centrale",
@@ -741,7 +738,12 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · Regionale Veloce / Frecciarossa"
-                },
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
                 {
                   "from": "Torino Porta Nuova",
                   "to": "Milano Centrale",
@@ -836,7 +838,7 @@
           "selectedFare": "ref",
           "journeys": [
             {
-              "direction": "roundtrip",
+              "direction": "outbound",
               "segments": [
                 {
                   "from": "La Spezia",
@@ -844,7 +846,12 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "ATC Esercizio · autobús"
-                },
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
                 {
                   "from": "Portovenere",
                   "to": "La Spezia",
@@ -889,7 +896,7 @@
           "selectedFare": "ref",
           "journeys": [
             {
-              "direction": "roundtrip",
+              "direction": "outbound",
               "segments": [
                 {
                   "from": "La Spezia Centrale",
@@ -897,7 +904,12 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · regional 5 Terre Express"
-                },
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
                 {
                   "from": "Riomaggiore",
                   "to": "La Spezia Centrale",
@@ -1045,7 +1057,7 @@
           "selectedFare": "ref",
           "journeys": [
             {
-              "direction": "roundtrip",
+              "direction": "outbound",
               "segments": [
                 {
                   "from": "Firenze S. M. Novella",
@@ -1053,7 +1065,12 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · regional"
-                },
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
                 {
                   "from": "Siena",
                   "to": "Firenze S. M. Novella",
@@ -1164,15 +1181,12 @@
             {
               "id": "ref",
               "name": "Orientativo · pendiente de cotización",
-              "price": {
-                "amount": 15,
-                "currency": "EUR"
-              },
+              "price": null,
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "14 abril: ~51 min, €15 por sentido de referencia oficial. Conexión posterior al tren desde Firenze; llegar al aeropuerto con unas 4 horas de margen para vuelo a las 23:05.",
+          "notes": "14 abril: ~51 min, tarifa histórica de referencia €15 por sentido. Conexión posterior al tren desde Firenze; llegar al aeropuerto con unas 4 horas de margen para vuelo a las 23:05.",
           "quotedAt": null
         }
       ],
