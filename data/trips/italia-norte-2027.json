@@ -387,14 +387,14 @@
     {
       "id": "solo",
       "title": "Viajar solo",
-      "text": "Muy viable. Trenes y centros históricos facilitan el recorrido; vigila tus pertenencias en estaciones y zonas concurridas. Para Lucca, confirma consigna antes de la parada.",
+      "text": "Recorrido cómodo para hacerlo por tu cuenta, con conexiones sencillas en tren y ciudades fáciles de explorar a pie. Para la parada en Lucca, conviene confirmar una consigna.",
       "badge": "Muy recomendable",
       "tone": "green"
     },
     {
       "id": "pace",
       "title": "Ritmo",
-      "text": "Equilibrado–activo. Tres bases en diez noches, excursiones a Torino y Siena y varios días de caminata. Portovenere y Lucca tienen margen de ajuste.",
+      "text": "Ritmo equilibrado, con jornadas intensas de visitas alternadas con momentos para pasear sin prisa. Habrá algunas mañanas tempranas, pero también margen para descansar y ajustar planes.",
       "badge": "Moderado–activo",
       "tone": "orange"
     },
@@ -408,7 +408,7 @@
     {
       "id": "currency",
       "title": "Pagos y moneda",
-      "text": "Euro (€). Tarjetas generalmente aceptadas; conviene llevar algo de efectivo para gastos pequeños. Confirmar comisiones bancarias y pagar en euros cuando la terminal ofrezca conversión.",
+      "text": "Euro (€). Conviene llevar algo de efectivo para gastos pequeños, revisar las comisiones de tu banco y elegir el cobro en euros si la terminal ofrece conversión.",
       "badge": "Tarjetas aceptadas",
       "tone": "green"
     }
