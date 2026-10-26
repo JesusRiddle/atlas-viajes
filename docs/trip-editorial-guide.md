@@ -74,5 +74,14 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 6. Ejecutar `node --test tests/*.test.cjs` y, cuando corresponda, pruebas de navegador. No afirmar pruebas no ejecutadas.
 7. Publicar solo tras revisión y autorización explícita; preservar viajes existentes.
 
+## Control de calidad antes de avanzar de sección
+- Verificar fechas consecutivas, vuelos nocturnos y momento real de llegada; no programar actividades anteriores al aterrizaje.
+- Comprobar que noches por base = noches del calendario, excluyendo noches de vuelo; cualquier precio hotelero debe coincidir con noches y tipo de habitación del viajero.
+- Revisar nombres, días, estados y cotizaciones en todos los campos duplicados (`flight`, `days`, `majorTransport`, `ticketNotes`): una tarifa ya cotizada no debe figurar como «por cotizar» ni como comprada.
+- En `majorTransport`, una ida y vuelta requiere dos `journeys` distintos cuando los extremos invierten su dirección; no modelar el regreso como segundo segmento de una conexión continua. Los transbordos del mismo sentido sí comparten un `journey`.
+- Confirmar compatibilidad de notas `ticketNotes` antiguas (pares `[nombre, nota]`) y modernas (objetos con `title`, `note`, etc.) para que ninguna tarjeta rompa el renderizado.
+- Para transportes planificados, usar precio `null` hasta tener una tarifa cotizada concreta; dejar importes antiguos solo como referencias claramente fechadas en notas.
+- Ejecutar pruebas de regresión y navegador, inspeccionar contenido móvil y escritorio, y documentar las comprobaciones no realizadas.
+
 ## Auditoría editorial humana
 Las pruebas automáticas pueden verificar estructura y coincidencias literales de resaltados, pero **no** pueden determinar si una narración es atractiva, si un lugar merece la pena o si una conexión es segura. Revisar esos puntos manualmente antes de aprobar el PR.
