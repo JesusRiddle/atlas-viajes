@@ -133,3 +133,19 @@ test('Italia 2027 mantiene vuelos cotizados y trenes futuros sin precios inventa
     assert.equal(o.fares[0].price, null, t.id);
   }
 });
+
+test('Italia 2027: tres hoteles candidatos por base y sin tarifas inventadas', () => {
+  const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+  const windows = {'Milano':['2027-04-04','2027-04-07'],'La Spezia':['2027-04-07','2027-04-09'],'Firenze':['2027-04-09','2027-04-14']};
+  assert.equal(trip.hotels.length, 9);
+  for (const [city, dates] of Object.entries(windows)) {
+    const candidates = trip.hotels.filter(h => h.city === city);
+    assert.equal(candidates.length, 3, city);
+    for (const h of candidates) {
+      assert.deepEqual([h.checkIn,h.checkOut],dates,h.name);
+      assert.match(h.status,/no reservado/i);
+      assert.match(h.rate,/Por cotizar/);
+      assert.ok(h.links?.[0]?.url?.startsWith('https://'),h.name);
+    }
+  }
+});
