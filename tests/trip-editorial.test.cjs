@@ -77,3 +77,33 @@ test('reservas críticas de Italia 2027 tienen grupos, prioridad y enlaces ofici
   assert.match(critical[0].description, /6 de abril/);
   assert.match(critical[0].description, /7/);
 });
+
+test('Italia 2027: fechas, noches y viajes de ida y vuelta coherentes', () => {
+  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
+  assert.equal(trip.days.length, 12);
+  assert.equal(trip.bases.reduce((total, [, nights]) => total + nights, 0), 10);
+  for (let i = 0; i < trip.days.length; i++) {
+    const expected = new Date(Date.parse(trip.start + 'T12:00:00Z') + i * 86400000).toISOString().slice(0, 10);
+    assert.equal(trip.days[i].date, expected);
+    assert.equal(trip.days[i].n, i + 1);
+  }
+  assert.equal(trip.days.at(-1).date, trip.end);
+  for (const transfer of trip.majorTransport) {
+    for (const option of transfer.options) {
+      assert.ok(option.journeys.length);
+      for (const journey of option.journeys) {
+        assert.ok(journey.segments.length);
+        for (let i = 1; i < journey.segments.length; i++) {
+          assert.equal(journey.segments[i - 1].to, journey.segments[i].from,
+            transfer.id + ': segmentos inconexos');
+        }
+      }
+      if (option.status === 'planning') {
+        assert.ok(option.fares.every(fare => fare.price === null),
+          transfer.id + ': precio sin cotizar presentado como confirmado');
+      }
+    }
+  }
+  const source = fs.readFileSync('components/major-transport.js', 'utf8');
+  assert.match(source, /Array\.isArray\(item\)/, 'Las notas deben admitir objetos y arreglos');
+});
