@@ -51,8 +51,8 @@
       "date": "2027-04-04",
       "title": "Llegada a Milano",
       "base": "Milano",
-      "am": "1. Vuelo internacional y llegada prevista a Milano a las 18:20; sin actividades matutinas.",
-      "pm": "1. Llegada, migración y recogida de equipaje de mano.",
+      "am": "1. Vuelo en curso; sin actividades programadas.",
+      "pm": "1. Llegada prevista a Malpensa a las 18:20; migración y salida del aeropuerto.",
       "night": "1. Malpensa Express a Milano Centrale, check-in y descanso.",
       "mobility": "Aeropuerto Malpensa → Milano, tren aeroportuario por confirmar.",
       "note": "Vuelo cotizado, no comprado. No fijar entradas ni actividades el día de llegada.",
@@ -193,9 +193,9 @@
   "budgetPreliminary": true,
   "profile": {
     "pace": "Equilibrado / activo",
-    "paceWhy": "Días de ciudad y cambios de base con margen de descanso.",
+    "paceWhy": "Visitas intensas alternadas con paseos flexibles y mañanas tempranas puntuales.",
     "solo": "Fácil con planificación",
-    "soloWhy": "Recorridos ferroviarios y consigna de equipaje por confirmar.",
+    "soloWhy": "Ciudades conectadas por tren y desplazamientos urbanos sencillos; confirmar consigna en Lucca.",
     "weather": "Media",
     "weatherWhy": "La lluvia puede afectar costas y panorámicas.",
     "why": "Destinos nuevos en Piamonte, Liguria y Toscana con tres bases."
