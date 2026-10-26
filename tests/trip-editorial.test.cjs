@@ -147,6 +147,21 @@ test('Italia 2027: tres hoteles principales y presupuesto distribuido', () => {
     assert.equal(hotelExpenses.find(x=>x.hotelId===h.id).nights,nights[h.city]);
   }
   assert.equal(trip.expenses.filter(x=>x.category==='food').length,12);
-  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),8400);
+  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),7650);
   assert.equal(trip.budgetPreliminary,true);
+});
+
+
+test('Italia 2027: traslados y gastos de vuelos sin duplicados', () => {
+ const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+ const valid=new Set(trip.majorTransport.map(t=>t.id));
+ for (const day of trip.days) for(const id of day.transportRefs||[]) assert.ok(valid.has(id),'Traslado inexistente '+id);
+ assert.ok(trip.days[0].transportRefs.includes('flight-international'));
+ assert.ok(trip.days.at(-1).transportRefs.includes('flight-international'));
+ const flight=trip.majorTransport.find(t=>t.id==='flight-international');
+ assert.equal(flight.options[0].fares[0].price.amount,16683);
+ assert.ok(!trip.expenses.some(e=>e.category==='flight'),'El vuelo debe computarse desde majorTransport');
+ const ct=trip.majorTransport.find(t=>t.id==='train-cinque-terre').options[0].journeys;
+ assert.equal(ct[0].segments[0].to,'Riomaggiore');
+ assert.equal(ct[1].segments[0].from,'Monterosso al Mare');
 });
