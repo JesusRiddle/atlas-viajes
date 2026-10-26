@@ -387,22 +387,30 @@
     {
       "id": "solo",
       "title": "Viajar solo",
-      "text": "Muy viable. Trenes y centros históricos facilitan el recorrido; vigila tus pertenencias en estaciones y zonas concurridas. Para Lucca, confirma consigna antes de la parada."
+      "text": "Muy viable. Trenes y centros históricos facilitan el recorrido; vigila tus pertenencias en estaciones y zonas concurridas. Para Lucca, confirma consigna antes de la parada.",
+      "badge": "Muy recomendable",
+      "tone": "green"
     },
     {
       "id": "pace",
       "title": "Ritmo",
-      "text": "Equilibrado–activo. Tres bases en diez noches, excursiones a Torino y Siena y varios días de caminata. Portovenere y Lucca tienen margen de ajuste."
+      "text": "Equilibrado–activo. Tres bases en diez noches, excursiones a Torino y Siena y varios días de caminata. Portovenere y Lucca tienen margen de ajuste.",
+      "badge": "Moderado–activo",
+      "tone": "orange"
     },
     {
       "id": "language",
       "title": "Idioma",
-      "text": "Italiano. El inglés suele ser útil en hoteles, museos y estaciones turísticas; hablar italiano facilita las interacciones locales."
+      "text": "Italiano. El inglés suele ser útil en hoteles, museos y estaciones turísticas; hablar italiano facilita las interacciones locales.",
+      "badge": "Fácil",
+      "tone": "green"
     },
     {
       "id": "currency",
       "title": "Pagos y moneda",
-      "text": "Euro (€). Tarjetas generalmente aceptadas; conviene llevar algo de efectivo para gastos pequeños. Confirmar comisiones bancarias y pagar en euros cuando la terminal ofrezca conversión."
+      "text": "Euro (€). Tarjetas generalmente aceptadas; conviene llevar algo de efectivo para gastos pequeños. Confirmar comisiones bancarias y pagar en euros cuando la terminal ofrezca conversión.",
+      "badge": "Tarjetas aceptadas",
+      "tone": "green"
     }
   ],
   "seasonality": {
