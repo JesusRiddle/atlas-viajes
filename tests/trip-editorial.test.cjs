@@ -58,3 +58,22 @@ test('los indicadores prácticos del viaje incluyen etiquetas y tonos válidos',
   assert.match(component, /item\.badge/);
   assert.match(component, /item\.tone/);
 });
+
+test('reservas críticas de Italia 2027 tienen grupos, prioridad y enlaces oficiales', () => {
+  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
+  assert.equal(trip.planningDetails.reservationTitle, 'Reservas críticas');
+  assert.ok(trip.reservations.length >= 2);
+  for (const [heading, items] of trip.reservations) {
+    assert.ok(heading && Array.isArray(items) && items.length);
+    for (const item of items) {
+      assert.ok(item.title && item.description?.length > 30);
+      for (const link of item.links || []) {
+        assert.ok(link.label && /^https:\/\//.test(link.url));
+      }
+    }
+  }
+  const critical = trip.reservations[0][1];
+  assert.match(critical[0].title, /Última Cena/);
+  assert.match(critical[0].description, /6 de abril/);
+  assert.match(critical[0].description, /7/);
+});
