@@ -44,3 +44,17 @@ test('los 12 meses evaluados contienen rango de temperatura visible', () => {
     }
   }
 });
+
+test('los indicadores prácticos del viaje incluyen etiquetas y tonos válidos', () => {
+  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
+  const expected = {solo:'Muy recomendable',pace:'Moderado–activo',language:'Fácil',currency:'Tarjetas aceptadas'};
+  assert.equal(trip.practicalIndicators.length, 4);
+  for (const item of trip.practicalIndicators) {
+    assert.equal(item.badge, expected[item.id]);
+    assert.ok(['green','orange'].includes(item.tone));
+    assert.ok(item.text.trim().length > 15);
+  }
+  const component = fs.readFileSync('components/trip.js', 'utf8');
+  assert.match(component, /item\.badge/);
+  assert.match(component, /item\.tone/);
+});
