@@ -110,7 +110,12 @@
       "mobility": "• *Hotel → Santa Maria delle Grazie:* Desde Milano Centrale usar metro y completar el trayecto a pie; comprobar transbordos según la franja del Cenacolo.\n• *Santa Maria delle Grazie → Castello Sforzesco:* Caminar hacia el castillo y Parco Sempione si el horario lo permite.\n• *Centro monumental:* Desplazamientos a pie por Duomo, Galleria Vittorio Emanuele II y Piazza della Scala; metro de regreso si conviene.",
       "note": "• *Cenacolo:* Entrada nominativa indispensable martes 6 o miércoles 7; visita de 15 minutos y presentación 30 minutos antes. Sin reservar.\n• *Prioridad:* Fijar primero el Cenacolo; después comprar franjas de Duomo/terrazas o Brera que no se solapen.\n• *Plan B:* Si la entrada del Cenacolo es el miércoles, el martes se dedica a paseos y visitas flexibles.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy16-grazie",
+        "milan-castello",
+        "milan-duomo",
+        "milan-galleria"
+      ],
       "hotel": "milano-aosta",
       "headerPlaces": [
         "Cenacolo Vinciano · reserva pendiente",
@@ -131,7 +136,10 @@
       "mobility": "• *Hotel → Brera:* Desde Milano Centrale tomar metro o caminar según la energía y ubicación exacta de la visita.\n• *Brera → Duomo:* Traslado a pie por el centro, con margen para el acceso a las terrazas.\n• *Si el Cenacolo es miércoles:* Usar transporte urbano hacia Santa Maria delle Grazie y reorganizar Brera y Duomo alrededor de esa entrada.",
       "note": "• *Cenacolo:* El miércoles 7 es respaldo si no se consiguió el martes; no duplicar visitas realizadas.\n• *Brera:* Entrada y horario reservables; comprobar el calendario vigente para abril 2027.\n• *Duomo:* Confirmar acceso a catedral y terrazas; el Museo del Duomo suele cerrar los miércoles.",
       "spend": null,
-      "places": [],
+      "places": [
+        "milan-duomo",
+        "milan-galleria"
+      ],
       "hotel": "milano-aosta",
       "headerPlaces": [
         "Pinacoteca di Brera · reserva pendiente",
@@ -292,7 +300,10 @@
       "mobility": "• *Hotel → Accademia:* Caminar desde el entorno de Firenze SMN hasta Via Ricasoli; comprobar tiempos y llegar con margen al acceso reservado.\n• *Accademia → Duomo:* Ir a pie al complejo de Piazza del Duomo (aprox. 10–15 minutos) y localizar la entrada específica a la Cúpula.\n• *Consigna del Duomo:* Dejar mochilas y bolsas de tamaño no permitido en Piazza Duomo 38/r antes del horario de subida; servicio incluido con el pase según reglas oficiales.\n• *Cúpula → Museo dell’Opera:* Continuar a pie por Piazza del Duomo; Museo dell’Opera en Piazza del Duomo 9.\n• *Regreso al hotel:* Centro histórico → entorno de Firenze SMN, a pie o transporte urbano si hay cansancio.",
       "note": "• *Dos reservas críticas:* Accademia temprano y Cúpula con franja fija. Comprar y coordinar primero ambos horarios; 08:15–08:45 y 11:00–11:30 son objetivos, NO entradas reservadas.\n• *Brunelleschi Pass:* €30 como tarifa oficial de referencia consultada en octubre de 2026; incluye Cúpula y Museo dell’Opera y tiene vigencia de tres días naturales, comenzando el día de acceso reservado a la Cúpula. Reconfirmar tarifa 2027.\n• *Cúpula:* 463 escalones y sin ascensor; reservar tiempo de recuperación, llevar agua y evitar equipaje voluminoso. Se requiere documento de identidad y acceso exactamente en la franja comprada.\n• *Museo dell’Opera:* Cierra habitualmente el primer martes de cada mes, no todos los martes; confirmar aperturas extraordinarias del 13 de abril de 2027.\n• *Catedral:* Entrada ordinaria gratuita con horario y vestimenta apropiados; omitirla si hay fila o cansancio, ya que el Museo y la Cúpula son prioritarios.\n• *Entradas Accademia/Bargello:* Revisar modalidad y vigencia del billete combinado antes de comprar: Accademia el martes 13 y Bargello el jueves 15 pueden superar 48 horas según franja exacta. No asumir que un pase de 48 horas cubre ambos.\n• *Plan B:* Si Accademia y Cúpula no encajan, conservar la franja más restrictiva de la Cúpula y mover Accademia a otra hora compatible del martes; el Museo dell’Opera puede ir después de almorzar. No desplazar Uffizi del miércoles sin necesidad.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy16-david",
+        "italy16-cupola"
+      ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
         "Galleria dell’Accademia · David",
@@ -312,7 +323,9 @@
       "mobility": "• *Hotel → Uffizi:* Caminar desde el entorno de Firenze SMN hasta Piazzale degli Uffizi; calcular margen para control de seguridad y acceso.\n• *Uffizi → Corridoio Vasariano:* Acudir al punto de encuentro D19 en el primer piso de los Uffizi 5 minutos antes de la franja reservada; después del Corredor no se puede regresar a los Uffizi.\n• *Salida del Corredor:* El grupo atraviesa el corredor sobre Ponte Vecchio y sale por los Jardines de Boboli hacia el patio Ammannati de Palazzo Pitti; no se incluye visita libre a Boboli o Pitti.\n• *Palazzo Pitti → Santa Croce:* Caminar por el centro, cruzando de nuevo el Arno; contemplar Ponte Vecchio desde el exterior si apetece. Dejar margen para comer.\n• *Santa Croce → hotel:* Regreso a pie al centro / Firenze SMN o transporte urbano si hay cansancio.",
       "note": "• *Reserva imprescindible:* Comprar entrada nominativa combinada Uffizi + Corridoio Vasariano para el miércoles 14; es personal, no transferible y no reembolsable. La entrada conjunta da acceso a Uffizi dos horas antes de la franja del Corredor; comprobar las horas exactas impresas en el billete.\n• *Franjas objetivo:* Ejemplo compatible: Uffizi 09:30 y Corridoio 11:30, NO reservadas; elegir primero una franja real del Corredor y ajustar el acceso a Uffizi a las condiciones del billete.\n• *Reglas del Corredor:* Presentarse en sala D19 cinco minutos antes; visita en grupo de unos 45 min y sentido único hasta Pitti. No se permite detenerse ni regresar a las galerías.\n• *Precio de referencia:* Billete anticipado Uffizi + Corridoio Vasariano €47 según tarifa oficial consultada en octubre de 2026; confirmar precio y disponibilidad de abril 2027. No equivale al acceso libre a Pitti/Boboli.\n• *Santa Croce:* Horario habitual de miércoles 09:30–17:30, último ingreso a las 17:00; puede variar por actos religiosos. Comprar entrada en su sitio oficial y reservar visita amplia por la tarde.\n• *Plan B:* Si el único horario viable del Corredor cae por la tarde, priorizarlo y mover Santa Croce al jueves 15 ajustando Bargello; no eliminar ninguna de las tres visitas imprescindibles.\n• *Piazzale Michelangelo:* Reservado como visita prioritaria para el atardecer del jueves 15, evitando agregar otra subida a esta jornada.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy16-uffizi"
+      ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
         "Gallerie degli Uffizi",
@@ -1673,5 +1686,15 @@
       "status": "estimated",
       "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     }
-  ]
+  ],
+  "cover": "milan-duomo",
+  "placeDescriptions": {
+    "italy16-grazie": "Santa Maria delle Grazie, donde se visita La Última Cena con reserva nominativa.",
+    "milan-castello": "El Castello Sforzesco y su entorno monumental, previstos como paseo flexible.",
+    "milan-duomo": "Fachada del Duomo de Milano; las terrazas se visitan según el horario de entrada reservado.",
+    "milan-galleria": "Galería Vittorio Emanuele II, parada a pie en el centro histórico de Milano.",
+    "italy16-david": "El David de Michelangelo es la visita principal de la Galleria dell’Accademia.",
+    "italy16-cupola": "La Cúpula de Brunelleschi es la subida con horario obligatorio del día 11.",
+    "italy16-uffizi": "Gallerie degli Uffizi, antes del recorrido reservado por el Corridoio Vasariano."
+  }
 }
