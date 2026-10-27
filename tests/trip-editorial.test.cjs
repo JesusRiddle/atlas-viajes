@@ -323,3 +323,11 @@ test('documentación resalta términos clave sin interpretar HTML del JSON', () 
  assert.match(component, /Pasaporte\|ETIAS\|EES\|visa\|adaptador/);
  assert.match(component, /'<strong>\$1<\/strong>'/);
 });
+
+
+test('destaca visa como palabra completa y convierte ETIAS en enlace oficial seguro', () => {
+ const component = fs.readFileSync('components/trip.js','utf8');
+ assert.match(component, /\\\\p\\{L\\}/);
+ assert.match(component, /travel-europe/);
+ assert.match(component, /noopener noreferrer/);
+});
