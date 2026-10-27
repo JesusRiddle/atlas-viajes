@@ -160,7 +160,9 @@
       "mobility": "• *Hotel → Milano Centrale:* Caminata corta desde B&B HOTEL Milano Aosta; llegar a la estación con tiempo para localizar el andén.\n• *Milano Centrale → La Spezia Centrale:* Preferir tren directo Intercity si existe en la fecha; comparar con alternativas regionales según tiempo total, conexiones y condiciones. Horario y tarifa abril 2027 pendientes.\n• *La Spezia Centrale → Casa Danè:* Alojamiento candidato a pocos pasos de la estación; verificar cuál de sus dos direcciones corresponde a la habitación reservada.\n• *Centro → puerto:* Paseo a pie por Via del Prione hacia Passeggiata Morin; regresar caminando o en transporte urbano si hace falta.",
       "note": "• *Tren:* Priorizar una salida a media mañana para viajar con calma; el horario de abril 2027 aún no está disponible o confirmado. No reservar un servicio con conexión demasiado justa.\n• *Alojamiento:* Casa Danè figura en dos edificios próximos a la estación. Confirmar dirección exacta, recepción, consigna, check-in y condiciones antes de comprar.\n• *Ritmo:* Tarde de orientación y descanso; Portovenere tiene su propio día completo el viernes 9.\n• *Clima:* El paseo marítimo es flexible: con lluvia, permanecer por el centro histórico y descansar.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy27-spezia-morin"
+      ],
       "transportRefs": [
         "train-milano-la-spezia"
       ],
@@ -283,7 +285,8 @@
       "note": "• *Catedral:* Horario de temporada publicado para abril de 2026: 10:00–19:00 de lunes a sábado, con último acceso media hora antes. El calendario y servicios religiosos del 12 de abril de 2027 deben reconfirmarse.\n• *Libreria Piccolomini:* Está dentro del complejo del Duomo; comprobar su inclusión en la entrada elegida y reservar en canal oficial.\n• *Entrada adecuada:* Comparar boleto de Catedral y Libreria con OPA SI PASS solo si también visitarás Museo dell’Opera, Cripta o Facciatone. No comprar el pase amplio por inercia.\n• *Autobús:* Verificar parada temporal de Firenze, horarios, modalidad de compra y precio vigente para 2027. Ningún billete está reservado.\n• *Ritmo:* Evitar combinar Siena con San Gimignano; el plan principal es Piazza del Campo y Duomo, con añadidos opcionales.\n• *Plan B:* Si hay restricciones por ceremonias, recorrer primero Piazza del Campo y regresar al Duomo cuando abra; si hay retrasos de autobús, eliminar los extras, no la visita principal.",
       "spend": null,
       "places": [
-        "italy27-siena-campo"
+        "italy27-siena-campo",
+        "italy27-siena-duomo"
       ],
       "transportRefs": [
         "bus-siena"
@@ -1716,6 +1719,8 @@
     "italy27-portovenere": "Vista de San Pietro y Castello Doria sobre la costa de Portovenere.",
     "italy27-vernazza": "El puerto y las coloridas fachadas de Vernazza, parada principal de Cinque Terre.",
     "italy27-santa-croce": "La fachada de Santa Croce, cuyo interior se visita después de Uffizi y el Corridoio Vasariano.",
-    "italy27-san-miniato": "La fachada románica de San Miniato al Monte, previa al atardecer en Piazzale Michelangelo."
+    "italy27-san-miniato": "La fachada románica de San Miniato al Monte, previa al atardecer en Piazzale Michelangelo.",
+    "italy27-spezia-morin": "Paseo marítimo arbolado de La Spezia para la tarde de llegada.",
+    "italy27-siena-duomo": "La Catedral de Siena y su campanario, junto a una escultura exterior."
   }
 }
