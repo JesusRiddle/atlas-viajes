@@ -3249,5 +3249,49 @@
       "attribution": "Chris Olszewski",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Interior_of_the_Museo_Enzo_Ferrari%2C_Modena%2C_2019%2C_12.jpg/1280px-Interior_of_the_Museo_Enzo_Ferrari%2C_Modena%2C_2019%2C_12.jpg"
     }
+  },
+  "italy27-siena-campo": {
+    "name": "Piazza del Campo · Siena",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Siena_Cattedrale_nuova_Vista_su_la_Piazza_del_Campo_3.jpg/960px-Siena_Cattedrale_nuova_Vista_su_la_Piazza_del_Campo_3.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Siena_Cattedrale_nuova_Vista_su_la_Piazza_del_Campo_3.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Zairon"
+    }
+  },
+  "italy27-lucca-anfiteatro": {
+    "name": "Piazza dell’Anfiteatro · Lucca",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Lucca_Piazza_dell%27Anfiteatro_1.jpg/960px-Lucca_Piazza_dell%27Anfiteatro_1.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lucca_Piazza_dell%27Anfiteatro_1.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Zairon"
+    }
+  },
+  "italy27-manarola": {
+    "name": "Manarola · Cinque Terre",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Manarola_-_Cinque_Terre.jpg/960px-Manarola_-_Cinque_Terre.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Manarola_-_Cinque_Terre.jpg",
+      "author": "Daniela M.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Daniela M."
+    }
+  },
+  "italy27-piazzale": {
+    "name": "Vistas desde Piazzale Michelangelo",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Florence%27s_skyline.jpg/960px-Florence%27s_skyline.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Florence%27s_skyline.jpg",
+      "author": "Dimoegy1999",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Dimoegy1999"
+    }
   }
 }
