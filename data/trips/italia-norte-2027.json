@@ -82,8 +82,8 @@
       "base": "Milano",
       "am": "1. Salir del hotel hacia Milano Centrale para tomar el Italo directo de referencia de las 07:30 (llegada Torino Porta Nuova 08:30); horario tomado del lunes 02/11/2026 y pendiente de confirmación para el 05/04/2027.\n2. Caminar unos 15 minutos hasta el Museo Egizio; margen amplio para desayunar y la entrada objetivo de las 10:00 (alternativa 10:30), aún sin reservar. Destinar 2–3 horas; los lunes cierra habitualmente a las 14:00.",
       "pm": "1. Almorzar cerca de Piazza San Carlo y recorrer sus pórticos.\n2. Pasear hacia Piazza Castello y Palazzo Madama (exterior).\n3. Mole Antonelliana solo si queda margen; no añadir otro museo obligatorio.",
-      "night": "1. Regresar a Torino Porta Nuova y tomar un tren a Milano Centrale con margen para cenar.\n2. Volver a B&B HOTEL Milano Aosta y descansar.",
-      "mobility": "• *Ida Milano Centrale → Torino Porta Nuova:* preferencia Italo directo 07:30–08:30, Smart Economy €23,90 (≈$496 MXN, cambio de referencia 27/10/2026). Comparación: Frecciarossa 07:53–08:55 (€27,90) o Regionale 07:15–09:10 (€12,90). Todos los horarios proceden del lunes 02/11/2026, no están confirmados para abril de 2027.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; acceso objetivo 10:00, sin reservar.\n• *Regreso a Milano:* Pendiente de comparar Torino Porta Nuova → Milano Centrale y completar tarifa/horario.",
+      "night": "1. Tras las visitas, regresar a Torino Porta Nuova con margen para tomar el Italo directo de referencia de las 19:25 (llegada a Milano Centrale 20:30; desde €23,90).\n2. Respaldo B: Regionale Veloce 2041 de las 19:54 (llegada 21:49, desde €12,90). Respaldo C: Regionale Veloce 2043 de las 20:54 (llegada 22:49, desde €12,90). Consultas del lunes 02/11/2026: confirmar horarios y tarifas para abril de 2027, y comprar un boleto válido para el servicio que se utilice.\n3. Caminar al alojamiento candidato B&B HOTEL Milano Aosta, frente a Milano Centrale.",
+      "mobility": "• *Ida Milano Centrale → Torino Porta Nuova:* preferencia Italo directo 07:30–08:30, Smart Economy €23,90 (≈$496 MXN, cambio de referencia 27/10/2026). Comparación: Frecciarossa 07:53–08:55 (€27,90) o Regionale 07:15–09:10 (€12,90). Todos los horarios proceden del lunes 02/11/2026, no están confirmados para abril de 2027.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; acceso objetivo 10:00, sin reservar.\n• *Regreso Torino Porta Nuova → Milano Centrale:* A) Italo 19:25–20:30, desde €23,90 (≈$496 MXN); B) Regionale 2041 19:54–21:49, desde €12,90 (≈$268 MXN); C) Regionale 2043 20:54–22:49, desde €12,90 (≈$268 MXN). Referencias de 02/11/2026, no confirmadas para 05/04/2027. Los billetes no son necesariamente intercambiables.",
       "note": "• *Museo Egizio:* Lunes, horario habitual 09:00–14:00 y último ingreso 13:00; verificar calendario 2027.\n• *Reserva:* Franja objetivo 10:00–10:30, todavía sin comprar; elegir el tren primero para evitar una conexión justa.\n• *Visitas opcionales:* Palazzo Madama y Mole Antonelliana solo desde el exterior; no asumir apertura de museos un lunes.",
       "spend": null,
       "places": [
@@ -1013,9 +1013,10 @@
                 {
                   "from": "Torino Porta Nuova",
                   "to": "Milano Centrale",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Pendiente de comparar"
+                  "departure": "2027-04-05T19:25:00+02:00",
+                  "arrival": "2027-04-05T20:30:00+02:00",
+                  "operator": "Italo",
+                  "service": "Horario de referencia lunes 02/11/2026; no confirmado para abril 2027"
                 }
               ]
             }
@@ -1042,7 +1043,7 @@
               "refunds": "Consultar condiciones Flex"
             }
           ],
-          "notes": "IDA elegida como referencia: 07:30→08:30, directa, 1 h, Smart Economy €23,90 (≈$496 MXN al tipo EUR/MXN 20,76 del 27/10/2026), lunes 02/11/2026; no disponible aún el horario 05/04/2027. Llegada prevista 90 min antes de Museo Egizio a las 10:00. Regreso por cotizar y seleccionar. No comprado.",
+          "notes": "IDA Italo 07:30–08:30 (€23,90 Smart Economy); REGRESO preferido Italo 19:25–20:30 (€23,90 Smart según oferta mostrada). Precios y horarios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Total ida/vuelta estimado €47,80 si ambas tarifas se mantienen. Respaldo de regreso B: Regionale Veloce 2041, 19:54–21:49 (€12,90); C: Regionale Veloce 2043, 20:54–22:49 (€12,90). Boletos de alta velocidad no son intercambiables automáticamente entre operadores ni trenes. No comprado.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1122,6 +1123,53 @@
         {
           "label": "Consultar alternativa",
           "url": "https://www.italotreno.com/"
+        }
+      ],
+      "returnAlternatives": [
+        {
+          "id": "A",
+          "operator": "Italo",
+          "from": "Torino Porta Nuova",
+          "to": "Milano Centrale",
+          "departure": "19:25",
+          "arrival": "20:30",
+          "durationMinutes": 65,
+          "price": {
+            "amount": 23.9,
+            "currency": "EUR"
+          },
+          "fare": "Smart · desde €23,90",
+          "direct": true
+        },
+        {
+          "id": "B",
+          "operator": "Trenitalia · Regionale Veloce 2041",
+          "from": "Torino Porta Nuova",
+          "to": "Milano Centrale",
+          "departure": "19:54",
+          "arrival": "21:49",
+          "durationMinutes": 115,
+          "price": {
+            "amount": 12.9,
+            "currency": "EUR"
+          },
+          "fare": "2.ª clase · desde €12,90",
+          "direct": true
+        },
+        {
+          "id": "C",
+          "operator": "Trenitalia · Regionale Veloce 2043",
+          "from": "Torino Porta Nuova",
+          "to": "Milano Centrale",
+          "departure": "20:54",
+          "arrival": "22:49",
+          "durationMinutes": 115,
+          "price": {
+            "amount": 12.9,
+            "currency": "EUR"
+          },
+          "fare": "2.ª clase · desde €12,90",
+          "direct": true
         }
       ]
     },
