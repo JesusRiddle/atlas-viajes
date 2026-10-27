@@ -64,6 +64,8 @@ window.AtlasBudget = (() => {
             entries.push({ id, category, cost: cost || null, mxn, dates });
         };
         for (const item of trip.majorTransport || []) {
+            // Tramos informativos cubiertos por un pase: evitar doble contabilización.
+            if (item.budgetIncludedIn) continue;
             const selection = overrides[item.id] || {};
             const cost = selectedTransportPrice(item, selection);
             const day = Number.isInteger(item.day) ? trip.days?.find(d => d.n === item.day) : null;
