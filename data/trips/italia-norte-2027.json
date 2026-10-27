@@ -466,16 +466,9 @@
     },
     {
       "id": "language",
-      "title": "Idioma",
-      "text": "Italiano (principal). Inglés ampliamente utilizado en zonas turísticas.",
-      "badge": "Fácil",
-      "tone": "green"
-    },
-    {
-      "id": "currency",
-      "title": "Pagos y moneda",
-      "text": "Euro (€). Llevar algo de efectivo para compras pequeñas; si la terminal ofrece conversión, elegir euros.",
-      "badge": "Tarjetas aceptadas",
+      "title": "Idioma y moneda",
+      "text": "Italiano; inglés útil en zonas turísticas. Euro (€): pagar en euros, llevar algo de efectivo y rechazar la conversión a MXN en terminales.",
+      "badge": "Italiano · EUR",
       "tone": "green"
     },
     {
