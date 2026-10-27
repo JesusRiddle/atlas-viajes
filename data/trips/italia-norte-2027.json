@@ -230,7 +230,7 @@
       "am": "1. Desayunar y tomar el autobús ATC hacia Portovenere, tras comprobar parada, línea y posibles cambios de servicio.\n2. Pasear por el puerto de casas de colores y entrar al casco antiguo por su puerta histórica.\n3. Recorrer Via Giovanni Capellini con calma hasta la zona de la iglesia de San Pietro.",
       "pm": "1. Visitar la iglesia de San Pietro y sus miradores sobre el mar; observar Grotta Byron desde zonas seguras.\n2. Almorzar sin prisas en Portovenere.\n3. Subir al Castello Doria solo si está abierto y apetece caminar más; visita opcional.",
       "night": "1. Regresar a La Spezia en autobús ATC con margen, sin depender del último servicio.\n2. Cenar cerca del hotel y preparar la excursión del sábado a Cinque Terre.",
-      "mobility": "• *Casa Danè → parada ATC:* Identificar la parada y caminar desde el alojamiento próximo a La Spezia Centrale.\n• *La Spezia → Portovenere:* ATC línea P desde Via Chiodo Portici: A) 08:55→09:30; B) 09:25→10:00; C) 09:55→10:30 (35 min). Horarios verificados como referencia para viernes 06/11/2026, no confirmados para 09/04/2027.\n• *Recorrido a pie:* Puerto → puerta histórica → Via Giovanni Capellini → San Pietro → miradores de Grotta Byron; subida opcional al Castello Doria.\n• *Portovenere → La Spezia:* Confirmar parada, frecuencia y posibles transbordos, y regresar con suficiente margen.\n• *Regreso y precio:* Pendientes de cotizar y seleccionar; confirmar obras y servicios de lanzadera en Cavo. Horarios: https://www.atcesercizio.it/linee-e-orari/ .\n• *Portovenere → La Spezia:* desde Portovenere, A) 16:55→17:32 Via Chiodo Giardini; B) 17:25→18:02; C) 17:55→18:32. Directos de 37 minutos; viernes 06/11/2026 como referencia, confirmar para 09/04/2027. El regreso termina en Via Chiodo Giardini, distinta de Via Chiodo Portici (ida).",
+      "mobility": "• *Casa Danè → parada ATC:* Identificar la parada y caminar desde el alojamiento próximo a La Spezia Centrale.\n• *La Spezia → Portovenere:* ATC línea P desde Via Chiodo Portici: A) 08:55→09:30; B) 09:25→10:00; C) 09:55→10:30 (35 min). Horarios verificados como referencia para viernes 06/11/2026, no confirmados para 09/04/2027.\n• *Recorrido a pie:* Puerto → puerta histórica → Via Giovanni Capellini → San Pietro → miradores de Grotta Byron; subida opcional al Castello Doria.\n• *Portovenere → La Spezia:* Confirmar parada, frecuencia y posibles transbordos, y regresar con suficiente margen.\n• *Regreso y precio:* Pendientes de cotizar y seleccionar; confirmar obras y servicios de lanzadera en Cavo. Horarios: https://www.atcesercizio.it/linee-e-orari/ .\n• *Portovenere → La Spezia:* desde Portovenere, A) 16:55→17:32 Via Chiodo Giardini; B) 17:25→18:02; C) 17:55→18:32. Directos de 37 minutos; viernes 06/11/2026 como referencia, confirmar para 09/04/2027. El regreso termina en Via Chiodo Giardini, distinta de Via Chiodo Portici (ida).\n• *Dónde abordar y bajar:* IDA: La Spezia Via Chiodo Portici (parada línea P dirección Portovenere) → Portovenere capolinea. VUELTA: Portovenere capolinea (línea P dirección La Spezia/Sarzana) → bajar en La Spezia Via Chiodo Giardini; NO es la misma parada de ida. Paradas: https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Portici%20bus%20stop%20La%20Spezia ; https://www.google.com/maps/search/?api=1&query=Portovenere%20capolinea%20autobus%20ATC ; https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Giardini%20bus%20stop%20La%20Spezia . Confirmar poste, desvíos y destino mostrado en vehículo.\n• *Boleto ATC:* tarifa de referencia código 03 en papel €2.50 por trayecto (€5 ida y vuelta); alternativa móvil DropTicket extraurbano Fascia 0–22 km €3 por trayecto (€6 ida y vuelta). Para app: buscar La Spezia, seleccionar Fascia 0–22 km y pagar con tarjeta POCO ANTES de abordar: la validación es automática al comprar y la vigencia es limitada; mostrar billete activo al conductor. En papel: comprar antes de subir y timbrar en la máquina al entrar. En La Spezia hay máquina en Piazza Chiodo, y otra en Portovenere capolinea. NO usar boleto urbano La Spezia ni Cinque Terre Card. Consultar https://www.atcesercizio.it/biglietti-da-smartphone/ y https://www.atcesercizio.it/punti-vendita/ . Tarifas y normas se reconfirman para abril 2027.",
       "note": "• *Desvíos ATC:* Comprobar si siguen vigentes las restricciones de la línea P y el transbordo en Cavo para abril de 2027.\n• *Billetes:* Confirmar tarifa y compra con ATC; ningún transporte está reservado.\n• *Castello Doria:* Opcional; comprobar apertura y precio para la fecha.\n• *Seguridad:* Evitar rocas y bordes expuestos si hay viento u oleaje.\n• *Plan B:* Con lluvia, dedicar más tiempo al casco antiguo; barco únicamente si está operando y el mar lo permite.",
       "spend": null,
       "places": [
@@ -253,12 +253,24 @@
       "boardingGuide": "Puntos de embarque y llegada (Maps):\nLa Spezia Portovenere ATC bus stop via Chiodo: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Portovenere%20ATC%20bus%20stop%20via%20Chiodo\nPortovenere ATC bus terminal: https://www.google.com/maps/search/?api=1&query=Portovenere%20ATC%20bus%20terminal\nVerificar andén o poste exacto antes de abordar. Para Portovenere, ubicaciones orientativas: confirmar el poste oficial al elegir autobús.",
       "mobilityLinks": [
         {
-          "label": "Mapa: La Spezia Portovenere ATC bus stop via Chiodo",
-          "url": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Portovenere%20ATC%20bus%20stop%20via%20Chiodo"
+          "label": "Mapa: Ida · Via Chiodo Portici · La Spezia (línea P a Portovenere)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Portici%20bus%20stop%20La%20Spezia"
         },
         {
-          "label": "Mapa: Portovenere ATC bus terminal",
-          "url": "https://www.google.com/maps/search/?api=1&query=Portovenere%20ATC%20bus%20terminal"
+          "label": "Mapa: Portovenere · capolinea ATC · llegada y salida",
+          "url": "https://www.google.com/maps/search/?api=1&query=Portovenere%20capolinea%20autobus%20ATC"
+        },
+        {
+          "label": "Mapa: Regreso · Via Chiodo Giardini · La Spezia (bajada)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Giardini%20bus%20stop%20La%20Spezia"
+        },
+        {
+          "label": "ATC · Horarios línea P",
+          "url": "https://www.atcesercizio.it/linee-e-orari/"
+        },
+        {
+          "label": "ATC · Comprar con DropTicket",
+          "url": "https://www.atcesercizio.it/biglietti-da-smartphone/"
         }
       ]
     },
@@ -1449,7 +1461,7 @@
           "id": "A",
           "provider": "ATC Esercizio · línea P, Casano–Portovenere",
           "status": "planning",
-          "selectedFare": "ref",
+          "selectedFare": "digital",
           "journeys": [
             {
               "direction": "outbound",
@@ -1480,21 +1492,34 @@
           ],
           "fares": [
             {
-              "id": "ref",
-              "name": "Tarifa oficial pendiente de consulta",
-              "price": null,
+              "id": "digital",
+              "name": "DropTicket · extraurbano 0–22 km (1 viaje)",
+              "price": {
+                "amount": 3,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            },
+            {
+              "id": "paper",
+              "name": "Papel código 03 (tarifa publicada)",
+              "price": {
+                "amount": 2.5,
+                "currency": "EUR"
+              },
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 08:55 → Portovenere 09:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción A: Portovenere 16:55 → Via Chiodo Giardini 17:32 (37 min), según parada verificada de servicio de referencia 06/11/2026.",
+          "notes": "Via Chiodo Portici 08:55 → Portovenere 09:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción A: Portovenere 16:55 → Via Chiodo Giardini 17:32 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027.",
           "quotedAt": "2026-10-27"
         },
         {
           "id": "B",
           "provider": "ATC Esercizio · línea P, Casano–Portovenere",
           "status": "planning",
-          "selectedFare": "ref",
+          "selectedFare": "digital",
           "journeys": [
             {
               "direction": "outbound",
@@ -1525,21 +1550,34 @@
           ],
           "fares": [
             {
-              "id": "ref",
-              "name": "Tarifa oficial pendiente de consulta",
-              "price": null,
+              "id": "digital",
+              "name": "DropTicket · extraurbano 0–22 km (1 viaje)",
+              "price": {
+                "amount": 3,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            },
+            {
+              "id": "paper",
+              "name": "Papel código 03 (tarifa publicada)",
+              "price": {
+                "amount": 2.5,
+                "currency": "EUR"
+              },
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 09:25 → Portovenere 10:00 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción B: Portovenere 17:25 → Via Chiodo Giardini 18:02 (37 min), según parada verificada de servicio de referencia 06/11/2026.",
+          "notes": "Via Chiodo Portici 09:25 → Portovenere 10:00 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción B: Portovenere 17:25 → Via Chiodo Giardini 18:02 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027.",
           "quotedAt": "2026-10-27"
         },
         {
           "id": "C",
           "provider": "ATC Esercizio · línea P, Casano–Portovenere",
           "status": "planning",
-          "selectedFare": "ref",
+          "selectedFare": "digital",
           "journeys": [
             {
               "direction": "outbound",
@@ -1570,14 +1608,27 @@
           ],
           "fares": [
             {
-              "id": "ref",
-              "name": "Tarifa oficial pendiente de consulta",
-              "price": null,
+              "id": "digital",
+              "name": "DropTicket · extraurbano 0–22 km (1 viaje)",
+              "price": {
+                "amount": 3,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            },
+            {
+              "id": "paper",
+              "name": "Papel código 03 (tarifa publicada)",
+              "price": {
+                "amount": 2.5,
+                "currency": "EUR"
+              },
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 09:55 → Portovenere 10:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción C: Portovenere 17:55 → Via Chiodo Giardini 18:32 (37 min), según parada verificada de servicio de referencia 06/11/2026.",
+          "notes": "Via Chiodo Portici 09:55 → Portovenere 10:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción C: Portovenere 17:55 → Via Chiodo Giardini 18:32 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1587,21 +1638,37 @@
           "url": "https://www.atcesercizio.it/linee-e-orari/"
         },
         {
-          "label": "ATC · sitio oficial",
-          "url": "https://www.atcesercizio.it/"
+          "label": "ATC · billetes y tarifas",
+          "url": "https://www.atcesercizio.it/biglietti/"
+        },
+        {
+          "label": "ATC · compra desde smartphone / DropTicket",
+          "url": "https://www.atcesercizio.it/biglietti-da-smartphone/"
+        },
+        {
+          "label": "ATC · puntos de venta y máquinas",
+          "url": "https://www.atcesercizio.it/punti-vendita/"
+        },
+        {
+          "label": "ATC · reglas de validación",
+          "url": "https://www.atcesercizio.it/regolamento-di-viaggio/"
         }
       ],
       "boardingLocations": [
         {
-          "name": "La Spezia Portovenere ATC bus stop via Chiodo",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Portovenere%20ATC%20bus%20stop%20via%20Chiodo"
+          "name": "Ida · Via Chiodo Portici · La Spezia (línea P a Portovenere)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Portici%20bus%20stop%20La%20Spezia"
         },
         {
-          "name": "Portovenere ATC bus terminal",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Portovenere%20ATC%20bus%20terminal"
+          "name": "Portovenere · capolinea ATC · llegada y salida",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Portovenere%20capolinea%20autobus%20ATC"
+        },
+        {
+          "name": "Regreso · Via Chiodo Giardini · La Spezia (bajada)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Giardini%20bus%20stop%20La%20Spezia"
         }
       ],
-      "boardingNote": "Ida: Via Chiodo Portici → Portovenere; regreso: Portovenere → Via Chiodo Giardini. Son paradas de distinto sentido. Verificar punto exacto de embarque, desvíos por obras y horario vigente en abril 2027."
+      "boardingNote": "Ida: subir en La Spezia, Via Chiodo Portici, dirección Portovenere. Llegada y regreso: capolinea autobus Portovenere (verificar dársena/poste). Vuelta: bajarse en Via Chiodo Giardini, distinta a Portici; mapa por nombre de parada, verificar poste físico y desvíos el día anterior. ATC: billete en papel código 03 (€2.50 publicado) o DropTicket extraurbano 0–22 km (€3 publicado). App activa automáticamente al pagar (comprar justo antes de subir), mostrar billete electrónico al conductor; papel timbrar en validadora a bordo."
     },
     {
       "id": "train-cinque-terre",
