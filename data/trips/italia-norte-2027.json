@@ -528,7 +528,7 @@
       "am": "1. Desayunar, cerrar equipaje y realizar check-out en Firenze; dirigirse a Firenze Santa Maria Novella (SMN).\n2. Tomar un tren directo de alta velocidad a Milano Centrale. Elegir una salida con margen suficiente para retrasos y para cambiar de tren; el horario 2027 aún no está publicado/cotizado.",
       "pm": "1. En Milano Centrale, cambiar al Malpensa Express hacia la terminal correspondiente; comprobar salida, billete y tiempo de traslado entre andenes.\n2. Objetivo prudente: estar en Milano Malpensa hacia las 18:30–19:00 para el vuelo previsto a las 23:05. Llegar con holgura, ya que los trenes y el vuelo se contratan por separado.\n3. Documentación, seguridad y control de pasaportes según indicaciones de Aeroméxico y del aeropuerto.",
       "night": "1. Vuelo directo Aeroméxico MXP → MEX: salida cotizada el viernes 16 de abril a las 23:05, hora de Italia.\n2. Noche a bordo; llegada prevista a Ciudad de México el sábado 17 de abril a las 04:00, hora local. Migración, aduana y traslado a casa el sábado; domingo 18 libre para descansar.",
-      "mobility": "• *Firenze SMN → Milano Centrale (alta velocidad directa):* A) Italo Prima Business 14:25→16:20 desde €47,90; B) Frecciarossa 9584 14:55→16:50 desde €67; C) Frecciarossa 9540 15:55→17:50 desde €46,90. Referencias viernes 06/11/2026, NO confirmadas para 16/04/2027. Billete de cada operador válido solo según su tarifa/servicio; opciones B/C no cubiertas automáticamente por Italo.\n• *Milano Centrale → Malpensa:* Malpensa Express, unos 50–60 minutos habituales; verificar terminal y estación.\n• *MXP → CDMX:* Vuelo directo Aeroméxico, salida cotizada viernes 16 a las 23:05 y llegada sábado 17 a las 04:00, hora local.",
+      "mobility": "• *Firenze SMN → Milano Centrale (alta velocidad directa):* A) Italo Prima Business 14:25→16:20 desde €47,90; B) Frecciarossa 9584 14:55→16:50 desde €67; C) Frecciarossa 9540 15:55→17:50 desde €46,90. Referencias viernes 06/11/2026, NO confirmadas para 16/04/2027. Billete de cada operador válido solo según su tarifa/servicio; opciones B/C no cubiertas automáticamente por Italo.\n• *Milano Centrale → Malpensa Aeroporto T1 (Malpensa Express):* A) MXP 2962 16:55→17:48; B) MXP 2964 17:25→18:18; C) MXP 2968 18:25→19:18. Cada uno €15 según captura Trenord viernes 06/11/2026, servicios directos 53 min, reconfirmar para 16/04/2027. Las conexiones desde Firenze A/B/C dejan 35 min para cambiar de tren en Milano Centrale; billetes independientes, sin garantía automática ante retrasos. Revisar vía/andén en pantallas; salir del tren en Malpensa T1 y seguir señalización Partenze/Departures.\n• *MXP → CDMX:* Vuelo directo Aeroméxico, salida cotizada viernes 16 a las 23:05 y llegada sábado 17 a las 04:00, hora local.",
       "note": "• *Margen aeroportuario:* Objetivo de llegada a MXP hacia las 18:30–19:00; trenes y vuelo no constituyen conexión protegida.\n• *Reservas:* No fijar visitas con entrada para el viernes. Horarios ferroviarios y vuelo todavía sin comprar.\n• *Descanso:* Llegada a México sábado 17; domingo 18 libre.",
       "spend": null,
       "places": [],
@@ -2416,40 +2416,111 @@
     {
       "id": "airport-return",
       "type": "train",
-      "title": "Milano Centrale → Malpensa",
+      "title": "Milano Centrale → Malpensa Aeroporto T1",
       "day": 14,
       "selectedOption": "A",
       "options": [
         {
           "id": "A",
           "provider": "Trenord · Malpensa Express",
-          "status": "planning",
-          "selectedFare": "ref",
+          "status": "quoted",
+          "selectedFare": "standard",
           "journeys": [
             {
               "direction": "oneway",
               "segments": [
                 {
                   "from": "Milano Centrale",
-                  "to": "Malpensa Aeroporto",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Trenord · Malpensa Express"
+                  "to": "Malpensa Aeroporto T1",
+                  "departure": "2027-04-16T16:55:00+02:00",
+                  "arrival": "2027-04-16T17:48:00+02:00",
+                  "operator": "MXP 2962 · Trenord"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "ref",
-              "name": "Orientativo · pendiente de cotización",
-              "price": null,
+              "id": "standard",
+              "name": "Billete Malpensa Express · tarifa mostrada",
+              "price": {
+                "amount": 15,
+                "currency": "EUR"
+              },
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "16 abril: ~51 min, tarifa histórica de referencia €15 por sentido. Conexión posterior al tren desde Firenze; llegar al aeropuerto con unas 4 horas de margen para vuelo a las 23:05.",
-          "quotedAt": null
+          "notes": "Referencia viernes 06/11/2026. Conecta con opción A Firenze–Milano en unos 35 min (si ambos trenes circulan puntuales). Reserva independiente: tren posterior no garantizado en caso de retraso. Confirmar servicio 16/04/2027, terminal del vuelo, validez temporal y condiciones del billete. Trenord digital adquirido en web/app: sin estampado en validadora; mostrar billete conforme a las reglas vigentes.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "B",
+          "provider": "Trenord · Malpensa Express",
+          "status": "quoted",
+          "selectedFare": "standard",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Malpensa Aeroporto T1",
+                  "departure": "2027-04-16T17:25:00+02:00",
+                  "arrival": "2027-04-16T18:18:00+02:00",
+                  "operator": "MXP 2964 · Trenord"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "standard",
+              "name": "Billete Malpensa Express · tarifa mostrada",
+              "price": {
+                "amount": 15,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia viernes 06/11/2026. Conecta con opción B Firenze–Milano en unos 35 min (si ambos trenes circulan puntuales). Reserva independiente: tren posterior no garantizado en caso de retraso. Confirmar servicio 16/04/2027, terminal del vuelo, validez temporal y condiciones del billete. Trenord digital adquirido en web/app: sin estampado en validadora; mostrar billete conforme a las reglas vigentes.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "C",
+          "provider": "Trenord · Malpensa Express",
+          "status": "quoted",
+          "selectedFare": "standard",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Malpensa Aeroporto T1",
+                  "departure": "2027-04-16T18:25:00+02:00",
+                  "arrival": "2027-04-16T19:18:00+02:00",
+                  "operator": "MXP 2968 · Trenord"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "standard",
+              "name": "Billete Malpensa Express · tarifa mostrada",
+              "price": {
+                "amount": 15,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Referencia viernes 06/11/2026. Conecta con opción C Firenze–Milano en unos 35 min (si ambos trenes circulan puntuales). Reserva independiente: tren posterior no garantizado en caso de retraso. Confirmar servicio 16/04/2027, terminal del vuelo, validez temporal y condiciones del billete. Trenord digital adquirido en web/app: sin estampado en validadora; mostrar billete conforme a las reglas vigentes.",
+          "quotedAt": "2026-10-27"
         }
       ],
       "links": [
@@ -2468,7 +2539,7 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station"
         }
       ],
-      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje."
+      "boardingNote": "Milano Centrale: localizar andén Malpensa Express en pantallas (no es tren de Milano Cadorna). Malpensa Aeroporto T1: bajar y seguir señales Departures/Partenze hacia terminal. Billete digital Trenord, comprobar condiciones vigentes; no validar físicamente si es electrónico. Opción A/B/C vinculadas al tren de Firenze, 35 minutos de conexión programada."
     }
   ],
   "hotels": [
