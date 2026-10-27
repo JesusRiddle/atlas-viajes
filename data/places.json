@@ -3604,5 +3604,41 @@
       "attribution": "Wikimedia Commons",
       "license": "Ver licencia en la ficha"
     }
+  },
+  "italy27-monterosso": {
+    "name": "Monterosso al Mare · Cinque Terre",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Monterosso%20al%20Mare%2C%20Cinque%20Terre%2C%20Liguria%2C%20Italy%2C%20April%202026.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Monterosso%20al%20Mare%2C%20Cinque%20Terre%2C%20Liguria%2C%20Italy%2C%20April%202026.jpg",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia y autor en Wikimedia Commons"
+    }
+  },
+  "italy27-siena-via-citta": {
+    "name": "Via di Città · Siena",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siena%2C%20via%20di%20Citt%C3%A0.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Siena%2C%20via%20di%20Citt%C3%A0.jpg",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia y autor en Wikimedia Commons"
+    }
+  },
+  "italy27-san-pietro-portovenere": {
+    "name": "Chiesa di San Pietro · Portovenere",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portovenere%20-%20Chiesa%20di%20San%20Pietro%20-%202025-09-08%2011-36-19%20001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Portovenere%20-%20Chiesa%20di%20San%20Pietro%20-%202025-09-08%2011-36-19%20001.jpg",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia y autor en Wikimedia Commons"
+    }
+  },
+  "italy27-firenze-cathedral": {
+    "name": "Catedral de Santa Maria del Fiore · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/202612%20Santa%20Maria%20del%20Fiore%20(Florence)%20-%20Facade%2001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:202612%20Santa%20Maria%20del%20Fiore%20(Florence)%20-%20Facade%2001.jpg",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia y autor en Wikimedia Commons"
+    }
   }
 }
