@@ -195,3 +195,15 @@ test('Italia 2027: distribución por fechas y visitas críticas coherentes', () 
  assert.match(trip.days[8].note,/consigna/);
  assert.equal(trip.days[13].date,'2027-04-16');
 });
+
+
+test('Italia 2027 incluye requisitos de entrada y guía universal para futuros viajes', () => {
+ const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+ const ids=trip.practicalIndicators.map(i=>i.id);
+ assert.deepEqual(ids,['solo','pace','language','currency','entry']);
+ const entry=trip.practicalIndicators.find(i=>i.id==='entry');
+ for (const term of ['Pasaporte','ETIAS','EE. UU.','adaptador','230 V']) assert.ok(entry.text.includes(term),'Falta '+term);
+ const guide=fs.readFileSync('docs/trip-editorial-guide.md','utf8');
+ assert.match(guide,/Requisitos prácticos obligatorios para CADA viaje nuevo/);
+ assert.match(guide,/practicalIndicators\.entry/);
+});
