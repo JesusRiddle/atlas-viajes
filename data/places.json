@@ -3403,5 +3403,45 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "attribution": "Terrasque"
     }
+  },
+  "italy27-torino-san-carlo": {
+    "name": "Piazza San Carlo · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza_S._Carlo_Torino.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza_S._Carlo_Torino.jpg",
+      "author": "Wikimedia Commons (ver ficha)",
+      "license": "Ver ficha de Wikimedia Commons",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-spezia-prione": {
+    "name": "Via del Prione · La Spezia",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Spezia_-_Via_del_Prione.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:La_Spezia_-_Via_del_Prione.JPG",
+      "author": "Wikimedia Commons (ver ficha)",
+      "license": "Ver ficha de Wikimedia Commons",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-byron": {
+    "name": "Grotta Byron · Portovenere",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portovenere%2C_grotta_byron.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Portovenere,_grotta_byron.JPG",
+      "author": "Wikimedia Commons (ver ficha)",
+      "license": "Ver ficha de Wikimedia Commons",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-guinigi": {
+    "name": "Torre Guinigi · Lucca",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torre_Guinigi%2C_Guinigi_Tower%2C_Lucca.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Torre_Guinigi,_Guinigi_Tower,_Lucca.jpg",
+      "author": "Wikimedia Commons (ver ficha)",
+      "license": "Ver ficha de Wikimedia Commons",
+      "attribution": "Wikimedia Commons"
+    }
   }
 }
