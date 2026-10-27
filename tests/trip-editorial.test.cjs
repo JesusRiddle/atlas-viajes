@@ -316,18 +316,13 @@ test('Italia 2027: todas las galerías apuntan a fotografías con fuente y créd
 });
 
 
-test('documentación resalta términos clave sin interpretar HTML del JSON', () => {
+test('documentación resalta palabras completas y presenta ETIAS como enlace seguro', () => {
  const component = fs.readFileSync('components/trip.js','utf8');
- assert.match(component, /item\.id === 'entry'/);
- assert.match(component, /safeText\.replace\(/);
+ assert.match(component, /item\.id !== 'entry'/);
+ assert.ok(component.includes(String.raw`\p{L}`));
  assert.match(component, /Pasaporte\|ETIAS\|EES\|visa\|adaptador/);
- assert.match(component, /'<strong>\$1<\/strong>'/);
-});
-
-
-test('destaca visa como palabra completa y convierte ETIAS en enlace oficial seguro', () => {
- const component = fs.readFileSync('components/trip.js','utf8');
- assert.match(component, /\\\\p\\{L\\}/);
- assert.match(component, /travel-europe/);
+ assert.match(component, /'<strong>\$2<\/strong>'/);
+ assert.match(component, /https:\/\/travel-europe\.europa\.eu\/etias/);
  assert.match(component, /noopener noreferrer/);
 });
+
