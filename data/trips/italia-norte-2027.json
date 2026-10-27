@@ -80,7 +80,7 @@
       "date": "2027-04-05",
       "title": "Torino · Museo Egizio y plazas históricas",
       "base": "Milano",
-      "am": "1. Salir temprano desde Milano Centrale a Torino Porta Nuova, con tiempo para caminar unos 15 minutos hasta el Museo Egizio.\n2. Entrada objetivo al Museo Egizio a las 10:00 (alternativa 10:30), pendiente de reserva y del tren disponible. Destinar 2–3 horas; el lunes cierra habitualmente a las 14:00.",
+      "am": "1. Salir temprano desde Milano Centrale a Torino Porta Nuova, con tiempo para caminar unos 15 minutos hasta el Museo Egizio.\n2. Horario objetivo de entrada al Museo Egizio a las 10:00 (alternativa 10:30), pendiente de reserva y del tren disponible. Destinar 2–3 horas; el lunes cierra habitualmente a las 14:00.",
       "pm": "1. Almorzar cerca de Piazza San Carlo y recorrer sus pórticos.\n2. Pasear hacia Piazza Castello y Palazzo Madama (exterior).\n3. Mole Antonelliana solo si queda margen; no añadir otro museo obligatorio.",
       "night": "1. Regresar a Torino Porta Nuova y tomar un tren a Milano Centrale con margen para cenar.\n2. Volver a B&B HOTEL Milano Aosta y descansar.",
       "mobility": "• *Milano Centrale → Torino Porta Nuova:* Comparar alta velocidad (aprox. 1 h–1 h 15 min) y regional (aprox. 1 h 50–2 h); horarios y precios 2027 pendientes.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; calcular margen antes del acceso reservado.\n• *Regreso a Milano:* Volver desde Torino Porta Nuova a Milano Centrale y caminar al hotel.",
@@ -144,19 +144,26 @@
     {
       "n": 6,
       "date": "2027-04-08",
-      "title": "Milano → La Spezia · traslado sin prisas",
+      "title": "Milano → La Spezia · llegada y paseo por el puerto",
       "base": "La Spezia",
-      "am": "1. Check-out en Milano y tren hacia La Spezia Centrale. Elegir tren con tiempo cómodo para llegar y dejar el equipaje.",
-      "pm": "1. Paseo de orientación por el centro de La Spezia, paseo marítimo y descanso.",
-      "night": "1. Cena en La Spezia y preparar la excursión a Portovenere.",
-      "mobility": "• *Milano Centrale → La Spezia Centrale:* Viajar en Intercity o regional según servicio disponible; duración habitual de unas 3–4 horas, pendiente de horario 2027.\n• *Estación → alojamiento:* Llegar a Casa Danè cerca de La Spezia Centrale; confirmar hora de entrega de habitación y consigna.",
-      "note": "• *Traslado:* No sumar Portovenere el mismo día: dispones de una jornada independiente el viernes 9.\n• *Billetes:* Comparar precios y condiciones de cambio antes de reservar.",
+      "am": "1. Desayunar, revisar la habitación y realizar check-out en el B&B HOTEL Milano Aosta.\n2. Caminar hasta Milano Centrale y tomar un tren a La Spezia Centrale, preferentemente a media mañana. Buscar un servicio directo si está disponible y evitar conexiones innecesarias.",
+      "pm": "1. Llegar a La Spezia Centrale, caminar hasta Affittacamere Casa Danè y dejar el equipaje; realizar check-in cuando lo permita el alojamiento.\n2. Almorzar tranquilamente y recorrer Via del Prione y las calles del centro histórico.\n3. Continuar, si el clima acompaña, hacia la zona del puerto y el paseo marítimo de Passeggiata Morin, sin visitas con horario fijo.",
+      "night": "1. Cenar en La Spezia, cerca del centro o del alojamiento.\n2. Comprobar parada, frecuencia y método de pago del autobús ATC a Portovenere para el viernes 9; preparar lo necesario para la excursión y descansar.",
+      "mobility": "• *Hotel → Milano Centrale:* Caminata corta desde B&B HOTEL Milano Aosta; llegar a la estación con tiempo para localizar el andén.\n• *Milano Centrale → La Spezia Centrale:* Preferir tren directo Intercity si existe en la fecha; comparar con alternativas regionales según tiempo total, conexiones y condiciones. Horario y tarifa abril 2027 pendientes.\n• *La Spezia Centrale → Casa Danè:* Alojamiento candidato a pocos pasos de la estación; verificar cuál de sus dos direcciones corresponde a la habitación reservada.\n• *Centro → puerto:* Paseo a pie por Via del Prione hacia Passeggiata Morin; regresar caminando o en transporte urbano si hace falta.",
+      "note": "• *Tren:* Priorizar una salida a media mañana para viajar con calma; el horario de abril 2027 aún no está disponible o confirmado. No reservar un servicio con conexión demasiado justa.\n• *Alojamiento:* Casa Danè figura en dos edificios próximos a la estación. Confirmar dirección exacta, recepción, consigna, check-in y condiciones antes de comprar.\n• *Ritmo:* Tarde de orientación y descanso; Portovenere tiene su propio día completo el viernes 9.\n• *Clima:* El paseo marítimo es flexible: con lluvia, permanecer por el centro histórico y descansar.",
       "spend": null,
       "places": [],
       "transportRefs": [
         "train-milano-la-spezia"
       ],
-      "hotel": "spezia-dane"
+      "hotel": "spezia-dane",
+      "headerPlaces": [
+        "Milano Centrale",
+        "La Spezia Centrale",
+        "Casa Danè · alojamiento candidato",
+        "Via del Prione",
+        "Passeggiata Morin"
+      ]
     },
     {
       "n": 7,
@@ -917,7 +924,7 @@
               "refunds": null
             }
           ],
-          "notes": "Jueves 8 abril: buscar tren directo hacia La Spezia; jornada de traslado sin excursión adicional. Horarios y tarifa 2027 pendientes.",
+          "notes": "Jueves 8 de abril: comparar tren directo Intercity desde Milano Centrale hasta La Spezia Centrale con alternativas regionales. Preferencia por salida a media mañana, llegada a primeras horas de la tarde y sin transbordos; precios y horarios de 2027 pendientes de publicación.",
           "quotedAt": null
         }
       ],
