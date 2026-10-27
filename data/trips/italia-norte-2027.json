@@ -102,16 +102,23 @@
     {
       "n": 4,
       "date": "2027-04-06",
-      "title": "Milano I · La Última Cena y centro histórico",
+      "title": "Milano I · La Última Cena, Castello Sforzesco y centro",
       "base": "Milano",
-      "am": "1. Visita al Cenacolo Vinciano en el horario que se consiga reservar para el martes; acudir 30 minutos antes con identificación.\n2. Duomo y terrazas únicamente en horario compatible con la entrada nominativa.",
-      "pm": "1. Recorrer la Galleria Vittorio Emanuele II y Piazza della Scala.\n2. Pinacoteca di Brera solo si queda tiempo; el barrio de Brera sirve de alternativa sin reserva.",
-      "night": "1. Paseo breve por barrio Brera o Navigli; cena.",
-      "mobility": "Metro y caminatas por Milano. Reservas anticipadas para Cenacolo, terrazas del Duomo y Brera.",
-      "note": "Prioridad absoluta: Cenacolo con reserva nominativa martes 6 o miércoles 7. Repartir Duomo, terrazas y Brera entre ambos días según el horario confirmado, evitando visitas incompatibles.",
+      "am": "1. Dirigirse a Santa Maria delle Grazie para visitar el Cenacolo Vinciano, si la reserva se consigue para el martes. Llegar al museo 30 minutos antes de la franja asignada, con identificación; la visita dura 15 minutos.\n2. Si la entrada es por la tarde o quedó para el miércoles 7, aprovechar la mañana para pasear por el exterior del Castello Sforzesco y Parco Sempione, sin reservar otro museo.",
+      "pm": "1. Visitar Piazza del Duomo, el interior de la catedral y las terrazas solo si el horario confirmado del Cenacolo deja tiempo suficiente (calcular al menos 2 horas para catedral y terrazas).\n2. Pasear por Galleria Vittorio Emanuele II y Piazza della Scala; trasladar el Duomo al miércoles 7 si el martes queda ajustado.",
+      "night": "1. Cena por el centro de Milano o el barrio de Brera; paseo corto y regreso al B&B HOTEL Milano Aosta.",
+      "mobility": "Desde Milano Centrale, usar metro hacia la zona de Santa Maria delle Grazie o Piazza del Duomo y continuar a pie. Castello Sforzesco/Parco Sempione están próximos a Santa Maria delle Grazie; verificar tiempos reales en el mapa. No hay billetes urbanos ni entradas compradas.",
+      "note": "Prioridad absoluta: La Última Cena martes 6 o miércoles 7, según disponibilidad. El museo exige boleto nominativo, reserva previa y presentarse 30 minutos antes. Venta para abril 2027 prevista en diciembre 2026; aún sin reservar. No comprar Duomo/terrazas o Brera hasta tener la franja del Cenacolo. La Pinacoteca di Brera queda preferentemente para el miércoles 7 y también requiere reserva.",
       "spend": null,
       "places": [],
-      "hotel": "milano-aosta"
+      "hotel": "milano-aosta",
+      "headerPlaces": [
+        "Cenacolo Vinciano · reserva pendiente",
+        "Santa Maria delle Grazie",
+        "Castello Sforzesco · exterior",
+        "Duomo di Milano",
+        "Galleria Vittorio Emanuele II"
+      ]
     },
     {
       "n": 5,
@@ -122,7 +129,7 @@
       "pm": "1. Duomo y terrazas si siguen pendientes y hay disponibilidad; Piazza della Scala y Galleria Vittorio Emanuele II como paseo flexible.",
       "night": "1. Cena en Milano y preparar equipaje para el traslado del jueves.",
       "mobility": "Metro y caminatas por Milano.",
-      "note": "Miércoles 7 es el respaldo prioritario para La Última Cena si no se consigue martes 6. El resto del día se adapta a esa reserva; no comprar entradas incompatibles.",
+      "note": "Miércoles 7 es respaldo de La Última Cena si no se consigue para el martes 6. Pinacoteca di Brera exige reserva; coordinar Duomo/terrazas solo después de fijar el Cenacolo. No duplicar visitas realizadas el martes.",
       "spend": null,
       "places": [],
       "hotel": "milano-aosta"
@@ -578,7 +585,7 @@
       [
         {
           "title": "La Última Cena · Cenacolo Vinciano (Milano)",
-          "description": "Imprescindible: martes 6 o miércoles 7 de abril en Milano, cualquier horario compatible. Entrada nominativa; llegar 30 minutos antes. Ambos días son ahora de estancia en Milano: NO es necesario ajustar el tren a La Spezia. Apertura de cupos de 2027 pendiente de confirmar.",
+          "description": "Prioridad imprescindible: reservar martes 6 o miércoles 7 abril; ambos días se duerme en Milano. Visita de 15 minutos, entrada nominativa y llegada 30 minutos antes. Venta oficial de abril 2027 prevista para diciembre 2026; confirmar apertura exacta. No reservar entradas de Duomo o Brera incompatibles.",
           "links": [
             {
               "label": "Reserva oficial · Vivaticket",
@@ -659,7 +666,7 @@
         },
         {
           "title": "Pinacoteca di Brera (Milano)",
-          "description": "Martes 6 o miércoles 7 abril según horarios del Cenacolo y Duomo.",
+          "description": "Preferentemente miércoles 7 de abril, si encaja con la reserva del Cenacolo. Abre habitualmente martes a domingo de 08:30 a 19:15 (último ingreso 18:00); reserva obligatoria en Brera Booking. Verificar calendario 2027.",
           "links": [
             {
               "label": "Pinacoteca di Brera · oficial",
