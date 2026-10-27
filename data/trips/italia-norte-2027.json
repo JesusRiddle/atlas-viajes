@@ -168,19 +168,26 @@
     {
       "n": 7,
       "date": "2027-04-09",
-      "title": "Portovenere · puerto y costa de Liguria",
+      "title": "Portovenere · San Pietro, Grotta Byron y casco histórico",
       "base": "La Spezia",
-      "am": "1. Autobús desde La Spezia a Portovenere. Recorrer el puerto y el casco histórico.",
-      "pm": "1. Chiesa di San Pietro, vistas de Grotta di Byron y miradores; tiempo para comer y pasear sin prisas.",
-      "night": "1. Regreso en autobús a La Spezia y descanso.",
-      "mobility": "• *La Spezia → Portovenere:* Autobús ATC con tiempo aproximado de 30–45 minutos por trayecto, sujeto a servicio y tráfico.\n• *Paseo local:* Casco histórico, puerto, iglesia de San Pietro y miradores principalmente a pie.\n• *Regreso:* Comprobar paradas, frecuencia y última salida del autobús a La Spezia.",
-      "note": "• *Clima:* Con lluvia o viento fuerte, adaptar miradores y actividades costeras.\n• *Alternativa:* Barco solo si opera ese día y el estado del mar permite el servicio.",
+      "am": "1. Desayunar y tomar el autobús ATC hacia Portovenere, tras comprobar parada, línea y posibles cambios de servicio.\n2. Pasear por el puerto de casas de colores y entrar al casco antiguo por su puerta histórica.\n3. Recorrer Via Giovanni Capellini con calma hasta la zona de la iglesia de San Pietro.",
+      "pm": "1. Visitar la iglesia de San Pietro y sus miradores sobre el mar; observar Grotta Byron desde zonas seguras.\n2. Almorzar sin prisas en Portovenere.\n3. Subir al Castello Doria solo si está abierto y apetece caminar más; visita opcional.",
+      "night": "1. Regresar a La Spezia en autobús ATC con margen, sin depender del último servicio.\n2. Cenar cerca del hotel y preparar la excursión del sábado a Cinque Terre.",
+      "mobility": "• *Casa Danè → parada ATC:* Identificar la parada y caminar desde el alojamiento próximo a La Spezia Centrale.\n• *La Spezia → Portovenere:* Autobús ATC línea P o variante 11/P según servicio; referencia de 30–45 min, sin horario confirmado para abril de 2027.\n• *Recorrido a pie:* Puerto → puerta histórica → Via Giovanni Capellini → San Pietro → miradores de Grotta Byron; subida opcional al Castello Doria.\n• *Portovenere → La Spezia:* Confirmar parada, frecuencia y posibles transbordos, y regresar con suficiente margen.",
+      "note": "• *Desvíos ATC:* Comprobar si siguen vigentes las restricciones de la línea P y el transbordo en Cavo para abril de 2027.\n• *Billetes:* Confirmar tarifa y compra con ATC; ningún transporte está reservado.\n• *Castello Doria:* Opcional; comprobar apertura y precio para la fecha.\n• *Seguridad:* Evitar rocas y bordes expuestos si hay viento u oleaje.\n• *Plan B:* Con lluvia, dedicar más tiempo al casco antiguo; barco únicamente si está operando y el mar lo permite.",
       "spend": null,
       "places": [],
       "transportRefs": [
         "bus-portovenere"
       ],
-      "hotel": "spezia-dane"
+      "hotel": "spezia-dane",
+      "headerPlaces": [
+        "Porto Venere · puerto",
+        "Via Giovanni Capellini",
+        "Chiesa di San Pietro",
+        "Grotta Byron · miradores",
+        "Castello Doria · opcional"
+      ]
     },
     {
       "n": 8,
@@ -982,7 +989,7 @@
               "refunds": null
             }
           ],
-          "notes": "Viernes 9 abril: excursión de día completo en autobús ATC desde La Spezia. Confirmar ruta, frecuencias y último regreso.",
+          "notes": "Viernes 9 abril 2027: excursión por autobús ATC línea P/11-P según temporada, duración orientativa 30–45 min. Consultar desvíos por obras y posible conexión mediante lanzadera en Cavo, horarios, paradas, tarifas y último regreso. Sin billetes comprados.",
           "quotedAt": null
         }
       ],
