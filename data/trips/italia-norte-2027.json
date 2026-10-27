@@ -60,9 +60,9 @@
       "base": "Milano",
       "am": "1. Continuación del vuelo nocturno directo MEX → MXP; no programar visitas antes de aterrizar.\n2. Preparar pasaporte y dirección del alojamiento para los controles de entrada.",
       "pm": "1. Aterrizaje previsto en Milano Malpensa (MXP) el domingo 4 de abril a las 18:20, hora local; pasar control de pasaportes y, si corresponde, registro fronterizo EES.\n2. Recoger equipaje si lo hubiera y seguir las indicaciones hacia la estación ferroviaria de la terminal de llegada. No reservar un tren con salida ajustada al aterrizaje.",
-      "night": "1. Tomar el Malpensa Express hacia Milano Centrale (recorrido habitual de unos 50–60 minutos, horario y precio pendientes de consultar).\n2. Caminar desde Milano Centrale hasta B&B HOTEL Milano Aosta, candidato de alojamiento frente a la estación; realizar check-in según horario confirmado.\n3. Cena sencilla cerca del hotel, preparar lo necesario para Torino el lunes y descansar.",
+      "night": "1. Tomar Malpensa Express hasta Milano Centrale, sujeto al horario real tras migración y salida del aeropuerto.\n2. Caminar al B&B HOTEL Milano Aosta (candidato sin reservar), frente a la estación, y realizar check-in.\n3. Cenar algo cerca y descansar para la excursión a Torino del lunes.",
       "mobility": "MXP → Milano Centrale: Malpensa Express directo, sin horario comprado ni precio confirmado. Desde Milano Centrale al B&B HOTEL Milano Aosta: trayecto corto a pie. Verificar terminal de llegada y último servicio si cambia el vuelo.",
-      "note": "Llegada a las 18:20 cotizada, no comprada. Migración/EES y salida del aeropuerto pueden demorar; confirmar check-in tardío del hotel y avisar la hora prevista. Si se pierde el último tren, consultar transporte alternativo autorizado, sin asumir tarifa. Sin entradas ni actividades turísticas el domingo.",
+      "note": "El vuelo y hotel siguen sin reservar. Prever controles de pasaporte/EES y confirmar la posibilidad de check-in nocturno; sin actividades turísticas programadas.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -72,7 +72,8 @@
         "Milano Malpensa (MXP) · llegada 18:20",
         "Milano Centrale",
         "B&B HOTEL Milano Aosta · candidato, no reservado"
-      ]
+      ],
+      "hotel": "milano-aosta"
     },
     {
       "n": 3,
@@ -88,7 +89,8 @@
       "places": [],
       "transportRefs": [
         "train-torino"
-      ]
+      ],
+      "hotel": "milano-aosta"
     },
     {
       "n": 4,
@@ -101,7 +103,8 @@
       "mobility": "Metro y caminatas por Milano. Reservas anticipadas para Cenacolo, terrazas del Duomo y Brera.",
       "note": "Prioridad absoluta: Cenacolo con reserva nominativa martes 6 o miércoles 7. Repartir Duomo, terrazas y Brera entre ambos días según el horario confirmado, evitando visitas incompatibles.",
       "spend": null,
-      "places": []
+      "places": [],
+      "hotel": "milano-aosta"
     },
     {
       "n": 5,
@@ -114,7 +117,8 @@
       "mobility": "Metro y caminatas por Milano.",
       "note": "Miércoles 7 es el respaldo prioritario para La Última Cena si no se consigue martes 6. El resto del día se adapta a esa reserva; no comprar entradas incompatibles.",
       "spend": null,
-      "places": []
+      "places": [],
+      "hotel": "milano-aosta"
     },
     {
       "n": 6,
@@ -130,7 +134,8 @@
       "places": [],
       "transportRefs": [
         "train-milano-la-spezia"
-      ]
+      ],
+      "hotel": "spezia-dane"
     },
     {
       "n": 7,
@@ -146,7 +151,8 @@
       "places": [],
       "transportRefs": [
         "bus-portovenere"
-      ]
+      ],
+      "hotel": "spezia-dane"
     },
     {
       "n": 8,
@@ -162,7 +168,8 @@
       "places": [],
       "transportRefs": [
         "train-cinque-terre"
-      ]
+      ],
+      "hotel": "spezia-dane"
     },
     {
       "n": 9,
@@ -179,7 +186,8 @@
       "transportRefs": [
         "train-la-spezia-lucca",
         "train-lucca-firenze"
-      ]
+      ],
+      "hotel": "firenze-miacara"
     },
     {
       "n": 10,
@@ -195,7 +203,8 @@
       "places": [],
       "transportRefs": [
         "train-siena"
-      ]
+      ],
+      "hotel": "firenze-miacara"
     },
     {
       "n": 11,
@@ -208,7 +217,8 @@
       "mobility": "Centro histórico a pie.",
       "note": "Martes 13: Accademia y Cúpula requieren franjas reservadas compatibles, con tiempo entre accesos. Consultar si un billete combinado Accademia–Bargello de 48 h compensa: visitar Bargello el jueves podría exceder su vigencia según las horas de entrada.",
       "spend": null,
-      "places": []
+      "places": [],
+      "hotel": "firenze-miacara"
     },
     {
       "n": 12,
@@ -221,7 +231,8 @@
       "mobility": "Centro histórico a pie.",
       "note": "Miércoles 14: verificar horarios 2027 y entrada disponible en Uffizi; Santa Croce queda flexible si hay cambios.",
       "spend": null,
-      "places": []
+      "places": [],
+      "hotel": "firenze-miacara"
     },
     {
       "n": 13,
@@ -234,7 +245,8 @@
       "mobility": "A pie y autobús urbano opcional.",
       "note": "Jueves 15: no añadir excursiones largas antes del viaje. Si alguna entrada de Accademia/Uffizi/Cúpula obliga a cambiar días, este es el margen de reorganización.",
       "spend": null,
-      "places": []
+      "places": [],
+      "hotel": "firenze-miacara"
     },
     {
       "n": 14,
@@ -245,7 +257,7 @@
       "pm": "1. En Milano Centrale, cambiar al Malpensa Express hacia la terminal correspondiente; comprobar salida, billete y tiempo de traslado entre andenes.\n2. Objetivo prudente: estar en Milano Malpensa hacia las 18:30–19:00 para el vuelo previsto a las 23:05. Llegar con holgura, ya que los trenes y el vuelo se contratan por separado.\n3. Documentación, seguridad y control de pasaportes según indicaciones de Aeroméxico y del aeropuerto.",
       "night": "1. Vuelo directo Aeroméxico MXP → MEX: salida cotizada el viernes 16 de abril a las 23:05, hora de Italia.\n2. Noche a bordo; llegada prevista a Ciudad de México el sábado 17 de abril a las 04:00, hora local. Migración, aduana y traslado a casa el sábado; domingo 18 libre para descansar.",
       "mobility": "Firenze SMN → Milano Centrale (alta velocidad; ~2 h habituales) → Malpensa Express (~50–60 min habituales) → vuelo Aeroméxico MXP → MEX. Los trenes están por cotizar; no existe conexión protegida con el avión.",
-      "note": "No fijar actividades antes del regreso. El tren Firenze→Milano y Malpensa Express no son conexiones protegidas por la aerolínea; prever alternativa ferroviaria ante incidencias. Llegar a MXP con unas cuatro horas de margen. Vuelo no comprado; llegada a México sábado 17.",
+      "note": "Trenes sin reservar y no protegidos por Aeroméxico: prever amplios márgenes y alternativa ante incidencias. Evitar actividades con entrada este día. Vuelo cotizado, no comprado; llegada a México sábado 17.",
       "spend": null,
       "places": [],
       "headerPlaces": [
