@@ -19,15 +19,15 @@
   "bases": [
     [
       "Milano",
-      3
+      4
     ],
     [
       "La Spezia",
-      2
+      3
     ],
     [
       "Firenze",
-      7
+      5
     ]
   ],
   "work": 10,
@@ -88,43 +88,71 @@
     {
       "n": 4,
       "date": "2027-04-06",
-      "title": "Milano · La Última Cena, Duomo y Brera",
+      "title": "Milano I · La Última Cena y centro histórico",
       "base": "Milano",
       "am": "1. Visitar el Cenacolo Vinciano a la hora que se consiga reservar el martes 6; acudir 30 minutos antes con identificación.\n2. Visitar Duomo y terrazas solo en una franja que no coincida con esa entrada.",
       "pm": "1. Recorrer la Galleria Vittorio Emanuele II y Piazza della Scala.\n2. Pinacoteca di Brera solo si queda tiempo; el barrio de Brera sirve de alternativa sin reserva.",
       "night": "1. Paseo breve por barrio Brera o Navigli; cena.",
       "mobility": "Metro y caminatas por Milano. Reservas anticipadas para Cenacolo, terrazas del Duomo y Brera.",
-      "note": "La Última Cena es imprescindible y aún no tiene boleto. Respaldo miércoles 7 temprano, retrasando el tren a La Spezia y prescindiendo de Portovenere si es necesario. Comprar el resto de entradas después de fijar esta visita.",
+      "note": "Prioridad absoluta: Cenacolo con reserva nominativa martes 6 o miércoles 7. Repartir Duomo, terrazas y Brera entre ambos días según el horario confirmado, evitando visitas incompatibles.",
       "spend": null,
       "places": []
     },
     {
       "n": 5,
       "date": "2027-04-07",
-      "title": "Milano → La Spezia · Portovenere",
-      "base": "La Spezia",
-      "am": "1. Check-out y tren Milano → La Spezia; dejar equipaje en el alojamiento.\n2. Si La Última Cena se consigue solo para este miércoles 7, visitarla primero y tomar un tren posterior.",
-      "pm": "1. Portovenere: Chiesa di San Pietro, Grotta di Byron y paseo marítimo.",
-      "night": "1. Regreso a La Spezia.",
-      "mobility": "Tren Milano → La Spezia; autobús a Portovenere.",
-      "note": "Portovenere depende del horario real de llegada a La Spezia y del clima. Si el Cenacolo queda para el miércoles, cancelar Portovenere sin cambiar de alojamiento.",
+      "title": "Milano II · Brera, Duomo y margen para el Cenacolo",
+      "base": "Milano",
+      "am": "1. Visitar la Pinacoteca di Brera si no se pudo el martes, o recorrer el barrio con calma.",
+      "pm": "1. Duomo y terrazas en la franja disponible; paseo por Piazza della Scala y Galleria Vittorio Emanuele II.",
+      "night": "1. Cena en Milano y preparar equipaje para el traslado del jueves.",
+      "mobility": "Metro y caminatas por Milano.",
+      "note": "Miércoles 7 es el respaldo prioritario para La Última Cena si no se consigue martes 6. El resto del día se adapta a esa reserva; no comprar entradas incompatibles.",
       "spend": null,
-      "places": [],
-      "transportRefs": [
-        "train-milano-la-spezia",
-        "bus-portovenere"
-      ]
+      "places": []
     },
     {
       "n": 6,
       "date": "2027-04-08",
-      "title": "Cinque Terre en tren",
+      "title": "Milano → La Spezia · traslado sin prisas",
       "base": "La Spezia",
-      "am": "1. Tren a Riomaggiore y continuación a Manarola; visitar miradores y centros históricos.",
-      "pm": "1. Vernazza y, si alcanza el tiempo, Monterosso. Corniglia queda opcional por su acceso en cuesta/escaleras.",
+      "am": "1. Check-out en Milano y tren hacia La Spezia Centrale. Elegir tren con tiempo cómodo para llegar y dejar el equipaje.",
+      "pm": "1. Paseo de orientación por el centro de La Spezia, paseo marítimo y descanso.",
+      "night": "1. Cena en La Spezia y preparar la excursión a Portovenere.",
+      "mobility": "Tren Milano Centrale → La Spezia Centrale; trayectos locales a pie.",
+      "note": "Jueves 8 reservado al traslado. No intentar Portovenere este día; las excursiones costeras tienen días completos separados.",
+      "spend": null,
+      "places": [],
+      "transportRefs": [
+        "train-milano-la-spezia"
+      ]
+    },
+    {
+      "n": 7,
+      "date": "2027-04-09",
+      "title": "Portovenere · puerto y costa de Liguria",
+      "base": "La Spezia",
+      "am": "1. Autobús desde La Spezia a Portovenere. Recorrer el puerto y el casco histórico.",
+      "pm": "1. Chiesa di San Pietro, vistas de Grotta di Byron y miradores; tiempo para comer y pasear sin prisas.",
+      "night": "1. Regreso en autobús a La Spezia y descanso.",
+      "mobility": "Autobús ATC ida y vuelta; Portovenere a pie.",
+      "note": "Día independiente de Portovenere. Comprobar frecuencias y última salida del autobús, condiciones del mar y meteorología; barco solo opcional.",
+      "spend": null,
+      "places": [],
+      "transportRefs": [
+        "bus-portovenere"
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2027-04-10",
+      "title": "Cinque Terre · pueblos en tren",
+      "base": "La Spezia",
+      "am": "1. Tren a Riomaggiore y Manarola; recorrer miradores y calles principales.",
+      "pm": "1. Continuar a Vernazza y, si apetece, Monterosso. Corniglia queda como alternativa según energía y condiciones.",
       "night": "1. Regreso a La Spezia.",
-      "mobility": "Tren regional entre pueblos.",
-      "note": "Priorizar tres o cuatro pueblos bien recorridos frente a intentar los cinco. Trenes y senderos sujetos a servicio y condiciones; ajustar el tren de regreso al último pueblo visitado.",
+      "mobility": "Trenes regionales entre pueblos; no depender de senderos.",
+      "note": "Priorizar tres o cuatro pueblos sin apresurarse. Comparar billetes frente a Cinque Terre Treno Card y consultar avisos meteorológicos.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -132,15 +160,15 @@
       ]
     },
     {
-      "n": 7,
-      "date": "2027-04-09",
+      "n": 9,
+      "date": "2027-04-11",
       "title": "La Spezia → Lucca → Firenze",
       "base": "Firenze",
-      "am": "1. Tren La Spezia → Lucca; dejar el equipaje en una consigna previamente confirmada.",
-      "pm": "1. Pasear por las murallas y Piazza dell’Anfiteatro; Torre Guinigi si el tiempo lo permite.\n2. Recoger equipaje y continuar en tren a Firenze.",
-      "night": "1. Check-in y paseo nocturno por Firenze.",
-      "mobility": "Trenes regionales, con conexiones por verificar.",
-      "note": "Confirmar la consigna, su horario y el tiempo mínimo para llegar al tren. Sin consigna viable, viajar directamente a Firenze y omitir Lucca.",
+      "am": "1. Check-out, tren vía Pisa hacia Lucca; usar consigna confirmada si está abierta el domingo.",
+      "pm": "1. Pasear por las murallas, Piazza dell’Anfiteatro y casco histórico. Recuperar equipaje y continuar en tren hacia Firenze.",
+      "night": "1. Check-in en Firenze y cena cerca del alojamiento.",
+      "mobility": "Trenes regionales con cambio en Pisa y posible consigna en Lucca.",
+      "note": "Domingo 11: confirmar expresamente horario dominical de consigna antes de elegir trenes. Si no está abierta, ir directo a Firenze; no programar museos de Firenze con entrada fija este día.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -149,41 +177,15 @@
       ]
     },
     {
-      "n": 8,
-      "date": "2027-04-10",
-      "title": "Firenze I: David, Cúpula y Museo dell'Opera",
-      "base": "Firenze",
-      "am": "1. Galleria dell’Accademia (David) temprano; traslado a la zona del Duomo.",
-      "pm": "1. Subida reservada a la Cúpula de Brunelleschi y Museo dell’Opera del Duomo, con margen entre accesos.",
-      "night": "1. Paseo por Piazza della Signoria o Ponte Vecchio.",
-      "mobility": "Centro histórico a pie.",
-      "note": "Accademia y Cúpula requieren franjas compatibles; el Brunelleschi Pass incluye el Museo dell’Opera. Confirmar normas de acceso y consigna.",
-      "spend": null,
-      "places": []
-    },
-    {
-      "n": 9,
-      "date": "2027-04-11",
-      "title": "Firenze II: Uffizi, Santa Croce y paseo histórico",
-      "base": "Firenze",
-      "am": "1. Galleria degli Uffizi temprano, preferiblemente con reserva.",
-      "pm": "1. Basilica di Santa Croce desde las 14:00 (horario habitual dominical).",
-      "night": "1. Cena tranquila por el centro.",
-      "mobility": "A pie y autobús si hace falta.",
-      "note": "Uffizi en domingo 11 a primera hora, Santa Croce después de las 14:00 (sujeto a horarios 2027 y celebraciones religiosas). Mantener margen para almorzar.",
-      "spend": null,
-      "places": []
-    },
-    {
       "n": 10,
       "date": "2027-04-12",
-      "title": "Siena: excursión desde Firenze",
+      "title": "Siena · excursión desde Firenze",
       "base": "Firenze",
-      "am": "1. Excursión a Siena: Piazza del Campo y centro medieval.",
-      "pm": "1. Duomo di Siena, Libreria Piccolomini y paseo.",
-      "night": "1. Regreso a Firenze.",
-      "mobility": "Autobús interurbano o tren, por comparar.",
-      "note": "No mezclar Siena con San Gimignano; revisar horarios de la catedral.",
+      "am": "1. Traslado a Siena, visita a Piazza del Campo y calles medievales.",
+      "pm": "1. Duomo, Libreria Piccolomini y centro histórico, sujetos al horario oficial.",
+      "night": "1. Regreso a Firenze y cena.",
+      "mobility": "Autobús interurbano o tren por cotizar, más desplazamiento al centro de Siena.",
+      "note": "Lunes 12: revisar aperturas del complejo de la catedral; no combinar Siena con San Gimignano.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -193,39 +195,39 @@
     {
       "n": 11,
       "date": "2027-04-13",
-      "title": "Firenze III: Bargello, Oltrarno y miradores",
+      "title": "Firenze I · David, Cúpula y Museo dell’Opera",
       "base": "Firenze",
-      "am": "1. Museo Nazionale del Bargello temprano, sujeto a horario 2027.",
-      "pm": "1. Oltrarno, Basilica di San Miniato al Monte y Piazzale Michelangelo al atardecer.",
-      "night": "1. Cena y preparación ligera del traslado ferroviario del miércoles.",
-      "mobility": "A pie en Firenze.",
-      "note": "Museo Bargello y miradores, sin visita adicional obligatoria. La tarde sirve de colchón para reorganizaciones de Firenze; revisar horario del Bargello.",
+      "am": "1. Galleria dell’Accademia temprano; traslado al complejo del Duomo.",
+      "pm": "1. Subida a la Cúpula de Brunelleschi en la franja reservada; Museo dell’Opera del Duomo si hay margen.",
+      "night": "1. Paseo por Piazza della Signoria y Ponte Vecchio.",
+      "mobility": "Centro histórico a pie.",
+      "note": "Martes 13: Accademia y Cúpula requieren franjas reservadas compatibles y controles de acceso. Asegurar ambas antes de fijar el resto.",
       "spend": null,
       "places": []
     },
     {
       "n": 12,
       "date": "2027-04-14",
-      "title": "Fiesole · teatro romano y vistas de Firenze",
+      "title": "Firenze II · Uffizi, Santa Croce y centro",
       "base": "Firenze",
-      "am": "1. Salir sin prisa hacia Fiesole en autobús; recorrer el centro y la Piazza Mino.",
-      "pm": "1. Visitar el área arqueológica y el teatro romano, si está abierta; disfrutar los miradores y volver a Firenze.",
-      "night": "1. Cena en Firenze y descanso.",
-      "mobility": "Autobús entre Firenze y Fiesole; comprobar línea, frecuencia y billetes para abril 2027.",
-      "note": "Excursión de medio día, opcional si llueve o hay que recuperar una reserva de Firenze. El horario habitual del área arqueológica entre abril y septiembre es 09:00–19:00; confirmar calendario 2027. Entrada y autobús todavía por presupuestar.",
+      "am": "1. Gallerie degli Uffizi con entrada horaria temprana.",
+      "pm": "1. Basilica di Santa Croce y paseo por el centro histórico.",
+      "night": "1. Cena y paseo tranquilo por Firenze.",
+      "mobility": "Centro histórico a pie.",
+      "note": "Miércoles 14: verificar horarios 2027 y entrada disponible en Uffizi; Santa Croce queda flexible si hay cambios.",
       "spend": null,
       "places": []
     },
     {
       "n": 13,
       "date": "2027-04-15",
-      "title": "Firenze · San Marco y Museo Galileo",
+      "title": "Firenze III · Bargello, Oltrarno y miradores",
       "base": "Firenze",
-      "am": "1. Visitar el Museo di San Marco para conocer los frescos de Fra Angelico, si su horario de apertura lo permite.",
-      "pm": "1. Museo Galileo, junto al Arno, o paseo por el centro si prefieres una tarde sin museo.",
-      "night": "1. Cena tranquila y preparar equipaje para el traslado del viernes.",
-      "mobility": "Desplazamientos a pie por el centro de Firenze.",
-      "note": "San Marco abre habitualmente de martes a domingo por la mañana; Museo Galileo suele abrir los jueves hasta las 18:00. Confirmar horarios, tarifas y cupos 2027. Ambas visitas son opcionales: el día puede absorber reprogramaciones de Accademia, Cúpula o Uffizi.",
+      "am": "1. Museo Nazionale del Bargello, sujeto a reserva y horario.",
+      "pm": "1. Oltrarno y subida opcional a San Miniato al Monte / Piazzale Michelangelo.",
+      "night": "1. Cena final y preparar equipaje para el regreso del viernes.",
+      "mobility": "A pie y autobús urbano opcional.",
+      "note": "Jueves 15: no añadir excursiones largas antes del viaje. Si alguna entrada de Accademia/Uffizi/Cúpula obliga a cambiar días, este es el margen de reorganización.",
       "spend": null,
       "places": []
     },
@@ -298,8 +300,8 @@
   "local": "Bases ferroviarias: Milano Centrale (Torino y salida a Liguria), La Spezia Centrale (Cinque Terre) y Firenze SMN (Siena y regreso). Portovenere por ATC si el horario permite; Lucca solo con consigna comprobada. Los trenes de abril de 2027 aún no están cotizados: los tiempos son referencias de servicios habituales y las tarifas consultadas corresponden a 2026.",
   "climate": "En abril tendrás un clima *primaveral y variable*: *Milano y Torino, 15–18 °C de día y 5–9 °C de noche*; *Liguria, 16–19 °C y 9–12 °C*; *Toscana, 17–20 °C y 6–10 °C*. Son rangos habituales, no un pronóstico. Puede llover y hacer viento en la costa.\n\n*Qué llevar:* Chamarra impermeable y cortaviento, suéter ligero, ropa por capas, pantalones largos, tenis con buena suela y paraguas compacto. Todo compatible con tu equipaje de cabina.\n\n*Horas de luz:* Del 4 al 16 de abril, amanecerá aproximadamente aproximadamente entre *6:30 y 7:00* y anochecerá entre *19:40 y 20:10* (hora local). Aprovecha la luz para Cinque Terre, Portovenere y miradores; verifica el estado de senderos y barcos si llueve.",
   "solo": "Preferir alojamientos próximos a estaciones y consigna confirmada para Lucca.",
-  "lodgingSummary": "Candidatos principales no reservados: Milano Aosta (4–7 abril, 3 noches), Casa Danè en La Spezia (7–9 abril, 2) y Hotel Mia Cara & SPA en Firenze (9–16 abril, 7). Total supuesto de hospedaje: $26,400 MXN para 12 noches. Verificar precio real, impuestos y cancelación.",
-  "heroLodgingSummary": "12 noches en 3 bases: Milano (3), La Spezia (2) y Firenze (7). Hoteles candidatos, no reservados; $26,400 MXN estimados.",
+  "lodgingSummary": "Hoteles candidatos, no reservados: Milano Aosta (4–8 abril, 4 noches), Casa Danè en La Spezia (8–11 abril, 3 noches) y Hotel Mia Cara & SPA en Firenze (11–16 abril, 5 noches). Total estimado de hospedaje: $25,900 MXN (12 noches), no cotizado.",
+  "heroLodgingSummary": "12 noches en 3 bases: Milano (4), La Spezia (3) y Firenze (5); hoteles candidatos no reservados.",
   "mapPoints": [
     {
       "name": "Milano",
@@ -401,7 +403,7 @@
     {
       "title": "Auditoría logística y reservas · octubre 2026",
       "status": "planning",
-      "note": "Intercambiadas jornadas de Torino (lunes 5) y Milano (martes 6) para respetar cierres habituales. Firenze: Accademia + Cúpula sábado 10; Uffizi + Santa Croce domingo 11; Siena lunes 12; Bargello martes 13. Duraciones, precios y trenes concretos aún por cotizar.",
+      "note": "Milano incluye 6 y 7 abril para asegurar Cenacolo; La Spezia 8–11 abril con Portovenere viernes 9 y Cinque Terre sábado 10; Lucca domingo 11 supeditada a consigna; Siena lunes 12; Accademia y Cúpula martes 13; Uffizi y Santa Croce miércoles 14; Bargello jueves 15.",
       "sources": [
         "https://www.museoegizio.it/en/info/hours/",
         "https://www.santacroceopera.it/en/organise-your-visit/",
@@ -423,7 +425,7 @@
       "officialInfo": "https://cenacolovinciano.org/en/info/",
       "rules": "Entrada nominativa e intransferible, obligatoria para todos; 15 minutos de visita; presentarse 30 minutos antes. Museo cerrado los lunes.",
       "priority": "No comprar entradas incompatibles; organizar otros horarios alrededor del Cenacolo.",
-      "fallback": "Primera preferencia martes 6 en cualquier horario; respaldo miércoles 7 temprano y retrasar traslado a La Spezia, sacrificando Portovenere si hace falta. Si no hay cupo confirmado, reconsiderar fechas antes de adquirir vuelos no reembolsables."
+      "fallback": "Ambas fechas son noches en Milano. Reservar en cualquiera de las dos; viajar a La Spezia jueves 8."
     }
   ],
   "introHighlights": [
@@ -552,7 +554,7 @@
       [
         {
           "title": "La Última Cena · Cenacolo Vinciano (Milano)",
-          "description": "Imprescindible. Martes 6 de abril, cualquier horario; respaldo miércoles 7 por la mañana, antes de salir hacia La Spezia. Reserva nominativa obligatoria, visita de 15 min y llegada 30 min antes. Apertura trimestral anunciada para diciembre de 2026 (febrero–abril de 2027), sin día u hora exactos publicados. Buscar entrada general o visita guiada oficial en italiano/inglés; de agotarse, comprobar nuevas liberaciones. No cerrar vuelos inflexibles sin resolver esta visita.",
+          "description": "Imprescindible: martes 6 o miércoles 7 de abril en Milano, cualquier horario compatible. Entrada nominativa; llegar 30 minutos antes. Ambos días son ahora de estancia en Milano: NO es necesario ajustar el tren a La Spezia. Apertura de cupos de 2027 pendiente de confirmar.",
           "links": [
             {
               "label": "Reserva oficial · Vivaticket",
@@ -566,7 +568,7 @@
         },
         {
           "title": "Galleria dell’Accademia · David (Firenze)",
-          "description": "Sábado 10 de abril, preferentemente a primera hora (08:15–08:30), antes de la Cúpula. Visita esencial: reservar franja horaria oficial para evitar filas y coordinar el resto del día. Tarifa general publicada de referencia €20, más posibles gastos de reserva; verificar precio 2027.",
+          "description": "Martes 13 de abril, preferentemente temprano, antes de la Cúpula. Verificar apertura y reservar horario oficial, aún sin compra.",
           "links": [
             {
               "label": "Accademia · entradas oficiales",
@@ -580,7 +582,7 @@
         },
         {
           "title": "Cúpula de Brunelleschi · Brunelleschi Pass (Firenze)",
-          "description": "Sábado 10 de abril, después de Accademia, con margen de desplazamiento; horario objetivo aproximado 11:00–11:30, no reservado. El Pass (€30 de referencia) exige elegir fecha y hora inmodificables para la subida (463 escalones). Entrada nominativa con documento y depósito obligatorio de bolsas en consigna oficial; incluye Museo dell’Opera y otros monumentos durante tres días.",
+          "description": "Martes 13 de abril, después de Accademia, con horario fijo y margen para el Museo dell’Opera. Verificar condiciones y entradas oficiales.",
           "links": [
             {
               "label": "Brunelleschi Pass oficial",
@@ -594,7 +596,7 @@
         },
         {
           "title": "Gallerie degli Uffizi (Firenze)",
-          "description": "Domingo 11 de abril, reservar acceso temprano para disfrutar la colección sin comprometer Santa Croce por la tarde. Entrada general anticipada de referencia €29; verificar tarifa, calendario y cupos para 2027. Comprar por la plataforma oficial.",
+          "description": "Miércoles 14 de abril, preferiblemente temprano; Santa Croce después. Verificar calendario y tarifas 2027.",
           "links": [
             {
               "label": "Entradas Uffizi oficiales",
@@ -623,7 +625,7 @@
         },
         {
           "title": "Duomo y terrazas de Milano",
-          "description": "Martes 6 de abril, encajar una franja de visita alrededor del horario confirmado del Cenacolo. Revisar modalidades y acceso a terrazas, sin comprar una entrada que se solape con La Última Cena.",
+          "description": "Martes 6 o miércoles 7 de abril, a coordinar con la entrada nominativa de La Última Cena.",
           "links": [
             {
               "label": "Duomo Milano · sitio oficial",
@@ -633,7 +635,7 @@
         },
         {
           "title": "Pinacoteca di Brera (Milano)",
-          "description": "Martes 6 de abril, opción de museo si encaja después de fijar el Cenacolo y el Duomo. Consultar horario y reserva en el sitio oficial; si el día queda cargado, priorizar el paseo por Brera.",
+          "description": "Martes 6 o miércoles 7 abril según horarios del Cenacolo y Duomo.",
           "links": [
             {
               "label": "Pinacoteca di Brera · oficial",
@@ -658,7 +660,7 @@
       [
         {
           "title": "Cinque Terre · trenes y senderos",
-          "description": "Jueves 8 de abril, comparar trenes regionales individuales frente a la Cinque Terre Treno Card según número de desplazamientos y tarifa vigente. Comprobar cierres de senderos, alertas y estado del mar poco antes de salir; no comprar experiencias dependientes del clima con demasiada anticipación.",
+          "description": "Sábado 10 abril: trenes entre pueblos, comprobar tarjeta, cierres y afluencia del fin de semana.",
           "links": [
             {
               "label": "Parque Nacional Cinque Terre",
@@ -668,7 +670,7 @@
         },
         {
           "title": "Santa Croce, Bargello y Torre Guinigi",
-          "description": "Visitas sujetas a horarios, disponibilidad y ritmo: Santa Croce el domingo 11 por la tarde, Bargello el martes 13 y Torre Guinigi durante la escala en Lucca el viernes 9. Confirmar aperturas y entradas cerca de la fecha; ninguna debe desplazar las reservas imprescindibles."
+          "description": "Santa Croce miércoles 14, Bargello jueves 15; Torre Guinigi domingo 11 durante el paso por Lucca solo si la consigna funciona y el tiempo alcanza."
         }
       ]
     ]
@@ -846,7 +848,7 @@
       "id": "train-milano-la-spezia",
       "type": "train",
       "title": "Milano Centrale → La Spezia Centrale",
-      "day": 5,
+      "day": 6,
       "selectedOption": "A",
       "options": [
         {
@@ -877,7 +879,7 @@
               "refunds": null
             }
           ],
-          "notes": "7 abril: buscar Intercity directo, habitualmente unas 3–4 h. Dejar margen para el Cenacolo como plan B por la mañana; Portovenere puede sacrificarse. Tarifa y tren de abril 2027 pendientes.",
+          "notes": "Jueves 8 abril: buscar tren directo hacia La Spezia; jornada de traslado sin excursión adicional. Horarios y tarifa 2027 pendientes.",
           "quotedAt": null
         }
       ],
@@ -892,7 +894,7 @@
       "id": "bus-portovenere",
       "type": "bus",
       "title": "La Spezia ↔ Portovenere · opcional",
-      "day": 5,
+      "day": 7,
       "selectedOption": "A",
       "options": [
         {
@@ -935,7 +937,7 @@
               "refunds": null
             }
           ],
-          "notes": "7 abril: autobús urbano/suburbano hacia Portovenere, alrededor de 30–45 min por sentido. Comprobar línea P/11/P, frecuencia y punto de salida al acercarse la fecha; ferry sujeto a temporada y mar.",
+          "notes": "Viernes 9 abril: excursión de día completo en autobús ATC desde La Spezia. Confirmar ruta, frecuencias y último regreso.",
           "quotedAt": null
         }
       ],
@@ -950,7 +952,7 @@
       "id": "train-cinque-terre",
       "type": "train",
       "title": "La Spezia ↔ Cinque Terre",
-      "day": 6,
+      "day": 8,
       "selectedOption": "A",
       "options": [
         {
@@ -993,7 +995,7 @@
               "refunds": null
             }
           ],
-          "notes": "8 abril: iniciar por Riomaggiore, seguir a Manarola y Vernazza, con Corniglia/Monterosso opcionales. Regreso ejemplificado desde Monterosso; si terminas en otro pueblo, ajustar el origen. Tramos intermedios no cotizados. Comparar billetes sencillos con la Cinque Terre Treno Card de 2027, sin duplicar gastos.",
+          "notes": "Sábado 10 abril: confirmar frecuencias y posible afluencia de fin de semana; priorizar Riomaggiore, Manarola y Vernazza, Monterosso opcional. Revisar tarjeta de tren.",
           "quotedAt": null
         }
       ],
@@ -1012,7 +1014,7 @@
       "id": "train-la-spezia-lucca",
       "type": "train",
       "title": "La Spezia Centrale → Lucca",
-      "day": 7,
+      "day": 9,
       "selectedOption": "A",
       "options": [
         {
@@ -1050,7 +1052,7 @@
               "refunds": null
             }
           ],
-          "notes": "9 abril: prever ~1 h 30–2 h con cambio en Pisa según combinación. Visitar Lucca solo si está confirmada la consigna para llevar equipaje; si no, ir directo a Firenze.",
+          "notes": "Domingo 11 abril: tránsito vía Pisa, Lucca solo si se confirma consigna ABIERTA EN DOMINGO; si no, seguir directo a Firenze.",
           "quotedAt": null
         }
       ],
@@ -1065,7 +1067,7 @@
       "id": "train-lucca-firenze",
       "type": "train",
       "title": "Lucca → Firenze S. M. Novella",
-      "day": 7,
+      "day": 9,
       "selectedOption": "A",
       "options": [
         {
@@ -1096,7 +1098,7 @@
               "refunds": null
             }
           ],
-          "notes": "9 abril: habitualmente ~1 h 20–1 h 45; hay trenes directos. Comprar billete regional con tiempo de visita flexible. Referencia comercial desde €8.90, no tarifa garantizada para la fecha.",
+          "notes": "Domingo 11 abril: tren a Firenze después de visita a Lucca. Si la consigna no opera, sustituir por llegada directa Firenze.",
           "quotedAt": null
         }
       ],
@@ -1154,7 +1156,7 @@
               "refunds": null
             }
           ],
-          "notes": "12 abril: directos habituales ~1 h 30 por trayecto y billete comercial desde €9.80 por sentido. La estación de Siena está fuera del casco antiguo: considerar subida a pie/escaleras móviles o valorar autobús directo.",
+          "notes": "Lunes 12 abril: comparar tren o bus a Siena y horarios del Duomo; viaje de ida y vuelta sin pernocta.",
           "quotedAt": null
         }
       ],
@@ -1269,11 +1271,11 @@
       "name": "B&B HOTEL Milano Aosta",
       "address": "Piazza Duca d’Aosta 16, Milano",
       "checkIn": "2027-04-04",
-      "checkOut": "2027-04-07",
+      "checkOut": "2027-04-08",
       "status": "Candidato principal · no reservado",
-      "rate": "Estimación de planeación: $6,300 MXN total · 3 noches ($2,100/noche). No es cotización.",
+      "rate": "Estimación de planeación: $8,400 MXN total · 4 noches ($2,100/noche). No es cotización.",
       "rateConditions": "Precio objetivo supuesto, habitación individual con baño privado. Confirmar total con impuestos, disponibilidad y cancelación para abril de 2027.",
-      "notes": "Frente a Milano Centrale; comprobar tarifa final para tres noches y posibles ruidos exteriores.",
+      "notes": "Comprobar disponibilidad del 2027-04-04 al 2027-04-08, impuestos, baño privado, cancelación y condiciones de consigna.",
       "links": [
         {
           "label": "Consultar alojamiento oficial",
@@ -1286,12 +1288,12 @@
       "city": "La Spezia",
       "name": "Affittacamere Casa Danè",
       "address": "Via Pietro Paleocapa 4 / Piazzale Medaglie d’Oro 3, La Spezia",
-      "checkIn": "2027-04-07",
-      "checkOut": "2027-04-09",
+      "checkIn": "2027-04-08",
+      "checkOut": "2027-04-11",
       "status": "Candidato principal · no reservado",
-      "rate": "Estimación de planeación: $4,000 MXN total · 2 noches ($2,000/noche). No es cotización.",
+      "rate": "Estimación de planeación: $6,000 MXN total · 3 noches ($2,000/noche). No es cotización.",
       "rateConditions": "Precio objetivo supuesto, habitación individual con baño privado. Confirmar total con impuestos, disponibilidad y cancelación para abril de 2027.",
-      "notes": "A pocos pasos de La Spezia Centrale. Confirmar edificio asignado, escaleras, recepción y consigna.",
+      "notes": "Comprobar disponibilidad del 2027-04-08 al 2027-04-11, impuestos, baño privado, cancelación y condiciones de consigna.",
       "links": [
         {
           "label": "Consultar alojamiento oficial",
@@ -1304,12 +1306,12 @@
       "city": "Firenze",
       "name": "Hotel Mia Cara & SPA",
       "address": "Via Faenza 90r, Firenze",
-      "checkIn": "2027-04-09",
+      "checkIn": "2027-04-11",
       "checkOut": "2027-04-16",
       "status": "Candidato principal · no reservado",
-      "rate": "Estimación de planeación: $16,100 MXN total · 7 noches ($2,300/noche). No es cotización.",
+      "rate": "Estimación de planeación: $11,500 MXN total · 5 noches ($2,300/noche). No es cotización.",
       "rateConditions": "Precio objetivo supuesto, habitación individual con baño privado. Confirmar total con impuestos, disponibilidad y cancelación para abril de 2027.",
-      "notes": "Cerca de Firenze SMN. Confirmar precio final y disponibilidad para siete noches, impuestos y cancelación.",
+      "notes": "Comprobar disponibilidad del 2027-04-11 al 2027-04-16, impuestos, baño privado, cancelación y condiciones de consigna.",
       "links": [
         {
           "label": "Consultar alojamiento oficial",
@@ -1323,11 +1325,11 @@
       "id": "lodging-milano-aosta",
       "category": "lodging",
       "hotelId": "milano-aosta",
-      "concept": "B&B HOTEL Milano Aosta · 3 noches",
+      "concept": "B&B HOTEL Milano Aosta · 4 noches",
       "date": "2027-04-04",
-      "nights": 3,
+      "nights": 4,
       "cost": {
-        "amount": 6300,
+        "amount": 8400,
         "currency": "MXN"
       },
       "status": "estimated",
@@ -1337,11 +1339,11 @@
       "id": "lodging-spezia-dane",
       "category": "lodging",
       "hotelId": "spezia-dane",
-      "concept": "Affittacamere Casa Danè · 2 noches",
-      "date": "2027-04-07",
-      "nights": 2,
+      "concept": "Affittacamere Casa Danè · 3 noches",
+      "date": "2027-04-08",
+      "nights": 3,
       "cost": {
-        "amount": 4000,
+        "amount": 6000,
         "currency": "MXN"
       },
       "status": "estimated",
@@ -1351,11 +1353,11 @@
       "id": "lodging-firenze-miacara",
       "category": "lodging",
       "hotelId": "firenze-miacara",
-      "concept": "Hotel Mia Cara & SPA · 7 noches",
-      "date": "2027-04-09",
-      "nights": 7,
+      "concept": "Hotel Mia Cara & SPA · 5 noches",
+      "date": "2027-04-11",
+      "nights": 5,
       "cost": {
-        "amount": 16100,
+        "amount": 11500,
         "currency": "MXN"
       },
       "status": "estimated",
@@ -1371,7 +1373,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Cena ligera o compras antes de volar; revisar alimentos incluidos a bordo. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-02",
@@ -1383,7 +1385,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Llegada a las 18:20: cena y bebida; no presupuestar tres comidas. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-03",
@@ -1395,7 +1397,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Torino: desayuno rápido, comida y cena al regreso. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-04",
@@ -1407,7 +1409,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Milano: comida y cena en zonas turísticas, café y refrigerio. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-05",
@@ -1415,11 +1417,11 @@
       "concept": "Alimentación · día 5",
       "date": "2027-04-07",
       "cost": {
-        "amount": 850,
+        "amount": 950,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Traslado a Liguria y posible Portovenere: comida práctica y cena. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-06",
@@ -1427,11 +1429,11 @@
       "concept": "Alimentación · día 6",
       "date": "2027-04-08",
       "cost": {
-        "amount": 900,
+        "amount": 850,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Cinque Terre: comida junto a los pueblos, bebida y cena. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-07",
@@ -1439,11 +1441,11 @@
       "concept": "Alimentación · día 7",
       "date": "2027-04-09",
       "cost": {
-        "amount": 850,
+        "amount": 900,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Lucca y traslado: comida sencilla, refrigerio y cena en Firenze. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-08",
@@ -1451,11 +1453,11 @@
       "concept": "Alimentación · día 8",
       "date": "2027-04-10",
       "cost": {
-        "amount": 950,
+        "amount": 900,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Firenze: desayuno, comida, cena y refrigerios entre museos. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-09",
@@ -1463,11 +1465,11 @@
       "concept": "Alimentación · día 9",
       "date": "2027-04-11",
       "cost": {
-        "amount": 950,
+        "amount": 850,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Firenze: comidas y cena en trattoria, sin menú de lujo. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-10",
@@ -1479,7 +1481,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Siena: comida durante excursión y cena al volver. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-11",
@@ -1491,7 +1493,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Firenze: comidas, cena y refrigerios del último día completo. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-12",
@@ -1499,11 +1501,11 @@
       "concept": "Alimentación · día 12",
       "date": "2027-04-14",
       "cost": {
-        "amount": 900,
+        "amount": 950,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario para jornada flexible en Firenze; no es cotización."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-13",
@@ -1511,11 +1513,11 @@
       "concept": "Alimentación · día 13",
       "date": "2027-04-15",
       "cost": {
-        "amount": 900,
+        "amount": 950,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario para día completo en Firenze; no es cotización."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     },
     {
       "id": "food-day-14",
@@ -1527,7 +1529,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto para traslados y vuelo nocturno; no es cotización."
+      "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
     }
   ]
 }
