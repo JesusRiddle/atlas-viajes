@@ -86,7 +86,9 @@
       "mobility": "• *Milano Centrale → Torino Porta Nuova:* Comparar alta velocidad (aprox. 1 h–1 h 15 min) y regional (aprox. 1 h 50–2 h); horarios y precios 2027 pendientes.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; calcular margen antes de la posible franja de acceso, aún sin reservar.\n• *Regreso a Milano:* Volver desde Torino Porta Nuova a Milano Centrale y caminar al hotel.",
       "note": "• *Museo Egizio:* Lunes, horario habitual 09:00–14:00 y último ingreso 13:00; verificar calendario 2027.\n• *Reserva:* Franja objetivo 10:00–10:30, todavía sin comprar; elegir el tren primero para evitar una conexión justa.\n• *Visitas opcionales:* Palazzo Madama y Mole Antonelliana solo desde el exterior; no asumir apertura de museos un lunes.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy27-egizio"
+      ],
       "transportRefs": [
         "train-torino"
       ],
@@ -214,7 +216,8 @@
       "spend": null,
       "places": [
         "italy27-manarola",
-        "italy27-vernazza"
+        "italy27-vernazza",
+        "italy27-riomaggiore"
       ],
       "transportRefs": [
         "train-cinque-terre"
@@ -337,7 +340,8 @@
       "spend": null,
       "places": [
         "italy16-uffizi",
-        "italy27-santa-croce"
+        "italy27-santa-croce",
+        "italy27-vasariano"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -361,7 +365,8 @@
       "spend": null,
       "places": [
         "italy27-piazzale",
-        "italy27-san-miniato"
+        "italy27-san-miniato",
+        "italy27-bargello"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -1721,6 +1726,10 @@
     "italy27-santa-croce": "La fachada de Santa Croce, cuyo interior se visita después de Uffizi y el Corridoio Vasariano.",
     "italy27-san-miniato": "La fachada románica de San Miniato al Monte, previa al atardecer en Piazzale Michelangelo.",
     "italy27-spezia-morin": "Paseo marítimo arbolado de La Spezia para la tarde de llegada.",
-    "italy27-siena-duomo": "La Catedral de Siena y su campanario, junto a una escultura exterior."
+    "italy27-siena-duomo": "La Catedral de Siena y su campanario, junto a una escultura exterior.",
+    "italy27-egizio": "Salas del Museo Egizio de Torino, principal visita de la excursión del lunes.",
+    "italy27-riomaggiore": "El pueblo de Riomaggiore, primera parada de la excursión ferroviaria por Cinque Terre.",
+    "italy27-vasariano": "Imagen histórica del interior del Corridoio Vasariano, cuyo recorrido está reservado como visita prioritaria. La disposición actual puede ser diferente.",
+    "italy27-bargello": "Palazzo del Bargello, sede de las colecciones de escultura florentina."
   }
 }
