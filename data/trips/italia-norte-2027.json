@@ -87,7 +87,8 @@
       "note": "• *Museo Egizio:* Lunes, horario habitual 09:00–14:00 y último ingreso 13:00; verificar calendario 2027.\n• *Reserva:* Franja objetivo 10:00–10:30, todavía sin comprar; elegir el tren primero para evitar una conexión justa.\n• *Visitas opcionales:* Palazzo Madama y Mole Antonelliana solo desde el exterior; no asumir apertura de museos un lunes.",
       "spend": null,
       "places": [
-        "italy27-egizio"
+        "italy27-egizio",
+        "italy27-torino-san-carlo"
       ],
       "transportRefs": [
         "train-torino"
@@ -163,7 +164,8 @@
       "note": "• *Tren:* Priorizar una salida a media mañana para viajar con calma; el horario de abril 2027 aún no está disponible o confirmado. No reservar un servicio con conexión demasiado justa.\n• *Alojamiento:* Casa Danè figura en dos edificios próximos a la estación. Confirmar dirección exacta, recepción, consigna, check-in y condiciones antes de comprar.\n• *Ritmo:* Tarde de orientación y descanso; Portovenere tiene su propio día completo el viernes 9.\n• *Clima:* El paseo marítimo es flexible: con lluvia, permanecer por el centro histórico y descansar.",
       "spend": null,
       "places": [
-        "italy27-spezia-morin"
+        "italy27-spezia-morin",
+        "italy27-spezia-prione"
       ],
       "transportRefs": [
         "train-milano-la-spezia"
@@ -189,7 +191,8 @@
       "note": "• *Desvíos ATC:* Comprobar si siguen vigentes las restricciones de la línea P y el transbordo en Cavo para abril de 2027.\n• *Billetes:* Confirmar tarifa y compra con ATC; ningún transporte está reservado.\n• *Castello Doria:* Opcional; comprobar apertura y precio para la fecha.\n• *Seguridad:* Evitar rocas y bordes expuestos si hay viento u oleaje.\n• *Plan B:* Con lluvia, dedicar más tiempo al casco antiguo; barco únicamente si está operando y el mar lo permite.",
       "spend": null,
       "places": [
-        "italy27-portovenere"
+        "italy27-portovenere",
+        "italy27-byron"
       ],
       "transportRefs": [
         "bus-portovenere"
@@ -242,7 +245,8 @@
       "note": "• *Reservar consigna:* Preferir Radical Storage en Piazzale B. Ricasoli 193 por proximidad ferroviaria. Los horarios publicados no garantizan atención en abril de 2027: comprobar cupo, dirección final y condiciones para el 11 de abril de 2027 antes de comprar trenes.\n• *No confundir locales:* Radical Storage «inside Lucca Station» (Piazzale B. Ricasoli 127) y «Lucca Railway Station» (Viale Cavour 199) publican cierre dominical; no seleccionarlos.\n• *Consigna descartada:* Left Luggage Tuscany Lucca figura cerrada en su página oficial.\n• *Plan B:* Si no se confirma una consigna dominical, ir directamente a Firenze; no recorrer Lucca cargando maletas.\n• *Torre Guinigi:* Subida opcional con unos 230 escalones; horario y entradas pendientes.\n• *Billetes:* Sin trenes ni consigna reservados; priorizar horario de recogida y llegada cómoda a Firenze.",
       "spend": null,
       "places": [
-        "italy27-lucca-anfiteatro"
+        "italy27-lucca-anfiteatro",
+        "italy27-guinigi"
       ],
       "transportRefs": [
         "train-la-spezia-lucca",
