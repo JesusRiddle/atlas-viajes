@@ -80,10 +80,10 @@
       "date": "2027-04-05",
       "title": "Torino · Museo Egizio y plazas históricas",
       "base": "Milano",
-      "am": "1. Salir temprano desde Milano Centrale a Torino Porta Nuova, con tiempo para caminar unos 15 minutos hasta el Museo Egizio.\n2. Horario objetivo de entrada al Museo Egizio a las 10:00 (alternativa 10:30), pendiente de reserva y del tren disponible. Destinar 2–3 horas; el lunes cierra habitualmente a las 14:00.",
+      "am": "1. Salir del hotel hacia Milano Centrale para tomar el Italo directo de referencia de las 07:30 (llegada Torino Porta Nuova 08:30); horario tomado del lunes 02/11/2026 y pendiente de confirmación para el 05/04/2027.\n2. Caminar unos 15 minutos hasta el Museo Egizio; margen amplio para desayunar y la entrada objetivo de las 10:00 (alternativa 10:30), aún sin reservar. Destinar 2–3 horas; los lunes cierra habitualmente a las 14:00.",
       "pm": "1. Almorzar cerca de Piazza San Carlo y recorrer sus pórticos.\n2. Pasear hacia Piazza Castello y Palazzo Madama (exterior).\n3. Mole Antonelliana solo si queda margen; no añadir otro museo obligatorio.",
       "night": "1. Regresar a Torino Porta Nuova y tomar un tren a Milano Centrale con margen para cenar.\n2. Volver a B&B HOTEL Milano Aosta y descansar.",
-      "mobility": "• *Milano Centrale → Torino Porta Nuova:* Comparar alta velocidad (aprox. 1 h–1 h 15 min) y regional (aprox. 1 h 50–2 h); horarios y precios 2027 pendientes.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; calcular margen antes de la posible franja de acceso, aún sin reservar.\n• *Regreso a Milano:* Volver desde Torino Porta Nuova a Milano Centrale y caminar al hotel.",
+      "mobility": "• *Ida Milano Centrale → Torino Porta Nuova:* preferencia Italo directo 07:30–08:30, Smart Economy €23,90 (≈$496 MXN, cambio de referencia 27/10/2026). Comparación: Frecciarossa 07:53–08:55 (€27,90) o Regionale 07:15–09:10 (€12,90). Todos los horarios proceden del lunes 02/11/2026, no están confirmados para abril de 2027.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; acceso objetivo 10:00, sin reservar.\n• *Regreso a Milano:* Pendiente de comparar Torino Porta Nuova → Milano Centrale y completar tarifa/horario.",
       "note": "• *Museo Egizio:* Lunes, horario habitual 09:00–14:00 y último ingreso 13:00; verificar calendario 2027.\n• *Reserva:* Franja objetivo 10:00–10:30, todavía sin comprar; elegir el tren primero para evitar una conexión justa.\n• *Visitas opcionales:* Palazzo Madama y Mole Antonelliana solo desde el exterior; no asumir apertura de museos un lunes.",
       "spend": null,
       "places": [
@@ -990,9 +990,9 @@
       "options": [
         {
           "id": "A",
-          "provider": "Trenitalia · Regionale Veloce / Frecciarossa",
-          "status": "planning",
-          "selectedFare": "ref",
+          "provider": "Italo · alta velocidad",
+          "status": "quoted",
+          "selectedFare": "economy",
           "journeys": [
             {
               "direction": "outbound",
@@ -1000,9 +1000,10 @@
                 {
                   "from": "Milano Centrale",
                   "to": "Torino Porta Nuova",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Trenitalia · Regionale Veloce / Frecciarossa"
+                  "departure": "2027-04-05T07:30:00+02:00",
+                  "arrival": "2027-04-05T08:30:00+02:00",
+                  "operator": "Italo",
+                  "service": "Horario comparativo del lunes 02/11/2026; NO confirmado para abril 2027"
                 }
               ]
             },
@@ -1014,22 +1015,103 @@
                   "to": "Milano Centrale",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Trenitalia · Regionale Veloce / Frecciarossa"
+                  "operator": "Pendiente de comparar"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "ref",
-              "name": "Orientativo · pendiente de cotización",
-              "price": null,
-              "changes": null,
-              "refunds": null
+              "id": "economy",
+              "name": "Smart Economy · referencia 02/11/2026",
+              "price": {
+                "amount": 23.9,
+                "currency": "EUR"
+              },
+              "changes": "Condiciones específicas por comprobar en la oferta Economy de Italo",
+              "refunds": "Condiciones específicas por comprobar en la oferta Economy de Italo"
+            },
+            {
+              "id": "flex",
+              "name": "Smart Flex · referencia 02/11/2026",
+              "price": {
+                "amount": 29.9,
+                "currency": "EUR"
+              },
+              "changes": "Consultar condiciones Flex",
+              "refunds": "Consultar condiciones Flex"
             }
           ],
-          "notes": "Lunes 5 abril: comparar alta velocidad (~1 h–1 h 15) frente a regional (~1 h 50–2 h); si la entrada del Museo Egizio es a las 10:00–10:30, llegar a Torino Porta Nuova con margen para caminar ~15 minutos. Horarios, tarifa y billetes de 2027 pendientes. No inventar salidas.",
-          "quotedAt": null
+          "notes": "IDA elegida como referencia: 07:30→08:30, directa, 1 h, Smart Economy €23,90 (≈$496 MXN al tipo EUR/MXN 20,76 del 27/10/2026), lunes 02/11/2026; no disponible aún el horario 05/04/2027. Llegada prevista 90 min antes de Museo Egizio a las 10:00. Regreso por cotizar y seleccionar. No comprado.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "B",
+          "provider": "Trenitalia · Frecciarossa 9600",
+          "status": "quoted",
+          "selectedFare": "economy",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Torino Porta Nuova",
+                  "departure": "2027-04-05T07:53:00+02:00",
+                  "arrival": "2027-04-05T08:55:00+02:00",
+                  "operator": "Trenitalia · Frecciarossa 9600"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "economy",
+              "name": "Standard Economy · referencia 02/11/2026",
+              "price": {
+                "amount": 27.9,
+                "currency": "EUR"
+              },
+              "changes": "Modificable antes de salida con suplemento, según disponibilidad",
+              "refunds": "No reembolsable"
+            }
+          ],
+          "notes": "Alternativa del lunes 02/11/2026; 1 h 02 min. Horario y precio no confirmados para 2027.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "C",
+          "provider": "Trenitalia · Regionale Veloce 2014",
+          "status": "quoted",
+          "selectedFare": "ordinary",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Torino Porta Nuova",
+                  "departure": "2027-04-05T07:15:00+02:00",
+                  "arrival": "2027-04-05T09:10:00+02:00",
+                  "operator": "Trenitalia · Regionale Veloce 2014"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ordinary",
+              "name": "2ª classe Ordinaria · referencia 02/11/2026",
+              "price": {
+                "amount": 12.9,
+                "currency": "EUR"
+              },
+              "changes": "Cambio de fecha/hora hasta el día anterior; cambios de hora permitidos el mismo día antes de la validación automática, según condiciones mostradas",
+              "refunds": "Según condiciones del operador"
+            }
+          ],
+          "notes": "Alternativa económica del lunes 02/11/2026; 1 h 55 min. Horario y precio no confirmados para 2027.",
+          "quotedAt": "2026-10-27"
         }
       ],
       "links": [
