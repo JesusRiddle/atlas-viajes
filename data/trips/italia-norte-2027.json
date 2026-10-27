@@ -304,16 +304,23 @@
     {
       "n": 12,
       "date": "2027-04-14",
-      "title": "Firenze II · Uffizi, Santa Croce y centro",
+      "title": "Firenze II · Uffizi, Corridoio Vasariano y Santa Croce",
       "base": "Firenze",
-      "am": "1. Gallerie degli Uffizi con entrada horaria temprana.",
-      "pm": "1. Basilica di Santa Croce y paseo por el centro histórico.",
-      "night": "1. Cena y paseo tranquilo por Firenze.",
-      "mobility": "• *Firenze centro:* Recorrido a pie entre Uffizi, Piazza della Signoria y Santa Croce.\n• *Regreso al alojamiento:* A pie o transporte urbano si hay cansancio.",
-      "note": "• *Uffizi:* Priorizar acceso temprano con reserva; confirmar cupos 2027.\n• *Santa Croce:* Revisar horario de visita y posibles restricciones religiosas.",
+      "am": "1. Caminar desde el Hotel Mia Cara & SPA hasta los Uffizi y acceder a la Galleria con entrada combinada Uffizi + Corridoio Vasariano, preferentemente hacia las 08:15–08:30 (horario objetivo, sin reservar).\n2. Dedicar unas 2–2½ horas a las salas prioritarias de los Uffizi; después dirigirse al punto de reunión D19, en el primer piso, por lo menos 5 minutos antes de la franja elegida para el Corredor.\n3. Recorrer el Corridoio Vasariano en grupo acompañado, idealmente con franja hacia las 11:15–11:30. La visita dura unos 45 minutos, es de sentido único y termina en el entorno del Palazzo Pitti.",
+      "pm": "1. Salir por el patio de Palazzo Pitti después del Corredor, sin asumir que el billete incluya entrada a Palazzo Pitti o al Jardín de Boboli. Almorzar en Oltrarno y cruzar de regreso el Arno.\n2. Visitar la Basílica de Santa Croce y su complejo monumental con margen para recorrer el interior, las tumbas y los claustros (aprox. 75–90 minutos). Objetivo: acceder hacia las 14:00–15:00, pendiente de confirmar horario y ceremonias.\n3. Disfrutar Piazza Santa Croce y pasear de regreso por el centro histórico sin añadir otra visita con boleto.",
+      "night": "1. Cena tranquila en Firenze, cerca del centro histórico o del alojamiento.\n2. Regresar al Hotel Mia Cara & SPA; dejar Piazzale Michelangelo y San Miniato al Monte para el jueves 15, cuando podremos disfrutarlos al atardecer.",
+      "mobility": "• *Hotel → Uffizi:* Caminar desde el entorno de Firenze SMN hasta Piazzale degli Uffizi; calcular margen para control de seguridad y acceso.\n• *Uffizi → Corridoio Vasariano:* Acudir al punto de encuentro D19 en el primer piso de los Uffizi 5 minutos antes de la franja reservada; después del Corredor no se puede regresar a los Uffizi.\n• *Salida del Corredor:* El grupo atraviesa el corredor sobre Ponte Vecchio y sale por los Jardines de Boboli hacia el patio Ammannati de Palazzo Pitti; no se incluye visita libre a Boboli o Pitti.\n• *Palazzo Pitti → Santa Croce:* Caminar por el centro, cruzando de nuevo el Arno; contemplar Ponte Vecchio desde el exterior si apetece. Dejar margen para comer.\n• *Santa Croce → hotel:* Regreso a pie al centro / Firenze SMN o transporte urbano si hay cansancio.",
+      "note": "• *Reserva imprescindible:* Comprar entrada nominativa combinada Uffizi + Corridoio Vasariano para el miércoles 14; es personal, no transferible y no reembolsable. Entrar a Uffizi dos horas antes de la visita al Corredor.\n• *Franjas objetivo:* Uffizi hacia las 08:15–08:30 y Corridoio hacia las 11:15–11:30, NO reservadas; elegir primero una franja real del Corredor y ajustar el acceso a Uffizi a las condiciones del billete.\n• *Reglas del Corredor:* Presentarse en sala D19 cinco minutos antes; visita en grupo de unos 45 min y sentido único hasta Pitti. No se permite detenerse ni regresar a las galerías.\n• *Precio de referencia:* Billete anticipado Uffizi + Corridoio Vasariano €47 según tarifa oficial consultada en octubre de 2026; confirmar precio y disponibilidad de abril 2027. No equivale al acceso libre a Pitti/Boboli.\n• *Santa Croce:* Horario habitual de miércoles 09:30–17:30, último ingreso a las 17:00; puede variar por actos religiosos. Comprar entrada en su sitio oficial y reservar visita amplia por la tarde.\n• *Plan B:* Si el único horario viable del Corredor cae por la tarde, priorizarlo y mover Santa Croce al jueves 15 ajustando Bargello; no eliminar ninguna de las tres visitas imprescindibles.\n• *Piazzale Michelangelo:* Reservado como visita prioritaria para el atardecer del jueves 15, evitando agregar otra subida a esta jornada.",
       "spend": null,
       "places": [],
-      "hotel": "firenze-miacara"
+      "hotel": "firenze-miacara",
+      "headerPlaces": [
+        "Gallerie degli Uffizi",
+        "Corridoio Vasariano · reserva imprescindible",
+        "Ponte Vecchio · cruce por el Corredor",
+        "Palazzo Pitti · salida",
+        "Basílica di Santa Croce"
+      ]
     },
     {
       "n": 13,
@@ -321,10 +328,10 @@
       "title": "Firenze III · Bargello, Oltrarno y miradores",
       "base": "Firenze",
       "am": "1. Museo Nazionale del Bargello, sujeto a reserva y horario.",
-      "pm": "1. Oltrarno y subida opcional a San Miniato al Monte / Piazzale Michelangelo.",
+      "pm": "1. Oltrarno y paseo por Oltrarno y visita prioritaria a Piazzale Michelangelo al atardecer, con San Miniato al Monte según horarios.",
       "night": "1. Cena final y preparar equipaje para el regreso del viernes.",
       "mobility": "• *Firenze centro → Bargello:* A pie desde el alojamiento o en transporte urbano según el momento de la visita.\n• *Oltrarno y miradores:* Cruzar el Arno y subir hacia San Miniato al Monte / Piazzale Michelangelo a pie o en autobús.\n• *Regreso:* Volver con tiempo para preparar equipaje del viernes.",
-      "note": "• *Bargello:* Comprobar apertura y tarifa; no reservar entradas incompatibles.\n• *Miradores:* Subida opcional según energía y clima; no programar excursiones largas el día anterior al vuelo.",
+      "note": "• *Bargello:* Comprobar apertura y tarifa; no reservar entradas incompatibles.\n• *Miradores:* Piazzale Michelangelo es prioritario para el atardecer; usar autobús si la subida resulta pesada; no programar excursiones largas el día anterior al vuelo.",
       "spend": null,
       "places": [],
       "hotel": "firenze-miacara"
@@ -693,16 +700,20 @@
           ]
         },
         {
-          "title": "Gallerie degli Uffizi (Firenze)",
-          "description": "Miércoles 14 de abril, preferiblemente temprano; Santa Croce después. Verificar calendario y tarifas 2027.",
+          "title": "Uffizi + Corridoio Vasariano (Firenze)",
+          "description": "Miércoles 14 abril: reservar la entrada nominativa conjunta Uffizi + Corridoio Vasariano, no reembolsable; prioridad absoluta. Uffizi 2 horas antes de la franja del Corredor, reunión sala D19 con 5 minutos de anticipación, visita guiada en grupo de ~45 min y salida por Palazzo Pitti (sin acceso incluido a Pitti/Boboli). Precio anticipado de referencia €47, sujeto a revisión para 2027. Coordinar Santa Croce por la tarde.",
           "links": [
             {
-              "label": "Entradas Uffizi oficiales",
-              "url": "https://tickets.uffizi.it/"
+              "label": "Uffizi · Corridoio Vasariano y entradas",
+              "url": "https://www.uffizi.it/en/corridoio-vasariano"
             },
             {
-              "label": "Tarifas y condiciones",
-              "url": "https://www.uffizi.it/en/tickets"
+              "label": "Normas oficiales del Corredor",
+              "url": "https://www.uffizi.it/en/notices/rules-for-accessing-the-vasari-corridor"
+            },
+            {
+              "label": "Comprar entradas oficiales",
+              "url": "https://tickets.uffizi.it/"
             }
           ]
         }
@@ -772,7 +783,13 @@
         },
         {
           "title": "Santa Croce, Bargello y Torre Guinigi",
-          "description": "Santa Croce miércoles 14, Bargello jueves 15; Torre Guinigi domingo 11 durante el paso por Lucca solo si la consigna funciona y el tiempo alcanza. Antes de comprar un billete combinado Accademia/Bargello, comparar la vigencia de 48 h con las visitas del martes y jueves."
+          "description": "Santa Croce es imprescindible el miércoles 14 después de Uffizi + Corridoio Vasariano, con entrada antes de las 17:00 según horario habitual; si la franja del Corredor obliga, trasladar Santa Croce al jueves 15. Bargello jueves 15, Torre Guinigi opcional domingo 11. Comparar validez de billete combinado Accademia/Bargello.",
+          "links": [
+            {
+              "label": "Santa Croce · visita y horarios oficiales",
+              "url": "https://www.santacroceopera.it/en/organise-your-visit/"
+            }
+          ]
         }
       ]
     ]
