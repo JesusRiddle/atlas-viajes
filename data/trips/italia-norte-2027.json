@@ -123,7 +123,9 @@
         "italy16-grazie",
         "milan-castello",
         "milan-duomo",
-        "milan-galleria"
+        "milan-galleria",
+        "italy27-sempione",
+        "italy27-milan-scala"
       ],
       "hotel": "milano-aosta",
       "headerPlaces": [
@@ -148,7 +150,8 @@
       "places": [
         "italy27-brera",
         "milan-duomo",
-        "milan-galleria"
+        "milan-galleria",
+        "italy27-milan-scala"
       ],
       "hotel": "milano-aosta",
       "headerPlaces": [
@@ -253,7 +256,8 @@
       "spend": null,
       "places": [
         "italy27-lucca-anfiteatro",
-        "italy27-guinigi"
+        "italy27-guinigi",
+        "italy27-lucca-fillungo"
       ],
       "transportRefs": [
         "train-la-spezia-lucca",
@@ -353,7 +357,8 @@
       "places": [
         "italy16-uffizi",
         "italy27-santa-croce",
-        "italy27-vasariano"
+        "italy27-vasariano",
+        "italy27-pitti"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -1746,6 +1751,10 @@
     "italy27-brera": "El patio porticado abre las puertas a una pinacoteca imprescindible para descubrir pintura italiana en pleno barrio artístico de Brera.",
     "italy27-piccolomini": "Una sala deslumbrante del Duomo, donde los frescos renacentistas y el techo ornamentado convierten la visita en una sorpresa.",
     "italy27-santo-spirito": "Descubre la Firenze cotidiana en esta plaza de Oltrarno, entre la basílica renacentista, terrazas y edificios de colores cálidos.",
-    "italy27-madama": "Una residencia con pasado medieval y fachada barroca que permite entender cómo Torino se convirtió en capital de los Saboya."
+    "italy27-madama": "Una residencia con pasado medieval y fachada barroca que permite entender cómo Torino se convirtió en capital de los Saboya.",
+    "italy27-sempione": "Los senderos y prados detrás del Castello Sforzesco ofrecen un descanso verde entre visitas al centro monumental.",
+    "italy27-lucca-fillungo": "Camina por la arteria comercial del casco antiguo, entre fachadas históricas, pequeños comercios y rincones medievales.",
+    "italy27-pitti": "La gran fachada renacentista anuncia el antiguo palacio de los Médici, punto de salida del recorrido por el Corridoio Vasariano.",
+    "italy27-milan-scala": "Esta plaza une el histórico Teatro alla Scala con el monumento a Leonardo, a unos pasos de la Galleria Vittorio Emanuele II."
   }
 }
