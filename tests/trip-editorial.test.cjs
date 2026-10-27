@@ -178,3 +178,15 @@ test('Italia 2027: regreso 16 abril y siete noches en Firenze', () => {
  assert.match(flight.journeys[1].segments[0].arrival,/^2027-04-17T04:00/);
  for(const id of ['train-firenze-milano','airport-return'])assert.equal(trip.majorTransport.find(t=>t.id===id).day,14);
 });
+
+
+test('Italia 2027: días ampliados concretos y excursiones flexibles', () => {
+ const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+ assert.equal(trip.days.length,14);
+ assert.match(trip.days[11].title,/Fiesole/);
+ assert.match(trip.days[12].title,/San Marco/);
+ assert.match(trip.days[12].pm,/Museo Galileo/);
+ assert.match(trip.days[5].note,/tres o cuatro pueblos/);
+ assert.match(trip.days[6].note,/consigna/);
+ assert.equal(trip.days[13].date,'2027-04-16');
+});
