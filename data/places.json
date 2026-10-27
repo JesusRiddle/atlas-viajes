@@ -3293,5 +3293,49 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "attribution": "Dimoegy1999"
     }
+  },
+  "italy27-portovenere": {
+    "name": "Portovenere · San Pietro y Castello Doria",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Porto_Venere%2C_Castello_Doria_e_Chiesa_di_San_Pietro.jpg/960px-Porto_Venere%2C_Castello_Doria_e_Chiesa_di_San_Pietro.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Porto_Venere,_Castello_Doria_e_Chiesa_di_San_Pietro.jpg",
+      "author": "Palickap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Palickap"
+    }
+  },
+  "italy27-vernazza": {
+    "name": "Vernazza · Cinque Terre",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/View_of_Vernazza.jpg/960px-View_of_Vernazza.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_Vernazza.jpg",
+      "author": "Svein-Magne Tunli",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Svein-Magne Tunli"
+    }
+  },
+  "italy27-santa-croce": {
+    "name": "Basilica di Santa Croce · Firenze",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Santa_Croce_Firenze.jpg/960px-Santa_Croce_Firenze.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Croce_Firenze.jpg",
+      "author": "Markus Bernet",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "attribution": "Markus Bernet"
+    }
+  },
+  "italy27-san-miniato": {
+    "name": "San Miniato al Monte · Firenze",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/San_Miniato_al_Monte.jpg/960px-San_Miniato_al_Monte.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:San_Miniato_al_Monte.jpg",
+      "author": "Bradley Weber",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Bradley Weber"
+    }
   }
 }
