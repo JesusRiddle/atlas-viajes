@@ -528,7 +528,7 @@
       "am": "1. Desayunar, cerrar equipaje y realizar check-out en Firenze; dirigirse a Firenze Santa Maria Novella (SMN).\n2. Tomar un tren directo de alta velocidad a Milano Centrale. Elegir una salida con margen suficiente para retrasos y para cambiar de tren; el horario 2027 aún no está publicado/cotizado.",
       "pm": "1. En Milano Centrale, cambiar al Malpensa Express hacia la terminal correspondiente; comprobar salida, billete y tiempo de traslado entre andenes.\n2. Objetivo prudente: estar en Milano Malpensa hacia las 18:30–19:00 para el vuelo previsto a las 23:05. Llegar con holgura, ya que los trenes y el vuelo se contratan por separado.\n3. Documentación, seguridad y control de pasaportes según indicaciones de Aeroméxico y del aeropuerto.",
       "night": "1. Vuelo directo Aeroméxico MXP → MEX: salida cotizada el viernes 16 de abril a las 23:05, hora de Italia.\n2. Noche a bordo; llegada prevista a Ciudad de México el sábado 17 de abril a las 04:00, hora local. Migración, aduana y traslado a casa el sábado; domingo 18 libre para descansar.",
-      "mobility": "• *Firenze SMN → Milano Centrale (alta velocidad directa):* A) Italo Prima Business 14:25→16:20 desde €47,90; B) Frecciarossa 9584 14:55→16:50 desde €67; C) Frecciarossa 9540 15:55→17:50 desde €46,90. Referencias viernes 06/11/2026, NO confirmadas para 16/04/2027. Billete de cada operador válido solo según su tarifa/servicio; opciones B/C no cubiertas automáticamente por Italo.\n• *Milano Centrale → Malpensa Aeroporto T1 (Malpensa Express):* A) MXP 2962 16:55→17:48; B) MXP 2964 17:25→18:18; C) MXP 2968 18:25→19:18. Cada uno €15 según captura Trenord viernes 06/11/2026, servicios directos 53 min, reconfirmar para 16/04/2027. Las conexiones desde Firenze A/B/C dejan 35 min para cambiar de tren en Milano Centrale; billetes independientes, sin garantía automática ante retrasos. Revisar vía/andén en pantallas; salir del tren en Malpensa T1 y seguir señalización Partenze/Departures.\n• *MXP → CDMX:* Vuelo directo Aeroméxico, salida cotizada viernes 16 a las 23:05 y llegada sábado 17 a las 04:00, hora local.",
+      "mobility": "• *Firenze SMN → Milano Centrale (alta velocidad directa):* A) Italo Prima Business 14:25→16:20 desde €47,90; B) Frecciarossa 9584 14:55→16:50 desde €67; C) Frecciarossa 9540 15:55→17:50 desde €46,90. Referencias viernes 06/11/2026, NO confirmadas para 16/04/2027. Billete de cada operador válido solo según su tarifa/servicio; opciones B/C no cubiertas automáticamente por Italo.\n• *Milano Centrale → Malpensa Aeroporto T1 (Malpensa Express):* A) MXP 2962 16:55→17:48; B) MXP 2964 17:25→18:18; C) MXP 2968 18:25→19:18. Cada uno €15 según captura Trenord viernes 06/11/2026, servicios directos 53 min, reconfirmar para 16/04/2027. Las conexiones desde Firenze A/B/C dejan 35 min para cambiar de tren en Milano Centrale; billetes independientes, sin garantía automática ante retrasos. Revisar vía/andén en pantallas; salir del tren en Malpensa T1 y seguir señalización Partenze/Departures.\n• *MXP → CDMX:* Vuelo directo Aeroméxico, salida cotizada viernes 16 a las 23:05 y llegada sábado 17 a las 04:00, hora local.\n• *Auditoría de conexión:* A/B/C ofrecen 35 minutos programados entre llegada a Milano Centrale y salida a Malpensa. El billete separado no protege automáticamente la segunda conexión; si hay retraso, comprobar el siguiente Malpensa Express y las condiciones de uso o comprar otro billete si corresponde.",
       "note": "• *Margen aeroportuario:* Objetivo de llegada a MXP hacia las 18:30–19:00; trenes y vuelo no constituyen conexión protegida.\n• *Reservas:* No fijar visitas con entrada para el viernes. Horarios ferroviarios y vuelo todavía sin comprar.\n• *Descanso:* Llegada a México sábado 17; domingo 18 libre.",
       "spend": null,
       "places": [],
@@ -1178,8 +1178,9 @@
               "refunds": "Consultar condiciones Flex"
             }
           ],
-          "notes": "IDA Italo 07:30–08:30 (€23,90 Smart Economy); REGRESO preferido Italo 19:25–20:30 (€23,90 Smart según oferta mostrada). Precios y horarios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Total ida/vuelta estimado €47,80 si ambas tarifas se mantienen. Respaldo de regreso B: Regionale Veloce 2041, 19:54–21:49 (€12,90); C: Regionale Veloce 2043, 20:54–22:49 (€12,90). Boletos de alta velocidad no son intercambiables automáticamente entre operadores ni trenes. No comprado. VALIDACIÓN: billete electrónico Italo con datos/QR y documento; no se estampa en estación. Si se pierde el tren y la tarifa no permite cambiarlo, comprar otro billete antes de subir al B o C (Trenitalia).",
-          "quotedAt": "2026-10-27"
+          "notes": "IDA Italo 07:30–08:30 (€23,90 Smart Economy); REGRESO preferido Italo 19:25–20:30 (€23,90 Smart según oferta mostrada). Precios y horarios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Total ida/vuelta estimado €47,80 si ambas tarifas se mantienen. Respaldo de regreso B: Regionale Veloce 2041, 19:54–21:49 (€12,90); C: Regionale Veloce 2043, 20:54–22:49 (€12,90). Boletos de alta velocidad no son intercambiables automáticamente entre operadores ni trenes. No comprado. VALIDACIÓN: billete electrónico Italo con datos/QR y documento; no se estampa en estación. Si se pierde el tren y la tarifa no permite cambiarlo, comprar otro billete antes de subir al B o C (Trenitalia). El total presupuestado es €47.80 por ambos sentidos; el precio de la oferta indicado es por trayecto.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": 2
         },
         {
           "id": "B",
@@ -1212,7 +1213,7 @@
               "refunds": "No reembolsable"
             }
           ],
-          "notes": "Alternativa del lunes 02/11/2026; 1 h 02 min. Horario y precio no confirmados para 2027.",
+          "notes": "Alternativa del lunes 02/11/2026; 1 h 02 min. Horario y precio no confirmados para 2027. PRECIO DE IDA SOLAMENTE: seleccionar esta opción en presupuesto subestimaría el regreso si no se presupuesta por separado; usar A como referencia financiera mientras se validan tarifas completas.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1246,7 +1247,7 @@
               "refunds": "Según condiciones del operador"
             }
           ],
-          "notes": "Alternativa económica del lunes 02/11/2026; 1 h 55 min. Horario y precio no confirmados para 2027. VALIDACIÓN: boleto digital Regionale Trenitalia se activa automáticamente a la salida y muestra barra verde; boleto regional de papel se convalida en máquinas de la estación de origen ANTES de subir.",
+          "notes": "Alternativa económica del lunes 02/11/2026; 1 h 55 min. Horario y precio no confirmados para 2027. VALIDACIÓN: boleto digital Regionale Trenitalia se activa automáticamente a la salida y muestra barra verde; boleto regional de papel se convalida en máquinas de la estación de origen ANTES de subir. PRECIO DE IDA SOLAMENTE: seleccionar esta opción en presupuesto subestimaría el regreso si no se presupuesta por separado; usar A como referencia financiera mientras se validan tarifas completas.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1512,8 +1513,9 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 08:55 → Portovenere 09:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción A: Portovenere 16:55 → Via Chiodo Giardini 17:32 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027.",
-          "quotedAt": "2026-10-27"
+          "notes": "Via Chiodo Portici 08:55 → Portovenere 09:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción A: Portovenere 16:55 → Via Chiodo Giardini 17:32 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": 2
         },
         {
           "id": "B",
@@ -1570,8 +1572,9 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 09:25 → Portovenere 10:00 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción B: Portovenere 17:25 → Via Chiodo Giardini 18:02 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027.",
-          "quotedAt": "2026-10-27"
+          "notes": "Via Chiodo Portici 09:25 → Portovenere 10:00 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción B: Portovenere 17:25 → Via Chiodo Giardini 18:02 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": 2
         },
         {
           "id": "C",
@@ -1628,8 +1631,9 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 09:55 → Portovenere 10:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción C: Portovenere 17:55 → Via Chiodo Giardini 18:32 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027.",
-          "quotedAt": "2026-10-27"
+          "notes": "Via Chiodo Portici 09:55 → Portovenere 10:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción C: Portovenere 17:55 → Via Chiodo Giardini 18:32 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": 2
         }
       ],
       "links": [
@@ -1681,7 +1685,7 @@
           "id": "A",
           "provider": "Trenitalia · regional 5 Terre Express",
           "status": "planning",
-          "selectedFare": "ref",
+          "selectedFare": "card-reference",
           "journeys": [
             {
               "direction": "oneway",
@@ -1710,14 +1714,27 @@
           ],
           "fares": [
             {
-              "id": "ref",
-              "name": "Orientativo · pendiente de cotización",
-              "price": null,
+              "id": "card-reference",
+              "name": "Cinque Terre Treno MS Card · mínimo 2026 orientativo",
+              "price": {
+                "amount": 22,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            },
+            {
+              "id": "individual-reference",
+              "name": "4 viajes regionales individuales · referencia €8 cada uno",
+              "price": {
+                "amount": 32,
+                "currency": "EUR"
+              },
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "Sábado 10 abril de 2027: excursión ferroviaria desde La Spezia Centrale, siguiendo Riomaggiore → Manarola → Vernazza; Monterosso opcional. Comparar billetes por trayecto con Cinque Terre Treno Card según precio y reglas del día; no asumir horario, frecuencia ni tarifa publicados para 2026. Sin caminatas entre pueblos ni Via dell’Amore obligatorias. Referencia contrastada: sábado 31/10/2026, La Spezia Centrale → Riomaggiore: 07:50–07:56 5 Terre Express 22902 (€8), 08:12–08:20 Regionale 12218 (€8), 08:20–08:26 5 Terre Express 22904 (€8). Horarios NO confirmados para sábado 10/04/2027. Valorar primero Cinque Terre Treno MS Card: viajes regionales ilimitados entre La Spezia y Levanto en 2.ª clase durante validez; tarifa diaria publicada 2026: €22/€29,50/€35 según afluencia, precio abril 2027 pendiente. Con 4 trayectos a €8 serían €32, con 5 €40. Tarjeta nominativa, mostrar documento. Billetes regionales digitales activación automática; físicos, convalidar antes de abordar cuando corresponda. Segundo tramo Riomaggiore → Manarola, referencia sábado 31/10/2026: A) Regionale 12222 10:24–10:26, B) 5 Terre Express 22912 10:28–10:30, C) 5 Terre Express 22914 11:03–11:05; €8 por viaje individual en captura. A y B muy próximas: respaldo útil para prolongar visita es C (11:03). No horarios confirmados abril 2027. Tercer tramo Manarola → Vernazza, referencia sábado 31/10/2026: A) 5 Terre Express 22924 13:32–13:40; B) Regionale 5 Terre Express 12288 14:02–14:10; C) 5 Terre Express 22928 14:32–14:40. Todos directos, €8 individuales según captura. No confirmados para 10/04/2027; comprobar cobertura de Cinque Terre Treno MS Card. Cuarto tramo OPCIONAL Vernazza → Monterosso, referencia sábado 31/10/2026: A) 5 Terre Express 22936 16:42–16:45; B) 5 Terre Express 22938 17:12–17:15; C) 5 Terre Express 22940 17:42–17:45; €8 cada billete individual. Solo si queda energía, luz y tiempo para el último regreso a La Spezia. No confirmado para abril 2027. Regreso con Monterosso, sábado de referencia 31/10/2026: A) Regionale 12237 18:21–18:48 (€8); B) 5 Terre Express 22943 18:42–19:05 (€8); C) 5 Terre Express 22945 19:13–19:40 (€8). Regreso SIN Monterosso desde Vernazza: A) 5 Terre Express 22939 17:46–18:05 (€8); B) 5 Terre Express 22941 18:18–18:40 (€8); C) 5 Terre Express 22943 18:46–19:05 (€8). Solo fechas de referencia de 2026; reconfirmar para 10/04/2027. Tren IC 673 de Monterosso 19:07–19:21 (€8,50) NO está incluido en tarjeta regional Cinque Terre Treno MS Card. Billetes regionales digitales se validan automáticamente según tipo; papel debe convalidarse antes del embarque.",
+          "notes": "Sábado 10 abril de 2027: excursión ferroviaria desde La Spezia Centrale, siguiendo Riomaggiore → Manarola → Vernazza; Monterosso opcional. Comparar billetes por trayecto con Cinque Terre Treno Card según precio y reglas del día; no asumir horario, frecuencia ni tarifa publicados para 2026. Sin caminatas entre pueblos ni Via dell’Amore obligatorias. Referencia contrastada: sábado 31/10/2026, La Spezia Centrale → Riomaggiore: 07:50–07:56 5 Terre Express 22902 (€8), 08:12–08:20 Regionale 12218 (€8), 08:20–08:26 5 Terre Express 22904 (€8). Horarios NO confirmados para sábado 10/04/2027. Valorar primero Cinque Terre Treno MS Card: viajes regionales ilimitados entre La Spezia y Levanto en 2.ª clase durante validez; tarifa diaria publicada 2026: €22/€29,50/€35 según afluencia, precio abril 2027 pendiente. Con 4 trayectos a €8 serían €32, con 5 €40. Tarjeta nominativa, mostrar documento. Billetes regionales digitales activación automática; físicos, convalidar antes de abordar cuando corresponda. Segundo tramo Riomaggiore → Manarola, referencia sábado 31/10/2026: A) Regionale 12222 10:24–10:26, B) 5 Terre Express 22912 10:28–10:30, C) 5 Terre Express 22914 11:03–11:05; €8 por viaje individual en captura. A y B muy próximas: respaldo útil para prolongar visita es C (11:03). No horarios confirmados abril 2027. Tercer tramo Manarola → Vernazza, referencia sábado 31/10/2026: A) 5 Terre Express 22924 13:32–13:40; B) Regionale 5 Terre Express 12288 14:02–14:10; C) 5 Terre Express 22928 14:32–14:40. Todos directos, €8 individuales según captura. No confirmados para 10/04/2027; comprobar cobertura de Cinque Terre Treno MS Card. Cuarto tramo OPCIONAL Vernazza → Monterosso, referencia sábado 31/10/2026: A) 5 Terre Express 22936 16:42–16:45; B) 5 Terre Express 22938 17:12–17:15; C) 5 Terre Express 22940 17:42–17:45; €8 cada billete individual. Solo si queda energía, luz y tiempo para el último regreso a La Spezia. No confirmado para abril 2027. Regreso con Monterosso, sábado de referencia 31/10/2026: A) Regionale 12237 18:21–18:48 (€8); B) 5 Terre Express 22943 18:42–19:05 (€8); C) 5 Terre Express 22945 19:13–19:40 (€8). Regreso SIN Monterosso desde Vernazza: A) 5 Terre Express 22939 17:46–18:05 (€8); B) 5 Terre Express 22941 18:18–18:40 (€8); C) 5 Terre Express 22943 18:46–19:05 (€8). Solo fechas de referencia de 2026; reconfirmar para 10/04/2027. Tren IC 673 de Monterosso 19:07–19:21 (€8,50) NO está incluido en tarjeta regional Cinque Terre Treno MS Card. Billetes regionales digitales se validan automáticamente según tipo; papel debe convalidarse antes del embarque. Presupuesto provisional de tarjeta €22 (banda mínima publicada en 2026, NO garantizada en abril 2027); costo real podría subir a €29.50 o €35 o más; revisar precio del día. La tarjeta cubre trayectos regionales elegibles, no Intercity.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2131,8 +2148,9 @@
               "refunds": null
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 07:45 Firenze Autostazione → 09:00 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 17:50 → Firenze Autostazione 19:05; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 por viaje; €21.80 dos viajes sencillos, sujeto a reconfirmación abril 2027.",
-          "quotedAt": "2026-10-27"
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 07:45 Firenze Autostazione → 09:00 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 17:50 → Firenze Autostazione 19:05; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 por viaje; €21.80 dos viajes sencillos, sujeto a reconfirmación abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": 2
         },
         {
           "id": "B",
@@ -2179,8 +2197,9 @@
               "refunds": null
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:10 Firenze Autostazione → 09:25 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:00 → Firenze Autostazione 19:17; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 por viaje; €21.80 dos viajes sencillos, sujeto a reconfirmación abril 2027.",
-          "quotedAt": "2026-10-27"
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:10 Firenze Autostazione → 09:25 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:00 → Firenze Autostazione 19:17; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 por viaje; €21.80 dos viajes sencillos, sujeto a reconfirmación abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": 2
         },
         {
           "id": "C",
@@ -2227,8 +2246,9 @@
               "refunds": null
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:50 Firenze Autostazione → 10:05 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:20 → Firenze Autostazione 19:37; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 por viaje; €21.80 dos viajes sencillos, sujeto a reconfirmación abril 2027. AT avisa que la salida rápida de 08:50 desde Autostazione se efectúa en Via Orti Oricellari; comprobar hora real de paso en parada temporal.",
-          "quotedAt": "2026-10-27"
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:50 Firenze Autostazione → 10:05 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:20 → Firenze Autostazione 19:37; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 por viaje; €21.80 dos viajes sencillos, sujeto a reconfirmación abril 2027. AT avisa que la salida rápida de 08:50 desde Autostazione se efectúa en Via Orti Oricellari; comprobar hora real de paso en parada temporal. El presupuesto contabiliza dos billetes sencillos, ida y regreso.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": 2
         }
       ],
       "links": [
