@@ -56,17 +56,22 @@
     {
       "n": 2,
       "date": "2027-04-04",
-      "title": "Llegada a Milano",
+      "title": "Llegada a Milano · Malpensa Express y hotel",
       "base": "Milano",
-      "am": "1. Vuelo en curso; sin actividades programadas.",
-      "pm": "1. Llegada prevista a Malpensa a las 18:20; migración y salida del aeropuerto.",
-      "night": "1. Malpensa Express a Milano Centrale, check-in y descanso.",
-      "mobility": "Aeropuerto Malpensa → Milano, tren aeroportuario por confirmar.",
-      "note": "Vuelo cotizado, no comprado. Tras inmigración en Malpensa, puede corresponder registro biométrico EES; prever margen antes del Malpensa Express. No fijar entradas ni actividades el día de llegada.",
+      "am": "1. Continuación del vuelo nocturno directo MEX → MXP; no programar visitas antes de aterrizar.\n2. Preparar pasaporte y dirección del alojamiento para los controles de entrada.",
+      "pm": "1. Aterrizaje previsto en Milano Malpensa (MXP) el domingo 4 de abril a las 18:20, hora local; pasar control de pasaportes y, si corresponde, registro fronterizo EES.\n2. Recoger equipaje si lo hubiera y seguir las indicaciones hacia la estación ferroviaria de la terminal de llegada. No reservar un tren con salida ajustada al aterrizaje.",
+      "night": "1. Tomar el Malpensa Express hacia Milano Centrale (recorrido habitual de unos 50–60 minutos, horario y precio pendientes de consultar).\n2. Caminar desde Milano Centrale hasta B&B HOTEL Milano Aosta, candidato de alojamiento frente a la estación; realizar check-in según horario confirmado.\n3. Cena sencilla cerca del hotel, preparar lo necesario para Torino el lunes y descansar.",
+      "mobility": "MXP → Milano Centrale: Malpensa Express directo, sin horario comprado ni precio confirmado. Desde Milano Centrale al B&B HOTEL Milano Aosta: trayecto corto a pie. Verificar terminal de llegada y último servicio si cambia el vuelo.",
+      "note": "Llegada a las 18:20 cotizada, no comprada. Migración/EES y salida del aeropuerto pueden demorar; confirmar check-in tardío del hotel y avisar la hora prevista. Si se pierde el último tren, consultar transporte alternativo autorizado, sin asumir tarifa. Sin entradas ni actividades turísticas el domingo.",
       "spend": null,
       "places": [],
       "transportRefs": [
         "airport-arrival"
+      ],
+      "headerPlaces": [
+        "Milano Malpensa (MXP) · llegada 18:20",
+        "Milano Centrale",
+        "B&B HOTEL Milano Aosta · candidato, no reservado"
       ]
     },
     {
