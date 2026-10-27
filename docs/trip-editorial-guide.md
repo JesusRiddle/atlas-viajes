@@ -130,3 +130,14 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 
 ## Auditoría editorial humana
 Las pruebas automáticas pueden verificar estructura y coincidencias literales de resaltados, pero **no** pueden determinar si una narración es atractiva, si un lugar merece la pena o si una conexión es segura. Revisar esos puntos manualmente antes de aprobar el PR.
+
+
+### Opciones ferroviarias de contingencia y validación (todos los viajes)
+
+Para cada trayecto ferroviario relevante, documentar siempre **Opción A (recomendada)**, **Opción B (alternativa)** y **Opción C (respaldo adicional)**, siempre que existan servicios reales. Ordenar los horarios de contingencia de modo que permitan reaccionar a la pérdida del principal; no asumir que dos trenes que salen casi a la misma hora son respaldos útiles entre sí. Registrar estación exacta, operador, tren, salida/llegada, duración, transbordos, tarifa, moneda y equivalente estimado MXN al tipo de cambio indicado, fecha de consulta y si el horario es **referencia** o servicio **confirmado** para la fecha del viaje. No inventar salidas ni tarifas.
+
+**Advertencia obligatoria en el itinerario:** cada opción es un servicio alternativo, **no otro tren cubierto automáticamente por el billete comprado**. Si se pierde el principal, comprobar modificaciones, cambios y derechos de asistencia de la tarifa; si el billete no cubre el servicio elegido, **comprar otro billete válido antes de abordar**, especialmente cuando cambia el operador (Italo, Trenitalia, Trenord) o la categoría (alta velocidad/regional).
+
+**Validación (convalida):** informar para cada tramo y tipo de billete si requiere acción, **cuándo y dónde**. El *Biglietto Digitale Regionale* de Trenitalia se valida automáticamente a la salida programada del tren elegido; comprobar el boleto vigente y la barra dinámica verde, no usar el PDF informativo como título de viaje. El **billete regional de papel** de Trenitalia debe introducirse **antes de abordar** en las máquinas validadoras de la estación de origen (*convalidatrici*, cerca de accesos/andenes); conservarlo y mostrarlo al revisor. Los billetes electrónicos de **Italo** se muestran con código/QR o datos de reserva y documento de identidad: no requieren estampado físico; respetar el servicio y la tarifa contratados. Los billetes electrónicos de **Trenord/Malpensa Express** adquiridos en web o app no requieren convalidación física; atender condiciones específicas de su tipo. Confirmar las reglas oficiales **antes de viajar**, porque pueden cambiar y existen modalidades especiales.
+
+Fuentes oficiales de referencia: https://www.trenitalia.com/es/informacion/viajar-con-el-regionale.html · https://www.trenitalia.com/es/informacion/billete-digital-regional.html · https://www.trenord.it/en/tickets/travel-titles/tickets/ · https://www.italotreno.com/en/support-contacts/faq
