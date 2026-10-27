@@ -3544,5 +3544,45 @@
       "license": "Consultar licencia de la imagen",
       "attribution": "Wikimedia Commons"
     }
+  },
+  "italy27-capellini": {
+    "name": "Via Giovanni Capellini · Portovenere",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Giovanni%20Capellini%20-%20Porto%20Venere%20(IT42)%20-%202022-08-30%20-%201.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Via%20Giovanni%20Capellini%20-%20Porto%20Venere%20(IT42)%20-%202022-08-30%20-%201.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-opera-duomo": {
+    "name": "Museo dell’Opera del Duomo · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nuovo%20museo%20dell'opera%20del%20duomo%2C%20sala%20del%20facciatone%20e%20delle%20porte%20del%20battistero%2001.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuovo%20museo%20dell'opera%20del%20duomo%2C%20sala%20del%20facciatone%20e%20delle%20porte%20del%20battistero%2001.JPG",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-ponte": {
+    "name": "Ponte Vecchio · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20Vecchio%20(Florencia).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Ponte%20Vecchio%20(Florencia).jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-lucca-walls": {
+    "name": "Murallas renacentistas · Lucca",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucca%200284%20(50694408187).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Lucca%200284%20(50694408187).jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
   }
 }
