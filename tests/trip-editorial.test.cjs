@@ -314,3 +314,12 @@ test('Italia 2027: todas las galerías apuntan a fotografías con fuente y créd
     assert.match(place.photo.licenseUrl, /^https:\/\/creativecommons\.org\//, id);
   }
 });
+
+
+test('documentación resalta términos clave sin interpretar HTML del JSON', () => {
+ const component = fs.readFileSync('components/trip.js','utf8');
+ assert.match(component, /item\.id === 'entry'/);
+ assert.match(component, /safeText\.replace\(/);
+ assert.match(component, /Pasaporte\|ETIAS\|EES\|visa\|adaptador/);
+ assert.match(component, /'<strong>\$1<\/strong>'/);
+});
