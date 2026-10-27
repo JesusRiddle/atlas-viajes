@@ -2220,13 +2220,25 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
  #plan .overview-practical-grid.practical-indicators .practical-indicator[data-indicator-id="entry"]{grid-column:2;grid-row:1 / span 2}
 }
 
-/* Panorama: misma escala de temporada que las tarjetas mensuales. */
-#plan .overview-climate-card.season-recommended{background:transparent;border-color:var(--line);border-top-color:#255535;color:var(--ink)}
-#plan .overview-climate-card.season-conditional{background:transparent;border-color:var(--line);border-top-color:#a87912;color:var(--ink)}
-#plan .overview-climate-card.season-avoid{background:transparent;border-color:var(--line);border-top-color:#a84950;color:var(--ink)}
-#plan .overview-climate-card.season-pending{background:transparent;border-color:var(--line);border-top-color:#8052a6;color:var(--ink)}
+/* Clima y luz: superficie neutra y estado derivado de Temporadas. */
+#plan .overview-climate-card[class*="season-"]{
+  background:transparent;
+  border-color:var(--line);
+  color:var(--ink);
+}
+#plan .overview-climate-card.season-recommended{border-top-color:#255535}
+#plan .overview-climate-card.season-conditional{border-top-color:#a87912}
+#plan .overview-climate-card.season-avoid{border-top-color:#a84950}
+#plan .overview-climate-card.season-pending{border-top-color:#8052a6}
 #plan .overview-climate-card[class*="season-"] .fact-copy p{color:var(--ink)}
-#plan .overview-climate-card .overview-climate-season-status{font:700 11px/1.4 Arial,Helvetica,sans-serif;margin-left:auto;padding:3px 8px;border:1px solid currentColor;border-radius:20px;white-space:nowrap}
+#plan .overview-climate-card .overview-climate-season-status{
+  font:700 11px/1.4 Arial,Helvetica,sans-serif;
+  margin-left:auto;
+  padding:3px 8px;
+  border:1px solid currentColor;
+  border-radius:20px;
+  white-space:nowrap;
+}
 #plan .overview-climate-card h3{flex-wrap:wrap}
 
 /* La etiqueta de Clima y luz comparte la paleta de estados de Temporadas. */
