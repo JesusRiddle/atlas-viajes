@@ -3407,11 +3407,12 @@
   "italy27-torino-san-carlo": {
     "name": "Piazza San Carlo · Torino",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza_S._Carlo_Torino.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Piazza_S._Carlo_Torino.jpg",
-      "author": "Wikimedia Commons (ver ficha)",
-      "license": "Ver ficha de Wikimedia Commons",
-      "attribution": "Wikimedia Commons"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20San%20Carlo%2CTurin%2CItaly.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza_San_Carlo,Turin,Italy.jpg",
+      "author": "Alexandros Mantoukas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Alexandros Mantoukas"
     }
   },
   "italy27-spezia-prione": {
