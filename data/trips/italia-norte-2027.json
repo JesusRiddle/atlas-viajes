@@ -325,16 +325,23 @@
     {
       "n": 13,
       "date": "2027-04-15",
-      "title": "Firenze III · Bargello, Oltrarno y miradores",
+      "title": "Firenze III · Bargello, San Miniato y Piazzale Michelangelo",
       "base": "Firenze",
-      "am": "1. Museo Nazionale del Bargello, sujeto a reserva y horario.",
-      "pm": "1. Oltrarno y paseo por Oltrarno y visita prioritaria a Piazzale Michelangelo al atardecer, con San Miniato al Monte según horarios.",
-      "night": "1. Cena final y preparar equipaje para el regreso del viernes.",
-      "mobility": "• *Firenze centro → Bargello:* A pie desde el alojamiento o en transporte urbano según el momento de la visita.\n• *Oltrarno y miradores:* Cruzar el Arno y subir hacia San Miniato al Monte / Piazzale Michelangelo a pie o en autobús.\n• *Regreso:* Volver con tiempo para preparar equipaje del viernes.",
-      "note": "• *Bargello:* Comprobar apertura y tarifa; no reservar entradas incompatibles.\n• *Miradores:* Piazzale Michelangelo es prioritario para el atardecer; usar autobús si la subida resulta pesada; no programar excursiones largas el día anterior al vuelo.",
+      "am": "1. Desayunar en Firenze y caminar al Museo Nazionale del Bargello. Entrar preferentemente hacia las 09:00–09:30, sin reserva todavía, y dedicar 1½–2 horas a esculturas de Donatello, Michelangelo y el patio histórico.\n2. Recorrer con calma Piazza della Signoria y el entorno de Via del Proconsolo, sin añadir museos con entradas obligatorias.\n3. Si Santa Croce quedó pendiente del miércoles por una franja tardía del Corridoio Vasariano, visitarla a continuación y reducir el paseo intermedio; sigue siendo imprescindible.",
+      "pm": "1. Almorzar tranquilamente y cruzar al barrio de Oltrarno para recorrer Piazza Santo Spirito y sus calles, sin repetir el recorrido del miércoles más de lo necesario.\n2. Subir hacia la Basílica de San Miniato al Monte, a pie si hay energía o en autobús urbano hasta Piazzale Michelangelo y un tramo adicional caminando. Intentar entrar a la basílica antes de los oficios; visita gratuita y sujeta al culto.\n3. Bajar a Piazzale Michelangelo y permanecer allí hasta el atardecer para disfrutar la panorámica de Firenze. Esta visita es prioritaria, no opcional.",
+      "night": "1. Regresar desde Piazzale Michelangelo en autobús urbano o caminando si todavía hay energía y buenas condiciones de luz.\n2. Cena de despedida en Firenze; preparar equipaje y comprobar los trenes del viernes hacia Milano y Malpensa, dejando holgura antes del vuelo de las 23:05.",
+      "mobility": "• *Hotel → Bargello:* Recorrido a pie desde Hotel Mia Cara & SPA, cerca de Firenze SMN, hasta Via del Proconsolo 4; comprobar el trayecto y llegar con margen.\n• *Bargello → Oltrarno:* Caminar por Piazza della Signoria y cruzar el Arno hacia Piazza Santo Spirito; reservar tiempo para comer.\n• *Oltrarno → San Miniato:* Subida a pie con desnivel o autobús urbano hacia Piazzale Michelangelo, seguida de caminata a la basílica. Verificar línea y parada vigente; el monasterio está más arriba que el mirador.\n• *San Miniato → Piazzale Michelangelo:* Descender caminando hasta el mirador para pasar allí el atardecer.\n• *Piazzale Michelangelo → hotel:* Regresar en autobús o a pie; evitar una bajada a oscuras si hay cansancio.",
+      "note": "• *Bargello:* Abre habitualmente los jueves de 08:15 a 18:50; el último acceso se suspende antes del cierre. Verificar calendario de abril de 2027. Tarifa individual de referencia €12.\n• *Billete conjunto:* La tarifa Accademia + Bargello de 48 horas exige comprobar la hora exacta de activación el martes 13 frente a la visita del jueves 15; comparar compra separada y pase de 72 horas antes de pagar.\n• *San Miniato:* Sitio oficial: basílica abierta de lunes a sábado 09:30–13:00 y 15:30–19:00, sin reserva y con acceso gratuito. Durante las celebraciones no se permite la visita turística; priorizar llegada antes de los oficios vespertinos.\n• *Piazzale Michelangelo:* Visita prioritaria al atardecer, con tiempo para disfrutar las vistas; comprobar previsión del tiempo y llevar algo de abrigo para la tarde.\n• *Santa Croce:* Si el Corredor Vasariano obliga a moverla desde el miércoles, colocar Santa Croce después de Bargello, acortar Oltrarno y mantener Piazzale Michelangelo al atardecer.\n• *Plan B:* Si hay lluvia intensa o cansancio, tomar autobús hasta el mirador y dedicar menos tiempo a la subida; no eliminar Piazzale Michelangelo.\n• *Regreso del viernes:* Tren Firenze → Milano y Malpensa Express no reservados; revisar márgenes y equipaje por la noche.",
       "spend": null,
       "places": [],
-      "hotel": "firenze-miacara"
+      "hotel": "firenze-miacara",
+      "headerPlaces": [
+        "Museo Nazionale del Bargello",
+        "Piazza Santo Spirito · Oltrarno",
+        "San Miniato al Monte",
+        "Piazzale Michelangelo · atardecer",
+        "Santa Croce · respaldo imprescindible"
+      ]
     },
     {
       "n": 14,
@@ -783,11 +790,19 @@
         },
         {
           "title": "Santa Croce, Bargello y Torre Guinigi",
-          "description": "Santa Croce es imprescindible el miércoles 14 después de Uffizi + Corridoio Vasariano, con entrada antes de las 17:00 según horario habitual; si la franja del Corredor obliga, trasladar Santa Croce al jueves 15. Bargello jueves 15, Torre Guinigi opcional domingo 11. Comparar validez de billete combinado Accademia/Bargello.",
+          "description": "Jueves 15: Bargello temprano, Oltrarno, San Miniato al Monte antes de los oficios y Piazzale Michelangelo al atardecer (imprescindible). Santa Croce preferentemente miércoles 14; si el Corredor se retrasa, visitarla jueves tras Bargello y recortar el paseo de Oltrarno. Comprobar validez de 48 h entre Accademia martes y Bargello jueves.",
           "links": [
             {
               "label": "Santa Croce · visita y horarios oficiales",
               "url": "https://www.santacroceopera.it/en/organise-your-visit/"
+            },
+            {
+              "label": "Bargello · información oficial",
+              "url": "https://bargellomusei.it/en/museum/museo-nazionale-del-bargello/"
+            },
+            {
+              "label": "San Miniato · horarios oficiales",
+              "url": "https://sanminiatoalmonte.it/contatti/"
             }
           ]
         }
