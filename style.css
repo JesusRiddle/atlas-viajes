@@ -2221,10 +2221,10 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 }
 
 /* Panorama: misma escala de temporada que las tarjetas mensuales. */
-#plan .overview-climate-card.season-recommended{background:#d9eddd;border-color:#a3d2af;color:#255535}
-#plan .overview-climate-card.season-conditional{background:#fff0c4;border-color:#eac56d;color:#684c0c}
-#plan .overview-climate-card.season-avoid{background:#f5dedf;border-color:#dfa7ad;color:#7f3338}
-#plan .overview-climate-card.season-pending{background:#f8f3fb;border-color:#d6c2e5;color:#654280}
+#plan .overview-climate-card.season-recommended{background:transparent;border-color:var(--line);border-top-color:#255535;color:var(--ink)}
+#plan .overview-climate-card.season-conditional{background:transparent;border-color:var(--line);border-top-color:#a87912;color:var(--ink)}
+#plan .overview-climate-card.season-avoid{background:transparent;border-color:var(--line);border-top-color:#a84950;color:var(--ink)}
+#plan .overview-climate-card.season-pending{background:transparent;border-color:var(--line);border-top-color:#8052a6;color:var(--ink)}
 #plan .overview-climate-card[class*="season-"] .fact-copy p{color:var(--ink)}
 #plan .overview-climate-card .overview-climate-season-status{font:700 11px/1.4 Arial,Helvetica,sans-serif;margin-left:auto;padding:3px 8px;border:1px solid currentColor;border-radius:20px;white-space:nowrap}
 #plan .overview-climate-card h3{flex-wrap:wrap}
