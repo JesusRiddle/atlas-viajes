@@ -284,16 +284,22 @@
     {
       "n": 11,
       "date": "2027-04-13",
-      "title": "Firenze I · David, Cúpula y Museo dell’Opera",
+      "title": "Firenze I · David, Cúpula de Brunelleschi y Museo dell’Opera",
       "base": "Firenze",
-      "am": "1. Galleria dell’Accademia temprano; traslado al complejo del Duomo.",
-      "pm": "1. Subida a la Cúpula de Brunelleschi en la franja reservada; Museo dell’Opera del Duomo si hay margen.",
-      "night": "1. Paseo por Piazza della Signoria y Ponte Vecchio.",
-      "mobility": "• *Firenze SMN → Accademia:* Desplazamiento a pie o transporte urbano según alojamiento y horario.\n• *Accademia → Duomo:* Recorrido a pie; reservar margen entre accesos.\n• *Centro histórico:* Museo dell’Opera, Piazza della Signoria y Ponte Vecchio a pie.",
-      "note": "• *Accademia:* Entrada horaria necesaria para contemplar el David.\n• *Cúpula:* Reserva con franja fija; comprobar reglas de bolsas y 463 escalones.\n• *Compatibilidad:* No comprar accesos con horarios muy ajustados.",
+      "am": "1. Salir a pie desde Hotel Mia Cara & SPA hacia la Galleria dell’Accademia; reservar entrada a primera hora (objetivo 08:15–08:45) para contemplar el David y recorrer las salas principales, dedicando entre 75 y 90 minutos.\n2. Caminar hacia Piazza del Duomo y tomar una pausa antes de la subida. Presentarse con antelación a la franja de acceso de la Cúpula de Brunelleschi, preferentemente hacia las 11:00–11:30 y solo después de confirmar la entrada de Accademia.",
+      "pm": "1. Subir los 463 escalones de la Cúpula de Brunelleschi sin prisas y disfrutar la vista; no hay ascensor. Calcular alrededor de 60–90 minutos contando acceso, subida, miradores y descenso.\n2. Almorzar cerca del complejo monumental y visitar el Museo dell’Opera del Duomo (aprox. 75–90 minutos), incluido en Brunelleschi Pass. Si queda energía, entrar a la Catedral en su horario de acceso gratuito; no añadir la subida al Campanile.",
+      "night": "1. Pasear por Piazza della Repubblica o Piazza della Signoria si apetece, sin añadir entradas con hora.\n2. Cenar y regresar al Hotel Mia Cara & SPA; descansar para Uffizi y Santa Croce el miércoles 14.",
+      "mobility": "• *Hotel → Accademia:* Caminar desde el entorno de Firenze SMN hasta Via Ricasoli; comprobar tiempos y llegar con margen al acceso reservado.\n• *Accademia → Duomo:* Ir a pie al complejo de Piazza del Duomo (aprox. 10–15 minutos) y localizar la entrada específica a la Cúpula.\n• *Consigna del Duomo:* Dejar mochilas y bolsas de tamaño no permitido en Piazza Duomo 38/r antes del horario de subida; servicio incluido con el pase según reglas oficiales.\n• *Cúpula → Museo dell’Opera:* Continuar a pie por Piazza del Duomo; Museo dell’Opera en Piazza del Duomo 9.\n• *Regreso al hotel:* Centro histórico → entorno de Firenze SMN, a pie o transporte urbano si hay cansancio.",
+      "note": "• *Dos reservas críticas:* Accademia temprano y Cúpula con franja fija. Comprar y coordinar primero ambos horarios; 08:15–08:45 y 11:00–11:30 son objetivos, NO entradas reservadas.\n• *Brunelleschi Pass:* €30 como tarifa oficial de referencia consultada en octubre de 2026; incluye Cúpula y Museo dell’Opera y tiene vigencia de tres días naturales, comenzando el día de acceso reservado a la Cúpula. Reconfirmar tarifa 2027.\n• *Cúpula:* 463 escalones y sin ascensor; reservar tiempo de recuperación, llevar agua y evitar equipaje voluminoso. Se requiere documento de identidad y acceso exactamente en la franja comprada.\n• *Museo dell’Opera:* Cierra habitualmente el primer martes de cada mes, no todos los martes; confirmar aperturas extraordinarias del 13 de abril de 2027.\n• *Catedral:* Entrada ordinaria gratuita con horario y vestimenta apropiados; omitirla si hay fila o cansancio, ya que el Museo y la Cúpula son prioritarios.\n• *Entradas Accademia/Bargello:* Revisar modalidad y vigencia del billete combinado antes de comprar: Accademia el martes 13 y Bargello el jueves 15 pueden superar 48 horas según franja exacta. No asumir que un pase de 48 horas cubre ambos.\n• *Plan B:* Si Accademia y Cúpula no encajan, conservar la franja más restrictiva de la Cúpula y mover Accademia a otra hora compatible del martes; el Museo dell’Opera puede ir después. No desplazar Uffizi del miércoles sin necesidad.",
       "spend": null,
       "places": [],
-      "hotel": "firenze-miacara"
+      "hotel": "firenze-miacara",
+      "headerPlaces": [
+        "Galleria dell’Accademia · David",
+        "Cúpula de Brunelleschi · reserva obligatoria",
+        "Museo dell’Opera del Duomo",
+        "Catedral de Santa Maria del Fiore · opcional"
+      ]
     },
     {
       "n": 12,
@@ -660,7 +666,7 @@
         },
         {
           "title": "Galleria dell’Accademia · David (Firenze)",
-          "description": "Martes 13 de abril, preferentemente temprano, antes de la Cúpula. Verificar apertura y reservar horario oficial, aún sin compra.",
+          "description": "Martes 13 abril: preferir 08:15–08:45, sujeto a disponibilidad. Visita de 75–90 min y margen antes de la Cúpula. B-Ticket es canal autorizado; comparar el billete combinado Accademia/Bargello solo si las franjas del martes 13 y jueves 15 quedan dentro de su vigencia.",
           "links": [
             {
               "label": "Accademia · entradas oficiales",
@@ -674,7 +680,7 @@
         },
         {
           "title": "Cúpula de Brunelleschi · Brunelleschi Pass (Firenze)",
-          "description": "Martes 13 de abril, después de Accademia, con horario fijo y margen para el Museo dell’Opera. Verificar condiciones y entradas oficiales.",
+          "description": "Martes 13 abril: Cúpula preferentemente 11:00–11:30 después de Accademia; franja obligatoria e identificación. 463 escalones sin ascensor, dejar bolsas prohibidas en consigna gratuita Piazza Duomo 38/r. Brunelleschi Pass incluye Museo dell’Opera y vale 3 días naturales desde la fecha de Cúpula; horarios y tarifa 2027 por confirmar.",
           "links": [
             {
               "label": "Brunelleschi Pass oficial",
