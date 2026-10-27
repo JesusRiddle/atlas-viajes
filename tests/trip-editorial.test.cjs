@@ -74,7 +74,7 @@ test('reservas críticas de Italia 2027 tienen grupos, prioridad y enlaces ofici
   }
   const critical = trip.reservations[0][1];
   assert.match(critical[0].title, /Última Cena/);
-  assert.match(critical[0].description, /6 de abril/);
+  assert.match(critical[0].description, /martes 6 o miércoles 7 de abril/);
   assert.match(critical[0].description, /7/);
 });
 
