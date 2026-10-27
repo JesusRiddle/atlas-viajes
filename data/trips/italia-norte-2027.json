@@ -597,16 +597,9 @@
   ],
   "practicalIndicators": [
     {
-      "id": "solo",
-      "title": "Viajar solo",
-      "text": "Ciudades fáciles de recorrer por tu cuenta y bien conectadas por tren. La consigna en Lucca debe confirmarse.",
-      "badge": "Muy recomendable",
-      "tone": "green"
-    },
-    {
-      "id": "pace",
-      "title": "Ritmo",
-      "text": "Jornadas de visitas y caminatas a un ritmo moderado–activo, con algunos días exigentes y otros más flexibles para pasear sin prisa.",
+      "id": "style",
+      "title": "Estilo de viaje",
+      "text": "Viaje independiente en ciudades bien conectadas por tren, con caminatas y visitas de ritmo moderado–activo. Algunos días son exigentes y otros permiten paseos más flexibles; confirmar consigna en Lucca.",
       "badge": "Moderado–activo",
       "tone": "orange"
     },
