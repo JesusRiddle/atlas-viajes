@@ -202,8 +202,20 @@ test('Italia 2027 incluye requisitos de entrada y guía universal para futuros v
  const ids=trip.practicalIndicators.map(i=>i.id);
  assert.deepEqual(ids,['solo','pace','language','currency','entry']);
  const entry=trip.practicalIndicators.find(i=>i.id==='entry');
- for (const term of ['Pasaporte','ETIAS','EE. UU.','adaptador','230 V']) assert.ok(entry.text.includes(term),'Falta '+term);
+ for (const term of ['Pasaporte','ETIAS','EES','EE. UU.','adaptador','230 V']) assert.ok(entry.text.includes(term),'Falta '+term);
  const guide=fs.readFileSync('docs/trip-editorial-guide.md','utf8');
  assert.match(guide,/Requisitos prácticos obligatorios para CADA viaje nuevo/);
  assert.match(guide,/practicalIndicators\.entry/);
+});
+
+
+test('Italia 2027: fechas de hotel y traslados concuerdan con el día a día', () => {
+ const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+ const stays=[['2027-04-04','2027-04-08'],['2027-04-08','2027-04-11'],['2027-04-11','2027-04-16']];
+ trip.hotels.forEach((h,i)=>{assert.equal(h.checkIn,stays[i][0]);assert.equal(h.checkOut,stays[i][1]);});
+ const refsByDay={6:'train-milano-la-spezia',7:'bus-portovenere',8:'train-cinque-terre',9:'train-la-spezia-lucca',10:'train-siena',14:'train-firenze-milano'};
+ for(const [day,id] of Object.entries(refsByDay)){
+  assert.ok(trip.days[Number(day)-1].transportRefs?.includes(id),`Falta ${id} día ${day}`);
+  assert.equal(trip.majorTransport.find(t=>t.id===id).day,Number(day));
+ }
 });
