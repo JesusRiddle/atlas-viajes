@@ -4,7 +4,7 @@
   "flag": "🇮🇹",
   "status": "draft",
   "start": "2027-04-03",
-  "end": "2027-04-14",
+  "end": "2027-04-16",
   "tag": "BORRADOR · LA ÚLTIMA CENA ES RESERVA OBLIGATORIA",
   "routeCities": [
     "Milano",
@@ -27,10 +27,10 @@
     ],
     [
       "Firenze",
-      5
+      7
     ]
   ],
-  "work": 8,
+  "work": 10,
   "intro": "El viaje comienza en Milano, entre el Duomo, la Galleria Vittorio Emanuele II y La Última Cena de Leonardo da Vinci, antes de descubrir en Torino el Museo Egizio y sus elegantes plazas. Continúa hacia la costa de Liguria para recorrer Portovenere y los coloridos pueblos de Cinque Terre. De camino a Toscana, las murallas y la Torre Guinigi de Lucca dan paso a Firenze, donde esperan el David de Michelangelo, la Cúpula de Brunelleschi y los Uffizi. El recorrido culmina con las calles medievales, la Piazza del Campo y la Catedral de Siena.",
   "days": [
     {
@@ -206,20 +206,46 @@
     {
       "n": 12,
       "date": "2027-04-14",
+      "title": "Firenze IV · Fiesole opcional y jardines",
+      "base": "Firenze",
+      "am": "1. Mañana flexible en Firenze: descanso, compras o visitas pendientes sin reserva obligatoria.",
+      "pm": "1. Si el clima acompaña, excursión breve a Fiesole para pasear por su centro y miradores; si no, Jardín de las Rosas y Oltrarno.",
+      "night": "1. Regreso y cena en Firenze.",
+      "mobility": "Autobús urbano a Fiesole si se elige la excursión; de lo contrario, caminata por Firenze. Tarifas y horarios pendientes.",
+      "note": "Día adicional para bajar el ritmo. Fiesole es opcional y queda fuera del presupuesto de entradas y transporte hasta elegirlo.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 13,
+      "date": "2027-04-15",
+      "title": "Firenze V · día libre y pendientes",
+      "base": "Firenze",
+      "am": "1. Tiempo libre para mercados, paseo por el centro o una visita pendiente por cambios de horario.",
+      "pm": "1. Recorrer zonas que falten por conocer o descansar; evitar reservas que dependan de conexiones largas.",
+      "night": "1. Cena y preparación de equipaje para el regreso del viernes.",
+      "mobility": "Principalmente a pie; transporte urbano opcional.",
+      "note": "Día colchón para ajustar Accademia, Uffizi o Cúpula si sus reservas obligan a redistribuir las visitas. No se presupuestan entradas duplicadas.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 14,
+      "date": "2027-04-16",
       "title": "Firenze → Milano Malpensa → CDMX · vuelo directo",
       "base": "En vuelo / regreso",
       "am": "1. Desayunar, revisar pertenencias y realizar check-out en Firenze.\n2. Trasladarse a Firenze Santa Maria Novella y tomar un tren de alta velocidad hacia Milano Centrale. Seleccionar una salida con margen amplio; el horario de abril de 2027 aún no está cotizado.",
       "pm": "1. En Milano Centrale, enlazar con Malpensa Express hacia el aeropuerto; revisar estación de salida y terminal asignada.\n2. Objetivo: llegar a Milano Malpensa entre las 18:30 y las 19:00, unas 4 horas antes del vuelo de las 23:05.\n3. Realizar check-in, seguridad y control de pasaportes de salida del espacio Schengen.",
-      "night": "1. Embarcar en el vuelo directo Aeroméxico MXP → MEX, salida cotizada el miércoles 14 de abril a las 23:05, hora de Italia.\n2. Pasar la noche a bordo. Llegada prevista a CDMX el jueves 15 de abril a las 04:00, hora local.",
+      "night": "1. Embarcar en el vuelo directo Aeroméxico MXP → MEX, salida cotizada el viernes 16 de abril a las 23:05 (hora de Italia).\n2. Pasar la noche a bordo. Llegada prevista a CDMX el sábado 17 de abril a las 04:00, hora local.",
       "mobility": "Firenze SMN → Milano Centrale: tren de alta velocidad, sin horario reservado. Milano Centrale → Malpensa: Malpensa Express, con frecuencia y terminal por confirmar. Vuelo directo MXP → MEX a las 23:05 (cotizado, no comprado).",
-      "note": "Reservar ambos trayectos ferroviarios con margen para incidencias: no son una conexión protegida con el vuelo. Los trenes siguen sin cotizar; consultar los horarios antes de decidir la salida de Firenze. El vuelo llega a México el 15 de abril, aunque el último día de actividades en Italia es el 14. Tras aterrizar el 15 de abril, realizar migración, aduana y traslado a casa.",
+      "note": "Trenes a Milano y Malpensa no cotizados; reservar márgenes amplios ante retrasos. La conexión ferroviaria no está protegida por el billete aéreo. Llegada a México el sábado 17 de abril; domingo 18 libre para descansar. Vuelo no comprado.",
       "spend": null,
       "places": [],
       "headerPlaces": [
         "Firenze Santa Maria Novella",
         "Milano Centrale",
         "Milano Malpensa (MXP)",
-        "Ciudad de México (MEX) · llegada el 15 de abril"
+        "Ciudad de México (MEX) · llegada el 17 de abril"
       ],
       "transportRefs": [
         "train-firenze-milano",
@@ -268,12 +294,12 @@
       "description": "Recorrer las calles medievales hasta la Piazza del Campo y visitar el Duomo, con sus mármoles y los frescos de la Libreria Piccolomini."
     }
   ],
-  "flight": "Aeroméxico directo MEX → MXP (3–4 abril) y MXP → MEX (14–15 abril). Tarifa Básica cotizada en $16,683 MXN el 26/10/2026; no comprada, sujeta a cambio y a verificar franquicia de equipaje.",
+  "flight": "Aeroméxico directo MEX → MXP (3–4 abril) y MXP → MEX (16–17 abril). Tarifa Básica de $16,683 MXN, consultada en Google Flights el 26/10/2026; no comprada. Incluye equipaje de mano; sin cambios ni reembolsos según la captura.",
   "local": "Bases ferroviarias: Milano Centrale (Torino y salida a Liguria), La Spezia Centrale (Cinque Terre) y Firenze SMN (Siena y regreso). Portovenere por ATC si el horario permite; Lucca solo con consigna comprobada. Los trenes de abril de 2027 aún no están cotizados: los tiempos son referencias de servicios habituales y las tarifas consultadas corresponden a 2026.",
   "climate": "En abril tendrás un clima *primaveral y variable*: *Milano y Torino, 15–18 °C de día y 5–9 °C de noche*; *Liguria, 16–19 °C y 9–12 °C*; *Toscana, 17–20 °C y 6–10 °C*. Son rangos habituales, no un pronóstico. Puede llover y hacer viento en la costa.\n\n*Qué llevar:* Chamarra impermeable y cortaviento, suéter ligero, ropa por capas, pantalones largos, tenis con buena suela y paraguas compacto. Todo compatible con tu equipaje de cabina.\n\n*Horas de luz:* Del 4 al 14 de abril, amanecerá aproximadamente entre *6:35 y 7:00* y anochecerá entre *19:40 y 20:00* (hora local). Aprovecha la luz para Cinque Terre, Portovenere y miradores; verifica el estado de senderos y barcos si llueve.",
   "solo": "Preferir alojamientos próximos a estaciones y consigna confirmada para Lucca.",
-  "lodgingSummary": "Candidatos principales sin reservar: B&B HOTEL Milano Aosta (4–7 abril, 3 noches), Casa Danè en La Spezia (7–9 abril, 2) y Hotel Mia Cara & SPA en Firenze (9–14 abril, 5). Estimación de trabajo: $21,800 MXN por las 10 noches, no cotización. Revisar tarifas, impuestos y cancelación.",
-  "heroLodgingSummary": "10 noches en 3 candidatos principales: Milano Aosta (3), Casa Danè (2) y Mia Cara (5). $21,800 MXN estimados; no reservados.",
+  "lodgingSummary": "Candidatos principales no reservados: Milano Aosta (4–7 abril, 3 noches), Casa Danè en La Spezia (7–9 abril, 2) y Hotel Mia Cara & SPA en Firenze (9–16 abril, 7). Total supuesto de hospedaje: $26,400 MXN para 12 noches. Verificar precio real, impuestos y cancelación.",
+  "heroLodgingSummary": "12 noches en 3 bases: Milano (3), La Spezia (2) y Firenze (7). Hoteles candidatos, no reservados; $26,400 MXN estimados.",
   "mapPoints": [
     {
       "name": "Milano",
@@ -361,7 +387,7 @@
       "title": "Cotización aérea de referencia · Aeroméxico",
       "status": "quoted",
       "quotedAt": "2026-10-26",
-      "route": "MEX → MXP (3 abril 2027, 22:30–18:20 +1); MXP → MEX (14 abril 2027, 23:05–04:00 +1)",
+      "route": "MEX → MXP (3 abril 2027, 22:30–18:20 +1); MXP → MEX (16 abril 2027, 23:05–04:00 +1)",
       "carrier": "Aeroméxico",
       "fare": "Básica",
       "price": {
@@ -370,7 +396,7 @@
       },
       "baggage": "Una maleta de mano incluida; equipaje documentado con cargo. Verificar límites de peso y artículo personal antes de compra.",
       "conditions": "Sin cambios voluntarios ni reembolsos según pantalla de cotización.",
-      "note": "Tarifa redonda de Google Flights, no comprada ni garantizada; llegada a México el 15 abril. Comparar multidestino MEX→MXP / FCO→MEX antes de decidir."
+      "note": "Tarifa redonda Básica vista en Google Flights, no comprada; llegada a México el sábado 17 abril. Precio mostrado en la captura: $16,683 MXN."
     },
     {
       "title": "Auditoría logística y reservas · octubre 2026",
@@ -678,8 +704,8 @@
                 {
                   "from": "MXP",
                   "to": "MEX",
-                  "departure": "2027-04-14T23:05:00+02:00",
-                  "arrival": "2027-04-15T04:00:00-06:00",
+                  "departure": "2027-04-16T23:05:00+02:00",
+                  "arrival": "2027-04-17T04:00:00-06:00",
                   "operator": "Aeroméxico"
                 }
               ]
@@ -698,7 +724,7 @@
             }
           ],
           "quotedAt": "2026-10-26",
-          "notes": "Referencia aportada por el viajero, no comprada; verificar vuelo y equipaje de cabina antes de pagar."
+          "notes": "Cotización redonda en captura de Google Flights del 26/10/2026, $16,683 MXN tarifa Básica, sin compra ni garantía de disponibilidad. Ida 3 abril y regreso 16 abril; equipaje de mano incluido, no cambios ni reembolsos según pantalla."
         }
       ],
       "links": [
@@ -1143,7 +1169,7 @@
       "id": "train-firenze-milano",
       "type": "train",
       "title": "Firenze SMN → Milano Centrale",
-      "day": 12,
+      "day": 14,
       "selectedOption": "A",
       "options": [
         {
@@ -1174,7 +1200,7 @@
               "refunds": null
             }
           ],
-          "notes": "14 abril: alta velocidad directa ~1 h 54–2 h. Escoger salida con amplio colchón para enlazar Malpensa Express y estar en MXP alrededor de 18:30–19:00; evitar billetes de tren con conexión demasiado justa.",
+          "notes": "16 abril: alta velocidad directa ~1 h 54–2 h. Escoger salida con amplio colchón para enlazar Malpensa Express y estar en MXP alrededor de 18:30–19:00; evitar billetes de tren con conexión demasiado justa.",
           "quotedAt": null
         }
       ],
@@ -1193,7 +1219,7 @@
       "id": "airport-return",
       "type": "train",
       "title": "Milano Centrale → Malpensa",
-      "day": 12,
+      "day": 14,
       "selectedOption": "A",
       "options": [
         {
@@ -1224,7 +1250,7 @@
               "refunds": null
             }
           ],
-          "notes": "14 abril: ~51 min, tarifa histórica de referencia €15 por sentido. Conexión posterior al tren desde Firenze; llegar al aeropuerto con unas 4 horas de margen para vuelo a las 23:05.",
+          "notes": "16 abril: ~51 min, tarifa histórica de referencia €15 por sentido. Conexión posterior al tren desde Firenze; llegar al aeropuerto con unas 4 horas de margen para vuelo a las 23:05.",
           "quotedAt": null
         }
       ],
@@ -1279,11 +1305,11 @@
       "name": "Hotel Mia Cara & SPA",
       "address": "Via Faenza 90r, Firenze",
       "checkIn": "2027-04-09",
-      "checkOut": "2027-04-14",
+      "checkOut": "2027-04-16",
       "status": "Candidato principal · no reservado",
-      "rate": "Estimación de planeación: $11,500 MXN total · 5 noches ($2,300/noche). No es cotización.",
+      "rate": "Estimación de planeación: $16,100 MXN total · 7 noches ($2,300/noche). No es cotización.",
       "rateConditions": "Precio objetivo supuesto, habitación individual con baño privado. Confirmar total con impuestos, disponibilidad y cancelación para abril de 2027.",
-      "notes": "A pocos minutos de Firenze SMN. Confirmar tarifa de cinco noches, condiciones de cancelación y accesibilidad.",
+      "notes": "Cerca de Firenze SMN. Confirmar precio final y disponibilidad para siete noches, impuestos y cancelación.",
       "links": [
         {
           "label": "Consultar alojamiento oficial",
@@ -1325,11 +1351,11 @@
       "id": "lodging-firenze-miacara",
       "category": "lodging",
       "hotelId": "firenze-miacara",
-      "concept": "Hotel Mia Cara & SPA · 5 noches",
+      "concept": "Hotel Mia Cara & SPA · 7 noches",
       "date": "2027-04-09",
-      "nights": 5,
+      "nights": 7,
       "cost": {
-        "amount": 11500,
+        "amount": 16100,
         "currency": "MXN"
       },
       "status": "estimated",
@@ -1473,11 +1499,35 @@
       "concept": "Alimentación · día 12",
       "date": "2027-04-14",
       "cost": {
+        "amount": 900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto presupuestario para jornada flexible en Firenze; no es cotización."
+    },
+    {
+      "id": "food-day-13",
+      "category": "food",
+      "concept": "Alimentación · día 13",
+      "date": "2027-04-15",
+      "cost": {
+        "amount": 900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto presupuestario para día completo en Firenze; no es cotización."
+    },
+    {
+      "id": "food-day-14",
+      "category": "food",
+      "concept": "Alimentación · día 14",
+      "date": "2027-04-16",
+      "cost": {
         "amount": 650,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación, no cotización: Traslado a Malpensa y vuelo nocturno: comida, refrigerio y cena según servicio a bordo. Incluye margen para opción sin lactosa; confirmar ingredientes y servicio."
+      "notes": "Supuesto para traslados y vuelo nocturno; no es cotización."
     }
   ]
 }
