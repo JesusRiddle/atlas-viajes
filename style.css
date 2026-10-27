@@ -2211,3 +2211,10 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   line-clamp:2;
   overflow:hidden;
 }
+
+/* Panorama: dos indicadores breves a la izquierda y documentación a la derecha. */
+@media(min-width:681px){
+ #plan .overview-practical-grid.practical-indicators .practical-indicator[data-indicator-id="style"]{grid-column:1;grid-row:1}
+ #plan .overview-practical-grid.practical-indicators .practical-indicator[data-indicator-id="language"]{grid-column:1;grid-row:2}
+ #plan .overview-practical-grid.practical-indicators .practical-indicator[data-indicator-id="entry"]{grid-column:2;grid-row:1 / span 2}
+}
