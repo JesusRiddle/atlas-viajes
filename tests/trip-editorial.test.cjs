@@ -204,6 +204,10 @@ test('Italia 2027 incluye requisitos de entrada y guía universal para futuros v
  const entry=trip.practicalIndicators.find(i=>i.id==='entry');
  const language=trip.practicalIndicators.find(i=>i.id==='language');
  assert.equal(language.title,'Idioma y moneda');
+ assert.equal(entry.title,'Documentación y consejos prácticos');
+ assert.ok(!language.text.startsWith('Italiano'));
+ const css=fs.readFileSync('style.css','utf8');
+ assert.match(css,/data-indicator-id="entry"/);
  assert.equal(trip.practicalIndicators[0].title,'Estilo de viaje');
  assert.match(trip.practicalIndicators[0].text,/independiente/);
  assert.match(language.text,/Euro/);
