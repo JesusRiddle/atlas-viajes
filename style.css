@@ -2228,3 +2228,9 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 #plan .overview-climate-card[class*="season-"] .fact-copy p{color:var(--ink)}
 #plan .overview-climate-card .overview-climate-season-status{font:700 11px/1.4 Arial,Helvetica,sans-serif;margin-left:auto;padding:3px 8px;border:1px solid currentColor;border-radius:20px;white-space:nowrap}
 #plan .overview-climate-card h3{flex-wrap:wrap}
+
+/* La etiqueta de Clima y luz comparte la paleta de estados de Temporadas. */
+#plan .overview-climate-card.season-recommended .overview-climate-season-status{background:#dceee1;color:#246a3d;border-color:#a3d2af}
+#plan .overview-climate-card.season-conditional .overview-climate-season-status{background:#f8eac5;color:#795200;border-color:#eac56d}
+#plan .overview-climate-card.season-avoid .overview-climate-season-status{background:#f5dfe0;color:#8b3037;border-color:#dfa7ad}
+#plan .overview-climate-card.season-pending .overview-climate-season-status{background:#ebddf7;color:#653b97;border-color:#d6c2e5}
