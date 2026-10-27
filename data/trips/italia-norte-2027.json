@@ -225,7 +225,7 @@
       "pm": "1. Recorrer zonas que falten por conocer o descansar; evitar reservas que dependan de conexiones largas.",
       "night": "1. Cena y preparación de equipaje para el regreso del viernes.",
       "mobility": "Principalmente a pie; transporte urbano opcional.",
-      "note": "Día colchón para ajustar Accademia, Uffizi o Cúpula si sus reservas obligan a redistribuir las visitas. No se presupuestan entradas duplicadas.",
+      "note": "Día colchón para reorganizar visitas según reservas y clima; no duplicar entradas que ya estén previstas en otras jornadas.",
       "spend": null,
       "places": []
     },
@@ -296,7 +296,7 @@
   ],
   "flight": "Aeroméxico directo MEX → MXP (3–4 abril) y MXP → MEX (16–17 abril). Tarifa Básica de $16,683 MXN, consultada en Google Flights el 26/10/2026; no comprada. Incluye equipaje de mano; sin cambios ni reembolsos según la captura.",
   "local": "Bases ferroviarias: Milano Centrale (Torino y salida a Liguria), La Spezia Centrale (Cinque Terre) y Firenze SMN (Siena y regreso). Portovenere por ATC si el horario permite; Lucca solo con consigna comprobada. Los trenes de abril de 2027 aún no están cotizados: los tiempos son referencias de servicios habituales y las tarifas consultadas corresponden a 2026.",
-  "climate": "En abril tendrás un clima *primaveral y variable*: *Milano y Torino, 15–18 °C de día y 5–9 °C de noche*; *Liguria, 16–19 °C y 9–12 °C*; *Toscana, 17–20 °C y 6–10 °C*. Son rangos habituales, no un pronóstico. Puede llover y hacer viento en la costa.\n\n*Qué llevar:* Chamarra impermeable y cortaviento, suéter ligero, ropa por capas, pantalones largos, tenis con buena suela y paraguas compacto. Todo compatible con tu equipaje de cabina.\n\n*Horas de luz:* Del 4 al 14 de abril, amanecerá aproximadamente entre *6:35 y 7:00* y anochecerá entre *19:40 y 20:00* (hora local). Aprovecha la luz para Cinque Terre, Portovenere y miradores; verifica el estado de senderos y barcos si llueve.",
+  "climate": "En abril tendrás un clima *primaveral y variable*: *Milano y Torino, 15–18 °C de día y 5–9 °C de noche*; *Liguria, 16–19 °C y 9–12 °C*; *Toscana, 17–20 °C y 6–10 °C*. Son rangos habituales, no un pronóstico. Puede llover y hacer viento en la costa.\n\n*Qué llevar:* Chamarra impermeable y cortaviento, suéter ligero, ropa por capas, pantalones largos, tenis con buena suela y paraguas compacto. Todo compatible con tu equipaje de cabina.\n\n*Horas de luz:* Del 4 al 16 de abril, amanecerá aproximadamente aproximadamente entre *6:30 y 7:00* y anochecerá entre *19:40 y 20:10* (hora local). Aprovecha la luz para Cinque Terre, Portovenere y miradores; verifica el estado de senderos y barcos si llueve.",
   "solo": "Preferir alojamientos próximos a estaciones y consigna confirmada para Lucca.",
   "lodgingSummary": "Candidatos principales no reservados: Milano Aosta (4–7 abril, 3 noches), Casa Danè en La Spezia (7–9 abril, 2) y Hotel Mia Cara & SPA en Firenze (9–16 abril, 7). Total supuesto de hospedaje: $26,400 MXN para 12 noches. Verificar precio real, impuestos y cancelación.",
   "heroLodgingSummary": "12 noches en 3 bases: Milano (3), La Spezia (2) y Firenze (7). Hoteles candidatos, no reservados; $26,400 MXN estimados.",
