@@ -167,11 +167,11 @@
       "date": "2027-04-08",
       "title": "Milano → La Spezia · llegada y paseo por el puerto",
       "base": "La Spezia",
-      "am": "1. Desayunar, revisar la habitación y realizar check-out en el B&B HOTEL Milano Aosta.\n2. Caminar hasta Milano Centrale y tomar un tren a La Spezia Centrale, preferentemente a media mañana. Buscar un servicio directo si está disponible y evitar conexiones innecesarias.",
-      "pm": "1. Llegar a La Spezia Centrale, caminar hasta Affittacamere Casa Danè y dejar el equipaje; realizar check-in cuando lo permita el alojamiento.\n2. Almorzar tranquilamente y recorrer Via del Prione y las calles del centro histórico.\n3. Continuar, si el clima acompaña, hacia la zona del puerto y el paseo marítimo de Passeggiata Morin, sin visitas con horario fijo.",
+      "am": "1. Desayunar y hacer check-out del alojamiento candidato B&B HOTEL Milano Aosta, sin apresurarse.\n2. Caminar hasta Milano Centrale con margen y tomar preferentemente el Intercity 665 directo de referencia de las 12:10, llegada a La Spezia Centrale a las 15:21 (€21,90 desde; horario del jueves 05/11/2026 no confirmado para abril 2027).",
+      "pm": "1. Llegar a La Spezia Centrale sobre las 15:21 si se mantiene la opción A, caminar a Casa Danè, dejar equipaje y hacer check-in cuando sea posible.\n2. Pasear por Via del Prione y el centro histórico; seguir hacia Passeggiata Morin y el puerto según energía y luz restante.\n3. Si se utiliza un respaldo que llega 17:20 o 18:20, abreviar el paseo y priorizar el alojamiento.",
       "night": "1. Cenar en La Spezia, cerca del centro o del alojamiento.\n2. Comprobar parada, frecuencia y método de pago del autobús ATC a Portovenere para el viernes 9; preparar lo necesario para la excursión y descansar.",
-      "mobility": "• *Hotel → Milano Centrale:* Caminata corta desde B&B HOTEL Milano Aosta; llegar a la estación con tiempo para localizar el andén.\n• *Milano Centrale → La Spezia Centrale:* Preferir tren directo Intercity si existe en la fecha; comparar con alternativas regionales según tiempo total, conexiones y condiciones. Horario y tarifa abril 2027 pendientes.\n• *La Spezia Centrale → Casa Danè:* Alojamiento candidato a pocos pasos de la estación; verificar cuál de sus dos direcciones corresponde a la habitación reservada.\n• *Centro → puerto:* Paseo a pie por Via del Prione hacia Passeggiata Morin; regresar caminando o en transporte urbano si hace falta.",
-      "note": "• *Tren:* Priorizar una salida a media mañana para viajar con calma; el horario de abril 2027 aún no está disponible o confirmado. No reservar un servicio con conexión demasiado justa.\n• *Alojamiento:* Casa Danè figura en dos edificios próximos a la estación. Confirmar dirección exacta, recepción, consigna, check-in y condiciones antes de comprar.\n• *Ritmo:* Tarde de orientación y descanso; Portovenere tiene su propio día completo el viernes 9.\n• *Clima:* El paseo marítimo es flexible: con lluvia, permanecer por el centro histórico y descansar.",
+      "mobility": "• *Hotel → Milano Centrale:* Caminata corta desde B&B HOTEL Milano Aosta; llegar con margen.\n• *Milano Centrale → La Spezia Centrale:* A) Trenitalia Intercity 665 directo 12:10–15:21, 3 h 11, desde €21,90; B) Italo 12:40–17:20, 1 cambio, desde €58,80; C) Italo 13:40–18:20, 1 cambio, desde €55,80. Referencia del jueves 05/11/2026, no son horarios confirmados para 08/04/2027; verificar estaciones de cambio de B/C.\n• *Billetes/convalidación:* Intercity electrónico con servicio asignado: presentar boleto/QR, sin sello en máquina de regionales. En Italo electrónico, mostrar boleto/código y documento. Perder el tren NO autoriza a abordar otro operador: comprobar condiciones y comprar otro ticket válido cuando corresponda.\n• *La Spezia Centrale → Casa Danè:* alojamiento candidato próximo a estación; confirmar dirección exacta.\n• *Centro → puerto:* caminar por Via del Prione hasta Passeggiata Morin.",
+      "note": "• *Tren:* Priorizar una salida a media mañana para viajar con calma; el horario de abril 2027 aún no está disponible o confirmado. No reservar un servicio con conexión demasiado justa.\n• *Alojamiento:* Casa Danè figura en dos edificios próximos a la estación. Confirmar dirección exacta, recepción, consigna, check-in y condiciones antes de comprar.\n• *Ritmo:* Tarde de orientación y descanso; Portovenere tiene su propio día completo el viernes 9.\n• *Clima:* El paseo marítimo es flexible: con lluvia, permanecer por el centro histórico y descansar.\n• *Opciones A/B/C:* referencias de noviembre de 2026, no billetes comprados. A es directa; B/C requieren transbordo por confirmar y nuevos boletos si el original no lo permite. Revisar validación del tipo de billete concreto antes de abordar.",
       "spend": null,
       "places": [
         "italy27-spezia-morin",
@@ -1182,9 +1182,9 @@
       "options": [
         {
           "id": "A",
-          "provider": "Trenitalia · Intercity / Regionale",
-          "status": "planning",
-          "selectedFare": "ref",
+          "provider": "Trenitalia · Intercity 665 (directo)",
+          "status": "quoted",
+          "selectedFare": "from",
           "journeys": [
             {
               "direction": "oneway",
@@ -1192,24 +1192,98 @@
                 {
                   "from": "Milano Centrale",
                   "to": "La Spezia Centrale",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Trenitalia · Intercity / Regionale"
+                  "departure": "2027-04-08T12:10:00+02:00",
+                  "arrival": "2027-04-08T15:21:00+02:00",
+                  "operator": "Trenitalia · Intercity 665",
+                  "service": "Referencia jueves 05/11/2026; NO confirmado para 2027"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "ref",
-              "name": "Orientativo · pendiente de cotización",
-              "price": null,
-              "changes": null,
-              "refunds": null
+              "id": "from",
+              "name": "Precio desde · tarifa específica por verificar",
+              "price": {
+                "amount": 21.9,
+                "currency": "EUR"
+              },
+              "changes": "Ver condiciones de la tarifa seleccionada antes de comprar",
+              "refunds": "Según tarifa; no comprobado"
             }
           ],
-          "notes": "Jueves 8 de abril: comparar tren directo Intercity desde Milano Centrale hasta La Spezia Centrale con alternativas regionales. Preferencia por salida a media mañana, llegada a primeras horas de la tarde y sin transbordos; precios y horarios de 2027 pendientes de publicación.",
-          "quotedAt": null
+          "notes": "OPCIÓN A recomendada: tren directo sin transbordos, IC 665 12:10–15:21, 3 h 11 min, desde €21,90 según búsqueda de jueves 05/11/2026. Validación: billete electrónico Intercity con tren/plaza asignados; mostrar código/QR y documento al control, no pasar por máquina de convalidación de regionales. Si se pierde, verificar cambios permitidos; si no cubre otro tren, comprar nuevo boleto. Referencia NO confirmada para jueves 08/04/2027, no comprado.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "B",
+          "provider": "Italo · conexión (operador/estación del enlace por confirmar)",
+          "status": "quoted",
+          "selectedFare": "from",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "La Spezia Centrale",
+                  "departure": "2027-04-08T12:40:00+02:00",
+                  "arrival": "2027-04-08T17:20:00+02:00",
+                  "operator": "Italo · servicio con 1 cambio",
+                  "service": "Referencia jueves 05/11/2026, detalle de transbordo sin desplegar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "from",
+              "name": "Smart · desde",
+              "price": {
+                "amount": 58.8,
+                "currency": "EUR"
+              },
+              "changes": "Pendiente de ver tarifa y condiciones",
+              "refunds": "Pendiente de ver tarifa y condiciones"
+            }
+          ],
+          "notes": "OPCIÓN B: sale 30 min después de A, llega 17:20 y exige 1 cambio (estación y combinación por comprobar antes de comprar). Precio desde €58,80. No usar el ticket Trenitalia del A para embarcar en Italo: comprar billete válido si fuera necesario. Referencia 05/11/2026, sin confirmar para abril 2027.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "C",
+          "provider": "Italo · conexión (operador/estación del enlace por confirmar)",
+          "status": "quoted",
+          "selectedFare": "from",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "La Spezia Centrale",
+                  "departure": "2027-04-08T13:40:00+02:00",
+                  "arrival": "2027-04-08T18:20:00+02:00",
+                  "operator": "Italo · servicio con 1 cambio",
+                  "service": "Referencia jueves 05/11/2026, detalle de transbordo sin desplegar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "from",
+              "name": "Smart · desde",
+              "price": {
+                "amount": 55.8,
+                "currency": "EUR"
+              },
+              "changes": "Pendiente de ver tarifa y condiciones",
+              "refunds": "Pendiente de ver tarifa y condiciones"
+            }
+          ],
+          "notes": "OPCIÓN C: salida posterior de respaldo 13:40, llegada 18:20, 1 cambio pendiente de detallar, desde €55,80. El ticket de A/B no cubre automáticamente C; comprar nuevo boleto válido si no permite modificación. Referencia 05/11/2026, no confirmada para abril de 2027.",
+          "quotedAt": "2026-10-27"
         }
       ],
       "links": [
