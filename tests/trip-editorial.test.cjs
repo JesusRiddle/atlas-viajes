@@ -200,8 +200,12 @@ test('Italia 2027: distribución por fechas y visitas críticas coherentes', () 
 test('Italia 2027 incluye requisitos de entrada y guía universal para futuros viajes', () => {
  const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
  const ids=trip.practicalIndicators.map(i=>i.id);
- assert.deepEqual(ids,['solo','pace','language','currency','entry']);
+ assert.deepEqual(ids,['solo','pace','language','entry']);
  const entry=trip.practicalIndicators.find(i=>i.id==='entry');
+ const language=trip.practicalIndicators.find(i=>i.id==='language');
+ assert.equal(language.title,'Idioma y moneda');
+ assert.match(language.text,/Euro/);
+ assert.ok(!trip.practicalIndicators.some(i=>i.id==='currency'));
  for (const term of ['Pasaporte','ETIAS','EES','EE. UU.','adaptador','230 V']) assert.ok(entry.text.includes(term),'Falta '+term);
  const guide=fs.readFileSync('docs/trip-editorial-guide.md','utf8');
  assert.match(guide,/Requisitos prácticos obligatorios para CADA viaje nuevo/);
@@ -229,6 +233,6 @@ test('reglas editoriales: fines de semana flexibles y redistribución de días',
  assert.match(guide,/Nunca agregar automáticamente días al final/);
  assert.match(guide,/reoptimizar fechas dependientes/i);
  assert.match(guide,/costo total aproximado/);
- assert.match(guide,/cinco indicadores/);
+ assert.match(guide,/cuatro indicadores/);
  assert.match(agents,/no anexarlos por defecto al final/);
 });
