@@ -606,13 +606,13 @@
     {
       "id": "language",
       "title": "Idioma y moneda",
-      "text": "Italiano; inglés útil en zonas turísticas. Euro (€): pagar en euros, llevar algo de efectivo y rechazar la conversión a MXN en terminales.",
+      "text": "En zonas turísticas suele ser útil el inglés. Pagar en euros (€), llevar algo de efectivo y rechazar la conversión a MXN en terminales.",
       "badge": "Italiano · EUR",
       "tone": "green"
     },
     {
       "id": "entry",
-      "title": "Documentos y electricidad",
+      "title": "Documentación y consejos prácticos",
       "text": "Pasaporte mexicano: expedido hace menos de 10 años y válido al menos 3 meses después de salir de Schengen; turismo sin visa hasta 90 días/180. ETIAS aún no opera: revisar travel-europe.europa.eu/etias antes de viajar. EES: posible registro biométrico fronterizo. Llevar regreso y alojamiento; visa estadounidense si hay escala en EE. UU. Enchufes C/L/F, 230 V: adaptador y cargador 100–240 V.",
       "badge": "Verificar antes de viajar",
       "tone": "orange"
