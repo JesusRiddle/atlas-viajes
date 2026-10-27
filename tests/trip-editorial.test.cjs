@@ -47,8 +47,8 @@ test('los 12 meses evaluados contienen rango de temperatura visible', () => {
 
 test('los indicadores prácticos del viaje incluyen etiquetas y tonos válidos', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
-  const expected = {solo:'Muy recomendable',pace:'Moderado–activo',language:'Fácil',currency:'Tarjetas aceptadas'};
-  assert.equal(trip.practicalIndicators.length, 4);
+  const expected = {style:'Moderado–activo',language:'Italiano · EUR',entry:'Verificar antes de viajar'};
+  assert.equal(trip.practicalIndicators.length, 3);
   for (const item of trip.practicalIndicators) {
     assert.equal(item.badge, expected[item.id]);
     assert.ok(['green','orange'].includes(item.tone));
@@ -200,10 +200,12 @@ test('Italia 2027: distribución por fechas y visitas críticas coherentes', () 
 test('Italia 2027 incluye requisitos de entrada y guía universal para futuros viajes', () => {
  const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
  const ids=trip.practicalIndicators.map(i=>i.id);
- assert.deepEqual(ids,['solo','pace','language','entry']);
+ assert.deepEqual(ids,['style','language','entry']);
  const entry=trip.practicalIndicators.find(i=>i.id==='entry');
  const language=trip.practicalIndicators.find(i=>i.id==='language');
  assert.equal(language.title,'Idioma y moneda');
+ assert.equal(trip.practicalIndicators[0].title,'Estilo de viaje');
+ assert.match(trip.practicalIndicators[0].text,/independiente/);
  assert.match(language.text,/Euro/);
  assert.ok(!trip.practicalIndicators.some(i=>i.id==='currency'));
  for (const term of ['Pasaporte','ETIAS','EES','EE. UU.','adaptador','230 V']) assert.ok(entry.text.includes(term),'Falta '+term);
