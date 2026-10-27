@@ -62,7 +62,7 @@
       "pm": "1. Llegada prevista a Malpensa a las 18:20; migración y salida del aeropuerto.",
       "night": "1. Malpensa Express a Milano Centrale, check-in y descanso.",
       "mobility": "Aeropuerto Malpensa → Milano, tren aeroportuario por confirmar.",
-      "note": "Vuelo cotizado, no comprado. No fijar entradas ni actividades el día de llegada.",
+      "note": "Vuelo cotizado, no comprado. Tras inmigración en Malpensa, puede corresponder registro biométrico EES; prever margen antes del Malpensa Express. No fijar entradas ni actividades el día de llegada.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -152,7 +152,7 @@
       "pm": "1. Continuar a Vernazza y, si apetece, Monterosso. Corniglia queda como alternativa según energía y condiciones.",
       "night": "1. Regreso a La Spezia.",
       "mobility": "Trenes regionales entre pueblos; no depender de senderos.",
-      "note": "Sábado 10: se esperan más visitantes por fin de semana. Salir temprano, priorizar tres pueblos y adaptar el recorrido a las condiciones; Corniglia y Monterosso no son obligatorios.",
+      "note": "Sábado 10: posible mayor afluencia. Salir temprano, priorizar tres pueblos y adaptar el recorrido al clima; Corniglia y Monterosso opcionales. Valorar intercambiar este día con Portovenere (viernes 9) si las previsiones o la afluencia lo aconsejan, revisando trenes y autobuses.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -168,7 +168,7 @@
       "pm": "1. Pasear por las murallas, Piazza dell’Anfiteatro y casco histórico. Recuperar equipaje y continuar en tren hacia Firenze.",
       "night": "1. Check-in en Firenze y cena cerca del alojamiento.",
       "mobility": "Trenes regionales con cambio en Pisa y posible consigna en Lucca.",
-      "note": "Domingo 11: la escala depende de una consigna de equipaje ABIERTA ESE DOMINGO, cuya disponibilidad aún no se ha confirmado. Si no es viable, ir directamente a Firenze y dejar Lucca fuera. No comprar trenes rígidos hasta resolverlo.",
+      "note": "Domingo 11: la escala solo es viable con consigna abierta y confirmada. Si no se confirma, continuar directamente a Firenze. Verificar también combinaciones La Spezia–Pisa–Lucca–Firenze y guardar margen para recoger equipaje.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -240,7 +240,7 @@
       "pm": "1. En Milano Centrale, cambiar al Malpensa Express hacia la terminal correspondiente; comprobar salida, billete y tiempo de traslado entre andenes.\n2. Objetivo prudente: estar en Milano Malpensa hacia las 18:30–19:00 para el vuelo previsto a las 23:05. Llegar con holgura, ya que los trenes y el vuelo se contratan por separado.\n3. Documentación, seguridad y control de pasaportes según indicaciones de Aeroméxico y del aeropuerto.",
       "night": "1. Vuelo directo Aeroméxico MXP → MEX: salida cotizada el viernes 16 de abril a las 23:05, hora de Italia.\n2. Noche a bordo; llegada prevista a Ciudad de México el sábado 17 de abril a las 04:00, hora local. Migración, aduana y traslado a casa el sábado; domingo 18 libre para descansar.",
       "mobility": "Firenze SMN → Milano Centrale (alta velocidad; ~2 h habituales) → Malpensa Express (~50–60 min habituales) → vuelo Aeroméxico MXP → MEX. Los trenes están por cotizar; no existe conexión protegida con el avión.",
-      "note": "No fijar actividades con entradas para el viernes 16. Verificar horarios ferroviarios, terminal y equipaje antes de comprar; priorizar llegar a MXP al menos cuatro horas antes del vuelo y tener margen adicional ante cancelaciones. Cotización del vuelo Básica por $16,683 MXN redondos (26/10/2026), aún sin compra; se cuenta una sola vez. Llegada a México sábado 17.",
+      "note": "No fijar actividades antes del regreso. El tren Firenze→Milano y Malpensa Express no son conexiones protegidas por la aerolínea; prever alternativa ferroviaria ante incidencias. Llegar a MXP con unas cuatro horas de margen. Vuelo no comprado; llegada a México sábado 17.",
       "spend": null,
       "places": [],
       "headerPlaces": [
@@ -481,7 +481,7 @@
     {
       "id": "entry",
       "title": "Documentos y electricidad",
-      "text": "Pasaporte mexicano: expedido hace menos de 10 años y válido 3 meses después de salir de Schengen; estancia turística hasta 90 días sin visa. ETIAS: verificar activación antes del viaje en travel-europe.europa.eu/etias (no tramitar hasta que abra). Si hay conexión en EE. UU., visa estadounidense válida. Llevar reservas y vuelo de salida; adaptador tipo C/L (también F según toma), corriente 230 V; comprobar que el cargador admita 100–240 V.",
+      "text": "Pasaporte mexicano: expedido hace menos de 10 años y válido al menos 3 meses después de salir de Schengen; turismo sin visa hasta 90 días/180. ETIAS aún no opera: revisar travel-europe.europa.eu/etias antes de viajar. EES: posible registro biométrico fronterizo. Llevar regreso y alojamiento; visa estadounidense si hay escala en EE. UU. Enchufes C/L/F, 230 V: adaptador y cargador 100–240 V.",
       "badge": "Verificar antes de viajar",
       "tone": "orange"
     }
