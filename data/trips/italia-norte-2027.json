@@ -208,7 +208,9 @@
       "mobility": "• *Casa Danè → La Spezia Centrale:* Caminar a la estación y consultar paneles y posibles avisos de servicio antes de abordar.\n• *La Spezia → Riomaggiore:* Tren regional hacia Cinque Terre; salida temprana recomendada, sin horario de abril 2027 confirmado.\n• *Entre pueblos:* Riomaggiore → Manarola → Vernazza en tren; Monterosso solo si alcanza el tiempo. Corniglia queda fuera del recorrido principal por su acceso con subida y el ritmo elegido.\n• *Regreso a La Spezia:* Tomar el regional desde el último pueblo visitado; confirmar horario, validez del billete y disponibilidad antes de subir.",
       "note": "• *Ritmo:* Tres pueblos prioritarios (Riomaggiore, Manarola y Vernazza) y Monterosso opcional; sábado puede haber mucha afluencia.\n• *Billetes:* Comparar el costo de trayectos regionales individuales frente a la Cinque Terre Treno Card según tarifa aplicable al sábado 10 de abril de 2027. No hay precios confirmados.\n• *Via dell’Amore:* No forma parte del plan obligatorio: requiere reserva con fecha y franja horaria, y su acceso puede cambiar por seguridad o derrumbes. Verificar las condiciones oficiales si deseas añadirla.\n• *Senderos:* No depender de rutas peatonales entre pueblos; consultar cierres y estado del terreno. Con lluvia o mar agitado, preferir tren y calles seguras.\n• *Plan B:* Si el pronóstico lo aconseja, intercambiar Portovenere (viernes 9) y Cinque Terre (sábado 10) antes de comprar actividades o billetes que restrinjan el cambio.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy27-manarola"
+      ],
       "transportRefs": [
         "train-cinque-terre"
       ],
@@ -231,7 +233,9 @@
       "mobility": "• *La Spezia → Lucca:* Revisar regionales y posibles transbordos en Viareggio para el domingo 11; horarios y tarifas de 2027 pendientes.\n• *Consigna principal junto a Lucca FS:* Radical Storage · Near Lucca Railway Station, Piazzale B. Ricasoli 193. Publica apertura dominical 06:30–21:30; reserva anticipada en línea y dirección final por confirmar en el comprobante.\n• *Alternativa junto a la estación:* Radical Storage · Lucca Train Station, Via della Dogana 9, horario dominical anunciado 10:00–19:15; confirmar disponibilidad al reservar.\n• *Respaldo en el centro:* Radical Storage · Chiesa di San Michele in Foro (07:00–23:00) o Bounce · Lucca Centro Storico (08:00–18:30); implican desplazamiento adicional con la maleta.\n• *Lucca a pie:* Lucca FS → Porta San Pietro → murallas → Via Fillungo → Piazza dell’Anfiteatro; Torre Guinigi opcional.\n• *Lucca → Firenze SMN:* Regresar a la consigna, recoger equipaje y tomar tren regional con margen; caminar al hotel candidato desde Firenze SMN.",
       "note": "• *Reservar consigna:* Preferir Radical Storage en Piazzale B. Ricasoli 193 por proximidad ferroviaria. Los horarios publicados no garantizan atención en abril de 2027: comprobar cupo, dirección final y condiciones para el 11 de abril de 2027 antes de comprar trenes.\n• *No confundir locales:* Radical Storage «inside Lucca Station» (Piazzale B. Ricasoli 127) y «Lucca Railway Station» (Viale Cavour 199) publican cierre dominical; no seleccionarlos.\n• *Consigna descartada:* Left Luggage Tuscany Lucca figura cerrada en su página oficial.\n• *Plan B:* Si no se confirma una consigna dominical, ir directamente a Firenze; no recorrer Lucca cargando maletas.\n• *Torre Guinigi:* Subida opcional con unos 230 escalones; horario y entradas pendientes.\n• *Billetes:* Sin trenes ni consigna reservados; priorizar horario de recogida y llegada cómoda a Firenze.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy27-lucca-anfiteatro"
+      ],
       "transportRefs": [
         "train-la-spezia-lucca",
         "train-lucca-firenze"
@@ -275,7 +279,9 @@
       "mobility": "• *Firenze → Siena:* Priorizar autobús regional 131R de Autolinee Toscane (alternativa 131); suele tardar alrededor de 1 h 20 min y llega a la zona de Via Tozzi, próxima al casco antiguo.\n• *Parada en Firenze:* Confirmar punto de salida vigente: Autolinee Toscane anuncia cambios temporales en la zona de Via Orti Oricellari hasta junio de 2027; no asumir que la salida será en la autostazione habitual.\n• *Siena a pie:* Desde Via Tozzi / Piazza Gramsci llegar a Piazza del Campo y continuar hasta el Duomo por las calles históricas; prever cuestas y pavimento irregular.\n• *Siena → Firenze:* Regresar en 131R o 131 según horario disponible; identificar con antelación la parada exacta de vuelta y conservar tiempo de margen.\n• *Alternativa ferroviaria:* Tren regional desde Firenze SMN a Siena, sujeto a conexiones; la estación queda más alejada del centro y exige subida o transporte local.",
       "note": "• *Catedral:* Horario de temporada publicado para abril de 2026: 10:00–19:00 de lunes a sábado, con último acceso media hora antes. El calendario y servicios religiosos del 12 de abril de 2027 deben reconfirmarse.\n• *Libreria Piccolomini:* Está dentro del complejo del Duomo; comprobar su inclusión en la entrada elegida y reservar en canal oficial.\n• *Entrada adecuada:* Comparar boleto de Catedral y Libreria con OPA SI PASS solo si también visitarás Museo dell’Opera, Cripta o Facciatone. No comprar el pase amplio por inercia.\n• *Autobús:* Verificar parada temporal de Firenze, horarios, modalidad de compra y precio vigente para 2027. Ningún billete está reservado.\n• *Ritmo:* Evitar combinar Siena con San Gimignano; el plan principal es Piazza del Campo y Duomo, con añadidos opcionales.\n• *Plan B:* Si hay restricciones por ceremonias, recorrer primero Piazza del Campo y regresar al Duomo cuando abra; si hay retrasos de autobús, eliminar los extras, no la visita principal.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy27-siena-campo"
+      ],
       "transportRefs": [
         "bus-siena"
       ],
@@ -346,7 +352,9 @@
       "mobility": "• *Hotel → Bargello:* Recorrido a pie desde Hotel Mia Cara & SPA, cerca de Firenze SMN, hasta Via del Proconsolo 4; comprobar el trayecto y llegar con margen.\n• *Bargello → Oltrarno:* Caminar por Piazza della Signoria y cruzar el Arno hacia Piazza Santo Spirito; reservar tiempo para comer.\n• *Oltrarno → San Miniato:* Subida a pie con desnivel o autobús urbano hacia Piazzale Michelangelo, seguida de caminata a la basílica. Verificar línea y parada vigente; el monasterio está más arriba que el mirador.\n• *San Miniato → Piazzale Michelangelo:* Descender caminando hasta el mirador para pasar allí el atardecer.\n• *Piazzale Michelangelo → hotel:* Regresar en autobús o a pie; evitar una bajada a oscuras si hay cansancio.",
       "note": "• *Bargello:* Abre habitualmente los jueves de 08:15 a 18:50; el último acceso se suspende antes del cierre. Verificar calendario de abril de 2027. Tarifa individual de referencia €12.\n• *Billete conjunto:* La tarifa Accademia + Bargello de 48 horas exige comprobar la hora exacta de activación el martes 13 frente a la visita del jueves 15; comparar compra separada y pase de 72 horas antes de pagar.\n• *San Miniato:* Sitio oficial: basílica abierta de lunes a sábado 09:30–13:00 y 15:30–19:00, sin reserva y con acceso gratuito. Durante las celebraciones no se permite la visita turística; priorizar llegada antes de los oficios vespertinos.\n• *Piazzale Michelangelo:* Visita prioritaria al atardecer, con tiempo para disfrutar las vistas; comprobar previsión del tiempo y llevar algo de abrigo para la tarde.\n• *Santa Croce:* Si el Corredor Vasariano obliga a moverla desde el miércoles, colocar Santa Croce después de Bargello, acortar Oltrarno y mantener Piazzale Michelangelo al atardecer.\n• *Plan B:* Si hay lluvia intensa o cansancio, tomar autobús hasta el mirador y dedicar menos tiempo a la subida; no eliminar Piazzale Michelangelo.\n• *Regreso del viernes:* Tren Firenze → Milano y Malpensa Express no reservados; revisar márgenes y equipaje por la noche.",
       "spend": null,
-      "places": [],
+      "places": [
+        "italy27-piazzale"
+      ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
         "Museo Nazionale del Bargello",
@@ -1695,6 +1703,10 @@
     "milan-galleria": "Galería Vittorio Emanuele II, parada a pie en el centro histórico de Milano.",
     "italy16-david": "El David de Michelangelo es la visita principal de la Galleria dell’Accademia.",
     "italy16-cupola": "La Cúpula de Brunelleschi es la subida con horario obligatorio del día 11.",
-    "italy16-uffizi": "Gallerie degli Uffizi, antes del recorrido reservado por el Corridoio Vasariano."
+    "italy16-uffizi": "Gallerie degli Uffizi, antes del recorrido reservado por el Corridoio Vasariano.",
+    "italy27-siena-campo": "Vista de Piazza del Campo y la Torre del Mangia desde la zona de la Catedral.",
+    "italy27-lucca-anfiteatro": "La plaza ovalada construida sobre el antiguo anfiteatro romano de Lucca.",
+    "italy27-manarola": "Las casas de colores de Manarola sobre el acantilado de Cinque Terre.",
+    "italy27-piazzale": "Panorámica de Firenze desde Piazzale Michelangelo, uno de los momentos imprescindibles del viaje."
   }
 }
