@@ -252,7 +252,7 @@ window.AtlasTrip = function (ctx) {
             '<div class="overview-stays overview-stays-inline"><div class="overview-stays-heading">' +
             '<h3 class="overview-subheading">' + overviewIcon('bed') +
             ' Dónde dormirás</h3></div><p>' + pending() + '</p></div>';
-        const overviewPrice = complete ? price(t) : pending();
+        const overviewPrice = money(window.AtlasBudget.currentSummary(t).knownTotalMXN);
         // Render detailed day cards as soon as their data exists, even for draft trips.
         // A draft status must not force the entire itinerary into plain placeholders.
         const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
@@ -293,7 +293,7 @@ window.AtlasTrip = function (ctx) {
             `<div>`,
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
             `<strong>${overviewPrice}</strong>`,
-            `<p class="budget-context">MXN · 1 persona · viaje completo</p>`,
+            `<p class="budget-context">MXN · 1 persona · estimación parcial del viaje</p>`,
             `<a class="budget-detail-link" href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `${complete && t.exchangeRates && t.exchangeRateSnapshot ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipos de cambio · ' +
                 esc(t.exchangeRateSnapshot.date) + '</div><div class="budget-exchange-values"><span>EUR 1 = $' +
