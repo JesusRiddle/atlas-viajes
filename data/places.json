@@ -3286,12 +3286,12 @@
   "italy27-piazzale": {
     "name": "Vistas desde Piazzale Michelangelo",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Florence's_skyline.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Florence%27s_skyline.jpg",
-      "author": "Dimoegy1999",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "attribution": "Dimoegy1999"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Firenze%20Piazzale%20Michelangelo%20Vista%20su%20Firenze%2010.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Firenze_Piazzale_Michelangelo_Vista_su_Firenze_10.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Zairon"
     }
   },
   "italy27-portovenere": {
@@ -3438,11 +3438,12 @@
   "italy27-guinigi": {
     "name": "Torre Guinigi · Lucca",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torre_Guinigi%2C_Guinigi_Tower%2C_Lucca.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Torre_Guinigi,_Guinigi_Tower,_Lucca.jpg",
-      "author": "Wikimedia Commons (ver ficha)",
-      "license": "Ver ficha de Wikimedia Commons",
-      "attribution": "Wikimedia Commons"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torre%20Guinigi%2001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Torre_Guinigi_01.jpg",
+      "author": "Lukas Beck",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Lukas Beck"
     }
   },
   "italy27-piazza-castello": {
@@ -3488,11 +3489,12 @@
   "italy27-santo-spirito": {
     "name": "Piazza Santo Spirito · Firenze",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20santo%20spirito%2C%20veduta%20dal%20cenacolo%20di%20s.%20spirito.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Piazza%20santo%20spirito%2C%20veduta%20dal%20cenacolo%20di%20s.%20spirito.jpg",
-      "author": "Consultar ficha de Wikimedia Commons",
-      "license": "Consultar licencia de la imagen",
-      "attribution": "Wikimedia Commons"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Florence%2C%20Piazza%20Santo%20Spirito%202.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Florence%2C_Piazza_Santo_Spirito_2.jpg",
+      "author": "Armin Kleiner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Armin Kleiner"
     }
   },
   "italy27-madama": {
@@ -3578,11 +3580,12 @@
   "italy27-lucca-walls": {
     "name": "Murallas renacentistas · Lucca",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucca%20-%20Mura%20di%20Lucca%20-%202025-09-09%2021-56-06%20001.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Lucca%20-%20Mura%20di%20Lucca%20-%202025-09-09%2021-56-06%20001.jpg",
-      "author": "Consultar ficha de Wikimedia Commons",
-      "license": "Consultar licencia de la imagen",
-      "attribution": "Wikimedia Commons"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Viale%20delle%20Mura%20di%20Lucca.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Viale_delle_Mura_di_Lucca.jpg",
+      "author": "Fedispili",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Fedispili"
     }
   },
   "italy27-signoria": {
