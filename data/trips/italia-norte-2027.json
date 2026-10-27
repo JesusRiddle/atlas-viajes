@@ -123,16 +123,23 @@
     {
       "n": 5,
       "date": "2027-04-07",
-      "title": "Milano II · Brera, Duomo y margen para el Cenacolo",
+      "title": "Milano II · Pinacoteca di Brera y Duomo",
       "base": "Milano",
-      "am": "1. Si La Última Cena quedó para el miércoles, visitarla en su franja confirmada. Si ya se visitó el martes, Pinacoteca di Brera o recorrido del barrio.",
-      "pm": "1. Duomo y terrazas si siguen pendientes y hay disponibilidad; Piazza della Scala y Galleria Vittorio Emanuele II como paseo flexible.",
-      "night": "1. Cena en Milano y preparar equipaje para el traslado del jueves.",
-      "mobility": "Metro y caminatas por Milano.",
-      "note": "Miércoles 7 es respaldo de La Última Cena si no se consigue para el martes 6. Pinacoteca di Brera exige reserva; coordinar Duomo/terrazas solo después de fijar el Cenacolo. No duplicar visitas realizadas el martes.",
+      "am": "1. Visitar la Pinacoteca di Brera, preferentemente a primera hora y con reserva, si La Última Cena ya se visitó el martes.\n2. Recorrer las calles del barrio de Brera. Si el Cenacolo quedó reservado para el miércoles por la mañana, hacer primero esa visita y trasladar Brera a otra franja compatible o dejarla opcional.",
+      "pm": "1. Completar la visita al Duomo di Milano y sus terrazas, si no se hizo el martes. Reservar alrededor de 2 horas y confirmar la franja una vez asegurado el Cenacolo.\n2. Pasear por Piazza del Duomo, Galleria Vittorio Emanuele II y Piazza della Scala solo si todavía faltan; evitar repetir visitas del día anterior.",
+      "night": "1. Cenar cerca de Milano Centrale o en Brera, según dónde termine el recorrido.\n2. Regresar al B&B HOTEL Milano Aosta, preparar equipaje y descansar para el tren a La Spezia del jueves 8.",
+      "mobility": "Recorrido a pie por Brera y el centro, usando metro desde Milano Centrale cuando convenga. Brera ↔ Duomo se puede recorrer a pie; hacia Santa Maria delle Grazie usar metro o tranvía si el Cenacolo corresponde al miércoles. Entradas y transporte urbano sin comprar.",
+      "note": "Día de respaldo del Cenacolo: si La Última Cena se reserva el miércoles 7, esa entrada fija el orden de todo el programa. Brera requiere reserva y abre habitualmente de 08:30 a 19:15, con último acceso 18:00; el Duomo y las terrazas tienen acceso turístico habitual de 09:00 a 19:00, último acceso alrededor de 18:00. Confirmar calendarios 2027. No añadir el Museo del Duomo: habitualmente cierra los miércoles. La estancia en Milano termina el jueves 8.",
       "spend": null,
       "places": [],
-      "hotel": "milano-aosta"
+      "hotel": "milano-aosta",
+      "headerPlaces": [
+        "Pinacoteca di Brera · reserva pendiente",
+        "Barrio de Brera",
+        "Duomo di Milano y terrazas",
+        "Piazza della Scala",
+        "Cenacolo Vinciano · respaldo si hace falta"
+      ]
     },
     {
       "n": 6,
@@ -656,7 +663,7 @@
         },
         {
           "title": "Duomo y terrazas de Milano",
-          "description": "Martes 6 o miércoles 7 de abril, a coordinar con la entrada nominativa de La Última Cena.",
+          "description": "Martes 6 o miércoles 7, una vez fijada La Última Cena. Catedral y terrazas: reservar unas 2 horas y comprobar accesos y tarifas 2027; el Museo del Duomo habitualmente cierra los miércoles.",
           "links": [
             {
               "label": "Duomo Milano · sitio oficial",
@@ -666,7 +673,7 @@
         },
         {
           "title": "Pinacoteca di Brera (Milano)",
-          "description": "Preferentemente miércoles 7 de abril, si encaja con la reserva del Cenacolo. Abre habitualmente martes a domingo de 08:30 a 19:15 (último ingreso 18:00); reserva obligatoria en Brera Booking. Verificar calendario 2027.",
+          "description": "Preferentemente miércoles 7 por la mañana si La Última Cena se visitó el martes. Abre habitualmente 08:30–19:15 (última entrada 18:00), de martes a domingo, con reserva obligatoria. Ajustar o dejar opcional según la franja del Cenacolo.",
           "links": [
             {
               "label": "Pinacoteca di Brera · oficial",
