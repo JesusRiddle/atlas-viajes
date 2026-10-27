@@ -60,8 +60,8 @@
       "base": "Milano",
       "am": "1. Continuación del vuelo transatlántico; descansar a bordo.\n2. Tener disponibles pasaporte y datos del alojamiento antes del desembarque.",
       "pm": "1. Llegar a Milano Malpensa (MXP) a las 18:20 según la cotización; pasar controles de entrada y registro EES cuando corresponda.\n2. Recoger equipaje si procede y localizar el acceso al Malpensa Express. Adquirir billete para un servicio con margen, después de conocer el tiempo real de salida del aeropuerto.",
-      "night": "1. Viajar en Malpensa Express hasta Milano Centrale; verificar andén, terminal aeroportuaria y últimos horarios.\n2. Caminar al B&B HOTEL Milano Aosta, alojamiento candidato frente a Milano Centrale, y hacer check-in.\n3. Cena sencilla si hay establecimientos abiertos; descansar para Torino al día siguiente.",
-      "mobility": "• *Malpensa → Milano Centrale:* Tomar Malpensa Express una vez concluido el control migratorio; comprobar la estación de la terminal de llegada y la última salida.\n• *Milano Centrale → hotel:* Caminar al B&B HOTEL Milano Aosta, frente a la estación; alojamiento candidato, aún sin reservar.",
+      "night": "1. Tras migración y recogida de equipaje, tomar el Malpensa Express T1 → Milano Centrale: salida objetivo de referencia 19:41 (llegada 20:37), respaldo 20:11 (llegada 21:07) o servicio posterior según la hora real. Estos horarios provienen del 1/11/2026 y deben confirmarse para el 4/4/2027.\n2. Caminar al B&B HOTEL Milano Aosta, alojamiento candidato frente a Milano Centrale, y hacer check-in.\n3. Cena sencilla si hay establecimientos abiertos; descansar para Torino al día siguiente.",
+      "mobility": "• *Malpensa T1 → Milano Centrale:* Malpensa Express directo, aprox. 56 min y €15 según consulta de Trenord del 1/11/2026. Objetivo 19:41; respaldo 20:11 o tren posterior. El boleto MXP comprado por web/app vale para un viaje durante toda la fecha indicada, sin validación adicional; reconfirmar para abril de 2027.\n• *Milano Centrale → hotel:* Caminar al B&B HOTEL Milano Aosta, frente a la estación; alojamiento candidato, aún sin reservar.",
       "note": "• *Control fronterizo:* Prever migración y registro EES si corresponde; no comprar un tren con conexión ajustada al aterrizaje.\n• *Check-in tardío:* Confirmar recepción del hotel y alternativa si el vuelo se retrasa. No programar visitas al llegar.",
       "spend": null,
       "places": [],
@@ -941,18 +941,19 @@
         {
           "id": "A",
           "provider": "Trenord · Malpensa Express",
-          "status": "planning",
+          "status": "quoted",
           "selectedFare": "ref",
           "journeys": [
             {
               "direction": "oneway",
               "segments": [
                 {
-                  "from": "Malpensa Aeroporto",
+                  "from": "Malpensa Aeroporto T1",
                   "to": "Milano Centrale",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Trenord · Malpensa Express"
+                  "departure": "2027-04-04T19:41:00+02:00",
+                  "arrival": "2027-04-04T20:37:00+02:00",
+                  "operator": "Trenord · Malpensa Express",
+                  "service": "MXP 2973 · horario de referencia (01/11/2026), no confirmado para 04/04/2027"
                 }
               ]
             }
@@ -960,14 +961,17 @@
           "fares": [
             {
               "id": "ref",
-              "name": "Orientativo · pendiente de cotización",
-              "price": null,
-              "changes": null,
-              "refunds": null
+              "name": "Billete Malpensa Express · día de viaje",
+              "price": {
+                "amount": 15,
+                "currency": "EUR"
+              },
+              "changes": "El boleto Malpensa Express es válido durante todo el día indicado, según condiciones mostradas por Trenord.",
+              "refunds": "Consultar condiciones de transporte de Trenord."
             }
           ],
-          "notes": "~51 min, servicios aproximadamente cada 30 min; tarifa histórica de referencia €15 por sentido. Llegada 4 abril y traslado al hotel. Verificar estación terminal y últimos servicios.",
-          "quotedAt": null
+          "notes": "Referencia consultada para 01/11/2026, NO horario confirmado para 04/04/2027: salidas T1 19:11→20:07 (MXP 2971), 19:41→20:37 (MXP 2973, objetivo sujeto a migración), 20:11→21:07 (MXP 2975, respaldo), 20:41→21:37 y 21:11→22:07; todos directos, 56 min y €15. Vuelo cotizado llega 18:20. Billete válido para un viaje durante el día indicado y sin validación adicional si se compra por web/app Trenord. No reservar horario fijo antes de conocer demoras migratorias.",
+          "quotedAt": "2026-10-27"
         }
       ],
       "links": [
