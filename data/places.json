@@ -3337,5 +3337,27 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "attribution": "Bradley Weber"
     }
+  },
+  "italy27-spezia-morin": {
+    "name": "La Spezia · Passeggiata Morin",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/La_Spezia_3.jpg/960px-La_Spezia_3.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:La_Spezia_3.jpg",
+      "author": "Al*from*Lig",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Al*from*Lig"
+    }
+  },
+  "italy27-siena-duomo": {
+    "name": "Duomo di Siena",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Il_Duomo_di_Siena.jpg/500px-Il_Duomo_di_Siena.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Il_Duomo_di_Siena.jpg",
+      "author": "WikiViky21",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "WikiViky21"
+    }
   }
 }
