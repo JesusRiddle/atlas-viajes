@@ -1501,7 +1501,7 @@
               "refunds": "Según tarifa seleccionada"
             }
           ],
-          "notes": "A: 09:28–10:39, 1 h 11 min, 1 transbordo, €13,60 desde, combinación IC 651 + Regionale 18707. Es la llegada más práctica sin madrugar tanto, pero hay que revisar estación y margen del transbordo en Detalles. Para Intercity digital no se convalida físicamente; regional digital con validación automática, papel debe sellarse antes de embarcar. Referencia domingo 01/11/2026, no confirmada para domingo 11/04/2027.",
+          "notes": "A: 09:28–10:39, 1 h 11 min, 1 transbordo, €13,60 desde, combinación IC 651 + Regionale 18707. Es la llegada más práctica sin madrugar tanto, pero hay que revisar estación y margen del transbordo en Detalles. Para Intercity digital no se convalida físicamente; regional digital con validación automática, papel debe sellarse antes de embarcar. Referencia domingo 01/11/2026, no confirmada para domingo 11/04/2027. La captura ampliada recibida muestra la combinación 08:16–09:39 (Frecciabianca 8605 → Regionale 18649) con transbordo en Viareggio de 08:46 a 09:15 (29 min); es una candidata distinta de A 09:28–10:39 y no se sustituye sin revisar sus detalles.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1577,6 +1577,21 @@
         {
           "label": "Horarios y billetes oficiales",
           "url": "https://www.trenitalia.com/"
+        }
+      ],
+      "transbordosVerificados": [
+        {
+          "referenceDate": "2026-11-01",
+          "option": "candidata 08:16 (no seleccionada)",
+          "station": "Viareggio",
+          "arrival": "08:46",
+          "departure": "09:15",
+          "connectionMinutes": 29,
+          "firstTrain": "Frecciabianca 8605",
+          "secondTrain": "Regionale 18649",
+          "start": "La Spezia Centrale 08:16",
+          "end": "Lucca 09:39",
+          "note": "Detalle facilitado en captura del usuario. Masa Centro 08:34–08:36 y Massarosa-Bozzano 09:22–09:23 son paradas intermedias, no transbordos. Servicio de 2026; no confirmado para abril 2027."
         }
       ]
     },
