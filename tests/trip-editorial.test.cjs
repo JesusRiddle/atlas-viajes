@@ -270,3 +270,18 @@ test('día por día enlaza cada noche al alojamiento correcto y muestra check-in
   assert.equal(assigned.length,Math.round((Date.parse(hotel.checkOut)-Date.parse(hotel.checkIn))/86400000));
  }
 });
+
+
+test('las actividades numeradas no repiten número dentro del texto', () => {
+ const src=fs.readFileSync('components/day.js','utf8');
+ assert.match(src,/numbered\[1\] \|\| numbered\[2\]/);
+ assert.match(src,/const content = numbered \? numbered\[3\] : line/);
+ const legacy='*1.* Actividad';
+ const plain='1. Actividad';
+ const pattern=/^\s*(?:\*(\d+)\.\*|(\d+)\.)\s*(.*)$/;
+ for(const item of [legacy,plain]) {
+  const match=item.match(pattern);
+  assert.equal(match[1]||match[2],'1');
+  assert.equal(match[3],'Actividad');
+ }
+});
