@@ -236,3 +236,17 @@ test('reglas editoriales: fines de semana flexibles y redistribución de días',
  assert.match(guide,/cuatro indicadores/);
  assert.match(agents,/no anexarlos por defecto al final/);
 });
+
+
+test('un viaje borrador presenta días completos con las tarjetas del itinerario maestro', () => {
+ const source=fs.readFileSync('components/trip.js','utf8');
+ assert.match(source,/const readyDays = \(t\.days \|\| \[\]\)\.filter/);
+ assert.match(source,/readyDays\.includes\(d\) \? day\(d\)/);
+ assert.match(source,/completeDays \? renderedDays\(\) : partialDays\(\)/);
+ assert.doesNotMatch(source,/const completeDays = complete &&/);
+ const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+ for(const n of [1,2,14]){
+  const d=trip.days[n-1];
+  assert.ok(d.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night,'Día '+n+' no listo');
+ }
+});
