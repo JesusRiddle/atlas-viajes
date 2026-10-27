@@ -90,7 +90,7 @@
       "date": "2027-04-06",
       "title": "Milano I · La Última Cena y centro histórico",
       "base": "Milano",
-      "am": "1. Visitar el Cenacolo Vinciano a la hora que se consiga reservar el martes 6; acudir 30 minutos antes con identificación.\n2. Visitar Duomo y terrazas solo en una franja que no coincida con esa entrada.",
+      "am": "1. Visita al Cenacolo Vinciano en el horario que se consiga reservar para el martes; acudir 30 minutos antes con identificación.\n2. Duomo y terrazas únicamente en horario compatible con la entrada nominativa.",
       "pm": "1. Recorrer la Galleria Vittorio Emanuele II y Piazza della Scala.\n2. Pinacoteca di Brera solo si queda tiempo; el barrio de Brera sirve de alternativa sin reserva.",
       "night": "1. Paseo breve por barrio Brera o Navigli; cena.",
       "mobility": "Metro y caminatas por Milano. Reservas anticipadas para Cenacolo, terrazas del Duomo y Brera.",
@@ -103,8 +103,8 @@
       "date": "2027-04-07",
       "title": "Milano II · Brera, Duomo y margen para el Cenacolo",
       "base": "Milano",
-      "am": "1. Visitar la Pinacoteca di Brera si no se pudo el martes, o recorrer el barrio con calma.",
-      "pm": "1. Duomo y terrazas en la franja disponible; paseo por Piazza della Scala y Galleria Vittorio Emanuele II.",
+      "am": "1. Si La Última Cena quedó para el miércoles, visitarla en su franja confirmada. Si ya se visitó el martes, Pinacoteca di Brera o recorrido del barrio.",
+      "pm": "1. Duomo y terrazas si siguen pendientes y hay disponibilidad; Piazza della Scala y Galleria Vittorio Emanuele II como paseo flexible.",
       "night": "1. Cena en Milano y preparar equipaje para el traslado del jueves.",
       "mobility": "Metro y caminatas por Milano.",
       "note": "Miércoles 7 es el respaldo prioritario para La Última Cena si no se consigue martes 6. El resto del día se adapta a esa reserva; no comprar entradas incompatibles.",
@@ -152,7 +152,7 @@
       "pm": "1. Continuar a Vernazza y, si apetece, Monterosso. Corniglia queda como alternativa según energía y condiciones.",
       "night": "1. Regreso a La Spezia.",
       "mobility": "Trenes regionales entre pueblos; no depender de senderos.",
-      "note": "Priorizar tres o cuatro pueblos sin apresurarse. Comparar billetes frente a Cinque Terre Treno Card y consultar avisos meteorológicos.",
+      "note": "Sábado 10: se esperan más visitantes por fin de semana. Salir temprano, priorizar tres pueblos y adaptar el recorrido a las condiciones; Corniglia y Monterosso no son obligatorios.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -168,7 +168,7 @@
       "pm": "1. Pasear por las murallas, Piazza dell’Anfiteatro y casco histórico. Recuperar equipaje y continuar en tren hacia Firenze.",
       "night": "1. Check-in en Firenze y cena cerca del alojamiento.",
       "mobility": "Trenes regionales con cambio en Pisa y posible consigna en Lucca.",
-      "note": "Domingo 11: confirmar expresamente horario dominical de consigna antes de elegir trenes. Si no está abierta, ir directo a Firenze; no programar museos de Firenze con entrada fija este día.",
+      "note": "Domingo 11: la escala depende de una consigna de equipaje ABIERTA ESE DOMINGO, cuya disponibilidad aún no se ha confirmado. Si no es viable, ir directamente a Firenze y dejar Lucca fuera. No comprar trenes rígidos hasta resolverlo.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -184,7 +184,7 @@
       "am": "1. Traslado a Siena, visita a Piazza del Campo y calles medievales.",
       "pm": "1. Duomo, Libreria Piccolomini y centro histórico, sujetos al horario oficial.",
       "night": "1. Regreso a Firenze y cena.",
-      "mobility": "Autobús interurbano o tren por cotizar, más desplazamiento al centro de Siena.",
+      "mobility": "Comparar autobús Firenze ↔ Siena con llegada cerca del centro frente a tren a Siena y posterior subida al casco antiguo. Ningún billete comprado.",
       "note": "Lunes 12: revisar aperturas del complejo de la catedral; no combinar Siena con San Gimignano.",
       "spend": null,
       "places": [],
@@ -201,7 +201,7 @@
       "pm": "1. Subida a la Cúpula de Brunelleschi en la franja reservada; Museo dell’Opera del Duomo si hay margen.",
       "night": "1. Paseo por Piazza della Signoria y Ponte Vecchio.",
       "mobility": "Centro histórico a pie.",
-      "note": "Martes 13: Accademia y Cúpula requieren franjas reservadas compatibles y controles de acceso. Asegurar ambas antes de fijar el resto.",
+      "note": "Martes 13: Accademia y Cúpula requieren franjas reservadas compatibles, con tiempo entre accesos. Consultar si un billete combinado Accademia–Bargello de 48 h compensa: visitar Bargello el jueves podría exceder su vigencia según las horas de entrada.",
       "spend": null,
       "places": []
     },
@@ -236,8 +236,8 @@
       "date": "2027-04-16",
       "title": "Firenze → Milano Malpensa → CDMX · vuelo directo",
       "base": "En vuelo / regreso",
-      "am": "1. Desayunar, revisar pertenencias y realizar check-out en Firenze.\n2. Trasladarse a Firenze Santa Maria Novella y tomar un tren de alta velocidad hacia Milano Centrale. Seleccionar una salida con margen amplio; el horario de abril de 2027 aún no está cotizado.",
-      "pm": "1. En Milano Centrale, enlazar con Malpensa Express hacia el aeropuerto; revisar estación de salida y terminal asignada.\n2. Objetivo: llegar a Milano Malpensa entre las 18:30 y las 19:00, unas 4 horas antes del vuelo de las 23:05.\n3. Realizar check-in, seguridad y control de pasaportes de salida del espacio Schengen.",
+      "am": "1. Desayunar y hacer check-out en Firenze. Tomar un tren directo de alta velocidad hacia Milano Centrale con tiempo adicional por posibles retrasos.\n2. En Milano Centrale, enlazar con Malpensa Express. No se trata de una conexión ferroviaria protegida por la aerolínea.",
+      "pm": "1. Planificar la llegada al aeropuerto Milano Malpensa idealmente antes de las 18:30–19:00 para el vuelo cotizado de las 23:05.\n2. Verificar terminal y procedimientos de documentación, seguridad y control de pasaportes.",
       "night": "1. Embarcar en el vuelo directo Aeroméxico MXP → MEX, salida cotizada el viernes 16 de abril a las 23:05 (hora de Italia).\n2. Pasar la noche a bordo. Llegada prevista a CDMX el sábado 17 de abril a las 04:00, hora local.",
       "mobility": "Firenze SMN → Milano Centrale: tren de alta velocidad, sin horario reservado. Milano Centrale → Malpensa: Malpensa Express, con frecuencia y terminal por confirmar. Vuelo directo MXP → MEX a las 23:05 (cotizado, no comprado).",
       "note": "Trenes a Milano y Malpensa no cotizados; reservar márgenes amplios ante retrasos. La conexión ferroviaria no está protegida por el billete aéreo. Llegada a México el sábado 17 de abril; domingo 18 libre para descansar. Vuelo no comprado.",
@@ -403,7 +403,7 @@
     {
       "title": "Auditoría logística y reservas · octubre 2026",
       "status": "planning",
-      "note": "Milano incluye 6 y 7 abril para asegurar Cenacolo; La Spezia 8–11 abril con Portovenere viernes 9 y Cinque Terre sábado 10; Lucca domingo 11 supeditada a consigna; Siena lunes 12; Accademia y Cúpula martes 13; Uffizi y Santa Croce miércoles 14; Bargello jueves 15.",
+      "note": "Milano incluye 6 y 7 abril para asegurar Cenacolo; La Spezia 8–11 abril con Portovenere viernes 9 y Cinque Terre sábado 10; Lucca domingo 11 supeditada a consigna; Siena lunes 12; Accademia y Cúpula martes 13; Uffizi y Santa Croce miércoles 14; Bargello jueves 15. Revisar abonos combinados de museos por validez horaria y cerrar primero Cenacolo antes de reservas dependientes.",
       "sources": [
         "https://www.museoegizio.it/en/info/hours/",
         "https://www.santacroceopera.it/en/organise-your-visit/",
@@ -670,7 +670,7 @@
         },
         {
           "title": "Santa Croce, Bargello y Torre Guinigi",
-          "description": "Santa Croce miércoles 14, Bargello jueves 15; Torre Guinigi domingo 11 durante el paso por Lucca solo si la consigna funciona y el tiempo alcanza."
+          "description": "Santa Croce miércoles 14, Bargello jueves 15; Torre Guinigi domingo 11 durante el paso por Lucca solo si la consigna funciona y el tiempo alcanza. Antes de comprar un billete combinado Accademia/Bargello, comparar la vigencia de 48 h con las visitas del martes y jueves."
         }
       ]
     ]
