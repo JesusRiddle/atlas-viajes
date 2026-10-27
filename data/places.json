@@ -3504,5 +3504,45 @@
       "license": "Consultar licencia de la imagen",
       "attribution": "Wikimedia Commons"
     }
+  },
+  "italy27-sempione": {
+    "name": "Parco Sempione · Milano",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Parco%20Sempione%20-%20Milano%2C%202023.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Parco%20Sempione%20-%20Milano%2C%202023.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-lucca-fillungo": {
+    "name": "Via Fillungo · Lucca",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Fillungo%20-%20Lucques%20(IT52)%20-%202022-09-01%20-%201.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Via%20Fillungo%20-%20Lucques%20(IT52)%20-%202022-09-01%20-%201.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-pitti": {
+    "name": "Palazzo Pitti · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Firenze%20-%20Palazzo%20Pitti%20-%202026-09-15%2016-39-14%20001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Firenze%20-%20Palazzo%20Pitti%20-%202026-09-15%2016-39-14%20001.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-milan-scala": {
+    "name": "Piazza della Scala · Milano",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20170706%20MilanoStreets%209345%20(36350946550).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:20170706%20MilanoStreets%209345%20(36350946550).jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
   }
 }
