@@ -259,19 +259,27 @@
     {
       "n": 10,
       "date": "2027-04-12",
-      "title": "Siena · excursión desde Firenze",
+      "title": "Siena · Piazza del Campo, Duomo y Libreria Piccolomini",
       "base": "Firenze",
-      "am": "1. Traslado a Siena, visita a Piazza del Campo y calles medievales.",
-      "pm": "1. Duomo, Libreria Piccolomini y centro histórico, sujetos al horario oficial.",
-      "night": "1. Regreso a Firenze y cena.",
-      "mobility": "• *Firenze → Siena:* Comparar autobús al centro con tren a la estación de Siena, situada fuera del casco antiguo.\n• *Recorrido urbano:* Piazza del Campo, Duomo y Libreria Piccolomini a pie.\n• *Regreso:* Autobús o tren a Firenze en horario compatible con las visitas.",
-      "note": "• *Duomo:* Verificar apertura, celebraciones religiosas y acceso a la Libreria Piccolomini.\n• *Ritmo:* No combinar Siena con San Gimignano en esta jornada.",
+      "am": "1. Desayunar en Firenze y dirigirse a la parada vigente de Autolinee Toscane para tomar el autobús 131R hacia Siena. Salir por la mañana, tras confirmar recorrido y horario del lunes 12 de abril.\n2. Bajar cerca de Via Tozzi / Piazza Gramsci, según el servicio, y recorrer a pie las calles medievales hasta Piazza del Campo.\n3. Disfrutar Piazza del Campo y contemplar el Palazzo Pubblico y la Torre del Mangia desde el exterior, sin añadir una subida obligatoria.",
+      "pm": "1. Almorzar con calma en el centro histórico, reservando tiempo para la Catedral.\n2. Visitar el Duomo di Siena y la Libreria Piccolomini con el acceso oficial que corresponda; dedicar aproximadamente 1–2 horas al conjunto básico.\n3. Pasear por los alrededores de Piazza del Duomo y Via di Città. Añadir Museo dell’Opera o el mirador Facciatone solo si se compra un pase adecuado y queda tiempo.",
+      "night": "1. Regresar a la parada confirmada en Siena y tomar el autobús hacia Firenze sin depender del último servicio.\n2. Cenar cerca de Firenze SMN y volver al Hotel Mia Cara & SPA para descansar antes de las visitas del martes.",
+      "mobility": "• *Firenze → Siena:* Priorizar autobús regional 131R de Autolinee Toscane (alternativa 131); suele tardar alrededor de 1 h 20 min y llega a la zona de Via Tozzi, próxima al casco antiguo.\n• *Parada en Firenze:* Confirmar punto de salida vigente: Autolinee Toscane anuncia cambios temporales en la zona de Via Orti Oricellari hasta junio de 2027; no asumir que la salida será en la autostazione habitual.\n• *Siena a pie:* Desde Via Tozzi / Piazza Gramsci llegar a Piazza del Campo y continuar hasta el Duomo por las calles históricas; prever cuestas y pavimento irregular.\n• *Siena → Firenze:* Regresar en 131R o 131 según horario disponible; identificar con antelación la parada exacta de vuelta y conservar tiempo de margen.\n• *Alternativa ferroviaria:* Tren regional desde Firenze SMN a Siena, sujeto a conexiones; la estación queda más alejada del centro y exige subida o transporte local.",
+      "note": "• *Catedral:* Horario de temporada publicado para abril de 2026: 10:00–19:00 de lunes a sábado, con último acceso media hora antes. El calendario y servicios religiosos del 12 de abril de 2027 deben reconfirmarse.\n• *Libreria Piccolomini:* Está dentro del complejo del Duomo; comprobar su inclusión en la entrada elegida y reservar en canal oficial.\n• *Entrada adecuada:* Comparar boleto de Catedral y Libreria con OPA SI PASS solo si también visitarás Museo dell’Opera, Cripta o Facciatone. No comprar el pase amplio por inercia.\n• *Autobús:* Verificar parada temporal de Firenze, horarios, modalidad de compra y precio vigente para 2027. Ningún billete está reservado.\n• *Ritmo:* Evitar combinar Siena con San Gimignano; el plan principal es Piazza del Campo y Duomo, con añadidos opcionales.\n• *Plan B:* Si hay restricciones por ceremonias, recorrer primero Piazza del Campo y regresar al Duomo cuando abra; si hay retrasos de autobús, eliminar los extras, no la visita principal.",
       "spend": null,
       "places": [],
       "transportRefs": [
-        "train-siena"
+        "bus-siena"
       ],
-      "hotel": "firenze-miacara"
+      "hotel": "firenze-miacara",
+      "headerPlaces": [
+        "Siena · Via Tozzi",
+        "Piazza del Campo",
+        "Palazzo Pubblico · exterior",
+        "Duomo di Siena",
+        "Libreria Piccolomini",
+        "Via di Città"
+      ]
     },
     {
       "n": 11,
@@ -729,11 +737,15 @@
         },
         {
           "title": "Duomo y Libreria Piccolomini (Siena)",
-          "description": "Lunes 12 de abril, excursión desde Firenze. Comparar el pase para el complejo monumental y verificar qué incluye, horarios religiosos y acceso a la Libreria Piccolomini.",
+          "description": "Lunes 12 abril 2027: visita de Duomo y Libreria Piccolomini tras Piazza del Campo. Confirmar horario oficial 2027, celebraciones y tipo de entrada. OPA SI PASS solo si se visitan otros museos del complejo; autobús 131R sujeto a paradas temporales.",
           "links": [
             {
-              "label": "Opera del Duomo Siena · oficial",
-              "url": "https://operaduomo.siena.it/"
+              "label": "Opera Duomo Siena · horarios oficiales",
+              "url": "https://operaduomo.siena.it/en/the-cathedral/"
+            },
+            {
+              "label": "Libreria Piccolomini · información oficial",
+              "url": "https://operaduomo.siena.it/en/piccolomini-library/"
             }
           ]
         }
@@ -1194,15 +1206,15 @@
       ]
     },
     {
-      "id": "train-siena",
-      "type": "train",
-      "title": "Firenze ↔ Siena · excursión",
+      "id": "bus-siena",
+      "type": "bus",
+      "title": "Firenze ↔ Siena · autobús 131R",
       "day": 10,
       "selectedOption": "A",
       "options": [
         {
           "id": "A",
-          "provider": "Trenitalia · regional",
+          "provider": "Autolinee Toscane · 131R / 131",
           "status": "planning",
           "selectedFare": "ref",
           "journeys": [
@@ -1210,11 +1222,11 @@
               "direction": "outbound",
               "segments": [
                 {
-                  "from": "Firenze S. M. Novella",
-                  "to": "Siena",
+                  "from": "Firenze · parada vigente por confirmar",
+                  "to": "Siena · Via Tozzi",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Trenitalia · regional"
+                  "operator": "Autolinee Toscane · 131R / 131"
                 }
               ]
             },
@@ -1222,11 +1234,11 @@
               "direction": "return",
               "segments": [
                 {
-                  "from": "Siena",
-                  "to": "Firenze S. M. Novella",
+                  "from": "Siena · Via Tozzi",
+                  "to": "Firenze · parada vigente por confirmar",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Trenitalia · regional"
+                  "operator": "Autolinee Toscane · 131R / 131"
                 }
               ]
             }
@@ -1240,13 +1252,21 @@
               "refunds": null
             }
           ],
-          "notes": "Lunes 12 abril: comparar tren o bus a Siena y horarios del Duomo; viaje de ida y vuelta sin pernocta.",
+          "notes": "Lunes 12 abril 2027: preferir autobús 131R hacia Siena (aprox. 1 h 20 min como referencia). AT anuncia modificación de paradas en Firenze hasta junio de 2027: verificar punto de salida y regreso. Tarifa y horario de 2027 pendientes; comparar con 131 o tren regional si es necesario.",
           "quotedAt": null
         }
       ],
       "links": [
         {
-          "label": "Horarios y billetes oficiales",
+          "label": "Autolinee Toscane · línea 131R",
+          "url": "https://www.at-bus.it/it/linee-e-orari/regionali-131r"
+        },
+        {
+          "label": "Autolinee Toscane · billetes",
+          "url": "https://www.at-bus.it/en/faq/tickets"
+        },
+        {
+          "label": "Trenitalia · alternativa ferroviaria",
           "url": "https://www.trenitalia.com/"
         }
       ]
