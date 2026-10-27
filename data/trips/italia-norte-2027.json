@@ -307,7 +307,8 @@
       "places": [
         "italy27-siena-campo",
         "italy27-siena-duomo",
-        "italy27-piccolomini"
+        "italy27-piccolomini",
+        "italy27-palazzo-pubblico"
       ],
       "transportRefs": [
         "bus-siena"
@@ -388,7 +389,8 @@
         "italy27-piazzale",
         "italy27-san-miniato",
         "italy27-bargello",
-        "italy27-santo-spirito"
+        "italy27-santo-spirito",
+        "italy27-signoria"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -1763,6 +1765,8 @@
     "italy27-capellini": "Esta estrecha calle entre fachadas coloridas conduce por el corazón medieval del pueblo hasta sus miradores sobre el mar.",
     "italy27-opera-duomo": "Conoce de cerca esculturas y puertas originales del complejo catedralicio, en salas donde el arte se aprecia sin las alturas del Duomo.",
     "italy27-ponte": "El puente medieval de las joyerías cruza el Arno bajo el trayecto elevado del Corridoio Vasariano: una de las imágenes clásicas de Firenze.",
-    "italy27-lucca-walls": "Las fortificaciones que abrazan la ciudad son hoy un paseo elevado y arbolado; una forma distinta de entrar al centro histórico."
+    "italy27-lucca-walls": "Las fortificaciones que abrazan la ciudad son hoy un paseo elevado y arbolado; una forma distinta de entrar al centro histórico.",
+    "italy27-signoria": "El corazón cívico de Firenze reúne esculturas al aire libre y el imponente Palazzo Vecchio, una parada esencial entre los palacios renacentistas.",
+    "italy27-palazzo-pubblico": "El palacio gótico domina Piazza del Campo bajo la Torre del Mangia y recuerda la historia de la república medieval de Siena."
   }
 }
