@@ -59,7 +59,12 @@ window.AtlasTrip = function (ctx) {
             solo + '</div></article></div>' + (compact ? '</section>' : '');
     }
     function climateCard(t) {
-        return '<article class="overview-climate-card"><h3>' + overviewIcon('sun') + ' Clima y luz</h3>' +
+        const month = typeof t.start === 'string' ? t.start.slice(5, 7) : '';
+        const status = t.seasonality?.months?.[month]?.status;
+        const seasonLabels = { recommended: 'Recomendable', conditional: 'Aceptable', avoid: 'Desaconsejable', pending: 'Por definir' };
+        const seasonClass = Object.prototype.hasOwnProperty.call(seasonLabels, status) ? ' season-' + status : '';
+        const seasonBadge = seasonClass ? '<span class="overview-climate-season-status">' + seasonLabels[status] + '</span>' : '';
+        return '<article class="overview-climate-card' + seasonClass + '"><h3>' + overviewIcon('sun') + ' Clima y luz' + seasonBadge + '</h3>' +
             '<div class="fact-copy">' + factParagraphs(t.climate) + '</div></article>';
     }
     function practicalAdvice(t) {
