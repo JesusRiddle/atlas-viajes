@@ -80,8 +80,8 @@ test('reservas críticas de Italia 2027 tienen grupos, prioridad y enlaces ofici
 
 test('Italia 2027: fechas, noches y viajes de ida y vuelta coherentes', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
-  assert.equal(trip.days.length, 12);
-  assert.equal(trip.bases.reduce((total, [, nights]) => total + nights, 0), 10);
+  assert.equal(trip.days.length, 14);
+  assert.equal(trip.bases.reduce((total, [, nights]) => total + nights, 0), 12);
   for (let i = 0; i < trip.days.length; i++) {
     const expected = new Date(Date.parse(trip.start + 'T12:00:00Z') + i * 86400000).toISOString().slice(0, 10);
     assert.equal(trip.days[i].date, expected);
@@ -137,17 +137,17 @@ test('Italia 2027 mantiene vuelos cotizados y trenes futuros sin precios inventa
 test('Italia 2027: tres hoteles principales y presupuesto distribuido', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
   assert.equal(trip.hotels.length,3);
-  const nights={'Milano':3,'La Spezia':2,'Firenze':5};
+  const nights={'Milano':3,'La Spezia':2,'Firenze':7};
   const hotelExpenses=trip.expenses.filter(x=>x.category==='lodging');
   assert.equal(hotelExpenses.length,3);
-  assert.equal(hotelExpenses.reduce((a,x)=>a+x.cost.amount,0),21800);
+  assert.equal(hotelExpenses.reduce((a,x)=>a+x.cost.amount,0),26400);
   for(const h of trip.hotels){
     assert.match(h.status,/no reservado/);
     assert.match(h.rate,/No es cotización/);
     assert.equal(hotelExpenses.find(x=>x.hotelId===h.id).nights,nights[h.city]);
   }
-  assert.equal(trip.expenses.filter(x=>x.category==='food').length,12);
-  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),9500);
+  assert.equal(trip.expenses.filter(x=>x.category==='food').length,14);
+  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),11300);
   assert.equal(trip.budgetPreliminary,true);
 });
 
@@ -164,4 +164,17 @@ test('Italia 2027: traslados y gastos de vuelos sin duplicados', () => {
  const ct=trip.majorTransport.find(t=>t.id==='train-cinque-terre').options[0].journeys;
  assert.equal(ct[0].segments[0].to,'Riomaggiore');
  assert.equal(ct[1].segments[0].from,'Monterosso al Mare');
+});
+
+
+test('Italia 2027: regreso 16 abril y siete noches en Firenze', () => {
+ const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+ assert.equal(trip.end,'2027-04-16');
+ assert.deepEqual(trip.bases,[['Milano',3],['La Spezia',2],['Firenze',7]]);
+ assert.equal(trip.work,10);
+ assert.equal(trip.hotels.find(h=>h.city==='Firenze').checkOut,'2027-04-16');
+ const flight=trip.majorTransport.find(t=>t.id==='flight-international').options[0];
+ assert.match(flight.journeys[1].segments[0].departure,/^2027-04-16T23:05/);
+ assert.match(flight.journeys[1].segments[0].arrival,/^2027-04-17T04:00/);
+ for(const id of ['train-firenze-milano','airport-return'])assert.equal(trip.majorTransport.find(t=>t.id===id).day,14);
 });
