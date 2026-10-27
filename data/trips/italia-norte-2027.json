@@ -230,7 +230,7 @@
       "am": "1. Desayunar y tomar el autobús ATC hacia Portovenere, tras comprobar parada, línea y posibles cambios de servicio.\n2. Pasear por el puerto de casas de colores y entrar al casco antiguo por su puerta histórica.\n3. Recorrer Via Giovanni Capellini con calma hasta la zona de la iglesia de San Pietro.",
       "pm": "1. Visitar la iglesia de San Pietro y sus miradores sobre el mar; observar Grotta Byron desde zonas seguras.\n2. Almorzar sin prisas en Portovenere.\n3. Subir al Castello Doria solo si está abierto y apetece caminar más; visita opcional.",
       "night": "1. Regresar a La Spezia en autobús ATC con margen, sin depender del último servicio.\n2. Cenar cerca del hotel y preparar la excursión del sábado a Cinque Terre.",
-      "mobility": "• *Casa Danè → parada ATC:* Identificar la parada y caminar desde el alojamiento próximo a La Spezia Centrale.\n• *La Spezia → Portovenere:* ATC línea P desde Via Chiodo Portici: A) 08:55→09:30; B) 09:25→10:00; C) 09:55→10:30 (35 min). Horarios verificados como referencia para viernes 06/11/2026, no confirmados para 09/04/2027.\n• *Recorrido a pie:* Puerto → puerta histórica → Via Giovanni Capellini → San Pietro → miradores de Grotta Byron; subida opcional al Castello Doria.\n• *Portovenere → La Spezia:* Confirmar parada, frecuencia y posibles transbordos, y regresar con suficiente margen.\n• *Regreso y precio:* Pendientes de cotizar y seleccionar; confirmar obras y servicios de lanzadera en Cavo. Horarios: https://www.atcesercizio.it/linee-e-orari/ .",
+      "mobility": "• *Casa Danè → parada ATC:* Identificar la parada y caminar desde el alojamiento próximo a La Spezia Centrale.\n• *La Spezia → Portovenere:* ATC línea P desde Via Chiodo Portici: A) 08:55→09:30; B) 09:25→10:00; C) 09:55→10:30 (35 min). Horarios verificados como referencia para viernes 06/11/2026, no confirmados para 09/04/2027.\n• *Recorrido a pie:* Puerto → puerta histórica → Via Giovanni Capellini → San Pietro → miradores de Grotta Byron; subida opcional al Castello Doria.\n• *Portovenere → La Spezia:* Confirmar parada, frecuencia y posibles transbordos, y regresar con suficiente margen.\n• *Regreso y precio:* Pendientes de cotizar y seleccionar; confirmar obras y servicios de lanzadera en Cavo. Horarios: https://www.atcesercizio.it/linee-e-orari/ .\n• *Portovenere → La Spezia:* desde Portovenere, A) 16:55→17:32 Via Chiodo Giardini; B) 17:25→18:02; C) 17:55→18:32. Directos de 37 minutos; viernes 06/11/2026 como referencia, confirmar para 09/04/2027. El regreso termina en Via Chiodo Giardini, distinta de Via Chiodo Portici (ida).",
       "note": "• *Desvíos ATC:* Comprobar si siguen vigentes las restricciones de la línea P y el transbordo en Cavo para abril de 2027.\n• *Billetes:* Confirmar tarifa y compra con ATC; ningún transporte está reservado.\n• *Castello Doria:* Opcional; comprobar apertura y precio para la fecha.\n• *Seguridad:* Evitar rocas y bordes expuestos si hay viento u oleaje.\n• *Plan B:* Con lluvia, dedicar más tiempo al casco antiguo; barco únicamente si está operando y el mar lo permite.",
       "spend": null,
       "places": [
@@ -1469,10 +1469,11 @@
               "segments": [
                 {
                   "from": "Portovenere",
-                  "to": "La Spezia · parada de regreso por confirmar",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "ATC línea P"
+                  "to": "La Spezia · Via Chiodo Giardini",
+                  "departure": "2027-04-09T16:55:00+02:00",
+                  "arrival": "2027-04-09T17:32:00+02:00",
+                  "operator": "ATC Esercizio · línea P",
+                  "service": "Referencia viernes 06/11/2026, no confirmada para abril 2027"
                 }
               ]
             }
@@ -1486,7 +1487,7 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 08:55 → Portovenere 09:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes.",
+          "notes": "Via Chiodo Portici 08:55 → Portovenere 09:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción A: Portovenere 16:55 → Via Chiodo Giardini 17:32 (37 min), según parada verificada de servicio de referencia 06/11/2026.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1513,10 +1514,11 @@
               "segments": [
                 {
                   "from": "Portovenere",
-                  "to": "La Spezia · parada de regreso por confirmar",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "ATC línea P"
+                  "to": "La Spezia · Via Chiodo Giardini",
+                  "departure": "2027-04-09T17:25:00+02:00",
+                  "arrival": "2027-04-09T18:02:00+02:00",
+                  "operator": "ATC Esercizio · línea P",
+                  "service": "Referencia viernes 06/11/2026, no confirmada para abril 2027"
                 }
               ]
             }
@@ -1530,7 +1532,7 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 09:25 → Portovenere 10:00 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes.",
+          "notes": "Via Chiodo Portici 09:25 → Portovenere 10:00 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción B: Portovenere 17:25 → Via Chiodo Giardini 18:02 (37 min), según parada verificada de servicio de referencia 06/11/2026.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1557,10 +1559,11 @@
               "segments": [
                 {
                   "from": "Portovenere",
-                  "to": "La Spezia · parada de regreso por confirmar",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "ATC línea P"
+                  "to": "La Spezia · Via Chiodo Giardini",
+                  "departure": "2027-04-09T17:55:00+02:00",
+                  "arrival": "2027-04-09T18:32:00+02:00",
+                  "operator": "ATC Esercizio · línea P",
+                  "service": "Referencia viernes 06/11/2026, no confirmada para abril 2027"
                 }
               ]
             }
@@ -1574,7 +1577,7 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 09:55 → Portovenere 10:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes.",
+          "notes": "Via Chiodo Portici 09:55 → Portovenere 10:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción C: Portovenere 17:55 → Via Chiodo Giardini 18:32 (37 min), según parada verificada de servicio de referencia 06/11/2026.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1598,7 +1601,7 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Portovenere%20ATC%20bus%20terminal"
         }
       ],
-      "boardingNote": "La zona del poste concreto de la línea ATC todavía está pendiente de verificación; los enlaces son referencias orientativas, no paradas exactas certificadas."
+      "boardingNote": "Ida: Via Chiodo Portici → Portovenere; regreso: Portovenere → Via Chiodo Giardini. Son paradas de distinto sentido. Verificar punto exacto de embarque, desvíos por obras y horario vigente en abril 2027."
     },
     {
       "id": "train-cinque-terre",
