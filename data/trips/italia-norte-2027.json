@@ -74,7 +74,17 @@
         "B&B HOTEL Milano Aosta · candidato, no reservado"
       ],
       "hotel": "milano-aosta",
-      "boardingGuide": "Puntos de embarque y llegada (Maps):\nMalpensa Aeroporto T1 train station: https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station\nMilano Centrale station: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station\nVerificar andén o poste exacto antes de abordar."
+      "boardingGuide": "Puntos de embarque y llegada (Maps):\nMalpensa Aeroporto T1 train station: https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station\nMilano Centrale station: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station\nVerificar andén o poste exacto antes de abordar.",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Malpensa Aeroporto T1 train station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station"
+        },
+        {
+          "label": "Mapa: Milano Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        }
+      ]
     },
     {
       "n": 3,
@@ -108,7 +118,17 @@
       "optionalPlaces": [
         "italy27-mole"
       ],
-      "boardingGuide": "Puntos de embarque y llegada (Maps):\nMilano Centrale station: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station\nTorino Porta Nuova railway station: https://www.google.com/maps/search/?api=1&query=Torino%20Porta%20Nuova%20railway%20station\nVerificar andén o poste exacto antes de abordar."
+      "boardingGuide": "Puntos de embarque y llegada (Maps):\nMilano Centrale station: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station\nTorino Porta Nuova railway station: https://www.google.com/maps/search/?api=1&query=Torino%20Porta%20Nuova%20railway%20station\nVerificar andén o poste exacto antes de abordar.",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Milano Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: Torino Porta Nuova railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Torino%20Porta%20Nuova%20railway%20station"
+        }
+      ]
     },
     {
       "n": 4,
@@ -190,7 +210,17 @@
         "Via del Prione",
         "Passeggiata Morin"
       ],
-      "boardingGuide": "Puntos de embarque y llegada (Maps):\nMilano Centrale station: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station\nLa Spezia Centrale station: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station\nVerificar andén o poste exacto antes de abordar."
+      "boardingGuide": "Puntos de embarque y llegada (Maps):\nMilano Centrale station: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station\nLa Spezia Centrale station: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station\nVerificar andén o poste exacto antes de abordar.",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Milano Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: La Spezia Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station"
+        }
+      ]
     },
     {
       "n": 7,
@@ -220,7 +250,17 @@
         "Grotta Byron · miradores",
         "Castello Doria · opcional"
       ],
-      "boardingGuide": "Puntos de embarque y llegada (Maps):\nLa Spezia Portovenere ATC bus stop via Chiodo: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Portovenere%20ATC%20bus%20stop%20via%20Chiodo\nPortovenere ATC bus terminal: https://www.google.com/maps/search/?api=1&query=Portovenere%20ATC%20bus%20terminal\nVerificar andén o poste exacto antes de abordar. Para Portovenere, ubicaciones orientativas: confirmar el poste oficial al elegir autobús."
+      "boardingGuide": "Puntos de embarque y llegada (Maps):\nLa Spezia Portovenere ATC bus stop via Chiodo: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Portovenere%20ATC%20bus%20stop%20via%20Chiodo\nPortovenere ATC bus terminal: https://www.google.com/maps/search/?api=1&query=Portovenere%20ATC%20bus%20terminal\nVerificar andén o poste exacto antes de abordar. Para Portovenere, ubicaciones orientativas: confirmar el poste oficial al elegir autobús.",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: La Spezia Portovenere ATC bus stop via Chiodo",
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Portovenere%20ATC%20bus%20stop%20via%20Chiodo"
+        },
+        {
+          "label": "Mapa: Portovenere ATC bus terminal",
+          "url": "https://www.google.com/maps/search/?api=1&query=Portovenere%20ATC%20bus%20terminal"
+        }
+      ]
     },
     {
       "n": 8,
@@ -252,7 +292,29 @@
       "optionalPlaces": [
         "italy27-monterosso"
       ],
-      "boardingGuide": "Puntos de embarque y llegada (Maps):\nLa Spezia Centrale station: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station\nRiomaggiore railway station: https://www.google.com/maps/search/?api=1&query=Riomaggiore%20railway%20station\nManarola railway station: https://www.google.com/maps/search/?api=1&query=Manarola%20railway%20station\nVernazza railway station: https://www.google.com/maps/search/?api=1&query=Vernazza%20railway%20station\nMonterosso railway station: https://www.google.com/maps/search/?api=1&query=Monterosso%20railway%20station\nVerificar andén o poste exacto antes de abordar."
+      "boardingGuide": "Puntos de embarque y llegada (Maps):\nLa Spezia Centrale station: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station\nRiomaggiore railway station: https://www.google.com/maps/search/?api=1&query=Riomaggiore%20railway%20station\nManarola railway station: https://www.google.com/maps/search/?api=1&query=Manarola%20railway%20station\nVernazza railway station: https://www.google.com/maps/search/?api=1&query=Vernazza%20railway%20station\nMonterosso railway station: https://www.google.com/maps/search/?api=1&query=Monterosso%20railway%20station\nVerificar andén o poste exacto antes de abordar.",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: La Spezia Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: Riomaggiore railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Riomaggiore%20railway%20station"
+        },
+        {
+          "label": "Mapa: Manarola railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Manarola%20railway%20station"
+        },
+        {
+          "label": "Mapa: Vernazza railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vernazza%20railway%20station"
+        },
+        {
+          "label": "Mapa: Monterosso railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Monterosso%20railway%20station"
+        }
+      ]
     },
     {
       "n": 9,
@@ -302,7 +364,21 @@
           "url": "https://bounce.com/stores/lucca/VHkrx0"
         }
       ],
-      "boardingGuide": "Puntos de embarque y llegada (Maps):\nLa Spezia Centrale station: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station\nLucca railway station: https://www.google.com/maps/search/?api=1&query=Lucca%20railway%20station\nFirenze Santa Maria Novella railway station: https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station\nVerificar andén o poste exacto antes de abordar."
+      "boardingGuide": "Puntos de embarque y llegada (Maps):\nLa Spezia Centrale station: https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station\nLucca railway station: https://www.google.com/maps/search/?api=1&query=Lucca%20railway%20station\nFirenze Santa Maria Novella railway station: https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station\nVerificar andén o poste exacto antes de abordar.",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: La Spezia Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: Lucca railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Lucca%20railway%20station"
+        },
+        {
+          "label": "Mapa: Firenze Santa Maria Novella railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station"
+        }
+      ]
     },
     {
       "n": 10,
@@ -334,7 +410,21 @@
         "Libreria Piccolomini",
         "Via di Città"
       ],
-      "boardingGuide": "Puntos de embarque y llegada (Maps):\nFirenze Autostazione bus terminal: https://www.google.com/maps/search/?api=1&query=Firenze%20Autostazione%20bus%20terminal\nVia degli Orti Oricellari Firenze: https://www.google.com/maps/search/?api=1&query=Via%20degli%20Orti%20Oricellari%20Firenze\nSiena Via Tozzi 131R bus stop: https://www.google.com/maps/search/?api=1&query=Siena%20Via%20Tozzi%20131R%20bus%20stop\nVerificar andén o poste exacto antes de abordar. Salida rápida 08:50 temporalmente desde Via Orti Oricellari hasta 10/06/2027; aviso: https://www.at-bus.it/it/viaggia/avvisi/parternze-orti-oricellari . Regreso en Siena Via Tozzi: confirmar ubicación de poste."
+      "boardingGuide": "Puntos de embarque y llegada (Maps):\nFirenze Autostazione bus terminal: https://www.google.com/maps/search/?api=1&query=Firenze%20Autostazione%20bus%20terminal\nVia degli Orti Oricellari Firenze: https://www.google.com/maps/search/?api=1&query=Via%20degli%20Orti%20Oricellari%20Firenze\nSiena Via Tozzi 131R bus stop: https://www.google.com/maps/search/?api=1&query=Siena%20Via%20Tozzi%20131R%20bus%20stop\nVerificar andén o poste exacto antes de abordar. Salida rápida 08:50 temporalmente desde Via Orti Oricellari hasta 10/06/2027; aviso: https://www.at-bus.it/it/viaggia/avvisi/parternze-orti-oricellari . Regreso en Siena Via Tozzi: confirmar ubicación de poste.",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Firenze Autostazione bus terminal",
+          "url": "https://www.google.com/maps/search/?api=1&query=Firenze%20Autostazione%20bus%20terminal"
+        },
+        {
+          "label": "Mapa: Via degli Orti Oricellari Firenze",
+          "url": "https://www.google.com/maps/search/?api=1&query=Via%20degli%20Orti%20Oricellari%20Firenze"
+        },
+        {
+          "label": "Mapa: Siena Via Tozzi 131R bus stop",
+          "url": "https://www.google.com/maps/search/?api=1&query=Siena%20Via%20Tozzi%20131R%20bus%20stop"
+        }
+      ]
     },
     {
       "n": 11,
@@ -441,7 +531,21 @@
         "airport-return",
         "flight-international"
       ],
-      "boardingGuide": "Puntos de embarque y llegada (Maps):\nFirenze Santa Maria Novella railway station: https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station\nMilano Centrale station: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station\nMalpensa Aeroporto T1 train station: https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station\nVerificar andén o poste exacto antes de abordar."
+      "boardingGuide": "Puntos de embarque y llegada (Maps):\nFirenze Santa Maria Novella railway station: https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station\nMilano Centrale station: https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station\nMalpensa Aeroporto T1 train station: https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station\nVerificar andén o poste exacto antes de abordar.",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Firenze Santa Maria Novella railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station"
+        },
+        {
+          "label": "Mapa: Milano Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: Malpensa Aeroporto T1 train station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station"
+        }
+      ]
     }
   ],
   "budgetPreliminary": true,
