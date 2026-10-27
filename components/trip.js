@@ -99,11 +99,17 @@ window.AtlasTrip = function (ctx) {
             const prefix = badgeInfo(item)?.prefix;
             return prefix && item.text.startsWith(prefix) ? item.text.slice(prefix.length) : item.text;
         };
+        const emphasizedDescription = item => {
+            const safeText = esc(description(item));
+            return item.id === 'entry'
+                ? safeText.replace(/(Pasaporte|ETIAS|EES|visa|adaptador)/g, '<strong>$1</strong>')
+                : safeText;
+        };
         const content = indicators
             ? indicators.map(item => '<div class="practical-indicator" data-indicator-id="' + esc(item.id) + '">' +
                 '<span class="practical-indicator-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' +
                 (icons[item.id] || icons.solo) + '</svg></span>' +
-                '<div><strong>' + esc(item.title) + '</strong><p>' + badgeMarkup(item) + esc(description(item)) + '</p></div></div>').join('')
+                '<div><strong>' + esc(item.title) + '</strong><p>' + badgeMarkup(item) + emphasizedDescription(item) + '</p></div></div>').join('')
             : t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
                 readable(part) + '</div>').join('');
         return '<section class="overview-practical" aria-label="Estilo de viaje y consejos prácticos">' +
