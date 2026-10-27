@@ -180,13 +180,18 @@ test('Italia 2027: regreso 16 abril y distribución equilibrada de bases', () =>
 });
 
 
-test('Italia 2027: días ampliados concretos y excursiones flexibles', () => {
+test('Italia 2027: distribución por fechas y visitas críticas coherentes', () => {
  const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+ const titles=trip.days.map(d=>d.title);
  assert.equal(trip.days.length,14);
- assert.match(trip.days[11].title,/Fiesole/);
- assert.match(trip.days[12].title,/San Marco/);
- assert.match(trip.days[12].pm,/Museo Galileo/);
- assert.match(trip.days[5].note,/tres o cuatro pueblos/);
- assert.match(trip.days[6].note,/consigna/);
+ assert.match(titles[4],/Milano/);
+ assert.match(titles[6],/Portovenere/);
+ assert.match(titles[7],/Cinque Terre/);
+ assert.match(titles[8],/Lucca/);
+ assert.match(titles[9],/Siena/);
+ assert.match(titles[10],/David/);
+ assert.match(titles[11],/Uffizi/);
+ assert.match(titles[12],/Bargello/);
+ assert.match(trip.days[8].note,/consigna/);
  assert.equal(trip.days[13].date,'2027-04-16');
 });
