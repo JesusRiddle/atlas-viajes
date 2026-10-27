@@ -203,7 +203,8 @@
       "places": [
         "italy27-portovenere",
         "italy27-byron",
-        "italy27-capellini"
+        "italy27-capellini",
+        "italy27-san-pietro-portovenere"
       ],
       "transportRefs": [
         "bus-portovenere"
@@ -231,7 +232,8 @@
       "places": [
         "italy27-manarola",
         "italy27-vernazza",
-        "italy27-riomaggiore"
+        "italy27-riomaggiore",
+        "italy27-monterosso"
       ],
       "transportRefs": [
         "train-cinque-terre"
@@ -242,6 +244,9 @@
         "Manarola · miradores",
         "Vernazza · puerto histórico",
         "Monterosso · opcional"
+      ],
+      "optionalPlaces": [
+        "italy27-monterosso"
       ]
     },
     {
@@ -308,7 +313,8 @@
         "italy27-siena-campo",
         "italy27-siena-duomo",
         "italy27-piccolomini",
-        "italy27-palazzo-pubblico"
+        "italy27-palazzo-pubblico",
+        "italy27-siena-via-citta"
       ],
       "transportRefs": [
         "bus-siena"
@@ -337,7 +343,8 @@
       "places": [
         "italy16-david",
         "italy16-cupola",
-        "italy27-opera-duomo"
+        "italy27-opera-duomo",
+        "italy27-firenze-cathedral"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -345,6 +352,9 @@
         "Cúpula de Brunelleschi · reserva obligatoria",
         "Museo dell’Opera del Duomo",
         "Catedral de Santa Maria del Fiore · opcional"
+      ],
+      "optionalPlaces": [
+        "italy27-firenze-cathedral"
       ]
     },
     {
@@ -1767,6 +1777,10 @@
     "italy27-ponte": "El puente medieval de las joyerías cruza el Arno bajo el trayecto elevado del Corridoio Vasariano: una de las imágenes clásicas de Firenze.",
     "italy27-lucca-walls": "Las fortificaciones que abrazan la ciudad son hoy un paseo elevado y arbolado; una forma distinta de entrar al centro histórico.",
     "italy27-signoria": "El corazón cívico de Firenze reúne esculturas al aire libre y el imponente Palazzo Vecchio, una parada esencial entre los palacios renacentistas.",
-    "italy27-palazzo-pubblico": "El palacio gótico domina Piazza del Campo bajo la Torre del Mangia y recuerda la historia de la república medieval de Siena."
+    "italy27-palazzo-pubblico": "El palacio gótico domina Piazza del Campo bajo la Torre del Mangia y recuerda la historia de la república medieval de Siena.",
+    "italy27-monterosso": "La playa y el pueblo de Monterosso ofrecen un contraste con los acantilados de Cinque Terre; una parada opcional para pasear junto al mar.",
+    "italy27-siena-via-citta": "Una calle medieval entre palacios de piedra, escaparates y callejones que conserva el ambiente del centro histórico de Siena.",
+    "italy27-san-pietro-portovenere": "La pequeña iglesia de piedra se asoma directamente al mar de Liguria, con una terraza que permite contemplar el litoral y las olas.",
+    "italy27-firenze-cathedral": "Su impresionante fachada de mármol esculpido combina blancos, verdes y rosados; contempla sus detalles antes de subir a la cúpula."
   }
 }
