@@ -12,3 +12,6 @@ Si un requisito del usuario contradice una regla editorial, discutir o documenta
 
 ## Orden de trabajo obligatorio
 Seguir **Fase 0 → Fase 1 → Fase 2 (secciones 5–13) → Fase 3** de `docs/trip-editorial-guide.md`. Antes de redactar cada sección comprobar sus dependencias y el diseño maestro de Emilia-Romagna; al terminar, ejecutar las validaciones pertinentes y corregir errores antes de avanzar. No completar primero los textos y después inventar logística para justificarlos. Respetar la concisión solicitada: información concreta, no paja.
+
+## Criterios de calendario y extensiones
+Optimizar fechas comparando costo total, días laborales, festivos y fines de semana; aprovecharlos cuando beneficien, nunca de manera rígida. Si se agregan días, distribuirlos entre las bases donde más reduzcan traslados apresurados y mejoren visitas: no anexarlos por defecto al final. Revalidar días de apertura, reservas, hoteles, trenes, presupuesto y tests. Consultar `docs/trip-editorial-guide.md` como fuente detallada.
