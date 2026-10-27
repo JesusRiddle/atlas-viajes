@@ -400,7 +400,7 @@
       "am": "1. Desayunar en Firenze y dirigirse a la parada vigente de Autolinee Toscane para tomar el autobús 131R hacia Siena. Salir por la mañana, tras confirmar recorrido y horario del lunes 12 de abril.\n2. Bajar cerca de Via Tozzi / Piazza Gramsci, según el servicio, y recorrer a pie las calles medievales hasta Piazza del Campo.\n3. Disfrutar Piazza del Campo y contemplar el Palazzo Pubblico y la Torre del Mangia desde el exterior, sin añadir una subida obligatoria.",
       "pm": "1. Almorzar con calma en el centro histórico, reservando tiempo para la Catedral.\n2. Visitar el Duomo di Siena y la Libreria Piccolomini con el acceso oficial que corresponda; dedicar aproximadamente 1–2 horas al conjunto básico.\n3. Pasear por los alrededores de Piazza del Duomo y Via di Città. Añadir Museo dell’Opera o el mirador Facciatone solo si se compra un pase adecuado y queda tiempo.",
       "night": "1. Regresar a la parada confirmada en Siena y tomar el autobús hacia Firenze sin depender del último servicio.\n2. Cenar cerca de Firenze SMN y volver al Hotel Mia Cara & SPA para descansar: el martes comenzará temprano con la Accademia y la subida a la Cúpula.",
-      "mobility": "• *Firenze → Siena:* 131R directo; A) Firenze Autostazione 07:45 → Siena Via Tozzi 09:00; B) 08:10→09:25; C) 08:50→10:05. Referencias del PDF oficial vigente desde 05/10/2026 (laborales excepto sábado), sin confirmar para 12/04/2027. Tarifa extraurbano veloce y validación por confirmar antes de compra.\n• *Parada en Firenze:* Confirmar punto de salida vigente: Autolinee Toscane anuncia cambios temporales en la zona de Via Orti Oricellari hasta junio de 2027; no asumir que la salida será en la autostazione habitual.\n• *Siena a pie:* Desde Via Tozzi / Piazza Gramsci llegar a Piazza del Campo y continuar hasta el Duomo por las calles históricas; prever cuestas y pavimento irregular.\n• *Siena → Firenze:* Regresar en 131R o 131 según horario disponible; identificar con antelación la parada exacta de vuelta y conservar tiempo de margen.\n• *Alternativa ferroviaria:* Tren regional desde Firenze SMN a Siena, sujeto a conexiones; la estación queda más alejada del centro y exige subida o transporte local.\n• *Consulta el mismo día:* abrir https://www.at-bus.it/it/linee-e-orari/regionali-131r → pestaña «Orari» → escoger «Firenze Autostazione» (o la parada temporal indicada en «Avvisi»), fecha 12/04/2027 y hora desde 07:00 → «Vedi gli orari». La lista muestra SALIDAS de esa parada, no llegadas ni reserva de plaza. Para comprobar cada servicio hasta Siena–Via Tozzi, consultar la tabla PDF oficial https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf y seleccionar columna con «Scolastica escluso Sabato» en día escolar laborable; para el regreso invertir el sentido y buscar Siena Via Tozzi → Firenze. Consultar «Avvisi» por cambios de parada: hasta 10/06/2027 está anunciado que determinadas salidas, incluida rápida de 08:50, parten de Via Orti Oricellari.\n• *Comprar online:* preferir app oficial «at bus», https://www.at-bus.it/en/app. Crear/iniciar sesión «my at» → planificar Firenze → Siena (o Shop/Biglietti) → elegir billete sencillo «Extraurbano veloce» / «Fast suburban» para línea rápida 131R, NO urbano Firenze ni 131 ordinario → comprobar importe y dirección → pagar. Comprar por separado o seleccionar dirección inversa Siena → Firenze para regreso. No asumir que el PDF vende billetes ni que comprar reserva asiento/hora.\n• *Activación y control:* al comenzar el viaje, abrir en la app el título adquirido y pulsar «Usa/Use» (activar) antes/al abordar; mantener el teléfono encendido y mostrar el QR del billete en uso al inspector. Un billete comprado pero sin activar NO basta. Si se compra en papel, validarlo en la máquina a bordo al subir. Si falla, avisar al conductor y seguir procedimiento oficial. Consultar https://www.at-bus.it/en/faq/app-at-bus y https://www.at-bus.it/en/tickets-and-passes/buying-guide. Si la app no funciona, comprar otro título válido o usar Tip Tap contactless comprobando disponibilidad y reglas de tap-on/tap-off.\n• *Estado:* horario, tarifa y parada efectiva del lunes 12/04/2027 por reconfirmar; no comprado.",
+      "mobility": "• *Firenze → Siena:* 131R directo; A) Firenze Autostazione 07:45 → Siena Via Tozzi 09:00; B) 08:10→09:25; C) 08:50→10:05. Referencias del PDF oficial vigente desde 05/10/2026 (laborales excepto sábado), sin confirmar para 12/04/2027. Tarifa extraurbano veloce y validación por confirmar antes de compra.\n• *Parada en Firenze:* Confirmar punto de salida vigente: Autolinee Toscane anuncia cambios temporales en la zona de Via Orti Oricellari hasta junio de 2027; no asumir que la salida será en la autostazione habitual.\n• *Siena a pie:* Desde Via Tozzi / Piazza Gramsci llegar a Piazza del Campo y continuar hasta el Duomo por las calles históricas; prever cuestas y pavimento irregular.\n• *Siena → Firenze:* Regresar en 131R o 131 según horario disponible; identificar con antelación la parada exacta de vuelta y conservar tiempo de margen.\n• *Alternativa ferroviaria:* Tren regional desde Firenze SMN a Siena, sujeto a conexiones; la estación queda más alejada del centro y exige subida o transporte local.\n• *Consulta el mismo día:* abrir https://www.at-bus.it/it/linee-e-orari/regionali-131r → pestaña «Orari» → escoger «Firenze Autostazione» (o la parada temporal indicada en «Avvisi»), fecha 12/04/2027 y hora desde 07:00 → «Vedi gli orari». La lista muestra SALIDAS de esa parada, no llegadas ni reserva de plaza. Para comprobar cada servicio hasta Siena–Via Tozzi, consultar la tabla PDF oficial https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf y seleccionar columna con «Scolastica escluso Sabato» en día escolar laborable; para el regreso invertir el sentido y buscar Siena Via Tozzi → Firenze. Consultar «Avvisi» por cambios de parada: hasta 10/06/2027 está anunciado que determinadas salidas, incluida rápida de 08:50, parten de Via Orti Oricellari.\n• *Comprar online:* preferir app oficial «at bus», https://www.at-bus.it/en/app. Crear/iniciar sesión «my at» → planificar Firenze → Siena (o Shop/Biglietti) → elegir billete sencillo «Extraurbano veloce» / «Fast suburban» para línea rápida 131R, NO urbano Firenze ni 131 ordinario → comprobar importe y dirección → pagar. Comprar por separado o seleccionar dirección inversa Siena → Firenze para regreso. No asumir que el PDF vende billetes ni que comprar reserva asiento/hora.\n• *Activación y control:* al comenzar el viaje, abrir en la app el título adquirido y pulsar «Usa/Use» (activar) antes/al abordar; mantener el teléfono encendido y mostrar el QR del billete en uso al inspector. Un billete comprado pero sin activar NO basta. Si se compra en papel, validarlo en la máquina a bordo al subir. Si falla, avisar al conductor y seguir procedimiento oficial. Consultar https://www.at-bus.it/en/faq/app-at-bus y https://www.at-bus.it/en/tickets-and-passes/buying-guide. Si la app no funciona, comprar otro título válido o usar Tip Tap contactless comprobando disponibilidad y reglas de tap-on/tap-off.\n• *Estado:* horario, tarifa y parada efectiva del lunes 12/04/2027 por reconfirmar; no comprado.\n• *Regreso Siena → Firenze (131R):* A) Siena Via Tozzi 17:50 → Firenze Autostazione 19:05; B) 18:00→19:17; C) 18:20→19:37. Alternativa anterior 17:40→18:57. Referencias lunes 02/11/2026 (Feriale escluso Sabato), confirmar horarios y avisos para 12/04/2027. Subir en Siena Via Tozzi (confirmar poste/sentido); bajar en Firenze Autostazione (confirmar terminal o desvío).",
       "note": "• *Catedral:* Horario de temporada publicado para abril de 2026: 10:00–19:00 de lunes a sábado, con último acceso media hora antes. El calendario y servicios religiosos del 12 de abril de 2027 deben reconfirmarse.\n• *Libreria Piccolomini:* Está dentro del complejo del Duomo; comprobar su inclusión en la entrada elegida y reservar en canal oficial.\n• *Entrada adecuada:* Comparar boleto de Catedral y Libreria con OPA SI PASS solo si también visitarás Museo dell’Opera, Cripta o Facciatone. No comprar el pase amplio por inercia.\n• *Autobús:* Verificar parada temporal de Firenze, horarios, modalidad de compra y precio vigente para 2027. Ningún billete está reservado.\n• *Ritmo:* Evitar combinar Siena con San Gimignano; el plan principal es Piazza del Campo y Duomo, con añadidos opcionales.\n• *Plan B:* Si hay restricciones por ceremonias, recorrer primero Piazza del Campo y regresar al Duomo cuando abra; si hay retrasos de autobús, eliminar los extras, no la visita principal.",
       "spend": null,
       "places": [
@@ -2110,10 +2110,11 @@
               "segments": [
                 {
                   "from": "Siena · Via Tozzi",
-                  "to": "Firenze Autostazione (verificar parada)",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Autolinee Toscane · 131R"
+                  "to": "Firenze Autostazione (verificar desvíos)",
+                  "departure": "2027-04-12T17:50:00+02:00",
+                  "arrival": "2027-04-12T19:05:00+02:00",
+                  "operator": "Autolinee Toscane · 131R",
+                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para abril 2027"
                 }
               ]
             }
@@ -2127,7 +2128,7 @@
               "refunds": "Comprobar condiciones del operador"
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 07:45 Firenze Autostazione → 09:00 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app",
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 07:45 Firenze Autostazione → 09:00 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 17:50 → Firenze Autostazione 19:05; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2154,10 +2155,11 @@
               "segments": [
                 {
                   "from": "Siena · Via Tozzi",
-                  "to": "Firenze Autostazione (verificar parada)",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Autolinee Toscane · 131R"
+                  "to": "Firenze Autostazione (verificar desvíos)",
+                  "departure": "2027-04-12T18:00:00+02:00",
+                  "arrival": "2027-04-12T19:17:00+02:00",
+                  "operator": "Autolinee Toscane · 131R",
+                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para abril 2027"
                 }
               ]
             }
@@ -2171,7 +2173,7 @@
               "refunds": "Comprobar condiciones del operador"
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:10 Firenze Autostazione → 09:25 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app",
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:10 Firenze Autostazione → 09:25 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:00 → Firenze Autostazione 19:17; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2198,10 +2200,11 @@
               "segments": [
                 {
                   "from": "Siena · Via Tozzi",
-                  "to": "Firenze Autostazione (verificar parada)",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Autolinee Toscane · 131R"
+                  "to": "Firenze Autostazione (verificar desvíos)",
+                  "departure": "2027-04-12T18:20:00+02:00",
+                  "arrival": "2027-04-12T19:37:00+02:00",
+                  "operator": "Autolinee Toscane · 131R",
+                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para abril 2027"
                 }
               ]
             }
@@ -2215,7 +2218,7 @@
               "refunds": "Comprobar condiciones del operador"
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:50 Firenze Autostazione → 10:05 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app",
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:50 Firenze Autostazione → 10:05 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 12/04/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:20 → Firenze Autostazione 19:37; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2243,6 +2246,10 @@
         {
           "label": "Trenitalia · alternativa ferroviaria",
           "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Tarifas vigentes · Extraurbano Veloce AT",
+          "url": "https://www.at-bus.it/it/ticket/biglietti-extraurbani/biglietto-extraurbano-veloce-ordinario"
         }
       ],
       "boardingLocations": [
