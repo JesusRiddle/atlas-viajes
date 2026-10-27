@@ -477,6 +477,13 @@
       "text": "Euro (€). Llevar algo de efectivo para compras pequeñas; si la terminal ofrece conversión, elegir euros.",
       "badge": "Tarjetas aceptadas",
       "tone": "green"
+    },
+    {
+      "id": "entry",
+      "title": "Documentos y electricidad",
+      "text": "Pasaporte mexicano: expedido hace menos de 10 años y válido 3 meses después de salir de Schengen; estancia turística hasta 90 días sin visa. ETIAS: verificar activación antes del viaje en travel-europe.europa.eu/etias (no tramitar hasta que abra). Si hay conexión en EE. UU., visa estadounidense válida. Llevar reservas y vuelo de salida; adaptador tipo C/L (también F según toma), corriente 230 V; comprobar que el cargador admita 100–240 V.",
+      "badge": "Verificar antes de viajar",
+      "tone": "orange"
     }
   ],
   "seasonality": {
