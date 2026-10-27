@@ -3359,5 +3359,49 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "attribution": "WikiViky21"
     }
+  },
+  "italy27-egizio": {
+    "name": "Museo Egizio · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torino%20-%20Museo%20Egizio%20-%202024-09-18%2020-54-44%20001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Torino%20-%20Museo%20Egizio%20-%202024-09-18%2020-54-44%20001.jpg",
+      "author": "Barbaragerosa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Barbaragerosa"
+    }
+  },
+  "italy27-riomaggiore": {
+    "name": "Riomaggiore · Cinque Terre",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Riomaggiore,%20Cinque%20Terre.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Riomaggiore,%20Cinque%20Terre.jpg",
+      "author": "Jocelyn Erskine-Kellie",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Jocelyn Erskine-Kellie"
+    }
+  },
+  "italy27-vasariano": {
+    "name": "Corridoio Vasariano · interior histórico",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Corridoio%20vasariano,%20interno.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Corridoio%20vasariano,%20interno.JPG",
+      "author": "Folegandros",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Folegandros"
+    }
+  },
+  "italy27-bargello": {
+    "name": "Museo Nazionale del Bargello · fachada",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bargello.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Bargello.jpg",
+      "author": "Terrasque",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Terrasque"
+    }
   }
 }
