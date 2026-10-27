@@ -103,8 +103,8 @@ window.AtlasTrip = function (ctx) {
             const safeText = esc(description(item));
             if (item.id !== 'entry') return safeText;
             return safeText
-                .replace(/(^|[^\\p{L}\\p{N}])(Pasaporte|ETIAS|EES|visa|adaptador)(?=$|[^\\p{L}\\p{N}])/gu, '$1<strong>$2</strong>')
-                .replace(/travel-europe\\.europa\\.eu\\/etias/g,
+                .replace(/(^|[^\p{L}\p{N}])(Pasaporte|ETIAS|EES|visa|adaptador)(?=$|[^\p{L}\p{N}])/gu, '$1<strong>$2</strong>')
+                .replace(/travel-europe\.europa\.eu\/etias/g,
                     '<a href="https://travel-europe.europa.eu/etias" target="_blank" rel="noopener noreferrer">sitio oficial de ETIAS</a>');
         };
         const content = indicators
