@@ -202,7 +202,8 @@
       "spend": null,
       "places": [
         "italy27-portovenere",
-        "italy27-byron"
+        "italy27-byron",
+        "italy27-capellini"
       ],
       "transportRefs": [
         "bus-portovenere"
@@ -257,7 +258,8 @@
       "places": [
         "italy27-lucca-anfiteatro",
         "italy27-guinigi",
-        "italy27-lucca-fillungo"
+        "italy27-lucca-fillungo",
+        "italy27-lucca-walls"
       ],
       "transportRefs": [
         "train-la-spezia-lucca",
@@ -333,7 +335,8 @@
       "spend": null,
       "places": [
         "italy16-david",
-        "italy16-cupola"
+        "italy16-cupola",
+        "italy27-opera-duomo"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -358,7 +361,8 @@
         "italy16-uffizi",
         "italy27-santa-croce",
         "italy27-vasariano",
-        "italy27-pitti"
+        "italy27-pitti",
+        "italy27-ponte"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -1755,6 +1759,10 @@
     "italy27-sempione": "Los senderos y prados detrás del Castello Sforzesco ofrecen un descanso verde entre visitas al centro monumental.",
     "italy27-lucca-fillungo": "Camina por la arteria comercial del casco antiguo, entre fachadas históricas, pequeños comercios y rincones medievales.",
     "italy27-pitti": "La gran fachada renacentista anuncia el antiguo palacio de los Médici, punto de salida del recorrido por el Corridoio Vasariano.",
-    "italy27-milan-scala": "Esta plaza une el histórico Teatro alla Scala con el monumento a Leonardo, a unos pasos de la Galleria Vittorio Emanuele II."
+    "italy27-milan-scala": "Esta plaza une el histórico Teatro alla Scala con el monumento a Leonardo, a unos pasos de la Galleria Vittorio Emanuele II.",
+    "italy27-capellini": "Esta estrecha calle entre fachadas coloridas conduce por el corazón medieval del pueblo hasta sus miradores sobre el mar.",
+    "italy27-opera-duomo": "Conoce de cerca esculturas y puertas originales del complejo catedralicio, en salas donde el arte se aprecia sin las alturas del Duomo.",
+    "italy27-ponte": "El puente medieval de las joyerías cruza el Arno bajo el trayecto elevado del Corridoio Vasariano: una de las imágenes clásicas de Firenze.",
+    "italy27-lucca-walls": "Las fortificaciones que abrazan la ciudad son hoy un paseo elevado y arbolado; una forma distinta de entrar al centro histórico."
   }
 }
