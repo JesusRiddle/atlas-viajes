@@ -3584,5 +3584,25 @@
       "license": "Consultar licencia de la imagen",
       "attribution": "Wikimedia Commons"
     }
+  },
+  "italy27-signoria": {
+    "name": "Piazza della Signoria y Palazzo Vecchio · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20della%20signoria%2C%20palazzo%20vecchio%2C%20veduta%2001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza%20della%20signoria%2C%20palazzo%20vecchio%2C%20veduta%2001.jpg",
+      "author": "Sailko",
+      "attribution": "Sailko",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "italy27-palazzo-pubblico": {
+    "name": "Palazzo Pubblico · Siena",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siena%20-%20Palazzo%20Pubblico%20-%202024-09-26%2018-43-45%20001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Siena%20-%20Palazzo%20Pubblico%20-%202024-09-26%2018-43-45%20001.jpg",
+      "author": "Wikimedia Commons",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia en la ficha"
+    }
   }
 }
