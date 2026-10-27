@@ -230,7 +230,7 @@
       "am": "1. Desayunar y tomar el autobús ATC hacia Portovenere, tras comprobar parada, línea y posibles cambios de servicio.\n2. Pasear por el puerto de casas de colores y entrar al casco antiguo por su puerta histórica.\n3. Recorrer Via Giovanni Capellini con calma hasta la zona de la iglesia de San Pietro.",
       "pm": "1. Visitar la iglesia de San Pietro y sus miradores sobre el mar; observar Grotta Byron desde zonas seguras.\n2. Almorzar sin prisas en Portovenere.\n3. Subir al Castello Doria solo si está abierto y apetece caminar más; visita opcional.",
       "night": "1. Regresar a La Spezia en autobús ATC con margen, sin depender del último servicio.\n2. Cenar cerca del hotel y preparar la excursión del sábado a Cinque Terre.",
-      "mobility": "• *Casa Danè → parada ATC:* Identificar la parada y caminar desde el alojamiento próximo a La Spezia Centrale.\n• *La Spezia → Portovenere:* Autobús ATC línea P u otra ruta vigente según el operador; referencia de 30–45 min, sin horario confirmado para abril de 2027.\n• *Recorrido a pie:* Puerto → puerta histórica → Via Giovanni Capellini → San Pietro → miradores de Grotta Byron; subida opcional al Castello Doria.\n• *Portovenere → La Spezia:* Confirmar parada, frecuencia y posibles transbordos, y regresar con suficiente margen.",
+      "mobility": "• *Casa Danè → parada ATC:* Identificar la parada y caminar desde el alojamiento próximo a La Spezia Centrale.\n• *La Spezia → Portovenere:* ATC línea P desde Via Chiodo Portici: A) 08:55→09:30; B) 09:25→10:00; C) 09:55→10:30 (35 min). Horarios verificados como referencia para viernes 06/11/2026, no confirmados para 09/04/2027.\n• *Recorrido a pie:* Puerto → puerta histórica → Via Giovanni Capellini → San Pietro → miradores de Grotta Byron; subida opcional al Castello Doria.\n• *Portovenere → La Spezia:* Confirmar parada, frecuencia y posibles transbordos, y regresar con suficiente margen.\n• *Regreso y precio:* Pendientes de cotizar y seleccionar; confirmar obras y servicios de lanzadera en Cavo. Horarios: https://www.atcesercizio.it/linee-e-orari/ .",
       "note": "• *Desvíos ATC:* Comprobar si siguen vigentes las restricciones de la línea P y el transbordo en Cavo para abril de 2027.\n• *Billetes:* Confirmar tarifa y compra con ATC; ningún transporte está reservado.\n• *Castello Doria:* Opcional; comprobar apertura y precio para la fecha.\n• *Seguridad:* Evitar rocas y bordes expuestos si hay viento u oleaje.\n• *Plan B:* Con lluvia, dedicar más tiempo al casco antiguo; barco únicamente si está operando y el mar lo permite.",
       "spend": null,
       "places": [
@@ -1447,7 +1447,7 @@
       "options": [
         {
           "id": "A",
-          "provider": "ATC Esercizio · autobús",
+          "provider": "ATC Esercizio · línea P, Casano–Portovenere",
           "status": "planning",
           "selectedFare": "ref",
           "journeys": [
@@ -1455,11 +1455,12 @@
               "direction": "outbound",
               "segments": [
                 {
-                  "from": "La Spezia",
+                  "from": "La Spezia · Via Chiodo Portici",
                   "to": "Portovenere",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "ATC Esercizio · autobús"
+                  "departure": "2027-04-09T08:55:00+02:00",
+                  "arrival": "2027-04-09T09:30:00+02:00",
+                  "operator": "ATC línea P",
+                  "service": "Referencia viernes 06/11/2026; origen del servicio 08:18 Piazza Martiri"
                 }
               ]
             },
@@ -1468,10 +1469,10 @@
               "segments": [
                 {
                   "from": "Portovenere",
-                  "to": "La Spezia",
+                  "to": "La Spezia · parada de regreso por confirmar",
                   "departure": null,
                   "arrival": null,
-                  "operator": "ATC Esercizio · autobús"
+                  "operator": "ATC línea P"
                 }
               ]
             }
@@ -1479,19 +1480,111 @@
           "fares": [
             {
               "id": "ref",
-              "name": "Orientativo · pendiente de cotización",
+              "name": "Tarifa oficial pendiente de consulta",
               "price": null,
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "Viernes 9 abril 2027: excursión por autobús ATC línea P/11-P según temporada, duración orientativa 30–45 min. Consultar desvíos por obras y posible conexión mediante lanzadera en Cavo, horarios, paradas, tarifas y último regreso. Sin billetes comprados.",
-          "quotedAt": null
+          "notes": "Via Chiodo Portici 08:55 → Portovenere 09:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "B",
+          "provider": "ATC Esercizio · línea P, Casano–Portovenere",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "La Spezia · Via Chiodo Portici",
+                  "to": "Portovenere",
+                  "departure": "2027-04-09T09:25:00+02:00",
+                  "arrival": "2027-04-09T10:00:00+02:00",
+                  "operator": "ATC línea P",
+                  "service": "Referencia viernes 06/11/2026; origen del servicio 08:48 Sarzana"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Portovenere",
+                  "to": "La Spezia · parada de regreso por confirmar",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "ATC línea P"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Tarifa oficial pendiente de consulta",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Via Chiodo Portici 09:25 → Portovenere 10:00 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "C",
+          "provider": "ATC Esercizio · línea P, Casano–Portovenere",
+          "status": "planning",
+          "selectedFare": "ref",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "La Spezia · Via Chiodo Portici",
+                  "to": "Portovenere",
+                  "departure": "2027-04-09T09:55:00+02:00",
+                  "arrival": "2027-04-09T10:30:00+02:00",
+                  "operator": "ATC línea P",
+                  "service": "Referencia viernes 06/11/2026; origen del servicio 09:18 Sarzana"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Portovenere",
+                  "to": "La Spezia · parada de regreso por confirmar",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "ATC línea P"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "ref",
+              "name": "Tarifa oficial pendiente de consulta",
+              "price": null,
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Via Chiodo Portici 09:55 → Portovenere 10:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 09/04/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes.",
+          "quotedAt": "2026-10-27"
         }
       ],
       "links": [
         {
-          "label": "Horarios y billetes oficiales",
+          "label": "ATC · horarios línea P",
+          "url": "https://www.atcesercizio.it/linee-e-orari/"
+        },
+        {
+          "label": "ATC · sitio oficial",
           "url": "https://www.atcesercizio.it/"
         }
       ],
