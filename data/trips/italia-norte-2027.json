@@ -528,7 +528,7 @@
       "am": "1. Desayunar, cerrar equipaje y realizar check-out en Firenze; dirigirse a Firenze Santa Maria Novella (SMN).\n2. Tomar un tren directo de alta velocidad a Milano Centrale. Elegir una salida con margen suficiente para retrasos y para cambiar de tren; el horario 2027 aún no está publicado/cotizado.",
       "pm": "1. En Milano Centrale, cambiar al Malpensa Express hacia la terminal correspondiente; comprobar salida, billete y tiempo de traslado entre andenes.\n2. Objetivo prudente: estar en Milano Malpensa hacia las 18:30–19:00 para el vuelo previsto a las 23:05. Llegar con holgura, ya que los trenes y el vuelo se contratan por separado.\n3. Documentación, seguridad y control de pasaportes según indicaciones de Aeroméxico y del aeropuerto.",
       "night": "1. Vuelo directo Aeroméxico MXP → MEX: salida cotizada el viernes 16 de abril a las 23:05, hora de Italia.\n2. Noche a bordo; llegada prevista a Ciudad de México el sábado 17 de abril a las 04:00, hora local. Migración, aduana y traslado a casa el sábado; domingo 18 libre para descansar.",
-      "mobility": "• *Firenze SMN → Milano Centrale:* Tren de alta velocidad, unas 2 horas habituales; servicio y tarifa 2027 por confirmar.\n• *Milano Centrale → Malpensa:* Malpensa Express, unos 50–60 minutos habituales; verificar terminal y estación.\n• *MXP → CDMX:* Vuelo directo Aeroméxico, salida cotizada viernes 16 a las 23:05 y llegada sábado 17 a las 04:00, hora local.",
+      "mobility": "• *Firenze SMN → Milano Centrale (alta velocidad directa):* A) Italo Prima Business 14:25→16:20 desde €47,90; B) Frecciarossa 9584 14:55→16:50 desde €67; C) Frecciarossa 9540 15:55→17:50 desde €46,90. Referencias viernes 06/11/2026, NO confirmadas para 16/04/2027. Billete de cada operador válido solo según su tarifa/servicio; opciones B/C no cubiertas automáticamente por Italo.\n• *Milano Centrale → Malpensa:* Malpensa Express, unos 50–60 minutos habituales; verificar terminal y estación.\n• *MXP → CDMX:* Vuelo directo Aeroméxico, salida cotizada viernes 16 a las 23:05 y llegada sábado 17 a las 04:00, hora local.",
       "note": "• *Margen aeroportuario:* Objetivo de llegada a MXP hacia las 18:30–19:00; trenes y vuelo no constituyen conexión protegida.\n• *Reservas:* No fijar visitas con entrada para el viernes. Horarios ferroviarios y vuelo todavía sin comprar.\n• *Descanso:* Llegada a México sábado 17; domingo 18 libre.",
       "spend": null,
       "places": [],
@@ -2290,9 +2290,9 @@
       "options": [
         {
           "id": "A",
-          "provider": "Trenitalia · Frecciarossa / Italo",
-          "status": "planning",
-          "selectedFare": "ref",
+          "provider": "Italo · Prima Business",
+          "status": "quoted",
+          "selectedFare": "reference",
           "journeys": [
             {
               "direction": "oneway",
@@ -2300,24 +2300,95 @@
                 {
                   "from": "Firenze S. M. Novella",
                   "to": "Milano Centrale",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Trenitalia · Frecciarossa / Italo"
+                  "departure": "2027-04-16T14:25:00+02:00",
+                  "arrival": "2027-04-16T16:20:00+02:00",
+                  "operator": "Italo (número por confirmar)"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "ref",
-              "name": "Orientativo · pendiente de cotización",
-              "price": null,
+              "id": "reference",
+              "name": "Prima Business · desde (captura Italo)",
+              "price": {
+                "amount": 47.9,
+                "currency": "EUR"
+              },
               "changes": null,
               "refunds": null
             }
           ],
-          "notes": "16 abril: alta velocidad directa ~1 h 54–2 h. Escoger salida con amplio colchón para enlazar Malpensa Express y estar en MXP alrededor de 18:30–19:00; evitar billetes de tren con conexión demasiado justa.",
-          "quotedAt": null
+          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 16/04/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "B",
+          "provider": "Trenitalia · Frecciarossa 9584",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Firenze S. M. Novella",
+                  "to": "Milano Centrale",
+                  "departure": "2027-04-16T14:55:00+02:00",
+                  "arrival": "2027-04-16T16:50:00+02:00",
+                  "operator": "Frecciarossa 9584"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa desde (captura Trenitalia)",
+              "price": {
+                "amount": 67,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 16/04/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación.",
+          "quotedAt": "2026-10-27"
+        },
+        {
+          "id": "C",
+          "provider": "Trenitalia · Frecciarossa 9540",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Firenze S. M. Novella",
+                  "to": "Milano Centrale",
+                  "departure": "2027-04-16T15:55:00+02:00",
+                  "arrival": "2027-04-16T17:50:00+02:00",
+                  "operator": "Frecciarossa 9540"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa desde (captura Trenitalia)",
+              "price": {
+                "amount": 46.9,
+                "currency": "EUR"
+              },
+              "changes": null,
+              "refunds": null
+            }
+          ],
+          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 16/04/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación.",
+          "quotedAt": "2026-10-27"
         }
       ],
       "links": [
