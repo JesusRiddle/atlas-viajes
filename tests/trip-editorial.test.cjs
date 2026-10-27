@@ -137,17 +137,17 @@ test('Italia 2027 mantiene vuelos cotizados y trenes futuros sin precios inventa
 test('Italia 2027: tres hoteles principales y presupuesto distribuido', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
   assert.equal(trip.hotels.length,3);
-  const nights={'Milano':3,'La Spezia':2,'Firenze':7};
+  const nights={'Milano':4,'La Spezia':3,'Firenze':5};
   const hotelExpenses=trip.expenses.filter(x=>x.category==='lodging');
   assert.equal(hotelExpenses.length,3);
-  assert.equal(hotelExpenses.reduce((a,x)=>a+x.cost.amount,0),26400);
+  assert.equal(hotelExpenses.reduce((a,x)=>a+x.cost.amount,0),25900);
   for(const h of trip.hotels){
     assert.match(h.status,/no reservado/);
     assert.match(h.rate,/No es cotización/);
     assert.equal(hotelExpenses.find(x=>x.hotelId===h.id).nights,nights[h.city]);
   }
   assert.equal(trip.expenses.filter(x=>x.category==='food').length,14);
-  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),11300);
+  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),11350);
   assert.equal(trip.budgetPreliminary,true);
 });
 
@@ -167,10 +167,10 @@ test('Italia 2027: traslados y gastos de vuelos sin duplicados', () => {
 });
 
 
-test('Italia 2027: regreso 16 abril y siete noches en Firenze', () => {
+test('Italia 2027: regreso 16 abril y distribución equilibrada de bases', () => {
  const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
  assert.equal(trip.end,'2027-04-16');
- assert.deepEqual(trip.bases,[['Milano',3],['La Spezia',2],['Firenze',7]]);
+ assert.deepEqual(trip.bases,[['Milano',4],['La Spezia',3],['Firenze',5]]);
  assert.equal(trip.work,10);
  assert.equal(trip.hotels.find(h=>h.city==='Firenze').checkOut,'2027-04-16');
  const flight=trip.majorTransport.find(t=>t.id==='flight-international').options[0];
