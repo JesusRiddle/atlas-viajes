@@ -3444,5 +3444,65 @@
       "license": "Ver ficha de Wikimedia Commons",
       "attribution": "Wikimedia Commons"
     }
+  },
+  "italy27-piazza-castello": {
+    "name": "Piazza Castello y Palazzo Madama · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20Castello%20di%20Torino%20e%20scorcio%20della%20Piazzetta%20Reale.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza%20Castello%20di%20Torino%20e%20scorcio%20della%20Piazzetta%20Reale.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-mole": {
+    "name": "Mole Antonelliana · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mole%20Antonelliana%20(37781).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Mole%20Antonelliana%20(37781).jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-brera": {
+    "name": "Pinacoteca di Brera · Milano",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pinacoteca%20di%20Brera%20-%20Milano%20-%20il%20cortile%20interno.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Pinacoteca%20di%20Brera%20-%20Milano%20-%20il%20cortile%20interno.JPG",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-piccolomini": {
+    "name": "Libreria Piccolomini · Siena",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siena%20-%20Duomo%2C%20libreria%20piccolomini.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Siena%20-%20Duomo%2C%20libreria%20piccolomini.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-santo-spirito": {
+    "name": "Piazza Santo Spirito · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20santo%20spirito%2C%20veduta%20dal%20cenacolo%20di%20s.%20spirito.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza%20santo%20spirito%2C%20veduta%20dal%20cenacolo%20di%20s.%20spirito.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-madama": {
+    "name": "Palazzo Madama · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torino%20-%20Palazzo%20Madama%20e%20Casaforte%20degli%20Acaja%20-%202025-09-13%20Marcok%20002.jpeg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Torino%20-%20Palazzo%20Madama%20e%20Casaforte%20degli%20Acaja%20-%202025-09-13%20Marcok%20002.jpeg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
   }
 }
