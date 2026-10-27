@@ -62,7 +62,7 @@
       "pm": "1. Llegar a Milano Malpensa (MXP) a las 18:20 según la cotización; pasar controles de entrada y registro EES cuando corresponda.\n2. Recoger equipaje si procede y localizar el acceso al Malpensa Express. Adquirir billete para un servicio con margen, después de conocer el tiempo real de salida del aeropuerto.",
       "night": "1. Tras migración y recogida de equipaje, tomar el Malpensa Express T1 → Milano Centrale: salida objetivo de referencia 19:41 (llegada 20:37), respaldo 20:11 (llegada 21:07) o servicio posterior según la hora real. Estos horarios provienen del 1/11/2026 y deben confirmarse para el 4/4/2027.\n2. Caminar al B&B HOTEL Milano Aosta, alojamiento candidato frente a Milano Centrale, y hacer check-in.\n3. Cena sencilla si hay establecimientos abiertos; descansar para Torino al día siguiente.",
       "mobility": "• *Malpensa T1 → Milano Centrale:* Malpensa Express directo, aprox. 56 min y €15 según consulta de Trenord del 1/11/2026. Objetivo 19:41; respaldo 20:11 o tren posterior. El boleto MXP comprado por web/app vale para un viaje durante toda la fecha indicada, sin validación adicional; reconfirmar para abril de 2027.\n• *Milano Centrale → hotel:* Caminar al B&B HOTEL Milano Aosta, frente a la estación; alojamiento candidato, aún sin reservar.",
-      "note": "• *Control fronterizo:* Prever migración y registro EES si corresponde; no comprar un tren con conexión ajustada al aterrizaje.\n• *Check-in tardío:* Confirmar recepción del hotel y alternativa si el vuelo se retrasa. No programar visitas al llegar.",
+      "note": "• *Control fronterizo:* Prever migración y registro EES si corresponde; no comprar un tren con conexión ajustada al aterrizaje.\n• *Check-in tardío:* Confirmar recepción del hotel y alternativa si el vuelo se retrasa. No programar visitas al llegar.\n• *Validación Malpensa Express:* comprado en web/app Trenord no requiere convalidación física; mostrar el billete digital y respetar fecha/ruta. Si el ticket no cubre el servicio, adquirir uno nuevo antes de viajar.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -84,7 +84,7 @@
       "pm": "1. Almorzar cerca de Piazza San Carlo y recorrer sus pórticos.\n2. Pasear hacia Piazza Castello y Palazzo Madama (exterior).\n3. Mole Antonelliana solo si queda margen; no añadir otro museo obligatorio.",
       "night": "1. Tras las visitas, regresar a Torino Porta Nuova con margen para tomar el Italo directo de referencia de las 19:25 (llegada a Milano Centrale 20:30; desde €23,90).\n2. Respaldo B: Regionale Veloce 2041 de las 19:54 (llegada 21:49, desde €12,90). Respaldo C: Regionale Veloce 2043 de las 20:54 (llegada 22:49, desde €12,90). Consultas del lunes 02/11/2026: confirmar horarios y tarifas para abril de 2027, y comprar un boleto válido para el servicio que se utilice.\n3. Caminar al alojamiento candidato B&B HOTEL Milano Aosta, frente a Milano Centrale.",
       "mobility": "• *Ida Milano Centrale → Torino Porta Nuova:* preferencia Italo directo 07:30–08:30, Smart Economy €23,90 (≈$496 MXN, cambio de referencia 27/10/2026). Comparación: Frecciarossa 07:53–08:55 (€27,90) o Regionale 07:15–09:10 (€12,90). Todos los horarios proceden del lunes 02/11/2026, no están confirmados para abril de 2027.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; acceso objetivo 10:00, sin reservar.\n• *Regreso Torino Porta Nuova → Milano Centrale:* A) Italo 19:25–20:30, desde €23,90 (≈$496 MXN); B) Regionale 2041 19:54–21:49, desde €12,90 (≈$268 MXN); C) Regionale 2043 20:54–22:49, desde €12,90 (≈$268 MXN). Referencias de 02/11/2026, no confirmadas para 05/04/2027. Los billetes no son necesariamente intercambiables.",
-      "note": "• *Museo Egizio:* Lunes, horario habitual 09:00–14:00 y último ingreso 13:00; verificar calendario 2027.\n• *Reserva:* Franja objetivo 10:00–10:30, todavía sin comprar; elegir el tren primero para evitar una conexión justa.\n• *Visitas opcionales:* Palazzo Madama y Mole Antonelliana solo desde el exterior; no asumir apertura de museos un lunes.",
+      "note": "• *Museo Egizio:* Lunes, horario habitual 09:00–14:00 y último ingreso 13:00; verificar calendario 2027.\n• *Reserva:* Franja objetivo 10:00–10:30, todavía sin comprar; elegir el tren primero para evitar una conexión justa.\n• *Visitas opcionales:* Palazzo Madama y Mole Antonelliana solo desde el exterior; no asumir apertura de museos un lunes.\n• *Billetes y convalidación:* Italo electrónico: presentar QR/código y documento, sin sellarlo. Trenitalia regional digital: validación automática y barra verde. Regional físico: sellar en máquinas convalidadoras de la estación antes de abordar. Respaldo B/C puede requerir comprar otro billete; comprobar cambios permitidos antes de subir.",
       "spend": null,
       "places": [
         "italy27-egizio",
@@ -970,7 +970,7 @@
               "refunds": "Consultar condiciones de transporte de Trenord."
             }
           ],
-          "notes": "Referencia consultada para 01/11/2026, NO horario confirmado para 04/04/2027: salidas T1 19:11→20:07 (MXP 2971), 19:41→20:37 (MXP 2973, objetivo sujeto a migración), 20:11→21:07 (MXP 2975, respaldo), 20:41→21:37 y 21:11→22:07; todos directos, 56 min y €15. Vuelo cotizado llega 18:20. Billete válido para un viaje durante el día indicado y sin validación adicional si se compra por web/app Trenord. No reservar horario fijo antes de conocer demoras migratorias.",
+          "notes": "Referencia consultada para 01/11/2026, NO horario confirmado para 04/04/2027: salidas T1 19:11→20:07 (MXP 2971), 19:41→20:37 (MXP 2973, objetivo sujeto a migración), 20:11→21:07 (MXP 2975, respaldo), 20:41→21:37 y 21:11→22:07; todos directos, 56 min y €15. Vuelo cotizado llega 18:20. Billete válido para un viaje durante el día indicado y sin validación adicional si se compra por web/app Trenord. No reservar horario fijo antes de conocer demoras migratorias. VALIDACIÓN: boleto digital web/app Trenord/Malpensa Express, sin convalidación física. Mostrar billete en móvil; si se compra otra modalidad comprobar su regla específica. Si pierde la fecha de validez, comprar nuevo boleto.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1043,7 +1043,7 @@
               "refunds": "Consultar condiciones Flex"
             }
           ],
-          "notes": "IDA Italo 07:30–08:30 (€23,90 Smart Economy); REGRESO preferido Italo 19:25–20:30 (€23,90 Smart según oferta mostrada). Precios y horarios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Total ida/vuelta estimado €47,80 si ambas tarifas se mantienen. Respaldo de regreso B: Regionale Veloce 2041, 19:54–21:49 (€12,90); C: Regionale Veloce 2043, 20:54–22:49 (€12,90). Boletos de alta velocidad no son intercambiables automáticamente entre operadores ni trenes. No comprado.",
+          "notes": "IDA Italo 07:30–08:30 (€23,90 Smart Economy); REGRESO preferido Italo 19:25–20:30 (€23,90 Smart según oferta mostrada). Precios y horarios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Total ida/vuelta estimado €47,80 si ambas tarifas se mantienen. Respaldo de regreso B: Regionale Veloce 2041, 19:54–21:49 (€12,90); C: Regionale Veloce 2043, 20:54–22:49 (€12,90). Boletos de alta velocidad no son intercambiables automáticamente entre operadores ni trenes. No comprado. VALIDACIÓN: billete electrónico Italo con datos/QR y documento; no se estampa en estación. Si se pierde el tren y la tarifa no permite cambiarlo, comprar otro billete antes de subir al B o C (Trenitalia).",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1111,7 +1111,7 @@
               "refunds": "Según condiciones del operador"
             }
           ],
-          "notes": "Alternativa económica del lunes 02/11/2026; 1 h 55 min. Horario y precio no confirmados para 2027.",
+          "notes": "Alternativa económica del lunes 02/11/2026; 1 h 55 min. Horario y precio no confirmados para 2027. VALIDACIÓN: boleto digital Regionale Trenitalia se activa automáticamente a la salida y muestra barra verde; boleto regional de papel se convalida en máquinas de la estación de origen ANTES de subir.",
           "quotedAt": "2026-10-27"
         }
       ],
