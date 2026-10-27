@@ -3438,12 +3438,12 @@
   "italy27-guinigi": {
     "name": "Torre Guinigi · Lucca",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torre%20Guinigi%2001.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Torre_Guinigi_01.jpg",
-      "author": "Lukas Beck",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "attribution": "Lukas Beck"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucca.%20Torre%20Giunigi%20(01675).JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Lucca.%20Torre%20Giunigi%20(01675).JPG",
+      "author": "Francesco Tosoni",
+      "attribution": "Francesco Tosoni",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   "italy27-piazza-castello": {
@@ -3580,12 +3580,12 @@
   "italy27-lucca-walls": {
     "name": "Murallas renacentistas · Lucca",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Viale%20delle%20Mura%20di%20Lucca.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Viale_delle_Mura_di_Lucca.jpg",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista%20delle%20Mura%20dall'esterno%20-%20Lucca.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Vista%20delle%20Mura%20dall'esterno%20-%20Lucca.jpg",
       "author": "Fedispili",
+      "attribution": "Fedispili",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Fedispili"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   "italy27-signoria": {
