@@ -88,7 +88,10 @@
       "spend": null,
       "places": [
         "italy27-egizio",
-        "italy27-torino-san-carlo"
+        "italy27-torino-san-carlo",
+        "italy27-piazza-castello",
+        "italy27-mole",
+        "italy27-madama"
       ],
       "transportRefs": [
         "train-torino"
@@ -100,6 +103,9 @@
         "Museo Egizio",
         "Piazza San Carlo",
         "Piazza Castello"
+      ],
+      "optionalPlaces": [
+        "italy27-mole"
       ]
     },
     {
@@ -140,6 +146,7 @@
       "note": "• *Cenacolo:* El miércoles 7 es respaldo si no se consiguió el martes; no duplicar visitas realizadas.\n• *Brera:* Entrada y horario reservables; comprobar el calendario vigente para abril 2027.\n• *Duomo:* Confirmar acceso a catedral y terrazas; el Museo del Duomo suele cerrar los miércoles.",
       "spend": null,
       "places": [
+        "italy27-brera",
         "milan-duomo",
         "milan-galleria"
       ],
@@ -293,7 +300,8 @@
       "spend": null,
       "places": [
         "italy27-siena-campo",
-        "italy27-siena-duomo"
+        "italy27-siena-duomo",
+        "italy27-piccolomini"
       ],
       "transportRefs": [
         "bus-siena"
@@ -370,7 +378,8 @@
       "places": [
         "italy27-piazzale",
         "italy27-san-miniato",
-        "italy27-bargello"
+        "italy27-bargello",
+        "italy27-santo-spirito"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -1731,6 +1740,12 @@
     "italy27-torino-san-carlo": "La elegante sala de estar de Torino: pórticos barrocos, cafés históricos y la estatua ecuestre de Emanuele Filiberto.",
     "italy27-spezia-prione": "Esta calle peatonal reúne fachadas coloridas, tiendas y cafés: una buena introducción al centro cotidiano de La Spezia.",
     "italy27-byron": "Acércate a los miradores sobre esta cala rocosa, donde el oleaje golpea los acantilados bajo el casco histórico.",
-    "italy27-guinigi": "Una torre medieval coronada por encinas: su silueta singular destaca entre los tejados de Lucca."
+    "italy27-guinigi": "Una torre medieval coronada por encinas: su silueta singular destaca entre los tejados de Lucca.",
+    "italy27-piazza-castello": "Pasea por el centro monumental de Torino, entre palacios de los Saboya y la imponente fachada barroca de Palazzo Madama.",
+    "italy27-mole": "Su aguja domina el perfil de Torino; este edificio emblemático alberga el Museo Nazionale del Cinema.",
+    "italy27-brera": "El patio porticado abre las puertas a una pinacoteca imprescindible para descubrir pintura italiana en pleno barrio artístico de Brera.",
+    "italy27-piccolomini": "Una sala deslumbrante del Duomo, donde los frescos renacentistas y el techo ornamentado convierten la visita en una sorpresa.",
+    "italy27-santo-spirito": "Descubre la Firenze cotidiana en esta plaza de Oltrarno, entre la basílica renacentista, terrazas y edificios de colores cálidos.",
+    "italy27-madama": "Una residencia con pasado medieval y fachada barroca que permite entender cómo Torino se convirtió en capital de los Saboya."
   }
 }
