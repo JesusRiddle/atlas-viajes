@@ -192,19 +192,25 @@
     {
       "n": 8,
       "date": "2027-04-10",
-      "title": "Cinque Terre · pueblos en tren",
+      "title": "Cinque Terre · Riomaggiore, Manarola y Vernazza",
       "base": "La Spezia",
-      "am": "1. Tren a Riomaggiore y Manarola; recorrer miradores y calles principales.",
-      "pm": "1. Continuar a Vernazza y, si apetece, Monterosso. Corniglia queda como alternativa según energía y condiciones.",
-      "night": "1. Regreso a La Spezia.",
-      "mobility": "• *La Spezia → Riomaggiore:* Tren regional, horarios de abril de 2027 pendientes.\n• *Entre pueblos:* Trenes hacia Manarola y Vernazza; Monterosso opcional según energía.\n• *Regreso a La Spezia:* Elegir tren desde el último pueblo realmente visitado, sin depender de senderos abiertos.",
-      "note": "• *Ritmo:* Priorizar tres o cuatro pueblos, no cinco a la carrera.\n• *Billetes:* Comparar trayectos individuales con Cinque Terre Treno Card; verificar tarifas y restricciones vigentes.\n• *Flexibilidad:* Valorar intercambiar con Portovenere si el clima del viernes y sábado lo aconseja.",
+      "am": "1. Desayunar y salir temprano desde La Spezia Centrale en tren regional hacia Riomaggiore, antes de la mayor afluencia del sábado.\n2. Recorrer las callejuelas y el pequeño puerto de Riomaggiore, con tiempo para sus miradores.\n3. Continuar en tren a Manarola y visitar su puerto y mirador panorámico. La Via dell’Amore sería una alternativa de pago con reserva y acceso condicionado; no es necesaria para completar el recorrido.",
+      "pm": "1. Almorzar en Manarola, sin sacrificar tiempo de paseo por esperar en restaurantes muy concurridos.\n2. Tomar el tren a Vernazza y recorrer su plaza, puerto y miradores accesibles; reservar tiempo suficiente para disfrutar el pueblo.\n3. Si todavía hay energía y los trenes funcionan con normalidad, continuar hasta Monterosso para pasear por su litoral. Si no, disfrutar más tiempo de Vernazza y omitir Monterosso.",
+      "night": "1. Volver desde Vernazza o Monterosso a La Spezia Centrale en tren, revisando frecuencia y última salida conveniente; no dejar el regreso para el último servicio.\n2. Cenar en La Spezia, descansar y preparar el equipaje para el traslado del domingo a Firenze, con posible parada en Lucca.",
+      "mobility": "• *Casa Danè → La Spezia Centrale:* Caminar a la estación y consultar paneles y posibles avisos de servicio antes de abordar.\n• *La Spezia → Riomaggiore:* Tren regional hacia Cinque Terre; salida temprana recomendada, sin horario de abril 2027 confirmado.\n• *Entre pueblos:* Riomaggiore → Manarola → Vernazza en tren; Monterosso solo si alcanza el tiempo. Corniglia queda fuera del recorrido principal por su acceso con subida y el ritmo elegido.\n• *Regreso a La Spezia:* Tomar el regional desde el último pueblo visitado; confirmar horario, validez del billete y disponibilidad antes de subir.",
+      "note": "• *Ritmo:* Tres pueblos prioritarios (Riomaggiore, Manarola y Vernazza) y Monterosso opcional; sábado puede haber mucha afluencia.\n• *Billetes:* Comparar el costo de trayectos regionales individuales frente a la Cinque Terre Treno Card según tarifa aplicable al sábado 10 de abril de 2027. No hay precios confirmados.\n• *Via dell’Amore:* No forma parte del plan obligatorio: requiere reserva nominativa y franja horaria, y su acceso puede cambiar por seguridad o derrumbes. Verificar las condiciones oficiales si deseas añadirla.\n• *Senderos:* No depender de rutas peatonales entre pueblos; consultar cierres y estado del terreno. Con lluvia o mar agitado, preferir tren y calles seguras.\n• *Plan B:* Si el clima del sábado es peor que el viernes, valorar intercambiar los programas de Cinque Terre y Portovenere antes de reservar actividades fijas.",
       "spend": null,
       "places": [],
       "transportRefs": [
         "train-cinque-terre"
       ],
-      "hotel": "spezia-dane"
+      "hotel": "spezia-dane",
+      "headerPlaces": [
+        "Riomaggiore · puerto y calles",
+        "Manarola · miradores",
+        "Vernazza · puerto histórico",
+        "Monterosso · opcional"
+      ]
     },
     {
       "n": 9,
@@ -1029,7 +1035,7 @@
               "direction": "return",
               "segments": [
                 {
-                  "from": "Monterosso al Mare",
+                  "from": "Vernazza / Monterosso al Mare (según recorrido)",
                   "to": "La Spezia Centrale",
                   "departure": null,
                   "arrival": null,
@@ -1047,7 +1053,7 @@
               "refunds": null
             }
           ],
-          "notes": "Sábado 10 abril: confirmar frecuencias y posible afluencia de fin de semana; priorizar Riomaggiore, Manarola y Vernazza, Monterosso opcional. Revisar tarjeta de tren.",
+          "notes": "Sábado 10 abril de 2027: excursión ferroviaria desde La Spezia Centrale, siguiendo Riomaggiore → Manarola → Vernazza; Monterosso opcional. Comparar billetes por trayecto con Cinque Terre Treno Card según precio y reglas del día; no asumir horario, frecuencia ni tarifa publicados para 2026. Sin caminatas entre pueblos ni Via dell’Amore obligatorias.",
           "quotedAt": null
         }
       ],
