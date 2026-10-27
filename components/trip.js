@@ -64,6 +64,7 @@ window.AtlasTrip = function (ctx) {
     }
     function practicalAdvice(t) {
         const icons = {
+            style: '<circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>',
             solo: '<circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>',
             pace: '<path d="m3 17 5-5 4 4 5-8 4 3"/><path d="M3 21h18"/>',
             language: '<path d="m5 8 6 6m-7 0 7-7M3 5h11M9 3v2m4 16 5-11 5 11m-8-4h6"/>',
@@ -105,7 +106,7 @@ window.AtlasTrip = function (ctx) {
                 '<div><strong>' + esc(item.title) + '</strong><p>' + badgeMarkup(item) + esc(description(item)) + '</p></div></div>').join('')
             : t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
                 readable(part) + '</div>').join('');
-        return '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
+        return '<section class="overview-practical" aria-label="Estilo de viaje y consejos prácticos">' +
 
             '<div class="overview-practical-grid' + (indicators ? ' practical-indicators' : '') + '">' +
             content + '</div></section>';
@@ -232,7 +233,7 @@ window.AtlasTrip = function (ctx) {
             ? climateCard(t) : '<article class="overview-climate-card"><h3>' +
                 overviewIcon('sun') + ' Clima y luz</h3><div class="fact-copy"><p>' + pending() + '</p></div></article>';
         const overviewAdvice = Array.isArray(t.practicalIndicators) && t.practicalIndicators.length
-            ? practicalAdvice(t) : '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
+            ? practicalAdvice(t) : '<section class="overview-practical" aria-label="Estilo de viaje y consejos prácticos">' +
                 '<div class="overview-practical-grid"><p>' + pending() + '</p></div></section>';
         const overviewBases = hasBases ? overviewStays(t, true) :
             '<div class="overview-stays overview-stays-inline"><div class="overview-stays-heading">' +
