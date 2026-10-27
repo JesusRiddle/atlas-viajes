@@ -250,3 +250,23 @@ test('un viaje borrador presenta días completos con las tarjetas del itinerario
   assert.ok(d.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night,'Día '+n+' no listo');
  }
 });
+
+
+test('día por día enlaza cada noche al alojamiento correcto y muestra check-in solo al llegar', () => {
+ const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+ const stays=trip.hotels;
+ const overnightDays=trip.days.filter(d=>d.hotel);
+ assert.equal(overnightDays.length,12);
+ for(const d of overnightDays){
+  const hotel=stays.find(h=>h.id===d.hotel);
+  assert.ok(hotel, 'Hotel inexistente en día '+d.n);
+  assert.ok(d.date>=hotel.checkIn && d.date<hotel.checkOut, 'Hotel incorrecto día '+d.n);
+ }
+ assert.equal(trip.days[0].hotel,undefined);
+ assert.equal(trip.days[13].hotel,undefined);
+ for(const hotel of stays){
+  const assigned=overnightDays.filter(d=>d.hotel===hotel.id);
+  assert.equal(assigned[0].date,hotel.checkIn);
+  assert.equal(assigned.length,Math.round((Date.parse(hotel.checkOut)-Date.parse(hotel.checkIn))/86400000));
+ }
+});
