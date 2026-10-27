@@ -78,19 +78,26 @@
     {
       "n": 3,
       "date": "2027-04-05",
-      "title": "Torino: Museo Egizio y centro saboyano",
+      "title": "Torino · Museo Egizio y plazas históricas",
       "base": "Milano",
-      "am": "1. Tren temprano Milano → Torino; reservar Museo Egizio cerca de las 09:30, sujeto al horario real del tren.",
-      "pm": "1. Piazza Castello, Palazzo Madama y paseo por Piazza San Carlo. Mole Antonelliana desde exterior si alcanza.",
-      "night": "1. Regreso en tren a Milano; cena y descanso.",
-      "mobility": "Tren Milano Centrale ↔ Torino Porta Nuova / Porta Susa. Comparar servicios disponibles; no hay billetes emitidos.",
-      "note": "El Museo Egizio abre habitualmente los lunes de 09:00 a 14:00 (último acceso una hora antes); las entradas se compran en línea. Confirmar el calendario de abril 2027.",
+      "am": "1. Salir de Milano Centrale en tren temprano hacia Torino Porta Nuova; caminar al Museo Egizio (aprox. 15 minutos desde la estación).\n2. Visitar el Museo Egizio con entrada reservada, preferentemente hacia las 10:00–10:30, dejando margen por el trayecto desde Milano. Dedicar unas 2–3 horas a las colecciones.",
+      "pm": "1. Almorzar en el centro y pasear por Piazza San Carlo.\n2. Continuar por Piazza Castello y alrededores de Palazzo Madama; visita exterior, sin entrada obligatoria.\n3. Si queda tiempo y energía, acercarse a la Mole Antonelliana para verla desde fuera, sin añadir el museo o ascensor como obligación.",
+      "night": "1. Regresar a Torino Porta Nuova y tomar un tren a Milano Centrale con margen para cenar.\n2. Volver a B&B HOTEL Milano Aosta y descansar.",
+      "mobility": "Milano Centrale ↔ Torino Porta Nuova en tren; comparar alta velocidad (~1 h–1 h 15) y regional (~1 h 50–2 h) antes de comprar. Del Porta Nuova al Museo Egizio, unos 15 minutos a pie; centro de Torino a pie. Horarios y billetes de abril 2027 por confirmar.",
+      "note": "El lunes el Museo Egizio abre habitualmente de 09:00 a 14:00 (última entrada 13:00); entradas solo en línea y por horario. Franja sugerida 10:00–10:30, NO reservada: ajustarla al tren elegido, con margen suficiente. Palazzo Madama y Mole Antonelliana se proponen desde el exterior; no asumir apertura de museos un lunes.",
       "spend": null,
       "places": [],
       "transportRefs": [
         "train-torino"
       ],
-      "hotel": "milano-aosta"
+      "hotel": "milano-aosta",
+      "headerPlaces": [
+        "Milano Centrale",
+        "Torino Porta Nuova",
+        "Museo Egizio",
+        "Piazza San Carlo",
+        "Piazza Castello"
+      ]
     },
     {
       "n": 4,
@@ -632,7 +639,7 @@
       [
         {
           "title": "Museo Egizio (Torino)",
-          "description": "Lunes 5 de abril, reservar entrada para las 09:00–09:30 y viajar temprano desde Milano: los lunes el museo abre habitualmente de 09:00 a 14:00, con último acceso una hora antes. La compra de entradas es en línea; verificar disponibilidad y festivos.",
+          "description": "Lunes 5 abril: priorizar entrada al Museo Egizio hacia las 10:00–10:30, una vez revisados los trenes desde Milano. Abre habitualmente 09:00–14:00 (última entrada 13:00); venta solo por internet con franja horaria. Prever 2–3 horas de visita y verificar calendario 2027.",
           "links": [
             {
               "label": "Horarios y compra oficial",
@@ -846,7 +853,7 @@
               "refunds": null
             }
           ],
-          "notes": "5 abril: para el Museo Egizio a primera hora conviene comparar alta velocidad (~1 h–1 h 15) frente a regional (~1 h 55). Referencias consultadas: regional ~€13 por trayecto; alta velocidad variable ~€33–€65. El horario exacto y estación de llegada deben cotizarse para el lunes.",
+          "notes": "Lunes 5 abril: comparar alta velocidad (~1 h–1 h 15) frente a regional (~1 h 50–2 h); si la entrada del Museo Egizio es a las 10:00–10:30, llegar a Torino Porta Nuova con margen para caminar ~15 minutos. Horarios, tarifa y billetes de 2027 pendientes. No inventar salidas.",
           "quotedAt": null
         }
       ],
