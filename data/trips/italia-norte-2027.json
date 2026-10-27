@@ -1213,8 +1213,9 @@
               "refunds": "No reembolsable"
             }
           ],
-          "notes": "Alternativa del lunes 02/11/2026; 1 h 02 min. Horario y precio no confirmados para 2027. PRECIO DE IDA SOLAMENTE: seleccionar esta opción en presupuesto subestimaría el regreso si no se presupuesta por separado; usar A como referencia financiera mientras se validan tarifas completas.",
-          "quotedAt": "2026-10-27"
+          "notes": "Alternativa del lunes 02/11/2026; 1 h 02 min. Horario y precio no confirmados para 2027. PRECIO DE IDA SOLAMENTE: seleccionar esta opción en presupuesto subestimaría el regreso si no se presupuesta por separado; usar A como referencia financiera mientras se validan tarifas completas. Su tarifa de referencia solo cubre la ida, no es una opción completa de ida y vuelta; elegir A para presupuesto redondo.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": null
         },
         {
           "id": "C",
@@ -1247,8 +1248,9 @@
               "refunds": "Según condiciones del operador"
             }
           ],
-          "notes": "Alternativa económica del lunes 02/11/2026; 1 h 55 min. Horario y precio no confirmados para 2027. VALIDACIÓN: boleto digital Regionale Trenitalia se activa automáticamente a la salida y muestra barra verde; boleto regional de papel se convalida en máquinas de la estación de origen ANTES de subir. PRECIO DE IDA SOLAMENTE: seleccionar esta opción en presupuesto subestimaría el regreso si no se presupuesta por separado; usar A como referencia financiera mientras se validan tarifas completas.",
-          "quotedAt": "2026-10-27"
+          "notes": "Alternativa económica del lunes 02/11/2026; 1 h 55 min. Horario y precio no confirmados para 2027. VALIDACIÓN: boleto digital Regionale Trenitalia se activa automáticamente a la salida y muestra barra verde; boleto regional de papel se convalida en máquinas de la estación de origen ANTES de subir. PRECIO DE IDA SOLAMENTE: seleccionar esta opción en presupuesto subestimaría el regreso si no se presupuesta por separado; usar A como referencia financiera mientras se validan tarifas completas. Su tarifa de referencia solo cubre la ida, no es una opción completa de ida y vuelta; elegir A para presupuesto redondo.",
+          "quotedAt": "2026-10-27",
+          "priceMultiplier": null
         }
       ],
       "links": [
@@ -2877,5 +2879,10 @@
     "italy27-siena-via-citta": "Una calle medieval entre palacios de piedra, escaparates y callejones que conserva el ambiente del centro histórico de Siena.",
     "italy27-san-pietro-portovenere": "La pequeña iglesia de piedra se asoma directamente al mar de Liguria, con una terraza que permite contemplar el litoral y las olas.",
     "italy27-firenze-cathedral": "Su impresionante fachada de mármol esculpido combina blancos, verdes y rosados; contempla sus detalles antes de subir a la cúpula."
-  }
+  },
+  "exchangeRates": {
+    "EUR": 20.81
+  },
+  "exchangeRatesAsOf": "2026-10-27",
+  "exchangeRatesSource": "EUR/MXN 20.81 valor indicativo 27/10/2026 https://cincodias.elpais.com/mercados/divisas/euro-peso-mexicano/ ; USD/MXN estimación provisional a revisar antes de usar."
 }
