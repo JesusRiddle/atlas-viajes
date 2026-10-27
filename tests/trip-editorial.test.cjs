@@ -219,3 +219,16 @@ test('Italia 2027: fechas de hotel y traslados concuerdan con el día a día', (
   assert.equal(trip.majorTransport.find(t=>t.id===id).day,Number(day));
  }
 });
+
+
+test('reglas editoriales: fines de semana flexibles y redistribución de días', () => {
+ const guide=fs.readFileSync('docs/trip-editorial-guide.md','utf8');
+ const agents=fs.readFileSync('AGENTS.md','utf8');
+ assert.match(guide,/Aprovechar fines de semana cuando convenga/);
+ assert.match(guide,/preferencia flexible, nunca regla estricta/);
+ assert.match(guide,/Nunca agregar automáticamente días al final/);
+ assert.match(guide,/reoptimizar fechas dependientes/i);
+ assert.match(guide,/costo total aproximado/);
+ assert.match(guide,/cinco indicadores/);
+ assert.match(agents,/no anexarlos por defecto al final/);
+});
