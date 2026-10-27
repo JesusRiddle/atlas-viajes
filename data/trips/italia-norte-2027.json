@@ -215,20 +215,28 @@
     {
       "n": 9,
       "date": "2027-04-11",
-      "title": "La Spezia → Lucca → Firenze",
+      "title": "La Spezia → Lucca → Firenze · murallas y centro histórico",
       "base": "Firenze",
-      "am": "1. Check-out, tren vía Pisa hacia Lucca; usar consigna confirmada si está abierta el domingo.",
-      "pm": "1. Pasear por las murallas, Piazza dell’Anfiteatro y casco histórico. Recuperar equipaje y continuar en tren hacia Firenze.",
-      "night": "1. Check-in en Firenze y cena cerca del alojamiento.",
-      "mobility": "• *La Spezia → Lucca:* Tren regional vía Pisa según combinación disponible.\n• *Consigna en Lucca:* Visitar solo si se confirma servicio abierto el domingo 11 y margen para recoger equipaje.\n• *Lucca → Firenze:* Continuar en tren a Firenze SMN y caminar al hotel; si no hay consigna, ir directamente a Firenze.",
-      "note": "• *Condición:* La escala de Lucca depende de una consigna confirmada que opere en domingo.\n• *Alternativa:* No reservar billetes inflexibles hasta resolver la consigna y horarios de conexión.",
+      "am": "1. Desayunar, realizar check-out de Casa Danè y tomar un tren desde La Spezia Centrale hacia Lucca, comparando la combinación por Viareggio con otras conexiones disponibles.\n2. Al llegar a Lucca, dejar el equipaje en una consigna confirmada para el domingo. Como referencia, Left Luggage Tuscany anuncia servicio todos los días de 09:00 a 18:00; verificar directamente su operación el 11 de abril de 2027.\n3. Entrar al casco antiguo por Porta San Pietro y recorrer un tramo de las murallas renacentistas.",
+      "pm": "1. Pasear hacia Piazza dell’Anfiteatro, recorrer Via Fillungo y almorzar en el centro histórico.\n2. Ver la Torre Guinigi; subir solamente si quedan tiempo y ganas, comprobando reserva y horarios de domingo. Son aproximadamente 230 escalones.\n3. Recoger el equipaje antes del cierre confirmado de la consigna y dirigirse a Lucca FS para tomar el tren a Firenze Santa Maria Novella.",
+      "night": "1. Llegar a Firenze SMN, caminar hasta Hotel Mia Cara & SPA (alojamiento candidato) y realizar check-in conforme a sus condiciones.\n2. Cenar cerca de la estación o del hotel y descansar; el lunes está reservado para la excursión a Siena.",
+      "mobility": "• *La Spezia → Lucca:* Consultar tren regional con posible cambio en Viareggio; comparar tiempo total y correspondencias reales para el domingo 11.\n• *Estación → consigna:* Left Luggage Tuscany anuncia depósito en Lucca de lunes a domingo de 09:00 a 18:00; confirmar ubicación exacta, capacidad y horario antes de decidir la escala.\n• *Lucca a pie:* Desde la estación entrar por Porta San Pietro, recorrer murallas, Piazza dell’Anfiteatro y Via Fillungo; Torre Guinigi opcional.\n• *Lucca → Firenze SMN:* Tren regional según itinerario del día; prever margen después de recuperar el equipaje.\n• *Firenze SMN → hotel:* Ir a pie al Hotel Mia Cara & SPA, previa confirmación de su dirección y horario de recepción.",
+      "note": "• *Consigna dominical:* La web de Left Luggage Tuscany publica apertura en Lucca de 09:00 a 18:00 todos los días; esto no confirma disponibilidad específica para el 11 de abril de 2027. Comprobarla antes de reservar los trenes.\n• *Plan B:* Si no hay consigna operativa o la conexión consume demasiado tiempo, viajar directamente de La Spezia a Firenze y disfrutar allí de una tarde sin equipaje.\n• *Torre Guinigi:* Subida opcional de unos 230 escalones; los fines de semana se recomienda asegurar entrada con anticipación y consultar horarios de abril.\n• *Ritmo:* Priorizar paseo por las murallas y centro histórico, sin añadir Pisa turística el mismo día.\n• *Billetes:* Dos tramos ferroviarios por confirmar, sin precio ni horario de 2027 comprado; dejar margen para recoger equipaje y llegar a Firenze de día.",
       "spend": null,
       "places": [],
       "transportRefs": [
         "train-la-spezia-lucca",
         "train-lucca-firenze"
       ],
-      "hotel": "firenze-miacara"
+      "hotel": "firenze-miacara",
+      "headerPlaces": [
+        "Lucca · murallas renacentistas",
+        "Porta San Pietro",
+        "Piazza dell’Anfiteatro",
+        "Via Fillungo",
+        "Torre Guinigi · opcional",
+        "Firenze SMN · llegada"
+      ]
     },
     {
       "n": 10,
@@ -1110,7 +1118,7 @@
               "refunds": null
             }
           ],
-          "notes": "Domingo 11 abril: tránsito vía Pisa, Lucca solo si se confirma consigna ABIERTA EN DOMINGO; si no, seguir directo a Firenze.",
+          "notes": "Domingo 11 abril de 2027: tramo condicionado a horario ferroviario real y a confirmación de consigna en Lucca. El operador Left Luggage Tuscany anuncia atención dominical 09:00–18:00, por reconfirmar para la fecha. Si no hay consigna, viajar directamente a Firenze. No hay horarios ni precios de tren comprados.",
           "quotedAt": null
         }
       ],
@@ -1156,7 +1164,7 @@
               "refunds": null
             }
           ],
-          "notes": "Domingo 11 abril: tren a Firenze después de visita a Lucca. Si la consigna no opera, sustituir por llegada directa Firenze.",
+          "notes": "Domingo 11 abril de 2027: tramo condicionado a horario ferroviario real y a confirmación de consigna en Lucca. El operador Left Luggage Tuscany anuncia atención dominical 09:00–18:00, por reconfirmar para la fecha. Si no hay consigna, viajar directamente a Firenze. No hay horarios ni precios de tren comprados.",
           "quotedAt": null
         }
       ],
