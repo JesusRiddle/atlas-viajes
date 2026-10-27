@@ -94,7 +94,7 @@
       "am": "1. Salir del hotel hacia Milano Centrale para tomar el Italo directo de referencia de las 07:30 (llegada Torino Porta Nuova 08:30); horario tomado del lunes 02/11/2026 y pendiente de confirmación para el 05/04/2027.\n2. Caminar unos 15 minutos hasta el Museo Egizio; margen amplio para desayunar y la entrada objetivo de las 10:00 (alternativa 10:30), aún sin reservar. Destinar 2–3 horas; los lunes cierra habitualmente a las 14:00.",
       "pm": "1. Almorzar cerca de Piazza San Carlo y recorrer sus pórticos.\n2. Pasear hacia Piazza Castello y Palazzo Madama (exterior).\n3. Mole Antonelliana solo si queda margen; no añadir otro museo obligatorio.",
       "night": "1. Tras las visitas, regresar a Torino Porta Nuova con margen para tomar el Italo directo de referencia de las 19:25 (llegada a Milano Centrale 20:30; desde €23,90).\n2. Respaldo B: Regionale Veloce 2041 de las 19:54 (llegada 21:49, desde €12,90). Respaldo C: Regionale Veloce 2043 de las 20:54 (llegada 22:49, desde €12,90). Consultas del lunes 02/11/2026: confirmar horarios y tarifas para abril de 2027, y comprar un boleto válido para el servicio que se utilice.\n3. Caminar al alojamiento candidato B&B HOTEL Milano Aosta, frente a Milano Centrale.",
-      "mobility": "• *Ida Milano Centrale → Torino Porta Nuova:* preferencia Italo directo 07:30–08:30, Smart Economy €23,90 (≈$496 MXN, cambio de referencia 27/10/2026). Comparación: Frecciarossa 07:53–08:55 (€27,90) o Regionale 07:15–09:10 (€12,90). Todos los horarios proceden del lunes 02/11/2026, no están confirmados para abril de 2027.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; acceso objetivo 10:00, sin reservar.\n• *Regreso Torino Porta Nuova → Milano Centrale:* A) Italo 19:25–20:30, desde €23,90 (≈$496 MXN); B) Regionale 2041 19:54–21:49, desde €12,90 (≈$268 MXN); C) Regionale 2043 20:54–22:49, desde €12,90 (≈$268 MXN). Referencias de 02/11/2026, no confirmadas para 05/04/2027. Los billetes no son necesariamente intercambiables.",
+      "mobility": "• *Ida Milano Centrale → Torino Porta Nuova:* preferencia Italo directo 07:30–08:30, Smart Economy €23,90 (≈$496 MXN, cambio de referencia 27/10/2026). Comparación: Frecciarossa 07:53–08:55 (€27,90) o Regionale 07:15–09:10 (€12,90). Todos los horarios proceden del lunes 02/11/2026, no están confirmados para abril de 2027.\n• *Porta Nuova → Museo Egizio:* Caminar unos 15 minutos; acceso objetivo 10:00, sin reservar.\n• *Regreso Torino Porta Nuova → Milano Centrale:* A) Italo 19:25–20:30, desde €23,90 (≈$496 MXN); B) Regionale 2041 19:54–21:49, desde €12,90 (≈$268 MXN); C) Regionale 2043 20:54–22:49, desde €12,90 (≈$268 MXN). Referencias de 02/11/2026, no confirmadas para 05/04/2027. Los billetes no son necesariamente intercambiables.\n• *Selección independiente:* en «Traslados principales», elegir una opción A/B/C para la ida y otra A/B/C para el regreso. El presupuesto suma ambos billetes sin multiplicadores. Ejemplo recomendado A+A = €47,80; B de ida + B de regreso = €40,80; C+C = €25,80 (tarifas y horarios de referencia de noviembre 2026). El regional de ida C sale antes de la opción A, no sirve como respaldo posterior.",
       "note": "• *Museo Egizio:* Lunes, horario habitual 09:00–14:00 y último ingreso 13:00; verificar calendario 2027.\n• *Reserva:* Franja objetivo 10:00–10:30, todavía sin comprar; elegir el tren primero para evitar una conexión justa.\n• *Visitas opcionales:* Palazzo Madama y Mole Antonelliana solo desde el exterior; no asumir apertura de museos un lunes.\n• *Billetes y convalidación:* Italo electrónico: presentar QR/código y documento, sin sellarlo. Trenitalia regional digital: validación automática y barra verde. Regional físico: sellar en máquinas convalidadoras de la estación antes de abordar. Respaldo B/C puede requerir comprar otro billete; comprobar cambios permitidos antes de subir.",
       "spend": null,
       "places": [
@@ -105,7 +105,8 @@
         "italy27-madama"
       ],
       "transportRefs": [
-        "train-torino"
+        "train-torino",
+        "train-torino-return"
       ],
       "hotel": "milano-aosta",
       "headerPlaces": [
@@ -1129,15 +1130,15 @@
     {
       "id": "train-torino",
       "type": "train",
-      "title": "Milano ↔ Torino · excursión",
+      "title": "Milano Centrale → Torino Porta Nuova · ida",
       "day": 3,
       "selectedOption": "A",
       "options": [
         {
           "id": "A",
-          "provider": "Italo · alta velocidad",
+          "provider": "Italo · Smart Economy",
           "status": "quoted",
-          "selectedFare": "economy",
+          "selectedFare": "reference",
           "journeys": [
             {
               "direction": "outbound",
@@ -1147,56 +1148,32 @@
                   "to": "Torino Porta Nuova",
                   "departure": "2027-04-05T07:30:00+02:00",
                   "arrival": "2027-04-05T08:30:00+02:00",
-                  "operator": "Italo",
-                  "service": "Horario comparativo del lunes 02/11/2026; NO confirmado para abril 2027"
-                }
-              ]
-            },
-            {
-              "direction": "return",
-              "segments": [
-                {
-                  "from": "Torino Porta Nuova",
-                  "to": "Milano Centrale",
-                  "departure": "2027-04-05T19:25:00+02:00",
-                  "arrival": "2027-04-05T20:30:00+02:00",
-                  "operator": "Italo",
-                  "service": "Horario de referencia lunes 02/11/2026; no confirmado para abril 2027"
+                  "operator": "Italo · Smart Economy",
+                  "service": "Referencia 02/11/2026 · Italo"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "economy",
+              "id": "reference",
               "name": "Smart Economy · referencia 02/11/2026",
               "price": {
                 "amount": 23.9,
                 "currency": "EUR"
               },
-              "changes": "Condiciones específicas por comprobar en la oferta Economy de Italo",
-              "refunds": "Condiciones específicas por comprobar en la oferta Economy de Italo"
-            },
-            {
-              "id": "flex",
-              "name": "Smart Flex · referencia 02/11/2026",
-              "price": {
-                "amount": 29.9,
-                "currency": "EUR"
-              },
-              "changes": "Consultar condiciones Flex",
-              "refunds": "Consultar condiciones Flex"
+              "changes": "Consultar condiciones del billete seleccionado",
+              "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "IDA Italo 07:30–08:30 (€23,90 Smart Economy); REGRESO preferido Italo 19:25–20:30 (€23,90 Smart según oferta mostrada). Precios y horarios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Total ida/vuelta estimado €47,80 si ambas tarifas se mantienen. Respaldo de regreso B: Regionale Veloce 2041, 19:54–21:49 (€12,90); C: Regionale Veloce 2043, 20:54–22:49 (€12,90). Boletos de alta velocidad no son intercambiables automáticamente entre operadores ni trenes. No comprado. VALIDACIÓN: billete electrónico Italo con datos/QR y documento; no se estampa en estación. Si se pierde el tren y la tarifa no permite cambiarlo, comprar otro billete antes de subir al B o C (Trenitalia). El total presupuestado es €47.80 por ambos sentidos; el precio de la oferta indicado es por trayecto.",
-          "quotedAt": "2026-10-27",
-          "priceMultiplier": 2
+          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Ida independiente; el precio indicado corresponde solo a la ida. Billete de tren reservado: respetar servicio y condiciones de modificación; electrónico no exige estampado físico.",
+          "quotedAt": "2026-10-27"
         },
         {
           "id": "B",
           "provider": "Trenitalia · Frecciarossa 9600",
           "status": "quoted",
-          "selectedFare": "economy",
+          "selectedFare": "reference",
           "journeys": [
             {
               "direction": "outbound",
@@ -1206,32 +1183,32 @@
                   "to": "Torino Porta Nuova",
                   "departure": "2027-04-05T07:53:00+02:00",
                   "arrival": "2027-04-05T08:55:00+02:00",
-                  "operator": "Trenitalia · Frecciarossa 9600"
+                  "operator": "Trenitalia · Frecciarossa 9600",
+                  "service": "Referencia 02/11/2026 · Frecciarossa 9600"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "economy",
-              "name": "Standard Economy · referencia 02/11/2026",
+              "id": "reference",
+              "name": "Tarifa desde · referencia 02/11/2026",
               "price": {
                 "amount": 27.9,
                 "currency": "EUR"
               },
-              "changes": "Modificable antes de salida con suplemento, según disponibilidad",
-              "refunds": "No reembolsable"
+              "changes": "Consultar condiciones del billete seleccionado",
+              "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "Alternativa del lunes 02/11/2026; 1 h 02 min. Horario y precio no confirmados para 2027. PRECIO DE IDA SOLAMENTE: seleccionar esta opción en presupuesto subestimaría el regreso si no se presupuesta por separado; usar A como referencia financiera mientras se validan tarifas completas. Su tarifa de referencia solo cubre la ida, no es una opción completa de ida y vuelta; elegir A para presupuesto redondo.",
-          "quotedAt": "2026-10-27",
-          "priceMultiplier": null
+          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Ida independiente; el precio indicado corresponde solo a la ida. Billete de tren reservado: respetar servicio y condiciones de modificación; electrónico no exige estampado físico.",
+          "quotedAt": "2026-10-27"
         },
         {
           "id": "C",
           "provider": "Trenitalia · Regionale Veloce 2014",
           "status": "quoted",
-          "selectedFare": "ordinary",
+          "selectedFare": "reference",
           "journeys": [
             {
               "direction": "outbound",
@@ -1241,26 +1218,26 @@
                   "to": "Torino Porta Nuova",
                   "departure": "2027-04-05T07:15:00+02:00",
                   "arrival": "2027-04-05T09:10:00+02:00",
-                  "operator": "Trenitalia · Regionale Veloce 2014"
+                  "operator": "Trenitalia · Regionale Veloce 2014",
+                  "service": "Referencia 02/11/2026 · Regionale Veloce 2014"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "ordinary",
-              "name": "2ª classe Ordinaria · referencia 02/11/2026",
+              "id": "reference",
+              "name": "Tarifa desde · referencia 02/11/2026",
               "price": {
                 "amount": 12.9,
                 "currency": "EUR"
               },
-              "changes": "Cambio de fecha/hora hasta el día anterior; cambios de hora permitidos el mismo día antes de la validación automática, según condiciones mostradas",
-              "refunds": "Según condiciones del operador"
+              "changes": "Consultar condiciones del billete seleccionado",
+              "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "Alternativa económica del lunes 02/11/2026; 1 h 55 min. Horario y precio no confirmados para 2027. VALIDACIÓN: boleto digital Regionale Trenitalia se activa automáticamente a la salida y muestra barra verde; boleto regional de papel se convalida en máquinas de la estación de origen ANTES de subir. PRECIO DE IDA SOLAMENTE: seleccionar esta opción en presupuesto subestimaría el regreso si no se presupuesta por separado; usar A como referencia financiera mientras se validan tarifas completas. Su tarifa de referencia solo cubre la ida, no es una opción completa de ida y vuelta; elegir A para presupuesto redondo.",
-          "quotedAt": "2026-10-27",
-          "priceMultiplier": null
+          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. La opción C sale antes de A: alternativa económica previa, NO respaldo si se pierde A. Ida independiente; el precio indicado corresponde solo a la ida. Billete regional digital: activación automática según reglas de Trenitalia; papel: convalidar antes de abordar.",
+          "quotedAt": "2026-10-27"
         }
       ],
       "links": [
@@ -1273,51 +1250,139 @@
           "url": "https://www.italotreno.com/"
         }
       ],
-      "returnAlternatives": [
+      "boardingLocations": [
+        {
+          "name": "Milano Centrale station",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        },
+        {
+          "name": "Torino Porta Nuova railway station",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Torino%20Porta%20Nuova%20railway%20station"
+        }
+      ],
+      "boardingNote": "Consultar estación y número de andén en paneles. No hay intercambio automático entre Italo y Trenitalia. Opciones A/B/C se seleccionan independientemente para cada sentido."
+    },
+    {
+      "id": "train-torino-return",
+      "type": "train",
+      "title": "Torino Porta Nuova → Milano Centrale · regreso",
+      "day": 3,
+      "selectedOption": "A",
+      "options": [
         {
           "id": "A",
-          "operator": "Italo",
-          "from": "Torino Porta Nuova",
-          "to": "Milano Centrale",
-          "departure": "19:25",
-          "arrival": "20:30",
-          "durationMinutes": 65,
-          "price": {
-            "amount": 23.9,
-            "currency": "EUR"
-          },
-          "fare": "Smart · desde €23,90",
-          "direct": true
+          "provider": "Italo · Smart",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Torino Porta Nuova",
+                  "to": "Milano Centrale",
+                  "departure": "2027-04-05T19:25:00+02:00",
+                  "arrival": "2027-04-05T20:30:00+02:00",
+                  "operator": "Italo · Smart",
+                  "service": "Referencia 02/11/2026 · Italo"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa desde · referencia 02/11/2026",
+              "price": {
+                "amount": 23.9,
+                "currency": "EUR"
+              },
+              "changes": "Consultar condiciones del billete seleccionado",
+              "refunds": "Consultar reglas del operador"
+            }
+          ],
+          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Regreso independiente; el precio indicado corresponde solo a la vuelta. Billete de tren reservado: respetar servicio y condiciones de modificación; electrónico no exige estampado físico.",
+          "quotedAt": "2026-10-27"
         },
         {
           "id": "B",
-          "operator": "Trenitalia · Regionale Veloce 2041",
-          "from": "Torino Porta Nuova",
-          "to": "Milano Centrale",
-          "departure": "19:54",
-          "arrival": "21:49",
-          "durationMinutes": 115,
-          "price": {
-            "amount": 12.9,
-            "currency": "EUR"
-          },
-          "fare": "2.ª clase · desde €12,90",
-          "direct": true
+          "provider": "Trenitalia · Regionale Veloce 2041",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Torino Porta Nuova",
+                  "to": "Milano Centrale",
+                  "departure": "2027-04-05T19:54:00+02:00",
+                  "arrival": "2027-04-05T21:49:00+02:00",
+                  "operator": "Trenitalia · Regionale Veloce 2041",
+                  "service": "Referencia 02/11/2026 · Regionale Veloce 2041"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa desde · referencia 02/11/2026",
+              "price": {
+                "amount": 12.9,
+                "currency": "EUR"
+              },
+              "changes": "Consultar condiciones del billete seleccionado",
+              "refunds": "Consultar reglas del operador"
+            }
+          ],
+          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Regreso independiente; el precio indicado corresponde solo a la vuelta. Billete regional digital: activación automática según reglas de Trenitalia; papel: convalidar antes de abordar.",
+          "quotedAt": "2026-10-27"
         },
         {
           "id": "C",
-          "operator": "Trenitalia · Regionale Veloce 2043",
-          "from": "Torino Porta Nuova",
-          "to": "Milano Centrale",
-          "departure": "20:54",
-          "arrival": "22:49",
-          "durationMinutes": 115,
-          "price": {
-            "amount": 12.9,
-            "currency": "EUR"
-          },
-          "fare": "2.ª clase · desde €12,90",
-          "direct": true
+          "provider": "Trenitalia · Regionale Veloce 2043",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Torino Porta Nuova",
+                  "to": "Milano Centrale",
+                  "departure": "2027-04-05T20:54:00+02:00",
+                  "arrival": "2027-04-05T22:49:00+02:00",
+                  "operator": "Trenitalia · Regionale Veloce 2043",
+                  "service": "Referencia 02/11/2026 · Regionale Veloce 2043"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa desde · referencia 02/11/2026",
+              "price": {
+                "amount": 12.9,
+                "currency": "EUR"
+              },
+              "changes": "Consultar condiciones del billete seleccionado",
+              "refunds": "Consultar reglas del operador"
+            }
+          ],
+          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 05/04/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Regreso independiente; el precio indicado corresponde solo a la vuelta. Billete regional digital: activación automática según reglas de Trenitalia; papel: convalidar antes de abordar.",
+          "quotedAt": "2026-10-27"
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Consultar alternativa",
+          "url": "https://www.italotreno.com/"
         }
       ],
       "boardingLocations": [
@@ -1330,7 +1395,7 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Torino%20Porta%20Nuova%20railway%20station"
         }
       ],
-      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje."
+      "boardingNote": "Consultar estación y número de andén en paneles. No hay intercambio automático entre Italo y Trenitalia. Opciones A/B/C se seleccionan independientemente para cada sentido."
     },
     {
       "id": "train-milano-la-spezia",
