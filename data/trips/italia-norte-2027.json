@@ -1864,7 +1864,7 @@
     {
       "id": "ct-spezia-riomaggiore",
       "type": "train",
-      "title": "La Spezia Centrale → Riomaggiore",
+      "title": "La Spezia Centrale → Riomaggiore · tarifa comparativa",
       "day": 8,
       "selectedOption": "A",
       "options": [
@@ -2005,7 +2005,7 @@
     {
       "id": "ct-riomaggiore-manarola",
       "type": "train",
-      "title": "Riomaggiore → Manarola",
+      "title": "Riomaggiore → Manarola · tarifa comparativa",
       "day": 8,
       "selectedOption": "A",
       "options": [
@@ -2142,7 +2142,7 @@
     {
       "id": "ct-manarola-vernazza",
       "type": "train",
-      "title": "Manarola → Vernazza",
+      "title": "Manarola → Vernazza · tarifa comparativa",
       "day": 8,
       "selectedOption": "A",
       "options": [
@@ -2279,7 +2279,7 @@
     {
       "id": "ct-vernazza-spezia",
       "type": "train",
-      "title": "Vernazza → La Spezia Centrale",
+      "title": "Vernazza → La Spezia Centrale · tarifa comparativa",
       "day": 8,
       "selectedOption": "A",
       "options": [
@@ -2420,7 +2420,7 @@
     {
       "id": "ct-vernazza-monterosso",
       "type": "train",
-      "title": "Vernazza → Monterosso · opcional",
+      "title": "Vernazza → Monterosso · opcional · tarifa comparativa",
       "day": 8,
       "selectedOption": "A",
       "options": [
@@ -2557,7 +2557,7 @@
     {
       "id": "ct-monterosso-spezia",
       "type": "train",
-      "title": "Monterosso → La Spezia Centrale · opcional",
+      "title": "Monterosso → La Spezia Centrale · opcional · tarifa comparativa",
       "day": 8,
       "selectedOption": "A",
       "options": [
