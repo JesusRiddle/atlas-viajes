@@ -11,6 +11,9 @@ Antes de crear, modificar o auditar un viaje:
 
 Si un requisito del usuario contradice una regla editorial, discutir o documentar la excepción antes de introducirla; prevalecen los datos confirmados del usuario sobre ejemplos de plantillas.
 
+## Referencias obligatorias para cada viaje nuevo
+Antes de redactar o modificar un viaje nuevo, abrir y comparar **ambos ejemplos completos**, `data/trips/emilia-romana.json` y `data/trips/italia-norte-2027.json`, junto con sus nueve secciones renderizadas. Emilia-Romagna define el diseño maestro; Italia Norte 2027 muestra su aplicación a otro itinerario y las decisiones editoriales más recientes. Reutilizar estructura, convenciones y componentes, **nunca** copiar automáticamente destinos, precios, reservas o fechas. Aplicar el checklist comparativo de `docs/trip-production-checklist.md`; no reintroducir bloques heredados ni omitir enlaces oficiales, Google Maps, indicadores, tipos de cambio o controles existentes.
+
 ## Orden de trabajo obligatorio
 Seguir **Fase 0 → Fase 1 → Fase 2 (secciones 5–13) → Fase 3** de `docs/trip-editorial-guide.md`. Antes de redactar cada sección comprobar sus dependencias y el diseño maestro de Emilia-Romagna; al terminar, ejecutar las validaciones pertinentes y corregir errores antes de avanzar. No completar primero los textos y después inventar logística para justificarlos. Respetar la concisión solicitada: información concreta, no paja.
 
