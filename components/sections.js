@@ -6,6 +6,7 @@ window.AtlasSections = function (ctx) {
         const f = t.family;
         return f ? `<p class="family-label">${esc(f.label)}<span>${esc(f.note)}</span></p>` : '';
     }
+    const legacyExperienceTripIds = new Set(['espana-portugal', 'espana', 'munich', 'munich-viena', 'portugal', 'suiza', 'suiza-italia', 'grecia', 'sicilia', 'washington', 'turquia', 'nueva-orleans', 'vegas', 'marruecos', 'san-antonio', 'puglia-matera']);
     function experiencePanel(t) {
         const experiences = (t.experiences || []).map((item, index) => {
             const isObject = item && typeof item === 'object';
@@ -24,7 +25,7 @@ window.AtlasSections = function (ctx) {
             <div class="experience-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3ZM19 17l.7 2.3L22 20l-2.3.7L19 23l-.7-2.3L16 20l2.3-.7L19 17Z"/></svg><span>Lo que hace especial este viaje</span></div>
             <h3>Experiencias para recordar.</h3>
             <p class="experience-intro">${t.id === "emilia-romana" ? "Arte extraordinario, ciudades históricas y experiencias que dan identidad al recorrido." : "Descubre las experiencias que darán identidad a este viaje."}</p>
-            <ul class="experience-list${t.id === 'emilia-romana' ? ' experience-column-order' : ''}" style="${t.id === 'emilia-romana' ? '--experience-rows:' + Math.ceil((t.experiences || []).length / 2) : ''}">${experiences || '<li class="experience-card"><p class="draft-pending">Por definir</p></li>'}</ul>
+            <ul class="experience-list${!legacyExperienceTripIds.has(t.id) ? ' experience-column-order' : ''}" style="${!legacyExperienceTripIds.has(t.id) ? '--experience-rows:' + Math.ceil((t.experiences || []).length / 2) : ''}">${experiences || '<li class="experience-card"><p class="draft-pending">Por definir</p></li>'}</ul>
             ${note}
         </article>`;
     }
