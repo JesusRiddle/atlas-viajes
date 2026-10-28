@@ -56,7 +56,7 @@ window.AtlasSections = function (ctx) {
         }).join('');
         return `<article class="panel reservation-panel" id="reservas">
             <div class="reservation-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-13 5 3 3 5-5"/></svg><span>Antes de viajar</span></div>
-            <h3>${esc(p.reservationTitle || 'Reservas críticas')}</h3>
+            <h3>${esc(p.reservationTitle || 'Reservaciones importantes')}</h3>
             ${p.reservationNote ? `<p class="reservation-intro">${esc(p.reservationNote)}</p>` : ''}
             <div class="reservation-groups">${groups || '<p class="draft-pending">Por definir</p>'}</div>
         </article>`;
