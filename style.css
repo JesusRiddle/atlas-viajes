@@ -2136,7 +2136,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 }
 
 /* Temporadas: misma sombra sutil al hover que las tarjetas de alojamiento. */
-@media(prefers-reduced-motion:no-preference){
+@media(hover:hover) and (pointer:fine){
   #temporadas .season-month{
     transition:box-shadow .2s ease,border-color .2s ease;
   }
@@ -2152,7 +2152,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 }
 
 /* Mapa del viaje: misma sombra discreta de Temporadas en sección y ciudades. */
-@media(prefers-reduced-motion:no-preference){
+@media(hover:hover) and (pointer:fine){
   .trip-map-section{
     transition:box-shadow .2s ease,border-color .2s ease;
   }
