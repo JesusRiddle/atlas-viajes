@@ -1,7 +1,11 @@
 # Guía editorial maestra de viajes · Atlas
 
 ## Aplicación
-Esta guía regula la **redacción y curación** de viajes nuevos y sus revisiones. Complementa `docs/trip-data-contract.md` (tipos y semántica), `data/trips/_template.json` (campos) y `docs/emilia-romagna-master-standard.md` (presentación). Si hay conflicto técnico, prevalece el contrato de datos. No copiar contenido, costos, imágenes ni reservas desde el viaje maestro.
+Esta guía regula la **redacción y curación** de viajes nuevos y sus revisiones.
+
+**Regla de presentación:** todo viaje nuevo que se esté reconstruyendo desde la plantilla debe utilizar la composición maestra de nueve secciones de `docs/emilia-romagna-master-standard.md`, incluido el panorama editorial (indicadores, distribución de alojamientos, presupuesto y clima), orden de experiencias y navegación. Nunca condicionar ese formato exclusivamente al ID `emilia-romana`. Los viajes antiguos mantienen temporalmente la variante heredada hasta su reconstrucción individual. Ante un cambio del renderizador, comparar las nueve secciones en ambos formatos y no sustituir contenido actualizado por bloques heredados.
+
+ Complementa `docs/trip-data-contract.md` (tipos y semántica), `data/trips/_template.json` (campos) y `docs/emilia-romagna-master-standard.md` (presentación). Si hay conflicto técnico, prevalece el contrato de datos. No copiar contenido, costos, imágenes ni reservas desde el viaje maestro.
 
 **Separación de responsabilidades:** JSON = información turística y estados verificables; guía = instrucciones para autores y agentes; código = representación. No agregar `instructions` o `aiNotes` al JSON de cada viaje ni renderizar normas editoriales al usuario.
 
