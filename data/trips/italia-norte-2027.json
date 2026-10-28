@@ -3576,10 +3576,11 @@
       "notes": "Requiere registro gratuito B&me. Confirmar precio final, impuestos, condiciones de cancelación y posibilidad de dejar equipaje antes del check-in. La referencia histórica no garantiza disponibilidad ni tarifa en 2027.",
       "links": [
         {
-          "label": "Consultar alojamiento oficial",
+          "label": "Reserva oficial",
           "url": "https://www.hotel-bb.com/en/hotel/milano-aosta"
         }
-      ]
+      ],
+      "mapsUrl": "https://maps.app.goo.gl/Ei9Htz2HPEYXZ47e7"
     },
     {
       "id": "spezia-dane",
@@ -3594,10 +3595,11 @@
       "notes": "Comprobar disponibilidad del 2027-04-08 al 2027-04-11, impuestos, baño privado, cancelación y condiciones de consigna.",
       "links": [
         {
-          "label": "Consultar alojamiento oficial",
+          "label": "Reserva oficial",
           "url": "https://www.casadane.it/en/"
         }
-      ]
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Affittacamere%20Casa%20Dane%20La%20Spezia"
     },
     {
       "id": "firenze-miacara",
@@ -3612,10 +3614,11 @@
       "notes": "Comprobar disponibilidad del 2027-04-11 al 2027-04-16, impuestos, baño privado, cancelación y condiciones de consigna.",
       "links": [
         {
-          "label": "Consultar alojamiento oficial",
+          "label": "Reserva oficial",
           "url": "https://www.hotelmiacaraspa.it/en"
         }
-      ]
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Mia%20Cara%20SPA%20Firenze"
     }
   ],
   "expenses": [
