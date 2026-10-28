@@ -584,31 +584,31 @@
   "experiences": [
     {
       "city": "Milano",
-      "description": "Contemplar La Última Cena de Leonardo da Vinci, recorrer las terrazas del Duomo y pasear por las calles de Brera."
+      "description": "Contemplar La Última Cena de Leonardo da Vinci, recorrer las terrazas del Duomo y pasear por las calles de Brera. Probar el risotto alla milanese, la cotoletta alla milanese y, si apetece, el ossobuco."
     },
     {
       "city": "Torino",
-      "description": "Explorar las colecciones del Museo Egizio y recorrer las plazas porticadas y los cafés históricos de la antigua capital saboyana."
+      "description": "Explorar las colecciones del Museo Egizio y recorrer las plazas porticadas y los cafés históricos de la antigua capital saboyana. Probar los agnolotti del plin y el vitello tonnato, y disfrutar un bicerin o un gianduiotto en un café histórico."
     },
     {
       "city": "Portovenere",
-      "description": "Caminar entre las fachadas de colores del puerto hasta la iglesia de San Pietro, situada sobre las rocas, con vistas al golfo."
+      "description": "Caminar entre las fachadas de colores del puerto hasta la iglesia de San Pietro, situada sobre las rocas, con vistas al golfo. Probar los muscoli ripieni (mejillones rellenos) y los spaghetti con salsa de mejillones, especialidades ligadas al golfo."
     },
     {
       "city": "Cinque Terre",
-      "description": "Recorrer los pueblos en tren, pasear por sus callejones y admirar las casas de colores y terrazas de viñedos desde los miradores de Manarola."
+      "description": "Recorrer los pueblos en tren, pasear por sus callejones y admirar las casas de colores y terrazas de viñedos desde los miradores de Manarola. Probar las anchoas locales, la focaccia ligur y la pasta con pesto, sabores tradicionales de la costa."
     },
     {
       "city": "Lucca",
-      "description": "Pasear por las murallas arboladas, conocer la Piazza dell’Anfiteatro y, si el tiempo alcanza, subir a la Torre Guinigi."
+      "description": "Pasear por las murallas arboladas, conocer la Piazza dell’Anfiteatro y, si el tiempo alcanza, subir a la Torre Guinigi. Probar los tordelli lucchesi y el buccellato, dulce tradicional de la ciudad."
     },
     {
       "city": "Firenze",
-      "description": "Contemplar el David de Michelangelo, subir a la cúpula de Brunelleschi, recorrer los Uffizi y disfrutar las vistas desde San Miniato al Monte."
+      "description": "Contemplar el David de Michelangelo, subir a la cúpula de Brunelleschi, recorrer los Uffizi y disfrutar las vistas desde San Miniato al Monte. Probar la bistecca alla fiorentina, la ribollita y, para conocer su comida callejera, un panino al lampredotto."
     },
     {
       "city": "Siena",
-      "description": "Recorrer las calles medievales hasta la Piazza del Campo y visitar el Duomo, con sus mármoles y los frescos de la Libreria Piccolomini."
+      "description": "Recorrer las calles medievales hasta la Piazza del Campo y visitar el Duomo, con sus mármoles y los frescos de la Libreria Piccolomini. Probar los pici, los ricciarelli de almendra y el panforte tradicional."
     }
   ],
   "flight": "Aeroméxico directo MEX → MXP (3–4 abril) y MXP → MEX (16–17 abril). Tarifa Básica de $16,683 MXN, consultada en Google Flights el 26/10/2026; no comprada. Incluye equipaje de mano; sin cambios ni reembolsos según la captura.",
