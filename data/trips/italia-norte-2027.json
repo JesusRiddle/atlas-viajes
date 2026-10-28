@@ -4071,8 +4071,18 @@
     "italy27-firenze-cathedral": "Su impresionante fachada de mármol esculpido combina blancos, verdes y rosados; contempla sus detalles antes de subir a la cúpula."
   },
   "exchangeRates": {
-    "EUR": 20.81
+    "EUR": 20.7416,
+    "USD": 18.6307
   },
-  "exchangeRatesAsOf": "2026-10-27",
-  "exchangeRatesSource": "EUR/MXN 20.81 valor indicativo 27/10/2026 https://cincodias.elpais.com/mercados/divisas/euro-peso-mexicano/ ; USD/MXN estimación provisional a revisar antes de usar."
+  "exchangeRatesAsOf": "2026-10-28",
+  "exchangeRatesSource": "Banco Central Europeo (28/10/2026): EUR/MXN 20.7416 y USD/MXN 18.6307 (derivado de EUR/USD 1.1133). Tasas informativas, no de compra.",
+  "exchangeRateSnapshot": {
+    "date": "2026-10-28",
+    "baseCurrency": "MXN",
+    "description": "Pesos mexicanos por unidad de divisa. Tasas de referencia para planeación, no tasas de compra.",
+    "sources": {
+      "EUR": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "USD": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+    }
+  }
 }
