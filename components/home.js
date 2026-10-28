@@ -39,6 +39,7 @@ window.AtlasHome = function (ctx) {
                 return layer;
             });
             let index = 0, active = -1, timer = null, token = 0, busy = false;
+            const failedSources = new Set();
             const zoom = (image, out) => {
                 image.classList.remove('cardphoto-zoom-cycle', 'cardphoto-zoom-out');
                 void image.offsetWidth;
@@ -58,7 +59,14 @@ window.AtlasHome = function (ctx) {
                 if (!frame.isConnected || document.hidden) { stop(); return; }
                 if (busy) return;
                 busy = true;
-                const next = (index + 1) % sources.length;
+                // Skip images that failed to load; never block the carousel on one URL.
+                let next = (index + 1) % sources.length;
+                let checked = 0;
+                while (failedSources.has(sources[next]) && checked < sources.length) {
+                    next = (next + 1) % sources.length;
+                    checked++;
+                }
+                if (checked >= sources.length || next === index) { busy = false; return; }
                 const currentToken = token;
                 if (next === 0) {
                     // Desvanecer la última foto y revelar la portada original.
@@ -88,7 +96,13 @@ window.AtlasHome = function (ctx) {
                     index = next;
                     busy = false;
                 };
-                preload.onerror = () => { if (currentToken === token) busy = false; };
+                preload.onerror = () => {
+                    if (currentToken !== token) return;
+                    failedSources.add(sources[next]);
+                    busy = false;
+                    // Try the next photograph without waiting another full interval.
+                    queueMicrotask(advance);
+                };
                 preload.src = sources[next];
             };
             // Activar desde toda la tarjeta, no solo desde la fotografía.
