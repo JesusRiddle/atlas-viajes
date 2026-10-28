@@ -238,7 +238,7 @@ window.AtlasTrip = function (ctx) {
     const legacyAdviceTripIds = new Set(['espana-portugal', 'espana', 'munich', 'munich-viena', 'portugal', 'suiza', 'suiza-italia', 'grecia', 'sicilia', 'washington', 'turquia', 'nueva-orleans', 'vegas', 'marruecos', 'san-antonio', 'puglia-matera']);
     function fullSectionMarkup(t, id, low, high) {
         const complete = canRenderFullTrip(t);
-        const masterOverview = t.id === 'emilia-romana' || !complete;
+        const masterOverview = !legacyAdviceTripIds.has(t.id) || !complete;
         const pending = () => '<span class="draft-pending">Por definir</span>';
         const hasBases = t.bases.length > 0;
         const overviewIntro = typeof t.intro === 'string' && t.intro.trim()
