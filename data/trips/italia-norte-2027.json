@@ -3571,9 +3571,9 @@
       "checkIn": "2027-04-04",
       "checkOut": "2027-04-08",
       "status": "Candidato principal · no reservado",
-      "rate": "Estimación de planeación: $8,400 MXN total · 4 noches ($2,100/noche). No es cotización.",
-      "rateConditions": "Precio objetivo supuesto, habitación individual con baño privado. Confirmar total con impuestos, disponibilidad y cancelación para abril de 2027.",
-      "notes": "Comprobar disponibilidad del 2027-04-04 al 2027-04-08, impuestos, baño privado, cancelación y condiciones de consigna.",
+      "rate": "Referencia histórica (27–29 nov 2026): €283 por 2 noches, equivalente a €141.50/noche. Proyección matemática para 4 noches: €566 (≈ $11,740 MXN al tipo de cambio de referencia del 28/10/2026); NO es cotización para abril de 2027.",
+      "rateConditions": "Tarifa B&me Breakfast Flex: desayuno incluido y cancelación flexible según cotización de noviembre de 2026. Verificar si existe y qué condiciones ofrece para el 4–8 de abril de 2027.",
+      "notes": "Requiere registro gratuito B&me. Confirmar precio final, impuestos, condiciones de cancelación y posibilidad de dejar equipaje antes del check-in. La referencia histórica no garantiza disponibilidad ni tarifa en 2027.",
       "links": [
         {
           "label": "Consultar alojamiento oficial",
@@ -3631,7 +3631,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto presupuestario de $2,100 MXN/noche; no cotizado ni reservado."
+      "notes": "Presupuesto provisional de $2,100 MXN/noche, no cotizado. Como contraste, la cotización histórica del mismo hotel para noviembre de 2026 fue de €283 por 2 noches (€141.50/noche); no extrapolarla como precio confirmado de abril de 2027."
     },
     {
       "id": "lodging-spezia-dane",
