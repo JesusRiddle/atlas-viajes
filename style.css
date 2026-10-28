@@ -2003,7 +2003,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 }
 
 /* Portadas del Home: zoom-in cinematográfico sutil durante el hover. */
-@media(hover:hover) and (pointer:fine){
+@media(prefers-reduced-motion:no-preference){
   #viajes .atlas-home-card .cardphoto>img:not(.cardphoto-slide),
   #viajes .atlas-home-card .cardphoto .cardphoto-slide{
     transform:scale(1);
@@ -2027,7 +2027,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   from{transform:scale(1)}
   to{transform:scale(1.065)}
 }
-@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+@media(prefers-reduced-motion:no-preference){
   #viajes .atlas-home-card .cardphoto img.cardphoto-zoom-cycle{
     animation:atlas-cover-zoom-cycle 2s linear both;
   }
@@ -2038,7 +2038,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   from{transform:scale(1.065)}
   to{transform:scale(1)}
 }
-@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+@media(prefers-reduced-motion:no-preference){
   #viajes .atlas-home-card .cardphoto img.cardphoto-zoom-cycle.cardphoto-zoom-out{
     animation-name:atlas-cover-zoom-out;
   }
@@ -2136,7 +2136,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 }
 
 /* Temporadas: misma sombra sutil al hover que las tarjetas de alojamiento. */
-@media(hover:hover) and (pointer:fine){
+@media(prefers-reduced-motion:no-preference){
   #temporadas .season-month{
     transition:box-shadow .2s ease,border-color .2s ease;
   }
@@ -2152,7 +2152,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 }
 
 /* Mapa del viaje: misma sombra discreta de Temporadas en sección y ciudades. */
-@media(hover:hover) and (pointer:fine){
+@media(prefers-reduced-motion:no-preference){
   .trip-map-section{
     transition:box-shadow .2s ease,border-color .2s ease;
   }
