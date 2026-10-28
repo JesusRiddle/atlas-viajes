@@ -28,7 +28,7 @@ ${positioned.length ? `<div class="trip-map-cities">
 ${positioned.length ? `<div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>` : `<div class="trip-map trip-map-pending"><p class="draft-pending">Por definir</p></div>`}
 <div class="trip-map-footer"><p class="map-status" role="status">${positioned.length ? "El mapa se carga al llegar a esta sección." : "Coordenadas por definir."}</p>
 <div class="map-legend"><span>Base para dormir</span><span>Excursión sin alojamiento</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div></div>
-${t.id==='emilia-romana'?'':`<p class="tiny">Pines de referencia de cada localidad, no direcciones de hoteles ni un trazado exacto del trayecto. Las excursiones a paisajes y monumentos se detallan en el programa diario.</p>`}
+
 </section>`;
 }
 function clearMap(){mapObserver?.disconnect();mapObserver=null;if(activeMap){activeMap.remove();activeMap=null;}}
