@@ -2,10 +2,10 @@
   "id": "italia-norte-2027",
   "name": "Italia 2027: Piamonte, Cinque Terre y Toscana",
   "flag": "🇮🇹",
-  "status": "draft",
+  "status": "ready",
   "start": "2027-04-03",
   "end": "2027-04-16",
-  "tag": "BORRADOR · LA ÚLTIMA CENA ES RESERVA OBLIGATORIA",
+  "tag": "ITINERARIO LISTO · LA ÚLTIMA CENA REQUIERE RESERVA",
   "routeCities": [
     "Milano",
     "Torino",
