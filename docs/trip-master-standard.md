@@ -3,6 +3,18 @@
 ## Fuente de verdad
 Este documento define el formato de todos los viajes nuevos, independientemente de que se eliminen los viajes que sirvieron para desarrollarlo. Complementa `docs/trip-editorial-guide.md`, `docs/trip-data-contract.md`, `docs/trip-production-checklist.md` y `data/trips/_template.json`. Los JSON de viajes existentes son ejemplos opcionales, nunca dependencias. La presentación se implementa en componentes compartidos de la aplicación.
 
+## Crear un viaje desde cero, sin ejemplos existentes
+El procedimiento debe funcionar aunque no exista ningún JSON turístico completo. **Única fuente normativa:** esta especificación, `docs/trip-editorial-guide.md`, `docs/trip-data-contract.md`, `docs/trip-production-checklist.md` y `data/trips/_template.json`. `data/trips/italia-norte-2027.json` es el ejemplo de implementación vigente, **opcional**, no una plantilla ni requisito.
+
+1. Definir restricciones reales: fechas, duración, presupuesto, transporte, preferencias y destinos candidatos; investigar fuentes oficiales y guardar fecha de consulta.
+2. Construir primero ruta, noches, conexiones, visitas prioritarias y costos tentativos, sin inventar precios, reservas ni horarios.
+3. Crear un JSON nuevo con identificador propio a partir de `_template.json` o con `id` y `name` para completarlo progresivamente; añadirlo a `modules.js` como inactivo mientras se prepara.
+4. Completar las nueve secciones con los campos indicados abajo, separando confirmado, cotizado, estimado y pendiente. Los estados vacíos siguen el contrato de datos.
+5. Comparar el resultado **contra este estándar y su checklist**, no contra otro viaje; comprobar enlaces, anclas, presupuesto, navegación, escritorio y móvil cuando sea posible.
+6. Ejecutar las pruebas automatizadas, corregir regresiones y solicitar aprobación antes de publicar o hacer merge.
+
+No exigir ninguna visita, ciudad, tarifa, cantidad de noches, fotografía o elección editorial tomada para un viaje anterior.
+
 ## Composición obligatoria y navegación
 Preservar el encabezado `triphero`, menú `subnav` y exactamente estas nueve secciones, con estas anclas, en este orden:
 
