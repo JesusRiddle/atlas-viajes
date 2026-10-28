@@ -701,46 +701,28 @@
   ],
   "ticketNotes": [
     {
-      "title": "Cotización aérea de referencia · Aeroméxico",
-      "status": "quoted",
-      "quotedAt": "2026-10-26",
-      "route": "MEX → MXP (3 abril 2027, 22:30–18:20 +1); MXP → MEX (16 abril 2027, 23:05–04:00 +1)",
-      "carrier": "Aeroméxico",
-      "fare": "Básica",
-      "price": {
-        "amount": 16683,
-        "currency": "MXN"
-      },
-      "baggage": "Una maleta de mano incluida; equipaje documentado con cargo. Verificar límites de peso y artículo personal antes de compra.",
-      "conditions": "Sin cambios voluntarios ni reembolsos según pantalla de cotización.",
-      "note": "Tarifa redonda Básica vista en Google Flights, no comprada; llegada a México el sábado 17 abril. Precio mostrado en la captura: $16,683 MXN."
+      "title": "Vuelos · tarifa Básica",
+      "note": "La cotización de Aeroméxico indica que no admite cambios voluntarios ni reembolsos. Confirmar las condiciones de la tarifa, el equipaje de mano y el costo de documentar antes de pagar."
     },
     {
-      "title": "Auditoría logística y reservas · octubre 2026",
-      "status": "planning",
-      "note": "Ruta revisada: Milano 4 noches (Torino lunes y Cenacolo martes/miércoles), La Spezia 3 noches (Portovenere y Cinque Terre intercambiables según pronóstico), Firenze 5 noches (Lucca condicionada a consigna dominical en tránsito; Siena lunes, Accademia/Cúpula martes, Uffizi+Corridoio/Santa Croce miércoles, Bargello/San Miniato/Piazzale Michelangelo jueves). Se conservan tres bases: redistribuir noches empeoraría las reservas sensibles y añadiría traslados. Confirmar trenes, entradas nominativas, consigna y horarios 2027 antes de comprar.",
-      "sources": [
-        "https://www.museoegizio.it/en/info/hours/",
-        "https://www.santacroceopera.it/en/organise-your-visit/",
-        "https://duomo.firenze.it/en/visit/plan-your-visit",
-        "https://www.turismo.lucca.it/en/information/FAQ%3A-How-and-why-in-Lucca/",
-        "https://www.trenord.it/en/linee-e-orari/il-nostro-servizio/malpensa-express/",
-        "https://www.cinqueterre.it/en/how-to-get-there-and-get-around/"
-      ]
+      "title": "Malpensa Express · boleto digital",
+      "note": "El boleto digital comprado en Trenord/Malpensa Express es válido para un viaje durante la fecha indicada y no requiere convalidación física. Mostrarlo en el móvil; comparar el billete de ida y vuelta de 30 días con dos sencillos, verificando sus condiciones."
     },
     {
-      "title": "Prioridad crítica: La Última Cena de Leonardo — Milano",
-      "status": "required_unbooked",
-      "visitDates": [
-        "2027-04-06",
-        "2027-04-07"
-      ],
-      "reservationWindow": "Diciembre 2026: venta oficial anunciada para entradas de febrero, marzo y abril 2027; comprobar fecha y hora de publicación.",
-      "bookingUrl": "https://cenacolovinciano.vivaticket.it/",
-      "officialInfo": "https://cenacolovinciano.org/en/info/",
-      "rules": "Entrada nominativa e intransferible, obligatoria para todos; 15 minutos de visita; presentarse 30 minutos antes. Museo cerrado los lunes.",
-      "priority": "No comprar entradas incompatibles; organizar otros horarios alrededor del Cenacolo.",
-      "fallback": "Ambas fechas son noches en Milano. Reservar en cualquiera de las dos; viajar a La Spezia jueves 8."
+      "title": "Trenes Italo, Frecciarossa e Intercity",
+      "note": "Los billetes electrónicos de servicios reservados se presentan mediante código o QR, sin timbrar en máquina. Respetar tren, fecha y tarifa contratados; los cambios y reembolsos dependen de esa tarifa. Un billete de Italo no autoriza a subir a Trenitalia, ni viceversa."
+    },
+    {
+      "title": "Trenes regionales Trenitalia",
+      "note": "El billete digital Regionale se valida automáticamente para la salida programada según las reglas del operador; el billete regional en papel debe convalidarse antes de abordar. Revisar los límites de cambio de horario y la vigencia del billete adquirido."
+    },
+    {
+      "title": "Cinque Terre · billete sencillo o Treno MS Card",
+      "note": "Comparar el costo real de los trayectos previstos con el pase vigente para la fecha. El pase no sustituye automáticamente cualquier servicio ferroviario; comprobar trenes incluidos, franja de validez y condiciones antes de comprar."
+    },
+    {
+      "title": "Autobuses a Portovenere y Siena",
+      "note": "Comprobar qué billete corresponde a cada operador y recorrido. En los billetes físicos que lo exijan, validar al abordar; los digitales pueden activarse al comprar y tener vigencia limitada. No activar la compra móvil con demasiada antelación."
     }
   ],
   "introHighlights": [
