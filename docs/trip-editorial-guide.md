@@ -9,6 +9,9 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 
 **Separación de responsabilidades:** JSON = información turística y estados verificables; guía = instrucciones para autores y agentes; código = representación. No agregar `instructions` o `aiNotes` al JSON de cada viaje ni renderizar normas editoriales al usuario.
 
+## Referencias completas antes de empezar otro viaje
+Antes de crear el JSON, revisar **en conjunto** `data/trips/emilia-romana.json` y `data/trips/italia-norte-2027.json` y cómo se presentan en la web. El primero es el estándar visual maestro y el segundo es un ejemplo terminado del formato nuevo. Las guías prevalecen sobre particularidades de contenido; ningún ejemplo autoriza copiar cifras, trayectos, reservas, fechas o texto turístico sin verificar. Comparar las **nueve secciones** y las funciones compartidas, documentar cualquier excepción y ejecutar la lista de cierre de `docs/trip-production-checklist.md`. Los viajes antiguos solo sirven como fuente de ideas/datos previa comprobación, **no** como plantilla de interfaz.
+
 ## Convenciones universales
 - **Concisión obligatoria:** cada oración debe aportar un dato útil, una actividad específica o una recomendación operativa. Eliminar metáforas, entusiasmo vacío, adjetivos redundantes, repeticiones y frases sobre lo bonito o emocionante que será el viaje. Mantener tono atractivo mediante detalles concretos, no con «paja». Aplicar esta regla a las nueve secciones, especialmente experiencias, introducciones y reservaciones.
 - Ser específico y natural, español de México, conciso y útil; nombrar atractivos en su denominación reconocible, sin prometer experiencias no verificadas.
