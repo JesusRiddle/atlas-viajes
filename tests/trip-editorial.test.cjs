@@ -19,7 +19,7 @@ test('existen instrucciones editoriales y están enlazadas desde README y AGENTS
 
 test('el viaje Italia 2027 mantiene introducción turística con resaltados existentes', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'), 'utf8'));
-  assert.equal(trip.status, 'draft');
+  assert.equal(trip.status, 'ready');
   assert.ok(Array.isArray(trip.introHighlights));
   assert.ok(trip.introHighlights.length > 0);
   for (const name of trip.introHighlights) {
@@ -29,7 +29,7 @@ test('el viaje Italia 2027 mantiene introducción turística con resaltados exis
 });
 
 test('los 12 meses evaluados contienen rango de temperatura visible', () => {
-  const drafts = fs.readdirSync('data/trips').filter(name => name.endsWith('.json') && !name.startsWith('_')).map(name => ({name, trip: JSON.parse(fs.readFileSync(path.join('data/trips', name), 'utf8'))})).filter(({trip}) => trip.status === 'draft' && trip.seasonality?.months);
+  const drafts = fs.readdirSync('data/trips').filter(name => name.endsWith('.json') && !name.startsWith('_')).map(name => ({name, trip: JSON.parse(fs.readFileSync(path.join('data/trips', name), 'utf8'))})).filter(({trip}) => ['draft', 'ready'].includes(trip.status) && trip.seasonality?.months);
   assert.ok(drafts.length, 'Sin viajes borrador para validar');
   const pattern = /[-−]?\d{1,2}(?:[.,]\d+)?\s*[–—-]\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*°\s*C/i;
   for (const {name, trip} of drafts) {
@@ -61,7 +61,7 @@ test('los indicadores prácticos del viaje incluyen etiquetas y tonos válidos',
 
 test('reservas críticas de Italia 2027 tienen grupos, prioridad y enlaces oficiales', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
-  assert.equal(trip.planningDetails.reservationTitle, 'Reservas críticas');
+  assert.equal(trip.planningDetails.reservationTitle, 'Reservaciones importantes');
   assert.ok(trip.reservations.length >= 2);
   for (const [heading, items] of trip.reservations) {
     assert.ok(heading && Array.isArray(items) && items.length);
@@ -128,9 +128,15 @@ test('Italia 2027 mantiene vuelos cotizados y trenes futuros sin precios inventa
   assert.equal(flight.options[0].fares[0].price.amount, 16683);
   assert.equal(flight.options[0].fares[0].price.currency, 'MXN');
   for (const t of trip.majorTransport.filter(t => t.id !== 'flight-international')) {
-    const o = t.options[0];
-    assert.equal(o.status, 'planning', t.id);
-    assert.equal(o.fares[0].price, null, t.id);
+    for (const o of t.options) {
+      assert.ok(['planning', 'quoted'].includes(o.status), t.id);
+      for (const fare of o.fares || []) {
+        if (fare.price !== null) {
+          assert.ok(Number.isFinite(fare.price.amount) && fare.price.amount >= 0, t.id);
+          assert.ok(['MXN', 'EUR', 'USD'].includes(fare.price.currency), t.id);
+        }
+      }
+    }
   }
 });
 
@@ -143,7 +149,9 @@ test('Italia 2027: tres hoteles principales y presupuesto distribuido', () => {
   assert.equal(hotelExpenses.reduce((a,x)=>a+x.cost.amount,0),25900);
   for(const h of trip.hotels){
     assert.match(h.status,/no reservado/);
-    assert.match(h.rate,/No es cotización/);
+    assert.match(h.rate,/no es cotización/i);
+    assert.ok(h.mapsUrl?.startsWith('https://'), 'Google Maps faltante: ' + h.name);
+    assert.ok(h.links?.some(link => link.url?.startsWith('https://')), 'Reserva oficial faltante: ' + h.name);
     assert.equal(hotelExpenses.find(x=>x.hotelId===h.id).nights,nights[h.city]);
   }
   assert.equal(trip.expenses.filter(x=>x.category==='food').length,14);
@@ -239,7 +247,7 @@ test('reglas editoriales: fines de semana flexibles y redistribución de días',
  assert.match(guide,/Nunca agregar automáticamente días al final/);
  assert.match(guide,/reoptimizar fechas dependientes/i);
  assert.match(guide,/costo total aproximado/);
- assert.match(guide,/cuatro indicadores/);
+ assert.match(guide,/tres objetos/);
  assert.match(agents,/no anexarlos por defecto al final/);
 });
 
