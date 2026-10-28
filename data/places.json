@@ -3420,9 +3420,10 @@
     "photo": {
       "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Spezia_-_Via_del_Prione.JPG?width=960",
       "source": "https://commons.wikimedia.org/wiki/File:La_Spezia_-_Via_del_Prione.JPG",
-      "author": "Wikimedia Commons (ver ficha)",
-      "license": "Ver ficha de Wikimedia Commons",
-      "attribution": "Wikimedia Commons"
+      "author": "William Domenichini",
+      "license": "CC BY-SA 3.0",
+      "attribution": "William Domenichini · CC BY-SA 3.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   },
   "italy27-byron": {
@@ -3430,9 +3431,10 @@
     "photo": {
       "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portovenere%2C_grotta_byron.JPG?width=960",
       "source": "https://commons.wikimedia.org/wiki/File:Portovenere,_grotta_byron.JPG",
-      "author": "Wikimedia Commons (ver ficha)",
-      "license": "Ver ficha de Wikimedia Commons",
-      "attribution": "Wikimedia Commons"
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Sailko · CC BY-SA 3.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   },
   "italy27-guinigi": {
@@ -3451,9 +3453,10 @@
     "photo": {
       "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20Castello%20di%20Torino%20e%20scorcio%20della%20Piazzetta%20Reale.jpg?width=960",
       "source": "https://commons.wikimedia.org/wiki/File:Piazza%20Castello%20di%20Torino%20e%20scorcio%20della%20Piazzetta%20Reale.jpg",
-      "author": "Consultar ficha de Wikimedia Commons",
-      "license": "Consultar licencia de la imagen",
-      "attribution": "Wikimedia Commons"
+      "author": "Guglielmo di Rivoli",
+      "license": "CC0 1.0",
+      "attribution": "Guglielmo di Rivoli · CC0 1.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
     }
   },
   "italy27-mole": {
@@ -3461,9 +3464,10 @@
     "photo": {
       "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mole%20Antonelliana%20(37781).jpg?width=960",
       "source": "https://commons.wikimedia.org/wiki/File:Mole%20Antonelliana%20(37781).jpg",
-      "author": "Consultar ficha de Wikimedia Commons",
-      "license": "Consultar licencia de la imagen",
-      "attribution": "Wikimedia Commons"
+      "author": "Accurimbono",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Accurimbono · CC BY-SA 4.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   "italy27-brera": {
@@ -3471,9 +3475,10 @@
     "photo": {
       "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pinacoteca%20di%20Brera%20-%20Milano%20-%20il%20cortile%20interno.JPG?width=960",
       "source": "https://commons.wikimedia.org/wiki/File:Pinacoteca%20di%20Brera%20-%20Milano%20-%20il%20cortile%20interno.JPG",
-      "author": "Consultar ficha de Wikimedia Commons",
-      "license": "Consultar licencia de la imagen",
-      "attribution": "Wikimedia Commons"
+      "author": "Stefano Stabile",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Stefano Stabile · CC BY-SA 3.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   },
   "italy27-piccolomini": {
@@ -3513,8 +3518,9 @@
       "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Parco%20Sempione%20-%20Milano%2C%202023.jpg?width=960",
       "source": "https://commons.wikimedia.org/wiki/File:Parco%20Sempione%20-%20Milano%2C%202023.jpg",
       "author": "Consultar ficha de Wikimedia Commons",
-      "license": "Consultar licencia de la imagen",
-      "attribution": "Wikimedia Commons"
+      "license": "CC BY-SA 4.0",
+      "attribution": "Consultar ficha de Wikimedia Commons · CC BY-SA 4.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     }
   },
   "italy27-lucca-fillungo": {
@@ -3542,9 +3548,10 @@
     "photo": {
       "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20170706%20MilanoStreets%209345%20(36350946550).jpg?width=960",
       "source": "https://commons.wikimedia.org/wiki/File:20170706%20MilanoStreets%209345%20(36350946550).jpg",
-      "author": "Consultar ficha de Wikimedia Commons",
-      "license": "Consultar licencia de la imagen",
-      "attribution": "Wikimedia Commons"
+      "author": "Ray Swi-hymn",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Ray Swi-hymn · CC BY-SA 2.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
     }
   },
   "italy27-capellini": {
