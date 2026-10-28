@@ -37,6 +37,8 @@ Esta guía regula la **redacción y curación** de viajes nuevos y sus revisione
 **No incluir en `intro`:** estado de compras, entradas nominativas pendientes, fechas límite para reservar, vuelos no comprados, precios, instrucciones al agente o frases administrativas. Esos asuntos van en reservas, traslados y costos.
 **Ejemplo:** «Comienza en **Milano** con el **Duomo** y continúa hacia la costa de **Liguria**…» (la negrita visible se genera con `introHighlights`, no con Markdown incrustado).
 
+**No reutilizar el bloque heredado «Salida y llegada · vuelos / Entre ciudades / Clima y luz / Ritmo y viajar solo» en los viajes nuevos.** Su contenido ya está distribuido entre «Traslados principales», «Clima y luz» y los indicadores prácticos del panorama. El bloque `adviceCards` se mantiene únicamente para los viajes antiguos identificados explícitamente en `components/trip.js`, mientras se reemplazan uno por uno; no incorporar nuevos IDs a esa lista.
+
 ### 2. Mapa (`mapa`)
 **Campos:** `mapPoints`, `bases`, `routeCities`.
 **Cómo:** puntos georreferenciados verificables, orden coherente con el recorrido; distinguir base, excursión y parada. Nombres concisos que quepan en tarjetas; nunca coordenadas inventadas. Los lugares opcionales deben identificarse.
