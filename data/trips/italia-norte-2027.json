@@ -3846,6 +3846,54 @@
       },
       "status": "estimated",
       "notes": "Estimación para la jornada prevista, no cotización; considerar alimentación sin lactosa."
+    },
+    {
+      "id": "ticket-cenacolo",
+      "category": "tickets",
+      "concept": "cenacolo",
+      "date": "2027-04-06",
+      "cost": {
+        "amount": 15,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia oficial 2026; confirmar tarifa 2027, no comprado"
+    },
+    {
+      "id": "ticket-accademia",
+      "category": "tickets",
+      "concept": "accademia",
+      "date": "2027-04-13",
+      "cost": {
+        "amount": 24,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia oficial 2026; confirmar tarifa 2027, no comprado"
+    },
+    {
+      "id": "ticket-brunelleschi",
+      "category": "tickets",
+      "concept": "brunelleschi",
+      "date": "2027-04-13",
+      "cost": {
+        "amount": 30,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia oficial 2026; confirmar tarifa 2027, no comprado"
+    },
+    {
+      "id": "ticket-uffizi-vasari",
+      "category": "tickets",
+      "concept": "uffizi-vasari",
+      "date": "2027-04-14",
+      "cost": {
+        "amount": 47,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia oficial 2026; confirmar tarifa 2027, no comprado"
     }
   ],
   "cover": "milan-duomo",
