@@ -89,9 +89,11 @@ window.AtlasDay = function (ctx) {
 
     function scheduleText(value) {
         return String(value || '').split(/\n+/).filter(line => line.trim()).map((line, index) => {
-            const numbered = line.match(/^\s*\*(\d+)\.\*\s*(.*)$/);
-            const number = numbered ? numbered[1] : String(index + 1);
-            const content = numbered ? numbered[2] : line;
+            // Admit both legacy "*1.*" and plain "1." numbering in JSON,
+            // but render numbering only in the dedicated badge.
+            const numbered = line.match(/^\s*(?:\*(\d+)\.\*|(\d+)\.)\s*(.*)$/);
+            const number = numbered ? (numbered[1] || numbered[2]) : String(index + 1);
+            const content = numbered ? numbered[3] : line;
             return '<div class="schedule-item"><span class="schedule-item-number" aria-hidden="true">' +
                 esc(number) + '</span><p>' + readable(content) + '</p></div>';
         }).join('');

@@ -61,7 +61,7 @@ test('solo se suma una tarifa por transporte, no las alternativas', () => {
     const trains = summary.entries.filter(x => x.id.startsWith('train-'));
     assert.equal(trains.length, 6);
     assert.equal(trains.reduce((sum, x) => sum + x.cost.amount, 0).toFixed(2), '103.70');
-    assert.ok(summary.partial);
+    assert.equal(summary.partial, false, 'La ausencia de precios pendientes no convierte los importes en compras realizadas');
     // Vuelos + todos los trenes + los tres hoteles + entradas de Firenze.
     // El importe no debe permanecer anclado a la etapa en que solo había vuelos.
     const expected = [...trip.majorTransport.map(t => budget.selectedTransportPrice(t)),
@@ -153,9 +153,10 @@ test('las cotizaciones incompletas no se interpretan como costos cero', () => {
 
 test('el rango preliminar no se suma al subtotal conocido', () => {
     const result = budget.summary(trip);
-    assert.equal(result.planningRangeMXN[0], 65000);
-    assert.equal(result.planningRangeMXN[1], 90000);
-    assert.ok(result.knownTotalMXN < result.planningRangeMXN[0]);
+    assert.equal(result.planningRangeMXN, null, 'No inventar rango preliminar cuando no existe en el JSON');
+    const withRange = budget.summary({ ...trip, budgetRange: [65000, 90000] });
+    assert.deepEqual([...withRange.planningRangeMXN], [65000, 90000]);
+    assert.equal(withRange.knownTotalMXN, result.knownTotalMXN, 'El rango no se suma a partidas');
 });
 
 test('vuelos Iberia: cuatro segmentos completos, escalas y tres tarifas', () => {
@@ -389,7 +390,7 @@ test('limpieza preserva las once noches y el presupuesto de referencia', () => {
             'Fecha fuera de estancia en día ' + day.n);
     }
     assert.equal(trip.days.at(-1).hotel, undefined);
-    assert.deepEqual([...budget.summary(trip).planningRangeMXN], [65000, 90000]);
+    assert.equal(budget.summary(trip).planningRangeMXN, null, 'El rango histórico ya no figura en el viaje');
     assert.equal(trip.exchangeRates.EUR, 20.6451);
     const snapshot = JSON.stringify(trip);
     budget.currentSummary(trip);

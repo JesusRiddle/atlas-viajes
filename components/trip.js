@@ -59,26 +59,40 @@ window.AtlasTrip = function (ctx) {
             solo + '</div></article></div>' + (compact ? '</section>' : '');
     }
     function climateCard(t) {
-        return '<article class="overview-climate-card"><h3>' + overviewIcon('sun') + ' Clima y luz</h3>' +
+        const month = typeof t.start === 'string' ? t.start.slice(5, 7) : '';
+        const status = t.seasonality?.months?.[month]?.status;
+        const seasonLabels = { recommended: 'Recomendable', conditional: 'Aceptable', avoid: 'Desaconsejable', pending: 'Por definir' };
+        const seasonClass = Object.prototype.hasOwnProperty.call(seasonLabels, status) ? ' season-' + status : '';
+        const seasonBadge = seasonClass ? '<span class="overview-climate-season-status">' + seasonLabels[status] + '</span>' : '';
+        return '<article class="overview-climate-card' + seasonClass + '"><h3>' + overviewIcon('sun') + ' Clima y luz' + seasonBadge + '</h3>' +
             '<div class="fact-copy">' + factParagraphs(t.climate) + '</div></article>';
     }
     function practicalAdvice(t) {
         const icons = {
+            style: '<circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>',
             solo: '<circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/>',
             pace: '<path d="m3 17 5-5 4 4 5-8 4 3"/><path d="M3 21h18"/>',
             language: '<path d="m5 8 6 6m-7 0 7-7M3 5h11M9 3v2m4 16 5-11 5 11m-8-4h6"/>',
-            currency: '<rect x="2" y="5" width="20" height="15" rx="2"/><path d="M2 9h20M6 15h4"/>'
+            currency: '<rect x="2" y="5" width="20" height="15" rx="2"/><path d="M2 9h20M6 15h4"/>',
+            entry: '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/>'
         };
         // Presentación experimental: etiquetas de lectura rápida para este itinerario.
         const indicators = Array.isArray(t.practicalIndicators) ? t.practicalIndicators : null;
-        const badges = t.id === 'emilia-romana' ? {
+        const legacyBadges = {
             solo: { label: 'Muy recomendable', tone: 'green', prefix: 'Muy recomendable. ' },
             pace: { label: 'Moderado–activo', tone: 'orange', prefix: 'Moderado–activo. ' },
             language: { label: 'Fácil', tone: 'green', prefix: '' },
             currency: { label: 'Tarjetas aceptadas', tone: 'green', prefix: '' }
-        } : {};
+        };
+        // Backward compatibility: old Emilia-Romagna data predates per-trip badge fields.
+        const badgeInfo = item => {
+            if (typeof item.badge === 'string' && item.badge.trim()) {
+                return { label: item.badge.trim(), tone: item.tone === 'orange' ? 'orange' : 'green', prefix: '' };
+            }
+            return t.id === 'emilia-romana' ? legacyBadges[item.id] : null;
+        };
         const badgeMarkup = item => {
-            const info = badges[item.id];
+            const info = badgeInfo(item);
             if (!info) return '';
             const palette = info.tone === 'orange'
                 ? 'color:#965015;background:#fff1db;border:1px solid #ebcd9c;'
@@ -87,17 +101,25 @@ window.AtlasTrip = function (ctx) {
                 palette + '">' + esc(info.label) + '</span>';
         };
         const description = item => {
-            const prefix = badges[item.id]?.prefix;
+            const prefix = badgeInfo(item)?.prefix;
             return prefix && item.text.startsWith(prefix) ? item.text.slice(prefix.length) : item.text;
         };
+        const emphasizedDescription = item => {
+            const safeText = esc(description(item));
+            if (item.id !== 'entry') return safeText;
+            return safeText
+                .replace(/(^|[^\p{L}\p{N}])(Pasaporte|ETIAS|EES|visa|adaptador)(?=$|[^\p{L}\p{N}])/gu, '$1<strong>$2</strong>')
+                .replace(/travel-europe\.europa\.eu\/etias/g,
+                    '<a href="https://travel-europe.europa.eu/etias" target="_blank" rel="noopener noreferrer">sitio oficial de ETIAS</a>');
+        };
         const content = indicators
-            ? indicators.map(item => '<div class="practical-indicator">' +
+            ? indicators.map(item => '<div class="practical-indicator" data-indicator-id="' + esc(item.id) + '">' +
                 '<span class="practical-indicator-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">' +
                 (icons[item.id] || icons.solo) + '</svg></span>' +
-                '<div><strong>' + esc(item.title) + '</strong><p>' + badgeMarkup(item) + esc(description(item)) + '</p></div></div>').join('')
+                '<div><strong>' + esc(item.title) + '</strong><p>' + badgeMarkup(item) + emphasizedDescription(item) + '</p></div></div>').join('')
             : t.solo.split(/\n\s*\n/).filter(Boolean).map(part => '<div class="practical-item">' +
                 readable(part) + '</div>').join('');
-        return '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
+        return '<section class="overview-practical" aria-label="Estilo de viaje y consejos prácticos">' +
 
             '<div class="overview-practical-grid' + (indicators ? ' practical-indicators' : '') + '">' +
             content + '</div></section>';
@@ -213,9 +235,10 @@ window.AtlasTrip = function (ctx) {
             '</section>'
         ].join('');
     }
+    const legacyAdviceTripIds = new Set(['espana-portugal', 'espana', 'munich', 'munich-viena', 'portugal', 'suiza', 'suiza-italia', 'grecia', 'sicilia', 'washington', 'turquia', 'nueva-orleans', 'vegas', 'marruecos', 'san-antonio', 'puglia-matera']);
     function fullSectionMarkup(t, id, low, high) {
         const complete = canRenderFullTrip(t);
-        const masterOverview = t.id === 'emilia-romana' || !complete;
+        const masterOverview = !legacyAdviceTripIds.has(t.id) || !complete;
         const pending = () => '<span class="draft-pending">Por definir</span>';
         const hasBases = t.bases.length > 0;
         const overviewIntro = typeof t.intro === 'string' && t.intro.trim()
@@ -224,14 +247,23 @@ window.AtlasTrip = function (ctx) {
             ? climateCard(t) : '<article class="overview-climate-card"><h3>' +
                 overviewIcon('sun') + ' Clima y luz</h3><div class="fact-copy"><p>' + pending() + '</p></div></article>';
         const overviewAdvice = Array.isArray(t.practicalIndicators) && t.practicalIndicators.length
-            ? practicalAdvice(t) : '<section class="overview-practical" aria-label="Ritmo y consejos prácticos">' +
+            ? practicalAdvice(t) : '<section class="overview-practical" aria-label="Estilo de viaje y consejos prácticos">' +
                 '<div class="overview-practical-grid"><p>' + pending() + '</p></div></section>';
         const overviewBases = hasBases ? overviewStays(t, true) :
             '<div class="overview-stays overview-stays-inline"><div class="overview-stays-heading">' +
             '<h3 class="overview-subheading">' + overviewIcon('bed') +
             ' Dónde dormirás</h3></div><p>' + pending() + '</p></div>';
-        const overviewPrice = complete ? price(t) : pending();
-        const completeDays = complete && t.days.every(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places));
+        const overviewSummary = window.AtlasBudget?.currentSummary?.(t);
+        const hasPricedEntries = Boolean(t.majorTransport?.length || t.expenses?.length);
+        const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN)
+            ? money(overviewSummary.knownTotalMXN) : pending();
+        // Render detailed day cards as soon as their data exists, even for draft trips.
+        // A draft status must not force the entire itinerary into plain placeholders.
+        const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
+        const completeDays = readyDays.length > 0;
+        const renderedDays = () => (t.days || []).map((d, index) =>
+            readyDays.includes(d) ? day(d) : '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
+            '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p><p class="draft-pending">En preparación</p></article>').join('');
         const partialDays = () => t.days.length ? t.days.map((d, index) =>
             '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
             '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p>' +
@@ -265,7 +297,7 @@ window.AtlasTrip = function (ctx) {
             `<div>`,
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
             `<strong>${overviewPrice}</strong>`,
-            `<p class="budget-context">MXN · 1 persona · viaje completo</p>`,
+            `<p class="budget-context">MXN · 1 persona · estimación parcial del viaje</p>`,
             `<a class="budget-detail-link" href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
             `${complete && t.exchangeRates && t.exchangeRateSnapshot ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipos de cambio · ' +
                 esc(t.exchangeRateSnapshot.date) + '</div><div class="budget-exchange-values"><span>EUR 1 = $' +
@@ -292,13 +324,13 @@ window.AtlasTrip = function (ctx) {
             `${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : (canRenderFullTrip(t) ? '<section id="traslados" class="section wrap atlas-panel-section">' + (railPlanning(t) || '<article class="panel major-transport"><h2>Traslados principales.</h2><p class="draft-pending">Por definir</p></article>') + '</section>' : '<section class="major-transport" id="traslados"><div class="mt-heading"><span class="mt-kicker">Movilidad y conexiones</span><h2>Traslados principales.</h2></div><p class="draft-pending">Por definir</p></section>')}`,
             ].join(''),
             alojamientos: () => [
-            `${t.id === 'emilia-romana' || !canRenderFullTrip(t) ? '' : adviceCards(t)}`,
+            `${legacyAdviceTripIds.has(t.id) && canRenderFullTrip(t) ? adviceCards(t) : ''}`,
             `<article class="panel" id="alojamientos" style="margin-top:20px">`,
             `<div class="hotel-section-heading"><div class="hotel-section-kicker">${overviewIcon('bed')}<span>Tu estancia</span></div><h2>Tus alojamientos.</h2></div>`,
             `${stayParagraphs(id)}</article>${!t.planningDetails && canRenderFullTrip(t) ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>`,
             ].join(''),
             dias: () => [
-            `${completeDays ? variants(t) + railAppendix(t) : ''}<section class="section wrap atlas-panel-section" id="dias"><article class="panel itinerary-panel">`,
+            `${complete && completeDays ? variants(t) + railAppendix(t) : ''}<section class="section wrap atlas-panel-section" id="dias"><article class="panel itinerary-panel">`,
             `<div class="section-title">`,
             `<div>`,
             `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18M8 15h3m-3 3h7"/></svg><span>Itinerario</span></p>`,
@@ -310,7 +342,7 @@ window.AtlasTrip = function (ctx) {
             `</div>`,
             `<div class="itinerary-layout">`,
             `${completeDays ? '<aside class="daynav" aria-label="Días del itinerario">' + t.days.map(d => '<a href="#viaje/' + id + '/dia-' + d.n + '"><strong>Día ' + d.n + ' · ' + short(d.date) + '</strong>' + esc(d.base) + (hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : '') + '</a>').join('') + '</aside>' : ''}`,
-            `<div class="days">${completeDays ? t.days.map(day).join('') : partialDays()}</div>`,
+            `<div class="days">${completeDays ? renderedDays() : partialDays()}</div>`,
             `</div>`,
             `</article></section>`,
             ].join(''),

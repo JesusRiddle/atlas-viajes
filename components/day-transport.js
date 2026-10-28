@@ -91,7 +91,7 @@ window.AtlasDayTransport = (() => {
                     mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
                     '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Precio ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
                     (item.type === 'flight' ? '' : '<small>' + (providerLabel ? esc(providerLabel) + ' · ' : '') +
-                    esc(fare.name || fare.id) + '</small>') + '</div>';
+                    esc(fare.name || fare.id) + (item.budgetIncludedIn ? ' · Precio informativo, no se suma al pase' : '') + '</small>') + '</div>';
             }).join('') + '</div>';
     }
     function mountTransport(root, trip) {

@@ -652,7 +652,7 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 #traslados .mt-card>summary:hover {background:#f8fafb}
 #traslados .mt-card>summary:focus-visible {outline:3px solid #dc5c2e;outline-offset:-3px}
 #traslados .mt-selectors select {width:100%;min-height:42px;font-size:14px;line-height:1.35}
-#traslados .mt-selectors select:focus-visible {outline:3px solid #dc5c2e;outline-offset:2px;border-color:#dc5c2e}
+#traslados .mt-selectors select:focus-visible {outline:2px solid #526f78;outline-offset:2px;border-color:#829da5}
 /* Tabla de presupuesto: jerarquía visual uniforme, sin rayado alternado. */
 .budget-ledger .scrolltable{max-width:100%}
 .budget-ledger table{table-layout:fixed;font-size:14px;line-height:1.45}
@@ -910,7 +910,8 @@ html{scroll-padding-top:78px}
 #plan .practical-indicator{display:flex;align-items:flex-start;gap:9px;min-width:0}
 #plan .practical-indicator-icon{display:inline-flex;flex:none;color:var(--ink);margin-top:2px}
 #plan .practical-indicator>div{min-width:0}
-#plan .practical-indicator strong{display:block;font-size:13px;line-height:1.35}
+#plan .practical-indicator>div>strong{display:block;font-size:13px;line-height:1.35}
+#plan .practical-indicator p strong{display:inline;font-size:inherit;line-height:inherit;font-weight:700;color:var(--ink)}
 #plan .practical-indicator p{margin:3px 0 0;color:var(--muted);font-size:13px;line-height:1.5}
 @media(max-width:680px){#plan .overview-practical-grid.practical-indicators{grid-template-columns:1fr;gap:14px}}
 
@@ -2002,7 +2003,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 }
 
 /* Portadas del Home: zoom-in cinematográfico sutil durante el hover. */
-@media(hover:hover) and (pointer:fine){
+@media(prefers-reduced-motion:no-preference){
   #viajes .atlas-home-card .cardphoto>img:not(.cardphoto-slide),
   #viajes .atlas-home-card .cardphoto .cardphoto-slide{
     transform:scale(1);
@@ -2026,7 +2027,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   from{transform:scale(1)}
   to{transform:scale(1.065)}
 }
-@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+@media(prefers-reduced-motion:no-preference){
   #viajes .atlas-home-card .cardphoto img.cardphoto-zoom-cycle{
     animation:atlas-cover-zoom-cycle 2s linear both;
   }
@@ -2037,7 +2038,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   from{transform:scale(1.065)}
   to{transform:scale(1)}
 }
-@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+@media(prefers-reduced-motion:no-preference){
   #viajes .atlas-home-card .cardphoto img.cardphoto-zoom-cycle.cardphoto-zoom-out{
     animation-name:atlas-cover-zoom-out;
   }
@@ -2194,3 +2195,54 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
  .triphero-split .triphero-split-photo .triphero-zoom-in,
  .triphero-split .triphero-split-photo .triphero-zoom-out{animation:none}
 }
+
+/* Nombres largos en tarjetas del mapa: dos líneas dentro del tamaño existente. */
+.trip-map-section .trip-map-cities .map-city-list .map-city-select{
+  min-width:0;
+  overflow:hidden;
+}
+.trip-map-section .trip-map-cities .map-city-list .map-city-name{
+  max-width:100%;
+  white-space:normal;
+  overflow-wrap:anywhere;
+  line-height:1.2;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+  line-clamp:2;
+  overflow:hidden;
+}
+
+/* Panorama: dos indicadores breves a la izquierda y documentación a la derecha. */
+@media(min-width:681px){
+ #plan .overview-practical-grid.practical-indicators .practical-indicator[data-indicator-id="style"]{grid-column:1;grid-row:1}
+ #plan .overview-practical-grid.practical-indicators .practical-indicator[data-indicator-id="language"]{grid-column:1;grid-row:2}
+ #plan .overview-practical-grid.practical-indicators .practical-indicator[data-indicator-id="entry"]{grid-column:2;grid-row:1 / span 2}
+}
+
+/* Clima y luz: superficie neutra y estado derivado de Temporadas. */
+#plan .overview-climate-card[class*="season-"]{
+  background:transparent;
+  border-color:var(--line);
+  color:var(--ink);
+}
+#plan .overview-climate-card.season-recommended{border-top-color:#255535}
+#plan .overview-climate-card.season-conditional{border-top-color:#a87912}
+#plan .overview-climate-card.season-avoid{border-top-color:#a84950}
+#plan .overview-climate-card.season-pending{border-top-color:#8052a6}
+#plan .overview-climate-card[class*="season-"] .fact-copy p{color:var(--ink)}
+#plan .overview-climate-card .overview-climate-season-status{
+  font:700 11px/1.4 Arial,Helvetica,sans-serif;
+  margin-left:auto;
+  padding:3px 8px;
+  border:1px solid currentColor;
+  border-radius:20px;
+  white-space:nowrap;
+}
+#plan .overview-climate-card h3{flex-wrap:wrap}
+
+/* La etiqueta de Clima y luz comparte la paleta de estados de Temporadas. */
+#plan .overview-climate-card.season-recommended .overview-climate-season-status{background:#dceee1;color:#246a3d;border-color:#a3d2af}
+#plan .overview-climate-card.season-conditional .overview-climate-season-status{background:#f8eac5;color:#795200;border-color:#eac56d}
+#plan .overview-climate-card.season-avoid .overview-climate-season-status{background:#f5dfe0;color:#8b3037;border-color:#dfa7ad}
+#plan .overview-climate-card.season-pending .overview-climate-season-status{background:#ebddf7;color:#653b97;border-color:#d6c2e5}

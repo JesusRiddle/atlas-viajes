@@ -21,13 +21,16 @@ window.AtlasBudget = (() => {
         const option = transport.options?.find(o => o.id === optionId);
         const fareId = selection.fare || option?.selectedFare;
         const fare = option?.fares?.find(f => f.id === fareId);
-        return fare?.price || null;
+        const cost = fare?.price || null;
+        if (!cost || !Number.isFinite(cost.amount)) return cost;
+        const multiplier = Number(option.priceMultiplier || 1);
+        return multiplier > 1 ? { ...cost, amount: Math.round(cost.amount * multiplier * 100) / 100 } : cost;
     }
 
     function transportComparison(transport, rates = {}) {
         return (transport.options || []).flatMap(option => (option.fares || []).map(fare => ({
             option: option.id, fare: fare.id, name: fare.name,
-            cost: fare.price || null, mxn: convert(fare.price, rates)
+            cost: fare.price && option.priceMultiplier > 1 ? { ...fare.price, amount: Math.round(fare.price.amount * option.priceMultiplier * 100) / 100 } : fare.price || null, mxn: convert(fare.price && option.priceMultiplier > 1 ? { ...fare.price, amount: Math.round(fare.price.amount * option.priceMultiplier * 100) / 100 } : fare.price, rates)
         })));
     }
 
@@ -61,6 +64,8 @@ window.AtlasBudget = (() => {
             entries.push({ id, category, cost: cost || null, mxn, dates });
         };
         for (const item of trip.majorTransport || []) {
+            // Tramos informativos cubiertos por un pase: evitar doble contabilización.
+            if (item.budgetIncludedIn) continue;
             const selection = overrides[item.id] || {};
             const cost = selectedTransportPrice(item, selection);
             const day = Number.isInteger(item.day) ? trip.days?.find(d => d.n === item.day) : null;

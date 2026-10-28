@@ -3249,5 +3249,406 @@
       "attribution": "Chris Olszewski",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Interior_of_the_Museo_Enzo_Ferrari%2C_Modena%2C_2019%2C_12.jpg/1280px-Interior_of_the_Museo_Enzo_Ferrari%2C_Modena%2C_2019%2C_12.jpg"
     }
+  },
+  "italy27-siena-campo": {
+    "name": "Piazza del Campo · Siena",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siena_Cattedrale_nuova_Vista_su_la_Piazza_del_Campo_3.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Siena_Cattedrale_nuova_Vista_su_la_Piazza_del_Campo_3.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Zairon"
+    }
+  },
+  "italy27-lucca-anfiteatro": {
+    "name": "Piazza dell’Anfiteatro · Lucca",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucca_Piazza_dell'Anfiteatro_1.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Lucca_Piazza_dell%27Anfiteatro_1.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "attribution": "Zairon"
+    }
+  },
+  "italy27-manarola": {
+    "name": "Manarola · Cinque Terre",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Manarola_-_Cinque_Terre.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Manarola_-_Cinque_Terre.jpg",
+      "author": "Daniela M.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Daniela M."
+    }
+  },
+  "italy27-piazzale": {
+    "name": "Vistas desde Piazzale Michelangelo",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Firenze%20Piazzale%20Michelangelo%20Vista%20su%20Firenze%2010.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Firenze_Piazzale_Michelangelo_Vista_su_Firenze_10.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Zairon"
+    }
+  },
+  "italy27-portovenere": {
+    "name": "Portovenere · San Pietro y Castello Doria",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Porto_Venere%2C_Castello_Doria_e_Chiesa_di_San_Pietro.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Porto_Venere,_Castello_Doria_e_Chiesa_di_San_Pietro.jpg",
+      "author": "Palickap",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Palickap"
+    }
+  },
+  "italy27-vernazza": {
+    "name": "Vernazza · Cinque Terre",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Vernazza.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_Vernazza.jpg",
+      "author": "Svein-Magne Tunli",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Svein-Magne Tunli"
+    }
+  },
+  "italy27-santa-croce": {
+    "name": "Basilica di Santa Croce · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Santa_Croce_Firenze.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Croce_Firenze.jpg",
+      "author": "Markus Bernet",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+      "attribution": "Markus Bernet"
+    }
+  },
+  "italy27-san-miniato": {
+    "name": "San Miniato al Monte · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/San_Miniato_al_Monte.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:San_Miniato_al_Monte.jpg",
+      "author": "Bradley Weber",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "attribution": "Bradley Weber"
+    }
+  },
+  "italy27-spezia-morin": {
+    "name": "La Spezia · Passeggiata Morin",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Spezia_3.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:La_Spezia_3.jpg",
+      "author": "Al*from*Lig",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Al*from*Lig"
+    }
+  },
+  "italy27-siena-duomo": {
+    "name": "Duomo di Siena",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Il_Duomo_di_Siena.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Il_Duomo_di_Siena.jpg",
+      "author": "WikiViky21",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "WikiViky21"
+    }
+  },
+  "italy27-egizio": {
+    "name": "Museo Egizio · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torino_-_Museo_Egizio_-_2024-09-18_20-54-44_001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Torino%20-%20Museo%20Egizio%20-%202024-09-18%2020-54-44%20001.jpg",
+      "author": "Barbaragerosa",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Barbaragerosa"
+    }
+  },
+  "italy27-riomaggiore": {
+    "name": "Riomaggiore · Cinque Terre",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Riomaggiore%2C_Cinque_Terre.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Riomaggiore,%20Cinque%20Terre.jpg",
+      "author": "Jocelyn Erskine-Kellie",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "attribution": "Jocelyn Erskine-Kellie"
+    }
+  },
+  "italy27-vasariano": {
+    "name": "Corridoio Vasariano · interior histórico",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Inside_view_of_the_Vasari_Corridor_(corridoio_vasariano)_in_Florence%2C_Italy_(2).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Inside_view_of_the_Vasari_Corridor_(corridoio_vasariano)_in_Florence%2C_Italy_(2).jpg",
+      "author": "Diomidis Spinellis",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "attribution": "Diomidis Spinellis"
+    }
+  },
+  "italy27-bargello": {
+    "name": "Museo Nazionale del Bargello · fachada",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bargello.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Bargello.jpg",
+      "author": "Terrasque",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "attribution": "Terrasque"
+    }
+  },
+  "italy27-torino-san-carlo": {
+    "name": "Piazza San Carlo · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20San%20Carlo%2CTurin%2CItaly.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza_San_Carlo,Turin,Italy.jpg",
+      "author": "Alexandros Mantoukas",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Alexandros Mantoukas"
+    }
+  },
+  "italy27-spezia-prione": {
+    "name": "Via del Prione · La Spezia",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Spezia_-_Via_del_Prione.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:La_Spezia_-_Via_del_Prione.JPG",
+      "author": "William Domenichini",
+      "license": "CC BY-SA 3.0",
+      "attribution": "William Domenichini · CC BY-SA 3.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "italy27-byron": {
+    "name": "Grotta Byron · Portovenere",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portovenere%2C_grotta_byron.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Portovenere,_grotta_byron.JPG",
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Sailko · CC BY-SA 3.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "italy27-guinigi": {
+    "name": "Torre Guinigi · Lucca",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucca%20-%20Torre%20Guinigi%20from%20Campanile.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Lucca%20-%20Torre%20Guinigi%20from%20Campanile.jpg",
+      "author": "Ingo Mehling",
+      "attribution": "Ingo Mehling",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  },
+  "italy27-piazza-castello": {
+    "name": "Piazza Castello y Palazzo Madama · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20Castello%20di%20Torino%20e%20scorcio%20della%20Piazzetta%20Reale.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza%20Castello%20di%20Torino%20e%20scorcio%20della%20Piazzetta%20Reale.jpg",
+      "author": "Guglielmo di Rivoli",
+      "license": "CC0 1.0",
+      "attribution": "Guglielmo di Rivoli · CC0 1.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  },
+  "italy27-mole": {
+    "name": "Mole Antonelliana · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mole%20Antonelliana%20(37781).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Mole%20Antonelliana%20(37781).jpg",
+      "author": "Accurimbono",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Accurimbono · CC BY-SA 4.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  },
+  "italy27-brera": {
+    "name": "Pinacoteca di Brera · Milano",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pinacoteca%20di%20Brera%20-%20Milano%20-%20il%20cortile%20interno.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Pinacoteca%20di%20Brera%20-%20Milano%20-%20il%20cortile%20interno.JPG",
+      "author": "Stefano Stabile",
+      "license": "CC BY-SA 3.0",
+      "attribution": "Stefano Stabile · CC BY-SA 3.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+    }
+  },
+  "italy27-piccolomini": {
+    "name": "Libreria Piccolomini · Siena",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siena%20-%20Duomo%2C%20libreria%20piccolomini.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Siena%20-%20Duomo%2C%20libreria%20piccolomini.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-santo-spirito": {
+    "name": "Piazza Santo Spirito · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Florence%2C%20Piazza%20Santo%20Spirito%202.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Florence%2C_Piazza_Santo_Spirito_2.jpg",
+      "author": "Armin Kleiner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Armin Kleiner"
+    }
+  },
+  "italy27-madama": {
+    "name": "Palazzo Madama · Torino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torino%20-%20Palazzo%20Madama%20e%20Casaforte%20degli%20Acaja%20-%202025-09-13%20Marcok%20002.jpeg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Torino%20-%20Palazzo%20Madama%20e%20Casaforte%20degli%20Acaja%20-%202025-09-13%20Marcok%20002.jpeg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-sempione": {
+    "name": "Parco Sempione · Milano",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Parco%20Sempione%20-%20Milano%2C%202023.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Parco%20Sempione%20-%20Milano%2C%202023.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Consultar ficha de Wikimedia Commons · CC BY-SA 4.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  },
+  "italy27-lucca-fillungo": {
+    "name": "Via Fillungo · Lucca",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Fillungo%20-%20Lucques%20(IT52)%20-%202022-09-01%20-%201.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Via%20Fillungo%20-%20Lucques%20(IT52)%20-%202022-09-01%20-%201.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-pitti": {
+    "name": "Palazzo Pitti · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Firenze%20-%20Palazzo%20Pitti%20-%202026-09-15%2016-39-14%20001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Firenze%20-%20Palazzo%20Pitti%20-%202026-09-15%2016-39-14%20001.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-milan-scala": {
+    "name": "Piazza della Scala · Milano",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20170706%20MilanoStreets%209345%20(36350946550).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:20170706%20MilanoStreets%209345%20(36350946550).jpg",
+      "author": "Ray Swi-hymn",
+      "license": "CC BY-SA 2.0",
+      "attribution": "Ray Swi-hymn · CC BY-SA 2.0 · Wikimedia Commons",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+    }
+  },
+  "italy27-capellini": {
+    "name": "Via Giovanni Capellini · Portovenere",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Giovanni%20Capellini%20-%20Porto%20Venere%20(IT42)%20-%202022-08-30%20-%201.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Via%20Giovanni%20Capellini%20-%20Porto%20Venere%20(IT42)%20-%202022-08-30%20-%201.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-opera-duomo": {
+    "name": "Museo dell’Opera del Duomo · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nuovo%20museo%20dell'opera%20del%20duomo%2C%20sala%20del%20facciatone%20e%20delle%20porte%20del%20battistero%2001.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nuovo%20museo%20dell'opera%20del%20duomo%2C%20sala%20del%20facciatone%20e%20delle%20porte%20del%20battistero%2001.JPG",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-ponte": {
+    "name": "Ponte Vecchio · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20Vecchio%20(Florencia).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Ponte%20Vecchio%20(Florencia).jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia de la imagen",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "italy27-lucca-walls": {
+    "name": "Murallas renacentistas · Lucca",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista%20delle%20Mura%20dall'esterno%20-%20Lucca.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Vista%20delle%20Mura%20dall'esterno%20-%20Lucca.jpg",
+      "author": "Fedispili",
+      "attribution": "Fedispili",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  },
+  "italy27-signoria": {
+    "name": "Piazza della Signoria y Palazzo Vecchio · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20della%20signoria%2C%20palazzo%20vecchio%2C%20veduta%2001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Piazza%20della%20signoria%2C%20palazzo%20vecchio%2C%20veduta%2001.jpg",
+      "author": "Sailko",
+      "attribution": "Sailko",
+      "license": "CC BY-SA 4.0"
+    }
+  },
+  "italy27-palazzo-pubblico": {
+    "name": "Palazzo Pubblico · Siena",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siena%20-%20Palazzo%20Pubblico%20-%202024-09-26%2018-43-45%20001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Siena%20-%20Palazzo%20Pubblico%20-%202024-09-26%2018-43-45%20001.jpg",
+      "author": "Wikimedia Commons",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia en la ficha"
+    }
+  },
+  "italy27-monterosso": {
+    "name": "Monterosso al Mare · Cinque Terre",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Monterosso%20al%20Mare%2C%20Cinque%20Terre%2C%20Liguria%2C%20Italy%2C%20April%202026.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Monterosso%20al%20Mare%2C%20Cinque%20Terre%2C%20Liguria%2C%20Italy%2C%20April%202026.jpg",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia y autor en Wikimedia Commons"
+    }
+  },
+  "italy27-siena-via-citta": {
+    "name": "Via di Città · Siena",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siena%2C%20via%20di%20Citt%C3%A0.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Siena%2C%20via%20di%20Citt%C3%A0.jpg",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia y autor en Wikimedia Commons"
+    }
+  },
+  "italy27-san-pietro-portovenere": {
+    "name": "Chiesa di San Pietro · Portovenere",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portovenere%20-%20Chiesa%20di%20San%20Pietro%20-%202025-09-08%2011-36-19%20001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Portovenere%20-%20Chiesa%20di%20San%20Pietro%20-%202025-09-08%2011-36-19%20001.jpg",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia y autor en Wikimedia Commons"
+    }
+  },
+  "italy27-firenze-cathedral": {
+    "name": "Catedral de Santa Maria del Fiore · Firenze",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/202612%20Santa%20Maria%20del%20Fiore%20(Florence)%20-%20Facade%2001.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:202612%20Santa%20Maria%20del%20Fiore%20(Florence)%20-%20Facade%2001.jpg",
+      "attribution": "Wikimedia Commons",
+      "license": "Ver licencia y autor en Wikimedia Commons"
+    }
   }
 }
