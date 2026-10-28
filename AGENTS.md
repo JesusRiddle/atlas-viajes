@@ -1,6 +1,7 @@
 # Instrucciones del proyecto Atlas de Viajes
 
 Antes de crear, modificar o auditar un viaje:
+0. Leer `docs/trip-production-checklist.md` y preparar una auditoría por lotes (logística, contenido, presupuesto y QA), evitando revisiones repetitivas con el usuario.
 1. Leer `docs/trip-editorial-guide.md` para contenido y estilo de las nueve secciones.
 2. Leer `docs/trip-data-contract.md` para tipos de datos y pendientes, `data/trips/_template.json` para estructura y `docs/emilia-romagna-master-standard.md` para la referencia visual.
 3. Mantener reglas editoriales fuera de los JSON turísticos. No copiar reservas ni itinerarios de otros viajes al nuevo.
