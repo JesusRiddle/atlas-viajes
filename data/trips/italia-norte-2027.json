@@ -3894,6 +3894,150 @@
       },
       "status": "estimated",
       "notes": "Referencia oficial 2026; confirmar tarifa 2027, no comprado"
+    },
+    {
+      "id": "ticket-egizio",
+      "category": "tickets",
+      "concept": "Museo Egizio · Torino",
+      "date": "2027-04-05",
+      "cost": {
+        "amount": 18,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia consultada 27/10/2026; no comprado, reconfirmar tarifa 2027. Oficial museoegizio.it/en/info/faq/"
+    },
+    {
+      "id": "ticket-milano-duomo",
+      "category": "tickets",
+      "concept": "Duomo Milano · combo terrazas con elevador",
+      "date": "2027-04-07",
+      "cost": {
+        "amount": 26,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia consultada 27/10/2026; no comprado, reconfirmar tarifa 2027. Tarifa oficial de referencia combo lift 2025; validar 2027 y fecha elegida. duomomilano.it"
+    },
+    {
+      "id": "ticket-brera",
+      "category": "tickets",
+      "concept": "Pinacoteca di Brera · Grande Brera",
+      "date": "2027-04-07",
+      "cost": {
+        "amount": 20,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia consultada 27/10/2026; no comprado, reconfirmar tarifa 2027. Oficial pinacotecabrera.org/visita/ingressi/"
+    },
+    {
+      "id": "ticket-siena",
+      "category": "tickets",
+      "concept": "Duomo Siena · complejo OPA SI PASS básico",
+      "date": "2027-04-12",
+      "cost": {
+        "amount": 14,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia consultada 27/10/2026; no comprado, reconfirmar tarifa 2027. Tarifa de temporada normal 2026 oficial operaduomo.siena.it/en/piccolomini-library/; validar 2027"
+    },
+    {
+      "id": "ticket-santa-croce",
+      "category": "tickets",
+      "concept": "Santa Croce · Firenze",
+      "date": "2027-04-14",
+      "cost": {
+        "amount": 10,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia consultada 27/10/2026; no comprado, reconfirmar tarifa 2027. Tarifa publicada feelflorence.it; verificar 2027"
+    },
+    {
+      "id": "ticket-bargello",
+      "category": "tickets",
+      "concept": "Museo Nazionale del Bargello",
+      "date": "2027-04-15",
+      "cost": {
+        "amount": 12,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia consultada 27/10/2026; no comprado, reconfirmar tarifa 2027. Tarifa general oficial bargellomusei.it/biglietti/museo-nazionale-del-bargello/; reserva online puede agregar €3"
+    },
+    {
+      "id": "tax-milano",
+      "category": "taxes",
+      "concept": "Impuesto turístico Milano · 4 noches",
+      "date": "2027-04-04",
+      "cost": {
+        "amount": 28,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Estimación hotel 3 estrellas €7/noche ×4; verificar clasificación y hotel, ordenanza municipal 2026."
+    },
+    {
+      "id": "tax-la-spezia",
+      "category": "taxes",
+      "concept": "Impuesto turístico La Spezia · 3 noches",
+      "date": "2027-04-08",
+      "cost": {
+        "amount": 9,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Provisión €3/noche ×3, NO tarifa oficial confirmada para establecimiento concreto; confirmar en hotel y ordenanza 2027."
+    },
+    {
+      "id": "tax-firenze",
+      "category": "taxes",
+      "concept": "Impuesto turístico Firenze · 5 noches",
+      "date": "2027-04-11",
+      "cost": {
+        "amount": 30,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Referencia hotel 3 estrellas €6/noche ×5; verificar clase del hotel y ordenanza 2027."
+    },
+    {
+      "id": "local-mobility",
+      "category": "local_transport",
+      "concept": "Transporte urbano y conexiones cortas · provisión",
+      "date": "2027-04-04",
+      "cost": {
+        "amount": 45,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Estimación global 14 días, no cotización; no incluye trenes/buses interurbanos ya registrados."
+    },
+    {
+      "id": "bag-storage-lucca",
+      "category": "other",
+      "concept": "Consigna de equipaje Lucca · provisión",
+      "date": "2027-04-11",
+      "cost": {
+        "amount": 12,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Estimación no cotizada, confirmar servicio, apertura y precio."
+    },
+    {
+      "id": "trip-contingency",
+      "category": "contingency",
+      "concept": "Reserva para imprevistos y variación de precios",
+      "date": "2027-04-03",
+      "cost": {
+        "amount": 3000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión discrecional, no gasto comprometido."
     }
   ],
   "cover": "milan-duomo",
