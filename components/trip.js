@@ -235,6 +235,7 @@ window.AtlasTrip = function (ctx) {
             '</section>'
         ].join('');
     }
+    const legacyAdviceTripIds = new Set(['espana-portugal', 'espana', 'munich', 'munich-viena', 'portugal', 'suiza', 'suiza-italia', 'grecia', 'sicilia', 'washington', 'turquia', 'nueva-orleans', 'vegas', 'marruecos', 'san-antonio', 'puglia-matera']);
     function fullSectionMarkup(t, id, low, high) {
         const complete = canRenderFullTrip(t);
         const masterOverview = t.id === 'emilia-romana' || !complete;
@@ -320,7 +321,7 @@ window.AtlasTrip = function (ctx) {
             `${t.majorTransport?.length ? window.AtlasMajorTransport.render(t) : (canRenderFullTrip(t) ? '<section id="traslados" class="section wrap atlas-panel-section">' + (railPlanning(t) || '<article class="panel major-transport"><h2>Traslados principales.</h2><p class="draft-pending">Por definir</p></article>') + '</section>' : '<section class="major-transport" id="traslados"><div class="mt-heading"><span class="mt-kicker">Movilidad y conexiones</span><h2>Traslados principales.</h2></div><p class="draft-pending">Por definir</p></section>')}`,
             ].join(''),
             alojamientos: () => [
-            `${t.id === 'emilia-romana' || !canRenderFullTrip(t) ? '' : adviceCards(t)}`,
+            `${legacyAdviceTripIds.has(t.id) && canRenderFullTrip(t) ? adviceCards(t) : ''}`,
             `<article class="panel" id="alojamientos" style="margin-top:20px">`,
             `<div class="hotel-section-heading"><div class="hotel-section-kicker">${overviewIcon('bed')}<span>Tu estancia</span></div><h2>Tus alojamientos.</h2></div>`,
             `${stayParagraphs(id)}</article>${!t.planningDetails && canRenderFullTrip(t) ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>`,
