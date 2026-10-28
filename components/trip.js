@@ -253,7 +253,10 @@ window.AtlasTrip = function (ctx) {
             '<div class="overview-stays overview-stays-inline"><div class="overview-stays-heading">' +
             '<h3 class="overview-subheading">' + overviewIcon('bed') +
             ' Dónde dormirás</h3></div><p>' + pending() + '</p></div>';
-        const overviewPrice = money(window.AtlasBudget.currentSummary(t).knownTotalMXN);
+        const overviewSummary = window.AtlasBudget?.currentSummary?.(t);
+        const hasPricedEntries = Boolean(t.majorTransport?.length || t.expenses?.length);
+        const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN)
+            ? money(overviewSummary.knownTotalMXN) : pending();
         // Render detailed day cards as soon as their data exists, even for draft trips.
         // A draft status must not force the entire itinerary into plain placeholders.
         const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
