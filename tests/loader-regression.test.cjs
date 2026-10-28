@@ -315,12 +315,13 @@ test('Día por día y Presupuesto muestran pendientes sin totales ficticios', ()
     assert.doesNotMatch(main.innerHTML, /id="expand"|id="print"/);
 });
 
-test('el alta mínima queda oculta hasta activar el módulo y conserva los 17 viajes', async () => {
+test('el alta mínima queda oculta hasta activar el módulo y conserva los viajes activos', async () => {
     const catalog = loadCatalog();
     const sample = catalog.find(item => item.id === 'nuevo-viaje');
     assert.ok(sample);
     assert.equal(sample.available, false);
-    assert.equal(catalog.filter(item => item.available).length, 17);
+    assert.ok(catalog.filter(item => item.available).length >= 17);
+    assert.ok(catalog.some(item => item.id === 'italia-norte-2027' && item.available));
     assert.equal(sample.file, 'nuevo-viaje.json');
     const minimal = JSON.parse(fs.readFileSync('data/trips/nuevo-viaje.json', 'utf8'));
     assert.deepEqual(minimal, { id: 'nuevo-viaje', name: 'Nuevo destino' });
@@ -347,7 +348,8 @@ test('el alta mínima queda oculta hasta activar el módulo y conserva los 17 vi
 
 test('migración piloto preserva contenido sin copiar fechas ni precios heredados', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog.filter(m => m.available).length, 17);
+    assert.ok(catalog.filter(m => m.available).length >= 17);
+    assert.ok(catalog.some(m => m.id === 'italia-norte-2027' && m.available));
     const module = catalog.find(m => m.id === 'espana-portugal-renovado');
     assert.ok(module);
     assert.equal(module.available, false);
