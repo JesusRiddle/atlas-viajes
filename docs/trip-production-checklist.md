@@ -17,7 +17,7 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 4. **Bloque D · Presentación y QA:** ejecutar en una sola pasada pruebas de JSON, sintaxis JS, referencias, opciones/tarifas, sumas, renderizado y navegación móvil/escritorio, ausencia de errores en consola, y regresión de los otros viajes. No decir «probado en navegador» si solo se verificó sintaxis o lógica aislada.
 
 ## Comparación obligatoria con los dos viajes terminados
-Antes de crear un viaje, revisar `data/trips/emilia-romana.json` y `data/trips/italia-norte-2027.json` junto con las reglas de `docs/emilia-romagna-master-standard.md`. Antes de entregar, comparar **las nueve secciones visibles**, sus datos y sus componentes, en escritorio y móvil cuando haya navegador disponible:
+Antes de crear un viaje, leer `docs/trip-master-standard.md` y `data/trips/_template.json`; `data/trips/italia-norte-2027.json` se puede consultar como ejemplo práctico, pero nunca es un requisito del proceso. Antes de entregar, comparar **las nueve secciones visibles**, sus datos y sus componentes, en escritorio y móvil cuando haya navegador disponible:
 
 1. **Panorama:** introducción turística, indicadores prácticos, alojamientos y noches, inversión aproximada, divisas y tipo de cambio con fecha, clima y luz; sin tarjetas heredadas duplicadas.
 2. **Mapa:** localidades reales, pines válidos, correspondencia con el recorrido y comportamiento interactivo.
