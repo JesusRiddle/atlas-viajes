@@ -4,7 +4,7 @@
 Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se trabaja como un paquete integral, con un solo registro de pendientes y pruebas agrupadas. Este documento complementa la guía editorial, el contrato de datos y AGENTS.md.
 
 ## Antes de crear el JSON
-1. Confirmar fechas, vuelo internacional y su precio, aeropuertos, restricciones, bases, noches y horas reales de llegada/salida.
+1. Confirmar fechas, vuelo internacional y su precio, aeropuertos, restricciones, ciudades donde se pernocta, alojamientos, noches y horas reales de llegada/salida. En la interfaz y los textos editoriales, no usar «base» como sinónimo de alojamiento; conservar `bases` solo como campo técnico para compatibilidad.
 2. Definir recorrido de ciudades y excursiones con tiempos puerta a puerta, conexión y equipaje. Registrar destinos opcionales por separado.
 3. Crear **matriz de logística**: fecha, origen, destino, opciones A/B/C, sentidos ida/regreso independientes, horarios, operador, estación o parada exacta, transbordos y minutos, compra, validación, costo, fuente y fecha de consulta.
 4. Marcar expresamente «confirmado», «referencia de otra fecha», «estimado», «pendiente» y «comprado». Nunca presentar un horario de 2026 como servicio confirmado de 2027.
