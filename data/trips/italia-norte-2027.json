@@ -539,7 +539,7 @@
       "am": "1. Desayunar, cerrar equipaje y realizar check-out en Firenze; dirigirse a Firenze Santa Maria Novella (SMN).\n2. Tomar un tren directo de alta velocidad a Milano Centrale. Elegir una salida con margen suficiente para retrasos y para cambiar de tren; el horario 2027 aún no está publicado/cotizado.",
       "pm": "1. En Milano Centrale, cambiar al Malpensa Express hacia la terminal correspondiente; comprobar salida, billete y tiempo de traslado entre andenes.\n2. Objetivo prudente: estar en Milano Malpensa hacia las 18:30–19:00 para el vuelo previsto a las 23:05. Llegar con holgura, ya que los trenes y el vuelo se contratan por separado.\n3. Documentación, seguridad y control de pasaportes según indicaciones de Aeroméxico y del aeropuerto.",
       "night": "1. Vuelo directo Aeroméxico MXP → MEX: salida cotizada el viernes 16 de abril a las 23:05, hora de Italia.\n2. Noche a bordo; llegada prevista a Ciudad de México el sábado 17 de abril a las 04:00, hora local. Migración, aduana y traslado a casa el sábado; domingo 18 libre para descansar.",
-      "mobility": "• *Firenze SMN → Milano Centrale (alta velocidad directa):* A) Italo Prima Business 14:25→16:20 desde €47,90; B) Frecciarossa 9584 14:55→16:50 desde €67; C) Frecciarossa 9540 15:55→17:50 desde €46,90. Referencias viernes 06/11/2026, NO confirmadas para 16/04/2027. Billete de cada operador válido solo según su tarifa/servicio; opciones B/C no cubiertas automáticamente por Italo.\n• *Milano Centrale → Malpensa Aeroporto T1 (Malpensa Express):* A) MXP 2962 16:55→17:48; B) MXP 2964 17:25→18:18; C) MXP 2968 18:25→19:18. Cada uno €15 según captura Trenord viernes 06/11/2026, servicios directos 53 min, reconfirmar para 16/04/2027. Las conexiones desde Firenze A/B/C dejan 35 min para cambiar de tren en Milano Centrale; billetes independientes, sin garantía automática ante retrasos. Revisar vía/andén en pantallas; salir del tren en Malpensa T1 y seguir señalización Partenze/Departures.\n• *MXP → CDMX:* Vuelo directo Aeroméxico, salida cotizada viernes 16 a las 23:05 y llegada sábado 17 a las 04:00, hora local.\n• *Auditoría de conexión:* A/B/C ofrecen 35 minutos programados entre llegada a Milano Centrale y salida a Malpensa. El billete separado no protege automáticamente la segunda conexión; si hay retraso, comprobar el siguiente Malpensa Express y las condiciones de uso o comprar otro billete si corresponde.",
+      "mobility": "• *Firenze SMN → Milano Centrale (alta velocidad directa):* A) Italo Prima Business 14:25→16:20 desde €47,90; B) Frecciarossa 9584 14:55→16:50 desde €67; C) Frecciarossa 9540 15:55→17:50 desde €46,90. Referencias viernes 06/11/2026, NO confirmadas para 16/04/2027. Billete de cada operador válido solo según su tarifa/servicio; opciones B/C no cubiertas automáticamente por Italo.\n• *Milano Centrale → Malpensa Aeroporto T1 (Malpensa Express):* A) MXP 2962 16:55→17:48; B) MXP 2964 17:25→18:18; C) MXP 2968 18:25→19:18. Cada uno €15 según captura Trenord viernes 06/11/2026, servicios directos 53 min, reconfirmar para 16/04/2027. Las conexiones desde Firenze A/B/C dejan 35 min para cambiar de tren en Milano Centrale; billetes independientes, sin garantía automática ante retrasos. Revisar vía/andén en pantallas; salir del tren en Malpensa T1 y seguir señalización Partenze/Departures.\n• *MXP → CDMX:* Vuelo directo Aeroméxico, salida cotizada viernes 16 a las 23:05 y llegada sábado 17 a las 04:00, hora local.\n• *Auditoría de conexión:* A/B/C ofrecen 35 minutos programados entre llegada a Milano Centrale y salida a Malpensa. El billete separado no protege automáticamente la segunda conexión; si hay retraso, comprobar el siguiente Malpensa Express y las condiciones de uso o comprar otro billete si corresponde.\n• *Compra aeropuerto:* en Malpensa Express/Trenord comprobar billete digital de retorno 30 días €25 por ambos trayectos (vs. €30 con dos sencillos), siempre que cubra T1↔Milano Centrale y fechas; el presupuesto aún suma sencillos. https://www.malpensaexpress.it/en/travel-documents/tickets/",
       "note": "• *Margen aeroportuario:* Objetivo de llegada a MXP hacia las 18:30–19:00; trenes y vuelo no constituyen conexión protegida.\n• *Reservas:* No fijar visitas con entrada para el viernes. Horarios ferroviarios y vuelo todavía sin comprar.\n• *Descanso:* Llegada a México sábado 17; domingo 18 libre.",
       "spend": null,
       "places": [],
@@ -1113,6 +1113,10 @@
         {
           "label": "Horarios y billetes oficiales",
           "url": "https://www.trenord.it/en/linee-e-orari/il-nostro-servizio/malpensa-express/"
+        },
+        {
+          "label": "Compra y validación · operador oficial",
+          "url": "https://www.malpensaexpress.it/en/travel-documents/tickets/"
         }
       ],
       "boardingLocations": [
@@ -1125,7 +1129,9 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
         }
       ],
-      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje."
+      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje.",
+      "ticketGuide": "Compra: Trenord / Malpensa Express (web o app), elegir Milano Centrale ↔ Malpensa Aeroporto T1 y fecha. Billete digital Malpensa Express: válido en el día elegido hasta fin de servicio, sin convalidación física; mostrar título en móvil. Existe retorno digital de 30 días por €25 frente a dos sencillos de €15 (€30), sujeto a que la compra cubra ambos sentidos y fechas; comparar antes de comprar.",
+      "notes": " Comparar retorno Trenord de 30 días (tarifa €25 vigente como referencia) con 2 sencillos €30; evitar contabilizar ambas modalidades."
     },
     {
       "id": "train-torino",
@@ -1248,6 +1254,10 @@
         {
           "label": "Consultar alternativa",
           "url": "https://www.italotreno.com/"
+        },
+        {
+          "label": "Compra y validación · operador oficial",
+          "url": "https://www.trenitalia.com/es/informacion/viajar-con-el-regionale.html"
         }
       ],
       "boardingLocations": [
@@ -1260,7 +1270,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Torino%20Porta%20Nuova%20railway%20station"
         }
       ],
-      "boardingNote": "Consultar estación y número de andén en paneles. No hay intercambio automático entre Italo y Trenitalia. Opciones A/B/C se seleccionan independientemente para cada sentido."
+      "boardingNote": "Consultar estación y número de andén en paneles. No hay intercambio automático entre Italo y Trenitalia. Opciones A/B/C se seleccionan independientemente para cada sentido.",
+      "ticketGuide": "Compra: seleccionar operador, fecha, estación exacta, hora y tarifa en Trenitalia o Italo; revisar condiciones de cambio. Italo, Frecciarossa e Intercity electrónicos: presentar billete/PNR y documento según operador, no timbrar en máquina. Regionale digital Trenitalia: validación automática a salida programada; regional en papel: convalidar en máquina antes de subir. No cambiar de operador sin billete válido."
     },
     {
       "id": "train-torino-return",
@@ -1383,6 +1394,10 @@
         {
           "label": "Consultar alternativa",
           "url": "https://www.italotreno.com/"
+        },
+        {
+          "label": "Compra y validación · operador oficial",
+          "url": "https://www.trenitalia.com/es/informacion/viajar-con-el-regionale.html"
         }
       ],
       "boardingLocations": [
@@ -1395,7 +1410,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Torino%20Porta%20Nuova%20railway%20station"
         }
       ],
-      "boardingNote": "Consultar estación y número de andén en paneles. No hay intercambio automático entre Italo y Trenitalia. Opciones A/B/C se seleccionan independientemente para cada sentido."
+      "boardingNote": "Consultar estación y número de andén en paneles. No hay intercambio automático entre Italo y Trenitalia. Opciones A/B/C se seleccionan independientemente para cada sentido.",
+      "ticketGuide": "Compra: seleccionar operador, fecha, estación exacta, hora y tarifa en Trenitalia o Italo; revisar condiciones de cambio. Italo, Frecciarossa e Intercity electrónicos: presentar billete/PNR y documento según operador, no timbrar en máquina. Regionale digital Trenitalia: validación automática a salida programada; regional en papel: convalidar en máquina antes de subir. No cambiar de operador sin billete válido."
     },
     {
       "id": "train-milano-la-spezia",
@@ -1514,6 +1530,10 @@
         {
           "label": "Horarios y billetes oficiales",
           "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Compra y validación · operador oficial",
+          "url": "https://www.trenitalia.com/es/informacion/viajar-con-el-regionale.html"
         }
       ],
       "boardingLocations": [
@@ -1526,7 +1546,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station"
         }
       ],
-      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje."
+      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje.",
+      "ticketGuide": "Compra: seleccionar operador, fecha, estación exacta, hora y tarifa en Trenitalia o Italo; revisar condiciones de cambio. Italo, Frecciarossa e Intercity electrónicos: presentar billete/PNR y documento según operador, no timbrar en máquina. Regionale digital Trenitalia: validación automática a salida programada; regional en papel: convalidar en máquina antes de subir. No cambiar de operador sin billete válido."
     },
     {
       "id": "bus-portovenere",
@@ -1749,7 +1770,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Giardini%20bus%20stop%20La%20Spezia"
         }
       ],
-      "boardingNote": "Ida: subir en La Spezia, Via Chiodo Portici, dirección Portovenere. Llegada y regreso: capolinea autobus Portovenere (verificar dársena/poste). Vuelta: bajarse en Via Chiodo Giardini, distinta a Portici; mapa por nombre de parada, verificar poste físico y desvíos el día anterior. ATC: billete en papel código 03 (€2.50 publicado) o DropTicket extraurbano 0–22 km (€3 publicado). App activa automáticamente al pagar (comprar justo antes de subir), mostrar billete electrónico al conductor; papel timbrar en validadora a bordo."
+      "boardingNote": "Ida: subir en La Spezia, Via Chiodo Portici, dirección Portovenere. Llegada y regreso: capolinea autobus Portovenere (verificar dársena/poste). Vuelta: bajarse en Via Chiodo Giardini, distinta a Portici; mapa por nombre de parada, verificar poste físico y desvíos el día anterior. ATC: billete en papel código 03 (€2.50 publicado) o DropTicket extraurbano 0–22 km (€3 publicado). App activa automáticamente al pagar (comprar justo antes de subir), mostrar billete electrónico al conductor; papel timbrar en validadora a bordo.",
+      "ticketGuide": "Compra: billete físico ATC código 03, convalidar al subir, o DropTicket extraurbano 0–22 km, que se activa al comprar (adquirir cerca de la salida). Ida subir Via Chiodo Portici y bajar Portovenere capolinea; regreso desde capolinea, bajar Via Chiodo Giardini. Confirmar obras y poste."
     },
     {
       "id": "train-cinque-terre",
@@ -1928,7 +1950,8 @@
         }
       ],
       "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje.",
-      "notes": "undefined Cada tramo tiene ahora A/B/C seleccionables por separado. Los importes de €8 por tramo son comparativos y están excluidos del presupuesto para no duplicarlos con el pase. Si se escogen billetes individuales, seleccionar en este transporte padre la tarifa individual correspondiente al recorrido y revisar si se añade Monterosso."
+      "notes": "undefined Cada tramo tiene ahora A/B/C seleccionables por separado. Los importes de €8 por tramo son comparativos y están excluidos del presupuesto para no duplicarlos con el pase. Si se escogen billetes individuales, seleccionar en este transporte padre la tarifa individual correspondiente al recorrido y revisar si se añade Monterosso.",
+      "ticketGuide": "Compra: comparar Cinque Terre Treno MS Card de 1 día con 4 o 5 billetes regionales; la tarjeta nominativa cubre solo servicios regionales autorizados, no Intercity. Regional digital: activación automática en salida seleccionada; papel: validar antes de abordar. Consultar condición específica de activación de la tarjeta y documento de identidad antes de comprar."
     },
     {
       "id": "ct-spezia-riomaggiore",
@@ -2069,7 +2092,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Manarola%20railway%20station"
         }
       ],
-      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre."
+      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre.",
+      "ticketGuide": "Compra: comparar Cinque Terre Treno MS Card de 1 día con 4 o 5 billetes regionales; la tarjeta nominativa cubre solo servicios regionales autorizados, no Intercity. Regional digital: activación automática en salida seleccionada; papel: validar antes de abordar. Consultar condición específica de activación de la tarjeta y documento de identidad antes de comprar."
     },
     {
       "id": "ct-riomaggiore-manarola",
@@ -2206,7 +2230,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Manarola%20railway%20station"
         }
       ],
-      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre."
+      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre.",
+      "ticketGuide": "Compra: comparar Cinque Terre Treno MS Card de 1 día con 4 o 5 billetes regionales; la tarjeta nominativa cubre solo servicios regionales autorizados, no Intercity. Regional digital: activación automática en salida seleccionada; papel: validar antes de abordar. Consultar condición específica de activación de la tarjeta y documento de identidad antes de comprar."
     },
     {
       "id": "ct-manarola-vernazza",
@@ -2343,7 +2368,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vernazza%20railway%20station"
         }
       ],
-      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre."
+      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre.",
+      "ticketGuide": "Compra: comparar Cinque Terre Treno MS Card de 1 día con 4 o 5 billetes regionales; la tarjeta nominativa cubre solo servicios regionales autorizados, no Intercity. Regional digital: activación automática en salida seleccionada; papel: validar antes de abordar. Consultar condición específica de activación de la tarjeta y documento de identidad antes de comprar."
     },
     {
       "id": "ct-vernazza-spezia",
@@ -2484,7 +2510,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Vernazza%20railway%20station"
         }
       ],
-      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre."
+      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre.",
+      "ticketGuide": "Compra: comparar Cinque Terre Treno MS Card de 1 día con 4 o 5 billetes regionales; la tarjeta nominativa cubre solo servicios regionales autorizados, no Intercity. Regional digital: activación automática en salida seleccionada; papel: validar antes de abordar. Consultar condición específica de activación de la tarjeta y documento de identidad antes de comprar."
     },
     {
       "id": "ct-vernazza-monterosso",
@@ -2621,7 +2648,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Monterosso%20railway%20station"
         }
       ],
-      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre."
+      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre.",
+      "ticketGuide": "Compra: comparar Cinque Terre Treno MS Card de 1 día con 4 o 5 billetes regionales; la tarjeta nominativa cubre solo servicios regionales autorizados, no Intercity. Regional digital: activación automática en salida seleccionada; papel: validar antes de abordar. Consultar condición específica de activación de la tarjeta y documento de identidad antes de comprar."
     },
     {
       "id": "ct-monterosso-spezia",
@@ -2762,7 +2790,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Monterosso%20railway%20station"
         }
       ],
-      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre."
+      "boardingNote": "Consultar andén de Trenitalia y avisos en la estación. Tarifa individual informativa: no sumar al presupuesto cuando se usa la tarjeta Cinque Terre.",
+      "ticketGuide": "Compra: comparar Cinque Terre Treno MS Card de 1 día con 4 o 5 billetes regionales; la tarjeta nominativa cubre solo servicios regionales autorizados, no Intercity. Regional digital: activación automática en salida seleccionada; papel: validar antes de abordar. Consultar condición específica de activación de la tarjeta y documento de identidad antes de comprar."
     },
     {
       "id": "train-la-spezia-lucca",
@@ -2887,6 +2916,10 @@
         {
           "label": "Horarios y billetes oficiales",
           "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Compra y validación · operador oficial",
+          "url": "https://www.trenitalia.com/es/informacion/viajar-con-el-regionale.html"
         }
       ],
       "transbordosVerificados": [
@@ -2930,7 +2963,8 @@
         }
       ],
       "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje. Opción A: cambio en Viareggio de solo 6 minutos (IC651 10:09 → R18707 10:15). Muy ajustado; el segundo tren era extraordinario de otoño 2026, revisar alternativas 2027.",
-      "notes": "\nPENDIENTE 2027 (prioritario): cuando se publiquen los horarios para domingo 11/04/2027, buscar y elegir una conexión La Spezia Centrale → Lucca con transbordo de AL MENOS 20 MINUTOS; evitar la opción actual IC 651 → R 18707 en Viareggio (solo 6 minutos; regional extraordinario de 2026). No comprar antes de reconfirmar operatividad y andenes."
+      "notes": "\nPENDIENTE 2027 (prioritario): cuando se publiquen los horarios para domingo 11/04/2027, buscar y elegir una conexión La Spezia Centrale → Lucca con transbordo de AL MENOS 20 MINUTOS; evitar la opción actual IC 651 → R 18707 en Viareggio (solo 6 minutos; regional extraordinario de 2026). No comprar antes de reconfirmar operatividad y andenes.",
+      "ticketGuide": "Compra: seleccionar operador, fecha, estación exacta, hora y tarifa en Trenitalia o Italo; revisar condiciones de cambio. Italo, Frecciarossa e Intercity electrónicos: presentar billete/PNR y documento según operador, no timbrar en máquina. Regionale digital Trenitalia: validación automática a salida programada; regional en papel: convalidar en máquina antes de subir. No cambiar de operador sin billete válido."
     },
     {
       "id": "train-lucca-firenze",
@@ -3049,6 +3083,10 @@
         {
           "label": "Horarios y billetes oficiales",
           "url": "https://www.trenitalia.com/"
+        },
+        {
+          "label": "Compra y validación · operador oficial",
+          "url": "https://www.trenitalia.com/es/informacion/viajar-con-el-regionale.html"
         }
       ],
       "boardingLocations": [
@@ -3061,7 +3099,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station"
         }
       ],
-      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje."
+      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje.",
+      "ticketGuide": "Compra: seleccionar operador, fecha, estación exacta, hora y tarifa en Trenitalia o Italo; revisar condiciones de cambio. Italo, Frecciarossa e Intercity electrónicos: presentar billete/PNR y documento según operador, no timbrar en máquina. Regionale digital Trenitalia: validación automática a salida programada; regional en papel: convalidar en máquina antes de subir. No cambiar de operador sin billete válido."
     },
     {
       "id": "bus-siena",
@@ -3266,7 +3305,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Siena%20Via%20Tozzi%20131R%20bus%20stop"
         }
       ],
-      "boardingNote": "131R: salida 08:50 desde Via Orti Oricellari por desvío anunciado hasta el 10/06/2027. Salidas 07:45 y 08:10 de referencia desde Firenze Autostazione. Regreso desde Siena Via Tozzi; verificar parada y sentido exactos en sitio."
+      "boardingNote": "131R: salida 08:50 desde Via Orti Oricellari por desvío anunciado hasta el 10/06/2027. Salidas 07:45 y 08:10 de referencia desde Firenze Autostazione. Regreso desde Siena Via Tozzi; verificar parada y sentido exactos en sitio.",
+      "ticketGuide": "Compra: app oficial at bus o canales autorizados; elegir billete Extraurbano Veloce Firenze ↔ Siena (dos sentidos). Activar billete electrónico al comenzar el viaje; billete de papel, validar en máquina a bordo. Para Tip Tap, verificar modalidad y registrar entrada y salida conforme a instrucciones vigentes. Ida: Firenze Autostazione para A/B; salida C 08:50 sujeta a traslado temporal Via Orti Oricellari. Llegada y vuelta: Siena Via Tozzi; verificar poste concreto."
     },
     {
       "id": "train-firenze-milano",
@@ -3386,6 +3426,10 @@
         {
           "label": "Consultar alternativa",
           "url": "https://www.italotreno.com/"
+        },
+        {
+          "label": "Compra y validación · operador oficial",
+          "url": "https://www.trenitalia.com/es/informacion/viajar-con-el-regionale.html"
         }
       ],
       "boardingLocations": [
@@ -3398,7 +3442,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
         }
       ],
-      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje."
+      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje.",
+      "ticketGuide": "Compra: seleccionar operador, fecha, estación exacta, hora y tarifa en Trenitalia o Italo; revisar condiciones de cambio. Italo, Frecciarossa e Intercity electrónicos: presentar billete/PNR y documento según operador, no timbrar en máquina. Regionale digital Trenitalia: validación automática a salida programada; regional en papel: convalidar en máquina antes de subir. No cambiar de operador sin billete válido."
     },
     {
       "id": "airport-return",
@@ -3514,6 +3559,10 @@
         {
           "label": "Horarios y billetes oficiales",
           "url": "https://www.trenord.it/en/linee-e-orari/il-nostro-servizio/malpensa-express/"
+        },
+        {
+          "label": "Compra y validación · operador oficial",
+          "url": "https://www.malpensaexpress.it/en/travel-documents/tickets/"
         }
       ],
       "boardingLocations": [
@@ -3526,7 +3575,9 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station"
         }
       ],
-      "boardingNote": "Milano Centrale: localizar andén Malpensa Express en pantallas (no es tren de Milano Cadorna). Malpensa Aeroporto T1: bajar y seguir señales Departures/Partenze hacia terminal. Billete digital Trenord, comprobar condiciones vigentes; no validar físicamente si es electrónico. Opción A/B/C vinculadas al tren de Firenze, 35 minutos de conexión programada."
+      "boardingNote": "Milano Centrale: localizar andén Malpensa Express en pantallas (no es tren de Milano Cadorna). Malpensa Aeroporto T1: bajar y seguir señales Departures/Partenze hacia terminal. Billete digital Trenord, comprobar condiciones vigentes; no validar físicamente si es electrónico. Opción A/B/C vinculadas al tren de Firenze, 35 minutos de conexión programada.",
+      "ticketGuide": "Compra: Trenord / Malpensa Express (web o app), elegir Milano Centrale ↔ Malpensa Aeroporto T1 y fecha. Billete digital Malpensa Express: válido en el día elegido hasta fin de servicio, sin convalidación física; mostrar título en móvil. Existe retorno digital de 30 días por €25 frente a dos sencillos de €15 (€30), sujeto a que la compra cubra ambos sentidos y fechas; comparar antes de comprar.",
+      "notes": " Revisar pase digital ida/vuelta de 30 días Malpensa Express (€25 referencia) para ambos viajes del 04/04 y 16/04; NO activar doble conteo."
     }
   ],
   "hotels": [
