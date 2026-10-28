@@ -91,14 +91,16 @@ window.AtlasHome = function (ctx) {
                 preload.onerror = () => { if (currentToken === token) busy = false; };
                 preload.src = sources[next];
             };
-            frame.addEventListener('mouseenter', () => {
+            // Activar desde toda la tarjeta, no solo desde la fotografía.
+            // El temporizador se detiene al abandonar la tarjeta o cambiar de página.
+            card.addEventListener('mouseenter', () => {
                 if (timer !== null) return;
                 token++;
                 zoom(original, false);
                 timer = setInterval(advance, 2000);
                 hoverTimers.add(timer);
             });
-            frame.addEventListener('mouseleave', stop);
+            card.addEventListener('mouseleave', stop);
             card.addEventListener('click', stop);
             document.addEventListener('visibilitychange', () => { if (document.hidden) stop(); });
         });
