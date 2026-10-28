@@ -3,14 +3,13 @@
 ## Alcance
 14 días, del 3 al 16 de abril de 2027. Bases: Milano (4 noches), La Spezia (3), Firenze (5). Se revisaron referencias de transportes por jornada, fechas y días de semana, fechas de hotel, presupuesto, tickets y coherencia de reservas prioritarias.
 
-## Presupuesto provisional
-- Subtotal base anterior: MXN 58,509.13.
-- Añadidos con precio oficial de referencia: Cenacolo €15 (6/abr), Accademia con reserva €24 (13/abr), Brunelleschi Pass €30 (13/abr), Uffizi + Corridoio Vasariano €47 (14/abr).
-- Total agregado: €116 = MXN 2,413.96 a EUR 1 = MXN 20.81.
-- Nuevo total base: **MXN 60,923.09**, estimación NO definitiva. Los cuatro ingresos son `status: estimated`, no comprados.
-- La entrada Uffizi+Vasariano es combinada: no añadir Uffizi por separado. Brunelleschi Pass incluye el Museo dell'Opera: no duplicarlo.
-- Pendientes **sin precio registrado**: Museo Egizio, Milano Duomo/terrazas, Pinacoteca Brera, Siena Duomo, Santa Croce, Bargello, entradas opcionales de Lucca, transporte urbano, consignas, tasas turísticas y contingencia. Cotizar antes de llamar al total «presupuesto global».
-- Hoteles ($25,900 MXN) y alimentos son SUPUESTOS, no reservas ni cotizaciones actuales. Vuelos también sujetos a compra. El tipo de cambio es una instantánea del 27/10/2026.
+## Presupuesto de planificación actualizado · 27/10/2026
+- **MXN 68,584.53**, cifra estimada para una persona; no es cotización ni reserva. Tipo de cambio de referencia EUR 1 = MXN 20.81.
+- Transporte interurbano y vuelos: MXN 21,259.13; alojamiento: MXN 25,900; alimentación: MXN 11,350; entradas y museos: MXN 4,494.96; tasas turísticas: MXN 1,394.27; transporte urbano: MXN 936.45; consigna: MXN 249.72; contingencia: MXN 3,000.
+- Las entradas añadidas incluyen Cenacolo, Accademia, Brunelleschi Pass, Uffizi+Vasariano, Egizio, Duomo Milano, Brera, Duomo Siena, Santa Croce y Bargello. El acceso a Uffizi se cuenta una sola vez dentro del pase Uffizi+Vasariano; el Museo dell'Opera se cuenta dentro del Brunelleschi Pass.
+- Los tres hoteles ($25,900 MXN por 12 noches) son **supuestos**, sin cotización real, tal como se decidió; se cotizarán más cerca del viaje. Los vuelos tampoco están comprados.
+- Impuestos turísticos y movilidad local son provisiones, no tarifas confirmadas por establecimiento/fecha. Consigna e imprevistos también son estimaciones.
+- El precio real puede subir o bajar al confirmar reservas, horarios, entradas y tipo de cambio. Evitar presentar esta cifra como total garantizado.
 
 ## Itinerario revisado
 - Los 14 días consecutivos coinciden con sus fechas y días de semana: sáb 3, dom 4, lun 5, mar 6, mié 7, jue 8, vie 9, sáb 10, dom 11, lun 12, mar 13, mié 14, jue 15, vie 16.
@@ -28,7 +27,7 @@
 ## Validación técnica
 - `AtlasTransportModel.validateTrip`: cero errores.
 - `AtlasBudget.summary`: cero incidencias de cálculo para los registros presentes.
-- Precio EUR/MXN y cuatro entradas nuevas contabilizados una vez.
+- Precio EUR/MXN, entradas y otras provisiones contabilizados una sola vez.
 - Quedan por hacer pruebas reales de navegador Desktop/Mobile y regresión de otros viajes antes del merge, además de validación de horarios/tarifas 2027.
 
 ## Fuentes de precios oficiales consultadas
