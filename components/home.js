@@ -20,8 +20,9 @@ window.AtlasHome = function (ctx) {
     }));
     const hoverTimers = new Set();
     function mountCoverSlideshow() {
-        if (!window.matchMedia('(hover: hover) and (pointer: fine)').matches ||
-            window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+        // Do not block setup based on media-query pointer detection.
+        // Mouse events determine whether a desktop pointer is actually used.
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
         document.querySelectorAll('#viajes .atlas-home-card').forEach(card => {
             const tripId = card.getAttribute('href')?.replace('#viaje/', '');
             const sources = cardSlides.get(tripId) || [];
