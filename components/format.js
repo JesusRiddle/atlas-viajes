@@ -64,7 +64,8 @@ window.AtlasFormat = function (ctx) {
             Number.isInteger(t.work) && t.work >= 0 &&
             t.profile && t.profile.pace && t.profile.solo && t.profile.weather &&
             (Array.isArray(t.budgetRange) && t.budgetRange.length === 2 ||
-                Array.isArray(t.costs) && t.costs.length > 0));
+                Array.isArray(t.costs) && t.costs.length > 0 ||
+                Array.isArray(t.expenses) && t.expenses.length > 0));
     }
     return { money, short, long, range, sums, price, esc, railLinks, readable, factParagraphs, highlightWords, formatDayTitle, canRenderFullTrip };
 };
