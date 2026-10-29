@@ -1,5 +1,70 @@
 {
   "id": "japon-2027",
   "name": "Japón 2027",
-  "status": "draft"
+  "status": "draft",
+  "seasonality": {
+    "summary": "Rangos orientativos de máximas diurnas normales para Tokio, Kioto y Osaka (1991–2020), no pronósticos de 2027; Kawaguchiko y el entorno del Fuji suelen ser más fríos. Abril–mayo y octubre–noviembre ofrecen el mejor equilibrio climático, aunque la floración y el follaje varían cada año. Octubre favorece caminatas cómodas sin garantizar hojas rojas en Kioto; finales de noviembre mejora esa posibilidad, con más demanda. Evitar las fechas de Semana Dorada, Obon y Año Nuevo si prima el costo.",
+    "months": {
+      "10": {
+        "status": "recommended",
+        "description": "22–24 °C. Temperaturas cómodas para Tokio, Kioto y Osaka, con riesgo de lluvia todavía presente; el follaje intenso suele llegar más tarde a estas ciudades.",
+        "icon": "partlyCloudy"
+      },
+      "11": {
+        "status": "recommended",
+        "description": "16–18 °C. Otoño fresco y excelente para caminar, con mejores posibilidades de colores otoñales en Kioto al final del mes; puede subir la demanda hotelera.",
+        "icon": "partlyCloudy"
+      },
+      "12": {
+        "status": "conditional",
+        "description": "10–12 °C. Invierno fresco, cielos frecuentemente despejados y menor afluencia al principio; noches frías y cierres o aglomeraciones hacia Año Nuevo.",
+        "icon": "snow"
+      },
+      "01": {
+        "status": "conditional",
+        "description": "9–10 °C. Frío seco y días a menudo despejados en Tokio y Osaka; menos visitantes entre semana, salvo Año Nuevo. Kawaguchiko requiere abrigo intenso.",
+        "icon": "snow"
+      },
+      "02": {
+        "status": "conditional",
+        "description": "10–11 °C. Invierno frío y relativamente tranquilo, apropiado para templos y vistas del Fuji si el cielo está despejado; días cortos y frío en Kioto.",
+        "icon": "snow"
+      },
+      "03": {
+        "status": "recommended",
+        "description": "14–15 °C. Comienza a suavizarse el clima y hacia finales de mes puede llegar el sakura; floración variable y mayor demanda de alojamiento.",
+        "icon": "partlyCloudy"
+      },
+      "04": {
+        "status": "recommended",
+        "description": "19–20 °C. Primavera templada para pasear; sakura posible a principios de mes según el año. Evitar los días de Semana Dorada al final de abril.",
+        "icon": "sun"
+      },
+      "05": {
+        "status": "recommended",
+        "description": "23–25 °C. Días largos y agradables, especialmente después de Semana Dorada; al avanzar el mes aumentan el calor y la humedad.",
+        "icon": "sun"
+      },
+      "06": {
+        "status": "conditional",
+        "description": "26–28 °C. Inicio habitual de la temporada de lluvias en buena parte de la ruta; humedad y chubascos pueden alterar excursiones al Fuji.",
+        "icon": "cloudy"
+      },
+      "07": {
+        "status": "avoid",
+        "description": "29–32 °C. Calor y humedad intensos, con lluvias y riesgo de tormentas; las caminatas urbanas y Universal Studios resultan más agotadores.",
+        "icon": "hot"
+      },
+      "08": {
+        "status": "avoid",
+        "description": "31–34 °C. Mes muy caluroso y húmedo, con posibles tifones y alta demanda alrededor de Obon; exigente para recorridos largos al aire libre.",
+        "icon": "hot"
+      },
+      "09": {
+        "status": "conditional",
+        "description": "27–30 °C. Persiste el calor húmedo y existe riesgo de tifones y lluvias fuertes; puede mejorar al final, pero hay incertidumbre meteorológica.",
+        "icon": "hot"
+      }
+    }
+  }
 }
