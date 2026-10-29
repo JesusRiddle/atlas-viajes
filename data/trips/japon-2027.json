@@ -125,7 +125,7 @@
       1
     ]
   ],
-  "lodgingSummary": "Propuesta sujeta a vuelos y cotizaciones: 6 noches en Tokio, 5 en Kioto, 4 en Osaka y 1 noche final en Tokio. Kawaguchiko y Nara se visitan sin cambiar de alojamiento; la última estancia en Tokio se elimina si conviene regresar desde Osaka.",
+  "lodgingSummary": "Distribución provisional: Tokio 6 noches, Kioto 5, Osaka 4 y Tokio 1. Hoteles candidatos, sin reservas. Los precios son supuestos para planear, no cotizaciones para 2027; el regreso desde Osaka podría eliminar la última noche en Tokio.",
   "climate": "En octubre, las máximas medias habituales rondan los 22–24 °C en Tokio, Kioto y Osaka, con mínimas aproximadas de 14–16 °C. En noviembre, las máximas bajan a unos 17–18 °C y las mínimas a 9–10 °C. Kawaguchiko es más frío, especialmente al amanecer; las nubes o la lluvia pueden ocultar el monte Fuji. Son promedios históricos, no pronósticos para 2027.\n\n*Qué llevar:* Ropa en capas, chamarra impermeable ligera, paraguas compacto y zapatos cómodos. Para noviembre, añadir una prenda abrigadora para las mañanas y las excursiones al Fuji. Ajustar el equipaje según la tarifa aérea elegida.\n\n*Horas de luz:* Durante la segunda mitad de octubre, el sol sale aproximadamente entre las 5:45 y las 6:10 y se oculta entre las 16:50 y las 17:15; en noviembre, sale alrededor de las 6:05–6:45 y se pone cerca de las 16:30–17:00 (horario local JST, según fecha y ciudad). Reservar las primeras horas para Fuji, jardines y templos; aprovechar la noche para barrios iluminados y gastronomía.",
   "mapPoints": [
     {
@@ -215,6 +215,142 @@
     {
       "city": "Osaka · Universal Studios Japan",
       "description": "Dedicar una jornada completa a Universal Studios Japan, con especial interés en Super Nintendo World y The Wizarding World of Harry Potter; considerar los accesos por horario y las entradas disponibles."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "tokio-ueno-inicio",
+      "city": "Tokio",
+      "name": "Sotetsu Fresa Inn Ueno-Okachimachi",
+      "address": "1-20-8 Ueno, Taito-ku, Tokyo 110-0005, Japón",
+      "checkIn": "2027-10-15",
+      "checkOut": "2027-10-21",
+      "status": "Candidato · no reservado",
+      "rate": "Estimación para planear: $1700 MXN/noche; 6 noche(s): $10200 MXN. No es cotización para octubre de 2027.",
+      "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
+      "notes": "Zona Ueno-Okachimachi, bien comunicada para explorar Tokio.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sotetsu-hotels.com/en/fresa-inn/okachimachi/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sotetsu%20Fresa%20Inn%20Ueno-Okachimachi%201-20-8%20Ueno%2C%20Taito-ku%2C%20Tokyo%20110-0005%2C%20Jap%C3%B3n"
+    },
+    {
+      "id": "kioto-karasuma",
+      "city": "Kioto",
+      "name": "Sotetsu Fresa Inn Kyoto-Shijokarasuma",
+      "address": "160 Dojishacho, Shimogyo-ku, Kyoto 600-8421, Japón",
+      "checkIn": "2027-10-21",
+      "checkOut": "2027-10-26",
+      "status": "Candidato · no reservado",
+      "rate": "Estimación para planear: $1900 MXN/noche; 5 noche(s): $9500 MXN. No es cotización para octubre de 2027.",
+      "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
+      "notes": "A pocos minutos de las estaciones Shijo y Karasuma, conveniente para recorrer Kioto.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sotetsu-hotels.com/en/fresa-inn/karasuma/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sotetsu%20Fresa%20Inn%20Kyoto-Shijokarasuma%20160%20Dojishacho%2C%20Shimogyo-ku%2C%20Kyoto%20600-8421%2C%20Jap%C3%B3n"
+    },
+    {
+      "id": "osaka-namba",
+      "city": "Osaka",
+      "name": "Sotetsu Fresa Inn Osaka-Namba",
+      "address": "1-6-5 Nambanaka, Naniwa-ku, Osaka 556-0011, Japón",
+      "checkIn": "2027-10-26",
+      "checkOut": "2027-10-30",
+      "status": "Candidato · no reservado",
+      "rate": "Estimación para planear: $1700 MXN/noche; 4 noche(s): $6800 MXN. No es cotización para octubre de 2027.",
+      "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
+      "notes": "Junto a Namba, bien conectado con Dotonbori y otras zonas de Osaka.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sotetsu-hotels.com/en/fresa-inn/namba-ekimae/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sotetsu%20Fresa%20Inn%20Osaka-Namba%201-6-5%20Nambanaka%2C%20Naniwa-ku%2C%20Osaka%20556-0011%2C%20Jap%C3%B3n"
+    },
+    {
+      "id": "tokio-ueno-regreso",
+      "city": "Tokio",
+      "name": "Sotetsu Fresa Inn Ueno-Okachimachi",
+      "address": "1-20-8 Ueno, Taito-ku, Tokyo 110-0005, Japón",
+      "checkIn": "2027-10-30",
+      "checkOut": "2027-10-31",
+      "status": "Candidato · no reservado",
+      "rate": "Estimación para planear: $1700 MXN/noche; 1 noche(s): $1700 MXN. No es cotización para octubre de 2027.",
+      "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
+      "notes": "Última noche solo en escenario de vuelo redondo a Tokio; se comparará alojamiento cerca de Haneda.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sotetsu-hotels.com/en/fresa-inn/okachimachi/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sotetsu%20Fresa%20Inn%20Ueno-Okachimachi%201-20-8%20Ueno%2C%20Taito-ku%2C%20Tokyo%20110-0005%2C%20Jap%C3%B3n"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "lodging-tokio-ueno-inicio",
+      "category": "lodging",
+      "hotelId": "tokio-ueno-inicio",
+      "concept": "Sotetsu Fresa Inn Ueno-Okachimachi · 6 noche(s)",
+      "date": "2027-10-15",
+      "nights": 6,
+      "cost": {
+        "amount": 10200,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
+    },
+    {
+      "id": "lodging-kioto-karasuma",
+      "category": "lodging",
+      "hotelId": "kioto-karasuma",
+      "concept": "Sotetsu Fresa Inn Kyoto-Shijokarasuma · 5 noche(s)",
+      "date": "2027-10-21",
+      "nights": 5,
+      "cost": {
+        "amount": 9500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
+    },
+    {
+      "id": "lodging-osaka-namba",
+      "category": "lodging",
+      "hotelId": "osaka-namba",
+      "concept": "Sotetsu Fresa Inn Osaka-Namba · 4 noche(s)",
+      "date": "2027-10-26",
+      "nights": 4,
+      "cost": {
+        "amount": 6800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
+    },
+    {
+      "id": "lodging-tokio-ueno-regreso",
+      "category": "lodging",
+      "hotelId": "tokio-ueno-regreso",
+      "concept": "Sotetsu Fresa Inn Ueno-Okachimachi · 1 noche(s)",
+      "date": "2027-10-30",
+      "nights": 1,
+      "cost": {
+        "amount": 1700,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
     }
   ]
 }
