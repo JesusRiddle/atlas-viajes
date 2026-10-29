@@ -66,5 +66,23 @@
         "icon": "hot"
       }
     }
-  }
+  },
+  "intro": "Japón reúne el pulso futurista de Tokio con siglos de tradiciones en Kioto y la energía gastronómica de Osaka. Entre el cruce de Shibuya, el templo Sensō-ji y las luces de Shinjuku, la capital revela sus contrastes. Una excursión a Kawaguchiko abre la posibilidad de contemplar el monte Fuji junto al lago, si el clima acompaña. En Kioto, los senderos de Fushimi Inari, las calles de Higashiyama y los templos históricos muestran otra cara del país. Nara suma el Gran Buda y sus célebres ciervos; Osaka, Dotonbori y un día en Universal Studios Japan. Un primer encuentro con Japón entre ciudades, naturaleza, patrimonio y entretenimiento.",
+  "introHighlights": [
+    "Japón",
+    "Tokio",
+    "Kioto",
+    "Osaka",
+    "Shibuya",
+    "Sensō-ji",
+    "Shinjuku",
+    "Kawaguchiko",
+    "monte Fuji",
+    "Fushimi Inari",
+    "Higashiyama",
+    "Nara",
+    "Gran Buda",
+    "Dotonbori",
+    "Universal Studios Japan"
+  ]
 }
