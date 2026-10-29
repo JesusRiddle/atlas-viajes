@@ -4,7 +4,7 @@ window.ATLAS_MODULES = [
   {
     "id": "japon-2027",
     "file": "japon-2027.json",
-    "available": false
+    "available": true
   },
   {
     "id": "italia-norte-2027",
