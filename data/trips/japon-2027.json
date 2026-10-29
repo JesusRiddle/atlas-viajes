@@ -107,5 +107,24 @@
       "tone": "orange",
       "text": "Pasaporte mexicano vigente durante toda la estancia: actualmente no requiere visa para turismo de hasta 90 días. Conservar datos del alojamiento y salida; revisar requisitos de tránsito por Estados Unidos según vuelos elegidos. Enchufes tipo A y 100 V: comprobar compatibilidad de aparatos y llevar adaptador si hace falta. Reconfirmar requisitos para 2027."
     }
-  ]
+  ],
+  "bases": [
+    [
+      "Tokio",
+      6
+    ],
+    [
+      "Kioto",
+      5
+    ],
+    [
+      "Osaka",
+      4
+    ],
+    [
+      "Tokio",
+      1
+    ]
+  ],
+  "lodgingSummary": "Distribución provisional para un viaje de 18 días calendario y 16 noches en Japón. Incluye excursiones a Kawaguchiko desde Tokio y Nara desde Kioto, sin cambios de alojamiento. La última noche en Tokio solo corresponde a la alternativa de vuelo redondo a Tokio; fechas, alojamientos y noches se ajustarán tras comparar vuelos y tarifas."
 }
