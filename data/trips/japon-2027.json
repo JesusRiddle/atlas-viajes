@@ -84,5 +84,28 @@
     "Gran Buda",
     "Dotonbori",
     "Universal Studios Japan"
+  ],
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Moderado–activo",
+      "tone": "orange",
+      "text": "Viaje independiente y adecuado para una persona: trenes y metro, caminatas frecuentes por barrios y templos, pausas entre visitas y días completos para Fuji y Universal. Evitar sobrecargar los traslados y reducir cambios de alojamiento."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Fácil de organizar",
+      "tone": "green",
+      "text": "Japonés y yen (JPY/¥). En estaciones, hoteles y zonas turísticas suele haber señalización en inglés; conviene usar traductor fuera de ellas. Llevar algo de efectivo para comercios pequeños; pagar en JPY cuando la terminal ofrezca conversión a MXN."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Verificar antes de viajar",
+      "tone": "orange",
+      "text": "Pasaporte mexicano vigente durante toda la estancia: actualmente no requiere visa para turismo de hasta 90 días. Conservar datos del alojamiento y salida; revisar requisitos de tránsito por Estados Unidos según vuelos elegidos. Enchufes tipo A y 100 V: comprobar compatibilidad de aparatos y llevar adaptador si hace falta. Reconfirmar requisitos para 2027."
+    }
   ]
 }
