@@ -3,16 +3,16 @@
   "name": "Japón 2027",
   "status": "draft",
   "seasonality": {
-    "summary": "Rangos orientativos de máximas diurnas normales para Tokio, Kioto y Osaka (1991–2020), no pronósticos de 2027; Kawaguchiko y el entorno del Fuji suelen ser más fríos. Abril–mayo y octubre–noviembre ofrecen el mejor equilibrio climático, aunque la floración y el follaje varían cada año. Octubre favorece caminatas cómodas sin garantizar hojas rojas en Kioto; finales de noviembre mejora esa posibilidad, con más demanda. Evitar las fechas de Semana Dorada, Obon y Año Nuevo si prima el costo.",
+    "summary": "Temperaturas orientativas de máximas diurnas habituales en Tokio y Osaka, con condiciones similares pero no idénticas en Kioto; Kawaguchiko es sensiblemente más frío. Abril, mayo, octubre y noviembre suelen ofrecer buen clima para esta ruta. Octubre combina paseos cómodos con menor probabilidad de follaje intenso en Kioto; finales de noviembre favorece los colores otoñales, pero puede aumentar la demanda. La floración, el follaje y el clima varían de un año a otro.",
     "months": {
       "10": {
         "status": "recommended",
-        "description": "22–24 °C. Temperaturas cómodas para Tokio, Kioto y Osaka, con riesgo de lluvia todavía presente; el follaje intenso suele llegar más tarde a estas ciudades.",
+        "description": "22–24 °C. Clima generalmente agradable para caminar por Tokio, Kioto y Osaka, con lluvia ocasional; el color rojo intenso del otoño suele llegar más tarde a estas ciudades.",
         "icon": "partlyCloudy"
       },
       "11": {
         "status": "recommended",
-        "description": "16–18 °C. Otoño fresco y excelente para caminar, con mejores posibilidades de colores otoñales en Kioto al final del mes; puede subir la demanda hotelera.",
+        "description": "17–18 °C. Días frescos y buenas posibilidades de follaje otoñal en Kioto hacia finales de mes; las zonas más populares pueden registrar mayor demanda hotelera.",
         "icon": "partlyCloudy"
       },
       "12": {
@@ -32,17 +32,17 @@
       },
       "03": {
         "status": "recommended",
-        "description": "14–15 °C. Comienza a suavizarse el clima y hacia finales de mes puede llegar el sakura; floración variable y mayor demanda de alojamiento.",
+        "description": "14–15 °C. El clima empieza a suavizarse; a finales de mes puede iniciar la floración del cerezo en Tokio, pero las fechas varían y aumenta la demanda.",
         "icon": "partlyCloudy"
       },
       "04": {
         "status": "recommended",
-        "description": "19–20 °C. Primavera templada para pasear; sakura posible a principios de mes según el año. Evitar los días de Semana Dorada al final de abril.",
+        "description": "19–20 °C. Primavera templada para caminar; la floración del cerezo puede continuar a principios de mes. La Semana Dorada, desde finales de abril, eleva la afluencia.",
         "icon": "sun"
       },
       "05": {
         "status": "recommended",
-        "description": "23–25 °C. Días largos y agradables, especialmente después de Semana Dorada; al avanzar el mes aumentan el calor y la humedad.",
+        "description": "23–25 °C. Días largos y temperaturas agradables tras la Semana Dorada; hacia finales de mes aumentan el calor y la humedad.",
         "icon": "sun"
       },
       "06": {
@@ -52,32 +52,31 @@
       },
       "07": {
         "status": "avoid",
-        "description": "29–32 °C. Calor y humedad intensos, con lluvias y riesgo de tormentas; las caminatas urbanas y Universal Studios resultan más agotadores.",
+        "description": "29–32 °C. Calor húmedo y lluvias intensas ocasionales; visitar templos, caminar por la ciudad o pasar el día en Universal Studios puede resultar agotador.",
         "icon": "hot"
       },
       "08": {
         "status": "avoid",
-        "description": "31–34 °C. Mes muy caluroso y húmedo, con posibles tifones y alta demanda alrededor de Obon; exigente para recorridos largos al aire libre.",
+        "description": "31–34 °C. Calor y humedad muy elevados, posibilidad de tifones y mayor demanda durante Obon; condiciones difíciles para largas jornadas al aire libre.",
         "icon": "hot"
       },
       "09": {
         "status": "conditional",
-        "description": "27–30 °C. Persiste el calor húmedo y existe riesgo de tifones y lluvias fuertes; puede mejorar al final, pero hay incertidumbre meteorológica.",
+        "description": "27–30 °C. Continúan el calor húmedo y el riesgo de tifones; las lluvias pueden afectar traslados y excursiones, aunque el tiempo suele refrescar al avanzar el mes.",
         "icon": "hot"
       }
     }
   },
-  "intro": "Japón reúne el pulso futurista de Tokio con siglos de tradiciones en Kioto y la energía gastronómica de Osaka. Entre el cruce de Shibuya, el templo Sensō-ji y las luces de Shinjuku, la capital revela sus contrastes. Una excursión a Kawaguchiko abre la posibilidad de contemplar el monte Fuji junto al lago, si el clima acompaña. En Kioto, los senderos de Fushimi Inari, las calles de Higashiyama y los templos históricos muestran otra cara del país. Nara suma el Gran Buda y sus célebres ciervos; Osaka, Dotonbori y un día en Universal Studios Japan. Un primer encuentro con Japón entre ciudades, naturaleza, patrimonio y entretenimiento.",
+  "intro": "Japón combina la energía de Tokio con los santuarios de Kioto, los paisajes del monte Fuji y la gastronomía de Osaka. En la capital, el cruce de Shibuya, el templo Sensō-ji y los callejones de Shinjuku muestran distintas facetas de la vida japonesa. Desde Kawaguchiko, el lago ofrece vistas del Fuji cuando el cielo está despejado. El recorrido continúa entre los torii de Fushimi Inari, las calles de Higashiyama y los templos de Kioto. En Nara esperan el Gran Buda y los ciervos de su parque; en Osaka, Dotonbori, los mercados y Universal Studios Japan completan una primera visita dedicada a cultura, naturaleza y entretenimiento.",
   "introHighlights": [
-    "Japón",
     "Tokio",
     "Kioto",
+    "monte Fuji",
     "Osaka",
     "Shibuya",
     "Sensō-ji",
     "Shinjuku",
     "Kawaguchiko",
-    "monte Fuji",
     "Fushimi Inari",
     "Higashiyama",
     "Nara",
@@ -91,21 +90,21 @@
       "title": "Estilo de viaje",
       "badge": "Moderado–activo",
       "tone": "orange",
-      "text": "Viaje independiente y adecuado para una persona: trenes y metro, caminatas frecuentes por barrios y templos, pausas entre visitas y días completos para Fuji y Universal. Evitar sobrecargar los traslados y reducir cambios de alojamiento."
+      "text": "Recorrido independiente para una persona, con trenes y metro, caminatas prolongadas y pausas entre visitas. Reservar jornadas completas para Kawaguchiko y Universal Studios Japan y evitar cambios de alojamiento innecesarios."
     },
     {
       "id": "language",
       "title": "Idioma y moneda",
       "badge": "Fácil de organizar",
       "tone": "green",
-      "text": "Japonés y yen (JPY/¥). En estaciones, hoteles y zonas turísticas suele haber señalización en inglés; conviene usar traductor fuera de ellas. Llevar algo de efectivo para comercios pequeños; pagar en JPY cuando la terminal ofrezca conversión a MXN."
+      "text": "Idioma oficial: japonés; el inglés ayuda en estaciones y zonas turísticas, pero un traductor facilita otras situaciones. Moneda: yen (JPY/¥). Llevar algo de efectivo para pequeños negocios y elegir el cobro en yenes, no en pesos, si ofrecen conversión."
     },
     {
       "id": "entry",
       "title": "Documentación y consejos prácticos",
       "badge": "Verificar antes de viajar",
       "tone": "orange",
-      "text": "Pasaporte mexicano vigente durante toda la estancia: actualmente no requiere visa para turismo de hasta 90 días. Conservar datos del alojamiento y salida; revisar requisitos de tránsito por Estados Unidos según vuelos elegidos. Enchufes tipo A y 100 V: comprobar compatibilidad de aparatos y llevar adaptador si hace falta. Reconfirmar requisitos para 2027."
+      "text": "Para turismo sin actividades remuneradas de menos de 90 días, los mexicanos están exentos de visa. Llevar pasaporte vigente, datos del alojamiento y comprobante de salida. Verificar requisitos de tránsito en la escala elegida. Japón usa enchufes tipo A y corriente de 100 V: comprobar los aparatos y llevar adaptador si es necesario. Revisar los requisitos nuevamente antes del viaje."
     }
   ],
   "bases": [
@@ -126,8 +125,8 @@
       1
     ]
   ],
-  "lodgingSummary": "Distribución provisional para un viaje de 18 días calendario y 16 noches en Japón. Incluye excursiones a Kawaguchiko desde Tokio y Nara desde Kioto, sin cambios de alojamiento. La última noche en Tokio solo corresponde a la alternativa de vuelo redondo a Tokio; fechas, alojamientos y noches se ajustarán tras comparar vuelos y tarifas.",
-  "climate": "Para octubre, Tokio, Kioto y Osaka registran máximas diurnas habituales de 22–24 °C y mínimas de 14–16 °C; en noviembre bajan aproximadamente a 16–18 °C y 8–10 °C. Kawaguchiko es más frío: alrededor de 18/8 °C en octubre y 13/2 °C en noviembre (máxima/mínima media). Puede llover y la nubosidad impedir ver el monte Fuji; son promedios históricos, no un pronóstico de 2027.\n\n*Qué llevar:* Ropa en capas, chamarra ligera o cortavientos impermeable, paraguas compacto y calzado cómodo para caminar. Si elegimos noviembre, añadir abrigo más cálido, especialmente para Kawaguchiko, mañanas y noches. Ajustar el equipaje cuando elijamos la tarifa aérea.\n\n*Horas de luz:* En octubre, aproximadamente de 5:45–6:10 a 16:55–17:10 h; en noviembre, de 6:05–6:45 a 16:45–17:05 h, según fecha y ciudad (hora local de Japón, JST). Priorizar el Fuji, templos y paisajes durante la mañana y primeras horas de la tarde; dejar barrios iluminados, gastronomía y actividades interiores para después del atardecer.",
+  "lodgingSummary": "Propuesta sujeta a vuelos y cotizaciones: 6 noches en Tokio, 5 en Kioto, 4 en Osaka y 1 noche final en Tokio. Kawaguchiko y Nara se visitan sin cambiar de alojamiento; la última estancia en Tokio se elimina si conviene regresar desde Osaka.",
+  "climate": "En octubre, las máximas medias habituales rondan los 22–24 °C en Tokio, Kioto y Osaka, con mínimas aproximadas de 14–16 °C. En noviembre, las máximas bajan a unos 17–18 °C y las mínimas a 9–10 °C. Kawaguchiko es más frío, especialmente al amanecer; las nubes o la lluvia pueden ocultar el monte Fuji. Son promedios históricos, no pronósticos para 2027.\n\n*Qué llevar:* Ropa en capas, chamarra impermeable ligera, paraguas compacto y zapatos cómodos. Para noviembre, añadir una prenda abrigadora para las mañanas y las excursiones al Fuji. Ajustar el equipaje según la tarifa aérea elegida.\n\n*Horas de luz:* Durante la segunda mitad de octubre, el sol sale aproximadamente entre las 5:45 y las 6:10 y se oculta entre las 16:50 y las 17:15; en noviembre, sale alrededor de las 6:05–6:45 y se pone cerca de las 16:30–17:00 (horario local JST, según fecha y ciudad). Reservar las primeras horas para Fuji, jardines y templos; aprovechar la noche para barrios iluminados y gastronomía.",
   "mapPoints": [
     {
       "name": "Tokio (inicio y regreso)",
@@ -183,39 +182,39 @@
   "experiences": [
     {
       "city": "Tokio · tradición",
-      "description": "Descubrir el Sensō-ji entre faroles y comercios de Asakusa, caminar por Ueno y Ameyoko y probar especialidades de Edo como monjayaki, soba o fukagawa-meshi."
+      "description": "Visitar Sensō-ji y las tiendas tradicionales de Asakusa, pasear por Ueno y Ameyoko y descubrir sabores populares de Tokio como monjayaki, soba de estilo Edo y fukagawa-meshi."
     },
     {
       "city": "Tokio · vida urbana",
-      "description": "Cruzar Shibuya entre pantallas gigantes, explorar Harajuku y Meiji Jingū, descubrir Akihabara y contemplar el perfil de Shinjuku antes de recorrer sus callejones nocturnos."
+      "description": "Atravesar el cruce de Shibuya, recorrer Harajuku y el santuario Meiji Jingū, explorar la cultura electrónica de Akihabara y descubrir el ambiente nocturno de Shinjuku y Golden Gai."
     },
     {
       "city": "Tokio · experiencias contemporáneas",
-      "description": "Entrar en una instalación inmersiva de teamLab si hay entradas y disfrutar de un mirador panorámico, combinando arquitectura contemporánea, arte digital y perspectivas sorprendentes de la metrópoli."
+      "description": "Explorar una instalación de arte digital de teamLab, si hay entradas disponibles, y contemplar Tokio desde un mirador panorámico para apreciar la escala y arquitectura de la ciudad."
     },
     {
       "city": "Kawaguchiko · monte Fuji",
-      "description": "Contemplar, si el cielo lo permite, el monte Fuji desde el lago Kawaguchi y Oishi Park; completar el paseo con hōtō, fideos tradicionales de Yamanashi, o fuji-mabushi."
+      "description": "Buscar vistas del monte Fuji desde el lago Kawaguchi y Oishi Park, siempre que lo permitan las nubes, y probar hōtō, el guiso de fideos tradicional de Yamanashi."
     },
     {
       "city": "Kioto · calles y santuarios",
-      "description": "Subir entre los torii de Fushimi Inari, recorrer Higashiyama hasta Kiyomizu-dera y descubrir Gion al atardecer, entre callejuelas conservadas y arquitectura tradicional."
+      "description": "Caminar bajo los torii de Fushimi Inari, recorrer las pendientes tradicionales de Higashiyama hasta Kiyomizu-dera y visitar Gion, un barrio ligado a las artes escénicas tradicionales de Kioto."
     },
     {
       "city": "Kioto · jardines y rituales",
-      "description": "Pasear por el bosque de bambú de Arashiyama, contemplar Kinkaku-ji y visitar Nijō; acompañar una posible ceremonia del té con yudōfu, yuba u obanzai tradicional."
+      "description": "Recorrer el bosque de bambú de Arashiyama, contemplar Kinkaku-ji y visitar el Castillo Nijō. Si encaja una ceremonia del té, complementarla con gastronomía local como yudōfu, yuba u obanzai."
     },
     {
       "city": "Nara · patrimonio vivo",
-      "description": "Caminar entre los ciervos del parque de Nara, admirar el Gran Buda del Tōdai-ji y recorrer Kasuga Taisha; probar kakinoha-zushi, miwa sōmen o narazuke."
+      "description": "Pasear entre los ciervos del parque de Nara, admirar el Gran Buda de Tōdai-ji y visitar Kasuga Taisha. Buscar especialidades locales como kakinoha-zushi, miwa sōmen o narazuke."
     },
     {
       "city": "Osaka · sabores y barrios",
-      "description": "Recorrer Dotonbori iluminado, explorar Shinsekai y el mercado Kuromon, admirar los exteriores del Castillo de Osaka y probar takoyaki, okonomiyaki y kushikatsu."
+      "description": "Recorrer el canal iluminado de Dotonbori, explorar Shinsekai y el mercado Kuromon, conocer el exterior del Castillo de Osaka y probar takoyaki, okonomiyaki y kushikatsu."
     },
     {
       "city": "Osaka · Universal Studios Japan",
-      "description": "Dedicar un día a Universal Studios Japan, priorizando Super Nintendo World y The Wizarding World of Harry Potter; ajustar el recorrido según accesos, aforo y entradas disponibles."
+      "description": "Dedicar una jornada completa a Universal Studios Japan, con especial interés en Super Nintendo World y The Wizarding World of Harry Potter; considerar los accesos por horario y las entradas disponibles."
     }
   ]
 }
