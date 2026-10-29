@@ -179,5 +179,43 @@
       "base": true,
       "order": 5
     }
+  ],
+  "experiences": [
+    {
+      "city": "Tokio · tradición",
+      "description": "Descubrir el Sensō-ji entre faroles y comercios de Asakusa, caminar por Ueno y Ameyoko y probar especialidades de Edo como monjayaki, soba o fukagawa-meshi."
+    },
+    {
+      "city": "Tokio · vida urbana",
+      "description": "Cruzar Shibuya entre pantallas gigantes, explorar Harajuku y Meiji Jingū, descubrir Akihabara y contemplar el perfil de Shinjuku antes de recorrer sus callejones nocturnos."
+    },
+    {
+      "city": "Tokio · experiencias contemporáneas",
+      "description": "Entrar en una instalación inmersiva de teamLab si hay entradas y disfrutar de un mirador panorámico, combinando arquitectura contemporánea, arte digital y perspectivas sorprendentes de la metrópoli."
+    },
+    {
+      "city": "Kawaguchiko · monte Fuji",
+      "description": "Contemplar, si el cielo lo permite, el monte Fuji desde el lago Kawaguchi y Oishi Park; completar el paseo con hōtō, fideos tradicionales de Yamanashi, o fuji-mabushi."
+    },
+    {
+      "city": "Kioto · calles y santuarios",
+      "description": "Subir entre los torii de Fushimi Inari, recorrer Higashiyama hasta Kiyomizu-dera y descubrir Gion al atardecer, entre callejuelas conservadas y arquitectura tradicional."
+    },
+    {
+      "city": "Kioto · jardines y rituales",
+      "description": "Pasear por el bosque de bambú de Arashiyama, contemplar Kinkaku-ji y visitar Nijō; acompañar una posible ceremonia del té con yudōfu, yuba u obanzai tradicional."
+    },
+    {
+      "city": "Nara · patrimonio vivo",
+      "description": "Caminar entre los ciervos del parque de Nara, admirar el Gran Buda del Tōdai-ji y recorrer Kasuga Taisha; probar kakinoha-zushi, miwa sōmen o narazuke."
+    },
+    {
+      "city": "Osaka · sabores y barrios",
+      "description": "Recorrer Dotonbori iluminado, explorar Shinsekai y el mercado Kuromon, admirar los exteriores del Castillo de Osaka y probar takoyaki, okonomiyaki y kushikatsu."
+    },
+    {
+      "city": "Osaka · Universal Studios Japan",
+      "description": "Dedicar un día a Universal Studios Japan, priorizando Super Nintendo World y The Wizarding World of Harry Potter; ajustar el recorrido según accesos, aforo y entradas disponibles."
+    }
   ]
 }
