@@ -96,6 +96,7 @@ window.AtlasBudgetTable = (() => {
             markup.push('<tr class="budget-subtotal"><td>' + (key === 'flight' ? 'Referencia de vuelo · no incluida en subtotal terrestre' : 'Subtotal') +
                 '</td><td></td><td class="budget-amount">' +
                 (key === 'flight' && referenceFlightMXN !== null ? pesos(referenceFlightMXN) :
+                    key === 'train' && items.every(x => x.mxn === null) ? 'Desglosados en transporte interurbano y urbano' :
                     pesos(subtotal) + (items.some(x => x.mxn === null) ? ' + pendientes' : '')) + '</td></tr>');
         }
         const optional = (trip.expenses || []).filter(item => item.optional);
