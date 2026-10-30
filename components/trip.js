@@ -261,7 +261,9 @@ window.AtlasTrip = function (ctx) {
         const featuredPrice = forecast ? money(t.budgetPreliminary.low) + '–' + money(t.budgetPreliminary.high) : overviewPrice;
         const budgetContext = forecast ? 'MXN · 1 persona · proyección global, no cotización' : 'MXN · 1 persona · estimación parcial del viaje';
         const fxInfo = masterOverview && t.exchangeRateSnapshot?.date && t.exchangeRates ? Object.entries(t.exchangeRates).filter(([code,rate]) => /^[A-Z]{3}$/.test(code) && Number.isFinite(rate) && rate > 0).map(([code,rate]) => code + ' 1 ≈ $' + rate.toFixed(4) + ' MXN') : [];
-        const fxMarkup = fxInfo.length ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipo de cambio de referencia · ' + esc(t.exchangeRateSnapshot.date) + '</div><div class="budget-exchange-values">' + fxInfo.map(x => '<span>' + esc(x) + '</span>').join('') + '</div></div>' : '';
+        const fxSource = t.exchangeRateSnapshot?.sources?.JPY || t.exchangeRateSnapshot?.sources?.EUR || t.exchangeRateSnapshot?.sources?.USD;
+        const fxSourceLink = typeof fxSource === 'string' && /^https:\/\//.test(fxSource) ? ' · <a href="' + esc(fxSource) + '" target="_blank" rel="noopener noreferrer">Fuente</a>' : '';
+        const fxMarkup = fxInfo.length ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipo de cambio de referencia · ' + esc(t.exchangeRateSnapshot.date) + fxSourceLink + '</div><div class="budget-exchange-values">' + fxInfo.map(x => '<span>' + esc(x) + '</span>').join('') + '</div></div>' : '';
         // Render detailed day cards as soon as their data exists, even for draft trips.
         // A draft status must not force the entire itinerary into plain placeholders.
         const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
