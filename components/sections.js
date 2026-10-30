@@ -35,7 +35,7 @@ window.AtlasSections = function (ctx) {
             const [title, items] = Array.isArray(group) ? group : [group?.title, group?.items];
             const safeItems = Array.isArray(items) ? items : [];
             return `
-            <section class="reservation-group ${groupIndex === 0 ? 'reservation-priority-very-high' : groupIndex === 1 ? 'reservation-priority-high' : ''}">
+            <section class="reservation-group ${title === 'Planificación flexible' ? 'reservation-priority-flexible' : groupIndex === 0 ? 'reservation-priority-very-high' : groupIndex === 1 ? 'reservation-priority-high' : ''}">
                 <div class="reservation-group-heading">
                     <h4>${esc(title)}</h4>
                     <span class="reservation-count" aria-label="${safeItems.length} reservas">${safeItems.length}</span>
