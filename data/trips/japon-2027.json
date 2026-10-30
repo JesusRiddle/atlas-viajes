@@ -1508,10 +1508,10 @@
       "title": "Fushimi Inari y Kiyomizu-dera · torii y calles de Higashiyama",
       "base": "Kioto",
       "am": "1. Salir temprano de Shijō-Karasuma hacia Fushimi Inari; recorrer los torii y avanzar por la montaña únicamente hasta el mirador o punto que resulte cómodo.\n2. Reservar alrededor de 2 horas para senderos, fotos y regreso; evitar subir hasta la cima si compromete Higashiyama.",
-      "pm": "1. Viajar por Keihan desde Fushimi-Inari hacia Kiyomizu-Gojō y subir a pie a Kiyomizu-dera; dedicar alrededor de 60–90 minutos al templo.\n2. Descender por Sannenzaka y Ninenzaka, con pausas para comer y conocer las calles tradicionales.",
+      "pm": "1. Desde Fushimi-Inari tomar Keihan hacia Kiyomizu-Gojō; subir caminando unos 20–30 minutos por calles en pendiente hasta Kiyomizu-dera, con descansos.\n2. Visitar el templo y descender por Sannenzaka y Ninenzaka; comer en Higashiyama sin imponer una hora fija.",
       "night": "1. Continuar hacia Yasaka y Gion solo si quedan tiempo y energía, sin repetir obligatoriamente el paseo del día 8.\n2. Cenar cerca de Gion o Shijō y volver al hotel para descansar.",
-      "mobility": "• *Hotel → Fushimi Inari:* Desde Shijō-Karasuma conectar con Keihan o JR según ruta real; comprobar estación y transbordo.\n• *Fushimi-Inari → Kiyomizu:* Keihan a Kiyomizu-Gojō y caminata cuesta arriba; dejar margen amplio para escaleras.\n• *Regreso:* Desde Higashiyama/Gion volver en tren, autobús o a pie según ubicación y cansancio.",
-      "note": "• *Horario:* Kiyomizu-dera abre habitualmente desde las 6:00; la hora de cierre varía por temporada. Verificar calendario oficial de 2027.\n• *Esfuerzo:* Dos complejos con escaleras y pendientes; preferir la subida parcial de Fushimi Inari.\n• *Festival aplazado:* Si Jidai Matsuri pasa al 23, sustituir esta jornada por el desfile y redistribuir el contenido, sin sumar ambos planes.",
+      "mobility": "• *Shijō-Karasuma → Fushimi Inari:* Caminar hacia la estación Keihan de Gion-Shijō o conectar por metro y tren; elegir la ruta con menos transbordos según la hora.\n• *Fushimi-Inari → Kiyomizu-Gojō:* Keihan y subida a pie de alrededor de 20–30 minutos; no confundir la estación con la entrada del templo.\n• *Regreso:* Bajar desde Higashiyama hacia Gion/Shijō y volver al hotel en transporte urbano o caminando según energía.",
+      "note": "• *Horario oficial:* Kiyomizu-dera abre desde las 6:00; el cierre varía por temporada. Consultar el calendario 2027 antes de elegir la hora de visita.\n• *Ritmo:* Fushimi Inari parcial y Kiyomizu-dera implican pendientes y escaleras; dejar Gion como extensión opcional.\n• *Festival aplazado:* Si Jidai Matsuri se mueve al 23 de octubre, sustituir esta jornada por el desfile y reorganizar este recorrido dentro de Kioto; no intentar hacer ambos.",
       "hotel": "kioto-karasuma",
       "transportRefs": [],
       "places": [],
@@ -1523,8 +1523,8 @@
       "spend": null,
       "noteLinks": [
         {
-          "label": "Kiyomizu-dera · horarios oficiales",
-          "url": "https://www.kiyomizudera.or.jp/en/location/"
+          "label": "Kiyomizu-dera · sitio oficial y horarios",
+          "url": "https://www.kiyomizudera.or.jp/en/visit/"
         },
         {
           "label": "Fushimi Inari · santuario oficial",
@@ -1537,11 +1537,11 @@
       "date": "2027-10-24",
       "title": "Arashiyama y Kinkaku-ji · oeste y norte de Kioto",
       "base": "Kioto",
-      "am": "1. Salir temprano desde Karasuma hacia Arashiyama por Hankyu con cambio en Katsura; recorrer el bosque de bambú antes de la mayor afluencia.\n2. Visitar el jardín de Tenryū-ji si interesa (referencia oficial ¥500, horario 8:30–17:00) y caminar cerca del río Katsura; almorzar por la zona.",
-      "pm": "1. Trasladarse desde Arashiyama hacia Kinkaku-ji considerando una conexión transversal de autobús y/o tren, con margen para espera y caminata.\n2. Recorrer Kinkaku-ji sin prisas y regresar al centro; no añadir otro templo lejano al mismo día.",
+      "am": "1. Salir temprano desde Shijō-Karasuma hacia Arashiyama por Hankyu, cambiando en Katsura; caminar al bosque de bambú antes de la mayor afluencia.\n2. Visitar el jardín de Tenryū-ji si interesa (entrada general de referencia ¥500) y pasear junto al río Katsura; terminar el almuerzo antes del traslado al norte.",
+      "pm": "1. Trasladarse hacia Kinkaku-ji con combinación de tren y autobús, calculando alrededor de 45–70 minutos puerta a puerta como margen de planeación, sujeto a tráfico.\n2. Visitar el Pabellón Dorado dentro de su horario oficial y regresar al centro, sin añadir otro templo distante.",
       "night": "1. Volver al hotel en Shijō-Karasuma y descansar tras los traslados y caminatas.\n2. Cenar y preparar documentos para la excursión a Nara.",
-      "mobility": "• *Karasuma → Arashiyama:* Hankyu hacia Katsura y transbordo a Hankyu Arashiyama; después caminar al bosque.\n• *Arashiyama → Kinkaku-ji:* No hay conexión única directa desde el bosque; comparar tren y autobús, dejando un margen amplio antes del cierre.\n• *Kinkaku-ji → hotel:* Regresar en autobús/metro según congestión; no volver a Arashiyama.",
-      "note": "• *Tenryū-ji:* Jardín opcional, referencia oficial de 2026 de ¥500; acceso a edificios y pintura del dragón tienen suplementos.\n• *Prioridades:* Bosque de bambú y Kinkaku-ji, manteniendo pausa para comer.\n• *Castillo Nijō:* No cabe cómodamente aquí sin sacrificar Kinkaku-ji. Evaluar la mañana del día 13 antes de cambiar de hotel, reduciendo las visitas de Osaka, o dejarlo opcional.",
+      "mobility": "• *Karasuma → Arashiyama:* Hankyu con transbordo en Katsura y caminata desde Hankyu Arashiyama hasta el bosque.\n• *Arashiyama → Kinkaku-ji:* Trayecto transversal con transbordos; comprobar conexiones en el momento y prever congestión dominical.\n• *Regreso a Shijō:* Autobús o combinación con metro; evitar regresar hacia Arashiyama.",
+      "note": "• *Domingo:* Arashiyama puede estar muy concurrido; salir temprano y priorizar bosque y jardín antes del almuerzo.\n• *Tenryū-ji:* Jardín opcional ¥500 y entrada habitual de 8:30 a 17:00 como referencias oficiales; edificios y pintura del dragón tienen suplementos.\n• *Castillo Nijō:* Mantenerlo pendiente para estudiar un ajuste del día 13; no sacrificar Kinkaku-ji ni agregarlo hoy.",
       "hotel": "kioto-karasuma",
       "transportRefs": [],
       "places": [],
@@ -1567,11 +1567,11 @@
       "date": "2027-10-25",
       "title": "Nara · Gran Buda, parque de ciervos y Kasuga Taisha",
       "base": "Kioto",
-      "am": "1. Desde Shijō-Karasuma, llegar a Kyoto Station y tomar Kintetsu hacia Kintetsu-Nara; comparar tren regular con Limited Express de suplemento.\n2. Caminar hacia Nara Park, observar los ciervos y dirigirse a Tōdai-ji, priorizando el Salón del Gran Buda.",
-      "pm": "1. Visitar el Gran Buda y dedicar tiempo al recinto de Tōdai-ji (entrada de referencia oficial ¥800 por adulto; en octubre el pabellón abre habitualmente 7:30–17:30).\n2. Caminar por el parque hasta Kasuga Taisha, entrando a las áreas de visita permitidas si el horario lo permite; probar kakinoha-zushi o miwa sōmen.",
+      "am": "1. Desde Shijō-Karasuma conectar con Kyoto Station y tomar Kintetsu hacia Kintetsu-Nara; el tren Limited Express requiere suplemento, a diferencia de servicios regulares.\n2. Caminar por Nara Park hacia Tōdai-ji observando los ciervos con cuidado; priorizar el Salón del Gran Buda antes del almuerzo.",
+      "pm": "1. Entrar al Daibutsuden de Tōdai-ji (adulto ¥800 y horario habitual de octubre 7:30–17:30, referencias vigentes consultadas en 2026); dedicar alrededor de 60–90 minutos al recinto principal.\n2. Continuar a Kasuga Taisha por los senderos del parque si hay tiempo y energía; almorzar y probar kakinoha-zushi o miwa sōmen según disponibilidad.",
       "night": "1. Regresar a Kintetsu-Nara y tomar el tren de vuelta a Kyoto Station, seguido del trayecto al hotel.\n2. Cenar cerca de Shijō-Karasuma y preparar maleta para el cambio de hotel del día siguiente.",
-      "mobility": "• *Hotel → Nara:* Metro/JR hacia Kyoto Station y Kintetsu a Kintetsu-Nara; esta estación queda más cerca del parque que JR Nara.\n• *Ruta a pie:* Kintetsu-Nara → parque → Tōdai-ji → Kasuga Taisha; reservar varias horas y evitar retrocesos.\n• *Regreso:* Volver a Kintetsu-Nara y tomar tren a Kioto; verificar el último servicio y la posible tarifa extra de Limited Express.",
-      "note": "• *Tōdai-ji:* Entrada de referencia ¥800 (consulta de octubre de 2026); el horario cambia entre octubre y noviembre. No está comprada.\n• *Kasuga Taisha:* El culto general abre habitualmente hasta las 17:30 en octubre; la visita especial tiene horario más restringido.\n• *Ciervos:* Son animales silvestres; no darles comida distinta de las galletas autorizadas y mantener cuidado con pertenencias.",
+      "mobility": "• *Hotel → Nara:* Llegar a Kyoto Station y tomar Kintetsu a Kintetsu-Nara, más cercana al parque que JR Nara; verificar si hay tren directo o cambio de servicio.\n• *Recorrido:* Kintetsu-Nara → parque → Tōdai-ji → Kasuga Taisha, a pie y con pausas.\n• *Regreso:* Volver a Kintetsu-Nara y tomar tren a Kioto; confirmar la conexión al hotel y suplemento en caso de Limited Express.",
+      "note": "• *Entrada y efectivo:* Tōdai-ji informa ¥800 para el Salón del Gran Buda y señala pagos en efectivo; llevar yenes y verificar tarifas de 2027.\n• *Kasuga Taisha:* La visita al santuario es secundaria a Tōdai-ji; revisar horarios específicos de áreas especiales.\n• *Ciervos:* No dar comida humana ni acercarse de manera brusca; respetar avisos del parque.",
       "hotel": "kioto-karasuma",
       "transportRefs": [
         "kyoto-nara"
