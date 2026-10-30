@@ -2227,7 +2227,10 @@
       "transportRefs": [
         "tokyo-kyoto"
       ],
-      "places": [],
+      "places": [
+        "japan27-gion",
+        "japan27-yasaka"
+      ],
       "headerPlaces": [
         "Tokyo Station · Shinkansen Tōkaidō",
         "Kyoto Station y Shijō-Karasuma",
@@ -2257,7 +2260,9 @@
       "note": "• *Calendario:* Jidai Matsuri se programa habitualmente el 22 de octubre; confirmar en 2027. Si la procesión se aplaza al 23, usar el día 10 como festival y revisar el pronóstico y los anuncios oficiales.\n• *Reorganización concreta:* Tras aplazamiento, dedicar el día 24 a Arashiyama/Kinkaku-ji y el 25 a Nara; Fushimi Inari + Kiyomizu-dera queda pendiente de reubicación, no se puede asumir que cabrá sin suprimir otra visita.\n• *Asientos:* Opcionales, sin comprar. Elegir un solo punto de observación autorizado y revisar cambios de ruta y hora.\n• *Nijō:* Mantenerlo la mañana del 26 solo si el resto del programa continúa viable.",
       "hotel": "kioto-karasuma",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-jidai-matsuri"
+      ],
       "headerPlaces": [
         "Karasuma Oike · paso de la procesión",
         "Jidai Matsuri · desfile histórico",
@@ -2291,7 +2296,11 @@
       "note": "• *Horario:* Kiyomizu-dera abre habitualmente desde las 6:00; el cierre varía según temporada y se confirmará para 2027.\n• *Ritmo:* Fushimi Inari parcial más Higashiyama ya supone pendientes y escaleras; Gion sigue opcional.\n• *Festival aplazado:* Si Jidai Matsuri pasa al 23, este día se dedica al desfile; Fushimi Inari/Kiyomizu quedan sin fecha asignada hasta rediseñar un bloque de Kioto. No intentar encajar las dos jornadas en una.",
       "hotel": "kioto-karasuma",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-fushimi-inari",
+        "japan27-kiyomizu",
+        "japan27-sannenzaka"
+      ],
       "headerPlaces": [
         "Fushimi Inari Taisha",
         "Kiyomizu-dera",
@@ -2321,7 +2330,10 @@
       "note": "• *Domingo:* Arashiyama puede estar muy concurrido; salir temprano y priorizar bosque y jardín antes del almuerzo.\n• *Tenryū-ji:* Jardín opcional ¥500 (≈ $60 MXN) y entrada habitual de 8:30 a 17:00 como referencias oficiales; edificios y pintura del dragón tienen suplementos.\n• *Castillo Nijō:* Mantenerlo pendiente para estudiar un ajuste del día 13; no sacrificar Kinkaku-ji ni agregarlo hoy.",
       "hotel": "kioto-karasuma",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-arashiyama",
+        "japan27-kinkakuji"
+      ],
       "headerPlaces": [
         "Bosque de bambú de Arashiyama",
         "Tenryū-ji · opcional",
@@ -2353,7 +2365,11 @@
       "transportRefs": [
         "kyoto-nara"
       ],
-      "places": [],
+      "places": [
+        "japan27-nara-deer",
+        "japan27-todaiji",
+        "japan27-kasuga"
+      ],
       "headerPlaces": [
         "Kintetsu-Nara · acceso al parque",
         "Tōdai-ji · Gran Buda",
@@ -2389,7 +2405,9 @@
       "transportRefs": [
         "kyoto-osaka"
       ],
-      "places": [],
+      "places": [
+        "japan27-nijo"
+      ],
       "headerPlaces": [
         "Castillo Nijō · Ninomaru",
         "Osaka-Namba · hotel",
@@ -2634,6 +2652,18 @@
     "japan27-kawaguchi-autumn": "Desde la ribera del lago Kawaguchi se divisa el monte Fuji; esta fotografía documenta colores otoñales, sujetos a la temporada y al clima.",
     "japan27-oishi-park": "Oishi Park ofrece una panorámica del lago Kawaguchi y el monte Fuji, visible cuando la nubosidad permite contemplar su silueta.",
     "japan27-ginza": "Las avenidas comerciales de Ginza combinan grandes almacenes y arquitectura contemporánea; algunos tramos se convierten en paseos peatonales.",
-    "japan27-tokyo-station": "La fachada histórica de ladrillo rojo de Tokyo Station preside Marunouchi, entre edificios de oficinas y grandes avenidas del centro."
+    "japan27-tokyo-station": "La fachada histórica de ladrillo rojo de Tokyo Station preside Marunouchi, entre edificios de oficinas y grandes avenidas del centro.",
+    "japan27-gion": "Las calles de Gion conservan fachadas tradicionales de madera y pequeños pasajes que muestran la arquitectura histórica del antiguo distrito de entretenimiento de Kioto.",
+    "japan27-yasaka": "El santuario Yasaka conecta el barrio de Gion con sus patios ceremoniales y puertas de colores intensos, especialmente agradables durante un paseo vespertino.",
+    "japan27-jidai-matsuri": "La procesión del Jidai Matsuri recrea diversas épocas de la historia japonesa mediante vestimentas tradicionales y personajes que desfilan por las calles de Kioto.",
+    "japan27-fushimi-inari": "Los corredores de torii bermellón ascienden por la montaña de Inari, formando uno de los paisajes religiosos más reconocibles de Kioto.",
+    "japan27-kiyomizu": "El gran escenario de madera del templo Kiyomizu-dera se eleva sobre la ladera de Higashiyama, con vistas al paisaje urbano de Kioto.",
+    "japan27-sannenzaka": "Sannenzaka reúne callejuelas empedradas, tiendas tradicionales y casas de madera en la subida histórica hacia el templo Kiyomizu-dera.",
+    "japan27-arashiyama": "Los altos tallos de bambú forman un corredor verde en Arashiyama; visitarlo temprano permite disfrutar mejor del sendero antes de las multitudes.",
+    "japan27-kinkakuji": "El Pabellón Dorado refleja sus pisos superiores revestidos en pan de oro sobre un estanque rodeado de jardines de tradición japonesa.",
+    "japan27-nara-deer": "Los ciervos sika deambulan libremente por el parque de Nara y los accesos a sus templos, entre senderos y zonas arboladas.",
+    "japan27-todaiji": "La monumental sala Daibutsuden alberga el Gran Buda de bronce y constituye uno de los principales hitos históricos de la antigua capital de Nara.",
+    "japan27-kasuga": "En los senderos próximos a Kasuga Taisha, los faroles de piedra y los ciervos forman una escena característica de este santuario sintoísta.",
+    "japan27-nijo": "El Palacio Ninomaru, dentro del Castillo Nijō, conserva la arquitectura de la residencia del shogun y anticipa la historia del período Edo."
   }
 }
