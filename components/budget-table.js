@@ -87,10 +87,12 @@ window.AtlasBudgetTable = (() => {
         if (!trip.majorTransport?.length && !trip.expenses?.length) return '';
         const data = rows(trip);
         const range = data.result.planningRangeMXN;
+        const planning = budget.planningEstimate?.(trip);
         return '<div class="budget-ledger" id="budget-ledger">' +
             '<div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Moneda original</th><th>MXN</th></tr></thead>' +
             '<tbody data-budget-rows>' + data.html + '</tbody></table></div>' +
             '<p class="tiny" data-budget-note>' + esc(data.note) + '</p>' +
+            (planning ? '<p class="budget-range" data-budget-planning><strong>Proyección global de planeación:</strong> ' + pesos(planning.low) + '–' + pesos(planning.high) + ' MXN · vuelo de referencia ' + esc(planning.flightOption) + ' (' + esc(planning.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio') + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar al subtotal registrado.</p>' : '') +
             (range ? '<p class="budget-range"><strong>Rango estimado para planear:</strong> ' +
                 pesos(range[0]) + '–' + pesos(range[1]) + ' MXN</p>' : '') +
             '</div>';
@@ -124,6 +126,9 @@ window.AtlasBudgetTable = (() => {
             const next = rows(trip);
             host.querySelector('[data-budget-rows]').innerHTML = next.html;
             host.querySelector('[data-budget-note]').textContent = next.note;
+            const projection = host.querySelector('[data-budget-planning]');
+            const updated = budget.planningEstimate?.(trip);
+            if (projection && updated) projection.innerHTML = '<strong>Proyección global de planeación:</strong> ' + pesos(updated.low) + '–' + pesos(updated.high) + ' MXN · vuelo de referencia ' + esc(updated.flightOption) + ' (' + esc(updated.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio') + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar al subtotal registrado.';
             applyCollapsed();
         };
         const unsubscribe = selections.subscribe(tripId => { if (tripId === trip.id) refresh(); });
