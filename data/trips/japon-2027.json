@@ -451,5 +451,731 @@
         }
       ]
     ]
-  ]
+  ],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "México ↔ Japón · comparar aeropuertos y regreso",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Vuelo redondo MEX ↔ Tokio (HND/NRT)",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "HND o NRT",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Por definir"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "HND o NRT",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Por definir"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa y equipaje por cotizar",
+              "price": null,
+              "changes": "Por verificar",
+              "refunds": "Por verificar"
+            }
+          ],
+          "notes": "Escenario de cuatro estancias: Tokio 6, Kioto 5, Osaka 4 y Tokio 1. Comparar precio total incluyendo shinkansen de regreso, equipaje, conexiones y descanso. Ningún vuelo reservado."
+        },
+        {
+          "id": "B",
+          "provider": "Multidestino MEX → Tokio / Osaka KIX → MEX",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "HND o NRT",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Por definir"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "KIX",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Por definir"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa multidestino por cotizar",
+              "price": null,
+              "changes": "Por verificar",
+              "refunds": "Por verificar"
+            }
+          ],
+          "notes": "Evita volver a Tokio para el vuelo. Comparar coste total y duración real del regreso: una opción barata con escala nocturna excesiva no equivale a una conexión cómoda. Requiere reajustar la última noche y los hoteles."
+        }
+      ],
+      "links": [
+        {
+          "label": "Comparar vuelos y equipaje",
+          "url": "https://www.google.com/travel/flights"
+        }
+      ],
+      "ticketGuide": "Cotizar ida y vuelta o multidestino con el mismo equipaje, número de escalas y duración real; no decidir por precio de boleto aislado."
+    },
+    {
+      "id": "airport-tokyo",
+      "type": "train",
+      "title": "Llegada · aeropuerto de Tokio → Ueno-Okachimachi",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Keisei Skyliner · si llega a NRT",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Narita Airport (NRT)",
+                  "to": "Keisei Ueno",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Keisei Skyliner · si llega a NRT"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Conexión ferroviaria directa hacia Ueno/Nippori; caminar o usar transporte local al hotel. Prever migración, equipaje y terminal."
+        },
+        {
+          "id": "B",
+          "provider": "Keikyu / Tokyo Monorail · si llega a HND",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Haneda Airport (HND)",
+                  "to": "Ueno-Okachimachi",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Keikyu / Tokyo Monorail · si llega a HND"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Keikyu hacia Shinagawa/Asakusa o monorraíl hacia Hamamatsuchō, seguido de JR/metro. Conexiones y tiempo dependen de terminal y horario."
+        }
+      ],
+      "links": [
+        {
+          "label": "Narita · trenes oficiales",
+          "url": "https://www.narita-airport.jp/en/access/train/"
+        },
+        {
+          "label": "Haneda · acceso",
+          "url": "https://tokyo-haneda.com/en/access/train/index.html"
+        }
+      ],
+      "ticketGuide": "Comprar según aeropuerto y hora real de aterrizaje; evitar billete de horario rígido sin margen para migración."
+    },
+    {
+      "id": "fuji-daytrip",
+      "type": "bus",
+      "title": "Tokio ↔ Kawaguchiko · excursión al Fuji",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Fujikyū / Keio · autobús directo",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Busta Shinjuku",
+                  "to": "Kawaguchiko Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Fujikyū / Keio · autobús directo"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Referencia consultada octubre de 2026: aprox. 1 h 45 min por trayecto y desde ¥2,000 online (¥2,200 en taquilla) por sentido. Tráfico variable; desde Ueno se requiere llegar primero a Shinjuku. Ida y vuelta se adquieren por separado."
+        },
+        {
+          "id": "B",
+          "provider": "JR + Fujikyū Railway / Fuji Excursion",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Shinjuku",
+                  "to": "Kawaguchiko Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR + Fujikyū Railway / Fuji Excursion"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Alternativa ferroviaria para evitar tráfico; algunos servicios Fuji Excursion directos y otros con cambio en Ōtsuki. Consultar tren, reserva y tarifa al abrir ventas."
+        }
+      ],
+      "links": [
+        {
+          "label": "Autobús oficial · tarifas y reserva",
+          "url": "https://bus.fujikyu.co.jp/en/highway/fujisan/shinjuku-kawaguchiko/"
+        },
+        {
+          "label": "JR East · trenes",
+          "url": "https://www.jreast.co.jp/multi/en/"
+        }
+      ],
+      "ticketGuide": "Los autobuses permiten reservar habitualmente desde un mes antes. Como el Fuji depende del clima, evitar reservar ambos sentidos con excesiva anticipación sin evaluar la flexibilidad y la cancelación."
+    },
+    {
+      "id": "tokyo-kyoto",
+      "type": "train",
+      "title": "Tokio → Kioto · Shinkansen Tōkaidō",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "JR Central · Nozomi",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Tokyo o Shinagawa",
+                  "to": "Kyoto",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR Central · Nozomi"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Aproximadamente 2 h 10–20 min en tren, más trayectos hotel-estación. Reservar asiento con equipaje de gran tamaño si aplica; fechas y tarifas aún no disponibles."
+        },
+        {
+          "id": "B",
+          "provider": "JR Central · Hikari",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Tokyo o Shinagawa",
+                  "to": "Kyoto",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR Central · Hikari"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Servicio más lento que Nozomi; comparar tarifa, frecuencia y conexiones. No asumir ahorro significativo."
+        }
+      ],
+      "links": [
+        {
+          "label": "SmartEX · compra oficial",
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "label": "JR Central · información",
+          "url": "https://global.jr-central.co.jp/en/"
+        }
+      ],
+      "ticketGuide": "Comprar el billete individual al fijar fecha; grandes maletas con dimensiones acumuladas superiores a 160 cm requieren reglas específicas de reserva de espacio."
+    },
+    {
+      "id": "kyoto-nara",
+      "type": "train",
+      "title": "Kioto ↔ Nara · excursión",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Kintetsu Railway",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Kyoto Station",
+                  "to": "Kintetsu-Nara Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Kintetsu Railway"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "La estación Kintetsu-Nara queda más cerca a pie del parque y templos; comparar tren expreso regular con Limited Express (suplemento adicional)."
+        },
+        {
+          "id": "B",
+          "provider": "JR West · Miyakoji Rapid",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Kyoto Station",
+                  "to": "JR Nara Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR West · Miyakoji Rapid"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Alternativa JR sin reserva habitual en tren rápido; la estación JR Nara queda más retirada de los templos."
+        }
+      ],
+      "links": [
+        {
+          "label": "Kintetsu · información oficial",
+          "url": "https://www.kintetsu.co.jp/foreign/english/"
+        },
+        {
+          "label": "JR West · información",
+          "url": "https://www.westjr.co.jp/global/en/"
+        }
+      ],
+      "ticketGuide": "Viaje de ida y vuelta, no traslado de hotel. Elegir Kintetsu o JR según tiempo puerta a puerta y actividad inicial."
+    },
+    {
+      "id": "kyoto-osaka",
+      "type": "train",
+      "title": "Kioto → Osaka · cambio de alojamiento",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "JR West · Special Rapid + metro",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Kyoto Station",
+                  "to": "Osaka/Umeda → Namba",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR West · Special Rapid + metro"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Referencia 2026: JR Special Rapid Kyoto–Osaka ~30 min; sumar metro a Namba y traslados al hotel."
+        },
+        {
+          "id": "B",
+          "provider": "Hankyu Railway + metro",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Karasuma Station",
+                  "to": "Osaka-Umeda → Namba",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Hankyu Railway + metro"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Salida desde Karasuma cerca del hotel de Kioto; comparar tiempo y número de cambios hasta Osaka-Namba."
+        }
+      ],
+      "links": [
+        {
+          "label": "JR West · rutas",
+          "url": "https://www.westjr.co.jp/global/en/"
+        },
+        {
+          "label": "Hankyu Railway · rutas",
+          "url": "https://www.hankyu.co.jp/global/en/"
+        }
+      ],
+      "ticketGuide": "No hace falta shinkansen para este tramo. Viajar con equipaje y evitar horas pico si es posible."
+    },
+    {
+      "id": "osaka-usj",
+      "type": "train",
+      "title": "Osaka-Namba ↔ Universal Studios Japan",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Hanshin / JR West · conexiones urbanas",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Osaka-Namba",
+                  "to": "Universal City",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Hanshin / JR West · conexiones urbanas"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Usar tren urbano con uno o más cambios según servicio; comprobar hora de apertura del parque y reservar margen de llegada. El Studio Pass no incluye tren."
+        }
+      ],
+      "links": [
+        {
+          "label": "Acceso oficial a USJ",
+          "url": "https://www.usj.co.jp/web/en/us/access"
+        },
+        {
+          "label": "JR West",
+          "url": "https://www.westjr.co.jp/global/en/"
+        }
+      ],
+      "ticketGuide": "La estación objetivo es Universal City; no confundir con Shin-Osaka."
+    },
+    {
+      "id": "osaka-tokyo-or-kix",
+      "type": "train",
+      "title": "Salida de Osaka · Tokio o aeropuerto Kansai",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "JR Central · Nozomi a Tokio",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Shin-Osaka",
+                  "to": "Tokyo o Shinagawa",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR Central · Nozomi a Tokio"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Solo si el regreso internacional sale de Tokio. Aprox. 2 h 30–40 min en shinkansen, más metro Namba–Shin-Osaka y hotel final."
+        },
+        {
+          "id": "B",
+          "provider": "Nankai Railway · rumbo a KIX",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Nankai Namba",
+                  "to": "Kansai International Airport (KIX)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Nankai Railway · rumbo a KIX"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Solo si el vuelo regresa desde Osaka. Comparar Rapi:t y Airport Express, equipaje, terminal y hora de check-in."
+        }
+      ],
+      "links": [
+        {
+          "label": "SmartEX · shinkansen",
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "label": "Nankai · aeropuerto Kansai",
+          "url": "https://www.nankai.co.jp/en_railway/"
+        }
+      ],
+      "ticketGuide": "Elegir una sola alternativa cuando estén cotizados los vuelos; no sumar ambos traslados al presupuesto. El último hotel de Tokio solo corresponde al escenario A."
+    },
+    {
+      "id": "tokyo-airport-return",
+      "type": "train",
+      "title": "Tokio → aeropuerto · salida internacional",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Keikyu / Tokyo Monorail · si sale de HND",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Ueno-Okachimachi",
+                  "to": "Haneda Airport (HND)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Keikyu / Tokyo Monorail · si sale de HND"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "La ruta depende de terminal y hora. Comparar también hotel en Shinagawa o cerca de Haneda para salida temprana."
+        },
+        {
+          "id": "B",
+          "provider": "Keisei Skyliner · si sale de NRT",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Keisei Ueno",
+                  "to": "Narita Airport (NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Keisei Skyliner · si sale de NRT"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Considerar traslado desde hotel y llegada al aeropuerto con margen internacional suficiente."
+        }
+      ],
+      "links": [
+        {
+          "label": "Haneda · transporte",
+          "url": "https://tokyo-haneda.com/en/access/train/index.html"
+        },
+        {
+          "label": "Narita · transporte",
+          "url": "https://www.narita-airport.jp/en/access/train/"
+        }
+      ],
+      "ticketGuide": "Solo aplica al escenario con regreso desde Tokio; si se regresa desde KIX, no presupuestar este tramo."
+    }
+  ],
+  "ticketNotes": [
+    {
+      "title": "JR Pass nacional · comparar antes de comprar",
+      "note": "Como referencia, el pase nacional de 7 días cuesta ¥50,000 por compra online (2026); el itinerario solo contempla dos trayectos largos en shinkansen si se regresa desde Tokio. Priorizar billetes individuales y sumar primero los transportes elegibles: el pase no cubre de forma estándar el Nozomi sin suplemento especial."
+    },
+    {
+      "title": "Shinkansen · billetes y equipaje",
+      "note": "Reservar en SmartEX o canales JR oficiales cuando abran ventas. Elegir Tokyo/Shinagawa → Kyoto y, solo si corresponde, Shin-Osaka → Tokyo/Shinagawa. Comprobar normas de equipaje sobredimensionado y cancelación de la tarifa concreta."
+    },
+    {
+      "title": "Kawaguchiko · autobús frente a tren",
+      "note": "El autobús directo de Shinjuku es práctico, pero el tiempo depende del tráfico y los asientos son reservados. El tren Fuji Excursion puede evitar congestiones; consultar sus horarios y costo. No comprar transporte rígido antes de decidir el día según el clima."
+    },
+    {
+      "title": "IC card · metro y trenes urbanos",
+      "note": "Usar Suica, PASMO o ICOCA donde sean aceptadas. No sustituyen reservas del shinkansen ni todos los servicios exprés; confirmar compatibilidad y saldo. Revisar disponibilidad de tarjetas físicas o digitales y medios de recarga."
+    },
+    {
+      "title": "Billetes independientes y no duplicación",
+      "note": "La excursión a Nara se paga ida y vuelta; el transporte a Universal no está incluido en Studio Pass. No sumar simultáneamente regreso Osaka→Tokio y Osaka→KIX, ni pagar alternativas de pase y billete individual para el mismo tramo."
+    }
+  ],
+  "local": "Moverse principalmente en tren y metro, con tarjeta IC para trayectos urbanos. Tokio: desde Ueno-Okachimachi, combinar JR Yamanote y metro según barrio. Kioto: metro y autobús, priorizando tren para Fushimi Inari y Nara; prever caminatas entre templos. Osaka: metro para Namba/Dotonbori y tren a Universal City. Comprar Shinkansen y autobuses interurbanos por separado cuando se fijen fechas. Ningún horario ni tarifa de 2027 está confirmado."
 }
