@@ -2107,6 +2107,7 @@
       "places": [
         "japan27-meiji-jingu",
         "japan27-harajuku",
+        "japan27-hachiko",
         "japan27-shibuya"
       ],
       "headerPlaces": [
@@ -2683,7 +2684,8 @@
     "japan27-osaka-castle": "La torre principal del Castillo de Osaka se eleva sobre jardines, murallas y fosos; el recinto permite apreciar la historia de la ciudad.",
     "japan27-shinsekai": "Las calles de Shinsekai reúnen grandes letreros, restaurantes de kushikatsu y la torre Tsūtenkaku, una imagen característica del sur de Osaka.",
     "japan27-kuromon": "Los pasillos cubiertos de Kuromon concentran pescaderías y puestos de comida; es una parada práctica para probar especialidades antes de recorrer Nippombashi.",
-    "japan27-den-den-town": "Las tiendas de Den Den Town reúnen electrónica, videojuegos, figuras y cultura otaku en varias calles de Nippombashi, cerca del mercado Kuromon."
+    "japan27-den-den-town": "Las tiendas de Den Den Town reúnen electrónica, videojuegos, figuras y cultura otaku en varias calles de Nippombashi, cerca del mercado Kuromon.",
+    "japan27-hachiko": "La estatua de Hachikō, junto a la salida Hachikō de Shibuya Station, recuerda la lealtad del célebre perro y es un punto de encuentro emblemático de Tokio."
   },
   "cover": "japan27-fushimi-inari"
 }
