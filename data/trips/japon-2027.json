@@ -90,21 +90,21 @@
       "title": "Estilo de viaje",
       "badge": "Moderado–activo",
       "tone": "orange",
-      "text": "Recorrido independiente para una persona, con trenes y metro, caminatas prolongadas y pausas entre visitas. Reservar jornadas completas para Kawaguchiko y Universal Studios Japan y evitar cambios de alojamiento innecesarios."
+      "text": "Viaje independiente para una persona, con traslados en tren y metro, caminatas prolongadas y descansos entre visitas. Dedicar una jornada a Kawaguchiko y otra a Universal Studios Japan; evitar cambios de alojamiento innecesarios."
     },
     {
       "id": "language",
       "title": "Idioma y moneda",
       "badge": "Fácil de organizar",
       "tone": "green",
-      "text": "Idioma oficial: japonés; el inglés ayuda en estaciones y zonas turísticas, pero un traductor facilita otras situaciones. Moneda: yen (JPY/¥). Llevar algo de efectivo para pequeños negocios y elegir el cobro en yenes, no en pesos, si ofrecen conversión."
+      "text": "En Japón se habla japonés; el inglés es útil en estaciones, hoteles y zonas turísticas, pero conviene llevar traductor sin conexión. Moneda: yen (JPY). Usar tarjeta donde la acepten, llevar efectivo para pequeños comercios y rechazar la conversión automática a MXN."
     },
     {
       "id": "entry",
       "title": "Documentación y consejos prácticos",
       "badge": "Verificar antes de viajar",
       "tone": "orange",
-      "text": "Para turismo sin actividades remuneradas de menos de 90 días, los mexicanos están exentos de visa. Llevar pasaporte vigente, datos del alojamiento y comprobante de salida. Verificar requisitos de tránsito en la escala elegida. Japón usa enchufes tipo A y corriente de 100 V: comprobar los aparatos y llevar adaptador si es necesario. Revisar los requisitos nuevamente antes del viaje."
+      "text": "Los mexicanos pueden visitar Japón sin visa para turismo de hasta 90 días, sin realizar actividades remuneradas. Llevar pasaporte vigente, datos del alojamiento y prueba de salida. Confirmar requisitos para cualquier escala, especialmente si implica entrar a Estados Unidos. Japón utiliza enchufes tipo A y 100 V; revisar compatibilidad y llevar adaptador si corresponde. Reconfirmar reglas antes del viaje."
     }
   ],
   "bases": [
@@ -125,7 +125,7 @@
       1
     ]
   ],
-  "lodgingSummary": "Distribución provisional: Tokio 6 noches, Kioto 5, Osaka 4 y Tokio 1. Hoteles candidatos, sin reservas. Los precios son supuestos para planear, no cotizaciones para 2027; el regreso desde Osaka podría eliminar la última noche en Tokio.",
+  "lodgingSummary": "Plan provisional de 16 noches: Tokio (6), Kioto (5), Osaka (4) y Tokio (1). Excursiones a Kawaguchiko y Nara sin cambiar de hotel. Los alojamientos y precios son candidatos de planeación, no reservas; la última noche en Tokio depende del aeropuerto de salida.",
   "climate": "En octubre, las máximas medias habituales rondan los 22–24 °C en Tokio, Kioto y Osaka, con mínimas aproximadas de 14–16 °C. En noviembre, las máximas bajan a unos 17–18 °C y las mínimas a 9–10 °C. Kawaguchiko es más frío, especialmente al amanecer; las nubes o la lluvia pueden ocultar el monte Fuji. Son promedios históricos, no pronósticos para 2027.\n\n*Qué llevar:* Ropa en capas, chamarra impermeable ligera, paraguas compacto y zapatos cómodos. Para noviembre, añadir una prenda abrigadora para las mañanas y las excursiones al Fuji. Ajustar el equipaje según la tarifa aérea elegida.\n\n*Horas de luz:* Durante la segunda mitad de octubre, el sol sale aproximadamente entre las 5:45 y las 6:10 y se oculta entre las 16:50 y las 17:15; en noviembre, sale alrededor de las 6:05–6:45 y se pone cerca de las 16:30–17:00 (horario local JST, según fecha y ciudad). Reservar las primeras horas para Fuji, jardines y templos; aprovechar la noche para barrios iluminados y gastronomía.",
   "mapPoints": [
     {
@@ -134,7 +134,7 @@
         35.6895,
         139.6917
       ],
-      "kind": "Alojamiento · inicio y regreso",
+      "kind": "Alojamiento · dos estancias (6 + 1 noches)",
       "base": true,
       "order": 1
     },
@@ -198,7 +198,7 @@
     },
     {
       "city": "Kioto · jardines y rituales",
-      "description": "Recorrer el bosque de bambú de Arashiyama, contemplar Kinkaku-ji y visitar el Castillo Nijō. Si encaja una ceremonia del té, complementarla con gastronomía local como yudōfu, yuba u obanzai."
+      "description": "Recorrer el bosque de bambú de Arashiyama, contemplar Kinkaku-ji y visitar el Castillo Nijō. Como experiencia opcional, participar en una ceremonia del té y probar yudōfu, yuba u obanzai en otro momento."
     },
     {
       "city": "Nara · patrimonio vivo",
@@ -222,8 +222,8 @@
       "checkIn": "2027-10-15",
       "checkOut": "2027-10-21",
       "status": "Candidato · no reservado",
-      "rate": "Estimación para planear: $1700 MXN/noche; 6 noche(s): $10200 MXN. No es cotización para octubre de 2027.",
-      "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
+      "rate": "Presupuesto estimado: $1,700 MXN por noche × 6 noches = $10,200 MXN. Sin cotización para 2027.",
+      "rateConditions": "Habitación privada para una persona; verificar baño propio, desayuno, impuestos, cancelación y disponibilidad en las fechas definitivas.",
       "notes": "Zona Ueno-Okachimachi, bien comunicada para explorar Tokio.",
       "links": [
         {
@@ -241,8 +241,8 @@
       "checkIn": "2027-10-21",
       "checkOut": "2027-10-26",
       "status": "Candidato · no reservado",
-      "rate": "Estimación para planear: $1900 MXN/noche; 5 noche(s): $9500 MXN. No es cotización para octubre de 2027.",
-      "rateConditions": "Estimación para habitación privada de 1 adulto, no cotización para 2027. Confirmar baño, tarifa final, cancelación y tasa de alojamiento de Kioto: desde marzo de 2026, ¥400 por persona/noche para tarifas entre ¥6,000 y ¥19,999; el tramo aplicable depende de la tarifa real.",
+      "rate": "Presupuesto estimado: $1,900 MXN por noche × 5 noches = $9,500 MXN. Sin cotización para 2027.",
+      "rateConditions": "Habitación privada para una persona; verificar baño propio, desayuno, cancelación, impuestos y disponibilidad. Kioto cobra impuesto por persona y noche según tarifa del cuarto, posiblemente por separado.",
       "notes": "Muy bien ubicado junto a Shijō/Karasuma, práctico para visitas urbanas y conexiones con Kyoto Station. Verificar el importe de la tasa local y si se paga aparte.",
       "links": [
         {
@@ -260,8 +260,8 @@
       "checkIn": "2027-10-26",
       "checkOut": "2027-10-30",
       "status": "Candidato · no reservado",
-      "rate": "Estimación para planear: $1700 MXN/noche; 4 noche(s): $6800 MXN. No es cotización para octubre de 2027.",
-      "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
+      "rate": "Presupuesto estimado: $1,700 MXN por noche × 4 noches = $6,800 MXN. Sin cotización para 2027.",
+      "rateConditions": "Habitación privada para una persona; verificar baño propio, desayuno, impuestos, cancelación y disponibilidad en las fechas definitivas.",
       "notes": "Ubicación conveniente junto a Namba para Dotonbori, Universal Studios Japan y aeropuerto KIX. Verificar aislamiento acústico, tamaño de la habitación y opciones de transporte según el horario del vuelo.",
       "links": [
         {
@@ -279,8 +279,8 @@
       "checkIn": "2027-10-30",
       "checkOut": "2027-10-31",
       "status": "Candidato · no reservado",
-      "rate": "Estimación para planear: $1700 MXN/noche; 1 noche(s): $1700 MXN. No es cotización para octubre de 2027.",
-      "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
+      "rate": "Presupuesto estimado: $1,700 MXN por noche × 1 noche = $1,700 MXN. Sin cotización para 2027.",
+      "rateConditions": "Habitación privada para una persona; verificar baño propio, desayuno, impuestos, cancelación y disponibilidad en las fechas definitivas.",
       "notes": "Candidato solo si se utiliza vuelo redondo a Tokio. Comparar con Shinagawa o alrededores de Haneda según terminal y horario de salida; comprobar tiempos puerta a puerta. No reservar hasta decidir el vuelo.",
       "links": [
         {
@@ -296,7 +296,7 @@
       "id": "lodging-tokio-ueno-inicio",
       "category": "lodging",
       "hotelId": "tokio-ueno-inicio",
-      "concept": "Sotetsu Fresa Inn Ueno-Okachimachi · 6 noche(s)",
+      "concept": "Sotetsu Fresa Inn Ueno-Okachimachi · 6 noches",
       "date": "2027-10-15",
       "nights": 6,
       "cost": {
@@ -310,7 +310,7 @@
       "id": "lodging-kioto-karasuma",
       "category": "lodging",
       "hotelId": "kioto-karasuma",
-      "concept": "Sotetsu Fresa Inn Kyoto-Shijokarasuma · 5 noche(s)",
+      "concept": "Sotetsu Fresa Inn Kyoto-Shijokarasuma · 5 noches",
       "date": "2027-10-21",
       "nights": 5,
       "cost": {
@@ -324,7 +324,7 @@
       "id": "lodging-osaka-namba",
       "category": "lodging",
       "hotelId": "osaka-namba",
-      "concept": "Sotetsu Fresa Inn Osaka-Namba · 4 noche(s)",
+      "concept": "Sotetsu Fresa Inn Osaka-Namba · 4 noches",
       "date": "2027-10-26",
       "nights": 4,
       "cost": {
@@ -338,7 +338,7 @@
       "id": "lodging-tokio-ueno-regreso",
       "category": "lodging",
       "hotelId": "tokio-ueno-regreso",
-      "concept": "Sotetsu Fresa Inn Ueno-Okachimachi · 1 noche(s)",
+      "concept": "Sotetsu Fresa Inn Ueno-Okachimachi · 1 noche",
       "date": "2027-10-30",
       "nights": 1,
       "cost": {
@@ -351,7 +351,7 @@
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Ninguna entrada está comprada. Fechas y duración del viaje siguen abiertas: ordenar las compras después de decidir vuelos y alojamientos. Priorizar Universal Studios Japan y los accesos con horario; los importes indicados son referencias oficiales consultadas el 29/10/2026, no cotizaciones ni disponibilidad para 2027. Conservar flexible la excursión al Fuji según nubosidad."
+    "reservationNote": "Ninguna entrada está comprada. La ruta, las fechas y la duración siguen abiertas. Tras decidir vuelos y estancias, asegurar primero Universal Studios Japan y después los accesos con horario. Precios en yenes como referencias de octubre de 2026, sujetos a cambios; no implican disponibilidad para 2027. Mantener Kawaguchiko flexible por el clima."
   },
   "reservations": [
     [
@@ -359,7 +359,7 @@
       [
         {
           "title": "Universal Studios Japan · Studio Pass y Super Nintendo World (Osaka)",
-          "description": "Reservar un día completo entre semana, tentativamente durante la estancia en Osaka. Studio Pass de 1 día desde ¥8,400/adulto (referencia 29/10/2026; varía según fecha). La entrada general no garantiza acceso inmediato a Super Nintendo World: puede exigirse ingreso por horario, gestionado en la app oficial, o incluido en productos específicos. Elegir primero la fecha del parque; respaldo: otro día laborable en Osaka si quedan entradas. No comprado; cupos de 2027 por confirmar.",
+          "description": "Destinar una jornada completa, preferentemente entre semana, a Universal Studios Japan. Studio Pass de 1 día desde ¥8,400 por adulto (referencia de octubre de 2026; tarifa variable). El pase general no garantiza acceso a Super Nintendo World: puede requerirse entrada con horario mediante la aplicación oficial o un producto específico. Elegir la fecha antes de otros accesos fijos; si no hay cupo, comparar otro día de Osaka. No comprado.",
           "links": [
             {
               "label": "Boletos oficiales",
@@ -370,16 +370,6 @@
               "url": "https://www.usj.co.jp/web/en/us/areas/super-nintendo-world"
             }
           ]
-        },
-        {
-          "title": "Universal Express Pass · complemento opcional (Osaka)",
-          "description": "Comparar el Express Pass únicamente después de elegir el día y el Studio Pass: se paga aparte y algunos paquetes incluyen acceso garantizado a Super Nintendo World y horarios obligatorios para atracciones. Precio y variantes cambian por fecha; no suponer que incluye todas las atracciones ni que es imprescindible. Llegar con anticipación a las franjas asignadas; si excede el presupuesto, priorizar la app oficial y filas ordinarias.",
-          "links": [
-            {
-              "label": "Express Pass · condiciones oficiales",
-              "url": "https://www.usj.co.jp/web/en/us/tickets/express-pass"
-            }
-          ]
         }
       ]
     ],
@@ -388,7 +378,7 @@
       [
         {
           "title": "Mirador de Tokio · elegir uno",
-          "description": "SHIBUYA SKY es candidato principal por su ubicación y vistas; referencia online ¥2,700/adulto antes de las 15:00 o ¥3,400 desde las 15:00 (consulta 29/10/2026). Reservar franja de atardecer si interesa, pero puede agotarse y la azotea cerrar por mal tiempo. Alternativa: TOKYO SKYTREE, con entradas anticipadas y observatorio cubierto. No comprar ambos por defecto.",
+          "description": "Elegir un solo mirador. SHIBUYA SKY permite vistas al aire libre, pero la azotea puede cerrar por viento o lluvia; reservar horario si interesa el atardecer. TOKYO SKYTREE ofrece una alternativa con observatorio cerrado. Comparar precios y disponibilidad reales para 2027 antes de comprar.",
           "links": [
             {
               "label": "SHIBUYA SKY · información",
@@ -402,7 +392,7 @@
         },
         {
           "title": "Jidai Matsuri · asientos de pago (Kioto, solo si coincide el 22 de octubre)",
-          "description": "La procesión se celebra habitualmente el 22 de octubre y puede aplazarse por lluvia; la edición 2027 y la ruta deben confirmarse. Si viajamos en noviembre, no aplica. Los asientos de pago suelen comercializarse desde principios de septiembre; ver el desfile sin asiento reservado puede ser alternativa, según acceso y afluencia. No condicionar vuelos únicamente al festival.",
+          "description": "El desfile histórico de Kioto se celebra habitualmente el 22 de octubre y puede aplazarse por lluvia. Solo incluirlo si las fechas coinciden; para noviembre no aplica. Verificar programa y venta de asientos de 2027. Es posible contemplar la procesión desde sectores públicos según afluencia, sin asumir sitio garantizado.",
           "links": [
             {
               "label": "Kioto · venta y calendario de asientos",
@@ -415,6 +405,16 @@
     [
       "Planificación flexible",
       [
+        {
+          "title": "Universal Express Pass · complemento opcional (Osaka)",
+          "description": "Complemento opcional, comprado aparte del Studio Pass: algunos paquetes permiten acceder a Super Nintendo World y fijan horarios para atracciones concretas. Revisar qué incluye cada paquete y su precio por fecha; no asumir que evita todas las filas. Compararlo después de elegir el día del parque y el presupuesto.",
+          "links": [
+            {
+              "label": "Express Pass · condiciones oficiales",
+              "url": "https://www.usj.co.jp/web/en/us/tickets/express-pass"
+            }
+          ]
+        },
         {
           "title": "Ceremonia del té · Kioto",
           "description": "Experiencia opcional de 40–90 minutos, ideal si encaja con Higashiyama o el centro. Buscar sesión en inglés apta para una persona; algunas actividades tienen mínimo de participantes. La oficina de turismo de Kioto reúne opciones y condiciones. Reserva y precio 2027 pendientes; no desplazar Fushimi Inari ni Kiyomizu-dera por esta actividad.",
@@ -437,7 +437,7 @@
         },
         {
           "title": "Kawaguchiko y Nara · transporte y entradas sin horario cerrado",
-          "description": "Mantener Kawaguchiko como excursión adaptable a la visibilidad del Fuji: comparar autobús o tren y reservar transporte cuando se conozca la fecha, sin prometer vistas. Nara es una excursión desde Kioto; verificar horarios y tarifas de Tōdai-ji y Kasuga Taisha, pero no bloquear un día con entradas anticipadas innecesarias. Alternativa Fuji: cambiar el día por visitas de Tokio si las condiciones empeoran.",
+          "description": "Mantener Kawaguchiko flexible para elegir un día despejado si los boletos de transporte lo permiten; comparar autobús y tren cuando se fijen fechas. Nara puede visitarse desde Kioto sin reservar con antelación la mayoría de accesos habituales: consultar horarios de Tōdai-ji y Kasuga Taisha. Si no se ve el Fuji, intercambiar esa excursión por actividades de Tokio.",
           "links": [
             {
               "label": "Fuji Five Lakes · guía JNTO",
