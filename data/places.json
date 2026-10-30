@@ -3698,23 +3698,23 @@
   "japan27-harajuku": {
     "name": "Harajuku · Takeshita-dōri",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Behind_the_%22Takeshita_Street%22_sign.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Behind_the_%22Takeshita_Street%22_sign.jpg",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Takeshita_Street.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Takeshita_Street.jpg",
       "author": "Syced",
-      "license": "CC0 1.0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Syced"
     }
   },
   "japan27-shibuya": {
     "name": "Cruce de Shibuya",
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Shibuya_Crossing_in_Tokyo.jpg/960px-Shibuya_Crossing_in_Tokyo.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing_in_Tokyo.jpg",
-      "author": "Christophe95",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shibuya_crossing_seen_from_Shibuya_Stream%2C_2024.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing_seen_from_Shibuya_Stream%2C_2024.jpg",
+      "author": "Syced",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Christophe95"
+      "attribution": "Syced"
     }
   },
   "japan27-akihabara": {
@@ -3764,12 +3764,12 @@
   "japan27-ginza": {
     "name": "Ginza · paseo comercial",
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Car_free_Ginza_2024_01.jpg/960px-Car_free_Ginza_2024_01.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Car_free_Ginza_2024_01.jpg",
-      "author": "ARandomName123",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "ARandomName123"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ginza_at_dusk.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Ginza_at_dusk.jpg",
+      "author": "Joi Ito",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Joi Ito"
     }
   },
   "japan27-tokyo-station": {
@@ -3786,12 +3786,12 @@
   "japan27-gion": {
     "name": "Gion · calle tradicional",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gion_at_night_(53853671899).jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Gion_at_night_(53853671899).jpg",
-      "author": "Sergiy Galyonkin",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
-      "attribution": "Sergiy Galyonkin"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gion_Streets%2C_Kyoto%2C_2024.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Gion_Streets%2C_Kyoto%2C_2024.jpg",
+      "author": "Klaasjeoranje",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Klaasjeoranje"
     }
   },
   "japan27-yasaka": {
