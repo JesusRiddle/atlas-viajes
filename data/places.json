@@ -3914,5 +3914,93 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "稲垣啓二"
     }
+  },
+  "japan27-dotonbori": {
+    "name": "Dotonbori · canal iluminado",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka_-_Osaka192.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Osaka_-_Osaka192.jpg",
+      "author": "lumoplank",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "lumoplank"
+    }
+  },
+  "japan27-usj": {
+    "name": "Universal Studios Japan · acceso",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/USJ_Entrance_2026.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:USJ_Entrance_2026.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Sakai Yayoi"
+    }
+  },
+  "japan27-nintendo": {
+    "name": "Super Nintendo World · panorámica",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/USJ_Super_Nintendo_World_overview.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:USJ_Super_Nintendo_World_overview.jpg",
+      "author": "Jpatokal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jpatokal"
+    }
+  },
+  "japan27-harry-potter": {
+    "name": "The Wizarding World of Harry Potter",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wizarding_World_of_Harry_Potter_USJ.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Wizarding_World_of_Harry_Potter_USJ.JPG",
+      "author": "Freddo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Freddo"
+    }
+  },
+  "japan27-osaka-castle": {
+    "name": "Castillo de Osaka · torre principal",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/OSAKA_CASTLE.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:OSAKA_CASTLE.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Tokumeigakarinoaoshima"
+    }
+  },
+  "japan27-shinsekai": {
+    "name": "Shinsekai y Tsūtenkaku · noche",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinsekai_and_Tsutenkaku_Tower.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Shinsekai_and_Tsutenkaku_Tower.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Sakai Yayoi"
+    }
+  },
+  "japan27-kuromon": {
+    "name": "Mercado Kuromon Ichiba",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg",
+      "author": "ほっきー",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "ほっきー"
+    }
+  },
+  "japan27-den-den-town": {
+    "name": "Nippombashi · Den Den Town",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Den_den_town%2C_osaka.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Den_den_town%2C_osaka.JPG",
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Sailko"
+    }
   }
 }
