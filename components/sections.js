@@ -1,7 +1,7 @@
 window.AtlasSections = function (ctx) {
     'use strict';
     const { trips, stays, esc, price, range, readable, railLinks } = ctx;
-    const baseLabel = n => n + ' ' + (n === 1 ? 'base' : 'bases') + ' para dormir';
+    const baseLabel = bases => { const nights = bases.reduce((total, item) => total + Number(item[1] || 0), 0); const n = bases.length; return nights + ' ' + (nights === 1 ? 'noche' : 'noches') + ', ' + n + ' ' + (n === 1 ? 'alojamiento' : 'alojamientos'); };
     function familyLabel(t) {
         const f = t.family;
         return f ? `<p class="family-label">${esc(f.label)}<span>${esc(f.note)}</span></p>` : '';
@@ -136,7 +136,7 @@ window.AtlasSections = function (ctx) {
         if (related.length < 2) return '';
         const fields = [
             ['Fechas', x => range(x)],
-            ['Noches y bases', x => x.bases.map(([name, n]) => esc(name) + ' ' + n).join(' · ')],
+            ['Noches y alojamientos', x => x.bases.map(([name, n]) => esc(name) + ' ' + n).join(' · ')],
             ['Experiencia central', x => esc(x.comparison.experience)],
             ['Trenes', x => esc(x.comparison.trains)],
             ['Condiciones', x => esc(x.comparison.conditions)],
