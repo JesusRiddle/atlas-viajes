@@ -259,7 +259,8 @@ window.AtlasTrip = function (ctx) {
         const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN)
             ? money(overviewSummary.knownTotalMXN) : pending();
         const forecast = masterOverview && t.budgetPreliminary && Number.isFinite(t.budgetPreliminary.low) && Number.isFinite(t.budgetPreliminary.high) && t.budgetPreliminary.low > 0 && t.budgetPreliminary.high >= t.budgetPreliminary.low;
-        const featuredPrice = forecast ? money(t.budgetPreliminary.low) + '–' + money(t.budgetPreliminary.high) : overviewPrice;
+        const dynamicEstimate = masterOverview ? window.AtlasBudget?.planningEstimate?.(t) : null;
+        const featuredPrice = dynamicEstimate ? money(dynamicEstimate.low) + '–' + money(dynamicEstimate.high) : forecast ? money(t.budgetPreliminary.low) + '–' + money(t.budgetPreliminary.high) : overviewPrice;
         const budgetContext = forecast ? 'MXN · 1 persona · proyección global, no cotización' : 'MXN · 1 persona · estimación parcial del viaje';
         const fxInfo = masterOverview && t.exchangeRateSnapshot?.date && t.exchangeRates ? Object.entries(t.exchangeRates).filter(([code,rate]) => /^[A-Z]{3}$/.test(code) && Number.isFinite(rate) && rate > 0).map(([code,rate]) => code + ' 1 ≈ $' + rate.toFixed(4) + ' MXN') : [];
         const fxSource = t.exchangeRateSnapshot?.sources?.JPY || t.exchangeRateSnapshot?.sources?.EUR || t.exchangeRateSnapshot?.sources?.USD;
