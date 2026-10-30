@@ -351,23 +351,27 @@
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Vuelos internacionales: cuatro alternativas referenciales de septiembre de 2027 ya incorporadas en la tabla de transporte (sin selección ni compra); octubre de 2027 aún sin cotización equivalente. Precios de vuelo en MXN, no gastos confirmados. Al definir vuelos, actualizar la última noche Tokio/Kansai, equipaje y traslados; después priorizar Universal Studios Japan y demás reservas."
+    "reservationNote": "Todas las entradas y experiencias están SIN COMPRAR. Primero decidir vuelos y mantener las fechas de octubre 2027; después asegurar USJ del miércoles 27 de octubre (alternativa viernes 29 solo con disponibilidad), revisar asientos opcionales de Jidai Matsuri del viernes 22 y reservar SHIBUYA SKY del domingo 17 si se elige ese mirador. Los calendarios y tarifas publicados hoy son referencias de 2026: ninguna venta ni disponibilidad de 2027 está confirmada. Aplazamiento por lluvia de Jidai Matsuri puede alterar los días 23–26; no reservar allí actividades inflexibles adicionales."
   },
   "reservations": [
     [
       "Prioridad muy alta",
       [
         {
-          "title": "Universal Studios Japan · Studio Pass y Super Nintendo World (Osaka)",
-          "description": "Destinar una jornada completa, preferentemente entre semana, a Universal Studios Japan. Studio Pass de 1 día desde ¥8,400 (≈ $1,005 MXN) por adulto (referencia de octubre de 2026; tarifa variable). El pase general no garantiza acceso a Super Nintendo World: puede requerirse entrada con horario mediante la aplicación oficial o un producto específico. Elegir la fecha antes de otros accesos fijos; si no hay cupo, comparar otro día de Osaka. No comprado.",
+          "title": "Universal Studios Japan · miércoles 27 de octubre (día 14)",
+          "description": "Jornada completa, sin comprar. Studio Pass de 1 día desde ¥8,400 (≈ $1,005 MXN) como referencia de 2026, variable según calendario. La FAQ oficial indica venta desde tres meses antes para entradas generales, con excepciones por producto: vigilar aproximadamente desde finales de julio de 2027, sin asumir apertura exacta. Para Super Nintendo World registrar el QR en la app y, una vez dentro, solicitar Area Timed Entry/Standby si corresponde; cupo no garantizado. Express Pass opcional y aparte. Respaldo: viernes 29 (día 16) solo si existen boletos y se sustituyen Kuromon/Den Den Town. Idioma de materiales/atracciones y políticas de cambio por confirmar.",
           "links": [
             {
-              "label": "Boletos oficiales",
+              "label": "USJ · información oficial y entradas",
               "url": "https://www.usj.co.jp/web/en/us/tickets"
             },
             {
-              "label": "Reglas Super Nintendo World",
-              "url": "https://www.usj.co.jp/web/en/us/areas/super-nintendo-world"
+              "label": "USJ · app y acceso a Nintendo",
+              "url": "https://www.usj.co.jp/web/en/us/enjoy/numbered-ticket/app/timed-entry-ticket"
+            },
+            {
+              "label": "USJ · FAQ de cuándo salen los boletos (japonés)",
+              "url": "https://s.usj.co.jp/faq/ticket-webticket-store/00082.html"
             }
           ]
         }
@@ -377,26 +381,30 @@
       "Prioridad alta",
       [
         {
-          "title": "Mirador de Tokio · elegir uno",
-          "description": "Elegir un solo mirador. SHIBUYA SKY permite vistas al aire libre, pero la azotea puede cerrar por viento o lluvia; reservar horario si interesa el atardecer. TOKYO SKYTREE ofrece una alternativa con observatorio cerrado. Comparar precios y disponibilidad reales para 2027 antes de comprar.",
+          "title": "Jidai Matsuri · viernes 22 de octubre (día 9), asientos opcionales",
+          "description": "La procesión histórica es la razón para estar en Kioto el 22 de octubre de 2027, condicionada al programa de ese año. Verificar anuncio oficial; en 2026 hubo preventa por sorteo en julio y venta general desde el 8 de septiembre, por lo que NO debe darse septiembre como única apertura de 2027. Reservar asiento solo si se desea comodidad y vista específica; hay observación gratuita desde espacios públicos sin lugar garantizado. Tipos de asiento, idioma de comentarios, ubicación, acceso y precios para 2027 por confirmar. Si llueve puede trasladarse al 23: el plan requiere reorganización y podría descartarse Nijō. No comprado.",
           "links": [
             {
-              "label": "SHIBUYA SKY · información",
-              "url": "https://www.gotokyo.org/es/spot/1749/index.html"
+              "label": "Kioto · venta oficial y mapa (referencia 2026)",
+              "url": "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/"
             },
             {
-              "label": "TOKYO SKYTREE · entradas oficiales",
-              "url": "https://www.tokyo-skytree.jp/ticket/"
+              "label": "Kioto · preguntas oficiales sobre asientos",
+              "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=2034"
             }
           ]
         },
         {
-          "title": "Jidai Matsuri · asientos de pago (Kioto, solo si coincide el 22 de octubre)",
-          "description": "El desfile histórico de Kioto se celebra habitualmente el 22 de octubre y puede aplazarse por lluvia. Solo incluirlo si las fechas coinciden; para noviembre no aplica. Verificar programa y venta de asientos de 2027. Es posible contemplar la procesión desde sectores públicos según afluencia, sin asumir sitio garantizado.",
+          "title": "SHIBUYA SKY · domingo 17 de octubre (día 4), opcional",
+          "description": "Elegir solo un mirador para Tokio; SHIBUYA SKY es primera opción si interesa la azotea al atardecer. La venta oficial actual contempla fechas hasta dos semanas por adelantado: revisar aproximadamente el 3 de octubre de 2027 para visitar el día 17, sin garantizar apertura ni disponibilidad. Referencia web 2026: entrada antes de las 15:00 ¥2,700 (≈ $323 MXN), desde las 15:00 ¥3,400 (≈ $407 MXN). Llegar a la franja asignada; la azotea puede cerrar por viento o lluvia y no se permite llevar mochilas a la zona exterior. Alternativa: TOKYO SKYTREE interior u observatorio gratuito de Tokio; evitar pagar ambos por anticipado. No comprado.",
           "links": [
             {
-              "label": "Kioto · venta y calendario de asientos",
-              "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=2034"
+              "label": "SHIBUYA SKY · boletos oficiales",
+              "url": "https://shibuya-scramble-square.com/sky/ticket"
+            },
+            {
+              "label": "TOKYO SKYTREE · alternativa oficial",
+              "url": "https://www.tokyo-skytree.jp/en/ticket/"
             }
           ]
         }
@@ -406,45 +414,45 @@
       "Planificación flexible",
       [
         {
-          "title": "Universal Express Pass · complemento opcional (Osaka)",
-          "description": "Complemento opcional, comprado aparte del Studio Pass: algunos paquetes permiten acceder a Super Nintendo World y fijan horarios para atracciones concretas. Revisar qué incluye cada paquete y su precio por fecha; no asumir que evita todas las filas. Compararlo después de elegir el día del parque y el presupuesto.",
+          "title": "Universal Express Pass · solo si compensa (día 14)",
+          "description": "Adicional al Studio Pass, sin comprar. Puede ofrecer accesos a Nintendo y franjas para atracciones determinadas según paquete, pero no elimina todas las filas; verificar combinaciones, hora, disponibilidad y precio concreto antes de decidir. Si el costo resulta excesivo, utilizar Studio Pass y la app oficial con posibilidad de no obtener cupo en Nintendo.",
           "links": [
             {
-              "label": "Express Pass · condiciones oficiales",
+              "label": "USJ · Express Pass oficial",
               "url": "https://www.usj.co.jp/web/en/us/tickets/express-pass"
             }
           ]
         },
         {
-          "title": "Ceremonia del té · Kioto",
-          "description": "Experiencia opcional de 40–90 minutos, ideal si encaja con Higashiyama o el centro. Buscar sesión en inglés apta para una persona; algunas actividades tienen mínimo de participantes. La oficina de turismo de Kioto reúne opciones y condiciones. Reserva y precio 2027 pendientes; no desplazar Fushimi Inari ni Kiyomizu-dera por esta actividad.",
+          "title": "Castillo Nijō · Palacio Honmaru opcional (martes 26, día 13)",
+          "description": "El recorrido general de Nijō y Palacio Ninomaru se conserva para la mañana previa a Osaka. Honmaru es un agregado aparte con reserva específica, por lo que no debe contratarse automáticamente: podría retrasar salida de Kioto y es la primera actividad sacrificable si Jidai Matsuri se reprograma. Horarios, modalidad exacta, disponibilidad y tarifas de 2027 por verificar. No comprado.",
           "links": [
             {
-              "label": "Experiencias · turismo oficial de Kioto",
-              "url": "https://kyoto.travel/es/activities/"
-            }
-          ]
-        },
-        {
-          "title": "Castillo Nijō · Palacio Honmaru (Kioto)",
-          "description": "La visita general al castillo puede hacerse sin reservar el Palacio Honmaru: entrada de referencia ¥800 (≈ $96 MXN), o ¥1,300 (≈ $155 MXN) con el Palacio Ninomaru (29/10/2026). Honmaru exige reserva aparte, con entradas desde 30 días antes y ¥1,000 (≈ $120 MXN) adicionales; solo elegirlo si interesa especialmente y encaja en la jornada. Verificar cierres y tarifas de 2027.",
-          "links": [
-            {
-              "label": "Nijō · precios y reservas oficiales",
+              "label": "Nijō · página oficial de precios",
               "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/fee/?lang=en"
             }
           ]
         },
         {
-          "title": "Kawaguchiko y Nara · transporte y entradas sin horario cerrado",
-          "description": "Mantener Kawaguchiko flexible para elegir un día despejado si los boletos de transporte lo permiten; comparar autobús y tren cuando se fijen fechas. Nara puede visitarse desde Kioto sin reservar con antelación la mayoría de accesos habituales: consultar horarios de Tōdai-ji y Kasuga Taisha. Si no se ve el Fuji, intercambiar esa excursión por actividades de Tokio.",
+          "title": "Ceremonia del té en Kioto · solo si sobra tiempo",
+          "description": "Opcional y sin fecha bloqueada. Buscar sesión pequeña de aproximadamente 40–90 minutos en inglés con reserva individual permitida; encajarla únicamente si no perjudica Fushimi Inari, Kiyomizu-dera, Arashiyama o Jidai Matsuri. Verificar precio, idioma y política de cancelación según proveedor; no comprado.",
           "links": [
             {
-              "label": "Fuji Five Lakes · guía JNTO",
+              "label": "Kioto · actividades turísticas oficiales",
+              "url": "https://kyoto.travel/en/see-and-do/"
+            }
+          ]
+        },
+        {
+          "title": "Kawaguchiko · martes 19 de octubre (día 6), según clima",
+          "description": "Excursión al monte Fuji flexible, sin comprar. Autobuses y servicios de tren pueden requerir asiento reservado, pero el objetivo es elegir el día con buena visibilidad; mantener el miércoles 20 como posible intercambio solo si hay disponibilidad de cambio o boletos nuevos. Nara del lunes 25 mantiene accesos turísticos habituales sujetos a horario, sin reserva anticipada obligatoria para el plan básico.",
+          "links": [
+            {
+              "label": "JNTO · zona de los cinco lagos del Fuji",
               "url": "https://www.japan.travel/en/spot/1325/"
             },
             {
-              "label": "Tōdai-ji · sitio oficial",
+              "label": "Tōdai-ji · horarios y entradas",
               "url": "https://www.todaiji.or.jp/en/"
             }
           ]
