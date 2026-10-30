@@ -126,5 +126,32 @@ window.AtlasBudget = (() => {
         return summary(trip, window.AtlasSelections?.get(trip.id) || {});
     }
 
-    return { convert, selectedTransportPrice, transportComparison, nightsByDate, expenseDates, summary, currentSummary };
+    // Derived planning estimate shared by Home and Panorama. No booking is implied.
+    function planningEstimate(trip) {
+        const plan = trip.budgetPreliminary;
+        if (!plan || typeof plan !== 'object' || !Number.isFinite(plan.marginMXN)) return null;
+        const overrides = window.AtlasSelections?.get(trip.id) || {};
+        const selected = overrides['flight-international']?.option ||
+            trip.majorTransport?.find(t => t.id === 'flight-international')?.selectedOption;
+        const scenario = ['B', 'D'].includes(selected) ? 'kix' : 'tokyo';
+        const rates = trip.exchangeRates || {};
+        let land = 0;
+        for (const item of trip.expenses || []) {
+            if (item.optional || item.includedInTransport) continue;
+            if (item.scenario && item.scenario !== scenario) continue;
+            const amount = convert(item.cost, rates, item.paidMXN);
+            if (amount !== null) land += amount;
+        }
+        const flight = trip.majorTransport?.find(t => t.id === 'flight-international');
+        const option = flight?.options?.find(o => o.id === selected) || flight?.options?.[0];
+        const fare = option?.fares?.find(f => f.id === (overrides['flight-international']?.fare || option.selectedFare));
+        const flightCost = convert(fare?.price, rates);
+        if (flightCost === null) return null;
+        const total = round(land + flightCost);
+        return { totalMXN: total, low: Math.round(total / 1000) * 1000,
+            high: Math.ceil((total + plan.marginMXN) / 1000) * 1000,
+            scenario, flightOption: option.id, referenceOnly: true };
+    }
+
+    return { convert, selectedTransportPrice, transportComparison, nightsByDate, expenseDates, summary, currentSummary, planningEstimate };
 })();
