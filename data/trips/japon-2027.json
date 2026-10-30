@@ -470,10 +470,17 @@
               "segments": [
                 {
                   "from": "MEX",
-                  "to": "HND o NRT",
+                  "to": "Dallas/Fort Worth (DFW)",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Por definir"
+                  "operator": "American Airlines · referencia septiembre 2027"
+                },
+                {
+                  "from": "Dallas/Fort Worth (DFW)",
+                  "to": "Tokio (HND/NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Japan Airlines / American · terminal pendiente"
                 }
               ]
             },
@@ -481,11 +488,18 @@
               "direction": "return",
               "segments": [
                 {
-                  "from": "HND o NRT",
+                  "from": "Tokio (HND/NRT)",
+                  "to": "Dallas/Fort Worth (DFW)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "American / JAL · referencia septiembre 2027"
+                },
+                {
+                  "from": "Dallas/Fort Worth (DFW)",
                   "to": "MEX",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Por definir"
+                  "operator": "American Airlines · referencia septiembre 2027"
                 }
               ]
             }
@@ -515,10 +529,10 @@
               "segments": [
                 {
                   "from": "MEX",
-                  "to": "HND o NRT",
+                  "to": "Tokio (HND/NRT)",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Por definir"
+                  "operator": "Conexión y aerolínea exactas pendientes de validar"
                 }
               ]
             },
@@ -526,11 +540,25 @@
               "direction": "return",
               "segments": [
                 {
-                  "from": "KIX",
+                  "from": "Osaka Kansai (KIX)",
+                  "to": "Tokio Haneda (HND)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Conexión doméstica · referencia septiembre 2027"
+                },
+                {
+                  "from": "Tokio Haneda (HND)",
+                  "to": "Dallas/Fort Worth (DFW)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Operador por confirmar"
+                },
+                {
+                  "from": "Dallas/Fort Worth (DFW)",
                   "to": "MEX",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Por definir"
+                  "operator": "Operador por confirmar"
                 }
               ]
             }
@@ -563,7 +591,7 @@
                   "to": "Tokio (HND/NRT)",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Operador y conexión exactos por reconfirmar · LAX"
+                  "operator": "Recorrido exacto pendiente de validar"
                 }
               ]
             },
@@ -572,10 +600,17 @@
               "segments": [
                 {
                   "from": "Tokio (HND/NRT)",
+                  "to": "Los Ángeles (LAX)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Referencia septiembre 2027"
+                },
+                {
+                  "from": "Los Ángeles (LAX)",
                   "to": "MEX",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Ruta con conexión larga vía LAX · por reconfirmar"
+                  "operator": "Conexión larga · referencia septiembre 2027"
                 }
               ]
             }
@@ -608,7 +643,7 @@
                   "to": "Tokio (HND/NRT)",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Por reconfirmar"
+                  "operator": "Recorrido exacto pendiente de validar"
                 }
               ]
             },
@@ -616,11 +651,25 @@
               "direction": "return",
               "segments": [
                 {
-                  "from": "KIX",
+                  "from": "Osaka Kansai (KIX)",
+                  "to": "Tokio Haneda (HND)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Referencia septiembre 2027"
+                },
+                {
+                  "from": "Tokio Haneda (HND)",
+                  "to": "Los Ángeles (LAX)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Referencia septiembre 2027"
+                },
+                {
+                  "from": "Los Ángeles (LAX)",
                   "to": "MEX",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Conexiones HND/LAX · por reconfirmar"
+                  "operator": "Operador pendiente de validar"
                 }
               ]
             }
@@ -646,7 +695,7 @@
           "url": "https://www.google.com/travel/flights"
         }
       ],
-      "ticketGuide": "Las cuatro tarifas son capturas/cotizaciones de SEPTIEMBRE 2027 facilitadas por el viajero el 29/10/2026, cuando Google Flights aún no ofrecía el rango de octubre. Se muestran para comparar, no son disponibilidad ni precio de 14–31 octubre de 2027; no hay vuelo comprado. A $28,417 (redondo) vs B $33,906 (multidestino): diferencia de $5,489 MXN; contrastar contra Shinkansen Osaka→Tokio, hoteles, equipaje, conexiones, tiempo y descanso. C $28,498 implica regreso de 35h15; D $35,536 implica 22h20. Reconsultar al abrir ventas de octubre y elegir una sola alternativa. No asumir que la tarifa cubre maleta documentada."
+      "ticketGuide": "Las cuatro tarifas son cotizaciones de SEPTIEMBRE 2027 aportadas por el viajero, NO disponibilidad ni precio confirmado para 14–31 de octubre. Los segmentos de escala documentan las rutas descritas, pero horas, terminales y operadores exactos pueden no estar completos; no interpretarlos como billetes emitidos. Los vuelos, alojamiento y horarios de llegada deben reconciliarse antes de reservar. Redondo A $28,417 MXN frente a multidestino B $33,906 MXN: diferencia de $5,489 MXN, aún por contrastar con el Shinkansen Osaka→Tokio y transportes. C $28,498 MXN implica una conexión larga; D $35,536 MXN. Escoger una sola alternativa al obtener tarifas reales para octubre y confirmar equipaje, tránsito y política de cancelación."
     },
     {
       "id": "airport-tokyo",
