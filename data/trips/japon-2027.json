@@ -2566,11 +2566,11 @@
   "exchangeRatesSource": "XE · tasa media de referencia 29/10/2026, https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN",
   "budgetPreliminary": {
     "currency": "MXN",
-    "low": 91000,
+    "low": 90000,
     "high": 107000,
     "status": "estimated",
     "label": "Proyección integral · escenario vuelo redondo por Tokio",
-    "basis": "Presupuesto de planeación para 1 persona y 18 días: gastos terrestres estimados en expenses + SOLO referencia de vuelo redondo A de septiembre de 2027 por $28,417 MXN. No es cotización para octubre de 2027. Incluye alojamiento, alimentos, traslados urbanos e interurbanos, USJ y otros accesos, impuestos, conectividad, extras y colchón. En escenario Tokio se contabilizan última noche Ueno y tren Osaka→Tokio; en escenario Kansai se sustituyen por última noche Osaka/Kansai y traslado KIX. No se suman ambos. La sección de gastos contabiliza partidas terrestres; los vuelos se comparan en Traslados y NO se duplican como gasto independiente. El límite alto incluye margen extra para tarifas de octubre, equipaje y posibles cambios. Express Pass, compras importantes y gastos personales extraordinarios fuera del plan. La portada calcula su rango en cada carga desde el desglose actualizado, con margen adicional de $16,000 MXN, y el vuelo elegido o la primera tarifa referencial cuando no hay selección.",
+    "basis": "Presupuesto de planeación para 1 persona y 18 días: gastos terrestres estimados en expenses + SOLO referencia de vuelo redondo A de septiembre de 2027 por $28,417 MXN. No es cotización para octubre de 2027. Incluye alojamiento, alimentos, traslados urbanos e interurbanos, USJ y otros accesos, impuestos, conectividad, extras y colchón. En escenario Tokio se contabilizan última noche Ueno y tren Osaka→Tokio; en escenario Kansai se sustituyen por última noche Osaka/Kansai y traslado KIX. No se suman ambos. La sección de gastos contabiliza partidas terrestres; los vuelos se comparan en Traslados y NO se duplican como gasto independiente. El límite alto incluye margen extra para tarifas de octubre, equipaje y posibles cambios. Express Pass, compras importantes y gastos personales extraordinarios fuera del plan. La portada calcula su rango en cada carga desde el desglose actualizado, con margen adicional de $16,000 MXN, y el vuelo elegido o la primera tarifa referencial cuando no hay selección. La referencia principal calculada hoy desde las partidas incluye $90,027 MXN (sin las entradas opcionales de SHIBUYA SKY y museo/mirador de Osaka); estos montos se recalculan automáticamente al ajustar los datos.",
     "pending": [
       "Precio y horarios reales del vuelo internacional para 14–31 octubre 2027",
       "Confirmación de tarifas 2027 de trenes y entradas",
