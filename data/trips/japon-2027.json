@@ -352,5 +352,118 @@
       "status": "estimated",
       "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
     }
+  ],
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Ninguna entrada está comprada. Fechas y duración del viaje siguen abiertas: ordenar las compras después de decidir vuelos y alojamientos. Priorizar Universal Studios Japan y los accesos con horario; los importes indicados son referencias oficiales consultadas el 29/10/2026, no cotizaciones ni disponibilidad para 2027. Conservar flexible la excursión al Fuji según nubosidad."
+  },
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Universal Studios Japan · Studio Pass y Super Nintendo World (Osaka)",
+          "description": "Reservar un día completo entre semana, tentativamente durante la estancia en Osaka. Studio Pass de 1 día desde ¥8,400/adulto (referencia 29/10/2026; varía según fecha). La entrada general no garantiza acceso inmediato a Super Nintendo World: puede exigirse ingreso por horario, gestionado en la app oficial, o incluido en productos específicos. Elegir primero la fecha del parque; respaldo: otro día laborable en Osaka si quedan entradas. No comprado; cupos de 2027 por confirmar.",
+          "links": [
+            {
+              "label": "Boletos oficiales",
+              "url": "https://www.usj.co.jp/web/en/us/tickets"
+            },
+            {
+              "label": "Reglas Super Nintendo World",
+              "url": "https://www.usj.co.jp/web/en/us/areas/super-nintendo-world"
+            }
+          ]
+        },
+        {
+          "title": "Universal Express Pass · complemento opcional (Osaka)",
+          "description": "Comparar el Express Pass únicamente después de elegir el día y el Studio Pass: se paga aparte y algunos paquetes incluyen acceso garantizado a Super Nintendo World y horarios obligatorios para atracciones. Precio y variantes cambian por fecha; no suponer que incluye todas las atracciones ni que es imprescindible. Llegar con anticipación a las franjas asignadas; si excede el presupuesto, priorizar la app oficial y filas ordinarias.",
+          "links": [
+            {
+              "label": "Express Pass · condiciones oficiales",
+              "url": "https://www.usj.co.jp/web/en/us/tickets/express-pass"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "teamLab Borderless · Azabudai Hills (Tokio)",
+          "description": "Reservar entrada con horario para una jornada de Tokio, una vez establecidas las fechas. Referencia oficial desde ¥3,400/adulto (29/10/2026, precio dinámico); calcular 1.5–2.5 horas como margen de visita. La venta suele abrir alrededor del día 1, dos meses antes. Generalmente no reembolsable; cambios de fecha/hora sujetos a reglas y cupos. Alternativa: otro horario disponible o una experiencia urbana sin reserva.",
+          "links": [
+            {
+              "label": "teamLab Borderless · venta oficial",
+              "url": "https://www.teamlab.art/e/tokyo/"
+            }
+          ]
+        },
+        {
+          "title": "Mirador de Tokio · elegir uno",
+          "description": "SHIBUYA SKY es candidato principal por su ubicación y vistas; referencia online ¥2,700/adulto antes de las 15:00 o ¥3,400 desde las 15:00 (consulta 29/10/2026). Reservar franja de atardecer si interesa, pero puede agotarse y la azotea cerrar por mal tiempo. Alternativa: TOKYO SKYTREE, con entradas anticipadas y observatorio cubierto. No comprar ambos por defecto.",
+          "links": [
+            {
+              "label": "SHIBUYA SKY · información",
+              "url": "https://www.gotokyo.org/es/spot/1749/index.html"
+            },
+            {
+              "label": "TOKYO SKYTREE · entradas oficiales",
+              "url": "https://www.tokyo-skytree.jp/ticket/"
+            }
+          ]
+        },
+        {
+          "title": "Jidai Matsuri · asientos de pago (Kioto, solo si coincide el 22 de octubre)",
+          "description": "La procesión se celebra habitualmente el 22 de octubre y puede aplazarse por lluvia; la edición 2027 y la ruta deben confirmarse. Si viajamos en noviembre, no aplica. Los asientos de pago suelen comercializarse desde principios de septiembre; ver el desfile sin asiento reservado puede ser alternativa, según acceso y afluencia. No condicionar vuelos únicamente al festival.",
+          "links": [
+            {
+              "label": "Kioto · venta y calendario de asientos",
+              "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=2034"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Ceremonia del té · Kioto",
+          "description": "Experiencia opcional de 40–90 minutos, ideal si encaja con Higashiyama o el centro. Buscar sesión en inglés apta para una persona; algunas actividades tienen mínimo de participantes. La oficina de turismo de Kioto reúne opciones y condiciones. Reserva y precio 2027 pendientes; no desplazar Fushimi Inari ni Kiyomizu-dera por esta actividad.",
+          "links": [
+            {
+              "label": "Experiencias · turismo oficial de Kioto",
+              "url": "https://kyoto.travel/es/activities/"
+            }
+          ]
+        },
+        {
+          "title": "Castillo Nijō · Palacio Honmaru (Kioto)",
+          "description": "La visita general al castillo puede hacerse sin reservar el Palacio Honmaru: entrada de referencia ¥800, o ¥1,300 con el Palacio Ninomaru (29/10/2026). Honmaru exige reserva aparte, con entradas desde 30 días antes y ¥1,000 adicionales; solo elegirlo si interesa especialmente y encaja en la jornada. Verificar cierres y tarifas de 2027.",
+          "links": [
+            {
+              "label": "Nijō · precios y reservas oficiales",
+              "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/fee/?lang=en"
+            }
+          ]
+        },
+        {
+          "title": "Kawaguchiko y Nara · transporte y entradas sin horario cerrado",
+          "description": "Mantener Kawaguchiko como excursión adaptable a la visibilidad del Fuji: comparar autobús o tren y reservar transporte cuando se conozca la fecha, sin prometer vistas. Nara es una excursión desde Kioto; verificar horarios y tarifas de Tōdai-ji y Kasuga Taisha, pero no bloquear un día con entradas anticipadas innecesarias. Alternativa Fuji: cambiar el día por visitas de Tokio si las condiciones empeoran.",
+          "links": [
+            {
+              "label": "Fuji Five Lakes · guía JNTO",
+              "url": "https://www.japan.travel/en/spot/1325/"
+            },
+            {
+              "label": "Tōdai-ji · sitio oficial",
+              "url": "https://www.todaiji.or.jp/en/"
+            }
+          ]
+        }
+      ]
+    ]
   ]
 }
