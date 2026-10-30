@@ -1703,60 +1703,96 @@
     {
       "n": 16,
       "date": "2027-10-29",
-      "title": "Nippombashi · margen para imprevistos",
+      "title": "Kuromon y Den Den Town · último día completo en Osaka",
       "base": "Osaka",
-      "am": "1. Explorar Nippombashi Den Den Town y sus tiendas.\n2. Almorzar y completar compras seleccionadas.",
-      "pm": "1. Visitar otra zona de Namba o un museo urbano si interesa.\n2. Disponer de margen para una eventual reprogramación de Universal.",
-      "night": "1. Revisar billetes y preparar equipaje.\n2. Cena temprana y descanso para el traslado final.",
-      "mobility": "• *Namba ↔ Nippombashi:* Recorrido caminable desde el alojamiento.\n• *Salida:* Confirmar estación de Shin-Osaka o conexión a Kansai Airport según vuelo.",
-      "note": "• *Día comodín:* Mantiene tiempo para una atracción aplazada; no añadir excursiones lejanas.\n• *Decisión:* El vuelo de salida determina si mañana corresponde Tokio o Kansai.",
+      "am": "1. Salir caminando desde el hotel de Namba al mercado Kuromon, preferentemente durante la mañana, cuando suele haber más establecimientos operando; desayunar o probar pequeños platos sin convertirlo en una comida obligatoria.\n2. Continuar a Nippombashi Den Den Town, muy próximo al mercado, para explorar tecnología, videojuegos y tiendas relacionadas con la cultura japonesa.",
+      "pm": "1. Almorzar por Nippombashi o Namba y dedicar un bloque a compras, un café o algún comercio pendiente, sin desplazarse a otros distritos.\n2. Si Universal hubiera tenido que cambiarse por disponibilidad, utilizar esta jornada como alternativa únicamente con entradas confirmadas; en ese caso Kuromon y Den Den Town pasan a ser opcionales.",
+      "night": "1. Volver al hotel para ordenar compras, revisar franquicia de equipaje y comprobar las reservas del siguiente tramo.\n2. Cenar por Namba y descansar antes del traslado a Tokio o, en el escenario multidestino, de otra jornada en Osaka.",
+      "mobility": "• *Hotel → Kuromon:* Caminar desde Namba; el mercado se encuentra cerca de la estación Nippombashi.\n• *Kuromon → Den Den Town:* Continuar a pie por Nippombashi, evitando transbordos.\n• *Salida siguiente:* Comprobar si corresponde Shin-Osaka para Shinkansen o Nankai Namba para el futuro vuelo desde KIX.",
+      "note": "• *Horario del mercado:* Ir por la mañana para maximizar tiendas abiertas; cada comercio tiene horarios propios.\n• *Respaldo de Universal:* Solo reprogramar con disponibilidad y condiciones reales, sin asumir entrada para otro día.\n• *Equipaje:* Evitar compras voluminosas antes de confirmar límites del vuelo.\n• *Gasto:* Compras, alimentos y transporte local pendientes; no asignar un monto inventado.",
       "hotel": "osaka-namba",
       "transportRefs": [],
       "places": [],
       "headerPlaces": [
-        "Nippombashi · margen para imprevistos"
+        "Kuromon Ichiba · mercado",
+        "Nippombashi Den Den Town",
+        "Namba · compras y descanso"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "JNTO · mercado Kuromon y Nippombashi",
+          "url": "https://www.japan.travel/es/spot/1103/"
+        }
+      ]
     },
     {
       "n": 17,
       "date": "2027-10-30",
-      "title": "Osaka → Tokio · última noche condicionada",
+      "title": "Osaka → Tokio · cierre condicionado al vuelo redondo",
       "base": "Tokio",
-      "am": "1. Hacer check-out en Namba y dirigirse a Shin-Osaka.\n2. Tomar shinkansen a Tokio si el vuelo internacional sale de HND/NRT.",
-      "pm": "1. Trasladarse al hotel final, sujeto a conveniencia de aeropuerto.\n2. Paseo breve o descanso; evitar nuevas reservas.",
-      "night": "1. Cena cerca del alojamiento y reorganización de equipaje.\n2. Acostarse temprano si el vuelo del día siguiente sale por la mañana.",
-      "mobility": "• *Namba → Shin-Osaka → Tokio:* Sumar metro, shinkansen y conexión hotel.\n• *Alternativa KIX:* No tomar el tren a Tokio si se eligió un regreso multidestino.",
-      "note": "• *Condicionado:* La noche final de Tokio solo pertenece al escenario redondo.\n• *Si se sale de Osaka:* Redistribuir esta noche en lugar de eliminarla automáticamente.",
+      "am": "1. Solo en el escenario con vuelo de regreso desde Tokio: hacer check-out en Namba, tomar metro hasta Shin-Osaka y localizar el andén del Shinkansen con margen.\n2. Viajar hacia Tokyo Station o Shinagawa en Nozomi (referencia alrededor de 2 h 30 min, según servicio), sin fijar horario antes de comprar el vuelo internacional.",
+      "pm": "1. Llegar a Tokio y trasladarse al hotel candidato de Ueno-Okachimachi, comprobando horario de check-in y equipaje.\n2. Pasear por el barrio o descansar; evitar añadir una entrada con horario y preparar el trayecto a HND o NRT del día siguiente.",
+      "night": "1. Cenar cerca del alojamiento, comprobar terminal aérea y reservar un margen razonable para controles del siguiente día.\n2. Si se elige vuelo multidestino desde KIX, este día se rediseña como noche adicional en Osaka o Kansai y no se realiza el Shinkansen a Tokio.",
+      "mobility": "• *Escenario Tokio:* Namba → Shin-Osaka por metro, Nozomi a Tokyo/Shinagawa y transporte urbano al hotel; incluir tiempo de estación a estación y check-in.\n• *Escenario KIX:* Mantener la noche del 30 de octubre en Osaka o cerca de KIX según hora del vuelo; no tomar tren a Tokio.\n• *Equipaje:* Confirmar las reglas de bultos grandes de Shinkansen, tarifas y cancelación antes de comprar.",
+      "note": "• *Ruta provisional:* Solo la alternativa redonda justifica el hotel de Ueno del 30 al 31; sigue sin reservar.\n• *Decisión de vuelo:* Comparar costo total redondo + Shinkansen + hotel frente a multidestino + transporte a KIX, considerando escalas y descanso.\n• *Sin duplicidades:* No sumar el tramo a Tokio y el traslado a Kansai simultáneamente; el presupuesto sigue pendiente.",
       "hotel": "tokio-ueno-regreso",
       "transportRefs": [
         "osaka-tokyo-or-kix"
       ],
       "places": [],
       "headerPlaces": [
-        "Osaka → Tokio · última noche condicionada"
+        "Osaka-Namba → Shin-Osaka",
+        "Shinkansen Nozomi → Tokio",
+        "Hotel final de Ueno · solo escenario redondo"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "SmartEX · Shinkansen oficial",
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "label": "Nankai · acceso a KIX",
+          "url": "https://www.nankai.co.jp/en_railway/traffic/kix.html"
+        }
+      ]
     },
     {
       "n": 18,
       "date": "2027-10-31",
-      "title": "Japón → CDMX · regreso provisional",
+      "title": "Japón → CDMX · regreso internacional provisional",
       "base": "En vuelo",
-      "am": "1. Hacer check-out y trasladarse a Haneda o Narita según el billete.\n2. Llegar al aeropuerto con margen para vuelos internacionales.",
-      "pm": "1. Realizar documentación y embarcar según itinerario real.\n2. Conectar con el vuelo a CDMX respetando condiciones de tránsito.",
-      "night": "1. Llegar a México el mismo día local o en otro, según horarios y escalas.\n2. Evitar compromisos inmediatos tras un vuelo largo.",
-      "mobility": "• *Hotel → HND/NRT:* Confirmar terminal y conexión; salir con margen por equipaje y seguridad.\n• *Vuelo:* Regreso internacional pendiente de compra.",
-      "note": "• *Fechas:* Salida de Japón y llegada efectiva a México son provisionales.\n• *Escenario KIX:* Adaptar últimas jornadas si el vuelo parte desde Osaka.",
+      "am": "1. Si se sale desde Tokio, hacer check-out del hotel y viajar a HND o NRT según la reserva, con tiempo para terminal, equipaje y controles internacionales.\n2. Si se sale desde Kansai, hacer check-out del alojamiento que se elija para la noche anterior y trasladarse a KIX desde Nankai Namba o desde otro punto adecuado, dependiendo de la terminal.",
+      "pm": "1. Realizar check-in, seguridad y embarque del vuelo internacional que finalmente se contrate, contemplando conexiones y requisitos de tránsito.\n2. Conservar documentos y prever la diferencia horaria; la hora efectiva de aterrizaje en México puede ser este mismo día local u otro.",
+      "night": "1. Continuar conexiones o descansar tras llegar a CDMX según el itinerario aéreo real.\n2. No programar compromisos inmediatos al regreso; ajustar esta jornada una vez conocidos los vuelos.",
+      "mobility": "• *Tokio → HND/NRT:* Elegir ruta ferroviaria según hotel final, terminal y horario; el tren aeroportuario no está reservado.\n• *Osaka → KIX:* Desde Nankai Namba, Rapi:t unos 38 minutos o Airport Express unos 44 minutos como referencias; sumar check-in y tránsito al andén.\n• *Aeropuerto → CDMX:* Fecha de llegada y escalas pendientes; reservar suficiente margen para la salida internacional.",
+      "note": "• *Fechas provisionales:* El 31 de octubre representa la salida desde Japón, no una llegada confirmada a CDMX.\n• *Escenarios excluyentes:* Tokio requiere la noche final en Ueno; Kansai exige redistribuir ese alojamiento y cambiar las referencias de aeropuerto.\n• *Tarifas:* No se cotizó todavía el vuelo de regreso ni el tren al aeropuerto; evitar importes ficticios.",
       "transportRefs": [
         "flight-international",
         "tokyo-airport-return"
       ],
       "places": [],
       "headerPlaces": [
-        "Japón → CDMX · regreso provisional"
+        "Haneda (HND) / Narita (NRT) · escenario Tokio",
+        "Kansai (KIX) · alternativa multidestino",
+        "Regreso a México · horarios sin confirmar"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Nankai · horarios ferroviarios a KIX",
+          "url": "https://www.nankai.co.jp/en_railway/access-timetable"
+        },
+        {
+          "label": "Narita · acceso oficial",
+          "url": "https://www.narita-airport.jp/en/access/train/"
+        },
+        {
+          "label": "Haneda · acceso ferroviario",
+          "url": "https://tokyo-haneda.com/en/access/train/index.html"
+        }
+      ]
     }
   ],
   "exchangeRates": {
