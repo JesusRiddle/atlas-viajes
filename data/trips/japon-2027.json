@@ -246,8 +246,8 @@
       "checkOut": "2027-10-26",
       "status": "Candidato · no reservado",
       "rate": "Estimación para planear: $1900 MXN/noche; 5 noche(s): $9500 MXN. No es cotización para octubre de 2027.",
-      "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
-      "notes": "A pocos minutos de las estaciones Shijo y Karasuma, conveniente para recorrer Kioto.",
+      "rateConditions": "Estimación para habitación privada de 1 adulto, no cotización para 2027. Confirmar baño, tarifa final, cancelación y tasa de alojamiento de Kioto: desde marzo de 2026, ¥400 por persona/noche para tarifas entre ¥6,000 y ¥19,999; el tramo aplicable depende de la tarifa real.",
+      "notes": "Muy bien ubicado junto a Shijō/Karasuma, práctico para visitas urbanas y conexiones con Kyoto Station. Verificar el importe de la tasa local y si se paga aparte.",
       "links": [
         {
           "label": "Reserva oficial",
@@ -266,7 +266,7 @@
       "status": "Candidato · no reservado",
       "rate": "Estimación para planear: $1700 MXN/noche; 4 noche(s): $6800 MXN. No es cotización para octubre de 2027.",
       "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
-      "notes": "Junto a Namba, bien conectado con Dotonbori y otras zonas de Osaka.",
+      "notes": "Ubicación conveniente junto a Namba para Dotonbori, Universal Studios Japan y aeropuerto KIX. Verificar aislamiento acústico, tamaño de la habitación y opciones de transporte según el horario del vuelo.",
       "links": [
         {
           "label": "Reserva oficial",
@@ -285,7 +285,7 @@
       "status": "Candidato · no reservado",
       "rate": "Estimación para planear: $1700 MXN/noche; 1 noche(s): $1700 MXN. No es cotización para octubre de 2027.",
       "rateConditions": "Habitación privada para un adulto. Verificar baño privado, impuestos, cancelación, desayuno y disponibilidad para fechas reales.",
-      "notes": "Última noche solo en escenario de vuelo redondo a Tokio; se comparará alojamiento cerca de Haneda.",
+      "notes": "Candidato solo si se utiliza vuelo redondo a Tokio. Comparar con Shinagawa o alrededores de Haneda según terminal y horario de salida; comprobar tiempos puerta a puerta. No reservar hasta decidir el vuelo.",
       "links": [
         {
           "label": "Reserva oficial",
@@ -322,7 +322,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
+      "notes": "Estimación de habitación, no tarifa cotizada. Impuesto de alojamiento de Kioto no incluido: depende del precio real por persona/noche (desde marzo de 2026, ¥400/noche para ¥6,000–19,999). No sumarlo como confirmado antes de conocer la tarifa."
     },
     {
       "id": "lodging-osaka-namba",
