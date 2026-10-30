@@ -992,7 +992,8 @@ html{scroll-padding-top:78px}
 /* Reservaciones: igual altura en Desktop; contador según prioridad. */
 @media(min-width:681px){#plan .reservation-groups{align-items:stretch}#plan .reservation-groups>.reservation-group{height:100%}}
 #plan .reservation-priority-very-high .reservation-count{color:#a52727;background:#fff0ef;border-color:#f0c4c2}
-#plan .reservation-priority-high .reservation-count{color:#795300;background:#fff5c7;border-color:#e7cd70}
+#plan .reservation-priority-high .reservation-count{color:#9a470d;background:#fff0e2;border-color:#e7a66d}
+#plan .reservation-priority-flexible .reservation-count{color:#566b2b;background:#eef2df;border-color:#adc18a}
 
 /* En Desktop, ordenar las experiencias por columna (de arriba abajo). */
 @media screen and (min-width:681px){
