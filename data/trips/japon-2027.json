@@ -126,7 +126,7 @@
     ]
   ],
   "lodgingSummary": "Escenario provisional de 16 noches: Tokio 6, Kioto 5, Osaka 4 y Tokio 1 solo si el regreso sale de HND/NRT. Si se vuelve desde KIX, cambiar la última noche a Osaka o Kansai. Presupuesto conocido: $28,200 MXN exclusivamente de alojamiento estimado, no costo total del viaje; faltan vuelo internacional, transporte, entradas, comida, impuestos y contingencia. Ninguna estancia está reservada.",
-  "climate": "En octubre, las máximas medias habituales rondan los 22–24 °C en Tokio, Kioto y Osaka, con mínimas aproximadas de 14–16 °C. En noviembre, las máximas bajan a unos 17–18 °C y las mínimas a 9–10 °C. Kawaguchiko es más frío, especialmente al amanecer; las nubes o la lluvia pueden ocultar el monte Fuji. Son promedios históricos, no pronósticos para 2027.\n\n*Qué llevar:* Ropa en capas, chamarra impermeable ligera, paraguas compacto y zapatos cómodos. Para noviembre, añadir una prenda abrigadora para las mañanas y las excursiones al Fuji. Ajustar el equipaje según la tarifa aérea elegida.\n\n*Horas de luz:* Durante la segunda mitad de octubre, el sol sale aproximadamente entre las 5:45 y las 6:10 y se oculta entre las 16:50 y las 17:15; en noviembre, sale alrededor de las 6:05–6:45 y se pone cerca de las 16:30–17:00 (horario local JST, según fecha y ciudad). Reservar las primeras horas para Fuji, jardines y templos; aprovechar la noche para barrios iluminados y gastronomía.",
+  "climate": "En octubre, las máximas habituales rondan los 22–24 °C en Tokio, Kioto y Osaka y las mínimas los 14–16 °C. Kawaguchiko puede ser bastante más frío, sobre todo por la mañana; las nubes pueden ocultar el monte Fuji. Son promedios históricos, no un pronóstico para 2027.\n\n*Qué llevar:* Ropa en capas, chamarra ligera impermeable, paraguas compacto y zapatos cómodos. Llevar una capa más abrigadora para Kawaguchiko y revisar la franquicia de equipaje del vuelo elegido.\n\n*Horas de luz:* Durante la segunda mitad de octubre, el amanecer ronda las 5:45–6:10 y el atardecer las 16:50–17:15, según ciudad y fecha (hora local JST). Priorizar Fuji, jardines y templos con luz natural.\n\n*Alternativa de noviembre:* Más frío y menor duración del día, pero mejores posibilidades de follaje otoñal intenso en Kioto hacia finales del mes.",
   "mapPoints": [
     {
       "name": "Tokio (inicio y regreso)",
@@ -1948,5 +1948,27 @@
     "JPY": 0.1196
   },
   "exchangeRatesAsOf": "2026-10-29",
-  "exchangeRatesSource": "XE · tasa media de referencia 29/10/2026, https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN"
+  "exchangeRatesSource": "XE · tasa media de referencia 29/10/2026, https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN",
+  "budgetPreliminary": {
+    "currency": "MXN",
+    "low": 80000,
+    "high": 110000,
+    "status": "estimated",
+    "label": "Proyección global para una persona, no cotización",
+    "basis": "Escenario orientativo de planeación: alojamiento $28,200 MXN; vuelos de septiembre de 2027 $28,417–$35,536 MXN solo como referencia, NO cotizados para octubre; diferencia destinada a trenes, transportes locales, alimentación, entradas, impuestos, equipaje y contingencia. El rango no sustituye el desglose de gastos efectivamente presupuestados ni significa que se hayan reservado servicios.",
+    "pending": [
+      "Vuelo internacional para octubre de 2027",
+      "Transportes y entradas con precios para 2027",
+      "Alimentación y extras según ritmo real",
+      "Impuestos y equipaje"
+    ]
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-10-29",
+    "baseCurrency": "MXN",
+    "description": "Tipo de cambio orientativo: yenes por equivalencia en MXN; no es una tarifa garantizada para octubre de 2027.",
+    "sources": {
+      "JPY": "https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN"
+    }
+  }
 }
