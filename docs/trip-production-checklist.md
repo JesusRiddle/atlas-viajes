@@ -48,6 +48,10 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 - Firenze → Milano → Malpensa: distinguir márgenes de transbordo de llegada previa al vuelo y ausencia de protección por billetes separados.
 - Un error de sintaxis en day-transport.js bloqueó la carga de todos los viajes; cada modificación JS requiere validación previa y prueba real de carga cuando sea posible.
 
+## Auditoría del indicador «Idioma y moneda»
+- [ ] Para viajes nuevos, confirmar que `practicalIndicators.language.badge` indica idioma local y código ISO 4217 de moneda («Japonés · JPY»), no valoraciones como «Fácil de organizar».
+- [ ] Confirmar que `practicalIndicators.language.text` incluye utilidad del inglés y consejos pertinentes de efectivo, tarjetas y conversión a MXN; revisar contenido en la interfaz.
+
 ## Auditoría de nomenclatura de alojamientos
 - [ ] Confirmar que Inicio, portada, Panorama y comparativas presentan «X noches, Y alojamientos», en singular cuando corresponda.
 - [ ] Buscar en componentes las expresiones «bases para dormir», «Noches y bases» y conteos de «estancias» usados como sustituto de alojamientos; no basta con inspeccionar JSON.
