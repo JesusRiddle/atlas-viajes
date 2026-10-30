@@ -346,7 +346,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
+      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones.",
+      "scenario": "tokyo"
     },
     {
       "id": "food-day-2",
@@ -778,7 +779,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Estimación de planeación, no cotización ni reserva. SOLO escenario A/C con salida internacional de Tokio; sustituir por transferencia Osaka/KIX si se reserva multidestino B/D. No sumar las dos rutas."
+      "notes": "Estimación de planeación, no cotización ni reserva. SOLO escenario A/C con salida internacional de Tokio; sustituir por transferencia Osaka/KIX si se reserva multidestino B/D. No sumar las dos rutas.",
+      "scenario": "tokyo"
     },
     {
       "id": "fuji-return",
@@ -838,7 +840,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Estimación de planeación, no cotización ni reserva. Solo un mirador. Si se descarta, quitar este importe; no sumar TOKYO SKYTREE."
+      "notes": "Estimación de planeación, no cotización ni reserva. Solo un mirador. Si se descarta, quitar este importe; no sumar TOKYO SKYTREE. Actividad opcional EXCLUIDA del subtotal principal; añadir solo al elegirla.",
+      "optional": true
     },
     {
       "id": "kyoto-temples",
@@ -874,7 +877,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Estimación de planeación, no cotización ni reserva. Una actividad pagada como máximo; exteriores gratuitos por defecto."
+      "notes": "Estimación de planeación, no cotización ni reserva. Una actividad pagada como máximo; exteriores gratuitos por defecto. Actividad opcional EXCLUIDA del subtotal principal; añadir solo al elegirla.",
+      "optional": true
     },
     {
       "id": "kyoto-city-tax",
@@ -923,6 +927,33 @@
       },
       "status": "estimated",
       "notes": "Estimación de planeación, no cotización ni reserva. Reserva para imprevistos y ajustes de tarifas; no equivale a gasto comprometido."
+    },
+    {
+      "id": "lodging-osaka-last-night-kix",
+      "category": "lodging",
+      "concept": "Osaka/Kansai · noche final alternativa al hotel de Tokio",
+      "date": "2027-10-30",
+      "nights": 1,
+      "scenario": "kix",
+      "cost": {
+        "amount": 2000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Solo escenario B/D: sustitución provisional de la última noche en Tokio, no una noche extra ni reserva."
+    },
+    {
+      "id": "osaka-kix-return",
+      "category": "intercity_transport",
+      "concept": "Osaka/Namba → KIX · traslado al aeropuerto",
+      "date": "2027-10-31",
+      "scenario": "kix",
+      "cost": {
+        "amount": 400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Solo escenario B/D: estimación provisional. No duplicar Shinkansen Osaka→Tokio."
     }
   ],
   "planningDetails": {
@@ -2539,12 +2570,12 @@
     "high": 107000,
     "status": "estimated",
     "label": "Proyección integral · escenario vuelo redondo por Tokio",
-    "basis": "Presupuesto de planeación para 1 persona y 18 días: gastos terrestres estimados en expenses + SOLO referencia de vuelo redondo A de septiembre de 2027 por $28,417 MXN. No es cotización para octubre de 2027. Incluye alojamiento, alimentos, traslados urbanos e interurbanos, USJ y otros accesos, impuestos, conectividad, extras y colchón. La vuelta Osaka→Tokio incluida SOLO corresponde al escenario Tokio; si se compra KIX, sustituir retorno y última noche. La sección de gastos contabiliza partidas terrestres; los vuelos se comparan en Traslados y NO se duplican como gasto independiente. El límite alto incluye margen extra para tarifas de octubre, equipaje y posibles cambios. Express Pass, compras importantes y gastos personales extraordinarios fuera del plan. La portada calcula su rango en cada carga desde el desglose actualizado, con margen adicional de $16,000 MXN, y el vuelo elegido o la primera tarifa referencial cuando no hay selección.",
+    "basis": "Presupuesto de planeación para 1 persona y 18 días: gastos terrestres estimados en expenses + SOLO referencia de vuelo redondo A de septiembre de 2027 por $28,417 MXN. No es cotización para octubre de 2027. Incluye alojamiento, alimentos, traslados urbanos e interurbanos, USJ y otros accesos, impuestos, conectividad, extras y colchón. En escenario Tokio se contabilizan última noche Ueno y tren Osaka→Tokio; en escenario Kansai se sustituyen por última noche Osaka/Kansai y traslado KIX. No se suman ambos. La sección de gastos contabiliza partidas terrestres; los vuelos se comparan en Traslados y NO se duplican como gasto independiente. El límite alto incluye margen extra para tarifas de octubre, equipaje y posibles cambios. Express Pass, compras importantes y gastos personales extraordinarios fuera del plan. La portada calcula su rango en cada carga desde el desglose actualizado, con margen adicional de $16,000 MXN, y el vuelo elegido o la primera tarifa referencial cuando no hay selección.",
     "pending": [
       "Precio y horarios reales del vuelo internacional para 14–31 octubre 2027",
       "Confirmación de tarifas 2027 de trenes y entradas",
-      "Selección final Tokio vs KIX y última noche",
-      "Cotización real de hoteles e impuestos"
+      "Cotización real de hoteles e impuestos",
+      "Confirmar si escenario Tokio o Kansai para reconciliar la noche final y el traslado"
     ],
     "marginMXN": 16000
   },
