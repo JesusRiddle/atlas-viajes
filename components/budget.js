@@ -76,8 +76,10 @@ window.AtlasBudget = (() => {
                 ? [referencedDays[0].date] : [];
             register(item.id, 'transport', cost, dates, item.paidMXN);
         }
+        const flightChoice = overrides['flight-international']?.option || trip.majorTransport?.find(t => t.id === 'flight-international')?.selectedOption;
+        const activeScenario = ['B', 'D'].includes(flightChoice) ? 'kix' : 'tokyo';
         for (const item of trip.expenses || []) {
-            if (item.includedInTransport || item.optional) continue;
+            if (item.includedInTransport || item.optional || (item.scenario && item.scenario !== activeScenario)) continue;
             register(item.id, item.category || 'other', item.cost, expenseDates(item), item.paidMXN);
         }
         const byDay = Object.fromEntries((trip.days || []).map(d => [d.date, { date: d.date, totalMXN: 0, entries: [], partial: false }]));
