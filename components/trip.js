@@ -221,7 +221,7 @@ window.AtlasTrip = function (ctx) {
         return [
             '<section class="triphero triphero-split"><div class="triphero-split-info">',
             '<div class="triphero-split-info-inner">',
-            `<a class="breadcrumb" href="#"><span aria-hidden="true">←</span> Regresar</a>`,
+            `<a class="breadcrumb" href="#inicio"><span aria-hidden="true">←</span> Regresar</a>`,
             `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')} · ${esc(heroLabel)}</p>`,
             `<h1>${esc(t.name)}</h1>`,
             '<div class="hero-meta">',
