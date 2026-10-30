@@ -3654,12 +3654,12 @@
   "japan27-sensoji": {
     "name": "Sensō-ji · Kaminarimon",
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Senso-ji.jpg/960px-Senso-ji.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Senso-ji.jpg",
-      "author": "Felix Filnkössl",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "attribution": "Felix Filnkössl"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaminarimon_the_Thunder_Gate_by_night_(9412266136).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaminarimon_the_Thunder_Gate_by_night_(9412266136).jpg",
+      "author": "Maarten Heerlien",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Maarten Heerlien"
     }
   },
   "japan27-ueno-park": {
@@ -3676,34 +3676,34 @@
   "japan27-ameyoko": {
     "name": "Mercado de Ameyoko",
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Ameyoko_Market.jpg/960px-Ameyoko_Market.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Ameyoko_Market.jpg",
-      "author": "Ian David Winter",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Ian David Winter"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ameya-Yokocho_shopping_street_entrance_on_the_Ueno_Station_side_at_night_-_Ueno%2C_Taito_Ward%2C_Tokyo%2C_Japan_(2022-02-22_19.05.14_by_DLKR).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Ameya-Yokocho_shopping_street_entrance_on_the_Ueno_Station_side_at_night_-_Ueno%2C_Taito_Ward%2C_Tokyo%2C_Japan_(2022-02-22_19.05.14_by_DLKR).jpg",
+      "author": "DLKR",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "DLKR"
     }
   },
   "japan27-meiji-jingu": {
     "name": "Santuario Meiji Jingū",
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Meiji_Jingu_Shrine_Tokyo_Japan.jpg/960px-Meiji_Jingu_Shrine_Tokyo_Japan.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Meiji_Jingu_Shrine_Tokyo_Japan.jpg",
-      "author": "MediaByPanda",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "MediaByPanda"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2019-09-04_Torii_of_Meiji_Shrine.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:2019-09-04_Torii_of_Meiji_Shrine.jpg",
+      "author": "Sergey Galyonkin",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Sergey Galyonkin"
     }
   },
   "japan27-harajuku": {
     "name": "Harajuku · Takeshita-dōri",
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Takeshita_Street_in_Harajuku.jpg/960px-Takeshita_Street_in_Harajuku.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Takeshita_Street_in_Harajuku.jpg",
-      "author": "Dylan McGannon",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Behind_the_%22Takeshita_Street%22_sign.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Behind_the_%22Takeshita_Street%22_sign.jpg",
+      "author": "Syced",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "attribution": "Dylan McGannon"
+      "attribution": "Syced"
     }
   },
   "japan27-shibuya": {
@@ -3731,12 +3731,12 @@
   "japan27-shinjuku": {
     "name": "Shinjuku de noche",
     "photo": {
-      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Shinjuku_by_Night.jpg/960px-Shinjuku_by_Night.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Shinjuku_by_Night.jpg",
-      "author": "Fboas",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
-      "attribution": "Fboas"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2024-10-20_Shinjuku_at_night_1.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:2024-10-20_Shinjuku_at_night_1.jpg",
+      "author": "Alexkom000",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Alexkom000"
     }
   },
   "japan27-kawaguchi-autumn": {
@@ -3786,30 +3786,30 @@
   "japan27-gion": {
     "name": "Gion · calle tradicional",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Street_in_Gion%2C_Kyoto%2C_2024.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Street_in_Gion%2C_Kyoto%2C_2024.jpg",
-      "author": "Smiley.toerist",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Smiley.toerist"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gion_at_night_(53853671899).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Gion_at_night_(53853671899).jpg",
+      "author": "Sergiy Galyonkin",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Sergiy Galyonkin"
     }
   },
   "japan27-yasaka": {
     "name": "Santuario Yasaka",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto_Shinto_Shrine_Yasaka.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Kyoto_Shinto_Shrine_Yasaka.jpg",
-      "author": "Otto Domes",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Otto Domes"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Yasaka-jinja%2C_nishi-r%C5%8Dmon_light_trails_(edited).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Yasaka-jinja%2C_nishi-r%C5%8Dmon_light_trails_(edited).jpg",
+      "author": "Jason Zhang",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Jason Zhang"
     }
   },
   "japan27-jidai-matsuri": {
     "name": "Jidai Matsuri · desfile histórico",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jidai_Matsuri_2009_548.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Jidai_Matsuri_2009_548.jpg",
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jidai_Matsuri_2009_480_(cropped_to_central_figures).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Jidai_Matsuri_2009_480_(cropped_to_central_figures).jpg",
       "author": "Corpse Reviver",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
@@ -3874,12 +3874,12 @@
   "japan27-nara-deer": {
     "name": "Parque de Nara · ciervos",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nara_deer_lounging_at_Todaiji.jpg?width=960",
-      "source": "https://commons.wikimedia.org/wiki/File:Nara_deer_lounging_at_Todaiji.jpg",
-      "author": "Photos of Japan",
-      "license": "CC0 1.0",
-      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "attribution": "Photos of Japan"
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nara_Kasuga-taisha_Lanterns_%26_Deer_11.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nara_Kasuga-taisha_Lanterns_%26_Deer_11.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Zairon"
     }
   },
   "japan27-todaiji": {
