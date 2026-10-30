@@ -137,35 +137,9 @@ window.AtlasHome = function (ctx) {
     const homeReady = t => canRenderFullTrip(t) || (t?.status === 'draft' && Array.isArray(t.days) && t.days.length && typeof t.start === 'string' && typeof t.end === 'string' && Array.isArray(t.routeCities) && t.routeCities.length && Number.isInteger(t.work) && Number.isFinite(t.budgetPreliminary?.low));
     // New-trip home prices are derived from the same ledger used in Presupuesto.
     // No flight is booked automatically: the first quoted option is a dated reference.
-    function homeBudget(t) {
-        if (t.status !== 'draft' || !t.budgetPreliminary || typeof t.budgetPreliminary !== 'object') return null;
-        const summary = window.AtlasBudget?.currentSummary?.(t);
-        if (!summary || !Number.isFinite(summary.knownTotalMXN)) return null;
-        const flight = (t.majorTransport || []).find(x => x.id === 'flight-international');
-        const selection = window.AtlasSelections?.get(t.id)?.['flight-international'];
-        const chosen = flight?.options?.find(x => x.id === (selection?.option || flight.selectedOption));
-        const reference = chosen || flight?.options?.[0];
-        const quoted = reference?.fares?.find(x => x.id === (selection?.fare || reference.selectedFare))?.price;
-        const rate = t.exchangeRates || {};
-        // currentSummary already includes the selected flight; add only the default
-        // reference when no flight was selected in the interactive comparison.
-        const flightAlreadyCounted = !!chosen;
-        const referenceMXN = quoted ? window.AtlasBudget.convert(quoted, rate) : null;
-        let total = summary.knownTotalMXN;
-        if (!flightAlreadyCounted && Number.isFinite(referenceMXN)) total += referenceMXN;
-        // The Osaka->Tokyo Shinkansen belongs exclusively to Tokyo-return scenarios.
-        if (['B', 'D'].includes(reference?.id)) {
-            const train = (t.expenses || []).find(x => x.id === 'rail-osaka-tokyo');
-            if (train) total -= window.AtlasBudget.convert(train.cost, rate) || 0;
-        }
-        const margin = Number.isFinite(t.budgetPreliminary.marginMXN) ? t.budgetPreliminary.marginMXN : 0;
-        const low = Math.round(total / 1000) * 1000;
-        return { low, high: Math.ceil((total + margin) / 1000) * 1000, provisional: !chosen };
-    }
     const homePrice = t => {
-        const calculated = homeBudget(t);
-        if (calculated) return '$' + calculated.low.toLocaleString('es-MX') + '–$' + calculated.high.toLocaleString('es-MX');
-        return price(t);
+        const estimate = window.AtlasBudget?.planningEstimate?.(t);
+        return estimate ? '$' + estimate.low.toLocaleString('es-MX') + '–$' + estimate.high.toLocaleString('es-MX') : price(t);
     };
     function card(t, i) {
         if (!homeReady(t)) return draftCard(t, i);
