@@ -189,10 +189,6 @@
       "description": "Atravesar el cruce de Shibuya, recorrer Harajuku y el santuario Meiji Jingū, explorar la cultura electrónica de Akihabara y descubrir el ambiente nocturno de Shinjuku y Golden Gai."
     },
     {
-      "city": "Tokio · experiencias contemporáneas",
-      "description": "Explorar una instalación de arte digital de teamLab, si hay entradas disponibles, y contemplar Tokio desde un mirador panorámico para apreciar la escala y arquitectura de la ciudad."
-    },
-    {
       "city": "Kawaguchiko · monte Fuji",
       "description": "Buscar vistas del monte Fuji desde el lago Kawaguchi y Oishi Park, siempre que lo permitan las nubes, y probar hōtō, el guiso de fideos tradicional de Yamanashi."
     },
@@ -390,16 +386,6 @@
     [
       "Prioridad alta",
       [
-        {
-          "title": "teamLab Borderless · Azabudai Hills (Tokio)",
-          "description": "Reservar entrada con horario para una jornada de Tokio, una vez establecidas las fechas. Referencia oficial desde ¥3,400/adulto (29/10/2026, precio dinámico); calcular 1.5–2.5 horas como margen de visita. La venta suele abrir alrededor del día 1, dos meses antes. Generalmente no reembolsable; cambios de fecha/hora sujetos a reglas y cupos. Alternativa: otro horario disponible o una experiencia urbana sin reserva.",
-          "links": [
-            {
-              "label": "teamLab Borderless · venta oficial",
-              "url": "https://www.teamlab.art/e/tokyo/"
-            }
-          ]
-        },
         {
           "title": "Mirador de Tokio · elegir uno",
           "description": "SHIBUYA SKY es candidato principal por su ubicación y vistas; referencia online ¥2,700/adulto antes de las 15:00 o ¥3,400 desde las 15:00 (consulta 29/10/2026). Reservar franja de atardecer si interesa, pero puede agotarse y la azotea cerrar por mal tiempo. Alternativa: TOKYO SKYTREE, con entradas anticipadas y observatorio cubierto. No comprar ambos por defecto.",
