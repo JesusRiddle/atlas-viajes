@@ -947,13 +947,14 @@ html{scroll-padding-top:78px}
  .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,48%)}
 }
 
-/* Las siete ciudades comparten una sola fila a todo el ancho en Desktop. */
+/* En Desktop, encabezado dividido: descripción izquierda y ciudades en tres
+   columnas a la derecha, con filas automáticas. El mapa permanece debajo. */
 @media screen and (min-width:1001px){
- .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr);row-gap:13px}
- .trip-map-section .trip-map-cities{border-left:0;border-top:1px solid var(--line);padding:12px 0 0}
- .trip-map-section .trip-map-cities .map-city-list{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px;margin-top:9px}
- .trip-map-section .trip-map-cities .map-city-list li{min-width:0}
- .trip-map-section .trip-map-cities .map-city-list a{width:100%;min-height:62px;height:62px}
+  .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,48%);row-gap:13px}
+  .trip-map-section .trip-map-cities{border-left:1px solid var(--line);border-top:0;padding:0 0 0 19px}
+  .trip-map-section .trip-map-cities .map-city-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:0}
+  .trip-map-section .trip-map-cities .map-city-list li{min-width:0}
+  .trip-map-section .trip-map-cities .map-city-list a{width:100%;min-height:62px;height:62px}
 }
 
 /* Leyenda alineada a la derecha del encabezado, ciudades en fila inferior. */
@@ -991,7 +992,8 @@ html{scroll-padding-top:78px}
 /* Reservaciones: igual altura en Desktop; contador según prioridad. */
 @media(min-width:681px){#plan .reservation-groups{align-items:stretch}#plan .reservation-groups>.reservation-group{height:100%}}
 #plan .reservation-priority-very-high .reservation-count{color:#a52727;background:#fff0ef;border-color:#f0c4c2}
-#plan .reservation-priority-high .reservation-count{color:#795300;background:#fff5c7;border-color:#e7cd70}
+#plan .reservation-priority-high .reservation-count{color:#9a470d;background:#fff0e2;border-color:#e7a66d}
+#plan .reservation-priority-flexible .reservation-count{color:#566b2b;background:#eef2df;border-color:#adc18a}
 
 /* En Desktop, ordenar las experiencias por columna (de arriba abajo). */
 @media screen and (min-width:681px){
@@ -2226,10 +2228,10 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   border-color:var(--line);
   color:var(--ink);
 }
-#plan .overview-climate-card.season-recommended{border-top-color:#255535}
-#plan .overview-climate-card.season-conditional{border-top-color:#a87912}
-#plan .overview-climate-card.season-avoid{border-top-color:#a84950}
-#plan .overview-climate-card.season-pending{border-top-color:#8052a6}
+#plan .overview-climate-card.season-recommended{border-top-color:#467b67}
+#plan .overview-climate-card.season-conditional{border-top-color:#9b783a}
+#plan .overview-climate-card.season-avoid{border-top-color:#b75b59}
+#plan .overview-climate-card.season-pending{border-top-color:#716486}
 #plan .overview-climate-card[class*="season-"] .fact-copy p{color:var(--ink)}
 #plan .overview-climate-card .overview-climate-season-status{
   font:700 11px/1.4 Arial,Helvetica,sans-serif;
@@ -2246,3 +2248,34 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 #plan .overview-climate-card.season-conditional .overview-climate-season-status{background:#f8eac5;color:#795200;border-color:#eac56d}
 #plan .overview-climate-card.season-avoid .overview-climate-season-status{background:#f5dfe0;color:#8b3037;border-color:#dfa7ad}
 #plan .overview-climate-card.season-pending .overview-climate-season-status{background:#ebddf7;color:#653b97;border-color:#d6c2e5}
+
+/* Formato obligatorio de Clima y luz en la composición nueva: franja y etiqueta
+   del mismo estado que el mes correspondiente en Temporadas. */
+#plan .overview-editorial .overview-climate-card[class*="season-"]{
+  --climate-accent:#716486;
+  border-top:0;
+  overflow:hidden;
+  padding:0;
+}
+#plan .overview-editorial .overview-climate-card.season-recommended{--climate-accent:#467b67}
+#plan .overview-editorial .overview-climate-card.season-conditional{--climate-accent:#9b783a}
+#plan .overview-editorial .overview-climate-card.season-avoid{--climate-accent:#b75b59}
+#plan .overview-editorial .overview-climate-card.season-pending{--climate-accent:#716486}
+#plan .overview-editorial .overview-climate-card[class*="season-"] > h3{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0;
+  padding:12px 18px;
+  background:var(--climate-accent);
+  color:#fff;
+}
+#plan .overview-editorial .overview-climate-card[class*="season-"] > .fact-copy{
+  padding:16px 20px 18px;
+}
+#plan .overview-editorial .overview-climate-card[class*="season-"] .overview-climate-season-status{
+  margin-left:auto;
+  background:#fff;
+  color:var(--climate-accent);
+  border-color:#fff;
+}

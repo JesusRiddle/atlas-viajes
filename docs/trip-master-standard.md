@@ -15,6 +15,13 @@ El procedimiento debe funcionar aunque no exista ningún JSON turístico complet
 
 No exigir ninguna visita, ciudad, tarifa, cantidad de noches, fotografía o elección editorial tomada para un viaje anterior.
 
+## Terminología y métricas visibles
+En Inicio, portada, Panorama y comparativas mostrar alojamiento en formato «X noches, Y alojamientos», calculado desde los datos, con singular/plural correcto. Prohibido «bases para dormir», «Noches y bases» o «estancias» como etiqueta de cantidad de alojamientos. `bases` y `days[].base` son claves técnicas y no deben cambiarse por esta regla. Auditar el renderizador además de los JSON para evitar textos heredados.
+
+**Idioma y moneda:** `practicalIndicators.language.badge` debe mostrar idioma local y código ISO de moneda («Japonés · JPY»), nunca una valoración genérica de organización del viaje. Los consejos de pago e inglés van en `text`. Esta convención se verifica antes de aprobar viajes nuevos.
+
+**Electricidad y adaptadores:** el indicador `entry` debe comparar enchufes de cada país con México (A/B) y decidir explícitamente si se requiere adaptador. Cuando sí, describir la conexión exacta que debe comprarse y advertir sobre toma de tierra, voltaje/frecuencia y cargadores INPUT 100–240 V; nunca dejar «adaptador si corresponde» como indicación genérica. No modificar datos eléctricos de viajes históricos por esta regla.
+
 ## Composición obligatoria y navegación
 Preservar el encabezado `triphero`, menú `subnav` y exactamente estas nueve secciones, con estas anclas, en este orden:
 
@@ -44,3 +51,10 @@ No utilizar condiciones por ID de un viaje para conceder a los nuevos el formato
 
 ## Criterios de aceptación
 Antes de entregar, ejecutar el checklist en `docs/trip-production-checklist.md`: verificar las nueve secciones, navegación, enlaces oficiales/Google Maps, opciones de transporte, presupuesto y tipos de cambio, coherencia de noches/días, JSON y pruebas `node --test`. Comprobar escritorio y móvil si existe navegador disponible y distinguir las verificaciones realmente ejecutadas de las pendientes. No hacer merge ni borrar viajes sin autorización.
+
+## Convención monetaria obligatoria
+En todas las secciones y vistas de un viaje del formato nuevo, cada cifra expresada en moneda extranjera debe llevar a continuación su equivalente aproximado en pesos mexicanos entre paréntesis, por ejemplo `¥4,000 (≈ $478 MXN)`. La regla se aplica a textos, listas, tarjetas y datos numéricos de viajes nuevos o reconstruidos; nunca editar viajes antiguos o heredados automáticamente. Tomar tasas documentadas con fecha y fuente, preferentemente `exchangeRates` del viaje. No transformar el dato monetario original, no mostrar conversión falsa cuando falta una tasa válida y no contabilizar dos veces gastos opcionales.
+
+**Alcance de cambios:** Los viajes históricos deben permanecer intactos y solo pueden consultarse para extraer ideas; ninguna solicitud general de edición del Atlas autoriza modificar sus JSON ni la visualización heredada. Aplicar cambios de contenido exclusivamente a los viajes del formato nuevo.
+
+**Tarjeta «Clima y luz»:** En los viajes de formato nuevo, sincronizar su franja superior y su etiqueta de estado con el mes de inicio mostrado en «Temporadas». La paleta y las etiquetas tienen una única correspondencia: Recomendable, Aceptable, Desaconsejable, Por definir. Leer fecha de `start` o primera jornada válida `days[].date`; comprobar comportamiento en Desktop/Mobile.

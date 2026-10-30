@@ -48,5 +48,46 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 - Firenze → Milano → Malpensa: distinguir márgenes de transbordo de llegada previa al vuelo y ausencia de protección por billetes separados.
 - Un error de sintaxis en day-transport.js bloqueó la carga de todos los viajes; cada modificación JS requiere validación previa y prueba real de carga cuando sea posible.
 
+## Auditoría de enchufes y adaptadores
+- [ ] Comparar los conectores de todos los países del viaje con los mexicanos tipo A/B; indicar expresamente cuándo NO se necesita adaptador.
+- [ ] Si se requiere, especificar entrada mexicana y salida de destino para comprar el adaptador correcto, contemplando conexión a tierra.
+- [ ] Indicar voltaje y frecuencia; comprobar que los cargadores aceptan el rango local. Aclarar que un adaptador físico no convierte voltaje.
+- [ ] Rechazar recomendaciones vagas como «llevar adaptador si corresponde» y verificar el texto visible de `practicalIndicators.entry`.
+
+## Auditoría del indicador «Idioma y moneda»
+- [ ] Para viajes nuevos, confirmar que `practicalIndicators.language.badge` indica idioma local y código ISO 4217 de moneda («Japonés · JPY»), no valoraciones como «Fácil de organizar».
+- [ ] Confirmar que `practicalIndicators.language.text` incluye utilidad del inglés y consejos pertinentes de efectivo, tarjetas y conversión a MXN; revisar contenido en la interfaz.
+
+## Auditoría de nomenclatura de alojamientos
+- [ ] Confirmar que Inicio, portada, Panorama y comparativas presentan «X noches, Y alojamientos», en singular cuando corresponda.
+- [ ] Buscar en componentes las expresiones «bases para dormir», «Noches y bases» y conteos de «estancias» usados como sustituto de alojamientos; no basta con inspeccionar JSON.
+- [ ] Conservar los campos técnicos `bases` y `days[].base` y comprobar que las cifras provienen del calendario y alojamientos previstos, no de valores fijos.
+
 ## Comunicación con el usuario
 Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados, resultados verificables, pendientes que requieren datos externos y decisión requerida. No pedir al usuario revisar pantalla por pantalla salvo anomalías realmente imposibles de probar. Evitar prometer que «todo está probado» si no se ejecutó la comprobación completa.
+
+## Control de divisas y presentación monetaria
+- [ ] Solo en viajes del formato nuevo: todo importe en moneda extranjera lleva inmediatamente la equivalencia `(... ≈ $X MXN)` en cada sección y tarjeta donde aparece, incluidos días, transportes, reservas, hoteles y gastos.
+- [ ] Los tipos de cambio tienen fuente y fecha, y las conversiones usan los snapshots de cada viaje cuando estén disponibles.
+- [ ] Los importes opcionales, históricos o no cotizados conservan su estado; no se duplican en presupuesto.
+- [ ] Se auditan renderizado y datos para detectar monedas sin equivalencia, evitar dobles conversiones y no alterar enlaces, tiempos o números de referencia.
+
+**Alcance de cambios:** Los viajes históricos deben permanecer intactos y solo pueden consultarse para extraer ideas; ninguna solicitud general de edición del Atlas autoriza modificar sus JSON ni la visualización heredada. Aplicar cambios de contenido exclusivamente a los viajes del formato nuevo.
+
+## Aceptación específica del panorama en viajes nuevos
+- [ ] «Tu inversión aproximada» presenta proyección global o explica inequívocamente por qué solo hay subtotal; nunca confundir solo alojamiento con costo total.
+- [ ] La proyección indica rango, supuestos y partidas excluidas; las tarifas cotizadas para otro mes no se interpretan como actuales o compradas.
+- [ ] Si hay `exchangeRates` y `exchangeRateSnapshot`, los tipos aplicables (JPY, EUR, USD, etc.) se ven con fecha y fuente en Panorama, sin condicionar el renderizador a dos monedas fijas.
+- [ ] «Clima y luz» enfatiza fechas elegidas y resume en segundo plano otras ventanas.
+- [ ] Comprobar renderizado en escritorio/móvil y que el desglose de presupuesto no cuente dos veces vuelos u otros transportes.
+
+- [ ] «Clima y luz» muestra franja superior del MISMO color que el estado del mes de inicio en «Temporadas» y su etiqueta correspondiente (Recomendable/Aceptable/Desaconsejable/Por definir), incluso si el JSON tiene fechas solo en `days[]` y no en `start`.
+
+- [ ] En viajes nuevos la tarjeta «Clima y luz» tiene el encabezado COMPLETO coloreado, no solo un borde; muestra la etiqueta del estado y utiliza `pending` / «Por definir» cuando aún no se conoce la fecha. Comprobar los cuatro estados y que el CSS esté limitado al formato nuevo.
+
+## QA de cierre · viajes en planeación a alto nivel
+- [ ] Mismo rango de presupuesto calculado en Inicio y Panorama; la tabla de Presupuesto identifica aparte subtotal registrado frente a proyección global sin sumar ambos.
+- [ ] Para cada vuelo A/B/C/D: total = gastos terrestres aplicables + SOLO un vuelo; excluir hotel y retorno de escenario contrario, entradas opcionales y cualquier duplicación.
+- [ ] Reconciliar `expenses` y presupuesto por fecha aun si `days[].spend` es `null`; no completar este campo con importes duplicados.
+- [ ] Comprobar que el escenario alterno conserva el número de noches al sustituir último hotel, no sumarlo como alojamiento adicional.
+- [ ] No exigir logística de detalle ni compras mientras el objetivo sea una estimación orientativa. Fotos y pruebas visuales son pendientes independientes.

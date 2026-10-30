@@ -3650,5 +3650,368 @@
       "attribution": "Wikimedia Commons",
       "license": "Ver licencia y autor en Wikimedia Commons"
     }
+  },
+  "japan27-sensoji": {
+    "name": "Sensō-ji · Kaminarimon",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaminarimon_the_Thunder_Gate_by_night_(9412266136).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Kaminarimon_the_Thunder_Gate_by_night_(9412266136).jpg",
+      "author": "Maarten Heerlien",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Maarten Heerlien"
+    }
+  },
+  "japan27-ueno-park": {
+    "name": "Parque de Ueno",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Ueno_Park_(53150173020).jpg/960px-Ueno_Park_(53150173020).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Ueno_Park_(53150173020).jpg",
+      "author": "Dick Thomas Johnson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Dick Thomas Johnson"
+    }
+  },
+  "japan27-ameyoko": {
+    "name": "Mercado de Ameyoko",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ameya-Yokocho_shopping_street_entrance_on_the_Ueno_Station_side_at_night_-_Ueno%2C_Taito_Ward%2C_Tokyo%2C_Japan_(2022-02-22_19.05.14_by_DLKR).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Ameya-Yokocho_shopping_street_entrance_on_the_Ueno_Station_side_at_night_-_Ueno%2C_Taito_Ward%2C_Tokyo%2C_Japan_(2022-02-22_19.05.14_by_DLKR).jpg",
+      "author": "DLKR",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "DLKR"
+    }
+  },
+  "japan27-meiji-jingu": {
+    "name": "Santuario Meiji Jingū",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2019-09-04_Torii_of_Meiji_Shrine.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:2019-09-04_Torii_of_Meiji_Shrine.jpg",
+      "author": "Sergey Galyonkin",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Sergey Galyonkin"
+    }
+  },
+  "japan27-harajuku": {
+    "name": "Harajuku · Takeshita-dōri",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Takeshita_Street.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Takeshita_Street.jpg",
+      "author": "Syced",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Syced"
+    }
+  },
+  "japan27-shibuya": {
+    "name": "Cruce de Shibuya",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shibuya_crossing_seen_from_Shibuya_Stream%2C_2024.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing_seen_from_Shibuya_Stream%2C_2024.jpg",
+      "author": "Syced",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Syced"
+    }
+  },
+  "japan27-akihabara": {
+    "name": "Akihabara · Electric Town",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Akihabara_Night.jpg/960px-Akihabara_Night.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Akihabara_Night.jpg",
+      "author": "ElHeineken",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ElHeineken"
+    }
+  },
+  "japan27-shinjuku": {
+    "name": "Shinjuku de noche",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2024-10-20_Shinjuku_at_night_1.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:2024-10-20_Shinjuku_at_night_1.jpg",
+      "author": "Alexkom000",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Alexkom000"
+    }
+  },
+  "japan27-kawaguchi-autumn": {
+    "name": "Lago Kawaguchi · otoño",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Autumn_leaf_color_and_Mount_Fuji_from_Lake_Kawaguchi.jpg/960px-Autumn_leaf_color_and_Mount_Fuji_from_Lake_Kawaguchi.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Autumn_leaf_color_and_Mount_Fuji_from_Lake_Kawaguchi.jpg",
+      "author": "Alpsdake",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Alpsdake"
+    }
+  },
+  "japan27-oishi-park": {
+    "name": "Oishi Park · monte Fuji",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Mount_Fuji_from_Oishi_Park.jpg/960px-Mount_Fuji_from_Oishi_Park.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Oishi_Park.jpg",
+      "author": "Alpsdake",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Alpsdake"
+    }
+  },
+  "japan27-ginza": {
+    "name": "Ginza · paseo comercial",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ginza_at_dusk.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Ginza_at_dusk.jpg",
+      "author": "Joi Ito",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Joi Ito"
+    }
+  },
+  "japan27-tokyo-station": {
+    "name": "Tokyo Station · Marunouchi",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Tokyo_Station_Marunouchi_Building.jpg/960px-Tokyo_Station_Marunouchi_Building.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Tokyo_Station_Marunouchi_Building.jpg",
+      "author": "Kakidai",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Kakidai"
+    }
+  },
+  "japan27-gion": {
+    "name": "Gion · calle tradicional",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gion_Streets%2C_Kyoto%2C_2024.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Gion_Streets%2C_Kyoto%2C_2024.jpg",
+      "author": "Klaasjeoranje",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Klaasjeoranje"
+    }
+  },
+  "japan27-yasaka": {
+    "name": "Santuario Yasaka",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Yasaka-jinja%2C_nishi-r%C5%8Dmon_light_trails_(edited).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Yasaka-jinja%2C_nishi-r%C5%8Dmon_light_trails_(edited).jpg",
+      "author": "Jason Zhang",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Jason Zhang"
+    }
+  },
+  "japan27-jidai-matsuri": {
+    "name": "Jidai Matsuri · desfile histórico",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jidai_Matsuri_2009_480_(cropped_to_central_figures).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Jidai_Matsuri_2009_480_(cropped_to_central_figures).jpg",
+      "author": "Corpse Reviver",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Corpse Reviver"
+    }
+  },
+  "japan27-fushimi-inari": {
+    "name": "Fushimi Inari · torii",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fushimi-Inari_Torii.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Fushimi-Inari_Torii.jpg",
+      "author": "Takipoint123",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Takipoint123"
+    }
+  },
+  "japan27-kiyomizu": {
+    "name": "Kiyomizu-dera · templo",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/JAP_Kyoto_Kiyomizu-dera.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:JAP_Kyoto_Kiyomizu-dera.jpg",
+      "author": "Grueslayer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Grueslayer"
+    }
+  },
+  "japan27-sannenzaka": {
+    "name": "Sannenzaka · Higashiyama",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sannenzaka-kyoto.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Sannenzaka-kyoto.JPG",
+      "author": "Aporon999",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Aporon999"
+    }
+  },
+  "japan27-arashiyama": {
+    "name": "Bosque de bambú de Arashiyama",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arashiyama_Bamboo_Forest_in_Kyoto%2C_Japan_in_July_2026.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Arashiyama_Bamboo_Forest_in_Kyoto%2C_Japan_in_July_2026.jpg",
+      "author": "Gatorfan252525",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Gatorfan252525"
+    }
+  },
+  "japan27-kinkakuji": {
+    "name": "Kinkaku-ji · Pabellón Dorado",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Pavilion_Kinkaku-ji_2024.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_2024.jpg",
+      "author": "Nacaru",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Nacaru"
+    }
+  },
+  "japan27-nara-deer": {
+    "name": "Parque de Nara · ciervos",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nara_Kasuga-taisha_Lanterns_%26_Deer_11.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nara_Kasuga-taisha_Lanterns_%26_Deer_11.jpg",
+      "author": "Zairon",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Zairon"
+    }
+  },
+  "japan27-todaiji": {
+    "name": "Tōdai-ji · Gran Buda",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/T%C5%8Ddai-ji_Daibutsuden%2C_June_2019.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:T%C5%8Ddai-ji_Daibutsuden%2C_June_2019.jpg",
+      "author": "Cun Cun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Cun Cun"
+    }
+  },
+  "japan27-kasuga": {
+    "name": "Kasuga Taisha · faroles",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nara_deer_between_stone_lanterns.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nara_deer_between_stone_lanterns.jpg",
+      "author": "LynUratani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "LynUratani"
+    }
+  },
+  "japan27-nijo": {
+    "name": "Castillo Nijō · Palacio Ninomaru",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nijo_Castle_2023.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nijo_Castle_2023.jpg",
+      "author": "稲垣啓二",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "稲垣啓二"
+    }
+  },
+  "japan27-dotonbori": {
+    "name": "Dotonbori · canal iluminado",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Osaka_-_Osaka192.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Osaka_-_Osaka192.jpg",
+      "author": "lumoplank",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "lumoplank"
+    }
+  },
+  "japan27-usj": {
+    "name": "Universal Studios Japan · acceso",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/USJ_Entrance_2026.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:USJ_Entrance_2026.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Sakai Yayoi"
+    }
+  },
+  "japan27-nintendo": {
+    "name": "Super Nintendo World · panorámica",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/USJ_Super_Nintendo_World_overview.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:USJ_Super_Nintendo_World_overview.jpg",
+      "author": "Jpatokal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jpatokal"
+    }
+  },
+  "japan27-harry-potter": {
+    "name": "The Wizarding World of Harry Potter",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wizarding_World_of_Harry_Potter_USJ.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Wizarding_World_of_Harry_Potter_USJ.JPG",
+      "author": "Freddo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Freddo"
+    }
+  },
+  "japan27-osaka-castle": {
+    "name": "Castillo de Osaka · torre principal",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/OSAKA_CASTLE.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:OSAKA_CASTLE.jpg",
+      "author": "Tokumeigakarinoaoshima",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Tokumeigakarinoaoshima"
+    }
+  },
+  "japan27-shinsekai": {
+    "name": "Shinsekai y Tsūtenkaku · noche",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinsekai_and_Tsutenkaku_Tower.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Shinsekai_and_Tsutenkaku_Tower.jpg",
+      "author": "Sakai Yayoi",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Sakai Yayoi"
+    }
+  },
+  "japan27-kuromon": {
+    "name": "Mercado Kuromon Ichiba",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4_2024(1).jpg",
+      "author": "ほっきー",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "ほっきー"
+    }
+  },
+  "japan27-den-den-town": {
+    "name": "Nippombashi · Den Den Town",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Den_den_town%2C_osaka.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Den_den_town%2C_osaka.JPG",
+      "author": "Sailko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Sailko"
+    }
+  },
+  "japan27-hachiko": {
+    "name": "Estatua de Hachikō",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Hachiko_statue_at_Shibuya%2C_Tokyo%2C_Japan.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Hachiko_statue_at_Shibuya%2C_Tokyo%2C_Japan.jpg",
+      "author": "Joli Rumi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Joli Rumi"
+    }
   }
 }

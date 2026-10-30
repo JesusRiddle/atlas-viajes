@@ -1,0 +1,2691 @@
+{
+  "id": "japon-2027",
+  "name": "Japón 2027",
+  "status": "draft",
+  "seasonality": {
+    "summary": "Temperaturas orientativas de máximas diurnas habituales en Tokio y Osaka, con condiciones similares pero no idénticas en Kioto; Kawaguchiko es sensiblemente más frío. Abril, mayo, octubre y noviembre suelen ofrecer buen clima para esta ruta. Octubre combina paseos cómodos con menor probabilidad de follaje intenso en Kioto; finales de noviembre favorece los colores otoñales, pero puede aumentar la demanda. La floración, el follaje y el clima varían de un año a otro.",
+    "months": {
+      "10": {
+        "status": "recommended",
+        "description": "22–24 °C. Clima generalmente agradable para caminar por Tokio, Kioto y Osaka, con lluvia ocasional; el color rojo intenso del otoño suele llegar más tarde a estas ciudades.",
+        "icon": "partlyCloudy"
+      },
+      "11": {
+        "status": "recommended",
+        "description": "17–18 °C. Días frescos y buenas posibilidades de follaje otoñal en Kioto hacia finales de mes; las zonas más populares pueden registrar mayor demanda hotelera.",
+        "icon": "partlyCloudy"
+      },
+      "12": {
+        "status": "conditional",
+        "description": "10–12 °C. Invierno fresco, cielos frecuentemente despejados y menor afluencia al principio; noches frías y cierres o aglomeraciones hacia Año Nuevo.",
+        "icon": "snow"
+      },
+      "01": {
+        "status": "conditional",
+        "description": "9–10 °C. Frío seco y días a menudo despejados en Tokio y Osaka; menos visitantes entre semana, salvo Año Nuevo. Kawaguchiko requiere abrigo intenso.",
+        "icon": "snow"
+      },
+      "02": {
+        "status": "conditional",
+        "description": "10–11 °C. Invierno frío y relativamente tranquilo, apropiado para templos y vistas del Fuji si el cielo está despejado; días cortos y frío en Kioto.",
+        "icon": "snow"
+      },
+      "03": {
+        "status": "recommended",
+        "description": "14–15 °C. El clima empieza a suavizarse; a finales de mes puede iniciar la floración del cerezo en Tokio, pero las fechas varían y aumenta la demanda.",
+        "icon": "partlyCloudy"
+      },
+      "04": {
+        "status": "recommended",
+        "description": "19–20 °C. Primavera templada para caminar; la floración del cerezo puede continuar a principios de mes. La Semana Dorada, desde finales de abril, eleva la afluencia.",
+        "icon": "sun"
+      },
+      "05": {
+        "status": "recommended",
+        "description": "23–25 °C. Días largos y temperaturas agradables tras la Semana Dorada; hacia finales de mes aumentan el calor y la humedad.",
+        "icon": "sun"
+      },
+      "06": {
+        "status": "conditional",
+        "description": "26–28 °C. Inicio habitual de la temporada de lluvias en buena parte de la ruta; humedad y chubascos pueden alterar excursiones al Fuji.",
+        "icon": "cloudy"
+      },
+      "07": {
+        "status": "avoid",
+        "description": "29–32 °C. Calor húmedo y lluvias intensas ocasionales; visitar templos, caminar por la ciudad o pasar el día en Universal Studios puede resultar agotador.",
+        "icon": "hot"
+      },
+      "08": {
+        "status": "avoid",
+        "description": "31–34 °C. Calor y humedad muy elevados, posibilidad de tifones y mayor demanda durante Obon; condiciones difíciles para largas jornadas al aire libre.",
+        "icon": "hot"
+      },
+      "09": {
+        "status": "conditional",
+        "description": "27–30 °C. Continúan el calor húmedo y el riesgo de tifones; las lluvias pueden afectar traslados y excursiones, aunque el tiempo suele refrescar al avanzar el mes.",
+        "icon": "hot"
+      }
+    }
+  },
+  "intro": "Japón combina la energía de Tokio con los santuarios de Kioto, los paisajes del monte Fuji y la gastronomía de Osaka. En la capital, el cruce de Shibuya, el templo Sensō-ji y los callejones de Shinjuku muestran distintas facetas de la vida japonesa. Desde Kawaguchiko, el lago ofrece vistas del Fuji cuando el cielo está despejado. El recorrido continúa entre los torii de Fushimi Inari, las calles de Higashiyama y los templos de Kioto. En Nara esperan el Gran Buda y los ciervos de su parque; en Osaka, Dotonbori, los mercados y Universal Studios Japan completan una primera visita dedicada a cultura, naturaleza y entretenimiento.",
+  "introHighlights": [
+    "Tokio",
+    "Kioto",
+    "monte Fuji",
+    "Osaka",
+    "Shibuya",
+    "Sensō-ji",
+    "Shinjuku",
+    "Kawaguchiko",
+    "Fushimi Inari",
+    "Higashiyama",
+    "Nara",
+    "Gran Buda",
+    "Dotonbori",
+    "Universal Studios Japan"
+  ],
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Moderado–activo",
+      "tone": "orange",
+      "text": "Viaje independiente para una persona, con traslados en tren y metro, caminatas prolongadas y descansos entre visitas. Dedicar una jornada a Kawaguchiko y otra a Universal Studios Japan; evitar cambios de alojamiento innecesarios."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Japonés · JPY",
+      "tone": "green",
+      "text": "En Japón se habla japonés; el inglés es útil en estaciones, hoteles y zonas turísticas, pero conviene llevar traductor sin conexión. Moneda: yen (JPY). Usar tarjeta donde la acepten, llevar efectivo para pequeños comercios y rechazar la conversión automática a MXN."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Verificar antes de viajar",
+      "tone": "orange",
+      "text": "Los mexicanos pueden visitar Japón sin visa para turismo de hasta 90 días, sin realizar actividades remuneradas. Llevar pasaporte vigente, datos del alojamiento y prueba de salida. Confirmar requisitos para cualquier escala, especialmente si implica entrar a Estados Unidos. Enchufes: Japón usa tipo A, igual que las clavijas mexicanas de dos patas planas: no necesitas adaptador para ellas. Si llevas una clavija mexicana tipo B (tres patas), busca una toma B con tierra real; no uses adaptadores B a A que eliminen la conexión a tierra. Para cargadores, prefiere modelos de dos patas tipo A. Red eléctrica de 100 V: comprobar que cada cargador indique INPUT 100–240 V, 50/60 Hz; un adaptador no transforma voltaje. Reconfirmar reglas antes del viaje."
+    }
+  ],
+  "bases": [
+    [
+      "Tokio",
+      6
+    ],
+    [
+      "Kioto",
+      5
+    ],
+    [
+      "Osaka",
+      4
+    ],
+    [
+      "Tokio",
+      1
+    ]
+  ],
+  "lodgingSummary": "Escenario provisional de 16 noches: Tokio 6, Kioto 5, Osaka 4 y Tokio 1 solo si el regreso sale de HND/NRT. Si se vuelve desde KIX, cambiar la última noche a Osaka o Kansai. Presupuesto conocido: $28,200 MXN exclusivamente de alojamiento estimado, no costo total del viaje; faltan vuelo internacional, transporte, entradas, comida, impuestos y contingencia. Ninguna estancia está reservada.",
+  "climate": "En octubre, las máximas habituales rondan los 22–24 °C en Tokio, Kioto y Osaka y las mínimas los 14–16 °C. Kawaguchiko puede ser bastante más frío, sobre todo por la mañana; las nubes pueden ocultar el monte Fuji. Son promedios históricos, no un pronóstico para 2027.\n\n*Qué llevar:* Ropa en capas, chamarra ligera impermeable, paraguas compacto y zapatos cómodos. Llevar una capa más abrigadora para Kawaguchiko y revisar la franquicia de equipaje del vuelo elegido.\n\n*Horas de luz:* Durante la segunda mitad de octubre, el amanecer ronda las 5:45–6:10 y el atardecer las 16:50–17:15, según ciudad y fecha (hora local JST). Priorizar Fuji, jardines y templos con luz natural.\n\n*Alternativa de noviembre:* Más frío y menor duración del día, pero mejores posibilidades de follaje otoñal intenso en Kioto hacia finales del mes.",
+  "mapPoints": [
+    {
+      "name": "Tokio (inicio y regreso)",
+      "coords": [
+        35.6895,
+        139.6917
+      ],
+      "kind": "Alojamiento · dos estancias (6 + 1 noches)",
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Kawaguchiko",
+      "coords": [
+        35.517,
+        138.753
+      ],
+      "kind": "Excursión desde Tokio",
+      "base": false,
+      "order": 2
+    },
+    {
+      "name": "Kioto",
+      "coords": [
+        35.02107,
+        135.75385
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "order": 3
+    },
+    {
+      "name": "Nara",
+      "coords": [
+        34.68505,
+        135.80485
+      ],
+      "kind": "Excursión desde Kioto",
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Osaka",
+      "coords": [
+        34.69379,
+        135.50107
+      ],
+      "kind": "Base para dormir",
+      "base": true,
+      "order": 5
+    }
+  ],
+  "experiences": [
+    {
+      "city": "Tokio · tradición",
+      "description": "Visitar Sensō-ji y las tiendas tradicionales de Asakusa, pasear por Ueno y Ameyoko y descubrir sabores populares de Tokio como monjayaki, soba de estilo Edo y fukagawa-meshi."
+    },
+    {
+      "city": "Tokio · vida urbana",
+      "description": "Atravesar el cruce de Shibuya, recorrer Harajuku y el santuario Meiji Jingū, explorar la cultura electrónica de Akihabara y descubrir el ambiente nocturno de Shinjuku y Golden Gai."
+    },
+    {
+      "city": "Kawaguchiko · monte Fuji",
+      "description": "Buscar vistas del monte Fuji desde el lago Kawaguchi y Oishi Park, siempre que lo permitan las nubes, y probar hōtō, el guiso de fideos tradicional de Yamanashi."
+    },
+    {
+      "city": "Kioto · calles y santuarios",
+      "description": "Caminar bajo los torii de Fushimi Inari, recorrer las pendientes tradicionales de Higashiyama hasta Kiyomizu-dera y visitar Gion, un barrio ligado a las artes escénicas tradicionales de Kioto."
+    },
+    {
+      "city": "Kioto · jardines y rituales",
+      "description": "Recorrer el bosque de bambú de Arashiyama, contemplar Kinkaku-ji y visitar el Castillo Nijō. Como experiencia opcional, participar en una ceremonia del té y probar yudōfu, yuba u obanzai en otro momento."
+    },
+    {
+      "city": "Nara · patrimonio vivo",
+      "description": "Pasear entre los ciervos del parque de Nara, admirar el Gran Buda de Tōdai-ji y visitar Kasuga Taisha. Buscar especialidades locales como kakinoha-zushi, miwa sōmen o narazuke."
+    },
+    {
+      "city": "Osaka · sabores y barrios",
+      "description": "Recorrer el canal iluminado de Dotonbori, explorar Shinsekai y el mercado Kuromon, conocer el exterior del Castillo de Osaka y probar takoyaki, okonomiyaki y kushikatsu."
+    },
+    {
+      "city": "Osaka · Universal Studios Japan",
+      "description": "Dedicar una jornada completa a Universal Studios Japan, con especial interés en Super Nintendo World y The Wizarding World of Harry Potter; considerar los accesos por horario y las entradas disponibles."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "tokio-ueno-inicio",
+      "city": "Tokio",
+      "name": "Sotetsu Fresa Inn Ueno-Okachimachi",
+      "address": "1-20-8 Ueno, Taito-ku, Tokyo 110-0005, Japón",
+      "checkIn": "2027-10-15",
+      "checkOut": "2027-10-21",
+      "status": "Candidato · no reservado",
+      "rate": "Presupuesto estimado: $1,700 MXN por noche × 6 noches = $10,200 MXN. Sin cotización para 2027.",
+      "rateConditions": "Habitación privada para una persona; verificar baño propio, desayuno, impuestos, cancelación y disponibilidad en las fechas definitivas.",
+      "notes": "Zona Ueno-Okachimachi, bien comunicada para explorar Tokio.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sotetsu-hotels.com/en/fresa-inn/okachimachi/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sotetsu%20Fresa%20Inn%20Ueno-Okachimachi%201-20-8%20Ueno%2C%20Taito-ku%2C%20Tokyo%20110-0005%2C%20Jap%C3%B3n"
+    },
+    {
+      "id": "kioto-karasuma",
+      "city": "Kioto",
+      "name": "Sotetsu Fresa Inn Kyoto-Shijokarasuma",
+      "address": "160 Dojishacho, Shimogyo-ku, Kyoto 600-8421, Japón",
+      "checkIn": "2027-10-21",
+      "checkOut": "2027-10-26",
+      "status": "Candidato · no reservado",
+      "rate": "Presupuesto estimado: $1,900 MXN por noche × 5 noches = $9,500 MXN. Sin cotización para 2027.",
+      "rateConditions": "Habitación privada para una persona; verificar baño propio, desayuno, cancelación, impuestos y disponibilidad. Kioto cobra impuesto por persona y noche según tarifa del cuarto, posiblemente por separado.",
+      "notes": "Muy bien ubicado junto a Shijō/Karasuma, práctico para visitas urbanas y conexiones con Kyoto Station. Verificar el importe de la tasa local y si se paga aparte.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sotetsu-hotels.com/en/fresa-inn/karasuma/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sotetsu%20Fresa%20Inn%20Kyoto-Shijokarasuma%20160%20Dojishacho%2C%20Shimogyo-ku%2C%20Kyoto%20600-8421%2C%20Jap%C3%B3n"
+    },
+    {
+      "id": "osaka-namba",
+      "city": "Osaka",
+      "name": "Sotetsu Fresa Inn Osaka-Namba",
+      "address": "1-6-5 Nambanaka, Naniwa-ku, Osaka 556-0011, Japón",
+      "checkIn": "2027-10-26",
+      "checkOut": "2027-10-30",
+      "status": "Candidato · no reservado",
+      "rate": "Presupuesto estimado: $1,700 MXN por noche × 4 noches = $6,800 MXN. Sin cotización para 2027.",
+      "rateConditions": "Habitación privada para una persona; verificar baño propio, desayuno, impuestos, cancelación y disponibilidad en las fechas definitivas.",
+      "notes": "Ubicación conveniente junto a Namba para Dotonbori, Universal Studios Japan y aeropuerto KIX. Verificar aislamiento acústico, tamaño de la habitación y opciones de transporte según el horario del vuelo.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sotetsu-hotels.com/en/fresa-inn/namba-ekimae/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sotetsu%20Fresa%20Inn%20Osaka-Namba%201-6-5%20Nambanaka%2C%20Naniwa-ku%2C%20Osaka%20556-0011%2C%20Jap%C3%B3n"
+    },
+    {
+      "id": "tokio-ueno-regreso",
+      "city": "Tokio",
+      "name": "Sotetsu Fresa Inn Ueno-Okachimachi",
+      "address": "1-20-8 Ueno, Taito-ku, Tokyo 110-0005, Japón",
+      "checkIn": "2027-10-30",
+      "checkOut": "2027-10-31",
+      "status": "Candidato · no reservado",
+      "rate": "Presupuesto estimado: $1,700 MXN por noche × 1 noche = $1,700 MXN. Sin cotización para 2027.",
+      "rateConditions": "Habitación privada para una persona; verificar baño propio, desayuno, impuestos, cancelación y disponibilidad en las fechas definitivas.",
+      "notes": "Candidato solo si se utiliza vuelo redondo a Tokio. Comparar con Shinagawa o alrededores de Haneda según terminal y horario de salida; comprobar tiempos puerta a puerta. No reservar hasta decidir el vuelo.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sotetsu-hotels.com/en/fresa-inn/okachimachi/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sotetsu%20Fresa%20Inn%20Ueno-Okachimachi%201-20-8%20Ueno%2C%20Taito-ku%2C%20Tokyo%20110-0005%2C%20Jap%C3%B3n"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "lodging-tokio-ueno-inicio",
+      "category": "lodging",
+      "hotelId": "tokio-ueno-inicio",
+      "concept": "Sotetsu Fresa Inn Ueno-Okachimachi · 6 noches",
+      "date": "2027-10-15",
+      "nights": 6,
+      "cost": {
+        "amount": 10200,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
+    },
+    {
+      "id": "lodging-kioto-karasuma",
+      "category": "lodging",
+      "hotelId": "kioto-karasuma",
+      "concept": "Sotetsu Fresa Inn Kyoto-Shijokarasuma · 5 noches",
+      "date": "2027-10-21",
+      "nights": 5,
+      "cost": {
+        "amount": 9500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Solo alojamiento estimado; impuesto de Kioto excluido. Con la tarifa municipal vigente desde marzo de 2026, por persona y noche: menos de ¥6,000 (≈ $718 MXN), impuesto ¥200 (≈ $24 MXN); de ¥6,000 (≈ $718 MXN) a ¥19,999 (≈ $2,392 MXN), impuesto ¥400 (≈ $48 MXN); de ¥20,000 (≈ $2,392 MXN) a ¥49,999 (≈ $5,980 MXN), impuesto ¥1,000 (≈ $120 MXN). Confirmar tarifa real y legislación de 2027 antes de calcularlo."
+    },
+    {
+      "id": "lodging-osaka-namba",
+      "category": "lodging",
+      "hotelId": "osaka-namba",
+      "concept": "Sotetsu Fresa Inn Osaka-Namba · 4 noches",
+      "date": "2027-10-26",
+      "nights": 4,
+      "cost": {
+        "amount": 6800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
+    },
+    {
+      "id": "lodging-tokio-ueno-regreso",
+      "category": "lodging",
+      "hotelId": "tokio-ueno-regreso",
+      "concept": "Sotetsu Fresa Inn Ueno-Okachimachi · 1 noche",
+      "date": "2027-10-30",
+      "nights": 1,
+      "cost": {
+        "amount": 1700,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones.",
+      "scenario": "tokyo"
+    },
+    {
+      "id": "food-day-2",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Llegada a Tokio · aeropuerto y primera noche en Ueno",
+      "date": "2027-10-15",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Llegada: consumo parcial; vuelo puede incluir alimentos."
+    },
+    {
+      "id": "urban-day-2",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 2",
+      "date": "2027-10-15",
+      "cost": {
+        "amount": 450,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-3",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Asakusa, Sensō-ji y Ueno · primer día completo",
+      "date": "2027-10-16",
+      "cost": {
+        "amount": 680,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-3",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 3",
+      "date": "2027-10-16",
+      "cost": {
+        "amount": 180,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-4",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Meiji Jingū, Harajuku y Shibuya · barrios del oeste",
+      "date": "2027-10-17",
+      "cost": {
+        "amount": 750,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-4",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 4",
+      "date": "2027-10-17",
+      "cost": {
+        "amount": 250,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-5",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Akihabara y Shinjuku · tecnología y vida nocturna",
+      "date": "2027-10-18",
+      "cost": {
+        "amount": 720,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-5",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 5",
+      "date": "2027-10-18",
+      "cost": {
+        "amount": 260,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-6",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Kawaguchiko · lago y vistas del monte Fuji",
+      "date": "2027-10-19",
+      "cost": {
+        "amount": 780,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-6",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 6",
+      "date": "2027-10-19",
+      "cost": {
+        "amount": 430,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-7",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Ginza, Marunouchi y Tokyo Station · día flexible",
+      "date": "2027-10-20",
+      "cost": {
+        "amount": 720,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-7",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 7",
+      "date": "2027-10-20",
+      "cost": {
+        "amount": 180,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-8",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Tokio → Kioto · Shinkansen y primera tarde histórica",
+      "date": "2027-10-21",
+      "cost": {
+        "amount": 770,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-8",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 8",
+      "date": "2027-10-21",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-9",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Jidai Matsuri · desfile de las eras históricas",
+      "date": "2027-10-22",
+      "cost": {
+        "amount": 800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-9",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 9",
+      "date": "2027-10-22",
+      "cost": {
+        "amount": 230,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-10",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Fushimi Inari y Kiyomizu-dera · torii y calles de Higashiyama",
+      "date": "2027-10-23",
+      "cost": {
+        "amount": 740,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-10",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 10",
+      "date": "2027-10-23",
+      "cost": {
+        "amount": 280,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-11",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Arashiyama y Kinkaku-ji · oeste y norte de Kioto",
+      "date": "2027-10-24",
+      "cost": {
+        "amount": 800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-11",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 11",
+      "date": "2027-10-24",
+      "cost": {
+        "amount": 460,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-12",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Nara · Gran Buda, parque de ciervos y Kasuga Taisha",
+      "date": "2027-10-25",
+      "cost": {
+        "amount": 740,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-12",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 12",
+      "date": "2027-10-25",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-13",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Castillo Nijō → Osaka · primera noche en Dotonbori",
+      "date": "2027-10-26",
+      "cost": {
+        "amount": 750,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-13",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 13",
+      "date": "2027-10-26",
+      "cost": {
+        "amount": 380,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-14",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Universal Studios Japan · Nintendo y Harry Potter",
+      "date": "2027-10-27",
+      "cost": {
+        "amount": 850,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-14",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 14",
+      "date": "2027-10-27",
+      "cost": {
+        "amount": 260,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-15",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Osaka · castillo, Shinsekai y gastronomía",
+      "date": "2027-10-28",
+      "cost": {
+        "amount": 800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-15",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 15",
+      "date": "2027-10-28",
+      "cost": {
+        "amount": 300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-16",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Kuromon y Den Den Town · último día completo en Osaka",
+      "date": "2027-10-29",
+      "cost": {
+        "amount": 780,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-16",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 16",
+      "date": "2027-10-29",
+      "cost": {
+        "amount": 270,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-17",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Osaka → Tokio · cierre condicionado al vuelo redondo",
+      "date": "2027-10-30",
+      "cost": {
+        "amount": 750,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-17",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 17",
+      "date": "2027-10-30",
+      "cost": {
+        "amount": 250,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-18",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Japón → CDMX · regreso internacional provisional",
+      "date": "2027-10-31",
+      "cost": {
+        "amount": 300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Salida: consumo parcial; no duplicar comidas del avión."
+    },
+    {
+      "id": "urban-day-18",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 18",
+      "date": "2027-10-31",
+      "cost": {
+        "amount": 400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "rail-tokyo-kyoto",
+      "category": "intercity_transport",
+      "concept": "Shinkansen Tokio → Kioto · escenario redondo Tokio",
+      "date": "2027-10-21",
+      "cost": {
+        "amount": 1900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Un trayecto Tokyo/Shinagawa→Kyoto. Estimación MXN para presupuesto; NO tarifa JR cotizada. Sustituir si se selecciona precio real del módulo de transporte."
+    },
+    {
+      "id": "rail-osaka-tokyo",
+      "category": "intercity_transport",
+      "concept": "Shinkansen Osaka → Tokio · solo escenario vuelo redondo",
+      "date": "2027-10-30",
+      "cost": {
+        "amount": 2000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. SOLO escenario A/C con salida internacional de Tokio; sustituir por transferencia Osaka/KIX si se reserva multidestino B/D. No sumar las dos rutas.",
+      "scenario": "tokyo"
+    },
+    {
+      "id": "fuji-return",
+      "category": "intercity_transport",
+      "concept": "Excursión Tokio ↔ Kawaguchiko · ida y regreso",
+      "date": "2027-10-19",
+      "cost": {
+        "amount": 650,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye ambos sentidos en una sola estimación; no duplicar con transportes del día."
+    },
+    {
+      "id": "nara-return",
+      "category": "intercity_transport",
+      "concept": "Kioto ↔ Nara · ida y regreso",
+      "date": "2027-10-25",
+      "cost": {
+        "amount": 300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Ambos sentidos del trayecto; si se contrata un pase, sustituir sin duplicar."
+    },
+    {
+      "id": "kyoto-osaka-transfer",
+      "category": "intercity_transport",
+      "concept": "Kioto → Osaka · conexión entre hoteles",
+      "date": "2027-10-26",
+      "cost": {
+        "amount": 180,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Billete puntual estimado; conexión final urbana cubierta por la reserva local del día."
+    },
+    {
+      "id": "usj-studio",
+      "category": "admission",
+      "concept": "USJ Studio Pass · 27 de octubre",
+      "date": "2027-10-27",
+      "cost": {
+        "amount": 1400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Supuesto conservador de una entrada adulta para 2027; referencia oficial desde ¥8,400 (≈ $1,005 MXN) en 2026, tarifa dinámica. Express Pass NO incluido."
+    },
+    {
+      "id": "shibuya-sky",
+      "category": "admission",
+      "concept": "SHIBUYA SKY · un mirador (opcional en actividad, presupuestado como reserva)",
+      "date": "2027-10-17",
+      "cost": {
+        "amount": 450,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Solo un mirador. Si se descarta, quitar este importe; no sumar TOKYO SKYTREE. Actividad opcional EXCLUIDA del subtotal principal; añadir solo al elegirla.",
+      "optional": true
+    },
+    {
+      "id": "kyoto-temples",
+      "category": "admission",
+      "concept": "Templos y monumentos Kioto · varios días",
+      "date": "2027-10-23",
+      "cost": {
+        "amount": 950,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Bolsa orientativa para Kiyomizu-dera, Kinkaku-ji, Nijō Ninomaru y posibles jardines. Sin Honmaru opcional."
+    },
+    {
+      "id": "nara-todai",
+      "category": "admission",
+      "concept": "Tōdai-ji · Daibutsuden",
+      "date": "2027-10-25",
+      "cost": {
+        "amount": 120,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Referencia ¥800 (≈ $96 MXN) en 2026; colchón para 2027."
+    },
+    {
+      "id": "osaka-attractions",
+      "category": "admission",
+      "concept": "Osaka · museo o mirador opcional",
+      "date": "2027-10-28",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Una actividad pagada como máximo; exteriores gratuitos por defecto. Actividad opcional EXCLUIDA del subtotal principal; añadir solo al elegirla.",
+      "optional": true
+    },
+    {
+      "id": "kyoto-city-tax",
+      "category": "taxes",
+      "concept": "Impuesto local de alojamiento de Kioto · reserva",
+      "date": "2027-10-21",
+      "cost": {
+        "amount": 250,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva aproximada de cinco noches; recalcular según tarifa real del hotel y tramos tributarios."
+    },
+    {
+      "id": "travel-esim",
+      "category": "other",
+      "concept": "Conectividad móvil / eSIM",
+      "date": "2027-10-15",
+      "cost": {
+        "amount": 500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Estimación de paquete de datos para 16 días; comprobar capacidad del teléfono."
+    },
+    {
+      "id": "baggage-contingency",
+      "category": "other",
+      "concept": "Equipaje, lavandería y gastos ocasionales",
+      "date": "2027-10-28",
+      "cost": {
+        "amount": 1300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Bolsa provisional; aerolínea podría cobrar maleta documentada aparte."
+    },
+    {
+      "id": "reserve-contingency",
+      "category": "contingency",
+      "concept": "Contingencia económica para variación de precios",
+      "date": "2027-10-29",
+      "cost": {
+        "amount": 6500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva para imprevistos y ajustes de tarifas; no equivale a gasto comprometido."
+    },
+    {
+      "id": "lodging-osaka-last-night-kix",
+      "category": "lodging",
+      "concept": "Osaka/Kansai · noche final alternativa al hotel de Tokio",
+      "date": "2027-10-30",
+      "nights": 1,
+      "scenario": "kix",
+      "cost": {
+        "amount": 2000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Solo escenario B/D: sustitución provisional de la última noche en Tokio, no una noche extra ni reserva."
+    },
+    {
+      "id": "osaka-kix-return",
+      "category": "intercity_transport",
+      "concept": "Osaka/Namba → KIX · traslado al aeropuerto",
+      "date": "2027-10-31",
+      "scenario": "kix",
+      "cost": {
+        "amount": 400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Solo escenario B/D: estimación provisional. No duplicar Shinkansen Osaka→Tokio."
+    }
+  ],
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Todas las entradas y experiencias están SIN COMPRAR. Primero decidir vuelos y mantener las fechas de octubre 2027; después asegurar USJ del miércoles 27 de octubre (alternativa viernes 29 solo con disponibilidad), revisar asientos opcionales de Jidai Matsuri del viernes 22 y reservar SHIBUYA SKY del domingo 17 si se elige ese mirador. Los calendarios y tarifas publicados hoy son referencias de 2026: ninguna venta ni disponibilidad de 2027 está confirmada. Aplazamiento por lluvia de Jidai Matsuri puede alterar los días 23–26; no reservar allí actividades inflexibles adicionales. Presupuesto provisional ya incluye Studio Pass base y SHIBUYA SKY, pero no Universal Express Pass."
+  },
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Universal Studios Japan · miércoles 27 de octubre (día 14)",
+          "description": "Jornada completa, sin comprar. Studio Pass de 1 día desde ¥8,400 (≈ $1,005 MXN) como referencia de 2026, variable según calendario. La FAQ oficial indica venta desde tres meses antes para entradas generales, con excepciones por producto: vigilar aproximadamente desde finales de julio de 2027, sin asumir apertura exacta. Para Super Nintendo World registrar el QR en la app y, una vez dentro, solicitar Area Timed Entry/Standby si corresponde; cupo no garantizado. Express Pass opcional y aparte. Respaldo: viernes 29 (día 16) solo si existen boletos y se sustituyen Kuromon/Den Den Town. Idioma de materiales/atracciones y políticas de cambio por confirmar.",
+          "links": [
+            {
+              "label": "USJ · información oficial y entradas",
+              "url": "https://www.usj.co.jp/web/en/us/tickets"
+            },
+            {
+              "label": "USJ · app y acceso a Nintendo",
+              "url": "https://www.usj.co.jp/web/en/us/enjoy/numbered-ticket/app/timed-entry-ticket"
+            },
+            {
+              "label": "USJ · FAQ de cuándo salen los boletos (japonés)",
+              "url": "https://s.usj.co.jp/faq/ticket-webticket-store/00082.html"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Jidai Matsuri · viernes 22 de octubre (día 9), asientos opcionales",
+          "description": "La procesión histórica es la razón para estar en Kioto el 22 de octubre de 2027, condicionada al programa de ese año. Verificar anuncio oficial; en 2026 hubo preventa por sorteo en julio y venta general desde el 8 de septiembre, por lo que NO debe darse septiembre como única apertura de 2027. Reservar asiento solo si se desea comodidad y vista específica; hay observación gratuita desde espacios públicos sin lugar garantizado. Tipos de asiento, idioma de comentarios, ubicación, acceso y precios para 2027 por confirmar. Si llueve puede trasladarse al 23: el plan requiere reorganización y podría descartarse Nijō. No comprado.",
+          "links": [
+            {
+              "label": "Kioto · venta oficial y mapa (referencia 2026)",
+              "url": "https://kyoto.travel/en/travel-inspiration/jidai-matsuri-seats/"
+            },
+            {
+              "label": "Kioto · preguntas oficiales sobre asientos",
+              "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=2034"
+            }
+          ]
+        },
+        {
+          "title": "SHIBUYA SKY · domingo 17 de octubre (día 4), opcional",
+          "description": "Elegir solo un mirador para Tokio; SHIBUYA SKY es primera opción si interesa la azotea al atardecer. La venta oficial actual contempla fechas hasta dos semanas por adelantado: revisar aproximadamente el 3 de octubre de 2027 para visitar el día 17, sin garantizar apertura ni disponibilidad. Referencia web 2026: entrada antes de las 15:00 ¥2,700 (≈ $323 MXN), desde las 15:00 ¥3,400 (≈ $407 MXN). Llegar a la franja asignada; la azotea puede cerrar por viento o lluvia y no se permite llevar mochilas a la zona exterior. Alternativa: TOKYO SKYTREE interior u observatorio gratuito de Tokio; evitar pagar ambos por anticipado. No comprado.",
+          "links": [
+            {
+              "label": "SHIBUYA SKY · boletos oficiales",
+              "url": "https://shibuya-scramble-square.com/sky/ticket"
+            },
+            {
+              "label": "TOKYO SKYTREE · alternativa oficial",
+              "url": "https://www.tokyo-skytree.jp/en/ticket/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Universal Express Pass · solo si compensa (día 14)",
+          "description": "Adicional al Studio Pass, sin comprar. Puede ofrecer accesos a Nintendo y franjas para atracciones determinadas según paquete, pero no elimina todas las filas; verificar combinaciones, hora, disponibilidad y precio concreto antes de decidir. Si el costo resulta excesivo, utilizar Studio Pass y la app oficial con posibilidad de no obtener cupo en Nintendo.",
+          "links": [
+            {
+              "label": "USJ · Express Pass oficial",
+              "url": "https://www.usj.co.jp/web/en/us/tickets/express-pass"
+            }
+          ]
+        },
+        {
+          "title": "Castillo Nijō · Palacio Honmaru opcional (martes 26, día 13)",
+          "description": "El recorrido general de Nijō y Palacio Ninomaru se conserva para la mañana previa a Osaka. Honmaru es un agregado aparte con reserva específica, por lo que no debe contratarse automáticamente: podría retrasar salida de Kioto y es la primera actividad sacrificable si Jidai Matsuri se reprograma. Horarios, modalidad exacta, disponibilidad y tarifas de 2027 por verificar. No comprado.",
+          "links": [
+            {
+              "label": "Nijō · página oficial de precios",
+              "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/fee/?lang=en"
+            }
+          ]
+        },
+        {
+          "title": "Ceremonia del té en Kioto · solo si sobra tiempo",
+          "description": "Opcional y sin fecha bloqueada. Buscar sesión pequeña de aproximadamente 40–90 minutos en inglés con reserva individual permitida; encajarla únicamente si no perjudica Fushimi Inari, Kiyomizu-dera, Arashiyama o Jidai Matsuri. Verificar precio, idioma y política de cancelación según proveedor; no comprado.",
+          "links": [
+            {
+              "label": "Kioto · actividades turísticas oficiales",
+              "url": "https://kyoto.travel/en/see-and-do/"
+            }
+          ]
+        },
+        {
+          "title": "Kawaguchiko · martes 19 de octubre (día 6), según clima",
+          "description": "Excursión al monte Fuji flexible, sin comprar. Autobuses y servicios de tren pueden requerir asiento reservado, pero el objetivo es elegir el día con buena visibilidad; mantener el miércoles 20 como posible intercambio solo si hay disponibilidad de cambio o boletos nuevos. Nara del lunes 25 mantiene accesos turísticos habituales sujetos a horario, sin reserva anticipada obligatoria para el plan básico.",
+          "links": [
+            {
+              "label": "JNTO · zona de los cinco lagos del Fuji",
+              "url": "https://www.japan.travel/en/spot/1325/"
+            },
+            {
+              "label": "Tōdai-ji · horarios y entradas",
+              "url": "https://www.todaiji.or.jp/en/"
+            }
+          ]
+        }
+      ]
+    ]
+  ],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Vuelos internacionales · referencias comparadas de septiembre 2027",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "American Airlines + Japan Airlines · redondo MEX–Tokio",
+          "status": "planning",
+          "selectedFare": "reference-september",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "Dallas/Fort Worth (DFW)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "American Airlines · referencia septiembre 2027"
+                },
+                {
+                  "from": "Dallas/Fort Worth (DFW)",
+                  "to": "Tokio (HND/NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Japan Airlines / American · terminal pendiente"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Tokio (HND/NRT)",
+                  "to": "Dallas/Fort Worth (DFW)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "American / JAL · referencia septiembre 2027"
+                },
+                {
+                  "from": "Dallas/Fort Worth (DFW)",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "American Airlines · referencia septiembre 2027"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference-september",
+              "name": "Referencia septiembre 2027 · NO cotización octubre",
+              "price": {
+                "amount": 28417,
+                "currency": "MXN"
+              },
+              "changes": "No verificadas para octubre de 2027",
+              "refunds": "No verificados; revisar tarifa y equipaje"
+            }
+          ],
+          "notes": "Cotización compartida para SEPTIEMBRE 2027, no para las fechas provisionales 14–31 de octubre. Redondo MEX↔Tokio por $28,417 MXN. Ruta con conexión en Dallas/Fort Worth (DFW) y combinación American/JAL; se estudiaron regresos desde Haneda de aprox. 16 h 15 min o 17 h 05 min (según variante), uno con salida de referencia alrededor de 16:30 y conexión de 2 h 38 min en DFW. Verificar de nuevo operador, itinerario exacto, tarifa y maleta al abrir octubre. Preferencia provisional por esta opción si el precio total, incluido regreso Osaka→Tokio, resulta competitivo."
+        },
+        {
+          "id": "B",
+          "provider": "Multidestino MEX→Tokio / KIX→MEX · vía HND y DFW",
+          "status": "planning",
+          "selectedFare": "reference-september",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "Tokio (HND/NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Conexión y aerolínea exactas pendientes de validar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Osaka Kansai (KIX)",
+                  "to": "Tokio Haneda (HND)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Conexión doméstica · referencia septiembre 2027"
+                },
+                {
+                  "from": "Tokio Haneda (HND)",
+                  "to": "Dallas/Fort Worth (DFW)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Operador por confirmar"
+                },
+                {
+                  "from": "Dallas/Fort Worth (DFW)",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Operador por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference-september",
+              "name": "Referencia septiembre 2027 · NO cotización octubre",
+              "price": {
+                "amount": 33906,
+                "currency": "MXN"
+              },
+              "changes": "No verificadas para octubre de 2027",
+              "refunds": "No verificados; revisar tarifa y equipaje"
+            }
+          ],
+          "notes": "Cotización compartida para SEPTIEMBRE 2027: $33,906 MXN. Regreso de referencia KIX→HND→DFW→MEX, salida de KIX alrededor de 06:40, duración aprox. 20 h 20 min. Cuesta $5,489 MXN más que el redondo de referencia; ahorra el Shinkansen Osaka→Tokio pero implica salida muy temprana, conexiones internacionales y posiblemente convenga dormir cerca de KIX. Redistribuir la noche final de Tokio a Osaka/Kansai si se elige."
+        },
+        {
+          "id": "C",
+          "provider": "Alternativa aérea económica · conexiones largas vía LAX",
+          "status": "planning",
+          "selectedFare": "reference-september",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "Tokio (HND/NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Recorrido exacto pendiente de validar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Tokio (HND/NRT)",
+                  "to": "Los Ángeles (LAX)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Referencia septiembre 2027"
+                },
+                {
+                  "from": "Los Ángeles (LAX)",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Conexión larga · referencia septiembre 2027"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference-september",
+              "name": "Referencia septiembre 2027 · NO cotización octubre",
+              "price": {
+                "amount": 28498,
+                "currency": "MXN"
+              },
+              "changes": "Por verificar",
+              "refunds": "Por verificar"
+            }
+          ],
+          "notes": "Opción compartida de septiembre por $28,498 MXN, con referencia de escala en Los Ángeles (LAX) de 20 h 41 min y regreso total de alrededor de 35 h 15 min. Apenas $81 MXN más que el redondo de $28,417, pero mucho menos atractiva por duración. Aerolínea, trayecto preciso y equipaje pendientes de verificar."
+        },
+        {
+          "id": "D",
+          "provider": "Multidestino alternativo · conexión vía HND/LAX",
+          "status": "planning",
+          "selectedFare": "reference-september",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "Tokio (HND/NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Recorrido exacto pendiente de validar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Osaka Kansai (KIX)",
+                  "to": "Tokio Haneda (HND)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Referencia septiembre 2027"
+                },
+                {
+                  "from": "Tokio Haneda (HND)",
+                  "to": "Los Ángeles (LAX)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Referencia septiembre 2027"
+                },
+                {
+                  "from": "Los Ángeles (LAX)",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Operador pendiente de validar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference-september",
+              "name": "Referencia septiembre 2027 · NO cotización octubre",
+              "price": {
+                "amount": 35536,
+                "currency": "MXN"
+              },
+              "changes": "Por verificar",
+              "refunds": "Por verificar"
+            }
+          ],
+          "notes": "Alternativa multidestino compartida de septiembre de 2027: $35,536 MXN y regreso aproximado de 22 h 20 min vía HND/LAX. No mejora el precio de la opción multidestino vía DFW de $33,906 y mantiene escalas. Confirmar operador, maleta y itinerario completo antes de cualquier compra."
+        }
+      ],
+      "links": [
+        {
+          "label": "Comparar vuelos y equipaje",
+          "url": "https://www.google.com/travel/flights"
+        }
+      ],
+      "ticketGuide": "Las cuatro tarifas son cotizaciones de SEPTIEMBRE 2027 aportadas por el viajero, NO disponibilidad ni precio confirmado para 14–31 de octubre. Los segmentos de escala documentan las rutas descritas, pero horas, terminales y operadores exactos pueden no estar completos; no interpretarlos como billetes emitidos. Los vuelos, alojamiento y horarios de llegada deben reconciliarse antes de reservar. Redondo A $28,417 MXN frente a multidestino B $33,906 MXN: diferencia de $5,489 MXN, aún por contrastar con el Shinkansen Osaka→Tokio y transportes. C $28,498 MXN implica una conexión larga; D $35,536 MXN. Escoger una sola alternativa al obtener tarifas reales para octubre y confirmar equipaje, tránsito y política de cancelación."
+    },
+    {
+      "id": "airport-tokyo",
+      "type": "train",
+      "title": "Llegada · aeropuerto de Tokio → Ueno-Okachimachi",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Keisei Skyliner · si llega a NRT",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Narita Airport (NRT)",
+                  "to": "Keisei Ueno",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Keisei Skyliner · si llega a NRT"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Conexión ferroviaria directa hacia Ueno/Nippori; caminar o usar transporte local al hotel. Prever migración, equipaje y terminal."
+        },
+        {
+          "id": "B",
+          "provider": "Keikyu / Tokyo Monorail · si llega a HND",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Haneda Airport (HND)",
+                  "to": "Ueno-Okachimachi",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Keikyu / Tokyo Monorail · si llega a HND"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Keikyu hacia Shinagawa/Asakusa o monorraíl hacia Hamamatsuchō, seguido de JR/metro. Conexiones y tiempo dependen de terminal y horario."
+        }
+      ],
+      "links": [
+        {
+          "label": "Narita · trenes oficiales",
+          "url": "https://www.narita-airport.jp/en/access/train/"
+        },
+        {
+          "label": "Haneda · acceso",
+          "url": "https://tokyo-haneda.com/en/access/train/index.html"
+        }
+      ],
+      "ticketGuide": "Comprar según aeropuerto y hora real de aterrizaje; evitar billete de horario rígido sin margen para migración."
+    },
+    {
+      "id": "fuji-daytrip",
+      "type": "bus",
+      "title": "Tokio ↔ Kawaguchiko · excursión al Fuji",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Fujikyū / Keio · autobús directo",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Busta Shinjuku",
+                  "to": "Kawaguchiko Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Fujikyū / Keio · autobús directo"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kawaguchiko Station",
+                  "to": "Busta Shinjuku",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Fujikyū / Keio · autobús directo"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Referencia del operador en octubre de 2026: autobús directo Busta Shinjuku↔Kawaguchiko, aprox. 1 h 45 min por sentido, ¥2,000 (≈ $239 MXN) en línea o ¥2,200 (≈ $263 MXN) en taquilla por sentido; reservar los dos tramos. El tráfico y la disponibilidad pueden variar. Desde Ueno se necesita traslado previo a Shinjuku; después, transporte local hasta Oishi Park."
+        },
+        {
+          "id": "B",
+          "provider": "JR + Fujikyū Railway / Fuji Excursion",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Shinjuku",
+                  "to": "Kawaguchiko Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR + Fujikyū Railway / Fuji Excursion"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kawaguchiko Station",
+                  "to": "Shinjuku",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR + Fujikyū Railway / Fuji Excursion"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Alternativa ferroviaria para evitar tráfico; algunos servicios Fuji Excursion directos y otros con cambio en Ōtsuki. Consultar tren, reserva y tarifa al abrir ventas."
+        }
+      ],
+      "links": [
+        {
+          "label": "Autobús oficial · tarifas y reserva",
+          "url": "https://bus.fujikyu.co.jp/en/highway/fujisan/shinjuku-kawaguchiko/"
+        },
+        {
+          "label": "JR East · trenes",
+          "url": "https://www.jreast.co.jp/multi/en/"
+        }
+      ],
+      "ticketGuide": "Reservar tanto ida como regreso desde Shinjuku/Kawaguchiko. El autobús suele venderse desde un mes antes; actualmente la tarifa web publicada comienza en ¥2,000 (≈ $239 MXN) por sentido, si aplica a ambas salidas, sin garantía para 2027. Desde el hotel en Ueno, sumar el traslado urbano a Shinjuku y las conexiones locales entre Kawaguchiko Station, el lago y Oishi Park. No confundir flexibilidad meteorológica con disponibilidad garantizada de asientos."
+    },
+    {
+      "id": "tokyo-kyoto",
+      "type": "train",
+      "title": "Tokio → Kioto · Shinkansen Tōkaidō",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "JR Central · Nozomi",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Tokyo o Shinagawa",
+                  "to": "Kyoto",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR Central · Nozomi"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Nozomi tarda aproximadamente 2 h 10–20 min entre Tokyo/Shinagawa y Kyoto, sin incluir Ueno→estación de salida ni Kyoto Station→Shijō/Karasuma. Revisar reserva para equipaje sobredimensionado y la tarifa al abrir ventas."
+        },
+        {
+          "id": "B",
+          "provider": "JR Central · Hikari",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Tokyo o Shinagawa",
+                  "to": "Kyoto",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR Central · Hikari"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Servicio más lento que Nozomi; comparar tarifa, frecuencia y conexiones. No asumir ahorro significativo."
+        }
+      ],
+      "links": [
+        {
+          "label": "SmartEX · compra oficial",
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "label": "JR Central · información",
+          "url": "https://global.jr-central.co.jp/en/"
+        }
+      ],
+      "ticketGuide": "Comprar el billete individual al fijar fecha; grandes maletas con dimensiones acumuladas superiores a 160 cm requieren reglas específicas de reserva de espacio."
+    },
+    {
+      "id": "kyoto-nara",
+      "type": "train",
+      "title": "Kioto ↔ Nara · excursión",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Kintetsu Railway",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Kyoto Station",
+                  "to": "Kintetsu-Nara Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Kintetsu Railway"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kintetsu-Nara Station",
+                  "to": "Kyoto Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Kintetsu Railway"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "La estación Kintetsu-Nara queda más cerca a pie del parque y templos; comparar tren expreso regular con Limited Express (suplemento adicional)."
+        },
+        {
+          "id": "B",
+          "provider": "JR West · Miyakoji Rapid",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Kyoto Station",
+                  "to": "JR Nara Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR West · Miyakoji Rapid"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "JR Nara Station",
+                  "to": "Kyoto Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR West · Miyakoji Rapid"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Alternativa JR sin reserva habitual en tren rápido; la estación JR Nara queda más retirada de los templos."
+        }
+      ],
+      "links": [
+        {
+          "label": "Kintetsu · información oficial",
+          "url": "https://www.kintetsu.co.jp/foreign/english/"
+        },
+        {
+          "label": "JR West · información",
+          "url": "https://www.westjr.co.jp/global/en/"
+        }
+      ],
+      "ticketGuide": "Excursión de ida y vuelta sin cambiar alojamiento: desde Shijō/Karasuma llegar primero a Kyoto Station, luego elegir Kintetsu o JR. Kintetsu-Nara está más cerca del parque; comprobar el tren de retorno y el suplemento si se escoge Limited Express."
+    },
+    {
+      "id": "kyoto-osaka",
+      "type": "train",
+      "title": "Kioto → Osaka · cambio de alojamiento",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "JR West · Special Rapid + metro",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Kyoto Station",
+                  "to": "Osaka/Umeda → Namba",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR West · Special Rapid + metro"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Referencia 2026: JR Special Rapid Kyoto–Osaka ~30 min; sumar metro a Namba y traslados al hotel."
+        },
+        {
+          "id": "B",
+          "provider": "Hankyu Railway + metro",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Karasuma Station",
+                  "to": "Osaka-Umeda → Namba",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Hankyu Railway + metro"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Desde el hotel junto a Karasuma, la línea Hankyu permite llegar a Osaka-Umeda sin desplazarse antes a Kyoto Station; conectar con la línea Midosuji a Namba. Comparar esta alternativa puerta a puerta con JR según equipaje, congestión y hora."
+        }
+      ],
+      "links": [
+        {
+          "label": "JR West · rutas",
+          "url": "https://www.westjr.co.jp/global/en/"
+        },
+        {
+          "label": "Hankyu Railway · rutas",
+          "url": "https://www.hankyu.co.jp/global/en/"
+        }
+      ],
+      "ticketGuide": "El hotel de Kioto está junto a Shijō/Karasuma y el de Osaka junto a Namba: comparar Hankyu Karasuma→Osaka-Umeda + metro a Namba frente a JR Kyoto→Osaka + metro. No se necesita shinkansen; proteger tiempo con maleta y evitar hora pico."
+    },
+    {
+      "id": "osaka-usj",
+      "type": "train",
+      "title": "Osaka-Namba ↔ Universal Studios Japan",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Hanshin / JR West · conexiones urbanas",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Osaka-Namba",
+                  "to": "Universal City",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Hanshin / JR West · conexiones urbanas"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Universal City",
+                  "to": "Osaka-Namba",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Hanshin / JR West · conexiones urbanas"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Usar tren urbano con uno o más cambios según servicio; comprobar hora de apertura del parque y reservar margen de llegada. El Studio Pass no incluye tren."
+        }
+      ],
+      "links": [
+        {
+          "label": "Acceso oficial a USJ",
+          "url": "https://www.usj.co.jp/web/en/us/access"
+        },
+        {
+          "label": "JR West",
+          "url": "https://www.westjr.co.jp/global/en/"
+        }
+      ],
+      "ticketGuide": "Ida y regreso entre Osaka-Namba y Universal City; comprobar transbordos y último servicio. Salir con margen para los controles del parque. El Studio Pass no incluye transporte."
+    },
+    {
+      "id": "osaka-tokyo-or-kix",
+      "type": "train",
+      "title": "Salida de Osaka · Tokio o aeropuerto Kansai",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "JR Central · Nozomi a Tokio",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Shin-Osaka",
+                  "to": "Tokyo o Shinagawa",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR Central · Nozomi a Tokio"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Solo si el regreso internacional sale de Tokio. Aprox. 2 h 30–40 min en shinkansen, más metro Namba–Shin-Osaka y hotel final."
+        },
+        {
+          "id": "B",
+          "provider": "Nankai Railway · rumbo a KIX",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Nankai Namba",
+                  "to": "Kansai International Airport (KIX)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Nankai Railway · rumbo a KIX"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Solo para regreso internacional desde KIX. Nankai desde Namba hasta Kansai Airport; elegir Rapi:t o Airport Express según hora, precio, equipaje y terminal. La salida de Osaka podría adelantarse y obligaría a modificar la última noche según el vuelo."
+        }
+      ],
+      "links": [
+        {
+          "label": "SmartEX · shinkansen",
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "label": "Nankai · aeropuerto Kansai",
+          "url": "https://www.nankai.co.jp/en_railway/"
+        }
+      ],
+      "ticketGuide": "Elegir una sola alternativa cuando estén cotizados los vuelos; no sumar ambos traslados al presupuesto. El último hotel de Tokio solo corresponde al escenario A."
+    },
+    {
+      "id": "tokyo-airport-return",
+      "type": "train",
+      "title": "Tokio → aeropuerto · salida internacional",
+      "selectedOption": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Keikyu / Tokyo Monorail · si sale de HND",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Ueno-Okachimachi",
+                  "to": "Haneda Airport (HND)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Keikyu / Tokyo Monorail · si sale de HND"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "La ruta depende de terminal y hora. Comparar también hotel en Shinagawa o cerca de Haneda para salida temprana."
+        },
+        {
+          "id": "B",
+          "provider": "Keisei Skyliner · si sale de NRT",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Keisei Ueno",
+                  "to": "Narita Airport (NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Keisei Skyliner · si sale de NRT"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Pendiente de cotización para 2027",
+              "price": null,
+              "changes": "Según tarifa adquirida",
+              "refunds": "Según tarifa adquirida"
+            }
+          ],
+          "notes": "Considerar traslado desde hotel y llegada al aeropuerto con margen internacional suficiente."
+        }
+      ],
+      "links": [
+        {
+          "label": "Haneda · transporte",
+          "url": "https://tokyo-haneda.com/en/access/train/index.html"
+        },
+        {
+          "label": "Narita · transporte",
+          "url": "https://www.narita-airport.jp/en/access/train/"
+        }
+      ],
+      "ticketGuide": "Solo aplica al escenario con regreso desde Tokio; si se regresa desde KIX, no presupuestar este tramo."
+    }
+  ],
+  "ticketNotes": [
+    {
+      "title": "JR Pass nacional · comparar antes de comprar",
+      "note": "Como referencia, el pase nacional de 7 días cuesta ¥50,000 (≈ $5,980 MXN) por compra online (2026); el itinerario solo contempla dos trayectos largos en shinkansen si se regresa desde Tokio. Priorizar billetes individuales y sumar primero los transportes elegibles: el pase no cubre de forma estándar el Nozomi sin suplemento especial."
+    },
+    {
+      "title": "Shinkansen · billetes y equipaje",
+      "note": "Reservar en SmartEX o canales JR oficiales cuando abran ventas. Elegir Tokyo/Shinagawa → Kyoto y, solo si corresponde, Shin-Osaka → Tokyo/Shinagawa. Comprobar normas de equipaje sobredimensionado y cancelación de la tarifa concreta."
+    },
+    {
+      "title": "Kawaguchiko · autobús frente a tren",
+      "note": "El autobús directo de Shinjuku es práctico, pero el tiempo depende del tráfico y los asientos son reservados. El tren Fuji Excursion puede evitar congestiones; consultar sus horarios y costo. No comprar transporte rígido antes de decidir el día según el clima."
+    },
+    {
+      "title": "IC card · metro y trenes urbanos",
+      "note": "Usar Suica, PASMO o ICOCA donde sean aceptadas. No sustituyen reservas del shinkansen ni todos los servicios exprés; confirmar compatibilidad y saldo. Revisar disponibilidad de tarjetas físicas o digitales y medios de recarga."
+    },
+    {
+      "title": "Billetes independientes y no duplicación",
+      "note": "La excursión a Nara se paga ida y vuelta; el transporte a Universal no está incluido en Studio Pass. No sumar simultáneamente regreso Osaka→Tokio y Osaka→KIX, ni pagar alternativas de pase y billete individual para el mismo tramo."
+    }
+  ],
+  "local": "La ruta se organiza desde los alojamientos, no solo entre estaciones: Tokio (Ueno-Okachimachi) exige sumar conexión a Shinjuku para Kawaguchiko y a Tokyo/Shinagawa para el shinkansen; Kioto (Shijō/Karasuma) facilita Hankyu hacia Osaka, mientras Nara requiere conectar con Kyoto Station. En Osaka, Namba permite caminar a Dotonbori y tomar tren hacia Universal City. Usar tarjeta IC para transporte urbano compatible, sin confundirla con reservas de trenes rápidos. Fechas, horarios y costos siguen sin confirmar para 2027.",
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-10-14",
+      "title": "CDMX → Japón · salida internacional (escenario)",
+      "base": "En vuelo",
+      "am": "1. Revisar pasaporte vigente, comprobante de regreso, alojamiento candidato y requisitos de entrada a Japón; para turismo de menos de 90 días, los mexicanos están exentos de visa, sujeto a verificación previa.\n2. Comprobar si el itinerario aéreo requiere tránsito o entrada en un tercer país y preparar documentos, medicamentos y cargadores en el equipaje de mano.",
+      "pm": "1. Hacer check-in en línea cuando se habilite y comprobar terminal, documentación de equipaje y límite de peso de la tarifa finalmente elegida.\n2. Salir hacia el AICM calculando tráfico y el margen indicado por la aerolínea; tomar como objetivo orientativo al menos 3 horas antes de un vuelo internacional, nunca como horario confirmado.",
+      "night": "1. Pasar documentación, seguridad y embarque según el vuelo finalmente comprado.\n2. Descansar a bordo o durante la conexión. La salida nocturna y llegada a Tokio el 15 de octubre son hipótesis, no itinerario aéreo contratado.",
+      "mobility": "• *Casa → AICM:* Elegir transporte según terminal y tráfico; no existe hora de salida confirmada.\n• *Vuelo internacional:* Comparar redondo a Tokio y multidestino con regreso desde KIX, equipaje, escalas y duración puerta a puerta.",
+      "note": "• *Estado:* Sin vuelo comprado ni horario asignado; no estimar una llegada que todavía no conocemos.\n• *Documentación:* Confirmar visa/exención y requisitos del país de conexión al emitir el boleto.\n• *Gastos:* Vuelo pendiente de cotización; alimentos y traslado al AICM dependen de la hora y del medio elegido.",
+      "transportRefs": [
+        "flight-international"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Aeropuerto Internacional de la Ciudad de México · MEX",
+        "Vuelo a Tokio · conexión y horarios pendientes"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Embajada de Japón en México · exención de visa",
+          "url": "https://www.mx.emb-japan.go.jp/itprtop_es/tramite_solicitud_visa.html"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "date": "2027-10-15",
+      "title": "Llegada a Tokio · aeropuerto y primera noche en Ueno",
+      "base": "Tokio",
+      "am": "1. Continuar el vuelo o conexión según la hora real de llegada a Japón; ajustar los bloques del día si se aterriza por la tarde o noche.\n2. Pasar inmigración y aduanas, recoger equipaje si aplica y obtener conexión de datos y efectivo solo si hace falta.",
+      "pm": "1. Según la hora de aterrizaje, completar migración, aduanas y equipaje; prever demoras antes de comprar el tren.\n2. Desde Narita, Skyliner directo a Keisei-Ueno (referencia publicada: alrededor de 41 min); desde Haneda, tren con conexión a Ueno. Continuar caminando al hotel o usar transporte local según equipaje.",
+      "night": "1. Comer y dar un paseo corto por Ameyoko/Ueno únicamente si todavía hay tiempo y energía.\n2. Descansar para comenzar Asakusa sin prisas al día siguiente.",
+      "mobility": "• *Narita → Ueno:* Skyliner directo a Keisei-Ueno; tarifa estándar y promociones dependen del canal, comprobar precio al comprar. El viaje en tren ronda 41 minutos, sin contar migración ni esperas.\n• *Haneda → Ueno:* Keikyu o monorraíl y tren JR/metro; verificar transbordos y terminal antes de salir.\n• *Último tramo:* Keisei-Ueno y la estación JR Ueno no son la misma; comprobar camino a pie hasta el hotel en Ueno-Okachimachi.",
+      "note": "• *Hotel:* Sotetsu Fresa Inn Ueno-Okachimachi, candidato no reservado; consultar entrada tardía y resguardo de equipaje.\n• *Plan B:* Si se llega muy tarde, traslado y descanso únicamente; mover Ameyoko al día 3.\n• *Gasto orientativo:* Tarifa de NRT según canal y fecha de compra; HND y comidas pendientes de ruta y tarifa, sin contabilizar hotel dos veces.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [
+        "flight-international",
+        "airport-tokyo"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Haneda (HND) o Narita (NRT) · por confirmar",
+        "Keisei-Ueno / Ueno-Okachimachi",
+        "Sotetsu Fresa Inn Ueno-Okachimachi · candidato"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Keisei · tarifa oficial Skyliner",
+          "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/us/traffic/skyliner_fares.php"
+        },
+        {
+          "label": "Haneda · acceso ferroviario",
+          "url": "https://www.tokyo-haneda.com/en/access/train/index.html"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "date": "2027-10-16",
+      "title": "Asakusa, Sensō-ji y Ueno · primer día completo",
+      "base": "Tokio",
+      "am": "1. Salir del hotel sin madrugar en exceso si hay jet lag; desde Ueno usar la línea Ginza a Asakusa (aprox. 5 minutos de tren, sin contar caminatas).\n2. Recorrer Sensō-ji, la puerta Kaminarimon, Nakamise y las callejuelas de Asakusa; dedicar unas 2–3 horas a templo, fotografías y tiendas.",
+      "pm": "1. Almorzar en Asakusa y regresar por la línea Ginza a Ueno.\n2. Priorizar un paseo por el parque de Ueno; si se elige el Museo Nacional de Tokio, dedicarle unas 2 horas y acortar el parque o Ameyoko.",
+      "night": "1. Recorrer Ameyoko entre Ueno y Okachimachi, con margen para puestos que cierran temprano.\n2. Cenar por la zona y volver caminando al alojamiento; dejar la noche libre para recuperarse del viaje.",
+      "mobility": "• *Ueno → Asakusa:* Línea Ginza de Tokyo Metro, unos 5 minutos; ¥178 (≈ $21 MXN) con IC o ¥180 (≈ $22 MXN) en billete ordinario según tarifa de referencia 2026.\n• *Asakusa → Ueno:* Volver por línea Ginza; parque, Ameyoko y hotel quedan agrupados para reducir traslados.\n• *Paseos:* Contar caminatas en Nakamise, parque y mercado; el museo es una parada opcional, no un requisito.",
+      "note": "• *Ritmo:* Primera jornada completa adaptable al jet lag; no sumar Shibuya, Shinjuku ni otros barrios alejados.\n• *Museo opcional:* El Museo Nacional de Tokio suele abrir desde las 9:30 y cerrar los lunes; confirmar fecha de 2027 antes de pagar.\n• *Gasto orientativo:* Metro de ida y vuelta desde ¥356 (≈ $43 MXN) con IC; museo opcional ¥1,000 (≈ $120 MXN) más comida y compras variables. El museo sustituye tiempo de paseo, no se añade automáticamente.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [],
+      "places": [
+        "japan27-sensoji",
+        "japan27-ueno-park",
+        "japan27-ameyoko"
+      ],
+      "headerPlaces": [
+        "Sensō-ji · Asakusa",
+        "Parque de Ueno",
+        "Ameyoko · Okachimachi"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Tokyo Metro · tarifas y tiempos",
+          "url": "https://www.tokyometro.jp/lang_en/info/files/20260414_en.pdf"
+        },
+        {
+          "label": "Museo Nacional de Tokio · horarios",
+          "url": "https://www.tnm.jp/modules/r_free_page/?id=161&lang=en"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "date": "2027-10-17",
+      "title": "Meiji Jingū, Harajuku y Shibuya · barrios del oeste",
+      "base": "Tokio",
+      "am": "1. Salir de Ueno-Okachimachi hacia Harajuku y entrar temprano al santuario Meiji Jingū; dedicar alrededor de 60–90 minutos a los senderos y el recinto.\n2. Recorrer Takeshita-dōri y después Omotesandō, eligiendo tiendas y pausas según el flujo dominical.",
+      "pm": "1. Caminar o tomar tren una estación hasta Shibuya. Visitar la estatua de Hachikō junto a la salida Hachikō de la estación (parada breve para verla y fotografiarla), recorrer el cruce peatonal de Shibuya y pasear por las calles del barrio, con tiempo para comer.\n2. Si interesa, reservar SHIBUYA SKY para la tarde; prever aproximadamente 60–90 minutos y respetar la franja de entrada.",
+      "night": "1. Pasear por Shibuya iluminado y cenar sin cambiar de barrio.\n2. Volver en JR o metro hasta Ueno-Okachimachi; dejar margen para descansar.",
+      "mobility": "• *Hotel → Harajuku:* Desde Okachimachi, línea JR Yamanote hacia Harajuku; sumar caminata al santuario.\n• *Harajuku → Shibuya:* Aproximadamente una estación en JR o paseo a pie por el eje Omotesandō y Cat Street según cansancio.\n• *Regreso:* Tren desde Shibuya hasta Okachimachi; confirmar última salida si se prolonga la cena.",
+      "note": "• *Domingo:* Meiji Jingū temprano ayuda a evitar parte de la afluencia; Harajuku puede estar concurrido.\n• *Mirador opcional:* SHIBUYA SKY indica venta oficial con hasta dos semanas de anticipación; referencia de octubre de 2026: ¥2,700 (≈ $323 MXN) antes de las 15:00 o ¥3,400 (≈ $407 MXN) desde las 15:00. Azotea sujeta a clima.\n• *Gastos:* Transporte urbano, comidas y compras pendientes; no contar la entrada al mirador hasta elegirla.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [],
+      "places": [
+        "japan27-meiji-jingu",
+        "japan27-harajuku",
+        "japan27-hachiko",
+        "japan27-shibuya"
+      ],
+      "headerPlaces": [
+        "Meiji Jingū",
+        "Harajuku y Omotesandō",
+        "Estatua de Hachikō y cruce de Shibuya"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "SHIBUYA SKY · entradas oficiales",
+          "url": "https://shibuya-scramble-square.com/sky/ticket"
+        },
+        {
+          "label": "Guía oficial de Tokio · SHIBUYA SKY",
+          "url": "https://www.gotokyo.org/es/spot/1749/index.html"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2027-10-18",
+      "title": "Akihabara y Shinjuku · tecnología y vida nocturna",
+      "base": "Tokio",
+      "am": "1. Desde Okachimachi, llegar a Akihabara en JR o caminando si apetece; dedicar unas 2–3 horas a tiendas de tecnología, videojuegos y cultura japonesa.\n2. Almorzar cerca de Akihabara y reservar una pausa para no llegar cansado a la noche.",
+      "pm": "1. Trasladarse a Shinjuku en JR Sōbu/Chūō o combinación conveniente y recorrer su zona oeste.\n2. Considerar uno de los observatorios gratuitos del Gobierno Metropolitano: el sur cierra habitualmente el primer y tercer martes, y el norte el segundo y cuarto lunes; confirmar calendario y aperturas extraordinarias para 2027.",
+      "night": "1. Visitar Omoide Yokochō para cenar o pasear y continuar a Golden Gai solo si interesa conocer sus pequeños bares.\n2. Regresar en transporte público antes del último tren; si hay cansancio, terminar tras la cena.",
+      "mobility": "• *Hotel → Akihabara:* Trayecto corto en JR desde Okachimachi o caminata según el acceso del hotel.\n• *Akihabara → Shinjuku:* JR hacia Shinjuku, aproximadamente 20–30 minutos de trayecto de referencia; sumar caminatas y transbordos.\n• *Shinjuku → hotel:* Regresar por JR Yamanote o alternativa conveniente, comprobando el último servicio.",
+      "note": "• *Observatorio gratuito:* No hay cierre general de lunes: cada torre tiene calendario propio; la entrada no cuesta, pero puede haber suspensión imprevista.\n• *Golden Gai:* Actividad opcional; revisar cargos de mesa, normas de acceso y último tren.\n• *Ritmo:* Mantener descanso antes de una noche en Shinjuku.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [],
+      "places": [
+        "japan27-akihabara",
+        "japan27-shinjuku"
+      ],
+      "headerPlaces": [
+        "Akihabara",
+        "Shinjuku",
+        "Omoide Yokochō y Golden Gai · opcionales"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Gobierno Metropolitano · observatorios",
+          "url": "https://www.english.metro.tokyo.lg.jp/w/000-101-000542"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "date": "2027-10-19",
+      "title": "Kawaguchiko · lago y vistas del monte Fuji",
+      "base": "Tokio",
+      "am": "1. Salir temprano desde el hotel hacia Busta Shinjuku; reservar margen para ubicar la terminal y abordar el autobús interurbano.\n2. Viajar a Kawaguchiko (aprox. 1 h 45 min sin congestión) y dirigirse a la orilla del lago; buscar vistas del monte Fuji únicamente si el cielo está despejado.",
+      "pm": "1. Utilizar el autobús turístico local u otra conexión válida para llegar a Oishi Park, disfrutar del paisaje y volver con margen a Kawaguchiko Station.\n2. Comer hōtō en la zona y consultar el estado del transporte de retorno antes de alejarse de la estación.",
+      "night": "1. Regresar desde Kawaguchiko a Shinjuku con boleto válido y continuar en JR/metro hasta Ueno-Okachimachi.\n2. Cenar cerca del hotel y descansar después de una excursión larga.",
+      "mobility": "• *Ueno → Busta Shinjuku:* Tren urbano y caminata hasta la terminal; llegar antes de la salida reservada.\n• *Shinjuku ↔ Kawaguchiko:* Autobús directo, referencia desde ¥2,000 (≈ $239 MXN) por sentido en línea (desde ¥4,000 (≈ $478 MXN) ida y vuelta solo si ambas salidas tienen tarifa web de ¥2,000 (≈ $239 MXN)) y alrededor de 1 h 45 min por tramo, sujeto a tráfico.\n• *Kawaguchiko ↔ Oishi Park:* Transporte turístico local de pago; verificar frecuencia, pase aplicable y última salida antes de subir.",
+      "note": "• *Reserva:* La venta de autobús se abre normalmente un mes antes. Elegir ambos sentidos, comprobar condiciones de cambio y evitar depender de un asiento no garantizado.\n• *Clima:* Las vistas del Fuji dependen de la nubosidad; solo intercambiar este día con Ginza/Marunouchi si los boletos lo permiten.\n• *Gasto de referencia:* Desde ¥4,000 (≈ $478 MXN) por ida y vuelta con dos tarifas web mínimas; el precio real podría subir. Faltan transporte Ueno–Shinjuku, autobús local a Oishi Park, alimentos y compras.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [
+        "fuji-daytrip"
+      ],
+      "places": [
+        "japan27-kawaguchi-autumn",
+        "japan27-oishi-park"
+      ],
+      "headerPlaces": [
+        "Kawaguchiko Station",
+        "Lago Kawaguchi",
+        "Oishi Park"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Fujikyū · horarios, tarifas y reserva",
+          "url": "https://bus.fujikyu.co.jp/en/highway/fujisan/shinjuku-kawaguchiko/"
+        },
+        {
+          "label": "Fujikyū · compra directa",
+          "url": "https://bus.fujikyu.co.jp/en/lp/en-shinjuku-kawaguchiko/"
+        }
+      ]
+    },
+    {
+      "n": 7,
+      "date": "2027-10-20",
+      "title": "Ginza, Marunouchi y Tokyo Station · día flexible",
+      "base": "Tokio",
+      "am": "1. Trasladarse desde Okachimachi a Ginza y recorrer sus avenidas, galerías comerciales y arquitectura; desayunar o tomar café según el ritmo del día.\n2. Caminar por Ginza sin fijar entradas ni compras; conservar este bloque intercambiable con la excursión a Kawaguchiko del día 6.",
+      "pm": "1. Continuar desde Ginza hacia Yurakuchō y Marunouchi, almorzando por la zona; ver la fachada histórica de Tokyo Station.\n2. Pasear por los jardines exteriores del Palacio Imperial solo en áreas abiertas al público, o usar las galerías de Marunouchi si llueve.",
+      "night": "1. Volver a Ueno-Okachimachi y preparar equipaje, tarjeta IC y documentos para el Shinkansen del día siguiente.\n2. Cenar cerca del alojamiento y descansar; evitar trasnochar antes del traslado a Kioto.",
+      "mobility": "• *Ueno-Okachimachi → Ginza:* JR/metro hasta Ginza o Yurakuchō; verificar el acceso exacto desde el hotel.\n• *Ginza → Marunouchi:* Caminar entre Yurakuchō, Tokyo Station y sus alrededores según energía.\n• *Regreso:* Tren urbano a Okachimachi; al día siguiente usar Tokyo Station para el Shinkansen.",
+      "note": "• *Fuji como prioridad:* Este miércoles puede sustituir a la excursión de Kawaguchiko del martes 19 si mejora la visibilidad y los boletos permiten cambios.\n• *Salida del hotel:* Confirmar acceso, horario de check-out y trayecto Okachimachi → Tokyo Station para el jueves.\n• *Gastos:* Transporte urbano y alimentos pendientes; compras opcionales, sin tarifa diaria inventada.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [],
+      "places": [
+        "japan27-ginza",
+        "japan27-tokyo-station"
+      ],
+      "headerPlaces": [
+        "Ginza · avenidas y comercios",
+        "Marunouchi · Tokyo Station",
+        "Jardines exteriores del Palacio Imperial · opcional"
+      ],
+      "spend": null
+    },
+    {
+      "n": 8,
+      "date": "2027-10-21",
+      "title": "Tokio → Kioto · Shinkansen y primera tarde histórica",
+      "base": "Kioto",
+      "am": "1. Hacer check-out en Ueno-Okachimachi, revisar equipaje y llegar con margen a Tokyo Station en tren urbano.\n2. Abordar un Shinkansen Nozomi a Kyoto Station (referencia de viaje ferroviario: unas 2 h 15 min); elegir hora y asiento solo al fijar fechas.",
+      "pm": "1. En Kyoto Station, tomar la línea Karasuma hasta Shijō; salir por el acceso adecuado para llegar al hotel cercano a Shijō-Karasuma y dejar equipaje.\n2. Recorrer las calles de Shijō y el borde de Gion; si el tren llega temprano, acercarse a Yasaka sin atravesar todo Higashiyama.",
+      "night": "1. Cenar cerca de Shijō-Karasuma o Gion, sin reservar atracciones con hora de entrada.\n2. Confirmar el sector del Jidai Matsuri, restricciones de circulación y posible lluvia para el día siguiente.",
+      "mobility": "• *Hotel → Tokyo Station:* JR desde Okachimachi/Ueno, dejando margen para acceso a andén y equipaje.\n• *Tokyo → Kyoto:* Nozomi directo; salida y llegada aún sin cotizar. SmartEX permite consultar asientos y condiciones antes de comprar.\n• *Kyoto Station → hotel:* Metro Karasuma hacia Shijō y caminata; verificar ascensores si llevas maleta.",
+      "note": "• *Equipaje:* Si el total de alto, ancho y fondo supera 160 cm, revisar la reserva obligatoria de espacio para bultos grandes en el Shinkansen; confirmar las excepciones del operador.\n• *Alojamiento:* Kyoto-Shijokarasuma es candidato sin reservar; la tasa local y recepción deben reconfirmarse.\n• *Plan B:* Si el traslado consume la tarde, mantener Gion para otro día y descansar antes del festival.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [
+        "tokyo-kyoto"
+      ],
+      "places": [
+        "japan27-gion",
+        "japan27-yasaka"
+      ],
+      "headerPlaces": [
+        "Tokyo Station · Shinkansen Tōkaidō",
+        "Kyoto Station y Shijō-Karasuma",
+        "Gion y Yasaka · paseo al anochecer"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "SmartEX · billetes oficiales",
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "label": "SmartEX · equipaje voluminoso",
+          "url": "https://smart-ex.jp/en/entraining/oversized-baggage/"
+        }
+      ]
+    },
+    {
+      "n": 9,
+      "date": "2027-10-22",
+      "title": "Jidai Matsuri · desfile de las eras históricas",
+      "base": "Kioto",
+      "am": "1. Desayunar sin prisas y trasladarse desde Shijō-Karasuma hacia Karasuma Oike, un punto de observación relativamente cercano al hotel.\n2. Elegir un único sector permitido y llegar con margen; la cabecera del desfile pasa por Karasuma Oike aproximadamente a las 12:50 según el recorrido histórico, no como horario confirmado para 2027.",
+      "pm": "1. Contemplar el desfile de las eras; el paso de toda la procesión por un punto puede prolongarse cerca de dos horas, además de la espera.\n2. Almorzar después en el centro y, solo si hay energía y acceso sencillo, acercarse al área de Okazaki o Heian Jingū.",
+      "night": "1. Volver hacia Shijō-Karasuma y comer o cenar especialidades de Kioto según el horario real de la procesión.\n2. Descansar para Fushimi Inari y Kiyomizu-dera al día siguiente; no agregar el Castillo Nijō en este día.",
+      "mobility": "• *Hotel → Karasuma Oike:* Desde Shijō-Karasuma, utilizar metro Karasuma una parada o caminar según restricciones y ubicación del sector elegido.\n• *Punto de observación:* La procesión sale tradicionalmente del Palacio Imperial a las 12:00; Karasuma Oike recibe su cabecera hacia las 12:50. Verificar el itinerario de 2027.\n• *Regreso:* Evitar atravesar el desfile y contar con desvíos de autobuses y calles cerradas.",
+      "note": "• *Calendario:* Jidai Matsuri se programa habitualmente el 22 de octubre; confirmar en 2027. Si la procesión se aplaza al 23, usar el día 10 como festival y revisar el pronóstico y los anuncios oficiales.\n• *Reorganización concreta:* Tras aplazamiento, dedicar el día 24 a Arashiyama/Kinkaku-ji y el 25 a Nara; Fushimi Inari + Kiyomizu-dera queda pendiente de reubicación, no se puede asumir que cabrá sin suprimir otra visita.\n• *Asientos:* Opcionales, sin comprar. Elegir un solo punto de observación autorizado y revisar cambios de ruta y hora.\n• *Nijō:* Mantenerlo la mañana del 26 solo si el resto del programa continúa viable.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [],
+      "places": [
+        "japan27-jidai-matsuri"
+      ],
+      "headerPlaces": [
+        "Karasuma Oike · paso de la procesión",
+        "Jidai Matsuri · desfile histórico",
+        "Heian Jingū · opcional"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Ruta y horarios orientativos · Turismo de Kioto",
+          "url": "https://kyoto.travel/es/travel-inspiration/jidai-matsuri-festival/"
+        },
+        {
+          "label": "Calendario y aplazamiento · Heian Jingū",
+          "url": "https://www.heianjingu.or.jp/ritual/jidaimatsuri/"
+        },
+        {
+          "label": "Asientos · Turismo de Kioto",
+          "url": "https://global.kyoto.travel/en/faq/detail.php?faq_id=2034"
+        }
+      ]
+    },
+    {
+      "n": 10,
+      "date": "2027-10-23",
+      "title": "Fushimi Inari y Kiyomizu-dera · torii y calles de Higashiyama",
+      "base": "Kioto",
+      "am": "1. Salir temprano de Shijō-Karasuma hacia Fushimi Inari; recorrer los torii y avanzar por la montaña únicamente hasta el mirador o punto que resulte cómodo.\n2. Reservar alrededor de 2 horas para senderos, fotos y regreso; evitar subir hasta la cima si compromete Higashiyama.",
+      "pm": "1. Desde Fushimi-Inari tomar Keihan hacia Kiyomizu-Gojō; subir caminando unos 20–30 minutos por calles en pendiente hasta Kiyomizu-dera, con descansos.\n2. Visitar el templo y descender por Sannenzaka y Ninenzaka; comer en Higashiyama sin imponer una hora fija.",
+      "night": "1. Continuar hacia Yasaka y Gion solo si quedan tiempo y energía, sin repetir obligatoriamente el paseo del día 8.\n2. Cenar cerca de Gion o Shijō y volver al hotel para descansar.",
+      "mobility": "• *Shijō-Karasuma → Fushimi Inari:* Caminar hacia la estación Keihan de Gion-Shijō o conectar por metro y tren; elegir la ruta con menos transbordos según la hora.\n• *Fushimi-Inari → Kiyomizu-Gojō:* Keihan y subida a pie de alrededor de 20–30 minutos; no confundir la estación con la entrada del templo.\n• *Regreso:* Bajar desde Higashiyama hacia Gion/Shijō y volver al hotel en transporte urbano o caminando según energía.",
+      "note": "• *Horario:* Kiyomizu-dera abre habitualmente desde las 6:00; el cierre varía según temporada y se confirmará para 2027.\n• *Ritmo:* Fushimi Inari parcial más Higashiyama ya supone pendientes y escaleras; Gion sigue opcional.\n• *Festival aplazado:* Si Jidai Matsuri pasa al 23, este día se dedica al desfile; Fushimi Inari/Kiyomizu quedan sin fecha asignada hasta rediseñar un bloque de Kioto. No intentar encajar las dos jornadas en una.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [],
+      "places": [
+        "japan27-fushimi-inari",
+        "japan27-kiyomizu",
+        "japan27-sannenzaka"
+      ],
+      "headerPlaces": [
+        "Fushimi Inari Taisha",
+        "Kiyomizu-dera",
+        "Sannenzaka y Ninenzaka"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Kiyomizu-dera · sitio oficial y horarios",
+          "url": "https://www.kiyomizudera.or.jp/en/visit/"
+        },
+        {
+          "label": "Fushimi Inari · santuario oficial",
+          "url": "https://inari.jp/en/"
+        }
+      ]
+    },
+    {
+      "n": 11,
+      "date": "2027-10-24",
+      "title": "Arashiyama y Kinkaku-ji · oeste y norte de Kioto",
+      "base": "Kioto",
+      "am": "1. Salir temprano desde Shijō-Karasuma hacia Arashiyama por Hankyu, cambiando en Katsura; caminar al bosque de bambú antes de la mayor afluencia.\n2. Visitar el jardín de Tenryū-ji si interesa (entrada general de referencia ¥500 (≈ $60 MXN)) y pasear junto al río Katsura; terminar el almuerzo antes del traslado al norte.",
+      "pm": "1. Trasladarse hacia Kinkaku-ji con combinación de tren y autobús, calculando alrededor de 45–70 minutos puerta a puerta como margen de planeación, sujeto a tráfico.\n2. Visitar el Pabellón Dorado dentro de su horario oficial y regresar al centro, sin añadir otro templo distante.",
+      "night": "1. Volver al hotel en Shijō-Karasuma y descansar tras los traslados y caminatas.\n2. Cenar y preparar documentos para la excursión a Nara.",
+      "mobility": "• *Karasuma → Arashiyama:* Hankyu con transbordo en Katsura y caminata desde Hankyu Arashiyama hasta el bosque.\n• *Arashiyama → Kinkaku-ji:* Trayecto transversal con transbordos; comprobar conexiones en el momento y prever congestión dominical.\n• *Regreso a Shijō:* Autobús o combinación con metro; evitar regresar hacia Arashiyama.",
+      "note": "• *Domingo:* Arashiyama puede estar muy concurrido; salir temprano y priorizar bosque y jardín antes del almuerzo.\n• *Tenryū-ji:* Jardín opcional ¥500 (≈ $60 MXN) y entrada habitual de 8:30 a 17:00 como referencias oficiales; edificios y pintura del dragón tienen suplementos.\n• *Castillo Nijō:* Mantenerlo pendiente para estudiar un ajuste del día 13; no sacrificar Kinkaku-ji ni agregarlo hoy.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [],
+      "places": [
+        "japan27-arashiyama",
+        "japan27-kinkakuji"
+      ],
+      "headerPlaces": [
+        "Bosque de bambú de Arashiyama",
+        "Tenryū-ji · opcional",
+        "Kinkaku-ji · Pabellón Dorado"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Tenryū-ji · horario y entradas oficiales",
+          "url": "https://www.tenryuji.com/en/visit/"
+        },
+        {
+          "label": "Kinkaku-ji · sitio oficial",
+          "url": "https://www.shokoku-ji.jp/en/kinkakuji/"
+        }
+      ]
+    },
+    {
+      "n": 12,
+      "date": "2027-10-25",
+      "title": "Nara · Gran Buda, parque de ciervos y Kasuga Taisha",
+      "base": "Kioto",
+      "am": "1. Desde Shijō-Karasuma conectar con Kyoto Station y tomar Kintetsu hacia Kintetsu-Nara; el tren Limited Express requiere suplemento, a diferencia de servicios regulares.\n2. Caminar por Nara Park hacia Tōdai-ji observando los ciervos con cuidado; priorizar el Salón del Gran Buda antes del almuerzo.",
+      "pm": "1. Entrar al Daibutsuden de Tōdai-ji (adulto ¥800 (≈ $96 MXN) y horario habitual de octubre 7:30–17:30, referencias vigentes consultadas en 2026); dedicar alrededor de 60–90 minutos al recinto principal.\n2. Continuar a Kasuga Taisha por los senderos del parque si hay tiempo y energía; almorzar y probar kakinoha-zushi o miwa sōmen según disponibilidad.",
+      "night": "1. Regresar a Kintetsu-Nara y tomar el tren de vuelta a Kyoto Station, seguido del trayecto al hotel.\n2. Cenar cerca de Shijō-Karasuma y preparar maleta para el cambio de hotel del día siguiente.",
+      "mobility": "• *Hotel → Nara:* Llegar a Kyoto Station y tomar Kintetsu a Kintetsu-Nara, más cercana al parque que JR Nara; verificar si hay tren directo o cambio de servicio.\n• *Recorrido:* Kintetsu-Nara → parque → Tōdai-ji → Kasuga Taisha, a pie y con pausas.\n• *Regreso:* Volver a Kintetsu-Nara y tomar tren a Kioto; confirmar la conexión al hotel y suplemento en caso de Limited Express.",
+      "note": "• *Entrada y efectivo:* Tōdai-ji informa ¥800 (≈ $96 MXN) para el Salón del Gran Buda y señala pagos en efectivo; llevar yenes y verificar tarifas de 2027.\n• *Kasuga Taisha:* La visita al santuario es secundaria a Tōdai-ji; revisar horarios específicos de áreas especiales.\n• *Ciervos:* No dar comida humana ni acercarse de manera brusca; respetar avisos del parque.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [
+        "kyoto-nara"
+      ],
+      "places": [
+        "japan27-nara-deer",
+        "japan27-todaiji",
+        "japan27-kasuga"
+      ],
+      "headerPlaces": [
+        "Kintetsu-Nara · acceso al parque",
+        "Tōdai-ji · Gran Buda",
+        "Kasuga Taisha · santuario"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Tōdai-ji · tarifas y horarios oficiales",
+          "url": "https://www.todaiji.or.jp/es/information/haikan/"
+        },
+        {
+          "label": "Kasuga Taisha · horarios oficiales",
+          "url": "https://www.kasugataisha.or.jp/en/about_en/basic/"
+        },
+        {
+          "label": "Kintetsu · rutas oficiales",
+          "url": "https://www.kintetsu.co.jp/foreign/english/"
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "date": "2027-10-26",
+      "title": "Castillo Nijō → Osaka · primera noche en Dotonbori",
+      "base": "Osaka",
+      "am": "1. Hacer check-out y preguntar al hotel si puede guardar la maleta hasta después de Nijō; si no, usar una consigna adecuada en Shijō/Karasuma antes de salir.\n2. Llegar al Castillo Nijō cerca de su apertura habitual de las 8:45 y dedicar alrededor de 90–120 minutos al recinto y Palacio Ninomaru, sin añadir Honmaru como obligación.",
+      "pm": "1. Recuperar la maleta y tomar Hankyu desde Karasuma hacia Osaka-Umeda; transbordar a la línea Midosuji hasta Namba y dirigirse al hotel candidato.\n2. Tras dejar equipaje, recorrer Namba y las calles próximas a Dotonbori. Mantener Kuromon como opción solo si aún hay comercios abiertos.",
+      "night": "1. Pasear junto al canal de Dotonbori, ver los letreros iluminados y cenar takoyaki u okonomiyaki.\n2. Volver caminando al hotel de Namba y descansar antes de Universal Studios Japan.",
+      "mobility": "• *Hotel → Nijō:* Metro Karasuma a Karasuma Oike y línea Tōzai a Nijōjō-mae, o desplazamiento equivalente según consigna.\n• *Karasuma → Namba:* Hankyu hasta Osaka-Umeda, después metro Midosuji a Namba; prever transbordos y desplazamientos por estaciones grandes.\n• *Equipaje:* Confirmar consigna en Kioto y Namba. No arrastrar maleta durante la visita a Nijō.",
+      "note": "• *Ninomaru:* El castillo abre habitualmente a las 8:45. Los cierres de martes de Ninomaru afectan enero, julio, agosto y diciembre, no octubre; comprobar excepciones de 2027.\n• *Honmaru:* Requiere reserva específica y no está incluido en este plan; no retrasar el tren a Osaka por visitarlo.\n• *Prioridad:* Nijō por la mañana y Dotonbori al anochecer; Kuromon queda para el día 16 si se llega tarde.\n• *Contingencia Kioto:* Ante aplazamiento de Jidai Matsuri y pérdida de la jornada Fushimi/Kiyomizu, Nijō es la primera visita que puede sacrificarse para rescatar parte del itinerario; no asegurar ambas por adelantado.\n• *Presupuesto:* Entradas, trenes y metro siguen pendientes de cotización para 2027; hotel ya registrado aparte.",
+      "hotel": "osaka-namba",
+      "transportRefs": [
+        "kyoto-osaka"
+      ],
+      "places": [
+        "japan27-nijo",
+        "japan27-dotonbori"
+      ],
+      "headerPlaces": [
+        "Castillo Nijō · Ninomaru",
+        "Osaka-Namba · hotel",
+        "Dotonbori · luces y gastronomía"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Castillo Nijō · acceso y horarios",
+          "url": "https://nijo-jocastle.city.kyoto.lg.jp/?lang=en"
+        },
+        {
+          "label": "Nijō · modalidades de entradas",
+          "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/ticket/?lang=en"
+        },
+        {
+          "label": "Hankyu Railway · guía de transporte",
+          "url": "https://www.hankyu.co.jp/global/en/"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "date": "2027-10-27",
+      "title": "Universal Studios Japan · Nintendo y Harry Potter",
+      "base": "Osaka",
+      "am": "1. Desayunar y salir desde Namba hacia Universal City, verificando en el calendario oficial la apertura del parque, las conexiones y el tiempo para controles.\n2. Llevar en el móvil el Studio Pass y la aplicación oficial actualizada; registrar el QR del boleto y, una vez dentro, solicitar el acceso con horario a Super Nintendo World si se exige y hay cupo.",
+      "pm": "1. Priorizar las atracciones de Nintendo dentro de la franja asignada, si se obtiene; el acceso al área no garantiza fila rápida ni acceso a cada atracción.\n2. Visitar Harry Potter en el orden compatible con cualquier pase o acceso reservado, dejando una pausa real para comer e hidratarse.",
+      "night": "1. Aprovechar el parque hasta la hora de cierre publicada para la fecha elegida, sin asumir horarios o espectáculos de Halloween de 2027.\n2. Regresar desde Universal City a Namba en tren, cenar de manera sencilla y descansar.",
+      "mobility": "• *Namba → Universal City:* Verificar combinación de metro/JR y transbordos según el punto de partida; la estación final es Universal City.\n• *Acceso Nintendo:* Consultar app oficial tras entrar; el acceso con horario es limitado y no debe asumirse garantizado.\n• *Universal City → Namba:* Consultar las últimas conexiones y prever afluencia al cierre del parque.",
+      "note": "• *Entrada:* Studio Pass desde ¥8,400 (≈ $1,005 MXN) como referencia de 2026; tarifa variable, aún no comprado.\n• *Super Nintendo World:* La aplicación permite solicitar Area Timed Entry/Standby Entry dentro del parque; pueden agotarse y un Standby no garantiza ingreso.\n• *Express Pass:* Complemento opcional de pago; algunos paquetes incluyen acceso anticipado al área y horarios concretos. Verificar cobertura antes de comprar.\n• *Octubre:* Es temporada habitual de actividades de Halloween, pero programación, aforos y horarios de 2027 no están confirmados.\n• *Respaldo:* El día 16 puede intercambiarse con Universal solo si existe disponibilidad real de boletos y permite reprogramar.",
+      "hotel": "osaka-namba",
+      "transportRefs": [
+        "osaka-usj"
+      ],
+      "places": [
+        "japan27-usj",
+        "japan27-nintendo",
+        "japan27-harry-potter"
+      ],
+      "headerPlaces": [
+        "Universal Studios Japan",
+        "Super Nintendo World · acceso condicionado",
+        "The Wizarding World of Harry Potter"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "USJ · entradas y calendario oficial",
+          "url": "https://www.usj.co.jp/web/en/us/tickets"
+        },
+        {
+          "label": "USJ · guía oficial de acceso a Nintendo",
+          "url": "https://www.usj.co.jp/web/en/us/enjoy/numbered-ticket/timed-entry-ticket"
+        },
+        {
+          "label": "USJ · página oficial",
+          "url": "https://www.usj.co.jp/web/en/us/"
+        }
+      ]
+    },
+    {
+      "n": 15,
+      "date": "2027-10-28",
+      "title": "Osaka · castillo, Shinsekai y gastronomía",
+      "base": "Osaka",
+      "am": "1. Mantener una mañana tranquila tras Universal y viajar desde Namba al parque del Castillo de Osaka.\n2. Pasear por los jardines y miradores exteriores; entrar al museo únicamente si apetece y se verifica el horario de ese día.",
+      "pm": "1. Trasladarse hacia Shinsekai sin regresar primero al hotel, y recorrer las calles alrededor de Tsūtenkaku.\n2. Almorzar kushikatsu con calma; la subida a Tsūtenkaku sigue siendo opcional, sujeta a entrada y tiempo.",
+      "night": "1. Regresar a Namba o Dotonbori para pasear y cenar, según cansancio acumulado.\n2. Descansar y mantener el día 16 disponible para Kuromon, compras o cambios del programa.",
+      "mobility": "• *Namba → Castillo:* Metro hacia estación próxima al parque y caminata; comprobar la entrada más conveniente.\n• *Castillo → Shinsekai:* Conectar por metro hacia Ebisuchō o Dōbutsuen-mae y caminar por el barrio.\n• *Shinsekai → Namba:* Regresar en metro o a pie si hay energía; evitar viajes de ida y vuelta por el hotel.",
+      "note": "• *Después de Universal:* Mantener solo dos zonas principales para no acumular cansancio.\n• *Opcionales:* Museo interior del castillo y mirador Tsūtenkaku no son visitas obligatorias ni boletos comprados.\n• *Kuromon:* Si no se visitó el día 13, reservar un bloque del día 16 durante horario comercial.\n• *Gastos:* Transporte local, alimentación y posibles entradas pendientes de tarifa; no añadir importes no verificados.",
+      "hotel": "osaka-namba",
+      "transportRefs": [],
+      "places": [
+        "japan27-osaka-castle",
+        "japan27-shinsekai"
+      ],
+      "headerPlaces": [
+        "Parque del Castillo de Osaka",
+        "Shinsekai",
+        "Tsūtenkaku · exterior opcional"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Castillo de Osaka · información oficial",
+          "url": "https://www.osakacastle.net/english/"
+        },
+        {
+          "label": "Oficina de turismo de Osaka · Shinsekai",
+          "url": "https://osaka-info.jp/en/spot/shinsekai/"
+        }
+      ]
+    },
+    {
+      "n": 16,
+      "date": "2027-10-29",
+      "title": "Kuromon y Den Den Town · último día completo en Osaka",
+      "base": "Osaka",
+      "am": "1. Salir a pie desde el hotel hacia Kuromon Ichiba para desayunar o probar especialidades, priorizando los establecimientos abiertos por la mañana.\n2. Continuar caminando hacia Nippombashi Den Den Town y explorar tecnología, videojuegos y tiendas de cultura popular, sin desplazamientos de ida y vuelta.",
+      "pm": "1. Almorzar por Nippombashi y dedicar tiempo a compras seleccionadas en Namba; considerar la franquicia de equipaje del futuro vuelo.\n2. Conservar la tarde como margen para visitas pendientes; si Universal se reprograma a este día con entrada válida, sustituir las actividades de mercado y tiendas, no intentar hacer ambas.",
+      "night": "1. Volver al hotel para ordenar compras, revisar franquicia de equipaje y comprobar las reservas del siguiente tramo.\n2. Cenar por Namba y descansar antes del traslado a Tokio o, en el escenario multidestino, de otra jornada en Osaka.",
+      "mobility": "• *Hotel → Kuromon:* Caminar desde Namba; el mercado se encuentra cerca de la estación Nippombashi.\n• *Kuromon → Den Den Town:* Continuar a pie por Nippombashi, evitando transbordos.\n• *Salida siguiente:* Comprobar si corresponde Shin-Osaka para Shinkansen o Nankai Namba para el futuro vuelo desde KIX.",
+      "note": "• *Prioridad:* Kuromon por la mañana, seguido de Den Den Town a pie; los horarios dependen de cada comercio.\n• *Respaldo USJ:* El intercambio exige fecha y boleto realmente disponibles, no una entrada automática para el viernes.\n• *Preparación:* Verificar equipaje, elección del aeropuerto de regreso y gastos antes de salir de Osaka.\n• *Costo:* Alimentación y compras por definir; no sumar alternativas como confirmadas.",
+      "hotel": "osaka-namba",
+      "transportRefs": [],
+      "places": [
+        "japan27-kuromon",
+        "japan27-den-den-town"
+      ],
+      "headerPlaces": [
+        "Kuromon Ichiba · mercado",
+        "Nippombashi Den Den Town",
+        "Namba · compras y descanso"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "JNTO · mercado Kuromon y Nippombashi",
+          "url": "https://www.japan.travel/es/spot/1103/"
+        }
+      ]
+    },
+    {
+      "n": 17,
+      "date": "2027-10-30",
+      "title": "Osaka → Tokio · cierre condicionado al vuelo redondo",
+      "base": "Tokio",
+      "am": "1. Escenario de regreso desde Tokio: hacer check-out en Namba y llegar en metro a Shin-Osaka con margen para localizar el andén.\n2. Tomar el Nozomi hacia Shinagawa o Tokyo Station, según el enlace al alojamiento final; calcular unos 2 h 30–40 min de tren más tiempos de conexión.",
+      "pm": "1. Llegar al hotel candidato de Ueno-Okachimachi y hacer check-in o dejar equipaje según horario; verificar la conveniencia de esta ubicación frente a Shinagawa o Haneda tras elegir aeropuerto.\n2. Mantener solo un paseo breve o descanso para no añadir cansancio previo al vuelo.",
+      "night": "1. Revisar terminal y procedimiento aeroportuario para el 31 de octubre, preparar equipaje y cenar cerca del alojamiento.\n2. Escenario alternativo KIX: conservar la noche del 30 en Osaka o cerca del aeropuerto, sin tren a Tokio; ajustar entonces el hotel y presupuesto del viaje.",
+      "mobility": "• *Tokio redondo:* Namba → Shin-Osaka → Shinagawa/Tokyo → alojamiento, sumando metro, Shinkansen y trayecto final.\n• *Equipaje voluminoso:* En el Tōkaidō Shinkansen, si la suma de dimensiones supera 160 cm y no supera 250 cm, reservar la modalidad de asiento/espacio indicada por el operador.\n• *Kansai multidestino:* No tomar el Shinkansen; alojarse en Osaka o área aeroportuaria y preparar traslado Nankai a KIX.",
+      "note": "• *Decisión excluyente:* El hotel de Ueno para esta noche solo existe en el escenario de salida desde Tokio; si se elige KIX, sustituirlo por una quinta noche en Osaka o Kansai y ajustar hospedajes y totales antes de reservar.\n• *Comparación económica:* Contrastar vuelos redondos + tren y traslados frente a multidestino + acceso a KIX, sin doble contabilizar el hospedaje final.\n• *Margen:* No programar actividades de pago tras el Shinkansen, pues la salida internacional todavía no tiene horario.",
+      "hotel": "tokio-ueno-regreso",
+      "transportRefs": [
+        "osaka-tokyo-or-kix"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Osaka-Namba → Shin-Osaka",
+        "Shinkansen Nozomi → Tokio",
+        "Hotel final de Ueno · solo escenario redondo"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "SmartEX · horarios y compra oficial",
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "label": "SmartEX · equipaje de gran tamaño",
+          "url": "https://smart-ex.jp/en/entraining/oversized-baggage/"
+        },
+        {
+          "label": "Nankai · acceso oficial a Kansai",
+          "url": "https://www.nankai.co.jp/en_railway/access-timetable"
+        }
+      ]
+    },
+    {
+      "n": 18,
+      "date": "2027-10-31",
+      "title": "Japón → CDMX · regreso internacional provisional",
+      "base": "En vuelo",
+      "am": "1. Salida desde Tokio: hacer check-out y trasladarse a Haneda o Narita conforme a terminal y hora real del vuelo, con margen para check-in internacional.\n2. Salida desde Kansai: hacer check-out del hotel de Osaka o KIX que finalmente se reserve y tomar Nankai u otro servicio hasta la terminal correspondiente.",
+      "pm": "1. Realizar documentación, controles y embarque para el vuelo internacional que se haya comprado, considerando las posibles escalas y requisitos de tránsito.\n2. Consultar las horas locales de cada conexión y no asumir que la llegada a CDMX ocurre el propio 31 de octubre.",
+      "night": "1. Continuar en vuelo o llegar a México, según duración, husos horarios y conexiones reales.\n2. Descansar y evitar citas importantes inmediatamente después del regreso.",
+      "mobility": "• *Tokio → HND/NRT:* Ruta según hotel definitivo y aeropuerto; prever tiempo adicional de equipaje, documentación y controles.\n• *Namba → KIX:* Nankai Rapi:t y Airport Express son alternativas; los horarios publicados muestran trayectos variables cercanos a 35–50 minutos según servicio, no una duración universal.\n• *Último tramo:* Confirmar terminal aérea y horario real de check-in; los tiempos ferroviarios no incluyen caminata ni controles.",
+      "note": "• *Fechas:* El 31 de octubre de 2027 es salida ilustrativa, no vuelo ni llegada a CDMX confirmados; validar la llegada y eventuales cambios de fecha por huso horario antes de pedir vacaciones.\n• *Hospedaje condicionado:* Si sale desde KIX, cambiar la noche del 30 del hotel de Tokio a Osaka/Kansai antes de reservar; mantener 16 noches, sin duplicar costos.\n• *Transporte condicionado:* La referencia tokyo-airport-return solo aplica desde Tokio; desde KIX usar la alternativa Osaka–Kansai, nunca ambas.\n• *Gastos:* Vuelos y traslados de salida por cotizar; no generar importes ficticios.",
+      "transportRefs": [
+        "flight-international",
+        "tokyo-airport-return"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Haneda (HND) / Narita (NRT) · escenario Tokio",
+        "Kansai (KIX) · alternativa multidestino",
+        "Regreso a México · horarios sin confirmar"
+      ],
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Nankai · horarios oficiales a KIX",
+          "url": "https://www.nankai.co.jp/en_railway/access-timetable"
+        },
+        {
+          "label": "Narita · trenes de acceso",
+          "url": "https://www.narita-airport.jp/en/access/train/"
+        },
+        {
+          "label": "Haneda · trenes de acceso",
+          "url": "https://tokyo-haneda.com/en/access/train/index.html"
+        }
+      ]
+    }
+  ],
+  "exchangeRates": {
+    "JPY": 0.1196
+  },
+  "exchangeRatesAsOf": "2026-10-29",
+  "exchangeRatesSource": "XE · tasa media de referencia 29/10/2026, https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN",
+  "budgetPreliminary": {
+    "currency": "MXN",
+    "low": 90000,
+    "high": 107000,
+    "status": "estimated",
+    "label": "Proyección integral · escenario vuelo redondo por Tokio",
+    "basis": "Presupuesto de planeación para 1 persona y 18 días: gastos terrestres estimados en expenses + SOLO referencia de vuelo redondo A de septiembre de 2027 por $28,417 MXN. No es cotización para octubre de 2027. Incluye alojamiento, alimentos, traslados urbanos e interurbanos, USJ y otros accesos, impuestos, conectividad, extras y colchón. En escenario Tokio se contabilizan última noche Ueno y tren Osaka→Tokio; en escenario Kansai se sustituyen por última noche Osaka/Kansai y traslado KIX. No se suman ambos. La sección de gastos contabiliza partidas terrestres; los vuelos se comparan en Traslados y NO se duplican como gasto independiente. El límite alto incluye margen extra para tarifas de octubre, equipaje y posibles cambios. Express Pass, compras importantes y gastos personales extraordinarios fuera del plan. La portada calcula su rango en cada carga desde el desglose actualizado, con margen adicional de $16,000 MXN, y el vuelo elegido o la primera tarifa referencial cuando no hay selección. La referencia principal calculada hoy desde las partidas incluye $90,027 MXN (sin las entradas opcionales de SHIBUYA SKY y museo/mirador de Osaka); estos montos se recalculan automáticamente al ajustar los datos.",
+    "pending": [
+      "Precio y horarios reales del vuelo internacional para 14–31 octubre 2027",
+      "Confirmación de tarifas 2027 de trenes y entradas",
+      "Cotización real de hoteles e impuestos",
+      "Confirmar si escenario Tokio o Kansai para reconciliar la noche final y el traslado"
+    ],
+    "marginMXN": 16000
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-10-29",
+    "baseCurrency": "MXN",
+    "description": "Tipo de cambio orientativo: yenes por equivalencia en MXN; no es una tarifa garantizada para octubre de 2027.",
+    "sources": {
+      "JPY": "https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN"
+    }
+  },
+  "start": "2027-10-14",
+  "end": "2027-10-31",
+  "routeCities": [
+    "Tokio",
+    "Kawaguchiko",
+    "Kioto",
+    "Nara",
+    "Osaka"
+  ],
+  "flag": "🇯🇵",
+  "work": 12,
+  "profile": {
+    "pace": "Moderado–activo",
+    "solo": "Apto para viajar solo",
+    "weather": "Octubre recomendable"
+  },
+  "solo": "Viaje independiente pensado para una persona: cuatro estancias provisionales, traslados principalmente en tren, excursiones sin cambiar de hotel y días intensos alternados con caminatas más relajadas.",
+  "flight": "Salida de CDMX el 14 de octubre y llegada estimada a Tokio el 15; cuatro cotizaciones comparativas de septiembre 2027, ninguna reservada. Regreso provisional el 31 de octubre desde Tokio, o alternativo desde KIX con redistribución de la última noche; confirmar itinerario aéreo antes de reservar.",
+  "placeDescriptions": {
+    "japan27-sensoji": "La gran linterna de Kaminarimon señala la entrada al recinto de Sensō-ji, uno de los templos budistas más emblemáticos de Tokio.",
+    "japan27-ueno-park": "El parque de Ueno reúne amplios senderos, museos y espacios arbolados: una pausa cultural junto a la zona de Okachimachi.",
+    "japan27-ameyoko": "Bajo las vías y entre calles comerciales, Ameyoko concentra puestos de comida, pequeños negocios y el movimiento cotidiano de Ueno.",
+    "japan27-meiji-jingu": "Rodeado por un bosque urbano, Meiji Jingū ofrece senderos tranquilos y arquitectura sintoísta a pocos pasos de Harajuku.",
+    "japan27-harajuku": "Takeshita-dōri concentra boutiques, escaparates coloridos y cultura juvenil en el corazón comercial de Harajuku, especialmente durante los fines de semana.",
+    "japan27-shibuya": "El famoso cruce de Shibuya reúne peatones, pantallas y grandes avenidas en uno de los escenarios urbanos más reconocibles de Tokio.",
+    "japan27-akihabara": "Las fachadas luminosas de Akihabara ilustran su concentración de tiendas de electrónica, videojuegos, anime y cultura popular japonesa.",
+    "japan27-shinjuku": "Las calles iluminadas de Shinjuku muestran el Tokio nocturno entre anuncios, restaurantes y una intensa actividad alrededor de la estación.",
+    "japan27-kawaguchi-autumn": "Desde la ribera del lago Kawaguchi se divisa el monte Fuji; esta fotografía documenta colores otoñales, sujetos a la temporada y al clima.",
+    "japan27-oishi-park": "Oishi Park ofrece una panorámica del lago Kawaguchi y el monte Fuji, visible cuando la nubosidad permite contemplar su silueta.",
+    "japan27-ginza": "Las avenidas comerciales de Ginza combinan grandes almacenes y arquitectura contemporánea; algunos tramos se convierten en paseos peatonales.",
+    "japan27-tokyo-station": "La fachada histórica de ladrillo rojo de Tokyo Station preside Marunouchi, entre edificios de oficinas y grandes avenidas del centro.",
+    "japan27-gion": "Las calles de Gion conservan fachadas tradicionales de madera y pequeños pasajes que muestran la arquitectura histórica del antiguo distrito de entretenimiento de Kioto.",
+    "japan27-yasaka": "El santuario Yasaka conecta el barrio de Gion con sus patios ceremoniales y puertas de colores intensos, especialmente agradables durante un paseo vespertino.",
+    "japan27-jidai-matsuri": "La procesión del Jidai Matsuri recrea diversas épocas de la historia japonesa mediante vestimentas tradicionales y personajes que desfilan por las calles de Kioto.",
+    "japan27-fushimi-inari": "Los corredores de torii bermellón ascienden por la montaña de Inari, formando uno de los paisajes religiosos más reconocibles de Kioto.",
+    "japan27-kiyomizu": "El gran escenario de madera del templo Kiyomizu-dera se eleva sobre la ladera de Higashiyama, con vistas al paisaje urbano de Kioto.",
+    "japan27-sannenzaka": "Sannenzaka reúne callejuelas empedradas, tiendas tradicionales y casas de madera en la subida histórica hacia el templo Kiyomizu-dera.",
+    "japan27-arashiyama": "Los altos tallos de bambú forman un corredor verde en Arashiyama; visitarlo temprano permite disfrutar mejor del sendero antes de las multitudes.",
+    "japan27-kinkakuji": "El Pabellón Dorado refleja sus pisos superiores revestidos en pan de oro sobre un estanque rodeado de jardines de tradición japonesa.",
+    "japan27-nara-deer": "Los ciervos sika deambulan libremente por el parque de Nara y los accesos a sus templos, entre senderos y zonas arboladas.",
+    "japan27-todaiji": "La monumental sala Daibutsuden alberga el Gran Buda de bronce y constituye uno de los principales hitos históricos de la antigua capital de Nara.",
+    "japan27-kasuga": "En los senderos próximos a Kasuga Taisha, los faroles de piedra y los ciervos forman una escena característica de este santuario sintoísta.",
+    "japan27-nijo": "El Palacio Ninomaru, dentro del Castillo Nijō, conserva la arquitectura de la residencia del shogun y anticipa la historia del período Edo.",
+    "japan27-dotonbori": "Los anuncios luminosos y el canal convierten Dotonbori en el gran paseo nocturno de Osaka, entre puentes, restaurantes y puestos de comida.",
+    "japan27-usj": "La entrada de Universal Studios Japan marca el comienzo de una jornada dedicada a las atracciones temáticas, con accesos sujetos a boletos y aforo.",
+    "japan27-nintendo": "Las estructuras coloridas de Super Nintendo World recrean escenarios de videojuegos dentro de Universal Studios Japan; el acceso puede requerir una franja asignada.",
+    "japan27-harry-potter": "El área de Harry Potter recrea el ambiente de Hogsmeade y su arquitectura fantástica, uno de los espacios temáticos emblemáticos del parque.",
+    "japan27-osaka-castle": "La torre principal del Castillo de Osaka se eleva sobre jardines, murallas y fosos; el recinto permite apreciar la historia de la ciudad.",
+    "japan27-shinsekai": "Las calles de Shinsekai reúnen grandes letreros, restaurantes de kushikatsu y la torre Tsūtenkaku, una imagen característica del sur de Osaka.",
+    "japan27-kuromon": "Los pasillos cubiertos de Kuromon concentran pescaderías y puestos de comida; es una parada práctica para probar especialidades antes de recorrer Nippombashi.",
+    "japan27-den-den-town": "Las tiendas de Den Den Town reúnen electrónica, videojuegos, figuras y cultura otaku en varias calles de Nippombashi, cerca del mercado Kuromon.",
+    "japan27-hachiko": "La estatua de Hachikō, junto a la salida Hachikō de Shibuya Station, recuerda la lealtad del célebre perro y es un punto de encuentro emblemático de Tokio."
+  },
+  "cover": "japan27-fushimi-inari"
+}

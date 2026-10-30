@@ -1,7 +1,7 @@
 window.AtlasSections = function (ctx) {
     'use strict';
     const { trips, stays, esc, price, range, readable, railLinks } = ctx;
-    const baseLabel = n => n + ' ' + (n === 1 ? 'base' : 'bases') + ' para dormir';
+    const baseLabel = bases => { if (!Array.isArray(bases) || !bases.length) return 'Alojamientos por definir'; const nights = bases.reduce((total, item) => total + Number(Array.isArray(item) ? item[1] || 0 : item?.nights || 0), 0); const n = bases.length; return nights + ' ' + (nights === 1 ? 'noche' : 'noches') + ', ' + n + ' ' + (n === 1 ? 'alojamiento' : 'alojamientos'); };
     function familyLabel(t) {
         const f = t.family;
         return f ? `<p class="family-label">${esc(f.label)}<span>${esc(f.note)}</span></p>` : '';
@@ -35,7 +35,7 @@ window.AtlasSections = function (ctx) {
             const [title, items] = Array.isArray(group) ? group : [group?.title, group?.items];
             const safeItems = Array.isArray(items) ? items : [];
             return `
-            <section class="reservation-group ${groupIndex === 0 ? 'reservation-priority-very-high' : groupIndex === 1 ? 'reservation-priority-high' : ''}">
+            <section class="reservation-group ${title === 'Planificación flexible' ? 'reservation-priority-flexible' : groupIndex === 0 ? 'reservation-priority-very-high' : groupIndex === 1 ? 'reservation-priority-high' : ''}">
                 <div class="reservation-group-heading">
                     <h4>${esc(title)}</h4>
                     <span class="reservation-count" aria-label="${safeItems.length} reservas">${safeItems.length}</span>
@@ -136,7 +136,7 @@ window.AtlasSections = function (ctx) {
         if (related.length < 2) return '';
         const fields = [
             ['Fechas', x => range(x)],
-            ['Noches y bases', x => x.bases.map(([name, n]) => esc(name) + ' ' + n).join(' · ')],
+            ['Noches y alojamientos', x => x.bases.map(([name, n]) => esc(name) + ' ' + n).join(' · ')],
             ['Experiencia central', x => esc(x.comparison.experience)],
             ['Trenes', x => esc(x.comparison.trains)],
             ['Condiciones', x => esc(x.comparison.conditions)],

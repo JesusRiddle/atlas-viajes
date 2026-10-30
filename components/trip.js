@@ -59,8 +59,9 @@ window.AtlasTrip = function (ctx) {
             solo + '</div></article></div>' + (compact ? '</section>' : '');
     }
     function climateCard(t) {
-        const month = typeof t.start === 'string' ? t.start.slice(5, 7) : '';
-        const status = t.seasonality?.months?.[month]?.status;
+        const tripStart = typeof t.start === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(t.start) ? t.start : (t.days || []).find(d => typeof d?.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d.date))?.date || '';
+        const month = tripStart.slice(5, 7);
+        const status = t.seasonality?.months?.[month]?.status || 'pending';
         const seasonLabels = { recommended: 'Recomendable', conditional: 'Aceptable', avoid: 'Desaconsejable', pending: 'Por definir' };
         const seasonClass = Object.prototype.hasOwnProperty.call(seasonLabels, status) ? ' season-' + status : '';
         const seasonBadge = seasonClass ? '<span class="overview-climate-season-status">' + seasonLabels[status] + '</span>' : '';
@@ -126,9 +127,7 @@ window.AtlasTrip = function (ctx) {
     }
     function overviewStays(t, inline = false) {
         const nights = t.bases.reduce((sum, base) => sum + Number(base[1] || 0), 0);
-        const caption = inline
-            ? nights + ' noches · ' + t.bases.length + (t.bases.length === 1 ? ' estancia' : ' estancias')
-            : t.bases.length + (t.bases.length === 1 ? ' estancia' : ' estancias');
+        const caption = nights + ' ' + (nights === 1 ? 'noche' : 'noches') + ', ' + t.bases.length + (t.bases.length === 1 ? ' alojamiento' : ' alojamientos');
         return '<div class="overview-stays' + (inline ? ' overview-stays-inline' : '') + '">' +
             '<div class="overview-stays-heading"><h3 class="overview-subheading">' +
             overviewIcon('bed') + (inline ? ' Dónde dormirás' : ' Tus alojamientos') +
@@ -222,14 +221,14 @@ window.AtlasTrip = function (ctx) {
         return [
             '<section class="triphero triphero-split"><div class="triphero-split-info">',
             '<div class="triphero-split-info-inner">',
-            `<a class="breadcrumb" href="#"><span aria-hidden="true">←</span> Regresar</a>`,
+            `<a class="breadcrumb" href="#inicio"><span aria-hidden="true">←</span> Regresar</a>`,
             `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')} · ${esc(heroLabel)}</p>`,
             `<h1>${esc(t.name)}</h1>`,
             '<div class="hero-meta">',
             `<span>${heroMetaIcon('calendar')}${t.start && t.end ? range(t) : 'Por definir'}</span>`,
             `<span>${heroMetaIcon('duration')}${t.days.length ? t.days.length + ' días naturales' : 'Duración por definir'}</span>`,
             `<span>${heroMetaIcon('work')}${t.work === null ? 'Días laborales por definir' : t.work + ' días laborales'}</span>`,
-            `<span>${heroMetaIcon('lodging')}${t.heroLodgingSummary ? esc(t.heroLodgingSummary) : t.bases.length ? esc(baseLabel(t.bases.length)) : 'Alojamientos por definir'}</span>`,
+            `<span>${heroMetaIcon('lodging')}${t.heroLodgingSummary ? esc(t.heroLodgingSummary) : t.bases.length ? esc(baseLabel(t.bases)) : 'Alojamientos por definir'}</span>`,
             '</div></div></div>',
             `<div class="triphero-split-photo">${t.cover ? img(covers[id], '', true) : ''}</div>`,
             '</section>'
@@ -257,6 +256,14 @@ window.AtlasTrip = function (ctx) {
         const hasPricedEntries = Boolean(t.majorTransport?.length || t.expenses?.length);
         const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN)
             ? money(overviewSummary.knownTotalMXN) : pending();
+        const forecast = masterOverview && t.budgetPreliminary && Number.isFinite(t.budgetPreliminary.low) && Number.isFinite(t.budgetPreliminary.high) && t.budgetPreliminary.low > 0 && t.budgetPreliminary.high >= t.budgetPreliminary.low;
+        const dynamicEstimate = masterOverview ? window.AtlasBudget?.planningEstimate?.(t) : null;
+        const featuredPrice = dynamicEstimate ? money(dynamicEstimate.low) + '–' + money(dynamicEstimate.high) : forecast ? money(t.budgetPreliminary.low) + '–' + money(t.budgetPreliminary.high) : overviewPrice;
+        const budgetContext = forecast ? 'MXN · 1 persona · proyección global, no cotización' : 'MXN · 1 persona · estimación parcial del viaje';
+        const fxInfo = masterOverview && t.exchangeRateSnapshot?.date && t.exchangeRates ? Object.entries(t.exchangeRates).filter(([code,rate]) => /^[A-Z]{3}$/.test(code) && Number.isFinite(rate) && rate > 0).map(([code,rate]) => code + ' 1 ≈ $' + rate.toFixed(4) + ' MXN') : [];
+        const fxSource = t.exchangeRateSnapshot?.sources?.JPY || t.exchangeRateSnapshot?.sources?.EUR || t.exchangeRateSnapshot?.sources?.USD;
+        const fxSourceLink = typeof fxSource === 'string' && /^https:\/\//.test(fxSource) ? ' · <a href="' + esc(fxSource) + '" target="_blank" rel="noopener noreferrer">Fuente</a>' : '';
+        const fxMarkup = fxInfo.length ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipo de cambio de referencia · ' + esc(t.exchangeRateSnapshot.date) + fxSourceLink + '</div><div class="budget-exchange-values">' + fxInfo.map(x => '<span>' + esc(x) + '</span>').join('') + '</div></div>' : '';
         // Render detailed day cards as soon as their data exists, even for draft trips.
         // A draft status must not force the entire itinerary into plain placeholders.
         const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
@@ -296,13 +303,10 @@ window.AtlasTrip = function (ctx) {
             `<aside class="budget-teaser">`,
             `<div>`,
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
-            `<strong>${overviewPrice}</strong>`,
-            `<p class="budget-context">MXN · 1 persona · estimación parcial del viaje</p>`,
+            `<strong>${featuredPrice}</strong>`,
+            `<p class="budget-context">${esc(budgetContext)}</p>`,
             `<a class="budget-detail-link" href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
-            `${complete && t.exchangeRates && t.exchangeRateSnapshot ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipos de cambio · ' +
-                esc(t.exchangeRateSnapshot.date) + '</div><div class="budget-exchange-values"><span>EUR 1 = $' +
-                Number(t.exchangeRates.EUR).toFixed(4) + ' MXN</span><span>USD 1 = $' +
-                Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span></div></div>' : ''}`,
+            `${fxMarkup}`,
                         `</div>`,
             `</aside>`,
             `${masterOverview ? (complete ? climateCard(t) : overviewClimate) + '</div>' : ''}`,
