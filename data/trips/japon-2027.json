@@ -1419,58 +1419,84 @@
     {
       "n": 7,
       "date": "2027-10-20",
-      "title": "Ginza y Marunouchi · día flexible",
+      "title": "Ginza, Marunouchi y Tokyo Station · día flexible",
       "base": "Tokio",
-      "am": "1. Pasear por Ginza y explorar la arquitectura de sus avenidas comerciales.\n2. Visitar cafés o tiendas según interés, sin compras obligatorias.",
-      "pm": "1. Recorrer Marunouchi y los exteriores de Tokyo Station.\n2. Pasear por los jardines exteriores del Palacio Imperial donde estén accesibles.",
-      "night": "1. Regresar a Ueno y preparar maleta para el tren a Kioto.\n2. Cena temprana y descanso.",
-      "mobility": "• *Ueno → Ginza → Marunouchi:* Tren/metro y caminatas entre barrios próximos.",
-      "note": "• *Reserva meteorológica:* Puede intercambiarse con el día del Fuji.\n• *No saturar:* Mantenerlo útil y flexible antes del traslado a Kioto.",
+      "am": "1. Trasladarse desde Okachimachi a Ginza y recorrer sus avenidas, galerías comerciales y arquitectura; desayunar o tomar café según el ritmo del día.\n2. Caminar por Ginza sin fijar entradas ni compras; conservar este bloque intercambiable con la excursión a Kawaguchiko del día 6.",
+      "pm": "1. Avanzar hacia Yurakuchō y Marunouchi, observar la fachada histórica de Tokyo Station y almorzar por la zona.\n2. Pasear por los jardines exteriores del Palacio Imperial si están accesibles; si llueve, optar por las galerías interiores de Marunouchi.",
+      "night": "1. Volver a Ueno-Okachimachi y preparar equipaje, tarjeta IC y documentos para el Shinkansen del día siguiente.\n2. Cenar cerca del alojamiento y descansar; evitar trasnochar antes del traslado a Kioto.",
+      "mobility": "• *Ueno-Okachimachi → Ginza:* JR/metro hasta Ginza o Yurakuchō; verificar el acceso exacto desde el hotel.\n• *Ginza → Marunouchi:* Caminar entre Yurakuchō, Tokyo Station y sus alrededores según energía.\n• *Regreso:* Tren urbano a Okachimachi; al día siguiente usar Tokyo Station para el Shinkansen.",
+      "note": "• *Plan B por clima:* Intercambiar esta jornada con Kawaguchiko solo si los boletos interurbanos admiten cambios; no perder la noche de Tokio.\n• *Ritmo:* Día de caminatas moderadas y preparación logística; jardines y comercios no implican entradas compradas.\n• *Gasto:* Metro/JR local, comidas y compras pendientes; no inventar importe diario.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
       "places": [],
       "headerPlaces": [
-        "Ginza y Marunouchi · día flexible"
+        "Ginza · avenidas y comercios",
+        "Marunouchi · Tokyo Station",
+        "Jardines exteriores del Palacio Imperial · opcional"
       ],
       "spend": null
     },
     {
       "n": 8,
       "date": "2027-10-21",
-      "title": "Tokio → Kioto · llegada a Higashiyama",
+      "title": "Tokio → Kioto · Shinkansen y primera tarde histórica",
       "base": "Kioto",
-      "am": "1. Hacer check-out y trasladarse desde Ueno hasta Tokyo Station.\n2. Tomar el Tōkaidō Shinkansen hacia Kyoto Station; reservar asiento cuando haya fecha.",
-      "pm": "1. Conectar desde Kyoto Station con Shijō y dejar equipaje en el alojamiento.\n2. Visitar las calles de Higashiyama en función del horario real de llegada.",
-      "night": "1. Acercarse a Yasaka y Gion para una primera caminata.\n2. Cenar cerca de Shijō-Karasuma y descansar.",
-      "mobility": "• *Ueno → Tokyo Station:* Tren urbano con margen para encontrar andén.\n• *Tokyo → Kyoto:* Nozomi, duración de referencia algo superior a 2 horas; sumar hotel-estación.",
-      "note": "• *Hotel:* Candidato Sotetsu Fresa Inn Kyoto-Shijokarasuma.\n• *Flexibilidad:* No comprar entradas con hora fija para la tarde de llegada.",
+      "am": "1. Hacer check-out en Ueno-Okachimachi, revisar equipaje y llegar con margen a Tokyo Station en tren urbano.\n2. Abordar un Shinkansen Nozomi a Kyoto Station (referencia de viaje ferroviario: unas 2 h 15 min); elegir hora y asiento solo al fijar fechas.",
+      "pm": "1. Desde Kyoto Station, conectar con el metro Karasuma hasta Shijō y caminar al Sotetsu Fresa Inn Kyoto-Shijokarasuma; dejar equipaje o hacer check-in según horario.\n2. Pasear por el entorno de Shijō y Gion; extenderse hacia Yasaka y calles bajas de Higashiyama únicamente si queda tiempo suficiente.",
+      "night": "1. Recorrer Gion y las calles iluminadas próximas a Yasaka, sin añadir Kiyomizu-dera al día de traslado.\n2. Cenar en el centro, preparar el recorrido de Jidai Matsuri y descansar.",
+      "mobility": "• *Hotel → Tokyo Station:* JR desde Okachimachi/Ueno, dejando margen para acceso a andén y equipaje.\n• *Tokyo → Kyoto:* Nozomi directo; salida y llegada aún sin cotizar. SmartEX permite consultar asientos y condiciones antes de comprar.\n• *Kyoto Station → hotel:* Metro Karasuma hacia Shijō y caminata; verificar ascensores si llevas maleta.",
+      "note": "• *Equipaje:* En Shinkansen, las maletas con suma de dimensiones superior a 160 cm y hasta 250 cm requieren reserva de asiento/espacio específico; comprobar reglas vigentes.\n• *Hotel:* Kyoto-Shijokarasuma es candidato sin reservar, con impuesto local pendiente según tarifa.\n• *Plan B:* Si el tren llega tarde, limitarse a Shijō y cena, y conservar Higashiyama para el día 10.",
       "hotel": "kioto-karasuma",
       "transportRefs": [
         "tokyo-kyoto"
       ],
       "places": [],
       "headerPlaces": [
-        "Tokio → Kioto · llegada a Higashiyama"
+        "Tokyo Station · Shinkansen Tōkaidō",
+        "Kyoto Station y Shijō-Karasuma",
+        "Gion y Yasaka · paseo al anochecer"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "SmartEX · billetes oficiales",
+          "url": "https://smart-ex.jp/en/"
+        },
+        {
+          "label": "SmartEX · equipaje voluminoso",
+          "url": "https://smart-ex.jp/en/entraining/oversized-baggage/"
+        }
+      ]
     },
     {
       "n": 9,
       "date": "2027-10-22",
-      "title": "Jidai Matsuri · desfile histórico de Kioto",
+      "title": "Jidai Matsuri · desfile de las eras históricas",
       "base": "Kioto",
-      "am": "1. Desayunar cerca de Shijō-Karasuma y dirigirse con margen al punto autorizado del desfile.\n2. Ubicarse para Jidai Matsuri según sector reservado o espacio público permitido.",
-      "pm": "1. Observar la procesión histórica; el recorrido suele comenzar al mediodía.\n2. Caminar hacia Heian Jingū únicamente si el flujo de visitantes y la hora lo permiten.",
-      "night": "1. Pasear por el entorno de Okazaki o descansar según el cansancio.\n2. Cena en el centro de Kioto.",
-      "mobility": "• *Shijō-Karasuma → desfile:* Consultar cierres de calles y transporte reforzado o desviado.\n• *Regreso:* Evitar cruzar innecesariamente el recorrido de la procesión.",
-      "note": "• *Festival:* Solo si se confirma para el 22 de octubre de 2027; puede aplazarse al 23 por lluvia.\n• *Si no coincide:* Visitar Heian Jingū y el área de Okazaki; reservar el Castillo Nijō para otra jornada.",
+      "am": "1. Desayunar y dirigirse a Kyoto Gyoen o al sector de observación elegido; el recorrido principal tiene salida tradicional al mediodía desde el entorno del Palacio Imperial.\n2. Ubicarse con antelación y elegir un solo punto para ver pasar la procesión; si se compra asiento, seguir la hora de llegada indicada por el organizador.",
+      "pm": "1. Observar la sucesión de personajes y vestimentas históricas de Jidai Matsuri, evitando desplazarse a contracorriente de la multitud.\n2. Después del desfile, visitar el entorno de Heian Jingū solo si el punto elegido, el transporte y el cansancio lo hacen razonable.",
+      "night": "1. Volver hacia Shijō-Karasuma y comer o cenar especialidades de Kioto según el horario real de la procesión.\n2. Descansar para Fushimi Inari y Kiyomizu-dera al día siguiente; no agregar el Castillo Nijō en este día.",
+      "mobility": "• *Hotel → desfile:* Metro Karasuma o caminata hasta el punto autorizado; revisar cortes de calles de la edición 2027.\n• *Observación:* La salida histórica es alrededor de las 12:00, pero cada punto recibe la procesión a distinta hora; evitar ir de un sector a otro.\n• *Regreso:* Consultar transporte urbano después del evento y prever mayor afluencia.",
+      "note": "• *Calendario:* El 22 de octubre es provisional; confirmar la celebración de 2027. Si llueve, la procesión puede trasladarse al 23; si también llueve podría cancelarse.\n• *Asientos:* Opcionales y sin comprar. La guía oficial recomienda llegar 30 minutos antes de la hora prevista de paso si se reserva un asiento.\n• *Alternativa:* Sin desfile, visitar Heian Jingū y Okazaki; el Castillo Nijō requiere un hueco separado, no se añade automáticamente.",
       "hotel": "kioto-karasuma",
       "transportRefs": [],
       "places": [],
       "headerPlaces": [
-        "Jidai Matsuri y patrimonio de Kioto"
+        "Kyoto Gyoen · inicio del desfile",
+        "Jidai Matsuri · procesión histórica",
+        "Heian Jingū · final del recorrido"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Heian Jingū · programa oficial",
+          "url": "https://www.heianjingu.or.jp/ritual/jidaimatsuri/"
+        },
+        {
+          "label": "Turismo de Kioto · normas y asientos",
+          "url": "https://ja.kyoto.travel/event/major/jidai/request.php"
+        }
+      ]
     },
     {
       "n": 10,
