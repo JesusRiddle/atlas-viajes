@@ -15,6 +15,9 @@ El procedimiento debe funcionar aunque no exista ningún JSON turístico complet
 
 No exigir ninguna visita, ciudad, tarifa, cantidad de noches, fotografía o elección editorial tomada para un viaje anterior.
 
+## Terminología y métricas visibles
+En Inicio, portada, Panorama y comparativas mostrar alojamiento en formato «X noches, Y alojamientos», calculado desde los datos, con singular/plural correcto. Prohibido «bases para dormir», «Noches y bases» o «estancias» como etiqueta de cantidad de alojamientos. `bases` y `days[].base` son claves técnicas y no deben cambiarse por esta regla. Auditar el renderizador además de los JSON para evitar textos heredados.
+
 ## Composición obligatoria y navegación
 Preservar el encabezado `triphero`, menú `subnav` y exactamente estas nueve secciones, con estas anclas, en este orden:
 
