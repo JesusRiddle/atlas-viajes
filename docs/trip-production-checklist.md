@@ -50,3 +50,9 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 
 ## Comunicación con el usuario
 Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados, resultados verificables, pendientes que requieren datos externos y decisión requerida. No pedir al usuario revisar pantalla por pantalla salvo anomalías realmente imposibles de probar. Evitar prometer que «todo está probado» si no se ejecutó la comprobación completa.
+
+## Control de divisas y presentación monetaria
+- [ ] Todo importe en moneda extranjera lleva inmediatamente la equivalencia `(... ≈ $X MXN)` en cada sección y tarjeta donde aparece, incluidos días, transportes, reservas, hoteles y gastos.
+- [ ] Los tipos de cambio tienen fuente y fecha, y las conversiones usan los snapshots de cada viaje cuando estén disponibles.
+- [ ] Los importes opcionales, históricos o no cotizados conservan su estado; no se duplican en presupuesto.
+- [ ] Se auditan renderizado y datos para detectar monedas sin equivalencia, evitar dobles conversiones y no alterar enlaces, tiempos o números de referencia.
