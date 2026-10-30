@@ -1237,5 +1237,349 @@
       "note": "La excursión a Nara se paga ida y vuelta; el transporte a Universal no está incluido en Studio Pass. No sumar simultáneamente regreso Osaka→Tokio y Osaka→KIX, ni pagar alternativas de pase y billete individual para el mismo tramo."
     }
   ],
-  "local": "La ruta se organiza desde los alojamientos, no solo entre estaciones: Tokio (Ueno-Okachimachi) exige sumar conexión a Shinjuku para Kawaguchiko y a Tokyo/Shinagawa para el shinkansen; Kioto (Shijō/Karasuma) facilita Hankyu hacia Osaka, mientras Nara requiere conectar con Kyoto Station. En Osaka, Namba permite caminar a Dotonbori y tomar tren hacia Universal City. Usar tarjeta IC para transporte urbano compatible, sin confundirla con reservas de trenes rápidos. Fechas, horarios y costos siguen sin confirmar para 2027."
+  "local": "La ruta se organiza desde los alojamientos, no solo entre estaciones: Tokio (Ueno-Okachimachi) exige sumar conexión a Shinjuku para Kawaguchiko y a Tokyo/Shinagawa para el shinkansen; Kioto (Shijō/Karasuma) facilita Hankyu hacia Osaka, mientras Nara requiere conectar con Kyoto Station. En Osaka, Namba permite caminar a Dotonbori y tomar tren hacia Universal City. Usar tarjeta IC para transporte urbano compatible, sin confundirla con reservas de trenes rápidos. Fechas, horarios y costos siguen sin confirmar para 2027.",
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-10-14",
+      "title": "CDMX → Japón · salida provisional",
+      "base": "En vuelo",
+      "am": "1. Pasaporte, franquicia y documentación de escala",
+      "pm": "1. Llegar al AICM con margen para check-in y seguridad",
+      "night": "1. Salida internacional según vuelo que se adquiera",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* No hay vuelos ni fechas confirmados; llegada al día siguiente solo como supuesto.",
+      "transportRefs": [
+        "flight-international"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "CDMX → Japón · salida provisional"
+      ],
+      "spend": null
+    },
+    {
+      "n": 2,
+      "date": "2027-10-15",
+      "title": "Llegada a Tokio · Ueno",
+      "base": "Tokio",
+      "am": "1. Llegar, pasar migración y recoger equipaje",
+      "pm": "1. Trasladarse de HND/NRT a Ueno-Okachimachi; dejar maleta",
+      "night": "1. Pasear por Ameyoko solo con tiempo; cenar y dormir",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* La llegada puede desplazarse según la ruta aérea; no reservar entradas este día.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [
+        "flight-international",
+        "airport-tokyo"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Llegada a Tokio · Ueno"
+      ],
+      "spend": null
+    },
+    {
+      "n": 3,
+      "date": "2027-10-16",
+      "title": "Asakusa y Ueno · Japón tradicional",
+      "base": "Tokio",
+      "am": "1. Sensō-ji, Nakamise y calles de Asakusa",
+      "pm": "1. Parque de Ueno y Ameyoko; museo opcional",
+      "night": "1. Cena cerca de Okachimachi y descanso",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* Museos sujetos a horario; priorizar paseos sin largas conexiones.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Asakusa y Ueno · Japón tradicional"
+      ],
+      "spend": null
+    },
+    {
+      "n": 4,
+      "date": "2027-10-17",
+      "title": "Meiji Jingū, Harajuku y Shibuya",
+      "base": "Tokio",
+      "am": "1. Santuario Meiji y paseo por Harajuku",
+      "pm": "1. Shibuya, cruce peatonal y mirador SHIBUYA SKY opcional",
+      "night": "1. Cena en Shibuya y regreso al hotel",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* Reservar mirador solo si la franja y el clima convienen.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Meiji Jingū, Harajuku y Shibuya"
+      ],
+      "spend": null
+    },
+    {
+      "n": 5,
+      "date": "2027-10-18",
+      "title": "Akihabara y Shinjuku · Tokio nocturno",
+      "base": "Tokio",
+      "am": "1. Tiendas de tecnología y cultura popular en Akihabara",
+      "pm": "1. Pasear por Shinjuku; pausa antes de salir de noche",
+      "night": "1. Omoide Yokochō y Golden Gai, ambos opcionales",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* Revisar último tren y posibles cargos de bares.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Akihabara y Shinjuku · Tokio nocturno"
+      ],
+      "spend": null
+    },
+    {
+      "n": 6,
+      "date": "2027-10-19",
+      "title": "Kawaguchiko · monte Fuji",
+      "base": "Tokio",
+      "am": "1. Traslado de Ueno a Shinjuku y viaje a Kawaguchiko",
+      "pm": "1. Lago Kawaguchi, Oishi Park y almuerzo de hōtō",
+      "night": "1. Regreso reservado a Tokio y descanso",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* Intercambiar con el día flexible si el clima y los boletos lo permiten.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [
+        "fuji-daytrip"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Kawaguchiko · monte Fuji"
+      ],
+      "spend": null
+    },
+    {
+      "n": 7,
+      "date": "2027-10-20",
+      "title": "Ginza y Marunouchi · día flexible",
+      "base": "Tokio",
+      "am": "1. Pasear por Ginza y sus comercios",
+      "pm": "1. Tokyo Station, Marunouchi y jardines exteriores si están abiertos",
+      "night": "1. Preparar maleta y cenar cerca de Ueno",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* Alternativa meteorológica para Fuji; no fijar reservas irreversibles.",
+      "hotel": "tokio-ueno-inicio",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Ginza y Marunouchi · día flexible"
+      ],
+      "spend": null
+    },
+    {
+      "n": 8,
+      "date": "2027-10-21",
+      "title": "Tokio → Kioto · llegada a Higashiyama",
+      "base": "Kioto",
+      "am": "1. Check-out y tren bala desde Tokyo Station",
+      "pm": "1. Llegar al hotel de Shijō-Karasuma; paseo por Higashiyama",
+      "night": "1. Gion y zona de Yasaka según energía",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* No programar una entrada con horario después del cambio de ciudad.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [
+        "tokyo-kyoto"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Tokio → Kioto · llegada a Higashiyama"
+      ],
+      "spend": null
+    },
+    {
+      "n": 9,
+      "date": "2027-10-22",
+      "title": "Jidai Matsuri y patrimonio de Kioto",
+      "base": "Kioto",
+      "am": "1. Castillo Nijō temprano solo si encaja con el desfile",
+      "pm": "1. Ver Jidai Matsuri el 22 de octubre si se confirma; Heian Jingū de alternativa",
+      "night": "1. Cena en el centro y descanso",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* El festival puede aplazarse; si Nijō no cabe, reemplazarlo sin recortar la procesión.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Jidai Matsuri y patrimonio de Kioto"
+      ],
+      "spend": null
+    },
+    {
+      "n": 10,
+      "date": "2027-10-23",
+      "title": "Fushimi Inari y Kiyomizu-dera",
+      "base": "Kioto",
+      "am": "1. Fushimi Inari temprano; subida parcial a conveniencia",
+      "pm": "1. Kiyomizu-dera, Sannenzaka y Ninenzaka",
+      "night": "1. Paseo por Gion solo si quedan energías",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* Día con escaleras y pendientes: evitar otras entradas rígidas.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Fushimi Inari y Kiyomizu-dera"
+      ],
+      "spend": null
+    },
+    {
+      "n": 11,
+      "date": "2027-10-24",
+      "title": "Arashiyama y Pabellón Dorado",
+      "base": "Kioto",
+      "am": "1. Bosque de bambú y Tenryū-ji si interesa",
+      "pm": "1. Traslado a Kinkaku-ji y visita sin añadir templos lejanos",
+      "night": "1. Cena en Shijō-Karasuma y descanso",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* Revisar los horarios de cierre y la conexión transversal.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Arashiyama y Pabellón Dorado"
+      ],
+      "spend": null
+    },
+    {
+      "n": 12,
+      "date": "2027-10-25",
+      "title": "Nara · Gran Buda y ciervos",
+      "base": "Kioto",
+      "am": "1. Tren de Kyoto Station a Nara; parque y ciervos",
+      "pm": "1. Tōdai-ji, Gran Buda y Kasuga Taisha si hay tiempo",
+      "night": "1. Regreso a Kioto; preparar equipaje",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* Respetar las indicaciones de convivencia con los ciervos.",
+      "hotel": "kioto-karasuma",
+      "transportRefs": [
+        "kyoto-nara"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Nara · Gran Buda y ciervos"
+      ],
+      "spend": null
+    },
+    {
+      "n": 13,
+      "date": "2027-10-26",
+      "title": "Kioto → Osaka · Dotonbori",
+      "base": "Osaka",
+      "am": "1. Hankyu desde Karasuma o tren JR, y conexión a Namba",
+      "pm": "1. Dejar equipaje, recorrer Kuromon y Dotonbori",
+      "night": "1. Takoyaki u okonomiyaki y descanso",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* La visita al mercado depende de su horario; hotel no reservado.",
+      "hotel": "osaka-namba",
+      "transportRefs": [
+        "kyoto-osaka"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Kioto → Osaka · Dotonbori"
+      ],
+      "spend": null
+    },
+    {
+      "n": 14,
+      "date": "2027-10-27",
+      "title": "Universal Studios Japan · día completo",
+      "base": "Osaka",
+      "am": "1. Salida anticipada a Universal City y controles",
+      "pm": "1. Super Nintendo World y Harry Potter según accesos disponibles",
+      "night": "1. Regreso a Namba y cena ligera",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* Studio Pass pendiente; Express Pass opcional, nunca obligatorio.",
+      "hotel": "osaka-namba",
+      "transportRefs": [
+        "osaka-usj"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Universal Studios Japan · día completo"
+      ],
+      "spend": null
+    },
+    {
+      "n": 15,
+      "date": "2027-10-28",
+      "title": "Castillo de Osaka y Shinsekai",
+      "base": "Osaka",
+      "am": "1. Parque y exteriores del Castillo de Osaka",
+      "pm": "1. Shinsekai, Tsūtenkaku por fuera y kushikatsu",
+      "night": "1. Paseo por Namba o descanso",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* Museo del castillo y mirador de la torre son opcionales.",
+      "hotel": "osaka-namba",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Castillo de Osaka y Shinsekai"
+      ],
+      "spend": null
+    },
+    {
+      "n": 16,
+      "date": "2027-10-29",
+      "title": "Nippombashi · margen para imprevistos",
+      "base": "Osaka",
+      "am": "1. Recorrer Den Den Town y tiendas de Nippombashi",
+      "pm": "1. Compras, museo próximo o pendientes de Osaka",
+      "night": "1. Preparar equipaje y confirmar ruta de salida",
+      "mobility": "• *Cómo trasladarte:* Organizar caminatas y transporte urbano desde el alojamiento.",
+      "note": "• *Tips del día:* También sirve como respaldo para reprogramar Universal.",
+      "hotel": "osaka-namba",
+      "transportRefs": [],
+      "places": [],
+      "headerPlaces": [
+        "Nippombashi · margen para imprevistos"
+      ],
+      "spend": null
+    },
+    {
+      "n": 17,
+      "date": "2027-10-30",
+      "title": "Osaka → Tokio · última noche condicionada",
+      "base": "Tokio",
+      "am": "1. Salir de Namba y viajar a Shin-Osaka",
+      "pm": "1. Shinkansen a Tokio y traslado al hotel final",
+      "night": "1. Cena cercana y descanso",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* Solo escenario de vuelo redondo; regreso desde KIX obliga a reasignar esta noche.",
+      "hotel": "tokio-ueno-regreso",
+      "transportRefs": [
+        "osaka-tokyo-or-kix"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Osaka → Tokio · última noche condicionada"
+      ],
+      "spend": null
+    },
+    {
+      "n": 18,
+      "date": "2027-10-31",
+      "title": "Japón → CDMX · regreso provisional",
+      "base": "En vuelo",
+      "am": "1. Check-out y llegada a HND o NRT con margen",
+      "pm": "1. Vuelo internacional y escalas según reserva real",
+      "night": "1. Llegada a México según husos horarios y conexiones",
+      "mobility": "• *Cómo trasladarte:* Consultar conexiones y billetes en Movilidad y conexiones.",
+      "note": "• *Tips del día:* La fecha de llegada a CDMX no está confirmada; si se vuela desde KIX, rehacer salida.",
+      "transportRefs": [
+        "flight-international",
+        "tokyo-airport-return"
+      ],
+      "places": [],
+      "headerPlaces": [
+        "Japón → CDMX · regreso provisional"
+      ],
+      "spend": null
+    }
+  ]
 }
