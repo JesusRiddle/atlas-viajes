@@ -246,7 +246,7 @@
       "night": "Al llegar a St. Moritz, ve directamente al hotel y cena cerca.",
       "mobility": "Glacier Express directo, 7 h 47 min según el horario de invierno 2026/27 publicado. La operación prevista no equivale a tener asiento disponible.",
       "spend": 4000,
-      "note": "Las reservas de diciembre se anuncian desde mediados de octubre. Precio individual de referencia publicado: CHF 159 en segunda clase más CHF 54 de asiento; confirma la tarifa de tu fecha. Un pase válido puede cubrir el billete, pero no elimina la reserva adicional."
+      "note": "Las reservas de diciembre se anuncian desde mediados de octubre. Precio individual de referencia publicado: CHF 159 (≈ $3,589 MXN) en segunda clase más CHF 54 (≈ $1,219 MXN) de asiento; confirma la tarifa de tu fecha. Un pase válido puede cubrir el billete, pero no elimina la reserva adicional."
     },
     {
       "n": 9,
@@ -312,7 +312,7 @@
       "am": "Entrega el hotel y dirígete a Malpensa. Como referencia, Malpensa Express tarda 51 minutos entre Milano Centrale y la terminal 1.",
       "pm": "Vuela desde MXP hacia MEX con la conexión que hayas reservado. Añade al traslado el margen de unas tres horas en el aeropuerto.",
       "night": "Llegada prevista a Ciudad de México el 16 de diciembre, sujeta al itinerario aéreo elegido.",
-      "mobility": "Tren Malpensa Express: tarifa publicada de €15 por sentido, más vuelo internacional. Confirma terminal y horario.",
+      "mobility": "Tren Malpensa Express: tarifa publicada de €15 (≈ $313 MXN) por sentido, más vuelo internacional. Confirma terminal y horario.",
       "spend": 650,
       "note": "Si el vuelo elegido aterriza el 17, esta alternativa pasará a 13 días naturales y nueve laborales. No cierres las vacaciones hasta comprobarlo."
     }
@@ -480,11 +480,11 @@
     "prices": [
       [
         "Glacier Express",
-        "CHF 159 segunda clase + CHF 54 de asiento = CHF 213 como referencia. Confirmar precio de invierno. Con pase válido sigue siendo necesaria la reserva del asiento."
+        "CHF 159 (≈ $3,589 MXN) segunda clase + CHF 54 (≈ $1,219 MXN) de asiento = CHF 213 (≈ $4,807 MXN) como referencia. Confirmar precio de invierno. Con pase válido sigue siendo necesaria la reserva del asiento."
       ],
       [
         "Bernina y tramo italiano",
-        "Referencia RhB vigente hasta 12 dic: St. Moritz–Tirano CHF 33 y suplemento CHF 40 del servicio 951. Trenord €12.50 y Malpensa Express €15; confirmar tarifas."
+        "Referencia RhB vigente hasta 12 dic: St. Moritz–Tirano CHF 33 (≈ $745 MXN) y suplemento CHF 40 (≈ $903 MXN) del servicio 951. Trenord €12.50 (≈ $261 MXN) y Malpensa Express €15 (≈ $313 MXN); confirmar tarifas."
       ]
     ],
     "note": "Referencias orientativas incluidas en los cálculos de transporte. No sumarlas otra vez. Tarifas y horarios pueden cambiar."
