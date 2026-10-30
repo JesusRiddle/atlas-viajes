@@ -20,6 +20,8 @@ En Inicio, portada, Panorama y comparativas mostrar alojamiento en formato «X n
 
 **Idioma y moneda:** `practicalIndicators.language.badge` debe mostrar idioma local y código ISO de moneda («Japonés · JPY»), nunca una valoración genérica de organización del viaje. Los consejos de pago e inglés van en `text`. Esta convención se verifica antes de aprobar viajes nuevos.
 
+**Electricidad y adaptadores:** el indicador `entry` debe comparar enchufes de cada país con México (A/B) y decidir explícitamente si se requiere adaptador. Cuando sí, describir la conexión exacta que debe comprarse y advertir sobre toma de tierra, voltaje/frecuencia y cargadores INPUT 100–240 V; nunca dejar «adaptador si corresponde» como indicación genérica. No modificar datos eléctricos de viajes históricos por esta regla.
+
 ## Composición obligatoria y navegación
 Preservar el encabezado `triphero`, menú `subnav` y exactamente estas nueve secciones, con estas anclas, en este orden:
 
