@@ -2539,13 +2539,14 @@
     "high": 107000,
     "status": "estimated",
     "label": "Proyección integral · escenario vuelo redondo por Tokio",
-    "basis": "Presupuesto de planeación para 1 persona y 18 días: gastos terrestres estimados en expenses + SOLO referencia de vuelo redondo A de septiembre de 2027 por $28,417 MXN. No es cotización para octubre de 2027. Incluye alojamiento, alimentos, traslados urbanos e interurbanos, USJ y otros accesos, impuestos, conectividad, extras y colchón. La vuelta Osaka→Tokio incluida SOLO corresponde al escenario Tokio; si se compra KIX, sustituir retorno y última noche. La sección de gastos contabiliza partidas terrestres; los vuelos se comparan en Traslados y NO se duplican como gasto independiente. El límite alto incluye margen extra para tarifas de octubre, equipaje y posibles cambios. Express Pass, compras importantes y gastos personales extraordinarios fuera del plan.",
+    "basis": "Presupuesto de planeación para 1 persona y 18 días: gastos terrestres estimados en expenses + SOLO referencia de vuelo redondo A de septiembre de 2027 por $28,417 MXN. No es cotización para octubre de 2027. Incluye alojamiento, alimentos, traslados urbanos e interurbanos, USJ y otros accesos, impuestos, conectividad, extras y colchón. La vuelta Osaka→Tokio incluida SOLO corresponde al escenario Tokio; si se compra KIX, sustituir retorno y última noche. La sección de gastos contabiliza partidas terrestres; los vuelos se comparan en Traslados y NO se duplican como gasto independiente. El límite alto incluye margen extra para tarifas de octubre, equipaje y posibles cambios. Express Pass, compras importantes y gastos personales extraordinarios fuera del plan. La portada calcula su rango en cada carga desde el desglose actualizado, con margen adicional de $16,000 MXN, y el vuelo elegido o la primera tarifa referencial cuando no hay selección.",
     "pending": [
       "Precio y horarios reales del vuelo internacional para 14–31 octubre 2027",
       "Confirmación de tarifas 2027 de trenes y entradas",
       "Selección final Tokio vs KIX y última noche",
       "Cotización real de hoteles e impuestos"
-    ]
+    ],
+    "marginMXN": 16000
   },
   "exchangeRateSnapshot": {
     "date": "2026-10-29",
