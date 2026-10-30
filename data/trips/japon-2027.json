@@ -2070,7 +2070,11 @@
       "note": "• *Ritmo:* Primera jornada completa adaptable al jet lag; no sumar Shibuya, Shinjuku ni otros barrios alejados.\n• *Museo opcional:* El Museo Nacional de Tokio suele abrir desde las 9:30 y cerrar los lunes; confirmar fecha de 2027 antes de pagar.\n• *Gasto orientativo:* Metro de ida y vuelta desde ¥356 (≈ $43 MXN) con IC; museo opcional ¥1,000 (≈ $120 MXN) más comida y compras variables. El museo sustituye tiempo de paseo, no se añade automáticamente.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-sensoji",
+        "japan27-ueno-park",
+        "japan27-ameyoko"
+      ],
       "headerPlaces": [
         "Sensō-ji · Asakusa",
         "Parque de Ueno",
@@ -2100,7 +2104,11 @@
       "note": "• *Domingo:* Meiji Jingū temprano ayuda a evitar parte de la afluencia; Harajuku puede estar concurrido.\n• *Mirador opcional:* SHIBUYA SKY indica venta oficial con hasta dos semanas de anticipación; referencia de octubre de 2026: ¥2,700 (≈ $323 MXN) antes de las 15:00 o ¥3,400 (≈ $407 MXN) desde las 15:00. Azotea sujeta a clima.\n• *Gastos:* Transporte urbano, comidas y compras pendientes; no contar la entrada al mirador hasta elegirla.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-meiji-jingu",
+        "japan27-harajuku",
+        "japan27-shibuya"
+      ],
       "headerPlaces": [
         "Meiji Jingū",
         "Harajuku y Omotesandō",
@@ -2130,7 +2138,10 @@
       "note": "• *Observatorio gratuito:* No hay cierre general de lunes: cada torre tiene calendario propio; la entrada no cuesta, pero puede haber suspensión imprevista.\n• *Golden Gai:* Actividad opcional; revisar cargos de mesa, normas de acceso y último tren.\n• *Ritmo:* Mantener descanso antes de una noche en Shinjuku.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-akihabara",
+        "japan27-shinjuku"
+      ],
       "headerPlaces": [
         "Akihabara",
         "Shinjuku",
@@ -2158,7 +2169,10 @@
       "transportRefs": [
         "fuji-daytrip"
       ],
-      "places": [],
+      "places": [
+        "japan27-kawaguchi-autumn",
+        "japan27-oishi-park"
+      ],
       "headerPlaces": [
         "Kawaguchiko Station",
         "Lago Kawaguchi",
@@ -2188,7 +2202,10 @@
       "note": "• *Fuji como prioridad:* Este miércoles puede sustituir a la excursión de Kawaguchiko del martes 19 si mejora la visibilidad y los boletos permiten cambios.\n• *Salida del hotel:* Confirmar acceso, horario de check-out y trayecto Okachimachi → Tokyo Station para el jueves.\n• *Gastos:* Transporte urbano y alimentos pendientes; compras opcionales, sin tarifa diaria inventada.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-ginza",
+        "japan27-tokyo-station"
+      ],
       "headerPlaces": [
         "Ginza · avenidas y comercios",
         "Marunouchi · Tokyo Station",
@@ -2604,5 +2621,19 @@
     "weather": "Octubre recomendable"
   },
   "solo": "Viaje independiente pensado para una persona: cuatro estancias provisionales, traslados principalmente en tren, excursiones sin cambiar de hotel y días intensos alternados con caminatas más relajadas.",
-  "flight": "Salida de CDMX el 14 de octubre y llegada estimada a Tokio el 15; cuatro cotizaciones comparativas de septiembre 2027, ninguna reservada. Regreso provisional el 31 de octubre desde Tokio, o alternativo desde KIX con redistribución de la última noche; confirmar itinerario aéreo antes de reservar."
+  "flight": "Salida de CDMX el 14 de octubre y llegada estimada a Tokio el 15; cuatro cotizaciones comparativas de septiembre 2027, ninguna reservada. Regreso provisional el 31 de octubre desde Tokio, o alternativo desde KIX con redistribución de la última noche; confirmar itinerario aéreo antes de reservar.",
+  "placeDescriptions": {
+    "japan27-sensoji": "La gran linterna de Kaminarimon señala la entrada al recinto de Sensō-ji, uno de los templos budistas más emblemáticos de Tokio.",
+    "japan27-ueno-park": "El parque de Ueno reúne amplios senderos, museos y espacios arbolados: una pausa cultural junto a la zona de Okachimachi.",
+    "japan27-ameyoko": "Bajo las vías y entre calles comerciales, Ameyoko concentra puestos de comida, pequeños negocios y el movimiento cotidiano de Ueno.",
+    "japan27-meiji-jingu": "Rodeado por un bosque urbano, Meiji Jingū ofrece senderos tranquilos y arquitectura sintoísta a pocos pasos de Harajuku.",
+    "japan27-harajuku": "Takeshita-dōri concentra boutiques, escaparates coloridos y cultura juvenil en el corazón comercial de Harajuku.",
+    "japan27-shibuya": "El famoso cruce de Shibuya reúne peatones, pantallas y grandes avenidas en uno de los escenarios urbanos más reconocibles de Tokio.",
+    "japan27-akihabara": "Las fachadas luminosas de Akihabara ilustran su concentración de tiendas de electrónica, videojuegos, anime y cultura popular japonesa.",
+    "japan27-shinjuku": "Las calles iluminadas de Shinjuku muestran el Tokio nocturno entre anuncios, restaurantes y una intensa actividad alrededor de la estación.",
+    "japan27-kawaguchi-autumn": "Desde la ribera del lago Kawaguchi se divisa el monte Fuji; esta fotografía documenta colores otoñales, sujetos a la temporada y al clima.",
+    "japan27-oishi-park": "Oishi Park ofrece una panorámica del lago Kawaguchi y el monte Fuji, visible cuando la nubosidad permite contemplar su silueta.",
+    "japan27-ginza": "Las avenidas comerciales de Ginza combinan grandes almacenes y arquitectura contemporánea; algunos tramos se convierten en paseos peatonales.",
+    "japan27-tokyo-station": "La fachada histórica de ladrillo rojo de Tokyo Station preside Marunouchi, entre edificios de oficinas y grandes avenidas del centro."
+  }
 }
