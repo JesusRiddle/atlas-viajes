@@ -1242,32 +1242,39 @@
     {
       "n": 1,
       "date": "2027-10-14",
-      "title": "CDMX → Japón · salida provisional",
+      "title": "CDMX → Japón · salida internacional (escenario)",
       "base": "En vuelo",
-      "am": "1. Comprobar vigencia del pasaporte, vuelos y requisitos de escalas.\n2. Preparar equipaje de mano con documentos, medicamentos y artículos necesarios a bordo.",
-      "pm": "1. Dirigirse al AICM con margen según la aerolínea y el tráfico.\n2. Realizar documentación y controles cuando corresponda.",
-      "night": "1. Embarcar en el vuelo contratado; podría incluir conexión o salida a otra hora.\n2. Descansar durante el trayecto, respetando horarios locales.",
-      "mobility": "• *AICM:* Confirmar terminal, franquicia y apertura del check-in.\n• *Vuelo:* No se conocen horarios ni escalas; la llegada al día siguiente es provisional.",
-      "note": "• *Sin comprar:* No existen boletos aéreos confirmados.\n• *Ajuste:* Si el vuelo llega después del 15, desplazar la ruta antes de reservar hoteles.",
+      "am": "1. Revisar pasaporte vigente, comprobante de regreso, alojamiento candidato y requisitos de entrada a Japón; para turismo de menos de 90 días, los mexicanos están exentos de visa, sujeto a verificación previa.\n2. Comprobar si el itinerario aéreo requiere tránsito o entrada en un tercer país y preparar documentos, medicamentos y cargadores en el equipaje de mano.",
+      "pm": "1. Hacer check-in en línea cuando se habilite y comprobar terminal, documentación de equipaje y límite de peso de la tarifa finalmente elegida.\n2. Salir hacia el AICM calculando tráfico y el margen indicado por la aerolínea; tomar como objetivo orientativo al menos 3 horas antes de un vuelo internacional, nunca como horario confirmado.",
+      "night": "1. Pasar documentación, seguridad y embarque según el vuelo finalmente comprado.\n2. Descansar a bordo o durante la conexión. La salida nocturna y llegada a Tokio el 15 de octubre son hipótesis, no itinerario aéreo contratado.",
+      "mobility": "• *Casa → AICM:* Elegir transporte según terminal y tráfico; no existe hora de salida confirmada.\n• *Vuelo internacional:* Comparar redondo a Tokio y multidestino con regreso desde KIX, equipaje, escalas y duración puerta a puerta.",
+      "note": "• *Estado:* Sin vuelo comprado ni horario asignado; no estimar una llegada que todavía no conocemos.\n• *Documentación:* Confirmar visa/exención y requisitos del país de conexión al emitir el boleto.\n• *Gastos:* Vuelo pendiente de cotización; alimentos y traslado al AICM dependen de la hora y del medio elegido.",
       "transportRefs": [
         "flight-international"
       ],
       "places": [],
       "headerPlaces": [
-        "CDMX → Japón · salida provisional"
+        "Aeropuerto Internacional de la Ciudad de México · MEX",
+        "Vuelo a Tokio · conexión y horarios pendientes"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Embajada de Japón en México · exención de visa",
+          "url": "https://www.mx.emb-japan.go.jp/itprtop_es/tramite_solicitud_visa.html"
+        }
+      ]
     },
     {
       "n": 2,
       "date": "2027-10-15",
-      "title": "Llegada a Tokio · Ueno",
+      "title": "Llegada a Tokio · aeropuerto y primera noche en Ueno",
       "base": "Tokio",
-      "am": "1. Continuar el vuelo internacional si corresponde.\n2. Pasar migración y recoger equipaje tras aterrizar.",
-      "pm": "1. Identificar tren o monorraíl desde Haneda, o Skyliner desde Narita, según aeropuerto.\n2. Llegar a Ueno-Okachimachi, dejar equipaje o hacer check-in si está disponible.",
-      "night": "1. Paseo ligero por Ameyoko únicamente si queda tiempo.\n2. Cena sencilla cerca del hotel y descanso del jet lag.",
-      "mobility": "• *Aeropuerto → Ueno:* Consultar la opción correcta según HND/NRT y sumar migración y acceso al hotel.",
-      "note": "• *Prioridad:* Recuperarse del viaje; evitar reservas con hora fija.\n• *Hotel:* Sotetsu Fresa Inn Ueno-Okachimachi es candidato, no reservado.",
+      "am": "1. Continuar el vuelo o conexión según la hora real de llegada a Japón; ajustar los bloques del día si se aterriza por la tarde o noche.\n2. Pasar inmigración y aduanas, recoger equipaje si aplica y obtener conexión de datos y efectivo solo si hace falta.",
+      "pm": "1. Si se llega a Narita, considerar Keisei Skyliner hasta Keisei-Ueno (unos 41 minutos de tren; referencia 2026: ¥2,470 por adulto), más caminata al alojamiento.\n2. Si se llega a Haneda, comparar Keikyu o monorraíl y conexión JR hasta Ueno (aprox. 40 minutos desde aeropuerto a estación como referencia); localizar el hotel y gestionar check-in o consigna.",
+      "night": "1. Comer y dar un paseo corto por Ameyoko/Ueno únicamente si todavía hay tiempo y energía.\n2. Descansar para comenzar Asakusa sin prisas al día siguiente.",
+      "mobility": "• *NRT → Keisei-Ueno:* Skyliner directo; tarifa publicada ¥2,470 y trayecto de referencia de unos 41 minutos, sin migración, espera ni caminata.\n• *HND → Ueno:* Keikyu o monorraíl con conexión; referencia aeroportuaria de unos 40 minutos de tren hasta Ueno, sin esperas.\n• *Ueno → hotel:* Confirmar salida peatonal y recepción; no comprar servicios rígidos antes de completar migración.",
+      "note": "• *Hotel:* Sotetsu Fresa Inn Ueno-Okachimachi, candidato no reservado; consultar entrada tardía y resguardo de equipaje.\n• *Plan B:* Si se llega muy tarde, traslado y descanso únicamente; mover Ameyoko al día 3.\n• *Gasto orientativo:* Transporte NRT desde ¥2,470 por persona; HND y comidas pendientes de ruta y tarifa, sin contabilizar hotel dos veces.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [
         "flight-international",
@@ -1275,27 +1282,51 @@
       ],
       "places": [],
       "headerPlaces": [
-        "Llegada a Tokio · Ueno"
+        "Haneda (HND) o Narita (NRT) · por confirmar",
+        "Keisei-Ueno / Ueno-Okachimachi",
+        "Sotetsu Fresa Inn Ueno-Okachimachi · candidato"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Keisei · tarifa oficial Skyliner",
+          "url": "https://www.keisei.co.jp/keisei/tetudou/skyliner/us/traffic/skyliner_fares.php"
+        },
+        {
+          "label": "Haneda · acceso ferroviario",
+          "url": "https://www.tokyo-haneda.com/en/access/train/index.html"
+        }
+      ]
     },
     {
       "n": 3,
       "date": "2027-10-16",
-      "title": "Asakusa y Ueno · Japón tradicional",
+      "title": "Asakusa, Sensō-ji y Ueno · primer día completo",
       "base": "Tokio",
-      "am": "1. Visitar Sensō-ji temprano, antes de la mayor afluencia.\n2. Recorrer Nakamise y las calles tradicionales de Asakusa.",
-      "pm": "1. Ir a Ueno, pasear por su parque y elegir un museo solo si interesa y está abierto.\n2. Explorar los puestos de Ameyoko, con tiempo para comer.",
-      "night": "1. Regresar caminando o en transporte corto al hotel de Okachimachi.\n2. Cena de soba o monjayaki, según disponibilidad.",
-      "mobility": "• *Asakusa → Ueno:* Usar metro; evitar recorridos de ida y vuelta innecesarios.",
-      "note": "• *Ritmo:* Día de adaptación sin reservas obligatorias.\n• *Museos:* Confirmar horarios y cierres de la institución elegida.",
+      "am": "1. Salir del hotel sin madrugar en exceso si hay jet lag; desde Ueno usar la línea Ginza a Asakusa (aprox. 5 minutos de tren, sin contar caminatas).\n2. Recorrer Sensō-ji, la puerta Kaminarimon, Nakamise y las callejuelas de Asakusa; dedicar unas 2–3 horas a templo, fotografías y tiendas.",
+      "pm": "1. Almorzar soba, tempura o alguna especialidad local en Asakusa; volver en metro a Ueno.\n2. Pasear por el parque de Ueno. Si apetece arte o historia y el horario lo permite, entrar al Museo Nacional de Tokio (entrada general de referencia ¥1,000, 2026); de lo contrario, disfrutar del parque sin museo.",
+      "night": "1. Recorrer Ameyoko entre Ueno y Okachimachi, con margen para puestos que cierran temprano.\n2. Cenar por la zona y volver caminando al alojamiento; dejar la noche libre para recuperarse del viaje.",
+      "mobility": "• *Ueno → Asakusa:* Línea Ginza de Tokyo Metro, unos 5 minutos; ¥178 con IC o ¥180 en billete ordinario según tarifa de referencia 2026.\n• *Asakusa → Ueno:* Volver por línea Ginza; parque, Ameyoko y hotel quedan agrupados para reducir traslados.\n• *Paseos:* Contar caminatas en Nakamise, parque y mercado; el museo es una parada opcional, no un requisito.",
+      "note": "• *Ritmo:* Primera jornada completa adaptable al jet lag; no sumar Shibuya, Shinjuku ni otros barrios alejados.\n• *Museo opcional:* El Museo Nacional de Tokio publica apertura habitual desde las 9:30 y cierre los lunes; confirmar fecha de 2027 antes de pagar.\n• *Gasto orientativo:* Metro de ida y vuelta desde ¥356 con IC; museo opcional ¥1,000 más comida y compras variables. No sumar una entrada que se decida omitir.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
       "places": [],
       "headerPlaces": [
-        "Asakusa y Ueno · Japón tradicional"
+        "Sensō-ji · Asakusa",
+        "Parque de Ueno",
+        "Ameyoko · Okachimachi"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Tokyo Metro · tarifas y tiempos",
+          "url": "https://www.tokyometro.jp/lang_en/info/files/20260414_en.pdf"
+        },
+        {
+          "label": "Museo Nacional de Tokio · horarios",
+          "url": "https://www.tnm.jp/modules/r_free_page/?id=161&lang=en"
+        }
+      ]
     },
     {
       "n": 4,
