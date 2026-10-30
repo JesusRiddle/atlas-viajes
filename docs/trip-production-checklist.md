@@ -69,3 +69,10 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] «Clima y luz» muestra franja superior del MISMO color que el estado del mes de inicio en «Temporadas» y su etiqueta correspondiente (Recomendable/Aceptable/Desaconsejable/Por definir), incluso si el JSON tiene fechas solo en `days[]` y no en `start`.
 
 - [ ] En viajes nuevos la tarjeta «Clima y luz» tiene el encabezado COMPLETO coloreado, no solo un borde; muestra la etiqueta del estado y utiliza `pending` / «Por definir» cuando aún no se conoce la fecha. Comprobar los cuatro estados y que el CSS esté limitado al formato nuevo.
+
+## QA de cierre · viajes en planeación a alto nivel
+- [ ] Mismo rango de presupuesto calculado en Inicio y Panorama; la tabla de Presupuesto identifica aparte subtotal registrado frente a proyección global sin sumar ambos.
+- [ ] Para cada vuelo A/B/C/D: total = gastos terrestres aplicables + SOLO un vuelo; excluir hotel y retorno de escenario contrario, entradas opcionales y cualquier duplicación.
+- [ ] Reconciliar `expenses` y presupuesto por fecha aun si `days[].spend` es `null`; no completar este campo con importes duplicados.
+- [ ] Comprobar que el escenario alterno conserva el número de noches al sustituir último hotel, no sumarlo como alojamiento adicional.
+- [ ] No exigir logística de detalle ni compras mientras el objetivo sea una estimación orientativa. Fotos y pruebas visuales son pendientes independientes.
