@@ -146,7 +146,7 @@ window.AtlasHome = function (ctx) {
         const title = esc(t.name);
         const country = cardCountries(t.flag);
         const cities = t.routeCities.map(x => esc(x)).join(' · ');
-        const lodging = t.lodgingSummary || baseLabel(t.bases.length);
+        const lodging = t.lodgingSummary || (Array.isArray(t.bases) && t.bases.length ? baseLabel(t.bases) : 'Alojamientos por definir');
         return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
             '<div class="cardphoto">' + (covers[t.id] ? img(covers[t.id], '', false, false, true) : '<div class="draft-card-cover">Fotografías por incorporar</div>') + '<span class="rank">' + (i + 1) + '</span></div>' +
             '<div class="cardbody"><div class="card-overview"><span class="card-overview-location">' + (country ? esc(country) + ' · ' : '') + t.days.length +
