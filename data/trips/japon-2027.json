@@ -318,7 +318,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Estimación de habitación, no tarifa cotizada. Impuesto de alojamiento de Kioto no incluido: depende del precio real por persona/noche (desde marzo de 2026, ¥400/noche para ¥6,000–19,999). No sumarlo como confirmado antes de conocer la tarifa."
+      "notes": "Estimación de habitación, no tarifa cotizada. Impuesto de alojamiento de Kioto no incluido: depende del precio real por persona/noche (desde marzo de 2026, ¥400 (≈ $48 MXN)/noche para ¥6,000 (≈ $718 MXN)–19,999). No sumarlo como confirmado antes de conocer la tarifa."
     },
     {
       "id": "lodging-osaka-namba",
@@ -359,7 +359,7 @@
       [
         {
           "title": "Universal Studios Japan · Studio Pass y Super Nintendo World (Osaka)",
-          "description": "Destinar una jornada completa, preferentemente entre semana, a Universal Studios Japan. Studio Pass de 1 día desde ¥8,400 por adulto (referencia de octubre de 2026; tarifa variable). El pase general no garantiza acceso a Super Nintendo World: puede requerirse entrada con horario mediante la aplicación oficial o un producto específico. Elegir la fecha antes de otros accesos fijos; si no hay cupo, comparar otro día de Osaka. No comprado.",
+          "description": "Destinar una jornada completa, preferentemente entre semana, a Universal Studios Japan. Studio Pass de 1 día desde ¥8,400 (≈ $1,005 MXN) por adulto (referencia de octubre de 2026; tarifa variable). El pase general no garantiza acceso a Super Nintendo World: puede requerirse entrada con horario mediante la aplicación oficial o un producto específico. Elegir la fecha antes de otros accesos fijos; si no hay cupo, comparar otro día de Osaka. No comprado.",
           "links": [
             {
               "label": "Boletos oficiales",
@@ -427,7 +427,7 @@
         },
         {
           "title": "Castillo Nijō · Palacio Honmaru (Kioto)",
-          "description": "La visita general al castillo puede hacerse sin reservar el Palacio Honmaru: entrada de referencia ¥800, o ¥1,300 con el Palacio Ninomaru (29/10/2026). Honmaru exige reserva aparte, con entradas desde 30 días antes y ¥1,000 adicionales; solo elegirlo si interesa especialmente y encaja en la jornada. Verificar cierres y tarifas de 2027.",
+          "description": "La visita general al castillo puede hacerse sin reservar el Palacio Honmaru: entrada de referencia ¥800 (≈ $96 MXN), o ¥1,300 (≈ $155 MXN) con el Palacio Ninomaru (29/10/2026). Honmaru exige reserva aparte, con entradas desde 30 días antes y ¥1,000 (≈ $120 MXN) adicionales; solo elegirlo si interesa especialmente y encaja en la jornada. Verificar cierres y tarifas de 2027.",
           "links": [
             {
               "label": "Nijō · precios y reservas oficiales",
@@ -677,7 +677,7 @@
               "refunds": "Según tarifa adquirida"
             }
           ],
-          "notes": "Referencia del operador en octubre de 2026: autobús directo Busta Shinjuku↔Kawaguchiko, aprox. 1 h 45 min por sentido, ¥2,000 en línea o ¥2,200 en taquilla por sentido; reservar los dos tramos. El tráfico y la disponibilidad pueden variar. Desde Ueno se necesita traslado previo a Shinjuku; después, transporte local hasta Oishi Park."
+          "notes": "Referencia del operador en octubre de 2026: autobús directo Busta Shinjuku↔Kawaguchiko, aprox. 1 h 45 min por sentido, ¥2,000 (≈ $239 MXN) en línea o ¥2,200 (≈ $263 MXN) en taquilla por sentido; reservar los dos tramos. El tráfico y la disponibilidad pueden variar. Desde Ueno se necesita traslado previo a Shinjuku; después, transporte local hasta Oishi Park."
         },
         {
           "id": "B",
@@ -732,7 +732,7 @@
           "url": "https://www.jreast.co.jp/multi/en/"
         }
       ],
-      "ticketGuide": "Reservar tanto ida como regreso desde Shinjuku/Kawaguchiko. El autobús suele venderse desde un mes antes; actualmente la tarifa web publicada comienza en ¥2,000 por sentido, si aplica a ambas salidas, sin garantía para 2027. Desde el hotel en Ueno, sumar el traslado urbano a Shinjuku y las conexiones locales entre Kawaguchiko Station, el lago y Oishi Park. No confundir flexibilidad meteorológica con disponibilidad garantizada de asientos."
+      "ticketGuide": "Reservar tanto ida como regreso desde Shinjuku/Kawaguchiko. El autobús suele venderse desde un mes antes; actualmente la tarifa web publicada comienza en ¥2,000 (≈ $239 MXN) por sentido, si aplica a ambas salidas, sin garantía para 2027. Desde el hotel en Ueno, sumar el traslado urbano a Shinjuku y las conexiones locales entre Kawaguchiko Station, el lago y Oishi Park. No confundir flexibilidad meteorológica con disponibilidad garantizada de asientos."
     },
     {
       "id": "tokyo-kyoto",
@@ -1218,7 +1218,7 @@
   "ticketNotes": [
     {
       "title": "JR Pass nacional · comparar antes de comprar",
-      "note": "Como referencia, el pase nacional de 7 días cuesta ¥50,000 por compra online (2026); el itinerario solo contempla dos trayectos largos en shinkansen si se regresa desde Tokio. Priorizar billetes individuales y sumar primero los transportes elegibles: el pase no cubre de forma estándar el Nozomi sin suplemento especial."
+      "note": "Como referencia, el pase nacional de 7 días cuesta ¥50,000 (≈ $5,980 MXN) por compra online (2026); el itinerario solo contempla dos trayectos largos en shinkansen si se regresa desde Tokio. Priorizar billetes individuales y sumar primero los transportes elegibles: el pase no cubre de forma estándar el Nozomi sin suplemento especial."
     },
     {
       "title": "Shinkansen · billetes y equipaje",
@@ -1306,8 +1306,8 @@
       "am": "1. Salir del hotel sin madrugar en exceso si hay jet lag; desde Ueno usar la línea Ginza a Asakusa (aprox. 5 minutos de tren, sin contar caminatas).\n2. Recorrer Sensō-ji, la puerta Kaminarimon, Nakamise y las callejuelas de Asakusa; dedicar unas 2–3 horas a templo, fotografías y tiendas.",
       "pm": "1. Almorzar en Asakusa y regresar por la línea Ginza a Ueno.\n2. Priorizar un paseo por el parque de Ueno; si se elige el Museo Nacional de Tokio, dedicarle unas 2 horas y acortar el parque o Ameyoko.",
       "night": "1. Recorrer Ameyoko entre Ueno y Okachimachi, con margen para puestos que cierran temprano.\n2. Cenar por la zona y volver caminando al alojamiento; dejar la noche libre para recuperarse del viaje.",
-      "mobility": "• *Ueno → Asakusa:* Línea Ginza de Tokyo Metro, unos 5 minutos; ¥178 con IC o ¥180 en billete ordinario según tarifa de referencia 2026.\n• *Asakusa → Ueno:* Volver por línea Ginza; parque, Ameyoko y hotel quedan agrupados para reducir traslados.\n• *Paseos:* Contar caminatas en Nakamise, parque y mercado; el museo es una parada opcional, no un requisito.",
-      "note": "• *Ritmo:* Primera jornada completa adaptable al jet lag; no sumar Shibuya, Shinjuku ni otros barrios alejados.\n• *Museo opcional:* El Museo Nacional de Tokio suele abrir desde las 9:30 y cerrar los lunes; confirmar fecha de 2027 antes de pagar.\n• *Gasto orientativo:* Metro de ida y vuelta desde ¥356 con IC; museo opcional ¥1,000 más comida y compras variables. El museo sustituye tiempo de paseo, no se añade automáticamente.",
+      "mobility": "• *Ueno → Asakusa:* Línea Ginza de Tokyo Metro, unos 5 minutos; ¥178 (≈ $21 MXN) con IC o ¥180 (≈ $22 MXN) en billete ordinario según tarifa de referencia 2026.\n• *Asakusa → Ueno:* Volver por línea Ginza; parque, Ameyoko y hotel quedan agrupados para reducir traslados.\n• *Paseos:* Contar caminatas en Nakamise, parque y mercado; el museo es una parada opcional, no un requisito.",
+      "note": "• *Ritmo:* Primera jornada completa adaptable al jet lag; no sumar Shibuya, Shinjuku ni otros barrios alejados.\n• *Museo opcional:* El Museo Nacional de Tokio suele abrir desde las 9:30 y cerrar los lunes; confirmar fecha de 2027 antes de pagar.\n• *Gasto orientativo:* Metro de ida y vuelta desde ¥356 (≈ $43 MXN) con IC; museo opcional ¥1,000 (≈ $120 MXN) más comida y compras variables. El museo sustituye tiempo de paseo, no se añade automáticamente.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
       "places": [],
@@ -1337,7 +1337,7 @@
       "pm": "1. Caminar o tomar tren una estación hasta Shibuya; explorar el cruce, Hachikō y las calles del barrio, con tiempo para comer.\n2. Si interesa, reservar SHIBUYA SKY para la tarde; prever aproximadamente 60–90 minutos y respetar la franja de entrada.",
       "night": "1. Pasear por Shibuya iluminado y cenar sin cambiar de barrio.\n2. Volver en JR o metro hasta Ueno-Okachimachi; dejar margen para descansar.",
       "mobility": "• *Hotel → Harajuku:* Desde Okachimachi, línea JR Yamanote hacia Harajuku; sumar caminata al santuario.\n• *Harajuku → Shibuya:* Aproximadamente una estación en JR o paseo a pie por el eje Omotesandō y Cat Street según cansancio.\n• *Regreso:* Tren desde Shibuya hasta Okachimachi; confirmar última salida si se prolonga la cena.",
-      "note": "• *Domingo:* Meiji Jingū temprano ayuda a evitar parte de la afluencia; Harajuku puede estar concurrido.\n• *Mirador opcional:* SHIBUYA SKY indica venta oficial con hasta dos semanas de anticipación; referencia de octubre de 2026: ¥2,700 antes de las 15:00 o ¥3,400 desde las 15:00. Azotea sujeta a clima.\n• *Gastos:* Transporte urbano, comidas y compras pendientes; no contar la entrada al mirador hasta elegirla.",
+      "note": "• *Domingo:* Meiji Jingū temprano ayuda a evitar parte de la afluencia; Harajuku puede estar concurrido.\n• *Mirador opcional:* SHIBUYA SKY indica venta oficial con hasta dos semanas de anticipación; referencia de octubre de 2026: ¥2,700 (≈ $323 MXN) antes de las 15:00 o ¥3,400 (≈ $407 MXN) desde las 15:00. Azotea sujeta a clima.\n• *Gastos:* Transporte urbano, comidas y compras pendientes; no contar la entrada al mirador hasta elegirla.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
       "places": [],
@@ -1392,8 +1392,8 @@
       "am": "1. Salir temprano desde el hotel hacia Busta Shinjuku; reservar margen para ubicar la terminal y abordar el autobús interurbano.\n2. Viajar a Kawaguchiko (aprox. 1 h 45 min sin congestión) y dirigirse a la orilla del lago; buscar vistas del monte Fuji únicamente si el cielo está despejado.",
       "pm": "1. Utilizar el autobús turístico local u otra conexión válida para llegar a Oishi Park, disfrutar del paisaje y volver con margen a Kawaguchiko Station.\n2. Comer hōtō en la zona y consultar el estado del transporte de retorno antes de alejarse de la estación.",
       "night": "1. Regresar desde Kawaguchiko a Shinjuku con boleto válido y continuar en JR/metro hasta Ueno-Okachimachi.\n2. Cenar cerca del hotel y descansar después de una excursión larga.",
-      "mobility": "• *Ueno → Busta Shinjuku:* Tren urbano y caminata hasta la terminal; llegar antes de la salida reservada.\n• *Shinjuku ↔ Kawaguchiko:* Autobús directo, referencia desde ¥2,000 por sentido en línea (desde ¥4,000 ida y vuelta solo si ambas salidas tienen tarifa web de ¥2,000) y alrededor de 1 h 45 min por tramo, sujeto a tráfico.\n• *Kawaguchiko ↔ Oishi Park:* Transporte turístico local de pago; verificar frecuencia, pase aplicable y última salida antes de subir.",
-      "note": "• *Reserva:* La venta de autobús se abre normalmente un mes antes. Elegir ambos sentidos, comprobar condiciones de cambio y evitar depender de un asiento no garantizado.\n• *Clima:* Las vistas del Fuji dependen de la nubosidad; solo intercambiar este día con Ginza/Marunouchi si los boletos lo permiten.\n• *Gasto de referencia:* Desde ¥4,000 por ida y vuelta con dos tarifas web mínimas; el precio real podría subir. Faltan transporte Ueno–Shinjuku, autobús local a Oishi Park, alimentos y compras.",
+      "mobility": "• *Ueno → Busta Shinjuku:* Tren urbano y caminata hasta la terminal; llegar antes de la salida reservada.\n• *Shinjuku ↔ Kawaguchiko:* Autobús directo, referencia desde ¥2,000 (≈ $239 MXN) por sentido en línea (desde ¥4,000 (≈ $478 MXN) ida y vuelta solo si ambas salidas tienen tarifa web de ¥2,000 (≈ $239 MXN)) y alrededor de 1 h 45 min por tramo, sujeto a tráfico.\n• *Kawaguchiko ↔ Oishi Park:* Transporte turístico local de pago; verificar frecuencia, pase aplicable y última salida antes de subir.",
+      "note": "• *Reserva:* La venta de autobús se abre normalmente un mes antes. Elegir ambos sentidos, comprobar condiciones de cambio y evitar depender de un asiento no garantizado.\n• *Clima:* Las vistas del Fuji dependen de la nubosidad; solo intercambiar este día con Ginza/Marunouchi si los boletos lo permiten.\n• *Gasto de referencia:* Desde ¥4,000 (≈ $478 MXN) por ida y vuelta con dos tarifas web mínimas; el precio real podría subir. Faltan transporte Ueno–Shinjuku, autobús local a Oishi Park, alimentos y compras.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [
         "fuji-daytrip"
@@ -1537,11 +1537,11 @@
       "date": "2027-10-24",
       "title": "Arashiyama y Kinkaku-ji · oeste y norte de Kioto",
       "base": "Kioto",
-      "am": "1. Salir temprano desde Shijō-Karasuma hacia Arashiyama por Hankyu, cambiando en Katsura; caminar al bosque de bambú antes de la mayor afluencia.\n2. Visitar el jardín de Tenryū-ji si interesa (entrada general de referencia ¥500) y pasear junto al río Katsura; terminar el almuerzo antes del traslado al norte.",
+      "am": "1. Salir temprano desde Shijō-Karasuma hacia Arashiyama por Hankyu, cambiando en Katsura; caminar al bosque de bambú antes de la mayor afluencia.\n2. Visitar el jardín de Tenryū-ji si interesa (entrada general de referencia ¥500 (≈ $60 MXN)) y pasear junto al río Katsura; terminar el almuerzo antes del traslado al norte.",
       "pm": "1. Trasladarse hacia Kinkaku-ji con combinación de tren y autobús, calculando alrededor de 45–70 minutos puerta a puerta como margen de planeación, sujeto a tráfico.\n2. Visitar el Pabellón Dorado dentro de su horario oficial y regresar al centro, sin añadir otro templo distante.",
       "night": "1. Volver al hotel en Shijō-Karasuma y descansar tras los traslados y caminatas.\n2. Cenar y preparar documentos para la excursión a Nara.",
       "mobility": "• *Karasuma → Arashiyama:* Hankyu con transbordo en Katsura y caminata desde Hankyu Arashiyama hasta el bosque.\n• *Arashiyama → Kinkaku-ji:* Trayecto transversal con transbordos; comprobar conexiones en el momento y prever congestión dominical.\n• *Regreso a Shijō:* Autobús o combinación con metro; evitar regresar hacia Arashiyama.",
-      "note": "• *Domingo:* Arashiyama puede estar muy concurrido; salir temprano y priorizar bosque y jardín antes del almuerzo.\n• *Tenryū-ji:* Jardín opcional ¥500 y entrada habitual de 8:30 a 17:00 como referencias oficiales; edificios y pintura del dragón tienen suplementos.\n• *Castillo Nijō:* Mantenerlo pendiente para estudiar un ajuste del día 13; no sacrificar Kinkaku-ji ni agregarlo hoy.",
+      "note": "• *Domingo:* Arashiyama puede estar muy concurrido; salir temprano y priorizar bosque y jardín antes del almuerzo.\n• *Tenryū-ji:* Jardín opcional ¥500 (≈ $60 MXN) y entrada habitual de 8:30 a 17:00 como referencias oficiales; edificios y pintura del dragón tienen suplementos.\n• *Castillo Nijō:* Mantenerlo pendiente para estudiar un ajuste del día 13; no sacrificar Kinkaku-ji ni agregarlo hoy.",
       "hotel": "kioto-karasuma",
       "transportRefs": [],
       "places": [],
@@ -1568,10 +1568,10 @@
       "title": "Nara · Gran Buda, parque de ciervos y Kasuga Taisha",
       "base": "Kioto",
       "am": "1. Desde Shijō-Karasuma conectar con Kyoto Station y tomar Kintetsu hacia Kintetsu-Nara; el tren Limited Express requiere suplemento, a diferencia de servicios regulares.\n2. Caminar por Nara Park hacia Tōdai-ji observando los ciervos con cuidado; priorizar el Salón del Gran Buda antes del almuerzo.",
-      "pm": "1. Entrar al Daibutsuden de Tōdai-ji (adulto ¥800 y horario habitual de octubre 7:30–17:30, referencias vigentes consultadas en 2026); dedicar alrededor de 60–90 minutos al recinto principal.\n2. Continuar a Kasuga Taisha por los senderos del parque si hay tiempo y energía; almorzar y probar kakinoha-zushi o miwa sōmen según disponibilidad.",
+      "pm": "1. Entrar al Daibutsuden de Tōdai-ji (adulto ¥800 (≈ $96 MXN) y horario habitual de octubre 7:30–17:30, referencias vigentes consultadas en 2026); dedicar alrededor de 60–90 minutos al recinto principal.\n2. Continuar a Kasuga Taisha por los senderos del parque si hay tiempo y energía; almorzar y probar kakinoha-zushi o miwa sōmen según disponibilidad.",
       "night": "1. Regresar a Kintetsu-Nara y tomar el tren de vuelta a Kyoto Station, seguido del trayecto al hotel.\n2. Cenar cerca de Shijō-Karasuma y preparar maleta para el cambio de hotel del día siguiente.",
       "mobility": "• *Hotel → Nara:* Llegar a Kyoto Station y tomar Kintetsu a Kintetsu-Nara, más cercana al parque que JR Nara; verificar si hay tren directo o cambio de servicio.\n• *Recorrido:* Kintetsu-Nara → parque → Tōdai-ji → Kasuga Taisha, a pie y con pausas.\n• *Regreso:* Volver a Kintetsu-Nara y tomar tren a Kioto; confirmar la conexión al hotel y suplemento en caso de Limited Express.",
-      "note": "• *Entrada y efectivo:* Tōdai-ji informa ¥800 para el Salón del Gran Buda y señala pagos en efectivo; llevar yenes y verificar tarifas de 2027.\n• *Kasuga Taisha:* La visita al santuario es secundaria a Tōdai-ji; revisar horarios específicos de áreas especiales.\n• *Ciervos:* No dar comida humana ni acercarse de manera brusca; respetar avisos del parque.",
+      "note": "• *Entrada y efectivo:* Tōdai-ji informa ¥800 (≈ $96 MXN) para el Salón del Gran Buda y señala pagos en efectivo; llevar yenes y verificar tarifas de 2027.\n• *Kasuga Taisha:* La visita al santuario es secundaria a Tōdai-ji; revisar horarios específicos de áreas especiales.\n• *Ciervos:* No dar comida humana ni acercarse de manera brusca; respetar avisos del parque.",
       "hotel": "kioto-karasuma",
       "transportRefs": [
         "kyoto-nara"
@@ -1714,5 +1714,10 @@
       ],
       "spend": null
     }
-  ]
+  ],
+  "exchangeRates": {
+    "JPY": 0.1196
+  },
+  "exchangeRatesAsOf": "2026-10-29",
+  "exchangeRatesSource": "XE · tasa media de referencia 29/10/2026, https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN"
 }
