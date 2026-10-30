@@ -1,7 +1,7 @@
 window.AtlasSections = function (ctx) {
     'use strict';
     const { trips, stays, esc, price, range, readable, railLinks } = ctx;
-    const baseLabel = bases => { const nights = bases.reduce((total, item) => total + Number(item[1] || 0), 0); const n = bases.length; return nights + ' ' + (nights === 1 ? 'noche' : 'noches') + ', ' + n + ' ' + (n === 1 ? 'alojamiento' : 'alojamientos'); };
+    const baseLabel = bases => { if (!Array.isArray(bases) || !bases.length) return 'Alojamientos por definir'; const nights = bases.reduce((total, item) => total + Number(Array.isArray(item) ? item[1] || 0 : item?.nights || 0), 0); const n = bases.length; return nights + ' ' + (nights === 1 ? 'noche' : 'noches') + ', ' + n + ' ' + (n === 1 ? 'alojamiento' : 'alojamientos'); };
     function familyLabel(t) {
         const f = t.family;
         return f ? `<p class="family-label">${esc(f.label)}<span>${esc(f.note)}</span></p>` : '';
