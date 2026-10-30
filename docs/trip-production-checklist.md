@@ -67,3 +67,5 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] Comprobar renderizado en escritorio/móvil y que el desglose de presupuesto no cuente dos veces vuelos u otros transportes.
 
 - [ ] «Clima y luz» muestra franja superior del MISMO color que el estado del mes de inicio en «Temporadas» y su etiqueta correspondiente (Recomendable/Aceptable/Desaconsejable/Por definir), incluso si el JSON tiene fechas solo en `days[]` y no en `start`.
+
+- [ ] En viajes nuevos la tarjeta «Clima y luz» tiene el encabezado COMPLETO coloreado, no solo un borde; muestra la etiqueta del estado y utiliza `pending` / «Por definir» cuando aún no se conoce la fecha. Comprobar los cuatro estados y que el CSS esté limitado al formato nuevo.
