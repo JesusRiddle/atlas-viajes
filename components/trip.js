@@ -127,9 +127,7 @@ window.AtlasTrip = function (ctx) {
     }
     function overviewStays(t, inline = false) {
         const nights = t.bases.reduce((sum, base) => sum + Number(base[1] || 0), 0);
-        const caption = inline
-            ? nights + ' noches · ' + t.bases.length + (t.bases.length === 1 ? ' estancia' : ' estancias')
-            : t.bases.length + (t.bases.length === 1 ? ' estancia' : ' estancias');
+        const caption = nights + ' ' + (nights === 1 ? 'noche' : 'noches') + ', ' + t.bases.length + (t.bases.length === 1 ? ' alojamiento' : ' alojamientos');
         return '<div class="overview-stays' + (inline ? ' overview-stays-inline' : '') + '">' +
             '<div class="overview-stays-heading"><h3 class="overview-subheading">' +
             overviewIcon('bed') + (inline ? ' Dónde dormirás' : ' Tus alojamientos') +
@@ -230,7 +228,7 @@ window.AtlasTrip = function (ctx) {
             `<span>${heroMetaIcon('calendar')}${t.start && t.end ? range(t) : 'Por definir'}</span>`,
             `<span>${heroMetaIcon('duration')}${t.days.length ? t.days.length + ' días naturales' : 'Duración por definir'}</span>`,
             `<span>${heroMetaIcon('work')}${t.work === null ? 'Días laborales por definir' : t.work + ' días laborales'}</span>`,
-            `<span>${heroMetaIcon('lodging')}${t.heroLodgingSummary ? esc(t.heroLodgingSummary) : t.bases.length ? esc(baseLabel(t.bases.length)) : 'Alojamientos por definir'}</span>`,
+            `<span>${heroMetaIcon('lodging')}${t.heroLodgingSummary ? esc(t.heroLodgingSummary) : t.bases.length ? esc(baseLabel(t.bases)) : 'Alojamientos por definir'}</span>`,
             '</div></div></div>',
             `<div class="triphero-split-photo">${t.cover ? img(covers[id], '', true) : ''}</div>`,
             '</section>'
