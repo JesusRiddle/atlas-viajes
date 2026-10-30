@@ -58,3 +58,10 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] Se auditan renderizado y datos para detectar monedas sin equivalencia, evitar dobles conversiones y no alterar enlaces, tiempos o números de referencia.
 
 **Alcance de cambios:** Los viajes históricos deben permanecer intactos y solo pueden consultarse para extraer ideas; ninguna solicitud general de edición del Atlas autoriza modificar sus JSON ni la visualización heredada. Aplicar cambios de contenido exclusivamente a los viajes del formato nuevo.
+
+## Aceptación específica del panorama en viajes nuevos
+- [ ] «Tu inversión aproximada» presenta proyección global o explica inequívocamente por qué solo hay subtotal; nunca confundir solo alojamiento con costo total.
+- [ ] La proyección indica rango, supuestos y partidas excluidas; las tarifas cotizadas para otro mes no se interpretan como actuales o compradas.
+- [ ] Si hay `exchangeRates` y `exchangeRateSnapshot`, los tipos aplicables (JPY, EUR, USD, etc.) se ven con fecha y fuente en Panorama, sin condicionar el renderizador a dos monedas fijas.
+- [ ] «Clima y luz» enfatiza fechas elegidas y resume en segundo plano otras ventanas.
+- [ ] Comprobar renderizado en escritorio/móvil y que el desglose de presupuesto no cuente dos veces vuelos u otros transportes.
