@@ -74,7 +74,7 @@ window.AtlasDayTransport = (() => {
                 const price = window.AtlasBudget.selectedTransportPrice(item, current);
                 const mxn = window.AtlasBudget.convert(price, t.exchangeRates || {});
                 const amount = price && Number.isFinite(price.amount)
-                    ? (price.currency === 'EUR' ? '€' : '$') + price.amount.toLocaleString('es-MX', { maximumFractionDigits: 2 }) +
+                    ? (price.currency === 'EUR' ? '€' : price.currency === 'JPY' ? '¥' : price.currency === 'USD' ? 'US$' : price.currency === 'MXN' ? '$' : price.currency + ' ') + price.amount.toLocaleString('es-MX', { maximumFractionDigits: 2 }) +
                         (price.currency === 'MXN' ? ' MXN' : '') : 'Por cotizar';
                 // El número de servicio ya está visible en la cronología; evitar repetirlo en el pie.
                 const providerLabel = item.type === 'train'
