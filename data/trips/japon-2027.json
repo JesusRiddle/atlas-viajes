@@ -347,11 +347,587 @@
       },
       "status": "estimated",
       "notes": "Supuesto de planeación; no cotizado. Verificar tarifa, impuestos y condiciones."
+    },
+    {
+      "id": "food-day-2",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Llegada a Tokio · aeropuerto y primera noche en Ueno",
+      "date": "2027-10-15",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Llegada: consumo parcial; vuelo puede incluir alimentos."
+    },
+    {
+      "id": "urban-day-2",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 2",
+      "date": "2027-10-15",
+      "cost": {
+        "amount": 450,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-3",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Asakusa, Sensō-ji y Ueno · primer día completo",
+      "date": "2027-10-16",
+      "cost": {
+        "amount": 680,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-3",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 3",
+      "date": "2027-10-16",
+      "cost": {
+        "amount": 180,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-4",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Meiji Jingū, Harajuku y Shibuya · barrios del oeste",
+      "date": "2027-10-17",
+      "cost": {
+        "amount": 750,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-4",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 4",
+      "date": "2027-10-17",
+      "cost": {
+        "amount": 250,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-5",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Akihabara y Shinjuku · tecnología y vida nocturna",
+      "date": "2027-10-18",
+      "cost": {
+        "amount": 720,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-5",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 5",
+      "date": "2027-10-18",
+      "cost": {
+        "amount": 260,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-6",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Kawaguchiko · lago y vistas del monte Fuji",
+      "date": "2027-10-19",
+      "cost": {
+        "amount": 780,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-6",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 6",
+      "date": "2027-10-19",
+      "cost": {
+        "amount": 430,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-7",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Ginza, Marunouchi y Tokyo Station · día flexible",
+      "date": "2027-10-20",
+      "cost": {
+        "amount": 720,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-7",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 7",
+      "date": "2027-10-20",
+      "cost": {
+        "amount": 180,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-8",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Tokio → Kioto · Shinkansen y primera tarde histórica",
+      "date": "2027-10-21",
+      "cost": {
+        "amount": 770,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-8",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 8",
+      "date": "2027-10-21",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-9",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Jidai Matsuri · desfile de las eras históricas",
+      "date": "2027-10-22",
+      "cost": {
+        "amount": 800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-9",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 9",
+      "date": "2027-10-22",
+      "cost": {
+        "amount": 230,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-10",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Fushimi Inari y Kiyomizu-dera · torii y calles de Higashiyama",
+      "date": "2027-10-23",
+      "cost": {
+        "amount": 740,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-10",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 10",
+      "date": "2027-10-23",
+      "cost": {
+        "amount": 280,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-11",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Arashiyama y Kinkaku-ji · oeste y norte de Kioto",
+      "date": "2027-10-24",
+      "cost": {
+        "amount": 800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-11",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 11",
+      "date": "2027-10-24",
+      "cost": {
+        "amount": 460,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-12",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Nara · Gran Buda, parque de ciervos y Kasuga Taisha",
+      "date": "2027-10-25",
+      "cost": {
+        "amount": 740,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-12",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 12",
+      "date": "2027-10-25",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-13",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Castillo Nijō → Osaka · primera noche en Dotonbori",
+      "date": "2027-10-26",
+      "cost": {
+        "amount": 750,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-13",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 13",
+      "date": "2027-10-26",
+      "cost": {
+        "amount": 380,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-14",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Universal Studios Japan · Nintendo y Harry Potter",
+      "date": "2027-10-27",
+      "cost": {
+        "amount": 850,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-14",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 14",
+      "date": "2027-10-27",
+      "cost": {
+        "amount": 260,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-15",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Osaka · castillo, Shinsekai y gastronomía",
+      "date": "2027-10-28",
+      "cost": {
+        "amount": 800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-15",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 15",
+      "date": "2027-10-28",
+      "cost": {
+        "amount": 300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-16",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Kuromon y Den Den Town · último día completo en Osaka",
+      "date": "2027-10-29",
+      "cost": {
+        "amount": 780,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-16",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 16",
+      "date": "2027-10-29",
+      "cost": {
+        "amount": 270,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-17",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Osaka → Tokio · cierre condicionado al vuelo redondo",
+      "date": "2027-10-30",
+      "cost": {
+        "amount": 750,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye comidas informales y agua/refrigerios; ajustar según apetito, disponibilidad y opciones sin lactosa."
+    },
+    {
+      "id": "urban-day-17",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 17",
+      "date": "2027-10-30",
+      "cost": {
+        "amount": 250,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "food-day-18",
+      "category": "food",
+      "concept": "Alimentación y bebidas · Japón → CDMX · regreso internacional provisional",
+      "date": "2027-10-31",
+      "cost": {
+        "amount": 300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Salida: consumo parcial; no duplicar comidas del avión."
+    },
+    {
+      "id": "urban-day-18",
+      "category": "local_transport",
+      "concept": "Traslados urbanos e incidentales · día 18",
+      "date": "2027-10-31",
+      "cost": {
+        "amount": 400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva diaria para metro, autobús y conexiones urbanas; viajes interurbanos y entradas se separan."
+    },
+    {
+      "id": "rail-tokyo-kyoto",
+      "category": "intercity_transport",
+      "concept": "Shinkansen Tokio → Kioto · escenario redondo Tokio",
+      "date": "2027-10-21",
+      "cost": {
+        "amount": 1900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Un trayecto Tokyo/Shinagawa→Kyoto. Estimación MXN para presupuesto; NO tarifa JR cotizada. Sustituir si se selecciona precio real del módulo de transporte."
+    },
+    {
+      "id": "rail-osaka-tokyo",
+      "category": "intercity_transport",
+      "concept": "Shinkansen Osaka → Tokio · solo escenario vuelo redondo",
+      "date": "2027-10-30",
+      "cost": {
+        "amount": 2000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. SOLO escenario A/C con salida internacional de Tokio; sustituir por transferencia Osaka/KIX si se reserva multidestino B/D. No sumar las dos rutas."
+    },
+    {
+      "id": "fuji-return",
+      "category": "intercity_transport",
+      "concept": "Excursión Tokio ↔ Kawaguchiko · ida y regreso",
+      "date": "2027-10-19",
+      "cost": {
+        "amount": 650,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Incluye ambos sentidos en una sola estimación; no duplicar con transportes del día."
+    },
+    {
+      "id": "nara-return",
+      "category": "intercity_transport",
+      "concept": "Kioto ↔ Nara · ida y regreso",
+      "date": "2027-10-25",
+      "cost": {
+        "amount": 300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Ambos sentidos del trayecto; si se contrata un pase, sustituir sin duplicar."
+    },
+    {
+      "id": "kyoto-osaka-transfer",
+      "category": "intercity_transport",
+      "concept": "Kioto → Osaka · conexión entre hoteles",
+      "date": "2027-10-26",
+      "cost": {
+        "amount": 180,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Billete puntual estimado; conexión final urbana cubierta por la reserva local del día."
+    },
+    {
+      "id": "usj-studio",
+      "category": "admission",
+      "concept": "USJ Studio Pass · 27 de octubre",
+      "date": "2027-10-27",
+      "cost": {
+        "amount": 1400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Supuesto conservador de una entrada adulta para 2027; referencia oficial desde ¥8,400 (≈ $1,005 MXN) en 2026, tarifa dinámica. Express Pass NO incluido."
+    },
+    {
+      "id": "shibuya-sky",
+      "category": "admission",
+      "concept": "SHIBUYA SKY · un mirador (opcional en actividad, presupuestado como reserva)",
+      "date": "2027-10-17",
+      "cost": {
+        "amount": 450,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Solo un mirador. Si se descarta, quitar este importe; no sumar TOKYO SKYTREE."
+    },
+    {
+      "id": "kyoto-temples",
+      "category": "admission",
+      "concept": "Templos y monumentos Kioto · varios días",
+      "date": "2027-10-23",
+      "cost": {
+        "amount": 950,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Bolsa orientativa para Kiyomizu-dera, Kinkaku-ji, Nijō Ninomaru y posibles jardines. Sin Honmaru opcional."
+    },
+    {
+      "id": "nara-todai",
+      "category": "admission",
+      "concept": "Tōdai-ji · Daibutsuden",
+      "date": "2027-10-25",
+      "cost": {
+        "amount": 120,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Referencia ¥800 (≈ $96 MXN) en 2026; colchón para 2027."
+    },
+    {
+      "id": "osaka-attractions",
+      "category": "admission",
+      "concept": "Osaka · museo o mirador opcional",
+      "date": "2027-10-28",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Una actividad pagada como máximo; exteriores gratuitos por defecto."
+    },
+    {
+      "id": "kyoto-city-tax",
+      "category": "taxes",
+      "concept": "Impuesto local de alojamiento de Kioto · reserva",
+      "date": "2027-10-21",
+      "cost": {
+        "amount": 250,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva aproximada de cinco noches; recalcular según tarifa real del hotel y tramos tributarios."
+    },
+    {
+      "id": "travel-esim",
+      "category": "other",
+      "concept": "Conectividad móvil / eSIM",
+      "date": "2027-10-15",
+      "cost": {
+        "amount": 500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Estimación de paquete de datos para 16 días; comprobar capacidad del teléfono."
+    },
+    {
+      "id": "baggage-contingency",
+      "category": "other",
+      "concept": "Equipaje, lavandería y gastos ocasionales",
+      "date": "2027-10-28",
+      "cost": {
+        "amount": 1300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Bolsa provisional; aerolínea podría cobrar maleta documentada aparte."
+    },
+    {
+      "id": "reserve-contingency",
+      "category": "contingency",
+      "concept": "Contingencia económica para variación de precios",
+      "date": "2027-10-29",
+      "cost": {
+        "amount": 6500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación de planeación, no cotización ni reserva. Reserva para imprevistos y ajustes de tarifas; no equivale a gasto comprometido."
     }
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Todas las entradas y experiencias están SIN COMPRAR. Primero decidir vuelos y mantener las fechas de octubre 2027; después asegurar USJ del miércoles 27 de octubre (alternativa viernes 29 solo con disponibilidad), revisar asientos opcionales de Jidai Matsuri del viernes 22 y reservar SHIBUYA SKY del domingo 17 si se elige ese mirador. Los calendarios y tarifas publicados hoy son referencias de 2026: ninguna venta ni disponibilidad de 2027 está confirmada. Aplazamiento por lluvia de Jidai Matsuri puede alterar los días 23–26; no reservar allí actividades inflexibles adicionales."
+    "reservationNote": "Todas las entradas y experiencias están SIN COMPRAR. Primero decidir vuelos y mantener las fechas de octubre 2027; después asegurar USJ del miércoles 27 de octubre (alternativa viernes 29 solo con disponibilidad), revisar asientos opcionales de Jidai Matsuri del viernes 22 y reservar SHIBUYA SKY del domingo 17 si se elige ese mirador. Los calendarios y tarifas publicados hoy son referencias de 2026: ninguna venta ni disponibilidad de 2027 está confirmada. Aplazamiento por lluvia de Jidai Matsuri puede alterar los días 23–26; no reservar allí actividades inflexibles adicionales. Presupuesto provisional ya incluye Studio Pass base y SHIBUYA SKY, pero no Universal Express Pass."
   },
   "reservations": [
     [
@@ -1959,16 +2535,16 @@
   "exchangeRatesSource": "XE · tasa media de referencia 29/10/2026, https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN",
   "budgetPreliminary": {
     "currency": "MXN",
-    "low": 80000,
-    "high": 110000,
+    "low": 91000,
+    "high": 107000,
     "status": "estimated",
-    "label": "Proyección global para una persona, no cotización",
-    "basis": "Escenario orientativo de planeación: alojamiento $28,200 MXN; vuelos de septiembre de 2027 $28,417–$35,536 MXN solo como referencia, NO cotizados para octubre; diferencia destinada a trenes, transportes locales, alimentación, entradas, impuestos, equipaje y contingencia. El rango no sustituye el desglose de gastos efectivamente presupuestados ni significa que se hayan reservado servicios.",
+    "label": "Proyección integral · escenario vuelo redondo por Tokio",
+    "basis": "Presupuesto de planeación para 1 persona y 18 días: gastos terrestres estimados en expenses + SOLO referencia de vuelo redondo A de septiembre de 2027 por $28,417 MXN. No es cotización para octubre de 2027. Incluye alojamiento, alimentos, traslados urbanos e interurbanos, USJ y otros accesos, impuestos, conectividad, extras y colchón. La vuelta Osaka→Tokio incluida SOLO corresponde al escenario Tokio; si se compra KIX, sustituir retorno y última noche. La sección de gastos contabiliza partidas terrestres; los vuelos se comparan en Traslados y NO se duplican como gasto independiente. El límite alto incluye margen extra para tarifas de octubre, equipaje y posibles cambios. Express Pass, compras importantes y gastos personales extraordinarios fuera del plan.",
     "pending": [
-      "Vuelo internacional para octubre de 2027",
-      "Transportes y entradas con precios para 2027",
-      "Alimentación y extras según ritmo real",
-      "Impuestos y equipaje"
+      "Precio y horarios reales del vuelo internacional para 14–31 octubre 2027",
+      "Confirmación de tarifas 2027 de trenes y entradas",
+      "Selección final Tokio vs KIX y última noche",
+      "Cotización real de hoteles e impuestos"
     ]
   },
   "exchangeRateSnapshot": {
