@@ -134,14 +134,16 @@ window.AtlasHome = function (ctx) {
         }
         return countries.join(' + ');
     }
+    const homeReady = t => canRenderFullTrip(t) || (t?.status === 'draft' && Array.isArray(t.days) && t.days.length && typeof t.start === 'string' && typeof t.end === 'string' && Array.isArray(t.routeCities) && t.routeCities.length && Number.isInteger(t.work) && Number.isFinite(t.budgetPreliminary?.low));
+    const homePrice = t => t.budgetPreliminary && typeof t.budgetPreliminary === 'object' && Number.isFinite(t.budgetPreliminary.low) && Number.isFinite(t.budgetPreliminary.high) ? '$' + t.budgetPreliminary.low.toLocaleString('es-MX') + '–$' + t.budgetPreliminary.high.toLocaleString('es-MX') : price(t);
     function card(t, i) {
-        if (!canRenderFullTrip(t)) return draftCard(t, i);
+        if (!homeReady(t)) return draftCard(t, i);
         const title = esc(t.name);
         const country = cardCountries(t.flag);
         const cities = t.routeCities.map(x => esc(x)).join(' · ');
         const lodging = t.lodgingSummary || baseLabel(t.bases.length);
         return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
-            '<div class="cardphoto">' + img(covers[t.id], '', false, false, true) + '<span class="rank">' + (i + 1) + '</span></div>' +
+            '<div class="cardphoto">' + (covers[t.id] ? img(covers[t.id], '', false, false, true) : '<div class="draft-card-cover">Fotografías por incorporar</div>') + '<span class="rank">' + (i + 1) + '</span></div>' +
             '<div class="cardbody"><div class="card-overview"><span class="card-overview-location">' + (country ? esc(country) + ' · ' : '') + t.days.length +
             ' días</span><span class="carddates">' + range(t) + '</span></div>' +
             '<h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
@@ -150,11 +152,11 @@ window.AtlasHome = function (ctx) {
             esc(lodging) + '</span></div>' +
             '<div class="cardbottom"><div class="card-price"><small>Presupuesto estimado por persona' +
             (t.budgetPreliminary ? ' · preliminar' : '') + '</small>' +
-            '<strong>' + price(t) + ' <span class="card-currency">MXN</span></strong></div>' +
+            '<strong>' + homePrice(t) + ' <span class="card-currency">MXN</span></strong></div>' +
             '<span class="card-arrow" aria-hidden="true">↗</span></div></div></a>';
     }
     function comparison() {
-        const items = trips.filter(canRenderFullTrip);
+        const items = trips.filter(homeReady);
         return '<section class="section wrap home-comparison" id="comparar">' +
             '<div class="section-title"><div><p class="eyebrow orange">Compara tus opciones</p>' +
             '<h2>Los viajes, lado a lado.</h2></div></div>' +
