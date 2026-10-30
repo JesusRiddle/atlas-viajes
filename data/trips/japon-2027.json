@@ -2554,5 +2554,23 @@
     "sources": {
       "JPY": "https://www.xe.com/es/currencyconverter/convert/?Amount=1&From=JPY&To=MXN"
     }
-  }
+  },
+  "start": "2027-10-14",
+  "end": "2027-10-31",
+  "routeCities": [
+    "Tokio",
+    "Kawaguchiko",
+    "Kioto",
+    "Nara",
+    "Osaka"
+  ],
+  "flag": "🇯🇵",
+  "work": 12,
+  "profile": {
+    "pace": "Moderado–activo",
+    "solo": "Apto para viajar solo",
+    "weather": "Octubre recomendable"
+  },
+  "solo": "Viaje independiente pensado para una persona: cuatro estancias provisionales, traslados principalmente en tren, excursiones sin cambiar de hotel y días intensos alternados con caminatas más relajadas.",
+  "flight": "Salida de CDMX el 14 de octubre y llegada estimada a Tokio el 15; cuatro cotizaciones comparativas de septiembre 2027, ninguna reservada. Regreso provisional el 31 de octubre desde Tokio, o alternativo desde KIX con redistribución de la última noche; confirmar itinerario aéreo antes de reservar."
 }
