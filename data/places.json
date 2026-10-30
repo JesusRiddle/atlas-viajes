@@ -3782,5 +3782,137 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Kakidai"
     }
+  },
+  "japan27-gion": {
+    "name": "Gion · calle tradicional",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Street_in_Gion%2C_Kyoto%2C_2024.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Street_in_Gion%2C_Kyoto%2C_2024.jpg",
+      "author": "Smiley.toerist",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Smiley.toerist"
+    }
+  },
+  "japan27-yasaka": {
+    "name": "Santuario Yasaka",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyoto_Shinto_Shrine_Yasaka.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Kyoto_Shinto_Shrine_Yasaka.jpg",
+      "author": "Otto Domes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Otto Domes"
+    }
+  },
+  "japan27-jidai-matsuri": {
+    "name": "Jidai Matsuri · desfile histórico",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jidai_Matsuri_2009_548.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Jidai_Matsuri_2009_548.jpg",
+      "author": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Wikimedia Commons"
+    }
+  },
+  "japan27-fushimi-inari": {
+    "name": "Fushimi Inari · torii",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fushimi-Inari_Torii.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Fushimi-Inari_Torii.jpg",
+      "author": "Takipoint123",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Takipoint123"
+    }
+  },
+  "japan27-kiyomizu": {
+    "name": "Kiyomizu-dera · templo",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/JAP_Kyoto_Kiyomizu-dera.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:JAP_Kyoto_Kiyomizu-dera.jpg",
+      "author": "Grueslayer",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Grueslayer"
+    }
+  },
+  "japan27-sannenzaka": {
+    "name": "Sannenzaka · Higashiyama",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sannenzaka-kyoto.JPG?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Sannenzaka-kyoto.JPG",
+      "author": "Aporon999",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Aporon999"
+    }
+  },
+  "japan27-arashiyama": {
+    "name": "Bosque de bambú de Arashiyama",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arashiyama_Bamboo_Forest_in_Kyoto%2C_Japan_in_July_2026.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Arashiyama_Bamboo_Forest_in_Kyoto%2C_Japan_in_July_2026.jpg",
+      "author": "Gatorfan252525",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Gatorfan252525"
+    }
+  },
+  "japan27-kinkakuji": {
+    "name": "Kinkaku-ji · Pabellón Dorado",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Pavilion_Kinkaku-ji_2024.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_2024.jpg",
+      "author": "Nacaru",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Nacaru"
+    }
+  },
+  "japan27-nara-deer": {
+    "name": "Parque de Nara · ciervos",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nara_deer_lounging_at_Todaiji.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nara_deer_lounging_at_Todaiji.jpg",
+      "author": "Photos of Japan",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Photos of Japan"
+    }
+  },
+  "japan27-todaiji": {
+    "name": "Tōdai-ji · Gran Buda",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/T%C5%8Ddai-ji_Daibutsuden%2C_June_2019.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:T%C5%8Ddai-ji_Daibutsuden%2C_June_2019.jpg",
+      "author": "Cun Cun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Cun Cun"
+    }
+  },
+  "japan27-kasuga": {
+    "name": "Kasuga Taisha · faroles",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nara_deer_between_stone_lanterns.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nara_deer_between_stone_lanterns.jpg",
+      "author": "LynUratani",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "LynUratani"
+    }
+  },
+  "japan27-nijo": {
+    "name": "Castillo Nijō · Palacio Ninomaru",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nijo_Castle_2023.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Nijo_Castle_2023.jpg",
+      "author": "稲垣啓二",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "稲垣啓二"
+    }
   }
 }
