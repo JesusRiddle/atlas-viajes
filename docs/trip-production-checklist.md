@@ -48,6 +48,11 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 - Firenze → Milano → Malpensa: distinguir márgenes de transbordo de llegada previa al vuelo y ausencia de protección por billetes separados.
 - Un error de sintaxis en day-transport.js bloqueó la carga de todos los viajes; cada modificación JS requiere validación previa y prueba real de carga cuando sea posible.
 
+## Auditoría de nomenclatura de alojamientos
+- [ ] Confirmar que Inicio, portada, Panorama y comparativas presentan «X noches, Y alojamientos», en singular cuando corresponda.
+- [ ] Buscar en componentes las expresiones «bases para dormir», «Noches y bases» y conteos de «estancias» usados como sustituto de alojamientos; no basta con inspeccionar JSON.
+- [ ] Conservar los campos técnicos `bases` y `days[].base` y comprobar que las cifras provienen del calendario y alojamientos previstos, no de valores fijos.
+
 ## Comunicación con el usuario
 Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados, resultados verificables, pendientes que requieren datos externos y decisión requerida. No pedir al usuario revisar pantalla por pantalla salvo anomalías realmente imposibles de probar. Evitar prometer que «todo está probado» si no se ejecutó la comprobación completa.
 
