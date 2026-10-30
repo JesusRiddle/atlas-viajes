@@ -732,7 +732,7 @@
           "url": "https://www.jreast.co.jp/multi/en/"
         }
       ],
-      "ticketGuide": "Reservar tanto ida como regreso desde Shinjuku/Kawaguchiko. El autobús suele venderse desde un mes antes; actualmente la compra oficial en línea es desde ¥2,000 por sentido, sin garantía para 2027. Desde el hotel en Ueno, sumar el traslado urbano a Shinjuku y las conexiones locales entre Kawaguchiko Station, el lago y Oishi Park. No confundir flexibilidad meteorológica con disponibilidad garantizada de asientos."
+      "ticketGuide": "Reservar tanto ida como regreso desde Shinjuku/Kawaguchiko. El autobús suele venderse desde un mes antes; actualmente la tarifa web publicada comienza en ¥2,000 por sentido, si aplica a ambas salidas, sin garantía para 2027. Desde el hotel en Ueno, sumar el traslado urbano a Shinjuku y las conexiones locales entre Kawaguchiko Station, el lago y Oishi Park. No confundir flexibilidad meteorológica con disponibilidad garantizada de asientos."
     },
     {
       "id": "tokyo-kyoto",
@@ -1271,10 +1271,10 @@
       "title": "Llegada a Tokio · aeropuerto y primera noche en Ueno",
       "base": "Tokio",
       "am": "1. Continuar el vuelo o conexión según la hora real de llegada a Japón; ajustar los bloques del día si se aterriza por la tarde o noche.\n2. Pasar inmigración y aduanas, recoger equipaje si aplica y obtener conexión de datos y efectivo solo si hace falta.",
-      "pm": "1. Si se llega a Narita, considerar Keisei Skyliner hasta Keisei-Ueno (unos 41 minutos de tren; referencia 2026: ¥2,470 por adulto), más caminata al alojamiento.\n2. Si se llega a Haneda, comparar Keikyu o monorraíl y conexión JR hasta Ueno (aprox. 40 minutos desde aeropuerto a estación como referencia); localizar el hotel y gestionar check-in o consigna.",
+      "pm": "1. Según la hora de aterrizaje, completar migración, aduanas y equipaje; prever demoras antes de comprar el tren.\n2. Desde Narita, Skyliner directo a Keisei-Ueno (referencia publicada: alrededor de 41 min); desde Haneda, tren con conexión a Ueno. Continuar caminando al hotel o usar transporte local según equipaje.",
       "night": "1. Comer y dar un paseo corto por Ameyoko/Ueno únicamente si todavía hay tiempo y energía.\n2. Descansar para comenzar Asakusa sin prisas al día siguiente.",
-      "mobility": "• *NRT → Keisei-Ueno:* Skyliner directo; tarifa publicada ¥2,470 y trayecto de referencia de unos 41 minutos, sin migración, espera ni caminata.\n• *HND → Ueno:* Keikyu o monorraíl con conexión; referencia aeroportuaria de unos 40 minutos de tren hasta Ueno, sin esperas.\n• *Ueno → hotel:* Confirmar salida peatonal y recepción; no comprar servicios rígidos antes de completar migración.",
-      "note": "• *Hotel:* Sotetsu Fresa Inn Ueno-Okachimachi, candidato no reservado; consultar entrada tardía y resguardo de equipaje.\n• *Plan B:* Si se llega muy tarde, traslado y descanso únicamente; mover Ameyoko al día 3.\n• *Gasto orientativo:* Transporte NRT desde ¥2,470 por persona; HND y comidas pendientes de ruta y tarifa, sin contabilizar hotel dos veces.",
+      "mobility": "• *Narita → Ueno:* Skyliner directo a Keisei-Ueno; tarifa estándar y promociones dependen del canal, comprobar precio al comprar. El viaje en tren ronda 41 minutos, sin contar migración ni esperas.\n• *Haneda → Ueno:* Keikyu o monorraíl y tren JR/metro; verificar transbordos y terminal antes de salir.\n• *Último tramo:* Keisei-Ueno y la estación JR Ueno no son la misma; comprobar camino a pie hasta el hotel en Ueno-Okachimachi.",
+      "note": "• *Hotel:* Sotetsu Fresa Inn Ueno-Okachimachi, candidato no reservado; consultar entrada tardía y resguardo de equipaje.\n• *Plan B:* Si se llega muy tarde, traslado y descanso únicamente; mover Ameyoko al día 3.\n• *Gasto orientativo:* Tarifa de NRT según canal y fecha de compra; HND y comidas pendientes de ruta y tarifa, sin contabilizar hotel dos veces.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [
         "flight-international",
@@ -1304,10 +1304,10 @@
       "title": "Asakusa, Sensō-ji y Ueno · primer día completo",
       "base": "Tokio",
       "am": "1. Salir del hotel sin madrugar en exceso si hay jet lag; desde Ueno usar la línea Ginza a Asakusa (aprox. 5 minutos de tren, sin contar caminatas).\n2. Recorrer Sensō-ji, la puerta Kaminarimon, Nakamise y las callejuelas de Asakusa; dedicar unas 2–3 horas a templo, fotografías y tiendas.",
-      "pm": "1. Almorzar soba, tempura o alguna especialidad local en Asakusa; volver en metro a Ueno.\n2. Pasear por el parque de Ueno. Si apetece arte o historia y el horario lo permite, entrar al Museo Nacional de Tokio (entrada general de referencia ¥1,000, 2026); de lo contrario, disfrutar del parque sin museo.",
+      "pm": "1. Almorzar en Asakusa y regresar por la línea Ginza a Ueno.\n2. Priorizar un paseo por el parque de Ueno; si se elige el Museo Nacional de Tokio, dedicarle unas 2 horas y acortar el parque o Ameyoko.",
       "night": "1. Recorrer Ameyoko entre Ueno y Okachimachi, con margen para puestos que cierran temprano.\n2. Cenar por la zona y volver caminando al alojamiento; dejar la noche libre para recuperarse del viaje.",
       "mobility": "• *Ueno → Asakusa:* Línea Ginza de Tokyo Metro, unos 5 minutos; ¥178 con IC o ¥180 en billete ordinario según tarifa de referencia 2026.\n• *Asakusa → Ueno:* Volver por línea Ginza; parque, Ameyoko y hotel quedan agrupados para reducir traslados.\n• *Paseos:* Contar caminatas en Nakamise, parque y mercado; el museo es una parada opcional, no un requisito.",
-      "note": "• *Ritmo:* Primera jornada completa adaptable al jet lag; no sumar Shibuya, Shinjuku ni otros barrios alejados.\n• *Museo opcional:* El Museo Nacional de Tokio publica apertura habitual desde las 9:30 y cierre los lunes; confirmar fecha de 2027 antes de pagar.\n• *Gasto orientativo:* Metro de ida y vuelta desde ¥356 con IC; museo opcional ¥1,000 más comida y compras variables. No sumar una entrada que se decida omitir.",
+      "note": "• *Ritmo:* Primera jornada completa adaptable al jet lag; no sumar Shibuya, Shinjuku ni otros barrios alejados.\n• *Museo opcional:* El Museo Nacional de Tokio suele abrir desde las 9:30 y cerrar los lunes; confirmar fecha de 2027 antes de pagar.\n• *Gasto orientativo:* Metro de ida y vuelta desde ¥356 con IC; museo opcional ¥1,000 más comida y compras variables. El museo sustituye tiempo de paseo, no se añade automáticamente.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
       "places": [],
@@ -1336,7 +1336,7 @@
       "am": "1. Salir de Ueno-Okachimachi hacia Harajuku y entrar temprano al santuario Meiji Jingū; dedicar alrededor de 60–90 minutos a los senderos y el recinto.\n2. Recorrer Takeshita-dōri y después Omotesandō, eligiendo tiendas y pausas según el flujo dominical.",
       "pm": "1. Caminar o tomar tren una estación hasta Shibuya; explorar el cruce, Hachikō y las calles del barrio, con tiempo para comer.\n2. Si interesa, reservar SHIBUYA SKY para la tarde; prever aproximadamente 60–90 minutos y respetar la franja de entrada.",
       "night": "1. Pasear por Shibuya iluminado y cenar sin cambiar de barrio.\n2. Volver en JR o metro hasta Ueno-Okachimachi; dejar margen para descansar.",
-      "mobility": "• *Hotel → Harajuku:* Desde Okachimachi, línea JR Yamanote hacia Harajuku; sumar caminata al santuario.\n• *Harajuku → Shibuya:* Aproximadamente una estación en JR o paseo a pie por Omotesandō según cansancio.\n• *Regreso:* Tren desde Shibuya hasta Okachimachi; confirmar última salida si se prolonga la cena.",
+      "mobility": "• *Hotel → Harajuku:* Desde Okachimachi, línea JR Yamanote hacia Harajuku; sumar caminata al santuario.\n• *Harajuku → Shibuya:* Aproximadamente una estación en JR o paseo a pie por el eje Omotesandō y Cat Street según cansancio.\n• *Regreso:* Tren desde Shibuya hasta Okachimachi; confirmar última salida si se prolonga la cena.",
       "note": "• *Domingo:* Meiji Jingū temprano ayuda a evitar parte de la afluencia; Harajuku puede estar concurrido.\n• *Mirador opcional:* SHIBUYA SKY indica venta oficial con hasta dos semanas de anticipación; referencia de octubre de 2026: ¥2,700 antes de las 15:00 o ¥3,400 desde las 15:00. Azotea sujeta a clima.\n• *Gastos:* Transporte urbano, comidas y compras pendientes; no contar la entrada al mirador hasta elegirla.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
@@ -1364,10 +1364,10 @@
       "title": "Akihabara y Shinjuku · tecnología y vida nocturna",
       "base": "Tokio",
       "am": "1. Desde Okachimachi, llegar a Akihabara en JR o caminando si apetece; dedicar unas 2–3 horas a tiendas de tecnología, videojuegos y cultura japonesa.\n2. Almorzar cerca de Akihabara y reservar una pausa para no llegar cansado a la noche.",
-      "pm": "1. Trasladarse a Shinjuku en JR Sōbu/Chūō o combinación conveniente; pasear por sus avenidas y la zona oeste.\n2. Considerar el observatorio gratuito del Gobierno Metropolitano si está abierto; confirmar cierres del lunes y destinar alrededor de 45–60 minutos.",
+      "pm": "1. Trasladarse a Shinjuku en JR Sōbu/Chūō o combinación conveniente y recorrer su zona oeste.\n2. Considerar uno de los observatorios gratuitos del Gobierno Metropolitano: el sur cierra habitualmente el primer y tercer martes, y el norte el segundo y cuarto lunes; confirmar calendario y aperturas extraordinarias para 2027.",
       "night": "1. Visitar Omoide Yokochō para cenar o pasear y continuar a Golden Gai solo si interesa conocer sus pequeños bares.\n2. Regresar en transporte público antes del último tren; si hay cansancio, terminar tras la cena.",
       "mobility": "• *Hotel → Akihabara:* Trayecto corto en JR desde Okachimachi o caminata según el acceso del hotel.\n• *Akihabara → Shinjuku:* JR hacia Shinjuku, aproximadamente 20–30 minutos de trayecto de referencia; sumar caminatas y transbordos.\n• *Shinjuku → hotel:* Regresar por JR Yamanote o alternativa conveniente, comprobando el último servicio.",
-      "note": "• *Lunes:* Algunas instituciones y el observatorio pueden cerrar determinados lunes; verificar el calendario oficial antes de ir.\n• *Mirador gratuito:* Observatorios del Gobierno Metropolitano sin entrada de pago, sujetos a cierres operativos.\n• *Golden Gai:* Actividad opcional; algunos bares cobran cargo de mesa o tienen restricciones de ingreso.",
+      "note": "• *Observatorio gratuito:* No hay cierre general de lunes: cada torre tiene calendario propio; la entrada no cuesta, pero puede haber suspensión imprevista.\n• *Golden Gai:* Actividad opcional; revisar cargos de mesa, normas de acceso y último tren.\n• *Ritmo:* Mantener descanso antes de una noche en Shinjuku.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
       "places": [],
@@ -1392,8 +1392,8 @@
       "am": "1. Salir temprano desde el hotel hacia Busta Shinjuku; reservar margen para ubicar la terminal y abordar el autobús interurbano.\n2. Viajar a Kawaguchiko (aprox. 1 h 45 min sin congestión) y dirigirse a la orilla del lago; buscar vistas del monte Fuji únicamente si el cielo está despejado.",
       "pm": "1. Utilizar el autobús turístico local u otra conexión válida para llegar a Oishi Park, disfrutar del paisaje y volver con margen a Kawaguchiko Station.\n2. Comer hōtō en la zona y consultar el estado del transporte de retorno antes de alejarse de la estación.",
       "night": "1. Regresar desde Kawaguchiko a Shinjuku con boleto válido y continuar en JR/metro hasta Ueno-Okachimachi.\n2. Cenar cerca del hotel y descansar después de una excursión larga.",
-      "mobility": "• *Ueno → Busta Shinjuku:* Tren urbano y caminata hasta la terminal; llegar antes de la salida reservada.\n• *Shinjuku ↔ Kawaguchiko:* Autobús directo, referencia desde ¥2,000 por sentido en línea (¥4,000 ida y vuelta) y alrededor de 1 h 45 min por tramo, sujeto a tráfico.\n• *Kawaguchiko ↔ Oishi Park:* Transporte turístico local de pago; verificar frecuencia, pase aplicable y última salida antes de subir.",
-      "note": "• *Reserva:* El autobús admite reservas habitualmente desde un mes antes; comprar ambos sentidos y respetar condiciones de modificación.\n• *Clima:* No se garantizan vistas del Fuji. Intercambiar este día con Ginza/Marunouchi solo cuando los boletos lo permitan.\n• *Gasto de referencia:* ¥4,000 del autobús interurbano ida y vuelta; agregar traslados urbanos, transporte local, alimentos y compras. No es cotización para 2027.",
+      "mobility": "• *Ueno → Busta Shinjuku:* Tren urbano y caminata hasta la terminal; llegar antes de la salida reservada.\n• *Shinjuku ↔ Kawaguchiko:* Autobús directo, referencia desde ¥2,000 por sentido en línea (desde ¥4,000 ida y vuelta solo si ambas salidas tienen tarifa web de ¥2,000) y alrededor de 1 h 45 min por tramo, sujeto a tráfico.\n• *Kawaguchiko ↔ Oishi Park:* Transporte turístico local de pago; verificar frecuencia, pase aplicable y última salida antes de subir.",
+      "note": "• *Reserva:* La venta de autobús se abre normalmente un mes antes. Elegir ambos sentidos, comprobar condiciones de cambio y evitar depender de un asiento no garantizado.\n• *Clima:* Las vistas del Fuji dependen de la nubosidad; solo intercambiar este día con Ginza/Marunouchi si los boletos lo permiten.\n• *Gasto de referencia:* Desde ¥4,000 por ida y vuelta con dos tarifas web mínimas; el precio real podría subir. Faltan transporte Ueno–Shinjuku, autobús local a Oishi Park, alimentos y compras.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [
         "fuji-daytrip"
