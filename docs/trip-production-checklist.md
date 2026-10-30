@@ -48,6 +48,12 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 - Firenze → Milano → Malpensa: distinguir márgenes de transbordo de llegada previa al vuelo y ausencia de protección por billetes separados.
 - Un error de sintaxis en day-transport.js bloqueó la carga de todos los viajes; cada modificación JS requiere validación previa y prueba real de carga cuando sea posible.
 
+## Auditoría de enchufes y adaptadores
+- [ ] Comparar los conectores de todos los países del viaje con los mexicanos tipo A/B; indicar expresamente cuándo NO se necesita adaptador.
+- [ ] Si se requiere, especificar entrada mexicana y salida de destino para comprar el adaptador correcto, contemplando conexión a tierra.
+- [ ] Indicar voltaje y frecuencia; comprobar que los cargadores aceptan el rango local. Aclarar que un adaptador físico no convierte voltaje.
+- [ ] Rechazar recomendaciones vagas como «llevar adaptador si corresponde» y verificar el texto visible de `practicalIndicators.entry`.
+
 ## Auditoría del indicador «Idioma y moneda»
 - [ ] Para viajes nuevos, confirmar que `practicalIndicators.language.badge` indica idioma local y código ISO 4217 de moneda («Japonés · JPY»), no valoraciones como «Fácil de organizar».
 - [ ] Confirmar que `practicalIndicators.language.text` incluye utilidad del inglés y consejos pertinentes de efectivo, tarjetas y conversión a MXN; revisar contenido en la interfaz.
