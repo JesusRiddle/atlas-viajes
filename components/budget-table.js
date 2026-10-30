@@ -15,11 +15,10 @@ window.AtlasBudgetTable = (() => {
             decimal(cost.amount);
     };
     const groups = [
-        ['flight', 'Vuelos internacionales'],
-        ['train', 'Trenes principales'],
+        ['flight', 'Vuelos internacionales y nacionales'],
         ['lodging', 'Alojamientos'],
-        ['intercity_transport', 'Transporte interurbano · estimaciones'],
-        ['local_transport', 'Transporte urbano · estimaciones'],
+        ['intercity_transport', 'Transporte terrestre · interurbano'],
+        ['local_transport', 'Transporte terrestre · urbano'],
         ['admission', 'Entradas y actividades'],
         ['activities', 'Otras actividades'],
         ['food', 'Alimentación'],
@@ -34,8 +33,9 @@ window.AtlasBudgetTable = (() => {
         const grouped = new Map(groups.map(([key]) => [key, []]));
         for (const entry of result.entries) {
             const transport = transports.get(entry.id);
-            const category = transport ? (transport.type === 'flight' ? 'flight' : 'train') :
-                (expenses.get(entry.id)?.category || 'other');
+            // Los traslados por tierra están presupuestados en expenses. No duplicar sus rutas.
+            if (transport && transport.type !== 'flight') continue;
+            const category = transport ? 'flight' : (expenses.get(entry.id)?.category || 'other');
             if (!grouped.has(category)) grouped.set(category, []);
             grouped.get(category).push({
                 ...entry, label: (transport?.title || expenses.get(entry.id)?.concept || entry.id) +
@@ -43,20 +43,6 @@ window.AtlasBudgetTable = (() => {
                     expenses.get(entry.id)?.status === 'quoted' ? ' · cotizado' : '')
             });
         }
-        // Alojamiento y trayectos terrestres ya están presupuestados en expenses.
-        // Mostrar el precio de cada ruta cuando existe una estimación asociada,
-        // sin volver a sumarla al subtotal contable.
-        const routeEstimateId = {
-            'fuji-daytrip': 'fuji-return',
-            'tokyo-kyoto': 'rail-tokyo-kyoto',
-            'kyoto-nara': 'nara-return',
-            'kyoto-osaka': 'kyoto-osaka-transfer',
-            'osaka-tokyo-or-kix': (selections.get(trip.id)?.['flight-international']?.option ||
-                trip.majorTransport?.find(t => t.id === 'flight-international')?.selectedOption) === 'B' ||
-                (selections.get(trip.id)?.['flight-international']?.option ||
-                trip.majorTransport?.find(t => t.id === 'flight-international')?.selectedOption) === 'D'
-                ? 'osaka-kix-return' : 'rail-osaka-tokyo'
-        };
         const referenceFlight = trip.majorTransport?.find(t => t.id === 'flight-international');
         const flightSelection = selections.get(trip.id)?.['flight-international'] || {};
         const flightOption = referenceFlight?.options?.find(o => o.id === (flightSelection.option || referenceFlight.selectedOption)) ||
@@ -78,25 +64,17 @@ window.AtlasBudgetTable = (() => {
                 continue;
             }
             for (const item of items) {
-                const linkedExpense = expenses.get(routeEstimateId[item.id]);
-                const linkedMXN = linkedExpense && (!linkedExpense.scenario ||
-                    (routeEstimateId[item.id] === 'rail-osaka-tokyo' ? !['B', 'D'].includes(flightOption?.id) : true))
-                    ? budget.convert(linkedExpense.cost, trip.exchangeRates || {}, linkedExpense.paidMXN) : null;
-                const flightMXN = item.id === 'flight-international' ? referenceFlightMXN : null;
-                const amountLabel = item.mxn !== null ? pesos(item.mxn) :
-                    flightMXN !== null ? pesos(flightMXN) + ' · referencia' :
-                    linkedMXN !== null ? pesos(linkedMXN) + ' · ya incluido en transporte interurbano' :
-                    key === 'train' ? 'Incluido en estimación de transporte urbano / por definir ruta' :
-                    'Por cotizar / convertir';
+                const isReferenceFlight = item.id === referenceFlight?.id && item.mxn === null;
+                const displayCost = isReferenceFlight && referenceFlightMXN !== null ? referenceFare.price : item.cost;
+                const displayMXN = isReferenceFlight && referenceFlightMXN !== null ? referenceFlightMXN : item.mxn;
                 markup.push('<tr class="budget-item" data-budget-group="' + esc(key) + '"><td>' + esc(item.label) + '</td><td class="budget-amount">' +
-                    esc(original(item.cost || (flightMXN !== null ? referenceFare.price : null))) + '</td><td class="budget-amount">' +
-                    amountLabel + '</td></tr>');
+                    esc(original(displayCost)) + '</td><td class="budget-amount">' +
+                    (displayMXN === null ? 'Por estimar' : pesos(displayMXN) + (isReferenceFlight ? ' · referencia' : '')) + '</td></tr>');
             }
             const subtotal = items.reduce((sum, item) => sum + (item.mxn ?? 0), 0);
             markup.push('<tr class="budget-subtotal"><td>' + (key === 'flight' ? 'Referencia de vuelo · no incluida en subtotal terrestre' : 'Subtotal') +
                 '</td><td></td><td class="budget-amount">' +
                 (key === 'flight' && referenceFlightMXN !== null ? pesos(referenceFlightMXN) :
-                    key === 'train' && items.every(x => x.mxn === null) ? 'Desglosados en transporte interurbano y urbano' :
                     pesos(subtotal) + (items.some(x => x.mxn === null) ? ' + pendientes' : '')) + '</td></tr>');
         }
         const optional = (trip.expenses || []).filter(item => item.optional);
@@ -117,8 +95,7 @@ window.AtlasBudgetTable = (() => {
             pesos(result.knownTotalMXN + referenceFlightMXN) + '</td></tr>');
         return {
             html: markup.join(''),
-            note: 'Los importes en MXN usan el tipo de cambio de referencia del viaje. ' +
-                'Incluye cotizaciones y supuestos de planeación, no importes confirmados. Las estimaciones de transporte urbano/interurbano ya se contabilizan como gastos terrestres; las rutas sin tarifa figuran como pendientes y no se suman otra vez. El vuelo internacional pendiente no está incluido. Al cotizar cada traslado deberá reconciliarse su estimación para evitar doble conteo.',
+            note: 'Todos los importes son estimaciones de planeación. Los vuelos se presentan como referencia y se agregan una sola vez al total global; el transporte interurbano y urbano ya incluye los trenes, autobuses y demás traslados terrestres previstos.',
             result
         };
     }
@@ -131,7 +108,7 @@ window.AtlasBudgetTable = (() => {
             '<div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Moneda original</th><th>MXN</th></tr></thead>' +
             '<tbody data-budget-rows>' + data.html + '</tbody></table></div>' +
             '<p class="tiny" data-budget-note>' + esc(data.note) + '</p>' +
-            (planning ? '<p class="budget-range" data-budget-planning><strong>Proyección global de planeación:</strong> ' + pesos(planning.low) + '–' + pesos(planning.high) + ' MXN · vuelo de referencia ' + esc(planning.flightOption) + ' (' + esc(planning.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio') + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar al subtotal registrado.</p>' : '') +
+            (planning ? '<p class="budget-range" data-budget-planning><strong>Proyección global de planeación:</strong> ' + pesos(planning.low) + '–' + pesos(planning.high) + ' MXN · vuelo de referencia ' + esc(planning.flightOption) + ' (' + esc(planning.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio') + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar nuevamente al total global.</p>' : '') +
             (range ? '<p class="budget-range"><strong>Rango estimado para planear:</strong> ' +
                 pesos(range[0]) + '–' + pesos(range[1]) + ' MXN</p>' : '') +
             '</div>';
