@@ -1331,58 +1331,90 @@
     {
       "n": 4,
       "date": "2027-10-17",
-      "title": "Meiji Jingū, Harajuku y Shibuya",
+      "title": "Meiji Jingū, Harajuku y Shibuya · barrios del oeste",
       "base": "Tokio",
-      "am": "1. Visitar Meiji Jingū por la mañana y recorrer sus senderos.\n2. Continuar hacia Harajuku y elegir entre Takeshita y Omotesandō.",
-      "pm": "1. Trasladarse a Shibuya y recorrer el cruce y sus calles.\n2. Subir a SHIBUYA SKY solo si se reserva una franja conveniente.",
-      "night": "1. Cena en Shibuya y paseo por el barrio iluminado.\n2. Regreso en tren a Ueno-Okachimachi.",
-      "mobility": "• *Ueno → Harajuku → Shibuya:* Priorizar JR/metro y recorrer el tramo final a pie.",
-      "note": "• *Mirador:* El acceso exterior puede cerrar por viento o lluvia.\n• *Alternativa:* Reprogramar la vista o elegir un observatorio cubierto.",
+      "am": "1. Salir de Ueno-Okachimachi hacia Harajuku y entrar temprano al santuario Meiji Jingū; dedicar alrededor de 60–90 minutos a los senderos y el recinto.\n2. Recorrer Takeshita-dōri y después Omotesandō, eligiendo tiendas y pausas según el flujo dominical.",
+      "pm": "1. Caminar o tomar tren una estación hasta Shibuya; explorar el cruce, Hachikō y las calles del barrio, con tiempo para comer.\n2. Si interesa, reservar SHIBUYA SKY para la tarde; prever aproximadamente 60–90 minutos y respetar la franja de entrada.",
+      "night": "1. Pasear por Shibuya iluminado y cenar sin cambiar de barrio.\n2. Volver en JR o metro hasta Ueno-Okachimachi; dejar margen para descansar.",
+      "mobility": "• *Hotel → Harajuku:* Desde Okachimachi, línea JR Yamanote hacia Harajuku; sumar caminata al santuario.\n• *Harajuku → Shibuya:* Aproximadamente una estación en JR o paseo a pie por Omotesandō según cansancio.\n• *Regreso:* Tren desde Shibuya hasta Okachimachi; confirmar última salida si se prolonga la cena.",
+      "note": "• *Domingo:* Meiji Jingū temprano ayuda a evitar parte de la afluencia; Harajuku puede estar concurrido.\n• *Mirador opcional:* SHIBUYA SKY indica venta oficial con hasta dos semanas de anticipación; referencia de octubre de 2026: ¥2,700 antes de las 15:00 o ¥3,400 desde las 15:00. Azotea sujeta a clima.\n• *Gastos:* Transporte urbano, comidas y compras pendientes; no contar la entrada al mirador hasta elegirla.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
       "places": [],
       "headerPlaces": [
-        "Meiji Jingū, Harajuku y Shibuya"
+        "Meiji Jingū",
+        "Harajuku y Omotesandō",
+        "Shibuya · mirador opcional"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "SHIBUYA SKY · entradas oficiales",
+          "url": "https://shibuya-scramble-square.com/sky/ticket"
+        },
+        {
+          "label": "Guía oficial de Tokio · SHIBUYA SKY",
+          "url": "https://www.gotokyo.org/es/spot/1749/index.html"
+        }
+      ]
     },
     {
       "n": 5,
       "date": "2027-10-18",
-      "title": "Akihabara y Shinjuku · Tokio nocturno",
+      "title": "Akihabara y Shinjuku · tecnología y vida nocturna",
       "base": "Tokio",
-      "am": "1. Visitar Akihabara y seleccionar tiendas de tecnología, videojuegos o anime.\n2. Almorzar por la zona y regresar al hotel para una pausa si hace falta.",
-      "pm": "1. Trasladarse a Shinjuku y explorar sus calles, estaciones y miradores gratuitos si hay acceso.\n2. Descansar antes de los recorridos nocturnos.",
-      "night": "1. Pasear por Omoide Yokochō y entrar a Golden Gai solo si interesa.\n2. Volver en tren, comprobando el último servicio.",
-      "mobility": "• *Akihabara → Shinjuku:* JR o metro; dejar la zona nocturna para el final.",
-      "note": "• *Bares:* Verificar cargos mínimos y normas de consumo.\n• *Energía:* Si hay cansancio, acortar la visita nocturna.",
+      "am": "1. Desde Okachimachi, llegar a Akihabara en JR o caminando si apetece; dedicar unas 2–3 horas a tiendas de tecnología, videojuegos y cultura japonesa.\n2. Almorzar cerca de Akihabara y reservar una pausa para no llegar cansado a la noche.",
+      "pm": "1. Trasladarse a Shinjuku en JR Sōbu/Chūō o combinación conveniente; pasear por sus avenidas y la zona oeste.\n2. Considerar el observatorio gratuito del Gobierno Metropolitano si está abierto; confirmar cierres del lunes y destinar alrededor de 45–60 minutos.",
+      "night": "1. Visitar Omoide Yokochō para cenar o pasear y continuar a Golden Gai solo si interesa conocer sus pequeños bares.\n2. Regresar en transporte público antes del último tren; si hay cansancio, terminar tras la cena.",
+      "mobility": "• *Hotel → Akihabara:* Trayecto corto en JR desde Okachimachi o caminata según el acceso del hotel.\n• *Akihabara → Shinjuku:* JR hacia Shinjuku, aproximadamente 20–30 minutos de trayecto de referencia; sumar caminatas y transbordos.\n• *Shinjuku → hotel:* Regresar por JR Yamanote o alternativa conveniente, comprobando el último servicio.",
+      "note": "• *Lunes:* Algunas instituciones y el observatorio pueden cerrar determinados lunes; verificar el calendario oficial antes de ir.\n• *Mirador gratuito:* Observatorios del Gobierno Metropolitano sin entrada de pago, sujetos a cierres operativos.\n• *Golden Gai:* Actividad opcional; algunos bares cobran cargo de mesa o tienen restricciones de ingreso.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [],
       "places": [],
       "headerPlaces": [
-        "Akihabara y Shinjuku · Tokio nocturno"
+        "Akihabara",
+        "Shinjuku",
+        "Omoide Yokochō y Golden Gai · opcionales"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Gobierno Metropolitano · observatorios",
+          "url": "https://www.english.metro.tokyo.lg.jp/w/000-101-000542"
+        }
+      ]
     },
     {
       "n": 6,
       "date": "2027-10-19",
-      "title": "Kawaguchiko · monte Fuji",
+      "title": "Kawaguchiko · lago y vistas del monte Fuji",
       "base": "Tokio",
-      "am": "1. Salir temprano de Ueno hacia Busta Shinjuku o la estación del Fuji Excursion.\n2. Viajar a Kawaguchiko y comprobar visibilidad del monte Fuji.",
-      "pm": "1. Recorrer la orilla del lago Kawaguchi y llegar a Oishi Park por transporte local.\n2. Comer hōtō y reservar margen para volver a la estación.",
-      "night": "1. Tomar el tren o autobús de regreso conforme al boleto adquirido.\n2. Cena tranquila cerca del hotel.",
-      "mobility": "• *Ueno → Shinjuku → Kawaguchiko:* Contar traslado urbano previo y viaje interurbano de referencia de alrededor de 2 horas.\n• *Lago → Oishi Park:* Consultar autobuses locales y retorno.",
-      "note": "• *Clima:* El monte Fuji puede quedar oculto.\n• *Plan B:* Intercambiar este día con Ginza/Marunouchi solo si la tarifa permite modificar el transporte.",
+      "am": "1. Salir temprano desde el hotel hacia Busta Shinjuku; reservar margen para ubicar la terminal y abordar el autobús interurbano.\n2. Viajar a Kawaguchiko (aprox. 1 h 45 min sin congestión) y dirigirse a la orilla del lago; buscar vistas del monte Fuji únicamente si el cielo está despejado.",
+      "pm": "1. Utilizar el autobús turístico local u otra conexión válida para llegar a Oishi Park, disfrutar del paisaje y volver con margen a Kawaguchiko Station.\n2. Comer hōtō en la zona y consultar el estado del transporte de retorno antes de alejarse de la estación.",
+      "night": "1. Regresar desde Kawaguchiko a Shinjuku con boleto válido y continuar en JR/metro hasta Ueno-Okachimachi.\n2. Cenar cerca del hotel y descansar después de una excursión larga.",
+      "mobility": "• *Ueno → Busta Shinjuku:* Tren urbano y caminata hasta la terminal; llegar antes de la salida reservada.\n• *Shinjuku ↔ Kawaguchiko:* Autobús directo, referencia desde ¥2,000 por sentido en línea (¥4,000 ida y vuelta) y alrededor de 1 h 45 min por tramo, sujeto a tráfico.\n• *Kawaguchiko ↔ Oishi Park:* Transporte turístico local de pago; verificar frecuencia, pase aplicable y última salida antes de subir.",
+      "note": "• *Reserva:* El autobús admite reservas habitualmente desde un mes antes; comprar ambos sentidos y respetar condiciones de modificación.\n• *Clima:* No se garantizan vistas del Fuji. Intercambiar este día con Ginza/Marunouchi solo cuando los boletos lo permitan.\n• *Gasto de referencia:* ¥4,000 del autobús interurbano ida y vuelta; agregar traslados urbanos, transporte local, alimentos y compras. No es cotización para 2027.",
       "hotel": "tokio-ueno-inicio",
       "transportRefs": [
         "fuji-daytrip"
       ],
       "places": [],
       "headerPlaces": [
-        "Kawaguchiko · monte Fuji"
+        "Kawaguchiko Station",
+        "Lago Kawaguchi",
+        "Oishi Park"
       ],
-      "spend": null
+      "spend": null,
+      "noteLinks": [
+        {
+          "label": "Fujikyū · horarios, tarifas y reserva",
+          "url": "https://bus.fujikyu.co.jp/en/highway/fujisan/shinjuku-kawaguchiko/"
+        },
+        {
+          "label": "Fujikyū · compra directa",
+          "url": "https://bus.fujikyu.co.jp/en/lp/en-shinjuku-kawaguchiko/"
+        }
+      ]
     },
     {
       "n": 7,
