@@ -234,7 +234,7 @@
       "night": "Regresa a Múnich. Si hay viento fuerte o mala visibilidad, intercambia esta jornada con un día de ciudad.",
       "mobility": "Tren Múnich–Garmisch, transportes de montaña y regreso desde Eibsee hacia Garmisch en tren de cremallera o autobús según horario. Calcula 9–11 horas en total. El orden exacto se ajusta al tiempo y a las últimas salidas.",
       "spend": 3100,
-      "note": "El billete peatonal de ida y vuelta de Zugspitze para invierno 2026/27 está publicado desde €70.50 online o €78 en taquilla; incluye los transportes de montaña indicados por el operador, no el tren desde Múnich. Venta prevista desde mediados de noviembre. Con hielo o mal tiempo, limita el paseo junto al lago y cambia el día de montaña por el día de ciudad.",
+      "note": "El billete peatonal de ida y vuelta de Zugspitze para invierno 2026/27 está publicado desde €70.50 (≈ $1,471 MXN) online o €78 (≈ $1,628 MXN) en taquilla; incluye los transportes de montaña indicados por el operador, no el tren desde Múnich. Venta prevista desde mediados de noviembre. Con hielo o mal tiempo, limita el paseo junto al lago y cambia el día de montaña por el día de ciudad.",
       "optionalPlaces": [
         "garmisch"
       ]
@@ -271,7 +271,7 @@
       "night": "Cena en Múnich y prepara la maleta para el tren de mañana.",
       "mobility": "Utiliza transporte urbano para el Deutsches Museum y camina por el centro según tus planes de la tarde.",
       "spend": 1100,
-      "note": "Alternativa para quien prefiera otro palacio: sustituye este día libre por Oberammergau y Linderhof, sin añadir una excursión extra al calendario. Oberammergau destaca por sus fachadas pintadas; Linderhof es el pequeño palacio de Luis II. En invierno no cuentes con la Gruta de Venus ni los edificios estivales del parque. Entrada al palacio publicada: €11; traslado o tour se cotiza aparte y puede superar el gasto diario previsto. Si estás cansado, conserva el museo y el descanso.",
+      "note": "Alternativa para quien prefiera otro palacio: sustituye este día libre por Oberammergau y Linderhof, sin añadir una excursión extra al calendario. Oberammergau destaca por sus fachadas pintadas; Linderhof es el pequeño palacio de Luis II. En invierno no cuentes con la Gruta de Venus ni los edificios estivales del parque. Entrada al palacio publicada: €11 (≈ $230 MXN); traslado o tour se cotiza aparte y puede superar el gasto diario previsto. Si estás cansado, conserva el museo y el descanso.",
       "optionalPlaces": [
         "deutsches-museum",
         "oberammergau",
@@ -289,7 +289,7 @@
       "night": "Cena cerca del alojamiento y descansa para la caminata de mañana.",
       "mobility": "Tren directo de unas 4–4½ horas. WESTbahn llega a Westbahnhof; otros servicios pueden llegar a Hauptbahnhof. Elige el hotel y el traslado urbano según la estación del billete.",
       "spend": 1800,
-      "note": "La tarifa publicitada desde €23.99 es una referencia promocional, no una cotización para el 16 de diciembre. Confirma precio y horario antes de reservar."
+      "note": "La tarifa publicitada desde €23.99 (≈ $501 MXN) es una referencia promocional, no una cotización para el 16 de diciembre. Confirma precio y horario antes de reservar."
     },
     {
       "n": 11,
@@ -328,7 +328,7 @@
       "night": "Recorre el mercado navideño frente al palacio y vuelve a tu hotel.",
       "mobility": "Metro y caminata hasta el acceso. Reserva medio día largo para palacio, exteriores y mercado.",
       "spend": 2500,
-      "note": "Mercado de Schönbrunn anunciado del 6 de noviembre de 2026 al 6 de enero de 2027. El Sisi Pass publicado a €60 agrupa varias atracciones; sólo conviene si también visitarás las demás, no lo sumes a entradas equivalentes."
+      "note": "Mercado de Schönbrunn anunciado del 6 de noviembre de 2026 al 6 de enero de 2027. El Sisi Pass publicado a €60 (≈ $1,252 MXN) agrupa varias atracciones; sólo conviene si también visitarás las demás, no lo sumes a entradas equivalentes."
     },
     {
       "n": 13,
