@@ -68,7 +68,7 @@ window.AtlasBudgetTable = (() => {
             optional.forEach(item => {
                 const mxn = budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN);
                 markup.push('<tr class="budget-item budget-optional" data-budget-group="optional"><td>' + esc(item.concept) +
-                    '</td><td class="budget-amount">' + esc(original(item.cost, item.mxn)) +
+                    '</td><td class="budget-amount">' + esc(original(item.cost, mxn)) +
                     '</td><td class="budget-amount">' + (mxn === null ? 'Por cotizar' : pesos(mxn)) + '</td></tr>');
             });
             const optionalSubtotal = optional.reduce((sum, item) => sum + (budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN) ?? 0), 0);
