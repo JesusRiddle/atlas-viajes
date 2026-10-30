@@ -87,7 +87,45 @@ window.AtlasDayTransport = (() => {
                     : (option.provider || '');
                 const icons = { flight: '✈', train: '🚆', bus: '🚌', ferry: '⛴' };
                 return '<div class="day-transport-item"><div class="day-transport-head"><strong><span class="day-transport-kind" aria-hidden="true">' + (icons[item.type] || '➜') + '</span>' + esc(item.title) +
-                    '</strong><span>' + esc(amount) + (mxn != null && price.currency !== 'MXN' ? ' (≈  +
+                    '</strong><span>' + esc(amount) + (mxn != null && price.currency !== 'MXN' ? ' (≈ 
+                    mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN)' : '') +
+                    '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Precio ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
+                    (item.type === 'flight' ? '' : '<small>' + (providerLabel ? esc(providerLabel) + ' · ' : '') +
+                    esc(fare.name || fare.id) + (item.budgetIncludedIn ? ' · Precio informativo, no se suma al pase' : '') + '</small>') + '</div>';
+            }).join('') + '</div>';
+    }
+    function mountTransport(root, trip) {
+        if (!trip.majorTransport?.length) return () => {};
+        return window.AtlasSelections.subscribe(id => {
+            if (id !== trip.id || !root.isConnected) return;
+            for (const d of trip.days.filter(day => day.transportRefs?.length)) {
+                const node = root.querySelector('[data-day-transport="' + d.n + '"]');
+                if (node) node.outerHTML = transportSummary(trip, d);
+            }
+        });
+    }
+    return { render: transportSummary, mount: mountTransport };
+})();
+ +
+                    mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
+                    '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Precio ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
+                    (item.type === 'flight' ? '' : '<small>' + (providerLabel ? esc(providerLabel) + ' · ' : '') +
+                    esc(fare.name || fare.id) + (item.budgetIncludedIn ? ' · Precio informativo, no se suma al pase' : '') + '</small>') + '</div>';
+            }).join('') + '</div>';
+    }
+    function mountTransport(root, trip) {
+        if (!trip.majorTransport?.length) return () => {};
+        return window.AtlasSelections.subscribe(id => {
+            if (id !== trip.id || !root.isConnected) return;
+            for (const d of trip.days.filter(day => day.transportRefs?.length)) {
+                const node = root.querySelector('[data-day-transport="' + d.n + '"]');
+                if (node) node.outerHTML = transportSummary(trip, d);
+            }
+        });
+    }
+    return { render: transportSummary, mount: mountTransport };
+})();
+ +
                     mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
                     '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Precio ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
                     (item.type === 'flight' ? '' : '<small>' + (providerLabel ? esc(providerLabel) + ' · ' : '') +
