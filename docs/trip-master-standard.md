@@ -18,6 +18,8 @@ No exigir ninguna visita, ciudad, tarifa, cantidad de noches, fotografía o elec
 ## Terminología y métricas visibles
 En Inicio, portada, Panorama y comparativas mostrar alojamiento en formato «X noches, Y alojamientos», calculado desde los datos, con singular/plural correcto. Prohibido «bases para dormir», «Noches y bases» o «estancias» como etiqueta de cantidad de alojamientos. `bases` y `days[].base` son claves técnicas y no deben cambiarse por esta regla. Auditar el renderizador además de los JSON para evitar textos heredados.
 
+**Idioma y moneda:** `practicalIndicators.language.badge` debe mostrar idioma local y código ISO de moneda («Japonés · JPY»), nunca una valoración genérica de organización del viaje. Los consejos de pago e inglés van en `text`. Esta convención se verifica antes de aprobar viajes nuevos.
+
 ## Composición obligatoria y navegación
 Preservar el encabezado `triphero`, menú `subnav` y exactamente estas nueve secciones, con estas anclas, en este orden:
 
