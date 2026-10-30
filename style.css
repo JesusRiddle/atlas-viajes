@@ -2226,10 +2226,10 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   border-color:var(--line);
   color:var(--ink);
 }
-#plan .overview-climate-card.season-recommended{border-top-color:#255535}
-#plan .overview-climate-card.season-conditional{border-top-color:#a87912}
-#plan .overview-climate-card.season-avoid{border-top-color:#a84950}
-#plan .overview-climate-card.season-pending{border-top-color:#8052a6}
+#plan .overview-climate-card.season-recommended{border-top-color:#467b67}
+#plan .overview-climate-card.season-conditional{border-top-color:#9b783a}
+#plan .overview-climate-card.season-avoid{border-top-color:#b75b59}
+#plan .overview-climate-card.season-pending{border-top-color:#716486}
 #plan .overview-climate-card[class*="season-"] .fact-copy p{color:var(--ink)}
 #plan .overview-climate-card .overview-climate-season-status{
   font:700 11px/1.4 Arial,Helvetica,sans-serif;
