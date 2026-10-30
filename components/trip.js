@@ -59,7 +59,8 @@ window.AtlasTrip = function (ctx) {
             solo + '</div></article></div>' + (compact ? '</section>' : '');
     }
     function climateCard(t) {
-        const month = typeof t.start === 'string' ? t.start.slice(5, 7) : '';
+        const tripStart = typeof t.start === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(t.start) ? t.start : (t.days || []).find(d => typeof d?.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(d.date))?.date || '';
+        const month = tripStart.slice(5, 7);
         const status = t.seasonality?.months?.[month]?.status;
         const seasonLabels = { recommended: 'Recomendable', conditional: 'Aceptable', avoid: 'Desaconsejable', pending: 'Por definir' };
         const seasonClass = Object.prototype.hasOwnProperty.call(seasonLabels, status) ? ' season-' + status : '';
