@@ -17,9 +17,14 @@ window.AtlasBudgetTable = (() => {
     const groups = [
         ['flight', 'Vuelos internacionales'],
         ['train', 'Trenes principales'],
-        ['lodging', 'Hospedaje'],
-        ['activities', 'Entradas y actividades'],
+        ['lodging', 'Alojamientos'],
+        ['intercity_transport', 'Transporte interurbano · estimaciones'],
+        ['local_transport', 'Transporte urbano · estimaciones'],
+        ['admission', 'Entradas y actividades'],
+        ['activities', 'Otras actividades'],
         ['food', 'Alimentación'],
+        ['taxes', 'Impuestos'],
+        ['contingency', 'Contingencia'],
         ['other', 'Otros gastos']
     ];
     function rows(trip) {
@@ -74,12 +79,12 @@ window.AtlasBudgetTable = (() => {
             const optionalSubtotal = optional.reduce((sum, item) => sum + (budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN) ?? 0), 0);
             markup.push('<tr class="budget-subtotal"><td>Subtotal opcional · no incluido</td><td></td><td class="budget-amount">' + pesos(optionalSubtotal) + '</td></tr>');
         }
-        markup.push('<tr class="totalrow"><td>Subtotal registrado · cotizado + estimado</td><td></td><td class="budget-amount">' +
+        markup.push('<tr class="totalrow"><td>Subtotal registrado · estimado + cotizado (sin partidas pendientes)</td><td></td><td class="budget-amount">' +
             pesos(result.knownTotalMXN) + '</td></tr>');
         return {
             html: markup.join(''),
             note: 'Los importes en MXN usan el tipo de cambio de referencia del viaje. ' +
-                'Incluye cotizaciones y supuestos estimados; no es un total confirmado ni incluye pendientes.',
+                'Incluye cotizaciones y supuestos de planeación, no importes confirmados. Las estimaciones de transporte urbano/interurbano ya se contabilizan como gastos terrestres; las rutas sin tarifa figuran como pendientes y no se suman otra vez. El vuelo internacional pendiente no está incluido. Al cotizar cada traslado deberá reconciliarse su estimación para evitar doble conteo.',
             result
         };
     }
