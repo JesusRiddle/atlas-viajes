@@ -65,3 +65,5 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] Si hay `exchangeRates` y `exchangeRateSnapshot`, los tipos aplicables (JPY, EUR, USD, etc.) se ven con fecha y fuente en Panorama, sin condicionar el renderizador a dos monedas fijas.
 - [ ] «Clima y luz» enfatiza fechas elegidas y resume en segundo plano otras ventanas.
 - [ ] Comprobar renderizado en escritorio/móvil y que el desglose de presupuesto no cuente dos veces vuelos u otros transportes.
+
+- [ ] «Clima y luz» muestra franja superior del MISMO color que el estado del mes de inicio en «Temporadas» y su etiqueta correspondiente (Recomendable/Aceptable/Desaconsejable/Por definir), incluso si el JSON tiene fechas solo en `days[]` y no en `start`.
