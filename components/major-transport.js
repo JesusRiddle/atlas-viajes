@@ -199,9 +199,84 @@ window.AtlasMajorTransport = (() => {
             '<span class="mt-route"><strong>' + esc(transport.title) + '</strong><small>' +
             (transport.type === 'train' ? (transport.day ? 'Día ' + transport.day : '') : esc(option.provider || '') + (transport.day ? ' · Día ' + transport.day : '')) + '</small></span>' +
             '<span class="mt-inline">' + summary + '</span>' +
-            '<span class="mt-price"><strong>' + esc(formatMoney(price)) + '</strong><small>' +
-            (converted === null ? 'MXN pendiente de conversión' :
-                '≈ $' + number.format(converted) + ' MXN') + '</small></span>' +
+            '<span class="mt-price"><strong>' + esc(formatMoney(price)) +
+            (price?.currency !== 'MXN' && converted !== null ? ' (≈ 
+            '<span class="mt-chevron" aria-hidden="true">⌄</span></summary>' +
+            '<div class="mt-details"><div class="mt-selectors">' +
+            '<label>Alternativa<select data-field="option" aria-label="Alternativa para ' +
+            esc(transport.title) + '">' + options + '</select></label>' +
+            '<label>Tarifa<select data-field="fare" aria-label="Tarifa para ' +
+            esc(transport.title) + '">' + fares + '</select></label></div>' +
+            (transport.type === 'flight' ? '<p class="mt-baggage">' +
+                esc(baggageLabel(fare.baggage)) + '</p>' : '') +
+            '<div class="mt-leg-list' + ((transport.type === 'flight' || transport.type === 'train') ? ' mt-flight-list' : '') + '">' + detail + '</div>' +
+            '<div class="mt-terms"><span><strong>Cambios:</strong> ' + esc(fare.changes || 'Por confirmar') +
+            '</span><span><strong>Reembolsos:</strong> ' + esc(fare.refunds || 'Por confirmar') +
+            '</span></div>' +
+            (option.notes ? '<p class="mt-note">' + esc(option.notes) + '</p>' : '') +
+            (transport.links?.length ? '<div class="entity-links">' + transport.links.map(link => '<a href="' + esc(link.url) + '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + '</a>').join('') + '</div>' : '') +
+            '</div></details>';
+    }
+    function render(trip) {
+        if (!trip.majorTransport?.length) return '';
+        const current = selections.get(trip.id);
+        return '<section class="major-transport" id="traslados" aria-label="Traslados principales">' +
+            '<div class="mt-heading"><span class="mt-kicker mt-kicker-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 10h14M8 14h2m4 0h2M8 21l2-3m6 3-2-3"/></svg> Movilidad y conexiones</span>' +
+            '<h2>Traslados principales.</h2><p>Compara las alternativas, tarifas y condiciones de tus vuelos y trenes.</p></div>' +
+            '<div class="mt-list">' + trip.majorTransport.map(item => card(trip, item, current)).join('') + '</div>' +
+            '<p class="mt-footnote">Cotizaciones de referencia, no reservas confirmadas. Las elecciones son temporales y no modifican el itinerario guardado.</p>' +
+            (trip.ticketNotes?.length ? '<details class="mt-tickets"><summary>Billetes y flexibilidad</summary>' +
+                '<ul>' + trip.ticketNotes.map(item => { const name = Array.isArray(item) ? item[0] : item?.title; const note = Array.isArray(item) ? item[1] : (item?.note || item?.rules || item?.conditions || item?.fallback || 'Consultar detalles de reserva'); return '<li><strong>' + esc(name || 'Nota') + ':</strong> ' + esc(note) + '</li>'; }).join('') + '</ul></details>' : '') +
+            '</section>';
+    }
+    function mount(root, trip) {
+        let host = root.querySelector('#traslados');
+        if (!host) return () => {};
+        function refresh() {
+            if (!host.isConnected) return;
+            const active = document.activeElement;
+            const focusedCard = active?.closest?.('.mt-card');
+            const focusedId = focusedCard?.dataset.transport;
+            const focusedField = active?.dataset?.field;
+            const previous = [...host.querySelectorAll('.mt-card[open]')].map(x => x.dataset.transport);
+            const frame = document.createElement('div');
+            frame.innerHTML = render(trip);
+            const next = frame.firstElementChild;
+            for (const id of previous) {
+                const element = [...next.querySelectorAll('.mt-card')].find(x => x.dataset.transport === id);
+                if (element) element.open = true;
+            }
+            const ticket = host.querySelector('.mt-tickets');
+            if (ticket?.open) next.querySelector('.mt-tickets').open = true;
+            host.removeEventListener('change', change);
+            host.replaceWith(next);
+            host = next;
+            host.addEventListener('change', change);
+            if (focusedId && focusedField) {
+                const matchingCard = [...next.querySelectorAll('.mt-card')].find(item => item.dataset.transport === focusedId);
+                matchingCard?.querySelector('select[data-field="' + focusedField + '"]')?.focus({ preventScroll: true });
+            }
+        }
+        const change = e => {
+            const select = e.target.closest('select[data-field]');
+            if (!select) return;
+            const item = select.closest('.mt-card');
+            const transport = trip.majorTransport.find(t => t.id === item?.dataset.transport);
+            if (!transport) return;
+            const current = selections.get(trip.id)[transport.id] || {};
+            const optionId = select.dataset.field === 'option' ? select.value : (current.option || transport.selectedOption);
+            const option = transport.options.find(o => o.id === optionId);
+            const fareId = select.dataset.field === 'fare' ? select.value : option.selectedFare;
+            selections.set(trip, transport.id, optionId, fareId);
+        };
+        host.addEventListener('change', change);
+        const unsubscribe = selections.subscribe(tripId => { if (tripId === trip.id && root.isConnected) refresh(); });
+        return () => { host.removeEventListener('change', change); unsubscribe(); };
+    }
+    return { render, mount };
+})();
+ + number.format(converted) + ' MXN)' : '') +
+            '</strong><small>' + (converted === null ? 'MXN pendiente de conversión' : '') + '</small></span>' +
             '<span class="mt-chevron" aria-hidden="true">⌄</span></summary>' +
             '<div class="mt-details"><div class="mt-selectors">' +
             '<label>Alternativa<select data-field="option" aria-label="Alternativa para ' +
