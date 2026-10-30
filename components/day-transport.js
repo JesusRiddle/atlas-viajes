@@ -74,7 +74,7 @@ window.AtlasDayTransport = (() => {
                 const price = window.AtlasBudget.selectedTransportPrice(item, current);
                 const mxn = window.AtlasBudget.convert(price, t.exchangeRates || {});
                 const amount = price && Number.isFinite(price.amount)
-                    ? (price.currency === 'EUR' ? '€' : price.currency === 'JPY' ? '¥' : price.currency === 'USD' ? 'US$' : price.currency === 'MXN' ? '$' : price.currency + ' ') + price.amount.toLocaleString('es-MX', { maximumFractionDigits: 2 }) +
+                    ? (price.currency === 'EUR' ? '€' : '$') + price.amount.toLocaleString('es-MX', { maximumFractionDigits: 2 }) +
                         (price.currency === 'MXN' ? ' MXN' : '') : 'Por cotizar';
                 // El número de servicio ya está visible en la cronología; evitar repetirlo en el pie.
                 const providerLabel = item.type === 'train'
@@ -87,8 +87,8 @@ window.AtlasDayTransport = (() => {
                     : (option.provider || '');
                 const icons = { flight: '✈', train: '🚆', bus: '🚌', ferry: '⛴' };
                 return '<div class="day-transport-item"><div class="day-transport-head"><strong><span class="day-transport-kind" aria-hidden="true">' + (icons[item.type] || '➜') + '</span>' + esc(item.title) +
-                    '</strong><span>' + esc(amount) + (mxn != null && price.currency !== 'MXN' ? ' (≈ $' +
-                    mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN)' : '') +
+                    '</strong><span>' + esc(amount) + (mxn != null && price.currency !== 'MXN' ? ' · ≈ $' +
+                    mxn.toLocaleString('es-MX', { maximumFractionDigits: 2 }) + ' MXN' : '') +
                     '</span></div>' + (item.type === 'flight' ? '<small class="flight-fare">' + (option.provider ? esc(option.provider) + ' · ' : '') + esc(fare.name || fare.id) + ' · Precio ida y vuelta</small>' : '') + (routes || '<div class="day-transport-route">Horario pendiente de confirmar</div>') +
                     (item.type === 'flight' ? '' : '<small>' + (providerLabel ? esc(providerLabel) + ' · ' : '') +
                     esc(fare.name || fare.id) + (item.budgetIncludedIn ? ' · Precio informativo, no se suma al pase' : '') + '</small>') + '</div>';
@@ -105,4 +105,4 @@ window.AtlasDayTransport = (() => {
         });
     }
     return { render: transportSummary, mount: mountTransport };
-})()
+})();
