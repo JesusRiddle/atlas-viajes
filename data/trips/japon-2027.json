@@ -351,7 +351,7 @@
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Ninguna entrada está comprada. La ruta, las fechas y la duración siguen abiertas. Tras decidir vuelos y estancias, asegurar primero Universal Studios Japan y después los accesos con horario. Precios en yenes como referencias de octubre de 2026, sujetos a cambios; no implican disponibilidad para 2027. Mantener Kawaguchiko flexible por el clima."
+    "reservationNote": "Vuelos internacionales: cuatro alternativas referenciales de septiembre de 2027 ya incorporadas en la tabla de transporte (sin selección ni compra); octubre de 2027 aún sin cotización equivalente. Precios de vuelo en MXN, no gastos confirmados. Al definir vuelos, actualizar la última noche Tokio/Kansai, equipaje y traslados; después priorizar Universal Studios Japan y demás reservas."
   },
   "reservations": [
     [
@@ -456,14 +456,14 @@
     {
       "id": "flight-international",
       "type": "flight",
-      "title": "México ↔ Japón · comparar aeropuertos y regreso",
+      "title": "Vuelos internacionales · referencias comparadas de septiembre 2027",
       "selectedOption": null,
       "options": [
         {
           "id": "A",
-          "provider": "Vuelo redondo MEX ↔ Tokio (HND/NRT)",
+          "provider": "American Airlines + Japan Airlines · redondo MEX–Tokio",
           "status": "planning",
-          "selectedFare": "pending",
+          "selectedFare": "reference-september",
           "journeys": [
             {
               "direction": "outbound",
@@ -492,20 +492,23 @@
           ],
           "fares": [
             {
-              "id": "pending",
-              "name": "Tarifa y equipaje por cotizar",
-              "price": null,
-              "changes": "Por verificar",
-              "refunds": "Por verificar"
+              "id": "reference-september",
+              "name": "Referencia septiembre 2027 · NO cotización octubre",
+              "price": {
+                "amount": 28417,
+                "currency": "MXN"
+              },
+              "changes": "No verificadas para octubre de 2027",
+              "refunds": "No verificados; revisar tarifa y equipaje"
             }
           ],
-          "notes": "Escenario de cuatro estancias: Tokio 6, Kioto 5, Osaka 4 y Tokio 1. Comparar precio total incluyendo shinkansen de regreso, equipaje, conexiones y descanso. Ningún vuelo reservado."
+          "notes": "Cotización compartida para SEPTIEMBRE 2027, no para las fechas provisionales 14–31 de octubre. Redondo MEX↔Tokio por $28,417 MXN. Ruta con conexión en Dallas/Fort Worth (DFW) y combinación American/JAL; se estudiaron regresos desde Haneda de aprox. 16 h 15 min o 17 h 05 min (según variante), uno con salida de referencia alrededor de 16:30 y conexión de 2 h 38 min en DFW. Verificar de nuevo operador, itinerario exacto, tarifa y maleta al abrir octubre. Preferencia provisional por esta opción si el precio total, incluido regreso Osaka→Tokio, resulta competitivo."
         },
         {
           "id": "B",
-          "provider": "Multidestino MEX → Tokio / Osaka KIX → MEX",
+          "provider": "Multidestino MEX→Tokio / KIX→MEX · vía HND y DFW",
           "status": "planning",
-          "selectedFare": "pending",
+          "selectedFare": "reference-september",
           "journeys": [
             {
               "direction": "outbound",
@@ -534,14 +537,107 @@
           ],
           "fares": [
             {
-              "id": "pending",
-              "name": "Tarifa multidestino por cotizar",
-              "price": null,
+              "id": "reference-september",
+              "name": "Referencia septiembre 2027 · NO cotización octubre",
+              "price": {
+                "amount": 33906,
+                "currency": "MXN"
+              },
+              "changes": "No verificadas para octubre de 2027",
+              "refunds": "No verificados; revisar tarifa y equipaje"
+            }
+          ],
+          "notes": "Cotización compartida para SEPTIEMBRE 2027: $33,906 MXN. Regreso de referencia KIX→HND→DFW→MEX, salida de KIX alrededor de 06:40, duración aprox. 20 h 20 min. Cuesta $5,489 MXN más que el redondo de referencia; ahorra el Shinkansen Osaka→Tokio pero implica salida muy temprana, conexiones internacionales y posiblemente convenga dormir cerca de KIX. Redistribuir la noche final de Tokio a Osaka/Kansai si se elige."
+        },
+        {
+          "id": "C",
+          "provider": "Alternativa aérea económica · conexiones largas vía LAX",
+          "status": "planning",
+          "selectedFare": "reference-september",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "Tokio (HND/NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Operador y conexión exactos por reconfirmar · LAX"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Tokio (HND/NRT)",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Ruta con conexión larga vía LAX · por reconfirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference-september",
+              "name": "Referencia septiembre 2027 · NO cotización octubre",
+              "price": {
+                "amount": 28498,
+                "currency": "MXN"
+              },
               "changes": "Por verificar",
               "refunds": "Por verificar"
             }
           ],
-          "notes": "Evita el shinkansen de regreso a Tokio, pero exige comparar una conexión internacional real desde KIX: duración puerta a puerta, escalas, posibles pernoctas, equipaje y coste total. La noche final de Tokio se elimina y debe redistribuirse conscientemente, no desaparecer sin ajustar la duración."
+          "notes": "Opción compartida de septiembre por $28,498 MXN, con referencia de escala en Los Ángeles (LAX) de 20 h 41 min y regreso total de alrededor de 35 h 15 min. Apenas $81 MXN más que el redondo de $28,417, pero mucho menos atractiva por duración. Aerolínea, trayecto preciso y equipaje pendientes de verificar."
+        },
+        {
+          "id": "D",
+          "provider": "Multidestino alternativo · conexión vía HND/LAX",
+          "status": "planning",
+          "selectedFare": "reference-september",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "Tokio (HND/NRT)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Por reconfirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "KIX",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Conexiones HND/LAX · por reconfirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference-september",
+              "name": "Referencia septiembre 2027 · NO cotización octubre",
+              "price": {
+                "amount": 35536,
+                "currency": "MXN"
+              },
+              "changes": "Por verificar",
+              "refunds": "Por verificar"
+            }
+          ],
+          "notes": "Alternativa multidestino compartida de septiembre de 2027: $35,536 MXN y regreso aproximado de 22 h 20 min vía HND/LAX. No mejora el precio de la opción multidestino vía DFW de $33,906 y mantiene escalas. Confirmar operador, maleta y itinerario completo antes de cualquier compra."
         }
       ],
       "links": [
@@ -550,7 +646,7 @@
           "url": "https://www.google.com/travel/flights"
         }
       ],
-      "ticketGuide": "Cotizar ida y vuelta o multidestino con el mismo equipaje, número de escalas y duración real; no decidir por precio de boleto aislado."
+      "ticketGuide": "Las cuatro tarifas son capturas/cotizaciones de SEPTIEMBRE 2027 facilitadas por el viajero el 29/10/2026, cuando Google Flights aún no ofrecía el rango de octubre. Se muestran para comparar, no son disponibilidad ni precio de 14–31 octubre de 2027; no hay vuelo comprado. A $28,417 (redondo) vs B $33,906 (multidestino): diferencia de $5,489 MXN; contrastar contra Shinkansen Osaka→Tokio, hoteles, equipaje, conexiones, tiempo y descanso. C $28,498 implica regreso de 35h15; D $35,536 implica 22h20. Reconsultar al abrir ventas de octubre y elegir una sola alternativa. No asumir que la tarifa cubre maleta documentada."
     },
     {
       "id": "airport-tokyo",
