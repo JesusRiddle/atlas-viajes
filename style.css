@@ -2246,3 +2246,34 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 #plan .overview-climate-card.season-conditional .overview-climate-season-status{background:#f8eac5;color:#795200;border-color:#eac56d}
 #plan .overview-climate-card.season-avoid .overview-climate-season-status{background:#f5dfe0;color:#8b3037;border-color:#dfa7ad}
 #plan .overview-climate-card.season-pending .overview-climate-season-status{background:#ebddf7;color:#653b97;border-color:#d6c2e5}
+
+/* Formato obligatorio de Clima y luz en la composición nueva: franja y etiqueta
+   del mismo estado que el mes correspondiente en Temporadas. */
+#plan .overview-editorial .overview-climate-card[class*="season-"]{
+  --climate-accent:#716486;
+  border-top:0;
+  overflow:hidden;
+  padding:0;
+}
+#plan .overview-editorial .overview-climate-card.season-recommended{--climate-accent:#467b67}
+#plan .overview-editorial .overview-climate-card.season-conditional{--climate-accent:#9b783a}
+#plan .overview-editorial .overview-climate-card.season-avoid{--climate-accent:#b75b59}
+#plan .overview-editorial .overview-climate-card.season-pending{--climate-accent:#716486}
+#plan .overview-editorial .overview-climate-card[class*="season-"] > h3{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0;
+  padding:12px 18px;
+  background:var(--climate-accent);
+  color:#fff;
+}
+#plan .overview-editorial .overview-climate-card[class*="season-"] > .fact-copy{
+  padding:16px 20px 18px;
+}
+#plan .overview-editorial .overview-climate-card[class*="season-"] .overview-climate-season-status{
+  margin-left:auto;
+  background:#fff;
+  color:var(--climate-accent);
+  border-color:#fff;
+}
