@@ -541,7 +541,7 @@
               "refunds": "Por verificar"
             }
           ],
-          "notes": "Evita volver a Tokio para el vuelo. Comparar coste total y duración real del regreso: una opción barata con escala nocturna excesiva no equivale a una conexión cómoda. Requiere reajustar la última noche y los hoteles."
+          "notes": "Evita el shinkansen de regreso a Tokio, pero exige comparar una conexión internacional real desde KIX: duración puerta a puerta, escalas, posibles pernoctas, equipaje y coste total. La noche final de Tokio se elimina y debe redistribuirse conscientemente, no desaparecer sin ajustar la duración."
         }
       ],
       "links": [
@@ -654,6 +654,18 @@
                   "operator": "Fujikyū / Keio · autobús directo"
                 }
               ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kawaguchiko Station",
+                  "to": "Busta Shinjuku",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Fujikyū / Keio · autobús directo"
+                }
+              ]
             }
           ],
           "fares": [
@@ -665,7 +677,7 @@
               "refunds": "Según tarifa adquirida"
             }
           ],
-          "notes": "Referencia consultada octubre de 2026: aprox. 1 h 45 min por trayecto y desde ¥2,000 online (¥2,200 en taquilla) por sentido. Tráfico variable; desde Ueno se requiere llegar primero a Shinjuku. Ida y vuelta se adquieren por separado."
+          "notes": "Referencia del operador en octubre de 2026: autobús directo Busta Shinjuku↔Kawaguchiko, aprox. 1 h 45 min por sentido, ¥2,000 en línea o ¥2,200 en taquilla por sentido; reservar los dos tramos. El tráfico y la disponibilidad pueden variar. Desde Ueno se necesita traslado previo a Shinjuku; después, transporte local hasta Oishi Park."
         },
         {
           "id": "B",
@@ -679,6 +691,18 @@
                 {
                   "from": "Shinjuku",
                   "to": "Kawaguchiko Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR + Fujikyū Railway / Fuji Excursion"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kawaguchiko Station",
+                  "to": "Shinjuku",
                   "departure": null,
                   "arrival": null,
                   "operator": "JR + Fujikyū Railway / Fuji Excursion"
@@ -708,7 +732,7 @@
           "url": "https://www.jreast.co.jp/multi/en/"
         }
       ],
-      "ticketGuide": "Los autobuses permiten reservar habitualmente desde un mes antes. Como el Fuji depende del clima, evitar reservar ambos sentidos con excesiva anticipación sin evaluar la flexibilidad y la cancelación."
+      "ticketGuide": "Reservar tanto ida como regreso desde Shinjuku/Kawaguchiko. El autobús suele venderse desde un mes antes; actualmente la compra oficial en línea es desde ¥2,000 por sentido, sin garantía para 2027. Desde el hotel en Ueno, sumar el traslado urbano a Shinjuku y las conexiones locales entre Kawaguchiko Station, el lago y Oishi Park. No confundir flexibilidad meteorológica con disponibilidad garantizada de asientos."
     },
     {
       "id": "tokyo-kyoto",
@@ -744,7 +768,7 @@
               "refunds": "Según tarifa adquirida"
             }
           ],
-          "notes": "Aproximadamente 2 h 10–20 min en tren, más trayectos hotel-estación. Reservar asiento con equipaje de gran tamaño si aplica; fechas y tarifas aún no disponibles."
+          "notes": "Nozomi tarda aproximadamente 2 h 10–20 min entre Tokyo/Shinagawa y Kyoto, sin incluir Ueno→estación de salida ni Kyoto Station→Shijō/Karasuma. Revisar reserva para equipaje sobredimensionado y la tarifa al abrir ventas."
         },
         {
           "id": "B",
@@ -812,6 +836,18 @@
                   "operator": "Kintetsu Railway"
                 }
               ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kintetsu-Nara Station",
+                  "to": "Kyoto Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Kintetsu Railway"
+                }
+              ]
             }
           ],
           "fares": [
@@ -842,6 +878,18 @@
                   "operator": "JR West · Miyakoji Rapid"
                 }
               ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "JR Nara Station",
+                  "to": "Kyoto Station",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "JR West · Miyakoji Rapid"
+                }
+              ]
             }
           ],
           "fares": [
@@ -866,7 +914,7 @@
           "url": "https://www.westjr.co.jp/global/en/"
         }
       ],
-      "ticketGuide": "Viaje de ida y vuelta, no traslado de hotel. Elegir Kintetsu o JR según tiempo puerta a puerta y actividad inicial."
+      "ticketGuide": "Excursión de ida y vuelta sin cambiar alojamiento: desde Shijō/Karasuma llegar primero a Kyoto Station, luego elegir Kintetsu o JR. Kintetsu-Nara está más cerca del parque; comprobar el tren de retorno y el suplemento si se escoge Limited Express."
     },
     {
       "id": "kyoto-osaka",
@@ -932,7 +980,7 @@
               "refunds": "Según tarifa adquirida"
             }
           ],
-          "notes": "Salida desde Karasuma cerca del hotel de Kioto; comparar tiempo y número de cambios hasta Osaka-Namba."
+          "notes": "Desde el hotel junto a Karasuma, la línea Hankyu permite llegar a Osaka-Umeda sin desplazarse antes a Kyoto Station; conectar con la línea Midosuji a Namba. Comparar esta alternativa puerta a puerta con JR según equipaje, congestión y hora."
         }
       ],
       "links": [
@@ -945,7 +993,7 @@
           "url": "https://www.hankyu.co.jp/global/en/"
         }
       ],
-      "ticketGuide": "No hace falta shinkansen para este tramo. Viajar con equipaje y evitar horas pico si es posible."
+      "ticketGuide": "El hotel de Kioto está junto a Shijō/Karasuma y el de Osaka junto a Namba: comparar Hankyu Karasuma→Osaka-Umeda + metro a Namba frente a JR Kyoto→Osaka + metro. No se necesita shinkansen; proteger tiempo con maleta y evitar hora pico."
     },
     {
       "id": "osaka-usj",
@@ -965,6 +1013,18 @@
                 {
                   "from": "Osaka-Namba",
                   "to": "Universal City",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Hanshin / JR West · conexiones urbanas"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Universal City",
+                  "to": "Osaka-Namba",
                   "departure": null,
                   "arrival": null,
                   "operator": "Hanshin / JR West · conexiones urbanas"
@@ -994,7 +1054,7 @@
           "url": "https://www.westjr.co.jp/global/en/"
         }
       ],
-      "ticketGuide": "La estación objetivo es Universal City; no confundir con Shin-Osaka."
+      "ticketGuide": "Ida y regreso entre Osaka-Namba y Universal City; comprobar transbordos y último servicio. Salir con margen para los controles del parque. El Studio Pass no incluye transporte."
     },
     {
       "id": "osaka-tokyo-or-kix",
@@ -1060,7 +1120,7 @@
               "refunds": "Según tarifa adquirida"
             }
           ],
-          "notes": "Solo si el vuelo regresa desde Osaka. Comparar Rapi:t y Airport Express, equipaje, terminal y hora de check-in."
+          "notes": "Solo para regreso internacional desde KIX. Nankai desde Namba hasta Kansai Airport; elegir Rapi:t o Airport Express según hora, precio, equipaje y terminal. La salida de Osaka podría adelantarse y obligaría a modificar la última noche según el vuelo."
         }
       ],
       "links": [
@@ -1177,5 +1237,5 @@
       "note": "La excursión a Nara se paga ida y vuelta; el transporte a Universal no está incluido en Studio Pass. No sumar simultáneamente regreso Osaka→Tokio y Osaka→KIX, ni pagar alternativas de pase y billete individual para el mismo tramo."
     }
   ],
-  "local": "Moverse principalmente en tren y metro, con tarjeta IC para trayectos urbanos. Tokio: desde Ueno-Okachimachi, combinar JR Yamanote y metro según barrio. Kioto: metro y autobús, priorizando tren para Fushimi Inari y Nara; prever caminatas entre templos. Osaka: metro para Namba/Dotonbori y tren a Universal City. Comprar Shinkansen y autobuses interurbanos por separado cuando se fijen fechas. Ningún horario ni tarifa de 2027 está confirmado."
+  "local": "La ruta se organiza desde los alojamientos, no solo entre estaciones: Tokio (Ueno-Okachimachi) exige sumar conexión a Shinjuku para Kawaguchiko y a Tokyo/Shinagawa para el shinkansen; Kioto (Shijō/Karasuma) facilita Hankyu hacia Osaka, mientras Nara requiere conectar con Kyoto Station. En Osaka, Namba permite caminar a Dotonbori y tomar tren hacia Universal City. Usar tarjeta IC para transporte urbano compatible, sin confundirla con reservas de trenes rápidos. Fechas, horarios y costos siguen sin confirmar para 2027."
 }
