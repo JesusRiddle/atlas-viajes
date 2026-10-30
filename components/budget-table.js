@@ -9,10 +9,10 @@ window.AtlasBudgetTable = (() => {
         minimumFractionDigits: 2, maximumFractionDigits: 2
     }).format(value);
     const pesos = value => '$' + decimal(value);
-    const original = cost => {
+    const original = (cost, mxn = null) => {
         if (!cost || !Number.isFinite(cost.amount) || cost.currency === 'MXN') return '';
         return (cost.currency === 'EUR' ? '€' : cost.currency === 'USD' ? 'US$' : cost.currency + ' ') +
-            decimal(cost.amount);
+            decimal(cost.amount) + (Number.isFinite(mxn) ? ' (≈ $' + new Intl.NumberFormat('es-MX', { maximumFractionDigits: 0 }).format(mxn) + ' MXN)' : '');
     };
     const groups = [
         ['flight', 'Vuelos internacionales'],
@@ -54,7 +54,7 @@ window.AtlasBudgetTable = (() => {
             }
             for (const item of items) {
                 markup.push('<tr class="budget-item" data-budget-group="' + esc(key) + '"><td>' + esc(item.label) + '</td><td class="budget-amount">' +
-                    esc(original(item.cost)) + '</td><td class="budget-amount">' +
+                    esc(original(item.cost, item.mxn)) + '</td><td class="budget-amount">' +
                     (item.mxn === null ? 'Por cotizar / convertir' : pesos(item.mxn)) + '</td></tr>');
             }
             const subtotal = items.reduce((sum, item) => sum + (item.mxn ?? 0), 0);
@@ -68,7 +68,7 @@ window.AtlasBudgetTable = (() => {
             optional.forEach(item => {
                 const mxn = budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN);
                 markup.push('<tr class="budget-item budget-optional" data-budget-group="optional"><td>' + esc(item.concept) +
-                    '</td><td class="budget-amount">' + esc(original(item.cost)) +
+                    '</td><td class="budget-amount">' + esc(original(item.cost, item.mxn)) +
                     '</td><td class="budget-amount">' + (mxn === null ? 'Por cotizar' : pesos(mxn)) + '</td></tr>');
             });
             const optionalSubtotal = optional.reduce((sum, item) => sum + (budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN) ?? 0), 0);
