@@ -2406,7 +2406,8 @@
         "kyoto-osaka"
       ],
       "places": [
-        "japan27-nijo"
+        "japan27-nijo",
+        "japan27-dotonbori"
       ],
       "headerPlaces": [
         "Castillo Nijō · Ninomaru",
@@ -2443,7 +2444,11 @@
       "transportRefs": [
         "osaka-usj"
       ],
-      "places": [],
+      "places": [
+        "japan27-usj",
+        "japan27-nintendo",
+        "japan27-harry-potter"
+      ],
       "headerPlaces": [
         "Universal Studios Japan",
         "Super Nintendo World · acceso condicionado",
@@ -2477,7 +2482,10 @@
       "note": "• *Después de Universal:* Mantener solo dos zonas principales para no acumular cansancio.\n• *Opcionales:* Museo interior del castillo y mirador Tsūtenkaku no son visitas obligatorias ni boletos comprados.\n• *Kuromon:* Si no se visitó el día 13, reservar un bloque del día 16 durante horario comercial.\n• *Gastos:* Transporte local, alimentación y posibles entradas pendientes de tarifa; no añadir importes no verificados.",
       "hotel": "osaka-namba",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-osaka-castle",
+        "japan27-shinsekai"
+      ],
       "headerPlaces": [
         "Parque del Castillo de Osaka",
         "Shinsekai",
@@ -2507,7 +2515,10 @@
       "note": "• *Prioridad:* Kuromon por la mañana, seguido de Den Den Town a pie; los horarios dependen de cada comercio.\n• *Respaldo USJ:* El intercambio exige fecha y boleto realmente disponibles, no una entrada automática para el viernes.\n• *Preparación:* Verificar equipaje, elección del aeropuerto de regreso y gastos antes de salir de Osaka.\n• *Costo:* Alimentación y compras por definir; no sumar alternativas como confirmadas.",
       "hotel": "osaka-namba",
       "transportRefs": [],
-      "places": [],
+      "places": [
+        "japan27-kuromon",
+        "japan27-den-den-town"
+      ],
       "headerPlaces": [
         "Kuromon Ichiba · mercado",
         "Nippombashi Den Den Town",
@@ -2664,6 +2675,15 @@
     "japan27-nara-deer": "Los ciervos sika deambulan libremente por el parque de Nara y los accesos a sus templos, entre senderos y zonas arboladas.",
     "japan27-todaiji": "La monumental sala Daibutsuden alberga el Gran Buda de bronce y constituye uno de los principales hitos históricos de la antigua capital de Nara.",
     "japan27-kasuga": "En los senderos próximos a Kasuga Taisha, los faroles de piedra y los ciervos forman una escena característica de este santuario sintoísta.",
-    "japan27-nijo": "El Palacio Ninomaru, dentro del Castillo Nijō, conserva la arquitectura de la residencia del shogun y anticipa la historia del período Edo."
-  }
+    "japan27-nijo": "El Palacio Ninomaru, dentro del Castillo Nijō, conserva la arquitectura de la residencia del shogun y anticipa la historia del período Edo.",
+    "japan27-dotonbori": "Los anuncios luminosos y el canal convierten Dotonbori en el gran paseo nocturno de Osaka, entre puentes, restaurantes y puestos de comida.",
+    "japan27-usj": "La entrada de Universal Studios Japan marca el comienzo de una jornada dedicada a las atracciones temáticas, con accesos sujetos a boletos y aforo.",
+    "japan27-nintendo": "Las estructuras coloridas de Super Nintendo World recrean escenarios de videojuegos dentro de Universal Studios Japan; el acceso puede requerir una franja asignada.",
+    "japan27-harry-potter": "El área de Harry Potter recrea el ambiente de Hogsmeade y su arquitectura fantástica, uno de los espacios temáticos emblemáticos del parque.",
+    "japan27-osaka-castle": "La torre principal del Castillo de Osaka se eleva sobre jardines, murallas y fosos; el recinto permite apreciar la historia de la ciudad.",
+    "japan27-shinsekai": "Las calles de Shinsekai reúnen grandes letreros, restaurantes de kushikatsu y la torre Tsūtenkaku, una imagen característica del sur de Osaka.",
+    "japan27-kuromon": "Los pasillos cubiertos de Kuromon concentran pescaderías y puestos de comida; es una parada práctica para probar especialidades antes de recorrer Nippombashi.",
+    "japan27-den-den-town": "Las tiendas de Den Den Town reúnen electrónica, videojuegos, figuras y cultura otaku en varias calles de Nippombashi, cerca del mercado Kuromon."
+  },
+  "cover": "japan27-fushimi-inari"
 }
