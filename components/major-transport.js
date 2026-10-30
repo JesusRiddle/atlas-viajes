@@ -199,9 +199,9 @@ window.AtlasMajorTransport = (() => {
             '<span class="mt-route"><strong>' + esc(transport.title) + '</strong><small>' +
             (transport.type === 'train' ? (transport.day ? 'Día ' + transport.day : '') : esc(option.provider || '') + (transport.day ? ' · Día ' + transport.day : '')) + '</small></span>' +
             '<span class="mt-inline">' + summary + '</span>' +
-            '<span class="mt-price"><strong>' + esc(formatMoney(price)) +
-            (price && price.currency !== 'MXN' && converted !== null ? ' (≈ $' + number.format(converted) + ' MXN)' : '') +
-            '</strong><small>' + (converted === null ? 'MXN pendiente de conversión' : '') + '</small></span>' +
+            '<span class="mt-price"><strong>' + esc(formatMoney(price)) + '</strong><small>' +
+            (converted === null ? 'MXN pendiente de conversión' :
+                '≈ $' + number.format(converted) + ' MXN') + '</small></span>' +
             '<span class="mt-chevron" aria-hidden="true">⌄</span></summary>' +
             '<div class="mt-details"><div class="mt-selectors">' +
             '<label>Alternativa<select data-field="option" aria-label="Alternativa para ' +
@@ -275,4 +275,4 @@ window.AtlasMajorTransport = (() => {
         return () => { host.removeEventListener('change', change); unsubscribe(); };
     }
     return { render, mount };
-})()
+})();
