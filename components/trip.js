@@ -257,6 +257,11 @@ window.AtlasTrip = function (ctx) {
         const hasPricedEntries = Boolean(t.majorTransport?.length || t.expenses?.length);
         const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN)
             ? money(overviewSummary.knownTotalMXN) : pending();
+        const forecast = masterOverview && t.budgetPreliminary && Number.isFinite(t.budgetPreliminary.low) && Number.isFinite(t.budgetPreliminary.high) && t.budgetPreliminary.low > 0 && t.budgetPreliminary.high >= t.budgetPreliminary.low;
+        const featuredPrice = forecast ? money(t.budgetPreliminary.low) + '–' + money(t.budgetPreliminary.high) : overviewPrice;
+        const budgetContext = forecast ? 'MXN · 1 persona · proyección global, no cotización' : 'MXN · 1 persona · estimación parcial del viaje';
+        const fxInfo = masterOverview && t.exchangeRateSnapshot?.date && t.exchangeRates ? Object.entries(t.exchangeRates).filter(([code,rate]) => /^[A-Z]{3}$/.test(code) && Number.isFinite(rate) && rate > 0).map(([code,rate]) => code + ' 1 ≈ $' + rate.toFixed(4) + ' MXN') : [];
+        const fxMarkup = fxInfo.length ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipo de cambio de referencia · ' + esc(t.exchangeRateSnapshot.date) + '</div><div class="budget-exchange-values">' + fxInfo.map(x => '<span>' + esc(x) + '</span>').join('') + '</div></div>' : '';
         // Render detailed day cards as soon as their data exists, even for draft trips.
         // A draft status must not force the entire itinerary into plain placeholders.
         const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
@@ -296,13 +301,10 @@ window.AtlasTrip = function (ctx) {
             `<aside class="budget-teaser">`,
             `<div>`,
             `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
-            `<strong>${overviewPrice}</strong>`,
-            `<p class="budget-context">MXN · 1 persona · estimación parcial del viaje</p>`,
+            `<strong>${featuredPrice}</strong>`,
+            `<p class="budget-context">${esc(budgetContext)}</p>`,
             `<a class="budget-detail-link" href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
-            `${complete && t.exchangeRates && t.exchangeRateSnapshot ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipos de cambio · ' +
-                esc(t.exchangeRateSnapshot.date) + '</div><div class="budget-exchange-values"><span>EUR 1 = $' +
-                Number(t.exchangeRates.EUR).toFixed(4) + ' MXN</span><span>USD 1 = $' +
-                Number(t.exchangeRates.USD).toFixed(4) + ' MXN</span></div></div>' : ''}`,
+            `${fxMarkup}`,
                         `</div>`,
             `</aside>`,
             `${masterOverview ? (complete ? climateCard(t) : overviewClimate) + '</div>' : ''}`,
