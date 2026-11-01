@@ -9,9 +9,10 @@ El procedimiento debe funcionar aunque no exista ningún JSON turístico complet
 1. Definir restricciones reales: fechas, duración, presupuesto, transporte, preferencias y destinos candidatos; investigar fuentes oficiales y guardar fecha de consulta.
 2. Construir primero ruta, noches, conexiones, visitas prioritarias y costos tentativos, sin inventar precios, reservas ni horarios.
 3. Crear un JSON nuevo con identificador propio a partir de `_template.json` o con `id` y `name` para completarlo progresivamente; añadirlo a `modules.js` como inactivo mientras se prepara.
-4. Completar las nueve secciones con los campos indicados abajo, separando confirmado, cotizado, estimado y pendiente. Los estados vacíos siguen el contrato de datos.
-5. Comparar el resultado **contra este estándar y su checklist**, no contra otro viaje; comprobar enlaces, anclas, presupuesto, navegación, escritorio y móvil cuando sea posible.
-6. Ejecutar las pruebas automatizadas, corregir regresiones y solicitar aprobación antes de publicar o hacer merge.
+4. Redactar `intro` (70–130 palabras) para Panorama e `introShort` (30–45 palabras) para la tarjeta de portada; ambos deben describir el recorrido y no mezclar logística ni presupuesto. En borradores pueden quedar `null`, pero son obligatorios para un viaje editorialmente completo.
+5. Completar las nueve secciones con los campos indicados abajo, separando confirmado, cotizado, estimado y pendiente. Los estados vacíos siguen el contrato de datos.
+6. Comparar el resultado **contra este estándar y su checklist**, no contra otro viaje; comprobar enlaces, anclas, presupuesto, navegación, escritorio y móvil cuando sea posible.
+7. Ejecutar las pruebas automatizadas, corregir regresiones y solicitar aprobación antes de publicar o hacer merge.
 
 No exigir ninguna visita, ciudad, tarifa, cantidad de noches, fotografía o elección editorial tomada para un viaje anterior.
 
