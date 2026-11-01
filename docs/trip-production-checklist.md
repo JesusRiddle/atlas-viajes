@@ -11,6 +11,7 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 5. Crear **matriz económica** desde que se conozca el vuelo: vuelo, alojamientos por noches, alimentos, transportes de cada sentido, entradas prioritarias, impuestos, tasas, extras y contingencia. Separar subtotal cotizado de presupuesto estimado global; usar EUR y conversión MXN con fuente y fecha.
 
 ## Portada e introducciones
+- [ ] **Subtítulo editorial obligatorio:** para cada viaje que vaya a mostrarse en la portada, completar `tag` o `heroEyebrow` con una frase turística propia del recorrido (por ejemplo, «DE TOKIO A KIOTO · ENTRE TEMPLOS Y METRÓPOLIS»). No utilizar «En planeación», cantidades de días, países o alojamientos como sustituto editorial. Revisar la vista hero y agregar una prueba de regresión para cada nuevo viaje visible.
 - [ ] Redactar `intro` (70–130 palabras) para «La esencia de tu recorrido» e `introShort` (30–45 palabras) para cada nuevo viaje completo.
 - [ ] Comprobar que `introShort` resume ciudades, monumentos y experiencias sin mezclar fechas, alojamientos, vuelos, precios ni logística.
 - [ ] Verificar que la tarjeta de inicio renderiza `introShort` completo y la sección Panorama sigue mostrando `intro`, también en móvil.
