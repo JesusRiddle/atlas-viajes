@@ -19,7 +19,7 @@ test('paso 16: dos flujos de creación sin sobrescribir el original', () => {
     assert.equal(run(['nuevo','Nuevo']).status,0);
     assert.equal(run(['copia','Copia','--from','antiguo']).status,1);
     const fresh = JSON.parse(fs.readFileSync(path.join(root,'data','trips','nuevo.json')));
-    assert.deepEqual(fresh,{id:'nuevo',name:'Nuevo',status:'draft'});
+    assert.deepEqual(fresh,{id:'nuevo',name:'Nuevo',status:'draft',intro:null,introShort:null});
     assert.equal(fs.readFileSync(src,'utf8'),JSON.stringify(original));
     assert.equal(run(['nuevo','Duplicado']).status,1);
     const modules = fs.readFileSync(path.join(root,'modules.js'),'utf8');
