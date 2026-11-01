@@ -412,7 +412,7 @@
       ],
       "headerPlaces": [
         "Granada · estación de autobuses",
-        "Sevilla · Plaza de Armas",
+        "Sevilla · terminal por confirmar",
         "Barrio de Santa Cruz"
       ],
       "spend": null,
@@ -452,8 +452,8 @@
       "am": "1. Desplazarse a la terminal de autobuses de Sevilla indicada en los billetes; salir temprano hacia Córdoba.\n2. Llegar al centro histórico y visitar la Mezquita-Catedral en la franja turística confirmada para el viernes.",
       "pm": "1. Pasear por la Judería, sus calles y patios accesibles y el entorno de la Puerta de Almodóvar.\n2. Acercarse al Puente Romano y comer salmorejo cordobés o flamenquín, según el tiempo disponible antes del regreso.",
       "night": "1. Volver en autobús a Sevilla en un servicio previamente comprobado.\n2. Cena sencilla y descanso; conservar la tarde siguiente para Plaza de España.",
-      "mobility": "• *Sevilla ↔ Córdoba:* Autobús de ida y vuelta con horarios aún sin confirmar; comprobar que existe servicio compatible con una excursión de un día.\n• *Terminal Córdoba → Mezquita:* Autobús urbano o taxi para reducir caminatas con calor.\n• *Regreso:* Dejar margen entre monumento, comida y salida de la terminal, sin depender de una conexión ajustada.",
-      "note": "• *Viabilidad:* La existencia de un autobús directo y regreso útil para el viernes 21 debe validarse antes de comprar entradas; no confundir con los trenes que se han excluido.\n• *Mezquita-Catedral:* Los horarios turísticos pueden cambiar por celebraciones religiosas; priorizar la visita interior.\n• *Plan B:* Si la oferta de autobuses resulta insuficiente, revisar otro operador o replantear la excursión antes de reservar, sin dar por hecho el regreso.\n• *Alternativa sin improvisaciones:* Si no hay autobuses viables el viernes, sustituir la excursión por un día adicional en Sevilla; no introducir automáticamente trenes por el corredor excluido.",
+      "mobility": "• *Sevilla ↔ Córdoba:* ALSA opera la ruta en ambos sentidos. Comprobar salidas del viernes 21/05/2027, probablemente desde Plaza de Armas hasta estación de autobuses de Córdoba, sin asumir disponibilidad ni horarios de 2026.\n• *Terminal Córdoba → Mezquita:* Autobús urbano o taxi para reducir caminatas con calor.\n• *Regreso:* Dejar margen entre monumento, comida y salida de la terminal, sin depender de una conexión ajustada.",
+      "note": "• *Autobús confirmado como ruta, no como billete:* ALSA publica servicios Sevilla–Córdoba y Córdoba–Sevilla. Sus horarios habituales de referencia sitúan salidas desde Sevilla a partir de las 09:30 y el último regreso desde Córdoba a las 18:30; confirmar ambos sentidos específicamente para el viernes 21/05/2027, sin tratarlos como horarios garantizados.\n• *Mezquita-Catedral:* Los horarios turísticos pueden cambiar por celebraciones religiosas; priorizar la visita interior.\n• *Plan B:* Si la oferta de autobuses resulta insuficiente, revisar otro operador o replantear la excursión antes de reservar, sin dar por hecho el regreso.\n• *Alternativa sin improvisaciones:* Si no hay autobuses viables el viernes, sustituir la excursión por un día adicional en Sevilla; no introducir automáticamente trenes por el corredor excluido.",
       "places": [
         "cordoba",
         "juderia-cordoba",
@@ -505,7 +505,7 @@
       "pm": "1. Llegar a Lisboa, ajustar el reloj a la hora portuguesa (una hora menos que en Sevilla) y trasladarse al hotel candidato junto a Rossio.\n2. Si la llegada lo permite, recorrer Baixa, Praça do Comércio y las calles de Chiado sin entradas con hora.",
       "night": "1. Cenar por Baixa o Rossio y regresar al alojamiento.\n2. Revisar billetes de tren y accesos previstos para Sintra antes de descansar.",
       "mobility": "• *Sevilla → aeropuerto:* Autobús aeroportuario o taxi según el horario real de salida.\n• *SVQ → LIS:* Vuelo pendiente de cotización; comprobar si es directo o con conexión y el costo final con equipaje.\n• *LIS → Rossio:* Metro con transbordo o taxi según equipaje y hora de llegada.",
-      "note": "• *Huso horario:* Lisboa utiliza una hora menos que Sevilla en mayo; los billetes muestran horas locales.\n• *Plan B:* Si no existe vuelo práctico, evaluar otro horario o ajustar el medio de traslado antes de comprar hoteles no reembolsables.\n• *Alojamiento:* Hotel Gat Rossio es candidato sin reserva.",
+      "note": "• *Huso horario:* Lisboa utiliza una hora menos que Sevilla en mayo; los billetes muestran horas locales.\n• *Plan B:* Si no existe vuelo práctico, evaluar otro horario o ajustar el medio de traslado antes de comprar hoteles no reembolsables.\n• *Alojamiento:* Hotel Gat Rossio es candidato sin reserva.\n• *Ruta directa de referencia:* Ryanair y TAP publican vuelos directos Sevilla–Lisboa; confirmar específicamente el domingo 23/05/2027, precio final y equipaje antes de comprar.",
       "places": [
         "baixa-lisbon",
         "chiado"
@@ -557,7 +557,7 @@
       "pm": "1. Pasear por los jardines y la ribera del Tajo, con vista al Monumento a los Descubrimientos.\n2. Acercarse al entorno de la Torre de Belém, sin prometer acceso interior, y probar los pastéis de Belém.",
       "night": "1. Regresar a Lisboa centro y cenar en Chiado o Baixa.\n2. Mantener la noche libre para descansar antes del día de Alfama.",
       "mobility": "• *Rossio → Belém:* Tranvía, autobús o tren de cercanías según servicio disponible; validar paradas y billetes.\n• *Belém → centro:* Revisar alternativas si hay demoras o saturación en transporte turístico.",
-      "note": "• *Jerónimos:* Confirmar horario turístico y posibles cierres extraordinarios antes de reservar entrada.\n• *Torre de Belém:* Contemplarla desde el exterior aunque el acceso interior esté cerrado o en obras.\n• *Comida:* Pastéis de Belém como degustación, sin suponer horario ni reservar mesa.",
+      "note": "• *Jerónimos:* Confirmar horario turístico y posibles cierres extraordinarios antes de reservar entrada.\n• *Torre de Belém:* Contemplarla desde el exterior aunque el acceso interior esté cerrado o en obras.\n• *Comida:* Pastéis de Belém como degustación, sin suponer horario ni reservar mesa.\n• *Aperturas diferenciadas:* En los horarios oficiales de referencia, el claustro de Jerónimos abre desde las 09:30 del martes y la iglesia desde las 10:30; verificar horas vigentes en mayo de 2027 y la admisión de cada espacio por separado.",
       "places": [
         "jeronimos",
         "belem"
@@ -1957,7 +1957,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Presupuesto alimentario estimado para las 20 jornadas, incluyendo desayunos, comidas, cenas y degustaciones locales. No representa precios de restaurantes verificados."
     },
     {
       "id": "activities",
@@ -1968,7 +1968,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Bolsa estimada para monumentos y actividades principales (Sagrada Família, Sant Pau, Dalí, Park Güell, Alhambra, Alcázar, Mezquita-Catedral, Sintra, Jerónimos, Catedral/Giralda, etc.). No es una cotización individual ni cubre necesariamente todas las visitas interiores opcionales."
     },
     {
       "id": "contingency",
@@ -1979,7 +1979,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Provisión conjunta para seguro, imprevistos y pequeñas diferencias de tarifas o impuestos; verificar cobertura del seguro y posibles tasas turísticas de alojamientos antes de comprar."
     }
   ],
   "costs": [
