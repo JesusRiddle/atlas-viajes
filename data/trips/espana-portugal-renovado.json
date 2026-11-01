@@ -259,7 +259,10 @@
       "night": "1. Pasear por Madrid de los Austrias o cenar por el centro según la hora de llegada.\n2. Preparar la excursión del viernes a Zamora; confirmar horarios de ida y regreso.",
       "mobility": "• *Hotel → Barcelona-Sants:* Metro o taxi con equipaje y margen para controles de acceso al tren.\n• *Barcelona → Madrid:* Alta velocidad directa hasta la estación que indique el boleto; no presuponer Atocha para todos los operadores.\n• *Estación → alojamiento:* Metro, Cercanías o taxi según la llegada real; hotel candidato junto a Sol.",
       "note": "• *Billete:* Precio y servicio todavía estimados; comparar operador, política de equipaje, estación madrileña y cambios.\n• *Alojamiento:* B&B HOTEL Madrid Centro Puerta del Sol es candidato, no reservado.\n• *Ritmo:* No añadir museo de visita larga el mismo día del traslado.",
-      "places": [],
+      "places": [
+        "puerta-sol",
+        "plaza-mayor-madrid"
+      ],
       "headerPlaces": [
         "Barcelona-Sants",
         "Madrid · estación por confirmar",
@@ -282,7 +285,10 @@
       "night": "1. Tomar el tren de vuelta a Madrid y regresar al hotel.\n2. Descansar: el sábado está reservado a San Isidro, sin repetir excursión.",
       "mobility": "• *Madrid → Zamora:* Tren de ida y vuelta desde Madrid-Chamartín; horario y estación exactos sujetos al billete seleccionado.\n• *Estación Zamora → centro:* Considerar autobús urbano o taxi, especialmente si el tiempo de visita es limitado.\n• *Regreso:* Comprar ambos sentidos y prever margen para alcanzar la estación.",
       "note": "• *Excursión:* La prioridad es el casco histórico y el Duero; no agregar localidades cercanas.\n• *Catedral:* Revisar apertura, visita turística y posibles cambios litúrgicos antes de fijar el tren.\n• *Comida:* Arroz a la zamorana sujeto a menú y disponibilidad; no está reservado.",
-      "places": [],
+      "places": [
+        "zamora-cathedral",
+        "zamora-duero"
+      ],
       "headerPlaces": [
         "Madrid-Chamartín",
         "Zamora · Catedral",
@@ -304,7 +310,7 @@
       "pm": "1. Regresar hacia el centro y elegir actividades municipales publicadas para el sábado 15 de mayo.\n2. Recorrer Las Vistillas o el entorno de La Latina si hay eventos apropiados; no depender de un concierto todavía sin confirmar.",
       "night": "1. Paseo por el centro histórico y cena según el ambiente festivo.\n2. Preparar el tren de Toledo del domingo y descansar a una hora razonable.",
       "mobility": "• *Centro → Pradera de San Isidro:* Metro o autobús urbano, verificando posibles cierres y desvíos por la festividad.\n• *Regreso:* Reservar tiempo de desplazamiento; usar transporte público antes que taxi si hay cortes viales.",
-      "note": "• *Fecha tradicional:* San Isidro se celebra el 15 de mayo, sábado en 2027. El programa, recintos y actividades municipales de 2027 siguen por confirmar.\n• *Programa:* Los conciertos, escenarios y actos concretos se publicarán posteriormente; consultar la programación oficial.\n• *Afluencia:* Evitar citas rígidas y contar con multitudes en la Pradera.",
+      "note": "• *Fecha tradicional:* San Isidro se celebra el 15 de mayo, sábado en 2027. El programa, recintos y actividades municipales de 2027 siguen por confirmar.\n• *Programa:* Los conciertos, escenarios y actos concretos se publicarán posteriormente; consultar la programación oficial.\n• *Afluencia:* Evitar citas rígidas y contar con multitudes en la Pradera.\n• *Fotografías:* Las imágenes específicas de San Isidro se incorporarán al encontrar una referencia de archivo comprobada; no sustituir por imágenes de otras fiestas.",
       "places": [],
       "headerPlaces": [
         "Pradera de San Isidro",
@@ -324,7 +330,11 @@
       "night": "1. Regresar a la estación de Toledo con margen y tomar el tren de vuelta a Madrid.\n2. Preparar equipaje y documentos para el vuelo a Granada del lunes.",
       "mobility": "• *Madrid ↔ Toledo:* Tren Avant desde Madrid-Puerta de Atocha hasta Toledo; seleccionar y pagar ida y regreso.\n• *Estación Toledo → casco:* Autobús urbano o taxi para evitar la subida a pie con calor.\n• *Regreso:* Verificar últimos servicios y no depender de una sola salida tardía.",
       "note": "• *Domingo y cultos:* No presumir apertura matutina de la Catedral; confirmar en el sitio oficial y adaptar el orden.\n• *Plan B:* Si hay cierres, priorizar Judería, San Juan de los Reyes y paseo patrimonial.\n• *Lunes:* Mantener un regreso razonable para llegar descansado al aeropuerto.",
-      "places": [],
+      "places": [
+        "toledo",
+        "toledo-cathedral",
+        "san-juan-reyes-toledo"
+      ],
       "headerPlaces": [
         "Madrid-Puerta de Atocha",
         "Toledo · Judería",
@@ -346,7 +356,7 @@
       "pm": "1. Llegar al aeropuerto Federico García Lorca Granada-Jaén, trasladarse a Plaza Nueva y dejar equipaje en el hotel candidato.\n2. Si queda tarde disponible, pasear por Carrera del Darro y el entorno de Plaza Nueva.",
       "night": "1. Cenar por el centro, preparando la visita de la Alhambra del martes.\n2. Descansar; no añadir Albaicín intenso antes de la jornada larga del monumento.",
       "mobility": "• *Hotel → Madrid-Barajas:* Cercanías o metro según terminal del vuelo elegido; prever control y equipaje.\n• *Vuelo Madrid → Granada:* Preferido por la restricción de no usar trenes Madrid–Andalucía; horario, aerolínea y franquicia pendientes.\n• *GRX → Plaza Nueva:* Autobús de aeropuerto o taxi; revisar última salida según la llegada.\n• *Alojamiento:* Hotel Macià Plaza, candidato, no reservado.",
-      "note": "• *Sin compra:* Si no hay vuelo compatible para el lunes 17, reevaluar alternativas aéreas antes de cerrar billetes no reembolsables.\n• *Plan B:* Si el vuelo se retrasa, dedicar la tarde al check-in y descansar.\n• *Prioridad del martes:* Confirmar acceso a Palacios Nazaríes antes de organizar otras visitas.",
+      "note": "• *Sin compra:* Si no hay vuelo compatible para el lunes 17, reevaluar alternativas aéreas antes de cerrar billetes no reembolsables.\n• *Plan B:* Si el vuelo se retrasa, dedicar la tarde al check-in y descansar.\n• *Prioridad del martes:* Confirmar acceso a Palacios Nazaríes antes de organizar otras visitas.\n• *Fotografías:* La imagen de Carrera del Darro se añadirá cuando se verifique una URL directa o material reutilizable del Atlas; no adelantar vistas de la Alhambra de otra jornada.",
       "places": [],
       "headerPlaces": [
         "Aeropuerto Adolfo Suárez Madrid-Barajas",
@@ -2096,6 +2106,13 @@
     "dali-figueres": "El museo concebido por Dalí transforma un antiguo teatro en una experiencia surrealista de fachada y salas singulares.",
     "guell": "El parque de Gaudí integra arquitectura, mosaicos y vegetación sobre una colina con panorámicas de Barcelona.",
     "batllo": "La fachada ondulante de Casa Batlló y sus detalles orgánicos representan la arquitectura modernista de Gaudí.",
-    "sp27-casa-mila": "La Pedrera destaca por su fachada sinuosa y balcones de hierro forjado, obra residencial de Antoni Gaudí."
+    "sp27-casa-mila": "La Pedrera destaca por su fachada sinuosa y balcones de hierro forjado, obra residencial de Antoni Gaudí.",
+    "puerta-sol": "La Puerta del Sol es uno de los puntos más reconocibles del centro madrileño y un lugar de encuentro entre calles históricas.",
+    "plaza-mayor-madrid": "La Plaza Mayor reúne soportales, fachadas tradicionales y siglos de historia urbana en el corazón de Madrid de los Austrias.",
+    "zamora-cathedral": "La Catedral de Zamora destaca por su cimborrio de influencia bizantina, una pieza singular del románico castellano junto al castillo.",
+    "zamora-duero": "El río Duero bordea la ciudad histórica de Zamora y permite contemplar sus murallas y edificios monumentales desde la ribera.",
+    "toledo": "Las calles en cuesta y la silueta histórica de Toledo recuerdan la convivencia de tradiciones cristianas, judías y musulmanas.",
+    "toledo-cathedral": "La Catedral Primada de Toledo concentra arquitectura gótica, artes decorativas y patrimonio religioso de una de las grandes sedes castellanas.",
+    "san-juan-reyes-toledo": "El monasterio de San Juan de los Reyes conserva un claustro gótico de gran detalle y la memoria de los Reyes Católicos."
   }
 }
