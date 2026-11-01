@@ -427,3 +427,14 @@ test('paso 15: un viaje nuevo completo no pierde datos estructurados al cargar',
     assert.equal(trip.id, complete.id);
     assert.equal(trip.name, complete.name);
 });
+
+test('portadas de viajes planificados requieren subtítulo editorial específico', () => {
+    const catalog = loadCatalog();
+    for (const module of catalog.filter(m => m.available && ['espana-portugal-2027', 'italia-norte-2027', 'japon-2027'].includes(m.id))) {
+        const trip = JSON.parse(fs.readFileSync('data/trips/' + module.file, 'utf8'));
+        const subtitle = trip.heroEyebrow || trip.tag;
+        assert.equal(typeof subtitle, 'string', module.id + ': falta subtítulo editorial');
+        assert.ok(subtitle.trim().length >= 20, module.id + ': subtítulo demasiado genérico');
+        assert.doesNotMatch(subtitle, /^(en planeaci[oó]n|por definir|\d+ d[ií]as|dos pa[ií]ses)/i, module.id);
+    }
+});
