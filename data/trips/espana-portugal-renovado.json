@@ -135,70 +135,102 @@
       "date": "2027-05-08",
       "title": "Salida desde Ciudad de México",
       "base": "En vuelo",
-      "am": "Salida internacional hacia Barcelona; vuelo exacto pendiente.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Verificar pasaporte, requisitos de entrada a España y datos de alojamiento, sin considerar aprobados requisitos futuros hasta confirmarlos.\n2. Confirmar terminal, equipaje y horario del vuelo multidestino; hacer check-in cuando lo habilite la aerolínea.",
+      "pm": "1. Organizar traslado al aeropuerto de Ciudad de México con margen para tráfico y seguridad.\n2. Presentarse al aeropuerto con la antelación indicada por la aerolínea, orientativamente tres horas antes de la salida internacional.",
+      "night": "1. Embarcar hacia Barcelona según el vuelo que finalmente se compre.\n2. Noche a bordo; la primera noche de hotel corresponde al domingo 9 de mayo, no a este sábado.",
+      "mobility": "• *CDMX → aeropuerto:* Traslado según terminal y horario reales.\n• *Vuelo internacional:* MEX → Barcelona (BCN); conexión, aerolínea y horas pendientes de cotización.",
+      "note": "• *Sin reserva:* No existe vuelo confirmado; si la opción elegida llega después del domingo 9, habrá que replanear la primera jornada.\n• *Equipaje:* Valorar documentado frente a mano antes de comprar.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Ciudad de México · salida aérea",
+        "Barcelona · llegada prevista el 9 de mayo"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "flight-international"
+      ]
     },
     {
       "n": 2,
       "date": "2027-05-09",
       "title": "Llegada y barrios históricos",
       "base": "Barcelona",
-      "am": "Gótico y Born, según llegada y energía.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Llegar a Barcelona, realizar control fronterizo y recoger equipaje si corresponde.\n2. Trasladarse al alojamiento candidato en Eixample/Sant Antoni; solicitar consigna si todavía no está disponible la habitación.",
+      "pm": "1. Recorrer a pie el Barrio Gótico en una ruta breve, incluyendo el entorno de la Catedral de Barcelona.\n2. Continuar hacia El Born solo si la llegada deja tiempo y energía; detenerse para comer.",
+      "night": "1. Pasear por el entorno de Santa Maria del Mar o regresar al hotel.\n2. Cena temprana y descanso antes de la visita con horario a la Sagrada Família.",
+      "mobility": "• *BCN → centro:* Comparar Aerobús, tren o metro según terminal y dirección del hotel.\n• *Gótico → Born:* Trayecto caminable, pero reducirlo si hay cansancio o equipaje.",
+      "note": "• *Llegada transatlántica:* Migración y traslado pueden ocupar buena parte del día; no reservar monumentos con hora fija.\n• *Alojamiento:* Acta Splendid es candidato, sin reservar; confirmar consigna y entrada.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Aeropuerto de Barcelona-El Prat (BCN)",
+        "Barrio Gótico",
+        "El Born"
+      ],
+      "spend": null,
+      "hotel": "bcn-acta-splendid",
+      "transportRefs": [
+        "flight-international"
+      ]
     },
     {
       "n": 3,
       "date": "2027-05-10",
       "title": "Gaudí y modernismo",
       "base": "Barcelona",
-      "am": "Sagrada Família y Recinte Modernista de Sant Pau.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Visitar la Sagrada Família en la franja que se obtenga al reservar, con margen para seguridad.\n2. Continuar hacia el Recinte Modernista de Sant Pau si los horarios disponibles permiten una visita tranquila.",
+      "pm": "1. Dedicar tiempo a los pabellones y jardines de Sant Pau; ajustar la secuencia si el acceso a la basílica resulta vespertino.\n2. Comer por la zona y pasear por la avenida de Gaudí.",
+      "night": "1. Paseo ligero por Eixample o descanso; no encadenar otra visita interior extensa.\n2. Cena catalana: probar pa amb tomàquet o escalivada según menú disponible.",
+      "mobility": "• *Hotel → Sagrada Família:* Metro o desplazamiento urbano desde Eixample/Sant Antoni.\n• *Sagrada Família → Sant Pau:* Caminar por la avenida de Gaudí, aproximadamente 1 km.",
+      "note": "• *Reserva muy alta:* Elegir la Sagrada Família antes de fijar Sant Pau; acceso a torres solo si queda tiempo y se paga aparte.\n• *Plan B:* Si la basílica no ofrece cupo ese día, estudiar el miércoles 12 e intercambiar una visita.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Basílica de la Sagrada Família",
+        "Recinte Modernista de Sant Pau"
+      ],
+      "spend": null,
+      "hotel": "bcn-acta-splendid"
     },
     {
       "n": 4,
       "date": "2027-05-11",
       "title": "Figueres y Dalí",
       "base": "Barcelona",
-      "am": "Excursión en tren al Teatro-Museo Dalí y regreso a Barcelona.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Salir desde Barcelona-Sants hacia Figueres-Vilafant con un tren de horario adecuado; consultar ambas direcciones antes de comprar.\n2. Trasladarse desde Figueres-Vilafant al centro y comenzar la visita al Teatro-Museo Dalí según el acceso disponible.",
+      "pm": "1. Terminar el recorrido por el Teatro-Museo Dalí sin añadir museos secundarios que comprometan el regreso.\n2. Pasear brevemente por el centro de Figueres y regresar a la estación para volver a Barcelona.",
+      "night": "1. Regresar al alojamiento de Barcelona.\n2. Cena sencilla y descanso tras la excursión de ida y vuelta.",
+      "mobility": "• *Barcelona ↔ Figueres:* Tren de ida y regreso desde Barcelona-Sants a Figueres-Vilafant; horarios pendientes de publicación para 2027.\n• *Figueres-Vilafant → museo:* Comprobar bus local o taxi; la estación de alta velocidad no está junto al museo.",
+      "note": "• *Reserva alta:* Coordinar entrada al museo con trenes de ambos sentidos; confirmar apertura del martes.\n• *Margen:* Evitar comprar el regreso con conexión demasiado ajustada al fin de la visita.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Barcelona-Sants",
+        "Figueres-Vilafant",
+        "Teatro-Museo Dalí"
+      ],
+      "spend": null,
+      "hotel": "bcn-acta-splendid",
+      "transportRefs": [
+        "rail-bcn-fig"
+      ]
     },
     {
       "n": 5,
       "date": "2027-05-12",
       "title": "Park Güell y Passeig de Gràcia",
       "base": "Barcelona",
-      "am": "Park Güell; Casa Batlló y Casa Milà como alternativas interiores.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Visitar Park Güell en una franja reservada que permita desplazarse desde el alojamiento sin prisas.\n2. Recorrer los espacios accesibles del parque, contemplando las vistas sobre Barcelona.",
+      "pm": "1. Trasladarse al Passeig de Gràcia y observar las fachadas de Casa Batlló y Casa Milà.\n2. Elegir como máximo una visita interior —Batlló o Milà— solo si hay tiempo, presupuesto y disponibilidad.",
+      "night": "1. Pasear por Eixample y cenar sin sumar actividades exigentes.\n2. Preparar equipaje para el traslado en tren a Madrid del jueves 13.",
+      "mobility": "• *Eixample → Park Güell:* Metro y autobús o taxi; considerar pendientes y acceso a pie.\n• *Park Güell → Passeig de Gràcia:* Transporte urbano para evitar caminata larga entre zonas.",
+      "note": "• *Reserva:* Park Güell requiere entrada con franja; adquirir únicamente cuando el recorrido esté confirmado.\n• *Actividad opcional:* No sumar las entradas interiores de Casa Batlló y Casa Milà como si ambas fueran obligatorias.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Park Güell",
+        "Passeig de Gràcia",
+        "Casa Batlló",
+        "Casa Milà"
+      ],
+      "spend": null,
+      "hotel": "bcn-acta-splendid"
     },
     {
       "n": 6,
