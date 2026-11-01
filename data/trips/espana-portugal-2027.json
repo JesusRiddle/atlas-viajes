@@ -122,7 +122,7 @@
     },
     {
       "city": "Lisboa",
-      "description": "Pasear por Alfama, visitar Belém y escuchar fado si encaja en la noche; probar bacalhau à Brás, pastéis de nata y pastéis de Belém."
+      "description": "Pasear por Alfama, visitar Belém y escuchar fado si encaja en la noche; probar bacalhau à Brás, pastéis de nata y pastéis de Belém. Como alternativa para uno de los días lisboetas, Cascais y Boca do Inferno ofrecen paseo marítimo y acantilados, sustituyendo visitas urbanas sin ampliar la estancia."
     },
     {
       "city": "Sintra",
@@ -592,7 +592,7 @@
       "pm": "1. Recorrer el entorno de la Sé de Lisboa, miradores de Santa Luzia y Portas do Sol, según afluencia.\n2. Comer bacalhau à brás, sardinas u otra especialidad portuguesa disponible; reservar tiempo para descansar y preparar maleta.",
       "night": "1. Asistir a un espectáculo de fado solo si interesa y sus horarios permiten descansar antes del vuelo internacional.\n2. Regresar al hotel y comprobar terminal, traslado al aeropuerto y condiciones de check-out.",
       "mobility": "• *Rossio → Castelo:* Transporte urbano o taxi para evitar parte de la subida; continuar a pie cuesta abajo por Alfama.\n• *Miradores → hotel:* Tranvía, autobús, metro o taxi según afluencia y cansancio.\n• *Salida del 27:* Confirmar el medio de transporte al aeropuerto según el horario real del vuelo.",
-      "note": "• *Cuestas:* Alfama tiene pavimento irregular y pendientes pronunciadas; priorizar rutas de bajada.\n• *Fado:* Opcional, sin comprar; si el regreso requiere salida muy temprana, omitirlo.\n• *Maleta:* Preparar todo antes de acostarse para no comprometer la mañana del vuelo.",
+      "note": "• *Cuestas:* Alfama tiene pavimento irregular y pendientes pronunciadas; priorizar rutas de bajada.\n• *Fado:* Opcional, sin comprar; si el regreso requiere salida muy temprana, omitirlo.\n• *Maleta:* Preparar todo antes de acostarse para no comprometer la mañana del vuelo.\n• *Alternativa opcional: Cascais y Boca do Inferno:* Sustituir el recorrido de Castelo de São Jorge, Alfama y miradores por una excursión de medio día largo o día completo. Tomar el tren desde Cais do Sodré a Cascais, pasear por el centro y la costa y llegar a Boca do Inferno a pie si el clima y la energía lo permiten, o en taxi/autobús local. Regresar a Lisboa con margen para preparar el vuelo; no sumar esta excursión al plan principal ni programarla después de una jornada completa en Alfama.",
       "places": [
         "espana-portugal-2027-alfama"
       ],
@@ -609,6 +609,10 @@
         {
           "label": "Lisboa · turismo y gastronomía",
           "url": "https://www.visitlisboa.com/"
+        },
+        {
+          "label": "Cascais · turismo oficial",
+          "url": "https://www.visitcascais.com/"
         }
       ]
     },
