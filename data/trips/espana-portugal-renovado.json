@@ -541,7 +541,7 @@
       "title": "Vuelos internacionales · multidestino",
       "day": null,
       "selectedOption": "A",
-      "budgetIncludedIn": "flight-international-provision",
+      "budgetIncludedIn": null,
       "options": [
         {
           "id": "A",
@@ -1552,7 +1552,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Importe de referencia incluido en la ficha flight-international; no se suma otra vez. El costo seleccionado en majorTransport se incorpora una sola vez.",
+      "includedInTransport": true
     },
     {
       "id": "flight-mad-grx-provision",
@@ -1818,7 +1819,13 @@
     76000,
     125000
   ],
-  "budgetPreliminary": true,
+  "budgetPreliminary": {
+    "low": 76000,
+    "high": 125000,
+    "marginMXN": 25500,
+    "referenceFlightMXN": 20500,
+    "useBudgetRange": true
+  },
   "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto.",
   "sourceNote": "Proyecto España + Portugal 2027 independiente. Las tarifas, horarios y candidatos de alojamiento son estimaciones sin reserva. Condiciones de monumentos comprobadas en fuentes oficiales el 1 de noviembre de 2026; revisar antes de comprar en 2027.",
   "tips": [
