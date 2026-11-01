@@ -38,7 +38,6 @@ window.AtlasSeasonality = function (ctx) {
             <div class="seasonality-panel">
             <div class="section-title"><div><p class="eyebrow orange seasonality-kicker atlas-editorial-kicker"><svg class="seasonality-heading-icon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18m-9 4 2 2 4-4"/></svg><span>Cuándo viajar</span></p><h2 id="seasonality-heading" class="atlas-editorial-title">Temporadas recomendadas.</h2><p class="seasonality-intro">Compara los meses según el clima, la afluencia turística y la comodidad del recorrido.</p></div></div>
             <ul class="season-months" aria-label="Temporadas de enero a diciembre">${blocks}</ul>
-            ${Array.isArray(data.referenceLinks) && data.referenceLinks.length ? `<div class="entity-links seasonality-sources" aria-label="Fuentes climáticas">${data.referenceLinks.map(link => `<a href="${esc(link.url)}" target="_blank" rel="noopener noreferrer">${esc(link.label)}</a>`).join('')}</div>` : ''}
             
             </div>
         </section>`;
