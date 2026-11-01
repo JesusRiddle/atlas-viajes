@@ -68,7 +68,7 @@ test('el loader normaliza un viaje mínimo sin alterar Italia Norte 2027', async
     assert.equal(atlas.trips[0].id, italia.id);
     assert.equal(atlas.trips[0].majorTransport.length, italia.majorTransport.length);
     assert.equal(atlas.trips[0].days.length, italia.days.length);
-    assert.equal(atlas.trips[0].routeHighlights, italia.routeHighlights);
+    assert.deepEqual(Array.from(atlas.trips[0].routeHighlights || []), Array.from(italia.routeHighlights || []));
 });
 
 test('el loader permite stays ausente y rechaza colecciones de tipo incorrecto', async () => {
