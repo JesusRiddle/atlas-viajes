@@ -86,7 +86,7 @@
       "text": "Para turismo con pasaporte mexicano, comprobar la vigencia exigida, exención de visa Schengen y justificantes de alojamiento/salida. Verificar en fuentes oficiales el estado de ETIAS y EES para mayo de 2027, así como tránsito por terceros países según el vuelo elegido. En España y Portugal se usan enchufes C/F (230 V, 50 Hz): llevar adaptador de clavija mexicana A/B a C/F, con tierra si el equipo la requiere. Confirmar INPUT 100–240 V; el adaptador no transforma voltaje."
     }
   ],
-  "climate": "Durante el 8–27 de mayo, las máximas medias históricas rondan 21 °C en Barcelona, 22 °C en Madrid, 23 °C en Lisboa y 27 °C en Sevilla (estaciones y series diferentes). Son promedios climatológicos, no pronóstico; Andalucía puede registrar episodios de calor y las noches de Castilla y Granada son más frescas.\n\n*Qué llevar:* Capas ligeras, ropa transpirable, impermeable plegable, protección solar y calzado cómodo para adoquines, cuestas y largas visitas. En Albaicín y Sintra conviene reducir subidas con transporte local cuando resulte práctico.\n\n*Horas de luz:* En mayo, Barcelona (9–12) amanece aproximadamente 06:39–06:36 y anochece 20:57–21:01; Madrid (13–16), 07:01–06:58 y 21:22–21:25; Lisboa (23–26), aproximadamente 06:18–06:16 y 20:48–20:50. Son horas locales calculadas para 2027 y sirven para organizar paseos, miradores y visitas exteriores; la visibilidad real depende del relieve y del tiempo. Granada y Sevilla tienen tardes largas similares, pendientes de comprobación puntual al detallar cada jornada.",
+  "climate": "Durante el 8–27 de mayo, las máximas medias históricas rondan 21 °C en Barcelona, 22 °C en Madrid, 23 °C en Lisboa y 27 °C en Sevilla (estaciones y series diferentes). Son promedios climatológicos, no pronóstico; Andalucía puede registrar episodios de calor y las noches de Castilla y Granada son más frescas.\n\n*Qué llevar:* Capas ligeras, ropa transpirable, impermeable plegable, protección solar y calzado cómodo para adoquines, cuestas y largas visitas. En Albaicín y Sintra conviene reducir subidas con transporte local cuando resulte práctico.\n\n*Horas de luz:* En mayo, Barcelona (9–12) amanece aproximadamente 06:39–06:36 y anochece 20:57–21:01; Madrid (13–16), 07:01–06:58 y 21:22–21:25; Lisboa (23–26), aproximadamente 06:18–06:16 y 20:48–20:50. Son horas locales calculadas para 2027 y sirven para organizar paseos, miradores y visitas exteriores; la visibilidad real depende del relieve y del tiempo. En Granada (17–18) el sol sale cerca de las 07:04 y se pone alrededor de las 21:18–21:19; en Sevilla (19–22), amanece aproximadamente 07:12–07:10 y anochece 21:29–21:32. Las horas son locales y orientativas; consulta los servicios astronómicos si cambia el calendario.",
   "experiences": [
     {
       "city": "Barcelona",
@@ -1898,6 +1898,14 @@
     [
       "Lisboa · horas de luz mayo 2027",
       "https://orbitnight.com/sky/lisbon/2027-05"
+    ],
+    [
+      "Sevilla · horas de luz mayo 2027",
+      "https://puestadelsolhoy.es/sevilla/mayo/"
+    ],
+    [
+      "Granada · horas de luz mayo 2027",
+      "https://www.horapuestadesol.com/puesta-de-sol/granada/"
     ]
   ],
   "cover": null,
