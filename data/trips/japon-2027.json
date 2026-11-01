@@ -2300,7 +2300,9 @@
       "places": [
         "japan27-fushimi-inari",
         "japan27-kiyomizu",
-        "japan27-sannenzaka"
+        "japan27-sannenzaka",
+        "japan27-detail-inari-fox",
+        "japan27-detail-otowa"
       ],
       "headerPlaces": [
         "Fushimi Inari Taisha",
@@ -2369,7 +2371,8 @@
       "places": [
         "japan27-nara-deer",
         "japan27-todaiji",
-        "japan27-kasuga"
+        "japan27-kasuga",
+        "japan27-detail-daibutsu"
       ],
       "headerPlaces": [
         "Kintetsu-Nara · acceso al parque",
@@ -2685,7 +2688,10 @@
     "japan27-shinsekai": "Las calles de Shinsekai reúnen grandes letreros, restaurantes de kushikatsu y la torre Tsūtenkaku, una imagen característica del sur de Osaka.",
     "japan27-kuromon": "Los pasillos cubiertos de Kuromon concentran pescaderías y puestos de comida; es una parada práctica para probar especialidades antes de recorrer Nippombashi.",
     "japan27-den-den-town": "Las tiendas de Den Den Town reúnen electrónica, videojuegos, figuras y cultura otaku en varias calles de Nippombashi, cerca del mercado Kuromon.",
-    "japan27-hachiko": "La estatua recuerda a Hachikō, famoso por esperar durante años a su dueño fallecido en la estación de Shibuya."
+    "japan27-hachiko": "La estatua recuerda a Hachikō, famoso por esperar durante años a su dueño fallecido en la estación de Shibuya.",
+    "japan27-detail-inari-fox": "En Fushimi Inari, las figuras de zorros simbolizan a los mensajeros de Inari, asociado a las cosechas y la prosperidad.",
+    "japan27-detail-otowa": "En Kiyomizu-dera, la cascada Otowa es un elemento devocional del recinto; observa el ritual de los visitantes respetando las indicaciones.",
+    "japan27-detail-daibutsu": "El gran Buda de bronce del Daibutsuden representa a Vairocana y recuerda la importancia de Nara en el siglo VIII."
   },
   "cover": "japan27-fushimi-inari"
 }
