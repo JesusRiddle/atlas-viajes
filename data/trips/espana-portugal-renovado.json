@@ -1197,27 +1197,123 @@
     "En excursiones de ida y vuelta, adquirir ambos sentidos y revisar estaciones de salida y llegada, validación y margen entre conexiones.",
     "Para servicios internacionales, preferir un único billete con conexión protegida; confirmar requisitos de tránsito y equipaje antes de pagar."
   ],
-  "hotels": [],
+  "hotels": [
+    {
+      "id": "bcn-acta-splendid",
+      "city": "Barcelona",
+      "name": "Hotel Acta Splendid",
+      "address": "Carrer de Muntaner, 2, Eixample, Barcelona",
+      "checkIn": "2027-05-09",
+      "checkOut": "2027-05-13",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $7,600 MXN por 4 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Eixample y Sant Antoni; verificar conexión con Sants, ruido y tipo de habitación.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://www.actahotels.com/hoteles/hotel-acta-splendid/contacto"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Acta%20Splendid%20Carrer%20de%20Muntaner%2C%202%2C%20Eixample%2C%20Barcelona"
+    },
+    {
+      "id": "mad-bb-sol",
+      "city": "Madrid",
+      "name": "B&B HOTEL Madrid Centro Puerta del Sol",
+      "address": "Calle de la Montera, 10-12, Madrid",
+      "checkIn": "2027-05-13",
+      "checkOut": "2027-05-17",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $7,600 MXN por 4 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Ubicación céntrica para excursiones desde Atocha y Chamartín; valorar ruido nocturno y habitación interior.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://www.hotel-bb.com/es/hotel/madrid-puerta-del-sol"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=B%26B%20HOTEL%20Madrid%20Centro%20Puerta%20del%20Sol%20Calle%20de%20la%20Montera%2C%2010-12%2C%20Madrid"
+    },
+    {
+      "id": "grx-macia-plaza",
+      "city": "Granada",
+      "name": "Hotel Macià Plaza",
+      "address": "Plaza Nueva, 5, Granada",
+      "checkIn": "2027-05-17",
+      "checkOut": "2027-05-19",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $3,000 MXN por 2 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Plaza Nueva facilita centro y acceso a la Alhambra; comprobar ruido y recogida de equipaje.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://www.maciahoteles.com/maciaplaza/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Maci%C3%A0%20Plaza%20Plaza%20Nueva%2C%205%2C%20Granada"
+    },
+    {
+      "id": "svq-don-paco",
+      "city": "Sevilla",
+      "name": "Hotel Don Paco",
+      "address": "Plaza Padre Jerónimo de Córdoba, 4, Sevilla",
+      "checkIn": "2027-05-19",
+      "checkOut": "2027-05-23",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $8,800 MXN por 4 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Centro histórico; comparar acceso al autobús Plaza de Armas y traslado al aeropuerto.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://www.hoteldonpaco.com/sevilla/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Don%20Paco%20Plaza%20Padre%20Jer%C3%B3nimo%20de%20C%C3%B3rdoba%2C%204%2C%20Sevilla"
+    },
+    {
+      "id": "lis-gat-rossio",
+      "city": "Lisboa",
+      "name": "Hotel Gat Rossio",
+      "address": "Rua Jardim do Regedor, 27-35, Lisboa",
+      "checkIn": "2027-05-23",
+      "checkOut": "2027-05-27",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $8,000 MXN por 4 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Cerca de Rossio y Restauradores para excursión a Sintra; salida al aeropuerto muy temprana por comprobar.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://hotelgatrossio.com/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Gat%20Rossio%20Rua%20Jardim%20do%20Regedor%2C%2027-35%2C%20Lisboa"
+    }
+  ],
   "stays": [
     [
-      "Barcelona · 9–13 mayo · 4 noches",
-      "Eixample Esquerra o Sant Antoni; conectado con Barcelona-Sants."
+      "Barcelona · 05-09 a 05-13 · 4 noches",
+      "Hotel Acta Splendid como candidato, sin reserva. Presupuesto orientativo $7,600 MXN; confirmar tarifa."
     ],
     [
-      "Madrid · 13–17 mayo · 4 noches",
-      "Alonso Martínez o Chamberí, con acceso a Chamartín y Atocha."
+      "Madrid · 05-13 a 05-17 · 4 noches",
+      "B&B HOTEL Madrid Centro Puerta del Sol como candidato, sin reserva. Presupuesto orientativo $7,600 MXN; confirmar tarifa."
     ],
     [
-      "Granada · 17–19 mayo · 2 noches",
-      "Centro o Plaza Nueva, evitando cuestas con equipaje."
+      "Granada · 05-17 a 05-19 · 2 noches",
+      "Hotel Macià Plaza como candidato, sin reserva. Presupuesto orientativo $3,000 MXN; confirmar tarifa."
     ],
     [
-      "Sevilla · 19–23 mayo · 4 noches",
-      "Puerta de Jerez o Arenal."
+      "Sevilla · 05-19 a 05-23 · 4 noches",
+      "Hotel Don Paco como candidato, sin reserva. Presupuesto orientativo $8,800 MXN; confirmar tarifa."
     ],
     [
-      "Lisboa · 23–27 mayo · 4 noches",
-      "Rossio o Restauradores, acceso a Sintra."
+      "Lisboa · 05-23 a 05-27 · 4 noches",
+      "Hotel Gat Rossio como candidato, sin reserva. Presupuesto orientativo $8,000 MXN; confirmar tarifa."
     ]
   ],
   "mapPoints": [
@@ -1444,7 +1540,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "bcn-acta-splendid"
     },
     {
       "id": "lodging-mad",
@@ -1457,7 +1554,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "mad-bb-sol"
     },
     {
       "id": "lodging-grx",
@@ -1470,7 +1568,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "grx-macia-plaza"
     },
     {
       "id": "lodging-svq",
@@ -1483,7 +1582,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "svq-don-paco"
     },
     {
       "id": "lodging-lis",
@@ -1496,7 +1596,8 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "lis-gat-rossio"
     },
     {
       "id": "rail-bcn-fig-return",
