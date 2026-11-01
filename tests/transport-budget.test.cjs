@@ -10,9 +10,9 @@ for (const file of ['components/transport-model.js', 'components/selections.js',
 const model = ctx.window.AtlasTransportModel;
 const selections = ctx.window.AtlasSelections;
 const budget = ctx.window.AtlasBudget;
-const trip = JSON.parse(fs.readFileSync('data/trips/italia-norte-2027.json', 'utf8'));
+const trip = JSON.parse(fs.readFileSync('tests/fixtures/transport-regression.json', 'utf8'));
 
-test('JSON de Italia Norte 2027 sin referencias de transporte inválidas', () => {
+test('JSON de escenario histórico aislado sin referencias de transporte inválidas', () => {
     assert.deepEqual([...model.validateTrip(trip)], []);
 });
 
