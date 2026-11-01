@@ -413,7 +413,7 @@
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Todas las visitas y desplazamientos están SIN COMPRAR; precios, ventas, cupos, cierres excepcionales y horarios exactos de 2027 por confirmar. Orden sugerido: primero Alhambra, después Sagrada Família y Palacio da Pena, luego Dalí/Alcázar/Regaleira/Mezquita; finalmente experiencias flexibles. Una reserva de transporte o alojamiento todavía no garantiza la entrada a un monumento. No convertir esta lista de previsiones en compras."
+    "reservationNote": "Todas las visitas y desplazamientos están SIN COMPRAR; precios, ventas, cupos, cierres excepcionales y horarios exactos de 2027 por confirmar. Orden sugerido: primero Alhambra, después Sagrada Família y Palacio da Pena, luego Dalí/Alcázar/Regaleira/Mezquita; finalmente experiencias flexibles. Una reserva de transporte o alojamiento todavía no garantiza la entrada a un monumento. No convertir esta lista de previsiones en compras. Comprobar cambios, cancelaciones y acceso nominativo en cada enlace oficial."
   },
   "reservations": [
     [
@@ -1872,5 +1872,5 @@
   "exchangeRates": {},
   "exchangeRateSnapshot": null,
   "heroLodgingSummary": "18 noches, 5 alojamientos",
-  "attractionTerms": "Las fechas y modalidades son propuestas para mayo de 2027: comprobar disponibilidad, condiciones nominativas, controles de seguridad, entradas con hora, cambios y reembolsos en las taquillas oficiales antes de comprar. No se ha adquirido ningún boleto."
+  "attractionTerms": []
 }
