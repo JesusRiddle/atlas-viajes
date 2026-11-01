@@ -69,7 +69,7 @@
       "title": "Estilo de viaje",
       "badge": "Moderado–activo",
       "tone": "orange",
-      "text": "Viaje individual con cuatro cambios de alojamiento y excursiones en tren o autobús. Se priorizan conexiones sencillas, caminatas moderadas y descansos."
+      "text": "Viaje individual de ritmo moderado-activo: cuatro cambios de alojamiento, excursiones sin equipaje y pausas entre monumentos. Evitar caminatas largas en horas de calor y reducir las subidas del Albaicín y Sintra con transporte local."
     },
     {
       "id": "language",
@@ -83,7 +83,7 @@
       "title": "Documentación y consejos prácticos",
       "badge": "Verificar antes de viajar",
       "tone": "orange",
-      "text": "Pasaporte mexicano: verificar vigencia y requisitos Schengen antes de viajar; comprobar el estado oficial de ETIAS y EES en 2027, y requisitos de tránsito si el vuelo hace escala. España y Portugal usan 230 V/50 Hz y enchufes C/F; se requiere adaptador de clavija mexicana A/B a C/F, con tierra cuando corresponda. Comprobar INPUT 100–240 V: un adaptador no convierte voltaje."
+      "text": "Para turismo con pasaporte mexicano, comprobar la vigencia exigida, exención de visa Schengen y justificantes de alojamiento/salida. Verificar en fuentes oficiales el estado de ETIAS y EES para mayo de 2027, así como tránsito por terceros países según el vuelo elegido. En España y Portugal se usan enchufes C/F (230 V, 50 Hz): llevar adaptador de clavija mexicana A/B a C/F, con tierra si el equipo la requiere. Confirmar INPUT 100–240 V; el adaptador no transforma voltaje."
     }
   ],
   "climate": "Durante el 8–27 de mayo, las máximas medias históricas rondan 21 °C en Barcelona, 22 °C en Madrid, 23 °C en Lisboa y 27 °C en Sevilla (estaciones y series diferentes). Son promedios climatológicos, no pronóstico; Andalucía puede registrar episodios de calor y las noches de Castilla y Granada son más frescas.\n\n*Qué llevar:* Capas ligeras, ropa transpirable, impermeable plegable, protección solar y calzado cómodo para adoquines, cuestas y largas visitas. En Albaicín y Sintra conviene reducir subidas con transporte local cuando resulte práctico.\n\n*Horas de luz:* Mayo ofrece días largos; organizar patios, miradores y jardines en primeras horas o al final de la tarde. Amanecer y atardecer exactos por ciudad y fecha están pendientes de verificar antes del itinerario detallado.",
@@ -480,9 +480,9 @@
   "local": "Barcelona→Madrid por tren; Madrid→Granada por avión (evitar ferrocarril Madrid–Andalucía); Granada→Sevilla por autobús; Sevilla→Lisboa por avión. Figueres, Zamora, Toledo y Sintra en tren; Córdoba en autobús de ida y vuelta. Validar cada sentido, estaciones, horarios y equipaje.",
   "majorTransport": [],
   "ticketNotes": [
-    "Priorizar trenes solo en corredores no excluidos: Barcelona–Madrid, Barcelona–Figueres, Madrid–Zamora, Madrid–Toledo y Lisboa–Sintra.",
-    "Evitar trenes por el corredor Madrid–Andalucía y preferir autobús Sevilla–Córdoba en ambos sentidos.",
-    "Vuelos y horarios aún sin cotizar; elegir conexiones protegidas y contar traslados puerta a puerta."
+    "Antes de comprar, comparar el precio total con equipaje y las condiciones de cambios o reembolsos de cada tarifa aérea, ferroviaria y de autobús.",
+    "En excursiones de ida y vuelta, adquirir ambos sentidos y revisar estaciones de salida y llegada, validación y margen entre conexiones.",
+    "Para servicios internacionales, preferir un único billete con conexión protegida; confirmar requisitos de tránsito y equipaje antes de pagar."
   ],
   "hotels": [],
   "stays": [
@@ -963,8 +963,7 @@
     "Segovia es opcional y sustituiría tiempo propio de Madrid; no agregarla a las excursiones de Zamora y Toledo sin reevaluar el ritmo.",
     "Restricción personal: no usar el corredor ferroviario Madrid–Andalucía; comprobar el trazado exacto antes de comprar servicios regionales.",
     "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa.",
-    "El escenario central de gastos es una provisión completa y no una cotización. No confundir gastos presupuestados con reservas ni contabilizar nuevamente los transportes al desglosar cada trayecto.",
-    "Control de consistencia: la salida de México del 8 de mayo implica primera noche hotelera el 9; el regreso del 27 debe comprobar llegada a MEX ese mismo día antes de cerrar las vacaciones."
+    "El escenario central de gastos es una provisión completa y no una cotización. No confundir gastos presupuestados con reservas ni contabilizar nuevamente los transportes al desglosar cada trayecto."
   ],
   "sources": [
     [
