@@ -4155,5 +4155,27 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Vescoolz · CC BY-SA 4.0"
     }
+  },
+  "sp27-san-isidro": {
+    "name": "Chotis en las fiestas de San Isidro",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fiesta_de_San_Isidro_2026_-_Chulapos_bailando_-_Plaza_de_la_villa_-_Madrid_01.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Fiesta_de_San_Isidro_2026_-_Chulapos_bailando_-_Plaza_de_la_villa_-_Madrid_01.jpg",
+      "author": "Javier Perez Montes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Javier Perez Montes · fiesta de 2026"
+    }
+  },
+  "sp27-darro": {
+    "name": "Carrera del Darro · Granada",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrera_del_Darro-Granada.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Carrera_del_Darro-Granada.jpg",
+      "author": "Alberto-g-rovi",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Alberto-g-rovi"
+    }
   }
 }
