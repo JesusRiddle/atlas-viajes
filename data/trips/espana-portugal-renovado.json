@@ -310,8 +310,10 @@
       "pm": "1. Regresar hacia el centro y elegir actividades municipales publicadas para el sábado 15 de mayo.\n2. Recorrer Las Vistillas o el entorno de La Latina si hay eventos apropiados; no depender de un concierto todavía sin confirmar.",
       "night": "1. Paseo por el centro histórico y cena según el ambiente festivo.\n2. Preparar el tren de Toledo del domingo y descansar a una hora razonable.",
       "mobility": "• *Centro → Pradera de San Isidro:* Metro o autobús urbano, verificando posibles cierres y desvíos por la festividad.\n• *Regreso:* Reservar tiempo de desplazamiento; usar transporte público antes que taxi si hay cortes viales.",
-      "note": "• *Fecha tradicional:* San Isidro se celebra el 15 de mayo, sábado en 2027. El programa, recintos y actividades municipales de 2027 siguen por confirmar.\n• *Programa:* Los conciertos, escenarios y actos concretos se publicarán posteriormente; consultar la programación oficial.\n• *Afluencia:* Evitar citas rígidas y contar con multitudes en la Pradera.\n• *Fotografías:* Las imágenes específicas de San Isidro se incorporarán al encontrar una referencia de archivo comprobada; no sustituir por imágenes de otras fiestas.",
-      "places": [],
+      "note": "• *Fecha tradicional:* San Isidro se celebra el 15 de mayo, sábado en 2027. El programa, recintos y actividades municipales de 2027 siguen por confirmar.\n• *Programa:* Los conciertos, escenarios y actos concretos se publicarán posteriormente; consultar la programación oficial.\n• *Afluencia:* Evitar citas rígidas y contar con multitudes en la Pradera.",
+      "places": [
+        "sp27-san-isidro"
+      ],
       "headerPlaces": [
         "Pradera de San Isidro",
         "La Latina",
@@ -356,8 +358,10 @@
       "pm": "1. Llegar al aeropuerto Federico García Lorca Granada-Jaén, trasladarse a Plaza Nueva y dejar equipaje en el hotel candidato.\n2. Si queda tarde disponible, pasear por Carrera del Darro y el entorno de Plaza Nueva.",
       "night": "1. Cenar por el centro, preparando la visita de la Alhambra del martes.\n2. Descansar; no añadir Albaicín intenso antes de la jornada larga del monumento.",
       "mobility": "• *Hotel → Madrid-Barajas:* Cercanías o metro según terminal del vuelo elegido; prever control y equipaje.\n• *Vuelo Madrid → Granada:* Preferido por la restricción de no usar trenes Madrid–Andalucía; horario, aerolínea y franquicia pendientes.\n• *GRX → Plaza Nueva:* Autobús de aeropuerto o taxi; revisar última salida según la llegada.\n• *Alojamiento:* Hotel Macià Plaza, candidato, no reservado.",
-      "note": "• *Sin compra:* Si no hay vuelo compatible para el lunes 17, reevaluar alternativas aéreas antes de cerrar billetes no reembolsables.\n• *Plan B:* Si el vuelo se retrasa, dedicar la tarde al check-in y descansar.\n• *Prioridad del martes:* Confirmar acceso a Palacios Nazaríes antes de organizar otras visitas.\n• *Fotografías:* La imagen de Carrera del Darro se añadirá cuando se verifique una URL directa o material reutilizable del Atlas; no adelantar vistas de la Alhambra de otra jornada.",
-      "places": [],
+      "note": "• *Sin compra:* Si no hay vuelo compatible para el lunes 17, reevaluar alternativas aéreas antes de cerrar billetes no reembolsables.\n• *Plan B:* Si el vuelo se retrasa, dedicar la tarde al check-in y descansar.\n• *Prioridad del martes:* Confirmar acceso a Palacios Nazaríes antes de organizar otras visitas.",
+      "places": [
+        "sp27-darro"
+      ],
       "headerPlaces": [
         "Aeropuerto Adolfo Suárez Madrid-Barajas",
         "Aeropuerto Granada-Jaén (GRX)",
@@ -2113,6 +2117,8 @@
     "zamora-duero": "El río Duero bordea la ciudad histórica de Zamora y permite contemplar sus murallas y edificios monumentales desde la ribera.",
     "toledo": "Las calles en cuesta y la silueta histórica de Toledo recuerdan la convivencia de tradiciones cristianas, judías y musulmanas.",
     "toledo-cathedral": "La Catedral Primada de Toledo concentra arquitectura gótica, artes decorativas y patrimonio religioso de una de las grandes sedes castellanas.",
-    "san-juan-reyes-toledo": "El monasterio de San Juan de los Reyes conserva un claustro gótico de gran detalle y la memoria de los Reyes Católicos."
+    "san-juan-reyes-toledo": "El monasterio de San Juan de los Reyes conserva un claustro gótico de gran detalle y la memoria de los Reyes Católicos.",
+    "sp27-san-isidro": "El baile del chotis y los trajes castizos representan una de las tradiciones más reconocibles de las fiestas madrileñas de San Isidro.",
+    "sp27-darro": "La Carrera del Darro acompaña el cauce del río entre fachadas históricas, puentes de piedra y vistas hacia la colina de la Alhambra."
   }
 }
