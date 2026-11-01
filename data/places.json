@@ -4144,5 +4144,16 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "attribution": "Aubry Françon"
     }
+  },
+  "sp27-casa-mila": {
+    "name": "Casa Milà · La Pedrera",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Casa_Mila_La_Pedrera_Antoni_Gaudi_Barcelona_facade.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Casa_Mila_La_Pedrera_Antoni_Gaudi_Barcelona_facade.jpg",
+      "author": "Vescoolz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Vescoolz · CC BY-SA 4.0"
+    }
   }
 }
