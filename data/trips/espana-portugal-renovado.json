@@ -675,51 +675,202 @@
   },
   "expenses": [
     {
-      "id": "estimate-1",
-      "category": "flights",
-      "concept": "Vuelos internacionales y europeos",
+      "id": "flight-international-provision",
+      "category": "transport",
+      "concept": "Vuelos internacionales multidestino MEX–BCN / LIS–MEX",
       "cost": {
-        "amount": 27000,
+        "amount": 20500,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
     },
     {
-      "id": "estimate-2",
+      "id": "flight-mad-grx-provision",
+      "category": "transport",
+      "concept": "Vuelo Madrid–Granada · 17 mayo",
+      "date": "2027-05-17",
+      "cost": {
+        "amount": 3000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "flight-svq-lis-provision",
+      "category": "transport",
+      "concept": "Vuelo Sevilla–Lisboa · 23 mayo",
+      "date": "2027-05-23",
+      "cost": {
+        "amount": 3500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "lodging-bcn",
       "category": "lodging",
-      "concept": "Alojamiento · 18 noches",
+      "concept": "Barcelona · 4 noches",
+      "date": "2027-05-09",
+      "nights": 4,
       "cost": {
-        "amount": 35000,
+        "amount": 7600,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
     },
     {
-      "id": "estimate-3",
-      "category": "transport",
-      "concept": "Trenes y autobuses interurbanos",
+      "id": "lodging-mad",
+      "category": "lodging",
+      "concept": "Madrid · 4 noches",
+      "date": "2027-05-13",
+      "nights": 4,
       "cost": {
-        "amount": 7500,
+        "amount": 7600,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
     },
     {
-      "id": "estimate-4",
+      "id": "lodging-grx",
+      "category": "lodging",
+      "concept": "Granada · 2 noches",
+      "date": "2027-05-17",
+      "nights": 2,
+      "cost": {
+        "amount": 3000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "lodging-svq",
+      "category": "lodging",
+      "concept": "Sevilla · 4 noches",
+      "date": "2027-05-19",
+      "nights": 4,
+      "cost": {
+        "amount": 8800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "lodging-lis",
+      "category": "lodging",
+      "concept": "Lisboa · 4 noches",
+      "date": "2027-05-23",
+      "nights": 4,
+      "cost": {
+        "amount": 8000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-bcn-fig-return",
       "category": "transport",
-      "concept": "Transporte urbano y aeropuertos",
+      "concept": "Barcelona ↔ Figueres (ida y vuelta)",
+      "date": "2027-05-11",
+      "cost": {
+        "amount": 1400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-bcn-mad",
+      "category": "transport",
+      "concept": "Barcelona → Madrid (tren)",
+      "date": "2027-05-13",
+      "cost": {
+        "amount": 1650,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-mad-zam-return",
+      "category": "transport",
+      "concept": "Madrid ↔ Zamora (ida y vuelta)",
+      "date": "2027-05-14",
+      "cost": {
+        "amount": 1750,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-mad-tol-return",
+      "category": "transport",
+      "concept": "Madrid ↔ Toledo (ida y vuelta)",
+      "date": "2027-05-16",
+      "cost": {
+        "amount": 700,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "bus-grx-svq",
+      "category": "transport",
+      "concept": "Granada → Sevilla (autobús)",
+      "date": "2027-05-19",
+      "cost": {
+        "amount": 550,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "bus-svq-cor-return",
+      "category": "transport",
+      "concept": "Sevilla ↔ Córdoba (ida y vuelta autobús)",
+      "date": "2027-05-21",
+      "cost": {
+        "amount": 950,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-lis-sin-return",
+      "category": "transport",
+      "concept": "Lisboa ↔ Sintra (ida y vuelta)",
+      "date": "2027-05-24",
+      "cost": {
+        "amount": 500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "urban",
+      "category": "transport",
+      "concept": "Transporte urbano y aeropuertos · todas las ciudades",
       "cost": {
         "amount": 4000,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
     },
     {
-      "id": "estimate-5",
+      "id": "food",
       "category": "food",
       "concept": "Alimentación · 20 días",
       "cost": {
@@ -727,29 +878,29 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
     },
     {
-      "id": "estimate-6",
+      "id": "activities",
       "category": "activities",
-      "concept": "Entradas y experiencias",
+      "concept": "Entradas y experiencias principales",
       "cost": {
         "amount": 8000,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
     },
     {
-      "id": "estimate-7",
-      "category": "misc",
+      "id": "contingency",
+      "category": "other",
       "concept": "Seguro y contingencias",
       "cost": {
         "amount": 5500,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
     }
   ],
   "costs": [
@@ -794,7 +945,7 @@
     125000
   ],
   "budgetPreliminary": true,
-  "budgetNote": "Proyección global por categoría, MXN: vuelos $20,000–$34,000; 18 noches $28,000–$43,000; interurbanos $5,000–$10,000; urbanos y aeropuertos $3,000–$6,000; alimentación $10,000–$15,000; entradas $6,000–$10,000; seguro y contingencias $4,000–$7,000. Total $76,000–$125,000; escenario central registrado en expenses $99,500. Los vuelos internacionales y europeos están agrupados como UNA provisión en expenses hasta que haya opciones reales, nunca sumar allí alternativas de majorTransport.",
+  "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto.",
   "sourceNote": "Borrador de diseño: 1 noviembre 2026. No hay reservas ni tarifas confirmadas de mayo 2027.",
   "tips": [
     "Ventanas alternativas para recotizar: 8–23 de mayo de 2027 (compacta); 8–30 mayo (extendida); 4–23 septiembre; 18 septiembre–7 octubre; 2–21 octubre (conflicto potencial con Japón 2027). La ventana principal es 8–27 mayo.",
