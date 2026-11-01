@@ -7,7 +7,7 @@ const assert = require('node:assert/strict');
   const browser = await chromium.launch({ headless: true });
   const catalog = fs.readFileSync('modules.js', 'utf8');
   const destinations = [...catalog.matchAll(/"id": "([a-z0-9-]+)"/g)].map(match => match[1]);
-  assert.equal(destinations.length, 19);
+  assert.equal(destinations.length, 20);
   const anchors = ['plan', 'mapa', 'temporadas', 'experiencias', 'reservas', 'traslados', 'alojamientos', 'dias', 'costes'];
   try {
     for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
@@ -37,7 +37,7 @@ const assert = require('node:assert/strict');
       assert.ok(await page.locator('#experiencias .experience-card').count() >= 7);
       assert.ok(await page.locator('#reservas .reservation-group').count() >= 2);
       assert.ok(await page.locator('#alojamientos .hotel-card').count() >= 3);
-      assert.equal(await page.locator('#dias details.day').count(), 12);
+      assert.equal(await page.locator('#dias details.day').count(), 14);
       assert.ok(await page.locator('#costes .budget-ledger').count() >= 1);
       assert.ok(await page.locator('#traslados .mt-card').count() >= 1);
       const navigation = page.locator('.subnav a[href="#viaje/italia-norte-2027/temporadas"]');
@@ -48,7 +48,7 @@ const assert = require('node:assert/strict');
       await page.locator('#expand').click();
       assert.equal(await page.locator('#dias details.day[open]').count(), 0);
       await page.locator('#expand').click();
-      assert.equal(await page.locator('#dias details.day[open]').count(), 12);
+      assert.equal(await page.locator('#dias details.day[open]').count(), 14);
       const budgetCategories = page.locator('#costes .budget-category');
       assert.ok(await budgetCategories.count() > 0);
       const visibleLabels = await page.locator('#plan, #mapa, #temporadas, #experiencias, #reservas, #traslados, #alojamientos, #dias, #costes').count();
@@ -58,7 +58,7 @@ const assert = require('node:assert/strict');
         assert.ok(bounds && bounds.width > 50 && bounds.height > 10, viewport.width + ' invisible master section ' + id);
       }
       await page.locator('#mapa').scrollIntoViewIfNeeded();
-      await page.screenshot({ path: '/tmp/atlas-emilia-' + viewport.width + '.png', fullPage: true });
+      await page.screenshot({ path: '/tmp/atlas-italia-' + viewport.width + '.png', fullPage: true });
       assert.deepEqual(failures, [], 'Browser errors at ' + viewport.width);
       await page.close();
     }
