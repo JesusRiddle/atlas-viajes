@@ -149,7 +149,7 @@ window.AtlasTrip = function (ctx) {
             (key === 'traslados' && t.majorTransport?.length));
         return '<nav class="subnav" aria-label="Secciones del viaje"><div>' +
             visible.map(([key,label]) => '<a href="#viaje/' + esc(id) + '/' + key + '">' + label + '</a>').join('') +
-            (t.sources?.length ? '<a href="#viaje/' + esc(id) + '/fuentes">Fuentes</a>' : '') +
+            (legacyAdviceTripIds.has(t.id) && t.sources?.length ? '<a href="#viaje/' + esc(id) + '/fuentes">Fuentes</a>' : '') +
             '</div><select aria-label="Cambiar destino" id="dest-select">' +
             trips.map(x => '<option value="' + esc(x.id) + '"' + (x.id === id ? ' selected' : '') + '>' +
                 esc((x.flag ? x.flag + ' ' : '') + x.name) + '</option>').join('') +
@@ -320,6 +320,7 @@ window.AtlasTrip = function (ctx) {
             ].join(''),
             experiencias: () => [
             `${experiencePanel(t)}`,
+            `${t.experienceReferenceLinks?.length ? '<div class="section wrap"><div class="entity-links">' + t.experienceReferenceLinks.map(link => '<a href="' + esc(link.url) + '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + '</a>').join('') + '</div></div>' : ''}`,
             ].join(''),
             reservas: () => [
             `${reservationPlanning(t)}`,
