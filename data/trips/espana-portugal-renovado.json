@@ -392,7 +392,9 @@
       "night": null,
       "mobility": null,
       "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
-      "places": [],
+      "places": [
+        "espana-portugal-2027-alfama"
+      ],
       "headerPlaces": [],
       "spend": null
     },
@@ -1921,5 +1923,8 @@
     }
   },
   "heroLodgingSummary": "18 noches, 5 alojamientos",
-  "attractionTerms": []
+  "attractionTerms": [],
+  "placeDescriptions": {
+    "espana-portugal-2027-alfama": "Desde los miradores de Alfama se distinguen tejados de teja rojiza, iglesias históricas y la ribera del Tajo, una panorámica característica de Lisboa."
+  }
 }
