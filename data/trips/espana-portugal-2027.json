@@ -1744,7 +1744,45 @@
         "description": "26–32 °C. Alternativa de otoño temprano con calor posible en Andalucía y lluvias más probables en Barcelona. Comparar tarifas antes de elegir.",
         "icon": "partlyCloudy"
       }
-    }
+    },
+    "referenceLinks": [
+      {
+        "label": "AEMET · Madrid Retiro, normales históricas",
+        "url": "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=3195"
+      },
+      {
+        "label": "AEMET · Sevilla Aeropuerto, normales históricas",
+        "url": "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5783"
+      },
+      {
+        "label": "AEMET · Barcelona Aeropuerto, normales históricas",
+        "url": "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=0076"
+      },
+      {
+        "label": "IPMA · Lisboa, normales 1991–2020",
+        "url": "https://www.ipma.pt/pt/oclima/normais.clima/"
+      },
+      {
+        "label": "Barcelona · horas de luz mayo 2027",
+        "url": "https://puestadelsolhoy.es/barcelona/mayo/"
+      },
+      {
+        "label": "Madrid · horas de luz mayo 2027",
+        "url": "https://puestadelsolhoy.es/madrid/mayo/"
+      },
+      {
+        "label": "Lisboa · horas de luz mayo 2027",
+        "url": "https://orbitnight.com/sky/lisbon/2027-05"
+      },
+      {
+        "label": "Sevilla · horas de luz mayo 2027",
+        "url": "https://puestadelsolhoy.es/sevilla/mayo/"
+      },
+      {
+        "label": "Granada · horas de luz mayo 2027",
+        "url": "https://www.horapuestadesol.com/puesta-de-sol/granada/"
+      }
+    ]
   },
   "expenses": [
     {
@@ -2038,80 +2076,7 @@
     "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa.",
     "El escenario central de gastos es una provisión completa y no una cotización. No confundir gastos presupuestados con reservas ni contabilizar nuevamente los transportes al desglosar cada trayecto."
   ],
-  "sources": [
-    [
-      "Renfe",
-      "https://www.renfe.com/"
-    ],
-    [
-      "ALSA",
-      "https://www.alsa.es/"
-    ],
-    [
-      "Patronato Alhambra",
-      "https://www.alhambra-patronato.es/"
-    ],
-    [
-      "Sagrada Família",
-      "https://sagradafamilia.org/"
-    ],
-    [
-      "Turismo Lisboa",
-      "https://www.visitlisboa.com/"
-    ],
-    [
-      "AEMET · Madrid Retiro, normales históricas",
-      "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=3195"
-    ],
-    [
-      "AEMET · Sevilla Aeropuerto, normales históricas",
-      "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5783"
-    ],
-    [
-      "AEMET · Barcelona Aeropuerto, normales históricas",
-      "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=0076"
-    ],
-    [
-      "IPMA · Lisboa, normales 1991–2020",
-      "https://www.ipma.pt/pt/oclima/normais.clima/"
-    ],
-    [
-      "Turismo de Zamora · gastronomía",
-      "https://www.turismo.zamora.es/gastronomia-zamorana-1-2.html"
-    ],
-    [
-      "Turismo de Sevilla · espinacas con garbanzos",
-      "https://www.legacy.visitasevilla.es/las-tapas/espinacas-con-garbanzos"
-    ],
-    [
-      "Visit Lisboa · turismo y gastronomía",
-      "https://www.visitlisboa.com/"
-    ],
-    [
-      "BCE · EUR/MXN 30 octubre 2026",
-      "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-mxn.en.html"
-    ],
-    [
-      "Barcelona · horas de luz mayo 2027",
-      "https://puestadelsolhoy.es/barcelona/mayo/"
-    ],
-    [
-      "Madrid · horas de luz mayo 2027",
-      "https://puestadelsolhoy.es/madrid/mayo/"
-    ],
-    [
-      "Lisboa · horas de luz mayo 2027",
-      "https://orbitnight.com/sky/lisbon/2027-05"
-    ],
-    [
-      "Sevilla · horas de luz mayo 2027",
-      "https://puestadelsolhoy.es/sevilla/mayo/"
-    ],
-    [
-      "Granada · horas de luz mayo 2027",
-      "https://www.horapuestadesol.com/puesta-de-sol/granada/"
-    ]
-  ],
+  "sources": [],
   "cover": "sagrada",
   "exchangeRates": {
     "EUR": 21.1237
@@ -2163,5 +2128,23 @@
     "regaleira": "La Quinta da Regaleira es conocida por sus jardines simbólicos, grutas y pozo iniciático.",
     "jeronimos": "El Monasterio de los Jerónimos exhibe la ornamentación manuelina vinculada a la historia marítima de Portugal.",
     "belem": "La Torre de Belém es uno de los monumentos ribereños más reconocibles de Lisboa, incluso cuando la visita interior no está disponible."
-  }
+  },
+  "experienceReferenceLinks": [
+    {
+      "label": "Turismo Lisboa",
+      "url": "https://www.visitlisboa.com/"
+    },
+    {
+      "label": "Turismo de Zamora · gastronomía",
+      "url": "https://www.turismo.zamora.es/gastronomia-zamorana-1-2.html"
+    },
+    {
+      "label": "Turismo de Sevilla · espinacas con garbanzos",
+      "url": "https://www.legacy.visitasevilla.es/las-tapas/espinacas-con-garbanzos"
+    },
+    {
+      "label": "Visit Lisboa · turismo y gastronomía",
+      "url": "https://www.visitlisboa.com/"
+    }
+  ]
 }
