@@ -12,11 +12,6 @@ window.ATLAS_MODULES = [
     "available": true
   },
   {
-    "id": "emilia-romana",
-    "file": "emilia-romana.json",
-    "available": true
-  },
-  {
     "id": "espana-portugal",
     "file": "espana-portugal.json",
     "available": true
