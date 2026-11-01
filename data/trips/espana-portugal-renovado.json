@@ -539,7 +539,7 @@
       "id": "flight-international",
       "type": "flight",
       "title": "Vuelos internacionales · multidestino",
-      "day": 1,
+      "day": null,
       "selectedOption": "A",
       "budgetIncludedIn": "flight-international-provision",
       "options": [
@@ -609,7 +609,7 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20(LIS)"
         }
       ],
-      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "boardingNote": "Aeropuertos de referencia para la ida del 8 de mayo y regreso del 27 de mayo; comprobar terminal, conexiones y horarios al cotizar.",
       "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
       "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
     },
