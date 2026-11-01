@@ -348,12 +348,12 @@ test('el alta mínima queda oculta hasta activar el módulo y conserva los viaje
 
 test('España + Portugal 2027 se publica primero, completo y sin modificar su versión anterior', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog[0].id, 'espana-portugal-renovado');
+    assert.equal(catalog[0].id, 'espana-portugal-2027');
     assert.equal(catalog[0].available, true);
     assert.equal(catalog[1].id, 'italia-norte-2027');
     assert.equal(catalog[2].id, 'japon-2027');
     const source = JSON.parse(fs.readFileSync('data/trips/espana-portugal.json', 'utf8'));
-    const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-renovado.json', 'utf8'));
+    const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-2027.json', 'utf8'));
     assert.notEqual(migrated.id, source.id);
     assert.equal(migrated.days.length, 20);
     assert.equal(migrated.hotels.length, 5);
@@ -366,7 +366,7 @@ test('España + Portugal 2027 se publica primero, completo y sin modificar su ve
     const sources = {
         'data/places.json': JSON.parse(fs.readFileSync('data/places.json', 'utf8')),
         'data/trips/_template.json': template,
-        'data/trips/espana-portugal-renovado.json': migrated
+        'data/trips/espana-portugal-2027.json': migrated
     };
     const fetch = async url => ({ ok: Object.hasOwn(sources, url), status: 404,
         json: async () => sources[url] });
