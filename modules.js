@@ -17,11 +17,6 @@ window.ATLAS_MODULES = [
     "available": true
   },
   {
-    "id": "espana-portugal",
-    "file": "espana-portugal.json",
-    "available": true
-  },
-  {
     "id": "espana",
     "file": "espana.json",
     "available": true
