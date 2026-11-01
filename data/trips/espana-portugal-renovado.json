@@ -384,7 +384,10 @@
       "night": "1. Subir hacia el Albaicín para contemplar la Alhambra desde el mirador de San Nicolás, si el tiempo y las fuerzas lo permiten.\n2. Cenar y regresar al alojamiento; preparar equipaje para el autobús a Sevilla.",
       "mobility": "• *Plaza Nueva → Alhambra:* Utilizar autobús urbano o taxi hasta el acceso que indique el boleto; evitar una subida larga antes de la visita.\n• *Centro → Albaicín:* Considerar microbús urbano o taxi para los tramos empinados y caminar por calles históricas sin prisas.",
       "note": "• *Palacios Nazaríes:* Entrada nominativa con hora de acceso obligatoria; reservar una franja compatible con el recorrido completo y organizar Alcazaba y Generalife alrededor de ese acceso.\n• *Prioridad:* Si el recinto exige más tiempo, reducir Albaicín antes que sacrificar Alcazaba o Generalife.\n• *Cierre:* Confirmar acceso y horarios para el martes 18 de mayo de 2027 antes de comprar.",
-      "places": [],
+      "places": [
+        "alhambra",
+        "albaicin"
+      ],
       "headerPlaces": [
         "La Alhambra · Palacios Nazaríes",
         "Alcazaba",
@@ -404,7 +407,9 @@
       "night": "1. Pasear por los alrededores de la Catedral o cenar cerca del centro histórico.\n2. Descansar antes de la entrada al Real Alcázar del día siguiente.",
       "mobility": "• *Hotel → estación Granada:* Autobús urbano o taxi; prever que la estación de autobuses está fuera del centro histórico.\n• *Granada → Sevilla:* Autobús directo si está disponible; confirmar compañía, origen, terminal y duración antes de comprar.\n• *Terminal → hotel:* Traslado urbano o taxi con equipaje al Hotel Don Paco, candidato sin reserva.",
       "note": "• *Equipaje:* Comprobar las condiciones de la empresa de autobuses y margen de embarque.\n• *Llegada:* Si el traslado termina tarde, limitar Santa Cruz a un paseo y una cena.\n• *Hotel:* Confirmar dirección y consigna; la entrada al alojamiento aún no está reservada.",
-      "places": [],
+      "places": [
+        "santa-cruz-seville"
+      ],
       "headerPlaces": [
         "Granada · estación de autobuses",
         "Sevilla · Plaza de Armas",
@@ -426,7 +431,10 @@
       "night": "1. Contemplar la ribera al anochecer o cenar tapas sevillanas, como espinacas con garbanzos o pringá.\n2. Regresar al alojamiento y preparar la excursión del viernes a Córdoba.",
       "mobility": "• *Hotel → Real Alcázar:* Paseo por el centro o transporte urbano si conviene.\n• *Alcázar → Triana:* Cruzar a pie por el Puente de Isabel II o utilizar transporte público si hace calor.\n• *Regreso:* Consultar autobuses urbanos o caminar según el alojamiento.",
       "note": "• *Reserva alta:* Obtener la entrada del Alcázar antes de fijar otras actividades del jueves.\n• *Calor:* Reservar descansos y agua; el recorrido de los jardines puede alargarse.\n• *Plan B:* Si cambia el horario de acceso, priorizar Alcázar y acortar Triana.",
-      "places": [],
+      "places": [
+        "alcazar",
+        "triana"
+      ],
       "headerPlaces": [
         "Real Alcázar de Sevilla",
         "Jardines del Alcázar",
@@ -446,7 +454,11 @@
       "night": "1. Volver en autobús a Sevilla en un servicio previamente comprobado.\n2. Cena sencilla y descanso; conservar la tarde siguiente para Plaza de España.",
       "mobility": "• *Sevilla ↔ Córdoba:* Autobús de ida y vuelta con horarios aún sin confirmar; comprobar que existe servicio compatible con una excursión de un día.\n• *Terminal Córdoba → Mezquita:* Autobús urbano o taxi para reducir caminatas con calor.\n• *Regreso:* Dejar margen entre monumento, comida y salida de la terminal, sin depender de una conexión ajustada.",
       "note": "• *Viabilidad:* La existencia de un autobús directo y regreso útil para el viernes 21 debe validarse antes de comprar entradas; no confundir con los trenes que se han excluido.\n• *Mezquita-Catedral:* Los horarios turísticos pueden cambiar por celebraciones religiosas; priorizar la visita interior.\n• *Plan B:* Si la oferta de autobuses resulta insuficiente, revisar otro operador o replantear la excursión antes de reservar, sin dar por hecho el regreso.\n• *Alternativa sin improvisaciones:* Si no hay autobuses viables el viernes, sustituir la excursión por un día adicional en Sevilla; no introducir automáticamente trenes por el corredor excluido.",
-      "places": [],
+      "places": [
+        "cordoba",
+        "juderia-cordoba",
+        "roman-bridge-cordoba"
+      ],
       "headerPlaces": [
         "Sevilla · estación de autobuses",
         "Córdoba · Mezquita-Catedral",
@@ -469,7 +481,11 @@
       "night": "1. Asistir a un espectáculo de flamenco únicamente si hay disponibilidad y encaja en el presupuesto; de lo contrario, paseo y cena en Sevilla.\n2. Preparar equipaje y documentación para el vuelo Sevilla → Lisboa del domingo.",
       "mobility": "• *Centro → Plaza de España:* Caminar por los Jardines de Murillo o utilizar tranvía, autobús o taxi según calor.\n• *Plaza de España → alojamiento:* Transporte urbano o paseo de regreso.\n• *Flamenco:* Escoger local accesible a pie o en transporte desde el hotel; no comprometer descanso previo al vuelo.",
       "note": "• *Sábado y cultos:* Confirmar horarios de Catedral y Giralda; modificar el orden si hubiera actos religiosos.\n• *Flamenco:* Actividad opcional y sin entrada comprada; revisar condiciones antes de pagar.\n• *Ritmo:* Mantener Plaza de España y parque como paseos adaptables, no actividades cronometradas.",
-      "places": [],
+      "places": [
+        "catedral",
+        "plazaespana",
+        "maria-luisa"
+      ],
       "headerPlaces": [
         "Catedral de Sevilla",
         "Giralda",
@@ -477,7 +493,8 @@
         "Parque de María Luisa"
       ],
       "spend": null,
-      "hotel": "svq-don-paco"
+      "hotel": "svq-don-paco",
+      "optionalPlaces": []
     },
     {
       "n": 16,
@@ -2119,6 +2136,17 @@
     "toledo-cathedral": "La Catedral Primada de Toledo concentra arquitectura gótica, artes decorativas y patrimonio religioso de una de las grandes sedes castellanas.",
     "san-juan-reyes-toledo": "El monasterio de San Juan de los Reyes conserva un claustro gótico de gran detalle y la memoria de los Reyes Católicos.",
     "sp27-san-isidro": "El baile del chotis y los trajes castizos representan una de las tradiciones más reconocibles de las fiestas madrileñas de San Isidro.",
-    "sp27-darro": "La Carrera del Darro acompaña el cauce del río entre fachadas históricas, puentes de piedra y vistas hacia la colina de la Alhambra."
+    "sp27-darro": "La Carrera del Darro acompaña el cauce del río entre fachadas históricas, puentes de piedra y vistas hacia la colina de la Alhambra.",
+    "alhambra": "El conjunto nazarí de la Alhambra reúne palacios, fortalezas y jardines históricos sobre la colina de la Sabika, con vistas a Granada.",
+    "albaicin": "Las calles del Albaicín conservan el trazado de su pasado andalusí, entre casas encaladas y miradores frente a la Alhambra.",
+    "santa-cruz-seville": "Santa Cruz conserva callejuelas estrechas, plazas arboladas y patios que evocan la historia del antiguo barrio judío sevillano.",
+    "alcazar": "El Real Alcázar combina salones mudéjares, patios ornamentados y jardines que revelan distintas etapas de la historia de Sevilla.",
+    "triana": "Triana se extiende junto al Guadalquivir, entre talleres de cerámica, calles populares y el puente de Isabel II.",
+    "cordoba": "El bosque de columnas y arcos bicolores de la Mezquita-Catedral refleja una singular superposición de arquitectura islámica y cristiana.",
+    "juderia-cordoba": "La Judería de Córdoba reúne callejones blancos, patios y espacios históricos alrededor del núcleo monumental de la ciudad.",
+    "roman-bridge-cordoba": "El puente romano cruza el Guadalquivir junto a la Mezquita-Catedral y ofrece una perspectiva reconocible del centro histórico.",
+    "catedral": "La Catedral de Sevilla destaca por sus dimensiones góticas y por la Giralda, antiguo alminar convertido en campanario.",
+    "plazaespana": "La Plaza de España forma una gran explanada semicircular de ladrillo y cerámica, rodeada por un canal y galerías monumentales.",
+    "maria-luisa": "El Parque de María Luisa ofrece senderos sombreados, fuentes y jardines para descansar entre las visitas al centro sevillano."
   }
 }
