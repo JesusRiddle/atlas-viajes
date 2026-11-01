@@ -146,15 +146,15 @@ window.AtlasHome = function (ctx) {
         const title = esc(t.name);
         const country = cardCountries(t.flag);
         const cities = t.routeCities.map(x => esc(x)).join(' · ');
-        const lodging = t.lodgingSummary || (Array.isArray(t.bases) && t.bases.length ? baseLabel(t.bases) : 'Alojamientos por definir');
+        const introduction = typeof t.intro === 'string' ? t.intro.trim() : '';
         return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
             '<div class="cardphoto">' + (covers[t.id] ? img(covers[t.id], '', false, false, true) : '<div class="draft-card-cover">Fotografías por incorporar</div>') + '<span class="rank">' + (i + 1) + '</span></div>' +
             '<div class="cardbody"><div class="card-overview"><span class="card-overview-location">' + (country ? esc(country) + ' · ' : '') + t.days.length +
             ' días</span><span class="carddates">' + range(t) + '</span></div>' +
             '<h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
             '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' +
-            '<div class="cardfacts"><span>' + t.work + ' laborales</span><span title="' + esc(lodging) + '">' +
-            esc(lodging) + '</span></div>' +
+            '<div class="cardfacts"><span>' + t.work + ' laborales</span></div>' +
+            (introduction ? '<p class="card-trip-intro">' + esc(introduction) + '</p>' : '') +
             '<div class="cardbottom"><div class="card-price"><small>Presupuesto estimado por persona' +
             (t.budgetPreliminary ? ' · preliminar' : '') + '</small>' +
             '<strong>' + homePrice(t) + ' <span class="card-currency">MXN</span></strong></div>' +
