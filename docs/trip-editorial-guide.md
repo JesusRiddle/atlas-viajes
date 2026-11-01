@@ -3,7 +3,7 @@
 ## Aplicación
 Esta guía regula la **redacción y curación** de viajes nuevos y sus revisiones.
 
-**Regla de presentación:** todo viaje nuevo que se esté reconstruyendo desde la plantilla debe utilizar la composición maestra de nueve secciones de `docs/trip-master-standard.md`, incluido el panorama editorial (indicadores, distribución de alojamientos, presupuesto y clima), orden de experiencias y navegación. Nunca condicionar ese formato exclusivamente al ID `emilia-romana`. Los viajes antiguos mantienen temporalmente la variante heredada hasta su reconstrucción individual. Ante un cambio del renderizador, comparar las nueve secciones en ambos formatos y no sustituir contenido actualizado por bloques heredados.
+**Regla de presentación:** todo viaje nuevo que se esté reconstruyendo desde la plantilla debe utilizar la composición maestra de nueve secciones de `docs/trip-master-standard.md`, incluido el panorama editorial (indicadores, distribución de alojamientos, presupuesto y clima), orden de experiencias y navegación. No condicionar ese formato a identificadores de viajes concretos. Los viajes antiguos mantienen temporalmente la variante heredada hasta su reconstrucción individual. Ante un cambio del renderizador, comparar las nueve secciones en ambos formatos y no sustituir contenido actualizado por bloques heredados.
 
  Complementa `docs/trip-data-contract.md` (tipos y semántica), `data/trips/_template.json` (campos) y `docs/trip-master-standard.md` (presentación). Si hay conflicto técnico, prevalece el contrato de datos. No copiar contenido, costos, imágenes ni reservas desde viajes de ejemplo.
 
