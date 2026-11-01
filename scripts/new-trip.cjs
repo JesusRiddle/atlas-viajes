@@ -17,7 +17,7 @@ function create() {
   const registry = [...catalog.matchAll(/"id":\s*"([^"]+)"/g)].map(match => match[1]);
   const destination = path.join(dataDir, id + '.json');
   if (registry.includes(id) || fs.existsSync(destination)) throw new Error('El ID ya existe: ' + id);
-  const trip = { id, name: name.trim(), status: 'draft' };
+  const trip = { id, name: name.trim(), status: 'draft', intro: null, introShort: null };
   const insertion = /\];\s*$/;
   if (!insertion.test(catalog)) throw new Error('modules.js no tiene el formato esperado');
   const entry = '  {\n    "id": ' + JSON.stringify(id) + ',\n    "file": ' + JSON.stringify(id + '.json') + ',\n    "available": false\n  }';
