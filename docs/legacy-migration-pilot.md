@@ -4,8 +4,8 @@
 Los dieciséis viajes heredados son fuentes de consulta; sus archivos no se sobrescriben. La composición y las nueve anclas del viaje maestro Emilia-Romagna son el destino de la migración. Un viaje migrado se crea como un JSON **nuevo** y permanece oculto (`available: false`) hasta una revisión editorial y visual específica.
 
 ## Piloto verificable
-- **Origen:** `data/trips/espana-portugal.json`
-- **Destino independiente:** `data/trips/espana-portugal-renovado.json`
+- **Origen histórico (retirado del árbol activo; recuperable desde Git):** `data/trips/espana-portugal.json`
+- **Destino publicado:** `data/trips/espana-portugal-2027.json`
 - **Estado:** borrador oculto; no duplica la opción visible.
 - **Datos reutilizados sin alterar:** nombre, listado de ciudades y cinco experiencias. Estos datos siguen siendo propuestas antiguas, sujetos a revisión.
 - **Datos expresamente NO copiados:** introducción editorial (contiene duración y bases de la ruta antigua), fechas, días de trabajo, noches, presupuesto, reservas, transporte, hoteles, mapa y temporada. El cargador normaliza sus ausencias como pendientes.
