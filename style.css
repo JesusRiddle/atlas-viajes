@@ -2279,3 +2279,6 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   color:var(--climate-accent);
   border-color:#fff;
 }
+
+/* Resumen narrativo compartido con «La esencia de tu recorrido»: sin truncamiento. */
+#viajes .atlas-home-card .card-trip-intro{font-size:12px;line-height:1.45;color:var(--muted);margin:0;white-space:normal;overflow-wrap:break-word}
