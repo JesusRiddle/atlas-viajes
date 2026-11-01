@@ -438,3 +438,9 @@ test('portadas de viajes planificados requieren subtítulo editorial específico
         assert.doesNotMatch(subtitle, /^(en planeaci[oó]n|por definir|\d+ d[ií]as|dos pa[ií]ses)/i, module.id);
     }
 });
+
+test('pie Fuentes y reservas solo se agrega en viajes heredados', () => {
+    const code = fs.readFileSync('components/trip.js', 'utf8');
+    assert.match(code, /legacyAdviceTripIds\.has\(t\.id\) \? parts\.fuentes\(\) : ''/);
+    assert.doesNotMatch(code, /\.join\(''\) \+ parts\.fuentes\(\)/);
+});
