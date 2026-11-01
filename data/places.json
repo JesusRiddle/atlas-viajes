@@ -4063,5 +4063,45 @@
       "license": "Consultar ficha de archivo",
       "attribution": "Fuente y licencia en Wikimedia Commons"
     }
+  },
+  "italy27-art-accademia-prigioni": {
+    "name": "Los Prisioneros · Miguel Ángel",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo's%20Prisoners%2C%20Galleria%20dell'Accademia%2C%20Florence%20(26073958173).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Michelangelo's_Prisoners%2C_Galleria_dell'Accademia%2C_Florence_(26073958173).jpg",
+      "author": "Dimitris Kamaras",
+      "license": "Consultar licencia en ficha del archivo",
+      "attribution": "Dimitris Kamaras · Wikimedia Commons"
+    }
+  },
+  "italy27-art-opera-pieta": {
+    "name": "Piedad Bandini · Miguel Ángel",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Firenze%20-%20Museo%20Opera%20del%20Duomo%2C%20Piet%C3%A0%20Bandini.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Firenze_-_Museo_Opera_del_Duomo%2C_Piet%C3%A0_Bandini.jpg",
+      "author": "Consultar ficha de Wikimedia Commons",
+      "license": "Consultar licencia en ficha del archivo",
+      "attribution": "Consultar ficha de Wikimedia Commons · Wikimedia Commons"
+    }
+  },
+  "italy27-art-bargello-david": {
+    "name": "David · Donatello",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bronze%20David%20by%20Donatello-Bargello.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Bronze_David_by_Donatello-Bargello.jpg",
+      "author": "Yair Haklai",
+      "license": "Consultar licencia en ficha del archivo",
+      "attribution": "Yair Haklai · Wikimedia Commons"
+    }
+  },
+  "italy27-art-bargello-bacchus": {
+    "name": "Baco · Miguel Ángel",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo's%20Bacchus-Museo%20del%20Bargello.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Michelangelo's_Bacchus-Museo_del_Bargello.jpg",
+      "author": "Yair Haklai",
+      "license": "Consultar licencia en ficha del archivo",
+      "attribution": "Yair Haklai · Wikimedia Commons"
+    }
   }
 }
