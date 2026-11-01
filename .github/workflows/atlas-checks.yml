@@ -3,7 +3,11 @@ name: Atlas checks
 on:
   push:
     branches:
-      - refactor/atlas-viajes-modulares-20261019
+      - main
+      - feature/japon-2027
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
