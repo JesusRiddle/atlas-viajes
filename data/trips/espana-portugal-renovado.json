@@ -89,28 +89,44 @@
   "climate": "Durante el 8–27 de mayo, las máximas medias históricas rondan 21 °C en Barcelona, 22 °C en Madrid, 23 °C en Lisboa y 27 °C en Sevilla (estaciones y series diferentes). Son promedios climatológicos, no pronóstico; Andalucía puede registrar episodios de calor y las noches de Castilla y Granada son más frescas.\n\n*Qué llevar:* Capas ligeras, ropa transpirable, impermeable plegable, protección solar y calzado cómodo para adoquines, cuestas y largas visitas. En Albaicín y Sintra conviene reducir subidas con transporte local cuando resulte práctico.\n\n*Horas de luz:* Mayo ofrece días largos; organizar patios, miradores y jardines en primeras horas o al final de la tarde. Amanecer y atardecer exactos por ciudad y fecha están pendientes de verificar antes del itinerario detallado.",
   "experiences": [
     {
-      "city": "Barcelona y Figueres",
-      "description": "Contemplar la Sagrada Família y Sant Pau, recorrer Park Güell y visitar el Teatro-Museo Dalí en Figueres; reservar los interiores modernistas selectivamente."
+      "city": "Barcelona",
+      "description": "Recorrer Sagrada Família, Sant Pau y Park Güell, observar las fachadas modernistas del Eixample y probar pa amb tomàquet, escalivada o crema catalana."
     },
     {
-      "city": "Madrid y Zamora",
-      "description": "Recorrer Madrid durante San Isidro y dedicar un día al románico de Zamora, la Catedral y los paseos junto al Duero."
+      "city": "Figueres",
+      "description": "Visitar el Teatro-Museo Dalí para explorar sus instalaciones surrealistas y descubrir especialidades ampurdanesas como el suquet de peix o los brunyols de l'Empordà."
+    },
+    {
+      "city": "Madrid",
+      "description": "Pasear por Madrid de los Austrias y vivir las celebraciones de San Isidro, probando bocadillo de calamares y rosquillas del santo si están disponibles."
+    },
+    {
+      "city": "Zamora",
+      "description": "Descubrir su catedral románica, iglesias y miradores del Duero; acercarse a la gastronomía local mediante arroz a la zamorana, bacalao a la tranca y aceitadas."
     },
     {
       "city": "Toledo",
-      "description": "Entrar en su Catedral y seguir las calles de la Judería hacia San Juan de los Reyes, con tiempo para apreciar la ciudad sobre el Tajo."
+      "description": "Adentrarse en la Catedral y la Judería hasta San Juan de los Reyes, y degustar mazapán toledano, carcamusas o perdiz estofada."
     },
     {
       "city": "Granada",
-      "description": "Visitar los Palacios Nazaríes, la Alcazaba y el Generalife de la Alhambra antes de contemplar sus vistas desde el Albaicín."
+      "description": "Explorar Palacios Nazaríes, Alcazaba y Generalife, contemplar la Alhambra desde el Albaicín y probar piononos de Santa Fe y habas con jamón."
     },
     {
-      "city": "Sevilla y Córdoba",
-      "description": "Explorar los patios del Real Alcázar, subir a la Giralda y dedicar una excursión a los arcos de la Mezquita-Catedral de Córdoba."
+      "city": "Sevilla",
+      "description": "Recorrer patios del Real Alcázar, subir a la Giralda y acercarse a Triana; descubrir espinacas con garbanzos, pescaíto frito y montadito de pringá."
     },
     {
-      "city": "Lisboa y Sintra",
-      "description": "Pasear por Alfama y Belém, visitar el monasterio de los Jerónimos y recorrer los jardines de Quinta da Regaleira y el Palacio da Pena."
+      "city": "Córdoba",
+      "description": "Contemplar los arcos de la Mezquita-Catedral, pasear por la Judería y cruzar el Puente Romano; probar salmorejo cordobés, flamenquín y pastel cordobés."
+    },
+    {
+      "city": "Lisboa",
+      "description": "Pasear por Alfama, visitar Belém y escuchar fado si encaja en la noche; probar bacalhau à Brás, pastéis de nata y pastéis de Belém."
+    },
+    {
+      "city": "Sintra",
+      "description": "Recorrer los jardines del Palacio da Pena y el pozo iniciático de Quinta da Regaleira; degustar queijadas y travesseiros tradicionales de Sintra."
     }
   ],
   "days": [
@@ -478,7 +494,704 @@
   ],
   "flight": "Hipótesis: MEX→Barcelona el 8 de mayo con llegada el 9; regreso Lisboa→MEX el 27 de mayo con conexión protegida. Por cotizar en Google Flights. Ninguna tarifa comprada. Alternativa: invertir ruta y comparar multicity.",
   "local": "Barcelona→Madrid por tren; Madrid→Granada por avión (evitar ferrocarril Madrid–Andalucía); Granada→Sevilla por autobús; Sevilla→Lisboa por avión. Figueres, Zamora, Toledo y Sintra en tren; Córdoba en autobús de ida y vuelta. Validar cada sentido, estaciones, horarios y equipaje.",
-  "majorTransport": [],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Vuelos internacionales · multidestino",
+      "day": 1,
+      "selectedOption": "A",
+      "budgetIncludedIn": "flight-international-provision",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "Barcelona (BCN)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Lisboa (LIS)",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 20500,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Vuelos de llegada el 9 y regreso el 27 de mayo. Conexión de vuelta por definir; cotizar como un solo boleto protegido."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.google.com/travel/flights"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "MEX",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=MEX"
+        },
+        {
+          "name": "Barcelona (BCN)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona%20(BCN)"
+        },
+        {
+          "name": "Lisboa (LIS)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20(LIS)"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "flight-mad-grx",
+      "type": "flight",
+      "title": "Madrid → Granada · vuelo",
+      "day": 10,
+      "selectedOption": "A",
+      "budgetIncludedIn": "flight-mad-grx-provision",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Madrid (MAD)",
+                  "to": "Granada (GRX)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 3000,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Evita el corredor ferroviario Madrid–Andalucía; confirmar fecha, equipaje y tiempo puerta a puerta."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.iberia.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Madrid (MAD)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid%20(MAD)"
+        },
+        {
+          "name": "Granada (GRX)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Granada%20(GRX)"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "flight-svq-lis",
+      "type": "flight",
+      "title": "Sevilla → Lisboa · vuelo",
+      "day": 16,
+      "selectedOption": "A",
+      "budgetIncludedIn": "flight-svq-lis-provision",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Sevilla (SVQ)",
+                  "to": "Lisboa (LIS)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 3500,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Confirmar vuelo directo, diferencia horaria España–Portugal y equipaje."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.flytap.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Sevilla (SVQ)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sevilla%20(SVQ)"
+        },
+        {
+          "name": "Lisboa (LIS)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20(LIS)"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-bcn-fig",
+      "type": "train",
+      "title": "Barcelona ↔ Figueres · excursión",
+      "day": 4,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-bcn-fig-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Barcelona-Sants",
+                  "to": "Figueres-Vilafant",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Figueres-Vilafant",
+                  "to": "Barcelona-Sants",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 1400,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Figueres-Vilafant no está junto al Teatro-Museo; añadir traslados locales."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.renfe.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Barcelona-Sants",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona-Sants"
+        },
+        {
+          "name": "Figueres-Vilafant",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Figueres-Vilafant"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-bcn-mad",
+      "type": "train",
+      "title": "Barcelona → Madrid",
+      "day": 6,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-bcn-mad",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Barcelona-Sants",
+                  "to": "Madrid-Puerta de Atocha",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 1650,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Verificar estación de llegada según operador; acceso al alojamiento."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.renfe.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Barcelona-Sants",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona-Sants"
+        },
+        {
+          "name": "Madrid-Puerta de Atocha",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid-Puerta%20de%20Atocha"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-mad-zam",
+      "type": "train",
+      "title": "Madrid ↔ Zamora · excursión",
+      "day": 7,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-mad-zam-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Madrid-Chamartín",
+                  "to": "Zamora",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Zamora",
+                  "to": "Madrid-Chamartín",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 1750,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Coordinar tiempos de visita y regreso; estación de Zamora fuera del casco histórico."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.renfe.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Madrid-Chamartín",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid-Chamart%C3%ADn"
+        },
+        {
+          "name": "Zamora",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zamora"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-mad-tol",
+      "type": "train",
+      "title": "Madrid ↔ Toledo · excursión",
+      "day": 9,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-mad-tol-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Madrid-Puerta de Atocha",
+                  "to": "Toledo",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Toledo",
+                  "to": "Madrid-Puerta de Atocha",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 700,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Confirmar billetes de ambos sentidos y acceso al casco histórico."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.renfe.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Madrid-Puerta de Atocha",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid-Puerta%20de%20Atocha"
+        },
+        {
+          "name": "Toledo",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Toledo"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "bus-grx-svq",
+      "type": "bus",
+      "title": "Granada → Sevilla · autobús",
+      "day": 12,
+      "selectedOption": "A",
+      "budgetIncludedIn": "bus-grx-svq",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Estación de Autobuses de Granada",
+                  "to": "Sevilla Plaza de Armas",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 550,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Priorizar directo y añadir acceso urbano al hotel."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.alsa.es/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Estación de Autobuses de Granada",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n%20de%20Autobuses%20de%20Granada"
+        },
+        {
+          "name": "Sevilla Plaza de Armas",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sevilla%20Plaza%20de%20Armas"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "bus-svq-cor",
+      "type": "bus",
+      "title": "Sevilla ↔ Córdoba · excursión",
+      "day": 14,
+      "selectedOption": "A",
+      "budgetIncludedIn": "bus-svq-cor-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Sevilla Plaza de Armas",
+                  "to": "Córdoba estación de autobuses",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Córdoba estación de autobuses",
+                  "to": "Sevilla Plaza de Armas",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 950,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Preferencia por autobús para evitar el corredor de alta velocidad excluido; comprobar regreso."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.alsa.es/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Sevilla Plaza de Armas",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sevilla%20Plaza%20de%20Armas"
+        },
+        {
+          "name": "Córdoba estación de autobuses",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=C%C3%B3rdoba%20estaci%C3%B3n%20de%20autobuses"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-lis-sin",
+      "type": "train",
+      "title": "Lisboa ↔ Sintra · excursión",
+      "day": 17,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-lis-sin-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Lisboa Rossio",
+                  "to": "Sintra",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Sintra",
+                  "to": "Lisboa Rossio",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 500,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "La tarifa de tren no cubre automáticamente los traslados a Pena y Regaleira."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.cp.pt/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Lisboa Rossio",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20Rossio"
+        },
+        {
+          "name": "Sintra",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sintra"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    }
+  ],
   "ticketNotes": [
     "Antes de comprar, comparar el precio total con equipaje y las condiciones de cambios o reembolsos de cada tarifa aérea, ferroviaria y de autobús.",
     "En excursiones de ida y vuelta, adquirir ambos sentidos y revisar estaciones de salida y llegada, validación y margen entre conexiones.",
@@ -1001,6 +1714,18 @@
     [
       "IPMA · Lisboa, normales 1991–2020",
       "https://www.ipma.pt/pt/oclima/normais.clima/"
+    ],
+    [
+      "Turismo de Zamora · gastronomía",
+      "https://www.turismo.zamora.es/gastronomia-zamorana-1-2.html"
+    ],
+    [
+      "Turismo de Sevilla · espinacas con garbanzos",
+      "https://www.legacy.visitasevilla.es/las-tapas/espinacas-con-garbanzos"
+    ],
+    [
+      "Visit Lisboa · turismo y gastronomía",
+      "https://www.visitlisboa.com/"
     ]
   ],
   "cover": null,
