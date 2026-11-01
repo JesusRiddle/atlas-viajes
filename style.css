@@ -1849,7 +1849,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 #viajes .atlas-home-card .cardfacts{display:flex;gap:7px 12px;align-items:baseline;margin-top:1px;flex-wrap:wrap}
 #viajes .atlas-home-card .cardfacts span{font-size:11px;line-height:1.4}
 #viajes .atlas-home-card .cardfacts span+span::before{content:none}
-#viajes .atlas-home-card .cardfacts span:nth-child(2){overflow:hidden;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+#viajes .atlas-home-card .cardfacts span:nth-child(2){overflow:visible;display:block;white-space:normal;overflow-wrap:anywhere}
 #viajes .atlas-home-card .cardbottom{margin-top:9px;padding-top:11px}
 #viajes .atlas-home-card .card-price{gap:4px}
 #viajes .atlas-home-card .card-price>strong{font-variant-numeric:tabular-nums;line-height:1.3;font-size:clamp(16px,1.65vw,20px)}
