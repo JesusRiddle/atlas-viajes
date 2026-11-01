@@ -4103,5 +4103,35 @@
       "license": "Consultar licencia en ficha del archivo",
       "attribution": "Yair Haklai · Wikimedia Commons"
     }
+  },
+  "japan27-detail-inari-fox": {
+    "name": "Zorro mensajero de Inari · Fushimi Inari",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fushimi-Inari%20fox%20statue.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Fushimi-Inari%20fox%20statue.jpg",
+      "author": "Xqt",
+      "license": "Consultar ficha de Wikimedia Commons",
+      "attribution": "Xqt · Consultar ficha de Wikimedia Commons · Wikimedia Commons"
+    }
+  },
+  "japan27-detail-otowa": {
+    "name": "Cascada Otowa · Kiyomizu-dera",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Otowa%20waterfall%2C%20Kiyomizu-dera.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Otowa%20waterfall%2C%20Kiyomizu-dera.jpg",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Christophe95 · CC BY-SA 4.0 · Wikimedia Commons"
+    }
+  },
+  "japan27-detail-daibutsu": {
+    "name": "Gran Buda de Tōdai-ji · Nara",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Buddha%20at%20Todaiji%2C%20Nara.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Great%20Buddha%20at%20Todaiji%2C%20Nara.jpg",
+      "author": "Manishprabhune",
+      "license": "CC BY-SA 4.0",
+      "attribution": "Manishprabhune · CC BY-SA 4.0 · Wikimedia Commons"
+    }
   }
 }
