@@ -205,3 +205,18 @@ En la fase orientativa no exigir trenes/andenes, transbordos específicos ni com
 **Integración:** conservar la arquitectura del Atlas: identificar claves únicas del catálogo de fotos, mapearlas a `days[].places` y enlazar portada/rotación de Inicio con la misma fuente de datos; reutilizar la misma clave para el mismo atractivo. Añadir descripciones precisas y breves (aprox. 15–30 palabras) conforme a la estructura editorial existente. Mantener lazy loading, `alt` y el comportamiento responsive; comprobar que una imagen no disponible tiene presentación alternativa digna sin romper el diseño. No introducir cambios en presupuestos, vuelos, alojamientos o itinerario mientras se integran las fotos.
 
 **Ejecución por lotes y control de calidad:** para itinerarios de varias bases, trabajar en lotes geográficos verificables, revisar cada lote antes del siguiente y no modificar viajes antiguos. Tras cada lote verificar JSON, referencias de imágenes, unicidad de claves, URLs y rendering; al final revisar portada, carrusel de Inicio, galerías de los días, Desktop/Mobile y pruebas automáticas disponibles. No afirmar pruebas visuales si no se ejecutaron realmente; documentar lo pendiente.
+
+
+## Auditoría histórico-cultural obligatoria (todos los viajes)
+
+Antes de publicar un itinerario, comprobar día por día si las visitas previstas contienen **obras maestras, sepulturas o monumentos funerarios de figuras relevantes, personajes históricos, acontecimientos decisivos, hallazgos arqueológicos, rituales vivos o detalles arquitectónicos excepcionales**. No basta con decir «visitar la catedral», «recorrer el museo» o «conocer el castillo» cuando dentro existe algo extraordinario que puede pasar inadvertido.
+
+- Identificar por nombre los hitos imprescindibles **dentro de las visitas ya previstas** y resumir en una frase por qué importan; usar `days[].am`, `days[].pm` o `days[].note` según encaje, con prioridad a un apunte breve «No te pierdas». Mantener `placeDescriptions` concordante, sin sustituir los horarios ni la logística esencial.
+- Priorizar entre **imprescindible, interesante y prescindible**; mencionar solo los hallazgos realmente relevantes, sin convertir la agenda en enciclopedia ni agregar desplazamientos, entradas, costos o jornadas por inercia.
+- Para museos grandes, seleccionar obras concretas y comprobar si caben en el tiempo asignado; distinguir entre obras expuestas, préstamos, restauraciones y cierres parciales. No prometer acceso sin verificar.
+- Distinguir tumbas reales de **cenotafios o memoriales**, y hechos documentados de tradiciones o leyendas. Identificar figuras y contexto sin anacronismos ni afirmaciones absolutas controvertidas.
+- Para templos y santuarios, explicar brevemente símbolos y prácticas con respeto a su carácter religioso activo; no reducirlos a atracciones fotográficas.
+- Contrastar los datos históricos y las condiciones de acceso con fuentes institucionales o museísticas y actualizar las verificaciones cercanas al viaje. Mantener explícitas las incertidumbres de calendario o exposición.
+- Verificar que el contenido nuevo no rompe el esquema JSON ni modifica indebidamente presupuesto, tiempos de traslado, alojamientos, reservas o prioridades preexistentes.
+
+**Criterio de aceptación:** al leer cada jornada, el viajero puede reconocer qué elementos singulares buscará en cada visita principal y por qué merecen atención, sin necesitar investigar de cero al llegar.
