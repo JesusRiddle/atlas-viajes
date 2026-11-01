@@ -220,3 +220,8 @@ Antes de publicar un itinerario, comprobar día por día si las visitas prevista
 - Verificar que el contenido nuevo no rompe el esquema JSON ni modifica indebidamente presupuesto, tiempos de traslado, alojamientos, reservas o prioridades preexistentes.
 
 **Criterio de aceptación:** al leer cada jornada, el viajero puede reconocer qué elementos singulares buscará en cada visita principal y por qué merecen atención, sin necesitar investigar de cero al llegar.
+
+
+## Introducción breve para las tarjetas de inicio
+
+Cada viaje completo debe tener `intro` (narración detallada de «La esencia de tu recorrido») e `introShort` (resumen editorial de portada, recomendado 30–45 palabras). `introShort` describe los destinos, sus atractivos y el carácter de la experiencia, sin mezclar fechas, noches, alojamientos, precios, incertidumbres de reservas o logística ya presentada en otras secciones. La portada usa `introShort` y, por compatibilidad con viajes antiguos, recurre a `intro` si falta o está vacío. No truncar el texto de portada artificialmente; revisar su altura y legibilidad en móvil y escritorio. Mantener una sola fuente para cada versión, sin duplicar contenido en JavaScript.
