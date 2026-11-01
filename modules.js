@@ -2,13 +2,13 @@
 // Cambia available a false para ocultar un viaje sin borrar su JSON.
 window.ATLAS_MODULES = [
   {
-    "id": "italia-norte-2027",
-    "file": "italia-norte-2027.json",
+    "id": "japon-2027",
+    "file": "japon-2027.json",
     "available": true
   },
   {
-    "id": "emilia-romana",
-    "file": "emilia-romana.json",
+    "id": "italia-norte-2027",
+    "file": "italia-norte-2027.json",
     "available": true
   },
   {

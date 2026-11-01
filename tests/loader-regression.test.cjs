@@ -30,27 +30,27 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
 test('coexisten viajes con hoteles estructurados y viajes heredados con stays', () => {
     const catalog = loadCatalog().filter(module => module.available);
     const trips = catalog.map(module => JSON.parse(fs.readFileSync('data/trips/' + module.file, 'utf8')));
-    const emilia = trips.find(t => t.id === 'emilia-romana');
-    assert.ok(emilia);
-    assert.equal(Object.prototype.hasOwnProperty.call(emilia, 'stays'), false);
-    assert.equal(emilia.hotels.length, 3);
+    const italia = trips.find(t => t.id === 'italia-norte-2027');
+    assert.ok(italia);
+    assert.equal(Object.prototype.hasOwnProperty.call(italia, 'stays'), false);
+    assert.equal(italia.hotels.length, 3);
     assert.ok(trips.some(t => Array.isArray(t.stays) && t.stays.length));
     const stays = Object.fromEntries(trips.map(t => [t.id, Array.isArray(t.stays) ? t.stays : []]));
-    assert.deepEqual(stays['emilia-romana'], []);
+    assert.deepEqual(stays['italia-norte-2027'], []);
     assert.ok(stays['espana-portugal'].length > 0);
 });
 
-test('el loader normaliza un viaje mínimo sin alterar Emilia-Romagna', async () => {
+test('el loader normaliza un viaje mínimo sin alterar Italia Norte 2027', async () => {
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
-    const emilia = JSON.parse(fs.readFileSync('data/trips/emilia-romana.json', 'utf8'));
+    const italia = JSON.parse(fs.readFileSync('data/trips/italia-norte-2027.json', 'utf8'));
     const modules = [
-        { id: 'emilia-romana', file: 'emilia-romana.json', available: true },
+        { id: 'italia-norte-2027', file: 'italia-norte-2027.json', available: true },
         { id: 'japon', file: 'japon.json', available: true }
     ];
     const sources = {
         'data/places.json': {},
         'data/trips/_template.json': template,
-        'data/trips/emilia-romana.json': emilia,
+        'data/trips/italia-norte-2027.json': italia,
         'data/trips/japon.json': { id: 'japon', name: 'Japón' }
     };
     const window = { ATLAS_MODULES: modules };
@@ -65,22 +65,22 @@ test('el loader normaliza un viaje mínimo sin alterar Emilia-Romagna', async ()
     assert.equal(japan.days.length, 0);
     assert.equal(japan.mapPoints.length, 0);
     assert.equal(japan.seasonality.months['01'].status, 'pending');
-    assert.equal(atlas.trips[0].id, emilia.id);
-    assert.equal(atlas.trips[0].majorTransport.length, emilia.majorTransport.length);
-    assert.equal(atlas.trips[0].days.length, emilia.days.length);
-    assert.equal(atlas.trips[0].routeHighlights, emilia.routeHighlights);
+    assert.equal(atlas.trips[0].id, italia.id);
+    assert.equal(atlas.trips[0].majorTransport.length, italia.majorTransport.length);
+    assert.equal(atlas.trips[0].days.length, italia.days.length);
+    assert.deepEqual(Array.from(atlas.trips[0].routeHighlights || []), Array.from(italia.routeHighlights || []));
 });
 
 test('el loader permite stays ausente y rechaza colecciones de tipo incorrecto', async () => {
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
-    const trip = JSON.parse(fs.readFileSync('data/trips/emilia-romana.json', 'utf8'));
-    const modules = [{ id: 'emilia-romana', file: 'emilia-romana.json', available: true }];
+    const trip = JSON.parse(fs.readFileSync('data/trips/italia-norte-2027.json', 'utf8'));
+    const modules = [{ id: 'italia-norte-2027', file: 'italia-norte-2027.json', available: true }];
     async function run(value) {
         const window = { ATLAS_MODULES: modules };
         const data = {
             'data/places.json': {},
             'data/trips/_template.json': template,
-            'data/trips/emilia-romana.json': value
+            'data/trips/italia-norte-2027.json': value
         };
         const fetch = async url => ({ ok: Object.hasOwn(data, url),
             status: 404, json: async () => data[url] });
@@ -416,7 +416,7 @@ test('paso 15: template universal preserva información parcial, cero y falso si
 
 test('paso 15: un viaje nuevo completo no pierde datos estructurados al cargar', async () => {
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
-    const complete = JSON.parse(fs.readFileSync('data/trips/emilia-romana.json', 'utf8'));
+    const complete = JSON.parse(fs.readFileSync('data/trips/italia-norte-2027.json', 'utf8'));
     const window = { ATLAS_MODULES: [{ id: complete.id, file: complete.id + '.json', available: true }] };
     const fetch = async url => ({ ok: true, json: async () =>
         url === 'data/places.json' ? {} : url === 'data/trips/_template.json' ? template : complete });

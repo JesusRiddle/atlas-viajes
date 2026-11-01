@@ -1,7 +1,7 @@
 window.AtlasSections = function (ctx) {
     'use strict';
     const { trips, stays, esc, price, range, readable, railLinks } = ctx;
-    const baseLabel = n => n + ' ' + (n === 1 ? 'base' : 'bases') + ' para dormir';
+    const baseLabel = bases => { if (!Array.isArray(bases) || !bases.length) return 'Alojamientos por definir'; const nights = bases.reduce((total, item) => total + Number(Array.isArray(item) ? item[1] || 0 : item?.nights || 0), 0); const n = bases.length; return nights + ' ' + (nights === 1 ? 'noche' : 'noches') + ', ' + n + ' ' + (n === 1 ? 'alojamiento' : 'alojamientos'); };
     function familyLabel(t) {
         const f = t.family;
         return f ? `<p class="family-label">${esc(f.label)}<span>${esc(f.note)}</span></p>` : '';
@@ -24,7 +24,7 @@ window.AtlasSections = function (ctx) {
         return `<article class="panel experience-panel" id="experiencias">
             <div class="experience-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3ZM19 17l.7 2.3L22 20l-2.3.7L19 23l-.7-2.3L16 20l2.3-.7L19 17Z"/></svg><span>Lo que hace especial este viaje</span></div>
             <h3>Experiencias para recordar.</h3>
-            <p class="experience-intro">${t.id === "emilia-romana" ? "Arte extraordinario, ciudades históricas y experiencias que dan identidad al recorrido." : "Descubre las experiencias que darán identidad a este viaje."}</p>
+            <p class="experience-intro">${"Descubre las experiencias que darán identidad a este viaje."}</p>
             <ul class="experience-list${!legacyExperienceTripIds.has(t.id) ? ' experience-column-order' : ''}" style="${!legacyExperienceTripIds.has(t.id) ? '--experience-rows:' + Math.ceil((t.experiences || []).length / 2) : ''}">${experiences || '<li class="experience-card"><p class="draft-pending">Por definir</p></li>'}</ul>
             ${note}
         </article>`;
@@ -35,7 +35,7 @@ window.AtlasSections = function (ctx) {
             const [title, items] = Array.isArray(group) ? group : [group?.title, group?.items];
             const safeItems = Array.isArray(items) ? items : [];
             return `
-            <section class="reservation-group ${groupIndex === 0 ? 'reservation-priority-very-high' : groupIndex === 1 ? 'reservation-priority-high' : ''}">
+            <section class="reservation-group ${title === 'Planificación flexible' ? 'reservation-priority-flexible' : groupIndex === 0 ? 'reservation-priority-very-high' : groupIndex === 1 ? 'reservation-priority-high' : ''}">
                 <div class="reservation-group-heading">
                     <h4>${esc(title)}</h4>
                     <span class="reservation-count" aria-label="${safeItems.length} reservas">${safeItems.length}</span>
@@ -136,7 +136,7 @@ window.AtlasSections = function (ctx) {
         if (related.length < 2) return '';
         const fields = [
             ['Fechas', x => range(x)],
-            ['Noches y bases', x => x.bases.map(([name, n]) => esc(name) + ' ' + n).join(' · ')],
+            ['Noches y alojamientos', x => x.bases.map(([name, n]) => esc(name) + ' ' + n).join(' · ')],
             ['Experiencia central', x => esc(x.comparison.experience)],
             ['Trenes', x => esc(x.comparison.trains)],
             ['Condiciones', x => esc(x.comparison.conditions)],
