@@ -413,29 +413,29 @@
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Ninguna entrada ni transporte está comprado. Horarios, cupos y tarifas de mayo de 2027 están pendientes. Priorizar Alhambra, Sagrada Família, Teatro-Museo Dalí, Real Alcázar, Pena y Jerónimos."
+    "reservationNote": "Todas las visitas y desplazamientos están SIN COMPRAR; precios, ventas, cupos, cierres excepcionales y horarios exactos de 2027 por confirmar. Orden sugerido: primero Alhambra, después Sagrada Família y Palacio da Pena, luego Dalí/Alcázar/Regaleira/Mezquita; finalmente experiencias flexibles. Una reserva de transporte o alojamiento todavía no garantiza la entrada a un monumento. No convertir esta lista de previsiones en compras."
   },
   "reservations": [
     [
       "Prioridad muy alta",
       [
         {
-          "title": "Alhambra · 18 de mayo de 2027",
-          "description": "Entrada general con hora para los Palacios Nazaríes. Sin comprar; comprobar apertura de ventas y horarios.",
+          "title": "Alhambra y Palacios Nazaríes · martes 18 de mayo de 2027",
+          "description": "SIN COMPRAR. La entrada general abarca Alcazaba, Generalife y Palacios Nazaríes; el acceso a estos últimos exige respetar la franja del boleto. Confirmar fecha de apertura de ventas y documento nominativo antes de comprar. Reservar primero esta entrada, que condiciona la jornada granadina. Plan B: buscar otra franja del mismo día; si no existe, replantear el orden de días en Granada antes de fijar vuelos y hoteles. Tarifas 2027 por cotizar.",
           "links": [
             {
-              "label": "Patronato de la Alhambra",
-              "url": "https://www.alhambra-patronato.es/"
+              "label": "Visita oficial · condiciones",
+              "url": "https://www.alhambra-patronato.es/en/visit/organize-your-visit/time-of-the-visit"
             }
           ]
         },
         {
-          "title": "Sagrada Família · 10 de mayo de 2027",
-          "description": "Horario sujeto a disponibilidad; sin comprar.",
+          "title": "Sagrada Família · lunes 10 de mayo de 2027",
+          "description": "SIN COMPRAR. Elegir tipo de visita y hora disponibles, y verificar condiciones de acceso, identificación, cambios y entrada a torres (si se decide). Prioridad alta por el poco margen para reubicarla junto a Figueres. Plan B: buscar el miércoles 12 sustituyendo parte del recorrido modernista; no presentar entrada ni torre como garantizadas. Precio 2027 por cotizar.",
           "links": [
             {
               "label": "Entradas oficiales",
-              "url": "https://sagradafamilia.org/"
+              "url": "https://sagradafamilia.org/en/tickets"
             }
           ]
         }
@@ -445,32 +445,52 @@
       "Prioridad alta",
       [
         {
-          "title": "Teatro-Museo Dalí · 11 de mayo",
-          "description": "Coordinar tren de ida y vuelta con el horario de entrada.",
+          "title": "Teatro-Museo Dalí · martes 11 de mayo",
+          "description": "SIN COMPRAR. Consultar el calendario de apertura 2027 y escoger la hora de museo solo después de comprobar trenes Barcelona-Sants ↔ Figueres-Vilafant y acceso desde la estación. Plan B: desplazar Figueres al miércoles 12 e intercambiar la jornada de Park Güell si los horarios lo permiten.",
           "links": [
             {
-              "label": "Fundación Dalí",
-              "url": "https://www.salvador-dali.org/es/visita/teatro-museo-dali/"
+              "label": "Fundació Gala-Salvador Dalí",
+              "url": "https://www.salvador-dali.org/es/museos/teatro-museo-dali-de-figueres/"
             }
           ]
         },
         {
-          "title": "Real Alcázar · 20 de mayo",
-          "description": "Reservar entrada de fecha y hora una vez publicados los cupos.",
+          "title": "Real Alcázar · jueves 20 de mayo",
+          "description": "SIN COMPRAR. Comprar el acceso con fecha y franja cuando abra la venta; comprobar acceso y condiciones del operador oficial, que advierte que los pases pueden agotarse. Plan B: consultar otros pases del jueves o intercambiar con las visitas del sábado 22, sin perder Córdoba el viernes.",
           "links": [
             {
-              "label": "Real Alcázar",
-              "url": "https://www.alcazarsevilla.org/"
+              "label": "Información oficial y compra",
+              "url": "https://alcazarsevilla.org/prepara-la-visita/"
             }
           ]
         },
         {
-          "title": "Palacio da Pena · 24 de mayo",
-          "description": "Elegir modalidad y horario; coordinar con Quinta da Regaleira.",
+          "title": "Palacio Nacional da Pena · lunes 24 de mayo",
+          "description": "SIN COMPRAR. Si se elige visitar el interior, el boleto exige fecha y hora exactas de entrada al palacio, no al parque; prever al menos 30 minutos entre la puerta del parque y el palacio, sin tolerancia por retraso. Plan B: cambiar el orden con Quinta da Regaleira según cupos y valorar solo jardines/parque si no hay entrada interior.",
           "links": [
             {
-              "label": "Parques de Sintra",
-              "url": "https://www.parquesdesintra.pt/"
+              "label": "Parques de Sintra · entradas",
+              "url": "https://www.parquesdesintra.pt/en/plan-your-visit/tickets-palace-of-pena/"
+            }
+          ]
+        },
+        {
+          "title": "Quinta da Regaleira · lunes 24 de mayo",
+          "description": "SIN COMPRAR. Entrada personal con día y hora; el operador oficial indica que puede reprogramarse por su taquilla autorizada con al menos 48 horas de antelación. Coordinación imprescindible con Pena; si ambos horarios no caben, priorizar uno y dejar el otro como opción.",
+          "links": [
+            {
+              "label": "Visitas y taquilla oficial",
+              "url": "https://www.regaleira.pt/es/visitas"
+            }
+          ]
+        },
+        {
+          "title": "Mezquita-Catedral de Córdoba · viernes 21 de mayo",
+          "description": "SIN COMPRAR. Confirmar primero el autobús de ida y vuelta Sevilla–Córdoba; después comprobar la franja de visita del monumento para ese viernes. Los horarios pueden modificarse por celebraciones religiosas. Si el regreso limita el tiempo, conservar Mezquita-Catedral y Judería, y omitir visitas secundarias.",
+          "links": [
+            {
+              "label": "Horario oficial y entradas",
+              "url": "https://www.mezquita-catedraldecordoba.es/organiza-la-visita/entradas-y-horarios/"
             }
           ]
         }
@@ -480,12 +500,32 @@
       "Planificación flexible",
       [
         {
-          "title": "Jerónimos · 25 de mayo",
-          "description": "Visita prevista martes para evitar el cierre habitual de los lunes.",
+          "title": "Monasterio de los Jerónimos · martes 25 de mayo",
+          "description": "SIN COMPRAR. Mantener martes como día previsto y comprobar cierres extraordinarios, disponibilidad y modalidades de acceso de 2027; no reservar horarios no publicados. Alternativa si no abre: Torre de Belém desde el exterior y paseo de Belém, o intercambiar con Alfama.",
           "links": [
             {
-              "label": "Museos y monumentos de Portugal",
+              "label": "Patrimonio cultural de Portugal",
               "url": "https://www.museusemonumentos.pt/"
+            }
+          ]
+        },
+        {
+          "title": "Catedral y Giralda de Sevilla · sábado 22 de mayo",
+          "description": "SIN COMPRAR. Confirmar horario turístico compatible con cultos y celebraciones, y adquirir entrada si la franja es escasa. Plan B: cambiar con el Real Alcázar del jueves 20 si sus horarios permiten hacerlo.",
+          "links": [
+            {
+              "label": "Catedral de Sevilla · web oficial",
+              "url": "https://www.catedraldesevilla.es/"
+            }
+          ]
+        },
+        {
+          "title": "Espectáculo de flamenco en Sevilla · sábado 22 de mayo",
+          "description": "OPCIONAL, SIN COMPRAR. Comparar duración, formato, política de cancelación y ubicación del local una vez estén definidas las demás visitas. No comprometer la jornada de Córdoba ni aumentar el presupuesto sin restar otra actividad.",
+          "links": [
+            {
+              "label": "Turismo de Sevilla",
+              "url": "https://visitasevilla.es/"
             }
           ]
         }
@@ -1771,9 +1811,8 @@
   ],
   "budgetPreliminary": true,
   "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto.",
-  "sourceNote": "Estimaciones de ruta y gastos verificadas editorialmente el 1 de noviembre de 2026. Las temperaturas por mes provienen de normales históricas AEMET (Madrid/Sevilla 1981–2010) y la comparación de mayo incluye Lisboa (IPMA 1991–2020). Son referencias climáticas, no pronósticos ni tarifas 2027. Vuelos y hoteles siguen sin reservar.",
+  "sourceNote": "Proyecto España + Portugal 2027 independiente. Las tarifas, horarios y candidatos de alojamiento son estimaciones sin reserva. Condiciones de monumentos comprobadas en fuentes oficiales el 1 de noviembre de 2026; revisar antes de comprar en 2027.",
   "tips": [
-    "Ventanas alternativas para recotizar: 8–23 de mayo de 2027 (compacta); 8–30 mayo (extendida); 4–23 septiembre; 18 septiembre–7 octubre; 2–21 octubre (conflicto potencial con Japón 2027). La ventana principal es 8–27 mayo.",
     "Segovia es opcional y sustituiría tiempo propio de Madrid; no agregarla a las excursiones de Zamora y Toledo sin reevaluar el ritmo.",
     "Restricción personal: no usar el corredor ferroviario Madrid–Andalucía; comprobar el trazado exacto antes de comprar servicios regionales.",
     "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa.",
@@ -1832,5 +1871,6 @@
   "cover": null,
   "exchangeRates": {},
   "exchangeRateSnapshot": null,
-  "heroLodgingSummary": "18 noches, 5 alojamientos"
+  "heroLodgingSummary": "18 noches, 5 alojamientos",
+  "attractionTerms": "Las fechas y modalidades son propuestas para mayo de 2027: comprobar disponibilidad, condiciones nominativas, controles de seguridad, entradas con hora, cambios y reembolsos en las taquillas oficiales antes de comprar. No se ha adquirido ningún boleto."
 }
