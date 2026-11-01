@@ -453,72 +453,109 @@
       "date": "2027-05-23",
       "title": "Sevilla a Lisboa",
       "base": "Lisboa",
-      "am": "Vuelo directo previsto; Baixa y Chiado según llegada.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "• *Diferencia horaria:* Portugal tiene una hora menos que España peninsular; confirmar horarios locales y traslado desde el aeropuerto.\n• *Plan B:* Si el vuelo llega tarde, dejar Baixa y Chiado para el día siguiente.",
+      "am": "1. Hacer check-out en Sevilla y trasladarse al aeropuerto con margen para seguridad y equipaje.\n2. Volar Sevilla (SVQ) → Lisboa (LIS) solo si hay una opción adecuada para el domingo; el horario y carácter directo del servicio aún no están confirmados.",
+      "pm": "1. Llegar a Lisboa, ajustar el reloj a la hora portuguesa (una hora menos que en Sevilla) y trasladarse al hotel candidato junto a Rossio.\n2. Si la llegada lo permite, recorrer Baixa, Praça do Comércio y las calles de Chiado sin entradas con hora.",
+      "night": "1. Cenar por Baixa o Rossio y regresar al alojamiento.\n2. Revisar billetes de tren y accesos previstos para Sintra antes de descansar.",
+      "mobility": "• *Sevilla → aeropuerto:* Autobús aeroportuario o taxi según el horario real de salida.\n• *SVQ → LIS:* Vuelo pendiente de cotización; comprobar si es directo o con conexión y el costo final con equipaje.\n• *LIS → Rossio:* Metro con transbordo o taxi según equipaje y hora de llegada.",
+      "note": "• *Huso horario:* Lisboa utiliza una hora menos que Sevilla en mayo; los billetes muestran horas locales.\n• *Plan B:* Si no existe vuelo práctico, evaluar otro horario o ajustar el medio de traslado antes de comprar hoteles no reembolsables.\n• *Alojamiento:* Hotel Gat Rossio es candidato sin reserva.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Aeropuerto de Sevilla (SVQ)",
+        "Aeropuerto Humberto Delgado de Lisboa (LIS)",
+        "Baixa",
+        "Chiado"
+      ],
+      "spend": null,
+      "hotel": "lis-gat-rossio",
+      "transportRefs": [
+        "flight-svq-lis"
+      ]
     },
     {
       "n": 17,
       "date": "2027-05-24",
       "title": "Palacios de Sintra",
       "base": "Lisboa",
-      "am": "Tren a Sintra, Palacio da Pena y Quinta da Regaleira.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "• *Sintra:* Pena y Regaleira son dos visitas extensas con subidas y traslados; reservar franjas compatibles y priorizar Pena si falta tiempo.\n• *Acceso:* El tren a Sintra no incluye transporte de subida al Palacio da Pena.",
+      "am": "1. Salir desde Rossio en tren hacia Sintra y dirigirse al Palacio Nacional da Pena en transporte local, taxi o servicio autorizado.\n2. Visitar el interior de Pena solo en la franja asignada; dejar margen amplio entre la puerta del parque y la entrada del palacio.",
+      "pm": "1. Descender hacia la Quinta da Regaleira y recorrer sus jardines y arquitectura si hay tiempo y una entrada compatible.\n2. Comer y pasear brevemente por el centro histórico de Sintra, sin añadir un tercer palacio.",
+      "night": "1. Tomar el tren de regreso a Lisboa desde Sintra y cenar por Rossio.\n2. Descansar tras una jornada con desniveles y posibles colas.",
+      "mobility": "• *Rossio ↔ Sintra:* Tren suburbano de ida y regreso; comprobar frecuencia, tarifas y billetes válidos para la fecha.\n• *Estación Sintra → Pena:* Autobús local, taxi u otra alternativa disponible; el trayecto implica subida y no está incluido en el billete ferroviario.\n• *Pena → Regaleira:* Traslado local o taxi según calor, tráfico y energía; evitar estimar que ambos monumentos están contiguos.",
+      "note": "• *Prioridad:* Reserva del Palacio da Pena con fecha y hora de acceso al interior, si se elige esa modalidad.\n• *Ritmo:* Regaleira exige tiempo y caminatas; omitirla si los horarios no son compatibles.\n• *Plan B:* Conservar Pena y centro de Sintra si solo hay disponibilidad para una visita.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Estación Rossio",
+        "Sintra · Palacio Nacional da Pena",
+        "Quinta da Regaleira",
+        "Centro histórico de Sintra"
+      ],
+      "spend": null,
+      "hotel": "lis-gat-rossio",
+      "transportRefs": [
+        "rail-lis-sin"
+      ]
     },
     {
       "n": 18,
       "date": "2027-05-25",
       "title": "Belém",
       "base": "Lisboa",
-      "am": "Monasterio de los Jerónimos, ribera y pastéis de Belém.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Viajar a Belém desde el centro y visitar el Monasterio de los Jerónimos según horarios y disponibilidad del martes.\n2. Contemplar la iglesia y el claustro solo si las modalidades de entrada y los tiempos reales lo permiten.",
+      "pm": "1. Pasear por los jardines y la ribera del Tajo, con vista al Monumento a los Descubrimientos.\n2. Acercarse al entorno de la Torre de Belém, sin prometer acceso interior, y probar los pastéis de Belém.",
+      "night": "1. Regresar a Lisboa centro y cenar en Chiado o Baixa.\n2. Mantener la noche libre para descansar antes del día de Alfama.",
+      "mobility": "• *Rossio → Belém:* Tranvía, autobús o tren de cercanías según servicio disponible; validar paradas y billetes.\n• *Belém → centro:* Revisar alternativas si hay demoras o saturación en transporte turístico.",
+      "note": "• *Jerónimos:* Confirmar horario turístico y posibles cierres extraordinarios antes de reservar entrada.\n• *Torre de Belém:* Contemplarla desde el exterior aunque el acceso interior esté cerrado o en obras.\n• *Comida:* Pastéis de Belém como degustación, sin suponer horario ni reservar mesa.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Monasterio de los Jerónimos",
+        "Padrão dos Descobrimentos",
+        "Torre de Belém",
+        "Pastéis de Belém"
+      ],
+      "spend": null,
+      "hotel": "lis-gat-rossio"
     },
     {
       "n": 19,
       "date": "2027-05-26",
       "title": "Alfama y miradores",
       "base": "Lisboa",
-      "am": "Castelo de São Jorge, Alfama y miradores; fado opcional.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Iniciar por el Castelo de São Jorge si su acceso y el estado del tiempo lo permiten.\n2. Descender hacia Alfama por miradores y calles históricas, ajustando la pendiente y evitando recorridos de ida y vuelta innecesarios.",
+      "pm": "1. Recorrer el entorno de la Sé de Lisboa, miradores de Santa Luzia y Portas do Sol, según afluencia.\n2. Comer bacalhau à brás, sardinas u otra especialidad portuguesa disponible; reservar tiempo para descansar y preparar maleta.",
+      "night": "1. Asistir a un espectáculo de fado solo si interesa y sus horarios permiten descansar antes del vuelo internacional.\n2. Regresar al hotel y comprobar terminal, traslado al aeropuerto y condiciones de check-out.",
+      "mobility": "• *Rossio → Castelo:* Transporte urbano o taxi para evitar parte de la subida; continuar a pie cuesta abajo por Alfama.\n• *Miradores → hotel:* Tranvía, autobús, metro o taxi según afluencia y cansancio.\n• *Salida del 27:* Confirmar el medio de transporte al aeropuerto según el horario real del vuelo.",
+      "note": "• *Cuestas:* Alfama tiene pavimento irregular y pendientes pronunciadas; priorizar rutas de bajada.\n• *Fado:* Opcional, sin comprar; si el regreso requiere salida muy temprana, omitirlo.\n• *Maleta:* Preparar todo antes de acostarse para no comprometer la mañana del vuelo.",
       "places": [
         "espana-portugal-2027-alfama"
       ],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Castelo de São Jorge",
+        "Miradouro das Portas do Sol",
+        "Miradouro de Santa Luzia",
+        "Sé de Lisboa",
+        "Alfama"
+      ],
+      "spend": null,
+      "hotel": "lis-gat-rossio"
     },
     {
       "n": 20,
       "date": "2027-05-27",
       "title": "Regreso a México",
       "base": "En vuelo",
-      "am": "Vuelo desde Lisboa con conexión a Ciudad de México; itinerario por cotizar.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "• *Regreso internacional:* Comprobar billete LIS–MEX con escala protegida, la hora efectiva de llegada a México y posible necesidad de salir del hotel antes del amanecer.\n• *Vacaciones:* No considerar garantizada la llegada el jueves hasta seleccionar vuelo.",
+      "am": "1. Hacer check-out y viajar al aeropuerto de Lisboa con el margen recomendado para el vuelo internacional.\n2. Pasar seguridad y abordar el primer segmento del itinerario LIS → Ciudad de México (MEX), con escala si corresponde.",
+      "pm": "1. Continuar el vuelo o realizar conexión protegida conforme a los billetes que finalmente se compren.\n2. Ajustar actividades y comidas al horario real del itinerario, sin prometer llegada el mismo día.",
+      "night": "1. Llegar a Ciudad de México únicamente si los horarios y el cambio de fecha lo permiten; en caso contrario, continuar el itinerario previsto por la aerolínea.\n2. No añadir una noche de hotel ficticia ni actividades turísticas al último día.",
+      "mobility": "• *Hotel → LIS:* Metro, taxi u otro transporte según terminal y hora de salida; revisar los primeros servicios si la salida es muy temprana.\n• *LIS → MEX:* Vuelo multidestino internacional con posible conexión; preferir un único billete protegido, con equipaje y condiciones de tránsito comprobados.",
+      "note": "• *Fecha de regreso:* El 27 de mayo es fecha objetivo de salida desde Lisboa, no garantía de llegada a MEX ese jueves.\n• *Escala:* Comprobar país de tránsito, control migratorio, equipaje y tiempos mínimos de conexión.\n• *Presupuesto:* El vuelo internacional ya está incluido una sola vez en el escenario central.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Lisboa · Aeropuerto Humberto Delgado",
+        "Ciudad de México · regreso pendiente de horario"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "flight-international"
+      ]
     }
   ],
   "planningDetails": {
