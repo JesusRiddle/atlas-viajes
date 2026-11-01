@@ -237,70 +237,111 @@
       "date": "2027-05-13",
       "title": "Barcelona a Madrid",
       "base": "Madrid",
-      "am": "Tren de alta velocidad por corredor Barcelona–Madrid; paseo por Madrid de los Austrias.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Desayunar en Barcelona, realizar check-out y trasladarse con equipaje a Barcelona-Sants.\n2. Tomar un tren directo de alta velocidad a Madrid, con hora por elegir según tarifas y margen real para llegar al hotel.",
+      "pm": "1. Llegar a Madrid, desplazarse al alojamiento candidato junto a Puerta del Sol y dejar equipaje o hacer check-in.\n2. Pasear por Puerta del Sol, Plaza Mayor y entorno de la Plaza de la Villa, sin reservar interiores rígidos.",
+      "night": "1. Pasear por Madrid de los Austrias o cenar por el centro según la hora de llegada.\n2. Preparar la excursión del viernes a Zamora; confirmar horarios de ida y regreso.",
+      "mobility": "• *Hotel → Barcelona-Sants:* Metro o taxi con equipaje y margen para controles de acceso al tren.\n• *Barcelona → Madrid:* Alta velocidad directa hasta la estación que indique el boleto; no presuponer Atocha para todos los operadores.\n• *Estación → alojamiento:* Metro, Cercanías o taxi según la llegada real; hotel candidato junto a Sol.",
+      "note": "• *Billete:* Precio y servicio todavía estimados; comparar operador, política de equipaje, estación madrileña y cambios.\n• *Alojamiento:* B&B HOTEL Madrid Centro Puerta del Sol es candidato, no reservado.\n• *Ritmo:* No añadir museo de visita larga el mismo día del traslado.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Barcelona-Sants",
+        "Madrid · estación por confirmar",
+        "Puerta del Sol",
+        "Plaza Mayor"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "rail-bcn-mad"
+      ],
+      "hotel": "mad-bb-sol"
     },
     {
       "n": 7,
       "date": "2027-05-14",
       "title": "Zamora y el Duero",
       "base": "Madrid",
-      "am": "Excursión de día en tren a Zamora: Catedral, románico y ribera del Duero.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Salir temprano hacia Madrid-Chamartín con margen para el tren a Zamora; desayunar antes de abordar.\n2. Llegar a Zamora y dirigirse al casco histórico; iniciar por el entorno de la Catedral y las iglesias románicas.",
+      "pm": "1. Visitar la Catedral según su horario turístico y pasear por el castillo, miradores y calles del conjunto monumental.\n2. Comer un plato típico, como arroz a la zamorana, y acercarse a la ribera del Duero solo si el tiempo de regreso lo permite.",
+      "night": "1. Tomar el tren de vuelta a Madrid y regresar al hotel.\n2. Descansar: el sábado está reservado a San Isidro, sin repetir excursión.",
+      "mobility": "• *Madrid → Zamora:* Tren de ida y vuelta desde Madrid-Chamartín; horario y estación exactos sujetos al billete seleccionado.\n• *Estación Zamora → centro:* Considerar autobús urbano o taxi, especialmente si el tiempo de visita es limitado.\n• *Regreso:* Comprar ambos sentidos y prever margen para alcanzar la estación.",
+      "note": "• *Excursión:* La prioridad es el casco histórico y el Duero; no agregar localidades cercanas.\n• *Catedral:* Revisar apertura, visita turística y posibles cambios litúrgicos antes de fijar el tren.\n• *Comida:* Arroz a la zamorana sujeto a menú y disponibilidad; no está reservado.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Madrid-Chamartín",
+        "Zamora · Catedral",
+        "Castillo y miradores",
+        "Río Duero"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "rail-mad-zam"
+      ],
+      "hotel": "mad-bb-sol"
     },
     {
       "n": 8,
       "date": "2027-05-15",
       "title": "San Isidro en Madrid",
       "base": "Madrid",
-      "am": "Celebraciones locales y recorridos urbanos; agenda 2027 por confirmar.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Disfrutar las fiestas de San Isidro en la Pradera y sus alrededores, observando romería, tradiciones y ambiente popular si se celebran según el programa definitivo.\n2. Probar rosquillas tontas o listas y limonada tradicional en establecimientos disponibles.",
+      "pm": "1. Regresar hacia el centro y elegir actividades municipales publicadas para el sábado 15 de mayo.\n2. Recorrer Las Vistillas o el entorno de La Latina si hay eventos apropiados; no depender de un concierto todavía sin confirmar.",
+      "night": "1. Paseo por el centro histórico y cena según el ambiente festivo.\n2. Preparar el tren de Toledo del domingo y descansar a una hora razonable.",
+      "mobility": "• *Centro → Pradera de San Isidro:* Metro o autobús urbano, verificando posibles cierres y desvíos por la festividad.\n• *Regreso:* Reservar tiempo de desplazamiento; usar transporte público antes que taxi si hay cortes viales.",
+      "note": "• *Festivo confirmado:* San Isidro cae el sábado 15 de mayo de 2027, según el calendario municipal de Madrid.\n• *Programa:* Los conciertos, escenarios y actos concretos se publicarán posteriormente; consultar la programación oficial.\n• *Afluencia:* Evitar citas rígidas y contar con multitudes en la Pradera.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Pradera de San Isidro",
+        "La Latina",
+        "Jardines de Las Vistillas"
+      ],
+      "spend": null,
+      "hotel": "mad-bb-sol"
     },
     {
       "n": 9,
       "date": "2027-05-16",
       "title": "Toledo, tres culturas",
       "base": "Madrid",
-      "am": "Excursión en tren a Toledo: Catedral, Judería y San Juan de los Reyes.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "• *Toledo en domingo:* Verificar horario turístico de la Catedral por los oficios religiosos; si abre tarde, empezar por la Judería y San Juan de los Reyes.\n• *Regreso:* Conservar margen para volver a Madrid sin comprometer el vuelo del lunes.",
+      "am": "1. Salir de Madrid-Puerta de Atocha hacia Toledo en tren de ida y vuelta, con margen para el acceso al casco histórico.\n2. Recorrer la Judería y el entorno de Santo Tomé o San Juan de los Reyes si la Catedral abre más tarde por ser domingo.",
+      "pm": "1. Visitar la Catedral Primada en su franja turística dominical, pendiente de reconfirmar para 2027.\n2. Pasear por plazas y miradores del casco antiguo; probar mazapán toledano o carcamusas según disponibilidad.",
+      "night": "1. Regresar a la estación de Toledo con margen y tomar el tren de vuelta a Madrid.\n2. Preparar equipaje y documentos para el vuelo a Granada del lunes.",
+      "mobility": "• *Madrid ↔ Toledo:* Tren Avant desde Madrid-Puerta de Atocha hasta Toledo; seleccionar y pagar ida y regreso.\n• *Estación Toledo → casco:* Autobús urbano o taxi para evitar la subida a pie con calor.\n• *Regreso:* Verificar últimos servicios y no depender de una sola salida tardía.",
+      "note": "• *Domingo y cultos:* No presumir apertura matutina de la Catedral; confirmar en el sitio oficial y adaptar el orden.\n• *Plan B:* Si hay cierres, priorizar Judería, San Juan de los Reyes y paseo patrimonial.\n• *Lunes:* Mantener un regreso razonable para llegar descansado al aeropuerto.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Madrid-Puerta de Atocha",
+        "Toledo · Judería",
+        "Monasterio de San Juan de los Reyes",
+        "Catedral Primada"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "rail-mad-tol"
+      ],
+      "hotel": "mad-bb-sol"
     },
     {
       "n": 10,
       "date": "2027-05-17",
       "title": "Llegada a Granada",
       "base": "Granada",
-      "am": "Vuelo Madrid–Granada para evitar trenes Madrid–Andalucía; Carrera del Darro.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "• *Vuelo Madrid–Granada:* No asumir llegada a primera hora; considerar aeropuerto, facturación de maleta y traslado al centro.\n• *Plan B:* Si se retrasa el vuelo, limitar la tarde al casco histórico y descansar antes de la Alhambra.",
+      "am": "1. Hacer check-out en Madrid y dirigirse al aeropuerto con la antelación que exija el vuelo.\n2. Volar Madrid–Granada en un servicio por confirmar; no asignar actividades con hora fija antes de conocer la llegada efectiva.",
+      "pm": "1. Llegar al aeropuerto Federico García Lorca Granada-Jaén, trasladarse a Plaza Nueva y dejar equipaje en el hotel candidato.\n2. Si queda tarde disponible, pasear por Carrera del Darro y el entorno de Plaza Nueva.",
+      "night": "1. Cenar por el centro, preparando la visita de la Alhambra del martes.\n2. Descansar; no añadir Albaicín intenso antes de la jornada larga del monumento.",
+      "mobility": "• *Hotel → Madrid-Barajas:* Cercanías o metro según terminal del vuelo elegido; prever control y equipaje.\n• *Vuelo Madrid → Granada:* Preferido por la restricción de no usar trenes Madrid–Andalucía; horario, aerolínea y franquicia pendientes.\n• *GRX → Plaza Nueva:* Autobús de aeropuerto o taxi; revisar última salida según la llegada.\n• *Alojamiento:* Hotel Macià Plaza, candidato, no reservado.",
+      "note": "• *Sin compra:* Si no hay vuelo compatible para el lunes 17, reevaluar alternativas aéreas antes de cerrar billetes no reembolsables.\n• *Plan B:* Si el vuelo se retrasa, dedicar la tarde al check-in y descansar.\n• *Prioridad del martes:* Confirmar acceso a Palacios Nazaríes antes de organizar otras visitas.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Aeropuerto Adolfo Suárez Madrid-Barajas",
+        "Aeropuerto Granada-Jaén (GRX)",
+        "Plaza Nueva",
+        "Carrera del Darro"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "flight-mad-grx"
+      ],
+      "hotel": "grx-macia-plaza"
     },
     {
       "n": 11,
