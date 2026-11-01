@@ -7,13 +7,13 @@ window.ATLAS_MODULES = [
     "available": true
   },
   {
-    "id": "japon-2027",
-    "file": "japon-2027.json",
+    "id": "italia-norte-2027",
+    "file": "italia-norte-2027.json",
     "available": true
   },
   {
-    "id": "italia-norte-2027",
-    "file": "italia-norte-2027.json",
+    "id": "japon-2027",
+    "file": "japon-2027.json",
     "available": true
   },
   {
