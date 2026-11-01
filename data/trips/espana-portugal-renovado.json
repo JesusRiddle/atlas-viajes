@@ -348,70 +348,105 @@
       "date": "2027-05-18",
       "title": "La Alhambra y Albaicín",
       "base": "Granada",
-      "am": "Alhambra, Generalife, Palacios Nazaríes y Albaicín.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "• *Entrada crítica:* La hora impresa para los Palacios Nazaríes es obligatoria; no concentrar todas las zonas del recinto en una franja demasiado corta.\n• *Ritmo:* Albaicín solo al atardecer si quedan tiempo y energía; priorizar la Alhambra.",
+      "am": "1. Salir con margen desde Plaza Nueva hacia el acceso oficial de la Alhambra; comprobar el acceso y la franja asignada a los Palacios Nazaríes.\n2. Visitar los Palacios Nazaríes exactamente en la hora del boleto y recorrer la Alcazaba según el orden permitido por la entrada.",
+      "pm": "1. Continuar hacia los jardines y palacios del Generalife, sin intentar completar el conjunto monumental a toda velocidad.\n2. Descansar o comer por el centro; dedicar la tarde a las zonas pendientes solo si la franja de entrada y la energía lo permiten.",
+      "night": "1. Subir hacia el Albaicín para contemplar la Alhambra desde el mirador de San Nicolás, si el tiempo y las fuerzas lo permiten.\n2. Cenar y regresar al alojamiento; preparar equipaje para el autobús a Sevilla.",
+      "mobility": "• *Plaza Nueva → Alhambra:* Utilizar autobús urbano o taxi hasta el acceso que indique el boleto; evitar una subida larga antes de la visita.\n• *Centro → Albaicín:* Considerar microbús urbano o taxi para los tramos empinados y caminar por calles históricas sin prisas.",
+      "note": "• *Palacios Nazaríes:* Entrada nominativa con hora de acceso obligatoria; reservar la primera franja viable y ajustar el resto del día a ella.\n• *Prioridad:* Si el recinto exige más tiempo, reducir Albaicín antes que sacrificar Alcazaba o Generalife.\n• *Cierre:* Confirmar acceso y horarios para el martes 18 de mayo de 2027 antes de comprar.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "La Alhambra · Palacios Nazaríes",
+        "Alcazaba",
+        "Generalife",
+        "Albaicín · mirador de San Nicolás"
+      ],
+      "spend": null,
+      "hotel": "grx-macia-plaza"
     },
     {
       "n": 12,
       "date": "2027-05-19",
       "title": "Traslado a Sevilla",
       "base": "Sevilla",
-      "am": "Autobús directo Granada–Sevilla; tarde en Santa Cruz.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Desayunar, hacer check-out en Granada y desplazarse a la estación de autobuses con margen para equipaje y embarque.\n2. Tomar autobús directo Granada → Sevilla según disponibilidad real; no fijar visitas con hora antes de conocer la llegada.",
+      "pm": "1. Llegar a Sevilla Plaza de Armas u otra terminal que figure en el billete; trasladarse al alojamiento candidato y dejar equipaje.\n2. Recorrer las calles del barrio de Santa Cruz y sus plazas, sin programar una visita larga con entrada.",
+      "night": "1. Pasear por los alrededores de la Catedral o cenar cerca del centro histórico.\n2. Descansar antes de la entrada al Real Alcázar del día siguiente.",
+      "mobility": "• *Hotel → estación Granada:* Autobús urbano o taxi; prever que la estación de autobuses está fuera del centro histórico.\n• *Granada → Sevilla:* Autobús directo si está disponible; confirmar compañía, origen, terminal y duración antes de comprar.\n• *Terminal → hotel:* Traslado urbano o taxi con equipaje al Hotel Don Paco, candidato sin reserva.",
+      "note": "• *Equipaje:* Comprobar las condiciones de la empresa de autobuses y margen de embarque.\n• *Llegada:* Si el traslado termina tarde, limitar Santa Cruz a un paseo y una cena.\n• *Hotel:* Confirmar dirección y consigna; la entrada al alojamiento aún no está reservada.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Granada · estación de autobuses",
+        "Sevilla · Plaza de Armas",
+        "Barrio de Santa Cruz"
+      ],
+      "spend": null,
+      "hotel": "svq-don-paco",
+      "transportRefs": [
+        "bus-grx-svq"
+      ]
     },
     {
       "n": 13,
       "date": "2027-05-20",
       "title": "Real Alcázar y Triana",
       "base": "Sevilla",
-      "am": "Visita al Real Alcázar, jardines y barrio de Triana.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "am": "1. Visitar el Real Alcázar con entrada de fecha y hora, recorriendo sus palacios y patios según las zonas abiertas.\n2. Continuar hacia los jardines sin programar otra visita interior rígida a continuación.",
+      "pm": "1. Almorzar en el entorno histórico y cruzar el Guadalquivir hacia el barrio de Triana.\n2. Recorrer la calle Betis, el entorno del Mercado de Triana y sus calles de cerámica; adaptar el paseo al calor.",
+      "night": "1. Contemplar la ribera al anochecer o cenar tapas sevillanas, como espinacas con garbanzos o pringá.\n2. Regresar al alojamiento y preparar la excursión del viernes a Córdoba.",
+      "mobility": "• *Hotel → Real Alcázar:* Paseo por el centro o transporte urbano si conviene.\n• *Alcázar → Triana:* Cruzar a pie por el Puente de Isabel II o utilizar transporte público si hace calor.\n• *Regreso:* Consultar autobuses urbanos o caminar según el alojamiento.",
+      "note": "• *Reserva alta:* Obtener la entrada del Alcázar antes de fijar otras actividades del jueves.\n• *Calor:* Reservar descansos y agua; el recorrido de los jardines puede alargarse.\n• *Plan B:* Si cambia el horario de acceso, priorizar Alcázar y acortar Triana.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Real Alcázar de Sevilla",
+        "Jardines del Alcázar",
+        "Puente de Isabel II",
+        "Triana"
+      ],
+      "spend": null,
+      "hotel": "svq-don-paco"
     },
     {
       "n": 14,
       "date": "2027-05-21",
       "title": "Córdoba",
       "base": "Sevilla",
-      "am": "Autobús de ida y vuelta Sevilla–Córdoba; Mezquita-Catedral, Judería y Puente Romano.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "• *Autobuses:* Comprobar ida y regreso Sevilla–Córdoba antes de elegir hora de la Mezquita-Catedral.\n• *Plan B:* Si hay pocos servicios, conservar Mezquita-Catedral y Judería y omitir visitas secundarias.",
+      "am": "1. Desplazarse a la terminal de autobuses de Sevilla indicada en los billetes; salir temprano hacia Córdoba.\n2. Llegar al centro histórico y visitar la Mezquita-Catedral en la franja turística confirmada para el viernes.",
+      "pm": "1. Pasear por la Judería, sus calles y patios accesibles y el entorno de la Puerta de Almodóvar.\n2. Acercarse al Puente Romano y comer salmorejo cordobés o flamenquín, según el tiempo disponible antes del regreso.",
+      "night": "1. Volver en autobús a Sevilla en un servicio previamente comprobado.\n2. Cena sencilla y descanso; conservar la tarde siguiente para Plaza de España.",
+      "mobility": "• *Sevilla ↔ Córdoba:* Autobús de ida y vuelta con horarios aún sin confirmar; comprobar que existe servicio compatible con una excursión de un día.\n• *Terminal Córdoba → Mezquita:* Autobús urbano o taxi para reducir caminatas con calor.\n• *Regreso:* Dejar margen entre monumento, comida y salida de la terminal, sin depender de una conexión ajustada.",
+      "note": "• *Viabilidad:* La existencia de un autobús directo y regreso útil para el viernes 21 debe validarse antes de comprar entradas; no confundir con los trenes que se han excluido.\n• *Mezquita-Catedral:* Los horarios turísticos pueden cambiar por celebraciones religiosas; priorizar la visita interior.\n• *Plan B:* Si la oferta de autobuses resulta insuficiente, revisar otro operador o replantear la excursión antes de reservar, sin dar por hecho el regreso.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Sevilla · estación de autobuses",
+        "Córdoba · Mezquita-Catedral",
+        "Judería",
+        "Puente Romano"
+      ],
+      "spend": null,
+      "hotel": "svq-don-paco",
+      "transportRefs": [
+        "bus-svq-cor"
+      ]
     },
     {
       "n": 15,
       "date": "2027-05-22",
       "title": "Catedral, Giralda y flamenco",
       "base": "Sevilla",
-      "am": "Catedral, Giralda, Plaza de España y espectáculo de flamenco opcional.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "• *Sábado:* Consultar horarios turísticos de Catedral y Giralda, condicionados por cultos y eventos.\n• *Ritmo:* Plaza de España y flamenco pueden ser flexibles según calor y disponibilidad.",
+      "am": "1. Visitar la Catedral de Sevilla y subir a la Giralda si la entrada y el horario turístico lo permiten.\n2. Pasear por el entorno del Archivo de Indias y el casco histórico sin añadir interiores obligatorios.",
+      "pm": "1. Acercarse a Plaza de España y pasear por el Parque de María Luisa, adaptando el recorrido a la temperatura.\n2. Regresar al hotel para descansar antes de la noche, especialmente si se opta por flamenco.",
+      "night": "1. Asistir a un espectáculo de flamenco únicamente si hay disponibilidad y encaja en el presupuesto; de lo contrario, paseo y cena en Sevilla.\n2. Preparar equipaje y documentación para el vuelo Sevilla → Lisboa del domingo.",
+      "mobility": "• *Centro → Plaza de España:* Caminar por los Jardines de Murillo o utilizar tranvía, autobús o taxi según calor.\n• *Plaza de España → alojamiento:* Transporte urbano o paseo de regreso.\n• *Flamenco:* Escoger local accesible a pie o en transporte desde el hotel; no comprometer descanso previo al vuelo.",
+      "note": "• *Sábado y cultos:* Confirmar horarios de Catedral y Giralda; modificar el orden si hubiera actos religiosos.\n• *Flamenco:* Actividad opcional y sin entrada comprada; revisar condiciones antes de pagar.\n• *Ritmo:* Mantener Plaza de España y parque como paseos adaptables, no actividades cronometradas.",
       "places": [],
-      "headerPlaces": [],
-      "spend": null
+      "headerPlaces": [
+        "Catedral de Sevilla",
+        "Giralda",
+        "Plaza de España",
+        "Parque de María Luisa"
+      ],
+      "spend": null,
+      "hotel": "svq-don-paco"
     },
     {
       "n": 16,
