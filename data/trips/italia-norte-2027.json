@@ -466,7 +466,9 @@
         "italy16-david",
         "italy16-cupola",
         "italy27-opera-duomo",
-        "italy27-firenze-cathedral"
+        "italy27-firenze-cathedral",
+        "italy27-art-accademia-prigioni",
+        "italy27-art-opera-pieta"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -525,7 +527,9 @@
         "italy27-san-miniato",
         "italy27-bargello",
         "italy27-santo-spirito",
-        "italy27-signoria"
+        "italy27-signoria",
+        "italy27-art-bargello-david",
+        "italy27-art-bargello-bacchus"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -4081,7 +4085,11 @@
     "italy27-art-brera-hayez": "Brera · Pintura emblemática del Romanticismo italiano, de 1859.",
     "italy27-art-uffizi-venus": "Uffizi · Una de las imágenes más célebres del Renacimiento, pintada por Sandro Botticelli.",
     "italy27-art-uffizi-primavera": "Uffizi · Alegoría mitológica de Botticelli con Venus, Flora y las tres Gracias.",
-    "italy27-art-uffizi-anunciacion": "Uffizi · Obra temprana de Leonardo: observa su tratamiento de la perspectiva y el paisaje."
+    "italy27-art-uffizi-anunciacion": "Uffizi · Obra temprana de Leonardo: observa su tratamiento de la perspectiva y el paisaje.",
+    "italy27-art-accademia-prigioni": "Accademia · Los Prisioneros inacabados de Miguel Ángel muestran figuras que parecen surgir del mármol.",
+    "italy27-art-opera-pieta": "Museo dell'Opera del Duomo · Piedad Bandini de Miguel Ángel; se distingue el rostro de Nicodemo, relacionado con un autorretrato del artista.",
+    "italy27-art-bargello-david": "Bargello · David de Donatello, una de las grandes esculturas de bronce del primer Renacimiento.",
+    "italy27-art-bargello-bacchus": "Bargello · Baco de Miguel Ángel, un dios clásico de postura inestable esculpido en mármol."
   },
   "exchangeRates": {
     "EUR": 20.7416,
