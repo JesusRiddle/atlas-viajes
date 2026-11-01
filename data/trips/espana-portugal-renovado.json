@@ -1,25 +1,830 @@
 {
   "id": "espana-portugal-renovado",
-  "name": "España + Portugal: arte, Al-Ándalus y Lisboa",
+  "name": "España + Portugal 2027: arte, Al-Ándalus y Lisboa",
   "status": "draft",
+  "flag": "🇪🇸🇵🇹",
+  "start": "2027-05-08",
+  "end": "2027-05-27",
+  "work": 14,
+  "tag": "DOS PAÍSES · 20 DÍAS · 5 ALOJAMIENTOS",
   "routeCities": [
+    "Barcelona",
+    "Figueres",
     "Madrid",
     "Zamora",
     "Toledo",
-    "Segovia",
-    "Lisboa",
-    "Sintra",
+    "Granada",
     "Sevilla",
     "Córdoba",
-    "Granada",
-    "Barcelona",
-    "Figueres"
+    "Lisboa",
+    "Sintra"
   ],
+  "bases": [
+    [
+      "Barcelona",
+      4
+    ],
+    [
+      "Madrid",
+      4
+    ],
+    [
+      "Granada",
+      2
+    ],
+    [
+      "Sevilla",
+      4
+    ],
+    [
+      "Lisboa",
+      4
+    ]
+  ],
+  "intro": "De la arquitectura de Gaudí en Barcelona al universo surrealista de Dalí en Figueres, este recorrido atraviesa ciudades históricas de España y Portugal. Desde Madrid se visitan el románico de Zamora y las callejuelas de Toledo, antes de descubrir el arte nazarí de la Alhambra en Granada. Sevilla reúne el Real Alcázar, la Giralda, sus barrios y una escapada a la Mezquita-Catedral de Córdoba. El viaje termina en Lisboa, con sus miradores, los monumentos de Belém y los palacios y jardines de Sintra. Las excursiones se hacen sin cambiar de alojamiento y el ritmo deja espacio para pasear por cada ciudad.",
+  "introShort": "Barcelona y Figueres abren un recorrido entre Gaudí y Dalí. Después llegan Madrid, Zamora y Toledo, la Alhambra de Granada y el patrimonio de Sevilla y Córdoba. Lisboa, Belém y los palacios de Sintra cierran el viaje.",
+  "introHighlights": [
+    "Barcelona",
+    "Figueres",
+    "Madrid",
+    "Zamora",
+    "Toledo",
+    "Alhambra",
+    "Granada",
+    "Sevilla",
+    "Córdoba",
+    "Lisboa",
+    "Belém",
+    "Sintra"
+  ],
+  "profile": {
+    "pace": "Moderado–activo",
+    "solo": "Fácil",
+    "weather": "Media",
+    "why": "Cinco alojamientos, excursiones sin maleta y cuatro cambios de hotel; alternar visitas de entrada y paseos."
+  },
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Moderado–activo",
+      "tone": "orange",
+      "text": "Viaje individual con cuatro cambios de alojamiento y excursiones en tren o autobús. Se priorizan conexiones sencillas, caminatas moderadas y descansos."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Español y portugués · EUR",
+      "tone": "green",
+      "text": "España: español y lenguas regionales; Portugal: portugués. El inglés ayuda en servicios turísticos. Moneda común: euro (EUR). Pagar en EUR, evitando conversión dinámica a MXN."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Verificar antes de viajar",
+      "tone": "orange",
+      "text": "Pasaporte mexicano: verificar vigencia y requisitos Schengen antes de viajar; comprobar el estado oficial de ETIAS y EES en 2027, y requisitos de tránsito si el vuelo hace escala. España y Portugal usan 230 V/50 Hz y enchufes C/F; se requiere adaptador de clavija mexicana A/B a C/F, con tierra cuando corresponda. Comprobar INPUT 100–240 V: un adaptador no convierte voltaje."
+    }
+  ],
+  "climate": null,
   "experiences": [
-    "El románico de Zamora y un paseo junto al Duero con tiempo propio.",
-    "Palacios de Sintra entre jardines, escalinatas y bosque.",
-    "Patios del Alcázar, la Mezquita de Córdoba y arte nazarí en la Alhambra.",
-    "Pastéis en Belém, una noche por Alfama y flamenco en Sevilla.",
-    "Las formas de Gaudí en Barcelona y el universo de Dalí en Figueres."
-  ]
+    {
+      "city": "Barcelona y Figueres",
+      "description": "Contemplar la Sagrada Família y Sant Pau, recorrer Park Güell y visitar el Teatro-Museo Dalí en Figueres; reservar los interiores modernistas selectivamente."
+    },
+    {
+      "city": "Madrid y Zamora",
+      "description": "Recorrer Madrid durante San Isidro y dedicar un día al románico de Zamora, la Catedral y los paseos junto al Duero."
+    },
+    {
+      "city": "Toledo",
+      "description": "Entrar en su Catedral y seguir las calles de la Judería hacia San Juan de los Reyes, con tiempo para apreciar la ciudad sobre el Tajo."
+    },
+    {
+      "city": "Granada",
+      "description": "Visitar los Palacios Nazaríes, la Alcazaba y el Generalife de la Alhambra antes de contemplar sus vistas desde el Albaicín."
+    },
+    {
+      "city": "Sevilla y Córdoba",
+      "description": "Explorar los patios del Real Alcázar, subir a la Giralda y dedicar una excursión a los arcos de la Mezquita-Catedral de Córdoba."
+    },
+    {
+      "city": "Lisboa y Sintra",
+      "description": "Pasear por Alfama y Belém, visitar el monasterio de los Jerónimos y recorrer los jardines de Quinta da Regaleira y el Palacio da Pena."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-05-08",
+      "title": "Salida desde Ciudad de México",
+      "base": "En vuelo",
+      "am": "Salida internacional hacia Barcelona; vuelo exacto pendiente.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 2,
+      "date": "2027-05-09",
+      "title": "Llegada y barrios históricos",
+      "base": "Barcelona",
+      "am": "Gótico y Born, según llegada y energía.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 3,
+      "date": "2027-05-10",
+      "title": "Gaudí y modernismo",
+      "base": "Barcelona",
+      "am": "Sagrada Família y Recinte Modernista de Sant Pau.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 4,
+      "date": "2027-05-11",
+      "title": "Figueres y Dalí",
+      "base": "Barcelona",
+      "am": "Excursión en tren al Teatro-Museo Dalí y regreso a Barcelona.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 5,
+      "date": "2027-05-12",
+      "title": "Park Güell y Passeig de Gràcia",
+      "base": "Barcelona",
+      "am": "Park Güell; Casa Batlló y Casa Milà como alternativas interiores.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 6,
+      "date": "2027-05-13",
+      "title": "Barcelona a Madrid",
+      "base": "Madrid",
+      "am": "Tren de alta velocidad por corredor Barcelona–Madrid; paseo por Madrid de los Austrias.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 7,
+      "date": "2027-05-14",
+      "title": "Zamora y el Duero",
+      "base": "Madrid",
+      "am": "Excursión de día en tren a Zamora: Catedral, románico y ribera del Duero.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 8,
+      "date": "2027-05-15",
+      "title": "San Isidro en Madrid",
+      "base": "Madrid",
+      "am": "Celebraciones locales y recorridos urbanos; agenda 2027 por confirmar.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 9,
+      "date": "2027-05-16",
+      "title": "Toledo, tres culturas",
+      "base": "Madrid",
+      "am": "Excursión en tren a Toledo: Catedral, Judería y San Juan de los Reyes.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 10,
+      "date": "2027-05-17",
+      "title": "Llegada a Granada",
+      "base": "Granada",
+      "am": "Vuelo Madrid–Granada para evitar trenes Madrid–Andalucía; Carrera del Darro.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 11,
+      "date": "2027-05-18",
+      "title": "La Alhambra y Albaicín",
+      "base": "Granada",
+      "am": "Alhambra, Generalife, Palacios Nazaríes y Albaicín.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 12,
+      "date": "2027-05-19",
+      "title": "Traslado a Sevilla",
+      "base": "Sevilla",
+      "am": "Autobús directo Granada–Sevilla; tarde en Santa Cruz.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 13,
+      "date": "2027-05-20",
+      "title": "Real Alcázar y Triana",
+      "base": "Sevilla",
+      "am": "Visita al Real Alcázar, jardines y barrio de Triana.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 14,
+      "date": "2027-05-21",
+      "title": "Córdoba",
+      "base": "Sevilla",
+      "am": "Autobús de ida y vuelta Sevilla–Córdoba; Mezquita-Catedral, Judería y Puente Romano.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 15,
+      "date": "2027-05-22",
+      "title": "Catedral, Giralda y flamenco",
+      "base": "Sevilla",
+      "am": "Catedral, Giralda, Plaza de España y espectáculo de flamenco opcional.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 16,
+      "date": "2027-05-23",
+      "title": "Sevilla a Lisboa",
+      "base": "Lisboa",
+      "am": "Vuelo directo previsto; Baixa y Chiado según llegada.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 17,
+      "date": "2027-05-24",
+      "title": "Palacios de Sintra",
+      "base": "Lisboa",
+      "am": "Tren a Sintra, Palacio da Pena y Quinta da Regaleira.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 18,
+      "date": "2027-05-25",
+      "title": "Belém",
+      "base": "Lisboa",
+      "am": "Monasterio de los Jerónimos, ribera y pastéis de Belém.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 19,
+      "date": "2027-05-26",
+      "title": "Alfama y miradores",
+      "base": "Lisboa",
+      "am": "Castelo de São Jorge, Alfama y miradores; fado opcional.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 20,
+      "date": "2027-05-27",
+      "title": "Regreso a México",
+      "base": "En vuelo",
+      "am": "Vuelo desde Lisboa con conexión a Ciudad de México; itinerario por cotizar.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    }
+  ],
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Ninguna entrada ni transporte está comprado. Horarios, cupos y tarifas de mayo de 2027 están pendientes. Priorizar Alhambra, Sagrada Família, Teatro-Museo Dalí, Real Alcázar, Pena y Jerónimos."
+  },
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Alhambra · 18 de mayo de 2027",
+          "description": "Entrada general con hora para los Palacios Nazaríes. Sin comprar; comprobar apertura de ventas y horarios.",
+          "links": [
+            {
+              "label": "Patronato de la Alhambra",
+              "url": "https://www.alhambra-patronato.es/"
+            }
+          ]
+        },
+        {
+          "title": "Sagrada Família · 10 de mayo de 2027",
+          "description": "Horario sujeto a disponibilidad; sin comprar.",
+          "links": [
+            {
+              "label": "Entradas oficiales",
+              "url": "https://sagradafamilia.org/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Teatro-Museo Dalí · 11 de mayo",
+          "description": "Coordinar tren de ida y vuelta con el horario de entrada.",
+          "links": [
+            {
+              "label": "Fundación Dalí",
+              "url": "https://www.salvador-dali.org/es/visita/teatro-museo-dali/"
+            }
+          ]
+        },
+        {
+          "title": "Real Alcázar · 20 de mayo",
+          "description": "Reservar entrada de fecha y hora una vez publicados los cupos.",
+          "links": [
+            {
+              "label": "Real Alcázar",
+              "url": "https://www.alcazarsevilla.org/"
+            }
+          ]
+        },
+        {
+          "title": "Palacio da Pena · 24 de mayo",
+          "description": "Elegir modalidad y horario; coordinar con Quinta da Regaleira.",
+          "links": [
+            {
+              "label": "Parques de Sintra",
+              "url": "https://www.parquesdesintra.pt/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Jerónimos · 25 de mayo",
+          "description": "Visita prevista martes para evitar el cierre habitual de los lunes.",
+          "links": [
+            {
+              "label": "Museos y monumentos de Portugal",
+              "url": "https://www.museusemonumentos.pt/"
+            }
+          ]
+        }
+      ]
+    ]
+  ],
+  "flight": "Hipótesis: MEX→Barcelona el 8 de mayo con llegada el 9; regreso Lisboa→MEX el 27 de mayo con conexión protegida. Por cotizar en Google Flights. Ninguna tarifa comprada. Alternativa: invertir ruta y comparar multicity.",
+  "local": "Barcelona→Madrid por tren; Madrid→Granada por avión (evitar ferrocarril Madrid–Andalucía); Granada→Sevilla por autobús; Sevilla→Lisboa por avión. Figueres, Zamora, Toledo y Sintra en tren; Córdoba en autobús de ida y vuelta. Validar cada sentido, estaciones, horarios y equipaje.",
+  "majorTransport": [],
+  "ticketNotes": [
+    "Priorizar trenes solo en corredores no excluidos: Barcelona–Madrid, Barcelona–Figueres, Madrid–Zamora, Madrid–Toledo y Lisboa–Sintra.",
+    "Evitar trenes por el corredor Madrid–Andalucía y preferir autobús Sevilla–Córdoba en ambos sentidos.",
+    "Vuelos y horarios aún sin cotizar; elegir conexiones protegidas y contar traslados puerta a puerta."
+  ],
+  "hotels": [],
+  "stays": [
+    [
+      "Barcelona · 9–13 mayo · 4 noches",
+      "Eixample Esquerra o Sant Antoni; conectado con Barcelona-Sants."
+    ],
+    [
+      "Madrid · 13–17 mayo · 4 noches",
+      "Alonso Martínez o Chamberí, con acceso a Chamartín y Atocha."
+    ],
+    [
+      "Granada · 17–19 mayo · 2 noches",
+      "Centro o Plaza Nueva, evitando cuestas con equipaje."
+    ],
+    [
+      "Sevilla · 19–23 mayo · 4 noches",
+      "Puerta de Jerez o Arenal."
+    ],
+    [
+      "Lisboa · 23–27 mayo · 4 noches",
+      "Rossio o Restauradores, acceso a Sintra."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Barcelona",
+      "coords": [
+        41.3874,
+        2.1686
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Figueres",
+      "coords": [
+        42.2666,
+        2.9614
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Madrid",
+      "coords": [
+        40.4168,
+        -3.7038
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Zamora",
+      "coords": [
+        41.5033,
+        -5.7446
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Toledo",
+      "coords": [
+        39.8628,
+        -4.0273
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 5
+    },
+    {
+      "name": "Granada",
+      "coords": [
+        37.1773,
+        -3.5986
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 6
+    },
+    {
+      "name": "Sevilla",
+      "coords": [
+        37.3891,
+        -5.9845
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 7
+    },
+    {
+      "name": "Córdoba",
+      "coords": [
+        37.8882,
+        -4.7794
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 8
+    },
+    {
+      "name": "Lisboa",
+      "coords": [
+        38.7223,
+        -9.1393
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 9
+    },
+    {
+      "name": "Sintra",
+      "coords": [
+        38.8029,
+        -9.3817
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 10
+    }
+  ],
+  "seasonality": {
+    "summary": "Mayo y septiembre–octubre son ventanas candidatas para temperaturas moderadas, evitando el calor extremo del verano. Faltan temperaturas locales verificadas para las doce tarjetas.",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": null
+      },
+      "11": {
+        "status": "pending",
+        "description": null
+      },
+      "12": {
+        "status": "pending",
+        "description": null
+      },
+      "01": {
+        "status": "pending",
+        "description": null
+      },
+      "02": {
+        "status": "pending",
+        "description": null
+      },
+      "03": {
+        "status": "pending",
+        "description": null
+      },
+      "04": {
+        "status": "pending",
+        "description": null
+      },
+      "05": {
+        "status": "pending",
+        "description": null
+      },
+      "06": {
+        "status": "pending",
+        "description": null
+      },
+      "07": {
+        "status": "pending",
+        "description": null
+      },
+      "08": {
+        "status": "pending",
+        "description": null
+      },
+      "09": {
+        "status": "pending",
+        "description": null
+      }
+    }
+  },
+  "expenses": [
+    {
+      "id": "estimate-1",
+      "category": "flights",
+      "concept": "Vuelos internacionales y europeos",
+      "cost": {
+        "amount": 27000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+    },
+    {
+      "id": "estimate-2",
+      "category": "lodging",
+      "concept": "Alojamiento · 18 noches",
+      "cost": {
+        "amount": 35000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+    },
+    {
+      "id": "estimate-3",
+      "category": "transport",
+      "concept": "Trenes y autobuses interurbanos",
+      "cost": {
+        "amount": 7500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+    },
+    {
+      "id": "estimate-4",
+      "category": "transport",
+      "concept": "Transporte urbano y aeropuertos",
+      "cost": {
+        "amount": 4000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+    },
+    {
+      "id": "estimate-5",
+      "category": "food",
+      "concept": "Alimentación · 20 días",
+      "cost": {
+        "amount": 12500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+    },
+    {
+      "id": "estimate-6",
+      "category": "activities",
+      "concept": "Entradas y experiencias",
+      "cost": {
+        "amount": 8000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+    },
+    {
+      "id": "estimate-7",
+      "category": "misc",
+      "concept": "Seguro y contingencias",
+      "cost": {
+        "amount": 5500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Escenario objetivo de planeación; no cotizado ni comprado."
+    }
+  ],
+  "costs": [
+    [
+      "Vuelos internacionales y europeos",
+      20000,
+      34000
+    ],
+    [
+      "18 noches de alojamiento",
+      28000,
+      43000
+    ],
+    [
+      "Trenes y autobuses interurbanos",
+      5000,
+      10000
+    ],
+    [
+      "Transporte urbano y aeropuertos",
+      3000,
+      6000
+    ],
+    [
+      "Alimentación",
+      10000,
+      15000
+    ],
+    [
+      "Entradas",
+      6000,
+      10000
+    ],
+    [
+      "Seguro y contingencias",
+      4000,
+      7000
+    ]
+  ],
+  "budgetRange": [
+    76000,
+    125000
+  ],
+  "budgetPreliminary": true,
+  "budgetNote": "Proyección integral de $76,000–$125,000 MXN; escenario objetivo $99,500 MXN según sumas de gastos estimados. No hay cotizaciones de mayo 2027. No sumar budgetRange nuevamente a expenses.",
+  "sourceNote": "Borrador de diseño: 1 noviembre 2026. No hay reservas ni tarifas confirmadas de mayo 2027.",
+  "tips": [
+    "Ventanas alternativas para recotizar: 8–23 de mayo de 2027 (compacta); 8–30 mayo (extendida); 4–23 septiembre; 18 septiembre–7 octubre; 2–21 octubre (conflicto potencial con Japón 2027). La ventana principal es 8–27 mayo.",
+    "Segovia es opcional y sustituiría tiempo propio de Madrid; no agregarla a las excursiones de Zamora y Toledo sin reevaluar el ritmo.",
+    "Restricción personal: no usar el corredor ferroviario Madrid–Andalucía; comprobar el trazado exacto antes de comprar servicios regionales.",
+    "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa."
+  ],
+  "sources": [
+    [
+      "Renfe",
+      "https://www.renfe.com/"
+    ],
+    [
+      "ALSA",
+      "https://www.alsa.es/"
+    ],
+    [
+      "Patronato Alhambra",
+      "https://www.alhambra-patronato.es/"
+    ],
+    [
+      "Sagrada Família",
+      "https://sagradafamilia.org/"
+    ],
+    [
+      "Turismo Lisboa",
+      "https://www.visitlisboa.com/"
+    ]
+  ],
+  "cover": null,
+  "exchangeRates": {},
+  "exchangeRateSnapshot": null,
+  "heroLodgingSummary": "18 noches, 5 alojamientos"
 }
