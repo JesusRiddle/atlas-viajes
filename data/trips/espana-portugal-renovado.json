@@ -251,7 +251,7 @@
       "pm": null,
       "night": null,
       "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "note": "• *Toledo en domingo:* Verificar horario turístico de la Catedral por los oficios religiosos; si abre tarde, empezar por la Judería y San Juan de los Reyes.\n• *Regreso:* Conservar margen para volver a Madrid sin comprometer el vuelo del lunes.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -265,7 +265,7 @@
       "pm": null,
       "night": null,
       "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "note": "• *Vuelo Madrid–Granada:* No asumir llegada a primera hora; considerar aeropuerto, facturación de maleta y traslado al centro.\n• *Plan B:* Si se retrasa el vuelo, limitar la tarde al casco histórico y descansar antes de la Alhambra.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -279,7 +279,7 @@
       "pm": null,
       "night": null,
       "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "note": "• *Entrada crítica:* La hora impresa para los Palacios Nazaríes es obligatoria; no concentrar todas las zonas del recinto en una franja demasiado corta.\n• *Ritmo:* Albaicín solo al atardecer si quedan tiempo y energía; priorizar la Alhambra.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -321,7 +321,7 @@
       "pm": null,
       "night": null,
       "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "note": "• *Autobuses:* Comprobar ida y regreso Sevilla–Córdoba antes de elegir hora de la Mezquita-Catedral.\n• *Plan B:* Si hay pocos servicios, conservar Mezquita-Catedral y Judería y omitir visitas secundarias.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -335,7 +335,7 @@
       "pm": null,
       "night": null,
       "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "note": "• *Sábado:* Consultar horarios turísticos de Catedral y Giralda, condicionados por cultos y eventos.\n• *Ritmo:* Plaza de España y flamenco pueden ser flexibles según calor y disponibilidad.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -349,7 +349,7 @@
       "pm": null,
       "night": null,
       "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "note": "• *Diferencia horaria:* Portugal tiene una hora menos que España peninsular; confirmar horarios locales y traslado desde el aeropuerto.\n• *Plan B:* Si el vuelo llega tarde, dejar Baixa y Chiado para el día siguiente.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -363,7 +363,7 @@
       "pm": null,
       "night": null,
       "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "note": "• *Sintra:* Pena y Regaleira son dos visitas extensas con subidas y traslados; reservar franjas compatibles y priorizar Pena si falta tiempo.\n• *Acceso:* El tren a Sintra no incluye transporte de subida al Palacio da Pena.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -407,7 +407,7 @@
       "pm": null,
       "night": null,
       "mobility": null,
-      "note": "Borrador de alto nivel: horarios, reservas, costos y secuencia detallada pendientes.",
+      "note": "• *Regreso internacional:* Comprobar billete LIS–MEX con escala protegida, la hora efectiva de llegada a México y posible necesidad de salir del hotel antes del amanecer.\n• *Vacaciones:* No considerar garantizada la llegada el jueves hasta seleccionar vuelo.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -415,7 +415,7 @@
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Todas las visitas y desplazamientos están SIN COMPRAR; precios, ventas, cupos, cierres excepcionales y horarios exactos de 2027 por confirmar. Orden sugerido: primero Alhambra, después Sagrada Família y Palacio da Pena, luego Dalí/Alcázar/Regaleira/Mezquita; finalmente experiencias flexibles. Una reserva de transporte o alojamiento todavía no garantiza la entrada a un monumento. No convertir esta lista de previsiones en compras. Comprobar cambios, cancelaciones y acceso nominativo en cada enlace oficial."
+    "reservationNote": "Todas las visitas y desplazamientos están SIN COMPRAR; precios, ventas, cupos, cierres excepcionales y horarios exactos de 2027 por confirmar. Orden sugerido: primero Alhambra, después Sagrada Família y Palacio da Pena, luego Dalí/Alcázar/Regaleira/Mezquita; finalmente experiencias flexibles. Una reserva de transporte o alojamiento todavía no garantiza la entrada a un monumento. No convertir esta lista de previsiones en compras. Comprobar cambios, cancelaciones y acceso nominativo en cada enlace oficial. Orden crítico de compras: Alhambra y vuelos internacionales antes de comprometer hoteles no reembolsables; ajustar Sintra y Córdoba a los transportes disponibles."
   },
   "reservations": [
     [
@@ -1828,7 +1828,7 @@
     "referenceFlightMXN": 20500,
     "useBudgetRange": true
   },
-  "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto.",
+  "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto. Riesgos aún no cotizados: maleta en los dos vuelos europeos, suplementos o impuestos municipales de hoteles, transporte de subida en Sintra y conexiones aeroportuarias. Antes de considerar el rango confiable comparar los vuelos internacionales de fechas reales; $20,500 MXN puede resultar insuficiente para itinerario multidestino. Evitar crear gastos adicionales ya cubiertos por las categorías provisionales.",
   "sourceNote": "Consulta editorial y monetaria del 1/11/2026. EUR/MXN del BCE a 30/10/2026: 21.1237, última referencia hábil disponible. Horas solares calculadas para mayo 2027 y clima histórico, sin pronóstico. Todos los precios de viaje en MXN son provisiones no cotizadas.",
   "tips": [
     "Segovia es opcional y sustituiría tiempo propio de Madrid; no agregarla a las excursiones de Zamora y Toledo sin reevaluar el ritmo.",
