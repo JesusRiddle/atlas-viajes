@@ -10,6 +10,12 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 4. Marcar expresamente «confirmado», «referencia de otra fecha», «estimado», «pendiente» y «comprado». Nunca presentar un horario de 2026 como servicio confirmado de 2027.
 5. Crear **matriz económica** desde que se conozca el vuelo: vuelo, alojamientos por noches, alimentos, transportes de cada sentido, entradas prioritarias, impuestos, tasas, extras y contingencia. Separar subtotal cotizado de presupuesto estimado global; usar EUR y conversión MXN con fuente y fecha.
 
+## Portada e introducciones
+- [ ] Redactar `intro` (70–130 palabras) para «La esencia de tu recorrido» e `introShort` (30–45 palabras) para cada nuevo viaje completo.
+- [ ] Comprobar que `introShort` resume ciudades, monumentos y experiencias sin mezclar fechas, alojamientos, vuelos, precios ni logística.
+- [ ] Verificar que la tarjeta de inicio renderiza `introShort` completo y la sección Panorama sigue mostrando `intro`, también en móvil.
+- [ ] En borradores mínimos ambos campos pueden permanecer `null`; el editor debe completarlos antes de publicar.
+
 ## Trabajo por lotes (evitar microfases)
 1. **Bloque A · Logística completa:** obtener/verificar de una vez todas las alternativas de tren, autobús, vuelo y transbordos. Los enlaces no protegidos o ajustados requieren márgenes explícitos (preferentemente >=20 minutos en cambios de tren, salvo justificación y confirmación). Registrar fuentes oficiales, fecha de referencia, estaciones exactas y opciones válidas de respaldo.
 2. **Bloque B · Contenido y coherencia:** redactar los días en conjunto, comparar secuencia, duración, apertura de museos, hoteles, pausas y traslados. No introducir duplicados entre texto libre y datos estructurados.
