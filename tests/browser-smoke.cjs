@@ -31,7 +31,7 @@ const assert = require('node:assert/strict');
         assert.ok(overflow <= 3, id + ' horizontal overflow ' + overflow + ' at ' + viewport.width);
       }
       // Dedicated master-trip visual and functional regression.
-      await page.goto('http://127.0.0.1:8765/#viaje/emilia-romana', { waitUntil: 'domcontentloaded' });
+      await page.goto('http://127.0.0.1:8765/#viaje/italia-norte-2027', { waitUntil: 'domcontentloaded' });
       await page.locator('#plan .overview-editorial').waitFor();
       assert.equal(await page.locator('#temporadas .season-month').count(), 12);
       assert.ok(await page.locator('#experiencias .experience-card').count() >= 7);
@@ -40,11 +40,11 @@ const assert = require('node:assert/strict');
       assert.equal(await page.locator('#dias details.day').count(), 12);
       assert.ok(await page.locator('#costes .budget-ledger').count() >= 1);
       assert.ok(await page.locator('#traslados .mt-card').count() >= 1);
-      const navigation = page.locator('.subnav a[href="#viaje/emilia-romana/temporadas"]');
+      const navigation = page.locator('.subnav a[href="#viaje/italia-norte-2027/temporadas"]');
       assert.equal(await navigation.count(), 1);
       await navigation.click();
       await page.waitForTimeout(150);
-      assert.equal(new URL(page.url()).hash, '#viaje/emilia-romana/temporadas');
+      assert.equal(new URL(page.url()).hash, '#viaje/italia-norte-2027/temporadas');
       await page.locator('#expand').click();
       assert.equal(await page.locator('#dias details.day[open]').count(), 0);
       await page.locator('#expand').click();
