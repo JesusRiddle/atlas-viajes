@@ -300,7 +300,7 @@
         "rail-mad-zam"
       ],
       "hotel": "mad-bb-sol",
-      "mobilityLinks": [
+      "noteLinks": [
         {
           "label": "Gastronomía de Zamora · turismo oficial",
           "url": "https://www.turismo.zamora.es/gastronomia-zamorana-1-2.html"
@@ -449,7 +449,7 @@
       ],
       "spend": null,
       "hotel": "svq-don-paco",
-      "mobilityLinks": [
+      "noteLinks": [
         {
           "label": "Espinacas con garbanzos · turismo de Sevilla",
           "url": "https://www.legacy.visitasevilla.es/las-tapas/espinacas-con-garbanzos"
@@ -605,7 +605,7 @@
       ],
       "spend": null,
       "hotel": "lis-gat-rossio",
-      "mobilityLinks": [
+      "noteLinks": [
         {
           "label": "Lisboa · turismo y gastronomía",
           "url": "https://www.visitlisboa.com/"
@@ -2002,7 +2002,29 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica. Provisión distribuida entre los 20 días únicamente para el desglose diario; no se suma por segunda vez.",
+      "dates": [
+        "2027-05-08",
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12",
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16",
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20",
+        "2027-05-21",
+        "2027-05-22",
+        "2027-05-23",
+        "2027-05-24",
+        "2027-05-25",
+        "2027-05-26",
+        "2027-05-27"
+      ]
     },
     {
       "id": "food",
@@ -2013,7 +2035,29 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Presupuesto alimentario estimado para las 20 jornadas, incluyendo desayunos, comidas, cenas y degustaciones locales. No representa precios de restaurantes verificados."
+      "notes": "Presupuesto alimentario estimado para las 20 jornadas, incluyendo desayunos, comidas, cenas y degustaciones locales. No representa precios de restaurantes verificados. Provisión distribuida entre los 20 días únicamente para el desglose diario; no se suma por segunda vez.",
+      "dates": [
+        "2027-05-08",
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12",
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16",
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20",
+        "2027-05-21",
+        "2027-05-22",
+        "2027-05-23",
+        "2027-05-24",
+        "2027-05-25",
+        "2027-05-26",
+        "2027-05-27"
+      ]
     },
     {
       "id": "activities",
@@ -2024,7 +2068,29 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Bolsa estimada para monumentos y actividades principales (Sagrada Família, Sant Pau, Dalí, Park Güell, Alhambra, Alcázar, Mezquita-Catedral, Sintra, Jerónimos, Catedral/Giralda, etc.). No es una cotización individual ni cubre necesariamente todas las visitas interiores opcionales."
+      "notes": "Bolsa estimada para monumentos y actividades principales (Sagrada Família, Sant Pau, Dalí, Park Güell, Alhambra, Alcázar, Mezquita-Catedral, Sintra, Jerónimos, Catedral/Giralda, etc.). No es una cotización individual ni cubre necesariamente todas las visitas interiores opcionales. Provisión distribuida entre los 20 días únicamente para el desglose diario; no se suma por segunda vez.",
+      "dates": [
+        "2027-05-08",
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12",
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16",
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20",
+        "2027-05-21",
+        "2027-05-22",
+        "2027-05-23",
+        "2027-05-24",
+        "2027-05-25",
+        "2027-05-26",
+        "2027-05-27"
+      ]
     },
     {
       "id": "contingency",
