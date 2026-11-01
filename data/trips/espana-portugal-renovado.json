@@ -1233,9 +1233,18 @@
     }
   ],
   "ticketNotes": [
-    "Antes de comprar, comparar el precio total con equipaje y las condiciones de cambios o reembolsos de cada tarifa aérea, ferroviaria y de autobús.",
-    "En excursiones de ida y vuelta, adquirir ambos sentidos y revisar estaciones de salida y llegada, validación y margen entre conexiones.",
-    "Para servicios internacionales, preferir un único billete con conexión protegida; confirmar requisitos de tránsito y equipaje antes de pagar."
+    {
+      "title": "Vuelos",
+      "note": "Comparar equipaje, cambios y conexiones protegidas antes de comprar."
+    },
+    {
+      "title": "Trenes",
+      "note": "Confirmar estaciones, operadores y billetes de ida y regreso."
+    },
+    {
+      "title": "Autobuses",
+      "note": "Comprobar horarios de ambos sentidos, equipaje y condiciones de billete."
+    }
   ],
   "hotels": [
     {
