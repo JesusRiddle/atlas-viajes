@@ -89,10 +89,17 @@ window.AtlasBudgetTable = (() => {
             const optionalSubtotal = optional.reduce((sum, item) => sum + (budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN) ?? 0), 0);
             markup.push('<tr class="budget-subtotal"><td>Subtotal opcional · no incluido</td><td></td><td class="budget-amount">' + pesos(optionalSubtotal) + '</td></tr>');
         }
-        markup.push('<tr class="totalrow"><td>Subtotal terrestre estimado · sin vuelo</td><td></td><td class="budget-amount">' +
-            pesos(result.knownTotalMXN) + '</td></tr>');
-        if (referenceFlightMXN !== null) markup.push('<tr class="totalrow"><td>Estimación global · terrestre + vuelo de referencia (sin duplicar trenes)</td><td></td><td class="budget-amount">' +
-            pesos(result.knownTotalMXN + referenceFlightMXN) + '</td></tr>');
+        const modernEstimate = trip.budgetPreliminary?.useBudgetRange === true;
+        if (modernEstimate) {
+            // currentSummary already includes the selected international flight exactly once.
+            markup.push('<tr class="totalrow"><td>Total estimado del viaje</td><td></td><td class="budget-amount">' +
+                pesos(result.knownTotalMXN) + '</td></tr>');
+        } else {
+            markup.push('<tr class="totalrow"><td>Subtotal terrestre estimado · sin vuelo</td><td></td><td class="budget-amount">' +
+                pesos(result.knownTotalMXN) + '</td></tr>');
+            if (referenceFlightMXN !== null) markup.push('<tr class="totalrow"><td>Estimación global · terrestre + vuelo de referencia (sin duplicar trenes)</td><td></td><td class="budget-amount">' +
+                pesos(result.knownTotalMXN + referenceFlightMXN) + '</td></tr>');
+        }
         return {
             html: markup.join(''),
             note: 'Todos los importes son estimaciones de planeación. Los vuelos se presentan como referencia y se agregan una sola vez al total global; el transporte interurbano y urbano ya incluye los trenes, autobuses y demás traslados terrestres previstos.',
@@ -104,15 +111,23 @@ window.AtlasBudgetTable = (() => {
         const data = rows(trip);
         const range = data.result.planningRangeMXN;
         const planning = budget.planningEstimate?.(trip);
+        const modernEstimate = trip.budgetPreliminary?.useBudgetRange === true;
+        const effectiveRange = planning ? [planning.low, planning.high] : range;
         return '<div class="budget-ledger" id="budget-ledger">' +
             '<div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Moneda original</th><th>MXN</th></tr></thead>' +
             '<tbody data-budget-rows>' + data.html + '</tbody></table></div>' +
-            '<p class="tiny" data-budget-note>' + esc(data.note) + '</p>' +
-            (planning ? '<p class="budget-range" data-budget-planning><strong>Proyección global de planeación:</strong> ' + pesos(planning.low) + '–' + pesos(planning.high) + ' MXN · vuelo de referencia ' + esc(planning.flightOption) + ' (' + esc(trip.budgetPreliminary?.useBudgetRange === true ? 'multidestino MEX–BCN / LIS–MEX' : (planning.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio')) + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar nuevamente al total global.</p>' : '') +
-            (range ? '<p class="budget-range"><strong>Rango estimado para planear:</strong> ' +
-                pesos(range[0]) + '–' + pesos(range[1]) + ' MXN</p>' : '') +
+            (modernEstimate
+                ? '<p class="budget-range" data-budget-planning><strong>Rango estimado:</strong> ' +
+                    pesos(effectiveRange[0]) + '–' + pesos(effectiveRange[1]) +
+                    ' MXN · importes orientativos, sin reservas.</p>'
+                : '<p class="tiny" data-budget-note>' + esc(data.note) + '</p>' +
+                    (planning ? '<p class="budget-range" data-budget-planning><strong>Proyección global de planeación:</strong> ' +
+                        pesos(planning.low) + '–' + pesos(planning.high) + ' MXN</p>' : '') +
+                    (range ? '<p class="budget-range"><strong>Rango estimado para planear:</strong> ' +
+                        pesos(range[0]) + '–' + pesos(range[1]) + ' MXN</p>' : '')) +
             '</div>';
     }
+
     function mount(root, trip) {
         const host = root.querySelector('#budget-ledger');
         if (!host) return () => {};
@@ -141,10 +156,12 @@ window.AtlasBudgetTable = (() => {
             if (!host.isConnected) return;
             const next = rows(trip);
             host.querySelector('[data-budget-rows]').innerHTML = next.html;
-            host.querySelector('[data-budget-note]').textContent = next.note;
+            const note = host.querySelector('[data-budget-note]');
+            if (note) note.textContent = next.note;
             const projection = host.querySelector('[data-budget-planning]');
             const updated = budget.planningEstimate?.(trip);
-            if (projection && updated) projection.innerHTML = '<strong>Proyección global de planeación:</strong> ' + pesos(updated.low) + '–' + pesos(updated.high) + ' MXN · vuelo de referencia ' + esc(updated.flightOption) + ' (' + esc(updated.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio') + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar al subtotal registrado.';
+            if (projection && updated && trip.budgetPreliminary?.useBudgetRange === true) projection.innerHTML = '<strong>Rango estimado:</strong> ' + pesos(updated.low) + '–' + pesos(updated.high) + ' MXN · importes orientativos, sin reservas.';
+            else if (projection && updated) projection.innerHTML = '<strong>Proyección global de planeación:</strong> ' + pesos(updated.low) + '–' + pesos(updated.high) + ' MXN · vuelo de referencia ' + esc(updated.flightOption) + ' (' + esc(updated.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio') + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar al subtotal registrado.';
             applyCollapsed();
         };
         const unsubscribe = selections.subscribe(tripId => { if (tripId === trip.id) refresh(); });
