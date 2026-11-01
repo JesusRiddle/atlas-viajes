@@ -19,9 +19,9 @@ test('paso 17: alta real desde cero, edición gradual y normalización, sin toca
     assert.equal(run.status,0,run.stderr);
     const file = path.join(root,'data','trips','viaje-prueba.json');
     const draft = JSON.parse(fs.readFileSync(file,'utf8'));
-    assert.deepEqual(draft,{id:'viaje-prueba',name:'Viaje de prueba',status:'draft'});
+    assert.deepEqual(draft,{id:'viaje-prueba',name:'Viaje de prueba',status:'draft',intro:null,introShort:null});
     assert.match(fs.readFileSync(path.join(root,'modules.js'),'utf8'),/"available": false/);
-    const source = {...draft,routeCities:['Destino de prueba'],days:[{n:1,title:'Llegada'}],
+    const source = {...draft,intro:'Descripción completa de un viaje de prueba.',introShort:'Resumen breve de portada.',routeCities:['Destino de prueba'],days:[{n:1,title:'Llegada'}],
       experiences:['Paseo sin reserva'],costs:[['Transporte',null,null]],
       seasonality:{months:{'02':{status:'recommended',description:'Valoración de prueba'}}}};
     fs.writeFileSync(file,JSON.stringify(source,null,2));
@@ -32,6 +32,8 @@ test('paso 17: alta real desde cero, edición gradual y normalización, sin toca
     vm.runInNewContext(fs.readFileSync('loader.js','utf8'),{window,fetch});
     const normalized=(await window.ATLAS_READY).trips[0];
     assert.equal(normalized.days.length,1);
+    assert.equal(normalized.introShort,'Resumen breve de portada.');
+    assert.equal(normalized.intro,'Descripción completa de un viaje de prueba.');
     assert.equal(normalized.costs[0][1],null);
     assert.equal(normalized.seasonality.months['01'].status,'pending');
     assert.equal(normalized.seasonality.months['02'].status,'recommended');
