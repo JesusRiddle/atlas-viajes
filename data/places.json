@@ -4133,5 +4133,16 @@
       "license": "CC BY-SA 4.0",
       "attribution": "Manishprabhune · CC BY-SA 4.0 · Wikimedia Commons"
     }
+  },
+  "espana-portugal-2027-alfama": {
+    "name": "Alfama · Lisboa",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_the_Alfama_quarter_in_Lisbon_Portugal.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_the_Alfama_quarter_in_Lisbon_Portugal.JPG",
+      "author": "Aubry Françon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Aubry Françon"
+    }
   }
 }
