@@ -320,7 +320,6 @@ window.AtlasTrip = function (ctx) {
             ].join(''),
             experiencias: () => [
             `${experiencePanel(t)}`,
-            `${t.experienceReferenceLinks?.length ? '<div class="section wrap"><div class="entity-links">' + t.experienceReferenceLinks.map(link => '<a href="' + esc(link.url) + '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + '</a>').join('') + '</div></div>' : ''}`,
             ].join(''),
             reservas: () => [
             `${reservationPlanning(t)}`,
