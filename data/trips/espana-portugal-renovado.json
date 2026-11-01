@@ -86,7 +86,7 @@
       "text": "Pasaporte mexicano: verificar vigencia y requisitos Schengen antes de viajar; comprobar el estado oficial de ETIAS y EES en 2027, y requisitos de tránsito si el vuelo hace escala. España y Portugal usan 230 V/50 Hz y enchufes C/F; se requiere adaptador de clavija mexicana A/B a C/F, con tierra cuando corresponda. Comprobar INPUT 100–240 V: un adaptador no convierte voltaje."
     }
   ],
-  "climate": null,
+  "climate": "Mayo suele ofrecer tardes templadas en Barcelona, Madrid y Lisboa, con posibilidad de calor más marcado en Sevilla, Córdoba y Granada. En Lisboa, la media climática 1991–2020 de máximas diarias de mayo es 23,1 °C; no es un pronóstico de 2027 y el resto de ciudades puede diferir.\n\n*Qué llevar:* Calzado para adoquines y cuestas, prendas transpirables, una capa ligera para noches y trenes, impermeable plegable y protección solar. Reducir caminatas pronunciadas en Albaicín y Sintra con transporte local.\n\n*Horas de luz:* En mayo los días son largos y las visitas exteriores pueden priorizarse por la mañana o al final de la tarde. Amaneceres y atardeceres exactos por ciudad y fecha pendientes de documentar.",
   "experiences": [
     {
       "city": "Barcelona y Figueres",
@@ -620,55 +620,56 @@
     }
   ],
   "seasonality": {
-    "summary": "Mayo y septiembre–octubre son ventanas candidatas para temperaturas moderadas, evitando el calor extremo del verano. Faltan temperaturas locales verificadas para las doce tarjetas.",
+    "summary": "Viaje de ciudades patrimoniales con climas diferentes: mayo permite días largos, aunque Andalucía puede registrar calor; abril y septiembre–octubre son alternativas con compromisos por eventos, precios, lluvia y luz. Temperaturas: en las tarjetas solo aparecen intervalos cuando estén respaldados por datos climáticos de las ciudades del recorrido, no pronósticos.",
     "months": {
       "10": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Otoño moderado con más probabilidad de lluvia y menos horas de luz; revisar festividades locales."
       },
       "11": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Baja la demanda en algunos destinos, pero aumenta el riesgo de lluvia y se acortan los días."
       },
       "12": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Frío interior y días cortos; mercados y festividades pueden encarecer fechas concretas."
       },
       "01": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Invierno con días breves y frío en el interior; menor demanda turística en algunas ciudades."
       },
       "02": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Todavía frío en Madrid, Zamora y Granada; buena disponibilidad potencial fuera de eventos."
       },
       "03": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Primavera temprana variable; Semana Santa de 2027 puede alterar precios y afluencia."
       },
       "04": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "Primavera favorable, pero revisar Semana Santa y festividades de Sevilla."
       },
       "05": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "21–27 °C. Valores orientativos de máximas diurnas para distintas ciudades, NO pronóstico ni rango universal; Lisboa tiene media histórica de máximas de 23,1 °C (IPMA 1991–2020). Días largos; Andalucía puede ser más cálida.",
+        "icon": "sun"
       },
       "06": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Días largos, pero calor creciente en Sevilla y Córdoba y eventos de gran demanda en Barcelona."
       },
       "07": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Calor intenso probable en Andalucía y fuerte actividad turística en destinos principales."
       },
       "08": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Temporada vacacional y calor, particularmente desfavorables para largas caminatas andaluzas."
       },
       "09": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "Alternativa otoñal: temperaturas generalmente más moderadas, pero calor posible en Andalucía a principios de mes."
       }
     }
   },
@@ -793,13 +794,15 @@
     125000
   ],
   "budgetPreliminary": true,
-  "budgetNote": "Proyección integral de $76,000–$125,000 MXN; escenario objetivo $99,500 MXN según sumas de gastos estimados. No hay cotizaciones de mayo 2027. No sumar budgetRange nuevamente a expenses.",
+  "budgetNote": "Proyección global por categoría, MXN: vuelos $20,000–$34,000; 18 noches $28,000–$43,000; interurbanos $5,000–$10,000; urbanos y aeropuertos $3,000–$6,000; alimentación $10,000–$15,000; entradas $6,000–$10,000; seguro y contingencias $4,000–$7,000. Total $76,000–$125,000; escenario central registrado en expenses $99,500. Los vuelos internacionales y europeos están agrupados como UNA provisión en expenses hasta que haya opciones reales, nunca sumar allí alternativas de majorTransport.",
   "sourceNote": "Borrador de diseño: 1 noviembre 2026. No hay reservas ni tarifas confirmadas de mayo 2027.",
   "tips": [
     "Ventanas alternativas para recotizar: 8–23 de mayo de 2027 (compacta); 8–30 mayo (extendida); 4–23 septiembre; 18 septiembre–7 octubre; 2–21 octubre (conflicto potencial con Japón 2027). La ventana principal es 8–27 mayo.",
     "Segovia es opcional y sustituiría tiempo propio de Madrid; no agregarla a las excursiones de Zamora y Toledo sin reevaluar el ritmo.",
     "Restricción personal: no usar el corredor ferroviario Madrid–Andalucía; comprobar el trazado exacto antes de comprar servicios regionales.",
-    "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa."
+    "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa.",
+    "El escenario central de gastos es una provisión completa y no una cotización. No confundir gastos presupuestados con reservas ni contabilizar nuevamente los transportes al desglosar cada trayecto.",
+    "Control de consistencia: la salida de México del 8 de mayo implica primera noche hotelera el 9; el regreso del 27 debe comprobar llegada a MEX ese mismo día antes de cerrar las vacaciones."
   ],
   "sources": [
     [
@@ -821,6 +824,10 @@
     [
       "Turismo Lisboa",
       "https://www.visitlisboa.com/"
+    ],
+    [
+      "IPMA · climatología Lisboa 1991–2020",
+      "https://www.ipma.pt/opencms/bin/file.data/climate-normal/cn_91-20_LISBOA_GEOFISICO.pdf"
     ]
   ],
   "cover": null,
