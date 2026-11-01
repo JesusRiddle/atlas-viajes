@@ -76,7 +76,7 @@
       "title": "Idioma y moneda",
       "badge": "Español y portugués · EUR",
       "tone": "green",
-      "text": "España: español y lenguas regionales; Portugal: portugués. El inglés ayuda en servicios turísticos. Moneda común: euro (EUR). Pagar en EUR, evitando conversión dinámica a MXN."
+      "text": "En España predomina el español; en Barcelona también se habla catalán. En Portugal el idioma oficial es portugués. El inglés resulta útil en alojamientos y lugares turísticos. Moneda común: EUR (€), con referencia de €1 ≈ $21.12 MXN (BCE, 30/10/2026); pagar en euros y rechazar la conversión dinámica a pesos del terminal."
     },
     {
       "id": "entry",
@@ -86,7 +86,7 @@
       "text": "Para turismo con pasaporte mexicano, comprobar la vigencia exigida, exención de visa Schengen y justificantes de alojamiento/salida. Verificar en fuentes oficiales el estado de ETIAS y EES para mayo de 2027, así como tránsito por terceros países según el vuelo elegido. En España y Portugal se usan enchufes C/F (230 V, 50 Hz): llevar adaptador de clavija mexicana A/B a C/F, con tierra si el equipo la requiere. Confirmar INPUT 100–240 V; el adaptador no transforma voltaje."
     }
   ],
-  "climate": "Durante el 8–27 de mayo, las máximas medias históricas rondan 21 °C en Barcelona, 22 °C en Madrid, 23 °C en Lisboa y 27 °C en Sevilla (estaciones y series diferentes). Son promedios climatológicos, no pronóstico; Andalucía puede registrar episodios de calor y las noches de Castilla y Granada son más frescas.\n\n*Qué llevar:* Capas ligeras, ropa transpirable, impermeable plegable, protección solar y calzado cómodo para adoquines, cuestas y largas visitas. En Albaicín y Sintra conviene reducir subidas con transporte local cuando resulte práctico.\n\n*Horas de luz:* Mayo ofrece días largos; organizar patios, miradores y jardines en primeras horas o al final de la tarde. Amanecer y atardecer exactos por ciudad y fecha están pendientes de verificar antes del itinerario detallado.",
+  "climate": "Durante el 8–27 de mayo, las máximas medias históricas rondan 21 °C en Barcelona, 22 °C en Madrid, 23 °C en Lisboa y 27 °C en Sevilla (estaciones y series diferentes). Son promedios climatológicos, no pronóstico; Andalucía puede registrar episodios de calor y las noches de Castilla y Granada son más frescas.\n\n*Qué llevar:* Capas ligeras, ropa transpirable, impermeable plegable, protección solar y calzado cómodo para adoquines, cuestas y largas visitas. En Albaicín y Sintra conviene reducir subidas con transporte local cuando resulte práctico.\n\n*Horas de luz:* En mayo, Barcelona (9–12) amanece aproximadamente 06:39–06:36 y anochece 20:57–21:01; Madrid (13–16), 07:01–06:58 y 21:22–21:25; Lisboa (23–26), aproximadamente 06:18–06:16 y 20:48–20:50. Son horas locales calculadas para 2027 y sirven para organizar paseos, miradores y visitas exteriores; la visibilidad real depende del relieve y del tiempo. Granada y Sevilla tienen tardes largas similares, pendientes de comprobación puntual al detallar cada jornada.",
   "experiences": [
     {
       "city": "Barcelona",
@@ -1827,7 +1827,7 @@
     "useBudgetRange": true
   },
   "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto.",
-  "sourceNote": "Proyecto España + Portugal 2027 independiente. Las tarifas, horarios y candidatos de alojamiento son estimaciones sin reserva. Condiciones de monumentos comprobadas en fuentes oficiales el 1 de noviembre de 2026; revisar antes de comprar en 2027.",
+  "sourceNote": "Consulta editorial y monetaria del 1/11/2026. EUR/MXN del BCE a 30/10/2026: 21.1237, última referencia hábil disponible. Horas solares calculadas para mayo 2027 y clima histórico, sin pronóstico. Todos los precios de viaje en MXN son provisiones no cotizadas.",
   "tips": [
     "Segovia es opcional y sustituiría tiempo propio de Madrid; no agregarla a las excursiones de Zamora y Toledo sin reevaluar el ritmo.",
     "Restricción personal: no usar el corredor ferroviario Madrid–Andalucía; comprobar el trazado exacto antes de comprar servicios regionales.",
@@ -1882,11 +1882,36 @@
     [
       "Visit Lisboa · turismo y gastronomía",
       "https://www.visitlisboa.com/"
+    ],
+    [
+      "BCE · EUR/MXN 30 octubre 2026",
+      "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-mxn.en.html"
+    ],
+    [
+      "Barcelona · horas de luz mayo 2027",
+      "https://puestadelsolhoy.es/barcelona/mayo/"
+    ],
+    [
+      "Madrid · horas de luz mayo 2027",
+      "https://puestadelsolhoy.es/madrid/mayo/"
+    ],
+    [
+      "Lisboa · horas de luz mayo 2027",
+      "https://orbitnight.com/sky/lisbon/2027-05"
     ]
   ],
   "cover": null,
-  "exchangeRates": {},
-  "exchangeRateSnapshot": null,
+  "exchangeRates": {
+    "EUR": 21.1237
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-10-30",
+    "baseCurrency": "MXN",
+    "description": "Referencia BCE del último día hábil antes del 1/11/2026: €1 ≈ $21.12 MXN. Conversión orientativa, no cotización bancaria ni predicción de mayo 2027.",
+    "sources": {
+      "EUR": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-mxn.en.html"
+    }
+  },
   "heroLodgingSummary": "18 noches, 5 alojamientos",
   "attractionTerms": []
 }
