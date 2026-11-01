@@ -160,7 +160,11 @@
       "night": "1. Pasear por el entorno de Santa Maria del Mar o regresar al hotel.\n2. Cena temprana y descanso antes de la visita con horario a la Sagrada Família.",
       "mobility": "• *BCN → centro:* Comparar Aerobús, tren o metro según terminal y dirección del hotel.\n• *Gótico → Born:* Trayecto caminable, pero reducirlo si hay cansancio o equipaje.",
       "note": "• *Llegada transatlántica:* Migración y traslado pueden ocupar buena parte del día; no reservar monumentos con hora fija.\n• *Alojamiento:* Acta Splendid es candidato, sin reservar; confirmar consigna y entrada.",
-      "places": [],
+      "places": [
+        "gotico",
+        "barcelona-cathedral",
+        "born-barcelona"
+      ],
       "headerPlaces": [
         "Aeropuerto de Barcelona-El Prat (BCN)",
         "Barrio Gótico",
@@ -182,7 +186,10 @@
       "night": "1. Paseo ligero por Eixample o descanso; no encadenar otra visita interior extensa.\n2. Cena catalana: probar pa amb tomàquet o escalivada según menú disponible.",
       "mobility": "• *Hotel → Sagrada Família:* Metro o desplazamiento urbano desde Eixample/Sant Antoni.\n• *Sagrada Família → Sant Pau:* Caminar por la avenida de Gaudí, aproximadamente 1 km.",
       "note": "• *Reserva muy alta:* Elegir la Sagrada Família antes de fijar Sant Pau; acceso a torres solo si queda tiempo y se paga aparte.\n• *Plan B:* Si la basílica no ofrece cupo ese día, estudiar el miércoles 12 e intercambiar una visita.",
-      "places": [],
+      "places": [
+        "sagrada",
+        "santpau"
+      ],
       "headerPlaces": [
         "Basílica de la Sagrada Família",
         "Recinte Modernista de Sant Pau"
@@ -200,7 +207,9 @@
       "night": "1. Regresar al alojamiento de Barcelona.\n2. Cena sencilla y descanso tras la excursión de ida y vuelta.",
       "mobility": "• *Barcelona ↔ Figueres:* Tren de ida y regreso desde Barcelona-Sants a Figueres-Vilafant; horarios pendientes de publicación para 2027.\n• *Figueres-Vilafant → museo:* Comprobar bus local o taxi; la estación de alta velocidad no está junto al museo.",
       "note": "• *Reserva alta:* Coordinar entrada al museo con trenes de ambos sentidos; confirmar apertura del martes.\n• *Margen:* Evitar comprar el regreso con conexión demasiado ajustada al fin de la visita.",
-      "places": [],
+      "places": [
+        "dali-figueres"
+      ],
       "headerPlaces": [
         "Barcelona-Sants",
         "Figueres-Vilafant",
@@ -222,7 +231,11 @@
       "night": "1. Pasear por Eixample y cenar sin sumar actividades exigentes.\n2. Preparar equipaje para el traslado en tren a Madrid del jueves 13.",
       "mobility": "• *Eixample → Park Güell:* Metro y autobús o taxi; considerar pendientes y acceso a pie.\n• *Park Güell → Passeig de Gràcia:* Transporte urbano para evitar caminata larga entre zonas.",
       "note": "• *Reserva:* Park Güell requiere entrada con franja; adquirir únicamente cuando el recorrido esté confirmado.\n• *Actividad opcional:* No sumar las entradas interiores de Casa Batlló y Casa Milà como si ambas fueran obligatorias.",
-      "places": [],
+      "places": [
+        "guell",
+        "batllo",
+        "sp27-casa-mila"
+      ],
       "headerPlaces": [
         "Park Güell",
         "Passeig de Gràcia",
@@ -230,7 +243,11 @@
         "Casa Milà"
       ],
       "spend": null,
-      "hotel": "bcn-acta-splendid"
+      "hotel": "bcn-acta-splendid",
+      "optionalPlaces": [
+        "batllo",
+        "sp27-casa-mila"
+      ]
     },
     {
       "n": 6,
@@ -2055,7 +2072,7 @@
       "https://www.horapuestadesol.com/puesta-de-sol/granada/"
     ]
   ],
-  "cover": null,
+  "cover": "sagrada",
   "exchangeRates": {
     "EUR": 21.1237
   },
@@ -2070,6 +2087,15 @@
   "heroLodgingSummary": "18 noches, 5 alojamientos",
   "attractionTerms": [],
   "placeDescriptions": {
-    "espana-portugal-2027-alfama": "Desde los miradores de Alfama se distinguen tejados de teja rojiza, iglesias históricas y la ribera del Tajo, una panorámica característica de Lisboa."
+    "espana-portugal-2027-alfama": "Desde los miradores de Alfama se distinguen tejados de teja rojiza, iglesias históricas y la ribera del Tajo, una panorámica característica de Lisboa.",
+    "gotico": "Callejones medievales y plazas íntimas del corazón antiguo de Barcelona, entre arquitectura gótica y rincones históricos.",
+    "barcelona-cathedral": "La Catedral de Santa Eulalia domina el Barrio Gótico con su fachada monumental y el legado medieval de la ciudad.",
+    "born-barcelona": "El paseo del Born reúne calles históricas, cafés y edificios tradicionales para explorar a pie.",
+    "sagrada": "La basílica de Antoni Gaudí combina torres escultóricas, símbolos naturales y luz de colores.",
+    "santpau": "El conjunto modernista de Domènech i Montaner conserva pabellones, mosaicos y jardines de un hospital pionero.",
+    "dali-figueres": "El museo concebido por Dalí transforma un antiguo teatro en una experiencia surrealista de fachada y salas singulares.",
+    "guell": "El parque de Gaudí integra arquitectura, mosaicos y vegetación sobre una colina con panorámicas de Barcelona.",
+    "batllo": "La fachada ondulante de Casa Batlló y sus detalles orgánicos representan la arquitectura modernista de Gaudí.",
+    "sp27-casa-mila": "La Pedrera destaca por su fachada sinuosa y balcones de hierro forjado, obra residencial de Antoni Gaudí."
   }
 }
