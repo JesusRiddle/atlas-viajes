@@ -150,8 +150,8 @@ window.AtlasBudget = (() => {
         const flightCost = convert(fare?.price, rates);
         if (flightCost === null) return null;
         const total = round(land + flightCost);
-        return { totalMXN: total, low: Math.round(total / 1000) * 1000,
-            high: Math.ceil((total + plan.marginMXN) / 1000) * 1000,
+        return { totalMXN: total, low: plan.useBudgetRange === true && Array.isArray(trip.budgetRange) ? trip.budgetRange[0] + flightCost - (plan.referenceFlightMXN || 0) : Math.round(total / 1000) * 1000,
+            high: plan.useBudgetRange === true && Array.isArray(trip.budgetRange) ? trip.budgetRange[1] + flightCost - (plan.referenceFlightMXN || 0) : Math.ceil((total + plan.marginMXN) / 1000) * 1000,
             scenario, flightOption: option.id, referenceOnly: true };
     }
 
