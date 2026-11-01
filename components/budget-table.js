@@ -108,7 +108,7 @@ window.AtlasBudgetTable = (() => {
             '<div class="scrolltable"><table><thead><tr><th>Concepto</th><th>Moneda original</th><th>MXN</th></tr></thead>' +
             '<tbody data-budget-rows>' + data.html + '</tbody></table></div>' +
             '<p class="tiny" data-budget-note>' + esc(data.note) + '</p>' +
-            (planning ? '<p class="budget-range" data-budget-planning><strong>Proyección global de planeación:</strong> ' + pesos(planning.low) + '–' + pesos(planning.high) + ' MXN · vuelo de referencia ' + esc(planning.flightOption) + ' (' + esc(planning.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio') + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar nuevamente al total global.</p>' : '') +
+            (planning ? '<p class="budget-range" data-budget-planning><strong>Proyección global de planeación:</strong> ' + pesos(planning.low) + '–' + pesos(planning.high) + ' MXN · vuelo de referencia ' + esc(planning.flightOption) + ' (' + esc(trip.budgetPreliminary?.useBudgetRange === true ? 'multidestino MEX–BCN / LIS–MEX' : (planning.scenario === 'kix' ? 'regreso KIX' : 'regreso Tokio')) + '), sin reservar. Incluye gastos terrestres y vuelo ilustrativo; no sumar nuevamente al total global.</p>' : '') +
             (range ? '<p class="budget-range"><strong>Rango estimado para planear:</strong> ' +
                 pesos(range[0]) + '–' + pesos(range[1]) + ' MXN</p>' : '') +
             '</div>';
