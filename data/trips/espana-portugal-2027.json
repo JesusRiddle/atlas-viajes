@@ -299,7 +299,13 @@
       "transportRefs": [
         "rail-mad-zam"
       ],
-      "hotel": "mad-bb-sol"
+      "hotel": "mad-bb-sol",
+      "mobilityLinks": [
+        {
+          "label": "Gastronomía de Zamora · turismo oficial",
+          "url": "https://www.turismo.zamora.es/gastronomia-zamorana-1-2.html"
+        }
+      ]
     },
     {
       "n": 8,
@@ -442,7 +448,13 @@
         "Triana"
       ],
       "spend": null,
-      "hotel": "svq-don-paco"
+      "hotel": "svq-don-paco",
+      "mobilityLinks": [
+        {
+          "label": "Espinacas con garbanzos · turismo de Sevilla",
+          "url": "https://www.legacy.visitasevilla.es/las-tapas/espinacas-con-garbanzos"
+        }
+      ]
     },
     {
       "n": 14,
@@ -592,7 +604,13 @@
         "Alfama"
       ],
       "spend": null,
-      "hotel": "lis-gat-rossio"
+      "hotel": "lis-gat-rossio",
+      "mobilityLinks": [
+        {
+          "label": "Lisboa · turismo y gastronomía",
+          "url": "https://www.visitlisboa.com/"
+        }
+      ]
     },
     {
       "n": 20,
@@ -2128,23 +2146,5 @@
     "regaleira": "La Quinta da Regaleira es conocida por sus jardines simbólicos, grutas y pozo iniciático.",
     "jeronimos": "El Monasterio de los Jerónimos exhibe la ornamentación manuelina vinculada a la historia marítima de Portugal.",
     "belem": "La Torre de Belém es uno de los monumentos ribereños más reconocibles de Lisboa, incluso cuando la visita interior no está disponible."
-  },
-  "experienceReferenceLinks": [
-    {
-      "label": "Turismo Lisboa",
-      "url": "https://www.visitlisboa.com/"
-    },
-    {
-      "label": "Turismo de Zamora · gastronomía",
-      "url": "https://www.turismo.zamora.es/gastronomia-zamorana-1-2.html"
-    },
-    {
-      "label": "Turismo de Sevilla · espinacas con garbanzos",
-      "url": "https://www.legacy.visitasevilla.es/las-tapas/espinacas-con-garbanzos"
-    },
-    {
-      "label": "Visit Lisboa · turismo y gastronomía",
-      "url": "https://www.visitlisboa.com/"
-    }
-  ]
+  }
 }
