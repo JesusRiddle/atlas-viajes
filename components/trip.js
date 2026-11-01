@@ -373,7 +373,7 @@ window.AtlasTrip = function (ctx) {
         return sectionDefinitions.map(([id, label, title]) => {
             if (canRenderFullTrip(t) || sectionReady(t, id)) return parts[id]();
             return pendingPanel(id, title, masterPanelClass[id]);
-        }).join('') + parts.fuentes();
+        }).join('') + (legacyAdviceTripIds.has(t.id) ? parts.fuentes() : '');
     }
     // Presentación del hero: fuentes existentes, precarga gradual y pausa fuera de pantalla.
     function mountHeroSlideshow(trip) {
