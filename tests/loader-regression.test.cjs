@@ -346,37 +346,36 @@ test('el alta mínima queda oculta hasta activar el módulo y conserva los viaje
     assert.equal(atlas.trips[0].seasonality.months['01'].status, 'pending');
 });
 
-test('migración piloto preserva contenido sin copiar fechas ni precios heredados', async () => {
+test('España + Portugal 2027 se publica primero, completo y sin modificar su versión anterior', async () => {
     const catalog = loadCatalog();
-    assert.ok(catalog.filter(m => m.available).length >= 17);
-    assert.ok(catalog.some(m => m.id === 'italia-norte-2027' && m.available));
-    const module = catalog.find(m => m.id === 'espana-portugal-renovado');
-    assert.ok(module);
-    assert.equal(module.available, false);
-    const source = JSON.parse(fs.readFileSync('data/trips/espana-portugal.json','utf8'));
-    const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-renovado.json','utf8'));
-    assert.equal(migrated.name, source.name);
-    assert.deepEqual(migrated.routeCities, source.routeCities);
-    assert.deepEqual(migrated.experiences, source.experiences);
-    for (const field of ['intro','start','end','work','costs','expenses','majorTransport','days','reservations','budgetRange','hotels','stays','seasonality']) {
-        assert.equal(Object.hasOwn(migrated, field), false, field + ' should not be copied without review');
-    }
-    const template = JSON.parse(fs.readFileSync('data/trips/_template.json','utf8'));
-    const window = { ATLAS_MODULES: [{ ...module, available: true }] };
+    assert.equal(catalog[0].id, 'espana-portugal-renovado');
+    assert.equal(catalog[0].available, true);
+    assert.equal(catalog[1].id, 'italia-norte-2027');
+    assert.equal(catalog[2].id, 'japon-2027');
+    const source = JSON.parse(fs.readFileSync('data/trips/espana-portugal.json', 'utf8'));
+    const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-renovado.json', 'utf8'));
+    assert.notEqual(migrated.id, source.id);
+    assert.equal(migrated.days.length, 20);
+    assert.equal(migrated.hotels.length, 5);
+    assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 36);
+    assert.ok(migrated.cover);
+    assert.equal(migrated.budgetRange[0], 76000);
+    assert.equal(migrated.budgetRange[1], 125000);
+    const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
+    const window = { ATLAS_MODULES: [catalog[0]] };
     const sources = {
-        'data/places.json': {},
+        'data/places.json': JSON.parse(fs.readFileSync('data/places.json', 'utf8')),
         'data/trips/_template.json': template,
         'data/trips/espana-portugal-renovado.json': migrated
     };
     const fetch = async url => ({ ok: Object.hasOwn(sources, url), status: 404,
         json: async () => sources[url] });
-    vm.runInNewContext(fs.readFileSync('loader.js','utf8'), { window, fetch });
+    vm.runInNewContext(fs.readFileSync('loader.js', 'utf8'), { window, fetch });
     const trip = (await window.ATLAS_READY).trips[0];
-    assert.equal(trip.start, null);
-    assert.equal(trip.end, null);
-    assert.equal(trip.days.length, 0);
-    assert.equal(trip.expenses.length, 0);
-    assert.equal(trip.seasonality.months['01'].status, 'pending');
+    assert.equal(trip.days.length, 20);
+    assert.equal(trip.hotels.length, 5);
+    assert.equal(trip.days[0].date, '2027-05-08');
+    assert.equal(trip.days[19].date, '2027-05-27');
 });
 
 test('paso 15: template universal preserva información parcial, cero y falso sin mutar origen', async () => {
