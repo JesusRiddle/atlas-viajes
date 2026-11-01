@@ -37,7 +37,7 @@ test('coexisten viajes con hoteles estructurados y viajes heredados con stays', 
     assert.ok(trips.some(t => Array.isArray(t.stays) && t.stays.length));
     const stays = Object.fromEntries(trips.map(t => [t.id, Array.isArray(t.stays) ? t.stays : []]));
     assert.deepEqual(stays['italia-norte-2027'], []);
-    assert.ok(stays['espana-portugal'].length > 0);
+    assert.equal(stays['espana-portugal'], undefined, 'El viaje antiguo ya no debe figurar en el catálogo');
 });
 
 test('el loader normaliza un viaje mínimo sin alterar Italia Norte 2027', async () => {
@@ -346,15 +346,14 @@ test('el alta mínima queda oculta hasta activar el módulo y conserva los viaje
     assert.equal(atlas.trips[0].seasonality.months['01'].status, 'pending');
 });
 
-test('España + Portugal 2027 se publica primero, completo y sin modificar su versión anterior', async () => {
+test('España + Portugal 2027 se publica primero y conserva su contenido completo', async () => {
     const catalog = loadCatalog();
     assert.equal(catalog[0].id, 'espana-portugal-2027');
     assert.equal(catalog[0].available, true);
     assert.equal(catalog[1].id, 'italia-norte-2027');
     assert.equal(catalog[2].id, 'japon-2027');
-    const source = JSON.parse(fs.readFileSync('data/trips/espana-portugal.json', 'utf8'));
     const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-2027.json', 'utf8'));
-    assert.notEqual(migrated.id, source.id);
+    assert.equal(migrated.id, 'espana-portugal-2027');
     assert.equal(migrated.days.length, 20);
     assert.equal(migrated.hotels.length, 5);
     assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 36);
