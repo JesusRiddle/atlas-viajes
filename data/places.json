@@ -4013,5 +4013,55 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Joli Rumi"
     }
+  },
+  "italy27-art-brera-raffaello": {
+    "name": "Los desposorios de la Virgen · Rafael",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20Marriage%20of%20the%20Virgin.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Raphael%20Marriage%20of%20the%20Virgin.jpg",
+      "author": "Wikimedia Commons · ver ficha de archivo",
+      "license": "Consultar ficha de archivo",
+      "attribution": "Fuente y licencia en Wikimedia Commons"
+    }
+  },
+  "italy27-art-brera-hayez": {
+    "name": "El beso · Francesco Hayez",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Francesco%20Hayez%20-%20The%20Kiss%20-%20WGA11218.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Francesco%20Hayez%20-%20The%20Kiss%20-%20WGA11218.jpg",
+      "author": "Wikimedia Commons · ver ficha de archivo",
+      "license": "Consultar ficha de archivo",
+      "attribution": "Fuente y licencia en Wikimedia Commons"
+    }
+  },
+  "italy27-art-uffizi-venus": {
+    "name": "El nacimiento de Venus · Botticelli",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Venere%20di%20Botticelli.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:La%20Venere%20di%20Botticelli.jpg",
+      "author": "Wikimedia Commons · ver ficha de archivo",
+      "license": "Consultar ficha de archivo",
+      "attribution": "Fuente y licencia en Wikimedia Commons"
+    }
+  },
+  "italy27-art-uffizi-primavera": {
+    "name": "La primavera · Botticelli",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Botticelli-primavera.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Botticelli-primavera.jpg",
+      "author": "Wikimedia Commons · ver ficha de archivo",
+      "license": "Consultar ficha de archivo",
+      "attribution": "Fuente y licencia en Wikimedia Commons"
+    }
+  },
+  "italy27-art-uffizi-anunciacion": {
+    "name": "La Anunciación · Leonardo da Vinci",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Annunciation%20by%20Leonardo%20da%20Vinci-Uffizi%20Gallery.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Annunciation%20by%20Leonardo%20da%20Vinci-Uffizi%20Gallery.jpg",
+      "author": "Wikimedia Commons · ver ficha de archivo",
+      "license": "Consultar ficha de archivo",
+      "attribution": "Fuente y licencia en Wikimedia Commons"
+    }
   }
 }
