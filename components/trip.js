@@ -35,7 +35,7 @@ window.AtlasTrip = function (ctx) {
     }
     // Una sola vista de consejos; cambia únicamente su ubicación para Emilia-Romagna.
     function adviceCards(t) {
-        const compact = t.id === 'emilia-romana';
+        const compact = false;
         const title = compact
             ? '<div class="advice-heading"><span class="eyebrow orange">Consejos para este viaje</span></div>'
             : '';
@@ -90,7 +90,7 @@ window.AtlasTrip = function (ctx) {
             if (typeof item.badge === 'string' && item.badge.trim()) {
                 return { label: item.badge.trim(), tone: item.tone === 'orange' ? 'orange' : 'green', prefix: '' };
             }
-            return t.id === 'emilia-romana' ? legacyBadges[item.id] : null;
+            return null;
         };
         const badgeMarkup = item => {
             const info = badgeInfo(item);
@@ -217,7 +217,7 @@ window.AtlasTrip = function (ctx) {
     }
     function tripHero(t, id) {
         const rank = trips.indexOf(t) + 1;
-        const heroLabel = t.id === 'emilia-romana' ? 'Italia en tren' : (t.heroEyebrow || t.tag || 'En planeación');
+        const heroLabel = t.heroEyebrow || t.tag || 'En planeación';
         return [
             '<section class="triphero triphero-split"><div class="triphero-split-info">',
             '<div class="triphero-split-info-inner">',
