@@ -174,7 +174,9 @@
         "italy27-brera",
         "milan-duomo",
         "milan-galleria",
-        "italy27-milan-scala"
+        "italy27-milan-scala",
+        "italy27-art-brera-raffaello",
+        "italy27-art-brera-hayez"
       ],
       "hotel": "milano-aosta",
       "headerPlaces": [
@@ -493,7 +495,10 @@
         "italy27-santa-croce",
         "italy27-vasariano",
         "italy27-pitti",
-        "italy27-ponte"
+        "italy27-ponte",
+        "italy27-art-uffizi-venus",
+        "italy27-art-uffizi-primavera",
+        "italy27-art-uffizi-anunciacion"
       ],
       "hotel": "firenze-miacara",
       "headerPlaces": [
@@ -4071,7 +4076,12 @@
     "italy27-monterosso": "La playa y el pueblo de Monterosso ofrecen un contraste con los acantilados de Cinque Terre; una parada opcional para pasear junto al mar.",
     "italy27-siena-via-citta": "Una calle medieval entre palacios de piedra, escaparates y callejones que conserva el ambiente del centro histórico de Siena.",
     "italy27-san-pietro-portovenere": "La pequeña iglesia de piedra se asoma directamente al mar de Liguria, con una terraza que permite contemplar el litoral y las olas.",
-    "italy27-firenze-cathedral": "Su impresionante fachada de mármol esculpido combina blancos, verdes y rosados; contempla sus detalles antes de subir a la cúpula."
+    "italy27-firenze-cathedral": "Su impresionante fachada de mármol esculpido combina blancos, verdes y rosados; contempla sus detalles antes de subir a la cúpula.",
+    "italy27-art-brera-raffaello": "Brera · Rafael pintó esta célebre escena en 1504; observa la perspectiva y el templete central.",
+    "italy27-art-brera-hayez": "Brera · Pintura emblemática del Romanticismo italiano, de 1859.",
+    "italy27-art-uffizi-venus": "Uffizi · Una de las imágenes más célebres del Renacimiento, pintada por Sandro Botticelli.",
+    "italy27-art-uffizi-primavera": "Uffizi · Alegoría mitológica de Botticelli con Venus, Flora y las tres Gracias.",
+    "italy27-art-uffizi-anunciacion": "Uffizi · Obra temprana de Leonardo: observa su tratamiento de la perspectiva y el paisaje."
   },
   "exchangeRates": {
     "EUR": 20.7416,
