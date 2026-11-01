@@ -86,7 +86,7 @@
       "text": "Pasaporte mexicano: verificar vigencia y requisitos Schengen antes de viajar; comprobar el estado oficial de ETIAS y EES en 2027, y requisitos de tránsito si el vuelo hace escala. España y Portugal usan 230 V/50 Hz y enchufes C/F; se requiere adaptador de clavija mexicana A/B a C/F, con tierra cuando corresponda. Comprobar INPUT 100–240 V: un adaptador no convierte voltaje."
     }
   ],
-  "climate": "Mayo suele ofrecer tardes templadas en Barcelona, Madrid y Lisboa, con posibilidad de calor más marcado en Sevilla, Córdoba y Granada. En Lisboa, la media climática 1991–2020 de máximas diarias de mayo es 23,1 °C; no es un pronóstico de 2027 y el resto de ciudades puede diferir.\n\n*Qué llevar:* Calzado para adoquines y cuestas, prendas transpirables, una capa ligera para noches y trenes, impermeable plegable y protección solar. Reducir caminatas pronunciadas en Albaicín y Sintra con transporte local.\n\n*Horas de luz:* En mayo los días son largos y las visitas exteriores pueden priorizarse por la mañana o al final de la tarde. Amaneceres y atardeceres exactos por ciudad y fecha pendientes de documentar.",
+  "climate": "Durante el 8–27 de mayo, las máximas medias históricas rondan 21 °C en Barcelona, 22 °C en Madrid, 23 °C en Lisboa y 27 °C en Sevilla (estaciones y series diferentes). Son promedios climatológicos, no pronóstico; Andalucía puede registrar episodios de calor y las noches de Castilla y Granada son más frescas.\n\n*Qué llevar:* Capas ligeras, ropa transpirable, impermeable plegable, protección solar y calzado cómodo para adoquines, cuestas y largas visitas. En Albaicín y Sintra conviene reducir subidas con transporte local cuando resulte práctico.\n\n*Horas de luz:* Mayo ofrece días largos; organizar patios, miradores y jardines en primeras horas o al final de la tarde. Amanecer y atardecer exactos por ciudad y fecha están pendientes de verificar antes del itinerario detallado.",
   "experiences": [
     {
       "city": "Barcelona y Figueres",
@@ -620,56 +620,67 @@
     }
   ],
   "seasonality": {
-    "summary": "Viaje de ciudades patrimoniales con climas diferentes: mayo permite días largos, aunque Andalucía puede registrar calor; abril y septiembre–octubre son alternativas con compromisos por eventos, precios, lluvia y luz. Temperaturas: en las tarjetas solo aparecen intervalos cuando estén respaldados por datos climáticos de las ciudades del recorrido, no pronósticos.",
+    "summary": "Temperaturas orientativas: intervalo redondeado entre las medias de máximas diarias de Madrid-Retiro y Sevilla Aeropuerto (AEMET, normales 1981–2010); NO es pronóstico, ni representa todas las localidades del recorrido. Barcelona y Lisboa tienen comportamiento litoral distinto; Zamora y Granada pueden ser más frías de noche. Mayo es preferente por luz y equilibrio térmico; septiembre y octubre son alternativas que requieren revisar lluvias, eventos y precios.",
     "months": {
       "10": {
-        "status": "conditional",
-        "description": "Otoño moderado con más probabilidad de lluvia y menos horas de luz; revisar festividades locales."
+        "status": "recommended",
+        "description": "19–26 °C. Temperaturas más suaves en Andalucía y actividad urbana cómoda; menos luz y mayor riesgo de lluvia en Lisboa y Barcelona.",
+        "icon": "partlyCloudy"
       },
       "11": {
         "status": "conditional",
-        "description": "Baja la demanda en algunos destinos, pero aumenta el riesgo de lluvia y se acortan los días."
+        "description": "14–20 °C. Días cortos, clima más fresco en Castilla y mayor frecuencia de lluvia en Portugal y Andalucía; algunas tarifas podrían bajar.",
+        "icon": "cloudy"
       },
       "12": {
         "status": "conditional",
-        "description": "Frío interior y días cortos; mercados y festividades pueden encarecer fechas concretas."
+        "description": "10–17 °C. Días breves y frío en Madrid/Zamora; celebraciones de fin de año pueden elevar precios y limitar horarios.",
+        "icon": "cloudy"
       },
       "01": {
         "status": "conditional",
-        "description": "Invierno con días breves y frío en el interior; menor demanda turística en algunas ciudades."
+        "description": "10–16 °C. Invierno con días cortos y mañanas frías en Castilla; Sevilla y Lisboa suelen ser más templadas. Menor presión turística fuera de festivos.",
+        "icon": "cloudy"
       },
       "02": {
         "status": "conditional",
-        "description": "Todavía frío en Madrid, Zamora y Granada; buena disponibilidad potencial fuera de eventos."
+        "description": "12–18 °C. Aún frío en Madrid y Zamora; lluvia posible en Portugal y Andalucía. Puede favorecer alojamientos económicos fuera de carnavales.",
+        "icon": "cloudy"
       },
       "03": {
         "status": "conditional",
-        "description": "Primavera temprana variable; Semana Santa de 2027 puede alterar precios y afluencia."
+        "description": "16–22 °C. Primavera temprana variable; Semana Santa 2027 (21–28 de marzo) eleva demanda en Andalucía y algunos monumentos.",
+        "icon": "partlyCloudy"
       },
       "04": {
-        "status": "recommended",
-        "description": "Primavera favorable, pero revisar Semana Santa y festividades de Sevilla."
+        "status": "conditional",
+        "description": "18–23 °C. Clima agradable para monumentos y caminatas; Semana Santa y Feria de Abril en Sevilla pueden disparar ocupación.",
+        "icon": "partlyCloudy"
       },
       "05": {
         "status": "recommended",
-        "description": "21–27 °C. Valores orientativos de máximas diurnas para distintas ciudades, NO pronóstico ni rango universal; Lisboa tiene media histórica de máximas de 23,1 °C (IPMA 1991–2020). Días largos; Andalucía puede ser más cálida.",
+        "description": "22–27 °C. Ventana principal: días largos y buenas condiciones para Barcelona, Madrid y Lisboa. Sevilla y Córdoba pueden alcanzar tardes calurosas; San Isidro aumenta la actividad en Madrid.",
         "icon": "sun"
       },
       "06": {
         "status": "conditional",
-        "description": "Días largos, pero calor creciente en Sevilla y Córdoba y eventos de gran demanda en Barcelona."
+        "description": "28–32 °C. Calor creciente en Sevilla y Córdoba; Barcelona y Lisboa todavía permiten recorridos cómodos. Revisar festivales y demanda.",
+        "icon": "hot"
       },
       "07": {
         "status": "avoid",
-        "description": "Calor intenso probable en Andalucía y fuerte actividad turística en destinos principales."
+        "description": "32–36 °C. Altas temperaturas frecuentes en Andalucía y demanda turística estival; poca comodidad para excursiones y monumentos al sol.",
+        "icon": "hot"
       },
       "08": {
         "status": "avoid",
-        "description": "Temporada vacacional y calor, particularmente desfavorables para largas caminatas andaluzas."
+        "description": "31–36 °C. Calor persistente en Andalucía, vacaciones de verano y precios potencialmente elevados; Barcelona puede registrar tormentas.",
+        "icon": "hot"
       },
       "09": {
-        "status": "recommended",
-        "description": "Alternativa otoñal: temperaturas generalmente más moderadas, pero calor posible en Andalucía a principios de mes."
+        "status": "conditional",
+        "description": "26–32 °C. Alternativa de otoño temprano con calor posible en Andalucía y lluvias más probables en Barcelona. Comparar tarifas antes de elegir.",
+        "icon": "partlyCloudy"
       }
     }
   },
@@ -946,7 +957,7 @@
   ],
   "budgetPreliminary": true,
   "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto.",
-  "sourceNote": "Borrador de diseño: 1 noviembre 2026. No hay reservas ni tarifas confirmadas de mayo 2027.",
+  "sourceNote": "Estimaciones de ruta y gastos verificadas editorialmente el 1 de noviembre de 2026. Las temperaturas por mes provienen de normales históricas AEMET (Madrid/Sevilla 1981–2010) y la comparación de mayo incluye Lisboa (IPMA 1991–2020). Son referencias climáticas, no pronósticos ni tarifas 2027. Vuelos y hoteles siguen sin reservar.",
   "tips": [
     "Ventanas alternativas para recotizar: 8–23 de mayo de 2027 (compacta); 8–30 mayo (extendida); 4–23 septiembre; 18 septiembre–7 octubre; 2–21 octubre (conflicto potencial con Japón 2027). La ventana principal es 8–27 mayo.",
     "Segovia es opcional y sustituiría tiempo propio de Madrid; no agregarla a las excursiones de Zamora y Toledo sin reevaluar el ritmo.",
@@ -977,8 +988,20 @@
       "https://www.visitlisboa.com/"
     ],
     [
-      "IPMA · climatología Lisboa 1991–2020",
-      "https://www.ipma.pt/opencms/bin/file.data/climate-normal/cn_91-20_LISBOA_GEOFISICO.pdf"
+      "AEMET · Madrid Retiro, normales históricas",
+      "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=3195"
+    ],
+    [
+      "AEMET · Sevilla Aeropuerto, normales históricas",
+      "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5783"
+    ],
+    [
+      "AEMET · Barcelona Aeropuerto, normales históricas",
+      "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=0076"
+    ],
+    [
+      "IPMA · Lisboa, normales 1991–2020",
+      "https://www.ipma.pt/pt/oclima/normais.clima/"
     ]
   ],
   "cover": null,
