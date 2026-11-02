@@ -303,10 +303,8 @@
       "pm": "Si ya se hicieron ambas excursiones, visitar el museo Glaciarium como alternativa de menor esfuerzo (opcional), sin duplicar glaciares.",
       "night": "Preparar equipaje para vuelo del día siguiente; reconsiderar esta quinta noche si el programa se simplifica.",
       "mobility": "*Hotel ↔ Glaciarium (opcional):* utilizar transporte del museo si opera, o taxi, cotizar ambos. Día disponible para recuperar excursiones.",
-      "note": "Quinta noche en El Calafate bajo evaluación: conservar solo si aporta excursión diferenciada o margen meteorológico valioso; presupuestada provisionalmente. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
-      "places": [
-        "pat27-nimez"
-      ],
+      "note": "Quinta noche en El Calafate bajo evaluación: conservar solo si aporta excursión diferenciada o margen meteorológico valioso; presupuestada provisionalmente. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. Galería pendiente: Glaciarium es opcional y no corresponde reutilizar una fotografía de Laguna Nimez para ilustrarlo.",
+      "places": [],
       "headerPlaces": [],
       "spend": null,
       "hotel": "calafate-sierra",
@@ -1059,7 +1057,7 @@
       "url": "https://elchalten.tur.ar/omnibus/"
     }
   ],
-  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras.",
+  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras. Las imágenes enlazadas por URL remota son referencias editoriales pendientes de validación HTTP individual y revisión visual del viaje; pasar CI no verifica el contenido de las fotografías.",
   "budgetRange": [
     110000,
     155000
