@@ -38,3 +38,18 @@ test('Patagonia: costos estimados coherentes y referencias históricas explícit
     assert.match(flight.notes, /NO CONFIRMADO 2027/);
   }
 });
+
+test('Patagonia: todas las imágenes y hoteles referenciados existen', () => {
+  const photos = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
+  assert.ok(photos[trip.cover]?.photo?.src, 'Portada sin referencia fotográfica');
+  for (const day of trip.days) {
+    for (const id of day.places || []) {
+      assert.ok(photos[id]?.photo?.src, day.date + ' referencia imagen inexistente: ' + id);
+      assert.match(photos[id].photo.src, /^https:\/\//);
+    }
+  }
+  for (const stay of trip.hotels) {
+    assert.ok(stay.mapsUrl?.startsWith('https://www.google.com/maps/'));
+    assert.ok(stay.links?.some(link => link.url.startsWith('https://')));
+  }
+});
