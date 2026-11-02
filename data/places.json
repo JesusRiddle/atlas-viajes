@@ -4266,5 +4266,26 @@
       "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Perito%20Moreno%20Glacier%20(5470374290).jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Perito%20Moreno%20Glacier%20(5470374290).jpg"
     }
+  },
+  "pat27-fitzroy": {
+    "name": "Fitz Roy desde el sendero",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fitz%20Roy%2C%20El%20Chalten%2C%20Patagonia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Fitz%20Roy%2C%20El%20Chalten%2C%20Patagonia.jpg"
+    }
+  },
+  "pat27-nimez": {
+    "name": "Laguna Nimez",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Laguna%20Nimez-%20El%20Calafate.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Laguna%20Nimez-%20El%20Calafate.jpg"
+    }
+  },
+  "pat27-caminito": {
+    "name": "Caminito · La Boca",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Caminito%20Buenos%20Aires%20Argentina.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Caminito%20Buenos%20Aires%20Argentina.jpg"
+    }
   }
 }
