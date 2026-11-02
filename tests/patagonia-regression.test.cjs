@@ -53,3 +53,15 @@ test('Patagonia: todas las imágenes y hoteles referenciados existen', () => {
     assert.ok(stay.links?.some(link => link.url.startsWith('https://')));
   }
 });
+
+test('Patagonia: nueve secciones con datos editoriales verificables', () => {
+  assert.ok(trip.intro?.length > 200 && trip.introShort?.length > 100);
+  assert.equal(Object.keys(trip.seasonality.months).length, 12);
+  assert.ok(trip.mapPoints.length >= 9);
+  assert.ok(trip.mapPoints.every(p => p.coords?.length === 2 && p.coords.every(Number.isFinite)));
+  assert.ok(trip.experiences.length >= 5);
+  assert.equal(trip.reservations.length, 3);
+  assert.ok(trip.majorTransport.every(m => m.options?.length > 0));
+  assert.ok(trip.days.every(day => day.am && day.pm && day.night && day.mobility && day.note));
+  assert.ok(trip.days.filter(day => day.places?.length).length >= 10);
+});
