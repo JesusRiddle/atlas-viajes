@@ -24,6 +24,8 @@ const assert = require('node:assert/strict');
       for (const id of destinations) {
         await page.goto('http://127.0.0.1:8765/#viaje/' + id, { waitUntil: 'domcontentloaded' });
         await page.locator('.triphero').waitFor();
+        // Esperar navegación específica: la portada del viaje anterior aún puede existir tras cambiar el hash.
+        await page.locator('.subnav a[href*="#viaje/' + id + '/"]').first().waitFor();
         for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1, viewport.width + ' ' + id + ' ' + anchor);
         const text = await page.locator('main').innerText();
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
