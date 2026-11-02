@@ -1,0 +1,470 @@
+{
+  "id": "patagonia-argentina-2027",
+  "name": "Patagonia Argentina 2027",
+  "flag": "🇦🇷",
+  "status": "draft",
+  "start": "2027-11-03",
+  "end": "2027-11-18",
+  "tag": "DE BUENOS AIRES A LOS GLACIARES · AL PIE DEL FITZ ROY",
+  "routeCities": [
+    "Buenos Aires",
+    "El Chaltén",
+    "El Calafate",
+    "Buenos Aires"
+  ],
+  "bases": [
+    [
+      "Buenos Aires",
+      2
+    ],
+    [
+      "El Chaltén",
+      5
+    ],
+    [
+      "El Calafate",
+      5
+    ],
+    [
+      "Buenos Aires",
+      2
+    ]
+  ],
+  "work": null,
+  "costs": [],
+  "profile": {
+    "pace": "Moderado con una jornada de alta exigencia",
+    "paceWhy": "Una caminata larga guiada y actividades panorámicas intercaladas; prioridad a ventanas climáticas seguras.",
+    "solo": false,
+    "soloWhy": "Viaje planificado para dos personas.",
+    "weather": "Variable y ventoso",
+    "weatherWhy": "Fitz Roy y navegaciones quedan condicionados a clima y estado de los senderos.",
+    "why": "Glaciares, naturaleza y cultura con ritmo variado."
+  },
+  "intro": "Buenos Aires abre el recorrido con la arquitectura de Recoleta, el Teatro Colón y las calles de San Telmo. La expedición continúa en El Chaltén, donde el macizo del Fitz Roy domina los senderos y la Laguna de los Tres ofrece la caminata más importante, acompañados por un guía habilitado y únicamente si el tiempo permite realizarla con seguridad. La estancia también incorpora una cabalgata en Estancia Bonanza, la navegación por Lago del Desierto y la cascada Chorrillo del Salto. En El Calafate, las pasarelas y el Minitrekking del glaciar Perito Moreno se complementan con una navegación por los glaciares del Lago Argentino antes del regreso a Buenos Aires.",
+  "introShort": "De Buenos Aires a la Patagonia austral, entre las agujas del Fitz Roy, la Laguna de los Tres y el hielo azul del Perito Moreno. Senderismo guiado, navegación glaciar y paisajes de montaña, con alternativas según el clima.",
+  "climate": "En noviembre, la Patagonia austral puede presentar viento intenso, lluvia, nubosidad y nieve o hielo en tramos altos incluso cuando los senderos bajos están accesibles. No existen pronósticos fiables para estas fechas de 2027.\n\n*Qué llevar:* Sistema de capas, aislante térmico, impermeable cortavientos, calzado de trekking, gorro y guantes. Consultar con el guía el equipo requerido para Laguna de los Tres y con Hielo & Aventura las restricciones del Minitrekking.\n\n*Horas de luz:* Noviembre ofrece jornadas relativamente largas en la Patagonia austral; comprobar amanecer y atardecer locales para las fechas exactas antes de fijar salidas.",
+  "solo": null,
+  "flight": null,
+  "local": null,
+  "experiences": [
+    {
+      "city": "Buenos Aires · arquitectura y barrios",
+      "description": "Visitar el Teatro Colón y El Ateneo Grand Splendid; caminar entre Recoleta, San Telmo y La Boca, y probar empanadas y cortes a la parrilla."
+    },
+    {
+      "city": "El Chaltén · Fitz Roy",
+      "description": "Buscar una ventana meteorológica segura para subir con guía a Laguna de los Tres; Laguna Capri queda como alternativa si el ascenso final no es aconsejable."
+    },
+    {
+      "city": "El Chaltén · paisaje sin trekking largo",
+      "description": "Recorrer los miradores próximos al pueblo, conocer Chorrillo del Salto, disfrutar una cabalgata guiada en Estancia Bonanza y navegar en Lago del Desierto, sujeto a operación."
+    },
+    {
+      "city": "El Calafate · hielo y navegación",
+      "description": "Contemplar el glaciar Perito Moreno desde las pasarelas, caminar sobre el hielo con operador autorizado y navegar por el Lago Argentino hacia Upsala y Spegazzini, si el tiempo permite."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-11-03",
+      "title": "Salida internacional desde CDMX",
+      "base": "En vuelo",
+      "am": "Salida internacional; confirmar aeropuerto, terminal, compañía, escalas y hora real antes de fijar traslados.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 2,
+      "date": "2027-11-04",
+      "title": "Llegada a Buenos Aires",
+      "base": "Buenos Aires",
+      "am": "Llegada prevista, traslado al alojamiento en Recoleta o Barrio Norte; El Ateneo Grand Splendid según hora y energía.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 3,
+      "date": "2027-11-05",
+      "title": "Teatro Colón y Palermo",
+      "base": "Buenos Aires",
+      "am": "Visita guiada del Teatro Colón, Obelisco y paseo por Palermo Soho; reservar solo al confirmar horarios.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 4,
+      "date": "2027-11-06",
+      "title": "Buenos Aires → El Chaltén",
+      "base": "El Chaltén",
+      "am": "Vuelo a El Calafate y autobús o shuttle a El Chaltén. Exigir conexión holgada o ajustar la noche si no es viable.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 5,
+      "date": "2027-11-07",
+      "title": "Laguna de los Tres · primera oportunidad",
+      "base": "El Chaltén",
+      "am": "Primera oportunidad para hacer trekking de alta exigencia con guía grupal y pronóstico seguro. Si no, intercambiar por miradores próximos y mantener opciones los días 8–10.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 6,
+      "date": "2027-11-08",
+      "title": "Estancia Bonanza · cabalgata",
+      "base": "El Chaltén",
+      "am": "Cabalgata guiada, sujeta a cupos y condiciones. Reprogramar si este es el mejor día para Laguna de los Tres.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 7,
+      "date": "2027-11-09",
+      "title": "Lago del Desierto y Vespignani",
+      "base": "El Chaltén",
+      "am": "Excursión panorámica por el valle, navegación y senderos fáciles opcionales. Confirmar operación y transporte.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 8,
+      "date": "2027-11-10",
+      "title": "Laguna Capri o Chorrillo del Salto",
+      "base": "El Chaltén",
+      "am": "Si ya se completó Laguna de los Tres, elegir Laguna Capri solo si hay energía y no se pasó por ella al regresar; de lo contrario Chorrillo del Salto. Última oportunidad de trekking guiado si el tiempo lo exige.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 9,
+      "date": "2027-11-11",
+      "title": "El Chaltén → El Calafate",
+      "base": "El Calafate",
+      "am": "Traslado en autobús, alojamiento y paseo por el centro o la costanera del Lago Argentino.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 10,
+      "date": "2027-11-12",
+      "title": "Glaciar Perito Moreno · Minitrekking",
+      "base": "El Calafate",
+      "am": "Traslado al parque, navegación y caminata guiada sobre el hielo, más miradores de pasarelas; verificar restricciones físicas y tarifa.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 11,
+      "date": "2027-11-13",
+      "title": "Todo Glaciares",
+      "base": "El Calafate",
+      "am": "Navegación panorámica por el Lago Argentino hacia glaciares Upsala y Spegazzini; operación sujeta a clima.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 12,
+      "date": "2027-11-14",
+      "title": "El Calafate · Laguna Nimez",
+      "base": "El Calafate",
+      "am": "Paseo por Laguna Nimez y centro, o mover una excursión de glaciares cancelada por viento o condiciones de navegación.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 13,
+      "date": "2027-11-15",
+      "title": "El Calafate · actividades por elegir",
+      "base": "El Calafate",
+      "am": "Día disponible para experiencia nueva de bajo esfuerzo o excursión reprogramada. Evitar añadir actividades costosas de relleno; revisar si conviene mantener esta noche.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 14,
+      "date": "2027-11-16",
+      "title": "El Calafate → Buenos Aires",
+      "base": "Buenos Aires",
+      "am": "Vuelo nacional y paseo urbano ligero, según horario de llegada.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 15,
+      "date": "2027-11-17",
+      "title": "La Boca, San Telmo y Puerto Madero",
+      "base": "Buenos Aires",
+      "am": "Caminito de día, San Telmo y Puerto Madero, con horarios realistas de traslados.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    },
+    {
+      "n": 16,
+      "date": "2027-11-18",
+      "title": "Buenos Aires → CDMX",
+      "base": "En vuelo / CDMX",
+      "am": "Vuelo internacional de regreso. La llegada efectiva a CDMX puede ocurrir el 18 o 19, según el vuelo finalmente comprado.",
+      "pm": "Horario por definir según clima, transporte y reservas.",
+      "night": "Alojamiento o traslado según la etapa; confirmar itinerario aéreo y check-in.",
+      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "note": "Escenario provisional; actividades intercambiables en El Chaltén según condiciones de seguridad y disponibilidad.",
+      "places": [],
+      "headerPlaces": [],
+      "spend": null
+    }
+  ],
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Laguna de los Tres · trekking guiado grupal",
+          "description": "Reservar con operador habilitado y confirmar cupo, requisitos físicos, traslado a Río Eléctrico, posibles modificaciones por viento, nieve o lluvia y ruta de regreso por Laguna Capri.",
+          "links": []
+        },
+        {
+          "title": "Glaciar Perito Moreno · Minitrekking",
+          "description": "Consultar tarifa 2027, límites de edad, condiciones físicas y disponibilidad con el operador antes de comprar.",
+          "links": [
+            {
+              "label": "Hielo & Aventura",
+              "url": "https://hieloyaventura.com/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Todo Glaciares",
+          "description": "Comprobar itinerario real, traslados, cierres meteorológicos y tarifa de noviembre de 2027.",
+          "links": []
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Estancia Bonanza y Lago del Desierto",
+          "description": "Reservar según pronóstico y prioridad de Laguna de los Tres; confirmar disponibilidad y política de cambios.",
+          "links": []
+        }
+      ]
+    ]
+  ],
+  "exchangeRates": {},
+  "exchangeRateSnapshot": null,
+  "expenses": [],
+  "majorTransport": [],
+  "ticketNotes": [],
+  "attractionTerms": [],
+  "cover": null,
+  "mapPoints": [],
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Reservas, cupos y tarifas para noviembre de 2027 aún por verificar; ninguna excursión ni vuelo está comprado."
+  },
+  "lodgingSummary": "14 noches previstas en cuatro estancias: Buenos Aires (2 + 2), El Chaltén (5) y El Calafate (5). Hoteles y precios sin cotizar.",
+  "heroLodgingSummary": "14 noches · 4 alojamientos",
+  "budgetPreliminary": true,
+  "hotels": [],
+  "stays": [],
+  "seasonality": {
+    "summary": "Noviembre es la ventana elegida para evitar el pico estival y disfrutar días largos; la lluvia y los vientos fuertes siguen siendo posibles. Comparar temporadas y costos con datos verificados antes de publicar.",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": null
+      },
+      "11": {
+        "status": "pending",
+        "description": null
+      },
+      "12": {
+        "status": "pending",
+        "description": null
+      },
+      "01": {
+        "status": "pending",
+        "description": null
+      },
+      "02": {
+        "status": "pending",
+        "description": null
+      },
+      "03": {
+        "status": "pending",
+        "description": null
+      },
+      "04": {
+        "status": "pending",
+        "description": null
+      },
+      "05": {
+        "status": "pending",
+        "description": null
+      },
+      "06": {
+        "status": "pending",
+        "description": null
+      },
+      "07": {
+        "status": "pending",
+        "description": null
+      },
+      "08": {
+        "status": "pending",
+        "description": null
+      },
+      "09": {
+        "status": "pending",
+        "description": null
+      }
+    }
+  },
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Moderado–activo",
+      "tone": "orange",
+      "text": "Dos viajeros; una caminata de montaña larga y guiada, excursiones panorámicas y días intercambiables. No sustituir seguridad por cumplir una fecha."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Español · ARS",
+      "tone": "green",
+      "text": "Se habla español y se utiliza el peso argentino. Comprobar el tipo de cambio al contratar; comparar pago con tarjeta y efectivo sin confundir pesos argentinos con MXN."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Verificar antes de viajar",
+      "tone": "orange",
+      "text": "Confirmar condiciones migratorias para pasaporte mexicano, cobertura médica y requisitos de cualquier conexión internacional. Argentina utiliza principalmente enchufes tipo I y 220 V/50 Hz; llevar adaptador compatible desde clavijas mexicanas A/B y comprobar INPUT 100–240 V en los cargadores. Un adaptador no transforma voltaje."
+    }
+  ],
+  "tips": [],
+  "sources": [],
+  "sourceNote": "Viaje nuevo elaborado a partir de ideas de una presentación anterior y decisiones posteriores; ninguna compra o reserva confirmada.",
+  "budgetRange": [
+    110000,
+    135000
+  ],
+  "budgetNote": "Meta presupuestaria provisional para dos personas, NO una cotización ni un total calculado. Faltan vuelos, alojamientos y tarifas de excursiones de noviembre de 2027; incluir guía grupal de Laguna de los Tres y todas las actividades seleccionadas antes de validar el rango.",
+  "placeDescriptions": {},
+  "optionalSection": null,
+  "family": null,
+  "layoutClass": null,
+  "formatName": false,
+  "routeHighlights": [],
+  "cardHighlights": [],
+  "introHighlights": [
+    "Buenos Aires",
+    "Recoleta",
+    "Teatro Colón",
+    "San Telmo",
+    "El Chaltén",
+    "Fitz Roy",
+    "Laguna de los Tres",
+    "Estancia Bonanza",
+    "Lago del Desierto",
+    "Chorrillo del Salto",
+    "El Calafate",
+    "Perito Moreno",
+    "Lago Argentino"
+  ],
+  "boldCityNames": false,
+  "emphasisStyle": false,
+  "linkRailInText": false,
+  "knownCosts": [],
+  "costExclusions": null,
+  "exchangeNote": null,
+  "railSummary": [],
+  "railTotal": null,
+  "railExclusions": null,
+  "railCurrencyNote": null,
+  "heroEyebrow": null
+}
