@@ -43,7 +43,7 @@
   },
   "intro": "Buenos Aires abre el recorrido con la arquitectura de Recoleta, el Teatro Colón y las calles de San Telmo. La expedición continúa en El Chaltén, donde el macizo del Fitz Roy domina los senderos y la Laguna de los Tres ofrece la caminata más importante, acompañados por un guía habilitado y únicamente si el tiempo permite realizarla con seguridad. La estancia también incorpora una cabalgata en Estancia Bonanza, la navegación por Lago del Desierto y la cascada Chorrillo del Salto. En El Calafate, las pasarelas y el Minitrekking del glaciar Perito Moreno se complementan con una navegación por los glaciares del Lago Argentino antes del regreso a Buenos Aires.",
   "introShort": "De Buenos Aires a la Patagonia austral, entre las agujas del Fitz Roy, la Laguna de los Tres y el hielo azul del Perito Moreno. Senderismo guiado, navegación glaciar y paisajes de montaña, con alternativas según el clima.",
-  "climate": "En noviembre, la Patagonia austral puede presentar viento intenso, lluvia, nubosidad y nieve o hielo en tramos altos incluso cuando los senderos bajos están accesibles. No existen pronósticos fiables para estas fechas de 2027.\n\n*Qué llevar:* Sistema de capas, aislante térmico, impermeable cortavientos, calzado de trekking, gorro y guantes. Consultar con el guía el equipo requerido para Laguna de los Tres y con Hielo & Aventura las restricciones del Minitrekking.\n\n*Horas de luz:* Noviembre ofrece jornadas relativamente largas en la Patagonia austral; comprobar amanecer y atardecer locales para las fechas exactas antes de fijar salidas.",
+  "climate": "Noviembre ofrece primavera austral con viento intenso y cambios rápidos de nubosidad, lluvia y temperatura; puede haber nieve o hielo en la zona alta de Laguna de los Tres. El Chaltén y El Calafate son más fríos que Buenos Aires. Son condiciones históricas, no un pronóstico para 2027.\n\n*Qué llevar:* Sistema de capas, prenda térmica, impermeable cortavientos, botas aptas para trekking, gorro y guantes. Consultar con el guía el estado del ascenso a Laguna de los Tres y con Hielo & Aventura los requisitos del Minitrekking.\n\n*Horas de luz:* En noviembre las jornadas son largas en Santa Cruz, útiles para excursiones de día completo; horarios exactos de amanecer y puesta del sol por confirmar para cada localidad.",
   "solo": null,
   "flight": null,
   "local": null,
@@ -58,11 +58,11 @@
     },
     {
       "city": "El Chaltén · paisaje sin trekking largo",
-      "description": "Recorrer los miradores próximos al pueblo, conocer Chorrillo del Salto, disfrutar una cabalgata guiada en Estancia Bonanza y navegar en Lago del Desierto, sujeto a operación."
+      "description": "Visitar los miradores próximos al pueblo, Chorrillo del Salto, Estancia Bonanza a caballo y Lago del Desierto en una excursión panorámica. Probar trucha, cordero patagónico y dulces regionales."
     },
     {
       "city": "El Calafate · hielo y navegación",
-      "description": "Contemplar el glaciar Perito Moreno desde las pasarelas, caminar sobre el hielo con operador autorizado y navegar por el Lago Argentino hacia Upsala y Spegazzini, si el tiempo permite."
+      "description": "Contemplar el glaciar Perito Moreno desde las pasarelas, caminar sobre el hielo con guía habilitado y navegar por Lago Argentino hacia Upsala y Spegazzini. En las cenas, probar cordero patagónico o trucha y dulces de calafate."
     }
   ],
   "days": [
@@ -131,7 +131,7 @@
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
+      "note": "Laguna de los Tres: 25 km según referencia oficial de Parques Nacionales, entre 8 y 11 horas según itinerario; dificultad media-alta. Exigir guía habilitado, clima seguro y capacidad física suficiente. Laguna Capri es la alternativa corta; no subir con hielo peligroso.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -173,7 +173,7 @@
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
+      "note": "Ultima oportunidad de reprogramación de Laguna de los Tres; Lago del Desierto, cabalgata y paseos cortos pueden intercambiarse, sujetos a cupos y políticas de cancelación.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -243,7 +243,7 @@
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en El Calafate; alojamiento aún no seleccionado.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
+      "note": "Quinta noche en El Calafate bajo evaluación: conservar solo si aporta excursión diferenciada o margen meteorológico valioso; presupuestada provisionalmente.",
       "places": [],
       "headerPlaces": [],
       "spend": null
@@ -510,7 +510,38 @@
   "ticketNotes": [],
   "attractionTerms": [],
   "cover": null,
-  "mapPoints": [],
+  "mapPoints": [
+    {
+      "name": "Buenos Aires · llegada y regreso",
+      "coords": [
+        -34.6037,
+        -58.3816
+      ],
+      "kind": "Alojamiento · 2 + 2 noches",
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "El Chaltén",
+      "coords": [
+        -49.3315,
+        -72.8863
+      ],
+      "kind": "Alojamiento · 5 noches",
+      "base": true,
+      "order": 2
+    },
+    {
+      "name": "El Calafate",
+      "coords": [
+        -50.3379,
+        -72.2648
+      ],
+      "kind": "Alojamiento · 5 noches",
+      "base": true,
+      "order": 3
+    }
+  ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
     "reservationNote": "Reservas, cupos y tarifas para noviembre de 2027 aún por verificar; ninguna excursión ni vuelo está comprado."
@@ -625,9 +656,21 @@
     {
       "label": "Todo Glaciares · tarifas referencia 2026",
       "url": "https://turismocalafate.com/excursiones/todo-glaciares/"
+    },
+    {
+      "label": "Parques Nacionales · recomendaciones de seguridad y clima",
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/recomendaciones-para-visitar-el-parque-nacional-los-glaciares"
+    },
+    {
+      "label": "Parques Nacionales · actividades y senderos",
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/actividades"
+    },
+    {
+      "label": "Parques Nacionales · épocas recomendadas",
+      "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/panoramica"
     }
   ],
-  "sourceNote": "Viaje nuevo elaborado a partir de ideas de una presentación anterior y decisiones posteriores; ninguna compra o reserva confirmada.",
+  "sourceNote": "Fuentes oficiales del Parque Nacional Los Glaciares consultadas el 2 noviembre de 2026; los horarios de transporte, tarifas y disponibilidad de noviembre de 2027 siguen sin verificar. Ninguna reserva comprada.",
   "budgetRange": [
     110000,
     155000
