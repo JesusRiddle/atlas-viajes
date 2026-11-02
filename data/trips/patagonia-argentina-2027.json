@@ -3,7 +3,7 @@
   "name": "Patagonia Argentina 2027",
   "flag": "🇦🇷",
   "status": "draft",
-  "start": "2027-11-03",
+  "start": "2027-11-04",
   "end": "2027-11-18",
   "tag": "DE BUENOS AIRES A LOS GLACIARES · AL PIE DEL FITZ ROY",
   "routeCities": [
@@ -68,24 +68,25 @@
   "days": [
     {
       "n": 1,
-      "date": "2027-11-03",
-      "title": "Salida internacional desde CDMX",
-      "base": "En vuelo",
-      "am": "Salida prevista desde CDMX el 3 de noviembre. Horario nocturno y llegada al día siguiente todavía no comprobados.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Tránsito aéreo; horario y llegada pendientes.",
-      "mobility": "Referencia histórica del viaje original: Aeroméxico MEX→EZE directo. En la presentación de 2026 salía a las 09:35 y llegaba a las 21:50 el mismo día; horario NO confirmado para 2027. Validar si se necesita salir el 3 o el 4 de noviembre según vuelo real.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
+      "date": "2027-11-04",
+      "title": "CDMX → Buenos Aires · vuelo directo y llegada",
+      "base": "Buenos Aires",
+      "am": "09:35 · Salida prevista de MEX en vuelo directo Aeroméxico, horario tomado de la presentación de 2026; aún no confirmado para 2027.",
+      "pm": "Vuelo internacional hacia Ezeiza. Preparar documentación, equipaje y traslado al hotel.",
+      "night": "21:50 · Llegada prevista a EZE (hora argentina). Traslado a Recoleta y primera noche en Buenos Aires; hora referencial de 2026.",
+      "mobility": "MEX 09:35 → EZE 21:50 · directo con Aeroméxico, referencia exacta del escenario 2026, no vuelo confirmado 2027.",
+      "note": "El vuelo de referencia llega el mismo 4 de noviembre; por eso el viaje comienza el 4 y no el 3. Revisar llegada real y el traslado nocturno antes de reservar.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "buenos-aires-inicio"
     },
     {
       "n": 2,
-      "date": "2027-11-04",
-      "title": "Llegada a Buenos Aires",
+      "date": "2027-11-05",
+      "title": "Buenos Aires · Teatro Colón, centro y Palermo",
       "base": "Buenos Aires",
-      "am": "Primer día en Buenos Aires, sujeto al vuelo real. La presentación antigua suponía llegada a EZE el mismo día de salida, no al siguiente; ajustar noches y fechas cuando aparezcan horarios de 2027.",
+      "am": "Visita guiada del Teatro Colón, Obelisco y paseo por Palermo Soho; confirmar horarios oficiales.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en Buenos Aires; alojamiento aún no seleccionado.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
@@ -97,28 +98,13 @@
     },
     {
       "n": 3,
-      "date": "2027-11-05",
-      "title": "Teatro Colón y Palermo",
-      "base": "Buenos Aires",
-      "am": "Visita guiada del Teatro Colón, Obelisco y paseo por Palermo Soho; reservar solo al confirmar horarios.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en Buenos Aires; alojamiento aún no seleccionado.",
-      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
-      "places": [],
-      "headerPlaces": [],
-      "spend": null,
-      "hotel": "buenos-aires-inicio"
-    },
-    {
-      "n": 4,
       "date": "2027-11-06",
       "title": "Buenos Aires → El Chaltén",
       "base": "El Chaltén",
       "am": "Vuelo a El Calafate y autobús o shuttle a El Chaltén. Exigir conexión holgada o ajustar la noche si no es viable.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
-      "mobility": "Referencia 2026: Aerolíneas Argentinas AEP→FTE directo, AR1840 05:10–08:30. Para 2027 sin servicio confirmado; conectar FTE→El Chaltén solo con margen real y última salida verificada.",
+      "mobility": "Aerolíneas Argentinas AR1840 · AEP 05:10 → FTE 08:30 (referencia de la presentación 2026). Traslado FTE→El Chaltén pendiente de combinar con bus o shuttle.",
       "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
       "places": [],
       "headerPlaces": [],
@@ -126,7 +112,7 @@
       "hotel": "chalten-senderos"
     },
     {
-      "n": 5,
+      "n": 4,
       "date": "2027-11-07",
       "title": "Laguna de los Tres · primera oportunidad",
       "base": "El Chaltén",
@@ -141,7 +127,7 @@
       "hotel": "chalten-senderos"
     },
     {
-      "n": 6,
+      "n": 5,
       "date": "2027-11-08",
       "title": "Estancia Bonanza · cabalgata",
       "base": "El Chaltén",
@@ -156,7 +142,7 @@
       "hotel": "chalten-senderos"
     },
     {
-      "n": 7,
+      "n": 6,
       "date": "2027-11-09",
       "title": "Lago del Desierto y Vespignani",
       "base": "El Chaltén",
@@ -171,7 +157,7 @@
       "hotel": "chalten-senderos"
     },
     {
-      "n": 8,
+      "n": 7,
       "date": "2027-11-10",
       "title": "Laguna Capri o Chorrillo del Salto",
       "base": "El Chaltén",
@@ -186,7 +172,7 @@
       "hotel": "chalten-senderos"
     },
     {
-      "n": 9,
+      "n": 8,
       "date": "2027-11-11",
       "title": "El Chaltén → El Calafate",
       "base": "El Calafate",
@@ -201,7 +187,7 @@
       "hotel": "calafate-sierra"
     },
     {
-      "n": 10,
+      "n": 9,
       "date": "2027-11-12",
       "title": "Glaciar Perito Moreno · Minitrekking",
       "base": "El Calafate",
@@ -216,7 +202,7 @@
       "hotel": "calafate-sierra"
     },
     {
-      "n": 11,
+      "n": 10,
       "date": "2027-11-13",
       "title": "Todo Glaciares",
       "base": "El Calafate",
@@ -231,7 +217,7 @@
       "hotel": "calafate-sierra"
     },
     {
-      "n": 12,
+      "n": 11,
       "date": "2027-11-14",
       "title": "El Calafate · Laguna Nimez",
       "base": "El Calafate",
@@ -246,7 +232,7 @@
       "hotel": "calafate-sierra"
     },
     {
-      "n": 13,
+      "n": 12,
       "date": "2027-11-15",
       "title": "El Calafate · actividades por elegir",
       "base": "El Calafate",
@@ -261,14 +247,14 @@
       "hotel": "calafate-sierra"
     },
     {
-      "n": 14,
+      "n": 13,
       "date": "2027-11-16",
       "title": "El Calafate → Buenos Aires",
       "base": "Buenos Aires",
       "am": "Vuelo nacional y paseo urbano ligero, según horario de llegada.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en Buenos Aires; alojamiento aún no seleccionado.",
-      "mobility": "Referencia 2026: Aerolíneas Argentinas FTE→AEP directo, AR1895 12:30–15:30. No representa horario ni vuelo confirmado para noviembre 2027.",
+      "mobility": "Aerolíneas Argentinas AR1895 · FTE 12:30 → AEP 15:30 (referencia de la presentación 2026).",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
@@ -276,7 +262,7 @@
       "hotel": "buenos-aires-regreso"
     },
     {
-      "n": 15,
+      "n": 14,
       "date": "2027-11-17",
       "title": "La Boca, San Telmo y Puerto Madero",
       "base": "Buenos Aires",
@@ -291,14 +277,14 @@
       "hotel": "buenos-aires-regreso"
     },
     {
-      "n": 16,
+      "n": 15,
       "date": "2027-11-18",
       "title": "Buenos Aires → CDMX",
       "base": "En vuelo / CDMX",
-      "am": "Vuelo internacional de regreso. La llegada efectiva a CDMX puede ocurrir el 18 o 19, según el vuelo finalmente comprado.",
+      "am": "Salida hacia EZE con margen suficiente para documentar equipaje. Vuelo directo de referencia Aeroméxico: 12:00–18:50, llegada a CDMX el mismo día.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Tránsito aéreo; horario y llegada pendientes.",
-      "mobility": "Referencia histórica: Aeroméxico EZE→MEX directo, 12:00–18:50 en la fecha de 2026. Confirmar itinerario, disponibilidad, equipaje y fecha real de llegada a CDMX para 2027.",
+      "night": "Regreso a casa en CDMX tras llegada prevista a las 18:50 (hora mexicana), sujeta a confirmación del vuelo real.",
+      "mobility": "Aeroméxico directo · EZE 12:00 → MEX 18:50 (referencia exacta de la presentación 2026).",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
@@ -498,7 +484,7 @@
       "title": "Vuelo internacional · MEX ↔ Buenos Aires",
       "selectedOption": null,
       "options": [],
-      "notes": "Referencia histórica de la presentación de 2026: Aeroméxico MEX–EZE–MEX, $12,199 MXN por persona, $24,398 MXN para dos. No cotizado, reservado ni disponible para noviembre de 2027. Horarios anteriores 09:35 salida / 21:50 llegada y retorno 12:00 / 18:50 solo ilustrativos; NO fijar calendario 2027 con esas horas."
+      "notes": "ESCENARIO DE HORARIOS COPIADO DE PRESENTACIÓN 2026, NO CONFIRMADO 2027: Aeroméxico directo MEX→EZE 4 nov 09:35–21:50 (hora local de cada aeropuerto); EZE→MEX 18 nov 12:00–18:50. Referencia histórica de tarifa $24,398 MXN para dos personas, no disponible/cotizada para noviembre 2027."
     },
     {
       "id": "flight-domestic",
@@ -506,7 +492,7 @@
       "title": "Vuelos nacionales · Buenos Aires ↔ El Calafate",
       "selectedOption": null,
       "options": [],
-      "notes": "Referencia histórica de la presentación de 2026: Aerolíneas Argentinas AEP–FTE–AEP, $23,250 MXN para dos incluyendo una maleta documentada compartida de 15 kg según el escenario original. Vuelos ilustrativos AR1840 (05:10–08:30) y AR1895 (12:30–15:30); NO equivalen a vuelos ni horarios confirmados en noviembre 2027. Revisar equipaje real y condiciones al salir inventario."
+      "notes": "ESCENARIO DE HORARIOS COPIADO DE PRESENTACIÓN 2026, NO CONFIRMADO 2027: Aerolíneas Argentinas AR1840 AEP→FTE 6 nov 05:10–08:30; AR1895 FTE→AEP 16 nov 12:30–15:30. Precio histórico $23,250 MXN para dos personas con una maleta documentada compartida de 15 kg según la presentación."
     },
     {
       "id": "bus-fte-chalten",
@@ -573,7 +559,7 @@
     "reservationTitle": "Reservaciones importantes",
     "reservationNote": "Reservas, cupos y tarifas para noviembre de 2027 aún por verificar; ninguna excursión ni vuelo está comprado."
   },
-  "lodgingSummary": "14 noches en cuatro estancias: Up Recoleta (2 + 2), Hostería Senderos (5) y Sierra Nevada (5), todos candidatos sin tarifa ni disponibilidad confirmadas.",
+  "lodgingSummary": "14 noches del 4 al 18 de noviembre en cuatro estancias: Buenos Aires (2 + 2), El Chaltén (5), El Calafate (5). Tres hoteles candidatos; sin tarifas confirmadas.",
   "heroLodgingSummary": "14 noches · 4 alojamientos",
   "budgetPreliminary": true,
   "hotels": [
@@ -794,12 +780,12 @@
       "url": "https://elchalten.tur.ar/omnibus/"
     }
   ],
-  "sourceNote": "Vuelos y equipaje tomados únicamente de la presentación original «Expedición Argentina (Itinerario y Costos)» para noviembre de 2026, como REFERENCIA HISTÓRICA, no cotización 2027. El resto de importes siguen siendo supuestos de planeación sin disponibilidad verificada. No hay reservas.",
+  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras.",
   "budgetRange": [
     110000,
     155000
   ],
-  "budgetNote": "Escenario ilustrativo para DOS personas: 144,648 MXN, sumando referencias históricas de vuelos de la presentación de noviembre 2026 ($24,398 internacionales + $23,250 nacionales) y supuestos no cotizados de otros rubros. No es tarifa vigente ni precio reservable de noviembre 2027. Las 14 noches actuales, la guía grupal a Laguna de los Tres y las nuevas excursiones hacen que el presupuesto original de 13 días NO sea comparable directamente. Revisar precios, rutas, horarios y equipaje cuando abran ventas; no sumar los vuelos otra vez en los traslados. Meta de optimización aproximada: $135,000 MXN.",
+  "budgetNote": "Escenario ilustrativo para DOS personas: 144,648 MXN, sumando referencias históricas de vuelos de la presentación de noviembre 2026 ($24,398 internacionales + $23,250 nacionales) y supuestos no cotizados de otros rubros. No es tarifa vigente ni precio reservable de noviembre 2027. Las 14 noches actuales, la guía grupal a Laguna de los Tres y las nuevas excursiones hacen que el presupuesto original de 13 días NO sea comparable directamente. Revisar precios, rutas, horarios y equipaje cuando abran ventas; no sumar los vuelos otra vez en los traslados. Meta de optimización aproximada: $135,000 MXN. Horarios de vuelos iguales a los de la presentación de 2026, utilizados como escenario de referencia para fijar días y noches, no como disponibilidad de 2027.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
