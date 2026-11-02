@@ -75,3 +75,20 @@ test('Patagonia: distribución presupuestaria sin partidas duplicadas', () => {
   assert.equal(trip.expenses.filter(x => x.category === 'other').reduce((s,x) => s + x.cost.amount,0), 4500);
   assert.ok(trip.expenses.every(x => x.status === 'estimated' && x.cost.currency === 'MXN'));
 });
+
+test('Patagonia: los gastos por día coinciden con el presupuesto sin duplicarlo', () => {
+  const expensesTotal = trip.expenses.reduce((sum, x) => sum + x.cost.amount, 0);
+  const dailyTotal = trip.days.reduce((sum, x) => sum + x.spend, 0);
+  assert.equal(expensesTotal, 144648);
+  assert.equal(dailyTotal, expensesTotal);
+  assert.ok(trip.days.every(x => Number.isFinite(x.spend) && x.spend >= 0));
+  for (const day of trip.days) {
+    const assigned = trip.expenses.filter(x => x.date === day.date)
+      .reduce((sum, x) => sum + x.cost.amount, 0);
+    assert.equal(day.spend, assigned, 'Desglose diario incompatible: ' + day.date);
+  }
+  assert.equal(trip.expenses.filter(x => x.id.startsWith('food-day-')).length, 15);
+  assert.equal(trip.expenses.filter(x => x.id.startsWith('food-day-'))
+    .reduce((sum, x) => sum + x.cost.amount, 0), 15000);
+  assert.ok(!trip.expenses.some(x => x.id === 'food'));
+});
