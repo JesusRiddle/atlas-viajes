@@ -66,3 +66,12 @@ test('Patagonia: nueve secciones con datos editoriales verificables', () => {
   assert.ok(trip.days.filter(day => day.places?.length).length >= 9);
   // No inventar fotografías para excursiones opcionales ni para jornadas de vuelo.
 });
+
+test('Patagonia: distribución presupuestaria sin partidas duplicadas', () => {
+  const ids = trip.expenses.map(x => x.id);
+  assert.equal(new Set(ids).size, ids.length);
+  assert.equal(trip.expenses.filter(x => x.category === 'lodging').reduce((s,x) => s + x.cost.amount,0), 30000);
+  assert.equal(trip.expenses.filter(x => x.category === 'transport').reduce((s,x) => s + x.cost.amount,0), 5500);
+  assert.equal(trip.expenses.filter(x => x.category === 'other').reduce((s,x) => s + x.cost.amount,0), 4500);
+  assert.ok(trip.expenses.every(x => x.status === 'estimated' && x.cost.currency === 'MXN'));
+});
