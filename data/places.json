@@ -4256,15 +4256,15 @@
   "pat27-perito": {
     "name": "Glaciar Perito Moreno",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Glaciar%20Perito%20Moreno%20Argentina.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Glaciar%20Perito%20Moreno%20Argentina.jpg"
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Perito%20Moreno%20Glacier%20Front.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Perito%20Moreno%20Glacier%20Front.jpg"
     }
   },
   "pat27-calafate": {
     "name": "Glaciar Perito Moreno, vista panorámica",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Perito%20Moreno%20Glacier%20(5470374290).jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Perito%20Moreno%20Glacier%20(5470374290).jpg"
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Perito%20Moreno%20Glacier.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Perito%20Moreno%20Glacier.jpg"
     }
   },
   "pat27-fitzroy": {
@@ -4284,8 +4284,8 @@
   "pat27-caminito": {
     "name": "Caminito · La Boca",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Caminito%20Buenos%20Aires%20Argentina.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Caminito%20Buenos%20Aires%20Argentina.jpg"
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Caminito%20in%202026.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Caminito%20in%202026.jpg"
     }
   }
 }
