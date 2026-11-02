@@ -220,7 +220,7 @@
       "mobility": "*El Chaltén → El Calafate:* bus interurbano aprox. 3 h; confirmar terminal, horario, equipaje y taxi local al hotel.",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [
-        "pat27-desierto"
+        "pat27-calafate"
       ],
       "headerPlaces": [],
       "spend": null,
@@ -324,7 +324,7 @@
       "mobility": "*El Calafate → FTE:* transporte hacia aeropuerto; AR1895 12:30–15:30 FTE→AEP según referencia 2026. *AEP → Recoleta:* taxi o traslado urbano.",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [
-        "pat27-nimez"
+        "pat27-teatro"
       ],
       "headerPlaces": [],
       "spend": null,
