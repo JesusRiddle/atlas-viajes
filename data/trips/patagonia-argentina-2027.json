@@ -322,10 +322,8 @@
       "pm": "Traslado al hotel de Recoleta y visita a Floralis Genérica y Plaza Francia según hora de llegada.",
       "night": "El Ateneo Grand Splendid, si no se visitó al principio; cena en Recoleta.",
       "mobility": "*El Calafate → FTE:* transporte hacia aeropuerto; AR1895 12:30–15:30 FTE→AEP según referencia 2026. *AEP → Recoleta:* taxi o traslado urbano.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
-      "places": [
-        "pat27-teatro"
-      ],
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. Fotografía de Recoleta/Floralis pendiente de selección verificada; no utilizar la del Teatro Colón para esta jornada.",
+      "places": [],
       "headerPlaces": [],
       "spend": null,
       "hotel": "buenos-aires-regreso",
