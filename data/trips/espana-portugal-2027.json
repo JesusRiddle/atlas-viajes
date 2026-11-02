@@ -163,7 +163,8 @@
       "places": [
         "gotico",
         "barcelona-cathedral",
-        "born-barcelona"
+        "born-barcelona",
+        "sp27-barceloneta"
       ],
       "headerPlaces": [
         "Aeropuerto de Barcelona-El Prat (BCN)",
@@ -174,6 +175,9 @@
       "hotel": "bcn-acta-splendid",
       "transportRefs": [
         "flight-international"
+      ],
+      "optionalPlaces": [
+        "sp27-barceloneta"
       ]
     },
     {
@@ -234,7 +238,11 @@
       "places": [
         "guell",
         "batllo",
-        "sp27-casa-mila"
+        "sp27-casa-mila",
+        "mnac",
+        "montjuic",
+        "sp27-turo-rovira",
+        "sp27-torre-glories"
       ],
       "headerPlaces": [
         "Park Güell",
@@ -246,7 +254,11 @@
       "hotel": "bcn-acta-splendid",
       "optionalPlaces": [
         "batllo",
-        "sp27-casa-mila"
+        "sp27-casa-mila",
+        "mnac",
+        "montjuic",
+        "sp27-turo-rovira",
+        "sp27-torre-glories"
       ]
     },
     {
@@ -318,7 +330,12 @@
       "mobility": "• *Centro → Pradera de San Isidro:* Metro o autobús urbano, verificando posibles cierres y desvíos por la festividad.\n• *Regreso:* Reservar tiempo de desplazamiento; usar transporte público antes que taxi si hay cortes viales.",
       "note": "• *Fecha tradicional:* San Isidro se celebra el 15 de mayo, sábado en 2027. El programa, recintos y actividades municipales de 2027 siguen por confirmar.\n• *Programa:* Los conciertos, escenarios y actos concretos se publicarán posteriormente; consultar la programación oficial.\n• *Afluencia:* Evitar citas rígidas y contar con multitudes en la Pradera.\n• *Paseo alternativo en Madrid:* El Templo de Debod y el entorno de Parque del Oeste pueden reemplazar otro paseo urbano si la agenda de San Isidro lo permite; no añadirlos a costa de las actividades principales.\n• *Parque del Oeste:* Si eliges el paseo opcional al Templo de Debod, puedes incluir el memorial de La Veneno en el entorno, según ubicación, tiempo y energía.",
       "places": [
-        "sp27-san-isidro"
+        "sp27-san-isidro",
+        "debod-madrid",
+        "sp27-veneno",
+        "segovia-aqueduct",
+        "segovia-alcazar",
+        "segovia-pradera-san-marcos"
       ],
       "headerPlaces": [
         "Pradera de San Isidro",
@@ -326,7 +343,14 @@
         "Jardines de Las Vistillas"
       ],
       "spend": null,
-      "hotel": "mad-bb-sol"
+      "hotel": "mad-bb-sol",
+      "optionalPlaces": [
+        "debod-madrid",
+        "sp27-veneno",
+        "segovia-aqueduct",
+        "segovia-alcazar",
+        "segovia-pradera-san-marcos"
+      ]
     },
     {
       "n": 9,
@@ -341,7 +365,8 @@
       "places": [
         "toledo",
         "toledo-cathedral",
-        "san-juan-reyes-toledo"
+        "san-juan-reyes-toledo",
+        "mirador-valle-toledo"
       ],
       "headerPlaces": [
         "Madrid-Puerta de Atocha",
@@ -353,7 +378,10 @@
       "transportRefs": [
         "rail-mad-tol"
       ],
-      "hotel": "mad-bb-sol"
+      "hotel": "mad-bb-sol",
+      "optionalPlaces": [
+        "mirador-valle-toledo"
+      ]
     },
     {
       "n": 10,
@@ -392,7 +420,8 @@
       "note": "• *Palacios Nazaríes:* Entrada nominativa con hora de acceso obligatoria; reservar una franja compatible con el recorrido completo y organizar Alcazaba y Generalife alrededor de ese acceso.\n• *Prioridad:* Si el recinto exige más tiempo, reducir Albaicín antes que sacrificar Alcazaba o Generalife.\n• *Cierre:* Confirmar acceso y horarios para el martes 18 de mayo de 2027 antes de comprar.",
       "places": [
         "alhambra",
-        "albaicin"
+        "albaicin",
+        "san-nicolas-granada"
       ],
       "headerPlaces": [
         "La Alhambra · Palacios Nazaríes",
@@ -401,7 +430,10 @@
         "Albaicín · mirador de San Nicolás"
       ],
       "spend": null,
-      "hotel": "grx-macia-plaza"
+      "hotel": "grx-macia-plaza",
+      "optionalPlaces": [
+        "san-nicolas-granada"
+      ]
     },
     {
       "n": 12,
@@ -572,7 +604,8 @@
       "note": "• *Jerónimos:* Confirmar horario turístico y posibles cierres extraordinarios antes de reservar entrada.\n• *Torre de Belém:* Contemplarla desde el exterior aunque el acceso interior esté cerrado o en obras.\n• *Comida:* Pastéis de Belém como degustación, sin suponer horario ni reservar mesa.\n• *Aperturas diferenciadas:* En los horarios oficiales de referencia, el claustro de Jerónimos abre desde las 09:30 del martes y la iglesia desde las 10:30; verificar horas vigentes en mayo de 2027 y la admisión de cada espacio por separado.\n• *Plan de lluvia opcional:* Museu Nacional do Azulejo puede sustituir parte del paseo de Belém únicamente si confirma su apertura al público en las fechas del viaje.",
       "places": [
         "jeronimos",
-        "belem"
+        "belem",
+        "discoveries-monument"
       ],
       "headerPlaces": [
         "Monasterio de los Jerónimos",
@@ -581,7 +614,10 @@
         "Pastéis de Belém"
       ],
       "spend": null,
-      "hotel": "lis-gat-rossio"
+      "hotel": "lis-gat-rossio",
+      "optionalPlaces": [
+        "discoveries-monument"
+      ]
     },
     {
       "n": 19,
@@ -594,7 +630,9 @@
       "mobility": "• *Rossio → Castelo:* Transporte urbano o taxi para evitar parte de la subida; continuar a pie cuesta abajo por Alfama.\n• *Miradores → hotel:* Tranvía, autobús, metro o taxi según afluencia y cansancio.\n• *Salida del 27:* Confirmar el medio de transporte al aeropuerto según el horario real del vuelo.",
       "note": "• *Cuestas:* Alfama tiene pavimento irregular y pendientes pronunciadas; priorizar rutas de bajada.\n• *Fado:* Opcional, sin comprar; si el regreso requiere salida muy temprana, omitirlo.\n• *Maleta:* Preparar todo antes de acostarse para no comprometer la mañana del vuelo.\n• *Alternativa opcional: Cascais y Boca do Inferno:* Sustituir el recorrido de Castelo de São Jorge, Alfama y miradores por una excursión de medio día largo o día completo. Tomar el tren desde Cais do Sodré a Cascais, pasear por el centro y la costa y llegar a Boca do Inferno a pie si el clima y la energía lo permiten, o en taxi/autobús local. Regresar a Lisboa con margen para preparar el vuelo; no sumar esta excursión al plan principal ni programarla después de una jornada completa en Alfama.",
       "places": [
-        "espana-portugal-2027-alfama"
+        "espana-portugal-2027-alfama",
+        "sp27-cascais",
+        "sp27-boca-inferno"
       ],
       "headerPlaces": [
         "Castelo de São Jorge",
@@ -614,6 +652,10 @@
           "label": "Cascais · turismo oficial",
           "url": "https://www.visitcascais.com/"
         }
+      ],
+      "optionalPlaces": [
+        "sp27-cascais",
+        "sp27-boca-inferno"
       ]
     },
     {
@@ -2215,6 +2257,21 @@
     "pena": "El Palacio da Pena combina torres, terrazas y fachadas de colores sobre las colinas arboladas de Sintra.",
     "regaleira": "La Quinta da Regaleira es conocida por sus jardines simbólicos, grutas y pozo iniciático.",
     "jeronimos": "El Monasterio de los Jerónimos exhibe la ornamentación manuelina vinculada a la historia marítima de Portugal.",
-    "belem": "La Torre de Belém es uno de los monumentos ribereños más reconocibles de Lisboa, incluso cuando la visita interior no está disponible."
+    "belem": "La Torre de Belém es uno de los monumentos ribereños más reconocibles de Lisboa, incluso cuando la visita interior no está disponible.",
+    "sp27-barceloneta": "Opcional: Playa y barrio marinero de Barceloneta; sustituye parte de un paseo urbano en Barcelona.",
+    "mnac": "Opcional: Museo Nacional de Arte de Cataluña, alternativa artística en Montjuïc.",
+    "montjuic": "Opcional: Montjuïc y sus miradores, con posibilidad de Salts Bar sujeto a apertura.",
+    "sp27-turo-rovira": "Opcional: Mirador panorámico sobre Barcelona; requiere tiempo de traslado y subida.",
+    "sp27-torre-glories": "Opcional: Exterior de la Torre Glòries, sin entrada al mirador.",
+    "debod-madrid": "Opcional: Templo de Debod, paseo alternativo en Madrid.",
+    "sp27-veneno": "Opcional: Memorial de Cristina Ortiz «La Veneno» en Parque del Oeste, dentro del paseo alternativo de Madrid.",
+    "segovia-aqueduct": "Opcional: Acueducto romano de Segovia, si eliges cambiar un día madrileño por esta excursión.",
+    "segovia-alcazar": "Opcional: Alcázar de Segovia, opción dentro de la excursión alternativa.",
+    "segovia-pradera-san-marcos": "Opcional: Pradera con vistas al Alcázar, opción fotográfica de Segovia.",
+    "mirador-valle-toledo": "Opcional: Panorámica de Toledo al otro lado del Tajo; exige traslado adicional.",
+    "san-nicolas-granada": "Opcional: Mirador de San Nicolás en Albaicín, según tiempo y energía.",
+    "discoveries-monument": "Opcional: Padrão dos Descobrimentos, parada opcional durante el paseo por Belém.",
+    "sp27-cascais": "Opcional: Paseo costero por Cascais como sustitución de la jornada urbana de Alfama.",
+    "sp27-boca-inferno": "Opcional: Acantilado y formación rocosa de Boca do Inferno, en la excursión alternativa a Cascais."
   }
 }
