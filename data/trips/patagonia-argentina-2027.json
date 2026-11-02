@@ -79,7 +79,7 @@
       "pm": "09:35 salida MEX→EZE, vuelo directo según la presentación antigua; comida y descanso a bordo.",
       "night": "21:50 llegada prevista a EZE, migración y traslado nocturno hasta Recoleta; confirmar recepción tardía del hotel.",
       "mobility": "*MEX → EZE:* Aeroméxico directo 09:35–21:50, horario histórico de 2026. *EZE → Recoleta:* taxi oficial o transporte contratado tras migración y equipaje; llegada nocturna.",
-      "note": "Llegada al aeropuerto EZE a las 21:50 en el escenario histórico: considerar migración, equipaje y traslado nocturno; el check-in será tarde. La fecha y el horario no están confirmados para 2027. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Llegada al aeropuerto EZE a las 21:50 en el escenario histórico: considerar migración, equipaje y traslado nocturno; el check-in será tarde. La fecha y el horario no están confirmados para 2027. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
@@ -98,7 +98,7 @@
       "pm": "Recorrer Palermo Soho y Plaza Serrano; almorzar empanadas o parrilla. El Ateneo Grand Splendid puede entrar de regreso según horario.",
       "night": "Cena cerca del hotel y preparación de equipaje; el vuelo del día siguiente exige traslado de madrugada.",
       "mobility": "*Recoleta → Centro y Palermo:* recorridos a pie por sectores y transporte urbano/taxi entre barrios. Confirmar horarios de Teatro Colón antes de organizar el recorrido.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. • No te pierdas: Salón Dorado del Teatro Colón, espacio monumental inspirado en los grandes teatros europeos; confirmar las salas incluidas en la visita guiada.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día. • No te pierdas: Salón Dorado del Teatro Colón, espacio monumental inspirado en los grandes teatros europeos; confirmar las salas incluidas en la visita guiada.",
       "places": [
         "pat27-teatro"
       ],
@@ -117,7 +117,7 @@
       "pm": "Recoger equipaje y tomar autobús o transfer desde FTE hasta El Chaltén, solo con margen y frecuencia confirmados; check-in.",
       "night": "Paseo breve por avenida San Martín y compra de vianda, agua y abrigo para la montaña.",
       "mobility": "*Recoleta → AEP:* taxi contratado antes del amanecer; vuelo de referencia AR1840 05:10–08:30. *FTE → El Chaltén:* shuttle desde el aeropuerto sujeto a disponibilidad, o conexión por terminal de El Calafate; NO dar por garantizado el enlace.",
-      "note": "El vuelo de referencia sale de AEP a las 05:10; requiere salida muy temprana del hotel de Buenos Aires. Verificar traslado de madrugada y que exista autobús o shuttle FTE→El Chaltén tras llegar a las 08:30. No comprometer esa conexión antes de tener horarios de 2027. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "El vuelo de referencia sale de AEP a las 05:10; requiere salida muy temprana del hotel de Buenos Aires. Verificar traslado de madrugada y que exista autobús o shuttle FTE→El Chaltén tras llegar a las 08:30. No comprometer esa conexión antes de tener horarios de 2027. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día.",
       "places": [
         "pat27-fitzroy"
       ],
@@ -139,7 +139,7 @@
       "pm": "Ascenso exigente a Laguna de los Tres; comer vianda y descender por ruta autorizada, posiblemente pasando por Laguna Capri.",
       "night": "Regresar al alojamiento, hidratarse y recuperarse. Si el pronóstico desaconseja subir, intercambiar íntegramente esta jornada por otra ligera.",
       "mobility": "*El Chaltén → inicio del trekking:* punto de reunión por operador; solicitar detalle del transfer a Río Eléctrico si se ofrece. *Regreso:* descenso por sendero habilitado hasta El Chaltén. Sin transporte de vuelta si termina en el pueblo.",
-      "note": "Laguna de los Tres: 25 km según referencia oficial de Parques Nacionales, entre 8 y 11 horas según itinerario; dificultad media-alta. Exigir guía habilitado, clima seguro y capacidad física suficiente. Laguna Capri es la alternativa corta; no subir con hielo peligroso. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Laguna de los Tres: 25 km según referencia oficial de Parques Nacionales, entre 8 y 11 horas según itinerario; dificultad media-alta. Exigir guía habilitado, clima seguro y capacidad física suficiente. Laguna Capri es la alternativa corta; no subir con hielo peligroso. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día.",
       "places": [
         "pat27-laguna-tres"
       ],
@@ -162,7 +162,7 @@
       "pm": "Almuerzo, miradores Los Cóndores y Las Águilas únicamente si el esfuerzo del día anterior lo permite.",
       "night": "Cena en El Chaltén y revisión meteorológica para decidir las siguientes excursiones.",
       "mobility": "*Estancia Bonanza:* transporte y encuentro por confirmar con operador. Miradores próximos a El Chaltén a pie únicamente si hay energía.",
-      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día.",
       "places": [
         "pat27-fitzroy"
       ],
@@ -181,7 +181,7 @@
       "pm": "Navegación programada y senderos fáciles de Vespignani si el paquete concreto los incluye; tiempo para fotografías.",
       "night": "Regreso a El Chaltén y cena. Jornada intercambiable con Laguna de los Tres si aparece mejor pronóstico.",
       "mobility": "*Lago del Desierto:* traslado por Ruta Provincial 41; verificar traslado incluido, embarcación y senderos Vespignani antes de contratar.",
-      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día.",
       "places": [
         "pat27-desierto"
       ],
@@ -203,7 +203,7 @@
       "pm": "Laguna Capri como alternativa si no se pasó por ella en la caminata principal; paseo corto por el pueblo si ya hubo mucha actividad.",
       "night": "Cena y preparación para el autobús a El Calafate.",
       "mobility": "*Chorrillo del Salto o Laguna Capri:* caminata desde El Chaltén, sin vehículo salvo alternativa elegida. Si corresponde trekking guiado, verificar traslado especial.",
-      "note": "Ultima oportunidad de reprogramación de Laguna de los Tres; Lago del Desierto, cabalgata y paseos cortos pueden intercambiarse, sujetos a cupos y políticas de cancelación. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Ultima oportunidad de reprogramación de Laguna de los Tres; Lago del Desierto, cabalgata y paseos cortos pueden intercambiarse, sujetos a cupos y políticas de cancelación. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día.",
       "places": [
         "pat27-fitzroy"
       ],
@@ -222,7 +222,7 @@
       "pm": "Check-in en Hotel Sierra Nevada (candidato). Recorrer avenida del Libertador y la costanera del Lago Argentino.",
       "night": "Cena de cordero patagónico o trucha; preparar indumentaria para el glaciar.",
       "mobility": "*El Chaltén → El Calafate:* bus interurbano aprox. 3 h; confirmar terminal, horario, equipaje y taxi local al hotel.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. Jornada de traslado sin atractivo fotográfico nuevo confirmado; evitar reutilizar una foto que corresponda a otra excursión.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día. Jornada de traslado sin atractivo fotográfico nuevo confirmado; evitar reutilizar una foto que corresponda a otra excursión.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
@@ -241,7 +241,7 @@
       "pm": "Navegación por Lago Rico y caminata con crampones según la modalidad y requisitos físicos contratados; panorámicas del Perito Moreno.",
       "night": "Regreso al hotel, cena y descanso. No programar otra excursión exigente.",
       "mobility": "*Hotel → Parque Nacional Los Glaciares:* traslado de excursión Minitrekking solo si está incluido en tarifa; verificar punto de encuentro. Acceso a pasarelas sujeto a itinerario contratado.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. • No te pierdas: distintas vistas de la cara sur del Perito Moreno desde las pasarelas; los desprendimientos de hielo son impredecibles y no deben prometerse.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día. • No te pierdas: distintas vistas de la cara sur del Perito Moreno desde las pasarelas; los desprendimientos de hielo son impredecibles y no deben prometerse.",
       "places": [
         "pat27-perito"
       ],
@@ -263,7 +263,7 @@
       "pm": "Todo Glaciares: recorrer Lago Argentino, Canal Upsala y sector Spegazzini; descenso a base/refugio solo si está incluido y operativo.",
       "night": "Regreso a El Calafate y cena. Itinerario sujeto a hielo, viento y operatividad.",
       "mobility": "*El Calafate → Puerto Punta Bandera:* traslado contratado o separado según paquete Todo Glaciares; navegación y regreso según operador.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. Fotografía del glaciar Spegazzini pendiente de validar; no sustituirla por Perito Moreno porque son excursiones diferentes.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día. Fotografía del glaciar Spegazzini pendiente de validar; no sustituirla por Perito Moreno porque son excursiones diferentes.",
       "places": [],
       "headerPlaces": [
         "Lago Argentino",
@@ -284,7 +284,7 @@
       "pm": "Costanera y centro de El Calafate; reservar esta jornada para reprogramar una excursión suspendida.",
       "night": "Cena sin actividad obligatoria de pago y revisión del plan del 15 de noviembre.",
       "mobility": "*Hotel ↔ Laguna Nimez:* caminata o taxi según alojamiento; acceso y horarios de la reserva por confirmar.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día.",
       "places": [
         "pat27-nimez"
       ],
@@ -303,7 +303,7 @@
       "pm": "Si ya se hicieron ambas excursiones, visitar el museo Glaciarium como alternativa de menor esfuerzo (opcional), sin duplicar glaciares.",
       "night": "Preparar equipaje para vuelo del día siguiente; reconsiderar esta quinta noche si el programa se simplifica.",
       "mobility": "*Hotel ↔ Glaciarium (opcional):* utilizar transporte del museo si opera, o taxi, cotizar ambos. Día disponible para recuperar excursiones.",
-      "note": "Quinta noche en El Calafate bajo evaluación: conservar solo si aporta excursión diferenciada o margen meteorológico valioso; presupuestada provisionalmente. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. Galería pendiente: Glaciarium es opcional y no corresponde reutilizar una fotografía de Laguna Nimez para ilustrarlo.",
+      "note": "Quinta noche en El Calafate bajo evaluación: conservar solo si aporta excursión diferenciada o margen meteorológico valioso; presupuestada provisionalmente. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día. Galería pendiente: Glaciarium es opcional y no corresponde reutilizar una fotografía de Laguna Nimez para ilustrarlo.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
@@ -320,7 +320,7 @@
       "pm": "Traslado al hotel de Recoleta y visita a Floralis Genérica y Plaza Francia según hora de llegada.",
       "night": "El Ateneo Grand Splendid, si no se visitó al principio; cena en Recoleta.",
       "mobility": "*El Calafate → FTE:* transporte hacia aeropuerto; AR1895 12:30–15:30 FTE→AEP según referencia 2026. *AEP → Recoleta:* taxi o traslado urbano.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. Fotografía de Recoleta/Floralis pendiente de selección verificada; no utilizar la del Teatro Colón para esta jornada.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día. Fotografía de Recoleta/Floralis pendiente de selección verificada; no utilizar la del Teatro Colón para esta jornada.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
@@ -339,7 +339,7 @@
       "pm": "Visitar el Mercado de San Telmo, Plaza Dorrego y calle Defensa; por la tarde Puerto Madero y Puente de la Mujer.",
       "night": "Cena final en Buenos Aires; dejar lista la maleta para el regreso.",
       "mobility": "*Recoleta → La Boca → San Telmo → Puerto Madero:* caminar dentro de cada zona; taxi o transporte urbano entre zonas.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. • No te pierdas: las fachadas de conventillos de Caminito, parte de la memoria migratoria del barrio de La Boca. San Telmo conserva su antiguo mercado y arquitectura de distintas épocas.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día. • No te pierdas: las fachadas de conventillos de Caminito, parte de la memoria migratoria del barrio de La Boca. San Telmo conserva su antiguo mercado y arquitectura de distintas épocas.",
       "places": [
         "pat27-caminito"
       ],
@@ -358,7 +358,7 @@
       "pm": "Vuelo directo EZE→MEX de Aeroméxico, sin comprometer visitas adicionales.",
       "night": "Llegada estimada MEX 18:50 del mismo 18 de noviembre según horario de 2026; traslado a casa.",
       "mobility": "*Recoleta → EZE:* traslado con margen internacional. Aeroméxico directo EZE 12:00→MEX 18:50, horario histórico 2026; no planificar turismo este día.",
-      "note": "Con el vuelo histórico EZE 12:00 → MEX 18:50 no programar visitas turísticas; prever traslado al aeropuerto y margen de documentación. Llegada a México el mismo 18 de noviembre únicamente en este escenario de referencia. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Con el vuelo histórico EZE 12:00 → MEX 18:50 no programar visitas turísticas; prever traslado al aeropuerto y margen de documentación. Llegada a México el mismo 18 de noviembre únicamente en este escenario de referencia. Gastos ya distribuidos en el presupuesto global; evitar volver a sumarlos por día.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
@@ -465,15 +465,48 @@
       "notes": "Referencia histórica de la presentación de 2026: Aerolíneas Argentinas AEP–FTE–AEP, $23,250 MXN para dos incluyendo una maleta documentada compartida de 15 kg según el escenario original. Vuelos ilustrativos AR1840 (05:10–08:30) y AR1895 (12:30–15:30); NO equivalen a vuelos ni horarios confirmados en noviembre 2027. Revisar equipaje real y condiciones al salir inventario."
     },
     {
-      "id": "lodging",
+      "id": "hotel-ba-inicio",
       "category": "lodging",
-      "concept": "14 noches de alojamiento para dos",
+      "concept": "Buenos Aires · 2 noches iniciales",
       "cost": {
-        "amount": 30000,
+        "amount": 4500,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
+    },
+    {
+      "id": "hotel-chalten",
+      "category": "lodging",
+      "concept": "El Chaltén · 5 noches",
+      "cost": {
+        "amount": 11500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
+    },
+    {
+      "id": "hotel-calafate",
+      "category": "lodging",
+      "concept": "El Calafate · 5 noches",
+      "cost": {
+        "amount": 10000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
+    },
+    {
+      "id": "hotel-ba-regreso",
+      "category": "lodging",
+      "concept": "Buenos Aires · 2 noches finales",
+      "cost": {
+        "amount": 4000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
     },
     {
       "id": "food",
@@ -520,48 +553,103 @@
       "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
     },
     {
-      "id": "other-activities",
+      "id": "bonanza",
       "category": "activity",
-      "concept": "Lago del Desierto y cabalgata para dos",
+      "concept": "Estancia Bonanza · cabalgata para dos (opcional)",
       "cost": {
-        "amount": 7000,
+        "amount": 3500,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
     },
     {
-      "id": "ground",
+      "id": "lago-desierto",
+      "category": "activity",
+      "concept": "Lago del Desierto · excursión para dos (opcional)",
+      "cost": {
+        "amount": 3500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
+    },
+    {
+      "id": "bus-fte-chalten-budget",
       "category": "transport",
-      "concept": "Buses, transfers y movilidad urbana",
+      "concept": "FTE → El Chaltén · transporte para dos",
       "cost": {
-        "amount": 5500,
+        "amount": 1800,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
     },
     {
-      "id": "entry",
+      "id": "bus-chalten-calafate-budget",
+      "category": "transport",
+      "concept": "El Chaltén → El Calafate · transporte para dos",
+      "cost": {
+        "amount": 1500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
+    },
+    {
+      "id": "ground-urban",
+      "category": "transport",
+      "concept": "Taxis, aeropuertos y movilidad urbana para dos",
+      "cost": {
+        "amount": 2200,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
+    },
+    {
+      "id": "parks",
       "category": "tickets",
-      "concept": "Parques y entradas",
+      "concept": "Parque Nacional Los Glaciares · accesos para dos",
       "cost": {
-        "amount": 4500,
+        "amount": 3500,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
     },
     {
-      "id": "insurance",
-      "category": "other",
-      "concept": "Seguro médico y contingencias menores",
+      "id": "culture",
+      "category": "tickets",
+      "concept": "Entradas culturales y reserva natural para dos",
       "cost": {
-        "amount": 4500,
+        "amount": 1000,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
+    },
+    {
+      "id": "insurance-only",
+      "category": "other",
+      "concept": "Seguro de viaje para dos",
+      "cost": {
+        "amount": 3000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
+    },
+    {
+      "id": "minor-reserve",
+      "category": "other",
+      "concept": "Reserva menor para imprevistos",
+      "cost": {
+        "amount": 1500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes."
     }
   ],
   "majorTransport": [
@@ -848,7 +936,7 @@
       "checkIn": "2027-11-04",
       "checkOut": "2027-11-06",
       "status": "Candidato · no reservado",
-      "rate": null,
+      "rate": "Asignación presupuestaria para esta estancia: $4,500 MXN total para habitación doble. NO cotización del hotel.",
       "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final. La partida global de hospedaje $30,000 MXN es un supuesto para las cuatro estancias; no corresponde a tarifa de este hotel.",
       "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
       "links": [
@@ -867,7 +955,7 @@
       "checkIn": "2027-11-06",
       "checkOut": "2027-11-11",
       "status": "Candidato · no reservado",
-      "rate": null,
+      "rate": "Asignación presupuestaria para esta estancia: $11,500 MXN total para habitación doble. NO cotización del hotel.",
       "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final. La partida global de hospedaje $30,000 MXN es un supuesto para las cuatro estancias; no corresponde a tarifa de este hotel.",
       "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
       "links": [
@@ -886,7 +974,7 @@
       "checkIn": "2027-11-11",
       "checkOut": "2027-11-16",
       "status": "Candidato · no reservado",
-      "rate": null,
+      "rate": "Asignación presupuestaria para esta estancia: $10,000 MXN total para habitación doble. NO cotización del hotel.",
       "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final. La partida global de hospedaje $30,000 MXN es un supuesto para las cuatro estancias; no corresponde a tarifa de este hotel.",
       "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
       "links": [
@@ -905,7 +993,7 @@
       "checkIn": "2027-11-16",
       "checkOut": "2027-11-18",
       "status": "Candidato · no reservado",
-      "rate": null,
+      "rate": "Asignación presupuestaria para esta estancia: $4,000 MXN total para habitación doble. NO cotización del hotel.",
       "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final. La partida global de hospedaje $30,000 MXN es un supuesto para las cuatro estancias; no corresponde a tarifa de este hotel.",
       "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
       "links": [
@@ -1062,7 +1150,7 @@
     110000,
     155000
   ],
-  "budgetNote": "Escenario ilustrativo para DOS personas: $144,648 MXN. Vuelos tomados como referencias históricas de la presentación de 2026 ($24,398 internacionales y $23,250 nacionales); las demás categorías son supuestos de planeación y NO cotizaciones. La cifra incluye 14 noches, guía grupal a Laguna de los Tres, Minitrekking, Todo Glaciares y un supuesto conjunto de cabalgata y Lago del Desierto. El rubro 'Seguro médico y contingencias menores' no constituye una reserva amplia para imprevistos. Evitar duplicar traslados o entradas ya incluidos en excursiones. Meta de optimización: aproximarse a $135,000 MXN, sujeta a tarifas 2027. Se conservaron referencias históricas en MXN; ARS no se convierte hasta contar con un tipo de cambio documentado con fecha y fuente.",
+  "budgetNote": "Estimación de trabajo para DOS personas: $144,648 MXN, distribuida en 19 partidas orientativas. Vuelos internacionales ($24,398 MXN) y nacionales ($23,250 MXN) proceden de la presentación de 2026, NO de una cotización para 2027. Los $30,000 MXN de alojamiento se repartieron por noches y ciudades; autobuses, taxis, parques, excursiones y seguro son asignaciones de presupuesto, no precios comprobados. La reserva menor de $1,500 MXN es reducida para un viaje de montaña: considerar un fondo adicional antes de comprar. Los traslados/entradas que un operador incluya deberán descontarse del renglón correspondiente para evitar duplicación. La cabalgata y Lago del Desierto son opciones presupuestadas, no compromisos; si se descartan, reducir el escenario. Conversión ARS/MXN pendiente de tasa fechada y verificable.",
   "placeDescriptions": {
     "pat27-laguna-tres": "Laguna de los Tres · caminata exigente, condicionada a guía y clima seguro",
     "pat27-perito": "Glaciar Perito Moreno · Minitrekking y pasarelas",
