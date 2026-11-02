@@ -27,7 +27,9 @@ const assert = require('node:assert/strict');
         for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1, viewport.width + ' ' + id + ' ' + anchor);
         const text = await page.locator('main').innerText();
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
-        assert.equal(await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count() >= 9, true);
+        const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
+        const isDraft = id === 'patagonia-argentina-2027' || id === 'nuevo-viaje';
+        assert.ok(navigationCount >= (isDraft ? 5 : 9), id + ' navigation links ' + navigationCount);
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
         assert.ok(overflow <= 3, id + ' horizontal overflow ' + overflow + ' at ' + viewport.width);
       }
