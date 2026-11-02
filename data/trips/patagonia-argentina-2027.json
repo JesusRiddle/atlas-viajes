@@ -63,6 +63,10 @@
     {
       "city": "El Calafate · hielo y navegación",
       "description": "Contemplar el glaciar Perito Moreno desde las pasarelas, caminar sobre el hielo con guía habilitado y navegar por Lago Argentino hacia Upsala y Spegazzini. En las cenas, probar cordero patagónico o trucha y dulces de calafate."
+    },
+    {
+      "city": "El Calafate · patrimonio de los glaciares",
+      "description": "Descubrir en las pasarelas el movimiento del Perito Moreno y cómo las morrenas, el hielo y el Lago Argentino dibujan el paisaje. Glaciarium queda como alternativa educativa, no actividad obligatoria."
     }
   ],
   "days": [
@@ -94,7 +98,7 @@
       "pm": "Recorrer Palermo Soho y Plaza Serrano; almorzar empanadas o parrilla. El Ateneo Grand Splendid puede entrar de regreso según horario.",
       "night": "Cena cerca del hotel y preparación de equipaje; el vuelo del día siguiente exige traslado de madrugada.",
       "mobility": "*Recoleta → Centro y Palermo:* recorridos a pie por sectores y transporte urbano/taxi entre barrios. Confirmar horarios de Teatro Colón antes de organizar el recorrido.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. • No te pierdas: Salón Dorado del Teatro Colón, espacio monumental inspirado en los grandes teatros europeos; confirmar las salas incluidas en la visita guiada.",
       "places": [
         "pat27-teatro"
       ],
@@ -239,7 +243,7 @@
       "pm": "Navegación por Lago Rico y caminata con crampones según la modalidad y requisitos físicos contratados; panorámicas del Perito Moreno.",
       "night": "Regreso al hotel, cena y descanso. No programar otra excursión exigente.",
       "mobility": "*Hotel → Parque Nacional Los Glaciares:* traslado de excursión Minitrekking solo si está incluido en tarifa; verificar punto de encuentro. Acceso a pasarelas sujeto a itinerario contratado.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. • No te pierdas: distintas vistas de la cara sur del Perito Moreno desde las pasarelas; los desprendimientos de hielo son impredecibles y no deben prometerse.",
       "places": [
         "pat27-perito"
       ],
@@ -341,7 +345,7 @@
       "pm": "Visitar el Mercado de San Telmo, Plaza Dorrego y calle Defensa; por la tarde Puerto Madero y Puente de la Mujer.",
       "night": "Cena final en Buenos Aires; dejar lista la maleta para el regreso.",
       "mobility": "*Recoleta → La Boca → San Telmo → Puerto Madero:* caminar dentro de cada zona; taxi o transporte urbano entre zonas.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. • No te pierdas: las fachadas de conventillos de Caminito, parte de la memoria migratoria del barrio de La Boca. San Telmo conserva su antiguo mercado y arquitectura de distintas épocas.",
       "places": [
         "pat27-caminito"
       ],
@@ -425,6 +429,16 @@
             {
               "label": "Turismo oficial de Santa Cruz",
               "url": "https://turismo.santacruz.gob.ar/donde-ir/el-chalten"
+            }
+          ]
+        },
+        {
+          "title": "Teatro Colón · visita guiada",
+          "description": "Confirmar calendario oficial y cupos después de fijar el itinerario aéreo; priorizar el 5 de noviembre.",
+          "links": [
+            {
+              "label": "Sitio oficial Teatro Colón",
+              "url": "https://teatrocolon.org.ar/"
             }
           ]
         }
@@ -632,6 +646,66 @@
       "kind": "Alojamiento · 5 noches",
       "base": true,
       "order": 3
+    },
+    {
+      "name": "Laguna de los Tres",
+      "coords": [
+        -49.2809,
+        -72.9792
+      ],
+      "kind": "Excursión · trekking exigente",
+      "base": false,
+      "order": 4
+    },
+    {
+      "name": "Glaciar Perito Moreno",
+      "coords": [
+        -50.4967,
+        -73.1378
+      ],
+      "kind": "Excursión · Minitrekking",
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Lago del Desierto",
+      "coords": [
+        -49.0509,
+        -72.859
+      ],
+      "kind": "Excursión · navegación opcional",
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Puerto Punta Bandera",
+      "coords": [
+        -50.314,
+        -72.797
+      ],
+      "kind": "Excursión · Todo Glaciares",
+      "base": false,
+      "order": 7
+    },
+    {
+      "name": "Laguna Nimez",
+      "coords": [
+        -50.334,
+        -72.282
+      ],
+      "kind": "Paseo · reserva natural",
+      "base": false,
+      "order": 8
+    },
+    {
+      "name": "Caminito",
+      "coords": [
+        -34.638,
+        -58.362
+      ],
+      "kind": "Paseo · Buenos Aires",
+      "base": false,
+      "order": 9
     }
   ],
   "planningDetails": {
@@ -805,7 +879,7 @@
       "title": "Documentación y consejos prácticos",
       "badge": "Verificar antes de viajar",
       "tone": "orange",
-      "text": "Las personas mexicanas con pasaporte ordinario vigente no requieren visa para turismo de hasta 90 días; la SRE indica llevar pasaje de regreso, reserva de alojamiento, solvencia y seguro médico con cobertura en Argentina. Confirmar requisitos de escalas y condiciones vigentes antes de comprar. Argentina utiliza predominantemente clavijas tipo I, 220 V/50 Hz; para equipos mexicanos A/B llevar adaptador adecuado, con conexión de tierra cuando proceda, y verificar INPUT 100–240 V. El adaptador no convierte voltaje."
+      "text": "Las personas mexicanas con pasaporte ordinario vigente no requieren visa para turismo de hasta 90 días; la SRE indica llevar pasaje de regreso, reserva de alojamiento, solvencia y seguro médico con cobertura en Argentina. Confirmar requisitos de escalas y condiciones vigentes antes de comprar. Argentina utiliza predominantemente clavijas tipo I, 220 V/50 Hz; para equipos mexicanos A/B llevar adaptador adecuado, con conexión de tierra cuando proceda, y verificar INPUT 100–240 V. El adaptador no convierte voltaje. Seguro médico con cobertura para trekking y actividades sobre hielo recomendado; verificar exclusiones."
     }
   ],
   "tips": [],
