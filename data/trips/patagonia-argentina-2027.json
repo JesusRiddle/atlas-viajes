@@ -222,10 +222,8 @@
       "pm": "Check-in en Hotel Sierra Nevada (candidato). Recorrer avenida del Libertador y la costanera del Lago Argentino.",
       "night": "Cena de cordero patagónico o trucha; preparar indumentaria para el glaciar.",
       "mobility": "*El Chaltén → El Calafate:* bus interurbano aprox. 3 h; confirmar terminal, horario, equipaje y taxi local al hotel.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
-      "places": [
-        "pat27-calafate"
-      ],
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. Jornada de traslado sin atractivo fotográfico nuevo confirmado; evitar reutilizar una foto que corresponda a otra excursión.",
+      "places": [],
       "headerPlaces": [],
       "spend": null,
       "hotel": "calafate-sierra",
@@ -265,10 +263,8 @@
       "pm": "Todo Glaciares: recorrer Lago Argentino, Canal Upsala y sector Spegazzini; descenso a base/refugio solo si está incluido y operativo.",
       "night": "Regreso a El Calafate y cena. Itinerario sujeto a hielo, viento y operatividad.",
       "mobility": "*El Calafate → Puerto Punta Bandera:* traslado contratado o separado según paquete Todo Glaciares; navegación y regreso según operador.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
-      "places": [
-        "pat27-calafate"
-      ],
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto. Fotografía del glaciar Spegazzini pendiente de validar; no sustituirla por Perito Moreno porque son excursiones diferentes.",
+      "places": [],
       "headerPlaces": [
         "Lago Argentino",
         "Upsala",
@@ -1068,7 +1064,7 @@
     110000,
     155000
   ],
-  "budgetNote": "Escenario ilustrativo para DOS personas: $144,648 MXN. Vuelos tomados como referencias históricas de la presentación de 2026 ($24,398 internacionales y $23,250 nacionales); las demás categorías son supuestos de planeación y NO cotizaciones. La cifra incluye 14 noches, guía grupal a Laguna de los Tres, Minitrekking, Todo Glaciares y un supuesto conjunto de cabalgata y Lago del Desierto. El rubro 'Seguro médico y contingencias menores' no constituye una reserva amplia para imprevistos. Evitar duplicar traslados o entradas ya incluidos en excursiones. Meta de optimización: aproximarse a $135,000 MXN, sujeta a tarifas 2027.",
+  "budgetNote": "Escenario ilustrativo para DOS personas: $144,648 MXN. Vuelos tomados como referencias históricas de la presentación de 2026 ($24,398 internacionales y $23,250 nacionales); las demás categorías son supuestos de planeación y NO cotizaciones. La cifra incluye 14 noches, guía grupal a Laguna de los Tres, Minitrekking, Todo Glaciares y un supuesto conjunto de cabalgata y Lago del Desierto. El rubro 'Seguro médico y contingencias menores' no constituye una reserva amplia para imprevistos. Evitar duplicar traslados o entradas ya incluidos en excursiones. Meta de optimización: aproximarse a $135,000 MXN, sujeta a tarifas 2027. Se conservaron referencias históricas en MXN; ARS no se convierte hasta contar con un tipo de cambio documentado con fecha y fuente.",
   "placeDescriptions": {
     "pat27-laguna-tres": "Laguna de los Tres · caminata exigente, condicionada a guía y clima seguro",
     "pat27-perito": "Glaciar Perito Moreno · Minitrekking y pasarelas",
