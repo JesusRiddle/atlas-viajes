@@ -4231,5 +4231,40 @@
       "author": "Wikimedia Commons",
       "attribution": "Wikimedia Commons / Wikimedia Commons"
     }
+  },
+  "pat27-teatro": {
+    "name": "Teatro Colón",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Teatro%20Colon%2C%20Buenos%20Aires%2C%20Argentina.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Teatro%20Colon%2C%20Buenos%20Aires%2C%20Argentina.jpg"
+    }
+  },
+  "pat27-laguna-tres": {
+    "name": "Laguna de los Tres",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cerro%20Madsen%20(west%20face)%20and%20Laguna%20de%20los%20tres.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Cerro%20Madsen%20(west%20face)%20and%20Laguna%20de%20los%20tres.JPG"
+    }
+  },
+  "pat27-desierto": {
+    "name": "Lago del Desierto",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lago%20del%20Desierto.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lago%20del%20Desierto.jpg"
+    }
+  },
+  "pat27-perito": {
+    "name": "Glaciar Perito Moreno",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Glaciar%20Perito%20Moreno%20Argentina.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Glaciar%20Perito%20Moreno%20Argentina.jpg"
+    }
+  },
+  "pat27-calafate": {
+    "name": "Glaciar Perito Moreno, vista panorámica",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Perito%20Moreno%20Glacier%20(5470374290).jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Perito%20Moreno%20Glacier%20(5470374290).jpg"
+    }
   }
 }
