@@ -71,224 +71,291 @@
       "date": "2027-11-04",
       "title": "CDMX → Buenos Aires · vuelo directo y llegada",
       "base": "Buenos Aires",
-      "am": "09:35 · Salida prevista de MEX en vuelo directo Aeroméxico, horario tomado de la presentación de 2026; aún no confirmado para 2027.",
-      "pm": "Vuelo internacional hacia Ezeiza. Preparar documentación, equipaje y traslado al hotel.",
-      "night": "21:50 · Llegada prevista a EZE (hora argentina). Traslado a Recoleta y primera noche en Buenos Aires; hora referencial de 2026.",
+      "am": "Mañana: traslado al AICM y registro para Aeroméxico; confirmar terminal y equipaje según boleto cuando esté disponible.",
+      "pm": "09:35 salida MEX→EZE, vuelo directo según la presentación antigua; comida y descanso a bordo.",
+      "night": "21:50 llegada prevista a EZE, migración y traslado nocturno hasta Recoleta; confirmar recepción tardía del hotel.",
       "mobility": "MEX 09:35 → EZE 21:50 · directo con Aeroméxico, referencia exacta del escenario 2026, no vuelo confirmado 2027.",
-      "note": "Llegada al aeropuerto EZE a las 21:50 en el escenario histórico: considerar migración, equipaje y traslado nocturno; el check-in será tarde. La fecha y el horario no están confirmados para 2027.",
-      "places": [],
+      "note": "Llegada al aeropuerto EZE a las 21:50 en el escenario histórico: considerar migración, equipaje y traslado nocturno; el check-in será tarde. La fecha y el horario no están confirmados para 2027. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "places": [
+        "pat27-teatro"
+      ],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "buenos-aires-inicio"
+      "hotel": "buenos-aires-inicio",
+      "optionalPlaces": [],
+      "transportRefs": [
+        "flight-international"
+      ]
     },
     {
       "n": 2,
       "date": "2027-11-05",
       "title": "Buenos Aires · Teatro Colón, centro y Palermo",
       "base": "Buenos Aires",
-      "am": "Visita guiada del Teatro Colón, Obelisco y paseo por Palermo Soho; confirmar horarios oficiales.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en Buenos Aires; alojamiento aún no seleccionado.",
+      "am": "Desayunar y visitar Teatro Colón con reserva de visita guiada, seguido de Obelisco y Avenida 9 de Julio.",
+      "pm": "Recorrer Palermo Soho y Plaza Serrano; almorzar empanadas o parrilla. El Ateneo Grand Splendid puede entrar de regreso según horario.",
+      "night": "Cena cerca del hotel y preparación de equipaje; el vuelo del día siguiente exige traslado de madrugada.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
-      "places": [],
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "places": [
+        "pat27-teatro"
+      ],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "buenos-aires-inicio"
+      "hotel": "buenos-aires-inicio",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 3,
       "date": "2027-11-06",
       "title": "Buenos Aires → El Chaltén",
       "base": "El Chaltén",
-      "am": "Vuelo a El Calafate y autobús o shuttle a El Chaltén. Exigir conexión holgada o ajustar la noche si no es viable.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
+      "am": "Salida muy temprana hacia AEP; AR1840 05:10–08:30 hacia FTE como referencia histórica.",
+      "pm": "Recoger equipaje y tomar autobús o transfer desde FTE hasta El Chaltén, solo con margen y frecuencia confirmados; check-in.",
+      "night": "Paseo breve por avenida San Martín y compra de vianda, agua y abrigo para la montaña.",
       "mobility": "Aerolíneas Argentinas AR1840 · AEP 05:10 → FTE 08:30 (referencia de la presentación 2026). Traslado FTE→El Chaltén pendiente de combinar con bus o shuttle.",
-      "note": "El vuelo de referencia sale de AEP a las 05:10; requiere salida muy temprana del hotel de Buenos Aires. Verificar traslado de madrugada y que exista autobús o shuttle FTE→El Chaltén tras llegar a las 08:30. No comprometer esa conexión antes de tener horarios de 2027.",
+      "note": "El vuelo de referencia sale de AEP a las 05:10; requiere salida muy temprana del hotel de Buenos Aires. Verificar traslado de madrugada y que exista autobús o shuttle FTE→El Chaltén tras llegar a las 08:30. No comprometer esa conexión antes de tener horarios de 2027. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "chalten-senderos"
+      "hotel": "chalten-senderos",
+      "optionalPlaces": [],
+      "transportRefs": [
+        "flight-domestic",
+        "bus-fte-chalten"
+      ]
     },
     {
       "n": 4,
       "date": "2027-11-07",
       "title": "Laguna de los Tres · primera oportunidad",
       "base": "El Chaltén",
-      "am": "Primera oportunidad para hacer trekking de alta exigencia con guía grupal y pronóstico seguro. Si no, intercambiar por miradores próximos y mantener opciones los días 8–10.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
+      "am": "Si las condiciones son seguras, encuentro con guía grupal, salida hacia el sendero acordado y comienzo temprano por bosques y vistas a Piedras Blancas.",
+      "pm": "Ascenso exigente a Laguna de los Tres; comer vianda y descender por ruta autorizada, posiblemente pasando por Laguna Capri.",
+      "night": "Regresar al alojamiento, hidratarse y recuperarse. Si el pronóstico desaconseja subir, intercambiar íntegramente esta jornada por otra ligera.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Laguna de los Tres: 25 km según referencia oficial de Parques Nacionales, entre 8 y 11 horas según itinerario; dificultad media-alta. Exigir guía habilitado, clima seguro y capacidad física suficiente. Laguna Capri es la alternativa corta; no subir con hielo peligroso.",
-      "places": [],
-      "headerPlaces": [],
+      "note": "Laguna de los Tres: 25 km según referencia oficial de Parques Nacionales, entre 8 y 11 horas según itinerario; dificultad media-alta. Exigir guía habilitado, clima seguro y capacidad física suficiente. Laguna Capri es la alternativa corta; no subir con hielo peligroso. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "places": [
+        "pat27-laguna-tres"
+      ],
+      "headerPlaces": [
+        "Laguna de los Tres",
+        "Fitz Roy",
+        "Laguna Capri · ruta alternativa"
+      ],
       "spend": null,
-      "hotel": "chalten-senderos"
+      "hotel": "chalten-senderos",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 5,
       "date": "2027-11-08",
       "title": "Estancia Bonanza · cabalgata",
       "base": "El Chaltén",
-      "am": "Cabalgata guiada, sujeta a cupos y condiciones. Reprogramar si este es el mejor día para Laguna de los Tres.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
+      "am": "Cabalgata guiada en Estancia Bonanza, sujeto a edad, experiencia, duración y condiciones del operador.",
+      "pm": "Almuerzo, miradores Los Cóndores y Las Águilas únicamente si el esfuerzo del día anterior lo permite.",
+      "night": "Cena en El Chaltén y revisión meteorológica para decidir las siguientes excursiones.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
+      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "chalten-senderos"
+      "hotel": "chalten-senderos",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 6,
       "date": "2027-11-09",
       "title": "Lago del Desierto y Vespignani",
       "base": "El Chaltén",
-      "am": "Excursión panorámica por el valle, navegación y senderos fáciles opcionales. Confirmar operación y transporte.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
+      "am": "Salida por carretera al Lago del Desierto, verificando traslado, estado del camino y embarque.",
+      "pm": "Navegación programada y senderos fáciles de Vespignani si el paquete concreto los incluye; tiempo para fotografías.",
+      "night": "Regreso a El Chaltén y cena. Jornada intercambiable con Laguna de los Tres si aparece mejor pronóstico.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
-      "places": [],
-      "headerPlaces": [],
+      "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "places": [
+        "pat27-desierto"
+      ],
+      "headerPlaces": [
+        "Lago del Desierto",
+        "Glaciar Vespignani · sujeto a operación"
+      ],
       "spend": null,
-      "hotel": "chalten-senderos"
+      "hotel": "chalten-senderos",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 7,
       "date": "2027-11-10",
       "title": "Laguna Capri o Chorrillo del Salto",
       "base": "El Chaltén",
-      "am": "Si ya se completó Laguna de los Tres, elegir Laguna Capri solo si hay energía y no se pasó por ella al regresar; de lo contrario Chorrillo del Salto. Última oportunidad de trekking guiado si el tiempo lo exige.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
+      "am": "Última ventana de trekking al Fitz Roy si no se ha realizado y el operador ofrece salida segura. En otro caso, caminar hacia Chorrillo del Salto.",
+      "pm": "Laguna Capri como alternativa si no se pasó por ella en la caminata principal; paseo corto por el pueblo si ya hubo mucha actividad.",
+      "night": "Cena y preparación para el autobús a El Calafate.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Ultima oportunidad de reprogramación de Laguna de los Tres; Lago del Desierto, cabalgata y paseos cortos pueden intercambiarse, sujetos a cupos y políticas de cancelación.",
+      "note": "Ultima oportunidad de reprogramación de Laguna de los Tres; Lago del Desierto, cabalgata y paseos cortos pueden intercambiarse, sujetos a cupos y políticas de cancelación. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "chalten-senderos"
+      "hotel": "chalten-senderos",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 8,
       "date": "2027-11-11",
       "title": "El Chaltén → El Calafate",
       "base": "El Calafate",
-      "am": "Traslado en autobús, alojamiento y paseo por el centro o la costanera del Lago Argentino.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Calafate; alojamiento aún no seleccionado.",
+      "am": "Check-out y autobús El Chaltén→El Calafate; confirmar salida exacta al abrir la venta.",
+      "pm": "Check-in en Hotel Sierra Nevada (candidato). Recorrer avenida del Libertador y la costanera del Lago Argentino.",
+      "night": "Cena de cordero patagónico o trucha; preparar indumentaria para el glaciar.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "calafate-sierra"
+      "hotel": "calafate-sierra",
+      "optionalPlaces": [],
+      "transportRefs": [
+        "bus-chalten-calafate"
+      ]
     },
     {
       "n": 9,
       "date": "2027-11-12",
       "title": "Glaciar Perito Moreno · Minitrekking",
       "base": "El Calafate",
-      "am": "Traslado al parque, navegación y caminata guiada sobre el hielo, más miradores de pasarelas; verificar restricciones físicas y tarifa.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Calafate; alojamiento aún no seleccionado.",
+      "am": "Traslado al Parque Nacional Los Glaciares con operador autorizado de Minitrekking; confirmar inclusión de pasarelas y duración.",
+      "pm": "Navegación por Lago Rico y caminata con crampones según la modalidad y requisitos físicos contratados; panorámicas del Perito Moreno.",
+      "night": "Regreso al hotel, cena y descanso. No programar otra excursión exigente.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
-      "places": [],
-      "headerPlaces": [],
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "places": [
+        "pat27-perito"
+      ],
+      "headerPlaces": [
+        "Glaciar Perito Moreno",
+        "Lago Rico"
+      ],
       "spend": null,
-      "hotel": "calafate-sierra"
+      "hotel": "calafate-sierra",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 10,
       "date": "2027-11-13",
       "title": "Todo Glaciares",
       "base": "El Calafate",
-      "am": "Navegación panorámica por el Lago Argentino hacia glaciares Upsala y Spegazzini; operación sujeta a clima.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Calafate; alojamiento aún no seleccionado.",
+      "am": "Salida temprana hacia Puerto Punta Bandera de acuerdo con la empresa de navegación.",
+      "pm": "Todo Glaciares: recorrer Lago Argentino, Canal Upsala y sector Spegazzini; descenso a base/refugio solo si está incluido y operativo.",
+      "night": "Regreso a El Calafate y cena. Itinerario sujeto a hielo, viento y operatividad.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
-      "places": [],
-      "headerPlaces": [],
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
+      "places": [
+        "pat27-calafate"
+      ],
+      "headerPlaces": [
+        "Lago Argentino",
+        "Upsala",
+        "Spegazzini"
+      ],
       "spend": null,
-      "hotel": "calafate-sierra"
+      "hotel": "calafate-sierra",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 11,
       "date": "2027-11-14",
       "title": "El Calafate · Laguna Nimez",
       "base": "El Calafate",
-      "am": "Paseo por Laguna Nimez y centro, o mover una excursión de glaciares cancelada por viento o condiciones de navegación.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Calafate; alojamiento aún no seleccionado.",
+      "am": "Paseo por Reserva Laguna Nimez, observación de aves y paisaje del Lago Argentino si hay acceso.",
+      "pm": "Costanera y centro de El Calafate; reservar esta jornada para reprogramar una excursión suspendida.",
+      "night": "Cena sin actividad obligatoria de pago y revisión del plan del 15 de noviembre.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "calafate-sierra"
+      "hotel": "calafate-sierra",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 12,
       "date": "2027-11-15",
       "title": "El Calafate · actividades por elegir",
       "base": "El Calafate",
-      "am": "Día de reserva para aplazamientos de excursiones por viento. Si ya se realizaron Minitrekking y Todo Glaciares, elegir una experiencia corta y distinta, como el Glaciarium, o valorar reducir una noche de El Calafate antes de comprar vuelos y hoteles.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en El Calafate; alojamiento aún no seleccionado.",
+      "am": "Si Minitrekking o Todo Glaciares fueron cancelados, usar este día para reprogramarlos según cupo y clima.",
+      "pm": "Si ya se hicieron ambas excursiones, visitar el museo Glaciarium como alternativa de menor esfuerzo (opcional), sin duplicar glaciares.",
+      "night": "Preparar equipaje para vuelo del día siguiente; reconsiderar esta quinta noche si el programa se simplifica.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Quinta noche en El Calafate bajo evaluación: conservar solo si aporta excursión diferenciada o margen meteorológico valioso; presupuestada provisionalmente.",
+      "note": "Quinta noche en El Calafate bajo evaluación: conservar solo si aporta excursión diferenciada o margen meteorológico valioso; presupuestada provisionalmente. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "calafate-sierra"
+      "hotel": "calafate-sierra",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 13,
       "date": "2027-11-16",
       "title": "El Calafate → Buenos Aires",
       "base": "Buenos Aires",
-      "am": "Vuelo nacional y paseo urbano ligero, según horario de llegada.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en Buenos Aires; alojamiento aún no seleccionado.",
+      "am": "Desayuno, check-out y traslado a FTE; vuelo AR1895 FTE 12:30→AEP 15:30 según referencia histórica.",
+      "pm": "Traslado al hotel de Recoleta y visita a Floralis Genérica y Plaza Francia según hora de llegada.",
+      "night": "El Ateneo Grand Splendid, si no se visitó al principio; cena en Recoleta.",
       "mobility": "Aerolíneas Argentinas AR1895 · FTE 12:30 → AEP 15:30 (referencia de la presentación 2026).",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "buenos-aires-regreso"
+      "hotel": "buenos-aires-regreso",
+      "optionalPlaces": [],
+      "transportRefs": [
+        "flight-domestic"
+      ]
     },
     {
       "n": 14,
       "date": "2027-11-17",
       "title": "La Boca, San Telmo y Puerto Madero",
       "base": "Buenos Aires",
-      "am": "Caminito de día, San Telmo y Puerto Madero, con horarios realistas de traslados.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Noche prevista en Buenos Aires; alojamiento aún no seleccionado.",
+      "am": "Traslado a La Boca de día para recorrer Caminito y sus alrededores turísticos.",
+      "pm": "Visitar el Mercado de San Telmo, Plaza Dorrego y calle Defensa; por la tarde Puerto Madero y Puente de la Mujer.",
+      "night": "Cena final en Buenos Aires; dejar lista la maleta para el regreso.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
       "spend": null,
-      "hotel": "buenos-aires-regreso"
+      "hotel": "buenos-aires-regreso",
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 15,
       "date": "2027-11-18",
       "title": "Buenos Aires → CDMX",
       "base": "En vuelo / CDMX",
-      "am": "Salida hacia EZE con margen suficiente para documentar equipaje. Vuelo directo de referencia Aeroméxico: 12:00–18:50, llegada a CDMX el mismo día.",
-      "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
-      "night": "Regreso a casa en CDMX tras llegada prevista a las 18:50 (hora mexicana), sujeta a confirmación del vuelo real.",
+      "am": "Salida del hotel hacia EZE con margen para check-in y controles; vuelo de referencia 12:00 hacia CDMX.",
+      "pm": "Vuelo directo EZE→MEX de Aeroméxico, sin comprometer visitas adicionales.",
+      "night": "Llegada estimada MEX 18:50 del mismo 18 de noviembre según horario de 2026; traslado a casa.",
       "mobility": "Aeroméxico directo · EZE 12:00 → MEX 18:50 (referencia exacta de la presentación 2026).",
-      "note": "Con el vuelo histórico EZE 12:00 → MEX 18:50 no programar visitas turísticas; prever traslado al aeropuerto y margen de documentación. Llegada a México el mismo 18 de noviembre únicamente en este escenario de referencia.",
+      "note": "Con el vuelo histórico EZE 12:00 → MEX 18:50 no programar visitas turísticas; prever traslado al aeropuerto y margen de documentación. Llegada a México el mismo 18 de noviembre únicamente en este escenario de referencia. Gastos del día no asignados para evitar duplicar partidas globales de presupuesto.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "optionalPlaces": [],
+      "transportRefs": [
+        "flight-international"
+      ]
     }
   ],
   "reservations": [
@@ -522,7 +589,7 @@
     }
   ],
   "attractionTerms": [],
-  "cover": null,
+  "cover": "pat27-laguna-tres",
   "mapPoints": [
     {
       "name": "Buenos Aires · llegada y regreso",
@@ -786,7 +853,13 @@
     155000
   ],
   "budgetNote": "Escenario ilustrativo para DOS personas: $144,648 MXN. Vuelos tomados como referencias históricas de la presentación de 2026 ($24,398 internacionales y $23,250 nacionales); las demás categorías son supuestos de planeación y NO cotizaciones. La cifra incluye 14 noches, guía grupal a Laguna de los Tres, Minitrekking, Todo Glaciares y un supuesto conjunto de cabalgata y Lago del Desierto. El rubro 'Seguro médico y contingencias menores' no constituye una reserva amplia para imprevistos. Evitar duplicar traslados o entradas ya incluidos en excursiones. Meta de optimización: aproximarse a $135,000 MXN, sujeta a tarifas 2027.",
-  "placeDescriptions": {},
+  "placeDescriptions": {
+    "pat27-laguna-tres": "Laguna de los Tres · caminata exigente, condicionada a guía y clima seguro",
+    "pat27-perito": "Glaciar Perito Moreno · Minitrekking y pasarelas",
+    "pat27-desierto": "Lago del Desierto · navegación y senderos opcionales",
+    "pat27-teatro": "Teatro Colón · visita guiada en Buenos Aires",
+    "pat27-calafate": "Paisaje glaciar del Lago Argentino"
+  },
   "optionalSection": null,
   "family": null,
   "layoutClass": null,
