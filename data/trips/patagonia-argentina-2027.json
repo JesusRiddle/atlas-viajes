@@ -576,32 +576,162 @@
       "type": "flight",
       "title": "Vuelo internacional · MEX ↔ Buenos Aires",
       "selectedOption": null,
-      "options": [],
-      "notes": "ESCENARIO DE HORARIOS COPIADO DE PRESENTACIÓN 2026, NO CONFIRMADO 2027: Aeroméxico directo MEX→EZE 4 nov 09:35–21:50 (hora local de cada aeropuerto); EZE→MEX 18 nov 12:00–18:50. Referencia histórica de tarifa $24,398 MXN para dos personas, no disponible/cotizada para noviembre 2027."
+      "options": [
+        {
+          "id": "A",
+          "provider": "Aeroméxico directo · referencia 2026",
+          "status": "estimated",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "EZE",
+                  "departure": "2027-11-04T09:35:00-06:00",
+                  "arrival": "2027-11-04T21:50:00-03:00",
+                  "operator": "Aeroméxico"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "EZE",
+                  "to": "MEX",
+                  "departure": "2027-11-18T12:00:00-03:00",
+                  "arrival": "2027-11-18T18:50:00-06:00",
+                  "operator": "Aeroméxico"
+                }
+              ]
+            }
+          ],
+          "fares": [],
+          "notes": "Horarios copiados de la presentación para 2026; no hay vuelo ni tarifa disponible confirmados para 2027. El precio histórico ya está en gastos."
+        }
+      ],
+      "notes": "ESCENARIO DE HORARIOS COPIADO DE PRESENTACIÓN 2026, NO CONFIRMADO 2027: Aeroméxico directo MEX→EZE 4 nov 09:35–21:50 (hora local de cada aeropuerto); EZE→MEX 18 nov 12:00–18:50. Referencia histórica de tarifa $24,398 MXN para dos personas, no disponible/cotizada para noviembre 2027.",
+      "links": [
+        {
+          "label": "Consultar aerolínea",
+          "url": "https://www.aeromexico.com/"
+        }
+      ]
     },
     {
       "id": "flight-domestic",
       "type": "flight",
       "title": "Vuelos nacionales · Buenos Aires ↔ El Calafate",
       "selectedOption": null,
-      "options": [],
-      "notes": "ESCENARIO DE HORARIOS COPIADO DE PRESENTACIÓN 2026, NO CONFIRMADO 2027: Aerolíneas Argentinas AR1840 AEP→FTE 6 nov 05:10–08:30; AR1895 FTE→AEP 16 nov 12:30–15:30. Precio histórico $23,250 MXN para dos personas con una maleta documentada compartida de 15 kg según la presentación."
+      "options": [
+        {
+          "id": "A",
+          "provider": "Aerolíneas Argentinas · referencia 2026",
+          "status": "estimated",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "AEP",
+                  "to": "FTE",
+                  "departure": "2027-11-06T05:10:00-03:00",
+                  "arrival": "2027-11-06T08:30:00-03:00",
+                  "operator": "Aerolíneas Argentinas",
+                  "flightNumber": "AR1840"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "FTE",
+                  "to": "AEP",
+                  "departure": "2027-11-16T12:30:00-03:00",
+                  "arrival": "2027-11-16T15:30:00-03:00",
+                  "operator": "Aerolíneas Argentinas",
+                  "flightNumber": "AR1895"
+                }
+              ]
+            }
+          ],
+          "fares": [],
+          "notes": "Horarios y números de vuelo tomados de la presentación de 2026, sin confirmar ni reservar para 2027. Costos históricos ya incluidos en gastos."
+        }
+      ],
+      "notes": "ESCENARIO DE HORARIOS COPIADO DE PRESENTACIÓN 2026, NO CONFIRMADO 2027: Aerolíneas Argentinas AR1840 AEP→FTE 6 nov 05:10–08:30; AR1895 FTE→AEP 16 nov 12:30–15:30. Precio histórico $23,250 MXN para dos personas con una maleta documentada compartida de 15 kg según la presentación.",
+      "links": [
+        {
+          "label": "Consultar aerolínea",
+          "url": "https://www.aerolineas.com.ar/"
+        }
+      ]
     },
     {
       "id": "bus-fte-chalten",
       "type": "bus",
       "title": "Aeropuerto El Calafate → El Chaltén",
       "selectedOption": null,
-      "options": [],
-      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados."
+      "options": [
+        {
+          "id": "A",
+          "provider": "Shuttle directo FTE → El Chaltén · por cotizar",
+          "status": "pending",
+          "journeys": [],
+          "fares": [],
+          "notes": "Preferir servicio con salida posterior al arribo 08:30 y recogida de equipaje; no hay horario confirmado."
+        },
+        {
+          "id": "B",
+          "provider": "Conexión FTE → terminal El Calafate → El Chaltén",
+          "status": "pending",
+          "journeys": [],
+          "fares": [],
+          "notes": "Alternativa si no coincide shuttle directo; confirmar frecuencias, terminal y compra separada."
+        }
+      ],
+      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados.",
+      "links": [
+        {
+          "label": "Autobuses · información turística",
+          "url": "https://elchalten.tur.ar/omnibus/"
+        }
+      ]
     },
     {
       "id": "bus-chalten-calafate",
       "type": "bus",
       "title": "El Chaltén → El Calafate",
       "selectedOption": null,
-      "options": [],
-      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027."
+      "options": [
+        {
+          "id": "A",
+          "provider": "Autobús directo El Chaltén → El Calafate",
+          "status": "pending",
+          "journeys": [],
+          "fares": [],
+          "notes": "Referencial 3 h aprox.; salida del 11 noviembre aún no publicada."
+        },
+        {
+          "id": "B",
+          "provider": "Transfer compartido El Chaltén → El Calafate",
+          "status": "pending",
+          "journeys": [],
+          "fares": [],
+          "notes": "Comparar costo total y recogida; no confundir con reserva."
+        }
+      ],
+      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027.",
+      "links": [
+        {
+          "label": "Autobuses · información turística",
+          "url": "https://elchalten.tur.ar/omnibus/"
+        }
+      ]
     }
   ],
   "ticketNotes": [
@@ -725,7 +855,7 @@
       "checkOut": "2027-11-06",
       "status": "Candidato · no reservado",
       "rate": null,
-      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final.",
+      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final. La partida global de hospedaje $30,000 MXN es un supuesto para las cuatro estancias; no corresponde a tarifa de este hotel.",
       "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
       "links": [
         {
@@ -744,7 +874,7 @@
       "checkOut": "2027-11-11",
       "status": "Candidato · no reservado",
       "rate": null,
-      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final.",
+      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final. La partida global de hospedaje $30,000 MXN es un supuesto para las cuatro estancias; no corresponde a tarifa de este hotel.",
       "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
       "links": [
         {
@@ -763,7 +893,7 @@
       "checkOut": "2027-11-16",
       "status": "Candidato · no reservado",
       "rate": null,
-      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final.",
+      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final. La partida global de hospedaje $30,000 MXN es un supuesto para las cuatro estancias; no corresponde a tarifa de este hotel.",
       "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
       "links": [
         {
@@ -782,7 +912,7 @@
       "checkOut": "2027-11-18",
       "status": "Candidato · no reservado",
       "rate": null,
-      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final.",
+      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final. La partida global de hospedaje $30,000 MXN es un supuesto para las cuatro estancias; no corresponde a tarifa de este hotel.",
       "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
       "links": [
         {
