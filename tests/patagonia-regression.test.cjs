@@ -63,5 +63,6 @@ test('Patagonia: nueve secciones con datos editoriales verificables', () => {
   assert.equal(trip.reservations.length, 3);
   assert.ok(trip.majorTransport.every(m => m.options?.length > 0));
   assert.ok(trip.days.every(day => day.am && day.pm && day.night && day.mobility && day.note));
-  assert.ok(trip.days.filter(day => day.places?.length).length >= 10);
+  assert.ok(trip.days.filter(day => day.places?.length).length >= 9);
+  // No inventar fotografías para excursiones opcionales ni para jornadas de vuelo.
 });
