@@ -12,13 +12,13 @@ window.ATLAS_MODULES = [
     "available": true
   },
   {
-    "id": "patagonia-argentina-2027",
-    "file": "patagonia-argentina-2027.json",
+    "id": "japon-2027",
+    "file": "japon-2027.json",
     "available": true
   },
   {
-    "id": "japon-2027",
-    "file": "japon-2027.json",
+    "id": "patagonia-argentina-2027",
+    "file": "patagonia-argentina-2027.json",
     "available": true
   },
   {
