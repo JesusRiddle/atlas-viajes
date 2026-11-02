@@ -528,18 +528,11 @@
   "ticketNotes": [
     {
       "title": "Conexión FTE → El Chaltén",
-      "text": "Comprar la salida del aeropuerto solo tras comprobar hora efectiva de llegada del vuelo, recogida de equipaje y margen de conexión. Consultar compañías desde el enlace de Turismo Chaltén.",
-      "links": [
-        {
-          "label": "Turismo Chaltén · ómnibus",
-          "url": "https://elchalten.tur.ar/omnibus/"
-        }
-      ]
+      "note": "Comprar la salida del aeropuerto solo tras comprobar hora efectiva de llegada del vuelo, recogida de equipaje y margen de conexión. Consultar compañías desde el enlace de Turismo Chaltén."
     },
     {
       "title": "Vuelos internacionales y nacionales",
-      "text": "Comparar ida y regreso, equipaje de mano/documentado y traslado entre EZE y AEP. No mezclar vuelos de aeropuertos diferentes sin margen amplio; falta disponibilidad de noviembre 2027.",
-      "links": []
+      "note": "Comparar ida y regreso, equipaje de mano/documentado y traslado entre EZE y AEP. No mezclar vuelos de aeropuertos diferentes sin margen amplio; falta disponibilidad de noviembre 2027."
     }
   ],
   "attractionTerms": [],
