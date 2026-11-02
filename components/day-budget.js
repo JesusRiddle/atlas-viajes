@@ -46,6 +46,7 @@ window.AtlasDayBudget = (() => {
                 '</span><strong>' + (entry.mxn === null ? 'Por cotizar' : pesos(entry.mxn)) + '</strong></div>';
         }).join('');
         const hasAmounts = info.entries.some(entry => entry.mxn !== null);
+        const planned = trip.budgetPreliminary?.useBudgetRange === true;
         const registered = new Set((trip.expenses || []).filter(item =>
             info.entries.some(entry => entry.id === item.id)).map(item => item.category));
         const pendingCategories = [
@@ -58,15 +59,17 @@ window.AtlasDayBudget = (() => {
             return transport?.type === 'flight' && !info.entries.some(entry => entry.id === id);
         });
         return '<details class="day-budget atlas-day-fold" open data-day-budget="' + esc(day.n) +
-            '" aria-label="Presupuesto de la jornada"><summary class="day-budget-heading"><span class="day-budget-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><div class="day-budget-title"><h4>Gastos registrados del día</h4>' +
+            '" aria-label="Presupuesto de la jornada"><summary class="day-budget-heading"><span class="day-budget-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18M7 15h4"/></svg></span><div class="day-budget-title"><h4>' + (planned ? 'Gastos estimados del día' : 'Gastos registrados del día') + '</h4>' +
             '</div><strong>' +
             (hasAmounts ? pesos(info.totalMXN) : 'Sin partidas cotizadas') +
             '</strong></summary>' + '<div class="day-budget-rows atlas-info-rows">' + (lines || '<p class="day-budget-empty">Todavía no hay partidas asignadas.</p>') + '</div>' +
             (info.partial ? '<p class="day-budget-pending">Hay partidas sin cotizar.</p>' : '') +
-            '<p class="day-budget-disclaimer">Presupuesto diario incompleto: pendiente de registrar o verificar ' +
-            esc(pendingCategories) + '.' +
-            (flightOutside ? ' El vuelo se contabiliza en el presupuesto global, no en este día.' : '') +
-            '</p></details>';
+            (planned
+                ? '<p class="day-budget-disclaimer">Distribución orientativa de alimentación, entradas y movilidad; incluye las noches y traslados correspondientes. Seguro, contingencia y vuelo internacional permanecen en el total global.</p>'
+                : '<p class="day-budget-disclaimer">Presupuesto diario incompleto: pendiente de registrar o verificar ' +
+                    esc(pendingCategories) + '.' +
+                    (flightOutside ? ' El vuelo se contabiliza en el presupuesto global, no en este día.' : '') +
+                    '</p>') + '</details>';
     }
     function mount(root, trip) {
         if (!trip?.majorTransport?.length) return () => {};

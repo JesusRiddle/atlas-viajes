@@ -4133,5 +4133,103 @@
       "license": "CC BY-SA 4.0",
       "attribution": "Manishprabhune · CC BY-SA 4.0 · Wikimedia Commons"
     }
+  },
+  "espana-portugal-2027-alfama": {
+    "name": "Alfama · Lisboa",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/f8/View_of_the_Alfama_quarter_in_Lisbon_Portugal.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:View_of_the_Alfama_quarter_in_Lisbon_Portugal.JPG",
+      "author": "Aubry Françon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Aubry Françon"
+    }
+  },
+  "sp27-casa-mila": {
+    "name": "Casa Milà · La Pedrera",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Casa_Mila_La_Pedrera_Antoni_Gaudi_Barcelona_facade.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Casa_Mila_La_Pedrera_Antoni_Gaudi_Barcelona_facade.jpg",
+      "author": "Vescoolz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Vescoolz · CC BY-SA 4.0"
+    }
+  },
+  "sp27-san-isidro": {
+    "name": "Chotis en las fiestas de San Isidro",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fiesta_de_San_Isidro_2026_-_Chulapos_bailando_-_Plaza_de_la_villa_-_Madrid_01.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Fiesta_de_San_Isidro_2026_-_Chulapos_bailando_-_Plaza_de_la_villa_-_Madrid_01.jpg",
+      "author": "Javier Perez Montes",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Javier Perez Montes · fiesta de 2026"
+    }
+  },
+  "sp27-darro": {
+    "name": "Carrera del Darro · Granada",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrera_del_Darro-Granada.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Carrera_del_Darro-Granada.jpg",
+      "author": "Alberto-g-rovi",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "Alberto-g-rovi"
+    }
+  },
+  "sp27-cascais": {
+    "name": "Cascais",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Waterfront%20at%20Cascais%20(46957639515).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Waterfront_at_Cascais_(46957639515).jpg",
+      "author": "Terry Kearney",
+      "attribution": "Terry Kearney / Wikimedia Commons"
+    }
+  },
+  "sp27-boca-inferno": {
+    "name": "Boca do Inferno",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Boca%20do%20Inferno%2C%20Cascais.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Boca_do_Inferno,_Cascais.jpg",
+      "author": "Carlos SGP",
+      "attribution": "Carlos SGP / Wikimedia Commons"
+    }
+  },
+  "sp27-barceloneta": {
+    "name": "Barceloneta",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barceloneta%20-%20Barcelona.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Barceloneta_-_Barcelona.jpg",
+      "author": "Nikolaï POSNER",
+      "attribution": "Nikolaï POSNER / Wikimedia Commons"
+    }
+  },
+  "sp27-turo-rovira": {
+    "name": "Turó de la Rovira",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista%20Barcelona%20des%20del%20Tur%C3%B3%20de%20la%20Rovira.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Vista_Barcelona_des_del_Turó_de_la_Rovira.jpg",
+      "author": "Wikimedia Commons",
+      "attribution": "Wikimedia Commons / Wikimedia Commons"
+    }
+  },
+  "sp27-torre-glories": {
+    "name": "Torre Glòries",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barcelona%20-%20Torre%20Gl%C3%B2ries.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Torre_Glòries.jpg",
+      "author": "Wikimedia Commons",
+      "attribution": "Wikimedia Commons / Wikimedia Commons"
+    }
+  },
+  "sp27-veneno": {
+    "name": "Memorial de La Veneno",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Madrid%20-%20Parque%20del%20Oeste%2C%20en%20memoria%20de%20Cristina%20Ortiz%2C%20'La%20Veneno'%201.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Madrid_-_Parque_del_Oeste,_en_memoria_de_Cristina_Ortiz,_'La_Veneno'_1.jpg",
+      "author": "Wikimedia Commons",
+      "attribution": "Wikimedia Commons / Wikimedia Commons"
+    }
   }
 }

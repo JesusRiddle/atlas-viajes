@@ -1,0 +1,2277 @@
+{
+  "id": "espana-portugal-2027",
+  "name": "España + Portugal 2027: arte, Al-Ándalus y Lisboa",
+  "status": "draft",
+  "flag": "🇪🇸🇵🇹",
+  "start": "2027-05-08",
+  "end": "2027-05-27",
+  "work": 14,
+  "tag": "DE GAUDÍ AL AL-ÁNDALUS · ENTRE PALACIOS Y EL TAJO",
+  "routeCities": [
+    "Barcelona",
+    "Figueres",
+    "Madrid",
+    "Zamora",
+    "Toledo",
+    "Granada",
+    "Sevilla",
+    "Córdoba",
+    "Lisboa",
+    "Sintra"
+  ],
+  "bases": [
+    [
+      "Barcelona",
+      4
+    ],
+    [
+      "Madrid",
+      4
+    ],
+    [
+      "Granada",
+      2
+    ],
+    [
+      "Sevilla",
+      4
+    ],
+    [
+      "Lisboa",
+      4
+    ]
+  ],
+  "intro": "De la arquitectura de Gaudí en Barcelona al universo surrealista de Dalí en Figueres, este recorrido atraviesa ciudades históricas de España y Portugal. Desde Madrid se visitan el románico de Zamora y las callejuelas de Toledo, antes de descubrir el arte nazarí de la Alhambra en Granada. Sevilla reúne el Real Alcázar, la Giralda, sus barrios y una escapada a la Mezquita-Catedral de Córdoba. El viaje termina en Lisboa, con sus miradores, los monumentos de Belém y los palacios y jardines de Sintra. Las excursiones se hacen sin cambiar de alojamiento y el ritmo deja espacio para pasear por cada ciudad.",
+  "introShort": "Barcelona y Figueres abren un recorrido entre Gaudí y Dalí. Después llegan Madrid, Zamora y Toledo, la Alhambra de Granada y el patrimonio de Sevilla y Córdoba. Lisboa, Belém y los palacios de Sintra cierran el viaje.",
+  "introHighlights": [
+    "Barcelona",
+    "Figueres",
+    "Madrid",
+    "Zamora",
+    "Toledo",
+    "Alhambra",
+    "Granada",
+    "Sevilla",
+    "Córdoba",
+    "Lisboa",
+    "Belém",
+    "Sintra"
+  ],
+  "profile": {
+    "pace": "Moderado–activo",
+    "solo": "Fácil",
+    "weather": "Media",
+    "why": "Cinco alojamientos, excursiones sin maleta y cuatro cambios de hotel; alternar visitas de entrada y paseos."
+  },
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Moderado–activo",
+      "tone": "orange",
+      "text": "Viaje individual de ritmo moderado-activo: cuatro cambios de alojamiento, excursiones sin equipaje y pausas entre monumentos. Evitar caminatas largas en horas de calor y reducir las subidas del Albaicín y Sintra con transporte local."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Español y portugués · EUR",
+      "tone": "green",
+      "text": "En España predomina el español; en Barcelona también se habla catalán. En Portugal el idioma oficial es portugués. El inglés resulta útil en alojamientos y lugares turísticos. Moneda común: EUR (€), con referencia de €1 ≈ $21.12 MXN (BCE, 30/10/2026); pagar en euros y rechazar la conversión dinámica a pesos del terminal."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Verificar antes de viajar",
+      "tone": "orange",
+      "text": "Para turismo con pasaporte mexicano, comprobar la vigencia exigida, exención de visa Schengen y justificantes de alojamiento/salida. Verificar en fuentes oficiales el estado de ETIAS y EES para mayo de 2027, así como tránsito por terceros países según el vuelo elegido. En España y Portugal se usan enchufes C/F (230 V, 50 Hz): llevar adaptador de clavija mexicana A/B a C/F, con tierra si el equipo la requiere. Confirmar INPUT 100–240 V; el adaptador no transforma voltaje."
+    }
+  ],
+  "climate": "Durante el 8–27 de mayo, las máximas medias históricas rondan 21 °C en Barcelona, 22 °C en Madrid, 23 °C en Lisboa y 27 °C en Sevilla (estaciones y series diferentes). Son promedios climatológicos, no pronóstico; Andalucía puede registrar episodios de calor y las noches de Castilla y Granada son más frescas.\n\n*Qué llevar:* Capas ligeras, ropa transpirable, impermeable plegable, protección solar y calzado cómodo para adoquines, cuestas y largas visitas. En Albaicín y Sintra conviene reducir subidas con transporte local cuando resulte práctico.\n\n*Horas de luz:* En mayo, Barcelona (9–12) amanece aproximadamente 06:39–06:36 y anochece 20:57–21:01; Madrid (13–16), 07:01–06:58 y 21:22–21:25; Lisboa (23–26), aproximadamente 06:18–06:16 y 20:48–20:50. Son horas locales calculadas para 2027 y sirven para organizar paseos, miradores y visitas exteriores; la visibilidad real depende del relieve y del tiempo. En Granada (17–18) el sol sale cerca de las 07:04 y se pone alrededor de las 21:18–21:19; en Sevilla (19–22), amanece aproximadamente 07:12–07:10 y anochece 21:29–21:32. Las horas son locales y orientativas; consulta los servicios astronómicos si cambia el calendario.",
+  "experiences": [
+    {
+      "city": "Barcelona",
+      "description": "Recorrer Sagrada Família, Sant Pau y Park Güell, observar las fachadas modernistas del Eixample y probar pa amb tomàquet, escalivada o crema catalana."
+    },
+    {
+      "city": "Figueres",
+      "description": "Visitar el Teatro-Museo Dalí para explorar sus instalaciones surrealistas y descubrir especialidades ampurdanesas como el suquet de peix o los brunyols de l'Empordà."
+    },
+    {
+      "city": "Madrid",
+      "description": "Pasear por Madrid de los Austrias y vivir las celebraciones de San Isidro, probando bocadillo de calamares y rosquillas del santo si están disponibles."
+    },
+    {
+      "city": "Zamora",
+      "description": "Descubrir su catedral románica, iglesias y miradores del Duero; acercarse a la gastronomía local mediante arroz a la zamorana, bacalao a la tranca y aceitadas."
+    },
+    {
+      "city": "Toledo",
+      "description": "Adentrarse en la Catedral y la Judería hasta San Juan de los Reyes, y degustar mazapán toledano, carcamusas o perdiz estofada."
+    },
+    {
+      "city": "Granada",
+      "description": "Explorar Palacios Nazaríes, Alcazaba y Generalife, contemplar la Alhambra desde el Albaicín y probar piononos de Santa Fe y habas con jamón."
+    },
+    {
+      "city": "Sevilla",
+      "description": "Recorrer patios del Real Alcázar, subir a la Giralda y acercarse a Triana; descubrir espinacas con garbanzos, pescaíto frito y montadito de pringá."
+    },
+    {
+      "city": "Córdoba",
+      "description": "Contemplar los arcos de la Mezquita-Catedral, pasear por la Judería y cruzar el Puente Romano; probar salmorejo cordobés, flamenquín y pastel cordobés."
+    },
+    {
+      "city": "Lisboa",
+      "description": "Pasear por Alfama, visitar Belém y escuchar fado si encaja en la noche; probar bacalhau à Brás, pastéis de nata y pastéis de Belém. Como alternativa para uno de los días lisboetas, Cascais y Boca do Inferno ofrecen paseo marítimo y acantilados, sustituyendo visitas urbanas sin ampliar la estancia."
+    },
+    {
+      "city": "Sintra",
+      "description": "Recorrer los jardines del Palacio da Pena y el pozo iniciático de Quinta da Regaleira; degustar queijadas y travesseiros tradicionales de Sintra."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-05-08",
+      "title": "Salida desde Ciudad de México",
+      "base": "En vuelo",
+      "am": "1. Verificar pasaporte, requisitos de entrada a España y datos de alojamiento, sin considerar aprobados requisitos futuros hasta confirmarlos.\n2. Confirmar terminal, equipaje y horario del vuelo multidestino; hacer check-in cuando lo habilite la aerolínea.",
+      "pm": "1. Organizar traslado al aeropuerto de Ciudad de México con margen para tráfico y seguridad.\n2. Presentarse al aeropuerto con la antelación indicada por la aerolínea, orientativamente tres horas antes de la salida internacional.",
+      "night": "1. Embarcar hacia Barcelona según el vuelo que finalmente se compre.\n2. Noche a bordo; la primera noche de hotel corresponde al domingo 9 de mayo, no a este sábado.",
+      "mobility": "• *CDMX → aeropuerto:* Traslado según terminal y horario reales.\n• *Vuelo internacional:* MEX → Barcelona (BCN); conexión, aerolínea y horas pendientes de cotización.",
+      "note": "• *Sin reserva:* No existe vuelo confirmado; si la opción elegida llega después del domingo 9, habrá que replanear la primera jornada.\n• *Equipaje:* Valorar documentado frente a mano antes de comprar.",
+      "places": [],
+      "headerPlaces": [
+        "Ciudad de México · salida aérea",
+        "Barcelona · llegada prevista el 9 de mayo"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "flight-international"
+      ]
+    },
+    {
+      "n": 2,
+      "date": "2027-05-09",
+      "title": "Llegada y barrios históricos",
+      "base": "Barcelona",
+      "am": "1. Llegar a Barcelona, realizar control fronterizo y recoger equipaje si corresponde.\n2. Trasladarse al alojamiento candidato en Eixample/Sant Antoni; solicitar consigna si todavía no está disponible la habitación.",
+      "pm": "1. Recorrer a pie el Barrio Gótico en una ruta breve, incluyendo el entorno de la Catedral de Barcelona.\n2. Continuar hacia El Born solo si la llegada deja tiempo y energía; detenerse para comer.",
+      "night": "1. Pasear por el entorno de Santa Maria del Mar o regresar al hotel.\n2. Cena temprana y descanso antes de la visita con horario a la Sagrada Família.",
+      "mobility": "• *BCN → centro:* Comparar Aerobús, tren o metro según terminal y dirección del hotel.\n• *Gótico → Born:* Trayecto caminable, pero reducirlo si hay cansancio o equipaje.",
+      "note": "• *Llegada transatlántica:* Migración y traslado pueden ocupar buena parte del día; no reservar monumentos con hora fija.\n• *Alojamiento:* Acta Splendid es candidato, sin reservar; confirmar consigna y entrada.\n• *Si sobra tiempo:* Boqueria o Arc de Triomf/Ciutadella son alternativas de paseo, no visitas añadidas obligatorias; elegir según la llegada y la ubicación.",
+      "places": [
+        "gotico",
+        "barcelona-cathedral",
+        "born-barcelona",
+        "sp27-barceloneta"
+      ],
+      "headerPlaces": [
+        "Aeropuerto de Barcelona-El Prat (BCN)",
+        "Barrio Gótico",
+        "El Born"
+      ],
+      "spend": null,
+      "hotel": "bcn-acta-splendid",
+      "transportRefs": [
+        "flight-international"
+      ],
+      "optionalPlaces": [
+        "sp27-barceloneta"
+      ]
+    },
+    {
+      "n": 3,
+      "date": "2027-05-10",
+      "title": "Gaudí y modernismo",
+      "base": "Barcelona",
+      "am": "1. Visitar la Sagrada Família en la franja que se obtenga al reservar, con margen para seguridad.\n2. Continuar hacia el Recinte Modernista de Sant Pau si los horarios disponibles permiten una visita tranquila.",
+      "pm": "1. Dedicar tiempo a los pabellones y jardines de Sant Pau; ajustar la secuencia si el acceso a la basílica resulta vespertino.\n2. Comer por la zona y pasear por la avenida de Gaudí.",
+      "night": "1. Paseo ligero por Eixample o descanso; no encadenar otra visita interior extensa.\n2. Cena catalana: probar pa amb tomàquet o escalivada según menú disponible.",
+      "mobility": "• *Hotel → Sagrada Família:* Metro o desplazamiento urbano desde Eixample/Sant Antoni.\n• *Sagrada Família → Sant Pau:* Caminar por la avenida de Gaudí, aproximadamente 1 km.",
+      "note": "• *Reserva muy alta:* Elegir la Sagrada Família antes de fijar Sant Pau; acceso a torres solo si queda tiempo y se paga aparte.\n• *Plan B:* Si la basílica no ofrece cupo ese día, estudiar el miércoles 12 e intercambiar una visita.",
+      "places": [
+        "sagrada",
+        "santpau"
+      ],
+      "headerPlaces": [
+        "Basílica de la Sagrada Família",
+        "Recinte Modernista de Sant Pau"
+      ],
+      "spend": null,
+      "hotel": "bcn-acta-splendid"
+    },
+    {
+      "n": 4,
+      "date": "2027-05-11",
+      "title": "Figueres y Dalí",
+      "base": "Barcelona",
+      "am": "1. Salir desde Barcelona-Sants hacia Figueres-Vilafant con un tren de horario adecuado; consultar ambas direcciones antes de comprar.\n2. Trasladarse desde Figueres-Vilafant al centro y comenzar la visita al Teatro-Museo Dalí según el acceso disponible.",
+      "pm": "1. Terminar el recorrido por el Teatro-Museo Dalí sin añadir museos secundarios que comprometan el regreso.\n2. Pasear brevemente por el centro de Figueres y regresar a la estación para volver a Barcelona.",
+      "night": "1. Regresar al alojamiento de Barcelona.\n2. Cena sencilla y descanso tras la excursión de ida y vuelta.",
+      "mobility": "• *Barcelona ↔ Figueres:* Tren de ida y regreso desde Barcelona-Sants a Figueres-Vilafant; horarios pendientes de publicación para 2027.\n• *Figueres-Vilafant → museo:* Comprobar bus local o taxi; la estación de alta velocidad no está junto al museo.",
+      "note": "• *Reserva alta:* Coordinar entrada al museo con trenes de ambos sentidos; confirmar apertura del martes.\n• *Margen:* Evitar comprar el regreso con conexión demasiado ajustada al fin de la visita.",
+      "places": [
+        "dali-figueres"
+      ],
+      "headerPlaces": [
+        "Barcelona-Sants",
+        "Figueres-Vilafant",
+        "Teatro-Museo Dalí"
+      ],
+      "spend": null,
+      "hotel": "bcn-acta-splendid",
+      "transportRefs": [
+        "rail-bcn-fig"
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2027-05-12",
+      "title": "Park Güell y Passeig de Gràcia",
+      "base": "Barcelona",
+      "am": "1. Visitar Park Güell en una franja reservada que permita desplazarse desde el alojamiento sin prisas.\n2. Recorrer los espacios accesibles del parque, contemplando las vistas sobre Barcelona.",
+      "pm": "1. Trasladarse al Passeig de Gràcia y observar las fachadas de Casa Batlló y Casa Milà.\n2. Elegir como máximo una visita interior —Batlló o Milà— solo si hay tiempo, presupuesto y disponibilidad.",
+      "night": "1. Pasear por Eixample y cenar sin sumar actividades exigentes.\n2. Preparar equipaje para el traslado en tren a Madrid del jueves 13.",
+      "mobility": "• *Eixample → Park Güell:* Metro y autobús o taxi; considerar pendientes y acceso a pie.\n• *Park Güell → Passeig de Gràcia:* Transporte urbano para evitar caminata larga entre zonas.",
+      "note": "• *Reserva:* Park Güell requiere entrada con franja; adquirir únicamente cuando el recorrido esté confirmado.\n• *Actividad opcional:* No sumar las entradas interiores de Casa Batlló y Casa Milà como si ambas fueran obligatorias.\n• *Alternativas de Barcelona:* MNAC y Montjuïc, Barceloneta con Bus Nàutic, Turó de la Rovira o exterior de Torre Glòries pueden sustituir parte del paseo libre del Eixample. No acumularlos ni desplazar Park Güell; comprobar horarios y accesos de 2027.\n• *Montjuïc opcional:* Salts Bar puede complementar un paseo por la zona si está abierto en mayo de 2027; consumo y traslados aparte. Solo como sustitución de tiempo libre, no después de acumular todas las visitas modernistas.",
+      "places": [
+        "guell",
+        "batllo",
+        "sp27-casa-mila",
+        "mnac",
+        "montjuic",
+        "sp27-turo-rovira",
+        "sp27-torre-glories"
+      ],
+      "headerPlaces": [
+        "Park Güell",
+        "Passeig de Gràcia",
+        "Casa Batlló",
+        "Casa Milà"
+      ],
+      "spend": null,
+      "hotel": "bcn-acta-splendid",
+      "optionalPlaces": [
+        "batllo",
+        "sp27-casa-mila",
+        "mnac",
+        "montjuic",
+        "sp27-turo-rovira",
+        "sp27-torre-glories"
+      ]
+    },
+    {
+      "n": 6,
+      "date": "2027-05-13",
+      "title": "Barcelona a Madrid",
+      "base": "Madrid",
+      "am": "1. Desayunar en Barcelona, realizar check-out y trasladarse con equipaje a Barcelona-Sants.\n2. Tomar un tren directo de alta velocidad a Madrid, con hora por elegir según tarifas y margen real para llegar al hotel.",
+      "pm": "1. Llegar a Madrid, desplazarse al alojamiento candidato junto a Puerta del Sol y dejar equipaje o hacer check-in.\n2. Pasear por Puerta del Sol, Plaza Mayor y entorno de la Plaza de la Villa, sin reservar interiores rígidos.",
+      "night": "1. Pasear por Madrid de los Austrias o cenar por el centro según la hora de llegada.\n2. Preparar la excursión del viernes a Zamora; confirmar horarios de ida y regreso.",
+      "mobility": "• *Hotel → Barcelona-Sants:* Metro o taxi con equipaje y margen para controles de acceso al tren.\n• *Barcelona → Madrid:* Alta velocidad directa hasta la estación que indique el boleto; no presuponer Atocha para todos los operadores.\n• *Estación → alojamiento:* Metro, Cercanías o taxi según la llegada real; hotel candidato junto a Sol.",
+      "note": "• *Billete:* Precio y servicio todavía estimados; comparar operador, política de equipaje, estación madrileña y cambios.\n• *Alojamiento:* B&B HOTEL Madrid Centro Puerta del Sol es candidato, no reservado.\n• *Ritmo:* No añadir museo de visita larga el mismo día del traslado.",
+      "places": [
+        "puerta-sol",
+        "plaza-mayor-madrid"
+      ],
+      "headerPlaces": [
+        "Barcelona-Sants",
+        "Madrid · estación por confirmar",
+        "Puerta del Sol",
+        "Plaza Mayor"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "rail-bcn-mad"
+      ],
+      "hotel": "mad-bb-sol"
+    },
+    {
+      "n": 7,
+      "date": "2027-05-14",
+      "title": "Zamora y el Duero",
+      "base": "Madrid",
+      "am": "1. Salir temprano hacia Madrid-Chamartín con margen para el tren a Zamora; desayunar antes de abordar.\n2. Llegar a Zamora y dirigirse al casco histórico; iniciar por el entorno de la Catedral y las iglesias románicas.",
+      "pm": "1. Visitar la Catedral según su horario turístico y pasear por el castillo, miradores y calles del conjunto monumental.\n2. Comer un plato típico, como arroz a la zamorana, y acercarse a la ribera del Duero solo si el tiempo de regreso lo permite.",
+      "night": "1. Tomar el tren de vuelta a Madrid y regresar al hotel.\n2. Descansar: el sábado está reservado a San Isidro, sin repetir excursión.",
+      "mobility": "• *Madrid → Zamora:* Tren de ida y vuelta desde Madrid-Chamartín; horario y estación exactos sujetos al billete seleccionado.\n• *Estación Zamora → centro:* Considerar autobús urbano o taxi, especialmente si el tiempo de visita es limitado.\n• *Regreso:* Comprar ambos sentidos y prever margen para alcanzar la estación.",
+      "note": "• *Excursión:* La prioridad es el casco histórico y el Duero; no agregar localidades cercanas.\n• *Catedral:* Revisar apertura, visita turística y posibles cambios litúrgicos antes de fijar el tren.\n• *Comida:* Arroz a la zamorana sujeto a menú y disponibilidad; no está reservado.",
+      "places": [
+        "zamora-cathedral",
+        "zamora-duero"
+      ],
+      "headerPlaces": [
+        "Madrid-Chamartín",
+        "Zamora · Catedral",
+        "Castillo y miradores",
+        "Río Duero"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "rail-mad-zam"
+      ],
+      "hotel": "mad-bb-sol",
+      "noteLinks": [
+        {
+          "label": "Gastronomía de Zamora · turismo oficial",
+          "url": "https://www.turismo.zamora.es/gastronomia-zamorana-1-2.html"
+        }
+      ]
+    },
+    {
+      "n": 8,
+      "date": "2027-05-15",
+      "title": "San Isidro en Madrid",
+      "base": "Madrid",
+      "am": "1. Disfrutar las fiestas de San Isidro en la Pradera y sus alrededores, observando romería, tradiciones y ambiente popular si se celebran según el programa definitivo.\n2. Probar rosquillas tontas o listas y limonada tradicional en establecimientos disponibles.",
+      "pm": "1. Regresar hacia el centro y elegir actividades municipales publicadas para el sábado 15 de mayo.\n2. Recorrer Las Vistillas o el entorno de La Latina si hay eventos apropiados; no depender de un concierto todavía sin confirmar.",
+      "night": "1. Paseo por el centro histórico y cena según el ambiente festivo.\n2. Preparar el tren de Toledo del domingo y descansar a una hora razonable.",
+      "mobility": "• *Centro → Pradera de San Isidro:* Metro o autobús urbano, verificando posibles cierres y desvíos por la festividad.\n• *Regreso:* Reservar tiempo de desplazamiento; usar transporte público antes que taxi si hay cortes viales.",
+      "note": "• *Fecha tradicional:* San Isidro se celebra el 15 de mayo, sábado en 2027. El programa, recintos y actividades municipales de 2027 siguen por confirmar.\n• *Programa:* Los conciertos, escenarios y actos concretos se publicarán posteriormente; consultar la programación oficial.\n• *Afluencia:* Evitar citas rígidas y contar con multitudes en la Pradera.\n• *Paseo alternativo en Madrid:* El Templo de Debod y el entorno de Parque del Oeste pueden reemplazar otro paseo urbano si la agenda de San Isidro lo permite; no añadirlos a costa de las actividades principales.\n• *Parque del Oeste:* Si eliges el paseo opcional al Templo de Debod, puedes incluir el memorial de La Veneno en el entorno, según ubicación, tiempo y energía.",
+      "places": [
+        "sp27-san-isidro",
+        "debod-madrid",
+        "sp27-veneno",
+        "segovia-aqueduct",
+        "segovia-alcazar",
+        "segovia-pradera-san-marcos"
+      ],
+      "headerPlaces": [
+        "Pradera de San Isidro",
+        "La Latina",
+        "Jardines de Las Vistillas"
+      ],
+      "spend": null,
+      "hotel": "mad-bb-sol",
+      "optionalPlaces": [
+        "debod-madrid",
+        "sp27-veneno",
+        "segovia-aqueduct",
+        "segovia-alcazar",
+        "segovia-pradera-san-marcos"
+      ]
+    },
+    {
+      "n": 9,
+      "date": "2027-05-16",
+      "title": "Toledo, tres culturas",
+      "base": "Madrid",
+      "am": "1. Salir de Madrid-Puerta de Atocha hacia Toledo en tren de ida y vuelta, con margen para el acceso al casco histórico.\n2. Recorrer la Judería y el entorno de Santo Tomé o San Juan de los Reyes si la Catedral abre más tarde por ser domingo.",
+      "pm": "1. Visitar la Catedral Primada en su franja turística dominical, pendiente de reconfirmar para 2027.\n2. Pasear por plazas y miradores del casco antiguo; probar mazapán toledano o carcamusas según disponibilidad.",
+      "night": "1. Regresar a la estación de Toledo con margen y tomar el tren de vuelta a Madrid.\n2. Preparar equipaje y documentos para el vuelo a Granada del lunes.",
+      "mobility": "• *Madrid ↔ Toledo:* Tren Avant desde Madrid-Puerta de Atocha hasta Toledo; seleccionar y pagar ida y regreso.\n• *Estación Toledo → casco:* Autobús urbano o taxi para evitar la subida a pie con calor.\n• *Regreso:* Verificar últimos servicios y no depender de una sola salida tardía.",
+      "note": "• *Domingo y cultos:* No presumir apertura matutina de la Catedral; confirmar en el sitio oficial y adaptar el orden.\n• *Plan B:* Si hay cierres, priorizar Judería, San Juan de los Reyes y paseo patrimonial.\n• *Lunes:* Mantener un regreso razonable para llegar descansado al aeropuerto.\n• *Si sobra tiempo:* Mirador del Valle requiere traslado adicional fuera del casco de Toledo; sustituir otra parada y conservar margen para el tren de regreso.",
+      "places": [
+        "toledo",
+        "toledo-cathedral",
+        "san-juan-reyes-toledo",
+        "mirador-valle-toledo"
+      ],
+      "headerPlaces": [
+        "Madrid-Puerta de Atocha",
+        "Toledo · Judería",
+        "Monasterio de San Juan de los Reyes",
+        "Catedral Primada"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "rail-mad-tol"
+      ],
+      "hotel": "mad-bb-sol",
+      "optionalPlaces": [
+        "mirador-valle-toledo"
+      ]
+    },
+    {
+      "n": 10,
+      "date": "2027-05-17",
+      "title": "Llegada a Granada",
+      "base": "Granada",
+      "am": "1. Hacer check-out en Madrid y dirigirse al aeropuerto con la antelación que exija el vuelo.\n2. Volar Madrid–Granada en un servicio por confirmar; no asignar actividades con hora fija antes de conocer la llegada efectiva.",
+      "pm": "1. Llegar al aeropuerto Federico García Lorca Granada-Jaén, trasladarse a Plaza Nueva y dejar equipaje en el hotel candidato.\n2. Si queda tarde disponible, pasear por Carrera del Darro y el entorno de Plaza Nueva.",
+      "night": "1. Cenar por el centro, preparando la visita de la Alhambra del martes.\n2. Descansar; no añadir Albaicín intenso antes de la jornada larga del monumento.",
+      "mobility": "• *Hotel → Madrid-Barajas:* Cercanías o metro según terminal del vuelo elegido; prever control y equipaje.\n• *Vuelo Madrid → Granada:* Preferido por la restricción de no usar trenes Madrid–Andalucía; horario, aerolínea y franquicia pendientes.\n• *GRX → Plaza Nueva:* Autobús de aeropuerto o taxi; revisar última salida según la llegada.\n• *Alojamiento:* Hotel Macià Plaza, candidato, no reservado.",
+      "note": "• *Sin compra:* Si no hay vuelo compatible para el lunes 17, reevaluar alternativas aéreas antes de cerrar billetes no reembolsables.\n• *Plan B:* Si el vuelo se retrasa, dedicar la tarde al check-in y descansar.\n• *Prioridad del martes:* Confirmar acceso a Palacios Nazaríes antes de organizar otras visitas.",
+      "places": [
+        "sp27-darro"
+      ],
+      "headerPlaces": [
+        "Aeropuerto Adolfo Suárez Madrid-Barajas",
+        "Aeropuerto Granada-Jaén (GRX)",
+        "Plaza Nueva",
+        "Carrera del Darro"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "flight-mad-grx"
+      ],
+      "hotel": "grx-macia-plaza"
+    },
+    {
+      "n": 11,
+      "date": "2027-05-18",
+      "title": "La Alhambra y Albaicín",
+      "base": "Granada",
+      "am": "1. Salir con margen desde Plaza Nueva hacia el acceso oficial de la Alhambra; comprobar el acceso y la franja asignada a los Palacios Nazaríes.\n2. Visitar los Palacios Nazaríes exactamente en la hora del boleto y recorrer la Alcazaba según el orden permitido por la entrada.",
+      "pm": "1. Continuar hacia los jardines y palacios del Generalife, sin intentar completar el conjunto monumental a toda velocidad.\n2. Descansar o comer por el centro; dedicar la tarde a las zonas pendientes solo si la franja de entrada y la energía lo permiten.",
+      "night": "1. Subir hacia el Albaicín para contemplar la Alhambra desde el mirador de San Nicolás, si el tiempo y las fuerzas lo permiten.\n2. Cenar y regresar al alojamiento; preparar equipaje para el autobús a Sevilla.",
+      "mobility": "• *Plaza Nueva → Alhambra:* Utilizar autobús urbano o taxi hasta el acceso que indique el boleto; evitar una subida larga antes de la visita.\n• *Centro → Albaicín:* Considerar microbús urbano o taxi para los tramos empinados y caminar por calles históricas sin prisas.",
+      "note": "• *Palacios Nazaríes:* Entrada nominativa con hora de acceso obligatoria; reservar una franja compatible con el recorrido completo y organizar Alcazaba y Generalife alrededor de ese acceso.\n• *Prioridad:* Si el recinto exige más tiempo, reducir Albaicín antes que sacrificar Alcazaba o Generalife.\n• *Cierre:* Confirmar acceso y horarios para el martes 18 de mayo de 2027 antes de comprar.",
+      "places": [
+        "alhambra",
+        "albaicin",
+        "san-nicolas-granada"
+      ],
+      "headerPlaces": [
+        "La Alhambra · Palacios Nazaríes",
+        "Alcazaba",
+        "Generalife",
+        "Albaicín · mirador de San Nicolás"
+      ],
+      "spend": null,
+      "hotel": "grx-macia-plaza",
+      "optionalPlaces": [
+        "san-nicolas-granada"
+      ]
+    },
+    {
+      "n": 12,
+      "date": "2027-05-19",
+      "title": "Traslado a Sevilla",
+      "base": "Sevilla",
+      "am": "1. Desayunar, hacer check-out en Granada y desplazarse a la estación de autobuses con margen para equipaje y embarque.\n2. Tomar autobús directo Granada → Sevilla según disponibilidad real; no fijar visitas con hora antes de conocer la llegada.",
+      "pm": "1. Llegar a la terminal de Sevilla que figure en el billete (no asumir Plaza de Armas); trasladarse al alojamiento candidato y dejar equipaje.\n2. Recorrer las calles del barrio de Santa Cruz y sus plazas, sin programar una visita larga con entrada.",
+      "night": "1. Pasear por los alrededores de la Catedral o cenar cerca del centro histórico.\n2. Descansar antes de la entrada al Real Alcázar del día siguiente.",
+      "mobility": "• *Hotel → estación Granada:* Autobús urbano o taxi; prever que la estación de autobuses está fuera del centro histórico.\n• *Granada → Sevilla:* Autobús directo si está disponible; confirmar compañía, origen, terminal y duración antes de comprar.\n• *Terminal → hotel:* Traslado urbano o taxi con equipaje al Hotel Don Paco, candidato sin reserva.",
+      "note": "• *Equipaje:* Comprobar las condiciones de la empresa de autobuses y margen de embarque.\n• *Llegada:* Si el traslado termina tarde, limitar Santa Cruz a un paseo y una cena.\n• *Hotel:* Confirmar dirección y consigna; la entrada al alojamiento aún no está reservada.",
+      "places": [
+        "santa-cruz-seville"
+      ],
+      "headerPlaces": [
+        "Granada · estación de autobuses",
+        "Sevilla · terminal por confirmar",
+        "Barrio de Santa Cruz"
+      ],
+      "spend": null,
+      "hotel": "svq-don-paco",
+      "transportRefs": [
+        "bus-grx-svq"
+      ]
+    },
+    {
+      "n": 13,
+      "date": "2027-05-20",
+      "title": "Real Alcázar y Triana",
+      "base": "Sevilla",
+      "am": "1. Visitar el Real Alcázar con entrada de fecha y hora, recorriendo sus palacios y patios según las zonas abiertas.\n2. Continuar hacia los jardines sin programar otra visita interior rígida a continuación.",
+      "pm": "1. Almorzar en el entorno histórico y cruzar el Guadalquivir hacia el barrio de Triana.\n2. Recorrer la calle Betis, el entorno del Mercado de Triana y sus calles de cerámica; adaptar el paseo al calor.",
+      "night": "1. Contemplar la ribera al anochecer o cenar tapas sevillanas, como espinacas con garbanzos o pringá.\n2. Regresar al alojamiento y preparar la excursión del viernes a Córdoba.",
+      "mobility": "• *Hotel → Real Alcázar:* Paseo por el centro o transporte urbano si conviene.\n• *Alcázar → Triana:* Cruzar a pie por el Puente de Isabel II o utilizar transporte público si hace calor.\n• *Regreso:* Consultar autobuses urbanos o caminar según el alojamiento.",
+      "note": "• *Reserva alta:* Obtener la entrada del Alcázar antes de fijar otras actividades del jueves.\n• *Calor:* Reservar descansos y agua; el recorrido de los jardines puede alargarse.\n• *Plan B:* Si cambia el horario de acceso, priorizar Alcázar y acortar Triana.",
+      "places": [
+        "alcazar",
+        "triana"
+      ],
+      "headerPlaces": [
+        "Real Alcázar de Sevilla",
+        "Jardines del Alcázar",
+        "Puente de Isabel II",
+        "Triana"
+      ],
+      "spend": null,
+      "hotel": "svq-don-paco",
+      "noteLinks": [
+        {
+          "label": "Espinacas con garbanzos · turismo de Sevilla",
+          "url": "https://www.legacy.visitasevilla.es/las-tapas/espinacas-con-garbanzos"
+        }
+      ]
+    },
+    {
+      "n": 14,
+      "date": "2027-05-21",
+      "title": "Córdoba",
+      "base": "Sevilla",
+      "am": "1. Desplazarse a la terminal de autobuses de Sevilla indicada en los billetes; salir temprano hacia Córdoba.\n2. Llegar al centro histórico y visitar la Mezquita-Catedral en la franja turística confirmada para el viernes.",
+      "pm": "1. Pasear por la Judería, sus calles y patios accesibles y el entorno de la Puerta de Almodóvar.\n2. Acercarse al Puente Romano y comer salmorejo cordobés o flamenquín, según el tiempo disponible antes del regreso.",
+      "night": "1. Volver en autobús a Sevilla en un servicio previamente comprobado.\n2. Cena sencilla y descanso; conservar la tarde siguiente para Plaza de España.",
+      "mobility": "• *Sevilla ↔ Córdoba:* ALSA opera la ruta en ambos sentidos. Comprobar salidas del viernes 21/05/2027, probablemente desde Plaza de Armas hasta estación de autobuses de Córdoba, sin asumir disponibilidad ni horarios de 2026.\n• *Terminal Córdoba → Mezquita:* Autobús urbano o taxi para reducir caminatas con calor.\n• *Regreso:* Dejar margen entre monumento, comida y salida de la terminal, sin depender de una conexión ajustada.",
+      "note": "• *Autobús confirmado como ruta, no como billete:* ALSA publica servicios Sevilla–Córdoba y Córdoba–Sevilla. Sus horarios habituales de referencia sitúan salidas desde Sevilla a partir de las 09:30 y el último regreso desde Córdoba a las 18:30; confirmar ambos sentidos específicamente para el viernes 21/05/2027, sin tratarlos como horarios garantizados.\n• *Mezquita-Catedral:* Los horarios turísticos pueden cambiar por celebraciones religiosas; priorizar la visita interior.\n• *Plan B:* Si la oferta de autobuses resulta insuficiente, revisar otro operador o replantear la excursión antes de reservar, sin dar por hecho el regreso.\n• *Alternativa sin improvisaciones:* Si no hay autobuses viables el viernes, sustituir la excursión por un día adicional en Sevilla; no introducir automáticamente trenes por el corredor excluido.",
+      "places": [
+        "cordoba",
+        "juderia-cordoba",
+        "roman-bridge-cordoba"
+      ],
+      "headerPlaces": [
+        "Sevilla · estación de autobuses",
+        "Córdoba · Mezquita-Catedral",
+        "Judería",
+        "Puente Romano"
+      ],
+      "spend": null,
+      "hotel": "svq-don-paco",
+      "transportRefs": [
+        "bus-svq-cor"
+      ]
+    },
+    {
+      "n": 15,
+      "date": "2027-05-22",
+      "title": "Catedral, Giralda y flamenco",
+      "base": "Sevilla",
+      "am": "1. Visitar la Catedral de Sevilla y subir a la Giralda si la entrada y el horario turístico lo permiten.\n2. Pasear por el entorno del Archivo de Indias y el casco histórico sin añadir interiores obligatorios.",
+      "pm": "1. Acercarse a Plaza de España y pasear por el Parque de María Luisa, adaptando el recorrido a la temperatura.\n2. Regresar al hotel para descansar antes de la noche, especialmente si se opta por flamenco.",
+      "night": "1. Asistir a un espectáculo de flamenco únicamente si hay disponibilidad y encaja en el presupuesto; de lo contrario, paseo y cena en Sevilla.\n2. Preparar equipaje y documentación para el vuelo Sevilla → Lisboa del domingo.",
+      "mobility": "• *Centro → Plaza de España:* Caminar por los Jardines de Murillo o utilizar tranvía, autobús o taxi según calor.\n• *Plaza de España → alojamiento:* Transporte urbano o paseo de regreso.\n• *Flamenco:* Escoger local accesible a pie o en transporte desde el hotel; no comprometer descanso previo al vuelo.",
+      "note": "• *Sábado y cultos:* Confirmar horarios de Catedral y Giralda; modificar el orden si hubiera actos religiosos.\n• *Flamenco:* Actividad opcional y sin entrada comprada; revisar condiciones antes de pagar.\n• *Ritmo:* Mantener Plaza de España y parque como paseos adaptables, no actividades cronometradas.",
+      "places": [
+        "catedral",
+        "plazaespana",
+        "maria-luisa"
+      ],
+      "headerPlaces": [
+        "Catedral de Sevilla",
+        "Giralda",
+        "Plaza de España",
+        "Parque de María Luisa"
+      ],
+      "spend": null,
+      "hotel": "svq-don-paco",
+      "optionalPlaces": []
+    },
+    {
+      "n": 16,
+      "date": "2027-05-23",
+      "title": "Sevilla a Lisboa",
+      "base": "Lisboa",
+      "am": "1. Hacer check-out en Sevilla y trasladarse al aeropuerto con margen para seguridad y equipaje.\n2. Volar Sevilla (SVQ) → Lisboa (LIS) solo si hay una opción adecuada para el domingo; el horario, la operación del vuelo y su carácter directo aún no están confirmados para la fecha.",
+      "pm": "1. Llegar a Lisboa, ajustar el reloj a la hora portuguesa (una hora menos que en Sevilla) y trasladarse al hotel candidato junto a Rossio.\n2. Si la llegada lo permite, recorrer Baixa, Praça do Comércio y las calles de Chiado sin entradas con hora.",
+      "night": "1. Cenar por Baixa o Rossio y regresar al alojamiento.\n2. Revisar billetes de tren y accesos previstos para Sintra antes de descansar.",
+      "mobility": "• *Sevilla → aeropuerto:* Autobús aeroportuario o taxi según el horario real de salida.\n• *SVQ → LIS:* Vuelo pendiente de cotización; comprobar si es directo o con conexión y el costo final con equipaje.\n• *LIS → Rossio:* Metro con transbordo o taxi según equipaje y hora de llegada.",
+      "note": "• *Huso horario:* Lisboa utiliza una hora menos que Sevilla en mayo; los billetes muestran horas locales.\n• *Plan B:* Si no existe vuelo práctico, evaluar otro horario o ajustar el medio de traslado antes de comprar hoteles no reembolsables.\n• *Alojamiento:* Hotel Gat Rossio es candidato sin reserva.\n• *Ruta directa de referencia:* Ryanair y TAP publican vuelos directos Sevilla–Lisboa; confirmar específicamente el domingo 23/05/2027, precio final y equipaje antes de comprar.",
+      "places": [
+        "baixa-lisbon",
+        "chiado"
+      ],
+      "headerPlaces": [
+        "Aeropuerto de Sevilla (SVQ)",
+        "Aeropuerto Humberto Delgado de Lisboa (LIS)",
+        "Baixa",
+        "Chiado"
+      ],
+      "spend": null,
+      "hotel": "lis-gat-rossio",
+      "transportRefs": [
+        "flight-svq-lis"
+      ]
+    },
+    {
+      "n": 17,
+      "date": "2027-05-24",
+      "title": "Palacios de Sintra",
+      "base": "Lisboa",
+      "am": "1. Salir desde Rossio en tren hacia Sintra y dirigirse al Palacio Nacional da Pena en transporte local, taxi o servicio autorizado.\n2. Visitar el interior de Pena solo en la franja asignada; dejar margen amplio entre la puerta del parque y la entrada del palacio.",
+      "pm": "1. Descender hacia la Quinta da Regaleira y recorrer sus jardines y arquitectura si hay tiempo y una entrada compatible.\n2. Comer y pasear brevemente por el centro histórico de Sintra, sin añadir un tercer palacio.",
+      "night": "1. Tomar el tren de regreso a Lisboa desde Sintra y cenar por Rossio.\n2. Descansar tras una jornada con desniveles y posibles colas.",
+      "mobility": "• *Rossio ↔ Sintra:* Tren suburbano de ida y regreso; comprobar frecuencia, tarifas y billetes válidos para la fecha.\n• *Estación Sintra → Pena:* Autobús local, taxi u otra alternativa disponible; el trayecto implica subida y no está incluido en el billete ferroviario.\n• *Pena → Regaleira:* Traslado local o taxi según calor, tráfico y energía; evitar estimar que ambos monumentos están contiguos.",
+      "note": "• *Prioridad:* Reserva del Palacio da Pena con fecha y hora de acceso al interior, si se elige esa modalidad.\n• *Ritmo:* Regaleira exige tiempo y caminatas; omitirla si los horarios no son compatibles.\n• *Plan B:* Conservar Pena y centro de Sintra si solo hay disponibilidad para una visita.",
+      "places": [
+        "pena",
+        "regaleira"
+      ],
+      "headerPlaces": [
+        "Estación Rossio",
+        "Sintra · Palacio Nacional da Pena",
+        "Quinta da Regaleira",
+        "Centro histórico de Sintra"
+      ],
+      "spend": null,
+      "hotel": "lis-gat-rossio",
+      "transportRefs": [
+        "rail-lis-sin"
+      ]
+    },
+    {
+      "n": 18,
+      "date": "2027-05-25",
+      "title": "Belém",
+      "base": "Lisboa",
+      "am": "1. Viajar a Belém desde el centro y visitar el Monasterio de los Jerónimos según horarios y disponibilidad del martes.\n2. Contemplar la iglesia y el claustro solo si las modalidades de entrada y los tiempos reales lo permiten.",
+      "pm": "1. Pasear por los jardines y la ribera del Tajo, con vista al Monumento a los Descubrimientos.\n2. Acercarse al entorno de la Torre de Belém, sin prometer acceso interior, y probar los pastéis de Belém.",
+      "night": "1. Regresar a Lisboa centro y cenar en Chiado o Baixa.\n2. Mantener la noche libre para descansar antes del día de Alfama.",
+      "mobility": "• *Rossio → Belém:* Tranvía, autobús o tren de cercanías según servicio disponible; validar paradas y billetes.\n• *Belém → centro:* Revisar alternativas si hay demoras o saturación en transporte turístico.",
+      "note": "• *Jerónimos:* Confirmar horario turístico y posibles cierres extraordinarios antes de reservar entrada.\n• *Torre de Belém:* Contemplarla desde el exterior aunque el acceso interior esté cerrado o en obras.\n• *Comida:* Pastéis de Belém como degustación, sin suponer horario ni reservar mesa.\n• *Aperturas diferenciadas:* En los horarios oficiales de referencia, el claustro de Jerónimos abre desde las 09:30 del martes y la iglesia desde las 10:30; verificar horas vigentes en mayo de 2027 y la admisión de cada espacio por separado.\n• *Plan de lluvia opcional:* Museu Nacional do Azulejo puede sustituir parte del paseo de Belém únicamente si confirma su apertura al público en las fechas del viaje.",
+      "places": [
+        "jeronimos",
+        "belem",
+        "discoveries-monument"
+      ],
+      "headerPlaces": [
+        "Monasterio de los Jerónimos",
+        "Padrão dos Descobrimentos",
+        "Torre de Belém",
+        "Pastéis de Belém"
+      ],
+      "spend": null,
+      "hotel": "lis-gat-rossio",
+      "optionalPlaces": [
+        "discoveries-monument"
+      ]
+    },
+    {
+      "n": 19,
+      "date": "2027-05-26",
+      "title": "Alfama y miradores",
+      "base": "Lisboa",
+      "am": "1. Iniciar por el Castelo de São Jorge si su acceso y el estado del tiempo lo permiten.\n2. Descender hacia Alfama por miradores y calles históricas, ajustando la pendiente y evitando recorridos de ida y vuelta innecesarios.",
+      "pm": "1. Recorrer el entorno de la Sé de Lisboa, miradores de Santa Luzia y Portas do Sol, según afluencia.\n2. Comer bacalhau à brás, sardinas u otra especialidad portuguesa disponible; reservar tiempo para descansar y preparar maleta.",
+      "night": "1. Asistir a un espectáculo de fado solo si interesa y sus horarios permiten descansar antes del vuelo internacional.\n2. Regresar al hotel y comprobar terminal, traslado al aeropuerto y condiciones de check-out.",
+      "mobility": "• *Rossio → Castelo:* Transporte urbano o taxi para evitar parte de la subida; continuar a pie cuesta abajo por Alfama.\n• *Miradores → hotel:* Tranvía, autobús, metro o taxi según afluencia y cansancio.\n• *Salida del 27:* Confirmar el medio de transporte al aeropuerto según el horario real del vuelo.",
+      "note": "• *Cuestas:* Alfama tiene pavimento irregular y pendientes pronunciadas; priorizar rutas de bajada.\n• *Fado:* Opcional, sin comprar; si el regreso requiere salida muy temprana, omitirlo.\n• *Maleta:* Preparar todo antes de acostarse para no comprometer la mañana del vuelo.\n• *Alternativa opcional: Cascais y Boca do Inferno:* Sustituir el recorrido de Castelo de São Jorge, Alfama y miradores por una excursión de medio día largo o día completo. Tomar el tren desde Cais do Sodré a Cascais, pasear por el centro y la costa y llegar a Boca do Inferno a pie si el clima y la energía lo permiten, o en taxi/autobús local. Regresar a Lisboa con margen para preparar el vuelo; no sumar esta excursión al plan principal ni programarla después de una jornada completa en Alfama.",
+      "places": [
+        "espana-portugal-2027-alfama",
+        "sp27-cascais",
+        "sp27-boca-inferno"
+      ],
+      "headerPlaces": [
+        "Castelo de São Jorge",
+        "Miradouro das Portas do Sol",
+        "Miradouro de Santa Luzia",
+        "Sé de Lisboa",
+        "Alfama"
+      ],
+      "spend": null,
+      "hotel": "lis-gat-rossio",
+      "noteLinks": [
+        {
+          "label": "Lisboa · turismo y gastronomía",
+          "url": "https://www.visitlisboa.com/"
+        },
+        {
+          "label": "Cascais · turismo oficial",
+          "url": "https://www.visitcascais.com/"
+        }
+      ],
+      "optionalPlaces": [
+        "sp27-cascais",
+        "sp27-boca-inferno"
+      ]
+    },
+    {
+      "n": 20,
+      "date": "2027-05-27",
+      "title": "Regreso a México",
+      "base": "En vuelo",
+      "am": "1. Hacer check-out y viajar al aeropuerto de Lisboa con el margen recomendado para el vuelo internacional.\n2. Pasar seguridad y abordar el primer segmento del itinerario LIS → Ciudad de México (MEX), con escala si corresponde.",
+      "pm": "1. Continuar el vuelo o realizar conexión protegida conforme a los billetes que finalmente se compren.\n2. Ajustar actividades y comidas al horario real del itinerario, sin prometer llegada el mismo día.",
+      "night": "1. Llegar a Ciudad de México únicamente si los horarios y el cambio de fecha lo permiten; en caso contrario, continuar el itinerario previsto por la aerolínea.\n2. No añadir una noche de hotel ficticia ni actividades turísticas al último día.",
+      "mobility": "• *Hotel → LIS:* Metro, taxi u otro transporte según terminal y hora de salida; revisar los primeros servicios si la salida es muy temprana.\n• *LIS → MEX:* Vuelo multidestino internacional con posible conexión; preferir un único billete protegido, con equipaje y condiciones de tránsito comprobados.",
+      "note": "• *Fecha de regreso:* El 27 de mayo es fecha objetivo de salida desde Lisboa, no garantía de llegada a MEX ese jueves.\n• *Escala:* Comprobar país de tránsito, control migratorio, equipaje y tiempos mínimos de conexión.\n• *Presupuesto:* El vuelo internacional ya está incluido una sola vez en el escenario central.\n• *Duración real:* Si una escala desplaza la llegada a México al 28 de mayo, se debe revisar la duración publicada del viaje y el permiso laboral antes de reservar.",
+      "places": [],
+      "headerPlaces": [
+        "Lisboa · Aeropuerto Humberto Delgado",
+        "Ciudad de México · regreso pendiente de horario"
+      ],
+      "spend": null,
+      "transportRefs": [
+        "flight-international"
+      ]
+    }
+  ],
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Todas las visitas y desplazamientos están SIN COMPRAR; precios, ventas, cupos, cierres excepcionales y horarios exactos de 2027 por confirmar. Orden sugerido: primero Alhambra, después Sagrada Família y Palacio da Pena, luego Dalí/Alcázar/Regaleira/Mezquita; finalmente experiencias flexibles. Una reserva de transporte o alojamiento todavía no garantiza la entrada a un monumento. No convertir esta lista de previsiones en compras. Comprobar cambios, cancelaciones y acceso nominativo en cada enlace oficial. Orden crítico de compras: Alhambra y vuelos internacionales antes de comprometer hoteles no reembolsables; ajustar Sintra y Córdoba a los transportes disponibles."
+  },
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Alhambra y Palacios Nazaríes · martes 18 de mayo de 2027",
+          "description": "SIN COMPRAR. La entrada general abarca Alcazaba, Generalife y Palacios Nazaríes; el acceso a estos últimos exige respetar la franja del boleto. Confirmar fecha de apertura de ventas y documento nominativo antes de comprar. Reservar primero esta entrada, que condiciona la jornada granadina. Plan B: buscar otra franja del mismo día; si no existe, replantear el orden de días en Granada antes de fijar vuelos y hoteles. Tarifas 2027 por cotizar.",
+          "links": [
+            {
+              "label": "Visita oficial · condiciones",
+              "url": "https://www.alhambra-patronato.es/en/visit/organize-your-visit/time-of-the-visit"
+            }
+          ]
+        },
+        {
+          "title": "Sagrada Família · lunes 10 de mayo de 2027",
+          "description": "SIN COMPRAR. Elegir tipo de visita y hora disponibles, y verificar condiciones de acceso, identificación, cambios y entrada a torres (si se decide). Prioridad alta por el poco margen para reubicarla junto a Figueres. Plan B: buscar el miércoles 12 sustituyendo parte del recorrido modernista; no presentar entrada ni torre como garantizadas. Precio 2027 por cotizar.",
+          "links": [
+            {
+              "label": "Entradas oficiales",
+              "url": "https://sagradafamilia.org/en/tickets"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Teatro-Museo Dalí · martes 11 de mayo",
+          "description": "SIN COMPRAR. Consultar el calendario de apertura 2027 y escoger la hora de museo solo después de comprobar trenes Barcelona-Sants ↔ Figueres-Vilafant y acceso desde la estación. Plan B: desplazar Figueres al miércoles 12 e intercambiar la jornada de Park Güell si los horarios lo permiten.",
+          "links": [
+            {
+              "label": "Fundació Gala-Salvador Dalí",
+              "url": "https://www.salvador-dali.org/es/museos/teatro-museo-dali-de-figueres/"
+            }
+          ]
+        },
+        {
+          "title": "Real Alcázar · jueves 20 de mayo",
+          "description": "SIN COMPRAR. Comprar el acceso con fecha y franja cuando abra la venta; comprobar acceso y condiciones del operador oficial, que advierte que los pases pueden agotarse. Plan B: consultar otros pases del jueves o intercambiar con las visitas del sábado 22, sin perder Córdoba el viernes.",
+          "links": [
+            {
+              "label": "Información oficial y compra",
+              "url": "https://alcazarsevilla.org/prepara-la-visita/"
+            }
+          ]
+        },
+        {
+          "title": "Palacio Nacional da Pena · lunes 24 de mayo",
+          "description": "SIN COMPRAR. Si se elige visitar el interior, el boleto exige fecha y hora exactas de entrada al palacio, no al parque; prever al menos 30 minutos entre la puerta del parque y el palacio, sin tolerancia por retraso. Plan B: cambiar el orden con Quinta da Regaleira según cupos y valorar solo jardines/parque si no hay entrada interior.",
+          "links": [
+            {
+              "label": "Parques de Sintra · entradas",
+              "url": "https://www.parquesdesintra.pt/en/plan-your-visit/tickets-palace-of-pena/"
+            }
+          ]
+        },
+        {
+          "title": "Quinta da Regaleira · lunes 24 de mayo",
+          "description": "SIN COMPRAR. Entrada personal con día y hora; el operador oficial indica que puede reprogramarse por su taquilla autorizada con al menos 48 horas de antelación. Coordinación imprescindible con Pena; si ambos horarios no caben, priorizar uno y dejar el otro como opción.",
+          "links": [
+            {
+              "label": "Visitas y taquilla oficial",
+              "url": "https://www.regaleira.pt/es/visitas"
+            }
+          ]
+        },
+        {
+          "title": "Mezquita-Catedral de Córdoba · viernes 21 de mayo",
+          "description": "SIN COMPRAR. Confirmar primero el autobús de ida y vuelta Sevilla–Córdoba; después comprobar la franja de visita del monumento para ese viernes. Los horarios pueden modificarse por celebraciones religiosas. Si el regreso limita el tiempo, conservar Mezquita-Catedral y Judería, y omitir visitas secundarias.",
+          "links": [
+            {
+              "label": "Horario oficial y entradas",
+              "url": "https://www.mezquita-catedraldecordoba.es/organiza-la-visita/entradas-y-horarios/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Monasterio de los Jerónimos · martes 25 de mayo",
+          "description": "SIN COMPRAR. Mantener martes como día previsto y comprobar cierres extraordinarios, disponibilidad y modalidades de acceso de 2027; no reservar horarios no publicados. Alternativa si no abre: Torre de Belém desde el exterior y paseo de Belém, o intercambiar con Alfama.",
+          "links": [
+            {
+              "label": "Patrimonio cultural de Portugal",
+              "url": "https://www.museusemonumentos.pt/"
+            }
+          ]
+        },
+        {
+          "title": "Catedral y Giralda de Sevilla · sábado 22 de mayo",
+          "description": "SIN COMPRAR. Confirmar horario turístico compatible con cultos y celebraciones, y adquirir entrada si la franja es escasa. Plan B: cambiar con el Real Alcázar del jueves 20 si sus horarios permiten hacerlo.",
+          "links": [
+            {
+              "label": "Catedral de Sevilla · web oficial",
+              "url": "https://www.catedraldesevilla.es/"
+            }
+          ]
+        },
+        {
+          "title": "Espectáculo de flamenco en Sevilla · sábado 22 de mayo",
+          "description": "OPCIONAL, SIN COMPRAR. Comparar duración, formato, política de cancelación y ubicación del local una vez estén definidas las demás visitas. No comprometer la jornada de Córdoba ni aumentar el presupuesto sin restar otra actividad.",
+          "links": [
+            {
+              "label": "Turismo de Sevilla",
+              "url": "https://visitasevilla.es/"
+            }
+          ]
+        }
+      ]
+    ]
+  ],
+  "flight": "Hipótesis: MEX→Barcelona el 8 de mayo con llegada el 9; regreso Lisboa→MEX el 27 de mayo con conexión protegida. Por cotizar en Google Flights. Ninguna tarifa comprada. Alternativa: invertir ruta y comparar multicity.",
+  "local": "Barcelona→Madrid por tren; Madrid→Granada por avión (evitar ferrocarril Madrid–Andalucía); Granada→Sevilla por autobús; Sevilla→Lisboa por avión. Figueres, Zamora, Toledo y Sintra en tren; Córdoba en autobús de ida y vuelta. Validar cada sentido, estaciones, horarios y equipaje.",
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Vuelos internacionales · multidestino",
+      "day": null,
+      "selectedOption": "A",
+      "budgetIncludedIn": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "Barcelona (BCN)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Lisboa (LIS)",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 20500,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Vuelos de llegada el 9 y regreso el 27 de mayo. Conexión de vuelta por definir; cotizar como un solo boleto protegido."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.google.com/travel/flights"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "MEX",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=MEX"
+        },
+        {
+          "name": "Barcelona (BCN)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona%20(BCN)"
+        },
+        {
+          "name": "Lisboa (LIS)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20(LIS)"
+        }
+      ],
+      "boardingNote": "Aeropuertos de referencia para la ida del 8 de mayo y regreso del 27 de mayo; comprobar terminal, conexiones y horarios al cotizar.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "flight-mad-grx",
+      "type": "flight",
+      "title": "Madrid → Granada · vuelo",
+      "day": 10,
+      "selectedOption": "A",
+      "budgetIncludedIn": "flight-mad-grx-provision",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Madrid (MAD)",
+                  "to": "Granada (GRX)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 3000,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Evita el corredor ferroviario Madrid–Andalucía; confirmar fecha, equipaje y tiempo puerta a puerta."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.iberia.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Madrid (MAD)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid%20(MAD)"
+        },
+        {
+          "name": "Granada (GRX)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Granada%20(GRX)"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "flight-svq-lis",
+      "type": "flight",
+      "title": "Sevilla → Lisboa · vuelo",
+      "day": 16,
+      "selectedOption": "A",
+      "budgetIncludedIn": "flight-svq-lis-provision",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Sevilla (SVQ)",
+                  "to": "Lisboa (LIS)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 3500,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Confirmar vuelo directo, diferencia horaria España–Portugal y equipaje."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.flytap.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Sevilla (SVQ)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sevilla%20(SVQ)"
+        },
+        {
+          "name": "Lisboa (LIS)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20(LIS)"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-bcn-fig",
+      "type": "train",
+      "title": "Barcelona ↔ Figueres · excursión",
+      "day": 4,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-bcn-fig-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Barcelona-Sants",
+                  "to": "Figueres-Vilafant",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Figueres-Vilafant",
+                  "to": "Barcelona-Sants",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 1400,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Figueres-Vilafant no está junto al Teatro-Museo; añadir traslados locales."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.renfe.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Barcelona-Sants",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona-Sants"
+        },
+        {
+          "name": "Figueres-Vilafant",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Figueres-Vilafant"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-bcn-mad",
+      "type": "train",
+      "title": "Barcelona → Madrid",
+      "day": 6,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-bcn-mad",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Barcelona-Sants",
+                  "to": "Madrid-Puerta de Atocha",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 1650,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Verificar estación de llegada según operador; acceso al alojamiento."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.renfe.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Barcelona-Sants",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona-Sants"
+        },
+        {
+          "name": "Madrid-Puerta de Atocha",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid-Puerta%20de%20Atocha"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-mad-zam",
+      "type": "train",
+      "title": "Madrid ↔ Zamora · excursión",
+      "day": 7,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-mad-zam-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Madrid-Chamartín",
+                  "to": "Zamora",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Zamora",
+                  "to": "Madrid-Chamartín",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 1750,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Coordinar tiempos de visita y regreso; estación de Zamora fuera del casco histórico."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.renfe.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Madrid-Chamartín",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid-Chamart%C3%ADn"
+        },
+        {
+          "name": "Zamora",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zamora"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-mad-tol",
+      "type": "train",
+      "title": "Madrid ↔ Toledo · excursión",
+      "day": 9,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-mad-tol-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Madrid-Puerta de Atocha",
+                  "to": "Toledo",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Toledo",
+                  "to": "Madrid-Puerta de Atocha",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 700,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Confirmar billetes de ambos sentidos y acceso al casco histórico."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.renfe.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Madrid-Puerta de Atocha",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Madrid-Puerta%20de%20Atocha"
+        },
+        {
+          "name": "Toledo",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Toledo"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "bus-grx-svq",
+      "type": "bus",
+      "title": "Granada → Sevilla · autobús",
+      "day": 12,
+      "selectedOption": "A",
+      "budgetIncludedIn": "bus-grx-svq",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Estación de Autobuses de Granada",
+                  "to": "Sevilla Plaza de Armas",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 550,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Priorizar directo y añadir acceso urbano al hotel."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.alsa.es/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Estación de Autobuses de Granada",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Estaci%C3%B3n%20de%20Autobuses%20de%20Granada"
+        },
+        {
+          "name": "Sevilla Plaza de Armas",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sevilla%20Plaza%20de%20Armas"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "bus-svq-cor",
+      "type": "bus",
+      "title": "Sevilla ↔ Córdoba · excursión",
+      "day": 14,
+      "selectedOption": "A",
+      "budgetIncludedIn": "bus-svq-cor-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Sevilla Plaza de Armas",
+                  "to": "Córdoba estación de autobuses",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Córdoba estación de autobuses",
+                  "to": "Sevilla Plaza de Armas",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 950,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "Preferencia por autobús para evitar el corredor de alta velocidad excluido; comprobar regreso."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.alsa.es/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Sevilla Plaza de Armas",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sevilla%20Plaza%20de%20Armas"
+        },
+        {
+          "name": "Córdoba estación de autobuses",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=C%C3%B3rdoba%20estaci%C3%B3n%20de%20autobuses"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    },
+    {
+      "id": "rail-lis-sin",
+      "type": "train",
+      "title": "Lisboa ↔ Sintra · excursión",
+      "day": 17,
+      "selectedOption": "A",
+      "budgetIncludedIn": "rail-lis-sin-return",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador por confirmar · estimación de planeación",
+          "status": "planning",
+          "selectedFare": "estimate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Lisboa Rossio",
+                  "to": "Sintra",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Sintra",
+                  "to": "Lisboa Rossio",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Servicio y horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "estimate",
+              "name": "Estimación de planeación (sin cotizar)",
+              "price": {
+                "amount": 500,
+                "currency": "MXN"
+              },
+              "changes": "Pendiente de tarifa real",
+              "refunds": "Pendiente de tarifa real"
+            }
+          ],
+          "notes": "La tarifa de tren no cubre automáticamente los traslados a Pena y Regaleira."
+        }
+      ],
+      "links": [
+        {
+          "label": "Operador o buscador oficial",
+          "url": "https://www.cp.pt/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Lisboa Rossio",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20Rossio"
+        },
+        {
+          "name": "Sintra",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sintra"
+        }
+      ],
+      "boardingNote": "Estaciones de referencia; comprobar terminal, andén y servicio al elegir billetes.",
+      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
+    }
+  ],
+  "ticketNotes": [
+    {
+      "title": "Vuelos",
+      "note": "Comparar equipaje, cambios y conexiones protegidas antes de comprar."
+    },
+    {
+      "title": "Trenes",
+      "note": "Confirmar estaciones, operadores y billetes de ida y regreso."
+    },
+    {
+      "title": "Autobuses",
+      "note": "Comprobar horarios de ambos sentidos, equipaje y condiciones de billete."
+    }
+  ],
+  "hotels": [
+    {
+      "id": "bcn-acta-splendid",
+      "city": "Barcelona",
+      "name": "Hotel Acta Splendid",
+      "address": "Carrer de Muntaner, 2, Eixample, Barcelona",
+      "checkIn": "2027-05-09",
+      "checkOut": "2027-05-13",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $7,600 MXN por 4 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Eixample y Sant Antoni; verificar conexión con Sants, ruido y tipo de habitación.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://www.actahotels.com/hoteles/hotel-acta-splendid/contacto"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Acta%20Splendid%20Carrer%20de%20Muntaner%2C%202%2C%20Eixample%2C%20Barcelona"
+    },
+    {
+      "id": "mad-bb-sol",
+      "city": "Madrid",
+      "name": "B&B HOTEL Madrid Centro Puerta del Sol",
+      "address": "Calle de la Montera, 10-12, Madrid",
+      "checkIn": "2027-05-13",
+      "checkOut": "2027-05-17",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $7,600 MXN por 4 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Ubicación céntrica para excursiones desde Atocha y Chamartín; valorar ruido nocturno y habitación interior.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://www.hotel-bb.com/es/hotel/madrid-puerta-del-sol"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=B%26B%20HOTEL%20Madrid%20Centro%20Puerta%20del%20Sol%20Calle%20de%20la%20Montera%2C%2010-12%2C%20Madrid"
+    },
+    {
+      "id": "grx-macia-plaza",
+      "city": "Granada",
+      "name": "Hotel Macià Plaza",
+      "address": "Plaza Nueva, 5, Granada",
+      "checkIn": "2027-05-17",
+      "checkOut": "2027-05-19",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $3,000 MXN por 2 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Plaza Nueva facilita centro y acceso a la Alhambra; comprobar ruido y recogida de equipaje.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://www.maciahoteles.com/maciaplaza/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Maci%C3%A0%20Plaza%20Plaza%20Nueva%2C%205%2C%20Granada"
+    },
+    {
+      "id": "svq-don-paco",
+      "city": "Sevilla",
+      "name": "Hotel Don Paco",
+      "address": "Plaza Padre Jerónimo de Córdoba, 4, Sevilla",
+      "checkIn": "2027-05-19",
+      "checkOut": "2027-05-23",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $8,800 MXN por 4 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Centro histórico; comparar acceso al autobús Plaza de Armas y traslado al aeropuerto.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://www.hoteldonpaco.com/sevilla/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Don%20Paco%20Plaza%20Padre%20Jer%C3%B3nimo%20de%20C%C3%B3rdoba%2C%204%2C%20Sevilla"
+    },
+    {
+      "id": "lis-gat-rossio",
+      "city": "Lisboa",
+      "name": "Hotel Gat Rossio",
+      "address": "Rua Jardim do Regedor, 27-35, Lisboa",
+      "checkIn": "2027-05-23",
+      "checkOut": "2027-05-27",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo presupuestario: $8,000 MXN por 4 noches; NO cotización del hotel.",
+      "rateConditions": "Habitación para una persona con baño privado; verificar precio final, impuestos, cancelación, desayuno, equipaje y disponibilidad en las fechas elegidas.",
+      "notes": "Cerca de Rossio y Restauradores para excursión a Sintra; salida al aeropuerto muy temprana por comprobar.",
+      "links": [
+        {
+          "label": "Sitio / reserva oficial",
+          "url": "https://hotelgatrossio.com/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Gat%20Rossio%20Rua%20Jardim%20do%20Regedor%2C%2027-35%2C%20Lisboa"
+    }
+  ],
+  "stays": [
+    [
+      "Barcelona · 05-09 a 05-13 · 4 noches",
+      "Hotel Acta Splendid como candidato, sin reserva. Presupuesto orientativo $7,600 MXN; confirmar tarifa."
+    ],
+    [
+      "Madrid · 05-13 a 05-17 · 4 noches",
+      "B&B HOTEL Madrid Centro Puerta del Sol como candidato, sin reserva. Presupuesto orientativo $7,600 MXN; confirmar tarifa."
+    ],
+    [
+      "Granada · 05-17 a 05-19 · 2 noches",
+      "Hotel Macià Plaza como candidato, sin reserva. Presupuesto orientativo $3,000 MXN; confirmar tarifa."
+    ],
+    [
+      "Sevilla · 05-19 a 05-23 · 4 noches",
+      "Hotel Don Paco como candidato, sin reserva. Presupuesto orientativo $8,800 MXN; confirmar tarifa."
+    ],
+    [
+      "Lisboa · 05-23 a 05-27 · 4 noches",
+      "Hotel Gat Rossio como candidato, sin reserva. Presupuesto orientativo $8,000 MXN; confirmar tarifa."
+    ]
+  ],
+  "mapPoints": [
+    {
+      "name": "Barcelona",
+      "coords": [
+        41.3874,
+        2.1686
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Figueres",
+      "coords": [
+        42.2666,
+        2.9614
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Madrid",
+      "coords": [
+        40.4168,
+        -3.7038
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Zamora",
+      "coords": [
+        41.5033,
+        -5.7446
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Toledo",
+      "coords": [
+        39.8628,
+        -4.0273
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 5
+    },
+    {
+      "name": "Granada",
+      "coords": [
+        37.1773,
+        -3.5986
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 6
+    },
+    {
+      "name": "Sevilla",
+      "coords": [
+        37.3891,
+        -5.9845
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 7
+    },
+    {
+      "name": "Córdoba",
+      "coords": [
+        37.8882,
+        -4.7794
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 8
+    },
+    {
+      "name": "Lisboa",
+      "coords": [
+        38.7223,
+        -9.1393
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 9
+    },
+    {
+      "name": "Sintra",
+      "coords": [
+        38.8029,
+        -9.3817
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 10
+    }
+  ],
+  "seasonality": {
+    "summary": "Temperaturas orientativas: intervalo redondeado entre las medias de máximas diarias de Madrid-Retiro y Sevilla Aeropuerto (AEMET, normales 1981–2010); NO es pronóstico, ni representa todas las localidades del recorrido. Barcelona y Lisboa tienen comportamiento litoral distinto; Zamora y Granada pueden ser más frías de noche. Mayo es preferente por luz y equilibrio térmico; septiembre y octubre son alternativas que requieren revisar lluvias, eventos y precios.",
+    "months": {
+      "10": {
+        "status": "recommended",
+        "description": "19–26 °C. Temperaturas más suaves en Andalucía y actividad urbana cómoda; menos luz y mayor riesgo de lluvia en Lisboa y Barcelona.",
+        "icon": "partlyCloudy"
+      },
+      "11": {
+        "status": "conditional",
+        "description": "14–20 °C. Días cortos, clima más fresco en Castilla y mayor frecuencia de lluvia en Portugal y Andalucía; algunas tarifas podrían bajar.",
+        "icon": "cloudy"
+      },
+      "12": {
+        "status": "conditional",
+        "description": "10–17 °C. Días breves y frío en Madrid/Zamora; celebraciones de fin de año pueden elevar precios y limitar horarios.",
+        "icon": "cloudy"
+      },
+      "01": {
+        "status": "conditional",
+        "description": "10–16 °C. Invierno con días cortos y mañanas frías en Castilla; Sevilla y Lisboa suelen ser más templadas. Menor presión turística fuera de festivos.",
+        "icon": "cloudy"
+      },
+      "02": {
+        "status": "conditional",
+        "description": "12–18 °C. Aún frío en Madrid y Zamora; lluvia posible en Portugal y Andalucía. Puede favorecer alojamientos económicos fuera de carnavales.",
+        "icon": "cloudy"
+      },
+      "03": {
+        "status": "conditional",
+        "description": "16–22 °C. Primavera temprana variable; Semana Santa 2027 (21–28 de marzo) eleva demanda en Andalucía y algunos monumentos.",
+        "icon": "partlyCloudy"
+      },
+      "04": {
+        "status": "conditional",
+        "description": "18–23 °C. Clima agradable para monumentos y caminatas; Semana Santa y Feria de Abril en Sevilla pueden disparar ocupación.",
+        "icon": "partlyCloudy"
+      },
+      "05": {
+        "status": "recommended",
+        "description": "22–27 °C. Ventana principal: días largos y buenas condiciones para Barcelona, Madrid y Lisboa. Sevilla y Córdoba pueden alcanzar tardes calurosas; San Isidro aumenta la actividad en Madrid.",
+        "icon": "sun"
+      },
+      "06": {
+        "status": "conditional",
+        "description": "28–32 °C. Calor creciente en Sevilla y Córdoba; Barcelona y Lisboa todavía permiten recorridos cómodos. Revisar festivales y demanda.",
+        "icon": "hot"
+      },
+      "07": {
+        "status": "avoid",
+        "description": "32–36 °C. Altas temperaturas frecuentes en Andalucía y demanda turística estival; poca comodidad para excursiones y monumentos al sol.",
+        "icon": "hot"
+      },
+      "08": {
+        "status": "avoid",
+        "description": "31–36 °C. Calor persistente en Andalucía, vacaciones de verano y precios potencialmente elevados; Barcelona puede registrar tormentas.",
+        "icon": "hot"
+      },
+      "09": {
+        "status": "conditional",
+        "description": "26–32 °C. Alternativa de otoño temprano con calor posible en Andalucía y lluvias más probables en Barcelona. Comparar tarifas antes de elegir.",
+        "icon": "partlyCloudy"
+      }
+    },
+    "referenceLinks": [
+      {
+        "label": "AEMET · Madrid Retiro, normales históricas",
+        "url": "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=3195"
+      },
+      {
+        "label": "AEMET · Sevilla Aeropuerto, normales históricas",
+        "url": "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=5783"
+      },
+      {
+        "label": "AEMET · Barcelona Aeropuerto, normales históricas",
+        "url": "https://www.aemet.es/es/serviciosclimaticos/datosclimatologicos/valoresclimatologicos?l=0076"
+      },
+      {
+        "label": "IPMA · Lisboa, normales 1991–2020",
+        "url": "https://www.ipma.pt/pt/oclima/normais.clima/"
+      },
+      {
+        "label": "Barcelona · horas de luz mayo 2027",
+        "url": "https://puestadelsolhoy.es/barcelona/mayo/"
+      },
+      {
+        "label": "Madrid · horas de luz mayo 2027",
+        "url": "https://puestadelsolhoy.es/madrid/mayo/"
+      },
+      {
+        "label": "Lisboa · horas de luz mayo 2027",
+        "url": "https://orbitnight.com/sky/lisbon/2027-05"
+      },
+      {
+        "label": "Sevilla · horas de luz mayo 2027",
+        "url": "https://puestadelsolhoy.es/sevilla/mayo/"
+      },
+      {
+        "label": "Granada · horas de luz mayo 2027",
+        "url": "https://www.horapuestadesol.com/puesta-de-sol/granada/"
+      }
+    ]
+  },
+  "expenses": [
+    {
+      "id": "flight-international-provision",
+      "category": "transport",
+      "concept": "Vuelos internacionales multidestino MEX–BCN / LIS–MEX",
+      "cost": {
+        "amount": 20500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Importe de referencia incluido en la ficha flight-international; no se suma otra vez. El costo seleccionado en majorTransport se incorpora una sola vez.",
+      "includedInTransport": true
+    },
+    {
+      "id": "flight-mad-grx-provision",
+      "category": "transport",
+      "concept": "Vuelo Madrid–Granada · 17 mayo",
+      "date": "2027-05-17",
+      "cost": {
+        "amount": 3000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "flight-svq-lis-provision",
+      "category": "transport",
+      "concept": "Vuelo Sevilla–Lisboa · 23 mayo",
+      "date": "2027-05-23",
+      "cost": {
+        "amount": 3500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "lodging-bcn",
+      "category": "lodging",
+      "concept": "Barcelona · 4 noches",
+      "date": "2027-05-09",
+      "nights": 4,
+      "cost": {
+        "amount": 7600,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "bcn-acta-splendid"
+    },
+    {
+      "id": "lodging-mad",
+      "category": "lodging",
+      "concept": "Madrid · 4 noches",
+      "date": "2027-05-13",
+      "nights": 4,
+      "cost": {
+        "amount": 7600,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "mad-bb-sol"
+    },
+    {
+      "id": "lodging-grx",
+      "category": "lodging",
+      "concept": "Granada · 2 noches",
+      "date": "2027-05-17",
+      "nights": 2,
+      "cost": {
+        "amount": 3000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "grx-macia-plaza"
+    },
+    {
+      "id": "lodging-svq",
+      "category": "lodging",
+      "concept": "Sevilla · 4 noches",
+      "date": "2027-05-19",
+      "nights": 4,
+      "cost": {
+        "amount": 8800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "svq-don-paco"
+    },
+    {
+      "id": "lodging-lis",
+      "category": "lodging",
+      "concept": "Lisboa · 4 noches",
+      "date": "2027-05-23",
+      "nights": 4,
+      "cost": {
+        "amount": 8000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Estimación presupuestaria por ciudad; hotel candidato no cotizado ni reservado. No equiparar este importe con una tarifa del establecimiento.",
+      "hotelId": "lis-gat-rossio"
+    },
+    {
+      "id": "rail-bcn-fig-return",
+      "category": "transport",
+      "concept": "Barcelona ↔ Figueres (ida y vuelta)",
+      "date": "2027-05-11",
+      "cost": {
+        "amount": 1400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-bcn-mad",
+      "category": "transport",
+      "concept": "Barcelona → Madrid (tren)",
+      "date": "2027-05-13",
+      "cost": {
+        "amount": 1650,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-mad-zam-return",
+      "category": "transport",
+      "concept": "Madrid ↔ Zamora (ida y vuelta)",
+      "date": "2027-05-14",
+      "cost": {
+        "amount": 1750,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-mad-tol-return",
+      "category": "transport",
+      "concept": "Madrid ↔ Toledo (ida y vuelta)",
+      "date": "2027-05-16",
+      "cost": {
+        "amount": 700,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "bus-grx-svq",
+      "category": "transport",
+      "concept": "Granada → Sevilla (autobús)",
+      "date": "2027-05-19",
+      "cost": {
+        "amount": 550,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "bus-svq-cor-return",
+      "category": "transport",
+      "concept": "Sevilla ↔ Córdoba (ida y vuelta autobús)",
+      "date": "2027-05-21",
+      "cost": {
+        "amount": 950,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "rail-lis-sin-return",
+      "category": "transport",
+      "concept": "Lisboa ↔ Sintra (ida y vuelta)",
+      "date": "2027-05-24",
+      "cost": {
+        "amount": 500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica."
+    },
+    {
+      "id": "urban",
+      "category": "transport",
+      "concept": "Transporte urbano y aeropuertos · todas las ciudades",
+      "cost": {
+        "amount": 4000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión preliminar para presupuesto integral; no cotizado ni comprado. Transporte en ambos sentidos donde se indica. Provisión distribuida entre los 20 días únicamente para el desglose diario; no se suma por segunda vez.",
+      "dates": [
+        "2027-05-08",
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12",
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16",
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20",
+        "2027-05-21",
+        "2027-05-22",
+        "2027-05-23",
+        "2027-05-24",
+        "2027-05-25",
+        "2027-05-26",
+        "2027-05-27"
+      ]
+    },
+    {
+      "id": "food",
+      "category": "food",
+      "concept": "Alimentación · 20 días",
+      "cost": {
+        "amount": 12500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Presupuesto alimentario estimado para las 20 jornadas, incluyendo desayunos, comidas, cenas y degustaciones locales. No representa precios de restaurantes verificados. Provisión distribuida entre los 20 días únicamente para el desglose diario; no se suma por segunda vez.",
+      "dates": [
+        "2027-05-08",
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12",
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16",
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20",
+        "2027-05-21",
+        "2027-05-22",
+        "2027-05-23",
+        "2027-05-24",
+        "2027-05-25",
+        "2027-05-26",
+        "2027-05-27"
+      ]
+    },
+    {
+      "id": "activities",
+      "category": "activities",
+      "concept": "Entradas y experiencias principales",
+      "cost": {
+        "amount": 8000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Bolsa estimada para monumentos y actividades principales (Sagrada Família, Sant Pau, Dalí, Park Güell, Alhambra, Alcázar, Mezquita-Catedral, Sintra, Jerónimos, Catedral/Giralda, etc.). No es una cotización individual ni cubre necesariamente todas las visitas interiores opcionales. Provisión distribuida entre los 20 días únicamente para el desglose diario; no se suma por segunda vez.",
+      "dates": [
+        "2027-05-08",
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12",
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16",
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20",
+        "2027-05-21",
+        "2027-05-22",
+        "2027-05-23",
+        "2027-05-24",
+        "2027-05-25",
+        "2027-05-26",
+        "2027-05-27"
+      ]
+    },
+    {
+      "id": "contingency",
+      "category": "other",
+      "concept": "Seguro y contingencias",
+      "cost": {
+        "amount": 5500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión conjunta para seguro, imprevistos y pequeñas diferencias de tarifas o impuestos; verificar cobertura del seguro y posibles tasas turísticas de alojamientos antes de comprar."
+    }
+  ],
+  "costs": [
+    [
+      "Vuelos internacionales y europeos",
+      20000,
+      34000
+    ],
+    [
+      "18 noches de alojamiento",
+      28000,
+      43000
+    ],
+    [
+      "Trenes y autobuses interurbanos",
+      5000,
+      10000
+    ],
+    [
+      "Transporte urbano y aeropuertos",
+      3000,
+      6000
+    ],
+    [
+      "Alimentación",
+      10000,
+      15000
+    ],
+    [
+      "Entradas",
+      6000,
+      10000
+    ],
+    [
+      "Seguro y contingencias",
+      4000,
+      7000
+    ]
+  ],
+  "budgetRange": [
+    76000,
+    125000
+  ],
+  "budgetPreliminary": {
+    "low": 76000,
+    "high": 125000,
+    "marginMXN": 25500,
+    "referenceFlightMXN": 20500,
+    "useBudgetRange": true
+  },
+  "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto. Riesgos aún no cotizados: maleta en los dos vuelos europeos, suplementos o impuestos municipales de hoteles, transporte de subida en Sintra y conexiones aeroportuarias. Antes de considerar el rango confiable comparar los vuelos internacionales de fechas reales; $20,500 MXN puede resultar insuficiente para itinerario multidestino. Evitar crear gastos adicionales ya cubiertos por las categorías provisionales. El escenario mínimo ($76,000 MXN) es optimista: no equivale a ofertas verificadas. El máximo ($125,000 MXN) tampoco es garantía; recalcular el intervalo cuando existan cotizaciones con equipaje, tasas locales y condiciones de cambio.",
+  "sourceNote": "Consulta editorial y monetaria del 1/11/2026. EUR/MXN del BCE a 30/10/2026: 21.1237, última referencia hábil disponible. Horas solares calculadas para mayo 2027 y clima histórico, sin pronóstico. Todos los precios de viaje en MXN son provisiones no cotizadas.",
+  "tips": [
+    "Segovia sigue disponible como excursión opcional desde Madrid (Acueducto, Catedral, Alcázar y Pradera de San Marcos). Sustituye un día madrileño o una excursión existente; no acumularla a Zamora, Toledo y San Isidro sin redistribuir tiempo y costos.",
+    "Restricción personal: no usar el corredor ferroviario Madrid–Andalucía; comprobar el trazado exacto antes de comprar servicios regionales.",
+    "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa.",
+    "El escenario central de gastos es una provisión completa y no una cotización. No confundir gastos presupuestados con reservas ni contabilizar nuevamente los transportes al desglosar cada trayecto."
+  ],
+  "sources": [],
+  "cover": "sagrada",
+  "exchangeRates": {
+    "EUR": 21.1237
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-10-30",
+    "baseCurrency": "MXN",
+    "description": "Referencia BCE del último día hábil antes del 1/11/2026: €1 ≈ $21.12 MXN. Conversión orientativa, no cotización bancaria ni predicción de mayo 2027.",
+    "sources": {
+      "EUR": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/eurofxref-graph-mxn.en.html"
+    }
+  },
+  "heroLodgingSummary": "18 noches, 5 alojamientos",
+  "attractionTerms": [],
+  "placeDescriptions": {
+    "espana-portugal-2027-alfama": "Desde los miradores de Alfama se distinguen tejados de teja rojiza, iglesias históricas y la ribera del Tajo, una panorámica característica de Lisboa.",
+    "gotico": "Callejones medievales y plazas íntimas del corazón antiguo de Barcelona, entre arquitectura gótica y rincones históricos.",
+    "barcelona-cathedral": "La Catedral de Santa Eulalia domina el Barrio Gótico con su fachada monumental y el legado medieval de la ciudad.",
+    "born-barcelona": "El paseo del Born reúne calles históricas, cafés y edificios tradicionales para explorar a pie.",
+    "sagrada": "La basílica de Antoni Gaudí combina torres escultóricas, símbolos naturales y luz de colores.",
+    "santpau": "El conjunto modernista de Domènech i Montaner conserva pabellones, mosaicos y jardines de un hospital pionero.",
+    "dali-figueres": "El museo concebido por Dalí transforma un antiguo teatro en una experiencia surrealista de fachada y salas singulares.",
+    "guell": "El parque de Gaudí integra arquitectura, mosaicos y vegetación sobre una colina con panorámicas de Barcelona.",
+    "batllo": "Opcional: La fachada ondulante de Casa Batlló y sus detalles orgánicos representan la arquitectura modernista de Gaudí.",
+    "sp27-casa-mila": "Opcional: La Pedrera destaca por su fachada sinuosa y balcones de hierro forjado, obra residencial de Antoni Gaudí.",
+    "puerta-sol": "La Puerta del Sol es uno de los puntos más reconocibles del centro madrileño y un lugar de encuentro entre calles históricas.",
+    "plaza-mayor-madrid": "La Plaza Mayor reúne soportales, fachadas tradicionales y siglos de historia urbana en el corazón de Madrid de los Austrias.",
+    "zamora-cathedral": "La Catedral de Zamora destaca por su cimborrio de influencia bizantina, una pieza singular del románico castellano junto al castillo.",
+    "zamora-duero": "El río Duero bordea la ciudad histórica de Zamora y permite contemplar sus murallas y edificios monumentales desde la ribera.",
+    "toledo": "Las calles en cuesta y la silueta histórica de Toledo recuerdan la convivencia de tradiciones cristianas, judías y musulmanas.",
+    "toledo-cathedral": "La Catedral Primada de Toledo concentra arquitectura gótica, artes decorativas y patrimonio religioso de una de las grandes sedes castellanas.",
+    "san-juan-reyes-toledo": "El monasterio de San Juan de los Reyes conserva un claustro gótico de gran detalle y la memoria de los Reyes Católicos.",
+    "sp27-san-isidro": "El baile del chotis y los trajes castizos representan una de las tradiciones más reconocibles de las fiestas madrileñas de San Isidro.",
+    "sp27-darro": "La Carrera del Darro acompaña el cauce del río entre fachadas históricas, puentes de piedra y vistas hacia la colina de la Alhambra.",
+    "alhambra": "El conjunto nazarí de la Alhambra reúne palacios, fortalezas y jardines históricos sobre la colina de la Sabika, con vistas a Granada.",
+    "albaicin": "Las calles del Albaicín conservan el trazado de su pasado andalusí, entre casas encaladas y miradores frente a la Alhambra.",
+    "santa-cruz-seville": "Santa Cruz conserva callejuelas estrechas, plazas arboladas y patios que evocan la historia del antiguo barrio judío sevillano.",
+    "alcazar": "El Real Alcázar combina salones mudéjares, patios ornamentados y jardines que revelan distintas etapas de la historia de Sevilla.",
+    "triana": "Triana se extiende junto al Guadalquivir, entre talleres de cerámica, calles populares y el puente de Isabel II.",
+    "cordoba": "El bosque de columnas y arcos bicolores de la Mezquita-Catedral refleja una singular superposición de arquitectura islámica y cristiana.",
+    "juderia-cordoba": "La Judería de Córdoba reúne callejones blancos, patios y espacios históricos alrededor del núcleo monumental de la ciudad.",
+    "roman-bridge-cordoba": "El puente romano cruza el Guadalquivir junto a la Mezquita-Catedral y ofrece una perspectiva reconocible del centro histórico.",
+    "catedral": "La Catedral de Sevilla destaca por sus dimensiones góticas y por la Giralda, antiguo alminar convertido en campanario.",
+    "plazaespana": "La Plaza de España forma una gran explanada semicircular de ladrillo y cerámica, rodeada por un canal y galerías monumentales.",
+    "maria-luisa": "El Parque de María Luisa ofrece senderos sombreados, fuentes y jardines para descansar entre las visitas al centro sevillano.",
+    "baixa-lisbon": "La Praça do Comércio se abre hacia el Tajo entre fachadas porticadas, una de las plazas emblemáticas de la Lisboa reconstruida tras 1755.",
+    "chiado": "Chiado reúne cafés históricos, librerías y calles elegantes entre Baixa y Bairro Alto.",
+    "pena": "El Palacio da Pena combina torres, terrazas y fachadas de colores sobre las colinas arboladas de Sintra.",
+    "regaleira": "La Quinta da Regaleira es conocida por sus jardines simbólicos, grutas y pozo iniciático.",
+    "jeronimos": "El Monasterio de los Jerónimos exhibe la ornamentación manuelina vinculada a la historia marítima de Portugal.",
+    "belem": "La Torre de Belém es uno de los monumentos ribereños más reconocibles de Lisboa, incluso cuando la visita interior no está disponible.",
+    "sp27-barceloneta": "Opcional: Playa y barrio marinero de Barceloneta; sustituye parte de un paseo urbano en Barcelona.",
+    "mnac": "Opcional: Museo Nacional de Arte de Cataluña, alternativa artística en Montjuïc.",
+    "montjuic": "Opcional: Montjuïc y sus miradores, con posibilidad de Salts Bar sujeto a apertura.",
+    "sp27-turo-rovira": "Opcional: Mirador panorámico sobre Barcelona; requiere tiempo de traslado y subida.",
+    "sp27-torre-glories": "Opcional: Exterior de la Torre Glòries, sin entrada al mirador.",
+    "debod-madrid": "Opcional: Templo de Debod, paseo alternativo en Madrid.",
+    "sp27-veneno": "Opcional: Memorial de Cristina Ortiz «La Veneno» en Parque del Oeste, dentro del paseo alternativo de Madrid.",
+    "segovia-aqueduct": "Opcional: Acueducto romano de Segovia, si eliges cambiar un día madrileño por esta excursión.",
+    "segovia-alcazar": "Opcional: Alcázar de Segovia, opción dentro de la excursión alternativa.",
+    "segovia-pradera-san-marcos": "Opcional: Pradera con vistas al Alcázar, opción fotográfica de Segovia.",
+    "mirador-valle-toledo": "Opcional: Panorámica de Toledo al otro lado del Tajo; exige traslado adicional.",
+    "san-nicolas-granada": "Opcional: Mirador de San Nicolás en Albaicín, según tiempo y energía.",
+    "discoveries-monument": "Opcional: Padrão dos Descobrimentos, parada opcional durante el paseo por Belém.",
+    "sp27-cascais": "Opcional: Paseo costero por Cascais como sustitución de la jornada urbana de Alfama.",
+    "sp27-boca-inferno": "Opcional: Acantilado y formación rocosa de Boca do Inferno, en la excursión alternativa a Cascais."
+  }
+}

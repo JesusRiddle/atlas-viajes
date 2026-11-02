@@ -7,7 +7,8 @@ const assert = require('node:assert/strict');
   const browser = await chromium.launch({ headless: true });
   const catalog = fs.readFileSync('modules.js', 'utf8');
   const destinations = [...catalog.matchAll(/"id": "([a-z0-9-]+)"/g)].map(match => match[1]);
-  assert.equal(destinations.length, 20);
+  // El catálogo tiene 19 viajes tras retirar el itinerario antiguo absorbido por España + Portugal 2027.
+  assert.equal(destinations.length, 19);
   const anchors = ['plan', 'mapa', 'temporadas', 'experiencias', 'reservas', 'traslados', 'alojamientos', 'dias', 'costes'];
   try {
     for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
