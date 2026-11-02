@@ -92,7 +92,8 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "buenos-aires-inicio"
     },
     {
       "n": 3,
@@ -106,7 +107,8 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "buenos-aires-inicio"
     },
     {
       "n": 4,
@@ -120,7 +122,8 @@
       "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "chalten-senderos"
     },
     {
       "n": 5,
@@ -134,7 +137,8 @@
       "note": "Laguna de los Tres: 25 km según referencia oficial de Parques Nacionales, entre 8 y 11 horas según itinerario; dificultad media-alta. Exigir guía habilitado, clima seguro y capacidad física suficiente. Laguna Capri es la alternativa corta; no subir con hielo peligroso.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "chalten-senderos"
     },
     {
       "n": 6,
@@ -148,7 +152,8 @@
       "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "chalten-senderos"
     },
     {
       "n": 7,
@@ -162,7 +167,8 @@
       "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "chalten-senderos"
     },
     {
       "n": 8,
@@ -176,7 +182,8 @@
       "note": "Ultima oportunidad de reprogramación de Laguna de los Tres; Lago del Desierto, cabalgata y paseos cortos pueden intercambiarse, sujetos a cupos y políticas de cancelación.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "chalten-senderos"
     },
     {
       "n": 9,
@@ -190,7 +197,8 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "calafate-sierra"
     },
     {
       "n": 10,
@@ -204,7 +212,8 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "calafate-sierra"
     },
     {
       "n": 11,
@@ -218,7 +227,8 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "calafate-sierra"
     },
     {
       "n": 12,
@@ -232,7 +242,8 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "calafate-sierra"
     },
     {
       "n": 13,
@@ -246,7 +257,8 @@
       "note": "Quinta noche en El Calafate bajo evaluación: conservar solo si aporta excursión diferenciada o margen meteorológico valioso; presupuestada provisionalmente.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "calafate-sierra"
     },
     {
       "n": 14,
@@ -260,7 +272,8 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "buenos-aires-regreso"
     },
     {
       "n": 15,
@@ -274,7 +287,8 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
-      "spend": null
+      "spend": null,
+      "hotel": "buenos-aires-regreso"
     },
     {
       "n": 16,
@@ -297,11 +311,15 @@
       [
         {
           "title": "Laguna de los Tres · trekking guiado grupal",
-          "description": "Reservar con operador habilitado y confirmar cupo, requisitos físicos, traslado a Río Eléctrico, posibles modificaciones por viento, nieve o lluvia y ruta de regreso por Laguna Capri.",
+          "description": "Reservar con operador habilitado y confirmar cupo, requisitos físicos, traslado a Río Eléctrico, posibles modificaciones por viento, nieve o lluvia y ruta de regreso por Laguna Capri. La ficha actual del operador describe 19.6 km, unas 8–10 horas, 890 m de ascenso, grupo de máximo 8 y regreso por Laguna Capri; la salida y costo de 2027 están pendientes.",
           "links": [
             {
+              "label": "Fitz Roy Expediciones · guía grupal",
+              "url": "https://fitzroyexpediciones.com.ar/es/salidas/laguna-de-los-tres/"
+            },
+            {
               "label": "Información turística oficial de El Chaltén",
-              "url": "https://www.elchalten.gob.ar/secretaria-de-turismo/"
+              "url": "https://elchalten.tur.ar/omnibus/"
             }
           ]
         },
@@ -496,7 +514,7 @@
       "title": "Aeropuerto El Calafate → El Chaltén",
       "selectedOption": null,
       "options": [],
-      "notes": "Conexión de 6 noviembre; operadores y horarios de 2027 pendientes. No encadenar vuelo y último bus sin margen."
+      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados."
     },
     {
       "id": "bus-chalten-calafate",
@@ -504,10 +522,26 @@
       "title": "El Chaltén → El Calafate",
       "selectedOption": null,
       "options": [],
-      "notes": "Trayecto previsto 11 noviembre; comparar salidas directas y tiempo real de traslado."
+      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027."
     }
   ],
-  "ticketNotes": [],
+  "ticketNotes": [
+    {
+      "title": "Conexión FTE → El Chaltén",
+      "text": "Comprar la salida del aeropuerto solo tras comprobar hora efectiva de llegada del vuelo, recogida de equipaje y margen de conexión. Consultar compañías desde el enlace de Turismo Chaltén.",
+      "links": [
+        {
+          "label": "Turismo Chaltén · ómnibus",
+          "url": "https://elchalten.tur.ar/omnibus/"
+        }
+      ]
+    },
+    {
+      "title": "Vuelos internacionales y nacionales",
+      "text": "Comparar ida y regreso, equipaje de mano/documentado y traslado entre EZE y AEP. No mezclar vuelos de aeropuertos diferentes sin margen amplio; falta disponibilidad de noviembre 2027.",
+      "links": []
+    }
+  ],
   "attractionTerms": [],
   "cover": null,
   "mapPoints": [
@@ -546,10 +580,87 @@
     "reservationTitle": "Reservaciones importantes",
     "reservationNote": "Reservas, cupos y tarifas para noviembre de 2027 aún por verificar; ninguna excursión ni vuelo está comprado."
   },
-  "lodgingSummary": "14 noches previstas en cuatro estancias: Buenos Aires (2 + 2), El Chaltén (5) y El Calafate (5). Hoteles y precios sin cotizar.",
+  "lodgingSummary": "14 noches en cuatro estancias: Up Recoleta (2 + 2), Hostería Senderos (5) y Sierra Nevada (5), todos candidatos sin tarifa ni disponibilidad confirmadas.",
   "heroLodgingSummary": "14 noches · 4 alojamientos",
   "budgetPreliminary": true,
-  "hotels": [],
+  "hotels": [
+    {
+      "id": "buenos-aires-inicio",
+      "city": "Buenos Aires",
+      "name": "Up Recoleta",
+      "address": "José León Pagano 2684, Buenos Aires, Argentina",
+      "checkIn": "2027-11-04",
+      "checkOut": "2027-11-06",
+      "status": "Candidato · no reservado",
+      "rate": null,
+      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final.",
+      "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://uphoteles.com/up-recoleta/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jos%C3%A9%20Le%C3%B3n%20Pagano%202684%2C%20Buenos%20Aires%2C%20Argentina"
+    },
+    {
+      "id": "chalten-senderos",
+      "city": "El Chaltén",
+      "name": "Hostería Senderos",
+      "address": "Perito Moreno 35, El Chaltén, Santa Cruz, Argentina",
+      "checkIn": "2027-11-06",
+      "checkOut": "2027-11-11",
+      "status": "Candidato · no reservado",
+      "rate": null,
+      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final.",
+      "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://www.senderoshosteria.com.ar/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Perito%20Moreno%2035%2C%20El%20Chalt%C3%A9n%2C%20Santa%20Cruz%2C%20Argentina"
+    },
+    {
+      "id": "calafate-sierra",
+      "city": "El Calafate",
+      "name": "Hotel Sierra Nevada",
+      "address": "Av. del Libertador 1888, El Calafate, Santa Cruz, Argentina",
+      "checkIn": "2027-11-11",
+      "checkOut": "2027-11-16",
+      "status": "Candidato · no reservado",
+      "rate": null,
+      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final.",
+      "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://sierranevada.com.ar/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Av.%20del%20Libertador%201888%2C%20El%20Calafate%2C%20Santa%20Cruz%2C%20Argentina"
+    },
+    {
+      "id": "buenos-aires-regreso",
+      "city": "Buenos Aires",
+      "name": "Up Recoleta",
+      "address": "José León Pagano 2684, Buenos Aires, Argentina",
+      "checkIn": "2027-11-16",
+      "checkOut": "2027-11-18",
+      "status": "Candidato · no reservado",
+      "rate": null,
+      "rateConditions": "Precio y disponibilidad de habitación doble en noviembre de 2027 por cotizar; revisar impuestos, desayuno, cancelación y moneda final.",
+      "notes": "Hotel verificado en sitio oficial. No hay bloqueo ni compra.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://uphoteles.com/up-recoleta/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Jos%C3%A9%20Le%C3%B3n%20Pagano%202684%2C%20Buenos%20Aires%2C%20Argentina"
+    }
+  ],
   "stays": [],
   "seasonality": {
     "summary": "Máximas diurnas aproximadas orientadas a El Chaltén y El Calafate; Buenos Aires es sensiblemente más cálida. No son pronósticos. Noviembre se elige por luz y actividad turística fuera del pico de verano, no porque garantice cielos despejados. Los senderos elevados pueden tener nieve o hielo.",
@@ -668,9 +779,29 @@
     {
       "label": "Parques Nacionales · épocas recomendadas",
       "url": "https://www.argentina.gob.ar/parquesnacionales/patagonia-austral/parque-nacional-los-glaciares/panoramica"
+    },
+    {
+      "label": "Hostería Senderos · contacto",
+      "url": "https://www.senderoshosteria.com.ar/contacto"
+    },
+    {
+      "label": "Up Recoleta · alojamiento",
+      "url": "https://uphoteles.com/up-recoleta/"
+    },
+    {
+      "label": "Hotel Sierra Nevada · contacto",
+      "url": "https://sierranevada.com.ar/contacto/"
+    },
+    {
+      "label": "Fitz Roy Expediciones · grupo guiado",
+      "url": "https://fitzroyexpediciones.com.ar/es/salidas/laguna-de-los-tres/"
+    },
+    {
+      "label": "Turismo Chaltén · autobuses",
+      "url": "https://elchalten.tur.ar/omnibus/"
     }
   ],
-  "sourceNote": "Fuentes oficiales del Parque Nacional Los Glaciares consultadas el 2 noviembre de 2026; los horarios de transporte, tarifas y disponibilidad de noviembre de 2027 siguen sin verificar. Ninguna reserva comprada.",
+  "sourceNote": "Actualizado el 2 noviembre 2026 con sitios oficiales de tres hoteles candidatos, fichas de excursiones y horarios referenciales de buses; ninguna tarifa de alojamiento, vuelo o excursión está cotizada para noviembre de 2027.",
   "budgetRange": [
     110000,
     155000
