@@ -4177,5 +4177,59 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
       "attribution": "Alberto-g-rovi"
     }
+  },
+  "sp27-cascais": {
+    "name": "Cascais",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cascais%20-%20Boca%20do%20Inferno%20(53854438774).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Cascais_-_Boca_do_Inferno_(53854438774).jpg",
+      "author": "Jorge Franganillo",
+      "attribution": "Jorge Franganillo / Wikimedia Commons"
+    }
+  },
+  "sp27-boca-inferno": {
+    "name": "Boca do Inferno",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Boca%20do%20Inferno%2C%20Cascais.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Boca_do_Inferno,_Cascais.jpg",
+      "author": "Carlos SGP",
+      "attribution": "Carlos SGP / Wikimedia Commons"
+    }
+  },
+  "sp27-barceloneta": {
+    "name": "Barceloneta",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barceloneta%20-%20Barcelona.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Barceloneta_-_Barcelona.jpg",
+      "author": "Nikolaï POSNER",
+      "attribution": "Nikolaï POSNER / Wikimedia Commons"
+    }
+  },
+  "sp27-turo-rovira": {
+    "name": "Turó de la Rovira",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vista%20Barcelona%20des%20del%20Tur%C3%B3%20de%20la%20Rovira.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Vista_Barcelona_des_del_Turó_de_la_Rovira.jpg",
+      "author": "Wikimedia Commons",
+      "attribution": "Wikimedia Commons / Wikimedia Commons"
+    }
+  },
+  "sp27-torre-glories": {
+    "name": "Torre Glòries",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barcelona%20-%20Torre%20Gl%C3%B2ries.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Barcelona_-_Torre_Glòries.jpg",
+      "author": "Wikimedia Commons",
+      "attribution": "Wikimedia Commons / Wikimedia Commons"
+    }
+  },
+  "sp27-veneno": {
+    "name": "Memorial de La Veneno",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Madrid%20-%20Parque%20del%20Oeste%2C%20en%20memoria%20de%20Cristina%20Ortiz%2C%20'La%20Veneno'%201.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Madrid_-_Parque_del_Oeste,_en_memoria_de_Cristina_Ortiz,_'La_Veneno'_1.jpg",
+      "author": "Wikimedia Commons",
+      "attribution": "Wikimedia Commons / Wikimedia Commons"
+    }
   }
 }
