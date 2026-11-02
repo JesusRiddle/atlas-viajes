@@ -74,7 +74,7 @@
       "am": "Salida prevista desde CDMX el 3 de noviembre. Horario nocturno y llegada al día siguiente todavía no comprobados.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Tránsito aéreo; horario y llegada pendientes.",
-      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "mobility": "Referencia histórica del viaje original: Aeroméxico MEX→EZE directo. En la presentación de 2026 salía a las 09:35 y llegaba a las 21:50 el mismo día; horario NO confirmado para 2027. Validar si se necesita salir el 3 o el 4 de noviembre según vuelo real.",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
@@ -85,7 +85,7 @@
       "date": "2027-11-04",
       "title": "Llegada a Buenos Aires",
       "base": "Buenos Aires",
-      "am": "Llegada prevista, traslado al alojamiento en Recoleta o Barrio Norte; El Ateneo Grand Splendid según hora y energía.",
+      "am": "Primer día en Buenos Aires, sujeto al vuelo real. La presentación antigua suponía llegada a EZE el mismo día de salida, no al siguiente; ajustar noches y fechas cuando aparezcan horarios de 2027.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en Buenos Aires; alojamiento aún no seleccionado.",
       "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
@@ -118,7 +118,7 @@
       "am": "Vuelo a El Calafate y autobús o shuttle a El Chaltén. Exigir conexión holgada o ajustar la noche si no es viable.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en El Chaltén; alojamiento aún no seleccionado.",
-      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "mobility": "Referencia 2026: Aerolíneas Argentinas AEP→FTE directo, AR1840 05:10–08:30. Para 2027 sin servicio confirmado; conectar FTE→El Chaltén solo con margen real y última salida verificada.",
       "note": "Ajustar actividades con el operador de Laguna de los Tres según clima, seguridad y disponibilidad.",
       "places": [],
       "headerPlaces": [],
@@ -268,7 +268,7 @@
       "am": "Vuelo nacional y paseo urbano ligero, según horario de llegada.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Noche prevista en Buenos Aires; alojamiento aún no seleccionado.",
-      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "mobility": "Referencia 2026: Aerolíneas Argentinas FTE→AEP directo, AR1895 12:30–15:30. No representa horario ni vuelo confirmado para noviembre 2027.",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
@@ -298,7 +298,7 @@
       "am": "Vuelo internacional de regreso. La llegada efectiva a CDMX puede ocurrir el 18 o 19, según el vuelo finalmente comprado.",
       "pm": "Actividad y horario por concretar según conexiones, clima y reservas.",
       "night": "Tránsito aéreo; horario y llegada pendientes.",
-      "mobility": "Traslados y horarios pendientes de cotización; no hay boletos comprados.",
+      "mobility": "Referencia histórica: Aeroméxico EZE→MEX directo, 12:00–18:50 en la fecha de 2026. Confirmar itinerario, disponibilidad, equipaje y fecha real de llegada a CDMX para 2027.",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada.",
       "places": [],
       "headerPlaces": [],
@@ -374,22 +374,22 @@
       "category": "flight",
       "concept": "Vuelos internacionales redondos para dos",
       "cost": {
-        "amount": 28000,
+        "amount": 24398,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+      "notes": "Referencia histórica de la presentación de 2026: Aeroméxico MEX–EZE–MEX, $12,199 MXN por persona, $24,398 MXN para dos. No cotizado, reservado ni disponible para noviembre de 2027. Horarios anteriores 09:35 salida / 21:50 llegada y retorno 12:00 / 18:50 solo ilustrativos; NO fijar calendario 2027 con esas horas."
     },
     {
       "id": "flight-domestic",
       "category": "flight",
       "concept": "Vuelos nacionales redondos para dos",
       "cost": {
-        "amount": 18000,
+        "amount": 23250,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+      "notes": "Referencia histórica de la presentación de 2026: Aerolíneas Argentinas AEP–FTE–AEP, $23,250 MXN para dos incluyendo una maleta documentada compartida de 15 kg según el escenario original. Vuelos ilustrativos AR1840 (05:10–08:30) y AR1895 (12:30–15:30); NO equivalen a vuelos ni horarios confirmados en noviembre 2027. Revisar equipaje real y condiciones al salir inventario."
     },
     {
       "id": "lodging",
@@ -498,7 +498,7 @@
       "title": "Vuelo internacional · MEX ↔ Buenos Aires",
       "selectedOption": null,
       "options": [],
-      "notes": "Fechas objetivo 3 y 18 de noviembre de 2027. Cotizar ida y regreso completos, equipaje, escalas y día real de llegada a CDMX. Sin vuelo seleccionado."
+      "notes": "Referencia histórica de la presentación de 2026: Aeroméxico MEX–EZE–MEX, $12,199 MXN por persona, $24,398 MXN para dos. No cotizado, reservado ni disponible para noviembre de 2027. Horarios anteriores 09:35 salida / 21:50 llegada y retorno 12:00 / 18:50 solo ilustrativos; NO fijar calendario 2027 con esas horas."
     },
     {
       "id": "flight-domestic",
@@ -506,7 +506,7 @@
       "title": "Vuelos nacionales · Buenos Aires ↔ El Calafate",
       "selectedOption": null,
       "options": [],
-      "notes": "AEP/EZE y FTE pendientes. Verificar vuelo del 6 de noviembre compatible con autobús a El Chaltén, y regreso del 16 de noviembre."
+      "notes": "Referencia histórica de la presentación de 2026: Aerolíneas Argentinas AEP–FTE–AEP, $23,250 MXN para dos incluyendo una maleta documentada compartida de 15 kg según el escenario original. Vuelos ilustrativos AR1840 (05:10–08:30) y AR1895 (12:30–15:30); NO equivalen a vuelos ni horarios confirmados en noviembre 2027. Revisar equipaje real y condiciones al salir inventario."
     },
     {
       "id": "bus-fte-chalten",
@@ -794,12 +794,12 @@
       "url": "https://elchalten.tur.ar/omnibus/"
     }
   ],
-  "sourceNote": "Actualizado el 2 noviembre 2026 con sitios oficiales de tres hoteles candidatos, fichas de excursiones y horarios referenciales de buses; ninguna tarifa de alojamiento, vuelo o excursión está cotizada para noviembre de 2027.",
+  "sourceNote": "Vuelos y equipaje tomados únicamente de la presentación original «Expedición Argentina (Itinerario y Costos)» para noviembre de 2026, como REFERENCIA HISTÓRICA, no cotización 2027. El resto de importes siguen siendo supuestos de planeación sin disponibilidad verificada. No hay reservas.",
   "budgetRange": [
     110000,
     155000
   ],
-  "budgetNote": "Estimación de trabajo: las 11 partidas actuales suman $143,000 MXN para dos personas. Rango exploratorio $110,000–$155,000 MXN, SIN cotizaciones para noviembre de 2027; la meta de optimización sigue siendo reducirlo hacia $135,000 MXN. No contabilizar dos veces vuelos, traslados ni entradas incluidas; verificar si hay actividad optativa no comprada.",
+  "budgetNote": "Escenario ilustrativo para DOS personas: 144,648 MXN, sumando referencias históricas de vuelos de la presentación de noviembre 2026 ($24,398 internacionales + $23,250 nacionales) y supuestos no cotizados de otros rubros. No es tarifa vigente ni precio reservable de noviembre 2027. Las 14 noches actuales, la guía grupal a Laguna de los Tres y las nuevas excursiones hacen que el presupuesto original de 13 días NO sea comparable directamente. Revisar precios, rutas, horarios y equipaje cuando abran ventas; no sumar los vuelos otra vez en los traslados. Meta de optimización aproximada: $135,000 MXN.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
