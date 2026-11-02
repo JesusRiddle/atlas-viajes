@@ -298,7 +298,12 @@
         {
           "title": "Laguna de los Tres · trekking guiado grupal",
           "description": "Reservar con operador habilitado y confirmar cupo, requisitos físicos, traslado a Río Eléctrico, posibles modificaciones por viento, nieve o lluvia y ruta de regreso por Laguna Capri.",
-          "links": []
+          "links": [
+            {
+              "label": "Información turística oficial de El Chaltén",
+              "url": "https://www.elchalten.gob.ar/secretaria-de-turismo/"
+            }
+          ]
         },
         {
           "title": "Glaciar Perito Moreno · Minitrekking",
@@ -318,7 +323,12 @@
         {
           "title": "Todo Glaciares",
           "description": "Comprobar itinerario real, traslados, cierres meteorológicos y tarifa de noviembre de 2027.",
-          "links": []
+          "links": [
+            {
+              "label": "Todo Glaciares · operador",
+              "url": "https://turismocalafate.com/excursiones/todo-glaciares/"
+            }
+          ]
         }
       ]
     ],
@@ -328,15 +338,175 @@
         {
           "title": "Estancia Bonanza y Lago del Desierto",
           "description": "Reservar según pronóstico y prioridad de Laguna de los Tres; confirmar disponibilidad y política de cambios.",
-          "links": []
+          "links": [
+            {
+              "label": "Turismo oficial de Santa Cruz",
+              "url": "https://turismo.santacruz.gob.ar/donde-ir/el-chalten"
+            }
+          ]
         }
       ]
     ]
   ],
   "exchangeRates": {},
   "exchangeRateSnapshot": null,
-  "expenses": [],
-  "majorTransport": [],
+  "expenses": [
+    {
+      "id": "flight-international",
+      "category": "flight",
+      "concept": "Vuelos internacionales redondos para dos",
+      "cost": {
+        "amount": 28000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "flight-domestic",
+      "category": "flight",
+      "concept": "Vuelos nacionales redondos para dos",
+      "cost": {
+        "amount": 18000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "lodging",
+      "category": "lodging",
+      "concept": "14 noches de alojamiento para dos",
+      "cost": {
+        "amount": 30000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "food",
+      "category": "food",
+      "concept": "Alimentación para dos",
+      "cost": {
+        "amount": 15000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "minitrekking",
+      "category": "activity",
+      "concept": "Minitrekking Perito Moreno para dos",
+      "cost": {
+        "amount": 12000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "todo-glaciares",
+      "category": "activity",
+      "concept": "Todo Glaciares para dos",
+      "cost": {
+        "amount": 10500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "fitz-roy-guide",
+      "category": "activity",
+      "concept": "Guía grupal Laguna de los Tres para dos",
+      "cost": {
+        "amount": 8000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "other-activities",
+      "category": "activity",
+      "concept": "Lago del Desierto y cabalgata para dos",
+      "cost": {
+        "amount": 7000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "ground",
+      "category": "transport",
+      "concept": "Buses, transfers y movilidad urbana",
+      "cost": {
+        "amount": 5500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "entry",
+      "category": "tickets",
+      "concept": "Parques y entradas",
+      "cost": {
+        "amount": 4500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    },
+    {
+      "id": "insurance",
+      "category": "other",
+      "concept": "Seguro médico y contingencias menores",
+      "cost": {
+        "amount": 4500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto de planeación para dos personas; no cotización ni compra de noviembre 2027. Ajustar con precio total verificado."
+    }
+  ],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Vuelo internacional · MEX ↔ Buenos Aires",
+      "selectedOption": null,
+      "options": [],
+      "notes": "Fechas objetivo 3 y 18 de noviembre de 2027. Cotizar ida y regreso completos, equipaje, escalas y día real de llegada a CDMX. Sin vuelo seleccionado."
+    },
+    {
+      "id": "flight-domestic",
+      "type": "flight",
+      "title": "Vuelos nacionales · Buenos Aires ↔ El Calafate",
+      "selectedOption": null,
+      "options": [],
+      "notes": "AEP/EZE y FTE pendientes. Verificar vuelo del 6 de noviembre compatible con autobús a El Chaltén, y regreso del 16 de noviembre."
+    },
+    {
+      "id": "bus-fte-chalten",
+      "type": "bus",
+      "title": "Aeropuerto El Calafate → El Chaltén",
+      "selectedOption": null,
+      "options": [],
+      "notes": "Conexión de 6 noviembre; operadores y horarios de 2027 pendientes. No encadenar vuelo y último bus sin margen."
+    },
+    {
+      "id": "bus-chalten-calafate",
+      "type": "bus",
+      "title": "El Chaltén → El Calafate",
+      "selectedOption": null,
+      "options": [],
+      "notes": "Trayecto previsto 11 noviembre; comparar salidas directas y tiempo real de traslado."
+    }
+  ],
   "ticketNotes": [],
   "attractionTerms": [],
   "cover": null,
@@ -351,55 +521,67 @@
   "hotels": [],
   "stays": [],
   "seasonality": {
-    "summary": "Noviembre es la ventana elegida para evitar el pico estival y disfrutar días largos; la lluvia y los vientos fuertes siguen siendo posibles. Comparar temporadas y costos con datos verificados antes de publicar.",
+    "summary": "Máximas diurnas aproximadas orientadas a El Chaltén y El Calafate; Buenos Aires es sensiblemente más cálida. No son pronósticos. Noviembre se elige por luz y actividad turística fuera del pico de verano, no porque garantice cielos despejados. Los senderos elevados pueden tener nieve o hielo.",
     "months": {
       "10": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "8–13 °C. Primavera temprana: días más largos pero puede haber nieve y barro en Laguna de los Tres.",
+        "icon": "partlyCloudy"
       },
       "11": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "11–16 °C. Primavera con muchas horas de luz y menos turismo que en el pico estival; viento y nieve en altura posibles.",
+        "icon": "partlyCloudy"
       },
       "12": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "13–18 °C. Días largos pero aumenta la ocupación y la demanda hacia las fiestas.",
+        "icon": "partlyCloudy"
       },
       "01": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "15–20 °C. Verano austral con más visitantes y alta demanda; el viento y las lluvias siguen siendo posibles.",
+        "icon": "snow"
       },
       "02": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "14–19 °C. Temperaturas estivales y senderos activos; demanda alta especialmente a inicios de mes.",
+        "icon": "partlyCloudy"
       },
       "03": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "11–16 °C. Menos demanda al terminar el verano, con días más cortos; interesante para trekking si el clima acompaña.",
+        "icon": "partlyCloudy"
       },
       "04": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "7–12 °C. Colores otoñales, días más cortos y riesgo creciente de escarcha en altura.",
+        "icon": "partlyCloudy"
       },
       "05": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "3–8 °C. Frío, luz reducida y posibles cierres o dificultades en rutas de montaña.",
+        "icon": "snow"
       },
       "06": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "0–5 °C. Invierno, nieve y senderos exigentes poco apropiados para este itinerario.",
+        "icon": "snow"
       },
       "07": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "0–5 °C. Invierno austral; nieve y hielo complican las caminatas largas.",
+        "icon": "snow"
       },
       "08": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "2–7 °C. Persisten condiciones invernales y la operativa puede estar limitada.",
+        "icon": "snow"
       },
       "09": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "5–10 °C. Inicio primaveral con nieve posible en altura, viento y temperaturas bajas.",
+        "icon": "partlyCloudy"
       }
     }
   },
@@ -423,17 +605,34 @@
       "title": "Documentación y consejos prácticos",
       "badge": "Verificar antes de viajar",
       "tone": "orange",
-      "text": "Confirmar condiciones migratorias para pasaporte mexicano, cobertura médica y requisitos de cualquier conexión internacional. Argentina utiliza principalmente enchufes tipo I y 220 V/50 Hz; llevar adaptador compatible desde clavijas mexicanas A/B y comprobar INPUT 100–240 V en los cargadores. Un adaptador no transforma voltaje."
+      "text": "Las personas mexicanas con pasaporte ordinario vigente no requieren visa para turismo de hasta 90 días; la SRE indica llevar pasaje de regreso, reserva de alojamiento, solvencia y seguro médico con cobertura en Argentina. Confirmar requisitos de escalas y condiciones vigentes antes de comprar. Argentina utiliza predominantemente clavijas tipo I, 220 V/50 Hz; para equipos mexicanos A/B llevar adaptador adecuado, con conexión de tierra cuando proceda, y verificar INPUT 100–240 V. El adaptador no convierte voltaje."
     }
   ],
   "tips": [],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Turismo oficial de Argentina · El Chaltén",
+      "url": "https://www.argentina.travel/actividades/el-chalten"
+    },
+    {
+      "label": "Turismo oficial de Santa Cruz",
+      "url": "https://turismo.santacruz.gob.ar/donde-ir/el-chalten"
+    },
+    {
+      "label": "Secretaría de Relaciones Exteriores de México · Argentina",
+      "url": "https://portales.sre.gob.mx/guiadeviaje/103-ficha-de-paises/279-argentina"
+    },
+    {
+      "label": "Todo Glaciares · tarifas referencia 2026",
+      "url": "https://turismocalafate.com/excursiones/todo-glaciares/"
+    }
+  ],
   "sourceNote": "Viaje nuevo elaborado a partir de ideas de una presentación anterior y decisiones posteriores; ninguna compra o reserva confirmada.",
   "budgetRange": [
     110000,
     135000
   ],
-  "budgetNote": "Meta presupuestaria provisional para dos personas, NO una cotización ni un total calculado. Faltan vuelos, alojamientos y tarifas de excursiones de noviembre de 2027; incluir guía grupal de Laguna de los Tres y todas las actividades seleccionadas antes de validar el rango.",
+  "budgetNote": "Suma de supuestos de planeación en MXN para dos personas, SIN cotizaciones de noviembre 2027. No confundir presupuesto objetivo con precios disponibles; confirmar tarifas y evitar sumar nuevamente los mismos vuelos o autobuses al seleccionar alternativas.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
