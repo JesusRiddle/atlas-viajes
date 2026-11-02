@@ -356,7 +356,8 @@ test('España + Portugal 2027 se publica primero y conserva su contenido complet
     assert.equal(migrated.id, 'espana-portugal-2027');
     assert.equal(migrated.days.length, 20);
     assert.equal(migrated.hotels.length, 5);
-    assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 36);
+    // Incluye lugares opcionales añadidos durante la auditoría editorial.
+    assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 51);
     assert.ok(migrated.cover);
     assert.equal(migrated.budgetRange[0], 76000);
     assert.equal(migrated.budgetRange[1], 125000);
