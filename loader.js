@@ -68,6 +68,11 @@
           }
         }
       }
+      // Un número de viajeros desconocido es null, nunca 1 implícito.
+      if (normalized.travelerCount !== null &&
+          (!Number.isInteger(normalized.travelerCount) || normalized.travelerCount <= 0)) {
+        throw new Error("travelerCount inválido en " + module.file + ": usar entero positivo o null.");
+      }
       for (const key of ["start","end"]) {
         const value = normalized[key];
         if (value !== null && (typeof value !== "string" ||
