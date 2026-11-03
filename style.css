@@ -2030,6 +2030,11 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   from{transform:translate3d(-31%,0,0);opacity:.38}
   to{transform:translate3d(31%,0,0);opacity:.9}
 }
+/* Versión 2: variación ambiental mínima, sin alterar el contraste del texto. */
+@keyframes atlas-home-hero-breathe{
+  0%,100%{filter:brightness(1) saturate(1)}
+  50%{filter:brightness(1.045) saturate(1.025)}
+}
 .atlas-home-hero-immersive .atlas-home-hero-image::after{
   content:"";position:absolute;inset:-12% -22%;z-index:1;
   pointer-events:none;
@@ -2039,7 +2044,8 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 @media(prefers-reduced-motion:no-preference){
   .atlas-home-hero-immersive .atlas-home-hero-image>img{
     transform-origin:center center;
-    animation:atlas-home-hero-drift 17s ease-in-out infinite alternate;
+    animation:atlas-home-hero-drift 17s ease-in-out infinite alternate,
+      atlas-home-hero-breathe 10s ease-in-out infinite;
   }
   .atlas-home-hero-immersive .atlas-home-hero-image::after{
     animation:atlas-home-hero-light 12s ease-in-out infinite alternate;
