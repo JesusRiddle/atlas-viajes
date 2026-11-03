@@ -25,6 +25,7 @@ function create() {
   const progress = fs.readFileSync(progressTemplate, 'utf8')
     .replace('**Viaje:** <nombre>', '**Viaje:** ' + name.trim())
     .replaceAll('data/trips/<slug>.json', 'data/trips/' + id + '.json')
+    .replaceAll('docs/trip-progress/<slug>.md', 'docs/trip-progress/' + id + '.md')
     .replace('**Rama / PR:** <rama / enlace>', '**Rama / PR:** Por asociar al PR')
     .replace('**Etapa actual:** <número>', '**Etapa actual:** 00 · Preparación')
     .replace('**Siguiente acción autónoma:** <acción precisa>',
