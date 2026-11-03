@@ -217,12 +217,12 @@ window.AtlasTrip = function (ctx) {
     }
     function tripHero(t, id) {
         const rank = trips.indexOf(t) + 1;
-        const heroLabel = t.heroEyebrow || t.tag || 'En planeación';
+        const heroLabel = t.heroEyebrow || t.tag || '';
         return [
             '<section class="triphero triphero-split"><div class="triphero-split-info">',
             '<div class="triphero-split-info-inner">',
             `<a class="breadcrumb" href="#inicio"><span aria-hidden="true">←</span> Regresar</a>`,
-            `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')} · ${esc(heroLabel)}</p>`,
+            `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')}${heroLabel ? ' · ' + esc(heroLabel) : ''}</p>`,
             `<h1>${esc(t.name)}</h1>`,
             '<div class="hero-meta">',
             `<span>${heroMetaIcon('calendar')}${t.start && t.end ? range(t) : 'Por definir'}</span>`,
@@ -253,13 +253,17 @@ window.AtlasTrip = function (ctx) {
             '<h3 class="overview-subheading">' + overviewIcon('bed') +
             ' Dónde dormirás</h3></div><p>' + pending() + '</p></div>';
         const overviewSummary = window.AtlasBudget?.currentSummary?.(t);
-        const hasPricedEntries = Boolean(t.majorTransport?.length || t.expenses?.length);
-        const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN)
+        const hasPricedEntries = Boolean(t.majorTransport?.length || t.expenses?.some(e => Number.isFinite(e.cost?.amount)));
+        const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN) && overviewSummary.knownTotalMXN > 0
             ? money(overviewSummary.knownTotalMXN) : pending();
         const forecast = masterOverview && t.budgetPreliminary && Number.isFinite(t.budgetPreliminary.low) && Number.isFinite(t.budgetPreliminary.high) && t.budgetPreliminary.low > 0 && t.budgetPreliminary.high >= t.budgetPreliminary.low;
         const dynamicEstimate = masterOverview ? window.AtlasBudget?.planningEstimate?.(t) : null;
         const featuredPrice = dynamicEstimate ? money(dynamicEstimate.low) + '–' + money(dynamicEstimate.high) : forecast ? money(t.budgetPreliminary.low) + '–' + money(t.budgetPreliminary.high) : overviewPrice;
-        const budgetContext = forecast ? 'MXN · 1 persona · proyección global, no cotización' : 'MXN · 1 persona · estimación parcial del viaje';
+        const partyLabel = Number.isInteger(t.travelerCount) && t.travelerCount > 0
+            ? t.travelerCount + (t.travelerCount === 1 ? ' persona' : ' personas')
+            : 'grupo por definir';
+        const budgetContext = 'MXN · ' + partyLabel + (forecast || dynamicEstimate
+            ? ' · proyección global, no cotización' : ' · estimación parcial del viaje');
         const fxInfo = masterOverview && t.exchangeRateSnapshot?.date && t.exchangeRates ? Object.entries(t.exchangeRates).filter(([code,rate]) => /^[A-Z]{3}$/.test(code) && Number.isFinite(rate) && rate > 0).map(([code,rate]) => code + ' 1 ≈ $' + rate.toFixed(4) + ' MXN') : [];
         const fxSource = t.exchangeRateSnapshot?.sources?.JPY || t.exchangeRateSnapshot?.sources?.EUR || t.exchangeRateSnapshot?.sources?.USD;
         const fxSourceLink = typeof fxSource === 'string' && /^https:\/\//.test(fxSource) ? ' · <a href="' + esc(fxSource) + '" target="_blank" rel="noopener noreferrer">Fuente</a>' : '';
@@ -354,7 +358,7 @@ window.AtlasTrip = function (ctx) {
             `${complete ? optionsSection(t) : ''}<section class="section wrap atlas-panel-section" id="costes"><article class="panel budget-section-panel">`,
             `<div class="section-title">`,
             `<div>`,
-            `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18m-6 5h3"/></svg><span>Una persona · MXN</span></p>`,
+            `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18m-6 5h3"/></svg><span>${esc(partyLabel)} · MXN</span></p>`,
             `<h2 class="atlas-editorial-title">Lo que cuesta el viaje.</h2>`,
             `</div>`,
             `<p>${!complete ? 'Los importes registrados son parciales. Los costos pendientes aún no forman un total definitivo.' : t.majorTransport?.length ? 'Consulta los gastos estimados del viaje en pesos mexicanos. El total se completará conforme se definan los costos pendientes.' : 'Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.'}</p>`,
