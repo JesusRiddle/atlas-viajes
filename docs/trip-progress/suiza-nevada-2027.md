@@ -7,8 +7,8 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Rama / PR:** feature/suiza-2027 · https://github.com/JesusRiddle/atlas-viajes/pull/9  
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
-**Etapa actual:** 13 · Auditoría D intensiva: comprobación estructural, editorial y navegador realizada; último CI del ajuste de tonos pendiente  
-**Siguiente acción autónoma:** Confirmar CI final de las correcciones de Panorama y registrar cierre; revisar las imágenes externas de Suiza y condiciones de reservas cuando haya datos  
+**Etapa actual:** 13 · Auditoría D automatizada aprobada, revisión externa de fotos y tarifas pendiente  
+**Siguiente acción autónoma:** Revisar fotos externas de Suiza en la vista previa, confirmar restricciones y tarifas de 2027 y preparar revisión humana del PR sin merge  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -137,3 +137,5 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Auditoría exhaustiva:** 20 JSON del catálogo verificados sin referencias fotográficas inexistentes ni referencias huérfanas de hotel/transporte. En los 5 viajes principales, indicadores `style/language/entry` y títulos oficiales coincidentes. Referencias de las siete fotografías nuevas comprobadas en fichas de Wikimedia Commons con atribución/licencia; carga de imágenes externas no garantizada en todos los dispositivos o redes.
 - **Pruebas:** GitHub Actions #41731165505 **SUCCESS** (JS, JSON, Node, navegador Desktop/Mobile sobre itinerarios activos, nueve anclas, orden, navegación y ausencia de `undefined`/`NaN`/desbordamientos); cambio posterior solo de tonos de indicadores requiere nueva verificación CI. PR #9 permanece abierto, sin merge.
 - **Pendientes no bloqueantes:** tarifas definitivas SBB/hoteles y boletos, comprobar imágenes externas en una sesión de usuario con red habitual, revisar respuesta visual de fotos seleccionadas. La etapa 12 no se cierra como revisada humanamente solo por aprobar CI.
+
+- **Cierre técnico final:** GitHub Actions #41731582103 concluyó **SUCCESS**: sintaxis JavaScript, validación de JSON, suite Node y pruebas de navegador Desktop/Mobile. La comprobación posterior a tonos de indicadores y reglas de Panorama queda aprobada a nivel automatizado. No equivale a confirmar visualmente cada imagen remota ni la disponibilidad futura de servicios.
