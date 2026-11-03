@@ -934,7 +934,7 @@
         {
           "id": "A",
           "provider": "SBB",
-          "status": "estimated",
+          "status": "planning",
           "notes": "Aprox. 1 h 10 min; confirmar frecuencia, precio y hora tras migración.",
           "journeys": [
             {
@@ -976,7 +976,7 @@
         {
           "id": "A",
           "provider": "SBB",
-          "status": "estimated",
+          "status": "planning",
           "notes": "Aprox. 10–15 min; comprar billete válido y salir con margen.",
           "journeys": [
             {
@@ -1019,7 +1019,7 @@
         {
           "id": "A",
           "provider": "SBB y operador regional",
-          "status": "estimated",
+          "status": "planning",
           "selectedFare": "pending",
           "journeys": [
             {
@@ -1067,7 +1067,7 @@
         {
           "id": "A",
           "provider": "SBB y operador regional",
-          "status": "estimated",
+          "status": "planning",
           "selectedFare": "pending",
           "journeys": [
             {
@@ -1125,7 +1125,7 @@
         {
           "id": "A",
           "provider": "SBB y operador regional",
-          "status": "estimated",
+          "status": "planning",
           "selectedFare": "pending",
           "journeys": [
             {
@@ -1323,7 +1323,7 @@
     "marginMXN": 4000,
     "useBudgetRange": true,
     "referenceFlightMXN": 20331,
-    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla."
+    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales."
   },
   "hotels": [
     {
