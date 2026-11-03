@@ -4434,5 +4434,27 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "attribution": "Oerflee"
     }
+  },
+  "swiss27-jungfraujoch-february": {
+    "name": "Jungfraujoch nevado · observatorio Sphinx",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jungfraujoch%20mit%20Restaurants%20und%20Geb%C3%A4uden.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Jungfraujoch_mit_Restaurants_und_Geb%C3%A4uden.jpg",
+      "author": "Reustli",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Reustli"
+    }
+  },
+  "swiss27-maennlichen-winter": {
+    "name": "Männlichen · Royal Walk en invierno",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mannlichn%20Royal%20Walk%20Winter.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Mannlichn_Royal_Walk_Winter.jpg",
+      "author": "Jpatokal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jpatokal"
+    }
   }
 }
