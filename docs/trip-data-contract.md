@@ -30,6 +30,7 @@ Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON con
 - **Temporadas:** deben existir 12 claves `01`…`12`; cada mes empieza con `{ "status": "pending", "description": null }`. Estados válidos: `pending`, `recommended`, `conditional`, `avoid`. `icon` es opcional, y no sustituye `status`.
 - **Portadas y mapa:** `cover: null` significa imagen sin asignar, no imagen rota. `mapPoints: []` representa ubicaciones pendientes; no crear pines falsos.
 - **Reserva o transporte:** colección vacía = aún no se han definido. Si no aplica una categoría a un viaje, ese estado debe documentarse explícitamente en el modelo futuro; no inferirlo de `[]`.
+- **Personas presupuestadas:** `travelerCount: null | integer` indica cuántas personas contempla el presupuesto TOTAL del viaje. `null` significa pendiente y nunca equivale a 1; cuando se define, debe ser un entero positivo. No confundir con `profile.solo`, que describe la conveniencia de viajar sin acompañante. No multiplicar automáticamente partidas por el número de viajeros: transporte, habitaciones y actividades tienen bases de precio distintas. Mostrar el equivalente por persona solo si `travelerCount` es conocido, sin alterar ni sumar nuevamente el total del grupo.
 - **Perfil:** los atributos de `profile` pueden estar en `null`. Nunca inferir ritmo, facilidad para viajar solo ni clima de un borrador sin investigar.
 
 ## Alcance actual y consideraciones
