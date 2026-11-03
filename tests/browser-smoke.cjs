@@ -42,8 +42,8 @@ const assert = require('node:assert/strict');
       const heroProgress = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => {
         const photo = hero.querySelector('img');
         const motion = photo.getAnimations().find(a => a.animationName === 'atlas-home-hero-drift');
-        const light = hero.getAnimations({subtree:false}).find(a => a.animationName === 'atlas-home-hero-light');
-        if (!motion || !light) return {active:false};
+        const lightStyle = getComputedStyle(hero, '::after');
+        if (!motion || lightStyle.animationName !== 'atlas-home-hero-light') return {active:false};
         const initialTime = motion.currentTime;
         motion.pause();
         motion.currentTime = 0;
@@ -53,7 +53,7 @@ const assert = require('node:assert/strict');
         motion.currentTime = initialTime;
         motion.play();
         return {active:true, begin, end, driftDuration:motion.effect.getTiming().duration,
-          lightDuration:light.effect.getTiming().duration};
+          lightDuration:parseFloat(lightStyle.animationDuration) * 1000};
       });
       assert.ok(heroProgress.active, 'Las dos animaciones deben ejecutarse realmente');
       assert.notEqual(heroProgress.begin, heroProgress.end,
