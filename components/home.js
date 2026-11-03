@@ -18,12 +18,13 @@ window.AtlasHome = function (ctx) {
         });
         return [trip.id, sources];
     }));
+    const featuredTripCount = 4;
     const hoverTimers = new Set();
     function mountCoverSlideshow() {
         // Do not block setup based on media-query pointer detection.
         // Mouse events determine whether a desktop pointer is actually used.
         if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-        document.querySelectorAll('#viajes .atlas-home-card').forEach(card => {
+        document.querySelectorAll('#viajes .atlas-home-card, #ideas-viajes .atlas-home-card').forEach(card => {
             const tripId = card.getAttribute('href')?.replace('#viaje/', '');
             const sources = cardSlides.get(tripId) || [];
             const frame = card.querySelector('.cardphoto');
@@ -163,8 +164,18 @@ window.AtlasHome = function (ctx) {
             '<strong>' + homePrice(t) + ' <span class="card-currency">MXN</span></strong></div>' +
             '<span class="card-arrow" aria-hidden="true">↗</span></div></div></a>';
     }
+    function ideaCard(t) {
+        const cities = (t.routeCities || []).filter(Boolean).map(esc).join(' · ');
+        return '<a class="tripcard atlas-home-card idea-tripcard" href="#viaje/' + esc(t.id) + '">' +
+            '<div class="cardphoto">' + (covers[t.id] ? img(covers[t.id], '', false, false, true) : '<div class="draft-card-cover">Idea de viaje</div>') + '</div>' +
+            '<div class="cardbody"><p class="idea-tripcard-status">Idea por actualizar</p>' +
+            '<h3>' + esc(t.flag || '') + ' ' + esc(t.name) + '</h3>' +
+            (cities ? '<p class="card-route">' + cities + '</p>' : '') +
+            '<span class="idea-tripcard-open">Explorar idea <span aria-hidden="true">↗</span></span>' +
+            '</div></a>';
+    }
     function comparison() {
-        const items = trips.filter(homeReady);
+        const items = trips.slice(0, featuredTripCount).filter(homeReady);
         return '<section class="section wrap home-comparison" id="comparar">' +
             '<div class="section-title"><div><p class="eyebrow orange">Compara tus opciones</p>' +
             '<h2>Los viajes, lado a lado.</h2></div></div>' +
@@ -181,6 +192,6 @@ window.AtlasHome = function (ctx) {
                 ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
     }
-    function home() { document.title = 'Atlas de viajes · Viajes 2026–2027'; main.innerHTML = `<section class="home-intro wrap atlas-home-hero atlas-home-hero-immersive" aria-labelledby="atlas-home-title"><div class="intro-photo atlas-home-hero-image"><img src="photos/atlas-world-hero.webp" alt="Ilustración de destinos entre montañas, ciudades y costas" loading="eager" fetchpriority="high" decoding="async"><div class="photo-overlay"></div><div class="atlas-home-hero-copy"><p class="eyebrow">ATLAS DE VIAJES · 2026–2027</p><h1 id="atlas-home-title">La vida es un viaje.</h1><p class="atlas-home-lead">Rutas desde CDMX, itinerarios detallados y presupuestos para elegir tu próxima aventura.</p></div></div></section><section class="section wrap" id="viajes" style="padding-top:25px"><div class="section-title"><div><p class="eyebrow orange">Caminos por descubrir</p><h2>Elige tu siguiente historia.</h2></div><p>Entre ciudades históricas, mercados, palacios y paisajes de montaña, encuentra la ruta que más te inspira.</p></div><div class="cards">${trips.map(card).join('')}</div></section>${comparison()}`; mountCoverSlideshow(); }
+    function home() { document.title = 'Atlas de viajes · Viajes 2026–2027'; main.innerHTML = `<section class="home-intro wrap atlas-home-hero atlas-home-hero-immersive" aria-labelledby="atlas-home-title"><div class="intro-photo atlas-home-hero-image"><img src="photos/atlas-world-hero.webp" alt="Ilustración de destinos entre montañas, ciudades y costas" loading="eager" fetchpriority="high" decoding="async"><div class="photo-overlay"></div><div class="atlas-home-hero-copy"><p class="eyebrow">ATLAS DE VIAJES · 2026–2027</p><h1 id="atlas-home-title">La vida es un viaje.</h1><p class="atlas-home-lead">Rutas desde CDMX, itinerarios detallados y presupuestos para elegir tu próxima aventura.</p></div></div></section><section class="section wrap" id="viajes" style="padding-top:25px"><div class="section-title"><div><p class="eyebrow orange">Caminos por descubrir</p><h2>Elige tu siguiente historia.</h2></div><p>Entre ciudades históricas, mercados, palacios y paisajes de montaña, encuentra la ruta que más te inspira.</p></div><div class="cards">${trips.slice(0, featuredTripCount).map(card).join('')}</div></section>${trips.length > featuredTripCount ? '<section class="section wrap home-ideas" id="ideas-viajes" aria-labelledby="ideas-viajes-title"><div class="section-title"><div><p class="eyebrow orange">Archivo de inspiración</p><h2 id="ideas-viajes-title">Ideas generales de viajes.</h2></div><p>Rutas antiguas por rediseñar y actualizar. Sus fechas, itinerarios y presupuestos son referencias históricas, no planes vigentes.</p></div><div class="cards ideas-cards">' + trips.slice(featuredTripCount).map(ideaCard).join('') + '</div></section>' : ''}${comparison()}`; mountCoverSlideshow(); }
     return { card, comparison, home };
 };
