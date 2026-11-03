@@ -191,6 +191,7 @@ const assert = require('node:assert/strict');
             'Suiza debe mostrar vuelo, aeropuerto y tres trenes interurbanos sin error');
           assert.equal(await page.locator('#traslados .mt-pass-comparison').count(), 1,
             'Comparación de pases debe ser visible como bloque accesible, no solo existir en JSON');
+          await page.locator('#traslados .mt-pass-comparison > summary').click();
           const comparison = await page.locator('#traslados .mt-pass-comparison').innerText();
           assert.match(comparison, /Punto de equilibrio/);
           assert.match(comparison, /Winter Pass/);
