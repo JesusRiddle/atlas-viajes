@@ -108,6 +108,24 @@ const assert = require('node:assert/strict');
         const bounds = await page.locator('[id="' + id + '"]').boundingBox();
         assert.ok(bounds && bounds.width > 50 && bounds.height > 10, viewport.width + ' invisible master section ' + id);
       }
+      if (viewport.width > 1000) {
+        const layout = await page.locator('#mapa .trip-map-header').evaluate(header => {
+          const intro = header.querySelector('.trip-map-intro').getBoundingClientRect();
+          const cities = header.querySelector('.trip-map-cities').getBoundingClientRect();
+          const cards = [...header.querySelectorAll('.map-city-list li')].slice(0, 3)
+            .map(item => item.getBoundingClientRect());
+          const width = header.getBoundingClientRect().width;
+          return {width, citiesWidth: cities.width, introRight: intro.right,
+            citiesLeft: cities.left, cards};
+        });
+        assert.ok(layout.citiesWidth >= layout.width * 0.52,
+          'La columna de ciudades debe ocupar al menos 52% del encabezado en escritorio');
+        assert.ok(layout.citiesLeft > layout.introRight,
+          'Las columnas del encabezado no deben encimarse');
+        assert.ok(layout.cards.length === 3 &&
+          layout.cards.every(card => card.width > 100),
+          'Las tres tarjetas deben conservar un ancho legible');
+      }
       await page.locator('#mapa').scrollIntoViewIfNeeded();
       await page.screenshot({ path: '/tmp/atlas-italia-' + viewport.width + '.png', fullPage: true });
       // Simula un nuevo destino real desde el primer commit: visible, sin fechas ni fotos.
