@@ -139,8 +139,8 @@ const assert = require('node:assert/strict');
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
         assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
         if (id === 'suiza-nevada-2027') {
-          assert.equal(await page.locator('#traslados .mt-card').count(), 3,
-            'Suiza debe mostrar vuelos y dos conexiones ferroviarias sin error');
+          assert.equal(await page.locator('#traslados .mt-card').count(), 6,
+            'Suiza debe mostrar vuelo, aeropuerto y tres trenes interurbanos sin error');
           assert.equal(await page.locator('#dias details.day').count(), 12,
             'Suiza debe mostrar sus doce jornadas');
           assert.equal(await page.locator('#alojamientos .hotel-card').count(), 4,
