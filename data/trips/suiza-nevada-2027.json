@@ -1268,14 +1268,14 @@
       "title": "Estilo de viaje",
       "text": "Trenes panorámicos, pueblos alpinos y visitas culturales; sin deportes invernales, con flexibilidad meteorológica.",
       "badge": "Moderado · nieve",
-      "tone": "blue"
+      "tone": "orange"
     },
     {
       "id": "language",
       "title": "Idioma y moneda",
       "text": "Alemán suizo predominante en ruta, con francés e italiano como idiomas oficiales regionales. Inglés ampliamente útil en transporte y hoteles. Pagar principalmente con tarjeta; conservar CHF para gastos pequeños.",
       "badge": "Alemán · CHF",
-      "tone": "blue"
+      "tone": "green"
     },
     {
       "id": "entry",
