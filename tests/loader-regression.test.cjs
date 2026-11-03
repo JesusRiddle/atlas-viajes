@@ -416,6 +416,13 @@ test('Suiza nevada: contratos editoriales de temporadas, días y fotografías', 
         }
     }
     assert.equal(trip.expenses.reduce((sum, item) => sum + item.cost.amount, 0), 81981);
+    assert.equal(trip.mapPoints.length, 11, 'La ruta incluye miradores y Lindt');
+    assert.deepEqual(trip.mapPoints.map(item => item.order), [1,2,3,4,5,6,7,8,9,10,11]);
+    const meals = trip.expenses.filter(item => item.category === 'food');
+    assert.equal(meals.reduce((sum, item) => sum + item.cost.amount, 0), 9000,
+        'Presupuesto de comidas conservado sin duplicación');
+    assert.ok(meals.length >= 10, 'Las comidas se distribuyen por jornadas');
+    assert.ok(meals.every(item => trip.days.some(day => day.date === item.date)));
 });
 
 test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual sin duplicación', () => {
