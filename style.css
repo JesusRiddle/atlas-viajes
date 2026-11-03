@@ -2005,6 +2005,36 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   .atlas-home-hero-immersive h1{font-size:clamp(36px,9.6vw,48px)}
 }
 
+/* Hero principal · versión 1: cámara lenta y reflejo cálido muy tenue.
+   Solo se mueve la fotografía y una capa de luz; el copy queda inmóvil. */
+@keyframes atlas-home-hero-drift{
+  from{transform:translate3d(.3%,0,0) scale(1.025)}
+  to{transform:translate3d(-.4%,-.35%,0) scale(1.045)}
+}
+@keyframes atlas-home-hero-light{
+  from{transform:translate3d(-16%,0,0);opacity:.38}
+  to{transform:translate3d(16%,0,0);opacity:.72}
+}
+.atlas-home-hero-immersive .atlas-home-hero-image::after{
+  content:"";position:absolute;inset:-20% -32%;z-index:1;
+  pointer-events:none;
+  background:linear-gradient(112deg,transparent 38%,rgba(255,230,174,.065) 50%,transparent 62%);
+  opacity:.38;
+}
+@media(prefers-reduced-motion:no-preference){
+  .atlas-home-hero-immersive .atlas-home-hero-image>img{
+    transform-origin:center center;
+    animation:atlas-home-hero-drift 30s ease-in-out infinite alternate;
+  }
+  .atlas-home-hero-immersive .atlas-home-hero-image::after{
+    animation:atlas-home-hero-light 25s ease-in-out infinite alternate;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .atlas-home-hero-immersive .atlas-home-hero-image>img{animation:none;transform:none}
+  .atlas-home-hero-immersive .atlas-home-hero-image::after{display:none;animation:none}
+}
+
 /* Portadas del Home: zoom-in cinematográfico sutil durante el hover. */
 @media(prefers-reduced-motion:no-preference){
   #viajes .atlas-home-card .cardphoto>img:not(.cardphoto-slide),
