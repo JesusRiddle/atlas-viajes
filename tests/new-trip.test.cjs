@@ -21,11 +21,11 @@ test('paso 16: dos flujos de creación sin sobrescribir el original', () => {
     assert.equal(run(['nuevo','Nuevo']).status,0);
     assert.equal(run(['copia','Copia','--from','antiguo']).status,1);
     const fresh = JSON.parse(fs.readFileSync(path.join(root,'data','trips','nuevo.json')));
-    assert.deepEqual(fresh,{id:'nuevo',name:'Nuevo',status:'draft',travelerCount:null,intro:null,introShort:null});
+    assert.deepEqual(fresh,{id:'nuevo',name:'Nuevo',travelerCount:null,intro:null,introShort:null});
     assert.equal(fs.readFileSync(src,'utf8'),JSON.stringify(original));
     assert.equal(run(['nuevo','Duplicado']).status,1);
     const modules = fs.readFileSync(path.join(root,'modules.js'),'utf8');
     assert.doesNotMatch(modules, /"id": "copia"/);
-    assert.match(modules, /"available": false/);
+    assert.match(modules, /"available": true/);
   } finally { fs.rmSync(root,{recursive:true,force:true}); }
 });
