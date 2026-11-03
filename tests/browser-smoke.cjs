@@ -35,6 +35,8 @@ const assert = require('node:assert/strict');
       }));
       assert.match(heroMotion.imageAnimation, /atlas-home-hero-drift/,
         'La fotografía principal debe tener movimiento lento');
+      assert.match(heroMotion.imageAnimation, /atlas-home-hero-breathe/,
+        'La fotografía principal debe tener el pulso ambiental de brillo');
       assert.match(heroMotion.lightAnimation, /atlas-home-hero-light/,
         'El hero debe incluir el reflejo de luz discreto');
       assert.equal(heroMotion.copyAnimation, 'none', 'El texto debe permanecer inmóvil');
@@ -60,6 +62,23 @@ const assert = require('node:assert/strict');
         'El desplazamiento debe cambiar la imagen, no solo declarar un nombre CSS');
       assert.ok(heroProgress.driftDuration <= 18000 && heroProgress.lightDuration <= 13000,
         'Los ciclos deben ser suficientemente cortos para percibirse');
+      const brightnessPulse = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image img').evaluate(photo => {
+        const pulse = photo.getAnimations().find(a => a.animationName === 'atlas-home-hero-breathe');
+        if (!pulse) return null;
+        const original = pulse.currentTime;
+        pulse.pause();
+        pulse.currentTime = 0;
+        const start = getComputedStyle(photo).filter;
+        pulse.currentTime = 5000;
+        const midpoint = getComputedStyle(photo).filter;
+        pulse.currentTime = original;
+        pulse.play();
+        return {start, midpoint, duration: pulse.effect.getTiming().duration};
+      });
+      assert.ok(brightnessPulse && brightnessPulse.duration === 10000,
+        'El pulso ambiental debe tener un ciclo de diez segundos');
+      assert.notEqual(brightnessPulse.start, brightnessPulse.midpoint,
+        'El pulso debe cambiar ligeramente el brillo real de la fotografía');
       const heroCopy = page.locator('.atlas-home-hero-immersive .atlas-home-hero-copy');      await page.emulateMedia({ reducedMotion: 'reduce' });
       const staticHero = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => ({
         imageAnimation: getComputedStyle(hero.querySelector('img')).animationName,
