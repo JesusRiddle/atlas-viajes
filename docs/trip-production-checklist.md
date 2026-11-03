@@ -5,8 +5,8 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 
 ## Antes de crear el JSON
 
-1. Recuperar decisiones ya confirmadas: destinos candidatos, duración y ventanas posibles, ritmo, restricciones, presupuesto objetivo y `travelerCount`. No exigir fechas, billetes, hoteles ni disponibilidad definitivos para crear un borrador.
-2. Abrir una rama y ejecutar `node scripts/new-trip.cjs <slug> "<nombre>"` para crear JSON inactivo, registro en `modules.js` y bitácora `docs/trip-progress/<slug>.md`. Verificar que ningún archivo heredado cambió.
+1. Recuperar decisiones ya confirmadas: destinos candidatos, duración y ventanas posibles, ritmo, restricciones, presupuesto objetivo y `travelerCount`. No exigir fechas, billetes, hoteles ni disponibilidad definitivos para empezar un viaje visible.
+2. Abrir una rama y ejecutar `node scripts/new-trip.cjs <slug> "<nombre>"` para crear JSON visible (`available: true`), registro en `modules.js` y bitácora `docs/trip-progress/<slug>.md`. Verificar que ningún archivo heredado cambió.
 3. Investigar **Temporadas** para los doce meses de las regiones candidatas. Con ese resultado validar fechas y ruta, noches y conexiones indispensables antes de cerrar el esqueleto de jornadas.
 4. Investigar opciones de vuelos, trenes/autobuses y reservas que condicionan la ruta. Las tarifas no publicadas para el periodo objetivo se documentan como **referencias fechadas o supuestos estimados**, nunca como compras ni disponibilidad confirmada; si no hay fundamento razonable, dejar `null`.
 5. Abrir y mantener un único registro de incertidumbres y evidencias de cada auditoría. La matriz logística y económica se completa progresivamente en etapas 07 y 11, respectivamente; **no exigirla completa antes de empezar**.
@@ -16,9 +16,11 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 - [ ] Redactar `intro` (70–130 palabras) para «La esencia de tu recorrido» e `introShort` (30–45 palabras) para cada nuevo viaje completo.
 - [ ] Comprobar que `introShort` resume ciudades, monumentos y experiencias sin mezclar fechas, alojamientos, vuelos, precios ni logística.
 - [ ] Verificar que la tarjeta de inicio renderiza `introShort` completo y la sección Panorama sigue mostrando `intro`, también en móvil.
-- [ ] En borradores mínimos ambos campos pueden permanecer `null`; el editor debe completarlos antes de publicar.
+- [ ] Al inicio ambos textos pueden permanecer `null`; la portada mostrará únicamente los campos disponibles, sin etiquetas de estado. Completarlos antes de cerrar la auditoría D.
 
 ## Checklist operativo por etapas y auditorías
+
+**Los viajes nuevos aparecen inmediatamente en Inicio, incluso con datos mínimos.** No utilizar etiquetas «borrador», «en planeación», «preliminar» ni marcadores de progreso públicos en sus tarjetas o encabezados. El progreso y los pendientes viven exclusivamente en `docs/trip-progress/<slug>.md`; los campos desconocidos se omiten o se presentan con «Por definir» dentro de la sección correspondiente. Los viajes antiguos se reconocen por `homeGroup: "ideas"` en `modules.js`, nunca por su posición. La vista de GitHub Pages refleja esos cambios solo después del merge y despliegue de `main`; en desarrollo, la rama se visualiza localmente o en una vista previa separada.
 
 **El orden de ejecución se basa en dependencias, no en la navegación.** La guía canónica es `docs/trip-progress-template.md`. La orden «refléjalo en el Atlas» activa etapas **00–13** sin microaprobaciones; crear `docs/trip-progress/<slug>.md` para señalar estado, evidencias y siguiente paso.
 
