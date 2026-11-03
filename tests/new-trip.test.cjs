@@ -10,6 +10,8 @@ test('paso 16: dos flujos de creación sin sobrescribir el original', () => {
   try {
     fs.mkdirSync(path.join(root, 'scripts'));
     fs.mkdirSync(path.join(root, 'data', 'trips'), {recursive:true});
+    fs.mkdirSync(path.join(root,'docs'));
+    fs.copyFileSync('docs/trip-progress-template.md', path.join(root,'docs','trip-progress-template.md'));
     fs.copyFileSync('scripts/new-trip.cjs', path.join(root,'scripts','new-trip.cjs'));
     fs.writeFileSync(path.join(root,'modules.js'), 'window.ATLAS_MODULES = [{ "id": "antiguo", "file": "antiguo.json", "available": true }];');
     const original = {id:'antiguo',name:'Viejo',routeCities:['Roma'],experiences:['Visita'],start:'2026-10-01',costs:[['Hotel',100,200]]};
@@ -19,11 +21,11 @@ test('paso 16: dos flujos de creación sin sobrescribir el original', () => {
     assert.equal(run(['nuevo','Nuevo']).status,0);
     assert.equal(run(['copia','Copia','--from','antiguo']).status,1);
     const fresh = JSON.parse(fs.readFileSync(path.join(root,'data','trips','nuevo.json')));
-    assert.deepEqual(fresh,{id:'nuevo',name:'Nuevo',status:'draft',intro:null,introShort:null});
+    assert.deepEqual(fresh,{id:'nuevo',name:'Nuevo',travelerCount:null,intro:null,introShort:null});
     assert.equal(fs.readFileSync(src,'utf8'),JSON.stringify(original));
     assert.equal(run(['nuevo','Duplicado']).status,1);
     const modules = fs.readFileSync(path.join(root,'modules.js'),'utf8');
     assert.doesNotMatch(modules, /"id": "copia"/);
-    assert.match(modules, /"available": false/);
+    assert.match(modules, /"available": true/);
   } finally { fs.rmSync(root,{recursive:true,force:true}); }
 });

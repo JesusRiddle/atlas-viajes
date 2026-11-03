@@ -5,7 +5,8 @@
     if (!Array.isArray(modules)) throw new Error("No se pudo leer modules.js.");
     const seen = new Set();
     for (const module of modules) {
-      if (!module || !/^[a-z0-9-]+$/.test(module.id) || module.file !== module.id + ".json" || typeof module.available !== "boolean") {
+      if (!module || !/^[a-z0-9-]+$/.test(module.id) || module.file !== module.id + ".json" || typeof module.available !== "boolean" ||
+          (module.homeGroup !== undefined && module.homeGroup !== "ideas")) {
         throw new Error("Entrada inválida en modules.js.");
       }
       if (seen.has(module.id)) throw new Error("Viaje duplicado: " + module.id);
@@ -25,7 +26,6 @@
           typeof raw.name !== "string" || !raw.name.trim()) {
         throw new Error("Identidad inválida en " + module.file + ": id y name son obligatorios.");
       }
-      const isMinimal = !Object.hasOwn(raw, "status") && !raw.cover;
       const normalized = clone(raw);
       // Unknown or incomplete values must not be mistaken for actual trip data.
       const merge = (target, defaults) => {
@@ -38,9 +38,10 @@
         }
       };
       merge(normalized, template);
-      // Existing full trips keep their normal renderer; partial new trips start as drafts.
-      if (!Object.hasOwn(raw, "status")) normalized.status = isMinimal ? "draft" : null;
-      if (!isMinimal && normalized.status !== "draft" && !Object.hasOwn(raw, "seasonality")) normalized.seasonality = null;
+      normalized.homeGroup = module.homeGroup === 'ideas' ? 'ideas' : 'main';
+      // Los datos parciales se renderizan progresivamente sin estado público del viaje.
+      if (!Object.hasOwn(raw, "status")) normalized.status = null;
+      if (!Object.hasOwn(raw, "seasonality")) normalized.seasonality = null;
       const arrays = ["routeCities","bases","costs","experiences","days","reservations","expenses",
         "majorTransport","ticketNotes","attractionTerms","mapPoints","hotels","stays",
         "practicalIndicators","tips","sources","cardHighlights",
@@ -67,6 +68,11 @@
             throw new Error("Temporada " + key + " inválida en " + module.file);
           }
         }
+      }
+      // Un número de viajeros desconocido es null, nunca 1 implícito.
+      if (normalized.travelerCount !== null &&
+          (!Number.isInteger(normalized.travelerCount) || normalized.travelerCount <= 0)) {
+        throw new Error("travelerCount inválido en " + module.file + ": usar entero positivo o null.");
       }
       for (const key of ["start","end"]) {
         const value = normalized[key];

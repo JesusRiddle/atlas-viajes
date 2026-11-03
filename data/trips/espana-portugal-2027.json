@@ -2273,5 +2273,6 @@
     "discoveries-monument": "Opcional: Padrão dos Descobrimentos, parada opcional durante el paseo por Belém.",
     "sp27-cascais": "Opcional: Paseo costero por Cascais como sustitución de la jornada urbana de Alfama.",
     "sp27-boca-inferno": "Opcional: Acantilado y formación rocosa de Boca do Inferno, en la excursión alternativa a Cascais."
-  }
+  },
+  "travelerCount": 1
 }

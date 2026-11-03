@@ -4,27 +4,45 @@
 Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se trabaja como un paquete integral, con un solo registro de pendientes y pruebas agrupadas. Este documento complementa la guía editorial, el contrato de datos y AGENTS.md.
 
 ## Antes de crear el JSON
-1. Confirmar fechas, vuelo internacional y su precio, aeropuertos, restricciones, ciudades donde se pernocta, alojamientos, noches y horas reales de llegada/salida. En la interfaz y los textos editoriales, no usar «base» como sinónimo de alojamiento; conservar `bases` solo como campo técnico para compatibilidad.
-2. Definir recorrido de ciudades y excursiones con tiempos puerta a puerta, conexión y equipaje. Registrar destinos opcionales por separado.
-3. Crear **matriz de logística**: fecha, origen, destino, opciones A/B/C, sentidos ida/regreso independientes, horarios, operador, estación o parada exacta, transbordos y minutos, compra, validación, costo, fuente y fecha de consulta.
-4. Marcar expresamente «confirmado», «referencia de otra fecha», «estimado», «pendiente» y «comprado». Nunca presentar un horario de 2026 como servicio confirmado de 2027.
-5. Crear **matriz económica** desde que se conozca el vuelo: vuelo, alojamientos por noches, alimentos, transportes de cada sentido, entradas prioritarias, impuestos, tasas, extras y contingencia. Separar subtotal cotizado de presupuesto estimado global; usar EUR y conversión MXN con fuente y fecha.
+
+1. Recuperar decisiones ya confirmadas: destinos candidatos, duración y ventanas posibles, ritmo, restricciones, presupuesto objetivo y `travelerCount`. No exigir fechas, billetes, hoteles ni disponibilidad definitivos para empezar un viaje visible.
+2. Abrir una rama y ejecutar `node scripts/new-trip.cjs <slug> "<nombre>"` para crear JSON visible (`available: true`), registro en `modules.js` y bitácora `docs/trip-progress/<slug>.md`. Verificar que ningún archivo heredado cambió.
+3. Investigar **Temporadas** para los doce meses de las regiones candidatas. Con ese resultado validar fechas y ruta, noches y conexiones indispensables antes de cerrar el esqueleto de jornadas.
+4. Investigar opciones de vuelos, trenes/autobuses y reservas que condicionan la ruta. Las tarifas no publicadas para el periodo objetivo se documentan como **referencias fechadas o supuestos estimados**, nunca como compras ni disponibilidad confirmada; si no hay fundamento razonable, dejar `null`.
+5. Abrir y mantener un único registro de incertidumbres y evidencias de cada auditoría. La matriz logística y económica se completa progresivamente en etapas 07 y 11, respectivamente; **no exigirla completa antes de empezar**.
 
 ## Portada e introducciones
 - [ ] **Subtítulo editorial obligatorio:** para cada viaje que vaya a mostrarse en la portada, completar `tag` o `heroEyebrow` con una frase turística propia del recorrido (por ejemplo, «DE TOKIO A KIOTO · ENTRE TEMPLOS Y METRÓPOLIS»). No utilizar «En planeación», cantidades de días, países o alojamientos como sustituto editorial. Revisar la vista hero y agregar una prueba de regresión para cada nuevo viaje visible.
 - [ ] Redactar `intro` (70–130 palabras) para «La esencia de tu recorrido» e `introShort` (30–45 palabras) para cada nuevo viaje completo.
 - [ ] Comprobar que `introShort` resume ciudades, monumentos y experiencias sin mezclar fechas, alojamientos, vuelos, precios ni logística.
 - [ ] Verificar que la tarjeta de inicio renderiza `introShort` completo y la sección Panorama sigue mostrando `intro`, también en móvil.
-- [ ] En borradores mínimos ambos campos pueden permanecer `null`; el editor debe completarlos antes de publicar.
+- [ ] Al inicio ambos textos pueden permanecer `null`; la portada mostrará únicamente los campos disponibles, sin etiquetas de estado. Completarlos antes de cerrar la auditoría D.
 
-## Trabajo por lotes (evitar microfases)
-1. **Bloque A · Logística completa:** obtener/verificar de una vez todas las alternativas de tren, autobús, vuelo y transbordos. Los enlaces no protegidos o ajustados requieren márgenes explícitos (preferentemente >=20 minutos en cambios de tren, salvo justificación y confirmación). Registrar fuentes oficiales, fecha de referencia, estaciones exactas y opciones válidas de respaldo.
-2. **Bloque B · Contenido y coherencia:** redactar los días en conjunto, comparar secuencia, duración, apertura de museos, hoteles, pausas y traslados. No introducir duplicados entre texto libre y datos estructurados.
-3. **Bloque C · Presupuesto:** comparar pases contra billetes unitarios y elegir UNA modalidad contabilizada por trayecto. Si un registro es comparativo, señalar que no se suma; si se escoge el precio unitario, el presupuesto debe reflejar todo el recorrido. Los viajes redondos siempre se contabilizan en ambos sentidos; cada alternativa debe representar un costo completo o presupuestarse independientemente.
-4. **Bloque D · Presentación y QA:** ejecutar en una sola pasada pruebas de JSON, sintaxis JS, referencias, opciones/tarifas, sumas, renderizado y navegación móvil/escritorio, ausencia de errores en consola, y regresión de los otros viajes. No decir «probado en navegador» si solo se verificó sintaxis o lógica aislada.
+## Checklist operativo por etapas y auditorías
 
-## Comparación obligatoria con los dos viajes terminados
-Antes de crear un viaje, leer `docs/trip-master-standard.md` y `data/trips/_template.json`; `data/trips/italia-norte-2027.json` es el ejemplo práctico vigente, pero el proceso debe completarse sin abrirlo ni copiar datos de ningún otro viaje. Antes de entregar, comparar **las nueve secciones visibles**, sus datos y sus componentes, en escritorio y móvil cuando haya navegador disponible:
+**Los viajes nuevos aparecen inmediatamente en Inicio, incluso con datos mínimos.** No utilizar etiquetas «borrador», «en planeación», «preliminar» ni marcadores de progreso públicos en sus tarjetas o encabezados. El progreso y los pendientes viven exclusivamente en `docs/trip-progress/<slug>.md`; los campos desconocidos se omiten o se presentan con «Por definir» dentro de la sección correspondiente. Los viajes antiguos se reconocen por `homeGroup: "ideas"` en `modules.js`, nunca por su posición. La vista de GitHub Pages refleja esos cambios solo después del merge y despliegue de `main`; en desarrollo, la rama se visualiza localmente o en una vista previa separada.
+
+**El orden de ejecución se basa en dependencias, no en la navegación.** La guía canónica es `docs/trip-progress-template.md`. La orden «refléjalo en el Atlas» activa etapas **00–13** sin microaprobaciones; crear `docs/trip-progress/<slug>.md` para señalar estado, evidencias y siguiente paso.
+
+| Auditoría | Al concluir | Verificación |
+| --- | --- | --- |
+| **A · Clima y ruta** | **03** | Destinos → Temporadas (02) → fechas, `travelerCount`, ruta, noches y días |
+| **B · Servicios** | **08** | Mapa (04), Experiencias (05), Reservaciones (06), Movilidad (07) y alojamientos (08) compatibles |
+| **C · Dinero** | **11** | Día por día (09), Panorama (10), gastos y escenarios integrales (11) actualizados en Inicio |
+| **D · Final** | **13** | Fotografías (12), portada, nueve secciones en orden visual, links, Node y navegador cuando disponible |
+
+**Temporadas no depende de hoteles/vuelos:** investigar los doce meses para todas las regiones candidatas antes de comprometer las fechas. **Presupuesto sí depende de servicios:** no considerarlo completo antes de proponer/estimar vuelos, transporte, alojamiento, visitas, entradas, comidas y extras. No confundir un subtotal con la proyección completa. Las imágenes se abordan al final, tras tener lugares y días definidos. Si una conexión o reserva invalida la ruta, retroceder a 03 y revalidar.
+
+Al terminar cada etapa registrar **verificado/en curso/pendiente/bloqueado** con evidencia. Diferenciar supuestos con fuente/fecha de cotizaciones y reservas reales, especialmente cuando el usuario solo necesita una planeación orientativa. No pedir autorización por bloque; solo para decisiones materiales, compras y merge. No prometer trabajo en segundo plano.
+
+## Trabajo agrupado dentro de las etapas (evitar microfases)
+1. **Lote de logística (etapas 03/07):** obtener/verificar de una vez todas las alternativas de tren, autobús, vuelo y transbordos. Los enlaces no protegidos o ajustados requieren márgenes explícitos (preferentemente >=20 minutos en cambios de tren, salvo justificación y confirmación). Registrar fuentes oficiales, fecha de referencia, estaciones exactas y opciones válidas de respaldo.
+2. **Lote editorial (etapas 05/09/10):** redactar los días en conjunto, comparar secuencia, duración, apertura de museos, hoteles, pausas y traslados. No introducir duplicados entre texto libre y datos estructurados.
+3. **Lote de presupuesto (etapa 11):** comparar pases contra billetes unitarios y elegir UNA modalidad contabilizada por trayecto. Si un registro es comparativo, señalar que no se suma; si se escoge el precio unitario, el presupuesto debe reflejar todo el recorrido. Los viajes redondos siempre se contabilizan en ambos sentidos; cada alternativa debe representar un costo completo o presupuestarse independientemente.
+4. **Lote de presentación y QA (etapas 12/13):** ejecutar en una sola pasada pruebas de JSON, sintaxis JS, referencias, opciones/tarifas, sumas, renderizado y navegación móvil/escritorio, ausencia de errores en consola, y regresión de los otros viajes. No decir «probado en navegador» si solo se verificó sintaxis o lógica aislada.
+
+## Verificación independiente contra el estándar maestro
+Antes de crear un viaje, leer `docs/trip-master-standard.md` y `data/trips/_template.json`; cualquier viaje terminado puede servir como **ejemplo opcional** de inspección, nunca como dependencia ni fuente de datos. Antes de entregar, verificar **las nueve secciones visibles**, sus datos y sus componentes, en escritorio y móvil cuando haya navegador disponible:
 
 1. **Panorama:** introducción turística, indicadores prácticos, alojamientos y noches, inversión aproximada, divisas y tipo de cambio con fecha, clima y luz; sin tarjetas heredadas duplicadas.
 2. **Mapa:** localidades reales, pines válidos, correspondencia con el recorrido y comportamiento interactivo.
@@ -91,6 +109,11 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] «Clima y luz» muestra franja superior del MISMO color que el estado del mes de inicio en «Temporadas» y su etiqueta correspondiente (Recomendable/Aceptable/Desaconsejable/Por definir), incluso si el JSON tiene fechas solo en `days[]` y no en `start`.
 
 - [ ] En viajes nuevos la tarjeta «Clima y luz» tiene el encabezado COMPLETO coloreado, no solo un borde; muestra la etiqueta del estado y utiliza `pending` / «Por definir» cuando aún no se conoce la fecha. Comprobar los cuatro estados y que el CSS esté limitado al formato nuevo.
+
+## Comprobación de personas presupuestadas
+- [ ] Viajes nuevos: `travelerCount` declarado como entero positivo o `null` si está por definir.
+- [ ] Inicio y tabla comparativa muestran «Personas» usando el dato real; nunca inferir 1 desde `profile.solo` ni presentar `false`.
+- [ ] Importes originales siguen siendo del grupo; desglose y proyección por persona solo cuando existe `travelerCount`, sin multiplicaciones ni duplicaciones.
 
 ## QA de cierre · viajes en planeación a alto nivel
 - [ ] Mismo rango de presupuesto calculado en Inicio y Panorama; la tabla de Presupuesto identifica aparte subtotal registrado frente a proyección global sin sumar ambos.

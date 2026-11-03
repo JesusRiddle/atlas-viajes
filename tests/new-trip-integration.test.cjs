@@ -11,6 +11,8 @@ test('paso 17: alta real desde cero, edición gradual y normalización, sin toca
   try {
     fs.mkdirSync(path.join(root,'scripts'));
     fs.mkdirSync(path.join(root,'data','trips'),{recursive:true});
+    fs.mkdirSync(path.join(root,'docs'));
+    fs.copyFileSync('docs/trip-progress-template.md', path.join(root,'docs','trip-progress-template.md'));
     fs.copyFileSync('scripts/new-trip.cjs',path.join(root,'scripts','new-trip.cjs'));
     fs.copyFileSync('loader.js',path.join(root,'loader.js'));
     fs.copyFileSync('data/trips/_template.json',path.join(root,'data','trips','_template.json'));
@@ -19,8 +21,8 @@ test('paso 17: alta real desde cero, edición gradual y normalización, sin toca
     assert.equal(run.status,0,run.stderr);
     const file = path.join(root,'data','trips','viaje-prueba.json');
     const draft = JSON.parse(fs.readFileSync(file,'utf8'));
-    assert.deepEqual(draft,{id:'viaje-prueba',name:'Viaje de prueba',status:'draft',intro:null,introShort:null});
-    assert.match(fs.readFileSync(path.join(root,'modules.js'),'utf8'),/"available": false/);
+    assert.deepEqual(draft,{id:'viaje-prueba',name:'Viaje de prueba',travelerCount:null,intro:null,introShort:null});
+    assert.match(fs.readFileSync(path.join(root,'modules.js'),'utf8'),/"available": true/);
     const source = {...draft,intro:'Descripción completa de un viaje de prueba.',introShort:'Resumen breve de portada.',routeCities:['Destino de prueba'],days:[{n:1,title:'Llegada'}],
       experiences:['Paseo sin reserva'],costs:[['Transporte',null,null]],
       seasonality:{months:{'02':{status:'recommended',description:'Valoración de prueba'}}}};

@@ -147,13 +147,32 @@ window.AtlasTrip = function (ctx) {
             (key === 'experiencias' && t.experiences?.length) ||
             (key === 'reservas' && t.planningDetails && t.reservations?.length) ||
             (key === 'traslados' && t.majorTransport?.length));
-        return '<nav class="subnav" aria-label="Secciones del viaje"><div>' +
+        return '<div class="subnav-sticky-sentinel" aria-hidden="true"></div>' +
+            '<nav class="subnav" aria-label="Secciones del viaje">' +
+            '<a href="#inicio" class="subnav-home" aria-label="Volver al inicio del Atlas">' +
+            '<span class="brand-icon" aria-hidden="true">A</span>' +
+            '<span class="subnav-home-wordmark" aria-hidden="true">ATLAS<small>de Viajes</small></span></a>' +
+            '<div class="subnav-sections">' +
             visible.map(([key,label]) => '<a href="#viaje/' + esc(id) + '/' + key + '">' + label + '</a>').join('') +
             (legacyAdviceTripIds.has(t.id) && t.sources?.length ? '<a href="#viaje/' + esc(id) + '/fuentes">Fuentes</a>' : '') +
             '</div><select aria-label="Cambiar destino" id="dest-select">' +
             trips.map(x => '<option value="' + esc(x.id) + '"' + (x.id === id ? ' selected' : '') + '>' +
                 esc((x.flag ? x.flag + ' ' : '') + x.name) + '</option>').join('') +
             '</select></nav>';
+    }
+    function mountStickyHomeLink() {
+        if (typeof main.querySelector !== 'function') return () => {};
+        const nav = main.querySelector('.subnav');
+        const sentinel = main.querySelector('.subnav-sticky-sentinel');
+        if (!nav || !sentinel || !window.addEventListener) return () => {};
+        const sync = () => nav.classList.toggle('is-stuck', sentinel.getBoundingClientRect().top <= 0);
+        window.addEventListener('scroll', sync, { passive: true });
+        window.addEventListener('resize', sync);
+        sync();
+        return () => {
+            window.removeEventListener('scroll', sync);
+            window.removeEventListener('resize', sync);
+        };
     }
     function bindTripSelector() {
         document.querySelector('#dest-select')?.addEventListener('change', e => {
@@ -216,13 +235,14 @@ window.AtlasTrip = function (ctx) {
         return '<svg class="hero-meta-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + paths[type] + '</svg>';
     }
     function tripHero(t, id) {
-        const rank = trips.indexOf(t) + 1;
-        const heroLabel = t.heroEyebrow || t.tag || 'En planeación';
+        const primaryRank = trips.filter(x => x.homeGroup !== 'ideas').indexOf(t);
+        const rank = primaryRank >= 0 ? primaryRank + 1 : trips.indexOf(t) + 1;
+        const heroLabel = t.heroEyebrow || t.tag || '';
         return [
             '<section class="triphero triphero-split"><div class="triphero-split-info">',
             '<div class="triphero-split-info-inner">',
             `<a class="breadcrumb" href="#inicio"><span aria-hidden="true">←</span> Regresar</a>`,
-            `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')} · ${esc(heroLabel)}</p>`,
+            `<p class="eyebrow hero-eyebrow">Viaje ${String(rank).padStart(2, '0')}${heroLabel ? ' · ' + esc(heroLabel) : ''}</p>`,
             `<h1>${esc(t.name)}</h1>`,
             '<div class="hero-meta">',
             `<span>${heroMetaIcon('calendar')}${t.start && t.end ? range(t) : 'Por definir'}</span>`,
@@ -253,24 +273,27 @@ window.AtlasTrip = function (ctx) {
             '<h3 class="overview-subheading">' + overviewIcon('bed') +
             ' Dónde dormirás</h3></div><p>' + pending() + '</p></div>';
         const overviewSummary = window.AtlasBudget?.currentSummary?.(t);
-        const hasPricedEntries = Boolean(t.majorTransport?.length || t.expenses?.length);
-        const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN)
+        const hasPricedEntries = Boolean(t.majorTransport?.length || t.expenses?.some(e => Number.isFinite(e.cost?.amount)));
+        const overviewPrice = hasPricedEntries && overviewSummary && Number.isFinite(overviewSummary.knownTotalMXN) && overviewSummary.knownTotalMXN > 0
             ? money(overviewSummary.knownTotalMXN) : pending();
         const forecast = masterOverview && t.budgetPreliminary && Number.isFinite(t.budgetPreliminary.low) && Number.isFinite(t.budgetPreliminary.high) && t.budgetPreliminary.low > 0 && t.budgetPreliminary.high >= t.budgetPreliminary.low;
         const dynamicEstimate = masterOverview ? window.AtlasBudget?.planningEstimate?.(t) : null;
         const featuredPrice = dynamicEstimate ? money(dynamicEstimate.low) + '–' + money(dynamicEstimate.high) : forecast ? money(t.budgetPreliminary.low) + '–' + money(t.budgetPreliminary.high) : overviewPrice;
-        const budgetContext = forecast ? 'MXN · 1 persona · proyección global, no cotización' : 'MXN · 1 persona · estimación parcial del viaje';
+        const partyLabel = Number.isInteger(t.travelerCount) && t.travelerCount > 0
+            ? t.travelerCount + (t.travelerCount === 1 ? ' persona' : ' personas')
+            : 'grupo por definir';
+        const budgetContext = 'MXN · ' + partyLabel + (forecast || dynamicEstimate
+            ? ' · proyección global, no cotización' : ' · estimación parcial del viaje');
         const fxInfo = masterOverview && t.exchangeRateSnapshot?.date && t.exchangeRates ? Object.entries(t.exchangeRates).filter(([code,rate]) => /^[A-Z]{3}$/.test(code) && Number.isFinite(rate) && rate > 0).map(([code,rate]) => code + ' 1 ≈ $' + rate.toFixed(4) + ' MXN') : [];
         const fxSource = t.exchangeRateSnapshot?.sources?.JPY || t.exchangeRateSnapshot?.sources?.EUR || t.exchangeRateSnapshot?.sources?.USD;
         const fxSourceLink = typeof fxSource === 'string' && /^https:\/\//.test(fxSource) ? ' · <a href="' + esc(fxSource) + '" target="_blank" rel="noopener noreferrer">Fuente</a>' : '';
         const fxMarkup = fxInfo.length ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipo de cambio de referencia · ' + esc(t.exchangeRateSnapshot.date) + fxSourceLink + '</div><div class="budget-exchange-values">' + fxInfo.map(x => '<span>' + esc(x) + '</span>').join('') + '</div></div>' : '';
-        // Render detailed day cards as soon as their data exists, even for draft trips.
-        // A draft status must not force the entire itinerary into plain placeholders.
+        // Render detailed day cards as soon as their data exists.
         const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
         const completeDays = readyDays.length > 0;
         const renderedDays = () => (t.days || []).map((d, index) =>
             readyDays.includes(d) ? day(d) : '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
-            '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p><p class="draft-pending">En preparación</p></article>').join('');
+            '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p></article>').join('');
         const partialDays = () => t.days.length ? t.days.map((d, index) =>
             '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
             '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p>' +
@@ -354,7 +377,7 @@ window.AtlasTrip = function (ctx) {
             `${complete ? optionsSection(t) : ''}<section class="section wrap atlas-panel-section" id="costes"><article class="panel budget-section-panel">`,
             `<div class="section-title">`,
             `<div>`,
-            `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18m-6 5h3"/></svg><span>Una persona · MXN</span></p>`,
+            `<p class="eyebrow orange atlas-section-kicker atlas-editorial-kicker"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18m-6 5h3"/></svg><span>${esc(partyLabel)} · MXN</span></p>`,
             `<h2 class="atlas-editorial-title">Lo que cuesta el viaje.</h2>`,
             `</div>`,
             `<p>${!complete ? 'Los importes registrados son parciales. Los costos pendientes aún no forman un total definitivo.' : t.majorTransport?.length ? 'Consulta los gastos estimados del viaje en pesos mexicanos. El total se completará conforme se definan los costos pendientes.' : 'Rango para planear con habitación privada, alimentación normal y principales visitas. No presupone ofertas disponibles.'}</p>`,
@@ -479,6 +502,7 @@ window.AtlasTrip = function (ctx) {
         main.innerHTML = tripShell(t, id, content);
         window.AtlasGallery.init(main);
         mountView(t);
+        disposeView.push(mountStickyHomeLink());
         disposeView.push(mountHeroSlideshow(t));
         if (t.mapPoints?.some(p => Array.isArray(p.coords) && p.coords.length === 2 && p.coords.every(Number.isFinite))) window.AtlasTravel.initMap(t);
         bindTripSelector();

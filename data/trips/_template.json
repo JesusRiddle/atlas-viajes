@@ -2,7 +2,7 @@
   "id": "nuevo-viaje",
   "name": "Nuevo destino",
   "flag": null,
-  "status": "draft",
+  "status": null,
   "start": null,
   "end": null,
   "tag": null,
@@ -119,5 +119,6 @@
   "railTotal": null,
   "railExclusions": null,
   "railCurrencyNote": null,
-  "heroEyebrow": null
+  "heroEyebrow": null,
+  "travelerCount": null
 }

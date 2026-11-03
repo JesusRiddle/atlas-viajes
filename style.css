@@ -818,6 +818,21 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 #traslados .mt-details .entity-links{padding-top:5px}
 @media(max-width:540px){.entity-links{gap:6px}.entity-links a{font-size:12px;padding:7px 9px}}
 
+/* El acceso a Inicio aparece solo cuando la navegación del viaje se fija arriba. */
+.subnav-sticky-sentinel{display:block;height:1px;margin-bottom:-1px;pointer-events:none}
+.subnav .subnav-home{display:none;flex:none;align-items:center;gap:7px;padding:0 12px 0 0;text-decoration:none;border-right:1px solid var(--line);color:var(--ink)}
+.subnav.is-stuck .subnav-home{display:inline-flex}
+.subnav .subnav-home .brand-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:var(--gold);font-family:var(--serif);font-size:22px;line-height:1}
+.subnav .subnav-home-wordmark{display:flex;flex-direction:column;font-size:12px;font-weight:800;line-height:1.05;letter-spacing:1.2px}
+.subnav .subnav-home-wordmark small{font-size:9px;font-weight:400;letter-spacing:.45px;margin-top:3px}
+.subnav .subnav-home:focus-visible{outline:3px solid #dc5c2e;outline-offset:2px;border-radius:4px}
+@media(max-width:680px){
+  .subnav .subnav-home{padding-right:9px}
+  .subnav .subnav-home .brand-icon{width:29px;height:29px;flex-basis:29px;font-size:21px}
+  .subnav .subnav-home-wordmark{display:none}
+}
+@media print{.subnav-sticky-sentinel{display:none}}
+
 /* Navegación compacta y hero editorial (Desktop / Mobile). */
 body>header{height:56px;min-height:56px;padding-block:4px}
 body>header .brand-icon{width:36px;height:36px;flex:0 0 36px;display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1;padding:0 0 2px}
@@ -947,14 +962,15 @@ html{scroll-padding-top:78px}
  .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,48%)}
 }
 
-/* En Desktop, encabezado dividido: descripción izquierda y ciudades en tres
-   columnas a la derecha, con filas automáticas. El mapa permanece debajo. */
+/* Desktop: cuatro ciudades por fila; diez paradas caben en tres filas.
+   El mapa sigue a ancho completo debajo del encabezado. */
 @media screen and (min-width:1001px){
-  .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,48%);row-gap:13px}
-  .trip-map-section .trip-map-cities{border-left:1px solid var(--line);border-top:0;padding:0 0 0 19px}
-  .trip-map-section .trip-map-cities .map-city-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:0}
+  .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,56%);column-gap:16px;row-gap:13px}
+  .trip-map-section .trip-map-cities{border-left:1px solid var(--line);border-top:0;padding:0 0 0 12px}
+  .trip-map-section .trip-map-cities .map-city-list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin-top:0}
   .trip-map-section .trip-map-cities .map-city-list li{min-width:0}
-  .trip-map-section .trip-map-cities .map-city-list a{width:100%;min-height:62px;height:62px}
+  .trip-map-section .trip-map-cities .map-city-list a,
+  .trip-map-section .trip-map-cities .map-city-list .map-city-select{width:100%;min-width:0;min-height:62px;height:62px;padding:6px}
 }
 
 /* Leyenda alineada a la derecha del encabezado, ciudades en fila inferior. */
@@ -1963,7 +1979,7 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   display:block;min-height:0;padding-top:24px;padding-bottom:12px;
 }
 .atlas-home-hero-immersive .atlas-home-hero-image{
-  position:relative;height:clamp(340px,37vw,440px);min-height:0;
+  position:relative;height:clamp(260px,24vw,300px);min-height:0;
   border-radius:11px;box-shadow:0 7px 25px rgba(16,42,51,.10);
   isolation:isolate;
 }
@@ -1976,17 +1992,17 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   background:linear-gradient(90deg,rgba(10,29,37,.88) 0%,rgba(10,29,37,.72) 28%,rgba(10,29,37,.18) 69%,rgba(10,29,37,.04) 100%);
 }
 .atlas-home-hero-immersive .atlas-home-hero-copy{
-  position:absolute;z-index:2;left:clamp(24px,5vw,68px);bottom:clamp(28px,5vw,60px);
+  position:absolute;z-index:2;left:clamp(24px,4.5vw,60px);bottom:clamp(20px,2.7vw,30px);
   max-width:min(460px,56%);color:#fff;
 }
 .atlas-home-hero-immersive .eyebrow{color:#f3ca99;font-size:11px;letter-spacing:.18em;margin:0 0 12px}
 .atlas-home-hero-immersive h1{
-  font-size:clamp(42px,5.5vw,70px);font-weight:400;line-height:1.06;
+  font-size:clamp(39px,4.2vw,54px);font-weight:400;line-height:1.05;
   letter-spacing:-.045em;max-width:12ch;color:#fff;
 }
 .atlas-home-hero-immersive .atlas-home-lead{
   color:#f1f5f5;font-size:15px;line-height:1.6;
-  max-width:38ch;margin:17px 0 0;
+  max-width:38ch;margin:10px 0 0;
 }
 @media(max-width:800px){
   .atlas-home-hero.atlas-home-hero-immersive{display:block;padding-top:16px;padding-bottom:8px}
@@ -2002,6 +2018,42 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   .atlas-home-hero-immersive .atlas-home-hero-copy{left:20px;right:20px;bottom:22px;max-width:calc(100% - 40px)}
   .atlas-home-hero-immersive .atlas-home-lead{font-size:13px;margin-top:12px}
   .atlas-home-hero-immersive h1{font-size:clamp(36px,9.6vw,48px)}
+}
+
+/* Hero principal · versión 1 ajustada: movimiento evidente, luz editorial suave.
+   La fotografía se desplaza sin mover el texto ni el degradado protector. */
+@keyframes atlas-home-hero-drift{
+  from{transform:translate3d(1.4%,.5%,0) scale(1.055)}
+  to{transform:translate3d(-1.4%,-.65%,0) scale(1.10)}
+}
+@keyframes atlas-home-hero-light{
+  from{transform:translate3d(-31%,0,0);opacity:.38}
+  to{transform:translate3d(31%,0,0);opacity:.9}
+}
+/* Versión 2: variación ambiental mínima, sin alterar el contraste del texto. */
+@keyframes atlas-home-hero-breathe{
+  0%,100%{filter:brightness(1) saturate(1)}
+  50%{filter:brightness(1.045) saturate(1.025)}
+}
+.atlas-home-hero-immersive .atlas-home-hero-image::after{
+  content:"";position:absolute;inset:-12% -22%;z-index:1;
+  pointer-events:none;
+  background:linear-gradient(110deg,transparent 34%,rgba(255,223,155,.19) 48%,rgba(255,240,211,.12) 52%,transparent 67%);
+  opacity:.38;mix-blend-mode:screen;
+}
+@media(prefers-reduced-motion:no-preference){
+  .atlas-home-hero-immersive .atlas-home-hero-image>img{
+    transform-origin:center center;
+    animation:atlas-home-hero-drift 17s ease-in-out infinite alternate,
+      atlas-home-hero-breathe 10s ease-in-out infinite;
+  }
+  .atlas-home-hero-immersive .atlas-home-hero-image::after{
+    animation:atlas-home-hero-light 12s ease-in-out infinite alternate;
+  }
+}
+@media(prefers-reduced-motion:reduce){
+  .atlas-home-hero-immersive .atlas-home-hero-image>img{animation:none;transform:none}
+  .atlas-home-hero-immersive .atlas-home-hero-image::after{display:none;animation:none}
 }
 
 /* Portadas del Home: zoom-in cinematográfico sutil durante el hover. */
@@ -2282,3 +2334,24 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 
 /* Resumen narrativo compartido con «La esencia de tu recorrido»: sin truncamiento. */
 #viajes .atlas-home-card .card-trip-intro{font-size:12px;line-height:1.45;color:var(--muted);margin:0;white-space:normal;overflow-wrap:break-word}
+
+
+/* Archivo de inspiración: tarjetas deliberadamente ligeras, sin precios antiguos. */
+.home-ideas{border-top:1px solid var(--line);padding-top:42px}
+.home-ideas .section-title p{max-width:550px}
+.home-ideas .ideas-cards{gap:16px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.home-ideas .idea-tripcard{border-radius:8px}
+.home-ideas .idea-tripcard .cardphoto{height:155px}
+.home-ideas .idea-tripcard .cardbody{padding:15px 16px;gap:6px}
+.home-ideas .idea-tripcard h3{font-size:18px;line-height:1.25;margin:0}
+.home-ideas .idea-tripcard-status{text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:700;color:var(--muted);margin:0 0 6px}
+.home-ideas .idea-tripcard .card-route{font-size:12px;line-height:1.45;margin:0;color:var(--muted)}
+.home-ideas .idea-tripcard-open{margin-top:auto;padding-top:13px;font-size:12px;font-weight:700;color:var(--ink)}
+@media(max-width:1000px){.home-ideas .ideas-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.home-ideas .ideas-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.home-ideas .idea-tripcard .cardphoto{height:130px}}
+@media(max-width:420px){.home-ideas .ideas-cards{grid-template-columns:1fr}.home-ideas .idea-tripcard{flex-direction:row}.home-ideas .idea-tripcard .cardphoto{height:auto;width:36%;min-height:135px;flex-shrink:0}.home-ideas .idea-tripcard .cardbody{min-width:0;flex:1}}
+
+/* Nueva ruta: tarjeta principal desde la primera captura, sin etiquetas de estado. */
+#viajes .home-photo-empty{width:100%;height:100%;background:linear-gradient(125deg,#e9eef0,#d5e0e2);}
+#viajes .tripcard .card-overview:empty{display:none}
+#viajes .tripcard .cardbody{flex:1}

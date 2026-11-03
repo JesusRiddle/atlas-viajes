@@ -1,5 +1,7 @@
 # Guía editorial maestra de viajes · Atlas
 
+**Personas presupuestadas:** cada JSON nuevo declara `travelerCount` como número entero positivo o `null` mientras se desconoce. Es el tamaño del grupo cuyos gastos se estiman, no una indicación de si conviene viajar solo (`profile.solo`). La tabla comparativa muestra «Personas»; los importes de `expenses` siguen siendo para el grupo, y el equivalente individual se calcula solo cuando está definido, evitando duplicaciones.
+
 ## Aplicación
 Esta guía regula la **redacción y curación** de viajes nuevos y sus revisiones.
 
@@ -29,6 +31,39 @@ Antes de crear el JSON, leer el estándar autónomo `docs/trip-master-standard.m
 - **Al añadir o quitar días, rediseñar toda la ruta antes de redactar.** Detectar primero qué destinos están apresurados por excursiones, traslados, reservas rígidas o contingencias; repartir las nuevas noches entre las bases existentes donde aporten mayor beneficio. **Nunca agregar automáticamente días al final o a la última ciudad.** Mantener finales con descanso solo si es deliberadamente la mejor opción. Evaluar una noche adicional frente a cambio de hotel, día de traslado y coste.
 - **Reoptimizar fechas dependientes** tras cualquier cambio de noches: entradas prioritarias, museos cerrados lunes, trenes y traslados, día de la semana, noches de hotel y check-in/check-out, comidas por jornada, presupuesto, títulos de los días, referencias de transporte, notas y pruebas. Si una visita crítica obliga a cambiar días, preservar opciones de respaldo y no simular reservas.
 - **Explicar la distribución elegida** con una mini tabla noches antes/después y beneficio por base; pedir aprobación si afecta preferencias no resueltas. Si el usuario ya autorizó aplicar el cambio, realizarlo y verificar sin otra ronda de confirmación.
+
+## Alta visible desde la primera etapa
+
+Crear los viajes nuevos con `available: true` en `modules.js` y sin `status: "draft"`. Deben tener una tarjeta normal en Inicio desde que solo conozcamos su identidad, sin etiquetas públicas «borrador», «en planeación», «preliminar» o similares. Mostrar parcialmente fechas, destinos, días, fotografía y presupuesto solo cuando existan; nunca convertir lo desconocido en $0, 0 noches o fechas ficticias. El usuario puede revisar la versión local o vista previa de la rama a medida que se llena, mientras GitHub Pages en `main` solo se actualiza tras merge. Los viejos viajes clasificados con `homeGroup: "ideas"` permanecen en el archivo histórico. El avance de las etapas 00–13 solo se escribe en la bitácora del repositorio.
+
+## Seguimiento autónomo de implementación · ejecutar sin microaprobaciones
+
+La orden **«refléjalo en el Atlas»** activa el flujo completo de construcción tras haber acordado fechas, destinos y alcance. Antes de modificar datos, crear `docs/trip-progress/<slug>.md` desde [la plantilla de seguimiento](../docs/trip-progress-template.md) en la rama del viaje. Ese archivo registra **etapa actual, evidencias, pendientes, bloqueos y próxima acción**. Al reanudar, leerlo y contrastarlo con el JSON y los commits; jamás pedir al usuario que repita los «adelante» de cada sección.
+
+**Orden de construcción 00–13 por dependencias (diferente del orden visual del Atlas):**
+
+| Etapa | Sección o trabajo | Dependencia mínima y criterio de cierre |
+| --- | --- | --- |
+| 00 | Preparación | Rama, JSON, documentación, progreso independiente |
+| 01 | Destinos y alcance | Países/ciudades candidatas, prioridades, viajeros, duración y restricciones |
+| 02 | **Temporadas** | Solo requiere destinos/regiones candidatas; doce meses, clima, luz y estacionalidad |
+| 03 | Fechas, ruta, noches y esqueleto diario | Basado en temporadas, traslados plausibles y reservas críticas; **Auditoría A** |
+| 04 | **Mapa** | Ruta validada en 03; coordenadas y orden real |
+| 05 | **Experiencias** | Lugares y excursiones de la ruta; gastronomía y duración realista |
+| 06 | **Reservaciones importantes** | Experiencias identificadas, prioridades, fechas/alternativas |
+| 07 | **Movilidad y conexiones** | Ruta y reservas condicionantes; vuelos, transporte y alternativas |
+| 08 | **Dónde dormirás** | Fechas, ciudad por noche y movilidad; hoteles y Maps; **Auditoría B** |
+| 09 | **Día por día** | Transportes, alojamientos, reservas y experiencias ya compatibles |
+| 10 | **Panorama** | Ruta y contenido completos; intro, indicadores, documentación, clima y narrativa de portada; costo se reconcilia en 11 |
+| 11 | **Presupuesto** | Vuelos, transportes, actividades, entradas, alojamiento, alimentos y viajeros; escenarios y reconciliación Inicio/Panorama; **Auditoría C** |
+| 12 | Fotos y portada | Lugares y días definidos; fotografías remotas, cover y revisión visual |
+| 13 | Auditoría integral y PR | Nueve secciones, enlaces, fotos, JSON, pruebas y escritorio/móvil; **Auditoría D** |
+
+**Importante:** el **orden visual no cambia**: Panorama → Mapa → Temporadas → Experiencias → Reservaciones → Movilidad → Dónde dormirás → Día por día → Presupuesto. Las etapas 02, 04–11 cubren las nueve secciones; 00, 01, 03, 12 y 13 son trabajos transversales. La plantilla `docs/trip-progress-template.md` especifica las verificaciones de cada etapa y debe usarse como lista canónica. No confundir «la sección está llena» con «su dependencia ya fue auditada».
+
+**Cada etapa termina con verificación de sus dependencias.** No declarar «completa» por agregar texto sin comprobar estructura, referencias, coherencia y, cuando sea posible, visualización. Una auditoría fallida obliga a corregir el bloque anterior y revalidar los siguientes. Ejecutar bloques consecutivos sin pedir aprobación al final de cada uno; actualizar la bitácora por hitos A/B/C/D y comunicar una síntesis del avance, no una secuencia de solicitudes de confirmación.
+
+**Alcance a alto nivel:** las estimaciones razonables, estados `estimated`/`pending` y ventanas de temporada bastan cuando aún no se venden servicios de 2027; no inventar horarios, tarifas ni reservas para llenar huecos. Si falta una decisión sustantiva, marcar solo su dependencia como **bloqueada** y trabajar el resto. Si no puede terminarse en el turno, dejar el progreso exacto en el repo y retomar en una solicitud posterior, sin afirmar ejecución en segundo plano. Merge, compras, eliminación de JSON anteriores y publicación requieren autorización explícita.
 
 ## Las nueve secciones
 
@@ -97,7 +132,7 @@ Antes de crear el JSON, leer el estándar autónomo `docs/trip-master-standard.m
 
 **Regla visual obligatoria para fotografías de viajes nuevos:** seleccionar exclusivamente fotografías a color; quedan prohibidas las imágenes en blanco y negro, escala de grises, monocromáticas, desaturadas hasta parecer monocromo y filtros equivalentes, incluso cuando la composición sea atractiva. Priorizar fotografías editoriales de buena calidad, iluminación natural o nocturna cuidada, encuadres que destaquen la arquitectura y el paisaje y la menor presencia posible de multitudes. En lugares habitualmente concurridos, priorizar un encuadre limpio sin tergiversar el destino. Comprobar visualmente el color y la correspondencia del lugar antes de incorporar cada URL, además de autor, licencia y carga del recurso. Esta regla aplica a portadas, galerías, tarjetas y rotaciones; no altera automáticamente fotografías de viajes históricos.
 
-**Pies de fotografía en el itinerario:** cada lugar incluido en `days[].places` debe tener una entrada breve en `placeDescriptions`, con 15–30 palabras de contenido turístico concreto que destaque por qué merece una visita. Evitar instrucciones de reservas, repeticiones del título, frases genéricas y atribuciones dentro de la descripción (los créditos se muestran aparte). Seleccionar fotografías contemporáneas cuando su finalidad sea mostrar el aspecto actual, y verificar época, autor, licencia y fuente antes de añadir enlaces externos.\n\n**Visualización progresiva obligatoria:** en nuevos viajes, los días con fecha, número, lugares (aunque el array esté vacío), mañana, tarde y noche definidos deben aparecer inmediatamente con la ficha completa de `components/day.js` (navegación lateral, actividades, alojamiento y movilidad), aunque el viaje siga en estado `draft`. Los demás días pueden mostrar «En preparación». Nunca bloquear la vista detallada de todo el itinerario por faltar contenido en otros días o secciones. Validar esto al desarrollar cada jornada y en escritorio/móvil.
+**Pies de fotografía en el itinerario:** cada lugar incluido en `days[].places` debe tener una entrada breve en `placeDescriptions`, con 15–30 palabras de contenido turístico concreto que destaque por qué merece una visita. Evitar instrucciones de reservas, repeticiones del título, frases genéricas y atribuciones dentro de la descripción (los créditos se muestran aparte). Seleccionar fotografías contemporáneas cuando su finalidad sea mostrar el aspecto actual, y verificar época, autor, licencia y fuente antes de añadir enlaces externos.\n\n**Visualización progresiva obligatoria:** en nuevos viajes, los días con fecha, número, lugares (aunque el array esté vacío), mañana, tarde y noche definidos deben aparecer inmediatamente con la ficha completa de `components/day.js` (navegación lateral, actividades, alojamiento y movilidad), aunque el viaje aún esté incompleto. Los demás días muestran los campos informados, sin «En preparación» ni etiquetas de estado. Nunca bloquear la vista detallada de todo el itinerario por faltar contenido en otros días o secciones. Validar esto al desarrollar cada jornada y en escritorio/móvil.
 
 **Optimización de excursiones y días extra:** priorizar calidad sobre cantidad (en Cinque Terre, tres o cuatro pueblos con tiempo suficiente frente a cinco visitados a la carrera). Los días adicionales deben tener un plan principal concreto y realizable más una alternativa flexible, no limitarse a «día libre», «pendientes» o actividades genéricas; conservarlos como colchón de reservas cuando corresponda. Verificar horarios oficiales de los museos según el día de la semana y señalar que pueden cambiar para la fecha futura. Si una excursión es opcional, no computar su precio como confirmado.
 **No incluir:** cinco museos en una sola jornada sin márgenes ni afirmaciones de reservas no hechas.
@@ -109,31 +144,10 @@ Antes de crear el JSON, leer el estándar autónomo `docs/trip-master-standard.m
 **No incluir:** presupuestos cerrados construidos con ceros de relleno.
 
 ## Orden obligatorio de construcción · nuevos viajes
-**Fase 0 · Preparación:** leer `AGENTS.md`, esta guía, `docs/trip-data-contract.md`, `data/trips/_template.json` y las referencias del viaje maestro. Abrir rama; crear nuevo JSON inactivo (`available: false`) sin copiar itinerarios antiguos. Recoger restricciones personales (fechas, presupuesto, ritmo, equipaje, habitaciones y prioridades).
 
-**Fase 1 · Esqueleto logístico (antes de escribir narrativa):**
-1. Comparar ventanas de fechas con días de la semana, días laborales efectivos, fines de semana aprovechados, festivos reales, descanso tras regreso y costo total aproximado; priorizar fines de semana solo cuando convenga. Fijar aeropuertos, distinguir vuelo comprado, cotizado y pendiente, y comprobar requisitos de entrada/tránsito.
-2. Definir ciudades, excursiones realistas, bases hoteleras y número de noches; asignar días según carga real de cada destino, no por el orden de construcción. Si se amplía o acorta el viaje, reevaluar todas las bases antes de colocar días adicionales. Validar suma de noches, días de vuelo, días laborales y equipaje en escalas sin consigna verificada.
-3. Crear el número exacto de días con **fecha, ciudad base, actividad esencial y desplazamiento clave**, sin completar todavía horarios ficticios. Revisar días de cierre, transporte y disponibilidad de reservas imprescindibles.
-4. Identificar **reservas críticas** y sus dependencias. Si una visita condiciona todo el viaje (p. ej. Cenacolo), señalar fecha preferente, alternativa y decisión que debe esperar; no comprar servicios inflexibles incompatibles.
+Seguir **00–13 en orden de dependencias**, conforme a la tabla de «Seguimiento autónomo» y a `docs/trip-progress-template.md`. **Temporadas es la primera sección visible investigada (02)**; conociendo los destinos permite decidir la ventana más conveniente. Tras validar calendario y ruta (03), completar Mapa (04), Experiencias (05), Reservaciones (06), Movilidad (07), Alojamientos (08) y Día por día (09). **Panorama (10)** resume lo ya confirmado o estimado; **Presupuesto (11)** utiliza las propuestas de vuelos, todos los traslados, alojamiento, entradas y alimentos para recalcular Inicio y Panorama. Fotografías/portada (12) y auditoría global (13) cierran la implementación.
 
-**Fase 2 · Secciones visibles, en este orden:**
-5. **Panorama:** `intro` + `introHighlights`, `practicalIndicators` con tres indicadores, `climate` con temperaturas/ropa/luz y `bases`. Basarse solo en la ruta ya validada.
-6. **Mapa:** `mapPoints` con orden geográfico, coordenadas comprobadas y bases/visitas, sin nombres demasiado largos.
-7. **Temporadas:** doce meses `01`–`12`, estado, icono, temperatura extraíble y explicación. Si hay regiones climáticas distintas, aclarar el alcance.
-8. **Experiencias:** tarjetas por destino, 18–35 palabras cada una, actividades distintivas sin relleno ni reiteraciones.
-9. **Reservas críticas:** `planningDetails` y `reservations` en prioridades, enlaces oficiales y alternativas. Actualizar cualquier condición de reserva descubierta en Fase 1.
-10. **Movilidad y conexiones:** vuelos, trenes, aeropuertos y transporte imprescindible en `majorTransport`; los horarios/valores no cotizados quedan `null`. Distinguir trayectos de ida y vuelta de transbordos.
-11. **Dónde dormir:** introducir zonas y luego alojamientos concretos con noches, fechas y estado de cotización; respetar presupuesto **por habitación**, no confundir con precio por persona.
-12. **Día por día (detallado):** completar AM/PM/noche, tiempos puerta a puerta, notas, descansos, contingencias, referencias de transportes y actividades compatibles con reservas; refinar el esqueleto inicial, no reescribir la ruta sin justificar cambios.
-13. **Presupuesto:** desglosar confirmado/cotizado/estimado/pendiente, moneda de origen, conversión fechada a MXN y extras; jamás transformar `null` en cero inventado.
-
-**Fase 3 · Auditoría transversal y publicación:**
-14. Al terminar **cada sección**, comprobar el estándar autónomo y esta guía editorial, ausencia de paja, renderizado correcto, campos requeridos, dependencia con secciones previas y consistencia de datos repetidos.
-15. Ejecutar `node --test tests/*.test.cjs`, validadores disponibles y pruebas Desktop/Mobile. Corregir fallas antes de avanzar; documentar cuando no sea posible ejecutar alguna prueba.
-16. Revisar presupuesto/fechas/condiciones con el usuario; pasar el registro a `available: true` solo cuando proceda; **no fusionar a `main` sin autorización explícita**.
-
-**Regla de dependencias:** este orden es editorial, no una licencia para retrasar decisiones logísticas importantes. Antes de prometer una experiencia, comprobar que caben su transporte, horario, cierre y posible reserva. Si una cotización obliga a cambiar la ruta, actualizar primero el esqueleto, luego panorama/mapa/reservas/días/presupuesto. Evitar datos contradictorios entre secciones.
+Auditorías obligatorias: **A después de 03; B después de 08; C después de 11; D después de 13**. Si un dato nuevo cambia la ruta, corregir la etapa 03 y todas las dependientes antes de dar el bloque por cerrado. No pedir un «adelante» entre apartados; solo solicitar decisiones sustantivas, compras o aprobación de merge. El orden de navegación del sitio siempre es Panorama, Mapa, Temporadas, Experiencias, Reservaciones, Movilidad, Dónde dormirás, Día por día y Presupuesto.
 
 ## Control de calidad antes de avanzar de sección
 - Vincular cada traslado indispensable con el día correspondiente mediante `days[].transportRefs` y validar que el ID exista en `majorTransport`. Para vuelos redondos, el mismo ID puede estar en salida y regreso sin duplicar el costo.

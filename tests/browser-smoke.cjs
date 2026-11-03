@@ -17,15 +17,114 @@ const assert = require('node:assert/strict');
       const page = await browser.newPage({ viewport, deviceScaleFactor: 1 });
       const failures = [];
       page.on('pageerror', error => failures.push(error.message));
-      await page.route('**/modules.js', route => route.fulfill({
-        status: 200, contentType: 'application/javascript',
-        body: catalog.replace(/"available": false/g, '"available": true')
-      }));
+
       await page.goto('http://127.0.0.1:8765/', { waitUntil: 'domcontentloaded' });
       await page.locator('.tripcard').first().waitFor();
+      const heroBounds = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').boundingBox();
+      assert.ok(heroBounds, 'El hero de Inicio debe estar visible');
+      const heroPhoto = page.locator('.atlas-home-hero-immersive .atlas-home-hero-image img');
+      assert.equal(await heroPhoto.getAttribute('src'), 'photos/atlas-world-hero-horizontal.webp',
+        'La portada debe solicitar la nueva imagen sin renombrar ni reemplazar la original');
+      await page.waitForFunction(() => {
+        const img = document.querySelector('.atlas-home-hero-immersive .atlas-home-hero-image img');
+        return img && img.complete && img.naturalWidth > 0;
+      });
+
+      if (viewport.width > 800) {
+        assert.ok(heroBounds.height <= 305, 'El hero de escritorio debe ser compacto: ' + heroBounds.height);
+        assert.ok(heroBounds.height >= 250, 'El hero debe conservar espacio suficiente para el texto');
+      }
+      // La versión 1 anima solo la fotografía y la luz, nunca el texto.
+      const heroMotion = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => ({
+        imageAnimation: getComputedStyle(hero.querySelector('img')).animationName,
+        lightAnimation: getComputedStyle(hero, '::after').animationName,
+        copyAnimation: getComputedStyle(hero.querySelector('.atlas-home-hero-copy')).animationName,
+        lightPointerEvents: getComputedStyle(hero, '::after').pointerEvents
+      }));
+      assert.match(heroMotion.imageAnimation, /atlas-home-hero-drift/,
+        'La fotografía principal debe tener movimiento lento');
+      assert.match(heroMotion.imageAnimation, /atlas-home-hero-breathe/,
+        'La fotografía principal debe tener el pulso ambiental de brillo');
+      assert.match(heroMotion.lightAnimation, /atlas-home-hero-light/,
+        'El hero debe incluir el reflejo de luz discreto');
+      assert.equal(heroMotion.copyAnimation, 'none', 'El texto debe permanecer inmóvil');
+      assert.equal(heroMotion.lightPointerEvents, 'none', 'El reflejo no debe bloquear interacción');
+      const heroProgress = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => {
+        const photo = hero.querySelector('img');
+        const motion = photo.getAnimations().find(a => a.animationName === 'atlas-home-hero-drift');
+        const lightStyle = getComputedStyle(hero, '::after');
+        if (!motion || lightStyle.animationName !== 'atlas-home-hero-light') return {active:false};
+        const initialTime = motion.currentTime;
+        motion.pause();
+        motion.currentTime = 0;
+        const begin = getComputedStyle(photo).transform;
+        motion.currentTime = 17000;
+        const end = getComputedStyle(photo).transform;
+        motion.currentTime = initialTime;
+        motion.play();
+        return {active:true, begin, end, driftDuration:motion.effect.getTiming().duration,
+          lightDuration:parseFloat(lightStyle.animationDuration) * 1000};
+      });
+      assert.ok(heroProgress.active, 'Las dos animaciones deben ejecutarse realmente');
+      assert.notEqual(heroProgress.begin, heroProgress.end,
+        'El desplazamiento debe cambiar la imagen, no solo declarar un nombre CSS');
+      assert.ok(heroProgress.driftDuration <= 18000 && heroProgress.lightDuration <= 13000,
+        'Los ciclos deben ser suficientemente cortos para percibirse');
+      const brightnessPulse = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image img').evaluate(photo => {
+        const pulse = photo.getAnimations().find(a => a.animationName === 'atlas-home-hero-breathe');
+        if (!pulse) return null;
+        const original = pulse.currentTime;
+        pulse.pause();
+        pulse.currentTime = 0;
+        const start = getComputedStyle(photo).filter;
+        pulse.currentTime = 5000;
+        const midpoint = getComputedStyle(photo).filter;
+        pulse.currentTime = original;
+        pulse.play();
+        return {start, midpoint, duration: pulse.effect.getTiming().duration};
+      });
+      assert.ok(brightnessPulse && brightnessPulse.duration === 10000,
+        'El pulso ambiental debe tener un ciclo de diez segundos');
+      assert.notEqual(brightnessPulse.start, brightnessPulse.midpoint,
+        'El pulso debe cambiar ligeramente el brillo real de la fotografía');
+      const heroCopy = page.locator('.atlas-home-hero-immersive .atlas-home-hero-copy');      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const staticHero = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => ({
+        imageAnimation: getComputedStyle(hero.querySelector('img')).animationName,
+        lightDisplay: getComputedStyle(hero, '::after').display
+      }));
+      assert.equal(staticHero.imageAnimation, 'none', 'Reducir movimiento debe desactivar animación');
+      assert.equal(staticHero.lightDisplay, 'none', 'Reducir movimiento debe desactivar reflejo');
+      await page.emulateMedia({ reducedMotion: 'no-preference' });
+
+      const copyBounds = await heroCopy.boundingBox();
+      assert.ok(copyBounds && copyBounds.y >= heroBounds.y - 1 &&
+        copyBounds.y + copyBounds.height <= heroBounds.y + heroBounds.height + 2,
+        'El texto del hero debe quedar dentro de la fotografía');
+
+      // Solo los primeros cuatro viajes siguen siendo protagonistas de la portada.
+      const featuredCards = page.locator('#viajes .tripcard');
+      const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
+      assert.equal(await featuredCards.count(), 4, 'La portada principal debe tener cuatro viajes');
+      assert.equal(await ideaCards.count(), allDestinations.length - 4, 'Todos los viajes anteriores deben permanecer accesibles');
+      assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
+      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 4,
+        'La comparativa no debe confundir ideas históricas con viajes terminados');
+      const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
+      assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
+      assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
+      const people = await page.locator('#comparar .comparison-table tbody tr').evaluateAll(rows =>
+        rows.map(row => row.cells[5].textContent.trim()));
+      assert.deepEqual(people, ['1', '1', '1', '2'], 'Tres viajes de una persona y Patagonia para dos');
+      const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
+      assert.deepEqual(topIds, [
+        '#viaje/espana-portugal-2027', '#viaje/italia-norte-2027',
+        '#viaje/japon-2027', '#viaje/patagonia-argentina-2027'
+      ]);
+      assert.ok(!(await page.locator('#ideas-viajes').innerText()).includes('Presupuesto estimado por persona'),
+        'El archivo no debe mostrar precios históricos como vigentes');
       const patagoniaCard = page.locator('.tripcard[href="#viaje/patagonia-argentina-2027"]');
       assert.equal(await patagoniaCard.count(), 1, 'La portada de Patagonia debe existir');
-      assert.ok(!(await patagoniaCard.getAttribute('class')).includes('tripcard-draft'), 'La portada no debe ser un borrador vacío');
+      assert.ok(!(await patagoniaCard.innerText()).includes('En planeación'));
       const patagoniaCardText = await patagoniaCard.innerText();
       assert.match(patagoniaCardText, /68[,.]974/, 'La portada debe mostrar escenario mínimo por persona');
       assert.match(patagoniaCardText, /75[,.]974/, 'La portada debe mostrar escenario máximo por persona');
@@ -38,8 +137,7 @@ const assert = require('node:assert/strict');
         const text = await page.locator('main').innerText();
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
-        const isDraft = id === 'nuevo-viaje';
-        assert.ok(navigationCount >= (isDraft ? 5 : 9), id + ' navigation links ' + navigationCount);
+        assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
         if (id === 'patagonia-argentina-2027') {
           assert.equal(await page.locator('#traslados .mt-card').count(), 4, 'Patagonia debe renderizar sus cuatro traslados');
           assert.equal(await page.locator('#dias details.day').count(), 15, 'Patagonia debe mostrar sus 15 jornadas');
@@ -79,11 +177,96 @@ const assert = require('node:assert/strict');
         const bounds = await page.locator('[id="' + id + '"]').boundingBox();
         assert.ok(bounds && bounds.width > 50 && bounds.height > 10, viewport.width + ' invisible master section ' + id);
       }
+      if (viewport.width > 1000) {
+        const layout = await page.locator('#mapa .trip-map-header').evaluate(header => {
+          const intro = header.querySelector('.trip-map-intro').getBoundingClientRect();
+          const cities = header.querySelector('.trip-map-cities').getBoundingClientRect();
+          const cards = [...header.querySelectorAll('.map-city-list li')]
+            .map(item => item.getBoundingClientRect());
+          const width = header.getBoundingClientRect().width;
+          return {width, citiesWidth: cities.width, introRight: intro.right,
+            citiesLeft: cities.left, cards};
+        });
+        assert.ok(layout.citiesWidth >= layout.width * 0.55,
+          'La columna de ciudades debe ocupar al menos 55% del encabezado en escritorio');
+        assert.ok(layout.citiesLeft > layout.introRight,
+          'Las columnas del encabezado no deben encimarse');
+        assert.ok(layout.cards.length >= 4 &&
+          layout.cards.slice(0, 4).every(card => card.width >= 90),
+          'Las primeras cuatro tarjetas deben caber sin volverse ilegibles');
+        const rowPositions = [...new Set(layout.cards.map(card => Math.round(card.y)))];
+        assert.ok(rowPositions.length <= Math.ceil(layout.cards.length / 4),
+          'Las ciudades deben acomodarse en cuatro columnas sin filas adicionales');
+        assert.ok(Math.abs(layout.cards[0].y - layout.cards[3].y) <= 1,
+          'Las primeras cuatro ciudades deben compartir la primera fila');
+      }
       await page.locator('#mapa').scrollIntoViewIfNeeded();
       await page.screenshot({ path: '/tmp/atlas-italia-' + viewport.width + '.png', fullPage: true });
+      if (viewport.width > 1000) {
+        await page.goto('http://127.0.0.1:8765/#viaje/espana-portugal-2027/mapa', { waitUntil: 'domcontentloaded' });
+        await page.locator('#mapa .trip-map-cities .map-city-list li').first().waitFor();
+        const locations = await page.locator('#mapa .trip-map-cities .map-city-list li').evaluateAll(items =>
+          items.map(item => {
+            const r = item.getBoundingClientRect();
+            return { x: Math.round(r.x), y: Math.round(r.y), width: r.width };
+          }));
+        assert.equal(locations.length, 10, 'España + Portugal debe conservar diez localidades');
+        assert.equal(new Set(locations.map(item => item.y)).size, 3,
+          'Diez localidades deben ocupar exactamente tres filas en escritorio');
+        assert.equal(new Set(locations.slice(0, 4).map(item => item.y)).size, 1,
+          'Las cuatro primeras localidades deben compartir fila');
+        assert.ok(locations.every(item => item.width >= 90), 'Ninguna tarjeta debe quedar demasiado estrecha');
+      }
+      // El logo del Atlas aparece al fijarse la barra y navega a Inicio.
+      await page.goto('http://127.0.0.1:8765/#viaje/italia-norte-2027', { waitUntil: 'domcontentloaded' });
+      await page.locator('.subnav-sticky-sentinel').waitFor();
+      await page.evaluate(() => window.scrollTo({top:0,behavior:'instant'}));
+      await page.waitForFunction(() => !document.querySelector('.subnav')?.classList.contains('is-stuck'));
+      const stickyHome = page.locator('.subnav .subnav-home');
+      assert.equal(await stickyHome.getAttribute('href'), '#inicio');
+      assert.equal(await stickyHome.isVisible(), false, 'El logo no debe duplicarse antes del scroll');
+      await page.evaluate(() => {
+        const sentinel = document.querySelector('.subnav-sticky-sentinel');
+        window.scrollTo({top:sentinel.getBoundingClientRect().top + window.scrollY + 120,behavior:'instant'});
+      });
+      await page.waitForFunction(() => document.querySelector('.subnav')?.classList.contains('is-stuck'));
+      assert.equal(await stickyHome.isVisible(), true, 'El logo debe aparecer en la barra fija');
+      const homeLogoBounds = await stickyHome.boundingBox();
+      assert.ok(homeLogoBounds && homeLogoBounds.width >= 29 && homeLogoBounds.height >= 29);
+      const sectionScroll = page.locator('.subnav .subnav-sections');
+      assert.ok(await sectionScroll.count() === 1, 'Se conserva el desplazamiento horizontal de secciones');
+      await stickyHome.click();
+      await page.locator('#atlas-home-title').waitFor();
+      assert.equal(new URL(page.url()).hash, '#inicio', 'El logo debe regresar a Inicio');
+      // Simula un nuevo destino real desde el primer commit: visible, sin fechas ni fotos.
+      const testId = 'viaje-incremental-prueba';
+      const testCatalog = catalog.replace(/\];\s*$/,
+        ',\n  {"id": "viaje-incremental-prueba", "file": "viaje-incremental-prueba.json", "available": true}\n];');
+      await page.route('**/modules.js', route => route.fulfill({
+        status: 200, contentType: 'application/javascript', body: testCatalog
+      }));
+      await page.route('**/data/trips/viaje-incremental-prueba.json', route => route.fulfill({
+        status: 200, contentType: 'application/json',
+        body: JSON.stringify({id:testId,name:'Nuevo destino de prueba',travelerCount:null})
+      }));
+      await page.goto('http://127.0.0.1:8765/?incremental-fixture=1#inicio', { waitUntil: 'domcontentloaded' });
+      const newCard = page.locator('#viajes a[href="#viaje/' + testId + '"]');
+      await newCard.waitFor();
+      assert.equal(await page.locator('#viajes .tripcard').count(), 5);
+      assert.equal(await page.locator('#ideas-viajes .idea-tripcard').count(), 15);
+      const initialCardText = await newCard.innerText();
+      assert.match(initialCardText, /Nuevo destino de prueba/);
+      assert.doesNotMatch(initialCardText, /borrador|en planeación|preliminar|\$0\b|NaN|undefined/i);
+      await newCard.click();
+      await page.locator('#plan').waitFor();
+      assert.equal(await page.locator('.subnav .subnav-sections a').count(), 9);
+      for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1);
+      assert.doesNotMatch(await page.locator('main').innerText(), /borrador|en planeación|en preparación|Invalid Date|NaN|undefined/i);
+      assert.ok((await page.locator('main').innerText()).includes('Nuevo destino de prueba'));
+
       assert.deepEqual(failures, [], 'Browser errors at ' + viewport.width);
       await page.close();
     }
-    console.log('Browser smoke checks passed: Desktop/Mobile, complete and draft trips, nine anchors, overflow and runtime errors.');
+    console.log('Browser smoke checks passed: Desktop/Mobile, complete and incremental visible trips, nine anchors, overflow and runtime errors.');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

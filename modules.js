@@ -24,81 +24,91 @@ window.ATLAS_MODULES = [
   {
     "id": "espana",
     "file": "espana.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "munich",
     "file": "munich.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "munich-viena",
     "file": "munich-viena.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "portugal",
     "file": "portugal.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "suiza",
     "file": "suiza.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "suiza-italia",
     "file": "suiza-italia.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "grecia",
     "file": "grecia.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "sicilia",
     "file": "sicilia.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "washington",
     "file": "washington.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "turquia",
     "file": "turquia.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "nueva-orleans",
     "file": "nueva-orleans.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "vegas",
     "file": "vegas.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "marruecos",
     "file": "marruecos.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "san-antonio",
     "file": "san-antonio.json",
-    "available": true
+    "available": true,
+    "homeGroup": "ideas"
   },
   {
     "id": "puglia-matera",
     "file": "puglia-matera.json",
-    "available": true
-  },
-  {
-    "id": "nuevo-viaje",
-    "file": "nuevo-viaje.json",
-    "available": false
+    "available": true,
+    "homeGroup": "ideas"
   }
 ];

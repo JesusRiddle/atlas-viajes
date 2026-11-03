@@ -110,15 +110,22 @@ test('Italia 2027: fechas, noches y viajes de ida y vuelta coherentes', () => {
   assert.match(source, /Array\.isArray\(item\)/, 'Las notas deben admitir objetos y arreglos');
 });
 
-test('el manual y AGENTS establecen el orden de armado antes de publicar', () => {
+test('manual y agente establecen el flujo 00–13 y las cuatro auditorías', () => {
   const guide = fs.readFileSync('docs/trip-editorial-guide.md', 'utf8');
   const agents = fs.readFileSync('AGENTS.md', 'utf8');
   const readme = fs.readFileSync('README.md', 'utf8');
-  for (const section of ['Fase 0', 'Fase 1', 'Fase 2', 'Fase 3', 'Mapa', 'Temporadas', 'Experiencias', 'Movilidad y conexiones', 'Presupuesto']) {
-    assert.ok(guide.includes(section), 'Falta paso: ' + section);
+  const progress = fs.readFileSync('docs/trip-progress-template.md', 'utf8');
+  for (const section of ['Panorama', 'Mapa', 'Temporadas', 'Experiencias',
+    'Reservaciones', 'Movilidad y conexiones', 'Dónde dormirás', 'Día por día', 'Presupuesto']) {
+    assert.ok(guide.includes(section), 'Falta sección: ' + section);
   }
-  assert.match(agents, /Fase 0/);
-  assert.match(readme, /Orden:/);
+  for (const document of [guide, agents, readme]) {
+    assert.match(document, /00.{0,8}13/);
+    assert.ok(document.includes('trip-progress-template.md'));
+  }
+  for (const n of ['A', 'B', 'C', 'D']) {
+    assert.match(progress, new RegExp('Auditoría ' + n));
+  }
 });
 
 test('Italia 2027 mantiene vuelos cotizados y trenes futuros sin precios inventados', () => {
