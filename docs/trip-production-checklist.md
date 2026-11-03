@@ -106,6 +106,14 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 
 **Alcance de cambios:** Los viajes históricos deben permanecer intactos y solo pueden consultarse para extraer ideas; ninguna solicitud general de edición del Atlas autoriza modificar sus JSON ni la visualización heredada. Aplicar cambios de contenido exclusivamente a los viajes del formato nuevo.
 
+## Puerta de control · arquitectura del Panorama (etapas 10, C y D)
+- [ ] En **cada viaje nuevo**, `practicalIndicators` contiene **exactamente tres IDs** en orden `style`, `language`, `entry`, con títulos exactos «Estilo de viaje», «Idioma y moneda», «Documentación y consejos prácticos». Rechazar indicadores `weather` o `climate`; la electricidad es parte de consejos prácticos, no el nombre de la tarjeta.
+- [ ] `climate` es un campo separado y contiene **tres párrafos** (clima con temperaturas de referencia y riesgos, `*Qué llevar:*` y `*Horas de luz:*` con amanecer/atardecer locales y uso del día). Distinguir promedios de pronósticos y evitar información incompleta.
+- [ ] En **Desktop**, comprobar DOM y geometría: tres `.practical-indicator` en `.overview-intro` izquierda; `.overview-side` derecha contiene `.budget-teaser` y **exactamente una** `.overview-climate-card`. En **Mobile**, comprobar la misma pertenencia aunque la disposición se apile. No basta comparar títulos visualmente ni verificar nueve anclas.
+- [ ] Contrastar esquema y contenido del Panorama nuevo contra `docs/trip-editorial-guide.md` y un viaje nuevo ya validado, por ejemplo España–Portugal 2027 **solo como control editorial de composición**, nunca para copiar itinerario, temperaturas ni precios.
+- [ ] Las fuentes de divisas se obtienen dinámicamente para **cualquier moneda declarada** (`CHF`, `ARS`, `JPY`, `EUR`, etc.), no con lista limitada a EUR/USD/JPY; probar enlaces en Panorama.
+- [ ] Un fallo de ubicación, nombre o detalle del clima bloquea auditorías C/D, aunque las pruebas generales de JavaScript y JSON pasen.
+
 ## Aceptación específica del panorama en viajes nuevos
 - [ ] «Tu inversión aproximada» presenta proyección global o explica inequívocamente por qué solo hay subtotal; nunca confundir solo alojamiento con costo total.
 - [ ] La proyección indica rango, supuestos y partidas excluidas; las tarifas cotizadas para otro mes no se interpretan como actuales o compradas.
