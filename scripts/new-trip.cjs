@@ -17,17 +17,37 @@ function create() {
   const registry = [...catalog.matchAll(/"id":\s*"([^"]+)"/g)].map(match => match[1]);
   const destination = path.join(dataDir, id + '.json');
   if (registry.includes(id) || fs.existsSync(destination)) throw new Error('El ID ya existe: ' + id);
-  const trip = { id, name: name.trim(), status: 'draft', intro: null, introShort: null };
+  const trip = { id, name: name.trim(), status: 'draft', travelerCount: null, intro: null, introShort: null };
+  const progressTemplate = path.join(root, 'docs/trip-progress-template.md');
+  const progressDir = path.join(root, 'docs/trip-progress');
+  const progressPath = path.join(progressDir, id + '.md');
+  if (fs.existsSync(progressPath)) throw new Error('Ya existe una bitácora de este viaje: ' + id);
+  const progress = fs.readFileSync(progressTemplate, 'utf8')
+    .replace('**Viaje:** <nombre>', '**Viaje:** ' + name.trim())
+    .replaceAll('data/trips/<slug>.json', 'data/trips/' + id + '.json')
+    .replace('**Rama / PR:** <rama / enlace>', '**Rama / PR:** Por asociar al PR')
+    .replace('**Etapa actual:** <número>', '**Etapa actual:** 00 · Preparación')
+    .replace('**Siguiente acción autónoma:** <acción precisa>',
+      '**Siguiente acción autónoma:** Recuperar restricciones y destinos para la etapa 01')
+    .replace('**Próxima ejecución autónoma:** <etapa y acción>',
+      '**Próxima ejecución autónoma:** Etapa 01 · Alcance y geografía');
   const insertion = /\];\s*$/;
   if (!insertion.test(catalog)) throw new Error('modules.js no tiene el formato esperado');
   const entry = '  {\n    "id": ' + JSON.stringify(id) + ',\n    "file": ' + JSON.stringify(id + '.json') + ',\n    "available": false\n  }';
   const last = catalog.replace(insertion, '];');
   const index = last.lastIndexOf('];');
   const rewritten = last.slice(0, index).replace(/\s*$/, '') + ',\n' + entry + last.slice(index);
+  fs.mkdirSync(progressDir, { recursive: true });
   fs.writeFileSync(destination, JSON.stringify(trip, null, 2) + '\n', { flag: 'wx' });
-  try { fs.writeFileSync(catalogPath, rewritten); }
-  catch (error) { fs.unlinkSync(destination); throw error; }
-  console.log('Borrador vacío creado (oculto): ' + id);
+  try {
+    fs.writeFileSync(progressPath, progress, { flag: 'wx' });
+    fs.writeFileSync(catalogPath, rewritten);
+  } catch (error) {
+    if (fs.existsSync(destination)) fs.unlinkSync(destination);
+    if (fs.existsSync(progressPath)) fs.unlinkSync(progressPath);
+    throw error;
+  }
+  console.log('Borrador vacío y bitácora creados (oculto): ' + id);
 }
 try { create(); }
 catch (error) { console.error(error.message); process.exitCode = 1; }
