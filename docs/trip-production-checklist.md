@@ -19,16 +19,18 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 
 ## Checklist operativo por etapas y auditorías
 
-**Fuente de verdad del avance:** `docs/trip-progress/<slug>.md` generado desde [la plantilla de progreso](trip-progress-template.md). La orden «refléjalo en el Atlas» desencadena la ejecución autónoma de **00–13** sin microaprobaciones; mantener la ruta y los gastos en su JSON, nunca en el archivo de progreso.
+**El orden de ejecución se basa en dependencias, no en la navegación.** La guía canónica es `docs/trip-progress-template.md`. La orden «refléjalo en el Atlas» activa etapas **00–13** sin microaprobaciones; crear `docs/trip-progress/<slug>.md` para señalar estado, evidencias y siguiente paso.
 
-| Auditoría | Al concluir | Comprobar antes de seguir |
+| Auditoría | Al concluir | Verificación |
 | --- | --- | --- |
-| **A · Logística** | **03** | Días, noches, ciudades, vuelos, `travelerCount`, reservas condicionantes |
-| **B · Editorial** | **07** | Panorama, mapa, temporadas y experiencias mutuamente consistentes |
-| **C · Servicios** | **10** | Reservaciones, transporte, hoteles y referencias diarias compatibles |
-| **D · Integral** | **13** | Día por día, presupuesto, fotos, portada, nueve secciones, enlaces, Node y navegador cuando disponible |
+| **A · Clima y ruta** | **03** | Destinos → Temporadas (02) → fechas, `travelerCount`, ruta, noches y días |
+| **B · Servicios** | **08** | Mapa (04), Experiencias (05), Reservaciones (06), Movilidad (07) y alojamientos (08) compatibles |
+| **C · Dinero** | **11** | Día por día (09), Panorama (10), gastos y escenarios integrales (11) actualizados en Inicio |
+| **D · Final** | **13** | Fotografías (12), portada, nueve secciones en orden visual, links, Node y navegador cuando disponible |
 
-Para cada paso escribir **verificado / en curso / pendiente / bloqueado** con evidencia (fuente, archivo, commit o prueba) y la siguiente acción. Si una auditoría falla, corregir sus dependencias y revalidar, sin pedir «adelante» para seguir. Agrupar trabajo y decisiones: solo elevar al usuario cambios de ruta, gastos relevantes, conflictos de preferencias o aprobación de merge. Registrar expresamente las verificaciones imposibles y los precios/horarios pendientes de 2027, que son no bloqueantes en una estimación a alto nivel. No prometer trabajo asíncrono.
+**Temporadas no depende de hoteles/vuelos:** investigar los doce meses para todas las regiones candidatas antes de comprometer las fechas. **Presupuesto sí depende de servicios:** no considerarlo completo antes de proponer/estimar vuelos, transporte, alojamiento, visitas, entradas, comidas y extras. No confundir un subtotal con la proyección completa. Las imágenes se abordan al final, tras tener lugares y días definidos. Si una conexión o reserva invalida la ruta, retroceder a 03 y revalidar.
+
+Al terminar cada etapa registrar **verificado/en curso/pendiente/bloqueado** con evidencia. Diferenciar supuestos con fuente/fecha de cotizaciones y reservas reales, especialmente cuando el usuario solo necesita una planeación orientativa. No pedir autorización por bloque; solo para decisiones materiales, compras y merge. No prometer trabajo en segundo plano.
 
 ## Trabajo por lotes (evitar microfases)
 1. **Bloque A · Logística completa:** obtener/verificar de una vez todas las alternativas de tren, autobús, vuelo y transbordos. Los enlaces no protegidos o ajustados requieren márgenes explícitos (preferentemente >=20 minutos en cambios de tren, salvo justificación y confirmación). Registrar fuentes oficiales, fecha de referencia, estaciones exactas y opciones válidas de respaldo.
