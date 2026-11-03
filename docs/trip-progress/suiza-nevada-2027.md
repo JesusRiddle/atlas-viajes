@@ -94,3 +94,10 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Ejecución #334 de Atlas checks: sintaxis JS **PASS**, validación JSON **PASS**, Node regresiones **89/91**; navegador omitido por fallo previo.
 - Las dos fallas eran aserciones del catálogo anterior (19 viajes y España–Portugal en posición 1); ahora son 20 y Suiza nevada está en posición 1 por decisión del usuario.
 - Se actualizaron expectativas y añadió prueba específica de Suiza nevada (10 noches, 12 jornadas, fotos, presupuesto y portada). **Nuevo CI todavía no confirmado**.
+
+## Corrección de renderizado de movilidad · 2026-11-03
+- Error informado: `major-transport.js:166` al leer `option.fares.find` en traslados de aeropuerto sin `fares`.
+- Corregidos `airport-arrival` y `airport-return` con `selectedFare: pending`, tarifa `{price: null}`; sin inventar importes.
+- Renderizador protegido frente a tarifas ausentes; añadida prueba de contrato `AtlasTransportModel.validateTrip` y de renderizado con datos parciales.
+- Actualizados `AGENTS.md` y `docs/trip-production-checklist.md` para exigir contrato + renderizado al cerrar movilidad y auditorías B/D.
+- **CI:** nueva ejecución `41726747667` iniciada, resultado pendiente de verificación.
