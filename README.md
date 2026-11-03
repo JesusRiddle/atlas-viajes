@@ -10,7 +10,7 @@ Crear un borrador vacío desde la raíz del repositorio:
 node scripts/new-trip.cjs mi-viaje "Nombre del viaje"
 ```
 
-El comando crea `data/trips/mi-viaje.json`, registra el viaje en `modules.js` con `available: false` (oculto) y genera automáticamente `docs/trip-progress/mi-viaje.md` para controlar las etapas y auditorías. Rechaza IDs repetidos. **No lee, copia ni modifica viajes antiguos.**
+El comando crea `data/trips/mi-viaje.json`, registra el viaje en `modules.js` con `available: true` (visible de inmediato en la versión de la rama, sin etiquetas de estado) y genera automáticamente `docs/trip-progress/mi-viaje.md` para controlar las etapas y auditorías. Rechaza IDs repetidos. **No lee, copia ni modifica viajes antiguos.**
 
 Antes de redactar, consultar [AGENTS.md](AGENTS.md) y la [guía editorial de las nueve secciones](docs/trip-editorial-guide.md); la guía define qué va en cada sección, qué debe excluirse y cómo usar `introHighlights` para las negritas del panorama.
 
