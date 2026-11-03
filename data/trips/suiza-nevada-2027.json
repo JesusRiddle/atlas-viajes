@@ -616,7 +616,8 @@
           "label": "Búsqueda de vuelos",
           "url": "https://www.google.com/travel/flights"
         }
-      ]
+      ],
+      "budgetIncludedIn": "flight-budget"
     },
     {
       "id": "airport-arrival",
@@ -784,7 +785,14 @@
   },
   "lodgingSummary": "10 noches, 4 alojamientos: Lucerna 1, Grindelwald 4, Zermatt 3 y Zúrich 2. Habitaciones privadas con baño propio, todos candidatos sin reservar.",
   "heroLodgingSummary": "10 noches · 4 alojamientos",
-  "budgetPreliminary": true,
+  "budgetPreliminary": {
+    "low": 75000,
+    "high": 85000,
+    "marginMXN": 4000,
+    "useBudgetRange": true,
+    "referenceFlightMXN": 20331,
+    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla."
+  },
   "hotels": [
     {
       "id": "lucerna-ibis",
