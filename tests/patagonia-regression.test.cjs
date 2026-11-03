@@ -33,7 +33,9 @@ test('Patagonia: costos estimados coherentes y referencias históricas explícit
   assert.equal(trip.expenses.find(x => x.id === 'flight-domestic').cost.amount, 23250);
   assert.ok(trip.budgetRange[0] <= 144648 && 144648 <= trip.budgetRange[1]);
   for (const flight of trip.majorTransport.filter(x => x.type === 'flight')) {
-    assert.equal(flight.selectedOption, null);
+    assert.equal(flight.selectedOption, 'A');
+    assert.equal(flight.budgetIncludedIn, flight.id);
+    assert.ok(flight.options.every(option => option.fares?.length));
     assert.match(flight.notes, /2026/);
     assert.match(flight.notes, /NO CONFIRMADO 2027/);
   }
@@ -91,4 +93,16 @@ test('Patagonia: los gastos por día coinciden con el presupuesto sin duplicarlo
   assert.equal(trip.expenses.filter(x => x.id.startsWith('food-day-'))
     .reduce((sum, x) => sum + x.cost.amount, 0), 15000);
   assert.ok(!trip.expenses.some(x => x.id === 'food'));
+});
+
+test('Patagonia: los cuatro transportes renderizan y no duplican presupuesto', () => {
+  for (const transport of trip.majorTransport) {
+    assert.ok(transport.budgetIncludedIn);
+    assert.ok(trip.expenses.some(e => e.id === transport.budgetIncludedIn));
+    assert.ok(transport.options.length);
+    assert.ok(transport.options.every(o => o.journeys?.length && o.fares?.length && o.selectedFare));
+    assert.ok(transport.options.every(o => o.journeys.every(j => j.segments?.length)));
+  }
+  assert.equal(trip.days.reduce((sum,d) => sum + d.spend,0),
+    trip.expenses.reduce((sum,e) => sum + e.cost.amount,0));
 });
