@@ -416,6 +416,17 @@ test('Suiza nevada: contratos editoriales de temporadas, días y fotografías', 
         }
     }
     assert.equal(trip.expenses.reduce((sum, item) => sum + item.cost.amount, 0), 81981);
+    const summit = trip.days.find(day => day.n === 6);
+    assert.deepEqual(summit.places, ['swiss27-jungfraujoch-february', 'swiss27-maennlichen-winter'],
+        'Día 6 debe mostrar los dos miradores reales de las alternativas invernales');
+    assert.deepEqual(summit.optionalPlaces, summit.places,
+        'Ambos miradores son alternativas, no actividades obligatorias simultáneas');
+    assert.ok(trip.railSummary.some(item => item[0].includes('Half Fare Card')),
+        'Comparativa incluye descuento turístico');
+    assert.ok(trip.railSummary.some(item => item[0].includes('Swiss Travel Pass')),
+        'Comparativa incluye Swiss Travel Pass como escenario distinto');
+    assert.ok(trip.railSummary.some(item => item[1].includes('CHF 63')),
+        'Suplemento Top Ticket 2026/27 debe estar separado del pase Jungfrau');
     assert.equal(trip.mapPoints.length, 11, 'La ruta incluye miradores y Lindt');
     assert.deepEqual(trip.mapPoints.map(item => item.order), [1,2,3,4,5,6,7,8,9,10,11]);
     const meals = trip.expenses.filter(item => item.category === 'food');
