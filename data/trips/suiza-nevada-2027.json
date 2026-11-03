@@ -1,0 +1,968 @@
+{
+  "id": "suiza-nevada-2027",
+  "name": "Suiza nevada 2027",
+  "flag": "🇨🇭",
+  "status": null,
+  "start": "2027-01-22",
+  "end": "2027-02-02",
+  "tag": "DE LUCERNA AL MATTERHORN · ENTRE TRENES Y PUEBLOS NEVADOS",
+  "routeCities": [
+    "Zúrich",
+    "Lucerna",
+    "Interlaken",
+    "Grindelwald",
+    "Lauterbrunnen",
+    "Wengen",
+    "Mürren",
+    "Zermatt"
+  ],
+  "bases": [
+    [
+      "Lucerna",
+      1
+    ],
+    [
+      "Grindelwald",
+      4
+    ],
+    [
+      "Zermatt",
+      3
+    ],
+    [
+      "Zúrich",
+      2
+    ]
+  ],
+  "work": null,
+  "costs": [],
+  "profile": {
+    "pace": "balanced",
+    "paceWhy": "Traslados en tren y tres días completos desde Grindelwald; miradores intercambiables según clima.",
+    "solo": true,
+    "soloWhy": "Trenes frecuentes, hoteles privados próximos a estación y sin coche.",
+    "weather": "winter",
+    "weatherWhy": "Viaje de nieve sin esquiar; se priorizan destinos alpinos altos, sin prometer nieve en ciudades bajas.",
+    "why": "Experiencias de nieve, pueblos alpinos y trenes escénicos con cuatro alojamientos."
+  },
+  "intro": "El recorrido comienza junto al Puente de la Capilla y las callejuelas históricas de Lucerna, antes de cruzar lagos y montañas en el tren panorámico hacia Grindelwald. Desde este pueblo alpino podrás explorar los chalets de Wengen, el valle de Lauterbrunnen y las vistas de Mürren, además de contemplar las cumbres desde First o Jungfraujoch cuando el tiempo lo permita. En Zermatt, el tren de Gornergrat acerca al Matterhorn y a paisajes glaciares. El viaje termina en Zúrich, entre el río Limmat, el casco antiguo y una visita a Lindt Home of Chocolate en Kilchberg.",
+  "introShort": "De los puentes y el lago de Lucerna a los chalets nevados de Grindelwald, Wengen y Mürren. Trenes alpinos, el Matterhorn desde Gornergrat y un final cultural y chocolatero en Zúrich.",
+  "climate": "Finales de enero: invierno alpino frío y días cortos (unas nueve horas de luz). La nieve es mucho más probable en Grindelwald, Wengen y Zermatt que en Zúrich o Lucerna; viento, nubosidad y cierres pueden modificar los miradores. Se reservan días alternativos para fotografía y nieve.",
+  "solo": "Plan de una persona con habitación y baño privados. Transporte ferroviario, equipaje ligero y descansos entre excursiones de montaña.",
+  "flight": "Opción aérea de referencia, NO reservada: salida de CDMX viernes 22 de enero a las 11:25; llegada a Zúrich sábado 23 a las 10:00 vía Madrid (Aeroméxico/Air Europa). Regreso ZRH martes 2 de febrero a las 18:50 vía París, llegada a CDMX miércoles 3 a las 04:20 (Air France/Aeroméxico). Precio de captura del 3/11/2026: $20,331 MXN redondos, sujeto a revalidar reservas protegidas, equipaje y tarifa final. Alternativa Lufthansa por $17,382 MXN redondos, llegada 23 enero 19:00 y regreso 2 febrero 09:25.",
+  "local": "Desde Zürich Flughafen a Lucerna se llega en tren en aprox. 1 h 10 min. Lucerna a Interlaken Ost en Luzern–Interlaken Express tarda alrededor de 1 h 50 min; conectar hacia Grindelwald. Grindelwald–Zermatt vía Interlaken/Spiez/Visp toma unas 3.5–4.5 h; Zermatt–Zúrich unas 3.5–4 h. Horarios orientativos: validar SBB para fechas exactas. Comparar Half Fare Card, pase peatonal Jungfrau y billetes con ahorro sin sumar dos veces los tramos.",
+  "experiences": [
+    {
+      "city": "Lucerna",
+      "description": "Kapellbrücke, casco antiguo y lago; monte Rigi solo si terminas temprano y hay buena visibilidad y trenes de regreso con luz."
+    },
+    {
+      "city": "Grindelwald",
+      "description": "Pueblo nevado junto al Eiger; First y Cliff Walk abiertos según tiempo, más Wengen, valle de Lauterbrunnen y Mürren. Probar rösti y fondue."
+    },
+    {
+      "city": "Zermatt",
+      "description": "Matterhorn, tren de Gornergrat y miradores invernales; Sunnegga como alternativa. Disfrutar raclette y chocolate caliente."
+    },
+    {
+      "city": "Zúrich",
+      "description": "Altstadt, Grossmünster, Lindenhof, río Limmat y Lindt Home of Chocolate en Kilchberg. Sin Kunsthaus."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-01-22",
+      "title": "Vuelo desde CDMX hacia Zúrich",
+      "base": "En vuelo",
+      "am": "Preparar documentación y traslado al aeropuerto internacional de Ciudad de México; la ida propuesta sale a las 11:25, pendiente de reserva.",
+      "pm": "Embarcar y realizar el primer tramo del viaje intercontinental.",
+      "night": "Dormir a bordo; no contabilizar hotel.",
+      "mobility": "Vuelo MEX → MAD → ZRH; opción cotizada en Google Flights el 03/11/2026, no comprada.",
+      "note": "Precios, equipaje y protección entre Aeroméxico/Air Europa/Air France pendientes de confirmación. No interpretar como reserva.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [
+        "Aeropuerto CDMX"
+      ],
+      "transportRefs": [
+        "flight-international"
+      ]
+    },
+    {
+      "n": 2,
+      "date": "2027-01-23",
+      "title": "Llegada a Suiza y casco antiguo de Lucerna",
+      "base": "Lucerna",
+      "am": "Vuelo de conexión vía Madrid; llegada a Zúrich de referencia a las 10:00. Pasar migración y retirar equipaje sin reservar tren rígido.",
+      "pm": "Tomar tren desde Zürich Flughafen a Lucerna, aprox. 1 h 10 min; dejar equipaje y recorrer Kapellbrücke, casco antiguo, iglesias y orilla del lago.",
+      "night": "Cenar en Lucerna y dormir en ibis budget Luzern City (candidato, no reservado).",
+      "mobility": "Zürich Flughafen → Luzern Bahnhof por SBB; comprar tras completar migración. Consultar sbb.ch.",
+      "note": "El Rigi queda espontáneo solo si acabas el casco antiguo temprano, hay buena visibilidad y alcanzan los trenes con luz; no desplazar el traslado a Grindelwald del día siguiente.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "lucerna-ibis",
+      "transportRefs": []
+    },
+    {
+      "n": 3,
+      "date": "2027-01-24",
+      "title": "Luzern–Interlaken Express y primer día en Grindelwald",
+      "base": "Grindelwald",
+      "am": "Desayunar, hacer check-out y caminar a Luzern Bahnhof con margen.",
+      "pm": "Tomar Luzern–Interlaken Express (aprox. 1 h 50 min hasta Interlaken Ost), conectar hacia Grindelwald; dejar maletas y caminar entre chalets y vistas al Eiger.",
+      "night": "Cenar y dormir en Grindelwald, primera de cuatro noches.",
+      "mobility": "Luzern Bahnhof → Interlaken Ost en Luzern–Interlaken Express → Grindelwald Bahnhof por SBB/Zentralbahn/Berner Oberland-Bahn.",
+      "note": "El trayecto panorámico sí forma parte de la ruta, no es un tren premium extra. Guardar margen para conexión.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "grindelwald-tschuggen",
+      "transportRefs": []
+    },
+    {
+      "n": 4,
+      "date": "2027-01-25",
+      "title": "Grindelwald-First y la nieve del valle",
+      "base": "Grindelwald",
+      "am": "Comprobar operación y webcam de Grindelwald-First antes de pagar; desayunar y tomar telecabina si el tiempo acompaña.",
+      "pm": "Disfrutar del mirador First y Cliff Walk solo si está abierto; adaptar la actividad si hay hielo, viento o poca visibilidad.",
+      "night": "Dormir en Grindelwald; si First estuvo cerrado, intercambiarlo con el plan del 27.",
+      "mobility": "Grindelwald → First por góndola; retorno en el mismo medio si opera.",
+      "note": "No pisar senderos cerrados ni asumir Cliff Walk operativo; consultar estado oficial del día.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "grindelwald-tschuggen",
+      "transportRefs": []
+    },
+    {
+      "n": 5,
+      "date": "2027-01-26",
+      "title": "Lauterbrunnen, Wengen y Mürren",
+      "base": "Grindelwald",
+      "am": "Salir en tren hacia Lauterbrunnen temprano; recorrer el entorno del pueblo y sus vistas del valle.",
+      "pm": "Subir a Wengen y continuar hacia Mürren mediante conexión por Lauterbrunnen/Grütschalp según operativa. Recortar una localidad si se atrasa el día.",
+      "night": "Dormir en Grindelwald; no cambiar de alojamiento al recorrer los pueblos.",
+      "mobility": "Grindelwald → Zweilütschinen → Lauterbrunnen; Wengen ida y vuelta; Mürren vía Grütschalp según itinerario. Billetes/pase por decidir.",
+      "note": "Es el día más intenso por conexiones. Mürren y Wengen pueden alternarse o recortarse según clima, sin alterar alojamiento.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "grindelwald-tschuggen",
+      "transportRefs": []
+    },
+    {
+      "n": 6,
+      "date": "2027-01-27",
+      "title": "Jungfraujoch o Männlichen según visibilidad",
+      "base": "Grindelwald",
+      "am": "Consultar visibilidad, vientos y operación: decidir Jungfraujoch si está despejado o Männlichen/Kleine Scheidegg como alternativa.",
+      "pm": "Visitar el destino escogido, sin acumular los dos miradores premium el mismo día; reservar horas para bajar con luz.",
+      "night": "Dormir en Grindelwald y preparar traslado del día siguiente.",
+      "mobility": "Grindelwald → Jungfraujoch vía Grindelwald Terminal/Eiger Express o Männlichen/Kleine Scheidegg; elegir solo alternativa meteorológicamente viable.",
+      "note": "Jungfraujoch requiere excelente visibilidad; no contratar por obligación. Confirmar suplemento del pase regional 2027.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "grindelwald-tschuggen",
+      "transportRefs": []
+    },
+    {
+      "n": 7,
+      "date": "2027-01-28",
+      "title": "Trenes hacia Zermatt y paseo alpino",
+      "base": "Zermatt",
+      "am": "Desayunar y salir con tiempo hacia Grindelwald Bahnhof; iniciar recorrido vía Interlaken Ost, Spiez y Visp.",
+      "pm": "Llegar a Zermatt en unas 3.5–4.5 h de trenes, dejar maletas y recorrer el centro sin vehículos ordinarios.",
+      "night": "Dormir en Zermatt, primera de tres noches.",
+      "mobility": "Grindelwald → Interlaken Ost → Spiez → Visp → Zermatt en tren; verificar conexiones de 2027.",
+      "note": "Evitar billetes con cambios ajustados; transbordos y tiempos son indicativos, no reservas.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "zermatt-testa",
+      "transportRefs": []
+    },
+    {
+      "n": 8,
+      "date": "2027-01-29",
+      "title": "Gornergrat: panorámica del Matterhorn",
+      "base": "Zermatt",
+      "am": "Consultar cámara de Gornergrat y estado ferroviario; si la vista del Matterhorn está despejada, subir temprano.",
+      "pm": "Contemplar nieve, crestas y glaciares desde Gornergrat; volver sin prisa y almorzar en Zermatt.",
+      "night": "Dormir en Zermatt.",
+      "mobility": "Zermatt → Gornergrat en tren de cremallera y retorno.",
+      "note": "Gornergrat solo si hay visibilidad; el billete puede ser caro. Revisar descuentos de pase.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "zermatt-testa",
+      "transportRefs": []
+    },
+    {
+      "n": 9,
+      "date": "2027-01-30",
+      "title": "Zermatt: segunda ventana meteorológica",
+      "base": "Zermatt",
+      "am": "Reservar como segunda oportunidad para Gornergrat o Matterhorn si el día anterior estuvo nublado.",
+      "pm": "Si ya se disfrutó Gornergrat, visitar Sunnegga o caminar por Zermatt; Glacier Paradise solo si clima, tiempo y presupuesto lo justifican.",
+      "night": "Dormir en Zermatt y preparar equipaje para el traslado.",
+      "mobility": "Trayectos a Sunnegga si se elige; si no, paseo local.",
+      "note": "Segundo día flexible por tiempo: no presupuestar dos ascensos a Gornergrat.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "zermatt-testa",
+      "transportRefs": []
+    },
+    {
+      "n": 10,
+      "date": "2027-01-31",
+      "title": "De Zermatt a Zúrich: casco antiguo",
+      "base": "Zúrich",
+      "am": "Hacer check-out y tomar tren hacia Zúrich, normalmente vía Visp y Berna.",
+      "pm": "Dejar maletas en alojamiento cerca de Zürich HB; explorar Niederdorf, Grossmünster y mirador Lindenhof.",
+      "night": "Dormir en Zúrich cerca de Zürich HB.",
+      "mobility": "Zermatt → Visp → Bern → Zürich HB en tren SBB; rutas exactas sujetas a horario 2027.",
+      "note": "Zúrich no necesita nieve; aquí priorizar casco antiguo y Lindt. Confirmar apertura de comercios dominicales.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "zurich-fred",
+      "transportRefs": []
+    },
+    {
+      "n": 11,
+      "date": "2027-02-01",
+      "title": "Lindt Home of Chocolate y lago de Zúrich",
+      "base": "Zúrich",
+      "am": "Viajar a Kilchberg y entrar a Lindt Home of Chocolate en una franja reservada, idealmente a primera hora.",
+      "pm": "Regresar a Zúrich para caminar junto al Limmat y el lago; completar las visitas urbanas pendientes.",
+      "night": "Dormir en Zúrich y preparar documentación de regreso.",
+      "mobility": "Zürich HB → Kilchberg/Schokoladenplatz en transporte público y regreso.",
+      "note": "Lindt es imprescindible en el plan, pero aún sin entrada comprada; verificar lunes 1/2/2027.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "hotel": "zurich-fred",
+      "transportRefs": []
+    },
+    {
+      "n": 12,
+      "date": "2027-02-02",
+      "title": "Último paseo y regreso desde Zúrich",
+      "base": "En vuelo",
+      "am": "Desayunar y dejar equipaje en el hotel; decidir un paseo corto por Zúrich sin comprometer margen aeroportuario.",
+      "pm": "Tomar tren Zürich HB → Zürich Flughafen con margen de 3 h previo al vuelo provisional de las 18:50. Confirmar horario y condiciones finales.",
+      "night": "Regreso provisional vía París: salida ZRH 18:50, llegada a CDMX el miércoles 3 a las 04:20; sin noche adicional de hotel en Suiza.",
+      "mobility": "Zürich HB → Zürich Flughafen; luego vuelo ZRH → CDG → MEX (cotización provisional).",
+      "note": "El regreso de referencia llegaría a México el 3/2 de madrugada. Este horario no equivale a compra confirmada.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [
+        "Zürich Flughafen"
+      ],
+      "transportRefs": [
+        "airport-return",
+        "flight-international"
+      ]
+    }
+  ],
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Lindt Home of Chocolate · lunes 1 febrero",
+          "description": "Visita imprescindible. Franja de referencia 10:00; entrada sin comprar y horarios 2027 por confirmar. Referencia CHF 17 (≈ $390 MXN).",
+          "links": [
+            {
+              "label": "Entradas oficiales",
+              "url": "https://www.lindt-home-of-chocolate.com/en/"
+            }
+          ]
+        },
+        {
+          "title": "Alojamientos de Grindelwald y Zermatt",
+          "description": "Buscar individual con baño privado y cancelación flexible para 24–28 y 28–31 enero; tarifa definitiva aún sin confirmar.",
+          "links": [
+            {
+              "label": "Hotel Tschuggen",
+              "url": "https://www.tschuggen-grindelwald.ch/en/"
+            },
+            {
+              "label": "Hotel Testa Grigia",
+              "url": "https://www.hotel-testa-grigia.ch/en/book-a-room/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Vuelos MEX–ZRH y regreso",
+          "description": "Cotizaciones de 03/11/2026, no compras. Confirmar billetes protegidos, franquicia y precio final.",
+          "links": [
+            {
+              "label": "Google Flights",
+              "url": "https://www.google.com/travel/flights"
+            }
+          ]
+        },
+        {
+          "title": "Jungfraujoch · opción meteorológica",
+          "description": "Verificar visibilidad, disponibilidad y condiciones del suplemento regional antes de adquirir entrada; no obligatoria.",
+          "links": [
+            {
+              "label": "Operación Jungfrau",
+              "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Gornergrat, Grindelwald-First y miradores",
+          "description": "Elegir ascensos con buena visibilidad y horarios de retorno; montaña puede cerrar por viento.",
+          "links": [
+            {
+              "label": "Gornergrat oficial",
+              "url": "https://www.gornergrat.ch/en/pages/timetable-gornergrat-bahn"
+            },
+            {
+              "label": "Jungfrau Railways",
+              "url": "https://www.jungfrau.ch/en-gb/"
+            }
+          ]
+        },
+        {
+          "title": "Monte Rigi",
+          "description": "Opcional espontáneo desde Lucerna, solo si sobra tiempo y se puede regresar con luz; no justifica noches extras.",
+          "links": [
+            {
+              "label": "Rigi horarios",
+              "url": "https://www.rigi.ch/en/inform/timetables"
+            }
+          ]
+        }
+      ]
+    ]
+  ],
+  "exchangeRates": {
+    "CHF": 22.9569
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-11-03",
+    "baseCurrency": "MXN",
+    "description": "Pesos mexicanos por 1 CHF, tasa de referencia para planeación, no garantía al viajar.",
+    "sources": {
+      "CHF": "https://www.snb.ch/en/"
+    }
+  },
+  "expenses": [
+    {
+      "id": "flight-budget",
+      "category": "flight",
+      "concept": "Vuelo internacional redondo MEX–ZRH",
+      "date": "2027-01-22",
+      "cost": {
+        "amount": 20331,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Captura de Google Flights del 03/11/2026; sin reservar. Comparación alternativa Lufthansa $17,382 MXN, no sumada."
+    },
+    {
+      "id": "lodging-lucerna",
+      "category": "lodging",
+      "hotelId": "lucerna-ibis",
+      "concept": "Lucerna · 1 noche",
+      "date": "2027-01-23",
+      "nights": 1,
+      "cost": {
+        "amount": 2500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Objetivo, no cotizado."
+    },
+    {
+      "id": "lodging-grindelwald",
+      "category": "lodging",
+      "hotelId": "grindelwald-tschuggen",
+      "concept": "Grindelwald · 4 noches",
+      "date": "2027-01-24",
+      "nights": 4,
+      "cost": {
+        "amount": 10500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Objetivo, no cotizado."
+    },
+    {
+      "id": "lodging-zermatt",
+      "category": "lodging",
+      "hotelId": "zermatt-testa",
+      "concept": "Zermatt · 3 noches",
+      "date": "2027-01-28",
+      "nights": 3,
+      "cost": {
+        "amount": 12500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Objetivo, no cotizado."
+    },
+    {
+      "id": "lodging-zurich",
+      "category": "lodging",
+      "hotelId": "zurich-fred",
+      "concept": "Zúrich · 2 noches",
+      "date": "2027-01-31",
+      "nights": 2,
+      "cost": {
+        "amount": 6250,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Objetivo, no cotizado."
+    },
+    {
+      "id": "rail-budget",
+      "category": "transport",
+      "concept": "Trenes, movilidad urbana y pase seleccionado",
+      "date": "2027-01-23",
+      "cost": {
+        "amount": 10000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Incluye solamente una estrategia de pase y los billetes no cubiertos. No sumar pases candidatos adicionales."
+    },
+    {
+      "id": "attractions-budget",
+      "category": "activities",
+      "concept": "Excursiones de montaña y entrada Lindt",
+      "date": "2027-01-25",
+      "cost": {
+        "amount": 6500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Incluye provisión para Gornergrat, First y entradas opcionales; verificar pases y evitar duplicar remontes ya cubiertos."
+    },
+    {
+      "id": "meals-budget",
+      "category": "food",
+      "concept": "Alimentación",
+      "date": "2027-01-23",
+      "cost": {
+        "amount": 9000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Comida durante el viaje, con desayunos de hotel cuando estén incluidos."
+    },
+    {
+      "id": "reserve-budget",
+      "category": "other",
+      "concept": "Seguro, tasas, equipaje y margen de imprevistos",
+      "date": "2027-01-22",
+      "cost": {
+        "amount": 4400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión, no contratación confirmada."
+    }
+  ],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "MEX ↔ ZRH · alternativas sin reservar",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Aeroméxico + Air Europa / Air France",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "ZRH",
+                  "departure": "2027-01-22T11:25:00-06:00",
+                  "arrival": "2027-01-23T10:00:00+01:00",
+                  "operator": "Aeroméxico / Air Europa",
+                  "notes": "Escala MAD 2 h 40 min; validar protección."
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "ZRH",
+                  "to": "MEX",
+                  "departure": "2027-02-02T18:50:00+01:00",
+                  "arrival": "2027-02-03T04:20:00-06:00",
+                  "operator": "Air France / Aeroméxico",
+                  "notes": "Escala CDG 2 h 45 min; validar protección."
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Cotización referencial del 03/11/2026 · sin comprar",
+              "price": {
+                "amount": 20331,
+                "currency": "MXN"
+              }
+            }
+          ],
+          "quotedAt": "2026-11-03",
+          "notes": "Ida y vuelta completo; equipaje, tarifa final y billetes protegidos pendientes."
+        },
+        {
+          "id": "B",
+          "provider": "Lufthansa vía Fráncfort / Múnich",
+          "status": "quoted",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "ZRH",
+                  "departure": "2027-01-22T21:00:00-06:00",
+                  "arrival": "2027-01-23T19:00:00+01:00",
+                  "operator": "Lufthansa",
+                  "notes": "Escala FRA 3 h 20 min."
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "ZRH",
+                  "to": "MEX",
+                  "departure": "2027-02-02T09:25:00+01:00",
+                  "arrival": "2027-02-02T18:20:00-06:00",
+                  "operator": "Lufthansa",
+                  "notes": "Escala MUC 2 h 15 min."
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Cotización referencial del 03/11/2026 · sin comprar",
+              "price": {
+                "amount": 17382,
+                "currency": "MXN"
+              }
+            }
+          ],
+          "quotedAt": "2026-11-03",
+          "notes": "Alternativa más barata; menos tiempo aprovechable el día de llegada y regreso."
+        }
+      ],
+      "links": [
+        {
+          "label": "Búsqueda de vuelos",
+          "url": "https://www.google.com/travel/flights"
+        }
+      ]
+    },
+    {
+      "id": "airport-arrival",
+      "type": "train",
+      "title": "Zürich Flughafen → Luzern Bahnhof",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "SBB",
+          "status": "estimated",
+          "notes": "Aprox. 1 h 10 min; confirmar frecuencia, precio y hora tras migración.",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Zürich Flughafen",
+                  "to": "Luzern Bahnhof",
+                  "operator": "SBB"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "SBB oficial",
+          "url": "https://www.sbb.ch/en"
+        }
+      ]
+    },
+    {
+      "id": "airport-return",
+      "type": "train",
+      "title": "Zürich HB → Zürich Flughafen",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "SBB",
+          "status": "estimated",
+          "notes": "Aprox. 10–15 min; comprar billete válido y salir con margen.",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Zürich HB",
+                  "to": "Zürich Flughafen",
+                  "operator": "SBB"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "SBB oficial",
+          "url": "https://www.sbb.ch/en"
+        }
+      ]
+    }
+  ],
+  "ticketNotes": [],
+  "attractionTerms": [],
+  "cover": null,
+  "mapPoints": [
+    {
+      "name": "Zúrich",
+      "coords": [
+        47.3769,
+        8.5417
+      ],
+      "kind": "Aeropuerto y visita urbana",
+      "base": true,
+      "order": 4
+    },
+    {
+      "name": "Lucerna",
+      "coords": [
+        47.0502,
+        8.3093
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "order": 1
+    },
+    {
+      "name": "Grindelwald",
+      "coords": [
+        46.6242,
+        8.0414
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "order": 2
+    },
+    {
+      "name": "Lauterbrunnen",
+      "coords": [
+        46.5935,
+        7.9086
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "order": 5
+    },
+    {
+      "name": "Wengen",
+      "coords": [
+        46.6054,
+        7.9217
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Mürren",
+      "coords": [
+        46.5594,
+        7.8927
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "order": 7
+    },
+    {
+      "name": "Zermatt",
+      "coords": [
+        46.0207,
+        7.7491
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "order": 3
+    }
+  ],
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Ninguna reserva ni entrada ha sido comprada. Distinguir tarifa observada en noviembre 2026 de cotización verificable para enero 2027."
+  },
+  "lodgingSummary": "10 noches, 4 alojamientos: Lucerna 1, Grindelwald 4, Zermatt 3 y Zúrich 2. Habitaciones privadas con baño propio, todos candidatos sin reservar.",
+  "heroLodgingSummary": "10 noches · 4 alojamientos",
+  "budgetPreliminary": true,
+  "hotels": [
+    {
+      "id": "lucerna-ibis",
+      "city": "Lucerna",
+      "name": "ibis budget Luzern City",
+      "address": "Kellerstrasse 6, 6005 Luzern, Suiza",
+      "checkIn": "2027-01-23",
+      "checkOut": "2027-01-24",
+      "status": "Candidato · no reservado",
+      "rate": "Presupuesto objetivo de 1 noche: $2,000–$3,000 MXN; sin cotización final para la fecha.",
+      "rateConditions": "Confirmar habitación individual con baño privado, check-in y cancelación.",
+      "notes": "Alojamiento práctico; consultar distancia a la estación y posibilidad de dejar equipaje.",
+      "links": [
+        {
+          "label": "Sitio oficial Accor",
+          "url": "https://all.accor.com/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ibis%20budget%20Luzern%20City%20Switzerland"
+    },
+    {
+      "id": "grindelwald-tschuggen",
+      "city": "Grindelwald",
+      "name": "Hotel Tschuggen",
+      "address": "Dorfstrasse 134, 3818 Grindelwald, Suiza",
+      "checkIn": "2027-01-24",
+      "checkOut": "2027-01-28",
+      "status": "Candidato principal · no reservado",
+      "rate": "Presupuesto objetivo por 4 noches: $9,000–$12,000 MXN. Referencias desde CHF 95 (≈ $2,181 MXN) para fechas distintas, no cotización enero 2027.",
+      "rateConditions": "Elegir exclusivamente habitación con baño privado y comprobar desayuno y cancelación.",
+      "notes": "Ubicación céntrica próxima a estación. El hotel puede carecer de elevador; comprobar planta de la habitación.",
+      "links": [
+        {
+          "label": "Hotel oficial",
+          "url": "https://www.tschuggen-grindelwald.ch/en/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Tschuggen%20Grindelwald%20Switzerland"
+    },
+    {
+      "id": "zermatt-testa",
+      "city": "Zermatt",
+      "name": "Hotel Testa Grigia",
+      "address": "Bahnhofstrasse 21, 3920 Zermatt, Suiza",
+      "checkIn": "2027-01-28",
+      "checkOut": "2027-01-31",
+      "status": "Candidato principal · no reservado",
+      "rate": "Presupuesto objetivo por 3 noches: $10,500–$14,000 MXN. Referencia desde CHF 150 (≈ $3,444 MXN) por noche para otras fechas.",
+      "rateConditions": "Verificar habitación privada, desayuno, plazo de cancelación e impuestos locales.",
+      "notes": "Muy cerca de la estación. Confirmar horario de check-in del día de llegada.",
+      "links": [
+        {
+          "label": "Reserva oficial",
+          "url": "https://www.hotel-testa-grigia.ch/en/book-a-room/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Testa%20Grigia%20Zermatt%20Switzerland"
+    },
+    {
+      "id": "zurich-fred",
+      "city": "Zúrich",
+      "name": "Fred Guest House Zürich Hauptbahnhof",
+      "address": "Limmatstrasse 5, 8005 Zürich, Suiza",
+      "checkIn": "2027-01-31",
+      "checkOut": "2027-02-02",
+      "status": "Candidato · no reservado",
+      "rate": "Presupuesto objetivo por 2 noches: $5,000–$7,500 MXN; sin cotización final.",
+      "rateConditions": "Confirmar check-in autónomo/asistido, baño privado, cancelación y tasas.",
+      "notes": "Cerca de Zürich HB; acceso práctico al casco antiguo, Lindt y aeropuerto.",
+      "links": [
+        {
+          "label": "Sitio oficial",
+          "url": "https://www.fredhotels.ch/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fred%20Guest%20House%20Z%C3%BCrich%20Hauptbahnhof%20Switzerland"
+    }
+  ],
+  "stays": [],
+  "seasonality": {
+    "summary": "Las fechas de enero favorecen nieve en destinos alpinos altos, no en ciudades bajas. Para una alternativa verde, junio y septiembre ofrecen mejor acceso a senderos y vistas de praderas; no mezclar actividades de ambas temporadas.",
+    "months": {
+      "10": {
+        "status": "conditional",
+        "description": "Otoño y posibles primeras nevadas en altura; cierres progresivos y vacaciones escolares regionales."
+      },
+      "11": {
+        "status": "avoid",
+        "description": "Entremeses de mantenimiento entre verano y nieve, menos remontes abiertos y poca luz."
+      },
+      "12": {
+        "status": "conditional",
+        "description": "Invierno emergente y mercados festivos; Navidad y Año Nuevo encarecen alojamientos."
+      },
+      "01": {
+        "status": "recommended",
+        "description": "Invierno alpino; alta probabilidad de nieve en pueblos de altura, días breves y demanda de esquí. Zúrich puede no tener nieve."
+      },
+      "02": {
+        "status": "recommended",
+        "description": "Nieve habitual en altura, temperaturas frías; vacaciones de esquí elevan precios y afluencia."
+      },
+      "03": {
+        "status": "recommended",
+        "description": "Nieve en alta montaña y más luz; pueblos bajos pueden perder su cubierta blanca."
+      },
+      "04": {
+        "status": "conditional",
+        "description": "Transición de invierno a primavera, nieve en cumbres y cierres de temporada en algunos remontes."
+      },
+      "05": {
+        "status": "conditional",
+        "description": "Cascadas y valles verdes; nieve residual y senderos elevados no siempre transitables."
+      },
+      "06": {
+        "status": "recommended",
+        "description": "Cascadas abundantes, praderas verdes y luz extensa; algunos senderos altos pueden seguir con nieve."
+      },
+      "07": {
+        "status": "conditional",
+        "description": "Senderismo alpino con buena accesibilidad, pero temporada alta y mayor precio."
+      },
+      "08": {
+        "status": "conditional",
+        "description": "Acceso estival amplio, alta ocupación y precios elevados, especialmente hasta mediados de mes."
+      },
+      "09": {
+        "status": "recommended",
+        "description": "Senderismo, clima más fresco y menor afluencia que agosto; buenas vistas con tiempo variable."
+      }
+    }
+  },
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "text": "Trenes panorámicos, pueblos alpinos y visitas culturales; sin deportes invernales, con flexibilidad meteorológica.",
+      "badge": "Moderado · nieve",
+      "tone": "blue"
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "text": "Alemán suizo predominante en ruta, con francés e italiano como idiomas oficiales regionales. Inglés ampliamente útil en transporte y hoteles. Pagar principalmente con tarjeta; conservar CHF para gastos pequeños.",
+      "badge": "Alemán · CHF",
+      "tone": "blue"
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y electricidad",
+      "text": "Revisar reglas Schengen vigentes para mexicanos, pasaporte y seguros. Suiza utiliza principalmente enchufes J, 230 V y 50 Hz; desde México (A/B) llevar adaptador de entrada A/B a salida J, con toma de tierra cuando corresponda. Un adaptador no transforma voltaje; comprobar cargadores INPUT 100–240 V.",
+      "badge": "Suiza · tipo J",
+      "tone": "orange"
+    },
+    {
+      "id": "weather",
+      "title": "Clima y luz",
+      "text": "Enero: frío y atardecer temprano; capas térmicas, calzado impermeable con suela adherente y guantes. Webcams y operación se verifican a diario.",
+      "badge": "Invierno alpino",
+      "tone": "blue"
+    }
+  ],
+  "tips": [
+    "Monte Rigi opcional, no fija ni justifica días adicionales.",
+    "No confundir viajes del archivo de ideas con compras o compromisos.",
+    "Alternativa Suiza verde se desarrollará de manera independiente.",
+    "Nada comprado. Comprobar tarifas y clima antes de reservar."
+  ],
+  "sources": [
+    [
+      "SBB · trenes y billetes",
+      "https://www.sbb.ch/en"
+    ],
+    [
+      "Jungfrau · horarios y operación",
+      "https://www.jungfrau.ch/en-gb/live/operating-info/"
+    ],
+    [
+      "Gornergrat · horarios",
+      "https://www.gornergrat.ch/en/pages/timetable-gornergrat-bahn"
+    ],
+    [
+      "Lindt Home of Chocolate",
+      "https://www.lindt-home-of-chocolate.com/en/"
+    ],
+    [
+      "Rigi · horarios",
+      "https://www.rigi.ch/en/inform/timetables"
+    ]
+  ],
+  "sourceNote": null,
+  "budgetRange": [
+    75000,
+    85000
+  ],
+  "budgetNote": "Proyección para una persona. Vuelos $20,331 + alojamiento $31,750 + transporte $10,000 + actividades $6,500 + comida $9,000 + extras $4,400 = $81,981 MXN; objetivo global $75,000–$85,000 MXN. No implica reservas confirmadas.",
+  "placeDescriptions": {},
+  "optionalSection": null,
+  "family": null,
+  "layoutClass": null,
+  "formatName": false,
+  "routeHighlights": [],
+  "cardHighlights": [],
+  "introHighlights": [
+    "Lucerna",
+    "Grindelwald",
+    "Wengen",
+    "Lauterbrunnen",
+    "Mürren",
+    "Zermatt",
+    "Gornergrat",
+    "Matterhorn",
+    "Zúrich",
+    "Lindt Home of Chocolate"
+  ],
+  "boldCityNames": false,
+  "emphasisStyle": false,
+  "linkRailInText": false,
+  "knownCosts": [],
+  "costExclusions": "Excursiones y remontes adicionales que excedan provisión, cambios de vuelo, compras personales y diferencias de tarifa. Pases alternativos y vuelos de comparación no se suman.",
+  "exchangeNote": null,
+  "railSummary": [],
+  "railTotal": null,
+  "railExclusions": null,
+  "railCurrencyNote": null,
+  "heroEyebrow": "DE LUCERNA AL MATTERHORN · ENTRE TRENES Y PUEBLOS NEVADOS",
+  "travelerCount": 1
+}
