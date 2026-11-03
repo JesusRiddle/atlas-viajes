@@ -131,6 +131,10 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 
 - [ ] En viajes nuevos la tarjeta «Clima y luz» tiene el encabezado COMPLETO coloreado, no solo un borde; muestra la etiqueta del estado y utiliza `pending` / «Por definir» cuando aún no se conoce la fecha. Comprobar los cuatro estados y que el CSS esté limitado al formato nuevo.
 
+## Integridad visible del presupuesto
+- [ ] Para cada `expenses[].category` con costo estimado o cotizado, verificar que exista renglón visible en «Lo que cuesta el viaje» y que el total coincida; **no basta con que la partida sume internamente**. En particular, `transport` es provisión global pendiente de separar entre interurbano y urbano, no una categoría que se oculte.
+- [ ] Mostrar supuestos y sensibilidad del rango cuando haya gastos esenciales sin cotización. Probar el desglose en Desktop/Mobile, incluyendo el importe de movilidad, y distinguir meta presupuestaria de tarifa reservable.
+
 ## Comprobación de personas presupuestadas
 - [ ] Viajes nuevos: `travelerCount` declarado como entero positivo o `null` si está por definir.
 - [ ] Inicio y tabla comparativa muestran «Personas» usando el dato real; nunca inferir 1 desde `profile.solo` ni presentar `false`.
