@@ -30,10 +30,10 @@ test('Patagonia: costos estimados coherentes y referencias históricas explícit
   assert.ok(trip.budgetPreliminary && typeof trip.budgetPreliminary === 'object');
   assert.equal(trip.travelerCount, 2);
   assert.equal(trip.work, 10);
-  assert.equal(trip.expenses.reduce((sum, x) => sum + x.cost.amount, 0), 144648);
+  assert.equal(trip.expenses.reduce((sum, x) => sum + x.cost.amount, 0), 144948);
   assert.equal(trip.expenses.find(x => x.id === 'flight-international').cost.amount, 24398);
   assert.equal(trip.expenses.find(x => x.id === 'flight-domestic').cost.amount, 23250);
-  assert.ok(trip.budgetRange[0] <= 144648 && 144648 <= trip.budgetRange[1]);
+  assert.ok(trip.budgetRange[0] <= 144948 && 144948 <= trip.budgetRange[1]);
   for (const flight of trip.majorTransport.filter(x => x.type === 'flight')) {
     assert.equal(flight.selectedOption, 'A');
     assert.equal(flight.budgetIncludedIn, flight.id);
@@ -83,7 +83,7 @@ test('Patagonia: distribución presupuestaria sin partidas duplicadas', () => {
 test('Patagonia: los gastos por día coinciden con el presupuesto sin duplicarlo', () => {
   const expensesTotal = trip.expenses.reduce((sum, x) => sum + x.cost.amount, 0);
   const dailyTotal = trip.days.reduce((sum, x) => sum + x.spend, 0);
-  assert.equal(expensesTotal, 144648);
+  assert.equal(expensesTotal, 144948);
   assert.equal(dailyTotal, expensesTotal);
   assert.ok(trip.days.every(x => Number.isFinite(x.spend) && x.spend >= 0));
   for (const day of trip.days) {
@@ -110,14 +110,30 @@ test('Patagonia: los cuatro transportes renderizan y no duplican presupuesto', (
 });
 
 test('Patagonia: escenario por persona y alojamientos vinculados con el ledger', () => {
-  assert.equal(trip.budgetPreliminary.low, 137648);
-  assert.equal(trip.budgetPreliminary.high, 151648);
+  assert.equal(trip.budgetPreliminary.low, 137948);
+  assert.equal(trip.budgetPreliminary.high, 151948);
   assert.equal(trip.budgetPreliminary.referenceFlightMXN, 24398);
-  assert.equal(trip.budgetPreliminary.low / trip.travelerCount, 68824);
-  assert.equal(trip.budgetPreliminary.high / trip.travelerCount, 75824);
+  assert.equal(trip.budgetPreliminary.low / trip.travelerCount, 68974);
+  assert.equal(trip.budgetPreliminary.high / trip.travelerCount, 75974);
   for (const hotel of trip.hotels) assert.ok(trip.expenses.some(e => e.hotelId === hotel.id));
   for (const transport of trip.majorTransport) {
     const expense = trip.expenses.find(e => e.id === transport.budgetIncludedIn);
     assert.ok(expense, 'Cobertura de transporte faltante: ' + transport.id);
   }
+});
+
+test('Patagonia: tipo de cambio fechado y escenarios de autobús sin doble conteo', () => {
+  assert.equal(trip.exchangeRates.ARS, 0.012);
+  assert.equal(trip.exchangeRateSnapshot.date, '2026-11-02');
+  const buses = trip.majorTransport.filter(x => x.type === 'bus');
+  assert.equal(buses.length, 2);
+  for (const bus of buses) {
+    assert.equal(bus.options.length, 2);
+    assert.ok(bus.options.every(o => o.fares[0]?.price?.currency === 'MXN'));
+    assert.ok(bus.options[1].fares[0].price.amount > bus.options[0].fares[0].price.amount);
+    assert.equal(trip.expenses.find(e => e.id === bus.budgetIncludedIn).cost.amount,
+      bus.options[0].fares[0].price.amount);
+  }
+  assert.equal(trip.days.reduce((sum,d)=>sum+d.spend,0),
+    trip.expenses.reduce((sum,e)=>sum+e.cost.amount,0));
 });
