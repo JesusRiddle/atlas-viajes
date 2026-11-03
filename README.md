@@ -4,7 +4,7 @@ Sitio de itinerarios y presupuestos: **https://jesusriddle.github.io/atlas-viaje
 
 ## Crear un viaje nuevo
 
-Crear un borrador vacío desde la raíz del repositorio:
+Crear un viaje visible desde el primer registro, aunque todavía esté incompleto:
 
 ```bash
 node scripts/new-trip.cjs mi-viaje "Nombre del viaje"
