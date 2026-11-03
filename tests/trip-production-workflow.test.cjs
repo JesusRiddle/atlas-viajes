@@ -30,7 +30,7 @@ test('Atlas: guía, estándar, agente y checklist comparten el procedimiento', (
     assert.match(content, /refléjalo en el Atlas/i, name);
     assert.match(content, /00.{0,8}13/, name);
   }
-  assert.match(agent, /no.*pedir.*adelante/i);
+  assert.match(agent, /sin solicitar.*adelante/i);
   assert.match(editorial, /### 4\. Experiencias/);
   assert.match(checklist, /Auditoría/);
 });
