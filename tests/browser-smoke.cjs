@@ -138,7 +138,55 @@ const assert = require('node:assert/strict');
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
         assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
+        // Contrato editorial del Panorama: tres indicadores a la izquierda, clima separado a la derecha.
+        if (['suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
+          'japon-2027', 'patagonia-argentina-2027'].includes(id)) {
+          const indicators = page.locator('#plan .overview-intro .practical-indicator');
+          assert.equal(await indicators.count(), 3, id + ' debe tener exactamente tres indicadores');
+          const ids = await indicators.evaluateAll(nodes => nodes.map(node => node.dataset.indicatorId));
+          assert.deepEqual(ids, ['style', 'language', 'entry'], id + ' debe mantener IDs y orden');
+          const headings = await indicators.locator('strong').allInnerTexts();
+          assert.deepEqual(headings.filter(label => ['Estilo de viaje', 'Idioma y moneda',
+            'Documentación y consejos prácticos', 'Documentación y electricidad'].includes(label)),
+            ['Estilo de viaje', 'Idioma y moneda', 'Documentación y consejos prácticos'],
+            id + ' nombres de indicadores');
+          const climate = page.locator('#plan .overview-side .overview-climate-card');
+          assert.equal(await climate.count(), 1, id + ' debe mostrar un clima separado en columna derecha');
+          assert.equal(await page.locator('#plan .overview-intro .overview-climate-card').count(), 0,
+            id + ' no debe mezclar clima con indicadores');
+          const region = await page.locator('#plan').evaluate(root => {
+            const left = root.querySelector('.overview-intro').getBoundingClientRect();
+            const right = root.querySelector('.overview-side').getBoundingClientRect();
+            const climate = root.querySelector('.overview-side .overview-climate-card').getBoundingClientRect();
+            const budget = root.querySelector('.overview-side .budget-teaser').getBoundingClientRect();
+            return {left:{x:left.x,y:left.y,w:left.width,h:left.height},
+              right:{x:right.x,y:right.y,w:right.width,h:right.height},
+              climate:{x:climate.x,y:climate.y}, budget:{x:budget.x,y:budget.y,h:budget.height}};
+          });
+          if (viewport.width > 800) {
+            assert.ok(region.right.x >= region.left.x + region.left.w - 8,
+              id + ' clima/presupuesto deben ubicarse a la derecha del texto');
+          } else {
+            assert.ok(region.right.y >= region.left.y,
+              id + ' móvil debe conservar el bloque de clima separado');
+          }
+          assert.ok(region.climate.y >= region.budget.y,
+            id + ' tarjeta Clima y luz debe seguir al presupuesto');
+        }
         if (id === 'suiza-nevada-2027') {
+          const swissClimate = page.locator('#plan .overview-side .overview-climate-card');
+          const swissClimateText = await swissClimate.innerText();
+          assert.match(swissClimateText, /Qué llevar:/);
+          assert.match(swissClimateText, /Horas de luz:/);
+          assert.match(swissClimateText, /08:00/);
+          assert.match(swissClimateText, /17:21/);
+          assert.ok((await swissClimate.locator('p').count()) >= 3,
+            'Suiza requiere tres párrafos diferenciados en tarjeta climática');
+          assert.ok(await swissClimate.evaluate(node => node.classList.contains('season-recommended')),
+            'El color de clima debe corresponder al estado del mes de inicio');
+          assert.match(await page.locator('#plan .budget-exchange').innerText(), /CHF/);
+          assert.equal(await page.locator('#plan .budget-exchange a').count(), 1,
+            'CHF debe tener fuente enlazada en el Panorama');
           assert.equal(await page.locator('#traslados .mt-card').count(), 6,
             'Suiza debe mostrar vuelo, aeropuerto y tres trenes interurbanos sin error');
           assert.equal(await page.locator('#dias details.day').count(), 12,
