@@ -100,7 +100,8 @@
       "mobility": "*Recoleta → Centro y Palermo:* recorridos a pie por sectores y transporte urbano/taxi entre barrios. Confirmar horarios de Teatro Colón antes de organizar el recorrido.",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. • No te pierdas: Salón Dorado del Teatro Colón, espacio monumental inspirado en los grandes teatros europeos; confirmar las salas incluidas en la visita guiada.",
       "places": [
-        "pat27-teatro"
+        "pat27-teatro",
+        "pat27-obelisco"
       ],
       "headerPlaces": [],
       "spend": 2000,
@@ -244,10 +245,11 @@
       "am": "Traslado al Parque Nacional Los Glaciares con operador autorizado de Minitrekking; confirmar inclusión de pasarelas y duración.",
       "pm": "Navegación por Lago Rico y caminata con crampones según la modalidad y requisitos físicos contratados; panorámicas del Perito Moreno.",
       "night": "Regreso al hotel, cena y descanso. No programar otra excursión exigente.",
-      "mobility": "*Hotel → Parque Nacional Los Glaciares:* traslado de excursión Minitrekking solo si está incluido en tarifa; verificar punto de encuentro. Acceso a pasarelas sujeto a itinerario contratado.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. • No te pierdas: distintas vistas de la cara sur del Perito Moreno desde las pasarelas; los desprendimientos de hielo son impredecibles y no deben prometerse.",
+      "mobility": "*Hotel → Parque Nacional Los Glaciares:* traslado de excursión Minitrekking solo si está incluido en tarifa; verificar punto de encuentro. Acceso a pasarelas sujeto a itinerario contratado. El traslado de Hielo & Aventura es opcional según la modalidad; verificar precio adicional y condiciones de pasarelas antes de reservar.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. • No te pierdas: distintas vistas de la cara sur del Perito Moreno desde las pasarelas; los desprendimientos de hielo son impredecibles y no deben prometerse. • Minitrekking: Hielo & Aventura informa traslado opcional, pasarelas y restricciones de participación. Confirmar tarifa final e inclusiones para la fecha real; la documentación de un operador no sustituye el seguro ni la evaluación física.",
       "places": [
-        "pat27-perito"
+        "pat27-perito",
+        "pat27-calafate"
       ],
       "headerPlaces": [
         "Glaciar Perito Moreno",
@@ -266,8 +268,8 @@
       "am": "Salida temprana hacia Puerto Punta Bandera de acuerdo con la empresa de navegación.",
       "pm": "Todo Glaciares: recorrer Lago Argentino, Canal Upsala y sector Spegazzini; descenso a base/refugio solo si está incluido y operativo.",
       "night": "Regreso a El Calafate y cena. Itinerario sujeto a hielo, viento y operatividad.",
-      "mobility": "*El Calafate → Puerto Punta Bandera:* traslado contratado o separado según paquete Todo Glaciares; navegación y regreso según operador.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. Fotografía del glaciar Spegazzini pendiente de validar; no sustituirla por Perito Moreno porque son excursiones diferentes.",
+      "mobility": "Traslado El Calafate ↔ Puerto Punta Bandera: la tarifa base de Todo Glaciares no incluye transporte hotel–puerto; elegir opcional del operador o gestionar viaje por separado. Confirmar embarque y llegada anticipada. Entrada al Parque Nacional Los Glaciares tampoco está incluida. Fuente: https://turismocalafate.com/excursiones/todo-glaciares/ (consulta 2026).",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. Fotografía del glaciar Spegazzini pendiente de validar; no sustituirla por Perito Moreno porque son excursiones diferentes. • Todo Glaciares: el operador describe desembarco en Base Spegazzini; el traslado hotel–puerto, entrada al parque y comida no están incluidos en la tarifa base. Si se contratan como extras, ajustar partidas de transporte y accesos, no asumir su inclusión.",
       "places": [
         "pat27-spegazzini"
       ],
@@ -350,6 +352,7 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. • No te pierdas: las fachadas de conventillos de Caminito, parte de la memoria migratoria del barrio de La Boca. San Telmo conserva su antiguo mercado y arquitectura de distintas épocas. • No te pierdas: Puente de la Mujer de Santiago Calatrava, la obra de referencia en Puerto Madero.",
       "places": [
         "pat27-caminito",
+        "pat27-san-telmo",
         "pat27-puente"
       ],
       "headerPlaces": [],
@@ -1468,7 +1471,7 @@
       "url": "https://elchalten.tur.ar/omnibus/"
     }
   ],
-  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras. Las imágenes enlazadas por URL remota son referencias editoriales pendientes de validación HTTP individual y revisión visual del viaje; pasar CI no verifica el contenido de las fotografías. Estimación de PTO: 10 días laborales de lunes a viernes entre 4 y 18 noviembre 2027, descontando el descanso obligatorio de México del lunes 15 de noviembre (tercer lunes). Confirmar calendario de la empresa.",
+  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras. Las imágenes enlazadas por URL remota son referencias editoriales pendientes de validación HTTP individual y revisión visual del viaje; pasar CI no verifica el contenido de las fotografías. Estimación de PTO: 10 días laborales de lunes a viernes entre 4 y 18 noviembre 2027, descontando el descanso obligatorio de México del lunes 15 de noviembre (tercer lunes). Confirmar calendario de la empresa. Referencias de operadores consultadas el 02/11/2026: https://turismocalafate.com/excursiones/todo-glaciares/ y https://hieloyaventura.com/ .",
   "budgetRange": [
     137648,
     151648
@@ -1487,7 +1490,9 @@
     "pat27-floralis": "Floralis Genérica · escultura de Eduardo Catalano junto a la Facultad de Derecho; visita exterior si el horario de llegada lo permite.",
     "pat27-capri": "Laguna Capri · panorámica accesible desde los senderos de El Chaltén, una alternativa más corta para disfrutar del macizo Fitz Roy.",
     "pat27-torre": "Laguna Torre (opcional) · caminata larga con vistas de Cerro Torre, solo si se dispone de energía, tiempo y clima seguros.",
-    "pat27-puente": "Puente de la Mujer · obra peatonal de Santiago Calatrava sobre los diques de Puerto Madero, cierre arquitectónico del recorrido porteño."
+    "pat27-puente": "Puente de la Mujer · obra peatonal de Santiago Calatrava sobre los diques de Puerto Madero, cierre arquitectónico del recorrido porteño.",
+    "pat27-obelisco": "Obelisco de Buenos Aires · emblema urbano de la avenida 9 de Julio, a poca distancia del Teatro Colón.",
+    "pat27-san-telmo": "Mercado de San Telmo · encuentro de arquitectura histórica, gastronomía y comercio tradicional del barrio."
   },
   "optionalSection": null,
   "family": null,
