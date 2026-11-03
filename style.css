@@ -818,6 +818,21 @@ em.atlas-place{font-family:inherit;font-size:inherit;line-height:inherit}.rail-t
 #traslados .mt-details .entity-links{padding-top:5px}
 @media(max-width:540px){.entity-links{gap:6px}.entity-links a{font-size:12px;padding:7px 9px}}
 
+/* El acceso a Inicio aparece solo cuando la navegación del viaje se fija arriba. */
+.subnav-sticky-sentinel{display:block;height:1px;margin-bottom:-1px;pointer-events:none}
+.subnav .subnav-home{display:none;flex:none;align-items:center;gap:7px;padding:0 12px 0 0;text-decoration:none;border-right:1px solid var(--line);color:var(--ink)}
+.subnav.is-stuck .subnav-home{display:inline-flex}
+.subnav .subnav-home .brand-icon{width:30px;height:30px;flex:0 0 30px;display:grid;place-items:center;border-radius:50%;background:var(--ink);color:var(--gold);font-family:var(--serif);font-size:22px;line-height:1}
+.subnav .subnav-home-wordmark{display:flex;flex-direction:column;font-size:12px;font-weight:800;line-height:1.05;letter-spacing:1.2px}
+.subnav .subnav-home-wordmark small{font-size:9px;font-weight:400;letter-spacing:.45px;margin-top:3px}
+.subnav .subnav-home:focus-visible{outline:3px solid #dc5c2e;outline-offset:2px;border-radius:4px}
+@media(max-width:680px){
+  .subnav .subnav-home{padding-right:9px}
+  .subnav .subnav-home .brand-icon{width:29px;height:29px;flex-basis:29px;font-size:21px}
+  .subnav .subnav-home-wordmark{display:none}
+}
+@media print{.subnav-sticky-sentinel{display:none}}
+
 /* Navegación compacta y hero editorial (Desktop / Mobile). */
 body>header{height:56px;min-height:56px;padding-block:4px}
 body>header .brand-icon{width:36px;height:36px;flex:0 0 36px;display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1;padding:0 0 2px}
