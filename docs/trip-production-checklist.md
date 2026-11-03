@@ -17,6 +17,19 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 - [ ] Verificar que la tarjeta de inicio renderiza `introShort` completo y la sección Panorama sigue mostrando `intro`, también en móvil.
 - [ ] En borradores mínimos ambos campos pueden permanecer `null`; el editor debe completarlos antes de publicar.
 
+## Checklist operativo por etapas y auditorías
+
+**Fuente de verdad del avance:** `docs/trip-progress/<slug>.md` generado desde [la plantilla de progreso](trip-progress-template.md). La orden «refléjalo en el Atlas» desencadena la ejecución autónoma de **00–13** sin microaprobaciones; mantener la ruta y los gastos en su JSON, nunca en el archivo de progreso.
+
+| Auditoría | Al concluir | Comprobar antes de seguir |
+| --- | --- | --- |
+| **A · Logística** | **03** | Días, noches, ciudades, vuelos, `travelerCount`, reservas condicionantes |
+| **B · Editorial** | **07** | Panorama, mapa, temporadas y experiencias mutuamente consistentes |
+| **C · Servicios** | **10** | Reservaciones, transporte, hoteles y referencias diarias compatibles |
+| **D · Integral** | **13** | Día por día, presupuesto, fotos, portada, nueve secciones, enlaces, Node y navegador cuando disponible |
+
+Para cada paso escribir **verificado / en curso / pendiente / bloqueado** con evidencia (fuente, archivo, commit o prueba) y la siguiente acción. Si una auditoría falla, corregir sus dependencias y revalidar, sin pedir «adelante» para seguir. Agrupar trabajo y decisiones: solo elevar al usuario cambios de ruta, gastos relevantes, conflictos de preferencias o aprobación de merge. Registrar expresamente las verificaciones imposibles y los precios/horarios pendientes de 2027, que son no bloqueantes en una estimación a alto nivel. No prometer trabajo asíncrono.
+
 ## Trabajo por lotes (evitar microfases)
 1. **Bloque A · Logística completa:** obtener/verificar de una vez todas las alternativas de tren, autobús, vuelo y transbordos. Los enlaces no protegidos o ajustados requieren márgenes explícitos (preferentemente >=20 minutos en cambios de tren, salvo justificación y confirmación). Registrar fuentes oficiales, fecha de referencia, estaciones exactas y opciones válidas de respaldo.
 2. **Bloque B · Contenido y coherencia:** redactar los días en conjunto, comparar secuencia, duración, apertura de museos, hoteles, pausas y traslados. No introducir duplicados entre texto libre y datos estructurados.
