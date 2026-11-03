@@ -98,6 +98,12 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 ## Comunicación con el usuario
 Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados, resultados verificables, pendientes que requieren datos externos y decisión requerida. No pedir al usuario revisar pantalla por pantalla salvo anomalías realmente imposibles de probar. Evitar prometer que «todo está probado» si no se ejecutó la comprobación completa.
 
+## Control cruzado de pases, tarifas y renderizado
+- [ ] Para cada precio verificar **qué producto** compra: tren simple, retorno, pase regional, paquete de invierno con equipo, suplemento de montaña, asiento opcional; tarifas de productos distintos no se sustituyen.
+- [ ] La sección Movilidad presenta en el DOM la comparación `railSummary` cuando exista; inspeccionar el texto después de abrir el desplegable de comparación en Desktop/Mobile, no basta comprobar que existe el JSON o el elemento cerrado.
+- [ ] Billetes ferroviarios con fecha futura no consultada conservan `price: null`; las tarifas antiguas son referencias fechadas y los puntos de equilibrio son escenarios matemáticos, nunca cotizaciones.
+- [ ] Comprobar que `budgetNote`, `expenses` y fuentes oficiales concuerdan; mostrar el riesgo de insuficiencia del fondo ferroviario sin inflar pagos confirmados ni duplicar pases.
+
 ## Control de divisas y presentación monetaria
 - [ ] Solo en viajes del formato nuevo: todo importe en moneda extranjera lleva inmediatamente la equivalencia `(... ≈ $X MXN)` en cada sección y tarjeta donde aparece, incluidos días, transportes, reservas, hoteles y gastos.
 - [ ] Los tipos de cambio tienen fuente y fecha, y las conversiones usan los snapshots de cada viaje cuando estén disponibles.
