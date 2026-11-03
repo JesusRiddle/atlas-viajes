@@ -7,8 +7,8 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Rama / PR:** feature/suiza-2027 · https://github.com/JesusRiddle/atlas-viajes/pull/9  
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
-**Etapa actual:** 13 · Auditoría D, regresiones corregidas y nuevo CI pendiente  
-**Siguiente acción autónoma:** Confirmar nuevo resultado CI tras actualizar tests de orden de portada, verificar Chrome Desktop/Mobile y corregir fallos restantes  
+**Etapa actual:** 13 · Auditoría D automatizada aprobada; revisión final de fotografías externas pendiente  
+**Siguiente acción autónoma:** Verificar visualmente fotografías y textos de Suiza en la vista previa del PR; actualizar links externos rotos si se detectan  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -62,7 +62,7 @@ El **orden de producción** se organiza de lo más independiente a lo más depen
 | 00–03 (Auditoría A) | Verificado a nivel de datos | 12 fechas consecutivas, 10 noches (1+4+3+2), ruta consistente | Revalidar horarios ferroviarios de 2027 |
 | 04–08 (Auditoría B) | Verificado a nivel de estructura | 4 hoteles, 3 grupos de reservas, mapa, 7 fotografías nuevas con fuente/licencia | Comprobar imágenes en navegador y enlaces externos |
 | 09–11 (Auditoría C) | Verificado a nivel de datos | 12 jornadas, 17 apariciones fotográficas, MXN 81,981, viajero 1 | Tarifa de hoteles y pases sin cotización exacta 2027 |
-| 12–13 (Auditoría D) | En curso | Portada invernal primera en `modules.js`; PR #9 abierto; pruebas adaptadas al nuevo orden | Confirmar nuevo GitHub Actions y Chromium Desktop/Mobile |
+| 12–13 (Auditoría D) | Verificado en CI automatizado | `Atlas checks` run 41728049488: JavaScript, JSON, Node y Chromium Desktop/Mobile aprobados | Revisión humana de imágenes externas en vista previa si se desea |
 
 **Última auditoría:** 2026-11-03 · auditoría estructural por lectura directa de JSON y módulos (3 pasadas: fechas/noches, fotos/licencias/enlaces, presupuesto/aislamiento); no equivale a test Node ni navegador.  
 **Pendientes externos no bloqueantes:** <precios futuros, horarios sin publicar, fotos inaccesibles, etc.>  
@@ -101,3 +101,10 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Renderizador protegido frente a tarifas ausentes; añadida prueba de contrato `AtlasTransportModel.validateTrip` y de renderizado con datos parciales.
 - Actualizados `AGENTS.md` y `docs/trip-production-checklist.md` para exigir contrato + renderizado al cerrar movilidad y auditorías B/D.
 - **CI:** nueva ejecución `41726747667` iniciada, resultado pendiente de verificación.
+
+
+## Auditoría D · Resultado confirmado 2026-11-03
+- GitHub Actions **41728049488: SUCCESS** para commit `f85b5fca97d5768f8a82b69ca92b86e53323f4ea`: sintaxis JS, JSON, tests Node, navegador Desktop/Mobile.
+- Se actualizó `tests/browser-smoke.cjs` para 5 viajes visibles, Suiza en Viaje 01 y pruebas específicas de Suiza. Se corrigió `components/home.js` para no excluir del comparador viajes con días laborales por definir.
+- Tras revisar tres veces calendario/hoteles, inversión y contrato presupuestario, se corrigió `budgetPreliminary` con objeto válido y `majorTransport.flight-international.budgetIncludedIn = flight-budget`. Esto conserva $81,981 MXN como referencia, evita sumar dos veces el vuelo y permite la comparación de tarifas.
+- **Pendiente no bloqueante:** revisión editorial humana de las imágenes cargadas externamente, tarifas y horarios reales de 2027. Sin reservas ni merge.
