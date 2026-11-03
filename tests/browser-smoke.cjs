@@ -23,6 +23,12 @@ const assert = require('node:assert/strict');
       }));
       await page.goto('http://127.0.0.1:8765/', { waitUntil: 'domcontentloaded' });
       await page.locator('.tripcard').first().waitFor();
+      const patagoniaCard = page.locator('.tripcard[href="#viaje/patagonia-argentina-2027"]');
+      assert.equal(await patagoniaCard.count(), 1, 'La portada de Patagonia debe existir');
+      assert.ok(!(await patagoniaCard.getAttribute('class')).includes('tripcard-draft'), 'La portada no debe ser un borrador vacío');
+      const patagoniaCardText = await patagoniaCard.innerText();
+      assert.match(patagoniaCardText, /68[,.]824/, 'La portada debe mostrar escenario mínimo por persona');
+      assert.match(patagoniaCardText, /75[,.]824/, 'La portada debe mostrar escenario máximo por persona');
       for (const id of destinations) {
         await page.goto('http://127.0.0.1:8765/#viaje/' + id, { waitUntil: 'domcontentloaded' });
         await page.locator('.triphero').waitFor();
