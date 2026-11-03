@@ -182,12 +182,12 @@ window.AtlasHome = function (ctx) {
             '<div class="scrolltable comparison-scroll" tabindex="0" role="region" aria-label="Tabla comparativa de viajes; desplázate horizontalmente para ver todas las columnas">' +
             '<table class="comparison-table"><thead><tr><th scope="col">Destino</th><th scope="col">Fechas</th>' +
             '<th scope="col">Días <small>/ laborales</small></th><th scope="col">Bases</th><th scope="col">Ritmo</th>' +
-            '<th scope="col">Viajando solo</th><th scope="col">Clima</th><th scope="col">Presupuesto</th></tr></thead><tbody>' +
+            '<th scope="col" title="Número de personas contempladas en el presupuesto">Personas</th><th scope="col">Clima</th><th scope="col">Presupuesto</th></tr></thead><tbody>' +
             items.map((t, i) => '<tr><td class="comparison-destination"><a href="#viaje/' + esc(t.id) + '">' +
                 '<span class="comparison-rank">' + (i + 1) + '</span><span>' + esc(t.name) + '</span></a></td>' +
                 '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
                 ' <small>/ ' + t.work + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
-                '<td>' + esc(t.profile.pace) + '</td><td>' + esc(t.profile.solo) + '</td>' +
+                '<td>' + esc(t.profile.pace) + '</td><td class="comparison-number">' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 1) + '</td>' +
                 '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
                 ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
