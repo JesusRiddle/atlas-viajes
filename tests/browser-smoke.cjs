@@ -39,6 +39,27 @@ const assert = require('node:assert/strict');
         'El hero debe incluir el reflejo de luz discreto');
       assert.equal(heroMotion.copyAnimation, 'none', 'El texto debe permanecer inmóvil');
       assert.equal(heroMotion.lightPointerEvents, 'none', 'El reflejo no debe bloquear interacción');
+      const heroProgress = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => {
+        const photo = hero.querySelector('img');
+        const motion = photo.getAnimations().find(a => a.animationName === 'atlas-home-hero-drift');
+        const light = hero.getAnimations({subtree:false}).find(a => a.animationName === 'atlas-home-hero-light');
+        if (!motion || !light) return {active:false};
+        const initialTime = motion.currentTime;
+        motion.pause();
+        motion.currentTime = 0;
+        const begin = getComputedStyle(photo).transform;
+        motion.currentTime = 17000;
+        const end = getComputedStyle(photo).transform;
+        motion.currentTime = initialTime;
+        motion.play();
+        return {active:true, begin, end, driftDuration:motion.effect.getTiming().duration,
+          lightDuration:light.effect.getTiming().duration};
+      });
+      assert.ok(heroProgress.active, 'Las dos animaciones deben ejecutarse realmente');
+      assert.notEqual(heroProgress.begin, heroProgress.end,
+        'El desplazamiento debe cambiar la imagen, no solo declarar un nombre CSS');
+      assert.ok(heroProgress.driftDuration <= 18000 && heroProgress.lightDuration <= 13000,
+        'Los ciclos deben ser suficientemente cortos para percibirse');
       const heroCopy = page.locator('.atlas-home-hero-immersive .atlas-home-hero-copy');      await page.emulateMedia({ reducedMotion: 'reduce' });
       const staticHero = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => ({
         imageAnimation: getComputedStyle(hero.querySelector('img')).animationName,
