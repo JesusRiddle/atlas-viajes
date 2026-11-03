@@ -11,44 +11,58 @@ Copiar esta plantilla a `docs/trip-progress/<slug>.md` al comenzar una **impleme
 **Siguiente acción autónoma:** <acción precisa>  
 **Decisión que sí requiere al usuario (si existe):** <pregunta y por qué bloquea>
 
-## Checklist numerado de ejecución
+## Checklist numerado de ejecución · orden de dependencias
 
-Marcar **solo después de verificar**; nunca transformar un pendiente en éxito por haber escrito el JSON. En cada etapa anotar evidencia mínima: rutas modificadas, datos comprobados, fuente o prueba. El orden es obligatorio; permitir avanzar con datos estimados bien etiquetados cuando no bloquean el recorrido.
+El **orden de producción** se organiza de lo más independiente a lo más dependiente. **NO** es el orden de las nueve secciones en la pantalla, que permanece definido por el estándar maestro. Marcar «verificado» solo tras cotejar fuente, consistencia y dependencias; cifras de temporadas o tarifas futuras pueden ser estimaciones documentadas, no disponibilidades confirmadas.
 
-- [ ] **00 · Preparación.** Leer `AGENTS.md`, estándar, guía, contrato, checklist y plantilla; abrir rama, registrar JSON en `modules.js` y crear este archivo.
-- [ ] **01 · Calendario y restricciones.** Fechas, vuelos de entrada/salida y alternativas, festivos, `work`, duración, `travelerCount`, ritmo, supuestos y prioridades.
-- [ ] **02 · Ruta y alojamientos.** Ciudades en secuencia, excursiones y noches; `bases`, check-ins/check-outs y no retrocesos injustificados.
-- [ ] **03 · Esqueleto diario.** Un registro por fecha, ciudad, actividad esencial, traslados, dependencias y reservas imprescindibles. **Auditoría A: calendario/logística.**
-- [ ] **04 · Panorama.** `intro`, `introShort`, `introHighlights`, `practicalIndicators`, `climate`, perfil, moneda y requisitos.
-- [ ] **05 · Mapa.** `mapPoints`, coordenadas verificadas, orden y consistencia con la ruta.
-- [ ] **06 · Temporadas.** Los doce meses, clima, luz y recomendación fundamentada.
-- [ ] **07 · Experiencias.** Atractivos y gastronomía por ciudad, sin repetición ni visitas imposibles. **Auditoría B: contenido/editorial (04–07).**
-- [ ] **08 · Reservaciones importantes.** Prioridades, fechas, operadores oficiales, requisitos, alternativas y estado no confirmado.
-- [ ] **09 · Movilidad y conexiones.** Vuelos, autobuses y trenes según corresponda, itinerarios completos y alternativas reales; `transportRefs`, costos/estados y equipaje.
-- [ ] **10 · Dónde dormirás.** Alojamientos, noches, tarifa por habitación/grupo, enlaces oficiales, Maps y estados. **Auditoría C: reservas/transportes/alojamiento (08–10).**
-- [ ] **11 · Día por día.** Mañana/tarde/noche, movilidad, tips, tiempos, descansos, opcionales explícitos y fotografías URL remotas verificadas cuando correspondan.
-- [ ] **12 · Presupuesto.** `expenses`, `majorTransport`, `days[].spend` cuando aplique, rango y escenarios, tipo de cambio fechado, costo para `travelerCount`, exclusiones y sumas sin duplicaciones.
-- [ ] **13 · Integridad general y entrega.** **Auditoría D** de las nueve secciones, portada, registro en Inicio, mapa, imágenes, enlaces, suma de noches, dinero y regresiones; pruebas Node + escritorio/móvil cuando estén disponibles, correcciones, PR y reporte de pendientes. **No hacer merge sin aprobación.**
+- [ ] **00 · Preparación.** Leer `AGENTS.md`, estándar, guía, contrato y plantilla; crear rama, JSON independiente y bitácora, sin modificar viajes heredados.
+- [ ] **01 · Alcance y geografía.** Recuperar restricciones ya acordadas: países, ciudades candidatas, prioridades, tipo de viaje, `travelerCount`, duración aproximada, presupuesto objetivo y ventanas sugeridas. **No fijar todavía alojamientos ni horarios inventados.**
+- [ ] **02 · Temporadas (sección visible 3).** Investigar cada uno de los doce meses para **todos los destinos/regiones candidatos**, clima/luz, fenómenos, cierres y ocupación. Recomendar ventanas y advertir variaciones regionales; esta fase **no depende de hoteles ni tarifas**. Si el usuario ya eligió fechas, evaluarlas sin cambiarlas arbitrariamente.
+- [ ] **03 · Calendario, ruta y esqueleto diario.** Elegir/validar ventana con `work`, festivos, llegada/salida, orden de ciudades, `bases`, noches, traslados plausibles, excursiones prioritarias y `days[]` por fecha. Investigar conexiones cruciales y reservas que **podrían invalidar** la ruta antes de cerrarla; horarios y precios definitivos quedan para etapas posteriores. **Auditoría A: temporadas → fechas → ruta → noches y días compatibles.**
+- [ ] **04 · Mapa (sección visible 2).** Poblar `mapPoints`, coordenadas reales y orden tras conocer la ruta; verificar correspondencia con ciudades, alojamientos/excursiones y continuidad espacial.
+- [ ] **05 · Experiencias (sección visible 4).** Curar atractivos, excursiones opcionales y gastronomía de todas las ciudades del recorrido. Verificar pertinencia, tiempos aproximados, cierres conocidos y ausencia de repeticiones; no prometer una actividad todavía no reservada.
+- [ ] **06 · Reservaciones importantes (sección visible 5).** Priorizar experiencias que requieren fecha/cupo, entradas, operadores oficiales, criterios de cancelación y alternativas; anotar dependencias con actividades. Si una disponibilidad vuelve inviable la ruta, volver a 03 antes de seguir.
+- [ ] **07 · Movilidad y conexiones (sección visible 6).** Modelar vuelos, trenes, autobuses, aeropuertos y trasbordos; opciones reales y respaldos, ida y vuelta, condiciones, equipaje y tarifas históricas/propuestas/cotizadas claramente distinguidas. No inventar servicio futuro; vincular `transportRefs`.
+- [ ] **08 · Dónde dormirás (sección visible 7).** Proponer alojamiento por zona y fecha, validar check-in/out, `travelerCount`, noches, Maps y URLs oficiales; costos de habitación/grupo, no multiplicar. **Auditoría B: mapa, experiencias, reservas, transportes y alojamientos contra la ruta.**
+- [ ] **09 · Día por día (sección visible 8).** Completar mañana/tarde/noche, traslados puerta a puerta, tips, gastos por asignar, pausas, márgenes, opciones por clima y correspondencia de alojamientos y entradas. Verificar que el calendario operativo sostenga las experiencias.
+- [ ] **10 · Panorama (sección visible 1).** Redactar `intro`, `introShort`, `introHighlights`, `practicalIndicators`, `climate`, perfil y documentación **a partir del recorrido ya consolidado**; preparar narrativa de portada. La tarjeta de presupuesto del Panorama se **reconcilia obligatoriamente** en 11, no se rellena con costos inventados.
+- [ ] **11 · Presupuesto (sección visible 9).** **Después de vuelos, movilidad, entradas, comidas, hoteles y días**: llenar `expenses`, escenarios, categoría, estado, `exchangeRates` con fecha y `days[].spend` cuando aplique; evitar sumas duplicadas y mostrar equivalentes por persona solo con `travelerCount`. Actualizar el presupuesto del Panorama e Inicio. **Auditoría C: 09–11, costos, fechas y portadas reconciliados.**
+- [ ] **12 · Fotografías y portada.** Vincular URLs externas en `data/places.json` sin descargarlas, revisar correspondencia por lugar y opcionales, imagen de portada, `introShort`, tarjetas del Inicio y carga de imágenes cuando exista acceso; **no exigir fotos en días solo de vuelo**.
+- [ ] **13 · Auditoría integral y entrega.** **Auditoría D:** nueve secciones en **orden visual**, datos, enlaces oficiales, mapa, fotografías, presupuesto, escenarios, rutas, noches, viaje aislado, comparación y portada; Node/JSON/JS y navegador Desktop/Mobile cuando disponible; reparar fallas, documentar pendientes y abrir PR. **Jamás hacer merge, compras o borrados sin aprobación.**
+
+## Orden visual inmutable (independiente del orden de llenado)
+
+1. Panorama (`plan`) → se construye en **10**.
+2. Mapa (`mapa`) → **04**.
+3. Temporadas (`temporadas`) → **02**.
+4. Experiencias (`experiencias`) → **05**.
+5. Reservaciones importantes (`reservas`) → **06**.
+6. Movilidad y conexiones (`traslados`) → **07**.
+7. Dónde dormirás (`alojamientos`) → **08**.
+8. Día por día (`dias`) → **09**.
+9. Presupuesto (`costes`) → **11**.
 
 ## Puertas de control
 
 | Control | Tras etapas | Evidencia imprescindible | Resultado |
 | --- | --- | --- | --- |
-| A · Ruta y calendario | 01–03 | Días, noches, viajeros, fechas, trayectos y reservas compatibles | Pendiente |
-| B · Editorial y geografía | 04–07 | Panorama, mapa, temporadas y experiencias alineados | Pendiente |
-| C · Servicios | 08–10 | Reservas, tramos y noches sincronizados; tarifas con estado | Pendiente |
-| D · Integral | 11–13 | Nueve secciones, Inicio, costos, fotos, enlaces y CI Desktop/Mobile | Pendiente |
+| A · Clima y arquitectura del viaje | 01–03 | Destinos, 12 temporadas, fechas, noches, excursiones y trayectos viables | Pendiente |
+| B · Servicios y recorrido | 04–08 | Mapa, experiencias, reservas, movilidad y hoteles compatibles | Pendiente |
+| C · Itinerario y dinero | 09–11 | Jornada por jornada, narrativa, vuelos, entradas, comidas, hoteles, transportes y rango coherentes | Pendiente |
+| D · Visual y regresiones | 12–13 | Nueve secciones en orden visual, fotos, Inicio, sumas, links y CI Desktop/Mobile | Pendiente |
 
-**Regla de avance:** una auditoría fallida obliga a reparar su bloque y los bloques dependientes **antes** de cerrar el siguiente. Si falta una tarifa de 2027 o fuente no publicada, conservar estado `estimated` / `pending`, fecha de referencia y rango; no bloquear la implementación general por una cotización futura si el usuario busca una idea orientativa. Si falta una decisión que altera la ruta, detener solo la dependencia afectada e indicar el bloqueo con alternativas.
+**Dependencias y retrocesos:** las etapas se pueden investigar en paralelo cuando son independientes, pero una etapa no se marca como **verificada** hasta que sus requisitos existan. Si un dato tardío cambia la ruta, volver a 03 y revalidar las etapas afectadas. Las tarifas históricas identificadas con fuente/fecha y los supuestos explícitos bastan para **planeación general**, nunca para afirmar reservas disponibles; bloquear solo decisiones realmente irresolubles.
+
+**Cinco controles de eficiencia del orden:** (1) clima sin requerir ruta cerrada; (2) ruta y noches condicionan mapa; (3) experiencias y reservas condicionan movilidad/horarios; (4) día por día y narrativa dependen de servicios; (5) presupuesto depende de **todos** los costos y la fotografía solo de lugares definidos. La verificación final revisa que el orden de pantalla permanezca igual.
 
 ## Evidencias y pendientes
 
 | Etapa | Estado (pendiente/en curso/verificado/bloqueado) | Evidencia / commit / fuente | Pendiente o causa de bloqueo |
 | --- | --- | --- | --- |
-| 00–03 | Pendiente | — | — |
-| 04–07 | Pendiente | — | — |
-| 08–10 | Pendiente | — | — |
-| 11–13 | Pendiente | — | — |
+| 00–03 (Auditoría A) | Pendiente | — | — |
+| 04–08 (Auditoría B) | Pendiente | — | — |
+| 09–11 (Auditoría C) | Pendiente | — | — |
+| 12–13 (Auditoría D) | Pendiente | — | — |
 
 **Última auditoría:** <commit + pruebas realmente ejecutadas>  
 **Pendientes externos no bloqueantes:** <precios futuros, horarios sin publicar, fotos inaccesibles, etc.>  
