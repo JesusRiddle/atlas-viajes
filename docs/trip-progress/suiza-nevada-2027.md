@@ -8,7 +8,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
 **Etapa actual:** 13 · Auditoría D automatizada aprobada, revisión externa de fotos y tarifas pendiente  
-**Siguiente acción autónoma:** Revisar fotos externas de Suiza en la vista previa, confirmar restricciones y tarifas de 2027 y preparar revisión humana del PR sin merge  
+**Siguiente acción autónoma:** Validar visualmente fotos y añadir mirador propio para día 6; después cotizar billetes ferroviarios y rehacer comparación de pases sin sumas duplicadas  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -139,3 +139,16 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Pendientes no bloqueantes:** tarifas definitivas SBB/hoteles y boletos, comprobar imágenes externas en una sesión de usuario con red habitual, revisar respuesta visual de fotos seleccionadas. La etapa 12 no se cierra como revisada humanamente solo por aprobar CI.
 
 - **Cierre técnico final:** GitHub Actions #41731582103 concluyó **SUCCESS**: sintaxis JavaScript, validación de JSON, suite Node y pruebas de navegador Desktop/Mobile. La comprobación posterior a tonos de indicadores y reglas de Panorama queda aprobada a nivel automatizado. No equivale a confirmar visualmente cada imagen remota ni la disponibilidad futura de servicios.
+
+
+## Auditoría editorial comparada · Italia Norte 2027 · 2026-11-03
+- Se realizaron tres pasadas de revisión: (1) reglas editoriales y comparación de las nueve secciones con Italia Norte; (2) coherencia de jornada, fotografías, transporte y mapa; (3) calendario, No. de personas y conciliación económica.
+- **Temporadas:** 12 rangos indicativos de máximas diurnas, contrastando Grindelwald (pueblo) y ciudades bajas, explícitamente NO pronóstico; fuente y limitaciones en resumen. Italia ya tenía esta convención y Suiza no.
+- **Día por día:** ahora 12 fichas cumplen `• *Título:*` en `mobility` y `note`, más cabeceras descriptivas. El día de Jungfraujoch/Männlichen dejó de mostrar una foto de Wengen como si fuera del mirador.
+- **Fotos:** pies de fotos presentes, ahora de 15–30 palabras para todos los lugares usados; falta verificación editorial directa de carga, fidelidad a estación y color de recursos remotos.
+- **Experiencias:** ampliadas especialidades locales de Lucerna, Grindelwald/Oberland, Zermatt/Valais y Zúrich. `ticketNotes` elimina el apunte de seguridad de montaña, que no es billete; permanece en el itinerario.
+- **Mapa:** 11 puntos ordenados: Lucerna, Grindelwald, First, Lauterbrunnen, Wengen, Mürren, Jungfraujoch (opcional), Zermatt, Gornergrat, Zúrich y Lindt. Coordenadas de las cuatro altas nuevas contrastadas con referencias cartográficas o científicas; sin modificar viajes antiguos.
+- **Comida:** fondo de $9,000 MXN asignado a 11 días (no a una sola fecha ni al vuelo transatlántico), con status `estimated`. Total integral $81,981 MXN y noches 10 conservados; sin tarifas definitivas de hoteles/trenes.
+- **Control preventivo:** `tests/loader-regression.test.cjs` exige temperaturas mensuales, formato de tips/movilidad, textos de fotografías, mapa ordenado y partida diaria de comidas. **GitHub Actions #41733760707: SUCCESS**, con Node, validación JS/JSON y Chromium Desktop/Mobile.
+- **Estado editorial por sección:** Panorama aprobado; Mapa aprobado a nivel de datos; Temporadas aprobadas con climatología orientativa; Experiencias aprobadas en contenido base; Reservaciones completas como plan sin compras; Dónde dormir completo en candidatos, tarifas exactas pendientes; Movilidad y Presupuesto pendientes de comparativa numérica por billetes reales; Día por día consolidado con foto de mirador pendiente y horarios futuros condicionados. Fotografías/licencias pendientes de verificación visual en navegador con red externa.
+- **Siguiente paso autónomo:** auditar carga, color y pertinencia de todas las fotos de Suiza; completar fotografía representativa de Jungfraujoch/Männlichen y contrastar precios ferroviarios hasta cerrar las secciones de Movilidad y Presupuesto. No hacer merge sin autorización.
