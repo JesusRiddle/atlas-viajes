@@ -456,3 +456,26 @@ test('pie Fuentes y reservas solo se agrega en viajes heredados', () => {
     assert.match(code, /legacyAdviceTripIds\.has\(t\.id\) \? parts\.fuentes\(\) : ''/);
     assert.doesNotMatch(code, /\.join\(''\) \+ parts\.fuentes\(\)/);
 });
+
+
+test('transportes de viajes nuevos validan tarifas y no bloquean la vista si falta una', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
+    const window = {};
+    vm.runInNewContext(fs.readFileSync('components/transport-model.js', 'utf8'), { window });
+    const errors = Array.from(window.AtlasTransportModel.validateTrip(trip));
+    assert.deepEqual(errors, [], 'Contrato de transporte inválido: ' + errors.join('; '));
+    const invalid = JSON.parse(JSON.stringify(trip));
+    delete invalid.majorTransport[1].options[0].fares;
+    assert.match(Array.from(window.AtlasTransportModel.validateTrip(invalid)).join('; '), /Opción sin tarifas/);
+
+    window.AtlasBudget = {
+        selectedTransportPrice: () => null,
+        convert: () => null
+    };
+    window.AtlasSelections = { get: () => ({}) };
+    vm.runInNewContext(fs.readFileSync('components/major-transport.js', 'utf8'), { window });
+    assert.doesNotThrow(() => window.AtlasMajorTransport.render(trip));
+    assert.doesNotThrow(() => window.AtlasMajorTransport.render(invalid),
+        'La vista no debe fallar cuando una tarifa aún no existe');
+    assert.match(window.AtlasMajorTransport.render(invalid), /Tarifa por cotizar/);
+});
