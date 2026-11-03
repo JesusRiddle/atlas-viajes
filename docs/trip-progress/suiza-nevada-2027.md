@@ -8,7 +8,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
 **Etapa actual:** 13 · Auditoría D automatizada aprobada; revisión final de fotografías externas pendiente  
-**Siguiente acción autónoma:** Verificar visualmente fotografías y textos de Suiza en la vista previa del PR; actualizar links externos rotos si se detectan  
+**Siguiente acción autónoma:** Etapas 09–11: completar transportes locales por día, optimizar itinerario ante clima y conciliar pases y presupuesto  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -60,7 +60,7 @@ El **orden de producción** se organiza de lo más independiente a lo más depen
 | Etapa | Estado (pendiente/en curso/verificado/bloqueado) | Evidencia / commit / fuente | Pendiente o causa de bloqueo |
 | --- | --- | --- | --- |
 | 00–03 (Auditoría A) | Verificado a nivel de datos | 12 fechas consecutivas, 10 noches (1+4+3+2), ruta consistente | Revalidar horarios ferroviarios de 2027 |
-| 04–08 (Auditoría B) | Verificado a nivel de estructura | 4 hoteles, 3 grupos de reservas, mapa, 7 fotografías nuevas con fuente/licencia | Comprobar imágenes en navegador y enlaces externos |
+| 04–08 (Auditoría B) | Verificado en CI automatizado | 7 experiencias, 3 grupos de reservas, 6 fichas de transporte, 4 hoteles y 23 enlaces de estaciones. GitHub Actions 41729087342 OK | Tarifas reales enero 2027 y enlaces externos sujetos a revalidación |
 | 09–11 (Auditoría C) | Verificado a nivel de datos | 12 jornadas, 17 apariciones fotográficas, MXN 81,981, viajero 1 | Tarifa de hoteles y pases sin cotización exacta 2027 |
 | 12–13 (Auditoría D) | Verificado en CI automatizado | `Atlas checks` run 41728049488: JavaScript, JSON, Node y Chromium Desktop/Mobile aprobados | Revisión humana de imágenes externas en vista previa si se desea |
 
@@ -108,3 +108,13 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Se actualizó `tests/browser-smoke.cjs` para 5 viajes visibles, Suiza en Viaje 01 y pruebas específicas de Suiza. Se corrigió `components/home.js` para no excluir del comparador viajes con días laborales por definir.
 - Tras revisar tres veces calendario/hoteles, inversión y contrato presupuestario, se corrigió `budgetPreliminary` con objeto válido y `majorTransport.flight-international.budgetIncludedIn = flight-budget`. Esto conserva $81,981 MXN como referencia, evita sumar dos veces el vuelo y permite la comparación de tarifas.
 - **Pendiente no bloqueante:** revisión editorial humana de las imágenes cargadas externamente, tarifas y horarios reales de 2027. Sin reservas ni merge.
+
+
+## Etapas 05–08 y auditoría B · 2026-11-03
+- Experiencias enriquecidas: Lucerna, Grindelwald, Lauterbrunnen/Wengen, Mürren, Jungfraujoch/Männlichen, Zermatt y Zúrich/Kilchberg con gastronomía, límites por clima y exclusiones.
+- Reservaciones diferenciadas por prioridad: hoteles alpinos, Lindt, vuelo, hoteles urbanos, pases y miradores variables.
+- Movilidad ampliada a 6 tarjetas: vuelos, traslados aeropuerto, Lucerna–Grindelwald, Grindelwald–Zermatt y Zermatt–Zúrich. Tarifas desconocidas en `null`, con estaciones, cobertura de pases y 23 enlaces Maps en jornadas.
+- Corregido Fred Guest House a Konradstrasse 11, 8005 Zürich y URL oficial específica; ibis budget Lucerna vinculado a ficha oficial Accor.
+- **Tres controles previos a escritura:** integridad de días/noches y referencias, esquema de transporte y hoteles, reconciliación del vuelo y presupuesto `$81,981 MXN` sin cambio.
+- **GitHub Actions #41729087342: SUCCESS**; validación JS, JSON, pruebas Node y Chromium Desktop/Mobile completas. Auditoría B aprobada a nivel automatizado.
+- **Pendientes no bloqueantes:** tarifa exacta de trayectos nacionales 2027, posible conveniencia de Half Fare versus pase Jungfrau y fotos externas por revisión humana. Próximo bloque 09–11.
