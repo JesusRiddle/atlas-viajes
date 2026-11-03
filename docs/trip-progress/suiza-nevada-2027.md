@@ -7,8 +7,8 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Rama / PR:** feature/suiza-2027 · https://github.com/JesusRiddle/atlas-viajes/pull/9  
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
-**Etapa actual:** 13 · Auditoría D automatizada aprobada; revisión final de fotografías externas pendiente  
-**Siguiente acción autónoma:** Etapas 09–11: completar transportes locales por día, optimizar itinerario ante clima y conciliar pases y presupuesto  
+**Etapa actual:** 11 · Auditoría C editorial y económica completada; CI del último ajuste ferroviario pendiente  
+**Siguiente acción autónoma:** Completar auditoría C con el resultado CI del commit 274d7266; luego revisar fotos/licencias/enlaces y auditoría D  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -118,3 +118,12 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Tres controles previos a escritura:** integridad de días/noches y referencias, esquema de transporte y hoteles, reconciliación del vuelo y presupuesto `$81,981 MXN` sin cambio.
 - **GitHub Actions #41729087342: SUCCESS**; validación JS, JSON, pruebas Node y Chromium Desktop/Mobile completas. Auditoría B aprobada a nivel automatizado.
 - **Pendientes no bloqueantes:** tarifa exacta de trayectos nacionales 2027, posible conveniencia de Half Fare versus pase Jungfrau y fotos externas por revisión humana. Próximo bloque 09–11.
+
+
+## Etapas 09–11 · Auditoría C · 2026-11-03
+- Día por día: reescritos los 12 días con mañana/tarde/noche, márgenes, pasajes completos, alternativa climática, gastronomía y hotel. Los vuelos de conexión se explicitan como dos segmentos (sin horarios de cada vuelo individual disponibles). No se inventaron servicios de tren.
+- Panorama: `intro` 107 palabras; `introShort` 35 palabras. `work=8` días entre salida y regreso por avión, sujeto a calendario laboral personal; llegada a CDMX miércoles 3 febrero a las 04:20, posible noveno día libre.
+- Transporte: pase invernal peatonal Jungfrau de 3 días (25–27 enero) con precio oficial 2026/27 CHF 176 (≈ $4,040 MXN); Swiss Half Fare CHF 150 (≈ $3,444 MXN). Sin billetes nacionales cotizados, no se puede decidir ahorro neto ni recomendar comprar ambos. `railSummary` adaptado al formato de pares requerido por el renderizador.
+- Presupuesto: $20,331 vuelos + $31,750 hoteles + $10,000 movilidad + $6,500 entradas + $9,000 alimentos + $4,400 seguros/extras = $81,981 MXN; evita doble cómputo de billetes de First cubiertos por Jungfrau y vuelo.
+- **Tres revisiones antes de guardar:** calendario/noches/tramos, consistencia de modelos/refs y total sin duplicación. GitHub Actions #41729872233 SUCCESS para la primera edición; #41729995449 lanzado para ajuste final del esquema de `railSummary`, pendiente al registrar.
+- Pendiente para auditoría D: comprobar último CI, fotos externas, enlaces y comportamiento de la comparativa sin precios definitivos.
