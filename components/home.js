@@ -139,7 +139,7 @@ window.AtlasHome = function (ctx) {
         const estimate = window.AtlasBudget?.planningEstimate?.(t);
         if (!estimate) return homeReady(t) ? price(t) : null;
         const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : null;
-        if (travelers === null) return price(t);
+        if (travelers === null) return '$' + estimate.low.toLocaleString('es-MX') + '–$' + estimate.high.toLocaleString('es-MX');
         const perPerson = amount => (amount / travelers).toLocaleString('es-MX', { maximumFractionDigits: 0 });
         return String.fromCharCode(36) + perPerson(estimate.low) + '–' + String.fromCharCode(36) + perPerson(estimate.high);
     };
@@ -154,7 +154,7 @@ window.AtlasHome = function (ctx) {
         const forecast = window.AtlasBudget?.planningEstimate?.(t);
         const hasRange = Array.isArray(t.budgetRange) && t.budgetRange.length === 2 &&
             t.budgetRange.every(n => Number.isFinite(n) && n > 0);
-        const hasEstimate = forecast || hasRange || (Array.isArray(t.expenses) && t.expenses.some(e => e.cost?.amount > 0)) ||
+        const hasEstimate = (forecast && Number.isFinite(forecast.low) && forecast.low > 0) || hasRange || (Array.isArray(t.expenses) && t.expenses.some(e => e.cost?.amount > 0)) ||
             (Array.isArray(t.costs) && t.costs.some(row => Number.isFinite(row[1]) && row[1] > 0));
         const amount = hasEstimate ? homePrice(t) : null;
         return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
@@ -201,7 +201,7 @@ window.AtlasHome = function (ctx) {
                 ' <small>/ ' + t.work + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
                 '<td>' + esc(t.profile.pace) + '</td><td class="comparison-number">' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 'Por definir') + '</td>' +
                 '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
-                ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
+                ' <small>MXN</small></strong>' +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
     }
     function home() { document.title = 'Atlas de viajes · Viajes 2026–2027'; main.innerHTML = `<section class="home-intro wrap atlas-home-hero atlas-home-hero-immersive" aria-labelledby="atlas-home-title"><div class="intro-photo atlas-home-hero-image"><img src="photos/atlas-world-hero.webp" alt="Ilustración de destinos entre montañas, ciudades y costas" loading="eager" fetchpriority="high" decoding="async"><div class="photo-overlay"></div><div class="atlas-home-hero-copy"><p class="eyebrow">ATLAS DE VIAJES · 2026–2027</p><h1 id="atlas-home-title">La vida es un viaje.</h1><p class="atlas-home-lead">Rutas desde CDMX, itinerarios detallados y presupuestos para elegir tu próxima aventura.</p></div></div></section><section class="section wrap" id="viajes" style="padding-top:25px"><div class="section-title"><div><p class="eyebrow orange">Caminos por descubrir</p><h2>Elige tu siguiente historia.</h2></div><p>Entre ciudades históricas, mercados, palacios y paisajes de montaña, encuentra la ruta que más te inspira.</p></div><div class="cards">${primaryTrips.map(card).join('')}</div></section>${comparison()}${ideaTrips.length ? '<section class="section wrap home-ideas" id="ideas-viajes" aria-labelledby="ideas-viajes-title"><div class="section-title"><div><p class="eyebrow orange">Archivo de inspiración</p><h2 id="ideas-viajes-title">Ideas generales de viajes.</h2></div><p>Rutas antiguas por rediseñar y actualizar. Sus fechas, itinerarios y presupuestos son referencias históricas, no planes vigentes.</p></div><div class="cards ideas-cards">' + ideaTrips.map(ideaCard).join('') + '</div></section>' : ''}`; mountCoverSlideshow(); }
