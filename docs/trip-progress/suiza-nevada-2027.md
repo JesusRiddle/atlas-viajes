@@ -7,8 +7,8 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Rama / PR:** feature/suiza-2027 · https://github.com/JesusRiddle/atlas-viajes/pull/9  
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
-**Etapa actual:** 11 · Auditoría C editorial y económica completada; CI del último ajuste ferroviario pendiente  
-**Siguiente acción autónoma:** Completar auditoría C con el resultado CI del commit 274d7266; luego revisar fotos/licencias/enlaces y auditoría D  
+**Etapa actual:** 13 · Auditoría D intensiva: comprobación estructural, editorial y navegador realizada; último CI del ajuste de tonos pendiente  
+**Siguiente acción autónoma:** Confirmar CI final de las correcciones de Panorama y registrar cierre; revisar las imágenes externas de Suiza y condiciones de reservas cuando haya datos  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -127,3 +127,13 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Presupuesto: $20,331 vuelos + $31,750 hoteles + $10,000 movilidad + $6,500 entradas + $9,000 alimentos + $4,400 seguros/extras = $81,981 MXN; evita doble cómputo de billetes de First cubiertos por Jungfrau y vuelo.
 - **Tres revisiones antes de guardar:** calendario/noches/tramos, consistencia de modelos/refs y total sin duplicación. GitHub Actions #41729872233 SUCCESS para la primera edición; #41729995449 lanzado para ajuste final del esquema de `railSummary`, pendiente al registrar.
 - Pendiente para auditoría D: comprobar último CI, fotos externas, enlaces y comportamiento de la comparativa sin precios definitivos.
+
+
+## Auditoría integral correctiva de Panorama y sitio · 2026-11-03
+- **Causa:** el JSON Suiza incluía cuatro `practicalIndicators` (`style/language/entry/weather`) pese a que la guía ya exigía tres. El cuarto colocaba «Clima y luz» a la izquierda y el campo `climate` de la tarjeta derecha solo tenía un resumen breve. Además el título `entry` retrocedió a «Documentación y electricidad», contra la convención vigente. No era fallo de CSS, sino omisión del contrato y ausencia de aserciones específicas.
+- **Corrección:** `practicalIndicators` exactamente `[style,language,entry]` con títulos correctos y tonos admitidos; `climate` reescrito como tres párrafos de clima/temperaturas, `*Qué llevar:*`, `*Horas de luz:*`, con horas CET orientativas y límites de operación de montaña.
+- **Hallazgo de documentación:** la guía editorial contenía una frase contradictoria: decía que `entry` iba a la derecha, aunque el diseño maestro lo pone a la izquierda. Se corrigió y alinearon `AGENTS.md`, estándar, guía editorial, contrato y checklist. El esquema se prueba en JSON, DOM y geometría Desktop/Mobile, para los cinco itinerarios nuevos.
+- **Corrección transversal:** fuente de divisas dinámica en Panorama (CHF/ARS además de EUR/USD/JPY); antes solo buscaba JPY/EUR/USD.
+- **Auditoría exhaustiva:** 20 JSON del catálogo verificados sin referencias fotográficas inexistentes ni referencias huérfanas de hotel/transporte. En los 5 viajes principales, indicadores `style/language/entry` y títulos oficiales coincidentes. Referencias de las siete fotografías nuevas comprobadas en fichas de Wikimedia Commons con atribución/licencia; carga de imágenes externas no garantizada en todos los dispositivos o redes.
+- **Pruebas:** GitHub Actions #41731165505 **SUCCESS** (JS, JSON, Node, navegador Desktop/Mobile sobre itinerarios activos, nueve anclas, orden, navegación y ausencia de `undefined`/`NaN`/desbordamientos); cambio posterior solo de tonos de indicadores requiere nueva verificación CI. PR #9 permanece abierto, sin merge.
+- **Pendientes no bloqueantes:** tarifas definitivas SBB/hoteles y boletos, comprobar imágenes externas en una sesión de usuario con red habitual, revisar respuesta visual de fotos seleccionadas. La etapa 12 no se cierra como revisada humanamente solo por aprobar CI.
