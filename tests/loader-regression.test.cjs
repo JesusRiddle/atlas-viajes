@@ -317,7 +317,7 @@ test('Día por día y Presupuesto muestran pendientes sin totales ficticios', ()
 
 test('el alta mínima es visible de inmediato y conserva los viajes históricos', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog.length, 19);
+    assert.equal(catalog.length, 20);
     assert.ok(catalog.every(item => item.available));
     assert.equal(catalog.filter(item => item.homeGroup === 'ideas').length, 15);
     assert.ok(catalog.some(item => item.id === 'italia-norte-2027' && item.available));
@@ -341,12 +341,13 @@ test('el alta mínima es visible de inmediato y conserva los viajes históricos'
     assert.equal(atlas.trips[0].seasonality,null);
 });
 
-test('España + Portugal 2027 se publica primero y conserva su contenido completo', async () => {
+test('Suiza nevada se publica primero y España + Portugal conserva su contenido completo', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog[0].id, 'espana-portugal-2027');
+    assert.equal(catalog[0].id, 'suiza-nevada-2027');
     assert.equal(catalog[0].available, true);
-    assert.equal(catalog[1].id, 'italia-norte-2027');
-    assert.equal(catalog[2].id, 'japon-2027');
+    assert.equal(catalog[1].id, 'espana-portugal-2027');
+    assert.equal(catalog[2].id, 'italia-norte-2027');
+    assert.equal(catalog[3].id, 'japon-2027');
     const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-2027.json', 'utf8'));
     assert.equal(migrated.id, 'espana-portugal-2027');
     assert.equal(migrated.days.length, 20);
@@ -357,7 +358,7 @@ test('España + Portugal 2027 se publica primero y conserva su contenido complet
     assert.equal(migrated.budgetRange[0], 76000);
     assert.equal(migrated.budgetRange[1], 125000);
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
-    const window = { ATLAS_MODULES: [catalog[0]] };
+    const window = { ATLAS_MODULES: [catalog[1]] };
     const sources = {
         'data/places.json': JSON.parse(fs.readFileSync('data/places.json', 'utf8')),
         'data/trips/_template.json': template,
@@ -371,6 +372,22 @@ test('España + Portugal 2027 se publica primero y conserva su contenido complet
     assert.equal(trip.hotels.length, 5);
     assert.equal(trip.days[0].date, '2027-05-08');
     assert.equal(trip.days[19].date, '2027-05-27');
+});
+
+test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual sin duplicación', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
+    const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
+    const catalog = loadCatalog();
+    assert.equal(catalog[0].id, 'suiza-nevada-2027');
+    assert.equal(trip.travelerCount, 1);
+    assert.equal(trip.days.length, 12);
+    assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 10);
+    assert.equal(trip.hotels.length, 4);
+    assert.ok(trip.cover && places[trip.cover]?.photo?.src);
+    assert.ok(trip.days.every(day => (day.places || []).every(key => places[key]?.photo?.src)));
+    assert.equal(trip.expenses.reduce((sum, item) => sum + item.cost.amount, 0), 81981);
+    assert.equal(trip.start, '2027-01-22');
+    assert.equal(trip.end, '2027-02-02');
 });
 
 test('paso 15: template universal preserva información parcial, cero y falso sin mutar origen', async () => {
