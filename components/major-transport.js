@@ -228,7 +228,12 @@ window.AtlasMajorTransport = (() => {
             '<div class="mt-heading"><span class="mt-kicker mt-kicker-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 10h14M8 14h2m4 0h2M8 21l2-3m6 3-2-3"/></svg> Movilidad y conexiones</span>' +
             '<h2>Traslados principales.</h2><p>Compara las alternativas, tarifas y condiciones de tus vuelos y trenes.</p></div>' +
             '<div class="mt-list">' + trip.majorTransport.map(item => card(trip, item, current)).join('') + '</div>' +
-            '<p class="mt-footnote">Cotizaciones de referencia, no reservas confirmadas. Las elecciones son temporales y no modifican el itinerario guardado.</p>' +
+            '<p class="mt-footnote">Los importes de referencia no son reservas. Las tarifas futuras pendientes se muestran sin inventar precios.</p>' +
+            (Array.isArray(trip.railSummary) && trip.railSummary.length ?
+                '<details class="mt-tickets mt-pass-comparison"><summary>Comparar pases, descuentos y billetes</summary><ul>' +
+                trip.railSummary.filter(row => Array.isArray(row) && typeof row[0] === 'string' && typeof row[1] === 'string')
+                    .map(([label, description]) => '<li><strong>' + esc(label) + ':</strong> ' + esc(description) + '</li>').join('') +
+                '</ul></details>' : '') +
             (trip.ticketNotes?.length ? '<details class="mt-tickets"><summary>Billetes y flexibilidad</summary>' +
                 '<ul>' + trip.ticketNotes.map(item => { const name = Array.isArray(item) ? item[0] : item?.title; const note = Array.isArray(item) ? item[1] : (item?.note || item?.rules || item?.conditions || item?.fallback || 'Consultar detalles de reserva'); return '<li><strong>' + esc(name || 'Nota') + ':</strong> ' + esc(note) + '</li>'; }).join('') + '</ul></details>' : '') +
             '</section>';
@@ -250,8 +255,11 @@ window.AtlasMajorTransport = (() => {
                 const element = [...next.querySelectorAll('.mt-card')].find(x => x.dataset.transport === id);
                 if (element) element.open = true;
             }
-            const ticket = host.querySelector('.mt-tickets');
-            if (ticket?.open) next.querySelector('.mt-tickets').open = true;
+            for (const previous of host.querySelectorAll('.mt-tickets[open]')) {
+                const selector = previous.classList.contains('mt-pass-comparison') ? '.mt-pass-comparison' : '.mt-tickets:not(.mt-pass-comparison)';
+                const matching = next.querySelector(selector);
+                if (matching) matching.open = true;
+            }
             host.removeEventListener('change', change);
             host.replaceWith(next);
             host = next;
