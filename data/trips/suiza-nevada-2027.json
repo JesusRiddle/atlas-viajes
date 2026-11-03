@@ -247,16 +247,22 @@
       "am": "1. Revisar webcam y cota de nubes antes de decidir ascenso premium.\n2. Opción A con visibilidad excepcional: Jungfraujoch vía Grindelwald Terminal/Eiger Express y tren de montaña, con suplemento válido según pase y condiciones 2027.\n3. Opción B más económica: Männlichen/Kleine Scheidegg, solo rutas peatonales habilitadas.",
       "pm": "1. Destinar la tarde al mirador elegido, no a ambos; descender antes del último servicio.\n2. Si hay viento, temporal o visibilidad nula, recorrer Grindelwald y disfrutar una comida tranquila; guardar presupuesto de la excursión no realizada.",
       "night": "1. Última de cuatro noches en Grindelwald.\n2. Preparar check-out, ropa y billetes para el traslado del 28 hacia Zermatt.",
-      "mobility": "• *Opción A · Jungfraujoch:* A: Grindelwald Terminal → Eiger Express → Eigergletscher → Jungfraujoch, con billete o suplemento independiente.\n• *Opción B · Männlichen:* B: Grindelwald Terminal → Männlichen en góndola, o acceso hacia Kleine Scheidegg por tren, según apertura.\n• *Billetes de montaña:* La tarjeta peatonal de tres días no incluye necesariamente Jungfraujoch: verificar precio del Top Ticket vigente.",
-      "note": "• *Priorizar visibilidad:* Priorizar visibilidad sobre altura: Jungfraujoch puede ser caro y nublado.\n• *Suplemento Jungfraujoch:* Día 3 del eventual pase Jungfrau 25–27; el suplemento CHF 63 publicado para invierno 2025/26 NO es tarifa confirmada de enero 2027.\n• *Rutas de invierno:* Los senderos de verano no son un plan B seguro en enero.",
+      "mobility": "• *Opción A · Jungfraujoch:* A: Grindelwald Terminal → Eiger Express → Eigergletscher → Jungfraujoch, con billete o suplemento independiente.\n• *Opción B · Männlichen:* B: Grindelwald Terminal → Männlichen en góndola, o acceso hacia Kleine Scheidegg por tren, según apertura.\n• *Billetes de montaña:* La tarjeta peatonal de tres días no incluye necesariamente Jungfraujoch: la web oficial confirma Top Ticket CHF 63 (≈ $1,446 MXN) hasta 30/4/2027 para titulares del pase admitido; confirmar la compra.",
+      "note": "• *Priorizar visibilidad:* Priorizar visibilidad sobre altura: Jungfraujoch puede ser caro y nublado.\n• *Suplemento Jungfraujoch:* Día 3 del eventual pase Jungfrau 25–27; el suplemento Top Ticket CHF 63 (≈ $1,446 MXN) está anunciado oficialmente para 1/12/2026–30/4/2027; es adicional al pase peatonal y requiere condiciones válidas y visibilidad.\n• *Rutas de invierno:* Los senderos de verano no son un plan B seguro en enero.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-jungfraujoch-february",
+        "swiss27-maennlichen-winter"
+      ],
       "headerPlaces": [
         "Jungfraujoch o Männlichen · según visibilidad"
       ],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": [],
-      "optionalPlaces": []
+      "optionalPlaces": [
+        "swiss27-jungfraujoch-february",
+        "swiss27-maennlichen-winter"
+      ]
     },
     {
       "n": 7,
@@ -537,7 +543,7 @@
       [
         {
           "title": "First, Gornergrat y Jungfraujoch",
-          "description": "Ascender a First y Gornergrat solo con visibilidad suficiente y funcionamiento confirmado. Jungfraujoch requiere suplemento del pase regional o entrada independiente; verificar importe vigente 2027. Sin entradas compradas.",
+          "description": "Ascender a First y Gornergrat solo con visibilidad suficiente y funcionamiento confirmado. Jungfraujoch requiere suplemento Top Ticket CHF 63 (≈ $1,446 MXN) anunciado para 1/12/2026–30/4/2027 con pase admisible, o entrada independiente; no pagarlo si hay mal clima. Sin entradas compradas.",
           "links": [
             {
               "label": "Jungfrau · operativa",
@@ -652,7 +658,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión global estimada de $10,000 MXN para UNA modalidad de pase regional/discount y los tramos no incluidos. Como referencia, Jungfrau Winter Hiking Pass 3 días 25–27 ene 2027 cuesta CHF 176 (≈ $4,040 MXN), dejando ~$5,960 MXN para trenes nacionales/urbanos. Swiss Half Fare Card CHF 150 (≈ $3,444 MXN) es candidata alternativa o complementaria solo tras comprobar ahorro neto; no sumar sus dos importes sin revisar coberturas."
+      "notes": "Provisión $10,000 MXN, NO cotización cerrada. Escenario con pase Jungfrau 25–27 ene CHF 176 (≈ $4,040 MXN) deja ~$5,960 MXN para otros trenes y traslados. Half Fare Card CHF 150 (≈ $3,444 MXN) solo si se justifica por descuentos netos: no se suma automáticamente. SBB debe cotizarse por fecha y ruta; esta provisión puede superarse."
     },
     {
       "id": "attractions-budget",
@@ -664,7 +670,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión $6,500 MXN para Gornergrat, Lindt CHF 17 (≈ $390 MXN), posible Jungfraujoch y extras. First, Wengen, Mürren y Männlichen NO se vuelven a cobrar aquí si se escoge pase Jungfrau que los cubra; suplemento Jungfraujoch vigente en enero 2027 por revalidar."
+      "notes": "Provisión $6,500 MXN incluye Lindt, Gornergrat y opcional Jungfraujoch (Top Ticket CHF 63 ≈ $1,446 MXN, confirmado para temporada 2026/27). Si no se sube al Jungfraujoch, no se compra su suplemento. Nunca duplicar en entradas el acceso a First/Wengen/Mürren/Männlichen cubierto por pase regional."
     },
     {
       "id": "meals-1",
@@ -1172,12 +1178,12 @@
     },
     {
       "title": "Swiss Half Fare Card · CHF 150 (≈ $3,444 MXN)",
-      "note": "Referencia oficial para turistas: descuentos de hasta 50 % durante un mes. Solo conviene si ahorros acumulados superan CHF 150 (≈ $3,444 MXN). No sumar precios de billetes completos y reducidos simultáneamente.",
+      "note": "Tarjeta turística para no residentes en Suiza: precio CHF 150 (≈ $3,444 MXN) confirmado sin cambios para 2027. Comprar solo si el ahorro real sobre billetes sin cobertura Jungfrau, Gornergrat y movilidad supera su costo.",
       "url": "https://www.sbb.ch/en/offers/swiss-half-fare-card"
     },
     {
       "title": "Jungfrau Winter Hiking and Sledging Pass · CHF 176 (≈ $4,040 MXN) / 3 días",
-      "note": "Pase peatonal de tres días candidato para 25–27 enero; consultar cobertura por operador y fechas antes de comprar. No incluye automáticamente Jungfraujoch y no sustituye billetes nacionales fuera de su área. Asegurar que el billete elegido sea válido para la ida y la vuelta.",
+      "note": "Pase peatonal Jungfrau de 3 días 25–27 enero CHF 176 (≈ $4,040 MXN), tarifa oficial 2026/27. Jungfraujoch NO está incluido: Top Ticket adicional CHF 63 (≈ $1,446 MXN) anunciado para 1/12/2026–30/4/2027. Verificar condiciones de acceso y últimos servicios.",
       "url": "https://www.jungfrau.ch/en-gb/jungfrau-ski-region/jungfrau-region-hiking-sledging-pass/"
     }
   ],
@@ -1497,6 +1503,18 @@
     [
       "Normales climáticas de Suiza (MeteoSwiss, 1991–2020)",
       "https://opendatadocs.meteoswiss.ch/c-climate-data/c6-climate-normals"
+    ],
+    [
+      "Jungfrau · pase y suplemento Top Ticket 2026/27",
+      "https://www.jungfrau.ch/en-gb/jungfrau-ski-region/jungfrau-region-hiking-sledging-pass/"
+    ],
+    [
+      "Travel Switzerland · tarifas turísticas sin cambios en 2027",
+      "https://www.travelswitzerland.com/2027-fares-stable-incoming-prices-and-key-updates/"
+    ],
+    [
+      "Gornergrat · descuentos de Half Fare",
+      "https://www.gornergrat.ch/en/products/ticket"
     ]
   ],
   "sourceNote": null,
@@ -1504,7 +1522,7 @@
     75000,
     85000
   ],
-  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y posible suplemento Jungfraujoch, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. Son provisiones, no tarifas reservables para enero de 2027. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
+  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y suplemento Jungfraujoch CHF 63 solo si se elige, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. Son provisiones: el pase Jungfrau y Top Ticket tienen precios oficiales de temporada 2026/27, pero el coste conjunto de billetes nacionales y Gornergrat no está cerrado y podría exigir aumentar el presupuesto. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
   "placeDescriptions": {
     "lucerne": "En la ciudad vieja de Lucerna, el Kapellbrücke cruza el río Reuss bajo una cubierta de madera y conecta plazas históricas entre montañas.",
     "lake-lucerne": "El lago de los Cuatro Cantones une bahías, pueblos y montañas; desde sus orillas en Lucerna se contempla el paisaje alpino sin un ascenso.",
@@ -1517,7 +1535,9 @@
     "swiss27-gornergrat-winter": "En días despejados, los miradores elevados de la región de Gornergrat ofrecen vistas de cumbres y glaciares junto a la característica pirámide del Matterhorn.",
     "gornergrat": "El tren de cremallera asciende desde Zermatt hasta Gornergrat, un observatorio panorámico rodeado de cumbres de cuatro mil metros y glaciares.",
     "zurich": "El casco antiguo de Zúrich reúne callejuelas, torres de iglesias y paseos junto al Limmat, que desemboca en el lago de la ciudad.",
-    "swiss27-lindt": "En Kilchberg, la gran fuente de chocolate del Lindt Home of Chocolate recibe a los visitantes antes de recorrer la exposición dedicada al cacao."
+    "swiss27-lindt": "En Kilchberg, la gran fuente de chocolate del Lindt Home of Chocolate recibe a los visitantes antes de recorrer la exposición dedicada al cacao.",
+    "swiss27-jungfraujoch-february": "El mirador Jungfraujoch ofrece perspectivas de nieve y edificios de montaña junto al glaciar Aletsch, en condiciones de frío extremo.",
+    "swiss27-maennlichen-winter": "El Royal Walk de Männlichen asciende a un mirador sobre el Oberland bernés; en invierno su acceso depende del estado del sendero."
   },
   "optionalSection": null,
   "family": null,
@@ -1545,16 +1565,24 @@
   "exchangeNote": null,
   "railSummary": [
     [
-      "Estrategia candidata A · Jungfrau 3 días",
-      "Pase peatonal Winter Hiking and Sledging Pass del 25 al 27 de enero, CHF 176 (≈ $4,040 MXN) en temporada baja 2026/27. Está dentro de la provisión de transporte: no añadirlo de nuevo a actividades. Confirmar coberturas exactas y disponibilidad operativa de First, Wengen, Mürren y Männlichen."
+      "Opción A · Jungfrau 3 días (recomendada para los días 25–27)",
+      "Pase oficial de senderismo invernal, CHF 176 (≈ $4,040 MXN). Da acceso a las conexiones señaladas en el mapa de validez, incluyendo First/Wengen/Mürren/Männlichen según estado de instalaciones. Su compra es candidata, no reserva."
     ],
     [
-      "Estrategia candidata B · Swiss Half Fare Card",
-      "CHF 150 (≈ $3,444 MXN), válida durante un mes. Da hasta 50 % de descuento en trenes nacionales, urbanos y algunas excursiones; NO equivale a viajes ilimitados. Solo comprar si descuentos comprobados superan CHF 150 y no se solapan inútilmente con el pase Jungfrau."
+      "Suplemento opcional · Jungfraujoch",
+      "El Top Ticket oficial cuesta CHF 63 (≈ $1,446 MXN), válido entre 1 diciembre 2026 y 30 abril 2027 con pase elegible, sujeto a condiciones y disponibilidad. Si se elige Jungfraujoch, sumar este suplemento solo en actividades, nunca dentro del precio del pase."
     ],
     [
-      "Comparación y elección",
-      "No se puede demostrar todavía un ganador global sin tarifas exactas de SBB del 23, 24, 28 y 31 enero, 1 y 2 febrero y Gornergrat. Se conserva una sola provisión de movilidad de $10,000 MXN para todas las compras; escenario de Jungfrau CHF 176 deja ~$5,960 MXN para trenes nacionales y urbanos. Es una meta, no una cotización. No comprar ambos pases por defecto."
+      "Opción B · Swiss Half Fare Card",
+      "Tarjeta turística CHF 150 (≈ $3,444 MXN), precio oficial mantenido en 2027, con reducciones de hasta 50 % en trayectos nacionales y ciertas montañas, incluidos Gornergrat. Es un descuento sobre billetes, no transporte gratis. Evaluarla por separado; puede combinarse con pase regional solo si el ahorro neto lo justifica."
+    ],
+    [
+      "Punto de equilibrio y decisión",
+      "Half Fare Card conviene si los descuentos de billetes NO incluidos por Jungfrau (aeropuerto, Luzern–Interlaken, Grindelwald–Zermatt, Zermatt–Zúrich, Zúrich local y Gornergrat) superan CHF 150 (≈ $3,444 MXN). Un descuento del 50 % exigiría gastos de tarifa normal superiores a CHF 300 (≈ $6,887 MXN); algunos tramos tienen descuentos menores. Sin cotización individual exacta no hay ganador demostrado."
+    ],
+    [
+      "Riesgo de presupuesto ferroviario",
+      "Los $10,000 MXN son una provisión, no suma de billetes verificados. Tras el pase Jungfrau ($4,040 MXN) quedarían ~$5,960 MXN para trenes nacionales y movilidad urbana. Puede ser insuficiente si los horarios Saver no convienen; validar y recalcular antes de reservar vuelos/hoteles."
     ]
   ],
   "railTotal": "Por cotizar: provisión global de $10,000 MXN, sin desglose ferroviario definitivo",
