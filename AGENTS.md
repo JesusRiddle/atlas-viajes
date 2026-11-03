@@ -11,6 +11,8 @@ Antes de crear, modificar o auditar un viaje:
 
 Si un requisito del usuario contradice una regla editorial, discutir o documentar la excepción antes de introducirla; prevalecen los datos confirmados del usuario sobre ejemplos de plantillas.
 
+**Puerta de control de transportes (obligatoria):** antes de aprobar la etapa 07 o la auditoría B, ejecutar `AtlasTransportModel.validateTrip(trip)` para todos los viajes nuevos y probar `AtlasMajorTransport.render(trip)` con datos completos y tarifas pendientes. Cada opción necesita `fares[]`, `selectedFare` existente y `journeys[].segments[]`; tarifa desconocida = `price: null`, nunca `0`. Sintaxis JS/JSON válida no sustituye prueba de renderizado ni navegación Desktop/Mobile. No marcar B/D como finalizadas hasta que pase CI.
+
 ## Referencias obligatorias para cada viaje nuevo
 Antes de redactar o modificar un viaje nuevo, leer `docs/trip-master-standard.md` y `data/trips/_template.json`; `data/trips/italia-norte-2027.json` queda como ejemplo opcional de implementación, nunca como paso obligatorio. La especificación maestra, no un JSON turístico, define el diseño; ningún viaje concreto es requisito para iniciar uno nuevo. Reutilizar estructura, convenciones y componentes, **nunca** copiar automáticamente destinos, precios, reservas o fechas. Aplicar el checklist comparativo de `docs/trip-production-checklist.md`; no reintroducir bloques heredados ni omitir enlaces oficiales, Google Maps, indicadores, tipos de cambio o controles existentes.
 
