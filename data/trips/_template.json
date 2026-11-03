@@ -2,7 +2,7 @@
   "id": "nuevo-viaje",
   "name": "Nuevo destino",
   "flag": null,
-  "status": "draft",
+  "status": null,
   "start": null,
   "end": null,
   "tag": null,
