@@ -4287,5 +4287,55 @@
       "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Caminito%20in%202026.jpg",
       "source": "https://commons.wikimedia.org/wiki/File:Caminito%20in%202026.jpg"
     }
+  },
+  "pat27-spegazzini": {
+    "name": "Glaciar Spegazzini",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Spegazzini%20Glacier.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Spegazzini%20Glacier.jpg",
+      "author": "Fabiana Lima",
+      "attribution": "Fabiana Lima",
+      "description": "Fotografía auténtica del frente del glaciar Spegazzini desde la navegación de Lago Argentino, una de las grandes visitas de Todo Glaciares."
+    }
+  },
+  "pat27-floralis": {
+    "name": "Floralis Genérica · Recoleta",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Buenos%20Aires%20-%20Floralis%20generica%20-%20Facultad%20de%20Derecho%20UBA.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Buenos%20Aires%20-%20Floralis%20generica%20-%20Facultad%20de%20Derecho%20UBA.jpg",
+      "author": "Beatrice Murch",
+      "attribution": "Beatrice Murch",
+      "description": "Escultura Floralis Genérica de Eduardo Catalano en Plaza de las Naciones Unidas, próxima a Recoleta y la Facultad de Derecho."
+    }
+  },
+  "pat27-capri": {
+    "name": "Laguna Capri · Fitz Roy",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fitz%20Roy%20y%20laguna%20Capri.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Fitz%20Roy%20y%20laguna%20Capri.JPG",
+      "author": "Alejandro Dau",
+      "attribution": "Alejandro Dau",
+      "description": "Laguna Capri al pie del macizo Fitz Roy; recorrido alternativo menos exigente que el ascenso final a Laguna de los Tres."
+    }
+  },
+  "pat27-torre": {
+    "name": "Laguna Torre · opcional",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Laguna%20Torre%20-%20El%20Chalt%C3%A9n.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Laguna%20Torre%20-%20El%20Chalt%C3%A9n.jpg",
+      "author": "Vanina Rossi",
+      "attribution": "Vanina Rossi",
+      "description": "Laguna Torre y vistas hacia Cerro Torre, alternativa de jornada completa sujeta a clima, descanso y prioridades de trekking."
+    }
+  },
+  "pat27-puente": {
+    "name": "Puente de la Mujer · Puerto Madero",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Puente%20de%20la%20Mujer%20in%202026.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Puente%20de%20la%20Mujer%20in%202026.jpg",
+      "author": "Gonzabar77",
+      "attribution": "Gonzabar77",
+      "description": "Puente de la Mujer en Puerto Madero, punto arquitectónico del paseo vespertino por Buenos Aires."
+    }
   }
 }
