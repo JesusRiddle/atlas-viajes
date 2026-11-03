@@ -144,7 +144,7 @@
       "pm": "1. Tren escénico Luzern → Interlaken Ost (~1 h 50 min), incluido en la red ferroviaria normal.\n2. Cambiar al Berner Oberland-Bahn hacia Grindelwald (~35 min), dejando margen para transbordo.\n3. Llegar al Hotel Tschuggen (candidato), depositar maletas y pasear por Dorfstrasse y miradores cercanos del Eiger.",
       "night": "1. Cena local —rösti o sopa caliente— y primera de cuatro noches en Grindelwald.\n2. Consultar webcams y operación del teleférico First para decidir el orden de las excursiones del 25–27.",
       "mobility": "• *Tren panorámico:* Luzern Bahnhof → Interlaken Ost en Luzern–Interlaken Express; Interlaken Ost → Grindelwald Bahnhof en BOB.\n• *Interlaken → Grindelwald:* Grindelwald Bahnhof → Hotel Tschuggen a pie por centro del pueblo; calzado con agarre por hielo.\n• *Validación de billete:* No se requiere suplemento tipo Glacier Express, pero sí billete válido para todo el trayecto.",
-      "note": "• *Margen de conexión:* Reservar alrededor de 20 minutos entre trenes cuando haya opciones, o confirmar una correspondencia protegida en SBB.\n• *Cobertura del pase:* Pase Jungfrau de tres días pensado para 25–27: el trayecto panorámico del 24 NO queda automáticamente cubierto.",
+      "note": "• *Margen de conexión:* Reservar alrededor de 20 minutos entre trenes cuando haya opciones, o confirmar una correspondencia protegida en SBB.\n• *Cobertura del pase:* Pase Jungfrau de tres días pensado para 25–27: el trayecto panorámico del 24 NO queda automáticamente cubierto.\n• *Reserva de asiento:* En el Luzern–Interlaken Express es opcional (CHF 12 (≈ $275 MXN)); no sustituye el billete y no se requiere para viajar.",
       "spend": null,
       "places": [
         "swiss27-grindelwald-winter"
@@ -670,7 +670,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión $6,500 MXN incluye Lindt, Gornergrat y opcional Jungfraujoch (Top Ticket CHF 63 ≈ $1,446 MXN, confirmado para temporada 2026/27). Si no se sube al Jungfraujoch, no se compra su suplemento. Nunca duplicar en entradas el acceso a First/Wengen/Mürren/Männlichen cubierto por pase regional. Referencia Gornergrat tren ida/vuelta CHF 102 (≈ $2,342 MXN), o CHF 51 (≈ $1,171 MXN) con Half Fare, por reconfirmar en checkout del operador."
+      "notes": "Provisión $6,500 MXN incluye Lindt, Gornergrat y opcional Jungfraujoch (Top Ticket CHF 63 ≈ $1,446 MXN, confirmado para temporada 2026/27). Si no se sube al Jungfraujoch, no se compra su suplemento. Nunca duplicar en entradas el acceso a First/Wengen/Mürren/Männlichen cubierto por pase regional. La tarifa real del tren convencional Zermatt–Gornergrat ida/vuelta para enero 2027 está pendiente. No confundir con Winter Pass CHF 102 (≈ $2,342 MXN), que incluye material y servicios de trineo, y se reduce a CHF 72 (≈ $1,653 MXN) con Half Fare."
     },
     {
       "id": "meals-1",
@@ -1047,7 +1047,7 @@
               "refunds": "Según condiciones de compra"
             }
           ],
-          "notes": "Tren panorámico incluido en conexiones normales: aprox. 1 h 50 min hasta Interlaken Ost + 35 min aprox. a Grindelwald; transbordo en Interlaken. Sin suplemento panorámico obligatorio. Confirmar servicio de enero 2027."
+          "notes": "Tren panorámico incluido en conexiones normales: aprox. 1 h 50 min hasta Interlaken Ost + 35 min aprox. a Grindelwald; transbordo en Interlaken. Sin suplemento panorámico obligatorio. Confirmar servicio de enero 2027. La reserva de asiento en Luzern–Interlaken Express es opcional: CHF 12 (≈ $275 MXN) en invierno 2026/27, no incluida en billete normal."
         }
       ],
       "links": [
@@ -1185,6 +1185,16 @@
       "title": "Jungfrau Winter Hiking and Sledging Pass · CHF 176 (≈ $4,040 MXN) / 3 días",
       "note": "Pase peatonal Jungfrau de 3 días 25–27 enero CHF 176 (≈ $4,040 MXN), tarifa oficial 2026/27. Jungfraujoch NO está incluido: Top Ticket adicional CHF 63 (≈ $1,446 MXN) anunciado para 1/12/2026–30/4/2027. Verificar condiciones de acceso y últimos servicios.",
       "url": "https://www.jungfrau.ch/en-gb/jungfrau-ski-region/jungfrau-region-hiking-sledging-pass/"
+    },
+    {
+      "title": "Luzern–Interlaken Express · asiento opcional",
+      "note": "La reserva cuesta CHF 12 (≈ $275 MXN) del 2/11/2026 al 30/4/2027; no es obligatoria y no sustituye el billete de tren.",
+      "url": "https://www.zentralbahn.ch/en/experience/leisure/luzern-interlaken-express"
+    },
+    {
+      "title": "Gornergrat · tren simple o Winter Pass",
+      "note": "Visita panorámica: cotizar el billete de tren Zermatt–Gornergrat ida/vuelta, no el Winter Pass con trineo. El descuento del 50 % con Swiss Half Fare Card aplica al billete de tren.",
+      "url": "https://www.gornergrat.ch/en/products/ticket"
     }
   ],
   "attractionTerms": [],
@@ -1523,6 +1533,14 @@
     [
       "Gornergrat · tarifa estacional de tren y devolución",
       "https://www.gornergrat.ch/en/products/ticket"
+    ],
+    [
+      "Zentralbahn · reserva opcional de asiento",
+      "https://www.zentralbahn.ch/en/experience/leisure/luzern-interlaken-express"
+    ],
+    [
+      "Gornergrat · Winter Pass vs billete ferroviario",
+      "https://www.gornergrat.ch/en/products/winter-pass"
     ]
   ],
   "sourceNote": null,
@@ -1530,7 +1548,7 @@
     75000,
     85000
   ],
-  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y suplemento Jungfraujoch CHF 63 solo si se elige, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. Son provisiones: el pase Jungfrau y Top Ticket tienen precios oficiales de temporada 2026/27, pero el coste conjunto de billetes nacionales y Gornergrat no está cerrado y podría exigir aumentar el presupuesto. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
+  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y suplemento Jungfraujoch CHF 63 solo si se elige, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. La provisión de movilidad de $10,000 MXN puede resultar insuficiente; los billetes nacionales y el tren simple Gornergrat no están cotizados para enero de 2027. Son provisiones: el pase Jungfrau y Top Ticket tienen precios oficiales de temporada 2026/27, pero el coste conjunto de billetes nacionales y Gornergrat no está cerrado y podría exigir aumentar el presupuesto. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
   "placeDescriptions": {
     "lucerne": "En la ciudad vieja de Lucerna, el Kapellbrücke cruza el río Reuss bajo una cubierta de madera y conecta plazas históricas entre montañas.",
     "lake-lucerne": "El lago de los Cuatro Cantones une bahías, pueblos y montañas; desde sus orillas en Lucerna se contempla el paisaje alpino sin un ascenso.",
@@ -1597,8 +1615,12 @@
       "Los $10,000 MXN son una provisión, no suma de billetes verificados. Tras el pase Jungfrau ($4,040 MXN) quedarían ~$5,960 MXN para trenes nacionales y movilidad urbana. Puede ser insuficiente si los horarios Saver no convienen; validar y recalcular antes de reservar vuelos/hoteles."
     ],
     [
-      "Gornergrat · referencia de la temporada 2026/27",
-      "El billete simple ida y vuelta en tren Zermatt–Gornergrat aparece en listas del operador reproducidas por guías especializadas a CHF 102 (≈ $2,342 MXN); con Half Fare sería CHF 51 (≈ $1,171 MXN). Verificar en compra oficial porque algunos paquetes Gornergrat Round Trip mezclan góndola y tren y tienen precios distintos. Gornergrat va en la provisión de actividades."
+      "Gornergrat · no confundir tarifas",
+      "El Winter Pass CHF 102 (≈ $2,342 MXN) incluye el tren, trineo/raquetas y otros servicios; cuesta CHF 72 (≈ $1,653 MXN) con tarjetas admitidas. NO es el billete convencional de ida y vuelta. Para este viaje sin trineo, elegir solo el tren, cuyo precio de enero 2027 debe verificarse; con Swiss Half Fare Card tiene 50 % de descuento."
+    ],
+    [
+      "Punto de equilibrio de descuentos (no una cotización)",
+      "Para trayectos ordinarios fuera del pase Jungfrau, F = importe normal. SIN Half Fare: 176 + F CHF; CON Half Fare (suponiendo 50 % en todos): 176 + 150 + F/2 CHF. Para F=250 CHF: 426 frente a 451; para F=350 CHF: 526 frente a 501. Equilibrio F=300 CHF (≈ $6,887 MXN). Los descuentos reales por tramo pueden ser menores; añadir por separado el efecto en Gornergrat, que está en Actividades."
     ]
   ],
   "railTotal": "Por cotizar: provisión global de $10,000 MXN, sin desglose ferroviario definitivo",
