@@ -640,7 +640,17 @@
                 }
               ]
             }
-          ]
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa pendiente de cotizar",
+              "price": null,
+              "changes": "Por confirmar",
+              "refunds": "Por confirmar"
+            }
+          ],
+          "selectedFare": "pending"
         }
       ],
       "links": [
@@ -672,7 +682,17 @@
                 }
               ]
             }
-          ]
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa pendiente de cotizar",
+              "price": null,
+              "changes": "Por confirmar",
+              "refunds": "Por confirmar"
+            }
+          ],
+          "selectedFare": "pending"
         }
       ],
       "links": [
