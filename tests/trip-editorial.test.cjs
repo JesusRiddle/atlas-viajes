@@ -121,7 +121,7 @@ test('manual y agente establecen el flujo 00–13 y las cuatro auditorías', () 
   }
   for (const document of [guide, agents, readme]) {
     assert.match(document, /00.{0,8}13/);
-    assert.match(document, /trip-progress-template\\.md/);
+    assert.ok(document.includes('trip-progress-template.md'));
   }
   for (const n of ['A', 'B', 'C', 'D']) {
     assert.match(progress, new RegExp('Auditoría ' + n));
