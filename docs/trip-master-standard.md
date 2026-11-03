@@ -11,13 +11,17 @@ Hacer auditorías **A tras 03, B tras 08, C tras 11, D tras 13**. `AGENTS.md` de
 
 Si una planeación es a alto nivel, pueden usarse referencias fechadas o supuestos transparentes para costos no publicados, sin afirmar disponibilidad ni compras. Recalcular los resúmenes de Inicio y Panorama tras cerrar el presupuesto. Nunca hacer merge ni compras sin aprobación.
 
+## Alta visible desde el primer paso
+
+El generador registra cualquier viaje nuevo con `available: true` y sin `status: "draft"`. Su tarjeta normal aparece inmediatamente en la sección principal, incluso si solo conocemos nombre y destino; campos aún no informados se omiten sin mostrar cifras falsas, etiquetas «borrador», «en planeación» o «preliminar». La ficha enlaza a las nueve secciones, cuyas ausencias se señalan con estados neutrales. Las ideas históricas son únicamente aquellas clasificadas en `modules.js` como `homeGroup: "ideas"`, no todos los viajes posteriores al cuarto. La bitácora es interna al repositorio, no una etiqueta de la interfaz. En GitHub Pages la visibilidad pública exige el merge y posterior despliegue de `main`; durante el PR, usar vista local o preview de rama.
+
 ## Crear un viaje desde cero, sin ejemplos existentes
 El procedimiento debe funcionar aunque no exista ningún JSON turístico completo. **Única fuente normativa:** esta especificación, `docs/trip-editorial-guide.md`, `docs/trip-data-contract.md`, `docs/trip-production-checklist.md` y `data/trips/_template.json`. `data/trips/italia-norte-2027.json` es el ejemplo de implementación vigente, **opcional**, no una plantilla ni requisito.
 
 1. Definir restricciones reales: fechas, duración, presupuesto, transporte, preferencias y destinos candidatos; investigar fuentes oficiales y guardar fecha de consulta.
 2. Construir primero ruta, noches, conexiones, visitas prioritarias y costos tentativos, sin inventar precios, reservas ni horarios.
-3. Crear un JSON nuevo con identificador propio a partir de `_template.json` o con `id` y `name` para completarlo progresivamente; añadirlo a `modules.js` como inactivo mientras se prepara.
-4. Redactar `intro` (70–130 palabras) para Panorama e `introShort` (30–45 palabras) para la tarjeta de portada; ambos deben describir el recorrido y no mezclar logística ni presupuesto. En borradores pueden quedar `null`, pero son obligatorios para un viaje editorialmente completo.
+3. Crear un JSON nuevo con identificador propio a partir de `_template.json` o con `id` y `name` para completarlo progresivamente; añadirlo a `modules.js` como visible desde el primer registro, aun incompleto.
+4. Redactar `intro` (70–130 palabras) para Panorama e `introShort` (30–45 palabras) para la tarjeta de portada; ambos deben describir el recorrido y no mezclar logística ni presupuesto. Durante la captura inicial pueden quedar `null`, pero son obligatorios para un viaje editorialmente completo.
 5. Completar las nueve secciones con los campos indicados abajo, separando confirmado, cotizado, estimado y pendiente. Los estados vacíos siguen el contrato de datos.
 6. Comparar el resultado **contra este estándar y su checklist**, no contra otro viaje; comprobar enlaces, anclas, presupuesto, navegación, escritorio y móvil cuando sea posible.
 7. Ejecutar las pruebas automatizadas, corregir regresiones y solicitar aprobación antes de publicar o hacer merge.
