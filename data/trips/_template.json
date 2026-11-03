@@ -119,5 +119,6 @@
   "railTotal": null,
   "railExclusions": null,
   "railCurrencyNote": null,
-  "heroEyebrow": null
+  "heroEyebrow": null,
+  "travelerCount": null
 }
