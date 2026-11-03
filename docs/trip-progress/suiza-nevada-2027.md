@@ -8,7 +8,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
 **Etapa actual:** 13 · Auditoría D automatizada aprobada, revisión externa de fotos y tarifas pendiente  
-**Siguiente acción autónoma:** Validar visualmente fotos y añadir mirador propio para día 6; después cotizar billetes ferroviarios y rehacer comparación de pases sin sumas duplicadas  
+**Siguiente acción autónoma:** Cotizar billetes SBB de cada tramo clave con y sin Half Fare y Gornergrat convencional; reconciliar costo total y auditar imágenes remotas antes de cerrar movilidad/presupuesto  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -161,3 +161,15 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Riesgo abierto:** SBB no ha proporcionado cotizaciones agregadas verificadas para todos los trenes del 23, 24, 28 y 31 enero y 1–2 febrero. Los $10,000 MXN son una provisión potencialmente corta, no un precio cerrado. Presupuesto integral de $81,981 MXN conservado como estimación, no aprobado como definitivo.
 - Prueba Node añadida: fotos correctas y alternativas del día 6, estructura del resumen de pases y suplemento; GitHub Actions #41734499744: SUCCESS (JSON, JavaScript, Node y Chromium Desktop/Mobile).
 - **Siguiente acción:** verificar prueba y carga visual externa de fotos, cotizar en SBB cada trayecto nacional con y sin Half Fare, recalcular diferencia real y cerrar presupuesto antes de merge.
+
+
+## Auditoría comparada adicional y avance económico · 2026-11-03
+- Tres pasadas sobre Suiza vs `italia-norte-2027` y guías: (1) Panorama, 12 meses, itinerario, 10 noches, 4 hoteles; (2) referencias de fotografías (14 claves), tarifas sin cotización = `price: null`, estado `planning`, 8 notas comparativas y enlaces de hoteles; (3) reconciliación de `expenses` ($81,981 MXN), vuelos sin duplicación, comida $9,000 y escenarios de riesgo.
+- **Error material corregido:** CHF 102 de Gornergrat NO es ida/vuelta convencional en tren, sino Winter Pass con equipamiento; tarifa con Half Fare CHF 72 (no CHF 51). Precio del tren convencional de enero 2027 sigue por cotizar.
+- **Nueva información confirmada:** pase Jungfrau 3 días CHF 176, Top Ticket CHF 63, Swiss Half Fare Card CHF 150; reserva de asiento Luzern–Interlaken Express CHF 12 opcional (02/11/2026–30/04/2027), sin suplemento panorámico obligatorio.
+- **Comparación visible:** `railSummary` ahora se muestra en desplegable dentro de Movilidad, con puntos de equilibrio matemáticos (no tarifas SBB). Prueba de navegador abre el desplegable antes de leerlo, evitando falsos negativos.
+- **Segundo error de presentación corregido:** partida `expenses.category=transport` de $10,000 se sumaba al total pero faltaba en el desglose; `budget-table.js` ahora la presenta con categoría «Transporte terrestre · provisión global». El presupuesto revela también supuestos y sensibilidad de +$5,000/+10,000 ($86,981/$91,981 MXN), sin presentar escenarios como cotizaciones.
+- Se añadieron reglas de prevención en guía editorial y checklist: distinción de productos, comparación renderizada, partidas visibles, precio `null` cuando no esté cotizado.
+- **CI:** ejecución de cambios de componentes #41736632352 SUCCESS; ejecución de documentación #41736714762 completando navegador al momento de registrar. Las pruebas cubren 20 viajes, escritorio/móvil y errores de JS/JSON.
+- **Estado:** Panorama, Mapa, Temporadas, Experiencias, Reservaciones (planeación), Alojamientos (candidatos) y Día por día completos en contenido y auditoría de datos. Movilidad y Presupuesto ahora tienen un modelo comparativo verificable, pero siguen **pendientes de cotizaciones exactas** de trenes nacionales, hoteles y Gornergrat, y de conciliación final.
+- **Próximo paso:** consultar billetes reales en SBB para 23/24/28/31 enero y 1/2 febrero (clase 2, adulto 1, con y sin tarjeta), cotizar Gornergrat ferroviario sin paquete y hacer auditoría final de imágenes externas; entonces elegir pases y ajustar el rango presupuestario.
