@@ -23,6 +23,18 @@ const assert = require('node:assert/strict');
       }));
       await page.goto('http://127.0.0.1:8765/', { waitUntil: 'domcontentloaded' });
       await page.locator('.tripcard').first().waitFor();
+      const heroBounds = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').boundingBox();
+      assert.ok(heroBounds, 'El hero de Inicio debe estar visible');
+      if (viewport.width > 800) {
+        assert.ok(heroBounds.height <= 305, 'El hero de escritorio debe ser compacto: ' + heroBounds.height);
+        assert.ok(heroBounds.height >= 250, 'El hero debe conservar espacio suficiente para el texto');
+      }
+      const heroCopy = page.locator('.atlas-home-hero-immersive .atlas-home-hero-copy');
+      const copyBounds = await heroCopy.boundingBox();
+      assert.ok(copyBounds && copyBounds.y >= heroBounds.y - 1 &&
+        copyBounds.y + copyBounds.height <= heroBounds.y + heroBounds.height + 2,
+        'El texto del hero debe quedar dentro de la fotografía');
+
       // Solo los primeros cuatro viajes siguen siendo protagonistas de la portada.
       const featuredCards = page.locator('#viajes .tripcard');
       const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
