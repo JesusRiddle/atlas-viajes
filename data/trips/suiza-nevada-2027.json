@@ -54,11 +54,11 @@
   "experiences": [
     {
       "city": "Lucerna",
-      "description": "Recorre Kapellbrücke y la torre del Agua, Weinmarkt, las fachadas del casco antiguo y la orilla del lago de los Cuatro Cantones. Acércate al monumento del León si el tiempo y la luz lo permiten; prueba una sopa de cebada o un plato caliente local."
+      "description": "Cruza el Kapellbrücke y el casco antiguo entre plazas pintadas, iglesias y orillas del lago. Descubre la especialidad local Luzerner Chügelipastete, un hojaldre tradicional relleno de ragú."
     },
     {
       "city": "Grindelwald",
-      "description": "Disfruta las vistas del Eiger entre chalets nevados. Sube a First para sus miradores y Cliff Walk solamente si funcionan los remontes y la pasarela. Para comer, rösti o fondue de queso; no es necesario esquiar."
+      "description": "Contempla el Eiger desde chalets de madera y sube a First solo si está operativo. En el Oberland bernés, prueba rösti, Berner Alpkäse y Älplermagronen."
     },
     {
       "city": "Lauterbrunnen y Wengen",
@@ -74,11 +74,11 @@
     },
     {
       "city": "Zermatt",
-      "description": "Recorre la Bahnhofstrasse y el casco antiguo de chalets de madera. Si el Matterhorn está despejado, sube en el tren de cremallera a Gornergrat; usa el segundo día para Sunnegga o intentar de nuevo la vista. Prueba raclette y chocolate suizo; no esperar reflejo líquido de Riffelsee en enero."
+      "description": "Recorre la Bahnhofstrasse y las casas tradicionales antes de subir al Gornergrat con cielo despejado. Prueba raclette de Valais, Walliser Trockenfleisch y cholera, pastel salado típico del cantón."
     },
     {
       "city": "Zúrich y Kilchberg",
-      "description": "Visita Niederdorf, Grossmünster, Lindenhof y el paseo junto al Limmat. En Kilchberg entra a Lindt Home of Chocolate, su exposición y fuente de chocolate. Disfruta Zürcher Geschnetzeltes (versión sin lácteos si se necesita) o birchermüesli adaptado."
+      "description": "Descubre Niederdorf, Grossmünster y los paseos junto al Limmat antes del museo Lindt en Kilchberg. Prueba Zürcher Geschnetzeltes, Zürcher Lebkuchen y Luxemburgerli."
     }
   ],
   "days": [
@@ -90,8 +90,8 @@
       "am": "1. Revisar pasaporte, documentación y cobertura del seguro antes de salir de casa.\n2. Realizar check-in del itinerario aéreo completo; comprobar que ambos vuelos de la ida estén protegidos en una misma reserva y revisar equipaje.\n3. Salir hacia MEX con margen para tráfico y llegar unas 3 horas antes de la salida, si el operador así lo recomienda.",
       "pm": "1. Salida MEX 11:25, solo como referencia de cotización; verificar fecha, terminal y hora de embarque reales.\n2. Volar hacia Madrid; descansar, hidratarse y conservar a mano tarjeta de embarque del siguiente tramo.",
       "night": "1. Noche en tránsito hacia Suiza; no se reserva hotel para el 22.\n2. La escala anunciada de 2 h 40 min está pendiente de reconfirmar, especialmente el control de pasaportes y las terminales.",
-      "mobility": "• MEX → Madrid-Barajas → Zürich Flughafen: dos segmentos aéreos, no vuelo directo MEX–ZRH.\n• Cotización total de referencia $20,331 MXN (03/11/2026), sin compra; confirmar equipaje, tarifa y protección de la conexión.",
-      "note": "• Llevar adaptador suizo tipo J, ropa térmica y calzado impermeable en equipaje de cabina.\n• No reservar tren con salida ajustada al aterrizaje del sábado.\n• Una conexión por Madrid puede involucrar trámites Schengen antes del vuelo Madrid–Zúrich.",
+      "mobility": "• *Vuelo internacional:* MEX → Madrid-Barajas → Zürich Flughafen: dos segmentos aéreos, no vuelo directo MEX–ZRH.\n• *Conexión protegida:* Cotización total de referencia $20,331 MXN (03/11/2026), sin compra; confirmar equipaje, tarifa y protección de la conexión.",
+      "note": "• *Equipaje térmico:* Llevar adaptador suizo tipo J, ropa térmica y calzado impermeable en equipaje de cabina.\n• *Tren posterior al aterrizaje:* No reservar tren con salida ajustada al aterrizaje del sábado.\n• *Escala en Madrid:* Una conexión por Madrid puede involucrar trámites Schengen antes del vuelo Madrid–Zúrich.",
       "spend": null,
       "places": [],
       "headerPlaces": [
@@ -109,14 +109,17 @@
       "am": "1. Conexión y llegada de referencia a ZRH hacia las 10:00; no es horario confirmado.\n2. Completar control de entrada, recoger maleta y localizar la estación Zürich Flughafen bajo el aeropuerto.",
       "pm": "1. Tomar un tren SBB hacia Luzern Bahnhof (~1 h 10 min, directo o con cambio según horario).\n2. Dejar equipaje en el ibis budget Luzern City o en consigna si aún no hay habitación.\n3. Priorizar Kapellbrücke, Wasserturm, Weinmarkt y paseos por las calles históricas; sumar orilla del lago o monumento del León solo con luz y energía.",
       "night": "1. Cena temprana por el casco antiguo, evitando traslados largos con frío.\n2. Dormir en Lucerna (una noche; hotel candidato, no reservado).",
-      "mobility": "• Zürich Flughafen → Luzern Bahnhof por SBB: buscar conexión tras migración; ~1 h 10 min según servicio.\n• Luzern Bahnhof → ibis budget Luzern City: aproximadamente 1 km; caminar solo si equipaje y clima lo permiten, o usar transporte urbano.\n• Hotel → Kapellbrücke y casco antiguo: caminar en rutas señalizadas.",
-      "note": "• No programar Rigi como obligación: entre migración, tren, check-in y pocas horas de luz, reduce el tiempo para Lucerna.\n• Los horarios del domingo siguiente no se ven afectados por un check-in tardío, pero conviene descansar.",
+      "mobility": "• *Aeropuerto → Lucerna:* Zürich Flughafen → Luzern Bahnhof por SBB: buscar conexión tras migración; ~1 h 10 min según servicio.\n• *Estación → hotel:* Luzern Bahnhof → ibis budget Luzern City: aproximadamente 1 km; caminar solo si equipaje y clima lo permiten, o usar transporte urbano.\n• *Paseo por el centro:* Hotel → Kapellbrücke y casco antiguo: caminar en rutas señalizadas.",
+      "note": "• *Monte Rigi opcional:* No programar Rigi como obligación: entre migración, tren, check-in y pocas horas de luz, reduce el tiempo para Lucerna.\n• *Descanso y luz natural:* Los horarios del domingo siguiente no se ven afectados por un check-in tardío, pero conviene descansar.",
       "spend": null,
       "places": [
         "lucerne",
         "lake-lucerne"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Zürich Flughafen · llegada referencial",
+        "Lucerna · casco antiguo"
+      ],
       "hotel": "lucerna-ibis",
       "transportRefs": [
         "airport-arrival"
@@ -140,13 +143,16 @@
       "am": "1. Desayunar y hacer check-out sin prisas; caminar o trasladarse a Luzern Bahnhof.\n2. Localizar plataforma del Luzern–Interlaken Express, guardar equipaje en zona autorizada y elegir ventana para fotografiar lagos y montañas.",
       "pm": "1. Tren escénico Luzern → Interlaken Ost (~1 h 50 min), incluido en la red ferroviaria normal.\n2. Cambiar al Berner Oberland-Bahn hacia Grindelwald (~35 min), dejando margen para transbordo.\n3. Llegar al Hotel Tschuggen (candidato), depositar maletas y pasear por Dorfstrasse y miradores cercanos del Eiger.",
       "night": "1. Cena local —rösti o sopa caliente— y primera de cuatro noches en Grindelwald.\n2. Consultar webcams y operación del teleférico First para decidir el orden de las excursiones del 25–27.",
-      "mobility": "• Luzern Bahnhof → Interlaken Ost en Luzern–Interlaken Express; Interlaken Ost → Grindelwald Bahnhof en BOB.\n• Grindelwald Bahnhof → Hotel Tschuggen a pie por centro del pueblo; calzado con agarre por hielo.\n• No se requiere suplemento tipo Glacier Express, pero sí billete válido para todo el trayecto.",
-      "note": "• Reservar alrededor de 20 minutos entre trenes cuando haya opciones, o confirmar una correspondencia protegida en SBB.\n• Pase Jungfrau de tres días pensado para 25–27: el trayecto panorámico del 24 NO queda automáticamente cubierto.",
+      "mobility": "• *Tren panorámico:* Luzern Bahnhof → Interlaken Ost en Luzern–Interlaken Express; Interlaken Ost → Grindelwald Bahnhof en BOB.\n• *Interlaken → Grindelwald:* Grindelwald Bahnhof → Hotel Tschuggen a pie por centro del pueblo; calzado con agarre por hielo.\n• *Validación de billete:* No se requiere suplemento tipo Glacier Express, pero sí billete válido para todo el trayecto.",
+      "note": "• *Margen de conexión:* Reservar alrededor de 20 minutos entre trenes cuando haya opciones, o confirmar una correspondencia protegida en SBB.\n• *Cobertura del pase:* Pase Jungfrau de tres días pensado para 25–27: el trayecto panorámico del 24 NO queda automáticamente cubierto.",
       "spend": null,
       "places": [
         "swiss27-grindelwald-winter"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Luzern–Interlaken Express",
+        "Grindelwald · primera noche"
+      ],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": [
         "lucerne-grindelwald"
@@ -174,14 +180,16 @@
       "am": "1. Comprobar webcams, estado de la góndola Grindelwald–First y apertura de First Cliff Walk.\n2. Con buena visibilidad, salir hacia la estación del teleférico en el pueblo, subir y apreciar el panorama hacia Eiger y Wetterhorn.",
       "pm": "1. Recorrer la pasarela Cliff Walk únicamente cuando esté abierta y no haya riesgo de hielo o viento.\n2. Almorzar en área habilitada o volver al pueblo y pasear con calma entre chalets.\n3. Si First está cerrado, convertir el día en paseo por Grindelwald y cambiar la excursión con el día 27.",
       "night": "1. Cena y descanso en Grindelwald; no acumular otra excursión de pago.\n2. Verificar operativa del día siguiente hacia Lauterbrunnen, Wengen y Mürren.",
-      "mobility": "• Pueblo de Grindelwald → estación Firstbahn caminando o transporte urbano.\n• Góndola Firstbahn ida y vuelta; revisar si está cubierta por el pase peatonal Jungfrau 25–27 (referencia CHF 176 ≈ $4,040 MXN).\n• No confundir el pase de peatones con acceso a todas las actividades de aventura.",
-      "note": "• Día 1 del posible pase peatonal de tres días. La tarjeta todavía es candidata, no está comprada.\n• No visitar Bachalpsee como lago abierto: nieve y senderos altos pueden hacerlo inaccesible.",
+      "mobility": "• *Grindelwald → First:* Pueblo de Grindelwald → estación Firstbahn caminando o transporte urbano.\n• *Cobertura del pase:* Góndola Firstbahn ida y vuelta; revisar si está cubierta por el pase peatonal Jungfrau 25–27 (referencia CHF 176 ≈ $4,040 MXN).\n• *Actividades opcionales:* No confundir el pase de peatones con acceso a todas las actividades de aventura.",
+      "note": "• *Inicio del pase:* Día 1 del posible pase peatonal de tres días. La tarjeta todavía es candidata, no está comprada.\n• *Senderos invernales:* No visitar Bachalpsee como lago abierto: nieve y senderos altos pueden hacerlo inaccesible.",
       "spend": null,
       "places": [
         "swiss27-grindelwald-winter",
         "first-cliff-walk"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Grindelwald-First · sujeto a operación"
+      ],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": []
     },
@@ -193,15 +201,19 @@
       "am": "1. Salir temprano de Grindelwald Bahnhof y tomar BOB hacia Zweilütschinen y Lauterbrunnen; confirmar horarios.\n2. Recorrer el valle, iglesia y miradores accesibles de Lauterbrunnen. No programar Trümmelbachfälle, normalmente cerradas en invierno.\n3. Subir a Wengen en tren de cremallera y pasear por el centro sin vehículos.",
       "pm": "1. Volver a Lauterbrunnen y tomar teleférico a Grütschalp, después tren de montaña a Mürren según operación.\n2. Fotografiar las vistas desde Mürren y comer con margen para el último tren de regreso.\n3. Deshacer la ruta vía Grütschalp, Lauterbrunnen y Zweilütschinen hasta Grindelwald.",
       "night": "1. Cena sencilla y descanso en Grindelwald.\n2. Si hay retrasos o mal tiempo, dejar Mürren opcional y dedicar tiempo suficiente a Wengen; ningún cambio de hotel.",
-      "mobility": "• Grindelwald → Zweilütschinen → Lauterbrunnen (BOB).\n• Lauterbrunnen ↔ Wengen (Wengernalpbahn); luego Lauterbrunnen ↔ Grütschalp (teleférico) ↔ Mürren (tren BLM).\n• Múltiples segmentos; confirmar la vigencia del pase peatonal en cada línea y los últimos servicios.",
-      "note": "• Día más intenso en transbordos; Wengen y Mürren son dos ramales diferentes que exigen regresar a Lauterbrunnen.\n• Mantener 20–30 min de holgura total por transbordos y un regreso antes del anochecer; no improvisar senderismo alpino.",
+      "mobility": "• *Grindelwald → Lauterbrunnen:* Grindelwald → Zweilütschinen → Lauterbrunnen (BOB).\n• *Wengen ida y vuelta:* Lauterbrunnen ↔ Wengen (Wengernalpbahn); luego Lauterbrunnen ↔ Grütschalp (teleférico) ↔ Mürren (tren BLM).\n• *Mürren ida y vuelta:* Múltiples segmentos; confirmar la vigencia del pase peatonal en cada línea y los últimos servicios.",
+      "note": "• *Transbordos de ramales:* Día más intenso en transbordos; Wengen y Mürren son dos ramales diferentes que exigen regresar a Lauterbrunnen.\n• *Regreso con luz:* Mantener 20–30 min de holgura total por transbordos y un regreso antes del anochecer; no improvisar senderismo alpino.",
       "spend": null,
       "places": [
         "swiss27-lauterbrunnen-winter",
         "swiss27-wengen-winter",
         "swiss27-murren-winter"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Lauterbrunnen",
+        "Wengen",
+        "Mürren · condicional"
+      ],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": [],
       "mobilityLinks": [
@@ -235,18 +247,16 @@
       "am": "1. Revisar webcam y cota de nubes antes de decidir ascenso premium.\n2. Opción A con visibilidad excepcional: Jungfraujoch vía Grindelwald Terminal/Eiger Express y tren de montaña, con suplemento válido según pase y condiciones 2027.\n3. Opción B más económica: Männlichen/Kleine Scheidegg, solo rutas peatonales habilitadas.",
       "pm": "1. Destinar la tarde al mirador elegido, no a ambos; descender antes del último servicio.\n2. Si hay viento, temporal o visibilidad nula, recorrer Grindelwald y disfrutar una comida tranquila; guardar presupuesto de la excursión no realizada.",
       "night": "1. Última de cuatro noches en Grindelwald.\n2. Preparar check-out, ropa y billetes para el traslado del 28 hacia Zermatt.",
-      "mobility": "• A: Grindelwald Terminal → Eiger Express → Eigergletscher → Jungfraujoch, con billete o suplemento independiente.\n• B: Grindelwald Terminal → Männlichen en góndola, o acceso hacia Kleine Scheidegg por tren, según apertura.\n• La tarjeta peatonal de tres días no incluye necesariamente Jungfraujoch: verificar precio del Top Ticket vigente.",
-      "note": "• Priorizar visibilidad sobre altura: Jungfraujoch puede ser caro y nublado.\n• Día 3 del eventual pase Jungfrau 25–27; el suplemento CHF 63 publicado para invierno 2025/26 NO es tarifa confirmada de enero 2027.\n• Los senderos de verano no son un plan B seguro en enero.",
+      "mobility": "• *Opción A · Jungfraujoch:* A: Grindelwald Terminal → Eiger Express → Eigergletscher → Jungfraujoch, con billete o suplemento independiente.\n• *Opción B · Männlichen:* B: Grindelwald Terminal → Männlichen en góndola, o acceso hacia Kleine Scheidegg por tren, según apertura.\n• *Billetes de montaña:* La tarjeta peatonal de tres días no incluye necesariamente Jungfraujoch: verificar precio del Top Ticket vigente.",
+      "note": "• *Priorizar visibilidad:* Priorizar visibilidad sobre altura: Jungfraujoch puede ser caro y nublado.\n• *Suplemento Jungfraujoch:* Día 3 del eventual pase Jungfrau 25–27; el suplemento CHF 63 publicado para invierno 2025/26 NO es tarifa confirmada de enero 2027.\n• *Rutas de invierno:* Los senderos de verano no son un plan B seguro en enero.",
       "spend": null,
-      "places": [
-        "swiss27-wengen-winter"
+      "places": [],
+      "headerPlaces": [
+        "Jungfraujoch o Männlichen · según visibilidad"
       ],
-      "headerPlaces": [],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": [],
-      "optionalPlaces": [
-        "first-cliff-walk"
-      ]
+      "optionalPlaces": []
     },
     {
       "n": 7,
@@ -256,13 +266,16 @@
       "am": "1. Desayunar y hacer check-out del Tschuggen con margen.\n2. Tomar tren desde Grindelwald Bahnhof hacia Interlaken Ost; continuar a Spiez y Visp con correspondencias verificadas.",
       "pm": "1. En Visp cambiar al tren Matterhorn Gotthard Bahn para llegar a Zermatt; duración total orientativa 3.5–4.5 horas.\n2. Hacer check-in o dejar equipaje en Hotel Testa Grigia, candidato a unos minutos de Zermatt Bahnhof.\n3. Explorar Bahnhofstrasse y chalets del casco antiguo; buscar perspectivas del Matterhorn si está despejado.",
       "night": "1. Cena con raclette u otra especialidad suiza y primera noche en Zermatt.\n2. Revisar clima y horario de Gornergrat para el viernes 29.",
-      "mobility": "• Grindelwald → Interlaken Ost (BOB) → Spiez (SBB) → Visp (SBB) → Zermatt (MGB).\n• El pase Jungfrau previsto terminó el 27; este trayecto nacional debe cotizarse aparte, con o sin Half Fare Card.\n• No hacer conexiones ajustadas con equipaje y nieve.",
-      "note": "• Zermatt restringe vehículos particulares ordinarios; desplazarse a pie entre estación y hotel.\n• No comprar un ascenso a Gornergrat sin comprobar visibilidad.",
+      "mobility": "• *Trenes interurbanos:* Grindelwald → Interlaken Ost (BOB) → Spiez (SBB) → Visp (SBB) → Zermatt (MGB).\n• *Pase regional:* El pase Jungfrau previsto terminó el 27; este trayecto nacional debe cotizarse aparte, con o sin Half Fare Card.\n• *Conexiones y equipaje:* No hacer conexiones ajustadas con equipaje y nieve.",
+      "note": "• *Zermatt peatonal:* Zermatt restringe vehículos particulares ordinarios; desplazarse a pie entre estación y hotel.\n• *Gornergrat condicionado:* No comprar un ascenso a Gornergrat sin comprobar visibilidad.",
       "spend": null,
       "places": [
         "swiss27-zermatt-winter"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Interlaken Ost · Spiez · Visp",
+        "Zermatt · llegada"
+      ],
       "hotel": "zermatt-testa",
       "transportRefs": [
         "grindelwald-zermatt"
@@ -298,14 +311,16 @@
       "am": "1. Comprobar el parte meteorológico y webcam de Gornergrat antes de comprar el billete.\n2. Si el Matterhorn está visible, caminar a Gornergrat Bahn junto a la estación y subir en tren de cremallera.",
       "pm": "1. Contemplar panorámica del macizo, glaciares y cumbres desde zonas habilitadas, sin entrar en pistas de esquí.\n2. Regresar a Zermatt y almorzar o visitar el casco antiguo con luz de tarde.",
       "night": "1. Segunda noche en Zermatt, con cena y fotografías nocturnas si las condiciones lo permiten.\n2. Si el ascenso se canceló por clima, reservar el día 30 como segunda oportunidad.",
-      "mobility": "• Zermatt GGB → Gornergrat en tren de cremallera ida y vuelta.\n• Consultar tarifas de ida/vuelta y descuento Half Fare Card; no comprar dos sencillos sin comparar con el billete redondo.\n• Accesos a miradores dependen de nieve y seguridad.",
-      "note": "• Gornergrat es prioridad, pero cielo despejado pesa más que fecha exacta.\n• No esperar el reflejo del Matterhorn en Riffelsee: puede estar congelado o cubierto de nieve en enero.",
+      "mobility": "• *Tren de cremallera:* Zermatt GGB → Gornergrat en tren de cremallera ida y vuelta.\n• *Tarifa de ida y vuelta:* Consultar tarifas de ida/vuelta y descuento Half Fare Card; no comprar dos sencillos sin comparar con el billete redondo.\n• *Senderos y miradores:* Accesos a miradores dependen de nieve y seguridad.",
+      "note": "• *Matterhorn y nubes:* Gornergrat es prioridad, pero cielo despejado pesa más que fecha exacta.\n• *Riffelsee en invierno:* No esperar el reflejo del Matterhorn en Riffelsee: puede estar congelado o cubierto de nieve en enero.",
       "spend": null,
       "places": [
         "swiss27-gornergrat-winter",
         "gornergrat"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Gornergrat · vista del Matterhorn"
+      ],
       "hotel": "zermatt-testa",
       "transportRefs": []
     },
@@ -317,13 +332,16 @@
       "am": "1. Si no pudiste subir a Gornergrat, intentar este día si mejora la visibilidad.\n2. Si Gornergrat ya se cumplió, pasear por Zermatt entre construcciones de madera y buscar un ángulo distinto del Matterhorn.",
       "pm": "1. Como alternativa suave, subir a Sunnegga si opera y el tiempo acompaña; verificar precio y tren funicular.\n2. Chocolate caliente o tarde relajada en el pueblo. Matterhorn Glacier Paradise solo con gran visibilidad y gasto adicional justificado.",
       "night": "1. Última noche en Zermatt; preparar el traslado del domingo hacia Zúrich.",
-      "mobility": "• Paseos a pie sin transporte obligatorio; Sunnegga opcional con funicular desde su estación subterránea.\n• En caso de repetir Gornergrat por clima, no duplicar el precio presupuestado: se realiza solo una vez.",
-      "note": "• Reserva meteorológica deliberada; no es un día vacío.\n• Preferible no usar dos ascensos caros al mismo macizo si el presupuesto se acerca al límite.",
+      "mobility": "• *Pueblo y opcionales:* Paseos a pie sin transporte obligatorio; Sunnegga opcional con funicular desde su estación subterránea.\n• *Evitar duplicación:* En caso de repetir Gornergrat por clima, no duplicar el precio presupuestado: se realiza solo una vez.",
+      "note": "• *Día de contingencia:* Reserva meteorológica deliberada; no es un día vacío.\n• *Control de gastos:* Preferible no usar dos ascensos caros al mismo macizo si el presupuesto se acerca al límite.",
       "spend": null,
       "places": [
         "swiss27-zermatt-winter"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Zermatt",
+        "Sunnegga · opcional"
+      ],
       "hotel": "zermatt-testa",
       "transportRefs": []
     },
@@ -335,13 +353,16 @@
       "am": "1. Desayunar y hacer check-out en Zermatt; dirigirse a su estación con margen.\n2. Tomar tren a Visp y conectar hacia Berna y Zürich HB (ruta orientativa a confirmar).",
       "pm": "1. Dejar equipaje en Fred Guest House o consigna cercana y almorzar.\n2. Pasear por Niederdorf, Grossmünster (exterior o interior según horario) y Lindenhof sin depender de tiendas abiertas.",
       "night": "1. Primera noche en Zúrich. Cena en el casco antiguo.\n2. Revisar entrada de Lindt y conexiones a Kilchberg del lunes.",
-      "mobility": "• Zermatt Bahnhof → Visp → Bern → Zürich HB por MGB/SBB.\n• Trayecto aprox. 3.5–4 h; precio y horarios de enero 2027 por verificar.\n• Zürich HB → Fred Guest House, Konradstrasse 11, a pie por rutas urbanas despejadas.",
-      "note": "• Domingo: no asumir apertura de tiendas en el centro; restaurantes, estaciones y atractivos tienen horarios propios.\n• Evitar acumular museos después del traslado.",
+      "mobility": "• *Zermatt → Zúrich:* Zermatt Bahnhof → Visp → Bern → Zürich HB por MGB/SBB.\n• *Tiempo de traslado:* Trayecto aprox. 3.5–4 h; precio y horarios de enero 2027 por verificar.\n• *Estación → hotel:* Zürich HB → Fred Guest House, Konradstrasse 11, a pie por rutas urbanas despejadas.",
+      "note": "• *Comercios en domingo:* Domingo: no asumir apertura de tiendas en el centro; restaurantes, estaciones y atractivos tienen horarios propios.\n• *Ritmo del día:* Evitar acumular museos después del traslado.",
       "spend": null,
       "places": [
         "zurich"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Zermatt → Zürich HB",
+        "Niederdorf y Lindenhof"
+      ],
       "hotel": "zurich-fred",
       "transportRefs": [
         "zermatt-zurich"
@@ -373,14 +394,17 @@
       "am": "1. Tomar transporte público de Zúrich a Kilchberg; reservar margen para llegar a la entrada del Lindt Home of Chocolate.\n2. Entrar en franja objetivo 10:00, aún sin comprar; recorrer exposición y fuente de chocolate.",
       "pm": "1. Regresar por tren/autobús según ruta SBB/ZVV, almorzar por el centro.\n2. Pasear por la orilla del lago, calles históricas y Lindenhof si faltó el domingo; sin Kunsthaus.",
       "night": "1. Última noche en Zúrich.\n2. Preparar documentación, equipaje y traslado al aeropuerto.",
-      "mobility": "• Zürich HB → Kilchberg (tren S-Bahn y caminata o autobús ZVV hasta la zona de Lindt), vuelta equivalente.\n• Consultar SBB/ZVV para el 1 febrero; no asumir que el pase Jungfrau cubre Zúrich.\n• Tarifa adulto Lindt CHF 17 (≈ $390 MXN) publicada, entrada sin reservar.",
-      "note": "• La visita del lunes debe confirmarse en calendario oficial 2027.\n• Revisa ingredientes y alérgenos si haces degustación de chocolate; hay productos con leche.",
+      "mobility": "• *Zúrich → Kilchberg:* Zürich HB → Kilchberg (tren S-Bahn y caminata o autobús ZVV hasta la zona de Lindt), vuelta equivalente.\n• *Horario oficial:* Consultar SBB/ZVV para el 1 febrero; no asumir que el pase Jungfrau cubre Zúrich.\n• *Entrada a Lindt:* Tarifa adulto Lindt CHF 17 (≈ $390 MXN) publicada, entrada sin reservar.",
+      "note": "• *Horario y entrada:* La visita del lunes debe confirmarse en calendario oficial 2027.\n• *Alérgenos:* Revisa ingredientes y alérgenos si haces degustación de chocolate; hay productos con leche.",
       "spend": null,
       "places": [
         "swiss27-lindt",
         "zurich"
       ],
-      "headerPlaces": [],
+      "headerPlaces": [
+        "Lindt Home of Chocolate · Kilchberg",
+        "Lago de Zúrich"
+      ],
       "hotel": "zurich-fred",
       "transportRefs": [],
       "mobilityLinks": [
@@ -402,8 +426,8 @@
       "am": "1. Desayunar y dejar equipaje en el hotel o preparar check-out.\n2. Paseo corto por las calles cercanas a Zürich HB solo si el vuelo mantiene la salida cotizada 18:50.",
       "pm": "1. Salir hacia Zürich Flughafen con al menos 3 horas de antelación para documentación y seguridad, ajustadas a la aerolínea.\n2. Embarcar en vuelo de referencia ZRH → París-CDG → CDMX; salida del 2 febrero 18:50, sujeta a compra y cambios.",
       "night": "1. Tránsito nocturno; llegada de referencia a MEX el miércoles 3 febrero a las 04:20.\n2. No hay noche de hotel adicional en Suiza, pero conviene valorar si necesitarás también libre el miércoles 3 para descansar.",
-      "mobility": "• Zürich HB → Zürich Flughafen por SBB (~10–15 min), billete urbano válido.\n• ZRH → CDG → MEX, dos tramos aéreos en conexión; verificar terminal, equipaje y protección.\n• No comprar actividades rígidas después de mediodía.",
-      "note": "• Días laborales del itinerario (22 ene–2 feb): 8, sin descontar festivos o vacaciones propios. La llegada a CDMX el miércoles 3 muy temprano podría requerir un noveno día de permiso.\n• Opción Lufthansa más barata sale temprano el 2: no permitiría paseo matutino; no intercambiarla sin actualizar el día 12.",
+      "mobility": "• *Zúrich → aeropuerto:* Zürich HB → Zürich Flughafen por SBB (~10–15 min), billete urbano válido.\n• *Vuelo de regreso:* ZRH → CDG → MEX, dos tramos aéreos en conexión; verificar terminal, equipaje y protección.\n• *Margen antes de salir:* No comprar actividades rígidas después de mediodía.",
+      "note": "• *Permiso laboral:* Días laborales del itinerario (22 ene–2 feb): 8, sin descontar festivos o vacaciones propios. La llegada a CDMX el miércoles 3 muy temprano podría requerir un noveno día de permiso.\n• *Vuelo alternativo:* Opción Lufthansa más barata sale temprano el 2: no permitiría paseo matutino; no intercambiarla sin actualizar el día 12.",
       "spend": null,
       "places": [],
       "headerPlaces": [
@@ -1022,7 +1046,7 @@
   "ticketNotes": [
     {
       "title": "Trenes nacionales · SBB",
-      "note": "Cotizar Luzern–Grindelwald, Grindelwald–Zermatt, Zermatt–Zúrich y aeropuerto por separado en ambos sentidos aplicables. Los tiempos son aproximados. Comparar billetes normales, Supersaver y pases; un pase de descuento no es billete de transporte.",
+      "note": "Comprar en SBB los billetes del aeropuerto, Lucerna–Grindelwald, Grindelwald–Zermatt y Zermatt–Zúrich una vez validado el horario. Comparar tarifa flexible y Supersaver: el billete con descuento puede exigir un tren concreto; verificar cambios, reembolsos y necesidad de billete por cada segmento.",
       "rules": "Validar en SBB fecha, ruta, clase, tren y condiciones de cambio. Si se usa Supersaver, respetar el servicio específico contratado.",
       "url": "https://www.sbb.ch/en"
     },
@@ -1033,13 +1057,8 @@
     },
     {
       "title": "Jungfrau Winter Hiking and Sledging Pass · CHF 176 (≈ $4,040 MXN) / 3 días",
-      "note": "El pase de 3 días cubre, entre otros, Grindelwald–First, trenes del valle Interlaken Ost–Grindelwald/Lauterbrunnen y trenes/remontes hacia Wengen, Mürren y Männlichen según área oficial. Enero 25–27 está en la temporada 2026/27 y la tarifa baja indicada, sujeto a condiciones oficiales. No incluye automáticamente Jungfraujoch; comprobar Top Ticket 2027 antes de comprar.",
+      "note": "Pase peatonal de tres días candidato para 25–27 enero; consultar cobertura por operador y fechas antes de comprar. No incluye automáticamente Jungfraujoch y no sustituye billetes nacionales fuera de su área. Asegurar que el billete elegido sea válido para la ida y la vuelta.",
       "url": "https://www.jungfrau.ch/en-gb/jungfrau-ski-region/jungfrau-region-hiking-sledging-pass/"
-    },
-    {
-      "title": "Montaña · seguridad",
-      "note": "Confirmar webcam, viento, estado de remontes, últimos descensos y caminos peatonales. No presupuestar ascensos repetidos ni convertir pase invernal en obligación de esquiar.",
-      "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
     }
   ],
   "attractionTerms": [],
@@ -1210,55 +1229,55 @@
   ],
   "stays": [],
   "seasonality": {
-    "summary": "Las fechas de enero favorecen nieve en destinos alpinos altos, no en ciudades bajas. Para una alternativa verde, junio y septiembre ofrecen mejor acceso a senderos y vistas de praderas; no mezclar actividades de ambas temporadas.",
+    "summary": "Rangos mensuales orientativos de máximas diurnas entre Grindelwald (pueblo) y Zúrich/Lucerna, no temperaturas mínimas ni pronóstico: el contraste con First, Gornergrat y Jungfraujoch es mucho mayor. Referencias climatológicas generales (1991–2020), actualizadas como orientación para planear, no para predecir 2027. Enero y febrero favorecen nieve en altura y pueblos alpinos, con días cortos y mayor demanda por esquí; junio y septiembre favorecen alternativas verdes y senderismo sujeto a apertura. Julio y agosto elevan ocupación y precios, noviembre puede coincidir con mantenimiento de remontes. Fuentes de contraste: MeteoSwiss y tablas climáticas regionales; validar condiciones en cada montaña antes de subir.",
     "months": {
       "10": {
         "status": "conditional",
-        "description": "Otoño y posibles primeras nevadas en altura; cierres progresivos y vacaciones escolares regionales."
+        "description": "10–14 °C. Otoño y posibles primeras nevadas en altura; cierres progresivos y vacaciones escolares regionales."
       },
       "11": {
         "status": "avoid",
-        "description": "Entremeses de mantenimiento entre verano y nieve, menos remontes abiertos y poca luz."
+        "description": "4–8 °C. Entremeses de mantenimiento entre verano y nieve, menos remontes abiertos y poca luz."
       },
       "12": {
         "status": "conditional",
-        "description": "Invierno emergente y mercados festivos; Navidad y Año Nuevo encarecen alojamientos."
+        "description": "-1–3 °C. Invierno emergente y mercados festivos; Navidad y Año Nuevo encarecen alojamientos."
       },
       "01": {
         "status": "recommended",
-        "description": "Invierno alpino; alta probabilidad de nieve en pueblos de altura, días breves y demanda de esquí. Zúrich puede no tener nieve."
+        "description": "-2–2 °C. Invierno alpino; alta probabilidad de nieve en pueblos de altura, días breves y demanda de esquí. Zúrich puede no tener nieve."
       },
       "02": {
         "status": "recommended",
-        "description": "Nieve habitual en altura, temperaturas frías; vacaciones de esquí elevan precios y afluencia."
+        "description": "0–4 °C. Nieve habitual en altura, temperaturas frías; vacaciones de esquí elevan precios y afluencia."
       },
       "03": {
         "status": "recommended",
-        "description": "Nieve en alta montaña y más luz; pueblos bajos pueden perder su cubierta blanca."
+        "description": "4–9 °C. Nieve en alta montaña y más luz; pueblos bajos pueden perder su cubierta blanca."
       },
       "04": {
         "status": "conditional",
-        "description": "Transición de invierno a primavera, nieve en cumbres y cierres de temporada en algunos remontes."
+        "description": "9–13 °C. Transición de invierno a primavera, nieve en cumbres y cierres de temporada en algunos remontes."
       },
       "05": {
         "status": "conditional",
-        "description": "Cascadas y valles verdes; nieve residual y senderos elevados no siempre transitables."
+        "description": "14–18 °C. Cascadas y valles verdes; nieve residual y senderos elevados no siempre transitables."
       },
       "06": {
         "status": "recommended",
-        "description": "Cascadas abundantes, praderas verdes y luz extensa; algunos senderos altos pueden seguir con nieve."
+        "description": "18–21 °C. Cascadas abundantes, praderas verdes y luz extensa; algunos senderos altos pueden seguir con nieve."
       },
       "07": {
         "status": "conditional",
-        "description": "Senderismo alpino con buena accesibilidad, pero temporada alta y mayor precio."
+        "description": "21–24 °C. Senderismo alpino con buena accesibilidad, pero temporada alta y mayor precio."
       },
       "08": {
         "status": "conditional",
-        "description": "Acceso estival amplio, alta ocupación y precios elevados, especialmente hasta mediados de mes."
+        "description": "20–23 °C. Acceso estival amplio, alta ocupación y precios elevados, especialmente hasta mediados de mes."
       },
       "09": {
         "status": "recommended",
-        "description": "Senderismo, clima más fresco y menor afluencia que agosto; buenas vistas con tiempo variable."
+        "description": "16–19 °C. Senderismo, clima más fresco y menor afluencia que agosto; buenas vistas con tiempo variable."
       }
     }
   },
@@ -1314,6 +1333,10 @@
     [
       "Rigi · horarios",
       "https://www.rigi.ch/en/inform/timetables"
+    ],
+    [
+      "Normales climáticas de Suiza (MeteoSwiss, 1991–2020)",
+      "https://opendatadocs.meteoswiss.ch/c-climate-data/c6-climate-normals"
     ]
   ],
   "sourceNote": null,
@@ -1323,18 +1346,18 @@
   ],
   "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y posible suplemento Jungfraujoch, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000; seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. Son provisiones, no tarifas reservables para enero de 2027. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
   "placeDescriptions": {
-    "lucerne": "El Puente de la Capilla y el casco antiguo son la primera parada; la nieve en la ciudad no está garantizada.",
-    "lake-lucerne": "Lago de los Cuatro Cantones, un paisaje de agua y montañas antes de entrar al Oberland.",
-    "swiss27-grindelwald-winter": "Grindelwald en invierno: chalets, vistas del Eiger y acceso ferroviario a los miradores nevados.",
-    "first-cliff-walk": "Pasarela panorámica de First; recorrido solo si el teleférico y la pasarela están operativos.",
-    "swiss27-lauterbrunnen-winter": "Valle glacial rodeado de paredes de roca; las cascadas pueden llevar poca agua o congelarse.",
-    "swiss27-wengen-winter": "Pueblo alpino sin automóviles, accesible en tren de cremallera desde Lauterbrunnen.",
-    "swiss27-murren-winter": "Mürren, sobre un balcón de montaña con vistas al macizo de Jungfrau.",
-    "swiss27-zermatt-winter": "Calles de Zermatt y Matterhorn bajo la nieve; la visibilidad depende del clima.",
-    "swiss27-gornergrat-winter": "Mirador alpino y vista al Matterhorn; la fotografía representa condiciones invernales posibles.",
-    "gornergrat": "Tren de cremallera a Gornergrat, recorrido escénico que se decide según visibilidad.",
-    "zurich": "Casco antiguo y río Limmat: aquí priorizamos historia y gastronomía, no encontrar nieve.",
-    "swiss27-lindt": "La gran fuente de chocolate es una de las visitas prioritarias en Kilchberg."
+    "lucerne": "En la ciudad vieja de Lucerna, el Kapellbrücke cruza el río Reuss bajo una cubierta de madera y conecta plazas históricas entre montañas.",
+    "lake-lucerne": "El lago de los Cuatro Cantones une bahías, pueblos y montañas; desde sus orillas en Lucerna se contempla el paisaje alpino sin un ascenso.",
+    "swiss27-grindelwald-winter": "Las casas de madera de Grindelwald se extienden bajo la cara norte del Eiger; las calles del pueblo permiten fotografiar el paisaje nevado.",
+    "first-cliff-walk": "La pasarela metálica First Cliff Walk recorre la ladera sobre Grindelwald y termina en una plataforma suspendida, accesible solo cuando la instalación está abierta.",
+    "swiss27-lauterbrunnen-winter": "El valle de Lauterbrunnen se reconoce por sus paredes escarpadas y cascadas; en invierno, nieve y hielo cambian el aspecto de sus senderos.",
+    "swiss27-wengen-winter": "Wengen es un pueblo alpino conectado por tren de cremallera desde Lauterbrunnen, con chalets y vistas sobre las montañas del Oberland bernés.",
+    "swiss27-murren-winter": "Mürren se asienta en una terraza elevada sobre Lauterbrunnen, rodeado de chalets y panorámicas hacia Eiger, Mönch y Jungfrau.",
+    "swiss27-zermatt-winter": "Las calles sin coches particulares de Zermatt enmarcan el Matterhorn, cuya silueta piramidal domina el paisaje alpino cuando las nubes se retiran.",
+    "swiss27-gornergrat-winter": "En días despejados, los miradores elevados de la región de Gornergrat ofrecen vistas de cumbres y glaciares junto a la característica pirámide del Matterhorn.",
+    "gornergrat": "El tren de cremallera asciende desde Zermatt hasta Gornergrat, un observatorio panorámico rodeado de cumbres de cuatro mil metros y glaciares.",
+    "zurich": "El casco antiguo de Zúrich reúne callejuelas, torres de iglesias y paseos junto al Limmat, que desemboca en el lago de la ciudad.",
+    "swiss27-lindt": "En Kilchberg, la gran fuente de chocolate del Lindt Home of Chocolate recibe a los visitantes antes de recorrer la exposición dedicada al cacao."
   },
   "optionalSection": null,
   "family": null,
