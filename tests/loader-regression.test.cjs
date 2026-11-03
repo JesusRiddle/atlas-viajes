@@ -383,6 +383,12 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
     assert.equal(trip.days.length, 12);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 10);
     assert.equal(trip.hotels.length, 4);
+    assert.equal(trip.majorTransport.length, 6);
+    assert.equal(trip.experiences.length, 7);
+    assert.ok(trip.hotels.every(h => h.mapsUrl && h.links?.[0]?.url), 'Cada alojamiento necesita Maps y enlace oficial');
+    assert.equal(trip.hotels.find(h => h.id === 'zurich-fred').address, 'Konradstrasse 11, 8005 Zürich, Suiza');
+    assert.ok(trip.days.filter(day => [2, 3, 7, 10, 12].includes(day.n)).every(day =>
+        day.transportRefs?.length && day.mobilityLinks?.length), 'Traslados principales requieren refs y mapa');
     assert.ok(trip.cover && places[trip.cover]?.photo?.src);
     assert.ok(trip.days.every(day => (day.places || []).every(key => places[key]?.photo?.src)));
     assert.equal(trip.expenses.reduce((sum, item) => sum + item.cost.amount, 0), 81981);
