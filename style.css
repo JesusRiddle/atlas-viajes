@@ -2298,3 +2298,8 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 @media(max-width:1000px){.home-ideas .ideas-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:720px){.home-ideas .ideas-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.home-ideas .idea-tripcard .cardphoto{height:130px}}
 @media(max-width:420px){.home-ideas .ideas-cards{grid-template-columns:1fr}.home-ideas .idea-tripcard{flex-direction:row}.home-ideas .idea-tripcard .cardphoto{height:auto;width:36%;min-height:135px;flex-shrink:0}.home-ideas .idea-tripcard .cardbody{min-width:0;flex:1}}
+
+/* Nueva ruta: tarjeta principal desde la primera captura, sin etiquetas de estado. */
+#viajes .home-photo-empty{width:100%;height:100%;background:linear-gradient(125deg,#e9eef0,#d5e0e2);}
+#viajes .tripcard .card-overview:empty{display:none}
+#viajes .tripcard .cardbody{flex:1}
