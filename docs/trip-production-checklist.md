@@ -92,6 +92,11 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 
 - [ ] En viajes nuevos la tarjeta «Clima y luz» tiene el encabezado COMPLETO coloreado, no solo un borde; muestra la etiqueta del estado y utiliza `pending` / «Por definir» cuando aún no se conoce la fecha. Comprobar los cuatro estados y que el CSS esté limitado al formato nuevo.
 
+## Comprobación de personas presupuestadas
+- [ ] Viajes nuevos: `travelerCount` declarado como entero positivo o `null` si está por definir.
+- [ ] Inicio y tabla comparativa muestran «Personas» usando el dato real; nunca inferir 1 desde `profile.solo` ni presentar `false`.
+- [ ] Importes originales siguen siendo del grupo; desglose y proyección por persona solo cuando existe `travelerCount`, sin multiplicaciones ni duplicaciones.
+
 ## QA de cierre · viajes en planeación a alto nivel
 - [ ] Mismo rango de presupuesto calculado en Inicio y Panorama; la tabla de Presupuesto identifica aparte subtotal registrado frente a proyección global sin sumar ambos.
 - [ ] Para cada vuelo A/B/C/D: total = gastos terrestres aplicables + SOLO un vuelo; excluir hotel y retorno de escenario contrario, entradas opcionales y cualquier duplicación.
