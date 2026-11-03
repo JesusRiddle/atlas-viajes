@@ -396,6 +396,28 @@ test('Panorama editorial de los cinco viajes desarrollados: exactamente tres ind
         /Clima y luz|Documentación y electricidad/);
 });
 
+test('Suiza nevada: contratos editoriales de temporadas, días y fotografías', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
+    const months = Object.values(trip.seasonality.months);
+    assert.equal(months.length, 12, 'Deben existir doce meses');
+    assert.ok(months.every(month => /[-−]?\d+\s*[–-]\s*[-−]?\d+\s*°C/.test(month.description)),
+        'Las tarjetas mensuales necesitan rango de temperatura');
+    assert.ok(trip.days.every(day => day.headerPlaces?.length > 0),
+        'Cada jornada debe tener lugares descriptivos en su cabecera');
+    for (const day of trip.days) {
+        for (const field of ['mobility', 'note']) {
+            assert.ok(day[field].split('\n').every(line => /^• \*[^*]+:\*/.test(line)),
+                'Día ' + day.n + ': ' + field + ' necesita títulos destacados de la guía');
+        }
+        for (const key of day.places || []) {
+            const caption = trip.placeDescriptions?.[key];
+            assert.ok(caption && caption.split(/\s+/).length >= 15 && caption.split(/\s+/).length <= 30,
+                'Foto ' + key + ' debe llevar un pie turístico de 15–30 palabras');
+        }
+    }
+    assert.equal(trip.expenses.reduce((sum, item) => sum + item.cost.amount, 0), 81981);
+});
+
 test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual sin duplicación', () => {
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
     const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
