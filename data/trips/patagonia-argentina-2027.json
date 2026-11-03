@@ -844,7 +844,7 @@
       "id": "flight-international",
       "type": "flight",
       "title": "Vuelo internacional · MEX ↔ Buenos Aires",
-      "selectedOption": null,
+      "selectedOption": "A",
       "options": [
         {
           "id": "A",
@@ -877,7 +877,17 @@
               ]
             }
           ],
-          "fares": [],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Referencia histórica 2026 · 2 personas",
+              "price": {
+                "amount": 24398,
+                "currency": "MXN"
+              },
+              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+            }
+          ],
           "notes": "Horarios copiados de la presentación para 2026; no hay vuelo ni tarifa disponible confirmados para 2027. El precio histórico ya está en gastos."
         }
       ],
@@ -887,13 +897,14 @@
           "label": "Consultar aerolínea",
           "url": "https://www.aeromexico.com/"
         }
-      ]
+      ],
+      "budgetIncludedIn": "flight-international"
     },
     {
       "id": "flight-domestic",
       "type": "flight",
       "title": "Vuelos nacionales · Buenos Aires ↔ El Calafate",
-      "selectedOption": null,
+      "selectedOption": "A",
       "options": [
         {
           "id": "A",
@@ -928,7 +939,17 @@
               ]
             }
           ],
-          "fares": [],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Referencia histórica 2026 · 2 personas",
+              "price": {
+                "amount": 23250,
+                "currency": "MXN"
+              },
+              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+            }
+          ],
           "notes": "Horarios y números de vuelo tomados de la presentación de 2026, sin confirmar ni reservar para 2027. Costos históricos ya incluidos en gastos."
         }
       ],
@@ -938,69 +959,162 @@
           "label": "Consultar aerolínea",
           "url": "https://www.aerolineas.com.ar/"
         }
-      ]
+      ],
+      "budgetIncludedIn": "flight-domestic"
     },
     {
       "id": "bus-fte-chalten",
       "type": "bus",
       "title": "Aeropuerto El Calafate → El Chaltén",
-      "selectedOption": null,
+      "selectedOption": "A",
       "options": [
         {
           "id": "A",
           "provider": "Shuttle directo FTE → El Chaltén · por cotizar",
           "status": "pending",
-          "journeys": [],
-          "fares": [],
-          "notes": "Preferir servicio con salida posterior al arribo 08:30 y recogida de equipaje; no hay horario confirmado."
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Aeropuerto FTE",
+                  "to": "El Chaltén",
+                  "departure": "2027-11-06T10:20:00-03:00",
+                  "arrival": "2027-11-06T13:00:00-03:00",
+                  "operator": "Bus regular (horario histórico)"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Asignación provisional · 2 personas",
+              "price": {
+                "amount": 1800,
+                "currency": "MXN"
+              },
+              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+            }
+          ],
+          "notes": "Preferir servicio con salida posterior al arribo 08:30 y recogida de equipaje; no hay horario confirmado. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje.",
+          "selectedFare": "reference"
         },
         {
           "id": "B",
           "provider": "Conexión FTE → terminal El Calafate → El Chaltén",
           "status": "pending",
-          "journeys": [],
-          "fares": [],
-          "notes": "Alternativa si no coincide shuttle directo; confirmar frecuencias, terminal y compra separada."
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Aeropuerto FTE",
+                  "to": "El Chaltén",
+                  "departure": "2027-11-06T10:00:00-03:00",
+                  "arrival": "2027-11-06T13:00:00-03:00",
+                  "operator": "Shuttle compartido (horario ilustrativo)"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Alternativa pendiente de cotización",
+              "price": null,
+              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+            }
+          ],
+          "notes": "Alternativa si no coincide shuttle directo; confirmar frecuencias, terminal y compra separada. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje.",
+          "selectedFare": "reference"
         }
       ],
-      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados.",
+      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados. Horarios publicados el 14/10/2026: bus regular desde aeropuerto FTE 10:20 y shuttle 10:00 (ejemplos); no confirmado noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php",
       "links": [
         {
           "label": "Autobuses · información turística",
           "url": "https://elchalten.tur.ar/omnibus/"
         }
-      ]
+      ],
+      "budgetIncludedIn": "bus-fte-chalten-budget"
     },
     {
       "id": "bus-chalten-calafate",
       "type": "bus",
       "title": "El Chaltén → El Calafate",
-      "selectedOption": null,
+      "selectedOption": "A",
       "options": [
         {
           "id": "A",
           "provider": "Autobús directo El Chaltén → El Calafate",
           "status": "pending",
-          "journeys": [],
-          "fares": [],
-          "notes": "Referencial 3 h aprox.; salida del 11 noviembre aún no publicada."
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Terminal El Chaltén",
+                  "to": "Terminal El Calafate",
+                  "departure": "2027-11-11T08:00:00-03:00",
+                  "arrival": "2027-11-11T10:40:00-03:00",
+                  "operator": "Bus regular (horario histórico)"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Asignación provisional · 2 personas",
+              "price": {
+                "amount": 1500,
+                "currency": "MXN"
+              },
+              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+            }
+          ],
+          "notes": "Referencial 3 h aprox.; salida del 11 noviembre aún no publicada. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje.",
+          "selectedFare": "reference"
         },
         {
           "id": "B",
           "provider": "Transfer compartido El Chaltén → El Calafate",
           "status": "pending",
-          "journeys": [],
-          "fares": [],
-          "notes": "Comparar costo total y recogida; no confundir con reserva."
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Terminal El Chaltén",
+                  "to": "Hotel El Calafate",
+                  "departure": "2027-11-11T09:00:00-03:00",
+                  "arrival": "2027-11-11T12:00:00-03:00",
+                  "operator": "Shuttle compartido (horario ilustrativo)"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Alternativa pendiente de cotización",
+              "price": null,
+              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+            }
+          ],
+          "notes": "Comparar costo total y recogida; no confundir con reserva. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje.",
+          "selectedFare": "reference"
         }
       ],
-      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027.",
+      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027. Horarios publicados el 14/10/2026: bus regular 08:00 y shuttle desde 09:00 (ejemplos); no confirmado para noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php",
       "links": [
         {
           "label": "Autobuses · información turística",
           "url": "https://elchalten.tur.ar/omnibus/"
         }
-      ]
+      ],
+      "budgetIncludedIn": "bus-chalten-calafate-budget"
     }
   ],
   "ticketNotes": [
@@ -1337,7 +1451,7 @@
     110000,
     155000
   ],
-  "budgetNote": "Estimación de trabajo para DOS personas: $144,648 MXN, distribuida en 19 partidas orientativas. Vuelos internacionales ($24,398 MXN) y nacionales ($23,250 MXN) proceden de la presentación de 2026, NO de una cotización para 2027. Los $30,000 MXN de alojamiento se repartieron por noches y ciudades; autobuses, taxis, parques, excursiones y seguro son asignaciones de presupuesto, no precios comprobados. La reserva menor de $1,500 MXN es reducida para un viaje de montaña: considerar un fondo adicional antes de comprar. Los traslados/entradas que un operador incluya deberán descontarse del renglón correspondiente para evitar duplicación. La cabalgata y Lago del Desierto son opciones presupuestadas, no compromisos; si se descartan, reducir el escenario. Conversión ARS/MXN pendiente de tasa fechada y verificable. Los importes «Gastos registrados del día» son imputaciones presupuestarias, NO gastos reales ni tickets comprados. Vuelos redondos se atribuyen una vez a la salida correspondiente y los hoteles se imputan completos a su check-in; alimentos se reparten $1,000 MXN por jornada para dos personas como supuesto. La suma diaria coincide con las partidas globales, no debe sumarse de nuevo.",
+  "budgetNote": "Estimación de trabajo para DOS personas: $144,648 MXN, distribuida en 19 partidas orientativas. Vuelos internacionales ($24,398 MXN) y nacionales ($23,250 MXN) proceden de la presentación de 2026, NO de una cotización para 2027. Los $30,000 MXN de alojamiento se repartieron por noches y ciudades; autobuses, taxis, parques, excursiones y seguro son asignaciones de presupuesto, no precios comprobados. La reserva menor de $1,500 MXN es reducida para un viaje de montaña: considerar un fondo adicional antes de comprar. Los traslados/entradas que un operador incluya deberán descontarse del renglón correspondiente para evitar duplicación. La cabalgata y Lago del Desierto son opciones presupuestadas, no compromisos; si se descartan, reducir el escenario. Conversión ARS/MXN pendiente de tasa fechada y verificable. Los importes «Gastos registrados del día» son imputaciones presupuestarias, NO gastos reales ni tickets comprados. Vuelos redondos se atribuyen una vez a la salida correspondiente y los hoteles se imputan completos a su check-in; alimentos se reparten $1,000 MXN por jornada para dos personas como supuesto. La suma diaria coincide con las partidas globales, no debe sumarse de nuevo. Las cuatro fichas de traslado son comparativas; sus importes se incluyen una sola vez mediante las partidas de gastos que las financian. Cambiar la opción visual no constituye recotización del presupuesto.",
   "placeDescriptions": {
     "pat27-laguna-tres": "Laguna de los Tres · caminata exigente, condicionada a guía y clima seguro",
     "pat27-perito": "Glaciar Perito Moreno · Minitrekking y pasarelas",
