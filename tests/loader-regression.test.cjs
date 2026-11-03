@@ -374,6 +374,28 @@ test('Suiza nevada se publica primero y España + Portugal conserva su contenido
     assert.equal(trip.days[19].date, '2027-05-27');
 });
 
+test('Panorama editorial de los cinco viajes desarrollados: exactamente tres indicadores y clima independiente', () => {
+    const ids = ['suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
+        'japon-2027', 'patagonia-argentina-2027'];
+    const expectedTitles = ['Estilo de viaje', 'Idioma y moneda', 'Documentación y consejos prácticos'];
+    for (const id of ids) {
+        const trip = JSON.parse(fs.readFileSync('data/trips/' + id + '.json', 'utf8'));
+        const indicators = trip.practicalIndicators;
+        assert.deepEqual(indicators.map(item => item.id), ['style', 'language', 'entry'],
+            id + ': IDs exactos y sin indicador weather');
+        assert.deepEqual(indicators.map(item => item.title), expectedTitles,
+            id + ': títulos oficiales de Panorama');
+        assert.equal(typeof trip.climate, 'string', id + ': clima por separado');
+        assert.ok(trip.climate.length > 200, id + ': tarjeta climática con información suficiente');
+    }
+    const swiss = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
+    assert.equal(swiss.climate.trim().split(/\n\s*\n/).length, 3);
+    assert.match(swiss.climate, /\*Qué llevar:\*/);
+    assert.match(swiss.climate, /\*Horas de luz:\*/);
+    assert.doesNotMatch(swiss.practicalIndicators.map(item => item.title).join(' '),
+        /Clima y luz|Documentación y electricidad/);
+});
+
 test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual sin duplicación', () => {
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
     const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
