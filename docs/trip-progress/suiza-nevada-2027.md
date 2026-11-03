@@ -7,8 +7,8 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Rama / PR:** feature/suiza-2027 · https://github.com/JesusRiddle/atlas-viajes/pull/9  
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
-**Etapa actual:** 13 · QA y PR, validación automática pendiente  
-**Siguiente acción autónoma:** Confirmar pruebas CI y validación visual Desktop/Mobile; corregir cualquier fallo  
+**Etapa actual:** 13 · Auditoría D, GitHub Actions en ejecución  
+**Siguiente acción autónoma:** Revisar resultado de Atlas checks y prueba visual Desktop/Mobile; corregir errores de CI o de renderizado  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -59,12 +59,12 @@ El **orden de producción** se organiza de lo más independiente a lo más depen
 
 | Etapa | Estado (pendiente/en curso/verificado/bloqueado) | Evidencia / commit / fuente | Pendiente o causa de bloqueo |
 | --- | --- | --- | --- |
-| 00–03 (Auditoría A) | Pendiente | — | — |
-| 04–08 (Auditoría B) | Pendiente | — | — |
-| 09–11 (Auditoría C) | Pendiente | — | — |
-| 12–13 (Auditoría D) | Pendiente | — | — |
+| 00–03 (Auditoría A) | Verificado a nivel de datos | 12 fechas consecutivas, 10 noches (1+4+3+2), ruta consistente | Revalidar horarios ferroviarios de 2027 |
+| 04–08 (Auditoría B) | Verificado a nivel de estructura | 4 hoteles, 3 grupos de reservas, mapa, 7 fotografías nuevas con fuente/licencia | Comprobar imágenes en navegador y enlaces externos |
+| 09–11 (Auditoría C) | Verificado a nivel de datos | 12 jornadas, 17 apariciones fotográficas, MXN 81,981, viajero 1 | Tarifa de hoteles y pases sin cotización exacta 2027 |
+| 12–13 (Auditoría D) | En curso | Portada invernal primera en `modules.js`; PR #9 abierto; GitHub Actions en ejecución | Node/Chromium Desktop y Mobile pendientes de resultado |
 
-**Última auditoría:** <commit + pruebas realmente ejecutadas>  
+**Última auditoría:** 2026-11-03 · auditoría estructural por lectura directa de JSON y módulos (3 pasadas: fechas/noches, fotos/licencias/enlaces, presupuesto/aislamiento); no equivale a test Node ni navegador.  
 **Pendientes externos no bloqueantes:** <precios futuros, horarios sin publicar, fotos inaccesibles, etc.>  
 **Próxima ejecución autónoma:** Validación CI y visual; revisar tarifas 2027 cuando se disponga de ellas
 
@@ -82,3 +82,10 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Etapas 12–13: portada editorial y primer registro visibles en la rama; fotografías específicas y auditoría D visual pendientes.
 - **Pendientes externos no bloqueantes:** vuelos no comprados, precios hoteleros no cotizados para fecha exacta, horarios SBB 2027 por revalidar, clima/operación invernal, seguros y entradas.
 - **Restricciones:** solo una persona; otros viajes del Atlas no son restricciones; Suiza verde será alternativa mutuamente excluyente.
+
+
+## Auditoría de fotografías · 2026-11-03
+- 7 entradas nuevas en `data/places.json` de Wikimedia Commons con autor, licencia y fuente; no se cambiaron las fichas de viajes anteriores.
+- 17 asociaciones de fotos en diez jornadas con visitas, días de vuelo sin fotos; portada `swiss27-grindelwald-winter`.
+- Validación local a nivel de datos de 12 días consecutivos, referencias, 4 hoteles, presupuesto $81,981 MXN y posición 1 en portada: sin errores detectados.
+- **No verificado todavía:** carga real de URLs externas en navegador, responsive Desktop/Mobile y resultado completo de GitHub Actions.
