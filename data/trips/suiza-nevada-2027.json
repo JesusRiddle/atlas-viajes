@@ -1368,22 +1368,22 @@
   "costExclusions": "Excursiones y remontes adicionales que excedan provisión, cambios de vuelo, compras personales y diferencias de tarifa. Pases alternativos y vuelos de comparación no se suman.",
   "exchangeNote": null,
   "railSummary": [
-    {
-      "title": "Estrategia candidata A · Jungfrau 3 días",
-      "description": "Pase peatonal Winter Hiking and Sledging Pass del 25 al 27 de enero, CHF 176 (≈ $4,040 MXN) en temporada baja 2026/27. Está dentro de la provisión de transporte: no añadirlo de nuevo a actividades. Confirmar coberturas exactas y disponibilidad operativa de First, Wengen, Mürren y Männlichen."
-    },
-    {
-      "title": "Estrategia candidata B · Swiss Half Fare Card",
-      "description": "CHF 150 (≈ $3,444 MXN), válida durante un mes. Da hasta 50 % de descuento en trenes nacionales, urbanos y algunas excursiones; NO equivale a viajes ilimitados. Solo comprar si descuentos comprobados superan CHF 150 y no se solapan inútilmente con el pase Jungfrau."
-    },
-    {
-      "title": "Comparación y elección",
-      "description": "No se puede demostrar todavía un ganador global sin tarifas exactas de SBB del 23, 24, 28 y 31 enero, 1 y 2 febrero y Gornergrat. Se conserva una sola provisión de movilidad de $10,000 MXN para todas las compras; escenario de Jungfrau CHF 176 deja ~$5,960 MXN para trenes nacionales y urbanos. Es una meta, no una cotización. No comprar ambos pases por defecto."
-    }
+    [
+      "Estrategia candidata A · Jungfrau 3 días",
+      "Pase peatonal Winter Hiking and Sledging Pass del 25 al 27 de enero, CHF 176 (≈ $4,040 MXN) en temporada baja 2026/27. Está dentro de la provisión de transporte: no añadirlo de nuevo a actividades. Confirmar coberturas exactas y disponibilidad operativa de First, Wengen, Mürren y Männlichen."
+    ],
+    [
+      "Estrategia candidata B · Swiss Half Fare Card",
+      "CHF 150 (≈ $3,444 MXN), válida durante un mes. Da hasta 50 % de descuento en trenes nacionales, urbanos y algunas excursiones; NO equivale a viajes ilimitados. Solo comprar si descuentos comprobados superan CHF 150 y no se solapan inútilmente con el pase Jungfrau."
+    ],
+    [
+      "Comparación y elección",
+      "No se puede demostrar todavía un ganador global sin tarifas exactas de SBB del 23, 24, 28 y 31 enero, 1 y 2 febrero y Gornergrat. Se conserva una sola provisión de movilidad de $10,000 MXN para todas las compras; escenario de Jungfrau CHF 176 deja ~$5,960 MXN para trenes nacionales y urbanos. Es una meta, no una cotización. No comprar ambos pases por defecto."
+    ]
   ],
-  "railTotal": null,
-  "railExclusions": null,
-  "railCurrencyNote": null,
+  "railTotal": "Por cotizar: provisión global de $10,000 MXN, sin desglose ferroviario definitivo",
+  "railExclusions": "Incluye una sola estrategia de pases y billetes no cubiertos en la provisión presupuestaria; billetes definitivos por cotizar.",
+  "railCurrencyNote": "Referencias de pases CHF 176 y CHF 150 (≈ $4,040 MXN y $3,444 MXN respectivamente).",
   "heroEyebrow": "DE LUCERNA AL MATTERHORN · ENTRE TRENES Y PUEBLOS NEVADOS",
   "travelerCount": 1
 }
