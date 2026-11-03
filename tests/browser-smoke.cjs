@@ -7,8 +7,8 @@ const assert = require('node:assert/strict');
   const browser = await chromium.launch({ headless: true });
   const catalog = fs.readFileSync('modules.js', 'utf8');
   const allDestinations = [...catalog.matchAll(/"id": "([a-z0-9-]+)"/g)].map(match => match[1]);
-  // El borrador se valida estructuralmente con Node; el recorrido visual integral requiere publicarlo.
-  const destinations = allDestinations.filter(id => id !== 'patagonia-argentina-2027');
+  // Incluye también el viaje nuevo: no depender únicamente de la validación de su JSON.
+  const destinations = allDestinations;
   assert.ok(allDestinations.includes("patagonia-argentina-2027"), "Patagonia 2027 debe figurar en el catálogo");
   assert.equal(new Set(allDestinations).size, allDestinations.length, "El catálogo no debe repetir IDs");
   const anchors = ['plan', 'mapa', 'temporadas', 'experiencias', 'reservas', 'traslados', 'alojamientos', 'dias', 'costes'];
@@ -32,8 +32,17 @@ const assert = require('node:assert/strict');
         const text = await page.locator('main').innerText();
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
-        const isDraft = id === 'patagonia-argentina-2027' || id === 'nuevo-viaje';
+        const isDraft = id === 'nuevo-viaje';
         assert.ok(navigationCount >= (isDraft ? 5 : 9), id + ' navigation links ' + navigationCount);
+        if (id === 'patagonia-argentina-2027') {
+          assert.equal(await page.locator('#traslados .mt-card').count(), 4, 'Patagonia debe renderizar sus cuatro traslados');
+          assert.equal(await page.locator('#dias details.day').count(), 15, 'Patagonia debe mostrar sus 15 jornadas');
+          assert.ok(await page.locator('#alojamientos .hotel-card').count() >= 4, 'Patagonia debe mostrar cuatro estancias');
+          assert.ok(await page.locator('#costes .budget-ledger').count() >= 1, 'Patagonia debe mostrar presupuesto');
+          const budgetText = await page.locator('#costes').innerText();
+          assert.match(budgetText, /144[,.]648|144648/, 'El presupuesto debe incluir el total esperado');
+          await page.screenshot({path: '/tmp/atlas-patagonia-' + viewport.width + '.png', fullPage: true});
+        }
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
         assert.ok(overflow <= 3, id + ' horizontal overflow ' + overflow + ' at ' + viewport.width);
       }
