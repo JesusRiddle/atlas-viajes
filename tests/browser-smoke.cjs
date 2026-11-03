@@ -121,7 +121,7 @@ const assert = require('node:assert/strict');
         status: 200, contentType: 'application/json',
         body: JSON.stringify({id:testId,name:'Nuevo destino de prueba',travelerCount:null})
       }));
-      await page.goto('http://127.0.0.1:8765/#inicio', { waitUntil: 'domcontentloaded' });
+      await page.goto('http://127.0.0.1:8765/?incremental-fixture=1#inicio', { waitUntil: 'domcontentloaded' });
       const newCard = page.locator('#viajes a[href="#viaje/' + testId + '"]');
       await newCard.waitFor();
       assert.equal(await page.locator('#viajes .tripcard').count(), 5);
