@@ -1,5 +1,7 @@
 # Guía editorial maestra de viajes · Atlas
 
+**Personas presupuestadas:** cada JSON nuevo declara `travelerCount` como número entero positivo o `null` mientras se desconoce. Es el tamaño del grupo cuyos gastos se estiman, no una indicación de si conviene viajar solo (`profile.solo`). La tabla comparativa muestra «Personas»; los importes de `expenses` siguen siendo para el grupo, y el equivalente individual se calcula solo cuando está definido, evitando duplicaciones.
+
 ## Aplicación
 Esta guía regula la **redacción y curación** de viajes nuevos y sus revisiones.
 
