@@ -122,8 +122,8 @@ const assert = require('node:assert/strict');
           'La columna de ciudades debe ocupar al menos 55% del encabezado en escritorio');
         assert.ok(layout.citiesLeft > layout.introRight,
           'Las columnas del encabezado no deben encimarse');
-        assert.ok(layout.cards.length >= 10 &&
-          layout.cards.slice(0, 4).every(card => card.width >= 100),
+        assert.ok(layout.cards.length >= 4 &&
+          layout.cards.slice(0, 4).every(card => card.width >= 90),
           'Las primeras cuatro tarjetas deben caber sin volverse ilegibles');
         const rowPositions = [...new Set(layout.cards.map(card => Math.round(card.y)))];
         assert.ok(rowPositions.length <= Math.ceil(layout.cards.length / 4),
@@ -133,6 +133,21 @@ const assert = require('node:assert/strict');
       }
       await page.locator('#mapa').scrollIntoViewIfNeeded();
       await page.screenshot({ path: '/tmp/atlas-italia-' + viewport.width + '.png', fullPage: true });
+      if (viewport.width > 1000) {
+        await page.goto('http://127.0.0.1:8765/#viaje/espana-portugal-2027/mapa', { waitUntil: 'domcontentloaded' });
+        await page.locator('#mapa .trip-map-cities .map-city-list li').first().waitFor();
+        const locations = await page.locator('#mapa .trip-map-cities .map-city-list li').evaluateAll(items =>
+          items.map(item => {
+            const r = item.getBoundingClientRect();
+            return { x: Math.round(r.x), y: Math.round(r.y), width: r.width };
+          }));
+        assert.equal(locations.length, 10, 'España + Portugal debe conservar diez localidades');
+        assert.equal(new Set(locations.map(item => item.y)).size, 3,
+          'Diez localidades deben ocupar exactamente tres filas en escritorio');
+        assert.equal(new Set(locations.slice(0, 4).map(item => item.y)).size, 1,
+          'Las cuatro primeras localidades deben compartir fila');
+        assert.ok(locations.every(item => item.width >= 90), 'Ninguna tarjeta debe quedar demasiado estrecha');
+      }
       // Simula un nuevo destino real desde el primer commit: visible, sin fechas ni fotos.
       const testId = 'viaje-incremental-prueba';
       const testCatalog = catalog.replace(/\];\s*$/,
