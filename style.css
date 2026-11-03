@@ -2282,3 +2282,19 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 
 /* Resumen narrativo compartido con «La esencia de tu recorrido»: sin truncamiento. */
 #viajes .atlas-home-card .card-trip-intro{font-size:12px;line-height:1.45;color:var(--muted);margin:0;white-space:normal;overflow-wrap:break-word}
+
+
+/* Archivo de inspiración: tarjetas deliberadamente ligeras, sin precios antiguos. */
+.home-ideas{border-top:1px solid var(--line);padding-top:42px}
+.home-ideas .section-title p{max-width:550px}
+.home-ideas .ideas-cards{gap:16px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.home-ideas .idea-tripcard{border-radius:8px}
+.home-ideas .idea-tripcard .cardphoto{height:155px}
+.home-ideas .idea-tripcard .cardbody{padding:15px 16px;gap:6px}
+.home-ideas .idea-tripcard h3{font-size:18px;line-height:1.25;margin:0}
+.home-ideas .idea-tripcard-status{text-transform:uppercase;letter-spacing:.1em;font-size:10px;font-weight:700;color:var(--muted);margin:0 0 6px}
+.home-ideas .idea-tripcard .card-route{font-size:12px;line-height:1.45;margin:0;color:var(--muted)}
+.home-ideas .idea-tripcard-open{margin-top:auto;padding-top:13px;font-size:12px;font-weight:700;color:var(--ink)}
+@media(max-width:1000px){.home-ideas .ideas-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){.home-ideas .ideas-cards{grid-template-columns:repeat(2,minmax(0,1fr))}.home-ideas .idea-tripcard .cardphoto{height:130px}}
+@media(max-width:420px){.home-ideas .ideas-cards{grid-template-columns:1fr}.home-ideas .idea-tripcard{flex-direction:row}.home-ideas .idea-tripcard .cardphoto{height:auto;width:36%;min-height:135px;flex-shrink:0}.home-ideas .idea-tripcard .cardbody{min-width:0;flex:1}}
