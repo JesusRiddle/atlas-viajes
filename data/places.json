@@ -4337,5 +4337,25 @@
       "attribution": "Gonzabar77",
       "description": "Puente de la Mujer en Puerto Madero, punto arquitectónico del paseo vespertino por Buenos Aires."
     }
+  },
+  "pat27-obelisco": {
+    "name": "Obelisco de Buenos Aires",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Obelisco%20de%20Buenos%20Aires%2C%20Argentina.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Obelisco%20de%20Buenos%20Aires%2C%20Argentina.jpg",
+      "author": "Franco Javier Perez",
+      "attribution": "Franco Javier Perez",
+      "description": "Obelisco sobre la avenida 9 de Julio, símbolo del centro porteño y parada del recorrido después de Teatro Colón."
+    }
+  },
+  "pat27-san-telmo": {
+    "name": "Mercado de San Telmo",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:Redirect/file/San%20Telmo%20market%20September%202026.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:San%20Telmo%20market%20September%202026.jpg",
+      "author": "Casual Capibara",
+      "attribution": "Casual Capibara",
+      "description": "Mercado de San Telmo y sus puestos, visita gastronómica y cultural del recorrido por los barrios históricos de Buenos Aires."
+    }
   }
 }
