@@ -53,7 +53,7 @@ test('Atlas: nueve secciones se llenan según dependencias, no en orden visual',
     assert.match(stepOrder[Number(n)].description, new RegExp(title), n + ': ' + title);
   }
   for (const file of [template, editorial, agent]) {
-    assert.match(file, /orden visual|orden de navegación|orden para \\*\\*construir\\*\\*/i);
+    assert.ok(file.includes('orden visual') || file.includes('orden de navegación') || file.includes('orden para **construir**'), 'distinguir orden interno y visual');
     assert.match(file, /Temporadas/);
     assert.match(file, /Presupuesto/);
   }
