@@ -667,16 +667,136 @@
       "notes": "Provisión $6,500 MXN para Gornergrat, Lindt CHF 17 (≈ $390 MXN), posible Jungfraujoch y extras. First, Wengen, Mürren y Männlichen NO se vuelven a cobrar aquí si se escoge pase Jungfrau que los cubra; suplemento Jungfraujoch vigente en enero 2027 por revalidar."
     },
     {
-      "id": "meals-budget",
+      "id": "meals-1",
       "category": "food",
-      "concept": "Alimentación",
+      "concept": "Alimentación estimada · Lucerna",
       "date": "2027-01-23",
       "cost": {
-        "amount": 9000,
+        "amount": 750,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Comida durante el viaje, con desayunos de hotel cuando estén incluidos."
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-2",
+      "category": "food",
+      "concept": "Alimentación estimada · Lucerna y Grindelwald",
+      "date": "2027-01-24",
+      "cost": {
+        "amount": 800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-3",
+      "category": "food",
+      "concept": "Alimentación estimada · Grindelwald",
+      "date": "2027-01-25",
+      "cost": {
+        "amount": 900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-4",
+      "category": "food",
+      "concept": "Alimentación estimada · Lauterbrunnen, Wengen y Mürren",
+      "date": "2027-01-26",
+      "cost": {
+        "amount": 900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-5",
+      "category": "food",
+      "concept": "Alimentación estimada · Grindelwald",
+      "date": "2027-01-27",
+      "cost": {
+        "amount": 900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-6",
+      "category": "food",
+      "concept": "Alimentación estimada · Zermatt",
+      "date": "2027-01-28",
+      "cost": {
+        "amount": 1000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-7",
+      "category": "food",
+      "concept": "Alimentación estimada · Zermatt",
+      "date": "2027-01-29",
+      "cost": {
+        "amount": 1050,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-8",
+      "category": "food",
+      "concept": "Alimentación estimada · Zermatt",
+      "date": "2027-01-30",
+      "cost": {
+        "amount": 1050,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-9",
+      "category": "food",
+      "concept": "Alimentación estimada · Zúrich",
+      "date": "2027-01-31",
+      "cost": {
+        "amount": 850,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-10",
+      "category": "food",
+      "concept": "Alimentación estimada · Zúrich",
+      "date": "2027-02-01",
+      "cost": {
+        "amount": 500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
+    },
+    {
+      "id": "meals-11",
+      "category": "food",
+      "concept": "Alimentación estimada · Zúrich y aeropuerto",
+      "date": "2027-02-02",
+      "cost": {
+        "amount": 300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Distribución orientativa del fondo de alimentación: no es precio de menú ni compra. Desayuno de hotel/comidas en vuelo se descuentan cuando estén confirmados; incluye opciones sin lactosa."
     },
     {
       "id": "reserve-budget",
@@ -1344,7 +1464,7 @@
     75000,
     85000
   ],
-  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y posible suplemento Jungfraujoch, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000; seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. Son provisiones, no tarifas reservables para enero de 2027. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
+  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y posible suplemento Jungfraujoch, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. Son provisiones, no tarifas reservables para enero de 2027. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
   "placeDescriptions": {
     "lucerne": "En la ciudad vieja de Lucerna, el Kapellbrücke cruza el río Reuss bajo una cubierta de madera y conecta plazas históricas entre montañas.",
     "lake-lucerne": "El lago de los Cuatro Cantones une bahías, pueblos y montañas; desde sus orillas en Lucerna se contempla el paisaje alpino sin un ascenso.",
