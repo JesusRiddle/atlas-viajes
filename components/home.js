@@ -139,7 +139,94 @@ window.AtlasHome = function (ctx) {
     // No flight is booked automatically: the first quoted option is a dated reference.
     const homePrice = t => {
         const estimate = window.AtlasBudget?.planningEstimate?.(t);
-        return estimate ? '$' + estimate.low.toLocaleString('es-MX') + '–$' + estimate.high.toLocaleString('es-MX') : price(t);
+        if (!estimate) return price(t);
+        const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 1;
+        const perPerson = amount => (amount / travelers).toLocaleString('es-MX', { maximumFractionDigits: 0 });
+        return '
+    };
+    function card(t, i) {
+        if (!homeReady(t)) return draftCard(t, i);
+        const title = esc(t.name);
+        const country = cardCountries(t.flag);
+        const cities = t.routeCities.map(x => esc(x)).join(' · ');
+        const introduction = (typeof t.introShort === 'string' && t.introShort.trim()) || (typeof t.intro === 'string' && t.intro.trim()) || '';
+        return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
+            '<div class="cardphoto">' + (covers[t.id] ? img(covers[t.id], '', false, false, true) : '<div class="draft-card-cover">Fotografías por incorporar</div>') + '<span class="rank">' + (i + 1) + '</span></div>' +
+            '<div class="cardbody"><div class="card-overview"><span class="card-overview-location">' + (country ? esc(country) + ' · ' : '') + t.days.length +
+            ' días</span><span class="carddates">' + range(t) + '</span></div>' +
+            '<h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
+            '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' +
+            '<div class="cardfacts"><span>' + t.work + ' laborales</span></div>' +
+            (introduction ? '<p class="card-trip-intro">' + esc(introduction) + '</p>' : '') +
+            '<div class="cardbottom"><div class="card-price"><small>Presupuesto estimado por persona' +
+            (t.budgetPreliminary ? ' · preliminar' : '') + '</small>' +
+            '<strong>' + homePrice(t) + ' <span class="card-currency">MXN</span></strong></div>' +
+            '<span class="card-arrow" aria-hidden="true">↗</span></div></div></a>';
+    }
+    function comparison() {
+        const items = trips.filter(homeReady);
+        return '<section class="section wrap home-comparison" id="comparar">' +
+            '<div class="section-title"><div><p class="eyebrow orange">Compara tus opciones</p>' +
+            '<h2>Los viajes, lado a lado.</h2></div></div>' +
+            '<div class="scrolltable comparison-scroll" tabindex="0" role="region" aria-label="Tabla comparativa de viajes; desplázate horizontalmente para ver todas las columnas">' +
+            '<table class="comparison-table"><thead><tr><th scope="col">Destino</th><th scope="col">Fechas</th>' +
+            '<th scope="col">Días <small>/ laborales</small></th><th scope="col">Bases</th><th scope="col">Ritmo</th>' +
+            '<th scope="col">Viajando solo</th><th scope="col">Clima</th><th scope="col">Presupuesto</th></tr></thead><tbody>' +
+            items.map((t, i) => '<tr><td class="comparison-destination"><a href="#viaje/' + esc(t.id) + '">' +
+                '<span class="comparison-rank">' + (i + 1) + '</span><span>' + esc(t.name) + '</span></a></td>' +
+                '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
+                ' <small>/ ' + t.work + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
+                '<td>' + esc(t.profile.pace) + '</td><td>' + esc(t.profile.solo) + '</td>' +
+                '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + price(t) +
+                ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
+                '</td></tr>').join('') + '</tbody></table></div></section>';
+    }
+    function home() { document.title = 'Atlas de viajes · Viajes 2026–2027'; main.innerHTML = `<section class="home-intro wrap atlas-home-hero atlas-home-hero-immersive" aria-labelledby="atlas-home-title"><div class="intro-photo atlas-home-hero-image"><img src="photos/atlas-world-hero.webp" alt="Ilustración de destinos entre montañas, ciudades y costas" loading="eager" fetchpriority="high" decoding="async"><div class="photo-overlay"></div><div class="atlas-home-hero-copy"><p class="eyebrow">ATLAS DE VIAJES · 2026–2027</p><h1 id="atlas-home-title">La vida es un viaje.</h1><p class="atlas-home-lead">Rutas desde CDMX, itinerarios detallados y presupuestos para elegir tu próxima aventura.</p></div></div></section><section class="section wrap" id="viajes" style="padding-top:25px"><div class="section-title"><div><p class="eyebrow orange">Caminos por descubrir</p><h2>Elige tu siguiente historia.</h2></div><p>Entre ciudades históricas, mercados, palacios y paisajes de montaña, encuentra la ruta que más te inspira.</p></div><div class="cards">${trips.map(card).join('')}</div></section>${comparison()}`; mountCoverSlideshow(); }
+    return { card, comparison, home };
+};
+ + perPerson(estimate.low) + '–
+    };
+    function card(t, i) {
+        if (!homeReady(t)) return draftCard(t, i);
+        const title = esc(t.name);
+        const country = cardCountries(t.flag);
+        const cities = t.routeCities.map(x => esc(x)).join(' · ');
+        const introduction = (typeof t.introShort === 'string' && t.introShort.trim()) || (typeof t.intro === 'string' && t.intro.trim()) || '';
+        return '<a class="tripcard atlas-home-card" href="#viaje/' + esc(t.id) + '" aria-labelledby="card-' + esc(t.id) + '">' +
+            '<div class="cardphoto">' + (covers[t.id] ? img(covers[t.id], '', false, false, true) : '<div class="draft-card-cover">Fotografías por incorporar</div>') + '<span class="rank">' + (i + 1) + '</span></div>' +
+            '<div class="cardbody"><div class="card-overview"><span class="card-overview-location">' + (country ? esc(country) + ' · ' : '') + t.days.length +
+            ' días</span><span class="carddates">' + range(t) + '</span></div>' +
+            '<h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
+            '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' +
+            '<div class="cardfacts"><span>' + t.work + ' laborales</span></div>' +
+            (introduction ? '<p class="card-trip-intro">' + esc(introduction) + '</p>' : '') +
+            '<div class="cardbottom"><div class="card-price"><small>Presupuesto estimado por persona' +
+            (t.budgetPreliminary ? ' · preliminar' : '') + '</small>' +
+            '<strong>' + homePrice(t) + ' <span class="card-currency">MXN</span></strong></div>' +
+            '<span class="card-arrow" aria-hidden="true">↗</span></div></div></a>';
+    }
+    function comparison() {
+        const items = trips.filter(homeReady);
+        return '<section class="section wrap home-comparison" id="comparar">' +
+            '<div class="section-title"><div><p class="eyebrow orange">Compara tus opciones</p>' +
+            '<h2>Los viajes, lado a lado.</h2></div></div>' +
+            '<div class="scrolltable comparison-scroll" tabindex="0" role="region" aria-label="Tabla comparativa de viajes; desplázate horizontalmente para ver todas las columnas">' +
+            '<table class="comparison-table"><thead><tr><th scope="col">Destino</th><th scope="col">Fechas</th>' +
+            '<th scope="col">Días <small>/ laborales</small></th><th scope="col">Bases</th><th scope="col">Ritmo</th>' +
+            '<th scope="col">Viajando solo</th><th scope="col">Clima</th><th scope="col">Presupuesto</th></tr></thead><tbody>' +
+            items.map((t, i) => '<tr><td class="comparison-destination"><a href="#viaje/' + esc(t.id) + '">' +
+                '<span class="comparison-rank">' + (i + 1) + '</span><span>' + esc(t.name) + '</span></a></td>' +
+                '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
+                ' <small>/ ' + t.work + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
+                '<td>' + esc(t.profile.pace) + '</td><td>' + esc(t.profile.solo) + '</td>' +
+                '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + price(t) +
+                ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
+                '</td></tr>').join('') + '</tbody></table></div></section>';
+    }
+    function home() { document.title = 'Atlas de viajes · Viajes 2026–2027'; main.innerHTML = `<section class="home-intro wrap atlas-home-hero atlas-home-hero-immersive" aria-labelledby="atlas-home-title"><div class="intro-photo atlas-home-hero-image"><img src="photos/atlas-world-hero.webp" alt="Ilustración de destinos entre montañas, ciudades y costas" loading="eager" fetchpriority="high" decoding="async"><div class="photo-overlay"></div><div class="atlas-home-hero-copy"><p class="eyebrow">ATLAS DE VIAJES · 2026–2027</p><h1 id="atlas-home-title">La vida es un viaje.</h1><p class="atlas-home-lead">Rutas desde CDMX, itinerarios detallados y presupuestos para elegir tu próxima aventura.</p></div></div></section><section class="section wrap" id="viajes" style="padding-top:25px"><div class="section-title"><div><p class="eyebrow orange">Caminos por descubrir</p><h2>Elige tu siguiente historia.</h2></div><p>Entre ciudades históricas, mercados, palacios y paisajes de montaña, encuentra la ruta que más te inspira.</p></div><div class="cards">${trips.map(card).join('')}</div></section>${comparison()}`; mountCoverSlideshow(); }
+    return { card, comparison, home };
+};
+ + perPerson(estimate.high);
     };
     function card(t, i) {
         if (!homeReady(t)) return draftCard(t, i);
