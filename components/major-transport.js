@@ -163,7 +163,10 @@ window.AtlasMajorTransport = (() => {
         const optionId = selection.option || transport.selectedOption;
         const option = transport.options.find(o => o.id === optionId) || transport.options[0];
         const fareId = selection.fare || option.selectedFare;
-        const fare = option.fares.find(f => f.id === fareId) || option.fares[0];
+        // Los precios futuros pueden estar pendientes; nunca bloquear toda la vista por una tarifa ausente.
+        const fareList = Array.isArray(option.fares) ? option.fares : [];
+        const fare = fareList.find(f => f.id === fareId) || fareList[0] ||
+            { id: 'pending', name: 'Tarifa por cotizar', price: null };
         const price = budget.selectedTransportPrice(transport, { option: option.id, fare: fare.id });
         const converted = budget.convert(price, trip.exchangeRates || {});
 
@@ -171,7 +174,7 @@ window.AtlasMajorTransport = (() => {
         const options = transport.options.map(o => '<option value="' + esc(o.id) + '"' +
             (o.id === option.id ? ' selected' : '') + '>Opción ' + esc(o.id) +
             (o.provider ? ' · ' + esc(o.provider) : '') + '</option>').join('');
-        const fares = option.fares.map(f => '<option value="' + esc(f.id) + '"' +
+        const fares = (fareList.length ? fareList : [fare]).map(f => '<option value="' + esc(f.id) + '"' +
             (f.id === fare.id ? ' selected' : '') + '>' + esc(f.name || f.id) +
             ' · ' + esc(formatMoney(f.price)) + '</option>').join('');
         const detail = option.journeys.map(j => {
