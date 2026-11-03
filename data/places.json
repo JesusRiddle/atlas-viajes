@@ -4357,5 +4357,82 @@
       "attribution": "Casual Capibara",
       "description": "Mercado de San Telmo y sus puestos, visita gastronómica y cultural del recorrido por los barrios históricos de Buenos Aires."
     }
+  },
+  "swiss27-grindelwald-winter": {
+    "name": "Grindelwald nevado",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Winter%20in%20Grindelwald.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Winter_in_Grindelwald.jpg",
+      "author": "Robert Campbell KOR",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Robert Campbell KOR"
+    }
+  },
+  "swiss27-wengen-winter": {
+    "name": "Wengen en invierno",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wengen%20in%20winter.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Wengen_in_winter.jpg",
+      "author": "Jpatokal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jpatokal"
+    }
+  },
+  "swiss27-murren-winter": {
+    "name": "Mürren en invierno",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Murren%20inverno.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Murren_inverno.jpg",
+      "author": "Giuse1974",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Giuse1974"
+    }
+  },
+  "swiss27-lauterbrunnen-winter": {
+    "name": "Lauterbrunnen nevado",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lauterbrunnen%20in%20winter.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Lauterbrunnen_in_winter.jpg",
+      "author": "Kenneth Barclay",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lauterbrunnen_in_winter.jpg",
+      "attribution": "Kenneth Barclay"
+    }
+  },
+  "swiss27-zermatt-winter": {
+    "name": "Zermatt con el Matterhorn nevado",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Matterhorn%20in%20winter%20with%20Zermatt%20village.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Matterhorn_in_winter_with_Zermatt_village.jpg",
+      "author": "Deralpinbergsteiger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Deralpinbergsteiger"
+    }
+  },
+  "swiss27-lindt": {
+    "name": "Fuente de chocolate Lindt",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Two%20story%20chocolate%20fountain%20in%20the%20lobby%20of%20the%20Lindt%20factory%20in%20Zurich%2C%20Switzerland%20(52167915483).jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Two_story_chocolate_fountain_in_the_lobby_of_the_Lindt_factory_in_Zurich%2C_Switzerland_(52167915483).jpg",
+      "author": "Brian Shamblen",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Brian Shamblen"
+    }
+  },
+  "swiss27-gornergrat-winter": {
+    "name": "Matterhorn desde la montaña invernal",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wintermatterhorn.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Wintermatterhorn.jpg",
+      "author": "Oerflee",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Oerflee"
+    }
   }
 }
