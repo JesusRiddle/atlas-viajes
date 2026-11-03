@@ -30,7 +30,7 @@
       2
     ]
   ],
-  "work": null,
+  "work": 10,
   "costs": [],
   "profile": {
     "pace": "Moderado con una jornada de alta exigencia",
@@ -485,7 +485,8 @@
       },
       "status": "estimated",
       "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes.",
-      "date": "2027-11-04"
+      "date": "2027-11-04",
+      "hotelId": "buenos-aires-inicio"
     },
     {
       "id": "hotel-chalten",
@@ -497,7 +498,8 @@
       },
       "status": "estimated",
       "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes.",
-      "date": "2027-11-06"
+      "date": "2027-11-06",
+      "hotelId": "chalten-senderos"
     },
     {
       "id": "hotel-calafate",
@@ -509,7 +511,8 @@
       },
       "status": "estimated",
       "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes.",
-      "date": "2027-11-11"
+      "date": "2027-11-11",
+      "hotelId": "calafate-sierra"
     },
     {
       "id": "hotel-ba-regreso",
@@ -521,7 +524,8 @@
       },
       "status": "estimated",
       "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes.",
-      "date": "2027-11-16"
+      "date": "2027-11-16",
+      "hotelId": "buenos-aires-regreso"
     },
     {
       "id": "food-day-01",
@@ -1232,11 +1236,20 @@
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Reservas, cupos y tarifas para noviembre de 2027 aún por verificar; ninguna excursión ni vuelo está comprado."
+    "reservationNote": "Reservas, cupos y tarifas para noviembre de 2027 aún por verificar; ninguna excursión ni vuelo está comprado.",
+    "referencePriceNotes": "Vuelos tomados de la presentación de 2026; autobuses, alojamientos y tours sujetos a precios de noviembre 2027. Las cifras son para dos personas; la portada expresa equivalentes por persona.",
+    "budgetScenarioNotes": "Esencial: $137,648 MXN (sin Bonanza ni Lago del Desierto). Completo: $144,648 MXN. Prudente: $151,648 MXN con $7,000 MXN adicionales de colchón. Las jornadas muestran asignaciones de presupuesto, no pagos."
   },
   "lodgingSummary": "14 noches del 4 al 18 de noviembre en cuatro estancias: Buenos Aires (2 + 2), El Chaltén (5), El Calafate (5). Tres hoteles candidatos; sin tarifas confirmadas.",
   "heroLodgingSummary": "14 noches · 4 alojamientos",
-  "budgetPreliminary": true,
+  "budgetPreliminary": {
+    "low": 137648,
+    "high": 151648,
+    "marginMXN": 7000,
+    "useBudgetRange": true,
+    "referenceFlightMXN": 24398,
+    "notes": "Rango de escenarios para dos: esencial sin cabalgata ni navegación Lago del Desierto, y completo con colchón de imprevistos. No equivale a cotizaciones."
+  },
   "hotels": [
     {
       "id": "buenos-aires-inicio",
@@ -1455,7 +1468,7 @@
       "url": "https://elchalten.tur.ar/omnibus/"
     }
   ],
-  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras. Las imágenes enlazadas por URL remota son referencias editoriales pendientes de validación HTTP individual y revisión visual del viaje; pasar CI no verifica el contenido de las fotografías.",
+  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras. Las imágenes enlazadas por URL remota son referencias editoriales pendientes de validación HTTP individual y revisión visual del viaje; pasar CI no verifica el contenido de las fotografías. Estimación de PTO: 10 días laborales de lunes a viernes entre 4 y 18 noviembre 2027, descontando el descanso obligatorio de México del lunes 15 de noviembre (tercer lunes). Confirmar calendario de la empresa.",
   "budgetRange": [
     137648,
     151648
@@ -1504,12 +1517,14 @@
   "costExclusions": [
     "Glaciarium y posibles entradas adicionales a actividades opcionales: por cotizar, no incluidas en los escenarios.",
     "Contingencia ampliada de $7,000 MXN: disponible como escenario prudente, no sumada al presupuesto base.",
-    "Revisar si Minitrekking y Todo Glaciares incluyen traslado y acceso al Parque Nacional Los Glaciares; evitar doble cobro."
+    "Revisar si Minitrekking y Todo Glaciares incluyen traslado y acceso al Parque Nacional Los Glaciares; evitar doble cobro.",
+    "Los 10 días laborales suponen semana lunes-viernes y observancia del descanso obligatorio del 15 de noviembre de 2027; confirmar vacaciones con el empleador."
   ],
   "exchangeNote": null,
   "railSummary": [],
   "railTotal": null,
   "railExclusions": null,
   "railCurrencyNote": null,
-  "heroEyebrow": null
+  "heroEyebrow": null,
+  "travelerCount": 2
 }
