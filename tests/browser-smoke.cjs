@@ -17,10 +17,7 @@ const assert = require('node:assert/strict');
       const page = await browser.newPage({ viewport, deviceScaleFactor: 1 });
       const failures = [];
       page.on('pageerror', error => failures.push(error.message));
-      await page.route('**/modules.js', route => route.fulfill({
-        status: 200, contentType: 'application/javascript',
-        body: catalog.replace(/"available": false/g, '"available": true')
-      }));
+
       await page.goto('http://127.0.0.1:8765/', { waitUntil: 'domcontentloaded' });
       await page.locator('.tripcard').first().waitFor();
       const heroBounds = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').boundingBox();
@@ -58,7 +55,7 @@ const assert = require('node:assert/strict');
         'El archivo no debe mostrar precios históricos como vigentes');
       const patagoniaCard = page.locator('.tripcard[href="#viaje/patagonia-argentina-2027"]');
       assert.equal(await patagoniaCard.count(), 1, 'La portada de Patagonia debe existir');
-      assert.ok(!(await patagoniaCard.getAttribute('class')).includes('tripcard-draft'), 'La portada no debe ser un borrador vacío');
+      assert.ok(!(await patagoniaCard.innerText()).includes('En planeación'));
       const patagoniaCardText = await patagoniaCard.innerText();
       assert.match(patagoniaCardText, /68[,.]974/, 'La portada debe mostrar escenario mínimo por persona');
       assert.match(patagoniaCardText, /75[,.]974/, 'La portada debe mostrar escenario máximo por persona');
@@ -71,8 +68,7 @@ const assert = require('node:assert/strict');
         const text = await page.locator('main').innerText();
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
-        const isDraft = id === 'nuevo-viaje';
-        assert.ok(navigationCount >= (isDraft ? 5 : 9), id + ' navigation links ' + navigationCount);
+        assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
         if (id === 'patagonia-argentina-2027') {
           assert.equal(await page.locator('#traslados .mt-card').count(), 4, 'Patagonia debe renderizar sus cuatro traslados');
           assert.equal(await page.locator('#dias details.day').count(), 15, 'Patagonia debe mostrar sus 15 jornadas');
@@ -114,9 +110,35 @@ const assert = require('node:assert/strict');
       }
       await page.locator('#mapa').scrollIntoViewIfNeeded();
       await page.screenshot({ path: '/tmp/atlas-italia-' + viewport.width + '.png', fullPage: true });
+      // Simula un nuevo destino real desde el primer commit: visible, sin fechas ni fotos.
+      const testId = 'viaje-incremental-prueba';
+      const testCatalog = catalog.replace(/\];\s*$/,
+        ',\n  {"id": "viaje-incremental-prueba", "file": "viaje-incremental-prueba.json", "available": true}\n];');
+      await page.route('**/modules.js', route => route.fulfill({
+        status: 200, contentType: 'application/javascript', body: testCatalog
+      }));
+      await page.route('**/data/trips/viaje-incremental-prueba.json', route => route.fulfill({
+        status: 200, contentType: 'application/json',
+        body: JSON.stringify({id:testId,name:'Nuevo destino de prueba',travelerCount:null})
+      }));
+      await page.goto('http://127.0.0.1:8765/#inicio', { waitUntil: 'domcontentloaded' });
+      const newCard = page.locator('#viajes a[href="#viaje/' + testId + '"]');
+      await newCard.waitFor();
+      assert.equal(await page.locator('#viajes .tripcard').count(), 5);
+      assert.equal(await page.locator('#ideas-viajes .idea-tripcard').count(), 15);
+      const initialCardText = await newCard.innerText();
+      assert.match(initialCardText, /Nuevo destino de prueba/);
+      assert.doesNotMatch(initialCardText, /borrador|en planeación|preliminar|\$0\b|NaN|undefined/i);
+      await newCard.click();
+      await page.locator('#plan').waitFor();
+      assert.equal(await page.locator('.subnav a').count(), 9);
+      for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1);
+      assert.doesNotMatch(await page.locator('main').innerText(), /borrador|en planeación|en preparación|Invalid Date|NaN|undefined/i);
+      assert.ok((await page.locator('main').innerText()).includes('Nuevo destino de prueba'));
+
       assert.deepEqual(failures, [], 'Browser errors at ' + viewport.width);
       await page.close();
     }
-    console.log('Browser smoke checks passed: Desktop/Mobile, complete and draft trips, nine anchors, overflow and runtime errors.');
+    console.log('Browser smoke checks passed: Desktop/Mobile, complete and incremental visible trips, nine anchors, overflow and runtime errors.');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });
