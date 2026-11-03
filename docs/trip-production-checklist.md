@@ -18,6 +18,13 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 - [ ] Verificar que la tarjeta de inicio renderiza `introShort` completo y la sección Panorama sigue mostrando `intro`, también en móvil.
 - [ ] Al inicio ambos textos pueden permanecer `null`; la portada mostrará únicamente los campos disponibles, sin etiquetas de estado. Completarlos antes de cerrar la auditoría D.
 
+## Puerta de control obligatoria · contratos de transporte y renderizado
+- [ ] Antes de dar por terminada **Movilidad y conexiones (07)**, cada entrada de `majorTransport` debe pasar `AtlasTransportModel.validateTrip(trip)`: `options[]` no vacío; cada opción con `fares[]` no vacío, `selectedFare` existente, `journeys[].segments[]` y `selectedOption` válidos.
+- [ ] Si una tarifa no está publicada, usar `{ "id": "pending", "name": "Tarifa por cotizar", "price": null }`, seleccionarla con `selectedFare: "pending"`; nunca omitir `fares`, ni poner importe `0` o inventar precio.
+- [ ] Ejecutar la prueba real de **renderizado** de `AtlasMajorTransport.render(trip)` además de validar JSON y sintaxis. Un JSON parseable no garantiza que sus componentes puedan renderizarse.
+- [ ] Mantener prueba de regresión para datos incompletos y confirmar que toda la pantalla sigue cargando, incluyendo Desktop/Mobile. Reparar primero el dato y reforzar el componente para degradar elegantemente ante tarifas ausentes.
+- [ ] No declarar auditoría B/D aprobada si falla una prueba; documentar la línea, causa, corrección y resultado de CI.
+
 ## Checklist operativo por etapas y auditorías
 
 **Los viajes nuevos aparecen inmediatamente en Inicio, incluso con datos mínimos.** No utilizar etiquetas «borrador», «en planeación», «preliminar» ni marcadores de progreso públicos en sus tarjetas o encabezados. El progreso y los pendientes viven exclusivamente en `docs/trip-progress/<slug>.md`; los campos desconocidos se omiten o se presentan con «Por definir» dentro de la sección correspondiente. Los viajes antiguos se reconocen por `homeGroup: "ideas"` en `modules.js`, nunca por su posición. La vista de GitHub Pages refleja esos cambios solo después del merge y despliegue de `main`; en desarrollo, la rama se visualiza localmente o en una vista previa separada.
