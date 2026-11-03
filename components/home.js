@@ -141,7 +141,8 @@ window.AtlasHome = function (ctx) {
     const homePrice = t => {
         const estimate = window.AtlasBudget?.planningEstimate?.(t);
         if (!estimate) return price(t);
-        const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 1;
+        const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : null;
+        if (travelers === null) return price(t);
         const perPerson = amount => (amount / travelers).toLocaleString('es-MX', { maximumFractionDigits: 0 });
         return String.fromCharCode(36) + perPerson(estimate.low) + '–' + String.fromCharCode(36) + perPerson(estimate.high);
     };
@@ -159,7 +160,7 @@ window.AtlasHome = function (ctx) {
             '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' +
             '<div class="cardfacts"><span>' + t.work + ' laborales</span></div>' +
             (introduction ? '<p class="card-trip-intro">' + esc(introduction) + '</p>' : '') +
-            '<div class="cardbottom"><div class="card-price"><small>Presupuesto estimado por persona' +
+            '<div class="cardbottom"><div class="card-price"><small>' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? 'Presupuesto estimado por persona' : 'Presupuesto estimado del viaje') +
             (t.budgetPreliminary ? ' · preliminar' : '') + '</small>' +
             '<strong>' + homePrice(t) + ' <span class="card-currency">MXN</span></strong></div>' +
             '<span class="card-arrow" aria-hidden="true">↗</span></div></div></a>';
@@ -187,7 +188,7 @@ window.AtlasHome = function (ctx) {
                 '<span class="comparison-rank">' + (i + 1) + '</span><span>' + esc(t.name) + '</span></a></td>' +
                 '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
                 ' <small>/ ' + t.work + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
-                '<td>' + esc(t.profile.pace) + '</td><td class="comparison-number">' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 1) + '</td>' +
+                '<td>' + esc(t.profile.pace) + '</td><td class="comparison-number">' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 'Por definir') + '</td>' +
                 '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
                 ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
