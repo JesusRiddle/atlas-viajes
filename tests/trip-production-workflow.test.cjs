@@ -63,3 +63,41 @@ test('Atlas: nueve secciones se llenan según dependencias, no en orden visual',
     assert.ok(gate.includes(stage), 'la auditoría ' + letter + ' debe cerrar en etapa ' + stage);
   }
 });
+
+test('Generador crea JSON y bitácora independientes y rechaza duplicados', () => {
+  const os = require('node:os');
+  const path = require('node:path');
+  const cp = require('node:child_process');
+  const sandbox = fs.mkdtempSync(path.join(os.tmpdir(), 'atlas-new-trip-'));
+  try {
+    fs.mkdirSync(path.join(sandbox, 'scripts'));
+    fs.mkdirSync(path.join(sandbox, 'docs'));
+    fs.mkdirSync(path.join(sandbox, 'data', 'trips'), {recursive:true});
+    fs.copyFileSync('scripts/new-trip.cjs', path.join(sandbox, 'scripts', 'new-trip.cjs'));
+    fs.copyFileSync('docs/trip-progress-template.md', path.join(sandbox, 'docs', 'trip-progress-template.md'));
+    const catalog = 'window.ATLAS_MODULES = [\n  {"id":"ejemplo-existente","file":"ejemplo-existente.json","available":true}\n];\n';
+    fs.writeFileSync(path.join(sandbox, 'modules.js'), catalog);
+    const result = cp.spawnSync(process.execPath,
+      [path.join(sandbox, 'scripts', 'new-trip.cjs'), 'destino-prueba-2028', 'Nuevo destino'],
+      {encoding:'utf8'});
+    assert.equal(result.status, 0, result.stderr);
+    const created = JSON.parse(fs.readFileSync(path.join(sandbox,'data/trips/destino-prueba-2028.json'),'utf8'));
+    assert.equal(created.travelerCount, null);
+    assert.equal(created.status, 'draft');
+    const progress = fs.readFileSync(path.join(sandbox,'docs/trip-progress/destino-prueba-2028.md'),'utf8');
+    assert.match(progress, /Nuevo destino/);
+    assert.match(progress, /Etapa actual:\*\* 00/);
+    assert.match(progress, /Etapa 01/);
+    assert.match(progress, /data\/trips\/destino-prueba-2028\.json/);
+    const registered = fs.readFileSync(path.join(sandbox, 'modules.js'),'utf8');
+    assert.match(registered, /destino-prueba-2028/);
+    assert.match(registered, /"available": false/);
+    const duplicate = cp.spawnSync(process.execPath,
+      [path.join(sandbox,'scripts','new-trip.cjs'), 'destino-prueba-2028','Repetido'],
+      {encoding:'utf8'});
+    assert.notEqual(duplicate.status, 0);
+    assert.equal(fs.readdirSync(path.join(sandbox,'docs/trip-progress')).length,1);
+  } finally {
+    fs.rmSync(sandbox, {recursive:true,force:true});
+  }
+});
