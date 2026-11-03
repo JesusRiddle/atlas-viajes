@@ -206,6 +206,11 @@ const assert = require('node:assert/strict');
             'Suiza debe incluir los doce meses de temporadas');
           assert.ok(await page.locator('#costes .budget-ledger').count() >= 1,
             'Suiza debe presentar el desglose de presupuesto');
+          const swissBudget = await page.locator('#costes .budget-ledger').innerText();
+          assert.match(swissBudget, /Transporte terrestre · provisión global/);
+          assert.match(swissBudget, /Trenes, movilidad urbana y pase seleccionado/);
+          assert.match(swissBudget, /10,000\.00/, 'Los $10,000 MXN ferroviarios deben verse en el desglose');
+          assert.match(swissBudget, /86,981/, 'El escenario de riesgo debe aparecer sin alterar el total de referencia');
           await page.screenshot({path: '/tmp/atlas-suiza-nevada-' + viewport.width + '.png', fullPage: true});
         }
         if (id === 'patagonia-argentina-2027') {
