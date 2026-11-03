@@ -130,8 +130,9 @@ window.AtlasHome = function (ctx) {
         }
         return countries.join(' + ');
     }
+    // Los días laborales aún por confirmar no deben ocultar un viaje con ruta y presupuesto.
     const homeReady = t => canRenderFullTrip(t) || (t?.start && t.end &&
-        t?.routeCities?.length && Number.isInteger(t.work) &&
+        t?.routeCities?.length &&
         Number.isFinite(window.AtlasBudget?.planningEstimate?.(t)?.low));
     // New-trip home prices are derived from the same ledger used in Presupuesto.
     // No flight is booked automatically: the first quoted option is a dated reference.
@@ -198,7 +199,7 @@ window.AtlasHome = function (ctx) {
             items.map((t, i) => '<tr><td class="comparison-destination"><a href="#viaje/' + esc(t.id) + '">' +
                 '<span class="comparison-rank">' + (i + 1) + '</span><span>' + esc(t.name) + '</span></a></td>' +
                 '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
-                ' <small>/ ' + t.work + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
+                ' <small>/ ' + (Number.isInteger(t.work) ? t.work : 'Por definir') + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
                 '<td>' + esc(t.profile.pace) + '</td><td class="comparison-number">' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 'Por definir') + '</td>' +
                 '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
                 ' <small>MXN</small></strong>' +
