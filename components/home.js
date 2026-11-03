@@ -142,7 +142,7 @@ window.AtlasHome = function (ctx) {
         if (!estimate) return price(t);
         const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 1;
         const perPerson = amount => (amount / travelers).toLocaleString('es-MX', { maximumFractionDigits: 0 });
-        return '
+        return String.fromCharCode(36) + perPerson(estimate.low) + '–' + String.fromCharCode(36) + perPerson(estimate.high);
     };
     function card(t, i) {
         if (!homeReady(t)) return draftCard(t, i);
