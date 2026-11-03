@@ -22,6 +22,14 @@ const assert = require('node:assert/strict');
       await page.locator('.tripcard').first().waitFor();
       const heroBounds = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').boundingBox();
       assert.ok(heroBounds, 'El hero de Inicio debe estar visible');
+      const heroPhoto = page.locator('.atlas-home-hero-immersive .atlas-home-hero-image img');
+      assert.equal(await heroPhoto.getAttribute('src'), 'photos/atlas-world-hero-horizontal.webp',
+        'La portada debe solicitar la nueva imagen sin renombrar ni reemplazar la original');
+      await page.waitForFunction(() => {
+        const img = document.querySelector('.atlas-home-hero-immersive .atlas-home-hero-image img');
+        return img && img.complete && img.naturalWidth > 0;
+      });
+
       if (viewport.width > 800) {
         assert.ok(heroBounds.height <= 305, 'El hero de escritorio debe ser compacto: ' + heroBounds.height);
         assert.ok(heroBounds.height >= 250, 'El hero debe conservar espacio suficiente para el texto');
