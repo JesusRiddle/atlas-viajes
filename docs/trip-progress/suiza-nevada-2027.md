@@ -4,7 +4,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 
 **Viaje:** Suiza nevada 2027  
 **JSON:** `data/trips/suiza-nevada-2027.json`  
-**Rama / PR:** feature/suiza-2027 · PR pendiente  
+**Rama / PR:** feature/suiza-2027 · https://github.com/JesusRiddle/atlas-viajes/pull/9  
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
 **Etapa actual:** 13 · QA y PR, validación automática pendiente  
