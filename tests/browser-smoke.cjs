@@ -26,7 +26,28 @@ const assert = require('node:assert/strict');
         assert.ok(heroBounds.height <= 305, 'El hero de escritorio debe ser compacto: ' + heroBounds.height);
         assert.ok(heroBounds.height >= 250, 'El hero debe conservar espacio suficiente para el texto');
       }
-      const heroCopy = page.locator('.atlas-home-hero-immersive .atlas-home-hero-copy');
+      // La versión 1 anima solo la fotografía y la luz, nunca el texto.
+      const heroMotion = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => ({
+        imageAnimation: getComputedStyle(hero.querySelector('img')).animationName,
+        lightAnimation: getComputedStyle(hero, '::after').animationName,
+        copyAnimation: getComputedStyle(hero.querySelector('.atlas-home-hero-copy')).animationName,
+        lightPointerEvents: getComputedStyle(hero, '::after').pointerEvents
+      }));
+      assert.match(heroMotion.imageAnimation, /atlas-home-hero-drift/,
+        'La fotografía principal debe tener movimiento lento');
+      assert.match(heroMotion.lightAnimation, /atlas-home-hero-light/,
+        'El hero debe incluir el reflejo de luz discreto');
+      assert.equal(heroMotion.copyAnimation, 'none', 'El texto debe permanecer inmóvil');
+      assert.equal(heroMotion.lightPointerEvents, 'none', 'El reflejo no debe bloquear interacción');
+      const heroCopy = page.locator('.atlas-home-hero-immersive .atlas-home-hero-copy');      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const staticHero = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => ({
+        imageAnimation: getComputedStyle(hero.querySelector('img')).animationName,
+        lightDisplay: getComputedStyle(hero, '::after').display
+      }));
+      assert.equal(staticHero.imageAnimation, 'none', 'Reducir movimiento debe desactivar animación');
+      assert.equal(staticHero.lightDisplay, 'none', 'Reducir movimiento debe desactivar reflejo');
+      await page.emulateMedia({ reducedMotion: 'no-preference' });
+
       const copyBounds = await heroCopy.boundingBox();
       assert.ok(copyBounds && copyBounds.y >= heroBounds.y - 1 &&
         copyBounds.y + copyBounds.height <= heroBounds.y + heroBounds.height + 2,
