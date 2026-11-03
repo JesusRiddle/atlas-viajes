@@ -670,7 +670,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión $6,500 MXN incluye Lindt, Gornergrat y opcional Jungfraujoch (Top Ticket CHF 63 ≈ $1,446 MXN, confirmado para temporada 2026/27). Si no se sube al Jungfraujoch, no se compra su suplemento. Nunca duplicar en entradas el acceso a First/Wengen/Mürren/Männlichen cubierto por pase regional."
+      "notes": "Provisión $6,500 MXN incluye Lindt, Gornergrat y opcional Jungfraujoch (Top Ticket CHF 63 ≈ $1,446 MXN, confirmado para temporada 2026/27). Si no se sube al Jungfraujoch, no se compra su suplemento. Nunca duplicar en entradas el acceso a First/Wengen/Mürren/Männlichen cubierto por pase regional. Referencia Gornergrat tren ida/vuelta CHF 102 (≈ $2,342 MXN), o CHF 51 (≈ $1,171 MXN) con Half Fare, por reconfirmar en checkout del operador."
     },
     {
       "id": "meals-1",
@@ -1515,6 +1515,14 @@
     [
       "Gornergrat · descuentos de Half Fare",
       "https://www.gornergrat.ch/en/products/ticket"
+    ],
+    [
+      "Swiss Travel Pass · tarifas turísticas 2027",
+      "https://www.myswitzerland.com/en-us/planning/transport-accommodation/tickets-public-transport/swiss-travel-pass/"
+    ],
+    [
+      "Gornergrat · tarifa estacional de tren y devolución",
+      "https://www.gornergrat.ch/en/products/ticket"
     ]
   ],
   "sourceNote": null,
@@ -1577,12 +1585,20 @@
       "Tarjeta turística CHF 150 (≈ $3,444 MXN), precio oficial mantenido en 2027, con reducciones de hasta 50 % en trayectos nacionales y ciertas montañas, incluidos Gornergrat. Es un descuento sobre billetes, no transporte gratis. Evaluarla por separado; puede combinarse con pase regional solo si el ahorro neto lo justifica."
     ],
     [
+      "Opción C · Swiss Travel Pass de 15 días",
+      "Swiss Travel Pass de 15 días en 2ª clase CHF 499 (≈ $11,455 MXN), precio 2027 sin cambios. Su costo excede la provisión actual de movilidad antes de sumar posibles excursiones de montaña no incluidas; descartado como compra por defecto. Un pase de 8 días consecutivos no cubre las 11 fechas de estancia sin billetes adicionales."
+    ],
+    [
       "Punto de equilibrio y decisión",
       "Half Fare Card conviene si los descuentos de billetes NO incluidos por Jungfrau (aeropuerto, Luzern–Interlaken, Grindelwald–Zermatt, Zermatt–Zúrich, Zúrich local y Gornergrat) superan CHF 150 (≈ $3,444 MXN). Un descuento del 50 % exigiría gastos de tarifa normal superiores a CHF 300 (≈ $6,887 MXN); algunos tramos tienen descuentos menores. Sin cotización individual exacta no hay ganador demostrado."
     ],
     [
       "Riesgo de presupuesto ferroviario",
       "Los $10,000 MXN son una provisión, no suma de billetes verificados. Tras el pase Jungfrau ($4,040 MXN) quedarían ~$5,960 MXN para trenes nacionales y movilidad urbana. Puede ser insuficiente si los horarios Saver no convienen; validar y recalcular antes de reservar vuelos/hoteles."
+    ],
+    [
+      "Gornergrat · referencia de la temporada 2026/27",
+      "El billete simple ida y vuelta en tren Zermatt–Gornergrat aparece en listas del operador reproducidas por guías especializadas a CHF 102 (≈ $2,342 MXN); con Half Fare sería CHF 51 (≈ $1,171 MXN). Verificar en compra oficial porque algunos paquetes Gornergrat Round Trip mezclan góndola y tren y tienen precios distintos. Gornergrat va en la provisión de actividades."
     ]
   ],
   "railTotal": "Por cotizar: provisión global de $10,000 MXN, sin desglose ferroviario definitivo",
