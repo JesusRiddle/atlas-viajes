@@ -230,7 +230,7 @@
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. Jornada de traslado sin atractivo fotográfico nuevo confirmado; evitar reutilizar una foto que corresponda a otra excursión.",
       "places": [],
       "headerPlaces": [],
-      "spend": 12500,
+      "spend": 12800,
       "hotel": "calafate-sierra",
       "optionalPlaces": [],
       "transportRefs": [
@@ -451,8 +451,17 @@
       ]
     ]
   ],
-  "exchangeRates": {},
-  "exchangeRateSnapshot": null,
+  "exchangeRates": {
+    "ARS": 0.012
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-11-02",
+    "baseCurrency": "MXN",
+    "description": "1 ARS ≈ $0.0120 MXN, referencia XE del 2 de noviembre de 2026 a las 23:13 UTC. Conversión orientativa para planeación; bancos, tarjetas, comisiones y 2027 pueden diferir.",
+    "sources": {
+      "ARS": "https://www.xe.com/en-ca/currencyconverter/convert/?Amount=1&From=ARS&To=MXN"
+    }
+  },
   "expenses": [
     {
       "id": "flight-international",
@@ -779,7 +788,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes.",
+      "notes": "Escenario de $1,800 MXN para dos: referencia 2026 AR$70,000 por persona y tramo, ≈ $1,680 MXN por dos al cambio orientativo de $0.0120 MXN/ARS, más margen reducido para tasa local. Salida y costo 2027 por confirmar.",
       "date": "2027-11-06"
     },
     {
@@ -787,11 +796,11 @@
       "category": "transport",
       "concept": "El Chaltén → El Calafate · transporte para dos",
       "cost": {
-        "amount": 1500,
+        "amount": 1800,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Distribución orientativa del presupuesto anterior, sin cotización vigente 2027; no representa reserva ni tarifa publicada. No sumar nuevamente al contratar tours o paquetes.",
+      "notes": "Escenario de $1,800 MXN para dos basado en precio publicado de AR$70,000 por pasajero y tramo (14 oct 2026) × 2 × 0.0120 MXN/ARS = ≈ $1,680 MXN; resto cubre tasa terminal aproximada. Tarifa 2027 por confirmar.",
       "date": "2027-11-11"
     },
     {
@@ -986,8 +995,8 @@
       "options": [
         {
           "id": "A",
-          "provider": "Shuttle directo FTE → El Chaltén · por cotizar",
-          "status": "pending",
+          "provider": "Autobús directo desde aeropuerto FTE → El Chaltén (referencia 2026)",
+          "status": "estimated",
           "journeys": [
             {
               "direction": "outbound",
@@ -1005,12 +1014,12 @@
           "fares": [
             {
               "id": "reference",
-              "name": "Asignación provisional · 2 personas",
+              "name": "Supuesto regular · 2 personas · aprox. 2026",
               "price": {
                 "amount": 1800,
                 "currency": "MXN"
               },
-              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+              "notes": "Referencia AR$70,000 por pasajero, ≈ $840 MXN. Dos pasajes ≈ $1,680 MXN y margen reducido para tasas; el subtotal de $1,800 ya está en expenses, no se suma otra vez. Source 14/10/2026."
             }
           ],
           "notes": "Preferir servicio con salida posterior al arribo 08:30 y recogida de equipaje; no hay horario confirmado. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje.",
@@ -1018,18 +1027,25 @@
         },
         {
           "id": "B",
-          "provider": "Conexión FTE → terminal El Calafate → El Chaltén",
-          "status": "pending",
+          "provider": "Conexión aeropuerto FTE → Terminal El Calafate → El Chaltén",
+          "status": "estimated",
           "journeys": [
             {
               "direction": "outbound",
               "segments": [
                 {
                   "from": "Aeropuerto FTE",
-                  "to": "El Chaltén",
-                  "departure": "2027-11-06T10:00:00-03:00",
-                  "arrival": "2027-11-06T13:00:00-03:00",
-                  "operator": "Shuttle compartido (horario ilustrativo)"
+                  "to": "Terminal El Calafate",
+                  "departure": "2027-11-06T09:30:00-03:00",
+                  "arrival": "2027-11-06T10:00:00-03:00",
+                  "operator": "Traslado local hipotético"
+                },
+                {
+                  "from": "Terminal El Calafate",
+                  "to": "Terminal El Chaltén",
+                  "departure": "2027-11-06T11:00:00-03:00",
+                  "arrival": "2027-11-06T13:40:00-03:00",
+                  "operator": "Bus regular, hora ilustrativa"
                 }
               ]
             }
@@ -1037,16 +1053,19 @@
           "fares": [
             {
               "id": "reference",
-              "name": "Alternativa pendiente de cotización",
-              "price": null,
-              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+              "name": "Escenario alternativo · 2 personas (no cotizado)",
+              "price": {
+                "amount": 2400,
+                "currency": "MXN"
+              },
+              "notes": "Estimación hipotética de $2,400 MXN para dos, asignando suplemento frente al bus regular. NO es precio publicado, no está contratado ni sumado al escenario base; diferencia contra A: $600 MXN."
             }
           ],
-          "notes": "Alternativa si no coincide shuttle directo; confirmar frecuencias, terminal y compra separada. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje.",
+          "notes": "Alternativa si no coincide shuttle directo; confirmar frecuencias, terminal y compra separada. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje. El importe es modelado, no una oferta; considerar traslados y tasas por separado al cotizar.",
           "selectedFare": "reference"
         }
       ],
-      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados. Horarios publicados el 14/10/2026: bus regular desde aeropuerto FTE 10:20 y shuttle 10:00 (ejemplos); no confirmado noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php Compra: comparar sitio del operador y terminal, revisar política de cambios, equipaje y tasa municipal. La salida del día es orientativa y NO debe tratarse como confirmada para 2027.",
+      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados. Horarios publicados el 14/10/2026: bus regular desde aeropuerto FTE 10:20 y shuttle 10:00 (ejemplos); no confirmado noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php Compra: comparar sitio del operador y terminal, revisar política de cambios, equipaje y tasa municipal. La salida del día es orientativa y NO debe tratarse como confirmada para 2027. Referencia económica (14/10/2026): AR$70,000 por persona y trayecto, equivalentes a ≈ $840 MXN al cambio orientativo ARS/MXN del 02/11/2026. Para dos: ≈ $1,680 MXN más tasas y posibles servicios adicionales. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php. Importes 2027 pendientes.",
       "links": [
         {
           "label": "Autobuses · información turística",
@@ -1064,7 +1083,7 @@
         {
           "id": "A",
           "provider": "Autobús directo El Chaltén → El Calafate",
-          "status": "pending",
+          "status": "estimated",
           "journeys": [
             {
               "direction": "outbound",
@@ -1073,7 +1092,7 @@
                   "from": "Terminal El Chaltén",
                   "to": "Terminal El Calafate",
                   "departure": "2027-11-11T08:00:00-03:00",
-                  "arrival": "2027-11-11T10:40:00-03:00",
+                  "arrival": "2027-11-11T10:30:00-03:00",
                   "operator": "Bus regular (horario histórico)"
                 }
               ]
@@ -1082,12 +1101,12 @@
           "fares": [
             {
               "id": "reference",
-              "name": "Asignación provisional · 2 personas",
+              "name": "Supuesto regular · 2 personas · aprox. 2026",
               "price": {
-                "amount": 1500,
+                "amount": 1800,
                 "currency": "MXN"
               },
-              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+              "notes": "Referencia AR$70,000 por pasajero, ≈ $840 MXN. Dos pasajes ≈ $1,680 MXN y margen reducido para tasas; el subtotal de $1,800 ya está en expenses, no se suma otra vez. Source 14/10/2026."
             }
           ],
           "notes": "Referencial 3 h aprox.; salida del 11 noviembre aún no publicada. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje.",
@@ -1096,7 +1115,7 @@
         {
           "id": "B",
           "provider": "Transfer compartido El Chaltén → El Calafate",
-          "status": "pending",
+          "status": "estimated",
           "journeys": [
             {
               "direction": "outbound",
@@ -1114,16 +1133,19 @@
           "fares": [
             {
               "id": "reference",
-              "name": "Alternativa pendiente de cotización",
-              "price": null,
-              "notes": "No reservado ni cotizado para noviembre 2027; importe de referencia de 2026 o supuesto contable sin doble contabilización."
+              "name": "Escenario alternativo · 2 personas (no cotizado)",
+              "price": {
+                "amount": 2300,
+                "currency": "MXN"
+              },
+              "notes": "Estimación hipotética de $2,300 MXN para dos, asignando suplemento frente al bus regular. NO es precio publicado, no está contratado ni sumado al escenario base; diferencia contra A: $500 MXN."
             }
           ],
-          "notes": "Comparar costo total y recogida; no confundir con reserva. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje.",
+          "notes": "Comparar costo total y recogida; no confundir con reserva. Horarios solo ilustrativos a partir de servicios observados en 2026, no disponibles/confirmados para noviembre 2027. Confirmar embarque y entrega de equipaje. El importe es modelado, no una oferta; considerar traslados y tasas por separado al cotizar.",
           "selectedFare": "reference"
         }
       ],
-      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027. Horarios publicados el 14/10/2026: bus regular 08:00 y shuttle desde 09:00 (ejemplos); no confirmado para noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php Compra: comparar sitio del operador y terminal, revisar política de cambios, equipaje y tasa municipal. La salida del día es orientativa y NO debe tratarse como confirmada para 2027.",
+      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027. Horarios publicados el 14/10/2026: bus regular 08:00 y shuttle desde 09:00 (ejemplos); no confirmado para noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php Compra: comparar sitio del operador y terminal, revisar política de cambios, equipaje y tasa municipal. La salida del día es orientativa y NO debe tratarse como confirmada para 2027. Referencia económica (14/10/2026): AR$70,000 por persona y trayecto, equivalentes a ≈ $840 MXN al cambio orientativo ARS/MXN del 02/11/2026. Para dos: ≈ $1,680 MXN más tasas y posibles servicios adicionales. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php. Importes 2027 pendientes.",
       "links": [
         {
           "label": "Autobuses · información turística",
@@ -1241,13 +1263,13 @@
     "reservationTitle": "Reservaciones importantes",
     "reservationNote": "Reservas, cupos y tarifas para noviembre de 2027 aún por verificar; ninguna excursión ni vuelo está comprado.",
     "referencePriceNotes": "Vuelos tomados de la presentación de 2026; autobuses, alojamientos y tours sujetos a precios de noviembre 2027. Las cifras son para dos personas; la portada expresa equivalentes por persona.",
-    "budgetScenarioNotes": "Esencial: $137,648 MXN (sin Bonanza ni Lago del Desierto). Completo: $144,648 MXN. Prudente: $151,648 MXN con $7,000 MXN adicionales de colchón. Las jornadas muestran asignaciones de presupuesto, no pagos."
+    "budgetScenarioNotes": "Esencial: $137,948 MXN (sin Bonanza ni Lago del Desierto). Completo: $144,948 MXN. Prudente: $151,948 MXN con $7,000 MXN adicionales de colchón. Las jornadas muestran asignaciones de presupuesto, no pagos. Comparativo terrestre B: $600 MXN más (FTE–Chaltén) o $500 MXN más (Chaltén–Calafate) respecto a buses regulares; ambos extras no se incluyen automáticamente en la proyección por tratarse de supuestos sin oferta confirmada."
   },
   "lodgingSummary": "14 noches del 4 al 18 de noviembre en cuatro estancias: Buenos Aires (2 + 2), El Chaltén (5), El Calafate (5). Tres hoteles candidatos; sin tarifas confirmadas.",
   "heroLodgingSummary": "14 noches · 4 alojamientos",
   "budgetPreliminary": {
-    "low": 137648,
-    "high": 151648,
+    "low": 137948,
+    "high": 151948,
     "marginMXN": 7000,
     "useBudgetRange": true,
     "referenceFlightMXN": 24398,
@@ -1471,12 +1493,12 @@
       "url": "https://elchalten.tur.ar/omnibus/"
     }
   ],
-  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras. Las imágenes enlazadas por URL remota son referencias editoriales pendientes de validación HTTP individual y revisión visual del viaje; pasar CI no verifica el contenido de las fotografías. Estimación de PTO: 10 días laborales de lunes a viernes entre 4 y 18 noviembre 2027, descontando el descanso obligatorio de México del lunes 15 de noviembre (tercer lunes). Confirmar calendario de la empresa. Referencias de operadores consultadas el 02/11/2026: https://turismocalafate.com/excursiones/todo-glaciares/ y https://hieloyaventura.com/ .",
+  "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras. Las imágenes enlazadas por URL remota son referencias editoriales pendientes de validación HTTP individual y revisión visual del viaje; pasar CI no verifica el contenido de las fotografías. Estimación de PTO: 10 días laborales de lunes a viernes entre 4 y 18 noviembre 2027, descontando el descanso obligatorio de México del lunes 15 de noviembre (tercer lunes). Confirmar calendario de la empresa. Referencias de operadores consultadas el 02/11/2026: https://turismocalafate.com/excursiones/todo-glaciares/ y https://hieloyaventura.com/ . Fotografía: se comprobaron las páginas de los archivos enlazados en Wikimedia Commons durante esta revisión (algunas rutas directas no pudieron verificarse mediante HTTP desde este entorno); la prueba de carga de imágenes en el navegador del usuario continúa siendo deseable.",
   "budgetRange": [
-    137648,
-    151648
+    137948,
+    151948
   ],
-  "budgetNote": "Estimación de trabajo para DOS personas: $144,648 MXN, distribuida en 19 partidas orientativas. Vuelos internacionales ($24,398 MXN) y nacionales ($23,250 MXN) proceden de la presentación de 2026, NO de una cotización para 2027. Los $30,000 MXN de alojamiento se repartieron por noches y ciudades; autobuses, taxis, parques, excursiones y seguro son asignaciones de presupuesto, no precios comprobados. La reserva menor de $1,500 MXN es reducida para un viaje de montaña: considerar un fondo adicional antes de comprar. Los traslados/entradas que un operador incluya deberán descontarse del renglón correspondiente para evitar duplicación. La cabalgata y Lago del Desierto son opciones presupuestadas, no compromisos; si se descartan, reducir el escenario. Conversión ARS/MXN pendiente de tasa fechada y verificable. Los importes «Gastos registrados del día» son imputaciones presupuestarias, NO gastos reales ni tickets comprados. Vuelos redondos se atribuyen una vez a la salida correspondiente y los hoteles se imputan completos a su check-in; alimentos se reparten $1,000 MXN por jornada para dos personas como supuesto. La suma diaria coincide con las partidas globales, no debe sumarse de nuevo. Las cuatro fichas de traslado son comparativas; sus importes se incluyen una sola vez mediante las partidas de gastos que las financian. Cambiar la opción visual no constituye recotización del presupuesto. ESCENARIOS DE DECISIÓN (no cotizaciones): esencial sin Bonanza ni Lago del Desierto $137,648 MXN para dos; completo con ambas actividades $144,648 MXN; completo con fondo de imprevistos reforzado en $7,000 MXN $151,648 MXN. El último escenario conserva las excursiones y eleva la reserva disponible de $1,500 a $8,500 MXN, sin modificar el total base ni registrar el margen opcional como gasto pagado. La visita a Glaciarium y Laguna Torre son opciones sin precio asignado, NO están incluidas en los totales.",
+  "budgetNote": "Estimación de trabajo para DOS personas: $144,948 MXN, distribuida en 19 partidas orientativas. Vuelos internacionales ($24,398 MXN) y nacionales ($23,250 MXN) proceden de la presentación de 2026, NO de una cotización para 2027. Los $30,000 MXN de alojamiento se repartieron por noches y ciudades; autobuses, taxis, parques, excursiones y seguro son asignaciones de presupuesto, no precios comprobados. La reserva menor de $1,500 MXN es reducida para un viaje de montaña: considerar un fondo adicional antes de comprar. Los traslados/entradas que un operador incluya deberán descontarse del renglón correspondiente para evitar duplicación. La cabalgata y Lago del Desierto son opciones presupuestadas, no compromisos; si se descartan, reducir el escenario. Conversión ARS/MXN pendiente de tasa fechada y verificable. Los importes «Gastos registrados del día» son imputaciones presupuestarias, NO gastos reales ni tickets comprados. Vuelos redondos se atribuyen una vez a la salida correspondiente y los hoteles se imputan completos a su check-in; alimentos se reparten $1,000 MXN por jornada para dos personas como supuesto. La suma diaria coincide con las partidas globales, no debe sumarse de nuevo. Las cuatro fichas de traslado son comparativas; sus importes se incluyen una sola vez mediante las partidas de gastos que las financian. Cambiar la opción visual no constituye recotización del presupuesto. ESCENARIOS DE DECISIÓN (no cotizaciones): esencial sin Bonanza ni Lago del Desierto $137,948 MXN para dos; completo con ambas actividades $144,948 MXN; completo con fondo de imprevistos reforzado en $7,000 MXN $151,948 MXN. El último escenario conserva las excursiones y eleva la reserva disponible de $1,500 a $8,500 MXN, sin modificar el total base ni registrar el margen opcional como gasto pagado. La visita a Glaciarium y Laguna Torre son opciones sin precio asignado, NO están incluidas en los totales. Referencia bus 2026: dos pasajes por tramo AR$140,000 (≈ $1,680 MXN); asignamos $1,800 MXN a cada trayecto regular para cubrir margen local. Alternativas B ilustrativas +$600 y +$500 MXN respectivamente, no seleccionadas ni agregadas. Tipo de cambio de XE 02/11/2026, no pronóstico.",
   "placeDescriptions": {
     "pat27-laguna-tres": "Laguna de los Tres · caminata exigente, condicionada a guía y clima seguro",
     "pat27-perito": "Glaciar Perito Moreno · Minitrekking y pasarelas",
@@ -1525,7 +1547,7 @@
     "Revisar si Minitrekking y Todo Glaciares incluyen traslado y acceso al Parque Nacional Los Glaciares; evitar doble cobro.",
     "Los 10 días laborales suponen semana lunes-viernes y observancia del descanso obligatorio del 15 de noviembre de 2027; confirmar vacaciones con el empleador."
   ],
-  "exchangeNote": null,
+  "exchangeNote": "Referencia orientativa del 02/11/2026: AR$1 ≈ $0.0120 MXN; AR$70,000 ≈ $840 MXN por persona; AR$140,000 ≈ $1,680 MXN para dos. La referencia cambia con el mercado y NO fija costos de noviembre 2027.",
   "railSummary": [],
   "railTotal": null,
   "railExclusions": null,
