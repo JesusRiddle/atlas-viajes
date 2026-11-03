@@ -58,7 +58,7 @@ test('Atlas: nueve secciones se llenan según dependencias, no en orden visual',
     assert.match(file, /Presupuesto/);
   }
   for (const [letter, stage] of Object.entries({A:'03',B:'08',C:'11',D:'13'})) {
-    const gate = template.split('\\n').find(line => line.startsWith('| ' + letter + ' ·'));
+    const gate = template.split(/\r?\n/).find(line => line.startsWith('| ' + letter + ' ·'));
     assert.ok(gate, 'falta auditoría ' + letter);
     assert.ok(gate.includes(stage), 'la auditoría ' + letter + ' debe cerrar en etapa ' + stage);
   }
