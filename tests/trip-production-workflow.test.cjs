@@ -34,3 +34,31 @@ test('Atlas: guía, estándar, agente y checklist comparten el procedimiento', (
   assert.match(editorial, /### 4\. Experiencias/);
   assert.match(checklist, /Auditoría/);
 });
+
+test('Atlas: nueve secciones se llenan según dependencias, no en orden visual', () => {
+  const template = read('docs/trip-progress-template.md');
+  const editorial = read('docs/trip-editorial-guide.md');
+  const agent = read('AGENTS.md');
+  const operations = [
+    ['02', 'Temporadas'], ['04', 'Mapa'], ['05', 'Experiencias'],
+    ['06', 'Reservaciones importantes'], ['07', 'Movilidad y conexiones'],
+    ['08', 'Dónde dormirás'], ['09', 'Día por día'],
+    ['10', 'Panorama'], ['11', 'Presupuesto']
+  ];
+  const stepOrder = [...template.matchAll(/^- \[ \] \*\*(\d\d) · ([^\n]+)/gm)]
+    .map(m => ({number: m[1], description: m[2]}));
+  assert.deepEqual(stepOrder.map(x => x.number),
+    Array.from({length:14}, (_,i)=>String(i).padStart(2,'0')));
+  for (const [n, title] of operations) {
+    assert.match(stepOrder[Number(n)].description, new RegExp(title), n + ': ' + title);
+  }
+  for (const file of [template, editorial, agent]) {
+    assert.match(file, /orden visual|orden de navegación/i);
+    assert.match(file, /Temporadas/);
+    assert.match(file, /Presupuesto/);
+  }
+  const expectedGates = {A:'03',B:'08',C:'11',D:'13'};
+  const gateRows = Object.fromEntries([...template.matchAll(/^\| ([A-D]) · [^|]+\| (0\d|1[0-3]) \|/gm)]
+    .map(m => [m[1],m[2]]));
+  assert.deepEqual(gateRows, expectedGates);
+});
