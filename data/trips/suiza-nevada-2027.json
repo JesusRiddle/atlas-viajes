@@ -100,7 +100,10 @@
       "mobility": "Zürich Flughafen → Luzern Bahnhof por SBB; comprar tras completar migración. Consultar sbb.ch.",
       "note": "El Rigi queda espontáneo solo si acabas el casco antiguo temprano, hay buena visibilidad y alcanzan los trenes con luz; no desplazar el traslado a Grindelwald del día siguiente.",
       "spend": null,
-      "places": [],
+      "places": [
+        "lucerne",
+        "lake-lucerne"
+      ],
       "headerPlaces": [],
       "hotel": "lucerna-ibis",
       "transportRefs": []
@@ -116,7 +119,9 @@
       "mobility": "Luzern Bahnhof → Interlaken Ost en Luzern–Interlaken Express → Grindelwald Bahnhof por SBB/Zentralbahn/Berner Oberland-Bahn.",
       "note": "El trayecto panorámico sí forma parte de la ruta, no es un tren premium extra. Guardar margen para conexión.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-grindelwald-winter"
+      ],
       "headerPlaces": [],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": []
@@ -132,7 +137,10 @@
       "mobility": "Grindelwald → First por góndola; retorno en el mismo medio si opera.",
       "note": "No pisar senderos cerrados ni asumir Cliff Walk operativo; consultar estado oficial del día.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-grindelwald-winter",
+        "first-cliff-walk"
+      ],
       "headerPlaces": [],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": []
@@ -148,7 +156,11 @@
       "mobility": "Grindelwald → Zweilütschinen → Lauterbrunnen; Wengen ida y vuelta; Mürren vía Grütschalp según itinerario. Billetes/pase por decidir.",
       "note": "Es el día más intenso por conexiones. Mürren y Wengen pueden alternarse o recortarse según clima, sin alterar alojamiento.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-lauterbrunnen-winter",
+        "swiss27-wengen-winter",
+        "swiss27-murren-winter"
+      ],
       "headerPlaces": [],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": []
@@ -164,7 +176,10 @@
       "mobility": "Grindelwald → Jungfraujoch vía Grindelwald Terminal/Eiger Express o Männlichen/Kleine Scheidegg; elegir solo alternativa meteorológicamente viable.",
       "note": "Jungfraujoch requiere excelente visibilidad; no contratar por obligación. Confirmar suplemento del pase regional 2027.",
       "spend": null,
-      "places": [],
+      "places": [
+        "first-cliff-walk",
+        "swiss27-wengen-winter"
+      ],
       "headerPlaces": [],
       "hotel": "grindelwald-tschuggen",
       "transportRefs": []
@@ -180,7 +195,9 @@
       "mobility": "Grindelwald → Interlaken Ost → Spiez → Visp → Zermatt en tren; verificar conexiones de 2027.",
       "note": "Evitar billetes con cambios ajustados; transbordos y tiempos son indicativos, no reservas.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-zermatt-winter"
+      ],
       "headerPlaces": [],
       "hotel": "zermatt-testa",
       "transportRefs": []
@@ -196,7 +213,10 @@
       "mobility": "Zermatt → Gornergrat en tren de cremallera y retorno.",
       "note": "Gornergrat solo si hay visibilidad; el billete puede ser caro. Revisar descuentos de pase.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-gornergrat-winter",
+        "gornergrat"
+      ],
       "headerPlaces": [],
       "hotel": "zermatt-testa",
       "transportRefs": []
@@ -212,7 +232,9 @@
       "mobility": "Trayectos a Sunnegga si se elige; si no, paseo local.",
       "note": "Segundo día flexible por tiempo: no presupuestar dos ascensos a Gornergrat.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-zermatt-winter"
+      ],
       "headerPlaces": [],
       "hotel": "zermatt-testa",
       "transportRefs": []
@@ -228,7 +250,9 @@
       "mobility": "Zermatt → Visp → Bern → Zürich HB en tren SBB; rutas exactas sujetas a horario 2027.",
       "note": "Zúrich no necesita nieve; aquí priorizar casco antiguo y Lindt. Confirmar apertura de comercios dominicales.",
       "spend": null,
-      "places": [],
+      "places": [
+        "zurich"
+      ],
       "headerPlaces": [],
       "hotel": "zurich-fred",
       "transportRefs": []
@@ -244,7 +268,10 @@
       "mobility": "Zürich HB → Kilchberg/Schokoladenplatz en transporte público y regreso.",
       "note": "Lindt es imprescindible en el plan, pero aún sin entrada comprada; verificar lunes 1/2/2027.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-lindt",
+        "zurich"
+      ],
       "headerPlaces": [],
       "hotel": "zurich-fred",
       "transportRefs": []
@@ -658,7 +685,7 @@
   ],
   "ticketNotes": [],
   "attractionTerms": [],
-  "cover": null,
+  "cover": "swiss27-grindelwald-winter",
   "mapPoints": [
     {
       "name": "Zúrich",
@@ -934,7 +961,20 @@
     85000
   ],
   "budgetNote": "Proyección para una persona. Vuelos $20,331 + alojamiento $31,750 + transporte $10,000 + actividades $6,500 + comida $9,000 + extras $4,400 = $81,981 MXN; objetivo global $75,000–$85,000 MXN. No implica reservas confirmadas.",
-  "placeDescriptions": {},
+  "placeDescriptions": {
+    "lucerne": "El Puente de la Capilla y el casco antiguo son la primera parada; la nieve en la ciudad no está garantizada.",
+    "lake-lucerne": "Lago de los Cuatro Cantones, un paisaje de agua y montañas antes de entrar al Oberland.",
+    "swiss27-grindelwald-winter": "Grindelwald en invierno: chalets, vistas del Eiger y acceso ferroviario a los miradores nevados.",
+    "first-cliff-walk": "Pasarela panorámica de First; recorrido solo si el teleférico y la pasarela están operativos.",
+    "swiss27-lauterbrunnen-winter": "Valle glacial rodeado de paredes de roca; las cascadas pueden llevar poca agua o congelarse.",
+    "swiss27-wengen-winter": "Pueblo alpino sin automóviles, accesible en tren de cremallera desde Lauterbrunnen.",
+    "swiss27-murren-winter": "Mürren, sobre un balcón de montaña con vistas al macizo de Jungfrau.",
+    "swiss27-zermatt-winter": "Calles de Zermatt y Matterhorn bajo la nieve; la visibilidad depende del clima.",
+    "swiss27-gornergrat-winter": "Mirador alpino y vista al Matterhorn; la fotografía representa condiciones invernales posibles.",
+    "gornergrat": "Tren de cremallera a Gornergrat, recorrido escénico que se decide según visibilidad.",
+    "zurich": "Casco antiguo y río Limmat: aquí priorizamos historia y gastronomía, no encontrar nieve.",
+    "swiss27-lindt": "La gran fuente de chocolate es una de las visitas prioritarias en Kilchberg."
+  },
   "optionalSection": null,
   "family": null,
   "layoutClass": null,
