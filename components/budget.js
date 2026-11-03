@@ -149,6 +149,13 @@ window.AtlasBudget = (() => {
         const fare = option?.fares?.find(f => f.id === (overrides['flight-international']?.fare || option.selectedFare));
         const flightCost = convert(fare?.price, rates);
         if (flightCost === null) return null;
+        // El vuelo puede estar ya incluido en expenses como referencia histórica.
+        // En ese caso se sustituye su importe por la tarifa seleccionada sin sumarlo dos veces.
+        const existingFlightExpense = flight?.budgetIncludedIn
+            ? (trip.expenses || []).find(item => item.id === flight.budgetIncludedIn && !item.optional)
+            : null;
+        const alreadyIncluded = existingFlightExpense ? convert(existingFlightExpense.cost, rates, existingFlightExpense.paidMXN) : null;
+        if (alreadyIncluded !== null) land -= alreadyIncluded;
         const total = round(land + flightCost);
         return { totalMXN: total, low: plan.useBudgetRange === true && Array.isArray(trip.budgetRange) ? trip.budgetRange[0] + flightCost - (plan.referenceFlightMXN || 0) : Math.round(total / 1000) * 1000,
             high: plan.useBudgetRange === true && Array.isArray(trip.budgetRange) ? trip.budgetRange[1] + flightCost - (plan.referenceFlightMXN || 0) : Math.ceil((total + plan.marginMXN) / 1000) * 1000,

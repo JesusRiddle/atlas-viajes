@@ -17,6 +17,11 @@ window.ATLAS_MODULES = [
     "available": true
   },
   {
+    "id": "patagonia-argentina-2027",
+    "file": "patagonia-argentina-2027.json",
+    "available": true
+  },
+  {
     "id": "espana",
     "file": "espana.json",
     "available": true

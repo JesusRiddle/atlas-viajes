@@ -139,7 +139,10 @@ window.AtlasHome = function (ctx) {
     // No flight is booked automatically: the first quoted option is a dated reference.
     const homePrice = t => {
         const estimate = window.AtlasBudget?.planningEstimate?.(t);
-        return estimate ? '$' + estimate.low.toLocaleString('es-MX') + '–$' + estimate.high.toLocaleString('es-MX') : price(t);
+        if (!estimate) return price(t);
+        const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 1;
+        const perPerson = amount => (amount / travelers).toLocaleString('es-MX', { maximumFractionDigits: 0 });
+        return String.fromCharCode(36) + perPerson(estimate.low) + '–' + String.fromCharCode(36) + perPerson(estimate.high);
     };
     function card(t, i) {
         if (!homeReady(t)) return draftCard(t, i);
@@ -174,7 +177,7 @@ window.AtlasHome = function (ctx) {
                 '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
                 ' <small>/ ' + t.work + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
                 '<td>' + esc(t.profile.pace) + '</td><td>' + esc(t.profile.solo) + '</td>' +
-                '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + price(t) +
+                '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
                 ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
     }

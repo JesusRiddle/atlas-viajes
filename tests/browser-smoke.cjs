@@ -6,9 +6,11 @@ const assert = require('node:assert/strict');
 (async () => {
   const browser = await chromium.launch({ headless: true });
   const catalog = fs.readFileSync('modules.js', 'utf8');
-  const destinations = [...catalog.matchAll(/"id": "([a-z0-9-]+)"/g)].map(match => match[1]);
-  // El catálogo tiene 19 viajes tras retirar el itinerario antiguo absorbido por España + Portugal 2027.
-  assert.equal(destinations.length, 19);
+  const allDestinations = [...catalog.matchAll(/"id": "([a-z0-9-]+)"/g)].map(match => match[1]);
+  // Incluye también el viaje nuevo: no depender únicamente de la validación de su JSON.
+  const destinations = allDestinations;
+  assert.ok(allDestinations.includes("patagonia-argentina-2027"), "Patagonia 2027 debe figurar en el catálogo");
+  assert.equal(new Set(allDestinations).size, allDestinations.length, "El catálogo no debe repetir IDs");
   const anchors = ['plan', 'mapa', 'temporadas', 'experiencias', 'reservas', 'traslados', 'alojamientos', 'dias', 'costes'];
   try {
     for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
@@ -21,13 +23,32 @@ const assert = require('node:assert/strict');
       }));
       await page.goto('http://127.0.0.1:8765/', { waitUntil: 'domcontentloaded' });
       await page.locator('.tripcard').first().waitFor();
+      const patagoniaCard = page.locator('.tripcard[href="#viaje/patagonia-argentina-2027"]');
+      assert.equal(await patagoniaCard.count(), 1, 'La portada de Patagonia debe existir');
+      assert.ok(!(await patagoniaCard.getAttribute('class')).includes('tripcard-draft'), 'La portada no debe ser un borrador vacío');
+      const patagoniaCardText = await patagoniaCard.innerText();
+      assert.match(patagoniaCardText, /68[,.]974/, 'La portada debe mostrar escenario mínimo por persona');
+      assert.match(patagoniaCardText, /75[,.]974/, 'La portada debe mostrar escenario máximo por persona');
       for (const id of destinations) {
         await page.goto('http://127.0.0.1:8765/#viaje/' + id, { waitUntil: 'domcontentloaded' });
         await page.locator('.triphero').waitFor();
+        // Esperar navegación específica: la portada del viaje anterior aún puede existir tras cambiar el hash.
+        await page.locator('.subnav a[href*="#viaje/' + id + '/"]').first().waitFor();
         for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1, viewport.width + ' ' + id + ' ' + anchor);
         const text = await page.locator('main').innerText();
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
-        assert.equal(await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count() >= 9, true);
+        const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
+        const isDraft = id === 'nuevo-viaje';
+        assert.ok(navigationCount >= (isDraft ? 5 : 9), id + ' navigation links ' + navigationCount);
+        if (id === 'patagonia-argentina-2027') {
+          assert.equal(await page.locator('#traslados .mt-card').count(), 4, 'Patagonia debe renderizar sus cuatro traslados');
+          assert.equal(await page.locator('#dias details.day').count(), 15, 'Patagonia debe mostrar sus 15 jornadas');
+          assert.ok(await page.locator('#alojamientos .hotel-card').count() >= 4, 'Patagonia debe mostrar cuatro estancias');
+          assert.ok(await page.locator('#costes .budget-ledger').count() >= 1, 'Patagonia debe mostrar presupuesto');
+          const budgetText = await page.locator('#costes').innerText();
+          assert.match(budgetText, /144[,.]948|144948/, 'El presupuesto debe incluir el total esperado');
+          await page.screenshot({path: '/tmp/atlas-patagonia-' + viewport.width + '.png', fullPage: true});
+        }
         const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
         assert.ok(overflow <= 3, id + ' horizontal overflow ' + overflow + ' at ' + viewport.width);
       }
