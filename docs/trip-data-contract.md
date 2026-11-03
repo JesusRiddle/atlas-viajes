@@ -14,14 +14,13 @@ Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON con
 | `0` | Cantidad o costo **conocido y realmente cero** | Mostrar cero con su unidad; nunca usar como sustituto de pendiente |
 | `false` | Respuesta negativa confirmada | Mostrar el estado negativo real, no «Por definir» |
 | `"pending"` | Estado de temporada pendiente de estudiar | Tarjeta morada «Por definir» |
-| `"draft"` | Etapa de planificación del viaje; no equivale a campos vacíos | Mostrar contenido progresivamente |
 
 **Importante:** `null` y `[]` no significan que algo no exista ni que sea gratis. `"no_aplica"` se reserva a atributos escalares u opciones que el modelo permita; no debe sustituir colecciones, fechas, objetos, montos ni el identificador. Usar únicamente `no_aplica` (no `not_applicable`) como valor canónico. No mezclar estados de información con el contenido visible: «Por definir» y «No aplica» son textos de UI, no datos de negocio.
 
 ## Reglas por familia de campos
 - **Identidad:** `id` (slug único, minúsculas, dígitos y guiones) y `name` (texto no vacío) obligatorios. `flag` puede ser `null`. El número y orden del viaje proceden de `modules.js`, no del JSON.
 - **Fechas:** `start`, `end` y fechas individuales usan `YYYY-MM-DD` o `null`; no se crean fechas actuales ficticias. Sin ambas fechas, el rango sigue pendiente. Nunca se evalúa una fecha nula con `new Date()` para presentarla.
-- **Textos editoriales de portada:** `intro` narra «La esencia de tu recorrido» (aprox. 70–130 palabras) y `introShort` sintetiza las ciudades y atractivos para la portada (aprox. 30–45 palabras). Ambos son `string | null` y se redactan al preparar cada viaje; en borradores pueden permanecer en `null`. La portada prefiere `introShort` y usa `intro` solo como respaldo de compatibilidad.
+- **Textos editoriales de portada:** `intro` narra «La esencia de tu recorrido» (aprox. 70–130 palabras) y `introShort` sintetiza las ciudades y atractivos para la portada (aprox. 30–45 palabras). Ambos son `string | null` y se redactan al preparar cada viaje; al iniciar pueden permanecer en `null`. La portada prefiere `introShort` y usa `intro` solo como respaldo de compatibilidad.
 - **Textos:** `intro`, `climate`, `solo`, `flight`, `local`, `tag` y demás descripciones libres son `string | null`. Sin texto, mostrar marcador neutro en la sección.
 - **Colecciones:** `routeCities`, `bases`, `days`, `hotels`, `stays`, `mapPoints`, `majorTransport`, `expenses`, `costs`, `reservations` y similares se inicializan como `[]`. Una colección vacía significa «sin registros todavía», no «no se visitarán ciudades».
 - **Dinero:** importe pendiente = `null`, importe confirmado de cero = `0`. Un costo conocido necesita moneda. `exchangeRates: {}` indica tipos de cambio pendientes; no convertir sin cotización válida. Un subtotal acumulado de entradas conocidas puede ser cero matemático, pero debe mostrarse como pendiente si no hay partidas suficientes para afirmar un total.
@@ -35,7 +34,7 @@ Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON con
 
 ## Alcance actual y consideraciones
 - Basta un JSON literal con `id` y `name` registrado en `modules.js`: `loader.js` completa los contenedores y las temporadas desde `_template.json`. No es necesario copiar todas las propiedades del template para crear el JSON.
-- La vista de viajes `draft` reutiliza el encabezado, la navegación y las nueve anclas maestras. Algunos componentes especializados requieren datos completos y muestran estados pendientes hasta contar con ellos; los presupuestos sin suficientes importes no se presentan como totales definitivos.
+- Todo nuevo viaje visible reutiliza el encabezado, la navegación y las nueve anclas maestras, sin etiquetas de fase en la interfaz. Algunos componentes especializados requieren datos completos y muestran estados pendientes hasta contar con ellos; los presupuestos sin suficientes importes no se presentan como totales definitivos.
 - Los textos «Por definir» y «No aplica» pertenecen a la interfaz y deben derivarse de valores semánticos; no se guardan como campos ficticios.
 - El orden JSON de las claves mensuales puede variar porque las claves `"10"`, `"11"` y `"12"` son índices enteros en JavaScript. La interfaz debe ordenar por los meses 01–12, no depender del orden de inserción del objeto.
 
@@ -47,7 +46,7 @@ Un viaje puede empezar con `id` y `name` y completarse gradualmente. El JSON con
 5. No sumar ausencias al presupuesto ni interpretar una lista vacía como presupuesto final.
 6. Mantener el comportamiento de viajes completos existentes.
 
-## Alta de un nuevo viaje
+## Alta visible de un nuevo viaje
 Crear `data/trips/<id>.json` con únicamente `id` y `name` (o copiar `_template.json` si se desea editar el esquema completo) y registrar `{ "id": "<id>", "file": "<id>.json", "available": true }` en `modules.js`. La plantilla **no** debe registrarse como viaje real.
 
 ## Pruebas y mantenimiento
