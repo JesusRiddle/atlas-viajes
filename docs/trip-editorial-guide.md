@@ -36,24 +36,26 @@ Antes de crear el JSON, leer el estándar autónomo `docs/trip-master-standard.m
 
 La orden **«refléjalo en el Atlas»** activa el flujo completo de construcción tras haber acordado fechas, destinos y alcance. Antes de modificar datos, crear `docs/trip-progress/<slug>.md` desde [la plantilla de seguimiento](../docs/trip-progress-template.md) en la rama del viaje. Ese archivo registra **etapa actual, evidencias, pendientes, bloqueos y próxima acción**. Al reanudar, leerlo y contrastarlo con el JSON y los commits; jamás pedir al usuario que repita los «adelante» de cada sección.
 
-**Orden operativo 00–13 (los nueve elementos 04–12 son las secciones visibles):**
+**Orden de construcción 00–13 por dependencias (diferente del orden visual del Atlas):**
 
-| Etapa | Acción | Cierre verificable |
+| Etapa | Sección o trabajo | Dependencia mínima y criterio de cierre |
 | --- | --- | --- |
-| 00 | Preparar normativa, rama, JSON, registro y checklist | Archivos y alcance listos |
-| 01 | Fechas, restricciones, vuelos, festivos, `travelerCount` | Fechas y viajeros explícitos o pendientes reconocidos |
-| 02 | Ruta, ciudades y noches por alojamiento | Ruta sin retrocesos injustificados; noches coherentes |
-| 03 | Esqueleto de todas las jornadas y reservas condicionantes | **Auditoría A**: días, noches, traslados y prioridades compatibles |
-| 04 | **Panorama** | Introducciones, indicadores, clima y datos prácticos consistentes |
-| 05 | **Mapa** | Puntos reales, coordenadas verificadas y recorrido alineado |
-| 06 | **Temporadas** | Doce meses y franja de clima coherentes |
-| 07 | **Experiencias para recordar** | **Auditoría B**: editorial, geografía y experiencias revisadas |
-| 08 | **Reservaciones importantes** | Prioridad, enlaces, condiciones y alternativas |
-| 09 | **Movilidad y conexiones** | Trayectos, opciones y referencias diarias coherentes |
-| 10 | **Dónde dormirás** | **Auditoría C**: hoteles, reservas, noches y traslados conciliados |
-| 11 | **Día por día** | AM/PM/noche, tips, transporte, opcionales y fotos pertinentes |
-| 12 | **Presupuesto** | Partidas, grupo/persona, escenarios, tipos de cambio y no duplicación |
-| 13 | **Portada, auditoría integral y PR** | **Auditoría D**: nueve secciones, Inicio, enlaces, fotos, pruebas y pendiente externos declarados |
+| 00 | Preparación | Rama, JSON, documentación, progreso independiente |
+| 01 | Destinos y alcance | Países/ciudades candidatas, prioridades, viajeros, duración y restricciones |
+| 02 | **Temporadas** | Solo requiere destinos/regiones candidatas; doce meses, clima, luz y estacionalidad |
+| 03 | Fechas, ruta, noches y esqueleto diario | Basado en temporadas, traslados plausibles y reservas críticas; **Auditoría A** |
+| 04 | **Mapa** | Ruta validada en 03; coordenadas y orden real |
+| 05 | **Experiencias** | Lugares y excursiones de la ruta; gastronomía y duración realista |
+| 06 | **Reservaciones importantes** | Experiencias identificadas, prioridades, fechas/alternativas |
+| 07 | **Movilidad y conexiones** | Ruta y reservas condicionantes; vuelos, transporte y alternativas |
+| 08 | **Dónde dormirás** | Fechas, ciudad por noche y movilidad; hoteles y Maps; **Auditoría B** |
+| 09 | **Día por día** | Transportes, alojamientos, reservas y experiencias ya compatibles |
+| 10 | **Panorama** | Ruta y contenido completos; intro, indicadores, documentación, clima y narrativa de portada; costo se reconcilia en 11 |
+| 11 | **Presupuesto** | Vuelos, transportes, actividades, entradas, alojamiento, alimentos y viajeros; escenarios y reconciliación Inicio/Panorama; **Auditoría C** |
+| 12 | Fotos y portada | Lugares y días definidos; fotografías remotas, cover y revisión visual |
+| 13 | Auditoría integral y PR | Nueve secciones, enlaces, fotos, JSON, pruebas y escritorio/móvil; **Auditoría D** |
+
+**Importante:** el **orden visual no cambia**: Panorama → Mapa → Temporadas → Experiencias → Reservaciones → Movilidad → Dónde dormirás → Día por día → Presupuesto. Las etapas 02, 04–11 cubren las nueve secciones; 00, 01, 03, 12 y 13 son trabajos transversales. La plantilla `docs/trip-progress-template.md` especifica las verificaciones de cada etapa y debe usarse como lista canónica. No confundir «la sección está llena» con «su dependencia ya fue auditada».
 
 **Cada etapa termina con verificación de sus dependencias.** No declarar «completa» por agregar texto sin comprobar estructura, referencias, coherencia y, cuando sea posible, visualización. Una auditoría fallida obliga a corregir el bloque anterior y revalidar los siguientes. Ejecutar bloques consecutivos sin pedir aprobación al final de cada uno; actualizar la bitácora por hitos A/B/C/D y comunicar una síntesis del avance, no una secuencia de solicitudes de confirmación.
 
@@ -139,9 +141,9 @@ La orden **«refléjalo en el Atlas»** activa el flujo completo de construcció
 
 ## Orden obligatorio de construcción · nuevos viajes
 
-La **tabla 00–13** de «Seguimiento autónomo de implementación» es el procedimiento operativo canónico; la plantilla `docs/trip-progress-template.md` es su checklist ejecutable. No crear órdenes paralelos con numeración distinta. Las etapas **00–03** fijan la logística antes de redactar; **04–12** corresponden exactamente a las nueve secciones visibles, en su orden de navegación; **13** cierra pruebas y publicación por PR. Hacer auditorías **A (03), B (07), C (10), D (13)**. No avanzar con errores detectados sin corregir y revalidar; no pedir «adelante» entre etapas.
+Seguir **00–13 en orden de dependencias**, conforme a la tabla de «Seguimiento autónomo» y a `docs/trip-progress-template.md`. **Temporadas es la primera sección visible investigada (02)**; conociendo los destinos permite decidir la ventana más conveniente. Tras validar calendario y ruta (03), completar Mapa (04), Experiencias (05), Reservaciones (06), Movilidad (07), Alojamientos (08) y Día por día (09). **Panorama (10)** resume lo ya confirmado o estimado; **Presupuesto (11)** utiliza las propuestas de vuelos, todos los traslados, alojamiento, entradas y alimentos para recalcular Inicio y Panorama. Fotografías/portada (12) y auditoría global (13) cierran la implementación.
 
-**Regla de dependencias:** una nueva tarifa o apertura que cambie la ruta obliga a actualizar primero fechas/ruta/esqueleto y luego las secciones afectadas, el presupuesto, la portada y los tests. No copiar un JSON turístico como normativa. Ejecutar autónomamente por lotes; únicamente las decisiones sustantivas, compras o el merge necesitan autorización.
+Auditorías obligatorias: **A después de 03; B después de 08; C después de 11; D después de 13**. Si un dato nuevo cambia la ruta, corregir la etapa 03 y todas las dependientes antes de dar el bloque por cerrado. No pedir un «adelante» entre apartados; solo solicitar decisiones sustantivas, compras o aprobación de merge. El orden de navegación del sitio siempre es Panorama, Mapa, Temporadas, Experiencias, Reservaciones, Movilidad, Dónde dormirás, Día por día y Presupuesto.
 
 ## Control de calidad antes de avanzar de sección
 - Vincular cada traslado indispensable con el día correspondiente mediante `days[].transportRefs` y validar que el ID exista en `majorTransport`. Para vuelos redondos, el mismo ID puede estar en salida y regreso sin duplicar el costo.
