@@ -216,7 +216,8 @@ window.AtlasTrip = function (ctx) {
         return '<svg class="hero-meta-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + paths[type] + '</svg>';
     }
     function tripHero(t, id) {
-        const rank = trips.indexOf(t) + 1;
+        const primaryRank = trips.filter(x => x.homeGroup !== 'ideas').indexOf(t);
+        const rank = primaryRank >= 0 ? primaryRank + 1 : trips.indexOf(t) + 1;
         const heroLabel = t.heroEyebrow || t.tag || '';
         return [
             '<section class="triphero triphero-split"><div class="triphero-split-info">',
@@ -268,13 +269,12 @@ window.AtlasTrip = function (ctx) {
         const fxSource = t.exchangeRateSnapshot?.sources?.JPY || t.exchangeRateSnapshot?.sources?.EUR || t.exchangeRateSnapshot?.sources?.USD;
         const fxSourceLink = typeof fxSource === 'string' && /^https:\/\//.test(fxSource) ? ' · <a href="' + esc(fxSource) + '" target="_blank" rel="noopener noreferrer">Fuente</a>' : '';
         const fxMarkup = fxInfo.length ? '<div class="budget-exchange"><div class="budget-exchange-label">Tipo de cambio de referencia · ' + esc(t.exchangeRateSnapshot.date) + fxSourceLink + '</div><div class="budget-exchange-values">' + fxInfo.map(x => '<span>' + esc(x) + '</span>').join('') + '</div></div>' : '';
-        // Render detailed day cards as soon as their data exists, even for draft trips.
-        // A draft status must not force the entire itinerary into plain placeholders.
+        // Render detailed day cards as soon as their data exists.
         const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
         const completeDays = readyDays.length > 0;
         const renderedDays = () => (t.days || []).map((d, index) =>
             readyDays.includes(d) ? day(d) : '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
-            '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p><p class="draft-pending">En preparación</p></article>').join('');
+            '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p></article>').join('');
         const partialDays = () => t.days.length ? t.days.map((d, index) =>
             '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
             '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p>' +
