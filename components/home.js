@@ -177,7 +177,7 @@ window.AtlasHome = function (ctx) {
                 '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
                 ' <small>/ ' + t.work + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
                 '<td>' + esc(t.profile.pace) + '</td><td>' + esc(t.profile.solo) + '</td>' +
-                '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + price(t) +
+                '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
                 ' <small>MXN</small></strong>' + (t.budgetPreliminary ? '<span>Preliminar</span>' : '') +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
     }
