@@ -950,8 +950,8 @@ html{scroll-padding-top:78px}
 /* En Desktop, encabezado dividido: descripción izquierda y ciudades en tres
    columnas a la derecha, con filas automáticas. El mapa permanece debajo. */
 @media screen and (min-width:1001px){
-  .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,48%);row-gap:13px}
-  .trip-map-section .trip-map-cities{border-left:1px solid var(--line);border-top:0;padding:0 0 0 19px}
+  .trip-map-section .trip-map-header{grid-template-columns:minmax(0,1fr) minmax(0,53%);column-gap:18px;row-gap:13px}
+  .trip-map-section .trip-map-cities{border-left:1px solid var(--line);border-top:0;padding:0 0 0 14px}
   .trip-map-section .trip-map-cities .map-city-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:0}
   .trip-map-section .trip-map-cities .map-city-list li{min-width:0}
   .trip-map-section .trip-map-cities .map-city-list a{width:100%;min-height:62px;height:62px}
