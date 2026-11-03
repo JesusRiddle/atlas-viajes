@@ -189,6 +189,14 @@ const assert = require('node:assert/strict');
             'CHF debe tener fuente enlazada en el Panorama');
           assert.equal(await page.locator('#traslados .mt-card').count(), 6,
             'Suiza debe mostrar vuelo, aeropuerto y tres trenes interurbanos sin error');
+          assert.equal(await page.locator('#traslados .mt-pass-comparison').count(), 1,
+            'Comparación de pases debe ser visible como bloque accesible, no solo existir en JSON');
+          const comparison = await page.locator('#traslados .mt-pass-comparison').innerText();
+          assert.match(comparison, /Punto de equilibrio/);
+          assert.match(comparison, /Winter Pass/);
+          assert.doesNotMatch(comparison, /CHF 51\b|billete simple ida y vuelta en tren.*CHF 102/i);
+          assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 8);
+
           assert.equal(await page.locator('#dias details.day').count(), 12,
             'Suiza debe mostrar sus doce jornadas');
           assert.equal(await page.locator('#alojamientos .hotel-card').count(), 4,
