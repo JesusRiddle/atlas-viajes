@@ -83,7 +83,7 @@ test('Generador crea JSON y bitácora independientes y rechaza duplicados', () =
     assert.equal(result.status, 0, result.stderr);
     const created = JSON.parse(fs.readFileSync(path.join(sandbox,'data/trips/destino-prueba-2028.json'),'utf8'));
     assert.equal(created.travelerCount, null);
-    assert.equal(created.status, 'draft');
+    assert.equal(Object.hasOwn(created,'status'), false);
     const progress = fs.readFileSync(path.join(sandbox,'docs/trip-progress/destino-prueba-2028.md'),'utf8');
     assert.match(progress, /Nuevo destino/);
     assert.match(progress, /Etapa actual:\*\* 00/);
@@ -91,7 +91,7 @@ test('Generador crea JSON y bitácora independientes y rechaza duplicados', () =
     assert.match(progress, /data\/trips\/destino-prueba-2028\.json/);
     const registered = fs.readFileSync(path.join(sandbox, 'modules.js'),'utf8');
     assert.match(registered, /destino-prueba-2028/);
-    assert.match(registered, /"available": false/);
+    assert.match(registered, /"available": true/);
     const duplicate = cp.spawnSync(process.execPath,
       [path.join(sandbox,'scripts','new-trip.cjs'), 'destino-prueba-2028','Repetido'],
       {encoding:'utf8'});
