@@ -17,7 +17,7 @@ function create() {
   const registry = [...catalog.matchAll(/"id":\s*"([^"]+)"/g)].map(match => match[1]);
   const destination = path.join(dataDir, id + '.json');
   if (registry.includes(id) || fs.existsSync(destination)) throw new Error('El ID ya existe: ' + id);
-  const trip = { id, name: name.trim(), status: 'draft', travelerCount: null, intro: null, introShort: null };
+  const trip = { id, name: name.trim(), travelerCount: null, intro: null, introShort: null };
   const progressTemplate = path.join(root, 'docs/trip-progress-template.md');
   const progressDir = path.join(root, 'docs/trip-progress');
   const progressPath = path.join(progressDir, id + '.md');
@@ -34,7 +34,7 @@ function create() {
       '**Próxima ejecución autónoma:** Etapa 01 · Alcance y geografía');
   const insertion = /\];\s*$/;
   if (!insertion.test(catalog)) throw new Error('modules.js no tiene el formato esperado');
-  const entry = '  {\n    "id": ' + JSON.stringify(id) + ',\n    "file": ' + JSON.stringify(id + '.json') + ',\n    "available": false\n  }';
+  const entry = '  {\n    "id": ' + JSON.stringify(id) + ',\n    "file": ' + JSON.stringify(id + '.json') + ',\n    "available": true\n  }';
   const last = catalog.replace(insertion, '];');
   const index = last.lastIndexOf('];');
   const rewritten = last.slice(0, index).replace(/\s*$/, '') + ',\n' + entry + last.slice(index);
@@ -48,7 +48,7 @@ function create() {
     if (fs.existsSync(progressPath)) fs.unlinkSync(progressPath);
     throw error;
   }
-  console.log('Borrador vacío y bitácora creados (oculto): ' + id);
+  console.log('Viaje visible y bitácora creados: ' + id);
 }
 try { create(); }
 catch (error) { console.error(error.message); process.exitCode = 1; }
