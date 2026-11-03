@@ -11,6 +11,8 @@ Antes de crear, modificar o auditar un viaje:
 
 Si un requisito del usuario contradice una regla editorial, discutir o documentar la excepción antes de introducirla; prevalecen los datos confirmados del usuario sobre ejemplos de plantillas.
 
+**Puerta de control obligatoria del Panorama:** para cada viaje nuevo, `practicalIndicators` son **exactamente** `[style, language, entry]` con títulos «Estilo de viaje», «Idioma y moneda», «Documentación y consejos prácticos»; no existe indicador `weather`. `climate` se pinta exclusivamente en `.overview-side .overview-climate-card` (derecha en escritorio, debajo del presupuesto), con tres párrafos de clima, `*Qué llevar:*` y `*Horas de luz:*`. Inspeccionar DOM Desktop/Mobile y probar geometría y contenidos con regresión automática. La guía editorial y el viaje España–Portugal 2027 ya seguían esa composición: **no copiar solo parcialmente sus campos ni añadir indicadores no previstos**. El dato de electricidad va dentro de `entry`, no en su título. Auditorías C/D no se aprueban sin pasar estas pruebas específicas.
+
 **Puerta de control de transportes (obligatoria):** antes de aprobar la etapa 07 o la auditoría B, ejecutar `AtlasTransportModel.validateTrip(trip)` para todos los viajes nuevos y probar `AtlasMajorTransport.render(trip)` con datos completos y tarifas pendientes. Cada opción necesita `fares[]`, `selectedFare` existente y `journeys[].segments[]`; tarifa desconocida = `price: null`, nunca `0`. Sintaxis JS/JSON válida no sustituye prueba de renderizado ni navegación Desktop/Mobile. No marcar B/D como finalizadas hasta que pase CI.
 
 ## Referencias obligatorias para cada viaje nuevo
