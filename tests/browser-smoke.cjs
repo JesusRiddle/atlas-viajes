@@ -112,19 +112,24 @@ const assert = require('node:assert/strict');
         const layout = await page.locator('#mapa .trip-map-header').evaluate(header => {
           const intro = header.querySelector('.trip-map-intro').getBoundingClientRect();
           const cities = header.querySelector('.trip-map-cities').getBoundingClientRect();
-          const cards = [...header.querySelectorAll('.map-city-list li')].slice(0, 3)
+          const cards = [...header.querySelectorAll('.map-city-list li')]
             .map(item => item.getBoundingClientRect());
           const width = header.getBoundingClientRect().width;
           return {width, citiesWidth: cities.width, introRight: intro.right,
             citiesLeft: cities.left, cards};
         });
-        assert.ok(layout.citiesWidth >= layout.width * 0.52,
-          'La columna de ciudades debe ocupar al menos 52% del encabezado en escritorio');
+        assert.ok(layout.citiesWidth >= layout.width * 0.55,
+          'La columna de ciudades debe ocupar al menos 55% del encabezado en escritorio');
         assert.ok(layout.citiesLeft > layout.introRight,
           'Las columnas del encabezado no deben encimarse');
-        assert.ok(layout.cards.length === 3 &&
-          layout.cards.every(card => card.width > 100),
-          'Las tres tarjetas deben conservar un ancho legible');
+        assert.ok(layout.cards.length >= 10 &&
+          layout.cards.slice(0, 4).every(card => card.width >= 100),
+          'Las primeras cuatro tarjetas deben caber sin volverse ilegibles');
+        const rowPositions = [...new Set(layout.cards.map(card => Math.round(card.y)))];
+        assert.ok(rowPositions.length <= Math.ceil(layout.cards.length / 4),
+          'Las ciudades deben acomodarse en cuatro columnas sin filas adicionales');
+        assert.ok(Math.abs(layout.cards[0].y - layout.cards[3].y) <= 1,
+          'Las primeras cuatro ciudades deben compartir la primera fila');
       }
       await page.locator('#mapa').scrollIntoViewIfNeeded();
       await page.screenshot({ path: '/tmp/atlas-italia-' + viewport.width + '.png', fullPage: true });
