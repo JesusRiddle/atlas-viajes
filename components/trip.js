@@ -147,13 +147,31 @@ window.AtlasTrip = function (ctx) {
             (key === 'experiencias' && t.experiences?.length) ||
             (key === 'reservas' && t.planningDetails && t.reservations?.length) ||
             (key === 'traslados' && t.majorTransport?.length));
-        return '<nav class="subnav" aria-label="Secciones del viaje"><div>' +
+        return '<div class="subnav-sticky-sentinel" aria-hidden="true"></div>' +
+            '<nav class="subnav" aria-label="Secciones del viaje">' +
+            '<a href="#inicio" class="subnav-home" aria-label="Volver al inicio del Atlas">' +
+            '<span class="brand-icon" aria-hidden="true">A</span>' +
+            '<span class="subnav-home-wordmark" aria-hidden="true">ATLAS<small>de Viajes</small></span></a>' +
+            '<div class="subnav-sections">' +
             visible.map(([key,label]) => '<a href="#viaje/' + esc(id) + '/' + key + '">' + label + '</a>').join('') +
             (legacyAdviceTripIds.has(t.id) && t.sources?.length ? '<a href="#viaje/' + esc(id) + '/fuentes">Fuentes</a>' : '') +
             '</div><select aria-label="Cambiar destino" id="dest-select">' +
             trips.map(x => '<option value="' + esc(x.id) + '"' + (x.id === id ? ' selected' : '') + '>' +
                 esc((x.flag ? x.flag + ' ' : '') + x.name) + '</option>').join('') +
             '</select></nav>';
+    }
+    function mountStickyHomeLink() {
+        const nav = main.querySelector('.subnav');
+        const sentinel = main.querySelector('.subnav-sticky-sentinel');
+        if (!nav || !sentinel || !window.addEventListener) return () => {};
+        const sync = () => nav.classList.toggle('is-stuck', sentinel.getBoundingClientRect().top <= 0);
+        window.addEventListener('scroll', sync, { passive: true });
+        window.addEventListener('resize', sync);
+        sync();
+        return () => {
+            window.removeEventListener('scroll', sync);
+            window.removeEventListener('resize', sync);
+        };
     }
     function bindTripSelector() {
         document.querySelector('#dest-select')?.addEventListener('change', e => {
@@ -483,6 +501,7 @@ window.AtlasTrip = function (ctx) {
         main.innerHTML = tripShell(t, id, content);
         window.AtlasGallery.init(main);
         mountView(t);
+        disposeView.push(mountStickyHomeLink());
         disposeView.push(mountHeroSlideshow(t));
         if (t.mapPoints?.some(p => Array.isArray(p.coords) && p.coords.length === 2 && p.coords.every(Number.isFinite))) window.AtlasTravel.initMap(t);
         bindTripSelector();
