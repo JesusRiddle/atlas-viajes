@@ -27,7 +27,9 @@ test('Patagonia: 15 días correlativos y 14 noches sin solapamientos', () => {
 
 test('Patagonia: costos estimados coherentes y referencias históricas explícitas', () => {
   assert.equal(trip.status, 'draft');
-  assert.equal(trip.budgetPreliminary, true);
+  assert.ok(trip.budgetPreliminary && typeof trip.budgetPreliminary === 'object');
+  assert.equal(trip.travelerCount, 2);
+  assert.equal(trip.work, 10);
   assert.equal(trip.expenses.reduce((sum, x) => sum + x.cost.amount, 0), 144648);
   assert.equal(trip.expenses.find(x => x.id === 'flight-international').cost.amount, 24398);
   assert.equal(trip.expenses.find(x => x.id === 'flight-domestic').cost.amount, 23250);
@@ -105,4 +107,17 @@ test('Patagonia: los cuatro transportes renderizan y no duplican presupuesto', (
   }
   assert.equal(trip.days.reduce((sum,d) => sum + d.spend,0),
     trip.expenses.reduce((sum,e) => sum + e.cost.amount,0));
+});
+
+test('Patagonia: escenario por persona y alojamientos vinculados con el ledger', () => {
+  assert.equal(trip.budgetPreliminary.low, 137648);
+  assert.equal(trip.budgetPreliminary.high, 151648);
+  assert.equal(trip.budgetPreliminary.referenceFlightMXN, 24398);
+  assert.equal(trip.budgetPreliminary.low / trip.travelerCount, 68824);
+  assert.equal(trip.budgetPreliminary.high / trip.travelerCount, 75824);
+  for (const hotel of trip.hotels) assert.ok(trip.expenses.some(e => e.hotelId === hotel.id));
+  for (const transport of trip.majorTransport) {
+    const expense = trip.expenses.find(e => e.id === transport.budgetIncludedIn);
+    assert.ok(expense, 'Cobertura de transporte faltante: ' + transport.id);
+  }
 });
