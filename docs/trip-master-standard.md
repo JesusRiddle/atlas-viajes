@@ -3,6 +3,10 @@
 ## Fuente de verdad
 Este documento define el formato de todos los viajes nuevos, independientemente de que se eliminen los viajes que sirvieron para desarrollarlo. Complementa `docs/trip-editorial-guide.md`, `docs/trip-data-contract.md`, `docs/trip-production-checklist.md` y `data/trips/_template.json`. Los JSON de viajes existentes son ejemplos opcionales, nunca dependencias. La presentación se implementa en componentes compartidos de la aplicación.
 
+## Protocolo autónomo al recibir «refléjalo en el Atlas»
+
+El [checklist de avance por viaje](trip-progress-template.md) define las **14 etapas 00–13**, las **nueve secciones visibles 04–12** y las cuatro puertas de auditoría **A (03), B (07), C (10), D (13)**. Es el procedimiento canónico que debe usar el agente; `AGENTS.md` lo activa. Al iniciar un viaje crear `docs/trip-progress/<slug>.md` y actualizarlo por hitos con completado, pendiente, bloqueado, pruebas y siguiente acción. Ejecutar todas las etapas posibles en el mismo turno sin solicitar «adelante» entre secciones; verificar dependencias antes de avanzar y corregir anomalías del bloque anterior. Si es una planeación orientativa, no exigir tarifas futuras reales para cerrar la estimación ni inventar su disponibilidad. Nunca hacer merge ni realizar compras sin aprobación.
+
 ## Crear un viaje desde cero, sin ejemplos existentes
 El procedimiento debe funcionar aunque no exista ningún JSON turístico completo. **Única fuente normativa:** esta especificación, `docs/trip-editorial-guide.md`, `docs/trip-data-contract.md`, `docs/trip-production-checklist.md` y `data/trips/_template.json`. `data/trips/italia-norte-2027.json` es el ejemplo de implementación vigente, **opcional**, no una plantilla ni requisito.
 
