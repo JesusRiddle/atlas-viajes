@@ -16,6 +16,9 @@ El procedimiento debe funcionar aunque no exista ningún JSON turístico complet
 
 No exigir ninguna visita, ciudad, tarifa, cantidad de noches, fotografía o elección editorial tomada para un viaje anterior.
 
+## Número de personas contempladas en el presupuesto
+En los nuevos viajes declarar `travelerCount` explícitamente; utilizar `null` mientras no se decida. Para itinerarios desarrollados indicar entero positivo: 1 para viajes individuales y 2 para un viaje presupuestado para dos. La comparación de la portada usa «Personas» y muestra «Por definir» si no se conoce. `travelerCount` es diferente de `profile.solo`: este último describe la idoneidad de viajar solo, no la cantidad presupuestada. Mantener importes de grupo en `expenses`, sin multiplicarlos automáticamente; calcular equivalentes individuales únicamente si existe un valor válido, conservando sus supuestos y la coherencia entre Inicio, Panorama y Presupuesto.
+
 ## Terminología y métricas visibles
 En Inicio, portada, Panorama y comparativas mostrar alojamiento en formato «X noches, Y alojamientos», calculado desde los datos, con singular/plural correcto. Prohibido «bases para dormir», «Noches y bases» o «estancias» como etiqueta de cantidad de alojamientos. `bases` y `days[].base` son claves técnicas y no deben cambiarse por esta regla. Auditar el renderizador además de los JSON para evitar textos heredados.
 
