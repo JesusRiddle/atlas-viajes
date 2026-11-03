@@ -1185,16 +1185,6 @@
   "cover": "swiss27-grindelwald-winter",
   "mapPoints": [
     {
-      "name": "Zúrich",
-      "coords": [
-        47.3769,
-        8.5417
-      ],
-      "kind": "Aeropuerto y visita urbana",
-      "base": true,
-      "order": 4
-    },
-    {
       "name": "Lucerna",
       "coords": [
         47.0502,
@@ -1215,6 +1205,16 @@
       "order": 2
     },
     {
+      "name": "Grindelwald-First",
+      "coords": [
+        46.66138,
+        8.05296
+      ],
+      "kind": "Mirador · sujeto a operación",
+      "base": false,
+      "order": 3
+    },
+    {
       "name": "Lauterbrunnen",
       "coords": [
         46.5935,
@@ -1222,7 +1222,7 @@
       ],
       "kind": "Excursión",
       "base": false,
-      "order": 5
+      "order": 4
     },
     {
       "name": "Wengen",
@@ -1232,7 +1232,7 @@
       ],
       "kind": "Excursión",
       "base": false,
-      "order": 6
+      "order": 5
     },
     {
       "name": "Mürren",
@@ -1241,6 +1241,16 @@
         7.8927
       ],
       "kind": "Excursión",
+      "base": false,
+      "order": 6
+    },
+    {
+      "name": "Jungfraujoch",
+      "coords": [
+        46.5478,
+        7.9859
+      ],
+      "kind": "Excursión opcional",
       "base": false,
       "order": 7
     },
@@ -1252,7 +1262,37 @@
       ],
       "kind": "Alojamiento",
       "base": true,
-      "order": 3
+      "order": 8
+    },
+    {
+      "name": "Gornergrat",
+      "coords": [
+        45.98325,
+        7.78219
+      ],
+      "kind": "Mirador invernal",
+      "base": false,
+      "order": 9
+    },
+    {
+      "name": "Zúrich",
+      "coords": [
+        47.3769,
+        8.5417
+      ],
+      "kind": "Aeropuerto y visita urbana",
+      "base": true,
+      "order": 10
+    },
+    {
+      "name": "Lindt Home of Chocolate",
+      "coords": [
+        47.31835,
+        8.55095
+      ],
+      "kind": "Museo · Kilchberg",
+      "base": false,
+      "order": 11
     }
   ],
   "planningDetails": {
