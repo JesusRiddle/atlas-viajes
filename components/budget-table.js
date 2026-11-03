@@ -19,6 +19,7 @@ window.AtlasBudgetTable = (() => {
         ['lodging', 'Alojamientos'],
         ['intercity_transport', 'Transporte terrestre · interurbano'],
         ['local_transport', 'Transporte terrestre · urbano'],
+        ['transport', 'Transporte terrestre · provisión global sin desglose definitivo'],
         ['admission', 'Entradas y actividades'],
         ['activities', 'Otras actividades'],
         ['food', 'Alimentación'],
@@ -125,6 +126,8 @@ window.AtlasBudgetTable = (() => {
                         pesos(planning.low) + '–' + pesos(planning.high) + ' MXN</p>' : '') +
                     (range ? '<p class="budget-range"><strong>Rango estimado para planear:</strong> ' +
                         pesos(range[0]) + '–' + pesos(range[1]) + ' MXN</p>' : '')) +
+            (typeof trip.budgetPreliminary?.notes === 'string' && trip.budgetPreliminary.notes.trim()
+                ? '<p class="tiny budget-assumptions">' + esc(trip.budgetPreliminary.notes) + '</p>' : '') +
             '</div>';
     }
 
