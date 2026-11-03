@@ -47,7 +47,7 @@
   },
   "intro": "Comienza en Lucerna, a orillas del lago de los Cuatro Cantones, entre el Puente de la Capilla y el casco antiguo. Después, el Luzern–Interlaken Express te lleva hasta Grindelwald y las vistas nevadas del Eiger. Desde allí recorrerás el valle de Lauterbrunnen, Wengen y Mürren; los miradores de First, Männlichen o Jungfraujoch se eligen según el tiempo. En Zermatt, el Matterhorn domina el horizonte y el tren de Gornergrat ofrece una de las grandes experiencias del viaje. El final en Zúrich combina calles históricas, el río Limmat, el lago y el universo del chocolate de Lindt en Kilchberg. Todo sin esquiar y con cuatro alojamientos bien conectados.",
   "introShort": "De Lucerna y su lago a Grindelwald, Wengen y Mürren entre chalets nevados y trenes escénicos. El Matterhorn desde Gornergrat es protagonista, antes de descubrir el casco antiguo de Zúrich y Lindt Home of Chocolate.",
-  "climate": "Finales de enero: invierno alpino frío y días cortos (unas nueve horas de luz). La nieve es mucho más probable en Grindelwald, Wengen y Zermatt que en Zúrich o Lucerna; viento, nubosidad y cierres pueden modificar los miradores. Se reservan días alternativos para fotografía y nieve.",
+  "climate": "A finales de enero y principios de febrero predomina el invierno. Como referencias climatológicas, Lucerna y Zúrich rondan máximas de 4 °C y mínimas cercanas a −2 °C; Grindelwald suele bajar hacia 0 °C de día y −6 °C de noche, mientras en miradores como Jungfraujoch las temperaturas habituales son mucho más severas (aprox. −10 a −16 °C). Son aproximaciones históricas, no pronósticos para 2027. La nieve es más probable en los pueblos alpinos que junto a los lagos o en Zúrich; niebla, viento y nevadas pueden reducir la visibilidad o cerrar remontes.\n\n*Qué llevar:* Capas térmicas y aislantes, chamarra impermeable y cortaviento, pantalón adecuado para nieve, botas con suela adherente, guantes, gorro y protección solar para la montaña. Usar una capa adicional en First, Jungfraujoch y Gornergrat, donde el viento aumenta la sensación de frío. Consultar el parte de montaña y las webcams antes de pagar ascensos; caminar solo por senderos invernales habilitados.\n\n*Horas de luz:* En Grindelwald, el 25 de enero de 2027 el sol sale cerca de las 08:00 y se pone hacia las 17:21; en Zermatt, el 29 de enero, aproximadamente 07:56–17:30. En Zúrich, el 1 de febrero, alrededor de 07:55–17:25. Horarios locales CET (UTC+1), orientativos y con posible sombra temprana por el relieve. Programar miradores y fotografías entre media mañana y primeras horas de la tarde, reservar margen para bajar antes del último servicio y dejar museos, cenas y paseos urbanos para después del atardecer.",
   "solo": "Plan de una persona con habitación y baño privados. Transporte ferroviario, equipaje ligero y descansos entre excursiones de montaña.",
   "flight": "Opción aérea de referencia, NO reservada: salida de CDMX viernes 22 de enero a las 11:25; llegada a Zúrich sábado 23 a las 10:00 vía Madrid (Aeroméxico/Air Europa). Regreso ZRH martes 2 de febrero a las 18:50 vía París, llegada a CDMX miércoles 3 a las 04:20 (Air France/Aeroméxico). Precio de captura del 3/11/2026: $20,331 MXN redondos, sujeto a revalidar reservas protegidas, equipaje y tarifa final. Alternativa Lufthansa por $17,382 MXN redondos, llegada 23 enero 19:00 y regreso 2 febrero 09:25.",
   "local": "Aeropuerto Zúrich → Luzern Bahnhof en SBB (~1 h 10 min). Luzern → Interlaken Ost en Luzern–Interlaken Express (~1 h 50 min) y tren de conexión a Grindelwald. Grindelwald → Interlaken Ost → Spiez → Visp → Zermatt (~3.5–4.5 h); Zermatt → Visp → Bern → Zürich HB (~3.5–4 h). Los horarios detallados de enero/febrero 2027 y precios de los trenes no están cerrados. En Oberland, comparar la cobertura del Winter Hiking and Sledging Pass de 3 días antes de comprar billetes individuales. El presupuesto provisional de movilidad no es una cotización de todos los tramos. El pase Jungfrau de tres días 25–27 enero se evalúa por cobertura y comodidad, no automáticamente por precio: puede coexistir con billetes nacionales aparte. La Swiss Half Fare Card solo se justifica si sus descuentos netos superan CHF 150.",
@@ -1279,17 +1279,10 @@
     },
     {
       "id": "entry",
-      "title": "Documentación y electricidad",
-      "text": "Revisar reglas Schengen vigentes para mexicanos, pasaporte y seguros. Suiza utiliza principalmente enchufes J, 230 V y 50 Hz; desde México (A/B) llevar adaptador de entrada A/B a salida J, con toma de tierra cuando corresponda. Un adaptador no transforma voltaje; comprobar cargadores INPUT 100–240 V.",
-      "badge": "Suiza · tipo J",
+      "title": "Documentación y consejos prácticos",
+      "text": "Con pasaporte mexicano, comprobar vigencia requerida, exención de visa para turismo Schengen, justificantes de alojamiento y regreso, y estado de ETIAS/EES antes de enero de 2027; la conexión por Madrid implica revisar requisitos de tránsito y entrada Schengen. Suiza usa enchufes tipo J (230 V, 50 Hz): llevar adaptador de clavija mexicana A/B a toma J, con tierra cuando sea necesaria. Un adaptador no transforma voltaje: verificar INPUT 100–240 V en cada cargador.",
+      "badge": "Verificar antes de viajar",
       "tone": "orange"
-    },
-    {
-      "id": "weather",
-      "title": "Clima y luz",
-      "text": "Enero: frío y atardecer temprano; capas térmicas, calzado impermeable con suela adherente y guantes. Webcams y operación se verifican a diario.",
-      "badge": "Invierno alpino",
-      "tone": "blue"
     }
   ],
   "tips": [
