@@ -4,11 +4,12 @@
 Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se trabaja como un paquete integral, con un solo registro de pendientes y pruebas agrupadas. Este documento complementa la guía editorial, el contrato de datos y AGENTS.md.
 
 ## Antes de crear el JSON
-1. Confirmar fechas, vuelo internacional y su precio, aeropuertos, restricciones, ciudades donde se pernocta, alojamientos, noches y horas reales de llegada/salida. En la interfaz y los textos editoriales, no usar «base» como sinónimo de alojamiento; conservar `bases` solo como campo técnico para compatibilidad.
-2. Definir recorrido de ciudades y excursiones con tiempos puerta a puerta, conexión y equipaje. Registrar destinos opcionales por separado.
-3. Crear **matriz de logística**: fecha, origen, destino, opciones A/B/C, sentidos ida/regreso independientes, horarios, operador, estación o parada exacta, transbordos y minutos, compra, validación, costo, fuente y fecha de consulta.
-4. Marcar expresamente «confirmado», «referencia de otra fecha», «estimado», «pendiente» y «comprado». Nunca presentar un horario de 2026 como servicio confirmado de 2027.
-5. Crear **matriz económica** desde que se conozca el vuelo: vuelo, alojamientos por noches, alimentos, transportes de cada sentido, entradas prioritarias, impuestos, tasas, extras y contingencia. Separar subtotal cotizado de presupuesto estimado global; usar EUR y conversión MXN con fuente y fecha.
+
+1. Recuperar decisiones ya confirmadas: destinos candidatos, duración y ventanas posibles, ritmo, restricciones, presupuesto objetivo y `travelerCount`. No exigir fechas, billetes, hoteles ni disponibilidad definitivos para crear un borrador.
+2. Abrir una rama y ejecutar `node scripts/new-trip.cjs <slug> "<nombre>"` para crear JSON inactivo, registro en `modules.js` y bitácora `docs/trip-progress/<slug>.md`. Verificar que ningún archivo heredado cambió.
+3. Investigar **Temporadas** para los doce meses de las regiones candidatas. Con ese resultado validar fechas y ruta, noches y conexiones indispensables antes de cerrar el esqueleto de jornadas.
+4. Investigar opciones de vuelos, trenes/autobuses y reservas que condicionan la ruta. Las tarifas no publicadas para el periodo objetivo se documentan como **referencias fechadas o supuestos estimados**, nunca como compras ni disponibilidad confirmada; si no hay fundamento razonable, dejar `null`.
+5. Abrir y mantener un único registro de incertidumbres y evidencias de cada auditoría. La matriz logística y económica se completa progresivamente en etapas 07 y 11, respectivamente; **no exigirla completa antes de empezar**.
 
 ## Portada e introducciones
 - [ ] **Subtítulo editorial obligatorio:** para cada viaje que vaya a mostrarse en la portada, completar `tag` o `heroEyebrow` con una frase turística propia del recorrido (por ejemplo, «DE TOKIO A KIOTO · ENTRE TEMPLOS Y METRÓPOLIS»). No utilizar «En planeación», cantidades de días, países o alojamientos como sustituto editorial. Revisar la vista hero y agregar una prueba de regresión para cada nuevo viaje visible.
@@ -32,14 +33,14 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 
 Al terminar cada etapa registrar **verificado/en curso/pendiente/bloqueado** con evidencia. Diferenciar supuestos con fuente/fecha de cotizaciones y reservas reales, especialmente cuando el usuario solo necesita una planeación orientativa. No pedir autorización por bloque; solo para decisiones materiales, compras y merge. No prometer trabajo en segundo plano.
 
-## Trabajo por lotes (evitar microfases)
-1. **Bloque A · Logística completa:** obtener/verificar de una vez todas las alternativas de tren, autobús, vuelo y transbordos. Los enlaces no protegidos o ajustados requieren márgenes explícitos (preferentemente >=20 minutos en cambios de tren, salvo justificación y confirmación). Registrar fuentes oficiales, fecha de referencia, estaciones exactas y opciones válidas de respaldo.
-2. **Bloque B · Contenido y coherencia:** redactar los días en conjunto, comparar secuencia, duración, apertura de museos, hoteles, pausas y traslados. No introducir duplicados entre texto libre y datos estructurados.
-3. **Bloque C · Presupuesto:** comparar pases contra billetes unitarios y elegir UNA modalidad contabilizada por trayecto. Si un registro es comparativo, señalar que no se suma; si se escoge el precio unitario, el presupuesto debe reflejar todo el recorrido. Los viajes redondos siempre se contabilizan en ambos sentidos; cada alternativa debe representar un costo completo o presupuestarse independientemente.
-4. **Bloque D · Presentación y QA:** ejecutar en una sola pasada pruebas de JSON, sintaxis JS, referencias, opciones/tarifas, sumas, renderizado y navegación móvil/escritorio, ausencia de errores en consola, y regresión de los otros viajes. No decir «probado en navegador» si solo se verificó sintaxis o lógica aislada.
+## Trabajo agrupado dentro de las etapas (evitar microfases)
+1. **Lote de logística (etapas 03/07):** obtener/verificar de una vez todas las alternativas de tren, autobús, vuelo y transbordos. Los enlaces no protegidos o ajustados requieren márgenes explícitos (preferentemente >=20 minutos en cambios de tren, salvo justificación y confirmación). Registrar fuentes oficiales, fecha de referencia, estaciones exactas y opciones válidas de respaldo.
+2. **Lote editorial (etapas 05/09/10):** redactar los días en conjunto, comparar secuencia, duración, apertura de museos, hoteles, pausas y traslados. No introducir duplicados entre texto libre y datos estructurados.
+3. **Lote de presupuesto (etapa 11):** comparar pases contra billetes unitarios y elegir UNA modalidad contabilizada por trayecto. Si un registro es comparativo, señalar que no se suma; si se escoge el precio unitario, el presupuesto debe reflejar todo el recorrido. Los viajes redondos siempre se contabilizan en ambos sentidos; cada alternativa debe representar un costo completo o presupuestarse independientemente.
+4. **Lote de presentación y QA (etapas 12/13):** ejecutar en una sola pasada pruebas de JSON, sintaxis JS, referencias, opciones/tarifas, sumas, renderizado y navegación móvil/escritorio, ausencia de errores en consola, y regresión de los otros viajes. No decir «probado en navegador» si solo se verificó sintaxis o lógica aislada.
 
-## Comparación obligatoria con los dos viajes terminados
-Antes de crear un viaje, leer `docs/trip-master-standard.md` y `data/trips/_template.json`; `data/trips/italia-norte-2027.json` es el ejemplo práctico vigente, pero el proceso debe completarse sin abrirlo ni copiar datos de ningún otro viaje. Antes de entregar, comparar **las nueve secciones visibles**, sus datos y sus componentes, en escritorio y móvil cuando haya navegador disponible:
+## Verificación independiente contra el estándar maestro
+Antes de crear un viaje, leer `docs/trip-master-standard.md` y `data/trips/_template.json`; cualquier viaje terminado puede servir como **ejemplo opcional** de inspección, nunca como dependencia ni fuente de datos. Antes de entregar, verificar **las nueve secciones visibles**, sus datos y sus componentes, en escritorio y móvil cuando haya navegador disponible:
 
 1. **Panorama:** introducción turística, indicadores prácticos, alojamientos y noches, inversión aproximada, divisas y tipo de cambio con fecha, clima y luz; sin tarjetas heredadas duplicadas.
 2. **Mapa:** localidades reales, pines válidos, correspondencia con el recorrido y comportamiento interactivo.
