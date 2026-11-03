@@ -23,6 +23,21 @@ const assert = require('node:assert/strict');
       }));
       await page.goto('http://127.0.0.1:8765/', { waitUntil: 'domcontentloaded' });
       await page.locator('.tripcard').first().waitFor();
+      // Solo los primeros cuatro viajes siguen siendo protagonistas de la portada.
+      const featuredCards = page.locator('#viajes .tripcard');
+      const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
+      assert.equal(await featuredCards.count(), 4, 'La portada principal debe tener cuatro viajes');
+      assert.equal(await ideaCards.count(), allDestinations.length - 4, 'Todos los viajes anteriores deben permanecer accesibles');
+      assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
+      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 4,
+        'La comparativa no debe confundir ideas históricas con viajes terminados');
+      const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
+      assert.deepEqual(topIds, [
+        '#viaje/espana-portugal-2027', '#viaje/italia-norte-2027',
+        '#viaje/japon-2027', '#viaje/patagonia-argentina-2027'
+      ]);
+      assert.ok(!(await page.locator('#ideas-viajes').innerText()).includes('Presupuesto estimado por persona'),
+        'El archivo no debe mostrar precios históricos como vigentes');
       const patagoniaCard = page.locator('.tripcard[href="#viaje/patagonia-argentina-2027"]');
       assert.equal(await patagoniaCard.count(), 1, 'La portada de Patagonia debe existir');
       assert.ok(!(await patagoniaCard.getAttribute('class')).includes('tripcard-draft'), 'La portada no debe ser un borrador vacío');
