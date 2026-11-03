@@ -64,7 +64,7 @@ test('el loader normaliza un viaje mínimo sin alterar Italia Norte 2027', async
     assert.equal(japan.work, null);
     assert.equal(japan.days.length, 0);
     assert.equal(japan.mapPoints.length, 0);
-    assert.equal(japan.seasonality.months['01'].status, 'pending');
+    assert.equal(japan.seasonality, null);
     assert.equal(atlas.trips[0].id, italia.id);
     assert.equal(atlas.trips[0].majorTransport.length, italia.majorTransport.length);
     assert.equal(atlas.trips[0].days.length, italia.days.length);
