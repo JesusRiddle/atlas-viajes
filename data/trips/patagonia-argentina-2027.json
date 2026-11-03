@@ -141,7 +141,8 @@
       "mobility": "*El Chaltén → inicio del trekking:* punto de reunión por operador; solicitar detalle del transfer a Río Eléctrico si se ofrece. *Regreso:* descenso por sendero habilitado hasta El Chaltén. Sin transporte de vuelta si termina en el pueblo.",
       "note": "Laguna de los Tres: 25 km según referencia oficial de Parques Nacionales, entre 8 y 11 horas según itinerario; dificultad media-alta. Exigir guía habilitado, clima seguro y capacidad física suficiente. Laguna Capri es la alternativa corta; no subir con hielo peligroso. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día.",
       "places": [
-        "pat27-laguna-tres"
+        "pat27-laguna-tres",
+        "pat27-capri"
       ],
       "headerPlaces": [
         "Laguna de los Tres",
@@ -199,18 +200,21 @@
       "date": "2027-11-10",
       "title": "Laguna Capri o Chorrillo del Salto",
       "base": "El Chaltén",
-      "am": "Última ventana de trekking al Fitz Roy si no se ha realizado y el operador ofrece salida segura. En otro caso, caminar hacia Chorrillo del Salto.",
-      "pm": "Laguna Capri como alternativa si no se pasó por ella en la caminata principal; paseo corto por el pueblo si ya hubo mucha actividad.",
+      "am": "Plan A, de menor esfuerzo: caminar hacia Laguna Capri solo si no se recorrió durante Laguna de los Tres; si ya se visitó, elegir Chorrillo del Salto. Plan B opcional: Laguna Torre, caminata larga de jornada completa únicamente con pronóstico estable, piernas recuperadas y sin comprometer un ascenso pendiente a Laguna de los Tres.",
+      "pm": "Plan A: fotografía de los miradores y vuelta tranquila a El Chaltén. Plan B opcional: disfrutar Laguna Torre y regresar de día con margen amplio; no combinarla con Laguna Capri ni Chorrillo del Salto el mismo día.",
       "night": "Cena y preparación para el autobús a El Calafate.",
       "mobility": "*Chorrillo del Salto o Laguna Capri:* caminata desde El Chaltén, sin vehículo salvo alternativa elegida. Si corresponde trekking guiado, verificar traslado especial.",
-      "note": "Ultima oportunidad de reprogramación de Laguna de los Tres; Lago del Desierto, cabalgata y paseos cortos pueden intercambiarse, sujetos a cupos y políticas de cancelación. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día.",
+      "note": "Ultima oportunidad de reprogramación de Laguna de los Tres; Lago del Desierto, cabalgata y paseos cortos pueden intercambiarse, sujetos a cupos y políticas de cancelación. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. • Laguna Torre aparece en la presentación original y se conserva como alternativa opcional, no como una excursión adicional obligatoria. Prioridad 1: Laguna de los Tres segura; prioridad 2: descanso y alternativas cortas.",
       "places": [
-        "pat27-fitzroy"
+        "pat27-capri",
+        "pat27-torre"
       ],
       "headerPlaces": [],
       "spend": 1000,
       "hotel": "chalten-senderos",
-      "optionalPlaces": [],
+      "optionalPlaces": [
+        "pat27-torre"
+      ],
       "transportRefs": []
     },
     {
@@ -264,7 +268,9 @@
       "night": "Regreso a El Calafate y cena. Itinerario sujeto a hielo, viento y operatividad.",
       "mobility": "*El Calafate → Puerto Punta Bandera:* traslado contratado o separado según paquete Todo Glaciares; navegación y regreso según operador.",
       "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. Fotografía del glaciar Spegazzini pendiente de validar; no sustituirla por Perito Moreno porque son excursiones diferentes.",
-      "places": [],
+      "places": [
+        "pat27-spegazzini"
+      ],
       "headerPlaces": [
         "Lago Argentino",
         "Upsala",
@@ -320,8 +326,10 @@
       "pm": "Traslado al hotel de Recoleta y visita a Floralis Genérica y Plaza Francia según hora de llegada.",
       "night": "El Ateneo Grand Splendid, si no se visitó al principio; cena en Recoleta.",
       "mobility": "*El Calafate → FTE:* transporte hacia aeropuerto; AR1895 12:30–15:30 FTE→AEP según referencia 2026. *AEP → Recoleta:* taxi o traslado urbano.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. Fotografía de Recoleta/Floralis pendiente de selección verificada; no utilizar la del Teatro Colón para esta jornada.",
-      "places": [],
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. Fotografía de Recoleta/Floralis pendiente de selección verificada; no utilizar la del Teatro Colón para esta jornada. • No te pierdas: Floralis Genérica, la escultura metálica de Eduardo Catalano, junto a la Facultad de Derecho de Buenos Aires.",
+      "places": [
+        "pat27-floralis"
+      ],
       "headerPlaces": [],
       "spend": 5000,
       "hotel": "buenos-aires-regreso",
@@ -339,9 +347,10 @@
       "pm": "Visitar el Mercado de San Telmo, Plaza Dorrego y calle Defensa; por la tarde Puerto Madero y Puente de la Mujer.",
       "night": "Cena final en Buenos Aires; dejar lista la maleta para el regreso.",
       "mobility": "*Recoleta → La Boca → San Telmo → Puerto Madero:* caminar dentro de cada zona; taxi o transporte urbano entre zonas.",
-      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. • No te pierdas: las fachadas de conventillos de Caminito, parte de la memoria migratoria del barrio de La Boca. San Telmo conserva su antiguo mercado y arquitectura de distintas épocas.",
+      "note": "Sin reservas confirmadas. Comprobar tiempos, horarios y costos antes de cerrar esta jornada. Gastos estimados asignados por fecha, incluidos en el presupuesto global. Los vuelos redondos y alojamientos completos se imputan una sola vez, no son pagos necesariamente realizados ese día. • No te pierdas: las fachadas de conventillos de Caminito, parte de la memoria migratoria del barrio de La Boca. San Telmo conserva su antiguo mercado y arquitectura de distintas épocas. • No te pierdas: Puente de la Mujer de Santiago Calatrava, la obra de referencia en Puerto Madero.",
       "places": [
-        "pat27-caminito"
+        "pat27-caminito",
+        "pat27-puente"
       ],
       "headerPlaces": [],
       "spend": 1000,
@@ -1030,7 +1039,7 @@
           "selectedFare": "reference"
         }
       ],
-      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados. Horarios publicados el 14/10/2026: bus regular desde aeropuerto FTE 10:20 y shuttle 10:00 (ejemplos); no confirmado noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php",
+      "notes": "El transporte regular desde FTE a El Chaltén existe según información turística local y sus horarios de referencia de 2025–2026; verificar frecuencia, equipaje, precio y margen de conexión con vuelo del 6 noviembre 2027. Horarios anteriores NO aplican como confirmados. Horarios publicados el 14/10/2026: bus regular desde aeropuerto FTE 10:20 y shuttle 10:00 (ejemplos); no confirmado noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php Compra: comparar sitio del operador y terminal, revisar política de cambios, equipaje y tasa municipal. La salida del día es orientativa y NO debe tratarse como confirmada para 2027.",
       "links": [
         {
           "label": "Autobuses · información turística",
@@ -1107,7 +1116,7 @@
           "selectedFare": "reference"
         }
       ],
-      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027. Horarios publicados el 14/10/2026: bus regular 08:00 y shuttle desde 09:00 (ejemplos); no confirmado para noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php",
+      "notes": "Autobús de 220 km aprox. para el 11 noviembre 2027; salidas regulares publicadas por turismo local como referencia, sin horario ni tarifa confirmada para 2027. Horarios publicados el 14/10/2026: bus regular 08:00 y shuttle desde 09:00 (ejemplos); no confirmado para noviembre 2027. Fuente: https://elchalten.com/v4/es/transporte-buses-en-el-chalten.php Compra: comparar sitio del operador y terminal, revisar política de cambios, equipaje y tasa municipal. La salida del día es orientativa y NO debe tratarse como confirmada para 2027.",
       "links": [
         {
           "label": "Autobuses · información turística",
@@ -1448,10 +1457,10 @@
   ],
   "sourceNote": "Se conservan exactamente los horarios de vuelo de la presentación original de 2026 y se aplican al calendario objetivo de 2027 como escenario NO confirmado. Precios de vuelos históricos, el resto supuestos; no hay compras. Las imágenes enlazadas por URL remota son referencias editoriales pendientes de validación HTTP individual y revisión visual del viaje; pasar CI no verifica el contenido de las fotografías.",
   "budgetRange": [
-    110000,
-    155000
+    137648,
+    151648
   ],
-  "budgetNote": "Estimación de trabajo para DOS personas: $144,648 MXN, distribuida en 19 partidas orientativas. Vuelos internacionales ($24,398 MXN) y nacionales ($23,250 MXN) proceden de la presentación de 2026, NO de una cotización para 2027. Los $30,000 MXN de alojamiento se repartieron por noches y ciudades; autobuses, taxis, parques, excursiones y seguro son asignaciones de presupuesto, no precios comprobados. La reserva menor de $1,500 MXN es reducida para un viaje de montaña: considerar un fondo adicional antes de comprar. Los traslados/entradas que un operador incluya deberán descontarse del renglón correspondiente para evitar duplicación. La cabalgata y Lago del Desierto son opciones presupuestadas, no compromisos; si se descartan, reducir el escenario. Conversión ARS/MXN pendiente de tasa fechada y verificable. Los importes «Gastos registrados del día» son imputaciones presupuestarias, NO gastos reales ni tickets comprados. Vuelos redondos se atribuyen una vez a la salida correspondiente y los hoteles se imputan completos a su check-in; alimentos se reparten $1,000 MXN por jornada para dos personas como supuesto. La suma diaria coincide con las partidas globales, no debe sumarse de nuevo. Las cuatro fichas de traslado son comparativas; sus importes se incluyen una sola vez mediante las partidas de gastos que las financian. Cambiar la opción visual no constituye recotización del presupuesto.",
+  "budgetNote": "Estimación de trabajo para DOS personas: $144,648 MXN, distribuida en 19 partidas orientativas. Vuelos internacionales ($24,398 MXN) y nacionales ($23,250 MXN) proceden de la presentación de 2026, NO de una cotización para 2027. Los $30,000 MXN de alojamiento se repartieron por noches y ciudades; autobuses, taxis, parques, excursiones y seguro son asignaciones de presupuesto, no precios comprobados. La reserva menor de $1,500 MXN es reducida para un viaje de montaña: considerar un fondo adicional antes de comprar. Los traslados/entradas que un operador incluya deberán descontarse del renglón correspondiente para evitar duplicación. La cabalgata y Lago del Desierto son opciones presupuestadas, no compromisos; si se descartan, reducir el escenario. Conversión ARS/MXN pendiente de tasa fechada y verificable. Los importes «Gastos registrados del día» son imputaciones presupuestarias, NO gastos reales ni tickets comprados. Vuelos redondos se atribuyen una vez a la salida correspondiente y los hoteles se imputan completos a su check-in; alimentos se reparten $1,000 MXN por jornada para dos personas como supuesto. La suma diaria coincide con las partidas globales, no debe sumarse de nuevo. Las cuatro fichas de traslado son comparativas; sus importes se incluyen una sola vez mediante las partidas de gastos que las financian. Cambiar la opción visual no constituye recotización del presupuesto. ESCENARIOS DE DECISIÓN (no cotizaciones): esencial sin Bonanza ni Lago del Desierto $137,648 MXN para dos; completo con ambas actividades $144,648 MXN; completo con fondo de imprevistos reforzado en $7,000 MXN $151,648 MXN. El último escenario conserva las excursiones y eleva la reserva disponible de $1,500 a $8,500 MXN, sin modificar el total base ni registrar el margen opcional como gasto pagado. La visita a Glaciarium y Laguna Torre son opciones sin precio asignado, NO están incluidas en los totales.",
   "placeDescriptions": {
     "pat27-laguna-tres": "Laguna de los Tres · caminata exigente, condicionada a guía y clima seguro",
     "pat27-perito": "Glaciar Perito Moreno · Minitrekking y pasarelas",
@@ -1460,7 +1469,12 @@
     "pat27-calafate": "Paisaje glaciar del Lago Argentino",
     "pat27-fitzroy": "Fitz Roy · miradores y bosques desde El Chaltén",
     "pat27-nimez": "Laguna Nimez · reserva de aves en El Calafate",
-    "pat27-caminito": "Caminito · fachadas y patrimonio de La Boca"
+    "pat27-caminito": "Caminito · fachadas y patrimonio de La Boca",
+    "pat27-spegazzini": "Glaciar Spegazzini · pared de hielo visible durante la navegación Todo Glaciares, siempre sujeta al itinerario y condiciones meteorológicas.",
+    "pat27-floralis": "Floralis Genérica · escultura de Eduardo Catalano junto a la Facultad de Derecho; visita exterior si el horario de llegada lo permite.",
+    "pat27-capri": "Laguna Capri · panorámica accesible desde los senderos de El Chaltén, una alternativa más corta para disfrutar del macizo Fitz Roy.",
+    "pat27-torre": "Laguna Torre (opcional) · caminata larga con vistas de Cerro Torre, solo si se dispone de energía, tiempo y clima seguros.",
+    "pat27-puente": "Puente de la Mujer · obra peatonal de Santiago Calatrava sobre los diques de Puerto Madero, cierre arquitectónico del recorrido porteño."
   },
   "optionalSection": null,
   "family": null,
@@ -1487,7 +1501,11 @@
   "emphasisStyle": false,
   "linkRailInText": false,
   "knownCosts": [],
-  "costExclusions": null,
+  "costExclusions": [
+    "Glaciarium y posibles entradas adicionales a actividades opcionales: por cotizar, no incluidas en los escenarios.",
+    "Contingencia ampliada de $7,000 MXN: disponible como escenario prudente, no sumada al presupuesto base.",
+    "Revisar si Minitrekking y Todo Glaciares incluyen traslado y acceso al Parque Nacional Los Glaciares; evitar doble cobro."
+  ],
   "exchangeNote": null,
   "railSummary": [],
   "railTotal": null,
