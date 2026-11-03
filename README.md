@@ -20,6 +20,12 @@ Completar progresivamente el JSON siguiendo [`_template.json`](data/trips/_templ
 
 Si buscas inspiración en un viaje antiguo, proporciona su JSON a la IA como **contexto** y decide junto con ella, campo por campo, qué añadir al JSON nuevo. No existe ninguna migración automática. Tras verificar Desktop/Mobile, activar el registro con `available: true`.
 
+## Ejecución autónoma y seguimiento
+
+Después de acordar fechas, ruta y alcance, la instrucción **«refléjalo en el Atlas»** inicia el flujo de **14 etapas (00–13)** con las nueve secciones ordenadas y auditorías **A/B/C/D**, sin confirmaciones para cada apartado. El agente debe copiar [la plantilla de progreso](docs/trip-progress-template.md) a `docs/trip-progress/<slug>.md` dentro de la rama de ese nuevo viaje, registrar lo verificado y los pendientes, y retomar desde allí cuando sea necesario.
+
+Norma operativa en [AGENTS.md](AGENTS.md), criterios editoriales en [la guía](docs/trip-editorial-guide.md) y verificaciones en [el checklist de producción](docs/trip-production-checklist.md). No se realizan compras ni merge sin aprobación.
+
 ## Probar localmente
 
 ```bash
