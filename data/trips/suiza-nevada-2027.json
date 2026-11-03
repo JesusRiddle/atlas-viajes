@@ -50,23 +50,35 @@
   "climate": "Finales de enero: invierno alpino frío y días cortos (unas nueve horas de luz). La nieve es mucho más probable en Grindelwald, Wengen y Zermatt que en Zúrich o Lucerna; viento, nubosidad y cierres pueden modificar los miradores. Se reservan días alternativos para fotografía y nieve.",
   "solo": "Plan de una persona con habitación y baño privados. Transporte ferroviario, equipaje ligero y descansos entre excursiones de montaña.",
   "flight": "Opción aérea de referencia, NO reservada: salida de CDMX viernes 22 de enero a las 11:25; llegada a Zúrich sábado 23 a las 10:00 vía Madrid (Aeroméxico/Air Europa). Regreso ZRH martes 2 de febrero a las 18:50 vía París, llegada a CDMX miércoles 3 a las 04:20 (Air France/Aeroméxico). Precio de captura del 3/11/2026: $20,331 MXN redondos, sujeto a revalidar reservas protegidas, equipaje y tarifa final. Alternativa Lufthansa por $17,382 MXN redondos, llegada 23 enero 19:00 y regreso 2 febrero 09:25.",
-  "local": "Desde Zürich Flughafen a Lucerna se llega en tren en aprox. 1 h 10 min. Lucerna a Interlaken Ost en Luzern–Interlaken Express tarda alrededor de 1 h 50 min; conectar hacia Grindelwald. Grindelwald–Zermatt vía Interlaken/Spiez/Visp toma unas 3.5–4.5 h; Zermatt–Zúrich unas 3.5–4 h. Horarios orientativos: validar SBB para fechas exactas. Comparar Half Fare Card, pase peatonal Jungfrau y billetes con ahorro sin sumar dos veces los tramos.",
+  "local": "Aeropuerto Zúrich → Luzern Bahnhof en SBB (~1 h 10 min). Luzern → Interlaken Ost en Luzern–Interlaken Express (~1 h 50 min) y tren de conexión a Grindelwald. Grindelwald → Interlaken Ost → Spiez → Visp → Zermatt (~3.5–4.5 h); Zermatt → Visp → Bern → Zürich HB (~3.5–4 h). Los horarios detallados de enero/febrero 2027 y precios de los trenes no están cerrados. En Oberland, comparar la cobertura del Winter Hiking and Sledging Pass de 3 días antes de comprar billetes individuales. El presupuesto provisional de movilidad no es una cotización de todos los tramos.",
   "experiences": [
     {
       "city": "Lucerna",
-      "description": "Kapellbrücke, casco antiguo y lago; monte Rigi solo si terminas temprano y hay buena visibilidad y trenes de regreso con luz."
+      "description": "Recorre Kapellbrücke y la torre del Agua, Weinmarkt, las fachadas del casco antiguo y la orilla del lago de los Cuatro Cantones. Acércate al monumento del León si el tiempo y la luz lo permiten; prueba una sopa de cebada o un plato caliente local."
     },
     {
       "city": "Grindelwald",
-      "description": "Pueblo nevado junto al Eiger; First y Cliff Walk abiertos según tiempo, más Wengen, valle de Lauterbrunnen y Mürren. Probar rösti y fondue."
+      "description": "Disfruta las vistas del Eiger entre chalets nevados. Sube a First para sus miradores y Cliff Walk solamente si funcionan los remontes y la pasarela. Para comer, rösti o fondue de queso; no es necesario esquiar."
+    },
+    {
+      "city": "Lauterbrunnen y Wengen",
+      "description": "Explora el valle y sus cascadas de invierno —pueden llevar poca agua o helarse— y asciende a Wengen por el tren de cremallera. Pasea por el pueblo sin automóviles; no programes Trümmelbachfälle, cerradas normalmente en invierno."
+    },
+    {
+      "city": "Mürren",
+      "description": "Desde Lauterbrunnen conecta por Grütschalp y el tren a Mürren para caminar entre chalets con vistas al macizo Eiger–Mönch–Jungfrau. Prioriza sus miradores; Schilthorn queda como excursión cara y opcional."
+    },
+    {
+      "city": "Jungfraujoch o Männlichen",
+      "description": "Si hay visibilidad excelente, contempla el glaciar Aletsch desde Jungfraujoch (entrada suplementaria por confirmar). Alternativa más ligera: telecabina a Männlichen y vistas de Kleine Scheidegg, con regreso antes del cierre."
     },
     {
       "city": "Zermatt",
-      "description": "Matterhorn, tren de Gornergrat y miradores invernales; Sunnegga como alternativa. Disfrutar raclette y chocolate caliente."
+      "description": "Recorre la Bahnhofstrasse y el casco antiguo de chalets de madera. Si el Matterhorn está despejado, sube en el tren de cremallera a Gornergrat; usa el segundo día para Sunnegga o intentar de nuevo la vista. Prueba raclette y chocolate suizo; no esperar reflejo líquido de Riffelsee en enero."
     },
     {
-      "city": "Zúrich",
-      "description": "Altstadt, Grossmünster, Lindenhof, río Limmat y Lindt Home of Chocolate en Kilchberg. Sin Kunsthaus."
+      "city": "Zúrich y Kilchberg",
+      "description": "Visita Niederdorf, Grossmünster, Lindenhof y el paseo junto al Limmat. En Kilchberg entra a Lindt Home of Chocolate, su exposición y fuente de chocolate. Disfruta Zürcher Geschnetzeltes (versión sin lácteos si se necesita) o birchermüesli adaptado."
     }
   ],
   "days": [
@@ -106,7 +118,19 @@
       ],
       "headerPlaces": [],
       "hotel": "lucerna-ibis",
-      "transportRefs": []
+      "transportRefs": [
+        "airport-arrival"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Zürich Flughafen railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20Flughafen%20railway%20station"
+        },
+        {
+          "label": "Mapa: Luzern Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Luzern%20Bahnhof"
+        }
+      ]
     },
     {
       "n": 3,
@@ -124,7 +148,23 @@
       ],
       "headerPlaces": [],
       "hotel": "grindelwald-tschuggen",
-      "transportRefs": []
+      "transportRefs": [
+        "lucerne-grindelwald"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Luzern Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Luzern%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Interlaken Ost Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Interlaken%20Ost%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Grindelwald Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof"
+        }
+      ]
     },
     {
       "n": 4,
@@ -163,7 +203,29 @@
       ],
       "headerPlaces": [],
       "hotel": "grindelwald-tschuggen",
-      "transportRefs": []
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Grindelwald Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Lauterbrunnen Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Lauterbrunnen%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Wengen Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Wengen%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Grütschalp cable car station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Gr%C3%BCtschalp%20cable%20car%20station"
+        },
+        {
+          "label": "Mapa: Mürren railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=M%C3%BCrren%20railway%20station"
+        }
+      ]
     },
     {
       "n": 6,
@@ -200,7 +262,31 @@
       ],
       "headerPlaces": [],
       "hotel": "zermatt-testa",
-      "transportRefs": []
+      "transportRefs": [
+        "grindelwald-zermatt"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Grindelwald Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Interlaken Ost",
+          "url": "https://www.google.com/maps/search/?api=1&query=Interlaken%20Ost"
+        },
+        {
+          "label": "Mapa: Spiez Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Spiez%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Visp Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Visp%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Zermatt Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Zermatt%20Bahnhof"
+        }
+      ]
     },
     {
       "n": 8,
@@ -255,7 +341,27 @@
       ],
       "headerPlaces": [],
       "hotel": "zurich-fred",
-      "transportRefs": []
+      "transportRefs": [
+        "zermatt-zurich"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Zermatt Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Zermatt%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Visp Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Visp%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Bern Bahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Bern%20Bahnhof"
+        },
+        {
+          "label": "Mapa: Zürich Hauptbahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20Hauptbahnhof"
+        }
+      ]
     },
     {
       "n": 11,
@@ -274,7 +380,17 @@
       ],
       "headerPlaces": [],
       "hotel": "zurich-fred",
-      "transportRefs": []
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Lindt Home of Chocolate Kilchberg",
+          "url": "https://www.google.com/maps/search/?api=1&query=Lindt%20Home%20of%20Chocolate%20Kilchberg"
+        },
+        {
+          "label": "Mapa: Zürich HB",
+          "url": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20HB"
+        }
+      ]
     },
     {
       "n": 12,
@@ -294,6 +410,16 @@
       "transportRefs": [
         "airport-return",
         "flight-international"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Zürich Hauptbahnhof",
+          "url": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20Hauptbahnhof"
+        },
+        {
+          "label": "Mapa: Zürich Flughafen railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20Flughafen%20railway%20station"
+        }
       ]
     }
   ],
@@ -302,26 +428,36 @@
       "Prioridad muy alta",
       [
         {
-          "title": "Lindt Home of Chocolate · lunes 1 febrero",
-          "description": "Visita imprescindible. Franja de referencia 10:00; entrada sin comprar y horarios 2027 por confirmar. Referencia CHF 17 (≈ $390 MXN).",
+          "title": "Grindelwald · 4 noches, 24–28 enero",
+          "description": "Habitación individual con baño privado y cancelación flexible, próxima a estación. Hotel Tschuggen como candidato: verificar tarifa exacta, impuestos, desayuno y condiciones. No reservado.",
           "links": [
             {
-              "label": "Entradas oficiales",
-              "url": "https://www.lindt-home-of-chocolate.com/en/"
+              "label": "Hotel Tschuggen · oficial",
+              "url": "https://www.tschuggen-grindelwald.ch/en/"
             }
           ]
         },
         {
-          "title": "Alojamientos de Grindelwald y Zermatt",
-          "description": "Buscar individual con baño privado y cancelación flexible para 24–28 y 28–31 enero; tarifa definitiva aún sin confirmar.",
+          "title": "Zermatt · 3 noches, 28–31 enero",
+          "description": "Habitación individual con baño privado, idealmente cerca de Zermatt Bahnhof. Hotel Testa Grigia: confirmar política de cancelación, desayuno y tasa turística. No reservado.",
           "links": [
             {
-              "label": "Hotel Tschuggen",
-              "url": "https://www.tschuggen-grindelwald.ch/en/"
+              "label": "Testa Grigia · reservar",
+              "url": "https://www.hotel-testa-grigia.ch/en/book-a-room/"
+            }
+          ]
+        },
+        {
+          "title": "Lindt Home of Chocolate · lunes 1 febrero",
+          "description": "Entrada museo con franja preferida 10:00; horario oficial habitual lunes 10:00–19:00. Tarifa adulta publicada CHF 17 (≈ $390 MXN), sin entrada comprada. Reservar al confirmar vuelos.",
+          "links": [
+            {
+              "label": "Entradas oficiales",
+              "url": "https://www.lindt-home-of-chocolate.com/en/tickets-and-prices/"
             },
             {
-              "label": "Hotel Testa Grigia",
-              "url": "https://www.hotel-testa-grigia.ch/en/book-a-room/"
+              "label": "Horarios oficiales",
+              "url": "https://www.lindt-home-of-chocolate.com/en/lindt-home-of-chocolate-opening-times/"
             }
           ]
         }
@@ -331,22 +467,40 @@
       "Prioridad alta",
       [
         {
-          "title": "Vuelos MEX–ZRH y regreso",
-          "description": "Cotizaciones de 03/11/2026, no compras. Confirmar billetes protegidos, franquicia y precio final.",
+          "title": "Vuelo redondo MEX–ZRH, provisional",
+          "description": "Comparar Aeroméxico/Air Europa/Air France con Lufthansa. Confirmar llegada suficientemente temprana para visitar Lucerna, equipaje, conexiones protegidas y condiciones de cambio. Tarifa previa $20,331 MXN como referencia, no comprada.",
           "links": [
             {
-              "label": "Google Flights",
+              "label": "Comparar vuelos",
               "url": "https://www.google.com/travel/flights"
             }
           ]
         },
         {
-          "title": "Jungfraujoch · opción meteorológica",
-          "description": "Verificar visibilidad, disponibilidad y condiciones del suplemento regional antes de adquirir entrada; no obligatoria.",
+          "title": "Lucerna · 1 noche / Zúrich · 2 noches",
+          "description": "Cerrar habitaciones privadas cancelables al confirmar el vuelo; Lucerna 23–24 enero, Zúrich 31 enero–2 febrero. Comprobar recepción, maletas y acceso ferroviario.",
           "links": [
             {
-              "label": "Operación Jungfrau",
-              "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
+              "label": "ibis budget Luzern City",
+              "url": "https://all.accor.com/hotel/6782/index.en.shtml"
+            },
+            {
+              "label": "Fred Guest House oficial",
+              "url": "https://fredhotels.ch/en/fred-hotel-zurich-hauptbahnhof-guest-house/"
+            }
+          ]
+        },
+        {
+          "title": "Estrategia de billetes y pases",
+          "description": "Comparar billetes nacionales y descuentos reales con Half Fare Card (CHF 150 ≈ $3,444 MXN) y pase peatonal Jungfrau de tres días (CHF 176 ≈ $4,040 MXN). Superposiciones no se suman como excursiones adicionales.",
+          "links": [
+            {
+              "label": "SBB Half Fare Card",
+              "url": "https://www.sbb.ch/en/offers/swiss-half-fare-card"
+            },
+            {
+              "label": "Pase peatonal Jungfrau",
+              "url": "https://www.jungfrau.ch/en-gb/jungfrau-ski-region/jungfrau-region-hiking-sledging-pass/"
             }
           ]
         }
@@ -356,22 +510,22 @@
       "Planificación flexible",
       [
         {
-          "title": "Gornergrat, Grindelwald-First y miradores",
-          "description": "Elegir ascensos con buena visibilidad y horarios de retorno; montaña puede cerrar por viento.",
+          "title": "First, Gornergrat y Jungfraujoch",
+          "description": "Ascender a First y Gornergrat solo con visibilidad suficiente y funcionamiento confirmado. Jungfraujoch requiere suplemento del pase regional o entrada independiente; verificar importe vigente 2027. Sin entradas compradas.",
           "links": [
             {
-              "label": "Gornergrat oficial",
-              "url": "https://www.gornergrat.ch/en/pages/timetable-gornergrat-bahn"
+              "label": "Jungfrau · operativa",
+              "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
             },
             {
-              "label": "Jungfrau Railways",
-              "url": "https://www.jungfrau.ch/en-gb/"
+              "label": "Gornergrat · horarios",
+              "url": "https://www.gornergrat.ch/en/pages/timetable-gornergrat-bahn"
             }
           ]
         },
         {
-          "title": "Monte Rigi",
-          "description": "Opcional espontáneo desde Lucerna, solo si sobra tiempo y se puede regresar con luz; no justifica noches extras.",
+          "title": "Männlichen, Sunnegga y Rigi",
+          "description": "Alternativas dependientes del clima y energía. Rigi no cabe como obligación el día de llegada; no gastar más ni añadir un alojamiento por estos opcionales.",
           "links": [
             {
               "label": "Rigi horarios",
@@ -702,9 +856,190 @@
           "url": "https://www.sbb.ch/en"
         }
       ]
+    },
+    {
+      "id": "lucerne-grindelwald",
+      "day": 3,
+      "type": "train",
+      "title": "Lucerna → Grindelwald · Luzern–Interlaken Express",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "SBB y operador regional",
+          "status": "estimated",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Luzern Bahnhof",
+                  "to": "Interlaken Ost",
+                  "operator": "Zentralbahn · Luzern–Interlaken Express"
+                },
+                {
+                  "from": "Interlaken Ost",
+                  "to": "Grindelwald Bahnhof",
+                  "operator": "Berner Oberland-Bahn"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete / tarifa por cotizar",
+              "price": null,
+              "changes": "Depende de tipo de billete; comparar tarifa flexible vs Supersaver",
+              "refunds": "Según condiciones de compra"
+            }
+          ],
+          "notes": "Tren panorámico incluido en conexiones normales: aprox. 1 h 50 min hasta Interlaken Ost + 35 min aprox. a Grindelwald; transbordo en Interlaken. Sin suplemento panorámico obligatorio. Confirmar servicio de enero 2027."
+        }
+      ],
+      "links": [
+        {
+          "label": "Consultar horarios y tarifas SBB",
+          "url": "https://www.sbb.ch/en"
+        }
+      ]
+    },
+    {
+      "id": "grindelwald-zermatt",
+      "day": 7,
+      "type": "train",
+      "title": "Grindelwald → Zermatt · conexión por Visp",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "SBB y operador regional",
+          "status": "estimated",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald Bahnhof",
+                  "to": "Interlaken Ost",
+                  "operator": "Berner Oberland-Bahn"
+                },
+                {
+                  "from": "Interlaken Ost",
+                  "to": "Spiez",
+                  "operator": "SBB"
+                },
+                {
+                  "from": "Spiez",
+                  "to": "Visp",
+                  "operator": "SBB"
+                },
+                {
+                  "from": "Visp",
+                  "to": "Zermatt Bahnhof",
+                  "operator": "Matterhorn Gotthard Bahn"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete / tarifa por cotizar",
+              "price": null,
+              "changes": "Depende de tipo de billete; comparar tarifa flexible vs Supersaver",
+              "refunds": "Según condiciones de compra"
+            }
+          ],
+          "notes": "Aprox. 3.5–4.5 h según conexión; no fijar un tren sin validar el horario 2027. Preferir combinaciones con margen suficiente para equipaje."
+        }
+      ],
+      "links": [
+        {
+          "label": "Consultar horarios y tarifas SBB",
+          "url": "https://www.sbb.ch/en"
+        }
+      ]
+    },
+    {
+      "id": "zermatt-zurich",
+      "day": 10,
+      "type": "train",
+      "title": "Zermatt → Zürich HB · conexión en Visp y Berna",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "SBB y operador regional",
+          "status": "estimated",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Zermatt Bahnhof",
+                  "to": "Visp",
+                  "operator": "Matterhorn Gotthard Bahn"
+                },
+                {
+                  "from": "Visp",
+                  "to": "Bern",
+                  "operator": "SBB"
+                },
+                {
+                  "from": "Bern",
+                  "to": "Zürich HB",
+                  "operator": "SBB"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete / tarifa por cotizar",
+              "price": null,
+              "changes": "Depende de tipo de billete; comparar tarifa flexible vs Supersaver",
+              "refunds": "Según condiciones de compra"
+            }
+          ],
+          "notes": "Aprox. 3.5–4 h según horario. Confirmar ruta y andenes cuando abra la venta para la fecha."
+        }
+      ],
+      "links": [
+        {
+          "label": "Consultar horarios y tarifas SBB",
+          "url": "https://www.sbb.ch/en"
+        }
+      ]
     }
   ],
-  "ticketNotes": [],
+  "ticketNotes": [
+    {
+      "title": "Trenes nacionales · SBB",
+      "note": "Cotizar Luzern–Grindelwald, Grindelwald–Zermatt, Zermatt–Zúrich y aeropuerto por separado en ambos sentidos aplicables. Los tiempos son aproximados. Comparar billetes normales, Supersaver y pases; un pase de descuento no es billete de transporte.",
+      "rules": "Validar en SBB fecha, ruta, clase, tren y condiciones de cambio. Si se usa Supersaver, respetar el servicio específico contratado.",
+      "url": "https://www.sbb.ch/en"
+    },
+    {
+      "title": "Swiss Half Fare Card · CHF 150 (≈ $3,444 MXN)",
+      "note": "Referencia oficial para turistas: descuentos de hasta 50 % durante un mes. Solo conviene si ahorros acumulados superan CHF 150 (≈ $3,444 MXN). No sumar precios de billetes completos y reducidos simultáneamente.",
+      "url": "https://www.sbb.ch/en/offers/swiss-half-fare-card"
+    },
+    {
+      "title": "Jungfrau Winter Hiking and Sledging Pass · CHF 176 (≈ $4,040 MXN) / 3 días",
+      "note": "El pase de 3 días cubre, entre otros, Grindelwald–First, trenes del valle Interlaken Ost–Grindelwald/Lauterbrunnen y trenes/remontes hacia Wengen, Mürren y Männlichen según área oficial. Enero 25–27 está en la temporada 2026/27 y la tarifa baja indicada, sujeto a condiciones oficiales. No incluye automáticamente Jungfraujoch; comprobar Top Ticket 2027 antes de comprar.",
+      "url": "https://www.jungfrau.ch/en-gb/jungfrau-ski-region/jungfrau-region-hiking-sledging-pass/"
+    },
+    {
+      "title": "Montaña · seguridad",
+      "note": "Confirmar webcam, viento, estado de remontes, últimos descensos y caminos peatonales. No presupuestar ascensos repetidos ni convertir pase invernal en obligación de esquiar.",
+      "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
+    }
+  ],
   "attractionTerms": [],
   "cover": "swiss27-grindelwald-winter",
   "mapPoints": [
@@ -781,7 +1116,7 @@
   ],
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Ninguna reserva ni entrada ha sido comprada. Distinguir tarifa observada en noviembre 2026 de cotización verificable para enero 2027."
+    "reservationNote": "No hay compras ni habitaciones confirmadas. Prioridades separadas de actividades meteorológicas; verificar la disponibilidad exacta y condiciones antes de pagar."
   },
   "lodgingSummary": "10 noches, 4 alojamientos: Lucerna 1, Grindelwald 4, Zermatt 3 y Zúrich 2. Habitaciones privadas con baño propio, todos candidatos sin reservar.",
   "heroLodgingSummary": "10 noches · 4 alojamientos",
@@ -804,11 +1139,11 @@
       "status": "Candidato · no reservado",
       "rate": "Presupuesto objetivo de 1 noche: $2,000–$3,000 MXN; sin cotización final para la fecha.",
       "rateConditions": "Confirmar habitación individual con baño privado, check-in y cancelación.",
-      "notes": "Alojamiento práctico; consultar distancia a la estación y posibilidad de dejar equipaje.",
+      "notes": "Alojamiento práctico; consultar distancia a la estación y posibilidad de dejar equipaje. El sitio oficial indica 1 km desde Luzern Hauptbahnhof; estimar caminata con equipaje o un transporte urbano.",
       "links": [
         {
-          "label": "Sitio oficial Accor",
-          "url": "https://all.accor.com/"
+          "label": "Reserva oficial Accor",
+          "url": "https://all.accor.com/hotel/6782/index.en.shtml"
         }
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ibis%20budget%20Luzern%20City%20Switzerland"
@@ -855,20 +1190,20 @@
       "id": "zurich-fred",
       "city": "Zúrich",
       "name": "Fred Guest House Zürich Hauptbahnhof",
-      "address": "Limmatstrasse 5, 8005 Zürich, Suiza",
+      "address": "Konradstrasse 11, 8005 Zürich, Suiza",
       "checkIn": "2027-01-31",
       "checkOut": "2027-02-02",
       "status": "Candidato · no reservado",
       "rate": "Presupuesto objetivo por 2 noches: $5,000–$7,500 MXN; sin cotización final.",
       "rateConditions": "Confirmar check-in autónomo/asistido, baño privado, cancelación y tasas.",
-      "notes": "Cerca de Zürich HB; acceso práctico al casco antiguo, Lindt y aeropuerto.",
+      "notes": "Guest House con check-in digital; comprobar instrucciones y asistencia del hotel asociado. Está cerca de Zürich HB; revisar disponibilidad de habitación individual con baño privado.",
       "links": [
         {
-          "label": "Sitio oficial",
-          "url": "https://www.fredhotels.ch/"
+          "label": "Fred Guest House · oficial",
+          "url": "https://fredhotels.ch/en/fred-hotel-zurich-hauptbahnhof-guest-house/"
         }
       ],
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fred%20Guest%20House%20Z%C3%BCrich%20Hauptbahnhof%20Switzerland"
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Fred%20Guest%20House%20Z%C3%BCrich%20Hauptbahnhof%20Konradstrasse%2011%208005%20Z%C3%BCrich"
     }
   ],
   "stays": [],
