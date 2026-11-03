@@ -137,3 +137,20 @@ test('Patagonia: tipo de cambio fechado y escenarios de autobús sin doble conte
   assert.equal(trip.days.reduce((sum,d)=>sum+d.spend,0),
     trip.expenses.reduce((sum,e)=>sum+e.cost.amount,0));
 });
+
+test('El estándar presupuestario declara viajeros para los cuatro viajes nuevos', () => {
+  const root = 'data/trips/';
+  const template = JSON.parse(fs.readFileSync(root + '_template.json', 'utf8'));
+  assert.equal(template.travelerCount, null, 'No asumir viaje individual en un borrador');
+  const expectations = {
+    'espana-portugal-2027': 1,
+    'italia-norte-2027': 1,
+    'japon-2027': 1,
+    'patagonia-argentina-2027': 2
+  };
+  for (const [id, expected] of Object.entries(expectations)) {
+    const item = JSON.parse(fs.readFileSync(root + id + '.json', 'utf8'));
+    assert.equal(item.travelerCount, expected, id);
+    assert.ok(Number.isInteger(item.travelerCount) && item.travelerCount > 0);
+  }
+});
