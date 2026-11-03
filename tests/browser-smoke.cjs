@@ -190,6 +190,27 @@ const assert = require('node:assert/strict');
           'Las cuatro primeras localidades deben compartir fila');
         assert.ok(locations.every(item => item.width >= 90), 'Ninguna tarjeta debe quedar demasiado estrecha');
       }
+      // El logo del Atlas aparece al fijarse la barra y navega a Inicio.
+      await page.goto('http://127.0.0.1:8765/#viaje/italia-norte-2027', { waitUntil: 'domcontentloaded' });
+      await page.locator('.subnav-sticky-sentinel').waitFor();
+      await page.evaluate(() => window.scrollTo({top:0,behavior:'instant'}));
+      await page.waitForFunction(() => !document.querySelector('.subnav')?.classList.contains('is-stuck'));
+      const stickyHome = page.locator('.subnav .subnav-home');
+      assert.equal(await stickyHome.getAttribute('href'), '#inicio');
+      assert.equal(await stickyHome.isVisible(), false, 'El logo no debe duplicarse antes del scroll');
+      await page.evaluate(() => {
+        const sentinel = document.querySelector('.subnav-sticky-sentinel');
+        window.scrollTo({top:sentinel.getBoundingClientRect().top + window.scrollY + 120,behavior:'instant'});
+      });
+      await page.waitForFunction(() => document.querySelector('.subnav')?.classList.contains('is-stuck'));
+      assert.equal(await stickyHome.isVisible(), true, 'El logo debe aparecer en la barra fija');
+      const homeLogoBounds = await stickyHome.boundingBox();
+      assert.ok(homeLogoBounds && homeLogoBounds.width >= 29 && homeLogoBounds.height >= 29);
+      const sectionScroll = page.locator('.subnav .subnav-sections');
+      assert.ok(await sectionScroll.count() === 1, 'Se conserva el desplazamiento horizontal de secciones');
+      await stickyHome.click();
+      await page.locator('#atlas-home-title').waitFor();
+      assert.equal(new URL(page.url()).hash, '#inicio', 'El logo debe regresar a Inicio');
       // Simula un nuevo destino real desde el primer commit: visible, sin fechas ni fotos.
       const testId = 'viaje-incremental-prueba';
       const testCatalog = catalog.replace(/\];\s*$/,
@@ -211,7 +232,7 @@ const assert = require('node:assert/strict');
       assert.doesNotMatch(initialCardText, /borrador|en planeación|preliminar|\$0\b|NaN|undefined/i);
       await newCard.click();
       await page.locator('#plan').waitFor();
-      assert.equal(await page.locator('.subnav a').count(), 9);
+      assert.equal(await page.locator('.subnav .subnav-sections a').count(), 9);
       for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1);
       assert.doesNotMatch(await page.locator('main').innerText(), /borrador|en planeación|en preparación|Invalid Date|NaN|undefined/i);
       assert.ok((await page.locator('main').innerText()).includes('Nuevo destino de prueba'));
