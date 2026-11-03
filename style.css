@@ -2005,29 +2005,29 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   .atlas-home-hero-immersive h1{font-size:clamp(36px,9.6vw,48px)}
 }
 
-/* Hero principal · versión 1: cámara lenta y reflejo cálido muy tenue.
-   Solo se mueve la fotografía y una capa de luz; el copy queda inmóvil. */
+/* Hero principal · versión 1 ajustada: movimiento evidente, luz editorial suave.
+   La fotografía se desplaza sin mover el texto ni el degradado protector. */
 @keyframes atlas-home-hero-drift{
-  from{transform:translate3d(.3%,0,0) scale(1.025)}
-  to{transform:translate3d(-.4%,-.35%,0) scale(1.045)}
+  from{transform:translate3d(1.4%,.5%,0) scale(1.055)}
+  to{transform:translate3d(-1.4%,-.65%,0) scale(1.10)}
 }
 @keyframes atlas-home-hero-light{
-  from{transform:translate3d(-16%,0,0);opacity:.38}
-  to{transform:translate3d(16%,0,0);opacity:.72}
+  from{transform:translate3d(-31%,0,0);opacity:.38}
+  to{transform:translate3d(31%,0,0);opacity:.9}
 }
 .atlas-home-hero-immersive .atlas-home-hero-image::after{
-  content:"";position:absolute;inset:-20% -32%;z-index:1;
+  content:"";position:absolute;inset:-12% -22%;z-index:1;
   pointer-events:none;
-  background:linear-gradient(112deg,transparent 38%,rgba(255,230,174,.065) 50%,transparent 62%);
-  opacity:.38;
+  background:linear-gradient(110deg,transparent 34%,rgba(255,223,155,.19) 48%,rgba(255,240,211,.12) 52%,transparent 67%);
+  opacity:.38;mix-blend-mode:screen;
 }
 @media(prefers-reduced-motion:no-preference){
   .atlas-home-hero-immersive .atlas-home-hero-image>img{
     transform-origin:center center;
-    animation:atlas-home-hero-drift 30s ease-in-out infinite alternate;
+    animation:atlas-home-hero-drift 17s ease-in-out infinite alternate;
   }
   .atlas-home-hero-immersive .atlas-home-hero-image::after{
-    animation:atlas-home-hero-light 25s ease-in-out infinite alternate;
+    animation:atlas-home-hero-light 12s ease-in-out infinite alternate;
   }
 }
 @media(prefers-reduced-motion:reduce){
