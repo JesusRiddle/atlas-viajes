@@ -31,6 +31,12 @@ const assert = require('node:assert/strict');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
       assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 4,
         'La comparativa no debe confundir ideas históricas con viajes terminados');
+      const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
+      assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
+      assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
+      const people = await page.locator('#comparar .comparison-table tbody tr').evaluateAll(rows =>
+        rows.map(row => row.cells[5].textContent.trim()));
+      assert.deepEqual(people, ['1', '1', '1', '2'], 'Tres viajes de una persona y Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
       assert.deepEqual(topIds, [
         '#viaje/espana-portugal-2027', '#viaje/italia-norte-2027',
