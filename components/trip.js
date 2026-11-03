@@ -161,6 +161,7 @@ window.AtlasTrip = function (ctx) {
             '</select></nav>';
     }
     function mountStickyHomeLink() {
+        if (typeof main.querySelector !== 'function') return () => {};
         const nav = main.querySelector('.subnav');
         const sentinel = main.querySelector('.subnav-sticky-sentinel');
         if (!nav || !sentinel || !window.addEventListener) return () => {};
