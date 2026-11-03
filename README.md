@@ -22,9 +22,9 @@ Si buscas inspiración en un viaje antiguo, proporciona su JSON a la IA como **c
 
 ## Ejecución autónoma y seguimiento
 
-Después de acordar fechas, ruta y alcance, la instrucción **«refléjalo en el Atlas»** inicia el flujo de **14 etapas (00–13)** con las nueve secciones ordenadas y auditorías **A/B/C/D**, sin confirmaciones para cada apartado. El agente debe copiar [la plantilla de progreso](docs/trip-progress-template.md) a `docs/trip-progress/<slug>.md` dentro de la rama de ese nuevo viaje, registrar lo verificado y los pendientes, y retomar desde allí cuando sea necesario.
+Después de acordar destinos, restricciones y alcance, «**refléjalo en el Atlas**» activa el flujo de etapas **00–13** sin confirmaciones para cada sección. El **orden de llenado** sigue dependencias: primero **Temporadas (02)** con las ciudades candidatas, después calendario/ruta (03), mapa, experiencias, reservas, conexiones, alojamientos y día por día; Panorama (10) resume el recorrido, **Presupuesto (11)** integra todos los costos, y fotos/portada y QA cierran el proceso. **El orden visual del sitio no cambia.**
 
-Norma operativa en [AGENTS.md](AGENTS.md), criterios editoriales en [la guía](docs/trip-editorial-guide.md) y verificaciones en [el checklist de producción](docs/trip-production-checklist.md). No se realizan compras ni merge sin aprobación.
+Se crea `docs/trip-progress/<slug>.md` desde [la plantilla de progreso](docs/trip-progress-template.md), registrando etapas verificadas, auditorías **A (03), B (08), C (11), D (13)**, decisiones bloqueantes y siguiente acción. Normativa en [AGENTS.md](AGENTS.md), [guía editorial](docs/trip-editorial-guide.md) y [checklist de producción](docs/trip-production-checklist.md). No se realizan compras ni merge sin aprobación.
 
 ## Probar localmente
 
