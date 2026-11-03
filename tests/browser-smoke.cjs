@@ -101,23 +101,23 @@ const assert = require('node:assert/strict');
         copyBounds.y + copyBounds.height <= heroBounds.y + heroBounds.height + 2,
         'El texto del hero debe quedar dentro de la fotografía');
 
-      // Solo los primeros cuatro viajes siguen siendo protagonistas de la portada.
+      // Los cinco viajes nuevos forman la portada; los históricos siguen en el archivo de ideas.
       const featuredCards = page.locator('#viajes .tripcard');
       const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
-      assert.equal(await featuredCards.count(), 4, 'La portada principal debe tener cuatro viajes');
-      assert.equal(await ideaCards.count(), allDestinations.length - 4, 'Todos los viajes anteriores deben permanecer accesibles');
+      assert.equal(await featuredCards.count(), 5, 'La portada principal debe mostrar cinco viajes, encabezados por Suiza nevada');
+      assert.equal(await ideaCards.count(), allDestinations.length - 5, 'Todos los viajes históricos deben permanecer accesibles');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
-      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 4,
+      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 5,
         'La comparativa no debe confundir ideas históricas con viajes terminados');
       const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
       assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
       assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
       const people = await page.locator('#comparar .comparison-table tbody tr').evaluateAll(rows =>
         rows.map(row => row.cells[5].textContent.trim()));
-      assert.deepEqual(people, ['1', '1', '1', '2'], 'Tres viajes de una persona y Patagonia para dos');
+      assert.deepEqual(people, ['1', '1', '1', '1', '2'], 'Cuatro viajes para una persona y Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
       assert.deepEqual(topIds, [
-        '#viaje/espana-portugal-2027', '#viaje/italia-norte-2027',
+        '#viaje/suiza-nevada-2027', '#viaje/espana-portugal-2027', '#viaje/italia-norte-2027',
         '#viaje/japon-2027', '#viaje/patagonia-argentina-2027'
       ]);
       assert.ok(!(await page.locator('#ideas-viajes').innerText()).includes('Presupuesto estimado por persona'),
@@ -138,6 +138,19 @@ const assert = require('node:assert/strict');
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
         assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
+        if (id === 'suiza-nevada-2027') {
+          assert.equal(await page.locator('#traslados .mt-card').count(), 3,
+            'Suiza debe mostrar vuelos y dos conexiones ferroviarias sin error');
+          assert.equal(await page.locator('#dias details.day').count(), 12,
+            'Suiza debe mostrar sus doce jornadas');
+          assert.equal(await page.locator('#alojamientos .hotel-card').count(), 4,
+            'Suiza debe mostrar sus cuatro alojamientos');
+          assert.equal(await page.locator('#temporadas .season-month').count(), 12,
+            'Suiza debe incluir los doce meses de temporadas');
+          assert.ok(await page.locator('#costes .budget-ledger').count() >= 1,
+            'Suiza debe presentar el desglose de presupuesto');
+          await page.screenshot({path: '/tmp/atlas-suiza-nevada-' + viewport.width + '.png', fullPage: true});
+        }
         if (id === 'patagonia-argentina-2027') {
           assert.equal(await page.locator('#traslados .mt-card').count(), 4, 'Patagonia debe renderizar sus cuatro traslados');
           assert.equal(await page.locator('#dias details.day').count(), 15, 'Patagonia debe mostrar sus 15 jornadas');
@@ -252,7 +265,7 @@ const assert = require('node:assert/strict');
       await page.goto('http://127.0.0.1:8765/?incremental-fixture=1#inicio', { waitUntil: 'domcontentloaded' });
       const newCard = page.locator('#viajes a[href="#viaje/' + testId + '"]');
       await newCard.waitFor();
-      assert.equal(await page.locator('#viajes .tripcard').count(), 5);
+      assert.equal(await page.locator('#viajes .tripcard').count(), 6);
       assert.equal(await page.locator('#ideas-viajes .idea-tripcard').count(), 15);
       const initialCardText = await newCard.innerText();
       assert.match(initialCardText, /Nuevo destino de prueba/);
