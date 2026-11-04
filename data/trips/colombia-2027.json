@@ -402,6 +402,24 @@
           "title": "Excursión guiada Comuna 13 y Guatapé",
           "description": "SIN RESERVAR. Elegir guías y transportistas identificables, verificar inclusiones, horarios y políticas de cambios. Guatapé es sábado; salir temprano para limitar aglomeraciones.",
           "links": []
+        },
+        {
+          "title": "Hoteles urbanos de Medellín, Santa Marta y Cartagena",
+          "description": "SIN RESERVAR. Elegir habitación individual privada con baño propio y ruido mínimo. Confirmar horarios de check-in, políticas de cancelación, impuestos, desayuno y ubicación de recogida exacta. Si el viaje pasa a tres noches en Medellín, volver a cotizar y ajustar check-in/check-out de TODAS las ciudades antes de bloquear habitaciones.",
+          "links": [
+            {
+              "label": "Landmark Hotel",
+              "url": "https://landmarkmedellin.com/"
+            },
+            {
+              "label": "Casa de Isabella · Kali Hotels",
+              "url": "https://kalihotels.com/en/casa-isabella/"
+            },
+            {
+              "label": "Casa La Fe",
+              "url": "https://www.casalafe.com/"
+            }
+          ]
         }
       ]
     ],
@@ -894,7 +912,7 @@
       "order": 7
     }
   ],
-  "planningDetails": "Itinerario provisional: no hay vuelos, hoteles ni excursiones comprados. Revisar acceso a Tayrona, seguridad de senderos y estado del mar; cotizar precios finales antes de cualquier reserva.",
+  "planningDetails": "Itinerario provisional: no hay vuelos, hoteles ni excursiones comprados. Revisar acceso a Tayrona, seguridad de senderos y estado del mar; cotizar precios finales antes de cualquier reserva. Se está evaluando una variante de tres noches en Medellín, no aprobada: requiere sustituir el vuelo interno del 18 por uno del 17 de enero o cambiar el vuelo internacional de llegada. Hasta cotejar horarios y costos se conserva la versión de cuatro noches en Medellín; no confundir la alternativa con una reserva ni adelantar Tayrona o Cartagena.",
   "lodgingSummary": "12 noches y cuatro alojamientos candidatos: Manila en Medellín (4), Centro Histórico de Santa Marta (3), un ecolodge próximo a El Zaino (2), y San Diego en Cartagena (3). Todos sin reservar; buscar descanso, baño privado y cancelación flexible.",
   "heroLodgingSummary": "12 noches, 4 alojamientos",
   "budgetPreliminary": {
@@ -935,8 +953,13 @@
       "status": "Candidato · no reservado",
       "rate": "Objetivo para Santa Marta: $3,000–4,500 MXN por 3 noches; no es cotización.",
       "rateConditions": "1 adulto, habitación y baño privados, con aire acondicionado, poco ruido nocturno y cancelación flexible.",
-      "notes": "Solicitar habitación interior tranquila; consultar estado de ventilación y luz.",
-      "links": [],
+      "notes": "Solicitar habitación interior tranquila; consultar estado de ventilación y luz. Web oficial confirmada como marca Kali Hotels. Dos fuentes dan nomenclaturas de calle diferentes; verificar número exacto antes de coordinar recogida.",
+      "links": [
+        {
+          "label": "Casa de Isabella · web oficial Kali Hotels",
+          "url": "https://kalihotels.com/en/casa-isabella/"
+        }
+      ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20de%20Isabella%20Santa%20Marta"
     },
     {
