@@ -35,7 +35,7 @@
       3
     ]
   ],
-  "work": null,
+  "work": 9,
   "costs": [],
   "travelerCount": 1,
   "profile": {
@@ -43,8 +43,8 @@
     "paceWhy": "Alterna excursiones exigentes con jornadas libres; cuatro alojamientos en doce noches.",
     "solo": true,
     "soloWhy": "Habitaciones privadas con baño propio, zonas caminables y traslados fiables.",
-    "weather": null,
-    "weatherWhy": "Enero es generalmente más seco en el Caribe, pero el estado del mar y cierres de Tayrona deben comprobarse.",
+    "weather": "Cálido y estacional",
+    "weatherWhy": "En enero el Caribe está generalmente más seco, pero Santa Marta puede presentar viento y oleaje; Medellín es templada por altitud. Clima histórico, no pronóstico.",
     "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
   },
   "intro": "Comienzas en Medellín, entre las calles de Manila, el arte de Comuna 13 y los colores de Guatapé. Después vuelas a Santa Marta para explorar la naturaleza de Minca y asomarte a la bahía de Taganga. Dos noches en un ecolodge cercano a Tayrona permiten disfrutar la selva y caminar hacia Cabo San Juan sin prisas. La ruta continúa por carretera hasta Cartagena, con tiempo para perderse entre las calles de la Ciudad Amurallada, descubrir Getsemaní y descansar en una piscina colonial. Un recorrido que combina energía urbana, cultura antioqueña, café, Caribe y descanso.",
@@ -778,7 +778,7 @@
     }
   ],
   "planningDetails": "Itinerario provisional: no hay vuelos, hoteles ni excursiones comprados. Revisar acceso a Tayrona, seguridad de senderos y estado del mar; cotizar precios finales antes de cualquier reserva.",
-  "lodgingSummary": "12 noches repartidas en cuatro alojamientos: Medellín 4 (Manila, El Poblado), Santa Marta 3 (Centro Histórico, calle tranquila), Tayrona 2 (cerca de El Zaino) y Cartagena 3 (preferencia por San Diego). Hoteles aún sin reservar.",
+  "lodgingSummary": "12 noches y cuatro alojamientos candidatos: Manila en Medellín (4), Centro Histórico de Santa Marta (3), un ecolodge próximo a El Zaino (2), y San Diego en Cartagena (3). Todos sin reservar; buscar descanso, baño privado y cancelación flexible.",
   "heroLodgingSummary": "12 noches, 4 alojamientos",
   "budgetPreliminary": {
     "low": 42000,
@@ -861,24 +861,7 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20La%20Fe%20Cartagena%20Colombia"
     }
   ],
-  "stays": [
-    [
-      "Medellín · 14–18 enero · 4 noches",
-      "Landmark o 574 Hotel en Manila/El Poblado; sin reservas; objetivo conjunto $4,000–5,600 MXN."
-    ],
-    [
-      "Santa Marta · 18–21 enero · 3 noches",
-      "Casa de Isabella u hotel boutique en calle tranquila del Centro Histórico; sin reserva; objetivo $3,000–4,500 MXN."
-    ],
-    [
-      "Tayrona · 21–23 enero · 2 noches",
-      "Senda Koguiwa, Watapuy o Villa María; cerca del acceso El Zaino; sin reserva; objetivo $4,000–5,500 MXN."
-    ],
-    [
-      "Cartagena · 23–26 enero · 3 noches",
-      "Casa La Fe, Bantú o equivalente en San Diego; sin reserva; objetivo $4,500–6,000 MXN."
-    ]
-  ],
+  "stays": [],
   "seasonality": {
     "summary": "Bandas de máximas medias diurnas (no mínimas nocturnas) desde Medellín hasta Santa Marta, redondeadas por mes: las ciudades del Caribe tienen días más calurosos y Medellín noches más frescas. Datos de Medellín Olaya Herrera 1991–2020 (normales OMM, vía Climópolis) y de Santa Marta 1971–2000 (OMM/IDEAM); distintas ventanas históricas, comparación orientativa, no pronóstico. No representan la temperatura de cada ciudad: por ejemplo, las mínimas medias de Santa Marta rondan 22 a 25 °C. Enero se elige por baja lluvia en Santa Marta, aunque con viento y oleaje posibles. Verificar apertura del Tayrona y circunstancias sanitarias y de seguridad antes del viaje.",
     "months": {
