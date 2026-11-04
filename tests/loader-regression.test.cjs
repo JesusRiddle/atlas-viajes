@@ -446,6 +446,24 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 10);
     assert.equal(trip.hotels.length, 4);
     assert.equal(trip.majorTransport.length, 6);
+    const flight = trip.majorTransport.find(item => item.id === 'flight-international');
+    assert.ok(flight, 'Suiza debe conservar la ficha aérea');
+    for (const option of flight.options) {
+        assert.equal(option.journeys.length, 2);
+        assert.ok(option.journeys.every(journey => journey.segments.length === 2),
+            'Los vuelos con escala deben representar dos segmentos y no una conexión como vuelo directo');
+        assert.ok(option.journeys.every(journey =>
+            journey.segments[0].to === journey.segments[1].from),
+            'Los aeropuertos de conexión deben coincidir');
+        assert.ok(option.journeys.every(journey => journey.segments[0].arrival === null &&
+            journey.segments[1].departure === null),
+            'Horarios de conexiones desconocidos deben mantenerse null');
+    }
+    assert.ok(trip.railSummary.some(row => row[0].includes('Saver Day Pass')),
+        'La comparación debe incluir billete diario de ahorro');
+    assert.ok(trip.railSummary.some(row => row[1].includes('CHF 326')),
+        'La decisión de dos pases debe mostrar su impacto en fondo ferroviario');
+
     assert.equal(trip.experiences.length, 7);
     assert.ok(trip.hotels.every(h => h.mapsUrl && h.links?.[0]?.url), 'Cada alojamiento necesita Maps y enlace oficial');
     assert.equal(trip.hotels.find(h => h.id === 'zurich-fred').address, 'Konradstrasse 11, 8005 Zürich, Suiza');
