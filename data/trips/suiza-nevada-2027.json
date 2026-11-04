@@ -434,8 +434,8 @@
       "am": "1. Desayunar y dejar equipaje en el hotel o preparar check-out.\n2. Paseo corto por las calles cercanas a Zürich HB solo si el vuelo mantiene la salida cotizada 18:50.",
       "pm": "1. Salir hacia Zürich Flughafen con al menos 3 horas de antelación para documentación y seguridad, ajustadas a la aerolínea.\n2. Embarcar en vuelo de referencia ZRH → París-CDG → CDMX; salida del 2 febrero 18:50, sujeta a compra y cambios.",
       "night": "1. Tránsito nocturno; llegada de referencia a MEX el miércoles 3 febrero a las 04:20.\n2. No hay noche de hotel adicional en Suiza, pero conviene valorar si necesitarás también libre el miércoles 3 para descansar.",
-      "mobility": "• *Zúrich → aeropuerto:* Zürich HB → Zürich Flughafen por SBB (~10–15 min), billete urbano válido.\n• *Vuelo de regreso:* ZRH → CDG → MEX, dos tramos aéreos en conexión; verificar terminal, equipaje y protección.\n• *Margen antes de salir:* No comprar actividades rígidas después de mediodía.",
-      "note": "• *Permiso laboral:* Días laborales del itinerario (22 ene–2 feb): 8, sin descontar festivos o vacaciones propios. La llegada a CDMX el miércoles 3 muy temprano podría requerir un noveno día de permiso.\n• *Vuelo alternativo:* Opción Lufthansa más barata sale temprano el 2: no permitiría paseo matutino; no intercambiarla sin actualizar el día 12.",
+      "mobility": "• *Zúrich → aeropuerto:* Zürich HB → Zürich Flughafen por SBB (~10–15 min), billete urbano válido.\n• *Vuelo de regreso:* ZRH → CDG → MEX, dos tramos aéreos en conexión; verificar terminal, equipaje y protección.\n• *Margen antes de salir:* No comprar actividades rígidas después de mediodía.\n• *Billete al aeropuerto:* Zürich HB (110, doble) → Zürich Flughafen (121) equivale a tres zonas ZVV: sencillo CHF 7.40 (≈ $170 MXN) o CHF 3.70 (≈ $85 MXN) con Half Fare según tarifas 2027. Presupuestado dentro de los $10,000 MXN de movilidad, no se añade otra vez.",
+      "note": "• *Permiso laboral:* Días laborales del itinerario (22 ene–2 feb): 8, sin descontar festivos o vacaciones propios. La llegada a CDMX el miércoles 3 muy temprano podría requerir un noveno día de permiso.\n• *Vuelo alternativo:* Opción Lufthansa más barata sale temprano el 2: no permitiría paseo matutino; no intercambiarla sin actualizar el día 12.\n• *Zona y vigencia:* El billete al aeropuerto vale una hora y cubre una sola dirección; el trayecto completo de regreso incluye después el vuelo internacional, no un tren de vuelta.",
       "spend": null,
       "places": [],
       "headerPlaces": [
@@ -1009,9 +1009,9 @@
       "options": [
         {
           "id": "A",
-          "provider": "SBB",
+          "provider": "ZVV · SBB / S-Bahn",
           "status": "planning",
-          "notes": "Aprox. 10–15 min; comprar billete válido y salir con margen.",
+          "notes": "Tren Zürich HB (zona 110, cuenta doble) → Zürich Flughafen (zona 121): tarifa de tres zonas. Billete de una dirección solamente; 1 h de validez según tabla ZVV desde 13/12/2026. Consultar horarios y andén en SBB/ZVV antes de la salida internacional.",
           "journeys": [
             {
               "direction": "outbound",
@@ -1026,22 +1026,44 @@
           ],
           "fares": [
             {
-              "id": "pending",
-              "name": "Tarifa pendiente de cotizar",
-              "price": null,
-              "changes": "Por confirmar",
-              "refunds": "Por confirmar"
+              "id": "single-full",
+              "name": "Una dirección · tres zonas · adulto",
+              "price": {
+                "amount": 7.4,
+                "currency": "CHF"
+              },
+              "changes": "Billete sencillo de 1 hora; vigente desde 13/12/2026",
+              "refunds": "Según reglas de ZVV"
+            },
+            {
+              "id": "single-half",
+              "name": "Una dirección · tres zonas · Half Fare",
+              "price": {
+                "amount": 3.7,
+                "currency": "CHF"
+              },
+              "changes": "Billete sencillo 1 h; exige Half Fare vigente",
+              "refunds": "Según reglas de ZVV"
             }
           ],
-          "selectedFare": "pending"
+          "selectedFare": "single-full"
         }
       ],
       "links": [
         {
-          "label": "SBB oficial",
+          "label": "Tarifas oficiales ZVV 2027",
+          "url": "https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf"
+        },
+        {
+          "label": "ZVV · estaciones y zonas",
+          "url": "https://www.zvv.ch/en/timetable-and-information/zone-map/regional-network.html"
+        },
+        {
+          "label": "Consultar horario SBB",
           "url": "https://www.sbb.ch/en"
         }
-      ]
+      ],
+      "budgetIncludedIn": "rail-budget"
     },
     {
       "id": "lucerne-grindelwald",
@@ -1336,6 +1358,11 @@
       "title": "ZVV · Zúrich–Kilchberg 1 febrero 2027",
       "note": "Tarifario ZVV vigente desde el 13/12/2026: tres zonas (110 doble y 150). Sencillo por sentido CHF 7.40 / 3.70 Half Fare; dos sencillos ida y vuelta CHF 14.80 / 7.40 Half Fare, igual que abono de 24 horas para esas zonas. Todas las alternativas seleccionables en Movilidad cubren ida y regreso. En tren S8/S24 se caminan unos 10 minutos hasta Lindt.",
       "url": "https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf"
+    },
+    {
+      "title": "ZVV · aeropuerto el 2 febrero 2027",
+      "note": "Tren Zürich HB → Flughafen: 3 zonas (110 doble + 121), billete sencillo CHF 7.40 (≈ $170 MXN) / CHF 3.70 (≈ $85 MXN) con Half Fare. Confirmar zona y hora en planificador antes de usarlo; ZVV con tarifa oficial vigente desde diciembre 2026.",
+      "url": "https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf"
     }
   ],
   "attractionTerms": [],
@@ -1464,7 +1491,7 @@
     "marginMXN": 4000,
     "useBudgetRange": true,
     "referenceFlightMXN": 20331,
-    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales. Gornergrat tren oficial CHF 102 retorno (CHF 51 con Half Fare), invierno 2026/27. La oferta Luzern–Interlaken «desde CHF 34» no es cotización del tramo completo Luzern–Grindelwald. La tarifa exacta SBB sigue pendiente. Se compararán Saver Day Passes (mínimos promocionales CHF 52 sin Half Fare / CHF 29 con tarjeta) con tarifa flexible y Supersaver; esos mínimos NO son cotizaciones de nuestros días. ZVV para Lindt confirmado en tarifa 2027: 24h CHF 14.80 (≈ $340 MXN) o CHF 7.40 (≈ $170 MXN) con Half Fare, incluido en los $10,000 MXN de movilidad. Restan billetes SBB interurbanos por fecha y tarifa; la provisión es vulnerable."
+    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales. Gornergrat tren oficial CHF 102 retorno (CHF 51 con Half Fare), invierno 2026/27. La oferta Luzern–Interlaken «desde CHF 34» no es cotización del tramo completo Luzern–Grindelwald. La tarifa exacta SBB sigue pendiente. Se compararán Saver Day Passes (mínimos promocionales CHF 52 sin Half Fare / CHF 29 con tarjeta) con tarifa flexible y Supersaver; esos mínimos NO son cotizaciones de nuestros días. ZVV para Lindt confirmado en tarifa 2027: 24h CHF 14.80 (≈ $340 MXN) o CHF 7.40 (≈ $170 MXN) con Half Fare, incluido en los $10,000 MXN de movilidad. Restan billetes SBB interurbanos por fecha y tarifa; la provisión es vulnerable. El trayecto Zürich HB–Flughafen del 2 febrero también tiene tarifa ZVV 2027: CHF 7.40 (≈ $170 MXN) o CHF 3.70 (≈ $85 MXN) con Half Fare. Permanecen sin cotización exacta cuatro trenes nacionales."
   },
   "hotels": [
     {
@@ -1702,6 +1729,10 @@
     [
       "Lindt Home of Chocolate · acceso oficial en tren S8/S24",
       "https://www.lindt-home-of-chocolate.com/en/directions/"
+    ],
+    [
+      "ZVV · zona 121 del aeropuerto y 110 de Zürich HB",
+      "https://www.zvv.ch/en/timetable-and-information/zone-map/regional-network.html"
     ]
   ],
   "sourceNote": null,
@@ -1781,7 +1812,7 @@
     ],
     [
       "Trayectos SBB por cotizar en fechas exactas",
-      "23 ene Zürich Flughafen–Luzern; 24 ene Luzern–Interlaken Ost–Grindelwald; 28 ene Grindelwald–Zermatt; 31 ene Zermatt–Zürich HB; 1 feb Zürich–Kilchberg ida/vuelta; 2 feb Zürich HB–Flughafen. Persona adulta, segunda clase, tarifa normal y con Half Fare, además de Supersaver. La oferta desde CHF 34 Luzern–Interlaken publicada hasta 30/1/2027 no es tarifa de la ruta completa a Grindelwald ni garantiza cupo al precio mínimo. SBB permite comprar estos billetes con hasta 6 meses de anticipación, condicionado a publicación de horarios tras el cambio de diciembre; al 3 noviembre 2026 estamos dentro de esa ventana. No se ha obtenido el importe dinámico del carrito para estos días: no asumir indisponibilidad ni inventar cifra."
+      "Cuatro trayectos interurbanos aún pendientes de tarifa de carrito: 23 ene Zürich Flughafen–Luzern; 24 ene Luzern–Interlaken Ost–Grindelwald; 28 ene Grindelwald–Zermatt; 31 ene Zermatt–Zürich HB. ZVV 1 feb Zúrich–Kilchberg y 2 feb Zürich HB–Flughafen YA disponen de tarifas oficiales 2027, incluidas en la provisión. Comparar adulto 1, segunda clase, normal y Half Fare, billete Supersaver y Saver Day Pass cuando corresponda. Los precios mínimos promocionales no son cotizaciones del día específico."
     ],
     [
       "Saver Day Pass · tercera comparación antes de comprar",
@@ -1794,6 +1825,10 @@
     [
       "Zúrich–Kilchberg · tarifa oficial de ZVV para 2027",
       "Zonas 110+150 (110 cuenta doble): sencillo CHF 7.40 (≈ $170 MXN) o CHF 3.70 (≈ $85 MXN) con Half Fare. Ida/vuelta o abono de 24 horas CHF 14.80 (≈ $340 MXN) sin tarjeta y CHF 7.40 (≈ $170 MXN) con tarjeta; ahorro con Half Fare: CHF 7.40 (≈ $170 MXN). Tarifario oficial vigente desde 13/12/2026 y válido para nuestro 1/02/2027, sujeto a posterior modificación. Ya incluido en provisión terrestre de $10,000 MXN, no se cobra como actividad."
+    ],
+    [
+      "Zúrich → aeropuerto · billete oficial de ZVV 2027",
+      "Para regresar el 2 feb: Zürich HB zona 110 (cuenta doble) a Zürich Flughafen zona 121 son tres zonas; sencillo CHF 7.40 (≈ $170 MXN), o CHF 3.70 (≈ $85 MXN) con Half Fare. Billete con validez de 1 h, una dirección; no confundir con el pase de 24 h a Kilchberg del día anterior, salvo que estuviera todavía vigente por horario (no se supone). Incluido en el fondo de movilidad, sin doble suma."
     ]
   ],
   "railTotal": "Por cotizar: provisión global de $10,000 MXN, sin desglose ferroviario definitivo",
