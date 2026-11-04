@@ -1648,51 +1648,51 @@
     "months": {
       "10": {
         "status": "avoid",
-        "description": "Máximas diurnas orientativas: 7–15 °C (Grindelwald–Lucerna). Otoño, colores en los valles y primeras nevadas ocasionales en altura; nieve en pueblos no fiable. Parte de los remontes y rutas empiezan a cerrar por transición estacional."
+        "description": "Máximas diurnas orientativas: 7 a 15 °C (Grindelwald–Lucerna). Otoño, colores en los valles y primeras nevadas ocasionales en altura; nieve en pueblos no fiable. Parte de los remontes y rutas empiezan a cerrar por transición estacional."
       },
       "11": {
         "status": "avoid",
-        "description": "Máximas diurnas orientativas: 2–9 °C (Grindelwald–Lucerna). Mes de transición y mantenimiento de algunas instalaciones. Poca luz; la temporada de nieve empieza de forma escalonada y no garantiza pueblos nevados ni cobertura completa de remontes."
+        "description": "Máximas diurnas orientativas: 2 a 9 °C (Grindelwald–Lucerna). Mes de transición y mantenimiento de algunas instalaciones. Poca luz; la temporada de nieve empieza de forma escalonada y no garantiza pueblos nevados ni cobertura completa de remontes."
       },
       "12": {
         "status": "conditional",
-        "description": "Máximas diurnas orientativas: −2–5 °C (Grindelwald–Lucerna). Invierno en formación: desde mediados/finales de mes suele mejorar la operación de remontes, pero la nieve en cada pueblo varía. Navidad y Año Nuevo elevan mucho la demanda y los precios; preferir fechas posteriores al arranque de temporada."
+        "description": "Máximas diurnas orientativas: −2 a 5 °C (Grindelwald–Lucerna). Invierno en formación: desde mediados/finales de mes suele mejorar la operación de remontes, pero la nieve en cada pueblo varía. Navidad y Año Nuevo elevan mucho la demanda y los precios; preferir fechas posteriores al arranque de temporada."
       },
       "01": {
         "status": "recommended",
-        "description": "Máximas diurnas orientativas: −3–5 °C (Grindelwald–Lucerna). Invierno consolidado: buena oportunidad de pueblos alpinos nevados, trenes y miradores operativos. Días cortos, frío fuerte y posibles cierres por viento o nevadas; nieve urbana no garantizada. Ventana preferida: segunda mitad del mes."
+        "description": "Máximas diurnas orientativas: −3 a 5 °C (Grindelwald–Lucerna). Invierno consolidado: buena oportunidad de pueblos alpinos nevados, trenes y miradores operativos. Días cortos, frío fuerte y posibles cierres por viento o nevadas; nieve urbana no garantizada. Ventana preferida: segunda mitad del mes."
       },
       "02": {
         "status": "recommended",
-        "description": "Máximas diurnas orientativas: −3–6 °C (Grindelwald–Lucerna). Condiciones de pleno invierno en Grindelwald y Zermatt y buena cobertura de servicios de montaña; más luz que en enero. Vacaciones de esquí en distintas regiones aumentan ocupación y tarifas, especialmente a mitad y final de mes."
+        "description": "Máximas diurnas orientativas: −3 a 6 °C (Grindelwald–Lucerna). Condiciones de pleno invierno en Grindelwald y Zermatt y buena cobertura de servicios de montaña; más luz que en enero. Vacaciones de esquí en distintas regiones aumentan ocupación y tarifas, especialmente a mitad y final de mes."
       },
       "03": {
         "status": "conditional",
-        "description": "Máximas diurnas orientativas: 0–10 °C (Grindelwald–Lucerna). Invierno todavía habitual en altura y más horas de luz, pero la nieve de los pueblos bajos puede retirarse. Algunos servicios invernales terminan hacia finales de marzo; priorizar primera mitad y verificar aperturas."
+        "description": "Máximas diurnas orientativas: 0 a 10 °C (Grindelwald–Lucerna). Invierno todavía habitual en altura y más horas de luz, pero la nieve de los pueblos bajos puede retirarse. Algunos servicios invernales terminan hacia finales de marzo; priorizar primera mitad y verificar aperturas."
       },
       "04": {
         "status": "conditional",
-        "description": "Máximas diurnas orientativas: 4–14 °C (Grindelwald–Lucerna). Nieve todavía posible en cumbres y zonas alpinas altas, pero deshielo visible en valles y cierre progresivo de remontes invernales. Solo apropiado si se acepta una experiencia mixta, no pueblos uniformemente nevados."
+        "description": "Máximas diurnas orientativas: 4 a 14 °C (Grindelwald–Lucerna). Nieve todavía posible en cumbres y zonas alpinas altas, pero deshielo visible en valles y cierre progresivo de remontes invernales. Solo apropiado si se acepta una experiencia mixta, no pueblos uniformemente nevados."
       },
       "05": {
         "status": "avoid",
-        "description": "Máximas diurnas orientativas: 7–18 °C (Grindelwald–Lucerna). Primavera en valles, praderas emergentes y cascadas; nieve residual en altura. Transición entre temporadas y parte de los senderos/remontes altos con restricciones. Mejor candidato para otro tipo de viaje."
+        "description": "Máximas diurnas orientativas: 7 a 18 °C (Grindelwald–Lucerna). Primavera en valles, praderas emergentes y cascadas; nieve residual en altura. Transición entre temporadas y parte de los senderos/remontes altos con restricciones. Mejor candidato para otro tipo de viaje."
       },
       "06": {
         "status": "avoid",
-        "description": "Máximas diurnas orientativas: 13–21 °C (Grindelwald–Lucerna). Paisajes principalmente verdes, cascadas y días largos; todavía puede haber nieve en senderos altos y lluvias frecuentes. Muy atractivo para «Suiza verde», pero no cumple la expectativa de pueblos nevados."
+        "description": "Máximas diurnas orientativas: 13 a 21 °C (Grindelwald–Lucerna). Paisajes principalmente verdes, cascadas y días largos; todavía puede haber nieve en senderos altos y lluvias frecuentes. Muy atractivo para «Suiza verde», pero no cumple la expectativa de pueblos nevados."
       },
       "07": {
         "status": "avoid",
-        "description": "Máximas diurnas orientativas: 16–23 °C (Grindelwald–Lucerna). Verano alpino, senderos generalmente más accesibles y jornadas largas. Alta ocupación, tormentas estivales posibles y prácticamente sin nieve en pueblos; no recomendable para esta versión."
+        "description": "Máximas diurnas orientativas: 16 a 23 °C (Grindelwald–Lucerna). Verano alpino, senderos generalmente más accesibles y jornadas largas. Alta ocupación, tormentas estivales posibles y prácticamente sin nieve en pueblos; no recomendable para esta versión."
       },
       "08": {
         "status": "avoid",
-        "description": "Máximas diurnas orientativas: 16–23 °C (Grindelwald–Lucerna). Verano y temporada turística intensa, con montañas verdes, más demanda y riesgo de tormentas. La nieve queda principalmente en cotas elevadas; no corresponde al recorrido nevado."
+        "description": "Máximas diurnas orientativas: 16 a 23 °C (Grindelwald–Lucerna). Verano y temporada turística intensa, con montañas verdes, más demanda y riesgo de tormentas. La nieve queda principalmente en cotas elevadas; no corresponde al recorrido nevado."
       },
       "09": {
         "status": "avoid",
-        "description": "Máximas diurnas orientativas: 12–19 °C (Grindelwald–Lucerna). Paisajes todavía verdes con inicio del otoño, temperatura más fresca y posible mejor equilibrio entre afluencia y senderismo. Muy buena candidata para «Suiza verde», no para pueblos cubiertos de nieve."
+        "description": "Máximas diurnas orientativas: 12 a 19 °C (Grindelwald–Lucerna). Paisajes todavía verdes con inicio del otoño, temperatura más fresca y posible mejor equilibrio entre afluencia y senderismo. Muy buena candidata para «Suiza verde», no para pueblos cubiertos de nieve."
       }
     }
   },
