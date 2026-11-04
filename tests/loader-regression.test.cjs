@@ -345,9 +345,13 @@ test('Suiza nevada se publica primero y España + Portugal conserva su contenido
     const catalog = loadCatalog();
     assert.equal(catalog[0].id, 'suiza-nevada-2027');
     assert.equal(catalog[0].available, true);
-    assert.equal(catalog[1].id, 'espana-portugal-2027');
-    assert.equal(catalog[2].id, 'italia-norte-2027');
-    assert.equal(catalog[3].id, 'japon-2027');
+    assert.deepEqual(catalog.slice(0, 5).map(item => item.id), [
+        'suiza-nevada-2027',
+        'italia-norte-2027',
+        'espana-portugal-2027',
+        'japon-2027',
+        'patagonia-argentina-2027'
+    ], 'El orden de portada sigue las fechas de viaje 2027');
     const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-2027.json', 'utf8'));
     assert.equal(migrated.id, 'espana-portugal-2027');
     assert.equal(migrated.days.length, 20);
@@ -358,7 +362,7 @@ test('Suiza nevada se publica primero y España + Portugal conserva su contenido
     assert.equal(migrated.budgetRange[0], 76000);
     assert.equal(migrated.budgetRange[1], 125000);
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
-    const window = { ATLAS_MODULES: [catalog[1]] };
+    const window = { ATLAS_MODULES: [catalog[2]] };
     const sources = {
         'data/places.json': JSON.parse(fs.readFileSync('data/places.json', 'utf8')),
         'data/trips/_template.json': template,
