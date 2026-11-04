@@ -67,11 +67,15 @@
   "experiences": [
     {
       "city": "Medellín",
-      "description": "Comuna 13 con guía local, Plaza Botero, Museo de Antioquia, Metrocable y noches gastronómicas en Provenza. Prueba bandeja paisa, arepas antioqueñas y mazamorra."
+      "description": "Prioridades confirmadas: tour guiado de Comuna 13, Plaza Botero, Parque de Bolívar (Plaza Bolívar), paseo por El Poblado y cena en Provenza; Pueblito Paisa en el Cerro Nutibara. Disfruta bandeja paisa, arepas y mazamorra. Museo de Antioquia, Metrocable, Parque Arví y Jardín Botánico son secundarios y no desplazan las experiencias elegidas."
+    },
+    {
+      "city": "Café de Antioquia · Medellín",
+      "description": "Tour cafetero con visita a finca en San Sebastián de Palmitas o alrededores de Medellín: cultivo, proceso del café y degustación. Priorizar excursión de medio día real, con traslado y regreso oportuno para conocer Pueblito Paisa. Operador, fecha y precio por confirmar."
     },
     {
       "city": "Guatapé",
-      "description": "Piedra del Peñol y callejuelas decoradas con zócalos; paseo en lancha opcional. Jornada larga de carretera desde Medellín."
+      "description": "Tour organizado de día completo a Guatapé, calles de zócalos y subida a Piedra del Peñol si las condiciones físicas y meteorológicas lo permiten; paseo en lancha opcional. No sustituir por visita sin guía si se quiere tour."
     },
     {
       "city": "Santa Marta",
@@ -126,13 +130,13 @@
     {
       "n": 2,
       "date": "2027-01-15",
-      "title": "Comuna 13, arte urbano y Provenza",
+      "title": "Comuna 13, Plaza Botero, Plaza Bolívar y Provenza",
       "base": "Medellín",
-      "am": "Después del desayuno, vas con un guía local a Comuna 13. Recorres murales, escaleras eléctricas y espacios culturales mientras conoces la historia de transformación del barrio, sin reducir la visita a un paseo fotográfico.",
-      "pm": "Almuerzas una especialidad antioqueña y te diriges a Plaza Botero. Si el horario y la energía lo permiten, entras al Museo de Antioquia; de lo contrario, disfrutas la plaza sin convertir la tarde en una carrera.",
-      "night": "Regresas a descansar a Manila y, más tarde, vas a Provenza para cenar. Utilizas transporte solicitado por aplicación o con el hotel para el regreso nocturno.",
-      "mobility": "• *Cómo trasladarte:* Vehículo solicitado por aplicación o transporte formal para trayectos largos; visitar Comuna 13 acompañado por guía local.",
-      "note": "• *Tips del día:* No exhibir celular o joyas en lugares concurridos; valorar por separado Museo de Antioquia si el horario se comprime.",
+      "am": "Después del desayuno, sales hacia Comuna 13 para realizar un tour guiado por murales, escaleras eléctricas y proyectos culturales. Calcula unas tres horas para comprender su historia sin reducirla a un paseo fotográfico; sales temprano para aprovechar la tarde.",
+      "pm": "Tras almorzar, recorres el centro de Medellín con horario diurno: Plaza Botero y sus esculturas monumentales, después el cercano Parque de Bolívar (también llamado Plaza Bolívar), junto a la Catedral Metropolitana. No añadas una visita interior larga al Museo de Antioquia si compromete estas paradas.",
+      "night": "Regresas a El Poblado, paseas por su zona comercial y continúas a Provenza para cenar y disfrutar el ambiente. Manila es el sector donde dormirías; para el regreso nocturno utiliza transporte confiable y evita calles desiertas.",
+      "mobility": "• *Cómo trasladarte:* Comuna 13 con guía local; traslado en vehículo de aplicación o taxi fiable hacia Plaza Botero y Parque de Bolívar. Regresa a El Poblado/Provenza por la tarde y evita caminar solo por el centro al anochecer.",
+      "note": "• *Tips del día:* Plaza Botero y Parque de Bolívar son paradas breves en un centro urbano que exige atención a pertenencias; no exhibir celular ni joyas. Reservar Museo de Antioquia solo si hay tiempo adicional: no está entre las prioridades declaradas.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -158,18 +162,28 @@
     {
       "n": 4,
       "date": "2027-01-17",
-      "title": "Metrocable y Medellín a ritmo tranquilo",
+      "title": "Tour del café antioqueño y Pueblito Paisa",
       "base": "Medellín",
-      "am": "Desayunas sin prisas y te trasladas hacia el metro. Tomas una conexión de Metrocable para mirar Medellín desde las alturas, respetando las indicaciones de uso y las rutas abiertas ese día.",
-      "pm": "Si hace buen tiempo y quieres más naturaleza, prolongas el recorrido hacia Parque Arví con la línea L, sujeto a su operación. Si prefieres algo más tranquilo, eliges el Jardín Botánico o un café: no intentamos hacer las tres visitas.",
-      "night": "Aprovechas la última noche en Medellín para cenar en El Poblado, ordenar el equipaje y descansar antes del vuelo a Santa Marta del día siguiente.",
-      "mobility": "• *Cómo trasladarte:* Usar sistema metro y sus integraciones oficiales; verificar operación de líneas y teleféricos.",
-      "note": "• *Tips del día:* Día flexible posterior a Guatapé, sin sobrecargar con Arví y Jardín Botánico a la vez.",
+      "am": "Desayunas temprano y sales a un tour del café con una finca en San Sebastián de Palmitas o una alternativa próxima a Medellín. La visita deberá cubrir cultivo, proceso del grano y degustación, idealmente con recogida y regreso al hotel; escoger una experiencia de medio día, no el tour compartido de ocho horas.",
+      "pm": "Si el operador te devuelve a Medellín a media tarde, te trasladas al Cerro Nutibara para recorrer el Pueblito Paisa, contemplar la ciudad desde el mirador y conocer la arquitectura tradicional representada allí. Si el tour termina tarde o el tráfico se complica, tendrás que ajustar esta visita; no prometer ambos recorridos con un tour de ocho horas.",
+      "night": "Vuelves a El Poblado para una cena tranquila y una última caminata corta por sus calles concurridas. Preparas el equipaje y descansas: el vuelo candidato a Santa Marta sale mañana al mediodía.",
+      "mobility": "• *Cómo trasladarte:* Tour cafetero con ida y regreso incluidos a finca cercana; confirmar hora exacta de retorno. Después, traslado formal al Pueblito Paisa/Cerro Nutibara y regreso seguro a El Poblado.",
+      "note": "• *Tips del día:* Elegir tour del café de 4–5 horas de actividad o con regreso a Medellín máximo a media tarde. Algunos tours anunciados como 'medio día' duran 6–8 horas puerta a puerta y NO permiten combinar Pueblito Paisa. El Metrocable pasa a opcional; Parque Arví y Jardín Botánico se retiran del programa fijo.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "med-landmark"
+      "hotel": "med-landmark",
+      "mobilityLinks": [
+        {
+          "label": "Tour del café · opción de ~4 horas, consultar operador",
+          "url": "https://colombiaentusojostours.com/tours-grupales/tour-del-cafe-medellin/"
+        },
+        {
+          "label": "Otra opción café con traslado, duración 5 h",
+          "url": "https://localtoursmedellin.com/tours/tour-del-cafe-en-medellin/"
+        }
+      ]
     },
     {
       "n": 5,
@@ -198,10 +212,10 @@
     {
       "n": 6,
       "date": "2027-01-19",
-      "title": "Minca, café y naturaleza tropical",
+      "title": "Minca: montañas, naturaleza y cascadas",
       "base": "Santa Marta",
-      "am": "Después del desayuno, un operador fiable pasa por ti para llevarte a Minca. Te adentras en las montañas de la Sierra Nevada y visitas una finca cafetera, idealmente La Victoria, según disponibilidad y estado de la carretera.",
-      "pm": "Almuerzas en Minca y, si los accesos lo permiten, continúas a las cascadas de Marinka. Te quedas el tiempo suficiente para caminar y descansar; no es necesario completar todos los miradores.",
+      "am": "Desayunas y sales con operador confiable hacia Minca. Recorres el entorno montañoso de la Sierra Nevada y disfrutas la vegetación y los paisajes. Como ya habrás realizado un tour del café desde Medellín, aquí no es necesario repetir una visita cafetera completa.",
+      "pm": "Después de comer en Minca, te diriges a las cascadas de Marinka si el estado de los caminos lo permite. Descansas junto al agua, haces una caminata breve y regresas a Santa Marta con margen antes de anochecer. Una finca cafetera queda como alternativa si no se concreta el tour de Medellín.",
       "night": "Regresas a Santa Marta antes del anochecer. Cenas cerca del hotel y preparas ropa y sandalias para la salida corta al mar del día siguiente.",
       "mobility": "• *Cómo trasladarte:* Tour o traslado privado adecuado a caminos rurales; verificar recogida y accesibilidad.",
       "note": "• *Tips del día:* Evitar improvisar trayectos rurales largos en motocicleta y no entrar en cascadas si hay corrientes fuertes.",
@@ -409,9 +423,18 @@
           ]
         },
         {
-          "title": "Excursión guiada Comuna 13 y Guatapé",
-          "description": "SIN RESERVAR. Elegir guías y transportistas identificables, verificar inclusiones, horarios y políticas de cambios. Guatapé es sábado; salir temprano para limitar aglomeraciones.",
-          "links": []
+          "title": "Tours prioritarios: Guatapé, Comuna 13 y café desde Medellín",
+          "description": "SIN RESERVAR. Guatapé sábado 16 en tour de día completo; Comuna 13 con guía el viernes 15; tour cafetero domingo 17 con horario de regreso compatible con Pueblito Paisa. Los tours cafeteros suelen durar de cuatro a ocho horas, según operador; no combinar Pueblito con uno de ocho horas.",
+          "links": [
+            {
+              "label": "Tour de café de medio día · operador candidato",
+              "url": "https://colombiaentusojostours.com/tours-grupales/tour-del-cafe-medellin/"
+            },
+            {
+              "label": "Tour de café alternativo · operador candidato",
+              "url": "https://localtoursmedellin.com/tours/tour-del-cafe-en-medellin/"
+            }
+          ]
         },
         {
           "title": "Hoteles urbanos de Medellín, Santa Marta y Cartagena",
@@ -437,8 +460,8 @@
       "Opcionales",
       [
         {
-          "title": "Minca · finca cafetera y cascadas",
-          "description": "Confirmar acceso vial, operador y estado de senderos; no depende de reserva hasta seleccionar el servicio.",
+          "title": "Minca · senderos y cascadas (café alternativo)",
+          "description": "Prioridad para naturaleza y cascadas de Marinka. La finca cafetera de Minca queda opcional para evitar repetir el tour del café de Medellín; recuperarla si el de Medellín no se concreta. Confirmar accesos y operador.",
           "links": []
         },
         {
@@ -573,11 +596,11 @@
       "category": "activities",
       "concept": "Guías, entradas y excursiones de los 13 días",
       "cost": {
-        "amount": 4500,
+        "amount": 5500,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Bolsa de planeación para Comuna 13, Guatapé, finca cafetera, Tayrona y actividades; puede variar según operadores. No incluye excursiones opcionales de lujo."
+      "notes": "Provisión revisada para Guatapé en tour, Comuna 13 guiada, tour del café antioqueño, Tayrona y experiencias de Minca. El tour cafetero concreto puede costar aproximadamente COP 245,000 por persona (~$1,418 MXN al tipo de cambio de referencia 03/11/2026), no se ha cotizado ni reservado para enero 2027. Verificar que la bolsa alcance al contratar operadores."
     },
     {
       "id": "other-budget",
@@ -922,12 +945,12 @@
       "order": 7
     }
   ],
-  "planningDetails": "Itinerario provisional: no hay vuelos, hoteles ni excursiones comprados. Revisar acceso a Tayrona, seguridad de senderos y estado del mar; cotizar precios finales antes de cualquier reserva. Se está evaluando una variante de tres noches en Medellín, no aprobada: requiere sustituir el vuelo interno del 18 por uno del 17 de enero o cambiar el vuelo internacional de llegada. Hasta cotejar horarios y costos se conserva la versión de cuatro noches en Medellín; no confundir la alternativa con una reserva ni adelantar Tayrona o Cartagena.",
+  "planningDetails": "Itinerario provisional: no hay vuelos, hoteles ni excursiones comprados. Revisar acceso a Tayrona, seguridad de senderos y estado del mar; cotizar precios finales antes de cualquier reserva. Se está evaluando una variante de tres noches en Medellín, no aprobada: requiere sustituir el vuelo interno del 18 por uno del 17 de enero o cambiar el vuelo internacional de llegada. Hasta cotejar horarios y costos se conserva la versión de cuatro noches en Medellín; no confundir la alternativa con una reserva ni adelantar Tayrona o Cartagena. Prioridades explícitas de Medellín: Guatapé en tour, tour del café antioqueño, El Poblado, Plaza Botero, Parque/Plaza Bolívar, Provenza y Pueblito Paisa; Comuna 13 también se mantiene. Para cumplirlas, se necesita conservar por ahora la noche del 17 de enero. Metrocable, Arví, Jardín Botánico y entrada interior al Museo de Antioquia no son compromisos fijos.",
   "lodgingSummary": "12 noches y cuatro alojamientos candidatos: Manila en Medellín (4), Centro Histórico de Santa Marta (3), un ecolodge próximo a El Zaino (2), y San Diego en Cartagena (3). Todos sin reservar; buscar descanso, baño privado y cancelación flexible.",
   "heroLodgingSummary": "12 noches, 4 alojamientos",
   "budgetPreliminary": {
     "low": 42000,
-    "high": 63000,
+    "high": 65000,
     "marginMXN": 0,
     "useBudgetRange": true,
     "referenceFlightMXN": 10303,
@@ -1139,9 +1162,9 @@
   "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
   "budgetRange": [
     42000,
-    63000
+    65000
   ],
-  "budgetNote": "Proyección global para una persona, no cotización ni compra. Escenario central $49,662 MXN: Copa $10,303 y Avianca Classic COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026), cuatro alojamientos objetivo $18,600, movilidad terrestre estimada $5,000, alimentación $6,500, actividades $4,500 y seguro/contingencias $3,500. Intervalo de sensibilidad $42,000–63,000 MXN; actualizar cuando existan tarifas reales y equipaje confirmado. majorTransport es informativo: ambos vuelos están incluidos en expenses y NO se suman dos veces.",
+  "budgetNote": "Proyección global provisional para 1 persona, no cotización ni compra. Escenario central $50,662 MXN: Copa $10,303, Avianca Classic COP 217,580 (≈ $1,259 MXN al cambio de referencia 03/11/2026), cuatro alojamientos objetivo $18,600, movilidad terrestre $5,000, comidas $6,500, actividades $5,500 (incluye tour de café desde Medellín), seguro y contingencias $3,500. Intervalo de sensibilidad $42,000–65,000 MXN. Verificar operadores, equipaje y hoteles antes de reservar. majorTransport es informativo y ya está cubierto en expenses, sin duplicación.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
