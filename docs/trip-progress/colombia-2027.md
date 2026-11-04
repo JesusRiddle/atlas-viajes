@@ -22,7 +22,7 @@
 - [x] **08 Dónde dormirás:** cuatro hoteles candidatos con fechas y mapas, sin duplicación de `stays`; fuentes oficiales identificadas de Landmark, Senda Koguiwa y Casa La Fe. No se confirmó sitio propio de Casa de Isabella; se conserva Maps sin inventar enlace oficial. Tarifas y políticas por cotizar.
 - [x] **09 Día por día:** 13 jornadas reescritas en formato platicadito, en segunda persona, con mañana/tarde/noche, hotel asociado a las 12 noches, traslados, alertas antirrobo y sanitarias y enlaces principales. Los gastos diarios siguen nulos para evitar inventar cotizaciones o duplicar partidas; fotografías pendientes en etapa 12.
 - [x] **10 Panorama:** intro/introShort, tres indicadores exactos y clima independiente de tres párrafos, con fuentes históricas oficiales, formato térmico `X a Y °C`, referencia cambiaria fechada y geometría DOM comprobada en CI.
-- [x] **11 Presupuesto:** total orientativo central **$49,662 MXN**, rango **$42,000–63,000 MXN** para 1 persona. Referencia COP/MXN 03/11/2026 documentada (0.00578764); las 10 partidas suman $49,662 sin duplicar vuelos y Marsol está cubierto por provisión global. El mismo escenario se usa en Inicio y Panorama. No es cotización ni reserva.
+- [x] **11 Presupuesto:** total orientativo central **$50,662 MXN**, rango **$42,000–65,000 MXN** para 1 persona. Referencia COP/MXN 03/11/2026 documentada (0.00578764); las 10 partidas suman $49,662 sin duplicar vuelos y Marsol está cubierto por provisión global. El mismo escenario se usa en Inicio y Panorama. No es cotización ni reserva.
 - [ ] **12 Fotos/portada:** portada de Cartagena desde Wikimedia con autor y licencia registrada; faltan fotos para galerías y días clave, respetando enlaces externos.
 - [ ] **13 Auditoría D y PR:** PR de trabajo sin merge; completar prueba automática y Desktop/Mobile antes de aprobación.
 
@@ -74,7 +74,7 @@ Se comprobó la estructura y se creó el viaje primero en `modules.js`. GitHub A
 
 **Variante de menor alteración de logística:** mantener Avianca el lunes 18 y llegar a Medellín el viernes 15 en vez del jueves 14. Resultarían 12 días y 11 noches (3 Medellín + 3 Santa Marta + 2 Tayrona + 3 Cartagena), se debe **recotizar el vuelo internacional completo**, y se mantiene el mismo límite de dos días completos para Medellín. No asumir que el precio anterior de Copa aplica a la nueva fecha.
 
-**Efecto económico:** sustituir una noche de Medellín por una de Cartagena **no garantiza ahorro**: el objetivo presupuestario actual es Medellín $4,800/4 noches y Cartagena $5,200/3; Cartagena tiene una provisión nocturna mayor. Se necesita tarifa real de vuelo del domingo y la diferencia de hoteles antes de comprometer el presupuesto de $49,662 MXN.
+**Efecto económico:** sustituir una noche de Medellín por una de Cartagena **no garantiza ahorro**: el objetivo presupuestario actual es Medellín $4,800/4 noches y Cartagena $5,200/3; Cartagena tiene una provisión nocturna mayor. Se necesita tarifa real de vuelo del domingo y la diferencia de hoteles antes de comprometer el presupuesto de $50,662 MXN.
 
 **Regla de implementación:** conservar la versión vigente como única verdad para usuario hasta seleccionar variante. Una vez elegida, actualizar atómicamente `bases`, `hotels[].checkIn/checkOut`, `days`, `majorTransport`, `expenses`, `reservations`, `budgetNote`, `intro`, `lodgingSummary`, `planningDetails`, bitácora y pruebas, sin dejar referencias desfasadas. No hacer merge antes.
 
@@ -104,3 +104,12 @@ Se comprobó la estructura y se creó el viaje primero en `modules.js`. GitHub A
 - **Pruebas:** ejecución CI previa de cambios estructurales aprobada; nueva ejecución tras reescritura narrativa y aserciones está por confirmar en GitHub Actions. No confundir ese estado con una auditoría D de fotos finalizada.
 
 **Veredicto:** auditoría A–C suficientemente completa para avanzar a la etapa 12 en la ruta provisional actual. Mantener sin merge y dejar variante Medellín 3 noches pendiente de comparación real de horarios/costos; no comprometer fotografías asociadas a fechas inamovibles hasta seleccionar vuelos.
+
+
+## Prioridades Medellín · revisión
+
+Conservar cuatro noches mientras no exista un vuelo diurno alternativo. Imprescindibles: Guatapé en tour (16 enero), tour del café antioqueño de medio día (17 enero), El Poblado, Plaza Botero, Parque de Bolívar o Plaza Bolívar, Provenza y Pueblito Paisa. Comuna 13 con guía también permanece (15 enero).
+
+Metrocable pasa a opcional; Parque Arví, Jardín Botánico y visita interior del Museo de Antioquia se retiran del programa principal. Minca continúa con naturaleza y cascadas, dejando allí el café como alternativa para no duplicar experiencias. El tour del café debe regresar a Medellín a media tarde para permitir Pueblito Paisa; tours compartidos de ocho horas no cumplen el requisito.
+
+Se eleva la bolsa provisional de experiencias a $5,500 MXN; escenario central $50,662 MXN y rango orientativo $42,000–65,000 MXN. Nada reservado ni cotizado en fechas exactas. La opción de tres noches en Medellín queda supeditada a recortar actividades o encontrar otro vuelo; no se implementa.
