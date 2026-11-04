@@ -835,11 +835,19 @@
               "segments": [
                 {
                   "from": "MEX",
-                  "to": "ZRH",
+                  "to": "MAD",
                   "departure": "2027-01-22T11:25:00-06:00",
+                  "arrival": null,
+                  "operator": "Aeroméxico",
+                  "notes": "Hora de aterrizaje en escala pendiente de verificar."
+                },
+                {
+                  "from": "MAD",
+                  "to": "ZRH",
+                  "departure": null,
                   "arrival": "2027-01-23T10:00:00+01:00",
-                  "operator": "Aeroméxico / Air Europa",
-                  "notes": "Escala MAD 2 h 40 min; validar protección."
+                  "operator": "Air Europa",
+                  "notes": "Hora de salida de la conexión pendiente de verificar."
                 }
               ]
             },
@@ -848,11 +856,19 @@
               "segments": [
                 {
                   "from": "ZRH",
-                  "to": "MEX",
+                  "to": "CDG",
                   "departure": "2027-02-02T18:50:00+01:00",
+                  "arrival": null,
+                  "operator": "Air France",
+                  "notes": "Hora de aterrizaje en escala pendiente de verificar."
+                },
+                {
+                  "from": "CDG",
+                  "to": "MEX",
+                  "departure": null,
                   "arrival": "2027-02-03T04:20:00-06:00",
-                  "operator": "Air France / Aeroméxico",
-                  "notes": "Escala CDG 2 h 45 min; validar protección."
+                  "operator": "Aeroméxico",
+                  "notes": "Hora de salida de la conexión pendiente de verificar."
                 }
               ]
             }
@@ -868,7 +884,7 @@
             }
           ],
           "quotedAt": "2026-11-03",
-          "notes": "Ida y vuelta completo; equipaje, tarifa final y billetes protegidos pendientes."
+          "notes": "Ida y vuelta completo; equipaje, tarifa final y billetes protegidos pendientes. Las tarjetas muestran dos vuelos por sentido; sin horas intermedias verificadas ni números de vuelo, no se rellenan esos datos. Confirmar si es una misma reserva protegida."
         },
         {
           "id": "B",
@@ -881,11 +897,19 @@
               "segments": [
                 {
                   "from": "MEX",
-                  "to": "ZRH",
+                  "to": "FRA",
                   "departure": "2027-01-22T21:00:00-06:00",
+                  "arrival": null,
+                  "operator": "Lufthansa",
+                  "notes": "Hora de aterrizaje en escala pendiente de verificar."
+                },
+                {
+                  "from": "FRA",
+                  "to": "ZRH",
+                  "departure": null,
                   "arrival": "2027-01-23T19:00:00+01:00",
                   "operator": "Lufthansa",
-                  "notes": "Escala FRA 3 h 20 min."
+                  "notes": "Hora de salida de la conexión pendiente de verificar."
                 }
               ]
             },
@@ -894,11 +918,19 @@
               "segments": [
                 {
                   "from": "ZRH",
-                  "to": "MEX",
+                  "to": "MUC",
                   "departure": "2027-02-02T09:25:00+01:00",
+                  "arrival": null,
+                  "operator": "Lufthansa",
+                  "notes": "Hora de aterrizaje en escala pendiente de verificar."
+                },
+                {
+                  "from": "MUC",
+                  "to": "MEX",
+                  "departure": null,
                   "arrival": "2027-02-02T18:20:00-06:00",
                   "operator": "Lufthansa",
-                  "notes": "Escala MUC 2 h 15 min."
+                  "notes": "Hora de salida de la conexión pendiente de verificar."
                 }
               ]
             }
@@ -914,7 +946,7 @@
             }
           ],
           "quotedAt": "2026-11-03",
-          "notes": "Alternativa más barata; menos tiempo aprovechable el día de llegada y regreso."
+          "notes": "Alternativa más barata; menos tiempo aprovechable el día de llegada y regreso. Las tarjetas muestran dos vuelos por sentido; sin horas intermedias verificadas ni números de vuelo, no se rellenan esos datos. Confirmar si es una misma reserva protegida."
         }
       ],
       "links": [
@@ -1195,6 +1227,11 @@
       "title": "Gornergrat · tren de cremallera 2026/27",
       "note": "Billete convencional Zermatt–Gornergrat ida/vuelta CHF 102 (≈ $2,342 MXN), o CHF 51 (≈ $1,171 MXN) con Swiss Half Fare Card, según tabla oficial 2026/27. NO es Winter Pass. Verificar nuevamente antes de pagar.",
       "url": "https://www.gornergrat.ch/en/pages/prices-gornergrat-bahn"
+    },
+    {
+      "title": "SBB · Saver Day Pass frente a Supersaver",
+      "note": "Para los traslados del 28 y 31 enero comparar billete de punto a punto, Supersaver y Saver Day Pass. Precios mínimos de Saver Day Pass publicados: CHF 52 sin tarjeta y CHF 29 con Half Fare, sujetos a cupos y fecha; no atribuirlos automáticamente a nuestros billetes. Un Supersaver obliga al tren elegido, mientras Saver Day Pass es válido durante el día dentro del área de cobertura.",
+      "url": "https://www.sbb.ch/en/offers/saver-day-pass"
     }
   ],
   "attractionTerms": [],
@@ -1323,7 +1360,7 @@
     "marginMXN": 4000,
     "useBudgetRange": true,
     "referenceFlightMXN": 20331,
-    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales. Gornergrat tren oficial CHF 102 retorno (CHF 51 con Half Fare), invierno 2026/27. La oferta Luzern–Interlaken «desde CHF 34» no es cotización del tramo completo Luzern–Grindelwald. La tarifa exacta SBB sigue pendiente."
+    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales. Gornergrat tren oficial CHF 102 retorno (CHF 51 con Half Fare), invierno 2026/27. La oferta Luzern–Interlaken «desde CHF 34» no es cotización del tramo completo Luzern–Grindelwald. La tarifa exacta SBB sigue pendiente. Se compararán Saver Day Passes (mínimos promocionales CHF 52 sin Half Fare / CHF 29 con tarjeta) con tarifa flexible y Supersaver; esos mínimos NO son cotizaciones de nuestros días."
   },
   "hotels": [
     {
@@ -1549,6 +1586,14 @@
     [
       "SBB · billetes Supersaver: condiciones y venta",
       "https://www.sbb.ch/en/help-and-contact/products-services/tickets/switzerland/supersaver-tickets-saver-day-passes.html"
+    ],
+    [
+      "SBB · Saver Day Pass: mínimos y condiciones",
+      "https://www.sbb.ch/en/offers/saver-day-pass"
+    ],
+    [
+      "SBB · disponibilidad y venta anticipada",
+      "https://www.sbb.ch/en/help-and-contact/products-services/tickets/switzerland/tickets.html"
     ]
   ],
   "sourceNote": null,
@@ -1556,7 +1601,7 @@
     75000,
     85000
   ],
-  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y suplemento Jungfraujoch CHF 63 solo si se elige, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. La provisión de movilidad de $10,000 MXN puede resultar insuficiente; los billetes SBB nacionales no están cotizados para las fechas exactas, pero Gornergrat sí tiene tabla oficial 2026/27. Son provisiones: el pase Jungfrau y Top Ticket tienen precios oficiales de temporada 2026/27, pero el coste conjunto de billetes nacionales no está cerrado y podría exigir aumentar el presupuesto. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
+  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y suplemento Jungfraujoch CHF 63 solo si se elige, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. La provisión de movilidad de $10,000 MXN puede resultar insuficiente; los billetes SBB nacionales no han podido verificarse en el carrito para las fechas exactas (aunque ya están dentro de la ventana de venta), pero Gornergrat sí tiene tabla oficial 2026/27. Son provisiones: el pase Jungfrau y Top Ticket tienen precios oficiales de temporada 2026/27, pero el coste conjunto de billetes nacionales no está cerrado y podría exigir aumentar el presupuesto. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
   "placeDescriptions": {
     "lucerne": "En la ciudad vieja de Lucerna, el Kapellbrücke cruza el río Reuss bajo una cubierta de madera y conecta plazas históricas entre montañas.",
     "lake-lucerne": "El lago de los Cuatro Cantones une bahías, pueblos y montañas; desde sus orillas en Lucerna se contempla el paisaje alpino sin un ascenso.",
@@ -1628,7 +1673,15 @@
     ],
     [
       "Trayectos SBB por cotizar en fechas exactas",
-      "23 ene Zürich Flughafen–Luzern; 24 ene Luzern–Interlaken Ost–Grindelwald; 28 ene Grindelwald–Zermatt; 31 ene Zermatt–Zürich HB; 1 feb Zürich–Kilchberg ida/vuelta; 2 feb Zürich HB–Flughafen. Persona adulta, segunda clase, tarifa normal y con Half Fare, además de Supersaver. La oferta desde CHF 34 Luzern–Interlaken publicada hasta 30/1/2027 no es tarifa de la ruta completa a Grindelwald ni garantiza cupo al precio mínimo."
+      "23 ene Zürich Flughafen–Luzern; 24 ene Luzern–Interlaken Ost–Grindelwald; 28 ene Grindelwald–Zermatt; 31 ene Zermatt–Zürich HB; 1 feb Zürich–Kilchberg ida/vuelta; 2 feb Zürich HB–Flughafen. Persona adulta, segunda clase, tarifa normal y con Half Fare, además de Supersaver. La oferta desde CHF 34 Luzern–Interlaken publicada hasta 30/1/2027 no es tarifa de la ruta completa a Grindelwald ni garantiza cupo al precio mínimo. SBB permite comprar estos billetes con hasta 6 meses de anticipación, condicionado a publicación de horarios tras el cambio de diciembre; al 3 noviembre 2026 estamos dentro de esa ventana. No se ha obtenido el importe dinámico del carrito para estos días: no asumir indisponibilidad ni inventar cifra."
+    ],
+    [
+      "Saver Day Pass · tercera comparación antes de comprar",
+      "Para el traslado largo del 28 enero (Grindelwald–Zermatt) y del 31 (Zermatt–Zúrich), comparar también Saver Day Pass de SBB además de tarifa flexible y Supersaver. SBB publica precios de entrada desde CHF 52 sin Half Fare y desde CHF 29 con Half Fare en segunda clase; son MÍNIMOS promocionales, no precios reservables garantizados para esas fechas. Su cobertura rige dentro del área GA; verificar ruta de cada trayecto y condiciones de no reembolso."
+    ],
+    [
+      "Prueba de suficiencia de los $10,000 MXN para movilidad",
+      "Si se eligieran ambos pases, Jungfrau CHF 176 más Half Fare CHF 150, se gastarían CHF 326 (≈ $7,484 MXN), quedando ≈ $2,516 MXN para TODOS los billetes nacionales y urbanos. Si se elige solo Jungfrau CHF 176 quedarían ≈ $5,960 MXN. Son saldos calculados, no precios de los trayectos; la provisión de $10,000 MXN tiene riesgo alto de insuficiencia si se compran ambas tarjetas."
     ]
   ],
   "railTotal": "Por cotizar: provisión global de $10,000 MXN, sin desglose ferroviario definitivo",
