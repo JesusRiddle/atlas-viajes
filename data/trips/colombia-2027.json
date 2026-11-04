@@ -380,7 +380,132 @@
   ],
   "exchangeRates": {},
   "exchangeRateSnapshot": null,
-  "expenses": [],
+  "expenses": [
+    {
+      "id": "air-copa",
+      "category": "transport",
+      "concept": "Copa multidestino MEX–MDE / CTG–MEX",
+      "date": "2027-01-14",
+      "cost": {
+        "amount": 10303,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Observado en búsqueda manual 04/11/2026. No comprado; incluye equipaje de mano según tarifa candidata, cargo por documentada sujeto a revisión."
+    },
+    {
+      "id": "air-avianca",
+      "category": "transport",
+      "concept": "Avianca MDE–SMR · tarifa Classic candidata",
+      "date": "2027-01-18",
+      "cost": {
+        "amount": 1244,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Equivalencia MXN orientativa aportada con captura de COP 217,580; NO es tipo de cambio actual comprobado. Confirmar importe final con Avianca antes de reservar."
+    },
+    {
+      "id": "hotel-med",
+      "category": "lodging",
+      "concept": "Medellín · 4 noches · objetivo de alojamiento",
+      "date": "2027-01-14",
+      "cost": {
+        "amount": 4800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Meta estimada para habitación privada, impuestos y cancelación, NO tarifa publicada de Landmark ni 574 Hotel.",
+      "nights": 4,
+      "hotelId": "med-landmark"
+    },
+    {
+      "id": "hotel-santa",
+      "category": "lodging",
+      "concept": "Santa Marta · 3 noches · objetivo de alojamiento",
+      "date": "2027-01-18",
+      "cost": {
+        "amount": 3800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Meta estimada, NO tarifa verificada de Casa de Isabella.",
+      "nights": 3,
+      "hotelId": "sm-isabella"
+    },
+    {
+      "id": "hotel-tayrona",
+      "category": "lodging",
+      "concept": "Tayrona · ecolodge · 2 noches · objetivo",
+      "date": "2027-01-21",
+      "cost": {
+        "amount": 4800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Meta estimada, NO tarifa verificada de Senda Koguiwa/Watapuy.",
+      "nights": 2,
+      "hotelId": "tay-koguiwa"
+    },
+    {
+      "id": "hotel-cartagena",
+      "category": "lodging",
+      "concept": "Cartagena · 3 noches · objetivo de alojamiento",
+      "date": "2027-01-23",
+      "cost": {
+        "amount": 5200,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Meta estimada, NO tarifa verificada de Casa La Fe ni Bantú.",
+      "nights": 3,
+      "hotelId": "ct-lafe"
+    },
+    {
+      "id": "ground-mobility",
+      "category": "transport",
+      "concept": "Traslados aeroportuarios, Guatapé, Minca y Tayrona→Cartagena",
+      "cost": {
+        "amount": 5000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión global sin cotizar transportistas. Incluye movilidad terrestre e interurbana; no es precio confirmado de Marsol ni de servicio privado."
+    },
+    {
+      "id": "food-budget",
+      "category": "food",
+      "concept": "Alimentación y gastronomía · 13 días",
+      "cost": {
+        "amount": 6500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión estimada, no precios de restaurantes; incluye comidas y cenas. No sumar de nuevo al presupuesto diario."
+    },
+    {
+      "id": "activity-budget",
+      "category": "activities",
+      "concept": "Guías, entradas y excursiones de los 13 días",
+      "cost": {
+        "amount": 4500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Bolsa de planeación para Comuna 13, Guatapé, finca cafetera, Tayrona y actividades; puede variar según operadores. No incluye excursiones opcionales de lujo."
+    },
+    {
+      "id": "other-budget",
+      "category": "other",
+      "concept": "Seguro de viaje y contingencias",
+      "cost": {
+        "amount": 3500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión conjunta para seguro, tasas pequeñas y variaciones menores; no cubre grandes recargos de vuelos u hoteles."
+    }
+  ],
   "majorTransport": [
     {
       "id": "flight-international",
@@ -388,7 +513,7 @@
       "title": "Copa Airlines · vuelos internacionales multidestino",
       "day": null,
       "selectedOption": "A",
-      "budgetIncludedIn": null,
+      "budgetIncludedIn": "air-copa",
       "options": [
         {
           "id": "A",
@@ -467,7 +592,7 @@
       "title": "Avianca AV 9446 · Medellín → Santa Marta",
       "day": 5,
       "selectedOption": "A",
-      "budgetIncludedIn": null,
+      "budgetIncludedIn": "air-avianca",
       "options": [
         {
           "id": "A",
@@ -812,8 +937,11 @@
     }
   ],
   "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
-  "budgetRange": null,
-  "budgetNote": "Costos observados de vuelos ~$11,547 MXN y rango objetivo de alojamiento $15,500–21,600 MXN, ambos provisionales; faltan transporte terrestre, actividades, comida, seguro, entradas e imprevistos. No mostrar subtotal como costo integral.",
+  "budgetRange": [
+    42000,
+    63000
+  ],
+  "budgetNote": "Proyección orientativa para 1 persona, NO cotización ni presupuesto contratado. Escenario central $49,647 MXN, compuesto por vuelos candidatos $11,547; alojamiento meta $18,600; movilidad terrestre estimada $5,000; alimentación $6,500; experiencias $4,500; seguro e imprevistos $3,500. Intervalo de sensibilidad $42,000–63,000 MXN, pendiente de ajustar por hoteles reales, transporte privado Tayrona→Cartagena, entradas, seguros y equipaje adicional. No añadir dos veces las tarifas de majorTransport: los vuelos están ya reflejados en expenses. Los $1,244 MXN de Avianca son una conversión aproximada de referencia del usuario, no una cotización cambiaria actual.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
@@ -825,7 +953,7 @@
   "emphasisStyle": false,
   "linkRailInText": false,
   "knownCosts": [],
-  "costExclusions": null,
+  "costExclusions": "No están cotizados: elección definitiva de hoteles, equipaje documentado de Copa si se necesita, tarifas reales de shuttle o vehículo privado, clubes de playa de islas opcionales y fluctuaciones cambiarias.",
   "exchangeNote": null,
   "railSummary": [],
   "railTotal": null,
