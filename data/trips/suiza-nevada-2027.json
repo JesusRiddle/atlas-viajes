@@ -169,6 +169,10 @@
         {
           "label": "Mapa: Grindelwald Bahnhof",
           "url": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof"
+        },
+        {
+          "label": "Webcams Jungfrau · First y Männlichen",
+          "url": "https://www.jungfrau.ch/en-gb/live/"
         }
       ]
     },
@@ -181,7 +185,7 @@
       "pm": "1. Recorrer la pasarela Cliff Walk únicamente cuando esté abierta y no haya riesgo de hielo o viento.\n2. Almorzar en área habilitada o volver al pueblo y pasear con calma entre chalets.\n3. Si First está cerrado, convertir el día en paseo por Grindelwald y cambiar la excursión con el día 27.",
       "night": "1. Cena y descanso en Grindelwald; no acumular otra excursión de pago.\n2. Verificar operativa del día siguiente hacia Lauterbrunnen, Wengen y Mürren.",
       "mobility": "• *Grindelwald → First:* Pueblo de Grindelwald → estación Firstbahn caminando o transporte urbano.\n• *Cobertura del pase:* Góndola Firstbahn ida y vuelta; revisar si está cubierta por el pase peatonal Jungfrau 25–27 (referencia CHF 176 ≈ $4,040 MXN).\n• *Actividades opcionales:* No confundir el pase de peatones con acceso a todas las actividades de aventura.",
-      "note": "• *Inicio del pase:* Día 1 del posible pase peatonal de tres días. La tarjeta todavía es candidata, no está comprada.\n• *Senderos invernales:* No visitar Bachalpsee como lago abierto: nieve y senderos altos pueden hacerlo inaccesible.",
+      "note": "• *Inicio del pase:* Día 1 del posible pase peatonal de tres días. La tarjeta todavía es candidata, no está comprada.\n• *Senderos invernales:* No visitar Bachalpsee como lago abierto: nieve y senderos altos pueden hacerlo inaccesible.\n• *Webcams y apertura Cliff Walk:* Antes de subir, abrir los enlaces del día para ver First en directo y consultar «Operating info» del teleférico. La ficha oficial confirma que existe First Cliff Walk, pero no publica necesariamente un indicador independiente de apertura de la pasarela. Aunque Firstbahn funcione, confirmar en la estación o con el operador si la pasarela está habilitada por hielo o viento. No equiparar webcam despejada con acceso autorizado.",
       "spend": null,
       "places": [
         "swiss27-grindelwald-winter",
@@ -191,7 +195,25 @@
         "Grindelwald-First · sujeto a operación"
       ],
       "hotel": "grindelwald-tschuggen",
-      "transportRefs": []
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Webcam oficial · Grindelwald-First",
+          "url": "https://www.jungfrau.ch/en-gb/live/"
+        },
+        {
+          "label": "Estado operativo · Firstbahn y remontes",
+          "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
+        },
+        {
+          "label": "First Cliff Walk · ficha oficial",
+          "url": "https://www.jungfrau.ch/en-gb/grindelwaldfirst/first-cliff-walk-by-tissot/"
+        },
+        {
+          "label": "Grindelwald Turismo · instalaciones y webcams",
+          "url": "https://en.map.grindelwald.swiss/live.html"
+        }
+      ]
     },
     {
       "n": 5,
@@ -236,6 +258,14 @@
         {
           "label": "Mapa: Mürren railway station",
           "url": "https://www.google.com/maps/search/?api=1&query=M%C3%BCrren%20railway%20station"
+        },
+        {
+          "label": "Webcams de Jungfrau, Männlichen y valle",
+          "url": "https://www.jungfrau.ch/en-gb/live/"
+        },
+        {
+          "label": "Estado de teleféricos y trenes Jungfrau",
+          "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
         }
       ]
     },
@@ -262,6 +292,16 @@
       "optionalPlaces": [
         "swiss27-jungfraujoch-february",
         "swiss27-maennlichen-winter"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Webcams · Jungfraujoch, Eigergletscher y Männlichen",
+          "url": "https://www.jungfrau.ch/en-gb/live/"
+        },
+        {
+          "label": "Estado en vivo · Eiger Express y trenes",
+          "url": "https://www.jungfrau.ch/en-gb/live/operating-info/"
+        }
       ]
     },
     {
@@ -306,6 +346,10 @@
         {
           "label": "Mapa: Zermatt Bahnhof",
           "url": "https://www.google.com/maps/search/?api=1&query=Zermatt%20Bahnhof"
+        },
+        {
+          "label": "Webcams oficiales · Zermatt y Matterhorn",
+          "url": "https://zermatt.swiss/en/info/webcams"
         }
       ]
     },
@@ -318,7 +362,7 @@
       "pm": "1. Contemplar panorámica del macizo, glaciares y cumbres desde zonas habilitadas, sin entrar en pistas de esquí.\n2. Regresar a Zermatt y almorzar o visitar el casco antiguo con luz de tarde.",
       "night": "1. Segunda noche en Zermatt, con cena y fotografías nocturnas si las condiciones lo permiten.\n2. Si el ascenso se canceló por clima, reservar el día 30 como segunda oportunidad.",
       "mobility": "• *Tren de cremallera:* Zermatt GGB → Gornergrat en tren de cremallera ida y vuelta.\n• *Tarifa de ida y vuelta:* Billete ida y vuelta CHF 102 (≈ $2,342 MXN), o CHF 51 (≈ $1,171 MXN) con Swiss Half Fare Card, según tabla oficial 2026/27; sujeto a modificaciones.\n• *Senderos y miradores:* Accesos a miradores dependen de nieve y seguridad.",
-      "note": "• *Matterhorn y nubes:* Gornergrat es prioridad, pero cielo despejado pesa más que fecha exacta.\n• *Riffelsee en invierno:* No esperar el reflejo del Matterhorn en Riffelsee: puede estar congelado o cubierto de nieve en enero.\n• *Billete Gornergrat:* Retorno por tren ordinario CHF 102 (≈ $2,342 MXN) (Half Fare CHF 51 (≈ $1,171 MXN)); revisar visibilidad antes de comprar.\n• *Horario invernal verificado:* El operador publica salidas de Gornergratbahn cada 24 min a partir de 08:24 entre el 23/12/2026 y el 29/03/2027; consultar operativa y último retorno el día de visita.",
+      "note": "• *Matterhorn y nubes:* Gornergrat es prioridad, pero cielo despejado pesa más que fecha exacta.\n• *Riffelsee en invierno:* No esperar el reflejo del Matterhorn en Riffelsee: puede estar congelado o cubierto de nieve en enero.\n• *Billete Gornergrat:* Retorno por tren ordinario CHF 102 (≈ $2,342 MXN) (Half Fare CHF 51 (≈ $1,171 MXN)); revisar visibilidad antes de comprar.\n• *Horario invernal verificado:* El operador publica salidas de Gornergratbahn cada 24 min a partir de 08:24 entre el 23/12/2026 y el 29/03/2027; consultar operativa y último retorno el día de visita.\n• *Webcams y operación:* Consultar los enlaces oficiales del día para distinguir visibilidad de Matterhorn, estado del tren Gornergrat y apertura de instalaciones. Una webcam despejada no sustituye el horario del último tren.",
       "spend": null,
       "places": [
         "swiss27-gornergrat-winter",
@@ -328,7 +372,21 @@
         "Gornergrat · vista del Matterhorn"
       ],
       "hotel": "zermatt-testa",
-      "transportRefs": []
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Gornergrat · webcam oficial 360°",
+          "url": "https://www.gornergrat.ch/en/stories/webcam"
+        },
+        {
+          "label": "Estado de instalaciones · Zermatt",
+          "url": "https://zermatt.swiss/en/info/lifts-pistes"
+        },
+        {
+          "label": "Gornergrat · horarios y operación",
+          "url": "https://www.gornergrat.ch/en/pages/timetable-gornergrat-bahn"
+        }
+      ]
     },
     {
       "n": 9,
@@ -349,7 +407,21 @@
         "Sunnegga · opcional"
       ],
       "hotel": "zermatt-testa",
-      "transportRefs": []
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Webcams · Gornergrat y pueblo de Zermatt",
+          "url": "https://zermatt.swiss/en/info/webcams"
+        },
+        {
+          "label": "Webcams · Sunnegga y montaña",
+          "url": "https://zermatt.swiss/en/info/webcams?tab=mountains"
+        },
+        {
+          "label": "Estado de remontes · Zermatt",
+          "url": "https://zermatt.swiss/en/info/lifts-pistes"
+        }
+      ]
     },
     {
       "n": 10,
