@@ -8,7 +8,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
 **Etapa actual:** 13 · Auditoría D automatizada aprobada, revisión externa de fotos y tarifas pendiente  
-**Siguiente acción autónoma:** Completar cotización dinámica SBB por seis fechas con/sin Half Fare y Saver Day Pass; ajustar provisión ferroviaria, luego auditar vista final y cerrar PR sin merge  
+**Siguiente acción autónoma:** Completar cotizaciones SBB para cinco rutas nacionales; ZVV Kilchberg tiene tarifa oficial 2027. Conciliar y auditar antes del merge  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -192,3 +192,14 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Pruebas:** 3 pasadas de auditoría de datos sin incidencias; nuevos controles para multi-tramos aéreos, 10 entradas de comparación y 9 fuentes/licencias de fotos. CI por confirmar para el commit de pruebas más reciente al registrar.
 - **Documentación preventiva:** guía editorial y checklist actualizados con la obligación de mostrar cada segmento de vuelos con escala, respetar `null` para horarios internos y no confundir precios «desde» con importes reservables.
 - **Siguiente paso:** obtener tarifa normal y promociones efectivamente ofrecidas por SBB para Zürich Flughafen–Luzern (23 ene), Luzern–Grindelwald (24), Grindelwald–Zermatt (28), Zermatt–Zürich HB (31), Zürich–Kilchberg (1 feb) y Zürich HB–Flughafen (2). Comparar descuento sobre cada importe y decidir si vale la pena comprar Half Fare; luego cierre del presupuesto y revisión visual final. Sin merge ni reservas.
+
+
+## Avance en cotización oficial 2027 · ZVV y SBB · 2026-11-03
+- **Nueva tarifa 2027:** ZVV publicó precios vigentes desde el 13/12/2026. Zürich (zona 110 cuenta doble) ↔ Kilchberg ZH (zona 150) exige **tres zonas**. Billete sencillo adulto CHF 7.40, con Half Fare CHF 3.70. Pase 24h CHF 14.80 adulto o CHF 7.40 con Half Fare. Dos sencillos equivalen al pase 24h, que aporta flexibilidad.
+- **Fuente original:** https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf
+- **Rectificación editorial:** la web inglesa ZVV aún presentaba precios anteriores (CHF 7.20 / 3.60 y 14.40 / 7.20). Para el 1/02/2027 prevalece la nueva tabla PDF.
+- Se añadió la ficha majorTransport.zurich-kilchberg-zvv con cuatro tarifas oficiales y dos direcciones, referenciada por el día 11. Su atributo budgetIncludedIn: rail-budget impide duplicar los $10,000 MXN de movilidad.
+- **SBB restante:** la venta puede hacerse hasta seis meses antes pero no se pudieron obtener importes de checkout para las fechas concretas. Faltan Zürich Flughafen–Luzern, Luzern–Grindelwald, Grindelwald–Zermatt, Zermatt–Zürich HB y Zürich HB–Flughafen. No atribuirles mínimos promocionales como si fueran cotizaciones.
+- **Presupuesto:** mantiene $81,981 MXN provisional, incluyendo ya ZVV dentro de la provisión ferroviaria y Gornergrat dentro de actividades. Half Fare no se recomienda por defecto sin el ahorro efectivamente ofrecido por SBB.
+- **Revisión:** tres pasadas de coherencia (12 días/10 noches, contratos y referencias, presupuesto y doble cómputo) completas antes del JSON. Pruebas Node y browser con nueva ficha ZVV añadidas; CI por verificar en la última ejecución.
+- **Siguiente paso:** obtener cotizaciones dinámicas reales SBB de las cinco rutas con y sin Half Fare y Saver Day Pass, reconciliar totales y continuar auditoría D. No hacer merge ni compras.
