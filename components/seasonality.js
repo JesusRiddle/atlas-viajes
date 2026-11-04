@@ -28,7 +28,7 @@ window.AtlasSeasonality = function (ctx) {
             const item = data.months[key] || { status: 'pending', description: 'Por definir' };
             const state = states[item.status] || states.pending;
             const note = item.description || 'Por definir';
-            const match = note.match(/\(?\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*[–—-]\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*°\s*C\s*\)?/i);
+            const match = note.match(/\(?\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*(?:[–—-]|a)\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*°\s*C\s*\)?/i);
             const temperature = match ? match[0].replace(/[()]/g, '').trim() : '';
             const description = match ? (note.slice(0, match.index) + note.slice(match.index + match[0].length))
                 .replace(/^\s*[.,;:–—-]+\s*/, '').replace(/\s+,/g, ',').replace(/\s{2,}/g, ' ').trim() : note;
