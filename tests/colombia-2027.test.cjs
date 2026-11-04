@@ -24,6 +24,8 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
     assert.equal(d.date,date.toISOString().slice(0,10));
     date.setUTCDate(date.getUTCDate()+1);
     assert.ok(typeof d.am==='string' && typeof d.pm==='string' && typeof d.night==='string');
+    assert.ok(d.am.length>110 && d.pm.length>110 && d.night.length>110, 'Día '+d.n+' no cumple narración platicadita');
+    assert.doesNotMatch(d.am+d.pm+d.night,/\\b(?:placeholder|lorem ipsum|undefined)\\b/i);
     if (i<12) assert.ok(ids.has(d.hotel),'Sin alojamiento en día '+d.n);
     else assert.equal(d.hotel,undefined);
   }
@@ -33,6 +35,9 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   }
   assert.match(trip.days[6].note,/robos/);
   assert.match(trip.days[6].note,/chaleco salvavidas/);
+  assert.match(trip.days[0].note,/fiebre amarilla/);
+  assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>/Requisitos sanitarios/.test(x.title)));
+  assert.ok(trip.hotels.some(h=>h.id==='sm-isabella' && h.links?.some(x=>x.url.includes('kalihotels.com'))));
   assert.doesNotMatch(trip.days.map(d=>d.title+' '+d.am+' '+d.pm).join(' '),/Museo del Oro|San Pedro Alejandrino/);
 });
 test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()=>{
