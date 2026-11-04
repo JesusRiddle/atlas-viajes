@@ -8,7 +8,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
 **Etapa actual:** 13 · Auditoría D automatizada aprobada, revisión externa de fotos y tarifas pendiente  
-**Siguiente acción autónoma:** Cotizar billetes SBB de cada tramo clave con y sin Half Fare y Gornergrat convencional; reconciliar costo total y auditar imágenes remotas antes de cerrar movilidad/presupuesto  
+**Siguiente acción autónoma:** Completar cotizaciones SBB por fecha, clase y descuento; rectificar cualquier diferencia de presupuesto y luego revisar imágenes externas antes de merge  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -173,3 +173,12 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **CI:** ejecución de cambios de componentes #41736632352 SUCCESS; ejecución de documentación #41736714762 completando navegador al momento de registrar. Las pruebas cubren 20 viajes, escritorio/móvil y errores de JS/JSON.
 - **Estado:** Panorama, Mapa, Temporadas, Experiencias, Reservaciones (planeación), Alojamientos (candidatos) y Día por día completos en contenido y auditoría de datos. Movilidad y Presupuesto ahora tienen un modelo comparativo verificable, pero siguen **pendientes de cotizaciones exactas** de trenes nacionales, hoteles y Gornergrat, y de conciliación final.
 - **Próximo paso:** consultar billetes reales en SBB para 23/24/28/31 enero y 1/2 febrero (clase 2, adulto 1, con y sin tarjeta), cotizar Gornergrat ferroviario sin paquete y hacer auditoría final de imágenes externas; entonces elegir pases y ajustar el rango presupuestario.
+
+
+## Reconciliación ferroviaria con tarifario oficial 2026/27 · 2026-11-03
+- **Rectificación de un error propio:** las auditorías anteriores calificaron erróneamente CHF 102 de Gornergrat como Winter Pass. El PDF oficial de Gornergrat, edición junio 2026, muestra claramente billete ferroviario Zermatt–Gornergrat **ida/vuelta CHF 102** en noviembre 2026–abril 2027, **ida CHF 51**; descuento de 50 % con Swiss Half Fare Card, por tanto retorno reducido **CHF 51**. Se reemplaza la afirmación errónea en el JSON y las comparativas. La tabla anterior confundía productos por no haber verificado el PDF tarifario y el tipo de billete, pese a figurar una fuente oficial.
+- **Jungfrau:** pase peatonal de tres días CHF 176 en fechas 25–27 enero 2027; Top Ticket Jungfraujoch CHF 63 adicional opcional, según tabla oficial Jungfrau.
+- **SBB:** no se obtuvo una lista de precios de compra para los seis desplazamientos del viaje, con y sin Half Fare Card, en el canal público accesible. Suiza Turismo publica oferta de Luzern–Interlaken desde CHF 34 con ventana que incluye enero 2027, pero no garantiza ese precio ni incluye la conexión a Grindelwald. Las tarjetas de billete nacional siguen con `price: null`, estado `planning`, sin inventar importes.
+- **Punto de equilibrio verificable:** Gornergrat aporta CHF 51 de ahorro, así que a la tarjeta turística CHF 150 le faltan CHF 99 de descuentos en billetes SBB/ZVV; si todos reducen 50 % el umbral de gasto ordinario del resto es CHF 198. Tarifas Saver, descuentos mínimos y otras condiciones pueden cambiar la cifra.
+- **Presupuesto:** $81,981 MXN aún es estimación, con provisión de transporte $10,000 MXN no conciliada por billetes SBB fechados; precio Gornergrat confirmado como referencia oficial. Se mantienen 12 jornadas, 10 noches, 4 hoteles y vuelos no comprados.
+- **Siguiente paso:** completar la cotización SBB real en el proceso de compra (sin pagar) de los seis trayectos fechados y documentar tarifas normales/Supersaver con y sin Half Fare. Recalcular subtotal terrestre y rango; luego revisión externa de imágenes y cierre editorial del PR. No hacer merge.
