@@ -117,7 +117,7 @@ const assert = require('node:assert/strict');
       assert.deepEqual(people, ['1', '1', '1', '1', '2'], 'Cuatro viajes para una persona y Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
       assert.deepEqual(topIds, [
-        '#viaje/suiza-nevada-2027', '#viaje/espana-portugal-2027', '#viaje/italia-norte-2027',
+        '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
         '#viaje/japon-2027', '#viaje/patagonia-argentina-2027'
       ]);
       assert.ok(!(await page.locator('#ideas-viajes').innerText()).includes('Presupuesto estimado por persona'),
