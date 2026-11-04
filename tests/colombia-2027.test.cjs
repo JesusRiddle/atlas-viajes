@@ -51,9 +51,9 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
 test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.equal(Object.keys(trip.seasonality.months).length,12);
   for (const m of Object.values(trip.seasonality.months))
-    assert.match(m.description,/\\d+ a \\d+ °C/);
+    assert.match(m.description,/\d+ a \d+ °C/);
   assert.deepEqual(trip.practicalIndicators.map(x=>x.id),['style','language','entry']);
-  assert.equal(trip.climate.split(/\\n\\s*\\n/).length,3);
+  assert.equal(trip.climate.split(/\n\s*\n/).length,3);
   assert.ok(trip.exchangeRates.COP>0);
   const places=JSON.parse(fs.readFileSync('data/places.json','utf8'));
   assert.ok(places[trip.cover]?.photo?.src.startsWith('https://'));
