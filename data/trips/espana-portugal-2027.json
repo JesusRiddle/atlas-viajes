@@ -1750,62 +1750,62 @@
     "months": {
       "10": {
         "status": "recommended",
-        "description": "19–26 °C. Temperaturas más suaves en Andalucía y actividad urbana cómoda; menos luz y mayor riesgo de lluvia en Lisboa y Barcelona.",
+        "description": "19 a 26 °C. Temperaturas más suaves en Andalucía y actividad urbana cómoda; menos luz y mayor riesgo de lluvia en Lisboa y Barcelona.",
         "icon": "partlyCloudy"
       },
       "11": {
         "status": "conditional",
-        "description": "14–20 °C. Días cortos, clima más fresco en Castilla y mayor frecuencia de lluvia en Portugal y Andalucía; algunas tarifas podrían bajar.",
+        "description": "14 a 20 °C. Días cortos, clima más fresco en Castilla y mayor frecuencia de lluvia en Portugal y Andalucía; algunas tarifas podrían bajar.",
         "icon": "cloudy"
       },
       "12": {
         "status": "conditional",
-        "description": "10–17 °C. Días breves y frío en Madrid/Zamora; celebraciones de fin de año pueden elevar precios y limitar horarios.",
+        "description": "10 a 17 °C. Días breves y frío en Madrid/Zamora; celebraciones de fin de año pueden elevar precios y limitar horarios.",
         "icon": "cloudy"
       },
       "01": {
         "status": "conditional",
-        "description": "10–16 °C. Invierno con días cortos y mañanas frías en Castilla; Sevilla y Lisboa suelen ser más templadas. Menor presión turística fuera de festivos.",
+        "description": "10 a 16 °C. Invierno con días cortos y mañanas frías en Castilla; Sevilla y Lisboa suelen ser más templadas. Menor presión turística fuera de festivos.",
         "icon": "cloudy"
       },
       "02": {
         "status": "conditional",
-        "description": "12–18 °C. Aún frío en Madrid y Zamora; lluvia posible en Portugal y Andalucía. Puede favorecer alojamientos económicos fuera de carnavales.",
+        "description": "12 a 18 °C. Aún frío en Madrid y Zamora; lluvia posible en Portugal y Andalucía. Puede favorecer alojamientos económicos fuera de carnavales.",
         "icon": "cloudy"
       },
       "03": {
         "status": "conditional",
-        "description": "16–22 °C. Primavera temprana variable; Semana Santa 2027 (21–28 de marzo) eleva demanda en Andalucía y algunos monumentos.",
+        "description": "16 a 22 °C. Primavera temprana variable; Semana Santa 2027 (21–28 de marzo) eleva demanda en Andalucía y algunos monumentos.",
         "icon": "partlyCloudy"
       },
       "04": {
         "status": "conditional",
-        "description": "18–23 °C. Clima agradable para monumentos y caminatas; Semana Santa y Feria de Abril en Sevilla pueden disparar ocupación.",
+        "description": "18 a 23 °C. Clima agradable para monumentos y caminatas; Semana Santa y Feria de Abril en Sevilla pueden disparar ocupación.",
         "icon": "partlyCloudy"
       },
       "05": {
         "status": "recommended",
-        "description": "22–27 °C. Ventana principal: días largos y buenas condiciones para Barcelona, Madrid y Lisboa. Sevilla y Córdoba pueden alcanzar tardes calurosas; San Isidro aumenta la actividad en Madrid.",
+        "description": "22 a 27 °C. Ventana principal: días largos y buenas condiciones para Barcelona, Madrid y Lisboa. Sevilla y Córdoba pueden alcanzar tardes calurosas; San Isidro aumenta la actividad en Madrid.",
         "icon": "sun"
       },
       "06": {
         "status": "conditional",
-        "description": "28–32 °C. Calor creciente en Sevilla y Córdoba; Barcelona y Lisboa todavía permiten recorridos cómodos. Revisar festivales y demanda.",
+        "description": "28 a 32 °C. Calor creciente en Sevilla y Córdoba; Barcelona y Lisboa todavía permiten recorridos cómodos. Revisar festivales y demanda.",
         "icon": "hot"
       },
       "07": {
         "status": "avoid",
-        "description": "32–36 °C. Altas temperaturas frecuentes en Andalucía y demanda turística estival; poca comodidad para excursiones y monumentos al sol.",
+        "description": "32 a 36 °C. Altas temperaturas frecuentes en Andalucía y demanda turística estival; poca comodidad para excursiones y monumentos al sol.",
         "icon": "hot"
       },
       "08": {
         "status": "avoid",
-        "description": "31–36 °C. Calor persistente en Andalucía, vacaciones de verano y precios potencialmente elevados; Barcelona puede registrar tormentas.",
+        "description": "31 a 36 °C. Calor persistente en Andalucía, vacaciones de verano y precios potencialmente elevados; Barcelona puede registrar tormentas.",
         "icon": "hot"
       },
       "09": {
         "status": "conditional",
-        "description": "26–32 °C. Alternativa de otoño temprano con calor posible en Andalucía y lluvias más probables en Barcelona. Comparar tarifas antes de elegir.",
+        "description": "26 a 32 °C. Alternativa de otoño temprano con calor posible en Andalucía y lluvias más probables en Barcelona. Comparar tarifas antes de elegir.",
         "icon": "partlyCloudy"
       }
     },
