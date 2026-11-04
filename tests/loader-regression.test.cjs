@@ -400,6 +400,28 @@ test('Panorama editorial de los cinco viajes desarrollados: exactamente tres ind
         /Clima y luz|Documentación y electricidad/);
 });
 
+test('Los cinco viajes nuevos muestran intervalos térmicos sin guiones ambiguos', () => {
+    const ids = ['suiza-nevada-2027', 'italia-norte-2027', 'espana-portugal-2027',
+        'japon-2027', 'patagonia-argentina-2027'];
+    const validRange = /[−]?\\d{1,2} a [−]?\\d{1,2} °C/;
+    const legacyRange = /[−-]?\\d{1,2}\\s*[–—-]\\s*[−-]?\\d{1,2}\\s*°\\s*C/;
+    const seasonWindow = { AtlasSeasonality: null };
+    vm.runInNewContext(fs.readFileSync('components/seasonality.js', 'utf8'), { window: seasonWindow });
+    for (const id of ids) {
+        const trip = JSON.parse(fs.readFileSync('data/trips/' + id + '.json', 'utf8'));
+        const months = Object.values(trip.seasonality.months);
+        assert.equal(months.length, 12, id + ': doce meses');
+        assert.ok(months.every(month => validRange.test(month.description)), id + ': todos los rangos usan «a»');
+        assert.ok(months.every(month => !legacyRange.test(month.description)), id + ': sin rangos con guiones');
+        assert.ok(!legacyRange.test(trip.climate), id + ': clima sin rangos ambiguos');
+        const rendered = seasonWindow.AtlasSeasonality({ esc: String }).seasonality(trip);
+        const shown = [...rendered.matchAll(/class="season-temperature">([^<]+)</g)].map(match => match[1]);
+        assert.equal(shown.length, 12, id + ': doce temperaturas visibles');
+        assert.ok(shown.every(value => /^[−]?\\d{1,2} a [−]?\\d{1,2} °C$/.test(value)),
+            id + ': mostrar «−3 a 5 °C», sin separador de guion');
+    }
+});
+
 test('Suiza nevada: contratos editoriales de temporadas, días y fotografías', () => {
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
     const months = Object.values(trip.seasonality.months);
