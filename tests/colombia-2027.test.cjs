@@ -25,7 +25,7 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
     date.setUTCDate(date.getUTCDate()+1);
     assert.ok(typeof d.am==='string' && typeof d.pm==='string' && typeof d.night==='string');
     assert.ok(d.am.length>110 && d.pm.length>110 && d.night.length>110, 'Día '+d.n+' no cumple narración platicadita');
-    assert.doesNotMatch(d.am+d.pm+d.night,/\\b(?:placeholder|lorem ipsum|undefined)\\b/i);
+    assert.doesNotMatch(d.am+d.pm+d.night,/\b(?:placeholder|lorem ipsum|undefined)\b/i);
     if (i<12) assert.ok(ids.has(d.hotel),'Sin alojamiento en día '+d.n);
     else assert.equal(d.hotel,undefined);
   }
