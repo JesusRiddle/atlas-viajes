@@ -2,6 +2,30 @@
 
 Sitio de itinerarios y presupuestos: **https://jesusriddle.github.io/atlas-viajes/**. HTML, CSS, JavaScript y JSON; publicado con GitHub Pages.
 
+## Prompt reutilizable para planear un viaje
+
+Copia el siguiente prompt en un chat nuevo. **Cambia únicamente el valor de `Destino`**; el resto funciona para cualquier viaje. Si existe un itinerario anterior del mismo destino en el repositorio, se utiliza solo como inspiración.
+
+```text
+Destino: Suiza 2027
+
+Actúa como mi arquitecto de viajes para Atlas de Viajes.
+
+Quiero planear el destino indicado arriba para el repositorio JesusRiddle/atlas-viajes. Si existe un itinerario anterior correspondiente a ese destino, consúltalo únicamente como lluvia de ideas, nunca como ruta definitiva ni como fuente que debas copiar.
+
+Primera fase: planeación estratégica, sin modificar GitHub.
+
+Investiga y compara las mejores fechas para viajar, considerando clima, paisajes, precios, temporada turística y días de vacaciones. Después, optimiza ciudades, atractivos, excursiones, alojamientos y desplazamientos, priorizando trenes, pocos cambios de hotel, rutas eficientes y experiencias memorables.
+
+Considera salida desde CDMX, viaje en solitario y presupuesto costo-beneficio. Cuestiona mis propuestas cuando existan alternativas mejores y explica los compromisos importantes.
+
+Trabajaremos por decisiones hasta definir fechas, duración, ruta y presupuesto preliminar. No crees ni modifiques archivos, ramas o PR durante esta primera fase.
+
+Cuando te diga «Refléjalo en el Atlas», consulta y ejecuta autónomamente AGENTS.md, las guías editoriales y el checklist del repositorio, siguiendo sus etapas, verificaciones y auditorías. Publica el viaje desde la primera etapa, sin etiquetas de borrador, y trabaja en una rama con PR, sin hacer merge. Si ya existe una rama de trabajo para el viaje, reutilízala en lugar de crear otra.
+
+Comienza comparando las mejores temporadas y ventanas de viaje para el destino indicado.
+```
+
 ## Crear un viaje nuevo
 
 Crear un viaje visible desde el primer registro, aunque todavía esté incompleto:

@@ -1359,62 +1359,62 @@
     "months": {
       "10": {
         "status": "conditional",
-        "description": "8–13 °C. Primavera temprana: días más largos pero puede haber nieve y barro en Laguna de los Tres.",
+        "description": "8 a 13 °C. Primavera temprana: días más largos pero puede haber nieve y barro en Laguna de los Tres.",
         "icon": "partlyCloudy"
       },
       "11": {
         "status": "recommended",
-        "description": "11–16 °C. Primavera con muchas horas de luz y menos turismo que en el pico estival; viento y nieve en altura posibles.",
+        "description": "11 a 16 °C. Primavera con muchas horas de luz y menos turismo que en el pico estival; viento y nieve en altura posibles.",
         "icon": "partlyCloudy"
       },
       "12": {
         "status": "conditional",
-        "description": "13–18 °C. Días largos pero aumenta la ocupación y la demanda hacia las fiestas.",
+        "description": "13 a 18 °C. Días largos pero aumenta la ocupación y la demanda hacia las fiestas.",
         "icon": "partlyCloudy"
       },
       "01": {
         "status": "avoid",
-        "description": "15–20 °C. Verano austral con más visitantes y alta demanda; el viento y las lluvias siguen siendo posibles.",
+        "description": "15 a 20 °C. Verano austral con más visitantes y alta demanda; el viento y las lluvias siguen siendo posibles.",
         "icon": "partlyCloudy"
       },
       "02": {
         "status": "conditional",
-        "description": "14–19 °C. Temperaturas estivales y senderos activos; demanda alta especialmente a inicios de mes.",
+        "description": "14 a 19 °C. Temperaturas estivales y senderos activos; demanda alta especialmente a inicios de mes.",
         "icon": "partlyCloudy"
       },
       "03": {
         "status": "recommended",
-        "description": "11–16 °C. Menos demanda al terminar el verano, con días más cortos; interesante para trekking si el clima acompaña.",
+        "description": "11 a 16 °C. Menos demanda al terminar el verano, con días más cortos; interesante para trekking si el clima acompaña.",
         "icon": "partlyCloudy"
       },
       "04": {
         "status": "conditional",
-        "description": "7–12 °C. Colores otoñales, días más cortos y riesgo creciente de escarcha en altura.",
+        "description": "7 a 12 °C. Colores otoñales, días más cortos y riesgo creciente de escarcha en altura.",
         "icon": "partlyCloudy"
       },
       "05": {
         "status": "avoid",
-        "description": "3–8 °C. Frío, luz reducida y posibles cierres o dificultades en rutas de montaña.",
+        "description": "3 a 8 °C. Frío, luz reducida y posibles cierres o dificultades en rutas de montaña.",
         "icon": "snow"
       },
       "06": {
         "status": "avoid",
-        "description": "0–5 °C. Invierno, nieve y senderos exigentes poco apropiados para este itinerario.",
+        "description": "0 a 5 °C. Invierno, nieve y senderos exigentes poco apropiados para este itinerario.",
         "icon": "snow"
       },
       "07": {
         "status": "avoid",
-        "description": "0–5 °C. Invierno austral; nieve y hielo complican las caminatas largas.",
+        "description": "0 a 5 °C. Invierno austral; nieve y hielo complican las caminatas largas.",
         "icon": "snow"
       },
       "08": {
         "status": "avoid",
-        "description": "2–7 °C. Persisten condiciones invernales y la operativa puede estar limitada.",
+        "description": "2 a 7 °C. Persisten condiciones invernales y la operativa puede estar limitada.",
         "icon": "snow"
       },
       "09": {
         "status": "conditional",
-        "description": "5–10 °C. Inicio primaveral con nieve posible en altura, viento y temperaturas bajas.",
+        "description": "5 a 10 °C. Inicio primaveral con nieve posible en altura, viento y temperaturas bajas.",
         "icon": "partlyCloudy"
       }
     }

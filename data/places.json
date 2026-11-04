@@ -4357,5 +4357,82 @@
       "attribution": "Casual Capibara",
       "description": "Mercado de San Telmo y sus puestos, visita gastronómica y cultural del recorrido por los barrios históricos de Buenos Aires."
     }
+  },
+  "swiss27-grindelwald-winter": {
+    "name": "Grindelwald nevado",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/grindelwald-invierno.jpg"
+    }
+  },
+  "swiss27-wengen-winter": {
+    "name": "Wengen en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/wengen-invierno.jpg"
+    }
+  },
+  "swiss27-murren-winter": {
+    "name": "Mürren en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/murren-invierno.jpg"
+    }
+  },
+  "swiss27-lauterbrunnen-winter": {
+    "name": "Lauterbrunnen nevado",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/lauterbrunnen-invierno.jpg"
+    }
+  },
+  "swiss27-zermatt-winter": {
+    "name": "Zermatt con el Matterhorn nevado",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/zermatt-invierno.jpg"
+    }
+  },
+  "swiss27-lindt": {
+    "name": "Fuente de chocolate Lindt",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Two%20story%20chocolate%20fountain%20in%20the%20lobby%20of%20the%20Lindt%20factory%20in%20Zurich%2C%20Switzerland%20(52167915483).jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Two_story_chocolate_fountain_in_the_lobby_of_the_Lindt_factory_in_Zurich%2C_Switzerland_(52167915483).jpg",
+      "author": "Brian Shamblen",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Brian Shamblen"
+    }
+  },
+  "swiss27-gornergrat-winter": {
+    "name": "Matterhorn desde la montaña invernal",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/gornergrat-invierno.jpg"
+    }
+  },
+  "swiss27-jungfraujoch-february": {
+    "name": "Jungfraujoch nevado · observatorio Sphinx",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/jungfraujoch-invierno.jpg"
+    }
+  },
+  "swiss27-maennlichen-winter": {
+    "name": "Männlichen · Royal Walk en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/mannlichen-invierno.jpg"
+    }
+  },
+  "swiss27-lucerne-winter": {
+    "name": "Lucerna en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/lucerna-invierno.jpg"
+    }
+  },
+  "swiss27-first-cliff-walk": {
+    "name": "First Cliff Walk en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/first-cliff-walk-invierno.jpg"
+    }
+  },
+  "swiss27-zurich-winter": {
+    "name": "Zúrich en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/zurich-invierno.jpg"
+    }
   }
 }

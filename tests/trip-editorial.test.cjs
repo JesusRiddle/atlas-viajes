@@ -31,7 +31,7 @@ test('el viaje Italia 2027 mantiene introducción turística con resaltados exis
 test('los 12 meses evaluados contienen rango de temperatura visible', () => {
   const drafts = fs.readdirSync('data/trips').filter(name => name.endsWith('.json') && !name.startsWith('_')).map(name => ({name, trip: JSON.parse(fs.readFileSync(path.join('data/trips', name), 'utf8'))})).filter(({trip}) => ['draft', 'ready'].includes(trip.status) && trip.seasonality?.months);
   assert.ok(drafts.length, 'Sin viajes borrador para validar');
-  const pattern = /[-−]?\d{1,2}(?:[.,]\d+)?\s*[–—-]\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*°\s*C/i;
+  const pattern = /[−]?\d{1,2}(?:[.,]\d+)? a [−]?\d{1,2}(?:[.,]\d+)? °C/i;
   for (const {name, trip} of drafts) {
     const months = trip.seasonality.months;
     assert.equal(Object.keys(months).length, 12, name + ': número de meses');

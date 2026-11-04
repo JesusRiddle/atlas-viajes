@@ -101,23 +101,23 @@ const assert = require('node:assert/strict');
         copyBounds.y + copyBounds.height <= heroBounds.y + heroBounds.height + 2,
         'El texto del hero debe quedar dentro de la fotografía');
 
-      // Solo los primeros cuatro viajes siguen siendo protagonistas de la portada.
+      // Los cinco viajes nuevos forman la portada; los históricos siguen en el archivo de ideas.
       const featuredCards = page.locator('#viajes .tripcard');
       const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
-      assert.equal(await featuredCards.count(), 4, 'La portada principal debe tener cuatro viajes');
-      assert.equal(await ideaCards.count(), allDestinations.length - 4, 'Todos los viajes anteriores deben permanecer accesibles');
+      assert.equal(await featuredCards.count(), 5, 'La portada principal debe mostrar cinco viajes, encabezados por Suiza nevada');
+      assert.equal(await ideaCards.count(), allDestinations.length - 5, 'Todos los viajes históricos deben permanecer accesibles');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
-      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 4,
+      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 5,
         'La comparativa no debe confundir ideas históricas con viajes terminados');
       const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
       assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
       assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
       const people = await page.locator('#comparar .comparison-table tbody tr').evaluateAll(rows =>
         rows.map(row => row.cells[5].textContent.trim()));
-      assert.deepEqual(people, ['1', '1', '1', '2'], 'Tres viajes de una persona y Patagonia para dos');
+      assert.deepEqual(people, ['1', '1', '1', '1', '2'], 'Cuatro viajes para una persona y Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
       assert.deepEqual(topIds, [
-        '#viaje/espana-portugal-2027', '#viaje/italia-norte-2027',
+        '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
         '#viaje/japon-2027', '#viaje/patagonia-argentina-2027'
       ]);
       assert.ok(!(await page.locator('#ideas-viajes').innerText()).includes('Presupuesto estimado por persona'),
@@ -138,6 +138,101 @@ const assert = require('node:assert/strict');
         assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
         assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
+        // Contrato editorial del Panorama: tres indicadores a la izquierda, clima separado a la derecha.
+        if (['suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
+          'japon-2027', 'patagonia-argentina-2027'].includes(id)) {
+          const indicators = page.locator('#plan .overview-intro .practical-indicator');
+          assert.equal(await indicators.count(), 3, id + ' debe tener exactamente tres indicadores');
+          const ids = await indicators.evaluateAll(nodes => nodes.map(node => node.dataset.indicatorId));
+          assert.deepEqual(ids, ['style', 'language', 'entry'], id + ' debe mantener IDs y orden');
+          const headings = await indicators.locator('strong').allInnerTexts();
+          assert.deepEqual(headings.filter(label => ['Estilo de viaje', 'Idioma y moneda',
+            'Documentación y consejos prácticos', 'Documentación y electricidad'].includes(label)),
+            ['Estilo de viaje', 'Idioma y moneda', 'Documentación y consejos prácticos'],
+            id + ' nombres de indicadores');
+          const climate = page.locator('#plan .overview-side .overview-climate-card');
+          assert.equal(await climate.count(), 1, id + ' debe mostrar un clima separado en columna derecha');
+          assert.equal(await page.locator('#plan .overview-intro .overview-climate-card').count(), 0,
+            id + ' no debe mezclar clima con indicadores');
+          const region = await page.locator('#plan').evaluate(root => {
+            const left = root.querySelector('.overview-intro').getBoundingClientRect();
+            const right = root.querySelector('.overview-side').getBoundingClientRect();
+            const climate = root.querySelector('.overview-side .overview-climate-card').getBoundingClientRect();
+            const budget = root.querySelector('.overview-side .budget-teaser').getBoundingClientRect();
+            return {left:{x:left.x,y:left.y,w:left.width,h:left.height},
+              right:{x:right.x,y:right.y,w:right.width,h:right.height},
+              climate:{x:climate.x,y:climate.y}, budget:{x:budget.x,y:budget.y,h:budget.height}};
+          });
+          if (viewport.width > 800) {
+            assert.ok(region.right.x >= region.left.x + region.left.w - 8,
+              id + ' clima/presupuesto deben ubicarse a la derecha del texto');
+          } else {
+            assert.ok(region.right.y >= region.left.y,
+              id + ' móvil debe conservar el bloque de clima separado');
+          }
+          assert.ok(region.climate.y >= region.budget.y,
+            id + ' tarjeta Clima y luz debe seguir al presupuesto');
+        }
+        if (id === 'suiza-nevada-2027') {
+          const swissClimate = page.locator('#plan .overview-side .overview-climate-card');
+          const swissClimateText = await swissClimate.innerText();
+          assert.match(swissClimateText, /Qué llevar:/);
+          assert.match(swissClimateText, /Horas de luz:/);
+          assert.match(swissClimateText, /08:00/);
+          assert.match(swissClimateText, /17:21/);
+          assert.ok((await swissClimate.locator('p').count()) >= 3,
+            'Suiza requiere tres párrafos diferenciados en tarjeta climática');
+          assert.ok(await swissClimate.evaluate(node => node.classList.contains('season-recommended')),
+            'El color de clima debe corresponder al estado del mes de inicio');
+          assert.match(await page.locator('#plan .budget-exchange').innerText(), /CHF/);
+          assert.equal(await page.locator('#plan .budget-exchange a').count(), 1,
+            'CHF debe tener fuente enlazada en el Panorama');
+          assert.equal(await page.locator('#traslados .mt-card').count(), 7,
+            'Suiza debe mostrar vuelo, aeropuerto, tres trenes interurbanos y ZVV Kilchberg');
+          assert.equal(await page.locator('#traslados .mt-pass-comparison').count(), 1,
+            'Comparación de pases debe ser visible como bloque accesible, no solo existir en JSON');
+          await page.locator('#traslados .mt-pass-comparison > summary').click();
+          const comparison = await page.locator('#traslados .mt-pass-comparison').innerText();
+          assert.match(comparison, /Punto de equilibrio/);
+          assert.match(comparison, /Winter Pass/);
+          assert.match(comparison, /CHF 102/, 'La tarifa oficial del retorno Gornergrat debe mostrarse');
+          assert.match(comparison, /CHF 51/, 'La mitad de tarifa oficial Gornergrat debe mostrarse');
+          assert.match(comparison, /CHF 175\.80/, 'Half Fare descuenta Gornergrat y ambos recorridos ZVV conocidos');
+          assert.doesNotMatch(comparison, /Winter Pass CHF 102|NO es el billete convencional de ida y vuelta/i);
+          assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 12,
+            'La comparativa de Suiza incluye productos turísticos, billetes Saver y sensibilidad económica');
+          assert.match(comparison, /Saver Day Pass/);
+          assert.match(comparison, /CHF 326/, 'Costo de adquirir ambos pases y riesgo presupuestario');
+          assert.match(comparison, /CHF 14\.80/, 'La tarifa ZVV para 2027 se ve en Movilidad');
+          assert.match(comparison, /Zúrich → aeropuerto/, 'La conexión al aeropuerto debe estar documentada');
+          const airportZvv = page.locator('#traslados .mt-card').filter({hasText:'Zürich Flughafen'});
+          assert.ok(await airportZvv.count() >= 1);
+          const zvvCard = page.locator('#traslados .mt-card').filter({hasText:'Kilchberg'});
+          assert.ok(await zvvCard.count() >= 1, 'La ficha ZVV debe aparecer');
+          const faresText = await zvvCard.first().innerText();
+          assert.match(faresText, /24 h|24h|ZVV/i);
+          const flights = page.locator('#traslados .mt-card[data-transport="flight-international"]');
+          await flights.locator('summary').click();
+          assert.equal(await flights.locator('.flight-leg').count(), 4,
+            'Las dos direcciones del vuelo de referencia deben mostrar dos segmentos cada una');
+          assert.match(await flights.innerText(), /MAD|Madrid/);
+          assert.match(await flights.innerText(), /CDG|París/);
+
+          assert.equal(await page.locator('#dias details.day').count(), 12,
+            'Suiza debe mostrar sus doce jornadas');
+          assert.equal(await page.locator('#alojamientos .hotel-card').count(), 4,
+            'Suiza debe mostrar sus cuatro alojamientos');
+          assert.equal(await page.locator('#temporadas .season-month').count(), 12,
+            'Suiza debe incluir los doce meses de temporadas');
+          assert.ok(await page.locator('#costes .budget-ledger').count() >= 1,
+            'Suiza debe presentar el desglose de presupuesto');
+          const swissBudget = await page.locator('#costes .budget-ledger').innerText();
+          assert.match(swissBudget, /Transporte terrestre · provisión global/);
+          assert.match(swissBudget, /Trenes, movilidad urbana y pase seleccionado/);
+          assert.match(swissBudget, /10,000\.00/, 'Los $10,000 MXN ferroviarios deben verse en el desglose');
+          assert.match(swissBudget, /86,981/, 'El escenario de riesgo debe aparecer sin alterar el total de referencia');
+          await page.screenshot({path: '/tmp/atlas-suiza-nevada-' + viewport.width + '.png', fullPage: true});
+        }
         if (id === 'patagonia-argentina-2027') {
           assert.equal(await page.locator('#traslados .mt-card').count(), 4, 'Patagonia debe renderizar sus cuatro traslados');
           assert.equal(await page.locator('#dias details.day').count(), 15, 'Patagonia debe mostrar sus 15 jornadas');
@@ -252,7 +347,7 @@ const assert = require('node:assert/strict');
       await page.goto('http://127.0.0.1:8765/?incremental-fixture=1#inicio', { waitUntil: 'domcontentloaded' });
       const newCard = page.locator('#viajes a[href="#viaje/' + testId + '"]');
       await newCard.waitFor();
-      assert.equal(await page.locator('#viajes .tripcard').count(), 5);
+      assert.equal(await page.locator('#viajes .tripcard').count(), 6);
       assert.equal(await page.locator('#ideas-viajes .idea-tripcard').count(), 15);
       const initialCardText = await newCard.innerText();
       assert.match(initialCardText, /Nuevo destino de prueba/);

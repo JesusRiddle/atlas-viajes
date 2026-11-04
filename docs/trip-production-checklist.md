@@ -18,6 +18,13 @@ Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se tra
 - [ ] Verificar que la tarjeta de inicio renderiza `introShort` completo y la sección Panorama sigue mostrando `intro`, también en móvil.
 - [ ] Al inicio ambos textos pueden permanecer `null`; la portada mostrará únicamente los campos disponibles, sin etiquetas de estado. Completarlos antes de cerrar la auditoría D.
 
+## Puerta de control obligatoria · contratos de transporte y renderizado
+- [ ] Antes de dar por terminada **Movilidad y conexiones (07)**, cada entrada de `majorTransport` debe pasar `AtlasTransportModel.validateTrip(trip)`: `options[]` no vacío; cada opción con `fares[]` no vacío, `selectedFare` existente, `journeys[].segments[]` y `selectedOption` válidos.
+- [ ] Si una tarifa no está publicada, usar `{ "id": "pending", "name": "Tarifa por cotizar", "price": null }`, seleccionarla con `selectedFare: "pending"`; nunca omitir `fares`, ni poner importe `0` o inventar precio.
+- [ ] Ejecutar la prueba real de **renderizado** de `AtlasMajorTransport.render(trip)` además de validar JSON y sintaxis. Un JSON parseable no garantiza que sus componentes puedan renderizarse.
+- [ ] Mantener prueba de regresión para datos incompletos y confirmar que toda la pantalla sigue cargando, incluyendo Desktop/Mobile. Reparar primero el dato y reforzar el componente para degradar elegantemente ante tarifas ausentes.
+- [ ] No declarar auditoría B/D aprobada si falla una prueba; documentar la línea, causa, corrección y resultado de CI.
+
 ## Checklist operativo por etapas y auditorías
 
 **Los viajes nuevos aparecen inmediatamente en Inicio, incluso con datos mínimos.** No utilizar etiquetas «borrador», «en planeación», «preliminar» ni marcadores de progreso públicos en sus tarjetas o encabezados. El progreso y los pendientes viven exclusivamente en `docs/trip-progress/<slug>.md`; los campos desconocidos se omiten o se presentan con «Por definir» dentro de la sección correspondiente. Los viajes antiguos se reconocen por `homeGroup: "ideas"` en `modules.js`, nunca por su posición. La vista de GitHub Pages refleja esos cambios solo después del merge y despliegue de `main`; en desarrollo, la rama se visualiza localmente o en una vista previa separada.
@@ -91,6 +98,28 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 ## Comunicación con el usuario
 Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados, resultados verificables, pendientes que requieren datos externos y decisión requerida. No pedir al usuario revisar pantalla por pantalla salvo anomalías realmente imposibles de probar. Evitar prometer que «todo está probado» si no se ejecutó la comprobación completa.
 
+## Puerta de control · vuelos con escala y precios variables
+- [ ] La ficha de un vuelo con escala muestra cada segmento y el aeropuerto de conexión, **nunca una sola línea origen–destino que simule vuelo directo**. Si faltan horas internas, mantener `null`; verificar continuidad de estaciones/aeropuertos, duración no negativa y renderizado en navegador.
+- [ ] SBB: los mínimos «desde CHF X» no sustituyen tarifas del día reservado. Comparar por fecha, clase, viajero y descuento: Point-to-Point flexible, Supersaver y Saver Day Pass (sujeto a área de validez y cupo), con y sin Swiss Half Fare Card.
+- [ ] Al presupuestar dos pases, mostrar cuánto queda del fondo para los trayectos no incluidos; advertir si la provisión es insuficiente, sin cambiar el monto a una cotización ficticia.
+
+## Correspondencia entre tarifa y dirección del traslado
+- [ ] Si `journeys` incluye ida **y regreso**, cada opción de tarifa seleccionable debe representar el costo **completo de ambos sentidos**: dos billetes sencillos o un pase ida/vuelta/24 horas válido. No presentar un sencillo de una dirección como precio del viaje redondo, aunque el valor unitario sea correcto.
+- [ ] Si solo existe un viaje de una dirección (por ejemplo, del hotel al aeropuerto el último día), el precio seleccionable puede ser sencillo y el registro debe contener únicamente ese `journey`.
+- [ ] Comprobar a nivel de datos y DOM **qué se compra**, validez temporal y zonal, descuentos sujetos a tarjeta, referencia oficial vigente y `budgetIncludedIn` para evitar doble cargo. Comparar también ruta práctica real: tren directo y caminata frente a autobús que quizá no llegue antes de una reserva temprana.
+
+## Tarifas oficiales con vigencia futura · control de edición
+- [ ] Verificar **fecha de entrada en vigor** de cada tarifario, no solo su precio o la fecha de consulta. Si un organismo publica precios actuales en HTML y una tabla PDF diferente que rige durante el viaje, usar la **edición válida para el día exacto** y enlazar la tabla.
+- [ ] Para zonas tarifarias, comprobar ruta, zona de origen/destino y reglas especiales de conteo (ej. Zürich 110 cuenta doble) antes de asignar tarifas o comparar billetes sencillos frente a pases de 24 horas.
+- [ ] Si una tarifa oficial 2027 ya está publicada, documentarla con su importe, descuento y fuente; si el carrito no devuelve tarifa para un trayecto distinto, dejarlo pendiente. Los mínimos «desde» no sustituyen precios particulares.
+- [ ] Asignar las fichas informativas nuevas a `budgetIncludedIn` cuando su costo ya está previsto dentro de un fondo global y verificar que el total no aumente dos veces.
+
+## Control cruzado de pases, tarifas y renderizado
+- [ ] Para cada precio verificar **qué producto** compra: tren simple, retorno, pase regional, paquete de invierno con equipo, suplemento de montaña, asiento opcional; tarifas de productos distintos no se sustituyen.
+- [ ] La sección Movilidad presenta en el DOM la comparación `railSummary` cuando exista; inspeccionar el texto después de abrir el desplegable de comparación en Desktop/Mobile, no basta comprobar que existe el JSON o el elemento cerrado.
+- [ ] Billetes ferroviarios con fecha futura no consultada conservan `price: null`; las tarifas antiguas son referencias fechadas y los puntos de equilibrio son escenarios matemáticos, nunca cotizaciones.
+- [ ] Comprobar que `budgetNote`, `expenses` y fuentes oficiales concuerdan; mostrar el riesgo de insuficiencia del fondo ferroviario sin inflar pagos confirmados ni duplicar pases.
+
 ## Control de divisas y presentación monetaria
 - [ ] Solo en viajes del formato nuevo: todo importe en moneda extranjera lleva inmediatamente la equivalencia `(... ≈ $X MXN)` en cada sección y tarjeta donde aparece, incluidos días, transportes, reservas, hoteles y gastos.
 - [ ] Los tipos de cambio tienen fuente y fecha, y las conversiones usan los snapshots de cada viaje cuando estén disponibles.
@@ -98,6 +127,15 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] Se auditan renderizado y datos para detectar monedas sin equivalencia, evitar dobles conversiones y no alterar enlaces, tiempos o números de referencia.
 
 **Alcance de cambios:** Los viajes históricos deben permanecer intactos y solo pueden consultarse para extraer ideas; ninguna solicitud general de edición del Atlas autoriza modificar sus JSON ni la visualización heredada. Aplicar cambios de contenido exclusivamente a los viajes del formato nuevo.
+
+## Puerta de control · arquitectura del Panorama (etapas 10, C y D)
+- [ ] En **cada viaje nuevo**, `practicalIndicators` contiene **exactamente tres IDs** en orden `style`, `language`, `entry`, con títulos exactos «Estilo de viaje», «Idioma y moneda», «Documentación y consejos prácticos». Rechazar indicadores `weather` o `climate`; la electricidad es parte de consejos prácticos, no el nombre de la tarjeta.
+- [ ] Las doce tarjetas de **Temporadas** de cada viaje nuevo muestran el intervalo como `−3 a 5 °C` (no `−3–5 °C`); el separador es ` a ` y el signo `−` indica exclusivamente temperaturas negativas. Verificar el HTML renderizado y dejar `pending` cuando no haya datos fiables.
+- [ ] `climate` es un campo separado y contiene **tres párrafos** (clima con temperaturas de referencia y riesgos, `*Qué llevar:*` y `*Horas de luz:*` con amanecer/atardecer locales y uso del día). Distinguir promedios de pronósticos y evitar información incompleta.
+- [ ] En **Desktop**, comprobar DOM y geometría: tres `.practical-indicator` en `.overview-intro` izquierda; `.overview-side` derecha contiene `.budget-teaser` y **exactamente una** `.overview-climate-card`. En **Mobile**, comprobar la misma pertenencia aunque la disposición se apile. No basta comparar títulos visualmente ni verificar nueve anclas.
+- [ ] Contrastar esquema y contenido del Panorama nuevo contra `docs/trip-editorial-guide.md` y un viaje nuevo ya validado, por ejemplo España–Portugal 2027 **solo como control editorial de composición**, nunca para copiar itinerario, temperaturas ni precios.
+- [ ] Las fuentes de divisas se obtienen dinámicamente para **cualquier moneda declarada** (`CHF`, `ARS`, `JPY`, `EUR`, etc.), no con lista limitada a EUR/USD/JPY; probar enlaces en Panorama.
+- [ ] Un fallo de ubicación, nombre o detalle del clima bloquea auditorías C/D, aunque las pruebas generales de JavaScript y JSON pasen.
 
 ## Aceptación específica del panorama en viajes nuevos
 - [ ] «Tu inversión aproximada» presenta proyección global o explica inequívocamente por qué solo hay subtotal; nunca confundir solo alojamiento con costo total.
@@ -109,6 +147,10 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] «Clima y luz» muestra franja superior del MISMO color que el estado del mes de inicio en «Temporadas» y su etiqueta correspondiente (Recomendable/Aceptable/Desaconsejable/Por definir), incluso si el JSON tiene fechas solo en `days[]` y no en `start`.
 
 - [ ] En viajes nuevos la tarjeta «Clima y luz» tiene el encabezado COMPLETO coloreado, no solo un borde; muestra la etiqueta del estado y utiliza `pending` / «Por definir» cuando aún no se conoce la fecha. Comprobar los cuatro estados y que el CSS esté limitado al formato nuevo.
+
+## Integridad visible del presupuesto
+- [ ] Para cada `expenses[].category` con costo estimado o cotizado, verificar que exista renglón visible en «Lo que cuesta el viaje» y que el total coincida; **no basta con que la partida sume internamente**. En particular, `transport` es provisión global pendiente de separar entre interurbano y urbano, no una categoría que se oculte.
+- [ ] Mostrar supuestos y sensibilidad del rango cuando haya gastos esenciales sin cotización. Probar el desglose en Desktop/Mobile, incluyendo el importe de movilidad, y distinguir meta presupuestaria de tarifa reservable.
 
 ## Comprobación de personas presupuestadas
 - [ ] Viajes nuevos: `travelerCount` declarado como entero positivo o `null` si está por definir.
