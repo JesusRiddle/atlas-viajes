@@ -199,11 +199,14 @@ const assert = require('node:assert/strict');
           assert.match(comparison, /CHF 51/, 'La mitad de tarifa oficial Gornergrat debe mostrarse');
           assert.match(comparison, /CHF 198/, 'El umbral Half Fare incluye ahorro de Gornergrat');
           assert.doesNotMatch(comparison, /Winter Pass CHF 102|NO es el billete convencional de ida y vuelta/i);
-          assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 11,
+          assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 12,
             'La comparativa de Suiza incluye productos turísticos, billetes Saver y sensibilidad económica');
           assert.match(comparison, /Saver Day Pass/);
           assert.match(comparison, /CHF 326/, 'Costo de adquirir ambos pases y riesgo presupuestario');
           assert.match(comparison, /CHF 14\.80/, 'La tarifa ZVV para 2027 se ve en Movilidad');
+          assert.match(comparison, /Zúrich → aeropuerto/, 'La conexión al aeropuerto debe estar documentada');
+          const airportZvv = page.locator('#traslados .mt-card').filter({hasText:'Zürich Flughafen'});
+          assert.ok(await airportZvv.count() >= 1);
           const zvvCard = page.locator('#traslados .mt-card').filter({hasText:'Kilchberg'});
           assert.ok(await zvvCard.count() >= 1, 'La ficha ZVV debe aparecer');
           const faresText = await zvvCard.first().innerText();
