@@ -403,8 +403,8 @@ test('Panorama editorial de los cinco viajes desarrollados: exactamente tres ind
 test('Los cinco viajes nuevos muestran intervalos térmicos sin guiones ambiguos', () => {
     const ids = ['suiza-nevada-2027', 'italia-norte-2027', 'espana-portugal-2027',
         'japon-2027', 'patagonia-argentina-2027'];
-    const validRange = /[−]?\\d{1,2} a [−]?\\d{1,2} °C/;
-    const legacyRange = /[−-]?\\d{1,2}\\s*[–—-]\\s*[−-]?\\d{1,2}\\s*°\\s*C/;
+    const validRange = /[−]?\d{1,2} a [−]?\d{1,2} °C/;
+    const legacyRange = /[−-]?\d{1,2}\s*[–—-]\s*[−-]?\d{1,2}\s*°\s*C/;
     const seasonWindow = { AtlasSeasonality: null };
     vm.runInNewContext(fs.readFileSync('components/seasonality.js', 'utf8'), { window: seasonWindow });
     for (const id of ids) {
@@ -417,7 +417,7 @@ test('Los cinco viajes nuevos muestran intervalos térmicos sin guiones ambiguos
         const rendered = seasonWindow.AtlasSeasonality({ esc: String }).seasonality(trip);
         const shown = [...rendered.matchAll(/class="season-temperature">([^<]+)</g)].map(match => match[1]);
         assert.equal(shown.length, 12, id + ': doce temperaturas visibles');
-        assert.ok(shown.every(value => /^[−]?\\d{1,2} a [−]?\\d{1,2} °C$/.test(value)),
+        assert.ok(shown.every(value => /^[−]?\d{1,2} a [−]?\d{1,2} °C$/.test(value)),
             id + ': mostrar «−3 a 5 °C», sin separador de guion');
     }
 });
