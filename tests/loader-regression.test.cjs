@@ -457,8 +457,13 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
     assert.equal(zvv.day, 11);
     assert.equal(zvv.budgetIncludedIn, 'rail-budget',
         'El costo ZVV ya está incluido en el presupuesto ferroviario');
-    assert.deepEqual(zvv.options[0].fares.map(f => f.price.amount), [14.8, 7.4, 7.4, 3.7],
-        'Tarifa ZVV tres zonas oficial vigente desde diciembre 2026');
+    assert.deepEqual(zvv.options[0].fares.map(f => f.price.amount), [14.8, 7.4, 14.8, 7.4],
+        'Cada tarifa de ZVV debe representar ida y vuelta, no un sencillo incompleto');
+    assert.deepEqual(zvv.options[0].fares.map(f => f.id),
+        ['24h-full','24h-half','two-singles-full','two-singles-half'],
+        'Alternativas completas: pase 24 horas o dos sencillos por ambos sentidos');
+    assert.ok(zvv.options[0].fares.every(f => /24 h|ida y vuelta/.test(f.name)),
+        'Ningún sencillo puede seleccionarse como el costo de un viaje redondo');
     assert.ok(trip.days[10].transportRefs.includes(zvv.id));
     assert.ok(trip.railSummary.some(row => row[0].includes('Zúrich–Kilchberg') && row[1].includes('CHF 14.80')));
 
