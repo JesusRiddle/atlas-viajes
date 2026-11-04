@@ -465,6 +465,16 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
     assert.ok(zvv.options[0].fares.every(f => /24 h|ida y vuelta/.test(f.name)),
         'Ningún sencillo puede seleccionarse como el costo de un viaje redondo');
     assert.ok(trip.days[10].transportRefs.includes(zvv.id));
+    const airport = trip.majorTransport.find(t => t.id === 'airport-return');
+    assert.equal(airport.budgetIncludedIn, 'rail-budget');
+    assert.deepEqual(airport.options[0].fares.map(f => f.price.amount), [7.4, 3.7],
+        'Aeropuerto Zürich zona 121, tres zonas y solo un sentido para 2027');
+    assert.equal(airport.options[0].journeys.length, 1);
+    assert.equal(trip.expenses.find(e => e.id === 'rail-budget').cost.amount, 10000,
+        'Ambas tarifas ZVV se incluyen en el fondo ferroviario original');
+    assert.ok(trip.railSummary.some(row => row[0].includes('aeropuerto') &&
+        row[1].includes('CHF 7.40')), 'Movilidad debe explicar tarifa ZVV de regreso al aeropuerto');
+
     assert.ok(trip.railSummary.some(row => row[0].includes('Zúrich–Kilchberg') && row[1].includes('CHF 14.80')));
 
     const flight = trip.majorTransport.find(item => item.id === 'flight-international');
