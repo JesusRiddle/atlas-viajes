@@ -45,7 +45,7 @@ Preservar el encabezado `triphero`, menú `subnav` y exactamente estas nueve sec
 
 1. **Panorama** (`plan`): introducción turística resaltada con `introHighlights`; indicadores prácticos de `practicalIndicators`, alojamientos y noches de `bases`, presupuesto `expenses` + `majorTransport`, tipos de cambio `exchangeRates` + `exchangeRateSnapshot` y tarjeta de clima/luz (`climate`). No duplicar las antiguas tarjetas «Salida y llegada · vuelos / Entre ciudades / Clima y luz / Ritmo y viajar solo».
 2. **Mapa** (`mapa`): `mapPoints` con coordenadas reales y mapa interactivo. No crear pines ficticios.
-3. **Temporadas** (`temporadas`): `seasonality.months` con los 12 meses, temperatura y estado; mostrar pendientes sin inventar condiciones.
+3. **Temporadas** (`temporadas`): `seasonality.months` con los 12 meses, temperatura y estado; cada intervalo debe leerse `−3 a 5 °C` o `6 a 11 °C`, con ` a ` como separador y `−` solo como signo de temperatura negativa. Mostrar pendientes sin inventar condiciones.
 4. **Experiencias** (`experiencias`): `experiences` con presentación editorial en tarjetas y distribución de columnas; lugares y gastronomía local cuando proceda.
 5. **Reservaciones** (`reservas`): título visible **«Reservaciones importantes»**; `planningDetails.reservationTitle`, `reservationNote`, `reservations` agrupadas por prioridad y enlaces oficiales. No tratar reservas pendientes como compras.
 6. **Traslados** (`traslados`): `majorTransport`, alternativas, precios por tarifa, viajes de ida y vuelta, segmentos, estaciones/paradas, Google Maps, indicaciones de abordaje, condiciones y reglas de validez de billetes. No duplicar costes cubiertos por pases.
