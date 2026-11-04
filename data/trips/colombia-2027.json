@@ -108,7 +108,9 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [
+        "flight-international"
+      ]
     },
     {
       "n": 2,
@@ -168,7 +170,9 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [
+        "flight-domestic"
+      ]
     },
     {
       "n": 6,
@@ -288,14 +292,229 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [
+        "flight-international"
+      ]
     }
   ],
-  "reservations": [],
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Parque Tayrona · viernes 22 enero 2027",
+          "description": "SIN COMPRAR. Confirmar apertura extraordinaria y calendario de cierres, cupos, ingreso por El Zaino, senderos habilitados, tarifa y seguro obligatorio si aplica. Si el parque cierra, conservar la estancia natural y sustituir caminata por actividades autorizadas; valorar reordenar noches solo con cancelación flexible.",
+          "links": [
+            {
+              "label": "Parques Nacionales Naturales de Colombia",
+              "url": "https://www.parquesnacionales.gov.co/"
+            }
+          ]
+        },
+        {
+          "title": "Vuelos Copa multidestino y Avianca interno",
+          "description": "SIN COMPRAR. Copa MEX→PTY→MDE 14 enero, CTG→PTY→MEX 26 enero; Avianca directo MDE→SMR 18 enero. Verificar precio total y equipaje en pantalla de pago, terminal y margen de conexión antes de compra.",
+          "links": [
+            {
+              "label": "Copa Airlines",
+              "url": "https://www.copaair.com/"
+            },
+            {
+              "label": "Avianca",
+              "url": "https://www.avianca.com/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Ecolodge próximo a El Zaino · 21–23 enero",
+          "description": "SIN RESERVAR. Cotizar 1 adulto con baño privado, precio final, impuestos, desayunos y cancelación flexible. Preferencia Senda Koguiwa; contrastar Watapuy y Villa María.",
+          "links": [
+            {
+              "label": "Senda Hotels",
+              "url": "https://www.sendahotels.com/"
+            }
+          ]
+        },
+        {
+          "title": "Traslado Tayrona → Cartagena · sábado 23 enero",
+          "description": "SIN RESERVAR. Comparar shuttle desde la entrada de El Zaino y transporte privado puerta a puerta desde ecolodge. Confirmar horarios 2027, punto de encuentro, equipaje y llegada al hotel.",
+          "links": [
+            {
+              "label": "Marsol · sitio oficial",
+              "url": "https://www.marsol.com.co/"
+            }
+          ]
+        },
+        {
+          "title": "Excursión guiada Comuna 13 y Guatapé",
+          "description": "SIN RESERVAR. Elegir guías y transportistas identificables, verificar inclusiones, horarios y políticas de cambios. Guatapé es sábado; salir temprano para limitar aglomeraciones.",
+          "links": []
+        }
+      ]
+    ],
+    [
+      "Opcionales",
+      [
+        {
+          "title": "Minca · finca cafetera y cascadas",
+          "description": "Confirmar acceso vial, operador y estado de senderos; no depende de reserva hasta seleccionar el servicio.",
+          "links": []
+        },
+        {
+          "title": "Taganga → Playa Grande",
+          "description": "Visita de medio día sujeta al estado del mar. Utilizar solamente lancha autorizada y chaleco salvavidas; NO caminar por el sendero por reportes de robos.",
+          "links": []
+        },
+        {
+          "title": "Islas del Rosario · Cartagena",
+          "description": "No reservar automáticamente: el día 25 se prefiere Cartagena sin prisas; elegir pasadía solo si el clima y ganas lo justifican.",
+          "links": []
+        }
+      ]
+    ]
+  ],
   "exchangeRates": {},
   "exchangeRateSnapshot": null,
   "expenses": [],
-  "majorTransport": [],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Copa Airlines · vuelos internacionales multidestino",
+      "day": null,
+      "selectedOption": "A",
+      "budgetIncludedIn": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Copa Airlines",
+          "status": "planning",
+          "selectedFare": "candidate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "PTY",
+                  "departure": "2027-01-14T09:10",
+                  "arrival": null,
+                  "operator": "Copa Airlines"
+                },
+                {
+                  "from": "PTY",
+                  "to": "MDE",
+                  "departure": null,
+                  "arrival": "2027-01-14T17:00",
+                  "operator": "Copa Airlines"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "CTG",
+                  "to": "PTY",
+                  "departure": "2027-01-26T15:05",
+                  "arrival": null,
+                  "operator": "Copa Airlines"
+                },
+                {
+                  "from": "PTY",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": "2027-01-26T22:05",
+                  "operator": "Copa Airlines"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "candidate",
+              "name": "Tarifa candidata · no comprada",
+              "price": {
+                "amount": 10303,
+                "currency": "MXN"
+              },
+              "changes": "Verificar condiciones antes del pago",
+              "refunds": "Verificar condiciones antes del pago"
+            }
+          ],
+          "notes": "Total multidestino observado el 04/11/2026, equipaje de mano incluido; escala ida 1 h 42 min y regreso 2 h 55 min, condiciones por revalidar."
+        }
+      ],
+      "links": [
+        {
+          "label": "Web oficial del operador",
+          "url": "https://www.copaair.com/"
+        }
+      ],
+      "boardingLocations": [],
+      "boardingNote": "Horarios y terminales por reconfirmar antes de comprar.",
+      "ticketGuide": "No se han emitido billetes. Comparar tarifa de pago final, equipaje, cambios y reembolsos.",
+      "notes": "Precio observado como referencia de planeación; no añadir dos veces al presupuesto."
+    },
+    {
+      "id": "flight-domestic",
+      "type": "flight",
+      "title": "Avianca AV 9446 · Medellín → Santa Marta",
+      "day": 5,
+      "selectedOption": "A",
+      "budgetIncludedIn": null,
+      "options": [
+        {
+          "id": "A",
+          "provider": "Avianca",
+          "status": "planning",
+          "selectedFare": "candidate",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "MDE",
+                  "to": "SMR",
+                  "departure": "2027-01-18T12:00",
+                  "arrival": "2027-01-18T13:15",
+                  "operator": "Avianca AV 9446"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "candidate",
+              "name": "Tarifa candidata · no comprada",
+              "price": {
+                "amount": 217580,
+                "currency": "COP"
+              },
+              "changes": "Verificar condiciones antes del pago",
+              "refunds": "Verificar condiciones antes del pago"
+            }
+          ],
+          "notes": "Tarifa Classic observada 04/11/2026, COP 217,580 (equivalencia aproximada aportada: $1,244 MXN), con cabina 10 kg y documentada 23 kg según oferta; no comprado. Verificar reglas finales."
+        }
+      ],
+      "links": [
+        {
+          "label": "Web oficial del operador",
+          "url": "https://www.avianca.com/"
+        }
+      ],
+      "boardingLocations": [],
+      "boardingNote": "Horarios y terminales por reconfirmar antes de comprar.",
+      "ticketGuide": "No se han emitido billetes. Comparar tarifa de pago final, equipaje, cambios y reembolsos.",
+      "notes": "Precio observado como referencia de planeación; no añadir dos veces al presupuesto."
+    }
+  ],
   "ticketNotes": [],
   "attractionTerms": [],
   "cover": null,
@@ -304,8 +523,87 @@
   "lodgingSummary": "12 noches repartidas en cuatro alojamientos: Medellín 4 (Manila, El Poblado), Santa Marta 3 (Centro Histórico, calle tranquila), Tayrona 2 (cerca de El Zaino) y Cartagena 3 (preferencia por San Diego). Hoteles aún sin reservar.",
   "heroLodgingSummary": "12 noches, 4 alojamientos",
   "budgetPreliminary": true,
-  "hotels": [],
-  "stays": [],
+  "hotels": [
+    {
+      "id": "med-landmark",
+      "city": "Medellín",
+      "name": "Landmark Hotel",
+      "address": "Manila, El Poblado, Medellín, Colombia",
+      "checkIn": "2027-01-14",
+      "checkOut": "2027-01-18",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo para Medellín: $4,000–5,600 MXN por 4 noches; no es cotización de Landmark.",
+      "rateConditions": "1 adulto, habitación y baño privados; comprobar habitación con ventana, impuestos, desayuno, condiciones y cancelación flexible.",
+      "notes": "Favorito por confort e instalaciones; alternativa 574 Hotel.",
+      "links": [],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Landmark%20Hotel%20Manila%20Medell%C3%ADn"
+    },
+    {
+      "id": "sm-isabella",
+      "city": "Santa Marta",
+      "name": "Casa de Isabella",
+      "address": "Centro Histórico, Santa Marta, Colombia",
+      "checkIn": "2027-01-18",
+      "checkOut": "2027-01-21",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo para Santa Marta: $3,000–4,500 MXN por 3 noches; no es cotización.",
+      "rateConditions": "1 adulto, habitación y baño privados, con aire acondicionado, poco ruido nocturno y cancelación flexible.",
+      "notes": "Solicitar habitación interior tranquila; consultar estado de ventilación y luz.",
+      "links": [],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20de%20Isabella%20Santa%20Marta"
+    },
+    {
+      "id": "tay-koguiwa",
+      "city": "Tayrona",
+      "name": "Senda Koguiwa",
+      "address": "Sector El Zaino, Santa Marta, Magdalena, Colombia",
+      "checkIn": "2027-01-21",
+      "checkOut": "2027-01-23",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo ecolodge: $4,000–5,500 MXN por 2 noches; no es cotización del hotel.",
+      "rateConditions": "1 adulto, baño privado y cancelación flexible, especialmente ante cierres del parque.",
+      "notes": "Primera opción por acceso a El Zaino; alternativa Senda Watapuy, después Villa María Tayrona.",
+      "links": [
+        {
+          "label": "Sitio oficial de cadena Senda",
+          "url": "https://www.sendahotels.com/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Senda%20Koguiwa%20Tayrona"
+    },
+    {
+      "id": "ct-lafe",
+      "city": "Cartagena",
+      "name": "Casa La Fe",
+      "address": "San Diego, Ciudad Amurallada, Cartagena de Indias, Colombia",
+      "checkIn": "2027-01-23",
+      "checkOut": "2027-01-26",
+      "status": "Candidato · no reservado",
+      "rate": "Objetivo para Cartagena: $4,500–6,000 MXN por 3 noches; no es cotización de Casa La Fe.",
+      "rateConditions": "1 adulto, baño privado y habitación silenciosa; verificar piscina, desayuno, cargos y cancelación.",
+      "notes": "Comparar con Bantú y alternativas boutique tranquilas en San Diego; no pagar sobreprecio injustificado.",
+      "links": [],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20La%20Fe%20Cartagena%20Colombia"
+    }
+  ],
+  "stays": [
+    [
+      "Medellín · 14–18 enero · 4 noches",
+      "Landmark o 574 Hotel en Manila/El Poblado; sin reservas; objetivo conjunto $4,000–5,600 MXN."
+    ],
+    [
+      "Santa Marta · 18–21 enero · 3 noches",
+      "Casa de Isabella u hotel boutique en calle tranquila del Centro Histórico; sin reserva; objetivo $3,000–4,500 MXN."
+    ],
+    [
+      "Tayrona · 21–23 enero · 2 noches",
+      "Senda Koguiwa, Watapuy o Villa María; cerca del acceso El Zaino; sin reserva; objetivo $4,000–5,500 MXN."
+    ],
+    [
+      "Cartagena · 23–26 enero · 3 noches",
+      "Casa La Fe, Bantú o equivalente en San Diego; sin reserva; objetivo $4,500–6,000 MXN."
+    ]
+  ],
   "seasonality": {
     "summary": "Enero es una ventana elegida para Medellín y el Caribe colombiano. Confirmar climatología regional y cierre efectivo de Tayrona antes de viajar; las doce fichas mensuales requieren investigación y verificación.",
     "months": {
@@ -359,8 +657,34 @@
       }
     }
   },
-  "practicalIndicators": [],
-  "tips": [],
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Equilibrado · 4 alojamientos",
+      "tone": "green",
+      "text": "Viaje individual de trece días con excursiones intensas alternadas con pausas. Cuatro alojamientos para doce noches; énfasis en habitaciones privadas, descanso y conexiones sin retrocesos."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Español · COP",
+      "tone": "green",
+      "text": "El español es el idioma principal. La moneda es el peso colombiano (COP). Los equivalentes a MXN de precios extranjeros requieren tipo de cambio vigente y documentado antes de reservar; evitar conversiones dinámicas desfavorables al pagar."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Revisar antes de salir",
+      "tone": "orange",
+      "text": "Consultar requisitos migratorios para mexicanos en fuentes oficiales antes de comprar: pasaporte, posibles controles sanitarios, seguro y condiciones de conexión por Panamá. Electricidad colombiana normalmente 110 V y enchufes tipo A/B; comprobar cargadores. Usar transportes autorizados y precaución contra hurtos en zonas concurridas."
+    }
+  ],
+  "tips": [
+    "Taganga–Playa Grande: no usar sendero peatonal por reportes de robos; lancha autorizada con chaleco, precio acordado y retorno diurno.",
+    "Tayrona: comprobar acceso real, estado de senderos, zonas de baño permitidas y cierres extraordinarios. Evitar reservas no reembolsables en el sector.",
+    "Aeropuertos y conexiones: todos los vuelos son candidatos; verificar tarifas, equipaje y tiempos efectivos de trasbordo antes de comprar."
+  ],
   "sources": [],
   "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
   "budgetRange": null,
