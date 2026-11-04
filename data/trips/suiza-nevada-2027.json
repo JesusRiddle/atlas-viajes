@@ -400,8 +400,8 @@
       "am": "1. Tomar transporte público de Zúrich a Kilchberg; reservar margen para llegar a la entrada del Lindt Home of Chocolate.\n2. Entrar en franja objetivo 10:00, aún sin comprar; recorrer exposición y fuente de chocolate.",
       "pm": "1. Regresar por tren/autobús según ruta SBB/ZVV, almorzar por el centro.\n2. Pasear por la orilla del lago, calles históricas y Lindenhof si faltó el domingo; sin Kunsthaus.",
       "night": "1. Última noche en Zúrich.\n2. Preparar documentación, equipaje y traslado al aeropuerto.",
-      "mobility": "• *Zúrich → Kilchberg:* Zürich HB → Kilchberg (tren S-Bahn y caminata o autobús ZVV hasta la zona de Lindt), vuelta equivalente.\n• *Horario oficial:* Consultar SBB/ZVV para el 1 febrero; no asumir que el pase Jungfrau cubre Zúrich.\n• *Entrada a Lindt:* Tarifa adulto Lindt CHF 17 (≈ $390 MXN) publicada, entrada sin reservar.\n• *Tarifa ZVV 2027:* Zona 110 (Zúrich, contabilizada doble) más 150 (Kilchberg) = tres zonas. Sencillo CHF 7.40 (≈ $170 MXN) o CHF 3.70 (≈ $85 MXN) con Half Fare; ida/vuelta: CHF 14.80 (≈ $340 MXN) sin tarjeta o CHF 7.40 (≈ $170 MXN) con tarjeta. Pase de 24 h por igual importe y más flexibilidad.",
-      "note": "• *Horario y entrada:* La visita del lunes debe confirmarse en calendario oficial 2027.\n• *Alérgenos:* Revisa ingredientes y alérgenos si haces degustación de chocolate; hay productos con leche.\n• *Billete a Lindt:* Para el 1/02/2027 el tarifario oficial vigente desde 13/12/2026 confirma tres zonas. No pagar billetes sencillos más pase de 24 h; elegir uno de los dos.",
+      "mobility": "• *Zúrich → Kilchberg:* Zürich HB → Kilchberg ZH en S8 o S24, caminata de unos 10 minutos hasta Lindt Home of Chocolate; vuelta equivalente. Opción autobús 165 desde Bürkliplatz (operación por horario; no asumir llegada para la entrada de las 10:00).\n• *Horario oficial:* Consultar SBB/ZVV para el 1 febrero; no asumir que el pase Jungfrau cubre Zúrich.\n• *Entrada a Lindt:* Tarifa adulto Lindt CHF 17 (≈ $390 MXN) publicada, entrada sin reservar.\n• *Tarifa ZVV 2027:* Zona 110 (Zúrich, contabilizada doble) más 150 (Kilchberg) = tres zonas. Sencillo CHF 7.40 (≈ $170 MXN) o CHF 3.70 (≈ $85 MXN) con Half Fare; ida/vuelta: CHF 14.80 (≈ $340 MXN) sin tarjeta o CHF 7.40 (≈ $170 MXN) con tarjeta. Pase de 24 h por igual importe y más flexibilidad.",
+      "note": "• *Horario y entrada:* La visita del lunes debe confirmarse en calendario oficial 2027.\n• *Alérgenos:* Revisa ingredientes y alérgenos si haces degustación de chocolate; hay productos con leche.\n• *Billete a Lindt:* Para el 1/02/2027 el tarifario oficial vigente desde 13/12/2026 confirma tres zonas. No pagar billetes sencillos más pase de 24 h; elegir uno de los dos.\n• *Conexión para llegar a las 10:00:* Priorizar S8/S24 y paseo desde Kilchberg ZH; el autobús 165 empieza su frecuencia reforzada desde las 10:00, de modo que no es la opción ideal para una entrada puntual a esa hora.",
       "spend": null,
       "places": [
         "swiss27-lindt",
@@ -1260,27 +1260,27 @@
               "refunds": "Según reglas ZVV"
             },
             {
-              "id": "single-full",
-              "name": "Sencillo · 3 zonas · adulto, 2ª clase",
+              "id": "two-singles-full",
+              "name": "Dos sencillos · ida y vuelta · 3 zonas · adulto",
+              "price": {
+                "amount": 14.8,
+                "currency": "CHF"
+              },
+              "changes": "2 billetes sencillos de CHF 7.40, uno por sentido; validez 1 h por billete",
+              "refunds": "Según reglas ZVV"
+            },
+            {
+              "id": "two-singles-half",
+              "name": "Dos sencillos · ida y vuelta · 3 zonas · Half Fare",
               "price": {
                 "amount": 7.4,
                 "currency": "CHF"
               },
-              "changes": "Validez de una hora, solo una dirección",
-              "refunds": "Según reglas ZVV"
-            },
-            {
-              "id": "single-half",
-              "name": "Sencillo · 3 zonas · Half Fare",
-              "price": {
-                "amount": 3.7,
-                "currency": "CHF"
-              },
-              "changes": "Validez de una hora, exige tarjeta válida",
+              "changes": "2 billetes sencillos reducidos de CHF 3.70, uno por sentido; tarjeta válida obligatoria",
               "refunds": "Según reglas ZVV"
             }
           ],
-          "notes": "Zürich zona 110 computa doble y Kilchberg zona 150 añade una zona: tarifa de 3 zonas. Un ida/vuelta de sencillos cuesta lo mismo que el pase de 24h. Publicación oficial ZVV aplicable a la fecha 01/02/2027; transporte incluido dentro del presupuesto ferroviario, no sumarlo una segunda vez."
+          "notes": "Toda tarifa seleccionable cubre ida y vuelta. Las 4 alternativas comparan dos sencillos frente a una tarjeta de 24 h. Sencillo individual (NO ida y vuelta) CHF 7.40, con Half Fare CHF 3.70. Zürich HB (zona 110 contada doble) → Kilchberg ZH (zona 150): 3 zonas en total. Tabla oficial ZVV vigente desde 13/12/2026. Tren S8 o S24, más caminata aproximada de 10 min a Lindt. Billete incluido en el fondo presupuestario de movilidad de $10,000 MXN."
         }
       ],
       "links": [
@@ -1291,6 +1291,10 @@
         {
           "label": "ZVV · planificador",
           "url": "https://www.zvv.ch/en/timetable-and-information/timetable.html"
+        },
+        {
+          "label": "Lindt · cómo llegar (S8, S24, autobús 165)",
+          "url": "https://www.lindt-home-of-chocolate.com/en/directions/"
         }
       ],
       "budgetIncludedIn": "rail-budget"
@@ -1330,7 +1334,7 @@
     },
     {
       "title": "ZVV · Zúrich–Kilchberg 1 febrero 2027",
-      "note": "Zonas 110+150 equivalen a tres zonas tarifarias. Tarifa oficial desde diciembre de 2026: ticket 24h CHF 14.80 (≈ $340 MXN) o CHF 7.40 (≈ $170 MXN) con Half Fare. No confundir con el tarifario antiguo de CHF 14.40 / CHF 7.20. Precio incluido en fondo terrestre, sin reserva.",
+      "note": "Tarifario ZVV vigente desde el 13/12/2026: tres zonas (110 doble y 150). Sencillo por sentido CHF 7.40 / 3.70 Half Fare; dos sencillos ida y vuelta CHF 14.80 / 7.40 Half Fare, igual que abono de 24 horas para esas zonas. Todas las alternativas seleccionables en Movilidad cubren ida y regreso. En tren S8/S24 se caminan unos 10 minutos hasta Lindt.",
       "url": "https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf"
     }
   ],
@@ -1694,6 +1698,10 @@
     [
       "Tarifario oficial ZVV aplicable desde 13/12/2026 (tres zonas)",
       "https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf"
+    ],
+    [
+      "Lindt Home of Chocolate · acceso oficial en tren S8/S24",
+      "https://www.lindt-home-of-chocolate.com/en/directions/"
     ]
   ],
   "sourceNote": null,
