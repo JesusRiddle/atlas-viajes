@@ -317,8 +317,8 @@
       "am": "1. Comprobar el parte meteorológico y webcam de Gornergrat antes de comprar el billete.\n2. Si el Matterhorn está visible, caminar a Gornergrat Bahn junto a la estación y subir en tren de cremallera.",
       "pm": "1. Contemplar panorámica del macizo, glaciares y cumbres desde zonas habilitadas, sin entrar en pistas de esquí.\n2. Regresar a Zermatt y almorzar o visitar el casco antiguo con luz de tarde.",
       "night": "1. Segunda noche en Zermatt, con cena y fotografías nocturnas si las condiciones lo permiten.\n2. Si el ascenso se canceló por clima, reservar el día 30 como segunda oportunidad.",
-      "mobility": "• *Tren de cremallera:* Zermatt GGB → Gornergrat en tren de cremallera ida y vuelta.\n• *Tarifa de ida y vuelta:* Consultar tarifas de ida/vuelta y descuento Half Fare Card; no comprar dos sencillos sin comparar con el billete redondo.\n• *Senderos y miradores:* Accesos a miradores dependen de nieve y seguridad.",
-      "note": "• *Matterhorn y nubes:* Gornergrat es prioridad, pero cielo despejado pesa más que fecha exacta.\n• *Riffelsee en invierno:* No esperar el reflejo del Matterhorn en Riffelsee: puede estar congelado o cubierto de nieve en enero.",
+      "mobility": "• *Tren de cremallera:* Zermatt GGB → Gornergrat en tren de cremallera ida y vuelta.\n• *Tarifa de ida y vuelta:* Billete ida y vuelta CHF 102 (≈ $2,342 MXN), o CHF 51 (≈ $1,171 MXN) con Swiss Half Fare Card, según tabla oficial 2026/27; sujeto a modificaciones.\n• *Senderos y miradores:* Accesos a miradores dependen de nieve y seguridad.",
+      "note": "• *Matterhorn y nubes:* Gornergrat es prioridad, pero cielo despejado pesa más que fecha exacta.\n• *Riffelsee en invierno:* No esperar el reflejo del Matterhorn en Riffelsee: puede estar congelado o cubierto de nieve en enero.\n• *Billete Gornergrat:* Retorno por tren ordinario CHF 102 (≈ $2,342 MXN) (Half Fare CHF 51 (≈ $1,171 MXN)); revisar visibilidad antes de comprar.",
       "spend": null,
       "places": [
         "swiss27-gornergrat-winter",
@@ -670,7 +670,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión $6,500 MXN incluye Lindt, Gornergrat y opcional Jungfraujoch (Top Ticket CHF 63 ≈ $1,446 MXN, confirmado para temporada 2026/27). Si no se sube al Jungfraujoch, no se compra su suplemento. Nunca duplicar en entradas el acceso a First/Wengen/Mürren/Männlichen cubierto por pase regional. La tarifa real del tren convencional Zermatt–Gornergrat ida/vuelta para enero 2027 está pendiente. No confundir con Winter Pass CHF 102 (≈ $2,342 MXN), que incluye material y servicios de trineo, y se reduce a CHF 72 (≈ $1,653 MXN) con Half Fare."
+      "notes": "Provisión $6,500 MXN: tren convencional Gornergrat ida/vuelta CHF 102 (≈ $2,342 MXN) o CHF 51 (≈ $1,171 MXN) con Half Fare (tarifa oficial noviembre 2026–abril 2027), Lindt CHF 17 (≈ $390 MXN) y Jungfraujoch Top Ticket CHF 63 (≈ $1,446 MXN) solo si el tiempo permite la excursión. La suma de estos tres conceptos a tarifa completa de Gornergrat es ≈ $4,178 MXN, el resto del fondo es colchón. No duplicar atracciones cubiertas por el pase Jungfrau."
     },
     {
       "id": "meals-1",
@@ -1192,9 +1192,9 @@
       "url": "https://www.zentralbahn.ch/en/experience/leisure/luzern-interlaken-express"
     },
     {
-      "title": "Gornergrat · tren simple o Winter Pass",
-      "note": "Visita panorámica: cotizar el billete de tren Zermatt–Gornergrat ida/vuelta, no el Winter Pass con trineo. El descuento del 50 % con Swiss Half Fare Card aplica al billete de tren.",
-      "url": "https://www.gornergrat.ch/en/products/ticket"
+      "title": "Gornergrat · tren de cremallera 2026/27",
+      "note": "Billete convencional Zermatt–Gornergrat ida/vuelta CHF 102 (≈ $2,342 MXN), o CHF 51 (≈ $1,171 MXN) con Swiss Half Fare Card, según tabla oficial 2026/27. NO es Winter Pass. Verificar nuevamente antes de pagar.",
+      "url": "https://www.gornergrat.ch/en/pages/prices-gornergrat-bahn"
     }
   ],
   "attractionTerms": [],
@@ -1323,7 +1323,7 @@
     "marginMXN": 4000,
     "useBudgetRange": true,
     "referenceFlightMXN": 20331,
-    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales."
+    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales. Gornergrat tren oficial CHF 102 retorno (CHF 51 con Half Fare), invierno 2026/27. La oferta Luzern–Interlaken «desde CHF 34» no es cotización del tramo completo Luzern–Grindelwald. La tarifa exacta SBB sigue pendiente."
   },
   "hotels": [
     {
@@ -1539,8 +1539,16 @@
       "https://www.zentralbahn.ch/en/experience/leisure/luzern-interlaken-express"
     ],
     [
-      "Gornergrat · Winter Pass vs billete ferroviario",
-      "https://www.gornergrat.ch/en/products/winter-pass"
+      "Tabla oficial de precios Gornergrat noviembre 2026–abril 2027",
+      "https://assets.contenthub.dev/xshiytapvw9a/f192accceaccad3d7c36211dde71cc5a/Preise%20GGB%202026-2027final.pdf"
+    ],
+    [
+      "Suiza Turismo · oferta de Luzern–Interlaken desde CHF 34",
+      "https://www.myswitzerland.com/es-es/planificacion/ofertas/billete-de-luzern-interlaken-express-sin-reserva/"
+    ],
+    [
+      "SBB · billetes Supersaver: condiciones y venta",
+      "https://www.sbb.ch/en/help-and-contact/products-services/tickets/switzerland/supersaver-tickets-saver-day-passes.html"
     ]
   ],
   "sourceNote": null,
@@ -1548,7 +1556,7 @@
     75000,
     85000
   ],
-  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y suplemento Jungfraujoch CHF 63 solo si se elige, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. La provisión de movilidad de $10,000 MXN puede resultar insuficiente; los billetes nacionales y el tren simple Gornergrat no están cotizados para enero de 2027. Son provisiones: el pase Jungfrau y Top Ticket tienen precios oficiales de temporada 2026/27, pero el coste conjunto de billetes nacionales y Gornergrat no está cerrado y podría exigir aumentar el presupuesto. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
+  "budgetNote": "Estimado para una persona: vuelos $20,331; 10 noches $31,750; movilidad $10,000 (incluye UNA estrategia de pases y trayectos faltantes); excursiones/entradas $6,500 (Gornergrat, Lindt y suplemento Jungfraujoch CHF 63 solo si se elige, sin duplicar First u otras líneas cubiertas por el pase); comidas $9,000 distribuidas por 11 fechas (sin asignar consumo completo al día del vuelo de salida); seguro, tasas, equipaje e imprevistos $4,400. Total $81,981 MXN, rango objetivo $75,000–$85,000. La provisión de movilidad de $10,000 MXN puede resultar insuficiente; los billetes SBB nacionales no están cotizados para las fechas exactas, pero Gornergrat sí tiene tabla oficial 2026/27. Son provisiones: el pase Jungfrau y Top Ticket tienen precios oficiales de temporada 2026/27, pero el coste conjunto de billetes nacionales no está cerrado y podría exigir aumentar el presupuesto. El regreso el 3 febrero temprano podría implicar un día laboral adicional.",
   "placeDescriptions": {
     "lucerne": "En la ciudad vieja de Lucerna, el Kapellbrücke cruza el río Reuss bajo una cubierta de madera y conecta plazas históricas entre montañas.",
     "lake-lucerne": "El lago de los Cuatro Cantones une bahías, pueblos y montañas; desde sus orillas en Lucerna se contempla el paisaje alpino sin un ascenso.",
@@ -1607,20 +1615,20 @@
       "Swiss Travel Pass de 15 días en 2ª clase CHF 499 (≈ $11,455 MXN), precio 2027 sin cambios. Su costo excede la provisión actual de movilidad antes de sumar posibles excursiones de montaña no incluidas; descartado como compra por defecto. Un pase de 8 días consecutivos no cubre las 11 fechas de estancia sin billetes adicionales."
     ],
     [
-      "Punto de equilibrio y decisión",
-      "Half Fare Card conviene si los descuentos de billetes NO incluidos por Jungfrau (aeropuerto, Luzern–Interlaken, Grindelwald–Zermatt, Zermatt–Zúrich, Zúrich local y Gornergrat) superan CHF 150 (≈ $3,444 MXN). Un descuento del 50 % exigiría gastos de tarifa normal superiores a CHF 300 (≈ $6,887 MXN); algunos tramos tienen descuentos menores. Sin cotización individual exacta no hay ganador demostrado."
-    ],
-    [
       "Riesgo de presupuesto ferroviario",
       "Los $10,000 MXN son una provisión, no suma de billetes verificados. Tras el pase Jungfrau ($4,040 MXN) quedarían ~$5,960 MXN para trenes nacionales y movilidad urbana. Puede ser insuficiente si los horarios Saver no convienen; validar y recalcular antes de reservar vuelos/hoteles."
     ],
     [
-      "Gornergrat · no confundir tarifas",
-      "El Winter Pass CHF 102 (≈ $2,342 MXN) incluye el tren, trineo/raquetas y otros servicios; cuesta CHF 72 (≈ $1,653 MXN) con tarjetas admitidas. NO es el billete convencional de ida y vuelta. Para este viaje sin trineo, elegir solo el tren, cuyo precio de enero 2027 debe verificarse; con Swiss Half Fare Card tiene 50 % de descuento."
+      "Gornergrat · billete oficial de tren 2026/27",
+      "Tarifario oficial, edición junio de 2026: desde noviembre de 2026 hasta abril de 2027 el trayecto Zermatt–Gornergrat cuesta CHF 51 (≈ $1,171 MXN) de ida y CHF 102 (≈ $2,342 MXN) de ida/vuelta. La Swiss Half Fare Card da 50 % de descuento, por lo que el retorno reducido cuesta CHF 51 (≈ $1,171 MXN). No es una tarifa de Winter Pass ni del paquete Round Trip con telecabina; está sujeta a cambios."
     ],
     [
-      "Punto de equilibrio de descuentos (no una cotización)",
-      "Para trayectos ordinarios fuera del pase Jungfrau, F = importe normal. SIN Half Fare: 176 + F CHF; CON Half Fare (suponiendo 50 % en todos): 176 + 150 + F/2 CHF. Para F=250 CHF: 426 frente a 451; para F=350 CHF: 526 frente a 501. Equilibrio F=300 CHF (≈ $6,887 MXN). Los descuentos reales por tramo pueden ser menores; añadir por separado el efecto en Gornergrat, que está en Actividades."
+      "Punto de equilibrio con Gornergrat confirmado",
+      "Pase Jungfrau CHF 176 (≈ $4,040 MXN), tren Gornergrat CHF 102 (≈ $2,342 MXN). F = suma de otros billetes SBB/ZVV a tarifa completa (por cotizar). Sin Half Fare, costo combinado CHF 176+102+F; con Half Fare CHF 176+150+51+F/2, suponiendo todos los demás billetes con descuento del 50 %. Punto de equilibrio F = CHF 198 (≈ $4,545 MXN). Ejemplo F=250: CHF 528 sin Half Fare; CHF 502 con Half Fare. Ofertas Saver y mínimos pueden cambiar la cuenta."
+    ],
+    [
+      "Trayectos SBB por cotizar en fechas exactas",
+      "23 ene Zürich Flughafen–Luzern; 24 ene Luzern–Interlaken Ost–Grindelwald; 28 ene Grindelwald–Zermatt; 31 ene Zermatt–Zürich HB; 1 feb Zürich–Kilchberg ida/vuelta; 2 feb Zürich HB–Flughafen. Persona adulta, segunda clase, tarifa normal y con Half Fare, además de Supersaver. La oferta desde CHF 34 Luzern–Interlaken publicada hasta 30/1/2027 no es tarifa de la ruta completa a Grindelwald ni garantiza cupo al precio mínimo."
     ]
   ],
   "railTotal": "Por cotizar: provisión global de $10,000 MXN, sin desglose ferroviario definitivo",
