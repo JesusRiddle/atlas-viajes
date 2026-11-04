@@ -273,12 +273,14 @@
       "am": "Desayuno, checkout y salida desde el ecolodge en el horario acordado.",
       "pm": "Traslado terrestre directo desde sector El Zaino hacia Cartagena; llegada y registro en hotel boutique del centro.",
       "night": "Primer paseo breve por Ciudad Amurallada y cena.",
-      "mobility": "• *Cómo trasladarte:* Comparar vehículo privado puerta a puerta con shuttle Marsol desde El Zaino; verificar punto real de recogida, duración y entrega final.",
-      "note": "• *Tips del día:* Evitar regresar a Santa Marta solo para cambiar de transporte; los horarios publicados son referenciales y pueden variar.",
+      "mobility": "• *Cómo trasladarte:* Comparar Marsol desde la entrada El Zaino (salidas generales publicadas 12:00 y 14:00; aprox. 6 h) contra vehículo privado desde el ecolodge al hotel de Cartagena. Marsol termina en su oficina, no en la puerta del hotel; reservar el tramo final.",
+      "note": "• *Tips del día:* Evitar regresar a Santa Marta solo para cambiar de transporte; los horarios publicados son referenciales y pueden variar.\n• *Referencia no cotizada:* Marsol anuncia desde COP 130,000 (≈ $752 MXN con referencia del 03/11/2026) por trayecto; confirmar tarifa real, equipaje, punto de encuentro y operación del sábado 23.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": [],
+      "transportRefs": [
+        "bus-tayrona-cartagena"
+      ],
       "hotel": "ct-lafe",
       "mobilityLinks": [
         {
@@ -636,7 +638,24 @@
           "url": "https://www.copaair.com/"
         }
       ],
-      "boardingLocations": [],
+      "boardingLocations": [
+        {
+          "name": "Aeropuerto Internacional Benito Juárez (MEX)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Internacional%20Benito%20Ju%C3%A1rez%20Ciudad%20de%20M%C3%A9xico"
+        },
+        {
+          "name": "Aeropuerto Internacional de Tocumen (PTY)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Tocumen%20Panama"
+        },
+        {
+          "name": "Aeropuerto José María Córdova (MDE)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Jos%C3%A9%20Mar%C3%ADa%20C%C3%B3rdova%20Medell%C3%ADn"
+        },
+        {
+          "name": "Aeropuerto Internacional Rafael Núñez (CTG)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Rafael%20N%C3%BA%C3%B1ez%20Cartagena"
+        }
+      ],
       "boardingNote": "Horarios y terminales por reconfirmar antes de comprar.",
       "ticketGuide": "No se han emitido billetes. Comparar tarifa de pago final, equipaje, cambios y reembolsos.",
       "notes": "Precio observado como referencia de planeación; no añadir dos veces al presupuesto."
@@ -689,10 +708,108 @@
           "url": "https://www.avianca.com/"
         }
       ],
-      "boardingLocations": [],
+      "boardingLocations": [
+        {
+          "name": "Aeropuerto José María Córdova (MDE)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Jos%C3%A9%20Mar%C3%ADa%20C%C3%B3rdova%20Medell%C3%ADn"
+        },
+        {
+          "name": "Aeropuerto Simón Bolívar (SMR)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Sim%C3%B3n%20Bol%C3%ADvar%20Santa%20Marta"
+        }
+      ],
       "boardingNote": "Horarios y terminales por reconfirmar antes de comprar.",
       "ticketGuide": "No se han emitido billetes. Comparar tarifa de pago final, equipaje, cambios y reembolsos.",
       "notes": "Precio observado como referencia de planeación; no añadir dos veces al presupuesto."
+    },
+    {
+      "id": "bus-tayrona-cartagena",
+      "type": "bus",
+      "title": "El Zaino → Cartagena · shuttle o traslado privado",
+      "day": 10,
+      "selectedOption": "A",
+      "budgetIncludedIn": "ground-mobility",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Transportes Marsol",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Entrada El Zaino, Tayrona",
+                  "to": "Oficina Marsol, Cartagena",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Marsol · horario de servicio publicado 12:00 o 14:00, por confirmar en enero 2027"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar para 23/01/2027",
+              "price": null,
+              "changes": "Consultar condiciones antes de reservar",
+              "refunds": "Consultar cancelaciones antes de reservar"
+            }
+          ],
+          "notes": "La empresa publica de forma general 12:00–18:00 y 14:00–20:00 (~6 h) y pasajes desde COP 130,000 (≈ $752 MXN con tipo de cambio del 03/11/2026). NO es oferta para el 23 de enero de 2027. Recogida en la entrada al parque (no en el hotel), llegada a la oficina de Cartagena; añadir traslado final al hotel."
+        },
+        {
+          "id": "B",
+          "provider": "Operador privado por seleccionar",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Ecolodge en sector El Zaino",
+                  "to": "Hotel en San Diego, Cartagena",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Vehículo privado por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Cotización pendiente, puerta a puerta",
+              "price": null,
+              "changes": "Pendiente",
+              "refunds": "Pendiente"
+            }
+          ],
+          "notes": "Más cómodo si la diferencia de precio compensa el ahorro de esperas; confirmar vehículo, conductor, cobertura y duración antes de reservar."
+        }
+      ],
+      "links": [
+        {
+          "label": "Marsol · horario, punto de salida y compra oficial",
+          "url": "https://www.marsol.com.co/bus-santa-marta-entrada-al-parque-tayrona-cartagena"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Entrada El Zaino, km 30 Troncal del Caribe",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Entrada%20El%20Zaino%20Parque%20Tayrona"
+        },
+        {
+          "name": "Oficina Marsol, carrera 2A #43-111, Cartagena",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Marsol%20Carrera%202A%2043-111%20Cartagena"
+        }
+      ],
+      "boardingNote": "Punto de salida general El Zaino, km 30; horario y lugar final sujetos a confirmación del operador para enero 2027.",
+      "ticketGuide": "Buscar plazas reales del sábado 23/01/2027; comparar tarifa total del shuttle más traslados de primera/última milla contra coche privado. No se ha comprado el servicio.",
+      "notes": "El importe no se suma por separado: es una posibilidad dentro de la provisión global de movilidad terrestre de $5,000 MXN."
     }
   ],
   "ticketNotes": [],
