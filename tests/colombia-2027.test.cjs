@@ -36,6 +36,10 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   assert.match(trip.days[6].note,/robos/);
   assert.match(trip.days[6].note,/chaleco salvavidas/);
   assert.match(trip.days[0].note,/fiebre amarilla/);
+  const medellinText=[trip.days[1],trip.days[2],trip.days[3]].map(d=>d.title+' '+d.am+' '+d.pm+' '+d.night).join(' ');
+  for(const term of ['Guatapé','café','El Poblado','Plaza Botero','Bolívar','Provenza','Pueblito Paisa']) assert.ok(medellinText.includes(term), 'Falta prioridad Medellín: '+term);
+  assert.match(trip.days[2].am,/excursión organizada/);
+  assert.match(trip.days[3].am,/tour del café/);
   assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>/Requisitos sanitarios/.test(x.title)));
   assert.ok(trip.hotels.some(h=>h.id==='sm-isabella' && h.links?.some(x=>x.url.includes('kalihotels.com'))));
   assert.doesNotMatch(trip.days.map(d=>d.title+' '+d.am+' '+d.pm).join(' '),/Museo del Oro|San Pedro Alejandrino/);
@@ -47,11 +51,11 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.ok(trip.majorTransport.every(t=>ids.has(t.budgetIncludedIn)));
   assert.equal(budget.summary(trip).issues.length,0);
   assert.equal(budget.summary(trip).pending.length,0);
-  assert.equal(budget.summary(trip).knownTotalMXN,49662);
+  assert.equal(budget.summary(trip).knownTotalMXN,50662);
   const estimate=budget.planningEstimate(trip);
-  assert.equal(estimate.totalMXN,49662);
+  assert.equal(estimate.totalMXN,50662);
   assert.equal(estimate.low,42000);
-  assert.equal(estimate.high,63000);
+  assert.equal(estimate.high,65000);
   assert.ok(trip.days[9].transportRefs.includes('bus-tayrona-cartagena'));
   assert.equal(trip.majorTransport.find(x=>x.id==='bus-tayrona-cartagena').options.length,2);
 });
