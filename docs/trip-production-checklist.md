@@ -103,6 +103,12 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] SBB: los mínimos «desde CHF X» no sustituyen tarifas del día reservado. Comparar por fecha, clase, viajero y descuento: Point-to-Point flexible, Supersaver y Saver Day Pass (sujeto a área de validez y cupo), con y sin Swiss Half Fare Card.
 - [ ] Al presupuestar dos pases, mostrar cuánto queda del fondo para los trayectos no incluidos; advertir si la provisión es insuficiente, sin cambiar el monto a una cotización ficticia.
 
+## Tarifas oficiales con vigencia futura · control de edición
+- [ ] Verificar **fecha de entrada en vigor** de cada tarifario, no solo su precio o la fecha de consulta. Si un organismo publica precios actuales en HTML y una tabla PDF diferente que rige durante el viaje, usar la **edición válida para el día exacto** y enlazar la tabla.
+- [ ] Para zonas tarifarias, comprobar ruta, zona de origen/destino y reglas especiales de conteo (ej. Zürich 110 cuenta doble) antes de asignar tarifas o comparar billetes sencillos frente a pases de 24 horas.
+- [ ] Si una tarifa oficial 2027 ya está publicada, documentarla con su importe, descuento y fuente; si el carrito no devuelve tarifa para un trayecto distinto, dejarlo pendiente. Los mínimos «desde» no sustituyen precios particulares.
+- [ ] Asignar las fichas informativas nuevas a `budgetIncludedIn` cuando su costo ya está previsto dentro de un fondo global y verificar que el total no aumente dos veces.
+
 ## Control cruzado de pases, tarifas y renderizado
 - [ ] Para cada precio verificar **qué producto** compra: tren simple, retorno, pase regional, paquete de invierno con equipo, suplemento de montaña, asiento opcional; tarifas de productos distintos no se sustituyen.
 - [ ] La sección Movilidad presenta en el DOM la comparación `railSummary` cuando exista; inspeccionar el texto después de abrir el desplegable de comparación en Desktop/Mobile, no basta comprobar que existe el JSON o el elemento cerrado.
