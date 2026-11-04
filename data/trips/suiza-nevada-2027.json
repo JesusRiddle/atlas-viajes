@@ -1573,55 +1573,55 @@
   ],
   "stays": [],
   "seasonality": {
-    "summary": "Rangos mensuales orientativos de máximas diurnas entre Grindelwald (pueblo) y Zúrich/Lucerna, no temperaturas mínimas ni pronóstico: el contraste con First, Gornergrat y Jungfraujoch es mucho mayor. Referencias climatológicas generales (1991–2020), actualizadas como orientación para planear, no para predecir 2027. Enero y febrero favorecen nieve en altura y pueblos alpinos, con días cortos y mayor demanda por esquí; junio y septiembre favorecen alternativas verdes y senderismo sujeto a apertura. Julio y agosto elevan ocupación y precios, noviembre puede coincidir con mantenimiento de remontes. Fuentes de contraste: MeteoSwiss y tablas climáticas regionales; validar condiciones en cada montaña antes de subir.",
+    "summary": "Evaluación exclusiva para «Suiza nevada»: pueblos alpinos con nieve, miradores y trenes escénicos sin esquiar; NO puntúa un viaje verde de senderismo. Enero y febrero ofrecen la combinación más favorable de invierno consolidado y remontes estacionales, aunque febrero suele tener vacaciones de esquí y precios altos. Marzo y diciembre son alternativas condicionadas por fechas, nieve en pueblos, luz y apertura real; en marzo ciertas instalaciones cierran hacia fin de mes. De abril a noviembre no se recomienda esta versión nevada: puede conservarse nieve en cumbres, pero no está asegurada la experiencia de pueblos cubiertos de nieve ni toda la infraestructura invernal. Junio y septiembre pueden ser buenos para la alternativa independiente «Suiza verde», pero aquí figuran como desaconsejables por no cumplir el objetivo. Evitar expresar como una sola temperatura las condiciones de Lucerna/Zúrich, Grindelwald/Zermatt y alta montaña; las diferencias de altitud son grandes. Fuentes: MeteoSwiss/Confederación para clima, Suiza Turismo para estacionalidad y Jungfrau/Zermatt para operación estacional. Estados valoran aptitud para esta experiencia, no la posibilidad de visitar Suiza en general.",
     "months": {
       "10": {
-        "status": "conditional",
-        "description": "10–14 °C. Otoño y posibles primeras nevadas en altura; cierres progresivos y vacaciones escolares regionales."
+        "status": "avoid",
+        "description": "Otoño, colores en los valles y primeras nevadas ocasionales en altura; nieve en pueblos no fiable. Parte de los remontes y rutas empiezan a cerrar por transición estacional."
       },
       "11": {
         "status": "avoid",
-        "description": "4–8 °C. Entremeses de mantenimiento entre verano y nieve, menos remontes abiertos y poca luz."
+        "description": "Mes de transición y mantenimiento de algunas instalaciones. Poca luz; la temporada de nieve empieza de forma escalonada y no garantiza pueblos nevados ni cobertura completa de remontes."
       },
       "12": {
         "status": "conditional",
-        "description": "-1–3 °C. Invierno emergente y mercados festivos; Navidad y Año Nuevo encarecen alojamientos."
+        "description": "Invierno en formación: desde mediados/finales de mes suele mejorar la operación de remontes, pero la nieve en cada pueblo varía. Navidad y Año Nuevo elevan mucho la demanda y los precios; preferir fechas posteriores al arranque de temporada."
       },
       "01": {
         "status": "recommended",
-        "description": "-2–2 °C. Invierno alpino; alta probabilidad de nieve en pueblos de altura, días breves y demanda de esquí. Zúrich puede no tener nieve."
+        "description": "Invierno consolidado: buena oportunidad de pueblos alpinos nevados, trenes y miradores operativos. Días cortos, frío fuerte y posibles cierres por viento o nevadas; nieve urbana no garantizada. Ventana preferida: segunda mitad del mes."
       },
       "02": {
         "status": "recommended",
-        "description": "0–4 °C. Nieve habitual en altura, temperaturas frías; vacaciones de esquí elevan precios y afluencia."
+        "description": "Condiciones de pleno invierno en Grindelwald y Zermatt y buena cobertura de servicios de montaña; más luz que en enero. Vacaciones de esquí en distintas regiones aumentan ocupación y tarifas, especialmente a mitad y final de mes."
       },
       "03": {
-        "status": "recommended",
-        "description": "4–9 °C. Nieve en alta montaña y más luz; pueblos bajos pueden perder su cubierta blanca."
+        "status": "conditional",
+        "description": "Invierno todavía habitual en altura y más horas de luz, pero la nieve de los pueblos bajos puede retirarse. Algunos servicios invernales terminan hacia finales de marzo; priorizar primera mitad y verificar aperturas."
       },
       "04": {
         "status": "conditional",
-        "description": "9–13 °C. Transición de invierno a primavera, nieve en cumbres y cierres de temporada en algunos remontes."
+        "description": "Nieve todavía posible en cumbres y zonas alpinas altas, pero deshielo visible en valles y cierre progresivo de remontes invernales. Solo apropiado si se acepta una experiencia mixta, no pueblos uniformemente nevados."
       },
       "05": {
-        "status": "conditional",
-        "description": "14–18 °C. Cascadas y valles verdes; nieve residual y senderos elevados no siempre transitables."
+        "status": "avoid",
+        "description": "Primavera en valles, praderas emergentes y cascadas; nieve residual en altura. Transición entre temporadas y parte de los senderos/remontes altos con restricciones. Mejor candidato para otro tipo de viaje."
       },
       "06": {
-        "status": "recommended",
-        "description": "18–21 °C. Cascadas abundantes, praderas verdes y luz extensa; algunos senderos altos pueden seguir con nieve."
+        "status": "avoid",
+        "description": "Paisajes principalmente verdes, cascadas y días largos; todavía puede haber nieve en senderos altos y lluvias frecuentes. Muy atractivo para «Suiza verde», pero no cumple la expectativa de pueblos nevados."
       },
       "07": {
-        "status": "conditional",
-        "description": "21–24 °C. Senderismo alpino con buena accesibilidad, pero temporada alta y mayor precio."
+        "status": "avoid",
+        "description": "Verano alpino, senderos generalmente más accesibles y jornadas largas. Alta ocupación, tormentas estivales posibles y prácticamente sin nieve en pueblos; no recomendable para esta versión."
       },
       "08": {
-        "status": "conditional",
-        "description": "20–23 °C. Acceso estival amplio, alta ocupación y precios elevados, especialmente hasta mediados de mes."
+        "status": "avoid",
+        "description": "Verano y temporada turística intensa, con montañas verdes, más demanda y riesgo de tormentas. La nieve queda principalmente en cotas elevadas; no corresponde al recorrido nevado."
       },
       "09": {
-        "status": "recommended",
-        "description": "16–19 °C. Senderismo, clima más fresco y menor afluencia que agosto; buenas vistas con tiempo variable."
+        "status": "avoid",
+        "description": "Paisajes todavía verdes con inicio del otoño, temperatura más fresca y posible mejor equilibrio entre afluencia y senderismo. Muy buena candidata para «Suiza verde», no para pueblos cubiertos de nieve."
       }
     }
   },
