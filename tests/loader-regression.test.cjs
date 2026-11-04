@@ -474,6 +474,9 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
         'Ambas tarifas ZVV se incluyen en el fondo ferroviario original');
     assert.ok(trip.railSummary.some(row => row[0].includes('aeropuerto') &&
         row[1].includes('CHF 7.40')), 'Movilidad debe explicar tarifa ZVV de regreso al aeropuerto');
+    assert.ok(trip.railSummary.some(row => row[0].startsWith('Punto de equilibrio') &&
+        row[1].includes('CHF 62.10') && row[1].includes('CHF 175.80')),
+        'Ahorro de Half Fare considera Gornergrat y ambos trayectos ZVV sin duplicar descuentos');
 
     assert.ok(trip.railSummary.some(row => row[0].includes('Zúrich–Kilchberg') && row[1].includes('CHF 14.80')));
 
