@@ -8,7 +8,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
 **Etapa actual:** 13 · Auditoría D automatizada aprobada, revisión externa de fotos y tarifas pendiente  
-**Siguiente acción autónoma:** Completar cotizaciones SBB para cinco rutas nacionales; ZVV Kilchberg tiene tarifa oficial 2027. Conciliar y auditar antes del merge  
+**Siguiente acción autónoma:** Cotizar cuatro rutas nacionales en SBB; los dos trayectos ZVV de Zúrich ya tienen tarifa oficial 2027. Conciliar presupuesto y auditar el PR  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -203,3 +203,12 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Presupuesto:** mantiene $81,981 MXN provisional, incluyendo ya ZVV dentro de la provisión ferroviaria y Gornergrat dentro de actividades. Half Fare no se recomienda por defecto sin el ahorro efectivamente ofrecido por SBB.
 - **Revisión:** tres pasadas de coherencia (12 días/10 noches, contratos y referencias, presupuesto y doble cómputo) completas antes del JSON. Pruebas Node y browser con nueva ficha ZVV añadidas; CI por verificar en la última ejecución.
 - **Siguiente paso:** obtener cotizaciones dinámicas reales SBB de las cinco rutas con y sin Half Fare y Saver Day Pass, reconciliar totales y continuar auditoría D. No hacer merge ni compras.
+
+
+## Auditoría triple de ZVV y siguiente traslado · 2026-11-03
+- **Auditoría A · Guías/edición:** Panorama, mapa, doce temporadas, siete experiencias, reservas, siete tarjetas de transporte, cuatro hoteles, doce jornadas y presupuesto visibles según el estándar. Comparación de indicadores de Panorama con Italia Norte sin desviaciones; rutas y textos turísticos independientes.
+- **Auditoría B · Contrato transporte:** detectado y corregido que la ficha Zürich ↔ Kilchberg mostraba dos `single` como opciones de precio de una ida/vuelta. Ahora las cuatro alternativas representan viajes COMPLETOS: pase 24h CHF 14.80 / 7.40 con Half Fare, o DOS sencillos por CHF 14.80 / 7.40. Los precios unitarios de CHF 7.40 / 3.70 siguen explicados, pero no se presentan como ida/vuelta. Fuente PDF ZVV desde 13/12/2026, página de tarifas 3 zonas, verificada. Añadida guía preventiva y pruebas Node/browser.
+- **Avance etapa 07:** Zürich HB → Zürich Flughafen del 2 febrero 2027 está en zonas 110 (cuenta doble) + 121. Se actualizó `airport-return` con tarifa oficial de sencillo CHF 7.40 / 3.70 con Half Fare, un solo sentido y `budgetIncludedIn: rail-budget`. Como consecuencia, son CUATRO las conexiones nacionales todavía pendientes de cotización exacta: ZRH→Luzern (23 enero), Luzern→Grindelwald (24), Grindelwald→Zermatt (28), Zermatt→Zürich HB (31). La ida a Kilchberg y el traslado urbano al aeropuerto ya están tarifados.
+- **Auditoría C · Económica:** la tarjeta Swiss Half Fare CHF 150 aportaría CHF 51 de ahorro en Gornergrat y CHF 11.10 en ambos ZVV, CHF 62.10 en total. Faltan CHF 87.90 de descuentos sobre billetes nacionales, equivalentes a CHF 175.80 de tarifas ordinarias si todos se redujeran 50 %. Los boletos Supersaver pueden alterar ese umbral; el cálculo es condicionante, no cotización. Presupuesto total proyectado se conserva en $81,981 MXN, incluyendo ZVV y sin doble sumar billetes.
+- **Validación:** tres pasadas en datos (integridad de nueve secciones, contratos/referencias, conciliación financiera) sin desviaciones. Tests de ida/vuelta, aeropuerto y umbral Half Fare agregados al CI; último resultado CI pendiente de confirmación al registrar esta entrada.
+- **Siguiente paso:** obtener precio realmente ofertado por SBB para las cuatro conexiones nacionales, comparar boletos flexibles/Supersaver/Saver Day Pass con y sin Half Fare, ajustar provisión $10,000 si fuera necesario; luego fotos externas y auditoría D. PR #9 abierto, sin merge ni compras.
