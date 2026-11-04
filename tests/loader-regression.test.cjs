@@ -400,8 +400,13 @@ test('Suiza nevada: contratos editoriales de temporadas, días y fotografías', 
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
     const months = Object.values(trip.seasonality.months);
     assert.equal(months.length, 12, 'Deben existir doce meses');
-    assert.ok(months.every(month => /[-−]?\d+\s*[–-]\s*[-−]?\d+\s*°C/.test(month.description)),
-        'Las tarjetas mensuales necesitan rango de temperatura');
+    assert.deepEqual(['01', '02'].map(month => trip.seasonality.months[month].status),
+        ['recommended', 'recommended'], 'Enero y febrero son preferidos para Suiza nevada');
+    assert.deepEqual(['03', '04', '12'].map(month => trip.seasonality.months[month].status),
+        ['conditional', 'conditional', 'conditional'], 'Marzo, abril y diciembre son condicionales');
+    assert.ok(['05', '06', '07', '08', '09', '10', '11'].every(month =>
+        trip.seasonality.months[month].status === 'avoid'),
+        'Meses de Suiza verde no se recomiendan para la experiencia nevada');
     assert.ok(trip.days.every(day => day.headerPlaces?.length > 0),
         'Cada jornada debe tener lugares descriptivos en su cabecera');
     for (const day of trip.days) {
@@ -446,11 +451,39 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 10);
     assert.equal(trip.hotels.length, 4);
     const swissPhotos = Object.entries(places).filter(([id]) => id.startsWith('swiss27-'));
-    assert.equal(swissPhotos.length, 9, 'Las nueve fotografías invernales deben estar registradas');
-    assert.ok(swissPhotos.every(([, value]) => value.photo?.source?.startsWith('https://commons.wikimedia.org/wiki/File:') &&
-        value.photo?.src?.startsWith('https://commons.wikimedia.org/wiki/Special:FilePath/') &&
-        value.photo?.author && value.photo?.license && value.photo?.licenseUrl),
-        'Las fotografías nuevas deben conservar imagen, fuente, autor y licencia');
+    assert.equal(swissPhotos.length, 12, 'Once fotos locales y Lindt desde Wikimedia');
+    const expectedLocalFiles = {
+        'swiss27-grindelwald-winter': 'grindelwald-invierno.jpg',
+        'swiss27-wengen-winter': 'wengen-invierno.jpg',
+        'swiss27-murren-winter': 'murren-invierno.jpg',
+        'swiss27-lauterbrunnen-winter': 'lauterbrunnen-invierno.jpg',
+        'swiss27-zermatt-winter': 'zermatt-invierno.jpg',
+        'swiss27-gornergrat-winter': 'gornergrat-invierno.jpg',
+        'swiss27-jungfraujoch-february': 'jungfraujoch-invierno.jpg',
+        'swiss27-maennlichen-winter': 'mannlichen-invierno.jpg',
+        'swiss27-lucerne-winter': 'lucerna-invierno.jpg',
+        'swiss27-first-cliff-walk': 'first-cliff-walk-invierno.jpg',
+        'swiss27-zurich-winter': 'zurich-invierno.jpg'
+    };
+    for (const [key, filename] of Object.entries(expectedLocalFiles)) {
+        const photo = places[key].photo;
+        assert.equal(photo.src, 'assets/images/trips/suiza-nevada-2027/' + filename);
+        assert.ok(!photo.source && !photo.attribution && !photo.license,
+            'Sin atribuir falsamente una foto aportada por el usuario a la anterior');
+        const bytes = fs.readFileSync(photo.src);
+        assert.ok(bytes.length > 1000 && bytes[0] === 0xff && bytes[1] === 0xd8,
+            'Fotografía local válida JPEG: ' + filename);
+    }
+    assert.ok(places['swiss27-lindt'].photo.src.startsWith('https://commons.wikimedia.org/wiki/Special:FilePath/'),
+        'Lindt conserva la foto externa original');
+    assert.equal(trip.cover, 'swiss27-grindelwald-winter',
+        'Portada y día por día usan la fotografía local de Grindelwald');
+    assert.ok(trip.days.some(day => day.places.includes('swiss27-lucerne-winter')));
+    assert.ok(trip.days.some(day => day.places.includes('swiss27-first-cliff-walk')));
+    assert.ok(trip.days.some(day => day.places.includes('swiss27-zurich-winter')));
+    assert.ok(!trip.days.some(day => day.places.includes('first-cliff-walk') ||
+        day.places.includes('lucerne') || day.places.includes('zurich') ||
+        day.places.includes('gornergrat')), 'No sustituir fotos comunes usadas por otros viajes');
     assert.equal(trip.majorTransport.length, 7);
     const zvv = trip.majorTransport.find(t => t.id === 'zurich-kilchberg-zvv');
     assert.ok(zvv, 'Debe existir el trayecto Zúrich-Kilchberg del 1 febrero');
