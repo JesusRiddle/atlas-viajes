@@ -204,6 +204,10 @@ const assert = require('node:assert/strict');
           assert.match(comparison, /Saver Day Pass/);
           assert.match(comparison, /CHF 326/, 'Costo de adquirir ambos pases y riesgo presupuestario');
           assert.match(comparison, /CHF 14\.80/, 'La tarifa ZVV para 2027 se ve en Movilidad');
+          const zvvCard = page.locator('#traslados .mt-card').filter({hasText:'Kilchberg'});
+          assert.ok(await zvvCard.count() >= 1, 'La ficha ZVV debe aparecer');
+          const faresText = await zvvCard.first().innerText();
+          assert.match(faresText, /24 h|24h|ZVV/i);
           const flights = page.locator('#traslados .mt-card[data-transport="flight-international"]');
           await flights.locator('summary').click();
           assert.equal(await flights.locator('.flight-leg').count(), 4,
