@@ -518,7 +518,85 @@
   "ticketNotes": [],
   "attractionTerms": [],
   "cover": "col27-cartagena",
-  "mapPoints": [],
+  "mapPoints": [
+    {
+      "name": "Medellín",
+      "coords": [
+        6.23194,
+        -75.56806
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Guatapé",
+      "coords": [
+        6.23333,
+        -75.15833
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Santa Marta",
+      "coords": [
+        11.24722,
+        -74.20167
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Minca",
+      "coords": [
+        11.140833,
+        -74.12
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Taganga",
+      "coords": [
+        11.2684,
+        -74.1894
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 5
+    },
+    {
+      "name": "Parque Nacional Natural Tayrona",
+      "coords": [
+        11.31,
+        -73.93
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 6
+    },
+    {
+      "name": "Cartagena de Indias",
+      "coords": [
+        10.4266,
+        -75.5442
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 7
+    }
+  ],
   "planningDetails": "Itinerario provisional: no hay vuelos, hoteles ni excursiones comprados. Revisar acceso a Tayrona, seguridad de senderos y estado del mar; cotizar precios finales antes de cualquier reserva.",
   "lodgingSummary": "12 noches repartidas en cuatro alojamientos: Medellín 4 (Manila, El Poblado), Santa Marta 3 (Centro Histórico, calle tranquila), Tayrona 2 (cerca de El Zaino) y Cartagena 3 (preferencia por San Diego). Hoteles aún sin reservar.",
   "heroLodgingSummary": "12 noches, 4 alojamientos",
@@ -715,7 +793,24 @@
     "Tayrona: comprobar acceso real, estado de senderos, zonas de baño permitidas y cierres extraordinarios. Evitar reservas no reembolsables en el sector.",
     "Aeropuertos y conexiones: todos los vuelos son candidatos; verificar tarifas, equipaje y tiempos efectivos de trasbordo antes de comprar."
   ],
-  "sources": [],
+  "sources": [
+    {
+      "label": "Coordenadas Medellín · Alcaldía",
+      "url": "https://www.medellin.gov.co/es/wp-content/uploads/2025/08/4-Informe-Final-Gestion-2016-2019.pdf"
+    },
+    {
+      "label": "Coordenadas Guatapé · informe municipal",
+      "url": "https://dssa.gov.co/images/2024/documentos/monitoreo_evaluacion_planes_territoriales/2020-2023/Oriente/Guatape.pdf"
+    },
+    {
+      "label": "Santa Marta · Alcaldía",
+      "url": "https://santamarta.gov.co/geografia"
+    },
+    {
+      "label": "Cartagena y Taganga · OpenStreetMap mediante Mapcarta",
+      "url": "https://mapcarta.com/es/Cartagena_de_Indias"
+    }
+  ],
   "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
   "budgetRange": null,
   "budgetNote": "Costos observados de vuelos ~$11,547 MXN y rango objetivo de alojamiento $15,500–21,600 MXN, ambos provisionales; faltan transporte terrestre, actividades, comida, seguro, entradas e imprevistos. No mostrar subtotal como costo integral.",
