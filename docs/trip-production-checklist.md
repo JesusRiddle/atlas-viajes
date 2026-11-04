@@ -103,6 +103,11 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] SBB: los mínimos «desde CHF X» no sustituyen tarifas del día reservado. Comparar por fecha, clase, viajero y descuento: Point-to-Point flexible, Supersaver y Saver Day Pass (sujeto a área de validez y cupo), con y sin Swiss Half Fare Card.
 - [ ] Al presupuestar dos pases, mostrar cuánto queda del fondo para los trayectos no incluidos; advertir si la provisión es insuficiente, sin cambiar el monto a una cotización ficticia.
 
+## Correspondencia entre tarifa y dirección del traslado
+- [ ] Si `journeys` incluye ida **y regreso**, cada opción de tarifa seleccionable debe representar el costo **completo de ambos sentidos**: dos billetes sencillos o un pase ida/vuelta/24 horas válido. No presentar un sencillo de una dirección como precio del viaje redondo, aunque el valor unitario sea correcto.
+- [ ] Si solo existe un viaje de una dirección (por ejemplo, del hotel al aeropuerto el último día), el precio seleccionable puede ser sencillo y el registro debe contener únicamente ese `journey`.
+- [ ] Comprobar a nivel de datos y DOM **qué se compra**, validez temporal y zonal, descuentos sujetos a tarjeta, referencia oficial vigente y `budgetIncludedIn` para evitar doble cargo. Comparar también ruta práctica real: tren directo y caminata frente a autobús que quizá no llegue antes de una reserva temprana.
+
 ## Tarifas oficiales con vigencia futura · control de edición
 - [ ] Verificar **fecha de entrada en vigor** de cada tarifario, no solo su precio o la fecha de consulta. Si un organismo publica precios actuales en HTML y una tabla PDF diferente que rige durante el viaje, usar la **edición válida para el día exacto** y enlazar la tabla.
 - [ ] Para zonas tarifarias, comprobar ruta, zona de origen/destino y reglas especiales de conteo (ej. Zürich 110 cuenta doble) antes de asignar tarifas o comparar billetes sencillos frente a pases de 24 horas.
