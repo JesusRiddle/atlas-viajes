@@ -199,7 +199,16 @@ const assert = require('node:assert/strict');
           assert.match(comparison, /CHF 51/, 'La mitad de tarifa oficial Gornergrat debe mostrarse');
           assert.match(comparison, /CHF 198/, 'El umbral Half Fare incluye ahorro de Gornergrat');
           assert.doesNotMatch(comparison, /Winter Pass CHF 102|NO es el billete convencional de ida y vuelta/i);
-          assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 8);
+          assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 10,
+            'La comparativa de Suiza incluye productos turísticos, billetes Saver y sensibilidad económica');
+          assert.match(comparison, /Saver Day Pass/);
+          assert.match(comparison, /CHF 326/, 'Costo de adquirir ambos pases y riesgo presupuestario');
+          const flights = page.locator('#traslados .mt-card[data-transport="flight-international"]');
+          await flights.locator('summary').click();
+          assert.equal(await flights.locator('.flight-leg').count(), 4,
+            'Las dos direcciones del vuelo de referencia deben mostrar dos segmentos cada una');
+          assert.match(await flights.innerText(), /MAD|Madrid/);
+          assert.match(await flights.innerText(), /CDG|París/);
 
           assert.equal(await page.locator('#dias details.day').count(), 12,
             'Suiza debe mostrar sus doce jornadas');
