@@ -582,7 +582,7 @@
                 {
                   "from": "MEX",
                   "to": "PTY",
-                  "departure": "2027-01-14T09:10",
+                  "departure": "2027-01-14T09:10:00-06:00",
                   "arrival": null,
                   "operator": "Copa Airlines"
                 },
@@ -590,7 +590,7 @@
                   "from": "PTY",
                   "to": "MDE",
                   "departure": null,
-                  "arrival": "2027-01-14T17:00",
+                  "arrival": "2027-01-14T17:00:00-05:00",
                   "operator": "Copa Airlines"
                 }
               ]
@@ -601,7 +601,7 @@
                 {
                   "from": "CTG",
                   "to": "PTY",
-                  "departure": "2027-01-26T15:05",
+                  "departure": "2027-01-26T15:05:00-05:00",
                   "arrival": null,
                   "operator": "Copa Airlines"
                 },
@@ -609,7 +609,7 @@
                   "from": "PTY",
                   "to": "MEX",
                   "departure": null,
-                  "arrival": "2027-01-26T22:05",
+                  "arrival": "2027-01-26T22:05:00-06:00",
                   "operator": "Copa Airlines"
                 }
               ]
@@ -661,8 +661,8 @@
                 {
                   "from": "MDE",
                   "to": "SMR",
-                  "departure": "2027-01-18T12:00",
-                  "arrival": "2027-01-18T13:15",
+                  "departure": "2027-01-18T12:00:00-05:00",
+                  "arrival": "2027-01-18T13:15:00-05:00",
                   "operator": "Avianca AV 9446"
                 }
               ]
