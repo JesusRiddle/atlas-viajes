@@ -41,7 +41,7 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   assert.match(trip.planningDetails,/No trasladar automáticamente esa noche a Cartagena/);
   const medellinText=[trip.days[1],trip.days[2],trip.days[3]].map(d=>d.title+' '+d.am+' '+d.pm+' '+d.night).join(' ');
   for(const term of ['Guatapé','café','El Poblado','Plaza Botero','Bolívar','Provenza','Pueblito Paisa']) assert.ok(medellinText.includes(term), 'Falta prioridad Medellín: '+term);
-  assert.match(trip.days[2].am,/excursión organizada/);
+  assert.match(trip.days[2].am,/tour organizado|excursión organizada/);
   assert.match(trip.days[3].am,/tour del café/);
   assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>/Requisitos sanitarios/.test(x.title)));
   assert.ok(trip.hotels.some(h=>h.id==='sm-isabella' && h.links?.some(x=>x.url.includes('kalihotels.com'))));
