@@ -1,0 +1,386 @@
+{
+  "id": "colombia-2027",
+  "name": "Colombia 2027 · Medellín y Caribe",
+  "flag": "🇨🇴",
+  "status": null,
+  "start": "2027-01-14",
+  "end": "2027-01-26",
+  "tag": "DE MEDELLÍN AL CARIBE · ARTE, SELVA Y CIUDADES COLONIALES",
+  "routeCities": [
+    "Medellín",
+    "Guatapé",
+    "Santa Marta",
+    "Minca",
+    "Taganga",
+    "Playa Grande",
+    "Parque Nacional Natural Tayrona",
+    "Cabo San Juan",
+    "Cartagena de Indias"
+  ],
+  "bases": [
+    [
+      "Medellín",
+      4
+    ],
+    [
+      "Santa Marta",
+      3
+    ],
+    [
+      "Tayrona",
+      2
+    ],
+    [
+      "Cartagena",
+      3
+    ]
+  ],
+  "work": null,
+  "costs": [],
+  "travelerCount": 1,
+  "profile": {
+    "pace": "balanced",
+    "paceWhy": "Alterna excursiones exigentes con jornadas libres; cuatro alojamientos en doce noches.",
+    "solo": true,
+    "soloWhy": "Habitaciones privadas con baño propio, zonas caminables y traslados fiables.",
+    "weather": null,
+    "weatherWhy": "Enero es generalmente más seco en el Caribe, pero el estado del mar y cierres de Tayrona deben comprobarse.",
+    "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
+  },
+  "intro": "Comienzas en Medellín, entre las calles de Manila, el arte de Comuna 13 y los colores de Guatapé. Después vuelas a Santa Marta para explorar la naturaleza de Minca y asomarte a la bahía de Taganga. Dos noches en un ecolodge cercano a Tayrona permiten disfrutar la selva y caminar hacia Cabo San Juan sin prisas. La ruta continúa por carretera hasta Cartagena, con tiempo para perderse entre las calles de la Ciudad Amurallada, descubrir Getsemaní y descansar en una piscina colonial. Un recorrido que combina energía urbana, cultura antioqueña, café, Caribe y descanso.",
+  "introShort": "De Medellín y Guatapé a las montañas cafeteras de Minca, las playas de Taganga y los senderos de Tayrona. Dos noches entre selva y naturaleza preceden a tres días de calles coloniales, gastronomía y terrazas en Cartagena.",
+  "introHighlights": [
+    "Medellín",
+    "Comuna 13",
+    "Guatapé",
+    "Santa Marta",
+    "Minca",
+    "Taganga",
+    "Tayrona",
+    "Cabo San Juan",
+    "Cartagena",
+    "Getsemaní"
+  ],
+  "solo": "Viaje para una persona. Se priorizan habitaciones privadas con baño propio, cancelación flexible y traslados confortables.",
+  "flight": "Vuelos candidatos NO comprados, precios observados el 4 de noviembre de 2026: Copa multidestino MEX→PTY→MDE el 14/01 (09:10–17:00), CTG→PTY→MEX el 26/01 (15:05–22:05), total observado $10,303 MXN con equipaje de mano; confirmar importe al pagar. Avianca AV 9446 MDE→SMR el 18/01 (12:00–13:15), tarifa Classic observada COP 217,580 (aprox. $1,244 MXN según comparación previa, tipo de cambio por actualizar), incluye maleta de cabina y documentada según condiciones publicadas; no comprado. Subtotal aéreo preliminar ~$11,547 MXN, NO presupuesto total.",
+  "local": "El traslado Medellín–Santa Marta se prevé por avión. En Medellín, usar metro/Metrocable para visitas y transporte formal para el aeropuerto; en Santa Marta, contratar traslados adecuados para Minca y Taganga. El Zaino está cerca de los ecolodges candidatos y permite entrar por tierra a Tayrona. Para ir desde Tayrona a Cartagena, comparar shuttle desde El Zaino y vehículo privado directo al hotel, sin regresar a Santa Marta.",
+  "experiences": [
+    {
+      "city": "Medellín",
+      "description": "Comuna 13 con guía local, Plaza Botero, Museo de Antioquia, Metrocable y noches gastronómicas en Provenza. Prueba bandeja paisa, arepas antioqueñas y mazamorra."
+    },
+    {
+      "city": "Guatapé",
+      "description": "Piedra del Peñol y callejuelas decoradas con zócalos; paseo en lancha opcional. Jornada larga de carretera desde Medellín."
+    },
+    {
+      "city": "Santa Marta",
+      "description": "Centro Histórico, Catedral y Parque de los Novios. Saborea pescado fresco, arroz con coco y patacones."
+    },
+    {
+      "city": "Minca",
+      "description": "Recorrido por finca cafetera, montaña húmeda y cascadas de Marinka, sujeto a acceso y condiciones de caminos."
+    },
+    {
+      "city": "Taganga y Playa Grande",
+      "description": "Visita breve a la bahía pesquera y playa próxima en lancha autorizada; evitar el sendero por reportes de robos."
+    },
+    {
+      "city": "Tayrona",
+      "description": "Ecolodge en medio de la selva y caminata diurna a Cabo San Juan por senderos permitidos, si el parque está abierto."
+    },
+    {
+      "city": "Cartagena de Indias",
+      "description": "Ciudad Amurallada, San Diego, Getsemaní, gastronomía cartagenera y atardecer en terraza. Prueba posta negra, arepa de huevo y cocadas; Islas del Rosario solo como opción."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-01-14",
+      "title": "Llegada a Medellín y primera noche en Manila",
+      "base": "Medellín",
+      "am": "Despegar de CDMX a las 09:10 en el vuelo candidato de Copa, con conexión en Panamá; no comprado.",
+      "pm": "Llegada candidata a MDE 17:00, migración y traslado al alojamiento en Manila, El Poblado.",
+      "night": "Cena cerca del alojamiento y descanso.",
+      "mobility": "• *Cómo trasladarte:* Traslado aeropuerto José María Córdova → Manila en vehículo autorizado o precontratado; margen amplio al aterrizar.",
+      "note": "• *Tips del día:* No anunciar el vuelo ni el hotel como reservados.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 2,
+      "date": "2027-01-15",
+      "title": "Comuna 13, arte urbano y Provenza",
+      "base": "Medellín",
+      "am": "Recorrido guiado por Comuna 13, murales, historia local y escaleras eléctricas.",
+      "pm": "Almuerzo y, si hay tiempo suficiente y es horario de apertura, Plaza Botero y Museo de Antioquia.",
+      "night": "Cena en Provenza; regreso mediante transporte confiable.",
+      "mobility": "• *Cómo trasladarte:* Vehículo solicitado por aplicación o transporte formal para trayectos largos; visitar Comuna 13 acompañado por guía local.",
+      "note": "• *Tips del día:* No exhibir celular o joyas en lugares concurridos; valorar por separado Museo de Antioquia si el horario se comprime.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 3,
+      "date": "2027-01-16",
+      "title": "Guatapé y Piedra del Peñol",
+      "base": "Medellín",
+      "am": "Salida temprana a Guatapé con operador y transporte previamente verificados.",
+      "pm": "Subida a Piedra del Peñol si el estado físico y el clima lo permiten; calles de zócalos y almuerzo junto al embalse.",
+      "night": "Regreso a Medellín y descanso.",
+      "mobility": "• *Cómo trasladarte:* Excursión terrestre de día completo; el tiempo de carretera puede variar, especialmente en sábado.",
+      "note": "• *Tips del día:* Más de 700 escalones en la piedra; el paseo en lancha es opcional y no debe apresurar el regreso.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 4,
+      "date": "2027-01-17",
+      "title": "Metrocable y Medellín a ritmo tranquilo",
+      "base": "Medellín",
+      "am": "Viaje en metro y Metrocable para observar la ciudad desde las alturas.",
+      "pm": "Parque Arví solo si las operaciones y el clima acompañan; alternativa: Jardín Botánico y café.",
+      "night": "Cena tranquila en Manila o El Poblado y preparar equipaje.",
+      "mobility": "• *Cómo trasladarte:* Usar sistema metro y sus integraciones oficiales; verificar operación de líneas y teleféricos.",
+      "note": "• *Tips del día:* Día flexible posterior a Guatapé, sin sobrecargar con Arví y Jardín Botánico a la vez.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 5,
+      "date": "2027-01-18",
+      "title": "De Medellín a Santa Marta",
+      "base": "Santa Marta",
+      "am": "Salida al aeropuerto de Medellín con margen para vuelo candidato Avianca AV 9446, 12:00.",
+      "pm": "Llegada candidata 13:15, traslado al Centro Histórico y paseo por calles y plazas.",
+      "night": "Cena junto al Parque de los Novios, buscando calle de regreso iluminada.",
+      "mobility": "• *Cómo trasladarte:* Vuelo MDE → SMR directo, tarifa Classic candidata no comprada; traslado oficial aeropuerto → hotel.",
+      "note": "• *Tips del día:* Confirmar cabina y equipaje de la tarifa antes de comprar, así como el traslado al aeropuerto correcto.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 6,
+      "date": "2027-01-19",
+      "title": "Minca, café y naturaleza tropical",
+      "base": "Santa Marta",
+      "am": "Salida hacia Minca y visita de finca cafetera con reserva o coordinación previa.",
+      "pm": "Cascadas de Marinka, almuerzo y descanso; ajustar según estado de caminos.",
+      "night": "Regreso a Santa Marta antes de la noche y cena.",
+      "mobility": "• *Cómo trasladarte:* Tour o traslado privado adecuado a caminos rurales; verificar recogida y accesibilidad.",
+      "note": "• *Tips del día:* Evitar improvisar trayectos rurales largos en motocicleta y no entrar en cascadas si hay corrientes fuertes.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 7,
+      "date": "2027-01-20",
+      "title": "Taganga y Playa Grande sin prisas",
+      "base": "Santa Marta",
+      "am": "Desayuno y taxi formal hasta Taganga; paseo por la bahía y fotografías.",
+      "pm": "Playa Grande solo si el mar permite una lancha autorizada; almuerzo y retorno a Santa Marta a primera hora de la tarde.",
+      "night": "Piscina, paseo por el Centro Histórico o cena sin agenda fija.",
+      "mobility": "• *Cómo trasladarte:* Taxi o transporte preacordado entre Santa Marta y Taganga; lancha corta autorizada a Playa Grande cuando las condiciones sean seguras.",
+      "note": "• *Tips del día:* Evitar caminar por el sendero Taganga–Playa Grande por reportes de robos. Usar lancha autorizada con chaleco salvavidas, acordar precio por anticipado, verificar estado del mar y regresar de día.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 8,
+      "date": "2027-01-21",
+      "title": "Cambio a ecolodge cerca de Tayrona",
+      "base": "Tayrona",
+      "am": "Checkout sin prisas en Santa Marta y transporte directo al alojamiento cercano a El Zaino.",
+      "pm": "Registro o resguardo del equipaje, piscina y entorno natural del ecolodge.",
+      "night": "Cena y descanso temprano antes de la caminata.",
+      "mobility": "• *Cómo trasladarte:* Traslado Santa Marta → hotel cercano a El Zaino, preferentemente directo y reservado.",
+      "note": "• *Tips del día:* Senda Koguiwa, Senda Watapuy y Villa María son candidatos, no reservas; buscar cancelación flexible por posibles restricciones de Tayrona.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 9,
+      "date": "2027-01-22",
+      "title": "Cabo San Juan: senderos y playas de Tayrona",
+      "base": "Tayrona",
+      "am": "Salida temprana hacia acceso El Zaino, control del parque y transporte interno autorizado hacia Cañaveral.",
+      "pm": "Caminata por senderos habilitados hasta Cabo San Juan; comida y regreso con margen amplio antes del cierre.",
+      "night": "Descanso y cena en ecolodge.",
+      "mobility": "• *Cómo trasladarte:* Entrada El Zaino, transporte interno según operación vigente, caminata aproximada 2–3 horas por sentido.",
+      "note": "• *Tips del día:* Verificar que Tayrona esté abierto en esa fecha, accesos, cupos, cierres extraordinarios y horarios; no nadar en playas prohibidas o de corrientes peligrosas; llevar agua, calzado adecuado y protector solar.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 10,
+      "date": "2027-01-23",
+      "title": "De Tayrona a Cartagena",
+      "base": "Cartagena",
+      "am": "Desayuno, checkout y salida desde el ecolodge en el horario acordado.",
+      "pm": "Traslado terrestre directo desde sector El Zaino hacia Cartagena; llegada y registro en hotel boutique del centro.",
+      "night": "Primer paseo breve por Ciudad Amurallada y cena.",
+      "mobility": "• *Cómo trasladarte:* Comparar vehículo privado puerta a puerta con shuttle Marsol desde El Zaino; verificar punto real de recogida, duración y entrega final.",
+      "note": "• *Tips del día:* Evitar regresar a Santa Marta solo para cambiar de transporte; los horarios publicados son referenciales y pueden variar.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 11,
+      "date": "2027-01-24",
+      "title": "Ciudad Amurallada y Getsemaní",
+      "base": "Cartagena",
+      "am": "Caminata guiada por plazas, calles coloniales, Torre del Reloj y barrio San Diego.",
+      "pm": "Almuerzo cartagenero, pausa en el hotel y paseo por Getsemaní.",
+      "night": "Atardecer desde murallas o terraza y cena especial.",
+      "mobility": "• *Cómo trasladarte:* Recorrido principalmente a pie en horario diurno; taxi/app formal cuando haga falta.",
+      "note": "• *Tips del día:* Calor y humedad: buscar sombra e hidratarse; cuidar pertenencias y confirmar precios antes de aceptar servicios turísticos.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 12,
+      "date": "2027-01-25",
+      "title": "Cartagena libre: piscina, historia o islas",
+      "base": "Cartagena",
+      "am": "Desayuno sin prisa, Castillo de San Felipe opcional o paseo por calles coloniales.",
+      "pm": "Hotel boutique con piscina, cafés, gastronomía; alternativamente pasadía en Islas del Rosario solo con buen tiempo y operador confiable.",
+      "night": "Última cena cartagenera y preparar equipaje.",
+      "mobility": "• *Cómo trasladarte:* Si se eligen islas, verificar embarcación, muelle, condiciones marítimas y hora de regreso; si no, caminar por zona histórica.",
+      "note": "• *Tips del día:* No reservar islas por inercia: ya hay playa en Tayrona; elegir descanso si el mar está agitado.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    },
+    {
+      "n": 13,
+      "date": "2027-01-26",
+      "title": "Regreso Cartagena–Panamá–CDMX",
+      "base": "Regreso a CDMX",
+      "am": "Desayuno, checkout y traslado temprano al aeropuerto de Cartagena.",
+      "pm": "Vuelo candidato de Copa CTG 15:05 vía Panamá; conexión de 2 h 55 min según búsqueda inicial.",
+      "night": "Llegada candidata a MEX 22:05; regreso a casa.",
+      "mobility": "• *Cómo trasladarte:* CTG → PTY → MEX: vuelo internacional candidato, sin compra; traslado hotel → aeropuerto con margen.",
+      "note": "• *Tips del día:* Verificar documentación, franquicia de equipaje, terminal, precio final y horarios antes de comprar.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "transportRefs": []
+    }
+  ],
+  "reservations": [],
+  "exchangeRates": {},
+  "exchangeRateSnapshot": null,
+  "expenses": [],
+  "majorTransport": [],
+  "ticketNotes": [],
+  "attractionTerms": [],
+  "cover": null,
+  "mapPoints": [],
+  "planningDetails": "Itinerario provisional: no hay vuelos, hoteles ni excursiones comprados. Revisar acceso a Tayrona, seguridad de senderos y estado del mar; cotizar precios finales antes de cualquier reserva.",
+  "lodgingSummary": "12 noches repartidas en cuatro alojamientos: Medellín 4 (Manila, El Poblado), Santa Marta 3 (Centro Histórico, calle tranquila), Tayrona 2 (cerca de El Zaino) y Cartagena 3 (preferencia por San Diego). Hoteles aún sin reservar.",
+  "heroLodgingSummary": "12 noches, 4 alojamientos",
+  "budgetPreliminary": true,
+  "hotels": [],
+  "stays": [],
+  "seasonality": {
+    "summary": "Enero es una ventana elegida para Medellín y el Caribe colombiano. Confirmar climatología regional y cierre efectivo de Tayrona antes de viajar; las doce fichas mensuales requieren investigación y verificación.",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": null
+      },
+      "11": {
+        "status": "pending",
+        "description": null
+      },
+      "12": {
+        "status": "pending",
+        "description": null
+      },
+      "01": {
+        "status": "pending",
+        "description": null
+      },
+      "02": {
+        "status": "pending",
+        "description": null
+      },
+      "03": {
+        "status": "pending",
+        "description": null
+      },
+      "04": {
+        "status": "pending",
+        "description": null
+      },
+      "05": {
+        "status": "pending",
+        "description": null
+      },
+      "06": {
+        "status": "pending",
+        "description": null
+      },
+      "07": {
+        "status": "pending",
+        "description": null
+      },
+      "08": {
+        "status": "pending",
+        "description": null
+      },
+      "09": {
+        "status": "pending",
+        "description": null
+      }
+    }
+  },
+  "practicalIndicators": [],
+  "tips": [],
+  "sources": [],
+  "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
+  "budgetRange": null,
+  "budgetNote": "Costos observados de vuelos ~$11,547 MXN y rango objetivo de alojamiento $15,500–21,600 MXN, ambos provisionales; faltan transporte terrestre, actividades, comida, seguro, entradas e imprevistos. No mostrar subtotal como costo integral.",
+  "placeDescriptions": {},
+  "optionalSection": null,
+  "family": null,
+  "layoutClass": null,
+  "formatName": false,
+  "routeHighlights": [],
+  "cardHighlights": [],
+  "boldCityNames": false,
+  "emphasisStyle": false,
+  "linkRailInText": false,
+  "knownCosts": [],
+  "costExclusions": null,
+  "exchangeNote": null,
+  "railSummary": [],
+  "railTotal": null,
+  "railExclusions": null,
+  "railCurrencyNote": null,
+  "heroEyebrow": null
+}
