@@ -98,6 +98,11 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 ## Comunicación con el usuario
 Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados, resultados verificables, pendientes que requieren datos externos y decisión requerida. No pedir al usuario revisar pantalla por pantalla salvo anomalías realmente imposibles de probar. Evitar prometer que «todo está probado» si no se ejecutó la comprobación completa.
 
+## Puerta de control · vuelos con escala y precios variables
+- [ ] La ficha de un vuelo con escala muestra cada segmento y el aeropuerto de conexión, **nunca una sola línea origen–destino que simule vuelo directo**. Si faltan horas internas, mantener `null`; verificar continuidad de estaciones/aeropuertos, duración no negativa y renderizado en navegador.
+- [ ] SBB: los mínimos «desde CHF X» no sustituyen tarifas del día reservado. Comparar por fecha, clase, viajero y descuento: Point-to-Point flexible, Supersaver y Saver Day Pass (sujeto a área de validez y cupo), con y sin Swiss Half Fare Card.
+- [ ] Al presupuestar dos pases, mostrar cuánto queda del fondo para los trayectos no incluidos; advertir si la provisión es insuficiente, sin cambiar el monto a una cotización ficticia.
+
 ## Control cruzado de pases, tarifas y renderizado
 - [ ] Para cada precio verificar **qué producto** compra: tren simple, retorno, pase regional, paquete de invierno con equipo, suplemento de montaña, asiento opcional; tarifas de productos distintos no se sustituyen.
 - [ ] La sección Movilidad presenta en el DOM la comparación `railSummary` cuando exista; inspeccionar el texto después de abrir el desplegable de comparación en Desktop/Mobile, no basta comprobar que existe el JSON o el elemento cerrado.
