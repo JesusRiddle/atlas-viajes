@@ -404,15 +404,17 @@ test('Suiza nevada: contratos editoriales de temporadas, días y fotografías', 
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
     const months = Object.values(trip.seasonality.months);
     assert.equal(months.length, 12, 'Deben existir doce meses');
-    assert.ok(months.every(month => /[−-]?\d+\s*[–-]\s*[−-]?\d+\s*°C/.test(month.description)),
-        'Cada mes del Atlas debe incluir temperaturas orientativas visibles');
+    assert.ok(months.every(month => /[−-]?\d+ a [−-]?\d+ °C/.test(month.description)),
+        'Cada mes debe expresar el rango como −3 a 5 °C, sin guion ambiguo');
     const seasonWindow = { AtlasSeasonality: null };
     vm.runInNewContext(fs.readFileSync('components/seasonality.js', 'utf8'), { window: seasonWindow });
     const rendered = seasonWindow.AtlasSeasonality({ esc: String }).seasonality(trip);
     const shown = [...rendered.matchAll(/class="season-temperature">([^<]+)</g)].map(match => match[1]);
     assert.equal(shown.length, 12, 'Renderizar temperatura en las doce tarjetas');
-    assert.ok(shown.every(value => value !== '—' && value.includes('°C')),
-        'Nunca mostrar guion por falta de temperatura en Suiza nevada');
+    assert.ok(shown.every(value => /^[−-]?\d+ a [−-]?\d+ °C$/.test(value)),
+        'Las doce tarjetas deben mostrar exactamente MIN a MAX °C');
+    assert.equal(shown[0], '−3 a 5 °C', 'Enero muestra formato inequívoco');
+    assert.equal(shown[11], '−2 a 5 °C', 'Diciembre muestra formato inequívoco');
     assert.deepEqual(['01', '02'].map(month => trip.seasonality.months[month].status),
         ['recommended', 'recommended'], 'Enero y febrero son preferidos para Suiza nevada');
     assert.deepEqual(['03', '04', '12'].map(month => trip.seasonality.months[month].status),
