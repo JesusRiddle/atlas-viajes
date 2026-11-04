@@ -24,7 +24,8 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
     assert.equal(d.date,date.toISOString().slice(0,10));
     date.setUTCDate(date.getUTCDate()+1);
     assert.ok(typeof d.am==='string' && typeof d.pm==='string' && typeof d.night==='string');
-    assert.ok(d.am.length>110 && d.pm.length>110 && d.night.length>110, 'Día '+d.n+' no cumple narración platicadita');
+    assert.ok(d.am.length>35 && d.pm.length>35 && d.night.length>35, 'Día '+d.n+' sin contenido operativo suficiente');
+    assert.ok(d.am.length<390 && d.pm.length<390 && d.night.length<390, 'Día '+d.n+' excede concisión editorial');
     assert.doesNotMatch(d.am+d.pm+d.night,/\b(?:placeholder|lorem ipsum|undefined)\b/i);
     if (i<12) assert.ok(ids.has(d.hotel),'Sin alojamiento en día '+d.n);
     else assert.equal(d.hotel,undefined);
@@ -36,6 +37,8 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   assert.match(trip.days[6].note,/robos/);
   assert.match(trip.days[6].note,/chaleco salvavidas/);
   assert.match(trip.days[0].note,/fiebre amarilla/);
+  assert.match(trip.planningDetails,/no se modifica la ruta vigente/);
+  assert.match(trip.planningDetails,/No trasladar automáticamente esa noche a Cartagena/);
   const medellinText=[trip.days[1],trip.days[2],trip.days[3]].map(d=>d.title+' '+d.am+' '+d.pm+' '+d.night).join(' ');
   for(const term of ['Guatapé','café','El Poblado','Plaza Botero','Bolívar','Provenza','Pueblito Paisa']) assert.ok(medellinText.includes(term), 'Falta prioridad Medellín: '+term);
   assert.match(trip.days[2].am,/excursión organizada/);
