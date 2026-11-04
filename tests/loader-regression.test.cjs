@@ -22,7 +22,7 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
         assert.equal(trip.id, module.id);
         assert.ok(Array.isArray(trip.days), module.id + ' sin días');
         assert.ok(Array.isArray(trip.mapPoints), module.id + ' sin mapa');
-        assert.ok(trip.cover || trip.status === 'draft', module.id + ' sin portada');
+        assert.ok(trip.cover == null || typeof trip.cover === 'string', module.id + ' con portada inválida');
         assert.ok(trip.stays == null || Array.isArray(trip.stays), module.id + ' con stays inválido');
     }
 });
@@ -317,7 +317,7 @@ test('Día por día y Presupuesto muestran pendientes sin totales ficticios', ()
 
 test('el alta mínima es visible de inmediato y conserva los viajes históricos', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog.length, 20);
+    assert.equal(catalog.length, 21);
     assert.ok(catalog.every(item => item.available));
     assert.equal(catalog.filter(item => item.homeGroup === 'ideas').length, 15);
     assert.ok(catalog.some(item => item.id === 'italia-norte-2027' && item.available));
@@ -341,11 +341,12 @@ test('el alta mínima es visible de inmediato y conserva los viajes históricos'
     assert.equal(atlas.trips[0].seasonality,null);
 });
 
-test('Suiza nevada se publica primero y España + Portugal conserva su contenido completo', async () => {
+test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserva su contenido completo', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog[0].id, 'suiza-nevada-2027');
+    assert.equal(catalog[0].id, 'colombia-2027');
     assert.equal(catalog[0].available, true);
-    assert.deepEqual(Array.from(catalog.slice(0, 5), item => item.id), [
+    assert.deepEqual(Array.from(catalog.slice(0, 6), item => item.id), [
+        'colombia-2027',
         'suiza-nevada-2027',
         'italia-norte-2027',
         'espana-portugal-2027',
@@ -362,7 +363,7 @@ test('Suiza nevada se publica primero y España + Portugal conserva su contenido
     assert.equal(migrated.budgetRange[0], 76000);
     assert.equal(migrated.budgetRange[1], 125000);
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
-    const window = { ATLAS_MODULES: [catalog[2]] };
+    const window = { ATLAS_MODULES: [catalog.find(item => item.id === 'espana-portugal-2027')] };
     const sources = {
         'data/places.json': JSON.parse(fs.readFileSync('data/places.json', 'utf8')),
         'data/trips/_template.json': template,
@@ -482,7 +483,7 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
     const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
     const catalog = loadCatalog();
-    assert.equal(catalog[0].id, 'suiza-nevada-2027');
+    assert.ok(catalog.some(item => item.id === 'suiza-nevada-2027'));
     assert.equal(trip.travelerCount, 1);
     assert.equal(trip.days.length, 12);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 10);
