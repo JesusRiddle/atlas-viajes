@@ -37,7 +37,7 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
 });
 test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()=>{
   assert.deepEqual([...model.validateTrip(trip)],[]);
-  assert.deepEqual(trip.majorTransport.map(x=>x.budgetIncludedIn),['air-copa','air-avianca']);
+  assert.deepEqual(trip.majorTransport.map(x=>x.budgetIncludedIn),['air-copa','air-avianca','ground-mobility']);
   const ids=new Set(trip.expenses.map(x=>x.id));
   assert.ok(trip.majorTransport.every(t=>ids.has(t.budgetIncludedIn)));
   assert.equal(budget.summary(trip).issues.length,0);
@@ -47,6 +47,8 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.equal(estimate.totalMXN,49662);
   assert.equal(estimate.low,42000);
   assert.equal(estimate.high,63000);
+  assert.ok(trip.days[9].transportRefs.includes('bus-tayrona-cartagena'));
+  assert.equal(trip.majorTransport.find(x=>x.id==='bus-tayrona-cartagena').options.length,2);
 });
 test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.equal(Object.keys(trip.seasonality.months).length,12);
