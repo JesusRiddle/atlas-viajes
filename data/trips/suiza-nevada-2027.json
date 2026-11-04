@@ -400,8 +400,8 @@
       "am": "1. Tomar transporte público de Zúrich a Kilchberg; reservar margen para llegar a la entrada del Lindt Home of Chocolate.\n2. Entrar en franja objetivo 10:00, aún sin comprar; recorrer exposición y fuente de chocolate.",
       "pm": "1. Regresar por tren/autobús según ruta SBB/ZVV, almorzar por el centro.\n2. Pasear por la orilla del lago, calles históricas y Lindenhof si faltó el domingo; sin Kunsthaus.",
       "night": "1. Última noche en Zúrich.\n2. Preparar documentación, equipaje y traslado al aeropuerto.",
-      "mobility": "• *Zúrich → Kilchberg:* Zürich HB → Kilchberg (tren S-Bahn y caminata o autobús ZVV hasta la zona de Lindt), vuelta equivalente.\n• *Horario oficial:* Consultar SBB/ZVV para el 1 febrero; no asumir que el pase Jungfrau cubre Zúrich.\n• *Entrada a Lindt:* Tarifa adulto Lindt CHF 17 (≈ $390 MXN) publicada, entrada sin reservar.",
-      "note": "• *Horario y entrada:* La visita del lunes debe confirmarse en calendario oficial 2027.\n• *Alérgenos:* Revisa ingredientes y alérgenos si haces degustación de chocolate; hay productos con leche.",
+      "mobility": "• *Zúrich → Kilchberg:* Zürich HB → Kilchberg (tren S-Bahn y caminata o autobús ZVV hasta la zona de Lindt), vuelta equivalente.\n• *Horario oficial:* Consultar SBB/ZVV para el 1 febrero; no asumir que el pase Jungfrau cubre Zúrich.\n• *Entrada a Lindt:* Tarifa adulto Lindt CHF 17 (≈ $390 MXN) publicada, entrada sin reservar.\n• *Tarifa ZVV 2027:* Zona 110 (Zúrich, contabilizada doble) más 150 (Kilchberg) = tres zonas. Sencillo CHF 7.40 (≈ $170 MXN) o CHF 3.70 (≈ $85 MXN) con Half Fare; ida/vuelta: CHF 14.80 (≈ $340 MXN) sin tarjeta o CHF 7.40 (≈ $170 MXN) con tarjeta. Pase de 24 h por igual importe y más flexibilidad.",
+      "note": "• *Horario y entrada:* La visita del lunes debe confirmarse en calendario oficial 2027.\n• *Alérgenos:* Revisa ingredientes y alérgenos si haces degustación de chocolate; hay productos con leche.\n• *Billete a Lindt:* Para el 1/02/2027 el tarifario oficial vigente desde 13/12/2026 confirma tres zonas. No pagar billetes sencillos más pase de 24 h; elegir uno de los dos.",
       "spend": null,
       "places": [
         "swiss27-lindt",
@@ -412,7 +412,9 @@
         "Lago de Zúrich"
       ],
       "hotel": "zurich-fred",
-      "transportRefs": [],
+      "transportRefs": [
+        "zurich-kilchberg-zvv"
+      ],
       "mobilityLinks": [
         {
           "label": "Mapa: Lindt Home of Chocolate Kilchberg",
@@ -1199,6 +1201,99 @@
           "url": "https://www.sbb.ch/en"
         }
       ]
+    },
+    {
+      "id": "zurich-kilchberg-zvv",
+      "type": "train",
+      "day": 11,
+      "title": "Zúrich ↔ Kilchberg · Lindt · ZVV (3 zonas)",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "ZVV · red tarifaria de Zúrich",
+          "status": "planning",
+          "selectedFare": "24h-full",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Zürich HB",
+                  "to": "Kilchberg ZH",
+                  "operator": "ZVV / S-Bahn",
+                  "notes": "Confirmar horario y ruta accesible a Lindt en ZVV; zona 110 y 150."
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kilchberg ZH",
+                  "to": "Zürich HB",
+                  "operator": "ZVV / S-Bahn",
+                  "notes": "Confirmar último transporte; misma cobertura de zonas 110 + 150."
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "24h-full",
+              "name": "24 h · 3 zonas · adulto, 2ª clase",
+              "price": {
+                "amount": 14.8,
+                "currency": "CHF"
+              },
+              "changes": "Tarifa oficial vigente desde el 13/12/2026; valida 24 horas",
+              "refunds": "Según reglas ZVV"
+            },
+            {
+              "id": "24h-half",
+              "name": "24 h · 3 zonas · Swiss Half Fare Card",
+              "price": {
+                "amount": 7.4,
+                "currency": "CHF"
+              },
+              "changes": "Exige Half Fare válida; tarifa oficial vigente desde 13/12/2026",
+              "refunds": "Según reglas ZVV"
+            },
+            {
+              "id": "single-full",
+              "name": "Sencillo · 3 zonas · adulto, 2ª clase",
+              "price": {
+                "amount": 7.4,
+                "currency": "CHF"
+              },
+              "changes": "Validez de una hora, solo una dirección",
+              "refunds": "Según reglas ZVV"
+            },
+            {
+              "id": "single-half",
+              "name": "Sencillo · 3 zonas · Half Fare",
+              "price": {
+                "amount": 3.7,
+                "currency": "CHF"
+              },
+              "changes": "Validez de una hora, exige tarjeta válida",
+              "refunds": "Según reglas ZVV"
+            }
+          ],
+          "notes": "Zürich zona 110 computa doble y Kilchberg zona 150 añade una zona: tarifa de 3 zonas. Un ida/vuelta de sencillos cuesta lo mismo que el pase de 24h. Publicación oficial ZVV aplicable a la fecha 01/02/2027; transporte incluido dentro del presupuesto ferroviario, no sumarlo una segunda vez."
+        }
+      ],
+      "links": [
+        {
+          "label": "ZVV · tarifas vigentes 13/12/2026",
+          "url": "https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf"
+        },
+        {
+          "label": "ZVV · planificador",
+          "url": "https://www.zvv.ch/en/timetable-and-information/timetable.html"
+        }
+      ],
+      "budgetIncludedIn": "rail-budget"
     }
   ],
   "ticketNotes": [
@@ -1232,6 +1327,11 @@
       "title": "SBB · Saver Day Pass frente a Supersaver",
       "note": "Para los traslados del 28 y 31 enero comparar billete de punto a punto, Supersaver y Saver Day Pass. Precios mínimos de Saver Day Pass publicados: CHF 52 sin tarjeta y CHF 29 con Half Fare, sujetos a cupos y fecha; no atribuirlos automáticamente a nuestros billetes. Un Supersaver obliga al tren elegido, mientras Saver Day Pass es válido durante el día dentro del área de cobertura.",
       "url": "https://www.sbb.ch/en/offers/saver-day-pass"
+    },
+    {
+      "title": "ZVV · Zúrich–Kilchberg 1 febrero 2027",
+      "note": "Zonas 110+150 equivalen a tres zonas tarifarias. Tarifa oficial desde diciembre de 2026: ticket 24h CHF 14.80 (≈ $340 MXN) o CHF 7.40 (≈ $170 MXN) con Half Fare. No confundir con el tarifario antiguo de CHF 14.40 / CHF 7.20. Precio incluido en fondo terrestre, sin reserva.",
+      "url": "https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf"
     }
   ],
   "attractionTerms": [],
@@ -1360,7 +1460,7 @@
     "marginMXN": 4000,
     "useBudgetRange": true,
     "referenceFlightMXN": 20331,
-    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales. Gornergrat tren oficial CHF 102 retorno (CHF 51 con Half Fare), invierno 2026/27. La oferta Luzern–Interlaken «desde CHF 34» no es cotización del tramo completo Luzern–Grindelwald. La tarifa exacta SBB sigue pendiente. Se compararán Saver Day Passes (mínimos promocionales CHF 52 sin Half Fare / CHF 29 con tarjeta) con tarifa flexible y Supersaver; esos mínimos NO son cotizaciones de nuestros días."
+    "notes": "Estimación para una persona con vuelos de referencia no comprados; modificar el vuelo sustituye su partida en el total, sin duplicarla. Sensibilidad: si el gasto real en trenes supera la provisión por $5,000 MXN, el costo central subiría de $81,981 a $86,981 MXN; con $10,000 extra, a $91,981 MXN. Son escenarios de riesgo, NO cotizaciones adicionales. Gornergrat tren oficial CHF 102 retorno (CHF 51 con Half Fare), invierno 2026/27. La oferta Luzern–Interlaken «desde CHF 34» no es cotización del tramo completo Luzern–Grindelwald. La tarifa exacta SBB sigue pendiente. Se compararán Saver Day Passes (mínimos promocionales CHF 52 sin Half Fare / CHF 29 con tarjeta) con tarifa flexible y Supersaver; esos mínimos NO son cotizaciones de nuestros días. ZVV para Lindt confirmado en tarifa 2027: 24h CHF 14.80 (≈ $340 MXN) o CHF 7.40 (≈ $170 MXN) con Half Fare, incluido en los $10,000 MXN de movilidad. Restan billetes SBB interurbanos por fecha y tarifa; la provisión es vulnerable."
   },
   "hotels": [
     {
@@ -1590,6 +1690,10 @@
     [
       "SBB · disponibilidad y venta anticipada",
       "https://www.sbb.ch/en/help-and-contact/products-services/tickets/switzerland/tickets.html"
+    ],
+    [
+      "Tarifario oficial ZVV aplicable desde 13/12/2026 (tres zonas)",
+      "https://www.zvv.ch/content/dam/markt/tarif-und-fahrausweiskontrolle/verbundtarif/2027/Preise%20ab%2013.12.2026.pdf"
     ]
   ],
   "sourceNote": null,
@@ -1665,7 +1769,7 @@
     ],
     [
       "Punto de equilibrio con Gornergrat confirmado",
-      "Pase Jungfrau CHF 176 (≈ $4,040 MXN), tren Gornergrat CHF 102 (≈ $2,342 MXN). F = suma de otros billetes SBB/ZVV a tarifa completa (por cotizar). Sin Half Fare, costo combinado CHF 176+102+F; con Half Fare CHF 176+150+51+F/2, suponiendo todos los demás billetes con descuento del 50 %. Punto de equilibrio F = CHF 198 (≈ $4,545 MXN). Ejemplo F=250: CHF 528 sin Half Fare; CHF 502 con Half Fare. Ofertas Saver y mínimos pueden cambiar la cuenta."
+      "Pase Jungfrau CHF 176 (≈ $4,040 MXN), tren Gornergrat CHF 102 (≈ $2,342 MXN). F = suma de otros billetes SBB/ZVV a tarifa completa (por cotizar). Sin Half Fare, costo combinado CHF 176+102+F; con Half Fare CHF 176+150+51+F/2, suponiendo todos los demás billetes con descuento del 50 %. Punto de equilibrio F = CHF 198 (≈ $4,545 MXN). Ejemplo F=250: CHF 528 sin Half Fare; CHF 502 con Half Fare. Ofertas Saver y mínimos pueden cambiar la cuenta. Al incluir el ahorro ZVV confirmado de CHF 7.40, faltan CHF 91.60 de ahorro en los restantes billetes interurbanos; si esos ofrecen 50 %, su tarifa normal conjunta debe superar CHF 183.20. No sustituir precios reales por esa estimación."
     ],
     [
       "Trayectos SBB por cotizar en fechas exactas",
@@ -1678,6 +1782,10 @@
     [
       "Prueba de suficiencia de los $10,000 MXN para movilidad",
       "Si se eligieran ambos pases, Jungfrau CHF 176 más Half Fare CHF 150, se gastarían CHF 326 (≈ $7,484 MXN), quedando ≈ $2,516 MXN para TODOS los billetes nacionales y urbanos. Si se elige solo Jungfrau CHF 176 quedarían ≈ $5,960 MXN. Son saldos calculados, no precios de los trayectos; la provisión de $10,000 MXN tiene riesgo alto de insuficiencia si se compran ambas tarjetas."
+    ],
+    [
+      "Zúrich–Kilchberg · tarifa oficial de ZVV para 2027",
+      "Zonas 110+150 (110 cuenta doble): sencillo CHF 7.40 (≈ $170 MXN) o CHF 3.70 (≈ $85 MXN) con Half Fare. Ida/vuelta o abono de 24 horas CHF 14.80 (≈ $340 MXN) sin tarjeta y CHF 7.40 (≈ $170 MXN) con tarjeta; ahorro con Half Fare: CHF 7.40 (≈ $170 MXN). Tarifario oficial vigente desde 13/12/2026 y válido para nuestro 1/02/2027, sujeto a posterior modificación. Ya incluido en provisión terrestre de $10,000 MXN, no se cobra como actividad."
     ]
   ],
   "railTotal": "Por cotizar: provisión global de $10,000 MXN, sin desglose ferroviario definitivo",
