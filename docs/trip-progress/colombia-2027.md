@@ -6,7 +6,7 @@
 **Modalidad:** planeación detallada, tarifas aún provisionales  
 **Actualización:** 2026-11-04  
 **Etapa actual:** 12 · Fotografías y portada (tras auditoría correctiva de etapas 00–11)  
-**Siguiente acción autónoma:** completar fotografía externa de experiencias y días, verificar licencia/URL de cada imagen, portada y carrusel; después auditoría final D del PR. Revalidar contenido si cambia ruta o tarifas.  
+**Siguiente acción autónoma:** verificar CI al SHA actual; mantener en evaluación la variante Medellín 3 noches mientras se conservan las fechas de los vuelos candidatos. Luego iniciar fotografías externas por destino, portada/carrusel y auditoría D; no hacer merge.  
 **Decisiones que requieren al usuario:** ninguna por ahora. No hay compras autorizadas.
 
 ## Etapas 00–13
@@ -62,3 +62,32 @@ Se comprobó la estructura y se creó el viaje primero en `modules.js`. GitHub A
 **Pendientes de la siguiente etapa:** imágenes de Comuna 13, Guatapé, Minca, Taganga, Tayrona y Cartagena con fuentes/licencias confiables enlazadas, `days[].places` y cobertura real del carrusel; auditoría D y aprobación explícita antes de merge.
 
 **Decisión:** luz verde **solo para iniciar etapa 12**, sin reservas ni merge; repetir auditoría C/B si cambian gastos, noches o transportes.
+
+
+## Revisión adicional · variante Medellín 3 noches (4 de noviembre de 2026)
+
+**Estado de decisión:** bajo evaluación, NO aprobada. El JSON vigente permanece con Medellín 4 noches, Santa Marta 3, Tayrona 2 y Cartagena 3 porque el vuelo directo Avianca AV 9446 MDE→SMR del lunes 18 ya tiene una referencia concreta. El deseo de recortar una noche no constituye autorización para cambiarlo por otro vuelo ni borrar el itinerario. No modificar fechas/horarios/partidas hasta comparar una opción viable de domingo 17 con equipaje, llegada segura y precio final.
+
+**Variante geográficamente óptima si conserva los 13 días:** Medellín **14–17 enero (3 noches)**, Santa Marta **17–20 (3)**, Tayrona **20–22 (2)** y Cartagena **22–26 (4)**. Se evita un quinto hotel y el tiempo liberado se dedica a Cartagena, no se vuelve a Santa Marta ni se acorta el total. Implica vuelo **MDE→SMR domingo 17**, aún SIN cotizar ni confirmar horarios/tarifa. Un buscador muestra como indicio un vuelo directo Wingo domingo 17 cerca de 20:03–21:22, pero **no** puede tratarse como opción confirmada de solo ida ni de buena logística (llegada nocturna y excursión a Minca al día siguiente); preferir salida de día/tarde y llegada con margen para traslado seguro. Valorar la diferencia real en vuelos y hoteles antes de elegir.
+
+**Programación de Medellín con solo dos días completos:** jueves 14 llegada y cena tranquila; viernes 15 Comuna 13 guiada y Metrocable o centro/Plaza Botero, priorizando Comuna 13 y Metrocable sobre el interior del Museo de Antioquia; sábado 16 Guatapé + Piedra del Peñol; domingo 17 vuelo directo a Santa Marta. Si existiera un vuelo **tardío pero seguro**, el Metrocable podría trasladarse a la mañana del domingo sin hacer una carrera hacia el aeropuerto. Arví y Jardín Botánico dejan de ser actividades principales. Es un ritmo menos flexible ante lluvia o cansancio; si el vuelo solo sale de noche, no conviene sacrificar calidad y seguridad solo por quitar una noche de Medellín.
+
+**Variante de menor alteración de logística:** mantener Avianca el lunes 18 y llegar a Medellín el viernes 15 en vez del jueves 14. Resultarían 12 días y 11 noches (3 Medellín + 3 Santa Marta + 2 Tayrona + 3 Cartagena), se debe **recotizar el vuelo internacional completo**, y se mantiene el mismo límite de dos días completos para Medellín. No asumir que el precio anterior de Copa aplica a la nueva fecha.
+
+**Efecto económico:** sustituir una noche de Medellín por una de Cartagena **no garantiza ahorro**: el objetivo presupuestario actual es Medellín $4,800/4 noches y Cartagena $5,200/3; Cartagena tiene una provisión nocturna mayor. Se necesita tarifa real de vuelo del domingo y la diferencia de hoteles antes de comprometer el presupuesto de $49,662 MXN.
+
+**Regla de implementación:** conservar la versión vigente como única verdad para usuario hasta seleccionar variante. Una vez elegida, actualizar atómicamente `bases`, `hotels[].checkIn/checkOut`, `days`, `majorTransport`, `expenses`, `reservations`, `budgetNote`, `intro`, `lodgingSummary`, `planningDetails`, bitácora y pruebas, sin dejar referencias desfasadas. No hacer merge antes.
+
+### Segunda auditoría técnica y editorial
+
+- [x] Recontados 13 días y 12 noches, cuatro hoteles y zona de alojamiento, sin duplicados.
+- [x] Confirmados horarios oficiales generales de Marsol El Zaino→Cartagena, sitio de Parques Nacionales para cierres de Tayrona, climatología histórica de Medellín y Santa Marta y snapshot COP/MXN del 03/11/2026.
+- [x] Web oficial de Casa de Isabella identificada en Kali Hotels: `https://kalihotels.com/en/casa-isabella/`; añadida al hotel y a «Reservaciones importantes».
+- [x] Verificado que la página de Wikimedia Commons de la fotografía de portada existe y tiene licencia de dominio público; el hotlink final debe comprobarse durante etapa 12.
+- [x] Restituida la prueba estricta de portada `trip.cover || trip.status === 'draft'`: el alta de Colombia no debe debilitar garantías del resto del catálogo.
+- [x] Confirmado que el cambio de tres noches de Medellín debe permanecer como una alternativa no aprobada; no se modificaron los vuelos del día 18 ni las noches actuales.
+- [ ] Comprobar CI verde para el SHA final de esta auditoría; no utilizar el verde de un commit anterior como evidencia del estado actual.
+- [ ] Foto galería y carrusel, 2–3 imágenes de lugares para días turísticos; etapa 12.
+- [ ] Tarifa confirmada para vuelo directo MDE–SMR domingo 17 de enero, solo si el usuario elige la variante.
+
+**Decisión editorial:** no hay problema de estructura que impida comenzar la etapa fotográfica. La reducción de Medellín no debe aplicarse hasta comparar vuelo real y aceptar perder flexibilidad. Mantener PR #10 como borrador y no hacer merge.
