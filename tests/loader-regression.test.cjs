@@ -451,7 +451,17 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
         value.photo?.src?.startsWith('https://commons.wikimedia.org/wiki/Special:FilePath/') &&
         value.photo?.author && value.photo?.license && value.photo?.licenseUrl),
         'Las fotografías nuevas deben conservar imagen, fuente, autor y licencia');
-    assert.equal(trip.majorTransport.length, 6);
+    assert.equal(trip.majorTransport.length, 7);
+    const zvv = trip.majorTransport.find(t => t.id === 'zurich-kilchberg-zvv');
+    assert.ok(zvv, 'Debe existir el trayecto Zúrich-Kilchberg del 1 febrero');
+    assert.equal(zvv.day, 11);
+    assert.equal(zvv.budgetIncludedIn, 'rail-budget',
+        'El costo ZVV ya está incluido en el presupuesto ferroviario');
+    assert.deepEqual(zvv.options[0].fares.map(f => f.price.amount), [14.8, 7.4, 7.4, 3.7],
+        'Tarifa ZVV tres zonas oficial vigente desde diciembre 2026');
+    assert.ok(trip.days[10].transportRefs.includes(zvv.id));
+    assert.ok(trip.railSummary.some(row => row[0].includes('Zúrich–Kilchberg') && row[1].includes('CHF 14.80')));
+
     const flight = trip.majorTransport.find(item => item.id === 'flight-international');
     assert.ok(flight, 'Suiza debe conservar la ficha aérea');
     for (const option of flight.options) {
