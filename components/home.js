@@ -133,9 +133,7 @@ window.AtlasHome = function (ctx) {
     // Los días laborales aún por confirmar no deben ocultar un viaje con ruta y presupuesto.
     const homeReady = t => canRenderFullTrip(t) || (t?.start && t.end &&
         t?.routeCities?.length &&
-        (Number.isFinite(window.AtlasBudget?.planningEstimate?.(t)?.low) ||
-         (Array.isArray(t.budgetRange) && t.budgetRange.length === 2 &&
-          t.budgetRange.every(Number.isFinite))));
+        Number.isFinite(window.AtlasBudget?.planningEstimate?.(t)?.low));
     // New-trip home prices are derived from the same ledger used in Presupuesto.
     // No flight is booked automatically: the first quoted option is a dated reference.
     const homePrice = t => {
