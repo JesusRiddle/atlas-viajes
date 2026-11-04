@@ -7,13 +7,13 @@ window.ATLAS_MODULES = [
     "available": true
   },
   {
-    "id": "espana-portugal-2027",
-    "file": "espana-portugal-2027.json",
+    "id": "italia-norte-2027",
+    "file": "italia-norte-2027.json",
     "available": true
   },
   {
-    "id": "italia-norte-2027",
-    "file": "italia-norte-2027.json",
+    "id": "espana-portugal-2027",
+    "file": "espana-portugal-2027.json",
     "available": true
   },
   {
