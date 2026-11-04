@@ -7,9 +7,9 @@ Copiar esta plantilla a `docs/trip-progress/suiza-nevada-2027.md` al comenzar un
 **Rama / PR:** feature/suiza-2027 · https://github.com/JesusRiddle/atlas-viajes/pull/9  
 **Modalidad:** [ ] Planeación general  [x] Itinerario detallado  
 **Última actualización:** 2026-11-03  
-**Etapa actual:** 13 · Auditoría D automatizada aprobada, revisión externa de fotos y tarifas pendiente  
-**Siguiente acción autónoma:** Cotizar cuatro rutas nacionales en SBB; los dos trayectos ZVV de Zúrich ya tienen tarifa oficial 2027. Conciliar presupuesto y auditar el PR  
-**Decisión que sí requiere al usuario (si existe):** Ninguna para publicar el PR; reservas no autorizadas
+**Etapa actual:** 13 · Planeación estimativa concluida; auditoría D automatizada aprobada. Cotizaciones finales reservadas para cuando se decida viajar  
+**Siguiente acción autónoma:** Ninguna necesaria para cerrar la planeación orientativa; al decidir realizar el viaje, revalidar vuelos, cuatro trenes SBB, hoteles, pases y disponibilidad  
+**Decisión que sí requiere al usuario (si existe):** El merge del PR a main requiere autorización; compras y reservas no autorizadas
 
 ## Checklist numerado de ejecución · orden de dependencias
 
@@ -259,3 +259,28 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Inspección financiera:** `expenses` $81,981 MXN sigue siendo meta provisional, movilidad $10,000 MXN y alojamientos $31,750 MXN no reconciliados con checkout. No hay cotizaciones SBB directas recuperables mediante esta interfaz, **sin autorización para simular precios, atribuir promociones a fechas o comprar**.
 - **Próxima acción fuera de este bloqueo:** capturar 4× tarifas SBB para una persona y clase 2 a las fechas exactas, normal sin/con Half Fare, Supersaver disponible y Saver Day Pass cuando aplique. Documentar tipo de boleto y validez, no solo precio; con esas entradas calcular gasto ferroviario, conveniencia Half Fare, presupuesto total y sensibilidad. Obtener tarifas de habitaciones para fechas y condiciones de cancelación. Auditar carga de fotos por navegador real y ejecutar último CI tras cambios de código/JSON.
 - **Resultado de revisión actual:** no se requieren nuevas decisiones de ruta; 9 secciones conservadas; 0 precios inventados; 0 reservas; 0 merge; 0 cambios en viajes antiguos. Auditoría D automatizada superada para el SHA citado; **auditoría D externa/financiera abierta**.
+
+
+## Auditoría final por secciones · cierre de planeación orientativa · 2026-11-03
+
+**Alcance aprobado para esta fase:** diseñar un viaje completo y presupuestarlo de forma ilustrativa. **No** se exige precio de checkout 2027, disponibilidad hotelera ni billetes comprados para declarar completada la planeación. Estas verificaciones corresponden a una fase posterior de contratación. Esta resolución prevalece frente a anotaciones previas que las llamaban «bloqueos de cierre». Es una evaluación editorial, no garantía de que la tarifa final coincida.
+
+| Sección visual | Estado de planeación | Evidencia y reservas de calidad |
+| --- | --- | --- |
+| 1. Panorama | **Lista** | Introducción turística, versión portada, 3 indicadores `style/language/entry`, clima separado en 3 párrafos, CHF y equivalencia MXN, presupuesto preliminar por persona. |
+| 2. Tu viaje en el mapa | **Lista** | 11 puntos ordenados: cuatro alojamientos y excursiones, coordenadas diferenciadas; Jungfraujoch señalado como opcional. |
+| 3. Cuándo viajar / Temporadas | **Lista** | 12 meses clasificados, clima de invierno y alternativas de junio/septiembre; enero-febrero considerados recomendables para el objetivo nevado. |
+| 4. Experiencias para recordar | **Lista** | Siete agrupaciones pertinentes por ciudad/región, gastronomía y opciones por clima; sin esquí obligatorio. |
+| 5. Reservaciones importantes | **Lista** | Tres niveles de prioridad, enlaces oficiales, estados sin compra, Lindt prioritario; montaña flexible. |
+| 6. Movilidad y conexiones | **Lista para estimación** | Dos opciones aéreas referenciales, siete fichas de movilidad, cuatro trenes SBB con `null` por tarifa individual, estrategia de pases y ZVV 2027. No recomendar combinación de pases 2+1 para obtener Top Ticket. |
+| 7. Dónde dormirás | **Lista para estimación** | Cuatro alojamientos candidatos, fechas consecutivas, 10 noches, URLs oficiales y Google Maps. Tarifas objetivo no equivalen a disponibilidad. |
+| 8. Día por día | **Lista** | Doce jornadas narradas en mañana/tarde/noche, transportes, hoteles, notas, gastronomía y alternativas meteorológicas; regreso a México el **3 febrero**, un día después del fin de las jornadas suizas. |
+| 9. Presupuesto | **Lista para estimación** | Una persona, $81,981 MXN = vuelos $20,331 + hospedaje $31,750 + movilidad $10,000 + actividades $6,500 + comida $9,000 + otros $4,400. No hay doble suma de vuelos/pases; el rango $75–85 mil es **objetivo, no garantía**. Si movilidad excede $5 mil/$10 mil de la provisión, total orientativo $86,981/$91,981. |
+
+**Hitos verificados:** ruta 22/01–02/02 (12 jornadas), 10 noches, cuatro alojamientos, nueve secciones y 12 meses; nueve fichas de fotografía con autor/licencia y sus páginas de origen, aunque sin prueba completa de carga remota; cuatro billetes SBB con precio individual aún desconocido y provisión global explícita; CI GitHub Actions 41752521793, run #422, **SUCCESS** para commit 3a46c06 (validación Node/JSON/JavaScript y navegador Desktop/Mobile).
+
+**Único matiz de calendario:** `work=8` corresponde a días laborales de salida/estancia/regreso desde Suiza bajo el calendario supuesto. La opción aérea A llega a CDMX el **miércoles 03/02/2027 a las 04:20**, lo que puede requerir un **noveno día** de vacaciones o descanso. No presentarlo como 8 días de ausencia laboral garantizados; la opción aérea B regresaría el 02/02 según referencia sin comprar.
+
+**Pendientes de fase de contratación (NO bloquean planeación):** cotizaciones de vuelos/4 SBB/habitaciones para fechas y tarifa/flexibilidad exactas; conveniencia de Half Fare frente a Saver Day Pass; clima y apertura de remontes; validez final de seguros, documentación, ETIAS/EES, entrada Lindt; verificar las imágenes `Special:FilePath` en navegador con red y estética fotográfica. Ninguno de estos implica dejar una sección vacía ni necesidad de inventar importes. Si se contrata, reabrir presupuesto y recalcular escenarios, no editar a ciegas.
+
+**Resultado:** **9 de 9 secciones listas para el objetivo de planeación estimativa**; auditorías A/B/C completadas a ese nivel y D automatizada aprobada sobre el SHA citado. **Revisión fotográfica externa completa:** opcional pendiente, no garantía ni bloqueo para dar por diseñada la ruta. PR abierto, sin merge ni reservas. Las alternativas Suiza verde y Suiza nevada siguen siendo mutuamente excluyentes.
