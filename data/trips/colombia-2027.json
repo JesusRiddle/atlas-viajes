@@ -62,7 +62,7 @@
     "Getsemaní"
   ],
   "solo": "Viaje para una persona. Se priorizan habitaciones privadas con baño propio, cancelación flexible y traslados confortables.",
-  "flight": "Vuelos candidatos NO comprados, precios observados el 4 de noviembre de 2026: Copa multidestino MEX→PTY→MDE el 14/01 (09:10–17:00), CTG→PTY→MEX el 26/01 (15:05–22:05), total observado $10,303 MXN con equipaje de mano; confirmar importe al pagar. Avianca AV 9446 MDE→SMR el 18/01 (12:00–13:15), tarifa Classic observada COP 217,580 (aprox. $1,244 MXN según comparación previa, tipo de cambio por actualizar), incluye maleta de cabina y documentada según condiciones publicadas; no comprado. Subtotal aéreo preliminar ~$11,547 MXN, NO presupuesto total.",
+  "flight": "Vuelos candidatos NO comprados, precios observados el 4 de noviembre de 2026: Copa multidestino MEX→PTY→MDE el 14/01 (09:10–17:00), CTG→PTY→MEX el 26/01 (15:05–22:05), total observado $10,303 MXN con equipaje de mano; confirmar importe al pagar. Avianca AV 9446 MDE→SMR el 18/01 (12:00–13:15), tarifa Classic observada COP 217,580 (≈ $1,259 MXN con tipo de cambio de referencia 03/11/2026, sujeto a cargos reales), incluye maleta de cabina y documentada según condiciones publicadas; no comprado. Subtotal aéreo preliminar ~$11,547 MXN, NO presupuesto total.",
   "local": "El traslado Medellín–Santa Marta se prevé por avión. En Medellín, usar metro/Metrocable para visitas y transporte formal para el aeropuerto; en Santa Marta, contratar traslados adecuados para Minca y Taganga. El Zaino está cerca de los ecolodges candidatos y permite entrar por tierra a Tayrona. Para ir desde Tayrona a Cartagena, comparar shuttle desde El Zaino y vehículo privado directo al hotel, sin regresar a Santa Marta.",
   "experiences": [
     {
@@ -110,6 +110,17 @@
       "headerPlaces": [],
       "transportRefs": [
         "flight-international"
+      ],
+      "hotel": "med-landmark",
+      "mobilityLinks": [
+        {
+          "label": "Copa Airlines · itinerario y equipaje",
+          "url": "https://www.copaair.com/"
+        },
+        {
+          "label": "Migración Colombia · documentación",
+          "url": "https://www.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+        }
       ]
     },
     {
@@ -125,7 +136,8 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "med-landmark"
     },
     {
       "n": 3,
@@ -140,7 +152,8 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "med-landmark"
     },
     {
       "n": 4,
@@ -155,7 +168,8 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "med-landmark"
     },
     {
       "n": 5,
@@ -172,6 +186,13 @@
       "headerPlaces": [],
       "transportRefs": [
         "flight-domestic"
+      ],
+      "hotel": "sm-isabella",
+      "mobilityLinks": [
+        {
+          "label": "Avianca · vuelo y condiciones",
+          "url": "https://www.avianca.com/"
+        }
       ]
     },
     {
@@ -187,7 +208,8 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "sm-isabella"
     },
     {
       "n": 7,
@@ -198,11 +220,12 @@
       "pm": "Playa Grande solo si el mar permite una lancha autorizada; almuerzo y retorno a Santa Marta a primera hora de la tarde.",
       "night": "Piscina, paseo por el Centro Histórico o cena sin agenda fija.",
       "mobility": "• *Cómo trasladarte:* Taxi o transporte preacordado entre Santa Marta y Taganga; lancha corta autorizada a Playa Grande cuando las condiciones sean seguras.",
-      "note": "• *Tips del día:* Evitar caminar por el sendero Taganga–Playa Grande por reportes de robos. Usar lancha autorizada con chaleco salvavidas, acordar precio por anticipado, verificar estado del mar y regresar de día.",
+      "note": "• *Tips del día:* Evita el sendero peatonal Taganga–Playa Grande: existen reportes de robos. Usa solo lancha autorizada, chaleco salvavidas, consulta oleaje y acuerda precio y retorno antes de embarcar. Regresa de día; si el mar está agitado, quédate en Taganga o descansa en Santa Marta.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "sm-isabella"
     },
     {
       "n": 8,
@@ -217,7 +240,8 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "tay-koguiwa"
     },
     {
       "n": 9,
@@ -228,11 +252,18 @@
       "pm": "Caminata por senderos habilitados hasta Cabo San Juan; comida y regreso con margen amplio antes del cierre.",
       "night": "Descanso y cena en ecolodge.",
       "mobility": "• *Cómo trasladarte:* Entrada El Zaino, transporte interno según operación vigente, caminata aproximada 2–3 horas por sentido.",
-      "note": "• *Tips del día:* Verificar que Tayrona esté abierto en esa fecha, accesos, cupos, cierres extraordinarios y horarios; no nadar en playas prohibidas o de corrientes peligrosas; llevar agua, calzado adecuado y protector solar.",
+      "note": "• *Tips del día:* Verificar que Tayrona esté abierto en esa fecha, accesos, cupos, cierres extraordinarios y horarios; no nadar en playas prohibidas o de corrientes peligrosas; llevar agua, calzado adecuado y protector solar.\n• *Preparación sanitaria:* Consultar recomendaciones oficiales sobre fiebre amarilla para la zona de Tayrona al menos diez días antes; según salud individual, solicitar orientación profesional. No declarar la vacunación obligatoria universalmente.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "tay-koguiwa",
+      "mobilityLinks": [
+        {
+          "label": "Parque Tayrona · acceso y cierres oficiales",
+          "url": "https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/"
+        }
+      ]
     },
     {
       "n": 10,
@@ -247,7 +278,14 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "ct-lafe",
+      "mobilityLinks": [
+        {
+          "label": "Marsol · transporte interurbano",
+          "url": "https://www.marsol.com.co/"
+        }
+      ]
     },
     {
       "n": 11,
@@ -262,7 +300,8 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "ct-lafe"
     },
     {
       "n": 12,
@@ -277,7 +316,8 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "transportRefs": []
+      "transportRefs": [],
+      "hotel": "ct-lafe"
     },
     {
       "n": 13,
@@ -294,6 +334,12 @@
       "headerPlaces": [],
       "transportRefs": [
         "flight-international"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Copa Airlines · regreso y equipaje",
+          "url": "https://www.copaair.com/"
+        }
       ]
     }
   ],
@@ -378,8 +424,17 @@
       ]
     ]
   ],
-  "exchangeRates": {},
-  "exchangeRateSnapshot": null,
+  "exchangeRates": {
+    "COP": 0.00578764
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-11-03",
+    "baseCurrency": "MXN",
+    "description": "Pesos mexicanos por un peso colombiano (COP), tipo de cambio de referencia 3/11/2026 calculado a partir del BCE/Banca d'Italia; no equivale al precio de compra con tarjeta.",
+    "sources": {
+      "COP": "https://theratesapi.com/convert/cop-to-mxn/"
+    }
+  },
   "expenses": [
     {
       "id": "air-copa",
@@ -399,11 +454,11 @@
       "concept": "Avianca MDE–SMR · tarifa Classic candidata",
       "date": "2027-01-18",
       "cost": {
-        "amount": 1244,
+        "amount": 1259,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Equivalencia MXN orientativa aportada con captura de COP 217,580; NO es tipo de cambio actual comprobado. Confirmar importe final con Avianca antes de reservar."
+      "notes": "Tarifa Avianca Classic original COP 217,580, observada 04/11/2026; equivalente ≈ $1,259 MXN con tipo de cambio de referencia 03/11/2026 (0.00578764). Es estimación, no compra ni garantía de tarifa."
     },
     {
       "id": "hotel-med",
@@ -725,20 +780,32 @@
   "planningDetails": "Itinerario provisional: no hay vuelos, hoteles ni excursiones comprados. Revisar acceso a Tayrona, seguridad de senderos y estado del mar; cotizar precios finales antes de cualquier reserva.",
   "lodgingSummary": "12 noches repartidas en cuatro alojamientos: Medellín 4 (Manila, El Poblado), Santa Marta 3 (Centro Histórico, calle tranquila), Tayrona 2 (cerca de El Zaino) y Cartagena 3 (preferencia por San Diego). Hoteles aún sin reservar.",
   "heroLodgingSummary": "12 noches, 4 alojamientos",
-  "budgetPreliminary": true,
+  "budgetPreliminary": {
+    "low": 42000,
+    "high": 63000,
+    "marginMXN": 0,
+    "useBudgetRange": true,
+    "referenceFlightMXN": 10303,
+    "notes": "Estimación global para una persona con hoteles objetivo y transportes no cotizados. El rango representa sensibilidad, no una oferta reservable. Los vuelos candidatos ya están incluidos una sola vez. Costos COP se convierten con snapshot 03/11/2026; podrían cambiar por tarifas o tipo de cambio."
+  },
   "hotels": [
     {
       "id": "med-landmark",
       "city": "Medellín",
       "name": "Landmark Hotel",
-      "address": "Manila, El Poblado, Medellín, Colombia",
+      "address": "Calle 14 #43D-85, Manila, El Poblado, Medellín, Colombia",
       "checkIn": "2027-01-14",
       "checkOut": "2027-01-18",
       "status": "Candidato · no reservado",
       "rate": "Objetivo para Medellín: $4,000–5,600 MXN por 4 noches; no es cotización de Landmark.",
       "rateConditions": "1 adulto, habitación y baño privados; comprobar habitación con ventana, impuestos, desayuno, condiciones y cancelación flexible.",
       "notes": "Favorito por confort e instalaciones; alternativa 574 Hotel.",
-      "links": [],
+      "links": [
+        {
+          "label": "Landmark Hotel · sitio oficial",
+          "url": "https://landmarkmedellin.com/"
+        }
+      ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Landmark%20Hotel%20Manila%20Medell%C3%ADn"
     },
     {
@@ -768,8 +835,8 @@
       "notes": "Primera opción por acceso a El Zaino; alternativa Senda Watapuy, después Villa María Tayrona.",
       "links": [
         {
-          "label": "Sitio oficial de cadena Senda",
-          "url": "https://www.sendahotels.com/"
+          "label": "Senda Koguiwa · sitio oficial",
+          "url": "https://sendahotels.com/es/hotel/senda-koguiwa/"
         }
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Senda%20Koguiwa%20Tayrona"
@@ -778,14 +845,19 @@
       "id": "ct-lafe",
       "city": "Cartagena",
       "name": "Casa La Fe",
-      "address": "San Diego, Ciudad Amurallada, Cartagena de Indias, Colombia",
+      "address": "Carrera 7 #36-125, barrio San Diego, Cartagena de Indias, Colombia",
       "checkIn": "2027-01-23",
       "checkOut": "2027-01-26",
       "status": "Candidato · no reservado",
       "rate": "Objetivo para Cartagena: $4,500–6,000 MXN por 3 noches; no es cotización de Casa La Fe.",
       "rateConditions": "1 adulto, baño privado y habitación silenciosa; verificar piscina, desayuno, cargos y cancelación.",
-      "notes": "Comparar con Bantú y alternativas boutique tranquilas en San Diego; no pagar sobreprecio injustificado.",
-      "links": [],
+      "notes": "Comparar con Bantú y alternativas boutique tranquilas en San Diego; no pagar sobreprecio injustificado. Edificio histórico sin ascensor; confirmar piso y accesibilidad de la habitación (piscina en terraza).",
+      "links": [
+        {
+          "label": "Casa La Fe · sitio oficial",
+          "url": "https://www.casalafe.com/"
+        }
+      ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20La%20Fe%20Cartagena%20Colombia"
     }
   ],
@@ -808,87 +880,70 @@
     ]
   ],
   "seasonality": {
-    "summary": "Promedios climáticos históricos, no pronósticos de enero de 2027. Los intervalos mensuales son una banda aproximada que abarca noches templadas de Medellín (~17 °C) y tardes calurosas en Santa Marta (~32–33 °C); NO son el rango térmico de una sola ciudad. Cartagena mantiene calor húmedo alrededor de 26–31 °C. Las lluvias y el oleaje del Caribe varían por localidad; enero se elige por su estacionalidad más seca, pero puede haber viento fuerte en Santa Marta. Cierres anuales de Tayrona: 1–15 febrero, 1–15 junio y 19 octubre–2 noviembre; además puede cerrar extraordinariamente.",
+    "summary": "Bandas de máximas medias diurnas (no mínimas nocturnas) desde Medellín hasta Santa Marta, redondeadas por mes: las ciudades del Caribe tienen días más calurosos y Medellín noches más frescas. Datos de Medellín Olaya Herrera 1991–2020 (normales OMM, vía Climópolis) y de Santa Marta 1971–2000 (OMM/IDEAM); distintas ventanas históricas, comparación orientativa, no pronóstico. No representan la temperatura de cada ciudad: por ejemplo, las mínimas medias de Santa Marta rondan 22 a 25 °C. Enero se elige por baja lluvia en Santa Marta, aunque con viento y oleaje posibles. Verificar apertura del Tayrona y circunstancias sanitarias y de seguridad antes del viaje.",
     "months": {
       "10": {
         "status": "avoid",
-        "description": "17 a 32 °C. Uno de los periodos más lluviosos en ambas regiones; Tayrona cierra del 19 de octubre al 2 de noviembre por calendario anual.",
+        "description": "28 a 32 °C. Octubre es muy lluvioso en Santa Marta; Tayrona suele cerrar del 19 de octubre al 2 de noviembre.",
         "icon": "cloudy"
       },
       "11": {
         "status": "conditional",
-        "description": "17 a 32 °C. Persisten lluvias en Medellín y Caribe, especialmente al inicio del mes; Tayrona suele reabrir tras el 2 de noviembre, sujeto a anuncio oficial.",
+        "description": "28 a 32 °C. Todavía puede llover, sobre todo al inicio del mes; la reapertura de Tayrona depende del anuncio oficial.",
         "icon": "partlyCloudy"
       },
       "12": {
         "status": "recommended",
-        "description": "17 a 32 °C. Regresa un periodo más seco en la costa y mejores condiciones para naturaleza, aunque Navidad y fin de año pueden subir ocupación y precios.",
+        "description": "28 a 32 °C. Mejora la temporada seca del Caribe y siguen las temperaturas cálidas; Navidad y fin de año pueden encarecer hoteles.",
         "icon": "sun"
       },
       "01": {
         "status": "recommended",
-        "description": "17 a 33 °C. Medellín suele estar en uno de sus meses menos lluviosos y el Caribe entra en estación seca; calor, viento y oleaje fuerte posible en Santa Marta.",
+        "description": "29 a 33 °C. Enero es relativamente seco en Santa Marta y suele favorecer Guatapé y Tayrona; el viento puede cancelar lanchas.",
         "icon": "sun"
       },
       "02": {
         "status": "conditional",
-        "description": "17 a 33 °C. Buen tiempo seco en la costa, pero Tayrona tiene cierre anual programado del 1 al 15 de febrero; no recomendar esas fechas para esta ruta.",
+        "description": "29 a 34 °C. Caribe seco, pero Tayrona cierra normalmente del 1 al 15 de febrero; descartar esas fechas para esta ruta.",
         "icon": "partlyCloudy"
       },
       "03": {
-        "status": "conditional",
-        "description": "17 a 33 °C. Caribe todavía relativamente seco; en Medellín aumentan los aguaceros y la humedad. Visitas de montaña sujetas a lluvia.",
-        "icon": "partlyCloudy"
+        "status": "recommended",
+        "description": "29 a 34 °C. El Caribe continúa seco en general; Medellín empieza a recibir más lluvia. Es alternativa si las fechas y tarifas encajan.",
+        "icon": "sun"
       },
       "04": {
         "status": "conditional",
-        "description": "17 a 33 °C. En Medellín sube la lluvia y comienza a aumentar en la costa; planificar mañanas tempranas y actividades cubiertas alternativas.",
+        "description": "28 a 34 °C. Aumentan los aguaceros de Medellín, aunque Santa Marta todavía registra pocas lluvias; prever planes alternativos.",
         "icon": "partlyCloudy"
       },
       "05": {
         "status": "conditional",
-        "description": "17 a 33 °C. Periodo húmedo tanto en Medellín como en Santa Marta y Cartagena; senderos y navegación pueden verse afectados.",
+        "description": "29 a 33 °C. Comienza la temporada de lluvias más persistentes y aumenta la humedad; revisar carreteras y senderos.",
         "icon": "partlyCloudy"
       },
       "06": {
         "status": "conditional",
-        "description": "17 a 33 °C. Lluvias variables y cierre programado de Tayrona del 1 al 15 de junio; segunda mitad condicionada a accesos y pronóstico.",
+        "description": "29 a 33 °C. Santa Marta tiene más lluvia y Tayrona cierra normalmente del 1 al 15 de junio; revisar apertura y mar.",
         "icon": "partlyCloudy"
       },
       "07": {
         "status": "conditional",
-        "description": "17 a 33 °C. Medellín puede tener una pausa relativa de lluvias; Caribe cálido, húmedo y con chubascos. Revisar viento en costa.",
+        "description": "29 a 33 °C. Días cálidos, con chubascos en Caribe y Medellín; no garantizar buenas condiciones de playa.",
         "icon": "partlyCloudy"
       },
       "08": {
         "status": "conditional",
-        "description": "17 a 33 °C. Calor y humedad caribeña; Medellín con lluvias intermitentes. Ajustar caminatas y traslados de montaña.",
+        "description": "29 a 33 °C. Se intensifican algunas lluvias en la costa y continúa el calor húmedo; transporte marítimo sujeto a condiciones.",
         "icon": "partlyCloudy"
       },
       "09": {
         "status": "avoid",
-        "description": "17 a 32 °C. Temporada especialmente lluviosa en el Caribe, con tormentas y potenciales cambios en actividades de playa; Medellín también húmedo.",
+        "description": "29 a 32 °C. Suben las lluvias en Santa Marta y Medellín; los itinerarios de senderismo requieren flexibilidad.",
         "icon": "cloudy"
       }
     },
-    "referenceLinks": [
-      {
-        "label": "Promedios mensuales Medellín · estudio climatológico",
-        "url": "https://www.blenesa.com/destinations/medellin-co"
-      },
-      {
-        "label": "Promedios mensuales Santa Marta · climatología",
-        "url": "https://atlasofseasons.com/en/colombia/magdalena-department/santa-marta"
-      },
-      {
-        "label": "Clima mensual Cartagena · weather-atlas",
-        "url": "https://www.weather-atlas.com/en/colombia/cartagena-climate"
-      },
-      {
-        "label": "Parques Nacionales · cierres y accesos Tayrona",
-        "url": "https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/"
-      }
-    ]
+    "referenceLinks": []
   },
   "practicalIndicators": [
     {
@@ -903,14 +958,14 @@
       "title": "Idioma y moneda",
       "badge": "Español · COP",
       "tone": "green",
-      "text": "El español es el idioma principal. La moneda es el peso colombiano (COP). Los equivalentes a MXN de precios extranjeros requieren tipo de cambio vigente y documentado antes de reservar; evitar conversiones dinámicas desfavorables al pagar."
+      "text": "El español es el idioma principal. Moneda: peso colombiano (COP). Referencia del 3/11/2026, COP 1 ≈ $0.00578764 MXN (tipo medio derivado de datos BCE/Banca d’Italia); no equivale a la tasa final de bancos y terminales. Pagar en COP y evitar la conversión dinámica a MXN."
     },
     {
       "id": "entry",
       "title": "Documentación y consejos prácticos",
       "badge": "Revisar antes de salir",
       "tone": "orange",
-      "text": "Consultar requisitos migratorios para mexicanos en fuentes oficiales antes de comprar: pasaporte, posibles controles sanitarios, seguro y condiciones de conexión por Panamá. Electricidad colombiana normalmente 110 V y enchufes tipo A/B; comprobar cargadores. Usar transportes autorizados y precaución contra hurtos en zonas concurridas."
+      "text": "Consultar requisitos migratorios actualizados para mexicanos y tránsito por Panamá. Migración Colombia considera Check-Mig opcional (recomendado para agilizar controles). Antes de viajar a Santa Marta, Minca o Tayrona, revisar recomendaciones oficiales de vacunación contra fiebre amarilla y orientación médica sobre tiempos y contraindicaciones, así como cobertura del seguro. Colombia utiliza habitualmente 110 V y enchufes A/B; verificar cargadores. Usar transportes autorizados."
     }
   ],
   "tips": [
@@ -920,20 +975,32 @@
   ],
   "sources": [
     {
-      "label": "Coordenadas Medellín · Alcaldía",
-      "url": "https://www.medellin.gov.co/es/wp-content/uploads/2025/08/4-Informe-Final-Gestion-2016-2019.pdf"
-    },
-    {
-      "label": "Coordenadas Guatapé · informe municipal",
-      "url": "https://dssa.gov.co/images/2024/documentos/monitoreo_evaluacion_planes_territoriales/2020-2023/Oriente/Guatape.pdf"
-    },
-    {
       "label": "Santa Marta · Alcaldía",
       "url": "https://santamarta.gov.co/geografia"
     },
     {
-      "label": "Cartagena y Taganga · OpenStreetMap mediante Mapcarta",
-      "url": "https://mapcarta.com/es/Cartagena_de_Indias"
+      "label": "OMM/IDEAM · Normales climáticas de Santa Marta",
+      "url": "https://worldweather.wmo.int/en/city.html?cityId=886"
+    },
+    {
+      "label": "Climópolis · Medellín, normales OMM 1991–2020",
+      "url": "https://climopolis.com/en/colombia/medellin"
+    },
+    {
+      "label": "Parques Nacionales · Tayrona, cierres y requisitos",
+      "url": "https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/"
+    },
+    {
+      "label": "Migración Colombia · requisitos y Check-Mig",
+      "url": "https://www.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+    },
+    {
+      "label": "Ministerio de Salud · recomendaciones fiebre amarilla",
+      "url": "https://vacunacion.minsalud.gov.co/EV/Paginas/viajeros.aspx"
+    },
+    {
+      "label": "Tipo de cambio COP/MXN 3/11/2026 (BCE/Banca d’Italia vía The Rates API)",
+      "url": "https://theratesapi.com/convert/cop-to-mxn/"
     }
   ],
   "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
@@ -941,7 +1008,7 @@
     42000,
     63000
   ],
-  "budgetNote": "Proyección orientativa para 1 persona, NO cotización ni presupuesto contratado. Escenario central $49,647 MXN, compuesto por vuelos candidatos $11,547; alojamiento meta $18,600; movilidad terrestre estimada $5,000; alimentación $6,500; experiencias $4,500; seguro e imprevistos $3,500. Intervalo de sensibilidad $42,000–63,000 MXN, pendiente de ajustar por hoteles reales, transporte privado Tayrona→Cartagena, entradas, seguros y equipaje adicional. No añadir dos veces las tarifas de majorTransport: los vuelos están ya reflejados en expenses. Los $1,244 MXN de Avianca son una conversión aproximada de referencia del usuario, no una cotización cambiaria actual.",
+  "budgetNote": "Proyección global para una persona, no cotización ni compra. Escenario central $49,662 MXN: Copa $10,303 y Avianca Classic COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026), cuatro alojamientos objetivo $18,600, movilidad terrestre estimada $5,000, alimentación $6,500, actividades $4,500 y seguro/contingencias $3,500. Intervalo de sensibilidad $42,000–63,000 MXN; actualizar cuando existan tarifas reales y equipaje confirmado. majorTransport es informativo: ambos vuelos están incluidos en expenses y NO se suman dos veces.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
@@ -953,12 +1020,12 @@
   "emphasisStyle": false,
   "linkRailInText": false,
   "knownCosts": [],
-  "costExclusions": "No están cotizados: elección definitiva de hoteles, equipaje documentado de Copa si se necesita, tarifas reales de shuttle o vehículo privado, clubes de playa de islas opcionales y fluctuaciones cambiarias.",
-  "exchangeNote": null,
+  "costExclusions": "Por cotizar: tarifa efectiva de hoteles, Copa con maleta documentada si se necesita, movilidad privada en el corredor Tayrona–Cartagena, entradas y tours detallados. Excursiones a islas y upgrades de habitación son opcionales y no están presupuestados específicamente.",
+  "exchangeNote": "Referencia 3/11/2026: COP 1 ≈ $0.00578764 MXN. Los cargos reales dependen del banco, de comisiones y del día de pago.",
   "railSummary": [],
   "railTotal": null,
   "railExclusions": null,
   "railCurrencyNote": null,
   "heroEyebrow": null,
-  "climate": "Enero combina las condiciones relativamente menos lluviosas de Medellín (mínimas medias cercanas a 17 °C y máximas alrededor de 27 °C) con calor caribeño: Santa Marta puede alcanzar unos 32 °C y Cartagena suele rondar los 26 a 31 °C. Son referencias históricas de fuentes distintas, no un pronóstico para 2027. En Santa Marta y Tayrona el viento y oleaje estacional pueden afectar las lanchas, incluso en jornadas soleadas. Las excursiones de Minca y Cabo San Juan requieren comprobar lluvia, senderos y avisos oficiales.\n\n*Qué llevar:* Ropa ligera y transpirable para el Caribe, una capa delgada para Medellín y Minca, calzado cerrado y antideslizante para Tayrona, traje de baño, gorra, protección solar y repelente. Llevar agua suficiente para caminar, evitar playas con corrientes peligrosas y usar chaleco en lanchas autorizadas. No llevar objetos de valor a la vista en lugares concurridos.\n\n*Horas de luz:* Por la latitud cercana al ecuador, enero ofrece aproximadamente entre 11.5 y 12 horas de luz en las ciudades del recorrido; la salida y puesta exactas del sol dependen de la fecha y localidad y deben verificarse antes de reservar paseos al atardecer. Priorizar caminatas y carreteras largas durante el día, especialmente la ruta de regreso de Cabo San Juan y el traslado a Cartagena."
+  "climate": "En enero Medellín suele registrar máximas medias cercanas a 29 °C y mínimas próximas a 18 °C, mientras Santa Marta promedia máximas de 33 °C y mínimas cercanas a 22 °C. Cartagena también es cálida y húmeda. Son normales históricas, no pronósticos para 2027. La costa suele estar más seca, pero los vientos y el oleaje pueden dificultar lanchas de Taganga y las excursiones a islas. En Minca y Tayrona, comprobar caminos, senderos y avisos de las autoridades.\n\n*Qué llevar:* Ropa ligera y transpirable, una capa delgada para noches de Medellín y Minca, calzado cerrado antideslizante para Tayrona, traje de baño, gorra, protector solar, repelente y agua suficiente. Usar chaleco en embarcaciones autorizadas y evitar nadar en playas con corrientes peligrosas.\n\n*Horas de luz:* En estas latitudes enero ofrece aproximadamente 11 h 30 min a 12 h de luz; los horarios exactos de salida y puesta dependen de la ciudad y fecha y se reconfirmarán para las actividades al atardecer. Para Cabo San Juan, reservar margen amplio para regresar antes del cierre del parque."
 }
