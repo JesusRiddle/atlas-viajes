@@ -187,8 +187,8 @@ const assert = require('node:assert/strict');
           assert.match(await page.locator('#plan .budget-exchange').innerText(), /CHF/);
           assert.equal(await page.locator('#plan .budget-exchange a').count(), 1,
             'CHF debe tener fuente enlazada en el Panorama');
-          assert.equal(await page.locator('#traslados .mt-card').count(), 6,
-            'Suiza debe mostrar vuelo, aeropuerto y tres trenes interurbanos sin error');
+          assert.equal(await page.locator('#traslados .mt-card').count(), 7,
+            'Suiza debe mostrar vuelo, aeropuerto, tres trenes interurbanos y ZVV Kilchberg');
           assert.equal(await page.locator('#traslados .mt-pass-comparison').count(), 1,
             'Comparación de pases debe ser visible como bloque accesible, no solo existir en JSON');
           await page.locator('#traslados .mt-pass-comparison > summary').click();
@@ -199,10 +199,11 @@ const assert = require('node:assert/strict');
           assert.match(comparison, /CHF 51/, 'La mitad de tarifa oficial Gornergrat debe mostrarse');
           assert.match(comparison, /CHF 198/, 'El umbral Half Fare incluye ahorro de Gornergrat');
           assert.doesNotMatch(comparison, /Winter Pass CHF 102|NO es el billete convencional de ida y vuelta/i);
-          assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 10,
+          assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 11,
             'La comparativa de Suiza incluye productos turísticos, billetes Saver y sensibilidad económica');
           assert.match(comparison, /Saver Day Pass/);
           assert.match(comparison, /CHF 326/, 'Costo de adquirir ambos pases y riesgo presupuestario');
+          assert.match(comparison, /CHF 14\.80/, 'La tarifa ZVV para 2027 se ve en Movilidad');
           const flights = page.locator('#traslados .mt-card[data-transport="flight-international"]');
           await flights.locator('summary').click();
           assert.equal(await flights.locator('.flight-leg').count(), 4,
