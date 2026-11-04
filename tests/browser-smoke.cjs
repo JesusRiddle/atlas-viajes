@@ -195,7 +195,10 @@ const assert = require('node:assert/strict');
           const comparison = await page.locator('#traslados .mt-pass-comparison').innerText();
           assert.match(comparison, /Punto de equilibrio/);
           assert.match(comparison, /Winter Pass/);
-          assert.doesNotMatch(comparison, /CHF 51\b|billete simple ida y vuelta en tren.*CHF 102/i);
+          assert.match(comparison, /CHF 102/, 'La tarifa oficial del retorno Gornergrat debe mostrarse');
+          assert.match(comparison, /CHF 51/, 'La mitad de tarifa oficial Gornergrat debe mostrarse');
+          assert.match(comparison, /CHF 198/, 'El umbral Half Fare incluye ahorro de Gornergrat');
+          assert.doesNotMatch(comparison, /Winter Pass CHF 102|NO es el billete convencional de ida y vuelta/i);
           assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 8);
 
           assert.equal(await page.locator('#dias details.day').count(), 12,
