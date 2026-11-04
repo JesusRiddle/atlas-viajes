@@ -345,7 +345,7 @@ test('Suiza nevada se publica primero y España + Portugal conserva su contenido
     const catalog = loadCatalog();
     assert.equal(catalog[0].id, 'suiza-nevada-2027');
     assert.equal(catalog[0].available, true);
-    assert.deepEqual(catalog.slice(0, 5).map(item => item.id), [
+    assert.deepEqual(Array.from(catalog.slice(0, 5), item => item.id), [
         'suiza-nevada-2027',
         'italia-norte-2027',
         'espana-portugal-2027',
