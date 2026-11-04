@@ -113,7 +113,7 @@
       "note": "• *Monte Rigi opcional:* No programar Rigi como obligación: entre migración, tren, check-in y pocas horas de luz, reduce el tiempo para Lucerna.\n• *Descanso y luz natural:* Los horarios del domingo siguiente no se ven afectados por un check-in tardío, pero conviene descansar.",
       "spend": null,
       "places": [
-        "lucerne",
+        "swiss27-lucerne-winter",
         "lake-lucerne"
       ],
       "headerPlaces": [
@@ -189,7 +189,7 @@
       "spend": null,
       "places": [
         "swiss27-grindelwald-winter",
-        "first-cliff-walk"
+        "swiss27-first-cliff-walk"
       ],
       "headerPlaces": [
         "Grindelwald-First · sujeto a operación"
@@ -365,8 +365,7 @@
       "note": "• *Matterhorn y nubes:* Gornergrat es prioridad, pero cielo despejado pesa más que fecha exacta.\n• *Riffelsee en invierno:* No esperar el reflejo del Matterhorn en Riffelsee: puede estar congelado o cubierto de nieve en enero.\n• *Billete Gornergrat:* Retorno por tren ordinario CHF 102 (≈ $2,342 MXN) (Half Fare CHF 51 (≈ $1,171 MXN)); revisar visibilidad antes de comprar.\n• *Horario invernal verificado:* El operador publica salidas de Gornergratbahn cada 24 min a partir de 08:24 entre el 23/12/2026 y el 29/03/2027; consultar operativa y último retorno el día de visita.\n• *Webcams y operación:* Consultar los enlaces oficiales del día para distinguir visibilidad de Matterhorn, estado del tren Gornergrat y apertura de instalaciones. Una webcam despejada no sustituye el horario del último tren.",
       "spend": null,
       "places": [
-        "swiss27-gornergrat-winter",
-        "gornergrat"
+        "swiss27-gornergrat-winter"
       ],
       "headerPlaces": [
         "Gornergrat · vista del Matterhorn"
@@ -435,7 +434,7 @@
       "note": "• *Comercios en domingo:* Domingo: no asumir apertura de tiendas en el centro; restaurantes, estaciones y atractivos tienen horarios propios.\n• *Ritmo del día:* Evitar acumular museos después del traslado.",
       "spend": null,
       "places": [
-        "zurich"
+        "swiss27-zurich-winter"
       ],
       "headerPlaces": [
         "Zermatt → Zürich HB",
@@ -477,7 +476,7 @@
       "spend": null,
       "places": [
         "swiss27-lindt",
-        "zurich"
+        "swiss27-zurich-winter"
       ],
       "headerPlaces": [
         "Lindt Home of Chocolate · Kilchberg",
@@ -1827,7 +1826,10 @@
     "zurich": "El casco antiguo de Zúrich reúne callejuelas, torres de iglesias y paseos junto al Limmat, que desemboca en el lago de la ciudad.",
     "swiss27-lindt": "En Kilchberg, la gran fuente de chocolate del Lindt Home of Chocolate recibe a los visitantes antes de recorrer la exposición dedicada al cacao.",
     "swiss27-jungfraujoch-february": "El mirador Jungfraujoch ofrece perspectivas de nieve y edificios de montaña junto al glaciar Aletsch, en condiciones de frío extremo.",
-    "swiss27-maennlichen-winter": "El Royal Walk de Männlichen asciende a un mirador sobre el Oberland bernés; en invierno su acceso depende del estado del sendero."
+    "swiss27-maennlichen-winter": "El Royal Walk de Männlichen asciende a un mirador sobre el Oberland bernés; en invierno su acceso depende del estado del sendero.",
+    "swiss27-lucerne-winter": "En la ciudad vieja de Lucerna, el Kapellbrücke cruza el río Reuss bajo una cubierta de madera y conecta plazas históricas entre montañas.",
+    "swiss27-first-cliff-walk": "La pasarela metálica First Cliff Walk recorre la ladera sobre Grindelwald y termina en una plataforma suspendida, accesible solo cuando la instalación está abierta.",
+    "swiss27-zurich-winter": "El casco antiguo de Zúrich reúne callejuelas, torres de iglesias y paseos junto al Limmat, que desemboca en el lago de la ciudad."
   },
   "optionalSection": null,
   "family": null,
