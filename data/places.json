@@ -4361,56 +4361,31 @@
   "swiss27-grindelwald-winter": {
     "name": "Grindelwald nevado",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Winter%20in%20Grindelwald.jpg?width=1280",
-      "source": "https://commons.wikimedia.org/wiki/File:Winter_in_Grindelwald.jpg",
-      "author": "Robert Campbell KOR",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
-      "attribution": "Robert Campbell KOR"
+      "src": "assets/images/trips/suiza-nevada-2027/grindelwald-invierno.jpg"
     }
   },
   "swiss27-wengen-winter": {
     "name": "Wengen en invierno",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wengen%20in%20winter.jpg?width=1280",
-      "source": "https://commons.wikimedia.org/wiki/File:Wengen_in_winter.jpg",
-      "author": "Jpatokal",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Jpatokal"
+      "src": "assets/images/trips/suiza-nevada-2027/wengen-invierno.jpg"
     }
   },
   "swiss27-murren-winter": {
     "name": "Mürren en invierno",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Murren%20inverno.jpg?width=1280",
-      "source": "https://commons.wikimedia.org/wiki/File:Murren_inverno.jpg",
-      "author": "Giuse1974",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Giuse1974"
+      "src": "assets/images/trips/suiza-nevada-2027/murren-invierno.jpg"
     }
   },
   "swiss27-lauterbrunnen-winter": {
     "name": "Lauterbrunnen nevado",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lauterbrunnen%20in%20winter.jpg?width=1280",
-      "source": "https://commons.wikimedia.org/wiki/File:Lauterbrunnen_in_winter.jpg",
-      "author": "Kenneth Barclay",
-      "license": "Public domain",
-      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Lauterbrunnen_in_winter.jpg",
-      "attribution": "Kenneth Barclay"
+      "src": "assets/images/trips/suiza-nevada-2027/lauterbrunnen-invierno.jpg"
     }
   },
   "swiss27-zermatt-winter": {
     "name": "Zermatt con el Matterhorn nevado",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Matterhorn%20in%20winter%20with%20Zermatt%20village.jpg?width=1280",
-      "source": "https://commons.wikimedia.org/wiki/File:Matterhorn_in_winter_with_Zermatt_village.jpg",
-      "author": "Deralpinbergsteiger",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Deralpinbergsteiger"
+      "src": "assets/images/trips/suiza-nevada-2027/zermatt-invierno.jpg"
     }
   },
   "swiss27-lindt": {
@@ -4427,34 +4402,37 @@
   "swiss27-gornergrat-winter": {
     "name": "Matterhorn desde la montaña invernal",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wintermatterhorn.jpg?width=1280",
-      "source": "https://commons.wikimedia.org/wiki/File:Wintermatterhorn.jpg",
-      "author": "Oerflee",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-      "attribution": "Oerflee"
+      "src": "assets/images/trips/suiza-nevada-2027/gornergrat-invierno.jpg"
     }
   },
   "swiss27-jungfraujoch-february": {
     "name": "Jungfraujoch nevado · observatorio Sphinx",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jungfraujoch%20mit%20Restaurants%20und%20Geb%C3%A4uden.jpg?width=1280",
-      "source": "https://commons.wikimedia.org/wiki/File:Jungfraujoch_mit_Restaurants_und_Geb%C3%A4uden.jpg",
-      "author": "Reustli",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Reustli"
+      "src": "assets/images/trips/suiza-nevada-2027/jungfraujoch-invierno.jpg"
     }
   },
   "swiss27-maennlichen-winter": {
     "name": "Männlichen · Royal Walk en invierno",
     "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mannlichn%20Royal%20Walk%20Winter.jpg?width=1280",
-      "source": "https://commons.wikimedia.org/wiki/File:Mannlichn_Royal_Walk_Winter.jpg",
-      "author": "Jpatokal",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "attribution": "Jpatokal"
+      "src": "assets/images/trips/suiza-nevada-2027/mannlichen-invierno.jpg"
+    }
+  },
+  "swiss27-lucerne-winter": {
+    "name": "Lucerna en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/lucerna-invierno.jpg"
+    }
+  },
+  "swiss27-first-cliff-walk": {
+    "name": "First Cliff Walk en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/first-cliff-walk-invierno.jpg"
+    }
+  },
+  "swiss27-zurich-winter": {
+    "name": "Zúrich en invierno",
+    "photo": {
+      "src": "assets/images/trips/suiza-nevada-2027/zurich-invierno.jpg"
     }
   }
 }
