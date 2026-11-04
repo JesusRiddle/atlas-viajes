@@ -445,6 +445,12 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
     assert.equal(trip.days.length, 12);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 10);
     assert.equal(trip.hotels.length, 4);
+    const swissPhotos = Object.entries(places).filter(([id]) => id.startsWith('swiss27-'));
+    assert.equal(swissPhotos.length, 9, 'Las nueve fotografías invernales deben estar registradas');
+    assert.ok(swissPhotos.every(([, value]) => value.photo?.source?.startsWith('https://commons.wikimedia.org/wiki/File:') &&
+        value.photo?.src?.startsWith('https://commons.wikimedia.org/wiki/Special:FilePath/') &&
+        value.photo?.author && value.photo?.license && value.photo?.licenseUrl),
+        'Las fotografías nuevas deben conservar imagen, fuente, autor y licencia');
     assert.equal(trip.majorTransport.length, 6);
     const flight = trip.majorTransport.find(item => item.id === 'flight-international');
     assert.ok(flight, 'Suiza debe conservar la ficha aérea');
