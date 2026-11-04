@@ -197,7 +197,7 @@ const assert = require('node:assert/strict');
           assert.match(comparison, /Winter Pass/);
           assert.match(comparison, /CHF 102/, 'La tarifa oficial del retorno Gornergrat debe mostrarse');
           assert.match(comparison, /CHF 51/, 'La mitad de tarifa oficial Gornergrat debe mostrarse');
-          assert.match(comparison, /CHF 198/, 'El umbral Half Fare incluye ahorro de Gornergrat');
+          assert.match(comparison, /CHF 175\.80/, 'Half Fare descuenta Gornergrat y ambos recorridos ZVV conocidos');
           assert.doesNotMatch(comparison, /Winter Pass CHF 102|NO es el billete convencional de ida y vuelta/i);
           assert.equal(await page.locator('#traslados .mt-pass-comparison li').count(), 12,
             'La comparativa de Suiza incluye productos turísticos, billetes Saver y sensibilidad económica');
