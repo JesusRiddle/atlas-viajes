@@ -605,57 +605,87 @@
     ]
   ],
   "seasonality": {
-    "summary": "Enero es una ventana elegida para Medellín y el Caribe colombiano. Confirmar climatología regional y cierre efectivo de Tayrona antes de viajar; las doce fichas mensuales requieren investigación y verificación.",
+    "summary": "Promedios climáticos históricos, no pronósticos de enero de 2027. Los intervalos mensuales son una banda aproximada que abarca noches templadas de Medellín (~17 °C) y tardes calurosas en Santa Marta (~32–33 °C); NO son el rango térmico de una sola ciudad. Cartagena mantiene calor húmedo alrededor de 26–31 °C. Las lluvias y el oleaje del Caribe varían por localidad; enero se elige por su estacionalidad más seca, pero puede haber viento fuerte en Santa Marta. Cierres anuales de Tayrona: 1–15 febrero, 1–15 junio y 19 octubre–2 noviembre; además puede cerrar extraordinariamente.",
     "months": {
       "10": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "17 a 32 °C. Uno de los periodos más lluviosos en ambas regiones; Tayrona cierra del 19 de octubre al 2 de noviembre por calendario anual.",
+        "icon": "cloudy"
       },
       "11": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "17 a 32 °C. Persisten lluvias en Medellín y Caribe, especialmente al inicio del mes; Tayrona suele reabrir tras el 2 de noviembre, sujeto a anuncio oficial.",
+        "icon": "partlyCloudy"
       },
       "12": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "17 a 32 °C. Regresa un periodo más seco en la costa y mejores condiciones para naturaleza, aunque Navidad y fin de año pueden subir ocupación y precios.",
+        "icon": "sun"
       },
       "01": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "17 a 33 °C. Medellín suele estar en uno de sus meses menos lluviosos y el Caribe entra en estación seca; calor, viento y oleaje fuerte posible en Santa Marta.",
+        "icon": "sun"
       },
       "02": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "17 a 33 °C. Buen tiempo seco en la costa, pero Tayrona tiene cierre anual programado del 1 al 15 de febrero; no recomendar esas fechas para esta ruta.",
+        "icon": "partlyCloudy"
       },
       "03": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "17 a 33 °C. Caribe todavía relativamente seco; en Medellín aumentan los aguaceros y la humedad. Visitas de montaña sujetas a lluvia.",
+        "icon": "partlyCloudy"
       },
       "04": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "17 a 33 °C. En Medellín sube la lluvia y comienza a aumentar en la costa; planificar mañanas tempranas y actividades cubiertas alternativas.",
+        "icon": "partlyCloudy"
       },
       "05": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "17 a 33 °C. Periodo húmedo tanto en Medellín como en Santa Marta y Cartagena; senderos y navegación pueden verse afectados.",
+        "icon": "partlyCloudy"
       },
       "06": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "17 a 33 °C. Lluvias variables y cierre programado de Tayrona del 1 al 15 de junio; segunda mitad condicionada a accesos y pronóstico.",
+        "icon": "partlyCloudy"
       },
       "07": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "17 a 33 °C. Medellín puede tener una pausa relativa de lluvias; Caribe cálido, húmedo y con chubascos. Revisar viento en costa.",
+        "icon": "partlyCloudy"
       },
       "08": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "17 a 33 °C. Calor y humedad caribeña; Medellín con lluvias intermitentes. Ajustar caminatas y traslados de montaña.",
+        "icon": "partlyCloudy"
       },
       "09": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "17 a 32 °C. Temporada especialmente lluviosa en el Caribe, con tormentas y potenciales cambios en actividades de playa; Medellín también húmedo.",
+        "icon": "cloudy"
       }
-    }
+    },
+    "referenceLinks": [
+      {
+        "label": "Promedios mensuales Medellín · estudio climatológico",
+        "url": "https://www.blenesa.com/destinations/medellin-co"
+      },
+      {
+        "label": "Promedios mensuales Santa Marta · climatología",
+        "url": "https://atlasofseasons.com/en/colombia/magdalena-department/santa-marta"
+      },
+      {
+        "label": "Clima mensual Cartagena · weather-atlas",
+        "url": "https://www.weather-atlas.com/en/colombia/cartagena-climate"
+      },
+      {
+        "label": "Parques Nacionales · cierres y accesos Tayrona",
+        "url": "https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/"
+      }
+    ]
   },
   "practicalIndicators": [
     {
@@ -706,5 +736,6 @@
   "railTotal": null,
   "railExclusions": null,
   "railCurrencyNote": null,
-  "heroEyebrow": null
+  "heroEyebrow": null,
+  "climate": "Enero combina las condiciones relativamente menos lluviosas de Medellín (mínimas medias cercanas a 17 °C y máximas alrededor de 27 °C) con calor caribeño: Santa Marta puede alcanzar unos 32 °C y Cartagena suele rondar los 26 a 31 °C. Son referencias históricas de fuentes distintas, no un pronóstico para 2027. En Santa Marta y Tayrona el viento y oleaje estacional pueden afectar las lanchas, incluso en jornadas soleadas. Las excursiones de Minca y Cabo San Juan requieren comprobar lluvia, senderos y avisos oficiales.\n\n*Qué llevar:* Ropa ligera y transpirable para el Caribe, una capa delgada para Medellín y Minca, calzado cerrado y antideslizante para Tayrona, traje de baño, gorra, protección solar y repelente. Llevar agua suficiente para caminar, evitar playas con corrientes peligrosas y usar chaleco en lanchas autorizadas. No llevar objetos de valor a la vista en lugares concurridos.\n\n*Horas de luz:* Por la latitud cercana al ecuador, enero ofrece aproximadamente entre 11.5 y 12 horas de luz en las ciudades del recorrido; la salida y puesta exactas del sol dependen de la fecha y localidad y deben verificarse antes de reservar paseos al atardecer. Priorizar caminatas y carreteras largas durante el día, especialmente la ruta de regreso de Cabo San Juan y el traslado a Cartagena."
 }
