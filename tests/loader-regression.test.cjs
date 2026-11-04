@@ -22,7 +22,7 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
         assert.equal(trip.id, module.id);
         assert.ok(Array.isArray(trip.days), module.id + ' sin días');
         assert.ok(Array.isArray(trip.mapPoints), module.id + ' sin mapa');
-        assert.ok(trip.cover == null || typeof trip.cover === 'string', module.id + ' con portada inválida');
+        assert.ok(trip.cover || trip.status === 'draft', module.id + ' sin portada');
         assert.ok(trip.stays == null || Array.isArray(trip.stays), module.id + ' con stays inválido');
     }
 });
