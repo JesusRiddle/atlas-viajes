@@ -6,7 +6,7 @@
 **Modalidad:** planeación detallada, tarifas aún provisionales  
 **Actualización:** 2026-11-04  
 **Etapa actual:** 12 · Fotografías y portada (tras auditoría correctiva de etapas 00–11)  
-**Siguiente acción autónoma:** verificar CI al SHA actual; mantener en evaluación la variante Medellín 3 noches mientras se conservan las fechas de los vuelos candidatos. Luego iniciar fotografías externas por destino, portada/carrusel y auditoría D; no hacer merge.  
+**Siguiente acción autónoma:** comprobar CI de la segunda revisión, mantener Medellín tres noches solamente como variante hasta que exista vuelo conveniente del domingo 17, iniciar selección fotográfica externa, portada y carrusel, y ejecutar auditoría D; no hacer merge.  
 **Decisiones que requieren al usuario:** ninguna por ahora. No hay compras autorizadas.
 
 ## Etapas 00–13
@@ -20,7 +20,7 @@
 - [x] **06 Reservaciones importantes:** prioridades y contingencias incluidas; fuentes oficiales para Tayrona y vuelos, Marsol y ecolodge. Ninguna reserva comprada.
 - [x] **07 Movilidad y conexiones:** Copa, Avianca y Marsol/privado con segmentos, tarifas seleccionables, presupuesto sin duplicar, mapas de embarque y zonas horarias explícitas. `AtlasTransportModel.validateTrip` sin errores mediante prueba específica. Horarios futuros y precio efectivo pendientes externos.
 - [x] **08 Dónde dormirás:** cuatro hoteles candidatos con fechas y mapas, sin duplicación de `stays`; fuentes oficiales identificadas de Landmark, Senda Koguiwa y Casa La Fe. No se confirmó sitio propio de Casa de Isabella; se conserva Maps sin inventar enlace oficial. Tarifas y políticas por cotizar.
-- [x] **09 Día por día:** 13 jornadas con mañana/tarde/noche, hotel asociado a cada una de las 12 noches, traslados, alertas antirrobo y sanitarias, enlaces principales en días relevantes. Gastos diarios quedan nulos mientras el desglose general es provisional; ampliar enlaces y fotografías en etapa 12.
+- [x] **09 Día por día:** 13 jornadas reescritas en formato platicadito, en segunda persona, con mañana/tarde/noche, hotel asociado a las 12 noches, traslados, alertas antirrobo y sanitarias y enlaces principales. Los gastos diarios siguen nulos para evitar inventar cotizaciones o duplicar partidas; fotografías pendientes en etapa 12.
 - [x] **10 Panorama:** intro/introShort, tres indicadores exactos y clima independiente de tres párrafos, con fuentes históricas oficiales, formato térmico `X a Y °C`, referencia cambiaria fechada y geometría DOM comprobada en CI.
 - [x] **11 Presupuesto:** total orientativo central **$49,662 MXN**, rango **$42,000–63,000 MXN** para 1 persona. Referencia COP/MXN 03/11/2026 documentada (0.00578764); las 10 partidas suman $49,662 sin duplicar vuelos y Marsol está cubierto por provisión global. El mismo escenario se usa en Inicio y Panorama. No es cotización ni reserva.
 - [ ] **12 Fotos/portada:** portada de Cartagena desde Wikimedia con autor y licencia registrada; faltan fotos para galerías y días clave, respetando enlaces externos.
@@ -91,3 +91,16 @@ Se comprobó la estructura y se creó el viaje primero en `modules.js`. GitHub A
 - [ ] Tarifa confirmada para vuelo directo MDE–SMR domingo 17 de enero, solo si el usuario elige la variante.
 
 **Decisión editorial:** no hay problema de estructura que impida comenzar la etapa fotográfica. La reducción de Medellín no debe aplicarse hasta comparar vuelo real y aceptar perder flexibilidad. Mantener PR #10 como borrador y no hacer merge.
+
+
+### Mejoras editoriales complementarias · segunda revisión
+
+- Reescritura de `days[1..13].am/pm/night` en segunda persona y orden cronológico, con tiempos orientativos, traslados y pausas; el borrador anterior estaba demasiado telegráfico para la regla «itinerario platicadito».
+- Advertencia de fiebre amarilla trasladada desde el día de la caminata a las prioridades de preparación previa al viaje y consejos de salida: es una decisión que debe resolverse antes de volar, no junto a la entrada de Tayrona. Mantener orientación por fuente sanitaria oficial, sin garantizar obligación general ni reemplazar consejo médico.
+- Añadida fuente de reserva directa Kali Hotels a Casa de Isabella, sin inventar una dirección postal exacta porque las fichas consultadas difieren en numeración.
+- Se comparó la reducción a tres noches con calendario y conectividad: no garantiza ahorro, reduce el margen meteorológico en Medellín y exige revisar vuelo del 17 o llegada internacional el 15. **No cambiar el cronograma vigente todavía.**
+- Se restableció la aserción estricta de portada para todos los viajes y se amplió la prueba exclusiva de Colombia para exigir narración desarrollada y preparación sanitaria antes del viaje.
+- Fuentes web comprobadas: [cierres de Tayrona](https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/), [horarios generales de Marsol](https://www.marsol.com.co/bus-santa-marta-entrada-al-parque-tayrona-cartagena), [Casa de Isabella](https://kalihotels.com/en/casa-isabella/), [clima Medellín](https://climopolis.com/en/colombia/medellin), [clima Santa Marta OMM](https://worldweather.wmo.int/en/city.html?cityId=886), [tipo de cambio COP/MXN](https://theratesapi.com/convert/cop-to-mxn/) y [fotografía Commons](https://commons.wikimedia.org/wiki/File:Streetsofcartagena.jpg).
+- **Pruebas:** ejecución CI previa de cambios estructurales aprobada; nueva ejecución tras reescritura narrativa y aserciones está por confirmar en GitHub Actions. No confundir ese estado con una auditoría D de fotos finalizada.
+
+**Veredicto:** auditoría A–C suficientemente completa para avanzar a la etapa 12 en la ruta provisional actual. Mantener sin merge y dejar variante Medellín 3 noches pendiente de comparación real de horarios/costos; no comprometer fotografías asociadas a fechas inamovibles hasta seleccionar vuelos.
