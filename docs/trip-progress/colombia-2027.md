@@ -1,12 +1,37 @@
 # Registro de avance · Colombia 2027
 
+## AUDITORÍA DE LAS NUEVE SECCIONES · ESTADO VIGENTE 06/11/2026
+
+**La información siguiente prevalece sobre estimaciones y decisiones antiguas registradas más abajo.** Copa **A** es única base de cálculo; Copa B permanece únicamente como respaldo y no se suma. Viaje **15–26 de enero de 2027, 12 días, 11 noches, 4 alojamientos**, 1 persona.
+
+**Cifra integral final de PLANEACIÓN: $60,135 MXN (no tarifa final contratada)**, con rango de sensibilidad $54,000–71,000 MXN. Desglose: Copa A $9,076; Avianca $1,259; Landmark $7,000 (3n); Casa de Isabella $5,000 (3n); Senda Koguiwa $5,200 (2n); Casa La Fe $10,500 (3n); terrestre y lancha $6,000; alimentos $6,000; tours y entradas $5,000; seguro/contingencia $3,500; equipaje de pago previsto $1,600. La suma de estas once partidas es **exactamente $60,135 MXN**. Si no se usa documentada, presupuesto $58,535 MXN; Copa B, únicamente si es elegida, incrementaría $643. Ninguna habitación está cotizada para las fechas exactas, así que la cifra es un monto objetivo defendible, no precio de compra garantizado.
+
+| Sección | Hallazgos y correcciones | Estado |
+| --- | --- | --- |
+| **1. Panorama** | Intro 91 palabras, resaltados consistentes, introShort sin logística ni número de noches, tres indicadores y clima/luz en tres párrafos; idioma y COP, cobertura de enchufes A/B sin adaptador y salud en preparación previa | Conforme para planeación |
+| **2. Mapa** | Siete puntos en secuencia Medellín–Guatapé–Santa Marta–Minca–Taganga–Tayrona–Cartagena. Tayrona está representado por punto geográfico **genérico del parque**, no coordenada GPS del hotel ni del acceso; no se simula localización exacta | Conforme a escala regional; confirmar pin exacto en etapa D |
+| **3. Temporadas** | Doce meses, formato «X a Y °C», enero favorable para Caribe pero Tayrona temporada alta con tarifa específica; estado y horarios solo orientativos futuros | Conforme, comprobar cierres extraordinarios 2027 |
+| **4. Experiencias** | Comuna 13, Guatapé, Plaza Botero, Parque de Bolívar, Pueblito Paisa y Provenza permanecen; café en Minca, El Poblado solo como entorno del hotel. Gastronomía por región | Conforme |
+| **5. Reservaciones importantes** | Prioridades correctas, se eliminaron enlaces obsoletos de tours cafeteros en Antioquia y se añadieron operador de Guatapé y finca La Victoria; entrada Tayrona + seguro específico y precios COP/MXN bien etiquetados | Conforme con reservas pendientes |
+| **6. Movilidad y conexiones** | Copa A $9,076 y B $9,719 en trayectos y enlaces específicos, Avianca del 18, Marsol/privado al Caribe. Copa A base del presupuesto, B no simultánea. Terminales y transportistas no confirmados | Conforme para planeación |
+| **7. Dónde dormirás** | Actualizadas 11 noches y provisiones HOTEL POR HOTEL según referencias públicas de otras fechas; ciudad/fecha/dirección, sitio oficial, Maps, estado sin reservar y condiciones de cancelación | Conforme, **tarifas 2027 no comprobadas** |
+| **8. Día por día** | 12 fechas consecutivas, mañana/tarde/noche concisos, aeropuerto MDE llegada, equipaje previo a check-in, Comuna13/Pueblito, Guatapé con entrada extra, café en Minca, traslado seguro Taganga y Tayrona, salida a Cartagena y vuelta. Importes diarios `spend:null` para evitar repartir partidas ficticias | Conforme; fotografía pendiente etapa 12 |
+| **9. Presupuesto** | Se corrigieron metas hoteleras subestimadas, se separaron vuelos de transporte terrestre en categorías visibles, tabla totaliza con una sola opción A, ahorro alterno por equipaje explicitado. Pruebas de escenario B sin duplicación | Conforme como cierre de planeación |
+
+**Fuentes comparables, no reservables:** Landmark [Booking, otras fechas](https://www.booking.com/hotel/co/landmark.es-mx.html), Casa de Isabella [Booking, otras fechas](https://www.booking.com/hotel/co/casa-de-isabella.es-mx.html), Senda Koguiwa [tarifa temporada alta oficial](https://sendahotels.com/en/hotel/senda-koguiwa/bedrooms/standard-room/), Casa La Fe [Booking, otras fechas](https://www.booking.com/hotel/co/casa-la-fe.es-mx.html), [Parques Nacionales Tayrona](https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/), [tour Guatapé](https://toursguatape.com/en/producto/full-day-guatape/) y [Finca La Victoria](https://www.fincalavictoria1892.com/). Capturas del viajero para Copa $9,076 (A) / $9,719 (B) y Avianca COP 217,580 siguen siendo las únicas referencias aéreas; **no se consultó ni garantizó inventario en vivo**.
+
+**Puntos que justifican otra cotización:** precio real de los cuatro hoteles en fechas exactas, equipaje documentado de Copa, tours y transferencias individuales y cierre extraordinario de Tayrona. Ninguno obliga a rehacer ruta; sí pueden cambiar el costo final pagable. La etapa 12 de fotografías/galerías aún NO está completada; la auditoría D tampoco. Mantener PR #10 como borrador, sin merge.
+
+---
+
+
 **Viaje:** Colombia 2027 · Medellín y Caribe  
 **JSON:** `data/trips/colombia-2027.json`  
 **Rama:** `feat/colombia-2027`  
 **Modalidad:** planeación detallada, tarifas aún provisionales  
 **Actualización:** 2026-11-06  
-**Etapa actual:** 11 · Integración de vuelos A/B y recálculo de ruta; etapa 12 fotos todavía pendiente  
-**Siguiente acción autónoma:** completar CI del nuevo itinerario 15–26, verificar compra/equipaje de Copa y confirmar visita urbana del domingo; después continuar etapa 12 fotografías sin merge.  
+**Etapa actual:** 11 · Auditoría integral de 9 secciones; etapa 12 fotografías pendiente  
+**Siguiente acción autónoma:** inspeccionar ejecución CI final del presupuesto recalculado; después etapa 12 (fotografías de cada jornada, portada y carrusel) y auditoría D, sin merge.  
 **Decisiones que requieren al usuario:** ninguna por ahora. No hay compras autorizadas.
 
 ## Etapas 00–13
