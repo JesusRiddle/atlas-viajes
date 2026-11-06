@@ -1032,7 +1032,7 @@
   ],
   "ticketNotes": [],
   "attractionTerms": [],
-  "cover": "col27-cartagena",
+  "cover": "col27-cabo-san-juan",
   "mapPoints": [
     {
       "name": "Medellín",
@@ -1400,5 +1400,12 @@
   "railCurrencyNote": null,
   "heroEyebrow": null,
   "climate": "En enero Medellín suele registrar máximas medias cercanas a 29 °C y mínimas próximas a 18 °C, mientras Santa Marta promedia máximas de 33 °C y mínimas cercanas a 22 °C. Cartagena también es cálida y húmeda. Son normales históricas, no pronósticos para 2027. La costa suele estar más seca, pero los vientos y el oleaje pueden dificultar lanchas de Taganga y las excursiones a islas. En Minca y Tayrona, comprobar caminos, senderos y avisos de las autoridades.\n\n*Qué llevar:* Ropa ligera y transpirable, una capa delgada para noches de Medellín y Minca, calzado cerrado antideslizante para Tayrona, traje de baño, gorra, protector solar, repelente y agua suficiente. Usar chaleco en embarcaciones autorizadas y evitar nadar en playas con corrientes peligrosas.\n\n*Horas de luz:* En estas latitudes enero ofrece aproximadamente 11 h 30 min a 12 h de luz; los horarios exactos de salida y puesta dependen de la ciudad y fecha y se reconfirmarán para las actividades al atardecer. Para Cabo San Juan, reservar margen amplio para regresar antes del cierre del parque.",
-  "mapPointsNote": "Los pines son referencias turísticas regionales y no sustituyen la dirección de cada hotel. Especialmente Tayrona señala la zona general del parque: Senda Koguiwa y la entrada El Zaino deben localizarse con sus enlaces Google Maps antes de contratar traslados. Taganga es visita prevista; Playa Grande depende del mar."
+  "mapPointsNote": "Los pines son referencias turísticas regionales y no sustituyen la dirección de cada hotel. Especialmente Tayrona señala la zona general del parque: Senda Koguiwa y la entrada El Zaino deben localizarse con sus enlaces Google Maps antes de contratar traslados. Taganga es visita prevista; Playa Grande depende del mar.",
+  "coverSlides": [
+    "col27-cabo-san-juan",
+    "col27-comuna13",
+    "col27-guatape",
+    "col27-marinka",
+    "col27-san-diego"
+  ]
 }
