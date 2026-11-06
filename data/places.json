@@ -4522,5 +4522,71 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "SajoR"
     }
+  },
+  "col27-santamarta-catedral": {
+    "name": "Catedral Basílica de Santa Marta",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Catedral_de_Santa_Marta_Colombia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Catedral_de_Santa_Marta_Colombia.jpg",
+      "author": "Jdvillalobos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jdvillalobos"
+    }
+  },
+  "col27-parque-novios": {
+    "name": "Parque de los Novios, Santa Marta",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Parque_de_los_Novios_Santa_Marta.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Parque_de_los_Novios_Santa_Marta.jpg",
+      "author": "Jdvillalobos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jdvillalobos"
+    }
+  },
+  "col27-minca-paisaje": {
+    "name": "Paisaje desde Minca, Sierra Nevada",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Santa_Marta_Vista_Desde_Minca_En_La_Sierra_Nevada.jpg/960px-Santa_Marta_Vista_Desde_Minca_En_La_Sierra_Nevada.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Marta_Vista_Desde_Minca_En_La_Sierra_Nevada.jpg",
+      "author": "Samuel Rengifo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Samuel Rengifo"
+    }
+  },
+  "col27-marinka": {
+    "name": "Cascada de Marinka",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Cascada_de_Marinka.jpg/960px-Cascada_de_Marinka.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cascada_de_Marinka.jpg",
+      "author": "PapiPijuan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "PapiPijuan"
+    }
+  },
+  "col27-taganga-bahia": {
+    "name": "Bahía de Taganga",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Taganga_Bay.jpg/960px-Taganga_Bay.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Taganga_Bay.jpg",
+      "author": "Alanwolfx",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Alanwolfx"
+    }
+  },
+  "col27-playa-grande": {
+    "name": "Playa Grande, Taganga",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Playa_Grande_1_-_panoramio.jpg/960px-Playa_Grande_1_-_panoramio.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Playa_Grande_1_-_panoramio.jpg",
+      "author": "Tamyx",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Tamyx"
+    }
   }
 }
