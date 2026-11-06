@@ -1,5 +1,7 @@
 # Guía editorial maestra de viajes · Atlas
 
+**Regla de independencia entre viajes (obligatoria):** Cada itinerario de Atlas es un escenario autónomo de planeación. **No comparar sus fechas con las de otros viajes del catálogo, no detectar ni advertir empalmes, no condicionar ni modificar su itinerario por coincidencias de calendario con otros viajes.** Los viajes pueden ser alternativas mutuamente excluyentes y eso no constituye un problema editorial o logístico. Solo evaluar conflictos entre viajes cuando el usuario lo solicite explícitamente. Al trabajar en un viaje, no editar los JSON de los demás.
+
 **Personas presupuestadas:** cada JSON nuevo declara `travelerCount` como número entero positivo o `null` mientras se desconoce. Es el tamaño del grupo cuyos gastos se estiman, no una indicación de si conviene viajar solo (`profile.solo`). La tabla comparativa muestra «Personas»; los importes de `expenses` siguen siendo para el grupo, y el equivalente individual se calcula solo cuando está definido, evitando duplicaciones.
 
 ## Aplicación
