@@ -1091,6 +1091,7 @@
     },
     {
       "name": "Parque Tayrona · referencia regional",
+      "stayName": "Tayrona",
       "coords": [
         11.31,
         -73.93
@@ -1102,6 +1103,7 @@
     },
     {
       "name": "Cartagena de Indias",
+      "stayName": "Cartagena",
       "coords": [
         10.4266,
         -75.5442
