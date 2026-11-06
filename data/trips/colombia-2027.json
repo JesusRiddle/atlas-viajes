@@ -687,7 +687,13 @@
               "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
             }
           ],
-          "notes": "PRINCIPAL · Ida 15/01: CM149 MEX 01:20→PTY 06:00, vuelo 3 h 40 min; escala 3 h 32 min; CM397 PTY 09:32→MDE 10:55, vuelo 1 h 23 min. Total ida 9 h 35 min. Boeing 737 / 737 MAX 9. Estimación de emisiones de ida 263 kg CO₂e, retorno 280 kg CO₂e. Salida nocturna con descanso limitado. Retorno común: CM365 CTG 15:05→PTY 16:22; escala 3 h 12 min; CM866 PTY 19:34→MEX 22:25. Los impuestos obligatorios están incluidos para 1 adulto. Una pieza de mano gratis; primera documentada tiene costo adicional no publicado, sin peso confirmado. La captura no precisa el artículo personal ni condiciones de cambios/reembolsos."
+          "notes": "PRINCIPAL · Ida 15/01: CM149 MEX 01:20→PTY 06:00, vuelo 3 h 40 min; escala 3 h 32 min; CM397 PTY 09:32→MDE 10:55, vuelo 1 h 23 min. Total ida 9 h 35 min. Boeing 737 / 737 MAX 9. Estimación de emisiones de ida 263 kg CO₂e, retorno 280 kg CO₂e. Salida nocturna con descanso limitado. Retorno común: CM365 CTG 15:05→PTY 16:22; escala 3 h 12 min; CM866 PTY 19:34→MEX 22:25. Los impuestos obligatorios están incluidos para 1 adulto. Una pieza de mano gratis; primera documentada tiene costo adicional no publicado, sin peso confirmado. La captura no precisa el artículo personal ni condiciones de cambios/reembolsos. Enlace de Google Flights guardado como referencia temporal de selección: puede cambiar precio, disponibilidad, redirigir o caducar; usar números de vuelo y fechas si falla. No equivale a reservación.",
+          "links": [
+            {
+              "label": "Abrir selección exacta en Google Flights · principal",
+              "url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpnEgoyMDI3LTAxLTE1Ih8KA01FWBIKMjAyNy0wMS0xNRoDUFRZKgJDTTIDMTQ5Ih8KA1BUWRIKMjAyNy0wMS0xNRoDTURFKgJDTTIDMzk3KAFqDAgCEggvbS8wNHNxanIHCAESA01ERRpnEgoyMDI3LTAxLTI2Ih8KA0NURxIKMjAyNy0wMS0yNhoDUFRZKgJDTTIDMzY1Ih8KA1BUWRIKMjAyNy0wMS0yNhoDTUVYKgJDTTIDODY2KAFqBwgBEgNDVEdyDAgCEggvbS8wNHNxakABSAFwAYIBCwj___________8BmAED&tfu=CnhDalJJYlZvM1NFMTFiMHR6WW1OQlEySm1kbmRDUnkwdExTMHRMVzlyWm5reE5TMXVNa0ZCUVVGQlIzSjBZWFk0VFc0MWVqUkJFZzFEVFRNMk5YeERUVGcyTmlNeEdnc0k5ckUzRUFJYUEwMVlUamdjY0lqNkFnPT0SAggAIgA&hl=es-419&gl=MX"
+            }
+          ]
         },
         {
           "id": "B",
@@ -769,7 +775,13 @@
               "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
             }
           ],
-          "notes": "RESPALDO · Ida 15/01: CM195 MEX 05:55→PTY 10:38, vuelo 3 h 43 min; escala 2 h 17 min; CM654 PTY 12:55→MDE 14:15, vuelo 1 h 20 min. Total ida 8 h 20 min. Boeing 737 en ambos tramos. Estimación de emisiones de ida 272 kg CO₂e, retorno 280 kg CO₂e. Llegada más tarde; las plazas pueden trasladarse al domingo. Retorno común: CM365 CTG 15:05→PTY 16:22; escala 3 h 12 min; CM866 PTY 19:34→MEX 22:25. Los impuestos obligatorios están incluidos para 1 adulto. Una pieza de mano gratis; primera documentada tiene costo adicional no publicado, sin peso confirmado. La captura no precisa el artículo personal ni condiciones de cambios/reembolsos."
+          "notes": "RESPALDO · Ida 15/01: CM195 MEX 05:55→PTY 10:38, vuelo 3 h 43 min; escala 2 h 17 min; CM654 PTY 12:55→MDE 14:15, vuelo 1 h 20 min. Total ida 8 h 20 min. Boeing 737 en ambos tramos. Estimación de emisiones de ida 272 kg CO₂e, retorno 280 kg CO₂e. Llegada más tarde; las plazas pueden trasladarse al domingo. Retorno común: CM365 CTG 15:05→PTY 16:22; escala 3 h 12 min; CM866 PTY 19:34→MEX 22:25. Los impuestos obligatorios están incluidos para 1 adulto. Una pieza de mano gratis; primera documentada tiene costo adicional no publicado, sin peso confirmado. La captura no precisa el artículo personal ni condiciones de cambios/reembolsos. Enlace de Google Flights guardado como referencia temporal de selección: puede cambiar precio, disponibilidad, redirigir o caducar; usar números de vuelo y fechas si falla. No equivale a reservación.",
+          "links": [
+            {
+              "label": "Abrir selección exacta en Google Flights · respaldo",
+              "url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpnEgoyMDI3LTAxLTE1Ih8KA01FWBIKMjAyNy0wMS0xNRoDUFRZKgJDTTIDMTk1Ih8KA1BUWRIKMjAyNy0wMS0xNRoDTURFKgJDTTIDNjU0KAFqDAgCEggvbS8wNHNxanIHCAESA01ERRpnEgoyMDI3LTAxLTI2Ih8KA0NURxIKMjAyNy0wMS0yNhoDUFRZKgJDTTIDMzY1Ih8KA1BUWRIKMjAyNy0wMS0yNhoDTUVYKgJDTTIDODY2KAFqBwgBEgNDVEdyDAgCEggvbS8wNHNxakABSAFwAYIBCwj___________8BmAED&tfu=CnhDalJJWDA5cVVsZE5kV1ZmUTNkQlJHZzNNMmRDUnkwdExTMHRMUzB0TFc5NVkycHRPRUZCUVVGQlIzSjBZVEJuUm5oSWJVdEJFZzFEVFRNMk5YeERUVGcyTmlNeEdnc0k3cWc3RUFJYUEwMVlUamdjY1BHVUF3PT0SAggAIgA&hl=es-419&gl=MX"
+            }
+          ]
         }
       ],
       "links": [
