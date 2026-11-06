@@ -203,7 +203,10 @@
       "mobility": "• *Cómo trasladarte:* Vuelo MDE → SMR directo, tarifa Classic candidata no comprada; traslado oficial aeropuerto → hotel.",
       "note": "• *Tips del día:* Confirmar cabina y equipaje de la tarifa antes de comprar, así como el traslado al aeropuerto correcto.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-santamarta-catedral",
+        "col27-parque-novios"
+      ],
       "headerPlaces": [],
       "transportRefs": [
         "flight-domestic"
@@ -227,7 +230,10 @@
       "mobility": "• *Cómo trasladarte:* Tour o traslado privado adecuado a caminos rurales; verificar recogida y accesibilidad.",
       "note": "• *Tour cafetero:* Finca La Victoria publica visita de 50 min, 09:00–16:30, por COP 40,000 (≈ $232 MXN); reconfirmar la disponibilidad para el 19 de enero.\n• *Plan B:* Cascadas de Marinka solo si horarios, camino y traslado permiten volver a Santa Marta de día.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-minca-paisaje",
+        "col27-marinka"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "sm-isabella",
@@ -253,7 +259,10 @@
       "mobility": "• *Cómo trasladarte:* Taxi o transporte preacordado entre Santa Marta y Taganga; lancha corta autorizada a Playa Grande cuando las condiciones sean seguras.",
       "note": "• *Seguridad en Taganga:* Evitar el sendero peatonal Taganga–Playa Grande por reportes de robos.\n• *Lancha:* Utilizar operador autorizado y chaleco salvavidas, acordar tarifa y regreso, verificar oleaje y volver de día.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-taganga-bahia",
+        "col27-playa-grande"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "sm-isabella"
@@ -1335,7 +1344,13 @@
     "col27-guatape": "Los zócalos pintados y las fachadas coloridas muestran la tradición decorativa de Guatapé, entre calles empedradas y pequeños comercios.",
     "col27-comuna13": "Los murales de San Javier expresan memoria, identidad y transformación comunitaria; el recorrido guiado permite comprender las historias detrás del arte.",
     "col27-escaleras": "Estas escaleras eléctricas al aire libre conectan las laderas de Comuna 13 y simbolizan una transformación de movilidad cotidiana.",
-    "col27-pueblito": "En Cerro Nutibara, esta recreación de un pueblo antioqueño reúne casas tradicionales y un mirador con vistas urbanas de Medellín."
+    "col27-pueblito": "En Cerro Nutibara, esta recreación de un pueblo antioqueño reúne casas tradicionales y un mirador con vistas urbanas de Medellín.",
+    "col27-santamarta-catedral": "La catedral blanca domina el casco antiguo de Santa Marta, con su torre campanario y una fachada histórica frente a la plaza.",
+    "col27-parque-novios": "La plaza arbolada es un punto de encuentro del centro histórico, rodeado de monumentos, cafés y restaurantes para pasear al atardecer.",
+    "col27-minca-paisaje": "Desde las montañas de Minca se observan la costa y Santa Marta; el entorno selvático ofrece un contraste con el calor del Caribe.",
+    "col27-marinka": "Esta cascada de la Sierra Nevada desciende entre rocas y vegetación tropical, cerca de Minca, con un entorno apropiado para contemplar la naturaleza.",
+    "col27-taganga-bahia": "La bahía de Taganga reúne paisajes montañosos y aguas caribeñas junto a un pueblo de tradición pesquera situado cerca de Santa Marta.",
+    "col27-playa-grande": "La pequeña ensenada de Playa Grande muestra aguas tranquilas en la fotografía y laderas costeras; su acceso en lancha depende del estado actual del mar."
   },
   "optionalSection": null,
   "family": null,
