@@ -4435,17 +4435,6 @@
       "src": "assets/images/trips/suiza-nevada-2027/zurich-invierno.jpg"
     }
   },
-  "col27-cartagena": {
-    "name": "Ciudad Amurallada de Cartagena",
-    "photo": {
-      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Streetsofcartagena.jpg",
-      "source": "https://commons.wikimedia.org/wiki/File:Streetsofcartagena.jpg",
-      "author": "Cbrough",
-      "license": "Public domain",
-      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "attribution": "Cbrough"
-    }
-  },
   "col27-botero": {
     "name": "Plaza Botero",
     "photo": {
