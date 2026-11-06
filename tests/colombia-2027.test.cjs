@@ -37,8 +37,8 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   assert.match(trip.days[5].note,/robos/);
   assert.match(trip.days[5].note,/chaleco salvavidas/);
   assert.match(trip.days[0].note,/fiebre amarilla/);
-  assert.match(trip.planningDetails,/no se modifica la ruta vigente/);
-  assert.match(trip.planningDetails,/No trasladar automáticamente esa noche a Cartagena/);
+  assert.match(trip.planningDetails,/12 días, 11 noches/);
+  assert.match(trip.planningDetails,/Sin noche añadida a Cartagena/);
   const medellinText=[trip.days[0],trip.days[1],trip.days[2]].map(d=>d.title+' '+d.am+' '+d.pm+' '+d.night).join(' ');
   for(const term of ['Guatapé','Comuna 13','Plaza Botero','Bolívar','Provenza','Pueblito Paisa']) assert.ok(medellinText.includes(term), 'Falta prioridad Medellín: '+term);
   assert.match(trip.days[1].am,/tour organizado|excursión organizada/);
