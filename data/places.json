@@ -4643,5 +4643,71 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Patriarboleda"
     }
+  },
+  "col27-torre-reloj": {
+    "name": "Torre del Reloj de Cartagena",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Torre_del_Reloj%2C_Cartagena_01.jpg/960px-Torre_del_Reloj%2C_Cartagena_01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Torre_del_Reloj,_Cartagena_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Bernard Gagnon"
+    }
+  },
+  "col27-murallas": {
+    "name": "Murallas de Cartagena",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/The_Wall_Surrounding_Cartagena%2C_Colombia_%2824539103340%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Wall_Surrounding_Cartagena,_Colombia_(24539103340).jpg",
+      "author": "Joe Ross",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Joe Ross"
+    }
+  },
+  "col27-san-diego": {
+    "name": "Calles históricas de San Diego, Cartagena",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/A_dos_cuadras_de_la_plaza_de_San_Diego._Cartagena._Colombia.JPG/1280px-A_dos_cuadras_de_la_plaza_de_San_Diego._Cartagena._Colombia.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:A_dos_cuadras_de_la_plaza_de_San_Diego._Cartagena._Colombia.JPG",
+      "author": "Kamilokardona",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Kamilokardona"
+    }
+  },
+  "col27-getsemani-murales": {
+    "name": "Arte urbano de Getsemaní",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Getsemani_Street_Art%2C_Cartagena%2C_Colombia_%2823957090274%29.jpg/960px-Getsemani_Street_Art%2C_Cartagena%2C_Colombia_%2823957090274%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Getsemani_Street_Art,_Cartagena,_Colombia_(23957090274).jpg",
+      "author": "Joe Ross",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Joe Ross"
+    }
+  },
+  "col27-castillo-san-felipe": {
+    "name": "Castillo de San Felipe de Barajas",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Colombia%2C_Cartagena%2C_Castillo_de_San_Felipe_de_Barajas.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Colombia,_Cartagena,_Castillo_de_San_Felipe_de_Barajas.jpg",
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Dr. Thomas Liptak"
+    }
+  },
+  "col27-bovedas": {
+    "name": "Las Bóvedas de Cartagena",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Cartagena_de_Indias_-_Las_B%C3%B3vedas.jpg/960px-Cartagena_de_Indias_-_Las_B%C3%B3vedas.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cartagena_de_Indias_-_Las_B%C3%B3vedas.jpg",
+      "author": "O--o",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "O--o"
+    }
   }
 }
