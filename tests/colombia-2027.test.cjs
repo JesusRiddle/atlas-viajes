@@ -117,6 +117,19 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
     const words=(trip.placeDescriptions[key]||'').trim().split(/\s+/).length;
     assert.ok(words>=15 && words<=30,'Pie de foto fuera de norma: '+key);
   }
+  const block3=['col27-tayrona-costa','col27-tayrona-laguna','col27-tayrona-sendero','col27-cabo-san-juan','col27-cabo-amanecer'];
+  assert.deepEqual(trip.days.slice(6,8).map(d=>d.places.length),[2,3]);
+  assert.equal(new Set(block3).size,block3.length);
+  for(const key of block3){
+    assert.ok(places[key], 'Foto bloque 3 inexistente: '+key);
+    assert.match(places[key].photo.src,/^https:\/\/thumb\.wikimedia\.org\//);
+    assert.match(places[key].photo.source,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+    assert.ok(places[key].photo.author && places[key].photo.license && places[key].photo.licenseUrl);
+    const words=(trip.placeDescriptions[key]||'').trim().split(/\s+/).length;
+    assert.ok(words>=15 && words<=30,'Pie de foto fuera de norma: '+key);
+  }
+  assert.match(trip.placeDescriptions['col27-tayrona-costa'],/no corresponde al alojamiento/);
+  assert.match(trip.placeDescriptions['col27-cabo-amanecer'],/no representa el horario/);
   assert.equal(trip.mapPoints.length,7);
   assert.equal(trip.intro.split(/\s+/).length>=70,true);
   assert.equal(trip.introHighlights.every(name=>trip.intro.includes(name)),true);
