@@ -715,8 +715,13 @@
               "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
             }
           ],
-          "notes": "PRINCIPAL · Ida 15/01: CM149 MEX 01:20→PTY 06:00 (3 h 40 min), conexión 3 h 32 min; CM397 PTY 09:32→MDE 10:55 (1 h 23 min). Regreso 26/01: CM365 CTG 15:05→PTY 16:22 (1 h 17 min), escala 2 h 55 min; CM188 PTY 19:17→MEX 22:05 (3 h 48 min). Aeronaves Boeing 737 y 737 MAX 9. Emisiones estimadas 263 kg CO₂e en la ida y 273 en el regreso. Precio multidestino total observado $9,023 MXN, incluye tasas obligatorias y una pieza de mano. Sin equipaje documentado ni reservas. Cambios y cancelación sujetos a tarifa efectiva. La URL anterior de Google Flights corresponde a CM866 (regreso antiguo) y se retira para evitar dirigir a una selección desactualizada.",
-          "links": []
+          "notes": "PRINCIPAL · Ida 15/01: CM149 MEX 01:20→PTY 06:00 (3 h 40 min), conexión 3 h 32 min; CM397 PTY 09:32→MDE 10:55 (1 h 23 min). Regreso 26/01: CM365 CTG 15:05→PTY 16:22 (1 h 17 min), escala 2 h 55 min; CM188 PTY 19:17→MEX 22:05 (3 h 48 min). Aeronaves Boeing 737 y 737 MAX 9. Emisiones estimadas 263 kg CO₂e en la ida y 273 en el regreso. Precio multidestino total observado $9,023 MXN, incluye tasas obligatorias y una pieza de mano. Sin equipaje documentado ni reservas. Cambios y cancelación sujetos a tarifa efectiva. Enlace actualizado a CM188 facilitado por el viajero. La URL puede perder disponibilidad o modificar precios, no es una reserva.",
+          "links": [
+            {
+              "label": "Ver selección principal Copa A · CM149/CM397 y CM365/CM188 · Google Flights",
+              "url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpnEgoyMDI3LTAxLTE1Ih8KA01FWBIKMjAyNy0wMS0xNRoDUFRZKgJDTTIDMTQ5Ih8KA1BUWRIKMjAyNy0wMS0xNRoDTURFKgJDTTIDMzk3KAFqDAgCEggvbS8wNHNxanIHCAESA01ERRpnEgoyMDI3LTAxLTI2Ih8KA0NURxIKMjAyNy0wMS0yNhoDUFRZKgJDTTIDMzY1Ih8KA1BUWRIKMjAyNy0wMS0yNhoDTUVYKgJDTTIDMTg4KAFqBwgBEgNDVEdyDAgCEggvbS8wNHNxakABSAFwAYIBCwj___________8BmAED&tfu=CnhDalJJUzJKd0xXWnRVbTB3VUVGQlEzbHhhR2RDUnkwdExTMHRMUzB0TFMwdGIzbDRPVUZCUVVGQlIzSjBaRmRuUXpGRGVYTkJFZzFEVFRNMk5YeERUVEU0T0NNeEdnc0ltSWszRUFJYUEwMVlUamdjY05UM0FnPT0SAggAIgA&hl=es-419&gl=MX"
+            }
+          ]
         },
         {
           "id": "B",
@@ -832,7 +837,7 @@
         }
       ],
       "boardingNote": "Opción A: salida MEX 01:20 del viernes (presentarse desde la noche del jueves); regreso a MEX martes 26 a las 22:05. Opción B de respaldo: salida MEX 05:55 del viernes, regreso a MEX 22:25. No reservadas.",
-      "ticketGuide": "Copa A principal: ida 15/01 CM149 + CM397, regreso 26/01 CM365 + CM188; multidestino observado $9,023. Copa B respaldo: ida CM195 + CM654, regreso CM365 + CM866; observado $9,719. La URL anterior del vuelo A apuntaba a CM866 y fue retirada por quedar desactualizada. Viajar solo con equipaje de mano; verificar peso y medidas permitidas, artículo personal, tasas, política de cambios y precio final en Copa/Google Flights.",
+      "ticketGuide": "Copa A principal: ida 15/01 CM149 + CM397, regreso 26/01 CM365 + CM188; multidestino observado $9,023. Copa B respaldo: ida CM195 + CM654, regreso CM365 + CM866; observado $9,719. Link actualizado de A corresponde a CM188 y está registrado; puede cambiar disponibilidad y precio. Viajar solo con equipaje de mano; verificar peso y medidas permitidas, artículo personal, tasas, política de cambios y precio final en Copa/Google Flights.",
       "notes": "Candidatos observados en capturas de Google Flights el 06/11/2026. Principal Copa A $9,023 con regreso CM188 y llegada 22:05; respaldo Copa B $9,719 con regreso CM866 y llegada 22:25. Una pieza de equipaje de mano incluida, sin maleta documentada prevista. Confirmar tarifa, pesos/dimensiones, condiciones y disponibilidad al pagar."
     },
     {
