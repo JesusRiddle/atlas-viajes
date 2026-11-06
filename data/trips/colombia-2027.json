@@ -48,7 +48,7 @@
     "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
   },
   "intro": "Comienzas en Medellín con el arte de Comuna 13, las esculturas de Plaza Botero, el Parque de Bolívar y la vista desde Pueblito Paisa, antes de una excursión guiada a Guatapé. Después vuelas a Santa Marta para explorar la naturaleza y el café de Minca y conocer la bahía de Taganga. Dos noches en un ecolodge cercano a Tayrona permiten caminar hacia Cabo San Juan y descansar entre selva tropical. La ruta continúa por carretera hasta Cartagena, con tiempo para recorrer la Ciudad Amurallada, disfrutar Getsemaní y probar la gastronomía caribeña.",
-  "introShort": "Medellín y Guatapé, cultura cafetera y cascadas en Minca, bahías de Taganga y senderos de Tayrona. Terminas entre calles coloniales y gastronomía de Cartagena, con once noches en cuatro alojamientos.",
+  "introShort": "De Medellín y Guatapé a la Sierra Nevada: arte urbano, pueblos coloridos, café en Minca y senderos de Tayrona. El viaje termina entre arquitectura colonial, gastronomía y calles históricas de Cartagena de Indias.",
   "introHighlights": [
     "Medellín",
     "Comuna 13",
@@ -104,8 +104,8 @@
       "title": "Llegada a Medellín, plazas y Provenza",
       "base": "Medellín",
       "am": "Vuelo candidato Copa A: MEX 01:20 → PTY 06:00, escala de 3 h 32 min; PTY 09:32 → MDE 10:55. Opción B: MEX 05:55 → PTY 10:38, escala 2 h 17 min; PTY 12:55 → MDE 14:15.",
-      "pm": "Migración y traslado al alojamiento en Manila. Con llegada temprana: visita diurna de Plaza Botero y Parque de Bolívar; con llegada de 14:15, mover las plazas al domingo para evitar prisas y recorrer únicamente alrededores del hotel.",
-      "night": "Cena y paseo por Provenza, sujeto al cansancio tras el vuelo nocturno. Desplazamientos nocturnos en transporte formal.",
+      "pm": "Llegada principal A a MDE a las 10:55, migración, equipaje y traslado a Manila; si el cuarto no está disponible, dejar maleta en recepción. Plaza Botero y Parque de Bolívar por la tarde, siempre de día. Si llega B a las 14:15, trasladar las plazas al domingo.",
+      "night": "Cena en Provenza según energía tras el vuelo nocturno. Traslado de regreso en vehículo confiable.",
       "mobility": "• *Aeropuerto → Manila:* Vehículo precontratado o autorizado, con margen por migración y tráfico.\n• *Centro histórico:* Traslados de día a Plaza Botero y Parque de Bolívar; si llegas tarde, cambiarlos al domingo.",
       "note": "• *Vuelo candidato:* Copa opción A, salida muy de madrugada; tarifa observada $9,076 MXN por multidestino, sin comprar.\n• *Respaldo:* Copa B llegaría 14:15 y movería las plazas al domingo; no se incorpora su tarifa al presupuesto central.\n• *Salud previa:* Verificar recomendaciones para Tayrona y Minca, incluida la fiebre amarilla, con suficiente anticipación.",
       "spend": null,
@@ -165,7 +165,7 @@
       "pm": "Traslado al Cerro Nutibara para visitar Pueblito Paisa y su mirador. Si el viernes llegaron tarde los vuelos, visitar primero Plaza Botero y Parque de Bolívar en horario diurno; ajustar Pueblito Paisa a última hora de tarde solo si el operador y traslados lo permiten.",
       "night": "Cena en Provenza si no se visitó el viernes; preparación de equipaje para el vuelo del lunes 18.",
       "mobility": "• *Comuna 13:* Tour con guía local y transporte seguro.\n• *Pueblito Paisa y centro:* Planificar desplazamientos en vehículo confiable para evitar retrocesos y recorridos nocturnos por el centro.",
-      "note": "• *Prioridades:* Comuna 13, Plaza Botero, Parque de Bolívar y Pueblito Paisa; garantizar los cuatro en viernes/domingo, según hora real de llegada.\n• *Tiempo disponible:* Domingo es día de agenda intensa; no incluir café en Antioquia ni museos interiores.",
+      "note": "• *Recorrido histórico:* Identificar las esculturas de Fernando Botero en Plaza Botero y la Catedral Metropolitana junto a Parque de Bolívar si las plazas no cupieron el viernes.\n• *Pueblito Paisa:* Recreación de arquitectura rural antioqueña, no un pueblo colonial histórico auténtico; mirador en Cerro Nutibara.\n• *Seguridad:* Visitar el centro solo de día y conservar margen para los traslados.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -319,7 +319,7 @@
       "pm": "Almuerzo cartagenero, pausa en el hotel y visita a Getsemaní y sus murales.",
       "night": "Atardecer desde murallas o terraza, cena y regreso por vías concurridas.",
       "mobility": "• *Cómo trasladarte:* Recorrido principalmente a pie en horario diurno; taxi/app formal cuando haga falta.",
-      "note": "• *Tips del día:* Calor y humedad: buscar sombra e hidratarse; cuidar pertenencias y confirmar precios antes de aceptar servicios turísticos.",
+      "note": "• *Tips del día:* Calor y humedad: buscar sombra e hidratarse; cuidar pertenencias y confirmar precios antes de aceptar servicios turísticos.\n• *No te pierdas:* Torre del Reloj, plazas y balcones republicanos; Getsemaní refleja una historia distinta a los recintos turísticos amurallados. Calor y humedad: buscar sombra e hidratarse.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -335,7 +335,7 @@
       "pm": "Piscina y gastronomía de Cartagena. Islas del Rosario solo como alternativa de día completo, condicionada al mar.",
       "night": "Última cena y preparación de equipaje para el regreso.",
       "mobility": "• *Cómo trasladarte:* Si se eligen islas, verificar embarcación, muelle, condiciones marítimas y hora de regreso; si no, caminar por zona histórica.",
-      "note": "• *Tips del día:* No reservar islas por inercia: ya hay playa en Tayrona; elegir descanso si el mar está agitado.",
+      "note": "• *Tips del día:* No reservar islas por inercia: ya hay playa en Tayrona; elegir descanso si el mar está agitado.\n• *Castillo de San Felipe (opcional):* Fuerte del siglo XVII transformado en el XVIII, clave para entender las defensas coloniales de Cartagena; reservar agua, sombra y tiempo de visita.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -1106,7 +1106,7 @@
       "checkOut": "2027-01-18",
       "status": "Candidato · no reservado",
       "rate": "Provisión: $7,000 MXN por 3 noches, 15–18 enero. Referencias Booking de otras fechas $6,165–$8,090 MXN/3 noches; NO cotización para enero 2027.",
-      "rateConditions": "1 adulto, habitación y baño privados; comprobar habitación con ventana, impuestos, desayuno, condiciones y cancelación flexible.",
+      "rateConditions": "1 adulto, habitación privada con baño propio, ventana o balcón, aislamiento acústico y cancelación flexible; confirmar desayuno, impuestos y disponibilidad de guarda de equipaje previo al check-in el 15 de enero.",
       "notes": "Favorito por confort e instalaciones; alternativa 574 Hotel.",
       "links": [
         {
@@ -1254,14 +1254,14 @@
       "title": "Idioma y moneda",
       "badge": "Español · COP",
       "tone": "green",
-      "text": "El español es el idioma principal. Moneda: peso colombiano (COP). Referencia del 3/11/2026, COP 1 ≈ $0.00578764 MXN (tipo medio derivado de datos BCE/Banca d’Italia); no equivale a la tasa final de bancos y terminales. Pagar en COP y evitar la conversión dinámica a MXN."
+      "text": "Español como idioma habitual; el inglés puede ser limitado fuera de hoteles y operadores turísticos. Moneda: peso colombiano (COP). Referencia 03/11/2026, COP 1 ≈ $0.00578764 MXN; tipo medio orientativo, no tasa final de banco. Preferir pagar en COP y rechazar conversión dinámica a MXN. Llevar algo de efectivo para entradas, lanchas y poblaciones pequeñas."
     },
     {
       "id": "entry",
       "title": "Documentación y consejos prácticos",
       "badge": "Revisar antes de salir",
       "tone": "orange",
-      "text": "Consultar requisitos migratorios actualizados para mexicanos y tránsito por Panamá. Migración Colombia considera Check-Mig opcional (recomendado para agilizar controles). Antes de viajar a Santa Marta, Minca o Tayrona, revisar recomendaciones oficiales de vacunación contra fiebre amarilla y orientación médica sobre tiempos y contraindicaciones, así como cobertura del seguro. Colombia utiliza habitualmente 110 V y enchufes A/B; verificar cargadores. Usar transportes autorizados."
+      "text": "Para mexicanos: comprobar requisitos migratorios y tránsito por Panamá antes del pago. Check-Mig de Colombia es opcional, pero puede agilizar controles. Consultar recomendaciones oficiales sobre fiebre amarilla para zonas de Minca y Tayrona con suficiente anticipación. En Colombia se usan generalmente enchufes A/B, como en México: no necesitas adaptador físico para clavijas A/B compatibles. Red habitual 110–120 V, 60 Hz; comprobar la etiqueta de tus cargadores. Seguro de viaje, transportes autorizados y precauciones en Taganga."
     }
   ],
   "tips": [
@@ -1323,12 +1323,12 @@
       "url": "https://www.fincalavictoria1892.com/"
     }
   ],
-  "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
+  "sourceNote": "Vuelos Copa A ($9,076 MXN) y respaldo B ($9,719 MXN) con fechas, segmentos y equipaje según capturas de Google Flights del 06/11/2026, no reservados; Avianca interno según captura anterior del 04/11/2026. Las tarifas de hoteles usadas en el presupuesto son provisiones basadas en referencias de otras fechas, nunca cotizaciones 15–26/01/2027. Fuentes institucionales y tarifas operativas enlazadas; reconfirmar antes de comprar.",
   "budgetRange": [
     54000,
     71000
   ],
-  "budgetNote": "CIFRA FINAL DE PLANEACIÓN (no precio confirmado): **$60,135 MXN para 1 persona, 12 días y 11 noches, con Copa A**. Copa multidestino $9,076; Avianca Classic COP 217,580 (≈ $1,259 MXN al cambio del 03/11/2026); Landmark Medellín 3 noches $7,000; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Casa La Fe Cartagena 3 noches $10,500; movilidad terrestre y lancha $6,000; alimentación $6,000; entradas y tours $5,000; seguro de viaje y contingencias $3,500; reserva para equipaje documentado $1,600. Rango de sensibilidad $54,000–71,000 MXN. Ningún hotel/tour está cotizado para las fechas exactas. Copa B solo como respaldo: sumaría $643 al vuelo, NO se suma a Copa A. Se cuentan todos los vuelos una sola vez. Si no necesitas documentar equipaje, el objetivo se reduce hasta $58,535 MXN. Mantener presupuesto redondeado de $60,000–61,000 MXN mientras se verifican hoteles.",
+  "budgetNote": "CIFRA FINAL DE PLANEACIÓN (no precio confirmado): $60,135 MXN para 1 persona, 12 días y 11 noches, con Copa A. Copa multidestino $9,076; Avianca Classic COP 217,580 (≈ $1,259 MXN al cambio del 03/11/2026); Landmark Medellín 3 noches $7,000; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Casa La Fe Cartagena 3 noches $10,500; movilidad terrestre y lancha $6,000; alimentación $6,000; entradas y tours $5,000; seguro de viaje y contingencias $3,500; reserva para equipaje documentado $1,600. Rango de sensibilidad $54,000–71,000 MXN. Ningún hotel/tour está cotizado para las fechas exactas. Copa B solo como respaldo: sumaría $643 al vuelo, NO se suma a Copa A. Se cuentan todos los vuelos una sola vez. Si no necesitas documentar equipaje, el objetivo se reduce hasta $58,535 MXN. Mantener presupuesto redondeado de $60,000–61,000 MXN mientras se verifican hoteles.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
