@@ -164,3 +164,33 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.match(trip.reservations.flatMap(g=>g[1]).find(x=>/Tours prioritarios/.test(x.title)).links[1].url,/fincalavictoria1892/);
   assert.deepEqual(trip.mapPoints.map(x=>x.order),[1,2,3,4,5,6,7]);
 });
+test('Colombia: auditoría D final de 24 imágenes, portada, créditos y visitas opcionales',()=>{
+  const catalog=JSON.parse(fs.readFileSync('data/places.json','utf8'));
+  const dayKeys=trip.days.flatMap(day=>day.places||[]);
+  assert.equal(dayKeys.length,24);
+  assert.equal(new Set(dayKeys).size,24,'No duplicar fotografías en distintas jornadas');
+  const catalogKeys=Object.keys(catalog).filter(key=>key.startsWith('col27-'));
+  assert.deepEqual(new Set(dayKeys),new Set(catalogKeys),'No dejar imágenes huérfanas en el catálogo de Colombia');
+  assert.equal(trip.coverSlides[0],trip.cover,'La portada debe iniciar en su fotografía principal');
+  assert.equal(new Set(trip.coverSlides).size,5,'Carrusel representativo sin repetidos');
+  for(const key of dayKeys){
+    const photo=catalog[key].photo;
+    assert.ok(photo.src.startsWith('https://'),'Foto fuera de HTTPS: '+key);
+    assert.ok(/^(?:https:\/\/thumb\.wikimedia\.org|https:\/\/upload\.wikimedia\.org)\//.test(photo.src),
+      'La URL debe señalar imagen y no una página HTML: '+key);
+    assert.ok(photo.source.startsWith('https://commons.wikimedia.org/wiki/File:'),
+      'Fuente primaria de Commons: '+key);
+    assert.ok(photo.author&&photo.attribution&&photo.license&&photo.licenseUrl,'Créditos/licencia: '+key);
+    const wordCount=trip.placeDescriptions[key]?.trim().split(/\s+/).length||0;
+    assert.ok(wordCount>=15&&wordCount<=30,'Descripción fuera de 15–30 palabras: '+key);
+  }
+  assert.deepEqual(trip.days.map(day=>day.places.length),[2,2,3,2,2,2,2,3,0,4,2,0]);
+  assert.deepEqual(trip.days[10].optionalPlaces,trip.days[10].places,
+    'Castillo y Bóvedas deben seguir como alternativas');
+  assert.ok(trip.days[6].places.every(k=>/tayrona/.test(k)),
+    'Las imágenes del día de descanso son solo ilustraciones regionales');
+  assert.match(catalog['col27-botero'].photo.attribution,/Wikimedia Commons/);
+  const slideshow=fs.readFileSync('components/trip.js','utf8');
+  assert.match(slideshow,/failedSources\.add\(sources\[next\]\)/,
+    'Si una foto de proveedor falla, el carrusel no debe quedar bloqueado');
+});
