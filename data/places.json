@@ -4445,5 +4445,82 @@
       "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
       "attribution": "Cbrough"
     }
+  },
+  "col27-botero": {
+    "name": "Plaza Botero",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Medell%C3%ADn%2C_Plaza_Botero%2C_2023-07_CN-01.jpg/960px-Medell%C3%ADn%2C_Plaza_Botero%2C_2023-07_CN-01.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Medell%C3%ADn,_Plaza_Botero,_2023-07_CN-01.jpg",
+      "author": "Steffen Schmitz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Steffen Schmitz"
+    }
+  },
+  "col27-provenza": {
+    "name": "Provenza, Medellín",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Provenza%2C_Medell%C3%ADn.jpg/960px-Provenza%2C_Medell%C3%ADn.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Provenza,_Medell%C3%ADn.jpg",
+      "author": "Xemenendura",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Xemenendura"
+    }
+  },
+  "col27-penol": {
+    "name": "Piedra del Peñol",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Piedra_El_Pe%C3%B1ol.jpg/960px-Piedra_El_Pe%C3%B1ol.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Piedra_El_Pe%C3%B1ol.jpg",
+      "author": "Jhonatan Grisales C.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jhonatan Grisales C."
+    }
+  },
+  "col27-guatape": {
+    "name": "Calle de los Zócalos, Guatapé",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Calle_de_los_z%C3%B3calos_en_Guatap%C3%A9.JPG/960px-Calle_de_los_z%C3%B3calos_en_Guatap%C3%A9.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Calle_de_los_z%C3%B3calos_en_Guatap%C3%A9.JPG",
+      "author": "Aliman5040",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Aliman5040"
+    }
+  },
+  "col27-comuna13": {
+    "name": "Mural de la Comuna 13",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Mural_y_graffiti._Comuna_13._Medell%C3%ADn_Colombia_%2854006%29.jpg/960px-Mural_y_graffiti._Comuna_13._Medell%C3%ADn_Colombia_%2854006%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Mural_y_graffiti._Comuna_13._Medell%C3%ADn_Colombia_(54006).jpg",
+      "author": "Sierraluisfer",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Sierraluisfer"
+    }
+  },
+  "col27-escaleras": {
+    "name": "Escaleras eléctricas de la Comuna 13",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Escaleras_el%C3%A9ctricas_de_la_comuna_13%2C_Medell%C3%ADn_-_04.jpg/960px-Escaleras_el%C3%A9ctricas_de_la_comuna_13%2C_Medell%C3%ADn_-_04.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Escaleras_el%C3%A9ctricas_de_la_comuna_13,_Medell%C3%ADn_-_04.jpg",
+      "author": "Juan Gómez",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Juan Gómez"
+    }
+  },
+  "col27-pueblito": {
+    "name": "Pueblito Paisa, Cerro Nutibara",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Pueblito_Paisa_-_1i_-_Medell%C3%ADn.jpg/960px-Pueblito_Paisa_-_1i_-_Medell%C3%ADn.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Pueblito_Paisa_-_1i_-_Medell%C3%ADn.jpg",
+      "author": "SajoR",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "SajoR"
+    }
   }
 }
