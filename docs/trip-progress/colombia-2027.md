@@ -1,5 +1,14 @@
 # Registro de avance · Colombia 2027
 
+## Corrección transversal de planeación independiente · 6 noviembre 2026
+
+**Decisión explícita del viajero:** los viajes de Atlas son escenarios independientes. No evaluar, reportar ni intentar resolver coincidencias de fechas con viajes ajenos al que está siendo planeado, salvo que el usuario lo pida expresamente. Se eliminó de esta bitácora una advertencia improcedente relativa a otro viaje. La regla se incorporó a AGENTS.md, trip-editorial-guide.md y trip-production-checklist.md. No se editó ningún otro itinerario.
+
+**Vuelo principal A:** enlace Google Flights actualizado a regreso CM188, recibido del viajero, añadido a `majorTransport.options[A].links`. Tarifa de referencia $9,023 MXN, con equipaje de mano y sin documentado. Sin reserva, sin merge.
+
+---
+
+
 ## ACTUALIZACIÓN POSTERIOR · 6 noviembre 2026 · COPA A Y EQUIPAJE DE MANO
 
 **Esta actualización prevalece sobre importes, números de vuelo, horarios y condiciones antiguas citadas más abajo.**
@@ -8,7 +17,7 @@
 - Copa B se conserva como **respaldo**, $9,719 con CM866 y llegada 22:25. No se suma al escenario A.
 - El viajero confirma **solo equipaje de mano**, sin maleta documentada. Eliminada la partida de provisión por maleta en bodega ($1,600). Confirmar peso y dimensiones de la pieza de mano antes de pagar.
 - **Presupuesto principal de planeación recalculado $58,482 MXN** (antes $60,135): ahorro $53 de vuelo y $1,600 de equipaje. Rango estimado $52,400–69,400; cuatro hoteles aún estimados, no reservados. Las diez partidas suman exactamente $58,482. Con B alternativo el total sería $59,178, solo como referencia, no como suma.
-- El enlace antiguo de Google Flights de A se retiró porque apuntaba a CM866; agregar únicamente un URL nuevo que corresponda a CM188, si el viajero lo facilita. B conserva su enlace de referencia.
+- Enlace de Google Flights de A actualizado con URL del viajero que identifica CM149 + CM397 / CM365 + CM188, conservando B de respaldo. Los enlaces no garantizan precio ni disponibilidad.
 - Actualizados vuelos estructurados, gastos, reservas, introducción logística, notas de equipaje, día de regreso, presupuesto y pruebas. Sin compras ni merge. Fotografías siguen en etapa 12.
 
 ---
@@ -33,7 +42,6 @@
 
 **Fuentes comparables, no reservables:** Landmark [Booking, otras fechas](https://www.booking.com/hotel/co/landmark.es-mx.html), Casa de Isabella [Booking, otras fechas](https://www.booking.com/hotel/co/casa-de-isabella.es-mx.html), Senda Koguiwa [tarifa temporada alta oficial](https://sendahotels.com/en/hotel/senda-koguiwa/bedrooms/standard-room/), Casa La Fe [Booking, otras fechas](https://www.booking.com/hotel/co/casa-la-fe.es-mx.html), [Parques Nacionales Tayrona](https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/), [tour Guatapé](https://toursguatape.com/en/producto/full-day-guatape/) y [Finca La Victoria](https://www.fincalavictoria1892.com/). Capturas del viajero para Copa $9,076 (A) / $9,719 (B) y Avianca COP 217,580 siguen siendo las únicas referencias aéreas; **no se consultó ni garantizó inventario en vivo**.
 
-**Conflicto entre viajes candidatos del mismo Atlas:** Colombia (15–26 enero 2027) se traslapa con «Suiza nevada 2027» (22 enero–2 febrero 2027). Ambos son proyectos sin reserva; NO presentarlos como realizables simultáneamente. Decisión entre viajes pendiente antes de compras incompatibles. No cambiar automáticamente las fechas de Suiza.\n\n**Puntos que justifican otra cotización:** precio real de los cuatro hoteles en fechas exactas, equipaje documentado de Copa, tours y transferencias individuales y cierre extraordinario de Tayrona. Ninguno obliga a rehacer ruta; sí pueden cambiar el costo final pagable. La etapa 12 de fotografías/galerías aún NO está completada; la auditoría D tampoco. Mantener PR #10 como borrador, sin merge.
 
 ---
 
