@@ -70,31 +70,31 @@
   "experiences": [
     {
       "city": "Medellín",
-      "description": "Comuna 13 con guía, Plaza Botero y Parque de Bolívar, Pueblito Paisa (Cerro Nutibara) y cena en Provenza. El Poblado se recorre solo como zona de alojamiento, sin paseo específico. Prueba bandeja paisa y arepas antioqueñas; Metrocable, Parque Arví, Jardín Botánico y Museo de Antioquia quedan opcionales o fuera del programa."
+      "description": "Recorre los murales y escaleras de Comuna 13 con guía, descubre las esculturas de Plaza Botero y el Parque de Bolívar y contempla la ciudad desde Pueblito Paisa. Cena en Provenza y prueba bandeja paisa y arepas antioqueñas."
     },
     {
       "city": "Guatapé",
-      "description": "Tour organizado de día completo a Guatapé, calles de zócalos y subida a Piedra del Peñol si las condiciones físicas y meteorológicas lo permiten; paseo en lancha opcional. No sustituir por visita sin guía si se quiere tour."
+      "description": "Descubre los coloridos zócalos de Guatapé y, si el clima y tu condición física lo permiten, sube la Piedra del Peñol para contemplar el embalse. Aprovecha el almuerzo para probar trucha o un plato tradicional antioqueño."
     },
     {
       "city": "Santa Marta",
-      "description": "Centro Histórico, Catedral y Parque de los Novios. Saborea pescado fresco, arroz con coco y patacones."
+      "description": "Pasea por el Centro Histórico, conoce la Catedral y disfruta el ambiente de Parque de los Novios. Descubre sabores del Caribe como pescado frito, arroz con coco y patacones."
     },
     {
       "city": "Minca",
-      "description": "Tour del café en finca del entorno de Minca, preferentemente La Victoria si confirma acceso, y cascadas de Marinka si queda tiempo; priorizar regreso a Santa Marta de día. Probar café de la Sierra Nevada."
+      "description": "Conoce cómo se cultiva y procesa el café de la Sierra Nevada en una finca de Minca. Si alcanza el tiempo, recorre los senderos hacia las cascadas de Marinka y prueba café local."
     },
     {
       "city": "Taganga y Playa Grande",
-      "description": "Visita breve a la bahía pesquera y playa próxima en lancha autorizada; evitar el sendero por reportes de robos."
+      "description": "Contempla la bahía pesquera de Taganga y, si el mar lo permite, disfruta Playa Grande tras un corto trayecto en lancha. Prueba pescado fresco con arroz con coco y patacones junto al Caribe."
     },
     {
       "city": "Tayrona",
-      "description": "Ecolodge en medio de la selva y caminata diurna a Cabo San Juan por senderos permitidos, si el parque está abierto."
+      "description": "Descansa entre vegetación tropical en un ecolodge cercano a El Zaino. Si el parque está abierto, camina por sus senderos hasta Cabo San Juan y contempla el encuentro de la selva con el mar."
     },
     {
       "city": "Cartagena de Indias",
-      "description": "Ciudad Amurallada, San Diego, Getsemaní, gastronomía cartagenera y atardecer en terraza. Prueba posta negra, arepa de huevo y cocadas; Islas del Rosario solo como opción."
+      "description": "Recorre las calles de la Ciudad Amurallada, descubre los murales de Getsemaní y contempla el atardecer desde una terraza. Prueba posta negra cartagenera, arepa de huevo y cocadas."
     }
   ],
   "days": [
