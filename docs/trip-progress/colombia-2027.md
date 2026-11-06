@@ -1,5 +1,18 @@
 # Registro de avance · Colombia 2027
 
+## ACTUALIZACIÓN POSTERIOR · 6 noviembre 2026 · COPA A Y EQUIPAJE DE MANO
+
+**Esta actualización prevalece sobre importes, números de vuelo, horarios y condiciones antiguas citadas más abajo.**
+
+- Nueva cotización principal A: **$9,023 MXN** multidestino, ida CM149 + CM397 el 15/01, regreso 26/01 por CM365 CTG 15:05→PTY 16:22; conexión de 2 h 55 min; CM188 PTY 19:17→MEX 22:05. Regreso 273 kg CO₂e. Sustituye A anterior $9,076 con CM866 y llegada 22:25.
+- Copa B se conserva como **respaldo**, $9,719 con CM866 y llegada 22:25. No se suma al escenario A.
+- El viajero confirma **solo equipaje de mano**, sin maleta documentada. Eliminada la partida de provisión por maleta en bodega ($1,600). Confirmar peso y dimensiones de la pieza de mano antes de pagar.
+- **Presupuesto principal de planeación recalculado $58,482 MXN** (antes $60,135): ahorro $53 de vuelo y $1,600 de equipaje. Rango estimado $52,400–69,400; cuatro hoteles aún estimados, no reservados. Las diez partidas suman exactamente $58,482. Con B alternativo el total sería $59,178, solo como referencia, no como suma.
+- El enlace antiguo de Google Flights de A se retiró porque apuntaba a CM866; agregar únicamente un URL nuevo que corresponda a CM188, si el viajero lo facilita. B conserva su enlace de referencia.
+- Actualizados vuelos estructurados, gastos, reservas, introducción logística, notas de equipaje, día de regreso, presupuesto y pruebas. Sin compras ni merge. Fotografías siguen en etapa 12.
+
+---
+
 ## AUDITORÍA DE LAS NUEVE SECCIONES · ESTADO VIGENTE 06/11/2026
 
 **La información siguiente prevalece sobre estimaciones y decisiones antiguas registradas más abajo.** Copa **A** es única base de cálculo; Copa B permanece únicamente como respaldo y no se suma. Viaje **15–26 de enero de 2027, 12 días, 11 noches, 4 alojamientos**, 1 persona.
