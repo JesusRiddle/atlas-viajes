@@ -70,7 +70,7 @@
   "experiences": [
     {
       "city": "Medellín",
-      "description": "Recorre los murales y escaleras de Comuna 13 con guía, descubre las esculturas de Plaza Botero y el Parque de Bolívar y contempla la ciudad desde Pueblito Paisa. Cena en Provenza y prueba bandeja paisa y arepas antioqueñas."
+      "description": "Recorre los murales de Comuna 13 con guía, contempla las esculturas de Plaza Botero y la colección del Museo de Antioquia, visita Parque de Bolívar y disfruta Pueblito Paisa y Provenza. Prueba bandeja paisa y arepas antioqueñas."
     },
     {
       "city": "Guatapé",
@@ -78,7 +78,7 @@
     },
     {
       "city": "Santa Marta",
-      "description": "Pasea por el Centro Histórico, conoce la Catedral y disfruta el ambiente de Parque de los Novios. Descubre sabores del Caribe como pescado frito, arroz con coco y patacones."
+      "description": "Conoce la Catedral, Parque de los Novios y plazas del Centro Histórico en un recorrido guiado en bicicleta si la llegada lo permite. Prueba pescado frito, arroz con coco y patacones."
     },
     {
       "city": "Minca",
@@ -101,13 +101,13 @@
     {
       "n": 1,
       "date": "2027-01-15",
-      "title": "Llegada a Medellín, plazas y Provenza",
+      "title": "Llegada a Medellín, Museo de Antioquia y Provenza",
       "base": "Medellín",
       "am": "Vuelo candidato Copa A: MEX 01:20 → PTY 06:00, escala de 3 h 32 min; PTY 09:32 → MDE 10:55. Opción B: MEX 05:55 → PTY 10:38, escala 2 h 17 min; PTY 12:55 → MDE 14:15.",
-      "pm": "Llegada principal A a MDE a las 10:55, migración, equipaje y traslado a Manila; si el cuarto no está disponible, dejar maleta en recepción. Plaza Botero y Parque de Bolívar por la tarde, siempre de día. Si llega B a las 14:15, trasladar las plazas al domingo.",
+      "pm": "Llegada principal A a MDE a las 10:55, migración y traslado al hotel en Manila. Si el horario lo permite, Plaza Botero, Museo de Antioquia (60–90 minutos) y Parque de Bolívar por la tarde. Priorizar el museo; abreviar Parque de Bolívar si se hace tarde. Con llegada B a las 14:15, posponer algunas visitas.",
       "night": "Cena en Provenza según energía tras el vuelo nocturno. Traslado de regreso en vehículo confiable.",
       "mobility": "• *Aeropuerto → Manila:* Vehículo precontratado o autorizado, con margen por migración y tráfico.\n• *Centro histórico:* Traslados de día a Plaza Botero y Parque de Bolívar; si llegas tarde, cambiarlos al domingo.",
-      "note": "• *Vuelo candidato:* Copa opción A, salida muy de madrugada; tarifa observada $9,023 MXN por multidestino, sin comprar.\n• *Respaldo:* Copa B llegaría 14:15 y movería las plazas al domingo; no se incorpora su tarifa al presupuesto central.\n• *Salud previa:* Verificar recomendaciones para Tayrona y Minca, incluida la fiebre amarilla, con suficiente anticipación.",
+      "note": "• *Museo de Antioquia:* Viernes 09:40–17:30 según horario publicado; prever 60–90 minutos. Reconfirmar entrada y horario 2027.\n• *Vuelo candidato:* Copa A $9,023 MXN multidestino, sin comprar; con Copa B (llegada 14:15) no cabe garantizar todas las visitas.\n• *Salud previa:* Revisar recomendaciones para Tayrona y Minca con anticipación.",
       "spend": null,
       "places": [
         "col27-botero",
@@ -130,6 +130,10 @@
         {
           "label": "Parque de Bolívar · mapa",
           "url": "https://www.google.com/maps/search/?api=1&query=Parque%20de%20Bolivar%20Medellin"
+        },
+        {
+          "label": "Museo de Antioquia · visita y tarifas oficiales",
+          "url": "https://museodeantioquia.co/visita-tarifas/"
         }
       ]
     },
@@ -195,13 +199,13 @@
     {
       "n": 4,
       "date": "2027-01-18",
-      "title": "De Medellín a Santa Marta",
+      "title": "Llegada a Santa Marta y recorrido en bicicleta",
       "base": "Santa Marta",
       "am": "Checkout y traslado anticipado a MDE. Vuelo candidato Avianca AV9446 12:00–13:15 a Santa Marta.",
-      "pm": "Traslado autorizado al Centro Histórico, check-in y paseo por la Catedral y Parque de los Novios.",
-      "night": "Paseo breve por la bahía y cena caribeña. Regreso por calles iluminadas.",
-      "mobility": "• *Cómo trasladarte:* Vuelo MDE → SMR directo, tarifa Classic candidata no comprada; traslado oficial aeropuerto → hotel.",
-      "note": "• *Tips del día:* Confirmar cabina y equipaje de la tarifa antes de comprar, así como el traslado al aeropuerto correcto.",
+      "pm": "Llegada candidata a SMR a las 13:15, traslado al hotel, check-in y descanso breve. Si el vuelo llega a tiempo y hay cupo, tour guiado en bicicleta por el Centro Histórico a las 17:00 durante 2 horas: Catedral, Parque de los Novios, plaza de Bolívar y exteriores de la Casa de la Aduana.",
+      "night": "Final del paseo hacia las 19:00 y cena caribeña. Si hay retrasos, sustituir la bicicleta por un paseo corto y cenar.",
+      "mobility": "• *Aeropuerto → hotel:* Traslado autorizado, dejando margen para check-in y llegada al punto de encuentro.\n• *Bicicleta:* Tour de referencia de Rent Bike Santa Marta vía Civitatis; salida publicada a las 17:00 desde Carrera 4 #19-12. Confirmar operación el lunes 18 y cupo antes de pagar.",
+      "note": "• *Tour condicionado:* Sin reservar; depende de puntualidad del vuelo y traslado. Incluye casco y guía; el Museo del Oro Tairona se observa solo desde fuera porque cierra los lunes.\n• *Equipaje:* Comprobar condiciones de Avianca antes de comprar.",
       "spend": null,
       "places": [
         "col27-santamarta-catedral",
@@ -216,6 +220,10 @@
         {
           "label": "Avianca · vuelo y condiciones",
           "url": "https://www.avianca.com/"
+        },
+        {
+          "label": "Tour de Santa Marta en bicicleta · Civitatis",
+          "url": "https://experiences.civitatis.com/es/santa-marta/tour-bicicleta-santa-marta/"
         }
       ]
     },
@@ -227,8 +235,8 @@
       "am": "Excursión a Minca con visita a una finca cafetera, preferentemente Finca La Victoria si opera y hay acceso; recorrido de producción, proceso del grano y degustación.",
       "pm": "Almuerzo en Minca y visita a cascadas de Marinka si los horarios, traslados y senderos lo permiten. Priorizar el café; reducir la caminata o las cascadas si el tour se extiende.",
       "night": "Regreso a Santa Marta antes de anochecer; cena cerca del hotel.",
-      "mobility": "• *Cómo trasladarte:* Tour o traslado privado adecuado a caminos rurales; verificar recogida y accesibilidad.",
-      "note": "• *Tour cafetero:* Finca La Victoria publica visita de 50 min, 09:00–16:30, por COP 40,000 (≈ $232 MXN); reconfirmar la disponibilidad para el 19 de enero.\n• *Plan B:* Cascadas de Marinka solo si horarios, camino y traslado permiten volver a Santa Marta de día.",
+      "mobility": "• *Cómo trasladarte:* Coordinar transporte desde Santa Marta hasta Minca y la finca; la visita cafetera no incluye por sí sola transporte a Marinka. Verificar acceso y regresar con luz.",
+      "note": "• *Finca La Victoria:* Tour cafetero de 50 minutos, 09:00–16:30 y COP 40,000 (≈ $232 MXN), referencia publicada; incluye dos tazas, en español, inglés o alemán. Consultar por WhatsApp +57 324 240 1129; reserva anticipada indicada para grupos mayores de 10 personas.\n• *Marinka:* Cascadas solo si tiempo, caminos y regreso diurno lo permiten.",
       "spend": null,
       "places": [
         "col27-minca-paisaje",
@@ -272,11 +280,11 @@
       "date": "2027-01-21",
       "title": "Cambio a ecolodge cerca de Tayrona",
       "base": "Tayrona",
-      "am": "Checkout de Santa Marta y traslado acordado al alojamiento próximo a El Zaino.",
+      "am": "Visita de máximo 30 minutos al Museo del Oro Tairona en Casa de la Aduana, si el jueves 21 opera como indica el horario publicado. Después, checkout en Santa Marta y traslado al ecolodge próximo a El Zaino.",
       "pm": "Check-in y tarde de descanso en ecolodge, jardín o piscina. Sin ingreso al parque.",
       "night": "Cena en el alojamiento y preparación de agua, calzado y protección solar para Tayrona.",
-      "mobility": "• *Cómo trasladarte:* Traslado Santa Marta → hotel cercano a El Zaino, preferentemente directo y reservado.",
-      "note": "• *Tips del día:* Senda Koguiwa, Senda Watapuy y Villa María son candidatos, no reservas; buscar cancelación flexible por posibles restricciones de Tayrona.",
+      "mobility": "• *Museo → ecolodge:* Dejar equipaje en el hotel durante el museo (máximo 30 minutos) y trasladarse directamente al alojamiento próximo a El Zaino.",
+      "note": "• *Museo del Oro Tairona:* Cerrado los lunes; programado el jueves 21 con máximo 30 minutos. Reconfirmar horario 2027.\n• *Ecolodge:* Senda Koguiwa, Watapuy y Villa María son candidatos, sin reserva. La alternativa de dormir en Cabo San Juan sigue en evaluación; aún no cambiar alojamientos ni fechas.",
       "spend": null,
       "places": [
         "col27-tayrona-costa",
@@ -284,7 +292,13 @@
       ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "tay-koguiwa"
+      "hotel": "tay-koguiwa",
+      "mobilityLinks": [
+        {
+          "label": "Museo del Oro Tairona · Banco de la República",
+          "url": "https://www.banrep.gov.co/es/sucursales/santa-marta"
+        }
+      ]
     },
     {
       "n": 8,
@@ -496,11 +510,15 @@
           ]
         },
         {
-          "title": "Comuna 13 y café en Minca · 17 y 19 de enero",
-          "description": "Sin reservar. Elegir una visita guiada de Comuna 13 el domingo 17, preferiblemente temprano para conservar tiempo para Pueblito Paisa. Para el martes 19, confirmar visita cafetera en Finca La Victoria (referencia COP 40,000, ≈ $232 MXN), acceso y regreso diurno desde Minca; cascadas de Marinka solo si el horario lo permite.",
+          "title": "Comuna 13, bicicleta en Santa Marta y café en Minca · 17–19 de enero",
+          "description": "Sin reservar. Comuna 13 guiada el domingo 17; bicicleta por Santa Marta el lunes 18 a las 17:00 (2 horas), si el vuelo llega a tiempo; café en Finca La Victoria el martes 19 (50 minutos, COP 40,000 ≈ $232 MXN como referencia), con traslado contratado aparte y Marinka solo si hay tiempo. Consultar café directamente por WhatsApp +57 324 240 1129 y bicicleta mediante Civitatis.",
           "links": [
             {
-              "label": "Finca La Victoria · café y visitas",
+              "label": "Bicicleta Santa Marta · Civitatis",
+              "url": "https://experiences.civitatis.com/es/santa-marta/tour-bicicleta-santa-marta/"
+            },
+            {
+              "label": "Finca La Victoria · contacto",
               "url": "https://www.fincalavictoria1892.com/"
             }
           ]
