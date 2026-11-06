@@ -510,7 +510,7 @@
         "amount": 9076,
         "currency": "MXN"
       },
-      "status": "estimated",
+      "status": "quoted",
       "notes": "Tarifa observada 06/11/2026 para Copa A multidestino MEX–PTY–MDE (15/01) y CTG–PTY–MEX (26/01), una persona turista, impuestos obligatorios incluidos, una pieza de equipaje de mano sin cargo, maleta documentada con costo. No comprada. Opción B de respaldo $9,719 (NO usada en el presupuesto base)."
     },
     {
@@ -522,7 +522,7 @@
         "amount": 1259,
         "currency": "MXN"
       },
-      "status": "estimated",
+      "status": "quoted",
       "notes": "Avianca Classic MDE–SMR, 18/01, tarifa candidata original COP 217,580 (≈ $1,259 MXN al cambio 03/11/2026). Incluye prestaciones de la captura original por reconfirmar, no comprado."
     },
     {
@@ -1094,7 +1094,7 @@
     "marginMXN": 0,
     "useBudgetRange": true,
     "referenceFlightMXN": 9076,
-    "notes": "Presupuesto integral de planeación para 1 persona, 12 días/11 noches, calculado exclusivamente con la opción A de Copa ($9,076) y hoteles candidatos Landmark, Casa de Isabella, Senda Koguiwa y Casa La Fe. Cada partida no cotizada es una provisión razonada, no una oferta reservable. La opción B ($9,719) es respaldo; NO entra en el total principal. Rango de sensibilidad por habitaciones, equipaje y operadores. Ahorro potencial si viajas solo con equipaje de mano."
+    "notes": "Presupuesto integral de planeación para 1 persona, 12 días/11 noches, calculado exclusivamente con la opción A de Copa ($9,076) y hoteles candidatos Landmark, Casa de Isabella, Senda Koguiwa y Casa La Fe. Los precios de Copa A y Avianca se observaron en capturas, no se compraron; hoteles y servicios terrestres siguen como provisiones no cotizadas para sus fechas. La opción B ($9,719) es respaldo; NO entra en el total principal. Rango de sensibilidad por habitaciones, equipaje y operadores. Ahorro potencial si viajas solo con equipaje de mano."
   },
   "hotels": [
     {
