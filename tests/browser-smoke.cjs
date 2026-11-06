@@ -173,6 +173,26 @@ const assert = require('node:assert/strict');
           assert.ok(region.climate.y >= region.budget.y,
             id + ' tarjeta Clima y luz debe seguir al presupuesto');
         }
+        if (id === 'colombia-2027') {
+          const photoCatalog = JSON.parse(fs.readFileSync('data/places.json','utf8'));
+          const tripData = JSON.parse(fs.readFileSync('data/trips/colombia-2027.json','utf8'));
+          assert.equal(await page.locator('#dias details.day').count(),12,'Colombia: 12 jornadas');
+          assert.equal(await page.locator('#temporadas .season-month').count(),12,'Colombia: 12 meses');
+          assert.equal(await page.locator('#alojamientos .hotel-card').count(),4,'Colombia: 4 hoteles');
+          assert.equal(await page.locator('#plan .overview-intro .practical-indicator').count(),3,'Colombia: 3 indicadores');
+          assert.equal(await page.locator('#plan .overview-side .overview-climate-card').count(),1,'Colombia: clima separado');
+          assert.equal(await page.locator('#traslados .mt-card').count(),3,'Colombia: 3 transportes');
+          assert.equal(await page.locator('#dias .gallery figure').count(),24,'Colombia: 24 imágenes editoriales');
+          assert.equal(await page.locator('#dias .gallery .credit').count(),24,'Colombia: créditos completos');
+          assert.equal(await page.locator('#dias .gallery .photo-option').count(),2,'Colombia: dos visitas fotográficas opcionales');
+          assert.equal(await page.locator('#dias .gallery img[alt=""]').count(),0,'Colombia: fotografías con alt informativo');
+          const heroSrc=await page.locator('.triphero-split-photo img').first().getAttribute('src');
+          assert.equal(heroSrc,photoCatalog[tripData.cover].photo.src,'Colombia: portada Tayrona');
+          const renderedPhotos=await page.locator('#dias .gallery img').evaluateAll(imgs=>imgs.map(img=>img.getAttribute('src')));
+          assert.equal(new Set(renderedPhotos).size,24,'Colombia: no duplicar imágenes diarias');
+          assert.ok(renderedPhotos.every(src=>src.startsWith('https://')),'Colombia: solo imágenes externas HTTPS');
+          assert.match(await page.locator('#costes').innerText(),/58[,.]482/,'Colombia: presupuesto Copa A sin equipaje documentado');
+        }
         if (id === 'suiza-nevada-2027') {
           const swissClimate = page.locator('#plan .overview-side .overview-climate-card');
           const swissClimateText = await swissClimate.innerText();
