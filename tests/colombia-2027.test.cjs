@@ -95,6 +95,17 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.ok(trip.exchangeRates.COP>0);
   const places=JSON.parse(fs.readFileSync('data/places.json','utf8'));
   assert.ok(places[trip.cover]?.photo?.src.startsWith('https://'));
+  const block1=['col27-botero','col27-provenza','col27-penol','col27-guatape','col27-comuna13','col27-escaleras','col27-pueblito'];
+  assert.deepEqual(trip.days.slice(0,3).map(d=>d.places.length),[2,2,3]);
+  assert.equal(new Set(block1).size,block1.length);
+  for(const key of block1){
+    assert.ok(places[key], 'Fotografía faltante: '+key);
+    assert.match(places[key].photo.src,/^https:\/\/(?:thumb|upload)\.wikimedia\.org\//);
+    assert.match(places[key].photo.source,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+    assert.ok(places[key].photo.author && places[key].photo.license && places[key].photo.licenseUrl);
+    const wordCount=(trip.placeDescriptions[key]||'').trim().split(/\s+/).length;
+    assert.ok(wordCount>=15 && wordCount<=30,'Pie de foto fuera de norma '+key+': '+wordCount);
+  }
   assert.equal(trip.mapPoints.length,7);
   assert.equal(trip.intro.split(/\s+/).length>=70,true);
   assert.equal(trip.introHighlights.every(name=>trip.intro.includes(name)),true);
