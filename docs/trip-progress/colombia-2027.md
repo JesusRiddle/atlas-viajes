@@ -4,9 +4,9 @@
 **JSON:** `data/trips/colombia-2027.json`  
 **Rama:** `feat/colombia-2027`  
 **Modalidad:** planeación detallada, tarifas aún provisionales  
-**Actualización:** 2026-11-04  
-**Etapa actual:** 12 · Fotografías y portada (tras auditoría correctiva de etapas 00–11)  
-**Siguiente acción autónoma:** comprobar CI de la segunda revisión, mantener Medellín tres noches solamente como variante hasta que exista vuelo conveniente del domingo 17, iniciar selección fotográfica externa, portada y carrusel, y ejecutar auditoría D; no hacer merge.  
+**Actualización:** 2026-11-06  
+**Etapa actual:** 11 · Integración de vuelos A/B y recálculo de ruta; etapa 12 fotos todavía pendiente  
+**Siguiente acción autónoma:** completar CI del nuevo itinerario 15–26, verificar compra/equipaje de Copa y confirmar visita urbana del domingo; después continuar etapa 12 fotografías sin merge.  
 **Decisiones que requieren al usuario:** ninguna por ahora. No hay compras autorizadas.
 
 ## Etapas 00–13
@@ -120,3 +120,20 @@ Se eleva la bolsa provisional de experiencias a $5,500 MXN; escenario central $5
 La opción de trasladar a Cartagena la noche recortada de Medellín queda **descartada por preferencia del viajero**. Solo hay dos escenarios a evaluar, sin cambiar por ahora el JSON de fechas: **A)** 3 noches Medellín + 3 Santa Marta + 2 Tayrona + 3 Cartagena, regreso de CTG el **25 de enero** (12 días/11 noches; requiere vuelo MDE→SMR el 17 y vuelo internacional de regreso el 25 por reconfirmar); **B)** 3 noches Medellín + 3 Santa Marta + 3 Tayrona + 3 Cartagena, regreso el **26 de enero** (13 días/12 noches; requiere vuelo MDE→SMR el 17 y verificar el ecolodge para un día completo de descanso). La opción B solo vale la pena si el hotel, piscina, senderos, comidas y ambiente compensan una noche extra. **Criterio de preferencia:** no quitar ningún imprescindible en Medellín para lograr arbitrariamente tres noches; evaluar además la viabilidad de las excursiones.
 
 **Regla editorial corregida:** «itinerario platicadito» es exclusivamente un formato conversacional que el usuario pedirá expresamente en el chat; **NO** se escribe en `days` de Atlas. Restaurado el estilo editorial conciso conforme a `docs/trip-editorial-guide.md` y reemplazada la aserción de longitud narrativa por controles de contenido operativo y concisión. Mantener campos AM/PM/noche y viñetas de traslados y consejos. No ajustar datos de vuelos/hoteles/precisión de precios hasta escoger una opción. **Fotografías siguen siendo la etapa siguiente**, con PR en borrador sin merge.
+
+
+## DECISIÓN VIGENTE · Vuelos A/B recibidos y 3 noches en Medellín (06/11/2026)
+
+Este apartado **sustituye cualquier escenario anterior de 14–26 de enero** descrito más arriba: los apartados históricos documentan decisiones anteriores y **no son la ruta vigente**. Se integraron en el JSON el nuevo inicio **viernes 15/01/2027**, fin **martes 26/01/2027**, **12 días**, **11 noches** y **8 días laborables** (sin asumir feriados adicionales). Distribución: Medellín **3 noches** (15–18), Santa Marta **3** (18–21), Tayrona **2** (21–23), Cartagena **3** (23–26); cuatro alojamientos, ninguno comprado. No se añade noche a Cartagena. El vuelo interno Avianca AV9446 lunes 18 12:00–13:15 sigue como candidato.
+
+**Copa A, principal, $9,076 MXN multidestino, una persona turista:** viernes 15: MEX 01:20 → PTY 06:00, CM149 Boeing 737 (3h40m); escala PTY 3h32m; PTY 09:32 → MDE 10:55, CM397 Boeing 737 MAX 9 (1h23m). Salida de madrugada (traslado al aeropuerto la noche del jueves). Regreso martes 26: CTG 15:05 → PTY 16:22, CM365 Boeing 737 (1h17m); escala PTY **3h12m**; PTY 19:34 → MEX 22:25, CM866 Boeing 737 (3h51m). Emisiones estimadas 263 kg CO₂e ida y 280 regreso, tal como muestra Google Flights. Una pieza de mano incluida; documentada solo por cargo adicional no cotizado; artículo personal, kilos y dimensiones pendientes. Tarifa en capturas de Google Flights del 06/11/2026, tasas obligatorias incluidas, no comprada.
+
+**Copa B, respaldo, $9,719 MXN:** viernes 15: MEX 05:55 → PTY 10:38, CM195 Boeing 737 (3h43m); escala PTY **2h17m**; PTY 12:55 → MDE 14:15, CM654 Boeing 737 (1h20m). Regreso idéntico a A, CM365 y CM866, 15:05–22:25; emisiones 272 kg CO₂e ida, 280 regreso. Incluye misma pieza de mano gratuita, documentada con tarifa adicional no especificada. Diferencia con A **+$643 MXN**. Ambos se guardan en `majorTransport[0].options`, seleccionable sin duplicar el vuelo dentro de presupuesto. Condiciones de cambios/reembolsos no publicadas en las capturas: pendientes de revisar con Copa.
+
+**Nueva distribución de experiencias:** viernes 15: llegada a MDE (A 10:55 / B 14:15), Plaza Botero y Parque de Bolívar solo si hay tiempo antes del anochecer, cena en Provenza. Sábado 16: Guatapé y Piedra del Peñol en tour, día completo. Domingo 17: Comuna 13 guiada + Pueblito Paisa, y plazas si no cupieron el viernes. Lunes 18: Avianca a Santa Marta. Martes 19: tour del café **en Minca** (en lugar de Antioquia) más cascadas de Marinka solo si logística lo permite. El Poblado se usa como zona del hotel, no se agenda paseo dedicado. Otras ciudades mantienen sus noches y fechas anteriores.
+
+**Reconciliación económica:** hotel Medellín reducido de 4 noches/$4,800 meta a **3 noches/$3,600 meta**, Copa A $10,303 antigua → **$9,076 nueva**, alimentos 13 días/$6,500 → **12 días/$6,000**, excursiones 13 días/$5,500 con doble café → **12 días/$4,500 con café solo en Minca**. Central nuevo **$46,735 MXN**, rango orientativo **$39,000–61,000 MXN**. Con Copa B, central **$47,378 MXN**. Ninguna tarifa ni alojamiento comprado; se deben revisar precios de hoteles y excursiones realmente pagables.
+
+**Integridad de interfaz:** actualizado `work`, `start`, `days`, `bases`, `hotels[].checkIn/out`, `majorTransport` y sus `day`/refs, `expenses`, `budgetPreliminary`, `budgetNote`, `intro`, `introShort`, `experiences`, `reservations`, `practicalIndicators`, `planningDetails` y pruebas. Los textos usan el formato editorial conciso de Atlas: el «itinerario platicadito» solo se usa en el chat a solicitud explícita.
+
+**Riesgo por confirmar:** si la opción B llega después de las 14:00, podría no caber Plaza Botero y Parque de Bolívar el viernes. En ese caso el domingo deberá combinar las dos plazas, Comuna 13 y Pueblito Paisa sin visitar museos; evaluar operador con transporte y confirmar horas. No tratar como garantizada toda la lista sin revisar el ritmo del domingo. Fotografías y cierre D siguen pendientes. PR #10 sin merge.
