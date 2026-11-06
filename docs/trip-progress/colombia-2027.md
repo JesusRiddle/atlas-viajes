@@ -1,5 +1,21 @@
 # Registro de avance · Colombia 2027
 
+## Plan fotográfico por bloques · etapa 12 (noviembre de 2026)
+
+**Ejecución por zonas con revisión al final de cada bloque y confirmación del viajero antes de continuar.** Solamente URLs de fotos de Wikimedia Commons, sin descargar archivos ni alterar itinerario, vuelos o presupuesto.
+
+1. **Bloque 1 — Medellín y Guatapé, días 15–17 enero:** Plaza Botero, Provenza, Piedra del Peñol, calle de zócalos, mural de Comuna 13, escaleras de Comuna 13 y Pueblito Paisa. **Hecho:** siete fotos únicas verificadas como fotografías visibles a color desde la página de Wikimedia/miniatura; autor y licencia consultados; 2/2/3 por día; descripciones 15–30 palabras. Se añadió test estructural. **Pendiente antes de declarar validación completa:** CI verde y comprobación de visualización en navegador. No iniciar bloque siguiente sin revisión.
+2. **Bloque 2 — Santa Marta, Minca y Taganga, días 18–20:** centro histórico, Catedral y Parque de los Novios; finca cafetera y cascadas de Marinka; Taganga y Playa Grande en lancha (si el mar permite). Aproximadamente 6–8 fotos únicas.
+3. **Bloque 3 — Ecolodge y Tayrona, días 21–22:** fotografías de naturaleza alrededor de El Zaino (no atribuir falsamente una imagen a instalaciones de hotel); senderos y Cabo San Juan; aproximadamente 4–6 fotos.
+4. **Bloque 4 — Cartagena, días 23–25:** ciudad amurallada, Torre del Reloj, San Diego, Getsemaní y Castillo de San Felipe opcional; aproximadamente 6–8 fotos.
+5. **Bloque 5 — Portada y carrusel:** verificar la portada actual, escoger alternativas visuales geográficamente representativas (no solo Cartagena), probar enlaces HTTPS, miniaturas, calidad y licencias, y validar inicio en escritorio/móvil. Sin fotos inventadas en días solo de vuelo.
+6. **Bloque 6 — Auditoría fotográfica final D:** galería por jornada, orden y formato editorial, créditos, enlaces externos, fotos sin duplicados, consistencia JSON, pruebas Node y navegador; documentar limitaciones de terceros. No merge sin aprobación.
+
+**Control económico:** presupuesto principal $58,482 MXN con Copa A, exclusivamente equipaje de mano; fotografía no modifica esta cifra.
+
+---
+
+
 ## Corrección transversal de planeación independiente · 6 noviembre 2026
 
 **Decisión explícita del viajero:** los viajes de Atlas son escenarios independientes. No evaluar, reportar ni intentar resolver coincidencias de fechas con viajes ajenos al que está siendo planeado, salvo que el usuario lo pida expresamente. Se eliminó de esta bitácora una advertencia improcedente relativa a otro viaje. La regla se incorporó a AGENTS.md, trip-editorial-guide.md y trip-production-checklist.md. No se editó ningún otro itinerario.
