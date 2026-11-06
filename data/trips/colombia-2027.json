@@ -347,7 +347,12 @@
       "mobility": "• *Cómo trasladarte:* Recorrido principalmente a pie en horario diurno; taxi/app formal cuando haga falta.",
       "note": "• *Tips del día:* Calor y humedad: buscar sombra e hidratarse; cuidar pertenencias y confirmar precios antes de aceptar servicios turísticos.\n• *No te pierdas:* Torre del Reloj, plazas y balcones republicanos; Getsemaní refleja una historia distinta a los recintos turísticos amurallados. Calor y humedad: buscar sombra e hidratarse.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-torre-reloj",
+        "col27-san-diego",
+        "col27-getsemani-murales",
+        "col27-murallas"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "ct-lafe"
@@ -363,10 +368,17 @@
       "mobility": "• *Cómo trasladarte:* Si se eligen islas, verificar embarcación, muelle, condiciones marítimas y hora de regreso; si no, caminar por zona histórica.",
       "note": "• *Tips del día:* No reservar islas por inercia: ya hay playa en Tayrona; elegir descanso si el mar está agitado.\n• *Castillo de San Felipe (opcional):* Fuerte del siglo XVII transformado en el XVIII, clave para entender las defensas coloniales de Cartagena; reservar agua, sombra y tiempo de visita.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-castillo-san-felipe",
+        "col27-bovedas"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "ct-lafe"
+      "hotel": "ct-lafe",
+      "optionalPlaces": [
+        "col27-castillo-san-felipe",
+        "col27-bovedas"
+      ]
     },
     {
       "n": 12,
@@ -1362,7 +1374,13 @@
     "col27-tayrona-laguna": "La laguna y los palmares muestran la diversidad ecológica del parque cercano al alojamiento; fotografía ambiental, no de las instalaciones del hotel.",
     "col27-tayrona-sendero": "Los senderos del parque atraviesan bosques y formaciones rocosas; el recorrido previsto exige calzado cómodo, hidratación y respetar las rutas habilitadas.",
     "col27-cabo-san-juan": "Cabo San Juan destaca por su bahía entre enormes rocas, palmeras y un pequeño mirador elevado; la natación depende de las zonas autorizadas.",
-    "col27-cabo-amanecer": "Una luz suave sobre la costa de Cabo San Juan permite apreciar el relieve de las playas; fotografía ilustrativa, no representa el horario de nuestra excursión."
+    "col27-cabo-amanecer": "Una luz suave sobre la costa de Cabo San Juan permite apreciar el relieve de las playas; fotografía ilustrativa, no representa el horario de nuestra excursión.",
+    "col27-torre-reloj": "La torre amarilla marca la entrada histórica a la ciudad fortificada y conecta las antiguas murallas con las plazas del centro.",
+    "col27-murallas": "Las fortificaciones coloniales protegían el puerto de Cartagena; sus bastiones conservan vistas de la costa y del casco antiguo amurallado.",
+    "col27-san-diego": "Cerca de la plaza de San Diego, las casas coloridas, balcones de madera y vegetación dibujan calles características del centro histórico.",
+    "col27-getsemani-murales": "Los murales de Getsemaní reflejan la identidad artística del barrio y contrastan con las fachadas antiguas y su ambiente cotidiano.",
+    "col27-castillo-san-felipe": "Esta fortaleza de piedra domina una elevación estratégica y conserva estructuras defensivas construidas para proteger Cartagena de ataques por tierra.",
+    "col27-bovedas": "Las antiguas bóvedas militares, junto a las murallas del sector de San Diego, albergan actualmente puestos artesanales en sus galerías amarillas."
   },
   "optionalSection": null,
   "family": null,
