@@ -54,25 +54,28 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.ok(trip.majorTransport.every(t=>ids.has(t.budgetIncludedIn)));
   assert.equal(budget.summary(trip).issues.length,0);
   assert.equal(budget.summary(trip).pending.length,0);
-  assert.equal(budget.summary(trip).knownTotalMXN,60135);
+  assert.equal(budget.summary(trip).knownTotalMXN,58482);
   const estimate=budget.planningEstimate(trip);
-  assert.equal(estimate.totalMXN,60135);
-  assert.equal(estimate.low,54000);
-  assert.equal(estimate.high,71000);
+  assert.equal(estimate.totalMXN,58482);
+  assert.equal(estimate.low,52400);
+  assert.equal(estimate.high,69400);
   assert.equal(trip.majorTransport[0].selectedOption,'A');
-  assert.equal(budget.summary(trip,{'flight-international':{option:'B'}}).knownTotalMXN,60778);
+  assert.equal(budget.summary(trip,{'flight-international':{option:'B'}}).knownTotalMXN,59178);
   assert.equal(trip.expenses.filter(x=>x.category==='flight').length,2);
   assert.equal(trip.expenses.filter(x=>x.category==='lodging').reduce((a,x)=>a+x.cost.amount,0),27700);
-  assert.equal(trip.expenses.reduce((a,x)=>a+x.cost.amount,0),60135);
-  assert.ok(trip.expenses.some(x=>x.id==='luggage-allowance'&&x.cost.amount===1600));
+  assert.equal(trip.expenses.reduce((a,x)=>a+x.cost.amount,0),58482);
+  assert.ok(!trip.expenses.some(x=>x.id==='luggage-allowance'));
+  assert.equal(trip.majorTransport[0].options[0].journeys[1].segments[1].flightNumber,'CM 188');
+  assert.match(trip.majorTransport[0].options[0].journeys[1].segments[1].arrival,/22:05/);
+  assert.equal(trip.majorTransport[0].options[0].links.length,0,'Enlace obsoleto de CM866 no debe seguir enlazado desde A');
   const backup=budget.planningEstimate({...trip,majorTransport:trip.majorTransport.map(t=>t.id==='flight-international'?{...t,selectedOption:'B'}:t)});
-  assert.equal(backup.totalMXN,60778);
+  assert.equal(backup.totalMXN,59178);
   assert.equal(trip.hotels[0].checkIn,'2027-01-15');
   assert.equal(trip.hotels[0].checkOut,'2027-01-18');
-  assert.equal(trip.majorTransport[0].options[0].fares[0].price.amount,9076);
+  assert.equal(trip.majorTransport[0].options[0].fares[0].price.amount,9023);
   assert.equal(trip.majorTransport[0].options[1].fares[0].price.amount,9719);
   const [primary, backupOption] = trip.majorTransport[0].options;
-  for (const [option, flightNumbers] of [[primary,['MTQ5','Mzk3']],[backupOption,['MTk1','NjU0']]]) {
+  for (const [option, flightNumbers] of [[backupOption,['MTk1','NjU0']]]) {
     assert.equal(option.links?.length,1);
     const bookingLink=option.links[0].url;
     assert.ok(bookingLink.startsWith('https://www.google.com/travel/flights/booking?tfs='));
