@@ -1158,7 +1158,7 @@
       "status": "Candidato seleccionado · no reservado",
       "rate": "Booking 06/11/2026: $4,768 MXN por 3 noches (15–18/01/2027), 1 adulto, Doble Estándar 16 m², cama Queen. Incluye cargos anunciados; cobro en COP sujeto a tipo de cambio y posibles impuestos adicionales.",
       "rateConditions": "Tarifa flexible: cancelación gratuita hasta el 12 de enero de 2027; pago al alojamiento antes de llegar. Aire acondicionado, baño privado, insonorización anunciada, TV y Wi-Fi. Desayuno no incluido (opción anunciada MXN 231, confirmar unidad); comprobar cargos fiscales y condiciones al reservar.",
-      "notes": "Preferido por ubicación en Manila y comentarios de comodidad; solicitar habitación tranquila, alejada de la calle y de posibles ruidos de rooftop. Confirmar cortinas opacas, consigna de equipaje antes del check-in (15:00), y la tarifa en COP. Sin pagar ni reservar.",
+      "notes": "Seleccionado por ubicación en Manila y comentarios de comodidad; solicitar habitación tranquila, alejada de la calle y de posibles ruidos de rooftop. Confirmar cortinas opacas, consigna antes del check-in (15:00) y tarifa final en COP. Otras buenas opciones, según capturas Booking 06/11/2026 para 1 adulto y 3 noches (15–18/01/2027), tarifas flexibles, sin reservar: Casa Victoria ($3,614 MXN, desayuno aparte), Altus Hotel ($3,338.83 MXN, desayuno incluido), Blues Suites Laureles ($3,174 MXN, desayuno incluido). Altus y Blues presentan alertas de ruido nocturno; Casa Victoria reporta tráfico y ruidos entre habitaciones. Estas alternativas NO se agregan al presupuesto ni representan reservas.",
       "links": [
         {
           "label": "Moabi Hotel · web oficial",
@@ -1167,6 +1167,18 @@
         {
           "label": "Moabi · Booking 15–18 ene., 1 adulto",
           "url": "https://www.booking.com/hotel/co/moabi.es-mx.html?checkin=2027-01-15&checkout=2027-01-18&group_adults=1&group_children=0&no_rooms=1"
+        },
+        {
+          "label": "Casa Victoria · Booking (otra buena opción)",
+          "url": "https://www.booking.com/hotel/co/casa-victoria-medellin1.es-mx.html?checkin=2027-01-15&checkout=2027-01-18&group_adults=1&no_rooms=1"
+        },
+        {
+          "label": "Altus Hotel · Booking (otra buena opción)",
+          "url": "https://www.booking.com/hotel/co/altus.es-mx.html?checkin=2027-01-15&checkout=2027-01-18&group_adults=1&no_rooms=1"
+        },
+        {
+          "label": "Blues Suites Laureles · Booking (otra buena opción)",
+          "url": "https://www.booking.com/hotel/co/blues-suites-laureles.es-mx.html?checkin=2027-01-15&checkout=2027-01-18&group_adults=1&no_rooms=1"
         }
       ],
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Moabi%20Hotel%20Carrera%2043B%2012-147%20Medellin"
