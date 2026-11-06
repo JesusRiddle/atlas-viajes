@@ -402,8 +402,8 @@ window.AtlasTrip = function (ctx) {
     function mountHeroSlideshow(trip) {
         const frame = typeof main.querySelector === 'function' ? main.querySelector('.triphero-split-photo') : null;
         if (!frame || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return () => {};
-        const sources = [...new Set([trip.cover, ...(trip.days || []).flatMap(day => day.places || [])]
-            .map(key => photos[key]?.src).filter(Boolean))];
+        const keys = trip.coverSlides?.length ? trip.coverSlides : [trip.cover, ...(trip.days || []).flatMap(day => day.places || [])];
+        const sources = [...new Set(keys.map(key => photos[key]?.src).filter(Boolean))];
         if (sources.length < 2) return () => {};
         const base = frame.querySelector('img');
         if (!base) return () => {};
