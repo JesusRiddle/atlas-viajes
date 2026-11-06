@@ -92,9 +92,9 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   const places=JSON.parse(fs.readFileSync('data/places.json','utf8'));
   assert.ok(places[trip.cover]?.photo?.src.startsWith('https://'));
   assert.equal(trip.mapPoints.length,7);
-  assert.equal(trip.intro.split(/\\s+/).length>=70,true);
+  assert.equal(trip.intro.split(/\s+/).length>=70,true);
   assert.equal(trip.introHighlights.every(name=>trip.intro.includes(name)),true);
-  assert.doesNotMatch(trip.introShort,/\\b\\d+ noches|cotizar|reservar/i);
+  assert.doesNotMatch(trip.introShort,/\b\d+ noches|cotizar|reservar/i);
   assert.match(trip.practicalIndicators.find(x=>x.id==='entry').text,/no necesitas adaptador/);
   assert.match(trip.reservations.flatMap(g=>g[1]).find(x=>/Tours prioritarios/.test(x.title)).links[1].url,/fincalavictoria1892/);
   assert.deepEqual(trip.mapPoints.map(x=>x.order),[1,2,3,4,5,6,7]);
