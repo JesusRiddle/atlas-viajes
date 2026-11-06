@@ -117,7 +117,7 @@
       "transportRefs": [
         "flight-international"
       ],
-      "hotel": "med-landmark",
+      "hotel": "med-moabi",
       "mobilityLinks": [
         {
           "label": "Copa Airlines · vuelo y equipaje",
@@ -154,7 +154,7 @@
       ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "med-landmark",
+      "hotel": "med-moabi",
       "mobilityLinks": [
         {
           "label": "Tour organizado Guatapé · operador y inclusiones",
@@ -184,7 +184,7 @@
       ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "med-landmark",
+      "hotel": "med-moabi",
       "mobilityLinks": [
         {
           "label": "Comuna 13 · mapa de encuentro",
@@ -473,11 +473,15 @@
       [
         {
           "title": "Hoteles urbanos · 15–18, 18–21 y 23–26 de enero",
-          "description": "Sin reservar. Cotizar Landmark (Medellín, 3 noches), Casa de Isabella (Santa Marta, 3 noches) y Casa La Fe (Cartagena, 3 noches) para 1 adulto. Comparar precio total con impuestos, habitación y baño privados, ruido, desayuno, cancelación y horarios de llegada. Confirmar que las recogidas de tours y traslados sean compatibles con cada dirección.",
+          "description": "Sin reservar. Moabi Hotel es el candidato elegido para Medellín del 15 al 18 de enero (3 noches, 1 adulto, Doble Estándar; $4,768 MXN según Booking 06/11/2026, cancelación gratuita hasta 12/01). Casa de Isabella y Casa La Fe siguen candidatos estimados para Santa Marta y Cartagena. Confirmar precio definitivo en COP, impuestos, desayuno opcional, habitación silenciosa y consigna de equipaje.",
           "links": [
             {
-              "label": "Landmark Hotel · Medellín",
-              "url": "https://landmarkmedellin.com/"
+              "label": "Moabi Hotel · sitio oficial",
+              "url": "https://moabihotel.com/"
+            },
+            {
+              "label": "Moabi Hotel · Booking 15–18 enero",
+              "url": "https://www.booking.com/hotel/co/moabi.es-mx.html?checkin=2027-01-15&checkout=2027-01-18&group_adults=1&no_rooms=1"
             },
             {
               "label": "Casa de Isabella · Santa Marta",
@@ -542,35 +546,39 @@
     ]
   ],
   "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar.",
-  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Manila, El Poblado), Santa Marta 3 (Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (San Diego). Hoteles candidatos sin reservar.",
+  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (San Diego). Hoteles candidatos sin reservar.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
-    "low": 52400,
-    "high": 69400,
+    "low": 50168,
+    "high": 67168,
     "marginMXN": 0,
     "useBudgetRange": true,
     "referenceFlightMXN": 9023,
-    "notes": "Presupuesto integral de planeación para una persona, 12 días y 11 noches. Opción Copa A actualizada $9,023, vuelos y alojamiento no comprados; Copa B $9,719 permanece exclusivamente como respaldo. Equipaje únicamente de mano, SIN provisión por maleta documentada. Hoteles y traslados son metas basadas en referencias de otras fechas, no tarifas contratadas. Rango de sensibilidad por hotelería, tours y transporte."
+    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa A $9,023 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Los otros tres hoteles y servicios mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado."
   },
   "hotels": [
     {
-      "id": "med-landmark",
+      "id": "med-moabi",
       "city": "Medellín",
-      "name": "Landmark Hotel",
-      "address": "Calle 14 #43D-85, Manila, El Poblado, Medellín, Colombia",
+      "name": "Moabi Hotel",
+      "address": "Carrera 43B #12-147, Manila, El Poblado, Medellín, Colombia",
       "checkIn": "2027-01-15",
       "checkOut": "2027-01-18",
-      "status": "Candidato · no reservado",
-      "rate": "Provisión: $7,000 MXN por 3 noches, 15–18 enero. Referencias Booking de otras fechas $6,165–$8,090 MXN/3 noches; NO cotización para enero 2027.",
-      "rateConditions": "1 adulto, habitación privada con baño propio, ventana o balcón, aislamiento acústico y cancelación flexible; confirmar desayuno, impuestos y disponibilidad de guarda de equipaje previo al check-in el 15 de enero.",
-      "notes": "Favorito por confort e instalaciones; alternativa 574 Hotel.",
+      "status": "Candidato seleccionado · no reservado",
+      "rate": "Booking 06/11/2026: $4,768 MXN por 3 noches (15–18/01/2027), 1 adulto, Doble Estándar 16 m², cama Queen. Incluye cargos anunciados; cobro en COP sujeto a tipo de cambio y posibles impuestos adicionales.",
+      "rateConditions": "Tarifa flexible: cancelación gratuita hasta el 12 de enero de 2027; pago al alojamiento antes de llegar. Aire acondicionado, baño privado, insonorización anunciada, TV y Wi-Fi. Desayuno no incluido (opción anunciada MXN 231, confirmar unidad); comprobar cargos fiscales y condiciones al reservar.",
+      "notes": "Preferido por ubicación en Manila y comentarios de comodidad; solicitar habitación tranquila, alejada de la calle y de posibles ruidos de rooftop. Confirmar cortinas opacas, consigna de equipaje antes del check-in (15:00), y la tarifa en COP. Sin pagar ni reservar.",
       "links": [
         {
-          "label": "Landmark Hotel · sitio oficial",
-          "url": "https://landmarkmedellin.com/"
+          "label": "Moabi Hotel · web oficial",
+          "url": "https://moabihotel.com/"
+        },
+        {
+          "label": "Moabi · Booking 15–18 ene., 1 adulto",
+          "url": "https://www.booking.com/hotel/co/moabi.es-mx.html?checkin=2027-01-15&checkout=2027-01-18&group_adults=1&group_children=0&no_rooms=1"
         }
       ],
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Landmark%20Hotel%20Manila%20Medell%C3%ADn"
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Moabi%20Hotel%20Carrera%2043B%2012-147%20Medellin"
     },
     {
       "id": "sm-isabella",
@@ -755,10 +763,6 @@
       "url": "https://theratesapi.com/convert/cop-to-mxn/"
     },
     {
-      "label": "Landmark Hotel · tarifas comparativas de otras fechas (Booking)",
-      "url": "https://www.booking.com/hotel/co/landmark.es-mx.html"
-    },
-    {
       "label": "Casa de Isabella · tarifas comparativas de otras fechas (Booking)",
       "url": "https://www.booking.com/hotel/co/casa-de-isabella.es-mx.html"
     },
@@ -777,14 +781,22 @@
     {
       "label": "Café La Victoria 1892 · precio y horarios oficiales",
       "url": "https://www.fincalavictoria1892.com/"
+    },
+    {
+      "label": "Moabi Hotel · cotización Booking para 15–18 de enero 2027, 1 adulto (captura del viajero del 06/11/2026)",
+      "url": "https://www.booking.com/hotel/co/moabi.es-mx.html?checkin=2027-01-15&checkout=2027-01-18&group_adults=1&no_rooms=1"
+    },
+    {
+      "label": "Moabi Hotel · dirección oficial",
+      "url": "https://moabihotel.com/page/contacto"
     }
   ],
   "sourceNote": "Copa A $9,023 MXN actualizada según capturas del 06/11/2026: vuelos CM149+CM397 (ida) y CM365+CM188 (regreso 22:05). Copa B $9,719 MXN, respaldo, permanece con CM195+CM654/CM365+CM866 (regreso 22:25). Equipaje exclusivamente de mano; ninguna tarifa comprada. Avianca nacional COP 217,580 observada anteriormente. Hoteles son metas basadas en referencias de otras fechas.",
   "budgetRange": [
-    52400,
-    69400
+    50168,
+    67168
   ],
-  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $58,482 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Landmark Medellín 3 noches $7,000; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Casa La Fe Cartagena 3 noches $10,500; traslados terrestres y lancha $6,000; alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $58,482 MXN; rango orientativo $52,400–69,400 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Las cuatro tarifas hoteleras son estimaciones de otras fechas, no precios confirmados para el viaje.",
+  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $56,250 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Casa La Fe Cartagena 3 noches $10,500; traslados terrestres y lancha $6,000; alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $56,250 MXN; rango orientativo $50,168–67,168 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Solo Moabi cuenta con una cotización de Booking para las fechas exactas; las otras tres tarifas son estimaciones, no reservas. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos.",
   "placeDescriptions": {
     "col27-botero": "Plaza al aire libre con esculturas monumentales de Fernando Botero, donde el arte contemporáneo convive con la arquitectura del centro de Medellín.",
     "col27-provenza": "Calles arboladas, restaurantes y terrazas convierten este sector de El Poblado en un lugar animado para terminar la jornada.",
