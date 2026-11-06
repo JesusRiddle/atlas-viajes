@@ -1,5 +1,8 @@
 # Registro de avance · Colombia 2027
 
+> **Actualización vigente · 06/11/2026 — Medellín:** Se sustituyó el candidato Landmark por **Moabi Hotel** (Carrera 43B #12-147, Manila) para **15–18 enero 2027, 3 noches, 1 adulto**. Habitación Doble Estándar, cama Queen, 16 m², aire acondicionado, baño propio e insonorización anunciada. Cotización Booking en captura del viajero del 06/11: **$4,768 MXN** por las tres noches, tarifa con cancelación gratuita hasta 12/01/2027 y pago antes de llegar, **sin reservar**; desayuno adicional (MXN 231 anunciado; confirmar unidad), precio real en COP con posible IVA. Hotel vinculado a días 1–3, mapa y fuentes en JSON. Nuevo escenario central orientativo **$56,250 MXN** y rango **$50,168–67,168 MXN**, sustituyendo la provisión de $7,000 de Landmark por $4,768 de Moabi (ahorro $2,232 frente al presupuesto estimado anterior). Se mantiene sin modificación la alternativa pendiente de Cabo San Juan/Barranquilla. **Aún no autoriza merge.** Nota de QA: la versión anterior del JSON ya carecía de familias de datos (p. ej. expenses/mapPoints) que requieren reparación en auditoría de integración; no declarar CI verde sin comprobarlo. Las cifras históricas más abajo son bitácora y no sustituyen este estado vigente.
+
+
 ## Plan fotográfico por bloques · etapa 12 (noviembre de 2026)
 
 **Ejecución por zonas con revisión al final de cada bloque y confirmación del viajero antes de continuar.** Solamente URLs de fotos de Wikimedia Commons, sin descargar archivos ni alterar itinerario, vuelos o presupuesto.
