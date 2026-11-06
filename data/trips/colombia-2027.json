@@ -409,35 +409,45 @@
       "Prioridad muy alta",
       [
         {
-          "title": "Parque Tayrona · viernes 22 enero 2027",
-          "description": "SIN COMPRAR. El viernes 22/01 cae en temporada alta (1 dic–31 ene): acceso El Zaino publicado desde las 07:00 y salida hasta las 18:00. Tarifa oficial vigente para extranjero no residente ajeno a CAN: COP 96,500 (≈ $559 MXN) más seguro contra accidentes obligatorio, a reconfirmar para 2027. Verificar cierres extraordinarios, cupos, senderos y condiciones del mar.",
+          "title": "Vuelos internacionales y Medellín → Santa Marta · 15, 18 y 26 de enero",
+          "description": "Sin comprar. Comparar el precio final de Copa A ($9,023 MXN, opción principal) con B ($9,719 MXN, respaldo) para MEX → MDE / CTG → MEX; no sumar ambas. Mantener el vuelo directo candidato Avianca AV9446 del lunes 18 (12:00–13:15). Antes de pagar, validar equipaje de mano, conexiones, condiciones de cambios y compatibilidad con las noches de hotel.",
           "links": [
             {
-              "label": "Parques Nacionales · acceso, horarios, tarifas y seguro",
-              "url": "https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/"
-            }
-          ]
-        },
-        {
-          "title": "Vuelos Copa multidestino y Avianca interno",
-          "description": "NO COMPRADOS. Principal Copa A 15/01 MEX 01:20→MDE 10:55 (CM149+CM397), regreso 26/01 CTG 15:05→MEX 22:05 (CM365+CM188), $9,023 MXN multidestino. Respaldo B sale 05:55 y llega MDE 14:15; regresa por CM866 hasta MEX 22:25, $9,719 MXN. Una pieza de mano incluida, sin equipaje documentado. Confirmar medidas, peso, impuestos, cambios y reembolso. Avianca interno del 18 sigue sin cambios.",
-          "links": [
-            {
-              "label": "Copa Airlines",
+              "label": "Copa Airlines · vuelos y tarifas",
               "url": "https://www.copaair.com/"
             },
             {
-              "label": "Avianca",
+              "label": "Avianca · vuelos y equipaje",
               "url": "https://www.avianca.com/"
             }
           ]
         },
         {
-          "title": "Requisitos sanitarios y fiebre amarilla · antes del viaje",
-          "description": "Antes de salir de México (no durante el día de Tayrona), verificar recomendaciones oficiales para la Sierra Nevada y zonas próximas al parque. Consultar al profesional de salud sobre indicación, contraindicaciones y anticipación de la vacuna si corresponde. También comprobar restricciones migratorias y seguro; no afirmar obligatoriedad universal.",
+          "title": "Ecolodge junto a Tayrona · 21–23 de enero",
+          "description": "Sin reservar. Priorizar Senda Koguiwa y comparar Senda Watapuy y Villa María para 1 adulto, 2 noches. Confirmar baño privado, traslado a El Zaino, desayuno, impuestos y cancelación flexible ante cierres imprevistos del parque. Su disponibilidad condiciona las dos noches de naturaleza.",
           "links": [
             {
-              "label": "Ministerio de Salud de Colombia · viajeros",
+              "label": "Senda Hotels · alojamientos",
+              "url": "https://www.sendahotels.com/"
+            }
+          ]
+        },
+        {
+          "title": "Tayrona y seguro del visitante · viernes 22 de enero",
+          "description": "Entrada y seguro sin comprar. En Tayrona no hay reserva anticipada de cupo: la disponibilidad de boletos depende de la venta diaria en taquilla. En enero es temporada alta; la referencia publicada para extranjero no residente ajeno a CAN es COP 96,500 (≈ $559 MXN), más seguro obligatorio de accidentes con asistencia al visitante. El Zaino publica ingreso de 07:00 a 15:00 y salida hasta las 18:00. Reconﬁrmar apertura, tarifa 2027 y condiciones de acceso; si cierra, conservar el ecolodge para descanso y sustituir la caminata por una actividad permitida fuera del parque.",
+          "links": [
+            {
+              "label": "Parques Nacionales · Tayrona, acceso y seguro",
+              "url": "https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/"
+            }
+          ]
+        },
+        {
+          "title": "Salud y documentación · resolver antes de salir de México",
+          "description": "Preparativo indispensable, no reservación turística. Verificar requisitos migratorios vigentes, cobertura médica y recomendaciones de fiebre amarilla para los municipios y áreas naturales del recorrido. Revisar antecedentes de vacunación con un profesional sanitario y, si corresponde vacunarse, hacerlo con la anticipación recomendada; no suponer que la vacuna es obligatoria para toda Colombia.",
+          "links": [
+            {
+              "label": "MinSalud · orientaciones para viajeros",
               "url": "https://vacunacion.minsalud.gov.co/EV/Paginas/viajeros.aspx"
             }
           ]
@@ -448,671 +458,70 @@
       "Prioridad alta",
       [
         {
-          "title": "Ecolodge próximo a El Zaino · 21–23 enero",
-          "description": "SIN RESERVAR. Cotizar 1 adulto con baño privado, precio final, impuestos, desayunos y cancelación flexible. Preferencia Senda Koguiwa; contrastar Watapuy y Villa María.",
+          "title": "Hoteles urbanos · 15–18, 18–21 y 23–26 de enero",
+          "description": "Sin reservar. Cotizar Landmark (Medellín, 3 noches), Casa de Isabella (Santa Marta, 3 noches) y Casa La Fe (Cartagena, 3 noches) para 1 adulto. Comparar precio total con impuestos, habitación y baño privados, ruido, desayuno, cancelación y horarios de llegada. Confirmar que las recogidas de tours y traslados sean compatibles con cada dirección.",
           "links": [
             {
-              "label": "Senda Hotels",
-              "url": "https://www.sendahotels.com/"
+              "label": "Landmark Hotel · Medellín",
+              "url": "https://landmarkmedellin.com/"
+            },
+            {
+              "label": "Casa de Isabella · Santa Marta",
+              "url": "https://kalihotels.com/en/casa-isabella/"
+            },
+            {
+              "label": "Casa La Fe · Cartagena",
+              "url": "https://www.casalafe.com/"
             }
           ]
         },
         {
-          "title": "Traslado Tayrona → Cartagena · sábado 23 enero",
-          "description": "SIN RESERVAR. Comparar shuttle desde la entrada de El Zaino y transporte privado puerta a puerta desde ecolodge. Confirmar horarios 2027, punto de encuentro, equipaje y llegada al hotel.",
+          "title": "Traslado El Zaino → Cartagena · sábado 23 de enero",
+          "description": "Sin reservar. Comparar Marsol desde la parada de El Zaino con transporte privado directo desde el ecolodge. Confirmar que el servicio del 23/01/2027 realmente recoja en El Zaino, lugar exacto de embarque, equipaje, tiempo de trayecto, destino final y traslado posterior al hotel; no asumir recogida en el alojamiento.",
           "links": [
             {
-              "label": "Marsol · sitio oficial",
+              "label": "Marsol · rutas y reservaciones",
               "url": "https://www.marsol.com.co/"
             }
           ]
         },
         {
-          "title": "Tours prioritarios: Guatapé y Comuna 13; café en Minca",
-          "description": "SIN RESERVAR. Guatapé sábado 16 con tour de día completo, cotización de referencia COP 129,999 (≈ $752 MXN), entrada a Piedra no incluida (referencia COP 35,000 ≈ $203 MXN). Comuna 13 guiada domingo 17. Café en Finca La Victoria Minca martes 19, tour oficial COP 40,000 (≈ $232 MXN), con regreso diurno. Plaza Botero y Parque de Bolívar viernes 15 si el vuelo A llega conforme al horario.",
+          "title": "Guatapé y Piedra del Peñol · sábado 16 de enero",
+          "description": "Tour guiado de día completo sin reservar. Confirmar punto de salida, duración, idioma, alimentos y transporte de regreso. Referencia previa: COP 129,999 (≈ $752 MXN) por el tour; la subida a Piedra del Peñol se cobraba aparte (COP 35,000, ≈ $203 MXN). Revalidar precios e inclusiones antes de pagar.",
           "links": [
             {
-              "label": "Guatapé · tour de día completo y condiciones",
+              "label": "Tour Guatapé · operador de referencia",
               "url": "https://toursguatape.com/en/producto/full-day-guatape/"
-            },
-            {
-              "label": "Café La Victoria · finca Minca y horarios",
-              "url": "https://www.fincalavictoria1892.com/"
             }
           ]
         },
         {
-          "title": "Hoteles urbanos de Medellín, Santa Marta y Cartagena",
-          "description": "SIN RESERVAR. Elegir habitación individual privada con baño propio y ruido mínimo. Confirmar horarios de check-in, políticas de cancelación, impuestos, desayuno y ubicación de recogida exacta. Medellín 15–18 de enero (3 noches); las otras ciudades conservan sus fechas. Cotizar hoteles con esas fechas y comprobar impuestos, cancelación y ubicación para recogidas.",
+          "title": "Comuna 13 y café en Minca · 17 y 19 de enero",
+          "description": "Sin reservar. Elegir una visita guiada de Comuna 13 el domingo 17, preferiblemente temprano para conservar tiempo para Pueblito Paisa. Para el martes 19, confirmar visita cafetera en Finca La Victoria (referencia COP 40,000, ≈ $232 MXN), acceso y regreso diurno desde Minca; cascadas de Marinka solo si el horario lo permite.",
           "links": [
             {
-              "label": "Landmark Hotel",
-              "url": "https://landmarkmedellin.com/"
-            },
-            {
-              "label": "Casa de Isabella · Kali Hotels",
-              "url": "https://kalihotels.com/en/casa-isabella/"
-            },
-            {
-              "label": "Casa La Fe",
-              "url": "https://www.casalafe.com/"
+              "label": "Finca La Victoria · café y visitas",
+              "url": "https://www.fincalavictoria1892.com/"
             }
           ]
         }
       ]
     ],
     [
-      "Opcionales",
+      "Planificación flexible",
       [
         {
-          "title": "Minca · finca cafetera y cascadas de Marinka",
-          "description": "Finca La Victoria: tour del café de unos 50 minutos, todos los días en su horario anunciado, COP 40,000 (≈ $232 MXN). Antes de viajar confirmar acceso y precio vigente; Marinka depende de rutas y transportistas.",
-          "links": [
-            {
-              "label": "Finca La Victoria 1892 · web oficial",
-              "url": "https://www.fincalavictoria1892.com/"
-            }
-          ]
-        },
-        {
-          "title": "Taganga → Playa Grande",
-          "description": "Visita de medio día sujeta al estado del mar. Utilizar solamente lancha autorizada y chaleco salvavidas; NO caminar por el sendero por reportes de robos.",
+          "title": "Taganga y Playa Grande · miércoles 20 de enero",
+          "description": "Salida de medio día sin contratar. Decidir según viento y oleaje; acordar en el lugar la lancha autorizada, tarifa y hora de regreso, con chaleco salvavidas. Evitar el sendero peatonal Taganga–Playa Grande por reportes de robos. Si el mar no es seguro, permanecer en Taganga y volver a Santa Marta de día.",
           "links": []
         },
         {
-          "title": "Islas del Rosario · Cartagena",
-          "description": "No reservar automáticamente: el día 25 se prefiere Cartagena sin prisas; elegir pasadía solo si el clima y ganas lo justifican.",
+          "title": "Cartagena · lunes 25 de enero",
+          "description": "Mantener libre el día para descanso, piscina o recorrido histórico. Un pasadía a Islas del Rosario es opcional y solo se considera si el clima, la logística y el costo justifican otra excursión después de Tayrona. No comprarlo por anticipado sin decidirlo.",
           "links": []
         }
       ]
     ]
-  ],
-  "exchangeRates": {
-    "COP": 0.00578764
-  },
-  "exchangeRateSnapshot": {
-    "date": "2026-11-03",
-    "baseCurrency": "MXN",
-    "description": "Pesos mexicanos por un peso colombiano (COP), tipo de cambio de referencia 3/11/2026 calculado a partir del BCE/Banca d'Italia; no equivale al precio de compra con tarjeta.",
-    "sources": {
-      "COP": "https://theratesapi.com/convert/cop-to-mxn/"
-    }
-  },
-  "expenses": [
-    {
-      "id": "air-copa",
-      "category": "flight",
-      "concept": "Copa Airlines · multidestino, opción A principal",
-      "date": "2027-01-15",
-      "cost": {
-        "amount": 9023,
-        "currency": "MXN"
-      },
-      "status": "quoted",
-      "notes": "Cotización Google Flights actualizada el 06/11/2026: Copa A multidestino $9,023, ida MEX–PTY–MDE 15/01 (CM149 + CM397) y regreso CTG–PTY–MEX 26/01 (CM365 + CM188), llegada 22:05. Una pieza de equipaje de mano incluida, sin equipaje documentado previsto. La opción B de $9,719 es respaldo y no entra en el presupuesto principal. Sin compra."
-    },
-    {
-      "id": "air-avianca",
-      "category": "flight",
-      "concept": "Avianca · vuelo interno MDE–SMR",
-      "date": "2027-01-18",
-      "cost": {
-        "amount": 1259,
-        "currency": "MXN"
-      },
-      "status": "quoted",
-      "notes": "Avianca Classic MDE–SMR, 18/01, tarifa candidata original COP 217,580 (≈ $1,259 MXN al cambio 03/11/2026). Incluye prestaciones de la captura original por reconfirmar, no comprado."
-    },
-    {
-      "id": "hotel-med",
-      "category": "lodging",
-      "concept": "Landmark Hotel, Medellín · 3 noches",
-      "date": "2027-01-15",
-      "cost": {
-        "amount": 7000,
-        "currency": "MXN"
-      },
-      "status": "estimated",
-      "notes": "Provisión para Landmark Hotel del 15 al 18 enero (3 noches, 1 adulto), no cotización específica. Referencia de precios publicados de Booking para otras fechas: aproximadamente $6,165–$8,090 MXN por tres noches con condiciones cambiantes; reservar solo tras verificar tarifa total.",
-      "nights": 3,
-      "hotelId": "med-landmark"
-    },
-    {
-      "id": "hotel-santa",
-      "category": "lodging",
-      "concept": "Casa de Isabella, Santa Marta · 3 noches",
-      "date": "2027-01-18",
-      "cost": {
-        "amount": 5000,
-        "currency": "MXN"
-      },
-      "status": "estimated",
-      "notes": "Provisión para Casa de Isabella (Kali Hotels) del 18 al 21 de enero, sin cotización fechada. Referencias de otras fechas muestran aproximadamente $4,467–$5,000 MXN por 3 noches; impuestos, desayuno y cancelación se validarán.",
-      "nights": 3,
-      "hotelId": "sm-isabella"
-    },
-    {
-      "id": "hotel-tayrona",
-      "category": "lodging",
-      "concept": "Senda Koguiwa, Tayrona · 2 noches",
-      "date": "2027-01-21",
-      "cost": {
-        "amount": 5200,
-        "currency": "MXN"
-      },
-      "status": "estimated",
-      "notes": "Provisión para Senda Koguiwa, 21–23 enero, dos noches. El hotel publica tarifa estándar desde COP 400,000 (≈ $2,315 MXN) por noche en temporada alta, con precio efectivo, tasas y cancelación por confirmar. No incluye parque.",
-      "nights": 2,
-      "hotelId": "tay-koguiwa"
-    },
-    {
-      "id": "hotel-cartagena",
-      "category": "lodging",
-      "concept": "Casa La Fe, Cartagena · 3 noches",
-      "date": "2027-01-23",
-      "cost": {
-        "amount": 10500,
-        "currency": "MXN"
-      },
-      "status": "estimated",
-      "notes": "Provisión para Casa La Fe, San Diego, 23–26 enero (3 noches), sin cotización para esas fechas. Referencias de Booking en otras fechas muestran promociones de alrededor de $9,871–$11,517 MXN por 3 noches; confirmar impuestos, condiciones y precio pagable.",
-      "nights": 3,
-      "hotelId": "ct-lafe"
-    },
-    {
-      "id": "ground-mobility",
-      "category": "transport",
-      "concept": "Traslados urbanos, aeroportuarios y entre ciudades",
-      "cost": {
-        "amount": 6000,
-        "currency": "MXN"
-      },
-      "status": "estimated",
-      "notes": "Provisión total para transferencias aeropuerto MDE y SMR, taxis urbanos, Minca, Taganga y lancha a Playa Grande, traslado Santa Marta→El Zaino, bus/traslado El Zaino→Cartagena y aeropuerto CTG. Tour Guatapé con transporte se registra en actividades y NO se duplica aquí."
-    },
-    {
-      "id": "food-budget",
-      "category": "food",
-      "concept": "Alimentación y gastronomía · 12 días",
-      "cost": {
-        "amount": 6000,
-        "currency": "MXN"
-      },
-      "status": "estimated",
-      "notes": "Meta de $500 MXN diarios promedio durante 12 días, con desayunos que puedan venir incluidos en hospedaje o tours y un margen para comidas caribeñas; no supone precios confirmados ni duplicación de comidas incluidas en Guatapé."
-    },
-    {
-      "id": "activity-budget",
-      "category": "activities",
-      "concept": "Tours de Guatapé, café, Tayrona y entradas",
-      "cost": {
-        "amount": 5000,
-        "currency": "MXN"
-      },
-      "status": "estimated",
-      "notes": "Provisión para Guatapé organizado (referencia COP 129,999 ≈ $752 MXN, sin ascenso), Piedra del Peñol (referencia COP 35,000 ≈ $203 MXN), Comuna 13 guiada, finca La Victoria (COP 40,000 ≈ $232 MXN), Marinka, Tayrona (extranjero temporada alta 2026 COP 96,500 ≈ $559 MXN más seguro de asistencia), otras entradas y actividades. Tarifas 2027 y cupos por confirmar; no incluye islas opcionales."
-    },
-    {
-      "id": "other-budget",
-      "category": "other",
-      "concept": "Seguro de viaje y contingencias",
-      "cost": {
-        "amount": 3500,
-        "currency": "MXN"
-      },
-      "status": "estimated",
-      "notes": "Seguro médico de viaje y fondo de contingencia para imprevistos menores. El seguro específico de acceso a Tayrona se considera en actividades; no cubrir situaciones médicas catastróficas con este saldo."
-    }
-  ],
-  "majorTransport": [
-    {
-      "id": "flight-international",
-      "type": "flight",
-      "title": "Copa Airlines · vuelos internacionales multidestino",
-      "day": null,
-      "selectedOption": "A",
-      "budgetIncludedIn": "air-copa",
-      "options": [
-        {
-          "id": "A",
-          "provider": "Copa Airlines",
-          "status": "planning",
-          "selectedFare": "candidate",
-          "journeys": [
-            {
-              "direction": "outbound",
-              "segments": [
-                {
-                  "from": "MEX",
-                  "to": "PTY",
-                  "departure": "2027-01-15T01:20:00-06:00",
-                  "arrival": "2027-01-15T06:00:00-05:00",
-                  "operator": "Copa Airlines",
-                  "flightNumber": "CM 149",
-                  "aircraft": "Boeing 737",
-                  "co2kg": 204
-                },
-                {
-                  "from": "PTY",
-                  "to": "MDE",
-                  "departure": "2027-01-15T09:32:00-05:00",
-                  "arrival": "2027-01-15T10:55:00-05:00",
-                  "operator": "Copa Airlines",
-                  "flightNumber": "CM 397",
-                  "aircraft": "Boeing 737 MAX 9",
-                  "co2kg": 59
-                }
-              ]
-            },
-            {
-              "direction": "return",
-              "segments": [
-                {
-                  "from": "CTG",
-                  "to": "PTY",
-                  "departure": "2027-01-26T15:05:00-05:00",
-                  "arrival": "2027-01-26T16:22:00-05:00",
-                  "operator": "Copa Airlines",
-                  "flightNumber": "CM 365",
-                  "aircraft": "Boeing 737",
-                  "co2kg": 65
-                },
-                {
-                  "from": "PTY",
-                  "to": "MEX",
-                  "departure": "2027-01-26T19:17:00-05:00",
-                  "arrival": "2027-01-26T22:05:00-06:00",
-                  "operator": "Copa Airlines",
-                  "flightNumber": "CM 188",
-                  "aircraft": "Boeing 737",
-                  "co2kg": 208
-                }
-              ]
-            }
-          ],
-          "fares": [
-            {
-              "id": "candidate",
-              "name": "Turista · precio multidestino observado, sin reservar",
-              "price": {
-                "amount": 9023,
-                "currency": "MXN"
-              },
-              "baggage": {
-                "personalItem": null,
-                "cabin": {
-                  "pieces": 1,
-                  "weightKg": null
-                },
-                "checked": {
-                  "pieces": 0,
-                  "weightKg": null
-                }
-              },
-              "changes": "Política específica de cambios por confirmar al reservar; la captura no la detalla.",
-              "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
-            }
-          ],
-          "notes": "PRINCIPAL · Ida 15/01: CM149 MEX 01:20→PTY 06:00 (3 h 40 min), conexión 3 h 32 min; CM397 PTY 09:32→MDE 10:55 (1 h 23 min). Regreso 26/01: CM365 CTG 15:05→PTY 16:22 (1 h 17 min), escala 2 h 55 min; CM188 PTY 19:17→MEX 22:05 (3 h 48 min). Aeronaves Boeing 737 y 737 MAX 9. Emisiones estimadas 263 kg CO₂e en la ida y 273 en el regreso. Precio multidestino total observado $9,023 MXN, incluye tasas obligatorias y una pieza de mano. Sin equipaje documentado ni reservas. Cambios y cancelación sujetos a tarifa efectiva. Enlace actualizado a CM188 facilitado por el viajero. La URL puede perder disponibilidad o modificar precios, no es una reserva.",
-          "links": [
-            {
-              "label": "Ver selección principal Copa A · CM149/CM397 y CM365/CM188 · Google Flights",
-              "url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpnEgoyMDI3LTAxLTE1Ih8KA01FWBIKMjAyNy0wMS0xNRoDUFRZKgJDTTIDMTQ5Ih8KA1BUWRIKMjAyNy0wMS0xNRoDTURFKgJDTTIDMzk3KAFqDAgCEggvbS8wNHNxanIHCAESA01ERRpnEgoyMDI3LTAxLTI2Ih8KA0NURxIKMjAyNy0wMS0yNhoDUFRZKgJDTTIDMzY1Ih8KA1BUWRIKMjAyNy0wMS0yNhoDTUVYKgJDTTIDMTg4KAFqBwgBEgNDVEdyDAgCEggvbS8wNHNxakABSAFwAYIBCwj___________8BmAED&tfu=CnhDalJJUzJKd0xXWnRVbTB3VUVGQlEzbHhhR2RDUnkwdExTMHRMUzB0TFMwdGIzbDRPVUZCUVVGQlIzSjBaRmRuUXpGRGVYTkJFZzFEVFRNMk5YeERUVEU0T0NNeEdnc0ltSWszRUFJYUEwMVlUamdjY05UM0FnPT0SAggAIgA&hl=es-419&gl=MX"
-            }
-          ]
-        },
-        {
-          "id": "B",
-          "provider": "Copa Airlines",
-          "status": "planning",
-          "selectedFare": "candidate",
-          "journeys": [
-            {
-              "direction": "outbound",
-              "segments": [
-                {
-                  "from": "MEX",
-                  "to": "PTY",
-                  "departure": "2027-01-15T05:55:00-06:00",
-                  "arrival": "2027-01-15T10:38:00-05:00",
-                  "operator": "Copa Airlines",
-                  "flightNumber": "CM 195",
-                  "aircraft": "Boeing 737",
-                  "co2kg": 204
-                },
-                {
-                  "from": "PTY",
-                  "to": "MDE",
-                  "departure": "2027-01-15T12:55:00-05:00",
-                  "arrival": "2027-01-15T14:15:00-05:00",
-                  "operator": "Copa Airlines",
-                  "flightNumber": "CM 654",
-                  "aircraft": "Boeing 737",
-                  "co2kg": 68
-                }
-              ]
-            },
-            {
-              "direction": "return",
-              "segments": [
-                {
-                  "from": "CTG",
-                  "to": "PTY",
-                  "departure": "2027-01-26T15:05:00-05:00",
-                  "arrival": "2027-01-26T16:22:00-05:00",
-                  "operator": "Copa Airlines",
-                  "flightNumber": "CM 365",
-                  "aircraft": "Boeing 737",
-                  "co2kg": 65
-                },
-                {
-                  "from": "PTY",
-                  "to": "MEX",
-                  "departure": "2027-01-26T19:34:00-05:00",
-                  "arrival": "2027-01-26T22:25:00-06:00",
-                  "operator": "Copa Airlines",
-                  "flightNumber": "CM 866",
-                  "aircraft": "Boeing 737",
-                  "co2kg": 215
-                }
-              ]
-            }
-          ],
-          "fares": [
-            {
-              "id": "candidate",
-              "name": "Turista · precio multidestino observado, sin reservar",
-              "price": {
-                "amount": 9719,
-                "currency": "MXN"
-              },
-              "baggage": {
-                "personalItem": null,
-                "cabin": {
-                  "pieces": 1,
-                  "weightKg": null
-                },
-                "checked": {
-                  "pieces": 0,
-                  "weightKg": null
-                }
-              },
-              "changes": "Política específica de cambios por confirmar al reservar; la captura no la detalla.",
-              "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
-            }
-          ],
-          "notes": "RESPALDO · Ida 15/01: CM195 MEX 05:55→PTY 10:38, vuelo 3 h 43 min; escala 2 h 17 min; CM654 PTY 12:55→MDE 14:15, vuelo 1 h 20 min. Total ida 8 h 20 min. Boeing 737 en ambos tramos. Estimación de emisiones de ida 272 kg CO₂e, retorno 280 kg CO₂e. Llegada más tarde; las plazas pueden trasladarse al domingo. Regreso de RESPALDO B: CM365 CTG 15:05→PTY 16:22; escala 3 h 12 min; CM866 PTY 19:34→MEX 22:25. La opción B aún conserva la cotización original ($9,719), diferente del regreso de A actualizado. Los impuestos obligatorios están incluidos para 1 adulto. Una pieza de mano gratis; primera documentada tiene costo adicional no publicado, sin peso confirmado. La captura no precisa el artículo personal ni condiciones de cambios/reembolsos. Enlace de Google Flights guardado como referencia temporal de selección: puede cambiar precio, disponibilidad, redirigir o caducar; usar números de vuelo y fechas si falla. No equivale a reservación.",
-          "links": [
-            {
-              "label": "Abrir selección exacta en Google Flights · respaldo",
-              "url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpnEgoyMDI3LTAxLTE1Ih8KA01FWBIKMjAyNy0wMS0xNRoDUFRZKgJDTTIDMTk1Ih8KA1BUWRIKMjAyNy0wMS0xNRoDTURFKgJDTTIDNjU0KAFqDAgCEggvbS8wNHNxanIHCAESA01ERRpnEgoyMDI3LTAxLTI2Ih8KA0NURxIKMjAyNy0wMS0yNhoDUFRZKgJDTTIDMzY1Ih8KA1BUWRIKMjAyNy0wMS0yNhoDTUVYKgJDTTIDODY2KAFqBwgBEgNDVEdyDAgCEggvbS8wNHNxakABSAFwAYIBCwj___________8BmAED&tfu=CnhDalJJWDA5cVVsZE5kV1ZmUTNkQlJHZzNNMmRDUnkwdExTMHRMUzB0TFc5NVkycHRPRUZCUVVGQlIzSjBZVEJuUm5oSWJVdEJFZzFEVFRNMk5YeERUVGcyTmlNeEdnc0k3cWc3RUFJYUEwMVlUamdjY1BHVUF3PT0SAggAIgA&hl=es-419&gl=MX"
-            }
-          ]
-        }
-      ],
-      "links": [
-        {
-          "label": "Web oficial del operador",
-          "url": "https://www.copaair.com/"
-        }
-      ],
-      "boardingLocations": [
-        {
-          "name": "Aeropuerto Internacional Benito Juárez (MEX)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Internacional%20Benito%20Ju%C3%A1rez%20Ciudad%20de%20M%C3%A9xico"
-        },
-        {
-          "name": "Aeropuerto Internacional de Tocumen (PTY)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Tocumen%20Panama"
-        },
-        {
-          "name": "Aeropuerto José María Córdova (MDE)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Jos%C3%A9%20Mar%C3%ADa%20C%C3%B3rdova%20Medell%C3%ADn"
-        },
-        {
-          "name": "Aeropuerto Internacional Rafael Núñez (CTG)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Rafael%20N%C3%BA%C3%B1ez%20Cartagena"
-        }
-      ],
-      "boardingNote": "Opción A: salida MEX 01:20 del viernes (presentarse desde la noche del jueves); regreso a MEX martes 26 a las 22:05. Opción B de respaldo: salida MEX 05:55 del viernes, regreso a MEX 22:25. No reservadas.",
-      "ticketGuide": "Copa A principal: ida 15/01 CM149 + CM397, regreso 26/01 CM365 + CM188; multidestino observado $9,023. Copa B respaldo: ida CM195 + CM654, regreso CM365 + CM866; observado $9,719. Link actualizado de A corresponde a CM188 y está registrado; puede cambiar disponibilidad y precio. Viajar solo con equipaje de mano; verificar peso y medidas permitidas, artículo personal, tasas, política de cambios y precio final en Copa/Google Flights.",
-      "notes": "Candidatos observados en capturas de Google Flights el 06/11/2026. Principal Copa A $9,023 con regreso CM188 y llegada 22:05; respaldo Copa B $9,719 con regreso CM866 y llegada 22:25. Una pieza de equipaje de mano incluida, sin maleta documentada prevista. Confirmar tarifa, pesos/dimensiones, condiciones y disponibilidad al pagar."
-    },
-    {
-      "id": "flight-domestic",
-      "type": "flight",
-      "title": "Avianca AV 9446 · Medellín → Santa Marta",
-      "day": 4,
-      "selectedOption": "A",
-      "budgetIncludedIn": "air-avianca",
-      "options": [
-        {
-          "id": "A",
-          "provider": "Avianca",
-          "status": "planning",
-          "selectedFare": "candidate",
-          "journeys": [
-            {
-              "direction": "oneway",
-              "segments": [
-                {
-                  "from": "MDE",
-                  "to": "SMR",
-                  "departure": "2027-01-18T12:00:00-05:00",
-                  "arrival": "2027-01-18T13:15:00-05:00",
-                  "operator": "Avianca AV 9446"
-                }
-              ]
-            }
-          ],
-          "fares": [
-            {
-              "id": "candidate",
-              "name": "Tarifa candidata · no comprada",
-              "price": {
-                "amount": 217580,
-                "currency": "COP"
-              },
-              "changes": "Verificar condiciones antes del pago",
-              "refunds": "Verificar condiciones antes del pago"
-            }
-          ],
-          "notes": "Tarifa Avianca Classic observada 04/11/2026: COP 217,580 (≈ $1,259 MXN al tipo de cambio documentado 03/11/2026), cabina 10 kg y documentada 23 kg según oferta previa; no comprado. Verificar franquicias vigentes al pagar."
-        }
-      ],
-      "links": [
-        {
-          "label": "Web oficial del operador",
-          "url": "https://www.avianca.com/"
-        }
-      ],
-      "boardingLocations": [
-        {
-          "name": "Aeropuerto José María Córdova (MDE)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Jos%C3%A9%20Mar%C3%ADa%20C%C3%B3rdova%20Medell%C3%ADn"
-        },
-        {
-          "name": "Aeropuerto Simón Bolívar (SMR)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Sim%C3%B3n%20Bol%C3%ADvar%20Santa%20Marta"
-        }
-      ],
-      "boardingNote": "Horarios y terminales por reconfirmar antes de comprar.",
-      "ticketGuide": "No se han emitido billetes. Comparar tarifa de pago final, equipaje, cambios y reembolsos.",
-      "notes": "Precio observado como referencia de planeación; no añadir dos veces al presupuesto."
-    },
-    {
-      "id": "bus-tayrona-cartagena",
-      "type": "bus",
-      "title": "El Zaino → Cartagena · shuttle o traslado privado",
-      "day": 9,
-      "selectedOption": "A",
-      "budgetIncludedIn": "ground-mobility",
-      "options": [
-        {
-          "id": "A",
-          "provider": "Transportes Marsol",
-          "status": "planning",
-          "selectedFare": "pending",
-          "journeys": [
-            {
-              "direction": "oneway",
-              "segments": [
-                {
-                  "from": "Entrada El Zaino, Tayrona",
-                  "to": "Oficina Marsol, Cartagena",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Marsol · horario de servicio publicado 12:00 o 14:00, por confirmar en enero 2027"
-                }
-              ]
-            }
-          ],
-          "fares": [
-            {
-              "id": "pending",
-              "name": "Tarifa por cotizar para 23/01/2027",
-              "price": null,
-              "changes": "Consultar condiciones antes de reservar",
-              "refunds": "Consultar cancelaciones antes de reservar"
-            }
-          ],
-          "notes": "La empresa publica de forma general 12:00–18:00 y 14:00–20:00 (~6 h) y pasajes desde COP 130,000 (≈ $752 MXN con tipo de cambio del 03/11/2026). NO es oferta para el 23 de enero de 2027. Recogida en la entrada al parque (no en el hotel), llegada a la oficina de Cartagena; añadir traslado final al hotel."
-        },
-        {
-          "id": "B",
-          "provider": "Operador privado por seleccionar",
-          "status": "planning",
-          "selectedFare": "pending",
-          "journeys": [
-            {
-              "direction": "oneway",
-              "segments": [
-                {
-                  "from": "Ecolodge en sector El Zaino",
-                  "to": "Hotel en San Diego, Cartagena",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Vehículo privado por confirmar"
-                }
-              ]
-            }
-          ],
-          "fares": [
-            {
-              "id": "pending",
-              "name": "Cotización pendiente, puerta a puerta",
-              "price": null,
-              "changes": "Pendiente",
-              "refunds": "Pendiente"
-            }
-          ],
-          "notes": "Más cómodo si la diferencia de precio compensa el ahorro de esperas; confirmar vehículo, conductor, cobertura y duración antes de reservar."
-        }
-      ],
-      "links": [
-        {
-          "label": "Marsol · horario, punto de salida y compra oficial",
-          "url": "https://www.marsol.com.co/bus-santa-marta-entrada-al-parque-tayrona-cartagena"
-        }
-      ],
-      "boardingLocations": [
-        {
-          "name": "Entrada El Zaino, km 30 Troncal del Caribe",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Entrada%20El%20Zaino%20Parque%20Tayrona"
-        },
-        {
-          "name": "Oficina Marsol, carrera 2A #43-111, Cartagena",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Marsol%20Carrera%202A%2043-111%20Cartagena"
-        }
-      ],
-      "boardingNote": "Punto de salida general El Zaino, km 30; horario y lugar final sujetos a confirmación del operador para enero 2027.",
-      "ticketGuide": "Buscar plazas reales del sábado 23/01/2027; comparar tarifa total del shuttle más traslados de primera/última milla contra coche privado. No se ha comprado el servicio.",
-      "notes": "El importe no se suma por separado: es una posibilidad dentro de la provisión global de movilidad terrestre de $5,000 MXN."
-    }
-  ],
-  "ticketNotes": [],
-  "attractionTerms": [],
-  "cover": "col27-cabo-san-juan",
-  "mapPoints": [
-    {
-      "name": "Medellín",
-      "coords": [
-        6.23194,
-        -75.56806
-      ],
-      "kind": "Alojamiento",
-      "base": true,
-      "optional": false,
-      "order": 1
-    },
-    {
-      "name": "Guatapé",
-      "coords": [
-        6.23333,
-        -75.15833
-      ],
-      "kind": "Excursión",
-      "base": false,
-      "optional": false,
-      "order": 2
-    },
-    {
-      "name": "Santa Marta",
-      "coords": [
-        11.24722,
-        -74.20167
-      ],
-      "kind": "Alojamiento",
-      "base": true,
-      "optional": false,
-      "order": 3
-    },
-    {
-      "name": "Minca",
-      "coords": [
-        11.140833,
-        -74.12
-      ],
-      "kind": "Excursión",
-      "base": false,
-      "optional": false,
-      "order": 4
-    },
-    {
-      "name": "Taganga",
-      "coords": [
-        11.2684,
-        -74.1894
-      ],
-      "kind": "Excursión",
-      "base": false,
-      "optional": false,
-      "order": 5
-    },
-    {
-      "name": "Parque Tayrona · referencia regional",
-      "stayName": "Tayrona",
-      "coords": [
-        11.31,
-        -73.93
-      ],
-      "kind": "Parque / alojamiento cercano (no coordenada hotel)",
-      "base": true,
-      "optional": false,
-      "order": 6
-    },
-    {
-      "name": "Cartagena de Indias",
-      "stayName": "Cartagena",
-      "coords": [
-        10.4266,
-        -75.5442
-      ],
-      "kind": "Alojamiento",
-      "base": true,
-      "optional": false,
-      "order": 7
-    }
   ],
   "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar.",
   "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Manila, El Poblado), Santa Marta 3 (Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (San Diego). Hoteles candidatos sin reservar.",
