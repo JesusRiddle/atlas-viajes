@@ -1,5 +1,20 @@
 # Registro de avance · Colombia 2027
 
+## Auditoría transversal Moabi · 06/11/2026 (estado vigente)
+
+- Panorama: 12 días y 11 noches, un viajero. Moabi seleccionado para Medellín 15–18 enero, no reservado; Tayrona queda sin decidir.
+- Mapa: restaurados siete puntos con vínculos de noches Tayrona/Cartagena. Escenario provisional del ecolodge, no del camping.
+- Temporadas: doce meses y temperaturas intactos.
+- Experiencias: Museo de Antioquia, bicicleta Santa Marta y finca La Victoria; Islas del Rosario elegidas el lunes 25. Bora Bora y yate Bocagrande excluidos; Museo del Oro Tairona opcional (máximo 30 minutos).
+- Reservaciones: Moabi Booking 06/11/2026, Doble Estándar 16 m², cama Queen, 1 adulto, $4,768 MXN por tres noches, cancelación gratuita hasta 12/01/2027 y pago antes de llegar; desayuno no incluido. Casa de Isabella, Senda Koguiwa y Casa La Fe siguen provisionales.
+- Movilidad: restituidos Copa, Avianca y terrestre El Zaino–Cartagena; vuelos alternativos no se suman. La variante Cabo San Juan + Barranquilla no modifica aún vuelos ni hoteles.
+- Dónde dormirás: cuatro alojamientos en escenario ecolodge, 3+3+2+3 noches; días 1–3 ahora referencian med-moabi.
+- Día por día: visitas priorizadas sin sobreprometer horarios; Islas del Rosario 25 de enero sujeto a mar; noche en Cabo San Juan sigue alternativa.
+- Presupuesto: diez partidas reconciliadas en $56,250 MXN y rango $50,168–67,168 MXN. Moabi sustituye provisión Landmark $7,000 y ahorra $2,232. Opción ecolodge representada; Cabo San Juan y Barranquilla requieren nuevo escenario. El pasadía en Islas del Rosario aún no está cotizado: la bolsa de $5,000 MXN de actividades puede ser insuficiente. No presentar total como precio cerrado.
+- Se restauraron del historial expenses, majorTransport, mapPoints, exchangeRates, cover y otros campos que se habían perdido en una edición anterior. No merge ni compra. Validación CI pendiente del SHA final.
+
+---
+
 > **Actualización vigente · 06/11/2026 — Medellín:** Se sustituyó el candidato Landmark por **Moabi Hotel** (Carrera 43B #12-147, Manila) para **15–18 enero 2027, 3 noches, 1 adulto**. Habitación Doble Estándar, cama Queen, 16 m², aire acondicionado, baño propio e insonorización anunciada. Cotización Booking en captura del viajero del 06/11: **$4,768 MXN** por las tres noches, tarifa con cancelación gratuita hasta 12/01/2027 y pago antes de llegar, **sin reservar**; desayuno adicional (MXN 231 anunciado; confirmar unidad), precio real en COP con posible IVA. Hotel vinculado a días 1–3, mapa y fuentes en JSON. Nuevo escenario central orientativo **$56,250 MXN** y rango **$50,168–67,168 MXN**, sustituyendo la provisión de $7,000 de Landmark por $4,768 de Moabi (ahorro $2,232 frente al presupuesto estimado anterior). Se mantiene sin modificación la alternativa pendiente de Cabo San Juan/Barranquilla. **Aún no autoriza merge.** Nota de QA: la versión anterior del JSON ya carecía de familias de datos (p. ej. expenses/mapPoints) que requieren reparación en auditoría de integración; no declarar CI verde sin comprobarlo. Las cifras históricas más abajo son bitácora y no sustituyen este estado vigente.
 
 
