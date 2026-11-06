@@ -64,7 +64,7 @@
     "Cartagena",
     "Getsemaní"
   ],
-  "solo": "Viaje para una persona. Se priorizan habitaciones privadas con baño propio, cancelación flexible y traslados confortables.",
+  "solo": "Viaje para una persona, 12 días y 11 noches. Se priorizan habitaciones privadas con baño propio, cancelación flexible y traslados cómodos.",
   "flight": "Copa Airlines multidestino MEX→PTY→MDE el viernes 15/01/2027 y CTG→PTY→MEX el martes 26/01/2027, candidato A principal $9,076 MXN y candidato B de respaldo $9,719 MXN (observados en Google Flights, 1 adulto en turista, impuestos obligatorios incluidos). Salida A 01:20 y llegada MDE 10:55; salida B 05:55 y llegada MDE 14:15. Regreso común CTG 15:05, PTY 16:22–19:34, MEX 22:25. Copa incluye una pieza de equipaje de mano; primera documentada disponible por costo adicional, sin importe confirmado. NINGÚN VUELO COMPRADO. Avianca Classic AV9446 MDE→SMR lunes 18/01 12:00–13:15, COP 217,580 (≈ $1,259 MXN al cambio 03/11/2026), también sin reservar.",
   "local": "El traslado Medellín–Santa Marta se prevé por avión. En Medellín, usar metro/Metrocable para visitas y transporte formal para el aeropuerto; en Santa Marta, contratar traslados adecuados para Minca y Taganga. El Zaino está cerca de los ecolodges candidatos y permite entrar por tierra a Tayrona. Para ir desde Tayrona a Cartagena, comparar shuttle desde El Zaino y vehículo privado directo al hotel, sin regresar a Santa Marta.",
   "experiences": [
@@ -804,7 +804,7 @@
       "id": "flight-domestic",
       "type": "flight",
       "title": "Avianca AV 9446 · Medellín → Santa Marta",
-      "day": 5,
+      "day": 4,
       "selectedOption": "A",
       "budgetIncludedIn": "air-avianca",
       "options": [
@@ -839,7 +839,7 @@
               "refunds": "Verificar condiciones antes del pago"
             }
           ],
-          "notes": "Tarifa Classic observada 04/11/2026, COP 217,580 (equivalencia aproximada aportada: $1,244 MXN), con cabina 10 kg y documentada 23 kg según oferta; no comprado. Verificar reglas finales."
+          "notes": "Tarifa Avianca Classic observada 04/11/2026: COP 217,580 (≈ $1,259 MXN al tipo de cambio documentado 03/11/2026), cabina 10 kg y documentada 23 kg según oferta previa; no comprado. Verificar franquicias vigentes al pagar."
         }
       ],
       "links": [
@@ -866,7 +866,7 @@
       "id": "bus-tayrona-cartagena",
       "type": "bus",
       "title": "El Zaino → Cartagena · shuttle o traslado privado",
-      "day": 10,
+      "day": 9,
       "selectedOption": "A",
       "budgetIncludedIn": "ground-mobility",
       "options": [
@@ -1196,7 +1196,7 @@
       "title": "Estilo de viaje",
       "badge": "12 días · 4 alojamientos",
       "tone": "green",
-      "text": "Viaje individual de 12 días y 11 noches, con 3 noches en Medellín, 3 en Santa Marta, 2 en Tayrona y 3 en Cartagena. Tour de Guatapé y visita a Comuna 13 en días distintos; experiencia cafetera en Minca."
+      "text": "12 días y 11 noches para una persona: 3 noches Medellín, 3 Santa Marta, 2 Tayrona, 3 Cartagena. Guatapé y Comuna 13 en días separados, café en Minca y visitas urbanas priorizadas. Cuatro alojamientos candidatos sin reservar."
     },
     {
       "id": "language",
