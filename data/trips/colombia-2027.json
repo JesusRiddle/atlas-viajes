@@ -278,7 +278,10 @@
       "mobility": "• *Cómo trasladarte:* Traslado Santa Marta → hotel cercano a El Zaino, preferentemente directo y reservado.",
       "note": "• *Tips del día:* Senda Koguiwa, Senda Watapuy y Villa María son candidatos, no reservas; buscar cancelación flexible por posibles restricciones de Tayrona.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-tayrona-costa",
+        "col27-tayrona-laguna"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "tay-koguiwa"
@@ -294,7 +297,11 @@
       "mobility": "• *Cómo trasladarte:* Entrada El Zaino, transporte interno según operación vigente, caminata aproximada 2–3 horas por sentido.",
       "note": "• *Acceso Tayrona:* Enero es temporada alta; El Zaino publica apertura desde las 07:00 y salida hasta las 18:00. Extranjeros no residentes (no CAN) COP 96,500 (≈ $559 MXN) según tarifa oficial publicada; comprobar 2027.\n• *Seguro obligatorio:* Adquirir póliza de asistencia a visitante avalada por el parque; no confundirla con seguro general del viaje.\n• *Seguridad:* Respetar senderos, cierre extraordinario y playas prohibidas; agua y calzado cómodo.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-tayrona-sendero",
+        "col27-cabo-san-juan",
+        "col27-cabo-amanecer"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "tay-koguiwa",
@@ -1350,7 +1357,12 @@
     "col27-minca-paisaje": "Desde las montañas de Minca se observan la costa y Santa Marta; el entorno selvático ofrece un contraste con el calor del Caribe.",
     "col27-marinka": "Esta cascada de la Sierra Nevada desciende entre rocas y vegetación tropical, cerca de Minca, con un entorno apropiado para contemplar la naturaleza.",
     "col27-taganga-bahia": "La bahía de Taganga reúne paisajes montañosos y aguas caribeñas junto a un pueblo de tradición pesquera situado cerca de Santa Marta.",
-    "col27-playa-grande": "La pequeña ensenada de Playa Grande muestra aguas tranquilas en la fotografía y laderas costeras; su acceso en lancha depende del estado actual del mar."
+    "col27-playa-grande": "La pequeña ensenada de Playa Grande muestra aguas tranquilas en la fotografía y laderas costeras; su acceso en lancha depende del estado actual del mar.",
+    "col27-tayrona-costa": "Imagen de referencia de la costa protegida de Tayrona, con arena, palmeras y grandes rocas; no corresponde al alojamiento ni a una visita programada ese día.",
+    "col27-tayrona-laguna": "La laguna y los palmares muestran la diversidad ecológica del parque cercano al alojamiento; fotografía ambiental, no de las instalaciones del hotel.",
+    "col27-tayrona-sendero": "Los senderos del parque atraviesan bosques y formaciones rocosas; el recorrido previsto exige calzado cómodo, hidratación y respetar las rutas habilitadas.",
+    "col27-cabo-san-juan": "Cabo San Juan destaca por su bahía entre enormes rocas, palmeras y un pequeño mirador elevado; la natación depende de las zonas autorizadas.",
+    "col27-cabo-amanecer": "Una luz suave sobre la costa de Cabo San Juan permite apreciar el relieve de las playas; fotografía ilustrativa, no representa el horario de nuestra excursión."
   },
   "optionalSection": null,
   "family": null,
