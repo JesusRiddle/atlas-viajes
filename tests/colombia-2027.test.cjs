@@ -45,7 +45,7 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   assert.match(trip.days[4].am,/finca cafetera|tour del café/i);
   assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>/Requisitos sanitarios/.test(x.title)));
   assert.ok(trip.hotels.some(h=>h.id==='sm-isabella' && h.links?.some(x=>x.url.includes('kalihotels.com'))));
-  assert.doesNotMatch(trip.days.map(d=>d.title+' '+d.am+' '+d.pm).join(' '),/Museo del Oro|San Pedro Alejandrino/);
+  assert.match(trip.days[6].am,/Museo del Oro Tairona/);\n  assert.doesNotMatch(trip.days.map(d=>d.title+' '+d.am+' '+d.pm).join(' '),/San Pedro Alejandrino/);
 });
 test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()=>{
   assert.deepEqual([...model.validateTrip(trip)],[]);
@@ -54,23 +54,23 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.ok(trip.majorTransport.every(t=>ids.has(t.budgetIncludedIn)));
   assert.equal(budget.summary(trip).issues.length,0);
   assert.equal(budget.summary(trip).pending.length,0);
-  assert.equal(budget.summary(trip).knownTotalMXN,58482);
+  assert.equal(budget.summary(trip).knownTotalMXN,56250);
   const estimate=budget.planningEstimate(trip);
-  assert.equal(estimate.totalMXN,58482);
-  assert.equal(estimate.low,52400);
-  assert.equal(estimate.high,69400);
+  assert.equal(estimate.totalMXN,56250);
+  assert.equal(estimate.low,50168);
+  assert.equal(estimate.high,67168);
   assert.equal(trip.majorTransport[0].selectedOption,'A');
-  assert.equal(budget.summary(trip,{'flight-international':{option:'B'}}).knownTotalMXN,59178);
+  assert.equal(budget.summary(trip,{'flight-international':{option:'B'}}).knownTotalMXN,56946);
   assert.equal(trip.expenses.filter(x=>x.category==='flight').length,2);
-  assert.equal(trip.expenses.filter(x=>x.category==='lodging').reduce((a,x)=>a+x.cost.amount,0),27700);
-  assert.equal(trip.expenses.reduce((a,x)=>a+x.cost.amount,0),58482);
+  assert.equal(trip.expenses.filter(x=>x.category==='lodging').reduce((a,x)=>a+x.cost.amount,0),25468);
+  assert.equal(trip.expenses.reduce((a,x)=>a+x.cost.amount,0),56250);
   assert.ok(!trip.expenses.some(x=>x.id==='luggage-allowance'));
   assert.equal(trip.majorTransport[0].options[0].journeys[1].segments[1].flightNumber,'CM 188');
   assert.match(trip.majorTransport[0].options[0].journeys[1].segments[1].arrival,/22:05/);
   assert.equal(trip.majorTransport[0].options[0].links.length,1,'El candidato A debe enlazar su selección actualizada');
   assert.match(trip.majorTransport[0].options[0].links[0].url,/TTIDMTg4/,'El enlace A debe contener el vuelo CM188');
   const backup=budget.planningEstimate({...trip,majorTransport:trip.majorTransport.map(t=>t.id==='flight-international'?{...t,selectedOption:'B'}:t)});
-  assert.equal(backup.totalMXN,59178);
+  assert.equal(backup.totalMXN,56946);
   assert.equal(trip.hotels[0].checkIn,'2027-01-15');
   assert.equal(trip.hotels[0].checkOut,'2027-01-18');
   assert.equal(trip.majorTransport[0].options[0].fares[0].price.amount,9023);
@@ -90,7 +90,7 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.equal(Object.keys(trip.seasonality.months).length,12);
   for (const m of Object.values(trip.seasonality.months))
     assert.match(m.description,/\d+ a \d+ °C/);
-  assert.deepEqual(trip.practicalIndicators.map(x=>x.id),['style','language','entry']);
+  assert.deepEqual(trip.practicalIndicators.map(x=>x.id),['style','language','entry']);\n  assert.equal(trip.hotels[0].id,'med-moabi');\n  assert.equal(trip.expenses.find(x=>x.id==='hotel-med').hotelId,'med-moabi');\n  assert.equal(trip.expenses.find(x=>x.id==='hotel-med').cost.amount,4768);\n  assert.ok(!JSON.stringify(trip).toLowerCase().includes('landmark'));\n  assert.match(trip.days[10].title,/Islas del Rosario/);\n  assert.match(trip.days[10].am,/Bora Bora Beach Club está descartado/);
   assert.equal(trip.climate.split(/\n\s*\n/).length,3);
   assert.ok(trip.exchangeRates.COP>0);
   const places=JSON.parse(fs.readFileSync('data/places.json','utf8'));
@@ -161,7 +161,7 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.equal(trip.introHighlights.every(name=>trip.intro.includes(name)),true);
   assert.doesNotMatch(trip.introShort,/\b\d+ noches|cotizar|reservar/i);
   assert.match(trip.practicalIndicators.find(x=>x.id==='entry').text,/no necesitas adaptador/);
-  assert.match(trip.reservations.flatMap(g=>g[1]).find(x=>/Tours prioritarios/.test(x.title)).links[1].url,/fincalavictoria1892/);
+  assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>x.links?.some(link=>link.url.includes('fincalavictoria1892.com'))));
   assert.deepEqual(trip.mapPoints.map(x=>x.order),[1,2,3,4,5,6,7]);
 });
 test('Colombia: auditoría D final de 24 imágenes, portada, créditos y visitas opcionales',()=>{
