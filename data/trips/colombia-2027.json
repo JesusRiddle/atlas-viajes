@@ -109,7 +109,10 @@
       "mobility": "• *Aeropuerto → Manila:* Vehículo precontratado o autorizado, con margen por migración y tráfico.\n• *Centro histórico:* Traslados de día a Plaza Botero y Parque de Bolívar; si llegas tarde, cambiarlos al domingo.",
       "note": "• *Vuelo candidato:* Copa opción A, salida muy de madrugada; tarifa observada $9,023 MXN por multidestino, sin comprar.\n• *Respaldo:* Copa B llegaría 14:15 y movería las plazas al domingo; no se incorpora su tarifa al presupuesto central.\n• *Salud previa:* Verificar recomendaciones para Tayrona y Minca, incluida la fiebre amarilla, con suficiente anticipación.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-botero",
+        "col27-provenza"
+      ],
       "headerPlaces": [],
       "transportRefs": [
         "flight-international"
@@ -141,7 +144,10 @@
       "mobility": "• *Cómo trasladarte:* Excursión terrestre de día completo; el tiempo de carretera puede variar, especialmente en sábado.",
       "note": "• *Tour Guatapé:* Salida de referencia 07:00, duración publicada de 10 a 12 horas; incluye transporte y alimentos según operador. Tour COP 129,999 (≈ $752 MXN), precio de referencia no reservado.\n• *Piedra del Peñol:* El ascenso es adicional en el tour de referencia, COP 35,000 (≈ $203 MXN); alrededor de 740 escalones y esfuerzo físico.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-penol",
+        "col27-guatape"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "med-landmark",
@@ -167,7 +173,11 @@
       "mobility": "• *Comuna 13:* Tour con guía local y transporte seguro.\n• *Pueblito Paisa y centro:* Planificar desplazamientos en vehículo confiable para evitar retrocesos y recorridos nocturnos por el centro.",
       "note": "• *Recorrido histórico:* Identificar las esculturas de Fernando Botero en Plaza Botero y la Catedral Metropolitana junto a Parque de Bolívar si las plazas no cupieron el viernes.\n• *Pueblito Paisa:* Recreación de arquitectura rural antioqueña, no un pueblo colonial histórico auténtico; mirador en Cerro Nutibara.\n• *Seguridad:* Visitar el centro solo de día y conservar margen para los traslados.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-comuna13",
+        "col27-escaleras",
+        "col27-pueblito"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "med-landmark",
@@ -1318,7 +1328,15 @@
     69400
   ],
   "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $58,482 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Landmark Medellín 3 noches $7,000; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Casa La Fe Cartagena 3 noches $10,500; traslados terrestres y lancha $6,000; alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $58,482 MXN; rango orientativo $52,400–69,400 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Las cuatro tarifas hoteleras son estimaciones de otras fechas, no precios confirmados para el viaje.",
-  "placeDescriptions": {},
+  "placeDescriptions": {
+    "col27-botero": "Plaza al aire libre con esculturas monumentales de Fernando Botero, donde el arte contemporáneo convive con la arquitectura del centro de Medellín.",
+    "col27-provenza": "Calles arboladas, restaurantes y terrazas convierten este sector de El Poblado en un lugar animado para terminar la jornada.",
+    "col27-penol": "La enorme roca junto al embalse permite contemplar las islas y el paisaje antioqueño tras una subida exigente por escaleras.",
+    "col27-guatape": "Los zócalos pintados y las fachadas coloridas muestran la tradición decorativa de Guatapé, entre calles empedradas y pequeños comercios.",
+    "col27-comuna13": "Los murales de San Javier expresan memoria, identidad y transformación comunitaria; el recorrido guiado permite comprender las historias detrás del arte.",
+    "col27-escaleras": "Estas escaleras eléctricas al aire libre conectan las laderas de Comuna 13 y simbolizan una transformación de movilidad cotidiana.",
+    "col27-pueblito": "En Cerro Nutibara, esta recreación de un pueblo antioqueño reúne casas tradicionales y un mirador con vistas urbanas de Medellín."
+  },
   "optionalSection": null,
   "family": null,
   "layoutClass": null,
