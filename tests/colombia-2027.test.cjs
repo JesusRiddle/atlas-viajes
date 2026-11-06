@@ -45,7 +45,8 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   assert.match(trip.days[4].am,/finca cafetera|tour del café/i);
   assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>/Requisitos sanitarios/.test(x.title)));
   assert.ok(trip.hotels.some(h=>h.id==='sm-isabella' && h.links?.some(x=>x.url.includes('kalihotels.com'))));
-  assert.match(trip.days[6].am,/Museo del Oro Tairona/);\n  assert.doesNotMatch(trip.days.map(d=>d.title+' '+d.am+' '+d.pm).join(' '),/San Pedro Alejandrino/);
+  assert.match(trip.days[6].am,/Museo del Oro Tairona/);
+  assert.doesNotMatch(trip.days.map(d=>d.title+' '+d.am+' '+d.pm).join(' '),/San Pedro Alejandrino/);
 });
 test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()=>{
   assert.deepEqual([...model.validateTrip(trip)],[]);
@@ -90,7 +91,13 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.equal(Object.keys(trip.seasonality.months).length,12);
   for (const m of Object.values(trip.seasonality.months))
     assert.match(m.description,/\d+ a \d+ °C/);
-  assert.deepEqual(trip.practicalIndicators.map(x=>x.id),['style','language','entry']);\n  assert.equal(trip.hotels[0].id,'med-moabi');\n  assert.equal(trip.expenses.find(x=>x.id==='hotel-med').hotelId,'med-moabi');\n  assert.equal(trip.expenses.find(x=>x.id==='hotel-med').cost.amount,4768);\n  assert.ok(!JSON.stringify(trip).toLowerCase().includes('landmark'));\n  assert.match(trip.days[10].title,/Islas del Rosario/);\n  assert.match(trip.days[10].am,/Bora Bora Beach Club está descartado/);
+  assert.deepEqual(trip.practicalIndicators.map(x=>x.id),['style','language','entry']);
+  assert.equal(trip.hotels[0].id,'med-moabi');
+  assert.equal(trip.expenses.find(x=>x.id==='hotel-med').hotelId,'med-moabi');
+  assert.equal(trip.expenses.find(x=>x.id==='hotel-med').cost.amount,4768);
+  assert.ok(!JSON.stringify(trip).toLowerCase().includes('landmark'));
+  assert.match(trip.days[10].title,/Islas del Rosario/);
+  assert.match(trip.days[10].am,/Bora Bora Beach Club está descartado/);
   assert.equal(trip.climate.split(/\n\s*\n/).length,3);
   assert.ok(trip.exchangeRates.COP>0);
   const places=JSON.parse(fs.readFileSync('data/places.json','utf8'));
