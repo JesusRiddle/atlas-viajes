@@ -3,7 +3,7 @@
   "name": "Colombia 2027 · Medellín y Caribe",
   "flag": "🇨🇴",
   "status": null,
-  "start": "2027-01-14",
+  "start": "2027-01-15",
   "end": "2027-01-26",
   "tag": "DE MEDELLÍN AL CARIBE · ARTE, SELVA Y CIUDADES COLONIALES",
   "routeCities": [
@@ -20,7 +20,7 @@
   "bases": [
     [
       "Medellín",
-      4
+      3
     ],
     [
       "Santa Marta",
@@ -35,23 +35,26 @@
       3
     ]
   ],
-  "work": 9,
+  "work": 8,
   "costs": [],
   "travelerCount": 1,
   "profile": {
     "pace": "balanced",
-    "paceWhy": "Alterna excursiones exigentes con jornadas libres; cuatro alojamientos en doce noches.",
+    "paceWhy": "Dos días completos en Medellín: uno para Guatapé y otro para Comuna 13 y las plazas; después combina montaña, playas y descanso en cuatro alojamientos.",
     "solo": true,
     "soloWhy": "Habitaciones privadas con baño propio, zonas caminables y traslados fiables.",
     "weather": "Cálido y estacional",
     "weatherWhy": "En enero el Caribe está generalmente más seco, pero Santa Marta puede presentar viento y oleaje; Medellín es templada por altitud. Clima histórico, no pronóstico.",
     "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
   },
-  "intro": "Comienzas en Medellín, entre las calles de Manila, el arte de Comuna 13 y los colores de Guatapé. Después vuelas a Santa Marta para explorar la naturaleza de Minca y asomarte a la bahía de Taganga. Dos noches en un ecolodge cercano a Tayrona permiten disfrutar la selva y caminar hacia Cabo San Juan sin prisas. La ruta continúa por carretera hasta Cartagena, con tiempo para perderse entre las calles de la Ciudad Amurallada, descubrir Getsemaní y descansar en una piscina colonial. Un recorrido que combina energía urbana, cultura antioqueña, café, Caribe y descanso.",
-  "introShort": "De Medellín y Guatapé a las montañas cafeteras de Minca, las playas de Taganga y los senderos de Tayrona. Dos noches entre selva y naturaleza preceden a tres días de calles coloniales, gastronomía y terrazas en Cartagena.",
+  "intro": "Comienzas en Medellín con el arte de Comuna 13, las esculturas de Plaza Botero, el Parque de Bolívar y la vista desde Pueblito Paisa, antes de una excursión guiada a Guatapé. Después vuelas a Santa Marta para explorar la naturaleza y el café de Minca y conocer la bahía de Taganga. Dos noches en un ecolodge cercano a Tayrona permiten caminar hacia Cabo San Juan y descansar entre selva tropical. La ruta continúa por carretera hasta Cartagena, con tiempo para recorrer la Ciudad Amurallada, disfrutar Getsemaní y probar la gastronomía caribeña.",
+  "introShort": "Medellín y Guatapé, cultura cafetera y cascadas en Minca, bahías de Taganga y senderos de Tayrona. Terminas entre calles coloniales y gastronomía de Cartagena, con once noches en cuatro alojamientos.",
   "introHighlights": [
     "Medellín",
     "Comuna 13",
+    "Plaza Botero",
+    "Parque de Bolívar",
+    "Pueblito Paisa",
     "Guatapé",
     "Santa Marta",
     "Minca",
@@ -62,16 +65,12 @@
     "Getsemaní"
   ],
   "solo": "Viaje para una persona. Se priorizan habitaciones privadas con baño propio, cancelación flexible y traslados confortables.",
-  "flight": "Vuelos candidatos NO comprados, precios observados el 4 de noviembre de 2026: Copa multidestino MEX→PTY→MDE el 14/01 (09:10–17:00), CTG→PTY→MEX el 26/01 (15:05–22:05), total observado $10,303 MXN con equipaje de mano; confirmar importe al pagar. Avianca AV 9446 MDE→SMR el 18/01 (12:00–13:15), tarifa Classic observada COP 217,580 (≈ $1,259 MXN con tipo de cambio de referencia 03/11/2026, sujeto a cargos reales), incluye maleta de cabina y documentada según condiciones publicadas; no comprado. Subtotal aéreo preliminar ~$11,547 MXN, NO presupuesto total.",
+  "flight": "Copa Airlines multidestino MEX→PTY→MDE el viernes 15/01/2027 y CTG→PTY→MEX el martes 26/01/2027, candidato A principal $9,076 MXN y candidato B de respaldo $9,719 MXN (observados en Google Flights, 1 adulto en turista, impuestos obligatorios incluidos). Salida A 01:20 y llegada MDE 10:55; salida B 05:55 y llegada MDE 14:15. Regreso común CTG 15:05, PTY 16:22–19:34, MEX 22:25. Copa incluye una pieza de equipaje de mano; primera documentada disponible por costo adicional, sin importe confirmado. NINGÚN VUELO COMPRADO. Avianca Classic AV9446 MDE→SMR lunes 18/01 12:00–13:15, COP 217,580 (≈ $1,259 MXN al cambio 03/11/2026), también sin reservar.",
   "local": "El traslado Medellín–Santa Marta se prevé por avión. En Medellín, usar metro/Metrocable para visitas y transporte formal para el aeropuerto; en Santa Marta, contratar traslados adecuados para Minca y Taganga. El Zaino está cerca de los ecolodges candidatos y permite entrar por tierra a Tayrona. Para ir desde Tayrona a Cartagena, comparar shuttle desde El Zaino y vehículo privado directo al hotel, sin regresar a Santa Marta.",
   "experiences": [
     {
       "city": "Medellín",
-      "description": "Prioridades confirmadas: tour guiado de Comuna 13, Plaza Botero, Parque de Bolívar (Plaza Bolívar), paseo por El Poblado y cena en Provenza; Pueblito Paisa en el Cerro Nutibara. Disfruta bandeja paisa, arepas y mazamorra. Museo de Antioquia, Metrocable, Parque Arví y Jardín Botánico son secundarios y no desplazan las experiencias elegidas."
-    },
-    {
-      "city": "Café de Antioquia · Medellín",
-      "description": "Tour cafetero con visita a finca en San Sebastián de Palmitas o alrededores de Medellín: cultivo, proceso del café y degustación. Priorizar excursión de medio día real, con traslado y regreso oportuno para conocer Pueblito Paisa. Operador, fecha y precio por confirmar."
+      "description": "Comuna 13 con guía, Plaza Botero y Parque de Bolívar, Pueblito Paisa (Cerro Nutibara) y cena en Provenza. El Poblado se recorre solo como zona de alojamiento, sin paseo específico. Prueba bandeja paisa y arepas antioqueñas; Metrocable, Parque Arví, Jardín Botánico y Museo de Antioquia quedan opcionales o fuera del programa."
     },
     {
       "city": "Guatapé",
@@ -83,7 +82,7 @@
     },
     {
       "city": "Minca",
-      "description": "Recorrido por finca cafetera, montaña húmeda y cascadas de Marinka, sujeto a acceso y condiciones de caminos."
+      "description": "Tour del café en finca del entorno de Minca, preferentemente La Victoria si confirma acceso, y cascadas de Marinka si queda tiempo; priorizar regreso a Santa Marta de día. Probar café de la Sierra Nevada."
     },
     {
       "city": "Taganga y Playa Grande",
@@ -101,14 +100,14 @@
   "days": [
     {
       "n": 1,
-      "date": "2027-01-14",
-      "title": "Llegada a Medellín y primera noche en Manila",
+      "date": "2027-01-15",
+      "title": "Llegada a Medellín, plazas y Provenza",
       "base": "Medellín",
-      "am": "Vuelo candidato Copa MEX–PTY–MDE, salida 09:10; escalas y tarifa pendientes de confirmar.",
-      "pm": "Llegada prevista a Medellín 17:00. Migración, equipaje y traslado autorizado a Manila, El Poblado.",
-      "night": "Check-in y cena cercana. Sin visitas programadas el día de llegada.",
-      "mobility": "• *Cómo trasladarte:* Traslado aeropuerto José María Córdova → Manila en vehículo autorizado o precontratado; margen amplio al aterrizar.",
-      "note": "• *Vuelo previsto:* Itinerario Copa no comprado; confirmar equipaje, horarios, conexión y precio final.\n• *Salud antes de viajar:* Comprobar recomendaciones sanitarias para Minca y Tayrona, incluida fiebre amarilla, y cobertura del seguro.",
+      "am": "Vuelo candidato Copa A: MEX 01:20 → PTY 06:00, escala de 3 h 32 min; PTY 09:32 → MDE 10:55. Opción B: MEX 05:55 → PTY 10:38, escala 2 h 17 min; PTY 12:55 → MDE 14:15.",
+      "pm": "Migración y traslado al alojamiento en Manila. Con llegada temprana: visita diurna de Plaza Botero y Parque de Bolívar; con llegada de 14:15, mover las plazas al domingo para evitar prisas y recorrer únicamente alrededores del hotel.",
+      "night": "Cena y paseo por Provenza, sujeto al cansancio tras el vuelo nocturno. Desplazamientos nocturnos en transporte formal.",
+      "mobility": "• *Aeropuerto → Manila:* Vehículo precontratado o autorizado, con margen por migración y tráfico.\n• *Centro histórico:* Traslados de día a Plaza Botero y Parque de Bolívar; si llegas tarde, cambiarlos al domingo.",
+      "note": "• *Vuelo candidato:* Copa opción A, salida muy de madrugada; tarifa observada $9,076 MXN por multidestino, sin comprar.\n• *Plan B:* Con opción B, llegada 14:15 y plazas el domingo. Evitar sacrificar Comuna 13.\n• *Salud previa:* Verificar recomendaciones para Tayrona y Minca con suficiente anticipación.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -118,33 +117,21 @@
       "hotel": "med-landmark",
       "mobilityLinks": [
         {
-          "label": "Copa Airlines · itinerario y equipaje",
+          "label": "Copa Airlines · vuelo y equipaje",
           "url": "https://www.copaair.com/"
         },
         {
-          "label": "Migración Colombia · documentación",
-          "url": "https://www.migracioncolombia.gov.co/tramites-y-servicios/instructivos/requisitos-de-entrada-y-salida-del-pais"
+          "label": "Plaza Botero · mapa",
+          "url": "https://www.google.com/maps/search/?api=1&query=Plaza%20Botero%20Medellin"
+        },
+        {
+          "label": "Parque de Bolívar · mapa",
+          "url": "https://www.google.com/maps/search/?api=1&query=Parque%20de%20Bolivar%20Medellin"
         }
       ]
     },
     {
       "n": 2,
-      "date": "2027-01-15",
-      "title": "Comuna 13, Plaza Botero, Plaza Bolívar y Provenza",
-      "base": "Medellín",
-      "am": "Tour guiado de Comuna 13: murales, escaleras eléctricas e historia local; inicio temprano.",
-      "pm": "Almuerzo y recorrido diurno por Plaza Botero, Parque de Bolívar y entorno de la Catedral Metropolitana. Museo de Antioquia solo si sobra tiempo.",
-      "night": "Paseo por El Poblado y cena en Provenza. Regreso al hotel en transporte confiable.",
-      "mobility": "• *Cómo trasladarte:* Comuna 13 con guía local; traslado en vehículo de aplicación o taxi fiable hacia Plaza Botero y Parque de Bolívar. Regresa a El Poblado/Provenza por la tarde y evita caminar solo por el centro al anochecer.",
-      "note": "• *Tips del día:* Plaza Botero y Parque de Bolívar son paradas breves en un centro urbano que exige atención a pertenencias; no exhibir celular ni joyas. Reservar Museo de Antioquia solo si hay tiempo adicional: no está entre las prioridades declaradas.",
-      "spend": null,
-      "places": [],
-      "headerPlaces": [],
-      "transportRefs": [],
-      "hotel": "med-landmark"
-    },
-    {
-      "n": 3,
       "date": "2027-01-16",
       "title": "Guatapé y Piedra del Peñol",
       "base": "Medellín",
@@ -160,33 +147,24 @@
       "hotel": "med-landmark"
     },
     {
-      "n": 4,
+      "n": 3,
       "date": "2027-01-17",
-      "title": "Tour del café antioqueño y Pueblito Paisa",
+      "title": "Comuna 13 y Pueblito Paisa",
       "base": "Medellín",
-      "am": "Tour cafetero en finca de Antioquia, preferiblemente San Sebastián de Palmitas: cultivo, procesamiento y degustación. Buscar regreso a media tarde.",
-      "pm": "Pueblito Paisa en Cerro Nutibara y mirador urbano, condicionado al horario real del tour. Evitar excursiones cafeteras de ocho horas si se quiere combinar.",
-      "night": "Cena en El Poblado y preparación de equipaje para el vuelo del día siguiente.",
-      "mobility": "• *Cómo trasladarte:* Tour cafetero con ida y regreso incluidos a finca cercana; confirmar hora exacta de retorno. Después, traslado formal al Pueblito Paisa/Cerro Nutibara y regreso seguro a El Poblado.",
-      "note": "• *Tour del café:* Elegir operador que regrese a Medellín a media tarde; los recorridos de ocho horas impiden combinar Pueblito Paisa.\n• *Alternativas:* Metrocable solo si queda tiempo; Parque Arví y Jardín Botánico fuera del programa principal.",
+      "am": "Tour guiado de Comuna 13 por la mañana (aprox. 3 horas), con sus murales, escaleras eléctricas y contexto histórico. Reservar salida temprana.",
+      "pm": "Traslado al Cerro Nutibara para visitar Pueblito Paisa y su mirador. Si el viernes llegaron tarde los vuelos, visitar primero Plaza Botero y Parque de Bolívar en horario diurno; ajustar Pueblito Paisa a última hora de tarde solo si el operador y traslados lo permiten.",
+      "night": "Cena en Provenza si no se visitó el viernes; preparación de equipaje para el vuelo del lunes 18.",
+      "mobility": "• *Comuna 13:* Tour con guía local y transporte seguro.\n• *Pueblito Paisa y centro:* Planificar desplazamientos en vehículo confiable para evitar retrocesos y recorridos nocturnos por el centro.",
+      "note": "• *Prioridades:* Comuna 13, Plaza Botero, Parque de Bolívar y Pueblito Paisa; garantizar los cuatro en viernes/domingo, según hora real de llegada.\n• *Tiempo disponible:* Domingo es día de agenda intensa; no incluir café en Antioquia ni museos interiores.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "med-landmark",
-      "mobilityLinks": [
-        {
-          "label": "Tour del café · opción de ~4 horas, consultar operador",
-          "url": "https://colombiaentusojostours.com/tours-grupales/tour-del-cafe-medellin/"
-        },
-        {
-          "label": "Otra opción café con traslado, duración 5 h",
-          "url": "https://localtoursmedellin.com/tours/tour-del-cafe-en-medellin/"
-        }
-      ]
+      "mobilityLinks": []
     },
     {
-      "n": 5,
+      "n": 4,
       "date": "2027-01-18",
       "title": "De Medellín a Santa Marta",
       "base": "Santa Marta",
@@ -210,23 +188,29 @@
       ]
     },
     {
-      "n": 6,
+      "n": 5,
       "date": "2027-01-19",
-      "title": "Minca: montañas, naturaleza y cascadas",
+      "title": "Minca: tour del café y cascadas",
       "base": "Santa Marta",
-      "am": "Excursión a Minca para conocer su entorno montañoso y paisaje de la Sierra Nevada. Café en finca solo como alternativa si falla el tour de Medellín.",
-      "pm": "Almuerzo y cascadas de Marinka, sujetas a acceso, lluvia y estado de los senderos.",
-      "night": "Regreso a Santa Marta de día; cena cerca del alojamiento.",
+      "am": "Excursión a Minca con visita a una finca cafetera, preferentemente Finca La Victoria si opera y hay acceso; recorrido de producción, proceso del grano y degustación.",
+      "pm": "Almuerzo en Minca y visita a cascadas de Marinka si los horarios, traslados y senderos lo permiten. Priorizar el café; reducir la caminata o las cascadas si el tour se extiende.",
+      "night": "Regreso a Santa Marta antes de anochecer; cena cerca del hotel.",
       "mobility": "• *Cómo trasladarte:* Tour o traslado privado adecuado a caminos rurales; verificar recogida y accesibilidad.",
-      "note": "• *Tips del día:* Evitar improvisar trayectos rurales largos en motocicleta y no entrar en cascadas si hay corrientes fuertes.",
+      "note": "• *Café trasladado:* Se elimina el tour cafetero antioqueño; Minca concentra esta experiencia.\n• *Plan B:* Si finca y cascadas no caben con seguridad en el mismo día, dar prioridad al café y sustituir Marinka por una parada breve.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "sm-isabella"
+      "hotel": "sm-isabella",
+      "mobilityLinks": [
+        {
+          "label": "Finca La Victoria · sitio oficial",
+          "url": "https://www.fincalavictoria.com/"
+        }
+      ]
     },
     {
-      "n": 7,
+      "n": 6,
       "date": "2027-01-20",
       "title": "Taganga y Playa Grande sin prisas",
       "base": "Santa Marta",
@@ -242,7 +226,7 @@
       "hotel": "sm-isabella"
     },
     {
-      "n": 8,
+      "n": 7,
       "date": "2027-01-21",
       "title": "Cambio a ecolodge cerca de Tayrona",
       "base": "Tayrona",
@@ -258,7 +242,7 @@
       "hotel": "tay-koguiwa"
     },
     {
-      "n": 9,
+      "n": 8,
       "date": "2027-01-22",
       "title": "Cabo San Juan: senderos y playas de Tayrona",
       "base": "Tayrona",
@@ -280,7 +264,7 @@
       ]
     },
     {
-      "n": 10,
+      "n": 9,
       "date": "2027-01-23",
       "title": "De Tayrona a Cartagena",
       "base": "Cartagena",
@@ -304,7 +288,7 @@
       ]
     },
     {
-      "n": 11,
+      "n": 10,
       "date": "2027-01-24",
       "title": "Ciudad Amurallada y Getsemaní",
       "base": "Cartagena",
@@ -320,7 +304,7 @@
       "hotel": "ct-lafe"
     },
     {
-      "n": 12,
+      "n": 11,
       "date": "2027-01-25",
       "title": "Cartagena libre: piscina, historia o islas",
       "base": "Cartagena",
@@ -336,7 +320,7 @@
       "hotel": "ct-lafe"
     },
     {
-      "n": 13,
+      "n": 12,
       "date": "2027-01-26",
       "title": "Regreso Cartagena–Panamá–CDMX",
       "base": "Regreso a CDMX",
@@ -375,7 +359,7 @@
         },
         {
           "title": "Vuelos Copa multidestino y Avianca interno",
-          "description": "SIN COMPRAR. Copa MEX→PTY→MDE 14 enero, CTG→PTY→MEX 26 enero; Avianca directo MDE→SMR 18 enero. Verificar precio total y equipaje en pantalla de pago, terminal y margen de conexión antes de compra.",
+          "description": "NO COMPRADOS. Copa multidestino A preferido MEX→PTY→MDE viernes 15/01 a las 01:20, llegada 10:55 y regreso CTG→PTY→MEX martes 26/01 15:05–22:25, total $9,076 MXN. Respaldo B sale 05:55 y llega a MDE 14:15, mismo regreso, $9,719 MXN. Incluye una pieza de mano y tasas obligatorias; documentada con cargo adicional. Confirmar tarifa final, condiciones, aeropuerto y documentación; Avianca MDE→SMR del 18/01 sin cambios.",
           "links": [
             {
               "label": "Copa Airlines",
@@ -423,8 +407,8 @@
           ]
         },
         {
-          "title": "Tours prioritarios: Guatapé, Comuna 13 y café desde Medellín",
-          "description": "SIN RESERVAR. Guatapé sábado 16 en tour de día completo; Comuna 13 con guía el viernes 15; tour cafetero domingo 17 con horario de regreso compatible con Pueblito Paisa. Los tours cafeteros suelen durar de cuatro a ocho horas, según operador; no combinar Pueblito con uno de ocho horas.",
+          "title": "Tours prioritarios: Guatapé y Comuna 13; café en Minca",
+          "description": "SIN RESERVAR. Guatapé sábado 16 en tour de día completo, Comuna 13 con guía el domingo 17; plazas Botero/Bolívar y Pueblito Paisa se reparten viernes/domingo según llegada de Copa A o B. La finca cafetera se traslada a Minca el martes 19 para evitar dos excursiones en Medellín.",
           "links": [
             {
               "label": "Tour de café de medio día · operador candidato",
@@ -438,7 +422,7 @@
         },
         {
           "title": "Hoteles urbanos de Medellín, Santa Marta y Cartagena",
-          "description": "SIN RESERVAR. Elegir habitación individual privada con baño propio y ruido mínimo. Confirmar horarios de check-in, políticas de cancelación, impuestos, desayuno y ubicación de recogida exacta. Si el viaje pasa a tres noches en Medellín, volver a cotizar y ajustar check-in/check-out de TODAS las ciudades antes de bloquear habitaciones.",
+          "description": "SIN RESERVAR. Elegir habitación individual privada con baño propio y ruido mínimo. Confirmar horarios de check-in, políticas de cancelación, impuestos, desayuno y ubicación de recogida exacta. Medellín 15–18 de enero (3 noches); las otras ciudades conservan sus fechas. Cotizar hoteles con esas fechas y comprobar impuestos, cancelación y ubicación para recogidas.",
           "links": [
             {
               "label": "Landmark Hotel",
@@ -460,8 +444,8 @@
       "Opcionales",
       [
         {
-          "title": "Minca · senderos y cascadas (café alternativo)",
-          "description": "Prioridad para naturaleza y cascadas de Marinka. La finca cafetera de Minca queda opcional para evitar repetir el tour del café de Medellín; recuperarla si el de Medellín no se concreta. Confirmar accesos y operador.",
+          "title": "Minca · finca cafetera y cascadas de Marinka",
+          "description": "Prioridad al tour del café en Minca el 19 de enero. Combinar con cascadas de Marinka únicamente si el operador, accesos y regreso diurno lo permiten. No duplicar el tour cafetero en Antioquia.",
           "links": []
         },
         {
@@ -493,13 +477,13 @@
       "id": "air-copa",
       "category": "transport",
       "concept": "Copa multidestino MEX–MDE / CTG–MEX",
-      "date": "2027-01-14",
+      "date": "2027-01-15",
       "cost": {
-        "amount": 10303,
+        "amount": 9076,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Observado en búsqueda manual 04/11/2026. No comprado; incluye equipaje de mano según tarifa candidata, cargo por documentada sujeto a revisión."
+      "notes": "Copa multidestino 15/01 MEX–PTY–MDE y 26/01 CTG–PTY–MEX, candidato A mostrado en Google Flights por $9,076 MXN, 1 adulto turista, impuestos obligatorios incluidos. Equipaje de mano 1 pieza sin costo; documentada por tarifa; peso/dimensiones no especificados. No comprado. Candidato B cuesta $9,719 MXN."
     },
     {
       "id": "air-avianca",
@@ -516,15 +500,15 @@
     {
       "id": "hotel-med",
       "category": "lodging",
-      "concept": "Medellín · 4 noches · objetivo de alojamiento",
-      "date": "2027-01-14",
+      "concept": "Medellín · 3 noches · objetivo de alojamiento",
+      "date": "2027-01-15",
       "cost": {
-        "amount": 4800,
+        "amount": 3600,
         "currency": "MXN"
       },
       "status": "estimated",
       "notes": "Meta estimada para habitación privada, impuestos y cancelación, NO tarifa publicada de Landmark ni 574 Hotel.",
-      "nights": 4,
+      "nights": 3,
       "hotelId": "med-landmark"
     },
     {
@@ -583,9 +567,9 @@
     {
       "id": "food-budget",
       "category": "food",
-      "concept": "Alimentación y gastronomía · 13 días",
+      "concept": "Alimentación y gastronomía · 12 días",
       "cost": {
-        "amount": 6500,
+        "amount": 6000,
         "currency": "MXN"
       },
       "status": "estimated",
@@ -594,13 +578,13 @@
     {
       "id": "activity-budget",
       "category": "activities",
-      "concept": "Guías, entradas y excursiones de los 13 días",
+      "concept": "Guías, entradas y excursiones de los 12 días",
       "cost": {
-        "amount": 5500,
+        "amount": 4500,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión revisada para Guatapé en tour, Comuna 13 guiada, tour del café antioqueño, Tayrona y experiencias de Minca. El tour cafetero concreto puede costar aproximadamente COP 245,000 por persona (~$1,418 MXN al tipo de cambio de referencia 03/11/2026), no se ha cotizado ni reservado para enero 2027. Verificar que la bolsa alcance al contratar operadores."
+      "notes": "Provisión sin cotizar de Comuna 13, Guatapé en tour, finca de café en Minca, Tayrona y otras actividades; las entradas y traslados reales pueden variar. Se elimina la segunda experiencia cafetera de Antioquia."
     },
     {
       "id": "other-budget",
@@ -635,16 +619,22 @@
                 {
                   "from": "MEX",
                   "to": "PTY",
-                  "departure": "2027-01-14T09:10:00-06:00",
-                  "arrival": null,
-                  "operator": "Copa Airlines"
+                  "departure": "2027-01-15T01:20:00-06:00",
+                  "arrival": "2027-01-15T06:00:00-05:00",
+                  "operator": "Copa Airlines",
+                  "flightNumber": "CM 149",
+                  "aircraft": "Boeing 737",
+                  "co2kg": 204
                 },
                 {
                   "from": "PTY",
                   "to": "MDE",
-                  "departure": null,
-                  "arrival": "2027-01-14T17:00:00-05:00",
-                  "operator": "Copa Airlines"
+                  "departure": "2027-01-15T09:32:00-05:00",
+                  "arrival": "2027-01-15T10:55:00-05:00",
+                  "operator": "Copa Airlines",
+                  "flightNumber": "CM 397",
+                  "aircraft": "Boeing 737 MAX 9",
+                  "co2kg": 59
                 }
               ]
             },
@@ -655,15 +645,21 @@
                   "from": "CTG",
                   "to": "PTY",
                   "departure": "2027-01-26T15:05:00-05:00",
-                  "arrival": null,
-                  "operator": "Copa Airlines"
+                  "arrival": "2027-01-26T16:22:00-05:00",
+                  "operator": "Copa Airlines",
+                  "flightNumber": "CM 365",
+                  "aircraft": "Boeing 737",
+                  "co2kg": 65
                 },
                 {
                   "from": "PTY",
                   "to": "MEX",
-                  "departure": null,
-                  "arrival": "2027-01-26T22:05:00-06:00",
-                  "operator": "Copa Airlines"
+                  "departure": "2027-01-26T19:34:00-05:00",
+                  "arrival": "2027-01-26T22:25:00-06:00",
+                  "operator": "Copa Airlines",
+                  "flightNumber": "CM 866",
+                  "aircraft": "Boeing 737",
+                  "co2kg": 215
                 }
               ]
             }
@@ -671,16 +667,109 @@
           "fares": [
             {
               "id": "candidate",
-              "name": "Tarifa candidata · no comprada",
+              "name": "Turista · precio multidestino observado, sin reservar",
               "price": {
-                "amount": 10303,
+                "amount": 9076,
                 "currency": "MXN"
               },
-              "changes": "Verificar condiciones antes del pago",
-              "refunds": "Verificar condiciones antes del pago"
+              "baggage": {
+                "personalItem": null,
+                "cabin": {
+                  "pieces": 1,
+                  "weightKg": null
+                },
+                "checked": {
+                  "pieces": 0,
+                  "weightKg": null
+                }
+              },
+              "changes": "Política específica de cambios por confirmar al reservar; la captura no la detalla.",
+              "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
             }
           ],
-          "notes": "Total multidestino observado el 04/11/2026, equipaje de mano incluido; escala ida 1 h 42 min y regreso 2 h 55 min, condiciones por revalidar."
+          "notes": "PRINCIPAL · Ida 15/01: CM149 MEX 01:20→PTY 06:00, vuelo 3 h 40 min; escala 3 h 32 min; CM397 PTY 09:32→MDE 10:55, vuelo 1 h 23 min. Total ida 9 h 35 min. Boeing 737 / 737 MAX 9. Estimación de emisiones de ida 263 kg CO₂e, retorno 280 kg CO₂e. Salida nocturna con descanso limitado. Retorno común: CM365 CTG 15:05→PTY 16:22; escala 3 h 12 min; CM866 PTY 19:34→MEX 22:25. Los impuestos obligatorios están incluidos para 1 adulto. Una pieza de mano gratis; primera documentada tiene costo adicional no publicado, sin peso confirmado. La captura no precisa el artículo personal ni condiciones de cambios/reembolsos."
+        },
+        {
+          "id": "B",
+          "provider": "Copa Airlines",
+          "status": "planning",
+          "selectedFare": "candidate",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "PTY",
+                  "departure": "2027-01-15T05:55:00-06:00",
+                  "arrival": "2027-01-15T10:38:00-05:00",
+                  "operator": "Copa Airlines",
+                  "flightNumber": "CM 195",
+                  "aircraft": "Boeing 737",
+                  "co2kg": 204
+                },
+                {
+                  "from": "PTY",
+                  "to": "MDE",
+                  "departure": "2027-01-15T12:55:00-05:00",
+                  "arrival": "2027-01-15T14:15:00-05:00",
+                  "operator": "Copa Airlines",
+                  "flightNumber": "CM 654",
+                  "aircraft": "Boeing 737",
+                  "co2kg": 68
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "CTG",
+                  "to": "PTY",
+                  "departure": "2027-01-26T15:05:00-05:00",
+                  "arrival": "2027-01-26T16:22:00-05:00",
+                  "operator": "Copa Airlines",
+                  "flightNumber": "CM 365",
+                  "aircraft": "Boeing 737",
+                  "co2kg": 65
+                },
+                {
+                  "from": "PTY",
+                  "to": "MEX",
+                  "departure": "2027-01-26T19:34:00-05:00",
+                  "arrival": "2027-01-26T22:25:00-06:00",
+                  "operator": "Copa Airlines",
+                  "flightNumber": "CM 866",
+                  "aircraft": "Boeing 737",
+                  "co2kg": 215
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "candidate",
+              "name": "Turista · precio multidestino observado, sin reservar",
+              "price": {
+                "amount": 9719,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": null,
+                "cabin": {
+                  "pieces": 1,
+                  "weightKg": null
+                },
+                "checked": {
+                  "pieces": 0,
+                  "weightKg": null
+                }
+              },
+              "changes": "Política específica de cambios por confirmar al reservar; la captura no la detalla.",
+              "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
+            }
+          ],
+          "notes": "RESPALDO · Ida 15/01: CM195 MEX 05:55→PTY 10:38, vuelo 3 h 43 min; escala 2 h 17 min; CM654 PTY 12:55→MDE 14:15, vuelo 1 h 20 min. Total ida 8 h 20 min. Boeing 737 en ambos tramos. Estimación de emisiones de ida 272 kg CO₂e, retorno 280 kg CO₂e. Llegada más tarde; las plazas pueden trasladarse al domingo. Retorno común: CM365 CTG 15:05→PTY 16:22; escala 3 h 12 min; CM866 PTY 19:34→MEX 22:25. Los impuestos obligatorios están incluidos para 1 adulto. Una pieza de mano gratis; primera documentada tiene costo adicional no publicado, sin peso confirmado. La captura no precisa el artículo personal ni condiciones de cambios/reembolsos."
         }
       ],
       "links": [
@@ -707,9 +796,9 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Rafael%20N%C3%BA%C3%B1ez%20Cartagena"
         }
       ],
-      "boardingNote": "Horarios y terminales por reconfirmar antes de comprar.",
-      "ticketGuide": "No se han emitido billetes. Comparar tarifa de pago final, equipaje, cambios y reembolsos.",
-      "notes": "Precio observado como referencia de planeación; no añadir dos veces al presupuesto."
+      "boardingNote": "Candidatos, no billetes. Opción A despega MEX 01:20 del viernes (llegar al aeropuerto la noche del jueves). B despega MEX 05:55 del viernes. El regreso llega a MEX a las 22:25 del martes.",
+      "ticketGuide": "Elegir Copa multidestino ida viernes 15/01 y regreso martes 26/01: opción A CM149+CM397+CM365+CM866 ($9,076), opción B CM195+CM654+CM365+CM866 ($9,719). En pantalla final verificar artículo personal, peso/dimensiones de cabina, equipaje documentado, cargos, conexión en una reserva, política de cambios y precio final antes de pagar.",
+      "notes": "Tarifas observadas en capturas de Google Flights del 06/11/2026, opción principal A $9,076 y alternativa B $9,719. Ambas de 1 adulto turista, precio total multidestino con tasas obligatorias y regreso 26/01 a las 22:25. Cabina 1 pieza incluida, documentado de pago; tarifa/equipaje sujetos a confirmación al comprar."
     },
     {
       "id": "flight-domestic",
@@ -945,16 +1034,16 @@
       "order": 7
     }
   ],
-  "planningDetails": "Viaje en planeación: vuelos, hoteles, tours y traslados sin comprar ni reservar. Verificar cierre extraordinario de Tayrona, condiciones del mar, equipaje y precios finales. La propuesta de reducir Medellín a tres noches sigue sin aprobarse; no se modifica la ruta vigente hasta elegir un vuelo interno compatible y comparar dos escenarios: acortar viaje adelantando regreso o dedicar una noche adicional al ecolodge, solo si su alojamiento y entorno justifican un día completo de descanso. No trasladar automáticamente esa noche a Cartagena.",
-  "lodgingSummary": "12 noches y cuatro alojamientos candidatos: Manila en Medellín (4), Centro Histórico de Santa Marta (3), un ecolodge próximo a El Zaino (2), y San Diego en Cartagena (3). Todos sin reservar; buscar descanso, baño privado y cancelación flexible.",
-  "heroLodgingSummary": "12 noches, 4 alojamientos",
+  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,076 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; comprobar condiciones de equipaje y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar.",
+  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Manila, El Poblado), Santa Marta 3 (Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (San Diego). Hoteles candidatos sin reservar.",
+  "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
-    "low": 42000,
-    "high": 65000,
+    "low": 39000,
+    "high": 61000,
     "marginMXN": 0,
     "useBudgetRange": true,
-    "referenceFlightMXN": 10303,
-    "notes": "Estimación global para una persona con hoteles objetivo y transportes no cotizados. El rango representa sensibilidad, no una oferta reservable. Los vuelos candidatos ya están incluidos una sola vez. Costos COP se convierten con snapshot 03/11/2026; podrían cambiar por tarifas o tipo de cambio."
+    "referenceFlightMXN": 9076,
+    "notes": "Estimación 1 persona, 12 días y 11 noches; no reservas. Incluye Copa multidestino candidato A una sola vez y Avianca interno. La selección de alternativa B actualiza el vuelo y el total sin duplicar gastos. Equipaje documentado y hoteles por cotizar."
   },
   "hotels": [
     {
@@ -962,10 +1051,10 @@
       "city": "Medellín",
       "name": "Landmark Hotel",
       "address": "Calle 14 #43D-85, Manila, El Poblado, Medellín, Colombia",
-      "checkIn": "2027-01-14",
+      "checkIn": "2027-01-15",
       "checkOut": "2027-01-18",
       "status": "Candidato · no reservado",
-      "rate": "Objetivo para Medellín: $4,000–5,600 MXN por 4 noches; no es cotización de Landmark.",
+      "rate": "Objetivo Medellín: $3,000–4,200 MXN por 3 noches; no es cotización de Landmark.",
       "rateConditions": "1 adulto, habitación y baño privados; comprobar habitación con ventana, impuestos, desayuno, condiciones y cancelación flexible.",
       "notes": "Favorito por confort e instalaciones; alternativa 574 Hotel.",
       "links": [
@@ -1105,9 +1194,9 @@
     {
       "id": "style",
       "title": "Estilo de viaje",
-      "badge": "Equilibrado · 4 alojamientos",
+      "badge": "12 días · 4 alojamientos",
       "tone": "green",
-      "text": "Viaje individual de trece días con excursiones intensas alternadas con pausas. Cuatro alojamientos para doce noches; énfasis en habitaciones privadas, descanso y conexiones sin retrocesos."
+      "text": "Viaje individual de 12 días y 11 noches, con 3 noches en Medellín, 3 en Santa Marta, 2 en Tayrona y 3 en Cartagena. Tour de Guatapé y visita a Comuna 13 en días distintos; experiencia cafetera en Minca."
     },
     {
       "id": "language",
@@ -1161,10 +1250,10 @@
   ],
   "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
   "budgetRange": [
-    42000,
-    65000
+    39000,
+    61000
   ],
-  "budgetNote": "Proyección global provisional para 1 persona, no cotización ni compra. Escenario central $50,662 MXN: Copa $10,303, Avianca Classic COP 217,580 (≈ $1,259 MXN al cambio de referencia 03/11/2026), cuatro alojamientos objetivo $18,600, movilidad terrestre $5,000, comidas $6,500, actividades $5,500 (incluye tour de café desde Medellín), seguro y contingencias $3,500. Intervalo de sensibilidad $42,000–65,000 MXN. Verificar operadores, equipaje y hoteles antes de reservar. majorTransport es informativo y ya está cubierto en expenses, sin duplicación.",
+  "budgetNote": "Proyección orientativa para 1 persona, 12 días/11 noches y sin compras: Copa A $9,076, vuelo interno Avianca COP 217,580 (≈ $1,259 MXN al cambio de referencia 03/11/2026), hoteles objetivo $17,400, traslados terrestres $5,000, alimentos $6,000, actividades $4,500 y seguro/contingencias $3,500. Total central **$46,735 MXN**, rango de sensibilidad **$39,000–61,000 MXN**. Copa B costaría $643 adicionales en tarifa aérea (total central $47,378). Equipaje documentado no incluido en precio publicado. Todos los importes son referencias de planeación, no reservas.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
