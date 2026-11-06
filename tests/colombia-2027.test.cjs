@@ -95,6 +95,19 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.ok(trip.exchangeRates.COP>0);
   const places=JSON.parse(fs.readFileSync('data/places.json','utf8'));
   assert.ok(places[trip.cover]?.photo?.src.startsWith('https://'));
+  assert.equal(trip.cover,'col27-cabo-san-juan');
+  assert.deepEqual(trip.coverSlides,[
+    'col27-cabo-san-juan','col27-comuna13','col27-guatape','col27-marinka','col27-san-diego'
+  ]);
+  assert.equal(new Set(trip.coverSlides).size,5,'El carrusel debe tener fotos únicas');
+  for(const key of trip.coverSlides){
+    assert.ok(places[key]?.photo?.src?.startsWith('https://'),'Foto del carrusel no existe: '+key);
+    assert.ok(places[key]?.photo?.source && places[key]?.photo?.license,'Falta autoría de '+key);
+  }
+  for(const module of ['components/home.js','components/trip.js']){
+    assert.match(fs.readFileSync(module,'utf8'),/trip\.coverSlides\?\.length/,'El carrusel no usa selección editorial: '+module);
+  }
+
   const block1=['col27-botero','col27-provenza','col27-penol','col27-guatape','col27-comuna13','col27-escaleras','col27-pueblito'];
   assert.deepEqual(trip.days.slice(0,3).map(d=>d.places.length),[2,2,3]);
   assert.equal(new Set(block1).size,block1.length);
