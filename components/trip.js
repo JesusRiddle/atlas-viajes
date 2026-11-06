@@ -418,6 +418,7 @@ window.AtlasTrip = function (ctx) {
         });
         let index = 0, front = -1, tick = null, fadeTimer = null, generation = 0, loading = false;
         let inView = false;
+        const failedSources = new Set();
         const zoom = (node, number) => {
             node.classList.remove('triphero-zoom-in', 'triphero-zoom-out');
             void node.offsetWidth;
@@ -426,7 +427,13 @@ window.AtlasTrip = function (ctx) {
         const advance = () => {
             if (!inView || document.hidden || loading || !frame.isConnected) return;
             loading = true;
-            const next = (index + 1) % sources.length;
+            let next = (index + 1) % sources.length;
+            let inspected = 0;
+            while (failedSources.has(sources[next]) && inspected < sources.length) {
+                next = (next + 1) % sources.length;
+                inspected++;
+            }
+            if (inspected >= sources.length || next === index) { loading = false; return; }
             const gen = generation;
             if (next === 0) {
                 zoom(base, next);
@@ -458,7 +465,14 @@ window.AtlasTrip = function (ctx) {
                 index = next;
                 loading = false;
             };
-            preload.onerror = () => { if (generation === gen) loading = false; };
+            preload.onerror = () => {
+                if (generation !== gen) return;
+                failedSources.add(sources[next]);
+                loading = false;
+                // A remote photo may disappear: advance to the next viable image,
+                // without freezing the rest of this trip's cover slideshow.
+                if (inView && !document.hidden) queueMicrotask(advance);
+            };
             preload.src = sources[next];
         };
         const pause = () => {
