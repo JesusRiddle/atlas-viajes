@@ -106,6 +106,17 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
     const wordCount=(trip.placeDescriptions[key]||'').trim().split(/\s+/).length;
     assert.ok(wordCount>=15 && wordCount<=30,'Pie de foto fuera de norma '+key+': '+wordCount);
   }
+  const block2=['col27-santamarta-catedral','col27-parque-novios','col27-minca-paisaje','col27-marinka','col27-taganga-bahia','col27-playa-grande'];
+  assert.deepEqual(trip.days.slice(3,6).map(d=>d.places.length),[2,2,2]);
+  assert.equal(new Set(block2).size,block2.length);
+  for(const key of block2){
+    assert.ok(places[key], 'Foto bloque 2 inexistente: '+key);
+    assert.match(places[key].photo.src,/^https:\/\/(?:thumb|upload)\.wikimedia\.org\//);
+    assert.match(places[key].photo.source,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+    assert.ok(places[key].photo.author && places[key].photo.license && places[key].photo.licenseUrl);
+    const words=(trip.placeDescriptions[key]||'').trim().split(/\s+/).length;
+    assert.ok(words>=15 && words<=30,'Pie de foto fuera de norma: '+key);
+  }
   assert.equal(trip.mapPoints.length,7);
   assert.equal(trip.intro.split(/\s+/).length>=70,true);
   assert.equal(trip.introHighlights.every(name=>trip.intro.includes(name)),true);
