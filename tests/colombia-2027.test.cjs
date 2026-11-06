@@ -65,6 +65,14 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.equal(trip.hotels[0].checkOut,'2027-01-18');
   assert.equal(trip.majorTransport[0].options[0].fares[0].price.amount,9076);
   assert.equal(trip.majorTransport[0].options[1].fares[0].price.amount,9719);
+  const [primary, backupOption] = trip.majorTransport[0].options;
+  for (const [option, flightNumbers] of [[primary,['MTQ5','Mzk3']],[backupOption,['MTk1','NjU0']]]) {
+    assert.equal(option.links?.length,1);
+    const bookingLink=option.links[0].url;
+    assert.ok(bookingLink.startsWith('https://www.google.com/travel/flights/booking?tfs='));
+    for(const part of flightNumbers) assert.ok(bookingLink.includes(part),'Falta tramo del candidato en URL');
+    assert.ok(bookingLink.includes('hl=es-419&gl=MX'));
+  }
   assert.ok(trip.days[8].transportRefs.includes('bus-tayrona-cartagena'));
   assert.equal(trip.majorTransport.find(x=>x.id==='bus-tayrona-cartagena').options.length,2);
 });
