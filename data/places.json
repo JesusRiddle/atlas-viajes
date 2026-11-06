@@ -4588,5 +4588,60 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "attribution": "Tamyx"
     }
+  },
+  "col27-tayrona-costa": {
+    "name": "Costa natural del Parque Tayrona",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Landscape_Parque_Nacional_Natural_Tayrona.jpg/960px-Landscape_Parque_Nacional_Natural_Tayrona.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Landscape_Parque_Nacional_Natural_Tayrona.jpg",
+      "author": "Thomas Fuhrmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Thomas Fuhrmann"
+    }
+  },
+  "col27-tayrona-laguna": {
+    "name": "Laguna y palmares de Tayrona",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Coastal_lagoon_with_Typha_marsh_and_coconut_palms_in_Tayrona_National_Park%2C_2026.jpg/960px-Coastal_lagoon_with_Typha_marsh_and_coconut_palms_in_Tayrona_National_Park%2C_2026.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Coastal_lagoon_with_Typha_marsh_and_coconut_palms_in_Tayrona_National_Park,_2026.jpg",
+      "author": "Mottenpriesterin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Mottenpriesterin"
+    }
+  },
+  "col27-tayrona-sendero": {
+    "name": "Sendero ecológico del Parque Tayrona",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendero_Parque_Tayrona.jpg/960px-Sendero_Parque_Tayrona.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sendero_Parque_Tayrona.jpg",
+      "author": "Moro Kuni",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Moro Kuni"
+    }
+  },
+  "col27-cabo-san-juan": {
+    "name": "Playa Cabo San Juan",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Cabo_San_Juan%2C_Colombia.jpg/960px-Cabo_San_Juan%2C_Colombia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cabo_San_Juan,_Colombia.jpg",
+      "author": "OpenAperture",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "OpenAperture"
+    }
+  },
+  "col27-cabo-amanecer": {
+    "name": "Amanecer en Cabo San Juan",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Cabo_San_Juan_del_Gu%C3%ADa%2C_Parque_Tayrona.jpg/960px-Cabo_San_Juan_del_Gu%C3%ADa%2C_Parque_Tayrona.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cabo_San_Juan_del_Gu%C3%ADa,_Parque_Tayrona.jpg",
+      "author": "Patriarboleda",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Patriarboleda"
+    }
   }
 }
