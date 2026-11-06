@@ -107,7 +107,7 @@
       "pm": "Migración y traslado al alojamiento en Manila. Con llegada temprana: visita diurna de Plaza Botero y Parque de Bolívar; con llegada de 14:15, mover las plazas al domingo para evitar prisas y recorrer únicamente alrededores del hotel.",
       "night": "Cena y paseo por Provenza, sujeto al cansancio tras el vuelo nocturno. Desplazamientos nocturnos en transporte formal.",
       "mobility": "• *Aeropuerto → Manila:* Vehículo precontratado o autorizado, con margen por migración y tráfico.\n• *Centro histórico:* Traslados de día a Plaza Botero y Parque de Bolívar; si llegas tarde, cambiarlos al domingo.",
-      "note": "• *Vuelo candidato:* Copa opción A, salida muy de madrugada; tarifa observada $9,076 MXN por multidestino, sin comprar.\n• *Plan B:* Con opción B, llegada 14:15 y plazas el domingo. Evitar sacrificar Comuna 13.\n• *Salud previa:* Verificar recomendaciones para Tayrona y Minca, incluida la fiebre amarilla, con suficiente anticipación.",
+      "note": "• *Vuelo candidato:* Copa opción A, salida muy de madrugada; tarifa observada $9,076 MXN por multidestino, sin comprar.\n• *Respaldo:* Copa B llegaría 14:15 y movería las plazas al domingo; no se incorpora su tarifa al presupuesto central.\n• *Salud previa:* Verificar recomendaciones para Tayrona y Minca, incluida la fiebre amarilla, con suficiente anticipación.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -139,12 +139,22 @@
       "pm": "Piedra del Peñol (más de 700 escalones, según condiciones), calles de zócalos y almuerzo junto al embalse. Lancha opcional.",
       "night": "Regreso a Medellín al final de la tarde. Cena cercana y descanso.",
       "mobility": "• *Cómo trasladarte:* Excursión terrestre de día completo; el tiempo de carretera puede variar, especialmente en sábado.",
-      "note": "• *Tips del día:* Más de 700 escalones en la piedra; el paseo en lancha es opcional y no debe apresurar el regreso.",
+      "note": "• *Tour Guatapé:* Salida de referencia 07:00, duración publicada de 10 a 12 horas; incluye transporte y alimentos según operador. Tour COP 129,999 (≈ $752 MXN), precio de referencia no reservado.\n• *Piedra del Peñol:* El ascenso es adicional en el tour de referencia, COP 35,000 (≈ $203 MXN); alrededor de 740 escalones y esfuerzo físico.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "med-landmark"
+      "hotel": "med-landmark",
+      "mobilityLinks": [
+        {
+          "label": "Tour organizado Guatapé · operador y inclusiones",
+          "url": "https://toursguatape.com/en/producto/full-day-guatape/"
+        },
+        {
+          "label": "Piedra del Peñol · referencia de horario y entrada",
+          "url": "https://visitaguatape.com/guatape/piedra-del-penol-entrada-horarios"
+        }
+      ]
     },
     {
       "n": 3,
@@ -161,7 +171,16 @@
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "med-landmark",
-      "mobilityLinks": []
+      "mobilityLinks": [
+        {
+          "label": "Comuna 13 · mapa de encuentro",
+          "url": "https://www.google.com/maps/search/?api=1&query=Escaleras%20Electricas%20Comuna%2013%20Medellin"
+        },
+        {
+          "label": "Pueblito Paisa · mapa",
+          "url": "https://www.google.com/maps/search/?api=1&query=Pueblito%20Paisa%20Medellin"
+        }
+      ]
     },
     {
       "n": 4,
@@ -196,7 +215,7 @@
       "pm": "Almuerzo en Minca y visita a cascadas de Marinka si los horarios, traslados y senderos lo permiten. Priorizar el café; reducir la caminata o las cascadas si el tour se extiende.",
       "night": "Regreso a Santa Marta antes de anochecer; cena cerca del hotel.",
       "mobility": "• *Cómo trasladarte:* Tour o traslado privado adecuado a caminos rurales; verificar recogida y accesibilidad.",
-      "note": "• *Café trasladado:* Se elimina el tour cafetero antioqueño; Minca concentra esta experiencia.\n• *Plan B:* Si finca y cascadas no caben con seguridad en el mismo día, dar prioridad al café y sustituir Marinka por una parada breve.",
+      "note": "• *Tour cafetero:* Finca La Victoria publica visita de 50 min, 09:00–16:30, por COP 40,000 (≈ $232 MXN); reconfirmar la disponibilidad para el 19 de enero.\n• *Plan B:* Cascadas de Marinka solo si horarios, camino y traslado permiten volver a Santa Marta de día.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -204,8 +223,12 @@
       "hotel": "sm-isabella",
       "mobilityLinks": [
         {
-          "label": "Finca La Victoria · sitio oficial",
-          "url": "https://www.fincalavictoria.com/"
+          "label": "Finca La Victoria 1892 · horario, visita y precio oficial",
+          "url": "https://www.fincalavictoria1892.com/"
+        },
+        {
+          "label": "Cascadas Marinka · ubicación",
+          "url": "https://www.google.com/maps/search/?api=1&query=Cascadas%20Marinka%20Minca"
         }
       ]
     },
@@ -250,7 +273,7 @@
       "pm": "Sendero autorizado a Cabo San Juan, aproximadamente 2–3 horas por sentido según ritmo. Almuerzo y baño solo en zonas permitidas; regreso con margen.",
       "night": "Descanso y cena en el ecolodge después de la caminata.",
       "mobility": "• *Cómo trasladarte:* Entrada El Zaino, transporte interno según operación vigente, caminata aproximada 2–3 horas por sentido.",
-      "note": "• *Acceso Tayrona:* Confirmar apertura, cupos, horarios y estado de senderos para el 22 de enero.\n• *Seguridad:* No ingresar al mar en playas prohibidas o con corrientes peligrosas; llevar agua y calzado apropiado.",
+      "note": "• *Acceso Tayrona:* Enero es temporada alta; El Zaino publica apertura desde las 07:00 y salida hasta las 18:00. Extranjeros no residentes (no CAN) COP 96,500 (≈ $559 MXN) según tarifa oficial publicada; comprobar 2027.\n• *Seguro obligatorio:* Adquirir póliza de asistencia a visitante avalada por el parque; no confundirla con seguro general del viaje.\n• *Seguridad:* Respetar senderos, cierre extraordinario y playas prohibidas; agua y calzado cómodo.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -328,7 +351,7 @@
       "pm": "Vuelo candidato Copa CTG–PTY–MEX, salida 15:05 y conexión en Panamá.",
       "night": "Llegada prevista a CDMX 22:05; sin noche adicional en Cartagena.",
       "mobility": "• *Cómo trasladarte:* CTG → PTY → MEX: vuelo internacional candidato, sin compra; traslado hotel → aeropuerto con margen.",
-      "note": "• *Tips del día:* Verificar documentación, franquicia de equipaje, terminal, precio final y horarios antes de comprar.",
+      "note": "• *Regreso Copa A/B:* CTG 15:05 → PTY 16:22 → MEX 22:25; conexión de 3 h 12 min. Horarios de referencia, ninguno comprado.\n• *Equipaje:* Una pieza de mano gratis en Copa; maleta documentada de pago, con reserva presupuestaria sin cotizar.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -349,11 +372,11 @@
       [
         {
           "title": "Parque Tayrona · viernes 22 enero 2027",
-          "description": "SIN COMPRAR. Confirmar apertura extraordinaria y calendario de cierres, cupos, ingreso por El Zaino, senderos habilitados, tarifa y seguro obligatorio si aplica. Si el parque cierra, conservar la estancia natural y sustituir caminata por actividades autorizadas; valorar reordenar noches solo con cancelación flexible.",
+          "description": "SIN COMPRAR. El viernes 22/01 cae en temporada alta (1 dic–31 ene): acceso El Zaino publicado desde las 07:00 y salida hasta las 18:00. Tarifa oficial vigente para extranjero no residente ajeno a CAN: COP 96,500 (≈ $559 MXN) más seguro contra accidentes obligatorio, a reconfirmar para 2027. Verificar cierres extraordinarios, cupos, senderos y condiciones del mar.",
           "links": [
             {
-              "label": "Parques Nacionales Naturales de Colombia",
-              "url": "https://www.parquesnacionales.gov.co/"
+              "label": "Parques Nacionales · acceso, horarios, tarifas y seguro",
+              "url": "https://www.parquesnacionales.gov.co/nuestros-parques/pnn-tayrona/"
             }
           ]
         },
@@ -408,15 +431,15 @@
         },
         {
           "title": "Tours prioritarios: Guatapé y Comuna 13; café en Minca",
-          "description": "SIN RESERVAR. Guatapé sábado 16 en tour de día completo, Comuna 13 con guía el domingo 17; plazas Botero/Bolívar y Pueblito Paisa se reparten viernes/domingo según llegada de Copa A o B. La finca cafetera se traslada a Minca el martes 19 para evitar dos excursiones en Medellín.",
+          "description": "SIN RESERVAR. Guatapé sábado 16 con tour de día completo, cotización de referencia COP 129,999 (≈ $752 MXN), entrada a Piedra no incluida (referencia COP 35,000 ≈ $203 MXN). Comuna 13 guiada domingo 17. Café en Finca La Victoria Minca martes 19, tour oficial COP 40,000 (≈ $232 MXN), con regreso diurno. Plaza Botero y Parque de Bolívar viernes 15 si el vuelo A llega conforme al horario.",
           "links": [
             {
-              "label": "Tour de café de medio día · operador candidato",
-              "url": "https://colombiaentusojostours.com/tours-grupales/tour-del-cafe-medellin/"
+              "label": "Guatapé · tour de día completo y condiciones",
+              "url": "https://toursguatape.com/en/producto/full-day-guatape/"
             },
             {
-              "label": "Tour de café alternativo · operador candidato",
-              "url": "https://localtoursmedellin.com/tours/tour-del-cafe-en-medellin/"
+              "label": "Café La Victoria · finca Minca y horarios",
+              "url": "https://www.fincalavictoria1892.com/"
             }
           ]
         },
@@ -445,8 +468,13 @@
       [
         {
           "title": "Minca · finca cafetera y cascadas de Marinka",
-          "description": "Prioridad al tour del café en Minca el 19 de enero. Combinar con cascadas de Marinka únicamente si el operador, accesos y regreso diurno lo permiten. No duplicar el tour cafetero en Antioquia.",
-          "links": []
+          "description": "Finca La Victoria: tour del café de unos 50 minutos, todos los días en su horario anunciado, COP 40,000 (≈ $232 MXN). Antes de viajar confirmar acceso y precio vigente; Marinka depende de rutas y transportistas.",
+          "links": [
+            {
+              "label": "Finca La Victoria 1892 · web oficial",
+              "url": "https://www.fincalavictoria1892.com/"
+            }
+          ]
         },
         {
           "title": "Taganga → Playa Grande",
@@ -475,94 +503,94 @@
   "expenses": [
     {
       "id": "air-copa",
-      "category": "transport",
-      "concept": "Copa multidestino MEX–MDE / CTG–MEX",
+      "category": "flight",
+      "concept": "Copa Airlines · multidestino, opción A principal",
       "date": "2027-01-15",
       "cost": {
         "amount": 9076,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Copa multidestino 15/01 MEX–PTY–MDE y 26/01 CTG–PTY–MEX, candidato A mostrado en Google Flights por $9,076 MXN, 1 adulto turista, impuestos obligatorios incluidos. Equipaje de mano 1 pieza sin costo; documentada por tarifa; peso/dimensiones no especificados. No comprado. Candidato B cuesta $9,719 MXN."
+      "notes": "Tarifa observada 06/11/2026 para Copa A multidestino MEX–PTY–MDE (15/01) y CTG–PTY–MEX (26/01), una persona turista, impuestos obligatorios incluidos, una pieza de equipaje de mano sin cargo, maleta documentada con costo. No comprada. Opción B de respaldo $9,719 (NO usada en el presupuesto base)."
     },
     {
       "id": "air-avianca",
-      "category": "transport",
-      "concept": "Avianca MDE–SMR · tarifa Classic candidata",
+      "category": "flight",
+      "concept": "Avianca · vuelo interno MDE–SMR",
       "date": "2027-01-18",
       "cost": {
         "amount": 1259,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Tarifa Avianca Classic original COP 217,580, observada 04/11/2026; equivalente ≈ $1,259 MXN con tipo de cambio de referencia 03/11/2026 (0.00578764). Es estimación, no compra ni garantía de tarifa."
+      "notes": "Avianca Classic MDE–SMR, 18/01, tarifa candidata original COP 217,580 (≈ $1,259 MXN al cambio 03/11/2026). Incluye prestaciones de la captura original por reconfirmar, no comprado."
     },
     {
       "id": "hotel-med",
       "category": "lodging",
-      "concept": "Medellín · 3 noches · objetivo de alojamiento",
+      "concept": "Landmark Hotel, Medellín · 3 noches",
       "date": "2027-01-15",
       "cost": {
-        "amount": 3600,
+        "amount": 7000,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Meta estimada para habitación privada, impuestos y cancelación, NO tarifa publicada de Landmark ni 574 Hotel.",
+      "notes": "Provisión para Landmark Hotel del 15 al 18 enero (3 noches, 1 adulto), no cotización específica. Referencia de precios publicados de Booking para otras fechas: aproximadamente $6,165–$8,090 MXN por tres noches con condiciones cambiantes; reservar solo tras verificar tarifa total.",
       "nights": 3,
       "hotelId": "med-landmark"
     },
     {
       "id": "hotel-santa",
       "category": "lodging",
-      "concept": "Santa Marta · 3 noches · objetivo de alojamiento",
+      "concept": "Casa de Isabella, Santa Marta · 3 noches",
       "date": "2027-01-18",
       "cost": {
-        "amount": 3800,
+        "amount": 5000,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Meta estimada, NO tarifa verificada de Casa de Isabella.",
+      "notes": "Provisión para Casa de Isabella (Kali Hotels) del 18 al 21 de enero, sin cotización fechada. Referencias de otras fechas muestran aproximadamente $4,467–$5,000 MXN por 3 noches; impuestos, desayuno y cancelación se validarán.",
       "nights": 3,
       "hotelId": "sm-isabella"
     },
     {
       "id": "hotel-tayrona",
       "category": "lodging",
-      "concept": "Tayrona · ecolodge · 2 noches · objetivo",
+      "concept": "Senda Koguiwa, Tayrona · 2 noches",
       "date": "2027-01-21",
       "cost": {
-        "amount": 4800,
+        "amount": 5200,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Meta estimada, NO tarifa verificada de Senda Koguiwa/Watapuy.",
+      "notes": "Provisión para Senda Koguiwa, 21–23 enero, dos noches. El hotel publica tarifa estándar desde COP 400,000 (≈ $2,315 MXN) por noche en temporada alta, con precio efectivo, tasas y cancelación por confirmar. No incluye parque.",
       "nights": 2,
       "hotelId": "tay-koguiwa"
     },
     {
       "id": "hotel-cartagena",
       "category": "lodging",
-      "concept": "Cartagena · 3 noches · objetivo de alojamiento",
+      "concept": "Casa La Fe, Cartagena · 3 noches",
       "date": "2027-01-23",
       "cost": {
-        "amount": 5200,
+        "amount": 10500,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Meta estimada, NO tarifa verificada de Casa La Fe ni Bantú.",
+      "notes": "Provisión para Casa La Fe, San Diego, 23–26 enero (3 noches), sin cotización para esas fechas. Referencias de Booking en otras fechas muestran promociones de alrededor de $9,871–$11,517 MXN por 3 noches; confirmar impuestos, condiciones y precio pagable.",
       "nights": 3,
       "hotelId": "ct-lafe"
     },
     {
       "id": "ground-mobility",
       "category": "transport",
-      "concept": "Traslados aeroportuarios, Guatapé, Minca y Tayrona→Cartagena",
+      "concept": "Traslados urbanos, aeroportuarios y entre ciudades",
       "cost": {
-        "amount": 5000,
+        "amount": 6000,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión global sin cotizar transportistas. Incluye movilidad terrestre e interurbana; no es precio confirmado de Marsol ni de servicio privado."
+      "notes": "Provisión total para transferencias aeropuerto MDE y SMR, taxis urbanos, Minca, Taganga y lancha a Playa Grande, traslado Santa Marta→El Zaino, bus/traslado El Zaino→Cartagena y aeropuerto CTG. Tour Guatapé con transporte se registra en actividades y NO se duplica aquí."
     },
     {
       "id": "food-budget",
@@ -573,18 +601,18 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión estimada, no precios de restaurantes; incluye comidas y cenas. No sumar de nuevo al presupuesto diario."
+      "notes": "Meta de $500 MXN diarios promedio durante 12 días, con desayunos que puedan venir incluidos en hospedaje o tours y un margen para comidas caribeñas; no supone precios confirmados ni duplicación de comidas incluidas en Guatapé."
     },
     {
       "id": "activity-budget",
       "category": "activities",
-      "concept": "Guías, entradas y excursiones de los 12 días",
+      "concept": "Tours de Guatapé, café, Tayrona y entradas",
       "cost": {
-        "amount": 4500,
+        "amount": 5000,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión sin cotizar de Comuna 13, Guatapé en tour, finca de café en Minca, Tayrona y otras actividades; las entradas y traslados reales pueden variar. Se elimina la segunda experiencia cafetera de Antioquia."
+      "notes": "Provisión para Guatapé organizado (referencia COP 129,999 ≈ $752 MXN, sin ascenso), Piedra del Peñol (referencia COP 35,000 ≈ $203 MXN), Comuna 13 guiada, finca La Victoria (COP 40,000 ≈ $232 MXN), Marinka, Tayrona (extranjero temporada alta 2026 COP 96,500 ≈ $559 MXN más seguro de asistencia), otras entradas y actividades. Tarifas 2027 y cupos por confirmar; no incluye islas opcionales."
     },
     {
       "id": "other-budget",
@@ -595,7 +623,18 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión conjunta para seguro, tasas pequeñas y variaciones menores; no cubre grandes recargos de vuelos u hoteles."
+      "notes": "Seguro médico de viaje y fondo de contingencia para imprevistos menores. El seguro específico de acceso a Tayrona se considera en actividades; no cubrir situaciones médicas catastróficas con este saldo."
+    },
+    {
+      "id": "luggage-allowance",
+      "category": "other",
+      "concept": "Reserva para equipaje documentado o cargos de viaje",
+      "cost": {
+        "amount": 1600,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Bolsa preventiva, NO tarifa cotizada ni equipaje contratado. Copa A incluye 1 pieza de mano; una documentada tiene cargo adicional variable. Si no se documenta equipaje, se libera este saldo."
     }
   ],
   "majorTransport": [
@@ -1050,12 +1089,12 @@
   "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Manila, El Poblado), Santa Marta 3 (Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (San Diego). Hoteles candidatos sin reservar.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
-    "low": 39000,
-    "high": 61000,
+    "low": 54000,
+    "high": 71000,
     "marginMXN": 0,
     "useBudgetRange": true,
     "referenceFlightMXN": 9076,
-    "notes": "Estimación 1 persona, 12 días y 11 noches; no reservas. Incluye Copa multidestino candidato A una sola vez y Avianca interno. La selección de alternativa B actualiza el vuelo y el total sin duplicar gastos. Equipaje documentado y hoteles por cotizar."
+    "notes": "Presupuesto integral de planeación para 1 persona, 12 días/11 noches, calculado exclusivamente con la opción A de Copa ($9,076) y hoteles candidatos Landmark, Casa de Isabella, Senda Koguiwa y Casa La Fe. Cada partida no cotizada es una provisión razonada, no una oferta reservable. La opción B ($9,719) es respaldo; NO entra en el total principal. Rango de sensibilidad por habitaciones, equipaje y operadores. Ahorro potencial si viajas solo con equipaje de mano."
   },
   "hotels": [
     {
@@ -1066,7 +1105,7 @@
       "checkIn": "2027-01-15",
       "checkOut": "2027-01-18",
       "status": "Candidato · no reservado",
-      "rate": "Objetivo Medellín: $3,000–4,200 MXN por 3 noches; no es cotización de Landmark.",
+      "rate": "Provisión: $7,000 MXN por 3 noches, 15–18 enero. Referencias Booking de otras fechas $6,165–$8,090 MXN/3 noches; NO cotización para enero 2027.",
       "rateConditions": "1 adulto, habitación y baño privados; comprobar habitación con ventana, impuestos, desayuno, condiciones y cancelación flexible.",
       "notes": "Favorito por confort e instalaciones; alternativa 574 Hotel.",
       "links": [
@@ -1081,13 +1120,13 @@
       "id": "sm-isabella",
       "city": "Santa Marta",
       "name": "Casa de Isabella",
-      "address": "Centro Histórico, Santa Marta, Colombia",
+      "address": "Carrera 2 #19-20, Centro Histórico, Santa Marta, Colombia (verificar la dirección al reservar)",
       "checkIn": "2027-01-18",
       "checkOut": "2027-01-21",
       "status": "Candidato · no reservado",
-      "rate": "Objetivo para Santa Marta: $3,000–4,500 MXN por 3 noches; no es cotización.",
+      "rate": "Provisión: $5,000 MXN por 3 noches, 18–21 enero. Referencias Booking de otras fechas aprox. $4,467–$5,000 MXN/3 noches; NO cotización.",
       "rateConditions": "1 adulto, habitación y baño privados, con aire acondicionado, poco ruido nocturno y cancelación flexible.",
-      "notes": "Solicitar habitación interior tranquila; consultar estado de ventilación y luz. Web oficial confirmada como marca Kali Hotels. Dos fuentes dan nomenclaturas de calle diferentes; verificar número exacto antes de coordinar recogida.",
+      "notes": "Hotel boutique Kali Hotels cercano a la Catedral y Parque de los Novios; habitación con baño privado y aire acondicionado. Confirmar la dirección exacta y horarios de check-in, cancelación y desayuno.",
       "links": [
         {
           "label": "Casa de Isabella · web oficial Kali Hotels",
@@ -1104,7 +1143,7 @@
       "checkIn": "2027-01-21",
       "checkOut": "2027-01-23",
       "status": "Candidato · no reservado",
-      "rate": "Objetivo ecolodge: $4,000–5,500 MXN por 2 noches; no es cotización del hotel.",
+      "rate": "Provisión: $5,200 MXN por 2 noches, 21–23 enero. Estándar publicado en temporada alta desde COP 400,000 (≈ $2,315 MXN) por noche; tarifa para enero 2027 por confirmar.",
       "rateConditions": "1 adulto, baño privado y cancelación flexible, especialmente ante cierres del parque.",
       "notes": "Primera opción por acceso a El Zaino; alternativa Senda Watapuy, después Villa María Tayrona.",
       "links": [
@@ -1123,7 +1162,7 @@
       "checkIn": "2027-01-23",
       "checkOut": "2027-01-26",
       "status": "Candidato · no reservado",
-      "rate": "Objetivo para Cartagena: $4,500–6,000 MXN por 3 noches; no es cotización de Casa La Fe.",
+      "rate": "Provisión: $10,500 MXN por 3 noches, 23–26 enero. Referencias de otras fechas Booking $9,871–$11,517 MXN/3 noches; NO cotización para estas fechas.",
       "rateConditions": "1 adulto, baño privado y habitación silenciosa; verificar piscina, desayuno, cargos y cancelación.",
       "notes": "Comparar con Bantú y alternativas boutique tranquilas en San Diego; no pagar sobreprecio injustificado. Edificio histórico sin ascensor; confirmar piso y accesibilidad de la habitación (piscina en terraza).",
       "links": [
@@ -1156,7 +1195,7 @@
       },
       "01": {
         "status": "recommended",
-        "description": "29 a 33 °C. Enero es relativamente seco en Santa Marta y suele favorecer Guatapé y Tayrona; el viento puede cancelar lanchas.",
+        "description": "29 a 33 °C. Caribe relativamente seco, con posibles vientos y oleaje. Enero es temporada alta de Tayrona (1 dic–31 ene): tarifa de extranjero y seguro de asistencia, sujetos a confirmación.",
         "icon": "sun"
       },
       "02": {
@@ -1258,14 +1297,38 @@
     {
       "label": "Tipo de cambio COP/MXN 3/11/2026 (BCE/Banca d’Italia vía The Rates API)",
       "url": "https://theratesapi.com/convert/cop-to-mxn/"
+    },
+    {
+      "label": "Landmark Hotel · tarifas comparativas de otras fechas (Booking)",
+      "url": "https://www.booking.com/hotel/co/landmark.es-mx.html"
+    },
+    {
+      "label": "Casa de Isabella · tarifas comparativas de otras fechas (Booking)",
+      "url": "https://www.booking.com/hotel/co/casa-de-isabella.es-mx.html"
+    },
+    {
+      "label": "Senda Koguiwa · tarifa estándar publicada por temporada",
+      "url": "https://sendahotels.com/en/hotel/senda-koguiwa/bedrooms/standard-room/"
+    },
+    {
+      "label": "Casa La Fe · tarifas comparativas de otras fechas (Booking)",
+      "url": "https://www.booking.com/hotel/co/casa-la-fe.es-mx.html"
+    },
+    {
+      "label": "Guatapé · tour con inclusiones y precio",
+      "url": "https://toursguatape.com/en/producto/full-day-guatape/"
+    },
+    {
+      "label": "Café La Victoria 1892 · precio y horarios oficiales",
+      "url": "https://www.fincalavictoria1892.com/"
     }
   ],
   "sourceNote": "Datos aéreos aportados por el viajero a partir de búsquedas manuales; vuelos, horarios y precios sujetos a confirmación.",
   "budgetRange": [
-    39000,
-    61000
+    54000,
+    71000
   ],
-  "budgetNote": "Proyección orientativa para 1 persona, 12 días/11 noches y sin compras: Copa A $9,076, vuelo interno Avianca COP 217,580 (≈ $1,259 MXN al cambio de referencia 03/11/2026), hoteles objetivo $17,400, traslados terrestres $5,000, alimentos $6,000, actividades $4,500 y seguro/contingencias $3,500. Total central **$46,735 MXN**, rango de sensibilidad **$39,000–61,000 MXN**. Copa B costaría $643 adicionales en tarifa aérea (total central $47,378). Equipaje documentado no incluido en precio publicado. Todos los importes son referencias de planeación, no reservas.",
+  "budgetNote": "CIFRA FINAL DE PLANEACIÓN (no precio confirmado): **$60,135 MXN para 1 persona, 12 días y 11 noches, con Copa A**. Copa multidestino $9,076; Avianca Classic COP 217,580 (≈ $1,259 MXN al cambio del 03/11/2026); Landmark Medellín 3 noches $7,000; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Casa La Fe Cartagena 3 noches $10,500; movilidad terrestre y lancha $6,000; alimentación $6,000; entradas y tours $5,000; seguro de viaje y contingencias $3,500; reserva para equipaje documentado $1,600. Rango de sensibilidad $54,000–71,000 MXN. Ningún hotel/tour está cotizado para las fechas exactas. Copa B solo como respaldo: sumaría $643 al vuelo, NO se suma a Copa A. Se cuentan todos los vuelos una sola vez. Si no necesitas documentar equipaje, el objetivo se reduce hasta $58,535 MXN. Mantener presupuesto redondeado de $60,000–61,000 MXN mientras se verifican hoteles.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
@@ -1277,7 +1340,7 @@
   "emphasisStyle": false,
   "linkRailInText": false,
   "knownCosts": [],
-  "costExclusions": "Por cotizar: tarifa efectiva de hoteles, Copa con maleta documentada si se necesita, movilidad privada en el corredor Tayrona–Cartagena, entradas y tours detallados. Excursiones a islas y upgrades de habitación son opcionales y no están presupuestados específicamente.",
+  "costExclusions": "Pendientes de precio definitivo: las habitaciones para 15–26 de enero, condiciones de cancelación, variación de divisa y monto exacto del equipaje documentado. La reserva presupuestaria de $1,600 para equipaje puede liberarse si no se documenta. Excursión a Islas del Rosario, upgrade de hoteles, compras personales y cargos extraordinarios NO están incluidos.",
   "exchangeNote": "Referencia 3/11/2026: COP 1 ≈ $0.00578764 MXN. Los cargos reales dependen del banco, de comisiones y del día de pago.",
   "railSummary": [],
   "railTotal": null,
