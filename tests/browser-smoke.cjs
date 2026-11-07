@@ -191,9 +191,11 @@ const assert = require('node:assert/strict');
           const renderedPhotos=await page.locator('#dias .gallery img').evaluateAll(imgs=>imgs.map(img=>img.getAttribute('src')));
           assert.equal(new Set(renderedPhotos).size,24,'Colombia: no duplicar imágenes diarias');
           assert.ok(renderedPhotos.every(src=>src.startsWith('https://')),'Colombia: solo imágenes externas HTTPS');
-          assert.match(await page.locator('#costes').innerText(),/56[,.]250/,'Colombia: presupuesto con Moabi y Copa A sin equipaje documentado');
+          assert.match(await page.locator('#costes').innerText(),/51[,.]683/,'Colombia: presupuesto con Moabi y Copa A sin equipaje documentado');
           assert.match(await page.locator('#alojamientos').innerText(),/Moabi Hotel/,'Colombia: Moabi visible en alojamiento');
           assert.doesNotMatch(await page.locator('#alojamientos').innerText(),/Landmark/,'Colombia: Landmark retirado de alojamientos');
+          assert.match(await page.locator('#alojamientos').innerText(),/Cabrero House Boutique/,'Cartagena: primer candidato vigente');
+          assert.doesNotMatch(await page.locator('#alojamientos').innerText(),/Casa La Fe/,'Cartagena: hotel descartado retirado');
         }
         if (id === 'suiza-nevada-2027') {
           const swissClimate = page.locator('#plan .overview-side .overview-climate-card');
