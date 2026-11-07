@@ -1,5 +1,15 @@
 # Registro de avance · Colombia 2027
 
+## Actualización vigente · Santa Marta, 06/11/2026
+
+**Primera opción seleccionada (sin reservar):** Hotel Centro Histórico Bahía Suite, del **18 al 21 de enero de 2027**, 1 adulto, **Habitación Deluxe matrimonial, $2,069 MXN total por 3 noches**, con aire acondicionado, baño privado, cancelación gratuita hasta **18/01/2027 a las 18:00** y pago en alojamiento sin adelanto según captura. Desayuno por confirmar. [Booking (anuncio martienda-deluxe-centro-historico)](https://www.booking.com/hotel/co/martienda-deluxe-centro-historico.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&no_rooms=1). **Verificar que este anuncio corresponda al nombre comercial indicado, la dirección exacta y el ruido interno antes de reservar.**
+
+**Segunda opción excluyente:** [Casa Verde Boutique Hotel](https://www.booking.com/hotel/co/casa-verde.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&no_rooms=1), 3 noches, **$6,997 MXN**, Estándar Queen 14 m², aire acondicionado, baño privado, tarifa **no reembolsable** de la captura; no añadir ambas opciones al presupuesto. Comfort House de Marisol no mostraba disponibilidad 18–21/01; Casa de Leda y Casa de Isabella no ofrecen costo-beneficio suficiente para este itinerario.
+
+**Reconciliación presupuesto:** se sustituyó la provisión de Santa Marta $5,000 por la tarifa Bahía Suite $2,069; ahorro **$2,931 MXN**. Presupuesto central ahora **$48,752 MXN**, rango orientativo **$42,670–59,670 MXN**. Alojamiento total del escenario 3+3+2+3 noches **$17,970 MXN**. El escenario alternativo El Viajero #2 Cartagena, con Bahía Suite Santa Marta, sería $46,606 MXN de forma aritmética (sin ajustar desayunos ni traslados). **Tayrona sin decidir, solo ecolodge provisional presupuestado**. El pasadía Islas del Rosario sigue sin cotización. No hay reservas, no hacer merge a main.
+
+---
+
 ## Estado vigente Cartagena y auditoría triple · 06/11/2026
 
 **Decisión:** Cabrero House Boutique es la primera opción para Cartagena (23–26 enero 2027, una persona, 3 noches), tarifa flexible de **$5,933 MXN** con desayuno y cancelación gratuita antes del 21 de enero. [Booking Cabrero House](https://www.booking.com/hotel/co/cabrero-house-boutique.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1). Sin reservar. Solicitar habitación con vista al jardín, alejada de recepción y pasillos transitados.
