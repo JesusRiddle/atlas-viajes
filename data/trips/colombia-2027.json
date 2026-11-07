@@ -215,7 +215,7 @@
       "transportRefs": [
         "flight-domestic"
       ],
-      "hotel": "sm-isabella",
+      "hotel": "sm-bahia-suite",
       "mobilityLinks": [
         {
           "label": "Avianca · vuelo y condiciones",
@@ -244,7 +244,7 @@
       ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "sm-isabella",
+      "hotel": "sm-bahia-suite",
       "mobilityLinks": [
         {
           "label": "Finca La Victoria 1892 · horario, visita y precio oficial",
@@ -273,7 +273,7 @@
       ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "sm-isabella"
+      "hotel": "sm-bahia-suite"
     },
     {
       "n": 7,
@@ -477,7 +477,7 @@
       [
         {
           "title": "Hoteles urbanos · 15–18, 18–21 y 23–26 de enero",
-          "description": "Sin reservar. Medellín: Moabi 15–18 enero, $4,768 MXN, cotización Booking. Santa Marta: Casa de Isabella, 18–21 enero, provisión de $5,000 MXN (sin cotizar para fechas definitivas). Cartagena: Cabrero House Boutique, PRIMERA opción 23–26 enero, $5,933 MXN con desayuno, cancelación gratuita antes del 21/01 y pago antes de llegar; SEGUNDA opción excluyente Hotel El Viajero #2 ($3,787 MXN, cancelación gratuita antes del 18/01). Confirmar ruido de pasillos, habitación silenciosa, dirección, impuestos y moneda de cobro.",
+          "description": "Sin reservar. Medellín: Moabi $4,768 MXN, 15–18 enero. Santa Marta: primera opción Bahía Suite 18–21 enero, $2,069 MXN por tres noches, Deluxe matrimonial con baño privado y A/C, flexible y cancelación gratis hasta 18/01 18:00; segunda opción excluyente Casa Verde $6,997 MXN, no reembolsable. Cartagena: primera opción Cabrero House $5,933 MXN (desayuno incluido, flexible); segunda opción El Viajero #2 $3,787 MXN flexible. Confirmar nombre comercial y dirección exactos de Bahía Suite, habitación silenciosa e impuestos.",
           "links": [
             {
               "label": "Moabi Hotel · sitio oficial",
@@ -488,16 +488,20 @@
               "url": "https://www.booking.com/hotel/co/moabi.es-mx.html?checkin=2027-01-15&checkout=2027-01-18&group_adults=1&no_rooms=1"
             },
             {
-              "label": "Casa de Isabella · Santa Marta",
-              "url": "https://kalihotels.com/en/casa-isabella/"
-            },
-            {
               "label": "Cabrero House · primera opción ($5,933 MXN)",
               "url": "https://www.booking.com/hotel/co/cabrero-house-boutique.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
             },
             {
               "label": "El Viajero #2 · segunda opción ($3,787 MXN)",
               "url": "https://www.booking.com/hotel/co/el-viajero-2.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
+            },
+            {
+              "label": "Bahía Suite · primera opción ($2,069 MXN)",
+              "url": "https://www.booking.com/hotel/co/martienda-deluxe-centro-historico.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&group_children=0&no_rooms=1"
+            },
+            {
+              "label": "Casa Verde · segunda opción ($6,997 MXN)",
+              "url": "https://www.booking.com/hotel/co/casa-verde.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&group_children=0&no_rooms=1"
             }
           ]
         },
@@ -606,16 +610,16 @@
     {
       "id": "hotel-santa",
       "category": "lodging",
-      "concept": "Casa de Isabella, Santa Marta · 3 noches",
+      "concept": "Hotel Centro Histórico Bahía Suite, Santa Marta · 3 noches",
       "date": "2027-01-18",
       "cost": {
-        "amount": 5000,
+        "amount": 2069,
         "currency": "MXN"
       },
-      "status": "estimated",
-      "notes": "Provisión para Casa de Isabella (Kali Hotels) del 18 al 21 de enero, sin cotización fechada. Referencias de otras fechas muestran aproximadamente $4,467–$5,000 MXN por 3 noches; impuestos, desayuno y cancelación se validarán.",
+      "status": "quoted",
+      "notes": "Booking 06/11/2026 para 1 adulto 18–21/01/2027, Deluxe, $2,069 MXN, tarifa flexible, cancelación gratuita hasta 18/01 a las 18:00, sin pago anticipado, sin reservar. Segunda opción excluyente Casa Verde $6,997 MXN no reembolsable; no sumada.",
       "nights": 3,
-      "hotelId": "sm-isabella"
+      "hotelId": "sm-bahia-suite"
     },
     {
       "id": "hotel-tayrona",
@@ -1140,16 +1144,16 @@
       "order": 7
     }
   ],
-  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Islas del Rosario fijadas el lunes 25 (sin Bora Bora ni yate en Bocagrande), con operador y costo todavía por cotizar. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma.",
-  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, El Cabrero). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
+  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Islas del Rosario fijadas el lunes 25 (sin Bora Bora ni yate en Bocagrande), con operador y costo todavía por cotizar. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior.",
+  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Bahía Suite, Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, El Cabrero). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
-    "low": 45601,
-    "high": 62601,
+    "low": 42670,
+    "high": 59670,
     "marginMXN": 0,
     "useBudgetRange": true,
     "referenceFlightMXN": 9023,
-    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa A $9,023 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Los otros tres hoteles y servicios mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $51,683 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario está seleccionada, pero no tiene tarifa y puede requerir aumentar la partida de actividades.. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; los otros hoteles provisionales siguen sin cambios."
+    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa A $9,023 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Tayrona y servicios pendientes mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $48,752 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario está seleccionada, pero no tiene tarifa y puede requerir aumentar la partida de actividades.. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; Tayrona sigue provisional.. Bahía Suite $2,069 MXN según Booking; Casa Verde $6,997 MXN es alternativa excluyente no reembolsable."
   },
   "hotels": [
     {
@@ -1188,23 +1192,27 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Moabi%20Hotel%20Carrera%2043B%2012-147%20Medellin"
     },
     {
-      "id": "sm-isabella",
+      "id": "sm-bahia-suite",
       "city": "Santa Marta",
-      "name": "Casa de Isabella",
-      "address": "Carrera 2 #19-20, Centro Histórico, Santa Marta, Colombia (verificar la dirección al reservar)",
+      "name": "Hotel Centro Histórico Bahía Suite",
+      "address": "Centro Histórico, Santa Marta, Colombia (verificar la dirección exacta y el nombre comercial antes de reservar)",
       "checkIn": "2027-01-18",
       "checkOut": "2027-01-21",
-      "status": "Candidato · no reservado",
-      "rate": "Provisión: $5,000 MXN por 3 noches, 18–21 enero. Referencias Booking de otras fechas aprox. $4,467–$5,000 MXN/3 noches; NO cotización.",
-      "rateConditions": "1 adulto, habitación y baño privados, con aire acondicionado, poco ruido nocturno y cancelación flexible.",
-      "notes": "Hotel boutique Kali Hotels cercano a la Catedral y Parque de los Novios; habitación con baño privado y aire acondicionado. Confirmar la dirección exacta y horarios de check-in, cancelación y desayuno.",
+      "status": "Primera opción seleccionada · no reservado",
+      "rate": "Booking 06/11/2026: $2,069 MXN por 3 noches (18–21 enero 2027), 1 adulto, habitación Deluxe, cama matrimonial, aire acondicionado, baño privado y Wi-Fi. Impuestos y cargos según la captura.",
+      "rateConditions": "Cancelación gratuita hasta las 18:00 del 18/01/2027, sin pago anticipado y sin tarjeta de crédito exigida según Booking. Desayuno no confirmado. Comprobar ruido entre habitaciones y pasillos, recepción, horario de llegada, dirección y moneda final.",
+      "notes": "Recomendación de Carlos. Prioridad por precio/ubicación; antes de reservar verificar que el anuncio 'martienda-deluxe-centro-historico' corresponde al Hotel Centro Histórico Bahía Suite. Segunda opción: Casa Verde ($6,997 MXN por 3 noches, Estándar Queen 14 m², aire acondicionado y baño propio, tarifa no reembolsable según cotización compartida; desayuno por confirmar). Comfort House sin disponibilidad 18–21. Ninguno reservado; alternativa no sumada al presupuesto.",
       "links": [
         {
-          "label": "Casa de Isabella · web oficial Kali Hotels",
-          "url": "https://kalihotels.com/en/casa-isabella/"
+          "label": "Bahía Suite · primera opción ($2,069 MXN / 3 noches, flexible)",
+          "url": "https://www.booking.com/hotel/co/martienda-deluxe-centro-historico.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&group_children=0&no_rooms=1"
+        },
+        {
+          "label": "Casa Verde · segunda opción ($6,997 MXN / 3 noches, no reembolsable)",
+          "url": "https://www.booking.com/hotel/co/casa-verde.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&group_children=0&no_rooms=1"
         }
       ],
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20de%20Isabella%20Santa%20Marta"
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Centro%20Historico%20Bahia%20Suite%20Santa%20Marta"
     },
     {
       "id": "tay-koguiwa",
@@ -1377,10 +1385,6 @@
       "url": "https://theratesapi.com/convert/cop-to-mxn/"
     },
     {
-      "label": "Casa de Isabella · tarifas comparativas de otras fechas (Booking)",
-      "url": "https://www.booking.com/hotel/co/casa-de-isabella.es-mx.html"
-    },
-    {
       "label": "Senda Koguiwa · tarifa estándar publicada por temporada",
       "url": "https://sendahotels.com/en/hotel/senda-koguiwa/bedrooms/standard-room/"
     },
@@ -1407,14 +1411,22 @@
     {
       "label": "El Viajero #2 · Booking 23–26 enero 2027 (1 adulto), $3,787 MXN, captura 06/11/2026",
       "url": "https://www.booking.com/hotel/co/el-viajero-2.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
+    },
+    {
+      "label": "Bahía Suite · cotización Booking $2,069 MXN (18–21 ene 2027, 1 adulto)",
+      "url": "https://www.booking.com/hotel/co/martienda-deluxe-centro-historico.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&group_children=0&no_rooms=1"
+    },
+    {
+      "label": "Casa Verde · alternativa $6,997 MXN no reembolsable (18–21 ene 2027, 1 adulto)",
+      "url": "https://www.booking.com/hotel/co/casa-verde.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&group_children=0&no_rooms=1"
     }
   ],
   "sourceNote": "Copa A $9,023 MXN actualizada según capturas del 06/11/2026: vuelos CM149+CM397 (ida) y CM365+CM188 (regreso 22:05). Copa B $9,719 MXN, respaldo, permanece con CM195+CM654/CM365+CM866 (regreso 22:25). Equipaje exclusivamente de mano; ninguna tarifa comprada. Avianca nacional COP 217,580 observada anteriormente. Hoteles son metas basadas en referencias de otras fechas.",
   "budgetRange": [
-    45601,
-    62601
+    42670,
+    59670
   ],
-  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $51,683 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres y lancha $6,000; alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $51,683 MXN; rango orientativo $45,601–62,601 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Moabi y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Santa Marta y Tayrona permanecen como estimaciones. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $49,537 MXN, sin recalcular traslados/desayunos).",
+  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $48,752 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Bahía Suite Santa Marta 3 noches $2,069 (Booking flexible, sin reservar); Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres y lancha $6,000; alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $48,752 MXN; rango orientativo $42,670–59,670 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Moabi, Bahía Suite y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Tayrona permanece estimado. Casa Verde ($6,997 MXN no reembolsable) es segunda opción excluyente, no sumada. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $46,606 MXN, sin recalcular traslados/desayunos).",
   "placeDescriptions": {
     "col27-botero": "Plaza al aire libre con esculturas monumentales de Fernando Botero, donde el arte contemporáneo convive con la arquitectura del centro de Medellín.",
     "col27-provenza": "Calles arboladas, restaurantes y terrazas convierten este sector de El Poblado en un lugar animado para terminar la jornada.",
