@@ -1,5 +1,19 @@
 # Registro de avance · Colombia 2027
 
+## Estado vigente Cartagena y auditoría triple · 06/11/2026
+
+**Decisión:** Cabrero House Boutique es la primera opción para Cartagena (23–26 enero 2027, una persona, 3 noches), tarifa flexible de **$5,933 MXN** con desayuno y cancelación gratuita antes del 21 de enero. [Booking Cabrero House](https://www.booking.com/hotel/co/cabrero-house-boutique.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1). Sin reservar. Solicitar habitación con vista al jardín, alejada de recepción y pasillos transitados.
+
+**Segunda opción, excluyente:** Hotel El Viajero #2, **$3,787 MXN** por 3 noches, cancelación gratuita antes del 18/01/2027, desayuno y aire acondicionado según categoría por confirmar; posibles molestias entre habitaciones. [Booking El Viajero #2](https://www.booking.com/hotel/co/el-viajero-2.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1). No reservar ni sumar ambas tarifas. Se retiró el anterior candidato de Cartagena del JSON vigente.
+
+**Impacto presupuesto:** provisión anterior $10,500 reemplazada por $5,933; reducción de **$4,567 MXN**. Nuevo presupuesto del escenario ecolodge **$51,683 MXN**, rango **$45,601–62,601 MXN**. Hotelería: Moabi $4,768 cotizado, Casa de Isabella $5,000 provisión, Senda Koguiwa $5,200 provisión, Cabrero House $5,933 cotizado: total **$20,901 MXN**. Si se eligiese El Viajero #2 el total meramente aritmético sería $49,537 antes de posibles diferencias de comidas o traslados.
+
+**Auditoría triple ejecutada:** (1) calendario, noches, alojamientos y 7 pines del mapa; (2) itinerario, enlaces de ambas opciones, traslados hacia El Cabrero, Islas del Rosario, variante Tayrona sin decidir; (3) coherencia numérica de diez partidas, portada y rango presupuestario. Las tres revisiones estructurales pasaron sin inconsistencias nuevas. Permanecen por resolver: tarifa real Santa Marta, elección ecolodge vs Cabo San Juan con Barranquilla, precio del pasadía Islas del Rosario y certificación CI del commit final. No modificar main ni declarar ninguna reserva confirmada.
+
+**Siguiente etapa:** cotizar Santa Marta 18–21/01/2027 para 1 adulto, 3 noches. Casa de Isabella continúa como candidato principal provisional, comparando Casa Verde, Casa de Leda, Hotel Boutique Casa Carolina y alternativas de Parque de los Novios. Priorizar precio/ubicación y evitar ruido interno de pasillos y habitaciones; piscinas no son criterio.
+
+---
+
 ## Auditoría transversal Moabi · 06/11/2026 (estado vigente)
 
 - Panorama: 12 días y 11 noches, un viajero. Moabi seleccionado para Medellín 15–18 enero, no reservado; Tayrona queda sin decidir.
