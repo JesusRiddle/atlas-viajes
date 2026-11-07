@@ -218,6 +218,7 @@ window.AtlasMajorTransport = (() => {
             '</span><span><strong>Reembolsos:</strong> ' + esc(fare.refunds || 'Por confirmar') +
             '</span></div>' +
             (option.notes ? '<p class="mt-note">' + esc(option.notes) + '</p>' : '') +
+            (option.links?.length ? '<div class="entity-links">' + option.links.map(link => '<a href="' + esc(link.url) + '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + '</a>').join('') + '</div>' : '') +
             (transport.links?.length ? '<div class="entity-links">' + transport.links.map(link => '<a href="' + esc(link.url) + '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + '</a>').join('') + '</div>' : '') +
             '</div></details>';
     }

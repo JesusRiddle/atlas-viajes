@@ -50,6 +50,7 @@ window.AtlasBudgetTable = (() => {
             referenceFlight?.options?.[0];
         const referenceFare = flightOption?.fares?.find(f => f.id === (flightSelection.fare || flightOption.selectedFare));
         const referenceFlightMXN = budget.convert(referenceFare?.price, trip.exchangeRates || {});
+        const modernEstimate = trip.budgetPreliminary?.useBudgetRange === true;
         const markup = [];
         for (const [key, title] of groups) {
             const items = grouped.get(key) || [];
@@ -73,9 +74,9 @@ window.AtlasBudgetTable = (() => {
                     (displayMXN === null ? 'Por estimar' : pesos(displayMXN) + (isReferenceFlight ? ' · referencia' : '')) + '</td></tr>');
             }
             const subtotal = items.reduce((sum, item) => sum + (item.mxn ?? 0), 0);
-            markup.push('<tr class="budget-subtotal"><td>' + (key === 'flight' ? 'Referencia de vuelo · no incluida en subtotal terrestre' : 'Subtotal') +
+            markup.push('<tr class="budget-subtotal"><td>' + (key === 'flight' && !modernEstimate ? 'Referencia de vuelo · no incluida en subtotal terrestre' : 'Subtotal') +
                 '</td><td></td><td class="budget-amount">' +
-                (key === 'flight' && referenceFlightMXN !== null ? pesos(referenceFlightMXN) :
+                (key === 'flight' && !modernEstimate && referenceFlightMXN !== null ? pesos(referenceFlightMXN) :
                     pesos(subtotal) + (items.some(x => x.mxn === null) ? ' + pendientes' : '')) + '</td></tr>');
         }
         const optional = (trip.expenses || []).filter(item => item.optional);
@@ -90,7 +91,6 @@ window.AtlasBudgetTable = (() => {
             const optionalSubtotal = optional.reduce((sum, item) => sum + (budget.convert(item.cost, trip.exchangeRates || {}, item.paidMXN) ?? 0), 0);
             markup.push('<tr class="budget-subtotal"><td>Subtotal opcional · no incluido</td><td></td><td class="budget-amount">' + pesos(optionalSubtotal) + '</td></tr>');
         }
-        const modernEstimate = trip.budgetPreliminary?.useBudgetRange === true;
         if (modernEstimate) {
             // currentSummary already includes the selected international flight exactly once.
             markup.push('<tr class="totalrow"><td>Total estimado del viaje</td><td></td><td class="budget-amount">' +
