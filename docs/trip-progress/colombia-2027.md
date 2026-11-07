@@ -1,5 +1,17 @@
 # Registro de avance · Colombia 2027
 
+## Actualización vigente · transporte terrestre Plan A ecolodge (06/11/2026)
+
+Se fija el **Plan A: 21–23/01/2027, dos noches en un ecolodge cerca de El Zaino** como escenario operativo y presupuestario. El **Plan B: noche de camping Cabo San Juan 21–22/01 + Barranquilla 22–23/01** continúa como alternativa excluyente y aún no está cotizado ni incorporado a los totales.
+
+Movilidad del Plan A, estimaciones aproximadas en MXN para una persona: taxis MDE↔Moabi $1,528; urbanos Medellín $984; SMR→Bahía Suite $266; transportes Minca, finca y cascadas $718; Taganga + Playa Grande (lancha) $405; Santa Marta→El Zaino $799; interno Tayrona $203; Marsol El Zaino→Cartagena $752; Marsol→Cabrero House $116; urbanos Cartagena $289; Cabrero House→CTG $116. **Suma de conceptos $6,176 MXN**, tarifas no confirmadas; mantener **provisión de $7,000 MXN** para dejar un margen aproximado de **$824 MXN**. Se excluye vehículo privado exclusivo El Zaino–Cartagena, vuelos, servicios incluidos en tours y traslados al aeropuerto CDMX.
+
+El gasto previamente publicado era $6,000 MXN. La diferencia de provisión es +$1,000 MXN. Nuevo presupuesto del **Plan A: $49,752 MXN**, rango orientativo **$43,670–60,670 MXN**. El total solo incorpora el Plan A y no mezcla alojamiento ni transporte del Plan B. Las alternativas de hoteles continúan sin sumarse. El pasadía Islas del Rosario puede requerir ampliar la partida de excursiones cuando se cotice.
+
+Validación: gastos estructurados, panorama, estimación, notas de Marsol y pruebas actualizados. No hay reservaciones. No autoriza merge a main.
+
+---
+
 ## Actualización vigente · Santa Marta, 06/11/2026
 
 **Primera opción seleccionada (sin reservar):** Hotel Centro Histórico Bahía Suite, del **18 al 21 de enero de 2027**, 1 adulto, **Habitación Deluxe matrimonial, $2,069 MXN total por 3 noches**, con aire acondicionado, baño privado, cancelación gratuita hasta **18/01/2027 a las 18:00** y pago en alojamiento sin adelanto según captura. Desayuno por confirmar. [Booking (anuncio martienda-deluxe-centro-historico)](https://www.booking.com/hotel/co/martienda-deluxe-centro-historico.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&no_rooms=1). **Verificar que este anuncio corresponda al nombre comercial indicado, la dirección exacta y el ruido interno antes de reservar.**
