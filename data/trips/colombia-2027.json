@@ -47,7 +47,7 @@
     "weatherWhy": "En enero el Caribe está generalmente más seco, pero Santa Marta puede presentar viento y oleaje; Medellín es templada por altitud. Clima histórico, no pronóstico.",
     "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
   },
-  "intro": "Comienzas en Medellín con el arte de Comuna 13, las esculturas de Plaza Botero, el Parque de Bolívar y la vista desde Pueblito Paisa, antes de una excursión guiada a Guatapé. Después vuelas a Santa Marta para explorar la naturaleza y el café de Minca y conocer la bahía de Taganga. En Tayrona puedes caminar a Cabo San Juan: queda por elegir entre dos noches en ecolodge junto a El Zaino o una noche de camping dentro del parque seguida de Barranquilla. La ruta continúa por carretera hasta Cartagena, con tiempo para recorrer la Ciudad Amurallada, disfrutar Getsemaní y probar la gastronomía caribeña. El lunes 25 está destinado a una excursión de día completo a las Islas del Rosario si hay condiciones seguras de navegación.",
+  "intro": "Comienzas en Medellín con el arte de Comuna 13, las esculturas de Plaza Botero, el Parque de Bolívar y la vista desde Pueblito Paisa, antes de una excursión guiada a Guatapé. Después vuelas a Santa Marta para explorar la naturaleza y el café de Minca y conocer la bahía de Taganga. En Tayrona puedes caminar a Cabo San Juan: queda por elegir entre dos noches en ecolodge junto a El Zaino o una noche de camping dentro del parque seguida de Barranquilla. La ruta continúa por carretera hasta Cartagena, con alojamiento provisional en El Cabrero y tiempo para recorrer la Ciudad Amurallada, disfrutar Getsemaní y probar la gastronomía caribeña. El lunes 25 está destinado a una excursión de día completo a las Islas del Rosario si hay condiciones seguras de navegación.",
   "introShort": "De Medellín y Guatapé a la Sierra Nevada: arte urbano, pueblos coloridos, café en Minca y senderos de Tayrona. El viaje termina con la arquitectura colonial, gastronomía y una excursión a las Islas del Rosario desde Cartagena.",
   "introHighlights": [
     "Medellín",
@@ -332,7 +332,7 @@
       "title": "De Tayrona a Cartagena",
       "base": "Cartagena",
       "am": "Desayuno y checkout del ecolodge. Confirmación del punto de recogida de Marsol en El Zaino o traslado privado.",
-      "pm": "Carretera a Cartagena, unas seis horas como referencia de Marsol. Si se elige shuttle, traslado adicional desde su oficina al hotel de San Diego.",
+      "pm": "Carretera a Cartagena, unas seis horas como referencia de Marsol. Si se elige shuttle, traslado adicional desde su oficina al hotel de El Cabrero.",
       "night": "Check-in y cena cercana. Paseo nocturno solo si la hora real de llegada lo permite.",
       "mobility": "• *Cómo trasladarte:* Comparar Marsol desde la entrada El Zaino (salidas generales publicadas 12:00 y 14:00; aprox. 6 h) contra vehículo privado desde el ecolodge al hotel de Cartagena. Marsol termina en su oficina, no en la puerta del hotel; reservar el tramo final.",
       "note": "• *Punto de salida:* Marsol recoge en entrada El Zaino, no necesariamente en el ecolodge; confirmar fecha, equipaje y oficina de llegada.\n• *Precio de referencia:* Desde COP 130,000 (≈ $752 MXN al cambio del 03/11/2026), no cotizado para el 23 de enero.",
@@ -342,7 +342,7 @@
       "transportRefs": [
         "bus-tayrona-cartagena"
       ],
-      "hotel": "ct-lafe",
+      "hotel": "ct-cabrero-house",
       "mobilityLinks": [
         {
           "label": "Marsol · transporte interurbano",
@@ -356,9 +356,9 @@
       "title": "Ciudad Amurallada y Getsemaní",
       "base": "Cartagena",
       "am": "Recorrido por Ciudad Amurallada: Torre del Reloj, plazas coloniales y calles de San Diego.",
-      "pm": "Almuerzo cartagenero, pausa en el hotel y visita a Getsemaní y sus murales.",
+      "pm": "Almuerzo cartagenero, pausa en el hotel si conviene volver a El Cabrero y visita a Getsemaní y sus murales.",
       "night": "Atardecer desde murallas o terraza, cena y regreso por vías concurridas.",
-      "mobility": "• *Cómo trasladarte:* Recorrido principalmente a pie en horario diurno; taxi/app formal cuando haga falta.",
+      "mobility": "• *Cómo trasladarte:* Visita al Centro Histórico y Getsemaní a pie; desde Cabrero House, caminata con luz diurna y transporte formal cuando sea conveniente por la noche.",
       "note": "• *Tips del día:* Calor y humedad: buscar sombra e hidratarse; cuidar pertenencias y confirmar precios antes de aceptar servicios turísticos.\n• *No te pierdas:* Torre del Reloj, plazas y balcones republicanos; Getsemaní refleja una historia distinta a los recintos turísticos amurallados. Calor y humedad: buscar sombra e hidratarse.",
       "spend": null,
       "places": [
@@ -369,7 +369,7 @@
       ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "ct-lafe"
+      "hotel": "ct-cabrero-house"
     },
     {
       "n": 11,
@@ -379,7 +379,7 @@
       "am": "Salida temprano desde Cartagena al muelle del operador autorizado; embarque para excursión de día completo a una isla del archipiélago de Rosario. Bora Bora Beach Club está descartado.",
       "pm": "Tiempo de playa, descanso y almuerzo en una isla, sin hacer un circuito apresurado de cuatro o cinco paradas. Regreso en embarcación autorizada durante la tarde, sujeto al estado del mar.",
       "night": "Última cena en Cartagena y preparación del equipaje para el vuelo de Copa del martes 26.",
-      "mobility": "• *Muelle y lancha:* Contratar pasadía a Islas del Rosario en una isla (no Bora Bora), con traslado redondo, impuestos portuarios y horario de retorno confirmados; llevar chaleco salvavidas.\n• *Si cancelan por mar:* Permanecer en Cartagena y visitar Castillo de San Felipe o descansar en la piscina.",
+      "mobility": "• *Muelle y lancha:* Contratar pasadía a Islas del Rosario en una isla (no Bora Bora), con traslado redondo, impuestos portuarios y horario de retorno confirmados; llevar chaleco salvavidas.\n• *Si cancelan por mar:* Permanecer en Cartagena y visitar Castillo de San Felipe o descansar en el hotel.",
       "note": "• *Excursión prioritaria:* Islas del Rosario es una actividad elegida, NO una opción descartable por comodidad; está condicionada exclusivamente a seguridad marítima y operación real.\n• *Costo:* Todavía sin tarifa ni operador elegidos; verificar si la provisión global de actividades de $5,000 MXN cubre el pasadía sin restar fondos necesarios a otras entradas.",
       "spend": null,
       "places": [
@@ -388,7 +388,7 @@
       ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "ct-lafe",
+      "hotel": "ct-cabrero-house",
       "optionalPlaces": [
         "col27-castillo-san-felipe",
         "col27-bovedas"
@@ -477,7 +477,7 @@
       [
         {
           "title": "Hoteles urbanos · 15–18, 18–21 y 23–26 de enero",
-          "description": "Sin reservar. Moabi Hotel es el candidato elegido para Medellín del 15 al 18 de enero (3 noches, 1 adulto, Doble Estándar; $4,768 MXN según Booking 06/11/2026, cancelación gratuita hasta 12/01). Casa de Isabella y Casa La Fe siguen candidatos estimados para Santa Marta y Cartagena. Confirmar precio definitivo en COP, impuestos, desayuno opcional, habitación silenciosa y consigna de equipaje.",
+          "description": "Sin reservar. Medellín: Moabi 15–18 enero, $4,768 MXN, cotización Booking. Santa Marta: Casa de Isabella, 18–21 enero, provisión de $5,000 MXN (sin cotizar para fechas definitivas). Cartagena: Cabrero House Boutique, PRIMERA opción 23–26 enero, $5,933 MXN con desayuno, cancelación gratuita antes del 21/01 y pago antes de llegar; SEGUNDA opción excluyente Hotel El Viajero #2 ($3,787 MXN, cancelación gratuita antes del 18/01). Confirmar ruido de pasillos, habitación silenciosa, dirección, impuestos y moneda de cobro.",
           "links": [
             {
               "label": "Moabi Hotel · sitio oficial",
@@ -492,8 +492,12 @@
               "url": "https://kalihotels.com/en/casa-isabella/"
             },
             {
-              "label": "Casa La Fe · Cartagena",
-              "url": "https://www.casalafe.com/"
+              "label": "Cabrero House · primera opción ($5,933 MXN)",
+              "url": "https://www.booking.com/hotel/co/cabrero-house-boutique.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
+            },
+            {
+              "label": "El Viajero #2 · segunda opción ($3,787 MXN)",
+              "url": "https://www.booking.com/hotel/co/el-viajero-2.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
             }
           ]
         },
@@ -630,16 +634,16 @@
     {
       "id": "hotel-cartagena",
       "category": "lodging",
-      "concept": "Casa La Fe, Cartagena · 3 noches",
+      "concept": "Cabrero House Boutique, Cartagena · 3 noches",
       "date": "2027-01-23",
       "cost": {
-        "amount": 10500,
+        "amount": 5933,
         "currency": "MXN"
       },
-      "status": "estimated",
-      "notes": "Provisión para Casa La Fe, San Diego, 23–26 enero (3 noches), sin cotización para esas fechas. Referencias de Booking en otras fechas muestran promociones de alrededor de $9,871–$11,517 MXN por 3 noches; confirmar impuestos, condiciones y precio pagable.",
+      "status": "quoted",
+      "notes": "Booking 06/11/2026, 1 adulto, 23–26/01/2027, $5,933 MXN por tres noches con desayuno y cancelación gratis antes de 21/01/2027; sin reservar. Alternativa excluyente Hotel El Viajero #2 $3,787 MXN, NO sumada. Impuestos y cambio final a reconfirmar.",
       "nights": 3,
-      "hotelId": "ct-lafe"
+      "hotelId": "ct-cabrero-house"
     },
     {
       "id": "ground-mobility",
@@ -1136,16 +1140,16 @@
       "order": 7
     }
   ],
-  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Islas del Rosario fijadas el lunes 25 (sin Bora Bora ni yate en Bocagrande), con operador y costo todavía por cotizar.",
-  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (San Diego). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
+  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Islas del Rosario fijadas el lunes 25 (sin Bora Bora ni yate en Bocagrande), con operador y costo todavía por cotizar. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma.",
+  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, El Cabrero). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
-    "low": 50168,
-    "high": 67168,
+    "low": 45601,
+    "high": 62601,
     "marginMXN": 0,
     "useBudgetRange": true,
     "referenceFlightMXN": 9023,
-    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa A $9,023 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Los otros tres hoteles y servicios mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $56,250 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario está seleccionada, pero no tiene tarifa y puede requerir aumentar la partida de actividades."
+    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa A $9,023 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Los otros tres hoteles y servicios mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $51,683 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario está seleccionada, pero no tiene tarifa y puede requerir aumentar la partida de actividades.. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; los otros hoteles provisionales siguen sin cambios."
   },
   "hotels": [
     {
@@ -1222,23 +1226,27 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Senda%20Koguiwa%20Tayrona"
     },
     {
-      "id": "ct-lafe",
+      "id": "ct-cabrero-house",
       "city": "Cartagena",
-      "name": "Casa La Fe",
-      "address": "Carrera 7 #36-125, barrio San Diego, Cartagena de Indias, Colombia",
+      "name": "Cabrero House Boutique",
+      "address": "El Cabrero, Cartagena de Indias, Colombia (confirmar la dirección exacta antes de reservar)",
       "checkIn": "2027-01-23",
       "checkOut": "2027-01-26",
-      "status": "Candidato · no reservado",
-      "rate": "Provisión: $10,500 MXN por 3 noches, 23–26 enero. Referencias de otras fechas Booking $9,871–$11,517 MXN/3 noches; NO cotización para estas fechas.",
-      "rateConditions": "1 adulto, baño privado y habitación silenciosa; verificar piscina, desayuno, cargos y cancelación.",
-      "notes": "Comparar con Bantú y alternativas boutique tranquilas en San Diego; no pagar sobreprecio injustificado. Edificio histórico sin ascensor; confirmar piso y accesibilidad de la habitación (piscina en terraza).",
+      "status": "Primera opción seleccionada · no reservado",
+      "rate": "Booking 06/11/2026: $5,933 MXN por 3 noches, 1 adulto (23–26/01/2027), desayuno incluido; impuestos y cargos según pantalla, cobro final por verificar.",
+      "rateConditions": "Doble con vistas al jardín o Doble Deluxe con ducha al mismo precio: cama matrimonial, baño privado, aire acondicionado. Cancelación gratis antes del 21/01/2027 (hasta 20/01), pago al alojamiento antes de llegar. Solicitar habitación lejos de recepción y pasillos concurridos. Confirmar precio real y condiciones.",
+      "notes": "Primera opción por precio/ubicación, zona residencial El Cabrero, accesible al centro amurallado caminando con luz diurna; taxi de noche según necesidad. Buenas valoraciones de confort y limpieza; reporte aislado de ruido junto a recepción. Recepción 24 h y consigna de equipaje informadas por hotel. Segunda opción: Hotel El Viajero #2 ($3,787 MXN por tres noches, tarifa flexible, cancelación antes del 18/01/2027); dentro de murallas, pero ruido entre habitaciones, mantenimiento y ventilación variables. Alternativa NO presupuestada. Ninguno reservado.",
       "links": [
         {
-          "label": "Casa La Fe · sitio oficial",
-          "url": "https://www.casalafe.com/"
+          "label": "Cabrero House Boutique · primera opción ($5,933 MXN / 3 noches)",
+          "url": "https://www.booking.com/hotel/co/cabrero-house-boutique.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
+        },
+        {
+          "label": "Hotel El Viajero #2 · segunda opción ($3,787 MXN / 3 noches)",
+          "url": "https://www.booking.com/hotel/co/el-viajero-2.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
         }
       ],
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Casa%20La%20Fe%20Cartagena%20Colombia"
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cabrero%20House%20Boutique%20Cartagena"
     }
   ],
   "stays": [],
@@ -1377,10 +1385,6 @@
       "url": "https://sendahotels.com/en/hotel/senda-koguiwa/bedrooms/standard-room/"
     },
     {
-      "label": "Casa La Fe · tarifas comparativas de otras fechas (Booking)",
-      "url": "https://www.booking.com/hotel/co/casa-la-fe.es-mx.html"
-    },
-    {
       "label": "Guatapé · tour con inclusiones y precio",
       "url": "https://toursguatape.com/en/producto/full-day-guatape/"
     },
@@ -1395,14 +1399,22 @@
     {
       "label": "Moabi Hotel · dirección oficial",
       "url": "https://moabihotel.com/page/contacto"
+    },
+    {
+      "label": "Cabrero House Boutique · Booking 23–26 enero 2027 (1 adulto), $5,933 MXN, captura 06/11/2026",
+      "url": "https://www.booking.com/hotel/co/cabrero-house-boutique.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
+    },
+    {
+      "label": "El Viajero #2 · Booking 23–26 enero 2027 (1 adulto), $3,787 MXN, captura 06/11/2026",
+      "url": "https://www.booking.com/hotel/co/el-viajero-2.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
     }
   ],
   "sourceNote": "Copa A $9,023 MXN actualizada según capturas del 06/11/2026: vuelos CM149+CM397 (ida) y CM365+CM188 (regreso 22:05). Copa B $9,719 MXN, respaldo, permanece con CM195+CM654/CM365+CM866 (regreso 22:25). Equipaje exclusivamente de mano; ninguna tarifa comprada. Avianca nacional COP 217,580 observada anteriormente. Hoteles son metas basadas en referencias de otras fechas.",
   "budgetRange": [
-    50168,
-    67168
+    45601,
+    62601
   ],
-  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $56,250 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Casa La Fe Cartagena 3 noches $10,500; traslados terrestres y lancha $6,000; alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $56,250 MXN; rango orientativo $50,168–67,168 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Solo Moabi cuenta con una cotización de Booking para las fechas exactas; las otras tres tarifas son estimaciones, no reservas. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada.",
+  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $51,683 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Casa de Isabella Santa Marta 3 noches $5,000; Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres y lancha $6,000; alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $51,683 MXN; rango orientativo $45,601–62,601 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Moabi y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Santa Marta y Tayrona permanecen como estimaciones. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $49,537 MXN, sin recalcular traslados/desayunos).",
   "placeDescriptions": {
     "col27-botero": "Plaza al aire libre con esculturas monumentales de Fernando Botero, donde el arte contemporáneo convive con la arquitectura del centro de Medellín.",
     "col27-provenza": "Calles arboladas, restaurantes y terrazas convierten este sector de El Poblado en un lugar animado para terminar la jornada.",
