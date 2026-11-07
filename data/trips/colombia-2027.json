@@ -47,8 +47,8 @@
     "weatherWhy": "En enero el Caribe está generalmente más seco, pero Santa Marta puede presentar viento y oleaje; Medellín es templada por altitud. Clima histórico, no pronóstico.",
     "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
   },
-  "intro": "Comienzas en Medellín con el arte de Comuna 13, las esculturas de Plaza Botero, el Parque de Bolívar y la vista desde Pueblito Paisa, antes de una excursión guiada a Guatapé. Después vuelas a Santa Marta para explorar la naturaleza y el café de Minca y conocer la bahía de Taganga. En Tayrona puedes caminar a Cabo San Juan: queda por elegir entre dos noches en ecolodge junto a El Zaino o una noche de camping dentro del parque seguida de Barranquilla. La ruta continúa por carretera hasta Cartagena, con alojamiento provisional en El Cabrero y tiempo para recorrer la Ciudad Amurallada, disfrutar Getsemaní y probar la gastronomía caribeña. El domingo 24 incluye Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní. El lunes 25 queda para otras visitas culturales en tierra, con una excursión a las Islas del Rosario solo como alternativa opcional si resulta atractiva y el mar permite navegar.",
-  "introShort": "De Medellín y Guatapé a la Sierra Nevada: arte urbano, pueblos coloridos, café en Minca y senderos de Tayrona. El viaje termina con la arquitectura colonial, gastronomía y fortalezas en Cartagena, con Islas del Rosario como opción.",
+  "intro": "Comienzas en Medellín con el arte de Comuna 13, las esculturas de Plaza Botero, el Parque de Bolívar y la vista desde Pueblito Paisa, antes de una excursión guiada a Guatapé. Después vuelas a Santa Marta para explorar la naturaleza y el café de Minca y conocer la bahía de Taganga. En Tayrona puedes caminar a Cabo San Juan: queda por elegir entre dos noches en ecolodge junto a El Zaino o una noche de camping dentro del parque seguida de Barranquilla. La ruta continúa por carretera hasta Cartagena, con alojamiento provisional en El Cabrero y tiempo para recorrer la Ciudad Amurallada, disfrutar Getsemaní y probar la gastronomía caribeña. El domingo 24 incluye Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní. El lunes 25 se dedica a una excursión de día completo a las Islas del Rosario, con isla y operador aún por definir según las condiciones de navegación.",
+  "introShort": "De Medellín y Guatapé a la Sierra Nevada: arte urbano, pueblos coloridos, café en Minca y senderos de Tayrona. El viaje termina con la arquitectura colonial, gastronomía y fortalezas en Cartagena, y una excursión a las Islas del Rosario.",
   "introHighlights": [
     "Medellín",
     "Comuna 13",
@@ -94,7 +94,7 @@
     },
     {
       "city": "Cartagena de Indias",
-      "description": "Recorre temprano el Castillo de San Felipe, conoce Las Bóvedas y explora la Ciudad Amurallada y Getsemaní; disfruta las murallas al atardecer y prueba posta negra, arepa de huevo y cocadas. Reserva tiempo para patrimonio y museos; las Islas del Rosario quedan como excursión opcional."
+      "description": "Recorre el Castillo de San Felipe, Las Bóvedas, la Ciudad Amurallada y Getsemaní; disfruta las murallas al atardecer y prueba posta negra, arepa de huevo y cocadas. Dedica el día siguiente a conocer las Islas del Rosario en una excursión por definir."
     }
   ],
   "days": [
@@ -376,13 +376,13 @@
     {
       "n": 11,
       "date": "2027-01-25",
-      "title": "Cartagena cultural · Islas del Rosario opcionales",
+      "title": "Islas del Rosario · excursión de día completo",
       "base": "Cartagena",
-      "am": "Día flexible en Cartagena, sin excursión marítima obligatoria. Desayuno tranquilo y recorrido cultural por el Centro Histórico; considerar el Museo Histórico de Cartagena (Palacio de la Inquisición), sujeto a horario confirmado.",
-      "pm": "Almuerzo y recorrido por iglesias, patios y plazas que hayan quedado pendientes. Si apetece una vista panorámica, visitar el Convento de la Popa con taxi de ida y vuelta, sin subir caminando al cerro.",
+      "am": "Desayuno temprano y salida desde Cartagena hacia el muelle del operador elegido. Navegación a las Islas del Rosario, con recorrido y paradas por definir según el tour seleccionado.",
+      "pm": "Visita al archipiélago, almuerzo y actividades incluidas en el tour. Regreso a Cartagena durante la tarde, sujeto a las condiciones del mar.",
       "night": "Última cena en Cartagena y preparación del equipaje para el vuelo de Copa del martes 26.",
-      "mobility": "• *Plan principal en tierra:* Recorrer el Centro Histórico y utilizar taxi formal para La Popa, si se elige.\n• *Opción excluyente — Islas del Rosario:* Sustituir las visitas en tierra por un tour de navegación diurna con operador autorizado y embarque y desembarque por muelle. Confirmar precio completo, horarios, condiciones marítimas y política de cancelación.",
-      "note": "• *Actividad opcional:* Islas del Rosario, sin reservar. Elegir el recorrido que resulte más interesante por sus paisajes, paradas y actividades. Bora Bora Beach Club sigue descartado como pasadía principal.\n• *Costos:* No incluir la excursión opcional como gasto comprometido; cotizar por separado entradas y visitas terrestres.",
+      "mobility": "• *Cómo trasladarte:* Salir desde Cabrero House hacia el muelle indicado por el operador. Contratar lancha autorizada con ida y vuelta en horario diurno; confirmar muelles para desembarcar, horarios, tasas, seguro y regreso.",
+      "note": "• *Reservación importante:* Islas del Rosario es el plan principal del día, pero aún no hay operador ni recorrido reservados. Comparar excursiones panorámicas y paradas antes de elegir; Bora Bora Beach Club continúa descartado como pasadía principal.\n• *Alternativa por mal tiempo:* Si se suspende la navegación, visitar el Museo Histórico de Cartagena (Palacio de la Inquisición), recorrer plazas del Centro Histórico o considerar el Convento de la Popa con transporte contratado.\n• *Presupuesto:* Cotizar tarifa total antes de actualizar la provisión de actividades.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -534,6 +534,11 @@
               "url": "https://www.fincalavictoria1892.com/"
             }
           ]
+        },
+        {
+          "title": "Islas del Rosario · lunes 25 de enero",
+          "description": "Excursión principal del lunes 25, sin reservar. Comparar recorridos, islas, paradas y precio final con tasas y seguro; confirmar embarque y desembarque por muelle, regreso diurno y política ante condiciones marítimas. Bora Bora Beach Club como pasadía principal y yate por Bocagrande siguen descartados. Actualizar la provisión de actividades una vez elegido el tour.",
+          "links": []
         }
       ]
     ],
@@ -543,11 +548,6 @@
         {
           "title": "Taganga y Playa Grande · miércoles 20 de enero",
           "description": "Salida de medio día sin contratar. Decidir según viento y oleaje; acordar en el lugar la lancha autorizada, tarifa y hora de regreso, con chaleco salvavidas. Evitar el sendero peatonal Taganga–Playa Grande por reportes de robos. Si el mar no es seguro, permanecer en Taganga y volver a Santa Marta de día.",
-          "links": []
-        },
-        {
-          "title": "Islas del Rosario · alternativa opcional para lunes 25 de enero",
-          "description": "Actividad opcional para el lunes 25, sin reservar. Comparar recorridos panorámicos, paradas, precio final con tasas y seguro, embarque y desembarque por muelle, horarios de regreso y cancelaciones por condiciones marítimas. Bora Bora Beach Club como pasadía principal y el yate por Bocagrande siguen descartados. No añadir su importe al gasto comprometido.",
           "links": []
         }
       ]
@@ -1140,7 +1140,7 @@
       "order": 7
     }
   ],
-  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Domingo 24 dedicado a Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní; lunes 25 dedicado a Cartagena cultural, con Islas del Rosario solo como excursión opcional, sin reserva ni gasto comprometido. Bora Bora como pasadía principal y yate en Bocagrande descartados. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior. Movilidad del plan A (ecolodge sector El Zaino 21–23 enero) desglosada ≈$6,176 MXN y provisión revisada de $7,000 MXN, con Marsol y taxis estratégicos. No sumar traslados incluidos en tours; plan B camping Cabo San Juan + Barranquilla queda sin cotizar.",
+  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Domingo 24 dedicado a Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní; lunes 25 dedicado a una excursión de día completo a las Islas del Rosario, aún sin operador ni isla seleccionados; visitas culturales en tierra como alternativa si se cancela la navegación. Bora Bora como pasadía principal y yate en Bocagrande descartados. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior. Movilidad del plan A (ecolodge sector El Zaino 21–23 enero) desglosada ≈$6,176 MXN y provisión revisada de $7,000 MXN, con Marsol y taxis estratégicos. No sumar traslados incluidos en tours; plan B camping Cabo San Juan + Barranquilla queda sin cotizar.",
   "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Bahía Suite, Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, El Cabrero). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
