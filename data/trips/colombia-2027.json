@@ -384,11 +384,18 @@
       "mobility": "• *Cómo trasladarte:* Salir desde Cabrero House hacia el muelle indicado por el operador. Contratar lancha autorizada con ida y vuelta en horario diurno; confirmar muelles para desembarcar, horarios, tasas, seguro y regreso.",
       "note": "• *Reservación importante:* Islas del Rosario es el plan principal del día, pero aún no hay operador ni recorrido reservados. Comparar excursiones panorámicas y paradas antes de elegir; Bora Bora Beach Club continúa descartado como pasadía principal.\n• *Alternativa por mal tiempo:* Si se suspende la navegación, visitar el Museo Histórico de Cartagena (Palacio de la Inquisición), recorrer plazas del Centro Histórico o considerar el Convento de la Popa con transporte contratado.\n• *Presupuesto:* Cotizar tarifa total antes de actualizar la provisión de actividades.",
       "spend": null,
-      "places": [],
+      "places": [
+        "col27-islas-rosario",
+        "col27-palacio-inquisicion",
+        "col27-convento-popa"
+      ],
       "headerPlaces": [],
       "transportRefs": [],
       "hotel": "ct-cabrero-house",
-      "optionalPlaces": []
+      "optionalPlaces": [
+        "col27-palacio-inquisicion",
+        "col27-convento-popa"
+      ]
     },
     {
       "n": 12,
@@ -1447,7 +1454,10 @@
     "col27-san-diego": "Cerca de la plaza de San Diego, las casas coloridas, balcones de madera y vegetación dibujan calles características del centro histórico.",
     "col27-getsemani-murales": "Los murales de Getsemaní reflejan la identidad artística del barrio y contrastan con las fachadas antiguas y su ambiente cotidiano.",
     "col27-castillo-san-felipe": "Esta fortaleza de piedra domina una elevación estratégica y conserva estructuras defensivas construidas para proteger Cartagena de ataques por tierra.",
-    "col27-bovedas": "Las antiguas bóvedas militares, junto a las murallas del sector de San Diego, albergan actualmente puestos artesanales en sus galerías amarillas."
+    "col27-bovedas": "Las antiguas bóvedas militares, junto a las murallas del sector de San Diego, albergan actualmente puestos artesanales en sus galerías amarillas.",
+    "col27-islas-rosario": "Archipiélago caribeño frente a Cartagena, previsto para una excursión de día completo. Isla y operador pendientes de selección.",
+    "col27-palacio-inquisicion": "Museo Histórico de Cartagena en un palacio colonial del Centro Histórico; alternativa cultural si no se realiza la excursión marítima.",
+    "col27-convento-popa": "Convento histórico en el cerro de la Popa, con vistas panorámicas sobre Cartagena; visita alternativa mediante transporte contratado."
   },
   "optionalSection": null,
   "family": null,
