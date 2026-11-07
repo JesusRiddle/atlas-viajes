@@ -4698,5 +4698,38 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
       "attribution": "O--o"
     }
+  },
+  "col27-islas-rosario": {
+    "name": "Islas del Rosario",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Islas_del_Rosario_-_Cartagena_%285%29.jpg/960px-Islas_del_Rosario_-_Cartagena_%285%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Islas_del_Rosario_-_Cartagena_(5).jpg",
+      "author": "SebastianGalvis",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "SebastianGalvis / Wikimedia Commons"
+    }
+  },
+  "col27-palacio-inquisicion": {
+    "name": "Palacio de la Inquisición (Museo Histórico de Cartagena)",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Colombia%2C_Cartagena%2C_Palacio_de_la_Inquisici%C3%B3n.jpg/960px-Colombia%2C_Cartagena%2C_Palacio_de_la_Inquisici%C3%B3n.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Colombia,_Cartagena,_Palacio_de_la_Inquisición.jpg",
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "© Dr. Thomas Liptak / Wikimedia Commons"
+    }
+  },
+  "col27-convento-popa": {
+    "name": "Convento de la Popa",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Convento_de_La_Popa.JPG/1024px-Convento_de_La_Popa.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Convento_de_La_Popa.JPG",
+      "author": "Petruss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Petruss / Wikimedia Commons"
+    }
   }
 }
