@@ -94,7 +94,7 @@
     },
     {
       "city": "Cartagena de Indias",
-      "description": "Recorre temprano el Castillo de San Felipe, conoce Las Bóvedas y explora la Ciudad Amurallada y Getsemaní; disfruta las murallas al atardecer y prueba posta negra, arepa de huevo y cocadas. Reserva tiempo para patrimonio y museos; las Islas del Rosario quedan como excursión opcional, sin necesidad de nadar."
+      "description": "Recorre temprano el Castillo de San Felipe, conoce Las Bóvedas y explora la Ciudad Amurallada y Getsemaní; disfruta las murallas al atardecer y prueba posta negra, arepa de huevo y cocadas. Reserva tiempo para patrimonio y museos; las Islas del Rosario quedan como excursión opcional."
     }
   ],
   "days": [
@@ -355,11 +355,11 @@
       "date": "2027-01-24",
       "title": "Castillo de San Felipe, Ciudad Amurallada y Getsemaní",
       "base": "Cartagena",
-      "am": "Salida temprano hacia el Castillo de San Felipe de Barajas para recorrer fortificaciones, túneles y miradores antes de las horas de mayor calor. Después, Las Bóvedas y las calles de San Diego dentro de la Ciudad Amurallada.",
-      "pm": "Almuerzo cartagenero bajo techo o a la sombra; recorrido tranquilo por plazas del Centro Histórico y la Torre del Reloj, con pausa de descanso en el hotel si hace falta. Hacia el final de la tarde, visita a Getsemaní y sus murales.",
+      "am": "Visita al Castillo de San Felipe de Barajas para recorrer sus fortificaciones, túneles y miradores. Continúa hacia Las Bóvedas y las calles de San Diego, dentro de la Ciudad Amurallada.",
+      "pm": "Almuerzo cartagenero y recorrido por las plazas del Centro Histórico y la Torre del Reloj. Después, visita a Getsemaní y sus murales.",
       "night": "Atardecer desde las murallas o una terraza si el tiempo alcanza, cena en Getsemaní o el Centro Histórico y regreso por transporte formal cuando convenga.",
-      "mobility": "• *Cómo trasladarte:* Desde Cabrero House ir temprano en taxi formal o servicio de aplicación al Castillo de San Felipe. Tras la visita, traslado corto a Las Bóvedas; explorar San Diego, Centro Histórico y Getsemaní a pie por tramos, con descanso y transporte si aprieta el calor.",
-      "note": "• *Tips del día:* El Castillo tiene escasa sombra; visitarlo temprano, llevar agua, gorra y protector solar. Confirmar horarios y entradas vigentes para enero de 2027. Las Bóvedas suelen requerir una parada breve, no varias horas.\n• *Ritmo:* Priorizar Castillo, Las Bóvedas, Ciudad Amurallada y Getsemaní. No forzar todos los miradores ni una caminata larga al mediodía.",
+      "mobility": "• *Cómo trasladarte:* Desde Cabrero House, taxi formal o servicio de aplicación al Castillo de San Felipe. Después, traslado a Las Bóvedas y recorrido a pie por San Diego, Centro Histórico y Getsemaní, según distancias y horarios.",
+      "note": "• *Tips del día:* Confirmar horarios y entradas vigentes del Castillo para enero de 2027; llevar agua. Las Bóvedas suelen requerir una parada breve.\n• *Ritmo:* Priorizar Castillo, Las Bóvedas, Ciudad Amurallada y Getsemaní; ajustar las paradas secundarias al tiempo disponible.",
       "spend": null,
       "places": [
         "col27-castillo-san-felipe",
@@ -379,10 +379,10 @@
       "title": "Cartagena cultural · Islas del Rosario opcionales",
       "base": "Cartagena",
       "am": "Día flexible en Cartagena, sin excursión marítima obligatoria. Desayuno tranquilo y recorrido cultural por el Centro Histórico; considerar el Museo Histórico de Cartagena (Palacio de la Inquisición), sujeto a horario confirmado.",
-      "pm": "Almuerzo y tiempo para descubrir iglesias, patios y plazas que hayan quedado pendientes. Si apetece una vista panorámica, valorar visita al Convento de la Popa con taxi de ida y vuelta, sin subir caminando al cerro. Alternativamente descansar del calor en una cafetería o en el hotel.",
+      "pm": "Almuerzo y recorrido por iglesias, patios y plazas que hayan quedado pendientes. Si apetece una vista panorámica, visitar el Convento de la Popa con taxi de ida y vuelta, sin subir caminando al cerro.",
       "night": "Última cena en Cartagena y preparación del equipaje para el vuelo de Copa del martes 26.",
-      "mobility": "• *Plan principal en tierra:* Recorrer el Centro Histórico por tramos caminables y utilizar taxi formal para La Popa, si se elige.\n• *Opción excluyente — Islas del Rosario:* Sustituir las visitas en tierra de este día por un tour de navegación diurna con operador autorizado, regreso antes del anochecer y embarque/desembarque en muelle seco confirmado. No reservar hasta verificar precio total, sombra, condiciones de la lancha y políticas por oleaje.",
-      "note": "• *Actividad opcional:* Islas del Rosario, no prioritarias ni reservadas. Viajas solo, no planeas nadar ni tomar el sol; preferir una salida panorámica con actividades en tierra, sombra y muelles, sin pagar un paquete centrado en playa o snorkel. Bora Bora Beach Club continúa descartado como pasadía principal; evaluar cualquier circuito que lo incluya solo si convence el conjunto.\n• *Costos:* No incorporar el pasadía opcional como gasto comprometido. Las visitas terrestres y entradas deben cotizarse por separado. Verificar apertura del museo el lunes 25 y horarios del Convento de la Popa.",
+      "mobility": "• *Plan principal en tierra:* Recorrer el Centro Histórico y utilizar taxi formal para La Popa, si se elige.\n• *Opción excluyente — Islas del Rosario:* Sustituir las visitas en tierra por un tour de navegación diurna con operador autorizado y embarque y desembarque por muelle. Confirmar precio completo, horarios, condiciones marítimas y política de cancelación.",
+      "note": "• *Actividad opcional:* Islas del Rosario, sin reservar. Elegir el recorrido que resulte más interesante por sus paisajes, paradas y actividades. Bora Bora Beach Club sigue descartado como pasadía principal.\n• *Costos:* No incluir la excursión opcional como gasto comprometido; cotizar por separado entradas y visitas terrestres.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -547,7 +547,7 @@
         },
         {
           "title": "Islas del Rosario · alternativa opcional para lunes 25 de enero",
-          "description": "NO es actividad fija ni está reservada. Solo considerar una excursión diurna si apetece conocer el archipiélago sin nadar ni tomar el sol: priorizar recorrido panorámico, sombra, muelles para desembarcar en seco, lancha autorizada y regreso diurno. Solicitar precio total con tasas, seguro, condiciones por oleaje y actividades no acuáticas. Bora Bora Beach Club como pasadía principal y yate por Bocagrande descartados. No añadir su importe al gasto comprometido.",
+          "description": "Actividad opcional para el lunes 25, sin reservar. Comparar recorridos panorámicos, paradas, precio final con tasas y seguro, embarque y desembarque por muelle, horarios de regreso y cancelaciones por condiciones marítimas. Bora Bora Beach Club como pasadía principal y el yate por Bocagrande siguen descartados. No añadir su importe al gasto comprometido.",
           "links": []
         }
       ]
