@@ -654,11 +654,11 @@
       "category": "transport",
       "concept": "Traslados urbanos, aeroportuarios y entre ciudades",
       "cost": {
-        "amount": 6000,
+        "amount": 7000,
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión provisional para aeropuertos, taxis urbanos, Minca, Taganga/Playa Grande, Santa Marta→El Zaino y El Zaino→Cartagena. Evaluar desvío Barranquilla al definir Tayrona. No duplicar transporte incluido en tour Guatapé o pasadía en Islas del Rosario."
+      "notes": "PLAN A · ECOLODGE EL ZAINO 21–23/01. Estimación central de 11 conceptos para un viajero: taxis aeropuertos MDE↔Moabi $1,528; taxis urbanos Medellín $984; aeropuerto SMR→Bahía Suite $266; Minca ida/vuelta, finca y cascadas $718; Taganga y lancha Playa Grande $405; Santa Marta→El Zaino taxi $799; transporte interno Tayrona $203; Marsol El Zaino→Cartagena $752; terminal Marsol→Cabrero House $116; taxis urbanos Cartagena $289; Cabrero House→CTG $116. Total desglosado $6,176 MXN por redondeos de partida (estimación anterior de referencia ≈$6,175 MXN); provisión presupuestada $7,000 MXN, margen ≈$824. Valores aproximados calculados a COP/MXN de referencia 03/11/2026, NO tarifas confirmadas enero 2027. Incluye traslado aeropuerto a hospedajes y movilidad auxiliar, excluye vuelos, transporte ya incluido en tours de Guatapé y Rosario, transporte desde/hacia domicilio en CDMX y vehículo privado exclusivo El Zaino→Cartagena. PLAN B Cabo San Juan→Barranquilla queda pendiente de cotización y NO incluido."
     },
     {
       "id": "food-budget",
@@ -1019,7 +1019,7 @@
               "segments": [
                 {
                   "from": "Ecolodge en sector El Zaino",
-                  "to": "Hotel en San Diego, Cartagena",
+                  "to": "Cabrero House Boutique, Cartagena (El Cabrero)",
                   "departure": null,
                   "arrival": null,
                   "operator": "Vehículo privado por confirmar"
@@ -1057,7 +1057,7 @@
       ],
       "boardingNote": "Punto de salida general El Zaino, km 30; horario y lugar final sujetos a confirmación del operador para enero 2027.",
       "ticketGuide": "Buscar plazas reales del sábado 23/01/2027; comparar tarifa total del shuttle más traslados de primera/última milla contra coche privado. No se ha comprado el servicio.",
-      "notes": "El importe no se suma por separado: es una posibilidad dentro de la provisión global de movilidad terrestre de $5,000 MXN."
+      "notes": "PLAN A ecolodge: Marsol El Zaino→Cartagena (referencia COP 130,000 ≈ $752 MXN) y última milla a Cabrero House, ambos integrados en los $7,000 MXN de movilidad, NO sumar el pasaje dos veces. Traslado privado exclusivo NO presupuestado. PLAN B camping Cabo San Juan→Barranquilla→Cartagena se calculará por separado."
     }
   ],
   "ticketNotes": [],
@@ -1144,16 +1144,16 @@
       "order": 7
     }
   ],
-  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Islas del Rosario fijadas el lunes 25 (sin Bora Bora ni yate en Bocagrande), con operador y costo todavía por cotizar. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior.",
+  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Islas del Rosario fijadas el lunes 25 (sin Bora Bora ni yate en Bocagrande), con operador y costo todavía por cotizar. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior. Movilidad del plan A (ecolodge sector El Zaino 21–23 enero) desglosada ≈$6,176 MXN y provisión revisada de $7,000 MXN, con Marsol y taxis estratégicos. No sumar traslados incluidos en tours; plan B camping Cabo San Juan + Barranquilla queda sin cotizar.",
   "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Bahía Suite, Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, El Cabrero). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
-    "low": 42670,
-    "high": 59670,
+    "low": 43670,
+    "high": 60670,
     "marginMXN": 0,
     "useBudgetRange": true,
     "referenceFlightMXN": 9023,
-    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa A $9,023 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Tayrona y servicios pendientes mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $48,752 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario está seleccionada, pero no tiene tarifa y puede requerir aumentar la partida de actividades.. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; Tayrona sigue provisional.. Bahía Suite $2,069 MXN según Booking; Casa Verde $6,997 MXN es alternativa excluyente no reembolsable."
+    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa A $9,023 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Tayrona y servicios pendientes mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $49,752 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario está seleccionada, pero no tiene tarifa y puede requerir aumentar la partida de actividades.. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; Tayrona sigue provisional.. Bahía Suite $2,069 MXN según Booking; Casa Verde $6,997 MXN es alternativa excluyente no reembolsable.. Plan A de movilidad revisado con taxis estratégicos y Marsol: estimación central ≈$6,175–6,176 MXN y provisión de $7,000 MXN. Plan B Cabo San Juan/Barranquilla sin presupuestar."
   },
   "hotels": [
     {
@@ -1423,10 +1423,10 @@
   ],
   "sourceNote": "Copa A $9,023 MXN actualizada según capturas del 06/11/2026: vuelos CM149+CM397 (ida) y CM365+CM188 (regreso 22:05). Copa B $9,719 MXN, respaldo, permanece con CM195+CM654/CM365+CM866 (regreso 22:25). Equipaje exclusivamente de mano; ninguna tarifa comprada. Avianca nacional COP 217,580 observada anteriormente. Hoteles son metas basadas en referencias de otras fechas.",
   "budgetRange": [
-    42670,
-    59670
+    43670,
+    60670
   ],
-  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $48,752 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Bahía Suite Santa Marta 3 noches $2,069 (Booking flexible, sin reservar); Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres y lancha $6,000; alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $48,752 MXN; rango orientativo $42,670–59,670 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Moabi, Bahía Suite y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Tayrona permanece estimado. Casa Verde ($6,997 MXN no reembolsable) es segunda opción excluyente, no sumada. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $46,606 MXN, sin recalcular traslados/desayunos).",
+  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $49,752 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Bahía Suite Santa Marta 3 noches $2,069 (Booking flexible, sin reservar); Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres, aeroportuarios, urbanos y lancha $7,000 (Plan A ecolodge, estimación detallada ≈$6,176 con margen ≈$824); alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $49,752 MXN; rango orientativo $43,670–60,670 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Moabi, Bahía Suite y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Tayrona permanece estimado. Casa Verde ($6,997 MXN no reembolsable) es segunda opción excluyente, no sumada. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $47,606 MXN, sin recalcular traslados/desayunos).",
   "placeDescriptions": {
     "col27-botero": "Plaza al aire libre con esculturas monumentales de Fernando Botero, donde el arte contemporáneo convive con la arquitectura del centro de Medellín.",
     "col27-provenza": "Calles arboladas, restaurantes y terrazas convierten este sector de El Poblado en un lugar animado para terminar la jornada.",
