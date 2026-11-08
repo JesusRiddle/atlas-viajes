@@ -382,7 +382,7 @@
       "pm": "Almuerzo y estancia en Playa Tranquila, Barú; retorno a Cartagena durante la tarde. El recorrido visita el entorno de las Islas del Rosario desde la embarcación y el agua, pero no incluye una visita a pie a Isla Grande según la descripción consultada.",
       "night": "Última cena en Cartagena y preparación del equipaje para el vuelo de Copa del martes 26.",
       "mobility": "• *Cómo trasladarte:* Desde Cabrero House, ir al Muelle de la Bodeguita (punto de encuentro y puerta por reconfirmar). El tour candidato incluye navegación en lancha y regreso a Cartagena; confirmar horarios y tasas, así como el embarque y desembarque en Playa Tranquila.",
-      "note": "• *Tour candidato:* Corales Cartagena · excursión Islas del Rosario y Playa Blanca con snorkel, todavía sin reservar. Incluye como atractivos anunciados arrecifes, observación de aves y avioneta hundida; solicitar confirmación del itinerario del 25/01/2027.\n• *Antes de reservar:* Verificar precio final y tasas, disponibilidad para una persona, equipo de snorkel y chaleco, supervisión, resguardo de pertenencias, condiciones de desembarque y cancelación por mal tiempo. No descender ni entrar en los restos de la avioneta sin condiciones seguras y supervisión apropiada.\n• *Oceanario:* Solo actividad opcional si el operador la ofrece; entrada y tiempo sujetos a confirmación.\n• *Alternativa por suspensión marítima:* Museo Histórico de Cartagena (Palacio de la Inquisición), plazas del Centro Histórico o Convento de la Popa con transporte contratado.",
+      "note": "• *Tour candidato:* Corales Cartagena · excursión Islas del Rosario y Playa Blanca con snorkel, todavía sin reservar. Incluye como atractivos anunciados arrecifes, observación de aves y avioneta hundida; solicitar confirmación del itinerario del 25/01/2027.\n• *Antes de reservar:* Verificar precio final y tasas, disponibilidad para una persona, equipo de snorkel y chaleco, supervisión, resguardo de pertenencias, condiciones de desembarque y cancelación por mal tiempo. No descender ni entrar en los restos de la avioneta sin condiciones seguras y supervisión apropiada.\n• *Otros tours considerados:* Top 3 Islas (Bora Bora, Islabela y Pao Pao), 5 Islas (snorkel, Cholón y Barú) y Rosario de Mar (pasadía en una isla). Son alternativas, no actividades adicionales del día; detalles y precios de referencia en Reservaciones importantes.\n• *Oceanario:* Solo actividad opcional si el operador la ofrece; entrada y tiempo sujetos a confirmación.\n• *Alternativa por suspensión marítima:* Museo Histórico de Cartagena (Palacio de la Inquisición), plazas del Centro Histórico o Convento de la Popa con transporte contratado.",
       "spend": null,
       "places": [
         "col27-islas-rosario",
@@ -550,11 +550,23 @@
         },
         {
           "title": "Islas del Rosario · snorkel con Corales Cartagena · 25 de enero",
-          "description": "Primera opción seleccionada para investigar, NO reservada: tour de Corales Cartagena con snorkel en arrecifes, observación de aves y avioneta hundida cerca de Isla Grande, seguido de almuerzo en Playa Tranquila (Barú). El itinerario no anuncia desembarcar para recorrer Isla Grande. Oceanario solo opcional. Confirmar operación lunes 25/01/2027 para una persona, precio final con tasas y seguro, custodia de pertenencias durante el snorkel, equipo/chaleco, guía, muelle y desembarque, horario y cancelación por oleaje. Mantener comparación con otros tours si la falta de visita terrestre a Isla Grande resulta decisiva. Provisión de actividades aún no recalculada.",
+          "description": "Primera opción seleccionada para investigar, NO reservada: tour de Corales Cartagena con snorkel en arrecifes, observación de aves y avioneta hundida cerca de Isla Grande, seguido de almuerzo en Playa Tranquila (Barú). El itinerario no anuncia desembarcar para recorrer Isla Grande. Oceanario solo opcional. Confirmar operación lunes 25/01/2027 para una persona, precio final con tasas y seguro, custodia de pertenencias durante el snorkel, equipo/chaleco, guía, muelle y desembarque, horario y cancelación por oleaje. Mantener comparación con otros tours si la falta de visita terrestre a Isla Grande resulta decisiva. Provisión de actividades aún no recalculada. Alternativas comparadas (tarifas de referencia, no confirmadas para enero 2027): Top 3 Islas de Bora Bora Travel — COP 550,300 total según cotización recibida, tres clubes de playa con alrededor de 1 h 40 min en cada uno y muelles de madera; incluye Bora Bora, descartado como pasadía individual. Tour 5 Islas de Global Experiences/Islands Tours — desde COP 350,000 publicado, circuito con snorkel, paradas en Cholón y Barú; confirmar cuáles permiten bajar a tierra, seguridad y resguardo de objetos. Rosario de Mar — desde COP 410,000 más cargos según modalidad, pasadía en una isla con almuerzo; Oceanario opcional y normalmente con entrada aparte. No sumar alternativas al presupuesto ni reservar más de un tour.",
           "links": [
             {
               "label": "Corales Cartagena · tour de snorkel",
               "url": "https://www.coralescartagena.com/es/tours/excursion-islas-de-rosario-y-playa-blanca-con-snorkel-o-acuario/"
+            },
+            {
+              "label": "Top 3 Islas · Bora Bora Travel",
+              "url": "https://www.boraboracartagena.com/es/pasadias/top-3-islas"
+            },
+            {
+              "label": "Rosario de Mar · pasadías",
+              "url": "https://www.rosariodemarhotel.com/es/hotel-islas-del-rosario/pasadias"
+            },
+            {
+              "label": "5 Islas · video de referencia",
+              "url": "https://www.youtube.com/watch?v=DRUUWk_fLV0"
             }
           ]
         }
