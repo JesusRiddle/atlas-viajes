@@ -47,7 +47,7 @@
     "weatherWhy": "En enero el Caribe está generalmente más seco, pero Santa Marta puede presentar viento y oleaje; Medellín es templada por altitud. Clima histórico, no pronóstico.",
     "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
   },
-  "intro": "Comienzas en Medellín con el arte de Comuna 13, las esculturas de Plaza Botero, el Parque de Bolívar y la vista desde Pueblito Paisa, antes de una excursión guiada a Guatapé. Después vuelas a Santa Marta para explorar la naturaleza y el café de Minca y conocer la bahía de Taganga. En Tayrona puedes caminar a Cabo San Juan: queda por elegir entre dos noches en ecolodge junto a El Zaino o una noche de camping dentro del parque seguida de Barranquilla. La ruta continúa por carretera hasta Cartagena, con alojamiento provisional en El Cabrero y tiempo para recorrer la Ciudad Amurallada, disfrutar Getsemaní y probar la gastronomía caribeña. El domingo 24 incluye Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní. El lunes 25 se dedica a una excursión de día completo a las Islas del Rosario, con isla y operador aún por definir según las condiciones de navegación.",
+  "intro": "Comienzas en Medellín con el arte de Comuna 13, las esculturas de Plaza Botero, el Parque de Bolívar y la vista desde Pueblito Paisa, antes de una excursión guiada a Guatapé. Después vuelas a Santa Marta para explorar la naturaleza y el café de Minca y conocer la bahía de Taganga. En Tayrona puedes caminar a Cabo San Juan: queda por elegir entre dos noches en ecolodge junto a El Zaino o una noche de camping dentro del parque seguida de Barranquilla. La ruta continúa por carretera hasta Cartagena, con alojamiento provisional en El Cabrero y tiempo para recorrer la Ciudad Amurallada, disfrutar Getsemaní y probar la gastronomía caribeña. El domingo 24 incluye Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní. El lunes 25 se dedica a una excursión de día completo a las Islas del Rosario, con Corales Cartagena como operador candidato para hacer snorkel en arrecifes y observar la avioneta hundida; todavía sin reserva.",
   "introShort": "De Medellín y Guatapé a la Sierra Nevada: arte urbano, pueblos coloridos, café en Minca y senderos de Tayrona. El viaje termina con la arquitectura colonial, gastronomía y fortalezas en Cartagena, y una excursión a las Islas del Rosario.",
   "introHighlights": [
     "Medellín",
@@ -94,7 +94,7 @@
     },
     {
       "city": "Cartagena de Indias",
-      "description": "Recorre el Castillo de San Felipe, Las Bóvedas, la Ciudad Amurallada y Getsemaní; disfruta las murallas al atardecer y prueba posta negra, arepa de huevo y cocadas. Dedica el día siguiente a conocer las Islas del Rosario en una excursión por definir."
+      "description": "Recorre el Castillo de San Felipe, Las Bóvedas, la Ciudad Amurallada y Getsemaní; disfruta las murallas al atardecer y prueba posta negra, arepa de huevo y cocadas. Dedica el día siguiente a conocer las Islas del Rosario en un tour candidato de Corales Cartagena, con snorkel en arrecifes y observación de una avioneta hundida."
     }
   ],
   "days": [
@@ -376,13 +376,13 @@
     {
       "n": 11,
       "date": "2027-01-25",
-      "title": "Islas del Rosario · excursión de día completo",
+      "title": "Islas del Rosario · snorkel en arrecifes y avioneta hundida",
       "base": "Cartagena",
-      "am": "Desayuno temprano y salida desde Cartagena hacia el muelle del operador elegido. Navegación a las Islas del Rosario, con recorrido y paradas por definir según el tour seleccionado.",
-      "pm": "Visita al archipiélago, almuerzo y actividades incluidas en el tour. Regreso a Cartagena durante la tarde, sujeto a las condiciones del mar.",
+      "am": "Desayuno temprano y traslado al Muelle de la Bodeguita para la excursión candidata de Corales Cartagena. Navegación panorámica por la bahía y Bocachica, seguida de snorkel guiado en arrecifes y observación de aves en Isla del Pavito. Después, parada de snorkel para observar la avioneta hundida cerca de Isla Grande, según las condiciones del mar.",
+      "pm": "Almuerzo y estancia en Playa Tranquila, Barú; retorno a Cartagena durante la tarde. El recorrido visita el entorno de las Islas del Rosario desde la embarcación y el agua, pero no incluye una visita a pie a Isla Grande según la descripción consultada.",
       "night": "Última cena en Cartagena y preparación del equipaje para el vuelo de Copa del martes 26.",
-      "mobility": "• *Cómo trasladarte:* Salir desde Cabrero House hacia el muelle indicado por el operador. Contratar lancha autorizada con ida y vuelta en horario diurno; confirmar muelles para desembarcar, horarios, tasas, seguro y regreso.",
-      "note": "• *Reservación importante:* Islas del Rosario es el plan principal del día, pero aún no hay operador ni recorrido reservados. Comparar excursiones panorámicas y paradas antes de elegir; Bora Bora Beach Club continúa descartado como pasadía principal.\n• *Oceanario:* Visita opcional únicamente si el recorrido elegido la ofrece; confirmar tiempo disponible y costo de entrada por separado.\n• *Alternativa por mal tiempo:* Si se suspende la navegación, visitar el Museo Histórico de Cartagena (Palacio de la Inquisición), recorrer plazas del Centro Histórico o considerar el Convento de la Popa con transporte contratado.\n• *Presupuesto:* Cotizar tarifa total antes de actualizar la provisión de actividades.",
+      "mobility": "• *Cómo trasladarte:* Desde Cabrero House, ir al Muelle de la Bodeguita (punto de encuentro y puerta por reconfirmar). El tour candidato incluye navegación en lancha y regreso a Cartagena; confirmar horarios y tasas, así como el embarque y desembarque en Playa Tranquila.",
+      "note": "• *Tour candidato:* Corales Cartagena · excursión Islas del Rosario y Playa Blanca con snorkel, todavía sin reservar. Incluye como atractivos anunciados arrecifes, observación de aves y avioneta hundida; solicitar confirmación del itinerario del 25/01/2027.\n• *Antes de reservar:* Verificar precio final y tasas, disponibilidad para una persona, equipo de snorkel y chaleco, supervisión, resguardo de pertenencias, condiciones de desembarque y cancelación por mal tiempo. No descender ni entrar en los restos de la avioneta sin condiciones seguras y supervisión apropiada.\n• *Oceanario:* Solo actividad opcional si el operador la ofrece; entrada y tiempo sujetos a confirmación.\n• *Alternativa por suspensión marítima:* Museo Histórico de Cartagena (Palacio de la Inquisición), plazas del Centro Histórico o Convento de la Popa con transporte contratado.",
       "spend": null,
       "places": [
         "col27-islas-rosario",
@@ -395,6 +395,12 @@
       "optionalPlaces": [
         "col27-palacio-inquisicion",
         "col27-convento-popa"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Corales Cartagena · excursión Islas del Rosario y Playa Blanca",
+          "url": "https://www.coralescartagena.com/es/tours/excursion-islas-de-rosario-y-playa-blanca-con-snorkel-o-acuario/"
+        }
       ]
     },
     {
@@ -543,9 +549,14 @@
           ]
         },
         {
-          "title": "Islas del Rosario · lunes 25 de enero",
-          "description": "Excursión principal del lunes 25, sin reservar. Comparar recorridos, islas, paradas y precio final con tasas y seguro; confirmar embarque y desembarque por muelle, regreso diurno y política ante condiciones marítimas. Bora Bora Beach Club como pasadía principal y yate por Bocagrande siguen descartados. Actualizar la provisión de actividades una vez elegido el tour.",
-          "links": []
+          "title": "Islas del Rosario · snorkel con Corales Cartagena · 25 de enero",
+          "description": "Primera opción seleccionada para investigar, NO reservada: tour de Corales Cartagena con snorkel en arrecifes, observación de aves y avioneta hundida cerca de Isla Grande, seguido de almuerzo en Playa Tranquila (Barú). El itinerario no anuncia desembarcar para recorrer Isla Grande. Oceanario solo opcional. Confirmar operación lunes 25/01/2027 para una persona, precio final con tasas y seguro, custodia de pertenencias durante el snorkel, equipo/chaleco, guía, muelle y desembarque, horario y cancelación por oleaje. Mantener comparación con otros tours si la falta de visita terrestre a Isla Grande resulta decisiva. Provisión de actividades aún no recalculada.",
+          "links": [
+            {
+              "label": "Corales Cartagena · tour de snorkel",
+              "url": "https://www.coralescartagena.com/es/tours/excursion-islas-de-rosario-y-playa-blanca-con-snorkel-o-acuario/"
+            }
+          ]
         }
       ]
     ],
@@ -683,7 +694,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión global pendiente de recotización para Guatapé organizado, Piedra del Peñol, Comuna 13, Museo de Antioquia, tour en bicicleta por Santa Marta, café La Victoria, Marinka, entrada a Tayrona con seguro obligatorio e Islas del Rosario (pasadía convencional, sin Bora Bora). La incorporación de Islas del Rosario puede hacer insuficiente esta bolsa de $5,000 MXN: NO afirmar que ya está íntegramente cotizada. Tarifas y cupos 2027 pendientes."
+      "notes": "Provisión global pendiente de recotización para Guatapé organizado, Piedra del Peñol, Comuna 13, Museo de Antioquia, tour en bicicleta por Santa Marta, café La Victoria, Marinka, entrada a Tayrona con seguro obligatorio e Islas del Rosario (Corales Cartagena como candidato de snorkel, sin tarifa confirmada para enero de 2027). La incorporación de Islas del Rosario puede hacer insuficiente esta bolsa de $5,000 MXN: NO afirmar que ya está íntegramente cotizada. Tarifas y cupos 2027 pendientes."
     },
     {
       "id": "other-budget",
@@ -1158,7 +1169,7 @@
       "order": 8
     }
   ],
-  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Domingo 24 dedicado a Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní; lunes 25 dedicado a una excursión de día completo a las Islas del Rosario, aún sin operador ni isla seleccionados; visitas culturales en tierra como alternativa si se cancela la navegación. Bora Bora como pasadía principal y yate en Bocagrande descartados. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior. Movilidad del plan A (ecolodge sector El Zaino 21–23 enero) desglosada ≈$6,176 MXN y provisión revisada de $7,000 MXN, con Marsol y taxis estratégicos. No sumar traslados incluidos en tours; plan B camping Cabo San Juan + Barranquilla queda sin cotizar. La partida de $5,000 MXN para actividades incluye una provisión sin desglose del tour a Islas del Rosario: confirmar si es suficiente antes de reservar.",
+  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Domingo 24 dedicado a Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní; lunes 25 dedicado a excursión de Islas del Rosario, con Corales Cartagena como candidato de snorkel en arrecifes y avioneta hundida, sin reserva ni disponibilidad confirmada; visitas culturales en tierra como alternativa si se cancela la navegación. Bora Bora como pasadía principal y yate en Bocagrande descartados. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior. Movilidad del plan A (ecolodge sector El Zaino 21–23 enero) desglosada ≈$6,176 MXN y provisión revisada de $7,000 MXN, con Marsol y taxis estratégicos. No sumar traslados incluidos en tours; plan B camping Cabo San Juan + Barranquilla queda sin cotizar. La partida de $5,000 MXN para actividades incluye una provisión sin desglose del tour a Islas del Rosario: confirmar si es suficiente antes de reservar.",
   "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Bahía Suite, Centro Histórico), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, El Cabrero). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
@@ -1367,7 +1378,7 @@
     "Aeropuertos y conexiones: todos los vuelos son candidatos; verificar tarifas, equipaje y tiempos efectivos de trasbordo antes de comprar.",
     "Moabi Hotel en Manila es el candidato elegido para Medellín (15–18 enero; tarifa flexible $4,768 MXN por 3 noches según Booking 06/11/2026, sin reservar). Confirmar desayuno extra, pago, impuestos y consigna.",
     "Tayrona conserva dos variantes sin decidir: ecolodge exterior 21–23 o camping Cabo San Juan 21–22 y noche en Barranquilla 22–23. Solo la primera está reflejada en el presupuesto provisional.",
-    "Islas del Rosario es el plan principal del lunes 25, sujeto a condiciones marítimas. Isla, recorrido y operador pendientes de decidir; confirmar tarifa total, muelles, seguridad y regreso diurno. Bora Bora Beach Club continúa descartado como pasadía principal."
+    "El lunes 25, Corales Cartagena es el candidato principal para snorkel en arrecifes y la avioneta hundida, sin reserva. Confirmar la custodia de pertenencias, equipo, desembarques, precio total y seguridad marítima; el tour no anuncia recorrido terrestre por Isla Grande."
   ],
   "sources": [
     {
@@ -1466,7 +1477,7 @@
     "col27-getsemani-murales": "Los murales de Getsemaní reflejan la identidad artística del barrio y contrastan con las fachadas antiguas y su ambiente cotidiano.",
     "col27-castillo-san-felipe": "Esta fortaleza de piedra domina una elevación estratégica y conserva estructuras defensivas construidas para proteger Cartagena de ataques por tierra.",
     "col27-bovedas": "Las antiguas bóvedas militares, junto a las murallas del sector de San Diego, albergan actualmente puestos artesanales en sus galerías amarillas.",
-    "col27-islas-rosario": "Archipiélago caribeño frente a Cartagena, previsto para una excursión de día completo. Isla y operador pendientes de selección.",
+    "col27-islas-rosario": "Archipiélago frente a Cartagena. El tour candidato de Corales Cartagena contempla navegación, snorkel en arrecifes y observación de una avioneta hundida, con almuerzo posterior en Barú.",
     "col27-palacio-inquisicion": "Museo Histórico de Cartagena en un palacio colonial del Centro Histórico; alternativa cultural si no se realiza la excursión marítima.",
     "col27-convento-popa": "Convento histórico en el cerro de la Popa, con vistas panorámicas sobre Cartagena; visita alternativa mediante transporte contratado."
   },
