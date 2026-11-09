@@ -1,0 +1,407 @@
+{
+  "id": "suiza-verde-2027",
+  "name": "Suiza verde 2027",
+  "flag": "🇨🇭",
+  "status": null,
+  "start": "2027-09-11",
+  "end": "2027-09-26",
+  "tag": "PRADERAS ALPINAS, LAGOS Y PUEBLOS DE CUENTO",
+  "routeCities": [
+    "Zúrich",
+    "Maienfeld",
+    "Lucerna",
+    "Engelberg",
+    "Grindelwald",
+    "Lauterbrunnen",
+    "Wengen",
+    "Mürren",
+    "Zermatt"
+  ],
+  "bases": [
+    [
+      "Zúrich",
+      2
+    ],
+    [
+      "Lucerna",
+      3
+    ],
+    [
+      "Grindelwald",
+      5
+    ],
+    [
+      "Zermatt",
+      4
+    ]
+  ],
+  "work": null,
+  "costs": [],
+  "profile": {
+    "pace": "Moderado",
+    "paceWhy": "Cuatro estancias en catorce noches y excursiones con días de respaldo por lluvia.",
+    "solo": "Adecuado",
+    "soloWhy": "Red ferroviaria extensa y alojamientos céntricos, sin vehículo de alquiler.",
+    "weather": "Variable",
+    "weatherWhy": "Alta montaña condicionada por nubosidad, viento y mantenimiento.",
+    "why": "Lagos, pueblos alpinos verdes, Heidi y una experiencia glaciar sin esquiar."
+  },
+  "intro": "La ruta comienza en Zúrich, entre callejuelas históricas y el chocolate suizo, antes de una excursión a Maienfeld para visitar el pueblo de Heidi. En Lucerna, el lago y los puentes se combinan con una jornada de alta montaña en el Titlis, donde espera el puente colgante sobre el glaciar. El tren conduce después a Grindelwald, entre praderas, chalets y montañas, para explorar Lauterbrunnen, Wengen, Mürren, First y los miradores de la región Jungfrau. Zermatt cierra el recorrido con el Matterhorn, Gornergrat y paseos alpinos. Septiembre es una opción inicial por sus paisajes todavía verdes y una ocupación potencialmente menor que en pleno verano; el tiempo de montaña seguirá siendo variable.",
+  "introShort": "De Zúrich y el pueblo de Heidi a los lagos de Lucerna y el puente colgante del Titlis. Después, los valles verdes de Jungfrau y los paisajes del Matterhorn en Zermatt, viajando principalmente en tren.",
+  "climate": "Septiembre suele ofrecer valles aún verdes y temperaturas templadas en ciudades, con días frescos en pueblos alpinos y frío intenso en las cumbres. La lluvia y las nubes pueden limitar los miradores; los valores exactos por destino se investigarán al cerrar las fechas.\n\n*Qué llevar:* Capas ligeras, impermeable, botas cómodas y protección para viento y frío en Titlis, Jungfraujoch o Gornergrat.\n\n*Horas de luz:* Los días se acortan a lo largo de septiembre; conviene priorizar excursiones de montaña por la mañana y consultar los horarios reales de los remontes.",
+  "solo": "Ruta pensada para una persona, con trenes y alojamientos en zonas conectadas; no requiere conducir ni hacer deportes de montaña.",
+  "flight": "Salida tentativa desde Ciudad de México el 11 de septiembre de 2027 con llegada al día siguiente a Zúrich. Regreso tentativo el 26 de septiembre desde Ginebra, evitando retroceder innecesariamente a Zúrich. Rutas, tarifas, escalas y equipaje por confirmar.",
+  "local": "Priorizar SBB y trenes regionales. Zúrich–Maienfeld–Zúrich para Heididorf; Lucerna–Engelberg para Titlis; Lucerna–Grindelwald; Grindelwald–Zermatt; Zermatt–aeropuerto de Ginebra. Comparar Swiss Travel Pass y Half Fare Card cuando existan cotizaciones.",
+  "experiences": [
+    {
+      "city": "Zúrich",
+      "description": "Casco antiguo y Lindt Home of Chocolate; Maienfeld/Heididorf como excursión de día completo desde Zúrich."
+    },
+    {
+      "city": "Lucerna",
+      "description": "Kapellbrücke, lago de los Cuatro Cantones y excursión desde Engelberg a Titlis con Cliff Walk, glaciar y teleférico; Rigi opcional."
+    },
+    {
+      "city": "Grindelwald",
+      "description": "Paisajes verdes de Grindelwald y excursiones a Lauterbrunnen, Wengen y Mürren; First Cliff Walk, Männlichen y Jungfraujoch sujetos a visibilidad y operación."
+    },
+    {
+      "city": "Zermatt",
+      "description": "Matterhorn, ferrocarril de Gornergrat y paseos panorámicos no técnicos condicionados por el clima."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-09-11",
+      "title": "Vuelo internacional desde CDMX",
+      "base": "En vuelo",
+      "am": "Vuelo transatlántico; itinerario aéreo sin cotizar.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 2,
+      "date": "2027-09-12",
+      "title": "Llegada a Zúrich y casco antiguo",
+      "base": "Zúrich",
+      "am": "Llegada tentativa a Zúrich, traslado al alojamiento y paseo suave por el centro histórico.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 3,
+      "date": "2027-09-13",
+      "title": "Maienfeld y museo de Heidi",
+      "base": "Zúrich",
+      "am": "Excursión en tren a Maienfeld; visita a Heididorf y regreso a Zúrich. Comprobar acceso local al museo.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 4,
+      "date": "2027-09-14",
+      "title": "Zúrich → Lucerna",
+      "base": "Lucerna",
+      "am": "Visita a Lindt Home of Chocolate si hay cupo; tren a Lucerna y Kapellbrücke.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 5,
+      "date": "2027-09-15",
+      "title": "Engelberg y Monte Titlis",
+      "base": "Lucerna",
+      "am": "Excursión en tren a Engelberg; ascenso a Titlis, Cliff Walk y cueva glaciar si operan y hay visibilidad.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 6,
+      "date": "2027-09-16",
+      "title": "Lucerna y lago de los Cuatro Cantones",
+      "base": "Lucerna",
+      "am": "Paseo por Lucerna, lago o Rigi opcional; jornada de respaldo para Titlis si fue necesario.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 7,
+      "date": "2027-09-17",
+      "title": "Lucerna → Grindelwald",
+      "base": "Grindelwald",
+      "am": "Tren panorámico hacia Interlaken y continuación a Grindelwald; paseo por el pueblo.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 8,
+      "date": "2027-09-18",
+      "title": "Lauterbrunnen, Wengen y Mürren",
+      "base": "Grindelwald",
+      "am": "Recorrido por los pueblos y valles con praderas y cascadas; ajustar conexiones.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 9,
+      "date": "2027-09-19",
+      "title": "Jungfraujoch o valle alternativo",
+      "base": "Grindelwald",
+      "am": "Excursión a Jungfraujoch solo si la visibilidad justifica el costo; alternativa de paisaje desde el valle.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 10,
+      "date": "2027-09-20",
+      "title": "Grindelwald First y Cliff Walk",
+      "base": "Grindelwald",
+      "am": "Ascenso a First, puente y sendero sencillo opcional si el tiempo y los remontes lo permiten.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 11,
+      "date": "2027-09-21",
+      "title": "Männlichen y pueblos alpinos",
+      "base": "Grindelwald",
+      "am": "Miradores de Männlichen; día flexible para reordenar excursiones de montaña.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 12,
+      "date": "2027-09-22",
+      "title": "Grindelwald → Zermatt",
+      "base": "Zermatt",
+      "am": "Traslado en tren hacia Zermatt; recorrido por el pueblo y vistas al Matterhorn si está despejado.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 13,
+      "date": "2027-09-23",
+      "title": "Gornergrat",
+      "base": "Zermatt",
+      "am": "Ferrocarril panorámico a Gornergrat, condicionado por cielo claro.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 14,
+      "date": "2027-09-24",
+      "title": "Zermatt y senderos sencillos",
+      "base": "Zermatt",
+      "am": "Caminata fácil o mirador accesible sin actividad técnica; elegir según estado de senderos.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 15,
+      "date": "2027-09-25",
+      "title": "Zermatt y día de respaldo",
+      "base": "Zermatt",
+      "am": "Reserva para Gornergrat, paseo por el pueblo o descanso; no comprometer demasiadas excursiones.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 16,
+      "date": "2027-09-26",
+      "title": "Zermatt → Ginebra → CDMX",
+      "base": "En tránsito",
+      "am": "Traslado al aeropuerto de Ginebra, únicamente si la salida aérea contratada permite margen suficiente; si no, modificar noche anterior o aeropuerto.",
+      "pm": null,
+      "night": null,
+      "mobility": null,
+      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "spend": null,
+      "places": []
+    }
+  ],
+  "reservations": [
+    {
+      "title": "Heididorf · Maienfeld",
+      "note": "Confirmar calendario y acceso 2027, especialmente transporte entre estación y museo; no reservar todavía."
+    },
+    {
+      "title": "Titlis y Cliff Walk",
+      "note": "El puente está incluido en el ascenso al Titlis; comprobar condiciones, mantenimiento y clima antes de pagar. Alternar con la jornada libre de Lucerna si hay nubes."
+    },
+    {
+      "title": "Remontes de Grindelwald y Zermatt",
+      "note": "Verificar días de operación y meteorología de First, Männlichen, Jungfraujoch y Gornergrat antes de fijar el orden de excursiones."
+    }
+  ],
+  "exchangeRates": {},
+  "exchangeRateSnapshot": null,
+  "expenses": [],
+  "majorTransport": [],
+  "ticketNotes": [],
+  "attractionTerms": [],
+  "cover": null,
+  "mapPoints": [],
+  "planningDetails": "VERSIÓN 1 · Ventana del 11 al 26 de septiembre de 2027 exclusivamente provisional; no comprar ni reservar. Alternativa por evaluar: junio de 2027. Suiza Nevada y Suiza Verde son planes mutuamente excluyentes; se realizará solamente uno. Comparar especialmente precios, remontes, apertura de senderos y jornadas reales de vuelo antes de decidir.",
+  "lodgingSummary": "Zúrich: 2 noches; Lucerna: 3; Grindelwald: 5; Zermatt: 4. Zonas y hoteles específicos pendientes.",
+  "heroLodgingSummary": "14 noches · cuatro alojamientos tentativos",
+  "budgetPreliminary": true,
+  "hotels": [],
+  "stays": [],
+  "seasonality": {
+    "summary": "Suiza verde: comparar junio y septiembre de 2027. Septiembre provisionalmente elegido por valles aún verdes y posible reducción de multitudes tras agosto; junio ofrece días más largos y flores pero más posibilidad de nieve residual en senderos altos. Comparar apertura de remontes y precios antes de decidir.",
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": null
+      },
+      "11": {
+        "status": "pending",
+        "description": null
+      },
+      "12": {
+        "status": "pending",
+        "description": null
+      },
+      "01": {
+        "status": "pending",
+        "description": null
+      },
+      "02": {
+        "status": "pending",
+        "description": null
+      },
+      "03": {
+        "status": "pending",
+        "description": null
+      },
+      "04": {
+        "status": "pending",
+        "description": null
+      },
+      "05": {
+        "status": "pending",
+        "description": null
+      },
+      "06": {
+        "status": "recommended",
+        "description": "Aproximadamente 12 a 22 °C en valles bajos; días largos y praderas florecidas. Puede quedar nieve en senderos de altura; apertura de remontes según calendario."
+      },
+      "07": {
+        "status": "conditional",
+        "description": "Aproximadamente 13 a 24 °C en valles bajos; montañas verdes, pero mayor demanda y precios estivales."
+      },
+      "08": {
+        "status": "conditional",
+        "description": "Aproximadamente 13 a 24 °C en valles bajos; paisajes verdes y alta ocupación turística en zonas populares."
+      },
+      "09": {
+        "status": "recommended",
+        "description": "Aproximadamente 9 a 20 °C en valles bajos; praderas aún verdes y menos visitantes después del verano alto. Más nubosidad o frío en altura y días progresivamente más cortos."
+      }
+    }
+  },
+  "practicalIndicators": [],
+  "tips": [],
+  "sources": [
+    "https://www.heididorf.ch/",
+    "https://www.myswitzerland.com/es/descubrir-suiza/maienfeld-el-mundo-de-heidi/",
+    "https://www.titlis.ch/en/activities/titlis-cliff-walk",
+    "https://www.titlis.ch/en/information/timetable-lifts",
+    "https://www.sbb.ch/en"
+  ],
+  "sourceNote": "Fuentes consultadas en noviembre de 2026; todos los horarios de 2027 por reconfirmar.",
+  "budgetRange": null,
+  "budgetNote": "Presupuesto integral pendiente de investigar vuelos, hoteles, trenes, teleféricos, alimentación, seguros y accesos. Ningún precio ni disponibilidad de 2027 está confirmado.",
+  "placeDescriptions": {},
+  "optionalSection": null,
+  "family": null,
+  "layoutClass": null,
+  "formatName": false,
+  "routeHighlights": [],
+  "cardHighlights": [],
+  "introHighlights": [
+    "Zúrich",
+    "Maienfeld",
+    "Lucerna",
+    "Titlis",
+    "Grindelwald",
+    "Lauterbrunnen",
+    "Wengen",
+    "Mürren",
+    "Zermatt",
+    "Matterhorn"
+  ],
+  "boldCityNames": false,
+  "emphasisStyle": false,
+  "linkRailInText": false,
+  "knownCosts": [],
+  "costExclusions": null,
+  "exchangeNote": null,
+  "railSummary": [],
+  "railTotal": null,
+  "railExclusions": null,
+  "railCurrencyNote": null,
+  "heroEyebrow": null,
+  "travelerCount": 1
+}
