@@ -4434,5 +4434,27 @@
     "photo": {
       "src": "assets/images/trips/suiza-nevada-2027/zurich-invierno.jpg"
     }
+  },
+  "sp27-castelo-almourol": {
+    "name": "Castillo de Almourol · excursión opcional",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Castelo_de_Almourol.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Castelo_de_Almourol.jpg",
+      "author": "Nikolau",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Nikolau / CC BY-SA 3.0"
+    }
+  },
+  "sp27-convento-cristo": {
+    "name": "Convento de Cristo · Tomar (opcional)",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/28/Convento_de_Cristo_-_Tomar_-_Portugal_%2831083902326%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Convento_de_Cristo_-_Tomar_-_Portugal_(31083902326).jpg",
+      "author": "Vitor Oliveira",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Vitor Oliveira / CC BY-SA 2.0"
+    }
   }
 }
