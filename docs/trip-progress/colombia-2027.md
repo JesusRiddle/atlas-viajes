@@ -1,6 +1,22 @@
 # Registro de avance · Colombia 2027
 
-## Actualización vigente · transporte terrestre Plan A ecolodge (06/11/2026)
+## Estado actual para revisión pre-merge · 10/11/2026
+
+**Escenario vigente:** viaje de una persona del 15 al 26 de enero de 2027 (12 días, 11 noches). Ruta Medellín → Santa Marta → Tayrona → Cartagena; Guatapé, Minca, Taganga e Islas del Rosario como excursiones. **No hay vuelos, hoteles ni tours reservados.** La alternativa Cabo San Juan + Barranquilla sigue sin decidir y NO forma parte del presupuesto del escenario vigente.
+
+**Alojamiento provisional:** Moabi Hotel (Medellín, 3 noches, $4,768 MXN); anuncio identificado como «martienda-deluxe-centro-historico» / Bahía Suite por **verificar identidad y ubicación** (Santa Marta, 3 noches, $2,069 MXN); Senda Koguiwa como candidato presupuestario (El Zaino, 2 noches, $5,200 MXN estimados); Cabrero House Boutique (Cartagena, 3 noches, $5,933 MXN). Son selecciones de planeación, no reservas.
+
+**Cartagena vigente:** domingo 24, recorrido por cuenta propia desde El Cabrero a Castillo de San Felipe, Botas Viejas, Las Bóvedas, San Diego, almuerzo en La Mulata, Ciudad Amurallada, murallas al atardecer y Getsemaní. Chiva cultural Nomades como alternativa, no actividad añadida. Lunes 25, Corales Cartagena como candidato para snorkel en arrecifes y avioneta hundida; paradas terrestres en Islas del Rosario no confirmadas. Plan alternativo de visitas culturales si se suspende el mar.
+
+**Presupuesto vigente, Plan A ecolodge:** $49,752 MXN; rango orientativo $43,670–60,670 MXN. Transporte terrestre $7,000 MXN de provisión, con desglose revisado ≈$6,537 MXN y margen ≈$463 MXN. Actividades y entradas $5,000 MXN **sin recotización integral**; puede ser insuficiente, especialmente con Corales Cartagena. No sumar precios alternativos ni duplicar alimentación, transporte y entradas ya previstos en categorías globales.
+
+**Auditoría editorial del 10/11:** «La esencia de tu recorrido» ahora narra solo experiencias y destinos, sin fechas, precios, hoteles, reservas ni opciones abiertas. Se actualizaron experiencias, estilo de viaje, descripción de Tayrona, movilidad en Cartagena y pruebas de la galería vigente (27 fotos). La bitácora posterior a este resumen es **histórica**; sus menciones a «estado vigente», presupuestos anteriores, alojamientos descartados o números antiguos de fotografías no describen el estado actual.
+
+**Pendientes legítimos:** comprobar identidad/dirección del alojamiento de Santa Marta; escoger hospedaje en Tayrona y su variante logística; recotizar excursiones; confirmar precios y horarios de Marsol, Corales y vuelos; verificar acceso efectivo al parque; revisar CI y aspecto visual en navegador antes del merge. No se autoriza merge automático.
+
+---
+
+## Histórico · transporte terrestre Plan A ecolodge (06/11/2026)
 
 Se fija el **Plan A: 21–23/01/2027, dos noches en un ecolodge cerca de El Zaino** como escenario operativo y presupuestario. El **Plan B: noche de camping Cabo San Juan 21–22/01 + Barranquilla 22–23/01** continúa como alternativa excluyente y aún no está cotizado ni incorporado a los totales.
 
@@ -12,7 +28,7 @@ Validación: gastos estructurados, panorama, estimación, notas de Marsol y prue
 
 ---
 
-## Actualización vigente · Santa Marta, 06/11/2026
+## Histórico · Santa Marta, 06/11/2026
 
 **Primera opción seleccionada (sin reservar):** Hotel Centro Histórico Bahía Suite, del **18 al 21 de enero de 2027**, 1 adulto, **Habitación Deluxe matrimonial, $2,069 MXN total por 3 noches**, con aire acondicionado, baño privado, cancelación gratuita hasta **18/01/2027 a las 18:00** y pago en alojamiento sin adelanto según captura. Desayuno por confirmar. [Booking (anuncio martienda-deluxe-centro-historico)](https://www.booking.com/hotel/co/martienda-deluxe-centro-historico.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&no_rooms=1). **Verificar que este anuncio corresponda al nombre comercial indicado, la dirección exacta y el ruido interno antes de reservar.**
 
@@ -22,7 +38,7 @@ Validación: gastos estructurados, panorama, estimación, notas de Marsol y prue
 
 ---
 
-## Estado vigente Cartagena y auditoría triple · 06/11/2026
+## Histórico · Cartagena y auditoría triple, 06/11/2026
 
 **Decisión:** Cabrero House Boutique es la primera opción para Cartagena (23–26 enero 2027, una persona, 3 noches), tarifa flexible de **$5,933 MXN** con desayuno y cancelación gratuita antes del 21 de enero. [Booking Cabrero House](https://www.booking.com/hotel/co/cabrero-house-boutique.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1). Sin reservar. Solicitar habitación con vista al jardín, alejada de recepción y pasillos transitados.
 
@@ -36,7 +52,7 @@ Validación: gastos estructurados, panorama, estimación, notas de Marsol y prue
 
 ---
 
-## Auditoría transversal Moabi · 06/11/2026 (estado vigente)
+## Histórico · auditoría transversal Moabi, 06/11/2026
 
 - Panorama: 12 días y 11 noches, un viajero. Moabi seleccionado para Medellín 15–18 enero, no reservado; Tayrona queda sin decidir.
 - Mapa: restaurados siete puntos con vínculos de noches Tayrona/Cartagena. Escenario provisional del ecolodge, no del camping.
