@@ -1,5 +1,7 @@
 # Guía editorial maestra de viajes · Atlas
 
+**Regla de independencia entre viajes (obligatoria):** Cada itinerario de Atlas es un escenario autónomo de planeación. **No comparar sus fechas con las de otros viajes del catálogo, no detectar ni advertir empalmes, no condicionar ni modificar su itinerario por coincidencias de calendario con otros viajes.** Los viajes pueden ser alternativas mutuamente excluyentes y eso no constituye un problema editorial o logístico. Solo evaluar conflictos entre viajes cuando el usuario lo solicite explícitamente. Al trabajar en un viaje, no editar los JSON de los demás.
+
 **Personas presupuestadas:** cada JSON nuevo declara `travelerCount` como número entero positivo o `null` mientras se desconoce. Es el tamaño del grupo cuyos gastos se estiman, no una indicación de si conviene viajar solo (`profile.solo`). La tabla comparativa muestra «Personas»; los importes de `expenses` siguen siendo para el grupo, y el equivalente individual se calcula solo cuando está definido, evitando duplicaciones.
 
 ## Aplicación
@@ -90,6 +92,8 @@ La orden **«refléjalo en el Atlas»** activa el flujo completo de construcció
 ### 2. Mapa (`mapa`)
 **Campos:** `mapPoints`, `bases`, `routeCities`.
 **Cómo:** puntos georreferenciados verificables, orden coherente con el recorrido; distinguir base, excursión y parada. Nombres concisos que quepan en tarjetas; nunca coordenadas inventadas. Los lugares opcionales deben identificarse.
+
+**Etiquetas del mapa (obligatorio):** cada punto con `base: true` debe vincularse a una entrada de `bases` para mostrar «X noche(s)»; si su nombre público difiere del nombre de alojamiento, especificar `mapPoints[].stayName` con el nombre exacto de `bases`. Los puntos sin pernocta muestran «Excursión». Nunca mostrar «Base» ni «Base para dormir» en la interfaz. Si falta el número de noches, mostrar «Noches por definir» y hacer fallar la auditoría de consistencia de un viaje completo. Verificar lista de ciudades, icono de cama y leyenda del mapa antes de aprobar una nueva planeación.
 **No incluir:** ubicaciones genéricas no visitadas ni pines ficticios para rutas por confirmar.
 
 ### 3. Temporadas (`temporadas`)

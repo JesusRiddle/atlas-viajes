@@ -101,23 +101,23 @@ const assert = require('node:assert/strict');
         copyBounds.y + copyBounds.height <= heroBounds.y + heroBounds.height + 2,
         'El texto del hero debe quedar dentro de la fotografía');
 
-      // Los cinco viajes nuevos forman la portada; los históricos siguen en el archivo de ideas.
+      // Los viajes actuales forman la portada; los históricos siguen en el archivo de ideas.
       const featuredCards = page.locator('#viajes .tripcard');
       const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
-      assert.equal(await featuredCards.count(), 5, 'La portada principal debe mostrar cinco viajes, encabezados por Suiza nevada');
-      assert.equal(await ideaCards.count(), allDestinations.length - 5, 'Todos los viajes históricos deben permanecer accesibles');
+      assert.equal(await featuredCards.count(), 6, 'La portada principal debe mostrar los seis viajes actuales, encabezados por Colombia');
+      assert.equal(await ideaCards.count(), allDestinations.length - 6, 'Todos los viajes históricos deben permanecer accesibles');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
-      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 5,
+      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 6,
         'La comparativa no debe confundir ideas históricas con viajes terminados');
       const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
       assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
       assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
       const people = await page.locator('#comparar .comparison-table tbody tr').evaluateAll(rows =>
         rows.map(row => row.cells[5].textContent.trim()));
-      assert.deepEqual(people, ['1', '1', '1', '1', '2'], 'Cuatro viajes para una persona y Patagonia para dos');
+      assert.deepEqual(people, ['1', '1', '1', '1', '1', '2'], 'Cinco viajes individuales y Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
       assert.deepEqual(topIds, [
-        '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
+        '#viaje/colombia-2027', '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
         '#viaje/japon-2027', '#viaje/patagonia-argentina-2027'
       ]);
       assert.ok(!(await page.locator('#ideas-viajes').innerText()).includes('Presupuesto estimado por persona'),
@@ -172,6 +172,34 @@ const assert = require('node:assert/strict');
           }
           assert.ok(region.climate.y >= region.budget.y,
             id + ' tarjeta Clima y luz debe seguir al presupuesto');
+        }
+        if (id === 'colombia-2027') {
+          const photoCatalog = JSON.parse(fs.readFileSync('data/places.json','utf8'));
+          const tripData = JSON.parse(fs.readFileSync('data/trips/colombia-2027.json','utf8'));
+          assert.equal(await page.locator('#dias details.day').count(),12,'Colombia: 12 jornadas');
+          assert.equal(await page.locator('#temporadas .season-month').count(),12,'Colombia: 12 meses');
+          assert.equal(await page.locator('#alojamientos .hotel-card').count(),4,'Colombia: 4 hoteles');
+          assert.equal(await page.locator('#plan .overview-intro .practical-indicator').count(),3,'Colombia: 3 indicadores');
+          assert.equal(await page.locator('#plan .overview-side .overview-climate-card').count(),1,'Colombia: clima separado');
+          assert.equal(await page.locator('#traslados .mt-card').count(),3,'Colombia: 3 transportes');
+          assert.equal(await page.locator('#dias .gallery figure').count(),27,'Colombia: 27 imágenes editoriales');
+          assert.equal(await page.locator('#dias .gallery .credit').count(),27,'Colombia: créditos completos');
+          assert.equal(await page.locator('#dias .gallery .photo-option').count(),2,'Colombia: dos visitas fotográficas opcionales');
+           assert.match(await page.locator('#dia-10 .day-places').innerText(),/Castillo de San Felipe/,'Cartagena: encabezado de lugares visible');
+           assert.match(await page.locator('#dia-11 .day-places').innerText(),/Islas del Rosario/,'Rosario: encabezado de lugares visible');
+           assert.match(await page.locator('#dia-11 .mobility').innerText(),/Bodeguita/,'Corales: punto de embarque visible');
+          assert.equal(await page.locator('#dias .gallery img[alt=""]').count(),0,'Colombia: fotografías con alt informativo');
+          const heroSrc=await page.locator('.triphero-split-photo img').first().getAttribute('src');
+          assert.equal(heroSrc,photoCatalog[tripData.cover].photo.src,'Colombia: portada Tayrona');
+          const renderedPhotos=await page.locator('#dias .gallery img').evaluateAll(imgs=>imgs.map(img=>img.getAttribute('src')));
+          assert.equal(new Set(renderedPhotos).size,27,'Colombia: no duplicar imágenes diarias');
+          assert.ok(renderedPhotos.every(src=>src.startsWith('https://')),'Colombia: solo imágenes externas HTTPS');
+          assert.match(await page.locator('#costes').innerText(),/49[,.]752/,'Colombia: presupuesto con Moabi y Copa A sin equipaje documentado');
+          assert.match(await page.locator('#alojamientos').innerText(),/Moabi Hotel/,'Colombia: Moabi visible en alojamiento');
+          assert.doesNotMatch(await page.locator('#alojamientos').innerText(),/Landmark/,'Colombia: Landmark retirado de alojamientos');
+          assert.match(await page.locator('#alojamientos').innerText(),/Cabrero House Boutique/,'Cartagena: primer candidato vigente');
+          assert.match(await page.locator('#alojamientos').innerText(),/Bahía Suite/,'Santa Marta: Bahia Suite vigente');
+          assert.doesNotMatch(await page.locator('#alojamientos').innerText(),/Casa La Fe/,'Cartagena: hotel descartado retirado');
         }
         if (id === 'suiza-nevada-2027') {
           const swissClimate = page.locator('#plan .overview-side .overview-climate-card');
@@ -347,7 +375,7 @@ const assert = require('node:assert/strict');
       await page.goto('http://127.0.0.1:8765/?incremental-fixture=1#inicio', { waitUntil: 'domcontentloaded' });
       const newCard = page.locator('#viajes a[href="#viaje/' + testId + '"]');
       await newCard.waitFor();
-      assert.equal(await page.locator('#viajes .tripcard').count(), 6);
+      assert.equal(await page.locator('#viajes .tripcard').count(), 7, 'Seis viajes actuales más el fixture incremental');
       assert.equal(await page.locator('#ideas-viajes .idea-tripcard').count(), 15);
       const initialCardText = await newCard.innerText();
       assert.match(initialCardText, /Nuevo destino de prueba/);

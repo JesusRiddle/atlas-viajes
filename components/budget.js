@@ -80,7 +80,12 @@ window.AtlasBudget = (() => {
         const activeScenario = ['B', 'D'].includes(flightChoice) ? 'kix' : 'tokyo';
         for (const item of trip.expenses || []) {
             if (item.includedInTransport || item.optional || (item.scenario && item.scenario !== activeScenario)) continue;
-            register(item.id, item.category || 'other', item.cost, expenseDates(item), item.paidMXN);
+            // En presupuestos integrales modernos, el vuelo internacional incluido en expenses
+            // debe reflejar la opción realmente seleccionada; nunca sumar A y B.
+            const international = (trip.majorTransport || []).find(t => t.id === 'flight-international');
+            const selectedFlight = international?.budgetIncludedIn === item.id && trip.budgetPreliminary?.useBudgetRange === true
+                ? selectedTransportPrice(international, overrides[international.id] || {}) : null;
+            register(item.id, item.category || 'other', selectedFlight || item.cost, expenseDates(item), item.paidMXN);
         }
         const byDay = Object.fromEntries((trip.days || []).map(d => [d.date, { date: d.date, totalMXN: 0, entries: [], partial: false }]));
         const byCategory = {};
