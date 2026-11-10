@@ -15,7 +15,8 @@
     "Playa Grande",
     "Parque Nacional Natural Tayrona",
     "Cabo San Juan",
-    "Cartagena de Indias"
+    "Cartagena de Indias",
+    "Islas del Rosario"
   ],
   "bases": [
     [
@@ -48,7 +49,7 @@
     "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
   },
   "intro": "El recorrido comienza en Medellín, entre los murales de Comuna 13, las esculturas de Plaza Botero, el Museo de Antioquia y el ambiente de Provenza. Desde allí descubres los zócalos de Guatapé y las vistas de la Piedra del Peñol. En Santa Marta conoces su centro histórico antes de adentrarte en Minca, entre cafetales y cascadas, y contemplar la bahía de Taganga. La naturaleza toma protagonismo en Tayrona, con senderos de selva y la costa de Cabo San Juan. Finalmente, Cartagena reúne las fortificaciones del Castillo de San Felipe, las calles de San Diego, las plazas de la Ciudad Amurallada y el arte de Getsemaní. El Caribe completa la experiencia con una navegación por las Islas del Rosario y snorkel entre arrecifes y una avioneta hundida.",
-  "introShort": "Arte urbano y pueblos coloridos en Medellín y Guatapé; café y paisajes tropicales en Minca, Taganga y Tayrona. Cartagena aporta calles coloniales, fortalezas y gastronomía, antes de una excursión de snorkel por las Islas del Rosario.",
+  "introShort": "Arte urbano en Medellín y calles coloridas de Guatapé; cafetales y paisajes tropicales en Minca, Taganga y Tayrona. Cartagena aporta arquitectura colonial, fortalezas y gastronomía, antes de una excursión de snorkel por las Islas del Rosario.",
   "introHighlights": [
     "Medellín",
     "Comuna 13",
@@ -306,7 +307,7 @@
       "pm": "Sendero autorizado a Cabo San Juan, aproximadamente 2–3 horas por sentido según ritmo. Almuerzo y baño solo en zonas permitidas; regreso con margen.",
       "night": "Descanso y cena en el ecolodge después de la caminata.",
       "mobility": "• *Cómo trasladarte:* Acceso por El Zaino solo si está habilitado; transporte interno a Cañaveral sujeto a operación vigente. Desde allí, caminata de 2–3 horas por sentido hacia Cabo San Juan. Si la entrada o el corredor está restringido, NO asumir que es posible continuar por otra puerta sin rediseñar el día.",
-      "note": "• *Acceso Tayrona:* Enero es temporada alta. En la actualización oficial del 03/07/2026 el parque volvió a operar con sus sectores habilitados, de 08:00–16:00 y último ingreso a las 14:00. Horario, cupos, entrada por El Zaino y paso hacia Cañaveral–Arrecifes–Cabo San Juan deben reconfirmarse para enero 2027; hubo restricciones extraordinarias previas en 2026. Confirmar sector y sendero con el parque antes de reservar. Extranjeros no residentes (no CAN) COP 96,500 (≈ $559 MXN) según tarifa oficial publicada; comprobar 2027.\n• *Seguro obligatorio:* Adquirir póliza de asistencia a visitante avalada por el parque; no confundirla con seguro general del viaje.\n• *Seguridad:* Respetar senderos, cierre extraordinario y playas prohibidas; agua y calzado cómodo.",
+      "note": "• *Acceso Tayrona:* Enero es temporada alta. El portal oficial vigente publica para temporada alta de diciembre–enero ingreso por El Zaino de 07:00–15:00 y salida hasta 18:00. Hubo restricciones extraordinarias durante 2026, pero todos los sectores reabrieron en julio y la actividad se retomó el 03/11 tras el cierre anual. Reconfirmar operación del sendero a Cabo San Juan en enero 2027. Confirmar sector y sendero con el parque antes de reservar. Extranjeros no residentes (no CAN) COP 96,500 (≈ $559 MXN) según tarifa oficial publicada; comprobar 2027.\n• *Seguro obligatorio:* Adquirir póliza de asistencia a visitante avalada por el parque; no confundirla con seguro general del viaje.\n• *Seguridad:* Respetar senderos, cierre extraordinario y playas prohibidas; agua y calzado cómodo.",
       "spend": null,
       "places": [
         "col27-tayrona-sendero",
@@ -407,6 +408,10 @@
         {
           "label": "Corales Cartagena · excursión Islas del Rosario y Playa Blanca",
           "url": "https://www.coralescartagena.com/es/tours/excursion-islas-de-rosario-y-playa-blanca-con-snorkel-o-acuario/"
+        },
+        {
+          "label": "Video enlazado por Corales Cartagena · referencia visual",
+          "url": "https://youtube.com/shorts/YMWbwGPiAcY"
         }
       ]
     },
@@ -468,7 +473,7 @@
         },
         {
           "title": "Tayrona y seguro del visitante · viernes 22 de enero",
-          "description": "Entrada y seguro del visitante sin comprar. Verificar apertura y posibilidad de pernoctar antes de decidir entre ecolodge y camping; el recorrido dentro de Tayrona podría ser el 21–22 o solo el 22, según la variante. En enero se aplica tarifa de temporada alta; referencia para extranjero no residente ajeno a CAN COP 96,500 (≈ $559 MXN) más seguro obligatorio, sujetos a condiciones 2027. Evitar reservar opciones no reembolsables ante cierres del parque. La apertura general del parque no confirma la habilitación específica del sector El Zaino–Cañaveral–Arrecifes–Cabo San Juan: hubo restricciones oficiales extraordinarias en 2026 y se requiere verificación por sector para enero 2027. La actualización oficial del 03/07/2026 informó que todos los sectores estaban habilitados; esto no garantiza su operación durante enero de 2027.",
+          "description": "Entrada y seguro del visitante sin comprar. Verificar apertura y posibilidad de pernoctar antes de decidir entre ecolodge y camping; el recorrido dentro de Tayrona podría ser el 21–22 o solo el 22, según la variante. En enero se aplica tarifa de temporada alta; referencia para extranjero no residente ajeno a CAN COP 96,500 (≈ $559 MXN) más seguro obligatorio, sujetos a condiciones 2027. Evitar reservar opciones no reembolsables ante cierres del parque. La apertura general del parque no confirma la habilitación específica del sector El Zaino–Cañaveral–Arrecifes–Cabo San Juan: hubo restricciones oficiales extraordinarias en 2026 y se requiere verificación por sector para enero 2027. La actualización oficial del 03/07/2026 informó que todos los sectores estaban habilitados; esto no garantiza su operación durante enero de 2027. El portal oficial informa horario de temporada alta para El Zaino de 07:00–15:00 (salida hasta 18:00); la actualización de julio con horario general 08:00–16:00 no sustituye esta ficha específica.",
           "links": [
             {
               "label": "Parques Nacionales · Tayrona, acceso y seguro",
@@ -574,6 +579,10 @@
             {
               "label": "5 Islas · video de referencia",
               "url": "https://www.youtube.com/watch?v=DRUUWk_fLV0"
+            },
+            {
+              "label": "Corales Cartagena · video enlazado desde su web",
+              "url": "https://youtube.com/shorts/YMWbwGPiAcY"
             }
           ]
         }
@@ -1189,7 +1198,7 @@
     }
   ],
   "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Domingo 24 dedicado a Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní; lunes 25 dedicado a excursión de Islas del Rosario, con Corales Cartagena como candidato de snorkel en arrecifes y avioneta hundida, sin reserva ni disponibilidad confirmada; visitas culturales en tierra como alternativa si se cancela la navegación. Bora Bora como pasadía principal y yate en Bocagrande descartados. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior. Movilidad del plan A (ecolodge sector El Zaino 21–23 enero) desglosada ≈$6,537 MXN y provisión de $7,000 MXN, con Marsol y taxis estratégicos. No sumar traslados incluidos en tours; plan B camping Cabo San Juan + Barranquilla queda sin cotizar. La partida de $5,000 MXN para actividades incluye una provisión sin desglose del tour a Islas del Rosario: confirmar si es suficiente antes de reservar.",
-  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Bahía Suite, Calle 20 #3-30 (Centro Histórico)), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, El Cabrero). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
+  "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Bahía Suite, Calle 20 #3-30 (Centro Histórico)), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, Carrera 2 #42-11). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
     "low": 43670,
@@ -1281,14 +1290,18 @@
       "id": "ct-cabrero-house",
       "city": "Cartagena",
       "name": "Cabrero House Boutique",
-      "address": "El Cabrero, Cartagena de Indias, Colombia (confirmar la dirección exacta antes de reservar)",
+      "address": "Carrera 2 #42-11, Barrio El Cabrero, Cartagena de Indias, Bolívar, Colombia",
       "checkIn": "2027-01-23",
       "checkOut": "2027-01-26",
       "status": "Primera opción seleccionada · no reservado",
       "rate": "Booking 06/11/2026: $5,933 MXN por 3 noches, 1 adulto (23–26/01/2027), desayuno incluido; impuestos y cargos según pantalla, cobro final por verificar.",
       "rateConditions": "Doble con vistas al jardín o Doble Deluxe con ducha al mismo precio: cama matrimonial, baño privado, aire acondicionado. Cancelación gratis antes del 21/01/2027 (hasta 20/01), pago al alojamiento antes de llegar. Solicitar habitación lejos de recepción y pasillos concurridos. Confirmar precio real y condiciones.",
-      "notes": "Primera opción por precio/ubicación, zona residencial El Cabrero, accesible al centro amurallado caminando con luz diurna; taxi de noche según necesidad. Buenas valoraciones de confort y limpieza; reporte aislado de ruido junto a recepción. Recepción 24 h y consigna de equipaje informadas por hotel. Segunda opción: Hotel El Viajero #2 ($3,787 MXN por tres noches, tarifa flexible, cancelación antes del 18/01/2027); dentro de murallas, pero ruido entre habitaciones, mantenimiento y ventilación variables. Alternativa NO presupuestada. Ninguno reservado.",
+      "notes": "Primera opción por precio/ubicación, dirección verificada en la web oficial Carrera 2 #42-11, zona residencial El Cabrero, accesible al centro amurallado caminando con luz diurna; taxi de noche según necesidad. Buenas valoraciones de confort y limpieza; reporte aislado de ruido junto a recepción. Recepción 24 h y consigna de equipaje informadas por hotel. Segunda opción: Hotel El Viajero #2 ($3,787 MXN por tres noches, tarifa flexible, cancelación antes del 18/01/2027); dentro de murallas, pero ruido entre habitaciones, mantenimiento y ventilación variables. Alternativa NO presupuestada. Ninguno reservado. Web oficial indica check-in 14:00 (recepción disponible 24 h), checkout 10:00; confirmar políticas de la tarifa elegida en Booking. Contacto oficial: +57 323 348 6179.",
       "links": [
+        {
+          "label": "Cabrero House Boutique · contacto y dirección oficial",
+          "url": "https://www.cabrerohouseboutique.com/contact-us"
+        },
         {
           "label": "Cabrero House Boutique · primera opción ($5,933 MXN / 3 noches)",
           "url": "https://www.booking.com/hotel/co/cabrero-house-boutique.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
@@ -1298,7 +1311,7 @@
           "url": "https://www.booking.com/hotel/co/el-viajero-2.es-mx.html?checkin=2027-01-23&checkout=2027-01-26&group_adults=1&group_children=0&no_rooms=1"
         }
       ],
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cabrero%20House%20Boutique%20Cartagena"
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cabrero%20House%20Boutique%20Carrera%202%2042-11%20Cartagena"
     }
   ],
   "stays": [],
@@ -1393,7 +1406,7 @@
   ],
   "tips": [
     "Taganga–Playa Grande: no usar sendero peatonal por reportes de robos; lancha autorizada con chaleco, precio acordado y retorno diurno.",
-    "Tayrona: los cierres anuales programados son 1–15 febrero, 1–15 junio y 19 octubre–2 noviembre, fuera del viaje. El parque informó operación normal de sus sectores el 03/07/2026 tras restricciones anteriores. Confirmar nuevamente horarios y habilitación de El Zaino, Cañaveral, Arrecifes y Cabo San Juan antes de reservar; preferir cancelación flexible.",
+    "Tayrona: los cierres anuales programados son 1–15 febrero, 1–15 junio y 19 octubre–2 noviembre, fuera del viaje. Los sectores reabrieron en julio y el parque retomó actividades tras el cierre anual el 03/11/2026. En temporada alta el portal oficial anuncia ingreso por El Zaino 07:00–15:00, salida hasta 18:00. Confirmar nuevamente horarios y habilitación de El Zaino, Cañaveral, Arrecifes y Cabo San Juan antes de reservar; preferir cancelación flexible.",
     "Aeropuertos y conexiones: todos los vuelos son candidatos; verificar tarifas, equipaje y tiempos efectivos de trasbordo antes de comprar.",
     "Moabi Hotel en Manila es el candidato elegido para Medellín (15–18 enero; tarifa flexible $4,768 MXN por 3 noches según Booking 06/11/2026, sin reservar). Confirmar desayuno extra, pago, impuestos y consigna.",
     "Tayrona conserva dos variantes: ecolodge exterior o camping en Cabo San Juan con posible noche en Barranquilla. El presupuesto global solo contempla el escenario ecolodge; evitar mezclar sus traslados y costos.",
@@ -1479,6 +1492,14 @@
     {
       "label": "Bahía Suite · nombre y dirección publicada en Booking",
       "url": "https://www.booking.com/hotel/co/martienda-deluxe-centro-historico.html"
+    },
+    {
+      "label": "Cabrero House Boutique · dirección y check-in/check-out oficiales",
+      "url": "https://www.cabrerohouseboutique.com/contact-us"
+    },
+    {
+      "label": "Tayrona · reapertura posterior al descanso anual, noviembre 2026",
+      "url": "https://www.parquesnacionales.gov.co/sala-prensa/noticias/parque-tayrona-reabre-y-destaca-registros-de-jaguar-puma-y-paujil/"
     }
   ],
   "sourceNote": "Copa A $9,023 MXN actualizada según capturas del 06/11/2026: vuelos CM149+CM397 (ida) y CM365+CM188 (regreso 22:05). Copa B $9,719 MXN, respaldo, permanece con CM195+CM654/CM365+CM866 (regreso 22:25). Equipaje exclusivamente de mano; ninguna tarifa comprada. Avianca nacional COP 217,580 observada anteriormente. Moabi, Bahía Suite y Cabrero House cuentan con cotizaciones de Booking consultadas el 06/11/2026 para sus fechas propuestas, sin reservar; Senda Koguiwa sigue estimado. Precios y condiciones pendientes de reconfirmación.",
