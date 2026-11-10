@@ -26,8 +26,10 @@ test('Colombia: todos los puntos de alojamiento resuelven sus noches', () => {
     assert.ok(html.includes(count + (count === 1 ? ' noche' : ' noches')), city + ' sin noches');
   }
   assert.doesNotMatch(html, /<small[^>]*>Base<\/small>|Base para dormir/);
-  assert.match(html, /Parque Tayrona · referencia regional/);
+  assert.match(html, /Mostrar Parque Tayrona en el mapa/);
+  assert.match(html, /Mostrar Islas del Rosario en el mapa/);
   assert.match(html, /Cartagena de Indias/);
+  assert.doesNotMatch(html, /referencia regional/i, 'Los nombres visibles no deben contener etiquetas técnicas');
 });
 
 test('El mapa no convierte una estancia desconocida en Base ni en Excursión', () => {
