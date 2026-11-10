@@ -4434,5 +4434,302 @@
     "photo": {
       "src": "assets/images/trips/suiza-nevada-2027/zurich-invierno.jpg"
     }
+  },
+  "col27-botero": {
+    "name": "Plaza Botero",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Medell%C3%ADn%2C_Plaza_Botero%2C_2023-07_CN-01.jpg/960px-Medell%C3%ADn%2C_Plaza_Botero%2C_2023-07_CN-01.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Medell%C3%ADn,_Plaza_Botero,_2023-07_CN-01.jpg",
+      "author": "Steffen Schmitz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "© Steffen Schmitz (Carschten) / Wikimedia Commons"
+    }
+  },
+  "col27-provenza": {
+    "name": "Provenza, Medellín",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Provenza%2C_Medell%C3%ADn.jpg/960px-Provenza%2C_Medell%C3%ADn.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Provenza,_Medell%C3%ADn.jpg",
+      "author": "Xemenendura",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Xemenendura"
+    }
+  },
+  "col27-penol": {
+    "name": "Piedra del Peñol",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Piedra_El_Pe%C3%B1ol.jpg/960px-Piedra_El_Pe%C3%B1ol.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Piedra_El_Pe%C3%B1ol.jpg",
+      "author": "Jhonatan Grisales C.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jhonatan Grisales C."
+    }
+  },
+  "col27-guatape": {
+    "name": "Calle de los Zócalos, Guatapé",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Calle_de_los_z%C3%B3calos_en_Guatap%C3%A9.JPG/960px-Calle_de_los_z%C3%B3calos_en_Guatap%C3%A9.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Calle_de_los_z%C3%B3calos_en_Guatap%C3%A9.JPG",
+      "author": "Aliman5040",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Aliman5040"
+    }
+  },
+  "col27-comuna13": {
+    "name": "Mural de la Comuna 13",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Mural_y_graffiti._Comuna_13._Medell%C3%ADn_Colombia_%2854006%29.jpg/960px-Mural_y_graffiti._Comuna_13._Medell%C3%ADn_Colombia_%2854006%29.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Mural_y_graffiti._Comuna_13._Medell%C3%ADn_Colombia_(54006).jpg",
+      "author": "Sierraluisfer",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Sierraluisfer"
+    }
+  },
+  "col27-escaleras": {
+    "name": "Escaleras eléctricas de la Comuna 13",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Escaleras_el%C3%A9ctricas_de_la_comuna_13%2C_Medell%C3%ADn_-_04.jpg/960px-Escaleras_el%C3%A9ctricas_de_la_comuna_13%2C_Medell%C3%ADn_-_04.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Escaleras_el%C3%A9ctricas_de_la_comuna_13,_Medell%C3%ADn_-_04.jpg",
+      "author": "Juan Gómez",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Juan Gómez"
+    }
+  },
+  "col27-pueblito": {
+    "name": "Pueblito Paisa, Cerro Nutibara",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Pueblito_Paisa_-_1i_-_Medell%C3%ADn.jpg/960px-Pueblito_Paisa_-_1i_-_Medell%C3%ADn.jpg?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:Pueblito_Paisa_-_1i_-_Medell%C3%ADn.jpg",
+      "author": "SajoR",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "SajoR"
+    }
+  },
+  "col27-santamarta-catedral": {
+    "name": "Catedral Basílica de Santa Marta",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Catedral_de_Santa_Marta_Colombia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Catedral_de_Santa_Marta_Colombia.jpg",
+      "author": "Jdvillalobos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jdvillalobos"
+    }
+  },
+  "col27-parque-novios": {
+    "name": "Parque de los Novios, Santa Marta",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Parque_de_los_Novios_Santa_Marta.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Parque_de_los_Novios_Santa_Marta.jpg",
+      "author": "Jdvillalobos",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Jdvillalobos"
+    }
+  },
+  "col27-minca-paisaje": {
+    "name": "Paisaje desde Minca, Sierra Nevada",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Santa_Marta_Vista_Desde_Minca_En_La_Sierra_Nevada.jpg/960px-Santa_Marta_Vista_Desde_Minca_En_La_Sierra_Nevada.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Santa_Marta_Vista_Desde_Minca_En_La_Sierra_Nevada.jpg",
+      "author": "Samuel Rengifo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Samuel Rengifo"
+    }
+  },
+  "col27-marinka": {
+    "name": "Cascada de Marinka",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Cascada_de_Marinka.jpg/960px-Cascada_de_Marinka.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cascada_de_Marinka.jpg",
+      "author": "PapiPijuan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "PapiPijuan"
+    }
+  },
+  "col27-taganga-bahia": {
+    "name": "Bahía de Taganga",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Taganga_Bay.jpg/960px-Taganga_Bay.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Taganga_Bay.jpg",
+      "author": "Alanwolfx",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Alanwolfx"
+    }
+  },
+  "col27-playa-grande": {
+    "name": "Playa Grande, Taganga",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Playa_Grande_1_-_panoramio.jpg/960px-Playa_Grande_1_-_panoramio.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Playa_Grande_1_-_panoramio.jpg",
+      "author": "Tamyx",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Tamyx"
+    }
+  },
+  "col27-tayrona-costa": {
+    "name": "Costa natural del Parque Tayrona",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Landscape_Parque_Nacional_Natural_Tayrona.jpg/960px-Landscape_Parque_Nacional_Natural_Tayrona.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Landscape_Parque_Nacional_Natural_Tayrona.jpg",
+      "author": "Thomas Fuhrmann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Thomas Fuhrmann"
+    }
+  },
+  "col27-tayrona-laguna": {
+    "name": "Laguna y palmares de Tayrona",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Coastal_lagoon_with_Typha_marsh_and_coconut_palms_in_Tayrona_National_Park%2C_2026.jpg/960px-Coastal_lagoon_with_Typha_marsh_and_coconut_palms_in_Tayrona_National_Park%2C_2026.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Coastal_lagoon_with_Typha_marsh_and_coconut_palms_in_Tayrona_National_Park,_2026.jpg",
+      "author": "Mottenpriesterin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Mottenpriesterin"
+    }
+  },
+  "col27-tayrona-sendero": {
+    "name": "Sendero ecológico del Parque Tayrona",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Sendero_Parque_Tayrona.jpg/960px-Sendero_Parque_Tayrona.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Sendero_Parque_Tayrona.jpg",
+      "author": "Moro Kuni",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Moro Kuni"
+    }
+  },
+  "col27-cabo-san-juan": {
+    "name": "Playa Cabo San Juan",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Cabo_San_Juan%2C_Colombia.jpg/960px-Cabo_San_Juan%2C_Colombia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cabo_San_Juan,_Colombia.jpg",
+      "author": "OpenAperture",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "OpenAperture"
+    }
+  },
+  "col27-cabo-amanecer": {
+    "name": "Amanecer en Cabo San Juan",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Cabo_San_Juan_del_Gu%C3%ADa%2C_Parque_Tayrona.jpg/960px-Cabo_San_Juan_del_Gu%C3%ADa%2C_Parque_Tayrona.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cabo_San_Juan_del_Gu%C3%ADa,_Parque_Tayrona.jpg",
+      "author": "Patriarboleda",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Patriarboleda"
+    }
+  },
+  "col27-torre-reloj": {
+    "name": "Torre del Reloj de Cartagena",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Torre_del_Reloj%2C_Cartagena_01.jpg/960px-Torre_del_Reloj%2C_Cartagena_01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Torre_del_Reloj,_Cartagena_01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Bernard Gagnon"
+    }
+  },
+  "col27-murallas": {
+    "name": "Murallas de Cartagena",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/4/41/The_Wall_Surrounding_Cartagena%2C_Colombia_%2824539103340%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:The_Wall_Surrounding_Cartagena,_Colombia_(24539103340).jpg",
+      "author": "Joe Ross",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Joe Ross"
+    }
+  },
+  "col27-san-diego": {
+    "name": "Calles históricas de San Diego, Cartagena",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/A_dos_cuadras_de_la_plaza_de_San_Diego._Cartagena._Colombia.JPG/960px-A_dos_cuadras_de_la_plaza_de_San_Diego._Cartagena._Colombia.JPG?utm_campaign=index&utm_content=thumbnail&utm_source=commons.wikimedia.org",
+      "source": "https://commons.wikimedia.org/wiki/File:A_dos_cuadras_de_la_plaza_de_San_Diego._Cartagena._Colombia.JPG",
+      "author": "Kamilokardona",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Kamilokardona"
+    }
+  },
+  "col27-getsemani-murales": {
+    "name": "Arte urbano de Getsemaní",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Getsemani_Street_Art%2C_Cartagena%2C_Colombia_%2823957090274%29.jpg/960px-Getsemani_Street_Art%2C_Cartagena%2C_Colombia_%2823957090274%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Getsemani_Street_Art,_Cartagena,_Colombia_(23957090274).jpg",
+      "author": "Joe Ross",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Joe Ross"
+    }
+  },
+  "col27-castillo-san-felipe": {
+    "name": "Castillo de San Felipe de Barajas",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/5/56/Colombia%2C_Cartagena%2C_Castillo_de_San_Felipe_de_Barajas.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Colombia,_Cartagena,_Castillo_de_San_Felipe_de_Barajas.jpg",
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Dr. Thomas Liptak"
+    }
+  },
+  "col27-bovedas": {
+    "name": "Las Bóvedas de Cartagena",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Cartagena_de_Indias_-_Las_B%C3%B3vedas.jpg/960px-Cartagena_de_Indias_-_Las_B%C3%B3vedas.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cartagena_de_Indias_-_Las_B%C3%B3vedas.jpg",
+      "author": "O--o",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "O--o"
+    }
+  },
+  "col27-islas-rosario": {
+    "name": "Islas del Rosario",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Islas_del_Rosario_-_Cartagena_%285%29.jpg/960px-Islas_del_Rosario_-_Cartagena_%285%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Islas_del_Rosario_-_Cartagena_(5).jpg",
+      "author": "SebastianGalvis",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "SebastianGalvis / Wikimedia Commons"
+    }
+  },
+  "col27-palacio-inquisicion": {
+    "name": "Palacio de la Inquisición (Museo Histórico de Cartagena)",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Colombia%2C_Cartagena%2C_Palacio_de_la_Inquisici%C3%B3n.jpg/960px-Colombia%2C_Cartagena%2C_Palacio_de_la_Inquisici%C3%B3n.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Colombia,_Cartagena,_Palacio_de_la_Inquisición.jpg",
+      "author": "Dr. Thomas Liptak",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "© Dr. Thomas Liptak / Wikimedia Commons"
+    }
+  },
+  "col27-convento-popa": {
+    "name": "Convento de la Popa",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Convento_de_La_Popa.JPG/960px-Convento_de_La_Popa.JPG",
+      "source": "https://commons.wikimedia.org/wiki/File:Convento_de_La_Popa.JPG",
+      "author": "Petruss",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Petruss / Wikimedia Commons"
+    }
   }
 }

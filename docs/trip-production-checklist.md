@@ -1,5 +1,7 @@
 # Producción y auditoría integral de un viaje · Atlas
 
+**Regla de independencia entre viajes (obligatoria):** Cada itinerario de Atlas es un escenario autónomo de planeación. **No comparar sus fechas con las de otros viajes del catálogo, no detectar ni advertir empalmes, no condicionar ni modificar su itinerario por coincidencias de calendario con otros viajes.** Los viajes pueden ser alternativas mutuamente excluyentes y eso no constituye un problema editorial o logístico. Solo evaluar conflictos entre viajes cuando el usuario lo solicite explícitamente. Al trabajar en un viaje, no editar los JSON de los demás.
+
 ## Propósito
 Evitar revisiones aisladas y reconstrucciones continuas. Cada nuevo viaje se trabaja como un paquete integral, con un solo registro de pendientes y pruebas agrupadas. Este documento complementa la guía editorial, el contrato de datos y AGENTS.md.
 
