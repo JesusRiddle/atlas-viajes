@@ -190,7 +190,9 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.match(trip.hotels.find(h=>h.id==='sm-bahia-suite').notes,/anuncio de Booking/);
   assert.match(trip.days[10].note,/261,500/);
   assert.match(trip.days[10].am,/08:30/);
-  assert.match(trip.days[7].note,/03\/07\/2026/);
+  assert.match(trip.days[7].note,/07:00–15:00/);
+  assert.match(trip.days[7].note,/Cabo San Juan/);
+  assert.match(trip.tips[1],/03\/11\/2026/);
   assert.match(trip.expenses.find(x=>x.id==='ground-mobility').notes,/\$6,537 MXN/);
 
   assert.doesNotMatch(trip.introShort,/\b\d+ noches|cotizar|reservar/i);
