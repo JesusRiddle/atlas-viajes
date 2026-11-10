@@ -110,7 +110,9 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.ok(!JSON.stringify(trip).includes('Casa La Fe'));
   assert.ok(!JSON.stringify(trip).toLowerCase().includes('landmark'));
   assert.match(trip.days[10].title,/Islas del Rosario/);
-  assert.match(trip.days[10].am,/Bora Bora Beach Club está descartado/);
+  assert.match(trip.days[10].am,/Corales Cartagena/);
+  assert.match(trip.days[10].note,/Oceanario/);
+  assert.match(trip.days[10].note,/Bora Bora/);
   assert.equal(trip.climate.split(/\n\s*\n/).length,3);
   assert.ok(trip.exchangeRates.COP>0);
   const places=JSON.parse(fs.readFileSync('data/places.json','utf8'));
@@ -163,9 +165,9 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   }
   assert.match(trip.placeDescriptions['col27-tayrona-costa'],/no corresponde al alojamiento/);
   assert.match(trip.placeDescriptions['col27-cabo-amanecer'],/no representa el horario/);
-  const block4=['col27-torre-reloj','col27-murallas','col27-san-diego','col27-getsemani-murales','col27-castillo-san-felipe','col27-bovedas'];
-  assert.deepEqual(trip.days.slice(8,12).map(d=>d.places.length),[0,4,2,0]);
-  assert.deepEqual(trip.days[10].optionalPlaces,['col27-castillo-san-felipe','col27-bovedas']);
+  const block4=['col27-torre-reloj','col27-murallas','col27-san-diego','col27-getsemani-murales','col27-castillo-san-felipe','col27-bovedas','col27-islas-rosario','col27-palacio-inquisicion','col27-convento-popa'];
+  assert.deepEqual(trip.days.slice(8,12).map(d=>d.places.length),[0,6,3,0]);
+  assert.deepEqual(trip.days[10].optionalPlaces,['col27-palacio-inquisicion','col27-convento-popa']);
   assert.equal(new Set(block4).size,block4.length);
   for(const key of block4){
     const photo=places[key]?.photo;
@@ -176,19 +178,27 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
     const words=(trip.placeDescriptions[key]||'').trim().split(/\s+/).length;
     assert.ok(words>=15 && words<=30,'Pie fuera de norma: '+key+' '+words);
   }
-  assert.equal(trip.mapPoints.length,7);
+  assert.equal(trip.mapPoints.length,8);
   assert.equal(trip.intro.split(/\s+/).length>=70,true);
   assert.equal(trip.introHighlights.every(name=>trip.intro.includes(name)),true);
+  assert.doesNotMatch(trip.intro,/\b(?:lunes|martes|miércoles|jueves|viernes|sábado|domingo)\s+\d+|\b(?:enero|febrero)\s+de\s+20\d\d|\b(?:reservar|reservado|candidato|por definir|provisional|noches|check-in|cotizar)\b/i,
+    'La esencia narra experiencias y no decisiones operativas');
+  assert.ok(trip.intro.trim().split(/\s+/).length<=130,'Introducción editorial demasiado larga');
+  assert.ok(trip.days[9].am.includes('Castillo') && trip.days[9].pm.includes('La Mulata') && trip.days[9].night.includes('Getsemaní'));
+  assert.match(trip.days[9].note,/chiva cultural Nomades/);
+  assert.match(trip.hotels.find(h=>h.id==='sm-bahia-suite').notes,/NO se ha confirmado/);
+  assert.match(trip.expenses.find(x=>x.id==='ground-mobility').notes,/\$6,537 MXN/);
+
   assert.doesNotMatch(trip.introShort,/\b\d+ noches|cotizar|reservar/i);
   assert.match(trip.practicalIndicators.find(x=>x.id==='entry').text,/no necesitas adaptador/);
   assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>x.links?.some(link=>link.url.includes('fincalavictoria1892.com'))));
-  assert.deepEqual(trip.mapPoints.map(x=>x.order),[1,2,3,4,5,6,7]);
+  assert.deepEqual(trip.mapPoints.map(x=>x.order),[1,2,3,4,5,6,7,8]);
 });
-test('Colombia: auditoría D final de 24 imágenes, portada, créditos y visitas opcionales',()=>{
+test('Colombia: auditoría D final de 27 imágenes, portada, créditos y visitas opcionales',()=>{
   const catalog=JSON.parse(fs.readFileSync('data/places.json','utf8'));
   const dayKeys=trip.days.flatMap(day=>day.places||[]);
-  assert.equal(dayKeys.length,24);
-  assert.equal(new Set(dayKeys).size,24,'No duplicar fotografías en distintas jornadas');
+  assert.equal(dayKeys.length,27);
+  assert.equal(new Set(dayKeys).size,27,'No duplicar fotografías en distintas jornadas');
   const catalogKeys=Object.keys(catalog).filter(key=>key.startsWith('col27-'));
   assert.deepEqual(new Set(dayKeys),new Set(catalogKeys),'No dejar imágenes huérfanas en el catálogo de Colombia');
   assert.equal(trip.coverSlides[0],trip.cover,'La portada debe iniciar en su fotografía principal');
@@ -204,9 +214,9 @@ test('Colombia: auditoría D final de 24 imágenes, portada, créditos y visitas
     const wordCount=trip.placeDescriptions[key]?.trim().split(/\s+/).length||0;
     assert.ok(wordCount>=15&&wordCount<=30,'Descripción fuera de 15–30 palabras: '+key);
   }
-  assert.deepEqual(trip.days.map(day=>day.places.length),[2,2,3,2,2,2,2,3,0,4,2,0]);
-  assert.deepEqual(trip.days[10].optionalPlaces,trip.days[10].places,
-    'Castillo y Bóvedas deben seguir como alternativas');
+  assert.deepEqual(trip.days.map(day=>day.places.length),[2,2,3,2,2,2,2,3,0,6,3,0]);
+  assert.deepEqual(trip.days[10].optionalPlaces,['col27-palacio-inquisicion','col27-convento-popa'],
+    'Las fotos del Museo Histórico y La Popa deben seguir siendo alternativas por mal tiempo');
   assert.ok(trip.days[6].places.every(k=>/tayrona/.test(k)),
     'Las imágenes del día de descanso son solo ilustraciones regionales');
   assert.match(catalog['col27-botero'].photo.attribution,/Wikimedia Commons/);
