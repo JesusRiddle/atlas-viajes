@@ -353,13 +353,13 @@
     {
       "n": 10,
       "date": "2027-01-24",
-      "title": "Castillo de San Felipe, Ciudad Amurallada y Getsemaní",
+      "title": "Cartagena por cuenta propia · Castillo, Ciudad Amurallada y Getsemaní",
       "base": "Cartagena",
-      "am": "Visita al Castillo de San Felipe de Barajas para recorrer sus fortificaciones, túneles y miradores. Continúa hacia Las Bóvedas y las calles de San Diego, dentro de la Ciudad Amurallada.",
-      "pm": "Almuerzo cartagenero y recorrido por las plazas del Centro Histórico y la Torre del Reloj. Después, visita a Getsemaní y sus murales.",
-      "night": "Atardecer desde las murallas o una terraza si el tiempo alcanza, cena en Getsemaní o el Centro Histórico y regreso por transporte formal cuando convenga.",
-      "mobility": "• *Cómo trasladarte:* Desde Cabrero House, taxi formal o servicio de aplicación al Castillo de San Felipe. Después, traslado a Las Bóvedas y recorrido a pie por San Diego, Centro Histórico y Getsemaní, según distancias y horarios.",
-      "note": "• *Tips del día:* Confirmar horarios y entradas vigentes del Castillo para enero de 2027; llevar agua. Las Bóvedas suelen requerir una parada breve.\n• *Ritmo:* Priorizar Castillo, Las Bóvedas, Ciudad Amurallada y Getsemaní; ajustar las paradas secundarias al tiempo disponible.",
+      "am": "7:40: salir de Cabrero House en taxi al Castillo de San Felipe (10–15 min; 12,000–18,000 COP). 8:00–9:50: recorrer fortificaciones, túneles y miradores (entrada plena de referencia 2026: 38,000 COP; confirmar tarifa y horario 2027). 9:50–10:20: caminar 5–10 min hasta el Monumento a los Zapatos Viejos, tomar fotografías y pedir taxi a Las Bóvedas (10–15 min; 12,000–18,000 COP). 10:35–11:05: recorrer Las Bóvedas (30 min, acceso libre). 11:05–12:00: caminata por Plaza de San Diego, calles coloniales y entorno de Plaza Fernández de Madrid.",
+      "pm": "12:00–13:15: almuerzo en La Mulata (Calle del Quero #9-58; aprox. 55,000–80,000 COP por persona con bebida, sujeto a carta 2027). 13:15–15:15: recorrido a pie por la Ciudad Amurallada, Plaza Bolívar, Plaza de la Aduana y Torre del Reloj, con paradas fotográficas. 15:15–16:30: pausa opcional en cafetería (10,000–20,000 COP). 16:30–18:15: Plaza Santo Domingo y murallas, priorizando Baluarte de Santo Domingo para el atardecer; llegar a la zona del baluarte hacia las 17:30.",
+      "night": "18:15–20:30: caminar 15–20 min hacia Getsemaní, recorrer Calle de la Sierpe, murales y Plaza de la Trinidad, y cenar en el barrio (25,000–45,000 COP). 20:30–21:00: taxi o aplicación desde Getsemaní hasta Cabrero House (10–20 min; 14,000–22,000 COP).",
+      "mobility": "• *Cómo trasladarte:* Tres taxis: 1) Cabrero House→Castillo de San Felipe (10–15 min; 12,000–18,000 COP); 2) Botas Viejas→Las Bóvedas (10–15 min; 12,000–18,000 COP); 3) Getsemaní→Cabrero House (10–20 min; 14,000–22,000 COP). Caminar Castillo→Botas Viejas (5–10 min), Las Bóvedas→San Diego (5–10 min), y todo el Centro Histórico hasta Getsemaní (15–20 min desde zona del Reloj o murallas). Transporte total estimado: 38,000–58,000 COP. Usar servicio de taxi autorizado o aplicación y acordar/verificar tarifa antes de subir.",
+      "note": "• *Plan A · por cuenta propia:* Castillo (casi 2 h), Botas Viejas (10 min), Las Bóvedas (30 min), San Diego (55 min), almuerzo La Mulata (75 min), plazas y Torre del Reloj (2 h), pausa opcional (75 min), murallas y atardecer (105 min), Getsemaní y cena (2 h 15 min).\n• *Presupuesto de referencia por persona:* taxis 38,000–58,000 COP; Castillo 38,000 COP (tarifa 2026); almuerzo 55,000–80,000; cafetería opcional 10,000–20,000; cena 25,000–45,000. Total con cafetería: 166,000–241,000 COP; sin cafetería: 156,000–221,000 COP. Es una estimación, NO sumar íntegramente al presupuesto global porque transporte, alimentos y entradas ya tienen provisiones propias.\n• *Plan B · chiva cultural Nomades:* tour de 8:00–12:00 (65,000 COP publicados como referencia, entrada al Castillo anunciada como incluida); trasladarte desde Cabrero House al Camellón de los Mártires por taxi, hacer el tour y continuar por tu cuenta durante la tarde en San Diego, Ciudad Amurallada y Getsemaní. Confirmar disponibilidad para domingo 24/01/2027, recogida y punto de finalización, tiempo real dentro del Castillo y precio final.\n• *Tips del día:* Confirmar apertura dominical, precio de la entrada al Castillo y horario del restaurante antes de salir; llevar agua, protección solar y calzado cómodo. Dejar margen para tráfico, lluvia o filas. Si el día se retrasa, recortar Botas Viejas o las plazas secundarias antes que Castillo, comida o Getsemaní.",
       "spend": null,
       "places": [
         "col27-castillo-san-felipe",
@@ -371,7 +371,17 @@
       ],
       "headerPlaces": [],
       "transportRefs": [],
-      "hotel": "ct-cabrero-house"
+      "hotel": "ct-cabrero-house",
+      "mobilityLinks": [
+        {
+          "label": "Castillo de San Felipe · información oficial",
+          "url": "https://fortificacionescartagena.com.co/es/planee-su-visita/castillo-de-san-felipe-de-barajas/"
+        },
+        {
+          "label": "City tour cultural en chiva · alternativa Nomades",
+          "url": "https://www.nomades.com/cartagena/city-tour-chiva-id954"
+        }
+      ]
     },
     {
       "n": 11,
