@@ -22,6 +22,11 @@ window.ATLAS_MODULES = [
     "available": true
   },
   {
+    "id": "suiza-verde-2027",
+    "file": "suiza-verde-2027.json",
+    "available": true
+  },
+  {
     "id": "japon-2027",
     "file": "japon-2027.json",
     "available": true

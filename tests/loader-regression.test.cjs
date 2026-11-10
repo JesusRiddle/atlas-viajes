@@ -27,6 +27,22 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
     }
 });
 
+test('Suiza verde se conserva como alternativa borrador sin portada ni reservas ficticias', () => {
+    const catalog = loadCatalog();
+    const module = catalog.find(item => item.id === 'suiza-verde-2027');
+    assert.ok(module && module.available, 'Suiza verde registrada en el catálogo');
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    assert.equal(trip.status, 'draft');
+    assert.equal(trip.cover, null);
+    assert.equal(trip.travelerCount, 1);
+    assert.equal(trip.days.length, 16);
+    assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 14);
+    assert.equal(trip.expenses.length, 0, 'No inventar costos antes de cotizar');
+    assert.ok(trip.experiences.some(item => /Titlis/i.test(JSON.stringify(item))));
+    assert.ok(trip.experiences.some(item => /Heidi/i.test(JSON.stringify(item))));
+    assert.ok(catalog.indexOf(module) > catalog.findIndex(item => item.id === 'suiza-nevada-2027'), 'El borrador de septiembre no desplaza la ruta de enero');
+});
+
 test('coexisten viajes con hoteles estructurados y viajes heredados con stays', () => {
     const catalog = loadCatalog().filter(module => module.available);
     const trips = catalog.map(module => JSON.parse(fs.readFileSync('data/trips/' + module.file, 'utf8')));
@@ -317,7 +333,7 @@ test('Día por día y Presupuesto muestran pendientes sin totales ficticios', ()
 
 test('el alta mínima es visible de inmediato y conserva los viajes históricos', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog.length, 21);
+    assert.equal(catalog.length, 22);
     assert.ok(catalog.every(item => item.available));
     assert.equal(catalog.filter(item => item.homeGroup === 'ideas').length, 15);
     assert.ok(catalog.some(item => item.id === 'italia-norte-2027' && item.available));
@@ -345,11 +361,12 @@ test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserv
     const catalog = loadCatalog();
     assert.equal(catalog[0].id, 'colombia-2027');
     assert.equal(catalog[0].available, true);
-    assert.deepEqual(Array.from(catalog.slice(0, 6), item => item.id), [
+    assert.deepEqual(Array.from(catalog.slice(0, 7), item => item.id), [
         'colombia-2027',
         'suiza-nevada-2027',
         'italia-norte-2027',
         'espana-portugal-2027',
+        'suiza-verde-2027',
         'japon-2027',
         'patagonia-argentina-2027'
     ], 'El orden de portada sigue las fechas de viaje 2027');
