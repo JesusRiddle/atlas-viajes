@@ -375,7 +375,7 @@ const assert = require('node:assert/strict');
       await page.goto('http://127.0.0.1:8765/?incremental-fixture=1#inicio', { waitUntil: 'domcontentloaded' });
       const newCard = page.locator('#viajes a[href="#viaje/' + testId + '"]');
       await newCard.waitFor();
-      assert.equal(await page.locator('#viajes .tripcard').count(), 7, 'Seis viajes actuales más el fixture incremental');
+      assert.equal(await page.locator('#viajes .tripcard').count(), 8, 'Siete viajes en portada más el fixture incremental');
       assert.equal(await page.locator('#ideas-viajes .idea-tripcard').count(), 15);
       const initialCardText = await newCard.innerText();
       assert.match(initialCardText, /Nuevo destino de prueba/);
