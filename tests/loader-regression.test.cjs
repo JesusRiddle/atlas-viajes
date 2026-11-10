@@ -358,7 +358,19 @@ test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserv
     assert.equal(migrated.days.length, 20);
     assert.equal(migrated.hotels.length, 5);
     // Incluye lugares opcionales añadidos durante la auditoría editorial.
-    assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 51);
+    assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 53);
+    const lisbonDay = migrated.days.find(day => day.date === '2027-05-26');
+    const templarPlaces = ['sp27-castelo-almourol', 'sp27-convento-cristo'];
+    const placeCatalog = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
+    for (const key of templarPlaces) {
+        assert.ok(lisbonDay.places.includes(key), key + ' debe aparecer en la galería del día');
+        assert.ok(lisbonDay.optionalPlaces.includes(key), key + ' no debe ser visita obligatoria');
+        assert.match(placeCatalog[key]?.photo?.src || '', /^https:\/\/upload\.wikimedia\.org\//);
+        assert.ok(placeCatalog[key].photo.source, key + ' debe acreditar la fuente');
+        assert.ok(placeCatalog[key].photo.license, key + ' debe indicar licencia');
+    }
+    assert.match(lisbonDay.note, /sustituye por completo la jornada Alfama/);
+    assert.ok(migrated.reservations.some(group => group[1].some(item => /Almourol, Tomar/.test(item.title))));
     assert.ok(migrated.cover);
     assert.equal(migrated.budgetRange[0], 76000);
     assert.equal(migrated.budgetRange[1], 125000);
