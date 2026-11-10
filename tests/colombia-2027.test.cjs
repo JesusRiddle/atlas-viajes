@@ -186,7 +186,11 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.ok(trip.intro.trim().split(/\s+/).length<=130,'Introducción editorial demasiado larga');
   assert.ok(trip.days[9].am.includes('Castillo') && trip.days[9].pm.includes('La Mulata') && trip.days[9].night.includes('Getsemaní'));
   assert.match(trip.days[9].note,/chiva cultural Nomades/);
-  assert.match(trip.hotels.find(h=>h.id==='sm-bahia-suite').notes,/NO se ha confirmado/);
+  assert.match(trip.hotels.find(h=>h.id==='sm-bahia-suite').address,/Calle 20 #3-30/);
+  assert.match(trip.hotels.find(h=>h.id==='sm-bahia-suite').notes,/anuncio de Booking/);
+  assert.match(trip.days[10].note,/261,500/);
+  assert.match(trip.days[10].am,/08:30/);
+  assert.match(trip.days[7].note,/03\/07\/2026/);
   assert.match(trip.expenses.find(x=>x.id==='ground-mobility').notes,/\$6,537 MXN/);
 
   assert.doesNotMatch(trip.introShort,/\b\d+ noches|cotizar|reservar/i);
