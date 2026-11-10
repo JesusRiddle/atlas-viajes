@@ -52,26 +52,18 @@
   "introHighlights": [
     "Medellín",
     "Comuna 13",
-    "Plaza Botero",
-    "Museo de Antioquia",
-    "Provenza",
     "Guatapé",
-    "Piedra del Peñol",
     "Santa Marta",
     "Minca",
     "Taganga",
     "Tayrona",
     "Cabo San Juan",
     "Cartagena",
-    "Castillo de San Felipe",
-    "San Diego",
-    "Ciudad Amurallada",
-    "Getsemaní",
     "Islas del Rosario"
   ],
   "solo": "Viaje para una persona, 12 días y 11 noches. Se priorizan habitaciones privadas con baño propio, cancelación flexible y traslados cómodos.",
   "flight": "Copa A principal multidestino del 15 al 26/01/2027: $9,023 MXN, MEX 01:20→PTY 06:00 (CM149), PTY 09:32→MDE 10:55 (CM397); CTG 15:05→PTY 16:22 (CM365), PTY 19:17→MEX 22:05 (CM188), conexión de 2 h 55 min. Copa B respaldo $9,719 MXN: ida CM195 + CM654, llegada MDE 14:15; regreso CM365 + CM866, llegada MEX 22:25. Solo equipaje de mano, sin documentar; condición de la pieza de cabina según capturas, comprobar dimensiones/peso y artículo personal al reservar. Ningún billete comprado. Avianca Classic AV9446 MDE→SMR del lunes 18, 12:00–13:15, COP 217,580 (≈ $1,259 MXN), candidato sin comprar.",
-  "local": "El traslado Medellín–Santa Marta se prevé por avión. En Medellín, usar metro/Metrocable para visitas y transporte formal para el aeropuerto; en Santa Marta, contratar traslados adecuados para Minca y Taganga. El Zaino está cerca de los ecolodges candidatos y permite entrar por tierra a Tayrona. Para ir desde Tayrona a Cartagena, comparar shuttle desde El Zaino y vehículo privado directo al hotel, sin regresar a Santa Marta.",
+  "local": "Medellín–Santa Marta se cubre en vuelo doméstico. Para recorridos urbanos de Medellín, utilizar taxis por aplicación o transporte autorizado y caminar solo en zonas apropiadas; los tours organizados incluyen traslados cuando así lo indique el operador. En Santa Marta, coordinar transporte para Minca y Taganga; usar lancha autorizada a Playa Grande. El traslado a Tayrona depende del alojamiento elegido. El Zaino es el acceso terrestre previsto a Cabo San Juan, pero se debe verificar expresamente que estén habilitados El Zaino, Cañaveral y Arrecifes. Para llegar a Cartagena, comparar Marsol desde El Zaino con transporte privado desde el alojamiento.",
   "experiences": [
     {
       "city": "Medellín",
@@ -310,11 +302,11 @@
       "date": "2027-01-22",
       "title": "Cabo San Juan: senderos y playas de Tayrona",
       "base": "Tayrona",
-      "am": "Ingreso temprano por El Zaino, sujeto a apertura y cupos; traslado interno a Cañaveral si opera.",
+      "am": "Ingreso temprano previsto por El Zaino, únicamente si ese acceso y el corredor Cañaveral–Arrecifes están oficialmente habilitados; traslado interno a Cañaveral si opera. Confirmar las condiciones el día anterior.",
       "pm": "Sendero autorizado a Cabo San Juan, aproximadamente 2–3 horas por sentido según ritmo. Almuerzo y baño solo en zonas permitidas; regreso con margen.",
       "night": "Descanso y cena en el ecolodge después de la caminata.",
-      "mobility": "• *Cómo trasladarte:* Entrada El Zaino, transporte interno según operación vigente, caminata aproximada 2–3 horas por sentido.",
-      "note": "• *Acceso Tayrona:* Enero es temporada alta; El Zaino publica apertura desde las 07:00 y salida hasta las 18:00. Extranjeros no residentes (no CAN) COP 96,500 (≈ $559 MXN) según tarifa oficial publicada; comprobar 2027.\n• *Seguro obligatorio:* Adquirir póliza de asistencia a visitante avalada por el parque; no confundirla con seguro general del viaje.\n• *Seguridad:* Respetar senderos, cierre extraordinario y playas prohibidas; agua y calzado cómodo.",
+      "mobility": "• *Cómo trasladarte:* Acceso por El Zaino solo si está habilitado; transporte interno a Cañaveral sujeto a operación vigente. Desde allí, caminata de 2–3 horas por sentido hacia Cabo San Juan. Si la entrada o el corredor está restringido, NO asumir que es posible continuar por otra puerta sin rediseñar el día.",
+      "note": "• *Acceso Tayrona:* Enero es temporada alta. El horario ordinario publicado de El Zaino es entrada 07:00–15:00 y salida hasta 18:00, pero la apertura general del parque NO garantiza acceso por El Zaino ni paso hacia Cañaveral, Arrecifes y Cabo San Juan; en 2026 existieron restricciones extraordinarias en ese corredor. Confirmar sector y sendero con el parque antes de reservar. Extranjeros no residentes (no CAN) COP 96,500 (≈ $559 MXN) según tarifa oficial publicada; comprobar 2027.\n• *Seguro obligatorio:* Adquirir póliza de asistencia a visitante avalada por el parque; no confundirla con seguro general del viaje.\n• *Seguridad:* Respetar senderos, cierre extraordinario y playas prohibidas; agua y calzado cómodo.",
       "spend": null,
       "places": [
         "col27-tayrona-sendero",
@@ -476,7 +468,7 @@
         },
         {
           "title": "Tayrona y seguro del visitante · viernes 22 de enero",
-          "description": "Entrada y seguro del visitante sin comprar. Verificar apertura y posibilidad de pernoctar antes de decidir entre ecolodge y camping; el recorrido dentro de Tayrona podría ser el 21–22 o solo el 22, según la variante. En enero se aplica tarifa de temporada alta; referencia para extranjero no residente ajeno a CAN COP 96,500 (≈ $559 MXN) más seguro obligatorio, sujetos a condiciones 2027. Evitar reservar opciones no reembolsables ante cierres del parque.",
+          "description": "Entrada y seguro del visitante sin comprar. Verificar apertura y posibilidad de pernoctar antes de decidir entre ecolodge y camping; el recorrido dentro de Tayrona podría ser el 21–22 o solo el 22, según la variante. En enero se aplica tarifa de temporada alta; referencia para extranjero no residente ajeno a CAN COP 96,500 (≈ $559 MXN) más seguro obligatorio, sujetos a condiciones 2027. Evitar reservar opciones no reembolsables ante cierres del parque. La apertura general del parque no confirma la habilitación específica del sector El Zaino–Cañaveral–Arrecifes–Cabo San Juan: hubo restricciones oficiales extraordinarias en 2026 y se requiere verificación por sector para enero 2027.",
           "links": [
             {
               "label": "Parques Nacionales · Tayrona, acceso y seguro",
@@ -1401,7 +1393,7 @@
   ],
   "tips": [
     "Taganga–Playa Grande: no usar sendero peatonal por reportes de robos; lancha autorizada con chaleco, precio acordado y retorno diurno.",
-    "Tayrona: comprobar acceso real, estado de senderos, zonas de baño permitidas y cierres extraordinarios. Evitar reservas no reembolsables en el sector.",
+    "Tayrona: los cierres anuales programados son 1–15 febrero, 1–15 junio y 19 octubre–2 noviembre, fuera del viaje. Sin embargo, la apertura general NO garantiza entrada por El Zaino ni paso a Cañaveral, Arrecifes o Cabo San Juan; verificar restricciones extraordinarias y evitar reservas no reembolsables.",
     "Aeropuertos y conexiones: todos los vuelos son candidatos; verificar tarifas, equipaje y tiempos efectivos de trasbordo antes de comprar.",
     "Moabi Hotel en Manila es el candidato elegido para Medellín (15–18 enero; tarifa flexible $4,768 MXN por 3 noches según Booking 06/11/2026, sin reservar). Confirmar desayuno extra, pago, impuestos y consigna.",
     "Tayrona conserva dos variantes: ecolodge exterior o camping en Cabo San Juan con posible noche en Barranquilla. El presupuesto global solo contempla el escenario ecolodge; evitar mezclar sus traslados y costos.",
@@ -1471,6 +1463,10 @@
     {
       "label": "Casa Verde · alternativa $6,997 MXN no reembolsable (18–21 ene 2027, 1 adulto)",
       "url": "https://www.booking.com/hotel/co/casa-verde.es-mx.html?checkin=2027-01-18&checkout=2027-01-21&group_adults=1&group_children=0&no_rooms=1"
+    },
+    {
+      "label": "PNN Tayrona · restricciones extraordinarias en sectores El Zaino y Cañaveral (junio 2026)",
+      "url": "https://www.parquesnacionales.gov.co/sala-prensa/noticias/tayrona-reabre-al-publico-con-medidas-para-una-visita-segura/"
     }
   ],
   "sourceNote": "Copa A $9,023 MXN actualizada según capturas del 06/11/2026: vuelos CM149+CM397 (ida) y CM365+CM188 (regreso 22:05). Copa B $9,719 MXN, respaldo, permanece con CM195+CM654/CM365+CM866 (regreso 22:25). Equipaje exclusivamente de mano; ninguna tarifa comprada. Avianca nacional COP 217,580 observada anteriormente. Moabi, Bahía Suite y Cabrero House cuentan con cotizaciones de Booking consultadas el 06/11/2026 para sus fechas propuestas, sin reservar; Senda Koguiwa sigue estimado. Precios y condiciones pendientes de reconfirmación.",
