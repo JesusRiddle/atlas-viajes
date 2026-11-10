@@ -390,7 +390,7 @@
       "pm": "12:30–15:00: almuerzo incluido y estancia en club de playa de Playa Tranquila, Barú; 15:00–15:50: regreso en lancha a Cartagena, según horario publicado. El recorrido visita el archipiélago desde el agua y la embarcación, pero no anuncia visita a pie a Isla Grande.",
       "night": "Última cena en Cartagena y preparación del equipaje para el vuelo de Copa del martes 26.",
       "mobility": "• *Cómo trasladarte:* Taxi de Cabrero House al Muelle de la Bodeguita; llegar antes de las 08:30 a la puerta 2 (registro). La excursión incluye lancha de ida y regreso; prever taxi de vuelta desde el muelle. Horario y embarque del 25/01/2027 sujetos a confirmación del operador.",
-      "note": "• *Tour candidato:* Corales Cartagena · Islas del Rosario y Playa Blanca con snorkel, sin reservar. Tarifa pública desde COP 230,000 por adulto + impuesto portuario COP 31,500 = desde COP 261,500 en total (≈ $1,513 MXN al cambio presupuestario), no cotizada para el 25/01/2027. Incluye lancha, guía, snorkel anunciado y almuerzo. Registro a las 08:30, puerta 2 del Muelle de la Bodeguita; salida 09:00 y regreso estimado 15:50.\n• *Antes de reservar:* Verificar precio final y tasas, disponibilidad para una persona, equipo de snorkel y chaleco, supervisión, resguardo de pertenencias, condiciones de desembarque y cancelación por mal tiempo. No descender ni entrar en los restos de la avioneta sin condiciones seguras y supervisión apropiada.\n• *Otros tours considerados:* Top 3 Islas (Bora Bora, Islabela y Pao Pao), 5 Islas (snorkel, Cholón y Barú) y Rosario de Mar (pasadía en una isla). Son alternativas, no actividades adicionales del día; detalles y precios de referencia en Reservaciones importantes.\n• *Oceanario:* Solo actividad opcional si el operador la ofrece; entrada y tiempo sujetos a confirmación.\n• *Alternativa por suspensión marítima:* Museo Histórico de Cartagena (Palacio de la Inquisición), plazas del Centro Histórico o Convento de la Popa con transporte contratado.",
+      "note": "• *Tour candidato:* Corales Cartagena · Islas del Rosario y Playa Blanca con snorkel, sin reservar. Tarifa pública desde COP 230,000 por adulto + impuesto portuario COP 31,500 = desde COP 261,500 en total (≈ $1,513 MXN al cambio presupuestario), no cotizada para el 25/01/2027. Incluye lancha, guía, snorkel anunciado y almuerzo. Registro a las 08:30, puerta 2 del Muelle de la Bodeguita; salida 09:00 y regreso estimado 15:50.\n• *Antes de reservar:* Verificar precio final y tasas, disponibilidad para una persona, equipo de snorkel y chaleco, supervisión, resguardo de pertenencias, condiciones de desembarque y cancelación por mal tiempo. No descender ni entrar en los restos de la avioneta sin condiciones seguras y supervisión apropiada.\n• *Otros tours considerados:* Top 3 Islas (Bora Bora, Islabela y Pao Pao), 5 Islas (snorkel, Cholón y Barú) y Rosario de Mar (pasadía en una isla). Son alternativas, no actividades adicionales del día; detalles y precios de referencia en Reservaciones importantes.\n• *Oceanario:* Solo actividad opcional si el operador la ofrece; entrada y tiempo sujetos a confirmación.\n• *Alternativa por suspensión marítima:* Museo Histórico de Cartagena (Palacio de la Inquisición) abierto los lunes de 09:00 a 18:00, entrada general publicada COP 24,000 (2026), más plazas del Centro Histórico; o Convento de la Popa, al que se sube en taxi, no caminando. Confirmar tarifas y horarios de enero 2027.",
       "spend": null,
       "places": [
         "col27-islas-rosario",
@@ -412,6 +412,10 @@
         {
           "label": "Video enlazado por Corales Cartagena · referencia visual",
           "url": "https://youtube.com/shorts/YMWbwGPiAcY"
+        },
+        {
+          "label": "Museo Histórico de Cartagena · horarios y entradas (alternativa por mal tiempo)",
+          "url": "https://muhca.gov.co/visita"
         }
       ]
     },
@@ -1500,6 +1504,10 @@
     {
       "label": "Tayrona · reapertura posterior al descanso anual, noviembre 2026",
       "url": "https://www.parquesnacionales.gov.co/sala-prensa/noticias/parque-tayrona-reabre-y-destaca-registros-de-jaguar-puma-y-paujil/"
+    },
+    {
+      "label": "Museo Histórico de Cartagena · horarios lunes a sábado y entrada",
+      "url": "https://muhca.gov.co/visita"
     }
   ],
   "sourceNote": "Copa A $9,023 MXN actualizada según capturas del 06/11/2026: vuelos CM149+CM397 (ida) y CM365+CM188 (regreso 22:05). Copa B $9,719 MXN, respaldo, permanece con CM195+CM654/CM365+CM866 (regreso 22:25). Equipaje exclusivamente de mano; ninguna tarifa comprada. Avianca nacional COP 217,580 observada anteriormente. Moabi, Bahía Suite y Cabrero House cuentan con cotizaciones de Booking consultadas el 06/11/2026 para sus fechas propuestas, sin reservar; Senda Koguiwa sigue estimado. Precios y condiciones pendientes de reconfirmación.",
