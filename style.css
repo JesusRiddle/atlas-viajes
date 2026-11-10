@@ -2355,3 +2355,28 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 #viajes .home-photo-empty{width:100%;height:100%;background:linear-gradient(125deg,#e9eef0,#d5e0e2);}
 #viajes .tripcard .card-overview:empty{display:none}
 #viajes .tripcard .cardbody{flex:1}
+
+
+/* Destinos por explorar: archivo independiente de itinerarios fechados. */
+.explore-home-teaser{margin-top:38px;padding:32px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:28px}
+.explore-home-teaser h2{margin:5px 0 12px}.explore-home-teaser p:last-child{color:var(--muted);max-width:570px;font-size:15px}
+.explore-home-link{display:inline-flex;align-items:center;gap:12px;color:var(--ink);font-weight:700;text-decoration:none;border:1px solid var(--line);padding:14px 18px;border-radius:6px;white-space:nowrap}
+.explore-home-link:hover,.explore-home-link:focus-visible{border-color:var(--ink);background:var(--pale)}
+.explore-page{padding-top:42px;padding-bottom:80px}.explore-heading{max-width:800px;margin-bottom:36px}
+.explore-back{display:inline-block;color:var(--muted);font-size:13px;margin-bottom:26px;text-underline-offset:3px}
+.explore-heading h1{font-size:clamp(35px,5vw,62px);line-height:1.12;margin:12px 0}
+.explore-lead{font-size:18px;line-height:1.6;color:var(--muted);max-width:750px}
+.explore-count{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:20px;font-weight:700}
+.explore-group{padding-top:25px;border-top:1px solid var(--line);margin-top:28px}
+.explore-group .section-title{margin-bottom:24px}.explore-group .section-title p{max-width:530px}
+.explore-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.explore-card{border:1px solid var(--line);border-radius:9px;overflow:hidden;background:#fff;min-width:0}
+.explore-card-image{aspect-ratio:16/9;background:var(--pale);overflow:hidden}
+.explore-card-image img{display:block;width:100%;height:100%;object-fit:cover}
+.explore-card-copy{padding:22px 24px 24px}.explore-card-country{font-size:12px;font-weight:700;letter-spacing:.05em;color:var(--muted);margin:0 0 9px}
+.explore-card h3{font-size:clamp(20px,2.2vw,27px);line-height:1.22;margin:0 0 16px}
+.explore-card-copy>p:not(.explore-card-country){font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 12px}
+.explore-card .explore-route strong{color:var(--ink)}
+.explore-credit{display:inline-block;margin-top:8px;font-size:11px;line-height:1.5;color:var(--muted);text-underline-offset:3px}
+.explore-footnote{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:22px;margin-top:40px}
+@media(max-width:760px){.explore-grid{grid-template-columns:1fr}.explore-home-teaser{align-items:flex-start;flex-direction:column;gap:16px}.explore-card-copy{padding:18px 19px}.explore-page{padding-top:26px}.explore-group .section-title{gap:8px}}

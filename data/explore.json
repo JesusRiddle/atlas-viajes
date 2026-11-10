@@ -1,0 +1,103 @@
+{
+  "title": "Destinos por explorar",
+  "updated": "2026-11-08",
+  "description": "Banco de ideas para futuras planeaciones. No son viajes programados, ni reservas, ni opciones que deban añadirse a itinerarios existentes.",
+  "destinations": [
+    {
+      "id": "finlandia",
+      "name": "Finlandia · Laponia",
+      "region": "otros",
+      "flag": "🇫🇮",
+      "experience": "Crucero rompehielos y flotación entre hielos",
+      "route": "Kemi o área de Tornio, con una estancia por la Laponia finlandesa.",
+      "note": "Experiencia marcadamente invernal. Confirmar temporada, punto de salida real y qué incluye el traje de flotación; combinar con auroras solo si la logística lo permite.",
+      "image": "Icebreaker Sampo at the Port of Kemi.jpg",
+      "photoPage": "https://commons.wikimedia.org/wiki/File:Icebreaker_Sampo_at_the_Port_of_Kemi.jpg",
+      "credit": "Henri from Tornio / Wikimedia Commons"
+    },
+    {
+      "id": "balcanes",
+      "name": "Albania y Kosovo",
+      "region": "otros",
+      "flag": "🇦🇱 🇽🇰",
+      "experience": "Prizren y Pristina en una ruta por los Balcanes",
+      "route": "Evaluar Tirana y Durrës, con excursión a Prizren y Pristina.",
+      "note": "Comprobar requisitos de entrada, tiempos de frontera y si una excursión de un solo día compensa el trayecto. Evitar sumar países solo por tacharlos de una lista.",
+      "image": "Prizren panorama.jpg",
+      "photoPage": "https://commons.wikimedia.org/wiki/File:Prizren_panorama.jpg",
+      "credit": "Janusz Recław / Wikimedia Commons"
+    },
+    {
+      "id": "polonia",
+      "name": "Polonia · Gdansk",
+      "region": "europa",
+      "flag": "🇵🇱",
+      "experience": "Gdansk y navegación hacia Westerplatte",
+      "route": "Valorar Gdansk, Varsovia y Cracovia, recortando ciudades según la duración disponible.",
+      "note": "El paseo en barco depende de temporada y operación; priorizar tiempo suficiente para el casco histórico de Gdansk.",
+      "image": "Old Gdansk and Motlawa.jpg",
+      "photoPage": "https://commons.wikimedia.org/wiki/File:Old_Gdansk_and_Motlawa.jpg",
+      "credit": "Wikimedia Commons · ver ficha de autoría"
+    },
+    {
+      "id": "austria",
+      "name": "Austria · Hallstatt",
+      "region": "europa",
+      "flag": "🇦🇹",
+      "experience": "Hallstatt y su lago alpino",
+      "route": "Combinación candidata: Salzburgo, Hallstatt y, si conviene, Viena.",
+      "note": "Pueblo muy visitado; estudiar transporte público, horarios y la conveniencia de pernoctar fuera del centro. No asumir que una excursión organizada es necesaria.",
+      "image": "Hallstatt 300.jpg",
+      "photoPage": "https://commons.wikimedia.org/wiki/File:Hallstatt_300.jpg",
+      "credit": "Nick Csakany / Wikimedia Commons · dominio público"
+    },
+    {
+      "id": "chequia",
+      "name": "Chequia · Praga",
+      "region": "europa",
+      "flag": "🇨🇿",
+      "experience": "Kutná Hora, osario de Sedlec, Santa Bárbara y Praga medieval",
+      "route": "Praga con excursión a Kutná Hora; el recorrido nocturno de leyendas sería otra actividad opcional.",
+      "note": "Distinguir la visita histórica al subsuelo de Praga de los tours teatralizados de fantasmas. Reservar tiempo propio para Kutná Hora.",
+      "image": "Old Town Square in Prague.jpg",
+      "photoPage": "https://commons.wikimedia.org/wiki/File:Old_Town_Square_in_Prague.jpg",
+      "credit": "Mattsjc / Wikimedia Commons"
+    },
+    {
+      "id": "alemania",
+      "name": "Alemania · Baviera",
+      "region": "europa",
+      "flag": "🇩🇪",
+      "experience": "Castillo de Neuschwanstein y Rothenburg ob der Tauber",
+      "route": "Múnich, Füssen/Schwangau y Ruta Romántica; estudiar combinación con Austria y Chequia.",
+      "note": "Los dos atractivos no son una excursión corta conjunta desde Múnich. Conviene distribuirlos por zonas o descartar uno si faltan días.",
+      "image": "Neuschwanstein Castle, Germany.jpg",
+      "photoPage": "https://commons.wikimedia.org/wiki/File:Neuschwanstein_Castle,_Germany.jpg",
+      "credit": "Uhooep / Wikimedia Commons"
+    },
+    {
+      "id": "singapur",
+      "name": "Singapur",
+      "region": "otros",
+      "flag": "🇸🇬",
+      "experience": "Mirador SkyPark de Marina Bay Sands",
+      "route": "Escala de varios días o itinerario regional por el sudeste asiático.",
+      "note": "El mirador de observación no equivale al acceso a la piscina infinity del hotel; revisar disponibilidad, clima y horario de visita.",
+      "image": "Marina Bay Sands Singapore (MBS).jpg",
+      "photoPage": "https://commons.wikimedia.org/wiki/File:Marina_Bay_Sands_Singapore_(MBS).jpg",
+      "credit": "Leonard Koh / Wikimedia Commons"
+    },
+    {
+      "id": "kazajistan",
+      "name": "Kazajistán · Almaty",
+      "region": "otros",
+      "flag": "🇰🇿",
+      "experience": "Big Almaty Lake y aguas termales Alma Arasan",
+      "route": "Almaty y excursiones de naturaleza cercanas, con jornadas independientes para lago y aguas termales.",
+      "note": "La accesibilidad al lago y al área de Alma Arasan puede cambiar por regulación, transporte o estación; no prometer acceso al agua ni ausencia de caminatas.",
+      "image": "Big Almaty Lake, Almaty, Kazakhstan (Unsplash).jpg",
+      "photoPage": "https://commons.wikimedia.org/wiki/File:Big_Almaty_Lake,_Almaty,_Kazakhstan_(Unsplash).jpg",
+      "credit": "Nessi Gileva / CC0 · Wikimedia Commons"
+    }
+  ]
+}
