@@ -7,9 +7,11 @@ function mapSection(t){
 const points=(window.ATLAS_MAP_POINTS?.[t.id] || t.mapPoints || []).filter(p => p && typeof p.name === 'string');
 const positioned=points.filter(p => Array.isArray(p.coords) && p.coords.length === 2 && p.coords.every(Number.isFinite));
 const nightsByBase = new Map((t.bases || []).map(([name, nights]) => [String(name).toLocaleLowerCase('es'), Number(nights)]));
+const stayNights = point => nightsByBase.get(String(point.stayName || point.name).toLocaleLowerCase('es'));
 const stayLabel = point => {
-  const nights = nightsByBase.get(String(point.name).toLocaleLowerCase('es'));
-  return Number.isFinite(nights) && nights > 0 ? nights + (nights === 1 ? ' noche' : ' noches') : point.base ? 'Base' : 'Excursión';
+  if (!point.base) return 'Excursión';
+  const nights = stayNights(point);
+  return Number.isInteger(nights) && nights > 0 ? nights + (nights === 1 ? ' noche' : ' noches') : 'Noches por definir';
 };
 const icon='<svg class="trip-map-heading-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3z"/><path d="M9 3v15m6-12v15"/></svg>';
 return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
@@ -23,11 +25,11 @@ return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 
 </div>
 ${positioned.length ? `<div class="trip-map-cities">
-<ul class="map-city-list">${positioned.map(p=>`<li><button type="button" class="map-city-select" data-map-order="${p.order}" aria-label="Mostrar ${esc(p.name)} en el mapa"><span class="map-city-name">${p.order}. ${esc(p.name)}</span><small class="map-city-stay">${Number(nightsByBase.get(String(p.name).toLocaleLowerCase("es"))) > 0 ? '<svg class="map-city-bed" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7m18 11V7M3 15h18M5 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M5 12h14"/></svg>' : ""}${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></button></li>`).join('')}</ul></div>` : ''}
+<ul class="map-city-list">${positioned.map(p=>`<li><button type="button" class="map-city-select" data-map-order="${p.order}" aria-label="Mostrar ${esc(p.name)} en el mapa"><span class="map-city-name">${p.order}. ${esc(p.name)}</span><small class="map-city-stay">${Number(stayNights(p)) > 0 ? '<svg class="map-city-bed" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7m18 11V7M3 15h18M5 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M5 12h14"/></svg>' : ""}${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></button></li>`).join('')}</ul></div>` : ''}
 </div>
 ${positioned.length ? `<div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>` : `<div class="trip-map trip-map-pending"><p class="draft-pending">Por definir</p></div>`}
 <div class="trip-map-footer"><p class="map-status" role="status">${positioned.length ? "El mapa se carga al llegar a esta sección." : "Coordenadas por definir."}</p>
-<div class="map-legend"><span>Base para dormir</span><span>Excursión sin alojamiento</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div></div>
+<div class="map-legend"><span>Lugar donde dormirás</span><span>Excursión sin alojamiento</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div></div>
 
 </section>`;
 }

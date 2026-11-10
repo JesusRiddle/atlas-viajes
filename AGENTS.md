@@ -1,5 +1,7 @@
 # Instrucciones del proyecto Atlas de Viajes
 
+**Regla de independencia entre viajes (obligatoria):** Cada itinerario de Atlas es un escenario autónomo de planeación. **No comparar sus fechas con las de otros viajes del catálogo, no detectar ni advertir empalmes, no condicionar ni modificar su itinerario por coincidencias de calendario con otros viajes.** Los viajes pueden ser alternativas mutuamente excluyentes y eso no constituye un problema editorial o logístico. Solo evaluar conflictos entre viajes cuando el usuario lo solicite explícitamente. Al trabajar en un viaje, no editar los JSON de los demás.
+
 Antes de crear, modificar o auditar un viaje:
 0. Leer `docs/trip-production-checklist.md` y preparar una auditoría por lotes (logística, contenido, presupuesto y QA), evitando revisiones repetitivas con el usuario.
 1. Leer `docs/trip-editorial-guide.md` para contenido y estilo de las nueve secciones.

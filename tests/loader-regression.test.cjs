@@ -27,6 +27,22 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
     }
 });
 
+test('Suiza verde se conserva como alternativa borrador sin portada ni reservas ficticias', () => {
+    const catalog = loadCatalog();
+    const module = catalog.find(item => item.id === 'suiza-verde-2027');
+    assert.ok(module && module.available, 'Suiza verde registrada en el catálogo');
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    assert.equal(trip.status, 'draft');
+    assert.equal(trip.cover, null);
+    assert.equal(trip.travelerCount, 1);
+    assert.equal(trip.days.length, 16);
+    assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 14);
+    assert.equal(trip.expenses.length, 0, 'No inventar costos antes de cotizar');
+    assert.ok(trip.experiences.some(item => /Titlis/i.test(JSON.stringify(item))));
+    assert.ok(trip.experiences.some(item => /Heidi/i.test(JSON.stringify(item))));
+    assert.ok(catalog.indexOf(module) > catalog.findIndex(item => item.id === 'suiza-nevada-2027'), 'El borrador de septiembre no desplaza la ruta de enero');
+});
+
 test('coexisten viajes con hoteles estructurados y viajes heredados con stays', () => {
     const catalog = loadCatalog().filter(module => module.available);
     const trips = catalog.map(module => JSON.parse(fs.readFileSync('data/trips/' + module.file, 'utf8')));
@@ -317,7 +333,7 @@ test('Día por día y Presupuesto muestran pendientes sin totales ficticios', ()
 
 test('el alta mínima es visible de inmediato y conserva los viajes históricos', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog.length, 20);
+    assert.equal(catalog.length, 22);
     assert.ok(catalog.every(item => item.available));
     assert.equal(catalog.filter(item => item.homeGroup === 'ideas').length, 15);
     assert.ok(catalog.some(item => item.id === 'italia-norte-2027' && item.available));
@@ -341,14 +357,16 @@ test('el alta mínima es visible de inmediato y conserva los viajes históricos'
     assert.equal(atlas.trips[0].seasonality,null);
 });
 
-test('Suiza nevada se publica primero y España + Portugal conserva su contenido completo', async () => {
+test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserva su contenido completo', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog[0].id, 'suiza-nevada-2027');
+    assert.equal(catalog[0].id, 'colombia-2027');
     assert.equal(catalog[0].available, true);
-    assert.deepEqual(Array.from(catalog.slice(0, 5), item => item.id), [
+    assert.deepEqual(Array.from(catalog.slice(0, 7), item => item.id), [
+        'colombia-2027',
         'suiza-nevada-2027',
         'italia-norte-2027',
         'espana-portugal-2027',
+        'suiza-verde-2027',
         'japon-2027',
         'patagonia-argentina-2027'
     ], 'El orden de portada sigue las fechas de viaje 2027');
@@ -357,12 +375,24 @@ test('Suiza nevada se publica primero y España + Portugal conserva su contenido
     assert.equal(migrated.days.length, 20);
     assert.equal(migrated.hotels.length, 5);
     // Incluye lugares opcionales añadidos durante la auditoría editorial.
-    assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 51);
+    assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 53);
+    const lisbonDay = migrated.days.find(day => day.date === '2027-05-26');
+    const templarPlaces = ['sp27-castelo-almourol', 'sp27-convento-cristo'];
+    const placeCatalog = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
+    for (const key of templarPlaces) {
+        assert.ok(lisbonDay.places.includes(key), key + ' debe aparecer en la galería del día');
+        assert.ok(lisbonDay.optionalPlaces.includes(key), key + ' no debe ser visita obligatoria');
+        assert.match(placeCatalog[key]?.photo?.src || '', /^https:\/\/upload\.wikimedia\.org\//);
+        assert.ok(placeCatalog[key].photo.source, key + ' debe acreditar la fuente');
+        assert.ok(placeCatalog[key].photo.license, key + ' debe indicar licencia');
+    }
+    assert.match(lisbonDay.note, /sustituye por completo la jornada Alfama/);
+    assert.ok(migrated.reservations.some(group => group[1].some(item => /Almourol, Tomar/.test(item.title))));
     assert.ok(migrated.cover);
     assert.equal(migrated.budgetRange[0], 76000);
     assert.equal(migrated.budgetRange[1], 125000);
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
-    const window = { ATLAS_MODULES: [catalog[2]] };
+    const window = { ATLAS_MODULES: [catalog.find(item => item.id === 'espana-portugal-2027')] };
     const sources = {
         'data/places.json': JSON.parse(fs.readFileSync('data/places.json', 'utf8')),
         'data/trips/_template.json': template,
@@ -482,7 +512,7 @@ test('Suiza nevada: diez noches, fotografías válidas y presupuesto individual 
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-nevada-2027.json', 'utf8'));
     const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
     const catalog = loadCatalog();
-    assert.equal(catalog[0].id, 'suiza-nevada-2027');
+    assert.ok(catalog.some(item => item.id === 'suiza-nevada-2027'));
     assert.equal(trip.travelerCount, 1);
     assert.equal(trip.days.length, 12);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 10);

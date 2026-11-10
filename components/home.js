@@ -3,7 +3,7 @@ window.AtlasHome = function (ctx) {
     const { trips, photos, main, covers, esc, range, price, img, readable, highlightWords, familyLabel, baseLabel, canRenderFullTrip } = ctx;
     // Fotos ya registradas en los días del viaje; no se descargan hasta hacer hover.
     const cardSlides = new Map(trips.map(trip => {
-        const keys = [covers[trip.id], ...(trip.days || []).flatMap(day => day.places || [])];
+        const keys = trip.coverSlides?.length ? trip.coverSlides : [covers[trip.id], ...(trip.days || []).flatMap(day => day.places || [])];
         const seen = new Set();
         const sources = keys.map(key => photos[key]?.src).filter(src => {
             if (!src || seen.has(src)) return false;

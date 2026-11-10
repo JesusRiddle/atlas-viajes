@@ -127,6 +127,10 @@
     {
       "city": "Sintra",
       "description": "Recorrer los jardines del Palacio da Pena y el pozo iniciático de Quinta da Regaleira; degustar queijadas y travesseiros tradicionales de Sintra."
+    },
+    {
+      "city": "Tomar y Almourol · excursión opcional desde Lisboa",
+      "description": "Explorar la historia templaria de Portugal con un tour organizado de día completo desde Lisboa: Castillo de Almourol, centro histórico de Tomar y Convento de Cristo (Patrimonio Mundial). El castillo está en una isla del río Tajo; confirmar navegación, entrada, duración, operador e inclusiones. Alternativa que sustituye una jornada lisboeta, no una visita adicional obligatoria."
     }
   ],
   "days": [
@@ -628,11 +632,13 @@
       "pm": "1. Recorrer el entorno de la Sé de Lisboa, miradores de Santa Luzia y Portas do Sol, según afluencia.\n2. Comer bacalhau à brás, sardinas u otra especialidad portuguesa disponible; reservar tiempo para descansar y preparar maleta.",
       "night": "1. Asistir a un espectáculo de fado solo si interesa y sus horarios permiten descansar antes del vuelo internacional.\n2. Regresar al hotel y comprobar terminal, traslado al aeropuerto y condiciones de check-out.",
       "mobility": "• *Rossio → Castelo:* Transporte urbano o taxi para evitar parte de la subida; continuar a pie cuesta abajo por Alfama.\n• *Miradores → hotel:* Tranvía, autobús, metro o taxi según afluencia y cansancio.\n• *Salida del 27:* Confirmar el medio de transporte al aeropuerto según el horario real del vuelo.",
-      "note": "• *Cuestas:* Alfama tiene pavimento irregular y pendientes pronunciadas; priorizar rutas de bajada.\n• *Fado:* Opcional, sin comprar; si el regreso requiere salida muy temprana, omitirlo.\n• *Maleta:* Preparar todo antes de acostarse para no comprometer la mañana del vuelo.\n• *Alternativa opcional: Cascais y Boca do Inferno:* Sustituir el recorrido de Castelo de São Jorge, Alfama y miradores por una excursión de medio día largo o día completo. Tomar el tren desde Cais do Sodré a Cascais, pasear por el centro y la costa y llegar a Boca do Inferno a pie si el clima y la energía lo permiten, o en taxi/autobús local. Regresar a Lisboa con margen para preparar el vuelo; no sumar esta excursión al plan principal ni programarla después de una jornada completa en Alfama.",
+      "note": "• *Cuestas:* Alfama tiene pavimento irregular y pendientes pronunciadas; priorizar rutas de bajada.\n• *Fado:* Opcional, sin comprar; si el regreso requiere salida muy temprana, omitirlo.\n• *Maleta:* Preparar todo antes de acostarse para no comprometer la mañana del vuelo.\n• *Alternativa opcional: Cascais y Boca do Inferno:* Sustituir el recorrido de Castelo de São Jorge, Alfama y miradores por una excursión de medio día largo o día completo. Tomar el tren desde Cais do Sodré a Cascais, pasear por el centro y la costa y llegar a Boca do Inferno a pie si el clima y la energía lo permiten, o en taxi/autobús local. Regresar a Lisboa con margen para preparar el vuelo; no sumar esta excursión al plan principal ni programarla después de una jornada completa en Alfama.\n• *Alternativa opcional: ruta templaria Almourol y Tomar:* Excursión guiada de día completo desde Lisboa, con Castillo de Almourol, Tomar y Convento de Cristo; sustituye por completo la jornada Alfama o la alternativa Cascais. No reservar sin verificar trayecto en barco, entradas, operador, idioma, disponibilidad y precio de mayo de 2027.",
       "places": [
         "espana-portugal-2027-alfama",
         "sp27-cascais",
-        "sp27-boca-inferno"
+        "sp27-boca-inferno",
+        "sp27-castelo-almourol",
+        "sp27-convento-cristo"
       ],
       "headerPlaces": [
         "Castelo de São Jorge",
@@ -651,11 +657,17 @@
         {
           "label": "Cascais · turismo oficial",
           "url": "https://www.visitcascais.com/"
+        },
+        {
+          "label": "Convento de Cristo · información oficial",
+          "url": "https://www.conventocristo.gov.pt/"
         }
       ],
       "optionalPlaces": [
         "sp27-cascais",
-        "sp27-boca-inferno"
+        "sp27-boca-inferno",
+        "sp27-castelo-almourol",
+        "sp27-convento-cristo"
       ]
     },
     {
@@ -794,6 +806,20 @@
             {
               "label": "Turismo de Sevilla",
               "url": "https://visitasevilla.es/"
+            }
+          ]
+        },
+        {
+          "title": "Almourol, Tomar y Convento de Cristo · tour templario desde Lisboa",
+          "description": "OPCIONAL, SIN RESERVAR. Excursión organizada de día completo desde Lisboa para visitar Castillo de Almourol, Tomar y Convento de Cristo. Valorar en lugar de la jornada de Alfama y miradores del miércoles 26/05/2027 (o de Cascais, también opcional); no se pueden hacer las tres propuestas ese día. Confirmar disponibilidad real, recogida, idioma, número de personas, acceso en barco a Almourol, entradas al Convento de Cristo y precio total. No incrementar aún presupuesto porque no se ha elegido la alternativa.",
+          "links": [
+            {
+              "label": "Convento de Cristo · sitio oficial",
+              "url": "https://www.conventocristo.gov.pt/"
+            },
+            {
+              "label": "Turismo de Portugal · Tomar",
+              "url": "https://www.visitportugal.com/"
             }
           ]
         }
