@@ -63,7 +63,7 @@
     "Islas del Rosario"
   ],
   "solo": "Viaje para una persona, 12 días y 11 noches. Se priorizan habitaciones privadas con baño propio, cancelación flexible y traslados cómodos.",
-  "flight": "Copa A principal multidestino del 15 al 26/01/2027: $9,023 MXN, MEX 01:20→PTY 06:00 (CM149), PTY 09:32→MDE 10:55 (CM397); CTG 15:05→PTY 16:22 (CM365), PTY 19:17→MEX 22:05 (CM188), conexión de 2 h 55 min. Copa B respaldo $9,719 MXN: ida CM195 + CM654, llegada MDE 14:15; regreso CM365 + CM866, llegada MEX 22:25. Solo equipaje de mano, sin documentar; condición de la pieza de cabina según capturas, comprobar dimensiones/peso y artículo personal al reservar. Ningún billete comprado. Avianca Classic AV9446 MDE→SMR del lunes 18, 12:00–13:15, COP 217,580 (≈ $1,259 MXN), candidato sin comprar.",
+  "flight": "Copa Airlines Económica Basic seleccionada, PENDIENTE DE COMPRA, cotizada directamente en Copa el 11/11/2026: $9,652 MXN por 1 adulto en multidestino. Ida vie. 15/01: CM195 MEX 05:55→PTY 10:38, escala 2 h 17 min; CM654 PTY 12:55→MDE 14:15. Regreso mar. 26/01: CM365 CTG 15:05→PTY 16:22, escala 5 h 05 min; CM194 PTY 21:27→MEX 00:15 del mié. 27/01. Cabina 10 kg y artículo personal incluidos, sin maleta documentada; selección de asiento con cargo. Alternativa Copa $10,851 con mismo vuelo de ida y regreso CM866 a MEX 22:25 del martes 26. Vuelo interno Avianca AV9446 MDE→SMR lunes 18/01 12:00–13:15, COP 217,580 (≈ $1,259 MXN), candidato sin comprar.",
   "local": "Medellín–Santa Marta se cubre en vuelo doméstico. Para recorridos urbanos de Medellín, utilizar taxis por aplicación o transporte autorizado y caminar solo en zonas apropiadas; los tours organizados incluyen traslados cuando así lo indique el operador. En Santa Marta, coordinar transporte para Minca y Taganga; usar lancha autorizada a Playa Grande. El traslado a Tayrona depende del alojamiento elegido. El Zaino es el acceso terrestre previsto a Cabo San Juan, pero se debe verificar expresamente que estén habilitados El Zaino, Cañaveral y Arrecifes. Para llegar a Cartagena, comparar Marsol desde El Zaino con transporte privado desde el alojamiento.",
   "experiences": [
     {
@@ -99,16 +99,15 @@
     {
       "n": 1,
       "date": "2027-01-15",
-      "title": "Llegada a Medellín, Museo de Antioquia y Provenza",
+      "title": "Llegada diurna a Medellín y tarde en Provenza",
       "base": "Medellín",
-      "am": "Vuelo candidato Copa A: MEX 01:20 → PTY 06:00, escala de 3 h 32 min; PTY 09:32 → MDE 10:55. Opción B: MEX 05:55 → PTY 10:38, escala 2 h 17 min; PTY 12:55 → MDE 14:15.",
-      "pm": "Llegada principal A a MDE a las 10:55, migración y traslado al hotel en Manila. Si el horario lo permite, Plaza Botero, Museo de Antioquia (60–90 minutos) y Parque de Bolívar por la tarde. Priorizar el museo; abreviar Parque de Bolívar si se hace tarde. Con llegada B a las 14:15, posponer algunas visitas.",
-      "night": "Cena en Provenza según energía tras el vuelo nocturno. Traslado de regreso en vehículo confiable.",
-      "mobility": "• *Aeropuerto → Manila:* Vehículo precontratado o autorizado, con margen por migración y tráfico.\n• *Centro histórico:* Traslados de día a Plaza Botero y Parque de Bolívar; si llegas tarde, cambiarlos al domingo.",
-      "note": "• *Museo de Antioquia:* Viernes 09:40–17:30 según horario publicado; prever 60–90 minutos. Reconfirmar entrada y horario 2027.\n• *Vuelo candidato:* Copa A $9,023 MXN multidestino, sin comprar; con Copa B (llegada 14:15) no cabe garantizar todas las visitas.\n• *Salud previa:* Revisar recomendaciones para Tayrona y Minca, incluida la fiebre amarilla, con anticipación.",
+      "am": "Vuelo Copa seleccionado, sin comprar: MEX 05:55 → PTY 10:38 (CM195), conexión 2 h 17 min; PTY 12:55 → MDE 14:15 (CM654). Salir temprano hacia el aeropuerto de CDMX y prever descanso tras el trayecto.",
+      "pm": "Aterrizaje 14:15 en el aeropuerto José María Córdova. Migración y salida estimadas 15:00–15:30; traslado autorizado o coordinado hasta Moabi Hotel en Manila (aproximadamente 45–75 minutos según tráfico). Check-in previsto hacia 16:15–17:15; no agendar Plaza Botero ni Museo de Antioquia este día.",
+      "night": "Paseo sencillo por Provenza al final de la tarde, café y cena según energía. Traslado de regreso confiable al hotel. Si migración o tráfico retrasan la llegada, solo cenar cerca del alojamiento.",
+      "mobility": "• *Aeropuerto MDE → Moabi:* Taxi aeroportuario autorizado o traslado coordinado con el hotel, aproximadamente 45–75 minutos más el tiempo de salida del aeropuerto.\n• *Provenza:* Traslado corto desde Manila por medio confiable; evitar rutas solitarias de noche.",
+      "note": "• *Vuelo internacional:* Copa Económica Basic $9,652 MXN, cotizado 11/11/2026 y NO comprado; una maleta de mano de 10 kg y artículo personal incluidos.\n• *Museo de Antioquia y centro histórico:* No caben de forma razonable al llegar 14:15; evaluar espacio real el domingo 17 y priorizar las visitas más importantes, sin prometer museo.\n• *Salud previa:* Consultar recomendaciones para Tayrona y Minca con anticipación.",
       "spend": null,
       "places": [
-        "col27-botero",
         "col27-provenza"
       ],
       "headerPlaces": [],
@@ -120,18 +119,6 @@
         {
           "label": "Copa Airlines · vuelo y equipaje",
           "url": "https://www.copaair.com/"
-        },
-        {
-          "label": "Plaza Botero · mapa",
-          "url": "https://www.google.com/maps/search/?api=1&query=Plaza%20Botero%20Medellin"
-        },
-        {
-          "label": "Parque de Bolívar · mapa",
-          "url": "https://www.google.com/maps/search/?api=1&query=Parque%20de%20Bolivar%20Medellin"
-        },
-        {
-          "label": "Museo de Antioquia · visita y tarifas oficiales",
-          "url": "https://museodeantioquia.co/visita-tarifas/"
         }
       ]
     },
@@ -167,13 +154,13 @@
     {
       "n": 3,
       "date": "2027-01-17",
-      "title": "Comuna 13 y Pueblito Paisa",
+      "title": "Comuna 13, Pueblito Paisa y centro opcional",
       "base": "Medellín",
-      "am": "Tour guiado de Comuna 13 por la mañana (aprox. 3 horas), con sus murales, escaleras eléctricas y contexto histórico. Reservar salida temprana.",
-      "pm": "Traslado al Cerro Nutibara para visitar Pueblito Paisa y su mirador. Si el viernes llegaron tarde los vuelos, visitar primero Plaza Botero y Parque de Bolívar en horario diurno; ajustar Pueblito Paisa a última hora de tarde solo si el operador y traslados lo permiten.",
-      "night": "Cena en Provenza si no se visitó el viernes; preparación de equipaje para el vuelo del lunes 18.",
+      "am": "Tour guiado temprano de Comuna 13 (aprox. 3 horas), sus murales y escaleras eléctricas, con contexto histórico y guía local.",
+      "pm": "Pueblito Paisa y mirador del Cerro Nutibara. Si el tiempo y los traslados lo permiten, visita corta diurna a Plaza Botero y Parque de Bolívar; evitar intentar meter Museo de Antioquia junto con todo lo anterior. Si el museo es prioridad, sustituir Pueblito Paisa por Museo de Antioquia y centro, sujeto a horario dominical.",
+      "night": "Cena cerca del Hotel Moabi y preparación del equipaje para el vuelo del lunes 18 a Santa Marta.",
       "mobility": "• *Comuna 13:* Tour con guía local y transporte seguro.\n• *Pueblito Paisa y centro:* Planificar desplazamientos en vehículo confiable para evitar retrocesos y recorridos nocturnos por el centro.",
-      "note": "• *Recorrido histórico:* Identificar las esculturas de Fernando Botero en Plaza Botero y la Catedral Metropolitana junto a Parque de Bolívar si las plazas no cupieron el viernes.\n• *Pueblito Paisa:* Recreación de arquitectura rural antioqueña, no un pueblo colonial histórico auténtico; mirador en Cerro Nutibara.\n• *Seguridad:* Visitar el centro solo de día y conservar margen para los traslados.",
+      "note": "• *Decisión de prioridades:* Comuna 13 permanece fija. Elegir entre Pueblito Paisa y una visita más amplia al centro/Museo de Antioquia según los horarios dominicales confirmados; no presentar las cuatro visitas como garantizadas.\n• *Seguridad:* Centro histórico solo de día, con traslado fiable. Confirmar horario de apertura del Museo de Antioquia antes de reservar.\n• *Pueblito Paisa:* Recreación arquitectónica con mirador, no un pueblo histórico.",
       "spend": null,
       "places": [
         "col27-comuna13",
@@ -424,11 +411,11 @@
       "date": "2027-01-26",
       "title": "Regreso Cartagena–Panamá–CDMX",
       "base": "Regreso a CDMX",
-      "am": "Desayuno, checkout y traslado al aeropuerto Rafael Núñez con tiempo para controles internacionales.",
-      "pm": "Vuelo candidato Copa CTG–PTY–MEX, salida 15:05 y conexión en Panamá.",
-      "night": "Llegada prevista a CDMX a las 22:05 con la opción A (CM188); no hay alojamiento en Cartagena esta noche.",
+      "am": "Desayuno, checkout y salida con margen al aeropuerto Rafael Núñez para el vuelo internacional de Copa a las 15:05.",
+      "pm": "CM365 CTG 15:05→PTY 16:22. Conexión de 5 h 05 min en Tocumen: permanecer en la terminal, comer/descansar y comprobar puerta; CM194 PTY 21:27→MEX.",
+      "night": "Aterrizaje previsto en CDMX a las 00:15 del miércoles 27 de enero. El viaje termina con el regreso nocturno; no se añade hotel ni noche en Cartagena el 26.",
       "mobility": "• *Cómo trasladarte:* CTG → PTY → MEX: vuelo internacional candidato, sin compra; traslado hotel → aeropuerto con margen.",
-      "note": "• *Regreso principal A:* CTG 15:05 → PTY 16:22 (CM365), conexión 2 h 55 min; PTY 19:17 → MEX 22:05 (CM188), no reservado.\n• *Respaldo B:* Sigue con CM866, llegada MEX 22:25, tarifa independiente de $9,719 MXN.\n• *Equipaje:* Viaje exclusivamente con una pieza de equipaje de mano incluida; verificar sus límites de peso y tamaño con Copa.",
+      "note": "• *Regreso seleccionado:* CM365 CTG 15:05→PTY 16:22; espera 5 h 05 min; CM194 PTY 21:27→MEX 00:15 (miércoles 27). Cotización $9,652 MXN multidestino completa, sin comprar.\n• *Alternativa no seleccionada:* regreso CM866, conexión 3 h 12 min, llegada MEX 22:25 del martes 26; total internacional $10,851 MXN.\n• *Equipaje:* Artículo personal y maleta de cabina de hasta 10 kg incluidos; documentado con cargo.",
       "spend": null,
       "places": [],
       "headerPlaces": [],
@@ -449,7 +436,7 @@
       [
         {
           "title": "Vuelos internacionales y Medellín → Santa Marta · 15, 18 y 26 de enero",
-          "description": "Sin comprar. Comparar el precio final de Copa A ($9,023 MXN, opción principal) con B ($9,719 MXN, respaldo) para MEX → MDE / CTG → MEX; no sumar ambas. Mantener el vuelo directo candidato Avianca AV9446 del lunes 18 (12:00–13:15). Antes de pagar, validar equipaje de mano, conexiones, condiciones de cambios y compatibilidad con las noches de hotel.",
+          "description": "Sin comprar. Copa Económica Basic seleccionada ($9,652 MXN cotizados directamente el 11/11/2026): 15/01 MEX 05:55→PTY 10:38 (CM195), conexión 2 h 17 min, PTY 12:55→MDE 14:15 (CM654). 26/01 CTG 15:05→PTY 16:22 (CM365), conexión 5 h 05 min, PTY 21:27→MEX 00:15 del miércoles 27 (CM194). Incluye artículo personal y cabina 10 kg; no documentada. Alternativa $10,851 con retorno CM866 llega 22:25 del martes 26, no se suma. El vuelo interno Avianca AV9446 del lunes 18 (12:00–13:15) permanece candidato sin comprar.",
           "links": [
             {
               "label": "Copa Airlines · vuelos y tarifas",
@@ -618,14 +605,14 @@
     {
       "id": "air-copa",
       "category": "flight",
-      "concept": "Copa Airlines · multidestino, opción A principal",
+      "concept": "Copa Airlines · multidestino Basic seleccionado (sin comprar)",
       "date": "2027-01-15",
       "cost": {
-        "amount": 9023,
+        "amount": 9652,
         "currency": "MXN"
       },
       "status": "quoted",
-      "notes": "Cotización Google Flights actualizada el 06/11/2026: Copa A multidestino $9,023, ida MEX–PTY–MDE 15/01 (CM149 + CM397) y regreso CTG–PTY–MEX 26/01 (CM365 + CM188), llegada 22:05. Una pieza de equipaje de mano incluida, sin equipaje documentado previsto. La opción B de $9,719 es respaldo y no entra en el presupuesto principal. Sin compra."
+      "notes": "Cotización directa Copa 11/11/2026: $9,652 MXN por 1 adulto en Económica Basic; ida CM195 + CM654 el 15/01, llegada MDE 14:15; regreso CM365 + CM194 el 26/01, llegada MEX 00:15 del 27/01. Cabina 10 kg más artículo personal incluidos; documentado no incluido. Alternativa $10,851 no se suma. No comprado."
     },
     {
       "id": "air-avianca",
@@ -761,22 +748,22 @@
                 {
                   "from": "MEX",
                   "to": "PTY",
-                  "departure": "2027-01-15T01:20:00-06:00",
-                  "arrival": "2027-01-15T06:00:00-05:00",
+                  "departure": "2027-01-15T05:55:00-06:00",
+                  "arrival": "2027-01-15T10:38:00-05:00",
                   "operator": "Copa Airlines",
-                  "flightNumber": "CM 149",
-                  "aircraft": "Boeing 737",
+                  "flightNumber": "CM 195",
+                  "aircraft": "Boeing 737-800",
                   "co2kg": 204
                 },
                 {
                   "from": "PTY",
                   "to": "MDE",
-                  "departure": "2027-01-15T09:32:00-05:00",
-                  "arrival": "2027-01-15T10:55:00-05:00",
+                  "departure": "2027-01-15T12:55:00-05:00",
+                  "arrival": "2027-01-15T14:15:00-05:00",
                   "operator": "Copa Airlines",
-                  "flightNumber": "CM 397",
-                  "aircraft": "Boeing 737 MAX 9",
-                  "co2kg": 59
+                  "flightNumber": "CM 654",
+                  "aircraft": "Boeing 737-800",
+                  "co2kg": 68
                 }
               ]
             },
@@ -790,18 +777,17 @@
                   "arrival": "2027-01-26T16:22:00-05:00",
                   "operator": "Copa Airlines",
                   "flightNumber": "CM 365",
-                  "aircraft": "Boeing 737",
+                  "aircraft": "Boeing 737-800",
                   "co2kg": 65
                 },
                 {
                   "from": "PTY",
                   "to": "MEX",
-                  "departure": "2027-01-26T19:17:00-05:00",
-                  "arrival": "2027-01-26T22:05:00-06:00",
+                  "departure": "2027-01-26T21:27:00-05:00",
+                  "arrival": "2027-01-27T00:15:00-06:00",
                   "operator": "Copa Airlines",
-                  "flightNumber": "CM 188",
-                  "aircraft": "Boeing 737",
-                  "co2kg": 208
+                  "flightNumber": "CM 194",
+                  "aircraft": "Boeing 737-800"
                 }
               ]
             }
@@ -809,31 +795,31 @@
           "fares": [
             {
               "id": "candidate",
-              "name": "Turista · precio multidestino observado, sin reservar",
+              "name": "Copa Económica Basic · cotizada 11/11/2026, sin comprar",
               "price": {
-                "amount": 9023,
+                "amount": 9652,
                 "currency": "MXN"
               },
               "baggage": {
-                "personalItem": null,
+                "personalItem": true,
                 "cabin": {
                   "pieces": 1,
-                  "weightKg": null
+                  "weightKg": 10
                 },
                 "checked": {
                   "pieces": 0,
-                  "weightKg": null
+                  "weightKg": 0
                 }
               },
-              "changes": "Política específica de cambios por confirmar al reservar; la captura no la detalla.",
-              "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
+              "changes": "Con penalización y diferencia tarifaria según condiciones vigentes; confirmar al pagar.",
+              "refunds": "No reembolsable según condiciones de Económica Basic; comprobar excepciones legales."
             }
           ],
-          "notes": "PRINCIPAL · Ida 15/01: CM149 MEX 01:20→PTY 06:00 (3 h 40 min), conexión 3 h 32 min; CM397 PTY 09:32→MDE 10:55 (1 h 23 min). Regreso 26/01: CM365 CTG 15:05→PTY 16:22 (1 h 17 min), escala 2 h 55 min; CM188 PTY 19:17→MEX 22:05 (3 h 48 min). Aeronaves Boeing 737 y 737 MAX 9. Emisiones estimadas 263 kg CO₂e en la ida y 273 en el regreso. Precio multidestino total observado $9,023 MXN, incluye tasas obligatorias y una pieza de mano. Sin equipaje documentado ni reservas. Cambios y cancelación sujetos a tarifa efectiva. Enlace actualizado a CM188 facilitado por el viajero. La URL puede perder disponibilidad o modificar precios, no es una reserva.",
+          "notes": "OPCIÓN SELECCIONADA · PENDIENTE DE COMPRA. Cotizada directamente en Copa el 11/11/2026, $9,652 MXN para 1 persona, Económica Basic. Viernes 15: CM195 MEX 05:55→PTY 10:38; conexión 2 h 17 min; CM654 PTY 12:55→MDE 14:15. Martes 26: CM365 CTG 15:05→PTY 16:22; conexión 5 h 05 min; CM194 PTY 21:27→MEX 00:15 del MIÉRCOLES 27. Incluye artículo personal y una maleta de cabina de hasta 10 kg; maleta documentada y asiento preseleccionado con costo. Precio sujeto a disponibilidad hasta pagar. No confundir 27/01 llegada con una noche adicional en Cartagena.",
           "links": [
             {
-              "label": "Ver selección principal Copa A · CM149/CM397 y CM365/CM188 · Google Flights",
-              "url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpnEgoyMDI3LTAxLTE1Ih8KA01FWBIKMjAyNy0wMS0xNRoDUFRZKgJDTTIDMTQ5Ih8KA1BUWRIKMjAyNy0wMS0xNRoDTURFKgJDTTIDMzk3KAFqDAgCEggvbS8wNHNxanIHCAESA01ERRpnEgoyMDI3LTAxLTI2Ih8KA0NURxIKMjAyNy0wMS0yNhoDUFRZKgJDTTIDMzY1Ih8KA1BUWRIKMjAyNy0wMS0yNhoDTUVYKgJDTTIDMTg4KAFqBwgBEgNDVEdyDAgCEggvbS8wNHNxakABSAFwAYIBCwj___________8BmAED&tfu=CnhDalJJUzJKd0xXWnRVbTB3VUVGQlEzbHhhR2RDUnkwdExTMHRMUzB0TFMwdGIzbDRPVUZCUVVGQlIzSjBaRmRuUXpGRGVYTkJFZzFEVFRNMk5YeERUVEU0T0NNeEdnc0ltSWszRUFJYUEwMVlUamdjY05UM0FnPT0SAggAIgA&hl=es-419&gl=MX"
+              "label": "Copa Airlines · reservar multidestino (rebuscar fechas si es necesario)",
+              "url": "https://www.copaair.com/es-mx/"
             }
           ]
         },
@@ -897,31 +883,31 @@
           "fares": [
             {
               "id": "candidate",
-              "name": "Turista · precio multidestino observado, sin reservar",
+              "name": "Copa Económica Basic · alternativa del 11/11/2026",
               "price": {
-                "amount": 9719,
+                "amount": 10851,
                 "currency": "MXN"
               },
               "baggage": {
-                "personalItem": null,
+                "personalItem": true,
                 "cabin": {
                   "pieces": 1,
-                  "weightKg": null
+                  "weightKg": 10
                 },
                 "checked": {
                   "pieces": 0,
-                  "weightKg": null
+                  "weightKg": 0
                 }
               },
               "changes": "Política específica de cambios por confirmar al reservar; la captura no la detalla.",
               "refunds": "Política de cancelación y reembolso por confirmar al reservar; la captura no la detalla."
             }
           ],
-          "notes": "RESPALDO · Ida 15/01: CM195 MEX 05:55→PTY 10:38, vuelo 3 h 43 min; escala 2 h 17 min; CM654 PTY 12:55→MDE 14:15, vuelo 1 h 20 min. Total ida 8 h 20 min. Boeing 737 en ambos tramos. Estimación de emisiones de ida 272 kg CO₂e, retorno 280 kg CO₂e. Llegada más tarde; las plazas pueden trasladarse al domingo. Regreso de RESPALDO B: CM365 CTG 15:05→PTY 16:22; escala 3 h 12 min; CM866 PTY 19:34→MEX 22:25. La opción B aún conserva la cotización original ($9,719), diferente del regreso de A actualizado. Los impuestos obligatorios están incluidos para 1 adulto. Una pieza de mano gratis; primera documentada tiene costo adicional no publicado, sin peso confirmado. La captura no precisa el artículo personal ni condiciones de cambios/reembolsos. Enlace de Google Flights guardado como referencia temporal de selección: puede cambiar precio, disponibilidad, redirigir o caducar; usar números de vuelo y fechas si falla. No equivale a reservación.",
+          "notes": "ALTERNATIVA NO SELECCIONADA: misma ida CM195 + CM654, regreso CTG 15:05→PTY 16:22 (CM365), escala 3 h 12 min y PTY 19:34→MEX 22:25 (CM866), martes 26. Cotización Copa $10,851 MXN, 11/11/2026, Basic sin comprar. Diferencia +$1,199 vs opción A.",
           "links": [
             {
-              "label": "Abrir selección exacta en Google Flights · respaldo",
-              "url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpnEgoyMDI3LTAxLTE1Ih8KA01FWBIKMjAyNy0wMS0xNRoDUFRZKgJDTTIDMTk1Ih8KA1BUWRIKMjAyNy0wMS0xNRoDTURFKgJDTTIDNjU0KAFqDAgCEggvbS8wNHNxanIHCAESA01ERRpnEgoyMDI3LTAxLTI2Ih8KA0NURxIKMjAyNy0wMS0yNhoDUFRZKgJDTTIDMzY1Ih8KA1BUWRIKMjAyNy0wMS0yNhoDTUVYKgJDTTIDODY2KAFqBwgBEgNDVEdyDAgCEggvbS8wNHNxakABSAFwAYIBCwj___________8BmAED&tfu=CnhDalJJWDA5cVVsZE5kV1ZmUTNkQlJHZzNNMmRDUnkwdExTMHRMUzB0TFc5NVkycHRPRUZCUVVGQlIzSjBZVEJuUm5oSWJVdEJFZzFEVFRNMk5YeERUVGcyTmlNeEdnc0k3cWc3RUFJYUEwMVlUamdjY1BHVUF3PT0SAggAIgA&hl=es-419&gl=MX"
+              "label": "Copa Airlines · tarifas multidestino",
+              "url": "https://www.copaair.com/es-mx/"
             }
           ]
         }
@@ -950,9 +936,9 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Rafael%20N%C3%BA%C3%B1ez%20Cartagena"
         }
       ],
-      "boardingNote": "Opción A: salida MEX 01:20 del viernes (presentarse desde la noche del jueves); regreso a MEX martes 26 a las 22:05. Opción B de respaldo: salida MEX 05:55 del viernes, regreso a MEX 22:25. No reservadas.",
-      "ticketGuide": "Copa A principal: ida 15/01 CM149 + CM397, regreso 26/01 CM365 + CM188; multidestino observado $9,023. Copa B respaldo: ida CM195 + CM654, regreso CM365 + CM866; observado $9,719. Link actualizado de A corresponde a CM188 y está registrado; puede cambiar disponibilidad y precio. Viajar solo con equipaje de mano; verificar peso y medidas permitidas, artículo personal, tasas, política de cambios y precio final en Copa/Google Flights.",
-      "notes": "Candidatos observados en capturas de Google Flights el 06/11/2026. Principal Copa A $9,023 con regreso CM188 y llegada 22:05; respaldo Copa B $9,719 con regreso CM866 y llegada 22:25. Una pieza de equipaje de mano incluida, sin maleta documentada prevista. Confirmar tarifa, pesos/dimensiones, condiciones y disponibilidad al pagar."
+      "boardingNote": "Seleccionada sin comprar Copa CM195/CM654 el 15/01 y CM365/CM194 el 26/01; llegada a México el miércoles 27 a las 00:15. Alternativa B CM866: llegada martes 26 a las 22:25.",
+      "ticketGuide": "Opción seleccionada Económica Basic $9,652 MXN cotizados directamente en Copa el 11/11/2026: CM195 + CM654 / CM365 + CM194. Incluye artículo personal y equipaje de mano de 10 kg; no incluye maleta documentada. Escalas PTY 2 h 17 min ida y 5 h 05 min regreso. El vuelo de retorno sale martes 26, llega miércoles 27 00:15. No reservado. Alternativa CM866 de regreso: $10,851 MXN; comprobar disponibilidad antes de pagar.",
+      "notes": "Seleccionada Copa Basic $9,652 MXN observados 11/11/2026 en Copa; no comprada. En la ida llegas a Medellín 14:15; el regreso incluye 5 h 05 min en Tocumen y aterriza en MEX a las 00:15 del miércoles 27. Alternativa $10,851 llega a las 22:25 del martes 26."
     },
     {
       "id": "flight-domestic",
@@ -1201,16 +1187,16 @@
       "order": 8
     }
   ],
-  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa multidestino opción A ($9,023 MXN) es candidata principal; opción B ($9,719 MXN) alternativa. Ambos regresan el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Domingo 24 dedicado a Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní; lunes 25 dedicado a excursión de Islas del Rosario, con Corales Cartagena como candidato de snorkel en arrecifes y avioneta hundida, sin reserva ni disponibilidad confirmada; visitas culturales en tierra como alternativa si se cancela la navegación. Bora Bora como pasadía principal y yate en Bocagrande descartados. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior. Movilidad del plan A (ecolodge sector El Zaino 21–23 enero) desglosada ≈$6,537 MXN y provisión de $7,000 MXN, con Marsol y taxis estratégicos. No sumar traslados incluidos en tours; plan B camping Cabo San Juan + Barranquilla queda sin cotizar. La partida de $5,000 MXN para actividades incluye una provisión sin desglose del tour a Islas del Rosario: confirmar si es suficiente antes de reservar.",
+  "planningDetails": "Itinerario revisado al 15–26 de enero: 12 días, 11 noches y cuatro alojamientos. Copa Basic multidestino cotizada directamente el 11/11/2026 por $9,652 MXN, opción seleccionada SIN COMPRAR (CM195/CM654 y CM365/CM194, llega a MEX 00:15 del miércoles 27); alternativa de $10,851 MXN llega el 26 a las 22:25. Los vuelos internacionales despegan de Cartagena el martes 26 y el vuelo interno Avianca MDE–SMR permanece el lunes 18. Los vuelos no están comprados; solo equipaje de mano, verificar peso/dimensiones, políticas y tarifa final. Café trasladado a Minca. Sin noche añadida a Cartagena. Verificar apertura de Tayrona y condiciones del mar. Moabi Hotel es el candidato seleccionado de Medellín (3 noches, $4,768 MXN según Booking 06/11/2026, tarifa flexible, sin reservar). El escenario de alojamiento y presupuesto actual contempla Senda Koguiwa 21–23; alternativa camping Cabo San Juan 21–22 y Barranquilla 22–23 pendiente de decisión, sin modificar vuelos ni Cartagena. Domingo 24 dedicado a Castillo de San Felipe, Las Bóvedas, Ciudad Amurallada y Getsemaní; lunes 25 dedicado a excursión de Islas del Rosario, con Corales Cartagena como candidato de snorkel en arrecifes y avioneta hundida, sin reserva ni disponibilidad confirmada; visitas culturales en tierra como alternativa si se cancela la navegación. Bora Bora como pasadía principal y yate en Bocagrande descartados. Cartagena: Cabrero House Boutique es primera opción ($5,933 MXN por 3 noches, tarifa flexible y desayuno incluidos), El Viajero #2 es segunda ($3,787 MXN), sin reserva. La alternativa no se suma. Santa Marta: Bahía Suite primera opción (3 noches $2,069 MXN flexible, sin reservar), Casa Verde segunda ($6,997 MXN no reembolsable y excluyente). Verificar datos de establecimiento y ruido interior. Movilidad del plan A (ecolodge sector El Zaino 21–23 enero) desglosada ≈$6,537 MXN y provisión de $7,000 MXN, con Marsol y taxis estratégicos. No sumar traslados incluidos en tours; plan B camping Cabo San Juan + Barranquilla queda sin cotizar. La partida de $5,000 MXN para actividades incluye una provisión sin desglose del tour a Islas del Rosario: confirmar si es suficiente antes de reservar. El viernes 15 con llegada a Medellín 14:15 se reserva para traslado, check-in y Provenza; el centro histórico y el Museo de Antioquia quedan sujetos a prioridades y disponibilidad el domingo 17. No añadir noche por la llegada a MEX del miércoles 27.",
   "lodgingSummary": "11 noches repartidas en cuatro alojamientos: Medellín 3 (Moabi Hotel, Manila), Santa Marta 3 (Bahía Suite, Calle 20 #3-30 (Centro Histórico)), Tayrona 2 (sector El Zaino) y Cartagena 3 (Cabrero House Boutique, Carrera 2 #42-11). Hoteles candidatos sin reservar. Tayrona conserva dos posibilidades excluyentes: ecolodge 21–23 o camping Cabo San Juan 21–22 y Barranquilla 22–23; el mapa y los hoteles muestran el escenario provisional ecolodge hasta elegir.",
   "heroLodgingSummary": "11 noches, 4 alojamientos",
   "budgetPreliminary": {
-    "low": 43670,
-    "high": 60670,
+    "low": 44299,
+    "high": 61299,
     "marginMXN": 0,
     "useBudgetRange": true,
-    "referenceFlightMXN": 9023,
-    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa A $9,023 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Tayrona y servicios pendientes mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $49,752 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario es la actividad principal del 25 de enero, pero aún no tiene tarifa confirmada y puede requerir aumentar la partida de actividades. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; Tayrona sigue provisional. Bahía Suite $2,069 MXN según Booking; Casa Verde $6,997 MXN es alternativa excluyente no reembolsable. Plan A de movilidad revisado con taxis estratégicos y Marsol: estimación central ≈$6,537 MXN y provisión de $7,000 MXN. Plan B Cabo San Juan/Barranquilla sin presupuestar."
+    "referenceFlightMXN": 9652,
+    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa Basic seleccionada $9,652 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Tayrona y servicios pendientes mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $49,752 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario es la actividad principal del 25 de enero, pero aún no tiene tarifa confirmada y puede requerir aumentar la partida de actividades. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; Tayrona sigue provisional. Bahía Suite $2,069 MXN según Booking; Casa Verde $6,997 MXN es alternativa excluyente no reembolsable. Plan A de movilidad revisado con taxis estratégicos y Marsol: estimación central ≈$6,537 MXN y provisión de $7,000 MXN. Plan B Cabo San Juan/Barranquilla sin presupuestar."
   },
   "hotels": [
     {
@@ -1510,12 +1496,12 @@
       "url": "https://muhca.gov.co/visita"
     }
   ],
-  "sourceNote": "Copa A $9,023 MXN actualizada según capturas del 06/11/2026: vuelos CM149+CM397 (ida) y CM365+CM188 (regreso 22:05). Copa B $9,719 MXN, respaldo, permanece con CM195+CM654/CM365+CM866 (regreso 22:25). Equipaje exclusivamente de mano; ninguna tarifa comprada. Avianca nacional COP 217,580 observada anteriormente. Moabi, Bahía Suite y Cabrero House cuentan con cotizaciones de Booking consultadas el 06/11/2026 para sus fechas propuestas, sin reservar; Senda Koguiwa sigue estimado. Precios y condiciones pendientes de reconfirmación.",
+  "sourceNote": "Cotización DIRECTA Copa del 11/11/2026, Económica Basic $9,652 MXN, opción seleccionada sin comprar: CM195+CM654 MEX–PTY–MDE 15/01 (llega 14:15) y CM365+CM194 CTG–PTY–MEX 26/01 (llega 00:15 del 27/01); escalas 2 h 17 min y 5 h 05 min. Incluye cabina 10 kg y artículo personal. Alternativa no seleccionada $10,851 MXN con CM866 y llegada martes 26 a las 22:25. Precios observados, disponibilidad y cargos sujetos a confirmación en pago. Antiguo itinerario de Google Flights CM149/CM397 y CM365/CM188 por $9,023 no era reproducible en Copa y NO se usa para presupuesto.",
   "budgetRange": [
-    43670,
-    60670
+    44299,
+    61299
   ],
-  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $49,752 MXN para una persona, 12 días y 11 noches, con Copa A de $9,023 (CM149 + CM397 / CM365 + CM188), llegada a MEX 22:05. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Bahía Suite Santa Marta 3 noches $2,069 (Booking flexible, sin reservar); Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres, aeroportuarios, urbanos y lancha $7,000 (Plan A ecolodge, estimación revisada ≈$6,537 con margen ≈$463); alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $49,752 MXN; rango orientativo $43,670–60,670 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $9,719 es respaldo excluyente, no se suma. Moabi, Bahía Suite y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Tayrona permanece estimado. Casa Verde ($6,997 MXN no reembolsable) es segunda opción excluyente, no sumada. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $47,606 MXN, sin recalcular traslados/desayunos).",
+  "budgetNote": "Presupuesto final de planeación (no cotización final pagable): $50,381 MXN para una persona, 12 días y 11 noches, con Copa A de $9,652 (CM195 + CM654 / CM365 + CM194), llegada a MEX 00:15 del miércoles 27. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Bahía Suite Santa Marta 3 noches $2,069 (Booking flexible, sin reservar); Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres, aeroportuarios, urbanos y lancha $7,000 (Plan A ecolodge, estimación revisada ≈$6,537 con margen ≈$463); alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $50,381 MXN; rango orientativo $44,299–61,299 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $10,851 es alternativa excluyente, no se suma. Moabi, Bahía Suite y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Tayrona permanece estimado. Casa Verde ($6,997 MXN no reembolsable) es segunda opción excluyente, no sumada. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $48,235 MXN, sin recalcular traslados/desayunos).",
   "placeDescriptions": {
     "col27-botero": "Plaza al aire libre con esculturas monumentales de Fernando Botero, donde el arte contemporáneo convive con la arquitectura del centro de Medellín.",
     "col27-provenza": "Calles arboladas, restaurantes y terrazas convierten este sector de El Poblado en un lugar animado para terminar la jornada.",
