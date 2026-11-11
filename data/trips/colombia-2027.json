@@ -103,8 +103,8 @@
       "base": "Medellín",
       "am": "Presentación anticipada en el aeropuerto MEX para vuelo Copa CM195 a las 05:55. MEX 05:55 → PTY 10:38; conexión en Panamá de 2 h 17 min, sin salida del área de conexiones; CM654 PTY 12:55 → MDE 14:15. Tiempo total programado de ida: 7 h 20 min (horarios locales).",
       "pm": "14:15 aterrizaje en Medellín (MDE). Reservar 45–75 minutos orientativos para desembarque y migración; salida estimada 15:00–15:30. Taxi aeroportuario autorizado o traslado confirmado con Moabi Hotel hasta Manila, El Poblado (aprox. 45–75 minutos, según tráfico); check-in orientativo entre 16:15 y 17:15.",
-      "night": "A partir de las 17:30, paseo tranquilo por Provenza, café y cena si hay energía. Regresar al Moabi en traslado confiable. Si migración o tráfico retrasan el arribo, cenar cerca del hotel y descansar; no añadir visitas al centro a última hora.",
-      "mobility": "• *MDE → Moabi (Manila):* Taxi aeroportuario autorizado o servicio del hotel; reservar 45–75 minutos de carretera después de salir del aeropuerto. Cotizar antes de viajar.\n• *Provenza:* Desplazamiento corto desde Manila según ubicación y condiciones; evitar calles solitarias por la noche.",
+      "night": "17:30–20:30 aprox.: tras instalarte, ve a Provenza para pasear, tomar café y cenar. No añadas el centro histórico este viernes. Si la llegada se retrasa o estás cansado, cena cerca del Moabi y descansa.",
+      "mobility": "• *Aeropuerto José María Córdova → Moabi (Manila):* Reserva traslado del hotel o toma taxi aeroportuario autorizado hasta Carrera 43B #12-147; calcula 45–75 minutos por carretera desde que salgas de la terminal. El servicio del hotel tiene recargo pendiente de cotización.\n• *Moabi → Provenza:* Desde Manila puedes caminar unos 20–30 minutos por calles concurridas de El Poblado (con desniveles); si estás cansado o ya oscureció, pide taxi o vehículo por aplicación (aprox. 5–15 minutos según tráfico).\n• *Provenza → Moabi:* Regresa en vehículo solicitado desde el restaurante o un punto iluminado; no improvises caminatas por calles solitarias a última hora.",
       "note": "• *Copa seleccionada, NO comprada:* Económica Basic $9,652 MXN POR LOS DOS TRAYECTOS INTERNACIONALES, cotizada directamente el 11/11/2026; incluye artículo personal y 1 pieza de cabina de 10 kg. Sin equipaje documentado ni asiento preseleccionado gratis.\n• *Presupuesto terrestre:* El rubro conjunto de movilidad de $7,000 MXN (estimado, no pagado) ya contempla taxis de aeropuerto, incluidos MDE→Moabi y Moabi→MDE; NO volver a sumar el taxi de llegada como gasto aparte.\n• *Actividades:* Provenza es la única visita prevista tras llegar a las 14:15. Plaza Botero, Parque de Bolívar y Museo de Antioquia quedan como opciones a reorganizar el domingo 17, no garantizadas.\n• *Salud previa:* Revisar recomendaciones para Tayrona y Minca con anticipación.",
       "spend": null,
       "places": [
@@ -117,7 +117,15 @@
       "hotel": "med-moabi",
       "mobilityLinks": [
         {
-          "label": "Copa Airlines · vuelo y equipaje",
+          "label": "Aeropuerto MDE → Moabi · ruta en Maps",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Aeropuerto+Internacional+Jose+Maria+Cordova+Medellin&destination=Moabi+Hotel+Medellin&travelmode=driving"
+        },
+        {
+          "label": "Moabi → Provenza · ruta a pie",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Moabi+Hotel+Medellin&destination=Provenza+Medellin&travelmode=walking"
+        },
+        {
+          "label": "Copa Airlines · vuelos y equipaje",
           "url": "https://www.copaair.com/"
         }
       ]
@@ -127,10 +135,10 @@
       "date": "2027-01-16",
       "title": "Guatapé y Piedra del Peñol",
       "base": "Medellín",
-      "am": "Salida aproximada 07:00 en tour organizado a Guatapé. Carretera de unas dos horas por sentido, variable por tráfico.",
-      "pm": "Piedra del Peñol (más de 700 escalones, según condiciones), calles de zócalos y almuerzo junto al embalse. Lancha opcional.",
-      "night": "Regreso a Medellín al final de la tarde. Cena cercana y descanso.",
-      "mobility": "• *Cómo trasladarte:* Excursión terrestre de día completo; el tiempo de carretera puede variar, especialmente en sábado.",
+      "am": "06:40–06:50 aprox.: camina al Parque de El Poblado y preséntate en el punto de encuentro del tour organizado. Salida de referencia 07:00; confirmar operador, hora y punto exactos al reservar. Viaje por carretera a El Peñol/Guatapé con paradas según el recorrido contratado.",
+      "pm": "En la excursión, traslado organizado entre Piedra del Peñol y el pueblo de Guatapé. Subida de la Piedra opcional según energía, recorrido a pie por zócalos y almuerzo. Paseo en barco por el embalse solo si el paquete finalmente elegido lo incluye.",
+      "night": "Regreso en el vehículo del tour al punto acordado de El Poblado, normalmente alrededor de 18:30–19:00 según tráfico. Desde allí vuelve al Moabi y cena cerca del alojamiento.",
+      "mobility": "• *Moabi → Parque de El Poblado (Carrera 43A con Calle 9):* Caminata aproximada de 8–15 minutos desde Manila; sal con margen para estar 10–15 minutos antes del encuentro. Si el operador cambia punto de recogida, sigue la confirmación de la reserva.\n• *Parque de El Poblado → Piedra del Peñol → Guatapé:* Transporte del tour entre las paradas, sin pagar taxis independientes. La caminata y la subida de la Piedra son a pie; el orden exacto depende del operador.\n• *Guatapé → Parque de El Poblado:* Regreso en el mismo vehículo del tour, no reservar autobús adicional.\n• *Parque de El Poblado → Moabi:* Regreso a pie (8–15 minutos, si te sientes cómodo) o taxi por aplicación después de oscurecer.",
       "note": "• *Tour Guatapé:* Salida de referencia 07:00, duración publicada de 10 a 12 horas; incluye transporte y alimentos según operador. Tour COP 129,999 (≈ $752 MXN), precio de referencia no reservado.\n• *Piedra del Peñol:* El ascenso es adicional en el tour de referencia, COP 35,000 (≈ $203 MXN); alrededor de 740 escalones y esfuerzo físico.\n• *Alternativa GetYourGuide (por comparar):* «Medellín: Guatapé Tour with Boat, Breakfast, Lunch & Llamas», anuncio con valoración 4.9/5 (15,563 reseñas en la captura de noviembre de 2026). Incluye según el anuncio paseo en barco, desayuno, almuerzo y experiencia con llamas. Verificar la ficha exacta, operador, idioma, punto de encuentro, entrada a la Piedra del Peñol y condiciones para el 16/01/2027. No seleccionado ni reservado; no sumar al presupuesto.",
       "spend": null,
       "places": [
@@ -142,11 +150,15 @@
       "hotel": "med-moabi",
       "mobilityLinks": [
         {
-          "label": "Tour organizado Guatapé · operador y inclusiones",
-          "url": "https://toursguatape.com/en/producto/full-day-guatape/"
+          "label": "Moabi → encuentro Parque de El Poblado · a pie",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Moabi+Hotel+Medellin&destination=Parque+El+Poblado+Medellin&travelmode=walking"
         },
         {
-          "label": "Piedra del Peñol · referencia de horario y entrada",
+          "label": "Tour Guatapé · puntos y traslados oficiales",
+          "url": "https://toursguatape.com/en/guatape-tour-faq/"
+        },
+        {
+          "label": "Piedra del Peñol · entrada y referencias",
           "url": "https://visitaguatape.com/guatape/piedra-del-penol-entrada-horarios"
         }
       ]
@@ -154,13 +166,13 @@
     {
       "n": 3,
       "date": "2027-01-17",
-      "title": "Comuna 13, Pueblito Paisa y centro opcional",
+      "title": "Comuna 13 y Pueblito Paisa; centro histórico opcional",
       "base": "Medellín",
-      "am": "Tour guiado temprano de Comuna 13 (aprox. 3 horas), sus murales y escaleras eléctricas, con contexto histórico y guía local.",
-      "pm": "Pueblito Paisa y mirador del Cerro Nutibara. Si el tiempo y los traslados lo permiten, visita corta diurna a Plaza Botero y Parque de Bolívar; evitar intentar meter Museo de Antioquia junto con todo lo anterior. Si el museo es prioridad, sustituir Pueblito Paisa por Museo de Antioquia y centro, sujeto a horario dominical.",
-      "night": "Cena cerca del Hotel Moabi y preparación del equipaje para el vuelo del lunes 18 a Santa Marta.",
-      "mobility": "• *Comuna 13:* Tour con guía local y transporte seguro.\n• *Pueblito Paisa y centro:* Planificar desplazamientos en vehículo confiable para evitar retrocesos y recorridos nocturnos por el centro.",
-      "note": "• *Decisión de prioridades:* Comuna 13 permanece fija. Elegir entre Pueblito Paisa y una visita más amplia al centro/Museo de Antioquia según los horarios dominicales confirmados; no presentar las cuatro visitas como garantizadas.\n• *Seguridad:* Centro histórico solo de día, con traslado fiable. Confirmar horario de apertura del Museo de Antioquia antes de reservar.\n• *Pueblito Paisa:* Recreación arquitectónica con mirador, no un pueblo histórico.",
+      "am": "08:30–12:00 aprox.: traslado desde Moabi al punto de encuentro que confirme el guía local y recorrido matutino de Comuna 13 (murales, historia y escaleras eléctricas). La visita guiada suele durar unas 2,5–3 horas; no asumir que incluye transporte desde el hotel.",
+      "pm": "12:00–14:30 aprox.: vehículo a Pueblito Paisa (Cerro Nutibara), mirador y almuerzo. OPCIONAL si queda luz y energía: traslado al centro para Plaza Botero (20–30 min) y Parque de Bolívar (15–20 min). Museo de Antioquia (60–90 min) es opcional y requeriría sustituir Pueblito Paisa o recortar las plazas, nunca sumar todo a la fuerza.",
+      "night": "Regreso en taxi o vehículo por aplicación desde la última parada al Hotel Moabi; cena cercana y preparación del equipaje para el vuelo de Santa Marta del lunes 18. No permanecer de noche en el centro.",
+      "mobility": "• *Moabi → Comuna 13:* Taxi o vehículo por aplicación al punto de encuentro **confirmado por el guía** (aprox. 30–50 minutos según tráfico). Si el tour parte de estación San Javier, otra opción es metro desde Poblado con transbordo en San Antonio hacia línea B, más el acceso al encuentro; no ir sin acordar punto y hora.\n• *Recorrido por Comuna 13:* Desplazamientos peatonales con el guía, incluidas escaleras eléctricas; confirmar si el tour termina en el mismo punto.\n• *Comuna 13 → Pueblito Paisa:* Taxi por aplicación o traslado del operador si está incluido, aproximadamente 20–40 minutos por tráfico; pedir llegada cerca de la parte alta del Cerro Nutibara para evitar ascenso adicional.\n• *OPCIONAL Pueblito Paisa → Plaza Botero:* Taxi autorizado o por aplicación, aprox. 15–30 minutos; bajar en una zona de acceso concurrida. Evitar ir caminando entre ambos lugares.\n• *OPCIONAL Plaza Botero → Museo de Antioquia:* Queda frente a la plaza; desplazamiento a pie de pocos minutos. Verificar horario dominical y reservar 60–90 minutos; sustituye otra visita si no hay tiempo.\n• *OPCIONAL Plaza Botero → Parque de Bolívar:* Caminata urbana aproximada de 10–15 minutos por calles concurridas **solo de día**; si la zona no inspira confianza, omitir el parque.\n• *Centro o Pueblito Paisa → Moabi:* Taxi solicitado desde lugar concurrido y regreso al hotel antes de prolongar el paseo nocturno.",
+      "note": "• *Visitas fijas:* Comuna 13 guiada y Pueblito Paisa; ninguna requiere entrada de museo.\n• *Opcionales conservadas:* Plaza Botero (con su fotografía señalada «Opción del día») y Parque de Bolívar solo si la tarde alcanza; Museo de Antioquia solo si reemplazas Pueblito Paisa u otra parada y está abierto. No se prometen las tres visitas adicionales.\n• *Museo de Antioquia:* Confirmar el horario del domingo 17/01/2027 y la tarifa antes de decidir; el museo está junto a Plaza Botero.\n• *Seguridad y costos:* Hacer el centro solo de día; el transporte urbano se contempla en los $7,000 MXN estimados para toda Colombia, no son tarifas confirmadas para estos recorridos.",
       "spend": null,
       "places": [
         "col27-comuna13",
@@ -173,12 +185,24 @@
       "hotel": "med-moabi",
       "mobilityLinks": [
         {
-          "label": "Comuna 13 · mapa de encuentro",
-          "url": "https://www.google.com/maps/search/?api=1&query=Escaleras%20Electricas%20Comuna%2013%20Medellin"
+          "label": "Moabi → Comuna 13 · referencia de ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Moabi+Hotel+Medellin&destination=Escaleras+Electricas+Comuna+13+Medellin&travelmode=driving"
         },
         {
-          "label": "Pueblito Paisa · mapa",
-          "url": "https://www.google.com/maps/search/?api=1&query=Pueblito%20Paisa%20Medellin"
+          "label": "Comuna 13 → Pueblito Paisa · ruta en auto",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Escaleras+Electricas+Comuna+13+Medellin&destination=Pueblito+Paisa+Medellin&travelmode=driving"
+        },
+        {
+          "label": "Pueblito Paisa → Plaza Botero · ruta opcional",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Pueblito+Paisa+Medellin&destination=Plaza+Botero+Medellin&travelmode=driving"
+        },
+        {
+          "label": "Plaza Botero → Parque de Bolívar · a pie",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Plaza+Botero+Medellin&destination=Parque+de+Bolivar+Medellin&travelmode=walking"
+        },
+        {
+          "label": "Museo de Antioquia · horarios y tarifas",
+          "url": "https://museodeantioquia.co/visita-tarifas/"
         }
       ],
       "optionalPlaces": [
@@ -193,7 +217,7 @@
       "am": "Checkout y traslado anticipado a MDE. Vuelo candidato Avianca AV9446 12:00–13:15 a Santa Marta.",
       "pm": "Llegada candidata a SMR a las 13:15, traslado al hotel, check-in y descanso breve. Si el vuelo llega a tiempo y hay cupo, tour guiado en bicicleta por el Centro Histórico a las 17:00 durante 2 horas: Catedral, Parque de los Novios, plaza de Bolívar y exteriores de la Casa de la Aduana.",
       "night": "Final del paseo hacia las 19:00 y cena caribeña. Si hay retrasos, sustituir la bicicleta por un paseo corto y cenar.",
-      "mobility": "• *Aeropuerto → hotel:* Traslado autorizado, dejando margen para check-in y llegada al punto de encuentro.\n• *Bicicleta:* Tour de referencia de Rent Bike Santa Marta vía Civitatis; salida publicada a las 17:00 desde Carrera 4 #19-12. Confirmar operación el lunes 18 y cupo antes de pagar.",
+      "mobility": "• *Moabi → Aeropuerto José María Córdova (MDE):* Para la salida candidata Avianca de las 12:00, prever salir del hotel entre 08:15 y 08:45 en taxi aeroportuario o traslado reservado (45–75 minutos o más con tráfico) y llegar aproximadamente 2 horas antes del vuelo, sujeto a indicación final de Avianca.\n• *Aeropuerto SMR → Bahía Suite:* Taxi autorizado o traslado concertado hasta Calle 20 #3-30, Santa Marta; confirmar tarifa antes de salir.\n• *Bahía Suite → encuentro del tour en bicicleta (Carrera 4 #19-12):* Trayecto corto por el centro, a pie durante el día tras verificar ubicación exacta con el operador. Después del tour, regresar a Bahía Suite por vía concurrida o taxi si termina de noche.",
       "note": "• *Tour condicionado:* Sin reservar; depende de puntualidad del vuelo y traslado. Incluye casco y guía; el Museo del Oro Tairona se observa solo desde fuera porque cierra los lunes.\n• *Equipaje:* Comprobar condiciones de Avianca antes de comprar.",
       "spend": null,
       "places": [
@@ -207,11 +231,15 @@
       "hotel": "sm-bahia-suite",
       "mobilityLinks": [
         {
-          "label": "Avianca · vuelo y condiciones",
+          "label": "Moabi → aeropuerto MDE · ruta en auto",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Moabi+Hotel+Medellin&destination=Aeropuerto+Internacional+Jose+Maria+Cordova+Medellin&travelmode=driving"
+        },
+        {
+          "label": "Avianca · vuelo interno y equipaje",
           "url": "https://www.avianca.com/"
         },
         {
-          "label": "Tour de Santa Marta en bicicleta · Civitatis",
+          "label": "Tour Santa Marta en bicicleta · operador",
           "url": "https://experiences.civitatis.com/es/santa-marta/tour-bicicleta-santa-marta/"
         }
       ]
