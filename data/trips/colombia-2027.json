@@ -1262,7 +1262,7 @@
     "marginMXN": 0,
     "useBudgetRange": true,
     "referenceFlightMXN": 9652,
-    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa Basic seleccionada $9,652 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Tayrona y servicios pendientes mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $50,381 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario es la actividad principal del 25 de enero, pero aún no tiene tarifa confirmada y puede requerir aumentar la partida de actividades. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; Tayrona sigue provisional. Bahía Suite $2,069 MXN según Booking; Casa Verde $6,997 MXN es alternativa excluyente no reembolsable. Plan A de movilidad revisado con taxis estratégicos y Marsol: estimación central ≈$6,537 MXN y provisión de $7,000 MXN. Plan B Cabo San Juan/Barranquilla sin presupuestar."
+    "notes": "Presupuesto integral de planeación para 1 persona y 11 noches. Vuelo Copa Basic seleccionada $9,652 sin comprar. Moabi Hotel cotizado para 15–18/01/2027 en Booking, $4,768 MXN por 3 noches, tarifa flexible y sin reservar (captura 06/11/2026). Tayrona y servicios pendientes mantienen estimaciones, no reservas. Rango ajustado sin equipaje documentado. El presupuesto central de $50,381 MXN conserva 2 noches provisionales en Senda Koguiwa; la variante Cabo San Juan/Barranquilla se recotizará por separado. La excursión a Islas del Rosario es la actividad principal del 25 de enero, pero aún no tiene tarifa confirmada y puede requerir aumentar la partida de actividades. Se incorpora Cabrero House (Booking $5,933 MXN) y se mantiene El Viajero #2 ($3,787 MXN) como alternativa excluyente no sumada; Tayrona sigue provisional. Bahía Suite $2,069 MXN según Booking; Casa Verde $6,997 MXN es alternativa excluyente no reembolsable. Plan A de movilidad revisado con taxis estratégicos y Marsol: estimación central ≈$6,537 MXN y provisión de $7,000 MXN. Plan B Cabo San Juan/Barranquilla sin presupuestar. Revisión 11/11/2026: Guatapé GetYourGuide para el 16/01/2027 cotizado en $790.14 MXN y ascenso opcional a Piedra COP 35,000 (≈ $203 MXN); ambos previstos dentro de los $5,000 MXN de actividades. Comuna 13 plan A GetYourGuide con Metrocable sin disponibilidad enero 2027 confirmada; plan B Civitatis y plan C GetYourGuide como respaldos excluyentes. No modificar total hasta confirmar tarifas de compra."
   },
   "hotels": [
     {
@@ -1466,7 +1466,9 @@
     "Aeropuertos y conexiones: todos los vuelos son candidatos; verificar tarifas, equipaje y tiempos efectivos de trasbordo antes de comprar.",
     "Moabi Hotel en Manila es el candidato elegido para Medellín (15–18 enero; tarifa flexible $4,768 MXN por 3 noches según Booking 06/11/2026, sin reservar). Confirmar desayuno extra, pago, impuestos y consigna.",
     "Tayrona conserva dos variantes: ecolodge exterior o camping en Cabo San Juan con posible noche en Barranquilla. El presupuesto global solo contempla el escenario ecolodge; evitar mezclar sus traslados y costos.",
-    "Corales Cartagena es el candidato principal para el snorkel del 25 de enero, sin reservar. Confirmar custodia de pertenencias, equipo, embarcación, paradas terrestres y precio final. La excursión no anuncia visita a pie a Isla Grande."
+    "Corales Cartagena es el candidato principal para el snorkel del 25 de enero, sin reservar. Confirmar custodia de pertenencias, equipo, embarcación, paradas terrestres y precio final. La excursión no anuncia visita a pie a Isla Grande.",
+    "Guatapé, sábado 16/01: tour GetYourGuide seleccionado sin pagar, encuentro 06:50 en la iglesia de San José junto al Parque de El Poblado (caminar desde Moabi con margen); boleto de entrada para subir la Piedra opcional, COP 35,000 (≈ $203 MXN), solo efectivo. El desayuno, almuerzo y barco están incluidos.",
+    "Comuna 13, domingo 17/01: Plan A GetYourGuide con metro/Metrocable y salida de referencia 09:00 desde estación Poblado; aún no hay disponibilidad confirmada para la fecha. Plan B Civitatis desde San Javier con traslado independiente y Plan C GetYourGuide desde Veinte de Julio. El Plan A no garantiza explícitamente pasar por las escaleras eléctricas."
   ],
   "sources": [
     {
@@ -1586,7 +1588,7 @@
     "col27-penol": "La enorme roca junto al embalse permite contemplar las islas y el paisaje antioqueño tras una subida exigente por escaleras.",
     "col27-guatape": "Los zócalos pintados y las fachadas coloridas muestran la tradición decorativa de Guatapé, entre calles empedradas y pequeños comercios.",
     "col27-comuna13": "Los murales de San Javier expresan memoria, identidad y transformación comunitaria; el recorrido guiado permite comprender las historias detrás del arte.",
-    "col27-escaleras": "Estas escaleras eléctricas al aire libre conectan las laderas de Comuna 13 y simbolizan una transformación de movilidad cotidiana.",
+    "col27-escaleras": "Escaleras eléctricas al aire libre de la Comuna 13, símbolo de movilidad en sus laderas. No se ha confirmado que el tour principal con Metrocable pase específicamente por ellas.",
     "col27-pueblito": "En Cerro Nutibara, esta recreación de un pueblo antioqueño reúne casas tradicionales y un mirador con vistas urbanas de Medellín.",
     "col27-santamarta-catedral": "La catedral blanca domina el casco antiguo de Santa Marta, con su torre campanario y una fachada histórica frente a la plaza.",
     "col27-parque-novios": "La plaza arbolada es un punto de encuentro del centro histórico, rodeado de monumentos, cafés y restaurantes para pasear al atardecer.",
@@ -1619,7 +1621,7 @@
   "emphasisStyle": false,
   "linkRailInText": false,
   "knownCosts": [],
-  "costExclusions": "Sin equipaje documentado: no se presupuestan maletas en bodega. Pendientes de confirmar: tarifas pagables de los cuatro hoteles, cambios de precios aéreos, límites de equipaje de cabina, traslados y tours por fecha. La excursión a Islas del Rosario está contemplada dentro de la provisión general de actividades de $5,000 MXN, pero no tiene cotización propia y esa provisión podría ser insuficiente. Compras personales, mejoras y gastos extraordinarios no incluidos.",
+  "costExclusions": "Sin equipaje documentado: no se presupuestan maletas en bodega. Pendientes de confirmar: tarifas pagables de los cuatro hoteles, cambios de precios aéreos, límites de equipaje de cabina, traslados y tours por fecha. La excursión a Islas del Rosario está contemplada dentro de la provisión general de actividades de $5,000 MXN, pero no tiene cotización propia y esa provisión podría ser insuficiente. Compras personales, mejoras y gastos extraordinarios no incluidos. Comuna 13 Plan A aún no está habilitado para el 17/01/2027 según las capturas del 11/11/2026; si no se publica, consultar Plan B Civitatis con Metrocable o Plan C GetYourGuide con disponibilidad observada, sin comprar ambos. Guatapé seleccionado $790.14 sin reservar; el precio «desde $751» no es el importe de la opción mostrada para 16/01.",
   "exchangeNote": "Referencia 3/11/2026: COP 1 ≈ $0.00578764 MXN. Los cargos reales dependen del banco, de comisiones y del día de pago.",
   "railSummary": [],
   "railTotal": null,
