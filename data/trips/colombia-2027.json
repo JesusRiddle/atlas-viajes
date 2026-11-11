@@ -179,6 +179,9 @@
           "label": "Pueblito Paisa · mapa",
           "url": "https://www.google.com/maps/search/?api=1&query=Pueblito%20Paisa%20Medellin"
         }
+      ],
+      "optionalPlaces": [
+        "col27-botero"
       ]
     },
     {
