@@ -95,7 +95,25 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.match(trip.days[0].night,/Provenza/);
   assert.doesNotMatch(trip.days[0].pm,/visitar Plaza Botero|visitar Museo de Antioquia/i);
   assert.match(trip.days[2].pm,/Plaza Botero/);
-  assert.match(trip.days[2].pm,/alternativa|sustituir/i);
+  assert.match(trip.days[2].pm,/OPCIONAL/);
+  assert.match(trip.days[2].pm,/Museo de Antioquia/);
+  assert.match(trip.days[2].pm,/Parque de Bolívar/);
+  assert.match(trip.days[2].pm,/sustituir|reemplazar/i);
+  for (const [n, steps] of [
+    [1, ['Moabi', 'Provenza']],
+    [2, ['Parque de El Poblado', 'Piedra del Peñol', 'Guatapé']],
+    [3, ['Comuna 13', 'Pueblito Paisa', 'Plaza Botero', 'Museo de Antioquia', 'Parque de Bolívar']],
+    [4, ['Moabi', 'Aeropuerto José María Córdova']]
+  ]) {
+    const d = trip.days[n - 1];
+    for (const step of steps) assert.ok(d.mobility.includes(step), 'Día '+n+' traslado omitido: '+step);
+    assert.ok(d.mobilityLinks.length >= 2, 'Día '+n+' necesita enlaces de ruta');
+    assert.ok(d.mobilityLinks.every(link => link.url.startsWith('https://')));
+  }
+  assert.deepEqual(trip.days[2].optionalPlaces,['col27-botero']);
+  assert.ok(trip.days[2].places.includes('col27-botero'));
+  assert.equal(trip.days[0].places.includes('col27-botero'),false);
+  assert.match(trip.days[2].note,/Opcionales conservadas/);
   assert.match(trip.days.at(-1).pm,/5 h 05 min/);
   assert.match(trip.days.at(-1).night,/miércoles 27/i);
   assert.match(trip.days.at(-1).am,/11:30/);
