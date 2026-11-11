@@ -106,6 +106,14 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.match(trip.expenses.find(x=>x.id==='activity-budget').notes,/790\.14/);
   assert.equal(trip.expenses.find(x=>x.id==='activity-budget').cost.amount,5000,'Tour dentro de bolsa de actividades, sin duplicarlo');
   assert.doesNotMatch(trip.days[0].pm,/visitar Plaza Botero|visitar Museo de Antioquia/i);
+  assert.match(trip.days[2].am,/PLAN A/);
+  assert.match(trip.days[2].am,/NO confirmado/);
+  assert.match(trip.days[2].note,/PLAN B/);
+  assert.match(trip.days[2].note,/PLAN C/);
+  assert.ok(trip.days[2].mobilityLinks.some(x=>x.url.includes('t420286')),'Enlace GetYourGuide principal');
+  assert.ok(trip.days[2].mobilityLinks.some(x=>x.url.includes('tour-grafiti-comuna-13-metrocable')),'Enlace Civitatis respaldo');
+  assert.ok(trip.days[2].mobilityLinks.some(x=>x.url.includes('t471700')),'Enlace GetYourGuide tercer plan');
+  assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>x.title.includes('Comuna 13') && x.links.some(l=>l.url.includes('t420286')) && x.links.some(l=>l.url.includes('civitatis.com'))),'Enlaces guardados en reservas');
   assert.match(trip.days[2].pm,/Plaza Botero/);
   assert.match(trip.days[2].pm,/OPCIONAL/);
   assert.match(trip.days[2].pm,/Museo de Antioquia/);
@@ -125,7 +133,7 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.deepEqual(trip.days[2].optionalPlaces,['col27-botero']);
   assert.ok(trip.days[2].places.includes('col27-botero'));
   assert.equal(trip.days[0].places.includes('col27-botero'),false);
-  assert.match(trip.days[2].note,/Opcionales conservadas/);
+  assert.match(trip.days[2].note,/Pueblito Paisa fijo/);
   assert.match(trip.days.at(-1).pm,/5 h 05 min/);
   assert.match(trip.days.at(-1).night,/miércoles 27/i);
   assert.match(trip.days.at(-1).am,/11:30/);
