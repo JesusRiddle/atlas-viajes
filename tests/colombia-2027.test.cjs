@@ -85,7 +85,7 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.equal(primary.journeys[1].segments.at(-1).arrival,'2027-01-27T00:15:00-06:00');
   assert.equal(backupOption.journeys[1].segments.at(-1).arrival,'2027-01-26T22:25:00-06:00');
   for (const option of [primary,backupOption]) {
-    assert.equal(option.fares[0].baggage.personalItem,true);
+    assert.equal(option.fares[0].baggage.personalItem.pieces,1);
     assert.equal(option.fares[0].baggage.cabin.weightKg,10);
     assert.equal(option.fares[0].baggage.checked.pieces,0);
     assert.ok(option.links[0].url.startsWith('https://www.copaair.com/'));
