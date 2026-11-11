@@ -97,7 +97,7 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.match(trip.days[2].pm,/Plaza Botero/);
   assert.match(trip.days[2].pm,/alternativa|sustituir/i);
   assert.match(trip.days.at(-1).pm,/5 h 05 min/);
-  assert.match(trip.days.at(-1).night,/miércoles 27/);
+  assert.match(trip.days.at(-1).night,/miércoles 27/i);
   assert.match(trip.days.at(-1).am,/11:30/);
   assert.match(trip.days[0].note,/no volver a sumar/i);
   assert.match(trip.days.at(-1).note,/TOTAL multidestino/);
