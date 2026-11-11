@@ -48,8 +48,8 @@
     "weatherWhy": "En enero el Caribe está generalmente más seco, pero Santa Marta puede presentar viento y oleaje; Medellín es templada por altitud. Clima histórico, no pronóstico.",
     "why": "Arte urbano, montañas, café, playas de selva y arquitectura colonial sin desvíos por Barranquilla."
   },
-  "intro": "El recorrido comienza en Medellín, entre los murales de Comuna 13, las esculturas de Plaza Botero, el Museo de Antioquia y el ambiente de Provenza. Desde allí descubres los zócalos de Guatapé y las vistas de la Piedra del Peñol. En Santa Marta conoces su centro histórico antes de adentrarte en Minca, entre cafetales y cascadas, y contemplar la bahía de Taganga. La naturaleza toma protagonismo en Tayrona, con senderos de selva y la costa de Cabo San Juan. Finalmente, Cartagena reúne las fortificaciones del Castillo de San Felipe, las calles de San Diego, las plazas de la Ciudad Amurallada y el arte de Getsemaní. El Caribe completa la experiencia con una navegación por las Islas del Rosario y snorkel entre arrecifes y una avioneta hundida.",
-  "introShort": "Arte urbano en Medellín y calles coloridas de Guatapé; cafetales y paisajes tropicales en Minca, Taganga y Tayrona. Cartagena aporta arquitectura colonial, fortalezas y gastronomía, antes de una excursión de snorkel por las Islas del Rosario.",
+  "intro": "El viaje empieza en Medellín con el ambiente de Provenza y un recorrido guiado por los murales de Comuna 13, que también permite conocer el Metrocable. El domingo continúa en Pueblito Paisa; Plaza Botero y el Museo de Antioquia son visitas opcionales si alcanza el tiempo. En Guatapé recorres sus zócalos, admiras la Piedra del Peñol, navegas por el embalse y visitas una granja de llamas. Después llegan Santa Marta y las montañas cafeteras de Minca, la bahía de Taganga y los senderos de Tayrona hasta Cabo San Juan. Cartagena reúne el Castillo de San Felipe, San Diego, la Ciudad Amurallada y Getsemaní, con una posible salida de snorkel hacia las Islas del Rosario.",
+  "introShort": "Arte urbano y Metrocable en Medellín, zócalos de Guatapé y paseo en barco por el embalse. Después, cafetales de Minca, la bahía de Taganga, los senderos de Tayrona y las calles coloniales de Cartagena, con excursión marítima prevista hacia las Islas del Rosario.",
   "introHighlights": [
     "Medellín",
     "Comuna 13",
@@ -64,15 +64,15 @@
   ],
   "solo": "Viaje para una persona, 12 días y 11 noches. Se priorizan habitaciones privadas con baño propio, cancelación flexible y traslados cómodos.",
   "flight": "Copa Airlines Económica Basic seleccionada, PENDIENTE DE COMPRA, cotizada directamente en Copa el 11/11/2026: $9,652 MXN por 1 adulto en multidestino. Ida vie. 15/01: CM195 MEX 05:55→PTY 10:38, escala 2 h 17 min; CM654 PTY 12:55→MDE 14:15. Regreso mar. 26/01: CM365 CTG 15:05→PTY 16:22, escala 5 h 05 min; CM194 PTY 21:27→MEX 00:15 del mié. 27/01. Cabina 10 kg y artículo personal incluidos, sin maleta documentada; selección de asiento con cargo. Alternativa Copa $10,851 con mismo vuelo de ida y regreso CM866 a MEX 22:25 del martes 26. Vuelo interno Avianca AV9446 MDE→SMR lunes 18/01 12:00–13:15, COP 217,580 (≈ $1,259 MXN), candidato sin comprar.",
-  "local": "Medellín–Santa Marta se cubre en vuelo doméstico. Para recorridos urbanos de Medellín, utilizar taxis por aplicación o transporte autorizado y caminar solo en zonas apropiadas; los tours organizados incluyen traslados cuando así lo indique el operador. En Santa Marta, coordinar transporte para Minca y Taganga; usar lancha autorizada a Playa Grande. El traslado a Tayrona depende del alojamiento elegido. El Zaino es el acceso terrestre previsto a Cabo San Juan, pero se debe verificar expresamente que estén habilitados El Zaino, Cañaveral y Arrecifes. Para llegar a Cartagena, comparar Marsol desde El Zaino con transporte privado desde el alojamiento.",
+  "local": "Medellín–Santa Marta se cubre en vuelo doméstico pendiente de compra. Guatapé incluye autobús de ida/vuelta desde Parque de El Poblado, con encuentro a las 06:50 del 16/01; no sumar otro traslado. Comuna 13: Plan A desde estación Poblado incluye metro, Metrocable y autobús; Plan B desde estación San Javier exige traslado propio desde Moabi; no confundir Parque de El Poblado con estación Poblado. Entre actividades urbanas, utilizar taxi o vehículo por aplicación cuando resulte adecuado. En Santa Marta, coordinar transporte para Minca y Taganga y usar lancha autorizada a Playa Grande. El traslado a Tayrona depende del alojamiento elegido. Confirmar que estén habilitados El Zaino, Cañaveral y Arrecifes. Para Cartagena, comparar Marsol desde El Zaino y transporte privado desde el alojamiento.",
   "experiences": [
     {
       "city": "Medellín",
-      "description": "Recorre los murales de Comuna 13 con guía, contempla las esculturas de Plaza Botero y la colección del Museo de Antioquia, visita Parque de Bolívar y disfruta Pueblito Paisa y Provenza. Prueba bandeja paisa y arepas antioqueñas."
+      "description": "Recorre Comuna 13 con guía, arte urbano, gastronomía local y paseo en Metrocable si se confirma el tour prioritario. Continúa por Pueblito Paisa y Provenza. Plaza Botero y Parque de Bolívar son opcionales; el Museo de Antioquia requiere sustituir otra visita. Prueba bandeja paisa y arepas antioqueñas."
     },
     {
       "city": "Guatapé",
-      "description": "Descubre los coloridos zócalos de Guatapé y, si el clima y tu condición física lo permiten, sube la Piedra del Peñol para contemplar el embalse. Aprovecha el almuerzo para probar trucha o un plato tradicional antioqueño."
+      "description": "Visita los zócalos de Guatapé, contempla la Piedra del Peñol y navega unos 40 minutos por el embalse en el tour seleccionado de GetYourGuide, que incluye desayuno, almuerzo y parada en una granja de llamas u otros animales. Subir la Piedra es opcional y cuesta COP 35,000 (≈ $203 MXN) en efectivo."
     },
     {
       "city": "Santa Marta",
@@ -751,7 +751,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "PLAN A · ECOLODGE EL ZAINO 21–23/01. Estimación central de 11 conceptos para un viajero: taxis aeropuertos MDE↔Moabi $1,528; taxis urbanos Medellín $984; aeropuerto SMR→Bahía Suite $266; Minca ida/vuelta, finca y cascadas $718; Taganga y lancha Playa Grande $405; Santa Marta→El Zaino taxi $799; transporte interno Tayrona $203; Marsol El Zaino→Cartagena $752; terminal Marsol→Cabrero House $116; taxis urbanos Cartagena $650 (tres taxis del día 24 más desplazamientos del 23, 25 y 26; provisión aproximada); Cabrero House→CTG $116. Total revisado ≈$6,537 MXN (estimación anterior ≈$6,176 más $361 de movilidad urbana en Cartagena); provisión presupuestada $7,000 MXN, margen ≈$463. Valores aproximados calculados a COP/MXN de referencia 03/11/2026, NO tarifas confirmadas enero 2027. Incluye traslado aeropuerto a hospedajes y movilidad auxiliar, excluye vuelos, transporte ya incluido en tours de Guatapé y Rosario, transporte desde/hacia domicilio en CDMX y vehículo privado exclusivo El Zaino→Cartagena. PLAN B Cabo San Juan→Barranquilla queda pendiente de cotización y NO incluido."
+      "notes": "PLAN A · ECOLODGE EL ZAINO 21–23/01. Estimación central de 11 conceptos para un viajero: taxis aeropuertos MDE↔Moabi $1,528; taxis urbanos Medellín $984; aeropuerto SMR→Bahía Suite $266; Minca ida/vuelta, finca y cascadas $718; Taganga y lancha Playa Grande $405; Santa Marta→El Zaino taxi $799; transporte interno Tayrona $203; Marsol El Zaino→Cartagena $752; terminal Marsol→Cabrero House $116; taxis urbanos Cartagena $650 (tres taxis del día 24 más desplazamientos del 23, 25 y 26; provisión aproximada); Cabrero House→CTG $116. Total revisado ≈$6,537 MXN (estimación anterior ≈$6,176 más $361 de movilidad urbana en Cartagena); provisión presupuestada $7,000 MXN, margen ≈$463. Valores aproximados calculados a COP/MXN de referencia 03/11/2026, NO tarifas confirmadas enero 2027. Incluye traslado aeropuerto a hospedajes y movilidad auxiliar, excluye vuelos, transporte ya incluido en tours de Guatapé y Rosario, transporte desde/hacia domicilio en CDMX y vehículo privado exclusivo El Zaino→Cartagena. PLAN B Cabo San Juan→Barranquilla queda pendiente de cotización y NO incluido. El tour de Guatapé ya incluye bus desde/hasta El Poblado y Plan A de Comuna 13 incluye metro, Metrocable y autobús: el rubro de taxis urbanos de Medellín es provisión para trayectos independientes y no debe duplicar esos servicios; el Plan B exige traslado propio a San Javier."
     },
     {
       "id": "food-budget",
@@ -762,7 +762,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión $6,000 MXN para 12 días; desayunos incluidos donde se indique (Moabi NO incluye desayuno en tarifa actual). Evitar duplicar almuerzos de tours y contemplar Cartagena como destino con opciones gastronómicas más caras."
+      "notes": "Provisión $6,000 MXN para 12 días; desayunos incluidos donde se indique (Moabi NO incluye desayuno en tarifa actual). Evitar duplicar almuerzos de tours y contemplar Cartagena como destino con opciones gastronómicas más caras. El tour Guatapé del 16/01 incluye desayuno y almuerzo; el Plan A de Comuna 13 anuncia arepa, bebida y café, no un almuerzo completo. Mantener el presupuesto como bolsa estimada."
     },
     {
       "id": "activity-budget",
@@ -773,7 +773,7 @@
         "currency": "MXN"
       },
       "status": "estimated",
-      "notes": "Provisión global: tour Guatapé GetYourGuide/Viaja Medellín SELECCIONADO sin reserva para 16/01/2027, $790.14 MXN en modalidad con encuentro 06:50; ascenso opcional a Piedra del Peñol COP 35,000 (≈ $203 MXN), ambos DENTRO de esta provisión y no sumados por separado. Resto pendiente de recotización: Comuna 13, Museo de Antioquia, tour en bicicleta por Santa Marta, café La Victoria, Marinka, entrada a Tayrona con seguro obligatorio e Islas del Rosario (Corales Cartagena: precio público desde COP 261,500 incluyendo impuesto portuario, ≈$1,513 MXN; tarifa de enero de 2027 no confirmada). La incorporación de Islas del Rosario puede hacer insuficiente esta bolsa de $5,000 MXN: NO afirmar que ya está íntegramente cotizada. Tarifas y cupos 2027 pendientes."
+      "notes": "Provisión global: tour Guatapé GetYourGuide/Viaja Medellín SELECCIONADO sin reserva para 16/01/2027, $790.14 MXN en modalidad con encuentro 06:50; ascenso opcional a Piedra del Peñol COP 35,000 (≈ $203 MXN), ambos DENTRO de esta provisión y no sumados por separado. Comuna 13: PLAN A GetYourGuide con Metrocable $376.16 MXN solo como referencia del 27/12/2026, sin disponibilidad para el 17/01/2027; PLAN B Civitatis con Metrocable $480.14 MXN orientativos; PLAN C GetYourGuide Grafitis, historia y sabor $411.43 MXN visto para 17/01/2027. Solo un tour se contrataría; este gasto está dentro de la provisión. Resto pendiente de recotización: Museo de Antioquia (opcional), tour en bicicleta por Santa Marta, café La Victoria, Marinka, entrada a Tayrona con seguro obligatorio e Islas del Rosario (Corales Cartagena: precio público desde COP 261,500 incluyendo impuesto portuario, ≈$1,513 MXN; tarifa de enero de 2027 no confirmada). La incorporación de Islas del Rosario puede hacer insuficiente esta bolsa de $5,000 MXN: NO afirmar que ya está íntegramente cotizada. Tarifas y cupos 2027 pendientes salvo cotización Guatapé para 16/01 y captura del Plan C de Comuna 13 para 17/01; no son reservas."
     },
     {
       "id": "other-budget",
@@ -1224,7 +1224,7 @@
         11.31,
         -73.93
       ],
-      "kind": "Parque / alojamiento cercano (no coordenada hotel)",
+      "kind": "Parque Tayrona (alojamiento en sector El Zaino)",
       "base": true,
       "optional": false,
       "order": 6
@@ -1443,7 +1443,7 @@
       "title": "Estilo de viaje",
       "badge": "12 días · 4 alojamientos",
       "tone": "green",
-      "text": "12 días y 11 noches para una persona: Medellín, Santa Marta, Tayrona y Cartagena. Guatapé, Minca y Taganga son excursiones; el itinerario combina visitas guiadas, caminatas y tiempo para recorrer los centros históricos. Los alojamientos permanecen sin reservar."
+      "text": "12 días y 11 noches para una persona entre Medellín, Santa Marta, Tayrona y Cartagena. Guatapé se visita en una excursión guiada de día completo; Comuna 13 y Metrocable son el plan principal aún pendiente de disponibilidad. Pueblito Paisa es fijo y el centro de Medellín opcional. Alojamiento y tours sin reservar."
     },
     {
       "id": "language",
@@ -1502,8 +1502,8 @@
       "url": "https://sendahotels.com/en/hotel/senda-koguiwa/bedrooms/standard-room/"
     },
     {
-      "label": "Guatapé · tour con inclusiones y precio",
-      "url": "https://toursguatape.com/en/producto/full-day-guatape/"
+      "label": "Guatapé · tour GetYourGuide seleccionado para 16/01/2027 ($790.14 MXN, sin reservar)",
+      "url": "https://www.getyourguide.com/es-es/medellin-l1215/medellin-guatape-el-penol-barco-desayuno-comida-y-llamas-t162638/"
     },
     {
       "label": "Café La Victoria 1892 · precio y horarios oficiales",
@@ -1560,14 +1560,26 @@
     {
       "label": "Museo Histórico de Cartagena · horarios lunes a sábado y entrada",
       "url": "https://muhca.gov.co/visita"
+    },
+    {
+      "label": "Comuna 13 · Plan A GetYourGuide con Metrocable (disponibilidad 17/01/2027 pendiente)",
+      "url": "https://www.getyourguide.com/es-es/medellin-l1215/medellin-tour-de-grafitis-por-la-comuna-13-comida-callejera-y-teleferico-t420286/"
+    },
+    {
+      "label": "Comuna 13 · Plan B Civitatis con Metrocable (respaldo)",
+      "url": "https://www.civitatis.com/mx/medellin/tour-grafiti-comuna-13-metrocable/"
+    },
+    {
+      "label": "Comuna 13 · Plan C GetYourGuide Grafitis, historia y sabor (17/01, según captura)",
+      "url": "https://www.getyourguide.com/es-es/medellin-l1215/grafitis-historia-y-sabores-un-recorrido-por-la-comuna-13-t471700/"
     }
   ],
-  "sourceNote": "Cotización DIRECTA Copa del 11/11/2026, Económica Basic $9,652 MXN, opción seleccionada sin comprar: CM195+CM654 MEX–PTY–MDE 15/01 (llega 14:15) y CM365+CM194 CTG–PTY–MEX 26/01 (llega 00:15 del 27/01); escalas 2 h 17 min y 5 h 05 min. Incluye cabina 10 kg y artículo personal. Alternativa no seleccionada $10,851 MXN con CM866 y llegada martes 26 a las 22:25. Precios observados, disponibilidad y cargos sujetos a confirmación en pago. Antiguo itinerario de Google Flights CM149/CM397 y CM365/CM188 por $9,023 no era reproducible en Copa y NO se usa para presupuesto.",
+  "sourceNote": "Cotización DIRECTA Copa del 11/11/2026, Económica Basic $9,652 MXN, opción seleccionada sin comprar: CM195+CM654 MEX–PTY–MDE 15/01 (llega 14:15) y CM365+CM194 CTG–PTY–MEX 26/01 (llega 00:15 del 27/01); escalas 2 h 17 min y 5 h 05 min. Incluye cabina 10 kg y artículo personal. Alternativa no seleccionada $10,851 MXN con CM866 y llegada martes 26 a las 22:25. Precios observados, disponibilidad y cargos sujetos a confirmación en pago. Antiguo itinerario de Google Flights CM149/CM397 y CM365/CM188 por $9,023 no era reproducible en Copa y NO se usa para presupuesto. Tour Guatapé GetYourGuide para sábado 16/01/2027: $790.14 MXN en opción 06:50, español, no reservado; subida a Piedra COP 35,000 (≈ $203 MXN), efectivo. Comuna 13 GetYourGuide Plan A con Metrocable: horario/precio $376.16 MXN observados el 27/12/2026, sin calendario abierto para 17/01/2027. Plan B Civitatis y Plan C GetYourGuide documentados en «Reservaciones importantes»; precios de referencia sin compra.",
   "budgetRange": [
     44299,
     61299
   ],
-  "budgetNote": "Presupuesto integral preliminar (no cotización final pagable): $50,381 MXN para una persona, 12 días y 11 noches, con Copa A de $9,652 (CM195 + CM654 / CM365 + CM194), llegada a MEX 00:15 del miércoles 27. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Bahía Suite Santa Marta 3 noches $2,069 (Booking flexible, sin reservar); Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres, aeroportuarios, urbanos y lancha $7,000 (Plan A ecolodge, estimación revisada ≈$6,537 con margen ≈$463); alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $50,381 MXN; rango orientativo $44,299–61,299 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $10,851 es alternativa excluyente, no se suma. Moabi, Bahía Suite y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Tayrona permanece estimado. Casa Verde ($6,997 MXN no reembolsable) es segunda opción excluyente, no sumada. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. La excursión a Islas del Rosario del 25 de enero se ha elegido, pero su precio aún NO está confirmado; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $48,235 MXN, sin recalcular traslados/desayunos).",
+  "budgetNote": "Presupuesto integral preliminar (no cotización final pagable): $50,381 MXN para una persona, 12 días y 11 noches, con Copa A de $9,652 (CM195 + CM654 / CM365 + CM194), llegada a MEX 00:15 del miércoles 27. Avianca MDE–SMR COP 217,580 (≈ $1,259 MXN al tipo de cambio de referencia 03/11/2026). Moabi Hotel Medellín 3 noches $4,768, tarifa flexible cotizada en Booking (06/11/2026), sin reservar; Bahía Suite Santa Marta 3 noches $2,069 (Booking flexible, sin reservar); Senda Koguiwa Tayrona 2 noches $5,200; Cabrero House Boutique Cartagena 3 noches $5,933 (Booking 06/11/2026, sin reservar); traslados terrestres, aeroportuarios, urbanos y lancha $7,000 (Plan A ecolodge, estimación revisada ≈$6,537 con margen ≈$463); alimentación $6,000; excursiones y entradas $5,000; seguro y contingencias $3,500. TOTAL $50,381 MXN; rango orientativo $44,299–61,299 MXN. Equipaje solo de mano, sin maleta documentada y sin cargo para ello. Copa B $10,851 es alternativa excluyente, no se suma. Moabi, Bahía Suite y Cabrero House tienen cotizaciones para las fechas exactas, sin reservar; Tayrona permanece estimado. Casa Verde ($6,997 MXN no reembolsable) es segunda opción excluyente, no sumada. Desayuno Moabi no incluido; precio final en COP sujeto a tipo de cambio e impuestos. Corales Cartagena es la primera opción para investigar Islas del Rosario del 25 de enero, NO reservada ni cotizada para esa fecha; la bolsa provisional de actividades puede ser insuficiente. Las dos variantes de Tayrona son excluyentes y la opción camping + Barranquilla no está presupuestada. Segunda opción de Cartagena: El Viajero #2 $3,787 MXN, alternativa excluyente (escenario indicativo $48,235 MXN, sin recalcular traslados/desayunos). Los $5,000 de actividades ya incluyen como provisión el tour Guatapé $790.14 MXN (16/01/2027) y la entrada opcional a la Piedra COP 35,000 (≈ $203 MXN). Para Comuna 13, Plan A GetYourGuide $376.16 MXN se observó para 27/12/2026, NO para el 17/01/2027; Plan B Civitatis $480.14 de referencia y Plan C GetYourGuide $411.43 para 17/01 según captura. Los tres son excluyentes, no se adicionan al presupuesto por separado.",
   "placeDescriptions": {
     "col27-botero": "Plaza al aire libre con esculturas monumentales de Fernando Botero, donde el arte contemporáneo convive con la arquitectura del centro de Medellín.",
     "col27-provenza": "Calles arboladas, restaurantes y terrazas convierten este sector de El Poblado en un lugar animado para terminar la jornada.",
@@ -1615,7 +1627,7 @@
   "railCurrencyNote": null,
   "heroEyebrow": null,
   "climate": "En enero Medellín suele registrar máximas medias cercanas a 29 °C y mínimas próximas a 18 °C, mientras Santa Marta promedia máximas de 33 °C y mínimas cercanas a 22 °C. Cartagena también es cálida y húmeda. Son normales históricas, no pronósticos para 2027. La costa suele estar más seca, pero los vientos y el oleaje pueden dificultar lanchas de Taganga y las excursiones a islas. En Minca y Tayrona, comprobar caminos, senderos y avisos de las autoridades.\n\n*Qué llevar:* Ropa ligera y transpirable, una capa delgada para noches de Medellín y Minca, calzado cerrado antideslizante para Tayrona, traje de baño, gorra, protector solar, repelente y agua suficiente. Usar chaleco en embarcaciones autorizadas y evitar nadar en playas con corrientes peligrosas.\n\n*Horas de luz:* En estas latitudes enero ofrece aproximadamente 11 h 30 min a 12 h de luz; los horarios exactos de salida y puesta dependen de la ciudad y fecha y se reconfirmarán para las actividades al atardecer. Para Cabo San Juan, reservar margen amplio para regresar antes del cierre del parque.",
-  "mapPointsNote": "Los pines son referencias turísticas regionales y no sustituyen la dirección de cada hotel. Especialmente Tayrona señala la zona general del parque: Senda Koguiwa y la entrada El Zaino deben localizarse con sus enlaces Google Maps antes de contratar traslados. Taganga es visita prevista; Playa Grande depende del mar. El punto de Islas del Rosario representa el archipiélago, no una isla, club ni muelle de llegada seleccionados.",
+  "mapPointsNote": "Los puntos del mapa muestran ciudades y excursiones del recorrido, no las puertas de los alojamientos. En Tayrona, el pin corresponde al parque y no a Senda Koguiwa ni a la entrada El Zaino: localizar ambas direcciones antes del traslado. Taganga es visita prevista y Playa Grande depende del estado del mar. El pin de Islas del Rosario representa el archipiélago, no un muelle de llegada definido.",
   "coverSlides": [
     "col27-cabo-san-juan",
     "col27-comuna13",
