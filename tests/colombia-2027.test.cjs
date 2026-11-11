@@ -152,8 +152,9 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   }
 
   const block1=['col27-botero','col27-provenza','col27-penol','col27-guatape','col27-comuna13','col27-escaleras','col27-pueblito'];
-  assert.deepEqual(trip.days.slice(0,3).map(d=>d.places.length),[1,2,3]);
+  assert.deepEqual(trip.days.slice(0,3).map(d=>d.places.length),[1,2,4]);
   assert.deepEqual(trip.days[2].optionalPlaces,['col27-botero'],'Plaza Botero queda opcional el domingo, no en viernes');
+  assert.ok(trip.days[2].places.includes('col27-botero'),'La fotografía opcional debe estar en la galería del domingo');
   assert.equal(new Set(block1).size,block1.length);
   for(const key of block1){
     assert.ok(places[key], 'Fotografía faltante: '+key);
@@ -224,7 +225,7 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
 });
 test('Colombia: auditoría D final de 27 imágenes, portada, créditos y visitas opcionales',()=>{
   const catalog=JSON.parse(fs.readFileSync('data/places.json','utf8'));
-  const dayKeys=trip.days.flatMap(day=>[...(day.places||[]),...(day.optionalPlaces||[])]);
+  const dayKeys=trip.days.flatMap(day=>day.places||[]);
   assert.equal(dayKeys.length,27);
   assert.equal(new Set(dayKeys).size,27,'No duplicar fotografías en distintas jornadas');
   const catalogKeys=Object.keys(catalog).filter(key=>key.startsWith('col27-'));
@@ -242,7 +243,7 @@ test('Colombia: auditoría D final de 27 imágenes, portada, créditos y visitas
     const wordCount=trip.placeDescriptions[key]?.trim().split(/\s+/).length||0;
     assert.ok(wordCount>=15&&wordCount<=30,'Descripción fuera de 15–30 palabras: '+key);
   }
-  assert.deepEqual(trip.days.map(day=>day.places.length),[1,2,3,2,2,2,2,3,0,6,3,0]);
+  assert.deepEqual(trip.days.map(day=>day.places.length),[1,2,4,2,2,2,2,3,0,6,3,0]);
   assert.deepEqual(trip.days[2].optionalPlaces,['col27-botero']);
   assert.deepEqual(trip.days[10].optionalPlaces,['col27-palacio-inquisicion','col27-convento-popa'],
     'Las fotos del Museo Histórico y La Popa deben seguir siendo alternativas por mal tiempo');
