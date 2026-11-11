@@ -41,7 +41,7 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   assert.match(trip.planningDetails,/Sin noche añadida a Cartagena/);
   const medellinText=[trip.days[0],trip.days[1],trip.days[2]].map(d=>d.title+' '+d.am+' '+d.pm+' '+d.night).join(' ');
   for(const term of ['Guatapé','Comuna 13','Plaza Botero','Bolívar','Provenza','Pueblito Paisa']) assert.ok(medellinText.includes(term), 'Falta prioridad Medellín: '+term);
-  assert.match(trip.days[1].am,/tour organizado|excursión organizada/);
+  assert.match(trip.days[1].am,/Viaja Medellín/);
   assert.match(trip.days[4].am,/finca cafetera|tour del café/i);
   assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>/Requisitos sanitarios/.test(x.title)));
   assert.ok(trip.hotels.some(h=>h.id==='sm-bahia-suite' && h.links?.some(x=>x.url.includes('martienda-deluxe-centro-historico')) && h.links?.some(x=>x.url.includes('casa-verde'))));
@@ -93,6 +93,18 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.match(trip.days[0].am,/CM195.*CM654/);
   assert.match(trip.days[0].pm,/14:15/);
   assert.match(trip.days[0].night,/Provenza/);
+  assert.match(trip.days[1].am,/06:50/);
+  assert.match(trip.days[1].pm,/barco/);
+  assert.match(trip.days[1].pm,/llamas/);
+  assert.match(trip.days[1].night,/Moabi/);
+  assert.match(trip.days[1].mobility,/Parroquia San José|iglesia de San José/);
+  assert.match(trip.days[1].note,/790\.14/);
+  assert.match(trip.days[1].note,/35,000/);
+  assert.match(trip.days[1].note,/PENDIENTE DE RESERVA/);
+  assert.ok(trip.days[1].mobilityLinks.some(x=>x.url.includes('getyourguide.com') && x.url.includes('t162638')));
+  assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>x.title.includes('Guatapé') && x.description.includes('$790.14 MXN') && x.description.includes('NO RESERVADO')));
+  assert.match(trip.expenses.find(x=>x.id==='activity-budget').notes,/790\.14/);
+  assert.equal(trip.expenses.find(x=>x.id==='activity-budget').cost.amount,5000,'Tour dentro de bolsa de actividades, sin duplicarlo');
   assert.doesNotMatch(trip.days[0].pm,/visitar Plaza Botero|visitar Museo de Antioquia/i);
   assert.match(trip.days[2].pm,/Plaza Botero/);
   assert.match(trip.days[2].pm,/OPCIONAL/);
