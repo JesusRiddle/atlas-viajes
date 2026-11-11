@@ -286,3 +286,19 @@ Este apartado **sustituye cualquier escenario anterior de 14–26 de enero** des
 **Integridad de interfaz:** actualizado `work`, `start`, `days`, `bases`, `hotels[].checkIn/out`, `majorTransport` y sus `day`/refs, `expenses`, `budgetPreliminary`, `budgetNote`, `intro`, `introShort`, `experiences`, `reservations`, `practicalIndicators`, `planningDetails` y pruebas. Los textos usan el formato editorial conciso de Atlas: el «itinerario platicadito» solo se usa en el chat a solicitud explícita.
 
 **Riesgo por confirmar:** si la opción B llega después de las 14:00, podría no caber Plaza Botero y Parque de Bolívar el viernes. En ese caso el domingo deberá combinar las dos plazas, Comuna 13 y Pueblito Paisa sin visitar museos; evaluar operador con transporte y confirmar horas. No tratar como garantizada toda la lista sin revisar el ritmo del domingo. Fotografías y cierre D siguen pendientes. PR #10 sin merge.
+
+
+## DECISIÓN VIGENTE · Copa seleccionada y llegada diurna (11/11/2026)
+
+**Esta sección prevalece sobre los registros históricos de vuelos A/B anteriores.** Escenario 15–26/01/2027: 12 días, 11 noches en Colombia. No se compraron vuelos ni hoteles. Cotización observada directamente en Copa, Económica Basic por **$9,652 MXN**, 1 persona, artículo personal y equipaje de cabina hasta 10 kg (sin documentada, asiento preseleccionado con cargo).
+
+- **Ida viernes 15/01:** CM195 MEX 05:55 → PTY 10:38; conexión 2 h 17 min; CM654 PTY 12:55 → MDE 14:15. Traslado autorizado a Moabi, check-in estimado 16:15–17:15, paseo por Provenza y cena si hay energía. No programar museo ni centro como garantizados ese viernes.
+- **Sábado 16/01:** Guatapé y Piedra del Peñol sin cambios.
+- **Domingo 17/01:** Comuna 13 y Pueblito Paisa; Plaza Botero / Parque de Bolívar solo si caben de día. Museo de Antioquia es alternativa sustituyendo otra actividad, no visita garantizada.
+- **Lunes 18/01:** Avianca MDE→SMR 12:00–13:15 sigue como candidato; sin modificación del resto del viaje.
+- **Regreso martes 26/01:** CM365 CTG 15:05 → PTY 16:22; escala 5 h 05 min; CM194 PTY 21:27 → **MEX 00:15 del miércoles 27/01**. No añadir noche de hotel en Colombia por la llegada en México.
+- **Alternativa no elegida:** Copa $10,851, misma ida y regreso con CM866, llegada a MEX 22:25 del martes 26.
+
+**Presupuesto reconciliado:** vuelo internacional $9,652 (antes $9,023 no reservable desde Google Flights). Total central **$50,381 MXN** (antes $49,752); rango orientativo **$44,299–61,299 MXN**. No sumar la alternativa excluyente. El viaje sigue marcado como presupuestado preliminarmente, no comprado. El alojamiento de Moabi permanece 15–18/01, tres noches. No se modificaron los demás días ni los demás viajes.
+
+**QA pendiente de ejecución local:** pruebas automatizadas de regresión y renderización Desktop/Mobile; no se ha hecho merge ni despliegue. Revisar prioritariamente la presentación del cambio de fecha del vuelo de retorno (27/01) y la distribución del domingo 17.
