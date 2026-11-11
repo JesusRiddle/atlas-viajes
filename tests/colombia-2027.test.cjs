@@ -114,8 +114,8 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.match(trip.experiences[1].description,/barco|navega/);
   assert.match(trip.local,/06:50/);
   assert.match(trip.practicalIndicators[0].text,/pendiente de disponibilidad/);
-  assert.match(trip.budgetNote,/790\\.14/);
-  assert.match(trip.budgetNote,/376\\.16/);
+  assert.match(trip.budgetNote,/790\.14/);
+  assert.match(trip.budgetNote,/376\.16/);
   assert.match(trip.budgetPreliminary.notes,/Guatapé GetYourGuide/);
   assert.match(trip.expenses.find(x=>x.id==='ground-mobility').notes,/no debe duplicar/);
   assert.ok(trip.sources.some(x=>x.url.includes('t162638')));
