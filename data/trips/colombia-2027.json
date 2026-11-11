@@ -805,7 +805,10 @@
                 "currency": "MXN"
               },
               "baggage": {
-                "personalItem": true,
+                "personalItem": {
+                  "pieces": 1,
+                  "weightKg": null
+                },
                 "cabin": {
                   "pieces": 1,
                   "weightKg": 10
@@ -893,7 +896,10 @@
                 "currency": "MXN"
               },
               "baggage": {
-                "personalItem": true,
+                "personalItem": {
+                  "pieces": 1,
+                  "weightKg": null
+                },
                 "cabin": {
                   "pieces": 1,
                   "weightKg": 10
