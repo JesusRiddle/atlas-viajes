@@ -105,6 +105,27 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>x.title.includes('Guatapé') && x.description.includes('$790.14 MXN') && x.description.includes('NO RESERVADO')));
   assert.match(trip.expenses.find(x=>x.id==='activity-budget').notes,/790\.14/);
   assert.equal(trip.expenses.find(x=>x.id==='activity-budget').cost.amount,5000,'Tour dentro de bolsa de actividades, sin duplicarlo');
+  assert.match(trip.intro,/Metrocable/,'Panorama debe recoger tour Comuna 13 elegido');
+  assert.match(trip.intro,/barco|embalse/,'Panorama debe recoger barco Guatapé');
+  assert.match(trip.intro,/opcionales/,'Panorama no puede prometer el Museo de Antioquia');
+  assert.match(trip.introShort,/Metrocable/);
+  assert.match(trip.experiences[0].description,/opcional/i,'Experiencias no puede prometer Plaza Botero y Museo');
+  assert.match(trip.experiences[1].description,/llamas/);
+  assert.match(trip.experiences[1].description,/barco|navega/);
+  assert.match(trip.local,/06:50/);
+  assert.match(trip.practicalIndicators[0].text,/pendiente de disponibilidad/);
+  assert.match(trip.budgetNote,/790\\.14/);
+  assert.match(trip.budgetNote,/376\\.16/);
+  assert.match(trip.budgetPreliminary.notes,/Guatapé GetYourGuide/);
+  assert.match(trip.expenses.find(x=>x.id==='ground-mobility').notes,/no debe duplicar/);
+  assert.ok(trip.sources.some(x=>x.url.includes('t162638')));
+  assert.ok(trip.sources.some(x=>x.url.includes('t420286')));
+  assert.ok(trip.sources.some(x=>x.url.includes('tour-grafiti-comuna-13-metrocable')));
+  assert.ok(trip.sources.some(x=>x.url.includes('t471700')));
+  assert.doesNotMatch(trip.mapPointsNote,/referencias turísticas regionales/);
+  assert.ok(trip.tips.some(x=>x.includes('Guatapé') && x.includes('06:50')));
+  assert.ok(trip.tips.some(x=>x.includes('Comuna 13') && x.includes('Plan B')));
+
   assert.doesNotMatch(trip.days[0].pm,/visitar Plaza Botero|visitar Museo de Antioquia/i);
   assert.match(trip.days[2].am,/PLAN A/);
   assert.match(trip.days[2].am,/NO confirmado/);
