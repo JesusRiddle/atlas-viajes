@@ -36,12 +36,12 @@ test('Colombia: itinerario consecutivo, noches y alojamientos sin duplicación',
   }
   assert.match(trip.days[5].note,/robos/);
   assert.match(trip.days[5].note,/chaleco salvavidas/);
-  assert.match(trip.days[0].note,/fiebre amarilla/);
+  assert.match(trip.days[0].note,/Salud previa/);
   assert.match(trip.planningDetails,/12 días, 11 noches/);
   assert.match(trip.planningDetails,/Sin noche añadida a Cartagena/);
   const medellinText=[trip.days[0],trip.days[1],trip.days[2]].map(d=>d.title+' '+d.am+' '+d.pm+' '+d.night).join(' ');
   for(const term of ['Guatapé','Comuna 13','Plaza Botero','Bolívar','Provenza','Pueblito Paisa']) assert.ok(medellinText.includes(term), 'Falta prioridad Medellín: '+term);
-  assert.match(trip.days[1].am,/tour organizado|excursión organizada/);
+  assert.match(trip.days[1].am,/Viaja Medellín/);
   assert.match(trip.days[4].am,/finca cafetera|tour del café/i);
   assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>/Requisitos sanitarios/.test(x.title)));
   assert.ok(trip.hotels.some(h=>h.id==='sm-bahia-suite' && h.links?.some(x=>x.url.includes('martienda-deluxe-centro-historico')) && h.links?.some(x=>x.url.includes('casa-verde'))));
@@ -55,35 +55,115 @@ test('Colombia: vuelos válidos, referencias y fechas sin doble contabilizar',()
   assert.ok(trip.majorTransport.every(t=>ids.has(t.budgetIncludedIn)));
   assert.equal(budget.summary(trip).issues.length,0);
   assert.equal(budget.summary(trip).pending.length,0);
-  assert.equal(budget.summary(trip).knownTotalMXN,49752);
+  assert.equal(budget.summary(trip).knownTotalMXN,50381);
   const estimate=budget.planningEstimate(trip);
-  assert.equal(estimate.totalMXN,49752);
-  assert.equal(estimate.low,43670);
-  assert.equal(estimate.high,60670);
+  assert.equal(estimate.totalMXN,50381);
+  assert.equal(estimate.low,44299);
+  assert.equal(estimate.high,61299);
   assert.equal(trip.majorTransport[0].selectedOption,'A');
-  assert.equal(budget.summary(trip,{'flight-international':{option:'B'}}).knownTotalMXN,50448);
+  assert.equal(budget.summary(trip,{'flight-international':{option:'B'}}).knownTotalMXN,51580);
   assert.equal(trip.expenses.filter(x=>x.category==='flight').length,2);
   assert.equal(trip.expenses.filter(x=>x.category==='lodging').reduce((a,x)=>a+x.cost.amount,0),17970);
-  assert.equal(trip.expenses.reduce((a,x)=>a+x.cost.amount,0),49752);
+  assert.equal(trip.expenses.reduce((a,x)=>a+x.cost.amount,0),50381);
   assert.ok(!trip.expenses.some(x=>x.id==='luggage-allowance'));
-  assert.equal(trip.majorTransport[0].options[0].journeys[1].segments[1].flightNumber,'CM 188');
-  assert.match(trip.majorTransport[0].options[0].journeys[1].segments[1].arrival,/22:05/);
-  assert.equal(trip.majorTransport[0].options[0].links.length,1,'El candidato A debe enlazar su selección actualizada');
-  assert.match(trip.majorTransport[0].options[0].links[0].url,/TTIDMTg4/,'El enlace A debe contener el vuelo CM188');
+  assert.equal(trip.majorTransport[0].options[0].journeys[1].segments[1].flightNumber,'CM 194');
+  assert.equal(trip.majorTransport[0].options[0].journeys[1].segments[1].arrival,'2027-01-27T00:15:00-06:00');
+  assert.equal(trip.majorTransport[0].options[0].links.length,1,'La opción A debe enlazar Copa oficial');
+  assert.match(trip.majorTransport[0].options[0].links[0].url,/copaair\.com/,'No usar una redirección de Google Flights que no permite comprar');
   const backup=budget.planningEstimate({...trip,majorTransport:trip.majorTransport.map(t=>t.id==='flight-international'?{...t,selectedOption:'B'}:t)});
-  assert.equal(backup.totalMXN,50448);
+  assert.equal(backup.totalMXN,51580);
   assert.equal(trip.hotels[0].checkIn,'2027-01-15');
   assert.equal(trip.hotels[0].checkOut,'2027-01-18');
-  assert.equal(trip.majorTransport[0].options[0].fares[0].price.amount,9023);
-  assert.equal(trip.majorTransport[0].options[1].fares[0].price.amount,9719);
+  assert.equal(trip.majorTransport[0].options[0].fares[0].price.amount,9652);
+  assert.equal(trip.majorTransport[0].options[1].fares[0].price.amount,10851);
   const [primary, backupOption] = trip.majorTransport[0].options;
-  for (const [option, flightNumbers] of [[primary,['MTQ5','Mzk3','MTg4']],[backupOption,['MTk1','NjU0']]]) {
-    assert.equal(option.links?.length,1);
-    const bookingLink=option.links[0].url;
-    assert.ok(bookingLink.startsWith('https://www.google.com/travel/flights/booking?tfs='));
-    for(const part of flightNumbers) assert.ok(bookingLink.includes(part),'Falta tramo del candidato en URL');
-    assert.ok(bookingLink.includes('hl=es-419&gl=MX'));
+  assert.deepEqual(primary.journeys.flatMap(j => j.segments.map(s => s.flightNumber)),
+    ['CM 195','CM 654','CM 365','CM 194']);
+  assert.deepEqual(backupOption.journeys.flatMap(j => j.segments.map(s => s.flightNumber)),
+    ['CM 195','CM 654','CM 365','CM 866']);
+  assert.equal(primary.journeys[0].segments.at(-1).arrival,'2027-01-15T14:15:00-05:00');
+  assert.equal(primary.journeys[1].segments.at(-1).arrival,'2027-01-27T00:15:00-06:00');
+  assert.equal(backupOption.journeys[1].segments.at(-1).arrival,'2027-01-26T22:25:00-06:00');
+  for (const option of [primary,backupOption]) {
+    assert.equal(option.fares[0].baggage.personalItem.pieces,1);
+    assert.equal(option.fares[0].baggage.cabin.weightKg,10);
+    assert.equal(option.fares[0].baggage.checked.pieces,0);
+    assert.ok(option.links[0].url.startsWith('https://www.copaair.com/'));
   }
+  assert.match(trip.days[0].am,/CM195.*CM654/);
+  assert.match(trip.days[0].pm,/14:15/);
+  assert.match(trip.days[0].night,/Provenza/);
+  assert.match(trip.days[1].am,/06:50/);
+  assert.match(trip.days[1].pm,/barco/);
+  assert.match(trip.days[1].pm,/llamas/);
+  assert.match(trip.days[1].night,/Moabi/);
+  assert.match(trip.days[1].mobility,/Parroquia San José|iglesia de San José/);
+  assert.match(trip.days[1].note,/790\.14/);
+  assert.match(trip.days[1].note,/35,000/);
+  assert.match(trip.days[1].note,/PENDIENTE DE RESERVA/);
+  assert.ok(trip.days[1].mobilityLinks.some(x=>x.url.includes('getyourguide.com') && x.url.includes('t162638')));
+  assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>x.title.includes('Guatapé') && x.description.includes('$790.14 MXN') && x.description.includes('NO RESERVADO')));
+  assert.match(trip.expenses.find(x=>x.id==='activity-budget').notes,/790\.14/);
+  assert.equal(trip.expenses.find(x=>x.id==='activity-budget').cost.amount,5000,'Tour dentro de bolsa de actividades, sin duplicarlo');
+  assert.match(trip.intro,/Metrocable/,'Panorama debe recoger tour Comuna 13 elegido');
+  assert.match(trip.intro,/barco|embalse/,'Panorama debe recoger barco Guatapé');
+  assert.match(trip.intro,/opcionales/,'Panorama no puede prometer el Museo de Antioquia');
+  assert.match(trip.introShort,/Metrocable/);
+  assert.match(trip.experiences[0].description,/opcional/i,'Experiencias no puede prometer Plaza Botero y Museo');
+  assert.match(trip.experiences[1].description,/llamas/);
+  assert.match(trip.experiences[1].description,/barco|navega/);
+  assert.match(trip.local,/06:50/);
+  assert.match(trip.practicalIndicators[0].text,/pendiente de disponibilidad/);
+  assert.match(trip.budgetNote,/790\.14/);
+  assert.match(trip.budgetNote,/376\.16/);
+  assert.match(trip.budgetPreliminary.notes,/Guatapé GetYourGuide/);
+  assert.match(trip.expenses.find(x=>x.id==='ground-mobility').notes,/no debe duplicar/);
+  assert.ok(trip.sources.some(x=>x.url.includes('t162638')));
+  assert.ok(trip.sources.some(x=>x.url.includes('t420286')));
+  assert.ok(trip.sources.some(x=>x.url.includes('tour-grafiti-comuna-13-metrocable')));
+  assert.ok(trip.sources.some(x=>x.url.includes('t471700')));
+  assert.doesNotMatch(trip.mapPointsNote,/referencias turísticas regionales/);
+  assert.ok(trip.tips.some(x=>x.includes('Guatapé') && x.includes('06:50')));
+  assert.ok(trip.tips.some(x=>x.includes('Comuna 13') && x.includes('Plan B')));
+
+  assert.doesNotMatch(trip.days[0].pm,/visitar Plaza Botero|visitar Museo de Antioquia/i);
+  assert.match(trip.days[2].am,/PLAN A/);
+  assert.match(trip.days[2].am,/NO confirmado/);
+  assert.match(trip.days[2].note,/PLAN B/);
+  assert.match(trip.days[2].note,/PLAN C/);
+  assert.ok(trip.days[2].mobilityLinks.some(x=>x.url.includes('t420286')),'Enlace GetYourGuide principal');
+  assert.ok(trip.days[2].mobilityLinks.some(x=>x.url.includes('tour-grafiti-comuna-13-metrocable')),'Enlace Civitatis respaldo');
+  assert.ok(trip.days[2].mobilityLinks.some(x=>x.url.includes('t471700')),'Enlace GetYourGuide tercer plan');
+  assert.ok(trip.reservations.flatMap(g=>g[1]).some(x=>x.title.includes('Comuna 13') && x.links.some(l=>l.url.includes('t420286')) && x.links.some(l=>l.url.includes('civitatis.com'))),'Enlaces guardados en reservas');
+  assert.match(trip.days[2].pm,/Plaza Botero/);
+  assert.match(trip.days[2].pm,/OPCIONAL/);
+  assert.match(trip.days[2].pm,/Museo de Antioquia/);
+  assert.match(trip.days[2].pm,/Parque de Bolívar/);
+  assert.match(trip.days[2].pm,/sustituir|reemplazar/i);
+  for (const [n, steps] of [
+    [1, ['Moabi', 'Provenza']],
+    [2, ['Parque de El Poblado', 'Piedra del Peñol', 'Guatapé']],
+    [3, ['Comuna 13', 'Pueblito Paisa', 'Plaza Botero', 'Museo de Antioquia', 'Parque de Bolívar']],
+    [4, ['Moabi', 'Aeropuerto José María Córdova']]
+  ]) {
+    const d = trip.days[n - 1];
+    for (const step of steps) assert.ok(d.mobility.includes(step), 'Día '+n+' traslado omitido: '+step);
+    assert.ok(d.mobilityLinks.length >= 2, 'Día '+n+' necesita enlaces de ruta');
+    assert.ok(d.mobilityLinks.every(link => link.url.startsWith('https://')));
+  }
+  assert.deepEqual(trip.days[2].optionalPlaces,['col27-botero']);
+  assert.ok(trip.days[2].places.includes('col27-botero'));
+  assert.equal(trip.days[0].places.includes('col27-botero'),false);
+  assert.match(trip.days[2].note,/Pueblito Paisa fijo/);
+  assert.match(trip.days.at(-1).pm,/5 h 05 min/);
+  assert.match(trip.days.at(-1).night,/miércoles 27/i);
+  assert.match(trip.days.at(-1).am,/11:30/);
+  assert.match(trip.days[0].note,/no volver a sumar/i);
+  assert.match(trip.days.at(-1).note,/TOTAL multidestino/);
+  assert.equal(trip.budgetPreliminary.referenceFlightMXN,9652);
+  assert.match(trip.budgetNote,/50,381/);
+  assert.equal(trip.budgetRange[0],44299);
+  assert.equal(trip.budgetRange[1],61299);
   assert.ok(trip.days[8].transportRefs.includes('bus-tayrona-cartagena'));
   assert.equal(trip.majorTransport.find(x=>x.id==='bus-tayrona-cartagena').options.length,2);
 });
@@ -101,7 +181,7 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   assert.equal(trip.expenses.find(x=>x.id==='ground-mobility').cost.amount,7000);
   assert.match(trip.expenses.find(x=>x.id==='ground-mobility').notes,/PLAN A/);
   assert.match(trip.expenses.find(x=>x.id==='ground-mobility').notes,/PLAN B/);
-  assert.equal(trip.budgetRange[0],43670);
+  assert.equal(trip.budgetRange[0],44299);
   assert.equal(trip.expenses.find(x=>x.id==='hotel-santa').hotelId,'sm-bahia-suite');
   assert.ok(!JSON.stringify(trip).includes('Casa de Isabella'));
   assert.ok(trip.days.slice(3,6).every(d=>d.hotel==='sm-bahia-suite'));
@@ -131,7 +211,9 @@ test('Colombia: temperaturas con fuentes, indicadores y fotografías',()=>{
   }
 
   const block1=['col27-botero','col27-provenza','col27-penol','col27-guatape','col27-comuna13','col27-escaleras','col27-pueblito'];
-  assert.deepEqual(trip.days.slice(0,3).map(d=>d.places.length),[2,2,3]);
+  assert.deepEqual(trip.days.slice(0,3).map(d=>d.places.length),[1,2,4]);
+  assert.deepEqual(trip.days[2].optionalPlaces,['col27-botero'],'Plaza Botero queda opcional el domingo, no en viernes');
+  assert.ok(trip.days[2].places.includes('col27-botero'),'La fotografía opcional debe estar en la galería del domingo');
   assert.equal(new Set(block1).size,block1.length);
   for(const key of block1){
     assert.ok(places[key], 'Fotografía faltante: '+key);
@@ -220,7 +302,8 @@ test('Colombia: auditoría D final de 27 imágenes, portada, créditos y visitas
     const wordCount=trip.placeDescriptions[key]?.trim().split(/\s+/).length||0;
     assert.ok(wordCount>=15&&wordCount<=30,'Descripción fuera de 15–30 palabras: '+key);
   }
-  assert.deepEqual(trip.days.map(day=>day.places.length),[2,2,3,2,2,2,2,3,0,6,3,0]);
+  assert.deepEqual(trip.days.map(day=>day.places.length),[1,2,4,2,2,2,2,3,0,6,3,0]);
+  assert.deepEqual(trip.days[2].optionalPlaces,['col27-botero']);
   assert.deepEqual(trip.days[10].optionalPlaces,['col27-palacio-inquisicion','col27-convento-popa'],
     'Las fotos del Museo Histórico y La Popa deben seguir siendo alternativas por mal tiempo');
   assert.ok(trip.days[6].places.every(k=>/tayrona/.test(k)),

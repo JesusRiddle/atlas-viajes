@@ -286,3 +286,50 @@ Este apartado **sustituye cualquier escenario anterior de 14–26 de enero** des
 **Integridad de interfaz:** actualizado `work`, `start`, `days`, `bases`, `hotels[].checkIn/out`, `majorTransport` y sus `day`/refs, `expenses`, `budgetPreliminary`, `budgetNote`, `intro`, `introShort`, `experiences`, `reservations`, `practicalIndicators`, `planningDetails` y pruebas. Los textos usan el formato editorial conciso de Atlas: el «itinerario platicadito» solo se usa en el chat a solicitud explícita.
 
 **Riesgo por confirmar:** si la opción B llega después de las 14:00, podría no caber Plaza Botero y Parque de Bolívar el viernes. En ese caso el domingo deberá combinar las dos plazas, Comuna 13 y Pueblito Paisa sin visitar museos; evaluar operador con transporte y confirmar horas. No tratar como garantizada toda la lista sin revisar el ritmo del domingo. Fotografías y cierre D siguen pendientes. PR #10 sin merge.
+
+
+## DECISIÓN VIGENTE · Copa seleccionada y llegada diurna (11/11/2026)
+
+**Esta sección prevalece sobre los registros históricos de vuelos A/B anteriores.** Escenario 15–26/01/2027: 12 días, 11 noches en Colombia. No se compraron vuelos ni hoteles. Cotización observada directamente en Copa, Económica Basic por **$9,652 MXN**, 1 persona, artículo personal y equipaje de cabina hasta 10 kg (sin documentada, asiento preseleccionado con cargo).
+
+- **Ida viernes 15/01:** CM195 MEX 05:55 → PTY 10:38; conexión 2 h 17 min; CM654 PTY 12:55 → MDE 14:15. Traslado autorizado a Moabi, check-in estimado 16:15–17:15, paseo por Provenza y cena si hay energía. No programar museo ni centro como garantizados ese viernes.
+- **Sábado 16/01:** Guatapé y Piedra del Peñol sin cambios.
+- **Domingo 17/01:** Comuna 13 y Pueblito Paisa; Plaza Botero / Parque de Bolívar solo si caben de día. Museo de Antioquia es alternativa sustituyendo otra actividad, no visita garantizada.
+- **Lunes 18/01:** Avianca MDE→SMR 12:00–13:15 sigue como candidato; sin modificación del resto del viaje.
+- **Regreso martes 26/01:** CM365 CTG 15:05 → PTY 16:22; escala 5 h 05 min; CM194 PTY 21:27 → **MEX 00:15 del miércoles 27/01**. No añadir noche de hotel en Colombia por la llegada en México.
+- **Alternativa no elegida:** Copa $10,851, misma ida y regreso con CM866, llegada a MEX 22:25 del martes 26.
+
+**Presupuesto reconciliado:** vuelo internacional $9,652 (antes $9,023 no reservable desde Google Flights). Total central **$50,381 MXN** (antes $49,752); rango orientativo **$44,299–61,299 MXN**. No sumar la alternativa excluyente. El viaje sigue marcado como presupuestado preliminarmente, no comprado. El alojamiento de Moabi permanece 15–18/01, tres noches. No se modificaron los demás días ni los demás viajes.
+
+**QA pendiente de ejecución local:** pruebas automatizadas de regresión y renderización Desktop/Mobile; no se ha hecho merge ni despliegue. Revisar prioritariamente la presentación del cambio de fecha del vuelo de retorno (27/01) y la distribución del domingo 17.
+
+
+### Verificación focalizada · primer y último día, 11/11/2026
+
+Revisados y corregidos `days[0]` (15/01) y `days[11]` (26/01) frente a `majorTransport` y capturas Copa. Ida CM195+CM654, 05:55–14:15, escala 2 h 17 min, duración real programada 7 h 20 min; salida MDE→Moabi estimada 15:00–15:30, check-in 16:15–17:15 y Provenza como única actividad del viernes. Regreso CM365+CM194, CTG 15:05→MEX 00:15 del 27/01, escala 5 h 05 min, duración 10 h 10 min; salida orientativa de Cabrero House a CTG 11:30–11:45, llegada aeroportuaria cerca de 12:00. Traslados aeroportuarios en Colombia ya contemplados en movilidad ($7,000 de provisión); transporte a casa desde MEX de madrugada NO incluido. Revisados `expenses`: total **$50,381 MXN**, vuelo internacional **$9,652 MXN** una sola vez; rango **$44,299–61,299 MXN**. Moabi 15–18/01 y Cabrero House 23–26/01 permanecen correctos. El domingo 17 deja museo/centro como alternativos, no visitas garantizadas. **No se ha ejecutado CI ni revisión visual local**. Ningún boleto comprado; sin merge.
+
+
+### Excursión Guatapé elegida · 11/11/2026
+
+Sábado 16/01/2027: GetYourGuide / Viaja Medellín, «Medellín: tour por Guatapé con barco, desayuno, comida y llamas», modalidad **1 adulto, español, encuentro 06:50 en Parque de El Poblado junto a iglesia de San José**, cotizada **$790.14 MXN** con tasas incluidas (precio visible «desde $751» no corresponde a la selección efectiva). Tour de ~10,5 h, autobús, guía, desayuno, comida, barco de ~40 min, pueblo de Guatapé, granja de llamas/animales y seguro. Entrada para subir Piedra del Peñol opcional COP 35,000 (≈ $203 MXN), efectivo, con 90 min libres y riesgo de filas. Recorrido desde Moabi y regreso peatonal si conviene. **Pendiente de reservar; no pagado.** Se mantiene la provisión global de actividades de $5,000 MXN, que incluye este tour y la eventual entrada: **total $50,381 MXN sin cambios y sin duplicar**. Enlace: https://www.getyourguide.com/es-es/medellin-l1215/medellin-guatape-el-penol-barco-desayuno-comida-y-llamas-t162638/
+
+
+### Comuna 13: estrategia de reserva · 11/11/2026
+
+Para el domingo 17/01/2027 se prioriza **PLAN A**: GetYourGuide «Grafitis de Comuna 13, teleférico y comida callejera» (https://www.getyourguide.com/es-es/medellin-l1215/medellin-tour-de-grafitis-por-la-comuna-13-comida-callejera-y-teleferico-t420286/), grupo máx. 10, español, unas 4 h, encuentro/regreso estación Poblado, con metro, Metrocable y autobús, café, arepa, bebida, murales y baile. El horario 09:00 y precio $376.16 MXN pertenecen a 27/12/2026; **no hay disponibilidad confirmada para el 17/01/2027**. Reevaluar cuando se habilite calendario. **PLAN B**: Civitatis «Tour del grafiti por Comuna 13 + Metrocable» (https://www.civitatis.com/mx/medellin/tour-grafiti-comuna-13-metrocable/), 3 h, sale/regresa estación San Javier, Metrocable y autobús, degustaciones según modalidad; precio orientativo $480.14 MXN no confirmado para fecha. **PLAN C**: GetYourGuide «Grafitis, historia y sabor» (https://www.getyourguide.com/es-es/medellin-l1215/grafitis-historia-y-sabores-un-recorrido-por-la-comuna-13-t471700/), precio $411.43 MXN y salida 10:00 para 17/01/2027 según captura, encuentro en Veinte de Julio, sin Metrocable, con escaleras y actividad de grafiti. Ninguno reservado ni pagado. Presupuesto total sin cambios; revisión al contratar. Mantener Pueblito Paisa, sin sobrecargar centro histórico.
+
+
+### Auditoría transversal de nueve secciones · 11/11/2026
+
+- **01 Panorama / Inicio:** corregidas narrativa `intro`, `introShort` e indicador de estilo. Guatapé incorpora barco/llamas, Comuna 13 incorpora Metrocable; Plaza Botero, Parque de Bolívar y Museo de Antioquia no se anuncian como visitas fijas.
+- **02 Mapa:** itinerario y noches sin cambio; nota del mapa depurada para distinguir parque Tayrona de hotel y entrada El Zaino, sin «referencia regional» genérica.
+- **03 Temporadas:** clima de enero y comparativa mensual permanecen coherentes; sin cambios de calendario o ciudades.
+- **04 Experiencias:** Medellín ahora conserva Pueblito Paisa y Provenza, reconoce centro histórico opcional, y Guatapé refleja desayuno/almuerzo, barco, llamas y entrada opcional COP 35,000 (≈ $203 MXN).
+- **05 Reservaciones importantes:** Guatapé GetYourGuide/Viaja Medellín el 16/01 06:50, $790.14 MXN, elegido sin reservar. Comuna 13 Plan A GetYourGuide con Metrocable sin cupo publicado para el 17/01; Plan B Civitatis Metrocable y Plan C GetYourGuide Grafitis, historia y sabor. Enlaces directos conservados en los registros; todos los estados pendientes explícitos.
+- **06 Movilidad y conexiones:** Copa MEX–PTY–MDE y CTG–PTY–MEX, y vuelo Avianca MDE–SMR sin cambios; puntos de encuentro Moabi→Parque de El Poblado para Guatapé y Moabi→estación Poblado/San Javier para Comuna 13, sin duplicar transportes de operadores. Alternativas de Tayrona siguen sin cotizar.
+- **07 Dónde dormirás:** Moabi 15–18, Bahía Suite 18–21, Senda Koguiwa 21–23 y Cabrero House 23–26 continúan candidatos sin reservar; 11 noches en 4 alojamientos y URL de mapa por hotel.
+- **08 Día por día:** viernes 15 llegada 14:15 y Provenza; sábado 16 encuentro Guatapé 06:50, barco y animales; domingo 17 Plan A Comuna 13 a las 09:00 solo como horario de referencia para diciembre y Pueblito Paisa fijo, centro opcional; resto 18–26 sin alteraciones logísticas.
+- **09 Presupuesto:** reconciliadas notas de los $5,000 MXN para actividades y $7,000 MXN para movilidad, alimentación de Guatapé incluida y tres tours de Comuna 13 mutuamente excluyentes. Total $50,381 MXN, rango $44,299–61,299, sin cambio ni doble conteo. Advertencia: actividades podrían superar provisión cuando se coticen Islas del Rosario y otras pendientes.
+- **QA y dependencias:** pruebas reforzadas para narrativa, enlaces, estatus, excursiones y cifras. Validación de JSON/regresión/visual en CI, registrar conclusión del último commit antes de declarar cierre. No hacer merge sin aprobación.
+
+**Pendiente real:** publicación de disponibilidad de Plan A Comuna 13 para 17/01/2027, cotización definitiva de tours adicionales (sobre todo Rosario), vuelos/hoteles no comprados, y elección de variante Tayrona. No inferir reservas a partir de la selección en Atlas.
