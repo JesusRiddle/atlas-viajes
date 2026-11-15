@@ -29,7 +29,7 @@
 - [x] **03 Fechas y esqueleto diario:** seis fechas continuas y cinco noches, secuencia compatible; **Auditoría A: verificación estructural parcial**, aún sin validar todas las disponibilidades operativas.
 - [x] **04 Mapa:** cinco puntos (Rosen y cuatro parques), coordenadas comprobadas en Mapcarta/OSM; hotel con precisión aproximada de tres decimales.
 - [x] **05 Experiencias · refinadas 15/11/2026:** nueve tarjetas para los cuatro parques; tres áreas de Harry Potter prioritarias y cuatro comidas temáticas verificadas en menús oficiales. Actividades secundarias condicionadas por filas, en especial Epic Universe; coherencia con días 3–6 diciembre. Auditoría automatizada específica agregada en `tests/browser-smoke.cjs`.
-- [x] **06 Reservaciones importantes:** vuelo, hotel y boleto Universal cotizados separados de Disney pendiente y transportes estimados.
+- [x] **06 Reservaciones importantes · auditada 15/11/2026:** 3 grupos y 8 tarjetas, nota visible de compras no realizadas, referencias de vuelo/hotel/Universal preservadas, Disney pendiente, Park-to-Park con Hogwarts Express como alternativa opcional, paquetes excluyentes y condiciones de Rosen verificadas. CI Desktop/Mobile del commit `1d4d9230` aprobado.
 - [x] **07 Movilidad:** vuelo estructurado con dos trayectos; shuttle y alternativas terrestres documentados. Falta probar renderer `AtlasMajorTransport.render`.
 - [x] **08 Dónde dormirás:** Rosen Plan A y Terra Luna Plan B, mapas/enlaces oficiales y tarifas excluyentes; **Auditoría B pendiente de renderer y disponibilidad final**.
 - [x] **09 Día por día:** mañana/tarde/noche, movilidad, notas y enlaces de seis días, sin prometer filas inexistentes.
@@ -115,3 +115,17 @@
 - **Alcance:** sección Panorama concluida editorial y técnicamente. Cierre económico general de viaje aún pendiente de cotización Disney y verificación de compras; no implica que el viaje completo esté listo para merge.
 
 **Siguiente sección recomendada:** Reservaciones importantes, para conciliar boleto Universal actual (sin Park-to-Park ni Hogwarts Express), alternativa que sí lo incluya y costos de Magic Kingdom y Rosen sin pedir repetir capturas previas. Sin merge.
+
+## Auditoría específica de Reservaciones importantes · 15/11/2026
+
+- **Componente y contrato:** `planningDetails` era una cadena; se corrigió a objeto `{reservationTitle,reservationNote}`. Ahora aparece introducción visible y título «Reservaciones importantes».
+- **Organización:** 4 prioridades muy altas (Volaris, Rosen Inn, Universal y Magic Kingdom), 1 prioridad alta (traslados) y 3 decisiones flexibles (Park-to-Park/Hogwarts Express, paquete Terra Luna y pases rápidos). Ocho tarjetas con enlaces y sin estados falsos de compra.
+- **Volaris:** captura 15/11, $7,015 MXN redondo para 1 adulto; 2/12 MEX–MCO 11:10–15:18, 7/12 MCO–MEX 17:05–19:45. Franquicia de equipaje y cambios pendientes, no inferidos.
+- **Rosen Plan A:** captura 15/11, 5 noches US$539.94 impuestos incluidos; sin reserva. FAQ oficial: check-in 16:00, check-out 11:00, pasaporte físico y tarjeta a nombre del titular. Fecha de cancelación, preautorización y tarifa vigente sin confirmar. Shuttle Universal gratuito con cupos y reserva; shuttle Disney con cargo anunciado sin itinerario confirmado.
+- **Universal:** subtotal de carrito US$335.99, 3 días/3 parques uno por día, NO Park-to-Park. Oferta oficial alternativa 3 días Park-to-Park (2 días Studios/Islands + 1 Epic) desde US$357 + impuestos, precio publicado genérico y NO tarifa para fecha 3/12; no calcular sobreprecio real por resta de un subtotal fechado contra un precio «desde». Hogwarts Express exige Park-to-Park; decisión abierta sin cambiar Plan A.
+- **Disney:** 5/12/2026 Magic Kingdom, boleto fechado de un día sin cotización; `expenses.orlando-disney.cost.amount === null`. Disney confirma que no hay Mickey’s Very Merry Christmas Party el sábado 5/12; ticket regular no incluye Lightning Lane. Para alojamiento Rosen, opción de Lightning Lane 3 días antes, venta en app sujeto a cupo y precio dinámico. No se han comprado extras.
+- **Presupuesto y alternativas:** conservar Rosen + entrada Universal como Plan A, Terra Luna US$1,577.46 paquete hotel+tickets como opción separada. Transferencias aeropuerto/Disney en rangos estimados sin cotización en vivo. Sin duplicados ni compras declaradas.
+- **Tests:** comprobación en `tests/browser-smoke.cjs` de título/intro, 3 grupos, 8 tarjetas, estado de compra, enlaces, Hogwarts Express, alternativas y Disney null. GitHub Actions **success** commit `1d4d92301b0cd52b44c9c22efee317ce937c2146`, Node y browser escritorio/móvil. Fallo intermedio inicial solo por escape de `US$357` en test, corregido.
+- **Pendiente ajeno a esta auditoría editorial:** tarifa Disney fechada, precio Universal final, cotización vuelo/hotel actualizados y compra por cuenta del usuario. No hacer merge.
+
+**Siguiente sección recomendada:** Movilidad y conexiones, con auditoría de aeropuerto MCO, shuttle Rosen–Universal/Epic, transferencia real a Magic Kingdom, costos sin duplicar y coherencia de tarjetas de vuelo. Posteriormente Dónde dormirás, Día por día y cierre del Presupuesto.
