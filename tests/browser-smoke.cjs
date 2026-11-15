@@ -175,6 +175,35 @@ const assert = require('node:assert/strict');
             id + ' tarjeta Clima y luz debe seguir al presupuesto');
         }
         if (id === 'orlando-2026') {
+          const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
+          const hotels = page.locator('#alojamientos .hotel-card');
+          assert.equal(await hotels.count(), 2, 'Orlando: solo Plan A y alternativa excluyente');
+          assert.match(await page.locator('#alojamientos h2').innerText(), /Alojamiento elegido y alternativa/);
+          const lodgingText = await page.locator('#alojamientos').innerText();
+          for (const fragment of ['Rosen Inn Closest to Universal','Deluxe Double',
+            '5500 Epic Blvd','Terra Luna','EXCLUYENTE','US$539.94','US$1,577.46']) {
+            assert.ok(lodgingText.includes(fragment),
+              'Orlando hospedaje: falta ' + fragment);
+          }
+          assert.ok(lodgingText.includes('US$701.53'),
+            'Orlando: diferencia entre escenarios, sin declararla cotización equivalente');
+          assert.equal(await page.locator('#alojamientos .hotel-option-comparison').count(), 1);
+          assert.ok((await hotels.nth(0).locator('a').count()) >= 3,
+            'Orlando: Rosen tiene reservas oficiales y Google Maps');
+          assert.ok((await hotels.nth(1).locator('a').count()) >= 2,
+            'Orlando: Terra Luna tiene referencia y ubicación');
+          assert.equal(tripData.expenses.filter(x => x.category === 'lodging').length, 1,
+            'Orlando: un único alojamiento presupuestado');
+          assert.equal(tripData.expenses.find(x => x.category === 'lodging').hotelId,
+            'orlando-rosen', 'Orlando: presupuesto vinculado solo con Rosen');
+          assert.deepEqual(tripData.days.map(x => x.hotel),
+            ['orlando-rosen','orlando-rosen','orlando-rosen',
+              'orlando-rosen','orlando-rosen',null],
+            'Orlando: cinco noches, sin noche fantasma el día del regreso');
+          assert.equal(await page.locator('#dia-6 .night-hotel').count(), 0,
+            'Orlando: día del vuelo sin noche de hotel');
+        }
+        if (id === 'orlando-2026') {
           const mobility = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           assert.equal(mobility.majorTransport.length, 1, 'Orlando: una ficha de vuelo redondo');
           assert.equal(mobility.majorTransport[0].budgetIncludedIn, 'orlando-flight',
