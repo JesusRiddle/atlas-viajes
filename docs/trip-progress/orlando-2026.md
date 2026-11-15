@@ -28,7 +28,7 @@
 - [x] **02 Temporadas · refinada y revisada 3 veces (15/11/2026):** doce meses, mínimas/máximas medias 1991–2020 convertidas y redondeadas, clima y precipitación, temporada ciclónica, eventos Disney/Universal, puentes, afluencia y ventanas recomendadas. Cinco meses recomendables (con ventanas), tres aceptables, cuatro desaconsejables. Fuentes oficiales en `seasonality.referenceLinks`; CI de commit `7af27e38` en verificación.
 - [x] **03 Fechas y esqueleto diario:** seis fechas continuas y cinco noches, secuencia compatible; **Auditoría A: verificación estructural parcial**, aún sin validar todas las disponibilidades operativas.
 - [x] **04 Mapa:** cinco puntos (Rosen y cuatro parques), coordenadas comprobadas en Mapcarta/OSM; hotel con precisión aproximada de tres decimales.
-- [x] **05 Experiencias:** Harry Potter y atracciones principales detalladas sin sumar parques extras.
+- [x] **05 Experiencias · refinadas 15/11/2026:** nueve tarjetas para los cuatro parques; tres áreas de Harry Potter prioritarias y cuatro comidas temáticas verificadas en menús oficiales. Actividades secundarias condicionadas por filas, en especial Epic Universe; coherencia con días 3–6 diciembre. Auditoría automatizada específica agregada en `tests/browser-smoke.cjs`.
 - [x] **06 Reservaciones importantes:** vuelo, hotel y boleto Universal cotizados separados de Disney pendiente y transportes estimados.
 - [x] **07 Movilidad:** vuelo estructurado con dos trayectos; shuttle y alternativas terrestres documentados. Falta probar renderer `AtlasMajorTransport.render`.
 - [x] **08 Dónde dormirás:** Rosen Plan A y Terra Luna Plan B, mapas/enlaces oficiales y tarifas excluyentes; **Auditoría B pendiente de renderer y disponibilidad final**.
@@ -96,3 +96,12 @@
 - GitHub Actions del commit `42048c7f` terminó **success** con pruebas del mapa agregadas. Se hicieron cambios de etiquetas en commits `31574a55`/`5a5a9e51`; revisar el CI posterior antes de cerrar la auditoría técnica definitiva.
 
 **Siguiente sección pendiente de refinamiento:** Experiencias: revisar todas las atracciones acordadas por parque, ordenar imprescindible/prioridad secundaria, comidas temáticas, intensidad y cobertura fotográfica sin alterar días ni añadir Pandora.
+
+## Auditoría específica de Experiencias · 15/11/2026
+- **Contenido:** de cuatro tarjetas extensas a nueve narraciones más precisas (2 Studios, 2 Islands, 2 Magic Kingdom y 3 Epic). Prioridad inmersiva: Diagon Alley/Gringotts, Hogwarts/Hagrid y Place Cachée/Battle at the Ministry/Le Cirque Arcanus. Knight Bus y lugares de ambientación añadidos.
+- **Gastronomía temática verificada en menús oficiales:** Leaky Cauldron (fish and chips, cottage pie), Three Broomsticks (pollo asado, shepherd's pie), Sleepy Hollow (waffles/funnel cakes), Café L'air De La Sirène (baguette de pavo, crepes de Butterbeer); no presentarla como cocina tradicional de Orlando ni como reserva confirmada. Revisar alérgenos al ordenar.
+- **Intensidad y capacidad:** VelociCoaster/Hulk, Stardust Racers/Mine-Cart Madness/Hiccup permanecen opcionales. Dark Universe/Monsters Unchained y Mario Kart son prioridad secundaria respecto del Ministerio de Magia. No añadir Pandora ni nuevos parques. Condicionar espectáculos por cartelera y Big Thunder por operación diaria. Hogwarts Express excluido de entradas 1 parque/día.
+- **Sincronización:** revisadas las jornadas 3, 4, 5 y 6 de diciembre para reflejar la comida temática, prioridades y actividades secundarias. Sin cambiar vuelos, alojamiento, fechas ni precio de entradas.
+- **Interfaz:** reemplazado encabezado compartido de tarjeta de enfoque (antes 'Un viaje con pocas maletas') por 'El enfoque de este viaje' para coherencia editorial.
+- **Pruebas:** se añadió comprobación de 9 tarjetas, frases de Harry Potter, restaurantes oficiales, ausencia de parques descartados y flexibilidad Epic a la suite Playwright en escritorio y móvil. GitHub Actions de commits `9435ae0a`/`bf4539fb` aún pendientes al elaborar esta entrada; no afirmar resultado sin observar conclusión.
+- **Siguiente sección recomendada:** **Reservaciones importantes**, con revisión del boleto Universal 1 parque/día frente a Hogwarts Express Park-to-Park, entrada Magic Kingdom, hotel Rosen, transporte y claridad de estados 'cotizado' versus 'comprado'.
