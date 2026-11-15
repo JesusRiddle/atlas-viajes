@@ -192,7 +192,7 @@ const assert = require('node:assert/strict');
             'Hogwarts Express', 'Park-to-Park', 'Terra Luna', 'Lightning Lane']) {
             assert.ok(body.includes(phrase), 'Orlando Reservaciones: falta ' + phrase);
           }
-          assert.match(body, /US\\$357 MÁS IMPUESTOS/, 'Orlando: precio desde, sin presentarlo como cotización');
+          assert.match(body, /US\$357 MÁS IMPUESTOS/, 'Orlando: precio desde, sin presentarlo como cotización');
           assert.match(body, /SUBTOTAL/, 'Orlando: boleto Universal sin impuestos confirmados');
           assert.match(body, /SIN COMPRAR/, 'Orlando: no inventar compras');
           assert.equal(tripData.expenses.find(x => x.id === 'orlando-disney').cost.amount, null,
