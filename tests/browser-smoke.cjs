@@ -176,6 +176,32 @@ const assert = require('node:assert/strict');
         }
         if (id === 'orlando-2026') {
           const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
+          const reservations = page.locator('#reservas');
+          assert.equal(await reservations.locator('h3').innerText(), 'Reservaciones importantes',
+            'Orlando: la cabecera usa el contrato editorial');
+          assert.match(await reservations.locator('.reservation-intro').innerText(), /ninguna compra ni reserva está confirmada/i,
+            'Orlando: nota de estado de compras visible');
+          assert.equal(await reservations.locator('.reservation-group').count(), 3,
+            'Orlando: tres grupos de prioridad');
+          assert.equal(await reservations.locator('.reservation-item').count(), 8,
+            'Orlando: ocho reservas/decisiones documentadas');
+          const labels = await reservations.locator('.reservation-group-heading h4').allInnerTexts();
+          assert.deepEqual(labels, ['Prioridad muy alta','Prioridad alta','Planificación flexible']);
+          const body = await reservations.innerText();
+          for (const phrase of ['Volaris', 'Rosen Inn', 'Magic Kingdom', 'US$335.99',
+            'Hogwarts Express', 'Park-to-Park', 'Terra Luna', 'Lightning Lane']) {
+            assert.ok(body.includes(phrase), 'Orlando Reservaciones: falta ' + phrase);
+          }
+          assert.match(body, /US\\$357 MÁS IMPUESTOS/, 'Orlando: precio desde, sin presentarlo como cotización');
+          assert.match(body, /SUBTOTAL/, 'Orlando: boleto Universal sin impuestos confirmados');
+          assert.match(body, /SIN COMPRAR/, 'Orlando: no inventar compras');
+          assert.equal(tripData.expenses.find(x => x.id === 'orlando-disney').cost.amount, null,
+            'Orlando: Magic Kingdom sigue pendiente de cotización');
+          assert.ok(await reservations.locator('a[href^="https://"]').count() >= 12,
+            'Orlando: enlaces oficiales visibles');
+        }
+        if (id === 'orlando-2026') {
+          const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           const intro = await page.locator('#plan .overview-intro .lead').innerText();
           for (const place of ['Diagon Alley', 'Hogwarts', 'Magic Kingdom', 'Epic Universe', 'Ministerio de Magia']) {
             assert.ok(intro.includes(place), 'Orlando Panorama: falta ' + place);
