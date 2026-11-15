@@ -24,7 +24,7 @@
 
 ## Presupuesto y evidencia
 - Presupuesto anterior reconstruido: **≈$68,546 MXN** (estimación).
-- Presupuesto mayo central: **≈$81,046 MXN** según partidas y transportes de referencia del JSON; no representa reserva ni tarifa garantizada.
+- Presupuesto mayo central: **≈$81,315 MXN** según partidas y transportes de referencia del JSON; no representa reserva ni tarifa garantizada.
 - Tipo de cambio: snapshot del Atlas 28/10/2026, **€1 = $20.7416 MXN**. Recalcular cuando se confirme el tipo de cambio.
 - Hoteles objetivo: Milano $12,000; La Spezia $7,500; Firenze $14,500. Impuestos/entradas/transporte siguen basados en referencias, no comprobación de disponibilidad exacta.
 - Ventas Cenacolo mayo–julio 2027 previstas para marzo de 2027 (apertura específica pendiente).
@@ -51,3 +51,14 @@
 - [x] Prueba de regresión nueva: coherencia de fechas de entradas, mapa, enlaces, horas futuras de tren no inventadas y estado de vuelo cotizado.
 - [ ] Pendiente externo: tarifas reales hoteles 9–21 mayo, nuevas entradas y trenes cuando abra venta; no afirmar compras ni disponibilidad.
 - [ ] Revisión humana de PR #15 y aprobación explícita del merge.
+
+## Tercera auditoría · 15 noviembre 2026
+- [x] Corregida fecha malformada del vuelo de regreso en header de día 14: llegada MEX **22 mayo 2027**.
+- [x] Limpiadas fechas de abril en notas del Malpensa Express: viajes correctos **9 y 21 mayo**. Posible billete digital ida/vuelta 30 días €25 frente a dos sencillos €30, referencia oficial; presupuesto conserva dos sencillos hasta decisión, sin doble contabilización.
+- [x] En La Spezia → Lucca ya NO se recomienda la combinación histórica de 6 minutos IC 651 + R 18707. El itinerario seleccionado es **conexión a confirmar por Viareggio con 20–30 minutos mínimo**; €13,60 es referencia histórica, no precio real mayo 2027.
+- [x] Retiradas alternativas de retorno Cinque Terre del 31/10/2026 y su fecha errónea mayo 15; conservados módulos individuales sin horarios confirmados. Tarifa central del pase actualizada a provisión prudente **€35 según banda alta 2026**; total nuevo **$81,315.20 MXN**, provisional.
+- [x] Revisada la tarifa aérea: los 15 kg son **equipaje de cabina + artículo personal juntos**, no 15 kg de la maleta de mano más artículo.
+- [x] Advertidas las ferias comerciales de Milano 9–13 mayo de 2027 y riesgo de tarifas más altas. No se presentaron disponibilidades hoteleras ficticias.
+- [x] ETIAS redactado como requisito condicional sujeto a fecha de puesta en marcha en mayo 2027, no como confirmación de exención.
+- [x] Ajustados los resaltados de portada a 13 nombres principales; preservadas fotografías y 3 alojamientos.
+- [ ] Verificar CI del commit final y revisión humana del PR #15 antes del merge.
