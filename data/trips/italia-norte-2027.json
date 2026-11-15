@@ -62,7 +62,7 @@
       "pm": "Llegada prevista a MXP T1 a las 18:20; migración y equipaje. Comprar billete de Malpensa Express según hora real de salida del aeropuerto.",
       "night": "Malpensa Express hacia Milano Centrale (aprox. 50–60 min, horario a reconfirmar), desplazamiento corto al B&B HOTEL Milano Aosta y cena ligera.",
       "mobility": "Malpensa Aeroporto T1 → Milano Centrale, tren Malpensa Express; evitar hora fija de tren sin confirmar paso por migración y maleta. Hotel a pie desde Centrale.",
-      "note": "B&B HOTEL Milano Aosta es candidato, NO reservado. Confirmar check-in tardío e impuestos; no programar actividades de museo esta noche.",
+      "note": "B&B HOTEL Milano Aosta es candidato, NO reservado. Confirmar check-in tardío e impuestos; no programar actividades de museo esta noche.\n• Durante el 9–13 mayo se celebran ferias comerciales en Milano; el alojamiento es prioritario para comprobar precio y disponibilidad reales, pero no hay reserva.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -195,7 +195,7 @@
       "pm": "Check-in en Casa Danè, paseo relajado por Via del Prione y centro histórico.",
       "night": "Passeggiata Morin y cena; revisar mar y trenes para los dos días de Liguria.",
       "mobility": "Tren Milano → La Spezia, horario 2027 pendiente. Evitar transbordos ajustados con maleta; hotel junto a estación.",
-      "note": "Casa Danè es candidato no reservado; verificar planta, elevador, tamaño de equipaje, consigna e impuestos antes de pagar.",
+      "note": "Casa Danè es candidato no reservado; verificar planta, elevador, tamaño de equipaje, consigna e impuestos antes de pagar.\n• En esas fechas siguen varias ferias en Milano; por eso es importante comparar desde ahora tarifas con cancelación flexible y no presupuestar alojamiento como precio confirmado.",
       "spend": null,
       "places": [
         "italy27-spezia-morin",
@@ -233,7 +233,7 @@
       "pm": "Manarola y miradores cómodos; tren hacia Vernazza, puerto y almuerzo. Monterosso opcional según energía.",
       "night": "Regresar a La Spezia en tren, cena y descanso.",
       "mobility": "Trenes regionales Cinque Terre Express / Trenitalia; contrastar billetes individuales y Cinque Terre Treno MS Card para viernes 14 mayo de 2027. Sin horarios de mayo confirmados.",
-      "note": "Viernes elegido para reducir parcialmente presión de fin de semana. Senderos y Via dell’Amore dependen de meteorología, seguridad y reserva; no asumir aperturas. Portovenere puede intercambiarse con este día por mal clima.\n• *Via dell’Amore:* reservar en canal oficial la franja y el título específico; no asumir que el pase ferroviario estándar incluye acceso. Caminata aproximada de 30 minutos y un solo sentido Riomaggiore → Manarola; caminar únicamente si el estado del sendero y tu espalda lo permiten. El coste adicional opcional no está incluido en el presupuesto central.\n\n• Para las tres localidades, reservar pausas y evitar senderos empinados no imprescindibles: Riomaggiore y Manarola tienen pendientes y escaleras; Vernazza es más cómoda alrededor del puerto.\n• La Via dell’Amore exige franja y un título compatible específico; no equivale al pase de tren. Si no hay reserva, usar el tren entre Riomaggiore y Manarola. El tren de vuelta y Monterosso son decisiones del mismo día.",
+      "note": "Viernes elegido para reducir parcialmente presión de fin de semana. Senderos y Via dell’Amore dependen de meteorología, seguridad y reserva; no asumir aperturas. Portovenere puede intercambiarse con este día por mal clima.\n• *Via dell’Amore:* reservar en canal oficial la franja y el título específico; no asumir que el pase ferroviario estándar incluye acceso. Caminata aproximada de 30 minutos y un solo sentido Riomaggiore → Manarola; caminar únicamente si el estado del sendero y tu espalda lo permiten. El coste adicional opcional no está incluido en el presupuesto central.\n\n• Para las tres localidades, reservar pausas y evitar senderos empinados no imprescindibles: Riomaggiore y Manarola tienen pendientes y escaleras; Vernazza es más cómoda alrededor del puerto.\n• La Via dell’Amore exige franja y un título compatible específico; no equivale al pase de tren. Si no hay reserva, usar el tren entre Riomaggiore y Manarola. El tren de vuelta y Monterosso son decisiones del mismo día.\n• La provisión del pase ferroviario se actualiza a €35 (≈ $726 MXN), **referencia prudente basada en 2026, no precio de mayo de 2027**. Si en la fecha del viaje vale menos, ajustar. Via dell’Amore sigue fuera del costo central.",
       "spend": null,
       "places": [
         "italy27-riomaggiore",
@@ -573,7 +573,7 @@
         "Firenze Santa Maria Novella",
         "Milano Centrale",
         "Milano Malpensa (MXP)",
-        "Ciudad de México (MEX) · llegada el 1mayo de 2027"
+        "Ciudad de México (MEX) · llegada sábado 22 de mayo de 2027"
       ],
       "transportRefs": [
         "train-firenze-milano",
@@ -637,11 +637,11 @@
       "description": "Recorrer las calles medievales hasta la Piazza del Campo y visitar el Duomo, con sus mármoles y los frescos de la Libreria Piccolomini. Probar los pici, los ricciarelli de almendra y el panforte tradicional."
     }
   ],
-  "flight": "Aeroméxico directo MEX → MXP: sábado 8 mayo 2027, 22:25 (MEX T2), llegada domingo 9 a las 18:20 (MXP T1). Regreso MXP T1 → MEX T2: viernes 21 mayo, 23:05; llegada sábado 22 mayo 04:00. Tarifa Clásica redonda $20,113.46 MXN por persona, cotizada y NO comprada. Incluye 15 kg de equipaje de mano, maleta documentada y asiento estándar; cambios con costo, no reembolsable. Verificar condiciones y disponibilidad antes de comprar.",
+  "flight": "Aeroméxico directo MEX → MXP: sábado 8 mayo 2027, 22:25 (MEX T2), llegada domingo 9 a las 18:20 (MXP T1). Regreso MXP T1 → MEX T2: viernes 21 mayo, 23:05; llegada sábado 22 mayo 04:00. Tarifa Clásica redonda $20,113.46 MXN por persona, cotizada y NO comprada. La tarifa Clásica incluye 1 pieza de cabina y un artículo personal que juntos pesan hasta 15 kg; incluye maleta documentada en esta ruta europea según condiciones de tarifa y asiento estándar; cambios con costo, no reembolsable. Verificar condiciones y disponibilidad antes de comprar.",
   "local": "Milano Centrale: llegada en Malpensa Express y excursión a Torino el martes 11 (Museo Egizio). La Spezia Centrale: Cinque Terre en tren viernes 14, Portovenere en ATC línea P sábado 15; intercambiar excursiones solo según clima y entradas. Domingo 16, parada Lucca condicionada a consigna abierta y accesible para equipaje; alternativa traslado directo a Firenze si falla. Firenze SMN: Siena por 131R lunes 17, cuya parada 08:50 está anunciada temporalmente en Via Orti Oricellari hasta 10 junio 2027. Regreso viernes 21: tren de alta velocidad hacia Milano con salida objetivo 12:30–13:30 y Malpensa Express, sin conexiones ajustadas. Horarios de mayo todavía sin confirmar.",
   "climate": "En mayo, clima primaveral más templado, todavía variable: Milano y Torino con máximas diurnas orientativas de 20 a 23 °C; Liguria 20 a 23 °C; Toscana 22 a 25 °C. Son rangos generales y no un pronóstico, con posibilidad de lluvia y viento costero.\n\n*Qué llevar:* ropa ligera por capas, impermeable compacto, calzado estable y cómodo para adoquines y posibles desniveles. Minimizar peso de equipaje y evitar caminatas largas con maletas.\n\n*Horas de luz:* aproximadamente 14 a 15 horas; los atardeceres más tardíos permiten paseos sin comprimir los días.",
   "solo": "Viaje solo, alojamientos próximos a estaciones. Confirmar elevador y piso en Casa Danè, consigna en Lucca y accesibilidad antes de cargar equipaje; Cúpula de Brunelleschi (463 escalones) sujeta a capacidad física.",
-  "lodgingSummary": "Alojamientos candidatos y sin reservar: B&B HOTEL Milano Aosta (9–13 mayo, 4 noches), Casa Danè en La Spezia (13–16 mayo, 3 noches) y Hotel Mia Cara & SPA en Firenze (16–21 mayo, 5 noches). Presupuesto central de planeación $34,000 MXN para 12 noches; estimación, no cotización de fechas exactas.",
+  "lodgingSummary": "Alojamientos candidatos y sin reservar: B&B HOTEL Milano Aosta (9–13 mayo, 4 noches), Casa Danè en La Spezia (13–16 mayo, 3 noches) y Hotel Mia Cara & SPA en Firenze (16–21 mayo, 5 noches). Presupuesto central de planeación $34,000 MXN para 12 noches; estimación, no cotización de fechas exactas. Nota: ferias comerciales en Milano del 9 al 13 mayo podrían incrementar la tarifa real del primer alojamiento.",
   "heroLodgingSummary": "12 noches, 3 alojamientos: Milano 9–13 mayo; La Spezia 13–16 mayo; Firenze 16–21 mayo. No reservados.",
   "mapPoints": [
     {
@@ -728,11 +728,11 @@
   "ticketNotes": [
     {
       "title": "Vuelos · tarifa Clásica cotizada",
-      "note": "Aeroméxico AM76/AM77 del 8 al 21 mayo 2027, total $20,113.46 MXN redondo; NO comprado ni pagado. Incluye 15 kg de mano, documentada y asiento estándar. No reembolsable, cambios con costo."
+      "note": "Aeroméxico AM76/AM77 del 8 al 21 mayo 2027, total $20,113.46 MXN redondo; NO comprado ni pagado. Incluye una pieza de mano + artículo personal con máximo total 15 kg, una maleta documentada según tarifa y asiento estándar. No reembolsable, cambios con costo."
     },
     {
       "title": "Malpensa Express · boleto digital",
-      "note": "El boleto digital comprado en Trenord/Malpensa Express es válido para un viaje durante la fecha indicada y no requiere convalidación física. Mostrarlo en el móvil; comparar el billete de ida y vuelta de 30 días con dos sencillos, verificando sus condiciones."
+      "note": "Para el domingo 9 y viernes 21 de mayo 2027, el billete digital Malpensa Express de 30 días para ida/vuelta se ofrece a €25 (≈ $519 MXN) en la referencia oficial 2026, frente a €30 (≈ $622 MXN) por dos sencillos. Si se elige, actualizar ambos traslados conjuntamente para no duplicar gastos. Verificar reglas y precio al comprar."
     },
     {
       "title": "Trenes Italo, Frecciarossa e Intercity",
@@ -758,23 +758,17 @@
   "introHighlights": [
     "Milano",
     "Duomo",
-    "Galleria Vittorio Emanuele II",
     "Torino",
     "Museo Egizio",
     "La Última Cena",
-    "Pinacoteca di Brera",
     "Cinque Terre",
     "Portovenere",
     "Lucca",
     "Firenze",
     "David",
     "Cúpula de Brunelleschi",
-    "Uffizi",
     "Corridoio Vasariano",
-    "Siena",
-    "Catedral",
-    "Libreria Piccolomini",
-    "Piazza del Campo"
+    "Siena"
   ],
   "practicalIndicators": [
     {
@@ -794,13 +788,13 @@
     {
       "id": "entry",
       "title": "Documentación y consejos prácticos",
-      "text": "Pasaporte mexicano: expedido hace menos de 10 años y válido al menos 3 meses después de salir de Schengen; turismo sin visa hasta 90 días/180. ETIAS aún no opera: revisar travel-europe.europa.eu/etias antes de viajar. EES: posible registro biométrico fronterizo. Llevar regreso y alojamiento; visa estadounidense si hay escala en EE. UU. Enchufes: Italia usa tipos C y L, y también F en tomas compatibles; son distintos de las clavijas mexicanas A/B. Comprar un adaptador de viaje con entrada para clavija mexicana A/B y salida italiana tipo L de 10 A, compatible con tipo C; si el aparato necesita tierra, elegir adaptador certificado que la conserve. Red de 230 V/50 Hz: revisar INPUT 100–240 V, 50/60 Hz; el adaptador no convierte voltaje.",
+      "text": "Pasaporte mexicano: expedido hace menos de 10 años y válido al menos 3 meses después de salir de Schengen; turismo sin visa hasta 90 días/180. ETIAS: la web oficial de la UE aún no recibe solicitudes al verificar esta información; su entrada en vigor puede afectar al viaje de mayo de 2027. Consultar travel-europe.europa.eu/etias unas semanas antes de viajar y obtener autorización en el canal oficial si ya se exige. EES: posible registro biométrico fronterizo. Llevar regreso y alojamiento; esta cotización de Aeroméxico es directa, sin conexión en EE. UU. Enchufes: Italia usa tipos C y L, y también F en tomas compatibles; son distintos de las clavijas mexicanas A/B. Comprar un adaptador de viaje con entrada para clavija mexicana A/B y salida italiana tipo L de 10 A, compatible con tipo C; si el aparato necesita tierra, elegir adaptador certificado que la conserve. Red de 230 V/50 Hz: revisar INPUT 100–240 V, 50/60 Hz; el adaptador no convierte voltaje.",
       "badge": "Verificar antes de viajar",
       "tone": "orange"
     }
   ],
   "seasonality": {
-    "summary": "Mayo de 2027 se recomienda para Milán, Turín, Liguria y Toscana: primavera templada, vegetación y días largos, con mayor afluencia en Cinque Terre y posibles incrementos hoteleros. No afirmar menor turismo ni precios más bajos que abril. Verificar ferias locales, horarios concretos, senderos y salidas marítimas próximos a la fecha; la meteorología puede cambiar la secuencia de Cinque Terre y Portovenere.",
+    "summary": "Mayo de 2027 se recomienda para Milán, Turín, Liguria y Toscana: primavera templada, vegetación y días largos, con mayor afluencia en Cinque Terre y posibles incrementos hoteleros. No afirmar menor turismo ni precios más bajos que abril. En Milano coinciden ferias comerciales del 9 al 13 mayo de 2027, posible presión sobre tarifas hoteleras. Verificar horarios concretos, senderos y salidas marítimas próximos a la fecha; la meteorología puede cambiar la secuencia de Cinque Terre y Portovenere.",
     "months": {
       "10": {
         "status": "conditional",
@@ -866,7 +860,7 @@
   },
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Ninguna reserva ni vuelo comprado. Orden: 1) Cenacolo del miércoles 12 mayo (venta mayo–julio prevista para marzo 2027); 2) Corridoio Vasariano + Uffizi del miércoles 19; 3) Cúpula y Accademia del martes 18; 4) habitaciones con cancelación flexible; 5) Museo Egizio del martes 11, Brera del miércoles 12, Duomo de Milán lunes 10. Calendarios, tarifas y aforo mayo 2027 pendientes."
+    "reservationNote": "Ninguna reserva ni vuelo comprado. Orden: 1) Cenacolo del miércoles 12 mayo (venta mayo–julio prevista para marzo 2027); 2) Corridoio Vasariano + Uffizi del miércoles 19; 3) Cúpula y Accademia del martes 18; 4) habitaciones con cancelación flexible; 5) Museo Egizio del martes 11, Brera del miércoles 12, Duomo de Milán lunes 10. Calendarios, tarifas y aforo mayo 2027 pendientes. Ferias comerciales en Milano entre el 9 y el 13 mayo: conviene cotizar la habitación 9–13 cuanto antes, con cancelación flexible; no hay disponibilidad verificada."
   },
   "reservations": [
     [
@@ -1070,7 +1064,7 @@
             }
           ],
           "quotedAt": "2026-11-14",
-          "notes": "Cotización proporcionada por el viajero, NO pagada ni comprada. Incluye 15 kg de equipaje de mano, una maleta documentada y elección de asiento estándar. Reconfirmar precio y condiciones al comprar."
+          "notes": "Cotización proporcionada por el viajero, NO pagada ni comprada. Incluye una pieza de cabina y un artículo personal de hasta 15 kg combinados, una maleta documentada en ruta europea según la tarifa y asiento estándar. Reconfirmar precio y condiciones al comprar."
         }
       ],
       "links": [
@@ -1144,8 +1138,8 @@
         }
       ],
       "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje.",
-      "ticketGuide": "Compra: Trenord / Malpensa Express (web o app), elegir Milano Centrale ↔ Malpensa Aeroporto T1 y fecha. Billete digital Malpensa Express: válido en el día elegido hasta fin de servicio, sin convalidación física; mostrar título en móvil. Existe retorno digital de 30 días por €25 (≈ $519 MXN) frente a dos sencillos de €15 (≈ $311 MXN) (€30 (≈ $622 MXN)), sujeto a que la compra cubra ambos sentidos y fechas; comparar antes de comprar.",
-      "notes": " Comparar retorno Trenord de 30 días (tarifa €25 (≈ $519 MXN) vigente como referencia) con 2 sencillos €30 (≈ $622 MXN); evitar contabilizar ambas modalidades."
+      "ticketGuide": "Compra oficial Trenord/Malpensa Express: para 9 y 21 mayo 2027, comprobar la validez de 30 días y el sentido correcto del billete digital ida/vuelta (€25 en tarifa de referencia 2026) frente a dos sencillos (€15 cada uno). El importe no se sustituye en el presupuesto hasta elegir la opción de compra. Billete digital válido el día indicado según condiciones; mostrarlo en móvil.",
+      "notes": "Billete digital Malpensa Express: comparar €25 (≈ $519 MXN) de ida y vuelta en 30 días frente a dos sencillos de €15 (≈ $311 MXN) cada uno, según condiciones 2026 del operador; fechas domingo 9 de mayo y viernes 21 de mayo de 2027. Presupuesto actual: dos sencillos (sin duplicar pase)."
     },
     {
       "id": "train-torino",
@@ -1796,7 +1790,7 @@
           "id": "A",
           "provider": "Trenitalia · regional 5 Terre Express",
           "status": "reference",
-          "selectedFare": "card-reference",
+          "selectedFare": "card-high",
           "journeys": [
             {
               "direction": "oneway",
@@ -1875,7 +1869,7 @@
               "refunds": null
             }
           ],
-          "notes": "Cinque Terre Treno MS Card: €22 es referencia mínima de 2026, variable según fecha. Para viernes 14 mayo 2027 consultar bandas, servicios incluidos y el coste individual de 4–5 trayectos; el billete de Via dell’Amore requiere la modalidad específica correspondiente, no incluida automáticamente. No sumar tarjeta y billetes comparativos.",
+          "notes": "Presupuesto prudente: €35 de tarjeta Treno MS Card de 2026, sin afirmar que sea la tarifa del viernes 14 mayo 2027. Revisar tarifario oficial y banda del día; si los billetes sencillos resultan más convenientes, sustituir el pase, nunca sumar ambos. Via dell’Amore requiere título adicional específico.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1889,56 +1883,6 @@
           "url": "https://www.trenitalia.com/es/conexiones/explora-5-terre.html"
         }
       ],
-      "returnAlternatives": {
-        "fromMonterosso": [
-          {
-            "id": "A",
-            "operator": "Trenitalia Regionale 12237",
-            "departure": "18:21",
-            "arrival": "18:48",
-            "priceEUR": 8
-          },
-          {
-            "id": "B",
-            "operator": "Trenitalia 5 Terre Express 22943",
-            "departure": "18:42",
-            "arrival": "19:05",
-            "priceEUR": 8
-          },
-          {
-            "id": "C",
-            "operator": "Trenitalia 5 Terre Express 22945",
-            "departure": "19:13",
-            "arrival": "19:40",
-            "priceEUR": 8
-          }
-        ],
-        "fromVernazza": [
-          {
-            "id": "A",
-            "operator": "Trenitalia 5 Terre Express 22939",
-            "departure": "17:46",
-            "arrival": "18:05",
-            "priceEUR": 8
-          },
-          {
-            "id": "B",
-            "operator": "Trenitalia 5 Terre Express 22941",
-            "departure": "18:18",
-            "arrival": "18:40",
-            "priceEUR": 8
-          },
-          {
-            "id": "C",
-            "operator": "Trenitalia 5 Terre Express 22943",
-            "departure": "18:46",
-            "arrival": "19:05",
-            "priceEUR": 8
-          }
-        ],
-        "referenceDate": "2026-10-31",
-        "travelDate": "2027-05-15"
-      },
       "boardingLocations": [
         {
           "name": "La Spezia Centrale station",
@@ -1962,7 +1906,7 @@
         }
       ],
       "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje.",
-      "notes": "undefined Cada tramo tiene ahora A/B/C seleccionables por separado. Los importes de €8 (≈ $166 MXN) por tramo son comparativos y están excluidos del presupuesto para no duplicarlos con el pase. Si se escogen billetes individuales, seleccionar en este transporte padre la tarifa individual correspondiente al recorrido y revisar si se añade Monterosso.",
+      "notes": "El tren entre pueblos se presupone mediante la selección del billete o Cinque Terre Treno MS Card. Los €8 por tramo son referencias comparativas de 2026, no gastos adicionales al pase. Revisar opciones de banda 2027, condiciones de entrada a Via dell’Amore y saldo de trayectos antes de comprar.",
       "ticketGuide": "Compra: comparar Cinque Terre Treno MS Card de 1 día con 4 o 5 billetes regionales; la tarjeta nominativa cubre solo servicios regionales autorizados, no Intercity. Regional digital: activación automática en salida seleccionada; papel: validar antes de abordar. Consultar condición específica de activación de la tarjeta y documento de identidad antes de comprar."
     },
     {
@@ -2814,7 +2758,7 @@
       "options": [
         {
           "id": "A",
-          "provider": "Trenitalia · Intercity 651 + Regionale 18707",
+          "provider": "Trenitalia · combinación La Spezia → Viareggio → Lucca (servicio por confirmar)",
           "status": "reference",
           "selectedFare": "ref",
           "journeys": [
@@ -2826,16 +2770,14 @@
                   "to": "Viareggio",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Trenitalia · Intercity 651",
-                  "service": "Referencia RFI otoño 2026, horario festivo; revisar 2027"
+                  "operator": "Trenitalia · servicio por confirmar"
                 },
                 {
                   "from": "Viareggio",
                   "to": "Lucca",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Trenitalia · Regionale 18707",
-                  "service": "Referencia RFI 01/11/2026, servicio especial por obras"
+                  "operator": "Trenitalia · servicio por confirmar"
                 }
               ]
             }
@@ -2843,7 +2785,7 @@
           "fares": [
             {
               "id": "ref",
-              "name": "Desde · consulta del 01/11/2026",
+              "name": "Referencia histórica €13,60 (≈ $282 MXN); estimar hasta abrir venta mayo 2027",
               "price": {
                 "amount": 13.6,
                 "currency": "EUR"
@@ -2852,7 +2794,7 @@
               "refunds": "Según tarifa seleccionada"
             }
           ],
-          "notes": "Servicio regional/intercity y precio referencial 2026. Para domingo 16 mayo 2027, comprobar transbordo real, horario dominical y consigna en Lucca, dejando al menos 20–30 min de margen en enlaces que exijan cambio; no asumir conexión de 6 minutos entre IC y regional.",
+          "notes": "Selección orientativa: el domingo 16 mayo 2027, elegir combinación real con transbordo Viareggio de al menos 20–30 minutos. No se ha elegido ningún tren concreto: la antigua combinación IC651 → R18707 (6 min, regional extraordinario noviembre 2026) NO debe reservarse. Precio de referencia histórico €13,60, no cotizado en fecha.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2974,8 +2916,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Viareggio%20railway%20station"
         }
       ],
-      "boardingNote": "Los enlaces señalan estaciones; confirmar andén/plataforma en pantallas el día del viaje. Opción A: cambio en Viareggio de solo 6 minutos (IC651 10:09 → R18707 10:15). Muy ajustado; el segundo tren era extraordinario de otoño 2026, revisar alternativas 2027.",
-      "notes": "\nPENDIENTE 2027 (prioritario): cuando se publiquen los horarios para domingo 16/05/2027, buscar y elegir una conexión La Spezia Centrale → Lucca con transbordo de AL MENOS 20 MINUTOS; evitar la opción actual IC 651 → R 18707 en Viareggio (solo 6 minutos; regional extraordinario de 2026). No comprar antes de reconfirmar operatividad y andenes.",
+      "boardingNote": "La Spezia Centrale → Viareggio → Lucca: confirmar servicios, andenes y margen de al menos 20–30 minutos cuando estén publicados los horarios del domingo 16 mayo. No seleccionar la antigua combinación de 6 minutos; los enlaces apuntan a estaciones.",
+      "notes": "PENDIENTE MAYO 2027: comprobar horarios de domingo 16 mayo y consigna de equipaje abierta en Lucca. El presupuesto €13,60 es una referencia de noviembre 2026; sin servicio reservado. Plan B: tren directo de La Spezia a Firenze si no es viable la escala dominical.",
       "ticketGuide": "Compra: seleccionar operador, fecha, estación exacta, hora y tarifa en Trenitalia o Italo; revisar condiciones de cambio. Italo, Frecciarossa e Intercity electrónicos: presentar billete/PNR y documento según operador, no timbrar en máquina. Regionale digital Trenitalia: validación automática a salida programada; regional en papel: convalidar en máquina antes de subir. No cambiar de operador sin billete válido."
     },
     {
@@ -3587,9 +3529,9 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station"
         }
       ],
-      "boardingNote": "Milano Centrale: localizar andén Malpensa Express en pantallas (no es tren de Milano Cadorna). Malpensa Aeroporto T1: bajar y seguir señales Departures/Partenze hacia terminal. Billete digital Trenord, comprobar condiciones vigentes; no validar físicamente si es electrónico. Opción A/B/C vinculadas al tren de Firenze, 35 minutos de conexión programada.",
-      "ticketGuide": "Compra: Trenord / Malpensa Express (web o app), elegir Milano Centrale ↔ Malpensa Aeroporto T1 y fecha. Billete digital Malpensa Express: válido en el día elegido hasta fin de servicio, sin convalidación física; mostrar título en móvil. Existe retorno digital de 30 días por €25 (≈ $519 MXN) frente a dos sencillos de €15 (≈ $311 MXN) (€30 (≈ $622 MXN)), sujeto a que la compra cubra ambos sentidos y fechas; comparar antes de comprar.",
-      "notes": " Revisar pase digital ida/vuelta de 30 días Malpensa Express (€25 (≈ $519 MXN) referencia) para ambos viajes del 04/04 y 16/04; NO activar doble conteo."
+      "boardingNote": "Milano Centrale: verificar andén de Malpensa Express con destino Malpensa Aeroporto T1, no Milano Cadorna. Tras llegar, seguir señalización Partenze/Departures hacia T1. Los billetes de tren Firenze–Milano y Milano–MXP son independientes; conservar conexión de 45–60 minutos como objetivo y revisar alertas de servicio.",
+      "ticketGuide": "Compra oficial Trenord/Malpensa Express: para 9 y 21 mayo 2027, comprobar la validez de 30 días y el sentido correcto del billete digital ida/vuelta (€25 en tarifa de referencia 2026) frente a dos sencillos (€15 cada uno). El importe no se sustituye en el presupuesto hasta elegir la opción de compra. Billete digital válido el día indicado según condiciones; mostrarlo en móvil.",
+      "notes": "Billete digital Malpensa Express: comparar €25 (≈ $519 MXN) de ida y vuelta en 30 días frente a dos sencillos de €15 (≈ $311 MXN) cada uno, según condiciones 2026 del operador; fechas domingo 9 de mayo y viernes 21 de mayo de 2027. Presupuesto actual: dos sencillos (sin duplicar pase)."
     }
   ],
   "hotels": [
@@ -3603,7 +3545,7 @@
       "status": "Candidato principal · NO reservado",
       "rate": "Presupuesto orientativo 4 noches $10,000–$14,000 MXN; sin cotización ni disponibilidad verificadas para 9–13 mayo 2027. Referencia histórica noviembre de 2026 no extrapolable.",
       "rateConditions": "Comparar habitación individual con desayuno/cancelación flexible para 9–13 mayo; tarifa exacta pendiente.",
-      "notes": "Requiere registro gratuito B&me. Confirmar precio final, impuestos, condiciones de cancelación y posibilidad de dejar equipaje antes del check-in. La referencia aproximada de otras fechas no garantiza disponibilidad ni tarifa en 2027.",
+      "notes": "Entre el 9 y el 13 de mayo de 2027 coinciden ferias comerciales en el área metropolitana de Milano (entre ellas TOYS & BABY MILANO, ISSA PULIRE, MADE IN STEEL, PACKAGING PREMIERE y LAMIERA, según calendario regional publicado). Puede aumentar la demanda hotelera; no es una prueba de disponibilidad ni de una tarifa concreta. Priorizar reserva con cancelación flexible o comparación de alternativas cercanas a Milano Centrale. Requiere revisar piso/ascensor, precio final, impuestos, desayuno y acceso nocturno tras llegada a MXP.",
       "links": [
         {
           "label": "Reserva oficial",
