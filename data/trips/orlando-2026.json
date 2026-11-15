@@ -1,0 +1,169 @@
+{
+  "id": "orlando-2026",
+  "name": "Orlando 2026 · Disney y Universal",
+  "flag": "🇺🇸",
+  "start": "2026-12-02",
+  "end": "2026-12-07",
+  "travelerCount": 1,
+  "tag": "PARQUES TEMÁTICOS · HARRY POTTER, DISNEY Y MAGIA NAVIDEÑA",
+  "routeCities": [
+    "Orlando",
+    "Universal Studios Florida",
+    "Universal Islands of Adventure",
+    "Magic Kingdom",
+    "Universal Epic Universe"
+  ],
+  "bases": [
+    [
+      "Orlando",
+      5
+    ]
+  ],
+  "work": 4,
+  "profile": {
+    "pace": "active",
+    "paceWhy": "Cuatro jornadas completas de parques consecutivas, con pausas y una sola estancia.",
+    "solo": true,
+    "soloWhy": "Recorrido viable en solitario; se prioriza transporte de hotel y aplicación sin renta de automóvil.",
+    "weather": "Templado y relativamente seco",
+    "weatherWhy": "Diciembre suele tener temperaturas agradables, aunque existen frentes fríos y días lluviosos."
+  },
+  "intro": "Orlando reúne cuatro días de parques temáticos y celebraciones de fin de año. Primero llegan las calles de Diagon Alley en Universal Studios Florida, seguidas por Hogsmeade, el castillo de Hogwarts y las atracciones de Islands of Adventure. El recorrido continúa en Magic Kingdom, con el castillo de Cenicienta, Haunted Mansion y su ambiente navideño. La última jornada está dedicada a Epic Universe, donde Super Nintendo World, Ministry of Magic y otros mundos temáticos completan el viaje. La estancia se mantiene en un solo alojamiento, con llegada y regreso desde Ciudad de México y tardes libres para disfrutar del ambiente de Universal CityWalk.",
+  "introShort": "Cuatro días de parques en Orlando: Diagon Alley en Universal Studios Florida, Hogwarts en Islands of Adventure, el castillo de Magic Kingdom y los mundos de Epic Universe, con ambiente navideño, una sola estancia y traslados sencillos.",
+  "introHighlights": [
+    "Orlando",
+    "Universal Studios Florida",
+    "Islands of Adventure",
+    "Magic Kingdom",
+    "Epic Universe",
+    "Super Nintendo World"
+  ],
+  "flight": "Volaris directo MEX–MCO, 2/12 11:10–15:18 y 7/12 17:05–19:45, tarifa redonda mostrada en captura del 15/11/2026: $7,015 MXN por persona. Cotización de referencia NO comprada; equipaje de mano y documentado con costo adicional; verificar vigencia, horario y total.",
+  "local": "Sin automóvil. Comparar alojamiento en Universal con autobuses incluidos hacia los parques y traslados por aplicación para MCO y Magic Kingdom. La distancia Universal–Disney implica costo adicional de movilidad.",
+  "experiences": [
+    {
+      "city": "Universal Studios Florida",
+      "description": "Diagon Alley, atracciones cinematográficas y decoraciones navideñas; visita independiente sin Park-to-Park."
+    },
+    {
+      "city": "Universal Islands of Adventure",
+      "description": "Hogsmeade, Hogwarts, Jurassic Park y atracciones intensas. Hogwarts Express requiere Park-to-Park y no está incluido en la tarifa básica."
+    },
+    {
+      "city": "Magic Kingdom",
+      "description": "Castillo de Cenicienta, Haunted Mansion, Pirates of the Caribbean y espectáculo nocturno según programación del 5 de diciembre."
+    },
+    {
+      "city": "Universal Epic Universe",
+      "description": "Super Nintendo World, Ministry of Magic, How to Train Your Dragon y Celestial Park, sujetos a horarios y disponibilidad."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-02",
+      "title": "Llegada a Orlando",
+      "base": "Orlando",
+      "am": "Vuelo directo MEX→MCO 11:10–15:18 según captura de referencia; sujeto a nueva confirmación.",
+      "pm": "Traslado al hotel, registro y descanso.",
+      "night": "Cena cerca del alojamiento; no programar parque.",
+      "note": "Confirmar vuelo y equipaje. Horarios aún sin compra.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 2,
+      "date": "2026-12-03",
+      "title": "Universal Studios Florida",
+      "base": "Orlando",
+      "am": "Llegar con antelación y recorrer Diagon Alley, atracciones principales y espectáculos.",
+      "pm": "Continuar Universal Studios Florida, comida y pausas.",
+      "night": "CityWalk o celebración navideña incluida si está programada.",
+      "note": "Entrada Universal 3 parques/3 días, un parque cada día. No incluye Hogwarts Express entre parques.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 3,
+      "date": "2026-12-04",
+      "title": "Universal Islands of Adventure",
+      "base": "Orlando",
+      "am": "Visitar Hogsmeade, Hogwarts y Jurassic Park.",
+      "pm": "Atracciones de Marvel y otras áreas; contemplar filas y pausas.",
+      "night": "Regreso al hotel en transporte oficial si corresponde.",
+      "note": "La experiencia Hogwarts Express requiere boleto Park-to-Park; no está incluida en la oferta base.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 4,
+      "date": "2026-12-05",
+      "title": "Disney Magic Kingdom",
+      "base": "Orlando",
+      "am": "Traslado temprano hacia Magic Kingdom y recorrido por Fantasyland y Liberty Square.",
+      "pm": "Pirates of the Caribbean, Haunted Mansion y atracciones prioritarias, según disponibilidad.",
+      "night": "Permanecer hasta espectáculo nocturno si se programa y operar horario regular.",
+      "note": "Sábado sin Mickey's Very Merry Christmas Party según calendario oficial 2026; revisar horas y precios antes de comprar.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 5,
+      "date": "2026-12-06",
+      "title": "Universal Epic Universe",
+      "base": "Orlando",
+      "am": "Llegar temprano y comenzar por Super Nintendo World o área prioritaria.",
+      "pm": "Explorar Ministry of Magic, How to Train Your Dragon y otras áreas, con pausas.",
+      "night": "Regreso y descanso; preparar equipaje.",
+      "note": "Consultar disponibilidad de atracciones y filas; día dominical posiblemente más concurrido.",
+      "spend": null,
+      "places": []
+    },
+    {
+      "n": 6,
+      "date": "2026-12-07",
+      "title": "Orlando a CDMX",
+      "base": "Orlando",
+      "am": "Desayuno, check-out y equipaje.",
+      "pm": "Traslado con margen al aeropuerto MCO; vuelo directo de referencia 17:05–19:45.",
+      "night": "Llegada a Ciudad de México.",
+      "note": "El vuelo es referencia visual, no reserva confirmada.",
+      "spend": null,
+      "places": []
+    }
+  ],
+  "reservations": [],
+  "hotels": [],
+  "stays": [],
+  "majorTransport": [],
+  "mapPoints": [],
+  "expenses": [],
+  "budgetPreliminary": true,
+  "budgetRange": "$29,000–$40,000 MXN por persona; escenario orientativo, no tarifa cerrada.",
+  "budgetNote": "Vuelos $7,015 MXN en captura de 15/11/2026 (no comprados); 5 noches de hotel $7,000–$11,000 MXN estimadas; entradas Universal 3 días desde US$297 + impuestos, sujetas a fechas y restricciones; Magic Kingdom 5/12/2026 cotización exacta pendiente (referencia no oficial ~US$204 + impuestos); alimentos, taxis, equipaje y contingencias estimados. No contar pases Express, souvenirs ni fiestas con entrada adicional.",
+  "ticketNotes": [
+    "Universal 3 parques/3 días desde US$297 más impuestos para público general: un día en Universal Studios Florida, Islands of Adventure y Epic Universe; no garantiza precio o disponibilidad en 3, 4 y 6 de diciembre.",
+    "Magic Kingdom para sábado 5 de diciembre: día sin fiesta navideña especial según fechas oficiales 2026 (fiestas 3, 4 y 6). Comprar entrada regular para esta fecha; precio exacto sin confirmar.",
+    "No elegir paquete promocional de US$255 exclusivo para residentes de Florida.",
+    "Hogwarts Express no está incluido en boleto Universal 1 parque por día; requiere Park-to-Park."
+  ],
+  "sources": [
+    {
+      "label": "Universal ofertas oficiales",
+      "url": "https://www.universalorlando.com/web/en/us/tickets-packages/deals-specials"
+    },
+    {
+      "label": "Disney fiesta navideña y fechas 2026",
+      "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+    },
+    {
+      "label": "Disney entradas oficiales",
+      "url": "https://disneyworld.disney.go.com/admission/tickets/theme-parks/"
+    }
+  ],
+  "sourceNote": "Revisión 15/11/2026. Las promociones publican precios desde; no se verificó checkout de parques/hotel ni el estado actual de la tarifa aérea.",
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Priorizar vuelos, hotel y accesos fechados; nada está comprado."
+  }
+}
