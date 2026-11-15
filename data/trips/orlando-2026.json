@@ -391,17 +391,25 @@
       "address": "Rosen Inn Closest to Universal, 6327 International Dr, Orlando, FL 32819, USA",
       "checkIn": "2026-12-02",
       "checkOut": "2026-12-07",
-      "status": "Plan A seleccionado · tarifa cotizada, NO reservado",
-      "rate": "Tarifa flexible, habitación Deluxe Double con dos camas dobles; cinco noches del 2 al 7 diciembre, un adulto. US$479.95 (≈ $8936 MXN) antes de impuestos + US$59.99 (≈ $1117 MXN) de impuestos = US$539.94 (≈ $10,053 MXN). Captura del usuario 15/11/2026.",
-      "rateConditions": "Tarifa Best Available Rate seleccionada para comparar; verificar fecha límite exacta de cancelación y reglas de cobro antes de reservar. Sin resort fee según hotel; no incluir desayuno ni entradas. Habitación privada para un adulto. Check-in oficial desde las 16:00 y check-out a las 11:00; titular con pasaporte físico y tarjeta a su nombre. Confirmar depósito o preautorización.",
-      "notes": "Plan A por ahorro significativo frente a paquetes oficiales. Tiene refrigerador, microondas y cafetera. Transporte gratuito a Universal/Epic Universe programado, no continuo; reserva presencial obligatoria, aforo limitado y paradas múltiples. No otorga entrada temprana a parques por ser hotel socio. Traslados MCO y Disney de pago: usar Uber/Lyft como opción principal. El FAQ del hotel menciona shuttles a Disney de pago, sin itinerario ni precio confirmados; preguntar en recepción, no darlos por incluidos.",
+      "status": "Plan A · alojamiento elegido para presupuestar · COTIZADO, NO reservado",
+      "rate": "Deluxe Double con dos camas dobles, baño privado, para 1 adulto; 2–7 diciembre 2026 (5 noches). Cotización de captura 15/11/2026: US$479.95 tarifa de habitación + US$59.99 impuestos = US$539.94 (≈ $10,053 MXN). La cifra es de tu captura, no disponibilidad actual garantizada.",
+      "rateConditions": "Best Available Rate denominada flexible en tu selección. Antes de pagar, volver a comprobar la fecha y hora exactas de cancelación sin penalidad, política de no-show, cobro/retención o depósito y total con impuestos. El hotel confirma cero resort fee; no incluye desayuno ni entradas. Check-in 16:00 y salida a más tardar 11:00, sujetos a posibles cargos por cambio de hora. Para registrarte, pasaporte físico y tarjeta de crédito a nombre del titular.",
+      "notes": "Ubicación: International Drive, a unos 1.1 mi (≈ 1.8 km) del complejo original de Universal, distancia aproximada publicada por el hotel, no ruta a pie ni acceso a Epic. Habitación Deluxe Double sin humo: dos camas dobles, baño privado con tina/regadera, caja fuerte, aire acondicionado, Wi-Fi, mini refrigerador, microondas y cafetera (verificados en ficha oficial). Shuttle gratuito programado a Universal Studios/Islands y Epic, sujeto a reserva presencial y disponibilidad; no confiere entrada anticipada. MCO y Disney requieren gasto adicional. Opción de habitación King puede explorarse solo si mejora precio/condiciones; no cambiar la categoría cotizada automáticamente.",
       "links": [
         {
-          "label": "Rosen Inn Closest to Universal · oficial",
+          "label": "Rosen Inn · habitación Deluxe Double y servicios",
+          "url": "https://www.roseninn6327.com/rooms/deluxe-double-room-with-two-double-beds"
+        },
+        {
+          "label": "Rosen Inn · sitio oficial y reserva",
           "url": "https://www.roseninn6327.com/"
         },
         {
-          "label": "Rosen · transporte a parques",
+          "label": "Rosen Inn · reglas de check-in y transporte",
+          "url": "https://www.roseninn6327.com/faq"
+        },
+        {
+          "label": "Rosen Inn · shuttle a parques",
           "url": "https://www.roseninn6327.com/transportation"
         }
       ],
@@ -411,24 +419,24 @@
       "id": "orlando-terraluna",
       "city": "Orlando",
       "name": "Universal Terra Luna Resort",
-      "address": "Universal Terra Luna Resort, Orlando, Florida, USA",
+      "address": "Universal Terra Luna Resort, 5500 Epic Blvd, Orlando, FL 32819, USA",
       "checkIn": "2026-12-02",
       "checkOut": "2026-12-07",
-      "status": "Plan B alternativo · paquete cotizado, NO reservado",
-      "rate": "Paquete hotel 5 noches Standard 2 Queen Beds + entradas Universal Park-to-Park promocionales (3 días + 2 gratis). Total conjunto US$1577.46 (≈ $29,370 MXN) en captura del 15/11/2026, impuestos incluidos según carrito. Desglose del costo solo hotel no disponible.",
-      "rateConditions": "Descuento de alojamiento y US$100 de paquete ya aplicados en total; no restarlos de nuevo. No incluye vuelos, Disney ni seguro de paquete opcional. Revisar plazo de pago/cancelación: la fecha mostrada de saldo pendiente requiere aclaración.",
-      "notes": "Comparativa excluyente, no sumar al presupuesto seleccionado. Hotel oficial con shuttle gratuito hacia Universal y beneficio de entrada anticipada a áreas seleccionadas; no equivale a transporte Disney o aeropuerto gratis.",
+      "status": "Plan B · alternativa EXCLUYENTE (paquete hotel + Universal) · COTIZADO, NO reservado",
+      "rate": "Cotización capturada 15/11/2026: US$1,577.46 (≈ $29,370 MXN) por paquete COMPLETO de cinco noches Standard Room – Double Queen + entradas promocionales Universal Park-to-Park (3 días + 2 gratis). NO es tarifa de alojamiento por separado; el reparto hotel/entradas no está disponible y no debe estimarse como real.",
+      "rateConditions": "Para comparar con Rosen, no sumar también las entradas US$335.99: los productos son alternativos y las entradas del paquete tienen condiciones diferentes. La página oficial del HOTEL, en reservas de solo habitación, indica depósito de una noche + impuestos y cancelación sin penalidad con seis o más días; de cero a cinco días aplica una noche + impuestos. Esas reglas NO se pueden atribuir sin verificar al paquete seleccionado: sus términos de pago, cancelación, cambios y eventual protección deben revisarse antes de reservar. Check-in 16:00, check-out 11:00. No incluye vuelo, entrada Disney, comidas ni transporte MCO gratuito.",
+      "notes": "Situado junto a Epic Universe, pero no asumir que se puede entrar caminando directamente: el acceso a los parques se realiza por transporte autorizado. Hotel oficial Universal con buses gratuitos a los parques y CityWalk. Early Park Admission hasta una hora antes, solamente para parques y atracciones seleccionados, sujeto a entrada válida y calendario; no equivale a Express Pass ni garantiza Battle at the Ministry. Habitación con dos camas queen, baño privado; más cómodo para jornadas Universal, pero el gasto adicional debe compensar sus beneficios reales.",
       "links": [
         {
-          "label": "Universal · hoteles oficiales",
-          "url": "https://www.universalorlando.com/web/en/us/places-to-stay"
+          "label": "Terra Luna · hotel oficial, servicios y condiciones",
+          "url": "https://www.universalorlando.com/web/en/us/places-to-stay/universal-terra-luna-resort"
         },
         {
-          "label": "Universal · paquetes",
+          "label": "Universal · buscar paquete hotel y entradas",
           "url": "https://www.universalorlando.com/web/en/us/tickets-packages/deals-specials"
         }
       ],
-      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universal%20Terra%20Luna%20Resort%20Orlando"
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universal%20Terra%20Luna%20Resort%2C%205500%20Epic%20Blvd%2C%20Orlando%2C%20FL%2032819%2C%20USA"
     }
   ],
   "stays": [],
@@ -858,6 +866,18 @@
     {
       "label": "MCO · guía oficial llegadas A/B",
       "url": "https://orlandoairports.net/site/uploads/Arrivals-Guide.pdf"
+    },
+    {
+      "label": "Rosen Inn · ficha oficial Deluxe Double",
+      "url": "https://www.roseninn6327.com/rooms/deluxe-double-room-with-two-double-beds"
+    },
+    {
+      "label": "Rosen Inn · FAQ check-in, documento físico y shuttle",
+      "url": "https://www.roseninn6327.com/faq"
+    },
+    {
+      "label": "Terra Luna · dirección, impuestos y reglas de habitación",
+      "url": "https://www.universalorlando.com/web/en/us/places-to-stay/universal-terra-luna-resort"
     }
   ],
   "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. El precio de Magic Kingdom para 5/12 sigue sin cotizar. Park-to-Park desde US$357 + impuestos NO representa precio para fechas específicas.",
@@ -995,7 +1015,7 @@
       }
     ]
   },
-  "lodgingSummary": "Cinco noches en un único alojamiento en International Drive: Rosen Inn Closest to Universal, principal opción cotizada y aún no reservada. Terra Luna se conserva como alternativa excluyente.",
+  "lodgingSummary": "Plan A: 5 noches en Rosen Inn Closest to Universal, habitación Deluxe Double privada para 1 adulto en International Drive, cotizada a US$539.94 con impuestos, sin reserva. Plan B Terra Luna es una alternativa excluyente de paquete hotel + entradas (US$1,577.46), no un segundo alojamiento ni un costo adicional.",
   "heroLodgingSummary": "5 noches · 1 alojamiento",
   "exchangeNote": "Para importes en dólares se utiliza USD 1 = MXN 18.6188 según referencia Banxico del 15/11/2026. Conversiones aproximadas, no cargos finales.",
   "costExclusions": "No incluidos: boleto Disney real por cotizar (provisión solo en rango), seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
@@ -1109,5 +1129,6 @@
         }
       ]
     }
-  ]
+  ],
+  "hotelsComparison": "Escenarios EXCLUYENTES para las mismas cinco noches: Plan A Rosen Inn US$539.94 de hotel + Universal 3-Day, 3-Park US$335.99 como subtotal de boleto = US$875.93 antes de posibles impuestos pendientes del boleto; Park-to-Park no incluido, sin entrada anticipada. Plan B Terra Luna paquete hotel + Universal Park-to-Park promocional por US$1,577.46 según captura, con beneficio Early Park Admission sujeto a restricciones. Diferencia aritmética entre importes mostrados US$701.53 (≈ $13,063 MXN), NO sobreprecio real comparable al céntimo porque los productos, duración de entradas, impuestos y beneficios son distintos. Ambos excluyen Disney, vuelo y traslados a MCO. No sumar Plan B al presupuesto Plan A."
 }
