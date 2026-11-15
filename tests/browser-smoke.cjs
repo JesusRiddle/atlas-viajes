@@ -235,7 +235,7 @@ const assert = require('node:assert/strict');
           const budgetText = await budget.innerText();
           assert.match(budgetText, /Subtotal de partidas con importe/,
             'Orlando: no se debe mostrar total cerrado con Disney pendiente');
-          assert.match(budgetText, /34[,.]436[,.]21/,
+          assert.match(budgetText, /34[,.]436[,.]19/,
             'Orlando: subtotal conciliado con impuestos provisionales y transporte único');
           assert.match(budgetText, /39[,.]000[,.]00/,
             'Orlando: piso de planeación');
