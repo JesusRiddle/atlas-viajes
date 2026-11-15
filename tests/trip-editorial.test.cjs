@@ -380,7 +380,7 @@ test('Italia mayo 2027: reservas, gastos, mapa y enlaces quedan sincronizados co
 test('Italia mayo 2027: evita regresiones de fechas ocultas y enlaces ferroviarios desaconsejados', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
   const all = JSON.stringify(trip);
-  assert.doesNotMatch(all, /(?:\\b1mayo\\b|04\\/04(?:\\/2027)?|16\\/04(?:\\/2027)?|undefined Cada tramo)/);
+  for (const stale of ['1mayo', '04/04', '16/04', 'undefined Cada tramo']) assert.ok(!all.includes(stale), 'Referencia obsoleta: ' + stale);
   assert.match(trip.days[13].headerPlaces.join(' '), /22 de mayo de 2027/);
   const lucca = trip.majorTransport.find(x=>x.id==='train-la-spezia-lucca');
   const selected = lucca.options.find(x=>x.id===lucca.selectedOption);
