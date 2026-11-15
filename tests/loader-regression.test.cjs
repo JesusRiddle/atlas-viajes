@@ -333,7 +333,8 @@ test('Día por día y Presupuesto muestran pendientes sin totales ficticios', ()
 
 test('el alta mínima es visible de inmediato y conserva los viajes históricos', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog.length, 22);
+    assert.equal(catalog.length, 23);
+    assert.ok(catalog.some(item => item.id === 'orlando-2026' && item.available));
     assert.ok(catalog.every(item => item.available));
     assert.equal(catalog.filter(item => item.homeGroup === 'ideas').length, 15);
     assert.ok(catalog.some(item => item.id === 'italia-norte-2027' && item.available));
@@ -359,9 +360,10 @@ test('el alta mínima es visible de inmediato y conserva los viajes históricos'
 
 test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserva su contenido completo', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog[0].id, 'colombia-2027');
+    assert.equal(catalog[0].id, 'orlando-2026');
     assert.equal(catalog[0].available, true);
-    assert.deepEqual(Array.from(catalog.slice(0, 7), item => item.id), [
+    assert.deepEqual(Array.from(catalog.filter(item => item.homeGroup !== 'ideas').slice(0, 8), item => item.id), [
+        'orlando-2026',
         'colombia-2027',
         'suiza-nevada-2027',
         'italia-norte-2027',
@@ -369,7 +371,7 @@ test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserv
         'suiza-verde-2027',
         'japon-2027',
         'patagonia-argentina-2027'
-    ], 'El orden de portada sigue las fechas de viaje 2027');
+    ], 'Los viajes principales conservan el orden cronológico con Orlando 2026 antes de 2027');
     const migrated = JSON.parse(fs.readFileSync('data/trips/espana-portugal-2027.json', 'utf8'));
     assert.equal(migrated.id, 'espana-portugal-2027');
     assert.equal(migrated.days.length, 20);
