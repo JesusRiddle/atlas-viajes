@@ -639,7 +639,7 @@
     },
     {
       "id": "orlando-universal",
-      "category": "activities",
+      "category": "admission",
       "concept": "Universal 3 parques / 3 días · boleto individual",
       "date": "2026-12-03",
       "cost": {
@@ -651,7 +651,7 @@
     },
     {
       "id": "orlando-disney",
-      "category": "activities",
+      "category": "admission",
       "concept": "Magic Kingdom · entrada independiente pendiente",
       "date": "2026-12-05",
       "cost": {
@@ -663,7 +663,7 @@
     },
     {
       "id": "orlando-airport",
-      "category": "local",
+      "category": "local_transport",
       "concept": "MCO ↔ Rosen Inn · taxi/auto por aplicación, redondo",
       "date": "2026-12-02",
       "cost": {
@@ -675,7 +675,7 @@
     },
     {
       "id": "orlando-disney-transfer",
-      "category": "local",
+      "category": "local_transport",
       "concept": "Rosen Inn ↔ Magic Kingdom · traslados redondos",
       "date": "2026-12-05",
       "cost": {
@@ -687,7 +687,7 @@
     },
     {
       "id": "orlando-extra-local",
-      "category": "local",
+      "category": "local_transport",
       "concept": "Traslados de respaldo a Universal si falla shuttle",
       "date": "2026-12-03",
       "cost": {
@@ -699,7 +699,7 @@
     },
     {
       "id": "orlando-incidentals",
-      "category": "misc",
+      "category": "contingency",
       "concept": "Imprevistos menores",
       "date": "2026-12-02",
       "cost": {
