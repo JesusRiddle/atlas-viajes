@@ -47,7 +47,7 @@
     "Super Nintendo World"
   ],
   "flight": "Volaris directo MEX–MCO, 2/12 11:10–15:18 y 7/12 17:05–19:45, tarifa redonda mostrada en captura del 15/11/2026: $7,015 MXN por persona. Cotización de referencia NO comprada; equipaje de mano y documentado con costo adicional; verificar vigencia, horario y total.",
-  "local": "Rosen Inn está sobre International Drive, al sur del complejo original de Universal. Universal Studios Florida e Islands of Adventure están junto a CityWalk; Epic Universe es otro predio, al sureste. Magic Kingdom está en Walt Disney World, bastante más al oeste: no asumir distancias caminables ni conexión directa entre todos los parques. Para los tres días Universal, usar shuttle gratuito programado de Rosen con reserva; Magic Kingdom requiere transporte por separado. Los marcadores indican lugares, no una ruta de tránsito ni tiempos exactos. Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. Para aeropuerto MCO↔hotel y Rosen↔Magic Kingdom, auto por aplicación/taxi de pago. Viajes programados del hotel gratuitos solo a Universal; no mezclar con SuperStar Shuttle vendido a huéspedes de hoteles Universal.",
+  "local": "Sin coche de alquiler: MCO ↔ Rosen Inn en Uber/Lyft o taxi; Studios/Islands (3–4 dic) y Epic (6 dic) con shuttle gratuito programado de Rosen sujeto a cupos y reserva presencial; Magic Kingdom (5 dic) en Uber/Lyft vía Transportation and Ticket Center y luego monorriel o ferry. Epic Universe está separado del complejo Universal Studios/Islands: no son accesos intercambiables. Los tiempos y costos de aplicaciones son estimaciones, no reservaciones. Las fichas de conexiones terrestres contienen horarios, puntos de recogida, enlaces y presupuestos sin sumar nuevas partidas.",
   "experiences": [
     {
       "city": "Universal Studios Florida · 3 dic · Diagon Alley",
@@ -95,7 +95,7 @@
       "am": "Vuelo directo Volaris MEX 11:10 → MCO 15:18 según captura de referencia del 15/11/2026, sin compra. Llegar con margen a MEX y revisar equipaje.",
       "pm": "Pasar migración, recoger equipaje y tomar Uber/Lyft o taxi autorizado hacia Rosen Inn Closest to Universal; prever tráfico y check-in sin hora comprometida.",
       "night": "Cena sencilla cerca de International Drive. Descansar para cuatro jornadas seguidas de parques.",
-      "mobility": "MCO → Rosen Inn: viaje por carretera orientativo de 25–45 min sin garantía. Presupuesto terrestre provisional de US$70–120 (≈ $1,303–2,234 MXN) por el traslado aeroportuario redondo; no está cotizado en vivo.",
+      "mobility": "Llegada MCO 15:18 según captura, sin vuelo comprado: migración, equipaje y recogida por app/taxi en el punto autorizado de la terminal que corresponda. MCO → Rosen Inn aproximadamente 25–45 min de carretera en condiciones habituales (estimación, no tiempo garantizado); presupuesto aeroportuario US$70–120 redondo para días 1 y 6, contado una sola vez. Revisar ficha de movilidad terrestre y rutas.",
       "note": "Volaris $7,015 MXN redondo mostrado en captura para 1 adulto, sujeto a vigencia y cargos de equipaje. No comprado.",
       "spend": null,
       "places": [],
@@ -122,7 +122,7 @@
       "am": "Entrar a Universal Studios Florida y dedicar las primeras horas a Diagon Alley: Escape from Gringotts, dragón sobre el banco, Ollivanders, Knockturn Alley y tiendas. Fuera del callejón, mirar el Knight Bus; King's Cross es solo exterior, no abordar Hogwarts Express con este boleto.",
       "pm": "Comer en Leaky Cauldron si conviene (fish and chips, cottage pie o pastel de carne) y probar Butterbeer/zumo de calabaza. Después, Revenge of the Mummy y Transformers: The Ride-3D; The Bourne Stuntacular solo si su función encaja.",
       "night": "Volver a Diagon Alley para fotografías nocturnas y decoración festiva; si queda tiempo, Universal CityWalk.",
-      "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. Para la vuelta después del último servicio, presupuestar Uber/Lyft si fuera necesario.",
+      "mobility": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Reserva presencial idealmente un día antes; cupos limitados y horarios sujetos a cambios. Alternativa Uber/Lyft desde North Parking Garage, 6000 Universal Blvd, si se sale después del último shuttle. Ver detalles y rutas en Movilidad y conexiones.",
       "note": "Entrada Universal 3-Day 3-Park, un parque por día; primera utilización 3/12, vigencia dentro de 7 días. Hogwarts Express no está incluido (requiere Park-to-Park).",
       "spend": null,
       "places": [
@@ -149,7 +149,7 @@
       "am": "Priorizar Hagrid's Magical Creatures Motorbike Adventure, Harry Potter and the Forbidden Journey y visita al castillo de Hogwarts. Consultar tiempos de espera y estado de atracciones.",
       "pm": "Recorrer Hogsmeade, Honeydukes, Ollivanders y Flight of the Hippogriff; comida temática en Three Broomsticks (pollo asado, shepherd’s pie o fish and chips). Si hay tiempo: VelociCoaster y Spider-Man; Hulk opcional.",
       "night": "Regresar a Hogsmeade por la ambientación navideña o espectáculo de castillo si se ofrece ese día.",
-      "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. No sacrificar Hogwarts por esperar transporte: ajustar o usar Uber/Lyft según filas.",
+      "mobility": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Reservar lugar anticipadamente en lobby; si el horario limita la experiencia de Hogwarts, regresar en Uber/Lyft desde North Parking Garage. Colchón de apps compartido con Epic, no por parque.",
       "note": "Hagrid y VelociCoaster pueden implicar esperas largas; priorizar Harry Potter. Hogwarts Express solo se puede abordar con Park-to-Park.",
       "spend": null,
       "places": [
@@ -176,7 +176,7 @@
       "am": "Traslado temprano al área de acceso a Magic Kingdom. Comenzar por el castillo de Cenicienta, Seven Dwarfs Mine Train, Peter Pan's Flight y Haunted Mansion según filas.",
       "pm": "TRON Lightcycle / Run, Pirates of the Caribbean y Space Mountain; Big Thunder Mountain Railroad si está operativa. Pausa con waffle o funnel cake de Sleepy Hollow, sin forzar todas las atracciones.",
       "night": "Ver desfile y fuegos artificiales si están programados; regresar al Rosen Inn en Uber/Lyft o taxi.",
-      "mobility": "Rosen Inn no anuncia traslado gratuito directo a Magic Kingdom. Su FAQ menciona opciones de traslado a Disney con cargo, pero sin confirmar horario, ruta ni tarifa: tomar Uber/Lyft como plan principal y consultar en recepción si conviene algún servicio pagado. Considerar transporte por aplicación hasta el Transportation and Ticket Center o punto autorizado y después monorriel/ferry, con margen adicional. Provisión ida/vuelta US$50–90 (≈ $931–1,676 MXN), estimación no cotizada.",
+      "mobility": "Rosen → Transportation and Ticket Center (TTC) en Uber/Lyft o taxi, luego monorriel Express o ferry hasta Magic Kingdom. Regreso en orden inverso, pidiendo vehículo en zona autorizada del TTC. Rosen menciona shuttle Disney pagado sin horario, parada ni precio públicos; no asumir que llega directamente al parque. Provisión para transporte redondo US$50–90; consultar horarios reales del monorriel y del parque.",
       "note": "Disney no programa Mickey's Very Merry Christmas Party el 5/12/2026 (sí 3, 4 y 6). Entrada regular específica de Magic Kingdom pendiente de precio final; comprobar horario y espectáculos.",
       "spend": null,
       "places": [
@@ -203,7 +203,7 @@
       "am": "Prioridad: Harry Potter and the Battle at the Ministry en Place Cachée. Recorrer las calles del París mágico, las varitas de Cosme Acajor y, según horarios, Le Cirque Arcanus. Comida o postre temático en Café L’air De La Sirène, si hay tiempo; revisar alérgenos.",
       "pm": "Siguiente prioridad: Dark Universe y Monsters Unchained: The Frankenstein Experiment; después Super Nintendo World y Mario Kart. Mine-Cart Madness (Donkey Kong), Stardust Racers y Hiccup’s Wing Gliders solo como opciones intercambiables según filas: no intentar completarlas todas.",
       "night": "Paseo por Celestial Park iluminado si la hora de cierre lo permite; si hay buen margen, recorrer brevemente Isle of Berk. Regresar al hotel y preparar equipaje.",
-      "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. Dar prioridad al Ministerio de Magia y reservar asiento para ida y regreso.",
+      "mobility": "Rosen → Epic Universe: 07:15, 08:35, 09:55, 11:15. Retornos: 17:25, 18:40, 19:55, 21:10. Reservar lugar presencialmente el día anterior; no cubre entrada anticipada ni eventos especiales. Alternativa: Uber/Lyft en 1201 Epic Boulevard si las filas o la noche exceden la salida del shuttle; colchón compartido con otros parques.",
       "note": "Epic Universe suele requerir más tiempo del disponible. No prometer todas las atracciones; Ministry of Magic y Dark Universe son las prioridades. No añadir Pandora: está en Animal Kingdom y quedó descartado.",
       "spend": null,
       "places": [
@@ -230,7 +230,7 @@
       "am": "Desayuno, check-out y consigna de equipaje solo si el hotel lo permite; sin actividades lejanas.",
       "pm": "Traslado Rosen Inn → MCO con margen suficiente para vuelo internacional. Volaris MCO 17:05 → MEX 19:45, según captura no comprada.",
       "night": "Llegada a Ciudad de México y traslado a casa.",
-      "mobility": "Uber/Lyft o taxi autorizado; comparar tarifa redonda con proveedores, no añadir el costo dos veces al presupuesto.",
+      "mobility": "Traslado Rosen Inn → MCO con Uber/Lyft o taxi; objetivo orientativo de salir del hotel hacia 12:30–13:00 para vuelo internacional 17:05, sujeto a terminal, tráfico y requisito de check-in de Volaris. Confirmar parada de descenso en terminal asignada. Costo ya incluido en la partida redonda MCO ↔ Rosen de US$70–120; NO sumar otra vez.",
       "note": "Hora de salida 17:05 y llegada a MEX 19:45, sin compra. No programar visitas que pongan en riesgo el vuelo.",
       "spend": null,
       "places": [],
@@ -519,8 +519,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Orlando%20International%20Airport%20Florida"
         }
       ],
-      "boardingNote": "Vuelo directo de referencia, sin reserva; presentarse al aeropuerto con margen de vuelo internacional.",
-      "ticketGuide": "Precio referencial redondo $7,015 MXN mostrado el 15/11/2026. Equipaje de mano y otros servicios sujetos a tarifa y cargos adicionales.",
+      "boardingNote": "Dos vuelos directos según captura del 15/11/2026, sin comprar. En MCO confirmar terminal de Volaris en la tarjeta de embarque para localizar transporte terrestre. Llegar a MCO con margen recomendado de alrededor de 3 h antes de salida internacional; no asumir terminal ni mostrador desde fuentes genéricas.",
+      "ticketGuide": "Volaris MEX→MCO 2 dic 11:10–15:18 (duración aproximada 3 h 08 min por cambio de zona UTC−6 a UTC−5) y MCO→MEX 7 dic 17:05–19:45 (3 h 40 min), referencia no comprada de $7,015 MXN redondo. Equipo personal/cabina/documentado, cambios y terminales requieren confirmación antes de pago. Se contabiliza solo una vez en expenses.orlando-flight.",
       "notes": "Se presupuesta una sola vez como vuelo internacional redondo."
     }
   ],
@@ -701,9 +701,22 @@
   ],
   "budgetNote": "Escenario Rosen Inn: vuelo $7,015 MXN; alojamiento US$539.94 (≈ $10,053 MXN); Universal US$335.99 (≈ $6,256 MXN) (subtotal del carrito); MCO↔Rosen provisión US$95.00 (≈ $1,769 MXN); Rosen↔Disney US$70.00 (≈ $1,303 MXN); respaldo de transporte US$40.00 (≈ $745 MXN); comidas US$290.00 (≈ $5,399 MXN); imprevistos US$80.00 (≈ $1,490 MXN). Subtotal de partidas con importe introducido: US$1,450.93 (≈ $27,015 MXN) más vuelo $7,015 MXN = ≈ $34,030 MXN ANTES de Magic Kingdom. El intervalo de $37,000 a $40,000 MXN incluye un colchón de variación y no es un precio cerrado: los importes comprobados de capturas son vuelo, alojamiento y subtotal Universal; traslados, comidas e imprevistos siguen siendo estimaciones. Magic Kingdom NO está cotizado; se proyecta aparte US$180–240 (≈ $3351–4469 MXN) SOLO para construir rango, no se duplica en gastos. No incluye equipaje adicional, seguro, pases Express, regalos ni varita. Terra Luna por US$1577.46 (≈ $29,370 MXN) es alternativa excluyente (hotel + tickets); nunca sumar junto a Rosen y boleto individual.",
   "ticketNotes": [
-    "En el vuelo Volaris revisar al comprar franquicia de equipaje personal, maleta de cabina y maleta documentada de la tarifa seleccionada, con peso/medidas y costos añadidos. No asumir equipaje de mano incluido.",
-    "Confirmar en recepción el horario vigente, reserva presencial, cupo y paradas del shuttle Rosen–Universal/Epic; no coincide necesariamente con apertura anticipada o espectáculos nocturnos.",
-    "En MCO y Disney usar puntos de recogida autorizados para taxi o Uber/Lyft. Los rangos de presupuesto son provisiones no reservadas."
+    {
+      "title": "Volaris · tarifa y equipaje",
+      "note": "Los horarios y $7,015 MXN redondos corresponden a captura 15/11/2026; sin compra. Confirmar franquicia exacta de artículo personal, cabina y documentado, medidas y cambios de la tarifa al pagar."
+    },
+    {
+      "title": "Rosen · shuttle a Universal",
+      "note": "Servicio gratuito pero NO continuo. Reservar presencialmente en lobby idealmente un día antes, cupo limitado. Verificar salidas y regresos de rutas C y A, que no cubren entrada anticipada ni eventos."
+    },
+    {
+      "title": "MCO y Magic Kingdom · recogidas",
+      "note": "MCO: verificar terminal y punto oficial de Uber/Lyft. Magic Kingdom: transporte privado al TTC + monorriel o ferry; regreso desde TTC. El hotel menciona shuttle Disney de pago sin precio ni horarios confirmados."
+    },
+    {
+      "title": "Apps de respaldo y presupuesto",
+      "note": "El colchón US$40 cubre eventuales aplicaciones de los tres días Universal; no es US$40 por día. Las dos partidas redondas MCO↔hotel (US$95) y Rosen↔Disney (US$70) ya se incluyen una sola vez en Presupuesto."
+    }
   ],
   "sources": [
     {
@@ -825,6 +838,26 @@
     {
       "label": "Rosen · FAQ transporte Disney y check-in",
       "url": "https://www.roseninn6327.com/faq"
+    },
+    {
+      "label": "Rosen · shuttle horarios Universal/ Epic",
+      "url": "https://www.roseninn6327.com/hotel-information"
+    },
+    {
+      "label": "Rosen · FAQ transporte aeropuertos y Disney",
+      "url": "https://www.roseninn6327.com/faq"
+    },
+    {
+      "label": "Disney · monorriel Express desde TTC",
+      "url": "https://disneyworld.disney.go.com/es-mx/guest-services/monorail-transportation/"
+    },
+    {
+      "label": "Universal · puntos de recogida North Garage y Epic Boulevard",
+      "url": "https://www.universalorlando.com/web/es/us/plan-your-visit/hours-information/directions-and-parking"
+    },
+    {
+      "label": "MCO · guía oficial llegadas A/B",
+      "url": "https://orlandoairports.net/site/uploads/Arrivals-Guide.pdf"
     }
   ],
   "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. El precio de Magic Kingdom para 5/12 sigue sin cotizar. Park-to-Park desde US$357 + impuestos NO representa precio para fechas específicas.",
@@ -972,5 +1005,109 @@
     "or26-hogwarts": "Castillo de Hogwarts en Hogsmeade, prioridad junto con Hagrid.",
     "or26-magic": "Castillo de Cenicienta y atracciones clásicas de Magic Kingdom.",
     "or26-ministry": "Ministerio de Magia en Epic Universe, atracción prioritaria."
-  }
+  },
+  "groundConnections": [
+    {
+      "id": "mco-hotel",
+      "title": "MCO ↔ Rosen Inn · traslados aeroportuarios",
+      "days": [
+        1,
+        6
+      ],
+      "mode": "Uber/Lyft o taxi autorizado",
+      "costLabel": "Provisión redonda US$70–120; central US$95, no cotizada",
+      "budgetExpenseId": "orlando-airport",
+      "description": "Miércoles 2: después de migración y equipaje, ubicar el punto de recogida oficial de la terminal asignada y trasladarse a Rosen Inn. La llegada al hotel se calcula con margen para migración, equipaje y tráfico; nunca asumir terminal de Volaris sin tarjeta de embarque. Lunes 7: salir con margen de 3 h antes del vuelo internacional de las 17:05, más viaje y tráfico; salida del hotel aproximadamente 12:30–13:00 como objetivo de planeación, no cita confirmada. No existe transporte gratuito Rosen–MCO.",
+      "links": [
+        {
+          "label": "MCO · guía oficial de llegadas",
+          "url": "https://orlandoairports.net/site/uploads/Arrivals-Guide.pdf"
+        },
+        {
+          "label": "Rosen · transporte terrestre",
+          "url": "https://www.roseninn6327.com/transportation"
+        },
+        {
+          "label": "MCO → Rosen · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Orlando%20International%20Airport%20(MCO)%2C%20Orlando%2C%20FL%2C%20USA&destination=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Drive%2C%20Orlando%2C%20FL%2032819%2C%20USA&travelmode=driving"
+        }
+      ]
+    },
+    {
+      "id": "rosen-universal",
+      "title": "Rosen ↔ Studios / Islands · 3 y 4 de diciembre",
+      "days": [
+        2,
+        3
+      ],
+      "mode": "Shuttle gratuito programado, ruta C",
+      "costLabel": "US$0 por shuttle reservado; Uber/Lyft de respaldo no cotizado",
+      "budgetExpenseId": "orlando-extra-local",
+      "description": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Horarios publicados consultados el 15/11/2026, sujetos a cambios. Reservar presencialmente en el Universal Partner Hotel Vacation Planning Center del lobby, idealmente un día antes; confirmar horarios, plaza y punto de regreso. Servicio gratuito con cupo limitado y paradas múltiples; no válido para entrada anticipada ni eventos especiales. Estación de taxis y aplicaciones para respaldo: North Parking Garage, 6000 Universal Boulevard, no la puerta de atracciones. Si quieres permanecer hasta el cierre y el último shuttle ya pasó, utilizar app de transporte y el colchón separado de US$40 (compartido con Epic; NO US$40 por parque).",
+      "links": [
+        {
+          "label": "Rosen · horarios, ruta C y reservas",
+          "url": "https://www.roseninn6327.com/hotel-information"
+        },
+        {
+          "label": "Universal · paradas oficiales de Uber/Lyft",
+          "url": "https://www.universalorlando.com/web/es/us/plan-your-visit/hours-information/directions-and-parking"
+        },
+        {
+          "label": "Rosen → CityWalk · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Drive%2C%20Orlando%2C%20FL%2032819%2C%20USA&destination=6000%20Universal%20Boulevard%2C%20Orlando%20FL%2C%20USA&travelmode=driving"
+        }
+      ]
+    },
+    {
+      "id": "rosen-disney",
+      "title": "Rosen ↔ Magic Kingdom · sábado 5 de diciembre",
+      "days": [
+        4
+      ],
+      "mode": "Uber/Lyft o taxi + monorriel/ferry",
+      "costLabel": "Provisión redonda US$50–90; central US$70, no cotizada",
+      "budgetExpenseId": "orlando-disney-transfer",
+      "description": "Plan A: Uber/Lyft desde Rosen hasta el Transportation and Ticket Center (TTC), siguiendo las indicaciones de la app para la zona autorizada. Desde el TTC tomar el monorriel Express o ferry a Magic Kingdom; añadir tiempo de control de seguridad y embarque tanto a la ida como a la vuelta. Para regresar, ir de Magic Kingdom al TTC y solicitar ahí el vehículo. Rosen menciona traslado Disney con cargo, pero no publica itinerario, parada ni precio; consultarlo en recepción antes de sustituir Uber/Lyft. El monorriel de Disney no supone una entrada adicional al parque.",
+      "links": [
+        {
+          "label": "Disney · monorriel TTC ↔ Magic Kingdom",
+          "url": "https://disneyworld.disney.go.com/es-mx/guest-services/monorail-transportation/"
+        },
+        {
+          "label": "Rosen · transporte Disney con cargo",
+          "url": "https://www.roseninn6327.com/faq"
+        },
+        {
+          "label": "Rosen → TTC · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Drive%2C%20Orlando%2C%20FL%2032819%2C%20USA&destination=Transportation%20and%20Ticket%20Center%2C%20Walt%20Disney%20World%2C%20Lake%20Buena%20Vista%2C%20FL%2C%20USA&travelmode=driving"
+        }
+      ]
+    },
+    {
+      "id": "rosen-epic",
+      "title": "Rosen ↔ Epic Universe · domingo 6 de diciembre",
+      "days": [
+        5
+      ],
+      "mode": "Shuttle gratuito programado, ruta A",
+      "costLabel": "US$0 por shuttle reservado; Uber/Lyft de respaldo no cotizado",
+      "budgetExpenseId": "orlando-extra-local",
+      "description": "Rosen → Epic Universe: 07:15, 08:35, 09:55, 11:15. Retornos: 17:25, 18:40, 19:55, 21:10. Horarios publicados consultados el 15/11/2026, sujetos a cambios. Reservar presencialmente en el Universal Partner Hotel Vacation Planning Center del lobby, idealmente un día antes; confirmar horarios, plaza y punto de regreso. Servicio gratuito con cupo limitado y paradas múltiples; no válido para entrada anticipada ni eventos especiales. Si el transporte programado no encaja con las filas de Ministry of Magic o la iluminación nocturna, punto oficial Uber/Lyft de Epic Universe: 1201 Epic Boulevard; NO usar la dirección general del estacionamiento 1001 Epic Boulevard. El colchón de app de US$40 del presupuesto se comparte con Studios/Islands, no se cobra dos veces.",
+      "links": [
+        {
+          "label": "Rosen · ruta y horarios Epic",
+          "url": "https://www.roseninn6327.com/hotel-information"
+        },
+        {
+          "label": "Universal · recogida Epic 1201 Epic Boulevard",
+          "url": "https://www.universalorlando.com/web/es/us/plan-your-visit/hours-information/directions-and-parking"
+        },
+        {
+          "label": "Rosen → Epic · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Drive%2C%20Orlando%2C%20FL%2032819%2C%20USA&destination=1201%20Epic%20Boulevard%2C%20Orlando%2C%20FL%2032819%2C%20USA&travelmode=driving"
+        }
+      ]
+    }
+  ]
 }
