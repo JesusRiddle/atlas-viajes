@@ -34,7 +34,7 @@
 - [x] **08 Dónde dormirás · auditada 15/11/2026:** Rosen Plan A único alojamiento presupuesto, Terra Luna alternativa excluyente de paquete; habitaciones, condiciones y mapas oficiales revisados, cinco noches validadas y día de salida sin sexta pernocta. CI específico en revisión.
 - [x] **09 Día por día · auditado 15/11/2026:** seis jornadas refinadas con logística, pausas, plan ante filas, espectáculos navideños oficiales y condicionales; cinco noches y día de regreso sin hotel. CI en verificación.
 - [x] **10 Panorama · auditado 15/11/2026:** intro 104 palabras, introShort 33; tres indicadores [style,language,entry], tarjeta de clima/luz independiente, estancia 5 noches/1 alojamiento y presupuesto con pendientes explícitos. Pruebas Browser Desktop/Mobile del commit `80e18b1f` aprobadas.
-- [x] **11 Presupuesto preliminar:** nueve partidas Plan A; hotel y entradas cotizados, vuelos captura, gastos de traslados/comidas estimados; Disney cost.amount null. Escenario Terra Luna excluido. **Auditoría C provisional**, precio real de Disney pendiente.
+- [x] **11 Presupuesto · auditoría C editorial y CI superados:** gastos Plan A reconciliados y diferenciados por estado, seis jornadas de comida, impuesto Universal provisional y cotizaciones faltantes identificadas; Disney `cost.amount=null`. Subtotal $34,436.19 MXN antes de Disney, rango de planeación $39,000–$44,000 MXN. No es total final de compra.
 - [x] **12 Fotos/portada:** cuatro fotos de Wikimedia Commons con fuentes, autores y licencias; portada Hogwarts, una foto por día de parque. Falta inspección visual efectiva en navegador.
 - [x] **13 Auditoría D técnica:** GitHub Actions commit `6690d12d3356bea5737841afdf7a8f193d9a3e7d` concluyó **success** (Node y browser smoke Desktop/Mobile). PR #17 sigue en borrador por verificaciones manuales y cotizaciones pendientes. No merge.
 
@@ -58,7 +58,7 @@
 - **Mapa:** hotel Rosen, Studios Florida, Islands of Adventure, Magic Kingdom y Epic Universe con coordenadas documentadas de OpenStreetMap/Mapcarta.
 - **Transporte:** horarios de salida y regreso del shuttle Rosen incluidos con aviso de reserva previa y restricciones; comprobar vigencia a la llegada.
 - **Fotos:** cuatro entradas nuevas en data/places.json (or26-diagon, or26-hogwarts, or26-magic, or26-ministry) con CC y atribución. Foto portada Hogwarts, fotos en cuatro jornadas, ningún día de vuelo requiere foto.
-- **Presupuesto:** partida conocida USD 1,450.93 + vuelo MXN 7,015 antes del boleto Disney. Rango general corregido $37,000–$40,000 MXN, con Disney solo como provisión y sin compras.
+- **Histórico previo a la auditoría de Presupuesto:** en esta fase inicial se estimó USD 1,450.93 más vuelo $7,015 y rango $37,000–$40,000; **superado** por la conciliación final de la sección Presupuesto (subtotal $34,436.19, rango $39,000–$44,000).
 - **Comprobación en GitHub:** JSON descargado y parseado, cinco puntos de mapa, portada con imagen existente, cuatro fotos referenciadas existentes, secuencia de seis fechas y partidas USD conciliadas. Workflow del commit 775c858b todavía en progreso cuando se consultó; no atribuir éxito hasta que termine.
 
 ## Revisión de CI y fotografías · 15/11/2026
