@@ -27,7 +27,7 @@
     "soloWhy": "Una habitación privada, sin renta de auto; traslado programado gratuito de Rosen a Universal sujeto a reserva de cupo.",
     "weather": "Templado y menos lluvioso",
     "weatherWhy": "Diciembre suele ser relativamente seco; mañanas y noches pueden ser frescas, con frentes fríos ocasionales.",
-    "why": "Harry Potter es prioritario: Diagon Alley, Hogsmeade/Hogwarts y Ministry of Magic, sin pagar Park-to-Park."
+    "why": "Tres días de Universal dedicados a los mundos de Harry Potter: Diagon Alley, Hogwarts/Hogsmeade y el Ministerio de Magia. Magic Kingdom completa cuatro días de parques, con prioridades flexibles para no sacrificar la inmersión mágica por filas."
   },
   "intro": "Orlando reúne cuatro días de parques temáticos dedicados a Harry Potter, mundos cinematográficos y atracciones de Disney. La aventura mágica comienza en Diagon Alley, con Gringotts y el dragón que domina sus tejados. Continúa por Hogsmeade, el castillo de Hogwarts y la montaña rusa de Hagrid, antes de conocer el castillo de Cenicienta en Magic Kingdom. En Epic Universe, Place Cachée y el Ministerio de Magia completan los tres mundos de Harry Potter; también destacan Dark Universe, Super Nintendo World y Celestial Park. Las decoraciones navideñas acompañan el recorrido sin cambiar de alojamiento durante la estancia en Orlando.",
   "introShort": "Tres mundos de Harry Potter en Universal: Diagon Alley, Hogwarts y el Ministerio de Magia. Un día en Magic Kingdom y las atracciones más destacadas de Epic Universe completan este recorrido navideño por Orlando.",
@@ -47,20 +47,40 @@
   "local": "Rosen Inn está sobre International Drive, al sur del complejo original de Universal. Universal Studios Florida e Islands of Adventure están junto a CityWalk; Epic Universe es otro predio, al sureste. Magic Kingdom está en Walt Disney World, bastante más al oeste: no asumir distancias caminables ni conexión directa entre todos los parques. Para los tres días Universal, usar shuttle gratuito programado de Rosen con reserva; Magic Kingdom requiere transporte por separado. Los marcadores indican lugares, no una ruta de tránsito ni tiempos exactos. Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. Para aeropuerto MCO↔hotel y Rosen↔Magic Kingdom, auto por aplicación/taxi de pago. Viajes programados del hotel gratuitos solo a Universal; no mezclar con SuperStar Shuttle vendido a huéspedes de hoteles Universal.",
   "experiences": [
     {
-      "city": "Universal Studios Florida · Harry Potter y cine",
-      "description": "Prioridad máxima: Diagon Alley, Harry Potter and the Escape from Gringotts, Ollivanders, Knockturn Alley y tiendas mágicas; observar el dragón de Gringotts y probar Butterbeer. Como segunda prioridad, Revenge of the Mummy, Transformers: The Ride-3D y The Bourne Stuntacular. Terminar con Diagon Alley iluminado y ambiente navideño."
+      "city": "Universal Studios Florida · 3 dic · Diagon Alley",
+      "description": "Adentrarte en Diagon Alley, contemplar al dragón sobre Gringotts y vivir Harry Potter and the Escape from Gringotts. Explorar Knockturn Alley, Ollivanders y los detalles de las tiendas sin dejar que las filas consuman la experiencia."
     },
     {
-      "city": "Universal Islands of Adventure · Hogwarts",
-      "description": "Prioridad máxima: Hagrid's Magical Creatures Motorbike Adventure, Harry Potter and the Forbidden Journey dentro de Hogwarts, Hogsmeade, Honeydukes y Flight of the Hippogriff. Añadir VelociCoaster, The Amazing Adventures of Spider-Man y The Incredible Hulk Coaster según filas y tolerancia a atracciones intensas. Hogwarts Express se excluye porque requiere Park-to-Park."
+      "city": "Universal Studios Florida · Londres mágico y sabores",
+      "description": "Buscar el Knight Bus junto al Londres recreado y entrar al Leaky Cauldron para elegir fish and chips, cottage pie o un pastel de carne; probar Butterbeer o zumo de calabaza. Después, Revenge of the Mummy y Transformers son complementos, no sustitutos de Harry Potter."
     },
     {
-      "city": "Disney Magic Kingdom · clásicos y Navidad",
-      "description": "Castillo de Cenicienta, Seven Dwarfs Mine Train, Peter Pan's Flight, Haunted Mansion, Pirates of the Caribbean, TRON, Space Mountain y Big Thunder Mountain Railroad si está operativa. Desfile y espectáculo nocturno según programación del 5 de diciembre; no se compra entrada a fiesta privada."
+      "city": "Islands of Adventure · 4 dic · Hogwarts y Hagrid",
+      "description": "Caminar entre los tejados de Hogsmeade, entrar al castillo de Hogwarts para Harry Potter and the Forbidden Journey y vivir Hagrid’s Magical Creatures Motorbike Adventure. Flight of the Hippogriff y la ambientación navideña completan la visita mágica."
     },
     {
-      "city": "Universal Epic Universe · Ministerio de Magia y mundos fantásticos",
-      "description": "Comenzar por Harry Potter and the Battle at the Ministry, Place Cachée, Le Cirque Arcanus y tienda de varitas. Continuar por Super Nintendo World (Mario Kart y Mine-Cart Madness), Dark Universe (Monsters Unchained) y Stardust Racers. Isle of Berk y Celestial Park son opciones de cierre si hay tiempo; priorizar Harry Potter frente a filas largas."
+      "city": "Islands of Adventure · Las Tres Escobas y aventuras",
+      "description": "Comer en Three Broomsticks, con pollo asado, shepherd’s pie o fish and chips; recorrer Honeydukes y sus dulces. Si las esperas lo permiten, añadir Jurassic World VelociCoaster y The Amazing Adventures of Spider-Man; Hulk queda como opción intensa."
+    },
+    {
+      "city": "Magic Kingdom · 5 dic · cuento clásico de Disney",
+      "description": "Fotografiar el castillo de Cenicienta y combinar Seven Dwarfs Mine Train, Haunted Mansion, Peter Pan’s Flight y Pirates of the Caribbean. TRON, Space Mountain y Big Thunder Mountain Railroad aportan emoción según apertura y filas."
+    },
+    {
+      "city": "Magic Kingdom · sabores, luces y espectáculos",
+      "description": "Disfrutar un waffle o funnel cake de Sleepy Hollow cerca del castillo; recorrer Main Street decorada para Navidad. Reservar energía para el desfile y los fuegos artificiales únicamente si figuran en la programación oficial del sábado."
+    },
+    {
+      "city": "Epic Universe · 6 dic · Ministerio de Magia",
+      "description": "Cruzar Place Cachée, recorrer el París mágico de los años veinte y priorizar Harry Potter and the Battle at the Ministry. Después, contemplar las criaturas de Le Cirque Arcanus, explorar las varitas de Cosme Acajor y realizar hechizos interactivos si apetece."
+    },
+    {
+      "city": "Epic Universe · cafés del París mágico",
+      "description": "Tomar una pausa en Café L’air De La Sirène para probar una baguette de pavo o crepes de Butterbeer; Le Gobelet Noir ofrece otros platos, como guiso de lentejas. Disfrutar las fachadas y escaparates antes de salir del mundo mágico."
+    },
+    {
+      "city": "Epic Universe · otros mundos imprescindibles y opcionales",
+      "description": "Descubrir Dark Universe y Monsters Unchained: The Frankenstein Experiment, después visitar Super Nintendo World para Mario Kart. Donkey Kong, Stardust Racers e Isle of Berk, con Hiccup’s Wing Gliders, quedan sujetos al tiempo; finalizar contemplando Celestial Park iluminado."
     }
   ],
   "days": [
@@ -96,8 +116,8 @@
       "date": "2026-12-03",
       "title": "Universal Studios Florida · Diagon Alley",
       "base": "Orlando",
-      "am": "Entrar a Universal Studios Florida y dedicar las primeras horas a The Wizarding World of Harry Potter – Diagon Alley: Escape from Gringotts, el dragón, tiendas, Ollivanders y Knockturn Alley.",
-      "pm": "Comer sin prisas y explorar Revenge of the Mummy, Transformers: The Ride-3D y The Bourne Stuntacular según filas y funciones.",
+      "am": "Entrar a Universal Studios Florida y dedicar las primeras horas a Diagon Alley: Escape from Gringotts, dragón sobre el banco, Ollivanders, Knockturn Alley y tiendas. Fuera del callejón, mirar el Knight Bus; King's Cross es solo exterior, no abordar Hogwarts Express con este boleto.",
+      "pm": "Comer en Leaky Cauldron si conviene (fish and chips, cottage pie o pastel de carne) y probar Butterbeer/zumo de calabaza. Después, Revenge of the Mummy y Transformers: The Ride-3D; The Bourne Stuntacular solo si su función encaja.",
       "night": "Volver a Diagon Alley para fotografías nocturnas y decoración festiva; si queda tiempo, Universal CityWalk.",
       "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. Para la vuelta después del último servicio, presupuestar Uber/Lyft si fuera necesario.",
       "note": "Entrada Universal 3-Day 3-Park, un parque por día; primera utilización 3/12, vigencia dentro de 7 días. Hogwarts Express no está incluido (requiere Park-to-Park).",
@@ -124,7 +144,7 @@
       "title": "Islands of Adventure · Hogwarts y Hagrid",
       "base": "Orlando",
       "am": "Priorizar Hagrid's Magical Creatures Motorbike Adventure, Harry Potter and the Forbidden Journey y visita al castillo de Hogwarts. Consultar tiempos de espera y estado de atracciones.",
-      "pm": "Explorar Hogsmeade, Honeydukes, Ollivanders y Flight of the Hippogriff; después VelociCoaster y The Amazing Adventures of Spider-Man. Hulk solo si queda energía.",
+      "pm": "Recorrer Hogsmeade, Honeydukes, Ollivanders y Flight of the Hippogriff; comida temática en Three Broomsticks (pollo asado, shepherd’s pie o fish and chips). Si hay tiempo: VelociCoaster y Spider-Man; Hulk opcional.",
       "night": "Regresar a Hogsmeade por la ambientación navideña o espectáculo de castillo si se ofrece ese día.",
       "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. No sacrificar Hogwarts por esperar transporte: ajustar o usar Uber/Lyft según filas.",
       "note": "Hagrid y VelociCoaster pueden implicar esperas largas; priorizar Harry Potter. Hogwarts Express solo se puede abordar con Park-to-Park.",
@@ -151,7 +171,7 @@
       "title": "Disney Magic Kingdom · castillo y clásicos",
       "base": "Orlando",
       "am": "Traslado temprano al área de acceso a Magic Kingdom. Comenzar por el castillo de Cenicienta, Seven Dwarfs Mine Train, Peter Pan's Flight y Haunted Mansion según filas.",
-      "pm": "TRON Lightcycle / Run, Pirates of the Caribbean y Space Mountain; Big Thunder Mountain Railroad si está operativa. Comida y descansos programados.",
+      "pm": "TRON Lightcycle / Run, Pirates of the Caribbean y Space Mountain; Big Thunder Mountain Railroad si está operativa. Pausa con waffle o funnel cake de Sleepy Hollow, sin forzar todas las atracciones.",
       "night": "Ver desfile y fuegos artificiales si están programados; regresar al Rosen Inn en Uber/Lyft o taxi.",
       "mobility": "Rosen Inn no anuncia traslado gratuito directo a Magic Kingdom. Su FAQ menciona opciones de traslado a Disney con cargo, pero sin confirmar horario, ruta ni tarifa: tomar Uber/Lyft como plan principal y consultar en recepción si conviene algún servicio pagado. Considerar transporte por aplicación hasta el Transportation and Ticket Center o punto autorizado y después monorriel/ferry, con margen adicional. Provisión ida/vuelta US$50–90 (≈ $931–1,676 MXN), estimación no cotizada.",
       "note": "Disney no programa Mickey's Very Merry Christmas Party el 5/12/2026 (sí 3, 4 y 6). Entrada regular específica de Magic Kingdom pendiente de precio final; comprobar horario y espectáculos.",
@@ -177,9 +197,9 @@
       "date": "2026-12-06",
       "title": "Epic Universe · Ministerio de Magia y Dark Universe",
       "base": "Orlando",
-      "am": "Primero Harry Potter and the Battle at the Ministry, recorrido por Place Cachée, tienda de varitas y Le Cirque Arcanus. Prioridad máxima a la zona de Harry Potter.",
-      "pm": "Super Nintendo World: Mario Kart y Mine-Cart Madness. Si las filas dejan tiempo, Dark Universe y Monsters Unchained: The Frankenstein Experiment; Stardust Racers como opción adicional.",
-      "night": "Celestial Park al anochecer y regreso al hotel. Preparar equipaje; Isle of Berk queda como opción si sobran horas.",
+      "am": "Prioridad: Harry Potter and the Battle at the Ministry en Place Cachée. Recorrer las calles del París mágico, las varitas de Cosme Acajor y, según horarios, Le Cirque Arcanus. Comida o postre temático en Café L’air De La Sirène, si hay tiempo; revisar alérgenos.",
+      "pm": "Siguiente prioridad: Dark Universe y Monsters Unchained: The Frankenstein Experiment; después Super Nintendo World y Mario Kart. Mine-Cart Madness (Donkey Kong), Stardust Racers y Hiccup’s Wing Gliders solo como opciones intercambiables según filas: no intentar completarlas todas.",
+      "night": "Paseo por Celestial Park iluminado si la hora de cierre lo permite; si hay buen margen, recorrer brevemente Isle of Berk. Regresar al hotel y preparar equipaje.",
       "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. Dar prioridad al Ministerio de Magia y reservar asiento para ida y regreso.",
       "note": "Epic Universe suele requerir más tiempo del disponible. No prometer todas las atracciones; Ministry of Magic y Dark Universe son las prioridades. No añadir Pandora: está en Animal Kingdom y quedó descartado.",
       "spend": null,
@@ -686,6 +706,34 @@
     {
       "label": "Rosen Inn · preguntas frecuentes sobre transporte Disney (con cargo y sin horarios)",
       "url": "https://www.roseninn6327.com/faq"
+    },
+    {
+      "label": "Universal · Diagon Alley, Knight Bus y atracciones Harry Potter",
+      "url": "https://www.universalorlando.com/web/es/us/theme-parks/universal-studios-florida/the-wizarding-world-of-harry-potter-diagon-alley/"
+    },
+    {
+      "label": "Universal · menú oficial de Leaky Cauldron",
+      "url": "https://www.universalorlando.com/web/en/us/things-to-do/dining/leaky-cauldron/menu.html"
+    },
+    {
+      "label": "Universal · menú oficial Three Broomsticks",
+      "url": "https://www.universalorlando.com/web/en/us/things-to-do/dining/three-broomsticks/menu.html"
+    },
+    {
+      "label": "Universal · Ministerio de Magia y Le Cirque Arcanus",
+      "url": "https://www.universalorlando.com/web/es/us/epic-universe/worlds/the-wizarding-world-of-harry-potter-ministry-of-magic"
+    },
+    {
+      "label": "Universal · gastronomía de Epic Universe",
+      "url": "https://www.universalorlando.com/web/es/us/theme-parks/epic-universe/dining"
+    },
+    {
+      "label": "Disney · Sleepy Hollow y sus waffles/funnel cakes",
+      "url": "https://disneyworld.disney.go.com/es-us/dining/magic-kingdom/sleepy-hollow/"
+    },
+    {
+      "label": "Disney · Big Thunder Mountain Railroad y operativa",
+      "url": "https://disneyworld.disney.go.com/attractions/big-thunder-mountain-railroad/"
     }
   ],
   "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales.",
