@@ -33,7 +33,7 @@
 - [x] **07 Movilidad:** vuelo estructurado con dos trayectos; shuttle y alternativas terrestres documentados. Falta probar renderer `AtlasMajorTransport.render`.
 - [x] **08 Dónde dormirás:** Rosen Plan A y Terra Luna Plan B, mapas/enlaces oficiales y tarifas excluyentes; **Auditoría B pendiente de renderer y disponibilidad final**.
 - [x] **09 Día por día:** mañana/tarde/noche, movilidad, notas y enlaces de seis días, sin prometer filas inexistentes.
-- [x] **10 Panorama:** intro, introShort, clima/luz e indicadores [style,language,entry].
+- [x] **10 Panorama · auditado 15/11/2026:** intro 104 palabras, introShort 33; tres indicadores [style,language,entry], tarjeta de clima/luz independiente, estancia 5 noches/1 alojamiento y presupuesto con pendientes explícitos. Pruebas Browser Desktop/Mobile del commit `80e18b1f` aprobadas.
 - [x] **11 Presupuesto preliminar:** nueve partidas Plan A; hotel y entradas cotizados, vuelos captura, gastos de traslados/comidas estimados; Disney cost.amount null. Escenario Terra Luna excluido. **Auditoría C provisional**, precio real de Disney pendiente.
 - [x] **12 Fotos/portada:** cuatro fotos de Wikimedia Commons con fuentes, autores y licencias; portada Hogwarts, una foto por día de parque. Falta inspección visual efectiva en navegador.
 - [x] **13 Auditoría D técnica:** GitHub Actions commit `6690d12d3356bea5737841afdf7a8f193d9a3e7d` concluyó **success** (Node y browser smoke Desktop/Mobile). PR #17 sigue en borrador por verificaciones manuales y cotizaciones pendientes. No merge.
@@ -105,3 +105,13 @@
 - **Interfaz:** reemplazado encabezado compartido de tarjeta de enfoque (antes 'Un viaje con pocas maletas') por 'El enfoque de este viaje' para coherencia editorial.
 - **Pruebas:** se añadió comprobación de 9 tarjetas, frases de Harry Potter, restaurantes oficiales, ausencia de parques descartados y flexibilidad Epic a la suite Playwright en escritorio y móvil. GitHub Actions de commits `9435ae0a`/`bf4539fb` aún pendientes al elaborar esta entrada; no afirmar resultado sin observar conclusión.
 - **Siguiente sección recomendada:** **Reservaciones importantes**, con revisión del boleto Universal 1 parque/día frente a Hogwarts Express Park-to-Park, entrada Magic Kingdom, hotel Rosen, transporte y claridad de estados 'cotizado' versus 'comprado'.
+
+## Auditoría específica de Panorama · 15/11/2026
+- **Narrativa editorial:** se sustituyó el texto excesivamente enumerativo por una secuencia turística de cuatro días/tres mundos de Harry Potter: Diagon Alley, Hogwarts/Hogsmeade, Magic Kingdom y Ministry of Magic/Epic Universe. Introducción de 104 palabras y tarjeta breve de 33; resaltados vinculados a lugares reales mencionados, sin compras ni presupuestos incrustados.
+- **Indicadores:** exactamente 3, `style`, `language`, `entry` en orden; caminar/parques/filas, inglés/USD, y requisitos pasaporte mexicano + visa estadounidense vigente (usuario ya la tiene), sin ESTA cuando se usa visa válida, enchufes A/B compatibles sin adaptador y electricidad 120 V/60 Hz. Fuentes CBP y State Department.
+- **Clima y luz:** formato tres párrafos, 12 a 23 °C como normales mensuales 1991–2020 de Orlando MCO, diferencia frente a pronóstico futuro explicitada; amanecer 07:01–07:05 y atardecer 17:28 EST el 2–7 diciembre (tabla solar 2026), vestimenta y equipaje coherentes.
+- **Hospedaje y presupuesto:** portada 5 noches · 1 alojamiento, Rosen Plan A cotizado sin reservar y Terra Luna Plan B excluyente en detalles. Se conservó rango `[37000,40000]` MXN como estimación provisional con margen, no como precio cerrado, y Magic Kingdom sigue sin cotización; no se alteraron importes del cuadro de gastos.
+- **Verificaciones:** validación previa de presencia 13 resaltados, longitudes intro/introShort, formato climático y orden de indicadores. CI GitHub Actions del commit `80e18b1f919e21401d144dc310deef16355081d7` **success**, incluidas pruebas Node y browser Desktop/Mobile para Panorama.
+- **Alcance:** sección Panorama concluida editorial y técnicamente. Cierre económico general de viaje aún pendiente de cotización Disney y verificación de compras; no implica que el viaje completo esté listo para merge.
+
+**Siguiente sección recomendada:** Reservaciones importantes, para conciliar boleto Universal actual (sin Park-to-Park ni Hogwarts Express), alternativa que sí lo incluya y costos de Magic Kingdom y Rosen sin pedir repetir capturas previas. Sin merge.
