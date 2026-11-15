@@ -176,6 +176,22 @@ const assert = require('node:assert/strict');
         }
         if (id === 'orlando-2026') {
           const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
+          assert.equal(tripData.experiences.length, 9, 'Orlando: nueve experiencias entre cuatro parques');
+          assert.equal(await page.locator('#experiencias .experience-card').count(), 9,
+            'Orlando: tarjetas de experiencias visibles en escritorio y móvil');
+          const experienceText = await page.locator('#experiencias').innerText();
+          for (const phrase of ['Diagon Alley', 'Hagrid', 'Battle at the Ministry',
+            'Le Cirque Arcanus', 'Monsters Unchained', 'Three Broomsticks',
+            'Leaky Cauldron', 'Sleepy Hollow', 'Café L’air De La Sirène']) {
+            assert.ok(experienceText.includes(phrase), 'Orlando: experiencia ausente: ' + phrase);
+          }
+          assert.doesNotMatch(experienceText, /Pandora|Animal Kingdom|Hollywood Studios/,
+            'Orlando: no incorporar parques descartados');
+          assert.match(await page.locator('#dia-5').innerText(), /no intentar completarlas todas/,
+            'Orlando: Epic Universe mantiene opciones y no promete todas las atracciones');
+        }
+        if (id === 'orlando-2026') {
+          const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           assert.equal(tripData.mapPoints.length, 5, 'Orlando: un hotel y cuatro parques en el mapa');
           assert.deepEqual(tripData.mapPoints.map(point => point.order), [1,2,3,4,5], 'Orlando: orden cronológico');
           assert.equal(tripData.mapPoints.filter(point => point.base).length, 1, 'Orlando: único alojamiento');
