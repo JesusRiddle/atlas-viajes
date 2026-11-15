@@ -73,7 +73,18 @@
         "Milano Centrale",
         "B&B HOTEL Milano Aosta · candidato, no reservado"
       ],
-      "hotel": "milano-aosta"
+      "hotel": "milano-aosta",
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Malpensa Aeroporto T1 train station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station"
+        },
+        {
+          "label": "Mapa: Milano Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        }
+      ],
+      "boardingGuide": "Malpensa Terminal 1: sigue la señalización ferroviaria 'Treni / Malpensa Express' hacia la estación de aeropuerto. Elige el tren con destino Milano Centrale, no Milano Cadorna. Desembarco internacional 18:20, migración y equipaje sin duración garantizada; compra un título válido según la salida real. Milano Centrale: sal por Piazza Duca d’Aosta; B&B HOTEL Milano Aosta queda enfrente. Confirmar recepción nocturna."
     },
     {
       "n": 3,
@@ -84,7 +95,7 @@
       "pm": "Comer en el centro; Piazza della Scala y paseo hacia Castello Sforzesco (patios/exterior) y, si hay energía, Parco Sempione.",
       "night": "Cena en Milano y regreso al hotel para descansar antes de Torino.",
       "mobility": "Recorridos urbanos en metro y a pie desde Milano Centrale; planificar pausas y usar elevador de terrazas para reducir esfuerzo.",
-      "note": "Lunes: Pinacoteca di Brera y Cenacolo habitualmente cerrados; trasladados al miércoles. El Museo del Duomo y otros espacios pueden tener cierres específicos: verificar horarios antes de comprar.",
+      "note": "Lunes: Pinacoteca di Brera y Cenacolo habitualmente cerrados; trasladados al miércoles. El Museo del Duomo y otros espacios pueden tener cierres específicos: verificar horarios antes de comprar.\n\n• Presupuestar al menos 2 horas en el Duomo, terrazas y controles, sin fijar Castello Sforzesco como museo interior: los museos municipales tienen cierres específicos los lunes.\n• Si el Museo del Duomo interesa, aprovechar este lunes; suele cerrar los miércoles. Para las terrazas, el elevador reduce solo una parte de los escalones. Pausa para comer antes de caminar al Castello.",
       "spend": null,
       "places": [
         "milan-duomo",
@@ -112,7 +123,7 @@
       "pm": "Piazza San Carlo, Piazza Castello, calles porticadas y café histórico para bicerin o gianduiotti. Mole Antonelliana exterior opcional.",
       "night": "Cena temprana y regreso en tren a Milano Centrale, sin depender del último servicio.",
       "mobility": "Trenes Milano ↔ Torino, horarios y tarifas mayo 2027 no publicados/confirmados. Elegir ida con margen para museo y vuelta cómoda.",
-      "note": "Cambio importante: Museo Egizio los lunes suele cerrar a las 14:00; martes 11 permite horario habitual hasta las 18:30, sujeto a calendario 2027. Venta con franja online; no comprado.",
+      "note": "Cambio importante: Museo Egizio los lunes suele cerrar a las 14:00; martes 11 permite horario habitual hasta las 18:30, sujeto a calendario 2027. Venta con franja online; no comprado.\n\n• Antes de comprar el Museo Egizio, coordinar margen ferroviario desde Milano Centrale hasta Torino Porta Nuova y la caminata; entrada online con franja. Dedicar 2–3 h al museo, sin intentar sumar otro museo grande en Torino.\n• Plazas y cafés históricos después del museo, con descanso en Piazza San Carlo; regresar con un tren razonablemente temprano.",
       "spend": null,
       "places": [
         "italy27-egizio",
@@ -135,7 +146,18 @@
       ],
       "optionalPlaces": [
         "italy27-mole"
-      ]
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Milano Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: Torino Porta Nuova railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Torino%20Porta%20Nuova%20railway%20station"
+        }
+      ],
+      "boardingGuide": "Milano Centrale → Torino Porta Nuova: comprobar operador y andén en los monitores y no confundir Porta Nuova con Porta Susa. Desde Porta Nuova, caminar hacia Museo Egizio por Via Roma y Piazza San Carlo (aprox. 15–20 min sin paradas). Regreso desde Torino Porta Nuova a Milano Centrale con billete específico; no depender del último tren ni de un transbordo corto. Horarios mayo 2027 por publicar."
     },
     {
       "n": 5,
@@ -146,7 +168,7 @@
       "pm": "Pinacoteca di Brera (reserva) y paseo por el barrio; priorizar colección antes de añadir extras. Almorzar entre visitas.",
       "night": "Cena tranquila y preparar equipaje para La Spezia.",
       "mobility": "Metro o tranvía desde Milano Centrale a Santa Maria delle Grazie, después transporte urbano o caminata a Brera; prever 30–45 minutos entre zonas.",
-      "note": "La Última Cena se vende para mayo–julio 2027 en bloque previsto para marzo de 2027; día de apertura y plazas pendientes. NO reservar visitas incompatibles. Brera cierra normalmente lunes, no miércoles.",
+      "note": "La Última Cena se vende para mayo–julio 2027 en bloque previsto para marzo de 2027; día de apertura y plazas pendientes. NO reservar visitas incompatibles. Brera cierra normalmente lunes, no miércoles.\n\n• La Última Cena obliga a presentarse 30 minutos antes. Reservar prioritariamente la franja del Cenacolo y colocar Brera después, con transporte público si la espalda está cansada.\n• Dentro de Brera priorizar el Cristo morto de Mantegna, Lo sposalizio della Vergine de Raffaello y Il bacio de Hayez, sujetos a exhibición. Dejar el barrio de Brera para después sin más reservas rígidas.",
       "spend": null,
       "places": [
         "italy16-grazie",
@@ -189,7 +211,18 @@
         "Casa Danè · alojamiento candidato",
         "Via del Prione",
         "Passeggiata Morin"
-      ]
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Milano Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: La Spezia Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station"
+        }
+      ],
+      "boardingGuide": "Milano Centrale → La Spezia Centrale: priorizar Intercity directo si la programación de mayo lo permite. Revisar coche y plaza del billete; al llegar, salida hacia Via Pietro Paleocapa para Casa Danè, a pocos pasos de la estación. Confirmar planta, acceso con maleta y recepción/consigna antes del viaje."
     },
     {
       "n": 7,
@@ -200,7 +233,7 @@
       "pm": "Manarola y miradores cómodos; tren hacia Vernazza, puerto y almuerzo. Monterosso opcional según energía.",
       "night": "Regresar a La Spezia en tren, cena y descanso.",
       "mobility": "Trenes regionales Cinque Terre Express / Trenitalia; contrastar billetes individuales y Cinque Terre Treno MS Card para viernes 14 mayo de 2027. Sin horarios de mayo confirmados.",
-      "note": "Viernes elegido para reducir parcialmente presión de fin de semana. Senderos y Via dell’Amore dependen de meteorología, seguridad y reserva; no asumir aperturas. Portovenere puede intercambiarse con este día por mal clima.\n• *Via dell’Amore:* reservar en canal oficial la franja y el título específico; no asumir que el pase ferroviario estándar incluye acceso. Caminata aproximada de 30 minutos y un solo sentido Riomaggiore → Manarola; caminar únicamente si el estado del sendero y tu espalda lo permiten. El coste adicional opcional no está incluido en el presupuesto central.",
+      "note": "Viernes elegido para reducir parcialmente presión de fin de semana. Senderos y Via dell’Amore dependen de meteorología, seguridad y reserva; no asumir aperturas. Portovenere puede intercambiarse con este día por mal clima.\n• *Via dell’Amore:* reservar en canal oficial la franja y el título específico; no asumir que el pase ferroviario estándar incluye acceso. Caminata aproximada de 30 minutos y un solo sentido Riomaggiore → Manarola; caminar únicamente si el estado del sendero y tu espalda lo permiten. El coste adicional opcional no está incluido en el presupuesto central.\n\n• Para las tres localidades, reservar pausas y evitar senderos empinados no imprescindibles: Riomaggiore y Manarola tienen pendientes y escaleras; Vernazza es más cómoda alrededor del puerto.\n• La Via dell’Amore exige franja y un título compatible específico; no equivale al pase de tren. Si no hay reserva, usar el tren entre Riomaggiore y Manarola. El tren de vuelta y Monterosso son decisiones del mismo día.",
       "spend": null,
       "places": [
         "italy27-riomaggiore",
@@ -227,7 +260,38 @@
       ],
       "optionalPlaces": [
         "italy27-monterosso"
-      ]
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: La Spezia Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: Riomaggiore railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Riomaggiore%20railway%20station"
+        },
+        {
+          "label": "Mapa: Manarola railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Manarola%20railway%20station"
+        },
+        {
+          "label": "Mapa: Vernazza railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Vernazza%20railway%20station"
+        },
+        {
+          "label": "Mapa: Monterosso railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Monterosso%20railway%20station"
+        },
+        {
+          "label": "Reserva oficial: Via dell’Amore / parque",
+          "url": "https://card.parconazionale5terre.it/"
+        },
+        {
+          "label": "Reglas oficiales Via dell’Amore",
+          "url": "https://www.parconazionale5terre.it/page.php?id=481"
+        }
+      ],
+      "boardingGuide": "La Spezia Centrale → Riomaggiore → Manarola → Vernazza → La Spezia Centrale en tren regional, salvo que se reserve Via dell’Amore desde Riomaggiore hasta Manarola. El sendero es de un solo sentido, entrada con hora y título específico; si no hay cupo o no conviene caminar, realizar ese tramo en tren. Monterosso solo como extensión opcional. Verificar retorno y restricciones de senderos el mismo día."
     },
     {
       "n": 8,
@@ -238,7 +302,7 @@
       "pm": "Miradores de Grotta Byron y Castello Doria opcional según esfuerzo, sin caminatas exigentes. Comida frente al puerto.",
       "night": "Volver a La Spezia en bus; preparar traslado con consigna en Lucca al día siguiente.",
       "mobility": "Bus ATC línea P, verificar horarios de sábado y parada efectiva en mayo 2027. Barco solo opcional si hay servicio y buen mar; no indispensable.",
-      "note": "Servicios religiosos, viento y oleaje pueden modificar accesos. Comprar/validar billete según reglas ATC vigentes; evitar confundir tarifas de papel y digital.",
+      "note": "Servicios religiosos, viento y oleaje pueden modificar accesos. Comprar/validar billete según reglas ATC vigentes; evitar confundir tarifas de papel y digital.\n\n• Portovenere no tiene estación ferroviaria; utilizar autobús ATC línea P. Revisar frecuencia de sábado y no depender de ferris con viento.\n• San Pietro ofrece vistas desde acantilados, con escalones y roca irregular en accesos; castillo Doria es realmente opcional para cuidar la espalda.",
       "spend": null,
       "places": [
         "italy27-portovenere",
@@ -257,7 +321,30 @@
         "Grotta Byron · miradores",
         "Castello Doria · opcional"
       ],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Ida · Via Chiodo Portici · La Spezia (línea P a Portovenere)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Portici%20bus%20stop%20La%20Spezia"
+        },
+        {
+          "label": "Mapa: Portovenere · capolinea ATC · llegada y salida",
+          "url": "https://www.google.com/maps/search/?api=1&query=Portovenere%20capolinea%20autobus%20ATC"
+        },
+        {
+          "label": "Mapa: Regreso · Via Chiodo Giardini · La Spezia (bajada)",
+          "url": "https://www.google.com/maps/search/?api=1&query=Via%20Chiodo%20Giardini%20bus%20stop%20La%20Spezia"
+        },
+        {
+          "label": "ATC · Horarios línea P",
+          "url": "https://www.atcesercizio.it/linee-e-orari/"
+        },
+        {
+          "label": "ATC · Comprar con DropTicket",
+          "url": "https://www.atcesercizio.it/biglietti-da-smartphone/"
+        }
+      ],
+      "boardingGuide": "La Spezia: dirigirse a la parada ATC línea P en el corredor Via Chiodo, confirmando el poste y el sentido en los avisos de servicio. Tomar autobús hacia Portovenere; regreso desde la parada señalizada para La Spezia. El servicio de sábado 15 mayo 2027, el trayecto y la validación del título se deben comprobar cerca de la salida. No contar con el ferry como único regreso."
     },
     {
       "n": 9,
@@ -268,7 +355,7 @@
       "pm": "Piazza dell’Anfiteatro, Via Fillungo, comida; Torre Guinigi solo si espalda y energía permiten subir escaleras.",
       "night": "Recuperar maleta, tren a Firenze SMN, check-in Hotel Mia Cara & SPA y cena.",
       "mobility": "La Spezia → Lucca → Firenze SMN, trenes y transbordos según mayo 2027. Confirmar consigna antes de conservar parada con equipaje.",
-      "note": "Domingo: confirmar horario de consigna y Torre Guinigi; sin consigna fiable, trasladarse directamente a Firenze y replantear Lucca como excursión sin maleta. No sacrificar la comodidad de espalda.\n• *Plan B equipaje:* si no hay consigna fiable abierta en domingo en Lucca, priorizar tren directo hacia Firenze y visitar Lucca sin maletas en otra ocasión, sin improvisar almacenamiento no autorizado. Confirmar horarios reales de domingo 16 mayo y márgenes en transbordos.",
+      "note": "Domingo: confirmar horario de consigna y Torre Guinigi; sin consigna fiable, trasladarse directamente a Firenze y replantear Lucca como excursión sin maleta. No sacrificar la comodidad de espalda.\n• *Plan B equipaje:* si no hay consigna fiable abierta en domingo en Lucca, priorizar tren directo hacia Firenze y visitar Lucca sin maletas en otra ocasión, sin improvisar almacenamiento no autorizado. Confirmar horarios reales de domingo 16 mayo y márgenes en transbordos.\n\n• El domingo 16 mayo la logística de equipaje manda: confirmar previamente consigna abierta, horario y ruta desde estación Lucca; si no, dejar la escala en suspenso y trasladarse directamente a Firenze.\n• Las murallas pueden recorrerse solo en un tramo cómodo y gratuito. Torre Guinigi tiene escalones y puede eliminarse sin afectar la experiencia principal de Lucca.",
       "spend": null,
       "places": [
         "italy27-lucca-anfiteatro",
@@ -306,7 +393,26 @@
           "label": "Alternativa · Bounce Centro Storico",
           "url": "https://bounce.com/stores/lucca/VHkrx0"
         }
-      ]
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: La Spezia Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=La%20Spezia%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: Lucca railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Lucca%20railway%20station"
+        },
+        {
+          "label": "Mapa: Firenze Santa Maria Novella railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station"
+        },
+        {
+          "label": "Mapa: estación Viareggio · transbordo",
+          "url": "https://www.google.com/maps/search/?api=1&query=Viareggio%20railway%20station"
+        }
+      ],
+      "boardingGuide": "La Spezia Centrale → Lucca: comprar billete con conexión verificable, preferentemente con transbordo holgado en Viareggio si corresponde. En Lucca, localizar consigna abierta en domingo y confirmar medidas/tarifa antes de dejar maleta; no subir con equipaje a la muralla o Torre Guinigi. Recuperar la maleta con tiempo y tomar tren hacia Firenze Santa Maria Novella; Hotel Mia Cara & SPA está en Via Faenza 90r cerca de la estación."
     },
     {
       "n": 10,
@@ -317,7 +423,7 @@
       "pm": "Duomo di Siena y Libreria Piccolomini con entrada adecuada; comer y pasear Via di Città.",
       "night": "Regreso a Firenze en 131R; cena y descanso para día de Accademia y Cúpula.",
       "mobility": "Autolinee Toscane 131R ida y regreso; verificar parada Firenze Autostazione o temporal Via Orti Oricellari, aviso de desvíos hasta junio de 2027. Activar billete digital o validar papel según reglas.",
-      "note": "Lunes 17: comprobar calendario de cultos y último acceso de Catedral en mayo 2027; no usar horarios de abril. No agregar San Gimignano.",
+      "note": "Lunes 17: comprobar calendario de cultos y último acceso de Catedral en mayo 2027; no usar horarios de abril. No agregar San Gimignano.\n\n• En Siena priorizar Piazza del Campo, Catedral y Libreria Piccolomini; las calles tienen cuestas y adoquines, de modo que una parada larga para almorzar es recomendable.\n• Confirmar si la entrada de la Catedral ya incluye Libreria Piccolomini y no comprar un pase más amplio si no se visitarán sus extras.",
       "spend": null,
       "places": [
         "italy27-siena-campo",
@@ -337,7 +443,30 @@
         "Duomo di Siena",
         "Libreria Piccolomini",
         "Via di Città"
-      ]
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Firenze Autostazione bus terminal",
+          "url": "https://www.google.com/maps/search/?api=1&query=Firenze%20Autostazione%20bus%20terminal"
+        },
+        {
+          "label": "Mapa: Via degli Orti Oricellari Firenze",
+          "url": "https://www.google.com/maps/search/?api=1&query=Via%20degli%20Orti%20Oricellari%20Firenze"
+        },
+        {
+          "label": "Mapa: Siena Via Tozzi 131R bus stop",
+          "url": "https://www.google.com/maps/search/?api=1&query=Siena%20Via%20Tozzi%20131R%20bus%20stop"
+        },
+        {
+          "label": "Línea 131R: horarios y avisos del operador",
+          "url": "https://www.at-bus.it/it/linee-e-orari/regionali-131r"
+        },
+        {
+          "label": "Aviso oficial de la parada temporal",
+          "url": "https://www.at-bus.it/it/viaggia/avvisi/parternze-orti-oricellari"
+        }
+      ],
+      "boardingGuide": "Autolinee Toscane 131R, Firenze → Siena Via Tozzi. Verificar la salida en la página oficial: la salida rápida de las 08:50 aparece trasladada a Via Orti Oricellari hasta el 10/06/2027; otras salidas pueden operar desde Autostazione. La hora 08:50 procede del aviso de cambio de parada, no garantiza el servicio para 17 mayo. Volver desde Siena Via Tozzi comprobando poste y sentido; activar ticket digital antes del trayecto según instrucciones AT."
     },
     {
       "n": 11,
@@ -348,7 +477,7 @@
       "pm": "Almuerzo; Museo dell’Opera del Duomo (Piedad Bandini, Puertas del Paraíso). Catedral interior si horario y energía permiten.",
       "night": "Cena y paseo corto; preparar Uffizi y Corridoio Vasariano.",
       "mobility": "Centro histórico a pie, con pausas y posibilidad de transporte urbano. Consigna obligatoria para bolsas no permitidas en la Cúpula; sin ascensor en el ascenso.",
-      "note": "Reservar primero franja de Cúpula y coordinar Accademia; ambas no compradas. Cúpula: 463 escalones sin elevador, evaluar espalda. Museo dell’Opera cierra habitualmente primer martes de cada mes, no el tercero. Brunelleschi Pass orientativo, tarifa vigente pendiente.",
+      "note": "Reservar primero franja de Cúpula y coordinar Accademia; ambas no compradas. Cúpula: 463 escalones sin elevador, evaluar espalda. Museo dell’Opera cierra habitualmente primer martes de cada mes, no el tercero. Brunelleschi Pass orientativo, tarifa vigente pendiente.\n\n• Accademia a primera hora y Cúpula más tarde solo cuando estén coordinadas ambas entradas. La subida de la Cúpula tiene 463 escalones, sin elevador y con pasos estrechos: evitarla si provoca dolor o fatiga inusual.\n• Museo dell’Opera del Duomo después de la comida; es una visita imprescindible por sus obras originales y es accesible. El interior gratuito de la Catedral queda opcional por tiempo y ceremonias.",
       "spend": null,
       "places": [
         "italy16-david",
@@ -378,7 +507,7 @@
       "pm": "Recorrido del Corridoio en grupo, salida hacia Palazzo Pitti; almuerzo en Oltrarno. Santa Croce durante la tarde con margen para el conjunto monumental.",
       "night": "Cena tranquila y paseo por el Arno; dejar panorámicas para jueves.",
       "mobility": "Hotel → Uffizi, luego Corridoio hacia Palazzo Pitti. El acceso al Corredor no equivale a entrada para Pitti/Boboli; regresar a Santa Croce a pie o transporte.",
-      "note": "Corridoio Vasariano pendiente de venta, nominal, con franjas y condiciones que prevalecen sobre cualquier referencia. Si la franja tardía impide Santa Croce, moverla al jueves 20 sin eliminarla.\n• *Corridoio:* no es una visita libre ni una guía de arte; caminarás en grupo sin detenerte, aprox. 45 minutos. El museo abre normalmente 2 horas antes de tu franja nominativa y no podrás volver a Uffizi tras salir. Coordinar Santa Croce según la franja real.",
+      "note": "Corridoio Vasariano pendiente de venta, nominal, con franjas y condiciones que prevalecen sobre cualquier referencia. Si la franja tardía impide Santa Croce, moverla al jueves 20 sin eliminarla.\n• *Corridoio:* no es una visita libre ni una guía de arte; caminarás en grupo sin detenerte, aprox. 45 minutos. El museo abre normalmente 2 horas antes de tu franja nominativa y no podrás volver a Uffizi tras salir. Coordinar Santa Croce según la franja real.\n\n• Uffizi y Corridoio Vasariano forman una reserva condicionada: acceso a galería dos horas antes de la franja, encuentro en sala D19 cinco minutos antes y caminata obligatoria en grupo hacia Pitti; no se puede volver a Uffizi.\n• No asumir que el corredor incluye el acceso libre a Boboli o Palazzo Pitti. Santa Croce por la tarde solo si el horario real del Corridoio y la comida permiten una visita tranquila; respaldo jueves 20.\n• *Accesibilidad:* Uffizi dispone de ascensor y acceso adaptado en distintas zonas; consultar directamente las reglas del Corridoio si necesitas asistencia.",
       "spend": null,
       "places": [
         "italy16-uffizi",
@@ -408,7 +537,7 @@
       "pm": "Piazza Santo Spirito, almuerzo y subida hacia San Miniato al Monte, preferir bus para ahorrar desnivel; visita sujeta a culto.",
       "night": "Piazzale Michelangelo al atardecer; regreso en transporte urbano si cansancio, cena y preparar maleta.",
       "mobility": "Firenze a pie y autobús urbano para evitar subida larga a San Miniato/Piazzale Michelangelo. Verificar retorno después de la puesta de sol.",
-      "note": "Bargello normalmente cierra lunes, jueves compatible; confirmar 2027. No sumar más escaleras si se realizó Cúpula. Atardecer horario de mayo por comprobar.",
+      "note": "Bargello normalmente cierra lunes, jueves compatible; confirmar 2027. No sumar más escaleras si se realizó Cúpula. Atardecer horario de mayo por comprobar.\n\n• Bargello temprano y sin otras reservas fijas. Si Santa Croce quedó pendiente, visitarla a continuación y recortar Oltrarno.\n• Preferir autobús urbano para la subida a Piazzale Michelangelo y caminar el último tramo hacia San Miniato si resulta cómodo. Consultar horario de culto y regresar en transporte público después del atardecer.",
       "spend": null,
       "places": [
         "italy27-piazzale",
@@ -450,7 +579,22 @@
         "train-firenze-milano",
         "airport-return",
         "flight-international"
-      ]
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Mapa: Firenze Santa Maria Novella railway station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Firenze%20Santa%20Maria%20Novella%20railway%20station"
+        },
+        {
+          "label": "Mapa: Milano Centrale station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale%20station"
+        },
+        {
+          "label": "Mapa: Malpensa Aeroporto T1 train station",
+          "url": "https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1%20train%20station"
+        }
+      ],
+      "boardingGuide": "Firenze Santa Maria Novella → Milano Centrale en alta velocidad (Italo o Frecciarossa), salida objetivo entre 12:30 y 13:30, no es horario reservado. Prever al menos 45–60 minutos de conexión en Milano Centrale y tomar Malpensa Express con destino MXP Terminal 1; el tiempo habitual es cercano a una hora. Objetivo de llegada al aeropuerto entre 16:00 y 17:30 para vuelo AM77 a las 23:05. Comprobar estado de trenes y alternativa si hay interrupciones."
     }
   ],
   "budgetPreliminary": true,
