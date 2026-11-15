@@ -29,14 +29,17 @@
     "weatherWhy": "Diciembre suele ser relativamente seco; mañanas y noches pueden ser frescas, con frentes fríos ocasionales.",
     "why": "Tres días de Universal dedicados a los mundos de Harry Potter: Diagon Alley, Hogwarts/Hogsmeade y el Ministerio de Magia. Magic Kingdom completa cuatro días de parques, con prioridades flexibles para no sacrificar la inmersión mágica por filas."
   },
-  "intro": "Orlando reúne cuatro días de parques temáticos dedicados a Harry Potter, mundos cinematográficos y atracciones de Disney. La aventura mágica comienza en Diagon Alley, con Gringotts y el dragón que domina sus tejados. Continúa por Hogsmeade, el castillo de Hogwarts y la montaña rusa de Hagrid, antes de conocer el castillo de Cenicienta en Magic Kingdom. En Epic Universe, Place Cachée y el Ministerio de Magia completan los tres mundos de Harry Potter; también destacan Dark Universe, Super Nintendo World y Celestial Park. Las decoraciones navideñas acompañan el recorrido sin cambiar de alojamiento durante la estancia en Orlando.",
-  "introShort": "Tres mundos de Harry Potter en Universal: Diagon Alley, Hogwarts y el Ministerio de Magia. Un día en Magic Kingdom y las atracciones más destacadas de Epic Universe completan este recorrido navideño por Orlando.",
+  "intro": "El viaje comienza en Diagon Alley, entre escaparates mágicos, el dragón de Gringotts y los secretos del Callejón Knockturn. Al día siguiente, Hogsmeade conduce hasta el castillo de Hogwarts y la aventura de Hagrid. Magic Kingdom aporta el contraste clásico de Disney: el castillo de Cenicienta, sus atracciones emblemáticas y las luces de Navidad. El recorrido culmina en Epic Universe, donde el París mágico de Place Cachée abre las puertas al Ministerio de Magia. Dark Universe y Super Nintendo World completan la jornada, si las filas lo permiten. Cuatro parques y tres mundos de Harry Potter dan forma a una escapada navideña especialmente inmersiva.",
+  "introShort": "Diagon Alley y Gringotts, Hogwarts y Hagrid, y el Ministerio de Magia protagonizan tres días de Universal. Magic Kingdom añade los clásicos de Disney, mientras la decoración navideña acompaña el recorrido por Orlando.",
   "introHighlights": [
-    "Orlando",
     "Diagon Alley",
+    "Gringotts",
+    "Callejón Knockturn",
     "Hogsmeade",
     "Hogwarts",
+    "Hagrid",
     "Magic Kingdom",
+    "castillo de Cenicienta",
     "Epic Universe",
     "Place Cachée",
     "Ministerio de Magia",
@@ -647,7 +650,7 @@
     37000,
     40000
   ],
-  "budgetNote": "Escenario Rosen Inn: vuelo $7,015 MXN; alojamiento US$539.94 (≈ $10,053 MXN); Universal US$335.99 (≈ $6,256 MXN) (subtotal del carrito); MCO↔Rosen provisión US$95.00 (≈ $1,769 MXN); Rosen↔Disney US$70.00 (≈ $1,303 MXN); respaldo de transporte US$40.00 (≈ $745 MXN); comidas US$290.00 (≈ $5,399 MXN); imprevistos US$80.00 (≈ $1,490 MXN). Subtotal de partidas con importe introducido: US$1,450.93 (≈ $27,015 MXN) más vuelo $7,015 MXN = ≈ $34,030 MXN ANTES de Magic Kingdom. Magic Kingdom NO está cotizado; se proyecta aparte US$180–240 (≈ $3351–4469 MXN) SOLO para construir rango, no se duplica en gastos. No incluye equipaje adicional, seguro, pases Express, regalos ni varita. Terra Luna por US$1577.46 (≈ $29,370 MXN) es alternativa excluyente (hotel + tickets); nunca sumar junto a Rosen y boleto individual.",
+  "budgetNote": "Escenario Rosen Inn: vuelo $7,015 MXN; alojamiento US$539.94 (≈ $10,053 MXN); Universal US$335.99 (≈ $6,256 MXN) (subtotal del carrito); MCO↔Rosen provisión US$95.00 (≈ $1,769 MXN); Rosen↔Disney US$70.00 (≈ $1,303 MXN); respaldo de transporte US$40.00 (≈ $745 MXN); comidas US$290.00 (≈ $5,399 MXN); imprevistos US$80.00 (≈ $1,490 MXN). Subtotal de partidas con importe introducido: US$1,450.93 (≈ $27,015 MXN) más vuelo $7,015 MXN = ≈ $34,030 MXN ANTES de Magic Kingdom. El intervalo de $37,000 a $40,000 MXN incluye un colchón de variación y no es un precio cerrado: los importes comprobados de capturas son vuelo, alojamiento y subtotal Universal; traslados, comidas e imprevistos siguen siendo estimaciones. Magic Kingdom NO está cotizado; se proyecta aparte US$180–240 (≈ $3351–4469 MXN) SOLO para construir rango, no se duplica en gastos. No incluye equipaje adicional, seguro, pases Express, regalos ni varita. Terra Luna por US$1577.46 (≈ $29,370 MXN) es alternativa excluyente (hotel + tickets); nunca sumar junto a Rosen y boleto individual.",
   "ticketNotes": [
     "Universal 3-Day, 3-Park, 1 adulto: US$335.99 (≈ $6,256 MXN) como subtotal cotizado en carrito 15/11/2026, validez de 7 días desde 3/12, un día por parque (Studios 3, Islands 4, Epic 6). Confirmar total definitivo antes de pagar.",
     "Alternativa no seleccionada: paquete Terra Luna hotel+entradas 5 días Park-to-Park por US$1577.46 (≈ $29,370 MXN) todo incluido según captura; no sumar sus tickets al Plan A.",
@@ -734,32 +737,48 @@
     {
       "label": "Disney · Big Thunder Mountain Railroad y operativa",
       "url": "https://disneyworld.disney.go.com/attractions/big-thunder-mountain-railroad/"
+    },
+    {
+      "label": "Florida Climate Center · Orlando, normales 1991–2020",
+      "url": "https://climatecenter.fsu.edu/products-services/data/1991-2020-normals/orlando"
+    },
+    {
+      "label": "Salida y puesta de sol en Orlando, 2–7 diciembre 2026",
+      "url": "https://worldtimeandweather.com/sun/united-states/orlando?month=2026-12"
+    },
+    {
+      "label": "CBP · mexicanos que ingresan por vía aérea: pasaporte y visa/BCC",
+      "url": "https://www.help.cbp.gov/s/article/Article-1670?lang=en&language=en_US"
+    },
+    {
+      "label": "Departamento de Estado EE. UU. · visa de visitante",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html"
     }
   ],
   "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales.",
   "planningDetails": "Seis días, cinco noches y cuatro días de parques. Harry Potter prioritario en los tres parques Universal; sin Hogwarts Express ni Pandora. Rosen Inn Closest to Universal como alojamiento Plan A, cotizado por 5 noches US$539.94 con impuestos; Universal tres parques/3 días US$335.99 como subtotal en carrito; Volaris $7,015 MXN redondo en captura. Todo SIN COMPRAR. Magic Kingdom entrada aparte pendiente de precio. Transporte aeropuerto/hotel y Disney en rangos estimados; shuttle Rosen–Universal gratis programado con reserva y aforo. Terra Luna US$1,577.46 hotel + Universal es alternativa excluyente. No agregar parques ni noches.",
-  "climate": "A comienzos de diciembre, Orlando suele tener máximas normales de aproximadamente 24 °C y mínimas de 13 °C; rango típico de 13 a 24 °C. Es época relativamente seca, aunque puede haber lluvia o descensos puntuales por frentes fríos. Son normales históricas, no un pronóstico.\n\n*Qué llevar:* Ropa por capas, sudadera ligera para mañana/noche, impermeable plegable y calzado amortiguado para caminar todo el día. Llevar equipaje de mano si la tarifa lo permite; consultar sus cargos.\n\n*Horas de luz:* En la primera semana de diciembre el amanecer ronda las 07:00 y el atardecer las 17:30, hora local de Orlando (EST). Priorizar fotografías de los parques al atardecer y consultar el horario definitivo de cada parque.",
+  "climate": "Para el 2–7 de diciembre en Orlando, las normales históricas mensuales rondan 12 a 23 °C (mínima nocturna y máxima diurna). Es una época relativamente seca frente al verano, aunque una lluvia puntual o un frente frío pueden alterar el día; no es un pronóstico para diciembre de 2026.\n\n*Qué llevar:* Playeras y pantalones cómodos en capas, sudadera o chamarra ligera para primeras y últimas horas, impermeable compacto y calzado cómodo para caminar y permanecer de pie. Priorizar ropa y accesorios que quepan en el equipaje permitido por la tarifa Volaris.\n\n*Horas de luz:* Entre el 2 y el 7 de diciembre, el sol sale aproximadamente de 07:01 a 07:05 y se pone hacia las 17:28, horario local de Orlando (EST, UTC−5). Reservar fotos exteriores para la mañana o antes del atardecer; después aprovechar la iluminación navideña. Consultar horarios oficiales de parques y espectáculos, que no dependen del ocaso.",
   "practicalIndicators": [
     {
       "id": "style",
       "title": "Estilo de viaje",
       "badge": "Activo · cuatro parques",
       "tone": "orange",
-      "text": "Viaje individual de seis días y cinco noches en un solo alojamiento. Cuatro días seguidos de parques, Harry Potter primero, pausas para comidas y filas; no rentar automóvil. El shuttle gratuito Rosen–Universal es programado, con reservas y cupos limitados; no equivale a entrada anticipada."
+      "text": "Viaje individual con cinco noches en un único alojamiento y cuatro jornadas seguidas de parques. Las filas implican muchas horas de pie: priorizar Harry Potter y alternar atracciones con recorridos tranquilos, comidas y descansos. No se requiere automóvil propio; el shuttle de Rosen hacia Universal es gratuito, programado y con cupos sujetos a reserva, sin acceso anticipado incluido."
     },
     {
       "id": "language",
       "title": "Idioma y moneda",
       "badge": "Inglés · USD",
       "tone": "green",
-      "text": "El inglés es el idioma habitual y el dólar estadounidense (USD) la moneda de pago. Se aceptan tarjetas ampliamente; rechazar la conversión del comercio a MXN para evitar un tipo de cambio desfavorable. Referencia Banxico de 15/11/2026: USD 1 ≈ $18.6188 MXN, no tarifa bancaria de compra."
+      "text": "El inglés se utiliza en parques, restaurantes y traslados; el español puede encontrarse en parte de la atención, sin garantía. Se paga en dólares estadounidenses (USD); las tarjetas son ampliamente aceptadas, aunque conviene llevar una pequeña reserva. Al pagar, elegir USD y rechazar la conversión dinámica a MXN. Tipo de cambio referencial fechado en el presupuesto, no tarifa garantizada por el banco."
     },
     {
       "id": "entry",
       "title": "Documentación y consejos prácticos",
-      "badge": "Verificar antes de volar",
+      "badge": "Comprobar vigencia",
       "tone": "orange",
-      "text": "Para viajar con pasaporte mexicano a Orlando se requiere pasaporte vigente y visa estadounidense adecuada vigente (ya disponible para este viaje); confirmar requisitos de entrada y vigencia antes de volar. Conservar confirmación de vuelo de retorno y alojamiento. Florida usa enchufes A/B, compatibles con México: no necesitas adaptador. Red habitual 120 V y 60 Hz; revisar INPUT del cargador. Considerar seguro de viaje y traslado desde aeropuerto MCO."
+      "text": "Para volar MEX–MCO como turista mexicano: pasaporte mexicano vigente y visa estadounidense de visitante válida; ya cuentas con visa, pero revisa su vencimiento y la vigencia de tu pasaporte para toda la visita. No necesitas ESTA con visa válida ni hay escala en terceros países. Lleva datos del hotel y vuelo de regreso por si los solicita migración. Florida y México utilizan enchufes A/B: no necesitas adaptador con clavijas mexicanas compatibles; red habitual 120 V, 60 Hz. Comprueba que el cargador admita INPUT 100–240 V o 120 V. Considera seguro médico de viaje."
     }
   ],
   "exchangeRates": {
@@ -868,8 +887,8 @@
       }
     ]
   },
-  "lodgingSummary": "5 noches en Rosen Inn Closest to Universal (habitación privada, Plan A cotizado; sin reserva). Terra Luna queda como alternativa excluyente con paquete de entradas.",
-  "heroLodgingSummary": "5 noches · 1 alojamiento · Rosen Inn (cotizado, sin reservar)",
+  "lodgingSummary": "Cinco noches en un único alojamiento en International Drive: Rosen Inn Closest to Universal, principal opción cotizada y aún no reservada. Terra Luna se conserva como alternativa excluyente.",
+  "heroLodgingSummary": "5 noches · 1 alojamiento",
   "exchangeNote": "Para importes en dólares se utiliza USD 1 = MXN 18.6188 según referencia Banxico del 15/11/2026. Conversiones aproximadas, no cargos finales.",
   "costExclusions": "No incluidos: boleto Disney real por cotizar (provisión solo en rango), seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
   "cover": "or26-hogwarts",
