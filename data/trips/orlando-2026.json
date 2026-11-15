@@ -102,7 +102,9 @@
       "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. Para la vuelta después del último servicio, presupuestar Uber/Lyft si fuera necesario.",
       "note": "Entrada Universal 3-Day 3-Park, un parque por día; primera utilización 3/12, vigencia dentro de 7 días. Hogwarts Express no está incluido (requiere Park-to-Park).",
       "spend": null,
-      "places": [],
+      "places": [
+        "or26-diagon"
+      ],
       "hotel": "orlando-rosen",
       "transportRefs": [],
       "mobilityLinks": [
@@ -127,7 +129,9 @@
       "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. No sacrificar Hogwarts por esperar transporte: ajustar o usar Uber/Lyft según filas.",
       "note": "Hagrid y VelociCoaster pueden implicar esperas largas; priorizar Harry Potter. Hogwarts Express solo se puede abordar con Park-to-Park.",
       "spend": null,
-      "places": [],
+      "places": [
+        "or26-hogwarts"
+      ],
       "hotel": "orlando-rosen",
       "transportRefs": [],
       "mobilityLinks": [
@@ -152,7 +156,9 @@
       "mobility": "Rosen Inn no ofrece traslado gratuito directo a Magic Kingdom. Considerar transporte por aplicación hasta el Transportation and Ticket Center o punto autorizado y después monorriel/ferry, con margen adicional. Provisión ida/vuelta US$50–90 (≈ $931–1,676 MXN), estimación no cotizada.",
       "note": "Disney no programa Mickey's Very Merry Christmas Party el 5/12/2026 (sí 3, 4 y 6). Entrada regular específica de Magic Kingdom pendiente de precio final; comprobar horario y espectáculos.",
       "spend": null,
-      "places": [],
+      "places": [
+        "or26-magic"
+      ],
       "hotel": "orlando-rosen",
       "transportRefs": [],
       "mobilityLinks": [
@@ -177,7 +183,9 @@
       "mobility": "Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. Dar prioridad al Ministerio de Magia y reservar asiento para ida y regreso.",
       "note": "Epic Universe suele requerir más tiempo del disponible. No prometer todas las atracciones; Ministry of Magic y Dark Universe son las prioridades. No añadir Pandora: está en Animal Kingdom y quedó descartado.",
       "spend": null,
-      "places": [],
+      "places": [
+        "or26-ministry"
+      ],
       "hotel": "orlando-rosen",
       "transportRefs": [],
       "mobilityLinks": [
@@ -780,5 +788,12 @@
   "lodgingSummary": "5 noches en Rosen Inn Closest to Universal (habitación privada, Plan A cotizado; sin reserva). Terra Luna queda como alternativa excluyente con paquete de entradas.",
   "heroLodgingSummary": "5 noches · 1 alojamiento · Rosen Inn (cotizado, sin reservar)",
   "exchangeNote": "Para importes en dólares se utiliza USD 1 = MXN 18.6188 según referencia Banxico del 15/11/2026. Conversiones aproximadas, no cargos finales.",
-  "costExclusions": "No incluidos: boleto Disney real por cotizar (provisión solo en rango), seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total."
+  "costExclusions": "No incluidos: boleto Disney real por cotizar (provisión solo en rango), seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
+  "cover": "or26-hogwarts",
+  "placeDescriptions": {
+    "or26-diagon": "Banco Gringotts y Diagon Alley, primera jornada de Harry Potter.",
+    "or26-hogwarts": "Castillo de Hogwarts en Hogsmeade, prioridad junto con Hagrid.",
+    "or26-magic": "Castillo de Cenicienta y atracciones clásicas de Magic Kingdom.",
+    "or26-ministry": "Ministerio de Magia en Epic Universe, atracción prioritaria."
+  }
 }
