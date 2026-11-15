@@ -84,3 +84,15 @@
 **Tres revisiones ANTES del commit de datos:** (1) cobertura 12/12, estados/iconos y sintaxis de temperatura; (2) conversión °F a °C exacta de las 24 normales NOAA/Florida Climate Center, min/máx; (3) concordancia de 12 meses con vacaciones, fiestas, ciclones y prioridad Harry Potter. Todas sin observaciones; commit `7af27e38ebc8182bdddb001a14e048cee017393d`.
 
 **Próxima sección recomendada:** Mapa (validación geográfica y visual fina, pines y correspondencia con noches), después Experiencias y Reservaciones importantes. El resto del viaje tiene contenido pero no debe marcarse como revisado al 100% por esta auditoría específica.
+
+## Auditoría específica del Mapa · 15/11/2026
+
+- **Cinco puntos cotejados con cartografía externa:** Rosen Inn Closest to Universal (28.46, −81.469), Universal Studios Florida (28.47724, −81.46924), Islands of Adventure (28.47114, −81.47157), Magic Kingdom (28.41909, −81.58143) y Epic Universe (28.4435, −81.44774). Fuente cartográfica: OpenStreetMap/Mapcarta; coordenadas de parque orientadas a sus áreas centrales, no a la puerta de acceso ni a puntos de recogida de autobuses.
+- **Una estancia:** `base:true`, `stayName: 'Orlando'` y `bases: [['Orlando',5]]` asocian el hotel con cinco noches; los cuatro parques `base:false` no heredan noches. Números 1–5 corresponden a la secuencia 2–6 diciembre (hotel y 4 parques).
+- **Experiencia de mapa:** cuatro sitios `kind:'Parque temático'`; etiquetas y leyenda específicas sin presentar parques como ciudades ni introducir rótulos 'referencia regional'. `travel-ui.js` usa descripción válida para ciudades y lugares y badge 'Parque temático' solo cuando corresponde, sin alterar otros viajes.
+- **Geografía y movilidad:** Studios e Islands están en el complejo original/CityWalk, Epic en zona separada y Magic Kingdom en Walt Disney World. El mapa es de pines, no representa ruta vial ni tiempos. Universal publica puntos de vehículos: Epic pickup/dropoff en 1201 Epic Blvd (dirección de estacionamiento 1001 Epic Blvd); no suponer que el centro del mapa es acceso de Uber.
+- **Transporte hotel:** servicio gratuito Rosen–Universal programado y sujeto a reserva/aforo. FAQ del hotel menciona opción Disney de pago pero sin horario, ruta ni precio confirmados; Uber/Lyft sigue como plan principal.
+- **Control 1:** 5 coordenadas en región Orlando y 5 órdenes únicos. **Control 2:** cruce de 4 fechas/4 parques con hotel de 5 noches. **Control 3:** renderer con etiquetas, orden, leyenda y ausencia de 'Noches por definir' / 'referencia regional' en tests Desktop y Mobile.
+- GitHub Actions del commit `42048c7f` terminó **success** con pruebas del mapa agregadas. Se hicieron cambios de etiquetas en commits `31574a55`/`5a5a9e51`; revisar el CI posterior antes de cerrar la auditoría técnica definitiva.
+
+**Siguiente sección pendiente de refinamiento:** Experiencias: revisar todas las atracciones acordadas por parque, ordenar imprescindible/prioridad secundaria, comidas temáticas, intensidad y cobertura fotográfica sin alterar días ni añadir Pandora.
