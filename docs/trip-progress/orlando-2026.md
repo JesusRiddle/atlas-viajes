@@ -5,8 +5,8 @@
 **Rama / PR:** `feature/orlando-2026` · https://github.com/JesusRiddle/atlas-viajes/pull/17  
 **Modalidad:** Itinerario detallado  
 **Última actualización:** 2026-11-15  
-**Etapa actual:** 12 · mapa y fotografías principales incorporados; auditoría D pendiente de CI/navegador  
-**Siguiente acción autónoma:** verificar resultado de GitHub Actions del commit 775c858b, ejecutar comprobación de navegador Desktop/Mobile y corregir fallas; después completar foto extra opcional y verificar entradas Disney/costos pendientes.
+**Etapa actual:** 13 · regresiones del catálogo corregidas, auditoría D aún pendiente de CI/navegador  
+**Siguiente acción autónoma:** confirmar CI del commit a24345f8 (y corregir cualquier fallo nuevo), luego ejecutar validación visual Desktop/Mobile de las nueve secciones y fuentes fotográficas.
 
 ## Decisiones definitivas del viajero
 
@@ -36,7 +36,7 @@
 - [x] **10 Panorama:** intro, introShort, clima/luz e indicadores [style,language,entry].
 - [x] **11 Presupuesto preliminar:** nueve partidas Plan A; hotel y entradas cotizados, vuelos captura, gastos de traslados/comidas estimados; Disney cost.amount null. Escenario Terra Luna excluido. **Auditoría C provisional**, precio real de Disney pendiente.
 - [x] **12 Fotos/portada:** cuatro fotos de Wikimedia Commons con fuentes, autores y licencias; portada Hogwarts, una foto por día de parque. Falta inspección visual efectiva en navegador.
-- [ ] **13 Auditoría D/entrega:** PR #17 ya existe en borrador; no ejecutar merge. Node, browser y CI por confirmar.
+- [ ] **13 Auditoría D/entrega:** PR #17 sigue en borrador; se corrigieron dos pruebas de catálogo con valores fijos que fallaron en CI (103/105); nuevo CI iniciado, resultado pendiente. Falta revisión Desktop/Mobile y renderizado completo. No merge.
 
 ## Verificaciones ejecutadas en este turno
 - Lectura de JSON editado desde GitHub posterior al commit `6659775e03709f99459f6b60d560c4f1b422fff2`: parse JSON correcto.
@@ -60,3 +60,10 @@
 - **Fotos:** cuatro entradas nuevas en data/places.json (or26-diagon, or26-hogwarts, or26-magic, or26-ministry) con CC y atribución. Foto portada Hogwarts, fotos en cuatro jornadas, ningún día de vuelo requiere foto.
 - **Presupuesto:** partida conocida USD 1,450.93 + vuelo MXN 7,015 antes del boleto Disney. Rango general corregido $37,000–$40,000 MXN, con Disney solo como provisión y sin compras.
 - **Comprobación en GitHub:** JSON descargado y parseado, cinco puntos de mapa, portada con imagen existente, cuatro fotos referenciadas existentes, secuencia de seis fechas y partidas USD conciliadas. Workflow del commit 775c858b todavía en progreso cuando se consultó; no atribuir éxito hasta que termine.
+
+## Revisión de CI y fotografías · 15/11/2026
+- GitHub Actions de commit 650063a y 775c858: **falló** la suite Node con 103 aprobadas y 2 fallidas. Errores localizados en `tests/loader-regression.test.cjs`: expectativa fija de 22 registros (ahora 23) y primera posición Colombia cuando la nueva cronología comienza con Orlando 2026.
+- Se actualizaron ambas pruebas manteniendo los 15 viajes históricos en grupo `ideas`, agregando validación de Orlando como visible, y preservando el orden de los viajes 2027. Commit `c57eca756f21834e69368f46151dfce85c9ceca6`.
+- Se comprobaron en Wikimedia Commons las cuatro páginas originales de las fotos, incluyendo sus autores y licencias. La fotografía Hogwarts `Hogwarts Castle (15379458178).jpg` tenía licencia mal declarada como CC BY-SA 4.0; corresponde a **CC BY 2.0** y se corrigió en `data/places.json` (commit `a24345f8ba78f92e6730246be633414894c4398b`).
+- El nuevo CI se observó `in_progress` tras los commits de corrección; no afirmar éxito mientras siga sin conclusión.
+- Sigue pendiente inspeccionar carga de imágenes en navegador y los resultados de pruebas de pantalla; archivos fuente y metadatos verificados no equivalen a validación visual.
