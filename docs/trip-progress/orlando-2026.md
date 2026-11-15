@@ -25,7 +25,7 @@
 
 - [x] **00 Preparación:** rama y registro visible creados previamente; guías maestras y plantillas consultadas.
 - [x] **01 Alcance:** destino, 1 viajero, seis días, cuatro parques y prioridades definidos.
-- [x] **02 Temporadas:** doce meses con normales climáticas generales Orlando Florida Climate Center 1991–2020; evaluaciones de demanda cualitativas.
+- [x] **02 Temporadas · refinada y revisada 3 veces (15/11/2026):** doce meses, mínimas/máximas medias 1991–2020 convertidas y redondeadas, clima y precipitación, temporada ciclónica, eventos Disney/Universal, puentes, afluencia y ventanas recomendadas. Cinco meses recomendables (con ventanas), tres aceptables, cuatro desaconsejables. Fuentes oficiales en `seasonality.referenceLinks`; CI de commit `7af27e38` en verificación.
 - [x] **03 Fechas y esqueleto diario:** seis fechas continuas y cinco noches, secuencia compatible; **Auditoría A: verificación estructural parcial**, aún sin validar todas las disponibilidades operativas.
 - [x] **04 Mapa:** cinco puntos (Rosen y cuatro parques), coordenadas comprobadas en Mapcarta/OSM; hotel con precisión aproximada de tres decimales.
 - [x] **05 Experiencias:** Harry Potter y atracciones principales detalladas sin sumar parques extras.
@@ -74,3 +74,13 @@
 - El navegador detectó presupuesto inválido `$NaN–$3.00 MXN` en Orlando; causa: `budgetRange` se guardó como cadena en lugar de `[mínimo, máximo]`. Se corrigió a `[37000,40000]` (MXN).
 - **GitHub Actions run 43755905853 del commit 6690d12d3356bea5737841afdf7a8f193d9a3e7d terminó SUCCESS**. Incluye pruebas de Node y Playwright browser smoke Desktop/Mobile, con nueve secciones y navegación de todos los viajes.
 - Quedan fuera del alcance automático: comprobación humana de estética, visibilidad real de imágenes remotas bajo redes de usuarios, cotización de Magic Kingdom y disponibilidad de servicios aún no comprados.
+
+## Auditoría específica de Temporadas · 15/11/2026
+
+**Alcance 100% editorial de la sección:** 12/12 meses, rango normal de mínimas y máximas medias mensual (no máximas diurnas mezcladas), etiquetas y iconos válidos. Fuentes principales Florida Climate Center/NOAA 1991–2020, NHC para ciclones, Disney y Universal oficiales para eventos 2026/2027; estimaciones de afluencia de Undercover Tourist señaladas como no oficiales.
+
+**Resultado:** `recommended` enero, febrero, abril, noviembre y diciembre con ventanas específicas; `conditional` marzo, mayo y octubre; `avoid` junio, julio, agosto y septiembre. Septiembre baja a desaconsejable por pico de actividad ciclónica pese a precios y filas atractivos; octubre queda aceptable por Halloween y riesgo residual. Diciembre primera mitad recomendado para Harry Potter; Navidad y Año Nuevo desaconsejados dentro del mismo mes por aglomeración.
+
+**Tres revisiones ANTES del commit de datos:** (1) cobertura 12/12, estados/iconos y sintaxis de temperatura; (2) conversión °F a °C exacta de las 24 normales NOAA/Florida Climate Center, min/máx; (3) concordancia de 12 meses con vacaciones, fiestas, ciclones y prioridad Harry Potter. Todas sin observaciones; commit `7af27e38ebc8182bdddb001a14e048cee017393d`.
+
+**Próxima sección recomendada:** Mapa (validación geográfica y visual fina, pines y correspondencia con noches), después Experiencias y Reservaciones importantes. El resto del viaje tiene contenido pero no debe marcarse como revisado al 100% por esta auditoría específica.
