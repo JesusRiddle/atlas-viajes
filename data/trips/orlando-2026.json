@@ -623,7 +623,10 @@
     }
   ],
   "budgetPreliminary": true,
-  "budgetRange": "$37,000–$40,000 MXN aprox. por persona, incluyendo provisión no cotizada para Disney, con cargos opcionales excluidos.",
+  "budgetRange": [
+    37000,
+    40000
+  ],
   "budgetNote": "Escenario Rosen Inn: vuelo $7,015 MXN; alojamiento US$539.94 (≈ $10,053 MXN); Universal US$335.99 (≈ $6,256 MXN) (subtotal del carrito); MCO↔Rosen provisión US$95.00 (≈ $1,769 MXN); Rosen↔Disney US$70.00 (≈ $1,303 MXN); respaldo de transporte US$40.00 (≈ $745 MXN); comidas US$290.00 (≈ $5,399 MXN); imprevistos US$80.00 (≈ $1,490 MXN). Subtotal de partidas con importe introducido: US$1,450.93 (≈ $27,015 MXN) más vuelo $7,015 MXN = ≈ $34,030 MXN ANTES de Magic Kingdom. Magic Kingdom NO está cotizado; se proyecta aparte US$180–240 (≈ $3351–4469 MXN) SOLO para construir rango, no se duplica en gastos. No incluye equipaje adicional, seguro, pases Express, regalos ni varita. Terra Luna por US$1577.46 (≈ $29,370 MXN) es alternativa excluyente (hotel + tickets); nunca sumar junto a Rosen y boleto individual.",
   "ticketNotes": [
     "Universal 3-Day, 3-Park, 1 adulto: US$335.99 (≈ $6,256 MXN) como subtotal cotizado en carrito 15/11/2026, validez de 7 días desde 3/12, un día por parque (Studios 3, Islands 4, Epic 6). Confirmar total definitivo antes de pagar.",
