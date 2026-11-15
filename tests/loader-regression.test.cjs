@@ -379,8 +379,8 @@ test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserv
         'Las visitas originales deben mantenerse al añadir la visita al Prado y Retiro');
     const madridDay = migrated.days.find(day => day.date === '2027-05-15');
     assert.match(madridDay.title, /Prado.*Retiro/);
-    assert.ok(madridDay.places.includes('sp27-museo-prado'));
-    assert.ok(madridDay.places.includes('sp27-retiro'));
+    assert.ok(madridDay.places.includes('prado'));
+    assert.ok(madridDay.places.includes('retiro'));
     assert.ok(!madridDay.places.includes('sp27-san-isidro'),
         'San Isidro no debe figurar como visita elegida');
     const lisbonDay = migrated.days.find(day => day.date === '2027-05-26');
