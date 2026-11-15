@@ -333,3 +333,46 @@ test('documentación resalta palabras completas y presenta ETIAS como enlace seg
  assert.match(component, /noopener noreferrer/);
 });
 
+
+test('Italia mayo 2027: reservas, gastos, mapa y enlaces quedan sincronizados con la ruta', () => {
+  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
+  const plan = {
+    'ticket-milano-duomo': '2027-05-10',
+    'ticket-egizio': '2027-05-11',
+    'ticket-cenacolo': '2027-05-12',
+    'ticket-brera': '2027-05-12',
+    'ticket-siena': '2027-05-17',
+    'ticket-accademia': '2027-05-18',
+    'ticket-brunelleschi': '2027-05-18',
+    'ticket-uffizi-vasari': '2027-05-19',
+    'ticket-santa-croce': '2027-05-19',
+    'ticket-bargello': '2027-05-20'
+  };
+  for (const [id, date] of Object.entries(plan)) {
+    assert.equal(trip.expenses.find(e => e.id === id)?.date, date, id);
+  }
+  assert.equal(trip.days[6].title.includes('Cinque Terre'), true);
+  assert.equal(trip.days[7].title.includes('Portovenere'), true);
+  assert.ok(trip.mapPoints.find(x => x.name.includes('Cinque Terre')).order <
+    trip.mapPoints.find(x => x.name === 'Portovenere').order);
+  for (const day of [2, 4, 6, 7, 8, 9, 10, 14]) {
+    const d = trip.days[day - 1];
+    assert.ok(d.boardingGuide?.length > 60, 'Falta guía de embarque día ' + day);
+    assert.ok(d.mobilityLinks?.length > 0, 'Faltan enlaces de Maps día ' + day);
+    assert.ok(d.mobilityLinks.every(x => /^https:\/\//.test(x.url)));
+  }
+  for (const transfer of trip.majorTransport.filter(x => x.id !== 'flight-international')) {
+    for (const option of transfer.options) {
+      for (const journey of option.journeys) {
+        for (const segment of journey.segments) {
+          assert.equal(segment.departure, null, 'Tren futuro sin horario confirmado: ' + transfer.id);
+          assert.equal(segment.arrival, null, 'Tren futuro sin horario confirmado: ' + transfer.id);
+        }
+      }
+    }
+  }
+  assert.doesNotMatch(JSON.stringify(trip), /2027-04-(?:0[3-9]|1[0-6])/);
+  const flight = trip.majorTransport.find(x => x.id === 'flight-international').options[0];
+  assert.equal(flight.status, 'quoted');
+  assert.match(flight.notes, /NO pagada ni comprada/);
+});
