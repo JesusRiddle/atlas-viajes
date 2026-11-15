@@ -718,73 +718,97 @@
     }
   },
   "seasonality": {
-    "summary": "Intervalos orientativos de mínimas y máximas medias mensuales del aeropuerto de Orlando según normales 1991–2020 del Florida Climate Center; no representan pronóstico ni máximos extremos. Principios de diciembre equilibran clima y ambiente navideño, sin garantizar filas reducidas.",
+    "summary": "Orlando para Disney y Universal: mejores ventanas, por comodidad y afluencia habitual, en días laborales de mediados/finales de enero (tras los festivos), febrero fuera de Presidents’ Day y carreras, finales de abril después de Spring Break, primera mitad de noviembre fuera de festivos y primera quincena de diciembre. Esta última es especialmente buena si buscas la Navidad de Harry Potter; 2–7 diciembre de 2026 mantiene el ambiente festivo sin llegar a la saturación de Navidad, aunque no garantiza parques vacíos. Marzo, mayo y octubre dependen más de la semana elegida; junio a septiembre se desaconsejan para caminar cuatro días seguidos por bochorno y tormentas, y septiembre además coincide con el pico ciclónico. Los estados son una valoración editorial global para este tipo de viaje, no un calendario de precios garantizados. Cada rango expresa mínima y máxima media mensual en °C, redondeadas a enteros, según normales 1991–2020 del Aeropuerto Internacional de Orlando (Florida Climate Center/NOAA); no son pronósticos ni extremos. La precipitación normal crece de mayo a septiembre, con máximos en junio-agosto. Riesgo atlántico oficial junio–noviembre, con máximo habitual en torno al 10 de septiembre. Para eventos y picos de afluencia se usaron calendarios oficiales 2026/2027 y patrones de demanda; revisar cada año al escoger fechas.",
     "months": {
       "10": {
-        "status": "recommended",
-        "description": "19 a 29 °C. Mejora gradualmente el clima; eventos de Halloween pueden aumentar afluencia.",
-        "icon": "partlyCloudy"
+        "status": "conditional",
+        "description": "19 a 29 °C. Aceptable, mejor en la segunda mitad por descenso del calor y de las lluvias, aunque persiste riesgo de ciclones hasta noviembre. Halloween Horror Nights en Universal requiere entrada aparte y puede adelantar cierres de Studios; el puente de octubre y Halloween elevan demanda.",
+        "icon": "cloudy"
       },
       "11": {
         "status": "recommended",
-        "description": "15 a 26 °C. Menos lluvia y temperaturas agradables; evitar Thanksgiving y eventos de alta demanda.",
+        "description": "15 a 26 °C. Recomendable en días laborales de la primera mitad o antes de Acción de Gracias: temperaturas cómodas y el mes más seco en promedio; aparecen decoraciones navideñas. Evitar la semana de Thanksgiving y comprobar las fiestas con cierre anticipado en Magic Kingdom.",
         "icon": "partlyCloudy"
       },
       "12": {
         "status": "recommended",
-        "description": "13 a 24 °C. Relativamente seco y ambiente navideño; preferir principios de diciembre frente a Navidad y Año Nuevo.",
+        "description": "12 a 23 °C. Recomendable sobre todo en la primera quincena: ambiente navideño en los tres mundos de Harry Potter, clima fresco y lluvias moderadas; el 2–7/12/2026 es una buena elección. Evitar Navidad y Año Nuevo por aglomeraciones y precios; comprobar noches de fiesta de Magic Kingdom.",
         "icon": "partlyCloudy"
       },
       "01": {
-        "status": "conditional",
-        "description": "10 a 22 °C. Seco y cómodo para caminar, aunque algunos frentes fríos pueden hacer las mañanas frescas.",
-        "icon": "cloudy"
+        "status": "recommended",
+        "description": "10 a 22 °C. Recomendable después del regreso a clases: tiempo fresco, poca lluvia y menor demanda entre semana; evitar Año Nuevo, el maratón Disney y el fin de semana de Martin Luther King. Puede haber frentes fríos, horarios reducidos y cierres temporales por mantenimiento.",
+        "icon": "partlyCloudy"
       },
       "02": {
         "status": "recommended",
-        "description": "11 a 24 °C. Clima generalmente agradable y lluvia moderada; evitar feriados y vacaciones escolares.",
+        "description": "11 a 24 °C. Recomendable en días laborales fuera de vacaciones escolares: de los meses más secos y cómodos para caminar; Mardi Gras en Universal añade espectáculos. Presidents’ Day, vacaciones de invierno y carreras Disney pueden elevar filas y tarifas.",
         "icon": "partlyCloudy"
       },
       "03": {
         "status": "conditional",
-        "description": "13 a 26 °C. Días suaves, pero el Spring Break incrementa visitantes y precios.",
+        "description": "13 a 26 °C. Clima seco y agradable, pero Spring Break suele provocar filas largas y tarifas mayores desde principios o mediados de mes, con picos cerca de Semana Santa. Aceptable solo en fechas laborables alejadas de recesos escolares.",
         "icon": "cloudy"
       },
       "04": {
         "status": "recommended",
-        "description": "16 a 29 °C. Temperaturas más cálidas; revisar Semana Santa por la afluencia.",
+        "description": "16 a 29 °C. Recomendable en la segunda mitad, cuando pasan Semana Santa y buena parte de Spring Break; días más cálidos y lluvia aún moderada. Evitar las vacaciones de Pascua y revisar carreras o competencias de grupos.",
         "icon": "partlyCloudy"
       },
       "05": {
         "status": "conditional",
-        "description": "19 a 32 °C. Aumentan calor y humedad; posibles tormentas vespertinas.",
+        "description": "19 a 31 °C. Aceptable a principios de mes, con mayor calor y humedad y aumento gradual de las tormentas; los días laborales suelen ser más manejables que los festivos. Evitar Memorial Day y el inicio de vacaciones escolares.",
         "icon": "cloudy"
       },
       "06": {
         "status": "avoid",
-        "description": "22 a 33 °C. Calor húmedo y lluvias abundantes; alta demanda vacacional.",
-        "icon": "sun"
+        "description": "22 a 33 °C. Desaconsejable para cuatro parques consecutivos: calor húmedo, lluvia abundante y tormentas frecuentes de tarde; además comienzan vacaciones de verano y temporada oficial de huracanes.",
+        "icon": "hot"
       },
       "07": {
         "status": "avoid",
-        "description": "23 a 34 °C. Muy caluroso, húmedo y lluvioso; temporada alta familiar.",
-        "icon": "sun"
+        "description": "23 a 33 °C. Desaconsejable: calor y humedad muy altos, chubascos o tormentas frecuentes y demanda de vacaciones escolares, especialmente en torno al 4 de julio. Podrían aparecer promociones puntuales, pero no compensan el cansancio térmico.",
+        "icon": "hot"
       },
       "08": {
         "status": "avoid",
-        "description": "23 a 33 °C. Calor intenso, chubascos y temporada de ciclones.",
-        "icon": "sun"
+        "description": "23 a 33 °C. Desaconsejable por calor, tormentas casi diarias y aumento del riesgo tropical; tras el regreso a clases puede haber menos filas y ofertas, a costa de un clima menos cómodo y mayor incertidumbre.",
+        "icon": "hot"
       },
       "09": {
-        "status": "conditional",
-        "description": "22 a 32 °C. Menos turistas tras verano, pero humedad, lluvia y riesgo de ciclones.",
-        "icon": "cloudy"
+        "status": "avoid",
+        "description": "22 a 32 °C. Desaconsejable para este viaje aunque suele combinar menos filas y tarifas competitivas: bochorno, lluvias y pico climatológico de ciclones alrededor del 10 de septiembre. Eventos de Halloween pueden alterar horarios y requerir entrada aparte.",
+        "icon": "hot"
       }
     },
     "referenceLinks": [
       {
-        "label": "Florida Climate Center · normales climáticas 1991–2020 de Orlando",
+        "label": "Florida Climate Center / NOAA · normales 1991–2020 Orlando (temperaturas y lluvia)",
         "url": "https://climatecenter.fsu.edu/products-services/data/1991-2020-normals/orlando"
+      },
+      {
+        "label": "NOAA National Hurricane Center · temporada atlántica y pico ciclónico",
+        "url": "https://www.nhc.noaa.gov/climo/"
+      },
+      {
+        "label": "Disney · calendario oficial de eventos 2026–2027",
+        "url": "https://disneyworld.disney.go.com/events-tours/calendar/"
+      },
+      {
+        "label": "Disney · fiesta de Navidad 2026 y noches de cierre especial",
+        "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+      },
+      {
+        "label": "Universal · calendario oficial de eventos 2026",
+        "url": "https://media.universalparksusa.com/press-releases/universal-orlando-resort-reveals-dates-2026/"
+      },
+      {
+        "label": "Universal · Mardi Gras 2027",
+        "url": "https://www.universalorlando.com/web/es/us/things-to-do/events/mardi-gras/"
+      },
+      {
+        "label": "Undercover Tourist · afluencia y recesos 2026/2027 (estimaciones, no dato oficial)",
+        "url": "https://www.undercovertourist.com/blog/best-time-to-visit-disney-world/"
       }
     ]
   },
