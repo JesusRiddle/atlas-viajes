@@ -204,6 +204,32 @@ const assert = require('node:assert/strict');
             'Orlando: día del vuelo sin noche de hotel');
         }
         if (id === 'orlando-2026') {
+          const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
+          const days = page.locator('#dias details.day');
+          assert.equal(await days.count(), 6, 'Orlando: seis jornadas');
+          assert.deepEqual(tripData.days.map(d => d.date), [
+            '2026-12-02','2026-12-03','2026-12-04',
+            '2026-12-05','2026-12-06','2026-12-07'
+          ], 'Orlando: seis días consecutivos');
+          assert.deepEqual(tripData.days.map(d => d.hotel), [
+            'orlando-rosen','orlando-rosen','orlando-rosen',
+            'orlando-rosen','orlando-rosen',null
+          ], 'Orlando: cinco noches sin sexta pernocta');
+          const d3 = await page.locator('#dia-2').innerText();
+          const d4 = await page.locator('#dia-3').innerText();
+          const d5 = await page.locator('#dia-4').innerText();
+          const d6 = await page.locator('#dia-5').innerText();
+          assert.match(d3, /Holiday Parade featuring Macy/, 'Studios: desfile navideño como opción');
+          assert.match(d4, /Grinchmas Who-liday Spectacular/, 'Islands: Navidad con función por confirmar');
+          assert.match(d5, /NO corresponden al boleto regular/, 'Disney: no confundir fiesta privada');
+          assert.match(d6, /COMO MÁXIMO UNA/, 'Epic: máximo una atracción opcional intensiva');
+          assert.match(d6, /1201 Epic Boulevard/, 'Epic: regreso alternativo por app');
+          assert.ok(tripData.days.every(d => d.mobilityLinks.length >= 2),
+            'Orlando: enlaces por jornada');
+          assert.equal(tripData.days[0].transportRefs[0], 'flight-mex-mco');
+          assert.equal(tripData.days[5].transportRefs[0], 'flight-mex-mco');
+        }
+        if (id === 'orlando-2026') {
           const mobility = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           assert.equal(mobility.majorTransport.length, 1, 'Orlando: una ficha de vuelo redondo');
           assert.equal(mobility.majorTransport[0].budgetIncludedIn, 'orlando-flight',
@@ -301,7 +327,7 @@ const assert = require('node:assert/strict');
           }
           assert.doesNotMatch(experienceText, /Pandora|Animal Kingdom|Hollywood Studios/,
             'Orlando: no incorporar parques descartados');
-          assert.match(await page.locator('#dia-5').innerText(), /no intentar completarlas todas/,
+          assert.match(await page.locator('#dia-5').innerText(), /COMO MÁXIMO UNA/,
             'Orlando: Epic Universe mantiene opciones y no promete todas las atracciones');
         }
         if (id === 'orlando-2026') {
