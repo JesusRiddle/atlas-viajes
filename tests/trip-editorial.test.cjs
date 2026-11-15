@@ -376,3 +376,20 @@ test('Italia mayo 2027: reservas, gastos, mapa y enlaces quedan sincronizados co
   assert.equal(flight.status, 'quoted');
   assert.match(flight.notes, /NO pagada ni comprada/);
 });
+
+test('Italia mayo 2027: evita regresiones de fechas ocultas y enlaces ferroviarios desaconsejados', () => {
+  const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
+  const all = JSON.stringify(trip);
+  assert.doesNotMatch(all, /(?:\\b1mayo\\b|04\\/04(?:\\/2027)?|16\\/04(?:\\/2027)?|undefined Cada tramo)/);
+  assert.match(trip.days[13].headerPlaces.join(' '), /22 de mayo de 2027/);
+  const lucca = trip.majorTransport.find(x=>x.id==='train-la-spezia-lucca');
+  const selected = lucca.options.find(x=>x.id===lucca.selectedOption);
+  assert.doesNotMatch(selected.provider, /651|18707/);
+  assert.ok(selected.journeys[0].segments.length >= 2);
+  assert.match(selected.notes, /20–30 minutos/);
+  const cinque = trip.majorTransport.find(x=>x.id==='train-cinque-terre');
+  assert.equal(cinque.options[0].selectedFare, 'card-high');
+  assert.equal(cinque.returnAlternatives, undefined);
+  assert.match(trip.hotels[0].notes, /ferias comerciales/i);
+  assert.match(trip.practicalIndicators.find(x=>x.id==='entry').text, /ETIAS/);
+});
