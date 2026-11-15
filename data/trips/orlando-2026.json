@@ -234,7 +234,7 @@
       "note": "Hora de salida 17:05 y llegada a MEX 19:45, sin compra. No programar visitas que pongan en riesgo el vuelo.",
       "spend": null,
       "places": [],
-      "hotel": "orlando-rosen",
+      "hotel": null,
       "transportRefs": [
         "flight-mex-mco"
       ],
