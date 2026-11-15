@@ -98,7 +98,7 @@
     },
     {
       "city": "Madrid",
-      "description": "Pasear por Madrid de los Austrias y vivir las celebraciones de San Isidro, probando bocadillo de calamares y rosquillas del santo si están disponibles."
+      "description": "Recorrer Madrid de los Austrias, contemplar obras maestras en el Museo del Prado y pasear por el Retiro; probar un bocadillo de calamares o cocina madrileña tradicional."
     },
     {
       "city": "Zamora",
@@ -141,9 +141,9 @@
       "base": "En vuelo",
       "am": "1. Verificar pasaporte, requisitos de entrada a España y datos de alojamiento, sin considerar aprobados requisitos futuros hasta confirmarlos.\n2. Confirmar terminal, equipaje y horario del vuelo multidestino; hacer check-in cuando lo habilite la aerolínea.",
       "pm": "1. Organizar traslado al aeropuerto de Ciudad de México con margen para tráfico y seguridad.\n2. Presentarse al aeropuerto con la antelación indicada por la aerolínea, orientativamente tres horas antes de la salida internacional.",
-      "night": "1. Embarcar hacia Barcelona según el vuelo que finalmente se compre.\n2. Noche a bordo; la primera noche de hotel corresponde al domingo 9 de mayo, no a este sábado.",
-      "mobility": "• *CDMX → aeropuerto:* Traslado según terminal y horario reales.\n• *Vuelo internacional:* MEX → Barcelona (BCN); conexión, aerolínea y horas pendientes de cotización.",
-      "note": "• *Sin reserva:* No existe vuelo confirmado; si la opción elegida llega después del domingo 9, habrá que replanear la primera jornada.\n• *Equipaje:* Valorar documentado frente a mano antes de comprar.",
+      "night": "1. Tomar el vuelo American Airlines comercializado como IB8056 desde MEX T1 a las 11:20 hacia Dallas (DFW); llegada prevista 15:09.\n2. Conectar en DFW con IB4792, salida 17:20 rumbo a Barcelona. Noche a bordo; los boletos están cotizados pero NO COMPRADOS.",
+      "mobility": "• *MEX → DFW:* American Airlines IB8056, 11:20–15:09 (horas locales).\n• *Conexión DFW:* 2 h 11 min, con trámite migratorio estadounidense y controles aplicables; confirmar procedimiento de equipaje.\n• *DFW → BCN:* American Airlines IB4792, 17:20–10:10 (+1 día, domingo 9).",
+      "note": "• *Vuelos cotizados, NO COMPRADOS:* Precio conjunto de ida y vuelta $15,812.24 MXN (15/11/2026), sujeto a cambio.\n• *Tránsito por EE. UU.:* Visa vigente no sustituye trámites migratorios; revisar tiempos y documentación.\n• *Equipaje:* Tarifa Básica con referencia de artículo personal y maleta de cabina; confirmar límites con American y British.\n• *Conexión Dallas:* Verificar recontrol de seguridad y si corresponde reclamación/reentrega de equipaje, aunque la tarifa elegida contempla viajar con maleta de cabina.",
       "places": [],
       "headerPlaces": [
         "Ciudad de México · salida aérea",
@@ -159,11 +159,11 @@
       "date": "2027-05-09",
       "title": "Llegada y barrios históricos",
       "base": "Barcelona",
-      "am": "1. Llegar a Barcelona, realizar control fronterizo y recoger equipaje si corresponde.\n2. Trasladarse al alojamiento candidato en Eixample/Sant Antoni; solicitar consigna si todavía no está disponible la habitación.",
+      "am": "1. Llegar al aeropuerto Barcelona-El Prat (BCN, T1) a las 10:10 según la opción cotizada; realizar control fronterizo y recogida de equipaje, si corresponde.\n2. Trasladarse al alojamiento candidato en Eixample/Sant Antoni; solicitar consigna si todavía no está disponible la habitación.",
       "pm": "1. Recorrer a pie el Barrio Gótico en una ruta breve, incluyendo el entorno de la Catedral de Barcelona.\n2. Continuar hacia El Born solo si la llegada deja tiempo y energía; detenerse para comer.",
       "night": "1. Pasear por el entorno de Santa Maria del Mar o regresar al hotel.\n2. Cena temprana y descanso antes de la visita con horario a la Sagrada Família.",
       "mobility": "• *BCN → centro:* Comparar Aerobús, tren o metro según terminal y dirección del hotel.\n• *Gótico → Born:* Trayecto caminable, pero reducirlo si hay cansancio o equipaje.",
-      "note": "• *Llegada transatlántica:* Migración y traslado pueden ocupar buena parte del día; no reservar monumentos con hora fija.\n• *Alojamiento:* Acta Splendid es candidato, sin reservar; confirmar consigna y entrada.\n• *Si sobra tiempo:* Boqueria o Arc de Triomf/Ciutadella son alternativas de paseo, no visitas añadidas obligatorias; elegir según la llegada y la ubicación.",
+      "note": "• *Llegada a las 10:10 (cotizada, no comprada):* Migración y traslado pueden ocupar buena parte del día; no reservar monumentos con hora fija.\n• *Alojamiento:* Acta Splendid es candidato, sin reservar; confirmar consigna y entrada.\n• *Si sobra tiempo:* Boqueria o Arc de Triomf/Ciutadella son alternativas de paseo, no visitas añadidas obligatorias; elegir según la llegada y la ubicación.",
       "places": [
         "gotico",
         "barcelona-cathedral",
@@ -298,7 +298,7 @@
       "base": "Madrid",
       "am": "1. Salir temprano hacia Madrid-Chamartín con margen para el tren a Zamora; desayunar antes de abordar.\n2. Llegar a Zamora y dirigirse al casco histórico; iniciar por el entorno de la Catedral y las iglesias románicas.",
       "pm": "1. Visitar la Catedral según su horario turístico y pasear por el castillo, miradores y calles del conjunto monumental.\n2. Comer un plato típico, como arroz a la zamorana, y acercarse a la ribera del Duero solo si el tiempo de regreso lo permite.",
-      "night": "1. Tomar el tren de vuelta a Madrid y regresar al hotel.\n2. Descansar: el sábado está reservado a San Isidro, sin repetir excursión.",
+      "night": "1. Tomar el tren de vuelta a Madrid y regresar al hotel.\n2. Descansar: el sábado se dedica al Prado y al Retiro, sin repetir excursión.",
       "mobility": "• *Madrid → Zamora:* Tren de ida y vuelta desde Madrid-Chamartín; horario y estación exactos sujetos al billete seleccionado.\n• *Estación Zamora → centro:* Considerar autobús urbano o taxi, especialmente si el tiempo de visita es limitado.\n• *Regreso:* Comprar ambos sentidos y prever margen para alcanzar la estación.",
       "note": "• *Excursión:* La prioridad es el casco histórico y el Duero; no agregar localidades cercanas.\n• *Catedral:* Revisar apertura, visita turística y posibles cambios litúrgicos antes de fijar el tren.\n• *Comida:* Arroz a la zamorana sujeto a menú y disponibilidad; no está reservado.",
       "places": [
@@ -326,15 +326,16 @@
     {
       "n": 8,
       "date": "2027-05-15",
-      "title": "San Isidro en Madrid",
+      "title": "Museo del Prado y Parque del Retiro",
       "base": "Madrid",
-      "am": "1. Disfrutar las fiestas de San Isidro en la Pradera y sus alrededores, observando romería, tradiciones y ambiente popular si se celebran según el programa definitivo.\n2. Probar rosquillas tontas o listas y limonada tradicional en establecimientos disponibles.",
-      "pm": "1. Regresar hacia el centro y elegir actividades municipales publicadas para el sábado 15 de mayo.\n2. Recorrer Las Vistillas o el entorno de La Latina si hay eventos apropiados; no depender de un concierto todavía sin confirmar.",
-      "night": "1. Paseo por el centro histórico y cena según el ambiente festivo.\n2. Preparar el tren de Toledo del domingo y descansar a una hora razonable.",
-      "mobility": "• *Centro → Pradera de San Isidro:* Metro o autobús urbano, verificando posibles cierres y desvíos por la festividad.\n• *Regreso:* Reservar tiempo de desplazamiento; usar transporte público antes que taxi si hay cortes viales.",
-      "note": "• *Fecha tradicional:* San Isidro se celebra el 15 de mayo, sábado en 2027. El programa, recintos y actividades municipales de 2027 siguen por confirmar.\n• *Programa:* Los conciertos, escenarios y actos concretos se publicarán posteriormente; consultar la programación oficial.\n• *Afluencia:* Evitar citas rígidas y contar con multitudes en la Pradera.\n• *Paseo alternativo en Madrid:* El Templo de Debod y el entorno de Parque del Oeste pueden reemplazar otro paseo urbano si la agenda de San Isidro lo permite; no añadirlos a costa de las actividades principales.\n• *Parque del Oeste:* Si eliges el paseo opcional al Templo de Debod, puedes incluir el memorial de La Veneno en el entorno, según ubicación, tiempo y energía.",
+      "am": "1. Visitar el Museo del Prado con entrada anticipada y seleccionar obras clave sin intentar recorrer toda la colección en una mañana.\n2. Confirmar el horario festivo del sábado 15 de mayo de 2027 antes de reservar: el Prado suele abrir de 10:00 a 19:00 los festivos.",
+      "pm": "1. Comer por el barrio de Las Letras o la zona de Atocha y continuar hacia el Parque del Retiro.\n2. Pasear por el estanque y el entorno del Palacio de Cristal, según accesos y posibles obras; no añadir otro museo grande.",
+      "night": "1. Elegir un paseo tranquilo por el centro o, como alternativa, el Templo de Debod al atardecer si el acceso y la energía lo permiten.\n2. Regresar al hotel y preparar la excursión a Toledo del domingo.",
+      "mobility": "• *Hotel → Prado:* Metro, autobús o caminata desde Sol según calor y cortes de tráfico.\n• *Prado → Retiro:* Desplazamiento a pie por el Paseo del Prado; evitar rodeos.\n• *Retiro → hotel:* Metro o autobús; prever cambios de servicio por festividad local.",
+      "note": "• *Festivo local:* El sábado 15 de mayo es San Isidro en Madrid. No se incluye la fiesta como actividad; solo advertir posibles multitudes, cierres y desvíos.\n• *Museo del Prado:* Según la taquilla oficial, abre de 10:00 a 19:00 en festivos y ofrece gratuidad durante las últimas dos horas; reconfirmar en 2027. La franja gratuita puede estar concurrida.\n• *Palacio de Cristal:* Comprobar el acceso por posibles obras; el paseo por el Retiro no depende de entrar al edificio.\n• *Plan flexible:* Si no interesa un museo, sustituir Prado por Palacio Real o paseo arquitectónico (según apertura), sin sumar actividades.",
       "places": [
-        "sp27-san-isidro",
+        "prado",
+        "retiro",
         "debod-madrid",
         "sp27-veneno",
         "segovia-aqueduct",
@@ -342,9 +343,9 @@
         "segovia-pradera-san-marcos"
       ],
       "headerPlaces": [
-        "Pradera de San Isidro",
-        "La Latina",
-        "Jardines de Las Vistillas"
+        "Museo Nacional del Prado",
+        "Parque del Retiro",
+        "Templo de Debod · opcional"
       ],
       "spend": null,
       "hotel": "mad-bb-sol",
@@ -675,15 +676,16 @@
       "date": "2027-05-27",
       "title": "Regreso a México",
       "base": "En vuelo",
-      "am": "1. Hacer check-out y viajar al aeropuerto de Lisboa con el margen recomendado para el vuelo internacional.\n2. Pasar seguridad y abordar el primer segmento del itinerario LIS → Ciudad de México (MEX), con escala si corresponde.",
-      "pm": "1. Continuar el vuelo o realizar conexión protegida conforme a los billetes que finalmente se compren.\n2. Ajustar actividades y comidas al horario real del itinerario, sin prometer llegada el mismo día.",
-      "night": "1. Llegar a Ciudad de México únicamente si los horarios y el cambio de fecha lo permiten; en caso contrario, continuar el itinerario previsto por la aerolínea.\n2. No añadir una noche de hotel ficticia ni actividades turísticas al último día.",
-      "mobility": "• *Hotel → LIS:* Metro, taxi u otro transporte según terminal y hora de salida; revisar los primeros servicios si la salida es muy temprana.\n• *LIS → MEX:* Vuelo multidestino internacional con posible conexión; preferir un único billete protegido, con equipaje y condiciones de tránsito comprobados.",
-      "note": "• *Fecha de regreso:* El 27 de mayo es fecha objetivo de salida desde Lisboa, no garantía de llegada a MEX ese jueves.\n• *Escala:* Comprobar país de tránsito, control migratorio, equipaje y tiempos mínimos de conexión.\n• *Presupuesto:* El vuelo internacional ya está incluido una sola vez en el escenario central.\n• *Duración real:* Si una escala desplaza la llegada a México al 28 de mayo, se debe revisar la duración publicada del viaje y el permiso laboral antes de reservar.",
+      "am": "1. Hacer check-out y dirigirse al aeropuerto de Lisboa (LIS, T1) con margen para el vuelo British Airways BA501 de las 11:05.\n2. Tomar LIS 11:05 → Londres Heathrow 13:55 (hora local), sujeto a compra de la cotización.",
+      "pm": "1. Conectar en Londres-Heathrow Terminal 5: escala de 1 h 15 min, ajustada, con seguridad de conexiones y puerta de embarque a tiempo.\n2. Tomar BA243 LHR 15:10 → MEX 19:45, sujeto a la emisión del billete.",
+      "night": "1. Llegada prevista al aeropuerto de Ciudad de México (MEX, T1) el jueves 27 de mayo a las 19:45.\n2. Traslado a casa según tráfico y hora real de salida del aeropuerto; sin noche adicional de hotel.",
+      "mobility": "• *Hotel → LIS:* Traslado con margen a Terminal 1 para salida 11:05.\n• *LIS → LHR:* British Airways BA501, 11:05–13:55.\n• *Conexión en LHR:* 1 h 15 min en T5; estrecha, verificar controles y condición de billete protegido.\n• *LHR → MEX:* British Airways BA243, 15:10–19:45 del mismo jueves 27.",
+      "note": "• *Cotizado, NO COMPRADO:* Regreso British Airways incluido en el total de vuelos de $15,812.24 MXN (15/11/2026).\n• *Conexión ajustada:* 75 minutos en Heathrow T5; revisar margen, terminal, seguridad y alternativas ante retrasos antes de comprar.\n• *Reino Unido:* Verificar requisitos vigentes para tránsito sin pasar frontera y si se requiere entrada al país.\n• *Equipaje:* Confirmar medidas y política operativa de British Airways.\n• *Hora de puerta:* British Airways pide estar en la puerta al menos 20 min antes de la salida; 15:10 implica presentarse a las 14:50, descontando tiempo operativo de la escala.",
       "places": [],
       "headerPlaces": [
-        "Lisboa · Aeropuerto Humberto Delgado",
-        "Ciudad de México · regreso pendiente de horario"
+        "Lisboa · LIS Terminal 1",
+        "Londres Heathrow · Terminal 5",
+        "Ciudad de México · llegada 19:45"
       ],
       "spend": null,
       "transportRefs": [
@@ -822,11 +824,21 @@
               "url": "https://www.visitportugal.com/"
             }
           ]
+        },
+        {
+          "title": "Museo del Prado · sábado 15 de mayo de 2027",
+          "description": "SIN COMPRAR. Verificar taquilla, entradas y apertura festiva en Madrid; el día 15 es festivo local. Como referencia, en festivos el Prado abre 10:00–19:00 y las dos últimas horas son de entrada gratuita, sujetas a aforo y condiciones. Si el museo no interesa, sustituir por un paseo o visita cultural de Madrid.",
+          "links": [
+            {
+              "label": "Entradas oficiales del Museo del Prado",
+              "url": "https://entradas.museodelprado.es/"
+            }
+          ]
         }
       ]
     ]
   ],
-  "flight": "Hipótesis: MEX→Barcelona el 8 de mayo con llegada el 9; regreso Lisboa→MEX el 27 de mayo con conexión protegida. Por cotizar en Google Flights. Ninguna tarifa comprada. Alternativa: invertir ruta y comparar multicity.",
+  "flight": "Cotización seleccionada (NO COMPRADA), 15/11/2026: 8 mayo MEX 11:20 → Dallas DFW 15:09 (American IB8056), DFW 17:20 → Barcelona BCN 10:10 del 9 mayo (IB4792). Regreso 27 mayo Lisboa LIS 11:05 → Londres Heathrow LHR 13:55 (British BA501), LHR 15:10 → MEX 19:45 (BA243). 1 adulto, Turista Básica, total conjunto $15,812.24 MXN mostrado por Iberia. Escalas DFW 2 h 11 min y LHR 1 h 15 min (ajustada). Verificar equipaje y tránsito antes de pagar.",
   "local": "Barcelona→Madrid por tren; Madrid→Granada por avión (evitar ferrocarril Madrid–Andalucía); Granada→Sevilla por autobús; Sevilla→Lisboa por avión. Figueres, Zamora, Toledo y Sintra en tren; Córdoba en autobús de ida y vuelta. Validar cada sentido, estaciones, horarios y equipaje.",
   "majorTransport": [
     {
@@ -835,23 +847,30 @@
       "title": "Vuelos internacionales · multidestino",
       "day": null,
       "selectedOption": "A",
-      "budgetIncludedIn": null,
+      "budgetIncludedIn": "flight-international-provision",
       "options": [
         {
           "id": "A",
-          "provider": "Operador por confirmar · estimación de planeación",
-          "status": "planning",
-          "selectedFare": "estimate",
+          "provider": "American Airlines (ida) + British Airways (regreso); cotizado mediante Iberia",
+          "status": "quoted",
+          "selectedFare": "basic",
           "journeys": [
             {
               "direction": "outbound",
               "segments": [
                 {
-                  "from": "MEX",
+                  "from": "Ciudad de México (MEX)",
+                  "to": "Dallas/Fort Worth (DFW)",
+                  "departure": "2027-05-08T11:20",
+                  "arrival": "2027-05-08T15:09",
+                  "operator": "American Airlines · IB8056 · Boeing 737-800"
+                },
+                {
+                  "from": "Dallas/Fort Worth (DFW)",
                   "to": "Barcelona (BCN)",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Servicio y horario por confirmar"
+                  "departure": "2027-05-08T17:20",
+                  "arrival": "2027-05-09T10:10",
+                  "operator": "American Airlines · IB4792 · Boeing 777-200"
                 }
               ]
             },
@@ -860,33 +879,40 @@
               "segments": [
                 {
                   "from": "Lisboa (LIS)",
-                  "to": "MEX",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Servicio y horario por confirmar"
+                  "to": "Londres Heathrow (LHR)",
+                  "departure": "2027-05-27T11:05",
+                  "arrival": "2027-05-27T13:55",
+                  "operator": "British Airways · BA501 · Airbus A320neo"
+                },
+                {
+                  "from": "Londres Heathrow (LHR)",
+                  "to": "Ciudad de México (MEX)",
+                  "departure": "2027-05-27T15:10",
+                  "arrival": "2027-05-27T19:45",
+                  "operator": "British Airways · BA243 · Boeing 787-9"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "estimate",
-              "name": "Estimación de planeación (sin cotizar)",
+              "id": "basic",
+              "name": "Turista Básica · cotización del 15/11/2026, no comprada",
               "price": {
-                "amount": 20500,
+                "amount": 15812.24,
                 "currency": "MXN"
               },
-              "changes": "Pendiente de tarifa real",
-              "refunds": "Pendiente de tarifa real"
+              "changes": "Con cargo y diferencia tarifaria potencial; verificar reglas específicas de cada operador.",
+              "refunds": "No permitido según comparativa consultada."
             }
           ],
-          "notes": "Vuelos de llegada el 9 y regreso el 27 de mayo. Conexión de vuelta por definir; cotizar como un solo boleto protegido."
+          "notes": "Total cotizado conjuntamente en Iberia para 1 adulto: $15,812.24 MXN (ida $7,438; vuelta $8,375; el total final incluye ajuste de centavos). Ida: escala DFW 2 h 11 min, tránsito estadounidense y trámites migratorios; llegada a BCN el 9/05 a las 10:10. Regreso: escala LHR Terminal 5 de 1 h 15 min, ajustada; confirmar control de seguridad, requisito de tránsito, conexión protegida y procedimientos de equipaje. Tarifa incluye de referencia artículo personal y cabina hasta 10 kg según comparativa de Iberia, sujetas a reglas de American y British. Sin equipaje documentado. Precio sujeto a cambio y disponibilidad. Ningún vuelo comprado. El tramo de vuelta se vende como una conexión de 75 min, NO una escala holgada: British Airways pide llegar a puerta al menos 20 min antes; verificar conexión en un solo billete y plan alternativo en caso de demora."
         }
       ],
       "links": [
         {
-          "label": "Operador o buscador oficial",
-          "url": "https://www.google.com/travel/flights"
+          "label": "Cotización y condiciones · Iberia",
+          "url": "https://www.iberia.com/mx/"
         }
       ],
       "boardingLocations": [
@@ -896,15 +922,23 @@
         },
         {
           "name": "Barcelona (BCN)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona%20(BCN)"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona%20Airport"
         },
         {
           "name": "Lisboa (LIS)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20(LIS)"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisbon%20Airport"
+        },
+        {
+          "name": "Dallas/Fort Worth (DFW)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=DFW%20Airport"
+        },
+        {
+          "name": "London Heathrow (LHR)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=London%20Heathrow"
         }
       ],
-      "boardingNote": "Aeropuertos de referencia para la ida del 8 de mayo y regreso del 27 de mayo; comprobar terminal, conexiones y horarios al cotizar.",
-      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "boardingNote": "MEX T1 → DFW (terminal por verificar) → BCN T1; LIS T1 → LHR T5 → MEX T1, conforme a la cotización del 15/11/2026. Confirmar terminales al emitir.",
+      "ticketGuide": "Cotizado, NO COMPRADO. Turista Básica para 1 adulto. Revisar equipaje de cabina y artículo personal con cada aerolínea operadora, cambio o reembolso, tránsito por EE. UU. y Reino Unido, y margen de 75 min en Heathrow antes de pagar.",
       "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
     },
     {
@@ -1529,7 +1563,7 @@
   "ticketNotes": [
     {
       "title": "Vuelos",
-      "note": "Comparar equipaje, cambios y conexiones protegidas antes de comprar."
+      "note": "Cotización internacional seleccionada: American vía DFW y British vía LHR, total $15,812.24 MXN (15/11/2026), NO COMPRADA. Verificar cabina, tarifas y margen de 75 min en Heathrow. Los vuelos europeos Madrid–Granada y Sevilla–Lisboa permanecen sin cotizar para la fecha y pueden condicionar excursiones y check-in."
     },
     {
       "title": "Trenes",
@@ -1811,7 +1845,7 @@
       },
       "05": {
         "status": "recommended",
-        "description": "22 a 27 °C. Ventana principal: días largos y buenas condiciones para Barcelona, Madrid y Lisboa. Sevilla y Córdoba pueden alcanzar tardes calurosas; San Isidro aumenta la actividad en Madrid.",
+        "description": "22 a 27 °C. Ventana principal: días largos y buenas condiciones para Barcelona, Madrid y Lisboa. Sevilla y Córdoba pueden alcanzar tardes calurosas; el festivo local del 15 de mayo puede alterar transportes y horarios en Madrid.",
         "icon": "sun"
       },
       "06": {
@@ -1880,11 +1914,11 @@
       "category": "transport",
       "concept": "Vuelos internacionales multidestino MEX–BCN / LIS–MEX",
       "cost": {
-        "amount": 20500,
+        "amount": 15812.24,
         "currency": "MXN"
       },
-      "status": "estimated",
-      "notes": "Importe de referencia incluido en la ficha flight-international; no se suma otra vez. El costo seleccionado en majorTransport se incorpora una sola vez.",
+      "status": "quoted",
+      "notes": "Cotización mostrada en Iberia el 15/11/2026 por los dos vuelos internacionales en Turista Básica para 1 adulto; precio final $15,812.24 MXN, tasas y cargos incluidos. No comprada; sujeto a disponibilidad. La ficha flight-international presenta el mismo monto: NO sumar dos veces.",
       "includedInTransport": true
     },
     {
@@ -2178,9 +2212,9 @@
   ],
   "costs": [
     [
-      "Vuelos internacionales y europeos",
-      20000,
-      34000
+      "Vuelos internacionales cotizados + europeos estimados",
+      22312.24,
+      29312.24
     ],
     [
       "18 noches de alojamiento",
@@ -2214,22 +2248,22 @@
     ]
   ],
   "budgetRange": [
-    76000,
-    125000
+    78312.24,
+    120312.24
   ],
   "budgetPreliminary": {
-    "low": 76000,
-    "high": 125000,
-    "marginMXN": 25500,
-    "referenceFlightMXN": 20500,
+    "low": 78312.24,
+    "high": 120312.24,
+    "marginMXN": 25500.000000000015,
+    "referenceFlightMXN": 15812.24,
     "useBudgetRange": true
   },
-  "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto. Riesgos aún no cotizados: maleta en los dos vuelos europeos, suplementos o impuestos municipales de hoteles, transporte de subida en Sintra y conexiones aeroportuarias. Antes de considerar el rango confiable comparar los vuelos internacionales de fechas reales; $20,500 MXN puede resultar insuficiente para itinerario multidestino. Evitar crear gastos adicionales ya cubiertos por las categorías provisionales. El escenario mínimo ($76,000 MXN) es optimista: no equivale a ofertas verificadas. El máximo ($125,000 MXN) tampoco es garantía; recalcular el intervalo cuando existan cotizaciones con equipaje, tasas locales y condiciones de cambio.",
-  "sourceNote": "Consulta editorial y monetaria del 1/11/2026. EUR/MXN del BCE a 30/10/2026: 21.1237, última referencia hábil disponible. Horas solares calculadas para mayo 2027 y clima histórico, sin pronóstico. Todos los precios de viaje en MXN son provisiones no cotizadas.",
+  "budgetNote": "Rango de planeación revisado $78,312.24–$120,312.24 MXN, no cotización completa. Escenario central $94,812.24 MXN: vuelos internacionales cotizados el 15/11/2026, NO COMPRADOS ($15,812.24); dos vuelos europeos estimados ($6,500); alojamiento ($35,000); trenes y autobuses ($7,500); transporte urbano ($4,000); comidas ($12,500); entradas ($8,000); seguro e imprevistos ($5,500). El rango para 'vuelos internacionales cotizados + europeos estimados' combina $15,812.24 con $6,500–$13,500 de provisión para europeos, no precios verificados. Ahorro potencial frente a la provisión internacional anterior de $20,500: $4,687.76. Todos los demás gastos siguen siendo proyecciones sujetas a tarifas 2027. No sumar los precios de majorTransport dos veces. Pendientes críticos: vuelos Madrid–Granada y Sevilla–Lisboa, maletas de cabina según American/British y transportistas europeos, conexión de 75 min Heathrow T5, trámites DFW, tasas de alojamiento y acceso a monumentos.",
+  "sourceNote": "Consulta editorial y monetaria inicial del 1/11/2026; auditoría de vuelos y presupuesto del 15/11/2026. EUR/MXN del BCE a 30/10/2026: 21.1237, última referencia hábil disponible. Horas solares calculadas para mayo 2027 y clima histórico, sin pronóstico. Las partidas generales en MXN siguen estimadas salvo los vuelos internacionales cotizados el 15/11/2026 (NO COMPRADOS).",
   "tips": [
-    "Segovia sigue disponible como excursión opcional desde Madrid (Acueducto, Catedral, Alcázar y Pradera de San Marcos). Sustituye un día madrileño o una excursión existente; no acumularla a Zamora, Toledo y San Isidro sin redistribuir tiempo y costos.",
+    "Segovia sigue disponible como excursión opcional desde Madrid (Acueducto, Catedral, Alcázar y Pradera de San Marcos). Sustituye la jornada del Prado y el Retiro o una excursión existente; no acumularla a Zamora y Toledo sin redistribuir tiempo y costos.",
     "Restricción personal: no usar el corredor ferroviario Madrid–Andalucía; comprobar el trazado exacto antes de comprar servicios regionales.",
-    "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa.",
+    "Vuelos internacionales ya cotizados (15/11/2026) en Iberia: American vía Dallas a Barcelona y British vía Heathrow desde Lisboa; total $15,812.24 MXN para 1 adulto, NO COMPRADOS. No modificar la ruta hasta pagar; comprobar equipaje y conexiones.",
     "El escenario central de gastos es una provisión completa y no una cotización. No confundir gastos presupuestados con reservas ni contabilizar nuevamente los transportes al desglosar cada trayecto."
   ],
   "sources": [],
@@ -2265,7 +2299,6 @@
     "toledo": "Las calles en cuesta y la silueta histórica de Toledo recuerdan la convivencia de tradiciones cristianas, judías y musulmanas.",
     "toledo-cathedral": "La Catedral Primada de Toledo concentra arquitectura gótica, artes decorativas y patrimonio religioso de una de las grandes sedes castellanas.",
     "san-juan-reyes-toledo": "El monasterio de San Juan de los Reyes conserva un claustro gótico de gran detalle y la memoria de los Reyes Católicos.",
-    "sp27-san-isidro": "El baile del chotis y los trajes castizos representan una de las tradiciones más reconocibles de las fiestas madrileñas de San Isidro.",
     "sp27-darro": "La Carrera del Darro acompaña el cauce del río entre fachadas históricas, puentes de piedra y vistas hacia la colina de la Alhambra.",
     "alhambra": "El conjunto nazarí de la Alhambra reúne palacios, fortalezas y jardines históricos sobre la colina de la Sabika, con vistas a Granada.",
     "albaicin": "Las calles del Albaicín conservan el trazado de su pasado andalusí, entre casas encaladas y miradores frente a la Alhambra.",
@@ -2298,7 +2331,11 @@
     "san-nicolas-granada": "Opcional: Mirador de San Nicolás en Albaicín, según tiempo y energía.",
     "discoveries-monument": "Opcional: Padrão dos Descobrimentos, parada opcional durante el paseo por Belém.",
     "sp27-cascais": "Opcional: Paseo costero por Cascais como sustitución de la jornada urbana de Alfama.",
-    "sp27-boca-inferno": "Opcional: Acantilado y formación rocosa de Boca do Inferno, en la excursión alternativa a Cascais."
+    "sp27-boca-inferno": "Opcional: Acantilado y formación rocosa de Boca do Inferno, en la excursión alternativa a Cascais.",
+    "sp27-castelo-almourol": "Castillo de Almourol: fortaleza templaria situada en una isla del Tajo; solo como parte de una excursión opcional organizada desde Lisboa, sujeta a acceso en barco.",
+    "sp27-convento-cristo": "Convento de Cristo de Tomar: conjunto monumental templario, opcional dentro de una excursión completa desde Lisboa; entradas y transporte pendientes de confirmar.",
+    "prado": "Museo del Prado: colección de pintura española y europea; visita cultural principal del sábado 15 de mayo, con entrada y horario festivo por confirmar.",
+    "retiro": "Parque del Retiro: jardines y estanque para pasear después del Prado; comprobar el estado del Palacio de Cristal antes de intentar entrar."
   },
   "travelerCount": 1
 }
