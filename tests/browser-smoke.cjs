@@ -176,6 +176,35 @@ const assert = require('node:assert/strict');
         }
         if (id === 'orlando-2026') {
           const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
+          const intro = await page.locator('#plan .overview-intro .lead').innerText();
+          for (const place of ['Diagon Alley', 'Hogwarts', 'Magic Kingdom', 'Epic Universe', 'Ministerio de Magia']) {
+            assert.ok(intro.includes(place), 'Orlando Panorama: falta ' + place);
+          }
+          assert.doesNotMatch(intro, /precio|cotizad|reserva|Rosen Inn|Volaris/i,
+            'Orlando Panorama: el texto turístico no debe contener logística ni tarifas');
+          assert.ok(tripData.intro.split(/\\s+/).length >= 70 && tripData.intro.split(/\\s+/).length <= 130,
+            'Orlando Panorama: introducción de longitud editorial');
+          const indicators = page.locator('#plan .overview-intro .practical-indicator');
+          assert.equal(await indicators.count(), 3, 'Orlando Panorama: exactamente tres indicadores');
+          assert.deepEqual(await indicators.evaluateAll(nodes => nodes.map(node => node.dataset.indicatorId)),
+            ['style','language','entry'], 'Orlando Panorama: orden de indicadores');
+          const indicatorText = await indicators.innerText();
+          assert.match(indicatorText, /Inglés · USD/);
+          assert.match(indicatorText, /visa estadounidense/);
+          assert.match(indicatorText, /no necesitas adaptador/);
+          assert.equal(await page.locator('#plan .overview-side .overview-climate-card').count(), 1,
+            'Orlando Panorama: clima separado en columna derecha');
+          const weather = await page.locator('#plan .overview-side .overview-climate-card').innerText();
+          for (const phrase of ['12 a 23 °C', 'Qué llevar:', 'Horas de luz:', '17:28']) {
+            assert.ok(weather.includes(phrase), 'Orlando Panorama: falta clima/luz ' + phrase);
+          }
+          assert.ok(Array.isArray(tripData.budgetRange) && tripData.budgetRange[0] === 37000 &&
+            tripData.budgetRange[1] === 40000, 'Orlando Panorama: presupuesto estructurado');
+          assert.ok(await page.locator('#plan').innerText().then(t => !/NaN|Invalid Date|undefined/.test(t)),
+            'Orlando Panorama: no se muestran datos inválidos');
+        }
+        if (id === 'orlando-2026') {
+          const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           assert.equal(tripData.experiences.length, 9, 'Orlando: nueve experiencias entre cuatro parques');
           assert.equal(await page.locator('#experiencias .experience-card').count(), 9,
             'Orlando: tarjetas de experiencias visibles en escritorio y móvil');
