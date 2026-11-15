@@ -93,7 +93,7 @@ window.AtlasBudgetTable = (() => {
         }
         if (modernEstimate) {
             // currentSummary already includes the selected international flight exactly once.
-            markup.push('<tr class="totalrow"><td>Total estimado del viaje</td><td></td><td class="budget-amount">' +
+            markup.push('<tr class="totalrow"><td>' + (result.partial ? 'Subtotal de partidas con importe · faltan cotizaciones' : 'Total estimado del viaje') + '</td><td></td><td class="budget-amount">' +
                 pesos(result.knownTotalMXN) + '</td></tr>');
         } else {
             markup.push('<tr class="totalrow"><td>Subtotal terrestre estimado · sin vuelo</td><td></td><td class="budget-amount">' +
@@ -126,6 +126,8 @@ window.AtlasBudgetTable = (() => {
                         pesos(planning.low) + '–' + pesos(planning.high) + ' MXN</p>' : '') +
                     (range ? '<p class="budget-range"><strong>Rango estimado para planear:</strong> ' +
                         pesos(range[0]) + '–' + pesos(range[1]) + ' MXN</p>' : '')) +
+            (trip.id === 'orlando-2026' && trip.budgetNote
+                ? '<p class="tiny budget-assumptions">' + esc(trip.budgetNote) + '</p>' : '') +
             (typeof trip.budgetPreliminary?.notes === 'string' && trip.budgetPreliminary.notes.trim()
                 ? '<p class="tiny budget-assumptions">' + esc(trip.budgetPreliminary.notes) + '</p>' : '') +
             '</div>';
