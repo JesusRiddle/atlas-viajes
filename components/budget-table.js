@@ -95,6 +95,10 @@ window.AtlasBudgetTable = (() => {
             // currentSummary already includes the selected international flight exactly once.
             markup.push('<tr class="totalrow"><td>' + (result.partial ? 'Subtotal de partidas con importe · faltan cotizaciones' : 'Total estimado del viaje') + '</td><td></td><td class="budget-amount">' +
                 pesos(result.knownTotalMXN) + '</td></tr>');
+        } else if (trip.id === 'orlando-2026') {
+            // Orlando registra vuelo y traslados en expenses: ya forman parte del subtotal.
+            markup.push('<tr class="totalrow"><td>Subtotal de partidas con importe · faltan cotizaciones</td><td></td><td class="budget-amount">' +
+                pesos(result.knownTotalMXN) + '</td></tr>');
         } else {
             markup.push('<tr class="totalrow"><td>Subtotal terrestre estimado · sin vuelo</td><td></td><td class="budget-amount">' +
                 pesos(result.knownTotalMXN) + '</td></tr>');
