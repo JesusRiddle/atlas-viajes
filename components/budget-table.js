@@ -74,7 +74,7 @@ window.AtlasBudgetTable = (() => {
                     (displayMXN === null ? 'Por estimar' : pesos(displayMXN) + (isReferenceFlight ? ' · referencia' : '')) + '</td></tr>');
             }
             const subtotal = items.reduce((sum, item) => sum + (item.mxn ?? 0), 0);
-            markup.push('<tr class="budget-subtotal"><td>' + (key === 'flight' && !modernEstimate ? 'Referencia de vuelo · no incluida en subtotal terrestre' : 'Subtotal') +
+            markup.push('<tr class="budget-subtotal"><td>' + (key === 'flight' && !modernEstimate && trip.id !== 'orlando-2026' ? 'Referencia de vuelo · no incluida en subtotal terrestre' : 'Subtotal') +
                 '</td><td></td><td class="budget-amount">' +
                 (key === 'flight' && !modernEstimate && referenceFlightMXN !== null ? pesos(referenceFlightMXN) :
                     pesos(subtotal) + (items.some(x => x.mxn === null) ? ' + pendientes' : '')) + '</td></tr>');
