@@ -375,7 +375,14 @@ test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserv
     assert.equal(migrated.days.length, 20);
     assert.equal(migrated.hotels.length, 5);
     // Incluye lugares opcionales añadidos durante la auditoría editorial.
-    assert.equal(migrated.days.reduce((n, day) => n + day.places.length, 0), 53);
+    assert.ok(migrated.days.reduce((n, day) => n + day.places.length, 0) >= 53,
+        'Las visitas originales deben mantenerse al añadir la visita al Prado y Retiro');
+    const madridDay = migrated.days.find(day => day.date === '2027-05-15');
+    assert.match(madridDay.title, /Prado.*Retiro/);
+    assert.ok(madridDay.places.includes('sp27-museo-prado'));
+    assert.ok(madridDay.places.includes('sp27-retiro'));
+    assert.ok(!madridDay.places.includes('sp27-san-isidro'),
+        'San Isidro no debe figurar como visita elegida');
     const lisbonDay = migrated.days.find(day => day.date === '2027-05-26');
     const templarPlaces = ['sp27-castelo-almourol', 'sp27-convento-cristo'];
     const placeCatalog = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
@@ -389,8 +396,11 @@ test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserv
     assert.match(lisbonDay.note, /sustituye por completo la jornada Alfama/);
     assert.ok(migrated.reservations.some(group => group[1].some(item => /Almourol, Tomar/.test(item.title))));
     assert.ok(migrated.cover);
-    assert.equal(migrated.budgetRange[0], 76000);
-    assert.equal(migrated.budgetRange[1], 125000);
+    assert.deepEqual(migrated.budgetRange,
+        [78312.24, 120312.24], 'Rango revisado con vuelos internacionales cotizados');
+    const expenseTotal = migrated.expenses.reduce((sum, item) => sum + (item.cost?.amount || 0), 0);
+    assert.ok(Math.abs(expenseTotal - 94812.24) < 0.01,
+        'Presupuesto central: vuelo internacional contado una sola vez');
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
     const window = { ATLAS_MODULES: [catalog.find(item => item.id === 'espana-portugal-2027')] };
     const sources = {
