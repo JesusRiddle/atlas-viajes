@@ -184,7 +184,7 @@ const assert = require('node:assert/strict');
           const mapList = page.locator('#mapa .map-city-list li');
           assert.equal(await mapList.count(), 5, 'Orlando: cinco marcadores accesibles');
           const captions = await mapList.locator('.map-city-stay').allInnerTexts();
-          assert.deepEqual(captions, ['5 noches', 'Excursión', 'Excursión', 'Excursión', 'Excursión'],
+          assert.deepEqual(captions, ['5 noches', 'Parque temático', 'Parque temático', 'Parque temático', 'Parque temático'],
             'Orlando: estancia visible y visitas sin noches inventadas');
           const names = await mapList.locator('.map-city-name').allInnerTexts();
           assert.deepEqual(names, [
