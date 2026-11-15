@@ -135,7 +135,8 @@ const assert = require('node:assert/strict');
         await page.locator('.subnav a[href*="#viaje/' + id + '/"]').first().waitFor();
         for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1, viewport.width + ' ' + id + ' ' + anchor);
         const text = await page.locator('main').innerText();
-        assert.doesNotMatch(text, /undefined|Invalid Date|NaN/, id + ' has invalid UI value');
+        const invalidValue = /undefined|Invalid Date|NaN/.exec(text);
+        assert.equal(invalidValue, null, id + ' has invalid UI value near: ' + (invalidValue ? text.slice(Math.max(0, invalidValue.index - 140), invalidValue.index + 170) : 'none'));
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
         assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
         // Contrato editorial del Panorama: tres indicadores a la izquierda, clima separado a la derecha.
