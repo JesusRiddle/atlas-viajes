@@ -19,7 +19,7 @@
 1. **Externo importante:** verificar condiciones exactas de equipaje con American/British y tránsito, mismo billete protegido, conexión Heathrow y alternativa si se pierde.
 2. **Externo importante:** cotizar y verificar días 17 y 23 de mayo de 2027 para los vuelos internos europeos; ajustar si no hay servicios prácticos.
 3. **Externo:** horarios y cupos 2027 de Alhambra, Sagrada Família, Prado en festivo, Dalí, Alcázar, Catedral, Jerónimos y Sintra; trenes y autobuses.
-4. **QA:** ejecutar la suite CI del repositorio y validación de transportes `AtlasTransportModel.validateTrip(trip)` y render con navegador Desktop/Mobile. Aquí solo se verificó JSON parseado y coherencia referencial/aritmética; **no afirmar ejecución de CI ni revisión visual**.
+4. **QA:** CI de GitHub **Atlas checks aprobado** en https://github.com/JesusRiddle/atlas-viajes/actions/runs/43691286871 (regresión y pruebas de navegador Desktop/Mobile). La auditoría manual de todas las pantallas y las tarifas reales aún depende de revisión humana.
 5. Revisar PR #16 antes de merge; no comprar servicios con esta documentación como confirmación de disponibilidad.
 
-**Resultado de auditorías:** A fechas y alojamientos coherentes (condicionado a transporte europeo); B servicios en cotización parcial; C día por día y gastos revisados; D revisión visual/CI pendiente.
+**Resultado de auditorías:** A fechas y alojamientos coherentes (condicionado a transporte europeo); B servicios en cotización parcial; C día por día y gastos revisados; D CI de navegador y regresiones aprobado (run 43691286871), pendiente inspección manual final antes del merge.
