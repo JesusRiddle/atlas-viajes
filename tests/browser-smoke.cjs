@@ -182,13 +182,13 @@ const assert = require('node:assert/strict');
           }
           assert.doesNotMatch(intro, /precio|cotizad|reserva|Rosen Inn|Volaris/i,
             'Orlando Panorama: el texto turístico no debe contener logística ni tarifas');
-          assert.ok(tripData.intro.split(/\\s+/).length >= 70 && tripData.intro.split(/\\s+/).length <= 130,
+          assert.ok(tripData.intro.trim().split(/\s+/).length >= 70 && tripData.intro.trim().split(/\s+/).length <= 130,
             'Orlando Panorama: introducción de longitud editorial');
           const indicators = page.locator('#plan .overview-intro .practical-indicator');
           assert.equal(await indicators.count(), 3, 'Orlando Panorama: exactamente tres indicadores');
           assert.deepEqual(await indicators.evaluateAll(nodes => nodes.map(node => node.dataset.indicatorId)),
             ['style','language','entry'], 'Orlando Panorama: orden de indicadores');
-          const indicatorText = await indicators.innerText();
+          const indicatorText = (await indicators.allInnerTexts()).join(' ');
           assert.match(indicatorText, /Inglés · USD/);
           assert.match(indicatorText, /visa estadounidense/);
           assert.match(indicatorText, /no necesitas adaptador/);
