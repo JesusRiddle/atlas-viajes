@@ -334,8 +334,8 @@
       "mobility": "• *Hotel → Prado:* Metro, autobús o caminata desde Sol según calor y cortes de tráfico.\n• *Prado → Retiro:* Desplazamiento a pie por el Paseo del Prado; evitar rodeos.\n• *Retiro → hotel:* Metro o autobús; prever cambios de servicio por festividad local.",
       "note": "• *Festivo local:* El sábado 15 de mayo es San Isidro en Madrid. No se incluye la fiesta como actividad; solo advertir posibles multitudes, cierres y desvíos.\n• *Museo del Prado:* Según la taquilla oficial, abre de 10:00 a 19:00 en festivos y ofrece gratuidad durante las últimas dos horas; reconfirmar en 2027. La franja gratuita puede estar concurrida.\n• *Palacio de Cristal:* Comprobar el acceso por posibles obras; el paseo por el Retiro no depende de entrar al edificio.\n• *Plan flexible:* Si no interesa un museo, sustituir Prado por Palacio Real o paseo arquitectónico (según apertura), sin sumar actividades.",
       "places": [
-        "sp27-museo-prado",
-        "sp27-retiro",
+        "prado",
+        "retiro",
         "debod-madrid",
         "sp27-veneno",
         "segovia-aqueduct",
@@ -2332,10 +2332,10 @@
     "discoveries-monument": "Opcional: Padrão dos Descobrimentos, parada opcional durante el paseo por Belém.",
     "sp27-cascais": "Opcional: Paseo costero por Cascais como sustitución de la jornada urbana de Alfama.",
     "sp27-boca-inferno": "Opcional: Acantilado y formación rocosa de Boca do Inferno, en la excursión alternativa a Cascais.",
-    "sp27-museo-prado": "Museo del Prado: colección de pintura española y europea; visita cultural principal del sábado 15 de mayo, con entrada y horario festivo por confirmar.",
-    "sp27-retiro": "Parque del Retiro: jardines y estanque para pasear después del Prado; comprobar el estado del Palacio de Cristal antes de intentar entrar.",
     "sp27-castelo-almourol": "Castillo de Almourol: fortaleza templaria situada en una isla del Tajo; solo como parte de una excursión opcional organizada desde Lisboa, sujeta a acceso en barco.",
-    "sp27-convento-cristo": "Convento de Cristo de Tomar: conjunto monumental templario, opcional dentro de una excursión completa desde Lisboa; entradas y transporte pendientes de confirmar."
+    "sp27-convento-cristo": "Convento de Cristo de Tomar: conjunto monumental templario, opcional dentro de una excursión completa desde Lisboa; entradas y transporte pendientes de confirmar.",
+    "prado": "Museo del Prado: colección de pintura española y europea; visita cultural principal del sábado 15 de mayo, con entrada y horario festivo por confirmar.",
+    "retiro": "Parque del Retiro: jardines y estanque para pasear después del Prado; comprobar el estado del Palacio de Cristal antes de intentar entrar."
   },
   "travelerCount": 1
 }
