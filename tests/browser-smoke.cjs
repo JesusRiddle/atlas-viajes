@@ -230,6 +230,38 @@ const assert = require('node:assert/strict');
           assert.equal(tripData.days[5].transportRefs[0], 'flight-mex-mco');
         }
         if (id === 'orlando-2026') {
+          const trip = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json', 'utf8'));
+          const budget = page.locator('#costes .budget-ledger');
+          const budgetText = await budget.innerText();
+          assert.match(budgetText, /Subtotal de partidas con importe/,
+            'Orlando: no se debe mostrar total cerrado con Disney pendiente');
+          assert.match(budgetText, /34[,.]436[,.]21/,
+            'Orlando: subtotal conciliado con impuestos provisionales y transporte único');
+          assert.match(budgetText, /39[,.]000[,.]00/,
+            'Orlando: piso de planeación');
+          assert.match(budgetText, /44[,.]000[,.]00/,
+            'Orlando: techo de planeación');
+          assert.match(budgetText, /Magic Kingdom NO está cotizado/,
+            'Orlando: advertencia comercial visible');
+          assert.match(budgetText, /6\.5% hipotético/,
+            'Orlando: no presentar impuesto teórico como pagado');
+          const food = trip.expenses.filter(e => e.category === 'food');
+          assert.equal(food.length, 6, 'Orlando: alimentos por seis jornadas');
+          assert.equal(food.reduce((sum,e)=>sum+e.cost.amount,0), 290,
+            'Orlando: US$290 en comida una sola vez');
+          assert.equal(trip.expenses.filter(e => e.id === 'orlando-universal-tax').length,1);
+          assert.ok(trip.expenses.find(e => e.id === 'orlando-disney').cost.amount === null,
+            'Orlando: entrada Disney sin precio fabricado');
+          assert.equal(trip.exchangeRateSnapshot.date, '2026-11-13',
+            'Orlando: fecha DOF correcta');
+          assert.equal(trip.exchangeRates.USD, 18.6188);
+          const listed = (trip.expenses || []).filter(e => !e.optional && Number.isFinite(e.cost?.amount));
+          const subtotal = listed.reduce((sum,e) => sum +
+            (e.cost.currency === 'MXN' ? e.cost.amount : e.cost.amount * trip.exchangeRates.USD),0);
+          assert.ok(Math.abs(subtotal - 34436.21) < 0.01,
+            'Orlando: suma matemática del modelo');
+        }
+        if (id === 'orlando-2026') {
           const mobility = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           assert.equal(mobility.majorTransport.length, 1, 'Orlando: una ficha de vuelo redondo');
           assert.equal(mobility.majorTransport[0].budgetIncludedIn, 'orlando-flight',
@@ -309,8 +341,8 @@ const assert = require('node:assert/strict');
           for (const phrase of ['12 a 23 °C', 'Qué llevar:', 'Horas de luz:', '17:28']) {
             assert.ok(weather.includes(phrase), 'Orlando Panorama: falta clima/luz ' + phrase);
           }
-          assert.ok(Array.isArray(tripData.budgetRange) && tripData.budgetRange[0] === 37000 &&
-            tripData.budgetRange[1] === 40000, 'Orlando Panorama: presupuesto estructurado');
+          assert.ok(Array.isArray(tripData.budgetRange) && tripData.budgetRange[0] === 39000 &&
+            tripData.budgetRange[1] === 44000, 'Orlando Panorama: presupuesto estructurado');
           assert.ok(await page.locator('#plan').innerText().then(t => !/NaN|Invalid Date|undefined/.test(t)),
             'Orlando Panorama: no se muestran datos inválidos');
         }
