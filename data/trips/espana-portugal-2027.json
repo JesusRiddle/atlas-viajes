@@ -141,9 +141,9 @@
       "base": "En vuelo",
       "am": "1. Verificar pasaporte, requisitos de entrada a España y datos de alojamiento, sin considerar aprobados requisitos futuros hasta confirmarlos.\n2. Confirmar terminal, equipaje y horario del vuelo multidestino; hacer check-in cuando lo habilite la aerolínea.",
       "pm": "1. Organizar traslado al aeropuerto de Ciudad de México con margen para tráfico y seguridad.\n2. Presentarse al aeropuerto con la antelación indicada por la aerolínea, orientativamente tres horas antes de la salida internacional.",
-      "night": "1. Embarcar hacia Barcelona según el vuelo que finalmente se compre.\n2. Noche a bordo; la primera noche de hotel corresponde al domingo 9 de mayo, no a este sábado.",
-      "mobility": "• *CDMX → aeropuerto:* Traslado según terminal y horario reales.\n• *Vuelo internacional:* MEX → Barcelona (BCN); conexión, aerolínea y horas pendientes de cotización.",
-      "note": "• *Sin reserva:* No existe vuelo confirmado; si la opción elegida llega después del domingo 9, habrá que replanear la primera jornada.\n• *Equipaje:* Valorar documentado frente a mano antes de comprar.",
+      "night": "1. Tomar el vuelo American Airlines comercializado como IB8056 desde MEX T1 a las 11:20 hacia Dallas (DFW); llegada prevista 15:09.\n2. Conectar en DFW con IB4792, salida 17:20 rumbo a Barcelona. Noche a bordo; los boletos están cotizados pero NO COMPRADOS.",
+      "mobility": "• *MEX → DFW:* American Airlines IB8056, 11:20–15:09 (horas locales).\n• *Conexión DFW:* 2 h 11 min, con trámite migratorio estadounidense y controles aplicables; confirmar procedimiento de equipaje.\n• *DFW → BCN:* American Airlines IB4792, 17:20–10:10 (+1 día, domingo 9).",
+      "note": "• *Vuelos cotizados, NO COMPRADOS:* Precio conjunto de ida y vuelta $15,812.24 MXN (15/11/2026), sujeto a cambio.\n• *Tránsito por EE. UU.:* Visa vigente no sustituye trámites migratorios; revisar tiempos y documentación.\n• *Equipaje:* Tarifa Básica con referencia de artículo personal y maleta de cabina; confirmar límites con American y British.",
       "places": [],
       "headerPlaces": [
         "Ciudad de México · salida aérea",
@@ -159,11 +159,11 @@
       "date": "2027-05-09",
       "title": "Llegada y barrios históricos",
       "base": "Barcelona",
-      "am": "1. Llegar a Barcelona, realizar control fronterizo y recoger equipaje si corresponde.\n2. Trasladarse al alojamiento candidato en Eixample/Sant Antoni; solicitar consigna si todavía no está disponible la habitación.",
+      "am": "1. Llegar al aeropuerto Barcelona-El Prat (BCN, T1) a las 10:10 según la opción cotizada; realizar control fronterizo y recogida de equipaje, si corresponde.\n2. Trasladarse al alojamiento candidato en Eixample/Sant Antoni; solicitar consigna si todavía no está disponible la habitación.",
       "pm": "1. Recorrer a pie el Barrio Gótico en una ruta breve, incluyendo el entorno de la Catedral de Barcelona.\n2. Continuar hacia El Born solo si la llegada deja tiempo y energía; detenerse para comer.",
       "night": "1. Pasear por el entorno de Santa Maria del Mar o regresar al hotel.\n2. Cena temprana y descanso antes de la visita con horario a la Sagrada Família.",
       "mobility": "• *BCN → centro:* Comparar Aerobús, tren o metro según terminal y dirección del hotel.\n• *Gótico → Born:* Trayecto caminable, pero reducirlo si hay cansancio o equipaje.",
-      "note": "• *Llegada transatlántica:* Migración y traslado pueden ocupar buena parte del día; no reservar monumentos con hora fija.\n• *Alojamiento:* Acta Splendid es candidato, sin reservar; confirmar consigna y entrada.\n• *Si sobra tiempo:* Boqueria o Arc de Triomf/Ciutadella son alternativas de paseo, no visitas añadidas obligatorias; elegir según la llegada y la ubicación.",
+      "note": "• *Llegada a las 10:10 (cotizada, no comprada):* Migración y traslado pueden ocupar buena parte del día; no reservar monumentos con hora fija.\n• *Alojamiento:* Acta Splendid es candidato, sin reservar; confirmar consigna y entrada.\n• *Si sobra tiempo:* Boqueria o Arc de Triomf/Ciutadella son alternativas de paseo, no visitas añadidas obligatorias; elegir según la llegada y la ubicación.",
       "places": [
         "gotico",
         "barcelona-cathedral",
@@ -675,15 +675,16 @@
       "date": "2027-05-27",
       "title": "Regreso a México",
       "base": "En vuelo",
-      "am": "1. Hacer check-out y viajar al aeropuerto de Lisboa con el margen recomendado para el vuelo internacional.\n2. Pasar seguridad y abordar el primer segmento del itinerario LIS → Ciudad de México (MEX), con escala si corresponde.",
-      "pm": "1. Continuar el vuelo o realizar conexión protegida conforme a los billetes que finalmente se compren.\n2. Ajustar actividades y comidas al horario real del itinerario, sin prometer llegada el mismo día.",
-      "night": "1. Llegar a Ciudad de México únicamente si los horarios y el cambio de fecha lo permiten; en caso contrario, continuar el itinerario previsto por la aerolínea.\n2. No añadir una noche de hotel ficticia ni actividades turísticas al último día.",
-      "mobility": "• *Hotel → LIS:* Metro, taxi u otro transporte según terminal y hora de salida; revisar los primeros servicios si la salida es muy temprana.\n• *LIS → MEX:* Vuelo multidestino internacional con posible conexión; preferir un único billete protegido, con equipaje y condiciones de tránsito comprobados.",
-      "note": "• *Fecha de regreso:* El 27 de mayo es fecha objetivo de salida desde Lisboa, no garantía de llegada a MEX ese jueves.\n• *Escala:* Comprobar país de tránsito, control migratorio, equipaje y tiempos mínimos de conexión.\n• *Presupuesto:* El vuelo internacional ya está incluido una sola vez en el escenario central.\n• *Duración real:* Si una escala desplaza la llegada a México al 28 de mayo, se debe revisar la duración publicada del viaje y el permiso laboral antes de reservar.",
+      "am": "1. Hacer check-out y dirigirse al aeropuerto de Lisboa (LIS, T1) con margen para el vuelo British Airways BA501 de las 11:05.\n2. Tomar LIS 11:05 → Londres Heathrow 13:55 (hora local), sujeto a compra de la cotización.",
+      "pm": "1. Conectar en Londres-Heathrow Terminal 5: escala de 1 h 15 min, ajustada, con seguridad de conexiones y puerta de embarque a tiempo.\n2. Tomar BA243 LHR 15:10 → MEX 19:45, sujeto a la emisión del billete.",
+      "night": "1. Llegada prevista al aeropuerto de Ciudad de México (MEX, T1) el jueves 27 de mayo a las 19:45.\n2. Traslado a casa según tráfico y hora real de salida del aeropuerto; sin noche adicional de hotel.",
+      "mobility": "• *Hotel → LIS:* Traslado con margen a Terminal 1 para salida 11:05.\n• *LIS → LHR:* British Airways BA501, 11:05–13:55.\n• *Conexión en LHR:* 1 h 15 min en T5; estrecha, verificar controles y condición de billete protegido.\n• *LHR → MEX:* British Airways BA243, 15:10–19:45 del mismo jueves 27.",
+      "note": "• *Cotizado, NO COMPRADO:* Regreso British Airways incluido en el total de vuelos de $15,812.24 MXN (15/11/2026).\n• *Conexión ajustada:* 75 minutos en Heathrow T5; revisar margen, terminal, seguridad y alternativas ante retrasos antes de comprar.\n• *Reino Unido:* Verificar requisitos vigentes para tránsito sin pasar frontera y si se requiere entrada al país.\n• *Equipaje:* Confirmar medidas y política operativa de British Airways.",
       "places": [],
       "headerPlaces": [
-        "Lisboa · Aeropuerto Humberto Delgado",
-        "Ciudad de México · regreso pendiente de horario"
+        "Lisboa · LIS Terminal 1",
+        "Londres Heathrow · Terminal 5",
+        "Ciudad de México · llegada 19:45"
       ],
       "spend": null,
       "transportRefs": [
@@ -826,7 +827,7 @@
       ]
     ]
   ],
-  "flight": "Hipótesis: MEX→Barcelona el 8 de mayo con llegada el 9; regreso Lisboa→MEX el 27 de mayo con conexión protegida. Por cotizar en Google Flights. Ninguna tarifa comprada. Alternativa: invertir ruta y comparar multicity.",
+  "flight": "Cotización seleccionada (NO COMPRADA), 15/11/2026: 8 mayo MEX 11:20 → Dallas DFW 15:09 (American IB8056), DFW 17:20 → Barcelona BCN 10:10 del 9 mayo (IB4792). Regreso 27 mayo Lisboa LIS 11:05 → Londres Heathrow LHR 13:55 (British BA501), LHR 15:10 → MEX 19:45 (BA243). 1 adulto, Turista Básica, total conjunto $15,812.24 MXN mostrado por Iberia. Escalas DFW 2 h 11 min y LHR 1 h 15 min (ajustada). Verificar equipaje y tránsito antes de pagar.",
   "local": "Barcelona→Madrid por tren; Madrid→Granada por avión (evitar ferrocarril Madrid–Andalucía); Granada→Sevilla por autobús; Sevilla→Lisboa por avión. Figueres, Zamora, Toledo y Sintra en tren; Córdoba en autobús de ida y vuelta. Validar cada sentido, estaciones, horarios y equipaje.",
   "majorTransport": [
     {
@@ -835,23 +836,30 @@
       "title": "Vuelos internacionales · multidestino",
       "day": null,
       "selectedOption": "A",
-      "budgetIncludedIn": null,
+      "budgetIncludedIn": "flight-international-provision",
       "options": [
         {
           "id": "A",
-          "provider": "Operador por confirmar · estimación de planeación",
-          "status": "planning",
-          "selectedFare": "estimate",
+          "provider": "American Airlines (ida) + British Airways (regreso); cotizado mediante Iberia",
+          "status": "quoted",
+          "selectedFare": "basic",
           "journeys": [
             {
               "direction": "outbound",
               "segments": [
                 {
-                  "from": "MEX",
+                  "from": "Ciudad de México (MEX)",
+                  "to": "Dallas/Fort Worth (DFW)",
+                  "departure": "2027-05-08T11:20",
+                  "arrival": "2027-05-08T15:09",
+                  "operator": "American Airlines · IB8056 · Boeing 737-800"
+                },
+                {
+                  "from": "Dallas/Fort Worth (DFW)",
                   "to": "Barcelona (BCN)",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Servicio y horario por confirmar"
+                  "departure": "2027-05-08T17:20",
+                  "arrival": "2027-05-09T10:10",
+                  "operator": "American Airlines · IB4792 · Boeing 777-200"
                 }
               ]
             },
@@ -860,33 +868,40 @@
               "segments": [
                 {
                   "from": "Lisboa (LIS)",
-                  "to": "MEX",
-                  "departure": null,
-                  "arrival": null,
-                  "operator": "Servicio y horario por confirmar"
+                  "to": "Londres Heathrow (LHR)",
+                  "departure": "2027-05-27T11:05",
+                  "arrival": "2027-05-27T13:55",
+                  "operator": "British Airways · BA501 · Airbus A320neo"
+                },
+                {
+                  "from": "Londres Heathrow (LHR)",
+                  "to": "Ciudad de México (MEX)",
+                  "departure": "2027-05-27T15:10",
+                  "arrival": "2027-05-27T19:45",
+                  "operator": "British Airways · BA243 · Boeing 787-9"
                 }
               ]
             }
           ],
           "fares": [
             {
-              "id": "estimate",
-              "name": "Estimación de planeación (sin cotizar)",
+              "id": "basic",
+              "name": "Turista Básica · cotización del 15/11/2026, no comprada",
               "price": {
-                "amount": 20500,
+                "amount": 15812.24,
                 "currency": "MXN"
               },
-              "changes": "Pendiente de tarifa real",
-              "refunds": "Pendiente de tarifa real"
+              "changes": "Con cargo y diferencia tarifaria potencial; verificar reglas específicas de cada operador.",
+              "refunds": "No permitido según comparativa consultada."
             }
           ],
-          "notes": "Vuelos de llegada el 9 y regreso el 27 de mayo. Conexión de vuelta por definir; cotizar como un solo boleto protegido."
+          "notes": "Total cotizado conjuntamente en Iberia para 1 adulto: $15,812.24 MXN (ida $7,438; vuelta $8,375; el total final incluye ajuste de centavos). Ida: escala DFW 2 h 11 min, tránsito estadounidense y trámites migratorios; llegada a BCN el 9/05 a las 10:10. Regreso: escala LHR Terminal 5 de 1 h 15 min, ajustada; confirmar control de seguridad, requisito de tránsito, conexión protegida y procedimientos de equipaje. Tarifa incluye de referencia artículo personal y cabina hasta 10 kg según comparativa de Iberia, sujetas a reglas de American y British. Sin equipaje documentado. Precio sujeto a cambio y disponibilidad. Ningún vuelo comprado."
         }
       ],
       "links": [
         {
-          "label": "Operador o buscador oficial",
-          "url": "https://www.google.com/travel/flights"
+          "label": "Cotización y condiciones · Iberia",
+          "url": "https://www.iberia.com/mx/"
         }
       ],
       "boardingLocations": [
@@ -896,15 +911,23 @@
         },
         {
           "name": "Barcelona (BCN)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona%20(BCN)"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Barcelona%20Airport"
         },
         {
           "name": "Lisboa (LIS)",
-          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisboa%20(LIS)"
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lisbon%20Airport"
+        },
+        {
+          "name": "Dallas/Fort Worth (DFW)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=DFW%20Airport"
+        },
+        {
+          "name": "London Heathrow (LHR)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=London%20Heathrow"
         }
       ],
-      "boardingNote": "Aeropuertos de referencia para la ida del 8 de mayo y regreso del 27 de mayo; comprobar terminal, conexiones y horarios al cotizar.",
-      "ticketGuide": "Estimación provisional: comparar horario, equipaje o condiciones de validación al cotizar; no se ha reservado ningún servicio.",
+      "boardingNote": "MEX T1 → DFW (terminal por verificar) → BCN T1; LIS T1 → LHR T5 → MEX T1, conforme a la cotización del 15/11/2026. Confirmar terminales al emitir.",
+      "ticketGuide": "Cotizado, NO COMPRADO. Turista Básica para 1 adulto. Revisar equipaje de cabina y artículo personal con cada aerolínea operadora, cambio o reembolso, tránsito por EE. UU. y Reino Unido, y margen de 75 min en Heathrow antes de pagar.",
       "notes": "Esta ficha es informativa: su costo ya está presupuestado en expenses y no debe sumarse dos veces."
     },
     {
@@ -1529,7 +1552,7 @@
   "ticketNotes": [
     {
       "title": "Vuelos",
-      "note": "Comparar equipaje, cambios y conexiones protegidas antes de comprar."
+      "note": "Cotización internacional seleccionada: American vía DFW y British vía LHR, total $15,812.24 MXN (15/11/2026), NO COMPRADA. Verificar cabina, tarifas y margen de 75 min en Heathrow."
     },
     {
       "title": "Trenes",
@@ -1880,11 +1903,11 @@
       "category": "transport",
       "concept": "Vuelos internacionales multidestino MEX–BCN / LIS–MEX",
       "cost": {
-        "amount": 20500,
+        "amount": 15812.24,
         "currency": "MXN"
       },
-      "status": "estimated",
-      "notes": "Importe de referencia incluido en la ficha flight-international; no se suma otra vez. El costo seleccionado en majorTransport se incorpora una sola vez.",
+      "status": "quoted",
+      "notes": "Cotización mostrada en Iberia el 15/11/2026 por los dos vuelos internacionales en Turista Básica para 1 adulto; precio final $15,812.24 MXN, tasas y cargos incluidos. No comprada; sujeto a disponibilidad. La ficha flight-international presenta el mismo monto: NO sumar dos veces.",
       "includedInTransport": true
     },
     {
@@ -2221,15 +2244,15 @@
     "low": 76000,
     "high": 125000,
     "marginMXN": 25500,
-    "referenceFlightMXN": 20500,
+    "referenceFlightMXN": 15812.24,
     "useBudgetRange": true
   },
-  "budgetNote": "Proyección $76,000–$125,000 MXN; estimación central $99,500 MXN desglosada en: vuelos internacionales $20,500; dos vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500 (ambos sentidos donde corresponde); transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. No son cotizaciones ni se suman los rangos de costs a las partidas de expenses. majorTransport sigue sin alternativas seleccionadas y no duplica el presupuesto. Riesgos aún no cotizados: maleta en los dos vuelos europeos, suplementos o impuestos municipales de hoteles, transporte de subida en Sintra y conexiones aeroportuarias. Antes de considerar el rango confiable comparar los vuelos internacionales de fechas reales; $20,500 MXN puede resultar insuficiente para itinerario multidestino. Evitar crear gastos adicionales ya cubiertos por las categorías provisionales. El escenario mínimo ($76,000 MXN) es optimista: no equivale a ofertas verificadas. El máximo ($125,000 MXN) tampoco es garantía; recalcular el intervalo cuando existan cotizaciones con equipaje, tasas locales y condiciones de cambio.",
-  "sourceNote": "Consulta editorial y monetaria del 1/11/2026. EUR/MXN del BCE a 30/10/2026: 21.1237, última referencia hábil disponible. Horas solares calculadas para mayo 2027 y clima histórico, sin pronóstico. Todos los precios de viaje en MXN son provisiones no cotizadas.",
+  "budgetNote": "Proyección inicial $76,000–$125,000 MXN, aún orientativa. Escenario central revisado: $94,812.24 MXN (antes $99,500), al reemplazar la provisión de vuelos internacionales de $20,500 por la cotización conjunta NO COMPRADA de $15,812.24: vuelos europeos $6,500; alojamiento $35,000; trenes y autobuses $7,500; transporte urbano $4,000; comidas $12,500; entradas $8,000; seguro e imprevistos $5,500. Ahorro potencial $4,687.76 MXN frente a la provisión original. Los demás conceptos son estimaciones, no cotizaciones. No duplicar la ficha majorTransport en expenses. Verificar franquicias de equipaje con American y British, tránsito DFW, conexión estrecha de 75 min en Heathrow T5 y reglas de cambios antes de pagar. Los rangos generales todavía no se han recalculado integralmente.",
+  "sourceNote": "Consulta editorial y monetaria del 1/11/2026. EUR/MXN del BCE a 30/10/2026: 21.1237, última referencia hábil disponible. Horas solares calculadas para mayo 2027 y clima histórico, sin pronóstico. Las partidas generales en MXN siguen estimadas salvo los vuelos internacionales cotizados el 15/11/2026 (NO COMPRADOS).",
   "tips": [
     "Segovia sigue disponible como excursión opcional desde Madrid (Acueducto, Catedral, Alcázar y Pradera de San Marcos). Sustituye un día madrileño o una excursión existente; no acumularla a Zamora, Toledo y San Isidro sin redistribuir tiempo y costos.",
     "Restricción personal: no usar el corredor ferroviario Madrid–Andalucía; comprobar el trazado exacto antes de comprar servicios regionales.",
-    "Los vuelos se cotizarán posteriormente con Google Flights; mantener flexible el sentido Barcelona→Lisboa.",
+    "Vuelos internacionales ya cotizados (15/11/2026) en Iberia: American vía Dallas a Barcelona y British vía Heathrow desde Lisboa; total $15,812.24 MXN para 1 adulto, NO COMPRADOS. No modificar la ruta hasta pagar; comprobar equipaje y conexiones.",
     "El escenario central de gastos es una provisión completa y no una cotización. No confundir gastos presupuestados con reservas ni contabilizar nuevamente los transportes al desglosar cada trayecto."
   ],
   "sources": [],
