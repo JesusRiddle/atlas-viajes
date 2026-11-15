@@ -189,6 +189,7 @@ const assert = require('node:assert/strict');
             ['mco-hotel','rosen-universal','rosen-disney','rosen-epic']);
           assert.equal(await page.locator('#traslados .mt-card').count(), 5,
             'Orlando: un vuelo y cuatro conexiones terrestres');
+          for (let i = 0; i < 4; i++) await cards.nth(i).locator('summary').click();
           const groundText = await ground.innerText();
           for (const phrase of ['US$70–120','US$50–90','North Parking Garage','1201 Epic Boulevard',
             'Transportation and Ticket Center','Monorriel','US$40']) {
@@ -519,7 +520,6 @@ const assert = require('node:assert/strict');
             [true,false,false,false,false,true], 'Orlando: vuelo redondo solo en días de llegada y salida');
           const ledger = await page.locator('#costes').innerText();
           assert.doesNotMatch(ledger, /NaN|Invalid Date|undefined/, 'Orlando: presupuesto coherente');
-          await cards.first().locator('summary').click();
           assert.match(await cards.first().innerText(), /terminal/, 'Orlando: detalles de MCO desplegables');
         }
         if (id === 'orlando-2026') {
