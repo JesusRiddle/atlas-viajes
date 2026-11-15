@@ -5,8 +5,8 @@
 **Rama / PR:** `feature/orlando-2026` · https://github.com/JesusRiddle/atlas-viajes/pull/17  
 **Modalidad:** Itinerario detallado  
 **Última actualización:** 2026-11-15  
-**Etapa actual:** 13 · regresiones del catálogo corregidas, auditoría D aún pendiente de CI/navegador  
-**Siguiente acción autónoma:** confirmar CI del commit a24345f8 (y corregir cualquier fallo nuevo), luego ejecutar validación visual Desktop/Mobile de las nueve secciones y fuentes fotográficas.
+**Etapa actual:** 13 · auditoría técnica automatizada superada; pendiente cierre económico y verificación manual  
+**Siguiente acción autónoma:** cerrar precio de Magic Kingdom y confirmar las cotizaciones/condiciones de hotel, vuelo, transporte y entrada Universal; completar inspección visual manual y preparar PR para revisión del propietario, sin merge.
 
 ## Decisiones definitivas del viajero
 
@@ -36,7 +36,7 @@
 - [x] **10 Panorama:** intro, introShort, clima/luz e indicadores [style,language,entry].
 - [x] **11 Presupuesto preliminar:** nueve partidas Plan A; hotel y entradas cotizados, vuelos captura, gastos de traslados/comidas estimados; Disney cost.amount null. Escenario Terra Luna excluido. **Auditoría C provisional**, precio real de Disney pendiente.
 - [x] **12 Fotos/portada:** cuatro fotos de Wikimedia Commons con fuentes, autores y licencias; portada Hogwarts, una foto por día de parque. Falta inspección visual efectiva en navegador.
-- [ ] **13 Auditoría D/entrega:** PR #17 sigue en borrador; se corrigieron dos pruebas de catálogo con valores fijos que fallaron en CI (103/105); nuevo CI iniciado, resultado pendiente. Falta revisión Desktop/Mobile y renderizado completo. No merge.
+- [x] **13 Auditoría D técnica:** GitHub Actions commit `6690d12d3356bea5737841afdf7a8f193d9a3e7d` concluyó **success** (Node y browser smoke Desktop/Mobile). PR #17 sigue en borrador por verificaciones manuales y cotizaciones pendientes. No merge.
 
 ## Verificaciones ejecutadas en este turno
 - Lectura de JSON editado desde GitHub posterior al commit `6659775e03709f99459f6b60d560c4f1b422fff2`: parse JSON correcto.
@@ -67,3 +67,10 @@
 - Se comprobaron en Wikimedia Commons las cuatro páginas originales de las fotos, incluyendo sus autores y licencias. La fotografía Hogwarts `Hogwarts Castle (15379458178).jpg` tenía licencia mal declarada como CC BY-SA 4.0; corresponde a **CC BY 2.0** y se corrigió en `data/places.json` (commit `a24345f8ba78f92e6730246be633414894c4398b`).
 - El nuevo CI se observó `in_progress` tras los commits de corrección; no afirmar éxito mientras siga sin conclusión.
 - Sigue pendiente inspeccionar carga de imágenes en navegador y los resultados de pruebas de pantalla; archivos fuente y metadatos verificados no equivalen a validación visual.
+
+## Cierre de regresiones automatizadas · 15/11/2026
+- Se corrigió `tests/loader-regression.test.cjs` para reconocer Orlando como viaje principal número 1, sin retirar los 15 viajes históricos.
+- Se corrigió `tests/browser-smoke.cjs`: ocho tarjetas principales, seis viajes de la comparativa presupuestada (Orlando todavía preliminar), fixture incremental de nueve tarjetas, e impresión de contexto cuando un valor inválido aparezca.
+- El navegador detectó presupuesto inválido `$NaN–$3.00 MXN` en Orlando; causa: `budgetRange` se guardó como cadena en lugar de `[mínimo, máximo]`. Se corrigió a `[37000,40000]` (MXN).
+- **GitHub Actions run 43755905853 del commit 6690d12d3356bea5737841afdf7a8f193d9a3e7d terminó SUCCESS**. Incluye pruebas de Node y Playwright browser smoke Desktop/Mobile, con nueve secciones y navegación de todos los viajes.
+- Quedan fuera del alcance automático: comprobación humana de estética, visibilidad real de imágenes remotas bajo redes de usuarios, cotización de Magic Kingdom y disponibilidad de servicios aún no comprados.
