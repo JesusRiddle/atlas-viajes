@@ -5,8 +5,8 @@
 **Rama / PR:** `feature/orlando-2026` · https://github.com/JesusRiddle/atlas-viajes/pull/17  
 **Modalidad:** Itinerario detallado  
 **Última actualización:** 2026-11-15  
-**Etapa actual:** 13 · auditoría técnica automatizada superada; pendiente cierre económico y verificación manual  
-**Siguiente acción autónoma:** cerrar precio de Magic Kingdom y confirmar las cotizaciones/condiciones de hotel, vuelo, transporte y entrada Universal; completar inspección visual manual y preparar PR para revisión del propietario, sin merge.
+**Etapa actual:** 11/13 · presupuesto conciliado y nueve secciones revisadas; pendiente auditoría global visual, precios de compras y aprobación de merge  
+**Siguiente acción autónoma:** realizar auditoría global cruzada de 9 secciones, revisar imágenes remotas y experiencia visual, comprobar CI de rama final, comparar compra real de Magic Kingdom y términos finales de cotizaciones cuando sean accesibles; preparar PR para revisión, sin merge.
 
 ## Decisiones definitivas del viajero
 
@@ -166,3 +166,16 @@
 - **Pruebas automatizadas** de seis fechas, 5 noches, cuatro parques, Macy’s/Grinchmas, distinción de evento privado Disney, límite opcional Epic y referencias de vuelo, añadidas al browser smoke (commit `c6a65f706bfe8a4ce139f8a4207bfaeeedf8b808`). CI en curso al redactar esta nota; no afirmar success antes del resultado.
 
 **Siguiente etapa:** Presupuesto integral, revisar US$335.99 subtotal Universal, US$539.94 Rosen, $7,015 MXN Volaris, boleto Disney sin precio, transfers, alimentación, cargos y escenarios excluyentes Park-to-Park/Terra Luna; conciliación contra total del motor y pruebas.
+
+## Auditoría específica de Presupuesto · 15/11/2026
+- **Moneda:** $18.6188 MXN por USD; se corrigió fuente y fecha, **publicación en DOF el 13/11/2026**, no «FIX del domingo 15/11». El FIX determinado el viernes 13 fue $18.5525. En el comparativo se conserva $18.6188 como referencia de conversiones anteriores, no cambio de ventanilla garantizado. Fuentes: Banxico y DOF.
+- **Cotizaciones de captura (NO compras):** Volaris redondo $7,015 MXN; Rosen 5 noches US$539.94, que YA incluye impuesto US$59.99; Universal 3-Day 3-Park un parque/día US$335.99 SUBTOTAL, pendiente de impuestos definitivos. Magic Kingdom 5/12 precio `null` y estado pending; no inventar tarifa.
+- **Provisiones:** MCO↔Rosen redondo US$95, Rosen↔Disney US$70, apps de respaldo tres días Universal en bolsa común US$40, comidas total US$290, imprevistos US$80. Alimentos distribuidos por fecha: 2 dic US$30, 3 dic US$55, 4 dic US$55, 5 dic US$65, 6 dic US$60, 7 dic US$25. No se presupuestó la cena del 7 en Orlando.
+- **Impuesto de Universal:** Florida DOR confirma impuesto de ventas Orange County 6.5%, Universal publica la oferta **más impuestos**. Se registró US$21.84 como 6.5% matemático de US$335.99, `status=estimated`, NO tax real comprobado; revisar pantalla de total para reemplazarlo o quitarlo si se incluyó en la cifra original. No gravar de nuevo hotel ni agregar impuesto ficticio a Disney sin cotización.
+- **Subtotales (con redondeo MXN por partida del motor):** vuelo $7,015 + otras partidas convertidas ≈ **$34,436.19 MXN** antes de Magic Kingdom; un cálculo USD agregado antes de redondeo daría $34,436.21, diferencia de 2 centavos que se corrigió en textos. Entrada Disney solo para rango ilustrativo US$180–240, total hipotético ≈ $37,787.57–$38,904.70; no representa cotización final.
+- **Rango de planeación:** se elevó de $37–40 mil a **$39,000–$44,000 MXN** para admitir fluctuaciones y compras menores. Es un margen editorial no un precio cerrado; seguro médico, equipaje fuera de la tarifa, souvenires y pases Express son opcionales pendientes de cotizar y podrían exceder el margen.
+- **Alternativas excluyentes:** Terra Luna US$1,577.46 paquete hotel+tickets, no sumar junto a Rosen+Universal Plan A; tarifa Park-to-Park US$357 «desde» + impuesto tampoco se incluye como producto comprado.
+- **Integridad económica y UI:** vuelo `majorTransport` con `budgetIncludedIn:'orlando-flight'`; partidas MCO/Disney/respaldo únicas. Categorías normalizadas a `admission`, `local_transport`, `contingency`, `taxes` y `food`. `components/budget-table.js` diferencia subtotal con pendientes de un total cerrado, incluye supuestos visibles y elimina etiqueta incorrecta de vuelo no incluido para Orlando.
+- **CI:** commit `ea9aa983c6e00fdb71c1f98232e369c526f90cdd` concluyó **success** en GitHub Actions, con tests Node y navegador. Incluye control de importes, seis comidas diarias, monto Disney `null`, fecha de DOF y avisos de gastos no confirmados. Primer fallo intermedio por aserción de texto literal, corregido sin alterar precios.
+
+**Siguiente fase = auditoría global final:** cruzar Panorama, Mapa, Temporadas, Experiencias, Reservaciones, Movilidad, Hoteles, Día por día y Presupuesto; revisar consistencia de fechas, fotos y créditos, usabilidad visual escritorio/móvil, enlaces, textos genéricos y CI. No hacer merge hasta aprobación del viajero. Quedan necesariamente pendientes cotizaciones y compras finales de Magic Kingdom, vuelo/hotel/Universal y extras.
