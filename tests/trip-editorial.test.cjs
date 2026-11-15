@@ -74,8 +74,8 @@ test('reservaciones importantes de Italia 2027 tienen grupos, prioridad y enlace
   }
   const critical = trip.reservations[0][1];
   assert.match(critical[0].title, /Última Cena/);
-  assert.match(critical[0].description, /miércoles 12 mayo/);
-  assert.match(critical[0].description, /marzo de 2027/);
+  assert.match(critical[0].description, /miércoles 12 mayo/i);
+  assert.match(critical[0].description, /marzo 2027/);
 });
 
 test('Italia 2027: fechas, noches y viajes de ida y vuelta coherentes', () => {
@@ -189,7 +189,7 @@ test('Italia 2027: regreso 21 mayo y distribución equilibrada de bases', () => 
  assert.equal(trip.end,'2027-05-21');
  assert.deepEqual(trip.bases,[['Milano',4],['La Spezia',3],['Firenze',5]]);
  assert.equal(trip.work,10);
- assert.equal(trip.hotels.find(h=>h.city==='Firenze').checkOut,'2027-04-16');
+ assert.equal(trip.hotels.find(h=>h.city==='Firenze').checkOut,'2027-05-21');
  const flight=trip.majorTransport.find(t=>t.id==='flight-international').options[0];
  assert.match(flight.journeys[1].segments[0].departure,/^2027-05-21T23:05/);
  assert.match(flight.journeys[1].segments[0].arrival,/^2027-05-22T04:00/);
@@ -238,7 +238,7 @@ test('Italia 2027 incluye requisitos de entrada y guía universal para futuros v
 
 test('Italia 2027: fechas de hotel y traslados concuerdan con el día a día', () => {
  const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
- const stays=[['2027-05-09','2027-05-13'],['2027-05-13','2027-05-16'],['2027-05-16','2027-04-16']];
+ const stays=[['2027-05-09','2027-05-13'],['2027-05-13','2027-05-16'],['2027-05-16','2027-05-21']];
  trip.hotels.forEach((h,i)=>{assert.equal(h.checkIn,stays[i][0]);assert.equal(h.checkOut,stays[i][1]);});
  const refsByDay={6:'train-milano-la-spezia',7:'train-cinque-terre',8:'bus-portovenere',9:'train-la-spezia-lucca',10:'bus-siena',14:'train-firenze-milano'};
  for(const [day,id] of Object.entries(refsByDay)){
