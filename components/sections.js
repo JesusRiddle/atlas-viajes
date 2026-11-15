@@ -117,9 +117,14 @@ window.AtlasSections = function (ctx) {
         const trip = trips.find(t => t.id === id);
         const hotels = trip?.hotels || [];
         const suggested = stays[id] || [];
+        const comparison = typeof trip?.hotelsComparison === 'string' && trip.hotelsComparison.trim()
+            ? '<p class="hotel-option-comparison" style="grid-column:1/-1"><strong>Comparación de planes:</strong> ' +
+                esc(trip.hotelsComparison) + '</p>'
+            : '';
         return `<div class="stay-list hotel-grid">
             ${hotels.map(hotelCard).join('')}
             ${suggested.map(suggestedStayCard).join('')}
+            ${comparison}
             ${!hotels.length && !suggested.length ? '<article class="hotel-card"><p class="draft-pending">Por definir</p></article>' : ''}
         </div>`;
     }
