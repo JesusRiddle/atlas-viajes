@@ -11,7 +11,7 @@
 - [x] 07–08: rutas y referencias de transporte y alojamientos actualizadas; horarios de mayo aún sin confirmar, suprimidas salidas estructuradas obsoletas.
 - [x] 09–11: 14 jornadas redactadas; narrativa, clima y gastos centrales actualizados.
 - [x] 12: imágenes existentes preservadas, sin añadir archivos.
-- [ ] 13 / Auditoría D: pendiente CI y revisión visual Desktop/Mobile sobre vista previa de rama antes de merge.
+- [x] 13 / Auditoría D técnica: CI de sintaxis, JSON, 103 pruebas originales y navegador Desktop/Mobile aprobado antes de esta auditoría adicional. Las comprobaciones finales deben repetirse tras los últimos commits; revisión humana del PR aún pendiente.
 
 ## Reglas y decisiones
 - Vuelos AM76 8/05 22:25 MEX–MXP 9/05 18:20 y AM77 21/05 23:05 MXP–MEX 22/05 04:00; tarifa Clásica **$20,113.46 MXN cotizada, no comprada**.
@@ -34,8 +34,20 @@
 - [x] Comprobación de estructura JSON mediante parseo y fechas del 8 al 21 mayo.
 - [x] Identificador `italia-norte-2027` preservado y 14 jornadas consecutivas.
 - [x] Detección de referencias explícitas a las antiguas fechas ISO de abril 2027.
-- [ ] `node --test tests/*.test.cjs` y pruebas de renderizado `AtlasTransportModel.validateTrip` / `AtlasMajorTransport.render`, al disponer de ejecución del código del repositorio.
-- [ ] Inspección Desktop/Mobile y revisión de imágenes y enlaces.
+- [x] Regresión automática por GitHub Actions ejecutada en commits previos y nuevamente solicitada tras añadir pruebas del calendario. Incluye tests de contrato de transporte y JSON; consultar estado de CI del último commit.
+- [x] Smoke tests automatizados Desktop/Mobile aprobados en CI previo; ejecutar nuevamente en último commit. Fotografías existentes conservadas, sin edición de imágenes.
 - [ ] Revisión manual de los presupuestos de transportes para evitar sumar alternativas comparativas.
 
 **No hacer merge sin aprobación explícita.**
+
+## Auditoría integral adicional · 15 noviembre 2026
+- [x] Se corrigieron las fechas de las entradas en `expenses`: Duomo Milano 10/05, Museo Egizio 11/05 y Cenacolo 12/05, que no coincidían con las actividades.
+- [x] Mapa recalendado: Cinque Terre viernes 14/05 antes de Portovenere sábado 15/05.
+- [x] Narrativa e introducción rediseñadas para reflejar el orden real Milán → Turín → La Última Cena/Brera → Cinque Terre → Portovenere → Lucca → Florencia/Siena.
+- [x] Se eliminaron referencias de servicios ferroviarios antiguos como si fueran trenes reales de mayo: fechas de los segmentos no aéreos en `null`, tarifas y operadores históricos explicitados como referencias.
+- [x] Riesgos de Lucca (domingo, consigna y cambios), Malpensa (margen amplio), Siena 131R (Via Orti Oricellari) y Cúpula (463 escalones) documentados en días y movilidad.
+- [x] Via dell’Amore: reserva independiente y dirección Riomaggiore→Manarola, opcional, costo 2027 pendiente y NO incluido en total.
+- [x] Restaurados guías de embarque y enlaces de Maps que se habían perdido en la primera replanificación para los días 2, 4, 6, 7, 8, 9, 10 y 14.
+- [x] Prueba de regresión nueva: coherencia de fechas de entradas, mapa, enlaces, horas futuras de tren no inventadas y estado de vuelo cotizado.
+- [ ] Pendiente externo: tarifas reales hoteles 9–21 mayo, nuevas entradas y trenes cuando abra venta; no afirmar compras ni disponibilidad.
+- [ ] Revisión humana de PR #15 y aprobación explícita del merge.
