@@ -92,11 +92,11 @@
       "date": "2026-12-02",
       "title": "CDMX → Orlando · llegada y descanso",
       "base": "Orlando",
-      "am": "Vuelo directo Volaris MEX 11:10 → MCO 15:18 según captura de referencia del 15/11/2026, sin compra. Llegar con margen a MEX y revisar equipaje.",
-      "pm": "Pasar migración, recoger equipaje y tomar Uber/Lyft o taxi autorizado hacia Rosen Inn Closest to Universal; prever tráfico y check-in sin hora comprometida.",
-      "night": "Cena sencilla cerca de International Drive. Descansar para cuatro jornadas seguidas de parques.",
+      "am": "Volaris directo MEX 11:10 → MCO 15:18, horario de captura del 15/11/2026 (no comprado); llegar a MEX con margen y confirmar equipaje y terminal.",
+      "pm": "Tras migración y equipaje en MCO, ir al punto autorizado de Uber/Lyft o taxi hasta Rosen Inn. Check-in desde las 16:00; llegada efectiva sujeta a tráfico y migración.",
+      "night": "Cena tranquila cerca de International Drive, confirmar y reservar en recepción el shuttle Universal del jueves. CityWalk solo si todavía hay tiempo y energía.",
       "mobility": "Llegada MCO 15:18 según captura, sin vuelo comprado: migración, equipaje y recogida por app/taxi en el punto autorizado de la terminal que corresponda. MCO → Rosen Inn aproximadamente 25–45 min de carretera en condiciones habituales (estimación, no tiempo garantizado); presupuesto aeroportuario US$70–120 redondo para días 1 y 6, contado una sola vez. Revisar ficha de movilidad terrestre y rutas.",
-      "note": "Volaris $7,015 MXN redondo mostrado en captura para 1 adulto, sujeto a vigencia y cargos de equipaje. No comprado.",
+      "note": "No reservar actividades con hora fija el día de llegada. El vuelo es cotización, no compra.",
       "spend": null,
       "places": [],
       "hotel": "orlando-rosen",
@@ -119,11 +119,11 @@
       "date": "2026-12-03",
       "title": "Universal Studios Florida · Diagon Alley",
       "base": "Orlando",
-      "am": "Entrar a Universal Studios Florida y dedicar las primeras horas a Diagon Alley: Escape from Gringotts, dragón sobre el banco, Ollivanders, Knockturn Alley y tiendas. Fuera del callejón, mirar el Knight Bus; King's Cross es solo exterior, no abordar Hogwarts Express con este boleto.",
-      "pm": "Comer en Leaky Cauldron si conviene (fish and chips, cottage pie o pastel de carne) y probar Butterbeer/zumo de calabaza. Después, Revenge of the Mummy y Transformers: The Ride-3D; The Bourne Stuntacular solo si su función encaja.",
-      "night": "Volver a Diagon Alley para fotografías nocturnas y decoración festiva; si queda tiempo, Universal CityWalk.",
+      "am": "Llegar a Universal Studios Florida cerca de apertura general, según el shuttle reservado (Rosen no da entrada anticipada). Primero Diagon Alley y Escape from Gringotts; después Knockturn Alley, dragón, Ollivanders, tiendas y Knight Bus. No abordar Hogwarts Express con boleto sin Park-to-Park.",
+      "pm": "Comida y descanso de 45–60 minutos orientativos en Leaky Cauldron; probar Butterbeer. Después Mummy y Transformers si hay margen; Bourne Stuntacular sujeto a horario. No sacrificar la inmersión en Diagon Alley por filas.",
+      "night": "Según cartelera, elegir entre Universal’s Holiday Parade featuring Macy’s —celebración oficial del 14/11/2026 al 3/1/2027— y Diagon Alley iluminado. El desfile no tiene hora confirmada para el 3/12. Si termina el shuttle, volver en Uber/Lyft; reservar plaza para Islands.",
       "mobility": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Reserva presencial idealmente un día antes; cupos limitados y horarios sujetos a cambios. Alternativa Uber/Lyft desde North Parking Garage, 6000 Universal Blvd, si se sale después del último shuttle. Ver detalles y rutas en Movilidad y conexiones.",
-      "note": "Entrada Universal 3-Day 3-Park, un parque por día; primera utilización 3/12, vigencia dentro de 7 días. Hogwarts Express no está incluido (requiere Park-to-Park).",
+      "note": "El desfile navideño regular de Universal no es el desfile de fiesta privada Disney. Prioridad absoluta a Harry Potter y flexibilidad ante filas o lluvia.",
       "spend": null,
       "places": [
         "or26-diagon"
@@ -138,6 +138,10 @@
         {
           "label": "Rosen Inn · transporte gratuito",
           "url": "https://www.roseninn6327.com/transportation"
+        },
+        {
+          "label": "Universal · Navidad y desfile Macy’s",
+          "url": "https://www.universalorlando.com/web/en/us/holidays/universal-studios-florida"
         }
       ]
     },
@@ -146,11 +150,11 @@
       "date": "2026-12-04",
       "title": "Islands of Adventure · Hogwarts y Hagrid",
       "base": "Orlando",
-      "am": "Priorizar Hagrid's Magical Creatures Motorbike Adventure, Harry Potter and the Forbidden Journey y visita al castillo de Hogwarts. Consultar tiempos de espera y estado de atracciones.",
-      "pm": "Recorrer Hogsmeade, Honeydukes, Ollivanders y Flight of the Hippogriff; comida temática en Three Broomsticks (pollo asado, shepherd’s pie o fish and chips). Si hay tiempo: VelociCoaster y Spider-Man; Hulk opcional.",
-      "night": "Regresar a Hogsmeade por la ambientación navideña o espectáculo de castillo si se ofrece ese día.",
+      "am": "Con apertura general de Islands, consultar la fila y operativa de Hagrid’s Magical Creatures Motorbike Adventure; priorizarla si conviene. Entrar a Hogwarts para Forbidden Journey y fotografías. No desperdiciar toda la mañana si una atracción sufre paradas.",
+      "pm": "Comida en Three Broomsticks, tiendas Hogsmeade/Honeydukes, Ollivanders y Flight of the Hippogriff. Elegir VelociCoaster o Spider-Man según filas; Hulk opcional. Reservar descanso para la noche.",
+      "night": "Hogsmeade iluminado y, si se anuncia el 4/12, espectáculo navideño de Hogwarts. Grinchmas Who-liday Spectacular en Seuss Landing es alternativa con función por confirmar, no obligación. Si hay conflicto, elegir Hogwarts.",
       "mobility": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Reservar lugar anticipadamente en lobby; si el horario limita la experiencia de Hogwarts, regresar en Uber/Lyft desde North Parking Garage. Colchón de apps compartido con Epic, no por parque.",
-      "note": "Hagrid y VelociCoaster pueden implicar esperas largas; priorizar Harry Potter. Hogwarts Express solo se puede abordar con Park-to-Park.",
+      "note": "Verificar casilleros y objetos sueltos en atracciones intensas, además de último shuttle. Hogwarts Express requiere Park-to-Park y no se incluye.",
       "spend": null,
       "places": [
         "or26-hogwarts"
@@ -165,6 +169,10 @@
         {
           "label": "Rosen · autobús parques",
           "url": "https://www.roseninn6327.com/transportation"
+        },
+        {
+          "label": "Universal · Navidad Hogwarts y Grinchmas",
+          "url": "https://www.universalorlando.com/web/en/us/holidays/islands-of-adventure"
         }
       ]
     },
@@ -173,11 +181,11 @@
       "date": "2026-12-05",
       "title": "Disney Magic Kingdom · castillo y clásicos",
       "base": "Orlando",
-      "am": "Traslado temprano al área de acceso a Magic Kingdom. Comenzar por el castillo de Cenicienta, Seven Dwarfs Mine Train, Peter Pan's Flight y Haunted Mansion según filas.",
-      "pm": "TRON Lightcycle / Run, Pirates of the Caribbean y Space Mountain; Big Thunder Mountain Railroad si está operativa. Pausa con waffle o funnel cake de Sleepy Hollow, sin forzar todas las atracciones.",
-      "night": "Ver desfile y fuegos artificiales si están programados; regresar al Rosen Inn en Uber/Lyft o taxi.",
+      "am": "Salir temprano de Rosen hacia el Transportation and Ticket Center (TTC); añadir seguridad y monorriel/ferry hasta Magic Kingdom. Entrar con ticket regular fechado del 5/12. Fotografía del castillo, Seven Dwarfs Mine Train y Peter Pan’s Flight conforme a filas.",
+      "pm": "Haunted Mansion, Pirates, comida y descanso. Elegir después entre TRON, Space Mountain y Big Thunder Mountain Railroad si está operativa. Añadir Jingle Cruise o Frozen Holiday Surprise si coincide con horarios; Sleepy Hollow para un waffle.",
+      "night": "Luces de Main Street y, si se programan ese sábado, Disney Starlight: Dream the Night Away y/o Happily Ever After. Consultar My Disney Experience; el desfile y fuegos exclusivos de Mickey’s Very Merry Christmas Party NO corresponden al boleto regular. Volver por TTC y reservar shuttle del domingo a Epic.",
       "mobility": "Rosen → Transportation and Ticket Center (TTC) en Uber/Lyft o taxi, luego monorriel Express o ferry hasta Magic Kingdom. Regreso en orden inverso, pidiendo vehículo en zona autorizada del TTC. Rosen menciona shuttle Disney pagado sin horario, parada ni precio públicos; no asumir que llega directamente al parque. Provisión para transporte redondo US$50–90; consultar horarios reales del monorriel y del parque.",
-      "note": "Disney no programa Mickey's Very Merry Christmas Party el 5/12/2026 (sí 3, 4 y 6). Entrada regular específica de Magic Kingdom pendiente de precio final; comprobar horario y espectáculos.",
+      "note": "El sábado 5/12/2026 NO es noche de Mickey’s Very Merry Christmas Party, pero tampoco garantiza un desfile especial sin boleto. Confirmar espectáculo regular y precio de entrada Disney.",
       "spend": null,
       "places": [
         "or26-magic"
@@ -192,6 +200,14 @@
         {
           "label": "Disney · calendario de fiesta navideña",
           "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+        },
+        {
+          "label": "Disney · Navidad 2026",
+          "url": "https://disneyworld.disney.go.com/events-tours/holidays/"
+        },
+        {
+          "label": "Disney · cartelera Magic Kingdom",
+          "url": "https://disneyworld.disney.go.com/destinations/magic-kingdom/"
         }
       ]
     },
@@ -200,11 +216,11 @@
       "date": "2026-12-06",
       "title": "Epic Universe · Ministerio de Magia y Dark Universe",
       "base": "Orlando",
-      "am": "Prioridad: Harry Potter and the Battle at the Ministry en Place Cachée. Recorrer las calles del París mágico, las varitas de Cosme Acajor y, según horarios, Le Cirque Arcanus. Comida o postre temático en Café L’air De La Sirène, si hay tiempo; revisar alérgenos.",
-      "pm": "Siguiente prioridad: Dark Universe y Monsters Unchained: The Frankenstein Experiment; después Super Nintendo World y Mario Kart. Mine-Cart Madness (Donkey Kong), Stardust Racers y Hiccup’s Wing Gliders solo como opciones intercambiables según filas: no intentar completarlas todas.",
-      "night": "Paseo por Celestial Park iluminado si la hora de cierre lo permite; si hay buen margen, recorrer brevemente Isle of Berk. Regresar al hotel y preparar equipaje.",
+      "am": "Shuttle Rosen–Epic reservado el sábado o Uber/Lyft si conviene; apertura general sin Early Park Admission en Rosen. Prioridad Harry Potter: Place Cachée y Battle at the Ministry si está operativa; revisar fila en app. Recorrer París mágico y Cosme Acajor.",
+      "pm": "Le Cirque Arcanus y descanso en Café L’air De La Sirène según funciones. Siguiente prioridad Monsters Unchained en Dark Universe; después Nintendo World y Mario Kart. Si el tiempo alcanza, escoger COMO MÁXIMO UNA entre Mine-Cart Madness, Stardust Racers o Hiccup’s Wing Gliders.",
+      "night": "Visitar Celestial Park iluminado y decoración festiva de Nintendo/Isle of Berk si el horario permite. Salir según shuttle; usar Uber/Lyft desde 1201 Epic Boulevard si ya no opera. Preparar equipaje en Rosen.",
       "mobility": "Rosen → Epic Universe: 07:15, 08:35, 09:55, 11:15. Retornos: 17:25, 18:40, 19:55, 21:10. Reservar lugar presencialmente el día anterior; no cubre entrada anticipada ni eventos especiales. Alternativa: Uber/Lyft en 1201 Epic Boulevard si las filas o la noche exceden la salida del shuttle; colchón compartido con otros parques.",
-      "note": "Epic Universe suele requerir más tiempo del disponible. No prometer todas las atracciones; Ministry of Magic y Dark Universe son las prioridades. No añadir Pandora: está en Animal Kingdom y quedó descartado.",
+      "note": "Universal confirmó decoración navideña Epic y Snoggletog del 14/11/2026 al 3/1/2027. No prometer todas las atracciones de Epic Universe en un solo día.",
       "spend": null,
       "places": [
         "or26-ministry"
@@ -219,6 +235,10 @@
         {
           "label": "Rosen · Epic Universe shuttle",
           "url": "https://www.roseninn6327.com/services-and-amenities"
+        },
+        {
+          "label": "Universal · Navidad en Epic",
+          "url": "https://www.universalorlando.com/web/en/us/things-to-do/events/holidays-at-universal"
         }
       ]
     },
@@ -227,11 +247,11 @@
       "date": "2026-12-07",
       "title": "Orlando → Ciudad de México",
       "base": "Orlando",
-      "am": "Desayuno, check-out y consigna de equipaje solo si el hotel lo permite; sin actividades lejanas.",
-      "pm": "Traslado Rosen Inn → MCO con margen suficiente para vuelo internacional. Volaris MCO 17:05 → MEX 19:45, según captura no comprada.",
-      "night": "Llegada a Ciudad de México y traslado a casa.",
+      "am": "Desayunar, empacar y hacer check-out del Rosen Inn antes de las 11:00, salvo autorización expresa para salir más tarde. No programar actividades lejanas.",
+      "pm": "Uber/Lyft o taxi a MCO, salida del hotel orientativa 12:30–13:00 con margen por tráfico y terminal. Vuelo Volaris MCO 17:05 → MEX 19:45 según captura sin comprar.",
+      "night": "Llegada a México, migración y regreso a casa. No hay sexta noche de hotel.",
       "mobility": "Traslado Rosen Inn → MCO con Uber/Lyft o taxi; objetivo orientativo de salir del hotel hacia 12:30–13:00 para vuelo internacional 17:05, sujeto a terminal, tráfico y requisito de check-in de Volaris. Confirmar parada de descenso en terminal asignada. Costo ya incluido en la partida redonda MCO ↔ Rosen de US$70–120; NO sumar otra vez.",
-      "note": "Hora de salida 17:05 y llegada a MEX 19:45, sin compra. No programar visitas que pongan en riesgo el vuelo.",
+      "note": "Comprobar terminal y hora límite de check-in Volaris. El transporte al aeropuerto ya está incluido una vez en el presupuesto MCO↔Rosen.",
       "spend": null,
       "places": [],
       "hotel": null,
@@ -878,6 +898,18 @@
     {
       "label": "Terra Luna · dirección, impuestos y reglas de habitación",
       "url": "https://www.universalorlando.com/web/en/us/places-to-stay/universal-terra-luna-resort"
+    },
+    {
+      "label": "Universal · comunicado Navidad 2026",
+      "url": "https://media.universalparksusa.com/press-releases/universal-orlando-resort-kicks-off-its-destination-wide-holidaycelebration-111126/"
+    },
+    {
+      "label": "Disney · fiestas navideñas fechas 2026",
+      "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+    },
+    {
+      "label": "Disney · programación navideña diurna",
+      "url": "https://disneyworld.disney.go.com/events-tours/holidays/"
     }
   ],
   "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. El precio de Magic Kingdom para 5/12 sigue sin cotizar. Park-to-Park desde US$357 + impuestos NO representa precio para fechas específicas.",
