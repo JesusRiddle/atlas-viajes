@@ -87,21 +87,21 @@
       "note": "Lunes: Pinacoteca di Brera y Cenacolo habitualmente cerrados; trasladados al miércoles. El Museo del Duomo y otros espacios pueden tener cierres específicos: verificar horarios antes de comprar.",
       "spend": null,
       "places": [
-        "italy16-grazie",
-        "milan-castello",
         "milan-duomo",
         "milan-galleria",
-        "italy27-sempione",
-        "italy27-milan-scala"
+        "milan-castello",
+        "italy27-milan-scala",
+        "italy27-sempione"
       ],
       "hotel": "milano-aosta",
       "headerPlaces": [
-        "Cenacolo Vinciano · reserva pendiente",
-        "Santa Maria delle Grazie",
-        "Castello Sforzesco · exterior",
-        "Duomo di Milano",
-        "Galleria Vittorio Emanuele II"
-      ]
+        "Duomo di Milano y terrazas",
+        "Galleria Vittorio Emanuele II",
+        "Piazza della Scala",
+        "Castello Sforzesco · exterior"
+      ],
+      "transportRefs": [],
+      "optionalPlaces": []
     },
     {
       "n": 4,
@@ -115,20 +115,26 @@
       "note": "Cambio importante: Museo Egizio los lunes suele cerrar a las 14:00; martes 11 permite horario habitual hasta las 18:30, sujeto a calendario 2027. Venta con franja online; no comprado.",
       "spend": null,
       "places": [
-        "italy16-grazie",
-        "milan-castello",
-        "milan-duomo",
-        "milan-galleria",
-        "italy27-sempione",
-        "italy27-milan-scala"
+        "italy27-egizio",
+        "italy27-torino-san-carlo",
+        "italy27-piazza-castello",
+        "italy27-madama",
+        "italy27-mole"
       ],
       "hotel": "milano-aosta",
       "headerPlaces": [
-        "Cenacolo Vinciano · reserva pendiente",
-        "Santa Maria delle Grazie",
-        "Castello Sforzesco · exterior",
-        "Duomo di Milano",
-        "Galleria Vittorio Emanuele II"
+        "Torino Porta Nuova",
+        "Museo Egizio",
+        "Piazza San Carlo",
+        "Piazza Castello",
+        "Mole Antonelliana · exterior opcional"
+      ],
+      "transportRefs": [
+        "train-torino",
+        "train-torino-return"
+      ],
+      "optionalPlaces": [
+        "italy27-mole"
       ]
     },
     {
@@ -143,21 +149,20 @@
       "note": "La Última Cena se vende para mayo–julio 2027 en bloque previsto para marzo de 2027; día de apertura y plazas pendientes. NO reservar visitas incompatibles. Brera cierra normalmente lunes, no miércoles.",
       "spend": null,
       "places": [
+        "italy16-grazie",
         "italy27-brera",
-        "milan-duomo",
-        "milan-galleria",
-        "italy27-milan-scala",
         "italy27-art-brera-raffaello",
         "italy27-art-brera-hayez"
       ],
       "hotel": "milano-aosta",
       "headerPlaces": [
-        "Pinacoteca di Brera · reserva pendiente",
-        "Barrio de Brera",
-        "Duomo di Milano y terrazas",
-        "Piazza della Scala",
-        "Cenacolo Vinciano · respaldo si hace falta"
-      ]
+        "Cenacolo Vinciano · La Última Cena",
+        "Santa Maria delle Grazie",
+        "Pinacoteca di Brera",
+        "Barrio de Brera"
+      ],
+      "transportRefs": [],
+      "optionalPlaces": []
     },
     {
       "n": 6,
@@ -198,9 +203,9 @@
       "note": "Viernes elegido para reducir parcialmente presión de fin de semana. Senderos y Via dell’Amore dependen de meteorología, seguridad y reserva; no asumir aperturas. Portovenere puede intercambiarse con este día por mal clima.",
       "spend": null,
       "places": [
+        "italy27-riomaggiore",
         "italy27-manarola",
         "italy27-vernazza",
-        "italy27-riomaggiore",
         "italy27-monterosso"
       ],
       "transportRefs": [
@@ -214,9 +219,10 @@
       ],
       "hotel": "spezia-dane",
       "headerPlaces": [
-        "Riomaggiore · puerto y calles",
-        "Manarola · miradores",
-        "Vernazza · puerto histórico",
+        "Riomaggiore",
+        "Via dell’Amore · opcional sujeto a reserva",
+        "Manarola",
+        "Vernazza",
         "Monterosso · opcional"
       ],
       "optionalPlaces": [
@@ -235,30 +241,23 @@
       "note": "Servicios religiosos, viento y oleaje pueden modificar accesos. Comprar/validar billete según reglas ATC vigentes; evitar confundir tarifas de papel y digital.",
       "spend": null,
       "places": [
-        "italy27-manarola",
-        "italy27-vernazza",
-        "italy27-riomaggiore",
-        "italy27-monterosso"
+        "italy27-portovenere",
+        "italy27-san-pietro-portovenere",
+        "italy27-byron",
+        "italy27-capellini"
       ],
       "transportRefs": [
-        "train-cinque-terre",
-        "ct-spezia-riomaggiore",
-        "ct-riomaggiore-manarola",
-        "ct-manarola-vernazza",
-        "ct-vernazza-spezia",
-        "ct-vernazza-monterosso",
-        "ct-monterosso-spezia"
+        "bus-portovenere"
       ],
       "hotel": "spezia-dane",
       "headerPlaces": [
-        "Riomaggiore · puerto y calles",
-        "Manarola · miradores",
-        "Vernazza · puerto histórico",
-        "Monterosso · opcional"
+        "Porto Venere · puerto",
+        "Via Giovanni Capellini",
+        "Chiesa di San Pietro",
+        "Grotta Byron · miradores",
+        "Castello Doria · opcional"
       ],
-      "optionalPlaces": [
-        "italy27-monterosso"
-      ]
+      "optionalPlaces": []
     },
     {
       "n": 9,
@@ -741,7 +740,7 @@
         },
         {
           "title": "Galleria dell’Accademia · David (Firenze)",
-          "description": "Martes 13 abril: preferir 08:15–08:45, sujeto a disponibilidad. Visita de 75–90 min y margen antes de la Cúpula. B-Ticket es canal autorizado; comparar el billete combinado Accademia/Bargello solo si las franjas del martes 13 y jueves 15 quedan dentro de su vigencia.",
+          "description": "Martes 18 mayo: entrada temprana deseable 08:15–08:45, sujeta a disponibilidad; 75–90 min de visita y margen antes de Cúpula. Revisar billete combinado con Bargello: martes 18 a jueves 20 puede exceder 48 horas, según franjas.",
           "links": [
             {
               "label": "Accademia · entradas oficiales",
@@ -755,7 +754,7 @@
         },
         {
           "title": "Cúpula de Brunelleschi · Brunelleschi Pass (Firenze)",
-          "description": "Martes 13 abril: Cúpula preferentemente 11:00–11:30 después de Accademia; franja obligatoria e identificación. 463 escalones sin ascensor, dejar bolsas prohibidas en consigna gratuita Piazza Duomo 38/r. Brunelleschi Pass incluye Museo dell’Opera y vale 3 días naturales desde la fecha de Cúpula; horarios y tarifa 2027 por confirmar.",
+          "description": "Martes 18 mayo: franja deseable 11:00–11:30 después de Accademia, no reservada. 463 escalones sin ascensor: evaluar limitación de espalda y prever recuperación. Brunelleschi Pass incluye Museo dell’Opera; condiciones y tarifa de mayo 2027 pendientes.",
           "links": [
             {
               "label": "Brunelleschi Pass oficial",
@@ -769,7 +768,7 @@
         },
         {
           "title": "Uffizi + Corridoio Vasariano (Firenze)",
-          "description": "Miércoles 14 abril: reservar la entrada nominativa conjunta Uffizi + Corridoio Vasariano, no reembolsable; prioridad absoluta. Uffizi 2 horas antes de la franja del Corredor, reunión sala D19 con 5 minutos de anticipación, visita guiada en grupo de ~45 min y salida por Palazzo Pitti (sin acceso incluido a Pitti/Boboli). Precio anticipado de referencia €47 (≈ $975 MXN), sujeto a revisión para 2027. Coordinar Santa Croce por la tarde.",
+          "description": "Miércoles 19 mayo: reservar entrada nominativa Uffizi + Corridoio Vasariano cuando se habilite. Acceso a Uffizi 2 h antes de la franja del Corredor; reunión en sala indicada y salida hacia Palazzo Pitti, sin entrada incluida a Pitti/Boboli. Santa Croce después, o jueves 20 como respaldo.",
           "links": [
             {
               "label": "Uffizi · Corridoio Vasariano y entradas",
@@ -822,7 +821,7 @@
         },
         {
           "title": "Duomo y Libreria Piccolomini (Siena)",
-          "description": "Lunes 12 abril 2027: visita de Duomo y Libreria Piccolomini tras Piazza del Campo. Confirmar horario oficial 2027, celebraciones y tipo de entrada. OPA SI PASS solo si se visitan otros museos del complejo; autobús 131R sujeto a paradas temporales.",
+          "description": "Lunes 17 mayo 2027: Catedral y Libreria Piccolomini tras Piazza del Campo. Confirmar horarios litúrgicos, entradas y último acceso de mayo; línea 131R sujeta a desvíos de parada.",
           "links": [
             {
               "label": "Opera Duomo Siena · horarios oficiales",
@@ -972,7 +971,7 @@
               "refunds": "Consultar condiciones de transporte de Trenord."
             }
           ],
-          "notes": "Referencia consultada para 01/11/2026, NO horario confirmado para 09/05/2027: salidas T1 19:11→20:07 (MXP 2971), 19:41→20:37 (MXP 2973, objetivo sujeto a migración), 20:11→21:07 (MXP 2975, respaldo), 20:41→21:37 y 21:11→22:07; todos directos, 56 min y €15 (≈ $311 MXN). Vuelo cotizado llega 18:20. Billete válido para un viaje durante el día indicado y sin validación adicional si se compra por web/app Trenord. No reservar horario fijo antes de conocer demoras migratorias. VALIDACIÓN: boleto digital web/app Trenord/Malpensa Express, sin convalidación física. Mostrar billete en móvil; si se compra otra modalidad comprobar su regla específica. Si pierde la fecha de validez, comprar nuevo boleto. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Malpensa Express directo T1 → Milano Centrale. Referencias de noviembre 2026 para frecuencia y €15; horario real domingo 9 mayo 2027 pendiente, seleccionar tren según migración y equipaje.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1039,7 +1038,7 @@
               "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 10/05/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Ida independiente; el precio indicado corresponde solo a la ida. Billete de tren reservado: respetar servicio y condiciones de modificación; electrónico no exige estampado físico. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Referencias históricas 2026 para comparar duración y precios; horario, condiciones y tarifa del martes 11 mayo 2027 pendientes. La visita al Museo Egizio se hace el martes, no lunes.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1074,7 +1073,7 @@
               "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 10/05/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Ida independiente; el precio indicado corresponde solo a la ida. Billete de tren reservado: respetar servicio y condiciones de modificación; electrónico no exige estampado físico. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Referencias históricas 2026 para comparar duración y precios; horario, condiciones y tarifa del martes 11 mayo 2027 pendientes. La visita al Museo Egizio se hace el martes, no lunes.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1109,7 +1108,7 @@
               "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 10/05/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. La opción C sale antes de A: alternativa económica previa, NO respaldo si se pierde A. Ida independiente; el precio indicado corresponde solo a la ida. Billete regional digital: activación automática según reglas de Trenitalia; papel: convalidar antes de abordar. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Referencias históricas 2026 para comparar duración y precios; horario, condiciones y tarifa del martes 11 mayo 2027 pendientes. La visita al Museo Egizio se hace el martes, no lunes.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1179,7 +1178,7 @@
               "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 10/05/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Regreso independiente; el precio indicado corresponde solo a la vuelta. Billete de tren reservado: respetar servicio y condiciones de modificación; electrónico no exige estampado físico. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Referencias históricas 2026 para comparar duración y precios; horario, condiciones y tarifa del martes 11 mayo 2027 pendientes. La visita al Museo Egizio se hace el martes, no lunes.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1214,7 +1213,7 @@
               "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 10/05/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Regreso independiente; el precio indicado corresponde solo a la vuelta. Billete regional digital: activación automática según reglas de Trenitalia; papel: convalidar antes de abordar. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Referencias históricas 2026 para comparar duración y precios; horario, condiciones y tarifa del martes 11 mayo 2027 pendientes. La visita al Museo Egizio se hace el martes, no lunes.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1249,7 +1248,7 @@
               "refunds": "Consultar reglas del operador"
             }
           ],
-          "notes": "Horarios y precios observados para lunes 02/11/2026, NO confirmados para 10/05/2027. Billete propio por operador y servicio; alternativas requieren boleto válido. Regreso independiente; el precio indicado corresponde solo a la vuelta. Billete regional digital: activación automática según reglas de Trenitalia; papel: convalidar antes de abordar. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Referencias históricas 2026 para comparar duración y precios; horario, condiciones y tarifa del martes 11 mayo 2027 pendientes. La visita al Museo Egizio se hace el martes, no lunes.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1319,7 +1318,7 @@
               "refunds": "Según tarifa; no comprobado"
             }
           ],
-          "notes": "OPCIÓN A recomendada: tren directo sin transbordos, IC 665 12:10–15:21, 3 h 11 min, desde €21,90 (≈ $454 MXN) según búsqueda de jueves 05/11/2026. Validación: billete electrónico Intercity con tren/plaza asignados; mostrar código/QR y documento al control, no pasar por máquina de convalidación de regionales. Si se pierde, verificar cambios permitidos; si no cubre otro tren, comprar nuevo boleto. Referencia NO confirmada para jueves 13/05/2027, no comprado. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "OPCIÓN A recomendada: tren directo sin transbordos, IC 665 12:10–15:21, 3 h 11 min, desde €21,90 (≈ $454 MXN) según búsqueda de jueves 05/11/2026. Validación: billete electrónico Intercity con tren/plaza asignados; mostrar código/QR y documento al control, no pasar por máquina de convalidación de regionales. Si se pierde, verificar cambios permitidos; si no cubre otro tren, comprar nuevo boleto. Referencia NO confirmada para jueves 13/05/2027, no comprado. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1354,7 +1353,7 @@
               "refunds": "Pendiente de ver tarifa y condiciones"
             }
           ],
-          "notes": "OPCIÓN B: sale 30 min después de A, llega 17:20 y exige 1 cambio (estación y combinación por comprobar antes de comprar). Precio desde €58,80 (≈ $1,220 MXN). No usar el ticket Trenitalia del A para embarcar en Italo: comprar billete válido si fuera necesario. Referencia 05/11/2026, sin confirmar para abril 2027. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "OPCIÓN B: sale 30 min después de A, llega 17:20 y exige 1 cambio (estación y combinación por comprobar antes de comprar). Precio desde €58,80 (≈ $1,220 MXN). No usar el ticket Trenitalia del A para embarcar en Italo: comprar billete válido si fuera necesario. Referencia 05/11/2026, sin confirmar para abril 2027. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1389,7 +1388,7 @@
               "refunds": "Pendiente de ver tarifa y condiciones"
             }
           ],
-          "notes": "OPCIÓN C: salida posterior de respaldo 13:40, llegada 18:20, 1 cambio pendiente de detallar, desde €55,80 (≈ $1,157 MXN). El ticket de A/B no cubre automáticamente C; comprar nuevo boleto válido si no permite modificación. Referencia 05/11/2026, no confirmada para mayo de 2027. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "OPCIÓN C: salida posterior de respaldo 13:40, llegada 18:20, 1 cambio pendiente de detallar, desde €55,80 (≈ $1,157 MXN). El ticket de A/B no cubre automáticamente C; comprar nuevo boleto válido si no permite modificación. Referencia 05/11/2026, no confirmada para mayo de 2027. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1438,7 +1437,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "ATC línea P",
-                  "service": "Referencia viernes 06/11/2026; origen del servicio 08:18 Piazza Martiri"
+                  "service": "Servicio de referencia 2026, NO confirmado para sábado 15 mayo 2027."
                 }
               ]
             },
@@ -1451,7 +1450,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "ATC Esercizio · línea P",
-                  "service": "Referencia viernes 06/11/2026, no confirmada para abril 2027"
+                  "service": "Servicio de referencia 2026, NO confirmado para sábado 15 mayo 2027."
                 }
               ]
             }
@@ -1478,7 +1477,7 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 08:55 → Portovenere 09:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 14/05/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción A: Portovenere 16:55 → Via Chiodo Giardini 17:32 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3 (≈ $62 MXN)/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50 (≈ $52 MXN)/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Línea P, referencia ATC de noviembre 2026 para precio y duración. Viaje efectivo sábado 15 mayo 2027: horarios, parada, validación y servicio por confirmar; no utilizar las salidas del viernes como horarios definitivos.",
           "quotedAt": "2026-10-27",
           "priceMultiplier": 2
         },
@@ -1497,7 +1496,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "ATC línea P",
-                  "service": "Referencia viernes 06/11/2026; origen del servicio 08:48 Sarzana"
+                  "service": "Servicio de referencia 2026, NO confirmado para sábado 15 mayo 2027."
                 }
               ]
             },
@@ -1510,7 +1509,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "ATC Esercizio · línea P",
-                  "service": "Referencia viernes 06/11/2026, no confirmada para abril 2027"
+                  "service": "Servicio de referencia 2026, NO confirmado para sábado 15 mayo 2027."
                 }
               ]
             }
@@ -1537,7 +1536,7 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 09:25 → Portovenere 10:00 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 14/05/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción B: Portovenere 17:25 → Via Chiodo Giardini 18:02 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3 (≈ $62 MXN)/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50 (≈ $52 MXN)/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Línea P, referencia ATC de noviembre 2026 para precio y duración. Viaje efectivo sábado 15 mayo 2027: horarios, parada, validación y servicio por confirmar; no utilizar las salidas del viernes como horarios definitivos.",
           "quotedAt": "2026-10-27",
           "priceMultiplier": 2
         },
@@ -1556,7 +1555,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "ATC línea P",
-                  "service": "Referencia viernes 06/11/2026; origen del servicio 09:18 Sarzana"
+                  "service": "Servicio de referencia 2026, NO confirmado para sábado 15 mayo 2027."
                 }
               ]
             },
@@ -1569,7 +1568,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "ATC Esercizio · línea P",
-                  "service": "Referencia viernes 06/11/2026, no confirmada para abril 2027"
+                  "service": "Servicio de referencia 2026, NO confirmado para sábado 15 mayo 2027."
                 }
               ]
             }
@@ -1596,7 +1595,7 @@
               "refunds": null
             }
           ],
-          "notes": "Via Chiodo Portici 09:55 → Portovenere 10:30 (35 min), comprobado con las paradas del servicio mostradas por el usuario para el viernes 06/11/2026. Referencia solamente; reconfirmar horarios para 14/05/2027 y avisos de obras/lanzadera en Cavo. Precio, regreso y poste de embarque exacto pendientes. Regreso opción C: Portovenere 17:55 → Via Chiodo Giardini 18:32 (37 min), según parada verificada de servicio de referencia 06/11/2026. Billete app DropTicket: La Spezia → Fascia 0–22 km €3 (≈ $62 MXN)/trayecto, se activa automáticamente AL COMPRAR; pagar poco antes de embarcar y mostrar al conductor. Billete papel código 03: €2.50 (≈ $52 MXN)/trayecto tarifa referencial publicada, validar al subir. Ida parada Via Chiodo Portici; vuelta bajar Via Chiodo Giardini. Revisar precio abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Línea P, referencia ATC de noviembre 2026 para precio y duración. Viaje efectivo sábado 15 mayo 2027: horarios, parada, validación y servicio por confirmar; no utilizar las salidas del viernes como horarios definitivos.",
           "quotedAt": "2026-10-27",
           "priceMultiplier": 2
         }
@@ -1730,7 +1729,7 @@
               "refunds": null
             }
           ],
-          "notes": "Sábado 10 mayo de 2027: excursión ferroviaria desde La Spezia Centrale, siguiendo Riomaggiore → Manarola → Vernazza; Monterosso opcional. Comparar billetes por trayecto con Cinque Terre Treno Card según precio y reglas del día; no asumir horario, frecuencia ni tarifa publicados para 2026. Sin caminatas entre pueblos ni Via dell’Amore obligatorias. Referencia contrastada: sábado 31/10/2026, La Spezia Centrale → Riomaggiore: 07:50–07:56 5 Terre Express 22902 (€8 (≈ $166 MXN)), 08:12–08:20 Regionale 12218 (€8 (≈ $166 MXN)), 08:20–08:26 5 Terre Express 22904 (€8 (≈ $166 MXN)). Horarios NO confirmados para sábado 15/05/2027. Valorar primero Cinque Terre Treno MS Card: viajes regionales ilimitados entre La Spezia y Levanto en 2.ª clase durante validez; tarifa diaria publicada 2026: €22 (≈ $456 MXN)/€29,50 (≈ $612 MXN)/€35 (≈ $726 MXN) según afluencia, precio abril 2027 pendiente. Con 4 trayectos a €8 (≈ $166 MXN) serían €32 (≈ $664 MXN), con 5 €40 (≈ $830 MXN). Tarjeta nominativa, mostrar documento. Billetes regionales digitales activación automática; físicos, convalidar antes de abordar cuando corresponda. Segundo tramo Riomaggiore → Manarola, referencia sábado 31/10/2026: A) Regionale 12222 10:24–10:26, B) 5 Terre Express 22912 10:28–10:30, C) 5 Terre Express 22914 11:03–11:05; €8 (≈ $166 MXN) por viaje individual en captura. A y B muy próximas: respaldo útil para prolongar visita es C (11:03). No horarios confirmados abril 2027. Tercer tramo Manarola → Vernazza, referencia sábado 31/10/2026: A) 5 Terre Express 22924 13:32–13:40; B) Regionale 5 Terre Express 12288 14:02–14:10; C) 5 Terre Express 22928 14:32–14:40. Todos directos, €8 (≈ $166 MXN) individuales según captura. No confirmados para 15/05/2027; comprobar cobertura de Cinque Terre Treno MS Card. Cuarto tramo OPCIONAL Vernazza → Monterosso, referencia sábado 31/10/2026: A) 5 Terre Express 22936 16:42–16:45; B) 5 Terre Express 22938 17:12–17:15; C) 5 Terre Express 22940 17:42–17:45; €8 (≈ $166 MXN) cada billete individual. Solo si queda energía, luz y tiempo para el último regreso a La Spezia. No confirmado para abril 2027. Regreso con Monterosso, sábado de referencia 31/10/2026: A) Regionale 12237 18:21–18:48 (€8 (≈ $166 MXN)); B) 5 Terre Express 22943 18:42–19:05 (€8 (≈ $166 MXN)); C) 5 Terre Express 22945 19:13–19:40 (€8 (≈ $166 MXN)). Regreso SIN Monterosso desde Vernazza: A) 5 Terre Express 22939 17:46–18:05 (€8 (≈ $166 MXN)); B) 5 Terre Express 22941 18:18–18:40 (€8 (≈ $166 MXN)); C) 5 Terre Express 22943 18:46–19:05 (€8 (≈ $166 MXN)). Solo fechas de referencia de 2026; reconfirmar para 15/05/2027. Tren IC 673 de Monterosso 19:07–19:21 (€8,50 (≈ $176 MXN)) NO está incluido en tarjeta regional Cinque Terre Treno MS Card. Billetes regionales digitales se validan automáticamente según tipo; papel debe convalidarse antes del embarque. Presupuesto provisional de tarjeta €22 (≈ $456 MXN) (banda mínima publicada en 2026, NO garantizada en abril 2027); costo real podría subir a €29.50 (≈ $612 MXN) o €35 (≈ $726 MXN) o más; revisar precio del día. La tarjeta cubre trayectos regionales elegibles, no Intercity. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1842,7 +1841,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22902",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -1859,7 +1858,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1877,7 +1876,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · Regionale 12218",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -1894,7 +1893,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -1912,7 +1911,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22904",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -1929,7 +1928,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -1984,7 +1983,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · Regionale 12222",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2001,7 +2000,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2019,7 +2018,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22912",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2036,7 +2035,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2054,7 +2053,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22914",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2071,7 +2070,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2122,7 +2121,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22924",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2139,7 +2138,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2157,7 +2156,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · Regionale Express 12288",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2174,7 +2173,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2192,7 +2191,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22928",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2209,7 +2208,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2260,7 +2259,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22939",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2277,7 +2276,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2295,7 +2294,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22941",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2312,7 +2311,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2330,7 +2329,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22943",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2347,7 +2346,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2402,7 +2401,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22936",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2419,7 +2418,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Ruta opcional: usar solamente si se visita Monterosso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2437,7 +2436,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22938",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2454,7 +2453,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Ruta opcional: usar solamente si se visita Monterosso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2472,7 +2471,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22940",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2489,7 +2488,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Ruta opcional: usar solamente si se visita Monterosso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2540,7 +2539,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · Regionale 12237",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2557,7 +2556,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Ruta opcional: usar solamente si se visita Monterosso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2575,7 +2574,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22943",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2592,7 +2591,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Ruta opcional: usar solamente si se visita Monterosso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2610,7 +2609,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · 5 Terre Express 22945",
-                  "service": "Referencia 31/10/2026; no confirmado 2027"
+                  "service": "Referencia de 2026, NO horario confirmado para viernes 14 mayo 2027."
                 }
               ]
             }
@@ -2627,7 +2626,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia sábado 31/10/2026; reconfirmar horario y tarifa para sábado 15/05/2027. No es una reserva. El precio €8 (≈ $166 MXN) es un billete individual comparativo; NO se añade al presupuesto mientras se contemple la Cinque Terre Treno MS Card. Ruta opcional: usar solamente si se visita Monterosso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Viernes 14 mayo 2027: horario, precios y tarjeta ferroviaria por confirmar. Tarifas y servicios de 2026 mostrados solo como referencias; la ruta principal Riomaggiore → Manarola → Vernazza, con Monterosso opcional. No sumar boletos individuales al costo de tarjeta.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2707,7 +2706,7 @@
               "refunds": "Según tarifa seleccionada"
             }
           ],
-          "notes": "A: 09:28–10:39, 1 h 11 min, 1 transbordo, €13,60 (≈ $282 MXN) desde, combinación IC 651 + Regionale 18707. Es la llegada más práctica sin madrugar tanto, pero hay que revisar estación y margen del transbordo en Detalles. Para Intercity digital no se convalida físicamente; regional digital con validación automática, papel debe sellarse antes de embarcar. Referencia domingo 01/11/2026, no confirmada para domingo 16/05/2027. La captura ampliada recibida muestra la combinación 08:16–09:39 (Frecciabianca 8605 → Regionale 18649) con transbordo en Viareggio de 08:46 a 09:15 (29 min); es una candidata distinta de A 09:28–10:39 y no se sustituye sin revisar sus detalles. VERIFICADO EN RFI: IC651 llega Viareggio 10:09 en horario de domingo/festivo y R18707 sale 10:15; solamente 6 minutos de transbordo. MUY AJUSTADO: riesgo elevado si hay retraso, equipaje o cambio de andén. El Regionale 18707 es servicio adicional específicamente anunciado para 31/10 y 01/11/2026 por obras y NO se puede asumir que exista en abril 2027. Preferir conexión con margen >=20 minutos cuando se publiquen horarios reales. Fuente RFI https://www.rfi.it/it/news-e-media/infomobilita/avvisi/2026/10/28/linee-pisa-lucca-aulla--viareggio-lucca-firenze--roma-pisa--la-s.html . Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "A: 09:28–10:39, 1 h 11 min, 1 transbordo, €13,60 (≈ $282 MXN) desde, combinación IC 651 + Regionale 18707. Es la llegada más práctica sin madrugar tanto, pero hay que revisar estación y margen del transbordo en Detalles. Para Intercity digital no se convalida físicamente; regional digital con validación automática, papel debe sellarse antes de embarcar. Referencia domingo 01/11/2026, no confirmada para domingo 16/05/2027. La captura ampliada recibida muestra la combinación 08:16–09:39 (Frecciabianca 8605 → Regionale 18649) con transbordo en Viareggio de 08:46 a 09:15 (29 min); es una candidata distinta de A 09:28–10:39 y no se sustituye sin revisar sus detalles. VERIFICADO EN RFI: IC651 llega Viareggio 10:09 en horario de domingo/festivo y R18707 sale 10:15; solamente 6 minutos de transbordo. MUY AJUSTADO: riesgo elevado si hay retraso, equipaje o cambio de andén. El Regionale 18707 es servicio adicional específicamente anunciado para 31/10 y 01/11/2026 por obras y NO se puede asumir que exista en abril 2027. Preferir conexión con margen >=20 minutos cuando se publiquen horarios reales. Fuente RFI https://www.rfi.it/it/news-e-media/infomobilita/avvisi/2026/10/28/linee-pisa-lucca-aulla--viareggio-lucca-firenze--roma-pisa--la-s.html . Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2741,7 +2740,7 @@
               "refunds": "Según condiciones regionales"
             }
           ],
-          "notes": "B: 09:21–11:14, 1 h 53 min y 1 cambio, €10,80 (≈ $224 MXN); salida 7 minutos ANTES de A: alternativa de compra previa, no respaldo posterior si se pierde A. Confirmar detalles del transbordo. Referencia 2026. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "B: 09:21–11:14, 1 h 53 min y 1 cambio, €10,80 (≈ $224 MXN); salida 7 minutos ANTES de A: alternativa de compra previa, no respaldo posterior si se pierde A. Confirmar detalles del transbordo. Referencia 2026. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2775,7 +2774,7 @@
               "refunds": "Según tarifa elegida"
             }
           ],
-          "notes": "C: 10:17–11:33, 1 h 16 min, 1 cambio; respaldo de salida posterior si se pierde A, previa compra de billete válido. Estación y margen del cambio pendientes de verificar. Referencia 2026. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "C: 10:17–11:33, 1 h 16 min, 1 cambio; respaldo de salida posterior si se pierde A, previa compra de billete válido. Estación y margen del cambio pendientes de verificar. Referencia 2026. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2801,7 +2800,7 @@
           "secondTrain": "Regionale 18649",
           "start": "La Spezia Centrale 08:16",
           "end": "Lucca 09:39",
-          "note": "Detalle facilitado en captura del usuario. Masa Centro 08:34–08:36 y Massarosa-Bozzano 09:22–09:23 son paradas intermedias, no transbordos. Servicio de 2026; no confirmado para abril 2027."
+          "note": "Detalle facilitado en captura del usuario. Masa Centro 08:34–08:36 y Massarosa-Bozzano 09:22–09:23 son paradas intermedias, no transbordos. Servicio de 2026; no confirmado para mayo 2027."
         },
         {
           "referenceDate": "2026-11-01",
@@ -2855,7 +2854,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · Regionale 19029",
-                  "service": "Referencia domingo 01/11/2026, NO confirmado para abril 2027"
+                  "service": "Referencia domingo 01/11/2026, no confirmado para mayo 2027"
                 }
               ]
             }
@@ -2872,7 +2871,7 @@
               "refunds": "Según condiciones del operador"
             }
           ],
-          "notes": "Tren directo sin transbordos. Horarios y tarifa de referencia domingo 01/11/2026, pendientes de confirmar para 16/05/2027. Billete digital regional: validación automática según condiciones actuales; billete en papel: convalidar en máquina de estación antes de subir. El ticket de una opción no garantiza uso de otra; verificar cambios o comprar otro billete válido. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Tren directo sin transbordos. Horarios y tarifa de referencia domingo 01/11/2026, pendientes de confirmar para 16/05/2027. Billete digital regional: validación automática según condiciones actuales; billete en papel: convalidar en máquina de estación antes de subir. El ticket de una opción no garantiza uso de otra; verificar cambios o comprar otro billete válido. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2890,7 +2889,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · Regionale 19061",
-                  "service": "Referencia domingo 01/11/2026, NO confirmado para abril 2027"
+                  "service": "Referencia domingo 01/11/2026, no confirmado para mayo 2027"
                 }
               ]
             }
@@ -2907,7 +2906,7 @@
               "refunds": "Según condiciones del operador"
             }
           ],
-          "notes": "Tren directo sin transbordos. Horarios y tarifa de referencia domingo 01/11/2026, pendientes de confirmar para 16/05/2027. Billete digital regional: validación automática según condiciones actuales; billete en papel: convalidar en máquina de estación antes de subir. El ticket de una opción no garantiza uso de otra; verificar cambios o comprar otro billete válido. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Tren directo sin transbordos. Horarios y tarifa de referencia domingo 01/11/2026, pendientes de confirmar para 16/05/2027. Billete digital regional: validación automática según condiciones actuales; billete en papel: convalidar en máquina de estación antes de subir. El ticket de una opción no garantiza uso de otra; verificar cambios o comprar otro billete válido. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -2925,7 +2924,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Trenitalia · Regionale 19063",
-                  "service": "Referencia domingo 01/11/2026, NO confirmado para abril 2027"
+                  "service": "Referencia domingo 01/11/2026, no confirmado para mayo 2027"
                 }
               ]
             }
@@ -2942,7 +2941,7 @@
               "refunds": "Según condiciones del operador"
             }
           ],
-          "notes": "Tren directo sin transbordos. Horarios y tarifa de referencia domingo 01/11/2026, pendientes de confirmar para 16/05/2027. Billete digital regional: validación automática según condiciones actuales; billete en papel: convalidar en máquina de estación antes de subir. El ticket de una opción no garantiza uso de otra; verificar cambios o comprar otro billete válido. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Tren directo sin transbordos. Horarios y tarifa de referencia domingo 01/11/2026, pendientes de confirmar para 16/05/2027. Billete digital regional: validación automática según condiciones actuales; billete en papel: convalidar en máquina de estación antes de subir. El ticket de una opción no garantiza uso de otra; verificar cambios o comprar otro billete válido. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -2991,7 +2990,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Autolinee Toscane · 131R",
-                  "service": "Horario laboral no sábado del PDF oficial válido desde 05/10/2026; NO confirmado para abril 2027"
+                  "service": "Horario laboral no sábado del PDF oficial válido desde 05/10/2026; no confirmado para mayo 2027"
                 }
               ]
             },
@@ -3004,7 +3003,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Autolinee Toscane · 131R",
-                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para abril 2027"
+                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para mayo 2027"
                 }
               ]
             }
@@ -3021,7 +3020,7 @@
               "refunds": null
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 07:45 Firenze Autostazione → 09:00 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 17/05/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 17:50 → Firenze Autostazione 19:05; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 (≈ $226 MXN) por viaje; €21.80 (≈ $452 MXN) dos viajes sencillos, sujeto a reconfirmación abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 07:45 Firenze Autostazione → 09:00 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 17/05/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 17:50 → Firenze Autostazione 19:05; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 (≈ $226 MXN) por viaje; €21.80 (≈ $452 MXN) dos viajes sencillos, sujeto a reconfirmación abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27",
           "priceMultiplier": 2
         },
@@ -3040,7 +3039,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Autolinee Toscane · 131R",
-                  "service": "Horario laboral no sábado del PDF oficial válido desde 05/10/2026; NO confirmado para abril 2027"
+                  "service": "Horario laboral no sábado del PDF oficial válido desde 05/10/2026; no confirmado para mayo 2027"
                 }
               ]
             },
@@ -3053,7 +3052,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Autolinee Toscane · 131R",
-                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para abril 2027"
+                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para mayo 2027"
                 }
               ]
             }
@@ -3070,7 +3069,7 @@
               "refunds": null
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:10 Firenze Autostazione → 09:25 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 17/05/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:00 → Firenze Autostazione 19:17; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 (≈ $226 MXN) por viaje; €21.80 (≈ $452 MXN) dos viajes sencillos, sujeto a reconfirmación abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:10 Firenze Autostazione → 09:25 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 17/05/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:00 → Firenze Autostazione 19:17; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 (≈ $226 MXN) por viaje; €21.80 (≈ $452 MXN) dos viajes sencillos, sujeto a reconfirmación abril 2027. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27",
           "priceMultiplier": 2
         },
@@ -3089,7 +3088,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Autolinee Toscane · 131R",
-                  "service": "Horario laboral no sábado del PDF oficial válido desde 05/10/2026; NO confirmado para abril 2027"
+                  "service": "Horario laboral no sábado del PDF oficial válido desde 05/10/2026; no confirmado para mayo 2027"
                 }
               ]
             },
@@ -3102,7 +3101,7 @@
                   "departure": null,
                   "arrival": null,
                   "operator": "Autolinee Toscane · 131R",
-                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para abril 2027"
+                  "service": "Lunes 02/11/2026 referencia, tabla oficial Feriale escluso Sabato; reconfirmar para mayo 2027"
                 }
               ]
             }
@@ -3119,7 +3118,7 @@
               "refunds": null
             }
           ],
-          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:50 Firenze Autostazione → 10:05 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 17/05/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:20 → Firenze Autostazione 19:37; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 (≈ $226 MXN) por viaje; €21.80 (≈ $452 MXN) dos viajes sencillos, sujeto a reconfirmación abril 2027. AT avisa que la salida rápida de 08:50 desde Autostazione se efectúa en Via Orti Oricellari; comprobar hora real de paso en parada temporal. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Horarios de ida del PDF oficial 131R invierno 2026–27: 08:50 Firenze Autostazione → 10:05 Siena Via Tozzi; servicios laborales excluido sábado. Para lunes 17/05/2027, confirmar cambios de parada en Firenze, validez del horario escolar, tarifas, billete y convalidación. Regreso pendiente de selección y cotización. PDF oficial: https://rd-sftp-data.s3.eu-west-1.amazonaws.com/autolineeToscane/IVU/OUTPUT/TIMETABLES_WINTER/R/131R.pdf Compra práctica: app at bus, billete extraurbano veloce Firenze–Siena, activar con Usa/Use al abordar y mostrar QR; comprobar paradas temporales, PDF horario y regreso. Enlace directo: https://www.at-bus.it/en/app Regreso referencia Siena Via Tozzi 18:20 → Firenze Autostazione 19:37; horario del PDF 131R, laboral excluido sábado. Opción anterior adicional 17:40→18:57. Tarifa mostrada por buscador AT para Firenze Autostazione→Siena Via Tozzi €10.90 (≈ $226 MXN) por viaje; €21.80 (≈ $452 MXN) dos viajes sencillos, sujeto a reconfirmación abril 2027. AT avisa que la salida rápida de 08:50 desde Autostazione se efectúa en Via Orti Oricellari; comprobar hora real de paso en parada temporal. El presupuesto contabiliza dos billetes sencillos, ida y regreso. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027.",
           "quotedAt": "2026-10-27",
           "priceMultiplier": 2
         }
@@ -3213,7 +3212,7 @@
               "refunds": null
             }
           ],
-          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 21/05/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027. Salida recomendada viernes 21 mayo en torno a 12:30–13:30; confirmación pendiente. No reutilizar la hora de abril.",
+          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 21/05/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027. Salida recomendada viernes 21 mayo en torno a 12:30–13:30; confirmación pendiente. No reutilizar la hora de abril.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -3247,7 +3246,7 @@
               "refunds": null
             }
           ],
-          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 21/05/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027. Salida recomendada viernes 21 mayo en torno a 12:30–13:30; confirmación pendiente. No reutilizar la hora de abril.",
+          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 21/05/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027. Salida recomendada viernes 21 mayo en torno a 12:30–13:30; confirmación pendiente. No reutilizar la hora de abril.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -3281,7 +3280,7 @@
               "refunds": null
             }
           ],
-          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 21/05/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027. Salida recomendada viernes 21 mayo en torno a 12:30–13:30; confirmación pendiente. No reutilizar la hora de abril.",
+          "notes": "Horario y precio del viernes 06/11/2026 usados como referencia para 21/05/2027; confirmar horario/tarifa cuando se abra la venta. Billete nominativo o con reserva de tren específico; billetes Italo y Trenitalia no son intercambiables. Para el vuelo internacional MXP 23:05 dejar tiempo para trasbordo en Milano Centrale y llegar al aeropuerto alrededor de 18:30–19:30. Comprobar andén en estación. Horarios y tarifas reproducidos como referencias de 2026 (no vigentes para mayo 2027); NO confirmados para mayo 2027. Salida recomendada viernes 21 mayo en torno a 12:30–13:30; confirmación pendiente. No reutilizar la hora de abril.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -3350,7 +3349,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia viernes 06/11/2026. Conecta con opción A Firenze–Milano en unos 35 min (si ambos trenes circulan puntuales). Reserva independiente: tren posterior no garantizado en caso de retraso. Confirmar servicio 21/05/2027, terminal del vuelo, validez temporal y condiciones del billete. Trenord digital adquirido en web/app: sin estampado en validadora; mostrar billete conforme a las reglas vigentes. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Malpensa Express desde Milano Centrale a MXP T1. Salir con holgura, preferentemente llegar al aeropuerto 16:00–17:30 del viernes 21 mayo 2027. Referencias de horario y precio noviembre 2026; no tren reservado.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -3384,7 +3383,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia viernes 06/11/2026. Conecta con opción B Firenze–Milano en unos 35 min (si ambos trenes circulan puntuales). Reserva independiente: tren posterior no garantizado en caso de retraso. Confirmar servicio 21/05/2027, terminal del vuelo, validez temporal y condiciones del billete. Trenord digital adquirido en web/app: sin estampado en validadora; mostrar billete conforme a las reglas vigentes. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Malpensa Express desde Milano Centrale a MXP T1. Salir con holgura, preferentemente llegar al aeropuerto 16:00–17:30 del viernes 21 mayo 2027. Referencias de horario y precio noviembre 2026; no tren reservado.",
           "quotedAt": "2026-10-27"
         },
         {
@@ -3418,7 +3417,7 @@
               "refunds": null
             }
           ],
-          "notes": "Referencia viernes 06/11/2026. Conecta con opción C Firenze–Milano en unos 35 min (si ambos trenes circulan puntuales). Reserva independiente: tren posterior no garantizado en caso de retraso. Confirmar servicio 21/05/2027, terminal del vuelo, validez temporal y condiciones del billete. Trenord digital adquirido en web/app: sin estampado en validadora; mostrar billete conforme a las reglas vigentes. Horarios y tarifas reproducidos como referencias de 2026/abril 2027; NO confirmados para mayo 2027.",
+          "notes": "Malpensa Express desde Milano Centrale a MXP T1. Salir con holgura, preferentemente llegar al aeropuerto 16:00–17:30 del viernes 21 mayo 2027. Referencias de horario y precio noviembre 2026; no tren reservado.",
           "quotedAt": "2026-10-27"
         }
       ],
@@ -3847,7 +3846,7 @@
         "currency": "EUR"
       },
       "status": "estimated",
-      "notes": "Estimación hotel 3 estrellas €7 (≈ $145 MXN)/noche ×4; verificar clasificación y hotel, ordenanza municipal 2026."
+      "notes": "Estimación €7 por noche × 4, confirmar impuesto turístico vigente mayo 2027 y clase hotelera."
     },
     {
       "id": "tax-la-spezia",
@@ -3859,7 +3858,7 @@
         "currency": "EUR"
       },
       "status": "estimated",
-      "notes": "Provisión €3 (≈ $62 MXN)/noche ×3, NO tarifa oficial confirmada para establecimiento concreto; confirmar en hotel y ordenanza 2027."
+      "notes": "€2.50 por noche × 3 según referencia del alojamiento; confirmar tasa 2027."
     },
     {
       "id": "tax-firenze",
@@ -3871,7 +3870,7 @@
         "currency": "EUR"
       },
       "status": "estimated",
-      "notes": "Referencia hotel 3 estrellas €6 (≈ $124 MXN)/noche ×5; verificar clase del hotel y ordenanza 2027."
+      "notes": "Estimación €6 por noche × 5, confirmar impuesto turístico vigente mayo 2027."
     },
     {
       "id": "local-mobility",
@@ -3883,7 +3882,7 @@
         "currency": "EUR"
       },
       "status": "estimated",
-      "notes": "Estimación global 14 días, no cotización; no incluye trenes/buses interurbanos ya registrados."
+      "notes": "Provisión €45, transporte urbano; no confundir con trenes principales, incluidos aparte."
     },
     {
       "id": "bag-storage-lucca",
