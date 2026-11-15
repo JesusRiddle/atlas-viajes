@@ -104,20 +104,20 @@ const assert = require('node:assert/strict');
       // Los viajes actuales forman la portada; los históricos siguen en el archivo de ideas.
       const featuredCards = page.locator('#viajes .tripcard');
       const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
-      assert.equal(await featuredCards.count(), 7, 'La portada muestra seis viajes presupuestados y el borrador de Suiza verde');
-      assert.equal(await ideaCards.count(), allDestinations.length - 7, 'Todos los viajes históricos deben permanecer accesibles');
+      assert.equal(await featuredCards.count(), 8, 'La portada muestra Orlando 2026 y los siete viajes principales anteriores');
+      assert.equal(await ideaCards.count(), allDestinations.length - 8, 'Todos los viajes históricos deben permanecer accesibles');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
-      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 6,
+      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 7,
         'La comparativa no debe confundir ideas históricas con viajes terminados');
       const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
       assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
       assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
       const people = await page.locator('#comparar .comparison-table tbody tr').evaluateAll(rows =>
         rows.map(row => row.cells[5].textContent.trim()));
-      assert.deepEqual(people, ['1', '1', '1', '1', '1', '2'], 'Cinco viajes individuales y Patagonia para dos');
+      assert.deepEqual(people, ['1', '1', '1', '1', '1', '1', '2'], 'Orlando y cinco viajes individuales, más Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
       assert.deepEqual(topIds, [
-        '#viaje/colombia-2027', '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
+        '#viaje/orlando-2026', '#viaje/colombia-2027', '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
         '#viaje/suiza-verde-2027', '#viaje/japon-2027', '#viaje/patagonia-argentina-2027'
       ]);
       assert.ok(!(await page.locator('#ideas-viajes').innerText()).includes('Presupuesto estimado por persona'),
@@ -139,7 +139,7 @@ const assert = require('node:assert/strict');
         const navigationCount = await page.locator('.subnav a[href*="#viaje/' + id + '/"]').count();
         assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
         // Contrato editorial del Panorama: tres indicadores a la izquierda, clima separado a la derecha.
-        if (['suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
+        if (['orlando-2026', 'suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
           'japon-2027', 'patagonia-argentina-2027'].includes(id)) {
           const indicators = page.locator('#plan .overview-intro .practical-indicator');
           assert.equal(await indicators.count(), 3, id + ' debe tener exactamente tres indicadores');
