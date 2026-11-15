@@ -20,7 +20,7 @@ return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 <div class="trip-map-intro">
 <div class="trip-map-heading">${icon}<span>EXPLORA TU DESTINO</span></div>
 <h3 class="trip-map-title" id="map-title">Tu viaje en el mapa.</h3>
-<p class="trip-map-description">Explora las ciudades del recorrido en el mapa interactivo.</p>
+<p class="trip-map-description">Ubica dónde dormirás y los lugares que visitarás durante el viaje.</p>
 </div>
 
 </div>
