@@ -63,7 +63,8 @@ window.AtlasMajorTransport = (() => {
         MEX: 'Ciudad de México',
         MAD: 'Madrid-Barajas',
         MXP: 'Milano Malpensa',
-        BLQ: 'Bologna Marconi'
+        BLQ: 'Bologna Marconi',
+        MCO: 'Orlando International'
     };
     const airportLabel = code => {
         const name = airportNames[code];
@@ -222,13 +223,33 @@ window.AtlasMajorTransport = (() => {
             (transport.links?.length ? '<div class="entity-links">' + transport.links.map(link => '<a href="' + esc(link.url) + '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + '</a>').join('') + '</div>' : '') +
             '</div></details>';
     }
+    // Conexiones terrestres informativas; sus provisiones monetarias viven SOLO en expenses.
+    function groundConnections(trip) {
+        if (!Array.isArray(trip.groundConnections) || !trip.groundConnections.length) return '';
+        const cards = trip.groundConnections.map(connection => {
+            const days = (connection.days || []).map(day => 'Día ' + String(day).padStart(2, '0')).join(' y ');
+            const links = (connection.links || []).map(link =>
+                '<a href="' + esc(link.url) + '" target="_blank" rel="noopener noreferrer">' + esc(link.label) + '</a>').join('');
+            return '<details class="mt-card mt-ground-card" data-ground-connection="' + esc(connection.id) + '">' +
+                '<summary><span class="mt-kind">' + transportKind(connection.id.includes('universal') || connection.id.includes('epic') ? 'bus' : 'default') + '</span>' +
+                '<span class="mt-route"><strong>' + esc(connection.title) + '</strong><small>' + esc(days + ' · ' + connection.mode) + '</small></span>' +
+                '<span class="mt-price"><strong>' + esc(connection.costLabel) + '</strong><small>Ya considerado en Presupuesto</small></span>' +
+                '<span class="mt-chevron" aria-hidden="true">⌄</span></summary>' +
+                '<div class="mt-details"><p class="mt-note">' + esc(connection.description) + '</p>' +
+                '<div class="entity-links">' + links + '</div></div></details>';
+        }).join('');
+        return '<div class="mt-ground-connections"><h3>Conexiones terrestres por jornada.</h3>' +
+            '<p>Horarios publicados sujetos a cambios y costos de aplicaciones sin cotizar. Las provisiones ya están incluidas en el presupuesto; estas fichas no se suman nuevamente.</p>' +
+            '<div class="mt-list">' + cards + '</div></div>';
+    }
     function render(trip) {
         if (!trip.majorTransport?.length) return '';
         const current = selections.get(trip.id);
         return '<section class="major-transport" id="traslados" aria-label="Traslados principales">' +
             '<div class="mt-heading"><span class="mt-kicker mt-kicker-icon"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="15" rx="3"/><path d="M5 10h14M8 14h2m4 0h2M8 21l2-3m6 3-2-3"/></svg> Movilidad y conexiones</span>' +
-            '<h2>Traslados principales.</h2><p>Compara las alternativas, tarifas y condiciones de tus vuelos y trenes.</p></div>' +
+            '<h2>Traslados principales.</h2><p>' + (trip.groundConnections?.length ? 'Vuelos, transporte al hotel, shuttles y acceso a los parques; separa servicios gratuitos y costos estimados.' : 'Compara las alternativas, tarifas y condiciones de tus vuelos y trenes.') + '</p></div>' +
             '<div class="mt-list">' + trip.majorTransport.map(item => card(trip, item, current)).join('') + '</div>' +
+            groundConnections(trip) +
             '<p class="mt-footnote">Los importes de referencia no son reservas. Las tarifas futuras pendientes se muestran sin inventar precios.</p>' +
             (Array.isArray(trip.railSummary) && trip.railSummary.length ?
                 '<details class="mt-tickets mt-pass-comparison"><summary>Comparar pases, descuentos y billetes</summary><ul>' +
