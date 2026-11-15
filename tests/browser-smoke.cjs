@@ -174,6 +174,30 @@ const assert = require('node:assert/strict');
           assert.ok(region.climate.y >= region.budget.y,
             id + ' tarjeta Clima y luz debe seguir al presupuesto');
         }
+        if (id === 'orlando-2026') {
+          const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
+          assert.equal(tripData.mapPoints.length, 5, 'Orlando: un hotel y cuatro parques en el mapa');
+          assert.deepEqual(tripData.mapPoints.map(point => point.order), [1,2,3,4,5], 'Orlando: orden cronológico');
+          assert.equal(tripData.mapPoints.filter(point => point.base).length, 1, 'Orlando: único alojamiento');
+          assert.equal(tripData.mapPoints[0].stayName, 'Orlando', 'Orlando: 5 noches conectadas al alojamiento');
+          assert.ok(tripData.mapPoints.slice(1).every(point => point.kind === 'Parque temático'));
+          const mapList = page.locator('#mapa .map-city-list li');
+          assert.equal(await mapList.count(), 5, 'Orlando: cinco marcadores accesibles');
+          const captions = await mapList.locator('.map-city-stay').allInnerTexts();
+          assert.deepEqual(captions, ['5 noches', 'Excursión', 'Excursión', 'Excursión', 'Excursión'],
+            'Orlando: estancia visible y visitas sin noches inventadas');
+          const names = await mapList.locator('.map-city-name').allInnerTexts();
+          assert.deepEqual(names, [
+            '1. Rosen Inn Closest to Universal',
+            '2. Universal Studios Florida',
+            '3. Universal Islands of Adventure',
+            '4. Magic Kingdom',
+            '5. Universal Epic Universe'
+          ], 'Orlando: las ubicaciones siguen cada jornada');
+          const mapDescription = await page.locator('#mapa .trip-map-description').innerText();
+          assert.match(mapDescription, /dónde dormirás y los lugares/, 'Mapa: lugares no solo ciudades');
+          assert.doesNotMatch(await page.locator('#mapa').innerText(), /Noches por definir|referencia regional/i);
+        }
         if (id === 'colombia-2027') {
           const photoCatalog = JSON.parse(fs.readFileSync('data/places.json','utf8'));
           const tripData = JSON.parse(fs.readFileSync('data/trips/colombia-2027.json','utf8'));
