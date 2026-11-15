@@ -698,18 +698,6 @@
       "notes": "Colchón estimado; el shuttle gratuito Rosen–Universal no debe presupuestarse como gasto."
     },
     {
-      "id": "orlando-food",
-      "category": "food",
-      "concept": "Comidas y bebidas · seis días",
-      "date": "2026-12-02",
-      "cost": {
-        "amount": 290,
-        "currency": "USD"
-      },
-      "status": "estimated",
-      "notes": "Provisión orientativa US$250–330 por 1 viajero; no incluye compras especiales ni bebidas alcohólicas."
-    },
-    {
       "id": "orlando-incidentals",
       "category": "misc",
       "concept": "Imprevistos menores",
@@ -720,14 +708,137 @@
       },
       "status": "estimated",
       "notes": "Reserva orientativa US$50–100; no comprende Express Pass, souvenirs, varita interactiva ni seguro médico."
+    },
+    {
+      "id": "orlando-food-1",
+      "category": "food",
+      "concept": "Alimentación · día 1 · 2026-12-02",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": 30,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Llegada vespertina: cena e hidratación; desayuno previo al vuelo a cargo del viajero, no contabilizado aquí. Provisión diaria, no cotización ni gasto pagado."
+    },
+    {
+      "id": "orlando-food-2",
+      "category": "food",
+      "concept": "Alimentación · día 2 · 2026-12-03",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 55,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno sencillo, comida Leaky Cauldron y cena/colaciones en parque. Provisión diaria, no cotización ni gasto pagado."
+    },
+    {
+      "id": "orlando-food-3",
+      "category": "food",
+      "concept": "Alimentación · día 3 · 2026-12-04",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 55,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno, comida Three Broomsticks, bebidas y cena. Provisión diaria, no cotización ni gasto pagado."
+    },
+    {
+      "id": "orlando-food-4",
+      "category": "food",
+      "concept": "Alimentación · día 4 · 2026-12-05",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 65,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno, comida y cena en Magic Kingdom; sábado con margen para refrigerios. Provisión diaria, no cotización ni gasto pagado."
+    },
+    {
+      "id": "orlando-food-5",
+      "category": "food",
+      "concept": "Alimentación · día 5 · 2026-12-06",
+      "date": "2026-12-06",
+      "cost": {
+        "amount": 60,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno, pausa temática en Epic, cena ligera; no incluye comidas premium ni bebidas alcohólicas. Provisión diaria, no cotización ni gasto pagado."
+    },
+    {
+      "id": "orlando-food-6",
+      "category": "food",
+      "concept": "Alimentación · día 6 · 2026-12-07",
+      "date": "2026-12-07",
+      "cost": {
+        "amount": 25,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno y comida ligera antes de salir a MCO; ninguna cena en Orlando. Provisión diaria, no cotización ni gasto pagado."
+    },
+    {
+      "id": "orlando-universal-tax",
+      "category": "taxes",
+      "concept": "Impuesto provisional sobre SUBTOTAL Universal, pendiente de total del carrito",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 21.84,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Cálculo de contingencia de 6.5% × US$335.99 = US$21.84, asumiendo que el subtotal no incluye este impuesto; NO se ha confirmado tratamiento fiscal en el checkout. Sustituir por la cifra real del carrito y eliminar si el precio ya lo incluye. No aplicar impuesto adicional al Rosen (sus US$539.94 ya incluyen US$59.99 de impuestos) ni al boleto Disney antes de conocer su total."
+    },
+    {
+      "id": "orlando-travel-insurance",
+      "category": "other",
+      "concept": "Seguro médico de viaje · opción recomendada, sin cotizar",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": null,
+        "currency": "USD"
+      },
+      "status": "pending",
+      "optional": true,
+      "notes": "Seguro para urgencias médicas en EE. UU. no comprado; cotizar cobertura y exclusiones antes de decidir; NO incluido en subtotal ni en importe confirmado."
+    },
+    {
+      "id": "orlando-baggage-extras",
+      "category": "other",
+      "concept": "Volaris · equipaje o selección de asiento adicional",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": null,
+        "currency": "MXN"
+      },
+      "status": "pending",
+      "optional": true,
+      "notes": "No se sabe si la tarifa de $7,015 incluye pieza de cabina y condiciones necesarias; gastos extra NO incluidos en la cotización hasta ver la tarifa exacta."
+    },
+    {
+      "id": "orlando-express-extras",
+      "category": "other",
+      "concept": "Lightning Lane Disney / Universal Express · opcionales",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": null,
+        "currency": "USD"
+      },
+      "status": "pending",
+      "optional": true,
+      "notes": "Pases rápidos no contratados ni presupuestados; no indispensables y no incluir como gasto obligatorio."
     }
   ],
   "budgetPreliminary": true,
   "budgetRange": [
-    37000,
-    40000
+    39000,
+    44000
   ],
-  "budgetNote": "Escenario Rosen Inn: vuelo $7,015 MXN; alojamiento US$539.94 (≈ $10,053 MXN); Universal US$335.99 (≈ $6,256 MXN) (subtotal del carrito); MCO↔Rosen provisión US$95.00 (≈ $1,769 MXN); Rosen↔Disney US$70.00 (≈ $1,303 MXN); respaldo de transporte US$40.00 (≈ $745 MXN); comidas US$290.00 (≈ $5,399 MXN); imprevistos US$80.00 (≈ $1,490 MXN). Subtotal de partidas con importe introducido: US$1,450.93 (≈ $27,015 MXN) más vuelo $7,015 MXN = ≈ $34,030 MXN ANTES de Magic Kingdom. El intervalo de $37,000 a $40,000 MXN incluye un colchón de variación y no es un precio cerrado: los importes comprobados de capturas son vuelo, alojamiento y subtotal Universal; traslados, comidas e imprevistos siguen siendo estimaciones. Magic Kingdom NO está cotizado; se proyecta aparte US$180–240 (≈ $3351–4469 MXN) SOLO para construir rango, no se duplica en gastos. No incluye equipaje adicional, seguro, pases Express, regalos ni varita. Terra Luna por US$1577.46 (≈ $29,370 MXN) es alternativa excluyente (hotel + tickets); nunca sumar junto a Rosen y boleto individual.",
+  "budgetNote": "Presupuesto de una persona para 2–7/12/2026, Plan A Rosen Inn y boleto Universal un parque/día: las partidas con importe suman US$1472.77 + $7015.00 MXN = ≈ $34,436.21 MXN, SIN Magic Kingdom. Incluye vuelo cotizado $7,015 MXN, hotel US$539.94 (IMPUESTOS incluidos), Universal US$335.99 como SUBTOTAL sin confirmar impuestos, provisión fiscal Universal US$21.84 (6.5% hipotético, no confirmada), MCO↔Rosen US$95, Rosen↔Disney US$70, transporte de respaldo US$40 (una sola bolsa compartida), alimentación US$290 desglosada en seis días e imprevistos US$80. La entrada Magic Kingdom permanece SIN COTIZAR ni comprada, provisional US$180–240 para escenarios: ≈ $37,787.59–$38,904.72 MXN de total ilustrativo después de sumar esta provisión, sin seguro, equipaje extra ni pase rápido. Rango prudente de planeación $39,000–$44,000 MXN que deja margen ante variaciones de precio, tipo de cambio y compras menores, no es total cobrado ni garantiza cubrir extras mayores. Por separado: seguro médico, equipaje, varita, souvenirs y Express no están cotizados. Terra Luna US$1,577.46 es alternativa EXCLUYENTE hotel+Universal, nunca sumar junto a Rosen y boleto individual. Conversión $18.6188 MXN/USD publicada en DOF 13/11/2026; tasa efectiva bancaria puede variar.",
   "ticketNotes": [
     {
       "title": "Volaris · tarifa y equipaje",
@@ -910,9 +1021,17 @@
     {
       "label": "Disney · programación navideña diurna",
       "url": "https://disneyworld.disney.go.com/events-tours/holidays/"
+    },
+    {
+      "label": "Banxico · tipo de cambio publicado DOF 13/11/2026 (18.6188 MXN/USD)",
+      "url": "https://sidof.segob.gob.mx/notas/getNewsletter/13-11-2026/Matutina/330805"
+    },
+    {
+      "label": "Banxico · tabla FIX 13/11/2026",
+      "url": "https://www.banxico.org.mx/tipcamb/tipCamMIAction.do?idioma=sp"
     }
   ],
-  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. El precio de Magic Kingdom para 5/12 sigue sin cotizar. Park-to-Park desde US$357 + impuestos NO representa precio para fechas específicas.",
+  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. El precio de Magic Kingdom para 5/12 sigue sin cotizar. Park-to-Park desde US$357 + impuestos NO representa precio para fechas específicas. Presupuesto auditado 15/11/2026: Banxico DOF 13/11 publica 18.6188 MXN/USD, diferente de FIX determinado 13/11 18.5525; fecha atribuida correctamente. Universal impuesto +6.5% solo estimación matemática provisional, no comprobante. Disney sin cotización y sin total cerrado.",
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
     "reservationNote": "Una persona, 2–7 de diciembre de 2026. Ninguna compra ni reserva está confirmada. Las capturas del 15/11/2026 sirven como referencia, no garantizan tarifas actuales. Antes de pagar: verificar vuelo y hotel; confirmar si el boleto Universal seguirá siendo un parque por día o se cambiará a Park-to-Park; adquirir entrada independiente de Magic Kingdom. Los pases rápidos y transportes de pago son decisiones separadas."
@@ -945,11 +1064,11 @@
     "USD": 18.6188
   },
   "exchangeRateSnapshot": {
-    "date": "2026-11-15",
+    "date": "2026-11-13",
     "baseCurrency": "MXN",
-    "description": "Tipo de cambio de referencia Banxico, pesos mexicanos por dólar estadounidense, observación 15/11/2026; conversión orientativa.",
+    "description": "Referencia USD→MXN de $18.6188 por US$1: tipo de cambio publicado por Banco de México en el Diario Oficial de la Federación el viernes 13/11/2026. No es el FIX determinado el domingo 15 (día inhábil); el FIX determinado el viernes 13 fue $18.5525. Se conserva el valor anterior como tasa orientativa para comparar las capturas y NO como tasa bancaria garantizada.",
     "sources": {
-      "USD": "https://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CF102&locale=en&sector=19"
+      "USD": "https://sidof.segob.gob.mx/notas/getNewsletter/13-11-2026/Matutina/330805"
     }
   },
   "seasonality": {
