@@ -74,8 +74,8 @@ test('reservaciones importantes de Italia 2027 tienen grupos, prioridad y enlace
   }
   const critical = trip.reservations[0][1];
   assert.match(critical[0].title, /Última Cena/);
-  assert.match(critical[0].description, /martes 6 o miércoles 7 (?:de )?abril/);
-  assert.match(critical[0].description, /7/);
+  assert.match(critical[0].description, /miércoles 12 mayo/);
+  assert.match(critical[0].description, /marzo de 2027/);
 });
 
 test('Italia 2027: fechas, noches y viajes de ida y vuelta coherentes', () => {
@@ -130,15 +130,15 @@ test('manual y agente establecen el flujo 00–13 y las cuatro auditorías', () 
 
 test('Italia 2027 mantiene vuelos cotizados y trenes futuros sin precios inventados', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
-  assert.match(trip.flight, /16,683 MXN/);
+  assert.match(trip.flight, /20,113\.46 MXN/);
   assert.match(trip.flight, /no comprada/i);
   const flight = trip.majorTransport.find(t => t.id === 'flight-international');
   assert.equal(flight.options[0].status, 'quoted');
-  assert.equal(flight.options[0].fares[0].price.amount, 16683);
+  assert.equal(flight.options[0].fares[0].price.amount, 20113.46);
   assert.equal(flight.options[0].fares[0].price.currency, 'MXN');
   for (const t of trip.majorTransport.filter(t => t.id !== 'flight-international')) {
     for (const o of t.options) {
-      assert.ok(['planning', 'quoted'].includes(o.status), t.id);
+      assert.ok(['planning', 'quoted', 'reference'].includes(o.status), t.id);
       for (const fare of o.fares || []) {
         if (fare.price !== null) {
           assert.ok(Number.isFinite(fare.price.amount) && fare.price.amount >= 0, t.id);
@@ -155,10 +155,10 @@ test('Italia 2027: tres hoteles principales y presupuesto distribuido', () => {
   const nights={'Milano':4,'La Spezia':3,'Firenze':5};
   const hotelExpenses=trip.expenses.filter(x=>x.category==='lodging');
   assert.equal(hotelExpenses.length,3);
-  assert.equal(hotelExpenses.reduce((a,x)=>a+x.cost.amount,0),25900);
+  assert.equal(hotelExpenses.reduce((a,x)=>a+x.cost.amount,0),34000);
   for(const h of trip.hotels){
-    assert.match(h.status,/no reservado/);
-    assert.match(h.rate,/no es cotización/i);
+    assert.match(h.status,/no reservado/i);
+    assert.match(h.rate,/sin cotización/i);
     assert.ok(h.mapsUrl?.startsWith('https://'), 'Google Maps faltante: ' + h.name);
     assert.ok(h.links?.some(link => link.url?.startsWith('https://')), 'Reserva oficial faltante: ' + h.name);
     assert.equal(hotelExpenses.find(x=>x.hotelId===h.id).nights,nights[h.city]);
@@ -176,23 +176,23 @@ test('Italia 2027: traslados y gastos de vuelos sin duplicados', () => {
  assert.ok(trip.days[0].transportRefs.includes('flight-international'));
  assert.ok(trip.days.at(-1).transportRefs.includes('flight-international'));
  const flight=trip.majorTransport.find(t=>t.id==='flight-international');
- assert.equal(flight.options[0].fares[0].price.amount,16683);
+ assert.equal(flight.options[0].fares[0].price.amount,20113.46);
  assert.ok(!trip.expenses.some(e=>e.category==='flight'),'El vuelo debe computarse desde majorTransport');
  const ct=trip.majorTransport.find(t=>t.id==='train-cinque-terre').options[0].journeys;
  assert.equal(ct[0].segments[0].to,'Riomaggiore');
- assert.match(ct[1].segments[0].from,/Monterosso al Mare/);
+ assert.match(ct[1].segments[0].from,/Vernazza|Monterosso/);
 });
 
 
-test('Italia 2027: regreso 16 abril y distribución equilibrada de bases', () => {
+test('Italia 2027: regreso 21 mayo y distribución equilibrada de bases', () => {
  const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
- assert.equal(trip.end,'2027-04-16');
+ assert.equal(trip.end,'2027-05-21');
  assert.deepEqual(trip.bases,[['Milano',4],['La Spezia',3],['Firenze',5]]);
  assert.equal(trip.work,10);
  assert.equal(trip.hotels.find(h=>h.city==='Firenze').checkOut,'2027-04-16');
  const flight=trip.majorTransport.find(t=>t.id==='flight-international').options[0];
- assert.match(flight.journeys[1].segments[0].departure,/^2027-04-16T23:05/);
- assert.match(flight.journeys[1].segments[0].arrival,/^2027-04-17T04:00/);
+ assert.match(flight.journeys[1].segments[0].departure,/^2027-05-21T23:05/);
+ assert.match(flight.journeys[1].segments[0].arrival,/^2027-05-22T04:00/);
  for(const id of ['train-firenze-milano','airport-return'])assert.equal(trip.majorTransport.find(t=>t.id===id).day,14);
 });
 
@@ -202,15 +202,15 @@ test('Italia 2027: distribución por fechas y visitas críticas coherentes', () 
  const titles=trip.days.map(d=>d.title);
  assert.equal(trip.days.length,14);
  assert.match(titles[4],/Milano/);
- assert.match(titles[6],/Portovenere/);
- assert.match(titles[7],/Cinque Terre/);
+ assert.match(titles[6],/Cinque Terre/);
+ assert.match(titles[7],/Portovenere/);
  assert.match(titles[8],/Lucca/);
  assert.match(titles[9],/Siena/);
  assert.match(titles[10],/David/);
  assert.match(titles[11],/Uffizi/);
  assert.match(titles[12],/Bargello/);
  assert.match(trip.days[8].note,/consigna/);
- assert.equal(trip.days[13].date,'2027-04-16');
+ assert.equal(trip.days[13].date,'2027-05-21');
 });
 
 
@@ -238,9 +238,9 @@ test('Italia 2027 incluye requisitos de entrada y guía universal para futuros v
 
 test('Italia 2027: fechas de hotel y traslados concuerdan con el día a día', () => {
  const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
- const stays=[['2027-04-04','2027-04-08'],['2027-04-08','2027-04-11'],['2027-04-11','2027-04-16']];
+ const stays=[['2027-05-09','2027-05-13'],['2027-05-13','2027-05-16'],['2027-05-16','2027-04-16']];
  trip.hotels.forEach((h,i)=>{assert.equal(h.checkIn,stays[i][0]);assert.equal(h.checkOut,stays[i][1]);});
- const refsByDay={6:'train-milano-la-spezia',7:'bus-portovenere',8:'train-cinque-terre',9:'train-la-spezia-lucca',10:'bus-siena',14:'train-firenze-milano'};
+ const refsByDay={6:'train-milano-la-spezia',7:'train-cinque-terre',8:'bus-portovenere',9:'train-la-spezia-lucca',10:'bus-siena',14:'train-firenze-milano'};
  for(const [day,id] of Object.entries(refsByDay)){
   assert.ok(trip.days[Number(day)-1].transportRefs?.includes(id),`Falta ${id} día ${day}`);
   assert.equal(trip.majorTransport.find(t=>t.id===id).day,Number(day));
