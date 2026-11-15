@@ -241,7 +241,7 @@ const assert = require('node:assert/strict');
             'Orlando: piso de planeación');
           assert.match(budgetText, /44[,.]000[,.]00/,
             'Orlando: techo de planeación');
-          assert.match(budgetText, /Magic Kingdom NO está cotizado/,
+          assert.match(budgetText, /Magic Kingdom.*SIN COTIZAR/,
             'Orlando: advertencia comercial visible');
           assert.match(budgetText, /6\.5% hipotético/,
             'Orlando: no presentar impuesto teórico como pagado');
