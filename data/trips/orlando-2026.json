@@ -255,50 +255,58 @@
       "Prioridad muy alta",
       [
         {
-          "title": "Volaris MEX–MCO directo · 2 y 7 de diciembre",
-          "description": "Captura del 15/11/2026: ida 2/12 11:10–15:18, regreso 7/12 17:05–19:45, redondo $7,015 MXN para un adulto. Es cotización visual, NO comprado; comprobar vigencia y cargos por equipaje de cabina antes de reservar.",
+          "title": "Volaris directo · 2 dic ida y 7 dic regreso",
+          "description": "Cotización de captura 15/11/2026 SIN COMPRAR: MEX→MCO el 2/12 11:10–15:18 y MCO→MEX el 7/12 17:05–19:45. Total redondo mostrado $7,015 MXN, 1 adulto, no precio actual verificado. Antes de reservar confirmar tasa final, tarifa exacta, equipaje personal/cabina/documentado, cambios y reembolsos.",
           "links": [
             {
-              "label": "Volaris · compra oficial",
+              "label": "Volaris · tarifa y compra",
               "url": "https://www.volaris.com/"
             }
           ]
         },
         {
-          "title": "Universal 3-Day, 3-Park · 3, 4 y 6 de diciembre",
-          "description": "Cotización de carrito aportada 15/11/2026: US$335.99 (≈ $6,256 MXN) (subtotal mostrado). Un parque distinto cada día: Studios Florida, Islands of Adventure y Epic Universe; vigencia de 7 días desde 3/12. No Park-to-Park ni Hogwarts Express. Verificar total final al pagar; sin comprar.",
+          "title": "Rosen Inn Closest to Universal · 2–7 dic, 5 noches",
+          "description": "Plan A elegido, SIN RESERVAR: Deluxe Double flexible, 1 adulto. Captura 15/11/2026: US$479.95 habitación + US$59.99 impuestos = US$539.94 (≈ $10,053 MXN); sin resort fee según cotización. Verificar total final, fecha límite de cancelación, condiciones de cobro y posibles depósitos. Check-in 16:00, check-out 11:00; titular presenta pasaporte físico y tarjeta a su nombre. No incluye boleto a parques.",
           "links": [
             {
-              "label": "Universal · compra de entradas",
-              "url": "https://www.universalorlando.com/web/en/us/tickets-packages/offers/ticketoffer"
-            }
-          ]
-        },
-        {
-          "title": "Rosen Inn Closest to Universal · 2–7 de diciembre",
-          "description": "Plan A cotizado sin comprar: 5 noches, 1 adulto, Deluxe Double, tarifa flexible, US$539.94 (≈ $10,053 MXN) con impuestos según captura. Verificar política de cancelación antes de pagar. Terra Luna alternativo: paquete hotel + tres parques Universal por US$1577.46 (≈ $29,370 MXN); NO acumular.",
-          "links": [
-            {
-              "label": "Rosen Inn oficial",
+              "label": "Rosen Inn · oficial",
               "url": "https://www.roseninn6327.com/"
             },
             {
-              "label": "Universal Terra Luna · hotel oficial",
-              "url": "https://www.universalorlando.com/web/en/us/places-to-stay"
+              "label": "Rosen · FAQ de check-in",
+              "url": "https://www.roseninn6327.com/faq"
             }
           ]
         },
         {
-          "title": "Magic Kingdom · sábado 5 de diciembre",
-          "description": "Entrada regular de un día, tarifa y disponibilidad PENDIENTES. La fiesta navideña privada NO está programada el sábado 5 (sí 3/4/6); consultar horario y espectáculo de esa fecha antes de comprar. La entrada Disney es independiente de Universal.",
+          "title": "Universal · 3 días, 3 parques (3, 4 y 6 dic)",
+          "description": "Plan A de entradas, SIN COMPRAR: captura del carrito 15/11/2026, US$335.99 (≈ $6,256 MXN) como SUBTOTAL; vigencia de siete días desde el 3/12 según carrito. Studios Florida 3/12, Islands of Adventure 4/12 y Epic Universe 6/12, uno por día. NO Park-to-Park ni Hogwarts Express. Oferta pública actual desde US$297 MÁS IMPUESTOS no sustituye esta cotización fechada. Verificar restricciones y total final antes de pagar.",
           "links": [
             {
-              "label": "Disney · entradas oficiales",
+              "label": "Universal · oferta y alternativas",
+              "url": "https://www.universalorlando.com/web/en/us/tickets-packages/offers/ticketoffer"
+            },
+            {
+              "label": "Hogwarts Express · requisito oficial",
+              "url": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express"
+            }
+          ]
+        },
+        {
+          "title": "Magic Kingdom · entrada regular del sábado 5 dic",
+          "description": "Entrada independiente de 1 día y 1 adulto; precio final y disponibilidad PENDIENTES, SIN COMPRAR. Elegir 5/12/2026 y Magic Kingdom en Disney; las tarifas varían por parque y fecha y no son reembolsables. Entrada de día fechado no requiere reserva adicional del parque. Mickey’s Very Merry Christmas Party no se celebra el sábado 5 (sí el 3, 4 y 6). Lightning Lane no está incluido; confirmar horarios y espectáculos.",
+          "links": [
+            {
+              "label": "Disney · seleccionar día y parque",
               "url": "https://disneyworld.disney.go.com/admission/tickets/theme-parks/"
             },
             {
-              "label": "Disney · calendario de fiestas",
+              "label": "Disney · fiestas navideñas 2026",
               "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+            },
+            {
+              "label": "Disney · reglas de reserva",
+              "url": "https://disneyworld.disney.go.com/guest-services/park-reservations/"
             }
           ]
         }
@@ -308,26 +316,67 @@
       "Prioridad alta",
       [
         {
-          "title": "Traslados MCO ↔ Rosen Inn y Rosen ↔ Disney",
-          "description": "Sin reservar. Uber/Lyft o taxi MCO–hotel–MCO: estimación de planificación US$70–120 (≈ $1303–2234 MXN); Rosen–Magic Kingdom redondo US$50–90 (≈ $931–1676 MXN). No presentar estos importes como cotizaciones en vivo. El hotel dispone de shuttle de Universal gratuito con reserva presencial y cupos limitados. Rosen (horario publicado consultado 15/11/2026, sujeto a cambios): hacia Universal Studios/Islands/CityWalk 07:05, 08:15, 09:25 y 10:35; de regreso 17:15, 18:20, 19:25 y 20:30. Hacia Epic Universe 07:15, 08:35, 09:55 y 11:15; regreso 17:25, 18:40, 19:55 y 21:10. Reserva presencial en el mostrador del hotel hasta 30 min antes de salida según cupo; conviene hacerlo el día anterior. Autobús NO cubre entrada anticipada, eventos especiales ni salidas fuera de horario. Confirmar cronograma en recepción al llegar. El FAQ oficial menciona traslado a Disney con tarifa nominal, pero no demuestra que llegue directamente a Magic Kingdom ni su calendario: alternativa por investigar, no sustituye el presupuesto Uber.",
+          "title": "Traslados entre aeropuerto, Rosen Inn y parques",
+          "description": "PENDIENTES: Uber/Lyft o taxi MCO↔Rosen, provisión US$70–120 redondo; Rosen↔Magic Kingdom, US$50–90 redondo. No son tarifas verificadas. Rosen dispone de shuttle GRATUITO programado a Universal/Epic, con aforo y reserva presencial (preferentemente el día previo); no es continuo ni incluye entrada anticipada. El FAQ anuncia shuttles Disney de PAGO, pero no publica ruta, horarios ni precio: consultar recepción; Uber/Lyft sigue como plan principal. No sumar transporte gratuito al presupuesto.",
           "links": [
             {
-              "label": "Rosen · transporte y horarios",
+              "label": "Rosen · shuttle y reserva",
               "url": "https://www.roseninn6327.com/transportation"
             },
             {
-              "label": "Aeropuerto MCO · transporte terrestre",
+              "label": "Rosen · FAQ Disney",
+              "url": "https://www.roseninn6327.com/faq"
+            },
+            {
+              "label": "MCO · transporte",
               "url": "https://orlandoairports.net/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Hogwarts Express · alternativa Park-to-Park antes de comprar",
+          "description": "DECISIÓN ABIERTA, NO seleccionada automáticamente: el tren requiere entrada Park-to-Park entre Studios Florida e Islands of Adventure. Universal anuncia boleto especial 3 días desde US$357 MÁS IMPUESTOS: 2 días Park-to-Park entre esos parques y 1 día en Epic Universe; es precio genérico de partida, NO cotizado para 3/12. Comparar su total fechado contra el total del carrito de US$335.99; NO asumir que la diferencia real es US$21.01. Permite mantener los mismos cuatro días de parques y decidir libremente si vale la pena el tren.",
+          "links": [
+            {
+              "label": "Universal · modalidades",
+              "url": "https://www.universalorlando.com/web/en/us/tickets-packages/offers/ticketoffer"
+            },
+            {
+              "label": "Hogwarts Express · requisitos",
+              "url": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express"
             }
           ]
         },
         {
-          "title": "Prioridades Harry Potter y gestión de filas",
-          "description": "Estudios: Gringotts/Ollivanders. Islands: Hagrid/Forbidden Journey y Hogwarts. Epic: Battle at the Ministry y Le Cirque Arcanus. Sin Express Pass ni entrada anticipada en Rosen; revisar horarios en las apps oficiales. Hogwarts Express descartado por requerir Park-to-Park.",
+          "title": "Terra Luna Resort · paquete alternativo excluyente",
+          "description": "Plan B SIN RESERVAR: cotización capturada 15/11/2026 de US$1,577.46 (≈ $29,370 MXN), total conjunto de cinco noches Standard 2 Queens + entradas promocionales Universal Park-to-Park (3 días + 2 gratis). No es tarifa del hotel por separado. Beneficios y cobertura diferentes al Rosen + entrada individual; comparar únicamente escenarios excluyentes y revisar cancelación y fecha límite de pago.",
           "links": [
             {
-              "label": "Universal · horario oficial",
-              "url": "https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours"
+              "label": "Universal · hoteles",
+              "url": "https://www.universalorlando.com/web/en/us/places-to-stay"
+            },
+            {
+              "label": "Universal · paquetes",
+              "url": "https://www.universalorlando.com/web/en/us/tickets-packages/deals-specials"
+            }
+          ]
+        },
+        {
+          "title": "Lightning Lane Disney y Universal Express · pases opcionales",
+          "description": "NO INCLUIDOS NI PRESUPUESTADOS. Para huéspedes no elegibles para compra anticipada Disney de 7 días, la ventana general de Lightning Lane comienza tres días antes del parque: para el 5/12, desde 2/12 a las 07:00 EST si hay disponibilidad en My Disney Experience. TRON y Seven Dwarfs Mine Train requieren Single Pass, distinto de Multi Pass; precios variables. Universal Express es independiente, sujeto a cobertura por atracción. Ninguno es necesario para entrar ni garantiza visitar todas las atracciones.",
+          "links": [
+            {
+              "label": "Disney · Lightning Lane oficial",
+              "url": "https://disneyworld.disney.go.com/lightning-lane-passes/"
+            },
+            {
+              "label": "Universal · entradas y Express",
+              "url": "https://www.universalorlando.com/web/en/us/tickets-packages"
             }
           ]
         }
@@ -344,7 +393,7 @@
       "checkOut": "2026-12-07",
       "status": "Plan A seleccionado · tarifa cotizada, NO reservado",
       "rate": "Tarifa flexible, habitación Deluxe Double con dos camas dobles; cinco noches del 2 al 7 diciembre, un adulto. US$479.95 (≈ $8936 MXN) antes de impuestos + US$59.99 (≈ $1117 MXN) de impuestos = US$539.94 (≈ $10,053 MXN). Captura del usuario 15/11/2026.",
-      "rateConditions": "Tarifa Best Available Rate seleccionada para comparar; verificar fecha límite exacta de cancelación y reglas de cobro antes de reservar. Sin resort fee según hotel; no incluir desayuno ni entradas. Habitación privada para un adulto.",
+      "rateConditions": "Tarifa Best Available Rate seleccionada para comparar; verificar fecha límite exacta de cancelación y reglas de cobro antes de reservar. Sin resort fee según hotel; no incluir desayuno ni entradas. Habitación privada para un adulto. Check-in oficial desde las 16:00 y check-out a las 11:00; titular con pasaporte físico y tarjeta a su nombre. Confirmar depósito o preautorización.",
       "notes": "Plan A por ahorro significativo frente a paquetes oficiales. Tiene refrigerador, microondas y cafetera. Transporte gratuito a Universal/Epic Universe programado, no continuo; reserva presencial obligatoria, aforo limitado y paradas múltiples. No otorga entrada temprana a parques por ser hotel socio. Traslados MCO y Disney de pago: usar Uber/Lyft como opción principal. El FAQ del hotel menciona shuttles a Disney de pago, sin itinerario ni precio confirmados; preguntar en recepción, no darlos por incluidos.",
       "links": [
         {
@@ -652,10 +701,9 @@
   ],
   "budgetNote": "Escenario Rosen Inn: vuelo $7,015 MXN; alojamiento US$539.94 (≈ $10,053 MXN); Universal US$335.99 (≈ $6,256 MXN) (subtotal del carrito); MCO↔Rosen provisión US$95.00 (≈ $1,769 MXN); Rosen↔Disney US$70.00 (≈ $1,303 MXN); respaldo de transporte US$40.00 (≈ $745 MXN); comidas US$290.00 (≈ $5,399 MXN); imprevistos US$80.00 (≈ $1,490 MXN). Subtotal de partidas con importe introducido: US$1,450.93 (≈ $27,015 MXN) más vuelo $7,015 MXN = ≈ $34,030 MXN ANTES de Magic Kingdom. El intervalo de $37,000 a $40,000 MXN incluye un colchón de variación y no es un precio cerrado: los importes comprobados de capturas son vuelo, alojamiento y subtotal Universal; traslados, comidas e imprevistos siguen siendo estimaciones. Magic Kingdom NO está cotizado; se proyecta aparte US$180–240 (≈ $3351–4469 MXN) SOLO para construir rango, no se duplica en gastos. No incluye equipaje adicional, seguro, pases Express, regalos ni varita. Terra Luna por US$1577.46 (≈ $29,370 MXN) es alternativa excluyente (hotel + tickets); nunca sumar junto a Rosen y boleto individual.",
   "ticketNotes": [
-    "Universal 3-Day, 3-Park, 1 adulto: US$335.99 (≈ $6,256 MXN) como subtotal cotizado en carrito 15/11/2026, validez de 7 días desde 3/12, un día por parque (Studios 3, Islands 4, Epic 6). Confirmar total definitivo antes de pagar.",
-    "Alternativa no seleccionada: paquete Terra Luna hotel+entradas 5 días Park-to-Park por US$1577.46 (≈ $29,370 MXN) todo incluido según captura; no sumar sus tickets al Plan A.",
-    "Hogwarts Express requiere acceso Park-to-Park a Universal Studios Florida y Islands of Adventure; se descarta para no elevar costo.",
-    "Magic Kingdom 5/12 requiere entrada independiente, pendiente de precio. No se visitan Hollywood Studios, EPCOT, Animal Kingdom/Pandora, Kennedy Space Center ni SeaWorld."
+    "En el vuelo Volaris revisar al comprar franquicia de equipaje personal, maleta de cabina y maleta documentada de la tarifa seleccionada, con peso/medidas y costos añadidos. No asumir equipaje de mano incluido.",
+    "Confirmar en recepción el horario vigente, reserva presencial, cupo y paradas del shuttle Rosen–Universal/Epic; no coincide necesariamente con apertura anticipada o espectáculos nocturnos.",
+    "En MCO y Disney usar puntos de recogida autorizados para taxi o Uber/Lyft. Los rangos de presupuesto son provisiones no reservadas."
   ],
   "sources": [
     {
@@ -753,10 +801,37 @@
     {
       "label": "Departamento de Estado EE. UU. · visa de visitante",
       "url": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html"
+    },
+    {
+      "label": "Universal · promociones Park-to-Park",
+      "url": "https://www.universalorlando.com/web/en/us/tickets-packages/offers/ticketoffer"
+    },
+    {
+      "label": "Universal · Hogwarts Express",
+      "url": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express"
+    },
+    {
+      "label": "Disney · fiesta 2026",
+      "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+    },
+    {
+      "label": "Disney · boleto fecha específica",
+      "url": "https://disneyworld.disney.go.com/admission/tickets/theme-parks/"
+    },
+    {
+      "label": "Disney · Lightning Lane",
+      "url": "https://disneyworld.disney.go.com/lightning-lane-passes/"
+    },
+    {
+      "label": "Rosen · FAQ transporte Disney y check-in",
+      "url": "https://www.roseninn6327.com/faq"
     }
   ],
-  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales.",
-  "planningDetails": "Seis días, cinco noches y cuatro días de parques. Harry Potter prioritario en los tres parques Universal; sin Hogwarts Express ni Pandora. Rosen Inn Closest to Universal como alojamiento Plan A, cotizado por 5 noches US$539.94 con impuestos; Universal tres parques/3 días US$335.99 como subtotal en carrito; Volaris $7,015 MXN redondo en captura. Todo SIN COMPRAR. Magic Kingdom entrada aparte pendiente de precio. Transporte aeropuerto/hotel y Disney en rangos estimados; shuttle Rosen–Universal gratis programado con reserva y aforo. Terra Luna US$1,577.46 hotel + Universal es alternativa excluyente. No agregar parques ni noches.",
+  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. El precio de Magic Kingdom para 5/12 sigue sin cotizar. Park-to-Park desde US$357 + impuestos NO representa precio para fechas específicas.",
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Una persona, 2–7 de diciembre de 2026. Ninguna compra ni reserva está confirmada. Las capturas del 15/11/2026 sirven como referencia, no garantizan tarifas actuales. Antes de pagar: verificar vuelo y hotel; confirmar si el boleto Universal seguirá siendo un parque por día o se cambiará a Park-to-Park; adquirir entrada independiente de Magic Kingdom. Los pases rápidos y transportes de pago son decisiones separadas."
+  },
   "climate": "Para el 2–7 de diciembre en Orlando, las normales históricas mensuales rondan 12 a 23 °C (mínima nocturna y máxima diurna). Es una época relativamente seca frente al verano, aunque una lluvia puntual o un frente frío pueden alterar el día; no es un pronóstico para diciembre de 2026.\n\n*Qué llevar:* Playeras y pantalones cómodos en capas, sudadera o chamarra ligera para primeras y últimas horas, impermeable compacto y calzado cómodo para caminar y permanecer de pie. Priorizar ropa y accesorios que quepan en el equipaje permitido por la tarifa Volaris.\n\n*Horas de luz:* Entre el 2 y el 7 de diciembre, el sol sale aproximadamente de 07:01 a 07:05 y se pone hacia las 17:28, horario local de Orlando (EST, UTC−5). Reservar fotos exteriores para la mañana o antes del atardecer; después aprovechar la iluminación navideña. Consultar horarios oficiales de parques y espectáculos, que no dependen del ocaso.",
   "practicalIndicators": [
     {
