@@ -421,6 +421,16 @@ const assert = require('node:assert/strict');
             'Orlando Panorama: no se muestran datos inválidos');
         }
         if (id === 'orlando-2026') {
+          const lodgingTiles = page.locator('#plan .overview-stays .basepill');
+          assert.equal(await lodgingTiles.count(), 1, 'Orlando: una estancia en Panorama');
+          const tileWidth = await lodgingTiles.first().evaluate(node => node.getBoundingClientRect().width);
+          assert.ok(tileWidth <= 251, 'Panorama: la tarjeta de estancia no debe estirarse más de 250px');
+          const experienceTitles = await page.locator('#plan .experience-card-meta span').allInnerTexts();
+          assert.equal(experienceTitles.length, 9, 'Orlando: nueve títulos de experiencias');
+          assert.ok(experienceTitles.every(title => !/\\b\\d{1,2}\\s+(dic|ene|feb|mar|abr|may|jun|jul|ago|sep|oct|nov)/i.test(title)),
+            'Experiencias: no indicar fechas o días de actividad');
+        }
+        if (id === 'orlando-2026') {
           const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           assert.equal(tripData.experiences.length, 9, 'Orlando: nueve experiencias entre cuatro parques');
           assert.equal(await page.locator('#experiencias .experience-card').count(), 9,
