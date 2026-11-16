@@ -739,9 +739,353 @@
       ]
     ]
   ],
-  "exchangeRates": {},
-  "exchangeRateSnapshot": null,
-  "expenses": [],
+  "exchangeRates": {
+    "CHF": 22.12
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-11-16",
+    "baseCurrency": "MXN",
+    "description": "Tipo de cambio de referencia, no tasa de compra.",
+    "sources": {
+      "CHF": "https://wise.com/gb/currency-converter/chf-to-mxn-rate/history/16-11-2026"
+    }
+  },
+  "expenses": [
+    {
+      "id": "lodging-zurich-marta",
+      "category": "lodging",
+      "concept": "Zúrich · Hotel Marta · 2 noches",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 370,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 185 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "zurich-marta",
+      "nights": 2
+    },
+    {
+      "id": "lodging-luzern-waldstaetterhof",
+      "category": "lodging",
+      "concept": "Lucerna · Waldstätterhof · 2 noches",
+      "date": "2027-06-15",
+      "cost": {
+        "amount": 500,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 250 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "luzern-waldstaetterhof",
+      "nights": 2
+    },
+    {
+      "id": "lodging-grindelwald-tschuggen",
+      "category": "lodging",
+      "concept": "Grindelwald · Hotel Tschuggen · 6 noches",
+      "date": "2027-06-17",
+      "cost": {
+        "amount": 930,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 155 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "grindelwald-tschuggen",
+      "nights": 6
+    },
+    {
+      "id": "lodging-zermatt-alphubel",
+      "category": "lodging",
+      "concept": "Zermatt · Hotel Alphubel · 3 noches",
+      "date": "2027-06-23",
+      "cost": {
+        "amount": 555,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 185 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "zermatt-alphubel",
+      "nights": 3
+    },
+    {
+      "id": "lodging-geneva-ibis-airport",
+      "category": "lodging",
+      "concept": "Ginebra · ibis Genève Aéroport · 1 noches",
+      "date": "2027-06-26",
+      "cost": {
+        "amount": 165,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 165 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "geneva-ibis-airport",
+      "nights": 1
+    },
+    {
+      "id": "rail-provision",
+      "category": "transport",
+      "concept": "Trenes SBB, regionales, autobuses y barco Brienz; pase por decidir",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 650,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Hipótesis de planificación: Half Fare CHF 150 + hasta CHF 500 en billetes con descuentos; no garantiza cobertura o tarifa. Swiss Travel Pass CHF 499 + suplementos es alternativa no acumulable."
+    },
+    {
+      "id": "alpine-activities",
+      "category": "activities",
+      "concept": "Remontes alpinos y entradas principales",
+      "date": "2027-06-16",
+      "cost": {
+        "amount": 410,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Provisión bajo hipótesis de descuentos por pase para Titlis, First, Jungfraujoch y asiento, Oeschinensee, Gornergrat, Lindt, Heididorf, Trümmelbach y Giessbach. No incluir opcional Sunnegga. Confirmar billetes reales y descuentos aplicables; posible insuficiencia."
+    },
+    {
+      "id": "meals-01",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-12",
+      "date": "2027-06-12",
+      "cost": {
+        "amount": 10,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-02",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-13",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 35,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-03",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-14",
+      "date": "2027-06-14",
+      "cost": {
+        "amount": 55,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-04",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-15",
+      "date": "2027-06-15",
+      "cost": {
+        "amount": 60,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-05",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-16",
+      "date": "2027-06-16",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-06",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-17",
+      "date": "2027-06-17",
+      "cost": {
+        "amount": 55,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-07",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-18",
+      "date": "2027-06-18",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-08",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-19",
+      "date": "2027-06-19",
+      "cost": {
+        "amount": 60,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-09",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-20",
+      "date": "2027-06-20",
+      "cost": {
+        "amount": 60,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-10",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-21",
+      "date": "2027-06-21",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-11",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-22",
+      "date": "2027-06-22",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-12",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-23",
+      "date": "2027-06-23",
+      "cost": {
+        "amount": 55,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-13",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-24",
+      "date": "2027-06-24",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-14",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-25",
+      "date": "2027-06-25",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-15",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-26",
+      "date": "2027-06-26",
+      "cost": {
+        "amount": 55,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-16",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-27",
+      "date": "2027-06-27",
+      "cost": {
+        "amount": 20,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "insurance",
+      "category": "other",
+      "concept": "Seguro de viaje con asistencia y montaña",
+      "date": "2027-06-12",
+      "cost": {
+        "amount": 120,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. "
+    },
+    {
+      "id": "city-taxes",
+      "category": "taxes",
+      "concept": "Tasas locales de alojamiento",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 70,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Tschuggen publica CHF 5.20/noche y Alphubel CHF 4/noche; provisión aproximada para cinco ciudades. Excluir tasas si la cotización del hotel ya las incorpora."
+    },
+    {
+      "id": "incidentals",
+      "category": "other",
+      "concept": "Artículos esenciales y gastos menores no cubiertos",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 110,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. "
+    },
+    {
+      "id": "contingency",
+      "category": "contingency",
+      "concept": "Margen de imprevistos y variación de tarifas",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 460,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. "
+    }
+  ],
   "majorTransport": [
     {
       "id": "international-flight",
@@ -907,7 +1251,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Tren urbano SBB; seleccionar según llegada real, control migratorio y equipaje.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     },
     {
       "id": "zurich-maienfeld-luzern",
@@ -984,7 +1328,7 @@
       ],
       "ticketGuide": "Cotizar las dos etapas y comparar billetes individuales frente a pase o Saver Day Pass; comprobar posibilidad de paradas intermedias antes de comprar.",
       "notes": "Son DOS traslados del mismo día, NO un billete sencillo de Zúrich a Lucerna. El acceso a Heididorf desde Maienfeld es subida a pie o transporte local por definir; revisar equipaje y reserva de guarda.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     },
     {
       "id": "luzern-titlis",
@@ -1057,7 +1401,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Incluye únicamente tren de ida y vuelta a Engelberg, NO el teleférico Titlis que se cobra aparte.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     },
     {
       "id": "luzern-grindelwald",
@@ -1129,7 +1473,7 @@
       ],
       "ticketGuide": "Luzern–Interlaken Express no exige billete especial ni reserva obligatoria; reserva de asiento opcional de pago. Consultar 2027 y validar continuidad del billete hasta Grindelwald.",
       "notes": "Luzern–Interlaken Express (aprox. 1 h 50 min en servicio actual) y conexión a Grindelwald. Billete normal o pase válido, asiento opcional; no confundir reserva con tarifa de transporte.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     },
     {
       "id": "lauterbrunnen-muerren",
@@ -1202,7 +1546,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "El billete ferroviario cubre solo Grindelwald–Lauterbrunnen ida y vuelta. Trümmelbach y acceso a Mürren (bus/teleférico o tren regional) se cotizan aparte, no se consideran incluidos.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     },
     {
       "id": "grindelwald-first",
@@ -1275,7 +1619,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Se modela como tipo técnico «train» por compatibilidad del Atlas, pero el servicio real es TELECABINA Firstbahn; no tren.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "alpine-activities"
     },
     {
       "id": "brienz-giessbach",
@@ -1366,7 +1710,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Ruta propuesta por tren + barco en ambos sentidos; no incluye funicular Giessbach. Horarios 2027 y disponibilidad de muelle por confirmar; evaluar regreso alternativo por Brienz si mejora conexiones.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     },
     {
       "id": "jungfraujoch",
@@ -1537,7 +1881,7 @@
       ],
       "ticketGuide": "Comprar el itinerario completo de montaña y reserva de asiento separada (obligatoria en junio 2027); comprobar si el pase cubre parte y suplemento de la cima.",
       "notes": "Opción A regreso directo por Eigergletscher; opción B regreso por Kleine Scheidegg–Wengen–Lauterbrunnen–Zweilütschinen. La opción B solo puede utilizarse con tarifa válida y conexiones confirmadas.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "alpine-activities"
     },
     {
       "id": "oeschinensee",
@@ -1610,7 +1954,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Tren ida/vuelta hasta Kandersteg, con transbordos según SBB. Telecabina Kandersteg–Oeschinensee y sendero NO incluidos.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     },
     {
       "id": "grindelwald-zermatt",
@@ -1671,7 +2015,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Ruta ferroviaria regular con transbordos según horario; no utilizar Glacier Express ni Bernina Express. Equipaje de mano, previsión de conexión y caminata al hotel.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     },
     {
       "id": "gornergrat",
@@ -1744,7 +2088,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Tren de cremallera de montaña ida/vuelta; descuentos según pase/tarifa, no viaje gratis con todos los pases. Riffelsee opcional sujeto a accesos.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "alpine-activities"
     },
     {
       "id": "sunnegga",
@@ -1817,7 +2161,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Funicular opcional si hay meteorología favorable; no duplicar con alternativa de recuperar Gornergrat el mismo día.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "alpine-activities"
     },
     {
       "id": "zermatt-geneva",
@@ -1882,7 +2226,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Buscar trenes con transbordo en Visp y, según servicio, ruta por Lausanne. Dormir junto a GVA la noche del 26 para vuelo de las 09:10 del 27. Sin visitar Ginebra por obligación.",
-      "budgetIncludedIn": "pending"
+      "budgetIncludedIn": "rail-provision"
     }
   ],
   "ticketNotes": [
@@ -2171,7 +2515,14 @@
   },
   "lodgingSummary": "14 noches, 5 alojamientos candidatos, ninguno reservado: Zúrich 13–15 junio (2); Lucerna 15–17 (2); Grindelwald 17–23 (6); Zermatt 23–26 (3); Ginebra aeropuerto 26–27 (1). Categoría con baño privado y acceso ferroviario priorizados; tarifas y disponibilidad junio 2027 pendientes.",
   "heroLodgingSummary": "14 noches, 5 alojamientos",
-  "budgetPreliminary": null,
+  "budgetPreliminary": {
+    "low": 118000,
+    "high": 157000,
+    "marginMXN": 20000,
+    "useBudgetRange": true,
+    "referenceFlightMXN": 23300.14,
+    "notes": "Proyección global de una persona, vuelo cotizado sin comprar y resto estimado. Se reserva un fondo de 650 CHF para transporte regular y 410 CHF para remontes y entradas, pero NO hay pase elegido ni tarifas junio 2027 completas. Intervalo de sensibilidad 118 a 157 mil MXN; no garantiza precio ni disponibilidad. Extras opcionales fuera."
+  },
   "hotels": [
     {
       "id": "zurich-marta",
@@ -2423,11 +2774,20 @@
     "https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.html",
     "https://www.sem.admin.ch/dam/en/sd-web/VmF9OQbEilgA/sem-anh01-liste1-e.pdf",
     "https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/",
-    "https://www.consilium.europa.eu/en/policies/entryexit-system/"
+    "https://www.consilium.europa.eu/en/policies/entryexit-system/",
+    "https://www.myswitzerland.com/en-us/planning/transport-accommodation/tickets-public-transport/swiss-travel-pass/",
+    "https://www.jungfrau.ch/en-gb/prices-and-tickets/",
+    "https://www.tschuggen-grindelwald.ch/en/zimmer/",
+    "https://www.hotel-waldstaetterhof.ch/en/zimmer",
+    "https://help.myswitzerland.com/hc/en-us/articles/213130669-How-much-do-lunch-and-dinner-cost-in-a-restaurant",
+    "https://wise.com/gb/currency-converter/chf-to-mxn-rate/history/16-11-2026"
   ],
   "sourceNote": "Clima: referencias de MeteoSwiss y clima suizo por altitud, no pronóstico de junio de 2027. Luz: cálculo astronómico local de Zúrich en junio (CEST, UTC+2). Entrada: SEM Suiza, normativa UE de pasaportes, EES (operativo desde 10 abril 2026) y ETIAS (a noviembre 2026 aún no operativo); verificar de nuevo antes de viajar. Electricidad: Switzerland Tourism, tomas J 230 V/50 Hz.",
-  "budgetRange": null,
-  "budgetNote": "Subtotal verificable: exclusivamente vuelo multidestino Lufthansa/SWISS Economy Light, $23,300.14 MXN para una persona (cotización noviembre de 2026, no comprado). Aún faltan 14 noches de alojamiento, trenes y pases, barcos, teleféricos, entradas, alimentación, seguro, movilidad local y contingencia. No se puede presentar este subtotal como inversión total del viaje. El presupuesto integral se desarrollará en la siguiente etapa.",
+  "budgetRange": [
+    118000,
+    157000
+  ],
+  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,214 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.12 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
@@ -2461,36 +2821,36 @@
   "linkRailInText": false,
   "knownCosts": [
     [
-      "Vuelos multidestino Lufthansa/SWISS · ida y regreso",
-      "$23,300.14 MXN · cotizado, sin comprar"
+      "Vuelo multidestino Lufthansa/SWISS",
+      "$23,300.14 MXN · cotizado noviembre 2026, no comprado"
     ]
   ],
   "costExclusions": null,
   "exchangeNote": null,
   "railSummary": [
     [
-      "Escenario A · Swiss Half Fare Card",
-      "Tarjeta turística válida un mes; precio vigente sujeto a comprobación para junio 2027; NO es cotización del viaje. Obliga a comprar cada trayecto con descuento, generalmente hasta 50 %, según operador. Comparar suma de trenes, barcos y remontes de montaña."
+      "Escenario A · Half Fare Card",
+      "Precio oficial CHF 150 por 1 mes; hipotéticamente CHF 150 + CHF 500 de trenes/buses/barco descontados. Es una provisión, no la selección definitiva."
     ],
     [
-      "Escenario B · Swiss Travel Pass",
-      "Pase consecutivo de 15 días en segunda clase: cubriría del 13 al 27 junio si se activa al llegar. Viajes regulares y Luzern–Interlaken Express incluidos dentro de validez; la mayoría de remontes de montaña solo tienen descuento y Jungfraujoch requiere billete de tramo no cubierto y reserva. Confirmar cobertura por trayecto."
+      "Escenario B · Swiss Travel Pass 15 días",
+      "Tarifa publicada CHF 499 segunda clase, periodo 13–27 junio. Los remontes de montaña pueden requerir billete adicional, descuento o reserva; no sumar Half Fare simultáneamente."
     ],
     [
-      "Escenario C · billetes individuales",
-      "SBB ordinarios y Supersaver/Saver Day Pass según condiciones del día y tramo, más remontes aparte. Billetes promocionales vinculados al servicio y no necesariamente intercambiables ni reembolsables."
+      "Escenario C · individuales",
+      "Billetes completos o Supersaver/Saver Day Pass por fecha y ruta, más gastos de montaña. Solo comparar cuando existan tarifas verificables para todas las jornadas."
     ],
     [
-      "Criterio de decisión",
-      "No sumar simultáneamente pase y billetes cubiertos; comparar (pase + suplementos no cubiertos) frente a (Half Fare Card + billetes rebajados) y (billetes independientes), para las 14 noches y todos los trayectos, ida y vuelta incluidos."
+      "Comparación pendiente",
+      "No hay ganador demostrado: comparar cada ruta, barcos y montaña con y sin descuento. Presupuesto provisional CHF 650 transportes generales + CHF 410 entradas y montaña, sin duplicar fichas informativas."
     ],
     [
-      "Reserva Luzern–Interlaken Express",
-      "Billete ordinario válido, reserva de asiento OPCIONAL con cargo específico; consultar cupos y tarifa de 2027."
+      "Regla de no duplicación",
+      "Los 13 traslados terrestres de majorTransport están cubiertos por provisiones en expenses. El vuelo se suma solo una vez. Sunnegga es opcional y no está costeado."
     ],
     [
       "Reserva Jungfraujoch",
-      "Reserva de asiento OBLIGATORIA en junio de 2027 además del billete; no equivale a un pase ni al viaje ferroviario completo."
+      "Asiento reservado obligatorio del 1 mayo al 31 octubre 2027 además de un billete; la reserva del Luzern–Interlaken Express sigue siendo opcional."
     ]
   ],
   "railTotal": null,
