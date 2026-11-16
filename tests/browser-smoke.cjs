@@ -561,7 +561,9 @@ const assert = require('node:assert/strict');
       await page.goto('http://127.0.0.1:8765/#viaje/italia-norte-2027', { waitUntil: 'domcontentloaded' });
       await page.locator('.subnav-sticky-sentinel').waitFor();
       await page.evaluate(() => window.scrollTo({top:0,behavior:'instant'}));
-      await page.waitForFunction(() => !document.querySelector('.subnav')?.classList.contains('is-stuck'));
+      await page.waitForFunction(() => window.scrollY <= 1 &&
+        !document.querySelector('.subnav')?.classList.contains('is-stuck') &&
+        getComputedStyle(document.querySelector('.subnav .subnav-home')).display === 'none');
       const stickyHome = page.locator('.subnav .subnav-home');
       assert.equal(await stickyHome.getAttribute('href'), '#inicio');
       assert.equal(await stickyHome.isVisible(), false, 'El logo no debe duplicarse antes del scroll');
