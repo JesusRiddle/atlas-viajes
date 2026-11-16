@@ -80,6 +80,12 @@
 - **No hay cotización reproducible de junio 2027 para una persona, 14 noches, impuestos y cancelación.** No se inventaron totales ni se registraron gastos ficticios. Antes de marcar auditoría financiera B como cerrada, obtener tarifas o supuestos explícitos en Presupuesto.
 - Validación estructural de fechas, ID, links y suma de noches; pruebas reales Node/CI y visual Desktop/Mobile pendientes.
 
+## Corrección de cabecera y Panorama · 2026-11-16
+- Corregido contrato `practicalIndicators`: ahora tres registros con `id`, `title`, `text`, `badge` y `tone`, en orden style/language/entry; antes `type`/`description` generaban `undefined` en pantalla.
+- Cabecera: `work` = 10 días de lunes a viernes dentro de 12–27 junio 2027, estimación de jornadas laborales sin considerar calendario personal de vacaciones; alojamientos: `14 noches, 5 alojamientos`.
+- Clima y luz normalizados a tres párrafos con temperaturas orientativas de valle, ropa y horas de luz; ajustes de documentación y electricidad tipo J 230 V/50 Hz con fuentes oficiales.
+- Validación de contrato del JSON completa; **no se ha ejecutado aún prueba real Desktop/Mobile ni CI**, y sigue pendiente la auditoría del Panorama al terminar etapas 09–11.
+
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
