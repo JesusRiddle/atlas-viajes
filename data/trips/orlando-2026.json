@@ -46,7 +46,7 @@
     "Dark Universe",
     "Super Nintendo World"
   ],
-  "flight": "Volaris directo MEX–MCO, 2/12 11:10–15:18 y 7/12 17:05–19:45, tarifa redonda mostrada en captura del 15/11/2026: $7,015 MXN por persona. condiciones y posibles costos del equipaje de mano y documentado por confirmar; verificar vigencia, horario y total.",
+  "flight": "Volaris directo MEX–MCO, 2/12 11:10–15:18 y 7/12 17:05–19:45, tarifa redonda mostrada en captura del 15/11/2026: $7,015 MXN por persona. Condiciones y posibles costos del equipaje de mano y documentado por confirmar; verificar vigencia, horario y total.",
   "local": "Sin coche de alquiler: MCO ↔ Rosen Inn en Uber/Lyft o taxi; Studios/Islands (3–4 dic) y Epic (6 dic) con shuttle gratuito programado de Rosen sujeto a cupos y reserva presencial; Magic Kingdom (5 dic) en Uber/Lyft vía Transportation and Ticket Center y luego monorriel o ferry. Epic Universe está separado del complejo Universal Studios/Islands: no son accesos intercambiables. Los costos de aplicaciones pueden variar con la demanda. Las fichas de conexiones terrestres contienen horarios, puntos de recogida, enlaces y presupuestos sin sumar nuevas partidas.",
   "experiences": [
     {
@@ -317,8 +317,8 @@
           "description": "Ticket regular de un día para Magic Kingdom, sábado 5 de diciembre de 2026, una persona. Seleccionar fecha y parque en el calendario oficial para consultar el precio con impuestos. No requiere reservación adicional del parque con boleto fechado. Ese sábado no hay Mickey’s Very Merry Christmas Party; Lightning Lane es opcional.",
           "links": [
             {
-              "label": "Disney · seleccionar día y parque",
-              "url": "https://disneyworld.disney.go.com/admission/tickets/theme-parks/"
+              "label": "Disney · consultar precio del 5 de diciembre",
+              "url": "https://disneyworld.disney.go.com/es-mx/admission/tickets/theme-parks/"
             },
             {
               "label": "Disney · fiestas navideñas 2026",
@@ -659,7 +659,7 @@
         "currency": "USD"
       },
       "status": "pending",
-      "notes": "Para estimación integral considerar de forma separada una provisión de US$180–240, NO una cotización real ni gasto adicional duplicado."
+      "notes": "Provisión orientativa US$180–240 para calcular escenarios. El precio exacto se consulta en el calendario oficial del 5 de diciembre."
     },
     {
       "id": "orlando-airport",
@@ -796,7 +796,7 @@
     {
       "id": "orlando-travel-insurance",
       "category": "other",
-      "concept": "Seguro médico de viaje · opción recomendada, sin cotizar",
+      "concept": "Seguro médico de viaje · opcional",
       "date": "2026-12-02",
       "cost": {
         "amount": null,
@@ -804,7 +804,7 @@
       },
       "status": "pending",
       "optional": true,
-      "notes": "Seguro para urgencias médicas en EE. UU. ; cotizar cobertura y exclusiones antes de decidir; NO incluido en subtotal ni en importe confirmado."
+      "notes": "Cobertura para urgencias en EE. UU.: comparar primas, cobertura y exclusiones antes de decidir."
     },
     {
       "id": "orlando-baggage-extras",
@@ -817,7 +817,7 @@
       },
       "status": "pending",
       "optional": true,
-      "notes": "No se sabe si la tarifa de $7,015 incluye pieza de cabina y condiciones necesarias; gastos extra NO incluidos en la cotización hasta ver la tarifa exacta."
+      "notes": "Comprobar qué equipaje incluye la tarifa Volaris seleccionada; el costo de piezas adicionales depende de la tarifa."
     },
     {
       "id": "orlando-express-extras",
@@ -838,7 +838,7 @@
     39000,
     44000
   ],
-  "budgetNote": "Presupuesto de una persona para 2–7/12/2026, Plan A Rosen Inn y boleto Universal un parque/día: las partidas con importe suman US$1472.77 + $7015.00 MXN = ≈ $34,436.19 MXN, SIN Magic Kingdom. Incluye vuelo $7,015 MXN, hotel US$539.94 (IMPUESTOS incluidos), Universal US$335.99 como SUBTOTAL sin confirmar impuestos, provisión fiscal Universal US$21.84 (6.5% hipotético, no confirmada), MCO↔Rosen US$95, Rosen↔Disney US$70, transporte de respaldo US$40 (una sola bolsa compartida), alimentación US$290 desglosada en seis días e imprevistos US$80. Falta consultar el precio de Magic Kingdom, provisional US$180–240 para escenarios: ≈ $37,787.57–$38,904.70 MXN de total ilustrativo después de sumar esta provisión, sin seguro, equipaje extra ni pase rápido. Rango prudente de planeación $39,000–$44,000 MXN que deja margen ante variaciones de precio, tipo de cambio y compras menores, no es total cobrado ni garantiza cubrir extras mayores. Por separado: seguro médico, equipaje, varita, souvenirs y Express no están cotizados. Terra Luna US$1,577.46 es alternativa EXCLUYENTE hotel+Universal, nunca sumar junto a Rosen y boleto individual. Conversión $18.6188 MXN/USD publicada en DOF 13/11/2026; tasa efectiva bancaria puede variar. Importes del cuadro redondeados por partida a centavos MXN: pueden diferir $0.01–$0.02 MXN de convertir el total agregado antes del redondeo.",
+  "budgetNote": "Presupuesto de una persona para 2–7/12/2026, Plan A Rosen Inn y boleto Universal un parque/día: las partidas con importe suman US$1472.77 + $7015.00 MXN = ≈ $34,436.19 MXN, SIN Magic Kingdom. Incluye vuelo $7,015 MXN, hotel US$539.94 (IMPUESTOS incluidos), Universal US$335.99 como SUBTOTAL sin confirmar impuestos, provisión fiscal Universal US$21.84 (6.5% hipotético, no confirmada), MCO↔Rosen US$95, Rosen↔Disney US$70, transporte de respaldo US$40 (una sola bolsa compartida), alimentación US$290 desglosada en seis días e imprevistos US$80. Falta consultar el precio de Magic Kingdom, provisional US$180–240 para escenarios: ≈ $37,787.57–$38,904.70 MXN de total ilustrativo después de sumar esta provisión, sin seguro, equipaje extra ni pase rápido. Rango prudente de planeación $39,000–$44,000 MXN que deja margen ante variaciones de precio, tipo de cambio y compras menores, puede variar si cambian tarifas o se añaden extras mayores. Por separado: seguro médico, equipaje adicional, varita, souvenirs y Express quedan fuera del subtotal. Terra Luna US$1,577.46 es alternativa EXCLUYENTE hotel+Universal, nunca sumar junto a Rosen y boleto individual. Conversión $18.6188 MXN/USD publicada en DOF 13/11/2026; tasa efectiva bancaria puede variar. Importes del cuadro redondeados por partida a centavos MXN: pueden diferir $0.01–$0.02 MXN de convertir el total agregado antes del redondeo.",
   "ticketNotes": [
     {
       "title": "Volaris · tarifa y equipaje",
