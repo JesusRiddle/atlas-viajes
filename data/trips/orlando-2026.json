@@ -314,10 +314,10 @@
         },
         {
           "title": "Magic Kingdom · entrada regular del sábado 5 de diciembre",
-          "description": "Ticket regular de un día para Magic Kingdom, sábado 5 de diciembre de 2026, una persona. Seleccionar fecha y parque en el calendario oficial para consultar el precio con impuestos. No requiere reservación adicional del parque con boleto fechado. Ese sábado no hay Mickey’s Very Merry Christmas Party; Lightning Lane es opcional.",
+          "description": "Magic Kingdom, sábado 5 de diciembre de 2026, entrada regular de un día para un adulto: US$204.00 + US$13.26 de impuesto = US$217.26 en el carrito de Disney (≈ $4,027.24 MXN según conversión indicativa de la tienda). Boleto fechado para ese parque; no requiere reserva adicional. El 5 de diciembre no se celebra Mickey’s Very Merry Christmas Party; Lightning Lane es opcional.",
           "links": [
             {
-              "label": "Disney · consultar precio del 5 de diciembre",
+              "label": "Disney · entrada oficial Magic Kingdom",
               "url": "https://disneyworld.disney.go.com/es-mx/admission/tickets/theme-parks/"
             },
             {
@@ -652,14 +652,14 @@
     {
       "id": "orlando-disney",
       "category": "admission",
-      "concept": "Magic Kingdom · entrada independiente pendiente",
+      "concept": "Magic Kingdom · entrada de 1 día · 5 dic 2026, impuestos incluidos",
       "date": "2026-12-05",
       "cost": {
-        "amount": null,
+        "amount": 217.26,
         "currency": "USD"
       },
-      "status": "pending",
-      "notes": "Provisión orientativa US$180–240 para calcular escenarios. El precio exacto se consulta en el calendario oficial del 5 de diciembre."
+      "status": "quoted",
+      "notes": "Carrito Disney para 1 adulto el sábado 5/12/2026: entrada US$204.00 + impuesto US$13.26 = US$217.26. El carrito muestra conversión estimativa $4,027.24 MXN con US$1=$18.5365 MXN. La conversión del Atlas utiliza su tasa presupuestaria independiente de $18.6188 MXN/USD. No volver a sumar el impuesto Disney."
     },
     {
       "id": "orlando-airport",
@@ -838,7 +838,7 @@
     39000,
     44000
   ],
-  "budgetNote": "Presupuesto de una persona para 2–7/12/2026, Plan A Rosen Inn y boleto Universal un parque/día: las partidas con importe suman US$1472.77 + $7015.00 MXN = ≈ $34,436.19 MXN, SIN Magic Kingdom. Incluye vuelo $7,015 MXN, hotel US$539.94 (IMPUESTOS incluidos), Universal US$335.99 como SUBTOTAL sin confirmar impuestos, provisión fiscal Universal US$21.84 (6.5% hipotético, no confirmada), MCO↔Rosen US$95, Rosen↔Disney US$70, transporte de respaldo US$40 (una sola bolsa compartida), alimentación US$290 desglosada en seis días e imprevistos US$80. Falta consultar el precio de Magic Kingdom, provisional US$180–240 para escenarios: ≈ $37,787.57–$38,904.70 MXN de total ilustrativo después de sumar esta provisión, sin seguro, equipaje extra ni pase rápido. Rango prudente de planeación $39,000–$44,000 MXN que deja margen ante variaciones de precio, tipo de cambio y compras menores, puede variar si cambian tarifas o se añaden extras mayores. Por separado: seguro médico, equipaje adicional, varita, souvenirs y Express quedan fuera del subtotal. Terra Luna US$1,577.46 es alternativa EXCLUYENTE hotel+Universal, nunca sumar junto a Rosen y boleto individual. Conversión $18.6188 MXN/USD publicada en DOF 13/11/2026; tasa efectiva bancaria puede variar. Importes del cuadro redondeados por partida a centavos MXN: pueden diferir $0.01–$0.02 MXN de convertir el total agregado antes del redondeo.",
+  "budgetNote": "Presupuesto para una persona del 2 al 7 de diciembre de 2026, Plan A Rosen Inn y Universal un parque por día. Partidas con importe: US$1,690.03 más $7,015.00 MXN, equivalentes a ≈ $38,481.31 MXN en el cuadro del Atlas (con redondeo individual por renglón). El importe incluye vuelo $7,015 MXN, hotel US$539.94 con impuestos, Universal US$335.99 subtotal y provisión fiscal independiente US$21.84 (6.5% teórico por confirmar), y Magic Kingdom para el 5/12: US$204.00 de entrada + US$13.26 de impuesto = US$217.26 total (IVA/impuesto Disney ya incluido y contabilizado solo una vez). Incluye además MCO↔Rosen US$95 redondos, Rosen↔Disney US$70, fondo de transporte alternativo US$40 compartido, comidas US$290 en seis días e imprevistos US$80. El carrito Disney muestra ≈ $4,027.24 MXN usando US$1 = $18.5365 MXN; el Atlas conserva la referencia de $18.6188 MXN/USD publicada en el DOF el 13/11/2026, así que las conversiones MXN son distintas. Rango prudente de planeación $39,000–$44,000 MXN, sujeto a tarifas, tipo de cambio y extras; seguro médico, equipaje adicional, varita, recuerdos y pases rápidos quedan fuera del subtotal. Terra Luna por US$1,577.46 es alternativa excluyente de hotel + Universal y no se suma junto con el Plan A. Ningún importe de entradas incluye pases rápidos opcionales.",
   "ticketNotes": [
     {
       "title": "Volaris · tarifa y equipaje",
@@ -1031,7 +1031,7 @@
       "url": "https://www.banxico.org.mx/tipcamb/tipCamMIAction.do?idioma=sp"
     }
   ],
-  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. El precio de Magic Kingdom para 5/12 sigue sin cotizar. Park-to-Park desde US$357 + impuestos NO representa precio para fechas específicas. Presupuesto auditado 15/11/2026: Banxico DOF 13/11 publica 18.6188 MXN/USD, diferente de FIX determinado 13/11 18.5525; fecha atribuida correctamente. Universal impuesto +6.5% solo estimación matemática provisional, no comprobante. Disney sin cotización y sin total cerrado.",
+  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios futuros, disponibilidad, Magic Kingdom y traslados no cotizados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. El precio de Magic Kingdom para 5/12 sigue sin cotizar. Park-to-Park desde US$357 + impuestos NO representa precio para fechas específicas. Presupuesto auditado 15/11/2026: Banxico DOF 13/11 publica 18.6188 MXN/USD, diferente de FIX determinado 13/11 18.5525; fecha atribuida correctamente. Universal impuesto +6.5% solo estimación matemática provisional, no comprobante. Disney sin cotización y sin total cerrado. Carrito Disney recibido el 15/11/2026 para 5/12: US$204.00 de entrada más US$13.26 impuesto = US$217.26 total, conversión ilustrativa Disney $4,027.24 MXN usando 18.5365. Reemplaza la provisión previa Disney US$180–240. No añadir impuesto adicional a Disney.",
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
     "reservationNote": "Conviene asegurar primero vuelos, alojamiento y entradas de los parques. El boleto Universal elegido permite un parque por día; si quieres subir a Hogwarts Express, compara antes la modalidad Park-to-Park. Magic Kingdom se adquiere por separado para el 5 de diciembre. Los traslados y pases rápidos pueden decidirse después."
@@ -1169,7 +1169,7 @@
   "lodgingSummary": "Plan A: 5 noches en Rosen Inn Closest to Universal, habitación Deluxe Double privada para 1 adulto en International Drive, US$539.94 con impuestos. Plan B Terra Luna es una alternativa excluyente de paquete hotel + entradas (US$1,577.46), no un segundo alojamiento ni un costo adicional.",
   "heroLodgingSummary": "5 noches · 1 alojamiento",
   "exchangeNote": "Conversión orientativa de US$1 = $18.6188 MXN según publicación del DOF del 13/11/2026. No es el FIX determinado el domingo 15 ni necesariamente el tipo aplicado por tu tarjeta. Ver fuente y fecha en Presupuesto.",
-  "costExclusions": "No incluidos: precio final de Disney pendiente (provisión solo en rango), seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
+  "costExclusions": "No incluidos: seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
   "cover": "or26-hogwarts",
   "placeDescriptions": {
     "or26-diagon": "Banco Gringotts y Diagon Alley, primera jornada de Harry Potter.",
