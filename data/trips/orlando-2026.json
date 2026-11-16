@@ -50,7 +50,7 @@
   "local": "Sin coche de alquiler: MCO ↔ Rosen Inn en Uber/Lyft o taxi; Studios/Islands (3–4 dic) y Epic (6 dic) con shuttle gratuito programado de Rosen sujeto a cupos y reserva presencial; Magic Kingdom (5 dic) en Uber/Lyft vía Transportation and Ticket Center y luego monorriel o ferry. Epic Universe está separado del complejo Universal Studios/Islands: no son accesos intercambiables. Los tiempos y costos de aplicaciones son estimaciones, no reservaciones. Las fichas de conexiones terrestres contienen horarios, puntos de recogida, enlaces y presupuestos sin sumar nuevas partidas.",
   "experiences": [
     {
-      "city": "Universal Studios Florida · 3 dic · Diagon Alley",
+      "city": "Universal Studios Florida · Diagon Alley",
       "description": "Adentrarte en Diagon Alley, contemplar al dragón sobre Gringotts y vivir Harry Potter and the Escape from Gringotts. Explorar Knockturn Alley, Ollivanders y los detalles de las tiendas sin dejar que las filas consuman la experiencia."
     },
     {
@@ -58,7 +58,7 @@
       "description": "Buscar el Knight Bus junto al Londres recreado y entrar al Leaky Cauldron para elegir fish and chips, cottage pie o un pastel de carne; probar Butterbeer o zumo de calabaza. Después, Revenge of the Mummy y Transformers son complementos, no sustitutos de Harry Potter."
     },
     {
-      "city": "Islands of Adventure · 4 dic · Hogwarts y Hagrid",
+      "city": "Islands of Adventure · Hogwarts y Hagrid",
       "description": "Caminar entre los tejados de Hogsmeade, entrar al castillo de Hogwarts para Harry Potter and the Forbidden Journey y vivir Hagrid’s Magical Creatures Motorbike Adventure. Flight of the Hippogriff y la ambientación navideña completan la visita mágica."
     },
     {
@@ -66,7 +66,7 @@
       "description": "Comer en Three Broomsticks, con pollo asado, shepherd’s pie o fish and chips; recorrer Honeydukes y sus dulces. Si las esperas lo permiten, añadir Jurassic World VelociCoaster y The Amazing Adventures of Spider-Man; Hulk queda como opción intensa."
     },
     {
-      "city": "Magic Kingdom · 5 dic · cuento clásico de Disney",
+      "city": "Magic Kingdom · cuento clásico de Disney",
       "description": "Fotografiar el castillo de Cenicienta y combinar Seven Dwarfs Mine Train, Haunted Mansion, Peter Pan’s Flight y Pirates of the Caribbean. TRON, Space Mountain y Big Thunder Mountain Railroad aportan emoción según apertura y filas."
     },
     {
@@ -74,7 +74,7 @@
       "description": "Disfrutar un waffle o funnel cake de Sleepy Hollow cerca del castillo; recorrer Main Street decorada para Navidad. Reservar energía para el desfile y los fuegos artificiales únicamente si figuran en la programación oficial del sábado."
     },
     {
-      "city": "Epic Universe · 6 dic · Ministerio de Magia",
+      "city": "Epic Universe · Ministerio de Magia",
       "description": "Cruzar Place Cachée, recorrer el París mágico de los años veinte y priorizar Harry Potter and the Battle at the Ministry. Después, contemplar las criaturas de Le Cirque Arcanus, explorar las varitas de Cosme Acajor y realizar hechizos interactivos si apetece."
     },
     {
