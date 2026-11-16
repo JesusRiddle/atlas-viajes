@@ -121,6 +121,26 @@ const assert = require('node:assert/strict');
       assert.ok(tones.every(value => value.work === value.place && Number(value.weight) >= 700),
         'Portada: días laborales usan el mismo color y énfasis que Colombia · 12 días');
 
+      const cardDetails = orlandoHomeCard.locator('.card-trip-details');
+      assert.equal(await cardDetails.count(), 1, 'Orlando: fecha y laborales agrupados');
+      assert.match(await cardDetails.innerText(), /2 dic.*7 dic 2026/);
+      assert.match(await cardDetails.innerText(), /4 días laborales/);
+      assert.equal(await orlandoHomeCard.locator('.card-route-label').innerText(), 'Ruta');
+      assert.equal(await orlandoHomeCard.locator('.card-trip-intro').count(), 1);
+      const layout = await orlandoHomeCard.evaluate(card => {
+        const selectors = ['.card-overview','h3','.card-trip-details','.card-route','.card-trip-intro','.cardbottom'];
+        const elements = selectors.map(selector => card.querySelector(selector));
+        return {
+          y: elements.map(element => element.getBoundingClientRect().top),
+          bottom: elements.map(element => element.getBoundingClientRect().bottom),
+          cardBottom: card.getBoundingClientRect().bottom,
+          overflow: card.scrollWidth > card.clientWidth + 2
+        };
+      });
+      assert.ok(layout.y.every((value, index, items) => index === 0 || value >= layout.bottom[index-1] - 1),
+        'Portada: bloques del viaje sin superposiciones');
+      assert.ok(layout.cardBottom >= layout.bottom[5] - 1, 'Portada: presupuesto dentro de tarjeta');
+      assert.equal(layout.overflow, false, 'Portada: sin desbordamiento horizontal');
       assert.match(await orlandoHomeCard.locator('.cardbottom').innerText(), /39[,.]000–\$44[,.]000/,
         'Orlando: mostrar rango preliminar $39,000–$44,000 MXN en portada');
       assert.match(await orlandoHomeCard.locator('.card-price small').innerText(), /Presupuesto estimado por persona/,
