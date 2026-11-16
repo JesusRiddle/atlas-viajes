@@ -1073,7 +1073,7 @@
         }
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
-      "notes": "Remonte de montaña; es un producto turístico, no un tren SBB. Verificar fecha, apertura y pase aplicable. Cliff Walk incluido; otras actividades pueden ser extra.",
+      "notes": "Se modela como tipo técnico «train» por compatibilidad del Atlas, pero el servicio real es TELECABINA Firstbahn; no tren.",
       "budgetIncludedIn": "pending"
     },
     {
@@ -1185,10 +1185,17 @@
               "segments": [
                 {
                   "from": "Grindelwald Terminal",
+                  "to": "Eigergletscher",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Eiger Express · telecabina"
+                },
+                {
+                  "from": "Eigergletscher",
                   "to": "Jungfraujoch",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Jungfrau Railways · Eiger Express + Jungfraubahn"
+                  "operator": "Jungfraubahn"
                 }
               ]
             },
@@ -1197,10 +1204,17 @@
               "segments": [
                 {
                   "from": "Jungfraujoch",
+                  "to": "Eigergletscher",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfraubahn"
+                },
+                {
+                  "from": "Eigergletscher",
                   "to": "Grindelwald Terminal",
                   "departure": null,
                   "arrival": null,
-                  "operator": "Jungfrau Railways · Eiger Express + Jungfraubahn"
+                  "operator": "Eiger Express · telecabina"
                 }
               ]
             }
@@ -2067,11 +2081,11 @@
   "railSummary": [
     [
       "Escenario A · Swiss Half Fare Card",
-      "Tarjeta turística válida un mes; precio oficial consultado de CHF 150 (2026), NO cotización del viaje. Obliga a comprar cada trayecto con descuento, generalmente hasta 50 %, según operador. Comparar suma de trenes, barcos y remontes de montaña."
+      "Tarjeta turística válida un mes; precio vigente sujeto a comprobación para junio 2027; NO es cotización del viaje. Obliga a comprar cada trayecto con descuento, generalmente hasta 50 %, según operador. Comparar suma de trenes, barcos y remontes de montaña."
     ],
     [
       "Escenario B · Swiss Travel Pass",
-      "Pase consecutivo de 15 días en segunda clase: cubriría del 13 al 27 junio si se activa al llegar. Viajes regulares y Luzern–Interlaken Express incluidos dentro de validez; la mayoría de remontes de montaña solo tienen descuento y Jungfraujoch requiere suplemento/reserva. Confirmar cobertura por trayecto."
+      "Pase consecutivo de 15 días en segunda clase: cubriría del 13 al 27 junio si se activa al llegar. Viajes regulares y Luzern–Interlaken Express incluidos dentro de validez; la mayoría de remontes de montaña solo tienen descuento y Jungfraujoch requiere billete de tramo no cubierto y reserva. Confirmar cobertura por trayecto."
     ],
     [
       "Escenario C · billetes individuales",
