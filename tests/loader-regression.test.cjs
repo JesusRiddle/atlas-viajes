@@ -22,17 +22,17 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
         assert.equal(trip.id, module.id);
         assert.ok(Array.isArray(trip.days), module.id + ' sin días');
         assert.ok(Array.isArray(trip.mapPoints), module.id + ' sin mapa');
-        assert.ok(trip.cover || trip.status === 'draft', module.id + ' sin portada');
+        assert.ok(trip.cover === null || (typeof trip.cover === 'string' && trip.cover.length > 0), module.id + ' con portada inválida');
         assert.ok(trip.stays == null || Array.isArray(trip.stays), module.id + ' con stays inválido');
     }
 });
 
-test('Suiza verde se conserva como alternativa borrador sin portada ni reservas ficticias', () => {
+test('Suiza verde mantiene fechas, ruta y estados sin afirmar compras', () => {
     const catalog = loadCatalog();
     const module = catalog.find(item => item.id === 'suiza-verde-2027');
     assert.ok(module && module.available, 'Suiza verde registrada en el catálogo');
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
-    assert.equal(trip.status, 'draft');
+    assert.equal(trip.status, null, 'El Atlas ya no emplea estado draft público');
     assert.equal(trip.cover, null);
     assert.equal(trip.travelerCount, 1);
     assert.equal(trip.days.length, 16);
@@ -420,8 +420,8 @@ test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserv
     assert.equal(trip.days[19].date, '2027-05-27');
 });
 
-test('Panorama editorial de los cinco viajes desarrollados: exactamente tres indicadores y clima independiente', () => {
-    const ids = ['suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
+test('Panorama editorial de los seis viajes desarrollados: tres indicadores y clima independiente', () => {
+    const ids = ['suiza-nevada-2027', 'suiza-verde-2027', 'espana-portugal-2027', 'italia-norte-2027',
         'japon-2027', 'patagonia-argentina-2027'];
     const expectedTitles = ['Estilo de viaje', 'Idioma y moneda', 'Documentación y consejos prácticos'];
     for (const id of ids) {
@@ -442,8 +442,8 @@ test('Panorama editorial de los cinco viajes desarrollados: exactamente tres ind
         /Clima y luz|Documentación y electricidad/);
 });
 
-test('Los cinco viajes nuevos muestran intervalos térmicos sin guiones ambiguos', () => {
-    const ids = ['suiza-nevada-2027', 'italia-norte-2027', 'espana-portugal-2027',
+test('Los seis viajes nuevos muestran intervalos térmicos sin guiones ambiguos', () => {
+    const ids = ['suiza-nevada-2027', 'suiza-verde-2027', 'italia-norte-2027', 'espana-portugal-2027',
         'japon-2027', 'patagonia-argentina-2027'];
     const validRange = /[−]?\d{1,2} a [−]?\d{1,2} °C/;
     const legacyRange = /[−-]?\d{1,2}\s*[–—-]\s*[−-]?\d{1,2}\s*°\s*C/;
@@ -710,4 +710,39 @@ test('transportes de viajes nuevos validan tarifas y no bloquean la vista si fal
     assert.doesNotThrow(() => window.AtlasMajorTransport.render(invalid),
         'La vista no debe fallar cuando una tarifa aún no existe');
     assert.match(window.AtlasMajorTransport.render(invalid), /Tarifa por cotizar/);
+});
+
+
+test('Suiza verde: Panorama sin undefined, clima de montaña y luz comprobados', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const indicators = trip.practicalIndicators;
+    assert.deepEqual(indicators.map(x => x.id), ['style', 'language', 'entry']);
+    assert.deepEqual(indicators.map(x => x.title),
+        ['Estilo de viaje', 'Idioma y moneda', 'Documentación y consejos prácticos']);
+    for (const indicator of indicators) {
+        assert.equal(typeof indicator.text, 'string');
+        assert.ok(indicator.text.trim().length >= 50, indicator.id + ': texto vacío o insuficiente');
+        assert.ok(['green', 'orange'].includes(indicator.tone));
+        assert.equal(typeof indicator.badge, 'string');
+        assert.ok(indicator.badge.trim());
+        assert.doesNotMatch(JSON.stringify(indicator), /undefined|null/);
+        assert.equal(Object.hasOwn(indicator, 'description'), false, 'No usar description en lugar de text');
+        assert.equal(Object.hasOwn(indicator, 'type'), false, 'No usar type en lugar de id');
+    }
+    assert.match(indicators[1].badge, /· CHF$/);
+    assert.match(indicators[2].text, /adaptador|toma J/i);
+    assert.equal(trip.work, 10);
+    assert.equal(trip.heroLodgingSummary, '14 noches, 5 alojamientos');
+    const paragraphs = trip.climate.trim().split(/\n\s*\n/);
+    assert.equal(paragraphs.length, 3);
+    assert.match(paragraphs[0], /mínimas nocturnas/i);
+    assert.match(paragraphs[0], /máximas diurnas/i);
+    assert.match(paragraphs[0], /Grindelwald.*Zermatt/i);
+    assert.match(paragraphs[0], /Titlis.*Jungfraujoch.*Gornergrat/i);
+    assert.match(paragraphs[1], /^\*Qué llevar:\*/);
+    assert.match(paragraphs[2], /^\*Horas de luz:\*/);
+    assert.match(paragraphs[2], /05:2[89]|05:30/);
+    assert.match(paragraphs[2], /21:2[2-6]/);
+    assert.match(paragraphs[2], /CEST.*UTC\+2/);
+    assert.doesNotMatch(trip.climate, /\d+\s*[–—-]\s*\d+\s*°C/);
 });
