@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 07 · Movilidad y conexiones registrada y verificada estructuralmente; siguiente sección: 08 Dónde dormirás. Auditorías B/D y CI todavía pendientes.
+**Etapa:** 08 · Dónde dormirás completada a nivel de selección editorial y verificación de ubicaciones; siguiente: 09 Día por día. Auditorías B/D y CI pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -23,7 +23,7 @@
 - [x] 05 · Experiencias: 12 fichas de MUST por región, tren Luzern–Interlaken, alternativas y gastronomía regional documentada
 - [x] 06 · Reservaciones importantes: tres grupos, 12 fichas con estado, fechas, alternativas y enlaces oficiales.
 - [x] 07 · Transporte mayor: 14 fichas y 16 referencias en jornadas; validación estructural equivalente realizada, prueba real de render y Node pendientes
-- [ ] 08 · Alojamiento: zonas y hoteles candidatos investigados; tarifas exactas de 14 noches pendientes
+- [x] 08 · Alojamiento: cinco hoteles principales con fechas, direcciones, enlaces oficiales y Maps; tarifas exactas 2027 aún pendientes
 - [ ] 09 · Día por día: traslados puerta a puerta y gastos pendientes
 - [ ] 10 · Panorama: validar indicadores y clima en Desktop/Mobile
 - [ ] 11 · Presupuesto integral: solo vuelos cotizados, resto pendiente
@@ -72,11 +72,19 @@
 - Verificación estática de IDs únicos, opciones/selectedFare, segmentos contiguos, tarifas no vacías y referencias; **no se ejecutó el `AtlasTransportModel.validateTrip` real ni el render `AtlasMajorTransport.render` ni Node/browser**. Los hallazgos deberán cerrar en auditoría B/D antes de afirmar sección auditada y merge.
 - Se mantuvieron exclusivamente cambios en el JSON Suiza Verde y la bitácora.
 
+## Verificación de Dónde dormirás · 2026-11-16
+- Cinco hoteles candidatos (sin reservas): Hotel Marta Zürich (13–15), Hotel Waldstätterhof Luzern (15–17), Hotel Tschuggen Grindelwald (17–23), Hotel Alphubel Zermatt (23–26), ibis Genève Aéroport (26–27).
+- Suman 14 noches, cinco alojamientos. Cada uno presenta dirección real, Google Maps y web oficial; alternativas conservadas en `hotelsComparison`, sin fichas duplicadas antiguas.
+- Se verificó riesgo de baño compartido: categoría Single balcony Eiger view del Tschuggen es baño privado, mientras otra single tiene baño compartido; Hotel Alpha Luzern (alternativa) también ofrece ambos tipos, verificar la categoría exacta. En Zermatt, el check-in del Alphubel se hace en Hotel Simi.
+- ibis Genève Aéroport: Accor indica caminata de 10 minutos y shuttle de 05:00 a 11:00, compatible en principio con vuelo GVA 09:10, sujeto a verificación al reservar.
+- **No hay cotización reproducible de junio 2027 para una persona, 14 noches, impuestos y cancelación.** No se inventaron totales ni se registraron gastos ficticios. Antes de marcar auditoría financiera B como cerrada, obtener tarifas o supuestos explícitos en Presupuesto.
+- Validación estructural de fechas, ID, links y suma de noches; pruebas reales Node/CI y visual Desktop/Mobile pendientes.
+
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
 3. Validar noche de Ginebra y aeropuerto de salida; presupuesto integral sin duplicidades.
-4. Crear mapa, transportes conformes al contrato, fotografías y QA visual.
+4. Ejecutar pruebas del contrato de transporte, DOM/responsive y QA global; añadir fotografías en etapa 12.
 
 **Candidatos por ciudad:** Zúrich Marta/Bristol/Fred; Lucerna Alpha/Waldstätterhof/Central; Grindelwald Tschuggen/Bernerhof/Alpenblick; Zermatt Alphubel/Sarazena/Metropol; Ginebra ibis Genève Aéroport/Nash/ibis budget. Ninguno reservado ni cotizado en todas las fechas. Grindelwald es la prioridad económica por sus seis noches.
 
