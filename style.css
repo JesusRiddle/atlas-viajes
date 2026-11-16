@@ -2381,3 +2381,49 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
 .explore-credit{display:inline-block;margin-top:8px;font-size:11px;line-height:1.5;color:var(--muted);text-underline-offset:3px}
 .explore-footnote{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:22px;margin-top:40px}
 @media(max-width:760px){.explore-grid{grid-template-columns:1fr}.explore-home-teaser{align-items:flex-start;flex-direction:column;gap:16px}.explore-card-copy{padding:18px 19px}.explore-page{padding-top:26px}.explore-group .section-title{gap:8px}}
+
+/* Portada editorial: jerarquía clara entre destino, calendario, ruta, relato y presupuesto. */
+#viajes .atlas-home-card .cardbody{
+    gap:0;
+    padding:17px 18px 18px;
+}
+#viajes .atlas-home-card .card-overview{margin:0 0 7px;min-height:15px}
+#viajes .atlas-home-card .card-overview-location{font-size:11px;letter-spacing:.01em}
+#viajes .atlas-home-card h3{margin:0 0 11px;line-height:1.18}
+#viajes .atlas-home-card .card-trip-details{
+    display:flex;align-items:center;justify-content:space-between;
+    flex-wrap:wrap;gap:5px 12px;margin:0 0 13px;
+}
+#viajes .atlas-home-card .card-trip-details .carddates{
+    margin:0;color:var(--muted);font-size:11px;line-height:1.4;
+}
+#viajes .atlas-home-card .card-trip-details .cardfacts{
+    display:flex;flex-wrap:wrap;gap:6px;margin:0;
+}
+#viajes .atlas-home-card .card-trip-details .cardfacts span{
+    color:#8b421f;font-size:11px;line-height:1.4;font-weight:700;
+    background:transparent;padding:0;border:0;
+}
+#viajes .atlas-home-card .card-route{
+    display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;
+    overflow:hidden;margin:0 0 12px;
+    font-size:12px;line-height:1.5;color:var(--muted);
+}
+#viajes .atlas-home-card .card-route-label{
+    color:#8b421f;font-weight:700;margin-right:5px;
+}
+#viajes .atlas-home-card .card-trip-intro{
+    border-top:1px solid #e5eaec;
+    padding-top:12px;margin:0 0 17px;
+    color:#405760;font-size:12px;line-height:1.6;
+}
+#viajes .atlas-home-card .cardbottom{
+    margin-top:auto;padding-top:13px;
+}
+#viajes .atlas-home-card .card-price>strong{letter-spacing:-.01em}
+@media(max-width:680px){
+    #viajes .atlas-home-card .cardbody{padding:16px 17px 18px}
+    #viajes .atlas-home-card h3{margin-bottom:10px}
+    #viajes .atlas-home-card .card-trip-details{margin-bottom:12px}
+    #viajes .atlas-home-card .card-trip-intro{padding-top:11px;margin-bottom:16px}
+}
