@@ -274,7 +274,7 @@ const assert = require('node:assert/strict');
           const sourceUrls = trip.sources.map(source=>source.url);
           assert.equal(new Set(sourceUrls).size,sourceUrls.length,
             'Orlando: no duplicar enlaces de fuentes');
-          assert.ok(trip.experiences.every(e=>!/\\b\\d{1,2}\\s+dic(?:iembre)?/i.test(e.city)),
+          assert.ok(trip.experiences.every(e=>!/\b\d{1,2}\s+dic(?:iembre)?/i.test(e.city)),
             'Orlando: no indicar fechas en Experiencias');
           assert.equal(trip.expenses.find(e=>e.id==='orlando-disney').status,'quoted');
           assert.ok(trip.budgetNote.includes('$38,481.31 MXN'));
