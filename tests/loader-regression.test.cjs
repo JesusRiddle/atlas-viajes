@@ -746,3 +746,53 @@ test('Suiza verde: Panorama sin undefined, clima de montaña y luz comprobados',
     assert.match(paragraphs[2], /CEST.*UTC\+2/);
     assert.doesNotMatch(trip.climate, /\d+\s*[–—-]\s*\d+\s*°C/);
 });
+
+
+test('Suiza Verde: 16 jornadas y fichas de movilidad visibles sin horarios inventados', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const hotelIds = new Map(trip.hotels.map(h => [h.id, h]));
+    const transportIds = new Set(trip.majorTransport.map(t => t.id));
+    assert.equal(trip.days.length, 16);
+    assert.equal(trip.days.filter(d => d.hotel).length, 14);
+    trip.days.forEach((day, i) => {
+        assert.equal(day.n, i + 1);
+        const expected = new Date(Date.UTC(2027, 5, 12 + i)).toISOString().slice(0, 10);
+        assert.equal(day.date, expected, 'Fecha del día ' + day.n);
+        for (const field of ['am', 'pm', 'night', 'mobility', 'note']) {
+            assert.ok(day[field] && day[field].length > 25, 'Día ' + day.n + ': ' + field);
+        }
+        assert.match(day.mobility, /• \*[^*]+:\*/, 'Formato editorial movilidad del día ' + day.n);
+        assert.match(day.note, /• \*[^*]+:\*/, 'Formato editorial tips del día ' + day.n);
+        if (day.hotel) {
+            const hotel = hotelIds.get(day.hotel);
+            assert.ok(hotel, 'Hotel inexistente ' + day.hotel);
+            assert.ok(hotel.checkIn <= day.date && hotel.checkOut > day.date,
+                'Día ' + day.n + ': hotel fuera del rango de noches');
+        }
+        for (const ref of day.transportRefs || [])
+            assert.ok(transportIds.has(ref), 'Día ' + day.n + ': transporte desconocido ' + ref);
+    });
+    const route = trip.majorTransport.find(x => x.id === 'jungfraujoch');
+    assert.equal(route.options.length, 2, 'Jungfraujoch: regreso directo y regreso por Wengen');
+    const viaWengen = route.options.find(x => x.id === 'B');
+    assert.ok(viaWengen.journeys.find(x => x.direction === 'return').segments.some(s => s.to === 'Wengen'));
+    const window = {
+        AtlasSelections: { get: () => ({}) },
+        AtlasBudget: { selectedTransportPrice: () => null, convert: () => null }
+    };
+    vm.runInNewContext(fs.readFileSync('components/day-transport.js', 'utf8'), { window });
+    const day4 = window.AtlasDayTransport.render(trip, trip.days[3]);
+    assert.match(day4, /Zürich HB/);
+    assert.match(day4, /Maienfeld/);
+    assert.match(day4, /Luzern/);
+    assert.doesNotMatch(day4, /Horario pendiente de confirmar<\/div>/,
+        'Las rutas sin horas deben mostrar nombres reales de estaciones');
+    const day10 = window.AtlasDayTransport.render(trip, trip.days[9]);
+    assert.match(day10, /Eigergletscher/);
+    assert.doesNotMatch(day10, /Zweilütschinen/, 'Ruta A no pasa por Wengen');
+    window.AtlasSelections.get = () => ({ jungfraujoch: { option: 'B' } });
+    assert.match(window.AtlasDayTransport.render(trip, trip.days[9]), /Zweilütschinen/);
+    const day2 = window.AtlasDayTransport.render(trip, trip.days[1]);
+    assert.match(day2, /17:25/, 'La llegada aérea +1 día debe aparecer en la jornada correcta');
+    assert.doesNotMatch(day2, /GVA/, 'No mezclar vuelo de regreso con llegada');
+});
