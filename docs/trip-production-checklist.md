@@ -130,6 +130,13 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 
 **Alcance de cambios:** Los viajes históricos deben permanecer intactos y solo pueden consultarse para extraer ideas; ninguna solicitud general de edición del Atlas autoriza modificar sus JSON ni la visualización heredada. Aplicar cambios de contenido exclusivamente a los viajes del formato nuevo.
 
+## Control preventivo inmediato de cabecera y Panorama (para todo viaje nuevo)
+- [ ] **En la primera carga del JSON**, no esperar a etapa 10: si `practicalIndicators` tiene contenido, validar exactamente `id/title/text/badge/tone`; rechazar `type/description` como sustitutos, propiedades ausentes y cualquier `undefined` visible.
+- [ ] En cuanto existan fechas y noches, comprobar la cabecera real: días naturales, días laborales de lunes a viernes (aclarar festivos y supuestos), `X noches, Y alojamientos` y título editorial. No declarar lista una portada solo porque el JSON parsea.
+- [ ] **Clima y luz**: tres párrafos desde su primera redacción; máximo diurno y mínimo nocturno por altura/región, temperaturas históricas no confundidas con pronósticos, riesgos en alta montaña, vestimenta y amanecer/atardecer con zona horaria local del destino y mes exactos.
+- [ ] Ejecutar tests de contrato y, cuando haya navegador, DOM Desktop/Mobile **inmediatamente después del primer registro de estos campos**, no solo en auditoría C/D. Si no se ejecutan, anotar «datos cargados; validación visual pendiente» y nunca «sección completada/auditada».
+- [ ] Al añadir un viaje nuevo al catálogo, ampliar la regresión de Panorama y temperaturas de `tests/loader-regression.test.cjs`; comprobar el título y la tarjeta climática renderizados sin `undefined` en `tests/browser-smoke.cjs`.
+
 ## Puerta de control · arquitectura del Panorama (etapas 10, C y D)
 - [ ] En **cada viaje nuevo**, `practicalIndicators` contiene **exactamente tres IDs** en orden `style`, `language`, `entry`, con títulos exactos «Estilo de viaje», «Idioma y moneda», «Documentación y consejos prácticos». Rechazar indicadores `weather` o `climate`; la electricidad es parte de consejos prácticos, no el nombre de la tarjeta.
 - [ ] Las doce tarjetas de **Temporadas** de cada viaje nuevo muestran el intervalo como `−3 a 5 °C` (no `−3–5 °C`); el separador es ` a ` y el signo `−` indica exclusivamente temperaturas negativas. Verificar el HTML renderizado y dejar `pending` cuando no haya datos fiables.
