@@ -333,12 +333,33 @@
   "attractionTerms": [],
   "cover": null,
   "mapPoints": [],
-  "planningDetails": "Escenario principal: 12–27 junio de 2027; septiembre se contrastará económicamente cuando estén completos alojamientos, transportes y entradas. Ruta enfocada en los MUST naturales, sin Glacier Express ni Bernina Express, reservados como ideas para otro viaje ferroviario. Vuelo multidestino cotizado pero no comprado. La distribución de noches sigue provisional hasta validar la logística de Heidi, Jungfrau y el regreso.",
-  "lodgingSummary": "Zúrich 2 noches; Lucerna 2; Grindelwald 6; Zermatt 3; entorno de Ginebra 1. Zonas y hoteles por investigar.",
+  "planningDetails": "Escenario principal: 12–27 junio de 2027; septiembre se contrastará económicamente cuando estén completos alojamientos, transportes y entradas. Ruta enfocada en los MUST naturales, sin Glacier Express ni Bernina Express, reservados como ideas para otro viaje ferroviario. Vuelo multidestino cotizado pero no comprado. La distribución de noches sigue provisional hasta validar la logística de Heidi, Jungfrau y el regreso. Investigación inicial de alojamiento: Hotel Marta/Bristol/Fred (Zúrich); Alpha/Waldstätterhof/Central (Lucerna); Tschuggen/Bernerhof/Alpenblick (Grindelwald); Alphubel/Sarazena/Metropol (Zermatt); ibis Genève Aéroport/Nash/ibis budget (Ginebra). Solo candidatos, sin tarifas verificadas para la estancia completa.",
+  "lodgingSummary": "Zúrich 13–15 junio (2 noches, cercanía a Zürich HB); Lucerna 15–17 (2, estación); Grindelwald 17–23 (6, centro/estación); Zermatt 23–26 (3, estación/Gornergrat); Ginebra aeropuerto 26–27 (1, salida temprana). Hoteles candidatos registrados; ninguno reservado ni cotizado para todas sus noches.",
   "heroLodgingSummary": "14 noches · cinco alojamientos provisionales",
   "budgetPreliminary": true,
   "hotels": [],
-  "stays": [],
+  "stays": [
+    [
+      "Zúrich · 13–15 junio · 2 noches",
+      "Prioridad: centro antiguo a distancia caminable de Zürich HB, para llegada desde ZRH y excursión a Maienfeld. Candidatos: Hotel Marta (habitación individual con baño propio, desayuno incluido, sin aire acondicionado), Hotel Bristol Zürich y Fred Hotel Hauptbahnhof. Comparar precio final por una persona, impuestos y cancelación; no hay reserva ni tarifa comprobada para fechas objetivo."
+    ],
+    [
+      "Lucerna · 15–17 junio · 2 noches",
+      "Prioridad: a unos 5–10 minutos caminando de la estación de Luzern y embarcaderos. Candidatos: Hotel Alpha (seleccionar expresamente categoría con baño privado), Hotel Waldstätterhof y Hotel Central Luzern. La conexión a Titlis parte por Engelberg y requiere salida temprana; revisar recepción, impuestos y cancelación."
+    ],
+    [
+      "Grindelwald · 17–23 junio · 6 noches",
+      "Prioridad principal del presupuesto: cerca de la estación de Grindelwald y accesible a First, con habitación privada y preferentemente baño privado. Primera opción por investigar: Hotel Tschuggen (habitación individual con balcón y baño propio; web publica tarifas desde de años anteriores, no cotización 2027). Alternativas: Hotel Bernerhof (frente a estación, pocas habitaciones individuales) y Hotel Alpenblick (más alejado, revisar conexiones). No reservar alojamiento con baño compartido por confusión entre categorías."
+    ],
+    [
+      "Zermatt · 23–26 junio · 3 noches",
+      "Prioridad: acceso caminable desde estación y Gornergrat Bahn. Candidatos: Hotel Alphubel, Hotel Sarazena y Hotel Metropol & Spa (categoría individual). Metropol publica precio orientativo de temporada junio–octubre 2027, pero no disponibilidad ni tarifa exacta de las tres noches. Hotel Bahnhof solo como alternativa si se confirma habitación privada y modalidad de baño."
+    ],
+    [
+      "Ginebra aeropuerto · 26–27 junio · 1 noche",
+      "Prioridad: caminata breve y segura al aeropuerto o transporte confirmado a primera hora para vuelo de GVA a las 09:10. Candidatos: ibis Genève Aéroport, Nash Airport Hotel/Nash Pratik y ibis budget Genève Aéroport. Verificar físicamente el acceso peatonal al terminal y horarios del traslado; no elegir por precio sin resolver la salida temprana."
+    ]
+  ],
   "seasonality": {
     "summary": "Junio es la ventana principal por praderas verdes y días largos, con posible nieve residual en senderos altos. Septiembre será alternativa comparada cuando se complete el presupuesto del mismo itinerario.",
     "months": {
@@ -422,11 +443,17 @@
     "https://www.oeschinensee.ch/en/",
     "https://www.gornergrat.ch/en/",
     "https://www.lufthansa.com/",
-    "https://www.swiss.com/"
+    "https://www.swiss.com/",
+    "https://en.hotelmarta.ch/rooms",
+    "https://www.luzern.com/en/hotel/hotel-alpha",
+    "https://www.tschuggen-grindelwald.ch/en/einzelzimmer-balkon-eigerblick/",
+    "https://www.hotel-bernerhof-grindelwald.ch/en/service-hotel/",
+    "https://www.metropol-zermatt.ch/en/rooms",
+    "https://all.accor.com/hotel/A8F3/index.en.shtml"
   ],
   "sourceNote": "Fuentes oficiales de referencia para verificar operación y tarifas; cotización aérea aportada por el viajero en noviembre de 2026. Disponibilidad 2027 sujeta a reconfirmación.",
   "budgetRange": null,
-  "budgetNote": "Única partida cotizada: vuelo multidestino Lufthansa/SWISS Economy Light, $23,300.14 MXN por una persona (noviembre de 2026), no comprado. Falta estimar y reconciliar alojamiento, trenes, remontes, comida, seguro, entradas e imprevistos; no existe presupuesto integral cerrado.",
+  "budgetNote": "Vuelos multidestino Lufthansa/SWISS Economy Light $23,300.14 MXN, cotizados por el usuario (noviembre 2026), no comprados. Hoteles y zonas candidatos investigados, pero ninguna cotización total comparable para 1 persona y las 14 noches; no sumar rangos genéricos como gasto cierto. Faltan tarifas ferroviarias, remontes, comida, seguros, entradas e imprevistos.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
