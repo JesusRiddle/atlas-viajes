@@ -262,10 +262,24 @@ const assert = require('node:assert/strict');
             assert.ok(places[key]?.photo?.src && places[key].photo.source &&
               places[key].photo.license && places[key].photo.attribution,
               'Orlando: fotografía y atribución incompletas '+key);
+            const caption = trip.placeDescriptions[key];
+            assert.ok(typeof caption === 'string' &&
+              caption.trim().split(/\s+/).length >= 15 &&
+              caption.trim().split(/\s+/).length <= 30,
+              'Orlando: pie de foto entre 15 y 30 palabras ' + key);
             assert.deepEqual(trip.days[i+1].places,[key],
               'Orlando: foto del parque correspondiente '+key);
           }
           assert.ok(photoKeys.includes(trip.cover),'Orlando: portada sin foto válida');
+          const sourceUrls = trip.sources.map(source=>source.url);
+          assert.equal(new Set(sourceUrls).size,sourceUrls.length,
+            'Orlando: no duplicar enlaces de fuentes');
+          assert.ok(trip.experiences.every(e=>!/\\b\\d{1,2}\\s+dic(?:iembre)?/i.test(e.city)),
+            'Orlando: no indicar fechas en Experiencias');
+          assert.equal(trip.expenses.find(e=>e.id==='orlando-disney').status,'quoted');
+          assert.ok(trip.budgetNote.includes('$38,481.31 MXN'));
+          assert.ok(trip.hotelsComparison.includes('US$701.53 (≈ $13,062 MXN)'));
+
         }
         if (id === 'orlando-2026') {
           const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
