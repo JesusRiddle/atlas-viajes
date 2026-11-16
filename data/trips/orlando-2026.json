@@ -1,0 +1,1261 @@
+{
+  "id": "orlando-2026",
+  "name": "Orlando 2026 · Disney y Universal",
+  "flag": "🇺🇸",
+  "start": "2026-12-02",
+  "end": "2026-12-07",
+  "travelerCount": 1,
+  "tag": "HOGWARTS, DIAGON ALLEY Y EL MINISTERIO DE MAGIA · ORLANDO NAVIDEÑO",
+  "routeCities": [
+    "Orlando",
+    "Universal Studios Florida",
+    "Universal Islands of Adventure",
+    "Magic Kingdom",
+    "Universal Epic Universe"
+  ],
+  "bases": [
+    [
+      "Orlando",
+      5
+    ]
+  ],
+  "work": 4,
+  "profile": {
+    "pace": "active",
+    "paceWhy": "Cuatro días completos de parques consecutivos, con pausas, filas potencialmente prolongadas y descanso al llegar.",
+    "solo": true,
+    "soloWhy": "Una habitación privada, sin renta de auto; traslado programado gratuito de Rosen a Universal sujeto a reserva de cupo.",
+    "weather": "Templado y menos lluvioso",
+    "weatherWhy": "Diciembre suele ser relativamente seco; mañanas y noches pueden ser frescas, con frentes fríos ocasionales.",
+    "why": "Tres días de Universal dedicados a los mundos de Harry Potter: Diagon Alley, Hogwarts/Hogsmeade y el Ministerio de Magia. Magic Kingdom completa cuatro días de parques, con prioridades flexibles para no sacrificar la inmersión mágica por filas."
+  },
+  "intro": "El viaje comienza en Diagon Alley, entre escaparates mágicos, el dragón de Gringotts y los secretos del Callejón Knockturn. Al día siguiente, Hogsmeade conduce hasta el castillo de Hogwarts y la aventura de Hagrid. Magic Kingdom aporta el contraste clásico de Disney: el castillo de Cenicienta, sus atracciones emblemáticas y las luces de Navidad. El recorrido culmina en Epic Universe, donde el París mágico de Place Cachée abre las puertas al Ministerio de Magia. Dark Universe y Super Nintendo World completan la jornada, si las filas lo permiten. Cuatro parques y tres mundos de Harry Potter dan forma a una escapada navideña especialmente inmersiva.",
+  "introShort": "Diagon Alley y Gringotts, Hogwarts y Hagrid, y el Ministerio de Magia protagonizan tres días de Universal. Magic Kingdom añade los clásicos de Disney, mientras la decoración navideña acompaña el recorrido por Orlando.",
+  "introHighlights": [
+    "Diagon Alley",
+    "Gringotts",
+    "Callejón Knockturn",
+    "Hogsmeade",
+    "Hogwarts",
+    "Hagrid",
+    "Magic Kingdom",
+    "castillo de Cenicienta",
+    "Epic Universe",
+    "Place Cachée",
+    "Ministerio de Magia",
+    "Dark Universe",
+    "Super Nintendo World"
+  ],
+  "flight": "Volaris directo MEX–MCO, 2/12 11:10–15:18 y 7/12 17:05–19:45, tarifa redonda mostrada en captura del 15/11/2026: $7,015 MXN por persona. Condiciones y posibles costos del equipaje de mano y documentado por confirmar; verificar vigencia, horario y total.",
+  "local": "Sin coche de alquiler: MCO ↔ Rosen Inn en Uber/Lyft o taxi; Studios/Islands (3–4 dic) y Epic (6 dic) con shuttle gratuito programado de Rosen sujeto a cupos y reserva presencial; Magic Kingdom (5 dic) en Uber/Lyft vía Transportation and Ticket Center y luego monorriel o ferry. Epic Universe está separado del complejo Universal Studios/Islands: no son accesos intercambiables. Los costos de aplicaciones pueden variar con la demanda. Las fichas de conexiones terrestres contienen horarios, puntos de recogida, enlaces y presupuestos sin sumar nuevas partidas.",
+  "experiences": [
+    {
+      "city": "Universal Studios Florida · Diagon Alley",
+      "description": "Adentrarte en Diagon Alley, contemplar al dragón sobre Gringotts y vivir Harry Potter and the Escape from Gringotts. Explorar Knockturn Alley, Ollivanders y los detalles de las tiendas sin dejar que las filas consuman la experiencia."
+    },
+    {
+      "city": "Universal Studios Florida · Londres mágico y sabores",
+      "description": "Buscar el Knight Bus junto al Londres recreado y entrar al Leaky Cauldron para elegir fish and chips, cottage pie o un pastel de carne; probar Butterbeer o zumo de calabaza. Después, Revenge of the Mummy y Transformers son complementos, no sustitutos de Harry Potter."
+    },
+    {
+      "city": "Islands of Adventure · Hogwarts y Hagrid",
+      "description": "Caminar entre los tejados de Hogsmeade, entrar al castillo de Hogwarts para Harry Potter and the Forbidden Journey y vivir Hagrid’s Magical Creatures Motorbike Adventure. Flight of the Hippogriff y la ambientación navideña completan la visita mágica."
+    },
+    {
+      "city": "Islands of Adventure · Las Tres Escobas y aventuras",
+      "description": "Comer en Three Broomsticks, con pollo asado, shepherd’s pie o fish and chips; recorrer Honeydukes y sus dulces. Si las esperas lo permiten, añadir Jurassic World VelociCoaster y The Amazing Adventures of Spider-Man; Hulk queda como opción intensa."
+    },
+    {
+      "city": "Magic Kingdom · cuento clásico de Disney",
+      "description": "Fotografiar el castillo de Cenicienta y combinar Seven Dwarfs Mine Train, Haunted Mansion, Peter Pan’s Flight y Pirates of the Caribbean. TRON, Space Mountain y Big Thunder Mountain Railroad aportan emoción según apertura y filas."
+    },
+    {
+      "city": "Magic Kingdom · sabores, luces y espectáculos",
+      "description": "Disfrutar un waffle o funnel cake de Sleepy Hollow cerca del castillo; recorrer Main Street decorada para Navidad. Reservar energía para el desfile y los fuegos artificiales únicamente si figuran en la programación oficial del sábado."
+    },
+    {
+      "city": "Epic Universe · Ministerio de Magia",
+      "description": "Cruzar Place Cachée, recorrer el París mágico de los años veinte y priorizar Harry Potter and the Battle at the Ministry. Después, contemplar las criaturas de Le Cirque Arcanus, explorar las varitas de Cosme Acajor y realizar hechizos interactivos si apetece."
+    },
+    {
+      "city": "Epic Universe · cafés del París mágico",
+      "description": "Tomar una pausa en Café L’air De La Sirène para probar una baguette de pavo o crepes de Butterbeer; Le Gobelet Noir ofrece otros platos, como guiso de lentejas. Disfrutar las fachadas y escaparates antes de salir del mundo mágico."
+    },
+    {
+      "city": "Epic Universe · otros mundos imprescindibles y opcionales",
+      "description": "Descubrir Dark Universe y Monsters Unchained: The Frankenstein Experiment, después visitar Super Nintendo World para Mario Kart. Donkey Kong, Stardust Racers e Isle of Berk, con Hiccup’s Wing Gliders, quedan sujetos al tiempo; finalizar contemplando Celestial Park iluminado."
+    }
+  ],
+  "days": [
+    {
+      "n": 1,
+      "date": "2026-12-02",
+      "title": "CDMX → Orlando · llegada y descanso",
+      "base": "Orlando",
+      "am": "Volaris directo MEX 11:10 → MCO 15:18; llegar a MEX con margen y confirmar equipaje y terminal.",
+      "pm": "Tras migración y equipaje en MCO, ir al punto autorizado de Uber/Lyft o taxi hasta Rosen Inn. Check-in desde las 16:00; llegada efectiva sujeta a tráfico y migración.",
+      "night": "Cena tranquila cerca de International Drive, confirmar y reservar en recepción el shuttle Universal del jueves. CityWalk solo si todavía hay tiempo y energía.",
+      "mobility": "Llegada MCO 15:18: migración, equipaje y recogida por app/taxi en el punto autorizado de la terminal que corresponda. MCO → Rosen Inn aproximadamente 25–45 min de carretera en condiciones habituales (estimación, no tiempo garantizado); presupuesto aeroportuario US$70–120 (≈ $1,303–$2,234 MXN) redondo para días 1 y 6, contado una sola vez. Revisar ficha de movilidad terrestre y rutas.",
+      "note": "No programar actividades con hora fija el día de llegada; migración y tráfico pueden retrasar el check-in.",
+      "spend": null,
+      "places": [],
+      "hotel": "orlando-rosen",
+      "transportRefs": [
+        "flight-mex-mco"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Volaris · página oficial",
+          "url": "https://www.volaris.com/"
+        },
+        {
+          "label": "MCO → Rosen Inn · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Orlando%20International%20Airport&destination=Rosen%20Inn%20Closest%20to%20Universal%20Orlando&travelmode=driving"
+        }
+      ]
+    },
+    {
+      "n": 2,
+      "date": "2026-12-03",
+      "title": "Universal Studios Florida · Diagon Alley",
+      "base": "Orlando",
+      "am": "Llegar a Universal Studios Florida cerca de apertura general, según el shuttle reservado (Rosen no da entrada anticipada). Primero Diagon Alley y Escape from Gringotts; después Knockturn Alley, dragón, Ollivanders, tiendas y Knight Bus. No abordar Hogwarts Express con boleto sin Park-to-Park.",
+      "pm": "Comida y descanso de 45–60 minutos orientativos en Leaky Cauldron; probar Butterbeer. Después Mummy y Transformers si hay margen; Bourne Stuntacular sujeto a horario. No sacrificar la inmersión en Diagon Alley por filas.",
+      "night": "Según cartelera, elegir entre Universal’s Holiday Parade featuring Macy’s —celebración oficial del 14/11/2026 al 3/1/2027— y Diagon Alley iluminado. El desfile no tiene hora confirmada para el 3/12. Si termina el shuttle, volver en Uber/Lyft; reservar plaza para Islands.",
+      "mobility": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Reserva presencial idealmente un día antes; cupos limitados y horarios sujetos a cambios. Alternativa Uber/Lyft desde North Parking Garage, 6000 Universal Blvd, si se sale después del último shuttle. Ver detalles y rutas en Movilidad y conexiones.",
+      "note": "El desfile navideño regular de Universal no es el desfile de fiesta privada Disney. Prioridad absoluta a Harry Potter y flexibilidad ante filas o lluvia.",
+      "spend": null,
+      "places": [
+        "or26-diagon"
+      ],
+      "hotel": "orlando-rosen",
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Universal · Studios Florida",
+          "url": "https://www.universalorlando.com/web/en/us/theme-parks/universal-studios-florida"
+        },
+        {
+          "label": "Rosen Inn · transporte gratuito",
+          "url": "https://www.roseninn6327.com/transportation"
+        },
+        {
+          "label": "Universal · Navidad y desfile Macy’s",
+          "url": "https://www.universalorlando.com/web/en/us/holidays/universal-studios-florida"
+        }
+      ]
+    },
+    {
+      "n": 3,
+      "date": "2026-12-04",
+      "title": "Islands of Adventure · Hogwarts y Hagrid",
+      "base": "Orlando",
+      "am": "Con apertura general de Islands, consultar la fila y operativa de Hagrid’s Magical Creatures Motorbike Adventure; priorizarla si conviene. Entrar a Hogwarts para Forbidden Journey y fotografías. No desperdiciar toda la mañana si una atracción sufre paradas.",
+      "pm": "Comida en Three Broomsticks, tiendas Hogsmeade/Honeydukes, Ollivanders y Flight of the Hippogriff. Elegir VelociCoaster o Spider-Man según filas; Hulk opcional. Reservar descanso para la noche.",
+      "night": "Hogsmeade iluminado y, si se anuncia el 4/12, espectáculo navideño de Hogwarts. Grinchmas Who-liday Spectacular en Seuss Landing es alternativa con función por confirmar, no obligación. Si hay conflicto, elegir Hogwarts.",
+      "mobility": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Reservar lugar anticipadamente en lobby; si el horario limita la experiencia de Hogwarts, regresar en Uber/Lyft desde North Parking Garage. Colchón de apps compartido con Epic, no por parque.",
+      "note": "Verificar casilleros y objetos sueltos en atracciones intensas, además de último shuttle. Hogwarts Express requiere Park-to-Park y no se incluye.",
+      "spend": null,
+      "places": [
+        "or26-hogwarts"
+      ],
+      "hotel": "orlando-rosen",
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Universal · Islands of Adventure",
+          "url": "https://www.universalorlando.com/web/en/us/theme-parks/islands-of-adventure"
+        },
+        {
+          "label": "Rosen · autobús parques",
+          "url": "https://www.roseninn6327.com/transportation"
+        },
+        {
+          "label": "Universal · Navidad Hogwarts y Grinchmas",
+          "url": "https://www.universalorlando.com/web/en/us/holidays/islands-of-adventure"
+        }
+      ]
+    },
+    {
+      "n": 4,
+      "date": "2026-12-05",
+      "title": "Disney Magic Kingdom · castillo y clásicos",
+      "base": "Orlando",
+      "am": "Salir temprano de Rosen hacia el Transportation and Ticket Center (TTC); añadir seguridad y monorriel/ferry hasta Magic Kingdom. Entrar con ticket regular fechado del 5/12. Fotografía del castillo, Seven Dwarfs Mine Train y Peter Pan’s Flight conforme a filas.",
+      "pm": "Haunted Mansion, Pirates, comida y descanso. Elegir después entre TRON, Space Mountain y Big Thunder Mountain Railroad si está operativa. Añadir Jingle Cruise o Frozen Holiday Surprise si coincide con horarios; Sleepy Hollow para un waffle.",
+      "night": "Luces de Main Street y, si se programan ese sábado, Disney Starlight: Dream the Night Away y/o Happily Ever After. Consultar My Disney Experience; el desfile y fuegos exclusivos de Mickey’s Very Merry Christmas Party NO corresponden al boleto regular. Volver por TTC y reservar shuttle del domingo a Epic.",
+      "mobility": "Rosen → Transportation and Ticket Center (TTC) en Uber/Lyft o taxi, luego monorriel Express o ferry hasta Magic Kingdom. Regreso en orden inverso, pidiendo vehículo en zona autorizada del TTC. Rosen menciona shuttle Disney pagado sin horario, parada ni precio públicos; no asumir que llega directamente al parque. Provisión para transporte redondo US$50–90 (≈ $931–$1,676 MXN); consultar horarios reales del monorriel y del parque.",
+      "note": "El sábado 5/12/2026 NO es noche de Mickey’s Very Merry Christmas Party, pero tampoco garantiza un desfile especial sin boleto. Confirmar la cartelera de espectáculos. Entrada regular para el 5/12: US$217.26 (≈ $4,045 MXN) con impuestos.",
+      "spend": null,
+      "places": [
+        "or26-magic"
+      ],
+      "hotel": "orlando-rosen",
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Magic Kingdom · entradas oficiales",
+          "url": "https://disneyworld.disney.go.com/admission/tickets/theme-parks/"
+        },
+        {
+          "label": "Disney · calendario de fiesta navideña",
+          "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+        },
+        {
+          "label": "Disney · Navidad 2026",
+          "url": "https://disneyworld.disney.go.com/events-tours/holidays/"
+        },
+        {
+          "label": "Disney · cartelera Magic Kingdom",
+          "url": "https://disneyworld.disney.go.com/destinations/magic-kingdom/"
+        }
+      ]
+    },
+    {
+      "n": 5,
+      "date": "2026-12-06",
+      "title": "Epic Universe · Ministerio de Magia y Dark Universe",
+      "base": "Orlando",
+      "am": "Shuttle Rosen–Epic reservado el sábado o Uber/Lyft si conviene; apertura general sin Early Park Admission en Rosen. Prioridad Harry Potter: Place Cachée y Battle at the Ministry si está operativa; revisar fila en app. Recorrer París mágico y Cosme Acajor.",
+      "pm": "Le Cirque Arcanus y descanso en Café L’air De La Sirène según funciones. Siguiente prioridad Monsters Unchained en Dark Universe; después Nintendo World y Mario Kart. Si el tiempo alcanza, escoger COMO MÁXIMO UNA entre Mine-Cart Madness, Stardust Racers o Hiccup’s Wing Gliders.",
+      "night": "Visitar Celestial Park iluminado y decoración festiva de Nintendo/Isle of Berk si el horario permite. Salir según shuttle; usar Uber/Lyft desde 1201 Epic Boulevard si ya no opera. Preparar equipaje en Rosen.",
+      "mobility": "Rosen → Epic Universe: 07:15, 08:35, 09:55, 11:15. Retornos: 17:25, 18:40, 19:55, 21:10. Reservar lugar presencialmente el día anterior; no cubre entrada anticipada ni eventos especiales. Alternativa: Uber/Lyft en 1201 Epic Boulevard si las filas o la noche exceden la salida del shuttle; colchón compartido con otros parques.",
+      "note": "Universal confirmó decoración navideña Epic y Snoggletog del 14/11/2026 al 3/1/2027. No prometer todas las atracciones de Epic Universe en un solo día.",
+      "spend": null,
+      "places": [
+        "or26-ministry"
+      ],
+      "hotel": "orlando-rosen",
+      "transportRefs": [],
+      "mobilityLinks": [
+        {
+          "label": "Universal · Epic Universe",
+          "url": "https://www.universalorlando.com/web/en/us/theme-parks/epic-universe"
+        },
+        {
+          "label": "Rosen · Epic Universe shuttle",
+          "url": "https://www.roseninn6327.com/services-and-amenities"
+        },
+        {
+          "label": "Universal · Navidad en Epic",
+          "url": "https://www.universalorlando.com/web/en/us/things-to-do/events/holidays-at-universal"
+        }
+      ]
+    },
+    {
+      "n": 6,
+      "date": "2026-12-07",
+      "title": "Orlando → Ciudad de México",
+      "base": "Orlando",
+      "am": "Desayunar, empacar y hacer check-out del Rosen Inn antes de las 11:00, salvo autorización expresa para salir más tarde. No programar actividades lejanas.",
+      "pm": "Uber/Lyft o taxi a MCO, salida del hotel orientativa 12:30–13:00 con margen por tráfico y terminal. Vuelo Volaris MCO 17:05 → MEX 19:45.",
+      "night": "Llegada a México, migración y regreso a casa. No hay sexta noche de hotel.",
+      "mobility": "Traslado Rosen Inn → MCO con Uber/Lyft o taxi; objetivo orientativo de salir del hotel hacia 12:30–13:00 para vuelo internacional 17:05, sujeto a terminal, tráfico y requisito de check-in de Volaris. Confirmar parada de descenso en terminal asignada. Costo ya incluido en la partida redonda MCO ↔ Rosen de US$70–120; NO sumar otra vez.",
+      "note": "Comprobar terminal y hora límite de check-in de Volaris. El traslado a MCO ya está contemplado dentro del presupuesto aeroportuario.",
+      "spend": null,
+      "places": [],
+      "hotel": null,
+      "transportRefs": [
+        "flight-mex-mco"
+      ],
+      "mobilityLinks": [
+        {
+          "label": "Rosen Inn → MCO · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Dr%2C%20Orlando%2C%20FL%2032819%2C%20USA&destination=Orlando%20International%20Airport&travelmode=driving"
+        },
+        {
+          "label": "Volaris oficial",
+          "url": "https://www.volaris.com/"
+        }
+      ]
+    }
+  ],
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Volaris directo · 2 dic ida y 7 dic regreso",
+          "description": "Vuelos directos MEX→MCO el 2 de diciembre (11:10–15:18) y MCO→MEX el 7 (17:05–19:45). Referencia redonda: $7,015 MXN para una persona. Al elegir tarifa, comprobar artículo personal, maleta de cabina, cambios y cargos adicionales.",
+          "links": [
+            {
+              "label": "Volaris · tarifa y compra",
+              "url": "https://www.volaris.com/"
+            }
+          ]
+        },
+        {
+          "title": "Rosen Inn Closest to Universal · 2–7 dic, 5 noches",
+          "description": "Plan A: cinco noches, habitación Deluxe Double flexible para una persona. US$479.95 de habitación + US$59.99 de impuestos = US$539.94 (≈ $10,053 MXN), sin resort fee. Revisar condiciones de cancelación, cobro y posibles depósitos; check-in 16:00, check-out 11:00.",
+          "links": [
+            {
+              "label": "Rosen Inn · oficial",
+              "url": "https://www.roseninn6327.com/"
+            },
+            {
+              "label": "Rosen · FAQ de check-in",
+              "url": "https://www.roseninn6327.com/faq"
+            }
+          ]
+        },
+        {
+          "title": "Universal · 3 días, 3 parques (3, 4 y 6 dic)",
+          "description": "Entrada Universal de tres días y tres parques: US$335.99 de subtotal (≈ $6,256 MXN). Universal Studios Florida el 3, Islands of Adventure el 4 y Epic Universe el 6 de diciembre, un parque por día. No incluye acceso Park-to-Park ni Hogwarts Express; revisar impuestos y vigencia del boleto al elegirlo.",
+          "links": [
+            {
+              "label": "Universal · oferta y alternativas",
+              "url": "https://www.universalorlando.com/web/en/us/tickets-packages/offers/ticketoffer"
+            },
+            {
+              "label": "Hogwarts Express · requisito oficial",
+              "url": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express"
+            }
+          ]
+        },
+        {
+          "title": "Magic Kingdom · entrada regular del sábado 5 de diciembre",
+          "description": "Magic Kingdom, sábado 5 de diciembre de 2026, entrada regular de un día para un adulto: US$204.00 + US$13.26 de impuesto = US$217.26 en el carrito de Disney (≈ $4,027.24 MXN según conversión indicativa de la tienda). Boleto fechado para ese parque; no requiere reserva adicional. El 5 de diciembre no se celebra Mickey’s Very Merry Christmas Party; Lightning Lane es opcional.",
+          "links": [
+            {
+              "label": "Disney · entrada oficial Magic Kingdom",
+              "url": "https://disneyworld.disney.go.com/es-mx/admission/tickets/theme-parks/"
+            },
+            {
+              "label": "Disney · fiestas navideñas 2026",
+              "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+            },
+            {
+              "label": "Disney · reglas de reserva",
+              "url": "https://disneyworld.disney.go.com/guest-services/park-reservations/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Traslados entre aeropuerto, Rosen Inn y parques",
+          "description": "MCO↔Rosen en Uber/Lyft o taxi: prever US$70–120 (≈ $1,303–$2,234 MXN) redondos. Rosen↔Magic Kingdom: US$50–90 (≈ $931–$1,676 MXN) redondos. El shuttle Rosen–Universal/Epic es gratuito, programado y requiere reservar plaza en el hotel. Rosen también menciona transporte Disney con cargo, pero sin horario ni ruta publicados.",
+          "links": [
+            {
+              "label": "Rosen · shuttle y reserva",
+              "url": "https://www.roseninn6327.com/transportation"
+            },
+            {
+              "label": "Rosen · FAQ Disney",
+              "url": "https://www.roseninn6327.com/faq"
+            },
+            {
+              "label": "MCO · transporte",
+              "url": "https://orlandoairports.net/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Hogwarts Express · comparar modalidad Park-to-Park",
+          "description": "El Hogwarts Express entre Studios y Islands requiere boleto Park-to-Park. Universal anuncia una modalidad especial de tres días desde US$357 (≈ $6,647 MXN) más impuestos, con dos días Park-to-Park y uno en Epic Universe. Comparar el importe aplicable a nuestras fechas con el boleto de US$335.99 (≈ $6,256 MXN) antes de decidir: no son precios directamente equivalentes.",
+          "links": [
+            {
+              "label": "Universal · modalidades",
+              "url": "https://www.universalorlando.com/web/en/us/tickets-packages/offers/ticketoffer"
+            },
+            {
+              "label": "Hogwarts Express · requisitos",
+              "url": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express"
+            }
+          ]
+        },
+        {
+          "title": "Terra Luna Resort · paquete alternativo",
+          "description": "Plan B excluyente: US$1,577.46 (≈ $29,370 MXN) por paquete de cinco noches en Standard 2 Queens más entradas promocionales Universal Park-to-Park (3 días + 2 gratis). Comparar beneficios, condiciones de cancelación y cobertura de entradas con el Plan A; no sumar ambos escenarios.",
+          "links": [
+            {
+              "label": "Universal · hoteles",
+              "url": "https://www.universalorlando.com/web/en/us/places-to-stay"
+            },
+            {
+              "label": "Universal · paquetes",
+              "url": "https://www.universalorlando.com/web/en/us/tickets-packages/deals-specials"
+            }
+          ]
+        },
+        {
+          "title": "Lightning Lane Disney y Universal Express · pases opcionales",
+          "description": "Lightning Lane para Magic Kingdom y Universal Express son alternativas para reducir algunas esperas. En Disney, la compra general para visitantes sin beneficios de anticipación de siete días comienza tres días antes de la visita, normalmente a las 07:00 de Orlando; para el 5 de diciembre, desde el día 2. Precio y cobertura dependen de la fecha y atracción.",
+          "links": [
+            {
+              "label": "Disney · Lightning Lane oficial",
+              "url": "https://disneyworld.disney.go.com/lightning-lane-passes/"
+            },
+            {
+              "label": "Universal · entradas y Express",
+              "url": "https://www.universalorlando.com/web/en/us/tickets-packages"
+            }
+          ]
+        }
+      ]
+    ]
+  ],
+  "hotels": [
+    {
+      "id": "orlando-rosen",
+      "city": "Orlando",
+      "name": "Rosen Inn Closest to Universal",
+      "address": "Rosen Inn Closest to Universal, 6327 International Dr, Orlando, FL 32819, USA",
+      "checkIn": "2026-12-02",
+      "checkOut": "2026-12-07",
+      "status": "Plan A · alojamiento elegido",
+      "rate": "Deluxe Double con dos camas dobles, baño privado, para 1 adulto; 2–7 diciembre 2026 (5 noches). Precio de referencia: US$479.95 tarifa de habitación + US$59.99 impuestos = US$539.94 (≈ $10,053 MXN).",
+      "rateConditions": "Best Available Rate denominada flexible en tu selección. Antes de pagar, volver a comprobar la fecha y hora exactas de cancelación sin penalidad, política de no-show, cobro/retención o depósito y total con impuestos. El hotel confirma cero resort fee; no incluye desayuno ni entradas. Check-in 16:00 y salida a más tardar 11:00, sujetos a posibles cargos por cambio de hora. Para registrarte, pasaporte físico y tarjeta de crédito a nombre del titular.",
+      "notes": "Ubicación: International Drive, a unos 1.1 mi (≈ 1.8 km) del complejo original de Universal, distancia aproximada publicada por el hotel, no ruta a pie ni acceso a Epic. Habitación Deluxe Double sin humo: dos camas dobles, baño privado con tina/regadera, caja fuerte, aire acondicionado, Wi-Fi, mini refrigerador, microondas y cafetera (verificados en ficha oficial). Shuttle gratuito programado a Universal Studios/Islands y Epic, sujeto a reserva presencial y disponibilidad; no confiere entrada anticipada. MCO y Disney requieren gasto adicional. Opción de habitación King puede explorarse solo si mejora precio/condiciones; no cambiar la categoría cotizada automáticamente.",
+      "links": [
+        {
+          "label": "Rosen Inn · habitación Deluxe Double y servicios",
+          "url": "https://www.roseninn6327.com/rooms/deluxe-double-room-with-two-double-beds"
+        },
+        {
+          "label": "Rosen Inn · sitio oficial y reserva",
+          "url": "https://www.roseninn6327.com/"
+        },
+        {
+          "label": "Rosen Inn · reglas de check-in y transporte",
+          "url": "https://www.roseninn6327.com/faq"
+        },
+        {
+          "label": "Rosen Inn · shuttle a parques",
+          "url": "https://www.roseninn6327.com/transportation"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Dr%2C%20Orlando%2C%20FL%2032819%2C%20USA"
+    },
+    {
+      "id": "orlando-terraluna",
+      "city": "Orlando",
+      "name": "Universal Terra Luna Resort",
+      "address": "Universal Terra Luna Resort, 5500 Epic Blvd, Orlando, FL 32819, USA",
+      "checkIn": "2026-12-02",
+      "checkOut": "2026-12-07",
+      "status": "Plan B · paquete alternativo excluyente",
+      "rate": "Precio de referencia: US$1,577.46 (≈ $29,370 MXN) por paquete COMPLETO de cinco noches Standard Room – Double Queen + entradas promocionales Universal Park-to-Park (3 días + 2 gratis). NO es tarifa de alojamiento por separado; el reparto hotel/entradas no está disponible y no debe estimarse como real.",
+      "rateConditions": "Para comparar con Rosen, no sumar también las entradas US$335.99 (≈ $6,256 MXN): los productos son alternativos y las entradas del paquete tienen condiciones diferentes. La página oficial del HOTEL, en reservas de solo habitación, indica depósito de una noche + impuestos y cancelación sin penalidad con seis o más días; de cero a cinco días aplica una noche + impuestos. Esas reglas NO se pueden atribuir sin verificar al paquete seleccionado: sus términos de pago, cancelación, cambios y eventual protección deben revisarse antes de reservar. Check-in 16:00, check-out 11:00. No incluye vuelo, entrada Disney, comidas ni transporte MCO gratuito.",
+      "notes": "Situado junto a Epic Universe, pero no asumir que se puede entrar caminando directamente: el acceso a los parques se realiza por transporte autorizado. Hotel oficial Universal con buses gratuitos a los parques y CityWalk. Early Park Admission hasta una hora antes, solamente para parques y atracciones seleccionados, sujeto a entrada válida y calendario; no equivale a Express Pass ni garantiza Battle at the Ministry. Habitación con dos camas queen, baño privado; más cómodo para jornadas Universal, pero el gasto adicional debe compensar sus beneficios reales.",
+      "links": [
+        {
+          "label": "Terra Luna · hotel oficial, servicios y condiciones",
+          "url": "https://www.universalorlando.com/web/en/us/places-to-stay/universal-terra-luna-resort"
+        },
+        {
+          "label": "Universal · buscar paquete hotel y entradas",
+          "url": "https://www.universalorlando.com/web/en/us/tickets-packages/deals-specials"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Universal%20Terra%20Luna%20Resort%2C%205500%20Epic%20Blvd%2C%20Orlando%2C%20FL%2032819%2C%20USA"
+    }
+  ],
+  "stays": [],
+  "majorTransport": [
+    {
+      "id": "flight-mex-mco",
+      "type": "flight",
+      "title": "Volaris · CDMX ↔ Orlando, vuelo directo",
+      "day": null,
+      "selectedOption": "A",
+      "budgetIncludedIn": "orlando-flight",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Volaris",
+          "status": "planning",
+          "selectedFare": "reference",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "MCO",
+                  "departure": "2026-12-02T11:10:00-06:00",
+                  "arrival": "2026-12-02T15:18:00-05:00",
+                  "operator": "Volaris",
+                  "flightNumber": null
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "MCO",
+                  "to": "MEX",
+                  "departure": "2026-12-07T17:05:00-05:00",
+                  "arrival": "2026-12-07T19:45:00-06:00",
+                  "operator": "Volaris",
+                  "flightNumber": null
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "reference",
+              "name": "Tarifa redonda de referencia",
+              "price": {
+                "amount": 7015,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": {
+                  "pieces": null,
+                  "weightKg": null
+                },
+                "cabin": {
+                  "pieces": null,
+                  "weightKg": null
+                },
+                "checked": {
+                  "pieces": null,
+                  "weightKg": null
+                }
+              },
+              "changes": "Verificar al seleccionar tarifa; no confirmadas.",
+              "refunds": "Verificar al seleccionar tarifa; no confirmados."
+            }
+          ],
+          "notes": "Confirmar la vigencia de la tarifa, tasas y la franquicia de equipaje de Volaris.",
+          "links": [
+            {
+              "label": "Volaris oficial",
+              "url": "https://www.volaris.com/"
+            }
+          ]
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Aeropuerto Internacional de Ciudad de México (MEX)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Internacional%20Benito%20Ju%C3%A1rez%20Ciudad%20de%20M%C3%A9xico"
+        },
+        {
+          "name": "Orlando International Airport (MCO)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Orlando%20International%20Airport%20Florida"
+        }
+      ],
+      "boardingNote": "Dos vuelos directos. En MCO confirmar terminal de Volaris en la tarjeta de embarque para localizar transporte terrestre. Llegar a MCO con margen recomendado de alrededor de 3 h antes de salida internacional; no asumir terminal ni mostrador desde fuentes genéricas.",
+      "ticketGuide": "Volaris MEX→MCO 2 dic 11:10–15:18 (duración aproximada 3 h 08 min por cambio de zona UTC−6 a UTC−5) y MCO→MEX 7 dic 17:05–19:45 (3 h 40 min), tarifa de referencia de $7,015 MXN redondo. Equipo personal/cabina/documentado, cambios y terminales requieren confirmación antes de pago. Se contabiliza solo una vez en expenses.orlando-flight.",
+      "notes": "Se presupuesta una sola vez como vuelo internacional redondo."
+    }
+  ],
+  "mapPoints": [
+    {
+      "name": "Rosen Inn Closest to Universal",
+      "coords": [
+        28.46,
+        -81.469
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "stayName": "Orlando",
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Universal Studios Florida",
+      "coords": [
+        28.47724,
+        -81.46924
+      ],
+      "kind": "Parque temático",
+      "base": false,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Universal Islands of Adventure",
+      "coords": [
+        28.47114,
+        -81.47157
+      ],
+      "kind": "Parque temático",
+      "base": false,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Magic Kingdom",
+      "coords": [
+        28.41909,
+        -81.58143
+      ],
+      "kind": "Parque temático",
+      "base": false,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Universal Epic Universe",
+      "coords": [
+        28.4435,
+        -81.44774
+      ],
+      "kind": "Parque temático",
+      "base": false,
+      "optional": false,
+      "order": 5
+    }
+  ],
+  "expenses": [
+    {
+      "id": "orlando-flight",
+      "category": "flight",
+      "concept": "Volaris MEX–MCO redondo",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": 7015,
+        "currency": "MXN"
+      },
+      "status": "quoted",
+      "notes": "Captura 15/11/2026 para un adulto, ida 02/12 11:10–15:18, regreso 07/12 17:05–19:45. Equipaje adicional pendiente."
+    },
+    {
+      "id": "orlando-hotel",
+      "category": "lodging",
+      "concept": "Rosen Inn Closest to Universal · 5 noches Plan A",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": 539.94,
+        "currency": "USD"
+      },
+      "status": "quoted",
+      "notes": "Tarifa flexible de referencia: US$479.95 + US$59.99 de impuestos = US$539.94 (≈ $10,053 MXN) para 5 noches. Terra Luna es una alternativa excluyente.",
+      "nights": 5,
+      "hotelId": "orlando-rosen"
+    },
+    {
+      "id": "orlando-universal",
+      "category": "admission",
+      "concept": "Universal 3 parques / 3 días · boleto individual",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 335.99,
+        "currency": "USD"
+      },
+      "status": "quoted",
+      "notes": "Subtotal del carrito según captura del 15/11/2026. verificar total final y condiciones; un parque diferente cada día."
+    },
+    {
+      "id": "orlando-disney",
+      "category": "admission",
+      "concept": "Magic Kingdom · entrada de 1 día · 5 dic 2026, impuestos incluidos",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 217.26,
+        "currency": "USD"
+      },
+      "status": "quoted",
+      "notes": "Magic Kingdom, 5/12, 1 adulto: entrada US$204.00 + US$13.26 de impuesto = US$217.26 (≈ $4,045 MXN en Atlas). El carrito Disney muestra $4,027.24 MXN con tasa distinta. Impuestos Disney incluidos, sin agregar otra partida."
+    },
+    {
+      "id": "orlando-airport",
+      "category": "local_transport",
+      "concept": "MCO ↔ Rosen Inn · taxi/auto por aplicación, redondo",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": 95,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Provisión redonda US$95 (≈ $1,769 MXN), con rango aproximado US$70–120 (≈ $1,303–$2,234 MXN); no duplicar entre llegada y regreso."
+    },
+    {
+      "id": "orlando-disney-transfer",
+      "category": "local_transport",
+      "concept": "Rosen Inn ↔ Magic Kingdom · traslados redondos",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 70,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Provisión redonda US$70 (≈ $1,303 MXN), rango US$50–90 (≈ $931–$1,676 MXN). Incluye el acceso vía TTC y monorriel/ferry."
+    },
+    {
+      "id": "orlando-extra-local",
+      "category": "local_transport",
+      "concept": "Traslados de respaldo a Universal si falla shuttle",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 40,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Colchón estimado; el shuttle gratuito Rosen–Universal no debe presupuestarse como gasto."
+    },
+    {
+      "id": "orlando-incidentals",
+      "category": "contingency",
+      "concept": "Imprevistos menores",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": 80,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Fondo de imprevistos US$80 (≈ $1,490 MXN). Pases rápidos, recuerdos, varita y seguro médico van por separado."
+    },
+    {
+      "id": "orlando-food-1",
+      "category": "food",
+      "concept": "Alimentación · día 1 · 2026-12-02",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": 30,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Llegada vespertina: cena e hidratación; desayuno previo al vuelo a cargo del viajero, no contabilizado aquí. Provisión para esa jornada."
+    },
+    {
+      "id": "orlando-food-2",
+      "category": "food",
+      "concept": "Alimentación · día 2 · 2026-12-03",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 55,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno sencillo, comida Leaky Cauldron y cena/colaciones en parque. Provisión para esa jornada."
+    },
+    {
+      "id": "orlando-food-3",
+      "category": "food",
+      "concept": "Alimentación · día 3 · 2026-12-04",
+      "date": "2026-12-04",
+      "cost": {
+        "amount": 55,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno, comida Three Broomsticks, bebidas y cena. Provisión para esa jornada."
+    },
+    {
+      "id": "orlando-food-4",
+      "category": "food",
+      "concept": "Alimentación · día 4 · 2026-12-05",
+      "date": "2026-12-05",
+      "cost": {
+        "amount": 65,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno, comida y cena en Magic Kingdom; sábado con margen para refrigerios. Provisión para esa jornada."
+    },
+    {
+      "id": "orlando-food-5",
+      "category": "food",
+      "concept": "Alimentación · día 5 · 2026-12-06",
+      "date": "2026-12-06",
+      "cost": {
+        "amount": 60,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno, pausa temática en Epic, cena ligera; no incluye comidas premium ni bebidas alcohólicas. Provisión para esa jornada."
+    },
+    {
+      "id": "orlando-food-6",
+      "category": "food",
+      "concept": "Alimentación · día 6 · 2026-12-07",
+      "date": "2026-12-07",
+      "cost": {
+        "amount": 25,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Desayuno y comida ligera antes de salir a MCO; ninguna cena en Orlando. Provisión para esa jornada."
+    },
+    {
+      "id": "orlando-universal-tax",
+      "category": "taxes",
+      "concept": "Impuesto provisional sobre SUBTOTAL Universal, pendiente de total del carrito",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": 21.84,
+        "currency": "USD"
+      },
+      "status": "estimated",
+      "notes": "Provisión de impuesto Universal: 6.5% × US$335.99 = US$21.84 (≈ $407 MXN). Es un cálculo por verificar contra el total real del carrito, no un impuesto confirmado. No gravar otra vez el hotel ni la entrada Disney."
+    },
+    {
+      "id": "orlando-travel-insurance",
+      "category": "other",
+      "concept": "Seguro médico de viaje · opcional",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": null,
+        "currency": "USD"
+      },
+      "status": "pending",
+      "optional": true,
+      "notes": "Cobertura para urgencias en EE. UU.: comparar primas, cobertura y exclusiones antes de decidir."
+    },
+    {
+      "id": "orlando-baggage-extras",
+      "category": "other",
+      "concept": "Volaris · equipaje o selección de asiento adicional",
+      "date": "2026-12-02",
+      "cost": {
+        "amount": null,
+        "currency": "MXN"
+      },
+      "status": "pending",
+      "optional": true,
+      "notes": "Comprobar qué equipaje incluye la tarifa Volaris seleccionada; el costo de piezas adicionales depende de la tarifa."
+    },
+    {
+      "id": "orlando-express-extras",
+      "category": "other",
+      "concept": "Lightning Lane Disney / Universal Express · opcionales",
+      "date": "2026-12-03",
+      "cost": {
+        "amount": null,
+        "currency": "USD"
+      },
+      "status": "pending",
+      "optional": true,
+      "notes": "Pases rápidos no contratados ni presupuestados; no indispensables y no incluir como gasto obligatorio."
+    }
+  ],
+  "budgetPreliminary": true,
+  "budgetRange": [
+    39000,
+    44000
+  ],
+  "budgetNote": "Plan A · 1 persona · 2–7 diciembre de 2026. Subtotal presupuestado $38,481.31 MXN, incluyendo vuelo Volaris ($7,015 MXN), Rosen Inn 5 noches (US$539.94, ≈ $10,053 MXN), Universal 3 parques (US$335.99 subtotal, ≈ $6,256 MXN), Magic Kingdom 5/12 (US$217.26 con impuestos, ≈ $4,045 MXN), transportes y comida para seis días. Incluye US$21.84 (≈ $407 MXN) de impuesto provisional Universal, pendiente de comprobar en el total de su carrito; Disney ya incluye US$13.26 (≈ $247 MXN) de impuestos. Los traslados MCO↔Rosen y Rosen↔Disney se cuentan una sola vez, y el fondo de respaldo de US$40 (≈ $745 MXN) se comparte entre días de Universal. Rango para planear: $39,000–$44,000 MXN. Seguro médico, equipaje adicional, varita, recuerdos y pases rápidos no están incluidos. Terra Luna es un paquete alternativo excluyente, no un gasto adicional. Las conversiones del Atlas usan $18.6188 MXN/USD (DOF 13/11/2026); Disney mostraba una tasa distinta. Los importes MXN pueden diferir unos centavos por redondeo.",
+  "ticketNotes": [
+    {
+      "title": "Volaris · tarifa y equipaje",
+      "note": "Volaris: $7,015 MXN redondos de referencia. Confirmar franquicia exacta de artículo personal, cabina y documentado, medidas y cambios de tarifa."
+    },
+    {
+      "title": "Rosen · shuttle a Universal",
+      "note": "Servicio gratuito pero NO continuo. Reservar presencialmente en lobby idealmente un día antes, cupo limitado. Verificar salidas y regresos de rutas C y A, que no cubren entrada anticipada ni eventos."
+    },
+    {
+      "title": "MCO y Magic Kingdom · recogidas",
+      "note": "MCO: verificar terminal y punto oficial de Uber/Lyft. Magic Kingdom: transporte privado al TTC + monorriel o ferry; regreso desde TTC. El hotel menciona shuttle Disney de pago sin precio ni horarios confirmados."
+    },
+    {
+      "title": "Apps de respaldo y presupuesto",
+      "note": "El fondo común de US$40 (≈ $745 MXN) cubre aplicaciones de respaldo de los tres días Universal. El aeropuerto y Disney ya tienen dos partidas redondas separadas: US$95 (≈ $1,769 MXN) y US$70 (≈ $1,303 MXN)."
+    }
+  ],
+  "sources": [
+    {
+      "label": "Florida Climate Center · normales Orlando",
+      "url": "https://climatecenter.fsu.edu/products-services/data/1991-2020-normals/orlando"
+    },
+    {
+      "label": "Rosen · transporte y reservas shuttle",
+      "url": "https://www.roseninn6327.com/transportation"
+    },
+    {
+      "label": "Rosen · amenities Epic Universe",
+      "url": "https://www.roseninn6327.com/services-and-amenities"
+    },
+    {
+      "label": "Universal parques · horario y cierres",
+      "url": "https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/park-hours"
+    },
+    {
+      "label": "Disney fiesta navideña 2026",
+      "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+    },
+    {
+      "label": "Banxico USD MXN tasa referencia",
+      "url": "https://www.banxico.org.mx/SieInternet/consultarDirectorioInternetAction.do?accion=consultarCuadro&idCuadro=CF102&locale=en&sector=19"
+    },
+    {
+      "label": "Georreferenciación de Orlando y parques · OpenStreetMap/Mapcarta",
+      "url": "https://mapcarta.com/32054886"
+    },
+    {
+      "label": "Coordenadas Universal Studios Florida",
+      "url": "https://mapcarta.com/W449808332/Map"
+    },
+    {
+      "label": "Coordenadas Islands of Adventure",
+      "url": "https://mapcarta.com/35988076"
+    },
+    {
+      "label": "Coordenadas Magic Kingdom",
+      "url": "https://mapcarta.com/Walt_Disney_World/Magic_Kingdom"
+    },
+    {
+      "label": "Coordenadas Epic Universe",
+      "url": "https://mapcarta.com/es/W1372221500"
+    },
+    {
+      "label": "Universal · direcciones oficiales y recogida por aplicación en Epic Universe",
+      "url": "https://www.universalorlando.com/web/en/us/plan-your-visit/hours-information/directions-and-parking"
+    },
+    {
+      "label": "Rosen Inn · preguntas frecuentes sobre transporte Disney (con cargo y sin horarios)",
+      "url": "https://www.roseninn6327.com/faq"
+    },
+    {
+      "label": "Universal · Diagon Alley, Knight Bus y atracciones Harry Potter",
+      "url": "https://www.universalorlando.com/web/es/us/theme-parks/universal-studios-florida/the-wizarding-world-of-harry-potter-diagon-alley/"
+    },
+    {
+      "label": "Universal · menú oficial de Leaky Cauldron",
+      "url": "https://www.universalorlando.com/web/en/us/things-to-do/dining/leaky-cauldron/menu.html"
+    },
+    {
+      "label": "Universal · menú oficial Three Broomsticks",
+      "url": "https://www.universalorlando.com/web/en/us/things-to-do/dining/three-broomsticks/menu.html"
+    },
+    {
+      "label": "Universal · Ministerio de Magia y Le Cirque Arcanus",
+      "url": "https://www.universalorlando.com/web/es/us/epic-universe/worlds/the-wizarding-world-of-harry-potter-ministry-of-magic"
+    },
+    {
+      "label": "Universal · gastronomía de Epic Universe",
+      "url": "https://www.universalorlando.com/web/es/us/theme-parks/epic-universe/dining"
+    },
+    {
+      "label": "Disney · Sleepy Hollow y sus waffles/funnel cakes",
+      "url": "https://disneyworld.disney.go.com/es-us/dining/magic-kingdom/sleepy-hollow/"
+    },
+    {
+      "label": "Disney · Big Thunder Mountain Railroad y operativa",
+      "url": "https://disneyworld.disney.go.com/attractions/big-thunder-mountain-railroad/"
+    },
+    {
+      "label": "Salida y puesta de sol en Orlando, 2–7 diciembre 2026",
+      "url": "https://worldtimeandweather.com/sun/united-states/orlando?month=2026-12"
+    },
+    {
+      "label": "CBP · mexicanos que ingresan por vía aérea: pasaporte y visa/BCC",
+      "url": "https://www.help.cbp.gov/s/article/Article-1670?lang=en&language=en_US"
+    },
+    {
+      "label": "Departamento de Estado EE. UU. · visa de visitante",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/tourism-visit/visitor.html"
+    },
+    {
+      "label": "Universal · promociones Park-to-Park",
+      "url": "https://www.universalorlando.com/web/en/us/tickets-packages/offers/ticketoffer"
+    },
+    {
+      "label": "Universal · Hogwarts Express",
+      "url": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express"
+    },
+    {
+      "label": "Disney · boleto fecha específica",
+      "url": "https://disneyworld.disney.go.com/admission/tickets/theme-parks/"
+    },
+    {
+      "label": "Disney · Lightning Lane",
+      "url": "https://disneyworld.disney.go.com/lightning-lane-passes/"
+    },
+    {
+      "label": "Rosen · shuttle horarios Universal/ Epic",
+      "url": "https://www.roseninn6327.com/hotel-information"
+    },
+    {
+      "label": "Disney · monorriel Express desde TTC",
+      "url": "https://disneyworld.disney.go.com/es-mx/guest-services/monorail-transportation/"
+    },
+    {
+      "label": "Universal · puntos de recogida North Garage y Epic Boulevard",
+      "url": "https://www.universalorlando.com/web/es/us/plan-your-visit/hours-information/directions-and-parking"
+    },
+    {
+      "label": "MCO · guía oficial llegadas A/B",
+      "url": "https://orlandoairports.net/site/uploads/Arrivals-Guide.pdf"
+    },
+    {
+      "label": "Rosen Inn · ficha oficial Deluxe Double",
+      "url": "https://www.roseninn6327.com/rooms/deluxe-double-room-with-two-double-beds"
+    },
+    {
+      "label": "Terra Luna · dirección, impuestos y reglas de habitación",
+      "url": "https://www.universalorlando.com/web/en/us/places-to-stay/universal-terra-luna-resort"
+    },
+    {
+      "label": "Universal · comunicado Navidad 2026",
+      "url": "https://media.universalparksusa.com/press-releases/universal-orlando-resort-kicks-off-its-destination-wide-holidaycelebration-111126/"
+    },
+    {
+      "label": "Disney · programación navideña diurna",
+      "url": "https://disneyworld.disney.go.com/events-tours/holidays/"
+    },
+    {
+      "label": "Banxico · tipo de cambio publicado DOF 13/11/2026 (18.6188 MXN/USD)",
+      "url": "https://sidof.segob.gob.mx/notas/getNewsletter/13-11-2026/Matutina/330805"
+    },
+    {
+      "label": "Banxico · tabla FIX 13/11/2026",
+      "url": "https://www.banxico.org.mx/tipcamb/tipCamMIAction.do?idioma=sp"
+    }
+  ],
+  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios de parques, condiciones de compra y traslados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. Park-to-Park desde US$357 (≈ $6,647 MXN) + impuestos es un precio base, no la tarifa exacta de estas fechas. Presupuesto auditado 15/11/2026: Banxico DOF 13/11 publica 18.6188 MXN/USD, diferente de FIX determinado 13/11 18.5525; fecha atribuida correctamente. Universal impuesto +6.5% solo estimación matemática provisional, no comprobante. Carrito Disney recibido el 15/11/2026 para 5/12: US$204.00 de entrada más US$13.26 impuesto = US$217.26 total, conversión ilustrativa Disney $4,027.24 MXN usando 18.5365. Reemplaza la provisión previa Disney US$180–240. No añadir impuesto adicional a Disney.",
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Conviene asegurar primero vuelos, alojamiento y entradas de los parques. El boleto Universal elegido permite un parque por día; si quieres subir a Hogwarts Express, compara antes la modalidad Park-to-Park. Magic Kingdom se adquiere por separado para el 5 de diciembre. Los traslados y pases rápidos pueden decidirse después."
+  },
+  "climate": "Para el 2–7 de diciembre en Orlando, las normales históricas mensuales rondan 12 a 23 °C (mínima nocturna y máxima diurna). Es una época relativamente seca frente al verano, aunque una lluvia puntual o un frente frío pueden alterar el día; no es un pronóstico para diciembre de 2026.\n\n*Qué llevar:* Playeras y pantalones cómodos en capas, sudadera o chamarra ligera para primeras y últimas horas, impermeable compacto y calzado cómodo para caminar y permanecer de pie. Priorizar ropa y accesorios que quepan en el equipaje permitido por la tarifa Volaris.\n\n*Horas de luz:* Entre el 2 y el 7 de diciembre, el sol sale aproximadamente de 07:01 a 07:05 y se pone hacia las 17:28, horario local de Orlando (EST, UTC−5). Reservar fotos exteriores para la mañana o antes del atardecer; después aprovechar la iluminación navideña. Consultar horarios oficiales de parques y espectáculos, que no dependen del ocaso.",
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Activo · cuatro parques",
+      "tone": "orange",
+      "text": "Viaje individual con cinco noches en un único alojamiento y cuatro jornadas seguidas de parques. Las filas implican muchas horas de pie: priorizar Harry Potter y alternar atracciones con recorridos tranquilos, comidas y descansos. No se requiere automóvil propio; el shuttle de Rosen hacia Universal es gratuito, programado y con cupos sujetos a reserva, sin acceso anticipado incluido."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Inglés · USD",
+      "tone": "green",
+      "text": "El inglés se utiliza en parques, restaurantes y traslados; el español puede encontrarse en parte de la atención, sin garantía. Se paga en dólares estadounidenses (USD); las tarjetas son ampliamente aceptadas, aunque conviene llevar una pequeña reserva. Al pagar, elegir USD y rechazar la conversión dinámica a MXN. Tipo de cambio referencial fechado en el presupuesto, no tarifa garantizada por el banco."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Comprobar vigencia",
+      "tone": "orange",
+      "text": "Para volar MEX–MCO como turista mexicano: pasaporte mexicano vigente y visa estadounidense de visitante válida; ya cuentas con visa, pero revisa su vencimiento y la vigencia de tu pasaporte para toda la visita. No necesitas ESTA con visa válida ni hay escala en terceros países. Lleva datos del hotel y vuelo de regreso por si los solicita migración. Florida y México utilizan enchufes A/B: no necesitas adaptador con clavijas mexicanas compatibles; red habitual 120 V, 60 Hz. Comprueba que el cargador admita INPUT 100–240 V o 120 V. Considera seguro médico de viaje."
+    }
+  ],
+  "exchangeRates": {
+    "USD": 18.6188
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-11-13",
+    "baseCurrency": "MXN",
+    "description": "Referencia USD→MXN de $18.6188 por US$1: tipo de cambio publicado por Banco de México en el Diario Oficial de la Federación el viernes 13/11/2026. No es el FIX determinado el domingo 15 (día inhábil); el FIX determinado el viernes 13 fue $18.5525. Se conserva el valor anterior como tasa orientativa para comparar las capturas y NO como tasa bancaria garantizada.",
+    "sources": {
+      "USD": "https://sidof.segob.gob.mx/notas/getNewsletter/13-11-2026/Matutina/330805"
+    }
+  },
+  "seasonality": {
+    "summary": "Orlando para Disney y Universal: mejores ventanas, por comodidad y afluencia habitual, en días laborales de mediados/finales de enero (tras los festivos), febrero fuera de Presidents’ Day y carreras, finales de abril después de Spring Break, primera mitad de noviembre fuera de festivos y primera quincena de diciembre. Esta última es especialmente buena si buscas la Navidad de Harry Potter; 2–7 diciembre de 2026 mantiene el ambiente festivo sin llegar a la saturación de Navidad, aunque no garantiza parques vacíos. Marzo, mayo y octubre dependen más de la semana elegida; junio a septiembre se desaconsejan para caminar cuatro días seguidos por bochorno y tormentas, y septiembre además coincide con el pico ciclónico. Los estados son una valoración editorial global para este tipo de viaje, no un calendario de precios garantizados. Cada rango expresa mínima y máxima media mensual en °C, redondeadas a enteros, según normales 1991–2020 del Aeropuerto Internacional de Orlando (Florida Climate Center/NOAA); no son pronósticos ni extremos. La precipitación normal crece de mayo a septiembre, con máximos en junio-agosto. Riesgo atlántico oficial junio–noviembre, con máximo habitual en torno al 10 de septiembre. Para eventos y picos de afluencia se usaron calendarios oficiales 2026/2027 y patrones de demanda; revisar cada año al escoger fechas.",
+    "months": {
+      "10": {
+        "status": "conditional",
+        "description": "19 a 29 °C. Aceptable, mejor en la segunda mitad por descenso del calor y de las lluvias, aunque persiste riesgo de ciclones hasta noviembre. Halloween Horror Nights en Universal requiere entrada aparte y puede adelantar cierres de Studios; el puente de octubre y Halloween elevan demanda.",
+        "icon": "cloudy"
+      },
+      "11": {
+        "status": "recommended",
+        "description": "15 a 26 °C. Recomendable en días laborales de la primera mitad o antes de Acción de Gracias: temperaturas cómodas y el mes más seco en promedio; aparecen decoraciones navideñas. Evitar la semana de Thanksgiving y comprobar las fiestas con cierre anticipado en Magic Kingdom.",
+        "icon": "partlyCloudy"
+      },
+      "12": {
+        "status": "recommended",
+        "description": "12 a 23 °C. Recomendable sobre todo en la primera quincena: ambiente navideño en los tres mundos de Harry Potter, clima fresco y lluvias moderadas; el 2–7/12/2026 es una buena elección. Evitar Navidad y Año Nuevo por aglomeraciones y precios; comprobar noches de fiesta de Magic Kingdom.",
+        "icon": "partlyCloudy"
+      },
+      "01": {
+        "status": "recommended",
+        "description": "10 a 22 °C. Recomendable después del regreso a clases: tiempo fresco, poca lluvia y menor demanda entre semana; evitar Año Nuevo, el maratón Disney y el fin de semana de Martin Luther King. Puede haber frentes fríos, horarios reducidos y cierres temporales por mantenimiento.",
+        "icon": "partlyCloudy"
+      },
+      "02": {
+        "status": "recommended",
+        "description": "11 a 24 °C. Recomendable en días laborales fuera de vacaciones escolares: de los meses más secos y cómodos para caminar; Mardi Gras en Universal añade espectáculos. Presidents’ Day, vacaciones de invierno y carreras Disney pueden elevar filas y tarifas.",
+        "icon": "partlyCloudy"
+      },
+      "03": {
+        "status": "conditional",
+        "description": "13 a 26 °C. Clima seco y agradable, pero Spring Break suele provocar filas largas y tarifas mayores desde principios o mediados de mes, con picos cerca de Semana Santa. Aceptable solo en fechas laborables alejadas de recesos escolares.",
+        "icon": "cloudy"
+      },
+      "04": {
+        "status": "recommended",
+        "description": "16 a 29 °C. Recomendable en la segunda mitad, cuando pasan Semana Santa y buena parte de Spring Break; días más cálidos y lluvia aún moderada. Evitar las vacaciones de Pascua y revisar carreras o competencias de grupos.",
+        "icon": "partlyCloudy"
+      },
+      "05": {
+        "status": "conditional",
+        "description": "19 a 31 °C. Aceptable a principios de mes, con mayor calor y humedad y aumento gradual de las tormentas; los días laborales suelen ser más manejables que los festivos. Evitar Memorial Day y el inicio de vacaciones escolares.",
+        "icon": "cloudy"
+      },
+      "06": {
+        "status": "avoid",
+        "description": "22 a 33 °C. Desaconsejable para cuatro parques consecutivos: calor húmedo, lluvia abundante y tormentas frecuentes de tarde; además comienzan vacaciones de verano y temporada oficial de huracanes.",
+        "icon": "hot"
+      },
+      "07": {
+        "status": "avoid",
+        "description": "23 a 33 °C. Desaconsejable: calor y humedad muy altos, chubascos o tormentas frecuentes y demanda de vacaciones escolares, especialmente en torno al 4 de julio. Podrían aparecer promociones puntuales, pero no compensan el cansancio térmico.",
+        "icon": "hot"
+      },
+      "08": {
+        "status": "avoid",
+        "description": "23 a 33 °C. Desaconsejable por calor, tormentas casi diarias y aumento del riesgo tropical; tras el regreso a clases puede haber menos filas y ofertas, a costa de un clima menos cómodo y mayor incertidumbre.",
+        "icon": "hot"
+      },
+      "09": {
+        "status": "avoid",
+        "description": "22 a 32 °C. Desaconsejable para este viaje aunque suele combinar menos filas y tarifas competitivas: bochorno, lluvias y pico climatológico de ciclones alrededor del 10 de septiembre. Eventos de Halloween pueden alterar horarios y requerir entrada aparte.",
+        "icon": "hot"
+      }
+    },
+    "referenceLinks": [
+      {
+        "label": "Florida Climate Center / NOAA · normales 1991–2020 Orlando (temperaturas y lluvia)",
+        "url": "https://climatecenter.fsu.edu/products-services/data/1991-2020-normals/orlando"
+      },
+      {
+        "label": "NOAA National Hurricane Center · temporada atlántica y pico ciclónico",
+        "url": "https://www.nhc.noaa.gov/climo/"
+      },
+      {
+        "label": "Disney · calendario oficial de eventos 2026–2027",
+        "url": "https://disneyworld.disney.go.com/events-tours/calendar/"
+      },
+      {
+        "label": "Disney · fiesta de Navidad 2026 y noches de cierre especial",
+        "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
+      },
+      {
+        "label": "Universal · calendario oficial de eventos 2026",
+        "url": "https://media.universalparksusa.com/press-releases/universal-orlando-resort-reveals-dates-2026/"
+      },
+      {
+        "label": "Universal · Mardi Gras 2027",
+        "url": "https://www.universalorlando.com/web/es/us/things-to-do/events/mardi-gras/"
+      },
+      {
+        "label": "Undercover Tourist · afluencia y recesos 2026/2027 (estimaciones, no dato oficial)",
+        "url": "https://www.undercovertourist.com/blog/best-time-to-visit-disney-world/"
+      }
+    ]
+  },
+  "lodgingSummary": "Plan A: 5 noches en Rosen Inn Closest to Universal, habitación Deluxe Double privada para 1 adulto en International Drive, US$539.94 (≈ $10,053 MXN) con impuestos. Plan B Terra Luna es una alternativa excluyente de paquete hotel + entradas (US$1,577.46, ≈ $29,370 MXN), no un segundo alojamiento ni un costo adicional.",
+  "heroLodgingSummary": "5 noches · 1 alojamiento",
+  "exchangeNote": "Conversión orientativa de US$1 = $18.6188 MXN según publicación del DOF del 13/11/2026. No es el FIX determinado el domingo 15 ni necesariamente el tipo aplicado por tu tarjeta. Ver fuente y fecha en Presupuesto.",
+  "costExclusions": "No incluidos: seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
+  "cover": "or26-hogwarts",
+  "placeDescriptions": {
+    "or26-diagon": "Diagon Alley concentra los escaparates de las tiendas mágicas y el dragón del banco Gringotts; uno de los escenarios principales de Harry Potter en Universal Studios Florida.",
+    "or26-hogwarts": "El castillo de Hogwarts domina Hogsmeade y alberga Forbidden Journey. La ambientación del pueblo invita a explorar sus tiendas antes o después de visitar a Hagrid.",
+    "or26-magic": "El castillo de Cenicienta es el emblema de Magic Kingdom. Sus alrededores conectan con las atracciones clásicas y la iluminación navideña de Main Street.",
+    "or26-ministry": "Place Cachée recrea el París mágico dentro de Epic Universe y conduce a Battle at the Ministry, experiencia prioritaria de la jornada dedicada al Ministerio de Magia."
+  },
+  "groundConnections": [
+    {
+      "id": "mco-hotel",
+      "title": "MCO ↔ Rosen Inn · traslados aeroportuarios",
+      "days": [
+        1,
+        6
+      ],
+      "mode": "Uber/Lyft o taxi autorizado",
+      "costLabel": "Provisión redonda US$70–120 (≈ $1,303–$2,234 MXN); central US$95 (≈ $1,769 MXN)",
+      "budgetExpenseId": "orlando-airport",
+      "description": "Miércoles 2: después de migración y equipaje, ubicar el punto de recogida oficial de la terminal asignada y trasladarse a Rosen Inn. La llegada al hotel se calcula con margen para migración, equipaje y tráfico; nunca asumir terminal de Volaris sin tarjeta de embarque. Lunes 7: salir con margen de 3 h antes del vuelo internacional de las 17:05, más viaje y tráfico; salida del hotel aproximadamente 12:30–13:00 como objetivo de planeación, no cita confirmada. No existe transporte gratuito Rosen–MCO.",
+      "links": [
+        {
+          "label": "MCO · guía oficial de llegadas",
+          "url": "https://orlandoairports.net/site/uploads/Arrivals-Guide.pdf"
+        },
+        {
+          "label": "Rosen · transporte terrestre",
+          "url": "https://www.roseninn6327.com/transportation"
+        },
+        {
+          "label": "MCO → Rosen · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Orlando%20International%20Airport%20(MCO)%2C%20Orlando%2C%20FL%2C%20USA&destination=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Drive%2C%20Orlando%2C%20FL%2032819%2C%20USA&travelmode=driving"
+        }
+      ]
+    },
+    {
+      "id": "rosen-universal",
+      "title": "Rosen ↔ Studios / Islands · 3 y 4 de diciembre",
+      "days": [
+        2,
+        3
+      ],
+      "mode": "Shuttle gratuito programado, ruta C",
+      "costLabel": "Shuttle gratuito; transporte privado de respaldo en fondo común",
+      "budgetExpenseId": "orlando-extra-local",
+      "description": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Horarios publicados consultados el 15/11/2026, sujetos a cambios. Reservar presencialmente en el Universal Partner Hotel Vacation Planning Center del lobby, idealmente un día antes; confirmar horarios, plaza y punto de regreso. Servicio gratuito con cupo limitado y paradas múltiples; no válido para entrada anticipada ni eventos especiales. Estación de taxis y aplicaciones para respaldo: North Parking Garage, 6000 Universal Boulevard, no la puerta de atracciones. Si quieres permanecer hasta el cierre y el último shuttle ya pasó, utilizar app de transporte y el colchón separado de US$40 (≈ $745 MXN; compartido con Epic; NO US$40 por parque).",
+      "links": [
+        {
+          "label": "Rosen · horarios, ruta C y reservas",
+          "url": "https://www.roseninn6327.com/hotel-information"
+        },
+        {
+          "label": "Universal · paradas oficiales de Uber/Lyft",
+          "url": "https://www.universalorlando.com/web/es/us/plan-your-visit/hours-information/directions-and-parking"
+        },
+        {
+          "label": "Rosen → CityWalk · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Drive%2C%20Orlando%2C%20FL%2032819%2C%20USA&destination=6000%20Universal%20Boulevard%2C%20Orlando%20FL%2C%20USA&travelmode=driving"
+        }
+      ]
+    },
+    {
+      "id": "rosen-disney",
+      "title": "Rosen ↔ Magic Kingdom · sábado 5 de diciembre",
+      "days": [
+        4
+      ],
+      "mode": "Uber/Lyft o taxi + monorriel/ferry",
+      "costLabel": "Provisión redonda US$50–90 (≈ $931–$1,676 MXN); central US$70 (≈ $1,303 MXN)",
+      "budgetExpenseId": "orlando-disney-transfer",
+      "description": "Plan A: Uber/Lyft desde Rosen hasta el Transportation and Ticket Center (TTC), siguiendo las indicaciones de la app para la zona autorizada. Desde el TTC tomar el monorriel Express o ferry a Magic Kingdom; añadir tiempo de control de seguridad y embarque tanto a la ida como a la vuelta. Para regresar, ir de Magic Kingdom al TTC y solicitar ahí el vehículo. Rosen menciona traslado Disney con cargo, pero no publica itinerario, parada ni precio; consultarlo en recepción antes de sustituir Uber/Lyft. El monorriel de Disney no supone una entrada adicional al parque.",
+      "links": [
+        {
+          "label": "Disney · monorriel TTC ↔ Magic Kingdom",
+          "url": "https://disneyworld.disney.go.com/es-mx/guest-services/monorail-transportation/"
+        },
+        {
+          "label": "Rosen · transporte Disney con cargo",
+          "url": "https://www.roseninn6327.com/faq"
+        },
+        {
+          "label": "Rosen → TTC · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Drive%2C%20Orlando%2C%20FL%2032819%2C%20USA&destination=Transportation%20and%20Ticket%20Center%2C%20Walt%20Disney%20World%2C%20Lake%20Buena%20Vista%2C%20FL%2C%20USA&travelmode=driving"
+        }
+      ]
+    },
+    {
+      "id": "rosen-epic",
+      "title": "Rosen ↔ Epic Universe · domingo 6 de diciembre",
+      "days": [
+        5
+      ],
+      "mode": "Shuttle gratuito programado, ruta A",
+      "costLabel": "Shuttle gratuito; transporte privado de respaldo en fondo común",
+      "budgetExpenseId": "orlando-extra-local",
+      "description": "Rosen → Epic Universe: 07:15, 08:35, 09:55, 11:15. Retornos: 17:25, 18:40, 19:55, 21:10. Horarios publicados consultados el 15/11/2026, sujetos a cambios. Reservar presencialmente en el Universal Partner Hotel Vacation Planning Center del lobby, idealmente un día antes; confirmar horarios, plaza y punto de regreso. Servicio gratuito con cupo limitado y paradas múltiples; no válido para entrada anticipada ni eventos especiales. Si el transporte programado no encaja con las filas de Ministry of Magic o la iluminación nocturna, punto oficial Uber/Lyft de Epic Universe: 1201 Epic Boulevard; NO usar la dirección general del estacionamiento 1001 Epic Boulevard. El colchón de app de US$40 (≈ $745 MXN) del presupuesto se comparte con Studios/Islands, no se cobra dos veces.",
+      "links": [
+        {
+          "label": "Rosen · ruta y horarios Epic",
+          "url": "https://www.roseninn6327.com/hotel-information"
+        },
+        {
+          "label": "Universal · recogida Epic 1201 Epic Boulevard",
+          "url": "https://www.universalorlando.com/web/es/us/plan-your-visit/hours-information/directions-and-parking"
+        },
+        {
+          "label": "Rosen → Epic · ruta",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=Rosen%20Inn%20Closest%20to%20Universal%2C%206327%20International%20Drive%2C%20Orlando%2C%20FL%2032819%2C%20USA&destination=1201%20Epic%20Boulevard%2C%20Orlando%2C%20FL%2032819%2C%20USA&travelmode=driving"
+        }
+      ]
+    }
+  ],
+  "hotelsComparison": "Escenarios EXCLUYENTES para las mismas cinco noches: Plan A Rosen Inn US$539.94 (≈ $10,053 MXN) de hotel + Universal 3-Day, 3-Park US$335.99 (≈ $6,256 MXN) como subtotal de boleto = US$875.93 (≈ $16,309 MXN) antes de posibles impuestos pendientes del boleto; Park-to-Park no incluido, sin entrada anticipada. Plan B Terra Luna paquete hotel + Universal Park-to-Park promocional por US$1,577.46 (≈ $29,370 MXN) según captura, con beneficio Early Park Admission sujeto a restricciones. Diferencia aritmética entre importes mostrados US$701.53 (≈ $13,062 MXN), NO sobreprecio real comparable al céntimo porque los productos, duración de entradas, impuestos y beneficios son distintos. Ambos excluyen Disney, vuelo y traslados a MCO. No sumar Plan B al presupuesto Plan A."
+}

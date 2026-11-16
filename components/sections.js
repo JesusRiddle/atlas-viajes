@@ -18,7 +18,7 @@ window.AtlasSections = function (ctx) {
             </li>`;
         }).join('');
         const note = t.profile?.why ? `<div class="experience-note">
-            <div class="experience-note-heading"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17V5h16v12M2 17h20M7 21h10M8 9h8M8 13h5"/></svg><strong>Un viaje con pocas maletas</strong></div>
+            <div class="experience-note-heading"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17V5h16v12M2 17h20M7 21h10M8 9h8M8 13h5"/></svg><strong>El enfoque de este viaje</strong></div>
             <p>${esc(t.profile.why)}</p>
         </div>` : '';
         return `<article class="panel experience-panel" id="experiencias">
@@ -117,9 +117,14 @@ window.AtlasSections = function (ctx) {
         const trip = trips.find(t => t.id === id);
         const hotels = trip?.hotels || [];
         const suggested = stays[id] || [];
+        const comparison = typeof trip?.hotelsComparison === 'string' && trip.hotelsComparison.trim()
+            ? '<p class="hotel-option-comparison" style="grid-column:1/-1"><strong>Comparación de planes:</strong> ' +
+                esc(trip.hotelsComparison) + '</p>'
+            : '';
         return `<div class="stay-list hotel-grid">
             ${hotels.map(hotelCard).join('')}
             ${suggested.map(suggestedStayCard).join('')}
+            ${comparison}
             ${!hotels.length && !suggested.length ? '<article class="hotel-card"><p class="draft-pending">Por definir</p></article>' : ''}
         </div>`;
     }

@@ -642,7 +642,7 @@
   "climate": "En mayo, clima primaveral más templado, todavía variable: Milano y Torino con máximas diurnas orientativas de 20 a 23 °C; Liguria 20 a 23 °C; Toscana 22 a 25 °C. Son rangos generales y no un pronóstico, con posibilidad de lluvia y viento costero.\n\n*Qué llevar:* ropa ligera por capas, impermeable compacto, calzado estable y cómodo para adoquines y posibles desniveles. Minimizar peso de equipaje y evitar caminatas largas con maletas.\n\n*Horas de luz:* aproximadamente 14 a 15 horas; los atardeceres más tardíos permiten paseos sin comprimir los días.",
   "solo": "Viaje solo, alojamientos próximos a estaciones. Confirmar elevador y piso en Casa Danè, consigna en Lucca y accesibilidad antes de cargar equipaje; Cúpula de Brunelleschi (463 escalones) sujeta a capacidad física.",
   "lodgingSummary": "Alojamientos candidatos y sin reservar: B&B HOTEL Milano Aosta (9–13 mayo, 4 noches), Casa Danè en La Spezia (13–16 mayo, 3 noches) y Hotel Mia Cara & SPA en Firenze (16–21 mayo, 5 noches). Presupuesto central de planeación $34,000 MXN para 12 noches; estimación, no cotización de fechas exactas. Nota: ferias comerciales en Milano del 9 al 13 mayo podrían incrementar la tarifa real del primer alojamiento.",
-  "heroLodgingSummary": "12 noches, 3 alojamientos: Milano 9–13 mayo; La Spezia 13–16 mayo; Firenze 16–21 mayo. No reservados.",
+  "heroLodgingSummary": "12 noches, 3 alojamientos",
   "mapPoints": [
     {
       "name": "Milano",

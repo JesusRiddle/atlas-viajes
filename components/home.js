@@ -137,12 +137,17 @@ window.AtlasHome = function (ctx) {
     // New-trip home prices are derived from the same ledger used in Presupuesto.
     // No flight is booked automatically: the first quoted option is a dated reference.
     const homePrice = t => {
-        const estimate = window.AtlasBudget?.planningEstimate?.(t);
-        if (!estimate) return homeReady(t) ? price(t) : null;
-        const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : null;
-        if (travelers === null) return '$' + estimate.low.toLocaleString('es-MX') + '–$' + estimate.high.toLocaleString('es-MX');
-        const perPerson = amount => (amount / travelers).toLocaleString('es-MX', { maximumFractionDigits: 0 });
-        return String.fromCharCode(36) + perPerson(estimate.low) + '–' + String.fromCharCode(36) + perPerson(estimate.high);
+        const projection = window.AtlasBudget?.planningEstimate?.(t);
+        const explicitRange = Array.isArray(t.budgetRange) && t.budgetRange.length === 2 &&
+            t.budgetRange.every(value => Number.isFinite(value) && value > 0) &&
+            t.budgetRange[0] <= t.budgetRange[1]
+            ? { low: t.budgetRange[0], high: t.budgetRange[1] } : null;
+        const selected = projection || (t.budgetPreliminary ? explicitRange : null);
+        if (!selected) return homeReady(t) ? price(t) : null;
+        const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 1;
+        const format = amount => (amount / travelers).toLocaleString('es-MX', { maximumFractionDigits: 0 });
+        const currencySign = String.fromCharCode(36);
+        return currencySign + format(selected.low) + '–' + currencySign + format(selected.high);
     };
     function card(t, i) {
         const title = esc(t.name);
@@ -166,10 +171,12 @@ window.AtlasHome = function (ctx) {
             (country || t.days?.length ? '<span class="card-overview-location">' +
                 (country ? esc(country) : '') + (country && t.days?.length ? ' · ' : '') +
                 (t.days?.length ? t.days.length + ' días' : '') + '</span>' : '') +
-            (dateText ? '<span class="carddates">' + dateText + '</span>' : '') +
             '</div><h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
-            (cities ? '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' : '') +
-            (Number.isInteger(t.work) ? '<div class="cardfacts"><span>' + t.work + ' laborales</span></div>' : '') +
+            '<div class="card-trip-details">' +
+            (dateText ? '<span class="carddates">' + dateText + '</span>' : '') +
+            (Number.isInteger(t.work) ? '<div class="cardfacts"><span>' + t.work + ' días laborales</span></div>' : '') +
+            '</div>' +
+            (cities ? '<p class="card-route" title="' + esc(cities) + '"><span class="card-route-label">Ruta</span> ' + cities + '</p>' : '') +
             (introduction ? '<p class="card-trip-intro">' + esc(introduction) + '</p>' : '') +
             (amount ? '<div class="cardbottom"><div class="card-price"><small>' +
                 (travelers ? 'Presupuesto estimado por persona' : 'Presupuesto estimado del viaje') +

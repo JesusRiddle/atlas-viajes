@@ -9,7 +9,7 @@ const positioned=points.filter(p => Array.isArray(p.coords) && p.coords.length =
 const nightsByBase = new Map((t.bases || []).map(([name, nights]) => [String(name).toLocaleLowerCase('es'), Number(nights)]));
 const stayNights = point => nightsByBase.get(String(point.stayName || point.name).toLocaleLowerCase('es'));
 const stayLabel = point => {
-  if (!point.base) return 'Excursión';
+  if (!point.base) return point.kind === 'Parque temático' ? 'Parque temático' : 'Excursión';
   const nights = stayNights(point);
   return Number.isInteger(nights) && nights > 0 ? nights + (nights === 1 ? ' noche' : ' noches') : 'Noches por definir';
 };
@@ -20,7 +20,7 @@ return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 <div class="trip-map-intro">
 <div class="trip-map-heading">${icon}<span>EXPLORA TU DESTINO</span></div>
 <h3 class="trip-map-title" id="map-title">Tu viaje en el mapa.</h3>
-<p class="trip-map-description">Explora las ciudades del recorrido en el mapa interactivo.</p>
+<p class="trip-map-description">Ubica dónde dormirás y los lugares que visitarás durante el viaje.</p>
 </div>
 
 </div>
@@ -29,7 +29,7 @@ ${positioned.length ? `<div class="trip-map-cities">
 </div>
 ${positioned.length ? `<div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>` : `<div class="trip-map trip-map-pending"><p class="draft-pending">Por definir</p></div>`}
 <div class="trip-map-footer"><p class="map-status" role="status">${positioned.length ? "El mapa se carga al llegar a esta sección." : "Coordenadas por definir."}</p>
-<div class="map-legend"><span>Lugar donde dormirás</span><span>Excursión sin alojamiento</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div></div>
+<div class="map-legend"><span>Lugar donde dormirás</span><span>${points.some(p => p.kind === "Parque temático") ? "Parque temático" : "Excursión sin alojamiento"}</span>${points.some(p=>p.optional)?'<span>Visita opcional</span>':''}</div></div>
 
 </section>`;
 }

@@ -4753,5 +4753,49 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
       "attribution": "Vitor Oliveira / CC BY-SA 2.0"
     }
+  },
+  "or26-diagon": {
+    "name": "Diagon Alley · Gringotts",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diagon%20Alley%20Universal%20Studios.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Diagon%20Alley%20Universal%20Studios.jpg",
+      "author": "Chleb000",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Chleb000"
+    }
+  },
+  "or26-hogwarts": {
+    "name": "Castillo de Hogwarts · Islands of Adventure",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hogwarts%20Castle%20(15379458178).jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Hogwarts%20Castle%20(15379458178).jpg",
+      "author": "Steven Miller",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Steven Miller"
+    }
+  },
+  "or26-magic": {
+    "name": "Castillo de Cenicienta · Magic Kingdom",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Magic%20Kingdom%20Cinderella%20Castle.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Magic%20Kingdom%20Cinderella%20Castle.jpg",
+      "author": "Gsink",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Gsink"
+    }
+  },
+  "or26-ministry": {
+    "name": "Ministerio de Magia · Epic Universe",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ministry%20of%20Magic%20Universal%20Epic%20Universe.jpg?width=960",
+      "source": "https://commons.wikimedia.org/wiki/File:Ministry%20of%20Magic%20Universal%20Epic%20Universe.jpg",
+      "author": "Martin Lewison",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Martin Lewison"
+    }
   }
 }
