@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 11 · Presupuesto integral provisional documentado. Siguiente: 12 Fotografías y portada. Revisión de tarifas de 2027, tests Node, navegador y auditorías B/C/D pendientes.
+**Etapa:** 12 · Fotografías y portada incorporadas editorialmente. Siguiente: 13 Auditoría global/PR. Verificación real de carga de imágenes, Node/Chromium y auditorías B/C/D pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -27,7 +27,7 @@
 - [x] 09 · Día por día: 16 jornadas con mañana/tarde/noche, hoteles candidatos, movilidad, tips y planes B; horarios de tren y gastos diarios pendientes
 - [x] 10 · Panorama: narrativa, indicadores, clima, cinco alojamientos y subtotal aéreo reconciliados; prueba real Desktop/Mobile pendiente
 - [x] 11 · Presupuesto integral provisional: 35 estimaciones terrestres, vuelo cotizado, rango, TC y no duplicación; faltan precios finales.
-- [ ] 12 · Fotografías y portada
+- [x] 12 · Fotografías y portada: 13 jornadas con galerías, portada estival horizontal y carrusel de 6 fotografías; verificación visual de carga pendiente
 - [ ] 13 · Auditoría global, tests/CI y PR final
 
 ## Verificación de Temporadas · 2026-11-16
@@ -133,11 +133,19 @@
 - Cada transporte terrestre se asocia a una partida de referencia mediante budgetIncludedIn; el vuelo no se duplica en expenses. Pase/trenes de CHF 650 son globales y no se cargan íntegros a un día; actividades, alimentación y alojamiento sí se distribuyen por jornada, sin doble suma.
 - Prueba de regresión financiera añadida a tests/loader-regression.test.cjs; ejecución Node/Chromium pendiente, sin aprobación para merge.
 
+## Fotografías y portada · 2026-11-16
+- Portada principal: foto horizontal de Grindelwald y los Alpes vista desde First, por Sabrina Schreiber (Wikimedia Commons, CC BY-SA 4.0); identificador `swissgreen-cover`. Carrusel activo de seis lugares: Grindelwald, Lauterbrunnen, Oeschinensee, lago Brienz, Riffelsee y Heididorf.
+- Ocho fotografías nuevas registradas en `data/places.json` y una foto horizontal adicional de portada: Grindelwald/Eiger, Heididorf, Titlis Cliff Walk, Bachalpsee, Giessbach, Brienz, Jungfraujoch, Riffelsee y portada. Cada registro nuevo conserva fuente Commons, autor, licencia y enlace de licencia; las galerías también reutilizan fotos ya acreditadas de otros destinos, incluida la fuente Lindt de Suiza Nevada que muestra un interior y no nieve.
+- Se agregaron galerías a 13 de 16 días. No se añadieron fotos de relleno a días de vuelo ni al traslado a Ginebra. Las fotografías son representaciones del lugar, no garantía de clima o condiciones del día de visita.
+- Diecinueve claves fotográficas únicas con descripciones editoriales de 15–30 palabras; Wengen aparece como foto y visita opcional el día 10; no se incluyen fotos estacionales con `winter`, `invierno` o `nevado`.
+- Añadida regresión a `tests/loader-regression.test.cjs` y cambiada expectativa obsoleta de portada nula. La selección en Wikimedia Commons y las atribuciones se revisaron a nivel documental, **pero NO se pudieron abrir todas las imágenes en navegador ni verificar respuesta HTTP de cada URL o aspecto cromático final**; hacerlo en auditoría D.
+- Se modificaron exclusivamente el JSON de Suiza Verde, el catálogo compartido de fotos (`data/places.json`), su test y la bitácora; los JSON de otros viajes no se alteraron. Ningún merge autorizado.
+
 ## Pendientes prioritarios
 1. Cotizar las cinco estancias de junio 2027 y comparar tres opciones de pase/tickets con todas las rutas y suplementos.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
 3. Validar noche de Ginebra y aeropuerto de salida; presupuesto integral sin duplicidades.
-4. Incorporar fotografías y portada; ejecutar pruebas de contrato de transporte, sumas, DOM/responsive y QA antes de PR/merge.
+4. Ejecutar auditoría global de fotografías, prueba de carga y color en Desktop/Mobile, Node/CI, contratos de transporte y sumas antes de solicitar PR/merge.
 
 **Candidatos por ciudad:** Zúrich Marta/Bristol/Fred; Lucerna Alpha/Waldstätterhof/Central; Grindelwald Tschuggen/Bernerhof/Alpenblick; Zermatt Alphubel/Sarazena/Metropol; Ginebra ibis Genève Aéroport/Nash/ibis budget. Ninguno reservado ni cotizado en todas las fechas. Grindelwald es la prioridad económica por sus seis noches.
 
