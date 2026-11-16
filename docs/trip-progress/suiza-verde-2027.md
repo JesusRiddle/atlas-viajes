@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** Auditoría cruzada de 02/04/05 concluida a nivel de datos; siguiente sección: 06 Reservaciones importantes. Auditorías B/D de navegador y CI pendientes.
+**Etapa:** 06 · Reservaciones importantes incorporada y validada estructuralmente; siguiente sección: 07 Movilidad y conexiones. Auditorías B/D de navegador y CI pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -21,7 +21,7 @@
 - [x] 03 · Ruta y 16 jornadas tentativas actualizadas; auditoría A abierta
 - [x] 04 · Mapa: 23 puntos georreferenciados (5 zonas de alojamiento, 18 excursiones); Ginebra representa la ciudad, no el hotel ni el aeropuerto
 - [x] 05 · Experiencias: 12 fichas de MUST por región, tren Luzern–Interlaken, alternativas y gastronomía regional documentada
-- [ ] 06 · Reservaciones importantes: condiciones y prioridades
+- [x] 06 · Reservaciones importantes: tres grupos, 12 fichas con estado, fechas, alternativas y enlaces oficiales.
 - [ ] 07 · Transporte mayor: modelo `AtlasTransportModel.validateTrip` y render sin ejecutar
 - [ ] 08 · Alojamiento: zonas y hoteles candidatos investigados; tarifas exactas de 14 noches pendientes
 - [ ] 09 · Día por día: traslados puerta a puerta y gastos pendientes
@@ -55,6 +55,13 @@
 **Hallazgos corregidos:** (1) Se eliminó de la tarjeta de junio la referencia al Brienzer Rothorn, que no está en el programa. (2) El mapa dejó de tratar el punto físico del aeropuerto de Ginebra como lugar para dormir: representa Ginebra como ciudad, a falta de hotel definido. (3) Se incorporó el Luzern–Interlaken Express a las experiencias porque es un tramo escénico ya incluido en la ruta. (4) Se añadió acceso real a Heididorf: subida de 40 min/2,4 km y Heidi Bus normalmente solo fines de semana y festivos; logística del martes 15 pendiente de validar. (5) Se aclararon duración y posibles cierres de Bachalpsee y que el paso por Wengen después de Jungfraujoch no es seguro.
 **Comprobaciones:** 12 tarjetas mensuales con estado y temperatura; 23 coordenadas numéricas, sin nombres repetidos y cinco puntos vinculados a 14 noches; 12 experiencias con textos y sin URLs; días y calendario coherentes. Fuente oficial de acceso Heidi y fichas turísticas consultadas.
 **Pendientes externos:** calendario definitivo 2027, estado de senderos en junio, conexiones puerta a puerta y hotel concreto en Ginebra. No ejecutadas pruebas Node ni renderizado Desktop/Mobile en esta auditoría; quedan para B/D. No constituye visto bueno para merge.
+
+## Verificación de Reservaciones importantes · 2026-11-16
+- Se reemplazó la lista antigua de ocho notas por el contrato editorial: `reservations` en tres grupos y `planningDetails` como objeto con título y nota pública.
+- 12 fichas: 3 de prioridad muy alta, 5 alta y 4 flexibles. Todas declaran expresamente ausencia de compra o reserva e incluyen enlaces oficiales.
+- Jungfraujoch: confirmada obligación de reserva de asiento de 1 mayo a 31 octubre 2027 además de billete; pasar torniquetes al menos 10 minutos antes. Titlis: Rotair, Cliff Walk y cueva glaciar incluidos en billete peatonal; Ice Flyer separado. Oeschinensee: cambios sujetos a condiciones, cancelación ordinaria no disponible.
+- Vuelos Lufthansa/SWISS $23,300.14 MXN permanecen cotización de noviembre 2026, no comprados. Las tarifas de montaña 2027 siguen pendientes; no se reutilizaron como cotización los precios actuales.
+- Pendientes: comprobar apertura de calendarios 2027, condiciones particulares, selección hotelera y trenes/pases. No se ha ejecutado CI ni inspección visual Desktop/Mobile en esta etapa.
 
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
