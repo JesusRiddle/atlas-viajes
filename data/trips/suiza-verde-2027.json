@@ -65,7 +65,7 @@
     },
     {
       "city": "Maienfeld · el mundo de Heidi",
-      "description": "Conocer Heididorf y sus escenarios rurales, entre viñedos y montañas de la región de Heidiland. Como sabores de los Grisones, explorar Bündner Gerstensuppe y Capuns, si aparecen en la carta."
+      "description": "Visitar Heididorf entre los viñedos y montañas de Maienfeld. Desde la estación, el sendero señalizado implica unos 40 minutos de subida; el Heidi Bus suele circular solo fines de semana y festivos. Especialidades de los Grisones: Capuns y Bündner Gerstensuppe."
     },
     {
       "city": "Lucerna · puentes y lago",
@@ -76,20 +76,24 @@
       "description": "Ascender desde Engelberg en los remontes del Titlis, disfrutar el teleférico giratorio Rotair, cruzar el Cliff Walk y entrar en la cueva glaciar, sujetos a operación y meteorología."
     },
     {
+      "city": "Luzern–Interlaken Express · lagos y montañas",
+      "description": "Viajar desde Lucerna hasta Interlaken por una ruta ferroviaria panorámica entre lagos, pueblos y laderas verdes. El trayecto forma parte del traslado hacia Grindelwald y no exige otra noche."
+    },
+    {
       "city": "Lauterbrunnen · el valle de cascadas",
       "description": "Caminar entre praderas y saltos de agua, contemplar Staubbachfall y recorrer las cataratas interiores de Trümmelbach, si están abiertas. Continuar hacia Mürren y, si alcanza el tiempo, Gimmelwald."
     },
     {
       "city": "Grindelwald-First · pasarela y lago",
-      "description": "Subir al mirador First y recorrer su Cliff Walk; si el sendero está abierto y sin nieve peligrosa, caminar hasta Bachalpsee para ver el lago bajo las cumbres alpinas."
+      "description": "Subir al mirador First y recorrer su Cliff Walk. Bachalpsee requiere aproximadamente dos horas caminando ida y vuelta desde First; incluirlo únicamente si el sendero está abierto y las condiciones son seguras."
     },
     {
       "city": "Brienz · lago turquesa y Giessbach",
-      "description": "Navegar por el lago Brienz hasta Giessbach See, subir en el funicular histórico y recorrer los miradores y caminos habilitados junto a las cataratas y el Grandhotel Giessbach."
+      "description": "Navegar por el lago Brienz y desembarcar en Giessbach See para conocer el funicular histórico, las cascadas y el entorno del Grandhotel. Verificar el calendario del barco y funicular para junio de 2027."
     },
     {
       "city": "Jungfraujoch · de praderas a glaciares",
-      "description": "Viajar en los trenes de montaña hasta Jungfraujoch para contemplar el Aletsch y los paisajes de nieve; de regreso, pasear por Wengen si los horarios y el clima lo permiten."
+      "description": "Viajar hasta Jungfraujoch en trenes de montaña y contemplar el glaciar Aletsch desde miradores habilitados. Wengen se puede recorrer de regreso si se elige esa ruta y queda tiempo; no es una visita garantizada."
     },
     {
       "city": "Oeschinensee · lago entre montañas",
@@ -153,7 +157,7 @@
       "pm": "Traslado en tren a Lucerna; paseo breve si queda tiempo.",
       "night": "Noche en Lucerna",
       "mobility": null,
-      "note": "Propuesta de planeación. Confirmar horarios, disponibilidad y condiciones de 2027 antes de reservar.",
+      "note": "Día largo y traslado de alojamiento: el folleto oficial sitúa Heididorf a unos 40 minutos caminando cuesta arriba desde la estación de Maienfeld (2.4 km, 248 m de ascenso). Heidi Bus anunciado para sábados, domingos y festivos entre mayo y octubre: no presuponer servicio el martes. Verificar alternativas de transporte, equipaje y apertura 2027 antes de fijar el día.",
       "spend": null,
       "places": []
     },
@@ -599,19 +603,19 @@
       "order": 23
     },
     {
-      "name": "Aeropuerto de Ginebra",
+      "name": "Ginebra",
       "coords": [
-        46.238098,
-        6.10895
+        46.2044,
+        6.1432
       ],
-      "kind": "Alojamiento",
+      "kind": "Alojamiento (zona por confirmar)",
       "base": true,
       "optional": false,
       "order": 24,
       "stayName": "Ginebra o entorno del aeropuerto"
     }
   ],
-  "planningDetails": "Escenario principal: 12–27 junio de 2027; septiembre se contrastará económicamente cuando estén completos alojamientos, transportes y entradas. Ruta enfocada en los MUST naturales, sin Glacier Express ni Bernina Express, reservados como ideas para otro viaje ferroviario. Vuelo multidestino cotizado pero no comprado. La distribución de noches sigue provisional hasta validar la logística de Heidi, Jungfrau y el regreso. Investigación inicial de alojamiento: Hotel Marta/Bristol/Fred (Zúrich); Alpha/Waldstätterhof/Central (Lucerna); Tschuggen/Bernerhof/Alpenblick (Grindelwald); Alphubel/Sarazena/Metropol (Zermatt); ibis Genève Aéroport/Nash/ibis budget (Ginebra). Solo candidatos, sin tarifas verificadas para la estancia completa.",
+  "planningDetails": "Escenario principal: 12–27 junio de 2027; septiembre se contrastará económicamente cuando estén completos alojamientos, transportes y entradas. Ruta enfocada en los MUST naturales, sin Glacier Express ni Bernina Express, reservados como ideas para otro viaje ferroviario. Vuelo multidestino cotizado pero no comprado. La distribución de noches sigue provisional hasta validar la logística de Heidi, Jungfrau y el regreso. Investigación inicial de alojamiento: Hotel Marta/Bristol/Fred (Zúrich); Alpha/Waldstätterhof/Central (Lucerna); Tschuggen/Bernerhof/Alpenblick (Grindelwald); Alphubel/Sarazena/Metropol (Zermatt); ibis Genève Aéroport/Nash/ibis budget (Ginebra). Solo candidatos, sin tarifas verificadas para la estancia completa. Auditoría de secciones 02/04/05: para Heididorf el 15 de junio evitar asumir Heidi Bus entre semana; la opción peatonal implica ascenso y habrá que gestionar equipaje en el traslado Zúrich–Lucerna. La noche en la región de Ginebra sigue sin hotel concreto y el mapa ubica la ciudad, no un establecimiento reservado.",
   "lodgingSummary": "Zúrich 13–15 junio (2 noches, cercanía a Zürich HB); Lucerna 15–17 (2, estación); Grindelwald 17–23 (6, centro/estación); Zermatt 23–26 (3, estación/Gornergrat); Ginebra aeropuerto 26–27 (1, salida temprana). Hoteles candidatos registrados; ninguno reservado ni cotizado para todas sus noches.",
   "heroLodgingSummary": "14 noches · cinco alojamientos provisionales",
   "budgetPreliminary": true,
@@ -639,7 +643,7 @@
     ]
   ],
   "seasonality": {
-    "summary": "Para este recorrido de praderas, cascadas, lagos y miradores alpinos, junio y septiembre son las ventanas más equilibradas: junio ofrece más luz, flores y deshielo; septiembre suele facilitar los senderos altos, aunque con días más cortos. Julio y agosto presentan la oferta estival más amplia, pero también mayor demanda y precios potencialmente superiores. Mayo conserva limitaciones por nieve y remontes; de octubre a abril no conviene intentar esta misma ruta verde sin rediseñarla. Rangos orientativos para localidades y valles de la ruta (no para cumbres, donde puede helar todo el año); no son pronósticos de 2027.",
+    "summary": "Junio y septiembre son las ventanas más equilibradas para esta ruta de valles verdes, cascadas, lagos y miradores. Junio aporta flores, deshielo y mucha luz, pero algunos senderos altos pueden conservar nieve; septiembre suele ofrecer accesos más despejados y días más cortos. Julio y agosto tienen oferta estival amplia con mayor demanda; de octubre a mayo hay restricciones por temporada, nieve o mantenimiento. Rangos de temperatura ilustrativos de ciudades y valles bajos, no de las cumbres ni pronósticos para 2027. El costo total del mismo viaje se comparará con septiembre una vez cotizado junio.",
     "months": {
       "10": {
         "status": "conditional",
@@ -675,7 +679,7 @@
       },
       "06": {
         "status": "recommended",
-        "description": "Aproximadamente 11 a 23 °C en valles y ciudades. Praderas verdes, flores, deshielo y días muy largos; conviene reservar alojamiento con tiempo. El teleférico de Oeschinensee tiene operación estival programada y el Brienzer Rothorn llega a la cumbre desde el 5 de junio de 2027; senderos altos como Bachalpsee y Riffelsee deben verificarse."
+        "description": "Aproximadamente 11 a 23 °C en localidades y valles bajos. Praderas verdes, flores, deshielo y jornadas largas, con demanda creciente. El teleférico de Oeschinensee tiene temporada estival anunciada para junio de 2027; la apertura del remonte no garantiza que Bachalpsee, Riffelsee ni los senderos altos estén libres de nieve."
       },
       "07": {
         "status": "conditional",
@@ -747,7 +751,10 @@
     "https://www.chur.graubuenden.ch/de/uebersicht-rezepte-buendner-spezialitaeten",
     "https://www.jungfrau.ch/en-gb/grindelwaldfirst/lake-bachalpsee/",
     "https://www.giessbach.ch/en/kontakt-anreise/",
-    "https://www.valais.ch/en/taste/valais-specialties/recipes/cholera"
+    "https://www.valais.ch/en/taste/valais-specialties/recipes/cholera",
+    "https://www.heididorf.ch/fileadmin/siteadministration/heidiweg/Heidi_Weg_ENG.pdf",
+    "https://www.heididorf.ch/fileadmin/siteadministration/prospekte/Heididorf_Brochure_in_espanol.pdf",
+    "https://www.myswitzerland.com/es/planificacion/sobre-suiza/costumbres-y-tradiciones/platos-tipicos-de-la-cocina-del-pais/"
   ],
   "sourceNote": "Temporadas actualizadas 16 noviembre 2026 con información climática general de MeteoSwiss, turismo oficial y calendarios publicados de Oeschinensee y Brienzer Rothorn 2027. Rangos de temperatura aproximados para ciudades y valles de varias altitudes, no normales exactas de cada estación ni pronósticos para junio 2027. Aperturas de otros servicios y estado de senderos deben verificarse antes de viajar. Cotización aérea aportada por el usuario en noviembre de 2026.",
   "budgetRange": null,
