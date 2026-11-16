@@ -44,16 +44,16 @@
   "work": 10,
   "costs": [],
   "profile": {
-    "pace": "Moderado",
-    "paceWhy": "Cuatro estancias en catorce noches y excursiones con días de respaldo por lluvia.",
+    "pace": "Moderado–activo",
+    "paceWhy": "Cinco alojamientos en 14 noches, con seis noches seguidas en Grindelwald. Excursiones largas a Titlis, Jungfraujoch y Oeschinensee; días intercambiables según visibilidad, nieve residual y energía.",
     "solo": "Adecuado",
-    "soloWhy": "Red ferroviaria extensa y alojamientos céntricos, sin vehículo de alquiler.",
+    "soloWhy": "Trayectos principales en tren y hoteles candidatos cercanos a estaciones; las conexiones a Heididorf y la custodia de equipaje del día de cambio de alojamiento requieren confirmación.",
     "weather": "Variable",
-    "weatherWhy": "Alta montaña condicionada por nubosidad, viento y mantenimiento.",
-    "why": "Lagos, pueblos alpinos verdes, Heidi y una experiencia glaciar sin esquiar."
+    "weatherWhy": "Valles templados en junio, cimas frías, chubascos y nubosidad. Bachalpsee y Riffelsee pueden mantener senderos altos cerrados.",
+    "why": "Suiza verde de praderas, lagos turquesa, cascadas, pequeños pueblos, Heidi y el Matterhorn, con excursiones panorámicas sin deportes de invierno."
   },
-  "intro": "En Zúrich, el casco antiguo y Lindt Home of Chocolate abren el viaje antes de visitar Maienfeld y el mundo de Heidi. Lucerna ofrece el Kapellbrücke, el lago de los Cuatro Cantones y una excursión al Titlis con su puente suspendido. En Grindelwald esperan los paisajes verdes del Oberland bernés: Lauterbrunnen y sus cascadas, Mürren, Wengen, First y Bachalpsee, los glaciares de Jungfraujoch y las aguas turquesas de Brienz y Oeschinensee. La última región alpina es Zermatt, con el Matterhorn, el tren a Gornergrat y Riffelsee. El recorrido termina rumbo al aeropuerto de Ginebra.",
-  "introShort": "De Zúrich y el pueblo de Heidi a Lucerna y el Titlis; después, los valles de Jungfrau, los lagos de Brienz y Oeschinensee, y el Matterhorn desde Zermatt.",
+  "intro": "El viaje comienza en Zúrich, entre callejuelas históricas y el chocolate de Lindt, antes de descubrir en Maienfeld los paisajes de Heidi. Desde Lucerna, el lago de los Cuatro Cantones y la cima glaciar del Titlis abren paso al tren panorámico Luzern–Interlaken Express. En Grindelwald, el valle de Lauterbrunnen, Mürren y los miradores de First conducen hacia Bachalpsee, Jungfraujoch y los lagos turquesa de Brienz y Oeschinensee. La ruta continúa hasta Zermatt, donde el Matterhorn domina las vistas desde Gornergrat y el entorno de Riffelsee. Los últimos kilómetros atraviesan los paisajes del lago Lemán hasta Ginebra.",
+  "introShort": "Un viaje de postal desde Zúrich y el pueblo de Heidi hasta Lucerna, Titlis y los valles verdes de Grindelwald. Cascadas, lagos turquesa, trenes panorámicos y la silueta del Matterhorn completan la aventura en Zermatt.",
   "climate": "Del 13 al 26 de junio, en Zúrich y Lucerna se esperan como referencia climática mínimas nocturnas de 11 a 13 °C y máximas diurnas de 20 a 24 °C; en los pueblos alpinos de Grindelwald y Zermatt, mínimas aproximadas de 6 a 10 °C y máximas de 16 a 20 °C. En las cumbres de Titlis, Jungfraujoch y Gornergrat puede helar incluso en verano. Son valores orientativos, no un pronóstico para 2027: lluvia, tormentas, viento y nubes pueden impedir miradores, y los senderos de Bachalpsee y Riffelsee pueden mantener nieve.\n\n*Qué llevar:* Vestimenta por capas, impermeable cortaviento, abrigo térmico y guantes ligeros para cumbres; calzado de caminata con agarre para senderos habilitados. Con equipaje de mano, priorizar prendas combinables y no prever ropa veraniega como única opción.\n\n*Horas de luz:* En Zúrich, entre el 13 y el 26 de junio, el amanecer será aproximadamente a las 05:28–05:30 y el atardecer a las 21:22–21:26, hora local de verano (CEST, UTC+2): cerca de 16 horas de luz. Aprovechar las tardes largas para paseos urbanos y valles, pero programar los miradores altos temprano y según la previsión, pues las nubes y los últimos remontes limitan el tiempo útil.",
   "solo": "Ruta pensada para una persona, con trenes y alojamientos en zonas conectadas; no requiere conducir ni hacer deportes de montaña.",
   "flight": "COTIZACIÓN, NO COMPRA · Lufthansa/SWISS Economy Light multidestino, 1 persona, 12–27 junio 2027: MEX→ZRH, salida 12 jun 19:50, llegada 13 jun 17:25 (+1), conexión Frankfurt 1 h 40 min. GVA→MEX, 27 jun 09:10–17:30, conexión Frankfurt 3 h. Precio mostrado en el sitio de Lufthansa: $23,300.14 MXN por el itinerario completo (captura proporcionada por el viajero en noviembre de 2026). Incluye artículo personal y equipaje de mano; verificar medidas y reglas antes de comprar. Economy Light sujeta a restricciones; confirmar condiciones de cambios, reembolso y precio final. Alternativa comparada: vuelo redondo por Zúrich Economy Light $23,101 MXN en Google Flights, no comprado. Las tarifas pueden variar.",
@@ -2171,7 +2171,7 @@
   },
   "lodgingSummary": "14 noches, 5 alojamientos candidatos, ninguno reservado: Zúrich 13–15 junio (2); Lucerna 15–17 (2); Grindelwald 17–23 (6); Zermatt 23–26 (3); Ginebra aeropuerto 26–27 (1). Categoría con baño privado y acceso ferroviario priorizados; tarifas y disponibilidad junio 2027 pendientes.",
   "heroLodgingSummary": "14 noches, 5 alojamientos",
-  "budgetPreliminary": true,
+  "budgetPreliminary": null,
   "hotels": [
     {
       "id": "zurich-marta",
@@ -2329,21 +2329,21 @@
       "title": "Estilo de viaje",
       "badge": "Moderado–activo",
       "tone": "orange",
-      "text": "Recorrido en solitario, principalmente en tren, con cinco alojamientos. Alterna ciudades, pueblos alpinos, caminatas y miradores. Los días en Grindelwald son activos; ajustar excursiones por nubosidad y senderos abiertos, y conservar Sunnegga como jornada flexible."
+      "text": "Viaje en solitario, principalmente en tren, con cinco alojamientos y seis noches seguidas en Grindelwald. Combina caminatas sencillas en valles y excursiones alpinas exigentes en logística; evitar senderos con nieve, intercambiar miradores según visibilidad y reservar pausas. Heididorf requiere resolver equipaje y subida desde Maienfeld."
     },
     {
       "id": "language",
       "title": "Idioma y moneda",
       "badge": "Alemán · CHF",
       "tone": "green",
-      "text": "En Zúrich, Lucerna, el Oberland y Zermatt predomina el alemán (también dialectos suizos); en Ginebra, el francés. El inglés suele funcionar en servicios turísticos. Tarjetas ampliamente aceptadas; llevar algo de efectivo en francos suizos. Al pagar, elegir CHF y rechazar conversión a MXN del terminal."
+      "text": "En Zúrich, Lucerna, el Oberland y Zermatt se habla alemán y dialectos suizos; en Ginebra, francés. El inglés suele bastar en transporte y turismo. La moneda es el franco suizo (CHF); tarjetas ampliamente aceptadas, pero llevar algo de efectivo. Al pagar, escoger CHF en vez de la conversión ofrecida a MXN."
     },
     {
       "id": "entry",
       "title": "Documentación y consejos prácticos",
-      "badge": "Pasaporte mexicano",
-      "tone": "green",
-      "text": "Para una estancia turística corta, verificar condiciones oficiales de entrada Schengen, vigencia del pasaporte y ETIAS antes de viajar; a noviembre de 2026 ETIAS aún no recibía solicitudes. En Suiza se usan tomas tipo J (también admiten clavija europea C), 230 V/50 Hz: desde México, llevar adaptador para clavija A/B a toma J, compatible con tierra si tu equipo la requiere. Un adaptador no transforma voltaje; comprobar que los cargadores admitan 100–240 V. Contratar seguro con cobertura de montaña."
+      "badge": "Verificar antes de viajar",
+      "tone": "orange",
+      "text": "Pasaporte mexicano: turismo Schengen sin visa hasta 90 días en 180; pasaporte expedido en los últimos 10 años y válido al menos 3 meses después de salir. Entrada Schengen por Frankfurt (Alemania), con control fronterizo EES y posibles datos biométricos; llevar prueba de regreso, alojamiento y medios. ETIAS no opera ni acepta solicitudes en noviembre de 2026: verificar si será obligatorio en junio de 2027. Suiza: tomas J, 230 V/50 Hz; clavijas mexicanas A/B requieren adaptador hacia J (con tierra si aplica). El adaptador no transforma voltaje: revisar INPUT 100–240 V. Seguro de viaje con cobertura de montaña."
     }
   ],
   "tips": [],
@@ -2419,11 +2419,15 @@
     "https://www.aboutswitzerland.eda.admin.ch/en/climate",
     "https://www.timeanddate.de/sonne/%407287650?month=6&year=2027",
     "https://zermatt.swiss/en/p/riffelsee-01tVj000005DnxqIAC",
-    "https://www.gornergrat.ch/en/stories/riffelsee-lake-trail-from-rotenboden-to-riffelberg"
+    "https://www.gornergrat.ch/en/stories/riffelsee-lake-trail-from-rotenboden-to-riffelberg",
+    "https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.html",
+    "https://www.sem.admin.ch/dam/en/sd-web/VmF9OQbEilgA/sem-anh01-liste1-e.pdf",
+    "https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/",
+    "https://www.consilium.europa.eu/en/policies/entryexit-system/"
   ],
-  "sourceNote": "Fuentes: MeteoSwiss (normales climáticas 1991–2020), Confederación Suiza (variación por altitud), horarios astronómicos timeanddate para Zúrich junio 2027 y webs oficiales de turismo y transporte para condiciones estacionales. Rangos de clima aproximados por región, sin equivaler a previsión meteorológica. Para senderos y remontes confirmar operativa y avisos en los días próximos al viaje.",
+  "sourceNote": "Clima: referencias de MeteoSwiss y clima suizo por altitud, no pronóstico de junio de 2027. Luz: cálculo astronómico local de Zúrich en junio (CEST, UTC+2). Entrada: SEM Suiza, normativa UE de pasaportes, EES (operativo desde 10 abril 2026) y ETIAS (a noviembre 2026 aún no operativo); verificar de nuevo antes de viajar. Electricidad: Switzerland Tourism, tomas J 230 V/50 Hz.",
   "budgetRange": null,
-  "budgetNote": "Único importe cotizado para fecha y pasajero: vuelos Lufthansa/SWISS Economy Light $23,300.14 MXN (noviembre 2026), sin comprar. Cinco hoteles principales identificados, pero sin tarifa/aforo verificados para junio de 2027; no existe subtotal de alojamiento ni presupuesto total cerrado. El presupuesto integral requiere hoteles, trenes/pases, remontes, entradas, alimentación, seguro y extras.",
+  "budgetNote": "Subtotal verificable: exclusivamente vuelo multidestino Lufthansa/SWISS Economy Light, $23,300.14 MXN para una persona (cotización noviembre de 2026, no comprado). Aún faltan 14 noches de alojamiento, trenes y pases, barcos, teleféricos, entradas, alimentación, seguro, movilidad local y contingencia. No se puede presentar este subtotal como inversión total del viaje. El presupuesto integral se desarrollará en la siguiente etapa.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
@@ -2433,13 +2437,14 @@
   "cardHighlights": [],
   "introHighlights": [
     "Zúrich",
+    "Lindt",
     "Maienfeld",
     "Lucerna",
     "Titlis",
+    "Luzern–Interlaken Express",
     "Grindelwald",
     "Lauterbrunnen",
     "Mürren",
-    "Wengen",
     "First",
     "Bachalpsee",
     "Jungfraujoch",
@@ -2447,12 +2452,19 @@
     "Oeschinensee",
     "Zermatt",
     "Matterhorn",
-    "Gornergrat"
+    "Gornergrat",
+    "Riffelsee",
+    "Ginebra"
   ],
   "boldCityNames": false,
   "emphasisStyle": false,
   "linkRailInText": false,
-  "knownCosts": [],
+  "knownCosts": [
+    [
+      "Vuelos multidestino Lufthansa/SWISS · ida y regreso",
+      "$23,300.14 MXN · cotizado, sin comprar"
+    ]
+  ],
   "costExclusions": null,
   "exchangeNote": null,
   "railSummary": [
