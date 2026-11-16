@@ -171,10 +171,12 @@ window.AtlasHome = function (ctx) {
             (country || t.days?.length ? '<span class="card-overview-location">' +
                 (country ? esc(country) : '') + (country && t.days?.length ? ' · ' : '') +
                 (t.days?.length ? t.days.length + ' días' : '') + '</span>' : '') +
-            (dateText ? '<span class="carddates">' + dateText + '</span>' : '') +
             '</div><h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
-            (cities ? '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' : '') +
+            '<div class="card-trip-details">' +
+            (dateText ? '<span class="carddates">' + dateText + '</span>' : '') +
             (Number.isInteger(t.work) ? '<div class="cardfacts"><span>' + t.work + ' días laborales</span></div>' : '') +
+            '</div>' +
+            (cities ? '<p class="card-route" title="' + esc(cities) + '"><span class="card-route-label">Ruta</span> ' + cities + '</p>' : '') +
             (introduction ? '<p class="card-trip-intro">' + esc(introduction) + '</p>' : '') +
             (amount ? '<div class="cardbottom"><div class="card-price"><small>' +
                 (travelers ? 'Presupuesto estimado por persona' : 'Presupuesto estimado del viaje') +
