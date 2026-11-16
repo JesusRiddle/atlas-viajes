@@ -831,19 +831,8 @@
         "currency": "CHF"
       },
       "status": "estimated",
-      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Hipótesis de planificación: Half Fare CHF 150 + hasta CHF 500 en billetes con descuentos; no garantiza cobertura o tarifa. Swiss Travel Pass CHF 499 + suplementos es alternativa no acumulable."
-    },
-    {
-      "id": "alpine-activities",
-      "category": "activities",
-      "concept": "Remontes alpinos y entradas principales",
-      "date": "2027-06-16",
-      "cost": {
-        "amount": 410,
-        "currency": "CHF"
-      },
-      "status": "estimated",
-      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Provisión bajo hipótesis de descuentos por pase para Titlis, First, Jungfraujoch y asiento, Oeschinensee, Gornergrat, Lindt, Heididorf, Trümmelbach y Giessbach. No incluir opcional Sunnegga. Confirmar billetes reales y descuentos aplicables; posible insuficiencia."
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Hipótesis de planificación: Half Fare CHF 150 + hasta CHF 500 en billetes con descuentos; no garantiza cobertura o tarifa. Swiss Travel Pass CHF 499 + suplementos es alternativa no acumulable. Fondo global no repartido arbitrariamente por fecha en Gastos del día.",
+      "dates": []
     },
     {
       "id": "meals-01",
@@ -1084,6 +1073,114 @@
       },
       "status": "estimated",
       "notes": "Provisión de planeación, no tarifa reservable para junio 2027. "
+    },
+    {
+      "id": "activity-lindt",
+      "category": "activities",
+      "concept": "Lindt Home of Chocolate",
+      "date": "2027-06-14",
+      "cost": {
+        "amount": 17,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-heidi",
+      "category": "activities",
+      "concept": "Heididorf",
+      "date": "2027-06-15",
+      "cost": {
+        "amount": 15,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-titlis",
+      "category": "activities",
+      "concept": "Titlis y remontes",
+      "date": "2027-06-16",
+      "cost": {
+        "amount": 58,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-trummelbach",
+      "category": "activities",
+      "concept": "Cataratas Trümmelbach",
+      "date": "2027-06-18",
+      "cost": {
+        "amount": 18,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-first",
+      "category": "activities",
+      "concept": "First Cliff Walk y telecabina",
+      "date": "2027-06-19",
+      "cost": {
+        "amount": 42,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-giessbach",
+      "category": "activities",
+      "concept": "Funicular Giessbach",
+      "date": "2027-06-20",
+      "cost": {
+        "amount": 18,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-jungfraujoch",
+      "category": "activities",
+      "concept": "Jungfraujoch, billete y asiento",
+      "date": "2027-06-21",
+      "cost": {
+        "amount": 133,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-oeschinensee",
+      "category": "activities",
+      "concept": "Telecabina Oeschinensee",
+      "date": "2027-06-22",
+      "cost": {
+        "amount": 27,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-gornergrat",
+      "category": "activities",
+      "concept": "Gornergrat Bahn",
+      "date": "2027-06-24",
+      "cost": {
+        "amount": 82,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
     }
   ],
   "majorTransport": [
@@ -1619,7 +1716,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Se modela como tipo técnico «train» por compatibilidad del Atlas, pero el servicio real es TELECABINA Firstbahn; no tren.",
-      "budgetIncludedIn": "alpine-activities"
+      "budgetIncludedIn": "activity-first"
     },
     {
       "id": "brienz-giessbach",
@@ -1881,7 +1978,7 @@
       ],
       "ticketGuide": "Comprar el itinerario completo de montaña y reserva de asiento separada (obligatoria en junio 2027); comprobar si el pase cubre parte y suplemento de la cima.",
       "notes": "Opción A regreso directo por Eigergletscher; opción B regreso por Kleine Scheidegg–Wengen–Lauterbrunnen–Zweilütschinen. La opción B solo puede utilizarse con tarifa válida y conexiones confirmadas.",
-      "budgetIncludedIn": "alpine-activities"
+      "budgetIncludedIn": "activity-jungfraujoch"
     },
     {
       "id": "oeschinensee",
@@ -2088,7 +2185,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Tren de cremallera de montaña ida/vuelta; descuentos según pase/tarifa, no viaje gratis con todos los pases. Riffelsee opcional sujeto a accesos.",
-      "budgetIncludedIn": "alpine-activities"
+      "budgetIncludedIn": "activity-gornergrat"
     },
     {
       "id": "sunnegga",
@@ -2161,7 +2258,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Funicular opcional si hay meteorología favorable; no duplicar con alternativa de recuperar Gornergrat el mismo día.",
-      "budgetIncludedIn": "alpine-activities"
+      "budgetIncludedIn": "activity-gornergrat"
     },
     {
       "id": "zermatt-geneva",
@@ -2787,7 +2884,7 @@
     118000,
     157000
   ],
-  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,214 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.12 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido.",
+  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,214 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.12 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha.",
   "placeDescriptions": {},
   "optionalSection": null,
   "family": null,
@@ -2842,7 +2939,7 @@
     ],
     [
       "Comparación pendiente",
-      "No hay ganador demostrado: comparar cada ruta, barcos y montaña con y sin descuento. Presupuesto provisional CHF 650 transportes generales + CHF 410 entradas y montaña, sin duplicar fichas informativas."
+      "No hay ganador demostrado: comparar cada ruta, barcos y montaña con y sin descuento. Presupuesto provisional CHF 650 transportes generales + CHF 410 desglosados en actividades diarias, sin duplicar fichas informativas."
     ],
     [
       "Regla de no duplicación",
