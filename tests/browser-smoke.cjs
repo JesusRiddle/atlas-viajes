@@ -108,16 +108,16 @@ const assert = require('node:assert/strict');
       const orlandoHomeCard = page.locator('#viajes .tripcard[href="#viaje/orlando-2026"]');
       assert.equal(await orlandoHomeCard.count(), 1, 'Orlando: portada presente');
       const workDayBadges = featuredCards.locator('.cardfacts span');
-      assert.equal(await workDayBadges.count(), 8, 'Las ocho tarjetas muestran sus días laborales');
+      assert.equal(await workDayBadges.count(), 7, 'No inventar días laborales en viaje sin dato calculado');
       const workingDayTexts = await workDayBadges.allInnerTexts();
       assert.ok(workingDayTexts.every(value => /^\\d+ días laborales$/.test(value)),
         'Portada: escribir siempre X días laborales');
       const tones = await page.locator('#viajes .atlas-home-card').evaluateAll(cards => cards.map(card => {
         const place = card.querySelector('.card-overview-location');
         const work = card.querySelector('.cardfacts span');
-        return { work: getComputedStyle(work).color, place: getComputedStyle(place).color,
-          weight: getComputedStyle(work).fontWeight };
-      }));
+        return work ? { work: getComputedStyle(work).color, place: getComputedStyle(place).color,
+          weight: getComputedStyle(work).fontWeight } : null;
+      })).then(values => values.filter(Boolean));
       assert.ok(tones.every(value => value.work === value.place && Number(value.weight) >= 700),
         'Portada: días laborales usan el mismo color y énfasis que Colombia · 12 días');
 
