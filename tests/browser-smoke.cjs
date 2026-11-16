@@ -370,8 +370,8 @@ const assert = require('node:assert/strict');
           const reservations = page.locator('#reservas');
           assert.equal(await reservations.locator('h3').innerText(), 'Reservaciones importantes',
             'Orlando: la cabecera usa el contrato editorial');
-          assert.match(await reservations.locator('.reservation-intro').innerText(), /ninguna compra ni reserva está confirmada/i,
-            'Orlando: nota de estado de compras visible');
+          assert.match(await reservations.locator('.reservation-intro').innerText(), /Magic Kingdom se adquiere por separado/,
+            'Orlando: introducción práctica y sin estado de compras repetido');
           assert.equal(await reservations.locator('.reservation-group').count(), 3,
             'Orlando: tres grupos de prioridad');
           assert.equal(await reservations.locator('.reservation-item').count(), 8,
@@ -383,9 +383,10 @@ const assert = require('node:assert/strict');
             'Hogwarts Express', 'Park-to-Park', 'Terra Luna', 'Lightning Lane']) {
             assert.ok(body.includes(phrase), 'Orlando Reservaciones: falta ' + phrase);
           }
-          assert.match(body, /US\$357 MÁS IMPUESTOS/, 'Orlando: precio desde, sin presentarlo como cotización');
-          assert.match(body, /SUBTOTAL/, 'Orlando: boleto Universal sin impuestos confirmados');
-          assert.match(body, /SIN COMPRAR/, 'Orlando: no inventar compras');
+          assert.match(body, /desde US\$357 más impuestos/i, 'Orlando: comparación Park-to-Park');
+          assert.match(body, /subtotal/i, 'Orlando: boleto Universal sin impuestos confirmados');
+          assert.doesNotMatch(body, /SIN COMPRAR|SIN RESERVAR|cotización, no compra/i,
+            'Orlando: sin aclaraciones repetitivas de compra');
           assert.equal(tripData.expenses.find(x => x.id === 'orlando-disney').cost.amount, null,
             'Orlando: Magic Kingdom sigue pendiente de cotización');
           assert.ok(await reservations.locator('a[href^="https://"]').count() >= 12,
