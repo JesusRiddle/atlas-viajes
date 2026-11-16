@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 04 · Mapa actualizado y comprobado estructuralmente; siguiente sección: 05 Experiencias. Auditorías A/B y validación visual de la interfaz pendientes.
+**Etapa:** 05 · Experiencias actualizadas; siguiente sección: 06 Reservaciones importantes. Auditorías A/B y revisión visual pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -20,7 +20,7 @@
 - [x] 02 · Temporadas: 12 meses evaluados, estados/intervalos consistentes y fuentes oficiales documentadas (verificación estructural realizada)
 - [x] 03 · Ruta y 16 jornadas tentativas actualizadas; auditoría A abierta
 - [x] 04 · Mapa: 23 puntos georreferenciados (5 alojamientos, 18 excursiones), estructura y enlace a noches verificados
-- [ ] 05 · Experiencias: detalle operativo, enlaces y alternativas por clima
+- [x] 05 · Experiencias: 11 fichas de MUST por región, alternativas climáticas y gastronomía regional documentada
 - [ ] 06 · Reservaciones importantes: condiciones y prioridades
 - [ ] 07 · Transporte mayor: modelo `AtlasTransportModel.validateTrip` y render sin ejecutar
 - [ ] 08 · Alojamiento: zonas y hoteles candidatos investigados; tarifas exactas de 14 noches pendientes
@@ -43,6 +43,13 @@
 - Puntos opcionales de senderismo/visibilidad identificados: Bachalpsee, Riffelsee y Sunnegga. Gimmelwald aparece en el itinerario pero sin pin individual hasta verificar su ubicación precisa; visita secundaria del día de Mürren.
 - No se incorporan trenes Bernina ni Glacier ni atractivos descartados. Coordenadas combinan geografía documentada del proyecto y referencias externas geográficas.
 - Comprobación JSON realizada; inspección visual Desktop/Mobile y CI completos pendientes, sin autorización de merge.
+
+## Verificación de Experiencias · 2026-11-16
+- 11 fichas con localidad/región y relato de actividades; cobertura de Zúrich, Maienfeld, Lucerna, Titlis, Jungfrau, Brienz, Oeschinensee y Zermatt.
+- Actividades sujetas a clima, senderos y operación diferenciadas de visitas seguras; no se introdujeron Glacier/Bernina ni nuevas pernoctas.
+- Gastronomía contrastada con portales turísticos de Zúrich, Lucerna, Grisones y Valais; las especialidades son sugerencias, no comidas reservadas. Los platos con lácteos requieren precaución individual.
+- 11/11 registros completos y sin URLs incrustadas; enlaces de investigación conservados en `sources`.
+- Pendiente prueba de renderizado Desktop/Mobile y CI, además de la auditoría B de consistencia tras alojamientos y transportes.
 
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
