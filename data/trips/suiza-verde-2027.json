@@ -186,11 +186,11 @@
       "date": "2027-06-15",
       "title": "Heididorf en Maienfeld y llegada a Lucerna",
       "base": "Lucerna",
-      "am": "1. Hacer check-out en Zúrich y dejar resuelta la logística de equipaje antes de visitar Heididorf.\n2. Tren Zürich HB → Maienfeld; desde la estación, subida a Heididorf a pie si las condiciones físicas y meteorológicas lo permiten.\n3. Visitar las casas y paisajes asociados al mundo de Heidi según horario oficial.",
+      "am": "1. Salida de Zúrich después de desayunar, con el equipaje ya resuelto.\n2. Tren Zürich HB → Maienfeld y visita de Heididorf a pie, si la apertura y el camino están confirmados.\n3. Reservar tiempo suficiente para la caminata de regreso a Maienfeld antes de continuar a Lucerna.",
       "pm": "1. Regresar a la estación de Maienfeld y tomar tren hacia Lucerna con los transbordos que indique SBB.\n2. Llegada y check-in en Hotel Waldstätterhof, candidato cercano a Luzern Bahnhof.",
       "night": "1. Paseo breve junto al Reuss o Kapellbrücke y descanso después del día de traslados.",
-      "mobility": "• *Zúrich → Maienfeld:* Consultar tren SBB y confirmar tiempo real de llegada antes de programar visita.\n• *Estación → Heididorf:* Camino de unos 40 minutos de subida; el Heidi Bus habitual no cubre necesariamente los martes.\n• *Maleta:* Comparar consigna de Zürich HB o Maienfeld y recuperarla antes de continuar; no asumir taquillas disponibles.\n• *Maienfeld → Luzern:* Comprar segundo tramo o pase que permita parada intermedia.",
-      "note": "• *Punto crítico:* Día físicamente largo, con traslado entre alojamientos; no llevar maleta a la caminata.\n• *Plan B:* Si no hay una solución razonable de equipaje o acceso, reorganizar Heididorf antes de reservar trenes y hoteles.",
+      "mobility": "• *Equipaje:* La consigna debe estar en un punto por el que realmente vuelva a pasar el tren. Si se deja en Zürich HB, recogerlo exige regresar a Zúrich antes de ir a Lucerna. Consultar taquillas en Maienfeld/Sargans o una opción de traslado, sin dar su disponibilidad por hecha.\n• *Zúrich → Maienfeld:* Consultar trayecto SBB, transbordos y estación de llegada.\n• *Heididorf:* Desde Maienfeld, caminar unos 40 minutos cuesta arriba; el Heidi Bus no debe darse por disponible el martes.\n• *Maienfeld → Lucerna:* Cotizar el itinerario final según lugar de recogida de equipaje, incluyendo cualquier desvío.",
+      "note": "• *Día más exigente:* Heididorf y cambio de alojamiento coinciden; no iniciar el sendero con la maleta.\n• *Decisión antes de reservar:* Confirmar una solución realista para el equipaje y tiempos de tren; si falla, mover Heididorf a otro día y actualizar reservas y noches.\n• *Apertura:* El horario publicado para 2026 no confirma automáticamente el 15 de junio de 2027.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -279,9 +279,9 @@
       "title": "Lauterbrunnen, Trümmelbach y Mürren",
       "base": "Grindelwald",
       "am": "1. Tren Grindelwald → Zweilütschinen → Lauterbrunnen según conexión disponible.\n2. Pasear por el valle hasta los miradores de Staubbachfall y trasladarse a las cataratas interiores de Trümmelbach si están abiertas.",
-      "pm": "1. Elegir acceso desde Lauterbrunnen hacia Mürren por Grütschalp o por Stechelberg, verificando funcionamiento de cada instalación.\n2. Pasear por Mürren; Gimmelwald queda opcional y se descarta si falta tiempo, energía o transporte.",
+      "pm": "1. Subir desde Lauterbrunnen en teleférico a Grütschalp y después en tren de montaña hacia Mürren, si ambos servicios operan.\n2. Pasear por Mürren y regresar con tiempo. Gimmelwald queda opcional únicamente si se elige la combinación adecuada de sendero o teleféricos y se dispone de energía.",
       "night": "1. Regresar a Grindelwald por el mismo corredor de valle y descansar.",
-      "mobility": "• *Grindelwald ↔ Lauterbrunnen:* Tren con conexión en Zweilütschinen; el billete local no incluye necesariamente remontes a Mürren.\n• *Trümmelbach:* Acceder en transporte del valle según temporada.\n• *Mürren:* Comprobar por separado funicular/teleférico/tren según ruta; asegurar el regreso.",
+      "mobility": "• *Grindelwald ↔ Lauterbrunnen:* Tren con cambio en Zweilütschinen; comprobar la correspondencia del billete.\n• *Trümmelbach:* Autobús del valle y entrada por separado; confirmar apertura.\n• *Mürren:* Ruta usual: teleférico Lauterbrunnen → Grütschalp y tren Grütschalp → Mürren; alternativa vía Stechelberg y teleféricos sujeta a servicios.\n• *Regreso:* Verificar último enlace a Lauterbrunnen y conexión a Grindelwald; no forzar Gimmelwald.",
       "note": "• *Carga física:* Día de muchos desplazamientos y caminatas; elegir un máximo de Mürren + una cascada principal si se retrasa el comienzo.\n• *Plan B:* En lluvia fuerte, las cascadas pueden cerrar por seguridad; no forzar senderos.",
       "spend": null,
       "places": [],
@@ -342,10 +342,10 @@
       "title": "Lago Brienz y cataratas Giessbach",
       "base": "Grindelwald",
       "am": "1. Viajar desde Grindelwald a Interlaken Ost y consultar la salida del barco BLS hacia Giessbach See.\n2. Navegar por el lago Brienz si opera una conexión útil para el domingo 20 de junio.",
-      "pm": "1. Desembarcar en Giessbach See, subir en el funicular histórico si está abierto y recorrer los miradores habilitados de las cataratas.\n2. Volver en barco o combinar con transporte terrestre desde Brienz, según horarios vigentes.",
+      "pm": "1. Desembarcar en Giessbach See, utilizar el funicular histórico si opera y recorrer miradores de cascadas habilitados.\n2. Regresar con la conexión de barco o tren previamente comprobada; una alternativa es continuar hacia Brienz y volver en tren si el horario BLS lo permite.",
       "night": "1. Cena y noche en Grindelwald; revisar visibilidad para la jornada de Jungfraujoch.",
       "mobility": "• *Grindelwald → Interlaken Ost:* Tren regional.\n• *Barco BLS:* Comprobar embarcadero Giessbach See, dirección, horario de ida y sobre todo regreso antes de embarcar.\n• *Giessbach → hotel:* Funicular separado del billete BLS; regreso terrestre alternativo sujeto a conexiones.",
-      "note": "• *Calendario:* Los horarios publicados de 2026 son referencias, no confirmación para junio de 2027.\n• *Plan B:* Recorrer Brienz y orilla del lago por transporte ferroviario si el barco no encaja.",
+      "note": "• *Barco:* El horario BLS 2026 muestra escalas Giessbach See, pero el itinerario del domingo 20 de junio de 2027 aún no está publicado: confirmar ida y vuelta antes de comprar.\n• *Funicular:* Consultar billete, temporada y enlace real con el barco.\n• *Plan B:* Si no hay navegación útil, priorizar Brienz y un recorrido terrestre sin contar el crucero como realizado.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -375,10 +375,10 @@
       "title": "Jungfraujoch y alternativa por Wengen",
       "base": "Grindelwald",
       "am": "1. Comprobar previsión de alta montaña antes de usar o comprar los billetes.\n2. Traslado de Grindelwald a Grindelwald Terminal y subida por Eiger Express hasta Eigergletscher; continuar en Jungfraubahn a Jungfraujoch con billete válido y asiento reservado.",
-      "pm": "1. Contemplar miradores y espacios de hielo habilitados; planificar el tiempo según altura, frío y condición física.\n2. Descender por el mismo corredor a Grindelwald, o cambiar a ruta por Kleine Scheidegg y Wengen solo si la tarifa y conexión elegidas lo permiten.",
+      "pm": "1. Recorrer miradores panorámicos y el entorno del glaciar Aletsch según acceso, frío y bienestar a gran altitud.\n2. Plan A: regresar a Grindelwald por Eigergletscher y Eiger Express. Plan B: bajar por Kleine Scheidegg, detenerse brevemente en Wengen y volver por Lauterbrunnen y Zweilütschinen, solo con billete y conexiones compatibles.",
       "night": "1. Regresar al Hotel Tschuggen y descansar, sin comprometer una segunda subida exigente.",
-      "mobility": "• *Grindelwald Terminal → Jungfraujoch:* Eiger Express hasta Eigergletscher y Jungfraubahn; la reserva de asiento es obligatoria del 1 mayo al 31 octubre 2027.\n• *Regreso por Wengen:* NO está representado por la ficha actual de vuelta vía Eigergletscher; verificar billete circular, trenes de Kleine Scheidegg y continuación antes de elegirlo.",
-      "note": "• *Reserva crítica:* Además de ticket válido, asiento reservado y paso por torniquetes al menos 10 minutos antes.\n• *Meteorología:* Intercambiar con First, Brienz u otro día cercano si la visibilidad es mala, sujeto a cupos y cambios de billete.\n• *Altura:* Jungfraujoch supera los 3,400 m; hidratarse y evitar sobreesfuerzo.",
+      "mobility": "• *Grindelwald Terminal → Jungfraujoch:* Eiger Express a Eigergletscher y Jungfraubahn; asiento reservado obligatorio en junio de 2027.\n• *Plan A · regreso directo:* Jungfraujoch → Eigergletscher → Grindelwald Terminal.\n• *Plan B · Wengen:* Jungfraujoch → Kleine Scheidegg → Wengen → Lauterbrunnen → Zweilütschinen → Grindelwald. Elegir explícitamente la opción B en Movilidad y comprar tarifa que la admita; el billete del plan A no autoriza automáticamente el circuito.",
+      "note": "• *Reserva crítica:* Jungfraujoch exige billete válido y reserva de asiento del 1 mayo al 31 octubre 2027; presentarse al torniquete al menos diez minutos antes.\n• *Meteorología:* Si está nublado, intercambiar con First/Brienz, sujeto a nuevos cupos y condiciones del billete.\n• *Altitud:* A 3,454 m pueden aparecer molestias; hidratarse, avanzar con calma y regresar si hay síntomas.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -462,10 +462,10 @@
       "title": "Gornergrat: panorámica del Matterhorn",
       "base": "Zermatt",
       "am": "1. Consultar cámaras y nubosidad del Matterhorn antes de comprar o utilizar el billete.\n2. Caminar a Gornergrat Bahn, subir en tren de cremallera y visitar los miradores sobre los Alpes del Valais.",
-      "pm": "1. Si el sendero está libre de nieve y abierto, bajar en una parada intermedia para caminar hacia Riffelsee.\n2. Regresar a Zermatt en tren, considerando la validez del billete y las paradas autorizadas.",
+      "pm": "1. Descender a Rotenboden en el tren de Gornergrat; si la senda está abierta, caminar unos diez minutos de bajada al Riffelsee para buscar el reflejo del Matterhorn.\n2. Opcional: completar el sendero señalizado hacia Riffelberg (aprox. 1 hora, 3.1 km), únicamente si no hay nieve ni restricciones; regresar desde la estación que corresponda a la tarifa.",
       "night": "1. Cena y descanso en Zermatt. Mantener la jornada siguiente como respaldo meteorológico.",
       "mobility": "• *Zermatt → Gornergrat:* Tren de cremallera con billete propio; comparar descuento del pase y reglas de interrupción del viaje.\n• *Riffelsee:* Si se decide bajar en Rotenboden, consultar accesos e itinerario antes de caminar; regreso ferroviario no debe duplicar la tarifa.",
-      "note": "• *Miradores:* El Matterhorn puede ocultarse completamente por nubes; no confundir operación del tren con visibilidad.\n• *Plan B:* Cambiar Gornergrat al 25 junio y omitir Sunnegga si la previsión mejora.",
+      "note": "• *Sendero alto:* El propio operador advierte de nieve residual en primavera y comienzos de verano; Riffelsee no está garantizado en junio.\n• *Billete:* Verificar si el trayecto permite descender y reembarcar en Rotenboden/Riffelberg sin comprar un segundo billete.\n• *Plan B:* Si la cima está cubierta de nubes, trasladar Gornergrat al 25 de junio y omitir Sunnegga.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -494,7 +494,7 @@
       "pm": "1. Paseo suave por las rutas abiertas del sector Sunnegga o regreso temprano al pueblo.\n2. Última tarde en Zermatt, descanso y preparación del viaje ferroviario a Ginebra.",
       "night": "1. Cena final en Zermatt y tercera noche en el alojamiento.",
       "mobility": "• *Zermatt ↔ Sunnegga:* Funicular propio con billete separado; solo comprar si no se sustituye por Gornergrat.\n• *Jornada alternativa:* Si se usa para Gornergrat, aplicar la movilidad y billete del día anterior, sin contar dos excursiones.",
-      "note": "• *Decisión diaria:* Sunnegga es opcional y queda subordinado a Gornergrat.\n• *Senderos:* Elegir rutas cortas y abiertas, evitando nieve residual o tormentas.",
+      "note": "• *Decisión meteorológica:* Sunnegga es opcional y solo se realiza si Gornergrat ya quedó cubierto; si se recupera Gornergrat el 25, se utiliza ese billete en lugar del funicular de Sunnegga.\n• *Senderos:* Elegir rutas cortas habilitadas; evitar nieve residual, tormentas o caminatas solitarias en altura.",
       "spend": null,
       "places": [],
       "transportRefs": [
@@ -548,7 +548,7 @@
       "date": "2027-06-27",
       "title": "Vuelo desde Ginebra y llegada a México",
       "base": "Regreso",
-      "am": "1. Check-out temprano y traslado al aeropuerto de Ginebra, con objetivo de llegada unas tres horas antes de la salida internacional.\n2. Vuelo cotizado desde GVA a las 09:10 y conexión en Frankfurt con margen anunciado de unas tres horas.",
+      "am": "1. Check-out y salida al aeropuerto de Ginebra; objetivo orientativo de presentarse a las 06:10 para el vuelo internacional de las 09:10, según instrucciones definitivas de la aerolínea.\n2. Embarcar en GVA y hacer conexión de unas tres horas en Frankfurt conforme a la cotización.",
       "pm": "1. Continuación de la conexión en Frankfurt hacia Ciudad de México.\n2. Llegada prevista a MEX a las 17:30 del mismo domingo, según la cotización proporcionada, pendiente de compra.",
       "night": "1. Fin del viaje en Ciudad de México; sin noche adicional en Suiza.",
       "mobility": "• *ibis → GVA:* Confirmar shuttle de primera hora o acceso a pie; no depender de un servicio sin verificar el domingo.\n• *GVA → FRA → MEX:* Vuelos con escala incluidos en la misma cotización multidestino; no agregarlos como segundo billete.",
@@ -1433,6 +1433,86 @@
             }
           ],
           "notes": "Trayecto ferroviario/teléferico mixto, resumido por puntos extremos; conexión por Eigergletscher y ruta alternativa Kleine Scheidegg. La reserva de asiento es obligatoria del 1 mayo al 31 octubre 2027 y NO sustituye el billete. Wengen no está incluido como visita en esta tarifa."
+        },
+        {
+          "id": "B",
+          "provider": "Jungfrau Railways + Berner Oberland-Bahn · regreso por Wengen",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald Terminal",
+                  "to": "Eigergletscher",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Eiger Express"
+                },
+                {
+                  "from": "Eigergletscher",
+                  "to": "Jungfraujoch",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfraubahn"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Jungfraujoch",
+                  "to": "Kleine Scheidegg",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfraubahn"
+                },
+                {
+                  "from": "Kleine Scheidegg",
+                  "to": "Wengen",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Wengernalpbahn"
+                },
+                {
+                  "from": "Wengen",
+                  "to": "Lauterbrunnen",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Wengernalpbahn"
+                },
+                {
+                  "from": "Lauterbrunnen",
+                  "to": "Zweilütschinen",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Berner Oberland-Bahn"
+                },
+                {
+                  "from": "Zweilütschinen",
+                  "to": "Grindelwald",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Berner Oberland-Bahn"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Alternativa panorámica vía Kleine Scheidegg y Wengen en el regreso; exige elegir billete/ruta que permita el circuito, reserva de asiento obligatoria en tramo Jungfraubahn, y comprobar conexiones. No es la alternativa seleccionada ni un billete comprado."
         }
       ],
       "links": [
@@ -1456,7 +1536,7 @@
         }
       ],
       "ticketGuide": "Comprar el itinerario completo de montaña y reserva de asiento separada (obligatoria en junio 2027); comprobar si el pase cubre parte y suplemento de la cima.",
-      "notes": "Trayecto ferroviario/teléferico mixto, resumido por puntos extremos; conexión por Eigergletscher y ruta alternativa Kleine Scheidegg. La reserva de asiento es obligatoria del 1 mayo al 31 octubre 2027 y NO sustituye el billete. Wengen no está incluido como visita en esta tarifa.",
+      "notes": "Opción A regreso directo por Eigergletscher; opción B regreso por Kleine Scheidegg–Wengen–Lauterbrunnen–Zweilütschinen. La opción B solo puede utilizarse con tarifa válida y conexiones confirmadas.",
       "budgetIncludedIn": "pending"
     },
     {
@@ -2337,7 +2417,9 @@
     "https://travel-europe.europa.eu/etias/faq",
     "https://opendatadocs.meteoswiss.ch/c-climate-data/c6-climate-normals",
     "https://www.aboutswitzerland.eda.admin.ch/en/climate",
-    "https://www.timeanddate.de/sonne/%407287650?month=6&year=2027"
+    "https://www.timeanddate.de/sonne/%407287650?month=6&year=2027",
+    "https://zermatt.swiss/en/p/riffelsee-01tVj000005DnxqIAC",
+    "https://www.gornergrat.ch/en/stories/riffelsee-lake-trail-from-rotenboden-to-riffelberg"
   ],
   "sourceNote": "Fuentes: MeteoSwiss (normales climáticas 1991–2020), Confederación Suiza (variación por altitud), horarios astronómicos timeanddate para Zúrich junio 2027 y webs oficiales de turismo y transporte para condiciones estacionales. Rangos de clima aproximados por región, sin equivaler a previsión meteorológica. Para senderos y remontes confirmar operativa y avisos en los días próximos al viaje.",
   "budgetRange": null,
