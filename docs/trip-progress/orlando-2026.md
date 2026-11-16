@@ -5,8 +5,8 @@
 **Rama / PR:** `feature/orlando-2026` · https://github.com/JesusRiddle/atlas-viajes/pull/17  
 **Modalidad:** Itinerario detallado  
 **Última actualización:** 2026-11-15  
-**Etapa actual:** 13/13 · auditoría transversal técnica aprobada; faltan inspección visual manual del despliegue, cotizaciones de compra y autorización de merge  
-**Siguiente acción autónoma:** inspección visual del despliegue (cuatro fotos en escritorio/móvil); cotización de vuelo/hotel/Universal y condiciones de equipaje/cancelación. Magic Kingdom 5/12 ya cuenta con cotización desglosada. Presentar PR para revisión y solicitar autorización expresa antes del merge.
+**Etapa actual:** 13/13 · auditoría final integral repetida con correcciones editoriales; CI de último commit en comprobación y merge sujeto a aprobación  
+**Siguiente acción:** verificar CI del último commit, revisar visualmente la vista previa si está disponible y aprobar el PR solo con autorización del viajero. Las tarifas de vuelo/hotel/Universal se reconfirman antes de compra; no impiden publicar un itinerario identificado como estimado.
 
 ## Decisiones definitivas del viajero
 
@@ -18,7 +18,7 @@
 - Entradas Plan A **Universal 3-Day 3-Park** US$335.99 mostrado como subtotal para iniciar el 3/12/2026, válido 7 días; sin Park-to-Park. No hay compras.
 - Vuelo Volaris $7,015 MXN redondo, captura 15/11/2026, equipaje con posible cargo.
 - Shuttle gratuito Rosen–Universal/Epic: **programado, cupo limitado, reserva presencial**; no tiene acceso anticipado Universal. Aeropuerto–hotel y hotel–Disney requieren pago aparte.
-- **Magic Kingdom 5/12** sin fiesta navideña privada según Disney; entrada regular todavía sin precio cotizado.
+- **Magic Kingdom 5/12:** sin fiesta navideña privada según Disney; entrada regular para un adulto cotizada en US$217.26 con impuestos ($4,027.24 MXN mostrado por Disney).
 - El viajero pidió dejar cerrada la arquitectura del recorrido y no seguir pidiéndole pantallas de reservas.
 
 ## Checklist 00–13
@@ -29,12 +29,12 @@
 - [x] **03 Fechas y esqueleto diario:** seis fechas continuas y cinco noches, secuencia compatible; **Auditoría A: verificación estructural parcial**, aún sin validar todas las disponibilidades operativas.
 - [x] **04 Mapa:** cinco puntos (Rosen y cuatro parques), coordenadas comprobadas en Mapcarta/OSM; hotel con precisión aproximada de tres decimales.
 - [x] **05 Experiencias · refinadas 15/11/2026:** nueve tarjetas para los cuatro parques; tres áreas de Harry Potter prioritarias y cuatro comidas temáticas verificadas en menús oficiales. Actividades secundarias condicionadas por filas, en especial Epic Universe; coherencia con días 3–6 diciembre. Auditoría automatizada específica agregada en `tests/browser-smoke.cjs`.
-- [x] **06 Reservaciones importantes · auditada 15/11/2026:** 3 grupos y 8 tarjetas, nota visible de compras no realizadas, referencias de vuelo/hotel/Universal preservadas, Disney pendiente, Park-to-Park con Hogwarts Express como alternativa opcional, paquetes excluyentes y condiciones de Rosen verificadas. CI Desktop/Mobile del commit `1d4d9230` aprobado.
+- [x] **06 Reservaciones importantes:** 3 grupos, 8 tarjetas, enlaces oficiales, Disney US$217.26 con impuesto incluido, Park-to-Park opcional y alternativas hoteleras excluyentes, sin compras registradas.
 - [x] **07 Movilidad y conexiones · refinada 15/11/2026:** vuelo directo redondo MEX–MCO con husos correctos y gasto único, cuatro fichas terrestres con enlaces y traslados MCO/Rosen/Universal/Disney, costes no duplicados y pruebas Desktop/Mobile agregadas. CI posterior a commit `fee9057e` en verificación.
 - [x] **08 Dónde dormirás · auditada 15/11/2026:** Rosen Plan A único alojamiento presupuesto, Terra Luna alternativa excluyente de paquete; habitaciones, condiciones y mapas oficiales revisados, cinco noches validadas y día de salida sin sexta pernocta. CI específico en revisión.
 - [x] **09 Día por día · auditado 15/11/2026:** seis jornadas refinadas con logística, pausas, plan ante filas, espectáculos navideños oficiales y condicionales; cinco noches y día de regreso sin hotel. CI en verificación.
 - [x] **10 Panorama · auditado 15/11/2026:** intro 104 palabras, introShort 33; tres indicadores [style,language,entry], tarjeta de clima/luz independiente, estancia 5 noches/1 alojamiento y presupuesto con pendientes explícitos. Pruebas Browser Desktop/Mobile del commit `80e18b1f` aprobadas.
-- [x] **11 Presupuesto · auditoría C editorial y CI superados:** gastos Plan A reconciliados y diferenciados por estado, seis jornadas de comida, impuesto Universal provisional y cotizaciones faltantes identificadas; Disney `cost.amount=null`. Subtotal $34,436.19 MXN antes de Disney, rango de planeación $39,000–$44,000 MXN. No es total final de compra.
+- [x] **11 Presupuesto · conciliado:** vuelo, hotel, Universal y Disney cotizados; impuesto Disney dentro del ticket US$217.26, impuesto Universal teórico US$21.84, alimentación por seis jornadas. Subtotal $38,481.31 MXN, rango $39,000–$44,000 MXN; otros extras opcionales fuera.
 - [x] **12 Fotos/portada:** cuatro fotos de Wikimedia Commons con fuentes, autores y licencias; portada Hogwarts, una foto por día de parque. Falta inspección visual efectiva en navegador.
 - [x] **13 Auditoría D técnica:** GitHub Actions commit `6690d12d3356bea5737841afdf7a8f193d9a3e7d` concluyó **success** (Node y browser smoke Desktop/Mobile). PR #17 sigue en borrador por verificaciones manuales y cotizaciones pendientes. No merge.
 
@@ -47,7 +47,7 @@
 - **NO ejecutadas:** tests locales Node, pruebas de navegador Desktop/Mobile y validación completa en renderer. El CI GitHub Actions del commit 775c858b está en curso; resultado aún desconocido. Imágenes añadidas, referencias presentes en data/places.json, pero carga visual no verificada.
 
 ## Pendientes prioritarios
-1. **No bloqueantes para mostrar la propuesta:** cotizar Magic Kingdom, confirmar cargos de equipaje Volaris, disponibilidad y políticas reales de Rosen y boleto Universal, Uber/Lyft MCO↔hotel↔MCO y Rosen↔Disney.
+1. **No bloqueantes para publicar la propuesta:** confirmar equipaje Volaris, disponibilidad/cancelación de Rosen, total con impuesto de Universal y tarifas efectivas de Uber/Lyft antes de comprar. Magic Kingdom ya tiene cotización para el 5/12.
 2. **Bloqueantes para aprobar auditoría D:** render de transportes y presupuesto, pruebas de regresión escritorio/móvil, carga visual de fotos y CI exitoso.
 3. **Comparación excluyente:** Terra Luna USD 1,577.46 ya contiene hotel y boletos Universal, mientras que Rosen USD 539.94 + Universal USD 335.99 se suman en plan A; nunca mezclar ambas opciones en un presupuesto.
 4. **Riesgo de horarios:** tren Hogwarts Express no cubierto por billete 1 parque/día; no garantizar espectáculos ni todas las atracciones en días de alta demanda.
@@ -196,3 +196,13 @@
 - `expenses.orlando-disney` pasa de `status: pending, amount: null` a `status: quoted, amount: 217.26 USD`; impuesto Disney **incluido** en la misma partida, sin duplicación. Es precio de referencia de carrito, no estado de compra.
 - Presupuesto Atlas conserva tasa común **18.6188 MXN/USD**, por lo que Disney equivale a **$4,045.12 MXN** y el subtotal de todas las partidas con importe a **$38,481.31 MXN** con redondeo por renglón. Rango de planeación **$39,000–$44,000 MXN** sin modificaciones. Universal US$21.84 de impuesto sigue siendo provisión por confirmar, no gravar nuevamente Disney.
 - Se actualizaron Reservaciones importantes, presupuesto, nota del día Magic Kingdom, pruebas Playwright y textos obsoletos. Se conservan como histórico las notas de auditoría anteriores que describían Disney sin cotización; esta sección las sustituye a partir del 15/11/2026. Sin merge.
+
+## Auditoría D final repetida · 15/11/2026
+- **Referencia normativa:** `docs/trip-editorial-guide.md`, `docs/trip-master-standard.md`, `docs/trip-data-contract.md`, `docs/trip-production-checklist.md`; comprobaciones cruzadas contra componentes `trip.js`, `sections.js`, `budget.js`, `budget-table.js`, `major-transport.js`, `seasonality.js` y pruebas `tests/browser-smoke.cjs`.
+- **Integridad:** `2026-12-02` a `2026-12-07`, seis días consecutivos y cinco noches Rosen; cuatro parques en secuencia acordada, un viajero, cinco pines, 12 meses, nueve experiencias sin fechas en títulos, ocho reservas por prioridad, cuatro conexiones terrestres y dos escenarios de hotel excluyentes. Tres indicadores en el orden exacto de la guía, clima en tarjeta separada y portada con título/introShort. Sin sexta noche ni Hogwarts Express con boleto 1-parque/día.
+- **Presupuesto:** 18 partidas, tres extras opcionales con `null`, una sola partida para Magic Kingdom US$217.26 ya con US$13.26 de impuesto y una sola provisión de impuesto Universal US$21.84, por confirmar. Suma por renglones `$38,481.31 MXN`; subtotal bruto antes de redondear `$38,481.33 MXN`, diferencia 2 centavos. Rango global `$39,000–$44,000 MXN`. Transporte aeropuerto, Disney y respaldo sin duplicar. Se conserva tasa DOF 13/11/2026 $18.6188 MXN/USD y se explica la tasa diferente del carrito Disney.
+- **Edición final:** se corrigió equivalencia errónea del diferencial Terra Luna vs Rosen de `$13,063` a `$13,062 MXN` por US$701.53, se incorporaron las equivalencias MXN a las referencias relevantes de Movilidad/Reservaciones/Presupuesto, se resumió la nota de presupuesto de 1,300 a menos de 1,000 caracteres y se reemplazaron los cuatro pies de foto genéricos por descripciones específicas de 24–27 palabras. Se eliminaron seis enlaces duplicados de `sources`.
+- **Contraste oficial:** Disney confirma que NO hay Mickey’s Very Merry Christmas Party el sábado 5/12/2026; Universal confirma temporada navideña 14/11/2026–3/1/2027. Enlaces primarios de Disney, Universal, Rosen Deluxe Double y Terra Luna accesibles en consulta web. Los horarios concretos de shows y shuttles siguen sujetos a app y hotel.
+- **Pruebas fortalecidas:** regresión de noches, tipo de alojamiento, exclusión de paquete Terra Luna, impuesto Disney no duplicado, subtotal económico, divisas, descripciones fotográficas entre 15 y 30 palabras, ausencia de títulos con fechas, unicidad de URLs de fuentes, calendario, estacionalidad y estructura. GitHub Actions del último commit debe verificarse antes de dar luz verde.
+- **Alcance del PR:** además de Orlando hay correcciones de componentes visuales generales y un cambio puntual de texto de Italia 2027 solicitado explícitamente en esta misma rama. No comparar calendarios ni modificar decisiones de otros itinerarios.
+- **Limitación verificable:** las pruebas de navegador en CI cubren Desktop/Mobile, pero no sustituyen una inspección humana del despliegue o una confirmación de carga de imágenes externas en todos los dispositivos. Las reservas comerciales y cotizaciones finales se comprobarán cuando se compren; no son condiciones para hacer merge de una propuesta correctamente etiquetada como presupuestada.
