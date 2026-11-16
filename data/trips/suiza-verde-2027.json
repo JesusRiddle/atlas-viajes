@@ -41,7 +41,7 @@
       1
     ]
   ],
-  "work": null,
+  "work": 10,
   "costs": [],
   "profile": {
     "pace": "Moderado",
@@ -54,7 +54,7 @@
   },
   "intro": "En Zúrich, el casco antiguo y Lindt Home of Chocolate abren el viaje antes de visitar Maienfeld y el mundo de Heidi. Lucerna ofrece el Kapellbrücke, el lago de los Cuatro Cantones y una excursión al Titlis con su puente suspendido. En Grindelwald esperan los paisajes verdes del Oberland bernés: Lauterbrunnen y sus cascadas, Mürren, Wengen, First y Bachalpsee, los glaciares de Jungfraujoch y las aguas turquesas de Brienz y Oeschinensee. La última región alpina es Zermatt, con el Matterhorn, el tren a Gornergrat y Riffelsee. El recorrido termina rumbo al aeropuerto de Ginebra.",
   "introShort": "De Zúrich y el pueblo de Heidi a Lucerna y el Titlis; después, los valles de Jungfrau, los lagos de Brienz y Oeschinensee, y el Matterhorn desde Zermatt.",
-  "climate": "Junio suele ofrecer praderas verdes, cascadas alimentadas por el deshielo y temperaturas templadas en los valles. La meteorología cambia rápidamente entre localidades y montañas.\n\nEn Jungfraujoch, Titlis y Gornergrat puede hacer frío intenso incluso cuando el valle está templado. Algunos senderos altos pueden conservar nieve o permanecer cerrados; comprobar el estado diario.\n\n*Qué llevar:* Ropa por capas, impermeable, calzado con buena suela y abrigo para altura.\n\n*Horas de luz:* Cerca del solsticio, los días son largos; priorizar las subidas por visibilidad y previsión, no solo por disponibilidad de luz.",
+  "climate": "En junio, los valles y ciudades de la ruta tienen como referencia aproximada 11 a 23 °C, mientras Titlis, Jungfraujoch y Gornergrat pueden estar bajo cero. Son valores climáticos orientativos, no un pronóstico de junio de 2027; hay lluvia y cambios rápidos de visibilidad, y Bachalpsee/Riffelsee pueden conservar nieve.\n\n*Qué llevar:* Capas térmicas, chaqueta impermeable y cortaviento, calzado de senderismo con agarre y abrigo suficiente para los miradores de gran altitud; usar mochila ligera en excursiones.\n\n*Horas de luz:* Cerca del solsticio, Zúrich y Lucerna tienen aproximadamente 16 horas de luz, con amanecer alrededor de 05:30 y atardecer cerca de 21:20; la meteorología puede limitar las vistas incluso durante las horas diurnas.",
   "solo": "Ruta pensada para una persona, con trenes y alojamientos en zonas conectadas; no requiere conducir ni hacer deportes de montaña.",
   "flight": "COTIZACIÓN, NO COMPRA · Lufthansa/SWISS Economy Light multidestino, 1 persona, 12–27 junio 2027: MEX→ZRH, salida 12 jun 19:50, llegada 13 jun 17:25 (+1), conexión Frankfurt 1 h 40 min. GVA→MEX, 27 jun 09:10–17:30, conexión Frankfurt 3 h. Precio mostrado en el sitio de Lufthansa: $23,300.14 MXN por el itinerario completo (captura proporcionada por el viajero en noviembre de 2026). Incluye artículo personal y equipaje de mano; verificar medidas y reglas antes de comprar. Economy Light sujeta a restricciones; confirmar condiciones de cambios, reembolso y precio final. Alternativa comparada: vuelo redondo por Zúrich Economy Light $23,101 MXN en Google Flights, no comprado. Las tarifas pueden variar.",
   "local": "Transporte en tren SBB y operadores locales, sin coche. Llegada ZRH → Zürich HB; Zürich → Maienfeld → Lucerna; Luzern ↔ Engelberg; Luzern–Interlaken Express a Grindelwald; excursiones desde Grindelwald a Lauterbrunnen, First, Brienz, Jungfraujoch y Kandersteg; Grindelwald → Zermatt; tren de cremallera Gornergrat y Sunnegga opcional; Zermatt → Genève-Aéroport para última noche. Billetes 2027 de tren, barco y remontes pendientes; comparar Swiss Half Fare Card, Swiss Travel Pass 15 días y billetes individuales. No añadir Glacier Express ni Bernina Express.",
@@ -2044,19 +2044,25 @@
   },
   "practicalIndicators": [
     {
-      "type": "style",
+      "id": "style",
       "title": "Estilo de viaje",
-      "description": "Trenes, pueblos alpinos y miradores; ritmo activo con excursiones ajustables por meteorología."
+      "badge": "Moderado–activo",
+      "tone": "orange",
+      "text": "Recorrido en solitario, principalmente en tren, con cinco alojamientos. Alterna ciudades, pueblos alpinos, caminatas y miradores. Los días en Grindelwald son activos; ajustar excursiones por nubosidad y senderos abiertos, y conservar Sunnegga como jornada flexible."
     },
     {
-      "type": "language",
+      "id": "language",
       "title": "Idioma y moneda",
-      "description": "Alemán predominante en la ruta y francés en Ginebra; franco suizo (CHF). Inglés habitual en servicios turísticos."
+      "badge": "Alemán · CHF",
+      "tone": "green",
+      "text": "En Zúrich, Lucerna, el Oberland y Zermatt predomina el alemán (también dialectos suizos); en Ginebra, el francés. El inglés suele funcionar en servicios turísticos. Tarjetas ampliamente aceptadas; llevar algo de efectivo en francos suizos. Al pagar, elegir CHF y rechazar conversión a MXN del terminal."
     },
     {
-      "type": "entry",
+      "id": "entry",
       "title": "Documentación y consejos prácticos",
-      "description": "Pasaporte mexicano: comprobar condiciones de entrada vigentes antes de viajar y cualquier autorización electrónica aplicable. Revisar enchufes suizos tipo J y seguro de viaje."
+      "badge": "Pasaporte mexicano",
+      "tone": "green",
+      "text": "Para una estancia turística corta, verificar condiciones oficiales de entrada Schengen, vigencia del pasaporte y ETIAS antes de viajar; a noviembre de 2026 ETIAS aún no recibía solicitudes. En Suiza se usan tomas tipo J (también admiten clavija europea C), 230 V/50 Hz: desde México, llevar adaptador para clavija A/B a toma J, compatible con tierra si tu equipo la requiere. Un adaptador no transforma voltaje; comprobar que los cargadores admitan 100–240 V. Contratar seguro con cobertura de montaña."
     }
   ],
   "tips": [],
@@ -2124,7 +2130,10 @@
     "https://alphubel-zermatt.ch/en/",
     "https://all.accor.com/hotel/3535/index.es.shtml",
     "https://www.hotel-waldstaetterhof.ch/en/faqs",
-    "https://alphubel-zermatt.ch/en/questions-and-answers/"
+    "https://alphubel-zermatt.ch/en/questions-and-answers/",
+    "https://www.myswitzerland.com/en-ch/planning/about-switzerland/general-facts/general-information/electricity/",
+    "https://www.sem.admin.ch/en/entering-switzerland",
+    "https://travel-europe.europa.eu/etias/faq"
   ],
   "sourceNote": "Temporadas actualizadas 16 noviembre 2026 con información climática general de MeteoSwiss, turismo oficial y calendarios publicados de Oeschinensee y Brienzer Rothorn 2027. Rangos de temperatura aproximados para ciudades y valles de varias altitudes, no normales exactas de cada estación ni pronósticos para junio 2027. Aperturas de otros servicios y estado de senderos deben verificarse antes de viajar. Cotización aérea aportada por el usuario en noviembre de 2026.",
   "budgetRange": null,
