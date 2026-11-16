@@ -60,24 +60,48 @@
   "local": "Transporte prioritariamente en tren SBB y redes regionales; sin coche. Zúrich–Maienfeld–Lucerna, Lucerna–Engelberg–Lucerna, Luzern–Interlaken Express hacia Grindelwald, excursiones desde Grindelwald a valles y lagos, tren a Zermatt y salida vía Ginebra. Validar tiempos puerta a puerta, última noche cercana a GVA, servicios de temporada y pases ferroviarios antes de comprar.",
   "experiences": [
     {
-      "city": "Zúrich y Maienfeld",
-      "description": "Casco antiguo y Lindt Home of Chocolate; Heididorf en Maienfeld, sujeto a calendario y acceso local."
+      "city": "Zúrich · casco antiguo y chocolate",
+      "description": "Recorrer las calles del casco antiguo junto al Limmat y visitar Lindt Home of Chocolate en Kilchberg. Entre las especialidades locales figuran Zürcher Geschnetzeltes con rösti y los pequeños Luxemburgerli."
     },
     {
-      "city": "Lucerna y Engelberg",
-      "description": "Kapellbrücke, lago de los Cuatro Cantones, Titlis Rotair, Cliff Walk y cueva glaciar; clima y operación condicionan la montaña."
+      "city": "Maienfeld · el mundo de Heidi",
+      "description": "Conocer Heididorf y sus escenarios rurales, entre viñedos y montañas de la región de Heidiland. Como sabores de los Grisones, explorar Bündner Gerstensuppe y Capuns, si aparecen en la carta."
     },
     {
-      "city": "Grindelwald y Jungfrau",
-      "description": "Lauterbrunnen, Trümmelbach, Mürren y Gimmelwald; First Cliff Walk, Bachalpsee, Jungfraujoch y Wengen. Cambiar el orden por visibilidad."
+      "city": "Lucerna · puentes y lago",
+      "description": "Cruzar el Kapellbrücke, pasear por el casco histórico y navegar un tramo del lago de los Cuatro Cantones si los horarios lo permiten. Especialidades: Luzerner Chügelipastete y Lozärner Birewegge."
     },
     {
-      "city": "Lagos del Oberland",
-      "description": "Brienz y cataratas Giessbach, y excursión a Oeschinensee desde Kandersteg; revisar barcos y estado de senderos en junio."
+      "city": "Titlis · glaciar y puente colgante",
+      "description": "Ascender desde Engelberg en los remontes del Titlis, disfrutar el teleférico giratorio Rotair, cruzar el Cliff Walk y entrar en la cueva glaciar, sujetos a operación y meteorología."
     },
     {
-      "city": "Zermatt",
-      "description": "Matterhorn desde Gornergrat, Riffelsee si el acceso está abierto, Sunnegga y Leisee como alternativa flexible."
+      "city": "Lauterbrunnen · el valle de cascadas",
+      "description": "Caminar entre praderas y saltos de agua, contemplar Staubbachfall y recorrer las cataratas interiores de Trümmelbach, si están abiertas. Continuar hacia Mürren y, si alcanza el tiempo, Gimmelwald."
+    },
+    {
+      "city": "Grindelwald-First · pasarela y lago",
+      "description": "Subir al mirador First y recorrer su Cliff Walk; si el sendero está abierto y sin nieve peligrosa, caminar hasta Bachalpsee para ver el lago bajo las cumbres alpinas."
+    },
+    {
+      "city": "Brienz · lago turquesa y Giessbach",
+      "description": "Navegar por el lago Brienz hasta Giessbach See, subir en el funicular histórico y recorrer los miradores y caminos habilitados junto a las cataratas y el Grandhotel Giessbach."
+    },
+    {
+      "city": "Jungfraujoch · de praderas a glaciares",
+      "description": "Viajar en los trenes de montaña hasta Jungfraujoch para contemplar el Aletsch y los paisajes de nieve; de regreso, pasear por Wengen si los horarios y el clima lo permiten."
+    },
+    {
+      "city": "Oeschinensee · lago entre montañas",
+      "description": "Llegar desde Kandersteg en teleférico y caminar por el acceso permitido hacia las aguas turquesas de Oeschinensee. Evitar rutas elevadas si persisten nieve, hielo o cierres en junio."
+    },
+    {
+      "city": "Zermatt · Matterhorn y Gornergrat",
+      "description": "Pasear entre chalets tradicionales y subir en tren de cremallera a Gornergrat para admirar el Matterhorn. Bajar hacia Riffelsee solo si la ruta está abierta y las condiciones lo permiten."
+    },
+    {
+      "city": "Zermatt · Sunnegga y cocina del Valais",
+      "description": "Elegir Sunnegga y Leisee para una jornada más suave, o aprovecharla para recuperar Gornergrat tras mal tiempo. Probar, si se desea, raclette del Valais o la tarta salada Cholera."
     }
   ],
   "days": [
@@ -715,7 +739,15 @@
     "https://www.outdooractive.com/es/poi/jungfrau-region/truemmelbachfaelle/25006919/",
     "https://www.geonames.org/2661398/brienz-be.html",
     "https://www.outdooractive.com/es/poi/zermatt-matterhorn/riffelsee/8769671/",
-    "https://ourairports.com/airports/LSGG/"
+    "https://ourairports.com/airports/LSGG/",
+    "https://www.zuerich.com/en/eat-drink/typical-and-traditional",
+    "https://www.luzern.com/fileadmin/Mediendatenbank/Luzern-Tourismus/PDF_Dokumente/Tourist_Information/Bildungsunterlagen/Spezialitaeten_Kanton_Luzern.pdf",
+    "https://www.myswitzerland.com/es/planificacion/sobre-suiza/costumbres-y-tradiciones/platos-tipicos-de-la-cocina-del-pais-old/",
+    "https://www.graubuenden.ch/en/graubuenden/general-information/cuisine/recipes-grisons-specialities/barley-soup",
+    "https://www.chur.graubuenden.ch/de/uebersicht-rezepte-buendner-spezialitaeten",
+    "https://www.jungfrau.ch/en-gb/grindelwaldfirst/lake-bachalpsee/",
+    "https://www.giessbach.ch/en/kontakt-anreise/",
+    "https://www.valais.ch/en/taste/valais-specialties/recipes/cholera"
   ],
   "sourceNote": "Temporadas actualizadas 16 noviembre 2026 con información climática general de MeteoSwiss, turismo oficial y calendarios publicados de Oeschinensee y Brienzer Rothorn 2027. Rangos de temperatura aproximados para ciudades y valles de varias altitudes, no normales exactas de cada estación ni pronósticos para junio 2027. Aperturas de otros servicios y estado de senderos deben verificarse antes de viajar. Cotización aérea aportada por el usuario en noviembre de 2026.",
   "budgetRange": null,
