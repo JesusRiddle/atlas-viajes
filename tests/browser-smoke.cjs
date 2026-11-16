@@ -236,6 +236,22 @@ const assert = require('node:assert/strict');
           assert.equal(trip.expenses.find(e=>e.id==='orlando-disney').cost.amount,217.26);
           assert.equal(trip.expenses.find(e=>e.id==='orlando-disney').status,'quoted');
           assert.equal(trip.expenses.filter(e=>e.id==='orlando-disney').length,1);
+          const orlandoHotel = trip.hotels.find(h => h.id === 'orlando-rosen');
+          const terraLuna = trip.hotels.find(h => h.id === 'orlando-terraluna');
+          assert.equal(orlandoHotel.checkIn,'2026-12-02');
+          assert.equal(orlandoHotel.checkOut,'2026-12-07');
+          assert.equal(terraLuna.checkOut,'2026-12-07');
+          assert.equal(trip.expenses.find(e=>e.id==='orlando-universal-tax').status,'estimated');
+          assert.ok(trip.hotelsComparison.includes('US$701.53 (≈ $13,062 MXN)'),
+            'Orlando: conversión correcta del diferencial excluyente');
+          assert.ok(trip.groundConnections.filter(x=>x.mode.includes('Shuttle')).every(x =>
+            x.costLabel.startsWith('Shuttle gratuito')),
+            'Orlando: shuttles gratuitos sin etiqueta monetaria engañosa');
+          assert.deepEqual(trip.practicalIndicators.map(x=>x.title),
+            ['Estilo de viaje','Idioma y moneda','Documentación y consejos prácticos']);
+          assert.ok(trip.introHighlights.every(x=>trip.intro.includes(x)),
+            'Orlando: los énfasis de Panorama coinciden literalmente');
+
           assert.ok(!trip.expenses.some(e=>e.id==='orlando-disney-tax'), 'Disney: impuesto incluido, sin segunda partida');
           assert.equal(trip.expenses.filter(e=>e.category==='lodging').length,1);
           assert.equal(trip.days.filter(d=>d.hotel==='orlando-rosen').length,5);
@@ -318,9 +334,9 @@ const assert = require('node:assert/strict');
             'Orlando: piso de planeación');
           assert.match(budgetText, /44[,.]000[,.]00/,
             'Orlando: techo de planeación');
-          assert.match(budgetText, /US\$204\.00 de entrada \+ US\$13\.26 de impuesto = US\$217\.26/,
+          assert.match(budgetText, /US\$217\.26 con impuestos/,
             'Orlando: desglose Disney con impuesto incluido');
-          assert.match(budgetText, /6\.5% teórico por confirmar/,
+          assert.match(budgetText, /impuesto provisional Universal/,
             'Orlando: no presentar impuesto teórico como pagado');
           const food = trip.expenses.filter(e => e.category === 'food');
           assert.equal(food.length, 6, 'Orlando: alimentos por seis jornadas');
