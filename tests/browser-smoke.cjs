@@ -472,6 +472,21 @@ const assert = require('node:assert/strict');
           assert.doesNotMatch(await page.locator('#mapa').innerText(), /Noches por definir|referencia regional/i);
         }
         if (id === 'colombia-2027') {
+          const lodgingTiles = page.locator('#plan .overview-stays .basepill');
+          assert.equal(await lodgingTiles.count(), 4, 'Colombia: cuatro estancias');
+          const bounds = await lodgingTiles.evaluateAll(nodes => nodes.map(node => {
+            const rect = node.getBoundingClientRect();
+            return { x: rect.left, y: rect.top, w: rect.width, right: rect.right };
+          }));
+          assert.ok(bounds.every(b => b.w <= 251), 'Colombia: estancias compactas, máximo 250px');
+          if (viewport.width > 800) {
+            assert.ok(bounds.every(b => Math.abs(b.y - bounds[0].y) <= 2),
+              'Colombia: los cuatro alojamientos deben caber en una sola fila');
+            assert.ok(bounds.every((b,i) => i === 0 || b.x > bounds[i - 1].x),
+              'Colombia: las tarjetas deben avanzar de izquierda a derecha');
+          }
+        }
+        if (id === 'colombia-2027') {
           const photoCatalog = JSON.parse(fs.readFileSync('data/places.json','utf8'));
           const tripData = JSON.parse(fs.readFileSync('data/trips/colombia-2027.json','utf8'));
           assert.equal(await page.locator('#dias details.day').count(),12,'Colombia: 12 jornadas');
