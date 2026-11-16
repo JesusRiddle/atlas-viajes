@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 06 · Reservaciones importantes incorporada y validada estructuralmente; siguiente sección: 07 Movilidad y conexiones. Auditorías B/D de navegador y CI pendientes.
+**Etapa:** 07 · Movilidad y conexiones registrada y verificada estructuralmente; siguiente sección: 08 Dónde dormirás. Auditorías B/D y CI todavía pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -22,7 +22,7 @@
 - [x] 04 · Mapa: 23 puntos georreferenciados (5 zonas de alojamiento, 18 excursiones); Ginebra representa la ciudad, no el hotel ni el aeropuerto
 - [x] 05 · Experiencias: 12 fichas de MUST por región, tren Luzern–Interlaken, alternativas y gastronomía regional documentada
 - [x] 06 · Reservaciones importantes: tres grupos, 12 fichas con estado, fechas, alternativas y enlaces oficiales.
-- [ ] 07 · Transporte mayor: modelo `AtlasTransportModel.validateTrip` y render sin ejecutar
+- [x] 07 · Transporte mayor: 14 fichas y 16 referencias en jornadas; validación estructural equivalente realizada, prueba real de render y Node pendientes
 - [ ] 08 · Alojamiento: zonas y hoteles candidatos investigados; tarifas exactas de 14 noches pendientes
 - [ ] 09 · Día por día: traslados puerta a puerta y gastos pendientes
 - [ ] 10 · Panorama: validar indicadores y clima en Desktop/Mobile
@@ -62,6 +62,15 @@
 - Jungfraujoch: confirmada obligación de reserva de asiento de 1 mayo a 31 octubre 2027 además de billete; pasar torniquetes al menos 10 minutos antes. Titlis: Rotair, Cliff Walk y cueva glaciar incluidos en billete peatonal; Ice Flyer separado. Oeschinensee: cambios sujetos a condiciones, cancelación ordinaria no disponible.
 - Vuelos Lufthansa/SWISS $23,300.14 MXN permanecen cotización de noviembre 2026, no comprados. Las tarifas de montaña 2027 siguen pendientes; no se reutilizaron como cotización los precios actuales.
 - Pendientes: comprobar apertura de calendarios 2027, condiciones particulares, selección hotelera y trenes/pases. No se ha ejecutado CI ni inspección visual Desktop/Mobile en esta etapa.
+
+## Verificación de Movilidad y conexiones · 2026-11-16
+- 14 fichas de transporte: vuelos multidestino con conexión real en Frankfurt y precio global $23,300.14 MXN; 13 agrupaciones de traslados de aeropuerto, interurbanos, regionales y montaña, con tarifas en CHF pendientes por falta de cotizaciones para junio de 2027.
+- Vuelos con segmentos MEX–FRA–ZRH y GVA–FRA–MEX; horas intermedias FRA no inventadas; 16 referencias a IDs de transporte vinculadas a días. Jungfraujoch desglosado en Eiger Express + Jungfraubahn, ida/vuelta.
+- Luzern–Interlaken Express: billete ordinario válido, reserva de asiento opcional. Jungfraujoch: reserva obligatoria de asiento, independiente del billete de montaña.
+- Pases por comparar con desglose financiero posterior: Swiss Half Fare Card, Swiss Travel Pass 15 días y billetes normales/Supersaver/Saver Day Pass; ningún descuento representa viajes gratis universales.
+- **Importante:** SBB/operadores no tienen tarifas completas verificadas para cada trayecto/fecha. Los 13 traslados CHF mantienen `price.amount: null`, sin inventar presupuesto. Ferry Brienz y teleféricos dependen de horarios y posibles rutas alternativas.
+- Verificación estática de IDs únicos, opciones/selectedFare, segmentos contiguos, tarifas no vacías y referencias; **no se ejecutó el `AtlasTransportModel.validateTrip` real ni el render `AtlasMajorTransport.render` ni Node/browser**. Los hallazgos deberán cerrar en auditoría B/D antes de afirmar sección auditada y merge.
+- Se mantuvieron exclusivamente cambios en el JSON Suiza Verde y la bitácora.
 
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
