@@ -137,17 +137,17 @@ window.AtlasHome = function (ctx) {
     // New-trip home prices are derived from the same ledger used in Presupuesto.
     // No flight is booked automatically: the first quoted option is a dated reference.
     const homePrice = t => {
-        const estimate = window.AtlasBudget?.planningEstimate?.(t);
+        const projection = window.AtlasBudget?.planningEstimate?.(t);
         const explicitRange = Array.isArray(t.budgetRange) && t.budgetRange.length === 2 &&
             t.budgetRange.every(value => Number.isFinite(value) && value > 0) &&
             t.budgetRange[0] <= t.budgetRange[1]
-            ? {low: t.budgetRange[0], high: t.budgetRange[1]} : null;
-        // For provisional budgets without a model projection, keep the editorial range visible.
-        // A preliminary expense subtotal is not a complete trip price.
-        const selected = estimate || (t.budgetPreliminary ? explicitRange : null);
+            ? { low: t.budgetRange[0], high: t.budgetRange[1] } : null;
+        const selected = projection || (t.budgetPreliminary ? explicitRange : null);
         if (!selected) return homeReady(t) ? price(t) : null;
-        const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : null;
-        if (travelers === null) return '
+        const travelers = Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 1;
+        const format = amount => (amount / travelers).toLocaleString('es-MX', { maximumFractionDigits: 0 });
+        const currencySign = String.fromCharCode(36);
+        return currencySign + format(selected.low) + '–' + currencySign + format(selected.high);
     };
     function card(t, i) {
         const title = esc(t.name);
