@@ -33,7 +33,7 @@ test('Suiza verde mantiene fechas, ruta y estados sin afirmar compras', () => {
     assert.ok(module && module.available, 'Suiza verde registrada en el catálogo');
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
     assert.equal(trip.status, null, 'El Atlas ya no emplea estado draft público');
-    assert.equal(trip.cover, null);
+    assert.equal(trip.cover, 'swissgreen-cover');
     assert.equal(trip.travelerCount, 1);
     assert.equal(trip.days.length, 16);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 14);
@@ -860,4 +860,37 @@ test('Suiza Verde: presupuesto integral concilia sin duplicar vuelos ni pases', 
         assert.equal(new Set(details.entries.map(e=>e.id)).size, details.entries.length, date + ': duplicados');
     }
     assert.ok(!trip.expenses.some(e => e.concept.includes('Glacier Express') || e.concept.includes('Bernina Express')));
+});
+
+
+test('Suiza Verde: fotografías estivales, portada, galerías y créditos completos', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
+    assert.equal(trip.cover, 'swissgreen-cover');
+    assert.equal(trip.coverSlides.length, 6);
+    assert.equal(trip.days.length, 16);
+    assert.equal(trip.days.filter(d => d.places.length).length, 13);
+    assert.deepEqual(trip.days[0].places, []);
+    assert.deepEqual(trip.days[15].places, []);
+    const ids = new Set([trip.cover, ...(trip.coverSlides || []), ...trip.days.flatMap(d => d.places || [])]);
+    const winter = /(winter|invierno|nevado)/i;
+    for (const id of ids) {
+        assert.ok(places[id]?.photo?.src, 'Fotografía sin fuente: ' + id);
+        assert.ok(!winter.test(id) && !winter.test(places[id].name),
+            'Foto de invierno no permitida en Suiza Verde: ' + id);
+        const photo = places[id].photo;
+        assert.ok(photo.source && photo.license && photo.attribution,
+            'Créditos incompletos de ' + id);
+        const desc = trip.placeDescriptions?.[id];
+        assert.equal(typeof desc, 'string', 'Pie de foto faltante: ' + id);
+        const words = desc.trim().split(/\s+/).length;
+        assert.ok(words >= 15 && words <= 30,
+            'Pie de foto fuera de 15–30 palabras: ' + id + ', ' + words);
+    }
+    assert.equal(new Set(trip.coverSlides).size, trip.coverSlides.length);
+    assert.ok(trip.days[9].optionalPlaces.includes('wengen'),
+        'Wengen debe seguir marcado como opción meteorológica y ferroviaria');
+    assert.ok(trip.days[7].places.includes('swissgreen-bachalpsee'));
+    assert.ok(trip.days[8].places.includes('swissgreen-brienz'));
+    assert.ok(trip.days[12].places.includes('swissgreen-riffelsee'));
 });
