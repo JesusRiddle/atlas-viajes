@@ -174,7 +174,7 @@ window.AtlasHome = function (ctx) {
             (dateText ? '<span class="carddates">' + dateText + '</span>' : '') +
             '</div><h3 id="card-' + esc(t.id) + '">' + title + '</h3>' +
             (cities ? '<p class="card-route" title="' + esc(cities) + '">' + cities + '</p>' : '') +
-            (Number.isInteger(t.work) ? '<div class="cardfacts"><span>' + t.work + ' laborales</span></div>' : '') +
+            (Number.isInteger(t.work) ? '<div class="cardfacts"><span>' + t.work + ' días laborales</span></div>' : '') +
             (introduction ? '<p class="card-trip-intro">' + esc(introduction) + '</p>' : '') +
             (amount ? '<div class="cardbottom"><div class="card-price"><small>' +
                 (travelers ? 'Presupuesto estimado por persona' : 'Presupuesto estimado del viaje') +
