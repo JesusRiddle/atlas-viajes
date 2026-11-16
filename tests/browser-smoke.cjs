@@ -233,7 +233,10 @@ const assert = require('node:assert/strict');
           assert.match(trip.exchangeNote,/13\/11\/2026/);
           assert.equal(trip.budgetRange[0],39000);
           assert.equal(trip.budgetRange[1],44000);
-          assert.equal(trip.expenses.find(e=>e.id==='orlando-disney').cost.amount,null);
+          assert.equal(trip.expenses.find(e=>e.id==='orlando-disney').cost.amount,217.26);
+          assert.equal(trip.expenses.find(e=>e.id==='orlando-disney').status,'quoted');
+          assert.equal(trip.expenses.filter(e=>e.id==='orlando-disney').length,1);
+          assert.ok(!trip.expenses.some(e=>e.id==='orlando-disney-tax'), 'Disney: impuesto incluido, sin segunda partida');
           assert.equal(trip.expenses.filter(e=>e.category==='lodging').length,1);
           assert.equal(trip.days.filter(d=>d.hotel==='orlando-rosen').length,5);
           assert.equal(trip.days[5].hotel,null);
@@ -308,31 +311,31 @@ const assert = require('node:assert/strict');
           const budget = page.locator('#costes .budget-ledger');
           const budgetText = await budget.innerText();
           assert.match(budgetText, /Subtotal de partidas con importe/,
-            'Orlando: no se debe mostrar total cerrado con Disney pendiente');
-          assert.match(budgetText, /34[,.]436[,.]19/,
+            'Orlando: presupuesto conserva subtotales mientras otros extras son variables');
+          assert.match(budgetText, /38[,.]481[,.]31/,
             'Orlando: subtotal conciliado con impuestos provisionales y transporte único');
           assert.match(budgetText, /39[,.]000[,.]00/,
             'Orlando: piso de planeación');
           assert.match(budgetText, /44[,.]000[,.]00/,
             'Orlando: techo de planeación');
-          assert.match(budgetText, /Falta consultar el precio de Magic Kingdom/,
-            'Orlando: advertencia comercial visible');
-          assert.match(budgetText, /6\.5% hipotético/,
+          assert.match(budgetText, /US\$204\.00 de entrada \+ US\$13\.26 de impuesto = US\$217\.26/,
+            'Orlando: desglose Disney con impuesto incluido');
+          assert.match(budgetText, /6\.5% teórico por confirmar/,
             'Orlando: no presentar impuesto teórico como pagado');
           const food = trip.expenses.filter(e => e.category === 'food');
           assert.equal(food.length, 6, 'Orlando: alimentos por seis jornadas');
           assert.equal(food.reduce((sum,e)=>sum+e.cost.amount,0), 290,
             'Orlando: US$290 en comida una sola vez');
           assert.equal(trip.expenses.filter(e => e.id === 'orlando-universal-tax').length,1);
-          assert.ok(trip.expenses.find(e => e.id === 'orlando-disney').cost.amount === null,
-            'Orlando: entrada Disney sin precio fabricado');
+          assert.ok(trip.expenses.find(e => e.id === 'orlando-disney').cost.amount === 217.26,
+            'Orlando: entrada Disney con total cotizado correctamente');
           assert.equal(trip.exchangeRateSnapshot.date, '2026-11-13',
             'Orlando: fecha DOF correcta');
           assert.equal(trip.exchangeRates.USD, 18.6188);
           const listed = (trip.expenses || []).filter(e => !e.optional && Number.isFinite(e.cost?.amount));
           const subtotal = listed.reduce((sum,e) => sum +
             (e.cost.currency === 'MXN' ? e.cost.amount : e.cost.amount * trip.exchangeRates.USD),0);
-          assert.ok(Math.abs(subtotal - 34436.21) < 0.01,
+          assert.ok(Math.abs(subtotal - 38481.330564) < 0.01,
             'Orlando: suma matemática del modelo');
         }
         if (id === 'orlando-2026') {
@@ -387,8 +390,8 @@ const assert = require('node:assert/strict');
           assert.match(body, /subtotal/i, 'Orlando: boleto Universal sin impuestos confirmados');
           assert.doesNotMatch(body, /SIN COMPRAR|SIN RESERVAR|cotización, no compra/i,
             'Orlando: sin aclaraciones repetitivas de compra');
-          assert.equal(tripData.expenses.find(x => x.id === 'orlando-disney').cost.amount, null,
-            'Orlando: Magic Kingdom sigue pendiente de cotización');
+          assert.equal(tripData.expenses.find(x => x.id === 'orlando-disney').cost.amount, 217.26,
+            'Orlando: Magic Kingdom con cotización del 5 de diciembre');
           assert.ok(await reservations.locator('a[href^="https://"]').count() >= 12,
             'Orlando: enlaces oficiales visibles');
         }
