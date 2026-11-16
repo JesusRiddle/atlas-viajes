@@ -5,8 +5,8 @@
 **Rama / PR:** `feature/orlando-2026` · https://github.com/JesusRiddle/atlas-viajes/pull/17  
 **Modalidad:** Itinerario detallado  
 **Última actualización:** 2026-11-15  
-**Etapa actual:** 11/13 · presupuesto conciliado y nueve secciones revisadas; pendiente auditoría global visual, precios de compras y aprobación de merge  
-**Siguiente acción autónoma:** realizar auditoría global cruzada de 9 secciones, revisar imágenes remotas y experiencia visual, comprobar CI de rama final, comparar compra real de Magic Kingdom y términos finales de cotizaciones cuando sean accesibles; preparar PR para revisión, sin merge.
+**Etapa actual:** 13/13 · auditoría transversal técnica aprobada; faltan inspección visual manual del despliegue, cotizaciones de compra y autorización de merge  
+**Siguiente acción autónoma:** validar manualmente en el despliegue que las cuatro fotos externas carguen en escritorio y móvil; confirmar precios y condiciones comerciales de compra (especialmente Magic Kingdom). Presentar PR para revisión del propietario y solicitar autorización expresa antes del merge.
 
 ## Decisiones definitivas del viajero
 
@@ -179,3 +179,14 @@
 - **CI:** commit `ea9aa983c6e00fdb71c1f98232e369c526f90cdd` concluyó **success** en GitHub Actions, con tests Node y navegador. Incluye control de importes, seis comidas diarias, monto Disney `null`, fecha de DOF y avisos de gastos no confirmados. Primer fallo intermedio por aserción de texto literal, corregido sin alterar precios.
 
 **Siguiente fase = auditoría global final:** cruzar Panorama, Mapa, Temporadas, Experiencias, Reservaciones, Movilidad, Hoteles, Día por día y Presupuesto; revisar consistencia de fechas, fotos y créditos, usabilidad visual escritorio/móvil, enlaces, textos genéricos y CI. No hacer merge hasta aprobación del viajero. Quedan necesariamente pendientes cotizaciones y compras finales de Magic Kingdom, vuelo/hotel/Universal y extras.
+
+## Auditoría global transversal · 15/11/2026 (fase 13)
+- **Nueve secciones:** Panorama, Mapa, Temporadas, Experiencias, Reservaciones importantes, Movilidad, Dónde dormirás, Día por día y Presupuesto contienen datos y pasan las aserciones del navegador. Nueva auditoría transversal (`tests/browser-smoke.cjs`) comprueba: 6 fechas consecutivas, 4 parques, 5 coordenadas/1 alojamiento, 12 meses, 9 experiencias, 8 tarjetas de reservaciones, 4 conexiones terrestres, 2 opciones de hotel excluyentes, 5 noches y presupuesto Disney sin precio `null`.
+- **Cruce editorial:** coherencia del plan 2–7/12/2026, una persona, Rosen Plan A, Terra Luna Plan B, vuelos no comprados, entradas Universal 3-Day 3-Park sin Park-to-Park, Magic Kingdom 5/12, experiencias condicionadas por horarios y sin sexta noche. No se cambió itinerario.
+- **Imágenes:** comprobadas externamente las cuatro páginas originales de Wikimedia Commons (Diagon Alley por Chleb000 CC BY-SA 4.0, Hogwarts por Steven Miller CC BY 2.0, Cinderella Castle por Gsink CC0, Ministry por Martin Lewison CC BY 2.0). Entradas con `src`, `source`, `author`, `license`, `licenseUrl` y `attribution` completas; referencias correctas en cuatro días y portada Hogwarts. Verificación de metadatos NO garantiza carga visual efectiva en los dispositivos de cada usuario.
+- **Errores descubiertos y reparados:** (a) `exchangeNote` en Panorama mantenía erróneamente Banxico 15/11, sustituido por publicación DOF 13/11/2026; (b) campo general de vuelo afirmaba que cabina/documentado tenían cargo sin conocer la tarifa, cambiado a pendiente por confirmar; (c) nota de redondeo decía US$0.02 en vez de MXN $0.02. Commit `471a5293`.
+- **CI:** commit documental anterior `865870c8` falló por la aserción visual del logo sticky en Italia, durante secuencia de scroll; no correspondía a un error del presupuesto Orlando. Se sincronizó la prueba con el CSS calculado y el estado estable del scroll (`2586babd`), que concluyó **success**. Posteriormente, auditoría transversal en commit `1a0add0f6ca795fc1346376087b0e29937c1bee3` concluyó **success** con pruebas Node y Playwright navegador desktop/mobile. El fallo histórico no debe describirse como vigente.
+- **PR #17:** cero hilos de revisión y cero revisiones registradas al 15/11/2026. Se mantiene **sin merge** y en espera de aprobación del viajero.
+- **Limitaciones todavía no resueltas:** sin inspección humana de capturas renderizadas del sitio desplegado ni prueba garantizada de descarga de cuatro imágenes externas en conexiones móviles; precios actuales de vuelo/hotel/Universal/Magic Kingdom no cerrados y ninguna compra confirmada. Tarifa aérea y equipaje, cancelación exacta del Rosen, importe real de impuesto Universal, Disney y extras deben confirmarse antes de pagar. Presupuesto sigue siendo rango de planeación, no precio contratado.
+
+**Siguiente fase:** revisión visual/manual final del PR y confirmación comercial por el viajero; una vez aprobadas, decidir merge explícitamente. No fusionar automáticamente.
