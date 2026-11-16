@@ -175,6 +175,40 @@ const assert = require('node:assert/strict');
             id + ' tarjeta Clima y luz debe seguir al presupuesto');
         }
         if (id === 'orlando-2026') {
+          // Auditoría transversal: las nueve secciones comparten la misma versión del viaje.
+          const trip = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
+          const places = JSON.parse(fs.readFileSync('data/places.json','utf8'));
+          assert.equal(trip.start,'2026-12-02');
+          assert.equal(trip.end,'2026-12-07');
+          assert.equal(trip.travelerCount,1);
+          assert.equal(trip.days.length,6);
+          assert.equal(trip.mapPoints.length,5);
+          assert.equal(Object.keys(trip.seasonality.months).length,12);
+          assert.equal(trip.experiences.length,9);
+          assert.equal(trip.reservations.flatMap(group => group[1]).length,8);
+          assert.equal(trip.groundConnections.length,4);
+          assert.equal(trip.hotels.length,2);
+          assert.deepEqual(trip.bases,[['Orlando',5]]);
+          assert.equal(trip.exchangeRateSnapshot.date,'2026-11-13');
+          assert.match(trip.exchangeNote,/13\/11\/2026/);
+          assert.equal(trip.budgetRange[0],39000);
+          assert.equal(trip.budgetRange[1],44000);
+          assert.equal(trip.expenses.find(e=>e.id==='orlando-disney').cost.amount,null);
+          assert.equal(trip.expenses.filter(e=>e.category==='lodging').length,1);
+          assert.equal(trip.days.filter(d=>d.hotel==='orlando-rosen').length,5);
+          assert.equal(trip.days[5].hotel,null);
+          const photoKeys=['or26-diagon','or26-hogwarts','or26-magic','or26-ministry'];
+          for (let i=0;i<photoKeys.length;i++) {
+            const key=photoKeys[i];
+            assert.ok(places[key]?.photo?.src && places[key].photo.source &&
+              places[key].photo.license && places[key].photo.attribution,
+              'Orlando: fotografía y atribución incompletas '+key);
+            assert.deepEqual(trip.days[i+1].places,[key],
+              'Orlando: foto del parque correspondiente '+key);
+          }
+          assert.ok(photoKeys.includes(trip.cover),'Orlando: portada sin foto válida');
+        }
+        if (id === 'orlando-2026') {
           const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           const hotels = page.locator('#alojamientos .hotel-card');
           assert.equal(await hotels.count(), 2, 'Orlando: solo Plan A y alternativa excluyente');
