@@ -939,10 +939,6 @@
       "url": "https://disneyworld.disney.go.com/attractions/big-thunder-mountain-railroad/"
     },
     {
-      "label": "Florida Climate Center · Orlando, normales 1991–2020",
-      "url": "https://climatecenter.fsu.edu/products-services/data/1991-2020-normals/orlando"
-    },
-    {
       "label": "Salida y puesta de sol en Orlando, 2–7 diciembre 2026",
       "url": "https://worldtimeandweather.com/sun/united-states/orlando?month=2026-12"
     },
@@ -963,10 +959,6 @@
       "url": "https://www.universalorlando.com/web/en/us/things-to-do/rides-attractions/hogwarts-express"
     },
     {
-      "label": "Disney · fiesta 2026",
-      "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
-    },
-    {
       "label": "Disney · boleto fecha específica",
       "url": "https://disneyworld.disney.go.com/admission/tickets/theme-parks/"
     },
@@ -975,16 +967,8 @@
       "url": "https://disneyworld.disney.go.com/lightning-lane-passes/"
     },
     {
-      "label": "Rosen · FAQ transporte Disney y check-in",
-      "url": "https://www.roseninn6327.com/faq"
-    },
-    {
       "label": "Rosen · shuttle horarios Universal/ Epic",
       "url": "https://www.roseninn6327.com/hotel-information"
-    },
-    {
-      "label": "Rosen · FAQ transporte aeropuertos y Disney",
-      "url": "https://www.roseninn6327.com/faq"
     },
     {
       "label": "Disney · monorriel Express desde TTC",
@@ -1003,20 +987,12 @@
       "url": "https://www.roseninn6327.com/rooms/deluxe-double-room-with-two-double-beds"
     },
     {
-      "label": "Rosen Inn · FAQ check-in, documento físico y shuttle",
-      "url": "https://www.roseninn6327.com/faq"
-    },
-    {
       "label": "Terra Luna · dirección, impuestos y reglas de habitación",
       "url": "https://www.universalorlando.com/web/en/us/places-to-stay/universal-terra-luna-resort"
     },
     {
       "label": "Universal · comunicado Navidad 2026",
       "url": "https://media.universalparksusa.com/press-releases/universal-orlando-resort-kicks-off-its-destination-wide-holidaycelebration-111126/"
-    },
-    {
-      "label": "Disney · fiestas navideñas fechas 2026",
-      "url": "https://disneyworld.disney.go.com/events-tours/magic-kingdom/mickeys-very-merry-christmas-party/"
     },
     {
       "label": "Disney · programación navideña diurna",
@@ -1031,7 +1007,7 @@
       "url": "https://www.banxico.org.mx/tipcamb/tipCamMIAction.do?idioma=sp"
     }
   ],
-  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios de parques, condiciones de compra y traslados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. Park-to-Park desde US$357 (≈ $6,647 MXN) + impuestos NO representa precio para fechas específicas. Presupuesto auditado 15/11/2026: Banxico DOF 13/11 publica 18.6188 MXN/USD, diferente de FIX determinado 13/11 18.5525; fecha atribuida correctamente. Universal impuesto +6.5% solo estimación matemática provisional, no comprobante. Carrito Disney recibido el 15/11/2026 para 5/12: US$204.00 de entrada más US$13.26 impuesto = US$217.26 total, conversión ilustrativa Disney $4,027.24 MXN usando 18.5365. Reemplaza la provisión previa Disney US$180–240. No añadir impuesto adicional a Disney.",
+  "sourceNote": "Actualización 15/11/2026: cotizaciones de usuario para Rosen, Universal y Terra Luna; las capturas no equivalen a reservaciones. Fuente climática: Florida Climate Center 1991–2020. Horarios de parques, condiciones de compra y traslados permanecen sujetos a confirmación. Mapa: coordenadas OSM/Mapcarta consultadas 15/11/2026; hotel con precisión aproximada de tres decimales. Auditoría de reservaciones 15/11/2026: consulta de fuentes oficiales Universal, Disney y Rosen. Park-to-Park desde US$357 (≈ $6,647 MXN) + impuestos es un precio base, no la tarifa exacta de estas fechas. Presupuesto auditado 15/11/2026: Banxico DOF 13/11 publica 18.6188 MXN/USD, diferente de FIX determinado 13/11 18.5525; fecha atribuida correctamente. Universal impuesto +6.5% solo estimación matemática provisional, no comprobante. Carrito Disney recibido el 15/11/2026 para 5/12: US$204.00 de entrada más US$13.26 impuesto = US$217.26 total, conversión ilustrativa Disney $4,027.24 MXN usando 18.5365. Reemplaza la provisión previa Disney US$180–240. No añadir impuesto adicional a Disney.",
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
     "reservationNote": "Conviene asegurar primero vuelos, alojamiento y entradas de los parques. El boleto Universal elegido permite un parque por día; si quieres subir a Hogwarts Express, compara antes la modalidad Park-to-Park. Magic Kingdom se adquiere por separado para el 5 de diciembre. Los traslados y pases rápidos pueden decidirse después."
@@ -1172,10 +1148,10 @@
   "costExclusions": "No incluidos: seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
   "cover": "or26-hogwarts",
   "placeDescriptions": {
-    "or26-diagon": "Banco Gringotts y Diagon Alley, primera jornada de Harry Potter.",
-    "or26-hogwarts": "Castillo de Hogwarts en Hogsmeade, prioridad junto con Hagrid.",
-    "or26-magic": "Castillo de Cenicienta y atracciones clásicas de Magic Kingdom.",
-    "or26-ministry": "Ministerio de Magia en Epic Universe, atracción prioritaria."
+    "or26-diagon": "Diagon Alley concentra los escaparates de las tiendas mágicas y el dragón del banco Gringotts; uno de los escenarios principales de Harry Potter en Universal Studios Florida.",
+    "or26-hogwarts": "El castillo de Hogwarts domina Hogsmeade y alberga Forbidden Journey. La ambientación del pueblo invita a explorar sus tiendas antes o después de visitar a Hagrid.",
+    "or26-magic": "El castillo de Cenicienta es el emblema de Magic Kingdom. Sus alrededores conectan con las atracciones clásicas y la iluminación navideña de Main Street.",
+    "or26-ministry": "Place Cachée recrea el París mágico dentro de Epic Universe y conduce a Battle at the Ministry, experiencia prioritaria de la jornada dedicada al Ministerio de Magia."
   },
   "groundConnections": [
     {
