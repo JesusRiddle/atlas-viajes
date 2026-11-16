@@ -796,3 +796,32 @@ test('Suiza Verde: 16 jornadas y fichas de movilidad visibles sin horarios inven
     assert.match(day2, /17:25/, 'La llegada aérea +1 día debe aparecer en la jornada correcta');
     assert.doesNotMatch(day2, /GVA/, 'No mezclar vuelo de regreso con llegada');
 });
+
+
+test('Suiza Verde: Panorama definitivo congruente, sin totales ficticios', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const count = str => str.trim().split(/\s+/).length;
+    assert.ok(count(trip.intro) >= 70 && count(trip.intro) <= 130);
+    assert.ok(count(trip.introShort) >= 30 && count(trip.introShort) <= 45);
+    assert.ok(trip.introHighlights.every(highlight => trip.intro.includes(highlight)),
+        'Los términos resaltados deben existir literalmente en la narrativa');
+    assert.doesNotMatch(trip.intro, /\b(no comprad[oa]|por cotizar|reservar|MXN|Economy Light|presupuesto)\b/i);
+    assert.equal(trip.bases.length, 5);
+    assert.equal(trip.bases.reduce((n, stay) => n + stay[1], 0), 14);
+    assert.match(trip.profile.paceWhy, /Cinco alojamientos/);
+    assert.match(trip.budgetNote, /Subtotal verificable|subtotal/i);
+    assert.match(trip.budgetNote, /no se puede presentar este subtotal como inversión total/i);
+    assert.equal(trip.budgetRange, null);
+    assert.equal(trip.budgetPreliminary, null);
+    assert.equal(trip.expenses.length, 0);
+    assert.deepEqual(trip.practicalIndicators.map(x => x.id), ['style', 'language', 'entry']);
+    assert.match(trip.practicalIndicators[2].text, /EES/);
+    assert.match(trip.practicalIndicators[2].text, /ETIAS/);
+    assert.match(trip.practicalIndicators[2].text, /Frankfurt/);
+    assert.equal(trip.practicalIndicators[2].tone, 'orange');
+    assert.equal(trip.climate.trim().split(/\n\s*\n/).length, 3);
+    const renderer = fs.readFileSync('components/trip.js', 'utf8');
+    assert.match(renderer, /flightOnlySubtotal/);
+    assert.match(renderer, /Vuelo cotizado · subtotal parcial/);
+    assert.match(renderer, /solo vuelo, sin alojamientos, trenes, entradas ni comidas/);
+});
