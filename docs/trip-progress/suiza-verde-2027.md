@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 09 · Día por día actualizado en sus 16 jornadas y verificado estructuralmente. Siguiente: 10 Panorama. Auditorías B/C/D, tarifas y pruebas Node/navegador pendientes.
+**Etapa:** 10 · Panorama reconciliado editorialmente y estructura verificada. Siguiente: 11 Presupuesto integral. Auditorías B/C/D, cotizaciones y pruebas Node/navegador pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -25,7 +25,7 @@
 - [x] 07 · Transporte mayor: 14 fichas y 16 referencias en jornadas; validación estructural equivalente realizada, prueba real de render y Node pendientes
 - [x] 08 · Alojamiento: cinco hoteles principales con fechas, direcciones, enlaces oficiales y Maps; tarifas exactas 2027 aún pendientes
 - [x] 09 · Día por día: 16 jornadas con mañana/tarde/noche, hoteles candidatos, movilidad, tips y planes B; horarios de tren y gastos diarios pendientes
-- [ ] 10 · Panorama: validar indicadores y clima en Desktop/Mobile
+- [x] 10 · Panorama: narrativa, indicadores, clima, cinco alojamientos y subtotal aéreo reconciliados; prueba real Desktop/Mobile pendiente
 - [ ] 11 · Presupuesto integral: solo vuelos cotizados, resto pendiente
 - [ ] 12 · Fotografías y portada
 - [ ] 13 · Auditoría global, tests/CI y PR final
@@ -113,11 +113,20 @@
 - Añadida regresión de 16 fechas, 14 noches, IDs y render de transporte sin horarios, opción B Wengen y vuelo día +1 en `tests/loader-regression.test.cjs`.
 - **Pendientes:** validación de horarios concretos 2027 y equipaje en Maienfeld; tarifas, imágenes y gastos diarios; Node/browser CI antes de merge.
 
+## Verificación de Panorama · 2026-11-16
+- `intro` reescrito como narrativa turística de **96 palabras**, sin precios, vuelos, compras ni estado administrativo. `introShort`: **35 palabras**, ambos en orden real: Zúrich/Maienfeld, Lucerna/Titlis, Grindelwald y Oberland, Zermatt y salida por Ginebra. `introHighlights`: 19 términos comprobados como fragmentos literales del texto.
+- Corregido `profile.paceWhy`: cinco alojamientos (no cuatro), 14 noches y seis seguidas en Grindelwald. Se conservan planes variables por visibilidad; ninguna excursión opcional se muestra como garantizada.
+- Los tres `practicalIndicators` se ajustan a `[style,language,entry]`, con badges y textos completos. Entrada para pasaporte mexicano: exención de visa corta estancia Schengen, pasaporte con tres meses posteriores al regreso y expedido en los diez años anteriores, frontera Schengen en Frankfurt/EES, ETIAS todavía inactivo según fuentes oficiales a 16 noviembre 2026; verificar cambios próximos a junio 2027. Electricidad: enchufe J, 230 V/50 Hz, adaptador México A/B a J con tierra cuando aplique.
+- `climate` conserva tres párrafos con diferencias de altitud, lluvia/nieve residual, ropa para equipaje de mano y horarios locales de amanecer/puesta de sol en junio (CEST). La tarjeta se presenta independiente de los indicadores.
+- Panorama económico: **solo el vuelo ida+regreso $23,300.14 MXN cotizado**, sin hoteles, trenes ni actividades calculados. Se añadió etiqueta reactiva de «Vuelo cotizado · subtotal parcial» en `components/trip.js` cuando únicamente hay una cotización aérea, para evitar confundirla con inversión total; volverá a «Tu inversión aproximada» al integrar presupuesto terrestre.
+- Agregada prueba de regresión para tamaño de narrativa, highlights, los cinco alojamientos, requisitos prácticos, clima y subtotales. Validación estática del JSON/refs completada. **No se ha ejecutado todavía Node/CI ni inspección DOM en Desktop/Mobile**; auditoría C/D y aprobación de merge siguen abiertas.
+- Fuentes revisadas: Secretaría de Estado de Migración suiza, Unión Europea (ETIAS, EES y documentos), Switzerland Tourism y meteorología previamente documentada.
+
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
 3. Validar noche de Ginebra y aeropuerto de salida; presupuesto integral sin duplicidades.
-4. Actualizar Panorama y Presupuesto; ejecutar pruebas del contrato de transporte, DOM/responsive y QA global; añadir fotografías en etapa 12.
+4. Elaborar Presupuesto integral y reconciliar el subtotal del vuelo; ejecutar pruebas de contrato de transporte, DOM/responsive y QA global; añadir fotografías en etapa 12.
 
 **Candidatos por ciudad:** Zúrich Marta/Bristol/Fred; Lucerna Alpha/Waldstätterhof/Central; Grindelwald Tschuggen/Bernerhof/Alpenblick; Zermatt Alphubel/Sarazena/Metropol; Ginebra ibis Genève Aéroport/Nash/ibis budget. Ninguno reservado ni cotizado en todas las fechas. Grindelwald es la prioridad económica por sus seis noches.
 
