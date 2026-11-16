@@ -46,7 +46,7 @@
     "Dark Universe",
     "Super Nintendo World"
   ],
-  "flight": "Volaris directo MEX–MCO, 2/12 11:10–15:18 y 7/12 17:05–19:45, tarifa redonda mostrada en captura del 15/11/2026: $7,015 MXN por persona. Cotización de referencia NO comprada; equipaje de mano y documentado con costo adicional; verificar vigencia, horario y total.",
+  "flight": "Volaris directo MEX–MCO, 2/12 11:10–15:18 y 7/12 17:05–19:45, tarifa redonda mostrada en captura del 15/11/2026: $7,015 MXN por persona. Cotización de referencia NO comprada; condiciones y posibles costos del equipaje de mano y documentado por confirmar; verificar vigencia, horario y total.",
   "local": "Sin coche de alquiler: MCO ↔ Rosen Inn en Uber/Lyft o taxi; Studios/Islands (3–4 dic) y Epic (6 dic) con shuttle gratuito programado de Rosen sujeto a cupos y reserva presencial; Magic Kingdom (5 dic) en Uber/Lyft vía Transportation and Ticket Center y luego monorriel o ferry. Epic Universe está separado del complejo Universal Studios/Islands: no son accesos intercambiables. Los tiempos y costos de aplicaciones son estimaciones, no reservaciones. Las fichas de conexiones terrestres contienen horarios, puntos de recogida, enlaces y presupuestos sin sumar nuevas partidas.",
   "experiences": [
     {
@@ -838,7 +838,7 @@
     39000,
     44000
   ],
-  "budgetNote": "Presupuesto de una persona para 2–7/12/2026, Plan A Rosen Inn y boleto Universal un parque/día: las partidas con importe suman US$1472.77 + $7015.00 MXN = ≈ $34,436.19 MXN, SIN Magic Kingdom. Incluye vuelo cotizado $7,015 MXN, hotel US$539.94 (IMPUESTOS incluidos), Universal US$335.99 como SUBTOTAL sin confirmar impuestos, provisión fiscal Universal US$21.84 (6.5% hipotético, no confirmada), MCO↔Rosen US$95, Rosen↔Disney US$70, transporte de respaldo US$40 (una sola bolsa compartida), alimentación US$290 desglosada en seis días e imprevistos US$80. La entrada Magic Kingdom permanece SIN COTIZAR ni comprada, provisional US$180–240 para escenarios: ≈ $37,787.57–$38,904.70 MXN de total ilustrativo después de sumar esta provisión, sin seguro, equipaje extra ni pase rápido. Rango prudente de planeación $39,000–$44,000 MXN que deja margen ante variaciones de precio, tipo de cambio y compras menores, no es total cobrado ni garantiza cubrir extras mayores. Por separado: seguro médico, equipaje, varita, souvenirs y Express no están cotizados. Terra Luna US$1,577.46 es alternativa EXCLUYENTE hotel+Universal, nunca sumar junto a Rosen y boleto individual. Conversión $18.6188 MXN/USD publicada en DOF 13/11/2026; tasa efectiva bancaria puede variar. Importes del cuadro redondeados por partida a centavos MXN: pueden diferir US$0.01–0.02 de convertir el total agregado antes del redondeo.",
+  "budgetNote": "Presupuesto de una persona para 2–7/12/2026, Plan A Rosen Inn y boleto Universal un parque/día: las partidas con importe suman US$1472.77 + $7015.00 MXN = ≈ $34,436.19 MXN, SIN Magic Kingdom. Incluye vuelo cotizado $7,015 MXN, hotel US$539.94 (IMPUESTOS incluidos), Universal US$335.99 como SUBTOTAL sin confirmar impuestos, provisión fiscal Universal US$21.84 (6.5% hipotético, no confirmada), MCO↔Rosen US$95, Rosen↔Disney US$70, transporte de respaldo US$40 (una sola bolsa compartida), alimentación US$290 desglosada en seis días e imprevistos US$80. La entrada Magic Kingdom permanece SIN COTIZAR ni comprada, provisional US$180–240 para escenarios: ≈ $37,787.57–$38,904.70 MXN de total ilustrativo después de sumar esta provisión, sin seguro, equipaje extra ni pase rápido. Rango prudente de planeación $39,000–$44,000 MXN que deja margen ante variaciones de precio, tipo de cambio y compras menores, no es total cobrado ni garantiza cubrir extras mayores. Por separado: seguro médico, equipaje, varita, souvenirs y Express no están cotizados. Terra Luna US$1,577.46 es alternativa EXCLUYENTE hotel+Universal, nunca sumar junto a Rosen y boleto individual. Conversión $18.6188 MXN/USD publicada en DOF 13/11/2026; tasa efectiva bancaria puede variar. Importes del cuadro redondeados por partida a centavos MXN: pueden diferir $0.01–$0.02 MXN de convertir el total agregado antes del redondeo.",
   "ticketNotes": [
     {
       "title": "Volaris · tarifa y equipaje",
@@ -1168,7 +1168,7 @@
   },
   "lodgingSummary": "Plan A: 5 noches en Rosen Inn Closest to Universal, habitación Deluxe Double privada para 1 adulto en International Drive, cotizada a US$539.94 con impuestos, sin reserva. Plan B Terra Luna es una alternativa excluyente de paquete hotel + entradas (US$1,577.46), no un segundo alojamiento ni un costo adicional.",
   "heroLodgingSummary": "5 noches · 1 alojamiento",
-  "exchangeNote": "Para importes en dólares se utiliza USD 1 = MXN 18.6188 según referencia Banxico del 15/11/2026. Conversiones aproximadas, no cargos finales.",
+  "exchangeNote": "Conversión orientativa de US$1 = $18.6188 MXN según publicación del DOF del 13/11/2026. No es el FIX determinado el domingo 15 ni necesariamente el tipo aplicado por tu tarjeta. Ver fuente y fecha en Presupuesto.",
   "costExclusions": "No incluidos: boleto Disney real por cotizar (provisión solo en rango), seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
   "cover": "or26-hogwarts",
   "placeDescriptions": {
