@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 03 · Junio y esqueleto diario actualizados; auditoría A pendiente de cerrar.
+**Etapa:** 08 · Investigación inicial de zonas y candidatos de alojamiento; cotizaciones exactas pendientes; auditoría A y B abiertas.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -23,7 +23,7 @@
 - [ ] 05 · Experiencias: detalle operativo, enlaces y alternativas por clima
 - [ ] 06 · Reservaciones importantes: condiciones y prioridades
 - [ ] 07 · Transporte mayor: modelo `AtlasTransportModel.validateTrip` y render sin ejecutar
-- [ ] 08 · Alojamiento: zonas, hoteles y tarifas
+- [ ] 08 · Alojamiento: zonas y hoteles candidatos investigados; tarifas exactas de 14 noches pendientes
 - [ ] 09 · Día por día: traslados puerta a puerta y gastos pendientes
 - [ ] 10 · Panorama: validar indicadores y clima en Desktop/Mobile
 - [ ] 11 · Presupuesto integral: solo vuelos cotizados, resto pendiente
@@ -31,9 +31,11 @@
 - [ ] 13 · Auditoría global, tests/CI y PR final
 
 ## Pendientes prioritarios
-1. Cotizar alojamiento y trenes para las 14 noches; cotejar trayectos reales y pases frente a billetes.
+1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
 3. Validar noche de Ginebra y aeropuerto de salida; presupuesto integral sin duplicidades.
 4. Crear mapa, transportes conformes al contrato, fotografías y QA visual.
+
+**Candidatos por ciudad:** Zúrich Marta/Bristol/Fred; Lucerna Alpha/Waldstätterhof/Central; Grindelwald Tschuggen/Bernerhof/Alpenblick; Zermatt Alphubel/Sarazena/Metropol; Ginebra ibis Genève Aéroport/Nash/ibis budget. Ninguno reservado ni cotizado en todas las fechas. Grindelwald es la prioridad económica por sus seis noches.
 
 **Control de calidad parcial:** JSON con 16 fechas consecutivas y 14 noches, sin importes inventados. No se ejecutó CI ni revisión visual en este cambio; no habilita merge.
