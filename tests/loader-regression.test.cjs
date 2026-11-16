@@ -848,7 +848,9 @@ test('Suiza Verde: presupuesto integral concilia sin duplicar vuelos ni pases', 
     assert.equal(summary.knownTotalMXN, 138213.54);
     assert.equal(summary.entries.filter(e => e.id === 'international-flight').length, 1);
     assert.equal(summary.entries.filter(e => e.id === 'rail-provision').length, 1);
-    assert.equal(summary.entries.filter(e => e.id === 'alpine-activities').length, 1);
+    assert.equal(summary.entries.filter(e => e.id.startsWith('activity-')).length, 9);
+    assert.equal(trip.expenses.filter(e => e.id.startsWith('activity-')).reduce((sum,e) => sum + e.cost.amount, 0), 410);
+    assert.deepEqual(trip.expenses.find(e => e.id === 'rail-provision').dates, []);
     assert.deepEqual(trip.budgetRange, [118000, 157000]);
     assert.equal(trip.budgetPreliminary.useBudgetRange, true);
     assert.equal(trip.budgetPreliminary.referenceFlightMXN, 23300.14);
