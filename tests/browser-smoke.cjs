@@ -105,6 +105,12 @@ const assert = require('node:assert/strict');
       const featuredCards = page.locator('#viajes .tripcard');
       const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
       assert.equal(await featuredCards.count(), 8, 'La portada muestra Orlando 2026 y los siete viajes principales anteriores');
+      const orlandoHomeCard = page.locator('#viajes .tripcard[href="#viaje/orlando-2026"]');
+      assert.equal(await orlandoHomeCard.count(), 1, 'Orlando: portada presente');
+      assert.match(await orlandoHomeCard.locator('.cardbottom').innerText(), /39[,.]000–\$44[,.]000/,
+        'Orlando: mostrar rango preliminar $39,000–$44,000 MXN en portada');
+      assert.match(await orlandoHomeCard.locator('.card-price small').innerText(), /Presupuesto estimado por persona/,
+        'Orlando: rango preliminar etiquetado, no presentado como compra');
       assert.equal(await ideaCards.count(), allDestinations.length - 8, 'Todos los viajes históricos deben permanecer accesibles');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
       assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 6,
