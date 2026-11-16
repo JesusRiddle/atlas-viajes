@@ -361,55 +361,55 @@
     ]
   ],
   "seasonality": {
-    "summary": "Junio es la ventana principal por praderas verdes y días largos, con posible nieve residual en senderos altos. Septiembre será alternativa comparada cuando se complete el presupuesto del mismo itinerario.",
+    "summary": "Para este recorrido de praderas, cascadas, lagos y miradores alpinos, junio y septiembre son las ventanas más equilibradas: junio ofrece más luz, flores y deshielo; septiembre suele facilitar los senderos altos, aunque con días más cortos. Julio y agosto presentan la oferta estival más amplia, pero también mayor demanda y precios potencialmente superiores. Mayo conserva limitaciones por nieve y remontes; de octubre a abril no conviene intentar esta misma ruta verde sin rediseñarla. Rangos orientativos para localidades y valles de la ruta (no para cumbres, donde puede helar todo el año); no son pronósticos de 2027.",
     "months": {
       "10": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Aproximadamente 4 a 15 °C en valles y ciudades. Colores otoñales y menos visitantes; aumenta el riesgo de nieve en altura y algunos remontes y barcos cierran o reducen su operación."
       },
       "11": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −1 a 9 °C en valles y ciudades. Entretemporada con niebla, primeras nevadas y cierres por mantenimiento; difícil mantener la ruta de lagos, senderos y remontes."
       },
       "12": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −4 a 6 °C en valles y ciudades. Días cortos, invierno alpino y actividades orientadas a nieve; requiere un itinerario distinto al de Suiza Verde."
       },
       "01": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −5 a 5 °C en valles y ciudades de la ruta. Invierno, nieve y hielo en montaña, días cortos y servicios orientados al esquí; no recomendable para lagos y senderismo verde."
       },
       "02": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −4 a 7 °C en valles y ciudades. Continúa la temporada invernal, con rutas a pie altas cerradas o cubiertas de nieve y poca vegetación."
       },
       "03": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −1 a 11 °C en valles y ciudades. Transición con nieve persistente en cotas medias y altas; muchos servicios estivales todavía no operan."
       },
       "04": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Aproximadamente 3 a 15 °C en valles y ciudades. Deshielo, primeras flores y cascadas; las excursiones a lagos y senderos altos siguen condicionadas por nieve y aperturas estacionales."
       },
       "05": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Aproximadamente 7 a 19 °C en valles y ciudades. Praderas verdes y cascadas caudalosas; hay remontes en funcionamiento, pero nieve residual y servicios estacionales incompletos en montaña."
       },
       "06": {
         "status": "recommended",
-        "description": "Valles aproximadamente 12 a 22 °C como referencia climática general; praderas verdes, deshielo y jornadas largas. Senderos de altura pueden conservar nieve; confirmar operación de remontes."
+        "description": "Aproximadamente 11 a 23 °C en valles y ciudades. Praderas verdes, flores, deshielo y días muy largos; conviene reservar alojamiento con tiempo. El teleférico de Oeschinensee tiene operación estival programada y el Brienzer Rothorn llega a la cumbre desde el 5 de junio de 2027; senderos altos como Bachalpsee y Riffelsee deben verificarse."
       },
       "07": {
         "status": "conditional",
-        "description": "Aproximadamente 13 a 24 °C en valles bajos; montañas verdes, pero mayor demanda y precios estivales."
+        "description": "Aproximadamente 13 a 25 °C en valles y ciudades. Gran oferta de trenes, barcos y remontes y senderos habitualmente más accesibles; alta demanda de verano y posibles tormentas por la tarde."
       },
       "08": {
         "status": "conditional",
-        "description": "Aproximadamente 13 a 24 °C en valles bajos; paisajes verdes y alta ocupación turística en zonas populares."
+        "description": "Aproximadamente 12 a 24 °C en valles y ciudades. Temporada alta de lagos y senderismo, con mayor afluencia en Jungfrau, Zermatt y excursiones icónicas; tormentas y tiempo variable en montaña."
       },
       "09": {
-        "status": "conditional",
-        "description": "Valles aproximadamente 9 a 20 °C como referencia climática general; normalmente menos nieve residual en altura, con días más cortos. Alternativa sujeta a comparación de costos."
+        "status": "recommended",
+        "description": "Aproximadamente 8 a 21 °C en valles y ciudades. Buen equilibrio de paisajes todavía verdes y senderos altos habitualmente más despejados de nieve; menos horas de luz y posible reducción de servicios hacia finales del mes. Se comparará el costo total contra junio."
       }
     }
   },
@@ -449,9 +449,14 @@
     "https://www.tschuggen-grindelwald.ch/en/einzelzimmer-balkon-eigerblick/",
     "https://www.hotel-bernerhof-grindelwald.ch/en/service-hotel/",
     "https://www.metropol-zermatt.ch/en/rooms",
-    "https://all.accor.com/hotel/A8F3/index.en.shtml"
+    "https://all.accor.com/hotel/A8F3/index.en.shtml",
+    "https://help.myswitzerland.com/hc/en-us/articles/213129969-When-exactly-is-the-best-time-to-travel-in-summer",
+    "https://www.oeschinensee.ch/en/tarife-fahrplan/",
+    "https://brienz-rothorn-bahn.ch/en/gruppen/",
+    "https://schweizmobil.ch/en/closures-detours-all",
+    "https://www.meteoswiss.admin.ch/"
   ],
-  "sourceNote": "Fuentes oficiales de referencia para verificar operación y tarifas; cotización aérea aportada por el viajero en noviembre de 2026. Disponibilidad 2027 sujeta a reconfirmación.",
+  "sourceNote": "Temporadas actualizadas 16 noviembre 2026 con información climática general de MeteoSwiss, turismo oficial y calendarios publicados de Oeschinensee y Brienzer Rothorn 2027. Rangos de temperatura aproximados para ciudades y valles de varias altitudes, no normales exactas de cada estación ni pronósticos para junio 2027. Aperturas de otros servicios y estado de senderos deben verificarse antes de viajar. Cotización aérea aportada por el usuario en noviembre de 2026.",
   "budgetRange": null,
   "budgetNote": "Vuelos multidestino Lufthansa/SWISS Economy Light $23,300.14 MXN, cotizados por el usuario (noviembre 2026), no comprados. Hoteles y zonas candidatos investigados, pero ninguna cotización total comparable para 1 persona y las 14 noches; no sumar rangos genéricos como gasto cierto. Faltan tarifas ferroviarias, remontes, comida, seguros, entradas e imprevistos.",
   "placeDescriptions": {},
