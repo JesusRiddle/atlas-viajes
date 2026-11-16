@@ -10,7 +10,6 @@
     "Zúrich",
     "Maienfeld",
     "Lucerna",
-    "Engelberg",
     "Grindelwald",
     "Lauterbrunnen",
     "Mürren",
@@ -332,7 +331,262 @@
   "ticketNotes": [],
   "attractionTerms": [],
   "cover": null,
-  "mapPoints": [],
+  "mapPoints": [
+    {
+      "name": "Zúrich",
+      "coords": [
+        47.3769,
+        8.5417
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Lindt Home of Chocolate",
+      "coords": [
+        47.31835,
+        8.55095
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Maienfeld",
+      "coords": [
+        47.004255,
+        9.528708
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Heididorf",
+      "coords": [
+        47.013237,
+        9.545107
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Lucerna",
+      "coords": [
+        47.0502,
+        8.3093
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 5
+    },
+    {
+      "name": "Titlis",
+      "coords": [
+        46.7721,
+        8.43778
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 6
+    },
+    {
+      "name": "Grindelwald",
+      "coords": [
+        46.6242,
+        8.0414
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 7
+    },
+    {
+      "name": "Lauterbrunnen",
+      "coords": [
+        46.5935,
+        7.9086
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 8
+    },
+    {
+      "name": "Trümmelbach",
+      "coords": [
+        46.569478,
+        7.914302
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 9
+    },
+    {
+      "name": "Mürren",
+      "coords": [
+        46.5594,
+        7.8927
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 10
+    },
+    {
+      "name": "Grindelwald-First",
+      "coords": [
+        46.66138,
+        8.05296
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 12
+    },
+    {
+      "name": "Bachalpsee",
+      "coords": [
+        46.66952,
+        8.0213
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 13
+    },
+    {
+      "name": "Brienz",
+      "coords": [
+        46.7545,
+        8.03847
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 14
+    },
+    {
+      "name": "Giessbach",
+      "coords": [
+        46.734261,
+        8.023653
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 15
+    },
+    {
+      "name": "Jungfraujoch",
+      "coords": [
+        46.5478,
+        7.9859
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 16
+    },
+    {
+      "name": "Wengen",
+      "coords": [
+        46.6054,
+        7.9217
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 17
+    },
+    {
+      "name": "Kandersteg",
+      "coords": [
+        46.4956,
+        7.6733
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 18
+    },
+    {
+      "name": "Oeschinensee",
+      "coords": [
+        46.498346,
+        7.726684
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 19
+    },
+    {
+      "name": "Zermatt",
+      "coords": [
+        46.0207,
+        7.7491
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 20
+    },
+    {
+      "name": "Gornergrat",
+      "coords": [
+        45.98325,
+        7.78219
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 21
+    },
+    {
+      "name": "Riffelsee",
+      "coords": [
+        45.983269,
+        7.762061
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 22
+    },
+    {
+      "name": "Sunnegga",
+      "coords": [
+        46.017035,
+        7.770274
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 23
+    },
+    {
+      "name": "Aeropuerto de Ginebra",
+      "coords": [
+        46.238098,
+        6.10895
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 24,
+      "stayName": "Ginebra o entorno del aeropuerto"
+    }
+  ],
   "planningDetails": "Escenario principal: 12–27 junio de 2027; septiembre se contrastará económicamente cuando estén completos alojamientos, transportes y entradas. Ruta enfocada en los MUST naturales, sin Glacier Express ni Bernina Express, reservados como ideas para otro viaje ferroviario. Vuelo multidestino cotizado pero no comprado. La distribución de noches sigue provisional hasta validar la logística de Heidi, Jungfrau y el regreso. Investigación inicial de alojamiento: Hotel Marta/Bristol/Fred (Zúrich); Alpha/Waldstätterhof/Central (Lucerna); Tschuggen/Bernerhof/Alpenblick (Grindelwald); Alphubel/Sarazena/Metropol (Zermatt); ibis Genève Aéroport/Nash/ibis budget (Ginebra). Solo candidatos, sin tarifas verificadas para la estancia completa.",
   "lodgingSummary": "Zúrich 13–15 junio (2 noches, cercanía a Zürich HB); Lucerna 15–17 (2, estación); Grindelwald 17–23 (6, centro/estación); Zermatt 23–26 (3, estación/Gornergrat); Ginebra aeropuerto 26–27 (1, salida temprana). Hoteles candidatos registrados; ninguno reservado ni cotizado para todas sus noches.",
   "heroLodgingSummary": "14 noches · cinco alojamientos provisionales",
@@ -454,7 +708,14 @@
     "https://www.oeschinensee.ch/en/tarife-fahrplan/",
     "https://brienz-rothorn-bahn.ch/en/gruppen/",
     "https://schweizmobil.ch/en/closures-detours-all",
-    "https://www.meteoswiss.admin.ch/"
+    "https://www.meteoswiss.admin.ch/",
+    "https://www.graubuenden.ch/en/attractions/heididorf-maienfeld-0",
+    "https://www.outdooractive.com/es/poi/ferienregion-heidiland/heididorf-maienfeld/62163670/",
+    "https://www.outdooractive.com/en/poi/berner-oberland/giessbachfaelle/28544324/",
+    "https://www.outdooractive.com/es/poi/jungfrau-region/truemmelbachfaelle/25006919/",
+    "https://www.geonames.org/2661398/brienz-be.html",
+    "https://www.outdooractive.com/es/poi/zermatt-matterhorn/riffelsee/8769671/",
+    "https://ourairports.com/airports/LSGG/"
   ],
   "sourceNote": "Temporadas actualizadas 16 noviembre 2026 con información climática general de MeteoSwiss, turismo oficial y calendarios publicados de Oeschinensee y Brienzer Rothorn 2027. Rangos de temperatura aproximados para ciudades y valles de varias altitudes, no normales exactas de cada estación ni pronósticos para junio 2027. Aperturas de otros servicios y estado de senderos deben verificarse antes de viajar. Cotización aérea aportada por el usuario en noviembre de 2026.",
   "budgetRange": null,
