@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 10 · Panorama reconciliado editorialmente y estructura verificada. Siguiente: 11 Presupuesto integral. Auditorías B/C/D, cotizaciones y pruebas Node/navegador pendientes.
+**Etapa:** 11 · Presupuesto integral provisional documentado. Siguiente: 12 Fotografías y portada. Revisión de tarifas de 2027, tests Node, navegador y auditorías B/C/D pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -26,7 +26,7 @@
 - [x] 08 · Alojamiento: cinco hoteles principales con fechas, direcciones, enlaces oficiales y Maps; tarifas exactas 2027 aún pendientes
 - [x] 09 · Día por día: 16 jornadas con mañana/tarde/noche, hoteles candidatos, movilidad, tips y planes B; horarios de tren y gastos diarios pendientes
 - [x] 10 · Panorama: narrativa, indicadores, clima, cinco alojamientos y subtotal aéreo reconciliados; prueba real Desktop/Mobile pendiente
-- [ ] 11 · Presupuesto integral: solo vuelos cotizados, resto pendiente
+- [x] 11 · Presupuesto integral provisional: 27 estimaciones terrestres, vuelo cotizado, rango, TC y no duplicación; faltan precios finales.
 - [ ] 12 · Fotografías y portada
 - [ ] 13 · Auditoría global, tests/CI y PR final
 
@@ -122,11 +122,22 @@
 - Agregada prueba de regresión para tamaño de narrativa, highlights, los cinco alojamientos, requisitos prácticos, clima y subtotales. Validación estática del JSON/refs completada. **No se ha ejecutado todavía Node/CI ni inspección DOM en Desktop/Mobile**; auditoría C/D y aprobación de merge siguen abiertas.
 - Fuentes revisadas: Secretaría de Estado de Migración suiza, Unión Europea (ETIAS, EES y documentos), Switzerland Tourism y meteorología previamente documentada.
 
+## Verificación de Presupuesto integral · 2026-11-16
+- Una persona, 16 días, 14 noches, cinco alojamientos. Solo el vuelo Lufthansa/SWISS $23,300.14 MXN es cotización real no comprada.
+- Tipo de cambio de referencia: CHF 1 = MXN 22.12 del 16 noviembre 2026, no tasa de compra.
+- Hospedaje provisional CHF 2,520: Zúrich CHF 370, Lucerna CHF 500, Grindelwald CHF 930, Zermatt CHF 555 y Ginebra CHF 165; sin reservas ni precios comprobados en junio 2027.
+- Transporte público CHF 650: hipótesis Half Fare CHF 150 y hasta CHF 500 de billetes. Swiss Travel Pass 15 días CHF 499 más suplementos es alternativa, no se suma. Requiere cotización tramo por tramo.
+- Remontes y entradas CHF 410; provisión potencialmente insuficiente si no se materializan descuentos, especialmente para Jungfraujoch. Sunnegga opcional excluido.
+- Alimentación CHF 855 repartidos en 16 días; seguro CHF 120, tasas hoteleras CHF 70, incidentales CHF 110, contingencia CHF 460.
+- Subtotal terrestre CHF 5,195 = MXN 114,913.40. Total central con único vuelo = MXN 138,213.54. Rango global estimado MXN 118,000–157,000, no garantía.
+- Cada transporte terrestre está asociado a una única provisión mediante budgetIncludedIn; el vuelo no está duplicado en expenses. El gasto por día se deriva de las partidas sin volver a sumarlas.
+- Prueba de regresión financiera añadida a tests/loader-regression.test.cjs; ejecución Node/Chromium pendiente, sin aprobación para merge.
+
 ## Pendientes prioritarios
-1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
+1. Cotizar las cinco estancias de junio 2027 y comparar tres opciones de pase/tickets con todas las rutas y suplementos.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
 3. Validar noche de Ginebra y aeropuerto de salida; presupuesto integral sin duplicidades.
-4. Elaborar Presupuesto integral y reconciliar el subtotal del vuelo; ejecutar pruebas de contrato de transporte, DOM/responsive y QA global; añadir fotografías en etapa 12.
+4. Incorporar fotografías y portada; ejecutar pruebas de contrato de transporte, sumas, DOM/responsive y QA antes de PR/merge.
 
 **Candidatos por ciudad:** Zúrich Marta/Bristol/Fred; Lucerna Alpha/Waldstätterhof/Central; Grindelwald Tschuggen/Bernerhof/Alpenblick; Zermatt Alphubel/Sarazena/Metropol; Ginebra ibis Genève Aéroport/Nash/ibis budget. Ninguno reservado ni cotizado en todas las fechas. Grindelwald es la prioridad económica por sus seis noches.
 
