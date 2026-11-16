@@ -95,7 +95,7 @@
       "am": "Volaris directo MEX 11:10 → MCO 15:18; llegar a MEX con margen y confirmar equipaje y terminal.",
       "pm": "Tras migración y equipaje en MCO, ir al punto autorizado de Uber/Lyft o taxi hasta Rosen Inn. Check-in desde las 16:00; llegada efectiva sujeta a tráfico y migración.",
       "night": "Cena tranquila cerca de International Drive, confirmar y reservar en recepción el shuttle Universal del jueves. CityWalk solo si todavía hay tiempo y energía.",
-      "mobility": "Llegada MCO 15:18: migración, equipaje y recogida por app/taxi en el punto autorizado de la terminal que corresponda. MCO → Rosen Inn aproximadamente 25–45 min de carretera en condiciones habituales (estimación, no tiempo garantizado); presupuesto aeroportuario US$70–120 redondo para días 1 y 6, contado una sola vez. Revisar ficha de movilidad terrestre y rutas.",
+      "mobility": "Llegada MCO 15:18: migración, equipaje y recogida por app/taxi en el punto autorizado de la terminal que corresponda. MCO → Rosen Inn aproximadamente 25–45 min de carretera en condiciones habituales (estimación, no tiempo garantizado); presupuesto aeroportuario US$70–120 (≈ $1,303–$2,234 MXN) redondo para días 1 y 6, contado una sola vez. Revisar ficha de movilidad terrestre y rutas.",
       "note": "No programar actividades con hora fija el día de llegada; migración y tráfico pueden retrasar el check-in.",
       "spend": null,
       "places": [],
@@ -184,8 +184,8 @@
       "am": "Salir temprano de Rosen hacia el Transportation and Ticket Center (TTC); añadir seguridad y monorriel/ferry hasta Magic Kingdom. Entrar con ticket regular fechado del 5/12. Fotografía del castillo, Seven Dwarfs Mine Train y Peter Pan’s Flight conforme a filas.",
       "pm": "Haunted Mansion, Pirates, comida y descanso. Elegir después entre TRON, Space Mountain y Big Thunder Mountain Railroad si está operativa. Añadir Jingle Cruise o Frozen Holiday Surprise si coincide con horarios; Sleepy Hollow para un waffle.",
       "night": "Luces de Main Street y, si se programan ese sábado, Disney Starlight: Dream the Night Away y/o Happily Ever After. Consultar My Disney Experience; el desfile y fuegos exclusivos de Mickey’s Very Merry Christmas Party NO corresponden al boleto regular. Volver por TTC y reservar shuttle del domingo a Epic.",
-      "mobility": "Rosen → Transportation and Ticket Center (TTC) en Uber/Lyft o taxi, luego monorriel Express o ferry hasta Magic Kingdom. Regreso en orden inverso, pidiendo vehículo en zona autorizada del TTC. Rosen menciona shuttle Disney pagado sin horario, parada ni precio públicos; no asumir que llega directamente al parque. Provisión para transporte redondo US$50–90; consultar horarios reales del monorriel y del parque.",
-      "note": "El sábado 5/12/2026 NO es noche de Mickey’s Very Merry Christmas Party, pero tampoco garantiza un desfile especial sin boleto. Confirmar la cartelera de espectáculos. Entrada regular para el 5/12: US$217.26 con impuestos.",
+      "mobility": "Rosen → Transportation and Ticket Center (TTC) en Uber/Lyft o taxi, luego monorriel Express o ferry hasta Magic Kingdom. Regreso en orden inverso, pidiendo vehículo en zona autorizada del TTC. Rosen menciona shuttle Disney pagado sin horario, parada ni precio públicos; no asumir que llega directamente al parque. Provisión para transporte redondo US$50–90 (≈ $931–$1,676 MXN); consultar horarios reales del monorriel y del parque.",
+      "note": "El sábado 5/12/2026 NO es noche de Mickey’s Very Merry Christmas Party, pero tampoco garantiza un desfile especial sin boleto. Confirmar la cartelera de espectáculos. Entrada regular para el 5/12: US$217.26 (≈ $4,045 MXN) con impuestos.",
       "spend": null,
       "places": [
         "or26-magic"
@@ -337,7 +337,7 @@
       [
         {
           "title": "Traslados entre aeropuerto, Rosen Inn y parques",
-          "description": "MCO↔Rosen en Uber/Lyft o taxi: prever US$70–120 redondos. Rosen↔Magic Kingdom: US$50–90 redondos. El shuttle Rosen–Universal/Epic es gratuito, programado y requiere reservar plaza en el hotel. Rosen también menciona transporte Disney con cargo, pero sin horario ni ruta publicados.",
+          "description": "MCO↔Rosen en Uber/Lyft o taxi: prever US$70–120 (≈ $1,303–$2,234 MXN) redondos. Rosen↔Magic Kingdom: US$50–90 (≈ $931–$1,676 MXN) redondos. El shuttle Rosen–Universal/Epic es gratuito, programado y requiere reservar plaza en el hotel. Rosen también menciona transporte Disney con cargo, pero sin horario ni ruta publicados.",
           "links": [
             {
               "label": "Rosen · shuttle y reserva",
@@ -360,7 +360,7 @@
       [
         {
           "title": "Hogwarts Express · comparar modalidad Park-to-Park",
-          "description": "El Hogwarts Express entre Studios y Islands requiere boleto Park-to-Park. Universal anuncia una modalidad especial de tres días desde US$357 más impuestos, con dos días Park-to-Park y uno en Epic Universe. Comparar el importe aplicable a nuestras fechas con el boleto de US$335.99 antes de decidir: no son precios directamente equivalentes.",
+          "description": "El Hogwarts Express entre Studios y Islands requiere boleto Park-to-Park. Universal anuncia una modalidad especial de tres días desde US$357 (≈ $6,647 MXN) más impuestos, con dos días Park-to-Park y uno en Epic Universe. Comparar el importe aplicable a nuestras fechas con el boleto de US$335.99 (≈ $6,256 MXN) antes de decidir: no son precios directamente equivalentes.",
           "links": [
             {
               "label": "Universal · modalidades",
@@ -505,7 +505,7 @@
           "fares": [
             {
               "id": "reference",
-              "name": "Tarifa redonda mostrada en captura 15/11/2026 · pendiente de compra",
+              "name": "Tarifa redonda de referencia",
               "price": {
                 "amount": 7015,
                 "currency": "MXN"
@@ -528,7 +528,7 @@
               "refunds": "Verificar al seleccionar tarifa; no confirmados."
             }
           ],
-          "notes": "Horarios y precio corresponden a captura, sin compra. Confirmar vigencia de US/MX tasas y equipaje de mano de Volaris.",
+          "notes": "Confirmar la vigencia de la tarifa, tasas y la franquicia de equipaje de Volaris.",
           "links": [
             {
               "label": "Volaris oficial",
@@ -633,7 +633,7 @@
         "currency": "USD"
       },
       "status": "quoted",
-      "notes": "Captura 15/11/2026: Best Available Rate flexible US$479.95 + US$59.99 impuestos. No sumar Terra Luna.",
+      "notes": "Tarifa flexible de referencia: US$479.95 + US$59.99 de impuestos = US$539.94 (≈ $10,053 MXN) para 5 noches. Terra Luna es una alternativa excluyente.",
       "nights": 5,
       "hotelId": "orlando-rosen"
     },
@@ -659,7 +659,7 @@
         "currency": "USD"
       },
       "status": "quoted",
-      "notes": "Carrito Disney para 1 adulto el sábado 5/12/2026: entrada US$204.00 + impuesto US$13.26 = US$217.26. El carrito muestra conversión estimativa $4,027.24 MXN con US$1=$18.5365 MXN. La conversión del Atlas utiliza su tasa presupuestaria independiente de $18.6188 MXN/USD. No volver a sumar el impuesto Disney."
+      "notes": "Magic Kingdom, 5/12, 1 adulto: entrada US$204.00 + US$13.26 de impuesto = US$217.26 (≈ $4,045 MXN en Atlas). El carrito Disney muestra $4,027.24 MXN con tasa distinta. Impuestos Disney incluidos, sin agregar otra partida."
     },
     {
       "id": "orlando-airport",
@@ -671,7 +671,7 @@
         "currency": "USD"
       },
       "status": "estimated",
-      "notes": "Provisión central US$95, rango US$70–120. Se suma solo una vez por ida y regreso."
+      "notes": "Provisión redonda US$95 (≈ $1,769 MXN), con rango aproximado US$70–120 (≈ $1,303–$2,234 MXN); no duplicar entre llegada y regreso."
     },
     {
       "id": "orlando-disney-transfer",
@@ -683,7 +683,7 @@
         "currency": "USD"
       },
       "status": "estimated",
-      "notes": "Provisión central US$70, rango US$50–90; incluir acceso mediante Transportation and Ticket Center y sistemas Disney. Sin shuttle gratis directo Rosen–Disney."
+      "notes": "Provisión redonda US$70 (≈ $1,303 MXN), rango US$50–90 (≈ $931–$1,676 MXN). Incluye el acceso vía TTC y monorriel/ferry."
     },
     {
       "id": "orlando-extra-local",
@@ -707,7 +707,7 @@
         "currency": "USD"
       },
       "status": "estimated",
-      "notes": "Reserva orientativa US$50–100; no comprende Express Pass, souvenirs, varita interactiva ni seguro médico."
+      "notes": "Fondo de imprevistos US$80 (≈ $1,490 MXN). Pases rápidos, recuerdos, varita y seguro médico van por separado."
     },
     {
       "id": "orlando-food-1",
@@ -791,7 +791,7 @@
         "currency": "USD"
       },
       "status": "estimated",
-      "notes": "Cálculo de contingencia de 6.5% × US$335.99 = US$21.84, asumiendo que el subtotal no incluye este impuesto; NO se ha confirmado tratamiento fiscal en el checkout. Sustituir por la cifra real del carrito y eliminar si el precio ya lo incluye. No aplicar impuesto adicional al Rosen (sus US$539.94 ya incluyen US$59.99 de impuestos) ni al boleto Disney antes de conocer su total."
+      "notes": "Provisión de impuesto Universal: 6.5% × US$335.99 = US$21.84 (≈ $407 MXN). Es un cálculo por verificar contra el total real del carrito, no un impuesto confirmado. No gravar otra vez el hotel ni la entrada Disney."
     },
     {
       "id": "orlando-travel-insurance",
@@ -838,7 +838,7 @@
     39000,
     44000
   ],
-  "budgetNote": "Presupuesto para una persona del 2 al 7 de diciembre de 2026, Plan A Rosen Inn y Universal un parque por día. Partidas con importe: US$1,690.03 más $7,015.00 MXN, equivalentes a ≈ $38,481.31 MXN en el cuadro del Atlas (con redondeo individual por renglón). El importe incluye vuelo $7,015 MXN, hotel US$539.94 con impuestos, Universal US$335.99 subtotal y provisión fiscal independiente US$21.84 (6.5% teórico por confirmar), y Magic Kingdom para el 5/12: US$204.00 de entrada + US$13.26 de impuesto = US$217.26 total (IVA/impuesto Disney ya incluido y contabilizado solo una vez). Incluye además MCO↔Rosen US$95 redondos, Rosen↔Disney US$70, fondo de transporte alternativo US$40 compartido, comidas US$290 en seis días e imprevistos US$80. El carrito Disney muestra ≈ $4,027.24 MXN usando US$1 = $18.5365 MXN; el Atlas conserva la referencia de $18.6188 MXN/USD publicada en el DOF el 13/11/2026, así que las conversiones MXN son distintas. Rango prudente de planeación $39,000–$44,000 MXN, sujeto a tarifas, tipo de cambio y extras; seguro médico, equipaje adicional, varita, recuerdos y pases rápidos quedan fuera del subtotal. Terra Luna por US$1,577.46 es alternativa excluyente de hotel + Universal y no se suma junto con el Plan A. Ningún importe de entradas incluye pases rápidos opcionales.",
+  "budgetNote": "Plan A · 1 persona · 2–7 diciembre de 2026. Subtotal presupuestado $38,481.31 MXN, incluyendo vuelo Volaris ($7,015 MXN), Rosen Inn 5 noches (US$539.94, ≈ $10,053 MXN), Universal 3 parques (US$335.99 subtotal, ≈ $6,256 MXN), Magic Kingdom 5/12 (US$217.26 con impuestos, ≈ $4,045 MXN), transportes y comida para seis días. Incluye US$21.84 (≈ $407 MXN) de impuesto provisional Universal, pendiente de comprobar en el total de su carrito; Disney ya incluye US$13.26 de impuestos. Los traslados MCO↔Rosen y Rosen↔Disney se cuentan una sola vez, y el fondo de respaldo de US$40 (≈ $745 MXN) se comparte entre días de Universal. Rango para planear: $39,000–$44,000 MXN. Seguro médico, equipaje adicional, varita, recuerdos y pases rápidos no están incluidos. Terra Luna es un paquete alternativo excluyente, no un gasto adicional. Las conversiones del Atlas usan $18.6188 MXN/USD (DOF 13/11/2026); Disney mostraba una tasa distinta. Los importes MXN pueden diferir unos centavos por redondeo.",
   "ticketNotes": [
     {
       "title": "Volaris · tarifa y equipaje",
@@ -854,7 +854,7 @@
     },
     {
       "title": "Apps de respaldo y presupuesto",
-      "note": "El colchón US$40 cubre eventuales aplicaciones de los tres días Universal; no es US$40 por día. Las dos partidas redondas MCO↔hotel (US$95) y Rosen↔Disney (US$70) ya se incluyen una sola vez en Presupuesto."
+      "note": "El fondo común de US$40 (≈ $745 MXN) cubre aplicaciones de respaldo de los tres días Universal. El aeropuerto y Disney ya tienen dos partidas redondas separadas: US$95 (≈ $1,769 MXN) y US$70 (≈ $1,303 MXN)."
     }
   ],
   "sources": [
@@ -1166,7 +1166,7 @@
       }
     ]
   },
-  "lodgingSummary": "Plan A: 5 noches en Rosen Inn Closest to Universal, habitación Deluxe Double privada para 1 adulto en International Drive, US$539.94 con impuestos. Plan B Terra Luna es una alternativa excluyente de paquete hotel + entradas (US$1,577.46), no un segundo alojamiento ni un costo adicional.",
+  "lodgingSummary": "Plan A: 5 noches en Rosen Inn Closest to Universal, habitación Deluxe Double privada para 1 adulto en International Drive, US$539.94 (≈ $10,053 MXN) con impuestos. Plan B Terra Luna es una alternativa excluyente de paquete hotel + entradas (US$1,577.46, ≈ $29,370 MXN), no un segundo alojamiento ni un costo adicional.",
   "heroLodgingSummary": "5 noches · 1 alojamiento",
   "exchangeNote": "Conversión orientativa de US$1 = $18.6188 MXN según publicación del DOF del 13/11/2026. No es el FIX determinado el domingo 15 ni necesariamente el tipo aplicado por tu tarjeta. Ver fuente y fecha en Presupuesto.",
   "costExclusions": "No incluidos: seguros, equipaje adicional, Express Pass, varita interactiva, souvenir, gastos personales, cargos cambiarios. Paquete Terra Luna alternativo excluido del total.",
@@ -1186,7 +1186,7 @@
         6
       ],
       "mode": "Uber/Lyft o taxi autorizado",
-      "costLabel": "Provisión redonda US$70–120; central US$95",
+      "costLabel": "Provisión redonda US$70–120 (≈ $1,303–$2,234 MXN); central US$95 (≈ $1,769 MXN)",
       "budgetExpenseId": "orlando-airport",
       "description": "Miércoles 2: después de migración y equipaje, ubicar el punto de recogida oficial de la terminal asignada y trasladarse a Rosen Inn. La llegada al hotel se calcula con margen para migración, equipaje y tráfico; nunca asumir terminal de Volaris sin tarjeta de embarque. Lunes 7: salir con margen de 3 h antes del vuelo internacional de las 17:05, más viaje y tráfico; salida del hotel aproximadamente 12:30–13:00 como objetivo de planeación, no cita confirmada. No existe transporte gratuito Rosen–MCO.",
       "links": [
@@ -1212,9 +1212,9 @@
         3
       ],
       "mode": "Shuttle gratuito programado, ruta C",
-      "costLabel": "US$0 por shuttle reservado; Uber/Lyft de respaldo",
+      "costLabel": "Shuttle US$0; transporte privado de respaldo en fondo común",
       "budgetExpenseId": "orlando-extra-local",
-      "description": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Horarios publicados consultados el 15/11/2026, sujetos a cambios. Reservar presencialmente en el Universal Partner Hotel Vacation Planning Center del lobby, idealmente un día antes; confirmar horarios, plaza y punto de regreso. Servicio gratuito con cupo limitado y paradas múltiples; no válido para entrada anticipada ni eventos especiales. Estación de taxis y aplicaciones para respaldo: North Parking Garage, 6000 Universal Boulevard, no la puerta de atracciones. Si quieres permanecer hasta el cierre y el último shuttle ya pasó, utilizar app de transporte y el colchón separado de US$40 (compartido con Epic; NO US$40 por parque).",
+      "description": "Rosen → Universal CityWalk/Studios/Islands: 07:05, 08:15, 09:25, 10:35. Retornos: 17:15, 18:20, 19:25, 20:30. Horarios publicados consultados el 15/11/2026, sujetos a cambios. Reservar presencialmente en el Universal Partner Hotel Vacation Planning Center del lobby, idealmente un día antes; confirmar horarios, plaza y punto de regreso. Servicio gratuito con cupo limitado y paradas múltiples; no válido para entrada anticipada ni eventos especiales. Estación de taxis y aplicaciones para respaldo: North Parking Garage, 6000 Universal Boulevard, no la puerta de atracciones. Si quieres permanecer hasta el cierre y el último shuttle ya pasó, utilizar app de transporte y el colchón separado de US$40 (≈ $745 MXN; compartido con Epic; NO US$40 por parque).",
       "links": [
         {
           "label": "Rosen · horarios, ruta C y reservas",
@@ -1237,7 +1237,7 @@
         4
       ],
       "mode": "Uber/Lyft o taxi + monorriel/ferry",
-      "costLabel": "Provisión redonda US$50–90; central US$70",
+      "costLabel": "Provisión redonda US$50–90 (≈ $931–$1,676 MXN); central US$70 (≈ $1,303 MXN)",
       "budgetExpenseId": "orlando-disney-transfer",
       "description": "Plan A: Uber/Lyft desde Rosen hasta el Transportation and Ticket Center (TTC), siguiendo las indicaciones de la app para la zona autorizada. Desde el TTC tomar el monorriel Express o ferry a Magic Kingdom; añadir tiempo de control de seguridad y embarque tanto a la ida como a la vuelta. Para regresar, ir de Magic Kingdom al TTC y solicitar ahí el vehículo. Rosen menciona traslado Disney con cargo, pero no publica itinerario, parada ni precio; consultarlo en recepción antes de sustituir Uber/Lyft. El monorriel de Disney no supone una entrada adicional al parque.",
       "links": [
@@ -1262,9 +1262,9 @@
         5
       ],
       "mode": "Shuttle gratuito programado, ruta A",
-      "costLabel": "US$0 por shuttle reservado; Uber/Lyft de respaldo",
+      "costLabel": "Shuttle US$0; transporte privado de respaldo en fondo común",
       "budgetExpenseId": "orlando-extra-local",
-      "description": "Rosen → Epic Universe: 07:15, 08:35, 09:55, 11:15. Retornos: 17:25, 18:40, 19:55, 21:10. Horarios publicados consultados el 15/11/2026, sujetos a cambios. Reservar presencialmente en el Universal Partner Hotel Vacation Planning Center del lobby, idealmente un día antes; confirmar horarios, plaza y punto de regreso. Servicio gratuito con cupo limitado y paradas múltiples; no válido para entrada anticipada ni eventos especiales. Si el transporte programado no encaja con las filas de Ministry of Magic o la iluminación nocturna, punto oficial Uber/Lyft de Epic Universe: 1201 Epic Boulevard; NO usar la dirección general del estacionamiento 1001 Epic Boulevard. El colchón de app de US$40 del presupuesto se comparte con Studios/Islands, no se cobra dos veces.",
+      "description": "Rosen → Epic Universe: 07:15, 08:35, 09:55, 11:15. Retornos: 17:25, 18:40, 19:55, 21:10. Horarios publicados consultados el 15/11/2026, sujetos a cambios. Reservar presencialmente en el Universal Partner Hotel Vacation Planning Center del lobby, idealmente un día antes; confirmar horarios, plaza y punto de regreso. Servicio gratuito con cupo limitado y paradas múltiples; no válido para entrada anticipada ni eventos especiales. Si el transporte programado no encaja con las filas de Ministry of Magic o la iluminación nocturna, punto oficial Uber/Lyft de Epic Universe: 1201 Epic Boulevard; NO usar la dirección general del estacionamiento 1001 Epic Boulevard. El colchón de app de US$40 (≈ $745 MXN) del presupuesto se comparte con Studios/Islands, no se cobra dos veces.",
       "links": [
         {
           "label": "Rosen · ruta y horarios Epic",
@@ -1281,5 +1281,5 @@
       ]
     }
   ],
-  "hotelsComparison": "Escenarios EXCLUYENTES para las mismas cinco noches: Plan A Rosen Inn US$539.94 de hotel + Universal 3-Day, 3-Park US$335.99 como subtotal de boleto = US$875.93 antes de posibles impuestos pendientes del boleto; Park-to-Park no incluido, sin entrada anticipada. Plan B Terra Luna paquete hotel + Universal Park-to-Park promocional por US$1,577.46 según captura, con beneficio Early Park Admission sujeto a restricciones. Diferencia aritmética entre importes mostrados US$701.53 (≈ $13,063 MXN), NO sobreprecio real comparable al céntimo porque los productos, duración de entradas, impuestos y beneficios son distintos. Ambos excluyen Disney, vuelo y traslados a MCO. No sumar Plan B al presupuesto Plan A."
+  "hotelsComparison": "Escenarios EXCLUYENTES para las mismas cinco noches: Plan A Rosen Inn US$539.94 (≈ $10,053 MXN) de hotel + Universal 3-Day, 3-Park US$335.99 (≈ $6,256 MXN) como subtotal de boleto = US$875.93 (≈ $16,309 MXN) antes de posibles impuestos pendientes del boleto; Park-to-Park no incluido, sin entrada anticipada. Plan B Terra Luna paquete hotel + Universal Park-to-Park promocional por US$1,577.46 (≈ $29,370 MXN) según captura, con beneficio Early Park Admission sujeto a restricciones. Diferencia aritmética entre importes mostrados US$701.53 (≈ $13,062 MXN), NO sobreprecio real comparable al céntimo porque los productos, duración de entradas, impuestos y beneficios son distintos. Ambos excluyen Disney, vuelo y traslados a MCO. No sumar Plan B al presupuesto Plan A."
 }
