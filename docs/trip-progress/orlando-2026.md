@@ -6,7 +6,7 @@
 **Modalidad:** Itinerario detallado  
 **Última actualización:** 2026-11-15  
 **Etapa actual:** 13/13 · auditoría transversal técnica aprobada; faltan inspección visual manual del despliegue, cotizaciones de compra y autorización de merge  
-**Siguiente acción autónoma:** validar manualmente en el despliegue que las cuatro fotos externas carguen en escritorio y móvil; confirmar precios y condiciones comerciales de compra (especialmente Magic Kingdom). Presentar PR para revisión del propietario y solicitar autorización expresa antes del merge.
+**Siguiente acción autónoma:** inspección visual del despliegue (cuatro fotos en escritorio/móvil); cotización de vuelo/hotel/Universal y condiciones de equipaje/cancelación. Magic Kingdom 5/12 ya cuenta con cotización desglosada. Presentar PR para revisión y solicitar autorización expresa antes del merge.
 
 ## Decisiones definitivas del viajero
 
@@ -190,3 +190,9 @@
 - **Limitaciones todavía no resueltas:** sin inspección humana de capturas renderizadas del sitio desplegado ni prueba garantizada de descarga de cuatro imágenes externas en conexiones móviles; precios actuales de vuelo/hotel/Universal/Magic Kingdom no cerrados y ninguna compra confirmada. Tarifa aérea y equipaje, cancelación exacta del Rosen, importe real de impuesto Universal, Disney y extras deben confirmarse antes de pagar. Presupuesto sigue siendo rango de planeación, no precio contratado.
 
 **Siguiente fase:** revisión visual/manual final del PR y confirmación comercial por el viajero; una vez aprobadas, decidir merge explícitamente. No fusionar automáticamente.
+
+## Actualización de cotización Magic Kingdom · 15/11/2026
+- Captura de carrito Disney recibida para **sábado 5 de diciembre de 2026**, entrada regular de **1 día para 1 adulto a Magic Kingdom**: **US$204.00 entrada + US$13.26 impuesto = US$217.26 total**. Conversión mostrada por Disney **$4,027.24 MXN** al tipo referencial de **18.5365**, sin equivalencia obligatoria con tasa del banco.
+- `expenses.orlando-disney` pasa de `status: pending, amount: null` a `status: quoted, amount: 217.26 USD`; impuesto Disney **incluido** en la misma partida, sin duplicación. Es precio de referencia de carrito, no estado de compra.
+- Presupuesto Atlas conserva tasa común **18.6188 MXN/USD**, por lo que Disney equivale a **$4,045.12 MXN** y el subtotal de todas las partidas con importe a **$38,481.31 MXN** con redondeo por renglón. Rango de planeación **$39,000–$44,000 MXN** sin modificaciones. Universal US$21.84 de impuesto sigue siendo provisión por confirmar, no gravar nuevamente Disney.
+- Se actualizaron Reservaciones importantes, presupuesto, nota del día Magic Kingdom, pruebas Playwright y textos obsoletos. Se conservan como histórico las notas de auditoría anteriores que describían Disney sin cotización; esta sección las sustituye a partir del 15/11/2026. Sin merge.
