@@ -102,6 +102,17 @@
 - `spend` permanece `null` cada día hasta estimar actividades, pases, alimentación y transporte sin doble conteo. No se ha cerrado presupuesto integral.
 - Validación estática de secuencia, 14 referencias de hotel, 16 referencias de transporte y textos por periodo; **sin ejecución de test Node ni revisión real DOM Desktop/Mobile**.
 
+## Auditoría adicional del Día por día · 2026-11-16
+- **Defecto de interfaz corregido:** `components/day-transport.js` ocultaba itinerarios de tren y excursiones sin horas publicadas: filtraba los `journeys` únicamente si tenían `departure` del día. Ahora muestra todos los tramos sin horario cuando la ficha corresponde a esa jornada; para vuelos muestra también el día de llegada (+1) sin incluir el regreso.
+- **15 junio · Heididorf:** revisar consigna con trazado real del tren. Dejar maleta en Zürich HB exige volver a recogerla antes de ir a Lucerna; no recomendar Maienfeld/Sargans como consigna confirmada sin verificar. Mantener decisión logística pendiente antes de reservas.
+- **18 junio · Mürren:** corregido mecanismo a teleférico Lauterbrunnen–Grütschalp y tren Grütschalp–Mürren; alternativa por Stechelberg condicionada.
+- **20 junio · Brienz:** aclarado barco Giessbach See, funicular y regreso, con horarios 2027 aún pendientes; la posibilidad de volver por Brienz es una alternativa y no un trayecto reservado.
+- **21 junio · Jungfraujoch:** añadida opción B real de regreso por Kleine Scheidegg, Wengen, Lauterbrunnen y Zweilütschinen, además de opción A por Eigergletscher. La alternativa requiere billete de ruta adecuado, no usar automáticamente tarifa de vuelta directa. Reserva obligatoria mayo–octubre 2027, según operador oficial.
+- **24 junio · Gornergrat:** Riffelsee a diez minutos caminando desde Rotenboden; recorrido opcional de aprox. 3.1 km/una hora hasta Riffelberg, solo si abierto y sin nieve residual, según operador.
+- **27 junio · Ginebra:** indicado objetivo orientativo de aeropuerto a las 06:10 para vuelo cotizado de las 09:10; shuttle y documentación pendientes de confirmar.
+- Añadida regresión de 16 fechas, 14 noches, IDs y render de transporte sin horarios, opción B Wengen y vuelo día +1 en `tests/loader-regression.test.cjs`.
+- **Pendientes:** validación de horarios concretos 2027 y equipaje en Maienfeld; tarifas, imágenes y gastos diarios; Node/browser CI antes de merge.
+
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
