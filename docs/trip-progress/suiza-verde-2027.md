@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 05 · Experiencias actualizadas; siguiente sección: 06 Reservaciones importantes. Auditorías A/B y revisión visual pendientes.
+**Etapa:** Auditoría cruzada de 02/04/05 concluida a nivel de datos; siguiente sección: 06 Reservaciones importantes. Auditorías B/D de navegador y CI pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -19,8 +19,8 @@
 - [x] 01 · Alcance / MUST seleccionados
 - [x] 02 · Temporadas: 12 meses evaluados, estados/intervalos consistentes y fuentes oficiales documentadas (verificación estructural realizada)
 - [x] 03 · Ruta y 16 jornadas tentativas actualizadas; auditoría A abierta
-- [x] 04 · Mapa: 23 puntos georreferenciados (5 alojamientos, 18 excursiones), estructura y enlace a noches verificados
-- [x] 05 · Experiencias: 11 fichas de MUST por región, alternativas climáticas y gastronomía regional documentada
+- [x] 04 · Mapa: 23 puntos georreferenciados (5 zonas de alojamiento, 18 excursiones); Ginebra representa la ciudad, no el hotel ni el aeropuerto
+- [x] 05 · Experiencias: 12 fichas de MUST por región, tren Luzern–Interlaken, alternativas y gastronomía regional documentada
 - [ ] 06 · Reservaciones importantes: condiciones y prioridades
 - [ ] 07 · Transporte mayor: modelo `AtlasTransportModel.validateTrip` y render sin ejecutar
 - [ ] 08 · Alojamiento: zonas y hoteles candidatos investigados; tarifas exactas de 14 noches pendientes
@@ -45,11 +45,16 @@
 - Comprobación JSON realizada; inspección visual Desktop/Mobile y CI completos pendientes, sin autorización de merge.
 
 ## Verificación de Experiencias · 2026-11-16
-- 11 fichas con localidad/región y relato de actividades; cobertura de Zúrich, Maienfeld, Lucerna, Titlis, Jungfrau, Brienz, Oeschinensee y Zermatt.
+- 12 fichas con localidad/región y relato de actividades; cobertura de Zúrich, Maienfeld, Lucerna, Titlis, Jungfrau, Brienz, Oeschinensee y Zermatt.
 - Actividades sujetas a clima, senderos y operación diferenciadas de visitas seguras; no se introdujeron Glacier/Bernina ni nuevas pernoctas.
 - Gastronomía contrastada con portales turísticos de Zúrich, Lucerna, Grisones y Valais; las especialidades son sugerencias, no comidas reservadas. Los platos con lácteos requieren precaución individual.
-- 11/11 registros completos y sin URLs incrustadas; enlaces de investigación conservados en `sources`.
+- 12/12 registros completos y sin URLs incrustadas; enlaces de investigación conservados en `sources`.
 - Pendiente prueba de renderizado Desktop/Mobile y CI, además de la auditoría B de consistencia tras alojamientos y transportes.
+
+## Auditoría cruzada de Temporadas, Mapa y Experiencias · 2026-11-16
+**Hallazgos corregidos:** (1) Se eliminó de la tarjeta de junio la referencia al Brienzer Rothorn, que no está en el programa. (2) El mapa dejó de tratar el punto físico del aeropuerto de Ginebra como lugar para dormir: representa Ginebra como ciudad, a falta de hotel definido. (3) Se incorporó el Luzern–Interlaken Express a las experiencias porque es un tramo escénico ya incluido en la ruta. (4) Se añadió acceso real a Heididorf: subida de 40 min/2,4 km y Heidi Bus normalmente solo fines de semana y festivos; logística del martes 15 pendiente de validar. (5) Se aclararon duración y posibles cierres de Bachalpsee y que el paso por Wengen después de Jungfraujoch no es seguro.
+**Comprobaciones:** 12 tarjetas mensuales con estado y temperatura; 23 coordenadas numéricas, sin nombres repetidos y cinco puntos vinculados a 14 noches; 12 experiencias con textos y sin URLs; días y calendario coherentes. Fuente oficial de acceso Heidi y fichas turísticas consultadas.
+**Pendientes externos:** calendario definitivo 2027, estado de senderos en junio, conexiones puerta a puerta y hotel concreto en Ginebra. No ejecutadas pruebas Node ni renderizado Desktop/Mobile en esta auditoría; quedan para B/D. No constituye visto bueno para merge.
 
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
