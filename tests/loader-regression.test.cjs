@@ -825,3 +825,37 @@ test('Suiza Verde: Panorama definitivo congruente, sin totales ficticios', () =>
     assert.match(renderer, /Vuelo cotizado · subtotal parcial/);
     assert.match(renderer, /solo vuelo, sin alojamientos, trenes, entradas ni comidas/);
 });
+
+
+test('Suiza Verde: presupuesto integral concilia sin duplicar vuelos ni pases', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const window = { AtlasSelections: { get: () => ({}) } };
+    vm.runInNewContext(fs.readFileSync('components/budget.js', 'utf8'), { window });
+    const summary = window.AtlasBudget.summary(trip);
+    const flight = trip.majorTransport.filter(t => t.type === 'flight');
+    assert.equal(flight.length, 1);
+    const fare = flight[0].options[0].fares[0];
+    assert.equal(fare.price.amount, 23300.14);
+    assert.ok(trip.majorTransport.filter(t => t.type !== 'flight').every(t =>
+        trip.expenses.some(e => e.id === t.budgetIncludedIn)));
+    assert.equal(trip.expenses.filter(e => e.category === 'lodging').reduce((s,e) => s + e.nights, 0), 14);
+    assert.equal(trip.expenses.filter(e => e.category === 'food').length, 16);
+    assert.equal(trip.expenses.filter(e => e.category === 'food').reduce((s,e) => s + e.cost.amount, 0), 855);
+    assert.equal(new Set(trip.expenses.map(e => e.id)).size, trip.expenses.length);
+    assert.ok(trip.expenses.every(e => e.status === 'estimated' && e.cost.currency === 'CHF'));
+    assert.equal(trip.exchangeRateSnapshot.date, '2026-11-16');
+    assert.equal(trip.exchangeRates.CHF, 22.12);
+    assert.equal(summary.knownTotalMXN, 138213.54);
+    assert.equal(summary.entries.filter(e => e.id === 'international-flight').length, 1);
+    assert.equal(summary.entries.filter(e => e.id === 'rail-provision').length, 1);
+    assert.equal(summary.entries.filter(e => e.id === 'alpine-activities').length, 1);
+    assert.deepEqual(trip.budgetRange, [118000, 157000]);
+    assert.equal(trip.budgetPreliminary.useBudgetRange, true);
+    assert.equal(trip.budgetPreliminary.referenceFlightMXN, 23300.14);
+    assert.ok(summary.knownTotalMXN > trip.budgetRange[0] &&
+        summary.knownTotalMXN < trip.budgetRange[1]);
+    for (const [date, details] of Object.entries(summary.byDay)) {
+        assert.equal(new Set(details.entries.map(e=>e.id)).size, details.entries.length, date + ': duplicados');
+    }
+    assert.ok(!trip.expenses.some(e => e.concept.includes('Glacier Express') || e.concept.includes('Bernina Express')));
+});
