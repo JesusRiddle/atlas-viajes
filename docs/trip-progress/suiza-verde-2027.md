@@ -86,6 +86,14 @@
 - Clima y luz normalizados a tres párrafos con temperaturas orientativas de valle, ropa y horas de luz; ajustes de documentación y electricidad tipo J 230 V/50 Hz con fuentes oficiales.
 - Validación de contrato del JSON completa; **no se ha ejecutado aún prueba real Desktop/Mobile ni CI**, y sigue pendiente la auditoría del Panorama al terminar etapas 09–11.
 
+## Corrección preventiva de Panorama y Clima y luz · 2026-11-16
+- Causa: contrato editorial ya exigía `practicalIndicators[id,title,text,badge,tone]`; la primera captura usó `type/description`, y se declaró terminada sin renderizar ni ejecutar regresión.
+- Clima corregido con referencias regionales **mínimas nocturnas vs máximas diurnas**: Zúrich/Lucerna 11 a 13 °C noche y 20 a 24 °C día; Grindelwald/Zermatt 6 a 10 °C noche y 16 a 20 °C día. Cumbres pueden tener heladas. Condiciones son referencias históricas orientativas, no pronóstico 2027.
+- Luz 13–26 junio Zúrich: salida de sol aproximadamente 05:28–05:30 y puesta 21:22–21:26 (CEST, UTC+2), casi 16 horas. Ropa por capas, impermeable y calzado apto para senderos, sin exceder equipaje de mano.
+- Nueva prueba `tests/loader-regression.test.cjs`: Suiza Verde se agrega a pruebas de indicadores/temporadas, valida campos completos, ausencia de `type/description`, luz, clima en tres párrafos y cabecera. También se actualizó una expectativa obsoleta de `status: draft`, que ya no es el estado público del viaje.
+- Checklist reforzado para exigir pruebas desde la primera redacción de cabecera, indicadores y clima, y no solo en auditoría C/D.
+- Validación de estructura mediante lectura del JSON y pruebas escritas; **la ejecución completa de Node y navegador sigue sujeta a CI / checkout local**. No afirmar finalizada la auditoría visual sin evidencia de ejecución.
+
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
