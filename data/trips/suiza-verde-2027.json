@@ -319,38 +319,177 @@
     }
   ],
   "reservations": [
-    {
-      "title": "Vuelos Lufthansa/SWISS · multidestino",
-      "note": "Cotización de $23,300.14 MXN, Economy Light, 12–27 junio de 2027; no reservado ni comprado. Verificar tarifa final y reglas."
-    },
-    {
-      "title": "Lindt Home of Chocolate",
-      "note": "Reservar entrada para el 14 de junio únicamente después de confirmar horario y compatibilidad."
-    },
-    {
-      "title": "Heididorf · Maienfeld",
-      "note": "Comprobar apertura el 15 de junio de 2027 y transporte desde estación; el calendario aún no está confirmado."
-    },
-    {
-      "title": "Titlis · Cliff Walk",
-      "note": "Validar remontes, clima y operación de las atracciones antes de pagar."
-    },
-    {
-      "title": "Jungfraujoch",
-      "note": "Comprobar obligación de reserva de asiento para junio de 2027 y posibles cambios por clima."
-    },
-    {
-      "title": "First / Bachalpsee / Oeschinensee",
-      "note": "Revisar estado de los remontes y de los senderos a comienzos de temporada."
-    },
-    {
-      "title": "Barco del lago Brienz / Giessbach",
-      "note": "Verificar horario y embarcadero para el 20 de junio de 2027."
-    },
-    {
-      "title": "Alojamiento previo al vuelo de Ginebra",
-      "note": "Seleccionar hotel con acceso fiable a GVA para salida 09:10 del 27 de junio."
-    }
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Jungfraujoch · 21 junio (fecha flexible)",
+          "description": "SIN COMPRAR. Reserva de asiento obligatoria entre 1 mayo y 31 octubre 2027, además del billete. Acceder a torniquetes al menos 10 min antes. Si hay nubes, intercambiar este día con First/Brienz, sujeto a nuevos cupos. Confirmar descuentos y pase regional antes de comprar.",
+          "links": [
+            {
+              "label": "Asiento obligatorio · Jungfraujoch",
+              "url": "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/book-priority-boarding/"
+            },
+            {
+              "label": "Billete oficial",
+              "url": "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/buy-jungfraujoch-ticket/"
+            }
+          ]
+        },
+        {
+          "title": "Vuelos Lufthansa/SWISS · 12 y 27 junio",
+          "description": "COTIZADO, SIN COMPRAR. MEX–FRA–ZRH (12–13 junio) y GVA–FRA–MEX (27 junio). Economy Light: $23,300.14 MXN para una persona según captura de noviembre 2026. Revisar equipaje, conexiones, cambios y reembolsos; precio sujeto a variación.",
+          "links": [
+            {
+              "label": "Lufthansa oficial",
+              "url": "https://www.lufthansa.com/"
+            },
+            {
+              "label": "SWISS oficial",
+              "url": "https://www.swiss.com/"
+            }
+          ]
+        },
+        {
+          "title": "Alojamientos · 13–27 junio (14 noches)",
+          "description": "SIN RESERVAR. Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra/aeropuerto 1. Cotizar habitación privada, baño propio, impuestos, cancelación y acceso ferroviario. Priorizar seis noches en Grindelwald y salida temprana de GVA el 27 junio a las 09:10. Ningún hotel seleccionado.",
+          "links": [
+            {
+              "label": "SBB · conexiones",
+              "url": "https://www.sbb.ch/en"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Lindt Home of Chocolate · lunes 14 junio",
+          "description": "SIN COMPRAR. La visita se reserva con día y franja horaria; comprobar cuándo se abre junio 2027 y política de cambios. Si no hay horario compatible, reorganizar las visitas de Zúrich, sin desplazar automáticamente Heididorf.",
+          "links": [
+            {
+              "label": "Taquilla oficial Lindt",
+              "url": "https://tickets.lindt-home-of-chocolate.com/selection/timeslotpass?lang=en&productId=101502126146"
+            }
+          ]
+        },
+        {
+          "title": "Heididorf · martes 15 junio",
+          "description": "SIN COMPRAR. Apertura diaria habitual de mediados de marzo a mediados de noviembre, sujeta a confirmación 2027. El Heidi Bus habitual funciona fines de semana y festivos: no asumir servicio el martes. Verificar subida a pie, manejo de equipaje y traslado posterior a Lucerna; si no resulta viable, reordenar la jornada.",
+          "links": [
+            {
+              "label": "Heididorf oficial",
+              "url": "https://www.heididorf.ch/"
+            },
+            {
+              "label": "Acceso oficial en español",
+              "url": "https://www.heididorf.ch/fileadmin/siteadministration/prospekte/Heididorf_Brochure_in_espanol.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Titlis · 16 junio",
+          "description": "SIN COMPRAR. Comprobar remontes y viento antes de reservar. El billete peatonal Engelberg–Titlis incluye Rotair, Cliff Walk y cueva glaciar; Ice Flyer es opcional y aparte. Evaluar descuentos de pases y restricciones de cancelación. Plan alternativo: Lucerna y lago si la montaña no opera.",
+          "links": [
+            {
+              "label": "Tickets Titlis",
+              "url": "https://www.titlis.ch/en/webshop-ticket-purchase-instructions"
+            },
+            {
+              "label": "Precios e inclusiones",
+              "url": "https://www.titlis.ch/en/information/prices"
+            }
+          ]
+        },
+        {
+          "title": "Grindelwald-First · 19 junio",
+          "description": "SIN COMPRAR. Confirmar billete del teleférico y cobertura del pase elegido. Cliff Walk no es First Flyer ni requiere paquete de aventura. Bachalpsee depende del sendero abierto y sin nieve peligrosa; si está cerrado, visitar solo First o intercambiar el día.",
+          "links": [
+            {
+              "label": "First oficial",
+              "url": "https://www.jungfrau.ch/en-gb/grindelwaldfirst/"
+            },
+            {
+              "label": "Sendero Bachalpsee",
+              "url": "https://www.jungfrau.ch/en-gb/grindelwaldfirst/lake-bachalpsee/"
+            }
+          ]
+        },
+        {
+          "title": "Oeschinensee · 22 junio",
+          "description": "SIN COMPRAR. Verificar cupos del teleférico y estado de los senderos en junio. El operador permite ciertos cambios de franja, pero generalmente no cancela ni reembolsa. Si está cerrado el acceso seguro al lago, sustituir por una visita de valle o lago del Oberland.",
+          "links": [
+            {
+              "label": "Horarios y tarifas Oeschinensee",
+              "url": "https://www.oeschinensee.ch/en/tarife-fahrplan/"
+            },
+            {
+              "label": "Estado operativo",
+              "url": "https://www.oeschinensee.ch/es/live/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Lago Brienz y Giessbach · 20 junio",
+          "description": "SIN COMPRAR. Verificar horario BLS 2027, barco hasta Giessbach See, funicular y enlace de regreso. El horario 2026 solo sirve de referencia, no confirma servicios en la fecha. Si el barco no encaja, cambiar de día o de medio de transporte.",
+          "links": [
+            {
+              "label": "BLS Schifffahrt",
+              "url": "https://www.bls-schiff.ch/en"
+            },
+            {
+              "label": "Acceso Giessbach",
+              "url": "https://www.giessbach.ch/en/kontakt-anreise/"
+            }
+          ]
+        },
+        {
+          "title": "Gornergrat y Riffelsee · 24 junio",
+          "description": "SIN COMPRAR. Comparar billetes ida/vuelta, tramos individuales y descuentos de pases; subir con buena visibilidad. Riffelsee es opcional si el sendero está abierto. Si el tiempo impide Gornergrat, trasladarlo al 25 y omitir Sunnegga.",
+          "links": [
+            {
+              "label": "Billete Gornergrat",
+              "url": "https://www.gornergrat.ch/en/products/ticket"
+            },
+            {
+              "label": "Avisos y tarifas",
+              "url": "https://www.gornergrat.ch/en/pages/prices-gornergrat-bahn"
+            }
+          ]
+        },
+        {
+          "title": "Sunnegga y Leisee · 25 junio",
+          "description": "OPCIONAL, SIN COMPRAR. Confirmar funicular y sendero; conservar este día como respaldo de Gornergrat. No pagar ambos por anticipado si las condiciones meteorológicas pueden hacerlos incompatibles.",
+          "links": [
+            {
+              "label": "Zermatt turismo oficial",
+              "url": "https://zermatt.swiss/en"
+            }
+          ]
+        },
+        {
+          "title": "Lago Lucerna y Trümmelbach · 17 y 18 junio",
+          "description": "SIN COMPRAR. La navegación corta por Lucerna solo si cabe antes del tren a Grindelwald. En Trümmelbach comprobar horarios y no comprometer el paseo por Mürren. Reorganizar si se reduce el servicio o el clima no acompaña.",
+          "links": [
+            {
+              "label": "Barcos lago Lucerna",
+              "url": "https://www.lakelucerne.ch/en/"
+            },
+            {
+              "label": "Trümmelbach oficial",
+              "url": "https://www.truemmelbachfaelle.ch/"
+            }
+          ]
+        }
+      ]
+    ]
   ],
   "exchangeRates": {},
   "exchangeRateSnapshot": null,
@@ -615,7 +754,10 @@
       "stayName": "Ginebra o entorno del aeropuerto"
     }
   ],
-  "planningDetails": "Escenario principal: 12–27 junio de 2027; septiembre se contrastará económicamente cuando estén completos alojamientos, transportes y entradas. Ruta enfocada en los MUST naturales, sin Glacier Express ni Bernina Express, reservados como ideas para otro viaje ferroviario. Vuelo multidestino cotizado pero no comprado. La distribución de noches sigue provisional hasta validar la logística de Heidi, Jungfrau y el regreso. Investigación inicial de alojamiento: Hotel Marta/Bristol/Fred (Zúrich); Alpha/Waldstätterhof/Central (Lucerna); Tschuggen/Bernerhof/Alpenblick (Grindelwald); Alphubel/Sarazena/Metropol (Zermatt); ibis Genève Aéroport/Nash/ibis budget (Ginebra). Solo candidatos, sin tarifas verificadas para la estancia completa. Auditoría de secciones 02/04/05: para Heididorf el 15 de junio evitar asumir Heidi Bus entre semana; la opción peatonal implica ascenso y habrá que gestionar equipaje en el traslado Zúrich–Lucerna. La noche en la región de Ginebra sigue sin hotel concreto y el mapa ubica la ciudad, no un establecimiento reservado.",
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Todo sigue SIN COMPRAR: vuelo cotizado, hoteles sin reservar y entradas sujetas a disponibilidad. Jungfraujoch exige reserva de asiento además del billete en junio de 2027. Priorizar vuelos y alojamientos cancelables; coordinar Jungfraujoch según visibilidad y cupos, después Lindt y el resto de entradas. No comprar actividades de montaña simultáneas sin revisar previsión, políticas y pases. Tarifas de acceso 2027 pendientes de cotizar."
+  },
   "lodgingSummary": "Zúrich 13–15 junio (2 noches, cercanía a Zürich HB); Lucerna 15–17 (2, estación); Grindelwald 17–23 (6, centro/estación); Zermatt 23–26 (3, estación/Gornergrat); Ginebra aeropuerto 26–27 (1, salida temprana). Hoteles candidatos registrados; ninguno reservado ni cotizado para todas sus noches.",
   "heroLodgingSummary": "14 noches · cinco alojamientos provisionales",
   "budgetPreliminary": true,
@@ -754,7 +896,20 @@
     "https://www.valais.ch/en/taste/valais-specialties/recipes/cholera",
     "https://www.heididorf.ch/fileadmin/siteadministration/heidiweg/Heidi_Weg_ENG.pdf",
     "https://www.heididorf.ch/fileadmin/siteadministration/prospekte/Heididorf_Brochure_in_espanol.pdf",
-    "https://www.myswitzerland.com/es/planificacion/sobre-suiza/costumbres-y-tradiciones/platos-tipicos-de-la-cocina-del-pais/"
+    "https://www.myswitzerland.com/es/planificacion/sobre-suiza/costumbres-y-tradiciones/platos-tipicos-de-la-cocina-del-pais/",
+    "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/book-priority-boarding/",
+    "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/buy-jungfraujoch-ticket/",
+    "https://tickets.lindt-home-of-chocolate.com/selection/timeslotpass?lang=en&productId=101502126146",
+    "https://www.titlis.ch/en/webshop-ticket-purchase-instructions",
+    "https://www.titlis.ch/en/information/prices",
+    "https://www.jungfrau.ch/en-gb/grindelwaldfirst/",
+    "https://www.oeschinensee.ch/es/live/",
+    "https://www.bls-schiff.ch/en",
+    "https://www.gornergrat.ch/en/products/ticket",
+    "https://www.gornergrat.ch/en/pages/prices-gornergrat-bahn",
+    "https://zermatt.swiss/en",
+    "https://www.lakelucerne.ch/en/",
+    "https://www.truemmelbachfaelle.ch/"
   ],
   "sourceNote": "Temporadas actualizadas 16 noviembre 2026 con información climática general de MeteoSwiss, turismo oficial y calendarios publicados de Oeschinensee y Brienzer Rothorn 2027. Rangos de temperatura aproximados para ciudades y valles de varias altitudes, no normales exactas de cada estación ni pronósticos para junio 2027. Aperturas de otros servicios y estado de senderos deben verificarse antes de viajar. Cotización aérea aportada por el usuario en noviembre de 2026.",
   "budgetRange": null,
