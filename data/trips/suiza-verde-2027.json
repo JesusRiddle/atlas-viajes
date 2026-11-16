@@ -141,7 +141,9 @@
       "mobility": "• *Aeropuerto → estación:* Seguir señalización hacia Zürich Flughafen; comprar billete SBB válido hasta Zürich HB o usar pase válido.\n• *Estación → hotel:* Hotel Marta está cerca de la estación principal; ruta final a pie después de confirmar el alojamiento.",
       "note": "• *Llegada real:* No programar visitas con horario el domingo; inmigración, tren y hotel pueden consumir la tarde.\n• *Alojamiento:* Hotel Marta es candidato, no reserva confirmada.",
       "spend": null,
-      "places": [],
+      "places": [
+        "zurich"
+      ],
       "transportRefs": [
         "international-flight",
         "zrh-to-city"
@@ -165,7 +167,10 @@
       "mobility": "• *Zúrich → Kilchberg:* Consultar SBB para la fecha y elegir tren más paseo o transporte local según el punto exacto de llegada.\n• *Regreso:* Reservar margen para volver sin depender del último servicio de la tarde.",
       "note": "• *Lindt:* Entrada con franja aún sin comprar; verificar horario especial del lunes 14 de junio.\n• *Plan B:* Si hay lluvia, priorizar Lindt y acortar el paseo urbano.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swiss27-lindt",
+        "zurich"
+      ],
       "transportRefs": [],
       "headerPlaces": [
         "Lindt Home of Chocolate",
@@ -192,7 +197,10 @@
       "mobility": "• *Equipaje:* La consigna debe estar en un punto por el que realmente vuelva a pasar el tren. Si se deja en Zürich HB, recogerlo exige regresar a Zúrich antes de ir a Lucerna. Consultar taquillas en Maienfeld/Sargans o una opción de traslado, sin dar su disponibilidad por hecha.\n• *Zúrich → Maienfeld:* Consultar trayecto SBB, transbordos y estación de llegada.\n• *Heididorf:* Desde Maienfeld, caminar unos 40 minutos cuesta arriba; el Heidi Bus no debe darse por disponible el martes.\n• *Maienfeld → Lucerna:* Cotizar el itinerario final según lugar de recogida de equipaje, incluyendo cualquier desvío.",
       "note": "• *Día más exigente:* Heididorf y cambio de alojamiento coinciden; no iniciar el sendero con la maleta.\n• *Decisión antes de reservar:* Confirmar una solución realista para el equipaje y tiempos de tren; si falla, mover Heididorf a otro día y actualizar reservas y noches.\n• *Apertura:* El horario publicado para 2026 no confirma automáticamente el 15 de junio de 2027.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swissgreen-heididorf",
+        "lucerne"
+      ],
       "transportRefs": [
         "zurich-maienfeld-luzern"
       ],
@@ -225,7 +233,9 @@
       "mobility": "• *Luzern ↔ Engelberg:* Cotizar ida y regreso en tren; no se trata del billete de teleférico.\n• *Engelberg → Titlis:* Comparar billete peatonal de montaña, descuentos y último remonte; confirmar autobús local o caminata al embarque.",
       "note": "• *Visibilidad:* Revisar cámaras y estado de viento la víspera; la vista no está garantizada.\n• *Cobertura:* Rotair, Cliff Walk y cueva son partes de la visita; Ice Flyer es adicional opcional.\n• *Plan B:* Recorrer Lucerna y el lago si Titlis cierra; no comprar automáticamente dos alternativas.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swissgreen-titlis"
+      ],
       "transportRefs": [
         "luzern-titlis"
       ],
@@ -254,7 +264,10 @@
       "mobility": "• *Luzern → Interlaken Ost:* Billete ferroviario ordinario o pase válido; reserva de asiento opcional.\n• *Interlaken Ost → Grindelwald:* Conexión regional distinta; confirmar tren y andén en SBB.\n• *Estación → hotel:* Hotel Tschuggen es candidato, a distancia caminable del centro.",
       "note": "• *Ritmo:* Priorizar llegada tranquila a Grindelwald sobre una navegación larga por Lucerna.\n• *Hotel:* Solicitar habitación individual con baño privado; otras categorías del Tschuggen lo comparten.",
       "spend": null,
-      "places": [],
+      "places": [
+        "lake-lucerne",
+        "swissgreen-eiger"
+      ],
       "transportRefs": [
         "luzern-grindelwald"
       ],
@@ -284,7 +297,10 @@
       "mobility": "• *Grindelwald ↔ Lauterbrunnen:* Tren con cambio en Zweilütschinen; comprobar la correspondencia del billete.\n• *Trümmelbach:* Autobús del valle y entrada por separado; confirmar apertura.\n• *Mürren:* Ruta usual: teleférico Lauterbrunnen → Grütschalp y tren Grütschalp → Mürren; alternativa vía Stechelberg y teleféricos sujeta a servicios.\n• *Regreso:* Verificar último enlace a Lauterbrunnen y conexión a Grindelwald; no forzar Gimmelwald.",
       "note": "• *Carga física:* Día de muchos desplazamientos y caminatas; elegir un máximo de Mürren + una cascada principal si se retrasa el comienzo.\n• *Plan B:* En lluvia fuerte, las cascadas pueden cerrar por seguridad; no forzar senderos.",
       "spend": null,
-      "places": [],
+      "places": [
+        "lauterbrunnen",
+        "murren"
+      ],
       "transportRefs": [
         "lauterbrunnen-muerren"
       ],
@@ -318,7 +334,10 @@
       "mobility": "• *Pueblo → Firstbahn:* Estación inferior en Grindelwald; comprobar enlace desde el hotel.\n• *First ↔ Grindelwald:* Billete de telecabina con descuentos por pase por verificar; no se necesita un paquete de deportes de aventura.",
       "note": "• *Nieve residual:* Bachalpsee puede no ser accesible a mediados de junio; no recorrer sendero cerrado.\n• *Plan B:* Solo First y Cliff Walk, o día de valle si la montaña está cubierta.",
       "spend": null,
-      "places": [],
+      "places": [
+        "first-cliff-walk",
+        "swissgreen-bachalpsee"
+      ],
       "transportRefs": [
         "grindelwald-first"
       ],
@@ -347,7 +366,10 @@
       "mobility": "• *Grindelwald → Interlaken Ost:* Tren regional.\n• *Barco BLS:* Comprobar embarcadero Giessbach See, dirección, horario de ida y sobre todo regreso antes de embarcar.\n• *Giessbach → hotel:* Funicular separado del billete BLS; regreso terrestre alternativo sujeto a conexiones.",
       "note": "• *Barco:* El horario BLS 2026 muestra escalas Giessbach See, pero el itinerario del domingo 20 de junio de 2027 aún no está publicado: confirmar ida y vuelta antes de comprar.\n• *Funicular:* Consultar billete, temporada y enlace real con el barco.\n• *Plan B:* Si no hay navegación útil, priorizar Brienz y un recorrido terrestre sin contar el crucero como realizado.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swissgreen-brienz",
+        "swissgreen-giessbach"
+      ],
       "transportRefs": [
         "brienz-giessbach"
       ],
@@ -380,7 +402,10 @@
       "mobility": "• *Grindelwald Terminal → Jungfraujoch:* Eiger Express a Eigergletscher y Jungfraubahn; asiento reservado obligatorio en junio de 2027.\n• *Plan A · regreso directo:* Jungfraujoch → Eigergletscher → Grindelwald Terminal.\n• *Plan B · Wengen:* Jungfraujoch → Kleine Scheidegg → Wengen → Lauterbrunnen → Zweilütschinen → Grindelwald. Elegir explícitamente la opción B en Movilidad y comprar tarifa que la admita; el billete del plan A no autoriza automáticamente el circuito.",
       "note": "• *Reserva crítica:* Jungfraujoch exige billete válido y reserva de asiento del 1 mayo al 31 octubre 2027; presentarse al torniquete al menos diez minutos antes.\n• *Meteorología:* Si está nublado, intercambiar con First/Brienz, sujeto a nuevos cupos y condiciones del billete.\n• *Altitud:* A 3,454 m pueden aparecer molestias; hidratarse, avanzar con calma y regresar si hay síntomas.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swissgreen-jungfraujoch",
+        "wengen"
+      ],
       "transportRefs": [
         "jungfraujoch"
       ],
@@ -397,7 +422,9 @@
           "url": "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/book-priority-boarding/"
         }
       ],
-      "optionalPlaces": []
+      "optionalPlaces": [
+        "wengen"
+      ]
     },
     {
       "n": 11,
@@ -410,7 +437,9 @@
       "mobility": "• *Grindelwald ↔ Kandersteg:* Tren con transbordos a verificar en SBB; es una excursión interregional, no un paseo corto.\n• *Kandersteg → lago:* Telecabina aparte de SBB; comprobar si se requiere franja y si hay camino peatonal habilitado.",
       "note": "• *Seguridad:* Senderos altos en Oeschinensee pueden permanecer cerrados en junio por nieve, riesgo de desprendimientos o mantenimiento.\n• *Plan B:* Si el acceso al lago no está seguro, evitar pagar telecabina y optar por una excursión más próxima en el Oberland.",
       "spend": null,
-      "places": [],
+      "places": [
+        "oeschinensee"
+      ],
       "transportRefs": [
         "oeschinensee"
       ],
@@ -438,7 +467,10 @@
       "mobility": "• *Grindelwald → Zermatt:* Trenes regionales y principales con transbordos; consultar SBB para el 23 de junio y conservar margen entre conexiones.\n• *Estación → alojamiento:* Zermatt es localidad principalmente sin coches; hotel a pie y check-in según instrucciones de Hotel Simi.",
       "note": "• *Ritmo:* Traslado interregional como actividad principal, sin añadidos que arriesguen el check-in.\n• *Plan B:* Si el viaje demora, posponer paseo y cenar cerca del hotel.",
       "spend": null,
-      "places": [],
+      "places": [
+        "swissgreen-eiger",
+        "zermatt"
+      ],
       "transportRefs": [
         "grindelwald-zermatt"
       ],
@@ -467,7 +499,10 @@
       "mobility": "• *Zermatt → Gornergrat:* Tren de cremallera con billete propio; comparar descuento del pase y reglas de interrupción del viaje.\n• *Riffelsee:* Si se decide bajar en Rotenboden, consultar accesos e itinerario antes de caminar; regreso ferroviario no debe duplicar la tarifa.",
       "note": "• *Sendero alto:* El propio operador advierte de nieve residual en primavera y comienzos de verano; Riffelsee no está garantizado en junio.\n• *Billete:* Verificar si el trayecto permite descender y reembarcar en Rotenboden/Riffelberg sin comprar un segundo billete.\n• *Plan B:* Si la cima está cubierta de nubes, trasladar Gornergrat al 25 de junio y omitir Sunnegga.",
       "spend": null,
-      "places": [],
+      "places": [
+        "gornergrat",
+        "swissgreen-riffelsee"
+      ],
       "transportRefs": [
         "gornergrat"
       ],
@@ -496,7 +531,9 @@
       "mobility": "• *Zermatt ↔ Sunnegga:* Funicular propio con billete separado; solo comprar si no se sustituye por Gornergrat.\n• *Jornada alternativa:* Si se usa para Gornergrat, aplicar la movilidad y billete del día anterior, sin contar dos excursiones.",
       "note": "• *Decisión meteorológica:* Sunnegga es opcional y solo se realiza si Gornergrat ya quedó cubierto; si se recupera Gornergrat el 25, se utiliza ese billete en lugar del funicular de Sunnegga.\n• *Senderos:* Elegir rutas cortas habilitadas; evitar nieve residual, tormentas o caminatas solitarias en altura.",
       "spend": null,
-      "places": [],
+      "places": [
+        "zermatt"
+      ],
       "transportRefs": [
         "sunnegga"
       ],
@@ -2349,7 +2386,7 @@
     }
   ],
   "attractionTerms": [],
-  "cover": null,
+  "cover": "swissgreen-eiger",
   "mapPoints": [
     {
       "name": "Zúrich",
@@ -2885,7 +2922,27 @@
     157000
   ],
   "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,214 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.12 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha.",
-  "placeDescriptions": {},
+  "placeDescriptions": {
+    "zurich": "A orillas del Limmat, las fachadas históricas y las torres del Grossmünster dibujan uno de los paseos urbanos más agradables de Zúrich.",
+    "swiss27-lindt": "Una enorme fuente de chocolate recibe a los visitantes en el museo Lindt, dedicado a la historia, las técnicas y los sabores del cacao.",
+    "swissgreen-heididorf": "La antigua casa de Heidi recrea el universo de la novela de Johanna Spyri entre construcciones rurales, praderas y montañas de Maienfeld.",
+    "lucerne": "El puente cubierto Kapellbrücke cruza el río Reuss y conecta las calles históricas de Lucerna con uno de sus paisajes más reconocibles.",
+    "swissgreen-titlis": "Este puente suspendido atraviesa un paisaje de roca y nieve en el Titlis, con vistas elevadas que dependen del viento y la visibilidad.",
+    "lake-lucerne": "Las orillas del lago de los Cuatro Cantones reúnen pueblos, embarcaderos y montañas que se reflejan en sus aguas cuando el tiempo acompaña.",
+    "swissgreen-eiger": "Las praderas de Grindelwald se extienden bajo la imponente cara norte del Eiger, entre chalets y senderos que anuncian el paisaje del Oberland.",
+    "lauterbrunnen": "Cascadas y paredes verticales enmarcan el valle de Lauterbrunnen, un corredor alpino donde los pueblos conviven con prados y saltos de agua.",
+    "murren": "El pueblo peatonal de Mürren ocupa una terraza sobre el valle de Lauterbrunnen y ofrece vistas abiertas hacia cumbres y pendientes alpinas.",
+    "first-cliff-walk": "La pasarela First Cliff Walk bordea una pared rocosa y conduce a una plataforma panorámica frente a las montañas del Oberland bernés.",
+    "swissgreen-bachalpsee": "El lago Bachalpsee aparece entre pastos de altura y cumbres alpinas, con reflejos espectaculares cuando el sendero está abierto y despejado.",
+    "swissgreen-brienz": "Las aguas turquesas del lago Brienz contrastan con las laderas boscosas y los pueblos de su ribera, ideales para contemplar desde un barco.",
+    "swissgreen-giessbach": "Las cascadas de Giessbach descienden por escalones de roca y bosque hacia el lago Brienz, junto a senderos y un funicular histórico.",
+    "swissgreen-jungfraujoch": "En Jungfraujoch, el observatorio Sphinx domina un paisaje de glaciares y nieve permanente, entre los grandes macizos del Oberland bernés.",
+    "wengen": "Wengen se asoma al valle de Lauterbrunnen desde una terraza de montaña, con chalets, pastos y vistas que cambian según las nubes.",
+    "oeschinensee": "Oeschinensee destaca por sus aguas de intenso color turquesa al pie de paredes montañosas, rodeadas de bosques y senderos de alta montaña.",
+    "zermatt": "Los tejados de Zermatt se agrupan frente al Matterhorn, cuya silueta piramidal aparece y desaparece entre nubes sobre el valle del Valais.",
+    "gornergrat": "El ferrocarril de cremallera asciende a Gornergrat, mirador sobre glaciares y numerosas cumbres de cuatro mil metros alrededor de Zermatt.",
+    "swissgreen-riffelsee": "En días serenos, el lago Riffelsee refleja el Matterhorn como un espejo, un espectáculo condicionado por el viento y la nieve estacional."
+  },
   "optionalSection": null,
   "family": null,
   "layoutClass": null,
@@ -2955,5 +3012,13 @@
   "railCurrencyNote": null,
   "heroEyebrow": null,
   "travelerCount": 1,
-  "hotelsComparison": "Alternativas por cotizar para las mismas fechas y 1 adulto: Zúrich, Hotel Bristol o Fred Hotel Hauptbahnhof (mejor aire acondicionado en algunas categorías frente a Marta); Lucerna, Hotel Alpha SOLO en habitación doble con baño privado o Hotel Central Luzern; Grindelwald, Hotel Bernerhof (junto a la estación) o Alpenblick (más alejado); Zermatt, Hotel Sarazena o Metropol & Spa; Ginebra, Nash Airport Hotel o ibis budget Genève Palexpo Aéroport (no confundir con ibis budget Genève Aéroport, que está más alejado y requiere transporte). Elegir finalmente por costo total, baño privado y conexión ferroviaria, no por precio «desde» de años anteriores."
+  "hotelsComparison": "Alternativas por cotizar para las mismas fechas y 1 adulto: Zúrich, Hotel Bristol o Fred Hotel Hauptbahnhof (mejor aire acondicionado en algunas categorías frente a Marta); Lucerna, Hotel Alpha SOLO en habitación doble con baño privado o Hotel Central Luzern; Grindelwald, Hotel Bernerhof (junto a la estación) o Alpenblick (más alejado); Zermatt, Hotel Sarazena o Metropol & Spa; Ginebra, Nash Airport Hotel o ibis budget Genève Palexpo Aéroport (no confundir con ibis budget Genève Aéroport, que está más alejado y requiere transporte). Elegir finalmente por costo total, baño privado y conexión ferroviaria, no por precio «desde» de años anteriores.",
+  "coverSlides": [
+    "swissgreen-eiger",
+    "lauterbrunnen",
+    "oeschinensee",
+    "swissgreen-brienz",
+    "swissgreen-riffelsee",
+    "swissgreen-heididorf"
+  ]
 }
