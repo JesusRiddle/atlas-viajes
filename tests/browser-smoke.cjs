@@ -110,7 +110,7 @@ const assert = require('node:assert/strict');
       const workDayBadges = featuredCards.locator('.cardfacts span');
       assert.equal(await workDayBadges.count(), 7, 'No inventar días laborales en viaje sin dato calculado');
       const workingDayTexts = await workDayBadges.allInnerTexts();
-      assert.ok(workingDayTexts.every(value => /^\\d+ días laborales$/.test(value)),
+      assert.ok(workingDayTexts.every(value => /^\d+ días laborales$/.test(value)),
         'Portada: escribir siempre X días laborales');
       const tones = await page.locator('#viajes .atlas-home-card').evaluateAll(cards => cards.map(card => {
         const place = card.querySelector('.card-overview-location');
