@@ -26,7 +26,7 @@
 - [x] 08 · Alojamiento: cinco hoteles principales con fechas, direcciones, enlaces oficiales y Maps; tarifas exactas 2027 aún pendientes
 - [x] 09 · Día por día: 16 jornadas con mañana/tarde/noche, hoteles candidatos, movilidad, tips y planes B; horarios de tren y gastos diarios pendientes
 - [x] 10 · Panorama: narrativa, indicadores, clima, cinco alojamientos y subtotal aéreo reconciliados; prueba real Desktop/Mobile pendiente
-- [x] 11 · Presupuesto integral provisional: 27 estimaciones terrestres, vuelo cotizado, rango, TC y no duplicación; faltan precios finales.
+- [x] 11 · Presupuesto integral provisional: 35 estimaciones terrestres, vuelo cotizado, rango, TC y no duplicación; faltan precios finales.
 - [ ] 12 · Fotografías y portada
 - [ ] 13 · Auditoría global, tests/CI y PR final
 
@@ -127,10 +127,10 @@
 - Tipo de cambio de referencia: CHF 1 = MXN 22.12 del 16 noviembre 2026, no tasa de compra.
 - Hospedaje provisional CHF 2,520: Zúrich CHF 370, Lucerna CHF 500, Grindelwald CHF 930, Zermatt CHF 555 y Ginebra CHF 165; sin reservas ni precios comprobados en junio 2027.
 - Transporte público CHF 650: hipótesis Half Fare CHF 150 y hasta CHF 500 de billetes. Swiss Travel Pass 15 días CHF 499 más suplementos es alternativa, no se suma. Requiere cotización tramo por tramo.
-- Remontes y entradas CHF 410; provisión potencialmente insuficiente si no se materializan descuentos, especialmente para Jungfraujoch. Sunnegga opcional excluido.
+- Remontes y entradas CHF 410 desglosados en nueve actividades fechadas (Lindt 17, Heidi 15, Titlis 58, Trümmelbach 18, First 42, Giessbach 18, Jungfraujoch 133, Oeschinensee 27 y Gornergrat 82); provisiones no cotizadas, potencialmente insuficientes sin descuentos. Sunnegga opcional excluido.
 - Alimentación CHF 855 repartidos en 16 días; seguro CHF 120, tasas hoteleras CHF 70, incidentales CHF 110, contingencia CHF 460.
 - Subtotal terrestre CHF 5,195 = MXN 114,913.40. Total central con único vuelo = MXN 138,213.54. Rango global estimado MXN 118,000–157,000, no garantía.
-- Cada transporte terrestre está asociado a una única provisión mediante budgetIncludedIn; el vuelo no está duplicado en expenses. El gasto por día se deriva de las partidas sin volver a sumarlas.
+- Cada transporte terrestre se asocia a una partida de referencia mediante budgetIncludedIn; el vuelo no se duplica en expenses. Pase/trenes de CHF 650 son globales y no se cargan íntegros a un día; actividades, alimentación y alojamiento sí se distribuyen por jornada, sin doble suma.
 - Prueba de regresión financiera añadida a tests/loader-regression.test.cjs; ejecución Node/Chromium pendiente, sin aprobación para merge.
 
 ## Pendientes prioritarios
