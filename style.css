@@ -2427,3 +2427,22 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
     #viajes .atlas-home-card .card-trip-details{margin-bottom:12px}
     #viajes .atlas-home-card .card-trip-intro{padding-top:11px;margin-bottom:16px}
 }
+
+/* Panorama · cada alojamiento conserva tamaño compacto sin estirar la cuadrícula. */
+#plan .overview-stays .baseroute,
+#plan .overview-intro .overview-stays-inline .baseroute{
+    grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),250px));
+    justify-content:start;
+    justify-items:stretch;
+    gap:10px;
+}
+#plan .overview-stays .basepill{
+    width:100%;
+    max-width:250px;
+}
+@media(max-width:680px){
+    #plan .overview-stays .baseroute,
+    #plan .overview-intro .overview-stays-inline .baseroute{
+        grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),250px));
+    }
+}
