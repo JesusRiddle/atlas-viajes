@@ -4885,5 +4885,16 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Deralpinbergsteiger"
     }
+  },
+  "swissgreen-cover": {
+    "name": "Grindelwald y los Alpes berneses",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grindelwald%20Town%20and%20the%20Alps.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Grindelwald_Town_and_the_Alps.jpg",
+      "author": "Sabrina Schreiber",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sabrina Schreiber"
+    }
   }
 }
