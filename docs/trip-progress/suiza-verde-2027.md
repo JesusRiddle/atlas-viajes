@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 08 · Dónde dormirás completada a nivel de selección editorial y verificación de ubicaciones; siguiente: 09 Día por día. Auditorías B/D y CI pendientes.
+**Etapa:** 09 · Día por día actualizado en sus 16 jornadas y verificado estructuralmente. Siguiente: 10 Panorama. Auditorías B/C/D, tarifas y pruebas Node/navegador pendientes.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -24,7 +24,7 @@
 - [x] 06 · Reservaciones importantes: tres grupos, 12 fichas con estado, fechas, alternativas y enlaces oficiales.
 - [x] 07 · Transporte mayor: 14 fichas y 16 referencias en jornadas; validación estructural equivalente realizada, prueba real de render y Node pendientes
 - [x] 08 · Alojamiento: cinco hoteles principales con fechas, direcciones, enlaces oficiales y Maps; tarifas exactas 2027 aún pendientes
-- [ ] 09 · Día por día: traslados puerta a puerta y gastos pendientes
+- [x] 09 · Día por día: 16 jornadas con mañana/tarde/noche, hoteles candidatos, movilidad, tips y planes B; horarios de tren y gastos diarios pendientes
 - [ ] 10 · Panorama: validar indicadores y clima en Desktop/Mobile
 - [ ] 11 · Presupuesto integral: solo vuelos cotizados, resto pendiente
 - [ ] 12 · Fotografías y portada
@@ -94,11 +94,19 @@
 - Checklist reforzado para exigir pruebas desde la primera redacción de cabecera, indicadores y clima, y no solo en auditoría C/D.
 - Validación de estructura mediante lectura del JSON y pruebas escritas; **la ejecución completa de Node y navegador sigue sujeta a CI / checkout local**. No afirmar finalizada la auditoría visual sin evidencia de ejecución.
 
+## Verificación de Día por día · 2026-11-16
+- 16 jornadas del 12 al 27 junio 2027: mañana, tarde, noche y lugares principales en encabezados. Días 2–15 asignados a uno de cinco hoteles candidatos, 14 noches sumadas, sin inventar reservas. Día 1 en vuelo y día 16 llegada a México.
+- 16 referencias de fichas de movilidad conservadas, con enlaces oficiales en días clave y consejos siguiendo `• *Título:* ...` para pasos y tips.
+- Prioridades y alternativas documentadas: 15 junio Heididorf con equipaje/Heidi Bus de martes; 18 junio Trümmelbach/Mürren con recorte de Gimmelwald; 19 junio First/Bachalpsee condicionado; 20 junio barco Giessbach dependiente de BLS 2027; 21 junio Jungfraujoch con reserva de asiento y Wengen únicamente con itinerario ferroviario compatible; 22 junio Oeschinensee sujeto a estado de senderos; 24/25 junio flexibilidad Gornergrat/Sunnegga; 26 junio traslado temprano a GVA para vuelo 27.
+- No se crearon fotografías ni textos de galería sin imagen comprobada: `places: []` y `placeDescriptions: {}`. La selección fotográfica corresponde a etapa 12.
+- `spend` permanece `null` cada día hasta estimar actividades, pases, alimentación y transporte sin doble conteo. No se ha cerrado presupuesto integral.
+- Validación estática de secuencia, 14 referencias de hotel, 16 referencias de transporte y textos por periodo; **sin ejecución de test Node ni revisión real DOM Desktop/Mobile**.
+
 ## Pendientes prioritarios
 1. Comparar tarifas y disponibilidad del 13–27 de junio de 2027, 1 adulto en habitación privada (idealmente baño privado), impuestos, desayuno y cancelación; después cotizar trenes y pases.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
 3. Validar noche de Ginebra y aeropuerto de salida; presupuesto integral sin duplicidades.
-4. Ejecutar pruebas del contrato de transporte, DOM/responsive y QA global; añadir fotografías en etapa 12.
+4. Actualizar Panorama y Presupuesto; ejecutar pruebas del contrato de transporte, DOM/responsive y QA global; añadir fotografías en etapa 12.
 
 **Candidatos por ciudad:** Zúrich Marta/Bristol/Fred; Lucerna Alpha/Waldstätterhof/Central; Grindelwald Tschuggen/Bernerhof/Alpenblick; Zermatt Alphubel/Sarazena/Metropol; Ginebra ibis Genève Aéroport/Nash/ibis budget. Ninguno reservado ni cotizado en todas las fechas. Grindelwald es la prioridad económica por sus seis noches.
 
