@@ -96,7 +96,7 @@
   "experiences": [
     {
       "city": "Zúrich · casco antiguo y río Limmat",
-      "description": "Pasear al atardecer por los alrededores del Limmat y las calles históricas, si la llegada lo permite. Probar Luxemburgerli o Birchermüesli; Zürcher Geschnetzeltes con rösti es especialidad local."
+      "description": "Pasear al atardecer por las calles históricas junto al Limmat, solo si la llegada deja tiempo. Probar Luxemburgerli o Birchermüesli; Zürcher Geschnetzeltes con rösti es una especialidad local."
     },
     {
       "city": "Zermatt · pueblo de chalets y Valais",
@@ -112,7 +112,7 @@
     },
     {
       "city": "Diavolezza · glaciares del macizo Bernina",
-      "description": "Ascender en teleférico hasta la terraza de Diavolezza y contemplar los glaciares Pers y Morteratsch, con vistas al macizo Bernina. Evitar caminatas glaciares o senderos altos si permanece nieve o hielo."
+      "description": "Ascender en teleférico hasta la terraza de Diavolezza para contemplar los glaciares Pers y Morteratsch frente al macizo Bernina. Limitarse a zonas habilitadas y evitar senderos nevados o helados."
     },
     {
       "city": "Alp Grüm · balcón ferroviario sobre el Lago Palü (opcional)",
@@ -144,7 +144,7 @@
     },
     {
       "city": "Milán · centro histórico al final del recorrido (opcional)",
-      "description": "Si la llegada desde Tirano deja una tarde libre, contemplar el Duomo y la Galleria Vittorio Emanuele II. Probar risotto alla milanese u ossobuco, clásicos de la cocina milanesa."
+      "description": "Si el tren desde Tirano permite llegar con luz, acercarse al exterior del Duomo o la Galleria Vittorio Emanuele II. Probar risotto alla milanese u ossobuco solo si hay tiempo."
     }
   ],
   "days": [
@@ -541,40 +541,52 @@
       "Prioridad muy alta",
       [
         {
-          "title": "Glacier Express · 16 junio",
-          "description": "SIN RESERVAR. Candidato PE 902 Zermatt 08:50 → St. Moritz 16:36. Reserva de asiento obligatoria, diferenciada del billete o pase; confirmar apertura de venta, disponibilidad y condiciones antes de elegir clase.",
+          "title": "Glacier Express · miércoles 16 junio de 2027",
+          "description": "SIN COMPRAR. Preferido PE 902 Zermatt 08:50 → St. Moritz 16:36; alternativa PE 904 09:50 → 17:36, según plazas. En 1.ª y 2.ª clase la venta de reservas de asiento abre 93 días antes; exige billete válido adicional o pase que cubra el recorrido. Las reservas de asiento online normalmente no permiten cambios ni cancelación. Consultar clase, asiento y coste definitivo antes de pagar; si no hay plazas, comparar otra salida o trenes regulares, sacrificando el coche panorámico reservado.",
           "links": [
             {
-              "label": "Horario oficial 2027",
+              "label": "Reservar asiento · Glacier Express",
+              "url": "https://www.glacierexpress.ch/en/book-now"
+            },
+            {
+              "label": "Horarios oficiales de 2027",
               "url": "https://www.glacierexpress.ch/en/timetable"
             },
             {
-              "label": "Reservas Glacier Express",
-              "url": "https://glacierexpress.ch/en/"
+              "label": "Condiciones y pases aceptados",
+              "url": "https://www.glacierexpress.ch/en/faq"
             }
           ]
         },
         {
-          "title": "Vuelos multidestino · 12 y 22 junio",
-          "description": "COTIZADOS, SIN COMPRAR. Google Flights muestra $17,450 MXN (1 adulto, reserva vía SWISS), MEX–FRA–ZRH y MXP–FRA–MEX. Verificar condiciones finales; escala de regreso en FRA de 1 h 10 min.",
+          "title": "Vuelo multidestino · 12 y 22 junio de 2027",
+          "description": "COTIZADO, NO COMPRADO. $17,450 MXN para una persona, según Google Flights del 17 noviembre 2026, al reservar con SWISS. Ida MEX–FRA–ZRH, llegada domingo 13 a las 17:25; vuelta MXP–FRA–MEX, martes 22. Confirmar tarifa, cabina y equipaje, que ambos tramos de conexión formen parte de un solo boleto, protección en tránsito y condiciones de cambio. La escala de regreso FRA de 1 h 10 min es estrecha: valorar alternativa más holgada antes de pagar.",
           "links": [
             {
-              "label": "SWISS",
+              "label": "SWISS · vuelos",
               "url": "https://www.swiss.com/"
             },
             {
-              "label": "Lufthansa",
+              "label": "Lufthansa · vuelos",
               "url": "https://www.lufthansa.com/"
             }
           ]
         },
         {
-          "title": "Alojamientos · 13–22 junio, 9 noches",
-          "description": "SIN RESERVAR. Zúrich 1, Zermatt 2, Pontresina 5, Milán 1; habitaciones privadas con baño, preferentemente junto a estaciones. Comparar cancelación, desayuno, tasa turística y beneficio de remontes del hotel de Engadina.",
+          "title": "Cuatro alojamientos · 13–22 junio, 9 noches",
+          "description": "SIN RESERVAR. Zúrich (13–14, una noche), Zermatt (14–16, dos), Pontresina (16–21, cinco) y Milán (21–22, una). Priorizar habitación individual privada y baño propio, cercanía a estaciones y cancelación flexible. Las cinco noches de Pontresina deben permitir las excursiones; comprobar hotel participante y beneficios antes de comparar pases. Hoteles son candidatos, no elegidos.",
           "links": [
             {
-              "label": "SBB · red y conexiones",
-              "url": "https://www.sbb.ch/en"
+              "label": "Hotel Bernina Pontresina · candidato",
+              "url": "https://www.hotelbernina.ch/en/"
+            },
+            {
+              "label": "Hotel Sarazena Zermatt · candidato",
+              "url": "https://www.hotel-sarazena.ch/home-en"
+            },
+            {
+              "label": "Engadina · alojamientos participantes",
+              "url": "https://www.engadin.ch/en/guide/mountains-railways/mountain-railway-tariffs/summer-tariffs-mountain-railways/mountain-railways-included"
             }
           ]
         }
@@ -584,11 +596,11 @@
       "Prioridad alta",
       [
         {
-          "title": "Bernina regional y conexión con Trenord · 21 junio",
-          "description": "Comprar billetes válidos Pontresina→Tirano y Tirano→Milano Centrale cuando exista horario definitivo; asiento regional RhB opcional, separado del billete. Confirmar margen de transbordo y gestión de equipaje.",
+          "title": "Trenes Bernina regional y Trenord · lunes 21 junio",
+          "description": "SIN COMPRAR. Pontresina→Tirano por tren regional RhB; Tirano→Milano Centrale por Trenord en billetes compatibles con cada operador. Validar horarios específicos y conexión mínima orientativa de 20–30 min en Tirano, sin asumir enlace protegido. La reserva de asiento en regional Bernina es opcional y cuesta CHF 5 según tarifa publicada, además del transporte; no confundir con Bernina Express panorámico. Alternativa: otro regional de salida más temprana y más margen en Tirano.",
           "links": [
             {
-              "label": "RhB regional · reserva",
+              "label": "RhB · reserva regional Bernina",
               "url": "https://www.rhb.ch/en/tickets/bernina-line-reservations/"
             },
             {
@@ -598,37 +610,65 @@
           ]
         },
         {
-          "title": "Hotel con remontes incluidos · Pontresina",
-          "description": "Antes de comprar pases o entradas de Diavolezza/Muottas Muragl, comprobar si el hotel elegido ofrece Mountain Railways Included a partir de dos noches, incluyendo sus condiciones y operadores.",
+          "title": "Beneficio de remontes del alojamiento · Pontresina",
+          "description": "Antes de adquirir teleféricos o pases, confirmar que el alojamiento concreto participa en Mountain Railways Included y que cinco noches del 16 al 21 de junio de 2027 dan acceso a los remontes deseados. La oferta oficial aplica a hoteles participantes con más de una noche, pero cobertura, calendario, activación y transporte público regional no deben presumirse idénticos. No cubre por sí misma el Glacier Express ni el traslado a Italia.",
           "links": [
             {
-              "label": "Engadina · remontes incluidos",
+              "label": "Engadina · Mountain Railways Included",
               "url": "https://www.engadin.ch/en/guide/mountains-railways/mountain-railway-tariffs/summer-tariffs-mountain-railways/mountain-railways-included"
+            }
+          ]
+        },
+        {
+          "title": "Landwasser Viaduct Shuttle · domingo 20 junio",
+          "description": "SIN RESERVAR. El servicio oficial anuncia circulación de miércoles a domingo entre 6 mayo y 27 junio de 2027, por lo que el domingo 20 encaja. Verificar horarios efectivos y espacio para llegar desde Filisur a Schmitten GR Landwasser Viaduct y mirador Hennings. Algunos billetes y pases aceptados cubren la lanzadera; no sumar dos veces. Alternativa: contemplar el viaducto desde el tren o excursión a Filisur sin lanzadera, sacrificando la foto exterior.",
+          "links": [
+            {
+              "label": "Landwasserwelt · horarios y condiciones",
+              "url": "https://shop.landwasserwelt.ch/en/pages/viaduct-shuttle"
             }
           ]
         }
       ]
     ],
     [
-      "Flexible según clima",
+      "Planificación flexible",
       [
         {
-          "title": "Diavolezza, Muottas Muragl y Corvatsch",
-          "description": "No comprar por adelantado excursiones meteorosensibles sin consultar previsión y política de cancelación. Diavolezza es prioritaria; Corvatsch permanece opcional a partir del 19 junio.",
+          "title": "Diavolezza · 17 junio y Alp Grüm opcional",
+          "description": "SIN COMPRAR. Diavolezza opera en la temporada prevista de junio; subir únicamente con tiempo adecuado y servicio habilitado. Alp Grüm sería prolongación ferroviaria opcional si queda margen; hacerla sin maleta porque no hay casilleros. Si hay niebla, priorizar pueblos y cambiar el día de montaña. Comprobar primero cobertura del alojamiento participante y normas de billetes.",
           "links": [
             {
-              "label": "Diavolezza / Corvatsch",
-              "url": "https://www.corvatsch-diavolezza.ch/en/"
+              "label": "Diavolezza · operación oficial",
+              "url": "https://www.corvatsch-diavolezza.ch/en/news-1/operating-hours"
+            },
+            {
+              "label": "RhB · estación Alp Grüm",
+              "url": "https://www.rhb.ch/en/information/stations/alp-gruem/"
             }
           ]
         },
         {
-          "title": "Viaducto Landwasser y Alp Grüm",
-          "description": "Ajustar a trenes regionales y acceso real a miradores. Alp Grüm se visita como excursión sin equipaje, no como parada con maleta durante el traslado a Milán.",
+          "title": "Muottas Muragl y pueblos · viernes 18 junio",
+          "description": "SIN COMPRAR. La terraza anuncia temporada veraniega desde el 5 junio de 2027, pero horario específico del funicular, condiciones de acceso y cobertura del beneficio hotelero se verificarán. Si hay nubes, recorrer Samedan, Bever o Zuoz en tren regional, sin reservar un remonte de poca visibilidad.",
           "links": [
             {
-              "label": "Ferrocarril Rético RhB",
-              "url": "https://www.rhb.ch/en/"
+              "label": "Muottas Muragl · terraza",
+              "url": "https://www.muottasmuragl.ch/en/restaurant/panoramic-terrace"
+            },
+            {
+              "label": "Engadina · remontes incluidos",
+              "url": "https://www.engadin.ch/en/guide/mountains-railways/mountain-railway-tariffs/summer-tariffs-mountain-railways/mountain-railways-included"
+            }
+          ]
+        },
+        {
+          "title": "Corvatsch opcional y lagos Sils/Silvaplana · 19–20 junio",
+          "description": "SIN COMPRAR. Corvatsch anuncia apertura desde el sábado 19 de junio de 2027; depende de visibilidad y de las dos jornadas finales de Engadina. Intercambiar su visita con Landwasser el 20 si encajan los servicios. Los lagos y paseos de valle son alternativa si el teleférico está cerrado; Furtschellas abre después de nuestra salida y no se programa.",
+          "links": [
+            {
+              "label": "Corvatsch · horarios 2027",
+              "url": "https://www.corvatsch-diavolezza.ch/en/news-1/operating-hours"
             }
           ]
         }
@@ -650,7 +690,7 @@
   },
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "El vuelo de junio está cotizado pero no comprado. Glacier Express requiere reserva obligatoria; para los regionales Bernina la reserva es opcional. Priorizar hotel de Engadina con beneficios de remontes antes de comprar pases o billetes duplicados. Las entradas de montaña se decidirán según apertura, visibilidad y condiciones de cancelación."
+    "reservationNote": "Ningún vuelo, tren panorámico, alojamiento o excursión está comprado. Priorizar el asiento obligatorio del Glacier Express en cuanto abra su ventana, coordinándolo con la tarifa de vuelo y alojamientos cancelables. Antes de adquirir pases o remontes, revisar inclusiones del hotel de Pontresina y no duplicar billetes. Las excursiones de montaña y Landwasser dependen de servicio, visibilidad y condiciones de compra."
   },
   "introHighlights": [
     "Zúrich",
