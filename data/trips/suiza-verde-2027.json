@@ -234,7 +234,9 @@
       "note": "• *Visibilidad:* Revisar cámaras y estado de viento la víspera; la vista no está garantizada.\n• *Cobertura:* Rotair, Cliff Walk y cueva son partes de la visita; Ice Flyer es adicional opcional.\n• *Plan B:* Recorrer Lucerna y el lago si Titlis cierra; no comprar automáticamente dos alternativas.",
       "spend": null,
       "places": [
-        "swissgreen-titlis"
+        "swissgreen-titlis",
+        "swissgreen-titlis-rotair",
+        "swissgreen-titlis-icecave"
       ],
       "transportRefs": [
         "luzern-titlis"
@@ -266,6 +268,7 @@
       "spend": null,
       "places": [
         "lake-lucerne",
+        "swissgreen-luzern-interlaken-express",
         "swissgreen-eiger"
       ],
       "transportRefs": [
@@ -299,7 +302,9 @@
       "spend": null,
       "places": [
         "lauterbrunnen",
-        "murren"
+        "swissgreen-trummelbach",
+        "murren",
+        "swissgreen-gimmelwald"
       ],
       "transportRefs": [
         "lauterbrunnen-muerren"
@@ -321,7 +326,9 @@
           "url": "https://www.truemmelbachfaelle.ch/"
         }
       ],
-      "optionalPlaces": []
+      "optionalPlaces": [
+        "swissgreen-gimmelwald"
+      ]
     },
     {
       "n": 8,
@@ -532,6 +539,8 @@
       "note": "• *Decisión meteorológica:* Sunnegga es opcional y solo se realiza si Gornergrat ya quedó cubierto; si se recupera Gornergrat el 25, se utiliza ese billete en lugar del funicular de Sunnegga.\n• *Senderos:* Elegir rutas cortas habilitadas; evitar nieve residual, tormentas o caminatas solitarias en altura.",
       "spend": null,
       "places": [
+        "swissgreen-sunnegga",
+        "swissgreen-leisee",
         "zermatt"
       ],
       "transportRefs": [
@@ -549,7 +558,10 @@
           "url": "https://zermatt.swiss/en"
         }
       ],
-      "optionalPlaces": []
+      "optionalPlaces": [
+        "swissgreen-sunnegga",
+        "swissgreen-leisee"
+      ]
     },
     {
       "n": 15,
@@ -2943,7 +2955,14 @@
     "gornergrat": "El ferrocarril de cremallera asciende a Gornergrat, mirador sobre glaciares y numerosas cumbres de cuatro mil metros alrededor de Zermatt.",
     "swissgreen-riffelsee": "En días serenos, el lago Riffelsee refleja el Matterhorn como un espejo, un espectáculo condicionado por el viento y la nieve estacional.",
     "swissgreen-cover": "Desde las laderas sobre Grindelwald, los chalets se agrupan entre praderas verdes y grandes paredes alpinas, con el Eiger como protagonista del paisaje.",
-    "swissgreen-oeschinensee-cover": "El lago Oeschinensee destaca por sus aguas turquesas rodeadas de bosques y paredes alpinas, un paisaje estival espectacular del Oberland bernés."
+    "swissgreen-oeschinensee-cover": "El lago Oeschinensee destaca por sus aguas turquesas rodeadas de bosques y paredes alpinas, un paisaje estival espectacular del Oberland bernés.",
+    "swissgreen-trummelbach": "Las aguas glaciares esculpen túneles y cavidades dentro de la montaña; pasarelas y escaleras permiten observar la fuerza de las cataratas Trümmelbach.",
+    "swissgreen-gimmelwald": "Este pequeño pueblo alpino conserva chalets de madera, prados y un ambiente rural tranquilo, entre Mürren y las laderas del valle de Lauterbrunnen.",
+    "swissgreen-luzern-interlaken-express": "El Luzern–Interlaken Express serpentea entre lagos y montañas, un viaje ferroviario panorámico que enlaza dos regiones emblemáticas de la Suiza central.",
+    "swissgreen-titlis-rotair": "La estación superior del Rotair se alza en un paisaje de roca y nieve, destino del teleférico giratorio que asciende desde Engelberg.",
+    "swissgreen-titlis-icecave": "En el interior de la cueva glaciar del Titlis aparecen paredes de hielo y pasillos azulados, accesibles durante la operación turística.",
+    "swissgreen-sunnegga": "La terraza alpina de Sunnegga domina un paisaje de cumbres alrededor de Zermatt, con rutas suaves y vistas del Matterhorn en días despejados.",
+    "swissgreen-leisee": "El pequeño lago Leisee, cerca de Sunnegga, está rodeado por praderas alpinas y senderos, y ofrece un lugar apacible frente al Matterhorn."
   },
   "optionalSection": null,
   "family": null,
