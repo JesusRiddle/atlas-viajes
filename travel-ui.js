@@ -8,6 +8,14 @@ const points=(window.ATLAS_MAP_POINTS?.[t.id] || t.mapPoints || []).filter(p => 
 const positioned=points.filter(p => Array.isArray(p.coords) && p.coords.length === 2 && p.coords.every(Number.isFinite));
 const nightsByBase = new Map((t.bases || []).map(([name, nights]) => [String(name).toLocaleLowerCase('es'), Number(nights)]));
 const stayNights = point => nightsByBase.get(String(point.stayName || point.name).toLocaleLowerCase('es'));
+// Solo el nombre principal lleva negritas; aclaraciones entre paréntesis son secundarias.
+const mapTitle = name => {
+  const match = String(name).match(/^([^()]*?)(\s*\([^)]*\).*)?$/);
+  const main = (match?.[1] || name).trim();
+  const qualifier = match?.[2] || '';
+  return '<strong class="map-city-primary">' + esc(main) + '</strong>' +
+    (qualifier ? '<span class="map-city-qualifier">' + esc(qualifier) + '</span>' : '');
+};
 const stayLabel = point => {
   if (!point.base) return point.kind === 'Parque temático' ? 'Parque temático' : 'Excursión';
   const nights = stayNights(point);
@@ -25,7 +33,7 @@ return `<section class="trip-map-section" id="mapa" aria-labelledby="map-title">
 
 </div>
 ${positioned.length ? `<div class="trip-map-cities">
-<ul class="map-city-list">${positioned.map(p=>`<li><button type="button" class="map-city-select" data-map-order="${p.order}" aria-label="Mostrar ${esc(p.name)} en el mapa"><span class="map-city-name">${p.order}. ${esc(p.name)}</span><small class="map-city-stay">${Number(stayNights(p)) > 0 ? '<svg class="map-city-bed" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7m18 11V7M3 15h18M5 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M5 12h14"/></svg>' : ""}${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></button></li>`).join('')}</ul></div>` : ''}
+<ul class="map-city-list">${positioned.map(p=>`<li><button type="button" class="map-city-select" data-map-order="${p.order}" aria-label="Mostrar ${esc(p.name)} en el mapa"><span class="map-city-name">${p.order}. ${mapTitle(p.name)}</span><small class="map-city-stay">${Number(stayNights(p)) > 0 ? '<svg class="map-city-bed" viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18V7m18 11V7M3 15h18M5 15v-4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M5 12h14"/></svg>' : ""}${esc(stayLabel(p))}${p.optional ? " · opcional" : ""}</small></button></li>`).join('')}</ul></div>` : ''}
 </div>
 ${positioned.length ? `<div id="trip-map" class="trip-map" aria-label="Mapa de ${esc(t.name)}"></div>` : `<div class="trip-map trip-map-pending"><p class="draft-pending">Por definir</p></div>`}
 <div class="trip-map-footer"><p class="map-status" role="status">${positioned.length ? "El mapa se carga al llegar a esta sección." : "Coordenadas por definir."}</p>
