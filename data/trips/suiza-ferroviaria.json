@@ -2,16 +2,44 @@
   "id": "suiza-ferroviaria",
   "name": "Suiza Ferroviaria — Glacier & Bernina Express",
   "flag": "🇨🇭",
-  "start": null,
-  "end": null,
+  "start": "2027-06-12",
+  "end": "2027-06-22",
   "tag": "GRANDES TRENES PANORÁMICOS · GRISONES Y ENGADINA",
   "travelerCount": 1,
-  "routeCities": [],
-  "bases": [],
+  "routeCities": [
+    "Zúrich",
+    "Zermatt",
+    "Andermatt",
+    "Chur",
+    "St. Moritz",
+    "Pontresina",
+    "Filisur",
+    "Alp Grüm",
+    "Tirano",
+    "Milán"
+  ],
+  "bases": [
+    [
+      "Zúrich",
+      1
+    ],
+    [
+      "Zermatt",
+      2
+    ],
+    [
+      "Pontresina",
+      5
+    ],
+    [
+      "Milán",
+      1
+    ]
+  ],
   "intro": null,
   "introShort": null,
   "seasonality": {
-    "summary": "Se comparan doce meses con referencia climatológica de Samedan (Alta Engadina, 1709 m; normales históricas 1991–2020), no pronósticos de 2027/2028: septiembre temprano favorece remontes operativos y menor lluvia histórica; segunda mitad de junio ofrece más luz, praderas verdes y nieve residual, pero ciertos remontes abren tarde. Las fechas de 2027/2028, los cierres y los precios se revalidarán al definir el viaje. Fuentes: SwissActivities/Samedan, Engadin Tourismus, Glacier Express y RhB.",
+    "summary": "Junio de 2027 es la primera opción, con recorrido del 12 al 22 de junio y estancia en Engadina del 16 al 21. La segunda quincena aporta praderas verdes, nieve residual en cumbres y luz prolongada. Diavolezza opera en esta ventana y Corvatsch comienza temporada de verano el 19 de junio de 2027; Furtschellas comienza el 26 de junio y queda fuera. Septiembre queda como alternativa estacional. Las temperaturas son promedios históricos de Samedan, no pronósticos.",
     "months": {
       "10": {
         "status": "conditional",
@@ -64,7 +92,173 @@
     }
   },
   "experiences": [],
-  "days": [],
+  "days": [
+    {
+      "n": 1,
+      "date": "2027-06-12",
+      "title": "Salida de México rumbo a Zúrich",
+      "base": "En vuelo",
+      "am": "Preparación y salida de MEX según cotización Lufthansa LH499 a las 19:50.",
+      "pm": "Noche a bordo; escala en Frankfurt al día siguiente.",
+      "night": "",
+      "mobility": "Vuelo internacional nocturno.",
+      "note": "Tarifa aérea cotizada, todavía no comprada.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 2,
+      "date": "2027-06-13",
+      "title": "Llegada a Zúrich y descanso",
+      "base": "Zúrich",
+      "am": "Vuelo de conexión vía Frankfurt.",
+      "pm": "Llegada cotizada ZRH 17:25; tren al centro y alojamiento cerca de Zürich HB.",
+      "night": "Cena y paseo corto si queda energía.",
+      "mobility": "ZRH → Zürich HB en tren; alojamiento a pie sujeto a elección.",
+      "note": "No añadir visitas reservadas durante la tarde de llegada.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 3,
+      "date": "2027-06-14",
+      "title": "Tren a Zermatt y paseo alpino",
+      "base": "Zermatt",
+      "am": "Salida en tren desde Zürich HB hacia Zermatt, con transbordos por confirmar en SBB.",
+      "pm": "Check-in y paseo por Zermatt; observar el paisaje del valle sin comprar excursiones repetidas.",
+      "night": "Cena y descanso.",
+      "mobility": "Traslado completo Zürich HB → Zermatt Bahnhof; tiempo y billete pendientes.",
+      "note": "Evitar añadir Gornergrat por repetición de los viajes anteriores.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 4,
+      "date": "2027-06-15",
+      "title": "Zermatt sin prisas",
+      "base": "Zermatt",
+      "am": "Paseo por el centro histórico y calles de chalets.",
+      "pm": "Tiempo libre, visita suave o contingencia climática; preparar el trayecto panorámico del día siguiente.",
+      "night": "Preparar equipaje de mano y reserva Glacier Express.",
+      "mobility": "Desplazamientos locales a pie.",
+      "note": "Si la tarifa de hotel es alta, reevaluar la segunda noche antes de reservar.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 5,
+      "date": "2027-06-16",
+      "title": "Glacier Express completo hasta Engadina",
+      "base": "Pontresina",
+      "am": "Salida desde Zermatt en Glacier Express panorámico hacia St. Moritz, horario por confirmar al reservar.",
+      "pm": "Travesía por Andermatt, garganta del Rin, Chur y línea Albula, incluido el viaducto Landwasser; llegada a St. Moritz.",
+      "night": "Conexión regional a Pontresina y check-in; cena sencilla.",
+      "mobility": "Zermatt → St. Moritz por Glacier Express; St. Moritz → Pontresina regional.",
+      "note": "Reserva de asiento obligatoria en Glacier Express; no duplicar billete cubierto por pase.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 6,
+      "date": "2027-06-17",
+      "title": "Diavolezza y glaciares del Bernina",
+      "base": "Pontresina",
+      "am": "Tren regional al acceso de Diavolezza y ascenso en teleférico si opera y hay visibilidad.",
+      "pm": "Miradores panorámicos sin senderos de alto esfuerzo; regreso a Pontresina.",
+      "night": "Paseo por el pueblo y descanso.",
+      "mobility": "Tren Pontresina → Bernina Diavolezza; remontes sujetos a disponibilidad.",
+      "note": "Comprobar inclusión del teleférico en el hotel; ajustar día al clima.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 7,
+      "date": "2027-06-18",
+      "title": "Engadina: pueblos tradicionales y Muottas Muragl",
+      "base": "Pontresina",
+      "am": "Paseo por Samedan, Bever o Zuoz según conexiones.",
+      "pm": "Muottas Muragl condicionado a operación 2027 y visibilidad, o paseo de lagos como plan B.",
+      "night": "Regreso a Pontresina.",
+      "mobility": "Trenes y autobuses locales; cobertura hotelera por comprobar.",
+      "note": "No acumular dos excursiones caras si la visibilidad es mala.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 8,
+      "date": "2027-06-19",
+      "title": "Lagos Silvaplana y Sils; Corvatsch opcional",
+      "base": "Pontresina",
+      "am": "Recorrido de lagos y aldeas de Alta Engadina con transporte público.",
+      "pm": "Corvatsch opcional desde su apertura anunciada para el 19 de junio de 2027; alternativa de paseo a baja altitud.",
+      "night": "Regreso a Pontresina.",
+      "mobility": "Transporte regional por confirmar.",
+      "note": "Furtschellas aún no abre, según calendario publicado; no programarlo.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 9,
+      "date": "2027-06-20",
+      "title": "Línea Albula y viaducto Landwasser",
+      "base": "Pontresina",
+      "am": "Excursión ferroviaria hacia Filisur, Bergün y zona de Landwasser.",
+      "pm": "Mirador exterior del viaducto solo con acceso y lanzadera operativos, o recorrido histórico del tren como alternativa.",
+      "night": "Última noche en Engadina.",
+      "mobility": "Regional Pontresina → Filisur (ida y vuelta); elegir horarios diurnos.",
+      "note": "La ruta Glacier ya atravesó el viaducto; la excursión se justifica solo por vistas exteriores.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 10,
+      "date": "2027-06-21",
+      "title": "Paso Bernina, Alp Grüm y Tirano; llegada a Milán",
+      "base": "Milán",
+      "am": "Check-out temprano; tren regional desde Pontresina, parada en Alp Grüm cuando sea viable con equipaje.",
+      "pm": "Continuar a Tirano y enlazar con Trenord hacia Milano Centrale.",
+      "night": "Check-in en Milán, preparar traslado a MXP.",
+      "mobility": "Pontresina → Alp Grüm → Tirano (RhB regional); Tirano → Milano Centrale (Trenord).",
+      "note": "Día exigente con equipaje: confirmar horarios 2027, consignas y conexión segura; no reservar vuelo este día.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    },
+    {
+      "n": 11,
+      "date": "2027-06-22",
+      "title": "Regreso de Milán a Ciudad de México",
+      "base": "En vuelo",
+      "am": "Salida hacia Malpensa con margen; vuelo cotizado LH249 a las 11:00.",
+      "pm": "Conexión en Frankfurt 1 h 10 min; LH498 y llegada cotizada a MEX a las 17:30.",
+      "night": "Fin del viaje.",
+      "mobility": "Milano Centrale/alojamiento → MXP; vuelos MXP → FRA → MEX.",
+      "note": "Validar conexiones en un solo boleto y tarifa de equipaje antes de compra.",
+      "spend": null,
+      "places": [],
+      "headerPlaces": [],
+      "optionalPlaces": []
+    }
+  ],
   "mapPoints": [],
   "hotels": [],
   "expenses": [],
@@ -72,5 +266,15 @@
   "reservations": [],
   "exchangeRates": {},
   "cover": null,
-  "flight": "REFERENCIA SELECCIONADA PARA COMPARAR JUNIO 2027, NO COMPRA NI FECHAS DEFINITIVAS DEL VIAJE · Google Flights, consulta 17 nov 2026, multidestino para 1 adulto, Turista: MEX→ZRH sábado 12 junio 2027, Lufthansa LH499 Boeing 747, salida 19:50 y llegada Frankfurt (FRA) domingo 13 junio 14:50; escala 1 h 40 min; FRA→ZRH Lufthansa LH1194 Airbus A320neo, 16:30–17:25. Regreso martes 22 junio 2027: MXP→FRA Lufthansa LH249 Airbus A321, 11:00–12:20; escala FRA 1 h 10 min; FRA→MEX Lufthansa LH498 Boeing 747, 13:30–17:30. Total mostrado MXN 17,450 al reservar con SWISS, frente a MXN 17,878 al reservar con Lufthansa. Google Flights indica 1 pieza de equipaje de mano gratis; equipaje documentado con cargo. Verificar precio final, condiciones de tarifa y conexión protegida antes de comprar. La conexión de regreso de 1 h 10 min en FRA es ajustada. Junio 12–22 es solo escenario cotizado; septiembre y 2028 permanecen abiertos.\n\nCOTIZACIÓN ALTERNATIVA SEPTIEMBRE 2027 · Google Flights, captura facilitada por el viajero el 17 nov 2026. Multidestino 1 adulto, turista: MEX→ZRH sábado 4 septiembre: LH499, MEX 19:50→FRA 14:50 (+1); LH1194, FRA 16:30→ZRH 17:25 (+1); escala FRA 1 h 40 min. MXP→MEX martes 14 septiembre: LH249, MXP 11:00→FRA 12:20; LH498, FRA 13:30→MEX 17:30; escala FRA 1 h 10 min. Precio total mostrado por SWISS $21,419 MXN; por Lufthansa $21,848 MXN. Una pieza de equipaje de mano incluida según Google Flights, equipaje documentado con cargo adicional; condiciones finales por verificar. Comparación equivalente junio 12–22: $17,450 MXN (SWISS), diferencia $3,969 MXN. Ambos escenarios son cotizaciones, no vuelos comprados ni fechas elegidas."
+  "flight": "PRIMERA OPCIÓN DE PLANIFICACIÓN: JUNIO 2027, COTIZACIÓN NO COMPRADA · Google Flights, consulta 17 nov 2026, multidestino para 1 adulto, Turista: MEX→ZRH sábado 12 junio 2027, Lufthansa LH499 Boeing 747, salida 19:50 y llegada Frankfurt (FRA) domingo 13 junio 14:50; escala 1 h 40 min; FRA→ZRH Lufthansa LH1194 Airbus A320neo, 16:30–17:25. Regreso martes 22 junio 2027: MXP→FRA Lufthansa LH249 Airbus A321, 11:00–12:20; escala FRA 1 h 10 min; FRA→MEX Lufthansa LH498 Boeing 747, 13:30–17:30. Total mostrado MXN 17,450 al reservar con SWISS, frente a MXN 17,878 al reservar con Lufthansa. Google Flights indica 1 pieza de equipaje de mano gratis; equipaje documentado con cargo. Verificar precio final, condiciones de tarifa y conexión protegida antes de comprar. La conexión de regreso de 1 h 10 min en FRA es ajustada. Fechas 12–22 junio de 2027 elegidas como primera opción para diseñar el itinerario; no son billetes comprados ni fechas inamovibles.\n\nCOTIZACIÓN ALTERNATIVA SEPTIEMBRE 2027 · Google Flights, captura facilitada por el viajero el 17 nov 2026. Multidestino 1 adulto, turista: MEX→ZRH sábado 4 septiembre: LH499, MEX 19:50→FRA 14:50 (+1); LH1194, FRA 16:30→ZRH 17:25 (+1); escala FRA 1 h 40 min. MXP→MEX martes 14 septiembre: LH249, MXP 11:00→FRA 12:20; LH498, FRA 13:30→MEX 17:30; escala FRA 1 h 10 min. Precio total mostrado por SWISS $21,419 MXN; por Lufthansa $21,848 MXN. Una pieza de equipaje de mano incluida según Google Flights, equipaje documentado con cargo adicional; condiciones finales por verificar. Comparación equivalente junio 12–22: $17,450 MXN (SWISS), diferencia $3,969 MXN. Septiembre es escenario alternativo; ambos son cotizaciones, no vuelos comprados.",
+  "work": 7,
+  "profile": {
+    "pace": "Moderado",
+    "paceWhy": "Cuatro alojamientos en nueve noches, un día largo de Glacier Express y uno de Bernina regional hacia Milán; excursiones de Engadina intercambiables según clima.",
+    "solo": "Adecuado",
+    "soloWhy": "Un viajero con equipaje de mano, trenes interurbanos y hoteles candidatos con baño privado cerca de estaciones; hay que validar la logística de equipaje el día de Bernina.",
+    "weather": "Variable",
+    "weatherWhy": "En junio, laderas verdes y nieve residual en cumbres; lluvia, viento o nubosidad pueden cerrar o limitar miradores.",
+    "why": "Travesía ferroviaria de los Alpes, línea Albula UNESCO, paso Bernina, lagos y pueblos de Alta Engadina, sin repetir las excursiones emblemáticas de los otros itinerarios suizos."
+  }
 }
