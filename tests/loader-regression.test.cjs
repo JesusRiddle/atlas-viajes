@@ -905,6 +905,11 @@ test('Suiza Verde: fotografías estivales, portada, galerías y créditos comple
     assert.ok(trip.days[6].optionalPlaces.includes('swissgreen-gimmelwald'));
     assert.ok(trip.days[13].optionalPlaces.includes('swissgreen-sunnegga'));
     assert.ok(trip.days[13].optionalPlaces.includes('swissgreen-leisee'));
+    assert.equal(trip.mapPoints.length, 24, 'Mapa: 5 estancias y 19 atractivos/pueblos');
+    for (const name of ['Gimmelwald', 'Wengen', 'Bachalpsee', 'Riffelsee', 'Sunnegga']) {
+        assert.equal(trip.mapPoints.find(point => point.name === name)?.optional, true,
+            name + ': debe aparecer como opcional en el mapa');
+    }
     assert.ok(trip.days.every(d => (d.optionalPlaces || []).every(k => d.places.includes(k))),
         'Cada visita opcional debe mostrar su fotografía etiquetada como opción');
     const tourPhotoIds = ['swissgreen-trummelbach', 'swissgreen-gimmelwald',
