@@ -649,7 +649,7 @@
         },
         {
           "title": "Alojamientos · 13–27 junio (14 noches)",
-          "description": "SIN RESERVAR. Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra/aeropuerto 1. Cotizar habitación privada, baño propio, impuestos, cancelación y acceso ferroviario. Priorizar seis noches en Grindelwald y salida temprana de GVA el 27 junio a las 09:10. Ningún hotel seleccionado.",
+          "description": "SIN RESERVAR. Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra/aeropuerto 1. Cotizar habitación privada, baño propio, impuestos, cancelación y acceso ferroviario. Priorizar seis noches en Grindelwald y salida temprana de GVA el 27 junio a las 09:10. Ningún hotel reservado; los cinco son candidatos principales.",
           "links": [
             {
               "label": "SBB · conexiones",
@@ -1230,6 +1230,19 @@
       },
       "status": "estimated",
       "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-sunnegga",
+      "category": "activities",
+      "concept": "Sunnegga y Leisee · opcional",
+      "date": "2027-06-25",
+      "optional": true,
+      "cost": {
+        "amount": null,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "EXCLUIDO del total principal. Funicular Sunnegga y paseo a Leisee solo si no se utiliza el día para recuperar Gornergrat. Precio y descuentos pendientes de cotización."
     }
   ],
   "majorTransport": [
@@ -2307,7 +2320,7 @@
       ],
       "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
       "notes": "Funicular opcional si hay meteorología favorable; no duplicar con alternativa de recuperar Gornergrat el mismo día.",
-      "budgetIncludedIn": "activity-gornergrat"
+      "budgetIncludedIn": "activity-sunnegga"
     },
     {
       "id": "zermatt-geneva",
@@ -2933,7 +2946,7 @@
     118000,
     157000
   ],
-  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,006 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.08 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha.",
+  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,006 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.08 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha. Sunnegga/Leisee figura como actividad opcional con costo pendiente, excluida del total y separada del billete de Gornergrat.",
   "placeDescriptions": {
     "zurich": "A orillas del Limmat, las fachadas históricas y las torres del Grossmünster dibujan uno de los paseos urbanos más agradables de Zúrich.",
     "swiss27-lindt": "Una enorme fuente de chocolate recibe a los visitantes en el museo Lindt, dedicado a la historia, las técnicas y los sabores del cacao.",
