@@ -121,3 +121,12 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 ### Control de etapa
 - 02 verificada a nivel de investigación climática con 12 meses en JSON y fuentes citadas.
 - 03 solo propuesta; **Auditoría A pendiente**, al igual que vuelos, hoteles, tarifas, validación CI y visualización del navegador.
+
+
+## Hito 03 parcial · Vuelo multidestino de referencia elegido · 2026-11-17
+- **Selección del usuario:** conservar como mejor candidato de **junio de 2027**, sin compra, la tarifa total de **MXN 17,450 para 1 adulto** mostrada en Google Flights al reservar mediante SWISS (la opción de reserva directa Lufthansa se muestra a MXN 17,878). Los cuatro vuelos son operados por Lufthansa. Capturas compartidas en conversación, 17 noviembre 2026.
+- **Ida sábado 12 junio:** MEX 19:50 → FRA +1 día 14:50, LH499 Boeing 747 (11 h). FRA 16:30 → ZRH 17:25, LH1194 A320neo (55 min); escala 1 h 40 min. Aterrizaje domingo 13 junio. Primera noche en Zúrich es coherente con esta llegada.
+- **Regreso martes 22 junio:** MXP 11:00 → FRA 12:20, LH249 A321 (1 h 20 min); FRA 13:30 → MEX 17:30, LH498 Boeing 747 (12 h). Escala **1 h 10 min**, relativamente ajustada; comprobar conexión en boleto único y condiciones de protección, paso fronterizo Schengen y margen antes de confirmar compra.
+- **Equipaje:** Google Flights muestra 1 pieza de equipaje de mano gratis; equipaje documentado con costo adicional, condiciones específicas por proveedor/tarifa aún por verificar.
+- **No interpretar como reserva ni gasto incurrido.** El año, las fechas del viaje y la ruta siguen formalmente pendientes; junio 12–22 es un escenario comparativo seleccionado para conservar, no decisión que descarte septiembre 2027 o 2028. No fijar `start`/`end` ni `days` en JSON hasta aprobar escenario.
+- **Pendiente:** comparación con septiembre y confirmación de tarifa final directamente en SWISS (precio/cabina/conexión/equipaje). Verificar si la llegada de Tirano a Milán el 21 junio permite alojamiento y traslado a MXP sin presión.
