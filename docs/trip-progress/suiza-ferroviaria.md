@@ -7,8 +7,8 @@ Copiar esta plantilla a `docs/trip-progress/suiza-ferroviaria.md` al comenzar un
 **Rama / PR:** feature/suiza-ferroviaria · PR pendiente  
 **Modalidad:** [x] Planeación general  [ ] Itinerario detallado  
 **Última actualización:** 2026-11-17  
-**Etapa actual:** Auditoría A APROBADA (03) · pasar a 04 Mapa, 05 Experiencias y 06 Reservaciones; 07 y 08 por completar  
-**Siguiente acción autónoma:** Completar etapa 04 Mapa con estaciones y atractivos reales; después 05 Experiencias, 06 Reservaciones, 07 Movilidad y 08 Alojamiento, antes de Auditoría B.  
+**Etapa actual:** 04 Mapa · datos geográficos y correspondencias verificados; inspección visual pendiente para D. Auditoría A aprobada  
+**Siguiente acción autónoma:** Etapa 05 Experiencias: revisar pertinencia, duración, gastronomía, alternativas y fotografías específicas; después Reservaciones importantes (06).  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para continuar la investigación; junio 12–22 de 2027 es primera opción de planificación, compras y merge siempre requieren aprobación.
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -19,7 +19,7 @@ El **orden de producción** se organiza de lo más independiente a lo más depen
 - [x] **01 · Alcance y geografía.** Recuperar restricciones ya acordadas: países, ciudades candidatas, prioridades, tipo de viaje, `travelerCount`, duración aproximada, presupuesto objetivo y ventanas sugeridas. **No fijar todavía alojamientos ni horarios inventados.**
 - [x] **02 · Temporadas (sección visible 3).** Investigar cada uno de los doce meses para **todos los destinos/regiones candidatos**, clima/luz, fenómenos, cierres y ocupación. Recomendar ventanas y advertir variaciones regionales; esta fase **no depende de hoteles ni tarifas**. Si el usuario ya eligió fechas, evaluarlas sin cambiarlas arbitrariamente.
 - [x] **03 · Calendario, ruta y esqueleto diario.** Elegir/validar ventana con `work`, festivos, llegada/salida, orden de ciudades, `bases`, noches, traslados plausibles, excursiones prioritarias y `days[]` por fecha. Investigar conexiones cruciales y reservas que **podrían invalidar** la ruta antes de cerrarla; horarios y precios definitivos quedan para etapas posteriores. **Auditoría A: temporadas → fechas → ruta → noches y días compatibles.**
-- [ ] **04 · Mapa (sección visible 2).** Poblar `mapPoints`, coordenadas reales y orden tras conocer la ruta; verificar correspondencia con ciudades, alojamientos/excursiones y continuidad espacial.
+- [x] **04 · Mapa (sección visible 2).** Poblar `mapPoints`, coordenadas reales y orden tras conocer la ruta; verificar correspondencia con ciudades, alojamientos/excursiones y continuidad espacial.
 - [ ] **05 · Experiencias (sección visible 4).** Curar atractivos, excursiones opcionales y gastronomía de todas las ciudades del recorrido. Verificar pertinencia, tiempos aproximados, cierres conocidos y ausencia de repeticiones; no prometer una actividad todavía no reservada.
 - [ ] **06 · Reservaciones importantes (sección visible 5).** Priorizar experiencias que requieren fecha/cupo, entradas, operadores oficiales, criterios de cancelación y alternativas; anotar dependencias con actividades. Si una disponibilidad vuelve inviable la ruta, volver a 03 antes de seguir.
 - [ ] **07 · Movilidad y conexiones (sección visible 6).** Modelar vuelos, trenes, autobuses, aeropuertos y trasbordos; opciones reales y respaldos, ida y vuelta, condiciones, equipaje y tarifas históricas/propuestas/cotizadas claramente distinguidas. No inventar servicio futuro; vincular `transportRefs`.
@@ -226,3 +226,25 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 **AUDITORÍA A: APROBADA para pasar a etapa 04**. Verificación semántica del JSON realizada tras esta escritura: continuidad de once fechas, 9 noches y 4 alojamientos previstos, secuencia y clima. **No requiere precios/hoteles ni reserva real del Glacier para aprobar etapa 03**: esos son entregables de etapas 06–08. Riesgos residuales registrados para 07 (FRA 1h10, enlace RhB/Trenord y MXP), sin bloqueo estructural de ruta.
 
 **No afirmar auditoría B/C/D, suite Node ni test visual:** aún pendientes de sus etapas.
+
+
+## Etapa 04 · Mapa · 17 noviembre 2026
+- **Estado de datos: VERIFICADO**. `mapPoints` ampliado de 5 a **16 ubicaciones reales**, con `order` correlativo y coordenadas geográficas; cuatro puntos `base: true` coinciden exactamente con `bases` y su nombre visible: Zúrich (1 noche), Zermatt (2), Pontresina (5), Milán (1). No se utiliza `stayName` porque los nombres coinciden. No hay puntos base ficticios ni hoteles sin elegir marcados como confirmados.
+- **Orden editorial por aparición en la ruta/días:** Zúrich, Zermatt, St. Moritz (enlace Glacier), Pontresina, Diavolezza, Alp Grüm (opcional), Samedan, Zuoz (opcional), Muottas Muragl, lago Silvaplana, lago Sils, Corvatsch (opcional), Filisur, viaducto Landwasser, Tirano, Milán. Las excursiones locales se hacen desde Pontresina; el orden de pines expresa secuencia editorial de visitas, NO una sola ruta diaria continua ni carretera.
+- **Distinción importante:** Andermatt y Chur se atraviesan en Glacier Express, pero NO se presuponen visitas con bajada; se retiraron de `routeCities` para no sugerir excursiones. St. Moritz y Tirano son paradas/enlaces ferroviarios sin pernocta, `kind: Parada ferroviaria`. Lago Silvaplana y lago Sils son puntos representativos del propio lago, NO inicio de sendero o parada de autobús. Corvatsch pin = estación superior a 3303 m, NO cumbre a 3451 m. Landwasser pin = viaducto, NO mirador/andén de lanzadera (direcciones precisas se investigarán en 07/09).
+- **Georreferencias consultadas en línea 2026-11-17** (latitud, longitud; cuando la etiqueta corresponde a estación se usa centro de estación):
+  - Zúrich (47.3769, 8.5417), Zermatt (46.0207, 7.7491): datos existentes contrastados con el viaje Suiza Verde; Pontresina (46.4955, 9.90126), Tirano (46.21482, 10.16335) y Milán (45.4631, 9.19): centro de localidad, existentes y preservados de etapa inicial; verificar precisión fina si se vincula a una estación concreta en etapa 07.
+  - St. Moritz **(46.49802, 9.84594)** estación: https://mapcarta.com/33934084 .
+  - Diavolezza **(46.41224, 9.96505)** berghaus / estación superior: https://mapcarta.com/es/34784466 .
+  - Alp Grüm **(46.37451, 10.03122)** estación: https://mapcarta.com/N256458497 .
+  - Samedan **(46.5332, 9.8746)** localidad: https://mapcarta.com/Samedan .
+  - Zuoz **(46.60129, 9.9608)** localidad: https://mapcarta.com/17661474 .
+  - Muottas Muragl **(46.52167, 9.90250)** mirador superior: https://en.wikipedia.org/wiki/Muottas_Muragl .
+  - Lago Silvaplana **(46.45167, 9.79689)** centro de lago: https://mapcarta.com/17662852 .
+  - Lago Sils **(46.41927, 9.73286)** centro de lago: https://mapcarta.com/17662860 .
+  - Corvatsch **(46.41806, 9.82134)** estación superior del teleférico Murtèl–Corvatsch: https://www.bergbahnen.org/de/datenbank/seilbahn/2603/ y https://commons.wikimedia.org/wiki/Category:Corvatsch_station .
+  - Filisur **(46.67517, 9.68235)** estación: https://mapcarta.com/W212363134 .
+  - Viaducto Landwasser **(46.680912, 9.676132)** estructura: https://commons.wikimedia.org/wiki/File:Landwasser7b.jpg y https://en.wikipedia.org/wiki/Landwasser_Viaduct .
+- **Comprobaciones estructurales previas a commit:** las 16 entradas tienen `coords` numéricos dentro del área geográfica de la ruta, nombres únicos, órdenes consecutivos 1–16, etiquetas de pernocta consistentes con los cuatro `bases`, y opcionalidad declarada expresamente para Alp Grüm, Zuoz y Corvatsch. `routeCities` coincide con localidades pertinentes sin atribuir turismo en Andermatt/Chur.
+- **Condición de diseño compartido:** títulos de tarjetas principales **en negritas**, aclaraciones entre paréntesis y línea inferior normales, y punto con pernocta «N noche(s)» sin usar la palabra «Base». Esta norma es global de renderer, no un estilo en JSON. Queda pendiente inspección **Desktop/Mobile real** del componente y pines antes de auditoría D; no se modificó JS/CSS compartido ni se probó browser/CI.
+- **Puerta de etapa 04:** Datos de mapa verificados y listos para continuar 05; no confundir con auditoría B completada ni mapa visual aprobado al 100 %.
