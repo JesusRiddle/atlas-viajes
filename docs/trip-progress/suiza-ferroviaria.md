@@ -8,7 +8,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-ferroviaria.md` al comenzar un
 **Modalidad:** [x] Planeación general  [ ] Itinerario detallado  
 **Última actualización:** 2026-11-17  
 **Etapa actual:** 03 · Calendario principal junio 2027 y esqueleto diario registrados; Auditoría A en curso  
-**Siguiente acción autónoma:** Verificar reservas operativas de Glacier 16 junio, Bernina regional 21 junio, hoteles y traslados de equipaje; después ejecutar Auditoría A y cotizar servicios.  
+**Siguiente acción autónoma:** Validar horarios RhB/Trenord por fecha de junio 2027 y enlaces a Pontresina; después cerrar Auditoría A y preparar Mapa/Experiencias.  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para continuar la investigación; junio 12–22 de 2027 es primera opción de planificación, compras y merge siempre requieren aprobación.
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -170,3 +170,12 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Corvatsch comienza verano **19 junio 2027**, solo puede visitarse del 19 al 20 antes de salir de Engadina; Diavolezza otro día. Fuente operador: https://www.corvatsch-diavolezza.ch/en/news-1/operating-hours . Verificar Muottas Muragl con calendario final.
 - Fuentes trayectos: https://www.glacierexpress.ch/en/timetable ; https://www.rhb.ch/en/panoramic-journeys/bernina-express/ ; https://www.rhb.ch/en/ ; https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/ . No inventar horas de los trenes de 2027; horarios no insertados.
 - **Auditoría A todavía pendiente:** validar horario exacto Glacier 16 junio y enlaces a Pontresina, paso Alp Grüm 21 junio, manejo equipaje, y conexión Milán/MXP. Gastos, hoteles, reservas y fotos pendientes; no pasar B/C/D ni merge.
+
+
+## Auditoría A · revisión ferroviaria 17 noviembre 2026
+- **Glacier Express, 16 junio 2027:** horario de verano oficial ya publicado: **PE 902 Zermatt 08:50 → St. Moritz 16:36** (propuesto preferente) o **PE 904 09:50 → 17:36** (alternativa). Ambas opciones recorren el itinerario completo. Consultado el PDF oficial gráfico en 2026-11-17: https://www.glacierexpress.ch/GEX-Timetable.pdf?v=2026-11 y https://www.glacierexpress.ch/en/timetable . Reserva 1.ª/2.ª clase obligatoria, disponible hasta 93 días antes; sin disponibilidad de asientos confirmada.
+- **Alp Grüm: RhB confirma que la estación NO dispone de casilleros:** https://www.rhb.ch/en/information/stations/alp-gruem/ . Corrección autónoma: la parada turística pasa al 17 junio como extensión OPCIONAL después de Diavolezza, viajando sin maleta desde Pontresina. El día 21 pasa a ser traslado Bernina regional → Tirano → Milán sin paradas largas. Evitar dependencia logística de guardar equipaje durante tránsito a Italia.
+- **Regional Bernina:** RhB confirma reserva opcional CHF 5 por tramo en regional St. Moritz–Tirano, reserva de 1.ª/2.ª clase, no equivale al Bernina Express panorámico: https://www.rhb.ch/en/tickets/bernina-line-reservations/ . Horarios individualizados de 17/21 junio 2027 aún por verificar; no afirmar correspondencia exacta.
+- **Tirano→Milano Centrale:** Trenord publica tren directo aprox. 2h30 y servicios regulares, verificar horarios para lunes 21 junio en fecha objetivo: https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/ .
+- **Milano Centrale→MXP T1 el 22 junio:** Malpensa Express publica duración ~51 minutos, primer tren desde Milano Centrale 05:25 y precio de referencia €15 (publicado en noviembre 2026; NO tarifa cotizada para 2027). Fuente https://www.malpensaexpress.it/en/lines-and-timetable/most-searched-lines/milano-centrale-malpensa-aeroporto-t1-route/ . Vuelo MXP 11:00: salida temprana desde hotel próximo a Centrale es viable en principio, verificar terminal/salida concreta y margen de aeropuerto.
+- **Puerta Auditoría A:** coherencia de ruta y noches preliminar OK; no declarar auditoría formal completamente aprobada hasta validar el horario real de Bernina regional del 21, enlace Trenord y correspondencia a Pontresina el 16. No se han ejecutado tests en navegador o CI ni comprado transportes.
