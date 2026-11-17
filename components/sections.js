@@ -94,7 +94,7 @@ window.AtlasSections = function (ctx) {
               </div>`
             : '';
         return `<article class="hotel-card">
-            <h4>${esc(h.city || 'Por definir')} · <em>${h.mapsUrl ? `<a class="hotel-name-map" href="${esc(h.mapsUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${esc(h.name)} en Google Maps">${esc(h.name || 'Por definir')}</a>` : esc(h.name || 'Por definir')}</em></h4>
+            <h4><span class="hotel-heading-city">${esc(h.city || 'Por definir')}&nbsp;·&nbsp;</span><em>${h.mapsUrl ? `<a class="hotel-name-map" href="${esc(h.mapsUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Abrir ${esc(h.name)} en Google Maps">${esc(h.name || 'Por definir')}</a>` : esc(h.name || 'Por definir')}</em></h4>
             ${h.address ? `<p class="hotel-address hotel-icon-line">${hotelIcon('location')}<span>${esc(h.address)}</span></p>` : ''}
             ${dates}
             ${h.rate ? `<p class="hotel-rate hotel-icon-line">${hotelIcon('rate')}<span>${esc(h.rate)}</span></p>` : ''}
