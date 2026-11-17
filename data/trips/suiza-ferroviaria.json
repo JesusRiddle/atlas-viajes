@@ -961,6 +961,14 @@
                   "arrival": null,
                   "operator": "RhB",
                   "service": "Extensión opcional"
+                },
+                {
+                  "from": "Alp Grüm",
+                  "to": "Pontresina",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Regreso regional, solo cuando se realiza la extensión opcional"
                 }
               ]
             }
@@ -972,7 +980,7 @@
               "price": null
             }
           ],
-          "notes": "La segunda parte solo si alcanza el tiempo; regresar a Pontresina en regional, no comprar todo como trayecto sencillo. Separar teleférico Diavolezza y cobertura hotelera. No hay casilleros Alp Grüm."
+          "notes": "Ruta ilustrativa si se realiza la extensión completa. Si se omite Alp Grüm, regreso Bernina Diavolezza→Pontresina, sin compra del tramo opcional. Teleférico Diavolezza aparte, sujeto a tarjeta de hotel."
         }
       ],
       "links": [
@@ -1023,6 +1031,14 @@
                   "arrival": null,
                   "operator": "RhB",
                   "service": "Regional; otras excursiones según clima"
+                },
+                {
+                  "from": "Samedan",
+                  "to": "Pontresina",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Regreso desde Samedan; otras variantes de valle según excursión"
                 }
               ]
             }
@@ -1034,7 +1050,7 @@
               "price": null
             }
           ],
-          "notes": "Referencia modular para pueblos y lagos; es una alternativa de movilidad local, NO un billete de ida/vuelta cotizado. Verificar abono o tarjeta hotelera antes de adquirir billetes sueltos."
+          "notes": "Un ejemplo de regional ida y vuelta a Samedan, NO un billete seleccionado: otros pueblos (Zuoz/Bever) y lagos (Sils/Silvaplana) requieren servicios específicos aún no cotizados. Beneficio del alojamiento por comprobar."
         }
       ],
       "links": [
@@ -1090,6 +1106,22 @@
                   "arrival": null,
                   "operator": "Landwasserwelt",
                   "service": "Lanzadera opcional; regreso pendiente"
+                },
+                {
+                  "from": "Schmitten GR Landwasser Viaduct",
+                  "to": "Filisur",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Landwasserwelt",
+                  "service": "Regreso opcional en lanzadera; según horarios y cobertura de pase"
+                },
+                {
+                  "from": "Filisur",
+                  "to": "Pontresina",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Regreso ferroviario a alojamiento"
                 }
               ]
             }
@@ -1101,7 +1133,7 @@
               "price": null
             }
           ],
-          "notes": "Billetes regionales y lanzadera si opera; la excursión requiere retorno a Pontresina el mismo día. Shuttle según temporada 2027 y disponibilidad; revisar pases que lo cubran antes de añadir importe."
+          "notes": "Ruta ilustrativa para ir al mirador y volver el mismo día; el Viaduct Shuttle depende de operación y pases aceptados, y puede omitirse. La alternativa es Filisur y viaje ferroviario sin llegar a Hennings."
         }
       ],
       "links": [
