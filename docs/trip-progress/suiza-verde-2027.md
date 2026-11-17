@@ -4,7 +4,7 @@
 **JSON:** `data/trips/suiza-verde-2027.json`  
 **Rama:** `feature/suiza-verde-2027`  
 **Actualizado:** 2026-11-16  
-**Etapa:** 12 · Fotografías y portada incorporadas editorialmente. Siguiente: 13 Auditoría global/PR. Verificación real de carga de imágenes, Node/Chromium y auditorías B/C/D pendientes.
+**Etapa:** 13 · Auditoría estructural global realizada; PR #18 en borrador. CI del commit vigente y revisión visual del usuario pendientes antes del merge.
 
 ## Decisiones registradas
 - **12–27 junio 2027**, 16 días calendario, 14 noches de hotel provisionales: Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra 1.
@@ -28,7 +28,7 @@
 - [x] 10 · Panorama: narrativa, indicadores, clima, cinco alojamientos y subtotal aéreo reconciliados; prueba real Desktop/Mobile pendiente
 - [x] 11 · Presupuesto integral provisional: 35 estimaciones terrestres, vuelo cotizado, rango, TC y no duplicación; faltan precios finales.
 - [x] 12 · Fotografías y portada: 13 jornadas con galerías, portada estival horizontal y carrusel de 6 fotografías; verificación visual de carga pendiente
-- [ ] 13 · Auditoría global, tests/CI y PR final
+- [ ] 13 · Auditoría global: comprobaciones estáticas y PR #18 borrador realizados; aprobación final pendiente de CI y revisión visual
 
 ## Verificación de Temporadas · 2026-11-16
 - 12/12 meses evaluados con estado y rango de temperaturas en formato `mínima a máxima °C`.
@@ -140,6 +140,18 @@
 - Diecinueve claves fotográficas únicas con descripciones editoriales de 15–30 palabras; Wengen aparece como foto y visita opcional el día 10; no se incluyen fotos estacionales con `winter`, `invierno` o `nevado`.
 - Añadida regresión a `tests/loader-regression.test.cjs` y cambiada expectativa obsoleta de portada nula. La selección en Wikimedia Commons y las atribuciones se revisaron a nivel documental, **pero NO se pudieron abrir todas las imágenes en navegador ni verificar respuesta HTTP de cada URL o aspecto cromático final**; hacerlo en auditoría D.
 - Se modificaron exclusivamente el JSON de Suiza Verde, el catálogo compartido de fotos (`data/places.json`), su test y la bitácora; los JSON de otros viajes no se alteraron. Ningún merge autorizado.
+
+## Auditoría global de pies a cabeza · 2026-11-16
+- **Rama** feature/suiza-verde-2027, PR en borrador https://github.com/JesusRiddle/atlas-viajes/pull/18. PR #11 anterior fue fusionado con una versión muy anterior; sus checks exitosos no validan la rama actual.
+- **Alcance**: fechas consecutivas 12–27 junio 2027 (16 días), 14 pernoctas/5 hoteles y 14 transportes (1 vuelo global y 13 fichas terrestres); referencias day.transportRefs y day.hotel correctas.
+- **Nueve secciones**: Panorama con tres indicadores y clima independiente; mapa 23 pines; 12 meses de Temporadas; 12 Experiencias; tres grupos de Reservaciones; Movilidad y Alojamientos referenciados; 16 jornadas con mañana/tarde/noche, notas y transporte; 35 partidas de presupuesto sin duplicar vuelos ni fondos.
+- **Fotos**: 7 imágenes nuevas específicas de Trümmelbach, Gimmelwald, Luzern–Interlaken Express, estación Titlis Rotair, cueva Titlis, Sunnegga y Leisee; 29 apariciones en 13 días, cuatro marcadas opcionales, 27 claves únicas usadas al incluir portada y carrusel. Días 1 y 16 sin foto por ser vuelo, y día 15 sin atracción turística. Portada Oeschinensee contrastada en Wikimedia Commons como paisaje panorámico 2022, autor Deralpinbergsteiger CC BY-SA 4.0.
+- **Carrusel**: sustituida duplicación temática Oeschinensee+otra vista del lago por foto de Grindelwald/Eiger, conservando seis lugares visualmente distintos.
+- **Tests antiguos reparados**: expectativas de presupuesto vacío y texto de subtotal exclusivamente aéreo ya no correspondían al presupuesto integral; se actualizó prueba de Panorama y cobertura explícita de siete excursiones, optionalPlaces y 35 expenses.
+- **Cambio corregido contra fuente**: 16 noviembre 2026 Wise muestra CHF/MXN 22.08 aproximado, no 22.12. Provisión terrestre CHF 5,195 = MXN 114,705.60; vuelo MXN 23,300.14; **total central MXN 138,005.74**, banda MXN 118,000–157,000. No son reservas confirmadas ni costos de hoteles de junio 2027.
+- **Validaciones estáticas efectivamente realizadas**: JSON, integridad de referencia de galería y licencia, pies de foto de 15–30 palabras, días y pernoctas, correspondencia de transportes con fondos económicos, 12 meses con rangos, títulos de indicadores, introHighlights presentes, IDs únicos de transportes/gastos, sintaxis de archivos JS/CJS consultados. Sin problemas en estas verificaciones.
+- **Pendiente de aprobación**: resultado del workflow actual Atlas checks con Node y Chromium para Desktop/Mobile; visita visual manual del usuario y evidencia de carga/color/recorte de todas las fotos. Si falla CI, corregir antes de solicitar merge.
+- **Pendiente de contratación, no necesariamente bloqueo de contenido editorial**: tarifas exactas hoteles, horarios de trenes/teleféricos, comparativa cuantificada de pases y solución real de equipaje para Heididorf el martes; mantenerse condicionadas en el itinerario y no presentarlas como reservas.
 
 ## Pendientes prioritarios
 1. Cotizar las cinco estancias de junio 2027 y comparar tres opciones de pase/tickets con todas las rutas y suplementos.
