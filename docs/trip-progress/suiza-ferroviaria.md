@@ -7,9 +7,9 @@ Copiar esta plantilla a `docs/trip-progress/suiza-ferroviaria.md` al comenzar un
 **Rama / PR:** feature/suiza-ferroviaria · PR pendiente  
 **Modalidad:** [x] Planeación general  [ ] Itinerario detallado  
 **Última actualización:** 2026-11-17  
-**Etapa actual:** 02 · Temporadas y comparación de rutas (sin decisión definitiva)  
-**Siguiente acción autónoma:** Completar tabla de 12 meses y validar temporadas operativas de Glacier/Bernina, antes de fechas o noches.  
-**Decisión que sí requiere al usuario (si existe):** Seleccionar ruta y ventana tras comparar las alternativas; no fija año ni fecha.
+**Etapa actual:** 02 verificada · 03 en análisis, sin fijar año ni fechas  
+**Siguiente acción autónoma:** Tras aprobación material de temporada y ruta, completar fechas, noches y esqueleto diario 03; comparar vuelos open-jaw y pases antes de cerrar auditoría A.  
+**Decisión que sí requiere al usuario (si existe):** Elegir ventana junio (segunda mitad) o septiembre (primera mitad) y confirmar si la variante A optimizada merece pasar a calendario; año todavía abierto.
 
 ## Checklist numerado de ejecución · orden de dependencias
 
@@ -17,7 +17,7 @@ El **orden de producción** se organiza de lo más independiente a lo más depen
 
 - [x] **00 · Preparación.** Leer `AGENTS.md`, estándar, guía, contrato y plantilla; crear rama, JSON **visible de inmediato en Inicio**, y bitácora; sin etiquetas de estado ni modificación de viajes heredados.
 - [x] **01 · Alcance y geografía.** Recuperar restricciones ya acordadas: países, ciudades candidatas, prioridades, tipo de viaje, `travelerCount`, duración aproximada, presupuesto objetivo y ventanas sugeridas. **No fijar todavía alojamientos ni horarios inventados.**
-- [ ] **02 · Temporadas (sección visible 3).** Investigar cada uno de los doce meses para **todos los destinos/regiones candidatos**, clima/luz, fenómenos, cierres y ocupación. Recomendar ventanas y advertir variaciones regionales; esta fase **no depende de hoteles ni tarifas**. Si el usuario ya eligió fechas, evaluarlas sin cambiarlas arbitrariamente.
+- [x] **02 · Temporadas (sección visible 3).** Investigar cada uno de los doce meses para **todos los destinos/regiones candidatos**, clima/luz, fenómenos, cierres y ocupación. Recomendar ventanas y advertir variaciones regionales; esta fase **no depende de hoteles ni tarifas**. Si el usuario ya eligió fechas, evaluarlas sin cambiarlas arbitrariamente.
 - [ ] **03 · Calendario, ruta y esqueleto diario.** Elegir/validar ventana con `work`, festivos, llegada/salida, orden de ciudades, `bases`, noches, traslados plausibles, excursiones prioritarias y `days[]` por fecha. Investigar conexiones cruciales y reservas que **podrían invalidar** la ruta antes de cerrarla; horarios y precios definitivos quedan para etapas posteriores. **Auditoría A: temporadas → fechas → ruta → noches y días compatibles.**
 - [ ] **04 · Mapa (sección visible 2).** Poblar `mapPoints`, coordenadas reales y orden tras conocer la ruta; verificar correspondencia con ciudades, alojamientos/excursiones y continuidad espacial.
 - [ ] **05 · Experiencias (sección visible 4).** Curar atractivos, excursiones opcionales y gastronomía de todas las ciudades del recorrido. Verificar pertinencia, tiempos aproximados, cierres conocidos y ausencia de repeticiones; no prometer una actividad todavía no reservada.
@@ -59,14 +59,14 @@ El **orden de producción** se organiza de lo más independiente a lo más depen
 
 | Etapa | Estado (pendiente/en curso/verificado/bloqueado) | Evidencia / commit / fuente | Pendiente o causa de bloqueo |
 | --- | --- | --- | --- |
-| 00–03 (Auditoría A) | En curso | Guías y 2 viajes suizos de main consultados; rama, alta visible y bitácora | Temporadas de 12 meses, ruta y fechas aún sin aprobar |
+| 00–03 (Auditoría A) | En curso | 12 meses añadidos al JSON con normales de Samedan y calendario operativo; 00–02 cerradas | Año/ventana y ruta aún no aprobados, falta armar días |
 | 04–08 (Auditoría B) | Pendiente | — | — |
 | 09–11 (Auditoría C) | Pendiente | — | — |
 | 12–13 (Auditoría D) | Pendiente | — | — |
 
 **Última auditoría:** <commit + pruebas realmente ejecutadas>  
 **Pendientes externos no bloqueantes:** <precios futuros, horarios sin publicar, fotos inaccesibles, etc.>  
-**Próxima ejecución autónoma:** 02 · completar 12 meses con fuentes oficiales y comparar variantes de ruta; después solicitar elección material.
+**Próxima ejecución autónoma:** 03 · tras selección de temporada, armar 10–12 días y noches, cotizar vuelos, comprobar transferencias y ejecutar auditoría A.
 
 ## Contrato de trabajo con el usuario
 
@@ -95,3 +95,29 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Comparación estructural a debatir: (A) Zürich–Zermatt–Glacier completo–Engadina/Pontresina–Bernina regional–Tirano–Milán (11–12 días, 3–4 hoteles); (B) Zürich–Andermatt–Glacier parcial–Chur–Albula–Engadina–Bernina–Tirano–Milán (10–11 días, más diferenciación, Glacier incompleto); (C) Zürich–Zermatt–Glacier completo–Chur/St. Moritz–Bernina completo desde Chur–Tirano–Milán (11–12 días, repite Albula y aumenta movimientos).
 - Pendiente prioritario: contrastar vuelos multidestino MEX–ZRH y MXP–MEX con redondos, y validar que conexiones en Tirano/Milán permitan dormir en Milán según horario de vuelo.
 - **No se ha elegido ruta, año ni fechas.** No completar etapas 02/03 sin comparación de doce meses y decisión de itinerario.
+
+
+## Hito 02 · Temporadas y ruta A optimizada · 2026-11-17
+
+### Evidencia climática
+- Samedan (1,709 m), normales climáticas de 1991–2020 compiladas con datos MeteoSwiss: junio máxima/minima media 17/3 °C, 91 mm y 11 días de precipitación, 186 horas de sol; septiembre 15/1 °C, 73 mm y 8 días con precipitación, 155 horas de sol. Son referencias regionales, no pronósticos ni comparables literalmente con Zúrich, Zermatt, Tirano. Fuente: https://www.swissactivities.com/en-us/weather/samedan/ . La serie de doce meses quedó en seasonality.months.
+- Engadin Tourismus: junio abre la temporada estival, florecen praderas y el valle puede estar tranquilo; septiembre es transición de verano a otoño; laderas de alerce dorado típicamente octubre. Fuentes: https://www.engadin.ch/en/guide/engadin-holiday-resorts/engadin-mountains-in-summer-autumn/our-monthly-tips-for-the-engadin ; https://www.engadin.ch/en/guide/holiday-resorts/autumn-in-the-engadin/engadin-autumn-bucket-list .
+- Aperturas **históricas 2026**, NO confirmadas 2027/28: Diavolezza 4 mayo–16 octubre, Muottas Muragl y Alp Languard 6 junio–25 octubre, Corvatsch desde 20 junio, Furtschellas desde 27 junio. Fuente https://www.engadin.ch/en/guide/mountains-railways/operating-times-timetables/mountain-railways-operating-times-in-summer . Por este motivo finales de junio > primera mitad de junio para excursionismo; septiembre temprano ofrece más operatividad conjunta.
+- Glacier Express anuncia verano 8 mayo–9 octubre 2027; cierre 17 abril–2 mayo 2027 (Chur–Disentis sustitución). Fuente https://www.glacierexpress.ch/en/timetable y PDF https://www.glacierexpress.ch/GEX-Timetable.pdf?v=2026-11 .
+- Bernina Express verano 24 abril–3 octubre 2027, según selector oficial RhB; trayecto panorámico Chur–Tirano y alternativa regional con paradas St. Moritz/Pontresina–Tirano. https://www.rhb.ch/en/panoramic-journeys/bernina-express/ ; https://www.rhb.ch/en/tickets/bernina-line-reservations/ . Calendario 2028 no publicado.
+
+### Alternativa A optimizada sin aprobar
+- Ruta lógica: llegada MEX–ZRH; **Zúrich solo como noche amortiguadora opcional** → Zermatt (2 noches; propósito abordar Glacier completo, sin repetir Gornergrat) → Glacier Express Zermatt–St. Moritz (~8 h) → continuar en regional a **Pontresina** o alojamiento práctico St. Moritz (4–5 noches, un solo hotel en Engadina) → Bernina regional de día con **parada en Alp Grüm** y descenso hacia Tirano → regional Trenord Tirano–Milano Centrale (~2 h 30 min) → Milán (1 noche cercana al aeropuerto/tren) → MXP–MEX, sujeto a vuelos.
+- Versión 10 días calendario / 8 noches de hotel: 1 Zúrich + 2 Zermatt + 4 Pontresina/St. Moritz + 1 Milán; incluye 1 noche en vuelo de ida y regreso día 10, condicionado por horarios intercontinentales.
+- Versión preferible 11 días / 9 noches: 1 Zúrich + 2 Zermatt + 5 Pontresina/St. Moritz + 1 Milán, idem con noche en vuelo. No convertir esta propuesta en bases/days confirmados sin usuario.
+- Zúrich podría suprimirse si llegada aérea temprana y traslado robusto directo a Zermatt; 3 hoteles (Zermatt/Engadina/Milán) en lugar de 4, pero no asumir factibilidad sin cotización.
+- Globo de excursiones Engadina: Diavolezza (candidato fuerte distinto de Jungfraujoch); Muottas Muragl (candidato fuerte por lagos), pueblos Samedan/Bever/Zuoz, lago Sils/Silvaplana, visita especial Albula/Landwasser desde Filisur con shuttle/plataforma Hennings (candidato de día ferroviario). Corvatsch opcional y parcialmente redundante; St. Moritz ciudad visita corta, no obligatorio hotel allí. Fuente Landwasser: https://www.rhb.ch/en/excursions/viaduct-shuttle/ .
+- Advertencia logística **importante**: Glacier Express ya pasa por viaducto Landwasser (línea Albula); el mirador implica viaje parcial de regreso desde Engadina y solo justifica ese desplazamiento si se quiere ver/fotografiar un tren cruzando el viaducto desde afuera. Evitar Bernina Express completo Chur–Tirano a continuación del Glacier porque repite Albula.
+- El Bernina **regional** permite parada Alp Grüm, mientras que el Bernina Express panorámico exige reserva y no debe asumirse que permite bajar/reembarcar con la misma reserva. Fuente https://www.rhb.ch/en/tickets/bernina-line-reservations/ .
+- Tirano–Milán Trenord: ~2h30, regional directo; referencias de horario y tarifa solo actuales, no cotizadas. Fuente https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/ . Si se visita Alp Grüm, verificar luz y llegada a Milán con margen; no programar vuelo internacional el mismo día de Bernina.
+- Oferta 'Mountain Railways included' para huéspedes de alojamientos participantes a partir de dos noches; verificar hoteles/participación y remontes concretos antes de estimar costo. https://www.engadin.ch/en/guide/mountains-railways/mountain-railway-tariffs/summer-tariffs-mountain-railways/mountain-railways-included .
+- **Recomendación provisional**: primera mitad de septiembre (menor lluvia media, remontes activos y poca nieve en senderos) vs segunda mitad de junio (más luz, flores y nieve en cimas). No afirmar menor costo sin cotizaciones de vuelos/hoteles, ni previsión de cielo despejado. Año 2027/2028 sigue sin decidir.
+
+### Control de etapa
+- 02 verificada a nivel de investigación climática con 12 meses en JSON y fuentes citadas.
+- 03 solo propuesta; **Auditoría A pendiente**, al igual que vuelos, hoteles, tarifas, validación CI y visualización del navegador.
