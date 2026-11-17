@@ -7,8 +7,8 @@ Copiar esta plantilla a `docs/trip-progress/suiza-ferroviaria.md` al comenzar un
 **Rama / PR:** feature/suiza-ferroviaria · PR pendiente  
 **Modalidad:** [x] Planeación general  [ ] Itinerario detallado  
 **Última actualización:** 2026-11-17  
-**Etapa actual:** Auditoría A en curso; 04–06 desarrolladas parcialmente con mapa, experiencias y reservas  
-**Siguiente acción autónoma:** Validar horarios RhB/Trenord en fecha exacta y completar mapa detallado, luego modelar transporte/pases y alojamientos sin duplicaciones.  
+**Etapa actual:** A/B en curso; primera versión visual en JSON (Panorama, portada y fotos existentes incorporadas)  
+**Siguiente acción autónoma:** Cotizar hoteles con condiciones comparables, modelar majorTransport con tarifas no publicadas en null, ampliar mapa con georreferencias reales y fotografías propias de cada excursión; después auditar renderer/CI.  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para continuar la investigación; junio 12–22 de 2027 es primera opción de planificación, compras y merge siempre requieren aprobación.
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -189,3 +189,11 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Archivo Glacier Express oficial de 2027 inspeccionado también visualmente (PDF 1 pág): PE 902 Zermatt 08:50–St. Moritz 16:36 y PE 904 09:50–17:36, verano 08 mayo–09 octubre. Fuente https://www.glacierexpress.ch/GEX-Timetable.pdf?v=2026-11 . El 2027-06-16 no tiene asiento reservado; no dar disponibilidad por hecha.
 - **Decisión financiera pendiente:** comparar Swiss Travel Pass, Swiss Half Fare Card y Saver Day Pass teniendo en cuenta hoteles con movilidad local incluida; Glacier requiere reserva aparte incluso con pase. SBB publica Half Fare Card CHF 150: https://www.sbb.ch/en/offers/swiss-half-fare-card .
 - **Estado:** avance editorial 04–06, no finalizar B/C/D; faltan coordenadas de excursiones, fotografías, hoteles y horarios de regionales individualizados en 2027, contratos `majorTransport`, presupuesto y pruebas DOM.
+
+
+## Hito de visualización anticipada · 17 noviembre 2026
+- **Necesidad del usuario:** ver ya los datos disponibles en la página, sin esperar al cierre del presupuesto ni hoteles. Se completaron en JSON `intro` (narrativa turística), `introShort`, `introHighlights`, `climate` (3 párrafos), `solo`, `local`, `practicalIndicators` (exactamente style, language, entry), `cover: glacier`, `routeHighlights`, `cardHighlights` y `days[].places` donde existían fotos previamente acreditadas en `data/places.json`. Se preservó `places: []` para jornadas exclusivamente de vuelo.
+- Se reutilizaron fotos existentes acreditadas de Zúrich, Zermatt, Glacier Express, St. Moritz, Pontresina, Bernina y Tirano; **las fotos de Diavolezza, Alp Grüm, Muottas Muragl, Silvaplana/Sils y mirador exterior Landwasser faltan como entradas específicas**. Las fotos existentes son apoyo inicial y no deben venderse como imágenes de lugares distintos; sustituirlas/completarlas en etapa 12 con fuente, licencia y autor acreditados.
+- Datos prácticos verificados para nota 2026-11-17: electricidad C/J, 230 V y 50 Hz según Switzerland Tourism https://www.myswitzerland.com/en-ch/planning/about-switzerland/general-facts/general-information/electricity/ ; ETIAS sin fecha final confirmada en FAQ oficial, consultar antes de salida https://travel-europe.europa.eu/etias/faq . Valores climatológicos de Samedan en `seasonality` son históricos; horas de luz de Pontresina son aproximaciones, no garantías de cielo despejado.
+- Persisten `hotels: []`, `majorTransport: []`, `expenses: []`, `exchangeRates: {}` porque falta precio, hotel elegido y modelado de billetes. No completar con cero ficticio, inventar precios o denominar alojamientos como elegidos. Los vuelos ya figuran como cotización en `flight`.
+- **Verificación de contenido:** referencia de portada `glacier` y todas las claves de `days[].places` contrastadas con fotografías existentes en `data/places.json`, introHighlights comprobados como subcadenas de `intro` y estructura de JSON validada al guardar. **No se ejecutó servidor ni Chromium Desktop/Mobile/CI** desde el conector GitHub. Hasta ejecutar pruebas formales no dar luz verde al merge.
