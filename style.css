@@ -2457,3 +2457,31 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
         grid-template-columns:1fr;
     }
 }
+
+
+/* Etiquetas del mapa: nombre en negritas y aclaración secundaria en peso normal. */
+.trip-map-section .map-city-name .map-city-primary{
+  display:inline;
+  font:inherit;
+  font-weight:700;
+}
+.trip-map-section .map-city-name .map-city-qualifier{
+  font-weight:400;
+}
+.trip-map-section .map-city-name{
+  font-weight:400;
+}
+
+/* Encabezados de hotel: ciudad, separador y nombre en una sola línea cuando caben. */
+.stay-list.hotel-grid .hotel-card h4{
+  white-space:nowrap;
+}
+.stay-list.hotel-grid .hotel-card .hotel-heading-city{
+  white-space:nowrap;
+}
+@media(max-width:650px){
+  .stay-list.hotel-grid .hotel-card h4{
+    white-space:normal;
+    overflow-wrap:break-word;
+  }
+}
