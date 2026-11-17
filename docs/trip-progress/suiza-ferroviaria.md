@@ -7,8 +7,8 @@ Copiar esta plantilla a `docs/trip-progress/suiza-ferroviaria.md` al comenzar un
 **Rama / PR:** feature/suiza-ferroviaria · PR pendiente  
 **Modalidad:** [x] Planeación general  [ ] Itinerario detallado  
 **Última actualización:** 2026-11-17  
-**Etapa actual:** 03 · Calendario principal junio 2027 y esqueleto diario registrados; Auditoría A en curso  
-**Siguiente acción autónoma:** Validar horarios RhB/Trenord por fecha de junio 2027 y enlaces a Pontresina; después cerrar Auditoría A y preparar Mapa/Experiencias.  
+**Etapa actual:** Auditoría A en curso; 04–06 desarrolladas parcialmente con mapa, experiencias y reservas  
+**Siguiente acción autónoma:** Validar horarios RhB/Trenord en fecha exacta y completar mapa detallado, luego modelar transporte/pases y alojamientos sin duplicaciones.  
 **Decisión que sí requiere al usuario (si existe):** Ninguna para continuar la investigación; junio 12–22 de 2027 es primera opción de planificación, compras y merge siempre requieren aprobación.
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -179,3 +179,13 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Tirano→Milano Centrale:** Trenord publica tren directo aprox. 2h30 y servicios regulares, verificar horarios para lunes 21 junio en fecha objetivo: https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/ .
 - **Milano Centrale→MXP T1 el 22 junio:** Malpensa Express publica duración ~51 minutos, primer tren desde Milano Centrale 05:25 y precio de referencia €15 (publicado en noviembre 2026; NO tarifa cotizada para 2027). Fuente https://www.malpensaexpress.it/en/lines-and-timetable/most-searched-lines/milano-centrale-malpensa-aeroporto-t1-route/ . Vuelo MXP 11:00: salida temprana desde hotel próximo a Centrale es viable en principio, verificar terminal/salida concreta y margen de aeropuerto.
 - **Puerta Auditoría A:** coherencia de ruta y noches preliminar OK; no declarar auditoría formal completamente aprobada hasta validar el horario real de Bernina regional del 21, enlace Trenord y correspondencia a Pontresina el 16. No se han ejecutado tests en navegador o CI ni comprado transportes.
+
+
+## Hito 04–06 · Primer contenido estructurado · 2026-11-17
+- Mapa inicial en JSON: 5 pines reales para Zúrich, Zermatt, Pontresina, Tirano y Milán; 4 alojamientos + tránsito ferroviario. Coordenadas Zúrich y Zermatt contrastadas con el viaje Suiza Verde existente; Pontresina (46.4955, 9.90126), Tirano (46.21482, 10.16335) contrastados geodatos.net; Milán centro urbano (45.4631, 9.19) aproximado. Falta añadir pines de miradores/estaciones con georreferencias verificadas, no inventar coordenadas. Mapa no marcado como finalizado.
+- Experiencias: ocho grupos en JSON (Glacier, Bernina regional, Diavolezza, Muottas Muragl, lagos Sils/Silvaplana, Albula/Landwasser, pueblos de Engadina, Corvatsch opcional). Evitar repetir Jungfraujoch, Gornergrat o Titlis por inercia.
+- Reservaciones: prioridad muy alta (Glacier, vuelos, hoteles), alta (Bernina+Trenord, beneficios hoteleros), flexible (remontes y excursiones por clima). Enlaces oficiales; ninguna compra confirmada.
+- Verificación complementaria: RhB indica reservas opcionales de CHF 5 para asientos de trenes regionales Bernina, NO Bernina Express panorámico: https://www.rhb.ch/en/tickets/bernina-line-reservations/ . Trenord confirma servicio directo Tirano–Milano Centrale aprox. 2h30, 15 servicios diarios en referencia actual, €12.50 tarifa 2ª publicada sin fecha específica: https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/ .
+- Archivo Glacier Express oficial de 2027 inspeccionado también visualmente (PDF 1 pág): PE 902 Zermatt 08:50–St. Moritz 16:36 y PE 904 09:50–17:36, verano 08 mayo–09 octubre. Fuente https://www.glacierexpress.ch/GEX-Timetable.pdf?v=2026-11 . El 2027-06-16 no tiene asiento reservado; no dar disponibilidad por hecha.
+- **Decisión financiera pendiente:** comparar Swiss Travel Pass, Swiss Half Fare Card y Saver Day Pass teniendo en cuenta hoteles con movilidad local incluida; Glacier requiere reserva aparte incluso con pase. SBB publica Half Fare Card CHF 150: https://www.sbb.ch/en/offers/swiss-half-fare-card .
+- **Estado:** avance editorial 04–06, no finalizar B/C/D; faltan coordenadas de excursiones, fotografías, hoteles y horarios de regionales individualizados en 2027, contratos `majorTransport`, presupuesto y pruebas DOM.
