@@ -148,14 +148,14 @@ const assert = require('node:assert/strict');
         'Orlando: rango preliminar etiquetado, no presentado como compra');
       assert.equal(await ideaCards.count(), allDestinations.length - 8, 'Todos los viajes históricos deben permanecer accesibles');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
-      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 6,
+      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 7,
         'La comparativa no debe confundir ideas históricas con viajes terminados');
       const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
       assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
       assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
       const people = await page.locator('#comparar .comparison-table tbody tr').evaluateAll(rows =>
         rows.map(row => row.cells[5].textContent.trim()));
-      assert.deepEqual(people, ['1', '1', '1', '1', '1', '2'], 'La comparativa incluye cinco viajes individuales y Patagonia para dos; Orlando mantiene presupuesto preliminar');
+      assert.deepEqual(people, ['1', '1', '1', '1', '1', '1', '2'], 'La comparativa incluye seis viajes individuales y Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
       assert.deepEqual(topIds, [
         '#viaje/orlando-2026', '#viaje/colombia-2027', '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
@@ -182,7 +182,7 @@ const assert = require('node:assert/strict');
         assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
         // Contrato editorial del Panorama: tres indicadores a la izquierda, clima separado a la derecha.
         if (['orlando-2026', 'suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
-          'japon-2027', 'patagonia-argentina-2027'].includes(id)) {
+          'suiza-verde-2027', 'japon-2027', 'patagonia-argentina-2027'].includes(id)) {
           const indicators = page.locator('#plan .overview-intro .practical-indicator');
           assert.equal(await indicators.count(), 3, id + ' debe tener exactamente tres indicadores');
           const ids = await indicators.evaluateAll(nodes => nodes.map(node => node.dataset.indicatorId));
