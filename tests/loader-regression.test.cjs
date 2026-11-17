@@ -37,7 +37,8 @@ test('Suiza verde mantiene fechas, ruta y estados sin afirmar compras', () => {
     assert.equal(trip.travelerCount, 1);
     assert.equal(trip.days.length, 16);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 14);
-    assert.equal(trip.expenses.length, 0, 'No inventar costos antes de cotizar');
+    assert.equal(trip.expenses.length, 35, 'El presupuesto integral contiene partidas estimadas, no compras');
+    assert.ok(trip.expenses.every(e => e.status === 'estimated'));
     assert.ok(trip.experiences.some(item => /Titlis/i.test(JSON.stringify(item))));
     assert.ok(trip.experiences.some(item => /Heidi/i.test(JSON.stringify(item))));
     assert.ok(catalog.indexOf(module) > catalog.findIndex(item => item.id === 'suiza-nevada-2027'), 'El borrador de septiembre no desplaza la ruta de enero');
@@ -812,8 +813,8 @@ test('Suiza Verde: Panorama definitivo congruente, sin totales ficticios', () =>
     assert.match(trip.budgetNote, /Subtotal verificable|subtotal/i);
     assert.match(trip.budgetNote, /no se puede presentar este subtotal como inversión total/i);
     assert.equal(trip.budgetRange, null);
-    assert.equal(trip.budgetPreliminary, null);
-    assert.equal(trip.expenses.length, 0);
+    assert.equal(trip.budgetPreliminary.useBudgetRange, true);
+    assert.equal(trip.expenses.length, 35);
     assert.deepEqual(trip.practicalIndicators.map(x => x.id), ['style', 'language', 'entry']);
     assert.match(trip.practicalIndicators[2].text, /EES/);
     assert.match(trip.practicalIndicators[2].text, /ETIAS/);
