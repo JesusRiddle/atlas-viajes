@@ -33,7 +33,7 @@ test('Suiza verde mantiene fechas, ruta y estados sin afirmar compras', () => {
     assert.ok(module && module.available, 'Suiza verde registrada en el catálogo');
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
     assert.equal(trip.status, null, 'El Atlas ya no emplea estado draft público');
-    assert.equal(trip.cover, 'swissgreen-cover');
+    assert.equal(trip.cover, 'swissgreen-oeschinensee-cover');
     assert.equal(trip.travelerCount, 1);
     assert.equal(trip.days.length, 16);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 14);
@@ -866,7 +866,7 @@ test('Suiza Verde: presupuesto integral concilia sin duplicar vuelos ni pases', 
 test('Suiza Verde: fotografías estivales, portada, galerías y créditos completos', () => {
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
     const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
-    assert.equal(trip.cover, 'swissgreen-cover');
+    assert.equal(trip.cover, 'swissgreen-oeschinensee-cover');
     assert.equal(trip.coverSlides.length, 6);
     assert.equal(trip.days.length, 16);
     assert.equal(trip.days.filter(d => d.places.length).length, 13);
