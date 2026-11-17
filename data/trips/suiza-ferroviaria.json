@@ -91,7 +91,40 @@
       }
     }
   },
-  "experiences": [],
+  "experiences": [
+    {
+      "city": "Glacier Express · travesía Zermatt–St. Moritz",
+      "description": "Atravesar el valle del Ródano, Oberalp, Andermatt, la garganta del Rin y la línea Albula hasta Engadina en el tren panorámico PE 902. La reserva es obligatoria además de un título de transporte válido. Es el protagonista ferroviario del viaje."
+    },
+    {
+      "city": "Bernina · tren regional de Pontresina a Tirano",
+      "description": "Recorrer Lago Bianco, Alp Grüm, Valposchiavo y el viaducto espiral de Brusio en tren regular. Se propone una visita sin maleta a Alp Grüm desde Pontresina, porque no existen casilleros allí; el descenso a Tirano se realiza el día de traslado a Italia."
+    },
+    {
+      "city": "Diavolezza · glaciares del macizo Bernina",
+      "description": "Subir en teleférico a un mirador sobre los glaciares de Pers y Morteratsch; concentrarse en terrazas y senderos fáciles habilitados según el tiempo. La operación y la cobertura de una posible tarjeta hotelera se verificarán antes de comprar."
+    },
+    {
+      "city": "Muottas Muragl · panorama de lagos",
+      "description": "Mirador del sistema de lagos de la Alta Engadina, con subida en funicular si el calendario estival de 2027 lo permite. Alternativa menos redundante que acumular varias cumbres glaciares."
+    },
+    {
+      "city": "Lagos de Silvaplana y Sils",
+      "description": "Pueblos, orillas, miradores fáciles y paisajes de valle, distintos de los glaciares vistos desde trenes y teleféricos. Ajustar las caminatas a la operación de autobuses y la meteorología."
+    },
+    {
+      "city": "Albula y Landwasser · trenes réticos UNESCO",
+      "description": "Volver hacia Filisur para fotografiar el viaducto Landwasser desde fuera, solo si hay acceso a un mirador de dificultad moderada o transporte oficial operativo. El Glacier Express ya cruza el puente; este día se justifica por la perspectiva exterior."
+    },
+    {
+      "city": "Pontresina, Samedan y Zuoz · pueblos de Engadina",
+      "description": "Arquitectura tradicional, fachadas decoradas con esgrafiados y gastronomía de los Grisones, como capuns, pizzoccheri y Bündner Gerstensuppe. Una jornada adaptable a lluvia o nubes."
+    },
+    {
+      "city": "Corvatsch · opcional a partir del 19 de junio",
+      "description": "Subida complementaria desde Surlej únicamente si el operador confirma apertura, el tiempo acompaña y el coste no se duplica con un beneficio hotelero. No es imprescindible frente a Diavolezza y Muottas Muragl."
+    }
+  ],
   "days": [
     {
       "n": 1,
@@ -166,7 +199,13 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "noteLinks": [
+        {
+          "label": "Glacier Express · horario 2027",
+          "url": "https://www.glacierexpress.ch/en/timetable"
+        }
+      ]
     },
     {
       "n": 6,
@@ -241,7 +280,17 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "mobilityLinks": [
+        {
+          "label": "RhB · trenes regionales",
+          "url": "https://www.rhb.ch/en/tickets/bernina-line-reservations/"
+        },
+        {
+          "label": "Trenord · Tirano–Milán",
+          "url": "https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/"
+        }
+      ]
     },
     {
       "n": 11,
@@ -259,11 +308,165 @@
       "optionalPlaces": []
     }
   ],
-  "mapPoints": [],
+  "mapPoints": [
+    {
+      "name": "Zúrich",
+      "coords": [
+        47.3769,
+        8.5417
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Zermatt",
+      "coords": [
+        46.0207,
+        7.7491
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Pontresina",
+      "coords": [
+        46.4955,
+        9.90126
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Tirano",
+      "coords": [
+        46.21482,
+        10.16335
+      ],
+      "kind": "Tránsito ferroviario",
+      "base": false,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Milán",
+      "coords": [
+        45.4631,
+        9.19
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 5
+    }
+  ],
   "hotels": [],
   "expenses": [],
   "majorTransport": [],
-  "reservations": [],
+  "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Glacier Express · 16 junio",
+          "description": "SIN RESERVAR. Candidato PE 902 Zermatt 08:50 → St. Moritz 16:36. Reserva de asiento obligatoria, diferenciada del billete o pase; confirmar apertura de venta, disponibilidad y condiciones antes de elegir clase.",
+          "links": [
+            {
+              "label": "Horario oficial 2027",
+              "url": "https://www.glacierexpress.ch/en/timetable"
+            },
+            {
+              "label": "Reservas Glacier Express",
+              "url": "https://glacierexpress.ch/en/"
+            }
+          ]
+        },
+        {
+          "title": "Vuelos multidestino · 12 y 22 junio",
+          "description": "COTIZADOS, SIN COMPRAR. Google Flights muestra $17,450 MXN (1 adulto, reserva vía SWISS), MEX–FRA–ZRH y MXP–FRA–MEX. Verificar condiciones finales; escala de regreso en FRA de 1 h 10 min.",
+          "links": [
+            {
+              "label": "SWISS",
+              "url": "https://www.swiss.com/"
+            },
+            {
+              "label": "Lufthansa",
+              "url": "https://www.lufthansa.com/"
+            }
+          ]
+        },
+        {
+          "title": "Alojamientos · 13–22 junio, 9 noches",
+          "description": "SIN RESERVAR. Zúrich 1, Zermatt 2, Pontresina 5, Milán 1; habitaciones privadas con baño, preferentemente junto a estaciones. Comparar cancelación, desayuno, tasa turística y beneficio de remontes del hotel de Engadina.",
+          "links": [
+            {
+              "label": "SBB · red y conexiones",
+              "url": "https://www.sbb.ch/en"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Bernina regional y conexión con Trenord · 21 junio",
+          "description": "Comprar billetes válidos Pontresina→Tirano y Tirano→Milano Centrale cuando exista horario definitivo; asiento regional RhB opcional, separado del billete. Confirmar margen de transbordo y gestión de equipaje.",
+          "links": [
+            {
+              "label": "RhB regional · reserva",
+              "url": "https://www.rhb.ch/en/tickets/bernina-line-reservations/"
+            },
+            {
+              "label": "Trenord · Tirano–Milán",
+              "url": "https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/"
+            }
+          ]
+        },
+        {
+          "title": "Hotel con remontes incluidos · Pontresina",
+          "description": "Antes de comprar pases o entradas de Diavolezza/Muottas Muragl, comprobar si el hotel elegido ofrece Mountain Railways Included a partir de dos noches, incluyendo sus condiciones y operadores.",
+          "links": [
+            {
+              "label": "Engadina · remontes incluidos",
+              "url": "https://www.engadin.ch/en/guide/mountains-railways/mountain-railway-tariffs/summer-tariffs-mountain-railways/mountain-railways-included"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Flexible según clima",
+      [
+        {
+          "title": "Diavolezza, Muottas Muragl y Corvatsch",
+          "description": "No comprar por adelantado excursiones meteorosensibles sin consultar previsión y política de cancelación. Diavolezza es prioritaria; Corvatsch permanece opcional a partir del 19 junio.",
+          "links": [
+            {
+              "label": "Diavolezza / Corvatsch",
+              "url": "https://www.corvatsch-diavolezza.ch/en/"
+            }
+          ]
+        },
+        {
+          "title": "Viaducto Landwasser y Alp Grüm",
+          "description": "Ajustar a trenes regionales y acceso real a miradores. Alp Grüm se visita como excursión sin equipaje, no como parada con maleta durante el traslado a Milán.",
+          "links": [
+            {
+              "label": "Ferrocarril Rético RhB",
+              "url": "https://www.rhb.ch/en/"
+            }
+          ]
+        }
+      ]
+    ]
+  ],
   "exchangeRates": {},
   "cover": null,
   "flight": "PRIMERA OPCIÓN DE PLANIFICACIÓN: JUNIO 2027, COTIZACIÓN NO COMPRADA · Google Flights, consulta 17 nov 2026, multidestino para 1 adulto, Turista: MEX→ZRH sábado 12 junio 2027, Lufthansa LH499 Boeing 747, salida 19:50 y llegada Frankfurt (FRA) domingo 13 junio 14:50; escala 1 h 40 min; FRA→ZRH Lufthansa LH1194 Airbus A320neo, 16:30–17:25. Regreso martes 22 junio 2027: MXP→FRA Lufthansa LH249 Airbus A321, 11:00–12:20; escala FRA 1 h 10 min; FRA→MEX Lufthansa LH498 Boeing 747, 13:30–17:30. Total mostrado MXN 17,450 al reservar con SWISS, frente a MXN 17,878 al reservar con Lufthansa. Google Flights indica 1 pieza de equipaje de mano gratis; equipaje documentado con cargo. Verificar precio final, condiciones de tarifa y conexión protegida antes de comprar. La conexión de regreso de 1 h 10 min en FRA es ajustada. Fechas 12–22 junio de 2027 elegidas como primera opción para diseñar el itinerario; no son billetes comprados ni fechas inamovibles.\n\nCOTIZACIÓN ALTERNATIVA SEPTIEMBRE 2027 · Google Flights, captura facilitada por el viajero el 17 nov 2026. Multidestino 1 adulto, turista: MEX→ZRH sábado 4 septiembre: LH499, MEX 19:50→FRA 14:50 (+1); LH1194, FRA 16:30→ZRH 17:25 (+1); escala FRA 1 h 40 min. MXP→MEX martes 14 septiembre: LH249, MXP 11:00→FRA 12:20; LH498, FRA 13:30→MEX 17:30; escala FRA 1 h 10 min. Precio total mostrado por SWISS $21,419 MXN; por Lufthansa $21,848 MXN. Una pieza de equipaje de mano incluida según Google Flights, equipaje documentado con cargo adicional; condiciones finales por verificar. Comparación equivalente junio 12–22: $17,450 MXN (SWISS), diferencia $3,969 MXN. Septiembre es escenario alternativo; ambos son cotizaciones, no vuelos comprados.",
@@ -276,5 +479,9 @@
     "weather": "Variable",
     "weatherWhy": "En junio, laderas verdes y nieve residual en cumbres; lluvia, viento o nubosidad pueden cerrar o limitar miradores.",
     "why": "Travesía ferroviaria de los Alpes, línea Albula UNESCO, paso Bernina, lagos y pueblos de Alta Engadina, sin repetir las excursiones emblemáticas de los otros itinerarios suizos."
+  },
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "El vuelo de junio está cotizado pero no comprado. Glacier Express requiere reserva obligatoria; para los regionales Bernina la reserva es opcional. Priorizar hotel de Engadina con beneficios de remontes antes de comprar pases o billetes duplicados. Las entradas de montaña se decidirán según apertura, visibilidad y condiciones de cancelación."
   }
 }
