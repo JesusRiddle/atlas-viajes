@@ -7,9 +7,9 @@ Copiar esta plantilla a `docs/trip-progress/suiza-ferroviaria.md` al comenzar un
 **Rama / PR:** feature/suiza-ferroviaria · PR pendiente  
 **Modalidad:** [x] Planeación general  [ ] Itinerario detallado  
 **Última actualización:** 2026-11-17  
-**Etapa actual:** 02 verificada · 03 en análisis, sin fijar año ni fechas  
-**Siguiente acción autónoma:** Comparar precios completos de hoteles para junio y septiembre en Zermatt/Pontresina/Zúrich/Milán y comprobar cobertura de remontes; después decidir ventana y cerrar etapa 03.  
-**Decisión que sí requiere al usuario (si existe):** Elegir ventana junio (segunda mitad) o septiembre (primera mitad) y confirmar si la variante A optimizada merece pasar a calendario; año todavía abierto.
+**Etapa actual:** 03 · Calendario principal junio 2027 y esqueleto diario registrados; Auditoría A en curso  
+**Siguiente acción autónoma:** Verificar reservas operativas de Glacier 16 junio, Bernina regional 21 junio, hoteles y traslados de equipaje; después ejecutar Auditoría A y cotizar servicios.  
+**Decisión que sí requiere al usuario (si existe):** Ninguna para continuar la investigación; junio 12–22 de 2027 es primera opción de planificación, compras y merge siempre requieren aprobación.
 
 ## Checklist numerado de ejecución · orden de dependencias
 
@@ -59,14 +59,14 @@ El **orden de producción** se organiza de lo más independiente a lo más depen
 
 | Etapa | Estado (pendiente/en curso/verificado/bloqueado) | Evidencia / commit / fuente | Pendiente o causa de bloqueo |
 | --- | --- | --- | --- |
-| 00–03 (Auditoría A) | En curso | 12 meses añadidos al JSON con normales de Samedan y calendario operativo; 00–02 cerradas | Año/ventana y ruta aún no aprobados, falta armar días |
+| 00–03 (Auditoría A) | En curso | 12 meses y ruta A con 11 días fechados, 9 noches, 4 alojamientos previstos en JSON, junio elegido como primera opción | Verificar trenes por fecha, hoteles y equipaje antes de aprobar auditoría A |
 | 04–08 (Auditoría B) | Pendiente | — | — |
 | 09–11 (Auditoría C) | Pendiente | — | — |
 | 12–13 (Auditoría D) | Pendiente | — | — |
 
 **Última auditoría:** <commit + pruebas realmente ejecutadas>  
 **Pendientes externos no bloqueantes:** <precios futuros, horarios sin publicar, fotos inaccesibles, etc.>  
-**Próxima ejecución autónoma:** 03 · tras selección de temporada, armar 10–12 días y noches, cotizar vuelos, comprobar transferencias y ejecutar auditoría A.
+**Próxima ejecución autónoma:** Cerrar Auditoría A tras validar operativa real y márgenes de conexión, luego 04 Mapa y 05 Experiencias.
 
 ## Contrato de trabajo con el usuario
 
@@ -160,3 +160,13 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 ### Validación adicional de beneficio hotelero
 - El catálogo oficial del paquete de montaña enumera expresamente el **teleférico de Diavolezza** entre los incluidos, sujeto a vigencia y hotel participante: https://booking.engadin.ch/de/experiences/hotel--bergbahnen-inklusive . El beneficio no sustituye billetes del Glacier/Bernina Express.
 - No incluir precios extraídos de Booking para otras fechas/monedas. Para comparar estadías de 9 noches, cotizar *misma ocupación/tarifa/impuestos* en ambos períodos; diferencia aérea $3,969 MXN es el umbral económico antes de excursiones.
+
+
+## Decisión de calendario · 2026-11-17
+- **Usuario seleccionó junio de 2027 como primera opción y autorizó planear para esa fecha**. Se usa ventana ya cotizada **12–22 junio 2027** sin afirmar billetes comprados; septiembre sigue como alternativa no prioritaria.
+- JSON actualizado: `start/end`, 11 jornadas fechadas, `bases` (Zúrich 1, Zermatt 2, Pontresina 5, Milán 1), `routeCities`, perfil de viajero solo y `work: 7` jornadas laborales de lunes a viernes (sujeto a festivos laborales específicos); días en vuelo no se contabilizan como alojamiento hotelero.
+- Orden: 12 vuelo, 13 Zúrich, 14–15 Zermatt, 16 Glacier Express Zermatt–St. Moritz y traslado a Pontresina, 17–20 cuatro días completos Engadina, 21 Bernina regional con Alp Grüm/Tirano a Milán, 22 vuelo de regreso. Pontresina queda localidad de alojamiento prevista, **ningún hotel reservado**.
+- El Glacier Express pasa por Albula/Landwasser en el día de traslado; excursión el 20 a Filisur solo si la vista desde fuera y logística justifican retorno en tren. Bernina regional permite parada en Alp Grüm, pero manejo de equipaje pendiente.
+- Corvatsch comienza verano **19 junio 2027**, solo puede visitarse del 19 al 20 antes de salir de Engadina; Diavolezza otro día. Fuente operador: https://www.corvatsch-diavolezza.ch/en/news-1/operating-hours . Verificar Muottas Muragl con calendario final.
+- Fuentes trayectos: https://www.glacierexpress.ch/en/timetable ; https://www.rhb.ch/en/panoramic-journeys/bernina-express/ ; https://www.rhb.ch/en/ ; https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/ . No inventar horas de los trenes de 2027; horarios no insertados.
+- **Auditoría A todavía pendiente:** validar horario exacto Glacier 16 junio y enlaces a Pontresina, paso Alp Grüm 21 junio, manejo equipaje, y conexión Milán/MXP. Gastos, hoteles, reservas y fotos pendientes; no pasar B/C/D ni merge.
