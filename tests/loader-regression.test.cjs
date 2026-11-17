@@ -37,7 +37,7 @@ test('Suiza verde mantiene fechas, ruta y estados sin afirmar compras', () => {
     assert.equal(trip.travelerCount, 1);
     assert.equal(trip.days.length, 16);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 14);
-    assert.equal(trip.expenses.length, 35, 'El presupuesto integral contiene partidas estimadas, no compras');
+    assert.equal(trip.expenses.length, 36, 'El presupuesto integral contiene partidas estimadas, no compras');
     assert.ok(trip.expenses.every(e => e.status === 'estimated'));
     assert.ok(trip.experiences.some(item => /Titlis/i.test(JSON.stringify(item))));
     assert.ok(trip.experiences.some(item => /Heidi/i.test(JSON.stringify(item))));
@@ -815,7 +815,7 @@ test('Suiza Verde: Panorama definitivo congruente, sin totales ficticios', () =>
     assert.match(trip.budgetNote, /no reservados|no reservad|estimad|provisi[oó]n/i);
     assert.deepEqual(trip.budgetRange, [118000, 157000]);
     assert.equal(trip.budgetPreliminary.useBudgetRange, true);
-    assert.equal(trip.expenses.length, 35);
+    assert.equal(trip.expenses.length, 36);
     assert.deepEqual(trip.practicalIndicators.map(x => x.id), ['style', 'language', 'entry']);
     assert.match(trip.practicalIndicators[2].text, /EES/);
     assert.match(trip.practicalIndicators[2].text, /ETIAS/);
@@ -851,7 +851,10 @@ test('Suiza Verde: presupuesto integral concilia sin duplicar vuelos ni pases', 
     assert.equal(summary.entries.filter(e => e.id === 'international-flight').length, 1);
     assert.equal(summary.entries.filter(e => e.id === 'rail-provision').length, 1);
     assert.equal(summary.entries.filter(e => e.id.startsWith('activity-')).length, 9);
-    assert.equal(trip.expenses.filter(e => e.id.startsWith('activity-')).reduce((sum,e) => sum + e.cost.amount, 0), 410);
+    assert.equal(trip.expenses.filter(e => e.id.startsWith('activity-') && !e.optional).reduce((sum,e) => sum + e.cost.amount, 0), 410);
+    assert.equal(trip.expenses.find(e => e.id === 'activity-sunnegga').optional, true);
+    assert.equal(trip.expenses.find(e => e.id === 'activity-sunnegga').cost.amount, null);
+    assert.equal(trip.majorTransport.find(t => t.id === 'sunnegga').budgetIncludedIn, 'activity-sunnegga');
     assert.deepEqual(trip.expenses.find(e => e.id === 'rail-provision').dates, []);
     assert.deepEqual(trip.budgetRange, [118000, 157000]);
     assert.equal(trip.budgetPreliminary.useBudgetRange, true);
