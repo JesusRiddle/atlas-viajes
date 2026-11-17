@@ -4896,5 +4896,16 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Sabrina Schreiber"
     }
+  },
+  "swissgreen-oeschinensee-cover": {
+    "name": "Oeschinensee · lago turquesa",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Oeschinensee%20panorama%20view%20with%20turquoise%20water.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Oeschinensee_panorama_view_with_turquoise_water.jpg",
+      "author": "Deralpinbergsteiger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Deralpinbergsteiger"
+    }
   }
 }
