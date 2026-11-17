@@ -2528,6 +2528,17 @@
       "order": 10
     },
     {
+      "name": "Gimmelwald",
+      "coords": [
+        46.5469,
+        7.894
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 11
+    },
+    {
       "name": "Grindelwald-First",
       "coords": [
         46.66138,
@@ -2590,7 +2601,7 @@
       ],
       "kind": "Excursión",
       "base": false,
-      "optional": false,
+      "optional": true,
       "order": 17
     },
     {
