@@ -130,3 +130,10 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - **Equipaje:** Google Flights muestra 1 pieza de equipaje de mano gratis; equipaje documentado con costo adicional, condiciones específicas por proveedor/tarifa aún por verificar.
 - **No interpretar como reserva ni gasto incurrido.** El año, las fechas del viaje y la ruta siguen formalmente pendientes; junio 12–22 es un escenario comparativo seleccionado para conservar, no decisión que descarte septiembre 2027 o 2028. No fijar `start`/`end` ni `days` en JSON hasta aprobar escenario.
 - **Pendiente:** comparación con septiembre y confirmación de tarifa final directamente en SWISS (precio/cabina/conexión/equipaje). Verificar si la llegada de Tirano a Milán el 21 junio permite alojamiento y traslado a MXP sin presión.
+
+
+## Cotización alternativa de septiembre verificada · 2026-11-17
+- **4–14 septiembre 2027, 1 adulto, multidestino MEX→ZRH / MXP→MEX**, Google Flights: SWISS **$21,419 MXN**, Lufthansa **$21,848 MXN**, mismos segmentos LH499 + LH1194 / LH249 + LH498 que el escenario de junio, ida 19:50→17:25 (+1), regreso 11:00→17:30. Equipaje de mano incluido según captura; facturado adicional. Escalas FRA 1h40 ida y 1h10 regreso. Fuente: capturas del viajero en chat.
+- Diferencia de itinerarios equivalentes SWISS: **septiembre +$3,969 MXN** frente a junio 12–22 ($17,450 MXN). No extrapolar esta diferencia a hoteles ni costo integral antes de compararlos.
+- Precaución: el regreso seleccionado de septiembre de **11:00** no es el de 08:55 (que tenía conexión más larga y se mostró por el mismo precio en listado previo); solicitar nuevo desglose si se decide éste.
+- **Siguiente lote:** hoteles por fecha de estancia, alternativas Pontresina/St. Moritz, beneficio de remontes, itinerario 11 días con 1 Zúrich + 2 Zermatt + 5 Engadina + 1 Milán, sin convertirlos en reservas.
