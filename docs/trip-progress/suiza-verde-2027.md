@@ -19,14 +19,14 @@
 - [x] 01 · Alcance / MUST seleccionados
 - [x] 02 · Temporadas: 12 meses evaluados, estados/intervalos consistentes y fuentes oficiales documentadas (verificación estructural realizada)
 - [x] 03 · Ruta y 16 jornadas tentativas actualizadas; auditoría A abierta
-- [x] 04 · Mapa: 23 puntos georreferenciados (5 zonas de alojamiento, 18 excursiones); Ginebra representa la ciudad, no el hotel ni el aeropuerto
+- [x] 04 · Mapa: 24 puntos georreferenciados (5 zonas de alojamiento, 18 excursiones); Ginebra representa la ciudad, no el hotel ni el aeropuerto
 - [x] 05 · Experiencias: 12 fichas de MUST por región, tren Luzern–Interlaken, alternativas y gastronomía regional documentada
 - [x] 06 · Reservaciones importantes: tres grupos, 12 fichas con estado, fechas, alternativas y enlaces oficiales.
 - [x] 07 · Transporte mayor: 14 fichas y 16 referencias en jornadas; validación estructural equivalente realizada, prueba real de render y Node pendientes
 - [x] 08 · Alojamiento: cinco hoteles principales con fechas, direcciones, enlaces oficiales y Maps; tarifas exactas 2027 aún pendientes
 - [x] 09 · Día por día: 16 jornadas con mañana/tarde/noche, hoteles candidatos, movilidad, tips y planes B; horarios de tren y gastos diarios pendientes
 - [x] 10 · Panorama: narrativa, indicadores, clima, cinco alojamientos y subtotal aéreo reconciliados; prueba real Desktop/Mobile pendiente
-- [x] 11 · Presupuesto integral provisional: 35 estimaciones terrestres, vuelo cotizado, rango, TC y no duplicación; faltan precios finales.
+- [x] 11 · Presupuesto integral provisional: 35 partidas incluidas y 1 opcional sin precio, vuelo cotizado, rango, TC y no duplicación; faltan precios finales.
 - [x] 12 · Fotografías y portada: 13 jornadas con galerías, portada estival horizontal y carrusel de 6 fotografías; verificación visual de carga pendiente
 - [ ] 13 · Auditoría global: comprobaciones estáticas y PR #18 borrador realizados; aprobación final pendiente de CI y revisión visual
 
@@ -38,7 +38,7 @@
 - Verificado formato y secuencia en JSON; **no realizada inspección de DOM Desktop/Mobile ni CI del repositorio**. La validación visual se mantiene para auditoría global.
 
 ## Verificación de Mapa · 2026-11-16
-- 23 pines: 5 alojamientos y 18 excursiones, con 23 nombres únicos, coordenadas numéricas y orden de recorrido.
+- 24 pines: 5 alojamientos y 18 excursiones, con 23 nombres únicos, coordenadas numéricas y orden de recorrido.
 - Todos los puntos de alojamiento se vinculan a `bases`; el punto del aeropuerto usa `stayName: "Ginebra o entorno del aeropuerto"` para las noches, sin inventar un hotel exacto.
 - Puntos opcionales de senderismo/visibilidad identificados: Bachalpsee, Riffelsee y Sunnegga. Gimmelwald aparece en el itinerario pero sin pin individual hasta verificar su ubicación precisa; visita secundaria del día de Mürren.
 - No se incorporan trenes Bernina ni Glacier ni atractivos descartados. Coordenadas combinan geografía documentada del proyecto y referencias externas geográficas.
@@ -144,7 +144,7 @@
 ## Auditoría global de pies a cabeza · 2026-11-16
 - **Rama** feature/suiza-verde-2027, PR en borrador https://github.com/JesusRiddle/atlas-viajes/pull/18. PR #11 anterior fue fusionado con una versión muy anterior; sus checks exitosos no validan la rama actual.
 - **Alcance**: fechas consecutivas 12–27 junio 2027 (16 días), 14 pernoctas/5 hoteles y 14 transportes (1 vuelo global y 13 fichas terrestres); referencias day.transportRefs y day.hotel correctas.
-- **Nueve secciones**: Panorama con tres indicadores y clima independiente; mapa 23 pines; 12 meses de Temporadas; 12 Experiencias; tres grupos de Reservaciones; Movilidad y Alojamientos referenciados; 16 jornadas con mañana/tarde/noche, notas y transporte; 35 partidas de presupuesto sin duplicar vuelos ni fondos.
+- **Nueve secciones**: Panorama con tres indicadores y clima independiente; mapa 24 pines; 12 meses de Temporadas; 12 Experiencias; tres grupos de Reservaciones; Movilidad y Alojamientos referenciados; 16 jornadas con mañana/tarde/noche, notas y transporte; 35 partidas de presupuesto sin duplicar vuelos ni fondos.
 - **Fotos**: 7 imágenes nuevas específicas de Trümmelbach, Gimmelwald, Luzern–Interlaken Express, estación Titlis Rotair, cueva Titlis, Sunnegga y Leisee; 29 apariciones en 13 días, cuatro marcadas opcionales, 27 claves únicas usadas al incluir portada y carrusel. Días 1 y 16 sin foto por ser vuelo, y día 15 sin atracción turística. Portada Oeschinensee contrastada en Wikimedia Commons como paisaje panorámico 2022, autor Deralpinbergsteiger CC BY-SA 4.0.
 - **Carrusel**: sustituida duplicación temática Oeschinensee+otra vista del lago por foto de Grindelwald/Eiger, conservando seis lugares visualmente distintos.
 - **Tests antiguos reparados**: expectativas de presupuesto vacío y texto de subtotal exclusivamente aéreo ya no correspondían al presupuesto integral; se actualizó prueba de Panorama y cobertura explícita de siete excursiones, optionalPlaces y 35 expenses.
@@ -152,6 +152,15 @@
 - **Validaciones estáticas efectivamente realizadas**: JSON, integridad de referencia de galería y licencia, pies de foto de 15–30 palabras, días y pernoctas, correspondencia de transportes con fondos económicos, 12 meses con rangos, títulos de indicadores, introHighlights presentes, IDs únicos de transportes/gastos, sintaxis de archivos JS/CJS consultados. Sin problemas en estas verificaciones.
 - **Pendiente de aprobación**: resultado del workflow actual Atlas checks con Node y Chromium para Desktop/Mobile; visita visual manual del usuario y evidencia de carga/color/recorte de todas las fotos. Si falla CI, corregir antes de solicitar merge.
 - **Pendiente de contratación, no necesariamente bloqueo de contenido editorial**: tarifas exactas hoteles, horarios de trenes/teleféricos, comparativa cuantificada de pases y solución real de equipaje para Heididorf el martes; mantenerse condicionadas en el itinerario y no presentarlas como reservas.
+
+## Ajustes de la auditoría final · 2026-11-16
+- Fotos faltantes de siete actividades y opcionales incorporadas a galería: Trümmelbach, Gimmelwald, Luzern–Interlaken Express, Titlis Rotair, cueva glaciar, Sunnegga y Leisee. Galerías: 29 fotografías mostradas en 13 jornadas; seis fotografías marcadas como visita opcional (Bachalpsee, Gimmelwald, Wengen, Riffelsee, Sunnegga, Leisee); sin imágenes artificiales de vuelos.
+- Mapa completado con Gimmelwald en coordenadas verificadas aproximadas y Wengen marcado opcional. Resultado: 24 pines en orden de recorrido (5 estancias, 19 atractivos o poblaciones).
+- Sunnegga corregido como actividad opcional de costo aún no cotizado, independiente de Gornergrat: expenses ahora contiene 35 partidas no opcionales y una opcional de importe null; total central no varía.
+- Carrusel de portada sin duplicar dos vistas de Oeschinensee; segunda toma sustituida por Grindelwald/Eiger.
+- Tests obsoletos reparados: evolución de presupuesto de vacío a integral, vuelo multidestino, ocho tarjetas de días laborales en Inicio y siete viajes con datos en la comparativa. Los checks de Panorama incluyen Suiza Verde.
+- Corregida la tasa de conversión histórica Wise del 16/11/2026 a 22.08 MXN por CHF; 5,195 CHF de partidas no opcionales + 23,300.14 MXN de vuelo = 138,005.74 MXN estimados. Rango de planeación 118,000–157,000 MXN.
+- PR #18 permanece en borrador y no debe fusionarse sin CI verde del commit final y revisión visual del propietario. Las fuentes Commons tienen autor/licencia, pero la comprobación de carga HTTP/color/recorte de cada foto requiere inspección de navegador y/o revisión manual.
 
 ## Pendientes prioritarios
 1. Cotizar las cinco estancias de junio 2027 y comparar tres opciones de pase/tickets con todas las rutas y suplementos.
