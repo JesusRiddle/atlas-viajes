@@ -360,7 +360,9 @@
           "url": "https://www.jungfrau.ch/en-gb/grindelwaldfirst/"
         }
       ],
-      "optionalPlaces": []
+      "optionalPlaces": [
+        "swissgreen-bachalpsee"
+      ]
     },
     {
       "n": 9,
@@ -525,7 +527,9 @@
           "url": "https://www.gornergrat.ch/en/"
         }
       ],
-      "optionalPlaces": []
+      "optionalPlaces": [
+        "swissgreen-riffelsee"
+      ]
     },
     {
       "n": 14,
