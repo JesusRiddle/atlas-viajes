@@ -1,0 +1,75 @@
+{
+  "id": "suiza-ferroviaria",
+  "name": "Suiza Ferroviaria — Glacier & Bernina Express",
+  "flag": "🇨🇭",
+  "start": null,
+  "end": null,
+  "tag": "GRANDES TRENES PANORÁMICOS · GRISONES Y ENGADINA",
+  "travelerCount": 1,
+  "routeCities": [],
+  "bases": [],
+  "intro": null,
+  "introShort": null,
+  "seasonality": {
+    "summary": null,
+    "months": {
+      "10": {
+        "status": "pending",
+        "description": null
+      },
+      "11": {
+        "status": "pending",
+        "description": null
+      },
+      "12": {
+        "status": "pending",
+        "description": null
+      },
+      "01": {
+        "status": "pending",
+        "description": null
+      },
+      "02": {
+        "status": "pending",
+        "description": null
+      },
+      "03": {
+        "status": "pending",
+        "description": null
+      },
+      "04": {
+        "status": "pending",
+        "description": null
+      },
+      "05": {
+        "status": "pending",
+        "description": null
+      },
+      "06": {
+        "status": "pending",
+        "description": null
+      },
+      "07": {
+        "status": "pending",
+        "description": null
+      },
+      "08": {
+        "status": "pending",
+        "description": null
+      },
+      "09": {
+        "status": "pending",
+        "description": null
+      }
+    }
+  },
+  "experiences": [],
+  "days": [],
+  "mapPoints": [],
+  "hotels": [],
+  "expenses": [],
+  "majorTransport": [],
+  "reservations": [],
+  "exchangeRates": {},
+  "cover": null
+}
