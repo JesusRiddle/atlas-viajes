@@ -36,8 +36,8 @@
       1
     ]
   ],
-  "intro": null,
-  "introShort": null,
+  "intro": "Desde Zúrich, las montañas del Valais conducen a Zermatt, punto de partida del Glacier Express. El tren atraviesa el paso Oberalp, la garganta del Rin y la línea Albula hasta St. Moritz, entre puentes y viaductos históricos. Pontresina permite descubrir los glaciares de Diavolezza, los pueblos de Samedan y Zuoz, y los lagos de Sils y Silvaplana. Una excursión ferroviaria hacia Filisur ofrece la perspectiva exterior del viaducto Landwasser. La línea Bernina cruza Lago Bianco y Alp Grüm antes de descender por Valposchiavo y el viaducto espiral de Brusio hasta Tirano. El último tramo sigue en tren hacia Milán.",
+  "introShort": "De Zermatt a St. Moritz en el Glacier Express, entre pasos alpinos y viaductos históricos. Engadina aporta pueblos tradicionales, lagos y glaciares antes de cruzar la línea Bernina hasta Tirano y continuar a Milán.",
   "seasonality": {
     "summary": "Junio de 2027 es la primera opción, con recorrido del 12 al 22 de junio y estancia en Engadina del 16 al 21. La segunda quincena aporta praderas verdes, nieve residual en cumbres y luz prolongada. Diavolezza opera en esta ventana y Corvatsch comienza temporada de verano el 19 de junio de 2027; Furtschellas comienza el 26 de junio y queda fuera. Septiembre queda como alternativa estacional. Las temperaturas son promedios históricos de Samedan, no pronósticos.",
     "months": {
@@ -152,7 +152,9 @@
       "mobility": "ZRH → Zürich HB en tren; alojamiento a pie sujeto a elección.",
       "note": "No añadir visitas reservadas durante la tarde de llegada.",
       "spend": null,
-      "places": [],
+      "places": [
+        "zurich"
+      ],
       "headerPlaces": [],
       "optionalPlaces": []
     },
@@ -167,7 +169,9 @@
       "mobility": "Traslado completo Zürich HB → Zermatt Bahnhof; tiempo y billete pendientes.",
       "note": "Evitar añadir Gornergrat por repetición de los viajes anteriores.",
       "spend": null,
-      "places": [],
+      "places": [
+        "zermatt"
+      ],
       "headerPlaces": [],
       "optionalPlaces": []
     },
@@ -182,7 +186,9 @@
       "mobility": "Desplazamientos locales a pie.",
       "note": "Si la tarifa de hotel es alta, reevaluar la segunda noche antes de reservar.",
       "spend": null,
-      "places": [],
+      "places": [
+        "zermatt"
+      ],
       "headerPlaces": [],
       "optionalPlaces": []
     },
@@ -197,7 +203,11 @@
       "mobility": "Zermatt → St. Moritz por Glacier Express; St. Moritz → Pontresina regional.",
       "note": "También opera el Glacier Express PE 904, Zermatt 09:50 → St. Moritz 17:36 (horario verano 2027). Reserva obligatoria, no realizada; billete y reserva se cotizan por separado y no se duplican al usar pases.",
       "spend": null,
-      "places": [],
+      "places": [
+        "glacier",
+        "stmoritz",
+        "pontresina"
+      ],
       "headerPlaces": [],
       "optionalPlaces": [],
       "noteLinks": [
@@ -218,7 +228,10 @@
       "mobility": "Pontresina ↔ Bernina Diavolezza; extensión opcional en regional hacia Alp Grüm (ida y regreso). Horarios de 2027 pendientes para conexión.",
       "note": "En Alp Grüm no hay casilleros (RhB). Hacer esta excursión sin maleta; elegir entre excursionismo pausado y extensión Alp Grüm según tiempos. Verificar inclusión de Diavolezza en beneficio hotelero.",
       "spend": null,
-      "places": [],
+      "places": [
+        "bernina-line",
+        "pontresina"
+      ],
       "headerPlaces": [],
       "optionalPlaces": []
     },
@@ -233,7 +246,10 @@
       "mobility": "Trenes y autobuses locales; cobertura hotelera por comprobar.",
       "note": "No acumular dos excursiones caras si la visibilidad es mala.",
       "spend": null,
-      "places": [],
+      "places": [
+        "pontresina",
+        "stmoritz"
+      ],
       "headerPlaces": [],
       "optionalPlaces": []
     },
@@ -248,7 +264,10 @@
       "mobility": "Transporte regional por confirmar.",
       "note": "Furtschellas aún no abre, según calendario publicado; no programarlo.",
       "spend": null,
-      "places": [],
+      "places": [
+        "stmoritz",
+        "pontresina"
+      ],
       "headerPlaces": [],
       "optionalPlaces": []
     },
@@ -263,7 +282,10 @@
       "mobility": "Regional Pontresina → Filisur (ida y vuelta); elegir horarios diurnos.",
       "note": "La ruta Glacier ya atravesó el viaducto; la excursión se justifica solo por vistas exteriores.",
       "spend": null,
-      "places": [],
+      "places": [
+        "glacier",
+        "stmoritz"
+      ],
       "headerPlaces": [],
       "optionalPlaces": []
     },
@@ -278,7 +300,10 @@
       "mobility": "Pontresina → Tirano por RhB regional, sin paradas turísticas largas con maleta; Tirano → Milano Centrale por Trenord. Billetes y horarios pendientes.",
       "note": "La parada en Alp Grüm se propone el 17 sin equipaje, pues esa estación no dispone de casilleros. No conectar el tren de Tirano con un vuelo internacional el mismo día.",
       "spend": null,
-      "places": [],
+      "places": [
+        "bernina-line",
+        "tirano"
+      ],
       "headerPlaces": [],
       "optionalPlaces": [],
       "mobilityLinks": [
@@ -468,7 +493,7 @@
     ]
   ],
   "exchangeRates": {},
-  "cover": null,
+  "cover": "glacier",
   "flight": "PRIMERA OPCIÓN DE PLANIFICACIÓN: JUNIO 2027, COTIZACIÓN NO COMPRADA · Google Flights, consulta 17 nov 2026, multidestino para 1 adulto, Turista: MEX→ZRH sábado 12 junio 2027, Lufthansa LH499 Boeing 747, salida 19:50 y llegada Frankfurt (FRA) domingo 13 junio 14:50; escala 1 h 40 min; FRA→ZRH Lufthansa LH1194 Airbus A320neo, 16:30–17:25. Regreso martes 22 junio 2027: MXP→FRA Lufthansa LH249 Airbus A321, 11:00–12:20; escala FRA 1 h 10 min; FRA→MEX Lufthansa LH498 Boeing 747, 13:30–17:30. Total mostrado MXN 17,450 al reservar con SWISS, frente a MXN 17,878 al reservar con Lufthansa. Google Flights indica 1 pieza de equipaje de mano gratis; equipaje documentado con cargo. Verificar precio final, condiciones de tarifa y conexión protegida antes de comprar. La conexión de regreso de 1 h 10 min en FRA es ajustada. Fechas 12–22 junio de 2027 elegidas como primera opción para diseñar el itinerario; no son billetes comprados ni fechas inamovibles.\n\nCOTIZACIÓN ALTERNATIVA SEPTIEMBRE 2027 · Google Flights, captura facilitada por el viajero el 17 nov 2026. Multidestino 1 adulto, turista: MEX→ZRH sábado 4 septiembre: LH499, MEX 19:50→FRA 14:50 (+1); LH1194, FRA 16:30→ZRH 17:25 (+1); escala FRA 1 h 40 min. MXP→MEX martes 14 septiembre: LH249, MXP 11:00→FRA 12:20; LH498, FRA 13:30→MEX 17:30; escala FRA 1 h 10 min. Precio total mostrado por SWISS $21,419 MXN; por Lufthansa $21,848 MXN. Una pieza de equipaje de mano incluida según Google Flights, equipaje documentado con cargo adicional; condiciones finales por verificar. Comparación equivalente junio 12–22: $17,450 MXN (SWISS), diferencia $3,969 MXN. Septiembre es escenario alternativo; ambos son cotizaciones, no vuelos comprados.",
   "work": 7,
   "profile": {
@@ -483,5 +508,64 @@
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
     "reservationNote": "El vuelo de junio está cotizado pero no comprado. Glacier Express requiere reserva obligatoria; para los regionales Bernina la reserva es opcional. Priorizar hotel de Engadina con beneficios de remontes antes de comprar pases o billetes duplicados. Las entradas de montaña se decidirán según apertura, visibilidad y condiciones de cancelación."
-  }
+  },
+  "introHighlights": [
+    "Zúrich",
+    "Zermatt",
+    "Glacier Express",
+    "paso Oberalp",
+    "garganta del Rin",
+    "línea Albula",
+    "St. Moritz",
+    "Pontresina",
+    "Diavolezza",
+    "Samedan",
+    "Zuoz",
+    "Sils",
+    "Silvaplana",
+    "viaducto Landwasser",
+    "línea Bernina",
+    "Alp Grüm",
+    "Brusio",
+    "Tirano",
+    "Milán"
+  ],
+  "climate": "Del 13 al 21 de junio, Zúrich y Milán suelen ser templados a cálidos, mientras que Zermatt y la Alta Engadina mantienen noches frescas. Como referencia histórica, Samedan presenta en junio aproximadamente 3 a 17 °C entre mínima y máxima medias; en Diavolezza, el paso Bernina y otros miradores elevados puede haber temperaturas bajo cero, viento o nieve residual. Las lluvias y nubes pueden reducir la visibilidad de glaciares y viaductos. No es un pronóstico de junio de 2027.\n\n*Qué llevar:* Capas ligeras, impermeable cortaviento, forro polar, guantes delgados y calzado de buena adherencia. Con equipaje de mano, priorizar ropa adaptable para estaciones, trenes y cumbres; no programar senderos altos si hay nieve o hielo.\n\n*Horas de luz:* Cerca del solsticio de junio, en Pontresina hay aproximadamente 15 h 45 min de luz; el amanecer ronda las 05:25 y la puesta del sol las 21:10 (hora suiza CEST). Es una referencia astronómica aproximada: los valles montañosos pueden quedar a la sombra antes. Para miradores altos, usar previsión y último horario de remonte, no solo la puesta del sol.",
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Ferroviario · moderado",
+      "tone": "green",
+      "text": "Viaje en solitario: nueve noches en cuatro alojamientos. Glacier Express completo, Bernina regional, pueblos de Engadina y miradores accesibles en remontes, sin deportes de invierno. Cambios de alojamiento concentrados y equipaje de mano."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Alemán/romanche/italiano · CHF/EUR",
+      "tone": "green",
+      "text": "En Zúrich y Zermatt predomina el alemán; en Engadina también se habla romanche y en el sur del cantón Grisones, italiano. En Tirano y Milán se utiliza italiano. Suiza usa CHF e Italia EUR; preferir pagos en moneda local y conservar algo de efectivo para pequeños gastos."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Verificar ETIAS",
+      "tone": "orange",
+      "text": "Pasaporte mexicano: estancia turística Schengen corta sin visado bajo reglas vigentes, siempre que se cumplan requisitos de validez de documento, estancia y medios. Entrada al espacio Schengen vía Frankfurt y salida por el mismo aeropuerto de conexión; comprobar si ETIAS ya será exigible en junio de 2027 en el portal oficial de la UE. Suiza: tomas C/J a 230 V/50 Hz; Italia: C/F/L a 230 V/50 Hz. Las clavijas mexicanas A/B requieren adaptador compatible tipo J en Suiza y tipo L/C en Italia (con tierra adecuada cuando corresponda); verificar que cargadores acepten INPUT 100–240 V. Seguro con cobertura de actividades alpinas moderadas."
+    }
+  ],
+  "solo": "Recorrido para una persona que prioriza trenes, habitaciones individuales con baño privado y excursiones de baja exigencia física; no requiere conducir. La visita a Alp Grüm se propone sin maleta para evitar depender de consignas inexistentes.",
+  "local": "Trayectos interurbanos en SBB, MGB, RhB y Trenord; Glacier Express completo entre Zermatt y St. Moritz el 16 de junio (PE 902 propuesto), y Bernina regional de Pontresina a Tirano el 21 de junio. Movilidad local por tren, autobús y remontes según el alojamiento y pase elegido. Verificar los enlaces regionales y no sumar billetes que ya cubra un pase o el beneficio del hotel.",
+  "routeHighlights": [
+    "Glacier Express",
+    "línea Albula",
+    "Engadina",
+    "línea Bernina",
+    "viaducto Landwasser"
+  ],
+  "cardHighlights": [
+    "Glacier Express",
+    "línea Bernina",
+    "Engadina"
+  ]
 }
