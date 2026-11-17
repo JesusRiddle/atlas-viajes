@@ -108,7 +108,8 @@ const assert = require('node:assert/strict');
       const orlandoHomeCard = page.locator('#viajes .tripcard[href="#viaje/orlando-2026"]');
       assert.equal(await orlandoHomeCard.count(), 1, 'Orlando: portada presente');
       const workDayBadges = featuredCards.locator('.cardfacts span');
-      assert.equal(await workDayBadges.count(), 7, 'No inventar días laborales en viaje sin dato calculado');
+      assert.equal(await workDayBadges.count(), 8,
+        'Los ocho viajes principales tienen días laborales calculados o declarados; Suiza Verde incluye 10');
       const workingDayTexts = await workDayBadges.allInnerTexts();
       assert.ok(workingDayTexts.every(value => /^\d+ días laborales$/.test(value)),
         'Portada: escribir siempre X días laborales');
