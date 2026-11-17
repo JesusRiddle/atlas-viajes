@@ -4907,5 +4907,82 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Deralpinbergsteiger"
     }
+  },
+  "swissgreen-trummelbach": {
+    "name": "Cataratas interiores de Trümmelbach",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Inside%20Tr%C3%BCmmelbach%20Falls.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Inside_Trümmelbach_Falls.jpg",
+      "author": "ChiSci",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "attribution": "ChiSci"
+    }
+  },
+  "swissgreen-gimmelwald": {
+    "name": "Gimmelwald, pueblo alpino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gimmelwald%20village%20center.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Gimmelwald_village_center.jpg",
+      "author": "Dick107~commonswiki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Dick107~commonswiki"
+    }
+  },
+  "swissgreen-luzern-interlaken-express": {
+    "name": "Luzern–Interlaken Express",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Luzern-Interlaken%20Express%20am%20Lungerersee.jpeg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Luzern-Interlaken_Express_am_Lungerersee.jpeg",
+      "author": "Zentralbahn",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "attribution": "Zentralbahn"
+    }
+  },
+  "swissgreen-titlis-rotair": {
+    "name": "Estación superior de Titlis Rotair",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/00%200494%20Bergbahnen%20Engelberg-Tr%C3%BCbsee-Titlis.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:00_0494_Bergbahnen_Engelberg-Trübsee-Titlis.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "W. Bulach"
+    }
+  },
+  "swissgreen-titlis-icecave": {
+    "name": "Cueva glaciar del Titlis",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/TitlisIceCave.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:TitlisIceCave.jpg",
+      "author": "Audrius Meskauskas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Audrius Meskauskas"
+    }
+  },
+  "swissgreen-sunnegga": {
+    "name": "Sunnegga y montañas del Valais",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sunnegga.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunnegga.jpg",
+      "author": "Tiia Monto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Tiia Monto"
+    }
+  },
+  "swissgreen-leisee": {
+    "name": "Lago Leisee en Zermatt",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Leisee.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Leisee.jpg",
+      "author": "Mumpitz312",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Mumpitz312"
+    }
   }
 }
