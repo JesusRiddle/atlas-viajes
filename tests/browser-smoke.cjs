@@ -175,6 +175,35 @@ const assert = require('node:assert/strict');
         // Esperar navegación específica: la portada del viaje anterior aún puede existir tras cambiar el hash.
         await page.locator('.subnav a[href*="#viaje/' + id + '/"]').first().waitFor();
         for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1, viewport.width + ' ' + id + ' ' + anchor);
+        // Un mismo contrato de diseño para tarjetas de mapa y alojamientos en todos los viajes.
+        assert.equal(await page.locator('#alojamientos h2').innerText(), 'Tus alojamientos.',
+          id + ': el título no cambia por candidatos ni alternativas');
+        const mapNames = page.locator('#mapa .map-city-name');
+        const mapCount = await mapNames.count();
+        if (mapCount > 0) {
+          const mapTypography = await mapNames.evaluateAll(nodes => nodes.map(node => {
+            const main = node.querySelector('.map-city-primary');
+            const qualifier = node.querySelector('.map-city-qualifier');
+            return {
+              main: Boolean(main),
+              weight: main ? getComputedStyle(main).fontWeight : '',
+              qualifierWeight: qualifier ? getComputedStyle(qualifier).fontWeight : null,
+              title: node.innerText
+            };
+          }));
+          assert.ok(mapTypography.every(item => item.main && Number(item.weight) >= 700),
+            id + ': el nombre de todas las tarjetas del mapa debe ir en negritas');
+          assert.ok(mapTypography.every(item => item.qualifierWeight === null ||
+            Number(item.qualifierWeight) <= 400),
+            id + ': las aclaraciones entre paréntesis no llevan negritas');
+        }
+        const hotelHeadings = page.locator('#alojamientos .hotel-card h4');
+        const hotelLayout = await hotelHeadings.evaluateAll(nodes => nodes.map(node => ({
+          city: Boolean(node.querySelector('.hotel-heading-city')),
+          overflow: node.scrollWidth > node.clientWidth + 3
+        })));
+        assert.ok(hotelLayout.every(item => !item.overflow),
+          id + ': encabezados de hotel sin desbordamiento horizontal');
         const text = await page.locator('main').innerText();
         const invalidValue = /undefined|Invalid Date|NaN/.exec(text);
         assert.equal(invalidValue, null, id + ' has invalid UI value near: ' + (invalidValue ? text.slice(Math.max(0, invalidValue.index - 140), invalidValue.index + 170) : 'none'));
@@ -286,7 +315,7 @@ const assert = require('node:assert/strict');
           const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           const hotels = page.locator('#alojamientos .hotel-card');
           assert.equal(await hotels.count(), 2, 'Orlando: solo Plan A y alternativa excluyente');
-          assert.match(await page.locator('#alojamientos h2').innerText(), /Alojamiento elegido y alternativa/);
+          assert.equal(await page.locator('#alojamientos h2').innerText(), 'Tus alojamientos.');
           const lodgingText = await page.locator('#alojamientos').innerText();
           for (const fragment of ['Rosen Inn Closest to Universal','Deluxe Double',
             '5500 Epic Blvd','Terra Luna','EXCLUYENTE','US$539.94','US$1,577.46']) {
