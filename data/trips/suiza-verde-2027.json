@@ -789,12 +789,12 @@
     ]
   ],
   "exchangeRates": {
-    "CHF": 22.12
+    "CHF": 22.08
   },
   "exchangeRateSnapshot": {
     "date": "2026-11-16",
     "baseCurrency": "MXN",
-    "description": "Tipo de cambio de referencia, no tasa de compra.",
+    "description": "1 CHF ≈ 22.08 MXN, referencia media de Wise del 16 noviembre 2026; sin comisiones y no tasa de compra.",
     "sources": {
       "CHF": "https://wise.com/gb/currency-converter/chf-to-mxn-rate/history/16-11-2026"
     }
@@ -2933,7 +2933,7 @@
     118000,
     157000
   ],
-  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,214 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.12 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha.",
+  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,006 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.08 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha.",
   "placeDescriptions": {
     "zurich": "A orillas del Limmat, las fachadas históricas y las torres del Grossmünster dibujan uno de los paseos urbanos más agradables de Zúrich.",
     "swiss27-lindt": "Una enorme fuente de chocolate recibe a los visitantes en el museo Lindt, dedicado a la historia, las técnicas y los sabores del cacao.",
