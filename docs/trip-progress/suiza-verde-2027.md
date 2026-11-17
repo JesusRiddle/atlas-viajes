@@ -162,6 +162,13 @@
 - Corregida la tasa de conversión histórica Wise del 16/11/2026 a 22.08 MXN por CHF; 5,195 CHF de partidas no opcionales + 23,300.14 MXN de vuelo = 138,005.74 MXN estimados. Rango de planeación 118,000–157,000 MXN.
 - PR #18 permanece en borrador y no debe fusionarse sin CI verde del commit final y revisión visual del propietario. Las fuentes Commons tienen autor/licencia, pero la comprobación de carga HTTP/color/recorte de cada foto requiere inspección de navegador y/o revisión manual.
 
+## Ajustes visuales compartidos · 2026-11-16
+- Tarjetas del mapa: todos los nombres principales en negritas, paréntesis/subtítulos y metadatos en peso normal. Aplicable a Suiza Verde, Suiza Nevada y el resto de Atlas desde `travel-ui.js` y `style.css`.
+- Dónde dormir: título invariable **«Tus alojamientos.»**, incluso con planes alternativos; formato continuo «Ciudad · Hotel» en cabeceras de `components/sections.js`.
+- Guía editorial actualizada con ambas reglas permanentes. Pruebas Browser Desktop/Mobile añadidas para títulos, tipografías y ausencia de desbordamientos; expectativa de Orlando corregida.
+- CI del commit de código `3140d13ae3de6d32ea0ea63dbfd59cb9cb275060`: Node, JSON y Chromium Desktop/Mobile **success** (workflow 44027197588). Este registro documental posterior crea otro commit que conserva el código aprobado.
+- PR #18 permanece abierto sin merge, a la espera de confirmación del usuario.
+
 ## Pendientes prioritarios
 1. Cotizar las cinco estancias de junio 2027 y comparar tres opciones de pase/tickets con todas las rutas y suplementos.
 2. Confirmar calendario de apertura de Heididorf (15 junio), teleféricos, senderos, Jungfraujoch y barco Brienz.
