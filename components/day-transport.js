@@ -13,8 +13,17 @@ window.AtlasDayTransport = (() => {
                 const current = selections[id] || {};
                 const option = item.options.find(x => x.id === (current.option || item.selectedOption)) || item.options[0];
                 const fare = option.fares.find(x => x.id === (current.fare || option.selectedFare)) || option.fares[0];
-                const journeys = option.journeys.filter(j => j.direction === 'roundtrip' ||
-                    j.segments.some(seg => seg.departure?.startsWith(d.date)));
+                // Las rutas en planeación todavía no tienen horarios; mostrar sus tramos
+                // cuando el día los referencia, sin fingir fechas u horas.
+                // Para vuelos fechados, incluir la llegada al día siguiente,
+                // pero no mezclar el regreso con la ida.
+                const journeys = (option.journeys || []).filter(j => {
+                    const segments = j.segments || [];
+                    const dated = segments.some(seg => seg.departure || seg.arrival);
+                    if (!dated) return item.day == null || item.day === d.n;
+                    return segments.some(seg =>
+                        seg.departure?.startsWith(d.date) || seg.arrival?.startsWith(d.date));
+                });
                 const hour = date => date ? date.slice(11, 16) : '—';
                 const elapsed = (a, b) => {
                     const ms = Date.parse(b) - Date.parse(a);

@@ -108,7 +108,8 @@ const assert = require('node:assert/strict');
       const orlandoHomeCard = page.locator('#viajes .tripcard[href="#viaje/orlando-2026"]');
       assert.equal(await orlandoHomeCard.count(), 1, 'Orlando: portada presente');
       const workDayBadges = featuredCards.locator('.cardfacts span');
-      assert.equal(await workDayBadges.count(), 7, 'No inventar días laborales en viaje sin dato calculado');
+      assert.equal(await workDayBadges.count(), 8,
+        'Los ocho viajes principales tienen días laborales calculados o declarados; Suiza Verde incluye 10');
       const workingDayTexts = await workDayBadges.allInnerTexts();
       assert.ok(workingDayTexts.every(value => /^\d+ días laborales$/.test(value)),
         'Portada: escribir siempre X días laborales');
@@ -147,14 +148,14 @@ const assert = require('node:assert/strict');
         'Orlando: rango preliminar etiquetado, no presentado como compra');
       assert.equal(await ideaCards.count(), allDestinations.length - 8, 'Todos los viajes históricos deben permanecer accesibles');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
-      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 6,
+      assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 7,
         'La comparativa no debe confundir ideas históricas con viajes terminados');
       const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
       assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
       assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
       const people = await page.locator('#comparar .comparison-table tbody tr').evaluateAll(rows =>
         rows.map(row => row.cells[5].textContent.trim()));
-      assert.deepEqual(people, ['1', '1', '1', '1', '1', '2'], 'La comparativa incluye cinco viajes individuales y Patagonia para dos; Orlando mantiene presupuesto preliminar');
+      assert.deepEqual(people, ['1', '1', '1', '1', '1', '1', '2'], 'La comparativa incluye seis viajes individuales y Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
       assert.deepEqual(topIds, [
         '#viaje/orlando-2026', '#viaje/colombia-2027', '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
@@ -174,6 +175,35 @@ const assert = require('node:assert/strict');
         // Esperar navegación específica: la portada del viaje anterior aún puede existir tras cambiar el hash.
         await page.locator('.subnav a[href*="#viaje/' + id + '/"]').first().waitFor();
         for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1, viewport.width + ' ' + id + ' ' + anchor);
+        // Un mismo contrato de diseño para tarjetas de mapa y alojamientos en todos los viajes.
+        assert.equal(await page.locator('#alojamientos h2').innerText(), 'Tus alojamientos.',
+          id + ': el título no cambia por candidatos ni alternativas');
+        const mapNames = page.locator('#mapa .map-city-name');
+        const mapCount = await mapNames.count();
+        if (mapCount > 0) {
+          const mapTypography = await mapNames.evaluateAll(nodes => nodes.map(node => {
+            const main = node.querySelector('.map-city-primary');
+            const qualifier = node.querySelector('.map-city-qualifier');
+            return {
+              main: Boolean(main),
+              weight: main ? getComputedStyle(main).fontWeight : '',
+              qualifierWeight: qualifier ? getComputedStyle(qualifier).fontWeight : null,
+              title: node.innerText
+            };
+          }));
+          assert.ok(mapTypography.every(item => item.main && Number(item.weight) >= 700),
+            id + ': el nombre de todas las tarjetas del mapa debe ir en negritas');
+          assert.ok(mapTypography.every(item => item.qualifierWeight === null ||
+            Number(item.qualifierWeight) <= 400),
+            id + ': las aclaraciones entre paréntesis no llevan negritas');
+        }
+        const hotelHeadings = page.locator('#alojamientos .hotel-card h4');
+        const hotelLayout = await hotelHeadings.evaluateAll(nodes => nodes.map(node => ({
+          city: Boolean(node.querySelector('.hotel-heading-city')),
+          overflow: node.scrollWidth > node.clientWidth + 3
+        })));
+        assert.ok(hotelLayout.every(item => !item.overflow),
+          id + ': encabezados de hotel sin desbordamiento horizontal');
         const text = await page.locator('main').innerText();
         const invalidValue = /undefined|Invalid Date|NaN/.exec(text);
         assert.equal(invalidValue, null, id + ' has invalid UI value near: ' + (invalidValue ? text.slice(Math.max(0, invalidValue.index - 140), invalidValue.index + 170) : 'none'));
@@ -181,7 +211,7 @@ const assert = require('node:assert/strict');
         assert.ok(navigationCount >= 9, id + ' navigation links ' + navigationCount);
         // Contrato editorial del Panorama: tres indicadores a la izquierda, clima separado a la derecha.
         if (['orlando-2026', 'suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
-          'japon-2027', 'patagonia-argentina-2027'].includes(id)) {
+          'suiza-verde-2027', 'japon-2027', 'patagonia-argentina-2027'].includes(id)) {
           const indicators = page.locator('#plan .overview-intro .practical-indicator');
           assert.equal(await indicators.count(), 3, id + ' debe tener exactamente tres indicadores');
           const ids = await indicators.evaluateAll(nodes => nodes.map(node => node.dataset.indicatorId));
@@ -285,7 +315,7 @@ const assert = require('node:assert/strict');
           const tripData = JSON.parse(fs.readFileSync('data/trips/orlando-2026.json','utf8'));
           const hotels = page.locator('#alojamientos .hotel-card');
           assert.equal(await hotels.count(), 2, 'Orlando: solo Plan A y alternativa excluyente');
-          assert.match(await page.locator('#alojamientos h2').innerText(), /Alojamiento elegido y alternativa/);
+          assert.equal(await page.locator('#alojamientos h2').innerText(), 'Tus alojamientos.');
           const lodgingText = await page.locator('#alojamientos').innerText();
           for (const fragment of ['Rosen Inn Closest to Universal','Deluxe Double',
             '5500 Epic Blvd','Terra Luna','EXCLUYENTE','US$539.94','US$1,577.46']) {

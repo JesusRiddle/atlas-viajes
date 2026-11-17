@@ -282,8 +282,20 @@ window.AtlasTrip = function (ctx) {
         const partyLabel = Number.isInteger(t.travelerCount) && t.travelerCount > 0
             ? t.travelerCount + (t.travelerCount === 1 ? ' persona' : ' personas')
             : 'grupo por definir';
-        const budgetContext = 'MXN · ' + partyLabel + (forecast || dynamicEstimate
-            ? ' · proyección global, no cotización' : ' · estimación parcial del viaje');
+        // Una cotización aérea aislada no es el presupuesto completo del viaje.
+        // La etiqueta se actualiza automáticamente cuando se registran gastos terrestres.
+        const quotedTransports = (t.majorTransport || []).filter(item => {
+            const option = item.options?.find(o => o.id === item.selectedOption);
+            const fare = option?.fares?.find(f => f.id === option.selectedFare);
+            return fare?.price && Number.isFinite(fare.price.amount) && fare.price.amount > 0;
+        });
+        const flightOnlySubtotal = !(t.expenses || []).some(e => Number.isFinite(e.cost?.amount)) &&
+            quotedTransports.length === 1 && quotedTransports[0].type === 'flight' &&
+            !forecast && !dynamicEstimate;
+        const budgetTeaserTitle = flightOnlySubtotal ? 'Vuelo cotizado · subtotal parcial' : 'Tu inversión aproximada';
+        const budgetContext = 'MXN · ' + partyLabel + (flightOnlySubtotal
+            ? ' · solo vuelo, sin alojamientos, trenes, entradas ni comidas'
+            : (forecast || dynamicEstimate ? ' · proyección global, no cotización' : ' · estimación parcial del viaje'));
         const fxInfo = masterOverview && t.exchangeRateSnapshot?.date && t.exchangeRates ? Object.entries(t.exchangeRates).filter(([code,rate]) => /^[A-Z]{3}$/.test(code) && Number.isFinite(rate) && rate > 0).map(([code,rate]) => code + ' 1 ≈ $' + rate.toFixed(4) + ' MXN') : [];
         const fxSource = Object.keys(t.exchangeRates || {}).map(code => t.exchangeRateSnapshot?.sources?.[code]).find(url => typeof url === 'string' && /^https:\/\//.test(url));
         const fxSourceLink = typeof fxSource === 'string' && /^https:\/\//.test(fxSource) ? ' · <a href="' + esc(fxSource) + '" target="_blank" rel="noopener noreferrer">Fuente</a>' : '';
@@ -325,7 +337,7 @@ window.AtlasTrip = function (ctx) {
             `${masterOverview ? '<div class="overview-side">' : ''}`,
             `<aside class="budget-teaser">`,
             `<div>`,
-            `<span class="eyebrow">${overviewIcon('wallet')} Tu inversión aproximada</span>`,
+            `<span class="eyebrow">${overviewIcon('wallet')} ${esc(budgetTeaserTitle)}</span>`,
             `<strong>${featuredPrice}</strong>`,
             `<p class="budget-context">${esc(budgetContext)}</p>`,
             `<a class="budget-detail-link" href="#viaje/${id}/costes">Ver desglose del presupuesto ${overviewIcon('arrow')}</a>`,
@@ -353,7 +365,7 @@ window.AtlasTrip = function (ctx) {
             alojamientos: () => [
             `${legacyAdviceTripIds.has(t.id) && canRenderFullTrip(t) ? adviceCards(t) : ''}`,
             `<article class="panel" id="alojamientos" style="margin-top:20px">`,
-            `<div class="hotel-section-heading"><div class="hotel-section-kicker">${overviewIcon('bed')}<span>Tu estancia</span></div><h2>${t.hotelsComparison ? "Alojamiento elegido y alternativa." : "Tus alojamientos."}</h2></div>`,
+            `<div class="hotel-section-heading"><div class="hotel-section-kicker">${overviewIcon('bed')}<span>Tu estancia</span></div><h2>Tus alojamientos.</h2></div>`,
             `${stayParagraphs(id)}</article>${!t.planningDetails && canRenderFullTrip(t) ? `<div class="source-warning"><strong>Antes de confirmar el viaje:</strong> confirma los vuelos para estas fechas y si el regreso llega a MEX ese mismo día. Los horarios de transportes son referencias. El gasto diario mostrado es una orientación de comidas, accesos y movilidad del día; no se suma al total, que ya los incluye por categorías.</div>` : ''}</section>`,
             ].join(''),
             dias: () => [

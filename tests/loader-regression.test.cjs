@@ -22,22 +22,23 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
         assert.equal(trip.id, module.id);
         assert.ok(Array.isArray(trip.days), module.id + ' sin días');
         assert.ok(Array.isArray(trip.mapPoints), module.id + ' sin mapa');
-        assert.ok(trip.cover || trip.status === 'draft', module.id + ' sin portada');
+        assert.ok(trip.cover === null || (typeof trip.cover === 'string' && trip.cover.length > 0), module.id + ' con portada inválida');
         assert.ok(trip.stays == null || Array.isArray(trip.stays), module.id + ' con stays inválido');
     }
 });
 
-test('Suiza verde se conserva como alternativa borrador sin portada ni reservas ficticias', () => {
+test('Suiza verde mantiene fechas, ruta y estados sin afirmar compras', () => {
     const catalog = loadCatalog();
     const module = catalog.find(item => item.id === 'suiza-verde-2027');
     assert.ok(module && module.available, 'Suiza verde registrada en el catálogo');
     const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
-    assert.equal(trip.status, 'draft');
-    assert.equal(trip.cover, null);
+    assert.equal(trip.status, null, 'El Atlas ya no emplea estado draft público');
+    assert.equal(trip.cover, 'swissgreen-oeschinensee-cover');
     assert.equal(trip.travelerCount, 1);
     assert.equal(trip.days.length, 16);
     assert.equal(trip.bases.reduce((sum, item) => sum + item[1], 0), 14);
-    assert.equal(trip.expenses.length, 0, 'No inventar costos antes de cotizar');
+    assert.equal(trip.expenses.length, 36, 'El presupuesto integral contiene partidas estimadas, no compras');
+    assert.ok(trip.expenses.every(e => e.status === 'estimated'));
     assert.ok(trip.experiences.some(item => /Titlis/i.test(JSON.stringify(item))));
     assert.ok(trip.experiences.some(item => /Heidi/i.test(JSON.stringify(item))));
     assert.ok(catalog.indexOf(module) > catalog.findIndex(item => item.id === 'suiza-nevada-2027'), 'El borrador de septiembre no desplaza la ruta de enero');
@@ -420,8 +421,8 @@ test('Colombia y Suiza siguen el orden cronológico y España + Portugal conserv
     assert.equal(trip.days[19].date, '2027-05-27');
 });
 
-test('Panorama editorial de los cinco viajes desarrollados: exactamente tres indicadores y clima independiente', () => {
-    const ids = ['suiza-nevada-2027', 'espana-portugal-2027', 'italia-norte-2027',
+test('Panorama editorial de los seis viajes desarrollados: tres indicadores y clima independiente', () => {
+    const ids = ['suiza-nevada-2027', 'suiza-verde-2027', 'espana-portugal-2027', 'italia-norte-2027',
         'japon-2027', 'patagonia-argentina-2027'];
     const expectedTitles = ['Estilo de viaje', 'Idioma y moneda', 'Documentación y consejos prácticos'];
     for (const id of ids) {
@@ -442,8 +443,8 @@ test('Panorama editorial de los cinco viajes desarrollados: exactamente tres ind
         /Clima y luz|Documentación y electricidad/);
 });
 
-test('Los cinco viajes nuevos muestran intervalos térmicos sin guiones ambiguos', () => {
-    const ids = ['suiza-nevada-2027', 'italia-norte-2027', 'espana-portugal-2027',
+test('Los seis viajes nuevos muestran intervalos térmicos sin guiones ambiguos', () => {
+    const ids = ['suiza-nevada-2027', 'suiza-verde-2027', 'italia-norte-2027', 'espana-portugal-2027',
         'japon-2027', 'patagonia-argentina-2027'];
     const validRange = /[−]?\d{1,2} a [−]?\d{1,2} °C/;
     const legacyRange = /[−-]?\d{1,2}\s*[–—-]\s*[−-]?\d{1,2}\s*°\s*C/;
@@ -710,4 +711,211 @@ test('transportes de viajes nuevos validan tarifas y no bloquean la vista si fal
     assert.doesNotThrow(() => window.AtlasMajorTransport.render(invalid),
         'La vista no debe fallar cuando una tarifa aún no existe');
     assert.match(window.AtlasMajorTransport.render(invalid), /Tarifa por cotizar/);
+});
+
+
+test('Suiza verde: Panorama sin undefined, clima de montaña y luz comprobados', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const indicators = trip.practicalIndicators;
+    assert.deepEqual(indicators.map(x => x.id), ['style', 'language', 'entry']);
+    assert.deepEqual(indicators.map(x => x.title),
+        ['Estilo de viaje', 'Idioma y moneda', 'Documentación y consejos prácticos']);
+    for (const indicator of indicators) {
+        assert.equal(typeof indicator.text, 'string');
+        assert.ok(indicator.text.trim().length >= 50, indicator.id + ': texto vacío o insuficiente');
+        assert.ok(['green', 'orange'].includes(indicator.tone));
+        assert.equal(typeof indicator.badge, 'string');
+        assert.ok(indicator.badge.trim());
+        assert.doesNotMatch(JSON.stringify(indicator), /undefined|null/);
+        assert.equal(Object.hasOwn(indicator, 'description'), false, 'No usar description en lugar de text');
+        assert.equal(Object.hasOwn(indicator, 'type'), false, 'No usar type en lugar de id');
+    }
+    assert.match(indicators[1].badge, /· CHF$/);
+    assert.match(indicators[2].text, /adaptador|toma J/i);
+    assert.equal(trip.work, 10);
+    assert.equal(trip.heroLodgingSummary, '14 noches, 5 alojamientos');
+    const paragraphs = trip.climate.trim().split(/\n\s*\n/);
+    assert.equal(paragraphs.length, 3);
+    assert.match(paragraphs[0], /mínimas nocturnas/i);
+    assert.match(paragraphs[0], /máximas diurnas/i);
+    assert.match(paragraphs[0], /Grindelwald.*Zermatt/i);
+    assert.match(paragraphs[0], /Titlis.*Jungfraujoch.*Gornergrat/i);
+    assert.match(paragraphs[1], /^\*Qué llevar:\*/);
+    assert.match(paragraphs[2], /^\*Horas de luz:\*/);
+    assert.match(paragraphs[2], /05:2[89]|05:30/);
+    assert.match(paragraphs[2], /21:2[2-6]/);
+    assert.match(paragraphs[2], /CEST.*UTC\+2/);
+    assert.doesNotMatch(trip.climate, /\d+\s*[–—-]\s*\d+\s*°C/);
+});
+
+
+test('Suiza Verde: 16 jornadas y fichas de movilidad visibles sin horarios inventados', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const hotelIds = new Map(trip.hotels.map(h => [h.id, h]));
+    const transportIds = new Set(trip.majorTransport.map(t => t.id));
+    assert.equal(trip.days.length, 16);
+    assert.equal(trip.days.filter(d => d.hotel).length, 14);
+    trip.days.forEach((day, i) => {
+        assert.equal(day.n, i + 1);
+        const expected = new Date(Date.UTC(2027, 5, 12 + i)).toISOString().slice(0, 10);
+        assert.equal(day.date, expected, 'Fecha del día ' + day.n);
+        for (const field of ['am', 'pm', 'night', 'mobility', 'note']) {
+            assert.ok(day[field] && day[field].length > 25, 'Día ' + day.n + ': ' + field);
+        }
+        assert.match(day.mobility, /• \*[^*]+:\*/, 'Formato editorial movilidad del día ' + day.n);
+        assert.match(day.note, /• \*[^*]+:\*/, 'Formato editorial tips del día ' + day.n);
+        if (day.hotel) {
+            const hotel = hotelIds.get(day.hotel);
+            assert.ok(hotel, 'Hotel inexistente ' + day.hotel);
+            assert.ok(hotel.checkIn <= day.date && hotel.checkOut > day.date,
+                'Día ' + day.n + ': hotel fuera del rango de noches');
+        }
+        for (const ref of day.transportRefs || [])
+            assert.ok(transportIds.has(ref), 'Día ' + day.n + ': transporte desconocido ' + ref);
+    });
+    const route = trip.majorTransport.find(x => x.id === 'jungfraujoch');
+    assert.equal(route.options.length, 2, 'Jungfraujoch: regreso directo y regreso por Wengen');
+    const viaWengen = route.options.find(x => x.id === 'B');
+    assert.ok(viaWengen.journeys.find(x => x.direction === 'return').segments.some(s => s.to === 'Wengen'));
+    const window = {
+        AtlasSelections: { get: () => ({}) },
+        AtlasBudget: { selectedTransportPrice: () => null, convert: () => null }
+    };
+    vm.runInNewContext(fs.readFileSync('components/day-transport.js', 'utf8'), { window });
+    const day4 = window.AtlasDayTransport.render(trip, trip.days[3]);
+    assert.match(day4, /Zürich HB/);
+    assert.match(day4, /Maienfeld/);
+    assert.match(day4, /Luzern/);
+    assert.doesNotMatch(day4, /Horario pendiente de confirmar<\/div>/,
+        'Las rutas sin horas deben mostrar nombres reales de estaciones');
+    const day10 = window.AtlasDayTransport.render(trip, trip.days[9]);
+    assert.match(day10, /Eigergletscher/);
+    assert.doesNotMatch(day10, /Zweilütschinen/, 'Ruta A no pasa por Wengen');
+    window.AtlasSelections.get = () => ({ jungfraujoch: { option: 'B' } });
+    assert.match(window.AtlasDayTransport.render(trip, trip.days[9]), /Zweilütschinen/);
+    const day2 = window.AtlasDayTransport.render(trip, trip.days[1]);
+    assert.match(day2, /17:25/, 'La llegada aérea +1 día debe aparecer en la jornada correcta');
+    assert.doesNotMatch(day2, /class="flight-leg" aria-label="GVA → FRA"/, 'No mezclar tramo de vuelo de regreso con llegada');
+    assert.doesNotMatch(day2, /class="flight-leg" aria-label="FRA → MEX"/, 'No incluir regreso a México en el día 2');
+});
+
+
+test('Suiza Verde: Panorama definitivo congruente, sin totales ficticios', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const count = str => str.trim().split(/\s+/).length;
+    assert.ok(count(trip.intro) >= 70 && count(trip.intro) <= 130);
+    assert.ok(count(trip.introShort) >= 30 && count(trip.introShort) <= 45);
+    assert.ok(trip.introHighlights.every(highlight => trip.intro.includes(highlight)),
+        'Los términos resaltados deben existir literalmente en la narrativa');
+    assert.doesNotMatch(trip.intro, /\b(no comprad[oa]|por cotizar|reservar|MXN|Economy Light|presupuesto)\b/i);
+    assert.equal(trip.bases.length, 5);
+    assert.equal(trip.bases.reduce((n, stay) => n + stay[1], 0), 14);
+    assert.match(trip.profile.paceWhy, /Cinco alojamientos/);
+    assert.match(trip.budgetNote, /Rango global estimado/i);
+    assert.match(trip.budgetNote, /no reservados|no reservad|estimad|provisi[oó]n/i);
+    assert.deepEqual(trip.budgetRange, [118000, 157000]);
+    assert.equal(trip.budgetPreliminary.useBudgetRange, true);
+    assert.equal(trip.expenses.length, 36);
+    assert.deepEqual(trip.practicalIndicators.map(x => x.id), ['style', 'language', 'entry']);
+    assert.match(trip.practicalIndicators[2].text, /EES/);
+    assert.match(trip.practicalIndicators[2].text, /ETIAS/);
+    assert.match(trip.practicalIndicators[2].text, /Frankfurt/);
+    assert.equal(trip.practicalIndicators[2].tone, 'orange');
+    assert.equal(trip.climate.trim().split(/\n\s*\n/).length, 3);
+    const renderer = fs.readFileSync('components/trip.js', 'utf8');
+    assert.match(renderer, /flightOnlySubtotal/);
+    assert.match(renderer, /Vuelo cotizado · subtotal parcial/);
+    assert.match(renderer, /solo vuelo, sin alojamientos, trenes, entradas ni comidas/);
+});
+
+
+test('Suiza Verde: presupuesto integral concilia sin duplicar vuelos ni pases', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const window = { AtlasSelections: { get: () => ({}) } };
+    vm.runInNewContext(fs.readFileSync('components/budget.js', 'utf8'), { window });
+    const summary = window.AtlasBudget.summary(trip);
+    const flight = trip.majorTransport.filter(t => t.type === 'flight');
+    assert.equal(flight.length, 1);
+    const fare = flight[0].options[0].fares[0];
+    assert.equal(fare.price.amount, 23300.14);
+    assert.ok(trip.majorTransport.filter(t => t.type !== 'flight').every(t =>
+        trip.expenses.some(e => e.id === t.budgetIncludedIn)));
+    assert.equal(trip.expenses.filter(e => e.category === 'lodging').reduce((s,e) => s + e.nights, 0), 14);
+    assert.equal(trip.expenses.filter(e => e.category === 'food').length, 16);
+    assert.equal(trip.expenses.filter(e => e.category === 'food').reduce((s,e) => s + e.cost.amount, 0), 855);
+    assert.equal(new Set(trip.expenses.map(e => e.id)).size, trip.expenses.length);
+    assert.ok(trip.expenses.every(e => e.status === 'estimated' && e.cost.currency === 'CHF'));
+    assert.equal(trip.exchangeRateSnapshot.date, '2026-11-16');
+    assert.equal(trip.exchangeRates.CHF, 22.08);
+    assert.equal(summary.knownTotalMXN, 138005.74);
+    assert.equal(summary.entries.filter(e => e.id === 'international-flight').length, 1);
+    assert.equal(summary.entries.filter(e => e.id === 'rail-provision').length, 1);
+    assert.equal(summary.entries.filter(e => e.id.startsWith('activity-')).length, 9);
+    assert.equal(trip.expenses.filter(e => e.id.startsWith('activity-') && !e.optional).reduce((sum,e) => sum + e.cost.amount, 0), 410);
+    assert.equal(trip.expenses.find(e => e.id === 'activity-sunnegga').optional, true);
+    assert.equal(trip.expenses.find(e => e.id === 'activity-sunnegga').cost.amount, null);
+    assert.equal(trip.majorTransport.find(t => t.id === 'sunnegga').budgetIncludedIn, 'activity-sunnegga');
+    assert.deepEqual(trip.expenses.find(e => e.id === 'rail-provision').dates, []);
+    assert.deepEqual(trip.budgetRange, [118000, 157000]);
+    assert.equal(trip.budgetPreliminary.useBudgetRange, true);
+    assert.equal(trip.budgetPreliminary.referenceFlightMXN, 23300.14);
+    assert.ok(summary.knownTotalMXN > trip.budgetRange[0] &&
+        summary.knownTotalMXN < trip.budgetRange[1]);
+    for (const [date, details] of Object.entries(summary.byDay)) {
+        assert.equal(new Set(details.entries.map(e=>e.id)).size, details.entries.length, date + ': duplicados');
+    }
+    assert.ok(!trip.expenses.some(e => e.concept.includes('Glacier Express') || e.concept.includes('Bernina Express')));
+});
+
+
+test('Suiza Verde: fotografías estivales, portada, galerías y créditos completos', () => {
+    const trip = JSON.parse(fs.readFileSync('data/trips/suiza-verde-2027.json', 'utf8'));
+    const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
+    assert.equal(trip.cover, 'swissgreen-oeschinensee-cover');
+    assert.equal(trip.coverSlides.length, 6);
+    assert.equal(trip.days.length, 16);
+    assert.equal(trip.days.filter(d => d.places.length).length, 13);
+    assert.deepEqual(trip.days[0].places, []);
+    assert.deepEqual(trip.days[15].places, []);
+    const ids = new Set([trip.cover, ...(trip.coverSlides || []), ...trip.days.flatMap(d => d.places || [])]);
+    const winter = /(winter|invierno|nevado)/i;
+    for (const id of ids) {
+        assert.ok(places[id]?.photo?.src, 'Fotografía sin fuente: ' + id);
+        assert.ok(!winter.test(id) && !winter.test(places[id].name),
+            'Foto de invierno no permitida en Suiza Verde: ' + id);
+        const photo = places[id].photo;
+        assert.ok(photo.source && photo.license && photo.attribution,
+            'Créditos incompletos de ' + id);
+        const desc = trip.placeDescriptions?.[id];
+        assert.equal(typeof desc, 'string', 'Pie de foto faltante: ' + id);
+        const words = desc.trim().split(/\s+/).length;
+        assert.ok(words >= 15 && words <= 30,
+            'Pie de foto fuera de 15–30 palabras: ' + id + ', ' + words);
+    }
+    assert.equal(new Set(trip.coverSlides).size, trip.coverSlides.length);
+    assert.ok(trip.days[9].optionalPlaces.includes('wengen'),
+        'Wengen debe seguir marcado como opción meteorológica y ferroviaria');
+    assert.ok(trip.days[7].places.includes('swissgreen-bachalpsee'));
+    assert.ok(trip.days[8].places.includes('swissgreen-brienz'));
+    assert.ok(trip.days[12].places.includes('swissgreen-riffelsee'));
+    assert.deepEqual(trip.days[4].places,
+        ['swissgreen-titlis', 'swissgreen-titlis-rotair', 'swissgreen-titlis-icecave']);
+    assert.ok(trip.days[5].places.includes('swissgreen-luzern-interlaken-express'));
+    assert.ok(trip.days[6].places.includes('swissgreen-trummelbach'));
+    assert.ok(trip.days[6].optionalPlaces.includes('swissgreen-gimmelwald'));
+    assert.ok(trip.days[13].optionalPlaces.includes('swissgreen-sunnegga'));
+    assert.ok(trip.days[13].optionalPlaces.includes('swissgreen-leisee'));
+    assert.equal(trip.mapPoints.length, 24, 'Mapa: 5 estancias y 19 atractivos/pueblos');
+    for (const name of ['Gimmelwald', 'Wengen', 'Bachalpsee', 'Riffelsee', 'Sunnegga']) {
+        assert.equal(trip.mapPoints.find(point => point.name === name)?.optional, true,
+            name + ': debe aparecer como opcional en el mapa');
+    }
+    assert.ok(trip.days.every(d => (d.optionalPlaces || []).every(k => d.places.includes(k))),
+        'Cada visita opcional debe mostrar su fotografía etiquetada como opción');
+    const tourPhotoIds = ['swissgreen-trummelbach', 'swissgreen-gimmelwald',
+        'swissgreen-luzern-interlaken-express', 'swissgreen-titlis-rotair',
+        'swissgreen-titlis-icecave', 'swissgreen-sunnegga', 'swissgreen-leisee'];
+    assert.ok(tourPhotoIds.every(id => ids.has(id)),
+        'No declarar completa la cobertura si falta alguna excursión u opcional');
+
 });

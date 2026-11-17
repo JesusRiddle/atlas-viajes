@@ -4797,5 +4797,192 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "attribution": "Martin Lewison"
     }
+  },
+  "swissgreen-eiger": {
+    "name": "Grindelwald y el Eiger",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/00%203442%20Grindelwald%20-%20Eiger%20(Schweiz).jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:00%203442%20Grindelwald%20-%20Eiger%20(Schweiz).jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "W. Bulach"
+    }
+  },
+  "swissgreen-heididorf": {
+    "name": "Casa de Heidi en Maienfeld",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Heididorf%20Heidihaus.jpeg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Heididorf%20Heidihaus.jpeg",
+      "author": "Adrian Michael",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "attribution": "Adrian Michael"
+    }
+  },
+  "swissgreen-titlis": {
+    "name": "Titlis Cliff Walk",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Titlis%20Cliff%20Walk.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Titlis%20Cliff%20Walk.jpg",
+      "author": "ASaber91",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "ASaber91"
+    }
+  },
+  "swissgreen-bachalpsee": {
+    "name": "Lago Bachalpsee",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bachalpsee%20in%20Grindelwald.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Bachalpsee%20in%20Grindelwald.jpg",
+      "author": "Barbara Steinemann",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Barbara Steinemann"
+    }
+  },
+  "swissgreen-giessbach": {
+    "name": "Cascadas de Giessbach",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Giessbach%20Fall.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Giessbach%20Fall.jpg",
+      "author": "Konweb4460",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Konweb4460"
+    }
+  },
+  "swissgreen-brienz": {
+    "name": "Lago Brienz",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/5604%20-%20Brienz%20-%20Looking%20across%20Brienzersee%20toward%20Giessbach.JPG?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:5604%20-%20Brienz%20-%20Looking%20across%20Brienzersee%20toward%20Giessbach.JPG",
+      "author": "Andrew Bossi",
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/",
+      "attribution": "Andrew Bossi"
+    }
+  },
+  "swissgreen-jungfraujoch": {
+    "name": "Jungfraujoch y observatorio Sphinx",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sphinx%20on%20Jungfraujoch.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Sphinx%20on%20Jungfraujoch.jpg",
+      "author": "Christoph Strässler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Christoph Strässler"
+    }
+  },
+  "swissgreen-riffelsee": {
+    "name": "Matterhorn reflejado en Riffelsee",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Matterhorn%20at%20sunrise%20reflecting%20in%20the%20Riffelsee.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Matterhorn%20at%20sunrise%20reflecting%20in%20the%20Riffelsee.jpg",
+      "author": "Deralpinbergsteiger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Deralpinbergsteiger"
+    }
+  },
+  "swissgreen-cover": {
+    "name": "Grindelwald y los Alpes berneses",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grindelwald%20Town%20and%20the%20Alps.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Grindelwald_Town_and_the_Alps.jpg",
+      "author": "Sabrina Schreiber",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Sabrina Schreiber"
+    }
+  },
+  "swissgreen-oeschinensee-cover": {
+    "name": "Oeschinensee · lago turquesa",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Oeschinensee%20panorama%20view%20with%20turquoise%20water.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Oeschinensee_panorama_view_with_turquoise_water.jpg",
+      "author": "Deralpinbergsteiger",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Deralpinbergsteiger"
+    }
+  },
+  "swissgreen-trummelbach": {
+    "name": "Cataratas interiores de Trümmelbach",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Inside%20Tr%C3%BCmmelbach%20Falls.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Inside_Trümmelbach_Falls.jpg",
+      "author": "ChiSci",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "attribution": "ChiSci"
+    }
+  },
+  "swissgreen-gimmelwald": {
+    "name": "Gimmelwald, pueblo alpino",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gimmelwald%20village%20center.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Gimmelwald_village_center.jpg",
+      "author": "Dick107~commonswiki",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Dick107~commonswiki"
+    }
+  },
+  "swissgreen-luzern-interlaken-express": {
+    "name": "Luzern–Interlaken Express",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Luzern-Interlaken%20Express%20am%20Lungerersee.jpeg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Luzern-Interlaken_Express_am_Lungerersee.jpeg",
+      "author": "Zentralbahn",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "attribution": "Zentralbahn"
+    }
+  },
+  "swissgreen-titlis-rotair": {
+    "name": "Estación superior de Titlis Rotair",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/00%200494%20Bergbahnen%20Engelberg-Tr%C3%BCbsee-Titlis.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:00_0494_Bergbahnen_Engelberg-Trübsee-Titlis.jpg",
+      "author": "W. Bulach",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "W. Bulach"
+    }
+  },
+  "swissgreen-titlis-icecave": {
+    "name": "Cueva glaciar del Titlis",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/TitlisIceCave.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:TitlisIceCave.jpg",
+      "author": "Audrius Meskauskas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Audrius Meskauskas"
+    }
+  },
+  "swissgreen-sunnegga": {
+    "name": "Sunnegga y montañas del Valais",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sunnegga.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Sunnegga.jpg",
+      "author": "Tiia Monto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Tiia Monto"
+    }
+  },
+  "swissgreen-leisee": {
+    "name": "Lago Leisee en Zermatt",
+    "photo": {
+      "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Leisee.jpg?width=1280",
+      "source": "https://commons.wikimedia.org/wiki/File:Leisee.jpg",
+      "author": "Mumpitz312",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Mumpitz312"
+    }
   }
 }

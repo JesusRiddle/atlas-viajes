@@ -1,21 +1,23 @@
 {
   "id": "suiza-verde-2027",
-  "name": "Suiza verde 2027",
+  "name": "Suiza Verde 2027 — Alpes de postal",
   "flag": "🇨🇭",
-  "status": "draft",
-  "start": "2027-09-11",
-  "end": "2027-09-26",
-  "tag": "PRADERAS ALPINAS, LAGOS Y PUEBLOS DE CUENTO",
+  "status": null,
+  "start": "2027-06-12",
+  "end": "2027-06-27",
+  "tag": "VALLES VERDES, LAGOS TURQUESA Y GRANDES CUMBRES ALPINAS",
   "routeCities": [
     "Zúrich",
     "Maienfeld",
     "Lucerna",
-    "Engelberg",
     "Grindelwald",
     "Lauterbrunnen",
-    "Wengen",
     "Mürren",
-    "Zermatt"
+    "Wengen",
+    "Brienz",
+    "Kandersteg",
+    "Zermatt",
+    "Ginebra"
   ],
   "bases": [
     [
@@ -24,356 +26,2972 @@
     ],
     [
       "Lucerna",
-      3
+      2
     ],
     [
       "Grindelwald",
-      5
+      6
     ],
     [
       "Zermatt",
-      4
+      3
+    ],
+    [
+      "Ginebra o entorno del aeropuerto",
+      1
     ]
   ],
-  "work": null,
+  "work": 10,
   "costs": [],
   "profile": {
-    "pace": "Moderado",
-    "paceWhy": "Cuatro estancias en catorce noches y excursiones con días de respaldo por lluvia.",
+    "pace": "Moderado–activo",
+    "paceWhy": "Cinco alojamientos en 14 noches, con seis noches seguidas en Grindelwald. Excursiones largas a Titlis, Jungfraujoch y Oeschinensee; días intercambiables según visibilidad, nieve residual y energía.",
     "solo": "Adecuado",
-    "soloWhy": "Red ferroviaria extensa y alojamientos céntricos, sin vehículo de alquiler.",
+    "soloWhy": "Trayectos principales en tren y hoteles candidatos cercanos a estaciones; las conexiones a Heididorf y la custodia de equipaje del día de cambio de alojamiento requieren confirmación.",
     "weather": "Variable",
-    "weatherWhy": "Alta montaña condicionada por nubosidad, viento y mantenimiento.",
-    "why": "Lagos, pueblos alpinos verdes, Heidi y una experiencia glaciar sin esquiar."
+    "weatherWhy": "Valles templados en junio, cimas frías, chubascos y nubosidad. Bachalpsee y Riffelsee pueden mantener senderos altos cerrados.",
+    "why": "Suiza verde de praderas, lagos turquesa, cascadas, pequeños pueblos, Heidi y el Matterhorn, con excursiones panorámicas sin deportes de invierno."
   },
-  "intro": "La ruta comienza en Zúrich, entre callejuelas históricas y el chocolate suizo, antes de una excursión a Maienfeld para visitar el pueblo de Heidi. En Lucerna, el lago y los puentes se combinan con una jornada de alta montaña en el Titlis, donde espera el puente colgante sobre el glaciar. El tren conduce después a Grindelwald, entre praderas, chalets y montañas, para explorar Lauterbrunnen, Wengen, Mürren, First y los miradores de la región Jungfrau. Zermatt cierra el recorrido con el Matterhorn, Gornergrat y paseos alpinos. Septiembre es una opción inicial por sus paisajes todavía verdes y una ocupación potencialmente menor que en pleno verano; el tiempo de montaña seguirá siendo variable.",
-  "introShort": "De Zúrich y el pueblo de Heidi a los lagos de Lucerna y el puente colgante del Titlis. Después, los valles verdes de Jungfrau y los paisajes del Matterhorn en Zermatt, viajando principalmente en tren.",
-  "climate": "Septiembre suele ofrecer valles aún verdes y temperaturas templadas en ciudades, con días frescos en pueblos alpinos y frío intenso en las cumbres. La lluvia y las nubes pueden limitar los miradores; los valores exactos por destino se investigarán al cerrar las fechas.\n\n*Qué llevar:* Capas ligeras, impermeable, botas cómodas y protección para viento y frío en Titlis, Jungfraujoch o Gornergrat.\n\n*Horas de luz:* Los días se acortan a lo largo de septiembre; conviene priorizar excursiones de montaña por la mañana y consultar los horarios reales de los remontes.",
+  "intro": "El viaje comienza en Zúrich, entre callejuelas históricas y el chocolate de Lindt, antes de descubrir en Maienfeld los paisajes de Heidi. Desde Lucerna, el lago de los Cuatro Cantones y la cima glaciar del Titlis abren paso al tren panorámico Luzern–Interlaken Express. En Grindelwald, el valle de Lauterbrunnen, Mürren y los miradores de First conducen hacia Bachalpsee, Jungfraujoch y los lagos turquesa de Brienz y Oeschinensee. La ruta continúa hasta Zermatt, donde el Matterhorn domina las vistas desde Gornergrat y el entorno de Riffelsee. Los últimos kilómetros atraviesan los paisajes del lago Lemán hasta Ginebra.",
+  "introShort": "Un viaje de postal desde Zúrich y el pueblo de Heidi hasta Lucerna, Titlis y los valles verdes de Grindelwald. Cascadas, lagos turquesa, trenes panorámicos y la silueta del Matterhorn completan la aventura en Zermatt.",
+  "climate": "Del 13 al 26 de junio, en Zúrich y Lucerna se esperan como referencia climática mínimas nocturnas de 11 a 13 °C y máximas diurnas de 20 a 24 °C; en los pueblos alpinos de Grindelwald y Zermatt, mínimas aproximadas de 6 a 10 °C y máximas de 16 a 20 °C. En las cumbres de Titlis, Jungfraujoch y Gornergrat puede helar incluso en verano. Son valores orientativos, no un pronóstico para 2027: lluvia, tormentas, viento y nubes pueden impedir miradores, y los senderos de Bachalpsee y Riffelsee pueden mantener nieve.\n\n*Qué llevar:* Vestimenta por capas, impermeable cortaviento, abrigo térmico y guantes ligeros para cumbres; calzado de caminata con agarre para senderos habilitados. Con equipaje de mano, priorizar prendas combinables y no prever ropa veraniega como única opción.\n\n*Horas de luz:* En Zúrich, entre el 13 y el 26 de junio, el amanecer será aproximadamente a las 05:28–05:30 y el atardecer a las 21:22–21:26, hora local de verano (CEST, UTC+2): cerca de 16 horas de luz. Aprovechar las tardes largas para paseos urbanos y valles, pero programar los miradores altos temprano y según la previsión, pues las nubes y los últimos remontes limitan el tiempo útil.",
   "solo": "Ruta pensada para una persona, con trenes y alojamientos en zonas conectadas; no requiere conducir ni hacer deportes de montaña.",
-  "flight": "Salida tentativa desde Ciudad de México el 11 de septiembre de 2027 con llegada al día siguiente a Zúrich. Regreso tentativo el 26 de septiembre desde Ginebra, evitando retroceder innecesariamente a Zúrich. Rutas, tarifas, escalas y equipaje por confirmar.",
-  "local": "Priorizar SBB y trenes regionales. Zúrich–Maienfeld–Zúrich para Heididorf; Lucerna–Engelberg para Titlis; Lucerna–Grindelwald; Grindelwald–Zermatt; Zermatt–aeropuerto de Ginebra. Comparar Swiss Travel Pass y Half Fare Card cuando existan cotizaciones.",
+  "flight": "COTIZACIÓN, NO COMPRA · Lufthansa/SWISS Economy Light multidestino, 1 persona, 12–27 junio 2027: MEX→ZRH, salida 12 jun 19:50, llegada 13 jun 17:25 (+1), conexión Frankfurt 1 h 40 min. GVA→MEX, 27 jun 09:10–17:30, conexión Frankfurt 3 h. Precio mostrado en el sitio de Lufthansa: $23,300.14 MXN por el itinerario completo (captura proporcionada por el viajero en noviembre de 2026). Incluye artículo personal y equipaje de mano; verificar medidas y reglas antes de comprar. Economy Light sujeta a restricciones; confirmar condiciones de cambios, reembolso y precio final. Alternativa comparada: vuelo redondo por Zúrich Economy Light $23,101 MXN en Google Flights, no comprado. Las tarifas pueden variar.",
+  "local": "Transporte en tren SBB y operadores locales, sin coche. Llegada ZRH → Zürich HB; Zürich → Maienfeld → Lucerna; Luzern ↔ Engelberg; Luzern–Interlaken Express a Grindelwald; excursiones desde Grindelwald a Lauterbrunnen, First, Brienz, Jungfraujoch y Kandersteg; Grindelwald → Zermatt; tren de cremallera Gornergrat y Sunnegga opcional; Zermatt → Genève-Aéroport para última noche. Billetes 2027 de tren, barco y remontes pendientes; comparar Swiss Half Fare Card, Swiss Travel Pass 15 días y billetes individuales. No añadir Glacier Express ni Bernina Express.",
   "experiences": [
     {
-      "city": "Zúrich",
-      "description": "Casco antiguo y Lindt Home of Chocolate; Maienfeld/Heididorf como excursión de día completo desde Zúrich."
+      "city": "Zúrich · casco antiguo y chocolate",
+      "description": "Recorrer las calles del casco antiguo junto al Limmat y visitar Lindt Home of Chocolate en Kilchberg. Entre las especialidades locales figuran Zürcher Geschnetzeltes con rösti y los pequeños Luxemburgerli."
     },
     {
-      "city": "Lucerna",
-      "description": "Kapellbrücke, lago de los Cuatro Cantones y excursión desde Engelberg a Titlis con Cliff Walk, glaciar y teleférico; Rigi opcional."
+      "city": "Maienfeld · el mundo de Heidi",
+      "description": "Visitar Heididorf entre los viñedos y montañas de Maienfeld. Desde la estación, el sendero señalizado implica unos 40 minutos de subida; el Heidi Bus suele circular solo fines de semana y festivos. Especialidades de los Grisones: Capuns y Bündner Gerstensuppe."
     },
     {
-      "city": "Grindelwald",
-      "description": "Paisajes verdes de Grindelwald y excursiones a Lauterbrunnen, Wengen y Mürren; First Cliff Walk, Männlichen y Jungfraujoch sujetos a visibilidad y operación."
+      "city": "Lucerna · puentes y lago",
+      "description": "Cruzar el Kapellbrücke, pasear por el casco histórico y navegar un tramo del lago de los Cuatro Cantones si los horarios lo permiten. Especialidades: Luzerner Chügelipastete y Lozärner Birewegge."
     },
     {
-      "city": "Zermatt",
-      "description": "Matterhorn, ferrocarril de Gornergrat y paseos panorámicos no técnicos condicionados por el clima."
+      "city": "Titlis · glaciar y puente colgante",
+      "description": "Ascender desde Engelberg en los remontes del Titlis, disfrutar el teleférico giratorio Rotair, cruzar el Cliff Walk y entrar en la cueva glaciar, sujetos a operación y meteorología."
+    },
+    {
+      "city": "Luzern–Interlaken Express · lagos y montañas",
+      "description": "Viajar desde Lucerna hasta Interlaken por una ruta ferroviaria panorámica entre lagos, pueblos y laderas verdes. El trayecto forma parte del traslado hacia Grindelwald y no exige otra noche."
+    },
+    {
+      "city": "Lauterbrunnen · el valle de cascadas",
+      "description": "Caminar entre praderas y saltos de agua, contemplar Staubbachfall y recorrer las cataratas interiores de Trümmelbach, si están abiertas. Continuar hacia Mürren y, si alcanza el tiempo, Gimmelwald."
+    },
+    {
+      "city": "Grindelwald-First · pasarela y lago",
+      "description": "Subir al mirador First y recorrer su Cliff Walk. Bachalpsee requiere aproximadamente dos horas caminando ida y vuelta desde First; incluirlo únicamente si el sendero está abierto y las condiciones son seguras."
+    },
+    {
+      "city": "Brienz · lago turquesa y Giessbach",
+      "description": "Navegar por el lago Brienz y desembarcar en Giessbach See para conocer el funicular histórico, las cascadas y el entorno del Grandhotel. Verificar el calendario del barco y funicular para junio de 2027."
+    },
+    {
+      "city": "Jungfraujoch · de praderas a glaciares",
+      "description": "Viajar hasta Jungfraujoch en trenes de montaña y contemplar el glaciar Aletsch desde miradores habilitados. Wengen se puede recorrer de regreso si se elige esa ruta y queda tiempo; no es una visita garantizada."
+    },
+    {
+      "city": "Oeschinensee · lago entre montañas",
+      "description": "Llegar desde Kandersteg en teleférico y caminar por el acceso permitido hacia las aguas turquesas de Oeschinensee. Evitar rutas elevadas si persisten nieve, hielo o cierres en junio."
+    },
+    {
+      "city": "Zermatt · Matterhorn y Gornergrat",
+      "description": "Pasear entre chalets tradicionales y subir en tren de cremallera a Gornergrat para admirar el Matterhorn. Bajar hacia Riffelsee solo si la ruta está abierta y las condiciones lo permiten."
+    },
+    {
+      "city": "Zermatt · Sunnegga y cocina del Valais",
+      "description": "Elegir Sunnegga y Leisee para una jornada más suave, o aprovecharla para recuperar Gornergrat tras mal tiempo. Probar, si se desea, raclette del Valais o la tarta salada Cholera."
     }
   ],
   "days": [
     {
       "n": 1,
-      "date": "2027-09-11",
-      "title": "Vuelo internacional desde CDMX",
+      "date": "2027-06-12",
+      "title": "Salida de México hacia los Alpes suizos",
       "base": "En vuelo",
-      "am": "Vuelo transatlántico; itinerario aéreo sin cotizar.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Preparar documento de viaje, equipaje de mano y confirmación de tarifa; verificar salida y terminal en la reserva cuando se compre.\n2. Dejar margen suficiente para llegar al AICM; el horario del vuelo aún es una cotización.",
+      "pm": "1. Presentarse al aeropuerto con aproximadamente tres horas de anticipación al vuelo internacional.\n2. Salida cotizada desde MEX a las 19:50; conexión posterior en Frankfurt.",
+      "night": "1. Pernocta a bordo. No se contrata alojamiento en Suiza para esta noche.",
+      "mobility": "• *CDMX → MEX:* Elegir traslado que permita llegar alrededor de tres horas antes de la salida; terminal por confirmar.\n• *Escala en Frankfurt:* Los horarios de segmentos internos todavía no están documentados; mantener la conexión en el mismo billete.",
+      "note": "• *Estado:* Lufthansa/SWISS Economy Light multidestino, $23,300.14 MXN cotizados en noviembre de 2026; sin comprar.\n• *Equipaje:* Confirmar dimensiones de cabina y restricciones de conexión antes de pagar.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "international-flight"
+      ],
+      "headerPlaces": [
+        "Ciudad de México",
+        "Frankfurt (escala)"
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 2,
-      "date": "2027-09-12",
-      "title": "Llegada a Zúrich y casco antiguo",
+      "date": "2027-06-13",
+      "title": "Llegada a Zúrich y paseo junto al Limmat",
       "base": "Zúrich",
-      "am": "Llegada tentativa a Zúrich, traslado al alojamiento y paseo suave por el centro histórico.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Continuación del vuelo de conexión por Frankfurt.\n2. Mantener la mañana sin visitas ni reservas: el vuelo llega a Suiza por la tarde.",
+      "pm": "1. Llegada prevista al aeropuerto ZRH a las 17:25, hora suiza, según cotización; migración y recogida del equipaje si aplica.\n2. Tren desde Zürich Flughafen a Zürich HB y caminata al Hotel Marta, candidato sin reservar.",
+      "night": "1. Check-in en el alojamiento si las condiciones lo permiten.\n2. Paseo corto por Niederdorf o junto al Limmat y cena cercana, solo si no hay retrasos.",
+      "mobility": "• *Aeropuerto → estación:* Seguir señalización hacia Zürich Flughafen; comprar billete SBB válido hasta Zürich HB o usar pase válido.\n• *Estación → hotel:* Hotel Marta está cerca de la estación principal; ruta final a pie después de confirmar el alojamiento.",
+      "note": "• *Llegada real:* No programar visitas con horario el domingo; inmigración, tren y hotel pueden consumir la tarde.\n• *Alojamiento:* Hotel Marta es candidato, no reserva confirmada.",
       "spend": null,
-      "places": []
+      "places": [
+        "zurich"
+      ],
+      "transportRefs": [
+        "international-flight",
+        "zrh-to-city"
+      ],
+      "headerPlaces": [
+        "Zúrich",
+        "Zürich HB",
+        "Casco antiguo"
+      ],
+      "hotel": "zurich-marta",
+      "optionalPlaces": []
     },
     {
       "n": 3,
-      "date": "2027-09-13",
-      "title": "Maienfeld y museo de Heidi",
+      "date": "2027-06-14",
+      "title": "Zúrich: chocolate Lindt y casco antiguo",
       "base": "Zúrich",
-      "am": "Excursión en tren a Maienfeld; visita a Heididorf y regreso a Zúrich. Comprobar acceso local al museo.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Trasladarse desde Zürich HB a Kilchberg y continuar a pie o con transporte local hasta Lindt Home of Chocolate.\n2. Recorrer el museo interactivo del chocolate con la entrada horaria que eventualmente se compre.",
+      "pm": "1. Regresar a la ciudad y caminar por calles históricas de Altstadt, el Limmat y el entorno de Grossmünster.\n2. Con tiempo disponible, disfrutar el paseo por el lago de Zúrich sin añadir museos de larga duración.",
+      "night": "1. Cena en el centro y segunda noche en Zúrich; preparar equipaje para Maienfeld y Lucerna.",
+      "mobility": "• *Zúrich → Kilchberg:* Consultar SBB para la fecha y elegir tren más paseo o transporte local según el punto exacto de llegada.\n• *Regreso:* Reservar margen para volver sin depender del último servicio de la tarde.",
+      "note": "• *Lindt:* Entrada con franja aún sin comprar; verificar horario especial del lunes 14 de junio.\n• *Plan B:* Si hay lluvia, priorizar Lindt y acortar el paseo urbano.",
       "spend": null,
-      "places": []
+      "places": [
+        "swiss27-lindt",
+        "zurich"
+      ],
+      "transportRefs": [],
+      "headerPlaces": [
+        "Lindt Home of Chocolate",
+        "Kilchberg",
+        "Altstadt Zürich"
+      ],
+      "hotel": "zurich-marta",
+      "noteLinks": [
+        {
+          "label": "Lindt Home of Chocolate · entradas oficiales",
+          "url": "https://www.lindt-home-of-chocolate.com/"
+        }
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 4,
-      "date": "2027-09-14",
-      "title": "Zúrich → Lucerna",
+      "date": "2027-06-15",
+      "title": "Heididorf en Maienfeld y llegada a Lucerna",
       "base": "Lucerna",
-      "am": "Visita a Lindt Home of Chocolate si hay cupo; tren a Lucerna y Kapellbrücke.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Salida de Zúrich después de desayunar, con el equipaje ya resuelto.\n2. Tren Zürich HB → Maienfeld y visita de Heididorf a pie, si la apertura y el camino están confirmados.\n3. Reservar tiempo suficiente para la caminata de regreso a Maienfeld antes de continuar a Lucerna.",
+      "pm": "1. Regresar a la estación de Maienfeld y tomar tren hacia Lucerna con los transbordos que indique SBB.\n2. Llegada y check-in en Hotel Waldstätterhof, candidato cercano a Luzern Bahnhof.",
+      "night": "1. Paseo breve junto al Reuss o Kapellbrücke y descanso después del día de traslados.",
+      "mobility": "• *Equipaje:* La consigna debe estar en un punto por el que realmente vuelva a pasar el tren. Si se deja en Zürich HB, recogerlo exige regresar a Zúrich antes de ir a Lucerna. Consultar taquillas en Maienfeld/Sargans o una opción de traslado, sin dar su disponibilidad por hecha.\n• *Zúrich → Maienfeld:* Consultar trayecto SBB, transbordos y estación de llegada.\n• *Heididorf:* Desde Maienfeld, caminar unos 40 minutos cuesta arriba; el Heidi Bus no debe darse por disponible el martes.\n• *Maienfeld → Lucerna:* Cotizar el itinerario final según lugar de recogida de equipaje, incluyendo cualquier desvío.",
+      "note": "• *Día más exigente:* Heididorf y cambio de alojamiento coinciden; no iniciar el sendero con la maleta.\n• *Decisión antes de reservar:* Confirmar una solución realista para el equipaje y tiempos de tren; si falla, mover Heididorf a otro día y actualizar reservas y noches.\n• *Apertura:* El horario publicado para 2026 no confirma automáticamente el 15 de junio de 2027.",
       "spend": null,
-      "places": []
+      "places": [
+        "swissgreen-heididorf",
+        "lucerne"
+      ],
+      "transportRefs": [
+        "zurich-maienfeld-luzern"
+      ],
+      "headerPlaces": [
+        "Maienfeld",
+        "Heididorf",
+        "Lucerna"
+      ],
+      "hotel": "luzern-waldstaetterhof",
+      "noteLinks": [
+        {
+          "label": "Heididorf · sitio oficial",
+          "url": "https://www.heididorf.ch/"
+        },
+        {
+          "label": "SBB · conexiones",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 5,
-      "date": "2027-09-15",
-      "title": "Engelberg y Monte Titlis",
+      "date": "2027-06-16",
+      "title": "Engelberg y la cumbre glaciar del Titlis",
       "base": "Lucerna",
-      "am": "Excursión en tren a Engelberg; ascenso a Titlis, Cliff Walk y cueva glaciar si operan y hay visibilidad.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Salida temprana desde Luzern Bahnhof hacia Engelberg en Zentralbahn.\n2. Traslado hacia la estación inferior del Titlis y ascenso por remontes hasta la cumbre, condicionado a viento y funcionamiento.",
+      "pm": "1. Recorrer el Titlis Cliff Walk, contemplar el glaciar y visitar la cueva de hielo si los espacios están abiertos.\n2. Regresar en teleféricos a Engelberg y tren a Lucerna, considerando el último descenso.",
+      "night": "1. Cena y segunda noche en Lucerna. Priorizar descanso antes del traslado del día siguiente.",
+      "mobility": "• *Luzern ↔ Engelberg:* Cotizar ida y regreso en tren; no se trata del billete de teleférico.\n• *Engelberg → Titlis:* Comparar billete peatonal de montaña, descuentos y último remonte; confirmar autobús local o caminata al embarque.",
+      "note": "• *Visibilidad:* Revisar cámaras y estado de viento la víspera; la vista no está garantizada.\n• *Cobertura:* Rotair, Cliff Walk y cueva son partes de la visita; Ice Flyer es adicional opcional.\n• *Plan B:* Recorrer Lucerna y el lago si Titlis cierra; no comprar automáticamente dos alternativas.",
       "spend": null,
-      "places": []
+      "places": [
+        "swissgreen-titlis",
+        "swissgreen-titlis-rotair",
+        "swissgreen-titlis-icecave"
+      ],
+      "transportRefs": [
+        "luzern-titlis"
+      ],
+      "headerPlaces": [
+        "Engelberg",
+        "Titlis",
+        "Cliff Walk"
+      ],
+      "hotel": "luzern-waldstaetterhof",
+      "noteLinks": [
+        {
+          "label": "Titlis · operación",
+          "url": "https://www.titlis.ch/en/information/timetable-lifts"
+        }
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 6,
-      "date": "2027-09-16",
-      "title": "Lucerna y lago de los Cuatro Cantones",
-      "base": "Lucerna",
-      "am": "Paseo por Lucerna, lago o Rigi opcional; jornada de respaldo para Titlis si fue necesario.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "date": "2027-06-17",
+      "title": "Lucerna y Luzern–Interlaken Express",
+      "base": "Grindelwald",
+      "am": "1. Check-out y paseo final por Kapellbrücke y el casco histórico de Lucerna.\n2. Si el horario lo permite, navegación breve por el lago de los Cuatro Cantones; no comprometer el tren panorámico.",
+      "pm": "1. Tomar el Luzern–Interlaken Express a Interlaken Ost, aproximadamente 1 h 50 min como referencia de servicio, no horario reservado.\n2. Conectar con tren regional a Grindelwald y caminar al Hotel Tschuggen para check-in.",
+      "night": "1. Primer paseo por Dorfstrasse y vistas del Eiger si está despejado.\n2. Primera de seis noches en Grindelwald.",
+      "mobility": "• *Luzern → Interlaken Ost:* Billete ferroviario ordinario o pase válido; reserva de asiento opcional.\n• *Interlaken Ost → Grindelwald:* Conexión regional distinta; confirmar tren y andén en SBB.\n• *Estación → hotel:* Hotel Tschuggen es candidato, a distancia caminable del centro.",
+      "note": "• *Ritmo:* Priorizar llegada tranquila a Grindelwald sobre una navegación larga por Lucerna.\n• *Hotel:* Solicitar habitación individual con baño privado; otras categorías del Tschuggen lo comparten.",
       "spend": null,
-      "places": []
+      "places": [
+        "lake-lucerne",
+        "swissgreen-luzern-interlaken-express",
+        "swissgreen-eiger"
+      ],
+      "transportRefs": [
+        "luzern-grindelwald"
+      ],
+      "headerPlaces": [
+        "Kapellbrücke",
+        "Lago de Lucerna",
+        "Interlaken Ost",
+        "Grindelwald"
+      ],
+      "hotel": "grindelwald-tschuggen",
+      "noteLinks": [
+        {
+          "label": "Zentralbahn · Luzern–Interlaken Express",
+          "url": "https://www.zentralbahn.ch/en/experience/leisure/luzern-interlaken-express"
+        }
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 7,
-      "date": "2027-09-17",
-      "title": "Lucerna → Grindelwald",
+      "date": "2027-06-18",
+      "title": "Lauterbrunnen, Trümmelbach y Mürren",
       "base": "Grindelwald",
-      "am": "Tren panorámico hacia Interlaken y continuación a Grindelwald; paseo por el pueblo.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Tren Grindelwald → Zweilütschinen → Lauterbrunnen según conexión disponible.\n2. Pasear por el valle hasta los miradores de Staubbachfall y trasladarse a las cataratas interiores de Trümmelbach si están abiertas.",
+      "pm": "1. Subir desde Lauterbrunnen en teleférico a Grütschalp y después en tren de montaña hacia Mürren, si ambos servicios operan.\n2. Pasear por Mürren y regresar con tiempo. Gimmelwald queda opcional únicamente si se elige la combinación adecuada de sendero o teleféricos y se dispone de energía.",
+      "night": "1. Regresar a Grindelwald por el mismo corredor de valle y descansar.",
+      "mobility": "• *Grindelwald ↔ Lauterbrunnen:* Tren con cambio en Zweilütschinen; comprobar la correspondencia del billete.\n• *Trümmelbach:* Autobús del valle y entrada por separado; confirmar apertura.\n• *Mürren:* Ruta usual: teleférico Lauterbrunnen → Grütschalp y tren Grütschalp → Mürren; alternativa vía Stechelberg y teleféricos sujeta a servicios.\n• *Regreso:* Verificar último enlace a Lauterbrunnen y conexión a Grindelwald; no forzar Gimmelwald.",
+      "note": "• *Carga física:* Día de muchos desplazamientos y caminatas; elegir un máximo de Mürren + una cascada principal si se retrasa el comienzo.\n• *Plan B:* En lluvia fuerte, las cascadas pueden cerrar por seguridad; no forzar senderos.",
       "spend": null,
-      "places": []
+      "places": [
+        "lauterbrunnen",
+        "swissgreen-trummelbach",
+        "murren",
+        "swissgreen-gimmelwald"
+      ],
+      "transportRefs": [
+        "lauterbrunnen-muerren"
+      ],
+      "headerPlaces": [
+        "Lauterbrunnen",
+        "Trümmelbach",
+        "Mürren",
+        "Gimmelwald (opcional)"
+      ],
+      "hotel": "grindelwald-tschuggen",
+      "noteLinks": [
+        {
+          "label": "Jungfrau Region · transportes",
+          "url": "https://www.jungfrau.ch/en-gb/"
+        },
+        {
+          "label": "Trümmelbach · apertura",
+          "url": "https://www.truemmelbachfaelle.ch/"
+        }
+      ],
+      "optionalPlaces": [
+        "swissgreen-gimmelwald"
+      ]
     },
     {
       "n": 8,
-      "date": "2027-09-18",
-      "title": "Lauterbrunnen, Wengen y Mürren",
+      "date": "2027-06-19",
+      "title": "First Cliff Walk y sendero a Bachalpsee",
       "base": "Grindelwald",
-      "am": "Recorrido por los pueblos y valles con praderas y cascadas; ajustar conexiones.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Desayuno y caminata o autobús hasta la estación inferior de Firstbahn.\n2. Ascenso en telecabina a First y recorrido de la pasarela panorámica Cliff Walk con buena visibilidad.",
+      "pm": "1. Si el sendero está oficialmente abierto y libre de nieve peligrosa, caminata de ida y vuelta a Bachalpsee, unas dos horas de marcha como referencia.\n2. Regresar a First, descender antes del último teleférico y disfrutar una tarde tranquila en Grindelwald.",
+      "night": "1. Cena y noche en Grindelwald; reservar margen para ajustar Jungfraujoch al mejor día de visibilidad.",
+      "mobility": "• *Pueblo → Firstbahn:* Estación inferior en Grindelwald; comprobar enlace desde el hotel.\n• *First ↔ Grindelwald:* Billete de telecabina con descuentos por pase por verificar; no se necesita un paquete de deportes de aventura.",
+      "note": "• *Nieve residual:* Bachalpsee puede no ser accesible a mediados de junio; no recorrer sendero cerrado.\n• *Plan B:* Solo First y Cliff Walk, o día de valle si la montaña está cubierta.",
       "spend": null,
-      "places": []
+      "places": [
+        "first-cliff-walk",
+        "swissgreen-bachalpsee"
+      ],
+      "transportRefs": [
+        "grindelwald-first"
+      ],
+      "headerPlaces": [
+        "Grindelwald-First",
+        "First Cliff Walk",
+        "Bachalpsee"
+      ],
+      "hotel": "grindelwald-tschuggen",
+      "noteLinks": [
+        {
+          "label": "First · operación",
+          "url": "https://www.jungfrau.ch/en-gb/grindelwaldfirst/"
+        }
+      ],
+      "optionalPlaces": [
+        "swissgreen-bachalpsee"
+      ]
     },
     {
       "n": 9,
-      "date": "2027-09-19",
-      "title": "Jungfraujoch o valle alternativo",
+      "date": "2027-06-20",
+      "title": "Lago Brienz y cataratas Giessbach",
       "base": "Grindelwald",
-      "am": "Excursión a Jungfraujoch solo si la visibilidad justifica el costo; alternativa de paisaje desde el valle.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Viajar desde Grindelwald a Interlaken Ost y consultar la salida del barco BLS hacia Giessbach See.\n2. Navegar por el lago Brienz si opera una conexión útil para el domingo 20 de junio.",
+      "pm": "1. Desembarcar en Giessbach See, utilizar el funicular histórico si opera y recorrer miradores de cascadas habilitados.\n2. Regresar con la conexión de barco o tren previamente comprobada; una alternativa es continuar hacia Brienz y volver en tren si el horario BLS lo permite.",
+      "night": "1. Cena y noche en Grindelwald; revisar visibilidad para la jornada de Jungfraujoch.",
+      "mobility": "• *Grindelwald → Interlaken Ost:* Tren regional.\n• *Barco BLS:* Comprobar embarcadero Giessbach See, dirección, horario de ida y sobre todo regreso antes de embarcar.\n• *Giessbach → hotel:* Funicular separado del billete BLS; regreso terrestre alternativo sujeto a conexiones.",
+      "note": "• *Barco:* El horario BLS 2026 muestra escalas Giessbach See, pero el itinerario del domingo 20 de junio de 2027 aún no está publicado: confirmar ida y vuelta antes de comprar.\n• *Funicular:* Consultar billete, temporada y enlace real con el barco.\n• *Plan B:* Si no hay navegación útil, priorizar Brienz y un recorrido terrestre sin contar el crucero como realizado.",
       "spend": null,
-      "places": []
+      "places": [
+        "swissgreen-brienz",
+        "swissgreen-giessbach"
+      ],
+      "transportRefs": [
+        "brienz-giessbach"
+      ],
+      "headerPlaces": [
+        "Lago Brienz",
+        "Giessbach",
+        "Brienz"
+      ],
+      "hotel": "grindelwald-tschuggen",
+      "noteLinks": [
+        {
+          "label": "BLS Schifffahrt",
+          "url": "https://www.bls-schiff.ch/en"
+        },
+        {
+          "label": "Grandhotel Giessbach · acceso",
+          "url": "https://www.giessbach.ch/en/kontakt-anreise/"
+        }
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 10,
-      "date": "2027-09-20",
-      "title": "Grindelwald First y Cliff Walk",
+      "date": "2027-06-21",
+      "title": "Jungfraujoch y alternativa por Wengen",
       "base": "Grindelwald",
-      "am": "Ascenso a First, puente y sendero sencillo opcional si el tiempo y los remontes lo permiten.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Comprobar previsión de alta montaña antes de usar o comprar los billetes.\n2. Traslado de Grindelwald a Grindelwald Terminal y subida por Eiger Express hasta Eigergletscher; continuar en Jungfraubahn a Jungfraujoch con billete válido y asiento reservado.",
+      "pm": "1. Recorrer miradores panorámicos y el entorno del glaciar Aletsch según acceso, frío y bienestar a gran altitud.\n2. Plan A: regresar a Grindelwald por Eigergletscher y Eiger Express. Plan B: bajar por Kleine Scheidegg, detenerse brevemente en Wengen y volver por Lauterbrunnen y Zweilütschinen, solo con billete y conexiones compatibles.",
+      "night": "1. Regresar al Hotel Tschuggen y descansar, sin comprometer una segunda subida exigente.",
+      "mobility": "• *Grindelwald Terminal → Jungfraujoch:* Eiger Express a Eigergletscher y Jungfraubahn; asiento reservado obligatorio en junio de 2027.\n• *Plan A · regreso directo:* Jungfraujoch → Eigergletscher → Grindelwald Terminal.\n• *Plan B · Wengen:* Jungfraujoch → Kleine Scheidegg → Wengen → Lauterbrunnen → Zweilütschinen → Grindelwald. Elegir explícitamente la opción B en Movilidad y comprar tarifa que la admita; el billete del plan A no autoriza automáticamente el circuito.",
+      "note": "• *Reserva crítica:* Jungfraujoch exige billete válido y reserva de asiento del 1 mayo al 31 octubre 2027; presentarse al torniquete al menos diez minutos antes.\n• *Meteorología:* Si está nublado, intercambiar con First/Brienz, sujeto a nuevos cupos y condiciones del billete.\n• *Altitud:* A 3,454 m pueden aparecer molestias; hidratarse, avanzar con calma y regresar si hay síntomas.",
       "spend": null,
-      "places": []
+      "places": [
+        "swissgreen-jungfraujoch",
+        "wengen"
+      ],
+      "transportRefs": [
+        "jungfraujoch"
+      ],
+      "headerPlaces": [
+        "Jungfraujoch",
+        "Glaciar Aletsch",
+        "Eigergletscher",
+        "Wengen (condicional)"
+      ],
+      "hotel": "grindelwald-tschuggen",
+      "noteLinks": [
+        {
+          "label": "Jungfraujoch · reserva de asiento",
+          "url": "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/book-priority-boarding/"
+        }
+      ],
+      "optionalPlaces": [
+        "wengen"
+      ]
     },
     {
       "n": 11,
-      "date": "2027-09-21",
-      "title": "Männlichen y pueblos alpinos",
+      "date": "2027-06-22",
+      "title": "Oeschinensee y paisajes de Kandersteg",
       "base": "Grindelwald",
-      "am": "Miradores de Männlichen; día flexible para reordenar excursiones de montaña.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Salir de Grindelwald hacia Interlaken Ost, Spiez y Kandersteg según la conexión real del día.\n2. Desde Kandersteg, llegar a la estación inferior de la telecabina Oeschinensee según transporte local disponible.",
+      "pm": "1. Subir al sector del lago con la telecabina si está en servicio y continuar por la ruta peatonal habilitada.\n2. Contemplar las aguas turquesas del lago, volver a Kandersteg y regresar a Grindelwald en tren.",
+      "night": "1. Noche final en Grindelwald, organizar maleta para traslado a Zermatt al día siguiente.",
+      "mobility": "• *Grindelwald ↔ Kandersteg:* Tren con transbordos a verificar en SBB; es una excursión interregional, no un paseo corto.\n• *Kandersteg → lago:* Telecabina aparte de SBB; comprobar si se requiere franja y si hay camino peatonal habilitado.",
+      "note": "• *Seguridad:* Senderos altos en Oeschinensee pueden permanecer cerrados en junio por nieve, riesgo de desprendimientos o mantenimiento.\n• *Plan B:* Si el acceso al lago no está seguro, evitar pagar telecabina y optar por una excursión más próxima en el Oberland.",
       "spend": null,
-      "places": []
+      "places": [
+        "oeschinensee"
+      ],
+      "transportRefs": [
+        "oeschinensee"
+      ],
+      "headerPlaces": [
+        "Kandersteg",
+        "Oeschinensee"
+      ],
+      "hotel": "grindelwald-tschuggen",
+      "noteLinks": [
+        {
+          "label": "Oeschinensee · estado oficial",
+          "url": "https://www.oeschinensee.ch/en/"
+        }
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 12,
-      "date": "2027-09-22",
-      "title": "Grindelwald → Zermatt",
+      "date": "2027-06-23",
+      "title": "De Grindelwald a Zermatt y el Matterhorn",
       "base": "Zermatt",
-      "am": "Traslado en tren hacia Zermatt; recorrido por el pueblo y vistas al Matterhorn si está despejado.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Check-out del Hotel Tschuggen y salida en tren desde Grindelwald.\n2. Traslado por Interlaken/Spiez y Visp hacia Zermatt, según los servicios que aparezcan en la búsqueda fechada.",
+      "pm": "1. Llegar a Zermatt, caminar a la zona del alojamiento y hacer check-in en Hotel Alphubel (candidato; check-in físico en Hotel Simi).\n2. Pasear por el casco antiguo y descubrir los primeros miradores urbanos del Matterhorn si está despejado.",
+      "night": "1. Cena y descanso en Zermatt, evitando comprar una subida de montaña para el mismo día.",
+      "mobility": "• *Grindelwald → Zermatt:* Trenes regionales y principales con transbordos; consultar SBB para el 23 de junio y conservar margen entre conexiones.\n• *Estación → alojamiento:* Zermatt es localidad principalmente sin coches; hotel a pie y check-in según instrucciones de Hotel Simi.",
+      "note": "• *Ritmo:* Traslado interregional como actividad principal, sin añadidos que arriesguen el check-in.\n• *Plan B:* Si el viaje demora, posponer paseo y cenar cerca del hotel.",
       "spend": null,
-      "places": []
+      "places": [
+        "swissgreen-eiger",
+        "zermatt"
+      ],
+      "transportRefs": [
+        "grindelwald-zermatt"
+      ],
+      "headerPlaces": [
+        "Grindelwald",
+        "Visp",
+        "Zermatt"
+      ],
+      "hotel": "zermatt-alphubel",
+      "noteLinks": [
+        {
+          "label": "SBB · ruta Zermatt",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 13,
-      "date": "2027-09-23",
-      "title": "Gornergrat",
+      "date": "2027-06-24",
+      "title": "Gornergrat: panorámica del Matterhorn",
       "base": "Zermatt",
-      "am": "Ferrocarril panorámico a Gornergrat, condicionado por cielo claro.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Consultar cámaras y nubosidad del Matterhorn antes de comprar o utilizar el billete.\n2. Caminar a Gornergrat Bahn, subir en tren de cremallera y visitar los miradores sobre los Alpes del Valais.",
+      "pm": "1. Descender a Rotenboden en el tren de Gornergrat; si la senda está abierta, caminar unos diez minutos de bajada al Riffelsee para buscar el reflejo del Matterhorn.\n2. Opcional: completar el sendero señalizado hacia Riffelberg (aprox. 1 hora, 3.1 km), únicamente si no hay nieve ni restricciones; regresar desde la estación que corresponda a la tarifa.",
+      "night": "1. Cena y descanso en Zermatt. Mantener la jornada siguiente como respaldo meteorológico.",
+      "mobility": "• *Zermatt → Gornergrat:* Tren de cremallera con billete propio; comparar descuento del pase y reglas de interrupción del viaje.\n• *Riffelsee:* Si se decide bajar en Rotenboden, consultar accesos e itinerario antes de caminar; regreso ferroviario no debe duplicar la tarifa.",
+      "note": "• *Sendero alto:* El propio operador advierte de nieve residual en primavera y comienzos de verano; Riffelsee no está garantizado en junio.\n• *Billete:* Verificar si el trayecto permite descender y reembarcar en Rotenboden/Riffelberg sin comprar un segundo billete.\n• *Plan B:* Si la cima está cubierta de nubes, trasladar Gornergrat al 25 de junio y omitir Sunnegga.",
       "spend": null,
-      "places": []
+      "places": [
+        "gornergrat",
+        "swissgreen-riffelsee"
+      ],
+      "transportRefs": [
+        "gornergrat"
+      ],
+      "headerPlaces": [
+        "Gornergrat",
+        "Matterhorn",
+        "Riffelsee (condicional)"
+      ],
+      "hotel": "zermatt-alphubel",
+      "noteLinks": [
+        {
+          "label": "Gornergrat Bahn",
+          "url": "https://www.gornergrat.ch/en/"
+        }
+      ],
+      "optionalPlaces": [
+        "swissgreen-riffelsee"
+      ]
     },
     {
       "n": 14,
-      "date": "2027-09-24",
-      "title": "Zermatt y senderos sencillos",
+      "date": "2027-06-25",
+      "title": "Sunnegga y Leisee o jornada de respaldo",
       "base": "Zermatt",
-      "am": "Caminata fácil o mirador accesible sin actividad técnica; elegir según estado de senderos.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "am": "1. Si Gornergrat se completó y el tiempo está bueno, subir en funicular a Sunnegga para disfrutar de las vistas y caminar hacia Leisee.\n2. Si Gornergrat se canceló el jueves, utilizar esta mañana para recuperar la subida más prioritaria.",
+      "pm": "1. Paseo suave por las rutas abiertas del sector Sunnegga o regreso temprano al pueblo.\n2. Última tarde en Zermatt, descanso y preparación del viaje ferroviario a Ginebra.",
+      "night": "1. Cena final en Zermatt y tercera noche en el alojamiento.",
+      "mobility": "• *Zermatt ↔ Sunnegga:* Funicular propio con billete separado; solo comprar si no se sustituye por Gornergrat.\n• *Jornada alternativa:* Si se usa para Gornergrat, aplicar la movilidad y billete del día anterior, sin contar dos excursiones.",
+      "note": "• *Decisión meteorológica:* Sunnegga es opcional y solo se realiza si Gornergrat ya quedó cubierto; si se recupera Gornergrat el 25, se utiliza ese billete en lugar del funicular de Sunnegga.\n• *Senderos:* Elegir rutas cortas habilitadas; evitar nieve residual, tormentas o caminatas solitarias en altura.",
       "spend": null,
-      "places": []
+      "places": [
+        "swissgreen-sunnegga",
+        "swissgreen-leisee",
+        "zermatt"
+      ],
+      "transportRefs": [
+        "sunnegga"
+      ],
+      "headerPlaces": [
+        "Sunnegga",
+        "Leisee",
+        "Zermatt"
+      ],
+      "hotel": "zermatt-alphubel",
+      "noteLinks": [
+        {
+          "label": "Zermatt turismo",
+          "url": "https://zermatt.swiss/en"
+        }
+      ],
+      "optionalPlaces": [
+        "swissgreen-sunnegga",
+        "swissgreen-leisee"
+      ]
     },
     {
       "n": 15,
-      "date": "2027-09-25",
-      "title": "Zermatt y día de respaldo",
-      "base": "Zermatt",
-      "am": "Reserva para Gornergrat, paseo por el pueblo o descanso; no comprometer demasiadas excursiones.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "date": "2027-06-26",
+      "title": "Última travesía: Zermatt a Ginebra aeropuerto",
+      "base": "Ginebra o entorno del aeropuerto",
+      "am": "1. Check-out del Hotel Alphubel y caminar hasta Zermatt Bahnhof.\n2. Tren hacia Visp, continuación por la ribera del lago Lemán hacia Genève-Aéroport según horario oficial.",
+      "pm": "1. Llegar con holgura, trasladarse al ibis Genève Aéroport y hacer check-in.\n2. Tarde de descanso, cena cercana y preparación de equipaje y documentos para salida aérea temprana.",
+      "night": "1. Dormir cerca del aeropuerto de Ginebra para evitar viajar desde Zermatt la mañana del vuelo.",
+      "mobility": "• *Zermatt → Genève-Aéroport:* Buscar ruta ferroviaria con conexión en Visp y quizá otros transbordos; no comprar conexiones ajustadas.\n• *Estación aeropuerto → hotel:* Confirmar shuttle o caminata concreta al ibis Genève Aéroport con el equipaje de mano.",
+      "note": "• *Riesgo principal:* El vuelo sale a las 09:10 del día siguiente; no añadir Montreux o Chillon salvo que quede margen real de llegada.\n• *Alojamiento:* Verificar servicio del hotel al terminal a primera hora.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "zermatt-geneva"
+      ],
+      "headerPlaces": [
+        "Zermatt",
+        "Visp",
+        "Genève-Aéroport"
+      ],
+      "hotel": "geneva-ibis-airport",
+      "noteLinks": [
+        {
+          "label": "SBB · horarios",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "optionalPlaces": []
     },
     {
       "n": 16,
-      "date": "2027-09-26",
-      "title": "Zermatt → Ginebra → CDMX",
-      "base": "En tránsito",
-      "am": "Traslado al aeropuerto de Ginebra, únicamente si la salida aérea contratada permite margen suficiente; si no, modificar noche anterior o aeropuerto.",
-      "pm": null,
-      "night": null,
-      "mobility": null,
-      "note": "Programa tentativo sin horarios ni reservas. Consultar meteorología y disponibilidad real.",
+      "date": "2027-06-27",
+      "title": "Vuelo desde Ginebra y llegada a México",
+      "base": "Regreso",
+      "am": "1. Check-out y salida al aeropuerto de Ginebra; objetivo orientativo de presentarse a las 06:10 para el vuelo internacional de las 09:10, según instrucciones definitivas de la aerolínea.\n2. Embarcar en GVA y hacer conexión de unas tres horas en Frankfurt conforme a la cotización.",
+      "pm": "1. Continuación de la conexión en Frankfurt hacia Ciudad de México.\n2. Llegada prevista a MEX a las 17:30 del mismo domingo, según la cotización proporcionada, pendiente de compra.",
+      "night": "1. Fin del viaje en Ciudad de México; sin noche adicional en Suiza.",
+      "mobility": "• *ibis → GVA:* Confirmar shuttle de primera hora o acceso a pie; no depender de un servicio sin verificar el domingo.\n• *GVA → FRA → MEX:* Vuelos con escala incluidos en la misma cotización multidestino; no agregarlos como segundo billete.",
+      "note": "• *Documentación:* Verificar mostradores, terminal y recomendaciones aeroportuarias del operador cuando se compre.\n• *Estado:* Vuelo todavía sin comprar; las horas podrían cambiar.",
       "spend": null,
-      "places": []
+      "places": [],
+      "transportRefs": [
+        "international-flight"
+      ],
+      "headerPlaces": [
+        "Aeropuerto de Ginebra",
+        "Frankfurt (escala)",
+        "Ciudad de México"
+      ],
+      "optionalPlaces": []
     }
   ],
   "reservations": [
+    [
+      "Prioridad muy alta",
+      [
+        {
+          "title": "Jungfraujoch · 21 junio (fecha flexible)",
+          "description": "SIN COMPRAR. Reserva de asiento obligatoria entre 1 mayo y 31 octubre 2027, además del billete. Acceder a torniquetes al menos 10 min antes. Si hay nubes, intercambiar este día con First/Brienz, sujeto a nuevos cupos. Confirmar descuentos y pase regional antes de comprar.",
+          "links": [
+            {
+              "label": "Asiento obligatorio · Jungfraujoch",
+              "url": "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/book-priority-boarding/"
+            },
+            {
+              "label": "Billete oficial",
+              "url": "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/buy-jungfraujoch-ticket/"
+            }
+          ]
+        },
+        {
+          "title": "Vuelos Lufthansa/SWISS · 12 y 27 junio",
+          "description": "COTIZADO, SIN COMPRAR. MEX–FRA–ZRH (12–13 junio) y GVA–FRA–MEX (27 junio). Economy Light: $23,300.14 MXN para una persona según captura de noviembre 2026. Revisar equipaje, conexiones, cambios y reembolsos; precio sujeto a variación.",
+          "links": [
+            {
+              "label": "Lufthansa oficial",
+              "url": "https://www.lufthansa.com/"
+            },
+            {
+              "label": "SWISS oficial",
+              "url": "https://www.swiss.com/"
+            }
+          ]
+        },
+        {
+          "title": "Alojamientos · 13–27 junio (14 noches)",
+          "description": "SIN RESERVAR. Zúrich 2, Lucerna 2, Grindelwald 6, Zermatt 3 y Ginebra/aeropuerto 1. Cotizar habitación privada, baño propio, impuestos, cancelación y acceso ferroviario. Priorizar seis noches en Grindelwald y salida temprana de GVA el 27 junio a las 09:10. Ningún hotel reservado; los cinco son candidatos principales.",
+          "links": [
+            {
+              "label": "SBB · conexiones",
+              "url": "https://www.sbb.ch/en"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Prioridad alta",
+      [
+        {
+          "title": "Lindt Home of Chocolate · lunes 14 junio",
+          "description": "SIN COMPRAR. La visita se reserva con día y franja horaria; comprobar cuándo se abre junio 2027 y política de cambios. Si no hay horario compatible, reorganizar las visitas de Zúrich, sin desplazar automáticamente Heididorf.",
+          "links": [
+            {
+              "label": "Taquilla oficial Lindt",
+              "url": "https://tickets.lindt-home-of-chocolate.com/selection/timeslotpass?lang=en&productId=101502126146"
+            }
+          ]
+        },
+        {
+          "title": "Heididorf · martes 15 junio",
+          "description": "SIN COMPRAR. Apertura diaria habitual de mediados de marzo a mediados de noviembre, sujeta a confirmación 2027. El Heidi Bus habitual funciona fines de semana y festivos: no asumir servicio el martes. Verificar subida a pie, manejo de equipaje y traslado posterior a Lucerna; si no resulta viable, reordenar la jornada.",
+          "links": [
+            {
+              "label": "Heididorf oficial",
+              "url": "https://www.heididorf.ch/"
+            },
+            {
+              "label": "Acceso oficial en español",
+              "url": "https://www.heididorf.ch/fileadmin/siteadministration/prospekte/Heididorf_Brochure_in_espanol.pdf"
+            }
+          ]
+        },
+        {
+          "title": "Titlis · 16 junio",
+          "description": "SIN COMPRAR. Comprobar remontes y viento antes de reservar. El billete peatonal Engelberg–Titlis incluye Rotair, Cliff Walk y cueva glaciar; Ice Flyer es opcional y aparte. Evaluar descuentos de pases y restricciones de cancelación. Plan alternativo: Lucerna y lago si la montaña no opera.",
+          "links": [
+            {
+              "label": "Tickets Titlis",
+              "url": "https://www.titlis.ch/en/webshop-ticket-purchase-instructions"
+            },
+            {
+              "label": "Precios e inclusiones",
+              "url": "https://www.titlis.ch/en/information/prices"
+            }
+          ]
+        },
+        {
+          "title": "Grindelwald-First · 19 junio",
+          "description": "SIN COMPRAR. Confirmar billete del teleférico y cobertura del pase elegido. Cliff Walk no es First Flyer ni requiere paquete de aventura. Bachalpsee depende del sendero abierto y sin nieve peligrosa; si está cerrado, visitar solo First o intercambiar el día.",
+          "links": [
+            {
+              "label": "First oficial",
+              "url": "https://www.jungfrau.ch/en-gb/grindelwaldfirst/"
+            },
+            {
+              "label": "Sendero Bachalpsee",
+              "url": "https://www.jungfrau.ch/en-gb/grindelwaldfirst/lake-bachalpsee/"
+            }
+          ]
+        },
+        {
+          "title": "Oeschinensee · 22 junio",
+          "description": "SIN COMPRAR. Verificar cupos del teleférico y estado de los senderos en junio. El operador permite ciertos cambios de franja, pero generalmente no cancela ni reembolsa. Si está cerrado el acceso seguro al lago, sustituir por una visita de valle o lago del Oberland.",
+          "links": [
+            {
+              "label": "Horarios y tarifas Oeschinensee",
+              "url": "https://www.oeschinensee.ch/en/tarife-fahrplan/"
+            },
+            {
+              "label": "Estado operativo",
+              "url": "https://www.oeschinensee.ch/es/live/"
+            }
+          ]
+        }
+      ]
+    ],
+    [
+      "Planificación flexible",
+      [
+        {
+          "title": "Lago Brienz y Giessbach · 20 junio",
+          "description": "SIN COMPRAR. Verificar horario BLS 2027, barco hasta Giessbach See, funicular y enlace de regreso. El horario 2026 solo sirve de referencia, no confirma servicios en la fecha. Si el barco no encaja, cambiar de día o de medio de transporte.",
+          "links": [
+            {
+              "label": "BLS Schifffahrt",
+              "url": "https://www.bls-schiff.ch/en"
+            },
+            {
+              "label": "Acceso Giessbach",
+              "url": "https://www.giessbach.ch/en/kontakt-anreise/"
+            }
+          ]
+        },
+        {
+          "title": "Gornergrat y Riffelsee · 24 junio",
+          "description": "SIN COMPRAR. Comparar billetes ida/vuelta, tramos individuales y descuentos de pases; subir con buena visibilidad. Riffelsee es opcional si el sendero está abierto. Si el tiempo impide Gornergrat, trasladarlo al 25 y omitir Sunnegga.",
+          "links": [
+            {
+              "label": "Billete Gornergrat",
+              "url": "https://www.gornergrat.ch/en/products/ticket"
+            },
+            {
+              "label": "Avisos y tarifas",
+              "url": "https://www.gornergrat.ch/en/pages/prices-gornergrat-bahn"
+            }
+          ]
+        },
+        {
+          "title": "Sunnegga y Leisee · 25 junio",
+          "description": "OPCIONAL, SIN COMPRAR. Confirmar funicular y sendero; conservar este día como respaldo de Gornergrat. No pagar ambos por anticipado si las condiciones meteorológicas pueden hacerlos incompatibles.",
+          "links": [
+            {
+              "label": "Zermatt turismo oficial",
+              "url": "https://zermatt.swiss/en"
+            }
+          ]
+        },
+        {
+          "title": "Lago Lucerna y Trümmelbach · 17 y 18 junio",
+          "description": "SIN COMPRAR. La navegación corta por Lucerna solo si cabe antes del tren a Grindelwald. En Trümmelbach comprobar horarios y no comprometer el paseo por Mürren. Reorganizar si se reduce el servicio o el clima no acompaña.",
+          "links": [
+            {
+              "label": "Barcos lago Lucerna",
+              "url": "https://www.lakelucerne.ch/en/"
+            },
+            {
+              "label": "Trümmelbach oficial",
+              "url": "https://www.truemmelbachfaelle.ch/"
+            }
+          ]
+        }
+      ]
+    ]
+  ],
+  "exchangeRates": {
+    "CHF": 22.08
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-11-16",
+    "baseCurrency": "MXN",
+    "description": "1 CHF ≈ 22.08 MXN, referencia media de Wise del 16 noviembre 2026; sin comisiones y no tasa de compra.",
+    "sources": {
+      "CHF": "https://wise.com/gb/currency-converter/chf-to-mxn-rate/history/16-11-2026"
+    }
+  },
+  "expenses": [
     {
-      "title": "Heididorf · Maienfeld",
-      "note": "Confirmar calendario y acceso 2027, especialmente transporte entre estación y museo; no reservar todavía."
+      "id": "lodging-zurich-marta",
+      "category": "lodging",
+      "concept": "Zúrich · Hotel Marta · 2 noches",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 370,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 185 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "zurich-marta",
+      "nights": 2
     },
     {
-      "title": "Titlis y Cliff Walk",
-      "note": "El puente está incluido en el ascenso al Titlis; comprobar condiciones, mantenimiento y clima antes de pagar. Alternar con la jornada libre de Lucerna si hay nubes."
+      "id": "lodging-luzern-waldstaetterhof",
+      "category": "lodging",
+      "concept": "Lucerna · Waldstätterhof · 2 noches",
+      "date": "2027-06-15",
+      "cost": {
+        "amount": 500,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 250 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "luzern-waldstaetterhof",
+      "nights": 2
     },
     {
-      "title": "Remontes de Grindelwald y Zermatt",
-      "note": "Verificar días de operación y meteorología de First, Männlichen, Jungfraujoch y Gornergrat antes de fijar el orden de excursiones."
+      "id": "lodging-grindelwald-tschuggen",
+      "category": "lodging",
+      "concept": "Grindelwald · Hotel Tschuggen · 6 noches",
+      "date": "2027-06-17",
+      "cost": {
+        "amount": 930,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 155 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "grindelwald-tschuggen",
+      "nights": 6
+    },
+    {
+      "id": "lodging-zermatt-alphubel",
+      "category": "lodging",
+      "concept": "Zermatt · Hotel Alphubel · 3 noches",
+      "date": "2027-06-23",
+      "cost": {
+        "amount": 555,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 185 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "zermatt-alphubel",
+      "nights": 3
+    },
+    {
+      "id": "lodging-geneva-ibis-airport",
+      "category": "lodging",
+      "concept": "Ginebra · ibis Genève Aéroport · 1 noches",
+      "date": "2027-06-26",
+      "cost": {
+        "amount": 165,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Presupuesto de CHF 165 por noche, habitación privada con baño privado. No se ha comprobado disponibilidad ni costo exacto de las fechas.",
+      "hotelId": "geneva-ibis-airport",
+      "nights": 1
+    },
+    {
+      "id": "rail-provision",
+      "category": "transport",
+      "concept": "Trenes SBB, regionales, autobuses y barco Brienz; pase por decidir",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 650,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Hipótesis de planificación: Half Fare CHF 150 + hasta CHF 500 en billetes con descuentos; no garantiza cobertura o tarifa. Swiss Travel Pass CHF 499 + suplementos es alternativa no acumulable. Fondo global no repartido arbitrariamente por fecha en Gastos del día.",
+      "dates": []
+    },
+    {
+      "id": "meals-01",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-12",
+      "date": "2027-06-12",
+      "cost": {
+        "amount": 10,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-02",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-13",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 35,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-03",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-14",
+      "date": "2027-06-14",
+      "cost": {
+        "amount": 55,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-04",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-15",
+      "date": "2027-06-15",
+      "cost": {
+        "amount": 60,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-05",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-16",
+      "date": "2027-06-16",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-06",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-17",
+      "date": "2027-06-17",
+      "cost": {
+        "amount": 55,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-07",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-18",
+      "date": "2027-06-18",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-08",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-19",
+      "date": "2027-06-19",
+      "cost": {
+        "amount": 60,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-09",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-20",
+      "date": "2027-06-20",
+      "cost": {
+        "amount": 60,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-10",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-21",
+      "date": "2027-06-21",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-11",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-22",
+      "date": "2027-06-22",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-12",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-23",
+      "date": "2027-06-23",
+      "cost": {
+        "amount": 55,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-13",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-24",
+      "date": "2027-06-24",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-14",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-25",
+      "date": "2027-06-25",
+      "cost": {
+        "amount": 65,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-15",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-26",
+      "date": "2027-06-26",
+      "cost": {
+        "amount": 55,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "meals-16",
+      "category": "food",
+      "concept": "Alimentación · 2027-06-27",
+      "date": "2027-06-27",
+      "cost": {
+        "amount": 20,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Alimentos según día de viaje; desayunos hoteleros o comidas a bordo no se duplican si se incluyen. Elegir opciones sin lactosa."
+    },
+    {
+      "id": "insurance",
+      "category": "other",
+      "concept": "Seguro de viaje con asistencia y montaña",
+      "date": "2027-06-12",
+      "cost": {
+        "amount": 120,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. "
+    },
+    {
+      "id": "city-taxes",
+      "category": "taxes",
+      "concept": "Tasas locales de alojamiento",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 70,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. Tschuggen publica CHF 5.20/noche y Alphubel CHF 4/noche; provisión aproximada para cinco ciudades. Excluir tasas si la cotización del hotel ya las incorpora."
+    },
+    {
+      "id": "incidentals",
+      "category": "other",
+      "concept": "Artículos esenciales y gastos menores no cubiertos",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 110,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. "
+    },
+    {
+      "id": "contingency",
+      "category": "contingency",
+      "concept": "Margen de imprevistos y variación de tarifas",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 460,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no tarifa reservable para junio 2027. "
+    },
+    {
+      "id": "activity-lindt",
+      "category": "activities",
+      "concept": "Lindt Home of Chocolate",
+      "date": "2027-06-14",
+      "cost": {
+        "amount": 17,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-heidi",
+      "category": "activities",
+      "concept": "Heididorf",
+      "date": "2027-06-15",
+      "cost": {
+        "amount": 15,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-titlis",
+      "category": "activities",
+      "concept": "Titlis y remontes",
+      "date": "2027-06-16",
+      "cost": {
+        "amount": 58,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-trummelbach",
+      "category": "activities",
+      "concept": "Cataratas Trümmelbach",
+      "date": "2027-06-18",
+      "cost": {
+        "amount": 18,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-first",
+      "category": "activities",
+      "concept": "First Cliff Walk y telecabina",
+      "date": "2027-06-19",
+      "cost": {
+        "amount": 42,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-giessbach",
+      "category": "activities",
+      "concept": "Funicular Giessbach",
+      "date": "2027-06-20",
+      "cost": {
+        "amount": 18,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-jungfraujoch",
+      "category": "activities",
+      "concept": "Jungfraujoch, billete y asiento",
+      "date": "2027-06-21",
+      "cost": {
+        "amount": 133,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-oeschinensee",
+      "category": "activities",
+      "concept": "Telecabina Oeschinensee",
+      "date": "2027-06-22",
+      "cost": {
+        "amount": 27,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-gornergrat",
+      "category": "activities",
+      "concept": "Gornergrat Bahn",
+      "date": "2027-06-24",
+      "cost": {
+        "amount": 82,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Asignación orientativa de la bolsa total de CHF 410 según visita; puede requerir pases y billetes descontados, no es precio del operador para junio 2027. Si no se usa una actividad, descontar su provisión y recalcular."
+    },
+    {
+      "id": "activity-sunnegga",
+      "category": "activities",
+      "concept": "Sunnegga y Leisee · opcional",
+      "date": "2027-06-25",
+      "optional": true,
+      "cost": {
+        "amount": null,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "EXCLUIDO del total principal. Funicular Sunnegga y paseo a Leisee solo si no se utiliza el día para recuperar Gornergrat. Precio y descuentos pendientes de cotización."
     }
   ],
-  "exchangeRates": {},
-  "exchangeRateSnapshot": null,
-  "expenses": [],
-  "majorTransport": [],
-  "ticketNotes": [],
+  "majorTransport": [
+    {
+      "id": "international-flight",
+      "type": "flight",
+      "title": "Vuelos multidestino · MEX → ZRH / GVA → MEX",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Lufthansa/SWISS · conexión Frankfurt",
+          "status": "quoted",
+          "selectedFare": "light",
+          "quotedAt": "2026-11-16",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "FRA",
+                  "departure": "2027-06-12T19:50:00-06:00",
+                  "arrival": null,
+                  "operator": "Lufthansa"
+                },
+                {
+                  "from": "FRA",
+                  "to": "ZRH",
+                  "departure": null,
+                  "arrival": "2027-06-13T17:25:00+02:00",
+                  "operator": "Lufthansa/SWISS"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "GVA",
+                  "to": "FRA",
+                  "departure": "2027-06-27T09:10:00+02:00",
+                  "arrival": null,
+                  "operator": "Lufthansa/SWISS"
+                },
+                {
+                  "from": "FRA",
+                  "to": "MEX",
+                  "departure": null,
+                  "arrival": "2027-06-27T17:30:00-06:00",
+                  "operator": "Lufthansa"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "light",
+              "name": "Economy Light · multidestino · cotizado, no comprado",
+              "price": {
+                "amount": 23300.14,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "personalItem": {
+                  "pieces": 1
+                },
+                "cabin": {
+                  "pieces": 1
+                },
+                "checked": {
+                  "pieces": 0
+                }
+              },
+              "changes": "Verificar restricciones específicas de Lufthansa/SWISS",
+              "refunds": "Confirmar: tarifa Light restrictiva; no suponer reembolso"
+            }
+          ],
+          "notes": "Cotización proporcionada por usuario en noviembre 2026, 1 persona. Duración total ida 13 h 35 min y vuelta 16 h 20 min; conexiones FRA ida 1 h 40 min, vuelta 3 h. No se conocen horas intermedias de aterrizaje/despegue en Frankfurt; no se inventan."
+        }
+      ],
+      "links": [
+        {
+          "label": "Lufthansa · reserva oficial",
+          "url": "https://www.lufthansa.com/"
+        },
+        {
+          "label": "SWISS · reserva oficial",
+          "url": "https://www.swiss.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Mexico City International Airport",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mexico%20City%20International%20Airport%20Switzerland"
+        },
+        {
+          "name": "Zurich Airport",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zurich%20Airport%20Switzerland"
+        },
+        {
+          "name": "Geneva Airport",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Geneva%20Airport%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Compra multidestino en aerolínea. Comparar precio total con una tarifa que permita cambios; confirmar artículo personal, cabina, documentos de escala y equipaje antes de pagar. Los segmentos deben emitir en una sola reserva.",
+      "notes": "Precio conjunto de ida y regreso en una sola ficha; evitar doble conteo."
+    },
+    {
+      "id": "zrh-to-city",
+      "type": "train",
+      "title": "Aeropuerto ZRH → Zürich HB",
+      "day": 2,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Zürich Flughafen",
+                  "to": "Zürich HB",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Tren urbano SBB; seleccionar según llegada real, control migratorio y equipaje."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Zürich Flughafen station",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20Flughafen%20station%20Switzerland"
+        },
+        {
+          "name": "Zürich Hauptbahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20Hauptbahnhof%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Tren urbano SBB; seleccionar según llegada real, control migratorio y equipaje.",
+      "budgetIncludedIn": "rail-provision"
+    },
+    {
+      "id": "zurich-maienfeld-luzern",
+      "type": "train",
+      "title": "Zürich HB → Maienfeld → Luzern",
+      "day": 4,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Zürich HB",
+                  "to": "Maienfeld",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            },
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Maienfeld",
+                  "to": "Luzern",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Son DOS traslados del mismo día, NO un billete sencillo de Zúrich a Lucerna. El acceso a Heididorf desde Maienfeld es subida a pie o transporte local por definir; revisar equipaje y reserva de guarda."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Zürich Hauptbahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20Hauptbahnhof%20Switzerland"
+        },
+        {
+          "name": "Maienfeld Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Maienfeld%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Luzern Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luzern%20Bahnhof%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Cotizar las dos etapas y comparar billetes individuales frente a pase o Saver Day Pass; comprobar posibilidad de paradas intermedias antes de comprar.",
+      "notes": "Son DOS traslados del mismo día, NO un billete sencillo de Zúrich a Lucerna. El acceso a Heididorf desde Maienfeld es subida a pie o transporte local por definir; revisar equipaje y reserva de guarda.",
+      "budgetIncludedIn": "rail-provision"
+    },
+    {
+      "id": "luzern-titlis",
+      "type": "train",
+      "title": "Luzern ↔ Engelberg · Titlis",
+      "day": 5,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Luzern",
+                  "to": "Engelberg",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Zentralbahn"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Engelberg",
+                  "to": "Luzern",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Zentralbahn"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Incluye únicamente tren de ida y vuelta a Engelberg, NO el teleférico Titlis que se cobra aparte."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.zentralbahn.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Luzern Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luzern%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Engelberg Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Engelberg%20Bahnhof%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Incluye únicamente tren de ida y vuelta a Engelberg, NO el teleférico Titlis que se cobra aparte.",
+      "budgetIncludedIn": "rail-provision"
+    },
+    {
+      "id": "luzern-grindelwald",
+      "type": "train",
+      "title": "Luzern → Interlaken Ost → Grindelwald",
+      "day": 6,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Luzern",
+                  "to": "Interlaken Ost",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Zentralbahn"
+                },
+                {
+                  "from": "Interlaken Ost",
+                  "to": "Grindelwald",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Luzern–Interlaken Express (aprox. 1 h 50 min en servicio actual) y conexión a Grindelwald. Billete normal o pase válido, asiento opcional; no confundir reserva con tarifa de transporte."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.zentralbahn.ch/en/experience/leisure/luzern-interlaken-express"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Luzern Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Luzern%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Interlaken Ost Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Interlaken%20Ost%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Grindelwald Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Luzern–Interlaken Express no exige billete especial ni reserva obligatoria; reserva de asiento opcional de pago. Consultar 2027 y validar continuidad del billete hasta Grindelwald.",
+      "notes": "Luzern–Interlaken Express (aprox. 1 h 50 min en servicio actual) y conexión a Grindelwald. Billete normal o pase válido, asiento opcional; no confundir reserva con tarifa de transporte.",
+      "budgetIncludedIn": "rail-provision"
+    },
+    {
+      "id": "lauterbrunnen-muerren",
+      "type": "train",
+      "title": "Grindelwald ↔ Lauterbrunnen / Mürren",
+      "day": 7,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald",
+                  "to": "Lauterbrunnen",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Lauterbrunnen",
+                  "to": "Grindelwald",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "El billete ferroviario cubre solo Grindelwald–Lauterbrunnen ida y vuelta. Trümmelbach y acceso a Mürren (bus/teleférico o tren regional) se cotizan aparte, no se consideran incluidos."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Grindelwald Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Lauterbrunnen Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lauterbrunnen%20Bahnhof%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "El billete ferroviario cubre solo Grindelwald–Lauterbrunnen ida y vuelta. Trümmelbach y acceso a Mürren (bus/teleférico o tren regional) se cotizan aparte, no se consideran incluidos.",
+      "budgetIncludedIn": "rail-provision"
+    },
+    {
+      "id": "grindelwald-first",
+      "type": "train",
+      "title": "Grindelwald ↔ First (teleférico)",
+      "day": 8,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald Firstbahn Talstation",
+                  "to": "First Bergstation",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfrau Railways · Firstbahn"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "First Bergstation",
+                  "to": "Grindelwald Firstbahn Talstation",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfrau Railways · Firstbahn"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Remonte de montaña; es un producto turístico, no un tren SBB. Verificar fecha, apertura y pase aplicable. Cliff Walk incluido; otras actividades pueden ser extra."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.jungfrau.ch/en-gb/grindelwaldfirst/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Grindelwald Firstbahn Talstation",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Firstbahn%20Talstation%20Switzerland"
+        },
+        {
+          "name": "First Bergstation",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=First%20Bergstation%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Se modela como tipo técnico «train» por compatibilidad del Atlas, pero el servicio real es TELECABINA Firstbahn; no tren.",
+      "budgetIncludedIn": "activity-first"
+    },
+    {
+      "id": "brienz-giessbach",
+      "type": "ferry",
+      "title": "Grindelwald ↔ Brienz / Giessbach",
+      "day": 9,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald",
+                  "to": "Interlaken Ost",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                },
+                {
+                  "from": "Interlaken Ost",
+                  "to": "Giessbach See",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "BLS Schifffahrt"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Giessbach See",
+                  "to": "Interlaken Ost",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "BLS Schifffahrt"
+                },
+                {
+                  "from": "Interlaken Ost",
+                  "to": "Grindelwald",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Ruta propuesta por tren + barco en ambos sentidos; no incluye funicular Giessbach. Horarios 2027 y disponibilidad de muelle por confirmar; evaluar regreso alternativo por Brienz si mejora conexiones."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.bls-schiff.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Grindelwald Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Interlaken Ost Schiffstation",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Interlaken%20Ost%20Schiffstation%20Switzerland"
+        },
+        {
+          "name": "Giessbach See Schiffstation",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Giessbach%20See%20Schiffstation%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Ruta propuesta por tren + barco en ambos sentidos; no incluye funicular Giessbach. Horarios 2027 y disponibilidad de muelle por confirmar; evaluar regreso alternativo por Brienz si mejora conexiones.",
+      "budgetIncludedIn": "rail-provision"
+    },
+    {
+      "id": "jungfraujoch",
+      "type": "train",
+      "title": "Grindelwald ↔ Jungfraujoch",
+      "day": 10,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald Terminal",
+                  "to": "Eigergletscher",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Eiger Express · telecabina"
+                },
+                {
+                  "from": "Eigergletscher",
+                  "to": "Jungfraujoch",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfraubahn"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Jungfraujoch",
+                  "to": "Eigergletscher",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfraubahn"
+                },
+                {
+                  "from": "Eigergletscher",
+                  "to": "Grindelwald Terminal",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Eiger Express · telecabina"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Trayecto ferroviario/teléferico mixto, resumido por puntos extremos; conexión por Eigergletscher y ruta alternativa Kleine Scheidegg. La reserva de asiento es obligatoria del 1 mayo al 31 octubre 2027 y NO sustituye el billete. Wengen no está incluido como visita en esta tarifa."
+        },
+        {
+          "id": "B",
+          "provider": "Jungfrau Railways + Berner Oberland-Bahn · regreso por Wengen",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald Terminal",
+                  "to": "Eigergletscher",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Eiger Express"
+                },
+                {
+                  "from": "Eigergletscher",
+                  "to": "Jungfraujoch",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfraubahn"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Jungfraujoch",
+                  "to": "Kleine Scheidegg",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Jungfraubahn"
+                },
+                {
+                  "from": "Kleine Scheidegg",
+                  "to": "Wengen",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Wengernalpbahn"
+                },
+                {
+                  "from": "Wengen",
+                  "to": "Lauterbrunnen",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Wengernalpbahn"
+                },
+                {
+                  "from": "Lauterbrunnen",
+                  "to": "Zweilütschinen",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Berner Oberland-Bahn"
+                },
+                {
+                  "from": "Zweilütschinen",
+                  "to": "Grindelwald",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Berner Oberland-Bahn"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Alternativa panorámica vía Kleine Scheidegg y Wengen en el regreso; exige elegir billete/ruta que permita el circuito, reserva de asiento obligatoria en tramo Jungfraubahn, y comprobar conexiones. No es la alternativa seleccionada ni un billete comprado."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/buy-jungfraujoch-ticket/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Grindelwald Terminal",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Terminal%20Switzerland"
+        },
+        {
+          "name": "Eigergletscher Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Eigergletscher%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Jungfraujoch Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Jungfraujoch%20Bahnhof%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Comprar el itinerario completo de montaña y reserva de asiento separada (obligatoria en junio 2027); comprobar si el pase cubre parte y suplemento de la cima.",
+      "notes": "Opción A regreso directo por Eigergletscher; opción B regreso por Kleine Scheidegg–Wengen–Lauterbrunnen–Zweilütschinen. La opción B solo puede utilizarse con tarifa válida y conexiones confirmadas.",
+      "budgetIncludedIn": "activity-jungfraujoch"
+    },
+    {
+      "id": "oeschinensee",
+      "type": "train",
+      "title": "Grindelwald ↔ Kandersteg / Oeschinensee",
+      "day": 11,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald",
+                  "to": "Kandersteg",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kandersteg",
+                  "to": "Grindelwald",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Tren ida/vuelta hasta Kandersteg, con transbordos según SBB. Telecabina Kandersteg–Oeschinensee y sendero NO incluidos."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Grindelwald Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Kandersteg Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kandersteg%20Bahnhof%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Tren ida/vuelta hasta Kandersteg, con transbordos según SBB. Telecabina Kandersteg–Oeschinensee y sendero NO incluidos.",
+      "budgetIncludedIn": "rail-provision"
+    },
+    {
+      "id": "grindelwald-zermatt",
+      "type": "train",
+      "title": "Grindelwald → Zermatt",
+      "day": 12,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Grindelwald",
+                  "to": "Zermatt",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Ruta ferroviaria regular con transbordos según horario; no utilizar Glacier Express ni Bernina Express. Equipaje de mano, previsión de conexión y caminata al hotel."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Grindelwald Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grindelwald%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Zermatt Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zermatt%20Bahnhof%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Ruta ferroviaria regular con transbordos según horario; no utilizar Glacier Express ni Bernina Express. Equipaje de mano, previsión de conexión y caminata al hotel.",
+      "budgetIncludedIn": "rail-provision"
+    },
+    {
+      "id": "gornergrat",
+      "type": "train",
+      "title": "Zermatt ↔ Gornergrat",
+      "day": 13,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Zermatt GGB",
+                  "to": "Gornergrat",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Gornergrat Bahn"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Gornergrat",
+                  "to": "Zermatt GGB",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Gornergrat Bahn"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Tren de cremallera de montaña ida/vuelta; descuentos según pase/tarifa, no viaje gratis con todos los pases. Riffelsee opcional sujeto a accesos."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.gornergrat.ch/en/products/ticket"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Gornergrat Bahn Zermatt",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gornergrat%20Bahn%20Zermatt%20Switzerland"
+        },
+        {
+          "name": "Gornergrat station",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gornergrat%20station%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Tren de cremallera de montaña ida/vuelta; descuentos según pase/tarifa, no viaje gratis con todos los pases. Riffelsee opcional sujeto a accesos.",
+      "budgetIncludedIn": "activity-gornergrat"
+    },
+    {
+      "id": "sunnegga",
+      "type": "train",
+      "title": "Zermatt ↔ Sunnegga (opcional)",
+      "day": 14,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Zermatt Sunnegga Talstation",
+                  "to": "Sunnegga Bergstation",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Zermatt Bergbahnen"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Sunnegga Bergstation",
+                  "to": "Zermatt Sunnegga Talstation",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Zermatt Bergbahnen"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Funicular opcional si hay meteorología favorable; no duplicar con alternativa de recuperar Gornergrat el mismo día."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://zermatt.swiss/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Sunnegga Talstation Zermatt",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sunnegga%20Talstation%20Zermatt%20Switzerland"
+        },
+        {
+          "name": "Sunnegga Bergstation",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sunnegga%20Bergstation%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Funicular opcional si hay meteorología favorable; no duplicar con alternativa de recuperar Gornergrat el mismo día.",
+      "budgetIncludedIn": "activity-sunnegga"
+    },
+    {
+      "id": "zermatt-geneva",
+      "type": "train",
+      "title": "Zermatt → Genève-Aéroport",
+      "day": 15,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Operador ferroviario local · verificar en SBB",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Zermatt",
+                  "to": "Genève-Aéroport",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete(s) por cotizar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador seleccionados",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Buscar trenes con transbordo en Visp y, según servicio, ruta por Lausanne. Dormir junto a GVA la noche del 26 para vuelo de las 09:10 del 27. Sin visitar Ginebra por obligación."
+        }
+      ],
+      "links": [
+        {
+          "label": "Horarios y billetes oficiales",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Zermatt Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zermatt%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Visp Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Visp%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Genève Aéroport Gare",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gen%C3%A8ve%20A%C3%A9roport%20Gare%20Switzerland"
+        }
+      ],
+      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
+      "notes": "Buscar trenes con transbordo en Visp y, según servicio, ruta por Lausanne. Dormir junto a GVA la noche del 26 para vuelo de las 09:10 del 27. Sin visitar Ginebra por obligación.",
+      "budgetIncludedIn": "rail-provision"
+    }
+  ],
+  "ticketNotes": [
+    {
+      "title": "Vuelos multidestino · Economy Light",
+      "note": "La cotización $23,300.14 MXN incluye los dos sentidos y no se ha comprado. Una sola tarifa conjunta, no sumar dos veces. Confirmar franquicia, conexiones en Frankfurt y reglas de cambio antes de pagar."
+    },
+    {
+      "title": "SBB · billetes y descuentos",
+      "note": "Consultar tarifa sin descuento y con Swiss Half Fare Card, normal/Supersaver/Saver Day Pass para cada fecha, horario y ruta. Supersaver suele obligar al tren seleccionado; la tarjeta no convierte los viajes en gratuitos."
+    },
+    {
+      "title": "Luzern–Interlaken Express",
+      "note": "No requiere billete especial y la reserva de asiento es opcional. Comparar reserva con el valor para una persona y considerar la continuación desde Interlaken Ost a Grindelwald."
+    },
+    {
+      "title": "Jungfraujoch · reserva separada",
+      "note": "Reserva de asiento obligatoria del 1 mayo al 31 octubre 2027, aparte del billete de subida. Conservar ambos comprobantes y respetar franja horaria."
+    },
+    {
+      "title": "Remontes y barcos",
+      "note": "Titlis, First, Gornergrat, Oeschinensee, Giessbach y Sunnegga pueden quedar fuera de cobertura total. Revisar área de validez del pase y suplementos individuales antes de comprar."
+    }
+  ],
   "attractionTerms": [],
-  "cover": null,
-  "mapPoints": [],
-  "planningDetails": "VERSIÓN 1 · Ventana del 11 al 26 de septiembre de 2027 exclusivamente provisional; no comprar ni reservar. Alternativa por evaluar: junio de 2027. Suiza Nevada y Suiza Verde son planes mutuamente excluyentes; se realizará solamente uno. Comparar especialmente precios, remontes, apertura de senderos y jornadas reales de vuelo antes de decidir.",
-  "lodgingSummary": "Zúrich: 2 noches; Lucerna: 3; Grindelwald: 5; Zermatt: 4. Zonas y hoteles específicos pendientes.",
-  "heroLodgingSummary": "14 noches · cuatro alojamientos tentativos",
-  "budgetPreliminary": true,
-  "hotels": [],
+  "cover": "swissgreen-oeschinensee-cover",
+  "mapPoints": [
+    {
+      "name": "Zúrich",
+      "coords": [
+        47.3769,
+        8.5417
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 1
+    },
+    {
+      "name": "Lindt Home of Chocolate",
+      "coords": [
+        47.31835,
+        8.55095
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 2
+    },
+    {
+      "name": "Maienfeld",
+      "coords": [
+        47.004255,
+        9.528708
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 3
+    },
+    {
+      "name": "Heididorf",
+      "coords": [
+        47.013237,
+        9.545107
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 4
+    },
+    {
+      "name": "Lucerna",
+      "coords": [
+        47.0502,
+        8.3093
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 5
+    },
+    {
+      "name": "Titlis",
+      "coords": [
+        46.7721,
+        8.43778
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 6
+    },
+    {
+      "name": "Grindelwald",
+      "coords": [
+        46.6242,
+        8.0414
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 7
+    },
+    {
+      "name": "Lauterbrunnen",
+      "coords": [
+        46.5935,
+        7.9086
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 8
+    },
+    {
+      "name": "Trümmelbach",
+      "coords": [
+        46.569478,
+        7.914302
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 9
+    },
+    {
+      "name": "Mürren",
+      "coords": [
+        46.5594,
+        7.8927
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 10
+    },
+    {
+      "name": "Gimmelwald",
+      "coords": [
+        46.5469,
+        7.894
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 11
+    },
+    {
+      "name": "Grindelwald-First",
+      "coords": [
+        46.66138,
+        8.05296
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 12
+    },
+    {
+      "name": "Bachalpsee",
+      "coords": [
+        46.66952,
+        8.0213
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 13
+    },
+    {
+      "name": "Brienz",
+      "coords": [
+        46.7545,
+        8.03847
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 14
+    },
+    {
+      "name": "Giessbach",
+      "coords": [
+        46.734261,
+        8.023653
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 15
+    },
+    {
+      "name": "Jungfraujoch",
+      "coords": [
+        46.5478,
+        7.9859
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 16
+    },
+    {
+      "name": "Wengen",
+      "coords": [
+        46.6054,
+        7.9217
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 17
+    },
+    {
+      "name": "Kandersteg",
+      "coords": [
+        46.4956,
+        7.6733
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 18
+    },
+    {
+      "name": "Oeschinensee",
+      "coords": [
+        46.498346,
+        7.726684
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 19
+    },
+    {
+      "name": "Zermatt",
+      "coords": [
+        46.0207,
+        7.7491
+      ],
+      "kind": "Alojamiento",
+      "base": true,
+      "optional": false,
+      "order": 20
+    },
+    {
+      "name": "Gornergrat",
+      "coords": [
+        45.98325,
+        7.78219
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 21
+    },
+    {
+      "name": "Riffelsee",
+      "coords": [
+        45.983269,
+        7.762061
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 22
+    },
+    {
+      "name": "Sunnegga",
+      "coords": [
+        46.017035,
+        7.770274
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 23
+    },
+    {
+      "name": "Ginebra",
+      "coords": [
+        46.2044,
+        6.1432
+      ],
+      "kind": "Alojamiento (zona por confirmar)",
+      "base": true,
+      "optional": false,
+      "order": 24,
+      "stayName": "Ginebra o entorno del aeropuerto"
+    }
+  ],
+  "planningDetails": {
+    "reservationTitle": "Reservaciones importantes",
+    "reservationNote": "Todo sigue SIN COMPRAR: vuelo cotizado, hoteles sin reservar y entradas sujetas a disponibilidad. Jungfraujoch exige reserva de asiento además del billete en junio de 2027. Priorizar vuelos y alojamientos cancelables; coordinar Jungfraujoch según visibilidad y cupos, después Lindt y el resto de entradas. No comprar actividades de montaña simultáneas sin revisar previsión, políticas y pases. Tarifas de acceso 2027 pendientes de cotizar. Las jornadas incluyen horarios orientativos solo donde hay cotización; el resto de horarios y gastos diarios se verifica al cotizar el transporte, alojamiento y las entradas."
+  },
+  "lodgingSummary": "14 noches, 5 alojamientos candidatos, ninguno reservado: Zúrich 13–15 junio (2); Lucerna 15–17 (2); Grindelwald 17–23 (6); Zermatt 23–26 (3); Ginebra aeropuerto 26–27 (1). Categoría con baño privado y acceso ferroviario priorizados; tarifas y disponibilidad junio 2027 pendientes.",
+  "heroLodgingSummary": "14 noches, 5 alojamientos",
+  "budgetPreliminary": {
+    "low": 118000,
+    "high": 157000,
+    "marginMXN": 20000,
+    "useBudgetRange": true,
+    "referenceFlightMXN": 23300.14,
+    "notes": "Proyección global de una persona, vuelo cotizado sin comprar y resto estimado. Se reserva un fondo de 650 CHF para transporte regular y 410 CHF para remontes y entradas, pero NO hay pase elegido ni tarifas junio 2027 completas. Intervalo de sensibilidad 118 a 157 mil MXN; no garantiza precio ni disponibilidad. Extras opcionales fuera."
+  },
+  "hotels": [
+    {
+      "id": "zurich-marta",
+      "city": "Zúrich",
+      "name": "Hotel Marta",
+      "address": "Zähringerstrasse 36, 8001 Zürich, Suiza",
+      "checkIn": "2027-06-13",
+      "checkOut": "2027-06-15",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin precio confirmado para junio de 2027. Comparar total con impuestos locales, desayuno y cancelación según tarifa elegida.",
+      "notes": "A unos 5 min caminando de Zürich HB. Categoría Single: 14–18 m², cama de 1.20 m, baño privado y desayuno vegetariano incluido según el hotel. Sin aire acondicionado; puede haber ruido y recepción limitada, confirmar acceso después de llegada aérea.",
+      "links": [
+        {
+          "label": "Web oficial y reserva",
+          "url": "https://en.hotelmarta.ch/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Marta%2C%20Z%C3%A4hringerstrasse%2036%2C%208001%20Z%C3%BCrich%2C%20Suiza"
+    },
+    {
+      "id": "luzern-waldstaetterhof",
+      "city": "Lucerna",
+      "name": "Hotel Waldstätterhof Luzern",
+      "address": "Zentralstrasse 4, 6003 Luzern, Suiza",
+      "checkIn": "2027-06-15",
+      "checkOut": "2027-06-17",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin precio confirmado para junio de 2027. Comparar total con impuestos locales, desayuno y cancelación según tarifa elegida.",
+      "notes": "A unos 3 minutos caminando de Luzern Bahnhof, ideal para Titlis y Luzern–Interlaken Express. Recepción 24 horas. Comparar tarifa single y desayuno, que no necesariamente está incluido; el hotel describe cancelación gratuita hasta 48 h en reservas directas ordinarias, confirmar excepción de tarifa.",
+      "links": [
+        {
+          "label": "Web oficial y reserva",
+          "url": "https://www.hotel-waldstaetterhof.ch/en/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Waldst%C3%A4tterhof%20Luzern%2C%20Zentralstrasse%204%2C%206003%20Luzern%2C%20Suiza"
+    },
+    {
+      "id": "grindelwald-tschuggen",
+      "city": "Grindelwald",
+      "name": "Hotel Tschuggen",
+      "address": "Dorfstrasse 134, 3818 Grindelwald, Suiza",
+      "checkIn": "2027-06-17",
+      "checkOut": "2027-06-23",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin precio confirmado para junio de 2027. Comparar total con impuestos locales, desayuno y cancelación según tarifa elegida.",
+      "notes": "A unos 400 m/5 minutos a pie de estación y Firstbahn. Solicitar EXCLUSIVAMENTE Single room balcony Eiger view (11 m², baño con ducha y WC PRIVADOS, desayuno según web); el hotel también ofrece individuales con baño COMPARTIDO. Tarifa «desde CHF 95» de referencia publicada para 2025 NO es cotización junio 2027. Confirmar disponibilidad de seis noches y tasa turística.",
+      "links": [
+        {
+          "label": "Web oficial y reserva",
+          "url": "https://www.tschuggen-grindelwald.ch/en/buchen/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Tschuggen%2C%20Dorfstrasse%20134%2C%203818%20Grindelwald%2C%20Suiza"
+    },
+    {
+      "id": "zermatt-alphubel",
+      "city": "Zermatt",
+      "name": "Hotel Alphubel",
+      "address": "Brantschenhaus 7, 3920 Zermatt, Suiza",
+      "checkIn": "2027-06-23",
+      "checkOut": "2027-06-26",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin precio confirmado para junio de 2027. Comparar total con impuestos locales, desayuno y cancelación según tarifa elegida.",
+      "notes": "A unos cinco minutos andando de Zermatt Bahnhof y Gornergrat Bahn; habitación individual 11 m² y baño privado según sitio oficial, desayuno incluido según FAQ. Check-in se realiza en Hotel Simi, al lado; confirmar política concreta y tasa turística.",
+      "links": [
+        {
+          "label": "Web oficial y reserva",
+          "url": "https://alphubel-zermatt.ch/en/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Alphubel%2C%20Brantschenhaus%207%2C%203920%20Zermatt%2C%20Suiza"
+    },
+    {
+      "id": "geneva-ibis-airport",
+      "city": "Ginebra · aeropuerto",
+      "name": "ibis Genève Aéroport",
+      "address": "Chemin de la Violette 10, 1216 Genève-Cointrin, Suiza",
+      "checkIn": "2027-06-26",
+      "checkOut": "2027-06-27",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin precio confirmado para junio de 2027. Comparar total con impuestos locales, desayuno y cancelación según tarifa elegida.",
+      "notes": "A unos diez minutos caminando de GVA; recepción 24 horas y servicio de transporte al aeropuerto cada 20 min de 05:00 a 11:00, según Accor. Encaja con salida aérea 09:10 el 27 junio; confirmar primera salida, punto de recogida y facilidad del trayecto a pie con equipaje.",
+      "links": [
+        {
+          "label": "Web oficial y reserva",
+          "url": "https://all.accor.com/hotel/3535/index.es.shtml"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=ibis%20Gen%C3%A8ve%20A%C3%A9roport%2C%20Chemin%20de%20la%20Violette%2010%2C%201216%20Gen%C3%A8ve-Cointrin%2C%20Suiza"
+    }
+  ],
   "stays": [],
   "seasonality": {
-    "summary": "Suiza verde: comparar junio y septiembre de 2027. Septiembre provisionalmente elegido por valles aún verdes y posible reducción de multitudes tras agosto; junio ofrece días más largos y flores pero más posibilidad de nieve residual en senderos altos. Comparar apertura de remontes y precios antes de decidir.",
+    "summary": "Junio y septiembre son las ventanas más equilibradas para esta ruta de valles verdes, cascadas, lagos y miradores. Junio aporta flores, deshielo y mucha luz, pero algunos senderos altos pueden conservar nieve; septiembre suele ofrecer accesos más despejados y días más cortos. Julio y agosto tienen oferta estival amplia con mayor demanda; de octubre a mayo hay restricciones por temporada, nieve o mantenimiento. Rangos de temperatura ilustrativos de ciudades y valles bajos, no de las cumbres ni pronósticos para 2027. El costo total del mismo viaje se comparará con septiembre una vez cotizado junio.",
     "months": {
       "10": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Aproximadamente 4 a 15 °C en valles y ciudades. Colores otoñales y menos visitantes; aumenta el riesgo de nieve en altura y algunos remontes y barcos cierran o reducen su operación."
       },
       "11": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −1 a 9 °C en valles y ciudades. Entretemporada con niebla, primeras nevadas y cierres por mantenimiento; difícil mantener la ruta de lagos, senderos y remontes."
       },
       "12": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −4 a 6 °C en valles y ciudades. Días cortos, invierno alpino y actividades orientadas a nieve; requiere un itinerario distinto al de Suiza Verde."
       },
       "01": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −5 a 5 °C en valles y ciudades de la ruta. Invierno, nieve y hielo en montaña, días cortos y servicios orientados al esquí; no recomendable para lagos y senderismo verde."
       },
       "02": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −4 a 7 °C en valles y ciudades. Continúa la temporada invernal, con rutas a pie altas cerradas o cubiertas de nieve y poca vegetación."
       },
       "03": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "Aproximadamente −1 a 11 °C en valles y ciudades. Transición con nieve persistente en cotas medias y altas; muchos servicios estivales todavía no operan."
       },
       "04": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Aproximadamente 3 a 15 °C en valles y ciudades. Deshielo, primeras flores y cascadas; las excursiones a lagos y senderos altos siguen condicionadas por nieve y aperturas estacionales."
       },
       "05": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "Aproximadamente 7 a 19 °C en valles y ciudades. Praderas verdes y cascadas caudalosas; hay remontes en funcionamiento, pero nieve residual y servicios estacionales incompletos en montaña."
       },
       "06": {
         "status": "recommended",
-        "description": "Aproximadamente 12 a 22 °C en valles bajos; días largos y praderas florecidas. Puede quedar nieve en senderos de altura; apertura de remontes según calendario."
+        "description": "Aproximadamente 11 a 23 °C en localidades y valles bajos. Praderas verdes, flores, deshielo y jornadas largas, con demanda creciente. El teleférico de Oeschinensee tiene temporada estival anunciada para junio de 2027; la apertura del remonte no garantiza que Bachalpsee, Riffelsee ni los senderos altos estén libres de nieve."
       },
       "07": {
         "status": "conditional",
-        "description": "Aproximadamente 13 a 24 °C en valles bajos; montañas verdes, pero mayor demanda y precios estivales."
+        "description": "Aproximadamente 13 a 25 °C en valles y ciudades. Gran oferta de trenes, barcos y remontes y senderos habitualmente más accesibles; alta demanda de verano y posibles tormentas por la tarde."
       },
       "08": {
         "status": "conditional",
-        "description": "Aproximadamente 13 a 24 °C en valles bajos; paisajes verdes y alta ocupación turística en zonas populares."
+        "description": "Aproximadamente 12 a 24 °C en valles y ciudades. Temporada alta de lagos y senderismo, con mayor afluencia en Jungfrau, Zermatt y excursiones icónicas; tormentas y tiempo variable en montaña."
       },
       "09": {
         "status": "recommended",
-        "description": "Aproximadamente 9 a 20 °C en valles bajos; praderas aún verdes y menos visitantes después del verano alto. Más nubosidad o frío en altura y días progresivamente más cortos."
+        "description": "Aproximadamente 8 a 21 °C en valles y ciudades. Buen equilibrio de paisajes todavía verdes y senderos altos habitualmente más despejados de nieve; menos horas de luz y posible reducción de servicios hacia finales del mes. Se comparará el costo total contra junio."
       }
     }
   },
-  "practicalIndicators": [],
+  "practicalIndicators": [
+    {
+      "id": "style",
+      "title": "Estilo de viaje",
+      "badge": "Moderado–activo",
+      "tone": "orange",
+      "text": "Viaje en solitario, principalmente en tren, con cinco alojamientos y seis noches seguidas en Grindelwald. Combina caminatas sencillas en valles y excursiones alpinas exigentes en logística; evitar senderos con nieve, intercambiar miradores según visibilidad y reservar pausas. Heididorf requiere resolver equipaje y subida desde Maienfeld."
+    },
+    {
+      "id": "language",
+      "title": "Idioma y moneda",
+      "badge": "Alemán · CHF",
+      "tone": "green",
+      "text": "En Zúrich, Lucerna, el Oberland y Zermatt se habla alemán y dialectos suizos; en Ginebra, francés. El inglés suele bastar en transporte y turismo. La moneda es el franco suizo (CHF); tarjetas ampliamente aceptadas, pero llevar algo de efectivo. Al pagar, escoger CHF en vez de la conversión ofrecida a MXN."
+    },
+    {
+      "id": "entry",
+      "title": "Documentación y consejos prácticos",
+      "badge": "Verificar antes de viajar",
+      "tone": "orange",
+      "text": "Pasaporte mexicano: turismo Schengen sin visa hasta 90 días en 180; pasaporte expedido en los últimos 10 años y válido al menos 3 meses después de salir. Entrada Schengen por Frankfurt (Alemania), con control fronterizo EES y posibles datos biométricos; llevar prueba de regreso, alojamiento y medios. ETIAS no opera ni acepta solicitudes en noviembre de 2026: verificar si será obligatorio en junio de 2027. Suiza: tomas J, 230 V/50 Hz; clavijas mexicanas A/B requieren adaptador hacia J (con tierra si aplica). El adaptador no transforma voltaje: revisar INPUT 100–240 V. Seguro de viaje con cobertura de montaña."
+    }
+  ],
   "tips": [],
   "sources": [
     "https://www.heididorf.ch/",
     "https://www.myswitzerland.com/es/descubrir-suiza/maienfeld-el-mundo-de-heidi/",
     "https://www.titlis.ch/en/activities/titlis-cliff-walk",
     "https://www.titlis.ch/en/information/timetable-lifts",
-    "https://www.sbb.ch/en"
+    "https://www.sbb.ch/en",
+    "https://www.lindt-home-of-chocolate.com/",
+    "https://www.jungfrau.ch/en-gb/",
+    "https://www.giessbach.ch/",
+    "https://www.oeschinensee.ch/en/",
+    "https://www.gornergrat.ch/en/",
+    "https://www.lufthansa.com/",
+    "https://www.swiss.com/",
+    "https://en.hotelmarta.ch/rooms",
+    "https://www.luzern.com/en/hotel/hotel-alpha",
+    "https://www.tschuggen-grindelwald.ch/en/einzelzimmer-balkon-eigerblick/",
+    "https://www.hotel-bernerhof-grindelwald.ch/en/service-hotel/",
+    "https://www.metropol-zermatt.ch/en/rooms",
+    "https://all.accor.com/hotel/A8F3/index.en.shtml",
+    "https://help.myswitzerland.com/hc/en-us/articles/213129969-When-exactly-is-the-best-time-to-travel-in-summer",
+    "https://www.oeschinensee.ch/en/tarife-fahrplan/",
+    "https://brienz-rothorn-bahn.ch/en/gruppen/",
+    "https://schweizmobil.ch/en/closures-detours-all",
+    "https://www.meteoswiss.admin.ch/",
+    "https://www.graubuenden.ch/en/attractions/heididorf-maienfeld-0",
+    "https://www.outdooractive.com/es/poi/ferienregion-heidiland/heididorf-maienfeld/62163670/",
+    "https://www.outdooractive.com/en/poi/berner-oberland/giessbachfaelle/28544324/",
+    "https://www.outdooractive.com/es/poi/jungfrau-region/truemmelbachfaelle/25006919/",
+    "https://www.geonames.org/2661398/brienz-be.html",
+    "https://www.outdooractive.com/es/poi/zermatt-matterhorn/riffelsee/8769671/",
+    "https://ourairports.com/airports/LSGG/",
+    "https://www.zuerich.com/en/eat-drink/typical-and-traditional",
+    "https://www.luzern.com/fileadmin/Mediendatenbank/Luzern-Tourismus/PDF_Dokumente/Tourist_Information/Bildungsunterlagen/Spezialitaeten_Kanton_Luzern.pdf",
+    "https://www.myswitzerland.com/es/planificacion/sobre-suiza/costumbres-y-tradiciones/platos-tipicos-de-la-cocina-del-pais-old/",
+    "https://www.graubuenden.ch/en/graubuenden/general-information/cuisine/recipes-grisons-specialities/barley-soup",
+    "https://www.chur.graubuenden.ch/de/uebersicht-rezepte-buendner-spezialitaeten",
+    "https://www.jungfrau.ch/en-gb/grindelwaldfirst/lake-bachalpsee/",
+    "https://www.giessbach.ch/en/kontakt-anreise/",
+    "https://www.valais.ch/en/taste/valais-specialties/recipes/cholera",
+    "https://www.heididorf.ch/fileadmin/siteadministration/heidiweg/Heidi_Weg_ENG.pdf",
+    "https://www.heididorf.ch/fileadmin/siteadministration/prospekte/Heididorf_Brochure_in_espanol.pdf",
+    "https://www.myswitzerland.com/es/planificacion/sobre-suiza/costumbres-y-tradiciones/platos-tipicos-de-la-cocina-del-pais/",
+    "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/book-priority-boarding/",
+    "https://www.jungfrau.ch/en-gb/jungfraujoch-top-of-europe/buy-jungfraujoch-ticket/",
+    "https://tickets.lindt-home-of-chocolate.com/selection/timeslotpass?lang=en&productId=101502126146",
+    "https://www.titlis.ch/en/webshop-ticket-purchase-instructions",
+    "https://www.titlis.ch/en/information/prices",
+    "https://www.jungfrau.ch/en-gb/grindelwaldfirst/",
+    "https://www.oeschinensee.ch/es/live/",
+    "https://www.bls-schiff.ch/en",
+    "https://www.gornergrat.ch/en/products/ticket",
+    "https://www.gornergrat.ch/en/pages/prices-gornergrat-bahn",
+    "https://zermatt.swiss/en",
+    "https://www.lakelucerne.ch/en/",
+    "https://www.truemmelbachfaelle.ch/",
+    "https://www.sbb.ch/en/offers/swiss-half-fare-card",
+    "https://www.sbb.ch/en/offers/find-travelcard",
+    "https://www.zentralbahn.ch/en/experience/leisure/luzern-interlaken-express",
+    "https://en.hotelmarta.ch/",
+    "https://www.hotel-waldstaetterhof.ch/en/",
+    "https://www.tschuggen-grindelwald.ch/en/buchen/",
+    "https://alphubel-zermatt.ch/en/",
+    "https://all.accor.com/hotel/3535/index.es.shtml",
+    "https://www.hotel-waldstaetterhof.ch/en/faqs",
+    "https://alphubel-zermatt.ch/en/questions-and-answers/",
+    "https://www.myswitzerland.com/en-ch/planning/about-switzerland/general-facts/general-information/electricity/",
+    "https://www.sem.admin.ch/en/entering-switzerland",
+    "https://travel-europe.europa.eu/etias/faq",
+    "https://opendatadocs.meteoswiss.ch/c-climate-data/c6-climate-normals",
+    "https://www.aboutswitzerland.eda.admin.ch/en/climate",
+    "https://www.timeanddate.de/sonne/%407287650?month=6&year=2027",
+    "https://zermatt.swiss/en/p/riffelsee-01tVj000005DnxqIAC",
+    "https://www.gornergrat.ch/en/stories/riffelsee-lake-trail-from-rotenboden-to-riffelberg",
+    "https://www.sem.admin.ch/sem/en/home/themen/einreise/faq.html",
+    "https://www.sem.admin.ch/dam/en/sd-web/VmF9OQbEilgA/sem-anh01-liste1-e.pdf",
+    "https://europa.eu/youreurope/citizens/travel/entry-exit/non-eu-nationals/",
+    "https://www.consilium.europa.eu/en/policies/entryexit-system/",
+    "https://www.myswitzerland.com/en-us/planning/transport-accommodation/tickets-public-transport/swiss-travel-pass/",
+    "https://www.jungfrau.ch/en-gb/prices-and-tickets/",
+    "https://www.tschuggen-grindelwald.ch/en/zimmer/",
+    "https://www.hotel-waldstaetterhof.ch/en/zimmer",
+    "https://help.myswitzerland.com/hc/en-us/articles/213130669-How-much-do-lunch-and-dinner-cost-in-a-restaurant",
+    "https://wise.com/gb/currency-converter/chf-to-mxn-rate/history/16-11-2026"
   ],
-  "sourceNote": "Fuentes consultadas en noviembre de 2026; todos los horarios de 2027 por reconfirmar.",
-  "budgetRange": null,
-  "budgetNote": "Presupuesto integral pendiente de investigar vuelos, hoteles, trenes, teleféricos, alimentación, seguros y accesos. Ningún precio ni disponibilidad de 2027 está confirmado.",
-  "placeDescriptions": {},
+  "sourceNote": "Clima: referencias de MeteoSwiss y clima suizo por altitud, no pronóstico de junio de 2027. Luz: cálculo astronómico local de Zúrich en junio (CEST, UTC+2). Entrada: SEM Suiza, normativa UE de pasaportes, EES (operativo desde 10 abril 2026) y ETIAS (a noviembre 2026 aún no operativo); verificar de nuevo antes de viajar. Electricidad: Switzerland Tourism, tomas J 230 V/50 Hz.",
+  "budgetRange": [
+    118000,
+    157000
+  ],
+  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,006 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.08 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha. Sunnegga/Leisee figura como actividad opcional con costo pendiente, excluida del total y separada del billete de Gornergrat.",
+  "placeDescriptions": {
+    "zurich": "A orillas del Limmat, las fachadas históricas y las torres del Grossmünster dibujan uno de los paseos urbanos más agradables de Zúrich.",
+    "swiss27-lindt": "Una enorme fuente de chocolate recibe a los visitantes en el museo Lindt, dedicado a la historia, las técnicas y los sabores del cacao.",
+    "swissgreen-heididorf": "La antigua casa de Heidi recrea el universo de la novela de Johanna Spyri entre construcciones rurales, praderas y montañas de Maienfeld.",
+    "lucerne": "El puente cubierto Kapellbrücke cruza el río Reuss y conecta las calles históricas de Lucerna con uno de sus paisajes más reconocibles.",
+    "swissgreen-titlis": "Este puente suspendido atraviesa un paisaje de roca y nieve en el Titlis, con vistas elevadas que dependen del viento y la visibilidad.",
+    "lake-lucerne": "Las orillas del lago de los Cuatro Cantones reúnen pueblos, embarcaderos y montañas que se reflejan en sus aguas cuando el tiempo acompaña.",
+    "swissgreen-eiger": "Las praderas de Grindelwald se extienden bajo la imponente cara norte del Eiger, entre chalets y senderos que anuncian el paisaje del Oberland.",
+    "lauterbrunnen": "Cascadas y paredes verticales enmarcan el valle de Lauterbrunnen, un corredor alpino donde los pueblos conviven con prados y saltos de agua.",
+    "murren": "El pueblo peatonal de Mürren ocupa una terraza sobre el valle de Lauterbrunnen y ofrece vistas abiertas hacia cumbres y pendientes alpinas.",
+    "first-cliff-walk": "La pasarela First Cliff Walk bordea una pared rocosa y conduce a una plataforma panorámica frente a las montañas del Oberland bernés.",
+    "swissgreen-bachalpsee": "El lago Bachalpsee aparece entre pastos de altura y cumbres alpinas, con reflejos espectaculares cuando el sendero está abierto y despejado.",
+    "swissgreen-brienz": "Las aguas turquesas del lago Brienz contrastan con las laderas boscosas y los pueblos de su ribera, ideales para contemplar desde un barco.",
+    "swissgreen-giessbach": "Las cascadas de Giessbach descienden por escalones de roca y bosque hacia el lago Brienz, junto a senderos y un funicular histórico.",
+    "swissgreen-jungfraujoch": "En Jungfraujoch, el observatorio Sphinx domina un paisaje de glaciares y nieve permanente, entre los grandes macizos del Oberland bernés.",
+    "wengen": "Wengen se asoma al valle de Lauterbrunnen desde una terraza de montaña, con chalets, pastos y vistas que cambian según las nubes.",
+    "oeschinensee": "Oeschinensee destaca por sus aguas de intenso color turquesa al pie de paredes montañosas, rodeadas de bosques y senderos de alta montaña.",
+    "zermatt": "Los tejados de Zermatt se agrupan frente al Matterhorn, cuya silueta piramidal aparece y desaparece entre nubes sobre el valle del Valais.",
+    "gornergrat": "El ferrocarril de cremallera asciende a Gornergrat, mirador sobre glaciares y numerosas cumbres de cuatro mil metros alrededor de Zermatt.",
+    "swissgreen-riffelsee": "En días serenos, el lago Riffelsee refleja el Matterhorn como un espejo, un espectáculo condicionado por el viento y la nieve estacional.",
+    "swissgreen-cover": "Desde las laderas sobre Grindelwald, los chalets se agrupan entre praderas verdes y grandes paredes alpinas, con el Eiger como protagonista del paisaje.",
+    "swissgreen-oeschinensee-cover": "El lago Oeschinensee destaca por sus aguas turquesas rodeadas de bosques y paredes alpinas, un paisaje estival espectacular del Oberland bernés.",
+    "swissgreen-trummelbach": "Las aguas glaciares esculpen túneles y cavidades dentro de la montaña; pasarelas y escaleras permiten observar la fuerza de las cataratas Trümmelbach.",
+    "swissgreen-gimmelwald": "Este pequeño pueblo alpino conserva chalets de madera, prados y un ambiente rural tranquilo, entre Mürren y las laderas del valle de Lauterbrunnen.",
+    "swissgreen-luzern-interlaken-express": "El Luzern–Interlaken Express serpentea entre lagos y montañas, un viaje ferroviario panorámico que enlaza dos regiones emblemáticas de la Suiza central.",
+    "swissgreen-titlis-rotair": "La estación superior del Rotair se alza en un paisaje de roca y nieve, destino del teleférico giratorio que asciende desde Engelberg.",
+    "swissgreen-titlis-icecave": "En el interior de la cueva glaciar del Titlis aparecen paredes de hielo y pasillos azulados, accesibles durante la operación turística.",
+    "swissgreen-sunnegga": "La terraza alpina de Sunnegga domina un paisaje de cumbres alrededor de Zermatt, con rutas suaves y vistas del Matterhorn en días despejados.",
+    "swissgreen-leisee": "El pequeño lago Leisee, cerca de Sunnegga, está rodeado por praderas alpinas y senderos, y ofrece un lugar apacible frente al Matterhorn."
+  },
   "optionalSection": null,
   "family": null,
   "layoutClass": null,
@@ -382,26 +3000,74 @@
   "cardHighlights": [],
   "introHighlights": [
     "Zúrich",
+    "Lindt",
     "Maienfeld",
     "Lucerna",
     "Titlis",
+    "Luzern–Interlaken Express",
     "Grindelwald",
     "Lauterbrunnen",
-    "Wengen",
     "Mürren",
+    "First",
+    "Bachalpsee",
+    "Jungfraujoch",
+    "Brienz",
+    "Oeschinensee",
     "Zermatt",
-    "Matterhorn"
+    "Matterhorn",
+    "Gornergrat",
+    "Riffelsee",
+    "Ginebra"
   ],
   "boldCityNames": false,
   "emphasisStyle": false,
   "linkRailInText": false,
-  "knownCosts": [],
+  "knownCosts": [
+    [
+      "Vuelo multidestino Lufthansa/SWISS",
+      "$23,300.14 MXN · cotizado noviembre 2026, no comprado"
+    ]
+  ],
   "costExclusions": null,
   "exchangeNote": null,
-  "railSummary": [],
+  "railSummary": [
+    [
+      "Escenario A · Half Fare Card",
+      "Precio oficial CHF 150 por 1 mes; hipotéticamente CHF 150 + CHF 500 de trenes/buses/barco descontados. Es una provisión, no la selección definitiva."
+    ],
+    [
+      "Escenario B · Swiss Travel Pass 15 días",
+      "Tarifa publicada CHF 499 segunda clase, periodo 13–27 junio. Los remontes de montaña pueden requerir billete adicional, descuento o reserva; no sumar Half Fare simultáneamente."
+    ],
+    [
+      "Escenario C · individuales",
+      "Billetes completos o Supersaver/Saver Day Pass por fecha y ruta, más gastos de montaña. Solo comparar cuando existan tarifas verificables para todas las jornadas."
+    ],
+    [
+      "Comparación pendiente",
+      "No hay ganador demostrado: comparar cada ruta, barcos y montaña con y sin descuento. Presupuesto provisional CHF 650 transportes generales + CHF 410 desglosados en actividades diarias, sin duplicar fichas informativas."
+    ],
+    [
+      "Regla de no duplicación",
+      "Los 13 traslados terrestres de majorTransport están cubiertos por provisiones en expenses. El vuelo se suma solo una vez. Sunnegga es opcional y no está costeado."
+    ],
+    [
+      "Reserva Jungfraujoch",
+      "Asiento reservado obligatorio del 1 mayo al 31 octubre 2027 además de un billete; la reserva del Luzern–Interlaken Express sigue siendo opcional."
+    ]
+  ],
   "railTotal": null,
   "railExclusions": null,
   "railCurrencyNote": null,
   "heroEyebrow": null,
-  "travelerCount": 1
+  "travelerCount": 1,
+  "hotelsComparison": "Alternativas por cotizar para las mismas fechas y 1 adulto: Zúrich, Hotel Bristol o Fred Hotel Hauptbahnhof (mejor aire acondicionado en algunas categorías frente a Marta); Lucerna, Hotel Alpha SOLO en habitación doble con baño privado o Hotel Central Luzern; Grindelwald, Hotel Bernerhof (junto a la estación) o Alpenblick (más alejado); Zermatt, Hotel Sarazena o Metropol & Spa; Ginebra, Nash Airport Hotel o ibis budget Genève Palexpo Aéroport (no confundir con ibis budget Genève Aéroport, que está más alejado y requiere transporte). Elegir finalmente por costo total, baño privado y conexión ferroviaria, no por precio «desde» de años anteriores.",
+  "coverSlides": [
+    "swissgreen-oeschinensee-cover",
+    "lauterbrunnen",
+    "swissgreen-eiger",
+    "swissgreen-brienz",
+    "swissgreen-riffelsee",
+    "swissgreen-heididorf"
+  ]
 }
