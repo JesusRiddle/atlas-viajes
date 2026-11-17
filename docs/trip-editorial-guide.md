@@ -93,6 +93,7 @@ La orden **«refléjalo en el Atlas»** activa el flujo completo de construcció
 **Campos:** `mapPoints`, `bases`, `routeCities`.
 **Cómo:** puntos georreferenciados verificables, orden coherente con el recorrido; distinguir base, excursión y parada. Nombres concisos que quepan en tarjetas; nunca coordenadas inventadas. Los lugares opcionales deben identificarse.
 
+**Presentación común de tarjetas del mapa:** mostrar siempre el nombre principal del lugar en negritas; los calificadores entre paréntesis y la línea inferior (noches, excursión, opcionalidad) conservan peso normal. Esta regla aplica a todos los viajes y se verifica en Desktop/Mobile.
 **Etiquetas del mapa (obligatorio):** cada punto con `base: true` debe vincularse a una entrada de `bases` para mostrar «X noche(s)»; si su nombre público difiere del nombre de alojamiento, especificar `mapPoints[].stayName` con el nombre exacto de `bases`. Los puntos sin pernocta muestran «Excursión». Nunca mostrar «Base» ni «Base para dormir» en la interfaz. Si falta el número de noches, mostrar «Noches por definir» y hacer fallar la auditoría de consistencia de un viaje completo. Verificar lista de ciudades, icono de cama y leyenda del mapa antes de aprobar una nueva planeación.
 **No incluir:** ubicaciones genéricas no visitadas ni pines ficticios para rutas por confirmar.
 
