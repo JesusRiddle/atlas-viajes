@@ -1018,7 +1018,44 @@
       "options": [
         {
           "id": "A",
-          "provider": "RhB · regional Bernina (ida y vuelta)",
+          "provider": "RhB · Diavolezza ida y vuelta (principal)",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "roundtrip",
+              "segments": [
+                {
+                  "from": "Pontresina",
+                  "to": "Bernina Diavolezza",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Ida regional; tarifa por confirmar"
+                },
+                {
+                  "from": "Bernina Diavolezza",
+                  "to": "Pontresina",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Regreso regional; horario por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billete regional ida y vuelta · por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Opción principal sin Alp Grüm; ascenso en teleférico sujeto a operación y clima. Verificar si transporte o remonte están cubiertos por el alojamiento."
+        },
+        {
+          "id": "B",
+          "provider": "RhB · Diavolezza + Alp Grüm (extensión opcional)",
           "status": "planning",
           "selectedFare": "pending",
           "journeys": [
@@ -1059,7 +1096,7 @@
               "price": null
             }
           ],
-          "notes": "Ruta ilustrativa si se realiza la extensión completa. Si se omite Alp Grüm, regreso Bernina Diavolezza→Pontresina, sin compra del tramo opcional. Teleférico Diavolezza aparte, sujeto a tarjeta de hotel."
+          "notes": "Solo seleccionar si el horario permite combinar Diavolezza con Alp Grüm sin prisas ni equipaje; tarifa regional total por cotizar, no duplicar con billetes/pases. Teleférico Diavolezza se paga aparte salvo inclusión hotelera."
         }
       ],
       "links": [
