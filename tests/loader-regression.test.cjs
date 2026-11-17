@@ -810,9 +810,9 @@ test('Suiza Verde: Panorama definitivo congruente, sin totales ficticios', () =>
     assert.equal(trip.bases.length, 5);
     assert.equal(trip.bases.reduce((n, stay) => n + stay[1], 0), 14);
     assert.match(trip.profile.paceWhy, /Cinco alojamientos/);
-    assert.match(trip.budgetNote, /Subtotal verificable|subtotal/i);
-    assert.match(trip.budgetNote, /no se puede presentar este subtotal como inversión total/i);
-    assert.equal(trip.budgetRange, null);
+    assert.match(trip.budgetNote, /Rango global estimado/i);
+    assert.match(trip.budgetNote, /no reservados|no reservad|estimad|provisi[oó]n/i);
+    assert.deepEqual(trip.budgetRange, [118000, 157000]);
     assert.equal(trip.budgetPreliminary.useBudgetRange, true);
     assert.equal(trip.expenses.length, 35);
     assert.deepEqual(trip.practicalIndicators.map(x => x.id), ['style', 'language', 'entry']);
@@ -894,4 +894,19 @@ test('Suiza Verde: fotografías estivales, portada, galerías y créditos comple
     assert.ok(trip.days[7].places.includes('swissgreen-bachalpsee'));
     assert.ok(trip.days[8].places.includes('swissgreen-brienz'));
     assert.ok(trip.days[12].places.includes('swissgreen-riffelsee'));
+    assert.deepEqual(trip.days[4].places,
+        ['swissgreen-titlis', 'swissgreen-titlis-rotair', 'swissgreen-titlis-icecave']);
+    assert.ok(trip.days[5].places.includes('swissgreen-luzern-interlaken-express'));
+    assert.ok(trip.days[6].places.includes('swissgreen-trummelbach'));
+    assert.ok(trip.days[6].optionalPlaces.includes('swissgreen-gimmelwald'));
+    assert.ok(trip.days[13].optionalPlaces.includes('swissgreen-sunnegga'));
+    assert.ok(trip.days[13].optionalPlaces.includes('swissgreen-leisee'));
+    assert.ok(trip.days.every(d => (d.optionalPlaces || []).every(k => d.places.includes(k))),
+        'Cada visita opcional debe mostrar su fotografía etiquetada como opción');
+    const tourPhotoIds = ['swissgreen-trummelbach', 'swissgreen-gimmelwald',
+        'swissgreen-luzern-interlaken-express', 'swissgreen-titlis-rotair',
+        'swissgreen-titlis-icecave', 'swissgreen-sunnegga', 'swissgreen-leisee'];
+    assert.ok(tourPhotoIds.every(id => ids.has(id)),
+        'No declarar completa la cobertura si falta alguna excursión u opcional');
+
 });
