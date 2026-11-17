@@ -2386,7 +2386,7 @@
     }
   ],
   "attractionTerms": [],
-  "cover": "swissgreen-cover",
+  "cover": "swissgreen-oeschinensee-cover",
   "mapPoints": [
     {
       "name": "Zúrich",
@@ -2942,7 +2942,8 @@
     "zermatt": "Los tejados de Zermatt se agrupan frente al Matterhorn, cuya silueta piramidal aparece y desaparece entre nubes sobre el valle del Valais.",
     "gornergrat": "El ferrocarril de cremallera asciende a Gornergrat, mirador sobre glaciares y numerosas cumbres de cuatro mil metros alrededor de Zermatt.",
     "swissgreen-riffelsee": "En días serenos, el lago Riffelsee refleja el Matterhorn como un espejo, un espectáculo condicionado por el viento y la nieve estacional.",
-    "swissgreen-cover": "Desde las laderas sobre Grindelwald, los chalets se agrupan entre praderas verdes y grandes paredes alpinas, con el Eiger como protagonista del paisaje."
+    "swissgreen-cover": "Desde las laderas sobre Grindelwald, los chalets se agrupan entre praderas verdes y grandes paredes alpinas, con el Eiger como protagonista del paisaje.",
+    "swissgreen-oeschinensee-cover": "El lago Oeschinensee destaca por sus aguas turquesas rodeadas de bosques y paredes alpinas, un paisaje estival espectacular del Oberland bernés."
   },
   "optionalSection": null,
   "family": null,
@@ -3015,7 +3016,7 @@
   "travelerCount": 1,
   "hotelsComparison": "Alternativas por cotizar para las mismas fechas y 1 adulto: Zúrich, Hotel Bristol o Fred Hotel Hauptbahnhof (mejor aire acondicionado en algunas categorías frente a Marta); Lucerna, Hotel Alpha SOLO en habitación doble con baño privado o Hotel Central Luzern; Grindelwald, Hotel Bernerhof (junto a la estación) o Alpenblick (más alejado); Zermatt, Hotel Sarazena o Metropol & Spa; Ginebra, Nash Airport Hotel o ibis budget Genève Palexpo Aéroport (no confundir con ibis budget Genève Aéroport, que está más alejado y requiere transporte). Elegir finalmente por costo total, baño privado y conexión ferroviaria, no por precio «desde» de años anteriores.",
   "coverSlides": [
-    "swissgreen-cover",
+    "swissgreen-oeschinensee-cover",
     "lauterbrunnen",
     "oeschinensee",
     "swissgreen-brienz",
