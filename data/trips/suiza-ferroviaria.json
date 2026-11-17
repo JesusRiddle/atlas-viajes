@@ -692,7 +692,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Milano%20Malpensa"
         }
       ],
-      "notes": ""
+      "notes": "",
+      "ticketGuide": "La cotización de Google Flights $17,450 MXN corresponde al itinerario aéreo multidestino completo y no es billete adquirido. Confirmar un solo localizador y protección de escalas, equipaje, reembolsos, clase y terminales; Frankfurt regreso 70 minutos."
     },
     {
       "id": "zurich-airport-center",
@@ -873,7 +874,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.%20Moritz%20Bahnhof"
         }
       ],
-      "notes": ""
+      "notes": "",
+      "ticketGuide": "16 junio de 2027: reservar asiento PE902 (alternativa PE904) y título válido para el trayecto en la clase escogida. La venta de reserva 1ª/2ª abre 93 días antes (~15/03/2027); en general sin cambios/cancelación. Precio del asiento pendiente, distinto de pase/billete."
     },
     {
       "id": "stmoritz-pontresina",
@@ -1215,7 +1217,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tirano%20RhB%20Bahnhof"
         }
       ],
-      "notes": ""
+      "notes": "",
+      "ticketGuide": "Regional RhB del 21 junio: billete de viaje válido y reserva de asiento opcional por CHF 5, según precio anunciado. Si Swiss Travel Pass o Saver Day Pass válido cubre la ruta, no pagar otra vez el billete; comprobar cobertura antes de elegir tarifa."
     },
     {
       "id": "tirano-milan",
@@ -1546,11 +1549,11 @@
   "railSummary": [
     [
       "Swiss Travel Pass",
-      "Pase de transporte suizo en días consecutivos (3/4/6/8/15). Comprobar si 8 días desde 13 a 20 junio o alternativa Flex cubren realmente los trenes largos; no cubre Trenord italiano ni reservas del Glacier. Precio de junio de 2027 pendiente de cotizar."
+      "Swiss Travel Pass continuo de 8 días a partir del 14 junio (14–21) podría cubrir Zürich→Zermatt, Glacier y Bernina hasta el límite de validez en Tirano; el aeropuerto→Zürich HB del 13 necesitaría billete aparte. Un pase 13–20 DEJA FUERA el Bernina del 21. Comparar 6 días 16–21 con 14 junio separado, Flex y billetes sueltos. Referencia oficial SBB: 8 días en 2.ª clase CHF 439 y 15 días CHF 499, precios válidos solo hasta 31/12/2026; no cotizaciones de junio 2027. Verificar cobertura exacta del tramo fronterizo de RhB y reserva obligatoria Glacier aparte."
     ],
     [
       "Swiss Half Fare Card",
-      "Precio oficial publicado CHF 150 para turista, referencia consultada 17/11/2026. Permite adquirir billetes y determinados remontes con descuento; NO incluye viajes gratis. Calcular billetes de ida y vuelta por trayecto antes de comparar."
+      "Swiss Half Fare Card para visitantes extranjeros, CHF 150 en web oficial SBB consultada 17/11/2026, válida un mes. Permite comprar billetes a mitad de precio o tarifa reducida; NO incluye viajes gratuitos. Calcular descuento real en viajes SBB/RhB y remontes, sin aplicar medio precio nuevamente a servicios incluidos en hotel."
     ],
     [
       "Saver Day Pass / Supersaver SBB",
