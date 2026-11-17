@@ -134,7 +134,7 @@
 - Prueba de regresión financiera añadida a tests/loader-regression.test.cjs; ejecución Node/Chromium pendiente, sin aprobación para merge.
 
 ## Fotografías y portada · 2026-11-16
-- Portada principal: foto horizontal de Grindelwald y los Alpes vista desde First, por Sabrina Schreiber (Wikimedia Commons, CC BY-SA 4.0); identificador `swissgreen-cover`. Carrusel activo de seis lugares: Grindelwald, Lauterbrunnen, Oeschinensee, lago Brienz, Riffelsee y Heididorf.
+- Portada principal actualizada a panorama horizontal del lago Oeschinensee, de Deralpinbergsteiger (Wikimedia Commons, CC BY-SA 4.0); identificador `swissgreen-oeschinensee-cover`. Carrusel activo de seis fotografías: Oeschinensee, Lauterbrunnen, otra toma del lago, Brienz, Riffelsee y Heididorf. La imagen anterior de Grindelwald se conserva acreditada pero deja de ser portada.
 - Ocho fotografías nuevas registradas en `data/places.json` y una foto horizontal adicional de portada: Grindelwald/Eiger, Heididorf, Titlis Cliff Walk, Bachalpsee, Giessbach, Brienz, Jungfraujoch, Riffelsee y portada. Cada registro nuevo conserva fuente Commons, autor, licencia y enlace de licencia; las galerías también reutilizan fotos ya acreditadas de otros destinos, incluida la fuente Lindt de Suiza Nevada que muestra un interior y no nieve.
 - Se agregaron galerías a 13 de 16 días. No se añadieron fotos de relleno a días de vuelo ni al traslado a Ginebra. Las fotografías son representaciones del lugar, no garantía de clima o condiciones del día de visita.
 - Diecinueve claves fotográficas únicas con descripciones editoriales de 15–30 palabras; Wengen aparece como foto y visita opcional el día 10; no se incluyen fotos estacionales con `winter`, `invierno` o `nevado`.
