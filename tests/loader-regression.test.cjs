@@ -795,7 +795,8 @@ test('Suiza Verde: 16 jornadas y fichas de movilidad visibles sin horarios inven
     assert.match(window.AtlasDayTransport.render(trip, trip.days[9]), /Zweilütschinen/);
     const day2 = window.AtlasDayTransport.render(trip, trip.days[1]);
     assert.match(day2, /17:25/, 'La llegada aérea +1 día debe aparecer en la jornada correcta');
-    assert.doesNotMatch(day2, /GVA/, 'No mezclar vuelo de regreso con llegada');
+    assert.doesNotMatch(day2, /class="flight-leg" aria-label="GVA → FRA"/, 'No mezclar tramo de vuelo de regreso con llegada');
+    assert.doesNotMatch(day2, /class="flight-leg" aria-label="FRA → MEX"/, 'No incluir regreso a México en el día 2');
 });
 
 
