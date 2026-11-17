@@ -9,10 +9,12 @@
   "routeCities": [
     "Zúrich",
     "Zermatt",
-    "Andermatt",
-    "Chur",
     "St. Moritz",
     "Pontresina",
+    "Samedan",
+    "Zuoz",
+    "Silvaplana",
+    "Sils",
     "Filisur",
     "Alp Grüm",
     "Tirano",
@@ -357,6 +359,17 @@
       "order": 2
     },
     {
+      "name": "St. Moritz",
+      "coords": [
+        46.49802,
+        9.84594
+      ],
+      "kind": "Parada ferroviaria",
+      "base": false,
+      "optional": false,
+      "order": 3
+    },
+    {
       "name": "Pontresina",
       "coords": [
         46.4955,
@@ -365,7 +378,117 @@
       "kind": "Alojamiento",
       "base": true,
       "optional": false,
-      "order": 3
+      "order": 4
+    },
+    {
+      "name": "Diavolezza",
+      "coords": [
+        46.41224,
+        9.96505
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 5
+    },
+    {
+      "name": "Alp Grüm",
+      "coords": [
+        46.37451,
+        10.03122
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 6
+    },
+    {
+      "name": "Samedan",
+      "coords": [
+        46.5332,
+        9.8746
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 7
+    },
+    {
+      "name": "Zuoz",
+      "coords": [
+        46.60129,
+        9.9608
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 8
+    },
+    {
+      "name": "Muottas Muragl",
+      "coords": [
+        46.52167,
+        9.9025
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 9
+    },
+    {
+      "name": "Lago Silvaplana",
+      "coords": [
+        46.45167,
+        9.79689
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 10
+    },
+    {
+      "name": "Lago Sils",
+      "coords": [
+        46.41927,
+        9.73286
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 11
+    },
+    {
+      "name": "Corvatsch",
+      "coords": [
+        46.41806,
+        9.82134
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 12
+    },
+    {
+      "name": "Filisur",
+      "coords": [
+        46.67517,
+        9.68235
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 13
+    },
+    {
+      "name": "Viaducto Landwasser",
+      "coords": [
+        46.680912,
+        9.676132
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": false,
+      "order": 14
     },
     {
       "name": "Tirano",
@@ -373,10 +496,10 @@
         46.21482,
         10.16335
       ],
-      "kind": "Tránsito ferroviario",
+      "kind": "Parada ferroviaria",
       "base": false,
       "optional": false,
-      "order": 4
+      "order": 15
     },
     {
       "name": "Milán",
@@ -387,7 +510,7 @@
       "kind": "Alojamiento",
       "base": true,
       "optional": false,
-      "order": 5
+      "order": 16
     }
   ],
   "hotels": [],
