@@ -82,3 +82,16 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Hipótesis a contrastar: llegada Suiza, Zermatt → Glacier Express → Engadina → Bernina → Tirano → salida Milán; evaluar Chur, Andermatt y regionales.
 - La ruta inicial no es una decisión confirmada. No añadir fechas ni días fingidos.
 - Auditorías A–D pendientes; no se ha ejecutado navegador o CI en esta etapa.
+
+## Investigación inicial · fuentes consultadas 2026-11-17
+- Glacier Express: ruta Zermatt–St. Moritz; reserva obligatoria 1.ª/2.ª clase desde 93 días antes; tarifa publicada CHF 166 (2.ª) + CHF 54 reserva; 1.ª CHF 284 + CHF 54. Fuente https://www.glacierexpress.ch/en/price y https://www.glacierexpress.ch/en/timetable . **Referencia vigente, no cotización 2027/2028.**
+- Glacier: cierre del tramo Rhine Gorge / Chur–Disentis 17 abril–2 mayo 2027, bus sustitutorio; validar calendario verano 2027 antes de escoger fechas.
+- Bernina Express: RhB anuncia calendario verano 2027 del 24 abril al 3 octubre; consultar frecuencias exactas/dirección. Fuente https://www.rhb.ch/en/panoramic-journeys/bernina-express/ .
+- Regional Bernina St. Moritz–Tirano: asiento opcional CHF 5 publicado, frente a panorámico con suplemento obligatorio. Fuente https://www.rhb.ch/en/tickets/bernina-line-reservations/ .
+- RhB UNESCO World Heritage Pass 2 días / 4 días de validez, regular Thusis–Tirano excluye Bernina/Glacier Express, CHF 75 segunda clase publicado. Fuente https://www.rhb.ch/en/regional-passes/world-heritage-pass/ .
+- Engadina: junio inicia verano y prados florecidos; septiembre transición al otoño y paseos tranquilos. Fuente https://www.engadin.ch/en/guide/engadin-holiday-resorts/engadin-mountains-in-summer-autumn/our-monthly-tips-for-the-engadin .
+- Muottas Muragl y Alp Languard: calendario verano 2026 6 junio–25 octubre, **no extrapolar como fechas confirmadas 2027**. Fuente https://www.engadin.ch/en/guide/mountains-railways/operating-times-timetables/mountain-railways-operating-times-in-summer .
+- Tirano–Milano Centrale: Trenord referencia 2h30, desde EUR 12.50; conexión a MXP aún por estudiar. Fuente https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/ .
+- Comparación estructural a debatir: (A) Zürich–Zermatt–Glacier completo–Engadina/Pontresina–Bernina regional–Tirano–Milán (11–12 días, 3–4 hoteles); (B) Zürich–Andermatt–Glacier parcial–Chur–Albula–Engadina–Bernina–Tirano–Milán (10–11 días, más diferenciación, Glacier incompleto); (C) Zürich–Zermatt–Glacier completo–Chur/St. Moritz–Bernina completo desde Chur–Tirano–Milán (11–12 días, repite Albula y aumenta movimientos).
+- Pendiente prioritario: contrastar vuelos multidestino MEX–ZRH y MXP–MEX con redondos, y validar que conexiones en Tirano/Milán permitan dormir en Milán según horario de vuelo.
+- **No se ha elegido ruta, año ni fechas.** No completar etapas 02/03 sin comparación de doce meses y decisión de itinerario.
