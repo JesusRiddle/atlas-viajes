@@ -161,7 +161,10 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": [
+        "flight-international"
+      ]
     },
     {
       "n": 2,
@@ -178,7 +181,11 @@
         "zurich"
       ],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": [
+        "flight-international",
+        "zurich-airport-center"
+      ]
     },
     {
       "n": 3,
@@ -195,7 +202,10 @@
         "zermatt"
       ],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": [
+        "zurich-zermatt"
+      ]
     },
     {
       "n": 4,
@@ -212,7 +222,8 @@
         "zermatt"
       ],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": []
     },
     {
       "n": 5,
@@ -237,6 +248,10 @@
           "label": "Glacier Express · horario 2027",
           "url": "https://www.glacierexpress.ch/en/timetable"
         }
+      ],
+      "transportRefs": [
+        "glacier-express",
+        "stmoritz-pontresina"
       ]
     },
     {
@@ -255,7 +270,10 @@
         "pontresina"
       ],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": [
+        "pontresina-diavolezza-alpgrum"
+      ]
     },
     {
       "n": 7,
@@ -273,7 +291,10 @@
         "stmoritz"
       ],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": [
+        "engadin-local"
+      ]
     },
     {
       "n": 8,
@@ -291,7 +312,10 @@
         "pontresina"
       ],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": [
+        "engadin-local"
+      ]
     },
     {
       "n": 9,
@@ -309,7 +333,10 @@
         "stmoritz"
       ],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": [
+        "landwasser-excursion"
+      ]
     },
     {
       "n": 10,
@@ -337,6 +364,10 @@
           "label": "Trenord · Tirano–Milán",
           "url": "https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-tirano/"
         }
+      ],
+      "transportRefs": [
+        "bernina-tirano",
+        "tirano-milan"
       ]
     },
     {
@@ -352,7 +383,11 @@
       "spend": null,
       "places": [],
       "headerPlaces": [],
-      "optionalPlaces": []
+      "optionalPlaces": [],
+      "transportRefs": [
+        "milan-malpensa",
+        "flight-international"
+      ]
     }
   ],
   "mapPoints": [
@@ -535,14 +570,739 @@
   ],
   "hotels": [],
   "expenses": [],
-  "majorTransport": [],
+  "majorTransport": [
+    {
+      "id": "flight-international",
+      "type": "flight",
+      "title": "Vuelos multidestino · MEX–ZRH / MXP–MEX",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Lufthansa operado · reserva cotizada vía SWISS",
+          "status": "quoted",
+          "selectedFare": "swiss",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "MEX",
+                  "to": "FRA",
+                  "departure": "2027-06-12T19:50:00-06:00",
+                  "arrival": "2027-06-13T14:50:00+02:00",
+                  "operator": "Lufthansa",
+                  "service": "LH499 · cotizado"
+                },
+                {
+                  "from": "FRA",
+                  "to": "ZRH",
+                  "departure": "2027-06-13T16:30:00+02:00",
+                  "arrival": "2027-06-13T17:25:00+02:00",
+                  "operator": "Lufthansa",
+                  "service": "LH1194 · cotizado"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "MXP",
+                  "to": "FRA",
+                  "departure": "2027-06-22T11:00:00+02:00",
+                  "arrival": "2027-06-22T12:20:00+02:00",
+                  "operator": "Lufthansa",
+                  "service": "LH249 · cotizado"
+                },
+                {
+                  "from": "FRA",
+                  "to": "MEX",
+                  "departure": "2027-06-22T13:30:00+02:00",
+                  "arrival": "2027-06-22T17:30:00-06:00",
+                  "operator": "Lufthansa",
+                  "service": "LH498 · cotizado"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "swiss",
+              "name": "SWISS · total multidestino, cotizado 17/11/2026",
+              "price": {
+                "amount": 17450,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "cabin": {
+                  "pieces": 1
+                },
+                "checked": null
+              },
+              "changes": "Depende de tarifa final; no confirmado",
+              "refunds": "Depende de tarifa final; no confirmado"
+            },
+            {
+              "id": "lufthansa",
+              "name": "Lufthansa · alternativa de compra cotizada 17/11/2026",
+              "price": {
+                "amount": 17878,
+                "currency": "MXN"
+              },
+              "baggage": {
+                "cabin": {
+                  "pieces": 1
+                },
+                "checked": null
+              },
+              "changes": "Depende de tarifa final",
+              "refunds": "Depende de tarifa final"
+            }
+          ],
+          "quotedAt": "2026-11-17",
+          "notes": "Google Flights, una persona turista, ambos itinerarios como un solo multidestino. MEX→FRA→ZRH, regreso MXP→FRA→MEX; aún SIN COMPRAR. Equipaje de mano 1 pieza indicado por comparador; no se confirmó peso ni artículo personal. Escala FRA vuelta 70 min, verificar conexión protegida, migración Schengen, terminales y alternativa de margen mayor. No sumar por separado precio de ida y regreso."
+        }
+      ],
+      "links": [
+        {
+          "label": "SWISS oficial",
+          "url": "https://www.swiss.com/"
+        },
+        {
+          "label": "Lufthansa oficial",
+          "url": "https://www.lufthansa.com/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Aeropuerto Internacional de la Ciudad de México",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Internacional%20de%20la%20Ciudad%20de%20M%C3%A9xico"
+        },
+        {
+          "name": "Aeropuerto de Frankfurt",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20de%20Frankfurt"
+        },
+        {
+          "name": "Aeropuerto de Zúrich",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20de%20Z%C3%BArich"
+        },
+        {
+          "name": "Aeropuerto Milano Malpensa",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aeropuerto%20Milano%20Malpensa"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "zurich-airport-center",
+      "type": "train",
+      "title": "Aeropuerto Zúrich → Zürich HB",
+      "day": 2,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "SBB · tren urbano",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Zürich Flughafen",
+                  "to": "Zürich HB",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB",
+                  "service": "Tren urbano · horario por verificar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Comprar billete aeropuerto→ciudad; el transporte público urbano podría estar cubierto por pase ferroviario válido. No duplicar."
+        }
+      ],
+      "links": [
+        {
+          "label": "SBB · trenes y tarifas",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Zürich Flughafen railway station",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20Flughafen%20railway%20station"
+        },
+        {
+          "name": "Zürich HB",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20HB"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "zurich-zermatt",
+      "type": "train",
+      "title": "Zürich HB → Zermatt",
+      "day": 3,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "SBB / MGB · itinerario regional",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Zürich HB",
+                  "to": "Visp",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB",
+                  "service": "Interurbano · conexión por seleccionar"
+                },
+                {
+                  "from": "Visp",
+                  "to": "Zermatt",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Matterhorn Gotthard Bahn",
+                  "service": "Regional · enlace por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "SBB ofrece conexiones vía Visp; verificar transbordo y posibles opciones alternativas. Billete normal/Supersaver/Saver Day Pass y Swiss Half Fare Card se comparan antes de elegir. No inventar horario."
+        }
+      ],
+      "links": [
+        {
+          "label": "SBB · conexiones",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Zürich HB",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Z%C3%BCrich%20HB"
+        },
+        {
+          "name": "Visp Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Visp%20Bahnhof"
+        },
+        {
+          "name": "Zermatt Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zermatt%20Bahnhof"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "glacier-express",
+      "type": "train",
+      "title": "Glacier Express panorámico · Zermatt → St. Moritz",
+      "day": 5,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Glacier Express · PE 902",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Zermatt",
+                  "to": "St. Moritz",
+                  "departure": "2027-06-16T08:50:00+02:00",
+                  "arrival": "2027-06-16T16:36:00+02:00",
+                  "operator": "Glacier Express",
+                  "service": "PE 902 · horario oficial verano 2027"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Travesía completa, asiento panorámico obligatorio, importe de reserva separado del billete o pase. Sin asiento confirmado. Alternativa PE 904 Zermatt 09:50 → St. Moritz 17:36; consultar cupos y condiciones."
+        }
+      ],
+      "links": [
+        {
+          "label": "Glacier Express · horarios",
+          "url": "https://www.glacierexpress.ch/en/timetable"
+        },
+        {
+          "label": "Glacier Express · asiento",
+          "url": "https://www.glacierexpress.ch/en/book-now"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Zermatt Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zermatt%20Bahnhof"
+        },
+        {
+          "name": "St. Moritz Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.%20Moritz%20Bahnhof"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "stmoritz-pontresina",
+      "type": "train",
+      "title": "St. Moritz → Pontresina",
+      "day": 5,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "RhB · regional",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "St. Moritz",
+                  "to": "Pontresina",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Regional · después de Glacier Express"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Correspondencia posterior a llegada Glacier Express prevista 16:36. Verificar espera real y que el título de transporte/pase cubra el segmento; sin conexión garantizada."
+        }
+      ],
+      "links": [
+        {
+          "label": "RhB · conexiones",
+          "url": "https://www.rhb.ch/en/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "St. Moritz Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=St.%20Moritz%20Bahnhof"
+        },
+        {
+          "name": "Pontresina Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pontresina%20Bahnhof"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pontresina-diavolezza-alpgrum",
+      "type": "train",
+      "title": "Excursión a Diavolezza y Alp Grüm opcional",
+      "day": 6,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "RhB · regional Bernina (ida y vuelta)",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Pontresina",
+                  "to": "Bernina Diavolezza",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Regional, sin equipaje"
+                },
+                {
+                  "from": "Bernina Diavolezza",
+                  "to": "Alp Grüm",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Extensión opcional"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "La segunda parte solo si alcanza el tiempo; regresar a Pontresina en regional, no comprar todo como trayecto sencillo. Separar teleférico Diavolezza y cobertura hotelera. No hay casilleros Alp Grüm."
+        }
+      ],
+      "links": [
+        {
+          "label": "RhB regional Bernina",
+          "url": "https://www.rhb.ch/en/tickets/bernina-line-reservations/"
+        },
+        {
+          "label": "Diavolezza",
+          "url": "https://www.corvatsch-diavolezza.ch/en/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Pontresina Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pontresina%20Bahnhof"
+        },
+        {
+          "name": "Bernina Diavolezza railway station",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bernina%20Diavolezza%20railway%20station"
+        },
+        {
+          "name": "Alp Grüm Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Alp%20Gr%C3%BCm%20Bahnhof"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "engadin-local",
+      "type": "train",
+      "title": "Trenes y autobuses de Alta Engadina · 18–19 junio",
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "RhB y autobuses regionales",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Pontresina",
+                  "to": "Samedan",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Regional; otras excursiones según clima"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Referencia modular para pueblos y lagos; es una alternativa de movilidad local, NO un billete de ida/vuelta cotizado. Verificar abono o tarjeta hotelera antes de adquirir billetes sueltos."
+        }
+      ],
+      "links": [
+        {
+          "label": "Engadin Mobil",
+          "url": "https://engadinmobil.ch/"
+        },
+        {
+          "label": "SBB · horarios",
+          "url": "https://www.sbb.ch/en"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Pontresina Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pontresina%20Bahnhof"
+        },
+        {
+          "name": "Samedan Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Samedan%20Bahnhof"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "landwasser-excursion",
+      "type": "train",
+      "title": "Pontresina ↔ Filisur · viaducto Landwasser",
+      "day": 9,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "RhB y Landwasserwelt",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Pontresina",
+                  "to": "Filisur",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Excursión ferroviaria; ida y regreso"
+                },
+                {
+                  "from": "Filisur",
+                  "to": "Schmitten GR Landwasser Viaduct",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Landwasserwelt",
+                  "service": "Lanzadera opcional; regreso pendiente"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Billetes regionales y lanzadera si opera; la excursión requiere retorno a Pontresina el mismo día. Shuttle según temporada 2027 y disponibilidad; revisar pases que lo cubran antes de añadir importe."
+        }
+      ],
+      "links": [
+        {
+          "label": "RhB",
+          "url": "https://www.rhb.ch/en/"
+        },
+        {
+          "label": "Landwasserwelt",
+          "url": "https://shop.landwasserwelt.ch/en/pages/viaduct-shuttle"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Pontresina Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pontresina%20Bahnhof"
+        },
+        {
+          "name": "Filisur Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Filisur%20Bahnhof"
+        },
+        {
+          "name": "Schmitten GR Landwasser Viaduct",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Schmitten%20GR%20Landwasser%20Viaduct"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "bernina-tirano",
+      "type": "train",
+      "title": "Bernina regional · Pontresina → Tirano",
+      "day": 10,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "RhB · tren regular panorámico Bernina",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Pontresina",
+                  "to": "Tirano",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "RhB",
+                  "service": "Regional del 21 junio; por seleccionar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Viaje con equipaje sin bajarse en Alp Grüm (no hay consignas). El regional no exige asiento; reserva opcional CHF 5 publicada, NO incluida en precio nulo del billete. Comprobar temporada y enlace posterior a Trenord."
+        }
+      ],
+      "links": [
+        {
+          "label": "RhB · reserva en regional",
+          "url": "https://www.rhb.ch/en/tickets/bernina-line-reservations/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Pontresina Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pontresina%20Bahnhof"
+        },
+        {
+          "name": "Tirano RhB Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tirano%20RhB%20Bahnhof"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "tirano-milan",
+      "type": "train",
+      "title": "Tirano → Milano Centrale",
+      "day": 10,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenord · RE8",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Tirano",
+                  "to": "Milano Centrale",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenord",
+                  "service": "RE8 · horario 21 junio por seleccionar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Servicio regional directo de referencia ~2 h 30 min, horarios 2027 individuales pendientes. Billete italiano aparte de pases suizos, salvo cobertura expresamente confirmada. Transbordo entre estaciones de Tirano con margen 20–30 min."
+        }
+      ],
+      "links": [
+        {
+          "label": "Trenord · línea RE8",
+          "url": "https://www.trenord.it/en/routes-and-timetables/journey/our-lines/tirano-sondrio-lecco-milano-regioexpress-line/?code=RE_8"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Tirano Trenord railway station",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tirano%20Trenord%20railway%20station"
+        },
+        {
+          "name": "Milano Centrale",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale"
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "id": "milan-malpensa",
+      "type": "train",
+      "title": "Milano Centrale → Malpensa Aeroporto T1",
+      "day": 11,
+      "selectedOption": "A",
+      "options": [
+        {
+          "id": "A",
+          "provider": "Trenord · Malpensa Express",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "oneway",
+              "segments": [
+                {
+                  "from": "Milano Centrale",
+                  "to": "Malpensa Aeroporto T1",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Trenord",
+                  "service": "Malpensa Express · junio 2027 por confirmar"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Tarifa por cotizar",
+              "price": null
+            }
+          ],
+          "notes": "Referencia operativa actual: ~51 min; salida de trenes desde las 05:25. Para vuelo cotizado MXP 11:00, salir temprano y comprobar terminal, margen de aeropuerto y validez del boleto."
+        }
+      ],
+      "links": [
+        {
+          "label": "Trenord · Milano Centrale a MXP T1",
+          "url": "https://www.trenord.it/en/routes-and-timetables/most-searched-lines/milano-centrale-malpensa-aeroporto-t1-route/"
+        }
+      ],
+      "boardingLocations": [
+        {
+          "name": "Milano Centrale",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Milano%20Centrale"
+        },
+        {
+          "name": "Malpensa Aeroporto T1",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Malpensa%20Aeroporto%20T1"
+        }
+      ],
+      "notes": ""
+    }
+  ],
   "reservations": [
     [
       "Prioridad muy alta",
       [
         {
           "title": "Glacier Express · miércoles 16 junio de 2027",
-          "description": "SIN COMPRAR. Preferido PE 902 Zermatt 08:50 → St. Moritz 16:36; alternativa PE 904 09:50 → 17:36, según plazas. En 1.ª y 2.ª clase la venta de reservas de asiento abre 93 días antes; exige billete válido adicional o pase que cubra el recorrido. Las reservas de asiento online normalmente no permiten cambios ni cancelación. Consultar clase, asiento y coste definitivo antes de pagar; si no hay plazas, comparar otra salida o trenes regulares, sacrificando el coche panorámico reservado.",
+          "description": "SIN COMPRAR. Preferido PE 902 Zermatt 08:50 → St. Moritz 16:36; alternativa PE 904 09:50 → 17:36, según plazas. En 1.ª y 2.ª clase la venta de reservas de asiento se abre 93 días antes (fecha orientativa: 15 marzo 2027); exige billete válido adicional o pase que cubra el recorrido. Las reservas de asiento online normalmente no permiten cambios ni cancelación. Coordinar vuelo y alojamientos flexibles antes de comprar una reserva poco modificable; consultar clase, asiento y coste definitivo; si no hay plazas, comparar otra salida o trenes regulares, sacrificando el coche panorámico reservado.",
           "links": [
             {
               "label": "Reservar asiento · Glacier Express",
@@ -597,7 +1357,7 @@
       [
         {
           "title": "Trenes Bernina regional y Trenord · lunes 21 junio",
-          "description": "SIN COMPRAR. Pontresina→Tirano por tren regional RhB; Tirano→Milano Centrale por Trenord en billetes compatibles con cada operador. Validar horarios específicos y conexión mínima orientativa de 20–30 min en Tirano, sin asumir enlace protegido. La reserva de asiento en regional Bernina es opcional y cuesta CHF 5 según tarifa publicada, además del transporte; no confundir con Bernina Express panorámico. Alternativa: otro regional de salida más temprana y más margen en Tirano.",
+          "description": "SIN COMPRAR. Pontresina→Tirano por tren regional RhB; Tirano→Milano Centrale por Trenord en billetes compatibles con cada operador. Validar horarios específicos y conexión mínima orientativa de 20–30 min en Tirano, sin asumir enlace protegido. La reserva de asiento en regional Bernina es opcional; el importe de referencia publicado es CHF 5 por persona y debe revalidarse antes de comprar, además del transporte; no confundir con Bernina Express panorámico. Alternativa: otro regional de salida más temprana y más margen en Tirano.",
           "links": [
             {
               "label": "RhB · reserva regional Bernina",
@@ -621,7 +1381,7 @@
         },
         {
           "title": "Landwasser Viaduct Shuttle · domingo 20 junio",
-          "description": "SIN RESERVAR. El servicio oficial anuncia circulación de miércoles a domingo entre 6 mayo y 27 junio de 2027, por lo que el domingo 20 encaja. Verificar horarios efectivos y espacio para llegar desde Filisur a Schmitten GR Landwasser Viaduct y mirador Hennings. Algunos billetes y pases aceptados cubren la lanzadera; no sumar dos veces. Alternativa: contemplar el viaducto desde el tren o excursión a Filisur sin lanzadera, sacrificando la foto exterior.",
+          "description": "SIN RESERVAR. El servicio oficial anuncia circulación de miércoles a domingo entre 6 mayo y 27 junio de 2027, por lo que el domingo 20 encaja. Verificar horarios efectivos y espacio para llegar desde Filisur a Schmitten GR Landwasser Viaduct y mirador Hennings. Confirmar qué billetes o pases son aceptados por el operador antes de presupuestar la lanzadera; no sumar dos veces. Alternativa: contemplar el viaducto desde el tren o excursión a Filisur sin lanzadera, sacrificando la foto exterior.",
           "links": [
             {
               "label": "Landwasserwelt · horarios y condiciones",
@@ -636,7 +1396,7 @@
       [
         {
           "title": "Diavolezza · 17 junio y Alp Grüm opcional",
-          "description": "SIN COMPRAR. Diavolezza opera en la temporada prevista de junio; subir únicamente con tiempo adecuado y servicio habilitado. Alp Grüm sería prolongación ferroviaria opcional si queda margen; hacerla sin maleta porque no hay casilleros. Si hay niebla, priorizar pueblos y cambiar el día de montaña. Comprobar primero cobertura del alojamiento participante y normas de billetes.",
+          "description": "SIN COMPRAR. Diavolezza tiene operación estival anunciada para la jornada del 17 junio; subir únicamente con tiempo adecuado y servicio habilitado. Alp Grüm sería prolongación ferroviaria opcional si queda margen; hacerla sin maleta porque no hay casilleros. Si hay niebla, priorizar pueblos y cambiar el día de montaña. Comprobar primero cobertura del alojamiento participante y normas de billetes.",
           "links": [
             {
               "label": "Diavolezza · operación oficial",
@@ -690,7 +1450,7 @@
   },
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Ningún vuelo, tren panorámico, alojamiento o excursión está comprado. Priorizar el asiento obligatorio del Glacier Express en cuanto abra su ventana, coordinándolo con la tarifa de vuelo y alojamientos cancelables. Antes de adquirir pases o remontes, revisar inclusiones del hotel de Pontresina y no duplicar billetes. Las excursiones de montaña y Landwasser dependen de servicio, visibilidad y condiciones de compra."
+    "reservationNote": "Ninguna compra realizada. Coordinar primero vuelo y alojamiento flexible con el asiento obligatorio del Glacier Express; no comprar una reserva de asiento difícil de modificar sin comprobar que el itinerario completo es viable. Consultar apertura de asiento 1.ª/2.ª desde 93 días antes (15 marzo 2027 para el 16 junio), cupos y tarifas. Después valorar pases, billetes regionales, beneficios del hotel y excursiones dependientes del clima."
   },
   "introHighlights": [
     "Zúrich",
@@ -750,5 +1510,53 @@
     "Glacier Express",
     "línea Bernina",
     "Engadina"
+  ],
+  "railSummary": [
+    [
+      "Swiss Travel Pass",
+      "Pase de transporte suizo en días consecutivos (3/4/6/8/15). Comprobar si 8 días desde 13 a 20 junio o alternativa Flex cubren realmente los trenes largos; no cubre Trenord italiano ni reservas del Glacier. Precio de junio de 2027 pendiente de cotizar."
+    ],
+    [
+      "Swiss Half Fare Card",
+      "Precio oficial publicado CHF 150 para turista, referencia consultada 17/11/2026. Permite adquirir billetes y determinados remontes con descuento; NO incluye viajes gratis. Calcular billetes de ida y vuelta por trayecto antes de comparar."
+    ],
+    [
+      "Saver Day Pass / Supersaver SBB",
+      "Tarifa dinámica por fecha, antelación, clase y posible reducción por Half Fare Card; sin precio confirmado para 13, 14, 16, 20 y 21 junio de 2027. Verificar cobertura válida para Glacier y regionales RhB; reserva panorámica siempre aparte."
+    ],
+    [
+      "Hotel con Mountain Railways Included",
+      "En un hotel participante de Engadina con al menos dos noches, determinados remontes pueden estar incluidos; transporte regional depende de condiciones específicas. No sumar Diavolezza, Muottas Muragl o Corvatsch como billetes pagados si están cubiertos."
+    ],
+    [
+      "Separación suiza / Italia",
+      "Tirano→Milano Centrale y Milano Centrale→Malpensa se presupuestan como Trenord independiente, salvo billete integrado expresamente verificado. No sumar dos veces billetes regionales cubiertos por pase ni la reserva de asiento opcional Bernina."
+    ]
+  ],
+  "ticketNotes": [
+    {
+      "title": "Glacier Express · dos componentes",
+      "note": "El PE 902 del 16 junio exige (1) título de transporte válido en la clase elegida y (2) reserva obligatoria de asiento. La reserva, aunque haya pase, no se elimina. Reservas de 1.ª/2.ª desde 93 días antes (referencia: 15 marzo 2027); confirmar plazas, precio, políticas y vuelo antes de comprar."
+    },
+    {
+      "title": "Billetes SBB · tarifa y flexibilidad",
+      "note": "Comparar billetes normales, Supersaver y Saver Day Pass por cada fecha real. Los precios variables no se inventan; registrar moneda CHF y referencia fechada antes de presupuestar. La Swiss Half Fare Card no equivale a transporte ilimitado."
+    },
+    {
+      "title": "Regional Bernina vs Bernina Express",
+      "note": "El 21 junio se planea RhB regional Pontresina→Tirano (sin parada larga con maleta). Reserva opcional de asiento CHF 5 publicada, además del billete; no confundir con reserva obligatoria del Bernina Express panorámico."
+    },
+    {
+      "title": "Tirano · transbordo no protegido",
+      "note": "Billetes RhB y Trenord pueden ser independientes. Reservar margen de 20–30 minutos o mayor según horarios y mantener un servicio anterior como alternativa; no asumir protección automática."
+    },
+    {
+      "title": "Malpensa y escala Frankfurt",
+      "note": "Para el vuelo MXP 11:00 del 22 junio, salir temprano desde Milano Centrale; confirmar terminal y check-in. Escala Frankfurt de 1h10 ajustada, validar itinerario en un solo boleto, protección, inmigración, tiempo real de tránsito y equipaje."
+    },
+    {
+      "title": "Transporte local y remontes",
+      "note": "Verificar si el hotel en Pontresina incluye autobuses, trenes regionales y remontes concretos. En los días 17–20 no sumar dos veces transporte incluido; la lanzadera Landwasser puede aceptar pases específicos."
+    }
   ]
 }
