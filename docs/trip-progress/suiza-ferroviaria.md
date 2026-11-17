@@ -8,7 +8,7 @@ Copiar esta plantilla a `docs/trip-progress/suiza-ferroviaria.md` al comenzar un
 **Modalidad:** [x] Planeación general  [ ] Itinerario detallado  
 **Última actualización:** 2026-11-17  
 **Etapa actual:** 02 verificada · 03 en análisis, sin fijar año ni fechas  
-**Siguiente acción autónoma:** Tras aprobación material de temporada y ruta, completar fechas, noches y esqueleto diario 03; comparar vuelos open-jaw y pases antes de cerrar auditoría A.  
+**Siguiente acción autónoma:** Comparar precios completos de hoteles para junio y septiembre en Zermatt/Pontresina/Zúrich/Milán y comprobar cobertura de remontes; después decidir ventana y cerrar etapa 03.  
 **Decisión que sí requiere al usuario (si existe):** Elegir ventana junio (segunda mitad) o septiembre (primera mitad) y confirmar si la variante A optimizada merece pasar a calendario; año todavía abierto.
 
 ## Checklist numerado de ejecución · orden de dependencias
@@ -137,3 +137,12 @@ Mostrar al usuario un reporte compacto por hitos: **completadas / en curso / pen
 - Diferencia de itinerarios equivalentes SWISS: **septiembre +$3,969 MXN** frente a junio 12–22 ($17,450 MXN). No extrapolar esta diferencia a hoteles ni costo integral antes de compararlos.
 - Precaución: el regreso seleccionado de septiembre de **11:00** no es el de 08:55 (que tenía conexión más larga y se mostró por el mismo precio en listado previo); solicitar nuevo desglose si se decide éste.
 - **Siguiente lote:** hoteles por fecha de estancia, alternativas Pontresina/St. Moritz, beneficio de remontes, itinerario 11 días con 1 Zúrich + 2 Zermatt + 5 Engadina + 1 Milán, sin convertirlos en reservas.
+
+
+## Primer filtro de alojamientos · investigación 17 noviembre 2026
+- **No son reservas ni cotizaciones fechadas.** Comparar una persona / habitación privada / baño privado y total de cada ventana: Zúrich 13 jun vs 5 sep (1 noche), Zermatt 14–16 jun vs 6–8 sep (2), Pontresina 16–21 jun vs 8–13 sep (5), Milán 21–22 jun vs 13–14 sep (1). Este reparto sigue siendo hipótesis; ninguna noche se fija en `bases`.
+- **Pontresina preferida provisionalmente por infraestructura ferroviaria y beneficio hotelero**, no por precio comprobado. Candidatos con sitios oficiales: Hotel Station (frente a estación; investigar posible ruido) https://www.hotelstation.ch/ ; Hotel Bernina (a ~10 minutos andando de estación, traslado hasta 17:00, desayuno, remontes incluidos con condiciones) https://www.hotelbernina.ch/en/ ; Hotel Garni Chesa Mulin (cuarto con baño privado, desayuno y remontes incluidos 2+ noches; taxi a la estación no necesariamente gratuito) https://www.chesa-mulin.ch/en/ ; Hotel Steinbock https://www.hotelsteinbock.ch/en/steinbock/steinbock-benefits . Comparador St. Moritz: Hauser Hotel https://www.hotelhauser.ch/ (centro, desnivel a estación); no declarar más barato uno sin tarifas equivalentes.
+- **Zermatt:** Hotel Sarazena, Bahnhofplatz 14, cerca de estación, habitaciones con baño propio: https://www.hotel-sarazena.ch/home-en ; Hotel Butterfly, Bodmenstrasse 21, cerca de estación: https://www.hotelbutterfly.ch/ . Comparar habitaciones individuales reales y flexibilidad.
+- **Oferta oficial Engadin Mountain Railways Included:** huéspedes de alojamientos participantes con estancia de 2+ noches obtienen determinados remontes en verano; comprobar vigencia en 2027, **qué remontes** cubre (incluida Diavolezza) y si transporte local está incluido por separado; no confundir con trenes interurbanos, Glacier Express o Bernina regional. Fuentes: https://www.engadin.ch/en/guide/mountains-railways/mountain-railway-tariffs/summer-tariffs-mountain-railways/mountain-railways-included ; https://www.myswitzerland.com/en-us/planning/offers/mountain-railways-included/ ; https://www.chesa-mulin.ch/en/room ; https://www.hotelbernina.ch/en/hotel/ .
+- **Advertencia:** Hotel Bernina muestra temporada 2026 desde 12 junio, no garantía de apertura o beneficios para 2027; verificar especialmente primera quincena de junio. Antes de comprar pases turísticos, cuantificar realmente las inclusiones hoteleras.
+- **No se ha cerrado hotel ni etapa 08.** Faltan tarifas comparables 2027 para cuatro localidades, cancelación, tasas, enlace Maps y validación final de estación a hotel. La comparación de costo integral junio/septiembre sigue pendiente, aunque el vuelo es MXN 3,969 más barato en junio.
