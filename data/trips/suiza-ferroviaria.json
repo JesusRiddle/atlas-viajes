@@ -11,55 +11,55 @@
   "intro": null,
   "introShort": null,
   "seasonality": {
-    "summary": null,
+    "summary": "Se comparan doce meses con referencia climatológica de Samedan (Alta Engadina, 1709 m; normales históricas 1991–2020), no pronósticos de 2027/2028: septiembre temprano favorece remontes operativos y menor lluvia histórica; segunda mitad de junio ofrece más luz, praderas verdes y nieve residual, pero ciertos remontes abren tarde. Las fechas de 2027/2028, los cierres y los precios se revalidarán al definir el viaje. Fuentes: SwissActivities/Samedan, Engadin Tourismus, Glacier Express y RhB.",
     "months": {
       "10": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "−3 a 11 °C en Samedan; alerces dorados a menudo en octubre, pero jornadas más cortas, remontes con cierres progresivos y Glacier Express suspendido 10 oct.–3 dic. de 2027."
       },
       "11": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "−8 a 4 °C en Samedan; baja temporada con muchos remontes sin servicio; Glacier Express suspendido gran parte de noviembre de 2027."
       },
       "12": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "−13 a −1 °C en Samedan; nieve y reinicio de parte de servicios de invierno, pero no corresponde al objetivo verde/ferroviario con excursiones suaves."
       },
       "01": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "−16 a −1 °C en Samedan; pleno invierno, días cortos, frío severo y servicio panorámico reducido; no corresponde a la propuesta de paisajes verdes."
       },
       "02": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "−16 a 1 °C en Samedan; ambiente invernal, nieve habitual y gran demanda en estaciones de esquí; no favorece las excursiones estivales."
       },
       "03": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "−10 a 4 °C en Samedan; nieve en alta montaña y poco acceso a senderos sin equipamiento; mejor para trenes de invierno que para Engadina verde."
       },
       "04": {
-        "status": "pending",
-        "description": null
+        "status": "avoid",
+        "description": "−4 a 8 °C en Samedan; transición entre temporadas, posible mantenimiento de remontes; en 2027 cierre de línea Chur–Disentis del 17 de abril al 2 de mayo con autobuses sustitutorios."
       },
       "05": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "0 a 13 °C en Samedan; cumbres nevadas y deshielo, pero muchos remontes en pausa y senderos altos inaccesibles; finales de mayo solo con excursiones alternativas."
       },
       "06": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "3 a 17 °C en Samedan; praderas florecidas, mucha luz y nieve residual en cotas altas; algunos remontes no comienzan hasta mediados o finales de junio. Priorizar segunda quincena."
       },
       "07": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "5 a 19 °C en Samedan; amplia operación estival y senderos generalmente accesibles, a cambio de mayor demanda turística y más lluvias estivales."
       },
       "08": {
-        "status": "pending",
-        "description": null
+        "status": "conditional",
+        "description": "5 a 19 °C en Samedan; servicios de montaña operativos y clima relativamente templado; temporada alta, alojamientos más demandados y tormentas posibles."
       },
       "09": {
-        "status": "pending",
-        "description": null
+        "status": "recommended",
+        "description": "1 a 15 °C en Samedan; mes fresco y relativamente más seco que junio, con remontes estivales habitualmente en funcionamiento; priorizar primera mitad por horas de luz."
       }
     }
   },
