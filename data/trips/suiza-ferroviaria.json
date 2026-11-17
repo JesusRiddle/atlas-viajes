@@ -568,7 +568,84 @@
       "order": 16
     }
   ],
-  "hotels": [],
+  "hotels": [
+    {
+      "id": "zurich-marta",
+      "city": "Zúrich",
+      "name": "Hotel Marta",
+      "address": "Zähringerstrasse 36, 8001 Zürich, Suiza",
+      "checkIn": "2027-06-13",
+      "checkOut": "2027-06-14",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin tarifa ni disponibilidad comprobadas para estas fechas de junio de 2027. Confirmar precio total de la estancia, impuestos y tasa turística, desayuno, cancelación y condiciones de habitación individual antes de reservar.",
+      "notes": "A pocos minutos a pie de Zürich HB. Habitación Single con baño privado verificada en web oficial, desayuno vegetariano anunciado. Ojo: no tiene aire acondicionado, puede haber ruido y acceso nocturno condicionado por recepción; confirmar llegada después de las 18:00.",
+      "links": [
+        {
+          "label": "Web oficial y reservas",
+          "url": "https://en.hotelmarta.ch/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Marta%2C%20Z%C3%A4hringerstrasse%2036%2C%208001%20Z%C3%BCrich%2C%20Suiza"
+    },
+    {
+      "id": "zermatt-sarazena",
+      "city": "Zermatt",
+      "name": "Hotel Sarazena",
+      "address": "Bahnhofplatz 14, 3920 Zermatt, Suiza",
+      "checkIn": "2027-06-14",
+      "checkOut": "2027-06-16",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin tarifa ni disponibilidad comprobadas para estas fechas de junio de 2027. Confirmar precio total de la estancia, impuestos y tasa turística, desayuno, cancelación y condiciones de habitación individual antes de reservar.",
+      "notes": "Frente al área ferroviaria de Zermatt, práctico para tomar Glacier Express muy temprano el día 16. El operador confirma baño/WC en todas las habitaciones y desayuno; verificar categoría single, hora del desayuno compatible con tren 08:50 y condiciones en tarifa elegida.",
+      "links": [
+        {
+          "label": "Web oficial y reservas",
+          "url": "https://www.hotel-sarazena.ch/home-en"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Sarazena%2C%20Bahnhofplatz%2014%2C%203920%20Zermatt%2C%20Suiza"
+    },
+    {
+      "id": "pontresina-bernina",
+      "city": "Pontresina",
+      "name": "Hotel Bernina Pontresina",
+      "address": "Via Maistra 207, 7504 Pontresina, Suiza",
+      "checkIn": "2027-06-16",
+      "checkOut": "2027-06-21",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin tarifa ni disponibilidad comprobadas para estas fechas de junio de 2027. Confirmar precio total de la estancia, impuestos y tasa turística, desayuno, cancelación y condiciones de habitación individual antes de reservar.",
+      "notes": "Candidato de cinco noches: calendario de apertura oficial 11 junio–24 octubre de 2027, por tanto incluye nuestras fechas. La web oficial anuncia Mountain Railways y transporte público local incluidos con dos noches o más en verano; confirmar categoría individual con baño, estación accesible con maleta, cobertura exacta (incluidos Diavolezza, Muottas Muragl y Corvatsch) y condiciones antes de presupuestar pases. No está junto al andén: comparar traslado urbano con Hotel Station.",
+      "links": [
+        {
+          "label": "Web oficial y reservas",
+          "url": "https://www.hotelbernina.ch/en/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Bernina%20Pontresina%2C%20Via%20Maistra%20207%2C%207504%20Pontresina%2C%20Suiza"
+    },
+    {
+      "id": "milan-berna",
+      "city": "Milán",
+      "name": "Hotel Berna Milano",
+      "address": "Via Napo Torriani 18, 20124 Milano, Italia",
+      "checkIn": "2027-06-21",
+      "checkOut": "2027-06-22",
+      "status": "Candidato principal · no reservado",
+      "rate": "Por cotizar · 1 adulto, habitación y baño privados, estancia completa",
+      "rateConditions": "Sin tarifa ni disponibilidad comprobadas para estas fechas de junio de 2027. Confirmar precio total de la estancia, impuestos y tasa turística, desayuno, cancelación y condiciones de habitación individual antes de reservar.",
+      "notes": "A unos 200 metros de Milano Centrale, práctico para tren desde Tirano y primer Malpensa Express al día siguiente. Confirmar categoría individual con baño privado, recepción, desayuno opcional y hora de check-out para salida muy temprana; revisar tarifa y tasa turística.",
+      "links": [
+        {
+          "label": "Web oficial y reservas",
+          "url": "https://uvethotels.com/hotelberna/en/home-2/"
+        }
+      ],
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Berna%20Milano%2C%20Via%20Napo%20Torriani%2018%2C%2020124%20Milano%2C%20Italia"
+    }
+  ],
   "expenses": [],
   "majorTransport": [
     {
@@ -946,7 +1023,7 @@
           "selectedFare": "pending",
           "journeys": [
             {
-              "direction": "oneway",
+              "direction": "roundtrip",
               "segments": [
                 {
                   "from": "Pontresina",
@@ -1024,7 +1101,7 @@
           "selectedFare": "pending",
           "journeys": [
             {
-              "direction": "oneway",
+              "direction": "roundtrip",
               "segments": [
                 {
                   "from": "Pontresina",
@@ -1091,7 +1168,7 @@
           "selectedFare": "pending",
           "journeys": [
             {
-              "direction": "oneway",
+              "direction": "roundtrip",
               "segments": [
                 {
                   "from": "Pontresina",
@@ -1369,19 +1446,23 @@
         },
         {
           "title": "Cuatro alojamientos · 13–22 junio, 9 noches",
-          "description": "SIN RESERVAR. Zúrich (13–14, una noche), Zermatt (14–16, dos), Pontresina (16–21, cinco) y Milán (21–22, una). Priorizar habitación individual privada y baño propio, cercanía a estaciones y cancelación flexible. Las cinco noches de Pontresina deben permitir las excursiones; comprobar hotel participante y beneficios antes de comparar pases. Hoteles son candidatos, no elegidos.",
+          "description": "SIN RESERVAR. Candidatos: Hotel Marta (Zúrich 13–14 junio, 1 noche), Hotel Sarazena (Zermatt 14–16, 2), Hotel Bernina (Pontresina 16–21, 5) y Hotel Berna (Milán 21–22, 1). Todos con tarifa y habitación individual aún por verificar para esas fechas. Confirmar baño privado, llegada/salida, recepción, cancelación, impuestos y desayuno; comparar Hotel Station como alternativa ferroviaria en Pontresina. Ninguno es elección final.",
           "links": [
             {
-              "label": "Hotel Bernina Pontresina · candidato",
-              "url": "https://www.hotelbernina.ch/en/"
+              "label": "Hotel Marta Zürich",
+              "url": "https://en.hotelmarta.ch/"
             },
             {
-              "label": "Hotel Sarazena Zermatt · candidato",
+              "label": "Hotel Sarazena Zermatt",
               "url": "https://www.hotel-sarazena.ch/home-en"
             },
             {
-              "label": "Engadina · alojamientos participantes",
-              "url": "https://www.engadin.ch/en/guide/mountains-railways/mountain-railway-tariffs/summer-tariffs-mountain-railways/mountain-railways-included"
+              "label": "Hotel Bernina Pontresina",
+              "url": "https://www.hotelbernina.ch/en/"
+            },
+            {
+              "label": "Hotel Berna Milano",
+              "url": "https://uvethotels.com/hotelberna/en/home-2/"
             }
           ]
         }
@@ -1485,7 +1566,7 @@
   },
   "planningDetails": {
     "reservationTitle": "Reservaciones importantes",
-    "reservationNote": "Ninguna compra realizada. Coordinar primero vuelo y alojamiento flexible con el asiento obligatorio del Glacier Express; no comprar una reserva de asiento difícil de modificar sin comprobar que el itinerario completo es viable. Consultar apertura de asiento 1.ª/2.ª desde 93 días antes (15 marzo 2027 para el 16 junio), cupos y tarifas. Después valorar pases, billetes regionales, beneficios del hotel y excursiones dependientes del clima."
+    "reservationNote": "Ningún vuelo, tren, hotel o excursión está comprado. Los alojamientos Hotel Marta, Sarazena, Bernina Pontresina y Berna Milano son candidatos, con disponibilidad y tarifas pendientes. Coordinar vuelos, hoteles cancelables y apertura de asientos Glacier Express, sin pagar una reserva de asiento poco flexible antes de confirmar conexiones. Verificar si Hotel Bernina incluye remontes locales antes de comprar pases y no duplicar esos gastos."
   },
   "introHighlights": [
     "Zúrich",
@@ -1593,5 +1674,7 @@
       "title": "Transporte local y remontes",
       "note": "Verificar si el hotel en Pontresina incluye autobuses, trenes regionales y remontes concretos. En los días 17–20 no sumar dos veces transporte incluido; la lanzadera Landwasser puede aceptar pases específicos."
     }
-  ]
+  ],
+  "lodgingSummary": "9 noches, 4 alojamientos candidatos, ninguno reservado: Zúrich 13–14 junio (1); Zermatt 14–16 (2); Pontresina 16–21 (5); Milán 21–22 (1). Se proponen habitaciones privadas con baño propio y acceso ferroviario práctico. Tarifas y disponibilidad para 1 adulto en junio 2027 pendientes de cotizar; los cuatro establecimientos son candidatos, no elecciones definitivas.",
+  "heroLodgingSummary": "9 noches, 4 alojamientos"
 }
