@@ -95,36 +95,56 @@
   },
   "experiences": [
     {
-      "city": "Glacier Express · travesía Zermatt–St. Moritz",
-      "description": "Atravesar el valle del Ródano, Oberalp, Andermatt, la garganta del Rin y la línea Albula hasta Engadina en el tren panorámico PE 902. La reserva es obligatoria además de un título de transporte válido. Es el protagonista ferroviario del viaje."
+      "city": "Zúrich · casco antiguo y río Limmat",
+      "description": "Pasear al atardecer por los alrededores del Limmat y las calles históricas, si la llegada lo permite. Probar Luxemburgerli o Birchermüesli; Zürcher Geschnetzeltes con rösti es especialidad local."
     },
     {
-      "city": "Bernina · tren regional de Pontresina a Tirano",
-      "description": "Recorrer Lago Bianco, Alp Grüm, Valposchiavo y el viaducto espiral de Brusio en tren regular. Se propone una visita sin maleta a Alp Grüm desde Pontresina, porque no existen casilleros allí; el descenso a Tirano se realiza el día de traslado a Italia."
+      "city": "Zermatt · pueblo de chalets y Valais",
+      "description": "Recorrer el casco antiguo de Zermatt entre casas de madera ennegrecida y contemplar el Matterhorn desde el valle. Descubrir raclette valaisanne, Walliser Trockenfleisch y la tarta salada Cholera, tradicionales del Valais."
+    },
+    {
+      "city": "Glacier Express · Zermatt a St. Moritz",
+      "description": "Contemplar el paso Oberalp, la garganta del Rin y los viaductos de la línea Albula desde las ventanas panorámicas del tren, culminando el recorrido completo entre Zermatt y St. Moritz."
+    },
+    {
+      "city": "Pontresina · arquitectura alpina de Engadina",
+      "description": "Descubrir las fachadas esgrafiadas y las casas tradicionales de Pontresina, punto de partida de las excursiones ferroviarias. Buscar Engadiner Nusstorte, capuns o plain in pigna, especialidades de los Grisones."
     },
     {
       "city": "Diavolezza · glaciares del macizo Bernina",
-      "description": "Subir en teleférico a un mirador sobre los glaciares de Pers y Morteratsch; concentrarse en terrazas y senderos fáciles habilitados según el tiempo. La operación y la cobertura de una posible tarjeta hotelera se verificarán antes de comprar."
+      "description": "Ascender en teleférico hasta la terraza de Diavolezza y contemplar los glaciares Pers y Morteratsch, con vistas al macizo Bernina. Evitar caminatas glaciares o senderos altos si permanece nieve o hielo."
     },
     {
-      "city": "Muottas Muragl · panorama de lagos",
-      "description": "Mirador del sistema de lagos de la Alta Engadina, con subida en funicular si el calendario estival de 2027 lo permite. Alternativa menos redundante que acumular varias cumbres glaciares."
+      "city": "Alp Grüm · balcón ferroviario sobre el Lago Palü (opcional)",
+      "description": "Bajar del tren regional en Alp Grüm para contemplar el Lago Palü y el valle de Poschiavo desde la terraza de la estación, en una excursión sin maleta desde Pontresina."
     },
     {
-      "city": "Lagos de Silvaplana y Sils",
-      "description": "Pueblos, orillas, miradores fáciles y paisajes de valle, distintos de los glaciares vistos desde trenes y teleféricos. Ajustar las caminatas a la operación de autobuses y la meteorología."
+      "city": "Samedan, Bever y Zuoz · pueblos tradicionales",
+      "description": "Recorrer callejuelas con casas de piedra y fachadas decoradas con esgrafiados. En Zuoz o Samedan, buscar especialidades regionales como maluns, capuns y Engadiner Nusstorte; escoger pueblos según tiempo y trenes."
     },
     {
-      "city": "Albula y Landwasser · trenes réticos UNESCO",
-      "description": "Volver hacia Filisur para fotografiar el viaducto Landwasser desde fuera, solo si hay acceso a un mirador de dificultad moderada o transporte oficial operativo. El Glacier Express ya cruza el puente; este día se justifica por la perspectiva exterior."
+      "city": "Muottas Muragl · panorama de la Alta Engadina",
+      "description": "Subir en funicular desde Punt Muragl hasta la terraza panorámica para observar los lagos y montañas de Engadina. La visita puede sustituirse por un paseo de valle si hay nubes."
     },
     {
-      "city": "Pontresina, Samedan y Zuoz · pueblos de Engadina",
-      "description": "Arquitectura tradicional, fachadas decoradas con esgrafiados y gastronomía de los Grisones, como capuns, pizzoccheri y Bündner Gerstensuppe. Una jornada adaptable a lluvia o nubes."
+      "city": "Sils y Silvaplana · lagos y pueblos",
+      "description": "Caminar por tramos fáciles de las orillas del lago Sils y el Silvaplanersee, entre pueblos y paisajes de valle. Probar pizzoccheri de tradición grisona o una porción de Engadiner Nusstorte."
     },
     {
-      "city": "Corvatsch · opcional a partir del 19 de junio",
-      "description": "Subida complementaria desde Surlej únicamente si el operador confirma apertura, el tiempo acompaña y el coste no se duplica con un beneficio hotelero. No es imprescindible frente a Diavolezza y Muottas Muragl."
+      "city": "Corvatsch · mirador opcional desde Surlej",
+      "description": "Contemplar desde la estación superior del teleférico el paisaje de lagos y cumbres de Engadina, únicamente si está abierto desde el 19 de junio y la visibilidad favorece la subida."
+    },
+    {
+      "city": "Filisur · viaducto Landwasser desde fuera",
+      "description": "Viajar en tren rético a Filisur y contemplar los arcos del viaducto Landwasser desde la plataforma Hennings, utilizando la lanzadera si opera. Esta perspectiva exterior complementa el cruce en Glacier Express."
+    },
+    {
+      "city": "Bernina · Lago Bianco, Brusio y Tirano",
+      "description": "Atravesar el paso Bernina en tren regional, observar el Lago Bianco y descender por Valposchiavo hasta el viaducto espiral de Brusio. En Tirano, descubrir bresaola della Valtellina, pizzoccheri o sciatt si el enlace deja tiempo."
+    },
+    {
+      "city": "Milán · centro histórico al final del recorrido (opcional)",
+      "description": "Si la llegada desde Tirano deja una tarde libre, contemplar el Duomo y la Galleria Vittorio Emanuele II. Probar risotto alla milanese u ossobuco, clásicos de la cocina milanesa."
     }
   ],
   "days": [
