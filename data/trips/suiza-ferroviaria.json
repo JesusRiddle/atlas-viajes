@@ -690,7 +690,280 @@
       "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Hotel%20Berna%20Milano%2C%20Via%20Napo%20Torriani%2018%2C%2020124%20Milano%2C%20Italia"
     }
   ],
-  "expenses": [],
+  "expenses": [
+    {
+      "id": "lodging-zurich",
+      "category": "lodging",
+      "concept": "Hotel Marta · 1 noche",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 175,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Supuesto CHF 175 por habitación individual con baño; SIN tarifa, cupo ni reserva comprobados para 13–14 junio 2027.",
+      "hotelId": "zurich-marta",
+      "nights": 1
+    },
+    {
+      "id": "lodging-zermatt",
+      "category": "lodging",
+      "concept": "Hotel Sarazena · 2 noches",
+      "date": "2027-06-14",
+      "cost": {
+        "amount": 360,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Supuesto CHF 180/noche, 2 noches, habitación individual con baño; SIN tarifa ni disponibilidad verificadas 14–16 junio.",
+      "hotelId": "zermatt-sarazena",
+      "nights": 2
+    },
+    {
+      "id": "lodging-pontresina",
+      "category": "lodging",
+      "concept": "Hotel Bernina Pontresina · 5 noches",
+      "date": "2027-06-16",
+      "cost": {
+        "amount": 950,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Supuesto CHF 190/noche, 5 noches, habitación individual con baño; beneficios de remonte sujetos a condiciones, SIN precio ni cupo de 16–21 junio confirmados.",
+      "hotelId": "pontresina-bernina",
+      "nights": 5
+    },
+    {
+      "id": "lodging-milan",
+      "category": "lodging",
+      "concept": "Hotel Berna Milano · 1 noche",
+      "date": "2027-06-21",
+      "cost": {
+        "amount": 155,
+        "currency": "EUR"
+      },
+      "status": "estimated",
+      "notes": "Supuesto €155 por una noche habitación individual con baño, antes de eventual tasa local; SIN tarifa ni cupo comprobado.",
+      "hotelId": "milan-berna",
+      "nights": 1
+    },
+    {
+      "id": "rail-pass-8days",
+      "category": "transport",
+      "concept": "Swiss Travel Pass 8 días 2.ª clase · 14–21 junio",
+      "date": "2027-06-14",
+      "cost": {
+        "amount": 439,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Precio publicado para 2027 CHF 439 según Swiss Travel System/Travel Switzerland (17/11/2026); NO comprado. Se utiliza como escenario presupuestario, no como selección óptima definitiva. Cubre tramos suizos etiquetados budgetIncludedIn, NO cubre asiento Glacier."
+    },
+    {
+      "id": "glacier-seat",
+      "category": "activities",
+      "concept": "Glacier Express · reserva obligatoria de asiento",
+      "date": "2027-06-16",
+      "cost": {
+        "amount": 54,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Referencia oficial Glacier Express CHF 54 por asiento 1ª/2ª clase. No es billete; NO comprado ni se ha comprobado cupo para 16 junio 2027."
+    },
+    {
+      "id": "mountain-lifts-allowance",
+      "category": "activities",
+      "concept": "Provisión excursiones Diavolezza y Muottas Muragl",
+      "date": "2027-06-17",
+      "cost": {
+        "amount": 100,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Supuesto preventivo por remontes de dos jornadas, no entradas reservadas; si beneficio hotelero los cubre, quitar/reducir esta partida al verificar. Corvatsch opcional EXCLUIDO."
+    },
+    {
+      "id": "food-day01",
+      "category": "food",
+      "concept": "Alimentación · día 1 (salida nocturna)",
+      "date": "2027-06-12",
+      "cost": {
+        "amount": 300,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto 1 persona, refrigerio previo al vuelo, no tres comidas; omitir servicio a bordo incluido."
+    },
+    {
+      "id": "food-day02",
+      "category": "food",
+      "concept": "Alimentación · día 2 (llegada vespertina)",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 400,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto cena y pequeño refrigerio tras aterrizaje; comidas de vuelo aparte, evitar lactosa."
+    },
+    {
+      "id": "food-day03",
+      "category": "food",
+      "concept": "Alimentación · día 3 (traslado a Zermatt)",
+      "date": "2027-06-14",
+      "cost": {
+        "amount": 800,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto comida y cena sencillas en Zermatt; desayuno del hotel podría estar incluido, por verificar."
+    },
+    {
+      "id": "food-day04",
+      "category": "food",
+      "concept": "Alimentación · día 4 (Zermatt)",
+      "date": "2027-06-15",
+      "cost": {
+        "amount": 1000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto comida y cena en Zermatt y refrigerio; desayunos sujetos a tarifa hotelera."
+    },
+    {
+      "id": "food-day05",
+      "category": "food",
+      "concept": "Alimentación · día 5 (Glacier Express)",
+      "date": "2027-06-16",
+      "cost": {
+        "amount": 1000,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto comida durante larga jornada ferroviaria, más cena ligera; restaurante de tren no incluido por defecto."
+    },
+    {
+      "id": "food-day06",
+      "category": "food",
+      "concept": "Alimentación · día 6 (Diavolezza)",
+      "date": "2027-06-17",
+      "cost": {
+        "amount": 950,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto comida y cena sencillas en Engadina y refrigerios, con opciones sin lactosa."
+    },
+    {
+      "id": "food-day07",
+      "category": "food",
+      "concept": "Alimentación · día 7 (pueblos)",
+      "date": "2027-06-18",
+      "cost": {
+        "amount": 900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto comida de pueblos y cena en Pontresina; especialidades regionales pueden contener lácteos."
+    },
+    {
+      "id": "food-day08",
+      "category": "food",
+      "concept": "Alimentación · día 8 (lagos)",
+      "date": "2027-06-19",
+      "cost": {
+        "amount": 900,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto comida informal y cena en Engadina; evitar sumarla dos veces con desayunos incluidos."
+    },
+    {
+      "id": "food-day09",
+      "category": "food",
+      "concept": "Alimentación · día 9 (Landwasser)",
+      "date": "2027-06-20",
+      "cost": {
+        "amount": 850,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto almuerzo ligero fuera y cena en Pontresina."
+    },
+    {
+      "id": "food-day10",
+      "category": "food",
+      "concept": "Alimentación · día 10 (Bernina / Milán)",
+      "date": "2027-06-21",
+      "cost": {
+        "amount": 850,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto comida de conexión en Tirano o tren y cena en Milán; considera horarios."
+    },
+    {
+      "id": "food-day11",
+      "category": "food",
+      "concept": "Alimentación · día 11 (regreso)",
+      "date": "2027-06-22",
+      "cost": {
+        "amount": 350,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Supuesto refrigerios de aeropuerto, no tres comidas; servicio de vuelo internacional según tarifa por verificar."
+    },
+    {
+      "id": "trip-insurance",
+      "category": "other",
+      "concept": "Seguro de viaje con cobertura de actividades turísticas alpinas",
+      "date": "2027-06-12",
+      "cost": {
+        "amount": 1600,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión de planeación, no póliza cotizada; validar cobertura médica, demoras y exclusiones de montaña."
+    },
+    {
+      "id": "local-mexico",
+      "category": "transport",
+      "concept": "Traslados urbanos en CDMX hacia/desde MEX",
+      "date": "2027-06-12",
+      "cost": {
+        "amount": 700,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Provisión total aproximada de taxi/transporte terrestre ida y regreso; no cotizado."
+    },
+    {
+      "id": "city-taxes",
+      "category": "other",
+      "concept": "Provisión de tasas turísticas no incluidas en hotel",
+      "date": "2027-06-13",
+      "cost": {
+        "amount": 35,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "Supuesto preventivo CHF 35 para impuestos locales de Suiza/Italia, no tasa confirmada; ajustar con hotel y ciudad (las italianas se cobran en EUR). Provisión monetaria única, NO sumar nuevamente si alojamiento incluye tasas."
+    },
+    {
+      "id": "contingency",
+      "category": "other",
+      "concept": "Reserva de contingencia por clima, cambio ferroviario y precios",
+      "date": "2027-06-12",
+      "cost": {
+        "amount": 4500,
+        "currency": "MXN"
+      },
+      "status": "estimated",
+      "notes": "Margen estimado de planeación. No se considera compra ni sustituye seguro. Si los precios cambian notablemente, recalcular."
+    }
+  ],
   "majorTransport": [
     {
       "id": "flight-international",
@@ -827,7 +1100,7 @@
           "id": "A",
           "provider": "SBB · tren urbano",
           "status": "planning",
-          "selectedFare": "pending",
+          "selectedFare": "planning",
           "journeys": [
             {
               "direction": "oneway",
@@ -845,12 +1118,15 @@
           ],
           "fares": [
             {
-              "id": "pending",
-              "name": "Tarifa por cotizar",
-              "price": null
+              "id": "planning",
+              "name": "Supuesto billete sencillo aeropuerto→Zürich HB, no cotización 2027",
+              "price": {
+                "amount": 8,
+                "currency": "CHF"
+              }
             }
           ],
-          "notes": "Comprar billete aeropuerto→ciudad; el transporte público urbano podría estar cubierto por pase ferroviario válido. No duplicar."
+          "notes": "Comprar billete aeropuerto→ciudad; el transporte público urbano podría estar cubierto por pase ferroviario válido. No duplicar. Provisión CHF 8 por una persona, estimación no cotizada; el pase 14–21 NO cubre llegada del 13."
         }
       ],
       "links": [
@@ -936,7 +1212,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Zermatt%20Bahnhof"
         }
       ],
-      "notes": ""
+      "notes": "",
+      "budgetIncludedIn": "rail-pass-8days"
     },
     {
       "id": "glacier-express",
@@ -996,7 +1273,8 @@
         }
       ],
       "notes": "",
-      "ticketGuide": "16 junio de 2027: reservar asiento PE902 (alternativa PE904) y título válido para el trayecto en la clase escogida. La venta de reserva 1ª/2ª abre 93 días antes (~15/03/2027); en general sin cambios/cancelación. Precio del asiento pendiente, distinto de pase/billete."
+      "ticketGuide": "16 junio de 2027: reservar asiento PE902 (alternativa PE904) y título válido para el trayecto en la clase escogida. La venta de reserva 1ª/2ª abre 93 días antes (~15/03/2027); en general sin cambios/cancelación. Precio del asiento pendiente, distinto de pase/billete.",
+      "budgetIncludedIn": "rail-pass-8days"
     },
     {
       "id": "stmoritz-pontresina",
@@ -1051,7 +1329,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pontresina%20Bahnhof"
         }
       ],
-      "notes": ""
+      "notes": "",
+      "budgetIncludedIn": "rail-pass-8days"
     },
     {
       "id": "pontresina-diavolezza-alpgrum",
@@ -1167,7 +1446,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Alp%20Gr%C3%BCm%20Bahnhof"
         }
       ],
-      "notes": ""
+      "notes": "",
+      "budgetIncludedIn": "rail-pass-8days"
     },
     {
       "id": "engadin-local",
@@ -1233,7 +1513,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Samedan%20Bahnhof"
         }
       ],
-      "notes": ""
+      "notes": "",
+      "budgetIncludedIn": "rail-pass-8days"
     },
     {
       "id": "landwasser-excursion",
@@ -1320,7 +1601,8 @@
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Schmitten%20GR%20Landwasser%20Viaduct"
         }
       ],
-      "notes": ""
+      "notes": "",
+      "budgetIncludedIn": "rail-pass-8days"
     },
     {
       "id": "bernina-tirano",
@@ -1376,7 +1658,8 @@
         }
       ],
       "notes": "",
-      "ticketGuide": "Regional RhB del 21 junio: billete de viaje válido y reserva de asiento opcional por CHF 5, según precio anunciado. Si Swiss Travel Pass o Saver Day Pass válido cubre la ruta, no pagar otra vez el billete; comprobar cobertura antes de elegir tarifa."
+      "ticketGuide": "Regional RhB del 21 junio: billete de viaje válido y reserva de asiento opcional por CHF 5, según precio anunciado. Si Swiss Travel Pass o Saver Day Pass válido cubre la ruta, no pagar otra vez el billete; comprobar cobertura antes de elegir tarifa.",
+      "budgetIncludedIn": "rail-pass-8days"
     },
     {
       "id": "tirano-milan",
@@ -1389,7 +1672,7 @@
           "id": "A",
           "provider": "Trenord · RE8",
           "status": "planning",
-          "selectedFare": "pending",
+          "selectedFare": "planning",
           "journeys": [
             {
               "direction": "oneway",
@@ -1407,12 +1690,15 @@
           ],
           "fares": [
             {
-              "id": "pending",
-              "name": "Tarifa por cotizar",
-              "price": null
+              "id": "planning",
+              "name": "Provisión Trenord RE8 Tirano→Milano Centrale, no cotizada",
+              "price": {
+                "amount": 13,
+                "currency": "EUR"
+              }
             }
           ],
-          "notes": "Servicio regional directo de referencia ~2 h 30 min, horarios 2027 individuales pendientes. Billete italiano aparte de pases suizos, salvo cobertura expresamente confirmada. Transbordo entre estaciones de Tirano con margen 20–30 min."
+          "notes": "Servicio regional directo de referencia ~2 h 30 min, horarios 2027 individuales pendientes. Billete italiano aparte de pases suizos, salvo cobertura expresamente confirmada. Transbordo entre estaciones de Tirano con margen 20–30 min. Provisión €13 para 21 junio 2027, no disponibilidad ni tarifa confirmada."
         }
       ],
       "links": [
@@ -1444,7 +1730,7 @@
           "id": "A",
           "provider": "Trenord · Malpensa Express",
           "status": "planning",
-          "selectedFare": "pending",
+          "selectedFare": "planning",
           "journeys": [
             {
               "direction": "oneway",
@@ -1462,12 +1748,15 @@
           ],
           "fares": [
             {
-              "id": "pending",
-              "name": "Tarifa por cotizar",
-              "price": null
+              "id": "planning",
+              "name": "Provisión Malpensa Express 2027, no cotizada",
+              "price": {
+                "amount": 15,
+                "currency": "EUR"
+              }
             }
           ],
-          "notes": "Referencia operativa actual: ~51 min; salida de trenes desde las 05:25. Para vuelo cotizado MXP 11:00, salir temprano y comprobar terminal, margen de aeropuerto y validez del boleto."
+          "notes": "Referencia operativa actual: ~51 min; salida de trenes desde las 05:25. Para vuelo cotizado MXP 11:00, salir temprano y comprobar terminal, margen de aeropuerto y validez del boleto. Provisión €15, basada en precio publicado 2026, no venta del 22 junio 2027."
         }
       ],
       "links": [
@@ -1632,7 +1921,10 @@
       ]
     ]
   ],
-  "exchangeRates": {},
+  "exchangeRates": {
+    "CHF": 21.975,
+    "EUR": 20.2895
+  },
   "cover": "glacier",
   "flight": "PRIMERA OPCIÓN DE PLANIFICACIÓN: JUNIO 2027, COTIZACIÓN NO COMPRADA · Google Flights, consulta 17 nov 2026, multidestino para 1 adulto, Turista: MEX→ZRH sábado 12 junio 2027, Lufthansa LH499 Boeing 747, salida 19:50 y llegada Frankfurt (FRA) domingo 13 junio 14:50; escala 1 h 40 min; FRA→ZRH Lufthansa LH1194 Airbus A320neo, 16:30–17:25. Regreso martes 22 junio 2027: MXP→FRA Lufthansa LH249 Airbus A321, 11:00–12:20; escala FRA 1 h 10 min; FRA→MEX Lufthansa LH498 Boeing 747, 13:30–17:30. Total mostrado MXN 17,450 al reservar con SWISS, frente a MXN 17,878 al reservar con Lufthansa. Google Flights indica 1 pieza de equipaje de mano gratis; equipaje documentado con cargo. Verificar precio final, condiciones de tarifa y conexión protegida antes de comprar. La conexión de regreso de 1 h 10 min en FRA es ajustada. Fechas 12–22 junio de 2027 elegidas como primera opción para diseñar el itinerario; no son billetes comprados ni fechas inamovibles.\n\nCOTIZACIÓN ALTERNATIVA SEPTIEMBRE 2027 · Google Flights, captura facilitada por el viajero el 17 nov 2026. Multidestino 1 adulto, turista: MEX→ZRH sábado 4 septiembre: LH499, MEX 19:50→FRA 14:50 (+1); LH1194, FRA 16:30→ZRH 17:25 (+1); escala FRA 1 h 40 min. MXP→MEX martes 14 septiembre: LH249, MXP 11:00→FRA 12:20; LH498, FRA 13:30→MEX 17:30; escala FRA 1 h 10 min. Precio total mostrado por SWISS $21,419 MXN; por Lufthansa $21,848 MXN. Una pieza de equipaje de mano incluida según Google Flights, equipaje documentado con cargo adicional; condiciones finales por verificar. Comparación equivalente junio 12–22: $17,450 MXN (SWISS), diferencia $3,969 MXN. Septiembre es escenario alternativo; ambos son cotizaciones, no vuelos comprados.",
   "work": 7,
@@ -1713,11 +2005,11 @@
   "railSummary": [
     [
       "Swiss Travel Pass",
-      "Swiss Travel Pass continuo de 8 días a partir del 14 junio (14–21) podría cubrir Zürich→Zermatt, Glacier y Bernina hasta el límite de validez en Tirano; el aeropuerto→Zürich HB del 13 necesitaría billete aparte. Un pase 13–20 DEJA FUERA el Bernina del 21. Comparar 6 días 16–21 con 14 junio separado, Flex y billetes sueltos. Referencia oficial SBB: 8 días en 2.ª clase CHF 439 y 15 días CHF 499, precios válidos solo hasta 31/12/2026; no cotizaciones de junio 2027. Verificar cobertura exacta del tramo fronterizo de RhB y reserva obligatoria Glacier aparte."
+      "Escenario presupuestario provisional: Swiss Travel Pass de 8 días consecutivos, 2.ª clase, 14–21 junio 2027, tarifa publicada CHF 439 (2027 estable según Travel Switzerland); cubre traslados SBB/RhB y línea Bernina hasta Tirano y Viaduct Shuttle según condiciones del operador. NO cubre aeropuerto ZRH→Zürich HB del 13, trenes Trenord italianos, teleféricos fuera de beneficios ni asiento obligatorio Glacier. Comparar después con Half Fare Card + Saver Day Pass y billetes sueltos para definir el producto óptimo."
     ],
     [
       "Swiss Half Fare Card",
-      "Swiss Half Fare Card para visitantes extranjeros, CHF 150 en web oficial SBB consultada 17/11/2026, válida un mes. Permite comprar billetes a mitad de precio o tarifa reducida; NO incluye viajes gratuitos. Calcular descuento real en viajes SBB/RhB y remontes, sin aplicar medio precio nuevamente a servicios incluidos en hotel."
+      "Swiss Half Fare Card CHF 150, precio oficial anunciado y estable para 2027. NO da viajes gratis: comprar billetes descontados por día; comparar con Swiss Travel Pass CHF 439 tomando en cuenta 14–21, traslados a Tirano y excursiones de Engadina, así como remontes ya incluidos en hotel. No sumar ambos pases sin justificar ahorro."
     ],
     [
       "Saver Day Pass / Supersaver SBB",
@@ -1729,7 +2021,7 @@
     ],
     [
       "Separación suiza / Italia",
-      "Tirano→Milano Centrale y Milano Centrale→Malpensa se presupuestan como Trenord independiente, salvo billete integrado expresamente verificado. No sumar dos veces billetes regionales cubiertos por pase ni la reserva de asiento opcional Bernina."
+      "El Swiss Travel Pass 14–21 cubre, según mapa de validez, el corredor Bernina hasta Tirano; el Viaduct Shuttle acepta Swiss Travel Pass según operador. Solo contabilizar tren ZRH→Zürich HB del 13, Trenord Tirano→Milano Centrale 21 y Malpensa Express 22 fuera del pase. Si cambia producto ferroviario, hay que recalcular presupuesto completo."
     ]
   ],
   "ticketNotes": [
@@ -1769,5 +2061,18 @@
     "pontresina": "Pueblo de Engadina con arquitectura tradicional y acceso ferroviario a Diavolezza, Bernina, pueblos históricos y miradores entre glaciares y lagos.",
     "bernina-line": "La línea ferroviaria rética Bernina asciende hacia Lago Bianco y Alp Grüm antes de descender a Tirano entre montañas, valles y el viaducto espiral de Brusio.",
     "tirano": "Ciudad italiana donde termina el recorrido ferroviario de Bernina y comienza el enlace Trenord hacia Milano Centrale, previo a la última noche."
-  }
+  },
+  "exchangeRateSnapshot": {
+    "date": "2026-11-17",
+    "baseCurrency": "MXN",
+    "description": "Pesos mexicanos por unidad de divisa para planeación, no tasa de compra. CHF/MXN derivada de tasa de referencia histórica 17/11/2026; EUR/MXN del Banco Central Europeo 17/11/2026. Compras con tarjeta pueden tener comisiones y tipos distintos.",
+    "sources": {
+      "CHF": "https://theratesapi.com/convert/chf-to-mxn/",
+      "EUR": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.es.html"
+    }
+  },
+  "budgetNote": "Escenario de planeación para 1 adulto, 12–22 junio 2027. SOLO los vuelos ($17,450 MXN cotizados el 17/11/2026), Swiss Travel Pass (CHF 439 publicado para 2027) y asiento Glacier (CHF 54 publicado) tienen referencia verificable, sin compra ni disponibilidad. Hoteles, alimentación, remonte provisional, Trenord, ZRH→Zürich HB, seguro, tasas y colchón son supuestos, no precios reservables. El pase 14–21 cubre rutas suizas previstas sin sumar billetes individuales. Cambio de pase o beneficios del hotel obliga a recalcular. Tipo de cambio de referencia 17/11/2026; totales son orientativos.",
+  "costExclusions": "No incluye compras, atracciones opcionales Corvatsch, experiencias de lujo, upgrade de clase, equipaje facturado ni cargos cambiarios bancarios; estos pueden elevar el costo final. Los remontes incluidos por un hotel se descontarán al confirmarse.",
+  "railExclusions": "Fuera de Swiss Travel Pass 14–21: aeropuerto→Zürich HB del 13, trenes Trenord en Italia, teleféricos no incluidos por hotel y reserva obligatoria del Glacier Express (separada en expenses).",
+  "railCurrencyNote": "CHF 1 ≈ $21.975 MXN, EUR 1 ≈ $20.2895 MXN, tasas de referencia 17/11/2026. Tarifas hoteleras y regionales propuestas son hipótesis de planificación."
 }
