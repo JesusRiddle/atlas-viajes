@@ -2540,3 +2540,39 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
   word-break:normal;
   hyphens:none;
 }
+
+
+/* Compatibilidad con encabezados heredados: algunos previews antiguos usan
+   <strong>Ciudad</strong> o <span>Ciudad</span>. La regla global
+   .stay-list strong/span {display:block} nunca debe separarlos del hotel. */
+.stay-list.hotel-grid .hotel-card h4 > strong,
+.stay-list.hotel-grid .hotel-card h4 > span,
+.stay-list.hotel-grid .hotel-card h4 > em{
+  display:inline;
+  vertical-align:baseline;
+  margin:0;
+  padding:0;
+  line-height:inherit;
+}
+.stay-list.hotel-grid .hotel-card h4 > strong{
+  font-size:inherit;
+  color:inherit;
+  font-weight:700;
+}
+.stay-list.hotel-grid .hotel-card h4 > span{
+  font-size:inherit;
+  color:inherit;
+  font-weight:inherit;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address > span{
+  display:inline;
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+/* Mantener solo el espacio natural entre palabras: no dividir Zermatt,
+   Lucerna u otros nombres propios para acomodar una tarjeta. */
+.stay-list.hotel-grid .hotel-card{
+  overflow-wrap:normal;
+  word-break:normal;
+}
