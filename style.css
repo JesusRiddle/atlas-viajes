@@ -2516,3 +2516,27 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
     white-space:normal;
   }
 }
+
+
+/* Hoteles: no dividir ciudad, separador ni dirección por reglas globales de stay-list. */
+.stay-list.hotel-grid .hotel-card h4{
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.stay-list.hotel-grid .hotel-card h4 em,
+.stay-list.hotel-grid .hotel-card h4 .hotel-name-map{
+  display:inline;
+  white-space:normal;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address{
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address .hotel-address-text{
+  display:inline;
+  white-space:normal;
+  overflow-wrap:break-word;
+  word-break:normal;
+  hyphens:none;
+}
