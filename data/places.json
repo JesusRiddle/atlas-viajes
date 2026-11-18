@@ -5072,5 +5072,27 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "attribution": "Steffs88"
     }
+  },
+  "samedan": {
+    "name": "Samedan · Chesa Planta",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Chesa_Planta_Samedan_in_September_2023.jpg/1280px-Chesa_Planta_Samedan_in_September_2023.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Chesa_Planta_Samedan_in_September_2023.jpg",
+      "author": "Zwantzig",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Zwantzig"
+    }
+  },
+  "zuoz": {
+    "name": "Zuoz · pueblo de Engadina",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Zuoz.jpg/1280px-Zuoz.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Zuoz.jpg",
+      "author": "Adrian Michael",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Adrian Michael"
+    }
   }
 }
