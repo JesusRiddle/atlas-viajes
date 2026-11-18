@@ -2485,3 +2485,34 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
     overflow-wrap:break-word;
   }
 }
+
+
+/* Corregir herencia de .stay-list span{display:block}: ciudad, punto medio y hotel
+   se mantienen juntos si hay espacio; en móvil pueden envolver por palabras. */
+.stay-list.hotel-grid .hotel-card h4 .hotel-heading-city{
+  display:inline;
+  color:inherit;
+  font:inherit;
+  white-space:nowrap;
+}
+.stay-list.hotel-grid .hotel-card h4 em{
+  display:inline;
+  font-style:normal;
+  font-weight:inherit;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address > span{
+  display:inline;
+  min-width:0;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+}
+.stay-list.hotel-grid .hotel-card h4{
+  overflow-wrap:normal;
+  word-break:normal;
+}
+@media(max-width:650px){
+  .stay-list.hotel-grid .hotel-card h4{
+    white-space:normal;
+  }
+}
