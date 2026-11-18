@@ -2485,3 +2485,94 @@ footer.atlas-footer a:hover,footer.atlas-footer a:focus-visible{text-decoration:
     overflow-wrap:break-word;
   }
 }
+
+
+/* Corregir herencia de .stay-list span{display:block}: ciudad, punto medio y hotel
+   se mantienen juntos si hay espacio; en móvil pueden envolver por palabras. */
+.stay-list.hotel-grid .hotel-card h4 .hotel-heading-city{
+  display:inline;
+  color:inherit;
+  font:inherit;
+  white-space:nowrap;
+}
+.stay-list.hotel-grid .hotel-card h4 em{
+  display:inline;
+  font-style:normal;
+  font-weight:inherit;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address > span{
+  display:inline;
+  min-width:0;
+  overflow-wrap:normal;
+  word-break:normal;
+  hyphens:none;
+}
+.stay-list.hotel-grid .hotel-card h4{
+  overflow-wrap:normal;
+  word-break:normal;
+}
+@media(max-width:650px){
+  .stay-list.hotel-grid .hotel-card h4{
+    white-space:normal;
+  }
+}
+
+
+/* Hoteles: no dividir ciudad, separador ni dirección por reglas globales de stay-list. */
+.stay-list.hotel-grid .hotel-card h4{
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.stay-list.hotel-grid .hotel-card h4 em,
+.stay-list.hotel-grid .hotel-card h4 .hotel-name-map{
+  display:inline;
+  white-space:normal;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address{
+  overflow-wrap:normal;
+  word-break:normal;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address .hotel-address-text{
+  display:inline;
+  white-space:normal;
+  overflow-wrap:break-word;
+  word-break:normal;
+  hyphens:none;
+}
+
+
+/* Compatibilidad con encabezados heredados: algunos previews antiguos usan
+   <strong>Ciudad</strong> o <span>Ciudad</span>. La regla global
+   .stay-list strong/span {display:block} nunca debe separarlos del hotel. */
+.stay-list.hotel-grid .hotel-card h4 > strong,
+.stay-list.hotel-grid .hotel-card h4 > span,
+.stay-list.hotel-grid .hotel-card h4 > em{
+  display:inline;
+  vertical-align:baseline;
+  margin:0;
+  padding:0;
+  line-height:inherit;
+}
+.stay-list.hotel-grid .hotel-card h4 > strong{
+  font-size:inherit;
+  color:inherit;
+  font-weight:700;
+}
+.stay-list.hotel-grid .hotel-card h4 > span{
+  font-size:inherit;
+  color:inherit;
+  font-weight:inherit;
+}
+.stay-list.hotel-grid .hotel-card .hotel-address > span{
+  display:inline;
+  white-space:normal;
+  overflow-wrap:normal;
+  word-break:normal;
+}
+/* Mantener solo el espacio natural entre palabras: no dividir Zermatt,
+   Lucerna u otros nombres propios para acomodar una tarjeta. */
+.stay-list.hotel-grid .hotel-card{
+  overflow-wrap:normal;
+  word-break:normal;
+}

@@ -42,6 +42,11 @@ window.ATLAS_MODULES = [
     "available": true
   },
   {
+    "id": "suiza-ferroviaria",
+    "file": "suiza-ferroviaria.json",
+    "available": true
+  },
+  {
     "id": "espana",
     "file": "espana.json",
     "available": true,

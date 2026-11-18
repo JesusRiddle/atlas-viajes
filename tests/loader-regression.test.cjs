@@ -334,7 +334,8 @@ test('Día por día y Presupuesto muestran pendientes sin totales ficticios', ()
 
 test('el alta mínima es visible de inmediato y conserva los viajes históricos', async () => {
     const catalog = loadCatalog();
-    assert.equal(catalog.length, 23);
+    assert.equal(catalog.length, 24);
+    assert.ok(catalog.some(item => item.id === 'suiza-ferroviaria' && item.available));
     assert.ok(catalog.some(item => item.id === 'orlando-2026' && item.available));
     assert.ok(catalog.every(item => item.available));
     assert.equal(catalog.filter(item => item.homeGroup === 'ideas').length, 15);
