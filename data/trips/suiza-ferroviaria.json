@@ -389,9 +389,7 @@
         "Filisur",
         "Viaducto Landwasser"
       ],
-      "optionalPlaces": [
-        "landwasser"
-      ],
+      "optionalPlaces": [],
       "transportRefs": [
         "landwasser-excursion"
       ],
