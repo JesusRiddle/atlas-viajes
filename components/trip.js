@@ -237,7 +237,7 @@ window.AtlasTrip = function (ctx) {
     function tripHero(t, id) {
         const scheduledTrips = trips.filter(x => x.homeGroup !== 'ideas')
             .sort((a, b) => {
-                const key = trip => /^\\d{4}-\\d{2}-\\d{2}$/.test(trip.start || '') ? trip.start : '9999-12-31';
+                const key = trip => /^\d{4}-\d{2}-\d{2}$/.test(trip.start || '') ? trip.start : '9999-12-31';
                 return key(a).localeCompare(key(b));
             });
         const primaryRank = scheduledTrips.indexOf(t);
