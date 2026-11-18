@@ -212,6 +212,23 @@ window.AtlasHome = function (ctx) {
         };
         return names[raw.toLowerCase()] || raw || 'Por definir';
     }
+    // Etiquetas editoriales: los códigos internos no deben aparecer en la interfaz.
+    function climaEnEspanol(value) {
+        const raw = typeof value === 'string' ? value.trim() : '';
+        const names = {
+            winter: 'Invernal',
+            spring: 'Primaveral',
+            summer: 'Veraniego',
+            autumn: 'Otoñal',
+            fall: 'Otoñal',
+            cold: 'Frío',
+            mild: 'Templado',
+            warm: 'Cálido',
+            hot: 'Caluroso',
+            variable: 'Variable'
+        };
+        return names[raw.toLowerCase()] || raw || 'Por definir';
+    }
     function comparison() {
         const items = primaryTrips.filter(homeReady);
         return '<section class="section wrap home-comparison" id="comparar">' +
@@ -226,7 +243,7 @@ window.AtlasHome = function (ctx) {
                 '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
                 ' <small>/ ' + (Number.isInteger(t.work) ? t.work : 'Por definir') + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
                 '<td>' + esc(ritmoEnEspanol(t.profile?.pace)) + '</td><td class="comparison-number">' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 'Por definir') + '</td>' +
-                '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
+                '<td>' + esc(climaEnEspanol(t.profile?.weather)) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
                 ' <small>MXN</small></strong>' +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
     }
