@@ -314,6 +314,8 @@
       "note": "• *Plan B:* Con nubes bajas o funicular cerrado, prolongar el paseo en los pueblos y omitir el mirador.\n• *Beneficio hotelero:* Revisar si la estancia de cinco noches incluye funicular y transporte local.",
       "spend": null,
       "places": [
+        "samedan",
+        "zuoz",
         "muottas-muragl",
         "pontresina"
       ],
@@ -324,6 +326,7 @@
         "Pontresina"
       ],
       "optionalPlaces": [
+        "zuoz",
         "muottas-muragl"
       ],
       "transportRefs": [
@@ -2087,7 +2090,9 @@
     "corvatsch": "La estación superior de Corvatsch, a más de tres mil metros, ofrece panorámicas de alta montaña si funciona el teleférico y hay buena visibilidad.",
     "filisur": "Estación de la línea Albula en el corazón de los Grisones, punto ferroviario para aproximarse al viaducto Landwasser y sus miradores.",
     "landwasser": "El viaducto Landwasser destaca por sus arcos de piedra y entrada directa al túnel; desde fuera se contempla el tren rojo sobre el barranco.",
-    "milan-duomo": "La fachada gótica del Duomo domina el centro de Milán; la visita exterior es opcional si el tren desde Tirano llega con tiempo suficiente."
+    "milan-duomo": "La fachada gótica del Duomo domina el centro de Milán; la visita exterior es opcional si el tren desde Tirano llega con tiempo suficiente.",
+    "samedan": "Chesa Planta muestra el patrimonio arquitectónico de Samedan y su plaza histórica, una parada cultural breve entre los pueblos de la Alta Engadina.",
+    "zuoz": "Pueblo de la Alta Engadina con casas tradicionales, fachadas esgrafiadas y calles empedradas, alternativa para conocer el patrimonio regional entre trayectos en tren."
   },
   "exchangeRateSnapshot": {
     "date": "2026-11-17",
