@@ -286,7 +286,8 @@
       "note": "• *Remonte:* Comprobar vigencia y cobertura del beneficio Mountain Railways Included del hotel; no duplicar entrada.\n• *Seguridad:* Evitar senderos con hielo y caminar únicamente por áreas abiertas de la estación superior.\n• *Equipaje:* Alp Grüm no dispone de consigna; salir sin maleta.",
       "spend": null,
       "places": [
-        "bernina-line",
+        "diavolezza",
+        "alp-grum",
         "pontresina"
       ],
       "headerPlaces": [
@@ -294,7 +295,9 @@
         "Bernina Diavolezza",
         "Alp Grüm (opcional)"
       ],
-      "optionalPlaces": [],
+      "optionalPlaces": [
+        "alp-grum"
+      ],
       "transportRefs": [
         "pontresina-diavolezza-alpgrum"
       ]
@@ -311,6 +314,7 @@
       "note": "• *Plan B:* Con nubes bajas o funicular cerrado, prolongar el paseo en los pueblos y omitir el mirador.\n• *Beneficio hotelero:* Revisar si la estancia de cinco noches incluye funicular y transporte local.",
       "spend": null,
       "places": [
+        "muottas-muragl",
         "pontresina"
       ],
       "headerPlaces": [
@@ -319,7 +323,9 @@
         "Muottas Muragl",
         "Pontresina"
       ],
-      "optionalPlaces": [],
+      "optionalPlaces": [
+        "muottas-muragl"
+      ],
       "transportRefs": [
         "engadin-local"
       ]
@@ -336,7 +342,9 @@
       "note": "• *Temporada:* Corvatsch abre según calendario publicado 19 junio; Furtschellas no abre hasta el 26 y queda fuera.\n• *Clima:* Paseo de lago si hay nubes o viento en la cumbre; días 19 y 20 podrían intercambiarse con Landwasser.",
       "spend": null,
       "places": [
-        "pontresina"
+        "lake-silvaplana",
+        "lake-sils",
+        "corvatsch"
       ],
       "headerPlaces": [
         "Silvaplana",
@@ -344,7 +352,9 @@
         "Corvatsch (opcional)",
         "Pontresina"
       ],
-      "optionalPlaces": [],
+      "optionalPlaces": [
+        "corvatsch"
+      ],
       "transportRefs": [
         "engadin-local"
       ]
@@ -360,13 +370,18 @@
       "mobility": "• *Pontresina → Filisur:* Regional RhB, ida y regreso; verificar si requiere conexión y seleccionar horarios diurnos.\n• *Viaduct Shuttle:* Acceso anunciado los domingos de la temporada; confirmar horarios, puntos de parada y billete/pase aceptado.\n• *Filisur → Pontresina:* Regreso RhB con tiempo para preparar salida a Tirano al día siguiente.",
       "note": "• *Plan B:* Si el mirador o la lanzadera no operan, sustituir por jornada ferroviaria en Albula y Filisur sin prometer la fotografía exterior.\n• *Condición:* No pagar lanzadera separada sin comprobar si el pase disponible la cubre.",
       "spend": null,
-      "places": [],
+      "places": [
+        "filisur",
+        "landwasser"
+      ],
       "headerPlaces": [
         "Pontresina",
         "Filisur",
         "Viaducto Landwasser"
       ],
-      "optionalPlaces": [],
+      "optionalPlaces": [
+        "landwasser"
+      ],
       "transportRefs": [
         "landwasser-excursion"
       ]
@@ -384,7 +399,8 @@
       "spend": null,
       "places": [
         "bernina-line",
-        "tirano"
+        "tirano",
+        "milan-duomo"
       ],
       "headerPlaces": [
         "Pontresina",
@@ -393,7 +409,9 @@
         "Tirano",
         "Milano Centrale"
       ],
-      "optionalPlaces": [],
+      "optionalPlaces": [
+        "milan-duomo"
+      ],
       "mobilityLinks": [
         {
           "label": "RhB · trenes regionales",
@@ -2060,7 +2078,16 @@
     "stmoritz": "Localidad de Alta Engadina donde termina el Glacier Express antes de continuar en tren regional hacia Pontresina, el alojamiento de cinco noches.",
     "pontresina": "Pueblo de Engadina con arquitectura tradicional y acceso ferroviario a Diavolezza, Bernina, pueblos históricos y miradores entre glaciares y lagos.",
     "bernina-line": "La línea ferroviaria rética Bernina asciende hacia Lago Bianco y Alp Grüm antes de descender a Tirano entre montañas, valles y el viaducto espiral de Brusio.",
-    "tirano": "Ciudad italiana donde termina el recorrido ferroviario de Bernina y comienza el enlace Trenord hacia Milano Centrale, previo a la última noche."
+    "tirano": "Ciudad italiana donde termina el recorrido ferroviario de Bernina y comienza el enlace Trenord hacia Milano Centrale, previo a la última noche.",
+    "diavolezza": "Desde la estación superior se abre la vista sobre el glaciar Pers y los picos nevados del macizo Bernina, uno de los miradores alpinos principales.",
+    "alp-grum": "La estación ferroviaria de Alp Grüm domina el Lago Palü y el valle de Poschiavo, con curvas del tren rético y panorámicas de montaña.",
+    "muottas-muragl": "Terraza panorámica sobre el valle de la Alta Engadina, sus lagos y cumbres, alcanzable en funicular desde Punt Muragl cuando opera.",
+    "lake-silvaplana": "Lago alpino rodeado de praderas, aldeas y montañas, recorrido desde transporte público y paseos de orilla en el valle de Engadina.",
+    "lake-sils": "El lago Sils conecta aldeas de Engadina con orillas tranquilas y grandes vistas de valle, alternativa accesible a las cumbres con mal tiempo.",
+    "corvatsch": "La estación superior de Corvatsch, a más de tres mil metros, ofrece panorámicas de alta montaña si funciona el teleférico y hay buena visibilidad.",
+    "filisur": "Estación de la línea Albula en el corazón de los Grisones, punto ferroviario para aproximarse al viaducto Landwasser y sus miradores.",
+    "landwasser": "El viaducto Landwasser destaca por sus arcos de piedra y entrada directa al túnel; desde fuera se contempla el tren rojo sobre el barranco.",
+    "milan-duomo": "La fachada gótica del Duomo domina el centro de Milán; la visita exterior es opcional si el tren desde Tirano llega con tiempo suficiente."
   },
   "exchangeRateSnapshot": {
     "date": "2026-11-17",
@@ -2078,5 +2105,12 @@
   "budgetRange": [
     75000,
     100000
+  ],
+  "coverSlides": [
+    "glacier",
+    "bernina-line",
+    "diavolezza",
+    "landwasser",
+    "lake-sils"
   ]
 }
