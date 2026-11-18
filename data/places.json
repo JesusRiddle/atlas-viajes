@@ -4984,5 +4984,93 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
       "attribution": "Mumpitz312"
     }
+  },
+  "diavolezza": {
+    "name": "Diavolezza y glaciar Pers",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Diavolezza.jpg/1280px-Diavolezza.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Diavolezza.jpg",
+      "author": "Patryk Hejduk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Patryk Hejduk"
+    }
+  },
+  "alp-grum": {
+    "name": "Alp Grüm y Lago Palü",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Alp_Gr%C3%BCm_-_Lake_Pal%C3%BC.jpg/1280px-Alp_Gr%C3%BCm_-_Lake_Pal%C3%BC.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Alp_Gr%C3%BCm_-_Lake_Pal%C3%BC.jpg",
+      "author": "Tiia Monto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Tiia Monto"
+    }
+  },
+  "muottas-muragl": {
+    "name": "Muottas Muragl y Alta Engadina",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Muottas_Muragl_-_valley_and_mountains.jpg/1280px-Muottas_Muragl_-_valley_and_mountains.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Muottas_Muragl_-_valley_and_mountains.jpg",
+      "author": "Chris ALC",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Chris ALC"
+    }
+  },
+  "lake-silvaplana": {
+    "name": "Lago Silvaplana",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Lake_Silvaplana.jpg/1280px-Lake_Silvaplana.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Lake_Silvaplana.jpg",
+      "author": "Tiia Monto",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Tiia Monto"
+    }
+  },
+  "lake-sils": {
+    "name": "Lago Sils",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Silsersee%2C_Sils-Segl_Maria_and_Sils-Segl_Baselgia.jpg/1280px-Silsersee%2C_Sils-Segl_Maria_and_Sils-Segl_Baselgia.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Silsersee,_Sils-Segl_Maria_and_Sils-Segl_Baselgia.jpg",
+      "author": "Capricorn4049",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Capricorn4049"
+    }
+  },
+  "corvatsch": {
+    "name": "Corvatsch · estación superior",
+    "photo": {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Corvatsch_Station.jpg/1280px-Corvatsch_Station.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Corvatsch_Station.jpg",
+      "author": "Zacharie Grossen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Zacharie Grossen"
+    }
+  },
+  "landwasser": {
+    "name": "Viaducto Landwasser",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Landwasserviadukt_RHB_05.jpg/1280px-Landwasserviadukt_RHB_05.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Landwasserviadukt_RHB_05.jpg",
+      "author": "Geri340",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Geri340"
+    }
+  },
+  "filisur": {
+    "name": "Estación de Filisur",
+    "photo": {
+      "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Filisur_-_Bahnhof_der_RhB_an_der_Albulalinie.jpg/1280px-Filisur_-_Bahnhof_der_RhB_an_der_Albulalinie.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Filisur_-_Bahnhof_der_RhB_an_der_Albulalinie.jpg",
+      "author": "Steffs88",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Steffs88"
+    }
   }
 }
