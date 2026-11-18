@@ -12,7 +12,12 @@ window.AtlasHome = function (ctx) {
         });
         return [trip.id, sources];
     }));
-    const primaryTrips = trips.filter(t => t.homeGroup !== 'ideas');
+    // Los viajes programados del Inicio se ordenan por fecha de salida; los sin fecha quedan al final.
+    // sort es estable: ante la misma fecha se conserva el orden editorial de modules.js.
+    const dateSortKey = trip => /^\\d{4}-\\d{2}-\\d{2}$/.test(trip.start || '')
+        ? trip.start : '9999-12-31';
+    const primaryTrips = trips.filter(t => t.homeGroup !== 'ideas')
+        .sort((a, b) => dateSortKey(a).localeCompare(dateSortKey(b)));
     const ideaTrips = trips.filter(t => t.homeGroup === 'ideas');
     const hoverTimers = new Set();
     function mountCoverSlideshow() {
