@@ -235,7 +235,12 @@ window.AtlasTrip = function (ctx) {
         return '<svg class="hero-meta-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + paths[type] + '</svg>';
     }
     function tripHero(t, id) {
-        const primaryRank = trips.filter(x => x.homeGroup !== 'ideas').indexOf(t);
+        const scheduledTrips = trips.filter(x => x.homeGroup !== 'ideas')
+            .sort((a, b) => {
+                const key = trip => /^\\d{4}-\\d{2}-\\d{2}$/.test(trip.start || '') ? trip.start : '9999-12-31';
+                return key(a).localeCompare(key(b));
+            });
+        const primaryRank = scheduledTrips.indexOf(t);
         const rank = primaryRank >= 0 ? primaryRank + 1 : trips.indexOf(t) + 1;
         const heroLabel = t.heroEyebrow || t.tag || '';
         return [
