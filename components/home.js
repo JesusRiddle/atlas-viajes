@@ -199,6 +199,19 @@ window.AtlasHome = function (ctx) {
             '<span class="idea-tripcard-open">Explorar idea <span aria-hidden="true">↗</span></span>' +
             '</div></a>';
     }
+    // El JSON puede conservar códigos de ritmo en inglés; la UI siempre los muestra en español.
+    function ritmoEnEspanol(value) {
+        const raw = typeof value === 'string' ? value.trim() : '';
+        const names = {
+            balanced: 'Equilibrado',
+            active: 'Activo',
+            relaxed: 'Relajado',
+            moderate: 'Moderado',
+            slow: 'Tranquilo',
+            fast: 'Intenso'
+        };
+        return names[raw.toLowerCase()] || raw || 'Por definir';
+    }
     function comparison() {
         const items = primaryTrips.filter(homeReady);
         return '<section class="section wrap home-comparison" id="comparar">' +
@@ -206,13 +219,13 @@ window.AtlasHome = function (ctx) {
             '<h2>Los viajes, lado a lado.</h2></div></div>' +
             '<div class="scrolltable comparison-scroll" tabindex="0" role="region" aria-label="Tabla comparativa de viajes; desplázate horizontalmente para ver todas las columnas">' +
             '<table class="comparison-table"><thead><tr><th scope="col">Destino</th><th scope="col">Fechas</th>' +
-            '<th scope="col">Días <small>/ laborales</small></th><th scope="col">Bases</th><th scope="col">Ritmo</th>' +
+            '<th scope="col">Días <small>/ laborales</small></th><th scope="col">Alojamientos</th><th scope="col">Ritmo</th>' +
             '<th scope="col" title="Número de personas contempladas en el presupuesto">Personas</th><th scope="col">Clima</th><th scope="col">Presupuesto</th></tr></thead><tbody>' +
             items.map((t, i) => '<tr><td class="comparison-destination"><a href="#viaje/' + esc(t.id) + '">' +
                 '<span class="comparison-rank">' + (i + 1) + '</span><span>' + esc(t.name) + '</span></a></td>' +
                 '<td class="comparison-dates">' + range(t) + '</td><td class="comparison-number">' + t.days.length +
                 ' <small>/ ' + (Number.isInteger(t.work) ? t.work : 'Por definir') + '</small></td><td class="comparison-number">' + t.bases.length + '</td>' +
-                '<td>' + esc(t.profile.pace) + '</td><td class="comparison-number">' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 'Por definir') + '</td>' +
+                '<td>' + esc(ritmoEnEspanol(t.profile?.pace)) + '</td><td class="comparison-number">' + (Number.isInteger(t.travelerCount) && t.travelerCount > 0 ? t.travelerCount : 'Por definir') + '</td>' +
                 '<td>' + esc(t.profile.weather) + '</td><td class="comparison-price"><strong>' + (t.travelerCount ? homePrice(t) : price(t)) +
                 ' <small>MXN</small></strong>' +
                 '</td></tr>').join('') + '</tbody></table></div></section>';
