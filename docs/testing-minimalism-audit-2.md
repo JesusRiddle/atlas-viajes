@@ -63,3 +63,7 @@ Los dos archivos modificados en esta ronda se comprobaron mediante parser JavaSc
 ### Siguientes pasos
 
 La fase C debe recortar el smoke para que solo valide comportamiento visual y navegación; requiere primero medir y preservar los casos de error runtime, layout y móvil. No mover auditorías editoriales sin ejecutar comparaciones antes/después de los tests.
+
+### Registro de ejecución
+
+Se solicitó la validación del PR #22 frente a `main` únicamente para activar el workflow configurado en GitHub Actions; la base prevista para integrar sigue siendo la rama del PR #21. El resultado debe comprobarse contra el SHA de este commit antes de declarar la fase validada.
