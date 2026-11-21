@@ -5,11 +5,7 @@ const dateOK = input => typeof input === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(
   !Number.isNaN(Date.parse(input + 'T00:00:00Z')) &&
   new Date(input + 'T00:00:00Z').toISOString().slice(0, 10) === input;
 const nextDate = date => new Date(Date.parse(date + 'T00:00:00Z') + 86400000).toISOString().slice(0, 10);
-const isUrl = input => {
-  if (typeof input !== 'string') return false;
-  try { const parsed = new URL(input); return parsed.protocol === 'https:' || parsed.protocol === 'http:'; }
-  catch { return false; }
-};
+const isUrl = input => typeof input === 'string' && /^https?:\/\/[^\s/]+(?:\/[^\s]*)?$/i.test(input);
 function unique(items, path, errors) {
   const seen = new Set();
   items.forEach((item, index) => {
