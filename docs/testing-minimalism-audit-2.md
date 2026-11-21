@@ -117,3 +117,5 @@ Diferencia aproximada: **4.78 s menos (25.4 %)** para el paso navegador. Son dos
 **No se afirma que el código de pruebas sea el mínimo absoluto**: persisten snapshots por destino y un archivo de navegador voluminoso. La meta alcanzada es distinguir claramente pruebas bloqueantes de exploración editorial, con cobertura conservada en modo bajo demanda. Para una futura ronda, exigir medidas de cobertura/mutación antes de borrar aserciones adicionales.
 
 **Puerta de salida:** verificar `Atlas checks` verde sobre el commit final del PR #22 (JSON, Node, desktop/mobile), PR #22 dependiente de #21, no fusionar automáticamente. La ejecución manual con `editorial_audit=true` queda disponible después de integrar el workflow en la rama elegida; no hay constancia de que se haya ejecutado en esta fase.
+
+Verificación final: el resultado debe corresponder al SHA final de esta rama. El PR #22 volverá a dirigirse al PR #21 una vez lanzada la ejecución de CI.
