@@ -11,13 +11,16 @@ const INDICATORS = [
 const SECTIONS = ['plan', 'mapa', 'temporadas', 'experiencias', 'reservas',
   'traslados', 'alojamientos', 'dias', 'costes'];
 const NUMBER = '[−-]?\\d{1,2}(?:[.,]\\d+)?';
-const explicitRE = new RegExp('Máx\\.\\s*(' + NUMBER + ')\\s*°C\\s*·\\s*Mín\\.\\s*(' + NUMBER + ')\\s*°C', 'u');
-const legacyRE = new RegExp('(' + NUMBER + ') a (' + NUMBER + ')\\s*°C', 'u');
+const explicitRE = new RegExp('(?<![\\p{L}\\d])Máx\\.\\s*(' + NUMBER + ')\\s*°C\\s*·\\s*Mín\\.\\s*(' + NUMBER + ')\\s*°C(?![\\d.,])', 'u');
+const legacyRE = new RegExp('(?<![\\d.,−-])(' + NUMBER + ') a (' + NUMBER + ')\\s*°C(?![\\d.,])', 'u');
 const value = text => Number(text.replace('−', '-').replace(',', '.'));
 const issue = (path, message) => ({ path, message });
 
 function temperature(text, { allowLegacy = true } = {}) {
   if (typeof text !== 'string') return { kind: 'missing' };
+  // Una notación Máx./Mín. incompleta no puede validarse como intervalo heredado.
+  if (/Máx\\.|Mín\\./u.test(text) && !explicitRE.test(text))
+    return { kind: 'invalid', errors: ['Par máximo/mínimo incompleto o malformado'] };
   const explicit = text.match(explicitRE);
   if (explicit) {
     const max = value(explicit[1]), min = value(explicit[2]);
@@ -75,11 +78,13 @@ function indicators(items, { complete = false, path = 'practicalIndicators' } = 
         errors.push(issue(path + '[' + index + '].tone', 'Tono inválido'));
       if (typeof item.text !== 'string' || !item.text.trim())
         errors.push(issue(path + '[' + index + '].text', 'Texto requerido'));
+      if (typeof item.badge !== 'string' || !item.badge.trim())
+        errors.push(issue(path + '[' + index + '].badge', 'Badge requerido'));
     }
   });
   const language = items.find(item => item?.id === 'language');
   if (language && (typeof language.badge !== 'string' ||
-      !/^.+ · [A-Z]{3}(?:[;,] .+ · [A-Z]{3})*$/.test(language.badge)))
+      !/^[^·;,]+ · [A-Z]{3}(?:[;,] [^·;,]+ · [A-Z]{3})*$/.test(language.badge)))
     errors.push(issue(path + '.language.badge', 'Debe indicar idioma y moneda ISO 4217'));
   return errors;
 }
