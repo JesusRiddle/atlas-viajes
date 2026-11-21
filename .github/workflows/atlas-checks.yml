@@ -9,12 +9,6 @@ on:
     branches:
       - main
   workflow_dispatch:
-    inputs:
-      editorial_audit:
-        description: 'Ejecutar además la auditoría editorial profunda de itinerarios'
-        type: boolean
-        required: false
-        default: false
 
 permissions:
   contents: read
@@ -39,12 +33,9 @@ jobs:
         run: |
           npm install --no-save playwright
           npx playwright install --with-deps chromium
-      - name: Desktop and Mobile browser smoke tests
+      - name: Desktop and Mobile browser smoke and editorial audit
+        env:
+          ATLAS_EDITORIAL_AUDIT: '1'
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 &
           node tests/browser-smoke.cjs
-      - name: Optional deep editorial audit (Desktop and Mobile)
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.editorial_audit == true }}
-        env:
-          ATLAS_EDITORIAL_AUDIT: '1'
-        run: node tests/browser-smoke.cjs
