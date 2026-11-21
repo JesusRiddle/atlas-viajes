@@ -76,3 +76,36 @@ Rama de trabajo: `refactor/tests-audit-and-consolidation`. **Solo auditoría: no
 ## Riesgos y límites de esta auditoría
 
 Los conteos son **estáticos** y no sustituyen una medición instrumentada de cobertura o mutación. «Redundancia» aquí es hipótesis a verificar por contrato, no señal para borrar tests. La prueba Playwright contiene bucles por viaje y dos viewports, por lo que sus 296 llamadas a `assert` pueden ejecutar muchas más comprobaciones. Tampoco se midieron duración, flakiness ni porcentaje de cobertura: registrar esas métricas en la siguiente fase antes de recortar.
+
+## Fase 2 — consolidación funcional (2026-11-21)
+
+### Cambios realizados
+
+- `tests/new-trip.test.cjs`: concentra **dos escenarios** separados, con un único arnés `withSandbox` que crea archivos de prueba en un directorio temporal y limpia al terminar incluso si el escenario es asíncrono.
+  1. Alta real, JSON mínimo, bitácora, registro y protección contra duplicados/copias que puedan sobrescribir originales.
+  2. Edición incremental y normalización del loader sin perder contenido ni inventar campos pendientes.
+- `tests/new-trip-integration.test.cjs`: eliminado **solo tras trasladar** sus comprobaciones al archivo consolidado.
+- `tests/trip-production-workflow.test.cjs`: se dejan las **tres pruebas documentales**; la cuarta, que volvía a ejercitar el generador, queda cubierta por el escenario funcional consolidado.
+
+**Controles preservados:** rechazo de duplicado, no sobrescritura, JSON básico, `travelerCount: null`, introducciones pendientes, `modules.js`, bitácora con etapa 00/01 y ruta del JSON, edición gradual, normalización de 12 meses, colecciones ausentes y no mutación del archivo. El flujo de documentación sigue bajo su propio contrato.
+
+### Delta verificable y alcance
+
+| Métrica de los archivos intervenidos | Antes | Después |
+|---|---:|---:|
+| Archivos | 3 | 2 |
+| Declaraciones `test()` | 6 | 5 |
+| Código del generador/alta | 2 arneses independientes + 1 tercer sandbox | 1 arnés compartido |
+| Escenarios críticos de alta | Creación, duplicados, integración | Conservados |
+
+Se hicieron comprobaciones de **sintaxis** de los dos archivos actualizados. No se ejecutó todavía `node --test` sobre un checkout completo ni Playwright: el workflow no se dispara por `push` a esta rama y se mantiene la decisión de abrir un solo PR al final. No se declara CI verde ni cobertura equivalente de manera experimental.
+
+### Pendientes que no se deben confundir con cobertura eliminable
+
+- Presupuestos, hoteles y rutas comparten conceptos entre archivos pero **no se eliminan** hasta extraer helpers y demostrar equivalencia (fases 3/4).
+- El PR #20 sigue separado. Su fallo posterior (comparativa 8 vs 7) no se corrige en esta fase.
+- El generador actual no valida mediante parseo el contenido final de `modules.js` cuando parte de un catálogo vacío. Es un posible caso límite de la aplicación, **no atribuible a la consolidación**; investigar fuera de esta refactorización de tests o incorporar un caso explícito de regresión con su corrección.
+
+### Siguiente control antes del merge
+
+Actualizar esta rama respecto de `main` y el PR #20 resuelto, abrir el PR final, ejecutar toda la suite y comprobar que la eliminación del escenario redundante no degrada la detección de regresiones. La fase 3 extraerá invariantes generales de los datos de los viajes; no se retirarán comprobaciones numéricas hasta tener reemplazos funcionales.
