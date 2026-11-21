@@ -59,6 +59,11 @@ test('indicadores de Panorama: orden, moneda ISO y borrador incremental', () => 
     {...x, badge: 'Alemán · CHF; italiano · EUR'} : x)), []);
 });
 
+test('un nuevo viaje parcial no exige secciones ya completadas', () => {
+  assert.deepEqual(rules.trip({ id: 'nuevo-viaje', name: 'Borrador' }), []);
+  assert.ok(rules.trip({ id: 'nuevo-viaje', name: 'Borrador' }, { complete: true }).length > 0);
+});
+
 test('nueve secciones maestras en el orden establecido', () => {
   assert.deepEqual(rules.sections(rules.SECTIONS), []);
   assert.ok(rules.sections(rules.SECTIONS.slice(1)).length);
