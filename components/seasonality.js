@@ -36,8 +36,10 @@ window.AtlasSeasonality = function (ctx) {
                 ? 'Máximas' : 'Intervalo';
             const temperature = item.status === 'pending' ? '' : explicit
                 ? explicit[0] : legacy ? magnitude + ': ' + legacy[0] : '';
-            const description = match ? (note.slice(0, match.index) + note.slice(match.index + match[0].length))
-                .replace(/^\s*[.,;:–—-]+\s*/, '').replace(/\s+,/g, ',').replace(/\s{2,}/g, ' ').trim() : note;
+            // Conservar el contexto geográfico si el rango está incrustado en la frase.
+            const description = match && match.index === 0
+                ? note.slice(match[0].length).replace(/^\s*[.,;:–—-]+\s*/, '').trim() || note
+                : note;
             return `<li class="season-month season-${state.css}" aria-label="${esc(name + ': ' + state.label + '. ' + note)}"><div class="season-month-heading"><span class="season-temperature">${temperature ? esc(temperature) : '—'}</span>${weatherIcon(item.icon)}</div><strong class="season-month-name">${esc(name)}</strong><span class="season-state">${esc(state.label)}</span><p class="season-month-description">${esc(description || note)}</p></li>`;
         }).join('');
         return `<section class="section wrap seasonality-section atlas-panel-section" id="temporadas" aria-labelledby="seasonality-heading">
