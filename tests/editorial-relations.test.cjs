@@ -97,7 +97,8 @@ test('borradores mínimos admiten omisiones, pero no colecciones de tipo incorre
 test('fotografías: permite agregar o quitar actividades, rechaza referencias inexistentes', () => {
   const t = makeTrip();
   const catalog = { foto1: { photo: { src: 'photos/foto1.jpg' } },
-    foto2: { photo: { src: 'photos/foto2.jpg' } } };
+    foto2: { photo: { src: 'photos/foto2.jpg' } },
+    opcional: { photo: { src: 'photos/opcional.jpg' } } };
   t.cover = 'foto1';
   t.days[0].places = ['foto1', 'foto2'];
   assert.deepEqual(photos(t, catalog), []);
