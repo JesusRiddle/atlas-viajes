@@ -21,12 +21,23 @@ function photos(trip, catalog) {
   if (!catalog || typeof catalog !== 'object' || Array.isArray(catalog))
     return [problem('photos', 'Catálogo fotográfico no válido')];
   const references = [{ key: trip?.cover, path: 'cover' }];
+  if (trip?.coverSlides != null && !Array.isArray(trip.coverSlides))
+    errors.push(problem('coverSlides', 'El carrusel debe ser una lista'));
+  if (Array.isArray(trip?.coverSlides)) trip.coverSlides.forEach((key, j) =>
+    references.push({ key, path: 'coverSlides[' + j + ']' }));
   if (Array.isArray(trip?.days)) trip.days.forEach((day, i) => {
     for (const field of ['places', 'optionalPlaces']) {
       if (day?.[field] != null && !Array.isArray(day[field]))
         errors.push(problem('days[' + i + '].' + field, 'Referencias fotográficas deben ser una lista'));
       if (Array.isArray(day?.[field]))
-        day[field].forEach((key, j) => references.push({ key, path: 'days[' + i + '].' + field + '[' + j + ']' }));
+        day[field].forEach((key, j) => {
+          const location = 'days[' + i + '].' + field + '[' + j + ']';
+          references.push({ key, path: location });
+          if (field === 'places' && trip.placeDescriptions != null &&
+              (typeof trip.placeDescriptions[key] !== 'string' ||
+               !trip.placeDescriptions[key].trim()))
+            errors.push(problem(location, 'Falta pie de foto de la actividad'));
+        });
     }
   });
   for (const { key, path } of references) {
