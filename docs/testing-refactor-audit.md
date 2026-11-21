@@ -1,0 +1,78 @@
+# Refactorización de pruebas del Atlas — Fase 1: auditoría y línea base
+
+Fecha de auditoría: 2026-11-21  
+Alcance: `tests/`, `.github/workflows/atlas-checks.yml` y la ejecución de GitHub Actions.  
+Rama de trabajo: `refactor/tests-audit-and-consolidation`. **Solo auditoría: no se modifican los tests, los datos ni la aplicación.**
+
+## Línea base verificable
+
+- **12 archivos de pruebas**: 11 archivos `*.test.cjs` ejecutados con `node --test`, más `browser-smoke.cjs` ejecutado con Playwright.
+- **3,290 líneas**, **1,343 llamadas sintácticas a `assert.*(...)`**, **113 declaraciones estáticas `test(...)`** en los 11 archivos del runner Node. Se obtuvieron leyendo los archivos en GitHub; no representan el número real de aserciones ejecutadas dentro de iteraciones ni el número de casos que informa Node.
+- **1 fixture de transporte**: `tests/fixtures/transport-regression.json` (~114 KB). Riesgo de crecimiento y datos repetidos; **no borrar sin verificar sus consumidores**.
+- Workflow actual: comprobación sintáctica de JS; parseo de todos los JSON de viaje; `node --test tests/*.test.cjs`; instalación de Playwright/Chromium; una pasada completa de `browser-smoke.cjs` en escritorio y móvil.
+- Referencia de CI: ejecución [44386534164](https://github.com/JesusRiddle/atlas-viajes/actions/runs/44386534164) en `main`: las validaciones de sintaxis, JSON y tests Node pasaron, pero el smoke falló por esperar 8 tarjetas cuando había 9.
+- Referencia de la corrección separada: [PR #20](https://github.com/JesusRiddle/atlas-viajes/pull/20), ejecución [44931894081](https://github.com/JesusRiddle/atlas-viajes/actions/runs/44931894081): la primera discrepancia fue superada, pero el smoke falló después por esperar 7 filas en comparación cuando había 8. **PR #20 pendiente y CI rojo; no considerarlo una base verde.**
+- La rama de esta auditoría parte de `main` para no mezclarla con el PR #20. Antes de integrar el PR final de refactorización se deberán resolver ambos cambios y ejecutar las pruebas sobre la rama actualizada.
+
+## Inventario y decisión propuesta
+
+| Archivo | Líneas | Aserciones sintácticas | Casos `test()` | Clasificación | Acción de fase posterior |
+|---|---:|---:|---:|---|---|
+| `browser-smoke.cjs` | 778 | 296 | — | Crítico + frágil | Mantener smoke real desktop/mobile; quitar aserciones de itinerarios y números fijos; verificar navegación, ausencia de errores, nueve secciones, overflow y accesibilidad básica. |
+| `colombia-2027.test.cjs` | 316 | 228 | 4 | Mixto: integridad + snapshot editorial | Extraer reglas generales reutilizables; conservar solo decisiones contractuales justificadas como snapshots voluntarios. |
+| `format-budget-contract.test.cjs` | 34 | 9 | 3 | Crítico y compacto | Conservar; sustituir total numérico de Italia por fixture sintético cuando sea posible. |
+| `home-comparison.test.cjs` | 48 | 8 | 3 | Crítico y compacto | Conservar: traducciones y columnas separadas son regresiones verificadas. |
+| `loader-regression.test.cjs` | 923 | 369 | 31 | Crítico + repetición + snapshots editoriales | Separar carga/normalización y contratos compartidos de auditorías por destino; reducir solapamiento con browser. |
+| `map-stay-labels.test.cjs` | 45 | 12 | 2 | Contrato editorial + contenido | Mantener la regla «nunca Base» y el vínculo noches/alojamientos; desacoplar de Colombia. |
+| `new-trip-integration.test.cjs` | 47 | 12 | 1 | Integración relevante | Combinar con `new-trip.test.cjs` sin perder creación incremental y no sobrescritura. |
+| `new-trip.test.cjs` | 32 | 7 | 1 | Parcialmente solapado | Consolidar con prueba de integración. |
+| `patagonia-regression.test.cjs` | 157 | 74 | 10 | Mixto: integridad + contenido | Llevar invariantes generales al validador; dejar snapshots específicos fuera del CI bloqueante. |
+| `transport-budget.test.cjs` | 410 | 142 | 32 | Lógica crítica | Conservar lógica de zonas horarias, selección de tarifas, costos y no duplicación; eliminar aserciones editoriales específicas del destino. |
+| `trip-editorial.test.cjs` | 396 | 156 | 22 | Contratos editoriales + Italia fija | Conservar reglas universales y separar auditorías de contenido (fechas, hoteles, precios). |
+| `trip-production-workflow.test.cjs` | 104 | 30 | 4 | Documentación/proceso + generador | Mantener funcionalidad del generador; mover sincronización textual de documentos a comprobación no bloqueante/manual si no justifica bloquear cada PR. |
+
+**Clasificación:** «crítico» significa protección de comportamiento; «frágil» indica expectativas legítimamente cambiantes; «solapado» significa cobertura conceptual repetida, **no equivalencia demostrada de cada aserción**. No autoriza borrado automático.
+
+## Mapa de posibles solapamientos (pendiente de prueba de equivalencia)
+
+1. **Catálogo y portada:** `browser-smoke`, `loader-regression`, `home-comparison`. Un contrato fuente de verdad para qué viajes son visibles; navegador solo verifica render y orden.
+2. **Fechas/noches/hoteles:** `colombia-2027`, `patagonia-regression`, `trip-editorial`, `loader-regression`, `map-stay-labels` y smoke. Usar invariantes reutilizables; no fijar calendarios en el CI.
+3. **Presupuestos y transporte:** `transport-budget`, `format-budget-contract`, `patagonia-regression`, `trip-editorial`, smoke. Lógica en pruebas unitarias con fixtures; smoke comprueba que se muestra sin `NaN`.
+4. **Nueve secciones, clima, indicadores y textos:** `loader-regression`, `trip-editorial`, smoke. Separar contrato editorial de estructura DOM; no repetir afirmaciones literales por destino en varios niveles.
+5. **Creación de viaje:** `new-trip.test`, `new-trip-integration.test`, `trip-production-workflow.test`. Una prueba pequeña del comando + un flujo de integración; documentación fuera de ruta crítica.
+6. **Fotografías y créditos:** tests de Colombia, Patagonia, Italia, Suiza en loader y browser. Validador genérico de referencias/atribución, sin fijar cantidad exacta de fotografías.
+7. **«Bases» como texto visible:** mantener el contrato editorial de etiqueta en UI. No sustituir automáticamente campos internos históricos `bases`: su uso en el esquema de datos es diferente al texto que se presenta al usuario.
+
+## Qué no debe perderse
+
+- Parseo/sintaxis y consistencia de IDs, rutas de archivos y referencias de imágenes.
+- Validación de fechas reales y de intervalos, noches sin superposición, y ausencia de campos inventados para datos incompletos.
+- Cálculo monetario, tarifas mutuamente excluyentes, cambio de divisas, noche de alojamiento y ausencia de doble contabilización.
+- Normalización/carga de datos incompletos y compatibilidad con viajes heredados.
+- No sobrescritura al crear viajes; flujo de alta y renderización.
+- Traducciones al español, nombres editoriales (por ejemplo «Tus alojamientos.»), no mostrar «Bases» en UI, etiquetas de presupuesto y clima correcto.
+- Navegación, nueve secciones, errores de consola o `undefined`/`NaN`, layout y overflow en escritorio y móvil.
+- El CI debe fallar por un defecto de comportamiento y **no** porque cambió legítimamente un hotel, un total cotizado o el número de viajes.
+
+## Reglas de decisión para fases 2–4
+
+- **Conservar:** prueba que cubre una decisión o fallo real y tiene aserción significativa.
+- **Consolidar:** dos pruebas evalúan la misma propiedad con los mismos datos/capa; elegir la más barata y precisa, conservando una prueba de integración por ruta importante.
+- **Generalizar:** constante de itinerario convertible en invariante de esquema, relación entre datos o derivación desde `modules.js`.
+- **Mover a auditoría optativa:** reglas de aprobación editorial con fechas, nombres propios, importes o textos sujetos a cambio. No eliminar de forma irreversible sin justificar.
+- **Eliminar:** solo después de documentar la aserción sustituta o demostrar que no agrega señal, y comprobar que la suite vuelve a detectar el defecto simulado.
+- **Aserciones de contenido intencional:** permitir fixtures/snapshots versionados si se ejecutan fuera del CI obligatorio o si un contrato de producto exige literalidad, con dueño explícito.
+
+## Criterios de salida
+
+**Fase 1 (esta entrega):** inventario y cifras, mapa de solapamientos, riesgos, política de conservación y baseline de CI documentados. No implica CI verde.
+
+**Fase 2:** consolidación funcional por dominios; registrar pruebas antes/después, cobertura conservada, y fallo reproducible ante regresiones críticas.
+
+**Fase 3:** desacoplar destinos y eliminar números/literales rígidos del pipeline; los cambios de rutas/precios legítimos no deben romperlo, mientras los datos inválidos sí.
+
+**Fase 4:** reducir el smoke, depurar workflow y ejecutar Node + navegador en escritorio y móvil; PR final solo tras checks en verde y revisión de diff. No hacer merge automático.
+
+## Riesgos y límites de esta auditoría
+
+Los conteos son **estáticos** y no sustituyen una medición instrumentada de cobertura o mutación. «Redundancia» aquí es hipótesis a verificar por contrato, no señal para borrar tests. La prueba Playwright contiene bucles por viaje y dos viewports, por lo que sus 296 llamadas a `assert` pueden ejecutar muchas más comprobaciones. Tampoco se midieron duración, flakiness ni porcentaje de cobertura: registrar esas métricas en la siguiente fase antes de recortar.
