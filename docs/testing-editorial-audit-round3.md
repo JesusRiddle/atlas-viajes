@@ -209,3 +209,15 @@ El script `tests/browser-smoke.cjs` no declara casos `test()`: sus 826 líneas y
 ## Puerta para fase 2
 
 Completar contratos universales para alojamientos/fechas, referencias, reservas, fotos, transportes, gastos, tipo de cambio y presentación por estado editorial. Cada contrato nuevo debe tener fixture válido + inválido, y demostrar que las pruebas específicas reemplazadas no detectan un fallo que el contrato nuevo pase por alto. Conservar toda la suite antigua hasta alcanzar esa equivalencia. Solo fase 3 puede retirar aserciones y archivos específicos. El PR #23 permanece abierto y sin merge.
+
+## Fase 2 — contratos cruzados implementados (2026-11-21)
+
+Nuevo módulo puro `scripts/editorial-relations.cjs` y suite de mutación `tests/editorial-relations.test.cjs`, independientes de IDs, tarifas, operadores y número de actividades.
+
+**Reglas bloqueantes ya ejecutables:** fechas de jornadas válidas y consecutivas; correspondencia con inicio y final; fechas válidas de check-in/check-out; alojamiento de cada noche existente y vigente para esa jornada; `hotelId` de gastos y `transportRefs` de jornadas presentes; IDs únicos de hoteles, transporte y gastos; importes no negativos y código ISO 4217 cuando existe importe; `null` legítimo para precio pendiente; enlaces HTTP(S) válidos de hoteles y reservas; grupos de reservas estructurados; `cover`, `places` y `optionalPlaces` referenciados en `data/places.json`.
+
+**Pruebas positivas y negativas:** agregar/quitar actividades, renombrar hotel, alterar importes o prolongar la estancia con fechas congruentes debe pasar; referencias huérfanas, fechas imposibles, noches fuera de check-in/out, duplicaciones, montos negativos, monedas inexistentes, fotos ausentes y URLs inválidas deben fallar. Se ejecutan los contratos contra los nueve viajes principales, sin fijar sus decisiones de planificación.
+
+**Límites deliberados:** una URL bien formada no demuestra disponibilidad real; una moneda ISO válida no demuestra pertinencia geográfica. Las fotografías locales pueden tener solo `photo.src`, a diferencia de fotos externas con autor/licencia: no exigir metadatos externos a archivos propios. Los tests existentes de presupuestos complejos se conservan: aquí validamos integridad estructural, **no** recalculamos por segunda vez las fórmulas del ledger ni toda la guía editorial. La comprobación de correspondencia país-moneda, estados de compra y la depuración de snapshots continúan como tareas pendientes de la fase 3/4.
+
+**Puerta de salida:** no eliminar tests rígidos hasta demostrar que el nuevo contrato o un fixture de presupuesto conserva su detección. El PR #23 sigue abierto, sin merge. 
