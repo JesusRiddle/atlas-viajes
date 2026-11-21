@@ -93,8 +93,8 @@ function sections(ids) {
 function trip(tripData, { complete = false } = {}) {
   if (!tripData || typeof tripData !== 'object') return [issue('trip', 'Viaje inválido')];
   return [
-    ...seasons(tripData.seasonality),
-    ...indicators(tripData.practicalIndicators, { complete })
+    ...(complete || tripData.seasonality ? seasons(tripData.seasonality) : []),
+    ...indicators(tripData.practicalIndicators || [], { complete })
   ];
 }
 
