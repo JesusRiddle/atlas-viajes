@@ -201,6 +201,24 @@ const assert = require('node:assert/strict');
         // Esperar navegación específica: la portada del viaje anterior aún puede existir tras cambiar el hash.
         await page.locator('.subnav a[href*="#viaje/' + id + '/"]').first().waitFor();
         for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1, viewport.width + ' ' + id + ' ' + anchor);
+        // Contrato universal de Temperaturas: DOM y datos deben coincidir en todos los viajes desarrollados.
+        const currentTrip = tripById.get(id);
+        if (currentTrip?.seasonality?.months && currentTrip.homeGroup !== 'ideas') {
+          const temperatures = await page.locator('#temporadas .season-temperature').allInnerTexts();
+          assert.equal(temperatures.length, 12, id + ': las doce temperaturas están presentes');
+          for (let month = 1; month <= 12; month++) {
+            const key = String(month).padStart(2, '0');
+            const status = currentTrip.seasonality.months[key]?.status;
+            const rendered = temperatures[month - 1];
+            if (status === 'pending') assert.equal(rendered, '—', id + ': mes pendiente ' + key);
+            else {
+              assert.notEqual(rendered, '—', id + ': temperatura ausente ' + key);
+              assert.match(rendered, /^(?:Máx\\. |Máximas: |Intervalo: )/,
+                id + ': temperatura sin significado identificado ' + key);
+            }
+          }
+        }
+
         // Un mismo contrato de diseño para tarjetas de mapa y alojamientos en todos los viajes.
         assert.equal(await page.locator('#alojamientos h2').innerText(), 'Tus alojamientos.',
           id + ': el título no cambia por candidatos ni alternativas');
