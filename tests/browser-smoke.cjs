@@ -203,7 +203,7 @@ const assert = require('node:assert/strict');
         for (const anchor of anchors) assert.equal(await page.locator('[id="' + anchor + '"]').count(), 1, viewport.width + ' ' + id + ' ' + anchor);
         // Contrato universal de Temperaturas: DOM y datos deben coincidir en todos los viajes desarrollados.
         const currentTrip = tripById.get(id);
-        if (currentTrip?.seasonality?.months && currentTrip.homeGroup !== 'ideas') {
+        if (currentTrip?.seasonality?.months && primaryModules.some(module => module.id === id)) {
           const temperatures = await page.locator('#temporadas .season-temperature').allInnerTexts();
           assert.equal(temperatures.length, 12, id + ': las doce temperaturas están presentes');
           for (let month = 1; month <= 12; month++) {
@@ -213,7 +213,7 @@ const assert = require('node:assert/strict');
             if (status === 'pending') assert.equal(rendered, '—', id + ': mes pendiente ' + key);
             else {
               assert.notEqual(rendered, '—', id + ': temperatura ausente ' + key);
-              assert.match(rendered, /^(?:Máx\\. |Máximas: |Intervalo: )/,
+              assert.match(rendered, /^(?:Máx\. |Máximas: |Intervalo: )/,
                 id + ': temperatura sin significado identificado ' + key);
             }
           }
