@@ -1,7 +1,7 @@
 'use strict';
-// Catálogo de obligaciones editoriales. coverage=automated significa prueba existente,
-// NO demostración de exhaustividad ni de fuentes externas verificadas.
-// missing, partial y manual NO pueden presentarse como cobertura completa.
+// Inventario trazable, no certificado de cobertura exhaustiva: automated indica
+// evidencia de un test en CI, partial cobertura incompleta, manual verificación externa,
+// missing prueba aún no implementada. Fuentes enlazadas al capítulo rector.
 module.exports = Object.freeze([
   {
     "id": "CAT-01",
@@ -11,13 +11,21 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/browser-smoke.cjs",
       "contains": "El catálogo no debe repetir IDs"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
     }
   },
   {
     "id": "CAT-02",
     "section": "transversal",
     "requirement": "Los viajes son independientes y no se bloquean por coincidencias de fecha",
-    "coverage": "missing"
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
+    }
   },
   {
     "id": "LIF-01",
@@ -27,13 +35,21 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/loader-regression.test.cjs",
       "contains": "plantilla universal: identidad mínima"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
     }
   },
   {
     "id": "LIF-02",
     "section": "transversal",
     "requirement": "Distinguir formalmente etapas incremental y editorialmente completo",
-    "coverage": "missing"
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
+    }
   },
   {
     "id": "NAV-01",
@@ -43,6 +59,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-contracts.test.cjs",
       "contains": "nueve secciones maestras en el orden establecido"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
     }
   },
   {
@@ -53,6 +73,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/browser-smoke.cjs",
       "contains": "Tus alojamientos."
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
     }
   },
   {
@@ -63,6 +87,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-contracts.test.cjs",
       "contains": "indicadores de Panorama"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 1. Panorama del viaje (`plan`)"
     }
   },
   {
@@ -73,6 +101,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/browser-smoke.cjs",
       "contains": "overview-climate-card"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 1. Panorama del viaje (`plan`)"
     }
   },
   {
@@ -83,6 +115,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/trip-editorial.test.cjs",
       "contains": "mantiene introducción turística con resaltados"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 1. Panorama del viaje (`plan`)"
     }
   },
   {
@@ -93,25 +129,41 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-contracts.test.cjs",
       "contains": "moneda ISO"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 1. Panorama del viaje (`plan`)"
     }
   },
   {
     "id": "PAN-05",
     "section": "plan",
     "requirement": "Correspondencia idioma, divisa y país del recorrido",
-    "coverage": "missing"
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 1. Panorama del viaje (`plan`)"
+    }
   },
   {
     "id": "PAN-06",
     "section": "plan",
     "requirement": "Requisitos migratorios, enchufes y voltaje verificados por país y fechas",
-    "coverage": "manual"
+    "coverage": "manual",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 1. Panorama del viaje (`plan`)"
+    }
   },
   {
     "id": "MAP-01",
     "section": "mapa",
     "requirement": "Coordenadas dentro del rango geográfico y no ficticias",
-    "coverage": "missing"
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 2. Mapa (`mapa`)"
+    }
   },
   {
     "id": "MAP-02",
@@ -121,6 +173,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/map-stay-labels.test.cjs",
       "contains": "todos los puntos de alojamiento resuelven sus noches"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 2. Mapa (`mapa`)"
     }
   },
   {
@@ -131,6 +187,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/browser-smoke.cjs",
       "contains": "map-city-list"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 2. Mapa (`mapa`)"
     }
   },
   {
@@ -141,6 +201,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-contracts.test.cjs",
       "contains": "doce meses"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 3. Temporadas (`temporadas`)"
     }
   },
   {
@@ -151,25 +215,41 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-contracts.test.cjs",
       "contains": "temperatura explícita"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 3. Temporadas (`temporadas`)"
     }
   },
   {
     "id": "SEA-03",
     "section": "temporadas",
     "requirement": "Exactitud de temporadas, luz y clima respecto a fuentes externas",
-    "coverage": "manual"
+    "coverage": "manual",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 3. Temporadas (`temporadas`)"
+    }
   },
   {
     "id": "EXP-01",
     "section": "experiencias",
     "requirement": "Experiencias específicas sin relleno y extensión recomendada",
-    "coverage": "missing"
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 4. Experiencias (`experiencias`)"
+    }
   },
   {
     "id": "EXP-02",
     "section": "experiencias",
     "requirement": "Gastronomía y disponibilidad local contrastadas con fuentes",
-    "coverage": "manual"
+    "coverage": "manual",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 4. Experiencias (`experiencias`)"
+    }
   },
   {
     "id": "RES-01",
@@ -179,6 +259,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "monedas, cantidades, enlaces y reservas inválidas"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 5. Reservaciones (`reservas`)"
     }
   },
   {
@@ -189,13 +273,21 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/transport-budget.test.cjs",
       "contains": "las cotizaciones incompletas no se interpretan como costos cero"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 5. Reservaciones (`reservas`)"
     }
   },
   {
     "id": "RES-03",
     "section": "reservas",
     "requirement": "Vigencia y destino correcto de enlaces oficiales de reserva",
-    "coverage": "manual"
+    "coverage": "manual",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 5. Reservaciones (`reservas`)"
+    }
   },
   {
     "id": "TRA-01",
@@ -205,6 +297,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "referencias: detecta hoteles, transportes"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 6. Traslados (`traslados`)"
     }
   },
   {
@@ -215,6 +311,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/transport-budget.test.cjs",
       "contains": "zona horaria, escala y duración completas"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 6. Traslados (`traslados`)"
     }
   },
   {
@@ -225,13 +325,21 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/transport-budget.test.cjs",
       "contains": "solo se suma una tarifa por transporte"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 6. Traslados (`traslados`)"
     }
   },
   {
     "id": "TRA-04",
     "section": "traslados",
     "requirement": "Operador, horario, tarifa y fuente válidos para fecha de viaje",
-    "coverage": "manual"
+    "coverage": "manual",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 6. Traslados (`traslados`)"
+    }
   },
   {
     "id": "LOD-01",
@@ -241,6 +349,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "fechas: rechaza calendario imposible"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 7. Dónde dormir (`alojamientos`)"
     }
   },
   {
@@ -251,6 +363,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/patagonia-regression.test.cjs",
       "contains": "los gastos por día coinciden con el presupuesto"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 7. Dónde dormir (`alojamientos`)"
     }
   },
   {
@@ -261,13 +377,21 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "monedas, cantidades, enlaces y reservas inválidas"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 7. Dónde dormir (`alojamientos`)"
     }
   },
   {
     "id": "LOD-04",
     "section": "alojamientos",
     "requirement": "Ubicación y disponibilidad real de hoteles y reservas",
-    "coverage": "manual"
+    "coverage": "manual",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 7. Dónde dormir (`alojamientos`)"
+    }
   },
   {
     "id": "DAY-01",
@@ -277,13 +401,21 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "fechas: rechaza calendario imposible"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
     }
   },
   {
     "id": "DAY-02",
     "section": "dias",
     "requirement": "Numeración consecutiva sin saltos ni duplicados",
-    "coverage": "missing"
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
+    }
   },
   {
     "id": "DAY-03",
@@ -293,6 +425,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/loader-regression.test.cjs",
       "contains": "Suiza nevada: contratos editoriales"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
     }
   },
   {
@@ -303,6 +439,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "fotografías: permite agregar o quitar actividades"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
     }
   },
   {
@@ -313,13 +453,21 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/loader-regression.test.cjs",
       "contains": "fotografías estivales, portada, galerías"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
     }
   },
   {
     "id": "DAY-06",
     "section": "dias",
     "requirement": "Aperturas, recorridos y tiempos locales verificables",
-    "coverage": "manual"
+    "coverage": "manual",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
+    }
   },
   {
     "id": "BUD-01",
@@ -329,6 +477,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "monedas, cantidades, enlaces y reservas inválidas"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
     }
   },
   {
@@ -339,6 +491,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/transport-budget.test.cjs",
       "contains": "solo se suma una tarifa por transporte"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
     }
   },
   {
@@ -349,13 +505,21 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/transport-budget.test.cjs",
       "contains": "distribución hotelera por noche preserva el importe"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
     }
   },
   {
     "id": "BUD-04",
     "section": "costes",
     "requirement": "Equivalencia MXN inmediata y tipo de cambio fechado con fuente",
-    "coverage": "missing"
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
+    }
   },
   {
     "id": "BUD-05",
@@ -365,6 +529,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/home-comparison.test.cjs",
       "contains": "la cabecera conserva ocho columnas"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
     }
   },
   {
@@ -375,6 +543,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/transport-budget.test.cjs",
       "contains": "las cotizaciones incompletas no se interpretan como costos cero"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
     }
   },
   {
@@ -385,6 +557,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": "tests/browser-smoke.cjs",
       "contains": "horizontal overflow"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
     }
   },
   {
@@ -395,6 +571,10 @@ module.exports = Object.freeze([
     "evidence": {
       "file": ".github/workflows/atlas-checks.yml",
       "contains": "ATLAS_EDITORIAL_AUDIT"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
     }
   }
 ]);
