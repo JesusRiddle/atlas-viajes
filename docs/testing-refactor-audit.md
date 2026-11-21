@@ -109,3 +109,22 @@ Se hicieron comprobaciones de **sintaxis** de los dos archivos actualizados. No 
 ### Siguiente control antes del merge
 
 Actualizar esta rama respecto de `main` y el PR #20 resuelto, abrir el PR final, ejecutar toda la suite y comprobar que la eliminación del escenario redundante no degrada la detección de regresiones. La fase 3 extraerá invariantes generales de los datos de los viajes; no se retirarán comprobaciones numéricas hasta tener reemplazos funcionales.
+
+## Fase 3 — desacoplamiento parcial del catálogo (2026-11-21)
+
+- Se sustituyeron conteos fijos de la portada y de tarjetas de ideas por el catálogo de módulos disponibles.
+- El orden esperado de la portada se deriva de las fechas de inicio de los JSON de los viajes principales, y no de una lista fija de ocho IDs.
+- La comparación comprueba que sus viajes pertenecen a los principales, aparecen sin duplicados, y siguen el orden cronológico; el número de personas se compara contra el `travelerCount` real del viaje, no contra un arreglo fijo.
+- La tarjeta de Patagonia conserva la comprobación de presentación del presupuesto por persona, sin fijar los dos importes de una cotización.
+- Se preservaron los contratos de navegación, encabezados, traducciones, etiquetas laborales, layout y existencia de los viajes históricos.
+
+### Limitaciones y pendientes
+
+- La fase 3 no elimina todos los snapshots por destino: otras aserciones de Orlando, Patagonia, Italia y Suiza continúan fijando valores particulares y requieren decidir explícitamente qué migrar antes del PR final.
+- Comprobación hecha: sintaxis JavaScript de `browser-smoke.cjs` evaluada con parser V8. **No se ejecutaron pruebas de navegador ni de la suite Node contra un checkout real**, por lo que no se afirma que el pipeline esté verde.
+- El PR #20 independiente utiliza una solución parcial para las mismas aserciones; **no fusionar ambas implementaciones a ciegas**. La rama de refactorización contiene la generalización más completa, pero debe integrarse y validarse primero en una ejecución real.
+- Existe el riesgo de que la comparación excluya viajes que no tengan datos suficientes. La prueba valida el subconjunto y el orden; la cobertura de elegibilidad se mantiene en las pruebas de loader/formato, no queda demostrada en este smoke.
+
+### Próxima fase
+
+Reducir las aserciones editoriales restantes del smoke de forma controlada, revisar la compatibilidad con el PR #20, ejecutar Node y Playwright en GitHub Actions, y resolver las regresiones que aparezcan antes de proponer el merge.
