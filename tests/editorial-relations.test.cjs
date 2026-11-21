@@ -101,7 +101,7 @@ test('fotografías: permite agregar o quitar actividades, rechaza referencias in
     opcional: { photo: { src: 'photos/opcional.jpg' } } };
   t.cover = 'foto1';
   t.coverSlides = ['foto1', 'foto2'];
-  t.placeDescriptions = { foto1: 'Detalle turístico', foto2: 'Otra descripción turística' };
+  t.placeDescriptions = { foto1: 'Detalle turístico', foto2: 'Otra descripción turística', opcional: 'Actividad opcional con descripción turística' };
   t.days[0].places = ['foto1', 'foto2'];
   assert.deepEqual(photos(t, catalog), []);
   t.days[0].places = ['foto2']; // quitar una actividad es válido
