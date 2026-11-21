@@ -4,7 +4,7 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
-const { validate } = require('../scripts/editorial-relations.cjs');
+const { validate, photos } = require('../scripts/editorial-relations.cjs');
 
 const makeTrip = () => ({
   id: 'ejemplo',
@@ -94,13 +94,31 @@ test('borradores mínimos admiten omisiones, pero no colecciones de tipo incorre
   assert.ok(hasError(validate({ reservations: 'pendientes' }), 'reservations'));
 });
 
+test('fotografías: permite agregar o quitar actividades, rechaza referencias inexistentes', () => {
+  const t = makeTrip();
+  const catalog = { foto1: { photo: { src: 'photos/foto1.jpg' } },
+    foto2: { photo: { src: 'photos/foto2.jpg' } } };
+  t.cover = 'foto1';
+  t.days[0].places = ['foto1', 'foto2'];
+  assert.deepEqual(photos(t, catalog), []);
+  t.days[0].places = ['foto2']; // quitar una actividad es válido
+  assert.deepEqual(photos(t, catalog), []);
+  t.days[0].places.push('desconocida');
+  assert.ok(hasError(photos(t, catalog), 'days[0].places[1]'));
+  t.days[0].places.pop();
+  t.cover = 'inexistente';
+  assert.ok(hasError(photos(t, catalog), 'cover'));
+});
+
 test('integridad dinámica de los nueve viajes principales, sin snapshots de fechas ni importes', () => {
   const window = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../modules.js'), 'utf8'), { window });
   const main = window.ATLAS_MODULES.filter(item => item.available && item.homeGroup !== 'ideas');
   assert.ok(main.length);
+  const photoCatalog = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/places.json'), 'utf8'));
   for (const { file, id } of main) {
     const trip = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/trips', file), 'utf8'));
     assert.deepEqual(complaints(trip), [], id + ': relaciones editoriales inconsistentes');
+    assert.deepEqual(photos(trip, photoCatalog), [], id + ': fotografías referenciadas inválidas');
   }
 });
