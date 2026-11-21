@@ -221,3 +221,13 @@ Nuevo módulo puro `scripts/editorial-relations.cjs` y suite de mutación `tests
 **Límites deliberados:** una URL bien formada no demuestra disponibilidad real; una moneda ISO válida no demuestra pertinencia geográfica. Las fotografías locales pueden tener solo `photo.src`, a diferencia de fotos externas con autor/licencia: no exigir metadatos externos a archivos propios. Los tests existentes de presupuestos complejos se conservan: aquí validamos integridad estructural, **no** recalculamos por segunda vez las fórmulas del ledger ni toda la guía editorial. La comprobación de correspondencia país-moneda, estados de compra y la depuración de snapshots continúan como tareas pendientes de la fase 3/4.
 
 **Puerta de salida:** no eliminar tests rígidos hasta demostrar que el nuevo contrato o un fixture de presupuesto conserva su detección. El PR #23 sigue abierto, sin merge. 
+
+## Fase 3 — depuración de snapshots y sustitución por contratos (2026-11-21)
+
+Se retiraron **17 casos Node** (aprox. **316 líneas netas** de cinco archivos; medición contra la rama previa a esta fase), que fijaban fotografías, itinerarios, fechas, operadores, tarifas, alojamientos y conteos puntuales. Desglose: `colombia-2027.test.cjs` 1 caso, `patagonia-regression.test.cjs` 4, `trip-editorial.test.cjs` 6, `loader-regression.test.cjs` 3, `transport-budget.test.cjs` 3.
+
+Los nuevos contratos de relaciones en `editorial-relations.test.cjs` sustituyen las comprobaciones estructurales con fixtures mutables y todos los viajes principales. Se reforzó la cobertura de `coverSlides` y pies de foto de `days[].places`, sin exigir cantidades fijas de imágenes. La compatibilidad funcional del loader, el cálculo de alternativas presupuestarias, cronologías de transporte y el smoke responsive permanecen en la suite.
+
+**No se han eliminado todavía** todos los snapshots específicos: muchos casos combinan ejemplos reales con lógica de presupuesto/transportes única que necesita reemplazos equivalentes más completos antes de depurarse. El resto se reevalúa en fase 4 para no cambiar la seguridad del pipeline por una reducción artificial de líneas.
+
+**Control de calidad:** la primera corrida tras reforzar pies de foto falló en un fixture cuyo lugar opcional carecía de descripción, sin afectar datos reales. Se corrigió el fixture para representar un viaje editorialmente válido. El resultado definitivo del CI se registra en la PR y se verificará antes de cerrar esta fase. Sin cambios en JSON de itinerarios, sin merge.
