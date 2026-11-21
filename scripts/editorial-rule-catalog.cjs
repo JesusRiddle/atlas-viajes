@@ -175,7 +175,7 @@ module.exports = Object.freeze([
     "id": "RES-01",
     "section": "reservas",
     "requirement": "Grupos y enlaces de reserva con estructura válida",
-    "coverage": "automated",
+    "coverage": "partial",
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "monedas, cantidades, enlaces y reservas inválidas"
@@ -237,7 +237,7 @@ module.exports = Object.freeze([
     "id": "LOD-01",
     "section": "alojamientos",
     "requirement": "Check-in/out y vínculo válido entre noches y alojamiento",
-    "coverage": "automated",
+    "coverage": "partial",
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "fechas: rechaza calendario imposible"
@@ -257,7 +257,7 @@ module.exports = Object.freeze([
     "id": "LOD-03",
     "section": "alojamientos",
     "requirement": "Enlaces de mapa y reserva con formato válido",
-    "coverage": "automated",
+    "coverage": "partial",
     "evidence": {
       "file": "tests/editorial-relations.test.cjs",
       "contains": "monedas, cantidades, enlaces y reservas inválidas"
