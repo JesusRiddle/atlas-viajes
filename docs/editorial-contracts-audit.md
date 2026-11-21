@@ -53,3 +53,20 @@ Cada regla se clasifica en:
 **Fase 3 · Migración y depuración:** migrar `seasonality.js` y el contenido térmico necesario sin inventar cifras; sustituir tests rígidos de viajes por contratos reutilizables cuando demuestren cobertura equivalente. Las reglas de clima y moneda deben comprobarse también en DOM.
 
 **Fase 4 · CI y auditoría:** ejecutar Node y Playwright escritorio/móvil sobre el contrato vigente, comprobar errores por estado de planificación y reportar excepciones. Un solo PR para las cuatro fases, sin merge automático.
+
+## Fase 2 — implementación del validador inicial (2026-11-21)
+
+Implementados `scripts/editorial-contracts.cjs` (reglas puras sin dependencias del DOM ni de un viaje particular) y `tests/editorial-contracts.test.cjs` (fixtures válidos/erróneos y comprobación de los nueve viajes principales del catálogo).
+
+**Contratos ejecutables incluidos:**
+- rango térmico explícito `Máx. X °C · Mín. Y °C`, con máxima ≥ mínima, negativos en signo Unicode y decimales;
+- intervalo histórico `X a Y °C`, con extremos ascendentes y sin atribuir por error al extremo inferior la condición de mínima nocturna; formato invertido/guion incorrecto se detecta;
+- doce meses completos, cuatro estados válidos y temperatura reconocible para los meses evaluados; `pending` admite desconocidos;
+- tres indicadores completos en orden, títulos y tonos válidos; badge de idioma y código de moneda con estructura ISO 4217 (incluidos multidestinos); los viajes recién creados admiten `practicalIndicators: []`;
+- nueve anclas maestras, estructura y orden.
+
+**Comprobación real de datos:** se ejecutaron las funciones del módulo contra los JSON de los nueve viajes principales disponibles por GitHub. Resultado: cero incidencias en los contratos iniciales. También se comprobaron interactivamente casos de máxima/mínima invertidas, valores negativos, intervalos heredados, separador prohibido, doce meses `pending` y anclas maestras.
+
+**Límites deliberados:** el validador aún no confirma que el código de moneda sea el correcto para cada país; un patrón `[A-Z]{3}` no verifica esa relación. Eso requerirá información estructurada de países y posibles varias monedas, evitando un mapa improvisado por ID de viaje. Tampoco se comprueban hechos de clima, requisitos migratorios ni geografía desde un test local. La nueva notación `Máx./Mín.` NO se ha aplicado al renderizador ni a los JSON; ese trabajo corresponde a la fase 3. Las otras secciones se cubrirán progresivamente con reglas automatizables sustentadas en la guía, no mediante ejemplos específicos.
+
+**Validación CI:** sintaxis V8 del módulo y del test revisada; ejecución de funciones concretas verificada; **no se ejecutó todavía `node --test` ni Playwright sobre esta rama** porque se acordó un único PR al final de cuatro fases. El CI completo es puerta obligatoria de fase 4. No se han modificado viajes, y no hay merge.
