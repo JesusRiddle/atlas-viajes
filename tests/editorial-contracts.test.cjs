@@ -21,6 +21,12 @@ test('temperatura explícita: máxima izquierda, mínima derecha y negativos cor
   assert.equal(rules.temperature('5 a −3 °C').kind, 'legacy-interval');
   assert.match(rules.temperature('5 a −3 °C').errors.join(' '), /menor a mayor/);
   assert.equal(rules.temperature('5–3 °C').kind, 'invalid');
+  assert.equal(rules.temperature('111 a 2 °C').kind, 'invalid',
+    'No aceptar un fragmento numérico dentro de otro valor');
+  assert.deepEqual(rules.temperature('Máx. 5 °C · Mín. −3 °C.'),
+    { kind: 'explicit', max: 5, min: -3, errors: [] });
+  assert.match(rules.temperature('Máx. 5 °C Mín. −3 °C').errors.join(' '), /malformado/);
+  assert.match(rules.temperature('Máx. 5 °C · Mín. −3 °C10').errors.join(' '), /malformado/);
 });
 
 test('intervalos históricos conservan significado sin inventar mínimos nocturnos', () => {
@@ -52,8 +58,12 @@ test('indicadores de Panorama: orden, moneda ISO y borrador incremental', () => 
   assert.deepEqual(rules.indicators(valid, { complete: true }), []);
   assert.deepEqual(rules.indicators([], { complete: false }), []);
   assert.ok(rules.indicators([], { complete: true }).length > 0);
-  assert.deepEqual(rules.indicators([{...valid[0]}, {...valid[2]}, {...valid[1]}]).length > 0, true);
+  assert.ok(rules.indicators([{...valid[0]}, {...valid[2]}, {...valid[1]}]).length > 0);
   assert.ok(rules.indicators(valid.map(x => x.id === 'language' ? {...x, badge: 'Viaje sencillo'} : x))
+    .some(error => /badge/.test(error.path)));
+  assert.ok(rules.indicators(valid.map(x => x.id === 'language' ? {...x, badge: 'Inventado · ZZZ'} : x))
+    .some(error => /badge/.test(error.path)));
+  assert.ok(rules.indicators(valid.map(x => x.id === 'entry' ? {...x, badge: ''} : x))
     .some(error => /badge/.test(error.path)));
   assert.deepEqual(rules.indicators(valid.map(x => x.id === 'language' ?
     {...x, badge: 'Alemán · CHF; italiano · EUR'} : x)), []);
