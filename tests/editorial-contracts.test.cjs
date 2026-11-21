@@ -106,10 +106,29 @@ test('contratos se aplican a los nueve viajes principales sin exigir datos de id
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../modules.js'), 'utf8'), { window });
   const modules = window.ATLAS_MODULES.filter(module => module.available && module.homeGroup !== 'ideas');
   assert.ok(modules.length > 0);
+  const seasonWindow = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../components/seasonality.js'), 'utf8'),
+    { window: seasonWindow });
   for (const module of modules) {
     const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/trips', module.file), 'utf8'));
     const errors = rules.trip(data, { complete: Array.isArray(data.practicalIndicators) &&
       data.practicalIndicators.length > 0 });
     assert.deepEqual(errors, [], module.id + ': ' + JSON.stringify(errors));
+    if (data.seasonality?.months) {
+      const html = seasonWindow.AtlasSeasonality({ esc: String }).seasonality(data);
+      const shown = [...html.matchAll(/class="season-temperature">([^<]+)</g)].map(match => match[1]);
+      assert.equal(shown.length, 12, module.id + ': doce tarjetas de temporada');
+      rules.MONTHS.forEach((key, index) => {
+        const month = data.seasonality.months[key];
+        const expected = rules.temperature(month?.description);
+        if (!month || month.status === 'pending') assert.equal(shown[index], '—', module.id + ': ' + key);
+        else {
+          assert.notEqual(shown[index], '—', module.id + ': ' + key + ' sin temperatura');
+          if (expected.kind === 'explicit')
+            assert.equal(shown[index], month.description.match(/Máx\\.\\s*[−-]?\\d+(?:[.,]\\d+)?\\s*°C\\s*·\\s*Mín\\.\\s*[−-]?\\d+(?:[.,]\\d+)?\\s*°C/u)[0]);
+          else assert.match(shown[index], /^(Máximas|Intervalo): /, module.id + ': ' + key);
+        }
+      });
+    }
   }
 });
