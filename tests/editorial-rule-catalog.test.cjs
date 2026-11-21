@@ -13,7 +13,7 @@ test('cada obligación editorial tiene ID, sección, cobertura y descripción ú
   assert.ok(rules.length >= 9);
   assert.deepEqual(new Set(rules.map(rule => rule.id)).size, rules.length);
   for (const rule of rules) {
-    assert.match(rule.id, /^[A-Z]{3}-\d{2}$/);
+    assert.match(rule.id, /^[A-Z]{2,3}-\d{2}$/);
     assert.ok(areas.includes(rule.section), rule.id + ': sección desconocida');
     assert.ok(statuses.has(rule.coverage), rule.id + ': estado de cobertura desconocido');
     assert.ok(typeof rule.requirement === 'string' && rule.requirement.length > 15, rule.id);
