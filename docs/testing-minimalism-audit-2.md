@@ -87,3 +87,33 @@ Se eliminaron del smoke predeterminado dos expectativas de Orlando (fechas y dí
 ### Puerta de validación de fase C
 
 La validación requerida es la ejecución de `Atlas checks` contra el commit actual: sintaxis, JSON, `node --test` y smoke de Chromium en ambos tamaños. El modo editorial optativo se ejecutará en las auditorías de contenido y no constituye el requisito bloqueante para cada PR de código.
+
+## Fase D — workflow, métricas y aceptación (2026-11-21)
+
+### Configuración
+
+El workflow `.github/workflows/atlas-checks.yml` admite ahora un parámetro booleano `editorial_audit` en `workflow_dispatch`, desactivado por defecto. El job de regresión siempre valida sintaxis, JSON, Node y el smoke de Playwright en escritorio y móvil. **Solo si se lanza manualmente con `editorial_audit = true`**, añade un segundo pase del mismo script con `ATLAS_EDITORIAL_AUDIT=1`; se reutilizan la instalación de Chromium y el servidor local del job. Un fallo profundo marca la ejecución manual como fallida.
+
+Uso en GitHub Actions: abrir **Atlas checks** → **Run workflow** → elegir la rama que contiene el cambio (o `main` tras el merge) → activar **Ejecutar además la auditoría editorial profunda de itinerarios** → ejecutar. También puede ejecutarse localmente arrancando servidor estático en puerto 8765 y usando `ATLAS_EDITORIAL_AUDIT=1 node tests/browser-smoke.cjs`.
+
+### Comparación de duración observada
+
+Fuente: timestamps en logs de jobs de GitHub Actions (misma plataforma, ejecutados consecutivamente el 21 de noviembre de 2026).
+
+| Recorrido | Comando lanzado | Mensaje de éxito | Duración aproximada |
+|---|---|---|---:|
+| Smoke original con auditoría editorial completa: [44936953190](https://github.com/JesusRiddle/atlas-viajes/actions/runs/44936953190) | 18:42:45.302 UTC | 18:43:04.134 UTC | 18.83 s |
+| Smoke reducido: [44937260582](https://github.com/JesusRiddle/atlas-viajes/actions/runs/44937260582) | 18:45:59.410 UTC | 18:46:13.461 UTC | 14.05 s |
+
+Diferencia aproximada: **4.78 s menos (25.4 %)** para el paso navegador. Son dos mediciones, no un benchmark estadísticamente robusto; no prueban mejora de la misma magnitud en el tiempo total del pipeline, donde instalar Chromium y dependencias sigue teniendo peso. No se redujo el recorrido de destinos/viewport del smoke obligatorio.
+
+### Estado de cobertura y límites
+
+- Fase A: contratos de presupuesto sintéticos y valores exactos.
+- Fase B: una duplicación editorial retirada sin perder el verificador que la cubre.
+- Fase C: expectativas editoriales profundas retenidas en modo optativo; smoke de interfaz obligatorio y CI verde antes del cambio de workflow.
+- Fase D: mecanismo manual para la auditoría y medición reproducible documentada.
+
+**No se afirma que el código de pruebas sea el mínimo absoluto**: persisten snapshots por destino y un archivo de navegador voluminoso. La meta alcanzada es distinguir claramente pruebas bloqueantes de exploración editorial, con cobertura conservada en modo bajo demanda. Para una futura ronda, exigir medidas de cobertura/mutación antes de borrar aserciones adicionales.
+
+**Puerta de salida:** verificar `Atlas checks` verde sobre el commit final del PR #22 (JSON, Node, desktop/mobile), PR #22 dependiente de #21, no fusionar automáticamente. La ejecución manual con `editorial_audit=true` queda disponible después de integrar el workflow en la rama elegida; no hay constancia de que se haya ejecutado en esta fase.
