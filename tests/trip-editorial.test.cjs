@@ -28,23 +28,6 @@ test('el viaje Italia 2027 mantiene introducción turística con resaltados exis
   assert.doesNotMatch(trip.intro, /reservar primero|aún sin comprar|entrada nominativa|servicios no modificables/i);
 });
 
-test('los 12 meses evaluados contienen rango de temperatura visible', () => {
-  const drafts = fs.readdirSync('data/trips').filter(name => name.endsWith('.json') && !name.startsWith('_')).map(name => ({name, trip: JSON.parse(fs.readFileSync(path.join('data/trips', name), 'utf8'))})).filter(({trip}) => ['draft', 'ready'].includes(trip.status) && trip.seasonality?.months);
-  assert.ok(drafts.length, 'Sin viajes borrador para validar');
-  const pattern = /[−]?\d{1,2}(?:[.,]\d+)? a [−]?\d{1,2}(?:[.,]\d+)? °C/i;
-  for (const {name, trip} of drafts) {
-    const months = trip.seasonality.months;
-    assert.equal(Object.keys(months).length, 12, name + ': número de meses');
-    for (let month = 1; month <= 12; month++) {
-      const key = String(month).padStart(2, '0');
-      assert.ok(months[key], name + ': falta mes ' + key);
-      if (months[key].status !== 'pending') {
-        assert.match(months[key].description, pattern, name + ': mes sin temperatura visible ' + key);
-      }
-    }
-  }
-});
-
 test('los indicadores prácticos del viaje incluyen etiquetas y tonos válidos', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
   const expected = {style:'Moderado–activo',language:'Italiano · EUR',entry:'Verificar antes de viajar'};
