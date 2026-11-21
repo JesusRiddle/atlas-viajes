@@ -16,6 +16,26 @@ function unique(items, path, errors) {
     else seen.add(item.id);
   });
 }
+function photos(trip, catalog) {
+  const errors = [];
+  if (!catalog || typeof catalog !== 'object' || Array.isArray(catalog))
+    return [problem('photos', 'Catálogo fotográfico no válido')];
+  const references = [{ key: trip?.cover, path: 'cover' }];
+  if (Array.isArray(trip?.days)) trip.days.forEach((day, i) => {
+    for (const field of ['places', 'optionalPlaces']) {
+      if (day?.[field] != null && !Array.isArray(day[field]))
+        errors.push(problem('days[' + i + '].' + field, 'Referencias fotográficas deben ser una lista'));
+      if (Array.isArray(day?.[field]))
+        day[field].forEach((key, j) => references.push({ key, path: 'days[' + i + '].' + field + '[' + j + ']' }));
+    }
+  });
+  for (const { key, path } of references) {
+    if (key == null) continue;
+    if (typeof key !== 'string' || !catalog[key] || !catalog[key].photo?.src)
+      errors.push(problem(path, 'Referencia de fotografía inexistente o sin imagen'));
+  }
+  return errors;
+}
 function validate(trip, { complete = false } = {}) {
   const errors = [];
   if (!trip || typeof trip !== 'object' || Array.isArray(trip))
@@ -114,4 +134,4 @@ function validate(trip, { complete = false } = {}) {
   });
   return errors;
 }
-module.exports = { validate, dateOK, isUrl };
+module.exports = { validate, photos, dateOK, isUrl };
