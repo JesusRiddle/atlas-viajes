@@ -24,10 +24,10 @@ test('cada obligación editorial tiene ID, sección, cobertura y descripción ú
 
 test('las nueve secciones maestras son encabezados Markdown independientes y citables', () => {
   const guide = fs.readFileSync(path.join(__dirname, '..', 'docs/trip-editorial-guide.md'), 'utf8');
-  const headings = guide.split('\n').filter(line => /^### [1-9]\\. /.test(line));
+  const headings = guide.split('\n').filter(line => /^### [1-9][.] /.test(line));
   assert.equal(headings.length, 9, 'La guía debe declarar nueve apartados de nivel 3');
-  headings.forEach((heading, index) => assert.match(heading, new RegExp('^### ' + (index + 1) + '\\\\. ')));
-  assert.ok(!guide.includes('\\\\n\\\\n'), 'No dejar saltos de párrafo escapados literalmente');
+  headings.forEach((heading, index) => assert.ok(heading.startsWith('### ' + (index + 1) + '. ')));
+  assert.ok(!guide.includes(String.raw`\n\n`), 'No dejar saltos de párrafo escapados literalmente');
   for (const rule of rules) {
     assert.ok(rule.source?.file && rule.source?.heading, rule.id + ': falta fuente normativa');
     const filename = path.join(__dirname, '..', rule.source.file);
