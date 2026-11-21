@@ -161,8 +161,19 @@ const assert = require('node:assert/strict');
         links.map(link => link.getAttribute('href').replace('#viaje/', '')));
       assert.ok(comparedIds.length > 0, 'La comparativa tiene viajes listos para comparar');
       assert.equal(new Set(comparedIds).size, comparedIds.length, 'No hay viajes duplicados en la comparativa');
-      assert.deepEqual(comparedIds, chronologicalIds.filter(id => comparedIds.includes(id)),
-        'Solo aparecen viajes principales, sin duplicados y en orden cronológico');
+      // La tabla debe contener TODOS los viajes principales elegibles, no un subconjunto.
+      // Calcular elegibilidad con los módulos reales que usa la aplicación.
+      const eligibleIds = await page.evaluate(async () => {
+        const { trips } = await window.ATLAS_READY;
+        const format = window.AtlasFormat({ trips });
+        const ready = trip => format.canRenderFullTrip(trip) || (trip.start && trip.end &&
+          trip.routeCities?.length && Number.isFinite(window.AtlasBudget?.planningEstimate?.(trip)?.low));
+        return trips.filter(trip => trip.homeGroup !== 'ideas' && ready(trip))
+          .sort((a, b) => (a.start || '9999-12-31').localeCompare(b.start || '9999-12-31'))
+          .map(trip => trip.id);
+      });
+      assert.deepEqual(comparedIds, eligibleIds,
+        'La comparativa contiene todos y solo los viajes principales elegibles en orden cronológico');
       const comparisonHeaders = await page.locator('#comparar .comparison-table thead th').allInnerTexts();
       assert.ok(comparisonHeaders.includes('Personas'), 'La comparación debe incluir la columna Personas');
       assert.ok(!comparisonHeaders.includes('Viajando solo'), 'No mostrar el valor booleano de viajando solo');
