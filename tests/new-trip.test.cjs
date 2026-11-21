@@ -54,6 +54,10 @@ test('crear un viaje genera JSON, bitácora y registro sin sobrescribir original
     const registry = fs.readFileSync(path.join(root, 'modules.js'), 'utf8');
     assert.match(registry, /"id": "nuevo"/);
     assert.match(registry, /"available": true/);
+    const registryContext = { window: {} };
+    vm.runInNewContext(registry, registryContext);
+    assert.deepEqual(Array.from(registryContext.window.ATLAS_MODULES, m => m.id), ['antiguo', 'nuevo'],
+      'El catálogo con viajes existentes sigue siendo JavaScript válido');
     assert.equal(run('copia', 'Copia', '--from', 'antiguo').status, 1);
     assert.equal(run('nuevo', 'Duplicado').status, 1);
     assert.equal(fs.readFileSync(tripPath('antiguo'), 'utf8'), JSON.stringify(original));
@@ -70,7 +74,12 @@ test('alta incremental conserva los datos y normaliza campos pendientes', async 
     const draft = JSON.parse(fs.readFileSync(file, 'utf8'));
     assert.deepEqual(draft,
       { id: 'viaje-prueba', name: 'Viaje de prueba', travelerCount: null, intro: null, introShort: null });
-    assert.match(fs.readFileSync(path.join(root, 'modules.js'), 'utf8'), /"available": true/);
+    const registrySource = fs.readFileSync(path.join(root, 'modules.js'), 'utf8');
+    assert.match(registrySource, /"available": true/);
+    const generatedCatalog = { window: {} };
+    vm.runInNewContext(registrySource, generatedCatalog);
+    assert.deepEqual(Array.from(generatedCatalog.window.ATLAS_MODULES, item => item.id),
+      ['viaje-prueba'], 'El primer viaje produce un catálogo ejecutable');
 
     const source = { ...draft,
       intro: 'Descripción completa de un viaje de prueba.',
