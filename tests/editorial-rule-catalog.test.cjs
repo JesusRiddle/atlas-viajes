@@ -22,6 +22,22 @@ test('cada obligación editorial tiene ID, sección, cobertura y descripción ú
     area + ': no puede quedar fuera del inventario');
 });
 
+test('las nueve secciones maestras son encabezados Markdown independientes y citables', () => {
+  const guide = fs.readFileSync(path.join(__dirname, '..', 'docs/trip-editorial-guide.md'), 'utf8');
+  const headings = guide.split('\n').filter(line => /^### [1-9]\\. /.test(line));
+  assert.equal(headings.length, 9, 'La guía debe declarar nueve apartados de nivel 3');
+  headings.forEach((heading, index) => assert.match(heading, new RegExp('^### ' + (index + 1) + '\\\\. ')));
+  assert.ok(!guide.includes('\\\\n\\\\n'), 'No dejar saltos de párrafo escapados literalmente');
+  for (const rule of rules) {
+    assert.ok(rule.source?.file && rule.source?.heading, rule.id + ': falta fuente normativa');
+    const filename = path.join(__dirname, '..', rule.source.file);
+    assert.ok(fs.existsSync(filename), rule.id + ': fuente normativa inexistente');
+    const source = fs.readFileSync(filename, 'utf8');
+    assert.ok(source.split('\n').includes(rule.source.heading),
+      rule.id + ': encabezado normativo ausente o no es independiente');
+  }
+});
+
 test('coberturas declaradas como automáticas o parciales apuntan a pruebas existentes', () => {
   for (const rule of rules) {
     if (!['automated', 'partial'].includes(rule.coverage)) {
