@@ -82,3 +82,18 @@ Implementados `scripts/editorial-contracts.cjs` (reglas puras sin dependencias d
 **Resultado:** hallazgos corregidos y **luz verde técnica para iniciar fase 3**, sin afirmar validación del pipeline completo. Estas verificaciones fueron ejecuciones aisladas del validador y análisis de sintaxis; `node --test` y Playwright en GitHub Actions quedan como controles obligatorios de la fase 4. La convención visual máxima/mínima sigue siendo **objetivo, no implementación actual**.
 
 **Límites todavía abiertos:** la correspondencia real de monedas con cada país y la certeza climática son verificaciones contextuales/humanas; la notación heredada no permite inferir mínimas nocturnas; `sections()` existe como contrato puro, pero su uso contra el DOM y los cambios de `seasonality.js` corresponden a fase 3. No considerar esto cobertura completa de las nueve secciones hasta que todos sus contratos se integren en la suite.
+
+## Fase 3 — migración de presentación y depuración (2026-11-21)
+
+**Presentación adaptada:** `components/seasonality.js` interpreta ahora dos formatos sin cambiar valores meteorológicos:
+- `Máx. 5 °C · Mín. −3 °C` se muestra como **par real máximo/mínimo** únicamente si está expresado así en la descripción;
+- `−3 a 5 °C` se muestra como **«Máximas: −3 a 5 °C»** si el texto introduce explícitamente máximas; de lo contrario aparece como **«Intervalo: −3 a 5 °C»**, sin inventar que el valor inferior es una mínima nocturna;
+- un mes `pending` muestra `—`, nunca una temperatura supuesta.
+
+Se conserva íntegra la descripción cuando el rango aparece dentro de una frase, evitando textos truncados como «Máximas diurnas orientativas: (Grindelwald)». Solo se extrae el número del texto descriptivo si aparece al inicio. No se modificaron JSON, precios, vuelos ni itinerarios.
+
+**Cobertura migrada:** `tests/editorial-contracts.test.cjs` ahora valida el HTML de Temporadas de los **nueve viajes principales**, las doce tarjetas por viaje y el significado de sus etiquetas. `tests/browser-smoke.cjs` añade una verificación genérica de temperaturas en el DOM para viajes principales, en escritorio y móvil. Se suprimieron dos casos redundantes que usaban listas fijas de seis viajes en `tests/trip-editorial.test.cjs` y `tests/loader-regression.test.cjs`. El resto de casos específicos se conserva hasta demostrar equivalencia; la fase no pretende borrar regresiones financieras o logísticas por reducir código.
+
+**Comprobación aislada de esta fase:** el código del validador, del componente y de los tests pasó revisión de sintaxis JavaScript V8. Se renderizó cada uno de los nueve viajes principales y se comprobó que las 108 tarjetas de temperaturas presentan un valor o `—` según su estado, con cero incumplimientos. Estas verificaciones no sustituyen una corrida real de `node --test` y Playwright: la validación CI final sigue prevista en la fase 4.
+
+**Limitaciones:** los intervalos climáticos sin descripción de significado continúan etiquetados «Intervalo», no «Máx./Mín.». Para convertirlos en máximas y mínimas reales hace falta un dato verificable por región y período, no una inversión automática. Todavía no existe correspondencia automatizada país-moneda; validar ISO 4217 no prueba qué divisa es local.
