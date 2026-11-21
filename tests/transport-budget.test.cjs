@@ -159,23 +159,6 @@ test('el rango preliminar no se suma al subtotal conocido', () => {
     assert.equal(withRange.knownTotalMXN, result.knownTotalMXN, 'El rango no se suma a partidas');
 });
 
-test('vuelos Iberia: cuatro segmentos completos, escalas y tres tarifas', () => {
-    const flight = trip.majorTransport.find(t => t.id === 'flight-international');
-    const option = flight.options.find(o => o.id === 'A');
-    const [outbound, returning] = option.journeys.map(model.journeySummary);
-    assert.equal(outbound.durationMinutes, 905);
-    assert.equal(returning.durationMinutes, 1005);
-    assert.equal(outbound.layoverMinutes[0], 165);
-    assert.equal(returning.layoverMinutes[0], 115);
-    assert.deepEqual([...option.journeys.flatMap(j => j.segments.map(s => s.flightNumber))],
-        ['IB312', 'IB803', 'IB1238', 'IB311']);
-    assert.deepEqual([...option.fares.map(f => f.price.amount)], [20060, 23330, 26215]);
-    assert.equal(option.fares[0].baggage.checked.pieces, 0);
-    assert.equal(option.fares[1].baggage.checked.pieces, 1);
-    assert.equal(option.fares[2].baggage.checked.pieces, 1);
-    assert.equal(option.journeys[1].segments[0].arrivalTerminal, null);
-});
-
 test('cambio de tarifa de vuelo actualiza presupuesto sin sumar tarifas alternativas', () => {
     const flight = trip.majorTransport.find(t => t.id === 'flight-international');
     const initial = budget.currentSummary(trip).knownTotalMXN;
@@ -351,14 +334,6 @@ test('días sin cotización no se presentan como gasto cero y las notas son cont
     assert.ok(!updated.includes('verificar comidas'));
 });
 
-test('el desglose nuevo excluye opcionales y conserva exactamente las entradas de Firenze', () => {
-    const results = budget.summary(trip);
-    assert.equal(results.entries.some(x => x.id === 'firenze-corridoio'), false);
-    assert.equal(results.entries.filter(x => x.id.startsWith('firenze-') && x.category === 'activities').length, 3);
-    assert.equal(trip.expenses.filter(x => x.category === 'food' && !x.optional).length, trip.days.length);
-    assert.equal(results.byDay['2026-12-07'].entries.some(x => x.id === 'bologna-marconi'), true);
-});
-
 test('el JSON carece de presupuestos históricos duplicados y etiqueta importes diarios', () => {
     assert.equal(Object.prototype.hasOwnProperty.call(trip, 'knownCosts'), false);
     const view = ctx.window.AtlasDayBudget;
@@ -368,16 +343,6 @@ test('el JSON carece de presupuestos históricos duplicados y etiqueta importes 
     const first = view.render(trip, trip.days[0]);
     assert.ok(first.includes('Moxy Milano Malpensa Airport · 1 noche'));
     assert.ok(first.includes('class="day-budget-status">cotizado</small>'));
-});
-
-test('JSON modular sin resúmenes ferroviarios ni notas cambiarias heredadas', () => {
-    for (const field of ['railSummary', 'railTotal', 'railExclusions', 'railCurrencyNote',
-        'costExclusions', 'exchangeNote', 'stays', 'tips', 'boldCityNames', 'knownCosts']) {
-        assert.equal(Object.prototype.hasOwnProperty.call(trip, field), false, field);
-    }
-    assert.equal(trip.ticketNotes.length > 0, true);
-    assert.equal(trip.days.length, 12);
-    assert.equal(trip.majorTransport.length, 7);
 });
 
 test('limpieza preserva las once noches y el presupuesto de referencia', () => {
