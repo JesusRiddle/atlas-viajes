@@ -100,6 +100,8 @@ test('fotografías: permite agregar o quitar actividades, rechaza referencias in
     foto2: { photo: { src: 'photos/foto2.jpg' } },
     opcional: { photo: { src: 'photos/opcional.jpg' } } };
   t.cover = 'foto1';
+  t.coverSlides = ['foto1', 'foto2'];
+  t.placeDescriptions = { foto1: 'Detalle turístico', foto2: 'Otra descripción turística' };
   t.days[0].places = ['foto1', 'foto2'];
   assert.deepEqual(photos(t, catalog), []);
   t.days[0].places = ['foto2']; // quitar una actividad es válido
@@ -109,6 +111,12 @@ test('fotografías: permite agregar o quitar actividades, rechaza referencias in
   t.days[0].places.pop();
   t.cover = 'inexistente';
   assert.ok(hasError(photos(t, catalog), 'cover'));
+  t.cover = 'foto1';
+  t.coverSlides = ['foto1', 'imagen-no-registrada'];
+  assert.ok(hasError(photos(t, catalog), 'coverSlides[1]'));
+  t.coverSlides = ['foto1'];
+  delete t.placeDescriptions.foto2;
+  assert.ok(hasError(photos(t, catalog), 'days[0].places[0]'));
 });
 
 test('integridad dinámica de los nueve viajes principales, sin snapshots de fechas ni importes', () => {
