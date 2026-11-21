@@ -11,8 +11,8 @@ const INDICATORS = [
 const SECTIONS = ['plan', 'mapa', 'temporadas', 'experiencias', 'reservas',
   'traslados', 'alojamientos', 'dias', 'costes'];
 const NUMBER = '[−-]?\\d{1,2}(?:[.,]\\d+)?';
-const explicitRE = new RegExp('(?<![\\p{L}\\d])Máx\\.\\s*(' + NUMBER + ')\\s*°C\\s*·\\s*Mín\\.\\s*(' + NUMBER + ')\\s*°C(?![\\d.,])', 'u');
-const legacyRE = new RegExp('(?<![\\d.,−-])(' + NUMBER + ') a (' + NUMBER + ')\\s*°C(?![\\d.,])', 'u');
+const explicitRE = new RegExp('(?<![\\p{L}\\d])Máx\\.\\s*(' + NUMBER + ')\\s*°C\\s*·\\s*Mín\\.\\s*(' + NUMBER + ')\\s*°C(?![\\d,])', 'u');
+const legacyRE = new RegExp('(?<![\\d.,−-])(' + NUMBER + ') a (' + NUMBER + ')\\s*°C(?![\\d,])', 'u');
 const value = text => Number(text.replace('−', '-').replace(',', '.'));
 const issue = (path, message) => ({ path, message });
 
