@@ -576,5 +576,247 @@ module.exports = Object.freeze([
       "file": "docs/trip-editorial-guide.md",
       "heading": "## Convenciones universales"
     }
+  },
+  {
+    "id": "CAT-03",
+    "section": "transversal",
+    "requirement": "No modificar JSON de otros viajes ni ideas históricas durante una edición aislada",
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
+    }
+  },
+  {
+    "id": "PAN-07",
+    "section": "plan",
+    "requirement": "introHighlights son nombres presentes literalmente en intro",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/trip-editorial.test.cjs",
+      "contains": "mantiene introducción turística con resaltados existentes"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 1. Panorama del viaje (`plan`)"
+    }
+  },
+  {
+    "id": "PAN-08",
+    "section": "plan",
+    "requirement": "Texto intro no incluye información de compras, precios ni reglas administrativas",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/trip-editorial.test.cjs",
+      "contains": "mantiene introducción turística con resaltados existentes"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 1. Panorama del viaje (`plan`)"
+    }
+  },
+  {
+    "id": "MAP-04",
+    "section": "mapa",
+    "requirement": "Nombre principal en negrita y calificadores sin negrita en la vista",
+    "coverage": "automated",
+    "evidence": {
+      "file": "tests/browser-smoke.cjs",
+      "contains": "mapTypography.every"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 2. Mapa (`mapa`)"
+    }
+  },
+  {
+    "id": "SEA-04",
+    "section": "temporadas",
+    "requirement": "Color de Clima y luz idéntico al estado de mes seleccionado",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/browser-smoke.cjs",
+      "contains": "overview-climate-card"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 3. Temporadas (`temporadas`)"
+    }
+  },
+  {
+    "id": "EXP-03",
+    "section": "experiencias",
+    "requirement": "Descripción de experiencias 18–35 palabras, salvo ampliaciones justificadas",
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 4. Experiencias (`experiencias`)"
+    }
+  },
+  {
+    "id": "RES-04",
+    "section": "reservas",
+    "requirement": "Título fijo Reservaciones importantes y grupos de prioridad visibles",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/browser-smoke.cjs",
+      "contains": "Reservaciones importantes"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 5. Reservaciones (`reservas`)"
+    }
+  },
+  {
+    "id": "TRA-05",
+    "section": "traslados",
+    "requirement": "Enlaces de abordaje y paradas actuales accesibles por jornada",
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 6. Traslados (`traslados`)"
+    }
+  },
+  {
+    "id": "TRA-06",
+    "section": "traslados",
+    "requirement": "Tarifa pendiente conserva null; no se inventa un costo cero",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/transport-budget.test.cjs",
+      "contains": "las cotizaciones incompletas no se interpretan como costos cero"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 6. Traslados (`traslados`)"
+    }
+  },
+  {
+    "id": "LOD-05",
+    "section": "alojamientos",
+    "requirement": "Resumen X noches, Y alojamientos con plural y fuentes dinámicas",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/browser-smoke.cjs",
+      "contains": "Tus alojamientos."
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 7. Dónde dormir (`alojamientos`)"
+    }
+  },
+  {
+    "id": "LOD-06",
+    "section": "alojamientos",
+    "requirement": "Candidato o cotizado no aparece como reservado en texto o presupuesto",
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 7. Dónde dormir (`alojamientos`)"
+    }
+  },
+  {
+    "id": "DAY-07",
+    "section": "dias",
+    "requirement": "Cada pie de fotografía vigente contiene 15–30 palabras concretas",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/loader-regression.test.cjs",
+      "contains": "Suiza nevada: contratos editoriales"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
+    }
+  },
+  {
+    "id": "DAY-08",
+    "section": "dias",
+    "requirement": "Fotos externas directas HTTPS y autor/licencia según procedencia",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/loader-regression.test.cjs",
+      "contains": "Suiza Verde: fotografías estivales"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
+    }
+  },
+  {
+    "id": "DAY-09",
+    "section": "dias",
+    "requirement": "Días parciales se renderizan sin bloquear todo el itinerario",
+    "coverage": "automated",
+    "evidence": {
+      "file": "tests/loader-regression.test.cjs",
+      "contains": "un viaje mínimo comparte encabezado"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 8. Día por día (`dias`)"
+    }
+  },
+  {
+    "id": "BUD-07",
+    "section": "costes",
+    "requirement": "Portada y Panorama usan proyección dinámica del ledger actual",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/format-budget-contract.test.cjs",
+      "contains": "structured expenses remain eligible"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
+    }
+  },
+  {
+    "id": "BUD-08",
+    "section": "costes",
+    "requirement": "Tipo de cambio tiene fecha, fuente y no simula cotización vigente",
+    "coverage": "missing",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
+    }
+  },
+  {
+    "id": "BUD-09",
+    "section": "costes",
+    "requirement": "MXN realmente pagados prevalecen sobre conversión estimada",
+    "coverage": "automated",
+    "evidence": {
+      "file": "tests/transport-budget.test.cjs",
+      "contains": "pesos pagados prevalecen"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "### 9. Presupuesto (`costes`)"
+    }
+  },
+  {
+    "id": "UI-03",
+    "section": "transversal",
+    "requirement": "Fotografías nítidas, a color y pertinentes al lugar real",
+    "coverage": "manual",
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
+    }
+  },
+  {
+    "id": "UI-04",
+    "section": "transversal",
+    "requirement": "Layout móvil evita desbordamiento y controla movimiento reducido",
+    "coverage": "automated",
+    "evidence": {
+      "file": "tests/browser-smoke.cjs",
+      "contains": "Reducir movimiento debe desactivar animación"
+    },
+    "source": {
+      "file": "docs/trip-editorial-guide.md",
+      "heading": "## Convenciones universales"
+    }
   }
 ]);
