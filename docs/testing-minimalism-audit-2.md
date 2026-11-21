@@ -83,3 +83,7 @@ Se mantiene un único ejecutable `tests/browser-smoke.cjs` para no duplicar inic
 Se eliminaron del smoke predeterminado dos expectativas de Orlando (fechas y días laborales concretos) y el importe exacto de su portada; todas siguen bajo la opción editorial. Se reemplazó el número fijo de 14 días de Italia por `tripById.get('italia-norte-2027').days.length` en la navegación y el expandir/colapsar, conservando la prueba de interacción real.
 
 **Advertencia de riesgo**: la profundidad de la auditoría no se ejecuta en cada PR y puede quedar desfasada mientras evolucionan los viajes. Antes de publicar una revisión importante de un itinerario debe ejecutarse con `ATLAS_EDITORIAL_AUDIT=1`; en fase D se evaluará formalizar esta ejecución como job manual o bajo demanda. Esta fase reduce el coste de CI, **no reduce todavía en forma significativa el número de líneas del archivo** porque se optó por preservar los escenarios documentales en vez de eliminarlos.
+
+### Puerta de validación de fase C
+
+La validación requerida es la ejecución de `Atlas checks` contra el commit actual: sintaxis, JSON, `node --test` y smoke de Chromium en ambos tamaños. El modo editorial optativo se ejecutará en las auditorías de contenido y no constituye el requisito bloqueante para cada PR de código.
