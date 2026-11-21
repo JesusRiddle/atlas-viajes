@@ -83,9 +83,15 @@ function indicators(items, { complete = false, path = 'practicalIndicators' } = 
     }
   });
   const language = items.find(item => item?.id === 'language');
-  if (language && (typeof language.badge !== 'string' ||
-      !/^[^·;,]+ · [A-Z]{3}(?:[;,] [^·;,]+ · [A-Z]{3})*$/.test(language.badge)))
-    errors.push(issue(path + '.language.badge', 'Debe indicar idioma y moneda ISO 4217'));
+  if (language) {
+    const badge = language.badge;
+    const formatValid = typeof badge === 'string' &&
+      /^[^·;,]+ · [A-Z]{3}(?:[;,] [^·;,]+ · [A-Z]{3})*$/.test(badge);
+    const codes = formatValid ? [...badge.matchAll(/ · ([A-Z]{3})(?=[;,]|$)/g)].map(m => m[1]) : [];
+    const knownCodes = new Set(Intl.supportedValuesOf('currency'));
+    if (!formatValid || codes.length === 0 || codes.some(code => !knownCodes.has(code)))
+      errors.push(issue(path + '.language.badge', 'Debe indicar idioma y moneda ISO 4217 válida'));
+  }
   return errors;
 }
 
