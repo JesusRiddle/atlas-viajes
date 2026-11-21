@@ -19,7 +19,7 @@ const issue = (path, message) => ({ path, message });
 function temperature(text, { allowLegacy = true } = {}) {
   if (typeof text !== 'string') return { kind: 'missing' };
   // Una notación Máx./Mín. incompleta no puede validarse como intervalo heredado.
-  if (/Máx\\.|Mín\\./u.test(text) && !explicitRE.test(text))
+  if (/Máx\.|Mín\./u.test(text) && !explicitRE.test(text))
     return { kind: 'invalid', errors: ['Par máximo/mínimo incompleto o malformado'] };
   const explicit = text.match(explicitRE);
   if (explicit) {
