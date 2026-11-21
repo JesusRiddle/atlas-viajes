@@ -42,3 +42,24 @@ Separar los checks bloqueantes de lógica/renderizado de la auditoría documenta
 - No interpretar la eliminación de líneas o aserciones como mejor calidad sin sustituir cobertura importante.
 - No modificar rutas, alojamientos, fotos, reservas ni importes reales de viajes.
 - La rama de esta ronda parte del PR #21, que todavía no está fusionado a `main`. Su PR debe apuntar a esa rama hasta que #21 sea integrado, para evitar presentar de nuevo sus cambios como propios.
+
+## Fase B — revisión de equivalencia y primer recorte seguro (2026-11-21)
+
+### Cobertura concreta retirada
+
+Se eliminó el caso `manual y agente establecen el flujo 00–13 y las cuatro auditorías` de `tests/trip-editorial.test.cjs` (un `test()`, 18 líneas de cuerpo, cuatro llamadas estáticas a `assert` con bucles).
+
+Su contenido estaba duplicado por:
+- `tests/trip-production-workflow.test.cjs`: comprueba 14 etapas consecutivas de 00 a 13, las auditorías A/B/C/D, su posición y el orden de elaboración;
+- en el mismo archivo, verifica que AGENTS, guía editorial, README y checklist referencian la plantilla del progreso y comparten las etapas;
+- `tests/trip-editorial.test.cjs`, primer caso, sigue verificando la existencia de las nueve secciones, el enlace a la guía editorial y `introHighlights`.
+
+**No se eliminó** ningún caso de Colombia o Patagonia: verifican coherencia particular de las fechas, referencias a hoteles, vuelos, importes y fotos, y no existe todavía un reemplazo genérico probado que detecte esos mismos errores. Tampoco se borraron snapshots sin un criterio explícito de aceptación.
+
+### Estado y validación
+
+Los dos archivos modificados en esta ronda se comprobaron mediante parser JavaScript V8 y los contratos numéricos sintéticos de presupuesto produjeron los valores esperados al invocar los módulos correspondientes. Esto **no equivale** a ejecutar `node --test` ni Playwright completos sobre la rama. El PR #22 está basado en #21, cuyo workflow solo se dispara automáticamente en PR dirigidos a `main`; hace falta validación CI real del conjunto antes de fusionar.
+
+### Siguientes pasos
+
+La fase C debe recortar el smoke para que solo valide comportamiento visual y navegación; requiere primero medir y preservar los casos de error runtime, layout y móvil. No mover auditorías editoriales sin ejecutar comparaciones antes/después de los tests.
