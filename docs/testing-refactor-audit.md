@@ -144,9 +144,24 @@ Fecha: 2026-11-21. Revisión de los archivos modificados y de las aserciones que
 ### Validación realmente realizada
 
 - Parser JavaScript V8: `tests/new-trip.test.cjs`, `tests/browser-smoke.cjs`, `tests/trip-production-workflow.test.cjs` y `scripts/new-trip.cjs` (quitando el shebang para la comprobación mediante `new Function`) sin errores sintácticos.
-- Reproducción con Node 22 de la lógica de inserción del generador, en catálogo vacío y con un elemento: los dos resultados se ejecutaron sin error mediante `vm.runInNewContext` y conservaron los IDs esperados. **Es una reproducción acotada, no la ejecución integral de los tests del repositorio.**
-- No fue posible clonar GitHub desde el runtime de validación por error de resolución DNS. Tampoco se abrió anticipadamente un PR para no incumplir el acuerdo de un PR final. Por ello, **no se ha verificado todavía el resultado de `node --test`, el smoke real de Playwright, ni el estado verde en GitHub Actions para esta rama.**
+- Se añadieron pruebas de ejecución del catálogo generado, vacío y con entradas previas, para detectar errores de sintaxis al registrar viajes. La validación integral se realizó posteriormente mediante GitHub Actions.
+- Antes de abrir el PR final no era posible clonar GitHub desde el entorno local por un error de DNS. Posteriormente se abrió el PR #21 y se ejecutó la suite real en GitHub Actions.
 
 ### Decisión
 
 **Apta para entrar a la fase 4 (validación integral), no apta para merge.** No avanzar al merge sin corregir los fallos que revele CI. Se recomienda que la fase 4 ejecute la suite real, verifique regresiones en escritorio/móvil, cierre el conflicto de expectativas con el PR #20 y deje un PR final revisable.
+
+## Fase 4 — validación e integración final (2026-11-21)
+
+- Se abrió el [PR #21](https://github.com/JesusRiddle/atlas-viajes/pull/21) como único PR de la refactorización.
+- La ejecución [44935303568](https://github.com/JesusRiddle/atlas-viajes/actions/runs/44935303568) detectó otro número fijo en la prueba de alta incremental: esperaba 9 tarjetas cuando el catálogo contiene 9 viajes principales más el fixture.
+- Se cambió esa expectativa a `primaryModules.length + 1` y el número de ideas a `ideaModules.length`.
+- La ejecución [44935439613](https://github.com/JesusRiddle/atlas-viajes/actions/runs/44935439613) terminó **con éxito**, incluyendo sintaxis JS, JSON, tests Node y Playwright en los dos viewports (1440 × 900 y 390 × 844).
+- Se actualizaron las acciones de GitHub `checkout@v4` y `setup-node@v4` a `@v5` para evitar la dependencia del runtime Node 20 descontinuado. Se requiere una ejecución verde adicional sobre ese último commit.
+- El PR #20 contiene una corrección parcial y superpuesta de la portada; **no debe fusionarse por separado** si se integra el PR #21.
+
+### Resultado y límite de alcance
+
+Se conserva el comportamiento del Atlas y no se modificaron archivos de itinerarios. La consolidación redujo un archivo de pruebas y agrupó la creación de viajes. Las validaciones principales de catálogo y comparativa ya no dependen de un conteo fijo, aunque **aún existen snapshots específicos de viajes** en `browser-smoke.cjs`, `loader-regression.test.cjs` y otros tests. Una eliminación masiva de esas aserciones sin cobertura sustituta no sería segura; queda como mejora posterior, separada de este PR.
+
+**Criterio de cierre:** mantener el PR en borrador si los últimos checks aún no pasan. Cuando GitHub Actions confirme verde sobre el commit final, marcar el PR listo para revisión, cerrar el PR #20 como supersedido y no hacer merge automático.
