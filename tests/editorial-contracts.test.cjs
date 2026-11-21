@@ -82,6 +82,25 @@ test('nueve secciones maestras en el orden establecido', () => {
   assert.ok(rules.sections([...rules.SECTIONS].reverse()).length);
 });
 
+test('Temporadas presenta rangos sin atribuir mínimas nocturnas inexistentes', () => {
+  const window = {};
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../components/seasonality.js'), 'utf8'), { window });
+  const data = pending();
+  data.months['01'] = { status: 'recommended', description: 'Máximas diurnas orientativas: −3 a 5 °C entre regiones.' };
+  data.months['02'] = { status: 'conditional', description: '5 a 12 °C. Temperaturas variables.' };
+  data.months['03'] = { status: 'recommended', description: 'Máx. 5 °C · Mín. −3 °C. Días fríos.' };
+  const html = window.AtlasSeasonality({ esc: String }).seasonality({ seasonality: data });
+  const displayed = [...html.matchAll(/class="season-temperature">([^<]+)</g)].map(m => m[1]);
+  assert.equal(displayed.length, 12);
+  assert.deepEqual(displayed.slice(0, 4), [
+    'Máximas: −3 a 5 °C', 'Intervalo: 5 a 12 °C',
+    'Máx. 5 °C · Mín. −3 °C', '—'
+  ]);
+  assert.ok(!displayed[0].includes('Mín.'), 'No inventar mínimas nocturnas');
+  assert.match(html, /Temperaturas variables/);
+  assert.match(html, /Días fríos/);
+});
+
 test('contratos se aplican a los nueve viajes principales sin exigir datos de ideas históricas', () => {
   const window = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../modules.js'), 'utf8'), { window });
