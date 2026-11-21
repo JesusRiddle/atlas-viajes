@@ -6,7 +6,14 @@ const assert = require('node:assert/strict');
 (async () => {
   const browser = await chromium.launch({ headless: true });
   const catalog = fs.readFileSync('modules.js', 'utf8');
-  const allDestinations = [...catalog.matchAll(/"id": "([a-z0-9-]+)"/g)].map(match => match[1]);
+  const modules = [...catalog.matchAll(/\{[^{}]*\}/g)].map(match => JSON.parse(match[0]));
+  const allDestinations = modules.map(item => item.id);
+  const featuredModules = modules.filter(item => item.available && item.homeGroup !== 'ideas');
+  const ideaModules = modules.filter(item => item.available && item.homeGroup === 'ideas');
+  const featuredIds = featuredModules.map(item => ({
+    id: item.id,
+    start: JSON.parse(fs.readFileSync('data/trips/' + item.file, 'utf8')).start || '9999-12-31'
+  })).sort((a, b) => a.start.localeCompare(b.start)).map(item => '#viaje/' + item.id);
   // Incluye también el viaje nuevo: no depender únicamente de la validación de su JSON.
   const destinations = allDestinations;
   assert.ok(allDestinations.includes("patagonia-argentina-2027"), "Patagonia 2027 debe figurar en el catálogo");
@@ -104,12 +111,12 @@ const assert = require('node:assert/strict');
       // Los viajes actuales forman la portada; los históricos siguen en el archivo de ideas.
       const featuredCards = page.locator('#viajes .tripcard');
       const ideaCards = page.locator('#ideas-viajes .idea-tripcard');
-      assert.equal(await featuredCards.count(), 8, 'La portada muestra Orlando 2026 y los siete viajes principales anteriores');
+      assert.equal(await featuredCards.count(), featuredModules.length, 'La portada muestra todos los viajes principales del catálogo');
       const orlandoHomeCard = page.locator('#viajes .tripcard[href="#viaje/orlando-2026"]');
       assert.equal(await orlandoHomeCard.count(), 1, 'Orlando: portada presente');
       const workDayBadges = featuredCards.locator('.cardfacts span');
-      assert.equal(await workDayBadges.count(), 8,
-        'Los ocho viajes principales tienen días laborales calculados o declarados; Suiza Verde incluye 10');
+      assert.equal(await workDayBadges.count(), featuredModules.length,
+        'Todos los viajes principales tienen días laborales calculados o declarados');
       const workingDayTexts = await workDayBadges.allInnerTexts();
       assert.ok(workingDayTexts.every(value => /^\d+ días laborales$/.test(value)),
         'Portada: escribir siempre X días laborales');
@@ -146,7 +153,7 @@ const assert = require('node:assert/strict');
         'Orlando: mostrar rango preliminar $39,000–$44,000 MXN en portada');
       assert.match(await orlandoHomeCard.locator('.card-price small').innerText(), /Presupuesto estimado por persona/,
         'Orlando: rango preliminar etiquetado, no presentado como compra');
-      assert.equal(await ideaCards.count(), allDestinations.length - 8, 'Todos los viajes históricos deben permanecer accesibles');
+      assert.equal(await ideaCards.count(), ideaModules.length, 'Todos los viajes históricos deben permanecer accesibles');
       assert.equal(await page.locator('#ideas-viajes-title').innerText(), 'Ideas generales de viajes.');
       assert.equal(await page.locator('#comparar .comparison-table tbody tr').count(), 7,
         'La comparativa no debe confundir ideas históricas con viajes terminados');
@@ -157,10 +164,7 @@ const assert = require('node:assert/strict');
         rows.map(row => row.cells[5].textContent.trim()));
       assert.deepEqual(people, ['1', '1', '1', '1', '1', '1', '2'], 'La comparativa incluye seis viajes individuales y Patagonia para dos');
       const topIds = await featuredCards.evaluateAll(cards => cards.map(card => card.getAttribute('href')));
-      assert.deepEqual(topIds, [
-        '#viaje/orlando-2026', '#viaje/colombia-2027', '#viaje/suiza-nevada-2027', '#viaje/italia-norte-2027', '#viaje/espana-portugal-2027',
-        '#viaje/suiza-verde-2027', '#viaje/japon-2027', '#viaje/patagonia-argentina-2027'
-      ]);
+      assert.deepEqual(topIds, featuredIds, 'Portada: todos los viajes principales en orden cronológico');
       assert.ok(!(await page.locator('#ideas-viajes').innerText()).includes('Presupuesto estimado por persona'),
         'El archivo no debe mostrar precios históricos como vigentes');
       const patagoniaCard = page.locator('.tripcard[href="#viaje/patagonia-argentina-2027"]');
