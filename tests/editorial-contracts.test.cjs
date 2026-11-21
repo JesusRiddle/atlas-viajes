@@ -97,6 +97,8 @@ test('Temporadas presenta rangos sin atribuir mínimas nocturnas inexistentes', 
     'Máx. 5 °C · Mín. −3 °C', '—'
   ]);
   assert.ok(!displayed[0].includes('Mín.'), 'No inventar mínimas nocturnas');
+  assert.match(html, /Máximas diurnas orientativas: −3 a 5 °C entre regiones\./,
+    'El texto original conserva la explicación geográfica');
   assert.match(html, /Temperaturas variables/);
   assert.match(html, /Días fríos/);
 });
