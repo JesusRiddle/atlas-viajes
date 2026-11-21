@@ -9,7 +9,7 @@ const vm = require('node:vm');
 
 // Un único arnés de integración para el generador: los escenarios se aíslan
 // en directorios temporales y nunca modifican los viajes del repositorio.
-function withSandbox(runScenario) {
+async function withSandbox(runScenario) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'atlas-new-trip-'));
   try {
     fs.mkdirSync(path.join(root, 'scripts'));
@@ -26,14 +26,14 @@ function withSandbox(runScenario) {
       process.execPath, [path.join(root, 'scripts', 'new-trip.cjs'), ...args],
       { cwd: root, encoding: 'utf8' }
     );
-    return runScenario({ root, run, tripPath: id => path.join(root, 'data', 'trips', id + '.json') });
+    return await runScenario({ root, run, tripPath: id => path.join(root, 'data', 'trips', id + '.json') });
   } finally {
     fs.rmSync(root, { recursive: true, force: true });
   }
 }
 
 test('crear un viaje genera JSON, bitácora y registro sin sobrescribir originales', () => {
-  withSandbox(({ root, run, tripPath }) => {
+  return withSandbox(({ root, run, tripPath }) => {
     const original = { id: 'antiguo', name: 'Viejo', routeCities: ['Roma'],
       experiences: ['Visita'], start: '2026-10-01', costs: [['Hotel', 100, 200]] };
     fs.writeFileSync(tripPath('antiguo'), JSON.stringify(original));
