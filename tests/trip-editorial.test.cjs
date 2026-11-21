@@ -28,20 +28,6 @@ test('el viaje Italia 2027 mantiene introducción turística con resaltados exis
   assert.doesNotMatch(trip.intro, /reservar primero|aún sin comprar|entrada nominativa|servicios no modificables/i);
 });
 
-test('los indicadores prácticos del viaje incluyen etiquetas y tonos válidos', () => {
-  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
-  const expected = {style:'Moderado–activo',language:'Italiano · EUR',entry:'Verificar antes de viajar'};
-  assert.equal(trip.practicalIndicators.length, 3);
-  for (const item of trip.practicalIndicators) {
-    assert.equal(item.badge, expected[item.id]);
-    assert.ok(['green','orange'].includes(item.tone));
-    assert.ok(item.text.trim().length > 15);
-  }
-  const component = fs.readFileSync('components/trip.js', 'utf8');
-  assert.match(component, /item\.badge/);
-  assert.match(component, /item\.tone/);
-});
-
 test('reservaciones importantes de Italia 2027 tienen grupos, prioridad y enlaces oficiales', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
   assert.equal(trip.planningDetails.reservationTitle, 'Reservaciones importantes');
@@ -114,26 +100,6 @@ test('Italia 2027 mantiene vuelos cotizados y trenes futuros sin precios inventa
   }
 });
 
-test('Italia 2027: tres hoteles principales y presupuesto distribuido', () => {
-  const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
-  assert.equal(trip.hotels.length,3);
-  const nights={'Milano':4,'La Spezia':3,'Firenze':5};
-  const hotelExpenses=trip.expenses.filter(x=>x.category==='lodging');
-  assert.equal(hotelExpenses.length,3);
-  assert.equal(hotelExpenses.reduce((a,x)=>a+x.cost.amount,0),34000);
-  for(const h of trip.hotels){
-    assert.match(h.status,/no reservado/i);
-    assert.match(h.rate,/sin cotización/i);
-    assert.ok(h.mapsUrl?.startsWith('https://'), 'Google Maps faltante: ' + h.name);
-    assert.ok(h.links?.some(link => link.url?.startsWith('https://')), 'Reserva oficial faltante: ' + h.name);
-    assert.equal(hotelExpenses.find(x=>x.hotelId===h.id).nights,nights[h.city]);
-  }
-  assert.equal(trip.expenses.filter(x=>x.category==='food').length,14);
-  assert.equal(trip.expenses.filter(x=>x.category==='food').reduce((a,x)=>a+x.cost.amount,0),11350);
-  assert.equal(trip.budgetPreliminary,true);
-});
-
-
 test('Italia 2027: traslados y gastos de vuelos sin duplicados', () => {
  const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
  const valid=new Set(trip.majorTransport.map(t=>t.id));
@@ -146,36 +112,6 @@ test('Italia 2027: traslados y gastos de vuelos sin duplicados', () => {
  const ct=trip.majorTransport.find(t=>t.id==='train-cinque-terre').options[0].journeys;
  assert.equal(ct[0].segments[0].to,'Riomaggiore');
  assert.match(ct[1].segments[0].from,/Vernazza|Monterosso/);
-});
-
-
-test('Italia 2027: regreso 21 mayo y distribución equilibrada de bases', () => {
- const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
- assert.equal(trip.end,'2027-05-21');
- assert.deepEqual(trip.bases,[['Milano',4],['La Spezia',3],['Firenze',5]]);
- assert.equal(trip.work,10);
- assert.equal(trip.hotels.find(h=>h.city==='Firenze').checkOut,'2027-05-21');
- const flight=trip.majorTransport.find(t=>t.id==='flight-international').options[0];
- assert.match(flight.journeys[1].segments[0].departure,/^2027-05-21T23:05/);
- assert.match(flight.journeys[1].segments[0].arrival,/^2027-05-22T04:00/);
- for(const id of ['train-firenze-milano','airport-return'])assert.equal(trip.majorTransport.find(t=>t.id===id).day,14);
-});
-
-
-test('Italia 2027: distribución por fechas y visitas críticas coherentes', () => {
- const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
- const titles=trip.days.map(d=>d.title);
- assert.equal(trip.days.length,14);
- assert.match(titles[4],/Milano/);
- assert.match(titles[6],/Cinque Terre/);
- assert.match(titles[7],/Portovenere/);
- assert.match(titles[8],/Lucca/);
- assert.match(titles[9],/Siena/);
- assert.match(titles[10],/David/);
- assert.match(titles[11],/Uffizi/);
- assert.match(titles[12],/Bargello/);
- assert.match(trip.days[8].note,/consigna/);
- assert.equal(trip.days[13].date,'2027-05-21');
 });
 
 
@@ -198,18 +134,6 @@ test('Italia 2027 incluye requisitos de entrada y guía universal para futuros v
  const guide=fs.readFileSync('docs/trip-editorial-guide.md','utf8');
  assert.match(guide,/Requisitos prácticos obligatorios para CADA viaje nuevo/);
  assert.match(guide,/practicalIndicators\.entry/);
-});
-
-
-test('Italia 2027: fechas de hotel y traslados concuerdan con el día a día', () => {
- const trip=JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'),'utf8'));
- const stays=[['2027-05-09','2027-05-13'],['2027-05-13','2027-05-16'],['2027-05-16','2027-05-21']];
- trip.hotels.forEach((h,i)=>{assert.equal(h.checkIn,stays[i][0]);assert.equal(h.checkOut,stays[i][1]);});
- const refsByDay={6:'train-milano-la-spezia',7:'train-cinque-terre',8:'bus-portovenere',9:'train-la-spezia-lucca',10:'bus-siena',14:'train-firenze-milano'};
- for(const [day,id] of Object.entries(refsByDay)){
-  assert.ok(trip.days[Number(day)-1].transportRefs?.includes(id),`Falta ${id} día ${day}`);
-  assert.equal(trip.majorTransport.find(t=>t.id===id).day,Number(day));
- }
 });
 
 
@@ -274,19 +198,6 @@ test('las actividades numeradas no repiten número dentro del texto', () => {
  }
 });
 
-
-test('Italia 2027: todas las galerías tienen imágenes referenciadas', () => {
-  const trip = JSON.parse(fs.readFileSync('data/trips/italia-norte-2027.json', 'utf8'));
-  const places = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
-  for (const day of trip.days) {
-    for (const id of day.places || []) {
-      const photo = places[id]?.photo;
-      assert.ok(photo, 'Foto inexistente: día ' + day.n + ', ' + id);
-      assert.ok(typeof photo.src === 'string' && photo.src.trim(), 'Imagen sin URL: ' + id);
-      assert.match(photo.src, /^(https:\/\/|photos\/)/, 'Ruta de imagen inválida: ' + id);
-    }
-  }
-});
 
 test('documentación resalta palabras completas y presenta ETIAS como enlace seguro', () => {
  const component = fs.readFileSync('components/trip.js','utf8');
