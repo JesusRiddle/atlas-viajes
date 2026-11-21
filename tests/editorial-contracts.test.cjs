@@ -71,6 +71,8 @@ test('indicadores de Panorama: orden, moneda ISO y borrador incremental', () => 
 
 test('un nuevo viaje parcial no exige secciones ya completadas', () => {
   assert.deepEqual(rules.trip({ id: 'nuevo-viaje', name: 'Borrador' }), []);
+  assert.ok(rules.trip({ id: 'nuevo-viaje', practicalIndicators: '' }).length > 0,
+    'Una colección incorrecta no debe tratarse como pendiente');
   assert.ok(rules.trip({ id: 'nuevo-viaje', name: 'Borrador' }, { complete: true }).length > 0);
 });
 
