@@ -1,85 +1,100 @@
-# Matriz única de obligaciones editoriales · Atlas
+# Matriz de trazabilidad editorial del Atlas · ciclo de cierre
 
-Fecha: 2026-11-21 · PR #23, rama `refactor/editorial-universal-contracts`.
+Fecha: 2026-11-21 · Rama `refactor/editorial-universal-contracts` · PR #23.
 
-## Alcance y significado
+## Qué mide y qué NO mide
 
-Este inventario inicial agrupa **45 obligaciones explícitas** reconocidas en la guía. No constituye todavía un inventario exhaustivo de todas sus frases y casos condicionales. La fuente ejecutable de estas filas es `scripts/editorial-rule-catalog.cjs`, y `tests/editorial-rule-catalog.test.cjs` comprueba unicidad, secciones, fuentes y existencia de pruebas declaradas. **Existencia de un test NO demuestra que ese contrato ya cubra todos los casos límite.**
+Se inventariaron **64 obligaciones** procedentes de las nueve secciones de la guía maestra y de sus requisitos transversales, enlazadas a su capítulo rector. Este documento acompaña al catálogo ejecutable `scripts/editorial-rule-catalog.cjs`; la suite `tests/editorial-rule-catalog.test.cjs` protege identidad, existencia de fuentes, nueve encabezados reales y evidencia de los checks declarados. **No se trata de una demostración de que cada frase normativa esté ya automatizada**, ni de una calificación porcentual de calidad.
 
-- **Automatizada:** hay una comprobación concreta en el CI, pero puede ser incompleta para el escenario integral.
-- **Parcial:** hay evidencia de prueba de una parte, faltan condiciones o mutaciones.
-- **Sin contrato:** no hay prueba confiable para la regla; debe implementarse.
-- **Verificación humana/externa:** depende de datos actuales o juicio editorial, no se puede declarar automáticamente aprobada con JSON local.
+- `automated`: existe evidencia de comprobación en el CI; aun así pueden faltar casos límite.
+- `partial`: solo una parte del contrato está cubierta.
+- `missing`: el contrato automatizable no tiene una prueba fiable.
+- `manual`: exige investigación actual o juicio editorial; no debe presentarse como aprobación automática.
 
-Conteo del inventario: **45 reglas**, **13 automatizadas con evidencia**, **18 parciales**, **7 sin contrato**, **7 humanas/externas**. Estos números describen estado de implementación, **no porcentaje certificado de cumplimiento editorial**.
+**Estado medido:** 17 con evidencia automatizada, 27 parciales, 12 sin prueba y 8 humanas/externas. Se completará esta lista cuando se encuentren nuevas obligaciones normativas; no fijar porcentajes de calidad a partir de estos recuentos.
 
-## Inventario por sección
+## Inventario
 
-| ID | Área | Contrato | Estado | Evidencia |
+| Identificador | Área | Obligación | Cobertura | Evidencia |
 |---|---|---|---|---|
-| `CAT-01` | transversal | IDs del catálogo únicos y viajes visibles | Automatizada (evidencia en CI) | `tests/browser-smoke.cjs` |
-| `CAT-02` | transversal | Los viajes son independientes y no se bloquean por coincidencias de fecha | Sin contrato | — |
-| `LIF-01` | transversal | Un viaje mínimo admite datos pendientes sin fabricarlos | Automatizada (evidencia en CI) | `tests/loader-regression.test.cjs` |
-| `LIF-02` | transversal | Distinguir formalmente etapas incremental y editorialmente completo | Sin contrato | — |
-| `NAV-01` | transversal | Nueve secciones y anclas en orden | Automatizada (evidencia en CI) | `tests/editorial-contracts.test.cjs` |
+| `CAT-01` | transversal | IDs del catálogo únicos y viajes visibles | Automatizada (con evidencia) | `tests/browser-smoke.cjs` |
+| `CAT-02` | transversal | Los viajes son independientes y no se bloquean por coincidencias de fecha | Sin prueba | — |
+| `LIF-01` | transversal | Un viaje mínimo admite datos pendientes sin fabricarlos | Automatizada (con evidencia) | `tests/loader-regression.test.cjs` |
+| `LIF-02` | transversal | Distinguir formalmente etapas incremental y editorialmente completo | Sin prueba | — |
+| `NAV-01` | transversal | Nueve secciones y anclas en orden | Automatizada (con evidencia) | `tests/editorial-contracts.test.cjs` |
 | `NAV-02` | transversal | Estilos y etiquetas visibles en español sin terminología prohibida | Parcial | `tests/browser-smoke.cjs` |
-| `PAN-01` | plan | Tres indicadores Panorama con títulos y orden estables | Automatizada (evidencia en CI) | `tests/editorial-contracts.test.cjs` |
+| `PAN-01` | plan | Tres indicadores Panorama con títulos y orden estables | Automatizada (con evidencia) | `tests/editorial-contracts.test.cjs` |
 | `PAN-02` | plan | Tarjeta independiente Clima y luz con tres párrafos y tono correcto | Parcial | `tests/browser-smoke.cjs` |
 | `PAN-03` | plan | Intro e introShort de longitud editorial; resaltados literales | Parcial | `tests/trip-editorial.test.cjs` |
-| `PAN-04` | plan | Idioma con moneda ISO reconocida | Automatizada (evidencia en CI) | `tests/editorial-contracts.test.cjs` |
-| `PAN-05` | plan | Correspondencia idioma, divisa y país del recorrido | Sin contrato | — |
-| `PAN-06` | plan | Requisitos migratorios, enchufes y voltaje verificados por país y fechas | Verificación humana/externa | — |
-| `MAP-01` | mapa | Coordenadas dentro del rango geográfico y no ficticias | Sin contrato | — |
+| `PAN-04` | plan | Idioma con moneda ISO reconocida | Automatizada (con evidencia) | `tests/editorial-contracts.test.cjs` |
+| `PAN-05` | plan | Correspondencia idioma, divisa y país del recorrido | Sin prueba | — |
+| `PAN-06` | plan | Requisitos migratorios, enchufes y voltaje verificados por país y fechas | Externa / humana | — |
+| `MAP-01` | mapa | Coordenadas dentro del rango geográfico y no ficticias | Sin prueba | — |
 | `MAP-02` | mapa | Puntos de alojamiento vinculados a noches y etiquetas correctas | Parcial | `tests/map-stay-labels.test.cjs` |
 | `MAP-03` | mapa | Puntos y orden del mapa sincronizados con itinerario vigente | Parcial | `tests/browser-smoke.cjs` |
-| `SEA-01` | temporadas | Doce meses con estado válido y pendientes explícitos | Automatizada (evidencia en CI) | `tests/editorial-contracts.test.cjs` |
-| `SEA-02` | temporadas | Temperaturas con semántica verificada y máxima/mínima sin invertir | Automatizada (evidencia en CI) | `tests/editorial-contracts.test.cjs` |
-| `SEA-03` | temporadas | Exactitud de temporadas, luz y clima respecto a fuentes externas | Verificación humana/externa | — |
-| `EXP-01` | experiencias | Experiencias específicas sin relleno y extensión recomendada | Sin contrato | — |
-| `EXP-02` | experiencias | Gastronomía y disponibilidad local contrastadas con fuentes | Verificación humana/externa | — |
+| `SEA-01` | temporadas | Doce meses con estado válido y pendientes explícitos | Automatizada (con evidencia) | `tests/editorial-contracts.test.cjs` |
+| `SEA-02` | temporadas | Temperaturas con semántica verificada y máxima/mínima sin invertir | Automatizada (con evidencia) | `tests/editorial-contracts.test.cjs` |
+| `SEA-03` | temporadas | Exactitud de temporadas, luz y clima respecto a fuentes externas | Externa / humana | — |
+| `EXP-01` | experiencias | Experiencias específicas sin relleno y extensión recomendada | Sin prueba | — |
+| `EXP-02` | experiencias | Gastronomía y disponibilidad local contrastadas con fuentes | Externa / humana | — |
 | `RES-01` | reservas | Grupos y enlaces de reserva con estructura válida | Parcial | `tests/editorial-relations.test.cjs` |
 | `RES-02` | reservas | Estado confirmado/cotizado/estimado/pendiente no confundido | Parcial | `tests/transport-budget.test.cjs` |
-| `RES-03` | reservas | Vigencia y destino correcto de enlaces oficiales de reserva | Verificación humana/externa | — |
-| `TRA-01` | traslados | Referencias diarias de transporte sin huérfanos | Automatizada (evidencia en CI) | `tests/editorial-relations.test.cjs` |
+| `RES-03` | reservas | Vigencia y destino correcto de enlaces oficiales de reserva | Externa / humana | — |
+| `TRA-01` | traslados | Referencias diarias de transporte sin huérfanos | Automatizada (con evidencia) | `tests/editorial-relations.test.cjs` |
 | `TRA-02` | traslados | Segmentos, escalas y cronología de viajes renderizados | Parcial | `tests/transport-budget.test.cjs` |
 | `TRA-03` | traslados | Tarifa elegida cubre todos los tramos aplicables y no duplica presupuesto | Parcial | `tests/transport-budget.test.cjs` |
-| `TRA-04` | traslados | Operador, horario, tarifa y fuente válidos para fecha de viaje | Verificación humana/externa | — |
+| `TRA-04` | traslados | Operador, horario, tarifa y fuente válidos para fecha de viaje | Externa / humana | — |
 | `LOD-01` | alojamientos | Check-in/out y vínculo válido entre noches y alojamiento | Parcial | `tests/editorial-relations.test.cjs` |
 | `LOD-02` | alojamientos | Todas las noches cubiertas, sin traslape ni pernocta fantasma | Parcial | `tests/patagonia-regression.test.cjs` |
 | `LOD-03` | alojamientos | Enlaces de mapa y reserva con formato válido | Parcial | `tests/editorial-relations.test.cjs` |
-| `LOD-04` | alojamientos | Ubicación y disponibilidad real de hoteles y reservas | Verificación humana/externa | — |
-| `DAY-01` | dias | Jornadas consecutivas, límites y referencias de alojamiento | Automatizada (evidencia en CI) | `tests/editorial-relations.test.cjs` |
-| `DAY-02` | dias | Numeración consecutiva sin saltos ni duplicados | Sin contrato | — |
+| `LOD-04` | alojamientos | Ubicación y disponibilidad real de hoteles y reservas | Externa / humana | — |
+| `DAY-01` | dias | Jornadas consecutivas, límites y referencias de alojamiento | Automatizada (con evidencia) | `tests/editorial-relations.test.cjs` |
+| `DAY-02` | dias | Numeración consecutiva sin saltos ni duplicados | Sin prueba | — |
 | `DAY-03` | dias | Campos de mañana/tarde/noche y tips/movilidad con sintaxis editorial | Parcial | `tests/loader-regression.test.cjs` |
-| `DAY-04` | dias | Fotografías de actividades y portada referenciadas correctamente | Automatizada (evidencia en CI) | `tests/editorial-relations.test.cjs` |
+| `DAY-04` | dias | Fotografías de actividades y portada referenciadas correctamente | Automatizada (con evidencia) | `tests/editorial-relations.test.cjs` |
 | `DAY-05` | dias | Créditos, pies de 15–30 palabras y fuentes fotográficas por origen | Parcial | `tests/loader-regression.test.cjs` |
-| `DAY-06` | dias | Aperturas, recorridos y tiempos locales verificables | Verificación humana/externa | — |
-| `BUD-01` | costes | Gastos únicos, importes no negativos y divisas ISO válidas | Automatizada (evidencia en CI) | `tests/editorial-relations.test.cjs` |
+| `DAY-06` | dias | Aperturas, recorridos y tiempos locales verificables | Externa / humana | — |
+| `BUD-01` | costes | Gastos únicos, importes no negativos y divisas ISO válidas | Automatizada (con evidencia) | `tests/editorial-relations.test.cjs` |
 | `BUD-02` | costes | Subtotal conciliado y alternativas no contabilizadas dos veces | Parcial | `tests/transport-budget.test.cjs` |
 | `BUD-03` | costes | Desglose por día, hotel y transporte coherente con ledger | Parcial | `tests/transport-budget.test.cjs` |
-| `BUD-04` | costes | Equivalencia MXN inmediata y tipo de cambio fechado con fuente | Sin contrato | — |
+| `BUD-04` | costes | Equivalencia MXN inmediata y tipo de cambio fechado con fuente | Sin prueba | — |
 | `BUD-05` | costes | Viajeros por presupuesto y cálculo por persona sin asumir uno | Parcial | `tests/home-comparison.test.cjs` |
 | `BUD-06` | costes | Importe pendiente null distinto de cero conocido en todas las vistas | Parcial | `tests/transport-budget.test.cjs` |
-| `UI-01` | transversal | Sin NaN, undefined, overflow y anclas rotas escritorio/móvil | Automatizada (evidencia en CI) | `tests/browser-smoke.cjs` |
-| `UI-02` | transversal | Auditoría editorial de navegador incluida en CI normal | Automatizada (evidencia en CI) | `.github/workflows/atlas-checks.yml` |
+| `UI-01` | transversal | Sin NaN, undefined, overflow y anclas rotas escritorio/móvil | Automatizada (con evidencia) | `tests/browser-smoke.cjs` |
+| `UI-02` | transversal | Auditoría editorial de navegador incluida en CI normal | Automatizada (con evidencia) | `.github/workflows/atlas-checks.yml` |
+| `CAT-03` | transversal | No modificar JSON de otros viajes ni ideas históricas durante una edición aislada | Sin prueba | — |
+| `PAN-07` | plan | introHighlights son nombres presentes literalmente en intro | Parcial | `tests/trip-editorial.test.cjs` |
+| `PAN-08` | plan | Texto intro no incluye información de compras, precios ni reglas administrativas | Parcial | `tests/trip-editorial.test.cjs` |
+| `MAP-04` | mapa | Nombre principal en negrita y calificadores sin negrita en la vista | Automatizada (con evidencia) | `tests/browser-smoke.cjs` |
+| `SEA-04` | temporadas | Color de Clima y luz idéntico al estado de mes seleccionado | Parcial | `tests/browser-smoke.cjs` |
+| `EXP-03` | experiencias | Descripción de experiencias 18–35 palabras, salvo ampliaciones justificadas | Sin prueba | — |
+| `RES-04` | reservas | Título fijo Reservaciones importantes y grupos de prioridad visibles | Parcial | `tests/browser-smoke.cjs` |
+| `TRA-05` | traslados | Enlaces de abordaje y paradas actuales accesibles por jornada | Sin prueba | — |
+| `TRA-06` | traslados | Tarifa pendiente conserva null; no se inventa un costo cero | Parcial | `tests/transport-budget.test.cjs` |
+| `LOD-05` | alojamientos | Resumen X noches, Y alojamientos con plural y fuentes dinámicas | Parcial | `tests/browser-smoke.cjs` |
+| `LOD-06` | alojamientos | Candidato o cotizado no aparece como reservado en texto o presupuesto | Sin prueba | — |
+| `DAY-07` | dias | Cada pie de fotografía vigente contiene 15–30 palabras concretas | Parcial | `tests/loader-regression.test.cjs` |
+| `DAY-08` | dias | Fotos externas directas HTTPS y autor/licencia según procedencia | Parcial | `tests/loader-regression.test.cjs` |
+| `DAY-09` | dias | Días parciales se renderizan sin bloquear todo el itinerario | Automatizada (con evidencia) | `tests/loader-regression.test.cjs` |
+| `BUD-07` | costes | Portada y Panorama usan proyección dinámica del ledger actual | Parcial | `tests/format-budget-contract.test.cjs` |
+| `BUD-08` | costes | Tipo de cambio tiene fecha, fuente y no simula cotización vigente | Sin prueba | — |
+| `BUD-09` | costes | MXN realmente pagados prevalecen sobre conversión estimada | Automatizada (con evidencia) | `tests/transport-budget.test.cjs` |
+| `UI-03` | transversal | Fotografías nítidas, a color y pertinentes al lugar real | Externa / humana | — |
+| `UI-04` | transversal | Layout móvil evita desbordamiento y controla movimiento reducido | Automatizada (con evidencia) | `tests/browser-smoke.cjs` |
 
-## Brechas objetivas de la próxima fase
+## Brechas prioritarias (siguientes fases)
 
-1. **Nivel de completitud:** declarar por campo cuándo un viaje está incremental, parcialmente redactado o editorialmente cerrado, y evitar tratar una sección de un viaje recién creado como una sección vacía inválida. No inferir completitud de la presencia de un array.
-2. **Calendario:** detectar secuencia numérica de días, cobertura total de noches, alojamiento faltante, estancias traslapadas, cambios de fechas no propagados a gastos y reservas; validar escenarios de ida y regreso sin pernocta fantasma.
-3. **Mapa:** comprobar coordenadas reales dentro de rangos, duplicación indebida, orden del recorrido, conexiones de noche y etiquetas de estancia. La mera longitud dos de un array no valida geografía.
-4. **Reserva/movilidad:** estados verdaderos `pending/quoted/estimated/confirmed`, tramos/horarios/zonas, elegibilidad de tarifas y vigencia; controles algebraicos de un solo escenario económico, no snapshots de operadores.
-5. **Finanzas:** conciliación de presupuesto sin doble sumas, importes conocidos `0` frente a desconocidos `null`, conversión con fuente/fecha, base de precio por persona y moneda geográfica.
-6. **Prosa/fotos/experiencias:** exigencias mecánicas de extensiones, formatos, referencias y créditos con excepciones apropiadas para foto propia. Evaluación de autenticidad, color, exactitud histórica y gastronomía queda humana.
-7. **Suite específica:** convertir los tests que aún fijan Colombia, Italia, Suiza o Patagonia en fixtures dinámicos antes de retirar los antiguos. Recalcular salidas desde entradas mutables y exigir invariantes del DOM, no totales del año pasado.
+1. **Completitud/flujo:** distinguir viaje mínimo, sección parcialmente preparada y viaje editorialmente cerrado sin suposiciones. No bloquear un borrador por carecer de actividades, ni aprobar un viaje terminado con noches sin alojamientos. Probar que una edición de un viaje no altera los demás.
+2. **Integridad calendario-alojamiento:** exigir numeración sucesiva; noches contiguas, cubiertas y sin doble estancia; coordenadas geográficas posibles y referenciadas; sincronización con noches, presupuesto y mapas, incluyendo el caso de último día sin hotel.
+3. **Compra y logística:** validar estado real de las reservas y hoteles, opciones de tarifa elegibles y tramos de ida/vuelta sin horas ficticias; límites entre `null` pendiente y `0` verdadero; enlaces de abordaje y tarjetas visibles.
+4. **Monedas y finanzas:** reconciliar un único presupuesto por alternativas excluyentes, origen/moneda/cantidad de personas, conversión MXN con tasa, fecha y fuente; no congelar importes por viaje ni confundir moneda ISO válida con la moneda del destino.
+5. **Narrativa y fotos:** automatizar lo mecánico de experiencias, captions, créditos y políticas HTTPS respetando distinción entre fotos externas nuevas y originales aportadas; comprobar actualidad, autenticidad, color y gastronomía mediante revisión humana.
+6. **Refactor restante:** los tests de Colombia/Italia/Suiza/Patagonia aún contienen snapshots; reemplazarlos por fixtures mutables y pruebas adversariales antes de retirarlos. `browser-smoke.cjs` ya tiene chequeos dinámicos, pero eso no constituye una prueba integral de todos los estados.
 
-## Criterios de cierre para las siguientes fases
+## Puertas de aceptación
 
-Cada regla automatizable debe tener **validez positiva y negativa**, pruebas de bordes y una explicación documentada del comportamiento incremental. Cada regla de presentación requiere comprobación DOM en escritorio y móvil. El CI debe ejecutar la matriz y demostrar que cambios coherentes de fecha, tarifa, hotel, actividad y ruta no provocan falsos errores. Las obligaciones humanas deben figurar en la checklist con responsable/fuente y **no contar como aprobación automatizada**. El alcance editorial real se decidirá contra esta matriz **y** la guía fuente, no solo por color verde de Actions.
+Cada contrato automatizable necesita pruebas positivas, negativas, y de límites; debe especificar si rige a viajes parciales o cerrados. Las reglas DOM deben verificarse en escritorio y móvil; las reglas con fuentes externas deben aportar una checklist explícita sin falso verde. La suite debe demostrar que modificar fechas, tarifas, hoteles, excursiones y vuelos **coherentemente** sigue pasando, pero una inconsistencia editorial no. **Solo entonces** cabe recomendar merge por cumplimiento del objetivo del usuario.
 
-## Cambios de esta fase
+## Cambios de fase 1
 
-- Se creó inventario ejecutable de obligaciones enlazado a la sección normativa y, cuando existe, a una prueba comprobable.
-- Se añadió un test de integridad de matriz, fuentes y nueve encabezados oficiales de la guía.
-- Se corrigieron tres párrafos de la guía que tenían saltos `\\n\\n` literales; uno ocultaba el encabezado de «4. Experiencias» como línea independiente.
-- No se han modificado itinerarios, presupuestos, vuelos, hoteles ni actividades. Las fases de implementación, mutación y CI integral definitivo siguen pendientes.
+Se creó la matriz ejecutable y la prueba de conservación de evidencias y capítulos. Se corrigieron tres separadores literales `\\n\\n` incrustados en la guía, incluido uno que ocultaba la sección cuatro, «Experiencias», como encabezado Markdown. El contenido turístico y los JSON de itinerarios no se modificaron. La cobertura sustantiva faltante es trabajo de fases 2–5.
