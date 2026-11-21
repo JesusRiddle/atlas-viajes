@@ -37,7 +37,9 @@ function create() {
   const entry = '  {\n    "id": ' + JSON.stringify(id) + ',\n    "file": ' + JSON.stringify(id + '.json') + ',\n    "available": true\n  }';
   const last = catalog.replace(insertion, '];');
   const index = last.lastIndexOf('];');
-  const rewritten = last.slice(0, index).replace(/\s*$/, '') + ',\n' + entry + last.slice(index);
+  const prefix = last.slice(0, index).replace(/\s*$/, '');
+  const separator = registry.length ? ',\n' : '\n';
+  const rewritten = prefix + separator + entry + '\n' + last.slice(index);
   fs.mkdirSync(progressDir, { recursive: true });
   fs.writeFileSync(destination, JSON.stringify(trip, null, 2) + '\n', { flag: 'wx' });
   try {
