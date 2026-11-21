@@ -67,3 +67,19 @@ La fase C debe recortar el smoke para que solo valide comportamiento visual y na
 ### Registro de ejecución
 
 Se solicitó la validación del PR #22 frente a `main` únicamente para activar el workflow configurado en GitHub Actions; la base prevista para integrar sigue siendo la rama del PR #21. El resultado debe comprobarse contra el SHA de este commit antes de declarar la fase validada.
+
+## Fase C — Playwright por niveles (2026-11-21)
+
+Se mantiene un único ejecutable `tests/browser-smoke.cjs` para no duplicar inicialización de navegador, catálogos, servidor y dos viewports. **El modo predeterminado sigue recorriendo todos los viajes disponibles en escritorio 1440 × 900 y móvil 390 × 844**, y conserva:
+
+- portada, composición del hero, preferencias de movimiento reducido, tarjeta visual y comparativa completa;
+- inclusión de los viajes principales y archivo de ideas sin números fijos;
+- todas las rutas de viaje, nueve anclas, navegación, título de alojamientos, tipografía del mapa, encabezados de hoteles sin overflow, ausencia de `NaN`/`undefined` y overflow horizontal;
+- recorrido de integración de Italia, expandir/colapsar días, navegación desde la barra fija, y alta de viaje incremental desde catálogo modificado;
+- recopilación y fallo por errores `pageerror` del navegador.
+
+**Auditoría profunda opcional**: `ATLAS_EDITORIAL_AUDIT=1 node tests/browser-smoke.cjs`, con el servidor de desarrollo en `http://127.0.0.1:8765/`. Ejecuta adicionalmente las comprobaciones particulares de Orlando, Colombia, Suiza nevada y Patagonia (importes, hoteles, enlaces, textos de tours, fechas, fotografías, fichas de traslado y capturas de pantalla). Se conservaron, no se borraron, para poder ejecutarlas en revisiones editoriales deliberadas.
+
+Se eliminaron del smoke predeterminado dos expectativas de Orlando (fechas y días laborales concretos) y el importe exacto de su portada; todas siguen bajo la opción editorial. Se reemplazó el número fijo de 14 días de Italia por `tripById.get('italia-norte-2027').days.length` en la navegación y el expandir/colapsar, conservando la prueba de interacción real.
+
+**Advertencia de riesgo**: la profundidad de la auditoría no se ejecuta en cada PR y puede quedar desfasada mientras evolucionan los viajes. Antes de publicar una revisión importante de un itinerario debe ejecutarse con `ATLAS_EDITORIAL_AUDIT=1`; en fase D se evaluará formalizar esta ejecución como job manual o bajo demanda. Esta fase reduce el coste de CI, **no reduce todavía en forma significativa el número de líneas del archivo** porque se optó por preservar los escenarios documentales en vez de eliminarlos.
