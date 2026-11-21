@@ -128,3 +128,25 @@ Actualizar esta rama respecto de `main` y el PR #20 resuelto, abrir el PR final,
 ### Próxima fase
 
 Reducir las aserciones editoriales restantes del smoke de forma controlada, revisar la compatibilidad con el PR #20, ejecutar Node y Playwright en GitHub Actions, y resolver las regresiones que aparezcan antes de proponer el merge.
+
+## Auditoría retrospectiva de las fases 1–3 — correcciones previas a fase 4
+
+Fecha: 2026-11-21. Revisión de los archivos modificados y de las aserciones que sustituyeron snapshots.
+
+### Hallazgos y resoluciones
+
+1. **Defecto real en el generador con catálogo vacío (corregido).** `scripts/new-trip.cjs` insertaba incondicionalmente una coma antes de la primera entrada del arreglo. El proceso terminaba con estado 0, pero `modules.js` resultaba sintácticamente inválido. Se hace depender el separador de la existencia de elementos. Se añadieron verificaciones con `vm.runInNewContext` en `tests/new-trip.test.cjs` tanto para catálogo vacío como para catálogo existente, comprobando IDs y ejecución efectiva del módulo.
+2. **Falso positivo por comparación parcial (corregido).** La fase 3 verificaba `comparedIds === chronologicalIds.filter(id => comparedIds.includes(id))`, que toleraba omitir cualquier viaje. Ahora se deriva el conjunto completo de viajes comparables desde los objetos normalizados en `window.ATLAS_READY` y la elegibilidad que utiliza la aplicación. Se exige equivalencia completa (miembros y orden) además de ausencia de duplicados.
+3. **Arnés asíncrono (revisado).** `withSandbox` espera `runScenario` antes del bloque `finally`, por lo que los archivos temporales permanecen mientras el loader asíncrono los usa.
+4. **Presupuesto de Italia (sin modificación).** La fase 3 solo desacopló la portada/comparativa y un snapshot de Patagonia. El archivo `tests/format-budget-contract.test.cjs` conserva su total fijo, todavía pendiente de la simplificación final. No documentar una eliminación que no ocurrió.
+5. **PR #20 (pendiente).** Sigue abierto y su ejecución del CI conocida está roja. Los cambios del PR #20 y los del smoke de esta rama modifican las mismas aserciones: resolver en fase 4, no encadenar los dos cambios sin revisar el diff.
+
+### Validación realmente realizada
+
+- Parser JavaScript V8: `tests/new-trip.test.cjs`, `tests/browser-smoke.cjs`, `tests/trip-production-workflow.test.cjs` y `scripts/new-trip.cjs` (quitando el shebang para la comprobación mediante `new Function`) sin errores sintácticos.
+- Reproducción con Node 22 de la lógica de inserción del generador, en catálogo vacío y con un elemento: los dos resultados se ejecutaron sin error mediante `vm.runInNewContext` y conservaron los IDs esperados. **Es una reproducción acotada, no la ejecución integral de los tests del repositorio.**
+- No fue posible clonar GitHub desde el runtime de validación por error de resolución DNS. Tampoco se abrió anticipadamente un PR para no incumplir el acuerdo de un PR final. Por ello, **no se ha verificado todavía el resultado de `node --test`, el smoke real de Playwright, ni el estado verde en GitHub Actions para esta rama.**
+
+### Decisión
+
+**Apta para entrar a la fase 4 (validación integral), no apta para merge.** No avanzar al merge sin corregir los fallos que revele CI. Se recomienda que la fase 4 ejecute la suite real, verifique regresiones en escritorio/móvil, cierre el conflicto de expectativas con el PR #20 y deje un PR final revisable.
