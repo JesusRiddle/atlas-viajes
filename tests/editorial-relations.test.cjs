@@ -323,3 +323,16 @@ test('integridad dinámica de los nueve viajes principales, sin snapshots de fec
     assert.deepEqual(photos(trip, photoCatalog, { complete: true }), [], id + ': fotografías referenciadas inválidas');
   }
 });
+
+
+test('jornadas corruptas no provocan excepción ni ocultan error editorial', () => {
+  for (const invalid of [null, undefined, false, 'fecha libre', [], 42]) {
+    const t = makeTrip();
+    t.days[0] = invalid;
+    assert.doesNotThrow(() => complaints(t));
+    assert.ok(hasError(complaints(t), 'days[0]'));
+  }
+  const t = makeTrip();
+  t.days[1] = null;
+  assert.ok(hasError(complaints(t), 'days[1]'));
+});
