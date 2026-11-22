@@ -110,3 +110,15 @@ Se ampliaron `scripts/editorial-relations.cjs` y sus fixtures, sin incluir ning�
 **Límites todavía abiertos y no maquillados:** las cuatro reglas `PAN-05`, `CAT-03`, `EXP-03`, `LOD-06` permanecen sin validación suficiente; otras 32 siguen siendo parciales. La pertinencia real de países/divisas, licencias fotográficas, disponibilidad de hoteles, tarifas vigentes y la veracidad del lenguaje comercial necesitan datos adicionales o revisión humana. La migración de los tests rígidos de destinos y las pruebas de mutación amplias corresponden a las siguientes fases.
 
 No se modificaron JSON de itinerarios ni se hizo merge.
+
+## Fase 3 — sustitución de snapshots por invariantes compartidas
+
+Se eliminaron **dos archivos exclusivos de destinos**: `tests/colombia-2027.test.cjs` (284 líneas) y `tests/patagonia-regression.test.cjs` (98 líneas). Se depuró `tests/trip-editorial.test.cjs` de 272 a 120 líneas y `tests/loader-regression.test.cjs` de 788 a 492, preservando pruebas de compatibilidad, navegación y renderizado que no tenían sustituto equivalente.
+
+**Sustitución ejecutable:** `tests/dynamic-trip-regressions.test.cjs` revisa los nueve viajes activos sin fijar fechas, hoteles, importes, proveedores o cantidades de actividades. Verifica noches realmente asignadas frente al intervalo de cada alojamiento elegido (sin contar alternativas simultáneas), referencias de transporte y hoteles, conexiones de segmentos, rutas de presupuesto indirectas hasta su partida o agrupador tarifario, ciclos huérfanos, totales diarios cuando el viaje los declara, fotos vigentes e imágenes locales existentes. Los servicios todavía pendientes (`price: null`) no se convierten artificialmente en gastos cero.
+
+**Decisión de calidad:** `tests/transport-budget.test.cjs` conserva ejemplos con números, operadores y horarios concretos porque **usa `tests/fixtures/transport-regression.json`**, un escenario sintético estable de integración, no los JSON vivos de ningún viaje. Cambiar un hotel, precio, vuelo o excursión real no altera esos fixtures. El objetivo no es prohibir cantidades en tests, sino prohibir snapshots cambiantes de itinerarios reales.
+
+**Cobertura que permanece intencionalmente parcial:** autenticidad y metadatos de ciertas fotos externas de España/Portugal y Patagonia, precisión y fuentes de información turística, conciliación universal de todos los estados financieros, transportes en escenario alternativo y validación de frases de la guía para viajes históricos. Hay pruebas funcionales con ejemplos reales de Italia y Suiza que aún conviene convertir a fixtures sintéticos en fase 4 si se pretende tolerar incluso la eliminación completa de esos viajes del catálogo.
+
+**Validación:** el CI completo debe mantenerse verde para cerrar esta fase. La fase 4 está dedicada a mutaciones y a demostrar con cambios consistentes de un viaje real en memoria que las aserciones supervivientes no producen falsos positivos. No se cambiaron JSON de viajes ni se realizó merge.
