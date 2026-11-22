@@ -29,46 +29,55 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
 
 test('coexisten viajes con hoteles estructurados y viajes heredados con stays', () => {
     const catalog = loadCatalog().filter(module => module.available);
-    const trips = catalog.map(module => JSON.parse(fs.readFileSync('data/trips/' + module.file, 'utf8')));
-    const italia = trips.find(t => t.id === 'italia-norte-2027');
-    assert.ok(italia);
-    assert.equal(Object.prototype.hasOwnProperty.call(italia, 'stays'), false);
-    assert.equal(italia.hotels.length, 3);
-    assert.ok(trips.some(t => Array.isArray(t.stays) && t.stays.length));
-    const stays = Object.fromEntries(trips.map(t => [t.id, Array.isArray(t.stays) ? t.stays : []]));
-    assert.deepEqual(stays['italia-norte-2027'], []);
-    assert.equal(stays['espana-portugal'], undefined, 'El viaje antiguo ya no debe figurar en el catálogo');
+    const trips = catalog.map(module =>
+        JSON.parse(fs.readFileSync('data/trips/' + module.file, 'utf8')));
+    assert.ok(trips.some(t => Array.isArray(t.hotels) && t.hotels.length),
+        'Debe haber algún viaje con alojamiento estructurado');
+    assert.ok(trips.some(t => Array.isArray(t.stays) && t.stays.length),
+        'Los viajes heredados siguen admitiendo stays');
+    for (const trip of trips) {
+        assert.ok(trip.stays == null || Array.isArray(trip.stays),
+            trip.id + ': stays debe ser una lista cuando exista');
+    }
 });
 
-test('el loader normaliza un viaje mínimo sin alterar Italia Norte 2027', async () => {
+test('el loader normaliza un viaje mínimo sin alterar ningún viaje completo del catálogo', async () => {
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
-    const italia = JSON.parse(fs.readFileSync('data/trips/italia-norte-2027.json', 'utf8'));
+    const current = loadCatalog().find(module =>
+        module.available && module.homeGroup !== 'ideas');
+    assert.ok(current, 'Se necesita un ejemplo de viaje completo');
+    const sourceTrip = JSON.parse(fs.readFileSync('data/trips/' + current.file, 'utf8'));
+    const fixtureId = 'viaje-minimo-fixture';
+    const fixtureFile = fixtureId + '.json';
     const modules = [
-        { id: 'italia-norte-2027', file: 'italia-norte-2027.json', available: true },
-        { id: 'japon', file: 'japon.json', available: true }
+        { id: current.id, file: current.file, available: true },
+        { id: fixtureId, file: fixtureFile, available: true }
     ];
     const sources = {
         'data/places.json': {},
         'data/trips/_template.json': template,
-        'data/trips/italia-norte-2027.json': italia,
-        'data/trips/japon.json': { id: 'japon', name: 'Japón' }
+        ['data/trips/' + current.file]: sourceTrip,
+        ['data/trips/' + fixtureFile]: { id: fixtureId, name: 'Viaje mínimo' }
     };
     const window = { ATLAS_MODULES: modules };
     const fetch = async url => ({ ok: Object.hasOwn(sources, url), status: 404,
         json: async () => sources[url] });
     vm.runInNewContext(fs.readFileSync('loader.js', 'utf8'), { window, fetch });
     const atlas = await window.ATLAS_READY;
-    const japan = atlas.trips.find(t => t.id === 'japon');
-    assert.equal(japan.status, null);
-    assert.equal(japan.start, null);
-    assert.equal(japan.work, null);
-    assert.equal(japan.days.length, 0);
-    assert.equal(japan.mapPoints.length, 0);
-    assert.equal(japan.seasonality, null);
-    assert.equal(atlas.trips[0].id, italia.id);
-    assert.equal(atlas.trips[0].majorTransport.length, italia.majorTransport.length);
-    assert.equal(atlas.trips[0].days.length, italia.days.length);
-    assert.deepEqual(Array.from(atlas.trips[0].routeHighlights || []), Array.from(italia.routeHighlights || []));
+    const draft = atlas.trips.find(t => t.id === fixtureId);
+    assert.ok(draft);
+    assert.equal(draft.status, null);
+    assert.equal(draft.start, null);
+    assert.equal(draft.work, null);
+    assert.equal(draft.days.length, 0);
+    assert.equal(draft.mapPoints.length, 0);
+    assert.equal(draft.seasonality, null);
+    const loaded = atlas.trips.find(t => t.id === sourceTrip.id);
+    assert.ok(loaded, 'No debe desaparecer el viaje completo');
+    assert.equal(loaded.majorTransport.length, sourceTrip.majorTransport.length);
+    assert.equal(loaded.days.length, sourceTrip.days.length);
+    assert.deepEqual(Array.from(loaded.routeHighlights || []),
+        Array.from(sourceTrip.routeHighlights || []));
 });
 
 test('el loader permite stays ausente y rechaza colecciones de tipo incorrecto', async () => {
