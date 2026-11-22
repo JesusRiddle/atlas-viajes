@@ -62,11 +62,29 @@ function validate(trip, { complete = false, mode } = {}) {
   const transport = Array.isArray(trip.majorTransport) ? trip.majorTransport : [];
   const expenses = Array.isArray(trip.expenses) ? trip.expenses : [];
   const groups = Array.isArray(trip.reservations) ? trip.reservations : [];
+  if (trip.experiences != null && !Array.isArray(trip.experiences))
+    errors.push(problem('experiences', 'Las experiencias deben ser una colección'));
+  if (Array.isArray(trip.experiences)) trip.experiences.forEach((experience, index) => {
+    if (!experience || typeof experience.city !== 'string' ||
+        !experience.city.trim() || typeof experience.description !== 'string' ||
+        !experience.description.trim())
+      errors.push(problem('experiences[' + index + ']',
+        'Experiencia sin lugar o descripción turística'));
+  });
   unique(hotels, 'hotels', errors);
   unique(transport, 'majorTransport', errors);
   unique(expenses, 'expenses', errors);
   const hotelIds = new Set(hotels.map(h => h?.id).filter(Boolean));
   const transportIds = new Set(transport.map(t => t?.id).filter(Boolean));
+  transport.forEach((item, i) => {
+    if (item?.boardingLocations != null && !Array.isArray(item.boardingLocations))
+      errors.push(problem('majorTransport[' + i + '].boardingLocations', 'Paradas inválidas'));
+    if (Array.isArray(item?.boardingLocations)) item.boardingLocations.forEach((stop, j) => {
+      if (typeof stop?.name !== 'string' || !stop.name.trim() || !isUrl(stop?.mapUrl))
+        errors.push(problem('majorTransport[' + i + '].boardingLocations[' + j + ']',
+          'El abordaje requiere nombre y enlace HTTP(S)'));
+    });
+  });
   for (const [i, hotel] of hotels.entries()) {
     if (!hotel || typeof hotel !== 'object') continue;
     if (hotel.checkIn != null || hotel.checkOut != null) {
@@ -110,6 +128,8 @@ function validate(trip, { complete = false, mode } = {}) {
         orders.add(point.order);
       }
     });
+    if (complete && orders.size && orders.size < trip.mapPoints.length)
+      errors.push(problem('mapPoints', 'Todos los puntos deben tener orden si alguno lo tiene'));
     if (complete && orders.size && orders.size === trip.mapPoints.length &&
         !trip.mapPoints.every((_, i) => orders.has(i + 1)))
       errors.push(problem('mapPoints', 'La numeración de puntos debe ser consecutiva'));
@@ -166,6 +186,13 @@ function validate(trip, { complete = false, mode } = {}) {
           errors.push(problem(path + '.hotel', 'Jornada fuera de las fechas del alojamiento'));
       }
     }
+    if (day.mobilityLinks != null && !Array.isArray(day.mobilityLinks))
+      errors.push(problem(path + '.mobilityLinks', 'Enlaces de movilidad deben ser una lista'));
+    if (Array.isArray(day.mobilityLinks)) day.mobilityLinks.forEach((link, j) => {
+      if (typeof link?.label !== 'string' || !link.label.trim() || !isUrl(link.url))
+        errors.push(problem(path + '.mobilityLinks[' + j + ']',
+          'Cada enlace de movilidad necesita etiqueta y URL HTTP(S)'));
+    });
     if (day.transportRefs != null && !Array.isArray(day.transportRefs))
       errors.push(problem(path + '.transportRefs', 'Referencias de transporte deben ser una lista'));
     if (Array.isArray(day.transportRefs))
