@@ -87,6 +87,8 @@ function validate(trip, { complete = false, mode } = {}) {
   });
   for (const [i, hotel] of hotels.entries()) {
     if (!hotel || typeof hotel !== 'object') continue;
+    if (complete && (hotel.checkIn == null || hotel.checkOut == null))
+      errors.push(problem('hotels[' + i + ']', 'Fechas de alojamiento requeridas al cerrar'));
     if (hotel.checkIn != null || hotel.checkOut != null) {
       if (!dateOK(hotel.checkIn) || !dateOK(hotel.checkOut) || hotel.checkOut <= hotel.checkIn)
         errors.push(problem('hotels[' + i + ']', 'Check-in/check-out inválidos'));
@@ -104,6 +106,8 @@ function validate(trip, { complete = false, mode } = {}) {
   if (trip.start && trip.end && dateOK(trip.start) && dateOK(trip.end) && trip.end < trip.start)
     errors.push(problem('end', 'La fecha final precede a la inicial'));
   // Reglas universales sin snapshots de destinos o de fechas.
+  if (complete && trip.travelerCount == null)
+    errors.push(problem('travelerCount', 'Número de personas requerido al cerrar el presupuesto'));
   if (trip.travelerCount != null &&
       (!Number.isInteger(trip.travelerCount) || trip.travelerCount < 1))
     errors.push(problem('travelerCount', 'El número de personas debe ser entero positivo'));
@@ -118,9 +122,9 @@ function validate(trip, { complete = false, mode } = {}) {
         errors.push(problem(where, 'Punto del mapa inválido')); return;
       }
       const coords = point.coords;
-      if (!Array.isArray(coords) || coords.length !== 2 ||
+      if ((complete || coords != null) && (!Array.isArray(coords) || coords.length !== 2 ||
           !coords.every(Number.isFinite) ||
-          coords[0] < -90 || coords[0] > 90 || coords[1] < -180 || coords[1] > 180)
+          coords[0] < -90 || coords[0] > 90 || coords[1] < -180 || coords[1] > 180))
         errors.push(problem(where + '.coords', 'Coordenadas geográficas fuera de rango'));
       if (point.order != null) {
         if (!Number.isInteger(point.order) || point.order < 1 || orders.has(point.order))
@@ -128,7 +132,7 @@ function validate(trip, { complete = false, mode } = {}) {
         orders.add(point.order);
       }
     });
-    if (complete && orders.size && orders.size < trip.mapPoints.length)
+    if (complete && trip.mapPoints.length && orders.size < trip.mapPoints.length)
       errors.push(problem('mapPoints', 'Todos los puntos deben tener orden si alguno lo tiene'));
     if (complete && orders.size && orders.size === trip.mapPoints.length &&
         !trip.mapPoints.every((_, i) => orders.has(i + 1)))
