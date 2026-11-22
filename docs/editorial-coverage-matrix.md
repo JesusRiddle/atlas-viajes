@@ -67,7 +67,7 @@ Se inventariaron **64 obligaciones** procedentes de las nueve secciones de la gu
 | `PAN-08` | plan | Texto intro no incluye información de compras, precios ni reglas administrativas | Parcial | `tests/trip-editorial.test.cjs` |
 | `MAP-04` | mapa | Nombre principal en negrita y calificadores sin negrita en la vista | Automatizada (con evidencia) | `tests/browser-smoke.cjs` |
 | `SEA-04` | temporadas | Color de Clima y luz idéntico al estado de mes seleccionado | Parcial | `tests/browser-smoke.cjs` |
-| `EXP-03` | experiencias | Descripción de experiencias 18–35 palabras, salvo ampliaciones justificadas | Sin prueba | — |
+| `EXP-03` | experiencias | Descripción de experiencias 18–35 palabras, salvo ampliaciones justificadas | Parcial | `tests/editorial-experience-audit.test.cjs` (reporte no bloqueante) |
 | `RES-04` | reservas | Título fijo Reservaciones importantes y grupos de prioridad visibles | Parcial | `tests/browser-smoke.cjs` |
 | `TRA-05` | traslados | Enlaces de abordaje y paradas actuales accesibles por jornada | Parcial | `tests/editorial-relations.test.cjs` |
 | `TRA-06` | traslados | Tarifa pendiente conserva null; no se inventa un costo cero | Parcial | `tests/transport-budget.test.cjs` |
@@ -133,3 +133,10 @@ Se eliminaron **dos archivos exclusivos de destinos**: `tests/colombia-2027.test
 **Brechas aún sin certificación:** `PAN-05` (semántica país/idioma/divisa), `CAT-03` (aislamiento de cambios de archivos), `EXP-03` (longitud editorial de experiencias con excepciones) y `LOD-06` (la etiqueta reservado debe corresponder al estado real). No convertir estas obligaciones a «automatizadas» por tener pruebas indirectas. Hay además 32 reglas parciales y ocho externas/manuales en el inventario actual. El inventario no mide porcentajes de calidad.
 
 **Criterio de aceptación:** CI verde en el SHA final; revisar los cuatro contratos sin prueba y las reglas parciales; no prometer comprobación automática de vigencia de operadores, vuelos, migración, hoteles, fotos o tarifas sin fuentes externas; verificar que los JSON de viajes no se alteraron. Hasta completar esto, el PR permanece sin recomendación de merge.
+
+
+### Avance adicional en fase 5 · auditoría de experiencias
+
+Se incorpora `scripts/editorial-experience-audit.cjs` con `experienceWarnings`: señala descripciones con menos de 18 palabras y pide revisión de aquellas con más de 35, sin dar por inválida una extensión gastronómica legítima. Se incluyen casos límite y uso dinámico sobre los nueve itinerarios activos. Por diseño **no bloquea el CI** en destinos heredados y **no determina** si una excepción tiene fundamento cultural. `EXP-03` cambia de `missing` a `partial` (no a automatización completa).
+
+**Recuento actualizado tras este cambio:** 20 automatizadas, 33 parciales, 3 sin prueba (`PAN-05`, `CAT-03`, `LOD-06`) y 8 externas/manuales. No interpretar los recuentos como una calificación porcentual del Atlas.
