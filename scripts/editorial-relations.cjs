@@ -176,7 +176,11 @@ function validate(trip, { complete = false, mode } = {}) {
   const seenNumbers = new Set();
   days.forEach((day, i) => {
     const path = 'days[' + i + ']';
-    if (!dateOK(day?.date)) errors.push(problem(path + '.date', 'Fecha de jornada inválida'));
+    if (!day || typeof day !== 'object' || Array.isArray(day)) {
+      errors.push(problem(path, 'Jornada inválida: se espera un objeto'));
+      return;
+    }
+    if (!dateOK(day.date)) errors.push(problem(path + '.date', 'Fecha de jornada inválida'));
     if (i === 0 && trip.start && day.date !== trip.start)
       errors.push(problem(path + '.date', 'La primera jornada no coincide con el inicio'));
     if (i > 0 && dateOK(days[i - 1]?.date) && day.date !== nextDate(days[i - 1].date))
