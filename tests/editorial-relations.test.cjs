@@ -207,6 +207,38 @@ test('los viajes no se rechazan por compartir fechas con otros viajes', () => {
   assert.deepEqual(complaints(b), []);
 });
 
+test('modo editorial distingue borrador de cierre sin suponer completitud por campos vacíos', () => {
+  assert.deepEqual(validate({ id: 'nuevo', days: [] }, { mode: 'incremental' }), []);
+  assert.ok(hasError(validate({ id: 'nuevo', start: '2027-05-01',
+    end: '2027-05-03', days: [] }, { mode: 'complete' }), 'days'));
+  assert.ok(hasError(validate({ id: 'nuevo' }, { mode: 'aprobado' }), 'mode'));
+  const t = makeTrip();
+  delete t.days[0].n;
+  assert.ok(hasError(validate(t, { mode: 'complete' }), 'days[0].n'));
+  assert.deepEqual(validate(t, { mode: 'incremental' }), [],
+    'Un borrador puede omitir todavía el número de la primera jornada');
+});
+
+test('pernoctas alternativas: vuelo nocturno y camping declarado sin inventar hotel', () => {
+  const t = makeTrip();
+  t.hotels[0].checkIn = '2027-05-02';
+  t.days[0].hotel = null;
+  t.days[0].base = 'En vuelo';
+  assert.deepEqual(complaints(t), []);
+  t.days[0].base = 'Campamento';
+  assert.ok(hasError(complaints(t), 'days[0].hotel'));
+  t.days[0].overnightType = 'camping';
+  assert.deepEqual(complaints(t), []);
+});
+
+test('reservas estructuradas rechazan grupos repetidos y toleran prioridades nuevas', () => {
+  const t = makeTrip();
+  t.reservations.push(['Prioridad alta', [{ title: 'Museo nuevo' }]]);
+  assert.ok(hasError(complaints(t), 'reservations[1]'));
+  t.reservations[1][0] = 'Planificación flexible';
+  assert.deepEqual(complaints(t), []);
+});
+
 test('integridad dinámica de los nueve viajes principales, sin snapshots de fechas ni importes', () => {
   const window = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../modules.js'), 'utf8'), { window });
