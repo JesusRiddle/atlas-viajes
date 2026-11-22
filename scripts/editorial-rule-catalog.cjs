@@ -21,10 +21,14 @@ module.exports = Object.freeze([
     "id": "CAT-02",
     "section": "transversal",
     "requirement": "Los viajes son independientes y no se bloquean por coincidencias de fecha",
-    "coverage": "missing",
+    "coverage": "automated",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "## Convenciones universales"
+    },
+    "evidence": {
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "los viajes no se rechazan por compartir fechas"
     }
   },
   {
@@ -45,10 +49,14 @@ module.exports = Object.freeze([
     "id": "LIF-02",
     "section": "transversal",
     "requirement": "Distinguir formalmente etapas incremental y editorialmente completo",
-    "coverage": "missing",
+    "coverage": "automated",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "## Convenciones universales"
+    },
+    "evidence": {
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "modo editorial distingue borrador de cierre"
     }
   },
   {
@@ -159,10 +167,14 @@ module.exports = Object.freeze([
     "id": "MAP-01",
     "section": "mapa",
     "requirement": "Coordenadas dentro del rango geográfico y no ficticias",
-    "coverage": "missing",
+    "coverage": "partial",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 2. Mapa (`mapa`)"
+    },
+    "evidence": {
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "mapa: latitud, longitud"
     }
   },
   {
@@ -361,8 +373,8 @@ module.exports = Object.freeze([
     "requirement": "Todas las noches cubiertas, sin traslape ni pernocta fantasma",
     "coverage": "partial",
     "evidence": {
-      "file": "tests/patagonia-regression.test.cjs",
-      "contains": "los gastos por día coinciden con el presupuesto"
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "pernoctas alternativas: vuelo nocturno y camping"
     },
     "source": {
       "file": "docs/trip-editorial-guide.md",
@@ -411,10 +423,14 @@ module.exports = Object.freeze([
     "id": "DAY-02",
     "section": "dias",
     "requirement": "Numeración consecutiva sin saltos ni duplicados",
-    "coverage": "missing",
+    "coverage": "automated",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 8. Día por día (`dias`)"
+    },
+    "evidence": {
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "mutaciones de calendario detectan saltos"
     }
   },
   {
@@ -515,10 +531,14 @@ module.exports = Object.freeze([
     "id": "BUD-04",
     "section": "costes",
     "requirement": "Equivalencia MXN inmediata y tipo de cambio fechado con fuente",
-    "coverage": "missing",
+    "coverage": "partial",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 9. Presupuesto (`costes`)"
+    },
+    "evidence": {
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "divisas: gasto extranjero requiere tasa positiva"
     }
   },
   {
@@ -775,10 +795,14 @@ module.exports = Object.freeze([
     "id": "BUD-08",
     "section": "costes",
     "requirement": "Tipo de cambio tiene fecha, fuente y no simula cotización vigente",
-    "coverage": "missing",
+    "coverage": "partial",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 9. Presupuesto (`costes`)"
+    },
+    "evidence": {
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "divisas: gasto extranjero requiere tasa positiva"
     }
   },
   {
