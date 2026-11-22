@@ -27,8 +27,10 @@ function budgetCoverage(trip, transport) {
     if (!parent.budgetIncludedIn) {
       // El agrupador puede presupuestarse directamente desde su tarifa elegida,
       // aunque no tenga una partida expenses: Cinque Terre, por ejemplo.
+      // La tarifa puede seguir pendiente (price: null); su existencia estructural
+      // basta para demostrar cobertura sin inventar un importe.
       return (parent.options || []).some(option =>
-        (option.fares || []).some(fare => Number.isFinite(fare.price?.amount)));
+        Array.isArray(option.fares) && option.fares.length > 0);
     }
     ref = parent.budgetIncludedIn;
   }
@@ -80,6 +82,9 @@ test('agrupaciones presupuestarias indirectas no aceptan ciclos ni referencias h
   direct.majorTransport[0].options = [{ fares: [{ price: { amount: 35, currency: 'EUR' } }] }];
   assert.equal(budgetCoverage(direct, direct.majorTransport[1]), true,
     'Un agrupador con tarifa directa no necesita partida adicional');
+  direct.majorTransport[0].options[0].fares[0].price = null;
+  assert.equal(budgetCoverage(direct, direct.majorTransport[1]), true,
+    'Un presupuesto pendiente debe conservar su cobertura sin inventar un precio');
   direct.majorTransport[0].options = [];
   assert.equal(budgetCoverage(direct, direct.majorTransport[1]), false,
     'Sin tarifa directa ni partida el enlace queda huérfano');
