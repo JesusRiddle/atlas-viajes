@@ -62,6 +62,19 @@ test('cuando un viaje declara totales diarios, concilia exactamente con sus gast
   }
 });
 
+test('cada opción de transporte conserva conexiones contiguas sin depender del operador', () => {
+  for (const trip of trips) for (const transport of trip.majorTransport) {
+    for (const option of transport.options || []) for (const journey of option.journeys || []) {
+      assert.ok(Array.isArray(journey.segments) && journey.segments.length > 0,
+        trip.id + ': trayecto sin segmentos: ' + transport.id);
+      for (let i = 1; i < journey.segments.length; i++) {
+        assert.equal(journey.segments[i - 1].to, journey.segments[i].from,
+          trip.id + ': conexión inconexa: ' + transport.id);
+      }
+    }
+  }
+});
+
 test('portadas y actividades actuales tienen fotografía y descripción, sin fijar la cantidad', () => {
   for (const trip of trips) {
     const active = new Set([trip.cover, ...(trip.coverSlides || []),
