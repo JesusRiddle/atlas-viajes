@@ -62,7 +62,7 @@ Se inventariaron **64 obligaciones** procedentes de las nueve secciones de la gu
 | `BUD-06` | costes | Importe pendiente null distinto de cero conocido en todas las vistas | Parcial | `tests/transport-budget.test.cjs` |
 | `UI-01` | transversal | Sin NaN, undefined, overflow y anclas rotas escritorio/móvil | Automatizada (con evidencia) | `tests/browser-smoke.cjs` |
 | `UI-02` | transversal | Auditoría editorial de navegador incluida en CI normal | Automatizada (con evidencia) | `.github/workflows/atlas-checks.yml` |
-| `CAT-03` | transversal | No modificar JSON de otros viajes ni ideas históricas durante una edición aislada | Sin prueba | — |
+| `CAT-03` | transversal | No modificar JSON de otros viajes ni ideas históricas durante una edición aislada | Parcial | `tests/editorial-change-scope.test.cjs` (requiere declarar alcance en cada edición) |
 | `PAN-07` | plan | introHighlights son nombres presentes literalmente en intro | Parcial | `tests/trip-editorial.test.cjs` |
 | `PAN-08` | plan | Texto intro no incluye información de compras, precios ni reglas administrativas | Parcial | `tests/trip-editorial.test.cjs` |
 | `MAP-04` | mapa | Nombre principal en negrita y calificadores sin negrita en la vista | Automatizada (con evidencia) | `tests/browser-smoke.cjs` |
@@ -72,7 +72,7 @@ Se inventariaron **64 obligaciones** procedentes de las nueve secciones de la gu
 | `TRA-05` | traslados | Enlaces de abordaje y paradas actuales accesibles por jornada | Parcial | `tests/editorial-relations.test.cjs` |
 | `TRA-06` | traslados | Tarifa pendiente conserva null; no se inventa un costo cero | Parcial | `tests/transport-budget.test.cjs` |
 | `LOD-05` | alojamientos | Resumen X noches, Y alojamientos con plural y fuentes dinámicas | Parcial | `tests/browser-smoke.cjs` |
-| `LOD-06` | alojamientos | Candidato o cotizado no aparece como reservado en texto o presupuesto | Sin prueba | — |
+| `LOD-06` | alojamientos | Candidato o cotizado no aparece como reservado en texto o presupuesto | Parcial | `tests/editorial-lodging-audit.test.cjs` (alertas sobre contradicciones de estado explícitas) |
 | `DAY-07` | dias | Cada pie de fotografía vigente contiene 15–30 palabras concretas | Parcial | `tests/loader-regression.test.cjs` |
 | `DAY-08` | dias | Fotos externas directas HTTPS y autor/licencia según procedencia | Parcial | `tests/loader-regression.test.cjs` |
 | `DAY-09` | dias | Días parciales se renderizan sin bloquear todo el itinerario | Automatizada (con evidencia) | `tests/loader-regression.test.cjs` |
@@ -140,3 +140,12 @@ Se eliminaron **dos archivos exclusivos de destinos**: `tests/colombia-2027.test
 Se incorpora `scripts/editorial-experience-audit.cjs` con `experienceWarnings`: señala descripciones con menos de 18 palabras y pide revisión de aquellas con más de 35, sin dar por inválida una extensión gastronómica legítima. Se incluyen casos límite y uso dinámico sobre los nueve itinerarios activos. Por diseño **no bloquea el CI** en destinos heredados y **no determina** si una excepción tiene fundamento cultural. `EXP-03` cambia de `missing` a `partial` (no a automatización completa).
 
 **Recuento actualizado tras este cambio:** 20 automatizadas, 33 parciales, 3 sin prueba (`PAN-05`, `CAT-03`, `LOD-06`) y 8 externas/manuales. No interpretar los recuentos como una calificación porcentual del Atlas.
+
+
+### Auditoría de brechas · segunda ampliación (2026-11-22)
+
+- `CAT-03`: `scripts/editorial-change-scope.cjs` y su suite verifican rutas de JSON modificados frente a itinerarios explícitamente autorizados. **Es una función pura, aún no un gate obligatorio de todos los PR**: imponer que solo cambie un viaje sin conocer el alcance declarado bloquearía revisiones legítimas de varios destinos. Clasificación **parcial**.
+- `LOD-06`: `scripts/editorial-lodging-audit.cjs` detecta conflictos entre el estado textual explícito del hotel (candidato/no reservado frente a reserva confirmada) y el estado de la partida de alojamiento relacionada. **Reporte conservador, no prueba de pago o de reserva real, ni verificación de texto renderizado**. Clasificación **parcial**.
+- `PAN-05` permanece **sin prueba**. Un badge con idioma y código ISO no verifica que la divisa/idioma correspondan a todos los países del recorrido; sin metadatos de país auditables o una fuente geográfica no es correcto simular esa validación.
+
+**Recuento clasificado después de esta ampliación:** 20 automáticas, 35 parciales, 1 sin prueba y 8 externas/manuales (64 en total). Sigue sin equivaler a porcentaje de calidad. La aprobación del CI solo certifica las aserciones ejecutadas.
