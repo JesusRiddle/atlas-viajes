@@ -30,8 +30,15 @@ test('el viaje Italia 2027 mantiene introducción turística con resaltados exis
 
 test('Italia 2027: fechas, noches y viajes de ida y vuelta coherentes', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
-  assert.equal(trip.days.length, 14);
-  assert.equal(trip.bases.reduce((total, [, nights]) => total + nights, 0), 12);
+  assert.ok(trip.days.length > 0);
+  const declaredDays = (Date.parse(trip.end) - Date.parse(trip.start)) / 86400000 + 1;
+  assert.equal(trip.days.length, declaredDays);
+  const selectedHotels = new Set(trip.days.map(day => day.hotel).filter(Boolean));
+  const actualNights = trip.days.filter(day => day.hotel).length;
+  const recordedNights = trip.hotels.filter(hotel => selectedHotels.has(hotel.id))
+    .reduce((total, hotel) =>
+      total + (Date.parse(hotel.checkOut) - Date.parse(hotel.checkIn)) / 86400000, 0);
+  assert.equal(actualNights, recordedNights);
   for (let i = 0; i < trip.days.length; i++) {
     const expected = new Date(Date.parse(trip.start + 'T12:00:00Z') + i * 86400000).toISOString().slice(0, 10);
     assert.equal(trip.days[i].date, expected);
