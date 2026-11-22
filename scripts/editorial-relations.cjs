@@ -82,6 +82,60 @@ function validate(trip, { complete = false } = {}) {
   if (trip.end != null && !dateOK(trip.end)) errors.push(problem('end', 'Fecha inválida'));
   if (trip.start && trip.end && dateOK(trip.start) && dateOK(trip.end) && trip.end < trip.start)
     errors.push(problem('end', 'La fecha final precede a la inicial'));
+  // Reglas universales sin snapshots de destinos o de fechas.
+  if (trip.travelerCount != null &&
+      (!Number.isInteger(trip.travelerCount) || trip.travelerCount < 1))
+    errors.push(problem('travelerCount', 'El número de personas debe ser entero positivo'));
+  if (complete && dateOK(trip.start) && dateOK(trip.end) && !days.length)
+    errors.push(problem('days', 'Un viaje completo con fechas necesita jornadas'));
+
+  if (Array.isArray(trip.mapPoints)) {
+    const orders = new Set();
+    trip.mapPoints.forEach((point, i) => {
+      const where = 'mapPoints[' + i + ']';
+      if (!point || typeof point !== 'object') {
+        errors.push(problem(where, 'Punto del mapa inválido')); return;
+      }
+      const coords = point.coords;
+      if (!Array.isArray(coords) || coords.length !== 2 ||
+          !coords.every(Number.isFinite) ||
+          coords[0] < -90 || coords[0] > 90 || coords[1] < -180 || coords[1] > 180)
+        errors.push(problem(where + '.coords', 'Coordenadas geográficas fuera de rango'));
+      if (point.order != null) {
+        if (!Number.isInteger(point.order) || point.order < 1 || orders.has(point.order))
+          errors.push(problem(where + '.order', 'Orden de punto repetido o inválido'));
+        orders.add(point.order);
+      }
+    });
+    if (complete && orders.size && orders.size === trip.mapPoints.length &&
+        !trip.mapPoints.every((_, i) => orders.has(i + 1)))
+      errors.push(problem('mapPoints', 'La numeración de puntos debe ser consecutiva'));
+  }
+
+  if (trip.exchangeRates != null) {
+    if (!trip.exchangeRates || typeof trip.exchangeRates !== 'object' ||
+        Array.isArray(trip.exchangeRates))
+      errors.push(problem('exchangeRates', 'Tipos de cambio deben ser un objeto'));
+    else for (const [code, rate] of Object.entries(trip.exchangeRates)) {
+      if (!Intl.supportedValuesOf('currency').includes(code) ||
+          !Number.isFinite(rate) || rate <= 0)
+        errors.push(problem('exchangeRates.' + code, 'Tipo de cambio y moneda válidos requeridos'));
+    }
+  }
+  const foreignCurrencies = new Set(expenses.filter(x =>
+    Number.isFinite(x?.cost?.amount) && x.cost.currency !== 'MXN')
+    .map(x => x.cost.currency));
+  if (complete && foreignCurrencies.size) {
+    for (const currency of foreignCurrencies) {
+      if (!Number.isFinite(trip.exchangeRates?.[currency]) ||
+          trip.exchangeRates[currency] <= 0)
+        errors.push(problem('exchangeRates.' + currency, 'Falta tasa para convertir un gasto conocido'));
+      if (!dateOK(trip.exchangeRateSnapshot?.date) ||
+          !isUrl(trip.exchangeRateSnapshot?.sources?.[currency]))
+        errors.push(problem('exchangeRateSnapshot.' + currency,
+          'La conversión necesita fecha y fuente documental'));
+    }
+  }
   const seenNumbers = new Set();
   days.forEach((day, i) => {
     const path = 'days[' + i + ']';
@@ -93,7 +147,7 @@ function validate(trip, { complete = false } = {}) {
     if (i === days.length - 1 && trip.end && day.date !== trip.end)
       errors.push(problem(path + '.date', 'La última jornada no coincide con el final'));
     if (day.n != null) {
-      if (!Number.isInteger(day.n) || seenNumbers.has(day.n))
+      if (!Number.isInteger(day.n) || day.n !== i + 1 || seenNumbers.has(day.n))
         errors.push(problem(path + '.n', 'Número de jornada duplicado o inválido'));
       seenNumbers.add(day.n);
     }
@@ -113,8 +167,22 @@ function validate(trip, { complete = false } = {}) {
       day.transportRefs.forEach((id, j) => { if (!transportIds.has(id))
         errors.push(problem(path + '.transportRefs[' + j + ']', 'Transporte inexistente')); });
   });
+  // Una noche con hotel disponible pero sin elección en el itinerario es una
+  // inconsistencia. No obligar a dormir en hotel durante vuelos nocturnos,
+  // campamentos u otros días sin oferta hotelera registrada.
+  if (complete) days.forEach((day, i) => {
+    if (!dateOK(day?.date) || !dateOK(trip.end) || day.date >= trip.end ||
+        day.hotel != null) return;
+    if (hotels.some(h => dateOK(h?.checkIn) && dateOK(h?.checkOut) &&
+        h.checkIn <= day.date && day.date < h.checkOut))
+      errors.push(problem('days[' + i + '].hotel',
+        'Existe noche de alojamiento pero no se asignó ninguna opción'));
+  });
   expenses.forEach((expense, i) => {
     const path = 'expenses[' + i + ']';
+    if (expense?.status != null &&
+        !['pending', 'quoted', 'estimated', 'confirmed', 'reserved', 'purchased', 'paid'].includes(expense.status))
+      errors.push(problem(path + '.status', 'Estado de gasto desconocido'));
     if (expense?.hotelId && !hotelIds.has(expense.hotelId))
       errors.push(problem(path + '.hotelId', 'Gasto vinculado a un alojamiento inexistente'));
     if (expense?.date != null && !dateOK(expense.date))
@@ -129,12 +197,15 @@ function validate(trip, { complete = false } = {}) {
     }
   });
   groups.forEach((group, i) => {
-    if (!Array.isArray(group) || typeof group[0] !== 'string' || !Array.isArray(group[1])) {
+    if (!Array.isArray(group) || typeof group[0] !== 'string' || !group[0].trim() || !Array.isArray(group[1])) {
       errors.push(problem('reservations[' + i + ']', 'Grupo de reservas inválido')); return;
     }
     group[1].forEach((reservation, j) => {
       if (!reservation || typeof reservation.title !== 'string' || !reservation.title.trim())
         errors.push(problem('reservations[' + i + '][' + j + ']', 'Reserva sin título'));
+      if (reservation?.status != null &&
+          !['pending', 'quoted', 'estimated', 'confirmed', 'reserved', 'purchased'].includes(reservation.status))
+        errors.push(problem('reservations[' + i + '][' + j + '].status', 'Estado desconocido'));
       if (reservation?.links != null && !Array.isArray(reservation.links))
         errors.push(problem('reservations[' + i + '][' + j + '].links', 'Enlaces inválidos'));
       if (Array.isArray(reservation?.links)) reservation.links.forEach((link, k) => {
