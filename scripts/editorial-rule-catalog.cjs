@@ -1,7 +1,6 @@
 'use strict';
-// Inventario trazable, no certificado de cobertura exhaustiva: automated indica
-// evidencia de un test en CI, partial cobertura incompleta, manual verificación externa,
-// missing prueba aún no implementada. Fuentes enlazadas al capítulo rector.
+// Registro trazable: automated=prueba CI existente, partial=cobertura incompleta,
+// missing=sin contrato comprobable, manual=verificación humana/externa.
 module.exports = Object.freeze([
   {
     "id": "CAT-01",
@@ -247,10 +246,14 @@ module.exports = Object.freeze([
     "id": "EXP-01",
     "section": "experiencias",
     "requirement": "Experiencias específicas sin relleno y extensión recomendada",
-    "coverage": "missing",
+    "coverage": "partial",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 4. Experiencias (`experiencias`)"
+    },
+    "evidence": {
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "experiencias y enlaces opcionales se verifican"
     }
   },
   {
@@ -691,10 +694,14 @@ module.exports = Object.freeze([
     "id": "TRA-05",
     "section": "traslados",
     "requirement": "Enlaces de abordaje y paradas actuales accesibles por jornada",
-    "coverage": "missing",
+    "coverage": "partial",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 6. Traslados (`traslados`)"
+    },
+    "evidence": {
+      "file": "tests/editorial-relations.test.cjs",
+      "contains": "experiencias y enlaces opcionales se verifican"
     }
   },
   {
