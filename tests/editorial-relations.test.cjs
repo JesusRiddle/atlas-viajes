@@ -119,6 +119,90 @@ test('fotografías: permite agregar o quitar actividades, rechaza referencias in
   assert.ok(hasError(photos(t, catalog), 'days[0].places[0]'));
 });
 
+test('mutaciones de calendario detectan saltos, ausencia de jornadas y huecos de hotel', () => {
+  const day = makeTrip();
+  day.days[1].n = 8;
+  assert.ok(hasError(complaints(day), 'days[1].n'));
+  day.days[1].n = 2;
+  day.days[1].hotel = null;
+  assert.ok(hasError(complaints(day), 'days[1].hotel'));
+  day.days[1].hotel = 'hotel-a';
+  day.days = [];
+  assert.ok(hasError(complaints(day), 'days'));
+  assert.deepEqual(validate({ id: 'idea', days: [] }), [],
+    'Un viaje incremental puede tener jornadas por definir');
+});
+
+test('mapa: latitud, longitud, orden y duplicaciones se validan sin exigir ruta fija', () => {
+  const t = makeTrip();
+  t.mapPoints = [
+    { name: 'Inicio', coords: [19.43, -99.13], order: 2 },
+    { name: 'Destino', coords: [45.46, 9.19], order: 1 }
+  ];
+  assert.deepEqual(complaints(t), [], 'El array no tiene que estar ordenado físicamente');
+  t.mapPoints[0].coords[0] = 999;
+  assert.ok(hasError(complaints(t), 'mapPoints[0].coords'));
+  t.mapPoints[0].coords[0] = 19.43;
+  t.mapPoints[1].order = 2;
+  assert.ok(hasError(complaints(t), 'mapPoints[1].order'));
+  t.mapPoints[1].order = 3;
+  assert.ok(hasError(complaints(t), 'mapPoints'));
+  t.mapPoints[1].order = 1;
+  t.mapPoints.push({ name: 'Otra parada', coords: [35.6, 139.7], order: 3 });
+  assert.deepEqual(complaints(t), [], 'Agregar una parada coherente debe ser válido');
+});
+
+test('personas, reservas y gastos: validación estricta sin confundir pendientes', () => {
+  const t = makeTrip();
+  t.travelerCount = -2;
+  assert.ok(hasError(complaints(t), 'travelerCount'));
+  t.travelerCount = 2;
+  t.reservations[0][0] = '';
+  assert.ok(hasError(complaints(t), 'reservations[0]'));
+  t.reservations[0][0] = 'Prioridad alta';
+  t.reservations[0][1][0].status = 'confirmed';
+  assert.deepEqual(complaints(t), []);
+  t.reservations[0][1][0].status = 'free';
+  assert.ok(hasError(complaints(t), '.status'));
+  t.reservations[0][1][0].status = 'pending';
+  t.expenses[0].status = 'maybe';
+  assert.ok(hasError(complaints(t), 'expenses[0].status'));
+  t.expenses[0].status = 'estimated';
+  assert.deepEqual(complaints(t), []);
+});
+
+test('divisas: gasto extranjero requiere tasa positiva y respaldo fechado, sin fijar un tipo de cambio', () => {
+  const t = makeTrip();
+  t.exchangeRates = { EUR: 20.5 };
+  t.exchangeRateSnapshot = {
+    date: '2027-04-20', sources: { EUR: 'https://example.com/fx' }
+  };
+  assert.deepEqual(complaints(t), []);
+  t.exchangeRates.EUR = 0;
+  assert.ok(hasError(complaints(t), 'exchangeRates.EUR'));
+  t.exchangeRates.EUR = 20.5;
+  t.exchangeRateSnapshot.sources.EUR = '';
+  assert.ok(hasError(complaints(t), 'exchangeRateSnapshot.EUR'));
+  t.exchangeRateSnapshot.sources.EUR = 'https://example.com/fx';
+  t.exchangeRateSnapshot.date = '2027-02-29';
+  assert.ok(hasError(complaints(t), 'exchangeRateSnapshot.EUR'));
+  t.exchangeRateSnapshot.date = '2027-04-20';
+  t.expenses[0].cost.amount = null;
+  delete t.exchangeRates.EUR;
+  assert.deepEqual(complaints(t), [], 'Sin precio conocido no se inventa conversión');
+  t.expenses[0].cost.amount = 0;
+  assert.ok(hasError(complaints(t), 'exchangeRates.EUR'),
+    'Cero conocido también es un importe definido');
+});
+
+test('los viajes no se rechazan por compartir fechas con otros viajes', () => {
+  const a = makeTrip();
+  const b = structuredClone(a);
+  b.id = 'otro-viaje';
+  assert.deepEqual(complaints(a), []);
+  assert.deepEqual(complaints(b), []);
+});
+
 test('integridad dinámica de los nueve viajes principales, sin snapshots de fechas ni importes', () => {
   const window = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../modules.js'), 'utf8'), { window });
