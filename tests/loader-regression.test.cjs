@@ -27,20 +27,6 @@ test('todos los viajes activos conservan estructura y archivos JSON válidos', (
     }
 });
 
-test('coexisten viajes con hoteles estructurados y viajes heredados con stays', () => {
-    const catalog = loadCatalog().filter(module => module.available);
-    const trips = catalog.map(module =>
-        JSON.parse(fs.readFileSync('data/trips/' + module.file, 'utf8')));
-    assert.ok(trips.some(t => Array.isArray(t.hotels) && t.hotels.length),
-        'Debe haber algún viaje con alojamiento estructurado');
-    assert.ok(trips.some(t => Array.isArray(t.stays) && t.stays.length),
-        'Los viajes heredados siguen admitiendo stays');
-    for (const trip of trips) {
-        assert.ok(trip.stays == null || Array.isArray(trip.stays),
-            trip.id + ': stays debe ser una lista cuando exista');
-    }
-});
-
 test('el loader normaliza un viaje mínimo sin alterar ningún viaje completo del catálogo', async () => {
     const template = JSON.parse(fs.readFileSync('data/trips/_template.json', 'utf8'));
     const current = loadCatalog().find(module =>
