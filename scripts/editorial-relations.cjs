@@ -1,11 +1,19 @@
 'use strict';
 // Contratos estructurales del Atlas. No contiene IDs de viajes ni snapshots de precios.
+const { URL } = require('node:url');
 const problem = (path, message) => ({ path, message });
 const dateOK = input => typeof input === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(input) &&
   !Number.isNaN(Date.parse(input + 'T00:00:00Z')) &&
   new Date(input + 'T00:00:00Z').toISOString().slice(0, 10) === input;
 const nextDate = date => new Date(Date.parse(date + 'T00:00:00Z') + 86400000).toISOString().slice(0, 10);
-const isUrl = input => typeof input === 'string' && /^https?:\/\/[^\s/]+(?:\/[^\s]*)?$/i.test(input);
+const isUrl = input => {
+  if (typeof input !== 'string' || !input.trim() || /\s/.test(input)) return false;
+  try {
+    const parsed = new URL(input);
+    return (parsed.protocol === 'http:' || parsed.protocol === 'https:') &&
+      !!parsed.hostname && !parsed.username && !parsed.password;
+  } catch { return false; }
+};
 function unique(items, path, errors) {
   const seen = new Set();
   items.forEach((item, index) => {
@@ -16,7 +24,7 @@ function unique(items, path, errors) {
     else seen.add(item.id);
   });
 }
-function photos(trip, catalog) {
+function photos(trip, catalog, { complete = false } = {}) {
   const errors = [];
   if (!catalog || typeof catalog !== 'object' || Array.isArray(catalog))
     return [problem('photos', 'Catálogo fotográfico no válido')];
@@ -33,7 +41,7 @@ function photos(trip, catalog) {
         day[field].forEach((key, j) => {
           const location = 'days[' + i + '].' + field + '[' + j + ']';
           references.push({ key, path: location });
-          if (field === 'places' && trip.placeDescriptions != null &&
+          if (field === 'places' && (complete || trip.placeDescriptions != null) &&
               (typeof trip.placeDescriptions[key] !== 'string' ||
                !trip.placeDescriptions[key].trim()))
             errors.push(problem(location, 'Falta pie de foto de la actividad'));
@@ -101,7 +109,9 @@ function validate(trip, { complete = false, mode } = {}) {
       if (!isUrl(link?.url)) errors.push(problem('hotels[' + i + '].links[' + j + ']', 'URL inválida'));
     });
   }
+  if (complete && trip.start == null) errors.push(problem('start', 'Fecha inicial requerida al cerrar'));
   if (trip.start != null && !dateOK(trip.start)) errors.push(problem('start', 'Fecha inválida'));
+  if (complete && trip.end == null) errors.push(problem('end', 'Fecha final requerida al cerrar'));
   if (trip.end != null && !dateOK(trip.end)) errors.push(problem('end', 'Fecha inválida'));
   if (trip.start && trip.end && dateOK(trip.start) && dateOK(trip.end) && trip.end < trip.start)
     errors.push(problem('end', 'La fecha final precede a la inicial'));
@@ -166,7 +176,7 @@ function validate(trip, { complete = false, mode } = {}) {
   const seenNumbers = new Set();
   days.forEach((day, i) => {
     const path = 'days[' + i + ']';
-    if (!dateOK(day?.date)) { errors.push(problem(path + '.date', 'Fecha de jornada inválida')); return; }
+    if (!dateOK(day?.date)) errors.push(problem(path + '.date', 'Fecha de jornada inválida'));
     if (i === 0 && trip.start && day.date !== trip.start)
       errors.push(problem(path + '.date', 'La primera jornada no coincide con el inicio'));
     if (i > 0 && dateOK(days[i - 1]?.date) && day.date !== nextDate(days[i - 1].date))
