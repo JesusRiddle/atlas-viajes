@@ -146,7 +146,7 @@ module.exports = Object.freeze([
     "id": "PAN-05",
     "section": "plan",
     "requirement": "Correspondencia idioma, divisa y país del recorrido",
-    "coverage": "missing",
+    "coverage": "manual",
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 1. Panorama del viaje (`plan`)"
