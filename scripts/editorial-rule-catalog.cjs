@@ -621,7 +621,7 @@ module.exports = Object.freeze([
     "coverage": "partial",
     "evidence": {
       "file": "tests/trip-editorial.test.cjs",
-      "contains": "mantiene introducción turística con resaltados existentes"
+      "contains": "resaltados editoriales de todos los viajes vigentes"
     },
     "source": {
       "file": "docs/trip-editorial-guide.md",
