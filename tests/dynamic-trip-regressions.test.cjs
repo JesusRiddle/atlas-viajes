@@ -12,6 +12,23 @@ const trips = modules.map(m => JSON.parse(fs.readFileSync('data/trips/' + m.file
 const catalog = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
 const msDay = 86400000;
 
+// Un transporte puede integrarse en una partida o en un grupo de transportes.
+// Resolver hasta el gasto evita ciclos y referencias indirectas huérfanas.
+function budgetCoverage(trip, transport) {
+  const expenses = new Set((trip.expenses || []).map(e => e.id));
+  const items = new Map((trip.majorTransport || []).map(t => [t.id, t]));
+  const visited = new Set([transport.id]);
+  let ref = transport.budgetIncludedIn;
+  while (ref) {
+    if (expenses.has(ref)) return true;
+    if (visited.has(ref) || !items.has(ref)) return false;
+    visited.add(ref);
+    ref = items.get(ref).budgetIncludedIn;
+  }
+  return false;
+}
+
+
 test('contratos de viaje completos para todos los destinos actuales, sin snapshots de agenda', () => {
   assert.ok(trips.length);
   for (const trip of trips) {
@@ -33,16 +50,27 @@ test('contratos de viaje completos para todos los destinos actuales, sin snapsho
 
 test('viajes de ida y vuelta, tarifas y agrupaciones admiten cambios sin duplicar referencias', () => {
   for (const trip of trips) {
-    const ids = new Set(trip.expenses.map(e => e.id));
-    const grouped = new Set(trip.majorTransport.map(t => t.id));
     for (const item of trip.majorTransport) {
       if (!item.budgetIncludedIn) continue;
-      assert.ok(ids.has(item.budgetIncludedIn) || grouped.has(item.budgetIncludedIn),
-        trip.id + ': transporte con presupuesto inexistente: ' + item.id);
+      assert.ok(budgetCoverage(trip, item),
+        trip.id + ': transporte sin cobertura presupuestaria final: ' + item.id);
     }
     // No se exige una cantidad de vuelos, trenes, hoteles ni actividades.
     // Un nuevo transporte es válido si sus referencias y cobertura presupuestaria son coherentes.
   }
+});
+
+test('agrupaciones presupuestarias indirectas no aceptan ciclos ni referencias huérfanas', () => {
+  const t = { expenses: [{ id: 'presupuesto-ferrocarril' }],
+    majorTransport: [
+      { id: 'abono', budgetIncludedIn: 'presupuesto-ferrocarril' },
+      { id: 'tramo-local', budgetIncludedIn: 'abono' }
+    ] };
+  assert.equal(budgetCoverage(t, t.majorTransport[1]), true);
+  t.majorTransport[0].budgetIncludedIn = 'tramo-local';
+  assert.equal(budgetCoverage(t, t.majorTransport[1]), false);
+  t.majorTransport[0].budgetIncludedIn = 'partida-inexistente';
+  assert.equal(budgetCoverage(t, t.majorTransport[1]), false);
 });
 
 test('cuando un viaje declara totales diarios, concilia exactamente con sus gastos', () => {
