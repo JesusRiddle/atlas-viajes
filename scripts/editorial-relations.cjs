@@ -42,7 +42,7 @@ function photos(trip, catalog, { complete = false } = {}) {
           const location = 'days[' + i + '].' + field + '[' + j + ']';
           references.push({ key, path: location });
           if (field === 'places' && (complete || trip.placeDescriptions != null) &&
-              (typeof trip.placeDescriptions[key] !== 'string' ||
+              (typeof trip.placeDescriptions?.[key] !== 'string' ||
                !trip.placeDescriptions[key].trim()))
             errors.push(problem(location, 'Falta pie de foto de la actividad'));
         });
