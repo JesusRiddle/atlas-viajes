@@ -670,7 +670,11 @@ module.exports = Object.freeze([
     "id": "EXP-03",
     "section": "experiencias",
     "requirement": "Descripción de experiencias 18–35 palabras, salvo ampliaciones justificadas",
-    "coverage": "missing",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/editorial-experience-audit.test.cjs",
+      "contains": "experiencias: longitud recomendada y excepciones bajo revisión"
+    },
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 4. Experiencias (`experiencias`)"
