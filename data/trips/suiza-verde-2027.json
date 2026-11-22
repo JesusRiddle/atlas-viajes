@@ -444,11 +444,11 @@
       "date": "2027-06-22",
       "title": "Oeschinensee y Blausee opcional",
       "base": "Grindelwald",
-      "am": "1. Salir de Grindelwald hacia Interlaken Ost, Spiez y Kandersteg según la conexión real del día.\n2. Desde Kandersteg, llegar a la estación inferior de la telecabina Oeschinensee según transporte local disponible.",
-      "pm": "1. Subir al sector del lago Oeschinensee con la telecabina si está en servicio y continuar por la ruta peatonal habilitada.\n2. Disfrutar sin prisas de Oeschinensee y regresar a Kandersteg.\n3. *Opcional:* Si los horarios y la energía lo permiten, tomar el autobús 230 hacia Blausee BE y caminar aproximadamente 350 m hasta el parque natural. Dedicar 45–90 minutos al lago de aguas cristalinas y sus senderos boscosos; no recortar Oeschinensee para forzar esta visita.\n4. Volver desde Blausee BE hacia Frutigen en autobús y enlazar con los trenes de regreso a Grindelwald. Si se descarta Blausee, regresar directamente desde Kandersteg.",
+      "am": "1. Salir temprano de Grindelwald hacia Interlaken Ost, Spiez y Kandersteg según las conexiones SBB que se publiquen para el martes 22 de junio.\n2. Desde Kandersteg, llegar a la estación inferior de la telecabina Oeschinensee y subir por la mañana, sujeto a operación, entrada horaria y acceso peatonal habilitado.\n3. Caminar hasta el lago y disfrutar sin prisas de las vistas; la visita a Oeschinensee es la prioridad del día.",
+      "pm": "1. Completar la visita a Oeschinensee y bajar en telecabina a Kandersteg sin apurar el último descenso.\n2. *Blausee opcional:* Si sobra tiempo y hay conexión útil de regreso, tomar el autobús regional desde Kandersteg Bahnhof hasta Blausee BE. Caminar unos 350 m desde la parada hasta el lago (incluye el acceso dentro del parque) y disfrutar 45–90 minutos de sus aguas cristalinas y senderos forestales.\n3. Tras Blausee, tomar autobús hacia Frutigen Bahnhof y trenes vía Spiez e Interlaken Ost a Grindelwald. Si el tiempo o las conexiones no alcanzan, volver directamente desde Kandersteg sin añadir Blausee.",
       "night": "1. Noche final en Grindelwald, organizar maleta para traslado a Zermatt al día siguiente.",
-      "mobility": "• *Grindelwald → Kandersteg:* Tren vía Interlaken Ost y Spiez, con transbordos a verificar en SBB; es una excursión interregional.\n• *Kandersteg → Oeschinensee:* Telecabina aparte del ferrocarril; comprobar franjas y acceso peatonal habilitado.\n• *Blausee opcional:* Desde Kandersteg Bahnhof tomar autobús regional 230 hasta Blausee BE; caminar unos 350 m a la entrada. Para regresar hacia Grindelwald, usar autobús hacia Frutigen Bahnhof y después trenes vía Spiez/Interlaken Ost. Verificar frecuencias y conexiones exactas del 22 junio 2027; no asumir servicio continuo.",
-      "note": "• *Prioridad:* Oeschinensee es la actividad principal; Blausee es complemento opcional solo si sobra tiempo y hay conexiones cómodas.\n• *Seguridad:* Senderos altos en Oeschinensee pueden permanecer cerrados en junio por nieve, desprendimientos o mantenimiento.\n• *Blausee:* Parque con entrada de pago separada; confirmar tarifa, horarios y disponibilidad de paseos en barca para 2027. El descuento, si corresponde, depende del pase elegido.\n• *Plan B:* Si el acceso a Oeschinensee no es seguro, considerar Blausee como alternativa más sencilla, sujeto a horarios y condiciones.",
+      "mobility": "• *Grindelwald → Kandersteg:* Trenes vía Interlaken Ost y Spiez, con transbordos a verificar en SBB; excursión interregional.\n• *Kandersteg → Oeschinensee:* Telecabina con billete separado; horario estival anunciado para el 22 junio 2027 de 08:30 a 18:00, sujeto a cambios meteorológicos y operativos. Verificar posible reserva de franja y acceso al lago.\n• *Regreso A (sin Blausee):* Kandersteg → Spiez → Interlaken Ost → Grindelwald.\n• *Regreso B (con Blausee):* Autobús Kandersteg Bahnhof → Blausee BE y después autobús Blausee BE → Frutigen Bahnhof; trenes vía Spiez/Interlaken Ost a Grindelwald. Confirmar número de línea, frecuencias, último autobús y cobertura del pase para 2027 en SBB; no asumir que el tren de regreso sale de Kandersteg.",
+      "note": "• *Prioridad:* Oeschinensee ocupa la mañana y el inicio de la tarde; Blausee es complemento opcional y nunca obliga a recortar la experiencia principal.\n• *Seguridad:* Senderos altos en Oeschinensee pueden permanecer cerrados en junio por nieve, desprendimientos o mantenimiento.\n• *Blausee:* Entrada general actualmente anunciada para adulto entre semana: CHF 8 antes de las 16:00 y CHF 6 después; valores indicativos, no cotización para junio 2027. Presupuestar por separado entrada y autobús según pase. No duplicar pasajes cubiertos por el fondo ferroviario.\n• *Decisión:* Comprobar el mismo día tiempo, último autobús útil Blausee BE → Frutigen, conexión ferroviaria a Grindelwald y energía antes de comprometer la visita.\n• *Plan B:* Si Oeschinensee no es seguro por condiciones de acceso, considerar Blausee como alternativa de menor esfuerzo y ajustar el día.",
       "spend": null,
       "places": [
         "oeschinensee",
@@ -1263,6 +1263,19 @@
       },
       "status": "estimated",
       "notes": "EXCLUIDO del total principal. Funicular Sunnegga y paseo a Leisee solo si no se utiliza el día para recuperar Gornergrat. Precio y descuentos pendientes de cotización."
+    },
+    {
+      "id": "activity-blausee-optional",
+      "category": "activities",
+      "concept": "Blausee · entrada opcional (22 junio)",
+      "date": "2027-06-22",
+      "optional": true,
+      "cost": {
+        "amount": 8,
+        "currency": "CHF"
+      },
+      "status": "estimated",
+      "notes": "EXCLUIDO del total principal. Tarifa de referencia general adulto entre semana, vigente en noviembre 2026: CHF 8 antes de las 16:00 o CHF 6 después. Para junio 2027 confirmar precio, horario, descuentos y posibles costos de autobús según pase; no sumar el transporte dos veces si queda cubierto en la bolsa ferroviaria."
     }
   ],
   "majorTransport": [
@@ -2065,7 +2078,7 @@
     {
       "id": "oeschinensee",
       "type": "train",
-      "title": "Grindelwald ↔ Kandersteg / Oeschinensee",
+      "title": "Grindelwald ↔ Kandersteg / Oeschinensee · Blausee opcional",
       "day": 11,
       "selectedOption": "A",
       "options": [
@@ -2112,13 +2125,76 @@
               "refunds": "Por confirmar antes de comprar"
             }
           ],
-          "notes": "Tren ida/vuelta hasta Kandersteg, con transbordos según SBB. Telecabina Kandersteg–Oeschinensee y sendero NO incluidos."
+          "notes": "Plan A: tren de Grindelwald a Kandersteg y regreso desde Kandersteg; telecabina Oeschinensee y sendero no incluidos. Elegir este plan cuando se descarte Blausee."
+        },
+        {
+          "id": "B",
+          "provider": "SBB / autobús regional · Blausee opcional",
+          "status": "planning",
+          "selectedFare": "pending",
+          "journeys": [
+            {
+              "direction": "outbound",
+              "segments": [
+                {
+                  "from": "Grindelwald",
+                  "to": "Kandersteg",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            },
+            {
+              "direction": "return",
+              "segments": [
+                {
+                  "from": "Kandersteg Bahnhof",
+                  "to": "Blausee BE",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Autobús regional · línea por confirmar en 2027"
+                },
+                {
+                  "from": "Blausee BE",
+                  "to": "Frutigen Bahnhof",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "Autobús regional · línea por confirmar en 2027"
+                },
+                {
+                  "from": "Frutigen",
+                  "to": "Grindelwald (vía Spiez e Interlaken Ost)",
+                  "departure": null,
+                  "arrival": null,
+                  "operator": "SBB / operadores regionales"
+                }
+              ]
+            }
+          ],
+          "fares": [
+            {
+              "id": "pending",
+              "name": "Billetes y cobertura del pase por confirmar",
+              "price": {
+                "amount": null,
+                "currency": "CHF"
+              },
+              "changes": "Según tarifa y operador",
+              "refunds": "Por confirmar antes de comprar"
+            }
+          ],
+          "notes": "Plan B solo si se visita Blausee. Comparar el recorrido completo con el Plan A, sin sumar ambos regresos. La entrada a Blausee y la telecabina de Oeschinensee son aparte."
         }
       ],
       "links": [
         {
           "label": "Horarios y billetes oficiales",
           "url": "https://www.sbb.ch/en"
+        },
+        {
+          "label": "Blausee · acceso en transporte público",
+          "url": "https://www.blausee.ch/en/welcome/"
         }
       ],
       "boardingLocations": [
@@ -2129,10 +2205,18 @@
         {
           "name": "Kandersteg Bahnhof",
           "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kandersteg%20Bahnhof%20Switzerland"
+        },
+        {
+          "name": "Blausee BE (parada de autobús)",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Blausee%20BE%20bus%20stop%20Switzerland"
+        },
+        {
+          "name": "Frutigen Bahnhof",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=Frutigen%20Bahnhof%20Switzerland"
         }
       ],
-      "ticketGuide": "Buscar en la web del operador o SBB para la fecha y clase reales; confirmar ida/vuelta, descuento y condiciones antes de pagar. El importe sigue pendiente.",
-      "notes": "Tren ida/vuelta hasta Kandersteg, con transbordos según SBB. Telecabina Kandersteg–Oeschinensee y sendero NO incluidos.",
+      "ticketGuide": "Verificar ida y vuelta completas y condiciones de cada tarifa en SBB. Con Blausee, seleccionar plan B con retorno vía Frutigen; no reutilizar un billete restringido Kandersteg–Grindelwald sin comprobar validez. Entradas y telecabina aparte.",
+      "notes": "Seleccionar Plan A sin Blausee o Plan B con desvío por Blausee BE y Frutigen; transporte cubierto provisionalmente por la bolsa ferroviaria CHF 650, pendiente de revalidación. No sumar ambas alternativas ni incluir entradas y remontes en el billete regular.",
       "budgetIncludedIn": "rail-provision"
     },
     {
@@ -2428,6 +2512,10 @@
     {
       "title": "Remontes y barcos",
       "note": "Titlis, First, Gornergrat, Oeschinensee, Giessbach y Sunnegga pueden quedar fuera de cobertura total. Revisar área de validez del pase y suplementos individuales antes de comprar."
+    },
+    {
+      "title": "Blausee · visita opcional el 22 junio",
+      "note": "La entrada al parque es independiente del transporte. Precio de referencia para adulto entre semana: CHF 8, o CHF 6 después de las 16:00 (consultado noviembre 2026), sin asumir tarifa 2027. Confirmar si el pase ferroviario cubre los autobuses vía Kandersteg y Frutigen; no duplicar esos trayectos en el presupuesto. Si no hay conexión útil, omitir Blausee."
     }
   ],
   "attractionTerms": [],
@@ -2722,7 +2810,7 @@
     "marginMXN": 20000,
     "useBudgetRange": true,
     "referenceFlightMXN": 23300.14,
-    "notes": "Proyección global de una persona, vuelo cotizado sin comprar y resto estimado. Se reserva un fondo de 650 CHF para transporte regular y 410 CHF para remontes y entradas, pero NO hay pase elegido ni tarifas junio 2027 completas. Intervalo de sensibilidad 118 a 157 mil MXN; no garantiza precio ni disponibilidad. Extras opcionales fuera."
+    "notes": "Proyección global de una persona, vuelo cotizado sin comprar y resto estimado. Se reserva un fondo de 650 CHF para transporte regular y 410 CHF para remontes y entradas, pero NO hay pase elegido ni tarifas junio 2027 completas. Intervalo de sensibilidad 118 a 157 mil MXN; no garantiza precio ni disponibilidad. Extras opcionales fuera. Blausee opcional excluido: entrada de referencia CHF 8 (o CHF 6 después de las 16:00) y eventual transporte adicional, sujeto a pase y horarios."
   },
   "hotels": [
     {
@@ -2981,14 +3069,17 @@
     "https://www.tschuggen-grindelwald.ch/en/zimmer/",
     "https://www.hotel-waldstaetterhof.ch/en/zimmer",
     "https://help.myswitzerland.com/hc/en-us/articles/213130669-How-much-do-lunch-and-dinner-cost-in-a-restaurant",
-    "https://wise.com/gb/currency-converter/chf-to-mxn-rate/history/16-11-2026"
+    "https://wise.com/gb/currency-converter/chf-to-mxn-rate/history/16-11-2026",
+    "https://www.blausee.ch/en/welcome/",
+    "https://www.blausee.ch/en/welcome/faq/",
+    "https://www.oeschinensee.ch/en/tarife-fahrplan/"
   ],
   "sourceNote": "Clima: referencias de MeteoSwiss y clima suizo por altitud, no pronóstico de junio de 2027. Luz: cálculo astronómico local de Zúrich en junio (CEST, UTC+2). Entrada: SEM Suiza, normativa UE de pasaportes, EES (operativo desde 10 abril 2026) y ETIAS (a noviembre 2026 aún no operativo); verificar de nuevo antes de viajar. Electricidad: Switzerland Tourism, tomas J 230 V/50 Hz.",
   "budgetRange": [
     118000,
     157000
   ],
-  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,006 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.08 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha. Sunnegga/Leisee figura como actividad opcional con costo pendiente, excluida del total y separada del billete de Gornergrat.",
+  "budgetNote": "Rango global estimado $118,000–$157,000 MXN para 16 días, 14 noches, una persona; centro calculado ≈ $138,006 MXN. Solo el vuelo $23,300.14 MXN fue cotizado en noviembre 2026; hoteles, pase, billetes, entradas y comidas son provisiones no reservadas. Tipo de cambio CHF 1 = $22.08 MXN, 16 noviembre 2026. El tren regular y barco se presupuestan una sola vez en fondo CHF 650 y los remontes/entradas en CHF 410. Confirmar precios y pases reales; fondos susceptibles de insuficiencia, especialmente Jungfraujoch. Sunnegga opcional excluido. Las entradas y remontes CHF 410 se distribuyen como provisiones por cada jornada; la bolsa global de trenes CHF 650 no se asigna arbitrariamente a una sola fecha. Sunnegga/Leisee figura como actividad opcional con costo pendiente, excluida del total y separada del billete de Gornergrat. Blausee (22 junio) es opcional y está EXCLUIDO de los $118,000–$157,000 MXN: entrada referencial CHF 8 (≈ $177 MXN al cambio de planeación) o CHF 6 después de las 16:00, más eventual diferencia de transporte según pase y ruta; no sumarla automáticamente al fondo CHF 410 de actividades.",
   "placeDescriptions": {
     "zurich": "A orillas del Limmat, las fachadas históricas y las torres del Grossmünster dibujan uno de los paseos urbanos más agradables de Zúrich.",
     "swiss27-lindt": "Una enorme fuente de chocolate recibe a los visitantes en el museo Lindt, dedicado a la historia, las técnicas y los sabores del cacao.",
@@ -3077,7 +3168,7 @@
     ],
     [
       "Regla de no duplicación",
-      "Los 13 traslados terrestres de majorTransport están cubiertos por provisiones en expenses. El vuelo se suma solo una vez. Sunnegga es opcional y no está costeado."
+      "Los 13 traslados terrestres de majorTransport se cubren provisionalmente con las provisiones de expenses, sin sumar como viajes independientes las alternativas A/B de Kandersteg y Blausee. El vuelo se suma solo una vez. Sunnegga y Blausee son opcionales, con costos separados y excluidos del total principal."
     ],
     [
       "Reserva Jungfraujoch",
