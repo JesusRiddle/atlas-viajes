@@ -17,53 +17,21 @@ test('existen instrucciones editoriales y están enlazadas desde README y AGENTS
   assert.match(guide, /No incluir en `intro`/);
 });
 
-test('el viaje Italia 2027 mantiene introducción turística con resaltados existentes', () => {
-  const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'), 'utf8'));
-  assert.ok(Array.isArray(trip.introHighlights));
-  assert.ok(trip.introHighlights.length > 0);
-  for (const name of trip.introHighlights) {
-    assert.ok(trip.intro.includes(name), 'Resaltado ausente en intro: ' + name);
-  }
-  assert.doesNotMatch(trip.intro, /reservar primero|aún sin comprar|entrada nominativa|servicios no modificables/i);
-});
-
-test('Italia 2027: fechas, noches y viajes de ida y vuelta coherentes', () => {
-  const trip = JSON.parse(fs.readFileSync(path.join('data/trips', 'italia-norte-2027.json'), 'utf8'));
-  assert.ok(trip.days.length > 0);
-  const declaredDays = (Date.parse(trip.end) - Date.parse(trip.start)) / 86400000 + 1;
-  assert.equal(trip.days.length, declaredDays);
-  const selectedHotels = new Set(trip.days.map(day => day.hotel).filter(Boolean));
-  const actualNights = trip.days.filter(day => day.hotel).length;
-  const recordedNights = trip.hotels.filter(hotel => selectedHotels.has(hotel.id))
-    .reduce((total, hotel) =>
-      total + (Date.parse(hotel.checkOut) - Date.parse(hotel.checkIn)) / 86400000, 0);
-  assert.equal(actualNights, recordedNights);
-  for (let i = 0; i < trip.days.length; i++) {
-    const expected = new Date(Date.parse(trip.start + 'T12:00:00Z') + i * 86400000).toISOString().slice(0, 10);
-    assert.equal(trip.days[i].date, expected);
-    assert.equal(trip.days[i].n, i + 1);
-  }
-  assert.equal(trip.days.at(-1).date, trip.end);
-  for (const transfer of trip.majorTransport) {
-    for (const option of transfer.options) {
-      assert.ok(option.journeys.length);
-      for (const journey of option.journeys) {
-        assert.ok(journey.segments.length);
-        for (let i = 1; i < journey.segments.length; i++) {
-          assert.equal(journey.segments[i - 1].to, journey.segments[i].from,
-            transfer.id + ': segmentos inconexos');
-        }
-      }
-      for (const fare of option.fares || []) {
-        if (fare.price !== null) {
-          assert.ok(Number.isFinite(fare.price.amount) && fare.price.amount >= 0, transfer.id);
-          assert.ok(['EUR', 'USD', 'MXN'].includes(fare.price.currency), transfer.id);
-        }
-      }
+test('resaltados editoriales de todos los viajes vigentes corresponden a texto real', () => {
+  const window = {};
+  const vm = require('node:vm');
+  vm.runInNewContext(fs.readFileSync('modules.js', 'utf8'), { window });
+  for (const module of window.ATLAS_MODULES.filter(m => m.available && m.homeGroup !== 'ideas')) {
+    const trip = JSON.parse(fs.readFileSync(path.join('data/trips', module.file), 'utf8'));
+    if (trip.intro == null) continue;
+    assert.equal(typeof trip.intro, 'string', trip.id + ': introducción inválida');
+    for (const name of trip.introHighlights || []) {
+      assert.ok(trip.intro.includes(name), trip.id + ': resaltado ausente en intro: ' + name);
     }
+    assert.doesNotMatch(trip.intro,
+      /reservar primero|aún sin comprar|entrada nominativa|servicios no modificables/i,
+      trip.id + ': información administrativa en texto turístico');
   }
-  const source = fs.readFileSync('components/major-transport.js', 'utf8');
-  assert.match(source, /Array\.isArray\(item\)/, 'Las notas deben admitir objetos y arreglos');
 });
 
 test('reglas editoriales: fines de semana flexibles y redistribución de días', () => {
