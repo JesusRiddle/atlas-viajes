@@ -9,6 +9,7 @@ const { validate, photos } = require('../scripts/editorial-relations.cjs');
 const makeTrip = () => ({
   id: 'ejemplo',
   start: '2027-05-01', end: '2027-05-03',
+  travelerCount: 1,
   exchangeRates: { EUR: 20.5 },
   exchangeRateSnapshot: { date: '2027-04-20',
     sources: { EUR: 'https://example.com/fx' } },
@@ -255,6 +256,23 @@ test('experiencias y enlaces opcionales se verifican sin exigir cantidad fija de
   t.days[1].mobilityLinks[0].url = 'https://example.org/tren';
   t.majorTransport[0].boardingLocations[0].name = '';
   assert.ok(hasError(complaints(t), 'majorTransport[0].boardingLocations[0]'));
+});
+
+test('completitud de metadatos: fechas de hotel, viajeros y mapa parcial', () => {
+  const t = makeTrip();
+  delete t.travelerCount;
+  assert.ok(hasError(complaints(t), 'travelerCount'));
+  t.travelerCount = 1;
+  delete t.hotels[0].checkIn;
+  assert.ok(hasError(complaints(t), 'hotels[0]'));
+  t.hotels[0].checkIn = '2027-05-01';
+  t.mapPoints = [{ name: 'Por georreferenciar' }];
+  assert.deepEqual(validate(t, { mode: 'incremental' }), [],
+    'Un borrador debe aceptar lugares aún sin coordenadas');
+  assert.ok(hasError(validate(t, { mode: 'complete' }), 'mapPoints[0].coords'));
+  t.mapPoints[0].coords = [19.43, -99.13];
+  t.mapPoints[0].order = 1;
+  assert.deepEqual(complaints(t), []);
 });
 
 test('integridad dinámica de los nueve viajes principales, sin snapshots de fechas ni importes', () => {
