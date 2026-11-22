@@ -57,7 +57,7 @@
   "climate": "Del 13 al 26 de junio, en Zúrich y Lucerna se esperan como referencia climática mínimas nocturnas de 11 a 13 °C y máximas diurnas de 20 a 24 °C; en los pueblos alpinos de Grindelwald y Zermatt, mínimas aproximadas de 6 a 10 °C y máximas de 16 a 20 °C. En las cumbres de Titlis, Jungfraujoch y Gornergrat puede helar incluso en verano. Son valores orientativos, no un pronóstico para 2027: lluvia, tormentas, viento y nubes pueden impedir miradores, y los senderos de Bachalpsee y Riffelsee pueden mantener nieve.\n\n*Qué llevar:* Vestimenta por capas, impermeable cortaviento, abrigo térmico y guantes ligeros para cumbres; calzado de caminata con agarre para senderos habilitados. Con equipaje de mano, priorizar prendas combinables y no prever ropa veraniega como única opción.\n\n*Horas de luz:* En Zúrich, entre el 13 y el 26 de junio, el amanecer será aproximadamente a las 05:28–05:30 y el atardecer a las 21:22–21:26, hora local de verano (CEST, UTC+2): cerca de 16 horas de luz. Aprovechar las tardes largas para paseos urbanos y valles, pero programar los miradores altos temprano y según la previsión, pues las nubes y los últimos remontes limitan el tiempo útil.",
   "solo": "Ruta pensada para una persona, con trenes y alojamientos en zonas conectadas; no requiere conducir ni hacer deportes de montaña.",
   "flight": "COTIZACIÓN, NO COMPRA · Lufthansa/SWISS Economy Light multidestino, 1 persona, 12–27 junio 2027: MEX→ZRH, salida 12 jun 19:50, llegada 13 jun 17:25 (+1), conexión Frankfurt 1 h 40 min. GVA→MEX, 27 jun 09:10–17:30, conexión Frankfurt 3 h. Precio mostrado en el sitio de Lufthansa: $23,300.14 MXN por el itinerario completo (captura proporcionada por el viajero en noviembre de 2026). Incluye artículo personal y equipaje de mano; verificar medidas y reglas antes de comprar. Economy Light sujeta a restricciones; confirmar condiciones de cambios, reembolso y precio final. Alternativa comparada: vuelo redondo por Zúrich Economy Light $23,101 MXN en Google Flights, no comprado. Las tarifas pueden variar.",
-  "local": "Transporte en tren SBB y operadores locales, sin coche. Llegada ZRH → Zürich HB; Zürich → Maienfeld → Lucerna; Luzern ↔ Engelberg; Luzern–Interlaken Express a Grindelwald; excursiones desde Grindelwald a Lauterbrunnen, First, Brienz, Jungfraujoch y Kandersteg; Grindelwald → Zermatt; tren de cremallera Gornergrat y Sunnegga opcional; Zermatt → Genève-Aéroport para última noche. Billetes 2027 de tren, barco y remontes pendientes; comparar Swiss Half Fare Card, Swiss Travel Pass 15 días y billetes individuales. No añadir Glacier Express ni Bernina Express.",
+  "local": "Transporte en tren SBB y operadores locales, sin coche. Llegada ZRH → Zürich HB; Zürich → Maienfeld → Lucerna; Luzern ↔ Engelberg; Luzern–Interlaken Express a Grindelwald; excursiones desde Grindelwald a Lauterbrunnen, First, Brienz, Jungfraujoch y Kandersteg (Blausee opcional desde Kandersteg); Grindelwald → Zermatt; tren de cremallera Gornergrat y Sunnegga opcional; Zermatt → Genève-Aéroport para última noche. Billetes 2027 de tren, barco y remontes pendientes; comparar Swiss Half Fare Card, Swiss Travel Pass 15 días y billetes individuales. No añadir Glacier Express ni Bernina Express.",
   "experiences": [
     {
       "city": "Zúrich · casco antiguo y chocolate",
@@ -98,6 +98,10 @@
     {
       "city": "Oeschinensee · lago entre montañas",
       "description": "Llegar desde Kandersteg en teleférico y caminar por el acceso permitido hacia las aguas turquesas de Oeschinensee. Evitar rutas elevadas si persisten nieve, hielo o cierres en junio."
+    },
+    {
+      "city": "Blausee · lago de bosque (opcional)",
+      "description": "Complementar la visita a Oeschinensee con un paseo breve por el bosque y las aguas cristalinas de Blausee, cerca de Kandersteg. Solo si hay tiempo, energía y transporte de regreso; entrada al parque aparte y horarios 2027 por confirmar."
     },
     {
       "city": "Zermatt · Matterhorn y Gornergrat",
@@ -438,32 +442,44 @@
     {
       "n": 11,
       "date": "2027-06-22",
-      "title": "Oeschinensee y paisajes de Kandersteg",
+      "title": "Oeschinensee y Blausee opcional",
       "base": "Grindelwald",
       "am": "1. Salir de Grindelwald hacia Interlaken Ost, Spiez y Kandersteg según la conexión real del día.\n2. Desde Kandersteg, llegar a la estación inferior de la telecabina Oeschinensee según transporte local disponible.",
-      "pm": "1. Subir al sector del lago con la telecabina si está en servicio y continuar por la ruta peatonal habilitada.\n2. Contemplar las aguas turquesas del lago, volver a Kandersteg y regresar a Grindelwald en tren.",
+      "pm": "1. Subir al sector del lago Oeschinensee con la telecabina si está en servicio y continuar por la ruta peatonal habilitada.\n2. Disfrutar sin prisas de Oeschinensee y regresar a Kandersteg.\n3. *Opcional:* Si los horarios y la energía lo permiten, tomar el autobús 230 hacia Blausee BE y caminar aproximadamente 350 m hasta el parque natural. Dedicar 45–90 minutos al lago de aguas cristalinas y sus senderos boscosos; no recortar Oeschinensee para forzar esta visita.\n4. Volver desde Blausee BE hacia Frutigen en autobús y enlazar con los trenes de regreso a Grindelwald. Si se descarta Blausee, regresar directamente desde Kandersteg.",
       "night": "1. Noche final en Grindelwald, organizar maleta para traslado a Zermatt al día siguiente.",
-      "mobility": "• *Grindelwald ↔ Kandersteg:* Tren con transbordos a verificar en SBB; es una excursión interregional, no un paseo corto.\n• *Kandersteg → lago:* Telecabina aparte de SBB; comprobar si se requiere franja y si hay camino peatonal habilitado.",
-      "note": "• *Seguridad:* Senderos altos en Oeschinensee pueden permanecer cerrados en junio por nieve, riesgo de desprendimientos o mantenimiento.\n• *Plan B:* Si el acceso al lago no está seguro, evitar pagar telecabina y optar por una excursión más próxima en el Oberland.",
+      "mobility": "• *Grindelwald → Kandersteg:* Tren vía Interlaken Ost y Spiez, con transbordos a verificar en SBB; es una excursión interregional.\n• *Kandersteg → Oeschinensee:* Telecabina aparte del ferrocarril; comprobar franjas y acceso peatonal habilitado.\n• *Blausee opcional:* Desde Kandersteg Bahnhof tomar autobús regional 230 hasta Blausee BE; caminar unos 350 m a la entrada. Para regresar hacia Grindelwald, usar autobús hacia Frutigen Bahnhof y después trenes vía Spiez/Interlaken Ost. Verificar frecuencias y conexiones exactas del 22 junio 2027; no asumir servicio continuo.",
+      "note": "• *Prioridad:* Oeschinensee es la actividad principal; Blausee es complemento opcional solo si sobra tiempo y hay conexiones cómodas.\n• *Seguridad:* Senderos altos en Oeschinensee pueden permanecer cerrados en junio por nieve, desprendimientos o mantenimiento.\n• *Blausee:* Parque con entrada de pago separada; confirmar tarifa, horarios y disponibilidad de paseos en barca para 2027. El descuento, si corresponde, depende del pase elegido.\n• *Plan B:* Si el acceso a Oeschinensee no es seguro, considerar Blausee como alternativa más sencilla, sujeto a horarios y condiciones.",
       "spend": null,
       "places": [
-        "oeschinensee"
+        "oeschinensee",
+        "swissgreen-blausee"
       ],
       "transportRefs": [
         "oeschinensee"
       ],
       "headerPlaces": [
         "Kandersteg",
-        "Oeschinensee"
+        "Oeschinensee",
+        "Blausee (opcional)"
       ],
       "hotel": "grindelwald-tschuggen",
       "noteLinks": [
         {
           "label": "Oeschinensee · estado oficial",
           "url": "https://www.oeschinensee.ch/en/"
+        },
+        {
+          "label": "Blausee · parque natural y entradas",
+          "url": "https://www.blausee.ch/en/nature-park/"
+        },
+        {
+          "label": "Blausee · transporte y preguntas frecuentes",
+          "url": "https://www.blausee.ch/en/welcome/faq/"
         }
       ],
-      "optionalPlaces": []
+      "optionalPlaces": [
+        "swissgreen-blausee"
+      ]
     },
     {
       "n": 12,
@@ -2627,6 +2643,17 @@
       "order": 19
     },
     {
+      "name": "Blausee",
+      "coords": [
+        46.5327,
+        7.6636
+      ],
+      "kind": "Excursión",
+      "base": false,
+      "optional": true,
+      "order": 20
+    },
+    {
       "name": "Zermatt",
       "coords": [
         46.0207,
@@ -2635,7 +2662,7 @@
       "kind": "Alojamiento",
       "base": true,
       "optional": false,
-      "order": 20
+      "order": 21
     },
     {
       "name": "Gornergrat",
@@ -2646,7 +2673,7 @@
       "kind": "Excursión",
       "base": false,
       "optional": false,
-      "order": 21
+      "order": 22
     },
     {
       "name": "Riffelsee",
@@ -2657,7 +2684,7 @@
       "kind": "Excursión",
       "base": false,
       "optional": true,
-      "order": 22
+      "order": 23
     },
     {
       "name": "Sunnegga",
@@ -2668,7 +2695,7 @@
       "kind": "Excursión",
       "base": false,
       "optional": true,
-      "order": 23
+      "order": 24
     },
     {
       "name": "Ginebra",
@@ -2679,7 +2706,7 @@
       "kind": "Alojamiento (zona por confirmar)",
       "base": true,
       "optional": false,
-      "order": 24,
+      "order": 25,
       "stayName": "Ginebra o entorno del aeropuerto"
     }
   ],
@@ -2990,7 +3017,8 @@
     "swissgreen-titlis-rotair": "La estación superior del Rotair se alza en un paisaje de roca y nieve, destino del teleférico giratorio que asciende desde Engelberg.",
     "swissgreen-titlis-icecave": "En el interior de la cueva glaciar del Titlis aparecen paredes de hielo y pasillos azulados, accesibles durante la operación turística.",
     "swissgreen-sunnegga": "La terraza alpina de Sunnegga domina un paisaje de cumbres alrededor de Zermatt, con rutas suaves y vistas del Matterhorn en días despejados.",
-    "swissgreen-leisee": "El pequeño lago Leisee, cerca de Sunnegga, está rodeado por praderas alpinas y senderos, y ofrece un lugar apacible frente al Matterhorn."
+    "swissgreen-leisee": "El pequeño lago Leisee, cerca de Sunnegga, está rodeado por praderas alpinas y senderos, y ofrece un lugar apacible frente al Matterhorn.",
+    "swissgreen-blausee": "En un bosque del valle de Kander, Blausee sorprende por su agua azul transparente, troncos sumergidos y senderos tranquilos; complemento opcional de Oeschinensee."
   },
   "optionalSection": null,
   "family": null,
