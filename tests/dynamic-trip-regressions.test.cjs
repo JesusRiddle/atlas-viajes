@@ -45,6 +45,23 @@ test('viajes de ida y vuelta, tarifas y agrupaciones admiten cambios sin duplica
   }
 });
 
+test('cuando un viaje declara totales diarios, concilia exactamente con sus gastos', () => {
+  for (const trip of trips) {
+    if (!trip.days.length || !trip.days.every(d => Number.isFinite(d.spend))) continue;
+    if (!trip.expenses.every(e => Number.isFinite(e.cost?.amount))) continue;
+    for (const day of trip.days) {
+      const expected = trip.expenses.filter(e => e.date === day.date)
+        .reduce((sum, e) => sum + e.cost.amount, 0);
+      assert.ok(Math.abs(day.spend - expected) < 0.01,
+        trip.id + ': total diario desajustado: ' + day.date);
+    }
+    const daily = trip.days.reduce((sum, d) => sum + d.spend, 0);
+    const expenses = trip.expenses.reduce((sum, e) => sum + e.cost.amount, 0);
+    assert.ok(Math.abs(daily - expenses) < 0.01,
+      trip.id + ': total global distinto de la suma de jornadas');
+  }
+});
+
 test('portadas y actividades actuales tienen fotografía y descripción, sin fijar la cantidad', () => {
   for (const trip of trips) {
     const active = new Set([trip.cover, ...(trip.coverSlides || []),
