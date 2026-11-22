@@ -57,9 +57,9 @@ test('coberturas declaradas como automáticas o parciales apuntan a pruebas exis
 });
 
 test('el inventario no confunde ejecución de CI con cobertura editorial exhaustiva', () => {
-  assert.ok(rules.some(rule => rule.coverage === 'missing'));
-  assert.ok(rules.some(rule => rule.coverage === 'manual'));
-  assert.ok(rules.some(rule => rule.coverage === 'partial'));
+  // Cuando se resuelvan los pendientes, el test también debe seguir pasando.
+  // El objetivo es auditar estados declarados, no exigir que la deuda nunca desaparezca.
+  assert.ok(rules.every(rule => statuses.has(rule.coverage)));
   const coverage = rules.reduce((result, rule) => {
     result[rule.coverage] = (result[rule.coverage] || 0) + 1;
     return result;
