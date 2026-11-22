@@ -28,10 +28,18 @@ window.AtlasSeasonality = function (ctx) {
             const item = data.months[key] || { status: 'pending', description: 'Por definir' };
             const state = states[item.status] || states.pending;
             const note = item.description || 'Por definir';
-            const match = note.match(/\(?\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*(?:[–—-]|a)\s*[-−]?\d{1,2}(?:[.,]\d+)?\s*°\s*C\s*\)?/i);
-            const temperature = match ? match[0].replace(/[()]/g, '').trim() : '';
-            const description = match ? (note.slice(0, match.index) + note.slice(match.index + match[0].length))
-                .replace(/^\s*[.,;:–—-]+\s*/, '').replace(/\s+,/g, ',').replace(/\s{2,}/g, ' ').trim() : note;
+            // No confundir intervalos climáticos de regiones con máxima/mínima nocturna.
+            const explicit = note.match(/Máx\.\s*([−]?\d{1,2}(?:[.,]\d+)?)\s*°C\s*·\s*Mín\.\s*([−]?\d{1,2}(?:[.,]\d+)?)\s*°C/u);
+            const legacy = !explicit && note.match(/(?<![\d.,−-])([−]?\d{1,2}(?:[.,]\d+)?) a ([−]?\d{1,2}(?:[.,]\d+)?)\s*°C(?![\d,])/u);
+            const match = explicit || legacy;
+            const magnitude = legacy && /máximas?\s*(?:diurnas?\s*)?(?:orientativas?|entre|de|para|:)/iu.test(note.slice(0, legacy.index))
+                ? 'Máximas' : 'Intervalo';
+            const temperature = item.status === 'pending' ? '' : explicit
+                ? explicit[0] : legacy ? magnitude + ': ' + legacy[0] : '';
+            // Conservar el contexto geográfico si el rango está incrustado en la frase.
+            const description = match && match.index === 0
+                ? note.slice(match[0].length).replace(/^\s*[.,;:–—-]+\s*/, '').trim() || note
+                : note;
             return `<li class="season-month season-${state.css}" aria-label="${esc(name + ': ' + state.label + '. ' + note)}"><div class="season-month-heading"><span class="season-temperature">${temperature ? esc(temperature) : '—'}</span>${weatherIcon(item.icon)}</div><strong class="season-month-name">${esc(name)}</strong><span class="season-state">${esc(state.label)}</span><p class="season-month-description">${esc(description || note)}</p></li>`;
         }).join('');
         return `<section class="section wrap seasonality-section atlas-panel-section" id="temporadas" aria-labelledby="seasonality-heading">
