@@ -129,7 +129,17 @@ test('portadas y actividades actuales tienen fotografía y descripción, sin fij
     const active = new Set([trip.cover, ...(trip.coverSlides || []),
       ...trip.days.flatMap(d => [...(d.places || []), ...(d.optionalPlaces || [])])].filter(Boolean));
     for (const key of active) {
-      assert.ok(catalog[key]?.photo?.src, trip.id + ': referencia fotográfica faltante: ' + key);
+      const src = catalog[key]?.photo?.src;
+      assert.ok(src, trip.id + ': referencia fotográfica faltante: ' + key);
+      if (/^https?:\/\//.test(src)) {
+        assert.ok(src.startsWith('https://'),
+          trip.id + ': las fotos externas deben cargarse por HTTPS: ' + key);
+      } else {
+        assert.ok(!src.startsWith('/') && !src.includes('..'),
+          trip.id + ': ruta local de foto fuera del repositorio: ' + key);
+        assert.ok(fs.existsSync(src) && fs.statSync(src).size > 100,
+          trip.id + ': archivo fotográfico local inexistente o vacío: ' + src);
+      }
     }
     for (const day of trip.days) for (const id of day.places || []) {
       assert.ok(trip.placeDescriptions?.[id]?.trim(),
