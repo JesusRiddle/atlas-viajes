@@ -47,8 +47,11 @@ function photos(trip, catalog) {
   }
   return errors;
 }
-function validate(trip, { complete = false } = {}) {
+function validate(trip, { complete = false, mode } = {}) {
   const errors = [];
+  if (mode != null && !['incremental', 'complete'].includes(mode))
+    return [problem('mode', 'Modo editorial desconocido')];
+  complete = mode === 'complete' || (mode == null && complete === true);
   if (!trip || typeof trip !== 'object' || Array.isArray(trip))
     return [problem('trip', 'Se espera un objeto de viaje')];
   const collections = ['days', 'hotels', 'majorTransport', 'expenses', 'reservations', 'mapPoints'];
@@ -146,6 +149,8 @@ function validate(trip, { complete = false } = {}) {
       errors.push(problem(path + '.date', 'Las jornadas deben ser consecutivas'));
     if (i === days.length - 1 && trip.end && day.date !== trip.end)
       errors.push(problem(path + '.date', 'La última jornada no coincide con el final'));
+    if (complete && day.n == null)
+      errors.push(problem(path + '.n', 'Número de jornada obligatorio al cerrar'));
     if (day.n != null) {
       if (!Number.isInteger(day.n) || day.n !== i + 1 || seenNumbers.has(day.n))
         errors.push(problem(path + '.n', 'Número de jornada duplicado o inválido'));
@@ -173,10 +178,14 @@ function validate(trip, { complete = false } = {}) {
   if (complete) days.forEach((day, i) => {
     if (!dateOK(day?.date) || !dateOK(trip.end) || day.date >= trip.end ||
         day.hotel != null) return;
-    if (hotels.some(h => dateOK(h?.checkIn) && dateOK(h?.checkOut) &&
-        h.checkIn <= day.date && day.date < h.checkOut))
+    const nightHasHotel = hotels.some(h => dateOK(h?.checkIn) && dateOK(h?.checkOut) &&
+      h.checkIn <= day.date && day.date < h.checkOut);
+    const flightNight = (typeof day.base === 'string' &&
+      day.base.toLowerCase().startsWith('en vuelo')) || day.overnightType === 'flight';
+    const alternativeNight = ['camping', 'other'].includes(day.overnightType);
+    if (nightHasHotel || (!flightNight && !alternativeNight))
       errors.push(problem('days[' + i + '].hotel',
-        'Existe noche de alojamiento pero no se asignó ninguna opción'));
+        'Noche sin alojamiento asignado ni excepción explícita'));
   });
   expenses.forEach((expense, i) => {
     const path = 'expenses[' + i + ']';
@@ -196,10 +205,14 @@ function validate(trip, { complete = false } = {}) {
         errors.push(problem(path + '.cost.currency', 'Moneda ISO 4217 requerida'));
     }
   });
+  const groupNames = new Set();
   groups.forEach((group, i) => {
     if (!Array.isArray(group) || typeof group[0] !== 'string' || !group[0].trim() || !Array.isArray(group[1])) {
       errors.push(problem('reservations[' + i + ']', 'Grupo de reservas inválido')); return;
     }
+    if (groupNames.has(group[0].trim()))
+      errors.push(problem('reservations[' + i + ']', 'Grupo de reservas duplicado'));
+    groupNames.add(group[0].trim());
     group[1].forEach((reservation, j) => {
       if (!reservation || typeof reservation.title !== 'string' || !reservation.title.trim())
         errors.push(problem('reservations[' + i + '][' + j + ']', 'Reserva sin título'));
