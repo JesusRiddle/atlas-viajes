@@ -275,6 +275,41 @@ test('completitud de metadatos: fechas de hotel, viajeros y mapa parcial', () =>
   assert.deepEqual(complaints(t), []);
 });
 
+test('auditoría de contraejemplos: fechas ausentes, URL malformadas y errores simultáneos', () => {
+  const { isUrl } = require('../scripts/editorial-relations.cjs');
+  assert.equal(isUrl('https://example.org/book?date=2027-01-01'), true);
+  for (const url of ['https://?', 'https://example.org:bad/', 'https://user:secret@example.org',
+    'https://example.org/sp ace', 'javascript:alert(1)', '']) {
+    assert.equal(isUrl(url), false, 'URL aparentemente válida: ' + url);
+  }
+  const t = makeTrip();
+  delete t.start;
+  delete t.end;
+  assert.ok(hasError(complaints(t), 'start'), 'Viaje cerrado sin comienzo');
+  assert.ok(hasError(complaints(t), 'end'), 'Viaje cerrado sin final');
+  t.days[0].date = 'fecha-inválida';
+  t.days[0].n = 9;
+  assert.ok(hasError(complaints(t), 'days[0].date'));
+  assert.ok(hasError(complaints(t), 'days[0].n'),
+    'Una fecha inválida no debe ocultar la numeración errónea');
+  t.start = '2027-05-01';
+  t.end = '2027-05-03';
+  t.days[0].date = '2027-05-01';
+  t.days[0].n = 1;
+  t.hotels[0].mapsUrl = 'https://example.org:bad/';
+  assert.ok(hasError(complaints(t), 'mapsUrl'));
+});
+
+test('al cerrar un viaje se exigen los pies de foto aunque no exista placeDescriptions', () => {
+  const t = makeTrip();
+  t.days[0].places = ['atractivo'];
+  const catalog = { atractivo: { photo: { src: 'https://example.org/atractivo.jpg' } } };
+  assert.deepEqual(photos(t, catalog), [], 'Un viaje incremental admite descripciones pendientes');
+  assert.ok(hasError(photos(t, catalog, { complete: true }), 'days[0].places[0]'));
+  t.placeDescriptions = { atractivo: 'Fachada histórica de la ciudad.' };
+  assert.deepEqual(photos(t, catalog, { complete: true }), []);
+});
+
 test('integridad dinámica de los nueve viajes principales, sin snapshots de fechas ni importes', () => {
   const window = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../modules.js'), 'utf8'), { window });
@@ -284,6 +319,6 @@ test('integridad dinámica de los nueve viajes principales, sin snapshots de fec
   for (const { file, id } of main) {
     const trip = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/trips', file), 'utf8'));
     assert.deepEqual(complaints(trip), [], id + ': relaciones editoriales inconsistentes');
-    assert.deepEqual(photos(trip, photoCatalog), [], id + ': fotografías referenciadas inválidas');
+    assert.deepEqual(photos(trip, photoCatalog, { complete: true }), [], id + ': fotografías referenciadas inválidas');
   }
 });
