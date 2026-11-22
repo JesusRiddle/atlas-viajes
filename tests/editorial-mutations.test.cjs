@@ -95,7 +95,7 @@ test('mutaciones ilegítimas: detecta violaciones sin bloquear cambios inocuos',
     ['expenses[0].cost.amount', t => { t.expenses[0].cost.amount = -1; }],
     ['expenses[0].cost.currency', t => { t.expenses[0].cost.currency = 'ZZZ'; }],
     ['expenses[0].status', t => { t.expenses[0].status = 'inventado'; }],
-    ['reservations[0]', t => { t.reservations.push([...t.reservations[0]]); }],
+    ['reservations[1]', t => { t.reservations.push([...t.reservations[0]]); }],
     ['days[0].places[1]', t => { t.days[0].places.push('foto-faltante'); }],
     ['days[1].places[0]', t => { delete t.placeDescriptions.plaza; }]
   ];
