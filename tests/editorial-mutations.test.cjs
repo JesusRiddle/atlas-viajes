@@ -81,8 +81,7 @@ test('mutaciones legítimas combinadas: cambios de fechas, estancia, vuelo, acti
   passes(t, 'Viaje válido para tres personas');
 });
 
-test('mutaciones ilegítimas: detecta violaciones sin bloquear cambios inocuos', () => {
-  const mutations = [
+const mutations = [
     ['days[1].date', t => { t.days[1].date = '2027-06-09'; }],
     ['days[1].n', t => { t.days[1].n = 99; }],
     ['days[0].hotel', t => { t.days[0].hotel = 'hotel-borrado'; }],
@@ -99,12 +98,13 @@ test('mutaciones ilegítimas: detecta violaciones sin bloquear cambios inocuos',
     ['days[0].places[1]', t => { t.days[0].places.push('foto-faltante'); }],
     ['days[1].places[0]', t => { delete t.placeDescriptions.plaza; }]
   ];
-  for (const [field, mutate] of mutations) {
+for (const [field, mutate] of mutations) {
+  test('rechaza mutación adversarial: ' + field, () => {
     const t = original();
     mutate(t);
     fails(t, field, 'Mutación adversarial ' + field);
-  }
-});
+  });
+}
 
 test('mutaciones financieras: precio pendiente distinto de cero y divisas con fuente', () => {
   const t = original();
