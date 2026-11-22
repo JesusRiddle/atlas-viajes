@@ -121,7 +121,7 @@ module.exports = Object.freeze([
     "coverage": "partial",
     "evidence": {
       "file": "tests/trip-editorial.test.cjs",
-      "contains": "mantiene introducción turística con resaltados"
+      "contains": "resaltados editoriales: contrato universal"
     },
     "source": {
       "file": "docs/trip-editorial-guide.md",
@@ -621,7 +621,7 @@ module.exports = Object.freeze([
     "coverage": "partial",
     "evidence": {
       "file": "tests/trip-editorial.test.cjs",
-      "contains": "resaltados editoriales de todos los viajes vigentes"
+      "contains": "resaltados editoriales: contrato universal"
     },
     "source": {
       "file": "docs/trip-editorial-guide.md",
