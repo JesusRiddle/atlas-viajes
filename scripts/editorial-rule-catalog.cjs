@@ -604,7 +604,11 @@ module.exports = Object.freeze([
     "id": "CAT-03",
     "section": "transversal",
     "requirement": "No modificar JSON de otros viajes ni ideas históricas durante una edición aislada",
-    "coverage": "missing",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/editorial-change-scope.test.cjs",
+      "contains": "edición aislada acepta su viaje"
+    },
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "## Convenciones universales"
@@ -740,7 +744,11 @@ module.exports = Object.freeze([
     "id": "LOD-06",
     "section": "alojamientos",
     "requirement": "Candidato o cotizado no aparece como reservado en texto o presupuesto",
-    "coverage": "missing",
+    "coverage": "partial",
+    "evidence": {
+      "file": "tests/editorial-lodging-audit.test.cjs",
+      "contains": "distingue candidato, cotización"
+    },
     "source": {
       "file": "docs/trip-editorial-guide.md",
       "heading": "### 7. Dónde dormir (`alojamientos`)"
