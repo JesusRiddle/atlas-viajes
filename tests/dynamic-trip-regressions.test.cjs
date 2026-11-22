@@ -23,7 +23,14 @@ function budgetCoverage(trip, transport) {
     if (expenses.has(ref)) return true;
     if (visited.has(ref) || !items.has(ref)) return false;
     visited.add(ref);
-    ref = items.get(ref).budgetIncludedIn;
+    const parent = items.get(ref);
+    if (!parent.budgetIncludedIn) {
+      // El agrupador puede presupuestarse directamente desde su tarifa elegida,
+      // aunque no tenga una partida expenses: Cinque Terre, por ejemplo.
+      return (parent.options || []).some(option =>
+        (option.fares || []).some(fare => Number.isFinite(fare.price?.amount)));
+    }
+    ref = parent.budgetIncludedIn;
   }
   return false;
 }
@@ -67,6 +74,15 @@ test('agrupaciones presupuestarias indirectas no aceptan ciclos ni referencias h
       { id: 'tramo-local', budgetIncludedIn: 'abono' }
     ] };
   assert.equal(budgetCoverage(t, t.majorTransport[1]), true);
+  const direct = structuredClone(t);
+  direct.expenses = [];
+  direct.majorTransport[0].budgetIncludedIn = undefined;
+  direct.majorTransport[0].options = [{ fares: [{ price: { amount: 35, currency: 'EUR' } }] }];
+  assert.equal(budgetCoverage(direct, direct.majorTransport[1]), true,
+    'Un agrupador con tarifa directa no necesita partida adicional');
+  direct.majorTransport[0].options = [];
+  assert.equal(budgetCoverage(direct, direct.majorTransport[1]), false,
+    'Sin tarifa directa ni partida el enlace queda huérfano');
   t.majorTransport[0].budgetIncludedIn = 'tramo-local';
   assert.equal(budgetCoverage(t, t.majorTransport[1]), false);
   t.majorTransport[0].budgetIncludedIn = 'partida-inexistente';
