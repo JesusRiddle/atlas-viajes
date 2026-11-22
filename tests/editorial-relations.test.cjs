@@ -239,6 +239,24 @@ test('reservas estructuradas rechazan grupos repetidos y toleran prioridades nue
   assert.deepEqual(complaints(t), []);
 });
 
+test('experiencias y enlaces opcionales se verifican sin exigir cantidad fija de visitas', () => {
+  const t = makeTrip();
+  t.experiences = [{ city: 'Lucerna', description: 'Recorrer el casco histórico.' }];
+  t.days[1].mobilityLinks = [{ label: 'Tren oficial', url: 'https://example.org/tren' }];
+  t.majorTransport[0].boardingLocations = [
+    { name: 'Estación principal', mapUrl: 'https://maps.google.com/station' }
+  ];
+  assert.deepEqual(complaints(t), []);
+  t.experiences.push({ city: 'Ciudad adicional', description: '' });
+  assert.ok(hasError(complaints(t), 'experiences[1]'));
+  t.experiences.pop();
+  t.days[1].mobilityLinks[0].url = 'javascript:alert(1)';
+  assert.ok(hasError(complaints(t), 'days[1].mobilityLinks[0]'));
+  t.days[1].mobilityLinks[0].url = 'https://example.org/tren';
+  t.majorTransport[0].boardingLocations[0].name = '';
+  assert.ok(hasError(complaints(t), 'majorTransport[0].boardingLocations[0]'));
+});
+
 test('integridad dinámica de los nueve viajes principales, sin snapshots de fechas ni importes', () => {
   const window = {};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../modules.js'), 'utf8'), { window });
