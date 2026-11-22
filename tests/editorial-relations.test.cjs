@@ -37,6 +37,7 @@ test('viaje cambiante válido: añadir visitas, renombrar hotel, cambiar tarifa 
   assert.deepEqual(complaints(t), []);
   t.end = '2027-05-04';
   t.hotels[0].checkOut = '2027-05-04';
+  t.days[2].hotel = 'hotel-a'; // una noche adicional requiere alojamiento asignado
   t.days.push({ n: 4, date: '2027-05-04' });
   assert.deepEqual(complaints(t), []);
 });
