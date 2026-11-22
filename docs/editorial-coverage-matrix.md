@@ -27,7 +27,7 @@ Se inventariaron **64 obligaciones** procedentes de las nueve secciones de la gu
 | `PAN-02` | plan | Tarjeta independiente Clima y luz con tres párrafos y tono correcto | Parcial | `tests/browser-smoke.cjs` |
 | `PAN-03` | plan | Intro e introShort de longitud editorial; resaltados literales | Parcial | `tests/trip-editorial.test.cjs` |
 | `PAN-04` | plan | Idioma con moneda ISO reconocida | Automatizada (con evidencia) | `tests/editorial-contracts.test.cjs` |
-| `PAN-05` | plan | Correspondencia idioma, divisa y país del recorrido | Sin prueba | — |
+| `PAN-05` | plan | Correspondencia idioma, divisa y país del recorrido | Externa / humana | Verificación geográfica y lingüística por país; no inferible de ISO solamente |
 | `PAN-06` | plan | Requisitos migratorios, enchufes y voltaje verificados por país y fechas | Externa / humana | — |
 | `MAP-01` | mapa | Coordenadas dentro del rango geográfico y no ficticias | Parcial | `tests/editorial-relations.test.cjs` |
 | `MAP-02` | mapa | Puntos de alojamiento vinculados a noches y etiquetas correctas | Parcial | `tests/map-stay-labels.test.cjs` |
@@ -148,4 +148,13 @@ Se incorpora `scripts/editorial-experience-audit.cjs` con `experienceWarnings`: 
 - `LOD-06`: `scripts/editorial-lodging-audit.cjs` detecta conflictos entre el estado textual explícito del hotel (candidato/no reservado frente a reserva confirmada) y el estado de la partida de alojamiento relacionada. **Reporte conservador, no prueba de pago o de reserva real, ni verificación de texto renderizado**. Clasificación **parcial**.
 - `PAN-05` permanece **sin prueba**. Un badge con idioma y código ISO no verifica que la divisa/idioma correspondan a todos los países del recorrido; sin metadatos de país auditables o una fuente geográfica no es correcto simular esa validación.
 
-**Recuento clasificado después de esta ampliación:** 20 automáticas, 35 parciales, 1 sin prueba y 8 externas/manuales (64 en total). Sigue sin equivaler a porcentaje de calidad. La aprobación del CI solo certifica las aserciones ejecutadas.
+**Recuento tras reclasificación de PAN-05:** 20 automáticas, 35 parciales, 0 sin prueba clasificada como puramente automatizable y 9 externas/manuales (64 en total). PAN-05 requiere contraste externo por país y no ha sido verificada. Sigue sin equivaler a porcentaje de calidad. La aprobación del CI solo certifica las aserciones ejecutadas.
+
+
+## Reauditoría de minimalismo · 22 noviembre 2026
+
+El cambio de `PAN-05` de `missing` a `manual` es **clasificación de responsabilidad, no cobertura nueva**. La compatibilidad idioma/moneda/país sigue pendiente de contrastar con geografía del recorrido. Sin fuente de países estructurada no debe mostrarse un verde automático. Las 35 obligaciones parciales siguen constituyendo deuda funcional; no declarar cobertura editorial 100 %.
+
+Se eliminaron expectativas que inmovilizaban el catálogo en 24 viajes, 15 ideas y una lista fija de destinos en `tests/loader-regression.test.cjs`. Se sustituyó el test de resaltados solo de Italia por un contrato independiente del destino; la auditoría descubrió un resaltado heredado no literal en Suiza nevada (`Lindt Home of Chocolate`), que se informa sin bloquear el refactor de tests. Se retiró también un test de fechas/noches específico de Italia redundante con `tests/dynamic-trip-regressions.test.cjs` y `tests/editorial-relations.test.cjs`. No se editó ningún JSON de viaje.
+
+La exigencia para viajes nuevos sigue siendo cumplir la guía; los datos heredados no deben inmovilizar cambios de validadores. Los diagnósticos no bloqueantes deben conservar una vía de resolución cuando se edite el viaje correspondiente. No eliminar las pruebas de algoritmos de presupuesto/zonas horarias, aunque usen números concretos de `tests/fixtures/transport-regression.json`: son valores **sintéticos**, no datos del recorrido real.
