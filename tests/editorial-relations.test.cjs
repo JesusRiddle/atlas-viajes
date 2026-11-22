@@ -302,6 +302,7 @@ test('auditoría de contraejemplos: fechas ausentes, URL malformadas y errores s
 
 test('al cerrar un viaje se exigen los pies de foto aunque no exista placeDescriptions', () => {
   const t = makeTrip();
+  t.days[2].places = [];
   t.days[0].places = ['atractivo'];
   const catalog = { atractivo: { photo: { src: 'https://example.org/atractivo.jpg' } } };
   assert.deepEqual(photos(t, catalog), [], 'Un viaje incremental admite descripciones pendientes');
