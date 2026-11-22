@@ -11,7 +11,7 @@ Se inventariaron **64 obligaciones** procedentes de las nueve secciones de la gu
 - `missing`: el contrato automatizable no tiene una prueba fiable.
 - `manual`: exige investigación actual o juicio editorial; no debe presentarse como aprobación automática.
 
-**Estado medido tras fase 2:** 20 con evidencia automatizada, 32 parciales, 4 sin prueba y 8 humanas/externas. Se completará esta lista cuando se encuentren nuevas obligaciones normativas; no fijar porcentajes de calidad a partir de estos recuentos.
+**Último inventario clasificado (fase 2, aún vigente como referencia):** 20 con evidencia automatizada, 32 parciales, 4 sin prueba y 8 humanas/externas. Las fases 3–5 han añadido pruebas sin reclasificar automáticamente reglas: la evidencia debe auditarse por obligación antes de cambiar su estado. Se completará esta lista cuando se encuentren nuevas obligaciones normativas; no fijar porcentajes de calidad a partir de estos recuentos.
 
 ## Inventario
 
@@ -122,3 +122,14 @@ Se eliminaron **dos archivos exclusivos de destinos**: `tests/colombia-2027.test
 **Cobertura que permanece intencionalmente parcial:** autenticidad y metadatos de ciertas fotos externas de España/Portugal y Patagonia, precisión y fuentes de información turística, conciliación universal de todos los estados financieros, transportes en escenario alternativo y validación de frases de la guía para viajes históricos. Hay pruebas funcionales con ejemplos reales de Italia y Suiza que aún conviene convertir a fixtures sintéticos en fase 4 si se pretende tolerar incluso la eliminación completa de esos viajes del catálogo.
 
 **Validación:** el CI completo debe mantenerse verde para cerrar esta fase. La fase 4 está dedicada a mutaciones y a demostrar con cambios consistentes de un viaje real en memoria que las aserciones supervivientes no producen falsos positivos. No se cambiaron JSON de viajes ni se realizó merge.
+
+
+## Auditoría de cierre · 22 de noviembre de 2026 (fase 5 en curso)
+
+**Fase 4:** CI verde en la [ejecución 44997233421](https://github.com/JesusRiddle/atlas-viajes/actions/runs/44997233421), que incluyó mutaciones y Playwright escritorio/móvil. Se prueban mutaciones válidas combinadas, mutaciones adversariales independientes y ediciones sobre los nueve viajes activos *solo en memoria*. Esto no demuestra que todas las variantes de los 64 contratos tengan cobertura suficiente.
+
+**Defecto real hallado en fase 5:** `validate` accedía a `day.date` tras detectar `day = null` o un valor no objeto. Ahora devuelve un problema de jornada inválida; la regresión incluye `null`, `undefined`, booleanos, texto, arreglos y números. Esta corrección requiere validación de CI posterior.
+
+**Brechas aún sin certificación:** `PAN-05` (semántica país/idioma/divisa), `CAT-03` (aislamiento de cambios de archivos), `EXP-03` (longitud editorial de experiencias con excepciones) y `LOD-06` (la etiqueta reservado debe corresponder al estado real). No convertir estas obligaciones a «automatizadas» por tener pruebas indirectas. Hay además 32 reglas parciales y ocho externas/manuales en el inventario actual. El inventario no mide porcentajes de calidad.
+
+**Criterio de aceptación:** CI verde en el SHA final; revisar los cuatro contratos sin prueba y las reglas parciales; no prometer comprobación automática de vigencia de operadores, vuelos, migración, hoteles, fotos o tarifas sin fuentes externas; verificar que los JSON de viajes no se alteraron. Hasta completar esto, el PR permanece sin recomendación de merge.
