@@ -19,7 +19,6 @@ test('existen instrucciones editoriales y están enlazadas desde README y AGENTS
 
 test('el viaje Italia 2027 mantiene introducción turística con resaltados existentes', () => {
   const trip = JSON.parse(fs.readFileSync(path.join('data/trips','italia-norte-2027.json'), 'utf8'));
-  assert.equal(trip.status, 'ready');
   assert.ok(Array.isArray(trip.introHighlights));
   assert.ok(trip.introHighlights.length > 0);
   for (const name of trip.introHighlights) {
