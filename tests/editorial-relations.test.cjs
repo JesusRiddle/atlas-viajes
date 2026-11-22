@@ -9,6 +9,9 @@ const { validate, photos } = require('../scripts/editorial-relations.cjs');
 const makeTrip = () => ({
   id: 'ejemplo',
   start: '2027-05-01', end: '2027-05-03',
+  exchangeRates: { EUR: 20.5 },
+  exchangeRateSnapshot: { date: '2027-04-20',
+    sources: { EUR: 'https://example.com/fx' } },
   hotels: [{ id: 'hotel-a', checkIn: '2027-05-01', checkOut: '2027-05-03',
     mapsUrl: 'https://maps.google.com/a', links: [{ label: 'Reserva', url: 'https://example.com/a' }] }],
   days: [
