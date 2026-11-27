@@ -35,6 +35,21 @@ test('no confunde archivos técnicos con itinerarios ni altera el conjunto origi
   assert.throws(() => checkTripScope('cadena', []), TypeError);
 });
 
+function parseAllowedTrips(value) {
+  assert.equal(typeof value,'string','Declarar alcance explícito (vacío si no hay viajes autorizados)');
+  if(value==='')return [];
+  const ids=value.split(',').map(s=>s.trim());
+  assert.ok(ids.every(s=>/^(?:[a-z0-9]+(?:-[a-z0-9]+)*|_template)$/.test(s)),'Alcance inválido');
+  assert.equal(new Set(ids).size,ids.length,'Alcance duplicado');
+  return ids;
+}
+test('declaración de alcance estricta: no acepta entradas vacías ni duplicados',()=>{
+ assert.deepEqual(parseAllowedTrips(''),[]);
+ assert.deepEqual(parseAllowedTrips('alpha, beta'),['alpha','beta']);
+ assert.deepEqual(parseAllowedTrips('_template'),['_template']);
+ for(const bad of [undefined,' ', 'alpha,', ',alpha','alpha,,beta','alpha,alpha','alpha\nbeta'])assert.throws(()=>parseAllowedTrips(bad));
+});
+
 // A real git comparison, including deletions and both sides of renames.
 test('alcance del diff real declarado por CI', t => {
  const base=process.env.ATLAS_SCOPE_BASE;
@@ -42,9 +57,7 @@ test('alcance del diff real declarado por CI', t => {
  assert.match(base,/^[a-f0-9]{40}$/i);
  const {execFileSync}=require('node:child_process');
  const changed=execFileSync('git',['diff','--no-renames','--name-only','-z',base,'HEAD'],{cwd:require('node:path').resolve(__dirname,'../..'),encoding:'utf8'}).split('\0').filter(Boolean);
- assert.notEqual(process.env.ATLAS_SCOPE_TRIPS,undefined,'Declarar alcance explícito (vacío si no hay viajes autorizados)');
- const allowed=process.env.ATLAS_SCOPE_TRIPS.split(',').map(s=>s.trim()).filter(Boolean);
- assert.ok(allowed.every(s=>/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(s)),'Alcance inválido');
+ const allowed=parseAllowedTrips(process.env.ATLAS_SCOPE_TRIPS);
  assert.deepEqual(checkTripScope(changed,allowed),[]);
  t.diagnostic('Archivos comparados: '+changed.length+'; viajes autorizados: '+allowed.join(','));
 });
