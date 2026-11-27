@@ -123,6 +123,7 @@ async function catalog(page,viewport){
       assert.ok(copyBounds && copyBounds.y >= heroBounds.y - 1 &&
         copyBounds.y + copyBounds.height <= heroBounds.y + heroBounds.height + 2,
         'El texto del hero debe quedar dentro de la fotografía');
+      const workDayBadges=page.locator('#viajes .tripcard .cardfacts span');
        assert.equal(await workDayBadges.count(), primary.filter(({trip})=>Number.isInteger(trip.work)).length,
         'Cada viaje con días laborales declarados muestra su indicador');
       const workingDayTexts = await workDayBadges.allInnerTexts();
@@ -135,7 +136,7 @@ async function catalog(page,viewport){
           weight: getComputedStyle(work).fontWeight } : null;
       })).then(values => values.filter(Boolean));
       assert.ok(tones.every(value => value.work === value.place && Number(value.weight) >= 700),
-        'Portada: días laborales usan el mismo color y énfasis que Colombia · 12 días');
+        'Portada: días laborales usan el mismo color y énfasis que la ubicación');
  const ordered=[...primary].sort((a,b)=>(a.trip.start||'9999-12-31').localeCompare(b.trip.start||'9999-12-31'));
  const hrefs=await page.locator('#viajes .tripcard').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')));
  assert.deepEqual(hrefs,ordered.map(x=>'#viaje/'+x.module.id));

@@ -150,3 +150,6 @@ CI 46081973381 exitoso. Se trasladan contraejemplos y mutaciones sintéticas de 
 
 ### Fase 5 — CI unificado
 CI 46082189981 aprobado. Se retira loader, smoke y pruebas editoriales de raíz; se conserva integración de transporte con fixture aislado dentro de functional hasta depurar solapamientos restantes. Se rescatan validación de stays, limpieza, estados vacíos, portada, movimiento reducido, número de personas y geometría de mapa. El workflow ejecuta editorial y functional por descubrimiento de suites y un único smoke. README y checklist actualizados. Pendiente CI y auditoría de contratos rescatados, incluida equivalencia de los casos visuales y crédito de fotos. Sin cambios turísticos ni merge.
+
+### Auditoría estática del lote unificado
+Se corrige declaración faltante del locator de días laborales detectada antes de recibir CI; se retiran casos de integración duplicados por los fixtures funcionales pequeños (duración, equipaje, conversión, distribución y vuelo global). Se conserva el fixture grande solo para render multitrayecto, offsets, estados y reconciliación cruzada. El caso de terminal/condiciones de una aerolínea concreta no es un contrato de aplicación. Pendiente CI del SHA actualizado.
