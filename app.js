@@ -15,18 +15,18 @@ window.ATLAS_READY.then(() => {
         if (!event.target.matches?.('details.day')) return;
         if (event.target.open) loadGallery(event.target);
         const button = document.querySelector('#expand');
-        if (button) button.textContent = [...document.querySelectorAll('.day')].every(day => day.open)
+        if (button) button.textContent = [...document.querySelectorAll('details.day')].every(day => day.open)
             ? 'Contraer todos los días' : 'Desplegar todos los días';
     }, true);
     async function printGuide() {
-        document.querySelectorAll('.day').forEach(day => { day.open = true; loadGallery(day); });
+        document.querySelectorAll('details.day').forEach(day => { day.open = true; loadGallery(day); });
         const images = [...main.querySelectorAll('img')];
         images.forEach(image => image.loading = 'eager');
         await Promise.allSettled(images.map(image => image.decode()));
         window.print();
     }
     window.addEventListener('beforeprint', () => {
-        document.querySelectorAll('.day').forEach(day => { day.open = true; loadGallery(day); });
+        document.querySelectorAll('details.day').forEach(day => { day.open = true; loadGallery(day); });
         main.querySelectorAll('img').forEach(image => image.loading = 'eager');
     });
     const ctx = { trips, places, photos, main, covers, stays, loadGallery, printGuide };

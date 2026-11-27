@@ -11,8 +11,8 @@ for(const [i,o] of rail.options.entries()){
  {from:'Valle',to:'Puerto',service:i?'B21':'A21',departure:'2027-01-02T17:00Z',arrival:'2027-01-02T18:00Z'}]}];
 }
 const flight={id:'air',title:'Vuelo redondo',type:'flight',selectedOption:'a',options:[{id:'a',provider:'Aerolínea de prueba',selectedFare:'basic',fares:[{id:'basic',name:'Básica',price:money(1000)}],journeys:[
- {direction:'outbound',segments:[{from:'AAA',to:'BBB',service:'X101',departure:'2027-01-01T23:00-06:00',arrival:'2027-01-02T08:00+01:00'}]},
- {direction:'return',segments:[{from:'BBB',to:'AAA',service:'X102',departure:'2027-01-03T10:00+01:00',arrival:'2027-01-03T13:00-06:00'}]}
+ {direction:'outbound',segments:[{from:'AAA',to:'BBB',flightNumber:'X101',departure:'2027-01-01T23:00-06:00',arrival:'2027-01-02T08:00+01:00'}]},
+ {direction:'return',segments:[{from:'BBB',to:'AAA',flightNumber:'X102',departure:'2027-01-03T10:00+01:00',arrival:'2027-01-03T13:00-06:00'}]}
 ]}]};
 const full={id:mainId,name:'Puerto y Valle',start:'2027-01-01',end:'2027-01-03',cover:'museum',coverSlides:['museum','park'],routeCities:['Puerto','Valle'],bases:[['Puerto',1]],work:0,travelerCount:2,profile:{pace:'balanced',solo:'easy',weather:'mild'},intro:'Visitar Puerto y Valle.',introShort:'Museo y parque de Puerto.',introHighlights:['Puerto'],climate:'Clima templado.\n\n*Qué llevar:* Abrigo.\n\n*Horas de luz:* Día largo.',solo:'Viaje sencillo',flight:'Vuelo redondo',local:'Tren regional',budgetPreliminary:false,exchangeRates:{EUR:20},practicalIndicators:[
  {id:'style',title:'Estilo de viaje',text:'Flexible',badge:'Tranquilo',tone:'green'},

@@ -16,7 +16,9 @@ async function visibleContract(page,t,viewport){
  }
  const order=await page.locator(anchors.map(x=>'#'+x).join(',')).evaluateAll(nodes=>nodes.map(n=>n.id));
  assert.deepEqual(order,anchors,id+': orden de secciones');
- assert.doesNotMatch(await page.locator('main').innerText(),invalid,id+': valor inválido');
+ const text=await page.locator('main').innerText();
+ const bad=invalid.exec(text);
+ assert.ok(!bad,id+': valor inválido: '+(bad?text.slice(Math.max(0,bad.index-80),bad.index+100):''));
  assert.equal(await page.locator('#alojamientos h2').innerText(),'Tus alojamientos.',id);
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth-document.documentElement.clientWidth<=3),id+': desbordamiento '+viewport.width);
  const names=await page.locator('#mapa .map-city-name').evaluateAll(nodes=>nodes.map(n=>{

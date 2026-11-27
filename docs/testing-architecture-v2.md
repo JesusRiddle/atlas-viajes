@@ -132,3 +132,6 @@ CI 46079388875 aprobó auditoría conjunta 1–3 en 98a3c7c. Nuevo runner tests/
 
 ### Primer CI de navegador V2
 CI 46079717925: suites previas y nuevas Node, smoke anterior aprobados; V2 falló en navegación histórica por el enlace adicional Fuentes. Se conserva la compatibilidad con esa sección cuando corresponde, sin exigirla ni permitirla en viajes principales. Pendiente CI del ajuste.
+
+### Auditoría del segundo CI y corrección de aplicación
+CI 46079974056: catálogo escritorio aprobado; fixture mixto falló por Invalid Date/undefined en navegación diaria al formatear fecha/base ausentes. Se corrige producción exclusivamente en trip.js y app.js: anclas también para tarjetas parciales, fecha pendiente explícita, base opcional y expansión/impresión solo de details.day. Se prueba el caso mixto sin completar artificialmente datos. Se corrige fixture aéreo al campo real flightNumber, se mejora diagnóstico con fragmento exacto y se ejecutan los cuatro escenarios aunque uno falle para obtener evidencia conjunta. No cambia JSON turístico. La fase 4 requiere nuevo CI antes de aprobarse. Se mantiene pendiente revisar equivalencia de la presentación de presupuesto, incluidas peculiaridades heredadas del ledger, sin redefinir su semántica por un test.

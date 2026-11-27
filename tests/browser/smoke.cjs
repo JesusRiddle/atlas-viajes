@@ -66,6 +66,15 @@ async function fixture(page,viewport){
  await visibleContract(page,partial,viewport);
  assert.equal(await page.locator('#dias details.day').count(),1);
  assert.equal(await page.locator('#dias .day').count(),2);
+ const pendingDay=page.locator('.daynav a[href="#viaje/'+partial.id+'/dia-2"]');
+ assert.match(await pendingDay.innerText(),/Fecha por definir/);
+ await pendingDay.click();
+ await page.waitForURL('**#viaje/'+partial.id+'/dia-2');
+ assert.equal(await page.locator('#dia-2').count(),1);
+ await page.locator('#expand').click();
+ await page.waitForFunction(()=>document.querySelectorAll('#dias details.day[open]').length===0);
+ await page.locator('#expand').click();
+ await page.waitForFunction(()=>document.querySelectorAll('#dias details.day[open]').length===1);
  await openTrip(page,full.id);
  await visibleContract(page,full,viewport);
  await page.locator('.subnav a[href="#viaje/'+full.id+'/temporadas"]').click();
@@ -124,14 +133,16 @@ async function fixture(page,viewport){
 }
 (async()=>{
  const browser=await chromium.launch({headless:true});
+ const failures=[];
  try{
   for(const viewport of [{width:1440,height:900},{width:390,height:844}]){
    for(const [name,run] of [['catálogo',catalog],['fixture',fixture]]){
     const {ctx,page,errors}=await context(browser,viewport);
     try{await run(page,viewport);assert.deepEqual(errors,[],name+' '+viewport.width);console.log(name+' '+viewport.width+': aprobado');}
-    catch(e){console.error(name+' '+viewport.width+' '+page.url());throw e;}
+    catch(e){console.error(name+' '+viewport.width+' '+page.url(),e);failures.push(new Error(name+' '+viewport.width+': '+e.message,{cause:e}));}
     finally{await ctx.close();}
    }
   }
  }finally{await browser.close();}
+ if(failures.length)throw new AggregateError(failures,'Escenarios de navegador fallidos: '+failures.length);
 })().catch(e=>{console.error(e);process.exitCode=1;});
