@@ -22,7 +22,7 @@ function priorTrip(id){
 }
 function newIssues(current,previous){
  const remaining=new Map();
- const key=e=>JSON.stringify([e.path,e.message,e.evidence]);
+ const key=e=>JSON.stringify([e.identity??e.path,e.message,e.evidence]);
  for(const e of previous){const k=key(e);remaining.set(k,(remaining.get(k)||0)+1);}
  return current.filter(e=>{const k=key(e),n=remaining.get(k)||0;if(!n)return true;remaining.set(k,n-1);return false;});
 }
