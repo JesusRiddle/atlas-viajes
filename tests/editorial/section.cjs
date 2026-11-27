@@ -14,10 +14,13 @@ function relationErrors(trip,roots,complete=false){
 }
 function suite(name,check,valid,invalid,extra={}){
  test(name+': contratos de los viajes seleccionados',t=>{
+   const section=extra.section || ({Mapa:'mapa',Experiencias:'experiencias',Reservaciones:'reservas',Traslados:'traslados',Alojamientos:'alojamientos','Día por día':'dias',Presupuesto:'costes'})[name];
+   assert.ok(section,'Sección no registrada: '+name);
+   const failures=[];
    for(const {module,trip} of trips) {
-     const errors=check(trip,closes(extra.section || ({Mapa:'mapa',Experiencias:'experiencias',Reservaciones:'reservas',Traslados:'traslados',Alojamientos:'alojamientos','Día por día':'dias',Presupuesto:'costes'})[name]),mode);
-     assert.deepEqual(errors,[],module.id+': '+JSON.stringify(errors));
+     for(const error of check(trip,closes(section),mode))failures.push({trip:module.id,...error});
    }
+   assert.deepEqual(failures,[],name+': '+JSON.stringify(failures));
    if(!trips.length)t.diagnostic('Sin viajes seleccionados; solo fixtures');
  });
  test(name+': ejemplo válido y contraejemplos independientes',()=>{

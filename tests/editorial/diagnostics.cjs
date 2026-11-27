@@ -3,17 +3,22 @@ const test=require('node:test');
 const assert=require('node:assert/strict');
 const {execFileSync}=require('node:child_process');
 const path=require('node:path');
-const {trips,closes}=require('./catalog.cjs');
+const {trips,closes,parseModules,isPrimary}=require('./catalog.cjs');
 const root=path.resolve(__dirname,'../..');
 const base=process.env.ATLAS_QA_BASE;
 if(base)assert.match(base,/^[a-f0-9]{40}$/i,'ATLAS_QA_BASE debe ser un SHA completo');
+const opts={cwd:root,encoding:'utf8',maxBuffer:16*1024*1024};
+function priorPrimaryIds(source){
+ return new Set(parseModules(source).filter(isPrimary).map(m=>m.id));
+}
+const priorIds=base?priorPrimaryIds(execFileSync('git',['show',base+':modules.js'],opts)):new Set();
+const priorCache=new Map();
 function priorTrip(id){
- if(!base)return null;
- const file='data/trips/'+id+'.json';
- const opts={cwd:root,encoding:'utf8',maxBuffer:16*1024*1024};
- // A missing file is a new trip, not a reason to silently ignore a failed git command.
- const entry=execFileSync('git',['ls-tree',base,'--',file],opts).trim();
- return entry?JSON.parse(execFileSync('git',['show',base+':'+file],opts)):null;
+ // Only trips previously within the editorial scope can inherit editorial debt.
+ // A previously hidden or historical trip is new to this scope.
+ if(!priorIds.has(id))return null;
+ if(!priorCache.has(id))priorCache.set(id,JSON.parse(execFileSync('git',['show',base+':data/trips/'+id+'.json'],opts)));
+ return priorCache.get(id);
 }
 function newIssues(current,previous){
  const remaining=new Map();
@@ -43,4 +48,4 @@ function diagnosticSuite(name,check,valid,invalid){
    for(const item of invalid)assert.ok(check(item).length,JSON.stringify(item));
  });
 }
-module.exports={diagnosticSuite,newIssues};
+module.exports={diagnosticSuite,newIssues,priorPrimaryIds};
