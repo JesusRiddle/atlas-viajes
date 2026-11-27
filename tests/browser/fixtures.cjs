@@ -17,7 +17,7 @@ const flight={id:'air',title:'Vuelo redondo',type:'flight',selectedOption:'a',op
 const full={id:mainId,name:'Puerto y Valle',start:'2027-01-01',end:'2027-01-03',cover:'museum',coverSlides:['museum','park'],routeCities:['Puerto','Valle'],bases:[['Puerto',1]],work:0,travelerCount:2,profile:{pace:'balanced',solo:'easy',weather:'mild'},intro:'Visitar Puerto y Valle.',introShort:'Museo y parque de Puerto.',introHighlights:['Puerto'],climate:'Clima templado.\n\n*Qué llevar:* Abrigo.\n\n*Horas de luz:* Día largo.',solo:'Viaje sencillo',flight:'Vuelo redondo',local:'Tren regional',budgetPreliminary:false,exchangeRates:{EUR:20},practicalIndicators:[
  {id:'style',title:'Estilo de viaje',text:'Flexible',badge:'Tranquilo',tone:'green'},
  {id:'language',title:'Idioma y moneda',text:'Idioma local',badge:'Español · EUR',tone:'green'},
- {id:'entry',title:'Documentación y consejos prácticos',text:'Consultar requisitos',badge:'Pasaporte',tone:'orange'}],
+ {id:'entry',title:'Documentación y consejos prácticos',text:'Pasaporte, ETIAS, EES, visa y adaptador. Revisar previsa y adaptadores. travel-europe.europa.eu/etias',badge:'Pasaporte',tone:'orange'}],
  seasonality:{summary:'Temporada de prueba',months:Object.fromEntries(Array.from({length:12},(_,i)=>[String(i+1).padStart(2,'0'),{status:i===0?'recommended':'pending',description:i===0?'Máx. 20 °C · Mín. 10 °C':null}]))},
  experiences:[{city:'Puerto',description:'Recorrer el museo y conocer su historia.'}],reservations:[['Prioridad alta',[{title:'Museo',description:'Consultar horarios',links:[{label:'Oficial',url:'https://fixture.invalid/museum'}]}]]],planningDetails:{reservationTitle:'Reservaciones importantes'},
  mapPoints:[{name:'Puerto (centro)',stayName:'Puerto',coords:[1,2],base:true,order:1},{name:'Valle',coords:[2,3],base:false,order:2}],
@@ -25,7 +25,7 @@ const full={id:mainId,name:'Puerto y Valle',start:'2027-01-01',end:'2027-01-03',
  majorTransport:[flight,rail],expenses:[{id:'hotel',hotelId:'h',category:'lodging',concept:'Alojamiento',date:'2027-01-02',nights:1,cost:money(300)},{id:'meal',category:'food',concept:'Comida',date:'2027-01-03',cost:money(80)}],
  placeDescriptions:{museum:'Museo dedicado a la historia local.',park:'Parque junto al centro histórico.'},
  days:[{n:1,date:'2027-01-01',base:'En vuelo',title:'Salida: vuelo',places:[],am:'Preparar equipaje',pm:'Traslado',night:'Vuelo',transportRefs:['air']},
- {n:2,date:'2027-01-02',base:'Puerto',title:'Puerto: museo',places:['museum','park'],optionalPlaces:['park'],am:'Museo',pm:'Valle',night:'Descanso',hotel:'h',transportRefs:['air','rail']},
+ {n:2,date:'2027-01-02',base:'Puerto',title:'Puerto: museo',places:['museum','park'],optionalPlaces:['park'],am:'*1.* Museo\n2. Mercado',pm:'Valle',night:'Descanso',hotel:'h',transportRefs:['air','rail']},
  {n:3,date:'2027-01-03',base:'Puerto',title:'Puerto: regreso',places:[],am:'Salida',pm:'Vuelo',night:'Llegada',transportRefs:['air']}]
 };
 const draft={id:draftId,name:'Viaje mínimo de prueba'};
