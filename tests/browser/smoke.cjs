@@ -24,6 +24,22 @@ async function openTrip(page,id){
  await page.goto(base+'#viaje/'+id,{waitUntil:'domcontentloaded'});
  await page.locator('.subnav a[href="#viaje/'+id+'/plan"]').waitFor();
 }
+async function navigateDay(page,tripId,day,viewport){
+ const hash='#viaje/'+tripId+'/dia-'+day;
+ const link=page.locator('.daynav a[href="'+hash+'"]');
+ assert.equal(await link.count(),1,'Enlace diario único');
+ if(viewport.width>1000){
+  assert.ok(await link.isVisible(),'Menú diario visible en escritorio');
+  await link.click();
+ }else{
+  assert.equal(await link.isVisible(),false,'Menú lateral oculto en móvil');
+  // El móvil accede a las jornadas mediante desplazamiento; comprobar también enlaces profundos.
+  await page.locator('#dia-'+day).scrollIntoViewIfNeeded();
+  await page.goto(base+hash);
+ }
+ await page.waitForURL('**'+hash);
+ assert.equal(await page.locator('#dia-'+day).count(),1,'Destino diario único');
+}
 async function home(page){
  await page.goto(base+'#inicio',{waitUntil:'domcontentloaded'});
  await page.locator('#atlas-home-title').waitFor();
@@ -35,8 +51,13 @@ async function catalog(page,viewport){
  assert.deepEqual(hrefs,ordered.map(x=>'#viaje/'+x.module.id));
  assert.equal(await page.locator('#ideas-viajes .idea-tripcard').count(),all.filter(x=>x.module.homeGroup==='ideas').length);
  const compared=await page.locator('#comparar tbody td:first-child a').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')));
- assert.equal(new Set(compared).size,compared.length);
- assert.ok(compared.every(h=>hrefs.includes(h)));
+ const eligible=await page.evaluate(async()=>{
+  const {trips}=await window.ATLAS_READY;
+  const format=window.AtlasFormat({trips});
+  return trips.filter(t=>t.homeGroup!=='ideas'&&(format.canRenderFullTrip(t)||(t.start&&t.end&&t.routeCities?.length&&Number.isFinite(window.AtlasBudget.planningEstimate(t)?.low))))
+   .sort((a,b)=>(a.start||'9999-12-31').localeCompare(b.start||'9999-12-31')).map(t=>'#viaje/'+t.id);
+ });
+ assert.deepEqual(compared,eligible,'Todos y solo los viajes elegibles, en orden');
  assert.equal(await page.locator('#comparar thead th').count(),8);
  await page.emulateMedia({reducedMotion:'reduce'});
  assert.equal(await page.locator('.atlas-home-hero-image img').evaluate(n=>getComputedStyle(n).animationName),'none');
@@ -68,9 +89,7 @@ async function fixture(page,viewport){
  assert.equal(await page.locator('#dias .day').count(),2);
  const pendingDay=page.locator('.daynav a[href="#viaje/'+partial.id+'/dia-2"]');
  assert.match(await pendingDay.innerText(),/Fecha por definir/);
- await pendingDay.click();
- await page.waitForURL('**#viaje/'+partial.id+'/dia-2');
- assert.equal(await page.locator('#dia-2').count(),1);
+ await navigateDay(page,partial.id,2,viewport);
  await page.locator('#expand').click();
  await page.waitForFunction(()=>document.querySelectorAll('#dias details.day[open]').length===0);
  await page.locator('#expand').click();
@@ -84,8 +103,7 @@ async function fixture(page,viewport){
  await page.waitForFunction(()=>document.querySelectorAll('#dias details.day[open]').length===0);
  await expand.click();
  await page.waitForFunction(n=>document.querySelectorAll('#dias details.day[open]').length===n,full.days.length);
- await page.locator('.daynav a[href="#viaje/'+full.id+'/dia-2"]').click();
- await page.waitForURL('**#viaje/'+full.id+'/dia-2');
+ await navigateDay(page,full.id,2,viewport);
  const image=page.locator('#dia-2 .photo-open').first();
  await image.click();
  await page.locator('dialog.photo-modal[open]').waitFor();
@@ -100,6 +118,8 @@ async function fixture(page,viewport){
  const dailyTransport=page.locator('[data-day-transport="2"]');
  assert.match(await dailyTransport.innerText(),/A12/);
  const globalBefore=await global.innerText(),dailyBefore=await daily.innerText();
+ assert.match(globalBefore,/1,580/);
+ assert.match(await daily.locator('.day-budget-heading').innerText(),/500/);
  await rail.locator('select[data-field="option"]').selectOption('b');
  await page.waitForFunction(()=>document.querySelector('[data-transport="rail"] select[data-field="option"]')?.value==='b'&&document.querySelector('[data-day-transport="2"]')?.textContent.includes('B12'));
  assert.notEqual(await global.innerText(),globalBefore);
