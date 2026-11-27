@@ -7,10 +7,13 @@ const currencies=new Set(Intl.supportedValuesOf('currency'));
 function check(t,c){
  const errors=relationErrors(t,['majorTransport'],c);
  for(const [i,item] of list(t.majorTransport).entries()){
-   if(!item||typeof item!=='object')continue;
+   if(!item||typeof item!=='object'||Array.isArray(item)){errors.push(problem('majorTransport['+i+']','Transporte inválido'));continue;}
    const p='majorTransport['+i+']';
    if(item.options!=null&&!Array.isArray(item.options)){errors.push(problem(p+'.options','Lista inválida'));continue;}
    const options=list(item.options);
+   if(c&&!options.length)errors.push(problem(p+'.options','Opciones requeridas al cierre'));
+   if(c&&!(typeof item.type==='string'&&item.type.trim()))errors.push(problem(p+'.type','Tipo requerido al cierre'));
+   if(c&&!(typeof item.title==='string'&&item.title.trim()))errors.push(problem(p+'.title','Título requerido al cierre'));
    const ids=new Set();
    for(const [j,o] of options.entries()){
      const q=p+'.options['+j+']';
@@ -31,7 +34,7 @@ function check(t,c){
        if(!Array.isArray(journey?.segments)||!journey.segments.length){errors.push(problem(z,'Sin segmentos'));continue;}
        for(let n=0;n<journey.segments.length;n++){
          const s=journey.segments[n],prior=journey.segments[n-1];
-         if(!s?.from||!s?.to){errors.push(problem(z,'Origen/destino ausente'));continue;}
+         if(!s||typeof s.from!=='string'||!s.from.trim()||typeof s.to!=='string'||!s.to.trim()){errors.push(problem(z,'Origen/destino ausente'));continue;}
          if(n&&prior?.to!==s.from)errors.push(problem(z,'Conexión inconexa'));
          if(s.departure&&s.arrival&&Date.parse(s.arrival)<Date.parse(s.departure))errors.push(problem(z,'Duración negativa'));
          if(prior?.arrival&&s.departure&&Date.parse(s.departure)<Date.parse(prior.arrival))errors.push(problem(z,'Escala negativa'));
@@ -46,7 +49,7 @@ const valid={majorTransport:[{id:'tren',type:'train',selectedOption:'a',options:
 function mutate(fn){const t=structuredClone(valid);fn(t.majorTransport[0],t.majorTransport[0].options[0]);return t;}
 suite('Traslados',check,valid,[
  mutate(t=>t.selectedOption='x'),mutate((t,o)=>o.selectedFare='x'),mutate((t,o)=>o.fares[0].price={amount:-1,currency:'MXN'}),
- mutate((t,o)=>o.journeys[0].segments=[]),mutate((t,o)=>o.journeys[0].segments[1].from='D')
+ mutate((t,o)=>o.journeys[0].segments=[]),mutate((t,o)=>o.journeys[0].segments[1].from='D'),mutate((t,o)=>o.journeys[0].segments[0].from=123),mutate((t,o)=>o.fares={}),mutate(t=>t.options='incorrecto')
 ]);
 function timestamps(t){
  const errors=[];
@@ -70,3 +73,11 @@ function quotes(t){
 diagnosticSuite('Traslados: evidencia de cotización',quotes,{majorTransport:[{id:'t',options:[{id:'a',status:'quoted',quotedAt:'2027-01-01',selectedFare:'f',fares:[{id:'f',price:{amount:100,currency:'MXN'}}]}]}]},[
  {majorTransport:[{id:'t',options:[{id:'a',status:'quoted'}]}]}
 ]);
+
+const test=require('node:test');
+const assert=require('node:assert/strict');
+test('Traslados: esqueleto permitido durante construcción, no al cerrar',()=>{
+ assert.deepEqual(check({majorTransport:[{id:'tren'}]},false),[]);
+ assert.ok(check({majorTransport:[{id:'tren'}]},true).some(e=>e.path.endsWith('.options')));
+ assert.deepEqual(check(mutate(t=>t.title='Tren regional'),true),[]);
+});

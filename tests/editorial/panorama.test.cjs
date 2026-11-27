@@ -5,6 +5,11 @@ const { trips, closes } = require('./catalog.cjs');
 const { indicators } = require('../../scripts/editorial-contracts.cjs');
 function check(trip, complete=false) {
   const errors=indicators(trip.practicalIndicators ?? [],{complete});
+  for(const key of ['intro','introShort','climate']){
+    const value=trip[key];
+    if((value!=null&&typeof value!=='string')||(complete&&!(typeof value==='string'&&value.trim())))
+      errors.push({path:key,message:'Texto editorial requerido al cierre o tipo incorrecto'});
+  }
   const lang=Array.isArray(trip.practicalIndicators) && trip.practicalIndicators.find(x=>x?.id==='language');
   if(lang && lang.tone!=='green') errors.push({path:'practicalIndicators.language.tone',message:'Debe ser verde'});
   return errors;
@@ -20,7 +25,10 @@ test('Panorama: pendiente legítimo, orden, color y moneda', () => {
   ];
   assert.deepEqual(check({}),[]);
   assert.ok(check({},true).length);
-  assert.deepEqual(check({practicalIndicators:items},true),[]);
+  const full={practicalIndicators:items,intro:'Visitar Puerto',introShort:'Descubrir Puerto',climate:'Templado.\n\n*Qué llevar:* Abrigo.\n\n*Horas de luz:* Día largo.'};
+  assert.deepEqual(check(full,true),[]);
+  for(const key of ['intro','introShort','climate'])assert.ok(check({...full,[key]:null},true).some(e=>e.path===key));
+  assert.ok(check({intro:42}).some(e=>e.path==='intro'));
   assert.ok(check({practicalIndicators:[items[1],items[0],items[2]]}).length);
   for(const change of [{badge:'Italiano · XYZ'},{tone:'orange'}])
     assert.ok(check({practicalIndicators:items.map(i=>i.id==='language'?{...i,...change}:i)}).length);

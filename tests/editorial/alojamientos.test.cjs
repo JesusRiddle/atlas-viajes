@@ -5,6 +5,7 @@ const list=x=>Array.isArray(x)?x:[];
 function check(t,c){
  const errors=relationErrors(t,['hotels','bases'],c);
  const assigned=new Map();
+ for(const h of list(t.hotels))if(h&&typeof h==='object'&&c&&!(typeof h.name==='string'&&h.name.trim()))errors.push(problem('hotels.'+h.id+'.name','Nombre requerido al cierre'));
  for(const day of list(t.days)){
    if(!day?.hotel)continue;
    if(!assigned.has(day.hotel))assigned.set(day.hotel,[]);

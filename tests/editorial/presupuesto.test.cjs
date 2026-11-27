@@ -9,11 +9,13 @@ function check(t,c){
    if(!e||typeof e!=='object')continue;
    if(e.nights!=null&&(!Number.isInteger(e.nights)||e.nights<1))errors.push(problem('expenses.'+e.id+'.nights','Noches inválidas'));
    const h=hotels.get(e.hotelId);
-   if(h&&e.nights!=null&&h.checkIn&&h.checkOut){
+   if(h&&Number.isInteger(e.nights)&&e.nights>0){
      const nights=(Date.parse(h.checkOut)-Date.parse(h.checkIn))/86400000;
-     if(Number.isFinite(nights)&&e.nights!==nights)errors.push(problem('expenses.'+e.id+'.nights','Noches distintas del alojamiento'));
+     if(Number.isFinite(nights)&&e.nights>nights)errors.push(problem('expenses.'+e.id+'.nights','Noches superiores a la estancia'));
    }
  }
+ // Installments can repeat coverage or omit nights; don't sum overlapping night counts.
+ // A single explicitly partial payment is also valid; reconciliation of amounts belongs to functional tests.
  const expenses=new Set((Array.isArray(t.expenses)?t.expenses:[]).map(e=>e?.id));
  const byId=new Map(items.map(x=>[x?.id,x]));
  for(const item of items){
@@ -32,9 +34,18 @@ function check(t,c){
 suite('Presupuesto',check,{travelerCount:1,expenses:[{id:'e',cost:{amount:0,currency:'MXN'}}],majorTransport:[{id:'t',budgetIncludedIn:'e'}]},[
  {travelerCount:0},
  {expenses:[{id:'e',nights:0}]},
- {hotels:[{id:'h',checkIn:'2027-01-01',checkOut:'2027-01-03'}],expenses:[{id:'e',hotelId:'h',nights:1}]},
+ {hotels:[{id:'h',checkIn:'2027-01-01',checkOut:'2027-01-03'}],expenses:[{id:'e',hotelId:'h',nights:3}]},
  {expenses:[{id:'e',cost:{amount:-1,currency:'MXN'}}]},
  {exchangeRates:{EUR:0}},
  {majorTransport:[{id:'t',budgetIncludedIn:'missing'}]},
  {majorTransport:[{id:'t',budgetIncludedIn:'t'}]}
 ],{complete:true});
+
+const test=require('node:test');
+const assert=require('node:assert/strict');
+test('Presupuesto: pagos parciales, anticipos y cobertura repetida legítimos',()=>{
+ const hotels=[{id:'h',checkIn:'2027-01-01',checkOut:'2027-01-05'}];
+ const row=(id,nights)=>({id,hotelId:'h',nights,cost:{amount:100,currency:'MXN'}});
+ for(const expenses of [[row('a',2),row('b',2)],[row('a',4),row('b',4)],[row('a',2),row('b',null)]])assert.deepEqual(check({hotels,expenses},false),[]);
+ assert.ok(check({hotels,expenses:[row('a',5)]},false).length);
+});
