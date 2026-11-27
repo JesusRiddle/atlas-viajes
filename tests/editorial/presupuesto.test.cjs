@@ -49,3 +49,24 @@ test('Presupuesto: pagos parciales, anticipos y cobertura repetida legítimos',(
  for(const expenses of [[row('a',2),row('b',2)],[row('a',4),row('b',4)],[row('a',2),row('b',null)]])assert.deepEqual(check({hotels,expenses},false),[]);
  assert.ok(check({hotels,expenses:[row('a',5)]},false).length);
 });
+
+const {trips:scoped}=require('./catalog.cjs');
+const trips=scoped.map(x=>x.trip);
+test('cuando un viaje declara totales diarios, concilia exactamente con sus gastos', () => {
+  for (const trip of trips) {
+    if (!trip.days?.length || !trip.days.every(d => Number.isFinite(d.spend))) continue;
+    if (trip.expenses?.some(e=>e.cost?.currency!=='MXN'||e.nights||e.dates||e.optional||e.hotelId)) continue;
+    if (!Array.isArray(trip.expenses)||!trip.expenses.every(e => Number.isFinite(e.cost?.amount))) continue;
+    for (const day of trip.days) {
+      const expected = trip.expenses.filter(e => e.date === day.date)
+        .reduce((sum, e) => sum + e.cost.amount, 0);
+      assert.ok(Math.abs(day.spend - expected) < 0.01,
+        trip.id + ': total diario desajustado: ' + day.date);
+    }
+    const daily = trip.days.reduce((sum, d) => sum + d.spend, 0);
+    const expenses = trip.expenses.reduce((sum, e) => sum + e.cost.amount, 0);
+    assert.ok(Math.abs(daily - expenses) < 0.01,
+      trip.id + ': total global distinto de la suma de jornadas');
+  }
+});
+

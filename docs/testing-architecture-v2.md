@@ -144,3 +144,6 @@ CI 46080914354: regression exitoso; fase 4 cerrada según esa evidencia. Se reti
 
 ### Fase 5 — extracción de contratos estructurales
 CI 46081687612 aprobado. Se separan contratos de datos por sección con utilidades compartidas. Las suites V2 ejecutan únicamente su sección; el adaptador antiguo sigue disponible temporalmente para demostrar equivalencia con las pruebas previas. No se cambia normativa ni itinerarios. Pendiente CI de extracción antes de retirar adaptador y suites.
+
+### Fase 5 — retiro de adaptadores y metapruebas
+CI 46081973381 exitoso. Se trasladan contraejemplos y mutaciones sintéticas de relaciones, validación de rutas fotográficas y control de alcance a editorial; se retiran pruebas que imponían cierre a todos los viajes, catálogo no vacío y snapshots de documentación. La conciliación diaria aplica únicamente al formato simple de partidas MXN sin distribución ni opcionales. Los contratos térmicos y de indicadores quedan en V2, preservando render semántico con fixture. Se retira catálogo de reglas ejecutable: la checklist normativa de este documento es la referencia, no las cadenas de nombres de tests. Pendiente verificar CI y consolidar loader, transporte y navegador antiguos. No se declara equivalencia completa todavía.

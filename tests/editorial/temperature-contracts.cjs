@@ -95,18 +95,4 @@ function indicators(items, { complete = false, path = 'practicalIndicators' } = 
   return errors;
 }
 
-function sections(ids) {
-  if (!Array.isArray(ids)) return [issue('sections', 'Se espera una lista de anclas')];
-  return ids.length === SECTIONS.length && ids.every((id, i) => id === SECTIONS[i])
-    ? [] : [issue('sections', 'Se requieren las nueve secciones maestras en orden')];
-}
-
-function trip(tripData, { complete = false } = {}) {
-  if (!tripData || typeof tripData !== 'object') return [issue('trip', 'Viaje inválido')];
-  return [
-    ...(complete || tripData.seasonality ? seasons(tripData.seasonality) : []),
-    ...indicators(tripData.practicalIndicators ?? [], { complete })
-  ];
-}
-
-module.exports = { MONTHS, STATES, INDICATORS, SECTIONS, temperature, seasons, indicators, sections, trip };
+module.exports={MONTHS,temperature,seasons,indicators};

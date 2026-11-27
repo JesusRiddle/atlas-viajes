@@ -2,7 +2,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const { trips, closes } = require('./catalog.cjs');
-const { indicators } = require('../../scripts/editorial-contracts.cjs');
+const { indicators } = require('./temperature-contracts.cjs');
 function check(trip, complete=false) {
   const errors=indicators(trip.practicalIndicators ?? [],{complete});
   for(const key of ['intro','introShort','climate']){
@@ -32,4 +32,9 @@ test('Panorama: pendiente legítimo, orden, color y moneda', () => {
   assert.ok(check({practicalIndicators:[items[1],items[0],items[2]]}).length);
   for(const change of [{badge:'Italiano · XYZ'},{tone:'orange'}])
     assert.ok(check({practicalIndicators:items.map(i=>i.id==='language'?{...i,...change}:i)}).length);
+});
+
+test('Indicadores: múltiples monedas y texto obligatorio',()=>{
+ const items=[{id:'style',title:'Estilo de viaje',text:'Caminar',badge:'Flexible',tone:'green'},{id:'language',title:'Idioma y moneda',text:'Tarjetas',badge:'Alemán · CHF; italiano · EUR',tone:'green'},{id:'entry',title:'Documentación y consejos prácticos',text:'Pasaporte',badge:'Revisar',tone:'orange'}];
+ assert.deepEqual(indicators(items),[]);assert.ok(indicators(items.map(x=>x.id==='entry'?{...x,badge:''}:x)).length);
 });

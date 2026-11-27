@@ -28,3 +28,8 @@ test('Alcance: cierre explÃ­cito, secciones selectivas y errores de configuraciÃ
  assert.equal(scoped.closes('costes'),false);
  for(const env of [{ATLAS_TRIP_ID:''},{ATLAS_TRIP_ID:'missing'},{ATLAS_QA_MODE:''},{ATLAS_QA_MODE:'general'},{ATLAS_QA_SECTIONS:''},{ATLAS_QA_SECTIONS:'plan,plan'},{ATLAS_QA_SECTIONS:'unknown'}])assert.throws(()=>resolveScope(fixture,env));
 });
+
+test('Plantilla sin viajeros ni alojamiento preseleccionado',()=>{
+ const template=require('./catalog.cjs').read('data/trips/_template.json');
+ assert.equal(template.travelerCount,null);assert.deepEqual(template.days,[]);assert.deepEqual(template.hotels,[]);
+});

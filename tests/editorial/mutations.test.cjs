@@ -3,7 +3,12 @@
 // Nunca modificar archivos data/trips: todas las mutaciones suceden en memoria.
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { validate, photos } = require('../scripts/editorial-relations.cjs');
+const c=require('./contracts.cjs');
+const photos=c.photos;
+function validate(t,{complete=false,mode}={}){
+ if(mode!=null&&!['incremental','complete'].includes(mode))return [{path:'mode',message:'Modo inválido'}];
+ return ['experiences','transport','lodging','map','calendar','budget','reservations'].flatMap(k=>c[k](t,mode==='complete'||(mode==null&&complete)));
+}
 
 const catalog = {
   museo: { photo: { src: 'photos/museo.jpg' } },
@@ -133,36 +138,3 @@ test('mutaciones parciales: se permite editar borradores, no cerrar sin jornadas
 });
 
 
-test('mutaciones sobre los nueve viajes vivos en memoria, sin sobrescribir JSON', () => {
-  const fs = require('node:fs');
-  const vm = require('node:vm');
-  const window = {};
-  vm.runInNewContext(fs.readFileSync('modules.js', 'utf8'), { window });
-  const modules = window.ATLAS_MODULES.filter(m => m.available && m.homeGroup !== 'ideas');
-  const realCatalog = JSON.parse(fs.readFileSync('data/places.json', 'utf8'));
-  assert.ok(modules.length > 0);
-  for (const module of modules) {
-    const trip = JSON.parse(fs.readFileSync('data/trips/' + module.file, 'utf8'));
-    const changed = structuredClone(trip);
-    // Transformaciones inocuas independientes de números, fechas y proveedores.
-    for (const hotel of changed.hotels || []) if (typeof hotel.name === 'string')
-      hotel.name += ' (alternativa editorial)';
-    for (const day of changed.days || []) if (Array.isArray(day.optionalPlaces))
-      day.optionalPlaces = day.optionalPlaces.slice(0, Math.max(0, day.optionalPlaces.length - 1));
-    const known = (changed.expenses || []).find(x => Number.isFinite(x.cost?.amount) && x.cost.amount > 0);
-    if (known) known.cost.amount += 1;
-    assert.deepEqual(validate(changed, { mode: 'complete' }), [],
-      module.file + ': cambio legítimo rechazado');
-    assert.deepEqual(photos(changed, realCatalog, { complete: true }), [],
-      module.file + ': foto incoherente tras cambio legítimo');
-    if (changed.days?.length) {
-      const broken = structuredClone(changed);
-      broken.days[0].transportRefs = [...(broken.days[0].transportRefs || []), '__ausente__'];
-      failsRealTransport(broken, module.file);
-    }
-  }
-});
-function failsRealTransport(trip, file) {
-  assert.ok(validate(trip, { mode: 'complete' }).some(e =>
-    e.path.includes('days[0].transportRefs')), file + ': referencia inválida no detectada');
-}

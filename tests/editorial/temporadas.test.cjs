@@ -2,7 +2,7 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const { trips, closes } = require('./catalog.cjs');
-const { seasons, temperature, MONTHS } = require('../../scripts/editorial-contracts.cjs');
+const { seasons, temperature, MONTHS } = require('./temperature-contracts.cjs');
 function check(value,complete=false) {
   if(value==null && !complete) return [];
   if(!value || typeof value!=='object' || Array.isArray(value)) return [{path:'seasonality',message:'Objeto requerido'}];

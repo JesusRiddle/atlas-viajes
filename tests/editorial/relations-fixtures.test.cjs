@@ -4,7 +4,12 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
-const { validate, photos } = require('../scripts/editorial-relations.cjs');
+const c=require('./contracts.cjs');
+const photos=c.photos;
+function validate(t,{complete=false,mode}={}){
+ if(mode!=null&&!['incremental','complete'].includes(mode))return [{path:'mode',message:'Modo inválido'}];
+ return ['experiences','transport','lodging','map','calendar','budget','reservations'].flatMap(k=>c[k](t,mode==='complete'||(mode==null&&complete)));
+}
 
 const makeTrip = () => ({
   id: 'ejemplo',
@@ -276,7 +281,7 @@ test('completitud de metadatos: fechas de hotel, viajeros y mapa parcial', () =>
 });
 
 test('auditoría de contraejemplos: fechas ausentes, URL malformadas y errores simultáneos', () => {
-  const { isUrl } = require('../scripts/editorial-relations.cjs');
+  const { isUrl } = require('./contracts.cjs');
   assert.equal(isUrl('https://example.org/book?date=2027-01-01'), true);
   for (const url of ['https://?', 'https://example.org:bad/', 'https://user:secret@example.org',
     'https://example.org/sp ace', 'javascript:alert(1)', '']) {
@@ -310,20 +315,6 @@ test('al cerrar un viaje se exigen los pies de foto aunque no exista placeDescri
   t.placeDescriptions = { atractivo: 'Fachada histórica de la ciudad.' };
   assert.deepEqual(photos(t, catalog, { complete: true }), []);
 });
-
-test('integridad dinámica de los nueve viajes principales, sin snapshots de fechas ni importes', () => {
-  const window = {};
-  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../modules.js'), 'utf8'), { window });
-  const main = window.ATLAS_MODULES.filter(item => item.available && item.homeGroup !== 'ideas');
-  assert.ok(main.length);
-  const photoCatalog = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/places.json'), 'utf8'));
-  for (const { file, id } of main) {
-    const trip = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/trips', file), 'utf8'));
-    assert.deepEqual(complaints(trip), [], id + ': relaciones editoriales inconsistentes');
-    assert.deepEqual(photos(trip, photoCatalog, { complete: true }), [], id + ': fotografías referenciadas inválidas');
-  }
-});
-
 
 test('jornadas corruptas no provocan excepción ni ocultan error editorial', () => {
   for (const invalid of [null, undefined, false, 'fecha libre', [], 42]) {
