@@ -14,8 +14,9 @@ function check(t,c){
  for(const h of list(t.hotels)){
    if(!h||!dateOK(h.checkIn)||!dateOK(h.checkOut))continue;
    const dates=assigned.get(h.id)||[];
+   const knownDates=dates.filter(dateOK);
    const nights=(Date.parse(h.checkOut)-Date.parse(h.checkIn))/86400000;
-   if(dates.length>nights||new Set(dates).size!==dates.length||c&&dates.length&&dates.length!==nights)
+   if(dates.length>nights||new Set(knownDates).size!==knownDates.length||c&&dates.length&&knownDates.length!==nights)
      errors.push(problem('hotels.'+h.id,'Noches asignadas inconsistentes'));
  }
  return errors;
@@ -82,4 +83,14 @@ test('no considera la frase NO reservado una reserva real', () => {
 
 test('alojamientos: advertencias visibles sobre catálogo dinámico',t=>{
  for(const {module,trip} of trips)for(const warning of lodgingStatusWarnings(trip))t.diagnostic(JSON.stringify({trip:module.id,...warning}));
+});
+
+test('Alojamientos parciales: fechas pendientes no son fechas inválidas ni noches duplicadas',()=>{
+ const t={hotels:[{id:'h',checkIn:'2027-05-01'}],days:[{hotel:'h',date:null},{hotel:'h'}]};
+ assert.deepEqual(check(t,false),[]);
+ assert.ok(check(t,true).length);
+ t.hotels[0].checkOut='2027-05-03';assert.deepEqual(check(t,false),[]);
+ t.days[0].date=t.days[1].date='2027-05-01';assert.ok(check(t,false).some(e=>e.path==='hotels.h'));
+ t.days[1].date=null;t.hotels[0].checkOut='2027-02-30';assert.ok(check(t,false).length);
+ t.hotels[0].checkOut=null;t.hotels[0].links='incorrecto';assert.ok(check(t,false).some(e=>e.path.endsWith('.links')));
 });
