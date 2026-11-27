@@ -46,3 +46,9 @@ test('Jornadas sin fecha: pendientes válidos, no inconsistencias ocultas',()=>{
  const undated={days:[{n:1,date:'2027-05-01'},{n:2,date:null},{n:3,date:'2027-05-02'}]};
  assert.ok(check(undated,false).some(e=>e.path==='days[2].date'));
 });
+
+test('Jornadas pendientes no pueden exceder un intervalo confirmado',()=>{
+ const t={start:'2027-05-01',end:'2027-05-02',days:[{n:1,date:null},{n:2},{n:3}]};
+ assert.ok(check(t,false).some(e=>e.path==='days'));
+ t.end='2027-05-03'; assert.deepEqual(check(t,false),[]);
+});
