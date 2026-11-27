@@ -129,3 +129,6 @@ CI 46079139931 exitoso en 7c678cc. Se verifican separación de datos, comportami
 
 ## Fase 4 — construcción integral
 CI 46079388875 aprobó auditoría conjunta 1–3 en 98a3c7c. Nuevo runner tests/browser/smoke.cjs, contratos visibles en editorial.cjs y escenarios controlados en fixtures.cjs. Dos viewports, dos contextos independientes por viewport: catálogo dinámico y fixture de viaje completo/mínimo/parcial/histórico. Se controla red externa, sin esperar tiempos fijos, sin editar JSON de viajes. Prueba de navegación, temporadas, panorama, mapa, hoteles, reservas, galería, días, cronología y selección de transporte con actualización diaria/global. Se conserva smoke anterior durante transición. Pendiente CI y revisión de equivalencia antes de retirar tests previos. La degradación de mapas externos no certifica el servicio de teselas ni autenticidad de fotografías.
+
+### Primer CI de navegador V2
+CI 46079717925: suites previas y nuevas Node, smoke anterior aprobados; V2 falló en navegación histórica por el enlace adicional Fuentes. Se conserva la compatibilidad con esa sección cuando corresponde, sin exigirla ni permitirla en viajes principales. Pendiente CI del ajuste.

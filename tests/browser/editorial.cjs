@@ -6,7 +6,9 @@ async function visibleContract(page,t,viewport){
  const id=t.id;
  await page.locator('.subnav a[href="#viaje/'+id+'/plan"]').waitFor();
  const nav=await page.locator('.subnav .subnav-sections a').evaluateAll(links=>links.map(a=>a.getAttribute('href').split('/').at(-1)));
- assert.deepEqual(nav,anchors,id+': navegación');
+ const legacySources=t.homeGroup==='ideas'&&t.sources?.length&&nav.includes('fuentes');
+ assert.deepEqual(nav,legacySources?[...anchors,'fuentes']:anchors,id+': navegación');
+ if(legacySources)assert.equal(await page.locator('#fuentes').count(),1,id+': fuentes históricas');
  for(const section of anchors){
   const loc=page.locator('#'+section);
   assert.equal(await loc.count(),1,id+': '+section);
