@@ -38,11 +38,11 @@ El comando crea `data/trips/mi-viaje.json`, registra el viaje en `modules.js` co
 
 Antes de redactar, consultar [AGENTS.md](AGENTS.md) y la [guía editorial de las nueve secciones](docs/trip-editorial-guide.md); la guía define qué va en cada sección, qué debe excluirse y cómo usar `introHighlights` para las negritas del panorama.
 
-**Orden:** preparar restricciones, vuelos y bases → esqueleto diario y reservas imprescindibles → panorama → mapa → temporadas → experiencias → reservas → movilidad → hoteles → día por día detallado → presupuesto → auditoría final. Ver los criterios y dependencias en la guía editorial; comprobar `docs/trip-master-standard.md` al finalizar cada sección.
+**Orden:** seguir exclusivamente las etapas 00–13 de `AGENTS.md` y `docs/trip-progress-template.md`; el orden de construcción no modifica el orden visual.
 
 Completar progresivamente el JSON siguiendo [`_template.json`](data/trips/_template.json) y el [contrato de datos](docs/trip-data-contract.md). `null`, campos omitidos y listas vacías indican pendientes; nunca usar `0` para un precio desconocido. El modelo visual está definido de forma autónoma en [`docs/trip-master-standard.md`](docs/trip-master-standard.md), con nueve secciones; no depende del JSON de ningún viaje.
 
-Si buscas inspiración en un viaje antiguo, proporciona su JSON a la IA como **contexto** y decide junto con ella, campo por campo, qué añadir al JSON nuevo. No existe ninguna migración automática. Tras verificar Desktop/Mobile, activar el registro con `available: true`.
+Si buscas inspiración en un viaje antiguo, proporciona su JSON a la IA como **contexto** y decide junto con ella, campo por campo, qué añadir al JSON nuevo. No existe ninguna migración automática. El registro es visible desde su creación; verificar Desktop/Mobile sin ocultarlo por datos pendientes.
 
 ## Ejecución autónoma y seguimiento
 
@@ -63,3 +63,5 @@ node tests/browser/smoke.cjs
 No abrir `index.html` mediante `file://`; los JSON se obtienen con `fetch`. GitHub Actions también comprueba sintaxis, JSON y pruebas de navegador Desktop/Mobile con Chromium. Los cambios se hacen en una branch de trabajo; **no fusionar a `main` sin autorización**.
 
 La arquitectura V2 separa contratos editoriales, funcionales y navegador. Para cerrar una sección concreta: `ATLAS_TRIP_ID=mi-viaje ATLAS_QA_MODE=detailed ATLAS_QA_SECTIONS=plan,dias node --test tests/editorial/*.test.cjs`. Usar `general` para estimaciones de alto nivel. El CI normal es incremental; no exige cerrar borradores. Véase [diseño y bitácora V2](docs/testing-architecture-v2.md).
+
+**Alcance del PR:** declarar una línea `Atlas scope: mi-viaje` (varios slugs separados por comas) o `Atlas scope: none` si no se autorizan cambios turísticos. Las ramas `refactor/*` no pueden modificar JSON de viajes. El CI compara el árbol real con la base del PR; una edición de su descripción vuelve a activar la comprobación. Para reproducir localmente: `ATLAS_SCOPE_BASE=<SHA-base> ATLAS_SCOPE_TRIPS=mi-viaje node --test tests/editorial/change-scope.test.cjs`. Usar una cadena vacía para alcance sin viajes. La comparación local de deuda requiere `ATLAS_QA_BASE=<SHA-base>`; sin ella los diagnósticos no prueban ausencia de regresiones.
