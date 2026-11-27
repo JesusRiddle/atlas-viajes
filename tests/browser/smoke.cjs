@@ -191,6 +191,19 @@ async function fixture(page,viewport){
  await page.waitForFunction(()=>document.querySelectorAll('#dias details.day[open]').length===1);
  await openTrip(page,full.id);
  await visibleContract(page,full,viewport);
+ // Verify actual rendered behavior instead of matching production source code.
+ const entry=page.locator('[data-indicator-id="entry"] p');
+ assert.deepEqual(await entry.locator('strong').allInnerTexts(),['Pasaporte','ETIAS','EES','visa','adaptador']);
+ assert.match(await entry.innerText(),/previsa y adaptadores/);
+ const official=entry.locator('a');
+ assert.equal(await official.count(),1);
+ assert.equal(await official.getAttribute('href'),'https://travel-europe.europa.eu/etias');
+ assert.equal(await official.getAttribute('target'),'_blank');
+ assert.ok((await official.getAttribute('rel')).split(/\s+/).includes('noopener'));
+ assert.ok((await official.getAttribute('rel')).split(/\s+/).includes('noreferrer'));
+ const activities=page.locator('#dia-2 .schedule-item');
+ assert.deepEqual(await activities.locator('.schedule-item-number').allInnerTexts(),['1','2','1','1']);
+ assert.deepEqual(await activities.locator('p').allInnerTexts(),['Museo','Mercado','Valle','Descanso']);
  if(viewport.width>1000){
  const layout=await page.locator('#mapa .trip-map-header').evaluate(header=>{const i=header.querySelector('.trip-map-intro').getBoundingClientRect(),c=header.querySelector('.trip-map-cities').getBoundingClientRect();return {width:header.getBoundingClientRect().width,citiesWidth:c.width,introRight:i.right,citiesLeft:c.left,cards:[...header.querySelectorAll('.map-city-list li')].map(n=>n.getBoundingClientRect().width)};});
  assert.ok(layout.citiesWidth>=layout.width*.55);assert.ok(layout.citiesLeft>layout.introRight);assert.ok(layout.cards.every(w=>w>=90));
