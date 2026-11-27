@@ -159,12 +159,26 @@ function calendar(trip,complete=false){
       errors.push(problem(path, 'Jornada inválida: se espera un objeto'));
       return;
     }
-    if (!dateOK(day.date)) errors.push(problem(path + '.date', 'Fecha de jornada inválida'));
-    if (i === 0 && trip.start && day.date !== trip.start)
-      errors.push(problem(path + '.date', 'La primera jornada no coincide con el inicio'));
-    if (i > 0 && dateOK(days[i - 1]?.date) && day.date !== nextDate(days[i - 1].date))
-      errors.push(problem(path + '.date', 'Las jornadas deben ser consecutivas'));
-    if (i === days.length - 1 && trip.end && day.date !== trip.end)
+    if (day.date == null) {
+      if (complete) errors.push(problem(path + '.date', 'Fecha de jornada requerida al cerrar'));
+    } else if (!dateOK(day.date)) {
+      errors.push(problem(path + '.date', 'Fecha de jornada inválida'));
+    } else {
+      const anchorIndex = days.findIndex((d,j) => j < i && dateOK(d?.date));
+      const offset = (date, n) => {
+        const value = new Date(date + 'T00:00:00Z');
+        value.setUTCDate(value.getUTCDate() + n);
+        return value.toISOString().slice(0,10);
+      };
+      if (dateOK(trip.start) && day.date !== offset(trip.start,i))
+        errors.push(problem(path + '.date', 'Jornada incompatible con el inicio'));
+      if (anchorIndex >= 0 && day.date !== offset(days[anchorIndex].date,i-anchorIndex))
+        errors.push(problem(path + '.date', 'Las jornadas deben ser consecutivas'));
+      if (dateOK(trip.end) && (day.date > trip.end ||
+          (complete && i === days.length - 1 && day.date !== trip.end)))
+        errors.push(problem(path + '.date', 'Jornada incompatible con el final'));
+    }
+    if (complete && i === days.length - 1 && dateOK(trip.end) && !dateOK(day.date))
       errors.push(problem(path + '.date', 'La última jornada no coincide con el final'));
     if (complete && day.n == null)
       errors.push(problem(path + '.n', 'Número de jornada obligatorio al cerrar'));
@@ -178,7 +192,7 @@ function calendar(trip,complete=false){
         errors.push(problem(path + '.hotel', 'Alojamiento referenciado inexistente'));
       else {
         const hotel = hotels.find(h => h?.id === day.hotel);
-        if (dateOK(hotel.checkIn) && dateOK(hotel.checkOut) &&
+        if (dateOK(day.date) && dateOK(hotel.checkIn) && dateOK(hotel.checkOut) &&
           (day.date < hotel.checkIn || day.date >= hotel.checkOut))
           errors.push(problem(path + '.hotel', 'Jornada fuera de las fechas del alojamiento'));
       }
