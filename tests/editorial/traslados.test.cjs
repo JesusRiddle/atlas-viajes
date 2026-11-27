@@ -33,7 +33,6 @@ function check(t,c){
          const s=journey.segments[n],prior=journey.segments[n-1];
          if(!s?.from||!s?.to){errors.push(problem(z,'Origen/destino ausente'));continue;}
          if(n&&prior?.to!==s.from)errors.push(problem(z,'Conexión inconexa'));
-         for(const key of ['departure','arrival'])if(s[key]!=null&&item.type==='flight'&&(!/(?:Z|[+-]\d{2}:\d{2})$/.test(s[key])||!Number.isFinite(Date.parse(s[key]))))errors.push(problem(z+'.'+key,'Hora aérea sin fecha/zona válida'));
          if(s.departure&&s.arrival&&Date.parse(s.arrival)<Date.parse(s.departure))errors.push(problem(z,'Duración negativa'));
          if(prior?.arrival&&s.departure&&Date.parse(s.departure)<Date.parse(prior.arrival))errors.push(problem(z,'Escala negativa'));
        }
@@ -47,7 +46,17 @@ const valid={majorTransport:[{id:'tren',type:'train',selectedOption:'a',options:
 function mutate(fn){const t=structuredClone(valid);fn(t.majorTransport[0],t.majorTransport[0].options[0]);return t;}
 suite('Traslados',check,valid,[
  mutate(t=>t.selectedOption='x'),mutate((t,o)=>o.selectedFare='x'),mutate((t,o)=>o.fares[0].price={amount:-1,currency:'MXN'}),
- mutate((t,o)=>o.journeys[0].segments=[]),mutate((t,o)=>o.journeys[0].segments[1].from='D'),
+ mutate((t,o)=>o.journeys[0].segments=[]),mutate((t,o)=>o.journeys[0].segments[1].from='D')
+]);
+function timestamps(t){
+ const errors=[];
+ for(const item of list(t.majorTransport))if(item?.type==='flight')for(const o of list(item.options))
+ for(const [j,journey] of list(o?.journeys).entries())for(const [k,s] of list(journey?.segments).entries())
+ for(const key of ['departure','arrival'])if(s?.[key]!=null&&(typeof s[key]!=='string'||!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2})?(?:Z|[+-]\d{2}:\d{2})$/.test(s[key])||!Number.isFinite(Date.parse(s[key]))))
+ errors.push(problem('majorTransport.'+item.id+'.options.'+o.id+'.journeys.'+j+'.segments.'+k+'.'+key,'Hora aérea sin fecha/zona válida'));
+ return errors;
+}
+diagnosticSuite('Traslados: zona horaria',timestamps,mutate((t,o)=>{t.type='flight';o.journeys[0].segments[0].departure='2027-01-01T12:00-06:00';}),[
  mutate((t,o)=>{t.type='flight';o.journeys[0].segments[0].departure='2027-01-01T12:00';})
 ]);
 function quotes(t){
