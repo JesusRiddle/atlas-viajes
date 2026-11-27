@@ -33,3 +33,31 @@ test('Temporadas: parcial, cierre, signo y significado',()=>{
   delete months['12'];
   assert.ok(check({months},true).some(e=>e.path.endsWith('12')));
 });
+
+test('temperatura explícita: máxima izquierda, mínima derecha y negativos correctos', () => {
+  for (const [source, max, min] of [
+    ['Máx. 5 °C · Mín. −3 °C', 5, -3],
+    ['Máx. −1 °C · Mín. −12 °C', -1, -12],
+    ['Máx. 0 °C · Mín. 0 °C', 0, 0],
+    ['Máx. 18,5 °C · Mín. 11,2 °C', 18.5, 11.2]
+  ]) assert.deepEqual(temperature(source), { kind: 'explicit', max, min, errors: [] });
+  assert.match(temperature('Máx. −3 °C · Mín. 5 °C').errors.join(' '), /máxima/);
+  assert.match(temperature('Máx. -1 °C · Mín. -3 °C').errors.join(' '), /Unicode/);
+  assert.equal(temperature('5 a −3 °C').kind, 'legacy-interval');
+  assert.match(temperature('5 a −3 °C').errors.join(' '), /menor a mayor/);
+  assert.equal(temperature('5–3 °C').kind, 'invalid');
+  assert.equal(temperature('111 a 2 °C').kind, 'invalid',
+    'No aceptar un fragmento numérico dentro de otro valor');
+  assert.deepEqual(temperature('Máx. 5 °C · Mín. −3 °C.'),
+    { kind: 'explicit', max: 5, min: -3, errors: [] });
+  assert.match(temperature('Máx. 5 °C Mín. −3 °C').errors.join(' '), /malformado/);
+  assert.match(temperature('Máx. 5 °C · Mín. −3 °C10').errors.join(' '), /malformado/);
+});
+
+test('intervalos históricos conservan significado sin inventar mínimos nocturnos', () => {
+  assert.deepEqual(temperature('Máximas orientativas: −3 a 5 °C (dos regiones).'),
+    { kind: 'legacy-interval', low: -3, high: 5, errors: [] });
+  assert.match(temperature('−3 a 5 °C', { allowLegacy: false }).errors.join(' '), /exige/);
+  assert.equal(temperature(null).kind, 'missing');
+});
+

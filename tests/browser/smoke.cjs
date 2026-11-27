@@ -59,6 +59,7 @@ async function catalog(page,viewport){
  });
  assert.deepEqual(compared,eligible,'Todos y solo los viajes elegibles, en orden');
  assert.equal(await page.locator('#comparar thead th').count(),8);
+ assert.ok(await page.locator('#comparar thead th').evaluateAll(nodes=>[nodes[3],nodes[4]].every(n=>getComputedStyle(n).whiteSpace==='nowrap')),'Cabeceras de alojamientos y ritmo sin saltos');
  await page.emulateMedia({reducedMotion:'reduce'});
  assert.equal(await page.locator('.atlas-home-hero-image img').evaluate(n=>getComputedStyle(n).animationName),'none');
  await page.emulateMedia({reducedMotion:'no-preference'});
