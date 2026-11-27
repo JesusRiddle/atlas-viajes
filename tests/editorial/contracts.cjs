@@ -152,6 +152,10 @@ function calendar(trip,complete=false){
   if (complete && dateOK(trip.start) && dateOK(trip.end) && !days.length)
     errors.push(problem('days', 'Un viaje completo con fechas necesita jornadas'));
 
+  if (dateOK(trip.start) && dateOK(trip.end) && trip.start <= trip.end) {
+    const capacity = Math.round((Date.parse(trip.end+'T00:00:00Z')-Date.parse(trip.start+'T00:00:00Z'))/86400000)+1;
+    if(days.length > capacity) errors.push(problem('days','Más jornadas que días disponibles en el calendario'));
+  }
   const seenNumbers = new Set();
   days.forEach((day, i) => {
     const path = 'days[' + i + ']';
