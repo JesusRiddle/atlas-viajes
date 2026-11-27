@@ -93,14 +93,16 @@ function lodging(trip,complete=false){
     if (!hotel || typeof hotel !== 'object') continue;
     if (complete && (hotel.checkIn == null || hotel.checkOut == null))
       errors.push(problem('hotels[' + i + ']', 'Fechas de alojamiento requeridas al cerrar'));
-    if (hotel.checkIn != null || hotel.checkOut != null) {
-      if (!dateOK(hotel.checkIn) || !dateOK(hotel.checkOut) || hotel.checkOut <= hotel.checkIn)
-        errors.push(problem('hotels[' + i + ']', 'Check-in/check-out inválidos'));
-    }
+    if ((hotel.checkIn != null && !dateOK(hotel.checkIn)) ||
+        (hotel.checkOut != null && !dateOK(hotel.checkOut)) ||
+        (dateOK(hotel.checkIn) && dateOK(hotel.checkOut) && hotel.checkOut <= hotel.checkIn))
+      errors.push(problem('hotels[' + i + ']', 'Check-in/check-out inválidos'));
     if (complete && (!isUrl(hotel.mapsUrl) || !Array.isArray(hotel.links) || !hotel.links.length))
       errors.push(problem('hotels[' + i + ']', 'Enlace de mapa y al menos un enlace de reserva requeridos'));
     if (hotel.mapsUrl != null && !isUrl(hotel.mapsUrl))
       errors.push(problem('hotels[' + i + '].mapsUrl', 'URL de mapa inválida'));
+    if (hotel.links != null && !Array.isArray(hotel.links))
+      errors.push(problem('hotels[' + i + '].links', 'Enlaces deben ser una lista'));
     if (Array.isArray(hotel.links)) hotel.links.forEach((link, j) => {
       if (!isUrl(link?.url)) errors.push(problem('hotels[' + i + '].links[' + j + ']', 'URL inválida'));
     });
@@ -210,9 +212,15 @@ function calendar(trip,complete=false){
     });
     if (day.transportRefs != null && !Array.isArray(day.transportRefs))
       errors.push(problem(path + '.transportRefs', 'Referencias de transporte deben ser una lista'));
-    if (Array.isArray(day.transportRefs))
-      day.transportRefs.forEach((id, j) => { if (!transportIds.has(id))
-        errors.push(problem(path + '.transportRefs[' + j + ']', 'Transporte inexistente')); });
+    if (Array.isArray(day.transportRefs)) {
+      const seen = new Set();
+      day.transportRefs.forEach((id, j) => {
+        const field = path + '.transportRefs[' + j + ']';
+        if (!transportIds.has(id)) errors.push(problem(field, 'Transporte inexistente'));
+        if (seen.has(id)) errors.push(problem(field, 'Transporte repetido en la jornada'));
+        seen.add(id);
+      });
+    }
   });
   // Una noche con hotel disponible pero sin elección en el itinerario es una
   // inconsistencia. No obligar a dormir en hotel durante vuelos nocturnos,
