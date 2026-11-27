@@ -3,7 +3,7 @@ Fecha: 2026-11-27. Rama desde main. Sustituye el plan de saneamiento incremental
 
 ## Estado
 - Fase 1: diseño normativo cerrado; inventario y decisiones de implementación registrados abajo.
-- Fase 2: suites por nueve secciones y transversal ejecutadas en CI 46077823237 (31/31 V2, 136/136 anteriores, navegador verde); revisión final de prefijos de calendario y modos de cierre pendiente del CI del lote de cierre.
+- Fase 2: capa editorial aprobada para d029be2, CI 46078303595: 35/35 V2, 136/136 anteriores, navegador verde; 83 hallazgos heredados, cero regresiones. Fases 3–6 pendientes de certificación.
 
 ## Fuentes normativas
 AGENTS.md, trip-editorial-guide.md, trip-data-contract.md, trip-master-standard.md, trip-production-checklist.md y _template.json. La matriz previa es referencia, no fuente de requisitos ni prueba de cobertura. Ante contradicción, documentar y resolver antes de convertir en gate. Ejemplo: AGENTS exige intervalo con «a», mientras contrato permite Máx./Mín. explícitos cuando ambas métricas son reales; distinguir semántica, no imponer un formato que falsee datos. El checklist pide ampliar manualmente regresiones por viaje: reemplazar esa instrucción por descubrimiento dinámico al activar V2.
@@ -116,3 +116,6 @@ Evidencia comprobada: 46077823237, SHA 648f259774bef534579c8f834b354217792bad63.
 
 ## Correcciones de reauditoría de fase 2
 CI 46077991330 aprobado para 40a9911. Se refuerza presencia de textos de Panorama, mapa y alojamiento al cierre, estructura de opciones de transporte y origen/destino, y se evita equiparar cada partida de alojamiento con el total de noches (anticipos y pagos parciales son válidos; no inferir solapamientos de importes). Se agregan contraejemplos y fixtures. La conciliación monetaria corresponde a fase 3; no se añaden datos turísticos ni se elimina la suite anterior. Pendiente comprobar CI del commit de corrección.
+
+## Fase 3 — construcción funcional
+Seis suites en tests/functional, runtime común que carga componentes reales en VM, datos sintéticos pequeños e independientes, sin modificar JSON ni producción. Se reutiliza el sandbox de alta existente; se rescatan contratos de presupuesto, transporte, loader, selección y formato. El fixture grande y los casos de render antiguos se conservan mientras se demuestra equivalencia; geometría y cronologías visibles pertenecen a fase 4, retiro de pruebas anteriores a fase 5. CI ejecuta V2 funcional junto a V2 editorial y regresión anterior. Pendiente resultado y auditoría de equivalencia; no afirmar cobertura por número de tests.

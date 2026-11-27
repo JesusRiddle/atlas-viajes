@@ -35,6 +35,8 @@ jobs:
         env:
           ATLAS_QA_BASE: ${{ github.event.pull_request.base.sha || github.event.before || '' }}
         run: node --test tests/editorial/*.test.cjs
+      - name: Run functional V2 tests (transition)
+        run: node --test tests/functional/*.test.cjs
       - name: Install Chromium browser for UI regression
         run: |
           npm install --no-save playwright
