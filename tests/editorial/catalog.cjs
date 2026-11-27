@@ -35,4 +35,9 @@ assert.ok(['incremental','general','detailed'].includes(mode), 'ATLAS_QA_MODE in
 assert.ok(mode === 'incremental' || target, 'El cierre requiere ATLAS_TRIP_ID');
 const trips = target ? primary.filter(({module}) => module.id === target) : primary;
 assert.ok(!target || trips.length === 1, 'Viaje solicitado inexistente, oculto o histórico: ' + target);
-module.exports = { modules, all, primary, trips, mode, read, validateModules };
+const sections = ['plan','mapa','temporadas','experiencias','reservas','traslados','alojamientos','dias','costes'];
+const requested = process.env.ATLAS_QA_SECTIONS;
+const selected = requested ? requested.split(',').map(x=>x.trim()) : sections;
+assert.ok(selected.length && selected.every(x=>sections.includes(x)) && new Set(selected).size===selected.length,'ATLAS_QA_SECTIONS inválido');
+const closes = section => mode!=='incremental' && selected.includes(section);
+module.exports = { closes, selected, modules, all, primary, trips, mode, read, validateModules };

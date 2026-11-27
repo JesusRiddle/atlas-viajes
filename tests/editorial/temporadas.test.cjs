@@ -1,7 +1,7 @@
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { trips, mode } = require('./catalog.cjs');
+const { trips, closes } = require('./catalog.cjs');
 const { seasons, temperature, MONTHS } = require('../../scripts/editorial-contracts.cjs');
 function check(value,complete=false) {
   if(value==null && !complete) return [];
@@ -17,7 +17,7 @@ function check(value,complete=false) {
   return errors;
 }
 test('Temporadas: meses informados válidos',()=>{
-  for(const {module,trip} of trips) assert.deepEqual(check(trip.seasonality,mode!=='incremental'),[],module.id);
+  for(const {module,trip} of trips) assert.deepEqual(check(trip.seasonality,closes('temporadas')),[],module.id);
 });
 test('Temporadas: parcial, cierre, signo y significado',()=>{
   const months=Object.fromEntries(MONTHS.map(m=>[m,{status:'pending',description:null}]));

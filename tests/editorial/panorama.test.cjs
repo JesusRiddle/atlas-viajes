@@ -1,7 +1,7 @@
 'use strict';
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { trips, mode } = require('./catalog.cjs');
+const { trips, closes } = require('./catalog.cjs');
 const { indicators } = require('../../scripts/editorial-contracts.cjs');
 function check(trip, complete=false) {
   const errors=indicators(trip.practicalIndicators ?? [],{complete});
@@ -10,7 +10,7 @@ function check(trip, complete=false) {
   return errors;
 }
 test('Panorama: indicadores informados', () => {
-  for (const {module,trip} of trips) assert.deepEqual(check(trip,mode!=='incremental'),[],module.id);
+  for (const {module,trip} of trips) assert.deepEqual(check(trip,closes('plan')),[],module.id);
 });
 test('Panorama: pendiente legítimo, orden, color y moneda', () => {
   const items=[

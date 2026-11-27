@@ -1,7 +1,7 @@
 'use strict';
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const {trips,mode}=require('./catalog.cjs');
+const {trips,closes}=require('./catalog.cjs');
 // Rules with existing debt are visible diagnostics during transition.
 // Explicit closure is strict. No permanent per-trip allowlist.
 function diagnosticSuite(name,check,valid,invalid){
@@ -10,7 +10,7 @@ function diagnosticSuite(name,check,valid,invalid){
    for(const {module,trip} of trips) for(const e of check(trip)) issues.push({trip:module.id,...e});
    for(const e of issues)t.diagnostic(JSON.stringify(e));
    t.diagnostic('Hallazgos: '+issues.length+'; alcance: '+trips.length);
-   if(mode!=='incremental')assert.deepEqual(issues,[]);
+   if(closes(({Panorama:'plan',Mapa:'mapa','Día por día':'dias',Traslados:'traslados'})[name.split(':')[0]]))assert.deepEqual(issues,[]);
  });
  test(name+': control positivo y negativos',()=>{
    assert.deepEqual(check(valid),[]);

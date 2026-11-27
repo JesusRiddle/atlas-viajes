@@ -3,7 +3,7 @@ Fecha: 2026-11-27. Rama desde main. Sustituye el plan de saneamiento incremental
 
 ## Estado
 - Fase 1: diseño normativo cerrado; inventario y decisiones de implementación registrados abajo.
-- Fase 2: iniciada (catalog.cjs, Panorama, Temporadas y transversal); no certificada ni ejecutada en CI. Fases 3–6: pendientes. No retirar pruebas hasta demostrar equivalencia. No modificar itinerarios ni fusionar.
+- Fase 2: suites por las nueve secciones y transversal implementadas; CI de referencia 46077494906 verde. Último lote pendiente de verificación. No equivale a cumplimiento editorial total. Fases 3–6: pendientes. No retirar pruebas hasta demostrar equivalencia. No modificar itinerarios ni fusionar.
 
 ## Fuentes normativas
 AGENTS.md, trip-editorial-guide.md, trip-data-contract.md, trip-master-standard.md, trip-production-checklist.md y _template.json. La matriz previa es referencia, no fuente de requisitos ni prueba de cobertura. Ante contradicción, documentar y resolver antes de convertir en gate. Ejemplo: AGENTS exige intervalo con «a», mientras contrato permite Máx./Mín. explícitos cuando ambas métricas son reales; distinguir semántica, no imponer un formato que falsee datos. El checklist pide ampliar manualmente regresiones por viaje: reemplazar esa instrucción por descubrimiento dinámico al activar V2.
@@ -106,3 +106,6 @@ Se corrigieron en esta rama cuatro familias de contradicciones normativas: tempe
 
 ## Punto de reanudación
 Fase 2: corregir primero catálogo y prototipos según la reauditoría; implementar las siete secciones restantes y ampliar Panorama/Temporadas/transversal según la checklist normativa. Incorporar un comando de prueba V2 provisional que ejecute las suites nuevas explícitamente (sin quitar la suite vigente), comprobar resultados, casos positivos/negativos y reportar brechas. No declarar cobertura total por crear archivos. Conservar los seis scripts hasta comprobar sustitución y consumidores. No tocar JSON ni hacer merge.
+
+## Fase 2 — lote de consolidación
+CI 46077494906 exitoso en f9344f31d6c5cd4dbb75d3e983b2942fdcc647d5. Se añade selección explícita de secciones para cierre (ATLAS_QA_SECTIONS, anclas separadas por coma, junto a ATLAS_TRIP_ID y ATLAS_QA_MODE=general/detailed), sin ocultar controles incrementales. Se amplían reservaciones, experiencias y bloques diarios. Las reglas de cierre de datos no sustituyen auditoría humana ni DOM. Sigue pendiente consolidar diagnósticos por sección y aplicar comparación de deuda contra la base, comprobar que los modos general/detailed realmente respetan diferencias de alcance, y sustituir los validadores monolíticos antes del retiro en fase 5. La fase 2 no se certifica mientras estas tareas y el CI del lote sigan pendientes.

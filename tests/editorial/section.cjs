@@ -1,7 +1,7 @@
 'use strict';
 const test=require('node:test');
 const assert=require('node:assert/strict');
-const {trips,mode}=require('./catalog.cjs');
+const {trips,closes}=require('./catalog.cjs');
 const {validate,photos}=require('../../scripts/editorial-relations.cjs');
 const {read}=require('./catalog.cjs');
 // Transitional reuse: each issue belongs to one section. Replace the monolith only after equivalence.
@@ -11,7 +11,7 @@ function relationErrors(trip,roots,complete=false){
 function suite(name,check,valid,invalid,extra={}){
  test(name+': contratos de los viajes seleccionados',t=>{
    for(const {module,trip} of trips) {
-     const errors=check(trip,mode!=='incremental');
+     const errors=check(trip,closes(extra.section || ({Mapa:'mapa',Experiencias:'experiencias',Reservaciones:'reservas',Traslados:'traslados',Alojamientos:'alojamientos','Día por día':'dias',Presupuesto:'costes'})[name]));
      assert.deepEqual(errors,[],module.id+': '+JSON.stringify(errors));
    }
    if(!trips.length)t.diagnostic('Sin viajes seleccionados; solo fixtures');
