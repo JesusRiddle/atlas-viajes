@@ -55,3 +55,10 @@ test('Carga de catálogo vacío y preservación de estructuras completas',async(
  for(const [key,value] of Object.entries(source))assert.deepEqual(atlas.trips[0][key],value,key);
  assert.equal(atlas.places.museum.photo.src,'https://example.org/photo.jpg');
 });
+
+test('Carga admite stays ausente y rechaza tipo e identidad discrepante',async()=>{
+ const t={id:'sample',name:'Prueba'};
+ await assert.doesNotReject(load([t]));
+ await assert.rejects(load([{...t,stays:'inválido'}]),/Campo stays inválido/);
+ await assert.rejects(load([t],[moduleOf('other')],{'data/trips/other.json':t}),/Identidad/);
+});

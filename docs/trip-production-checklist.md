@@ -72,7 +72,7 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 - No duplicar transporte cubierto por pases ni confundir precios ilustrativos con gastos incluidos.
 - «Tu inversión aproximada» muestra cifra tan pronto como hay estimaciones suficientes; indica expresamente cobertura y partidas pendientes. Nunca llamar total cerrado a una estimación parcial.
 - Todos los pendientes bloqueantes quedan en un único registro, con acción futura y condición de desbloqueo (p. ej. «al publicarse horarios 2027»).
-- Correr `node --test tests/*.test.cjs` y pruebas de navegador en el entorno adecuado. Si no se pueden ejecutar, declarar exactamente qué faltó, sin sustituirlas por afirmaciones de certeza.
+- Correr `node --test tests/editorial/*.test.cjs tests/functional/*.test.cjs` y `node tests/browser/smoke.cjs` con Chromium y servidor local en el entorno adecuado. Si no se pueden ejecutar, declarar exactamente qué faltó, sin sustituirlas por afirmaciones de certeza.
 - Mantener una sola rama/PR hasta aprobación. Revisar tres veces *cambios de JS* con especial atención a comillas, expresiones y concatenaciones. Validar sintaxis antes del commit, luego comprobar regresiones.
 
 ## Lecciones aplicadas: Italia norte 2027

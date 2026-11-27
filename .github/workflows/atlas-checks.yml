@@ -29,23 +29,17 @@ jobs:
       - name: Validate trip JSON
         run: |
           node -e "const fs=require('node:fs');for(const f of fs.readdirSync('data/trips').filter(f=>f.endsWith('.json'))){JSON.parse(fs.readFileSync('data/trips/'+f,'utf8'));}"
-      - name: Run regression tests
-        run: node --test tests/*.test.cjs
-      - name: Run editorial V2 tests (transition)
+      - name: Run editorial V2 tests
         env:
           ATLAS_QA_BASE: ${{ github.event.pull_request.base.sha || github.event.before || '' }}
-        run: node --test tests/editorial/*.test.cjs
-      - name: Run functional V2 tests (transition)
-        run: node --test tests/functional/*.test.cjs
+        run: node --test $(find tests/editorial -type f -name '*.test.cjs' | sort)
+      - name: Run functional V2 tests
+        run: node --test $(find tests/functional -type f -name '*.test.cjs' | sort)
       - name: Install Chromium browser for UI regression
         run: |
           npm install --no-save playwright
           npx playwright install --with-deps chromium
       - name: Desktop and Mobile browser smoke and editorial audit
-        env:
-          ATLAS_EDITORIAL_AUDIT: '1'
         run: |
           python3 -m http.server 8765 --bind 127.0.0.1 &
-          node tests/browser-smoke.cjs
-      - name: Run browser V2 (transition)
-        run: node tests/browser/smoke.cjs
+          node tests/browser/smoke.cjs

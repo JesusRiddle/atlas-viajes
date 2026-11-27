@@ -1,4 +1,4 @@
-// Ejecutar desde la raíz: node --test tests/transport-budget.test.cjs
+// Ejecutar desde la raíz: node --test tests/functional/transport-integration.test.cjs
 const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');

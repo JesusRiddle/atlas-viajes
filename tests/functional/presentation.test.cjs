@@ -87,3 +87,43 @@ test('Temporadas presenta rangos sin atribuir mínimas nocturnas inexistentes', 
   assert.match(html, /Días fríos/);
 });
 
+
+test('la limpieza de la vista de viaje es segura y repetible al navegar', () => {
+    const window=runtime(['components/trip.js']);
+    const trip = window.AtlasTrip({});
+    assert.equal(typeof trip.cleanup, 'function');
+    assert.doesNotThrow(() => { trip.cleanup(); trip.cleanup(); });
+});
+
+test('Experiencias vacías o parciales mantienen el panel maestro sin inventar destinos', () => {
+    const window=runtime(['components/sections.js']);
+    const factory = window.AtlasSections({ trips: [], stays: {}, esc: String });
+    const empty = factory.experiencePanel({ id: 'sample', experiences: [], profile: {} });
+    assert.match(empty, /id="experiencias"/);
+    assert.match(empty, /class="panel experience-panel"/);
+    assert.match(empty, /Por definir/);
+    assert.doesNotMatch(empty, /Arte extraordinario/);
+    const partial = factory.experiencePanel({ id: 'sample', experiences: [
+        { city: 'Puerto', description: 'Explorar el museo' }
+    ], profile: {} });
+    assert.match(partial, /Puerto/);
+    assert.match(partial, /Explorar el museo/);
+    assert.doesNotMatch(partial, /Por definir/);
+});
+
+test('reservaciones y alojamientos admiten registros vacíos y parciales', () => {
+    const window=runtime(['components/sections.js']);
+    const trip = { id: 'sample', name: 'Puerto', hotels: [], stays: [], reservations: [], planningDetails: null };
+    const sections = window.AtlasSections({ trips: [trip], stays: { sample: [] }, esc: String });
+    assert.match(sections.reservationPlanning(trip), /class="panel reservation-panel"/);
+    assert.match(sections.reservationPlanning(trip), /Por definir/);
+    assert.match(sections.stayParagraphs('sample'), /class="hotel-card"/);
+    assert.match(sections.stayParagraphs('sample'), /Por definir/);
+    trip.reservations = [['Prioritarias', [{ title: 'Museo', description: 'Entrada sin confirmar' }]]];
+    assert.match(sections.reservationPlanning(trip), /Entrada sin confirmar/);
+    trip.hotels = [{ city: 'Puerto', name: 'Hotel por elegir', checkIn: '2026-11-01' }];
+    const hotels = sections.stayParagraphs('sample');
+    assert.match(hotels, /Hotel por elegir/);
+    assert.doesNotMatch(hotels, /undefined|Invalid Date/);
+});
+

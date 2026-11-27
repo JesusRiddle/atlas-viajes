@@ -46,6 +46,96 @@ async function home(page){
 }
 async function catalog(page,viewport){
  await home(page);
+       const heroBounds = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').boundingBox();
+      assert.ok(heroBounds, 'El hero de Inicio debe estar visible');
+      await page.waitForFunction(() => {
+        const img = document.querySelector('.atlas-home-hero-immersive .atlas-home-hero-image img');
+        return img && img.complete && img.naturalWidth > 0;
+      });
+
+      if (viewport.width > 800) {
+        assert.ok(heroBounds.height <= 305, 'El hero de escritorio debe ser compacto: ' + heroBounds.height);
+        assert.ok(heroBounds.height >= 250, 'El hero debe conservar espacio suficiente para el texto');
+      }
+      // La versión 1 anima solo la fotografía y la luz, nunca el texto.
+      const heroMotion = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => ({
+        imageAnimation: getComputedStyle(hero.querySelector('img')).animationName,
+        lightAnimation: getComputedStyle(hero, '::after').animationName,
+        copyAnimation: getComputedStyle(hero.querySelector('.atlas-home-hero-copy')).animationName,
+        lightPointerEvents: getComputedStyle(hero, '::after').pointerEvents
+      }));
+      assert.match(heroMotion.imageAnimation, /atlas-home-hero-drift/,
+        'La fotografía principal debe tener movimiento lento');
+      assert.match(heroMotion.imageAnimation, /atlas-home-hero-breathe/,
+        'La fotografía principal debe tener el pulso ambiental de brillo');
+      assert.match(heroMotion.lightAnimation, /atlas-home-hero-light/,
+        'El hero debe incluir el reflejo de luz discreto');
+      assert.equal(heroMotion.copyAnimation, 'none', 'El texto debe permanecer inmóvil');
+      assert.equal(heroMotion.lightPointerEvents, 'none', 'El reflejo no debe bloquear interacción');
+      const heroProgress = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => {
+        const photo = hero.querySelector('img');
+        const motion = photo.getAnimations().find(a => a.animationName === 'atlas-home-hero-drift');
+        const lightStyle = getComputedStyle(hero, '::after');
+        if (!motion || lightStyle.animationName !== 'atlas-home-hero-light') return {active:false};
+        const initialTime = motion.currentTime;
+        motion.pause();
+        motion.currentTime = 0;
+        const begin = getComputedStyle(photo).transform;
+        motion.currentTime = 17000;
+        const end = getComputedStyle(photo).transform;
+        motion.currentTime = initialTime;
+        motion.play();
+        return {active:true, begin, end, driftDuration:motion.effect.getTiming().duration,
+          lightDuration:parseFloat(lightStyle.animationDuration) * 1000};
+      });
+      assert.ok(heroProgress.active, 'Las dos animaciones deben ejecutarse realmente');
+      assert.notEqual(heroProgress.begin, heroProgress.end,
+        'El desplazamiento debe cambiar la imagen, no solo declarar un nombre CSS');
+      assert.ok(heroProgress.driftDuration <= 18000 && heroProgress.lightDuration <= 13000,
+        'Los ciclos deben ser suficientemente cortos para percibirse');
+      const brightnessPulse = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image img').evaluate(photo => {
+        const pulse = photo.getAnimations().find(a => a.animationName === 'atlas-home-hero-breathe');
+        if (!pulse) return null;
+        const original = pulse.currentTime;
+        pulse.pause();
+        pulse.currentTime = 0;
+        const start = getComputedStyle(photo).filter;
+        pulse.currentTime = 5000;
+        const midpoint = getComputedStyle(photo).filter;
+        pulse.currentTime = original;
+        pulse.play();
+        return {start, midpoint, duration: pulse.effect.getTiming().duration};
+      });
+      assert.ok(brightnessPulse && brightnessPulse.duration > 0,'Pulso ambiental activo');
+      assert.notEqual(brightnessPulse.start, brightnessPulse.midpoint,
+        'El pulso debe cambiar ligeramente el brillo real de la fotografía');
+      const heroCopy = page.locator('.atlas-home-hero-immersive .atlas-home-hero-copy');
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const staticHero = await page.locator('.atlas-home-hero-immersive .atlas-home-hero-image').evaluate(hero => ({
+        imageAnimation: getComputedStyle(hero.querySelector('img')).animationName,
+        lightDisplay: getComputedStyle(hero, '::after').display
+      }));
+      assert.equal(staticHero.imageAnimation, 'none', 'Reducir movimiento debe desactivar animación');
+      assert.equal(staticHero.lightDisplay, 'none', 'Reducir movimiento debe desactivar reflejo');
+      await page.emulateMedia({ reducedMotion: 'no-preference' });
+
+      const copyBounds = await heroCopy.boundingBox();
+      assert.ok(copyBounds && copyBounds.y >= heroBounds.y - 1 &&
+        copyBounds.y + copyBounds.height <= heroBounds.y + heroBounds.height + 2,
+        'El texto del hero debe quedar dentro de la fotografía');
+       assert.equal(await workDayBadges.count(), primary.filter(({trip})=>Number.isInteger(trip.work)).length,
+        'Cada viaje con días laborales declarados muestra su indicador');
+      const workingDayTexts = await workDayBadges.allInnerTexts();
+      assert.ok(workingDayTexts.every(value => /^\d+ días laborales$/.test(value)),
+        'Portada: escribir siempre X días laborales');
+      const tones = await page.locator('#viajes .atlas-home-card').evaluateAll(cards => cards.map(card => {
+        const place = card.querySelector('.card-overview-location');
+        const work = card.querySelector('.cardfacts span');
+        return work ? { work: getComputedStyle(work).color, place: getComputedStyle(place).color,
+          weight: getComputedStyle(work).fontWeight } : null;
+      })).then(values => values.filter(Boolean));
+      assert.ok(tones.every(value => value.work === value.place && Number(value.weight) >= 700),
+        'Portada: días laborales usan el mismo color y énfasis que Colombia · 12 días');
  const ordered=[...primary].sort((a,b)=>(a.trip.start||'9999-12-31').localeCompare(b.trip.start||'9999-12-31'));
  const hrefs=await page.locator('#viajes .tripcard').evaluateAll(nodes=>nodes.map(n=>n.getAttribute('href')));
  assert.deepEqual(hrefs,ordered.map(x=>'#viaje/'+x.module.id));
@@ -58,6 +148,9 @@ async function catalog(page,viewport){
    .sort((a,b)=>(a.start||'9999-12-31').localeCompare(b.start||'9999-12-31')).map(t=>'#viaje/'+t.id);
  });
  assert.deepEqual(compared,eligible,'Todos y solo los viajes elegibles, en orden');
+ const headers=await page.locator('#comparar thead th').allInnerTexts();assert.ok(headers.includes('Personas'));assert.ok(!headers.includes('Viajando solo'));
+ const people=await page.locator('#comparar tbody tr').evaluateAll(rows=>rows.map(row=>row.cells[5].textContent.trim()));
+ assert.deepEqual(people,compared.map(href=>{const t=primary.find(x=>'#viaje/'+x.module.id===href).trip;return Number.isInteger(t.travelerCount)&&t.travelerCount>0?String(t.travelerCount):'Por definir';}));
  assert.equal(await page.locator('#comparar thead th').count(),8);
  assert.ok(await page.locator('#comparar thead th').evaluateAll(nodes=>[nodes[3],nodes[4]].every(n=>getComputedStyle(n).whiteSpace==='nowrap')),'Cabeceras de alojamientos y ritmo sin saltos');
  await page.emulateMedia({reducedMotion:'reduce'});
@@ -97,6 +190,11 @@ async function fixture(page,viewport){
  await page.waitForFunction(()=>document.querySelectorAll('#dias details.day[open]').length===1);
  await openTrip(page,full.id);
  await visibleContract(page,full,viewport);
+ if(viewport.width>1000){
+ const layout=await page.locator('#mapa .trip-map-header').evaluate(header=>{const i=header.querySelector('.trip-map-intro').getBoundingClientRect(),c=header.querySelector('.trip-map-cities').getBoundingClientRect();return {width:header.getBoundingClientRect().width,citiesWidth:c.width,introRight:i.right,citiesLeft:c.left,cards:[...header.querySelectorAll('.map-city-list li')].map(n=>n.getBoundingClientRect().width)};});
+ assert.ok(layout.citiesWidth>=layout.width*.55);assert.ok(layout.citiesLeft>layout.introRight);assert.ok(layout.cards.every(w=>w>=90));
+ }
+ assert.match(await page.locator('#mapa').innerText(),/1 noche/);
  await page.locator('.subnav a[href="#viaje/'+full.id+'/temporadas"]').click();
  await page.waitForURL('**#viaje/'+full.id+'/temporadas');
  const expand=page.locator('#expand');
@@ -145,6 +243,7 @@ async function fixture(page,viewport){
  await page.waitForFunction(()=>!document.querySelector('.subnav')?.classList.contains('is-stuck'));
  await page.evaluate(()=>{const n=document.querySelector('.subnav-sticky-sentinel');window.scrollTo({top:n.getBoundingClientRect().top+scrollY+120,behavior:'instant'});});
  await page.waitForFunction(()=>document.querySelector('.subnav')?.classList.contains('is-stuck'));
+ assert.ok(await page.locator('.subnav .subnav-home').isVisible());
  await page.locator('.subnav .subnav-home').click();
  await page.locator('#atlas-home-title').waitFor();
  await page.goto(base+'#comparar');

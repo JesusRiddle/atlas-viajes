@@ -53,9 +53,13 @@ El generador crea automáticamente `docs/trip-progress/<slug>.md` desde [la plan
 ## Probar localmente
 
 ```bash
-python3 -m http.server 8765
-# Abrir http://localhost:8765/
-node --test tests/*.test.cjs
+node --test tests/editorial/*.test.cjs tests/functional/*.test.cjs
+npm install --no-save playwright
+npx playwright install chromium
+python3 -m http.server 8765 --bind 127.0.0.1 &
+node tests/browser/smoke.cjs
 ```
 
 No abrir `index.html` mediante `file://`; los JSON se obtienen con `fetch`. GitHub Actions también comprueba sintaxis, JSON y pruebas de navegador Desktop/Mobile con Chromium. Los cambios se hacen en una branch de trabajo; **no fusionar a `main` sin autorización**.
+
+La arquitectura V2 separa contratos editoriales, funcionales y navegador. Para cerrar una sección concreta: `ATLAS_TRIP_ID=mi-viaje ATLAS_QA_MODE=detailed ATLAS_QA_SECTIONS=plan,dias node --test tests/editorial/*.test.cjs`. Usar `general` para estimaciones de alto nivel. El CI normal es incremental; no exige cerrar borradores. Véase [diseño y bitácora V2](docs/testing-architecture-v2.md).
