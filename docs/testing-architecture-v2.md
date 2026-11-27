@@ -1,10 +1,15 @@
 # Testing V2 — diseño y bitácora
 Fecha: 2026-11-27. Rama desde main. Sustituye el plan de saneamiento incremental, no la normativa turística.
 
-## Estado
-- Fase 1: diseño normativo cerrado; inventario y decisiones de implementación registrados abajo.
-- Fase 2: capa editorial aprobada para d029be2; reauditoría transversal de alcance pendiente de nuevo CI.
-- Fase 3: seis suites, 25/25 funcionales aprobadas para 7c678cc; CI 46079139931 completo, 35/35 editoriales y 136/136 anteriores. Fases 4–6 pendientes.
+## Estado vigente
+- Fases 1–5: completadas; CI 46082640012 de referencia al terminar la sustitución.
+- Fase 6: en auditoría. Última evidencia aprobada: CI 46083808381 (748c97bd). No constituye certificación final.
+- El historial inferior conserva decisiones y pendientes tal como se registraron en cada fase; no son instrucciones vigentes.
+
+## Operación vigente
+El CI ejecuta sintaxis, JSON, contratos editoriales incrementales, funcionales y Chromium desktop/mobile. No depende de un itinerario fijo. Para cierre explícito: ATLAS_TRIP_ID=slug ATLAS_QA_MODE=general (o detailed) ATLAS_QA_SECTIONS=plan,dias; ejecutar las suites editoriales, además de comprobaciones humanas y navegador pertinentes. Sin base explícita, la ejecución local no certifica ausencia de nueva deuda.
+El control de alcance usa el diff real Git contra el SHA base del PR, con rutas delimitadas por NUL y renombrados descompuestos. Ramas refactor/*: ningún JSON turístico. Otros PR: línea Atlas scope: slug1,slug2 o Atlas scope: none. Revalidar al editar descripción. Para reproducción local: ATLAS_SCOPE_BASE y ATLAS_SCOPE_TRIPS (cadena vacía si ninguno). El alcance declarado no acredita autorización humana.
+La comparación de deuda usa la misma versión de los contratos sobre los datos actuales y de base, por viaje, identidad, evidencia y multiplicidad. No usa allowlists de destinos. Los hallazgos siguen visibles y bloquean el cierre explícito de su sección; la deuda previa no agravada no bloquea el CI incremental. La fecha de una jornada no es su identidad diagnóstica; se utiliza su número y campo. Renumeraciones ambiguas pueden requerir revisión.
 
 ## Fuentes normativas
 AGENTS.md, trip-editorial-guide.md, trip-data-contract.md, trip-master-standard.md, trip-production-checklist.md y _template.json. La matriz previa es referencia, no fuente de requisitos ni prueba de cobertura. Ante contradicción, documentar y resolver antes de convertir en gate. Ejemplo: AGENTS exige intervalo con «a», mientras contrato permite Máx./Mín. explícitos cuando ambas métricas son reales; distinguir semántica, no imponer un formato que falsee datos. El checklist pide ampliar manualmente regresiones por viaje: reemplazar esa instrucción por descubrimiento dinámico al activar V2.
@@ -105,7 +110,7 @@ Se corrigieron en esta rama cuatro familias de contradicciones normativas: tempe
 
 **Dictamen fase 1:** diseño apto para iniciar fase 2, no aprobación de implementación ni de CI V2. No se requiere decisión adicional del propietario. No ejecutar fase 3 hasta validar las suites editoriales y registrar los contratos manuales/pendientes. Antes de retirar código, demostrar equivalencia y comprobar dependencias nuevamente.
 
-## Punto de reanudación
+## Punto de reanudación histórico (fase 2, superado)
 Fase 2: corregir primero catálogo y prototipos según la reauditoría; implementar las siete secciones restantes y ampliar Panorama/Temporadas/transversal según la checklist normativa. Incorporar un comando de prueba V2 provisional que ejecute las suites nuevas explícitamente (sin quitar la suite vigente), comprobar resultados, casos positivos/negativos y reportar brechas. No declarar cobertura total por crear archivos. Conservar los seis scripts hasta comprobar sustitución y consumidores. No tocar JSON ni hacer merge.
 
 ## Fase 2 — lote de consolidación
@@ -156,3 +161,6 @@ Se corrige declaración faltante del locator de días laborales detectada antes 
 
 ### Fase 5 — auditoría de aislamiento y robustez
 CI 46082430207 aprobado. Se elimina duplicado de selección, se reinicia VM/fixture antes de cada integración, se hacen visibles las exclusiones de conciliación simple y se agregan controles positivos/negativos. La auditoría de fotos distingue referencias corruptas, rutas inseguras, HTTPS y archivos ausentes, sin lanzar excepciones por campos malformados. Pendiente CI del nuevo SHA; no se considera cerrada la fase hasta verificarlo.
+
+## Fase 6 — auditoría en curso
+CI 46083208959: control de alcance real aprobado. CI 46083392833: fixture de transporte reducido de 111666 a 31536 caracteres (71.76%), sin retirar aserciones. CI 46083636010: identidad de diagnóstico diario independiente de fecha. CI 46083808381: calendario parcial y disparador de edición de PR aprobados. Los 83 hallazgos históricos (70 formato diario, 8 zona horaria, 2 Panorama, 2 mapa y 1 cotización) no se han corregido en datos. No confundir pruebas de regresión con auditoría turística cerrada. Pendiente: mutaciones adicionales, cobertura y CI del SHA definitivo; no hacer merge.
