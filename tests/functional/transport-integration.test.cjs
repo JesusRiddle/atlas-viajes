@@ -3,37 +3,17 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
-const ctx = vm.createContext({ window: {} });
-for (const file of ['components/transport-model.js', 'components/selections.js', 'components/budget.js']) {
-    vm.runInContext(fs.readFileSync(file, 'utf8'), ctx, { filename: file });
-}
-const model = ctx.window.AtlasTransportModel;
-const selections = ctx.window.AtlasSelections;
-const budget = ctx.window.AtlasBudget;
-const trip = JSON.parse(fs.readFileSync('tests/fixtures/transport-regression.json', 'utf8'));
+const {beforeEach}=require('node:test');
+let ctx,model,selections,budget,trip;
+beforeEach(()=>{
+ ctx=vm.createContext({window:{}});
+ for(const file of ['components/transport-model.js','components/selections.js','components/budget.js','components/day-transport.js','components/day.js','components/major-transport.js','components/day-budget.js'])vm.runInContext(fs.readFileSync(file,'utf8'),ctx,{filename:file});
+ model=ctx.window.AtlasTransportModel;selections=ctx.window.AtlasSelections;budget=ctx.window.AtlasBudget;
+ trip=JSON.parse(fs.readFileSync('tests/fixtures/transport-regression.json','utf8'));
+});
 
 test('JSON de escenario histórico aislado sin referencias de transporte inválidas', () => {
     assert.deepEqual([...model.validateTrip(trip)], []);
-});
-
-
-
-
-
-
-
-test('seleccionar alternativa recalcula sin mutar el JSON', () => {
-    const before = JSON.stringify(trip.majorTransport);
-    const id = 'train-milano-bologna';
-    const rail = trip.majorTransport.find(x => x.id === id);
-    assert.equal(budget.selectedTransportPrice(rail).amount, 22.90);
-    const original = budget.summary(trip).entries.find(x => x.id === id);
-    selections.set(trip, id, 'B', 'smart');
-    const selected = budget.currentSummary(trip).entries.find(x => x.id === id);
-    assert.equal(budget.selectedTransportPrice(rail, selections.get(trip.id)[id]).amount, 25.90);
-    assert.equal(selected.cost.amount - original.cost.amount, 3);
-    assert.equal(JSON.stringify(trip.majorTransport), before);
-    selections.reset(trip.id);
 });
 
 test('solo se suma una tarifa por transporte, no las alternativas', () => {
@@ -51,12 +31,6 @@ test('solo se suma una tarifa por transporte, no las alternativas', () => {
     assert.equal(summary.entries.length, trip.majorTransport.length + trip.expenses.filter(e => !e.optional).length);
     assert.equal(summary.pending.length, 0);
 });
-
-
-
-
-
-
 
 test('cambiar Frecciarossa por Italo modifica solo el tren seleccionado y el total', () => {
     const id = 'train-milano-bologna';
@@ -80,8 +54,6 @@ test('cambiar Frecciarossa por Italo modifica solo el tren seleccionado y el tot
         selections.reset(trip.id);
     }
 });
-
-
 
 test('los alojamientos se cuentan una sola vez y se distribuyen por sus noches', () => {
     const result = budget.summary(trip);
@@ -108,8 +80,6 @@ test('las cotizaciones incompletas no se interpretan como costos cero', () => {
     assert.deepEqual([...result.pending], ['pending-eur']);
 });
 
-
-
 test('cambio de tarifa de vuelo actualiza presupuesto sin sumar tarifas alternativas', () => {
     const flight = trip.majorTransport.find(t => t.id === 'flight-international');
     const initial = budget.currentSummary(trip).knownTotalMXN;
@@ -124,8 +94,6 @@ test('cambio de tarifa de vuelo actualiza presupuesto sin sumar tarifas alternat
 });
 
 test('los días muestran el transporte vinculado y siguen el selector Frecciarossa/Italo', () => {
-    vm.runInContext(fs.readFileSync('components/day-transport.js', 'utf8'), ctx, { filename: 'components/day-transport.js' });
-    vm.runInContext(fs.readFileSync('components/day.js', 'utf8'), ctx, { filename: 'components/day.js' });
     const esc = value => String(value).replace(/&/g, '&amp;');
     const view = ctx.window.AtlasDay({ trips: [trip], esc, places: {}, photos: {} });
     const day4 = trip.days.find(day => day.n === 4);
@@ -148,7 +116,6 @@ test('los días muestran el transporte vinculado y siguen el selector Frecciaros
 });
 
 test('Traslados principales muestra trenes en timeline y distingue el regreso de una escala', () => {
-    vm.runInContext(fs.readFileSync('components/major-transport.js', 'utf8'), ctx, { filename: 'components/major-transport.js' });
     const html = ctx.window.AtlasMajorTransport.render(trip);
     assert.ok(html.includes('mt-train-timeline'));
     assert.ok(html.includes('Milano Centrale'));
@@ -160,7 +127,6 @@ test('Traslados principales muestra trenes en timeline y distingue el regreso de
 });
 
 test('Traslados principales muestra cronologías de ida y regreso con sus números de vuelo', () => {
-    vm.runInContext(fs.readFileSync('components/major-transport.js', 'utf8'), ctx, { filename: 'components/major-transport.js' });
     const html = ctx.window.AtlasMajorTransport.render(trip);
     const flight = html.slice(html.indexOf('data-transport="flight-international"'), html.indexOf('</details>', html.indexOf('data-transport="flight-international"')));
     assert.ok(flight.includes('mt-flight-timeline'));
@@ -258,7 +224,6 @@ test('presupuesto diario responde al cambio de tren sin modificar los alojamient
 });
 
 test('tarjeta diaria presenta partidas registradas, no inventa comidas ni asigna vuelos redondos', () => {
-    vm.runInContext(fs.readFileSync('components/day-budget.js', 'utf8'), ctx, { filename: 'components/day-budget.js' });
     const view = ctx.window.AtlasDayBudget;
     const firenze = view.render(trip, trip.days.find(d => d.n === 9));
     assert.ok(firenze.includes('Firenze · Accademia'));
@@ -295,7 +260,3 @@ test('el JSON carece de presupuestos históricos duplicados y etiqueta importes 
     assert.ok(first.includes('Moxy Milano Malpensa Airport · 1 noche'));
     assert.ok(first.includes('class="day-budget-status">cotizado</small>'));
 });
-
-
-
-

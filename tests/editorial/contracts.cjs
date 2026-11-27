@@ -52,7 +52,7 @@ function photos(trip, catalog, { complete = false } = {}) {
   });
   for (const { key, path } of references) {
     if (key == null) continue;
-    if (typeof key !== 'string' || !catalog[key] || !catalog[key].photo?.src)
+    if (typeof key !== 'string' || !Object.hasOwn(catalog,key) || typeof catalog[key]?.photo?.src !== 'string' || !catalog[key].photo.src.trim())
       errors.push(problem(path, 'Referencia de fotografía inexistente o sin imagen'));
   }
   return errors;
@@ -115,7 +115,7 @@ function map(trip,complete=false){
     const orders = new Set();
     trip.mapPoints.forEach((point, i) => {
       const where = 'mapPoints[' + i + ']';
-      if (!point || typeof point !== 'object') {
+      if (!point || typeof point !== 'object' || Array.isArray(point)) {
         errors.push(problem(where, 'Punto del mapa inválido')); return;
       }
       const coords = point.coords;

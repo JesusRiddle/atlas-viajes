@@ -52,21 +52,15 @@ test('Presupuesto: pagos parciales, anticipos y cobertura repetida legítimos',(
 
 const {trips:scoped}=require('./catalog.cjs');
 const trips=scoped.map(x=>x.trip);
-test('cuando un viaje declara totales diarios, concilia exactamente con sus gastos', () => {
-  for (const trip of trips) {
-    if (!trip.days?.length || !trip.days.every(d => Number.isFinite(d.spend))) continue;
-    if (trip.expenses?.some(e=>e.cost?.currency!=='MXN'||e.nights||e.dates||e.optional||e.hotelId)) continue;
-    if (!Array.isArray(trip.expenses)||!trip.expenses.every(e => Number.isFinite(e.cost?.amount))) continue;
-    for (const day of trip.days) {
-      const expected = trip.expenses.filter(e => e.date === day.date)
-        .reduce((sum, e) => sum + e.cost.amount, 0);
-      assert.ok(Math.abs(day.spend - expected) < 0.01,
-        trip.id + ': total diario desajustado: ' + day.date);
-    }
-    const daily = trip.days.reduce((sum, d) => sum + d.spend, 0);
-    const expenses = trip.expenses.reduce((sum, e) => sum + e.cost.amount, 0);
-    assert.ok(Math.abs(daily - expenses) < 0.01,
-      trip.id + ': total global distinto de la suma de jornadas');
-  }
-});
-
+function reconcile(trip){
+ const days=Array.isArray(trip.days)?trip.days:[],expenses=trip.expenses;
+ if(!days.length||!days.every(d=>Number.isFinite(d?.spend)))return {skip:'Sin totales diarios completos'};
+ if(!Array.isArray(expenses)||!expenses.every(e=>Number.isFinite(e?.cost?.amount)))return {skip:'Partidas pendientes o ausentes'};
+ if(expenses.some(e=>e.cost.currency!=='MXN'||e.nights||e.dates||e.optional||e.hotelId))return {skip:'Ledger estructurado: conciliación en suite funcional'};
+ const errors=[];
+ for(const day of days){const expected=expenses.filter(e=>e.date===day.date).reduce((sum,e)=>sum+e.cost.amount,0);if(Math.abs(day.spend-expected)>=.01)errors.push(day.date+': total diario');}
+ if(Math.abs(days.reduce((s,d)=>s+d.spend,0)-expenses.reduce((s,e)=>s+e.cost.amount,0))>=.01)errors.push('Total global');
+ return {errors};
+}
+test('Conciliación de totales declarados: escenarios aplicables y exclusiones visibles',t=>{for(const trip of trips){const result=reconcile(trip);if(result.skip)t.diagnostic(trip.id+': '+result.skip);else assert.deepEqual(result.errors,[],trip.id);}});
+test('Conciliación simple: detecta diferencia diaria y global; no inventa conversión',()=>{const sample={days:[{date:'2027-01-01',spend:100}],expenses:[{date:'2027-01-01',cost:{amount:100,currency:'MXN'}}]};assert.deepEqual(reconcile(sample).errors,[]);sample.days[0].spend=90;assert.equal(reconcile(sample).errors.length,2);sample.expenses[0].cost.currency='EUR';assert.ok(reconcile(sample).skip);});

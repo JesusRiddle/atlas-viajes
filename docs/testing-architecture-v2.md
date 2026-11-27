@@ -153,3 +153,6 @@ CI 46082189981 aprobado. Se retira loader, smoke y pruebas editoriales de raíz;
 
 ### Auditoría estática del lote unificado
 Se corrige declaración faltante del locator de días laborales detectada antes de recibir CI; se retiran casos de integración duplicados por los fixtures funcionales pequeños (duración, equipaje, conversión, distribución y vuelo global). Se conserva el fixture grande solo para render multitrayecto, offsets, estados y reconciliación cruzada. El caso de terminal/condiciones de una aerolínea concreta no es un contrato de aplicación. Pendiente CI del SHA actualizado.
+
+### Fase 5 — auditoría de aislamiento y robustez
+CI 46082430207 aprobado. Se elimina duplicado de selección, se reinicia VM/fixture antes de cada integración, se hacen visibles las exclusiones de conciliación simple y se agregan controles positivos/negativos. La auditoría de fotos distingue referencias corruptas, rutas inseguras, HTTPS y archivos ausentes, sin lanzar excepciones por campos malformados. Pendiente CI del nuevo SHA; no se considera cerrada la fase hasta verificarlo.
