@@ -138,3 +138,16 @@ test('mutaciones parciales: se permite editar borradores, no cerrar sin jornadas
 });
 
 
+
+test('Sustituir identificadores de alojamiento y destino conserva integridad de referencias',()=>{
+ const t=original();
+ t.id='fixture-destino-distinto';
+ t.hotels[0].id='hotel-nuevo';t.hotels[0].name='Otro alojamiento';
+ t.days.filter(d=>d.hotel).forEach(d=>d.hotel='hotel-nuevo');
+ t.expenses[0].hotelId='hotel-nuevo';
+ t.cover='parque';t.coverSlides=['parque'];
+ t.days[0].places=['parque'];
+ passes(t,'Referencias actualizadas de forma coherente');
+ t.expenses[0].hotelId='alojamiento-a';
+ fails(t,'expenses[0].hotelId','Referencia antigua no válida');
+});
