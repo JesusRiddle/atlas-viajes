@@ -72,7 +72,7 @@ Validar además encabezado, navegación entre nueve anclas, enlaces, responsive,
 - No duplicar transporte cubierto por pases ni confundir precios ilustrativos con gastos incluidos.
 - «Tu inversión aproximada» muestra cifra tan pronto como hay estimaciones suficientes; indica expresamente cobertura y partidas pendientes. Nunca llamar total cerrado a una estimación parcial.
 - Todos los pendientes bloqueantes quedan en un único registro, con acción futura y condición de desbloqueo (p. ej. «al publicarse horarios 2027»).
-- Correr `node --test tests/*.test.cjs` y pruebas de navegador en el entorno adecuado. Si no se pueden ejecutar, declarar exactamente qué faltó, sin sustituirlas por afirmaciones de certeza.
+- Correr `node --test tests/editorial/*.test.cjs tests/functional/*.test.cjs` y `node tests/browser/smoke.cjs` con Chromium y servidor local en el entorno adecuado. Si no se pueden ejecutar, declarar exactamente qué faltó, sin sustituirlas por afirmaciones de certeza.
 - Mantener una sola rama/PR hasta aprobación. Revisar tres veces *cambios de JS* con especial atención a comillas, expresiones y concatenaciones. Validar sintaxis antes del commit, luego comprobar regresiones.
 
 ## Lecciones aplicadas: Italia norte 2027
@@ -135,7 +135,7 @@ Informar un plan agrupado y entregar una sola auditoría con: cambios aplicados,
 - [ ] En cuanto existan fechas y noches, comprobar la cabecera real: días naturales, días laborales de lunes a viernes (aclarar festivos y supuestos), `X noches, Y alojamientos` y título editorial. No declarar lista una portada solo porque el JSON parsea.
 - [ ] **Clima y luz**: tres párrafos desde su primera redacción; máximo diurno y mínimo nocturno por altura/región, temperaturas históricas no confundidas con pronósticos, riesgos en alta montaña, vestimenta y amanecer/atardecer con zona horaria local del destino y mes exactos.
 - [ ] Ejecutar tests de contrato y, cuando haya navegador, DOM Desktop/Mobile **inmediatamente después del primer registro de estos campos**, no solo en auditoría C/D. Si no se ejecutan, anotar «datos cargados; validación visual pendiente» y nunca «sección completada/auditada».
-- [ ] Al añadir un viaje nuevo al catálogo, ampliar la regresión de Panorama y temperaturas de `tests/loader-regression.test.cjs`; comprobar el título y la tarjeta climática renderizados sin `undefined` en `tests/browser-smoke.cjs`.
+- [ ] Al añadir un viaje nuevo al catálogo, ejecutar las regresiones dinámicas de Panorama y temperaturas; comprobar el título y la tarjeta climática renderizados sin `undefined` en escritorio y móvil. No añadir IDs ni expectativas de datos turísticos a las suites por cada viaje nuevo.
 
 ## Puerta de control · arquitectura del Panorama (etapas 10, C y D)
 - [ ] En **cada viaje nuevo**, `practicalIndicators` contiene **exactamente tres IDs** en orden `style`, `language`, `entry`, con títulos exactos «Estilo de viaje», «Idioma y moneda», «Documentación y consejos prácticos». Rechazar indicadores `weather` o `climate`; la electricidad es parte de consejos prácticos, no el nombre de la tarjeta.

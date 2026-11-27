@@ -24,6 +24,8 @@ function unique(items, path, errors) {
     else seen.add(item.id);
   });
 }
+const list=x=>Array.isArray(x)?x:[];
+function collection(trip,name,errors){if(trip[name]!=null&&!Array.isArray(trip[name]))errors.push(problem(name,'Debe ser una colección'));return list(trip[name]);}
 function photos(trip, catalog, { complete = false } = {}) {
   const errors = [];
   if (!catalog || typeof catalog !== 'object' || Array.isArray(catalog))
@@ -50,26 +52,13 @@ function photos(trip, catalog, { complete = false } = {}) {
   });
   for (const { key, path } of references) {
     if (key == null) continue;
-    if (typeof key !== 'string' || !catalog[key] || !catalog[key].photo?.src)
+    if (typeof key !== 'string' || !Object.hasOwn(catalog,key) || typeof catalog[key]?.photo?.src !== 'string' || !catalog[key].photo.src.trim())
       errors.push(problem(path, 'Referencia de fotografía inexistente o sin imagen'));
   }
   return errors;
 }
-function validate(trip, { complete = false, mode } = {}) {
-  const errors = [];
-  if (mode != null && !['incremental', 'complete'].includes(mode))
-    return [problem('mode', 'Modo editorial desconocido')];
-  complete = mode === 'complete' || (mode == null && complete === true);
-  if (!trip || typeof trip !== 'object' || Array.isArray(trip))
-    return [problem('trip', 'Se espera un objeto de viaje')];
-  const collections = ['days', 'hotels', 'majorTransport', 'expenses', 'reservations', 'mapPoints'];
-  for (const name of collections) if (trip[name] != null && !Array.isArray(trip[name]))
-    errors.push(problem(name, 'Debe ser una colección'));
-  const days = Array.isArray(trip.days) ? trip.days : [];
-  const hotels = Array.isArray(trip.hotels) ? trip.hotels : [];
-  const transport = Array.isArray(trip.majorTransport) ? trip.majorTransport : [];
-  const expenses = Array.isArray(trip.expenses) ? trip.expenses : [];
-  const groups = Array.isArray(trip.reservations) ? trip.reservations : [];
+function experiences(trip,complete=false){
+ const errors=[];
   if (trip.experiences != null && !Array.isArray(trip.experiences))
     errors.push(problem('experiences', 'Las experiencias deben ser una colección'));
   if (Array.isArray(trip.experiences)) trip.experiences.forEach((experience, index) => {
@@ -79,11 +68,12 @@ function validate(trip, { complete = false, mode } = {}) {
       errors.push(problem('experiences[' + index + ']',
         'Experiencia sin lugar o descripción turística'));
   });
-  unique(hotels, 'hotels', errors);
-  unique(transport, 'majorTransport', errors);
-  unique(expenses, 'expenses', errors);
-  const hotelIds = new Set(hotels.map(h => h?.id).filter(Boolean));
-  const transportIds = new Set(transport.map(t => t?.id).filter(Boolean));
+
+ return errors;
+}
+function transport(trip,complete=false){
+ const errors=[];
+ const transport=collection(trip,'majorTransport',errors);unique(transport,'majorTransport',errors);
   transport.forEach((item, i) => {
     if (item?.boardingLocations != null && !Array.isArray(item.boardingLocations))
       errors.push(problem('majorTransport[' + i + '].boardingLocations', 'Paradas inválidas'));
@@ -93,42 +83,41 @@ function validate(trip, { complete = false, mode } = {}) {
           'El abordaje requiere nombre y enlace HTTP(S)'));
     });
   });
+
+ return errors;
+}
+function lodging(trip,complete=false){
+ const errors=[];
+ const hotels=collection(trip,'hotels',errors);unique(hotels,'hotels',errors);
   for (const [i, hotel] of hotels.entries()) {
     if (!hotel || typeof hotel !== 'object') continue;
     if (complete && (hotel.checkIn == null || hotel.checkOut == null))
       errors.push(problem('hotels[' + i + ']', 'Fechas de alojamiento requeridas al cerrar'));
-    if (hotel.checkIn != null || hotel.checkOut != null) {
-      if (!dateOK(hotel.checkIn) || !dateOK(hotel.checkOut) || hotel.checkOut <= hotel.checkIn)
-        errors.push(problem('hotels[' + i + ']', 'Check-in/check-out inválidos'));
-    }
+    if ((hotel.checkIn != null && !dateOK(hotel.checkIn)) ||
+        (hotel.checkOut != null && !dateOK(hotel.checkOut)) ||
+        (dateOK(hotel.checkIn) && dateOK(hotel.checkOut) && hotel.checkOut <= hotel.checkIn))
+      errors.push(problem('hotels[' + i + ']', 'Check-in/check-out inválidos'));
     if (complete && (!isUrl(hotel.mapsUrl) || !Array.isArray(hotel.links) || !hotel.links.length))
       errors.push(problem('hotels[' + i + ']', 'Enlace de mapa y al menos un enlace de reserva requeridos'));
     if (hotel.mapsUrl != null && !isUrl(hotel.mapsUrl))
       errors.push(problem('hotels[' + i + '].mapsUrl', 'URL de mapa inválida'));
+    if (hotel.links != null && !Array.isArray(hotel.links))
+      errors.push(problem('hotels[' + i + '].links', 'Enlaces deben ser una lista'));
     if (Array.isArray(hotel.links)) hotel.links.forEach((link, j) => {
       if (!isUrl(link?.url)) errors.push(problem('hotels[' + i + '].links[' + j + ']', 'URL inválida'));
     });
   }
-  if (complete && trip.start == null) errors.push(problem('start', 'Fecha inicial requerida al cerrar'));
-  if (trip.start != null && !dateOK(trip.start)) errors.push(problem('start', 'Fecha inválida'));
-  if (complete && trip.end == null) errors.push(problem('end', 'Fecha final requerida al cerrar'));
-  if (trip.end != null && !dateOK(trip.end)) errors.push(problem('end', 'Fecha inválida'));
-  if (trip.start && trip.end && dateOK(trip.start) && dateOK(trip.end) && trip.end < trip.start)
-    errors.push(problem('end', 'La fecha final precede a la inicial'));
-  // Reglas universales sin snapshots de destinos o de fechas.
-  if (complete && trip.travelerCount == null)
-    errors.push(problem('travelerCount', 'Número de personas requerido al cerrar el presupuesto'));
-  if (trip.travelerCount != null &&
-      (!Number.isInteger(trip.travelerCount) || trip.travelerCount < 1))
-    errors.push(problem('travelerCount', 'El número de personas debe ser entero positivo'));
-  if (complete && dateOK(trip.start) && dateOK(trip.end) && !days.length)
-    errors.push(problem('days', 'Un viaje completo con fechas necesita jornadas'));
 
+ return errors;
+}
+function map(trip,complete=false){
+ const errors=[];
+ collection(trip,'mapPoints',errors);
   if (Array.isArray(trip.mapPoints)) {
     const orders = new Set();
     trip.mapPoints.forEach((point, i) => {
       const where = 'mapPoints[' + i + ']';
-      if (!point || typeof point !== 'object') {
+      if (!point || typeof point !== 'object' || Array.isArray(point)) {
         errors.push(problem(where, 'Punto del mapa inválido')); return;
       }
       const coords = point.coords;
@@ -149,6 +138,117 @@ function validate(trip, { complete = false, mode } = {}) {
       errors.push(problem('mapPoints', 'La numeración de puntos debe ser consecutiva'));
   }
 
+
+ return errors;
+}
+function calendar(trip,complete=false){
+ const errors=[];
+ const days=collection(trip,'days',errors),hotels=list(trip.hotels),transport=list(trip.majorTransport);
+ const hotelIds=new Set(hotels.map(h=>h?.id).filter(Boolean)),transportIds=new Set(transport.map(t=>t?.id).filter(Boolean));
+  if (complete && trip.start == null) errors.push(problem('start', 'Fecha inicial requerida al cerrar'));
+  if (trip.start != null && !dateOK(trip.start)) errors.push(problem('start', 'Fecha inválida'));
+  if (complete && trip.end == null) errors.push(problem('end', 'Fecha final requerida al cerrar'));
+  if (trip.end != null && !dateOK(trip.end)) errors.push(problem('end', 'Fecha inválida'));
+  if (trip.start && trip.end && dateOK(trip.start) && dateOK(trip.end) && trip.end < trip.start)
+    errors.push(problem('end', 'La fecha final precede a la inicial'));
+  if (complete && dateOK(trip.start) && dateOK(trip.end) && !days.length)
+    errors.push(problem('days', 'Un viaje completo con fechas necesita jornadas'));
+
+  if (dateOK(trip.start) && dateOK(trip.end) && trip.start <= trip.end) {
+    const capacity = Math.round((Date.parse(trip.end+'T00:00:00Z')-Date.parse(trip.start+'T00:00:00Z'))/86400000)+1;
+    if(days.length > capacity) errors.push(problem('days','Más jornadas que días disponibles en el calendario'));
+  }
+  const seenNumbers = new Set();
+  days.forEach((day, i) => {
+    const path = 'days[' + i + ']';
+    if (!day || typeof day !== 'object' || Array.isArray(day)) {
+      errors.push(problem(path, 'Jornada inválida: se espera un objeto'));
+      return;
+    }
+    if (day.date == null) {
+      if (complete) errors.push(problem(path + '.date', 'Fecha de jornada requerida al cerrar'));
+    } else if (!dateOK(day.date)) {
+      errors.push(problem(path + '.date', 'Fecha de jornada inválida'));
+    } else {
+      const anchorIndex = days.findIndex((d,j) => j < i && dateOK(d?.date));
+      const offset = (date, n) => {
+        const value = new Date(date + 'T00:00:00Z');
+        value.setUTCDate(value.getUTCDate() + n);
+        return value.toISOString().slice(0,10);
+      };
+      if (dateOK(trip.start) && day.date !== offset(trip.start,i))
+        errors.push(problem(path + '.date', 'Jornada incompatible con el inicio'));
+      if (anchorIndex >= 0 && day.date !== offset(days[anchorIndex].date,i-anchorIndex))
+        errors.push(problem(path + '.date', 'Las jornadas deben ser consecutivas'));
+      if (dateOK(trip.end) && (day.date > trip.end ||
+          (complete && i === days.length - 1 && day.date !== trip.end)))
+        errors.push(problem(path + '.date', 'Jornada incompatible con el final'));
+    }
+    if (complete && i === days.length - 1 && dateOK(trip.end) && !dateOK(day.date))
+      errors.push(problem(path + '.date', 'La última jornada no coincide con el final'));
+    if (complete && day.n == null)
+      errors.push(problem(path + '.n', 'Número de jornada obligatorio al cerrar'));
+    if (day.n != null) {
+      if (!Number.isInteger(day.n) || day.n !== i + 1 || seenNumbers.has(day.n))
+        errors.push(problem(path + '.n', 'Número de jornada duplicado o inválido'));
+      seenNumbers.add(day.n);
+    }
+    if (day.hotel != null) {
+      if (!hotelIds.has(day.hotel))
+        errors.push(problem(path + '.hotel', 'Alojamiento referenciado inexistente'));
+      else {
+        const hotel = hotels.find(h => h?.id === day.hotel);
+        if (dateOK(day.date) && dateOK(hotel.checkIn) && dateOK(hotel.checkOut) &&
+          (day.date < hotel.checkIn || day.date >= hotel.checkOut))
+          errors.push(problem(path + '.hotel', 'Jornada fuera de las fechas del alojamiento'));
+      }
+    }
+    if (day.mobilityLinks != null && !Array.isArray(day.mobilityLinks))
+      errors.push(problem(path + '.mobilityLinks', 'Enlaces de movilidad deben ser una lista'));
+    if (Array.isArray(day.mobilityLinks)) day.mobilityLinks.forEach((link, j) => {
+      if (typeof link?.label !== 'string' || !link.label.trim() || !isUrl(link.url))
+        errors.push(problem(path + '.mobilityLinks[' + j + ']',
+          'Cada enlace de movilidad necesita etiqueta y URL HTTP(S)'));
+    });
+    if (day.transportRefs != null && !Array.isArray(day.transportRefs))
+      errors.push(problem(path + '.transportRefs', 'Referencias de transporte deben ser una lista'));
+    if (Array.isArray(day.transportRefs)) {
+      const seen = new Set();
+      day.transportRefs.forEach((id, j) => {
+        const field = path + '.transportRefs[' + j + ']';
+        if (!transportIds.has(id)) errors.push(problem(field, 'Transporte inexistente'));
+        if (seen.has(id)) errors.push(problem(field, 'Transporte repetido en la jornada'));
+        seen.add(id);
+      });
+    }
+  });
+  // Una noche con hotel disponible pero sin elección en el itinerario es una
+  // inconsistencia. No obligar a dormir en hotel durante vuelos nocturnos,
+  // campamentos u otros días sin oferta hotelera registrada.
+  if (complete) days.forEach((day, i) => {
+    if (!dateOK(day?.date) || !dateOK(trip.end) || day.date >= trip.end ||
+        day.hotel != null) return;
+    const nightHasHotel = hotels.some(h => dateOK(h?.checkIn) && dateOK(h?.checkOut) &&
+      h.checkIn <= day.date && day.date < h.checkOut);
+    const flightNight = (typeof day.base === 'string' &&
+      day.base.toLowerCase().startsWith('en vuelo')) || day.overnightType === 'flight';
+    const alternativeNight = ['camping', 'other'].includes(day.overnightType);
+    if (nightHasHotel || (!flightNight && !alternativeNight))
+      errors.push(problem('days[' + i + '].hotel',
+        'Noche sin alojamiento asignado ni excepción explícita'));
+  });
+
+ return errors;
+}
+function budget(trip,complete=false){
+ const errors=[];
+ const expenses=collection(trip,'expenses',errors);unique(expenses,'expenses',errors);const hotelIds=new Set(list(trip.hotels).map(h=>h?.id).filter(Boolean));
+  // Reglas universales sin snapshots de destinos o de fechas.
+  if (complete && trip.travelerCount == null)
+    errors.push(problem('travelerCount', 'Número de personas requerido al cerrar el presupuesto'));
+  if (trip.travelerCount != null &&
+      (!Number.isInteger(trip.travelerCount) || trip.travelerCount < 1))
+    errors.push(problem('travelerCount', 'El número de personas debe ser entero positivo'));
   if (trip.exchangeRates != null) {
     if (!trip.exchangeRates || typeof trip.exchangeRates !== 'object' ||
         Array.isArray(trip.exchangeRates))
@@ -173,65 +273,6 @@ function validate(trip, { complete = false, mode } = {}) {
           'La conversión necesita fecha y fuente documental'));
     }
   }
-  const seenNumbers = new Set();
-  days.forEach((day, i) => {
-    const path = 'days[' + i + ']';
-    if (!day || typeof day !== 'object' || Array.isArray(day)) {
-      errors.push(problem(path, 'Jornada inválida: se espera un objeto'));
-      return;
-    }
-    if (!dateOK(day.date)) errors.push(problem(path + '.date', 'Fecha de jornada inválida'));
-    if (i === 0 && trip.start && day.date !== trip.start)
-      errors.push(problem(path + '.date', 'La primera jornada no coincide con el inicio'));
-    if (i > 0 && dateOK(days[i - 1]?.date) && day.date !== nextDate(days[i - 1].date))
-      errors.push(problem(path + '.date', 'Las jornadas deben ser consecutivas'));
-    if (i === days.length - 1 && trip.end && day.date !== trip.end)
-      errors.push(problem(path + '.date', 'La última jornada no coincide con el final'));
-    if (complete && day.n == null)
-      errors.push(problem(path + '.n', 'Número de jornada obligatorio al cerrar'));
-    if (day.n != null) {
-      if (!Number.isInteger(day.n) || day.n !== i + 1 || seenNumbers.has(day.n))
-        errors.push(problem(path + '.n', 'Número de jornada duplicado o inválido'));
-      seenNumbers.add(day.n);
-    }
-    if (day.hotel != null) {
-      if (!hotelIds.has(day.hotel))
-        errors.push(problem(path + '.hotel', 'Alojamiento referenciado inexistente'));
-      else {
-        const hotel = hotels.find(h => h?.id === day.hotel);
-        if (dateOK(hotel.checkIn) && dateOK(hotel.checkOut) &&
-          (day.date < hotel.checkIn || day.date >= hotel.checkOut))
-          errors.push(problem(path + '.hotel', 'Jornada fuera de las fechas del alojamiento'));
-      }
-    }
-    if (day.mobilityLinks != null && !Array.isArray(day.mobilityLinks))
-      errors.push(problem(path + '.mobilityLinks', 'Enlaces de movilidad deben ser una lista'));
-    if (Array.isArray(day.mobilityLinks)) day.mobilityLinks.forEach((link, j) => {
-      if (typeof link?.label !== 'string' || !link.label.trim() || !isUrl(link.url))
-        errors.push(problem(path + '.mobilityLinks[' + j + ']',
-          'Cada enlace de movilidad necesita etiqueta y URL HTTP(S)'));
-    });
-    if (day.transportRefs != null && !Array.isArray(day.transportRefs))
-      errors.push(problem(path + '.transportRefs', 'Referencias de transporte deben ser una lista'));
-    if (Array.isArray(day.transportRefs))
-      day.transportRefs.forEach((id, j) => { if (!transportIds.has(id))
-        errors.push(problem(path + '.transportRefs[' + j + ']', 'Transporte inexistente')); });
-  });
-  // Una noche con hotel disponible pero sin elección en el itinerario es una
-  // inconsistencia. No obligar a dormir en hotel durante vuelos nocturnos,
-  // campamentos u otros días sin oferta hotelera registrada.
-  if (complete) days.forEach((day, i) => {
-    if (!dateOK(day?.date) || !dateOK(trip.end) || day.date >= trip.end ||
-        day.hotel != null) return;
-    const nightHasHotel = hotels.some(h => dateOK(h?.checkIn) && dateOK(h?.checkOut) &&
-      h.checkIn <= day.date && day.date < h.checkOut);
-    const flightNight = (typeof day.base === 'string' &&
-      day.base.toLowerCase().startsWith('en vuelo')) || day.overnightType === 'flight';
-    const alternativeNight = ['camping', 'other'].includes(day.overnightType);
-    if (nightHasHotel || (!flightNight && !alternativeNight))
-      errors.push(problem('days[' + i + '].hotel',
-        'Noche sin alojamiento asignado ni excepción explícita'));
-  });
   expenses.forEach((expense, i) => {
     const path = 'expenses[' + i + ']';
     if (expense?.status != null &&
@@ -250,6 +291,12 @@ function validate(trip, { complete = false, mode } = {}) {
         errors.push(problem(path + '.cost.currency', 'Moneda ISO 4217 requerida'));
     }
   });
+
+ return errors;
+}
+function reservations(trip,complete=false){
+ const errors=[];
+ const groups=collection(trip,'reservations',errors);
   const groupNames = new Set();
   groups.forEach((group, i) => {
     if (!Array.isArray(group) || typeof group[0] !== 'string' || !group[0].trim() || !Array.isArray(group[1])) {
@@ -272,6 +319,8 @@ function validate(trip, { complete = false, mode } = {}) {
       });
     });
   });
-  return errors;
+
+ return errors;
 }
-module.exports = { validate, photos, dateOK, isUrl };
+
+module.exports={experiences,transport,lodging,map,calendar,budget,reservations,photos,dateOK,isUrl};

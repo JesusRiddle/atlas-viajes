@@ -308,13 +308,13 @@ window.AtlasTrip = function (ctx) {
         // Render detailed day cards as soon as their data exists.
         const readyDays = (t.days || []).filter(d => d?.date && Number.isInteger(d.n) && Array.isArray(d.places) && d.am && d.pm && d.night);
         const completeDays = readyDays.length > 0;
-        const renderedDays = () => (t.days || []).map((d, index) =>
-            readyDays.includes(d) ? day(d) : '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
-            '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p></article>').join('');
-        const partialDays = () => t.days.length ? t.days.map((d, index) =>
-            '<article class="day panel"><h3>' + esc(d?.title || 'Día ' + (d?.n || index + 1)) +
-            '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p>' +
-            (d?.base ? '<p>' + esc(d.base) + '</p>' : '') + '</article>').join('') :
+        const dayNumber = (d, index) => Number.isInteger(d?.n) && d.n > 0 ? d.n : index + 1;
+        const partialDay = (d, index) => '<article class="day panel" id="dia-' + dayNumber(d,index) + '"><h3>' +
+            esc(d?.title || 'Día ' + dayNumber(d,index)) + '</h3><p>' + esc(d?.date || 'Fecha por definir') + '</p>' +
+            (d?.base ? '<p>' + esc(d.base) + '</p>' : '') + '</article>';
+        const renderedDays = () => (t.days || []).map((d,index) =>
+            readyDays.includes(d) ? day(d) : partialDay(d,index)).join('');
+        const partialDays = () => t.days.length ? t.days.map(partialDay).join('') :
             '<p class="draft-pending">Por definir</p>';
         const partialBudget = () => {
             if (t.majorTransport.length || t.expenses.length) return window.AtlasBudgetTable.render(t) ||
@@ -385,7 +385,7 @@ window.AtlasTrip = function (ctx) {
             `</div>`,
             `</div>`,
             `<div class="itinerary-layout">`,
-            `${completeDays ? '<aside class="daynav" aria-label="Días del itinerario">' + t.days.map(d => '<a href="#viaje/' + id + '/dia-' + d.n + '"><strong>Día ' + d.n + ' · ' + short(d.date) + '</strong>' + esc(d.base) + (hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : '') + '</a>').join('') + '</aside>' : ''}`,
+            `${completeDays ? '<aside class="daynav" aria-label="Días del itinerario">' + t.days.map((d,index) => '<a href="#viaje/' + id + '/dia-' + dayNumber(d,index) + '"><strong>Día ' + dayNumber(d,index) + ' · ' + (d?.date && Number.isFinite(Date.parse(d.date + 'T12:00:00Z')) ? short(d.date) : 'Fecha por definir') + '</strong>' + esc(d?.base || '') + (d && hotelForDay(t,d) ? ' · ' + esc(hotelForDay(t,d).name) : '') + '</a>').join('') + '</aside>' : ''}`,
             `<div class="days">${completeDays ? renderedDays() : partialDays()}</div>`,
             `</div>`,
             `</article></section>`,
@@ -538,7 +538,7 @@ window.AtlasTrip = function (ctx) {
         if (t.mapPoints?.some(p => Array.isArray(p.coords) && p.coords.length === 2 && p.coords.every(Number.isFinite))) window.AtlasTravel.initMap(t);
         bindTripSelector();
         document.querySelector('#expand')?.addEventListener('click', e => {
-            const all = [...document.querySelectorAll('.day')];
+            const all = [...document.querySelectorAll('details.day')];
             const opening = all.some(x => !x.open);
             all.forEach(x => {
                 x.open = opening;
