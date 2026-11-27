@@ -52,3 +52,10 @@ test('Jornadas pendientes no pueden exceder un intervalo confirmado',()=>{
  assert.ok(check(t,false).some(e=>e.path==='days'));
  t.end='2027-05-03'; assert.deepEqual(check(t,false),[]);
 });
+
+test('Una referencia de transporte no se duplica dentro de la misma jornada',()=>{
+ const t={majorTransport:[{id:'tren'}],days:[{transportRefs:['tren','tren']}]};
+ assert.ok(check(t,false).some(e=>e.path==='days[0].transportRefs[1]'));
+ t.days[0].transportRefs=['tren'];t.days.push({transportRefs:['tren']});
+ assert.deepEqual(check(t,false),[]);
+});
