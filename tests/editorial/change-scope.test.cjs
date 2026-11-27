@@ -41,7 +41,7 @@ test('alcance del diff real declarado por CI', t => {
  if(!base){t.skip('Sin base de alcance explícita; ejecutar mediante CI o ATLAS_SCOPE_BASE');return;}
  assert.match(base,/^[a-f0-9]{40}$/i);
  const {execFileSync}=require('node:child_process');
- const changed=execFileSync('git',['diff','--no-renames','--name-only','-z',base,'HEAD'],{cwd:require('node:path').resolve(__dirname,'../..'),encoding:'utf8'}).split('\\0').filter(Boolean);
+ const changed=execFileSync('git',['diff','--no-renames','--name-only','-z',base,'HEAD'],{cwd:require('node:path').resolve(__dirname,'../..'),encoding:'utf8'}).split('\0').filter(Boolean);
  assert.notEqual(process.env.ATLAS_SCOPE_TRIPS,undefined,'Declarar alcance explícito (vacío si no hay viajes autorizados)');
  const allowed=process.env.ATLAS_SCOPE_TRIPS.split(',').map(s=>s.trim()).filter(Boolean);
  assert.ok(allowed.every(s=>/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(s)),'Alcance inválido');
