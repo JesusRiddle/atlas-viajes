@@ -550,7 +550,7 @@ module.exports = Object.freeze([
     "requirement": "Viajeros por presupuesto y cálculo por persona sin asumir uno",
     "coverage": "partial",
     "evidence": {
-      "file": "tests/home-comparison.test.cjs",
+      "file": "tests/functional/presentation.test.cjs",
       "contains": "la cabecera conserva ocho columnas"
     },
     "source": {
@@ -676,7 +676,7 @@ module.exports = Object.freeze([
     "requirement": "Descripción de experiencias 18–35 palabras, salvo ampliaciones justificadas",
     "coverage": "partial",
     "evidence": {
-      "file": "tests/editorial-experience-audit.test.cjs",
+      "file": "tests/editorial/experiencias.test.cjs",
       "contains": "experiencias: longitud recomendada y excepciones bajo revisión"
     },
     "source": {
@@ -746,7 +746,7 @@ module.exports = Object.freeze([
     "requirement": "Candidato o cotizado no aparece como reservado en texto o presupuesto",
     "coverage": "partial",
     "evidence": {
-      "file": "tests/editorial-lodging-audit.test.cjs",
+      "file": "tests/editorial/alojamientos.test.cjs",
       "contains": "distingue candidato, cotización"
     },
     "source": {
@@ -802,8 +802,8 @@ module.exports = Object.freeze([
     "requirement": "Portada y Panorama usan proyección dinámica del ledger actual",
     "coverage": "partial",
     "evidence": {
-      "file": "tests/format-budget-contract.test.cjs",
-      "contains": "structured expenses remain eligible"
+      "file": "tests/functional/presentation.test.cjs",
+      "contains": "Presupuesto estructurado y rangos históricos utilizan el formateador real"
     },
     "source": {
       "file": "docs/trip-editorial-guide.md",
