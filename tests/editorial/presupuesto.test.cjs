@@ -64,3 +64,17 @@ function reconcile(trip){
 }
 test('Conciliación de totales declarados: escenarios aplicables y exclusiones visibles',t=>{for(const trip of trips){const result=reconcile(trip);if(result.skip)t.diagnostic(trip.id+': '+result.skip);else assert.deepEqual(result.errors,[],trip.id);}});
 test('Conciliación simple: detecta diferencia diaria y global; no inventa conversión',()=>{const sample={days:[{date:'2027-01-01',spend:100}],expenses:[{date:'2027-01-01',cost:{amount:100,currency:'MXN'}}]};assert.deepEqual(reconcile(sample).errors,[]);sample.days[0].spend=90;assert.equal(reconcile(sample).errors.length,2);sample.expenses[0].cost.currency='EUR';assert.ok(reconcile(sample).skip);});
+
+test('Cobertura indirecta: tarifa pendiente válida, cadena huérfana o cíclica inválida',()=>{
+ const t={expenses:[{id:'fondo'}],majorTransport:[{id:'grupo',budgetIncludedIn:'fondo'},{id:'tramo',budgetIncludedIn:'grupo'}]};
+ assert.deepEqual(check(t,false),[]);
+ t.expenses=[];delete t.majorTransport[0].budgetIncludedIn;
+ t.majorTransport[0].options=[{fares:[{price:null}]}];
+ assert.deepEqual(check(t,false),[]);
+ t.majorTransport[0].options=[];
+ assert.ok(check(t,false).some(e=>e.path==='majorTransport.tramo.budgetIncludedIn'));
+ t.majorTransport[0].budgetIncludedIn='tramo';
+ assert.ok(check(t,false).some(e=>e.path==='majorTransport.tramo.budgetIncludedIn'));
+ t.majorTransport[0].budgetIncludedIn='inexistente';
+ assert.ok(check(t,false).some(e=>e.path==='majorTransport.tramo.budgetIncludedIn'));
+});
