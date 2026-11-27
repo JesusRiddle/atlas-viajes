@@ -58,5 +58,35 @@ test('Proyección sustituye vuelo incluido y selecciona un escenario, no ambos',
  s.set(t,flight.id,'B','basic');
  assert.equal(b.planningEstimate(t).totalMXN,900);
  assert.equal(b.planningEstimate(t).low,1200);
- assert.equal(b.summary(t).knownTotalMXN,900);
+ assert.equal(b.currentSummary(t).knownTotalMXN,900);
+ assert.equal(b.summary(t).knownTotalMXN,500,'El cálculo puro conserva selección original');
+});
+
+test('Comparación de tarifas, multiplicador y asignación diaria sin afectar otros gastos',()=>{
+ const {AtlasBudget:b,AtlasSelections:s}=setup();
+ const rail=transport();rail.options[1].priceMultiplier=2;
+ const t={id:'sample',exchangeRates:{EUR:20},majorTransport:[rail],days:[
+ {n:1,date:'2027-01-01',transportRefs:['rail']},{n:2,date:'2027-01-02'}],
+ expenses:[{id:'meal',date:'2027-01-02',cost:money(80)}]};
+ assert.deepEqual(plain(b.transportComparison(rail,t.exchangeRates)).map(x=>x.mxn),[200,300,800]);
+ assert.equal(b.currentSummary(t).byDay['2027-01-01'].totalMXN,200);
+ s.set(t,'rail','b','basic');
+ const result=b.currentSummary(t);
+ assert.equal(result.byDay['2027-01-01'].totalMXN,800);
+ assert.equal(result.byDay['2027-01-02'].totalMXN,80);
+ assert.equal(result.knownTotalMXN,880);
+ assert.equal(result.partial,false);
+});
+test('Calendario de gastos, migración pendiente y fechas fuera del viaje',()=>{
+ const b=setup().AtlasBudget;
+ assert.deepEqual(plain(b.nightsByDate('2028-02-28',3)),['2028-02-28','2028-02-29','2028-03-01']);
+ assert.deepEqual(plain(b.nightsByDate('2028-02-28',0)),[]);
+ assert.deepEqual(plain(b.expenseDates({dates:['2027-01-01','2027-01-01','2027-01-02']})),['2027-01-01','2027-01-02']);
+ const t={days:[{date:'2027-01-01'}],hotels:[{id:'h'}],expenses:[{id:'e',date:'2027-01-02',cost:money(100)}]};
+ const result=b.summary(t);
+ assert.equal(result.knownTotalMXN,100);
+ assert.equal(result.byDay['2027-01-01'].totalMXN,0);
+ assert.equal(result.migrationPending,true);
+ assert.equal(result.partial,true);
+ assert.ok(result.issues.some(x=>x.includes('Fecha fuera')));
 });

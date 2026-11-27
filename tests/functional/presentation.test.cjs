@@ -22,12 +22,6 @@ test('Mapa: renderer real, alias, singular, pendiente y excursión',()=>{
  assert.doesNotMatch(html,/Mostrar Sin coordenadas/);
 });
 
-const fs = require('node:fs');
-const path = require('node:path');
-const vm = require('node:vm');
-
-const root = path.join(__dirname, '../..');
-const source = fs.readFileSync(path.join(root, 'components/home.js'), 'utf8');
 
 function renderComparison(weather, pace = 'balanced') {
   const trip = {
@@ -35,8 +29,7 @@ function renderComparison(weather, pace = 'balanced') {
     routeCities: ['Ciudad'], days: [{}, {}, {}], bases: [{}], work: 1,
     travelerCount: 1, profile: { weather, pace }
   };
-  const window = { AtlasBudget: { planningEstimate: () => ({ low: 100, high: 200 }) } };
-  vm.runInNewContext(source, { window });
+  const window = runtime(['components/home.js'],{window:{AtlasBudget:{planningEstimate:()=>({low:100,high:200})}}});
   const ctx = {
     trips: [trip], photos: {}, main: {}, covers: {}, esc: s => String(s),
     range: () => '1–3 ene 2027', price: () => '$100–$200',
@@ -63,4 +56,12 @@ test('la cabecera conserva ocho columnas, sin fusionar Alojamientos y Ritmo', ()
   const head = html.match(/<thead>(.*?)<\/thead>/)?.[1] || '';
   assert.equal((head.match(/<th /g) || []).length, 8);
   assert.match(head, /<th scope="col">Alojamientos<\/th><th scope="col">Ritmo<\/th>/);
+});
+
+test('Render completo acepta presupuesto estructurado y legado, no inventa datos de borrador',()=>{
+ const f=runtime(['components/budget.js','components/format.js']).AtlasFormat({trips:[]});
+ const t={id:'sample',cover:'fixture',start:'2027-01-01',end:'2027-01-02',intro:'Viaje',climate:'Templado',solo:'Sí',flight:'Pendiente',local:'Tren',days:[{n:1,date:'2027-01-01',places:[]}],bases:[['Puerto',1]],routeCities:['Puerto'],work:0,profile:{pace:'balanced',solo:true,weather:'mild'}};
+ assert.equal(f.canRenderFullTrip({...t,expenses:[{id:'e',cost:{amount:50,currency:'MXN'}}]}),true);
+ assert.equal(f.canRenderFullTrip({...t,budgetRange:[50,100]}),true);
+ assert.equal(f.canRenderFullTrip({id:'draft',name:'Nuevo'}),false);
 });

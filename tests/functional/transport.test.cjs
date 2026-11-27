@@ -37,3 +37,14 @@ test('Modelo identifica conexión negativa y equipaje imposible, permite pendien
  assert.ok(model.validateBaggage({cabin:{weightKg:-1,dimensionsCm:[1,0,3]}}).length>=2);
  assert.ok(model.validateTrip({majorTransport:[transport()],days:[{n:1,transportRefs:['missing']}]}).some(s=>s.includes('referencia desconocida')));
 });
+
+test('Referencias repetidas, día incompatible y tarifa inválida',()=>{
+ const t={...transport(),day:2};
+ assert.equal(model.validateTrip({majorTransport:[t],days:[{n:2,transportRefs:['rail']}]}).length,0);
+ const errors=model.validateTrip({majorTransport:[t],days:[{n:1,transportRefs:['rail','rail']}]});
+ assert.ok(errors.some(x=>x.includes('repetido')));
+ assert.ok(errors.some(x=>x.includes('fecha no coincide')));
+ t.options[0].fares[0].price={amount:-1,currency:'EUR'};
+ assert.equal(model.quotedPrice(t),null);
+ assert.ok(model.validateTransport(t).some(x=>x.includes('Importe')));
+});

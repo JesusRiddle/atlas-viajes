@@ -47,3 +47,11 @@ test('Carga rechaza identidad, registro, contenedores, fechas y viajeros inváli
  await assert.rejects(load([t],[moduleOf(t.id,{file:'../sample.json'})]),/Entrada inválida/);
  await assert.rejects(load([],[moduleOf('missing')]),/No se pudo cargar/);
 });
+
+test('Carga de catálogo vacío y preservación de estructuras completas',async()=>{
+ assert.deepEqual((await load([])).atlas.trips,[]);
+ const source={id:'full',name:'Prueba',start:'2028-02-29',end:'2028-03-01',days:[{n:1,date:'2028-02-29',places:['museum']}],mapPoints:[{name:'Museo',coords:[1,2]}],majorTransport:[{id:'rail',options:[]}],expenses:[{id:'e',cost:{amount:0,currency:'MXN'}}],customField:{enabled:false}};
+ const {atlas}=await load([source],undefined,{'data/places.json':{museum:{photo:{src:'https://example.org/photo.jpg'}}}});
+ for(const [key,value] of Object.entries(source))assert.deepEqual(atlas.trips[0][key],value,key);
+ assert.equal(atlas.places.museum.photo.src,'https://example.org/photo.jpg');
+});
