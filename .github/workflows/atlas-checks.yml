@@ -29,6 +29,8 @@ jobs:
           node -e "const fs=require('node:fs');for(const f of fs.readdirSync('data/trips').filter(f=>f.endsWith('.json'))){JSON.parse(fs.readFileSync('data/trips/'+f,'utf8'));}"
       - name: Run regression tests
         run: node --test tests/*.test.cjs
+      - name: Run editorial V2 tests (transition)
+        run: node --test tests/editorial/*.test.cjs
       - name: Install Chromium browser for UI regression
         run: |
           npm install --no-save playwright
