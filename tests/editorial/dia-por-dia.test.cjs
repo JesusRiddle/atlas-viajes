@@ -35,3 +35,14 @@ test('Cierre general y detallado: no exige logística inventada',()=>{
  Object.assign(full.days[0],{am:'Llegada',pm:'Paseo',night:'Descanso'});
  assert.deepEqual(check(full,true,'detailed'),[]);
 });
+
+test('Jornadas sin fecha: pendientes válidos, no inconsistencias ocultas',()=>{
+ const t={start:'2027-05-01',end:'2027-05-04',days:[{n:1,date:null},{n:2,date:'2027-05-02'},{n:3},{n:4,date:'2027-05-04'}]};
+ assert.deepEqual(check(t,false),[]);
+ assert.ok(check(t,true).some(e=>e.path==='days[0].date'));
+ const bad=structuredClone(t); bad.days[3].date='2027-05-03';
+ assert.ok(check(bad,false).some(e=>e.path==='days[3].date'));
+ bad.days[3].date=''; assert.ok(check(bad,false).some(e=>e.path==='days[3].date'));
+ const undated={days:[{n:1,date:'2027-05-01'},{n:2,date:null},{n:3,date:'2027-05-02'}]};
+ assert.ok(check(undated,false).some(e=>e.path==='days[2].date'));
+});
