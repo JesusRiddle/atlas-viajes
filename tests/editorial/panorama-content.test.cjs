@@ -4,10 +4,10 @@ const {problem}=require('./section.cjs');
 function check(t){
  const errors=[];
  if(Array.isArray(t.introHighlights))for(const h of t.introHighlights)
-   if(typeof h!=='string'||!h.trim()||typeof t.intro!=='string'||!t.intro.includes(h))errors.push(problem('introHighlights','Resaltado ausente en intro: '+h));
+   if(typeof h!=='string'||!h.trim()||typeof t.intro!=='string'||!t.intro.includes(h))errors.push({...problem('introHighlights','Resaltado ausente en intro: '+h),evidence:[h,t.intro]});
  if(typeof t.climate==='string'&&t.climate.trim()){
    const parts=t.climate.trim().split(/\n\s*\n/);
-   if(parts.length!==3||!parts[1]?.startsWith('*Qué llevar:*')||!parts[2]?.startsWith('*Horas de luz:*'))errors.push(problem('climate','Tres párrafos con etiquetas en orden'));
+   if(parts.length!==3||!parts[1]?.startsWith('*Qué llevar:*')||!parts[2]?.startsWith('*Horas de luz:*'))errors.push({...problem('climate','Tres párrafos con etiquetas en orden'),evidence:t.climate});
  }
  return errors;
 }

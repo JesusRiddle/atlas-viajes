@@ -1,13 +1,13 @@
 'use strict';
 const {suite,relationErrors,photos,read,problem}=require('./section.cjs');
 const catalog=read('data/places.json');
-function check(t,c){
+function check(t,c,mode='detailed'){
  const errors=[...relationErrors(t,['start','end','days'],c),...photos(t,catalog,{complete:c})];
  for(const d of Array.isArray(t.days)?t.days:[]){
    if(!d||typeof d!=='object')continue;
    for(const key of ['title','am','pm','night','mobility','note']){
      if(d[key]!=null&&typeof d[key]!=='string')errors.push(problem('days.'+d.date+'.'+key,'Texto inválido'));
-     if(c&&['title','am','pm','night'].includes(key)&&!(typeof d[key]==='string'&&d[key].trim()))errors.push(problem('days.'+d.date+'.'+key,'Bloque requerido'));
+     if(c&&(mode==='detailed'||key==='title')&&['title','am','pm','night'].includes(key)&&!(typeof d[key]==='string'&&d[key].trim()))errors.push(problem('days.'+d.date+'.'+key,'Bloque requerido'));
    }
  }
  return errors;

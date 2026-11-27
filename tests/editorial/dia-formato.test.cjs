@@ -7,7 +7,7 @@ function check(t){
    const value=d?.[field];
    if(typeof value!=='string'||!value.trim())continue;
    if(!value.split(/\r?\n/).filter(l=>l.trim()).every(l=>/^• \*[^*\n]+:\*\s+\S/.test(l)))
-     errors.push(problem('days.'+d.date+'.'+field,'Formato de indicaciones: • *Título:* Texto'));
+     errors.push({...problem('days.'+d.date+'.'+field,'Formato de indicaciones: • *Título:* Texto'),evidence:value});
  }
  return errors;
 }

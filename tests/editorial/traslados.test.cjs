@@ -53,7 +53,7 @@ function timestamps(t){
  for(const item of list(t.majorTransport))if(item?.type==='flight')for(const o of list(item.options))
  for(const [j,journey] of list(o?.journeys).entries())for(const [k,s] of list(journey?.segments).entries())
  for(const key of ['departure','arrival'])if(s?.[key]!=null&&(typeof s[key]!=='string'||!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(?::\d{2})?(?:Z|[+-]\d{2}:\d{2})$/.test(s[key])||!Number.isFinite(Date.parse(s[key]))))
- errors.push(problem('majorTransport.'+item.id+'.options.'+o.id+'.journeys.'+j+'.segments.'+k+'.'+key,'Hora aérea sin fecha/zona válida'));
+ errors.push({...problem('majorTransport.'+item.id+'.options.'+o.id+'.'+(journey.id||journey.direction||'trayecto')+'.'+s.from+'→'+s.to+'.'+key,'Hora aérea sin fecha/zona válida'),evidence:s[key]});
  return errors;
 }
 diagnosticSuite('Traslados: zona horaria',timestamps,mutate((t,o)=>{t.type='flight';o.journeys[0].segments[0].departure='2027-01-01T12:00-06:00';}),[
@@ -63,7 +63,7 @@ function quotes(t){
  const errors=[];
  for(const item of list(t.majorTransport))for(const o of list(item?.options)){
    if(o?.status==='quoted'&&(!dateOK(o.quotedAt)||!list(o.fares).some(f=>f?.id===o.selectedFare&&Number.isFinite(f.price?.amount))))
-     errors.push(problem('majorTransport.'+item.id+'.options.'+o.id,'Cotización sin fecha o tarifa seleccionada conocida'));
+     errors.push({...problem('majorTransport.'+item.id+'.options.'+o.id,'Cotización sin fecha o tarifa seleccionada conocida'),evidence:[o.quotedAt,o.selectedFare,list(o.fares).find(f=>f?.id===o.selectedFare)?.price]});
  }
  return errors;
 }
