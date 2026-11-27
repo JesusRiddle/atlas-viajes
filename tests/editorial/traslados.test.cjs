@@ -1,7 +1,7 @@
 'use strict';
 const {suite,relationErrors,problem}=require('./section.cjs');
 const {diagnosticSuite}=require('./diagnostics.cjs');
-const {dateOK}=require('../../scripts/editorial-relations.cjs');
+const {dateOK}=require('./contracts.cjs');
 const list=x=>Array.isArray(x)?x:[];
 const currencies=new Set(Intl.supportedValuesOf('currency'));
 function check(t,c){

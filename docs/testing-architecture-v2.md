@@ -141,3 +141,6 @@ Tres escenarios V2 aprobados (catálogo y fixture escritorio, catálogo móvil);
 
 ## Fase 5 — primer lote de sustituciones verificables
 CI 46080914354: regression exitoso; fase 4 cerrada según esa evidencia. Se retira la suite de alta idéntica por SHA, comparativa y formato de presupuesto ya migrados a functional/presentation; la regla CSS de no envolver cabeceras pasa a comprobación de estilo computado en browser. Advertencias de extensión de experiencias y coherencia de estados de alojamiento pasan a sus suites editoriales, con contraejemplos y diagnóstico dinámico no bloqueante. Se conservan casos límite de temperatura en temporadas. Se corrige instrucción obsoleta de guía. El resto de suites antiguas sigue activo hasta demostrar sustitución: en particular relaciones, fixture de transporte, smoke anterior y contratos fotográficos. Pendiente CI del lote y retiro final; fase 6 bloqueada.
+
+### Fase 5 — extracción de contratos estructurales
+CI 46081687612 aprobado. Se separan contratos de datos por sección con utilidades compartidas. Las suites V2 ejecutan únicamente su sección; el adaptador antiguo sigue disponible temporalmente para demostrar equivalencia con las pruebas previas. No se cambia normativa ni itinerarios. Pendiente CI de extracción antes de retirar adaptador y suites.

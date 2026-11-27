@@ -1,6 +1,6 @@
 'use strict';
 const {suite,relationErrors,problem}=require('./section.cjs');
-const {dateOK}=require('../../scripts/editorial-relations.cjs');
+const {dateOK}=require('./contracts.cjs');
 const list=x=>Array.isArray(x)?x:[];
 function check(t,c){
  const errors=relationErrors(t,['hotels','bases'],c);
