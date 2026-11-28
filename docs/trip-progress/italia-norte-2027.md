@@ -62,3 +62,6 @@
 - [x] ETIAS redactado como requisito condicional sujeto a fecha de puesta en marcha en mayo 2027, no como confirmación de exención.
 - [x] Ajustados los resaltados de portada a 13 nombres principales; preservadas fotografías y 3 alojamientos.
 - [ ] Verificar CI del commit final y revisión humana del PR #15 antes del merge.
+
+## Antecedente histórico · auditoría del 27 de octubre de 2026
+La versión anterior de abril fue sustituida por la planificación de mayo. Sus fechas, tarifas, importes y horarios no son vigentes. Se conservan como criterios reutilizables: evitar contabilizar dos veces el Uffizi dentro del pase Uffizi+Vasariano o el Museo dell'Opera dentro del Brunelleschi Pass; verificar conexiones independientes con margen suficiente, consigna y horarios reales antes de comprar. Fuentes históricas a revalidar: [Cenacolo](https://cenacolovinciano.org/en/info/), [Accademia](https://www.galleriaaccademiafirenze.it/es/visit/), [Brunelleschi Pass](https://tickets.duomo.firenze.it/en/support/prices), [Uffizi](https://www.uffizi.it/en/tickets). [Auditoría histórica completa](https://github.com/JesusRiddle/atlas-viajes/blob/2350e135e4b29e10f2c4335ee9d9dbe19d471701/docs/italia-norte-2027-auditoria-fase-3.md).
