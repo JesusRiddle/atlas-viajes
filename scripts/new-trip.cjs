@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Usage: node scripts/new-trip.cjs <new-id> <name>
-// Creates an inactive blank trip; old trips are reference material for manual AI planning.
+// Creates a visible blank trip and its progress log; old trips are reference material for manual planning.
 const fs = require('node:fs');
 const path = require('node:path');
 const [id, name, ...extra] = process.argv.slice(2);
